@@ -47,7 +47,7 @@ the `extract_pubmed.py` script expects the pdf csv to be able to set
 ## installation
 
 
-        pip install -e https://gitlab.com/follow-the-grant/ftg-cli.git#egg=ftgftm
+        pip install git+https://gitlab.com/follow-the-grant/ftg-cli.git#egg=ftgftm
 
 will install the package and all requirements. after it, type
 
