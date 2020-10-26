@@ -39,11 +39,6 @@ property `summary`
 
 obtain pubmed source xml data from here: ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/
 
-the `extract_pubmed.py` script expects the pdf csv to be able to set
-`sourceUrl` properties to the `Document` entities:
-
-        ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_non_comm_use_pdf.csv
-
 ## installation
 
 
