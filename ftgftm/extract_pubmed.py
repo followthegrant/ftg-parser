@@ -41,6 +41,7 @@ def _get_doc_id(data):
     for key in IDS:
         if data.get(key):
             return key, data[key]
+    return 'article', data['full_title'], data['journal']
 
 
 def make_entities(data, fpath):
@@ -48,8 +49,6 @@ def make_entities(data, fpath):
     # authors = [[i or '' for i in a] for a in data.get('author_list', [])]
 
     doc_id = _get_doc_id(data)
-    if not doc_id:
-        return []
 
     publication_year = data['publication_year']
     try:
