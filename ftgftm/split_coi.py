@@ -8,6 +8,9 @@ nlp.add_pipe(sentencizer)
 
 
 def split_coi(coi_text, authors):
+    """
+    authors: [('FirstName', 'LastName'), ('FirstName MiddleName', 'LastName')]
+    """
     coi_splitted = defaultdict(list)
     sentences = nlp(coi_text).sents
 
@@ -22,14 +25,14 @@ def split_coi(coi_text, authors):
 
     unique_surname = {}
     for a in authors:
-        unique_surname[a[1]] = len([a_sur[1] for a_sur in authors if a_sur == a[1]]) > 1
+        unique_surname[a[1]] = len([a_sur[1] for a_sur in authors if a_sur[1] == a[1]]) == 1
         initials = (get_initials(a[0]),  # First and middle name initials
                     get_initials(a[1]))  # Lastname initial(s)
         authors_search_name[a] = (re.split(r'\W', str(a[0])), re.split(r'\W', str(a[1])))
         authors_search[a] = initials
 
     last_author_found = None
-    sentences = [sent_split for s in sentences for sent_split in re.split(r'(?<=Ltd.\W)|(?<=Inc.\W)(?=[A-Z])', s.text)]
+    sentences = [sent_split for s in sentences for sent_split in re.split(r'(?<=Ltd.\W)|(?<=Inc.\W)|(?<=Dr. \W)|(?<=Prof. \W)(?=[A-Z])', s.text)]
     for s in sentences:
         found_an_author = False
         in_all = False
@@ -53,7 +56,7 @@ def split_coi(coi_text, authors):
                 last_author_found = a_name
 
         if not found_an_author:
-            if 'll authors' in s or 'he authors' in s:
+            if 'll authors' in s or 'he authors' in s or 'lle anderen' in s or 'ie übrigen' in s or 'ie anderen' in s:
                 coi_splitted['all'].append(s)
                 in_all = True
 
