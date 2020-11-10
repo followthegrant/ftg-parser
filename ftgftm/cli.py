@@ -6,6 +6,7 @@ import pandas as pd
 from .extract_pubmed import extract
 from .get_fulltext_coi import extract_fulltext_coi as _extract_fulltext_coi
 from .split_coi import split_coi
+from .flag_cois import flag_coi
 
 
 @click.group()
@@ -62,3 +63,23 @@ def split_cois():
             for author, author_id in author_ids.items():
                 if author_id not in explicit_authors:
                     writer.writerow((doc_id, author, author_id, ' '.join(statement)))
+
+
+@cli.command('flag_cois')
+def flag_cois():
+    """
+    Flag COI statements if there is a conflict (1) or not (0)
+    Expects CSV from STDIN without header row to be able to process in parallel
+    first column must be the coi text, all other columns will be passed through.
+    a new column is appended after the coi text column with the 0/1 flag
+
+    example parallel use (omit csv header via tail):
+
+    cat cois.csv | tail -n +2 | parallel --pipe ftgftm flag_cois > cois.flagged.csv
+    """
+    reader = csv.reader(sys.stdin)
+    writer = csv.writer(sys.stdout)
+    for row in reader:
+        coi = row[0]
+        flag = int(flag_coi(coi))
+        writer.writerow((row[0], flag, *row[1:]))
