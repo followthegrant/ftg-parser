@@ -32,7 +32,8 @@ def split_coi(coi_text, authors):
         authors_search[a] = initials
 
     last_author_found = None
-    sentences = [sent_split for s in sentences for sent_split in re.split(r'(?<=Ltd.\W)|(?<=Inc.\W)|(?<=Dr. \W)|(?<=Prof. \W)(?=[A-Z])', s.text)]
+    sentences = [sent_split for s in sentences for sent_split in re.split(
+        r'(?<=Ltd.\W)|(?<=Inc.\W)|(?<=Drs. \W)|(?<=Dr. \W)|(?<=Prof. \W)(?=[A-Z])', s.text)]
     for s in sentences:
         found_an_author = False
         in_all = False
@@ -45,18 +46,22 @@ def split_coi(coi_text, authors):
             # 5. Then for the first name, middle name initials and last name (Paul T. Anderson)
             # 6. If the lastname is unique look for it
             # 7. Look for the remaining authors
-            if str(a_name[0]) + ' ' + str(a_name[1]) in s or \
-               re.match(r'.*[\W]*' + ''.join(['{}[\.-]*'.format(i) for i in a_initials[0] + a_initials[1]]) + '\W', s) or \
-               re.match(r'.*' + ''.join(['{}[\.-]*'.format(i) for i in a_initials[0]]) + '\W{}'.format(a_name[1]), s) or \
-               re.match(r'.*{}[\.-]*'.format(a_initials[0][0]) + '\W{}'.format(a_name[1]), s) or \
-               re.match(r'.*{}'.format(authors_search_name[a_name][0][0]) + ''.join(['[{}]*[\.-]*'.format(i) for i in a_initials[0][1:]]) + '\W{}'.format(a_name[1]), s) or \
-               a_name[1] in s and unique_surname[a_name[1]]:
-                coi_splitted[a_name].append(s)
-                found_an_author = True
-                last_author_found = a_name
+            try:
+                if str(a_name[0]) + ' ' + str(a_name[1]) in s or \
+                   re.match(r'.*[\W]*' + ''.join(['{}[\.-]*'.format(i) for i in a_initials[0] + a_initials[1]]) + '\W', s) or \
+                   re.match(r'.*' + ''.join(['{}[\.-]*'.format(i) for i in a_initials[0]]) + '\W{}'.format(a_name[1]), s) or \
+                   re.match(r'.*{}[\.-]*'.format(a_initials[0][0]) + '\W{}'.format(a_name[1]), s) or \
+                   re.match(r'.*{}'.format(authors_search_name[a_name][0][0]) + ''.join(['[{}]*[\.-]*'.format(i) for i in a_initials[0][1:]]) + '\W{}'.format(a_name[1]), s) or \
+                   a_name[1] in s and unique_surname[a_name[1]]:
+                    coi_splitted[a_name].append(s)
+                    found_an_author = True
+                    last_author_found = a_name
+            except IndexError:  # FIXME
+                pass
 
         if not found_an_author:
-            if 'll authors' in s or 'he authors' in s or 'lle anderen' in s or 'ie übrigen' in s or 'ie anderen' in s:
+            if 'll authors' in s or 'he authors' in s or 'lle anderen' in s or 'ie übrigen' in s or \
+                    'ie anderen' in s or 'll other authors' in s or 'll other co-authors' in s:
                 coi_splitted['all'].append(s)
                 in_all = True
 
