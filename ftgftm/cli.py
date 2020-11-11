@@ -34,18 +34,19 @@ def split_cois():
         2nd column: Author name
         3rd column: Author identifier
         4nd column: COI statement
+    All other columns will be passed through
     Author name: "FirstName LastName" or "FirstName MiddleName LastName"
     """
-    df = pd.read_csv(sys.stdin).applymap(lambda x: x.strip() if isinstance(x, str) else x)
+    df = pd.read_csv(sys.stdin).applymap(lambda x: x.strip() if isinstance(x, str) else x).fillna('')
     doc_id, author_name, author_id, coi_statement = [str(df.columns[i]) for i in range(4)]
     df[author_name] = tuple(zip(df[author_name], df[author_id]))
     del df[author_id]
-    df = df.groupby(doc_id).agg({
+    df = df.groupby(doc_id).agg({**{
         author_name: tuple,
         coi_statement: lambda x: ' '.join(list(set(x)))
-    }).drop_duplicates()
+    }, **{c: 'first' for c in df.columns[3:]}}).drop_duplicates()
     writer = csv.writer(sys.stdout)
-    writer.writerow((doc_id, author_name, author_id, coi_statement))
+    writer.writerow((doc_id, author_name, author_id, coi_statement, *df.columns[2:]))
     for doc_id, row in df.iterrows():
         author_ids = dict(row[author_name])
         authors = list(set([tuple(a[0].split(' ', 1)) if ' ' in a[0] else (None, a[0]) for a in row[author_name]]))
@@ -56,13 +57,13 @@ def split_cois():
             author_id = author_ids.get(author)
             if author_id:
                 explicit_authors.append(author_id)
-                writer.writerow((doc_id, author, author_id, ' '.join(statement)))
+                writer.writerow((doc_id, author, author_id, ' '.join(statement), *[row[c] for c in df.columns[2:]]))
             if a == 'all':
                 all_authors = True
         if all_authors:
             for author, author_id in author_ids.items():
                 if author_id not in explicit_authors:
-                    writer.writerow((doc_id, author, author_id, ' '.join(statement)))
+                    writer.writerow((doc_id, author, author_id, ' '.join(statement), *[row[c] for c in df.columns[2:]]))
 
 
 @cli.command('flag_cois')
