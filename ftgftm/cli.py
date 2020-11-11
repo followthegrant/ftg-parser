@@ -16,8 +16,13 @@ def cli():
 
 @cli.command('extract_pubmed')
 @click.option('--debug/--no-debug', help='Enable debug mode: Raise on errors.', show_default=True, default=False)
-def extract_pubmed(debug):
-    extract(debug)
+@click.option(
+    '--meta-only/--all',
+    help='Extract only article metadata (without authors as ftm entities)',
+    show_default=True,
+    default=False)
+def extract_pubmed(debug, meta_only):
+    extract(debug, meta_only)
 
 
 @cli.command('extract_fulltext_coi')
