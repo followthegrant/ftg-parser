@@ -64,6 +64,8 @@ def make_entities(data, fpath, meta_only):
     document.add('publishedAt', publication_date)
     document.add('publisher', data['journal'])
     document.add('author', ['{} {}'.format(*reversed(a[:2])) for a in authors])
+    document.add('messageId', '#'.join(doc_id[:2]))
+    document.add('notes', 'identifiers:\n\n{}'.format('\n'.join('#'.join((k, data[k])) for k in IDS if data[k])))
     kwds = data.get('keywords', '').split(';')
     if kwds:
         document.add('keywords', kwds)
