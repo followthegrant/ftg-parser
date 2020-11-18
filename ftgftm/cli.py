@@ -1,5 +1,6 @@
 import click
 import csv
+import logging
 import sys
 import pandas as pd
 
@@ -7,6 +8,9 @@ from .extract_pubmed import extract
 from .get_fulltext_coi import extract_fulltext_coi as _extract_fulltext_coi
 from .split_coi import split_coi
 from .flag_cois import flag_coi
+
+
+log = logging.getLogger(__name__)
 
 
 @click.group()
@@ -86,6 +90,10 @@ def flag_cois():
     reader = csv.reader(sys.stdin)
     writer = csv.writer(sys.stdout)
     for row in reader:
-        coi = row[0]
-        flag = int(flag_coi(coi))
-        writer.writerow((row[0], flag, *row[1:]))
+        try:
+            coi = row[0]
+            flag = int(flag_coi(coi))
+            writer.writerow((row[0], flag, *row[1:]))
+        except Exception as e:
+            log.error(f'{e.__class__.__name__}: {e}')
+            log.error(str(row))
