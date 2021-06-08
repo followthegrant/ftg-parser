@@ -8,7 +8,7 @@ with open("README.md") as f:
 setup(
     name="ftgftm",
     version="0.1",
-    description="Command-line client for Follow The Grant -> Follow The Money transformation",
+    description="Command-line client for Follow The Grant -> Follow The Money transformation",  # noqa
     long_description=long_description,
     long_description_content_type="text/markdown",
     author="Simon Wörpel",
@@ -24,7 +24,7 @@ setup(
     ],
     packages=find_packages(),
     install_requires=[
-        "Click",
+        "Click<8.0.0",
         "countrytagger",
         "fingerprints",
         "followthemoney",
