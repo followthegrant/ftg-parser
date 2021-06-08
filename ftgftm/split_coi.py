@@ -3,8 +3,7 @@ from collections import defaultdict
 from spacy.lang.en import English
 
 nlp = English()
-sentencizer = nlp.create_pipe("sentencizer")
-nlp.add_pipe(sentencizer)
+nlp.add_pipe("sentencizer")
 
 
 def split_coi(coi_text, authors):
