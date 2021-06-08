@@ -1,4 +1,6 @@
-all:
-  stage: build
+default:
+  image: ubuntu:latest
+
+run:
   script:
     - make all
