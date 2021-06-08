@@ -1,12 +1,7 @@
-export MMMETA=./data
+all: init check download extract ftgftm upload
 
-all: setup install check download extract ftgftm upload
-
-setup:
+init:
 	mkdir -p ./data/local
-
-install:
-	pip install git+https://gitlab.com/follow-the-grant/ftg-cli.git#egg=ftgftm
 
 check:
 	-rclone --config ./rclone.conf check pubmed-http:pub/pmc/oa_package/$(PREFIX) aws:pubmed-archive/$(PREFIX) --one-way --size-only --combined ./data/rclone.diff
