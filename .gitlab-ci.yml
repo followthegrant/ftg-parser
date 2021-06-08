@@ -29,6 +29,9 @@ docker-build:
     - if: $CI_COMMIT_BRANCH
       changes:
         - Dockerfile
+        - Makefile
+        - setup.py
+        - rclone.conf
 
 run:
   image: registry.gitlab.com/follow-the-grant/ftg-cli:latest
