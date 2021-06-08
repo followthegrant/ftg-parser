@@ -1,4 +1,31 @@
-update:
+init:
   stage: build
   script:
-    - make all
+    - make setup
+    - pip install -e .
+
+check:
+  stage: build
+  script:
+    - make check
+
+download:
+  stage: build
+  script:
+    - make download
+
+upload:
+  stage: build
+  script:
+    - make upload
+
+extract:
+  stage: build
+  script:
+    - make extract
+
+ftgftm:
+  stage: build
+  script:
+    - make ftgftm
+
