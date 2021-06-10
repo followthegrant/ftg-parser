@@ -30,7 +30,7 @@ setup(
         "followthemoney",
         "followthemoney-store",
         "html2text",
-        "pubmed_parser @ git+https://github.com/titipata/pubmed_parser.git@master",
+        "pubmed_parser @ git+https://github.com/simonwoerpel/pubmed_parser.git@master",
         "pandas",
         "spacy",
     ],
