@@ -1,7 +1,7 @@
 TS=`date '+%Y-%m-%d_%H:%M:%S'`
 
-all: init pull diff download extract ftgftm push clean
-test: init pull diff download.test extract ftgftm
+all: init pull diff download extract import push clean
+test: init pull diff download.test extract import
 
 init:
 	mkdir -p ./state/current
