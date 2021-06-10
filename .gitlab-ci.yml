@@ -35,5 +35,6 @@ docker-build:
 
 run:
   image: registry.gitlab.com/follow-the-grant/ftg-cli:latest
+  stage: ftg
   script:
     - make all
