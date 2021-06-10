@@ -1,24 +1,39 @@
-all: init check download extract ftgftm upload
+TS=`date '+%Y-%m-%d_%H:%M:%S'`
+
+all: init pull diff download extract ftgftm push clean
+test: init pull diff download.test extract ftgftm
 
 init:
-	mkdir -p ./data/local
+	mkdir -p ./state/current
+	mkdir -p ./data/download
+	mkdir -p ./data/extracted
 
-check:
-	-rclone --config ./rclone.conf check pubmed-http:pub/pmc/oa_package/$(PREFIX) aws:pubmed-archive/$(PREFIX) --one-way --size-only --combined ./data/rclone.diff
-	grep "^[+|*] " data/rclone.diff | sed "s/^..//g" > data/rclone.download
-	wc -l data/rclone.download
+pull:
+	rclone --config ./rclone.conf sync aws:followthegrant/state/current ./state/current
+
+diff:
+	rclone --config ./rclone.conf sync pubmed:pub/pmc/oa_file_list.txt ./data/
+	csvcut -H -K 1 -t -c 1 ./data/oa_file_list.txt | sort > ./state/current/files.pubmed
+	comm -23 ./state/current/files.pubmed ./state/current/files.imported > ./state/current/files.diff
+	cp -R ./state/current ./state/$(TS)
 
 download:
-	rclone --config ./rclone.conf --files-from ./data/rclone.download sync -P pubmed-http:pub/pmc/oa_package/$(PREFIX) ./data/local
+	rclone --config ./rclone.conf --no-traverse --files-from ./state/current/files.diff copy pubmed:pub/pmc/ ./data/download/
 
-upload:
-	rclone --config ./rclone.conf --files-from ./data/rclone.download sync -P pubmed-http:pub/pmc/oa_package/$(PREFIX) aws:pubmed-archive/$(PREFIX)
+download.test:
+	shuf ./state/current/files.diff | head -100 > ./data/testfiles
+	rclone --config ./rclone.conf --no-traverse --files-from ./data/testfiles copy pubmed:pub/pmc/ ./data/download/
 
 extract:
-	find data/local -type f -name "*.tar.gz" -exec tar -xvf {} -C ./data/local/  \;
+	find ./data/download/ -type f -name "*.tar.gz" -exec tar -xvf {} -C ./data/extracted/  \;
 
-ftgftm:
-	find ./data/local -type f -name "*xml" | ftgftm extract_pubmed | ftm store aggregate > ./data/entities.jsonl
+import:
+	find ./data/extracted/ -type f -name "*xml" | ftgftm extract_pubmed | ftm store aggregate | alephclient write-entities -f $(ALEPH_COLLECTION)
+	cat ./state/current/files.diff >> ./state/current/files.imported
+
+push:
+	rclone --config ./rclone.conf copy ./state/ aws:followthegrant/state/
 
 clean:
+	rm -rf ./state
 	rm -rf ./data
