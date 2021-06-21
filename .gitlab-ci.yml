@@ -33,8 +33,14 @@ docker-build:
         - setup.py
         - rclone.conf
 
-update-data:
+update-init:
   stage: deploy
   image: "$CI_REGISTRY_IMAGE${tag}"
   script:
     - make init
+
+update-pull:
+  stage: deploy
+  image: "$CI_REGISTRY_IMAGE${tag}"
+  script:
+    - make pull
