@@ -43,6 +43,8 @@ docker-build:
         - rclone.conf
 
 init-state:
+  rules: 
+    - when: never
   stage: init-state
   image: "$CI_REGISTRY_IMAGE${tag}"
   script:
