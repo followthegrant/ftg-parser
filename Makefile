@@ -1,3 +1,5 @@
+ALEPH_COLLECTION=ftg_full_rev2
+
 all: init pull diff download extract import push clean
 test: init pull diff download.test extract import
 
@@ -22,10 +24,11 @@ download.test:
 	rclone --config ./rclone.conf --no-traverse --files-from ./data/testfiles copy pubmed:pub/pmc/ ./data/download/
 
 extract:
-	find ./data/download/ -type f -name "*.tar.gz" -exec tar -xvf {} -C ./data/extracted/  \;
+	find ./data/download/ -type f -name "*.tar.gz" | parallel tar --wildcards -C ./data/extracted/ "*xml" -xf {}
 
 import:
-	find ./data/extracted/ -type f -name "*xml" | ftgftm extract_pubmed | ftm store aggregate | alephclient write-entities -f $(ALEPH_COLLECTION)
+	find ./data/extracted/ -type f -name "*xml" | parallel --pipe ftgftm extract_pubmed | parallel --pipe ftm store write -d ftg_update_`date '+%Y-%m-%d'`
+	ftm store iterate -d ftg_update_`date '+%Y-%m-%d'` | alephclient write-entities -f $(ALEPH_COLLECTION)
 	cat ./state/current/files.diff >> ./state/current/files.imported
 	sort -o ./state/current/files.imported ./state/current/files.imported
 
