@@ -1,5 +1,3 @@
-TS=`date '+%Y-%m-%d_%H:%M:%S'`
-
 all: init pull diff download extract import push clean
 test: init pull diff download.test extract import
 
@@ -15,7 +13,6 @@ diff:
 	rclone --config ./rclone.conf sync pubmed:pub/pmc/oa_file_list.txt ./data/
 	csvcut -H -K 1 -t -c 1 ./data/oa_file_list.txt | sort > ./state/current/files.pubmed
 	comm -23 ./state/current/files.pubmed ./state/current/files.imported > ./state/current/files.diff
-	cp -R ./state/current ./state/$(TS)
 
 download:
 	rclone --config ./rclone.conf --no-traverse --files-from ./state/current/files.diff copy pubmed:pub/pmc/ ./data/download/
@@ -30,6 +27,7 @@ extract:
 import:
 	find ./data/extracted/ -type f -name "*xml" | ftgftm extract_pubmed | ftm store aggregate | alephclient write-entities -f $(ALEPH_COLLECTION)
 	cat ./state/current/files.diff >> ./state/current/files.imported
+	sort -o ./state/current/files.imported ./state/current/files.imported
 
 push:
 	rclone --config ./rclone.conf copy ./state/ aws:followthegrant/state/

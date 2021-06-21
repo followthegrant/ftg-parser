@@ -32,3 +32,12 @@ docker-build:
         - Makefile
         - setup.py
         - rclone.conf
+
+update-data:
+  stage: deploy
+  before_script:
+    - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" $CI_REGISTRY
+    - docker pull "$CI_REGISTRY_IMAGE${tag}"
+  image: "$CI_REGISTRY_IMAGE${tag}"
+  script:
+    - make init
