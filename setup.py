@@ -25,13 +25,14 @@ setup(
     packages=find_packages(),
     install_requires=[
         "Click<8.0.0",
+        "alephclient",
         "countrytagger",
         "fingerprints",
         "followthemoney",
         "followthemoney-store",
         "html2text",
-        "pubmed_parser @ git+https://github.com/simonwoerpel/pubmed_parser.git@master",
         "pandas",
+        "pubmed_parser @ git+https://github.com/simonwoerpel/pubmed_parser.git@master",
         "spacy",
     ],
     entry_points={
