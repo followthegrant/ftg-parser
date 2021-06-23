@@ -14,7 +14,9 @@ pull:
 diff:
 	rclone --config ./rclone.conf sync pubmed:pub/pmc/oa_file_list.txt ./data/
 	csvcut -H -K 1 -t -c 1 ./data/oa_file_list.txt | sort > ./state/current/files.pubmed
+	sort -o ./state/current/files.imported ./state/current/files.imported
 	comm -23 ./state/current/files.pubmed ./state/current/files.imported > ./state/current/files.diff
+	wc -l ./state/current/files.diff
 
 download:
 	rclone --config ./rclone.conf --no-traverse --files-from ./state/current/files.diff copy pubmed:pub/pmc/ ./data/download/
@@ -30,7 +32,6 @@ import:
 	find ./data/extracted/ -type f -name "*xml" | parallel --pipe ftgftm extract_pubmed | parallel --pipe ftm store write -d ftg_update_`date '+%Y-%m-%d'`
 	ftm store iterate -d ftg_update_`date '+%Y-%m-%d'` | alephclient write-entities -f $(ALEPH_COLLECTION)
 	cat ./state/current/files.diff >> ./state/current/files.imported
-	sort -o ./state/current/files.imported ./state/current/files.imported
 
 push:
 	rclone --config ./rclone.conf copy ./state/ aws:followthegrant/state/
