@@ -34,16 +34,18 @@ docker-build:
       fi
     - docker build --pull -t "$CI_REGISTRY_IMAGE${tag}" .
     - docker push "$CI_REGISTRY_IMAGE${tag}"
-  # Run this job in a branch where a Dockerfile exists
+  # don't run in schedules
+  except:
+    - schedules
+  # only build when this changes
+  only:
+    changes:
+      - Dockerfile
+      - Makefile
+      - setup.py
+      - rclone.conf
+  # or trigger manually
   rules:
-    - except:
-        - schedules
-    - only:
-        changes:
-          - Dockerfile
-          - Makefile
-          - setup.py
-          - rclone.conf
     - when: manual
 
 update-data:
