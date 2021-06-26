@@ -44,9 +44,6 @@ docker-build:
       - Makefile
       - setup.py
       - rclone.conf
-  # or trigger manually
-  rules:
-    - when: manual
 
 update-data:
   rules:
