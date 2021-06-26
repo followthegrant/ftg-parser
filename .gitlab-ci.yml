@@ -36,12 +36,14 @@ docker-build:
     - docker push "$CI_REGISTRY_IMAGE${tag}"
   # Run this job in a branch where a Dockerfile exists
   rules:
-    - if: $CI_COMMIT_BRANCH
-      changes:
-        - Dockerfile
-        - Makefile
-        - setup.py
-        - rclone.conf
+    - except:
+        - schedules
+    - only:
+        changes:
+          - Dockerfile
+          - Makefile
+          - setup.py
+          - rclone.conf
     - when: manual
 
 update-data:
