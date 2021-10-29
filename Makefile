@@ -1,11 +1,10 @@
 ALEPH_COLLECTION=ftg_full_rev2
 
-all: init pull diff download extract import push clean
-test: init pull diff download.test extract import
+all: init pull diff download import push clean
+test: init pull diff download.test import
 
 init:
 	mkdir -p ./state/current
-	mkdir -p ./data/download
 	mkdir -p ./data/extracted
 
 pull:
@@ -19,14 +18,15 @@ diff:
 	wc -l ./state/current/files.diff
 
 download:
-	rclone --config ./rclone.conf --no-traverse --files-from ./state/current/files.diff copy pubmed:pub/pmc/ ./data/download/
+	while read path ; do \
+		curl -L "https://ftp.ncbi.nlm.nih.gov/pub/pmc/$$path" | tar -xz -C ./data/extracted/ --wildcards "*xml" ; \
+		done < ./state/current/files.diff
 
 download.test:
-	shuf ./state/current/files.diff | head -100 > ./data/testfiles
-	rclone --config ./rclone.conf --no-traverse --files-from ./data/testfiles copy pubmed:pub/pmc/ ./data/download/
-
-extract:
-	find ./data/download/ -type f -name "*.tar.gz" | parallel tar --wildcards -C ./data/extracted/ "*xml" -xf {}
+	shuf ./state/current/files.diff | head -10 > ./data/testfiles
+	while read path ; do \
+		curl -L "https://ftp.ncbi.nlm.nih.gov/pub/pmc/$$path" | tar -xz -C ./data/extracted/ --wildcards "*xml" ; \
+		done < ./data/testfiles
 
 import:
 	find ./data/extracted/ -type f -name "*xml" | parallel --pipe ftgftm extract_pubmed | parallel --pipe ftm store write -d ftg_update_`date '+%Y-%m-%d'`
