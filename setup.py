@@ -6,9 +6,9 @@ with open("README.md") as f:
 
 
 setup(
-    name="ftgftm",
+    name="followthegrant-parser",
     version="0.1",
-    description="Command-line client for Follow The Grant -> Follow The Money transformation",  # noqa
+    description="Parser and command-line client for Follow The Grant -> Follow The Money transformation",  # noqa
     long_description=long_description,
     long_description_content_type="text/markdown",
     author="Simon Wörpel",
@@ -36,6 +36,6 @@ setup(
         "spacy",
     ],
     entry_points={
-        "console_scripts": ["ftgftm = ftgftm.cli:cli"],
+        "console_scripts": ["ftg = ftg.cli:cli"],
     },
 )
