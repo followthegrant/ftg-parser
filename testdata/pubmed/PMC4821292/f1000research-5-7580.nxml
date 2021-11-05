@@ -1,0 +1,617 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.0 20120330//EN" "JATS-archivearticle1.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="review-article"><?properties open_access?><front><journal-meta><journal-id journal-id-type="nlm-ta">F1000Res</journal-id><journal-id journal-id-type="iso-abbrev">F1000Res</journal-id><journal-id journal-id-type="pmc">F1000Research</journal-id><journal-title-group><journal-title>F1000Research</journal-title></journal-title-group><issn pub-type="epub">2046-1402</issn><publisher><publisher-name>F1000Research</publisher-name><publisher-loc>London, UK</publisher-loc></publisher></journal-meta><article-meta><article-id pub-id-type="pmid">27092249</article-id><article-id pub-id-type="pmc">4821292</article-id><article-id pub-id-type="doi">10.12688/f1000research.7042.1</article-id><article-categories><subj-group subj-group-type="heading"><subject>Review</subject></subj-group><subj-group><subject>Articles</subject><subj-group><subject>Biocatalysis</subject></subj-group><subj-group><subject>Cell Growth &#x00026; Division</subject></subj-group><subj-group><subject>Cell Signaling</subject></subj-group><subj-group><subject>Experimental Biophysical Methods</subject></subj-group><subj-group><subject>Protein Chemistry &#x00026; Proteomics</subject></subj-group><subj-group><subject>Theory &#x00026; Simulation</subject></subj-group></subj-group></article-categories><title-group><article-title>Technical advances in proteomics: new developments in data-independent acquisition</article-title><fn-group content-type="pub-status"><fn><p>[version 1; referees: 3 approved]</p></fn></fn-group></title-group><contrib-group><contrib contrib-type="author"><name><surname>Hu</surname><given-names>Alex</given-names></name><xref ref-type="aff" rid="a1">1</xref></contrib><contrib contrib-type="author"><name><surname>Noble</surname><given-names>William S.</given-names></name><xref ref-type="aff" rid="a1">1</xref></contrib><contrib contrib-type="author"><name><surname>Wolf-Yadlin</surname><given-names>Alejandro</given-names></name><xref ref-type="corresp" rid="c1">a</xref><xref ref-type="aff" rid="a1">1</xref></contrib><aff id="a1">
+<label>1</label>Department of Genome Sciences, University of Washington, Seattle, WA, 98109, USA</aff></contrib-group><author-notes><corresp id="c1"><label>a</label><email xlink:href="mailto:ayadlin@uw.edu">ayadlin@uw.edu</email></corresp><fn fn-type="COI-statement"><p>
+<bold>Competing interests: </bold>The authors declare that they have no competing interests.</p></fn></author-notes><pub-date pub-type="epub"><day>31</day><month>3</month><year>2016</year></pub-date><pub-date pub-type="collection"><year>2016</year></pub-date><volume>5</volume><elocation-id>F1000 Faculty Rev-419</elocation-id><history><date date-type="accepted"><day>7</day><month>3</month><year>2016</year></date></history><permissions><copyright-statement>Copyright: &#x000a9; 2016 Hu A et al.</copyright-statement><copyright-year>2016</copyright-year><license xlink:href="http://creativecommons.org/licenses/by/4.0/"><license-p>This is an open access article distributed under the terms of the Creative Commons Attribution Licence, which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.</license-p></license></permissions><self-uri content-type="pdf" xlink:type="simple" xlink:href="f1000research-5-7580.pdf"/><abstract><p>The ultimate aim of proteomics is to fully identify and quantify the entire complement of proteins and post-translational modifications in biological samples of interest. For the last 15 years, liquid chromatography-tandem mass spectrometry (LC-MS/MS) in data-dependent acquisition (DDA) mode has been the standard for proteomics when sampling breadth and discovery were the main objectives; multiple reaction monitoring (MRM) LC-MS/MS has been the standard for targeted proteomics when precise quantification, reproducibility, and validation were the main objectives. Recently, improvements in mass spectrometer design and bioinformatics algorithms have resulted in the rediscovery and development of another sampling method: data-independent acquisition (DIA). DIA comprehensively and repeatedly samples every peptide in a protein digest, producing a complex set of mass spectra that is difficult to interpret without external spectral libraries. Currently, DIA approaches the identification breadth of DDA while achieving the reproducible quantification characteristic of MRM or its newest version, parallel reaction monitoring (PRM). In comparative
+<italic>de novo</italic> identification and quantification studies in human cell lysates, DIA identified up to 89% of the proteins detected in a comparable DDA experiment while providing reproducible quantification of over 85% of them. DIA analysis aided by spectral libraries derived from prior DIA experiments or auxiliary DDA data produces identification and quantification as reproducible and precise as that achieved by MRM/PRM, except on low&#x02011;abundance peptides that are obscured by stronger signals. DIA is still a work in progress toward the goal of sensitive, reproducible, and precise quantification without external spectral libraries. New software tools applied to DIA analysis have to deal with deconvolution of complex spectra as well as proper filtering of false positives and false negatives. However, the future outlook is positive, and various researchers are working on novel bioinformatics techniques to address these issues and increase the reproducibility, fidelity, and identification breadth of DIA.</p></abstract><kwd-group kwd-group-type="author"><kwd>proteomics</kwd><kwd>data-independent acquisition</kwd><kwd>mass spectrometry</kwd></kwd-group><funding-group><award-group id="fund-1"><funding-source>National Institutes of Health</funding-source><award-id>R01 GM096306</award-id></award-group><award-group id="fund-2"><funding-source>National Science Foundation</funding-source><award-id>1549932</award-id></award-group><funding-statement>The authors thank Dina Fomina Yadlin for helpful discussions and suggestions. This work was supported by National Institutes of Health award R01 GM096306 and by National Science Foundation award 1549932.</funding-statement></funding-group></article-meta><notes><sec sec-type="editor-note"><title>Editorial Note on the Review Process</title><p>
+<ext-link ext-link-type="uri" xlink:href="http://f1000research.com/channels/f1000-faculty-reviews/about-this-channel">F1000 Faculty Reviews</ext-link> are commissioned from members of the prestigious
+<ext-link ext-link-type="uri" xlink:href="http://f1000.com/prime/thefaculty">F1000 Faculty</ext-link> and are edited as a service to readers. In order to make these reviews as comprehensive and accessible as possible, the referees provide input before publication and only the final, revised version is published. The referees who approved the final version are listed with their names and affiliations but without their reports on earlier versions (any comments will already have been addressed in the published version).</p><p>The referees who approved this article are: </p><list list-type="simple" list-content="reviewer-list"><list-item><p>
+<named-content content-type="reviewer-name">Ileana Cristea</named-content>, Department of Molecular Biology, Princeton University, Princeton, NJ, USA
+<fn fn-type="COI-statement"><p>No competing interests were disclosed.</p></fn>
+</p></list-item><list-item><p>
+<named-content content-type="reviewer-name">Jarrod Marto</named-content>, Department of Oncology, Dana-Farber Cancer Institute, Harvard Medical School, Boston, MA, USA; Department of Biological Chemistry Molecular Pharmacology, Harvard Medical School, Boston, MA, USA
+<fn fn-type="COI-statement"><p>No competing interests were disclosed.</p></fn>
+</p></list-item><list-item><p>
+<named-content content-type="reviewer-name">Paul Huang</named-content>, Division of Cancer Biology, The Institute of Cancer Research, London, UK
+<fn fn-type="COI-statement"><p>No competing interests were disclosed.</p></fn>
+</p></list-item></list></sec></notes></front><body><sec sec-type="intro"><title>Introduction</title><p>For the last 15 years, liquid chromatography-tandem mass spectrometry (LC-MS/MS)-based proteomics has provided broad detection and relative quantification&#x02014;through chemical or metabolic labeling&#x02014;of thousands of proteins across a variety of biological samples using a data-dependent acquisition (DDA) strategy
+<sup><xref rid="ref-1" ref-type="bibr">1</xref>&#x02013;
+<xref rid="ref-4" ref-type="bibr">4</xref></sup>. In recent years, alternative LC-MS/MS targeted acquisition strategies, such as multiple-reaction monitoring (MRM)
+<sup><xref rid="ref-5" ref-type="bibr">5</xref>&#x02013;
+<xref rid="ref-7" ref-type="bibr">7</xref></sup> and parallel reaction monitoring (PRM)
+<sup><xref rid="ref-8" ref-type="bibr">8</xref></sup>, have provided precise and reproducible absolute quantification of up to hundreds of proteins. The ultimate goal of proteomics is the development of acquisition strategies that have both the breadth of DDA and the precision of MRM/PRM to provide reproducible identification and quantification of every protein in any biological sample. Although no single acquisition strategy can yet achieve this goal, recent advances in hardware and software show that a recently resurfaced strategy
+<sup><xref rid="ref-9" ref-type="bibr">9</xref></sup>, data-independent acquisition (DIA), may provide a viable path to this goal
+<sup><xref rid="ref-10" ref-type="bibr">10</xref></sup>. Below is a discussion of DDA, MRM/PRM&#x02019;s shortcomings, DIA&#x02019;s circumvention of these shortcomings, current software to analyze DIA spectra, and efforts to further improve DIA analysis.</p><p>All LC-MS/MS methods discussed in this article are bottom-up proteomics: Proteins are enzymatically digested into peptides which then are separated using high-performance liquid chromatography (HPLC), ionized, isolated, fragmented, and detected in the mass spectrometer as they elute from the HPLC. HPLC delivers peptides into the mass spectrometer for a period of time (tens of minutes to a few hours, depending on the application), separating the peptides according to their physicochemical characteristics
+<sup><xref rid="ref-4" ref-type="bibr">4</xref>,
+<xref rid="ref-11" ref-type="bibr">11</xref></sup>, thus increasing sample coverage. In LC-MS/MS methods, three events occur in the mass spectrometer: (a) ionization: peptides elute into the mass spectrometer from the HPLC and are ionized; (b) MS1 scan: the abundance and mass-to-charge ratios (m/z) of all ions eluting at a given time are measured; and (c) MS2 scan: some or all detected ions are fragmented, and the abundances and m/z&#x02019;s of the fragments are measured and recorded. Different LC-MS/MS methods vary in how ions are selected and measured in the MS2 scan.
+<xref ref-type="fig" rid="f1">Figure 1</xref> shows a cartoon schematic of how peptides are isolated, fragmented, and analyzed by a mass spectrometer working on DDA, MRM, PRM, or DIA modes.</p><fig fig-type="figure" id="f1" orientation="portrait" position="float"><label>Figure 1. </label><caption><title>A cartoon schematic of how peptides are isolated, fragmented, and analyzed by a mass spectrometer working in data-dependent acquisition (DDA), multiple reaction monitoring (MRM), parallel reaction monitoring (PRM), or data-independent acquisition (DIA) modes.</title><p>In DDA, MRM, and PRM, single precursor ions are isolated, fragmented, and analyzed in an MS2 scan by the mass spectrometer. In DDA mode, the precursor ions are chosen by the instrument on the basis of abundance. In MRM and PRM, the precursor ions to be analyzed are fixed by the user. DIA is different form the methods above in that all precursor ions within a selected mass range are isolated, fragmented, and analyzed in a single MS2 scan. MS1, scan in which the peptide ions entering the mass spectrometer at a given time are identified; MS2, scan in which the fragments of all (or some) of the peptides that are in the mass spectrometer at a given time are identified.</p></caption><graphic xlink:href="f1000research-5-7580-g0000"/></fig><p>In DDA, a subset of the most abundant ions reaching the mass spectrometer detector during an MS1 scan are individually isolated and fragmented in sequential MS2 scans (
+<xref ref-type="fig" rid="f1">Figure 1</xref> and
+<xref ref-type="fig" rid="f2">Figure 2A</xref>), and each MS2 scan (
+<xref ref-type="fig" rid="f2">Figure 2C</xref>) can be analyzed with a database search algorithm
+<sup><xref rid="ref-1" ref-type="bibr">1</xref>,
+<xref rid="ref-4" ref-type="bibr">4</xref></sup>. Currently, most instruments can perform a DDA cycle with one MS1 scan and 10 MS2 scans within 2 seconds. DDA typically yields thousands of protein identifications. Unfortunately, irreproducibility and imprecision are fundamental to DDA&#x02019;s design; if too many peptide species co-elute and appear in a single MS1 scan, then DDA stochastically samples only the most abundant peptides and misses the rest. This approach diminishes reproducibility and prevents the measurement of low-abundance peptides
+<sup><xref rid="ref-9" ref-type="bibr">9</xref></sup>. Additionally, to survey as many peptides as possible, DDA deliberately samples each peptide species only once or twice, preventing precise absolute quantification that requires multiple measurements per peptide. DDA analysis has been used for a variety of studies, including the characterization of epidermal growth factor receptor (EGFR) signaling networks
+<sup><xref rid="ref-12" ref-type="bibr">12</xref>,
+<xref rid="ref-13" ref-type="bibr">13</xref></sup>, the characterization of the proteome on different mouse organs
+<sup><xref rid="ref-14" ref-type="bibr">14</xref>,
+<xref rid="ref-15" ref-type="bibr">15</xref></sup>, identification of protein interaction partners
+<sup><xref rid="ref-16" ref-type="bibr">16</xref>&#x02013;
+<xref rid="ref-18" ref-type="bibr">18</xref></sup>, and description of the role of viral infections in modulating host proteomes
+<sup><xref rid="ref-18" ref-type="bibr">18</xref>&#x02013;
+<xref rid="ref-21" ref-type="bibr">21</xref></sup>, which had been thoroughly covered in a special issue of the journal
+<italic>Proteomics</italic>
+<sup><xref rid="ref-22" ref-type="bibr">22</xref></sup>. In spite of its flaws, DDA&#x02019;s flexibility, breadth of detection, and the simplicity of its setup and analysis, make DDA the preferred LC-MS/MS method among the wider scientific community. Additionally, DDA allows relative quantification of peptides between selected samples through a variety of chemical labeling schemes&#x02014;e.g., isotopic (stable isotope labeling by amino acids in cell culture, or SILAC)
+<sup><xref rid="ref-23" ref-type="bibr">23</xref></sup> or isobaric (isobaric tags for relative and absolute quantitation, or iTRAQ)
+<sup><xref rid="ref-24" ref-type="bibr">24</xref></sup> labeling.</p><fig fig-type="figure" id="f2" orientation="portrait" position="float"><label>Figure 2. </label><caption><title>Tandem mass spectrometry (MS/MS) analysis in data-dependent acquisition and data-independent acquisition
+<sup><xref rid="ref-50" ref-type="bibr">50</xref></sup>.</title><p>(
+<bold>A</bold>) Data-dependent acquisition (DDA) acquires MS/MS scans with narrow isolation windows centered on peptide precursors detected in an MS scan over a wide range of masses: 400 to 1,600 mass-to-charge ratio (m/z) here. (
+<bold>B</bold>) Data-independent acquisition (DIA) acquires MS/MS scans with wide isolation windows that do not target any particular peptide precursor. Instead, the scans are arranged side-by-side to collectively cover a desired precursor m/z range (500 to 900 m/z here) comprehensively, and several precursors are fragmented together in a single MS2 event (four here: identified peptide M and peptides N, O, and P). (
+<bold>C</bold>) Fragment ion information for the peptide precursor VLENTEIGDSIFDK++ is present in a single MS/MS spectrum in a DDA analysis, (
+<bold>D</bold>) but it can be extracted over time from DIA data and used for quantification owing to the repetitive MS/MS sampling cycle of DIA. Adapted with permission from Egertson
+<italic>et al.</italic>
+<sup><xref rid="ref-46" ref-type="bibr">46</xref></sup>.</p></caption><graphic xlink:href="f1000research-5-7580-g0001"/></fig><p>Alternatively, the targeted methods MRM and PRM avoid the imprecision and irreproducibility of DDA by focusing MS2 scans on only a small set of predetermined and previously identified peptides. Instead of selecting the top
+<italic>n</italic> precursors in an MS1 scan for further fragmentation in MS2 scans, these methods select only precursors and fragments with the m/z and elution time that match a pre-specified peptide of interest. The knowledge of a peptide&#x02019;s elution time, MS1 m/z value, and robustly detectable fragments is determined prior to the MRM/PRM experiments by previous DDA identification or MS/MS measurement of its synthetic version in a simplified background or both. In MRM, for each MS1 scan, a subset of fragment ions is measured in the subsequent MS2 scan
+<sup><xref rid="ref-25" ref-type="bibr">25</xref></sup>, whereas in PRM, all of the fragment ions are measured
+<sup><xref rid="ref-8" ref-type="bibr">8</xref></sup>. In both, the same precursors are selected and fragmented multiple times to acquire more precise quantification of fewer peptides, compared with DDA. MRM was developed first and has been shown to robustly quantify tens of blood plasma biomarkers of low abundance across laboratories toward clinical use
+<sup><xref rid="ref-6" ref-type="bibr">6</xref></sup> and tens of low-abundance transcription factors and kinases in human cells
+<sup><xref rid="ref-7" ref-type="bibr">7</xref></sup>. Currently, the Clinical Proteomics Tumor Analysis Consortium (CPTAC)
+<sup><xref rid="ref-26" ref-type="bibr">26</xref></sup> database hosts a collection of 679 MRM assays for human proteins. PRM, which succeeded MRM, outperforms it in terms of throughput and absolute quantification thanks to the use of high-resolution spectrometers capable of parallel fragment analysis
+<sup><xref rid="ref-8" ref-type="bibr">8</xref>,
+<xref rid="ref-27" ref-type="bibr">27</xref></sup>. PRM is still evolving; however, it has already been used successfully to address difficult proteomics problems in human health, such as the role of low-abundance polyubiquitin chains
+<sup><xref rid="ref-28" ref-type="bibr">28</xref></sup> in Parkinson&#x02019;s disease
+<sup><xref rid="ref-29" ref-type="bibr">29</xref></sup>, and in plant biology to monitor the degradation of low-abundance peptides in
+<italic>Arabidopsis thaliana</italic>
+<sup><xref rid="ref-30" ref-type="bibr">30</xref></sup>.</p><p>DIA is like MRM/PRM in that it repeatedly samples the same peptides for more precise quantification, but it differs from them and DDA by dispensing with the isolation of individual peptide species and instead repeatedly selecting mixtures of peptide species within large, pre-specified mass ranges (
+<xref ref-type="fig" rid="f1">Figure 1</xref> and
+<xref ref-type="fig" rid="f2">Figure 2B</xref>) for MS2 scans. DIA is therefore guaranteed to sample all peptides within the selected mass ranges, allowing for the identification of all sufficiently abundant peptides within them if the resulting spectra are properly interpreted
+<sup><xref rid="ref-10" ref-type="bibr">10</xref></sup>.</p><p>Proper interpretation of DIA data is currently problematic because the complex MS2 scans contain mixtures of peptides and therefore are more difficult to analyze. Fortunately, recent developments in bioinformatics software have adequately overcome this DIA issue, so that DIA now closely matches DDA in the number of peptide identifications while still allowing precise quantification of most of them. Quantification relies on comparing DIA spectra to sets of annotated and refined peptide-MS2 spectrum matches from DDA experiments (or the same DIA experiment in DIA-Umpire&#x02019;s algorithm) called spectral libraries that show accurate, empirically determined fragmentation patterns for each peptide in the library. However, DIA is currently unable to match the precision of MRM or PRM in measuring very low-abundance peptides, likely because their signals are dwarfed by those from abundant co-eluting peptides. A brief comparison of DDA, DIA, and MRM/PRM with respect to precision of quantification, breadth of identification, ease of setup and analysis, and reproducibility, is shown in
+<xref ref-type="table" rid="T1">Table 1</xref>.</p><table-wrap id="T1" orientation="portrait" position="anchor"><label>Table 1. </label><caption><title>Advantages and disadvantages of data-dependent acquisition, parallel reaction monitoring/multiple reaction monitoring, and data-independent acquisition methods.</title></caption><table frame="hsides" rules="groups" content-type="article-table"><thead><tr><th align="left" valign="top" rowspan="1" colspan="1">Method</th><th align="left" valign="top" rowspan="1" colspan="1">Instrument setup</th><th align="left" valign="top" rowspan="1" colspan="1">Ease of data analysis</th><th align="left" valign="top" rowspan="1" colspan="1">Precision of peptide
+<break/>quantification</th><th align="left" valign="top" rowspan="1" colspan="1">Reproducibility of
+<break/>peptide identification</th><th align="left" valign="top" rowspan="1" colspan="1">Breadth of peptide
+<break/>identification</th></tr></thead><tbody><tr><td valign="top" rowspan="1" colspan="1">DDA</td><td valign="top" rowspan="1" colspan="1">Easiest
+<break/>Requires user selection
+<break/>of precursor m/z range
+<break/>and frequency of
+<break/>precursor scans. Is the
+<break/>default mode of use
+<break/>on most commercial
+<break/>instruments.</td><td valign="top" rowspan="1" colspan="1">Easiest
+<break/>Many convenient
+<break/>and comprehensive
+<break/>pipelines for the
+<break/>analysis of DDA
+<break/>spectra have been
+<break/>developed over more
+<break/>than 20 years
+<sup><xref rid="ref-48" ref-type="bibr">48</xref>,
+<xref rid="ref-51" ref-type="bibr">51</xref>,
+<xref rid="ref-52" ref-type="bibr">52</xref></sup>.</td><td valign="top" rowspan="1" colspan="1">Low/Moderate/High
+<break/>Spectral counts (low),
+<break/>isobaric-tag labels (moderate),
+<break/>or SILAC (high) can be used
+<break/>for relative quantification of
+<break/>protein abundance across
+<break/>samples. Hard to use for
+<break/>absolute quantification.</td><td valign="top" rowspan="1" colspan="1">Lowest
+<break/>Run-to-run peptide
+<break/>identification overlap
+<break/>for a given sample is
+<break/>around 60%
+<sup><xref rid="ref-53" ref-type="bibr">53</xref></sup>.</td><td valign="top" rowspan="1" colspan="1">Highest
+<break/>Samples and
+<break/>identifies a single
+<break/>time as many
+<break/>peptides as can be
+<break/>individually isolated.</td></tr><tr><td valign="top" rowspan="1" colspan="1">PRM/MRM</td><td valign="top" rowspan="1" colspan="1">Hardest
+<break/>Requires prior
+<break/>identification of
+<break/>peptides and, in
+<break/>MRM, selection
+<break/>of reproducible
+<break/>fragments that do not
+<break/>exhibit interference
+<sup><xref rid="ref-54" ref-type="bibr">54</xref></sup>.</td><td valign="top" rowspan="1" colspan="1">Moderate
+<break/>A few pipelines have
+<break/>been developed over
+<break/>the past few years but
+<break/>require some manual
+<break/>curation to identify
+<break/>and quantify fragment
+<break/>chromatograms
+<sup><xref rid="ref-54" ref-type="bibr">54</xref></sup>.</td><td valign="top" rowspan="1" colspan="1">Highest
+<break/>Provides good relative
+<break/>peptide quantification and
+<break/>can be coupled with heavy
+<break/>labeled reference peptide for
+<break/>absolute quantification. Most
+<break/>sensitive method because of
+<break/>high signal-to-noise ratio
+<sup><xref rid="ref-54" ref-type="bibr">54</xref></sup>.</td><td valign="top" rowspan="1" colspan="1">Highest
+<break/>Run-to-run peptide
+<break/>identification overlap
+<break/>for a given sample is
+<break/>more than 85%
+<sup><xref rid="ref-54" ref-type="bibr">54</xref></sup>.</td><td valign="top" rowspan="1" colspan="1">Low
+<break/>Repeatedly samples
+<break/>and identifies a small
+<break/>set of pre-specified
+<break/>peptides
+<sup><xref rid="ref-54" ref-type="bibr">54</xref></sup>.</td></tr><tr><td valign="top" rowspan="1" colspan="1">DIA</td><td valign="top" rowspan="1" colspan="1">Easy
+<break/>Requires user
+<break/>selection of precursor
+<break/>m/z windows for MS1
+<break/>and MS2 scans.</td><td valign="top" rowspan="1" colspan="1">Hardest
+<break/>Requires multiple
+<break/>steps from multiple
+<break/>experiments to compile
+<break/>spectral libraries, with
+<break/>more parameters to
+<break/>choose in recently
+<break/>developed, not-yet-
+<break/>established pipelines.</td><td valign="top" rowspan="1" colspan="1">Moderate/High
+<break/>Similar to PRM/MRM but
+<break/>more vulnerable to variation
+<break/>caused by interference from
+<break/>other peptides
+<sup><xref rid="ref-32" ref-type="bibr">32</xref>&#x02013;
+<xref rid="ref-37" ref-type="bibr">37</xref>,
+<xref rid="ref-39" ref-type="bibr">39</xref>&#x02013;
+<xref rid="ref-45" ref-type="bibr">45</xref>,
+<xref rid="ref-47" ref-type="bibr">47</xref>,
+<xref rid="ref-50" ref-type="bibr">50</xref>&#x02013;
+<xref rid="ref-54" ref-type="bibr">54</xref></sup>.</td><td valign="top" rowspan="1" colspan="1">High
+<break/>Similar to PRM/MRM
+<break/>but more vulnerable
+<break/>to variation caused by
+<break/>interference from other
+<break/>peptides
+<sup><xref rid="ref-32" ref-type="bibr">32</xref>&#x02013;
+<xref rid="ref-37" ref-type="bibr">37</xref>,
+<xref rid="ref-39" ref-type="bibr">39</xref>&#x02013;
+<xref rid="ref-45" ref-type="bibr">45</xref>,
+<xref rid="ref-47" ref-type="bibr">47</xref>,
+<xref rid="ref-50" ref-type="bibr">50</xref>&#x02013;
+<xref rid="ref-54" ref-type="bibr">54</xref></sup>.</td><td valign="top" rowspan="1" colspan="1">High
+<break/>Repeatedly samples
+<break/>every peptide
+<break/>within pre-specified
+<break/>m/z windows and
+<break/>identifies those
+<break/>whose signals can
+<break/>be successfully
+<break/>deconvolved
+<sup><xref rid="ref-54" ref-type="bibr">54</xref></sup>.</td></tr></tbody></table><table-wrap-foot><fn><p>DDA, data-dependent acquisition; DIA, data-independent acquisition; MRM, multiple reaction monitoring; MS1, scan in which the peptide ions entering the mass spectrometer at a given time are identified; MS2, scan in which the fragments of all (or some) of the peptides that are in the mass spectrometer at a given time are identified; m/z, mass-to-charge ratio; PRM, parallel reaction monitoring; SILAC, stable isotope labeling by amino acids in cell culture.</p></fn></table-wrap-foot></table-wrap><p>The complexity of MS2 spectra greatly impacts the sensitivity of the downstream analyses and therefore must be considered when planning a DIA experiment. Two main variables determine the complexity and interpretability of the spectra: the number of proteins present in the sample and the precursor m/z window widths from which ions are isolated and fragmented. The effect of the number of proteins present is shown in
+<xref ref-type="fig" rid="f3">Figure 3</xref>, which describes the results of a study in which 345 synthetic peptides were spiked into water, yeast lysate, or human lysate backgrounds in concentrations varying from 30 to 0.058 fmol/&#x000b5;L and then analyzed via relatively wide precursor isolation windows of 25 m/z
+<sup><xref rid="ref-31" ref-type="bibr">31</xref></sup> (see
+<xref ref-type="other" rid="SM1">Supplementary material</xref>). The sensitivity of peptide detection decreases with the protein complexity of the organism, where the yeast lysate is more complex than the water background and the human lysate is more complex than the yeast lysate, with an average of 32,993 unique human, trypsin-digested peptide ions possibly falling within each 25-m/z window compared with the 7,287 yeast peptide ions. Sensitivity and precision may be increased by shortening the width of the precursor isolation window, thereby decreasing the number of peptides represented in each MS2 spectrum. However, this decreases coverage across the total precursor m/z range and therefore the number of peptides to which the analysis may be sensitive. Therefore, experimentalists must balance the effects of sample complexity, isolation window width, and desired coverage on sensitivity.</p><fig fig-type="figure" id="f3" orientation="portrait" position="float"><label>Figure 3. </label><caption><title>Effect of peptide concentration and sample complexity on identification sensitivity
+<sup><xref rid="ref-31" ref-type="bibr">31</xref></sup>.</title><p>Varying concentrations of 345 synthetic peptides were spiked into three sample backgrounds, subjected to data-independent acquisition (DIA), and analyzed by OpenSWATH. Lines show the number of spike in peptides identified at a 5% false discovery rate (FDR) in the different samples.</p></caption><graphic xlink:href="f1000research-5-7580-g0002"/></fig><p>The main reason for the decrease in sensitivity is the increased likelihood of fragment ion interference in complex spectra, which occurs when multiple co-eluting peptides share a fragment ion peak. Interference undermines the elution profile correlation between a peptide&#x02019;s fragments and the fragments&#x02019; correlation to spectral libraries on which many DIA analysis methods rely. In an analysis of synthetic peptides spiked into human urine, SWATHProphet
+<sup><xref rid="ref-32" ref-type="bibr">32</xref></sup>, a software tool further described below, estimated that at least 24% of confidently identified peptides showed evidence of fragment ion interference that increased the variance of their quantification. This percentage is likely much higher in unidentified peptides and this is the likely cause of the peptides&#x02019; invisibility to the software. Therefore, further progress in the interpretation of DIA spectra should circumvent the problem of interference, which SWATHProphet
+<sup><xref rid="ref-32" ref-type="bibr">32</xref></sup> has begun to do by identifying and disregarding fragments affected by interference.</p></sec><sec><title>Data-independent acquisition strategies</title><p>In all DIA methods, each MS2 scan contains fragments from every peptide within one or more pre-specified precursor m/z windows. Each window is repeatedly sampled so that each peptide is fragmented multiple times. The earliest and most common DIA method is a sequential sampling strategy
+<sup><xref rid="ref-9" ref-type="bibr">9</xref>,
+<xref rid="ref-33" ref-type="bibr">33</xref></sup> (
+<xref ref-type="fig" rid="f2">Figure 2B</xref>), in which an m/z range covering most peptides of interest is split into a sequence of non-overlapping windows, usually of equal but sometimes of variable size depending on the m/z distribution of the peptides of interest. For each window in the sequence, all of the precursors falling into that window are fragmented together and measured in an MS2 scan. The machine repeats the sequence throughout the full HPLC elution gradient. The time needed to complete the traversal of the sequence is on the order of a few seconds, such that every peptide can be sampled at least a few times during its elution.</p><p>An alternative DIA method, MSX
+<sup><xref rid="ref-34" ref-type="bibr">34</xref></sup>, incorporates multiplexing and an element of randomness to the sequential sequencing to increase precision in associating a precursor ion to its fragments. However, this method is compatible only with selected mass spectrometers in which software controllers have been modified to accept random sampling of mass range windows. The precursor m/z windows are smaller and more numerous than in the sequential method, but each MS2 scan is multiplexed. Each scan contains fragmented precursors from multiple, randomly chosen non-contiguous windows, such that the precursors span the same total m/z length in each MS2 scan. Post-processing of the MS2 spectra solves a system of linear equations to infer from which smaller precursor window each fragment ion peak originated. The resulting de-multiplexed MS2 scans allow a modest increase in peptide identifications compared with scans produced from non-random, contiguous windows.</p></sec><sec><title>Computational analysis of spectra</title><p>Although traditional algorithms for identifying peptides from DDA spectra can be applied to DIA spectra analysis, these algorithms are not appropriate for DIA for two reasons: they incorrectly assume that each MS2 scan contains fragments from just one peptide, and they ignore the dynamic pattern of elution profiles in DIA spectra. Consequently, three main classes of computational algorithms have emerged to specifically analyze DIA data that accommodate the complexity and time variation in DIA spectra. The first two classes are for untargeted, discovery-based identification, and the third is for precise quantification of previously identified peptides from spectral libraries. The main challenge of the algorithms below is controlling the false discovery rate among the identified peptides while identifying all (or most) real peptides in the sample of interest.</p><sec><title>Deconvolution of MS2 scans over time followed by database search</title><p>These methods use a pre-processing step that deconvolves DIA MS2 scans into multiple pseudo-spectra, each containing the fragments of only a single peptide species in the mixture. The intensities of different fragments of the same peptide species should correlate over elution time, and the pre-processing step uses this correlation to assign fragment ions from MS2 scans to their intact peptide species in MS1 scans. These pseudo-spectra then can be searched by using a traditional DDA database search method.</p><p>DIA-Umpire
+<sup><xref rid="ref-35" ref-type="bibr">35</xref></sup> and DeMux
+<sup><xref rid="ref-36" ref-type="bibr">36</xref></sup> are two strategies that take this approach. They differ in the specific algorithms used to group ions and compile them into deconvolved spectra. DIA-Umpire tends to work better because it considers isotope peak distributions in MS1 scans to narrow down candidate peptides, finding up to 89% of the peptides identified by analogous DDA experiments. DIA-Umpire also includes additional methods that generate new reference/library spectra, incorporates prior library spectra, and uses them for further steps in protein identification and quantification, achieving on average a 0.931 R
+<sup>2</sup> correlation in the quantifications of peptides between replicates. This strategy works in a fashion analogous to DDA experiments in that it identifies many peptides, but also the strategy provides precise DIA quantification of the identified peptides
+<sup><xref rid="ref-35" ref-type="bibr">35</xref></sup>.</p></sec><sec><title>Dot-product scoring with additional heuristics</title><p>These strategies are inspired by traditional database searching and do not focus on using dynamic patterns to identify peptides. Instead, they include other heuristics to adapt searching to a DIA context. They score each peptide against each observed spectrum by computing the dot-product of the peptide&#x02019;s theoretical spectrum against each observed spectrum, much like traditional DDA search algorithms. However, these methods introduce additional heuristic filtering steps, such as considering only observed spectra that match a threshold number of peaks in a theoretical spectrum. The first example of this strategy was FT-ARM
+<sup><xref rid="ref-37" ref-type="bibr">37</xref></sup>. However, a more recent method, Pecan
+<sup><xref rid="ref-38" ref-type="bibr">38</xref></sup>, contains additional heuristics as well as a discriminative model to combine them, so it performs better than FT-ARM. Pecan is available through the Skyline
+<sup><xref rid="ref-34" ref-type="bibr">34</xref>&#x02013;
+<xref rid="ref-37" ref-type="bibr">37</xref>,
+<xref rid="ref-39" ref-type="bibr">39</xref></sup> graphical user interface, which provides convenient visualization, annotation, and analysis of mass spectra acquired by DDA, DIA, and MRM/PRM.</p></sec><sec><title>Chromatogram scoring with spectral libraries</title><p>Strategies in this category are adapted from methods used to analyze PRM/MRM spectra, because both DIA and MRM/PRM repeatedly sample the same peptides to obtain sequences of fragment ion intensities over elution time (fragment ion chromatograms;
+<xref ref-type="fig" rid="f2">Figure 2D</xref>). These methods take library spectra as input (compiled from prior DDA peptide identifications or prior DIA-Umpire identifications) and extract fragment ion chromatograms at the peaks in the library spectra. Potential elution peaks of each peptide from these fragment ion chromatograms are evaluated on the basis of many criteria, including how well the fragment ions correlate over elution time and how well their relative intensities match their corresponding library spectrum. Elution peaks are evaluated by using a discriminative model that combines these criteria to distinguish real peptide signals from decoy peptide signals. These methods also quantify proteins by quantifying the fragment ion chromatograms of their peptides.</p><p>OpenSWATH
+<sup><xref rid="ref-31" ref-type="bibr">31</xref></sup>, SWATHProphet
+<sup><xref rid="ref-32" ref-type="bibr">32</xref></sup>, Spectronaut
+<sup><xref rid="ref-40" ref-type="bibr">40</xref></sup>, and a module in DIA-Umpire
+<sup><xref rid="ref-35" ref-type="bibr">35</xref></sup> all implement this strategy. Skyline
+<sup><xref rid="ref-39" ref-type="bibr">39</xref></sup> provides elution peak quantification but not statistical validation. OpenSWATH
+<sup><xref rid="ref-31" ref-type="bibr">31</xref></sup> has been shown to achieve coefficients of variation of between 0% and 20% on 345 spike-in peptides across 256-fold concentration differences in a yeast lysate. In a series of human lysate runs, Spectronaut
+<sup><xref rid="ref-40" ref-type="bibr">40</xref></sup> achieved a 98% peptide identification reproducibility rate from run to run on DIA data compared with 49% on DDA data on 26,738 peptides covering 3,690 proteins.</p><p>The class of search methods to be used depends on the specific context of the experiment. If no library spectra are available, then Pecan or DIA-Umpire must be used. No published direct comparison yet exists between the two, so the choice depends on how they fit into your bioinformatics pipeline. DIA-Umpire includes its own pipeline for library spectrum generation and automated quantification. Pecan is incorporated into Skyline
+<sup><xref rid="ref-39" ref-type="bibr">39</xref></sup> such that visualization, annotation, and semi-automated quantification are convenient. If library spectra are available, then a method with chromatogram scoring should be used. Again, no direct comparison is available, but the different chromatogram scoring algorithms are similar enough such that one can use the tool that best fits into one&#x02019;s pipeline.</p></sec></sec><sec><title>Examples of studies facilitated by the increased breadth and precision of DIA</title><p>Here, we describe the use of algorithm 3, chromatogram scoring with spectral libraries, on two large quantitative studies whose insights critically depend on the breadth, reproducibility, and quantitative precision of DIA. The first study characterizes plasma proteome variation between monozygotic and dizygotic twins
+<sup><xref rid="ref-41" ref-type="bibr">41</xref></sup> and elucidates biomarker variation over time. Its inclusion of both types of twins allows the quantification of variation caused by genetics, the environment, and time. The study sampled, at two time points, blood from each person in 22 pairs of adult fraternal twins and 36 pairs of adult identical twins, resulting in 232 sets of DIA experiments. The spectral library used to identify and quantify peptides consists of 43,000 peptides that represent 1,667 unique proteins, compiled from a pre-existing library
+<sup><xref rid="ref-42" ref-type="bibr">42</xref></sup> and supplementary DDA data. OpenSWATH analysis was able to identify 1,904 of these peptides (342 proteins) in all 232 samples and quantify 76% of these with coefficients of variation of less than 25%. Notably, 42 of the identified proteins are approved by the US Food and Drug Administration for clinical assays. The breadth and precision of quantification vastly surpassed prior attempts using antibody arrays
+<sup><xref rid="ref-43" ref-type="bibr">43</xref></sup> and could be achieved only by using DIA rather than PRM or DDA.</p><p>A thorough survey of the successfully identified proteins characterized the main causes of their variability: proteins involved in blood coagulation, inflammation, and high-density lipoproteins that regulate cholesterol levels are controlled more by genetics than environmental influences. These results corroborate findings from several prior studies. Moreover, the survey discovered previously uncharacterized dependencies of eight of the clinically relevant proteins on age, which could confound their clinical interpretation. For example, plasma level of soluble CD14 is used as an independent predictor for HIV infection, and 14-3-3 protein zeta/delta is used as a prognostic for lung and breast cancers; both of these proteins naturally vary over time
+<sup><xref rid="ref-41" ref-type="bibr">41</xref></sup>.</p><p>In a second study, DIA and OpenSWATH successfully mapped the interactomes of four well-characterized human proteins via affinity purification of Flag-tagged proteins and discovered how the interactions of two of them with the chaperone protein HSP90 differ in response to melanoma-associated mutations
+<sup><xref rid="ref-44" ref-type="bibr">44</xref></sup>. In particular, DIA analysis of CDK4 affinity-purified samples out-identified and out-quantified analogous DDA experiments: 5,089 peptides were identified in all three DIA replicates, whereas 2,741 were identified in all three DDA replicates. Of peptides identified by both DIA and DDA, DIA quantified 82.1% with a coefficient of variation of less than 20% compared with the 74.5% achieved by DDA. Samples affinity-purified for melanoma-associated mutant versions of CDK4 showed increases in HSP90 abundance, suggesting that these mutants associate more or form a stronger association than wild-type CDK4 with HSP90.</p></sec><sec><title>Future directions</title><p>Although DIA has been gradually accepted by the proteomics community, improvements in hardware and software tools are still required to facilitate its use by the larger scientific community. From a hardware standpoint, parallel improvements in duty-cycle speed, sensitivity, and peak resolution, especially at the MS2 level, will be critical for the improvement of DIA. Faster duty-cycle speed could allow increases in the mass regions analyzed by a DIA experiment in a single run. Currently, DIA experiments typically range from 100 to 400 m/z units (500 to 900 m/z region), whereas DDA usually covers 1,600 m/z units (400 to 2000 m/z region). Moreover, increases in duty cycle would allow a reduction of the size of the fragmentation windows on DIA methods from 15 to 25 m/z units on average to 2 to 5 m/z units without needing to reduce the mass range to be analyzed in a single run. Much like MRM methods, isolating small regions for fragmentation would result in increased signal-to-noise ratios at the MS2 level, which combined with increased sensitivity would allow the detection of fragment ions formerly lost in the noise. Moreover, the use of smaller fragmentation windows combined with increases in instrument resolution, currently provided by high-end instruments, would result in improved deconvolution of mixed spectra because the mixtures are simpler (fewer peptides fragmented in each MS2 event) and fragments that are close in mass are easier to differentiate (higher resolution). No mass spectrometers yet combine the resolving power and speed needed to cover the same mass range that DDA does using small windows for DIA analysis; however, mass spectrometry speed, sensitivity, and resolution have greatly improved over the last 5 years, and we are yet to reach the physical limits of hardware improvements
+<sup><xref rid="ref-45" ref-type="bibr">45</xref></sup>. If the rate of instrumentation advances continues, then within the next 5 years we should be able to cover the same m/z range that DDA covers using small, overlapping DIA windows. Thus, the main challenge is how these large DIA datasets will be deconvoluted and analyzed.</p><p>To further improve the deconvolution of complex DIA spectra and increase their identification and quantification efficiency, researchers are developing more sophisticated sampling and computational algorithms to analyze biological samples using DIA. Though yet unpublished, several such methods were presented at the American Society of Mass Spectrometry conference. Three of the most promising analysis methods are outlined below.</p><p>The first method draws a parallel between the analysis of DIA spectra and the field of compressed sensing to precisely infer the precursor masses of the detected fragment ions
+<sup><xref rid="ref-46" ref-type="bibr">46</xref></sup>. It uses the random, multiplexed sampling of MSX
+<sup><xref rid="ref-34" ref-type="bibr">34</xref></sup> but improves the deconvolution of multiplexed spectra by adding further constraints to the system of linear equations posed by deconvolution, inspired by the field of compressed sensing. Compressed sensing takes advantage of the fact that if a signal is sparse, then one need not measure all of the signal to accurately reconstruct it
+<sup><xref rid="ref-47" ref-type="bibr">47</xref></sup>. DIA data are sparse; at any time during the chromatography, only a small fraction of possible precursor peaks is observed. To precisely match precursor ions to their fragments, it is unnecessary to dedicate fragment scans to all small individual precursor windows if most windows are devoid of peptides. Indeed, DIA methods use wide, contiguous precursor isolation windows of width up to 25 m/z. However, compressed sensing states that repeated sampling from these predetermined windows are suboptimal to match fragment ions to their precursors. Instead, if one randomly combines smaller, not necessarily adjacent windows into large composite windows that overall span 25 m/z, then one can match fragments to precursors within these smaller, more precise windows. The published MSX
+<sup><xref rid="ref-34" ref-type="bibr">34</xref></sup> method already leverages this fact but does not use the theoretical techniques developed in compressed sensing to get the most accurate deconvolution.</p><p>The second method attempts to improve identifications by using linear regression to jointly identify the whole set of present peptides simultaneously rather than one at a time
+<sup><xref rid="ref-48" ref-type="bibr">48</xref></sup>. Unlike current methods, the regression can deconvolve fragment ion interference in a principled way, which occurs when multiple precursor ions contribute to intensity at the same fragment ion peak, such that its chromatographic profile no longer matches the chromatographic profiles of the other fragment ions. Estimates have shown that approximately 24% of peptides may exhibit interference in a human urine sample
+<sup><xref rid="ref-32" ref-type="bibr">32</xref></sup>. This phenomenon prevents current methods from attributing the fragment ion peak to any single precursor ion, but the regression approach can in principle properly attribute the peak to all appropriate precursor ions simultaneously.</p><p>The third method extends traditional DDA search methods with peak filtering to take into account the correlation of fragment ion peaks from the same peptide
+<sup><xref rid="ref-49" ref-type="bibr">49</xref></sup>. When scoring matches between candidate peptides and observed MS2 scans, some shared peaks can be explained by multiple candidate peptides and some unique peaks can be explained by just one. The method restricts each shared peak to contribute to the score of only the single peptide whose unique peaks correlate best over time with the shared peak. This restriction prevents the spurious high scores of falsely discovered peptides that depend entirely on peaks originating from other peptides. These techniques to better associate fragment ions to their precursor ions are in developmental stages and, if successful, will broaden the usefulness of any DIA dataset.</p></sec><sec sec-type="conclusions"><title>Conclusions</title><p>Because DIA combines the breadth of protein identification provided by DDA and approaches the sensitivity and precision of MRM/PRM, it will be the best choice for discovery bottom-up proteomics and large-scale quantification in the near future. Sampling schemes and analysis methods already allow flexibility to adapt DIA to most biological problems and researcher needs. However, because DIA is still a work in progress, DDA data are still easier to acquire and analyze for most researchers and DDA is the method of choice for most biology and proteomics laboratories. Finally, using DIA implies trading off some precision and sensitivity for breadth when compared with targeted methods. Thus, if quantification of specific lowly abundant peptides is required, then MRM and PRM targeting the ions of interest are still the better option.</p></sec><sec><title>Abbreviations</title><p>DDA, data-dependent acquisition; DIA, data-independent acquisition; HPLC, high performance liquid chromatography; LC-MS/MS, liquid chromatography-tandem mass spectrometry; MRM, multiple reaction monitoring; MS1, scan in which the peptide ions entering the mass spectrometer at a given time are identified; MS2, scan in which the fragments of all (or some) of the peptides that are in the mass spectrometer at a given time are identified; m/z, mass-to-charge ratio; PRM, parallel reaction monitoring.</p></sec></body><back><sec id="SM1" sec-type="supplementary-material"><title>Supplementary material</title><p>Dataset 1. Zip file contains 4 files: 3 files that show false discovery rates and metadata for the 345 Synthetic Gold Standard peptides spiked into the yeast, human, and water backgrounds from the experiments shown in
+<xref ref-type="fig" rid="f3">Figure 3</xref>. Each file is associated with one background and contains identifications from 30 experiments spanning 10 spike-in concentrations with 3 replicates each. The "m_score" column denotes the false discovery rates reported by OpenSWATH. The 4th file "mf_files.txt" further annotates the 90 experiments.</p><p>
+<supplementary-material content-type="local-data" id="S0"><media xlink:href="f1000research-5-7580-s0000.tgz"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material>.</p></sec><ref-list><ref id="ref-1"><label>1</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Mann</surname><given-names>M</given-names></name><name><surname>Hendrickson</surname><given-names>RC</given-names></name><name><surname>Pandey</surname><given-names>A</given-names></name></person-group>:
+<article-title>Analysis of proteins and proteomes by mass spectrometry.</article-title>
+<source><italic>Annu Rev Biochem.</italic></source>
+<year>2001</year>;<volume>70</volume>:<fpage>437</fpage>&#x02013;<lpage>73</lpage>.
+<pub-id pub-id-type="doi">10.1146/annurev.biochem.70.1.437</pub-id>
+<pub-id pub-id-type="pmid">11395414</pub-id></mixed-citation></ref><ref id="ref-2"><label>2</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Ong</surname><given-names>SE</given-names></name><name><surname>Blagoev</surname><given-names>B</given-names></name><name><surname>Kratchmarova</surname><given-names>I</given-names></name><etal/></person-group>:
+<article-title>Stable isotope labeling by amino acids in cell culture, SILAC, as a simple and accurate approach to expression proteomics.</article-title>
+<source><italic>Mol Cell Proteomics.</italic></source>
+<year>2002</year>;<volume>1</volume>(<issue>5</issue>):<fpage>376</fpage>&#x02013;<lpage>86</lpage>.
+<pub-id pub-id-type="doi">10.1074/mcp.M200025-MCP200</pub-id>
+<pub-id pub-id-type="pmid">12118079</pub-id></mixed-citation><note><p>
+<ext-link ext-link-type="uri" xlink:href="http://f1000.com/prime/721944110">F1000 Recommendation</ext-link>
+</p></note></ref><ref id="ref-3"><label>3</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Ross</surname><given-names>PL</given-names></name><name><surname>Huang</surname><given-names>YN</given-names></name><name><surname>Marchese</surname><given-names>JN</given-names></name><etal/></person-group>:
+<article-title>Multiplexed protein quantitation in
+<italic>Saccharomyces cerevisiae</italic> using amine-reactive isobaric tagging reagents.</article-title>
+<source><italic>Mol Cell Proteomics.</italic></source>
+<year>2004</year>;<volume>3</volume>(<issue>12</issue>):<fpage>1154</fpage>&#x02013;<lpage>69</lpage>.
+<pub-id pub-id-type="doi">10.1074/mcp.M400129-MCP200</pub-id>
+<pub-id pub-id-type="pmid">15385600</pub-id></mixed-citation><note><p>
+<ext-link ext-link-type="uri" xlink:href="http://f1000.com/prime/721943921">F1000 Recommendation</ext-link>
+</p></note></ref><ref id="ref-4"><label>4</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Bateman</surname><given-names>NW</given-names></name><name><surname>Goulding</surname><given-names>SP</given-names></name><name><surname>Shulman</surname><given-names>NJ</given-names></name><etal/></person-group>:
+<article-title>Maximizing peptide identification events in proteomic workflows using data-dependent acquisition (DDA).</article-title>
+<source><italic>Mol Cell Proteomics.</italic></source>
+<year>2014</year>;<volume>13</volume>(<issue>1</issue>):<fpage>329</fpage>&#x02013;<lpage>38</lpage>.
+<pub-id pub-id-type="doi">10.1074/mcp.M112.026500</pub-id>
+<!--<pub-id pub-id-type="pmcid">3879624</pub-id>-->
+<pub-id pub-id-type="pmid">23820513</pub-id></mixed-citation></ref><ref id="ref-5"><label>5</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Wolf-Yadlin</surname><given-names>A</given-names></name><name><surname>Hautaniemi</surname><given-names>S</given-names></name><name><surname>Lauffenburger</surname><given-names>DA</given-names></name><etal/></person-group>:
+<article-title>Multiple reaction monitoring for robust quantitative proteomic analysis of cellular signaling networks.</article-title>
+<source><italic>Proc Natl Acad Sci U S A.</italic></source>
+<year>2007</year>;<volume>104</volume>(<issue>14</issue>):<fpage>5860</fpage>&#x02013;<lpage>5</lpage>.
+<pub-id pub-id-type="doi">10.1073/pnas.0608638104</pub-id>
+<!--<pub-id pub-id-type="pmcid">1851582</pub-id>-->
+<pub-id pub-id-type="pmid">17389395</pub-id></mixed-citation></ref><ref id="ref-6"><label>6</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Addona</surname><given-names>TA</given-names></name><name><surname>Abbatiello</surname><given-names>SE</given-names></name><name><surname>Schilling</surname><given-names>B</given-names></name><etal/></person-group>:
+<article-title>Multi-site assessment of the precision and reproducibility of multiple reaction monitoring-based measurements of proteins in plasma.</article-title>
+<source><italic>Nat Biotechnol.</italic></source>
+<year>2009</year>;<volume>27</volume>(<issue>7</issue>):<fpage>633</fpage>&#x02013;<lpage>41</lpage>.
+<pub-id pub-id-type="doi">10.1038/nbt.1546</pub-id>
+<!--<pub-id pub-id-type="pmcid">2855883</pub-id>-->
+<pub-id pub-id-type="pmid">19561596</pub-id></mixed-citation></ref><ref id="ref-7"><label>7</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Stergachis</surname><given-names>AB</given-names></name><name><surname>MacLean</surname><given-names>B</given-names></name><name><surname>Lee</surname><given-names>K</given-names></name><etal/></person-group>:
+<article-title>Rapid empirical discovery of optimal peptides for targeted proteomics.</article-title>
+<source><italic>Nat Methods.</italic></source>
+<year>2011</year>;<volume>8</volume>(<issue>12</issue>):<fpage>1041</fpage>&#x02013;<lpage>3</lpage>.
+<pub-id pub-id-type="doi">10.1038/nmeth.1770</pub-id>
+<!--<pub-id pub-id-type="pmcid">3227787</pub-id>-->
+<pub-id pub-id-type="pmid">22056677</pub-id></mixed-citation></ref><ref id="ref-8"><label>8</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Peterson</surname><given-names>AC</given-names></name><name><surname>Russell</surname><given-names>JD</given-names></name><name><surname>Bailey</surname><given-names>DJ</given-names></name><etal/></person-group>:
+<article-title>Parallel reaction monitoring for high resolution and high mass accuracy quantitative, targeted proteomics.</article-title>
+<source><italic>Mol Cell Proteomics.</italic></source>
+<year>2012</year>;<volume>11</volume>(<issue>11</issue>):<fpage>1475</fpage>&#x02013;<lpage>88</lpage>.
+<pub-id pub-id-type="doi">10.1074/mcp.O112.020131</pub-id>
+<!--<pub-id pub-id-type="pmcid">3494192</pub-id>-->
+<pub-id pub-id-type="pmid">22865924</pub-id></mixed-citation><note><p>
+<ext-link ext-link-type="uri" xlink:href="http://f1000.com/prime/721942292">F1000 Recommendation</ext-link>
+</p></note></ref><ref id="ref-9"><label>9</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Venable</surname><given-names>JD</given-names></name><name><surname>Dong</surname><given-names>MQ</given-names></name><name><surname>Wohlschlegel</surname><given-names>J</given-names></name><etal/></person-group>:
+<article-title>Automated approach for quantitative analysis of complex peptide mixtures from tandem mass spectra.</article-title>
+<source><italic>Nat Methods.</italic></source>
+<year>2004</year>;<volume>1</volume>(<issue>1</issue>):<fpage>39</fpage>&#x02013;<lpage>45</lpage>.
+<pub-id pub-id-type="doi">10.1038/nmeth705</pub-id>
+<pub-id pub-id-type="pmid">15782151</pub-id></mixed-citation><note><p>
+<ext-link ext-link-type="uri" xlink:href="http://f1000.com/prime/721847555">F1000 Recommendation</ext-link>
+</p></note></ref><ref id="ref-10"><label>10</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Bilbao</surname><given-names>A</given-names></name><name><surname>Varesio</surname><given-names>E</given-names></name><name><surname>Luban</surname><given-names>J</given-names></name><etal/></person-group>:
+<article-title>Processing strategies and software solutions for data-independent acquisition in mass spectrometry.</article-title>
+<source><italic>Proteomics.</italic></source>
+<year>2015</year>;<volume>15</volume>(<issue>5&#x02013;6</issue>):<fpage>964</fpage>&#x02013;<lpage>80</lpage>.
+<pub-id pub-id-type="doi">10.1002/pmic.201400323</pub-id>
+<pub-id pub-id-type="pmid">25430050</pub-id></mixed-citation></ref><ref id="ref-11"><label>11</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Aebersold</surname><given-names>R</given-names></name><name><surname>Mann</surname><given-names>M</given-names></name></person-group>:
+<article-title>Mass spectrometry-based proteomics.</article-title>
+<source><italic>Nature.</italic></source>
+<year>2003</year>;<volume>422</volume>(<issue>6928</issue>):<fpage>198</fpage>&#x02013;<lpage>207</lpage>.
+<pub-id pub-id-type="doi">10.1038/nature01511</pub-id>
+<pub-id pub-id-type="pmid">12634793</pub-id></mixed-citation></ref><ref id="ref-12"><label>12</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Wolf-Yadlin</surname><given-names>A</given-names></name><name><surname>Kumar</surname><given-names>N</given-names></name><name><surname>Zhang</surname><given-names>Y</given-names></name><etal/></person-group>:
+<article-title>Effects of HER2 overexpression on cell signaling networks governing proliferation and migration.</article-title>
+<source><italic>Mol Syst Biol.</italic></source>
+<year>2006</year>;<volume>2</volume>:<fpage>54</fpage>.
+<pub-id pub-id-type="doi">10.1038/msb4100094</pub-id>
+<!--<pub-id pub-id-type="pmcid">1682017</pub-id>-->
+<pub-id pub-id-type="pmid">17016520</pub-id></mixed-citation></ref><ref id="ref-13"><label>13</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Argenzio</surname><given-names>E</given-names></name><name><surname>Bange</surname><given-names>T</given-names></name><name><surname>Oldrini</surname><given-names>B</given-names></name><etal/></person-group>:
+<article-title>Proteomic snapshot of the EGF-induced ubiquitin network.</article-title>
+<source><italic>Mol Syst Biol.</italic></source>
+<year>2011</year>;<volume>7</volume>:<fpage>462</fpage>.
+<pub-id pub-id-type="doi">10.1038/msb.2010.118</pub-id>
+<!--<pub-id pub-id-type="pmcid">3049407</pub-id>-->
+<pub-id pub-id-type="pmid">21245847</pub-id></mixed-citation><note><p>
+<ext-link ext-link-type="uri" xlink:href="http://f1000.com/prime/722060554">F1000 Recommendation</ext-link>
+</p></note></ref><ref id="ref-14"><label>14</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Vill&#x000e9;n</surname><given-names>J</given-names></name><name><surname>Beausoleil</surname><given-names>SA</given-names></name><name><surname>Gerber</surname><given-names>SA</given-names></name><etal/></person-group>:
+<article-title>Large-scale phosphorylation analysis of mouse liver.</article-title>
+<source><italic>Proc Natl Acad Sci U S A.</italic></source>
+<year>2007</year>;<volume>104</volume>(<issue>5</issue>):<fpage>1488</fpage>&#x02013;<lpage>93</lpage>.
+<pub-id pub-id-type="doi">10.1073/pnas.0609836104</pub-id>
+<!--<pub-id pub-id-type="pmcid">1785252</pub-id>-->
+<pub-id pub-id-type="pmid">17242355</pub-id></mixed-citation><note><p>
+<ext-link ext-link-type="uri" xlink:href="http://f1000.com/prime/1137846">F1000 Recommendation</ext-link>
+</p></note></ref><ref id="ref-15"><label>15</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Ballif</surname><given-names>BA</given-names></name><name><surname>Vill&#x000e9;n</surname><given-names>J</given-names></name><name><surname>Beausoleil</surname><given-names>SA</given-names></name><etal/></person-group>:
+<article-title>Phosphoproteomic analysis of the developing mouse brain.</article-title>
+<source><italic>Mol Cell Proteomics.</italic></source>
+<year>2004</year>;<volume>3</volume>(<issue>11</issue>):<fpage>1093</fpage>&#x02013;<lpage>101</lpage>.
+<pub-id pub-id-type="doi">10.1074/mcp.M400085-MCP200</pub-id>
+<pub-id pub-id-type="pmid">15345747</pub-id></mixed-citation></ref><ref id="ref-16"><label>16</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Blagoev</surname><given-names>B</given-names></name><name><surname>Kratchmarova</surname><given-names>I</given-names></name><name><surname>Ong</surname><given-names>SE</given-names></name><etal/></person-group>:
+<article-title>A proteomics strategy to elucidate functional protein-protein interactions applied to EGF signaling.</article-title>
+<source><italic>Nat Biotechnol.</italic></source>
+<year>2003</year>;<volume>21</volume>(<issue>3</issue>):<fpage>315</fpage>&#x02013;<lpage>8</lpage>.
+<pub-id pub-id-type="doi">10.1038/nbt790</pub-id>
+<pub-id pub-id-type="pmid">12577067</pub-id></mixed-citation><note><p>
+<ext-link ext-link-type="uri" xlink:href="http://f1000.com/prime/1012360">F1000 Recommendation</ext-link>
+</p></note></ref><ref id="ref-17"><label>17</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Gavin</surname><given-names>AC</given-names></name><name><surname>Maeda</surname><given-names>K</given-names></name><name><surname>K&#x000fc;hner</surname><given-names>S</given-names></name></person-group>:
+<article-title>Recent advances in charting protein-protein interaction: mass spectrometry-based approaches.</article-title>
+<source><italic>Curr Opin Biotechnol.</italic></source>
+<year>2011</year>;<volume>22</volume>(<issue>1</issue>):<fpage>42</fpage>&#x02013;<lpage>9</lpage>.
+<pub-id pub-id-type="doi">10.1016/j.copbio.2010.09.007</pub-id>
+<pub-id pub-id-type="pmid">20934865</pub-id></mixed-citation></ref><ref id="ref-18"><label>18</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Davis</surname><given-names>ZH</given-names></name><name><surname>Verschueren</surname><given-names>E</given-names></name><name><surname>Jang</surname><given-names>GM</given-names></name><etal/></person-group>:
+<article-title>Global mapping of herpesvirus-host protein complexes reveals a transcription strategy for late genes.</article-title>
+<source><italic>Mol Cell.</italic></source>
+<year>2015</year>;<volume>57</volume>(<issue>2</issue>):<fpage>349</fpage>&#x02013;<lpage>60</lpage>.
+<pub-id pub-id-type="doi">10.1016/j.molcel.2014.11.026</pub-id>
+<!--<pub-id pub-id-type="pmcid">4305015</pub-id>-->
+<pub-id pub-id-type="pmid">25544563</pub-id></mixed-citation><note><p>
+<ext-link ext-link-type="uri" xlink:href="http://f1000.com/prime/725289767">F1000 Recommendation</ext-link>
+</p></note></ref><ref id="ref-19"><label>19</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Meyniel-Schicklin</surname><given-names>L</given-names></name><name><surname>de Chassey</surname><given-names>B</given-names></name><name><surname>Andr&#x000e9;</surname><given-names>P</given-names></name><etal/></person-group>:
+<article-title>Viruses and interactomes in translation.</article-title>
+<source><italic>Mol Cell Proteomics.</italic></source>
+<year>2012</year>;<volume>11</volume>(<issue>7</issue>):<fpage>M111.014738</fpage>.
+<pub-id pub-id-type="doi">10.1074/mcp.M111.014738</pub-id>
+<!--<pub-id pub-id-type="pmcid">3394946</pub-id>-->
+<pub-id pub-id-type="pmid">22371486</pub-id></mixed-citation></ref><ref id="ref-20"><label>20</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Navare</surname><given-names>AT</given-names></name><name><surname>Sova</surname><given-names>P</given-names></name><name><surname>Purdy</surname><given-names>DE</given-names></name><etal/></person-group>:
+<article-title>Quantitative proteomic analysis of HIV-1 infected CD4+ T cells reveals an early host response in important biological pathways: protein synthesis, cell proliferation, and T-cell activation.</article-title>
+<source><italic>Virology.</italic></source>
+<year>2012</year>;<volume>429</volume>(<issue>1</issue>):<fpage>37</fpage>&#x02013;<lpage>46</lpage>.
+<pub-id pub-id-type="doi">10.1016/j.virol.2012.03.026</pub-id>
+<!--<pub-id pub-id-type="pmcid">3358407</pub-id>-->
+<pub-id pub-id-type="pmid">22542004</pub-id></mixed-citation></ref><ref id="ref-21"><label>21</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Diner</surname><given-names>BA</given-names></name><name><surname>Lum</surname><given-names>KK</given-names></name><name><surname>Javitt</surname><given-names>A</given-names></name><etal/></person-group>:
+<article-title>Interactions of the Antiviral Factor Interferon Gamma-Inducible Protein 16 (IFI16) Mediate Immune Signaling and Herpes Simplex Virus-1 Immunosuppression.</article-title>
+<source><italic>Mol Cell Proteomics.</italic></source>
+<year>2015</year>;<volume>14</volume>(<issue>9</issue>):<fpage>2341</fpage>&#x02013;<lpage>56</lpage>.
+<pub-id pub-id-type="doi">10.1074/mcp.M114.047068</pub-id>
+<!--<pub-id pub-id-type="pmcid">4563720</pub-id>-->
+<pub-id pub-id-type="pmid">25693804</pub-id></mixed-citation><note><p>
+<ext-link ext-link-type="uri" xlink:href="http://f1000.com/prime/725362016">F1000 Recommendation</ext-link>
+</p></note></ref><ref id="ref-22"><label>22</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Cristea</surname><given-names>IM</given-names></name><name><surname>Graham</surname><given-names>D</given-names></name></person-group>:
+<article-title>Virology meets Proteomics.</article-title>
+<source><italic>Proteomics.</italic></source>
+<year>2015</year>;<volume>15</volume>(<issue>12</issue>):<fpage>1941</fpage>&#x02013;<lpage>2</lpage>.
+<pub-id pub-id-type="doi">10.1002/pmic.201570103</pub-id>
+<!--<pub-id pub-id-type="pmcid">4677572</pub-id>-->
+<pub-id pub-id-type="pmid">26082410</pub-id></mixed-citation></ref><ref id="ref-23"><label>23</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Ong</surname><given-names>SE</given-names></name><name><surname>Mann</surname><given-names>M</given-names></name></person-group>:
+<article-title>A practical recipe for stable isotope labeling by amino acids in cell culture (SILAC).</article-title>
+<source><italic>Nat Protoc.</italic></source>
+<year>2006</year>;<volume>1</volume>(<issue>6</issue>):<fpage>2650</fpage>&#x02013;<lpage>60</lpage>.
+<pub-id pub-id-type="doi">10.1038/nprot.2006.427</pub-id>
+<pub-id pub-id-type="pmid">17406521</pub-id></mixed-citation></ref><ref id="ref-24"><label>24</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Wiese</surname><given-names>S</given-names></name><name><surname>Reidegeld</surname><given-names>KA</given-names></name><name><surname>Meyer</surname><given-names>HE</given-names></name><etal/></person-group>:
+<article-title>Protein labeling by iTRAQ: a new tool for quantitative mass spectrometry in proteome research.</article-title>
+<source><italic>Proteomics.</italic></source>
+<year>2007</year>;<volume>7</volume>(<issue>3</issue>):<fpage>340</fpage>&#x02013;<lpage>50</lpage>.
+<pub-id pub-id-type="doi">10.1002/pmic.200600422</pub-id>
+<pub-id pub-id-type="pmid">17177251</pub-id></mixed-citation></ref><ref id="ref-25"><label>25</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Lange</surname><given-names>V</given-names></name><name><surname>Picotti</surname><given-names>P</given-names></name><name><surname>Domon</surname><given-names>B</given-names></name><etal/></person-group>:
+<article-title>Selected reaction monitoring for quantitative proteomics: a tutorial.</article-title>
+<source><italic>Mol Syst Biol.</italic></source>
+<year>2008</year>;<volume>4</volume>(<issue>1</issue>):<fpage>222</fpage>.
+<pub-id pub-id-type="doi">10.1038/msb.2008.61</pub-id>
+<!--<pub-id pub-id-type="pmcid">2583086</pub-id>-->
+<pub-id pub-id-type="pmid">18854821</pub-id></mixed-citation></ref><ref id="ref-26"><label>26</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Whiteaker</surname><given-names>JR</given-names></name><name><surname>Halusa</surname><given-names>GN</given-names></name><name><surname>Hoofnagle</surname><given-names>AN</given-names></name><etal/></person-group>:
+<article-title>CPTAC Assay Portal: a repository of targeted proteomic assays.</article-title>
+<source><italic>Nat Methods.</italic></source>
+<year>2014</year>;<volume>11</volume>(<issue>7</issue>):<fpage>703</fpage>&#x02013;<lpage>4</lpage>.
+<pub-id pub-id-type="doi">10.1038/nmeth.3002</pub-id>
+<!--<pub-id pub-id-type="pmcid">4113142</pub-id>-->
+<pub-id pub-id-type="pmid">24972168</pub-id></mixed-citation><note><p>
+<ext-link ext-link-type="uri" xlink:href="http://f1000.com/prime/726182605">F1000 Recommendation</ext-link>
+</p></note></ref><ref id="ref-27"><label>27</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kim</surname><given-names>YJ</given-names></name><name><surname>Gallien</surname><given-names>S</given-names></name><name><surname>van Oostrum</surname><given-names>J</given-names></name><etal/></person-group>:
+<article-title>Targeted proteomics strategy applied to biomarker evaluation.</article-title>
+<source><italic>Proteomics Clin Appl.</italic></source>
+<year>2013</year>;<volume>7</volume>(<issue>11&#x02013;12</issue>):<fpage>739</fpage>&#x02013;<lpage>47</lpage>.
+<pub-id pub-id-type="doi">10.1002/prca.201300070</pub-id>
+<pub-id pub-id-type="pmid">24123942</pub-id></mixed-citation></ref><ref id="ref-28"><label>28</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Tsuchiya</surname><given-names>H</given-names></name><name><surname>Tanaka</surname><given-names>K</given-names></name><name><surname>Saeki</surname><given-names>Y</given-names></name></person-group>:
+<article-title>The parallel reaction monitoring method contributes to a highly sensitive polyubiquitin chain quantification.</article-title>
+<source><italic>Biochem Biophys Res Commun.</italic></source>
+<year>2013</year>;<volume>436</volume>(<issue>2</issue>):<fpage>223</fpage>&#x02013;<lpage>9</lpage>.
+<pub-id pub-id-type="doi">10.1016/j.bbrc.2013.05.080</pub-id>
+<pub-id pub-id-type="pmid">23726910</pub-id></mixed-citation><note><p>
+<ext-link ext-link-type="uri" xlink:href="http://f1000.com/prime/719677440">F1000 Recommendation</ext-link>
+</p></note></ref><ref id="ref-29"><label>29</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Koyano</surname><given-names>F</given-names></name><name><surname>Okatsu</surname><given-names>K</given-names></name><name><surname>Kosako</surname><given-names>H</given-names></name><etal/></person-group>:
+<article-title>Ubiquitin is phosphorylated by PINK1 to activate parkin.</article-title>
+<source><italic>Nature.</italic></source>
+<year>2014</year>;<volume>510</volume>(<issue>7503</issue>):<fpage>162</fpage>&#x02013;<lpage>6</lpage>.
+<pub-id pub-id-type="doi">10.1038/nature13392</pub-id>
+<pub-id pub-id-type="pmid">24784582</pub-id></mixed-citation><note><p>
+<ext-link ext-link-type="uri" xlink:href="http://f1000.com/prime/718371457">F1000 Recommendation</ext-link>
+</p></note></ref><ref id="ref-30"><label>30</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Majovsky</surname><given-names>P</given-names></name><name><surname>Naumann</surname><given-names>C</given-names></name><name><surname>Lee</surname><given-names>CW</given-names></name><etal/></person-group>:
+<article-title>Targeted proteomics analysis of protein degradation in plant signaling on an LTQ-Orbitrap mass spectrometer.</article-title>
+<source><italic>J Proteome Res.</italic></source>
+<year>2014</year>;<volume>13</volume>(<issue>10</issue>):<fpage>4246</fpage>&#x02013;<lpage>58</lpage>.
+<pub-id pub-id-type="doi">10.1021/pr500164j</pub-id>
+<pub-id pub-id-type="pmid">25130057</pub-id></mixed-citation><note><p>
+<ext-link ext-link-type="uri" xlink:href="http://f1000.com/prime/718536123">F1000 Recommendation</ext-link>
+</p></note></ref><ref id="ref-31"><label>31</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>R&#x000f6;st</surname><given-names>HL</given-names></name><name><surname>Rosenberger</surname><given-names>G</given-names></name><name><surname>Navarro</surname><given-names>P</given-names></name><etal/></person-group>:
+<article-title>OpenSWATH enables automated, targeted analysis of data-independent acquisition MS data.</article-title>
+<source><italic>Nat Biotechnol.</italic></source>
+<year>2014</year>;<volume>32</volume>(<issue>3</issue>):<fpage>219</fpage>&#x02013;<lpage>23</lpage>.
+<pub-id pub-id-type="doi">10.1038/nbt.2841</pub-id>
+<pub-id pub-id-type="pmid">24727770</pub-id></mixed-citation><note><p>
+<ext-link ext-link-type="uri" xlink:href="http://f1000.com/prime/718391160">F1000 Recommendation</ext-link>
+</p></note></ref><ref id="ref-32"><label>32</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Keller</surname><given-names>A</given-names></name><name><surname>Bader</surname><given-names>SL</given-names></name><name><surname>Shteynberg</surname><given-names>D</given-names></name><etal/></person-group>:
+<article-title>Automated Validation of Results and Removal of Fragment Ion Interferences in Targeted Analysis of Data-independent Acquisition Mass Spectrometry (MS) using SWATHProphet.</article-title>
+<source><italic>Mol Cell Proteomics.</italic></source>
+<year>2015</year>;<volume>14</volume>(<issue>5</issue>):<fpage>1411</fpage>&#x02013;<lpage>8</lpage>.
+<pub-id pub-id-type="doi">10.1074/mcp.O114.044917</pub-id>
+<!--<pub-id pub-id-type="pmcid">4424409</pub-id>-->
+<pub-id pub-id-type="pmid">25713123</pub-id></mixed-citation><note><p>
+<ext-link ext-link-type="uri" xlink:href="http://f1000.com/prime/725368398">F1000 Recommendation</ext-link>
+</p></note></ref><ref id="ref-33"><label>33</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Gillet</surname><given-names>LC</given-names></name><name><surname>Navarro</surname><given-names>P</given-names></name><name><surname>Tate</surname><given-names>S</given-names></name><etal/></person-group>:
+<article-title>Targeted data extraction of the MS/MS spectra generated by data-independent acquisition: a new concept for consistent and accurate proteome analysis.</article-title>
+<source><italic>Mol Cell Proteomics.</italic></source>
+<year>2012</year>;<volume>11</volume>(<issue>6</issue>):<fpage>O111.016717</fpage>.
+<pub-id pub-id-type="doi">10.1074/mcp.O111.016717</pub-id>
+<!--<pub-id pub-id-type="pmcid">3433915</pub-id>-->
+<pub-id pub-id-type="pmid">22261725</pub-id></mixed-citation><note><p>
+<ext-link ext-link-type="uri" xlink:href="http://f1000.com/prime/718028789">F1000 Recommendation</ext-link>
+</p></note></ref><ref id="ref-34"><label>34</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Egertson</surname><given-names>JD</given-names></name><name><surname>Kuehn</surname><given-names>A</given-names></name><name><surname>Merrihew</surname><given-names>GE</given-names></name><etal/></person-group>:
+<article-title>Multiplexed MS/MS for improved data-independent acquisition.</article-title>
+<source><italic>Nat Methods.</italic></source>
+<year>2013</year>;<volume>10</volume>(<issue>8</issue>):<fpage>744</fpage>&#x02013;<lpage>6</lpage>.
+<pub-id pub-id-type="doi">10.1038/nmeth.2528</pub-id>
+<!--<pub-id pub-id-type="pmcid">3881977</pub-id>-->
+<pub-id pub-id-type="pmid">23793237</pub-id></mixed-citation><note><p>
+<ext-link ext-link-type="uri" xlink:href="http://f1000.com/prime/721846321">F1000 Recommendation</ext-link>
+</p></note></ref><ref id="ref-35"><label>35</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Tsou</surname><given-names>CC</given-names></name><name><surname>Avtonomov</surname><given-names>D</given-names></name><name><surname>Larsen</surname><given-names>B</given-names></name><etal/></person-group>:
+<article-title>DIA-Umpire: comprehensive computational framework for data-independent acquisition proteomics.</article-title>
+<source><italic>Nat Methods.</italic></source>
+<year>2015</year>;<volume>12</volume>(<issue>3</issue>):<fpage>258</fpage>&#x02013;<lpage>64, 7 p following 264</lpage>.
+<pub-id pub-id-type="doi">10.1038/nmeth.3255</pub-id>
+<!--<pub-id pub-id-type="pmcid">4399776</pub-id>-->
+<pub-id pub-id-type="pmid">25599550</pub-id></mixed-citation><note><p>
+<ext-link ext-link-type="uri" xlink:href="http://f1000.com/prime/726182609">F1000 Recommendation</ext-link>
+</p></note></ref><ref id="ref-36"><label>36</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Bern</surname><given-names>M</given-names></name><name><surname>Finney</surname><given-names>G</given-names></name><name><surname>Hoopmann</surname><given-names>MR</given-names></name><etal/></person-group>:
+<article-title>Deconvolution of mixture spectra from ion-trap data-independent-acquisition tandem mass spectrometry.</article-title>
+<source><italic>Anal Chem.</italic></source>
+<year>2010</year>;<volume>82</volume>(<issue>3</issue>):<fpage>833</fpage>&#x02013;<lpage>41</lpage>.
+<pub-id pub-id-type="doi">10.1021/ac901801b</pub-id>
+<!--<pub-id pub-id-type="pmcid">2813958</pub-id>-->
+<pub-id pub-id-type="pmid">20039681</pub-id></mixed-citation><note><p>
+<ext-link ext-link-type="uri" xlink:href="http://f1000.com/prime/726182610">F1000 Recommendation</ext-link>
+</p></note></ref><ref id="ref-37"><label>37</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Weisbrod</surname><given-names>CR</given-names></name><name><surname>Eng</surname><given-names>JK</given-names></name><name><surname>Hoopmann</surname><given-names>MR</given-names></name><etal/></person-group>:
+<article-title>Accurate peptide fragment mass analysis: multiplexed peptide identification and quantification.</article-title>
+<source><italic>J Proteome Res.</italic></source>
+<year>2012</year>;<volume>11</volume>(<issue>3</issue>):<fpage>1621</fpage>&#x02013;<lpage>32</lpage>.
+<pub-id pub-id-type="doi">10.1021/pr2008175</pub-id>
+<!--<pub-id pub-id-type="pmcid">3319072</pub-id>-->
+<pub-id pub-id-type="pmid">22288382</pub-id></mixed-citation><note><p>
+<ext-link ext-link-type="uri" xlink:href="http://f1000.com/prime/722288994">F1000 Recommendation</ext-link>
+</p></note></ref><ref id="ref-38"><label>38</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Ting</surname><given-names>YS</given-names></name><name><surname>Egertson</surname><given-names>J</given-names></name><name><surname>Maclean</surname><given-names>B</given-names></name><etal/></person-group>:
+<article-title>Pecan: Peptide identification directly from data-independent acquisition (DIA) MS/MS data</article-title>. Poster at
+<italic>ASMS</italic>,<year>2014</year>.</mixed-citation></ref><ref id="ref-39"><label>39</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>MacLean</surname><given-names>B</given-names></name><name><surname>Tomazela</surname><given-names>DM</given-names></name><name><surname>Shulman</surname><given-names>N</given-names></name><etal/></person-group>:
+<article-title>Skyline: an open source document editor for creating and analyzing targeted proteomics experiments.</article-title>
+<source><italic>Bioinformatics.</italic></source>
+<year>2010</year>;<volume>26</volume>(<issue>7</issue>):<fpage>966</fpage>&#x02013;<lpage>8</lpage>.
+<pub-id pub-id-type="doi">10.1093/bioinformatics/btq054</pub-id>
+<!--<pub-id pub-id-type="pmcid">2844992</pub-id>-->
+<pub-id pub-id-type="pmid">20147306</pub-id></mixed-citation><note><p>
+<ext-link ext-link-type="uri" xlink:href="http://f1000.com/prime/722320295">F1000 Recommendation</ext-link>
+</p></note></ref><ref id="ref-40"><label>40</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Bruderer</surname><given-names>R</given-names></name><name><surname>Bernhardt</surname><given-names>OM</given-names></name><name><surname>Gandhi</surname><given-names>T</given-names></name><etal/></person-group>:
+<article-title>Extending the limits of quantitative proteome profiling with data-independent acquisition and application to acetaminophen-treated three-dimensional liver microtissues.</article-title>
+<source><italic>Mol Cell Proteomics.</italic></source>
+<year>2015</year>;<volume>14</volume>(<issue>5</issue>):<fpage>1400</fpage>&#x02013;<lpage>10</lpage>.
+<pub-id pub-id-type="doi">10.1074/mcp.M114.044305</pub-id>
+<!--<pub-id pub-id-type="pmcid">4424408</pub-id>-->
+<pub-id pub-id-type="pmid">25724911</pub-id></mixed-citation><note><p>
+<ext-link ext-link-type="uri" xlink:href="http://f1000.com/prime/725371371">F1000 Recommendation</ext-link>
+</p></note></ref><ref id="ref-41"><label>41</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Liu</surname><given-names>Y</given-names></name><name><surname>Buil</surname><given-names>A</given-names></name><name><surname>Collins</surname><given-names>BC</given-names></name><etal/></person-group>:
+<article-title>Quantitative variability of 342 plasma proteins in a human twin population.</article-title>
+<source><italic>Mol Syst Biol.</italic></source>
+<year>2015</year>;<volume>11</volume>(<issue>1</issue>):<fpage>786</fpage>.
+<pub-id pub-id-type="doi">10.15252/msb.20145728</pub-id>
+<!--<pub-id pub-id-type="pmcid">4358658</pub-id>-->
+<pub-id pub-id-type="pmid">25652787</pub-id></mixed-citation><note><p>
+<ext-link ext-link-type="uri" xlink:href="http://f1000.com/prime/725349822">F1000 Recommendation</ext-link>
+</p></note></ref><ref id="ref-42"><label>42</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Farrah</surname><given-names>T</given-names></name><name><surname>Deutsch</surname><given-names>EW</given-names></name><name><surname>Omenn</surname><given-names>GS</given-names></name><etal/></person-group>:
+<article-title>A high-confidence human plasma proteome reference set with estimated concentrations in PeptideAtlas.</article-title>
+<source><italic>Mol Cell Proteomics.</italic></source>
+<year>2011</year>;<volume>10</volume>(<issue>9</issue>):<fpage>M110.006353</fpage>.
+<pub-id pub-id-type="doi">10.1074/mcp.M110.006353</pub-id>
+<!--<pub-id pub-id-type="pmcid">3186192</pub-id>-->
+<pub-id pub-id-type="pmid">21632744</pub-id></mixed-citation></ref><ref id="ref-43"><label>43</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kato</surname><given-names>BS</given-names></name><name><surname>Nicholson</surname><given-names>G</given-names></name><name><surname>Neiman</surname><given-names>M</given-names></name><etal/></person-group>:
+<article-title>Variance decomposition of protein profiles from antibody arrays using a longitudinal twin model.</article-title>
+<source><italic>Proteome Sci.</italic></source>
+<year>2011</year>;<volume>9</volume>:<fpage>73</fpage>.
+<pub-id pub-id-type="doi">10.1186/1477-5956-9-73</pub-id>
+<!--<pub-id pub-id-type="pmcid">3247853</pub-id>-->
+<pub-id pub-id-type="pmid">22093360</pub-id></mixed-citation></ref><ref id="ref-44"><label>44</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Lambert</surname><given-names>JP</given-names></name><name><surname>Ivosev</surname><given-names>G</given-names></name><name><surname>Couzens</surname><given-names>AL</given-names></name><etal/></person-group>:
+<article-title>Mapping differential interactomes by affinity purification coupled with data-independent mass spectrometry acquisition.</article-title>
+<source><italic>Nat Methods.</italic></source>
+<year>2013</year>;<volume>10</volume>(<issue>12</issue>):<fpage>1239</fpage>&#x02013;<lpage>45</lpage>.
+<pub-id pub-id-type="doi">10.1038/nmeth.2702</pub-id>
+<!--<pub-id pub-id-type="pmcid">3882083</pub-id>-->
+<pub-id pub-id-type="pmid">24162924</pub-id></mixed-citation><note><p>
+<ext-link ext-link-type="uri" xlink:href="http://f1000.com/prime/718155684">F1000 Recommendation</ext-link>
+</p></note></ref><ref id="ref-45"><label>45</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Richards</surname><given-names>AL</given-names></name><name><surname>Merrill</surname><given-names>AE</given-names></name><name><surname>Coon</surname><given-names>JJ</given-names></name></person-group>:
+<article-title>Proteome sequencing goes deep.</article-title>
+<source><italic>Curr Opin Chem Biol.</italic></source>
+<year>2015</year>;<volume>24</volume>:<fpage>11</fpage>&#x02013;<lpage>7</lpage>.
+<pub-id pub-id-type="doi">10.1016/j.cbpa.2014.10.017</pub-id>
+<!--<pub-id pub-id-type="pmcid">4308434</pub-id>-->
+<pub-id pub-id-type="pmid">25461719</pub-id></mixed-citation></ref><ref id="ref-46"><label>46</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Egertson</surname><given-names>J</given-names></name><name><surname>Johnson</surname><given-names>RS</given-names></name><name><surname>Xuan</surname><given-names>Y</given-names></name><etal/></person-group>:
+<article-title>Improved Computational Demultiplexing for Data Independent Acquisition Data Acquired by MSX or with Overlapping Windows</article-title>. Presentation at
+<italic>ASMS</italic>,<year>2015</year>.</mixed-citation></ref><ref id="ref-47"><label>47</label><mixed-citation publication-type="book">
+<person-group person-group-type="author"><name><surname>Mackenzie</surname><given-names>D</given-names></name></person-group>:
+<article-title>Compressed Sensing Makes Every Pixel Count</article-title>.
+<italic>What's Happening in the Mathematical Sciences</italic> Providence, RI: American Mathematical Society;<year>2009</year>;<fpage>115</fpage>&#x02013;<lpage>27</lpage>.
+<ext-link ext-link-type="uri" xlink:href="http://www.ams.org/samplings/math-history/hap7-pixel.pdf">Reference Source</ext-link>
+</mixed-citation></ref><ref id="ref-48"><label>48</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Hu</surname><given-names>A</given-names></name><name><surname>Howbert</surname><given-names>JJ</given-names></name><name><surname>Bilmes</surname><given-names>J</given-names></name><etal/></person-group>:
+<article-title>A regularized linear regression model for the identification of peptides from data-independent acquisition mass spectra.</article-title>Poster at
+<italic>ASMS</italic>,<year>2015</year>.</mixed-citation></ref><ref id="ref-49"><label>49</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Afkham</surname><given-names>HM</given-names></name><name><surname>Kim</surname><given-names>S</given-names></name><name><surname>K&#x000e4;ll</surname><given-names>L</given-names></name></person-group>:
+<article-title>Improving DIA peptide identification via local time profile similarity</article-title>. Poster at
+<italic>ASMS</italic>,<year>2015</year>.</mixed-citation></ref><ref id="ref-50"><label>50</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Egertson</surname><given-names>JD</given-names></name><name><surname>MacLean</surname><given-names>B</given-names></name><name><surname>Johnson</surname><given-names>R</given-names></name><etal/></person-group>:
+<article-title>Multiplexed peptide analysis using data-independent acquisition and Skyline.</article-title>
+<source><italic>Nat Protoc.</italic></source>
+<year>2015</year>;<volume>10</volume>(<issue>6</issue>):<fpage>887</fpage>&#x02013;<lpage>903</lpage>.
+<pub-id pub-id-type="doi">10.1038/nprot.2015.055</pub-id>
+<pub-id pub-id-type="pmid">25996789</pub-id></mixed-citation></ref><ref id="ref-51"><label>51</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Deutsch</surname><given-names>EW</given-names></name><name><surname>Mendoza</surname><given-names>L</given-names></name><name><surname>Shteynberg</surname><given-names>D</given-names></name><etal/></person-group>:
+<article-title>A guided tour of the Trans-Proteomic Pipeline.</article-title>
+<source><italic>Proteomics.</italic></source>
+<year>2010</year>;<volume>10</volume>(<issue>6</issue>):<fpage>1150</fpage>&#x02013;<lpage>9</lpage>.
+<pub-id pub-id-type="doi">10.1002/pmic.200900375</pub-id>
+<!--<pub-id pub-id-type="pmcid">3017125</pub-id>-->
+<pub-id pub-id-type="pmid">20101611</pub-id></mixed-citation></ref><ref id="ref-52"><label>52</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>McIlwain</surname><given-names>S</given-names></name><name><surname>Tamura</surname><given-names>K</given-names></name><name><surname>Kertesz-Farkas</surname><given-names>A</given-names></name><etal/></person-group>:
+<article-title>Crux: rapid open source protein tandem mass spectrometry analysis.</article-title>
+<source><italic>J Proteome Res.</italic></source>
+<year>2014</year>;<volume>13</volume>(<issue>10</issue>):<fpage>4488</fpage>&#x02013;<lpage>91</lpage>.
+<pub-id pub-id-type="doi">10.1021/pr500741y</pub-id>
+<!--<pub-id pub-id-type="pmcid">4184452</pub-id>-->
+<pub-id pub-id-type="pmid">25182276</pub-id></mixed-citation></ref><ref id="ref-53"><label>53</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Tabb</surname><given-names>DL</given-names></name><name><surname>Vega-Montoto</surname><given-names>L</given-names></name><name><surname>Rudnick</surname><given-names>PA</given-names></name><etal/></person-group>:
+<article-title>Repeatability and reproducibility in proteomic identifications by liquid chromatography-tandem mass spectrometry.</article-title>
+<source><italic>J Proteome Res.</italic></source>
+<year>2010</year>;<volume>9</volume>(<issue>2</issue>):<fpage>761</fpage>&#x02013;<lpage>76</lpage>.
+<pub-id pub-id-type="doi">10.1021/pr9006365</pub-id>
+<!--<pub-id pub-id-type="pmcid">2818771</pub-id>-->
+<pub-id pub-id-type="pmid">19921851</pub-id></mixed-citation></ref><ref id="ref-54"><label>54</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Liebler</surname><given-names>DC</given-names></name><name><surname>Zimmerman</surname><given-names>LJ</given-names></name></person-group>:
+<article-title>Targeted quantitation of proteins by mass spectrometry.</article-title>
+<source><italic>Biochemistry.</italic></source>
+<year>2013</year>;<volume>52</volume>(<issue>22</issue>):<fpage>3797</fpage>&#x02013;<lpage>806</lpage>.
+<pub-id pub-id-type="doi">10.1021/bi400110b</pub-id>
+<!--<pub-id pub-id-type="pmcid">3674507</pub-id>-->
+<pub-id pub-id-type="pmid">23517332</pub-id></mixed-citation></ref></ref-list></back></article>

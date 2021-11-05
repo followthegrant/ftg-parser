@@ -1,11 +1,5 @@
 stages:
   - build
-  # - init-state
-  # - download
-  # - extract
-  # - import
-  # - upload-state
-  - update-data
 
 docker-build:
   # Build a Docker image with CI/CD and push to the GitLab registry.
@@ -41,57 +35,4 @@ docker-build:
   only:
     changes:
       - Dockerfile
-      - Makefile
       - setup.py
-      - rclone.conf
-
-update-data:
-  rules:
-    - if: $CI_PIPELINE_SOURCE == "schedule"
-    - when: manual
-  stage: update-data
-  image: "$CI_REGISTRY_IMAGE${tag}"
-  script:
-    - make all
-
-# init-state:
-#   rules:
-#     - if: $CI_PIPELINE_SOURCE == "schedule"
-#   stage: init-state
-#   image: "$CI_REGISTRY_IMAGE${tag}"
-#   script:
-#     - make init
-#     - make pull
-#     - make diff
-
-# download:
-#   rules:
-#     - if: $CI_PIPELINE_SOURCE == "schedule"
-#   stage: download
-#   image: "$CI_REGISTRY_IMAGE${tag}"
-#   script:
-#     - make download
-
-# extract:
-#   rules:
-#     - if: $CI_PIPELINE_SOURCE == "schedule"
-#   stage: extract
-#   image: "$CI_REGISTRY_IMAGE${tag}"
-#   script:
-#     - make extract
-
-# import:
-#   rules:
-#     - if: $CI_PIPELINE_SOURCE == "schedule"
-#   stage: import
-#   image: "$CI_REGISTRY_IMAGE${tag}"
-#   script:
-#     - make import
-
-# upload-state:
-#   rules:
-#     - if: $CI_PIPELINE_SOURCE == "schedule"
-#   stage: upload-state
-#   image: "$CI_REGISTRY_IMAGE${tag}"
-#   script:
-#     - make push

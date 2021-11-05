@@ -1,0 +1,935 @@
+<!DOCTYPE article
+PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with MathML3 v1.2 20190208//EN" "JATS-archivearticle1-mathml3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article" xml:lang="EN"><?properties open_access?><front><journal-meta><journal-id journal-id-type="nlm-ta">ACS Omega</journal-id><journal-id journal-id-type="iso-abbrev">ACS Omega</journal-id><journal-id journal-id-type="publisher-id">ao</journal-id><journal-id journal-id-type="coden">acsodf</journal-id><journal-title-group><journal-title>ACS Omega</journal-title></journal-title-group><issn pub-type="epub">2470-1343</issn><publisher><publisher-name>American Chemical Society</publisher-name></publisher></journal-meta><article-meta><article-id pub-id-type="pmid">31459645</article-id><article-id pub-id-type="pmc">6648568</article-id><article-id pub-id-type="doi">10.1021/acsomega.8b03237</article-id><article-categories><subj-group><subject>Article</subject></subj-group></article-categories><title-group><article-title>Anion Sensing by Novel Triarylboranes Containing Boraanthracene:
+DFT Functional Assessment, Selective Interactions, and Mechanism Demonstration</article-title></title-group><contrib-group><contrib contrib-type="author" id="ath1"><name><surname>Bhat</surname><given-names>Haamid
+Rasool</given-names></name></contrib><contrib contrib-type="author" id="ath2"><name><surname>Gupta</surname><given-names>Parth Sarthi Sen</given-names></name></contrib><contrib contrib-type="author" id="ath3"><name><surname>Biswal</surname><given-names>Satyaranjan</given-names></name></contrib><contrib contrib-type="author" corresp="yes" id="ath4"><name><surname>Rana</surname><given-names>Malay Kumar</given-names></name><xref rid="cor1" ref-type="other">*</xref></contrib><aff id="aff1">Department of Chemical Sciences, <institution>Indian Institute of Science Education and Research
+Berhampur</institution>, Government ITI Campus, Engineering School Road,
+Ganjam, Berhampur 760010, Odisha, <country>India</country></aff></contrib-group><author-notes><corresp id="cor1"><label>*</label>E-mail: <email>mrana@iiserbpr.ac.in</email>. Tel: <phone>+916802227753</phone>.</corresp></author-notes><pub-date pub-type="epub"><day>01</day><month>03</month><year>2019</year></pub-date><pub-date pub-type="collection"><day>31</day><month>03</month><year>2019</year></pub-date><volume>4</volume><issue>3</issue><fpage>4505</fpage><lpage>4518</lpage><history><date date-type="received"><day>20</day><month>11</month><year>2018</year></date><date date-type="accepted"><day>16</day><month>01</month><year>2019</year></date></history><permissions><copyright-statement>Copyright &#x000a9; 2019 American Chemical
+Society</copyright-statement><copyright-year>2019</copyright-year><copyright-holder>American Chemical
+Society</copyright-holder><license><license-p>This is an open access article published under an ACS AuthorChoice <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/page/policy/authorchoice_termsofuse.html">License</ext-link>, which permits copying and redistribution of the article or any adaptations for non-commercial purposes.</license-p></license></permissions><abstract><p content-type="toc-graphic"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ao-2018-03237e_0010" id="ab-tgr1"/></p><p>Analytical methods often involve
+expensive instrumentation and
+tedious sample pretreatment for an analyte detection. Being toxic
+and detrimental to human health, sensing of cyanide (CN<sup>&#x02013;</sup>), fluoride (F<sup>&#x02013;</sup>), chloride (Cl<sup>&#x02013;</sup>), bromide (Br<sup>&#x02013;</sup>), nitrate (NO<sub>3</sub><sup>&#x02013;</sup>), acetate (CH<sub>3</sub>COO<sup>&#x02013;</sup>), and bisulfate
+(HSO<sub>4</sub><sup>&#x02013;</sup>) is performed by a boron-based
+molecular receptor, <italic>N</italic>,<italic>N</italic>,<italic>N</italic>,3,5-pentamethyl-4-{2-thia-9-boratricyclo[8.4.0.0<sup>3,8</sup>]tetradeca-1(10),3(8),4,6,11,13-hexaen-9-yl}anili-nium (<bold>1</bold>), and the three newly designed receptors from it. Thermodynamics,
+electronic structure, and photophysical properties are computed by
+employing density functional theory (DFT) and time-dependent density
+functional theory (TD-DFT) to explore selective sensing of these anions
+and its mechanism. Free-energy changes (&#x00394;<italic>G</italic>)
+and binding energies (&#x00394;<italic>E</italic>) suggest that among
+these anions, only binding of CN<sup>&#x02013;</sup> and F<sup>&#x02013;</sup> is thermodynamically feasible with a very strong binding affinity
+with the receptors. Boron atoms containing positive natural charges
+act as the electrophilic centers to bind the anions involving a 2p&#x02013;2p
+orbital overlap resulting in charge transfer. In the receptor&#x02013;analyte
+complexes with CN<sup>&#x02013;</sup> and F<sup>&#x02013;</sup>, fluorescence
+is quenched due to the intramolecular charge transfer transitions
+(&#x003c0;&#x02013;&#x003c0;* transitions in the case of the receptors
+lead to fluorescence), internal conversion, and associated configurational
+changes. Among the six tested functionals, CAM-B3LYP/6<italic>-</italic>31G(d) is found to be the most accurate one. The designed receptors
+are better fluorescent probes for F<sup>&#x02013;</sup> and CN<sup>&#x02013;</sup>, demonstrating their importance for the practical
+utility.</p></abstract><custom-meta-group><custom-meta><meta-name>document-id-old-9</meta-name><meta-value>ao8b03237</meta-value></custom-meta><custom-meta><meta-name>document-id-new-14</meta-name><meta-value>ao-2018-03237e</meta-value></custom-meta><custom-meta><meta-name>ccc-price</meta-name><meta-value/></custom-meta></custom-meta-group></article-meta></front><body><sec id="sec1"><title>Introduction</title><p>The deadly poisonous
+nature of the cyanide ion (CN<sup>&#x02013;</sup>) makes it very toxic
+to human body.<sup><xref ref-type="bibr" rid="ref1">1</xref></sup> The
+binding between CN<sup>&#x02013;</sup> and heme unit of cytochrome <italic>c</italic> causes paralysis of the cellular respiration and ultimately
+leads to serious central nervous system damages.<sup><xref ref-type="bibr" rid="ref2">2</xref>,<xref ref-type="bibr" rid="ref3">3</xref></sup> As
+the versatility of cyanide reagents in industry is depicted by their
+role in synthesis, metallurgy, etc., their release into the environment
+is unavoidable.<sup><xref ref-type="bibr" rid="ref4">4</xref>,<xref ref-type="bibr" rid="ref5">5</xref></sup> On the other hand, fluoride (F<sup>&#x02013;</sup>) has so many beneficial effects like treating osteoporosis,
+protection of dental health, etc. when consumed in a controlled manner.<sup><xref ref-type="bibr" rid="ref6">6</xref>,<xref ref-type="bibr" rid="ref7">7</xref></sup> But fluoride overdose causes pathological disorders like skeletal
+and tooth fluorosis, kidney failure, urolithiasis, and may even lead
+to death.<sup><xref ref-type="bibr" rid="ref8">8</xref>&#x02212;<xref ref-type="bibr" rid="ref10">10</xref></sup> Thus, World Health Organization (WHO) has fixed the
+maximum permitted limit at 0.07 and 1.5 mg/L, respectively, for CN<sup>&#x02013;</sup> and F<sup>&#x02013;</sup> in drinking water.<sup><xref ref-type="bibr" rid="ref11">11</xref>,<xref ref-type="bibr" rid="ref12">12</xref></sup> In connection to these facts and due to the continuous discharge
+of F<sup>&#x02013;</sup> and CN<sup>&#x02013;</sup> into the environment,
+the development of a method for the accurate trace-level quantification
+of these anions is indispensable. Although various analytical methods
+like potentiometry, absorption spectrometry, inductively coupled plasma
+emission spectrometry, etc. are used for detection of trace levels
+of F<sup>&#x02013;</sup> and CN<sup>&#x02013;</sup> and other anions
+(&#x0003c;0.1 &#x003bc;M), they require expensive instrumentation and tedious
+pretreatment of samples.<sup><xref ref-type="bibr" rid="ref13">13</xref>&#x02212;<xref ref-type="bibr" rid="ref16">16</xref></sup> So, development of simple, reliable, inexpensive,
+and rapid methods and designing of molecular probes for the recognition
+of CN<sup>&#x02013;</sup> and F<sup>&#x02013;</sup> in particular and
+other important anions in general have become a prime aim of research.<sup><xref ref-type="bibr" rid="ref17">17</xref>&#x02212;<xref ref-type="bibr" rid="ref19">19</xref></sup></p><p>The fluorescence sensing method can be utilized as a tool
+for anion
+and metal-ion detection due to real-time behavior, high sensitivity,
+and selectivity.<sup><xref ref-type="bibr" rid="ref20">20</xref>&#x02212;<xref ref-type="bibr" rid="ref22">22</xref></sup> The sensing phenomenon is accomplished in two steps:
+first, binding of target analyte to the receptor selectively; second,
+converting the binding event into a visually detectable fluorescence
+signal. The signal can be either switched on or switched off depending
+on the electronic and structural properties of the receptor upon analyte
+binding. Of the numerous approaches for analyte recognition, such
+as hydrogen bonding,<sup><xref ref-type="bibr" rid="ref23">23</xref>&#x02212;<xref ref-type="bibr" rid="ref26">26</xref></sup> anion affinity to metal complexes,<sup><xref ref-type="bibr" rid="ref27">27</xref>,<xref ref-type="bibr" rid="ref28">28</xref></sup> nucleophilic
+addition,<sup><xref ref-type="bibr" rid="ref29">29</xref>&#x02212;<xref ref-type="bibr" rid="ref32">32</xref></sup> etc., chemical reaction-based fluorescent probes attracted attention
+due to their high sensitivity and selectivity. Most of the experimental
+studies mainly focus on the synthesis of fluorescent chemosensors
+and their characterization by absorption without providing any detailed
+description about sensing mechanisms, such as photoinduced electron
+transfer (PET),<sup><xref ref-type="bibr" rid="ref33">33</xref>&#x02212;<xref ref-type="bibr" rid="ref35">35</xref></sup> intramolecular charge transfer (ICT),<sup><xref ref-type="bibr" rid="ref36">36</xref>,<xref ref-type="bibr" rid="ref37">37</xref></sup> etc. Nevertheless, understanding the sensing mechanism is highly
+crucial and significant for the design and application of better fluorescent
+chemosensors.</p><p>The possible binding of CN<sup>&#x02013;</sup> to
+triarylboranes
+(TABs) has gone overlooked regardless of the observed precipitation
+of cesium ions by [Ph<sub>3</sub>CN]<sup>&#x02212;</sup> for a long
+period.<sup><xref ref-type="bibr" rid="ref38">38</xref></sup> Jackle et al. demonstrated that
+the polymers having triarylborane constituents can be used as probes
+for recognition of CN<sup>&#x02013;</sup> in organic solvents.<sup><xref ref-type="bibr" rid="ref39">39</xref></sup> Matsumoto et al. reported a cationic borane, <italic>N</italic>,<italic>N</italic>,<italic>N</italic>,3,5-pentamethyl-4-{2-thia-9-boratricyclo[8.4.0.0<sup>3,8</sup>]tetradeca-1(10),3(8),4,6,11,13-hexaen-9-yl}anili-nium (<bold>1</bold>), containing a 9-thia-10-boraanthracene moiety substituted
+at boron by the cationic anilium group [4-(Me<sub>3</sub>N)-2,6-Me<sub>2</sub>-C<sub>6</sub>H<sub>2</sub>]<sup>+</sup> shown in <xref rid="sch1" ref-type="scheme">Scheme <xref rid="sch1" ref-type="scheme">1</xref></xref>, which binds both
+CN<sup>&#x02013;</sup> and F<sup>&#x02013;</sup> selectively in tetrahydrofuran
+(THF) solvent.<sup><xref ref-type="bibr" rid="ref40">40</xref></sup> For the selectivity of
+cationic borane <bold>1</bold> toward anions, it is demonstrated that
+both steric and electronic effects are found to contribute.<sup><xref ref-type="bibr" rid="ref40">40</xref></sup></p><fig id="sch1" position="float"><label>Scheme 1</label><caption><title>Structures of Receptors <bold>1</bold>, <bold>2</bold>, <bold>3</bold>, and <bold>4</bold></title></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ao-2018-03237e_0004" id="gr1" position="float"/></fig><p>For the exploration of anion-sensing process, various
+spectroscopic
+techniques, including time-resolved fluorescence spectroscopy, time-resolved
+absorption spectroscopy, proton nuclear magnetic resonance (<sup>1</sup>H NMR) spectroscopy, etc., are utilized. These techniques offer some
+indirect information about the molecular geometries and their photophysical
+properties. The density functional theory and time-dependent density
+functional theory (DFT/TD-DFT) methods have proved to be effective
+for studying the sensing mechanism of some anion fluorescent chemosensors.<sup><xref ref-type="bibr" rid="ref41">41</xref>&#x02212;<xref ref-type="bibr" rid="ref48">48</xref></sup> Hence, DFT/TD-DFT methods have been selected as the methods of choice
+to comprehend the details of anion binding and overall sensing process
+in this paper. The existing literature clearly lacks a detailed theoretical
+electronic structure insight into anion sensing of TABs and hence
+their fluorescence mechanism for sensing. Furthermore, no study has
+shown the detailed assignment to the electronic levels involved for
+absorption and emission in the case of TAB-based anion sensors. On
+top of that, no efforts are made to perform the DFT assessment for
+anionic sensors, particularly TABs to set up a protocol for accurately
+exploring their optical properties to assess their anion-sensing capability.
+The present work deals with seven different anions for fluorometric
+sensing, performs the assessment of six different DFT functionals,
+proposes three new triarylborane-based sensors, and provides mechanistic
+details and factors influencing sensing.</p><p>So as to reinforce
+the experimental outcomes and to offer additional
+insights into the design of new fluorescent molecular sensors, we
+performed the ground-state and excited-state computations for <bold>1</bold> and its various anion complexes using DFT and TD-DFT methods.<sup><xref ref-type="bibr" rid="ref40">40</xref></sup> Learning from the outcomes related to <bold>1</bold>, we carried out three substitutions in <bold>1</bold> separately
+to design three new receptors theoretically and checked their anion-sensing
+properties. The substitutions were done as follows: (a) the nitrogen
+atom of the anilium group was substituted by phosphorus atom producing
+receptor (3,5-dimethyl-4-{2-thia-9-boratricyclo[8.4.0.0<sup>3,8</sup>]tetradeca-1(10),3(8),4,6,11,13-hexaen-9-yl}phenyl)trimethylphosphanium
+(<bold>2</bold>), (b) the sulfur atom was substituted by oxygen atom
+to produce receptor <italic>N</italic>,<italic>N</italic>,<italic>N</italic>,3,5-pentamethyl-4-{2-oxa-9-boratricyclo[8.4.0.0<sup>3,8</sup>]tetradeca-1(10),3(8),4,6,11,13-hexaen-9-yl}anili-nium (<bold>3</bold>), and (c) the nitrogen atom was substituted by phosphorus atom and
+the sulfur atom by oxygen atom at the same time to produce (3,5-dimethyl-4-{2-oxa-9-boratricyclo[8.4.0.0<sup>3,8</sup>]tetradeca-1(10),3(8),4,6,11,13-hexaen-9-yl}phenyl)trimethylphosphanium
+(<bold>4</bold>), as shown in <xref rid="sch1" ref-type="scheme">Scheme <xref rid="sch1" ref-type="scheme">1</xref></xref>. The feasibility of these substitutions was checked
+by calculating the free-energy changes; the negative free-energy changes
+indicate that these substitutions are thermodynamically feasible (see <xref rid="sec2.2" ref-type="other">Thermodynamics of Chemical Substitutions and Receptor&#x02013;Analyte
+Interactions</xref>). Receptors <bold>2</bold>, <bold>3</bold>, and <bold>4</bold> are proposed theoretically and there is no earlier report
+about them. To check the thermodynamic feasibility of anion binding
+to <bold>1</bold>, <bold>2</bold>, <bold>3</bold>, and <bold>4</bold> and to predict the selective binding of various anions with these
+receptors, we calculated free-energy changes (&#x00394;<italic>G</italic>) and binding energies (&#x00394;<italic>E</italic>). Furthermore,
+the electronic excitation energies, de-excitation energies, and associated
+frontier molecular orbitals (FMOs) in <bold>1</bold>, <bold>2</bold>, <bold>3</bold>, and <bold>4</bold> and their various anion complexes
+have been analyzed and reported in this paper to demonstrate the anion-sensing
+mechanism of all of the receptors.</p></sec><sec id="sec2"><title>Results and Discussion</title><sec id="sec2.1"><title>Ground-State
+Geometries</title><p>The ground-state optimized
+structures of <bold>1</bold>&#x02013;<bold>4</bold> are shown in <xref rid="fig1" ref-type="fig">Figure <xref rid="fig1" ref-type="fig">1</xref></xref>, whereas those for <bold>1F</bold>&#x02013;<bold>4F</bold> and <bold>1CN</bold>&#x02013;<bold>4CN</bold> are shown in <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acsomega.8b03237/suppl_file/ao8b03237_si_001.pdf">Figure S1</ext-link> of the
+Supporting Information. The corresponding minima of the ground (S<sub>0</sub>) and first excited (S<sub>1</sub>) states potential energy
+curves show the same configurations as that of the optimized geometries
+(see <xref rid="fig2" ref-type="fig">Figure <xref rid="fig2" ref-type="fig">2</xref></xref> for <bold>1</bold> and <bold>2</bold>; <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acsomega.8b03237/suppl_file/ao8b03237_si_001.pdf">Figure S2</ext-link> for <bold>1F</bold> and <bold>1CN</bold>). For the sake of convenience,
+the anthracene-type moiety containing boron and sulfur/oxygen is named
+A and the phenyl moiety containing ammonium/phosphonium group is named
+B. This nomenclature is followed throughout the discussion. The computed
+optimized geometrical parameters in the ground and excited states
+of all of the receptors and receptor&#x02013;analyte complexes are
+given in <xref rid="tbl1" ref-type="other">Table <xref rid="tbl1" ref-type="other">1</xref></xref> for <bold>1</bold> and <bold>1F</bold> and <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acsomega.8b03237/suppl_file/ao8b03237_si_001.pdf">Tables S1&#x02013;S7</ext-link> for rest of the molecules, which display a close agreement with
+the available reported X-ray data.<sup><xref ref-type="bibr" rid="ref40">40</xref></sup> The
+comparison between computation and experiment over the <bold>1</bold> and <bold>1F</bold> geometrical data is presented in <xref rid="tbl1" ref-type="other">Table <xref rid="tbl1" ref-type="other">1</xref></xref>. Among all of the functionals
+employed, CAM-B3LYP/6-31G(d) gives the best accuracy. For instance,
+the CAM-B3LYP/6-31G(d) computed geometrical data of <bold>1F</bold> give the closest agreement with the corresponding X-ray data having
+the lowest value of mean absolute deviation (MAD) of 0.091 &#x000c5;
+and 3.27&#x000b0;, respectively, in bond lengths and bond angles (<xref rid="tbl2" ref-type="other">Table <xref rid="tbl2" ref-type="other">2</xref></xref>) (see <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acsomega.8b03237/suppl_file/ao8b03237_si_001.pdf">Table S8</ext-link> for other functionals). The consistency
+between the calculated and X-ray data validates the method CAM-B3LYP/6-31G(d)
+and henceforth its use for calculating further properties. Moreover,
+the same functional is found to reproduce the absorption spectra with
+the best accuracy (see <xref rid="sec2.5" ref-type="other">UV&#x02013;Vis Absorption
+Spectra and Molecular Orbital Analysis</xref>).</p><fig id="fig1" position="float"><label>Figure 1</label><caption><p>Ground-state (S<sub>0</sub>) optimized structures of <bold>1</bold>&#x02013;<bold>4</bold> calculated
+at the CAM-B3LYP/6-31G(d) level
+with the conductor-like polarizable continuum model (CPCM) solvation
+model of tetrahydrofuran (THF). Hydrogen atoms are omitted for clarity.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ao-2018-03237e_0008" id="gr2" position="float"/></fig><fig id="fig2" position="float"><label>Figure 2</label><caption><p>Potential energy curves of corresponding S<sub>0</sub> states of
+(I) <bold>1</bold> and (III) <bold>2</bold>, and the corresponding
+S<sub>1</sub> states of (II) <bold>1</bold> and (IV) <bold>2</bold> calculated at the CAM-B3LYP/6-31G(d) level with the CPCM solvation
+model as a function of C32&#x02013;C31&#x02013;B1 angle (see the labeled
+atoms in <xref rid="fig1" ref-type="fig">Figure <xref rid="fig1" ref-type="fig">1</xref></xref>).</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ao-2018-03237e_0007" id="gr3" position="float"/></fig><table-wrap id="tbl1" position="float"><label>Table 1</label><caption><title>Calculated Geometrical
+Parameters:
+Bond Lengths (in Angstroms) and Bond Angles (in Degrees) for the Fully
+Optimized Structures of <bold>1</bold> and <bold>1F</bold> at CAM-B3LYP/Level;
+Available Corresponding X-ray Data<sup><xref ref-type="bibr" rid="ref40">40</xref></sup> Are
+Given in Parentheses</title></caption><table frame="hsides" rules="groups" border="0"><colgroup><col align="left"/><col align="char" char="."/><col align="char" char="."/><col align="left"/><col align="char" char="."/></colgroup><thead><tr><th style="border:none;" align="center">parameter</th><th style="border:none;" align="center" char="."><bold>1</bold><xref rid="t1fn1" ref-type="table-fn">a</xref></th><th style="border:none;" align="center" char="."><bold>1</bold><xref rid="t1fn2" ref-type="table-fn">b</xref></th><th style="border:none;" align="center"><bold>1F</bold><xref rid="t1fn1" ref-type="table-fn">a</xref></th><th style="border:none;" align="center" char="."><bold>1F</bold><xref rid="t1fn2" ref-type="table-fn">b</xref></th></tr></thead><tbody><tr><td style="border:none;" align="left">B1&#x02013;C2</td><td style="border:none;" align="char" char=".">1.584</td><td style="border:none;" align="char" char=".">1.588</td><td style="border:none;" align="left">1.678&#x000a0;(1.640)</td><td style="border:none;" align="char" char=".">1.668</td></tr><tr><td style="border:none;" align="left">B1&#x02013;C41</td><td style="border:none;" align="char" char=".">1.540</td><td style="border:none;" align="char" char=".">1.542</td><td style="border:none;" align="left">1.625&#x000a0;(1.617)</td><td style="border:none;" align="char" char=".">1.636</td></tr><tr><td style="border:none;" align="left">B1&#x02013;C31</td><td style="border:none;" align="char" char=".">1.541</td><td style="border:none;" align="char" char=".">1.542</td><td style="border:none;" align="left">1.639&#x000a0;(1.630)</td><td style="border:none;" align="char" char=".">1.697</td></tr><tr><td style="border:none;" align="left">N18&#x02013;C7</td><td style="border:none;" align="char" char=".">1.501</td><td style="border:none;" align="char" char=".">1.502</td><td style="border:none;" align="left">1.502</td><td style="border:none;" align="char" char=".">1.501</td></tr><tr><td style="border:none;" align="left">C2&#x02013;B1&#x02013;C41</td><td style="border:none;" align="char" char=".">119.7</td><td style="border:none;" align="char" char=".">119.7</td><td style="border:none;" align="left">116.7&#x000a0;(114.5)</td><td style="border:none;" align="char" char=".">111.2</td></tr><tr><td style="border:none;" align="left">C2&#x02013;B1&#x02013;C31</td><td style="border:none;" align="char" char=".">119.6</td><td style="border:none;" align="char" char=".">119.8</td><td style="border:none;" align="left">112.0&#x000a0;(113.1)</td><td style="border:none;" align="char" char=".">109.1</td></tr><tr><td style="border:none;" align="left">C31&#x02013;B1&#x02013;C41</td><td style="border:none;" align="char" char=".">120.6</td><td style="border:none;" align="char" char=".">120.4</td><td style="border:none;" align="left">104.4&#x000a0;(111.1)</td><td style="border:none;" align="char" char=".">112.3</td></tr><tr><td style="border:none;" align="left">C7&#x02013;N18&#x02013;C19</td><td style="border:none;" align="char" char=".">112.9</td><td style="border:none;" align="char" char=".">112.8</td><td style="border:none;" align="left">109.6</td><td style="border:none;" align="char" char=".">112.6</td></tr><tr><td style="border:none;" align="left">C7&#x02013;N18&#x02013;C23</td><td style="border:none;" align="char" char=".">109.5</td><td style="border:none;" align="char" char=".">109.7</td><td style="border:none;" align="left">112.7</td><td style="border:none;" align="char" char=".">109.6</td></tr><tr><td style="border:none;" align="left">C7&#x02013;N18&#x02013;C27</td><td style="border:none;" align="char" char=".">109.7</td><td style="border:none;" align="char" char=".">109.7</td><td style="border:none;" align="left">109.7</td><td style="border:none;" align="char" char=".">109.8</td></tr><tr><td style="border:none;" align="left">C4&#x02013;C2&#x02013;B1</td><td style="border:none;" align="char" char=".">120.6</td><td style="border:none;" align="char" char=".">121.1</td><td style="border:none;" align="left">126.5</td><td style="border:none;" align="char" char=".">122.4</td></tr><tr><td style="border:none;" align="left">C3&#x02013;C2&#x02013;B1</td><td style="border:none;" align="char" char=".">120.4</td><td style="border:none;" align="char" char=".">121.0</td><td style="border:none;" align="left">118.0</td><td style="border:none;" align="char" char=".">121.5</td></tr><tr><td style="border:none;" align="left">C32&#x02013;C31&#x02013;B1</td><td style="border:none;" align="char" char=".">120.9</td><td style="border:none;" align="char" char=".">122.9</td><td style="border:none;" align="left">122.7</td><td style="border:none;" align="char" char=".">122.6</td></tr><tr><td style="border:none;" align="left">C33&#x02013;C31&#x02013;B1</td><td style="border:none;" align="char" char=".">122.4</td><td style="border:none;" align="char" char=".">123.0</td><td style="border:none;" align="left">121.5</td><td style="border:none;" align="char" char=".">121.9</td></tr><tr><td style="border:none;" align="left">C42&#x02013;C41&#x02013;B1</td><td style="border:none;" align="char" char=".">120.9</td><td style="border:none;" align="char" char=".">122.9</td><td style="border:none;" align="left">121.5</td><td style="border:none;" align="char" char=".">119.5</td></tr><tr><td style="border:none;" align="left">C43&#x02013;C41&#x02013;B1</td><td style="border:none;" align="char" char=".">122.4</td><td style="border:none;" align="char" char=".">123.0</td><td style="border:none;" align="left">121.9</td><td style="border:none;" align="char" char=".">124.5</td></tr><tr><td style="border:none;" align="left">C14&#x02013;C4&#x02013;C2</td><td style="border:none;" align="char" char=".">120.4</td><td style="border:none;" align="char" char=".">120.7</td><td style="border:none;" align="left">124.6</td><td style="border:none;" align="char" char=".">122.5</td></tr><tr><td style="border:none;" align="left">C10&#x02013;C3&#x02013;C2</td><td style="border:none;" align="char" char=".">120.3</td><td style="border:none;" align="char" char=".">120.6</td><td style="border:none;" align="left">122.9</td><td style="border:none;" align="char" char=".">123.9</td></tr><tr><td style="border:none;" align="left">C31&#x02013;C33&#x02013;S51</td><td style="border:none;" align="char" char=".">124.2</td><td style="border:none;" align="char" char=".">123.3</td><td style="border:none;" align="left">119.6</td><td style="border:none;" align="char" char=".">113.9</td></tr><tr><td style="border:none;" align="left">C41&#x02013;C43&#x02013;S51</td><td style="border:none;" align="char" char=".">124.2</td><td style="border:none;" align="char" char=".">122.3</td><td style="border:none;" align="left">119.5</td><td style="border:none;" align="char" char=".">123.3</td></tr><tr><td style="border:none;" align="left">C36&#x02013;C33&#x02013;S51</td><td style="border:none;" align="char" char=".">114.6</td><td style="border:none;" align="char" char=".">114.2</td><td style="border:none;" align="left">117.7</td><td style="border:none;" align="char" char=".">115.3</td></tr><tr><td style="border:none;" align="left">C46&#x02013;C43&#x02013;S51</td><td style="border:none;" align="char" char=".">114.6</td><td style="border:none;" align="char" char=".">114.2</td><td style="border:none;" align="left">118.2</td><td style="border:none;" align="char" char=".">114.6</td></tr><tr><td style="border:none;" align="left">C5&#x02013;C7&#x02013;N18</td><td style="border:none;" align="char" char=".">118.1</td><td style="border:none;" align="char" char=".">118.2</td><td style="border:none;" align="left">118.7</td><td style="border:none;" align="char" char=".">118.6</td></tr><tr><td style="border:none;" align="left">C6&#x02013;C7&#x02013;N18</td><td style="border:none;" align="char" char=".">121.2</td><td style="border:none;" align="char" char=".">121.4</td><td style="border:none;" align="left">121.8</td><td style="border:none;" align="char" char=".">121.9</td></tr><tr><td style="border:none;" align="left">C2&#x02013;B1&#x02013;F52</td><td style="border:none;" align="char" char=".">&#x000a0;</td><td style="border:none;" align="char" char=".">&#x000a0;</td><td style="border:none;" align="left">106.8&#x000a0;(109.6)</td><td style="border:none;" align="char" char=".">108.9</td></tr><tr><td style="border:none;" align="left">C31&#x02013;B1&#x02013;F52</td><td style="border:none;" align="char" char=".">&#x000a0;</td><td style="border:none;" align="char" char=".">&#x000a0;</td><td style="border:none;" align="left">109.1&#x000a0;(105.2)</td><td style="border:none;" align="char" char=".">109.3</td></tr><tr><td style="border:none;" align="left">C41&#x02013;B1&#x02013;F52</td><td style="border:none;" align="char" char=".">&#x000a0;</td><td style="border:none;" align="char" char=".">&#x000a0;</td><td style="border:none;" align="left">107.6&#x000a0;(102.4)</td><td style="border:none;" align="char" char=".">105.8</td></tr><tr><td style="border:none;" align="left">B1&#x02013;F52</td><td style="border:none;" align="char" char=".">&#x000a0;</td><td style="border:none;" align="char" char=".">&#x000a0;</td><td style="border:none;" align="left">1.448&#x000a0;(1.479)</td><td style="border:none;" align="char" char=".">1.441</td></tr><tr><td style="border:none;" align="left">S51&#x02013;C43</td><td style="border:none;" align="char" char=".">1.756</td><td style="border:none;" align="char" char=".">1.743</td><td style="border:none;" align="left">1.791&#x000a0;(1.765)</td><td style="border:none;" align="char" char=".">1.758</td></tr><tr><td style="border:none;" align="left">S51&#x02013;C33</td><td style="border:none;" align="char" char=".">1.756</td><td style="border:none;" align="char" char=".">1.743</td><td style="border:none;" align="left">1.790&#x000a0;(1.768)</td><td style="border:none;" align="char" char=".">1.762</td></tr></tbody></table><table-wrap-foot><fn id="t1fn1"><label>a</label><p>Implies ground
+state (S<sub>0</sub>).</p></fn><fn id="t1fn2"><label>b</label><p>Implies
+excited state (S<sub>1</sub>).</p></fn></table-wrap-foot></table-wrap><table-wrap id="tbl2" position="float"><label>Table 2</label><caption><title>Mean Absolute Deviations (MAD) in
+Bond Lengths and Bond Angles for the Different Functionals</title></caption><table frame="hsides" rules="groups" border="0"><colgroup><col align="left"/><col align="char" char="."/><col align="char" char="."/></colgroup><thead><tr><th style="border:none;" align="center">functional</th><th style="border:none;" align="center" char=".">MAD in bond lengths (in &#x000c5;)</th><th style="border:none;" align="center" char=".">MAD in bond angles (in deg)</th></tr></thead><tbody><tr><td style="border:none;" align="left">B3PW91</td><td style="border:none;" align="char" char=".">0.109</td><td style="border:none;" align="char" char=".">4.70</td></tr><tr><td style="border:none;" align="left">M06-2X</td><td style="border:none;" align="char" char=".">0.117</td><td style="border:none;" align="char" char=".">4.51</td></tr><tr><td style="border:none;" align="left">CAM-B3LYP</td><td style="border:none;" align="char" char=".">0.091</td><td style="border:none;" align="char" char=".">3.27</td></tr><tr><td style="border:none;" align="left">HCTH</td><td style="border:none;" align="char" char=".">0.156</td><td style="border:none;" align="char" char=".">3.98</td></tr><tr><td style="border:none;" align="left">LSDA</td><td style="border:none;" align="char" char=".">0.143</td><td style="border:none;" align="char" char=".">4.83</td></tr><tr><td style="border:none;" align="left">PBEPBE</td><td style="border:none;" align="char" char=".">0.123</td><td style="border:none;" align="char" char=".">4.63</td></tr></tbody></table></table-wrap><p><xref rid="tbl3" ref-type="other">Table <xref rid="tbl3" ref-type="other">3</xref></xref> accommodates
+the natural charges on some selected atoms in <bold>1</bold>&#x02013;<bold>4</bold>, <bold>1F</bold>&#x02013;<bold>4F</bold>, and <bold>1CN</bold>&#x02013;<bold>4CN</bold>. The positive charges on the central boron
+atoms in <bold>1</bold>&#x02013;<bold>4</bold> indicate their electrophilic
+nature and thus are most prone to nucleophilic addition with the anions.
+After analyte addition, the amount of positive charges on the B atoms
+in <bold>1</bold>&#x02013;<bold>4</bold> gets reduced, suggesting shifting
+of electron density from the analytes to the B centers, for example,
+the charge on B1 atom in <bold>1</bold> is reduced by 0.045 and 0.554
+after F<sup>&#x02013;</sup> and CN<sup>&#x02013;</sup> addition, respectively.
+The amounts of charge transfer (&#x00394;<italic>Q</italic>) from the
+analytes to receptors are quantified in the last column of <xref rid="tbl3" ref-type="other">Table <xref rid="tbl3" ref-type="other">3</xref></xref>. In <bold>1F</bold>&#x02013;<bold>4F</bold>, there is less transfer of charge from F<sup>&#x02013;</sup> to the receptors, whereas in <bold>1CN</bold>&#x02013;<bold>4CN</bold>, charge transfer occurs to a greater extent from CN<sup>&#x02013;</sup> to the receptors. This is attributed to the greater
+electronegativity of fluorine than carbon in cyanide responsible for
+less charge transfer from F<sup>&#x02013;</sup> to the receptors than
+CN<sup>&#x02013;</sup>.</p><table-wrap id="tbl3" position="float"><label>Table 3</label><caption><title>Partial Charge Distribution
+Based
+on the Natural Population Analysis (NPA) on Some Crucial Atoms of <bold>1</bold>&#x02013;<bold>4</bold>, <bold>1F</bold>&#x02013;<bold>4F</bold>, and <bold>1CN</bold>&#x02013;<bold>4CN</bold> in S<sub>0</sub> Calculated
+at the CAM-B3LYP/6-31G(d) Level of Theory</title></caption><table frame="hsides" rules="groups" border="0"><colgroup><col align="left"/><col align="left"/><col align="char" char="&#x02212;"/><col align="char" char="&#x02212;"/><col align="left"/><col align="left"/><col align="left"/><col align="char" char="&#x02212;"/></colgroup><thead><tr><th style="border:none;" align="center">receptor/complex</th><th colspan="6" align="center">NPA charge distribution
+(atom involved)</th><th style="border:none;" align="center" char="&#x02212;">charge transfer from
+analyte to receptor (&#x00394;<italic>Q</italic>)<xref rid="t3fn1" ref-type="table-fn">a</xref></th></tr></thead><tbody><tr><td style="border:none;" align="left"><bold>1</bold></td><td style="border:none;" align="left">0.811(B1)</td><td style="border:none;" align="char" char="&#x02212;">&#x02013;0.323(C2)</td><td style="border:none;" align="char" char="&#x02212;">&#x02013;0.431(C31)</td><td style="border:none;" align="left">&#x02013;0.431(C41)</td><td style="border:none;" align="left">&#x02013;0.291(N18)</td><td style="border:none;" align="left">&#x000a0;</td><td style="border:none;" align="char" char="&#x02212;">&#x000a0;</td></tr><tr><td style="border:none;" align="left"><bold>1F</bold></td><td style="border:none;" align="left">0.766(B1)</td><td style="border:none;" align="char" char="&#x02212;">&#x02013;0.244(C2)</td><td style="border:none;" align="char" char="&#x02212;">&#x02013;0.294(C31)</td><td style="border:none;" align="left">&#x02013;0.300 (C41)</td><td style="border:none;" align="left">&#x02013;0.288(N18)</td><td style="border:none;" align="left">&#x02013;0.549(F52)</td><td style="border:none;" align="char" char="&#x02212;">&#x02013;0.4504</td></tr><tr><td style="border:none;" align="left"><bold>1CN</bold></td><td style="border:none;" align="left">0.257(B1)</td><td style="border:none;" align="char" char="&#x02212;">&#x02013;0.210(C2)</td><td style="border:none;" align="char" char="&#x02212;">&#x02013;0.254(C31)</td><td style="border:none;" align="left">&#x02013;0.246(C41)</td><td style="border:none;" align="left">&#x02013;0.289(N18)</td><td style="border:none;" align="left">0.164(C52)</td><td style="border:none;" align="char" char="&#x02212;">&#x02013;0.6829</td></tr><tr><td style="border:none;" align="left"><bold>2</bold></td><td style="border:none;" align="left">0.810(B1)</td><td style="border:none;" align="char" char="&#x02212;">&#x02013;0.305(C2)</td><td style="border:none;" align="char" char="&#x02212;">&#x02013;0.431(C31)</td><td style="border:none;" align="left">&#x02013;0.431(C41)</td><td style="border:none;" align="left">1.724(P18)</td><td style="border:none;" align="left">&#x000a0;</td><td style="border:none;" align="char" char="&#x02212;">&#x000a0;</td></tr><tr><td style="border:none;" align="left"><bold>2CN</bold></td><td style="border:none;" align="left">0.246(B1)</td><td style="border:none;" align="char" char="&#x02212;">&#x02013;0.164(C2)</td><td style="border:none;" align="char" char="&#x02212;">&#x02013;0.245(C31)</td><td style="border:none;" align="left">&#x02013;0.243(C41)</td><td style="border:none;" align="left">1.727(P18)</td><td style="border:none;" align="left">0.164(C52)</td><td style="border:none;" align="char" char="&#x02212;">&#x02013;0.6931</td></tr><tr><td style="border:none;" align="left"><bold>2F</bold></td><td style="border:none;" align="left">0.765(B1)</td><td style="border:none;" align="char" char="&#x02212;">&#x02013;0.220(C2)</td><td style="border:none;" align="char" char="&#x02212;">&#x02013;0.301(C31)</td><td style="border:none;" align="left">18&#x02013;0.294(C41)</td><td style="border:none;" align="left">1.727(P18)</td><td style="border:none;" align="left">&#x02013;0.549(F52)</td><td style="border:none;" align="char" char="&#x02212;">&#x02013;0.4510</td></tr><tr><td style="border:none;" align="left"><bold>3</bold></td><td style="border:none;" align="left">0.770(B1)</td><td style="border:none;" align="char" char="&#x02212;">&#x02013;0.316(C2)</td><td style="border:none;" align="char" char="&#x02212;">&#x02013;0.464(C31)</td><td style="border:none;" align="left">&#x02013;0.464(C41)</td><td style="border:none;" align="left">&#x02013;0.291(N18)</td><td style="border:none;" align="left">&#x000a0;</td><td style="border:none;" align="char" char="&#x02212;">&#x000a0;</td></tr><tr><td style="border:none;" align="left"><bold>3CN</bold></td><td style="border:none;" align="left">0.247(B1)</td><td style="border:none;" align="char" char="&#x02212;">&#x02013;0.201(C2)</td><td style="border:none;" align="char" char="&#x02212;">&#x02013;0.301(C31)</td><td style="border:none;" align="left">&#x02013;0.297(C41)</td><td style="border:none;" align="left">&#x02013;0.288(N18)</td><td style="border:none;" align="left">0.165(C52)</td><td style="border:none;" align="char" char="&#x02212;">&#x02013;0.6790</td></tr><tr><td style="border:none;" align="left"><bold>3F</bold></td><td style="border:none;" align="left">0.740(B1)</td><td style="border:none;" align="char" char="&#x02212;">&#x02013;0.248(C2)</td><td style="border:none;" align="char" char="&#x02212;">&#x02013;0.356(C31)</td><td style="border:none;" align="left">&#x02013;0.356(C41)</td><td style="border:none;" align="left">&#x02013;0.288(N18)</td><td style="border:none;" align="left">&#x02013;0.549(F52)</td><td style="border:none;" align="char" char="&#x02212;">&#x02013;0.4500</td></tr><tr><td style="border:none;" align="left"><bold>4</bold></td><td style="border:none;" align="left">0.779(B1)</td><td style="border:none;" align="char" char="&#x02212;">&#x02013;0.298(C2)</td><td style="border:none;" align="char" char="&#x02212;">&#x02013;0.463(C31)</td><td style="border:none;" align="left">&#x02013;0.463(C41)</td><td style="border:none;" align="left">1.724(P18)</td><td style="border:none;" align="left">&#x000a0;</td><td style="border:none;" align="char" char="&#x02212;">&#x000a0;</td></tr><tr><td style="border:none;" align="left"><bold>4CN</bold></td><td style="border:none;" align="left">0.245(B1)</td><td style="border:none;" align="char" char="&#x02212;">&#x02013;0.179(C2)</td><td style="border:none;" align="char" char="&#x02212;">&#x02013;0.297(C31)</td><td style="border:none;" align="left">&#x02013;0.300 (C41)</td><td style="border:none;" align="left">1.727 (P18)</td><td style="border:none;" align="left">0.165(C51)</td><td style="border:none;" align="char" char="&#x02212;">&#x02013;0.6796</td></tr><tr><td style="border:none;" align="left"><bold>4F</bold></td><td style="border:none;" align="left">0.738(B1)</td><td style="border:none;" align="char" char="&#x02212;">&#x02013;0.223(C2)</td><td style="border:none;" align="char" char="&#x02212;">&#x02013;0.356(C31)</td><td style="border:none;" align="left">&#x02013;0.357(C41)</td><td style="border:none;" align="left">1.728(P18)</td><td style="border:none;" align="left">&#x02013;0.549(F51)</td><td style="border:none;" align="char" char="&#x02212;">&#x02013;0.4508</td></tr></tbody></table><table-wrap-foot><fn id="t3fn1"><label>a</label><p>F<sup>&#x02013;</sup> and CN<sup>&#x02013;</sup> possess 1 unit negative charge.</p></fn></table-wrap-foot></table-wrap></sec><sec id="sec2.2"><title>Thermodynamics of Chemical Substitutions
+and Receptor&#x02013;Analyte
+Interactions</title><p>The feasibility of substitutions to <bold>1</bold> to form <bold>2</bold>, <bold>3</bold>, and <bold>4</bold> was checked
+by calculating the free-energy changes; the negative free-energy changes
+indicate that these substitutions are thermodynamically feasible (see <xref rid="tbl4" ref-type="other">Table <xref rid="tbl4" ref-type="other">4</xref></xref>). To know the feasibility
+of nucleophilic binding between the receptors <bold>1</bold>&#x02013;<bold>4</bold> and the selected anions, viz., CN<sup>&#x02013;</sup>, F<sup>&#x02013;</sup>, Cl<sup>&#x02013;</sup>, Br<sup>&#x02013;</sup>, NO<sub>3</sub><sup>&#x02013;</sup>, CH<sub>3</sub>COO<sup>&#x02013;</sup>,
+and HSO<sub>4</sub><sup>&#x02013;</sup>, the free-energy changes (&#x00394;<italic>G</italic>) of binding and the binding energies (&#x00394;<italic>E</italic>) were computed, which are shown in <xref rid="fig3" ref-type="fig">Figures <xref rid="fig3" ref-type="fig">3</xref></xref> and <xref rid="fig4" ref-type="fig">4</xref>, respectively. <xref rid="fig3" ref-type="fig">Figure <xref rid="fig3" ref-type="fig">3</xref></xref> displaying the calculated
+&#x00394;<italic>G</italic> values demonstrates that only CN<sup>&#x02013;</sup> and F<sup>&#x02013;</sup> binding is thermodynamically feasible because
+of high negative values. Furthermore, the high negative binding energy
+(&#x00394;<italic>E</italic>) values (<xref rid="fig4" ref-type="fig">Figure <xref rid="fig4" ref-type="fig">4</xref></xref>) of <bold>1</bold>&#x02013;<bold>4</bold> for CN<sup>&#x02013;</sup> and F<sup>&#x02013;</sup> infer that <bold>1</bold>&#x02013;<bold>4</bold> strongly bind to these anions than
+the rest of the anions considered herein. Both &#x00394;<italic>G</italic> and &#x00394;<italic>E</italic> follow the same trend across the receptor&#x02013;analyte
+interactions. All other ions, viz., Cl<sup>&#x02013;</sup>, Br<sup>&#x02013;</sup>, NO<sub>3</sub><sup>&#x02013;</sup>, CH<sub>3</sub>COO<sup>&#x02013;</sup>, and HSO<sub>4</sub><sup>&#x02013;</sup>, have
+rather a very weak affinity to <bold>1</bold>&#x02013;<bold>4</bold> or do not bind at all, which can be attributed to the steric effect;
+CN<sup>&#x02013;</sup> and F<sup>&#x02013;</sup> being less bulky than
+other ions are stronger nucleophiles, thus exhibiting higher binding
+affinity and feasibility. Between CN<sup>&#x02013;</sup> and F<sup>&#x02013;</sup>, the latter has a stronger affinity to bind to the
+receptors, again attributing to the smaller size of F<sup>&#x02013;</sup> compared to CN<sup>&#x02013;</sup>.</p><fig id="fig3" position="float"><label>Figure 3</label><caption><p>Calculated free-energy changes (&#x00394;<italic>G</italic>; kcal/mol)
+for various addition products using the CAM-B3LYP/6-31G(d) level of
+theory with basis set superposition error (BSSE) corrections.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ao-2018-03237e_0009" id="gr4" position="float"/></fig><fig id="fig4" position="float"><label>Figure 4</label><caption><p>Calculated binding energies (&#x00394;<italic>E</italic>; kcal/mol)
+of CN<sup>&#x02013;</sup>, F<sup>&#x02013;</sup>, Cl<sup>&#x02013;</sup>, Br<sup>&#x02013;</sup>, NO<sub>3</sub><sup>&#x02013;</sup>, CH<sub>3</sub>COO<sup>&#x02013;</sup>, and HSO<sub>4</sub><sup>&#x02013;</sup> with <bold>1</bold>, <bold>2</bold>, <bold>3</bold>, and <bold>4</bold> using the CAM-B3LYP/6-31G(d) level of theory with basis set superposition
+error (BSSE) corrections.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ao-2018-03237e_0001" id="gr5" position="float"/></fig><table-wrap id="tbl4" position="float"><label>Table 4</label><caption><title>Calculated Free-Energy Changes (&#x00394;<italic>G</italic>; kcal/mol) for the Chemical Substitutions Performed in <bold>1</bold> Using the CAM-B3LYP/6-31G(d) Level of Theory with Basis
+Set Superposition Error (BSSE) Corrections</title></caption><table frame="hsides" rules="groups" border="0"><colgroup><col align="left"/><col align="char" char="&#x02212;"/></colgroup><thead><tr><th style="border:none;" align="center">substitution&#x000a0;in&#x000a0;<bold>1</bold>;&#x000a0;substituted&#x000a0;product</th><th style="border:none;" align="center" char="&#x02212;">&#x00394;<italic>G</italic> (kcal/mol)</th></tr></thead><tbody><tr><td style="border:none;" align="left">N&#x000a0;by&#x000a0;P;&#x000a0;<bold>2</bold></td><td style="border:none;" align="char" char="&#x02212;">&#x02013;40</td></tr><tr><td style="border:none;" align="left">S&#x000a0;by&#x000a0;O;&#x000a0;<bold>3</bold></td><td style="border:none;" align="char" char="&#x02212;">&#x02013;54</td></tr><tr><td style="border:none;" align="left">N&#x000a0;by&#x000a0;P&#x000a0;and&#x000a0;S&#x000a0;by&#x000a0;O;&#x000a0;<bold>4</bold></td><td style="border:none;" align="char" char="&#x02212;">&#x02013;59</td></tr></tbody></table></table-wrap></sec><sec id="sec2.3"><title>Configurational Changes on Analyte Binding</title><p>The geometry
+of receptors undergoes an obvious change after the electron-deficient
+boron atoms in <bold>1</bold>&#x02013;<bold>4</bold> capture CN<sup>&#x02013;</sup> and F<sup>&#x02013;</sup>. After F<sup>&#x02013;</sup> binding, the changes in bond angles C2&#x02013;B1&#x02013;C31, C2&#x02013;B1&#x02013;C41,
+C31&#x02013;B1&#x02013;C41, C2&#x02013;B1&#x02013;F52, C31&#x02013;B1&#x02013;F52,
+and C41&#x02013;B1&#x02013;F52 (see <xref rid="fig1" ref-type="fig">Figure <xref rid="fig1" ref-type="fig">1</xref></xref> for the labeling of atoms) of 111.9, 116.7,
+104.4, 106.8, 109.1, and 107.6&#x000b0;, respectively, from <bold>1</bold> reflect the change in geometry in <bold>1F</bold> (see <xref rid="tbl1" ref-type="other">Table <xref rid="tbl1" ref-type="other">1</xref></xref>). Similarly, in <bold>2F</bold>, <bold>3F</bold>, <bold>4F</bold>, and <bold>1CN</bold>&#x02013;<bold>4CN</bold>, the geometrical changes can be seen from <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acsomega.8b03237/suppl_file/ao8b03237_si_001.pdf">Tables S1&#x02013;S7</ext-link>. In addition, the change
+of geometry at the boron center is indicated by the change in hybridization
+from sp<sup>2</sup> to sp<sup>3</sup> on CN<sup>&#x02013;</sup> and
+F<sup>&#x02013;</sup> addition, as shown in the hybrid and AO (%) columns
+of <xref rid="tbl5" ref-type="other">Table <xref rid="tbl5" ref-type="other">5</xref></xref>. It is evident
+that the sp<sup>2</sup> hybridization of <bold>1</bold> along the
+B1&#x02013;C2, B1&#x02013;C31, and B1&#x02013;C41 bonds changes to sp<sup>3</sup> in <bold>1F</bold> and <bold>1CN</bold> as can be seen in <xref rid="tbl5" ref-type="other">Table <xref rid="tbl5" ref-type="other">5</xref></xref>. This change in hybridization
+influences the anion-sensing mechanism as discussed later.</p><table-wrap id="tbl5" position="float"><label>Table 5</label><caption><title>Hybrids of <bold>1</bold>&#x02013;<bold>4</bold>, <bold>1CN</bold>&#x02013;<bold>4CN</bold>, and <bold>1F</bold>&#x02013;<bold>4F</bold> in the Ground State Calculated by Employing
+the CAM-B3LYP/6-31G(d) Level of Theory</title></caption><table frame="hsides" rules="groups" border="0"><colgroup><col align="left"/><col align="left"/><col align="left"/><col align="left"/></colgroup><thead><tr><th style="border:none;" align="center">receptor/complex</th><th style="border:none;" align="center">Lewis-type NBOs</th><th style="border:none;" align="center">hybrid<xref rid="t5fn1" ref-type="table-fn">a</xref></th><th style="border:none;" align="center">AO (%)<xref rid="t5fn2" ref-type="table-fn">b</xref></th></tr></thead><tbody><tr><td rowspan="3" style="border:none;" align="left"><bold>1</bold></td><td style="border:none;" align="left">&#x003c3;(B1&#x02013;C2)</td><td style="border:none;" align="left">sp<sup>2.04</sup>d<sup>0</sup></td><td style="border:none;" align="left">s(32.88%) p(67.05%) d(0.07%)</td></tr><tr><td style="border:none;" align="left">&#x003c3;(B1&#x02013;C31)</td><td style="border:none;" align="left">sp<sup>1.81</sup>d<sup>0</sup></td><td style="border:none;" align="left">s(33.55%) p(66.37%)
+d(0.08%)</td></tr><tr><td style="border:none;" align="left">&#x003c3;(B1&#x02013;C41)</td><td style="border:none;" align="left">sp<sup>1.98</sup>d<sup>0</sup></td><td style="border:none;" align="left">s(33.57%)
+p(66.36%) d(0.08%)</td></tr><tr><td rowspan="4" style="border:none;" align="left"><bold>1CN</bold></td><td style="border:none;" align="left">&#x003c3;(B1&#x02013;C2)</td><td style="border:none;" align="left">sp<sup>2.71</sup>d<sup>0</sup></td><td style="border:none;" align="left">s(26.96%)
+p(72.96%) d(0.07%)</td></tr><tr><td style="border:none;" align="left">&#x003c3;(B1&#x02013;C31)</td><td style="border:none;" align="left">sp<sup>3.00</sup>d<sup>0</sup></td><td style="border:none;" align="left">s(24.96%)
+p(74.96%) d(0.08%)</td></tr><tr><td style="border:none;" align="left">&#x003c3;(B1&#x02013;C41)</td><td style="border:none;" align="left">sp<sup>3.01</sup>d<sup>0</sup></td><td style="border:none;" align="left">s(24.93%)
+p(74.99%) d(0.08%)</td></tr><tr><td style="border:none;" align="left">&#x003c3;(B1&#x02013;C52)</td><td style="border:none;" align="left">sp<sup>3.31</sup>d<sup>0.01</sup></td><td style="border:none;" align="left">s(23.15%)
+p(76.73%) d(0.12%)</td></tr><tr><td rowspan="4" style="border:none;" align="left"><bold>1F</bold></td><td style="border:none;" align="left">&#x003c3;(B1&#x02013;C2)</td><td style="border:none;" align="left">sp<sup>2.50</sup>d<sup>0</sup></td><td style="border:none;" align="left">s(28.57%)
+p(71.32%) d(0.11%)</td></tr><tr><td style="border:none;" align="left">&#x003c3;(B1&#x02013;C31)</td><td style="border:none;" align="left">sp<sup>2.74</sup>d<sup>0</sup></td><td style="border:none;" align="left">s(26.69%)
+p(73.20%) d(0.11%)</td></tr><tr><td style="border:none;" align="left">&#x003c3;(B1&#x02013;C41)</td><td style="border:none;" align="left">sp<sup>2.69</sup>d<sup>0</sup></td><td style="border:none;" align="left">s(27.07%)
+p(72.83%) d(0.10%)</td></tr><tr><td style="border:none;" align="left">&#x003c3;(B1&#x02013;F52)</td><td style="border:none;" align="left">sp<sup>3.21</sup>d<sup>0.01</sup></td><td style="border:none;" align="left">s(21.80%)
+p(78.10%) d(0.10%)</td></tr><tr><td rowspan="3" style="border:none;" align="left"><bold>2</bold></td><td style="border:none;" align="left">&#x003c3;(B1&#x02013;C2)</td><td style="border:none;" align="left">sp<sup>2.04</sup>d<sup>0</sup></td><td style="border:none;" align="left">s(32.85%)
+p(67.07%) d(0.07%)</td></tr><tr><td style="border:none;" align="left">&#x003c3;(B1&#x02013;C31)</td><td style="border:none;" align="left">sp<sup>1.98</sup>d<sup>0</sup></td><td style="border:none;" align="left">s(33.57%)
+p(66.35%) d(0.08%)</td></tr><tr><td style="border:none;" align="left">&#x003c3;(B1&#x02013;C41)</td><td style="border:none;" align="left">sp<sup>1.98</sup>d<sup>0</sup></td><td style="border:none;" align="left">s(33.57%)
+p(66.35%) d(0.08%)</td></tr><tr><td rowspan="4" style="border:none;" align="left"><bold>2CN</bold></td><td style="border:none;" align="left">&#x003c3;(B1&#x02013;C2)</td><td style="border:none;" align="left">sp<sup>2.90</sup>d<sup>0</sup></td><td style="border:none;" align="left">s(25.59%)
+p(74.33%) d(0.08%)</td></tr><tr><td style="border:none;" align="left">&#x003c3;(B1&#x02013;C31)</td><td style="border:none;" align="left">sp<sup>2.92</sup>d<sup>0</sup></td><td style="border:none;" align="left">s(25.48%)
+p(74.44%) d(0.08%)</td></tr><tr><td style="border:none;" align="left">&#x003c3;(B1&#x02013;C41)</td><td style="border:none;" align="left">sp<sup>2.96</sup>d<sup>0</sup></td><td style="border:none;" align="left">s(25.23%)
+p(74.70%) d(0.08%)</td></tr><tr><td style="border:none;" align="left">&#x003c3;(B1&#x02013;C52)</td><td style="border:none;" align="left">sp<sup>3.21</sup>d<sup>0</sup></td><td style="border:none;" align="left">s(23.72%)
+p(76.18%) d(0.11%)</td></tr><tr><td rowspan="4" style="border:none;" align="left"><bold>2F</bold></td><td style="border:none;" align="left">&#x003c3;(B1&#x02013;C2)</td><td style="border:none;" align="left">sp<sup>2.51</sup>d<sup>0</sup></td><td style="border:none;" align="left">s(28.49%)
+p(71.41%) d(0.11%)</td></tr><tr><td style="border:none;" align="left">&#x003c3;(B1&#x02013;C31)</td><td style="border:none;" align="left">sp<sup>2.69</sup>d<sup>0</sup></td><td style="border:none;" align="left">s(27.09%)
+p(72.80%) d(0.10%)</td></tr><tr><td style="border:none;" align="left">&#x003c3;(B1&#x02013;C41)</td><td style="border:none;" align="left">sp<sup>2.74</sup>d<sup>0</sup></td><td style="border:none;" align="left">s(26.71%)
+p(73.18%) d(0.11%)</td></tr><tr><td style="border:none;" align="left">&#x003c3;(B1&#x02013;F52)</td><td style="border:none;" align="left">sp<sup>2.99</sup>d<sup>0</sup></td><td style="border:none;" align="left">s(27.03%)
+p(72.88%) d(0.10%)</td></tr><tr><td rowspan="3" style="border:none;" align="left"><bold>3</bold></td><td style="border:none;" align="left">&#x003c3;(B1&#x02013;C2)</td><td style="border:none;" align="left">sp<sup>1.92</sup>d<sup>0</sup></td><td style="border:none;" align="left">s(34.25%)
+p(65.68%) d(0.07%)</td></tr><tr><td style="border:none;" align="left">&#x003c3;(B1&#x02013;C31)</td><td style="border:none;" align="left">sp<sup>2.04</sup>d<sup>0</sup></td><td style="border:none;" align="left">s(32.86%)
+p(67.06%) d(0.08%)</td></tr><tr><td style="border:none;" align="left">&#x003c3;(B1&#x02013;C41)</td><td style="border:none;" align="left">sp<sup>2.04</sup>d<sup>0</sup></td><td style="border:none;" align="left">s(32.88%)
+p(67.04%) d(0.08%)</td></tr><tr><td rowspan="4" style="border:none;" align="left"><bold>3CN</bold></td><td style="border:none;" align="left">&#x003c3;(B1&#x02013;C2)</td><td style="border:none;" align="left">sp<sup>2.67</sup>d<sup>0</sup></td><td style="border:none;" align="left">s(27.26%)
+p(72.67%) d(0.07%)</td></tr><tr><td style="border:none;" align="left">&#x003c3;(B1&#x02013;C31)</td><td style="border:none;" align="left">sp<sup>3.04</sup>d<sup>0</sup></td><td style="border:none;" align="left">s(24.74%)
+p(75.19%) d(0.08%)</td></tr><tr><td style="border:none;" align="left">&#x003c3;(B1&#x02013;C41)</td><td style="border:none;" align="left">sp<sup>3.06</sup>d<sup>0</sup></td><td style="border:none;" align="left">s(24.62%)
+p(75.31%) d(0.08%)</td></tr><tr><td style="border:none;" align="left">&#x003c3;(B1&#x02013;C52)</td><td style="border:none;" align="left">sp<sup>3.27</sup>d<sup>0</sup></td><td style="border:none;" align="left">s(23.41%)
+p(76.48%) d(0.11%)</td></tr><tr><td rowspan="4" style="border:none;" align="left"><bold>3F</bold></td><td style="border:none;" align="left">&#x003c3;(B1&#x02013;C2)</td><td style="border:none;" align="left">sp<sup>2.47</sup>d<sup>0</sup></td><td style="border:none;" align="left">s(28.78%)
+p(71.13%) d(0.09%)</td></tr><tr><td style="border:none;" align="left">&#x003c3;(B1&#x02013;C31)</td><td style="border:none;" align="left">sp<sup>2.72</sup>d<sup>0</sup></td><td style="border:none;" align="left">s(26.82%)
+p(73.08%) d(0.10%)</td></tr><tr><td style="border:none;" align="left">&#x003c3;(B1&#x02013;C41)</td><td style="border:none;" align="left">sp<sup>2.72</sup>d<sup>0</sup></td><td style="border:none;" align="left">s(26.82%)
+p(73.08%) d(0.10%)</td></tr><tr><td style="border:none;" align="left">&#x003c3;(B1&#x02013;F52)</td><td style="border:none;" align="left">sp<sup>2.88</sup>d<sup>0</sup></td><td style="border:none;" align="left">s(27.03%)
+p(72.88%) d(0.10%)</td></tr><tr><td rowspan="3" style="border:none;" align="left"><bold>4</bold></td><td style="border:none;" align="left">&#x003c3;(B1&#x02013;C2)</td><td style="border:none;" align="left">sp<sup>1.92</sup>d<sup>0</sup></td><td style="border:none;" align="left">s(34.23%)
+p(65.70%) d(0.07%)</td></tr><tr><td style="border:none;" align="left">&#x003c3;(B1&#x02013;C31)</td><td style="border:none;" align="left">sp<sup>2.04</sup>d<sup>0</sup></td><td style="border:none;" align="left">s(32.88%)
+p(67.04%) d(0.08%)</td></tr><tr><td style="border:none;" align="left">&#x003c3;(B1&#x02013;C41)</td><td style="border:none;" align="left">sp<sup>2.04</sup>d<sup>0</sup></td><td style="border:none;" align="left">s(32.89%)
+p(67.04%) d(0.08%)</td></tr><tr><td rowspan="4" style="border:none;" align="left"><bold>4CN</bold></td><td style="border:none;" align="left">&#x003c3;(B1&#x02013;C2)</td><td style="border:none;" align="left">sp<sup>2.67</sup>d<sup>0</sup></td><td style="border:none;" align="left">s(27.21%)
+p(72.71%) d(0.07%)</td></tr><tr><td style="border:none;" align="left">&#x003c3;(B1&#x02013;C31)</td><td style="border:none;" align="left">sp<sup>3.06</sup>d<sup>0</sup></td><td style="border:none;" align="left">s(24.61%)
+p(75.31%) d(0.08%)</td></tr><tr><td style="border:none;" align="left">&#x003c3;(B1&#x02013;C41)</td><td style="border:none;" align="left">sp<sup>3.04</sup>d<sup>0</sup></td><td style="border:none;" align="left">s(24.75%)
+p(75.17%) d(0.08%)</td></tr><tr><td style="border:none;" align="left">&#x003c3;(B1&#x02013;C51)</td><td style="border:none;" align="left">sp<sup>3.26</sup>d<sup>0</sup></td><td style="border:none;" align="left">s(23.44%)
+p(76.45%) d(0.11%)</td></tr><tr><td rowspan="4" style="border:none;" align="left"><bold>4F</bold></td><td style="border:none;" align="left">&#x003c3;(B1&#x02013;C2)</td><td style="border:none;" align="left">sp<sup>2.49</sup>d<sup>0</sup></td><td style="border:none;" align="left">s(28.65%)
+p(71.25%) d(0.10%)</td></tr><tr><td style="border:none;" align="left">&#x003c3;(B1&#x02013;C31)</td><td style="border:none;" align="left">sp<sup>2.72</sup>d<sup>0</sup></td><td style="border:none;" align="left">s(26.83%)
+p(73.07%) d(0.10%)</td></tr><tr><td style="border:none;" align="left">&#x003c3;(B1&#x02013;C41)</td><td style="border:none;" align="left">sp<sup>2.73</sup>d<sup>0</sup></td><td style="border:none;" align="left">s(26.78%)
+p(73.12%) d(0.10%)</td></tr><tr><td style="border:none;" align="left">&#x003c3;(B1&#x02013;F51)</td><td style="border:none;" align="left">sp<sup>2.81</sup>d<sup>0</sup></td><td style="border:none;" align="left">s(27.05%)
+p(72.86%) d(0.10%)</td></tr></tbody></table><table-wrap-foot><fn id="t5fn1"><label>a</label><p>Hybrid on A atom
+in the A&#x02013;B
+bond or otherwise as indicated.</p></fn><fn id="t5fn2"><label>b</label><p>Percentage contribution of atomic
+orbitals in NBO hybrid.</p></fn></table-wrap-foot></table-wrap></sec><sec id="sec2.4"><title>Molecular
+Orbital Diagram</title><p>The molecular orbital (MO)
+diagrams for <bold>1F</bold>, <bold>1CN</bold>, and the receptor&#x02013;chloride
+complex (<bold>1Cl</bold>) presented in <xref rid="fig5" ref-type="fig">Figure <xref rid="fig5" ref-type="fig">5</xref></xref> (MO diagrams for <bold>1</bold> and <bold>CN</bold><sup><bold>&#x02013;</bold></sup> are shown in <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acsomega.8b03237/suppl_file/ao8b03237_si_001.pdf">Figure S3</ext-link>) show the compositions of some frontier
+molecular orbitals (FMOs) like LUMO + 4 to HOMO &#x02013; 4. It is
+to be noted that in <bold>1F</bold>, the 2p<italic><sub>y</sub></italic> orbital of boron atom (B1) combines with the 2p<italic><sub>y</sub></italic> orbital of fluoride (F<sup>&#x02013;</sup>) analyte, indicating
+a significant interaction between them that we can refer as p&#x02013;p
+interaction. As signaled by the coefficients, the orbital contribution
+from the F<sup>&#x02013;</sup> and CN<sup>&#x02013;</sup> in the FMOs
+is different, i.e., 2p<italic><sub>y</sub></italic> (0.30) in HOMO
+&#x02013; 1 of <bold>1F</bold> and 2p<italic><sub>y</sub></italic> (0.16)
+in HOMO &#x02013; 1 of <bold>1CN</bold>. This difference in the orbital
+coefficients supports the different binding energies for F<sup>&#x02013;</sup> and CN<sup>&#x02013;</sup> (see <xref rid="fig4" ref-type="fig">Figure <xref rid="fig4" ref-type="fig">4</xref></xref>). Likewise, the coefficient of 3p<italic><sub>y</sub></italic> (0.10) in HOMO &#x02013; 1 of <bold>1Cl</bold> reveals that the receptor&#x02013;analyte interaction is weaker than
+F<sup>&#x02013;</sup> and CN<sup>&#x02013;</sup>. Greater the coefficient,
+more the orbital interaction and stronger the binding. Thus, higher
+binding energy for F<sup>&#x02013;</sup> has the origin in the higher
+degree of orbital interaction between F<sup>&#x02013;</sup> and <bold>1</bold> in comparison to CN<sup>&#x02013;</sup> and <bold>1</bold> and all of the other analytes with <bold>1</bold>. There occurs
+a change of arrangement of the &#x0201c;2p&#x0201d; orbitals in the
+case of <bold>1</bold> and <bold>1F</bold> on the basis of their energy.
+In <bold>1</bold>, the &#x0201c;2p (boron)&#x0201d; orbitals that have
+major contributions to the FMOs are 2p<italic><sub>y</sub></italic> (HOMO &#x02013; 1), 2p<italic><sub>z</sub></italic> (HOMO), and 2p<italic><sub>x</sub></italic> (LUMO + 4), whereas in <bold>1F</bold>, the
+major contributions from the 2p (boron) orbitals are found in LUMO
++ 1 involving 2p<italic><sub>x</sub></italic> and HOMO &#x02013; 1
+consisting of 2p<italic><sub>y</sub></italic>, in which the 2p<italic><sub>y</sub></italic> orbital of F<sup>&#x02013;</sup> participates
+in the MO formation. This shows that 2p<italic><sub>y</sub></italic> of boron (B) and 2p<italic><sub>y</sub></italic> of F<sup>&#x02013;</sup> are involved in the interaction, and this is likewise true for other
+analytes such as CN<sup>&#x02013;</sup>, Cl<sup>&#x02013;</sup>, etc.
+Interestingly, as mentioned, the order of energy of 2p (B) orbitals
+of <bold>1F</bold> is not the same as of <bold>1</bold>. This is due
+to the presence of F<sup>&#x02013;</sup>, which breaks this order in <bold>1</bold>, enabling the 2p (B) to participate in the interaction with
+the F<sup>&#x02013;</sup> electrons.</p><fig id="fig5" position="float"><label>Figure 5</label><caption><p>Molecular orbital diagrams for (I) <bold>1F</bold>, (II) <bold>1CN</bold>, and (III) <bold>1Cl</bold>.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ao-2018-03237e_0005" id="gr6" position="float"/></fig></sec><sec id="sec2.5"><title>UV&#x02013;Vis Absorption
+Spectra and Molecular Orbital Analysis</title><p>The electronic transition
+energies of <bold>1</bold>&#x02013;<bold>4</bold>, <bold>1CN</bold>&#x02013;<bold>4CN</bold>, and <bold>1F</bold>&#x02013;<bold>4F</bold> were calculated by using their ground-state
+optimized structures. For all of the receptors and receptor&#x02013;analyte
+complexes, the first 15 absorption transitions were calculated. <xref rid="tbl6" ref-type="other">Table <xref rid="tbl6" ref-type="other">6</xref></xref> shows the comparison
+between experimental results and the calculated absorption profiles
+employing various functionals (total six) for <bold>1</bold>, <bold>1F</bold>, and <bold>1CN</bold>.<sup><xref ref-type="bibr" rid="ref40">40</xref></sup> The
+electronic transition energies, FMOs involved, and the corresponding
+oscillator strengths (<italic>f</italic>) of all of the 15 absorption
+transitions for all of the receptors and the receptor&#x02013;analyte
+complexes are given in <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acsomega.8b03237/suppl_file/ao8b03237_si_001.pdf">Table S9</ext-link> (and the
+same for <bold>1</bold>, <bold>1F</bold>, and <bold>1CN</bold> with
+functionals other than CAM-B3LYP are provided in <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acsomega.8b03237/suppl_file/ao8b03237_si_001.pdf">Table S10</ext-link>).</p><table-wrap id="tbl6" position="float"><label>Table 6</label><caption><title>Calculated Electronic
+Excitation Energies
+and the Corresponding Oscillator Strengths of the Singlet Excited-State
+Transitions in <bold>1</bold>, <bold>1F</bold>, and <bold>1CN</bold> Using Six Different Functionals</title></caption><table frame="hsides" rules="groups" border="0"><colgroup><col align="left"/><col align="left"/><col align="char" char="."/><col align="char" char="."/><col align="left"/></colgroup><thead><tr><th style="border:none;" align="center">receptor/complex</th><th style="border:none;" align="center">functional</th><th style="border:none;" align="center" char=".">calculated excitation energy (nm)</th><th style="border:none;" align="center" char="."><italic>f</italic><xref rid="t6fn1" ref-type="table-fn">a</xref></th><th style="border:none;" align="center">experimental values<sup><xref ref-type="bibr" rid="ref40">40</xref></sup> (nm)</th></tr></thead><tbody><tr><td rowspan="6" style="border:none;" align="left"><bold>1</bold></td><td style="border:none;" align="left">CAM-B3LYP</td><td style="border:none;" align="char" char=".">371</td><td style="border:none;" align="char" char=".">0.1657</td><td rowspan="6" style="border:none;" align="left">392</td></tr><tr><td style="border:none;" align="left">M06-2X</td><td style="border:none;" align="char" char=".">327</td><td style="border:none;" align="char" char=".">0.1684</td></tr><tr><td style="border:none;" align="left">B3PW91</td><td style="border:none;" align="char" char=".">355</td><td style="border:none;" align="char" char=".">0.1210</td></tr><tr><td style="border:none;" align="left">HCTH</td><td style="border:none;" align="char" char=".">404</td><td style="border:none;" align="char" char=".">0.1613</td></tr><tr><td style="border:none;" align="left">LSDA</td><td style="border:none;" align="char" char=".">420</td><td style="border:none;" align="char" char=".">0.1883</td></tr><tr><td style="border:none;" align="left">PBEPBE</td><td style="border:none;" align="char" char=".">416</td><td style="border:none;" align="char" char=".">0.1849</td></tr><tr><td rowspan="6" style="border:none;" align="left"><bold>1F</bold></td><td style="border:none;" align="left">CAM-B3LYP</td><td style="border:none;" align="char" char=".">245</td><td style="border:none;" align="char" char=".">0.0018</td><td rowspan="6" style="border:none;" align="left">quenching</td></tr><tr><td style="border:none;" align="left">M06-2X</td><td style="border:none;" align="char" char=".">290</td><td style="border:none;" align="char" char=".">0.0021</td></tr><tr><td style="border:none;" align="left">B3PW91</td><td style="border:none;" align="char" char=".">296</td><td style="border:none;" align="char" char=".">0.0016</td></tr><tr><td style="border:none;" align="left">HCTH</td><td style="border:none;" align="char" char=".">310</td><td style="border:none;" align="char" char=".">0.0023</td></tr><tr><td style="border:none;" align="left">LSDA</td><td style="border:none;" align="char" char=".">375</td><td style="border:none;" align="char" char=".">0.0029</td></tr><tr><td style="border:none;" align="left">PBEPBE</td><td style="border:none;" align="char" char=".">373</td><td style="border:none;" align="char" char=".">0.0022</td></tr><tr><td rowspan="6" style="border:none;" align="left"><bold>1CN</bold></td><td style="border:none;" align="left">CAM-B3LYP</td><td style="border:none;" align="char" char=".">253</td><td style="border:none;" align="char" char=".">0.0014</td><td rowspan="6" style="border:none;" align="left">quenching</td></tr><tr><td style="border:none;" align="left">M06-2X</td><td style="border:none;" align="char" char=".">275</td><td style="border:none;" align="char" char=".">0.0033</td></tr><tr><td style="border:none;" align="left">B3PW91</td><td style="border:none;" align="char" char=".">302</td><td style="border:none;" align="char" char=".">0.0027</td></tr><tr><td style="border:none;" align="left">HCTH</td><td style="border:none;" align="char" char=".">393</td><td style="border:none;" align="char" char=".">0.0015</td></tr><tr><td style="border:none;" align="left">LSDA</td><td style="border:none;" align="char" char=".">393</td><td style="border:none;" align="char" char=".">0.0004</td></tr><tr><td style="border:none;" align="left">PBEPBE</td><td style="border:none;" align="char" char=".">394</td><td style="border:none;" align="char" char=".">0.0005</td></tr></tbody></table><table-wrap-foot><fn id="t6fn1"><label>a</label><p>Oscillator strength.</p></fn></table-wrap-foot></table-wrap><p><xref rid="fig6" ref-type="fig">Figure <xref rid="fig6" ref-type="fig">6</xref></xref> displays
+the first six electronic transitions of all of the receptors and receptor&#x02013;analyte
+complexes highlighting the highest-intensity transition corresponding
+to the largest oscillator strength value (red bars) in each case as
+done in an earlier work.<sup><xref ref-type="bibr" rid="ref49">49</xref></sup> For <bold>1</bold>, the calculated first singlet transition S<sub>0</sub> &#x02192;
+S<sub>1</sub> is found at 371 nm (3.34 eV) with an oscillator strength
+of 0.1657 while S<sub>0</sub> &#x02192; S<sub>1</sub> transitions for <bold>1F a</bold>nd <bold>1CN</bold> are located at 245 nm (5.06 eV) and
+253 nm (4.90 eV), respectively, with oscillator strengths of 0.0018
+and 0.0014. Such very low oscillator strengths for <bold>1F</bold> and <bold>1CN</bold> indicate the absorption quenching when F<sup>&#x02013;</sup> and CN<sup>&#x02013;</sup> bind to <bold>1</bold>,
+showing a fine agreement with the experimental observations. In the
+newly designed receptors <bold>2</bold>, <bold>3</bold>, and <bold>4</bold>, the calculated first singlet transitions S<sub>0</sub> &#x02192;
+S<sub>1</sub> are found at 410 nm (3.02 eV), 426 nm (2.91 eV), and
+316 nm (3.92 eV) with oscillator strengths of 0.1750, 0.1561, and
+0.1674, respectively, while those for <bold>2F</bold>, <bold>3F</bold>, <bold>4F</bold>, <bold>2CN</bold>, <bold>3CN</bold>, and <bold>4CN</bold> are located at 254 nm (4.88 eV), 242 nm (5.12 eV), 248
+nm (4.99 eV), 256 nm (4.84 eV), 247 nm (5.02 eV), and 253 nm (4.90
+eV) with oscillator strengths of 0.0016, 0.0001, 0.0001, 0.0005, 0.0001,
+and 0.0001, respectively. These low oscillator strengths for S<sub>0</sub> &#x02192; S<sub>1</sub> transitions of <bold>2F</bold>&#x02013;<bold>4F</bold> and <bold>2CN</bold>&#x02013;<bold>4CN</bold> again refer
+to the absorption quenching due to the binding of F<sup>&#x02013;</sup> and CN<sup>&#x02013;</sup> to <bold>2</bold>, <bold>3</bold>, and <bold>4</bold>.</p><fig id="fig6" position="float"><label>Figure 6</label><caption><p>Calculated electronic excitation energies and corresponding oscillator
+strengths of the singlet electronic transitions of (I) <bold>1</bold>, (II) <bold>1F</bold>, (III) <bold>1CN</bold>, (IV) <bold>2</bold>, (V) <bold>2F</bold>, (VI) <bold>2CN</bold>, (VII) <bold>3</bold>, (VIII) <bold>3F</bold>, (IX) <bold>3CN</bold> (X) <bold>4</bold>, (XI) <bold>4F</bold>, and (XII) <bold>4CN</bold> at the DFT/CAM-B3LYP/6-31G(d)
+level of theory. Red indicates the highest intense absorption peaks
+(energy is unscaled).</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ao-2018-03237e_0006" id="gr7" position="float"/></fig><p><xref rid="fig7" ref-type="fig">Figures <xref rid="fig7" ref-type="fig">7</xref></xref> and <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acsomega.8b03237/suppl_file/ao8b03237_si_001.pdf">S4&#x02013;S6</ext-link> display the FMOs and their corresponding
+orbital energies in <bold>1</bold>, <bold>1F</bold>, <bold>1CN</bold>; <bold>2</bold>, <bold>2F</bold>, <bold>2CN</bold>; <bold>3</bold>, <bold>3F</bold>, <bold>3CN</bold>, and <bold>4</bold>, <bold>4F</bold>, <bold>4CN</bold>, respectively, for the most probable and dominant
+transitions. For <bold>1</bold>, <bold>2</bold>, <bold>3</bold>, and <bold>4</bold>, the most probable and the lowest-energy S<sub>0</sub> &#x02192;
+S<sub>1</sub> transitions are assigned to HOMO &#x02192; LUMO (69.2%,
+which represents the probability of transition), HOMO &#x02192; LUMO
+(69.1%), HOMO &#x02192; LUMO (68.2%), and HOMO &#x02192; LUMO (68.1%),
+respectively. In <bold>1</bold>&#x02013;<bold>4</bold>, both highest
+occupied molecular orbital (HOMO) and lowest unoccupied molecular
+orbital (LUMO) are centered on fragment A, which reveals that their
+S<sub>0</sub> &#x02192; S<sub>1</sub> transition is basically &#x003c0;
+&#x02192; &#x003c0;* transition (<xref rid="fig7" ref-type="fig">Figures <xref rid="fig7" ref-type="fig">7</xref></xref> and <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acsomega.8b03237/suppl_file/ao8b03237_si_001.pdf">S4&#x02013;S6</ext-link>) for each
+case. For <bold>1F</bold>, the calculated maximum-intensity absorption
+peak (less significant as <italic>f</italic> = 0.0184) arises from
+transition to the second singlet excited state (S<sub>0</sub> &#x02192;
+S<sub>2</sub>) assigned to HOMO &#x02192; LUMO + 4 (49.7%). The HOMO
+is localized at fragment A, while the LUMO + 4 shows a complete shift
+to fragment B after binding. In the case of <bold>1CN</bold>, the
+calculated maximum-intensity absorption peak (<italic>f</italic> =
+0.0294) of less significance is shown to be due to transition to the
+third singlet excited state (S<sub>0</sub> &#x02192; S<sub>3</sub>)
+assigned to HOMO &#x02192; LUMO + 4 (52.1%). The HOMO is budged at
+A, while the LUMO + 4 gets shifted to B. The FMOs suggest that the
+S<sub>0</sub> &#x02192; S<sub>2</sub> and S<sub>0</sub> &#x02192; S<sub>3</sub> transitions for <bold>1F</bold> and <bold>1CN</bold>, respectively,
+are intramolecular charge transfer (ICT) transitions from A to B driven
+by addition of electron-rich fluoride and cyanide ions. As described
+in <bold>1F</bold> and <bold>1CN</bold>, the calculated maximum-intensity
+absorption peaks for <bold>2F</bold> (<italic>f</italic> = 0.0211), <bold>2CN</bold> (<italic>f</italic> = 0.0198)<bold>, 3F</bold> (<italic>f</italic> = 0.0161), <bold>3CN</bold> (<italic>f</italic> = 0.0151), <bold>4F</bold> (<italic>f</italic> = 0.0162), and <bold>4CN</bold> (<italic>f</italic> = 0.0161) are shown to arise from S<sub>0</sub> &#x02192;
+S<sub>4</sub>, S<sub>0</sub> &#x02192; S<sub>5</sub>, S<sub>0</sub> &#x02192; S<sub>3</sub>, S<sub>0</sub> &#x02192; S<sub>3</sub>, S<sub>0</sub> &#x02192; S<sub>4</sub>, and S<sub>0</sub> &#x02192; S<sub>5</sub> transitions assigned to HOMO &#x02192; LUMO + 4 (43.4%), HOMO
+&#x02192; LUMO + 3 (35.0%); HOMO &#x02192; LUMO + 3 (45.2%), HOMO &#x02192;
+LUMO + 3 (51.2%), HOMO &#x02192; LUMO + 4 (49.1%), and HOMO &#x02192;
+LUMO + 5 (37.1%), respectively. Similarly, in <bold>2F</bold>&#x02013;<bold>4F</bold> and <bold>2CN</bold>&#x02013;<bold>4CN</bold>, the HOMOs
+are budged at their corresponding A, whereas their respective LUMO
++ 4, LUMO + 3, LUMO + 3, LUMO + 3, LUMO + 4, and LUMO + 5 are completely
+shifted to B. Thus, the FMOs indicate that these maximum-intensity
+absorption transitions in <bold>2F</bold>&#x02013;<bold>4F</bold> and <bold>2CN</bold>&#x02013;<bold>4CN</bold> are intramolecular charge transfer
+(ICT) transitions (<xref rid="fig7" ref-type="fig">Figures <xref rid="fig7" ref-type="fig">7</xref></xref> and <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acsomega.8b03237/suppl_file/ao8b03237_si_001.pdf">S4&#x02013;S6</ext-link>). This can arise
+due to analyte binding through 2p<italic><sub>y</sub></italic>&#x02013;2p<italic><sub>y</sub></italic> orbital overlap interaction, followed by charge
+redistribution, where the boron atoms acquire partial negative charges
+as demonstrated in <xref rid="fig5" ref-type="fig">Figure <xref rid="fig5" ref-type="fig">5</xref></xref> and <xref rid="tbl3" ref-type="other">Table <xref rid="tbl3" ref-type="other">3</xref></xref>, respectively.</p><fig id="fig7" position="float"><label>Figure 7</label><caption><p>Calculated FMO energies for (I) <bold>1</bold> in the
+ground state
+and the excited state (<bold>1</bold>*), (II) <bold>1F</bold> in the
+ground state and the excited state (<bold>1F</bold>*), and (III) <bold>1CN</bold> in the ground state and the excited state (<bold>1CN</bold>*) at the CAM-B3LYP/6-31G(d) level using CPCM solvation model.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ao-2018-03237e_0002" id="gr8" position="float"/></fig><p>ICT is often confused with photoinduced
+electron transfer (PET).
+PET is an accepted mechanism for &#x0201c;turn-on&#x0201d; chemosensors,
+which fluoresce in the presence of analytes only.<sup><xref ref-type="bibr" rid="ref50">50</xref>&#x02212;<xref ref-type="bibr" rid="ref54">54</xref></sup> These sensors are the electron donor&#x02013;acceptor
+systems. The highest occupied molecular orbital (HOMO) of donor lies
+in between the HOMO and LUMO of an acceptor. Upon photoexcitation,
+one of the HOMO electrons of acceptor gets excited to its LUMO. The
+orbital vacancy created in HOMO of acceptor is filled due to the rapid
+transfer of the electron from HOMO of donor, stopping the radiative
+decay of the excited electron of acceptor. This results in fluorescence
+quenching or a very weak fluorescence. Due to PET, the electron density
+decreases on donor on binding an analyte, leading to the HOMO energy
+lowering in comparison to the acceptor HOMO, thus stopping the electron
+transfer completely. This situation leads to turn-on of the fluorescence.
+But the absorption quenching in <bold>1F</bold>&#x02013;<bold>4F</bold> and <bold>1CN</bold>&#x02013;<bold>4CN</bold> is because of the ICT
+observed in their less significant transitions and the geometrical
+changes at their boron centers compared to <bold>1</bold>&#x02013;<bold>4</bold> on F<sup>&#x02013;</sup> and CN<sup>&#x02013;</sup> binding.
+It should be mentioned that for all of the receptors and receptor&#x02013;analyte
+complexes, all of the chosen functionals converge to the similar results
+for the electronic transitions (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acsomega.8b03237/suppl_file/ao8b03237_si_001.pdf">Tables S9 and S10</ext-link>). For example, as indicated by CAM-B3LYP, all other functionals
+show that for <bold>1</bold>&#x02013;<bold>4</bold>, the most intense
+transition is S<sub>0</sub> &#x02192; S<sub>1</sub> occurring from
+HOMO &#x02192; LUMO. Similarly, all of the functionals show that in
+the case of <bold>1F</bold>, <bold>2F</bold>, <bold>3F</bold>, <bold>4F</bold>, <bold>1CN</bold>, <bold>2CN</bold>, <bold>3CN</bold>,
+and <bold>4CN</bold>, the calculated maximum-intensity absorption
+peaks arise from S<sub>0</sub> &#x02192; S<sub>2</sub>, S<sub>0</sub> &#x02192; S<sub>4</sub>, S<sub>0</sub> &#x02192; S<sub>3</sub>, S<sub>0</sub> &#x02192; S<sub>4</sub>, S<sub>0</sub> &#x02192; S<sub>3</sub>, S<sub>0</sub> &#x02192; S<sub>5</sub>, S<sub>0</sub> &#x02192; S<sub>3</sub>, and S<sub>0</sub> &#x02192; S<sub>5</sub>, respectively,
+as predicted by CAM-B3LYP (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acsomega.8b03237/suppl_file/ao8b03237_si_001.pdf">Tables S9 and S10</ext-link>).</p></sec><sec id="sec2.6"><title>Excited-State Geometries</title><p>Followed from analytical science,
+the emission of a dye is more sensitive compared to its absorption.<sup><xref ref-type="bibr" rid="ref55">55</xref></sup> To establish the sensing mechanism, study of
+the excited-state geometry is also very crucial. <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acsomega.8b03237/suppl_file/ao8b03237_si_001.pdf">Figure S7</ext-link> displays the optimized geometries of the first excited
+states (S<sub>1</sub>) of <bold>1</bold>&#x02013;<bold>4</bold>, <bold>1F</bold>&#x02013;<bold>4F</bold>, and <bold>1CN</bold>&#x02013;<bold>4CN</bold>. While comparing the ground-state and the first excited-state
+configurations, the maximum geometrical deviations occur along angles
+C32&#x02013;C31&#x02013;B1 (2.0&#x000b0;), C32&#x02013;C31&#x02013;B1 (2.0&#x000b0;),
+C31&#x02013;B1&#x02013;C41 (7.9&#x000b0;), and C2&#x02013;B1&#x02013;C31
+(8.0&#x000b0;) in <bold>1</bold>, <bold>2</bold>, <bold>1F</bold>, and <bold>2CN</bold>, respectively, as indicated in <xref rid="tbl1" ref-type="other">Tables <xref rid="tbl1" ref-type="other">1</xref></xref> and <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acsomega.8b03237/suppl_file/ao8b03237_si_001.pdf">S2, S3</ext-link>. Scanning
+of the first excited-state (S<sub>1</sub>) potential energy surfaces
+(PES) has been carried out along the coordinates mentioned above,
+which show maximum configurational changes from the ground state to
+the excited states. The minima of the S<sub>1</sub> potential energy
+curves of <bold>1</bold>, <bold>2</bold>, <bold>1F</bold>, and <bold>2CN</bold> (<xref rid="fig2" ref-type="fig">Figures <xref rid="fig2" ref-type="fig">2</xref></xref> and <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acsomega.8b03237/suppl_file/ao8b03237_si_001.pdf">S2</ext-link>) provide the same configurations
+as those of their respective first excited-state optimized geometries
+(<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acsomega.8b03237/suppl_file/ao8b03237_si_001.pdf">Figure S7</ext-link>). As it is a well established
+fact that twist in excited-state configuration to that of the ground-state
+configuration may lead to a significant internal conversion (IC),
+energy loss, and thus fluorescence quenching.<sup><xref ref-type="bibr" rid="ref56">56</xref>,<xref ref-type="bibr" rid="ref57">57</xref></sup> This effect of configurational change on the fluorescence quenching
+is observed here and is discussed in the subsequent section.</p></sec><sec id="sec2.7"><title>Sensing
+Mechanism</title><p>To appreciate the sensing mechanism
+and to understand the complete ICT process in detail, we theoretically
+studied the emission properties for <bold>1</bold>, <bold>1F</bold>, and <bold>1CN</bold>. Furthermore, the emission properties of the
+new designed receptors <bold>2</bold>&#x02013;<bold>4</bold> and their
+fluoride and cyanide addition products <bold>2F</bold>&#x02013;<bold>4F</bold> and <bold>2CN</bold>&#x02013;<bold>4CN</bold> have been
+studied for understanding their sensing mechanism. The electron-deficient
+boron centers in <bold>1</bold>&#x02013;<bold>4</bold> act as an electrophilic
+center to capture the added F<sup>&#x02013;</sup> and CN<sup>&#x02013;</sup>, which leads to change in the geometry in <bold>1F</bold>&#x02013;<bold>4F</bold> and <bold>1CN</bold>&#x02013;<bold>4CN</bold> from that
+of <bold>1</bold>&#x02013;<bold>4</bold> at the boron center. The TD-DFT
+method was used to explore the emission properties and to understand
+the fluorescent sensing mechanism of <bold>1</bold> and the new designed
+receptors <bold>2</bold>&#x02013;<bold>4</bold>. <xref rid="fig7" ref-type="fig">Figures <xref rid="fig7" ref-type="fig">7</xref></xref> and <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acsomega.8b03237/suppl_file/ao8b03237_si_001.pdf">S4&#x02013;S6</ext-link> display the relevant FMOs, which are involved in emission. <xref rid="tbl7" ref-type="other">Table <xref rid="tbl7" ref-type="other">7</xref></xref> (for <bold>1</bold>&#x02013;<bold>4</bold>, <bold>1F</bold>&#x02013;<bold>4F</bold>, and <bold>1CN</bold>&#x02013;<bold>4CN</bold> at the CAM-B3LYP/6-31G(d) level
+of theory) and <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acsomega.8b03237/suppl_file/ao8b03237_si_001.pdf">Table S11</ext-link> (for <bold>1</bold>, <bold>1F</bold>, and <bold>1CN</bold> using different functionals
+other than CAM-B3LYP) show the de-excitation energies, corresponding
+oscillator strengths, and the transition compositions of all of the
+receptors and receptor&#x02013;analyte complexes. As stated by Kasha&#x02019;s
+rule, the fluorescence takes place solely from the lowest singlet
+excited state (S<sub>1</sub>).<sup><xref ref-type="bibr" rid="ref58">58</xref></sup> In the
+case of an electronic excitation to a higher state, the fast relaxation
+(10<sup>&#x02013;14</sup>&#x02013;10<sup>&#x02013;11</sup> s) of excited
+electrons to the S<sub>1</sub> state takes place before any possible
+emission to the ground state.<sup><xref ref-type="bibr" rid="ref58">58</xref></sup> For checking
+the relaxation process from the higher excited states (states where
+the receptors and the receptor&#x02013;analyte complexes get excited
+during absorption, i.e., S<sub>2</sub>, S<sub>3</sub>, S<sub>4</sub>, S<sub>5</sub>, S<sub>3</sub>, S<sub>3</sub>, S<sub>4</sub>, and
+S<sub>5</sub> for <bold>1F</bold>, <bold>1CN</bold>, <bold>2F</bold>, <bold>2CN</bold>, <bold>3F</bold>, <bold>3CN</bold>, <bold>4F</bold>, and <bold>4CN</bold>, respectively), the optimization of these
+excited states was performed (displayed in <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acsomega.8b03237/suppl_file/ao8b03237_si_001.pdf">Figure S8</ext-link>) and de-excitation energies along with their oscillator
+strengths from these higher excited states were calculated (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acsomega.8b03237/suppl_file/ao8b03237_si_001.pdf">Table S12</ext-link>). As predicted by the TD-DFT results,
+the excited-state deactivation processes in <bold>1</bold>&#x02013;<bold>4</bold> are not similar to <bold>1F</bold>&#x02013;<bold>4F</bold> and <bold>1CN</bold>&#x02013;<bold>4CN</bold> (see <xref rid="fig8" ref-type="fig">Figures <xref rid="fig8" ref-type="fig">8</xref></xref> and <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acsomega.8b03237/suppl_file/ao8b03237_si_001.pdf">S9&#x02013;S11</ext-link>). For <bold>1</bold>&#x02013;<bold>4</bold>, during the excitation
+processes, the electron excitations involve the &#x003c0; &#x02192; &#x003c0;*
+transitions from S<sub>0</sub> to S<sub>1</sub> with oscillator strengths
+0.1657, 0.1750, 0.1561, and 0.1674, respectively, and then a simple
+dropping of the excited electrons back to S<sub>0</sub> occurs with
+fluorescence emission, as shown in <xref rid="fig7" ref-type="fig">Figures <xref rid="fig7" ref-type="fig">7</xref></xref> and <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acsomega.8b03237/suppl_file/ao8b03237_si_001.pdf">S4&#x02013;S6</ext-link>. The S<sub>1</sub> states of <bold>1</bold>&#x02013;<bold>4</bold> are shown to be the bright states because of larger oscillator strengths
+(0.1626, 0.1727, 0.1656, and 0.1785, respectively) and hence intensities
+for their respective S<sub>1</sub> &#x02192; S<sub>0</sub> transitions
+indicate the allowed relaxation transitions and thus decay in a radiative
+manner (fluorescence emission), which is mirrored by the red shift
+in calculated emission wavelengths (410, 455, 463, and 367 nm, see <xref rid="tbl7" ref-type="other">Table <xref rid="tbl7" ref-type="other">7</xref></xref>) compared to their
+absorption wavelengths of 371, 410, 426, and 316 nm, respectively
+(see <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acsomega.8b03237/suppl_file/ao8b03237_si_001.pdf">Table S9</ext-link>).</p><fig id="fig8" position="float"><label>Figure 8</label><caption><p>Different mechanisms
+of fluorescence emission for <bold>1</bold>, <bold>1F</bold>, and <bold>1CN</bold>.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ao-2018-03237e_0003" id="gr9" position="float"/></fig><table-wrap id="tbl7" position="float"><label>Table 7</label><caption><title>Calculated
+Electronic De-excitation
+Energies and the Corresponding Oscillator Strengths of the Singlet
+Excited States De-excitations of <bold>1</bold>&#x02013;<bold>4</bold>, <bold>1F</bold>&#x02013;<bold>4F</bold>, and <bold>1CN</bold>&#x02013;<bold>4CN</bold> at the DFT/CAM-B3LYP/6-31G(d) Level of Theory</title></caption><table frame="hsides" rules="groups" border="0"><colgroup><col align="left"/><col align="left"/><col align="char" char="("/><col align="char" char="."/><col align="left"/><col align="char" char="."/></colgroup><thead><tr><th style="border:none;" align="center">receptor/complex</th><th style="border:none;" align="center">electronic de-excitation<xref rid="t7fn1" ref-type="table-fn">a</xref></th><th style="border:none;" align="center" char="(">energy (nm/eV)</th><th style="border:none;" align="center" char="."><italic>f</italic><xref rid="t7fn2" ref-type="table-fn">b</xref></th><th style="border:none;" align="center">contrib.<xref rid="t7fn3" ref-type="table-fn">c</xref></th><th style="border:none;" align="center" char=".">CI<xref rid="t7fn4" ref-type="table-fn">d</xref></th></tr></thead><tbody><tr><td style="border:none;" align="left"><bold>1</bold></td><td style="border:none;" align="left">S<sub>0</sub>&#x000a0;&#x02190;&#x000a0;S<sub>1</sub></td><td style="border:none;" align="char" char="(">410&#x000a0;(3.02)</td><td style="border:none;" align="char" char=".">0.1626</td><td style="border:none;" align="left">HOMO&#x000a0;&#x02190;&#x000a0;LUMO</td><td style="border:none;" align="char" char=".">0.693</td></tr><tr><td style="border:none;" align="left"><bold>1F</bold></td><td style="border:none;" align="left">S<sub>0</sub>&#x000a0;&#x02190;&#x000a0;S<sub>1</sub></td><td style="border:none;" align="char" char="(">345&#x000a0;(3.59)</td><td style="border:none;" align="char" char=".">0.0003</td><td style="border:none;" align="left">HOMO&#x000a0;&#x02190;&#x000a0;LUMO</td><td style="border:none;" align="char" char=".">0.667</td></tr><tr><td style="border:none;" align="left"><bold>1CN</bold></td><td style="border:none;" align="left">S<sub>0</sub>&#x000a0;&#x02190;&#x000a0;S<sub>1</sub></td><td style="border:none;" align="char" char="(">294&#x000a0;(4.21)</td><td style="border:none;" align="char" char=".">0.0002</td><td style="border:none;" align="left">HOMO&#x000a0;&#x02190;&#x000a0;LUMO</td><td style="border:none;" align="char" char=".">0.554</td></tr><tr><td style="border:none;" align="left"><bold>2</bold></td><td style="border:none;" align="left">S<sub>0</sub>&#x000a0;&#x02190;&#x000a0;S<sub>1</sub></td><td style="border:none;" align="char" char="(">455&#x000a0;(2.73)</td><td style="border:none;" align="char" char=".">0.1727</td><td style="border:none;" align="left">HOMO&#x000a0;&#x02190;&#x000a0;LUMO</td><td style="border:none;" align="char" char=".">0.689</td></tr><tr><td style="border:none;" align="left"><bold>2F</bold></td><td style="border:none;" align="left">S<sub>0</sub>&#x000a0;&#x02190;&#x000a0;S<sub>1</sub></td><td style="border:none;" align="char" char="(">312&#x000a0;(3.97)</td><td style="border:none;" align="char" char=".">0.0002</td><td style="border:none;" align="left">HOMO&#x000a0;&#x02190;&#x000a0;LUMO</td><td style="border:none;" align="char" char=".">0.650</td></tr><tr><td style="border:none;" align="left"><bold>2CN</bold></td><td style="border:none;" align="left">S<sub>0</sub>&#x000a0;&#x02190;&#x000a0;S<sub>1</sub></td><td style="border:none;" align="char" char="(">341&#x000a0;(3.64)</td><td style="border:none;" align="char" char=".">0.0001</td><td style="border:none;" align="left">HOMO&#x000a0;&#x02190;&#x000a0;LUMO</td><td style="border:none;" align="char" char=".">0.684</td></tr><tr><td style="border:none;" align="left"><bold>3</bold></td><td style="border:none;" align="left">S<sub>0</sub>&#x000a0;&#x02190;&#x000a0;S<sub>1</sub></td><td style="border:none;" align="char" char="(">463&#x000a0;(2.68)</td><td style="border:none;" align="char" char=".">0.1656</td><td style="border:none;" align="left">HOMO&#x000a0;&#x02190;&#x000a0;LUMO</td><td style="border:none;" align="char" char=".">0.685</td></tr><tr><td style="border:none;" align="left"><bold>3F</bold></td><td style="border:none;" align="left">S<sub>0</sub>&#x000a0;&#x02190;&#x000a0;S<sub>1</sub></td><td style="border:none;" align="char" char="(">325&#x000a0;(3.81)</td><td style="border:none;" align="char" char=".">0.0001</td><td style="border:none;" align="left">HOMO&#x000a0;&#x02190;&#x000a0;LUMO</td><td style="border:none;" align="char" char=".">0.682</td></tr><tr><td style="border:none;" align="left"><bold>3CN</bold></td><td style="border:none;" align="left">S<sub>0</sub>&#x000a0;&#x02190;&#x000a0;S<sub>1</sub></td><td style="border:none;" align="char" char="(">274&#x000a0;(4.52)</td><td style="border:none;" align="char" char=".">0.0004</td><td style="border:none;" align="left">HOMO&#x000a0;&#x02190;&#x000a0;LUMO</td><td style="border:none;" align="char" char=".">0.629</td></tr><tr><td style="border:none;" align="left"><bold>4</bold></td><td style="border:none;" align="left">S<sub>0</sub>&#x000a0;&#x02190;&#x000a0;S<sub>1</sub></td><td style="border:none;" align="char" char="(">367&#x000a0;(3.38)</td><td style="border:none;" align="char" char=".">0.1785</td><td style="border:none;" align="left">HOMO&#x000a0;&#x02190;&#x000a0;LUMO</td><td style="border:none;" align="char" char=".">0.677</td></tr><tr><td style="border:none;" align="left"><bold>4F</bold></td><td style="border:none;" align="left">S<sub>0</sub>&#x000a0;&#x02190;&#x000a0;S<sub>1</sub></td><td style="border:none;" align="char" char="(">320&#x000a0;(3.87)</td><td style="border:none;" align="char" char=".">0.0002</td><td style="border:none;" align="left">HOMO&#x000a0;&#x02190;&#x000a0;LUMO</td><td style="border:none;" align="char" char=".">0.637</td></tr><tr><td style="border:none;" align="left"><bold>4CN</bold></td><td style="border:none;" align="left">S<sub>0</sub>&#x000a0;&#x02190;&#x000a0;S<sub>1</sub></td><td style="border:none;" align="char" char="(">301&#x000a0;(4.12)</td><td style="border:none;" align="char" char=".">0.0006</td><td style="border:none;" align="left">HOMO&#x000a0;&#x02190;&#x000a0;LUMO</td><td style="border:none;" align="char" char=".">0.659</td></tr></tbody></table><table-wrap-foot><fn id="t7fn1"><label>a</label><p>Only the selected
+low-lying excited
+states are presented.</p></fn><fn id="t7fn2"><label>b</label><p>Oscillator
+strength.</p></fn><fn id="t7fn3"><label>c</label><p>Only the main
+configurations are
+presented.</p></fn><fn id="t7fn4"><label>d</label><p>The CI indicates
+the coefficients
+in absolute values showing the probability of the transition.</p></fn></table-wrap-foot></table-wrap><p>On the other hand, the excitations
+in <bold>1F</bold>&#x02013;<bold>4F</bold> and <bold>1CN</bold>&#x02013;<bold>4CN</bold> take place
+from the ground states to their respective S<sub>2</sub>, S<sub>3</sub>, S<sub>4</sub>, S<sub>5</sub>, S<sub>3</sub>, S<sub>3</sub>, S<sub>4</sub>, and S<sub>5</sub> states with oscillator strengths 0.0184,
+0.0211, 0.0161, 0.0162, 0.0294, 0.0198, 0.0151, and 0.0161, respectively,
+resulting in the less significant charge-transfer transitions between
+A and B moieties (see <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acsomega.8b03237/suppl_file/ao8b03237_si_001.pdf">Table S11</ext-link>, <xref rid="fig7" ref-type="fig">Figures <xref rid="fig7" ref-type="fig">7</xref></xref> and <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acsomega.8b03237/suppl_file/ao8b03237_si_001.pdf">S4&#x02013;S6</ext-link>). The excited electrons in <bold>1F</bold>&#x02013;<bold>4F</bold> and <bold>1CN</bold>&#x02013;<bold>4CN</bold> descend step by step from S<sub>2</sub>, S<sub>3</sub>, S<sub>4</sub>, S<sub>5</sub> states to S<sub>1</sub> through internal
+conversion (IC), a nonradiative process (which is indicated by the
+de-excitation energies and oscillator strengths of the higher excited-state
+emissions in <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acsomega.8b03237/suppl_file/ao8b03237_si_001.pdf">Table S12</ext-link>). The S<sub>1</sub> &#x02192; S<sub>0</sub> transitions in <bold>1F</bold>&#x02013;<bold>4F</bold> and <bold>1CN</bold>&#x02013;<bold>4CN</bold>, which involve
+the charge transfer between fragments A and B (see <xref rid="fig7" ref-type="fig">Figures <xref rid="fig7" ref-type="fig">7</xref></xref> and <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acsomega.8b03237/suppl_file/ao8b03237_si_001.pdf">S4&#x02013;S6</ext-link>), are forbidden (as the oscillator strengths are very small, i.e.,
+0.0003, 0.0002, 0.0002, 0.0001, 0.0001, 0.0004, 0.0002, and 0.0006),
+inferring that S<sub>1</sub> states are the dark states. Therefore,
+these S<sub>1</sub> states decay to their corresponding S<sub>0</sub> in a nonradiative manner, indicating the fluorescence quenching.
+This nonradiative decay is appreciated by intramolecular charge transfer
+where the dissipation of energy through charge transfer induces the
+fluorescence quenching.<sup><xref ref-type="bibr" rid="ref36">36</xref>,<xref ref-type="bibr" rid="ref59">59</xref></sup> The lower oscillator
+strengths of the de-excitations and thus fluorescence quenching in <bold>1F</bold>&#x02013;<bold>4F</bold> and <bold>1CN</bold>&#x02013;<bold>4CN</bold> are in good agreement with their less significant absorption
+transitions from S<sub>0</sub> &#x02192; S<sub>2&#x02013;5</sub>.</p></sec></sec><sec id="sec3"><title>Conclusions</title><p>Receptor <bold>1</bold> and three newly designed
+receptors (<bold>2</bold>, <bold>3</bold>, and <bold>4</bold>), constructed
+by systematically
+replacing (CH<sub>3</sub>)<sub>3</sub>N<sup>+</sup> and O of <bold>1</bold> by (CH<sub>3</sub>)<sub>3</sub>P<sup>+</sup> and S, respectively,
+are studied as chemical probes to detect seven anions by DFT and TD-DFT
+methods. Among all of the anions, sensing of CN<sup>&#x02013;</sup> and F<sup>&#x02013;</sup> is found to be thermodynamically feasible
+(&#x00394;<italic>G</italic> = &#x02212;ve) with large values of &#x02212;&#x00394;<italic>E</italic> compared to the rest. Strongest binding is observed for
+the smallest F<sup>&#x02013;</sup> compared to CN<sup>&#x02013;</sup>. In the receptors, the excitation process involves &#x003c0; &#x02192;
+&#x003c0;* transition from S<sub>0</sub> &#x02192; S<sub>1</sub>, and
+the de-excitation from S<sub>1</sub> &#x02192; S<sub>0</sub> results
+in fluorescence, where each electronic de-excitation has a large oscillator
+strength (<italic>f</italic> &#x0223c; 0.16&#x02013;0.18). The fluorescence
+is quenched once the receptors bind the anions CN<sup>&#x02013;</sup> and F<sup>&#x02013;</sup>. The electronic structure properties at
+the ground and excited states reveal that ICT (from fragment A to
+B) occurs during S<sub>0</sub> &#x02192; S<italic><sub>n</sub></italic> (<italic>n</italic> &#x0003e; 1) absorption transitions; emission occurs
+involving IC with a significant geometrical change to the receptor&#x02013;analyte
+complexes unlike the emission of the receptors, which is conceived
+as the reason for the fluorescence quenching (<italic>f</italic> &#x0223c;
+0.0001&#x02013;0.0006) upon anion binding. Natural population analysis,
+hybrids, and MO plots provide a clear picture of receptor&#x02013;analyte
+interactions. The anions bind to the boron centers having partial
+positive charges, leading to change of hybridization from sp<sup>2</sup> to sp<sup>3</sup> in <bold>1</bold>&#x02013;<bold>4</bold>. Such
+interactions involve 2p&#x02013;2p orbital overlap between the boron
+centers of the receptors and the anions accompanied by anion &#x02192;
+receptor charge transfer, quantified in &#x00394;<italic>Q</italic>.
+There is greater degree of charge transfer in the case of CN<sup>&#x02013;</sup> (e.g., in <bold>1CN</bold>, &#x00394;<italic>Q</italic> = &#x02212;0.6829)
+than F<sup>&#x02013;</sup> (e.g., <bold>1F</bold>, &#x00394;<italic>Q</italic> = &#x02212;0.4504), which may be because of the electronegativity
+difference between fluorine and the carbon of the cyanide analyte.
+Among the six different DFT functionals used, CAM-B3LYP gives the
+best accuracy to reproduce experimental data (geometries, absorption
+and emission peaks) for its augmented largest exact exchange component.
+The PES scanning validates the optimized geometries considered in
+the ground and excited states, which are subsequently used for different
+property calculations. Finally, through this work, a successful design
+of molecular probes to detect toxic anions, especially for CN<sup>&#x02013;</sup> and F<sup>&#x02013;</sup>, via fluorescence phenomenon,
+detailed electron structure changes, and sensing mechanism is demonstrated,
+which can be used for efficient designing of new boron-based molecular
+probes in the future. It is emphasized that the novel receptors <bold>2</bold>, <bold>3</bold>, and <bold>4</bold> can be further experimentally
+synthesized and checked for their applications in the real field.</p></sec><sec id="sec4"><title>Theory
+and Computational Details</title><p>In this work, four cationic receptors, <bold>1</bold> and its three
+substituted derivatives, <bold>2</bold>, <bold>3</bold>, and <bold>4</bold>, (<xref rid="sch1" ref-type="scheme">Scheme <xref rid="sch1" ref-type="scheme">1</xref></xref>), were studied for sensing seven different anionic analytes, CN<sup>&#x02013;</sup>, F<sup>&#x02013;</sup>, Cl<sup>&#x02013;</sup>, Br<sup>&#x02013;</sup>, NO<sub>3</sub><sup>&#x02013;</sup>, CH<sub>3</sub>COO<sup>&#x02013;</sup>, and HSO<sub>4</sub><sup>&#x02013;</sup>. The
+resulting cationic&#x02013;anionic complexes of <bold>1</bold>&#x02013;<bold>4</bold> are referred to as <bold>1CN</bold>&#x02013;<bold>4CN</bold>, <bold>1F</bold>&#x02013;<bold>4F</bold>, and so on. All of the theoretical
+computations were performed by utilizing the Gaussian 09 program.<sup><xref ref-type="bibr" rid="ref60">60</xref></sup> The ground-state (S<sub>0</sub>) geometrical
+parameters of all of the receptors and receptor&#x02013;analyte complexes
+were determined by density functional theory (DFT) without using any
+constraints. To check the nature of stationary points (minima), vibrational
+frequency analysis was carried out. The electronic excitation energies
+over the S<sub>0</sub> geometries were computed within the vertical
+approximation by using time-dependent density functional theory (TD-DFT).
+The analytical TD-DFT gradients, as implemented in Gaussian 09, were
+exploited for the determination of the geometrical parameters of the
+first excited states (S<sub>1</sub>) of all of the receptors and receptor&#x02013;analyte
+complexes.<sup><xref ref-type="bibr" rid="ref61">61</xref>,<xref ref-type="bibr" rid="ref62">62</xref></sup> Spectroscopic properties were
+computed by excited-state simulations. The vibrational signatures
+of the excited states were determined to check the absence of imaginary
+frequencies by employing the numerical differentiation of the TD-DFT
+gradients. For all of the ground-state and excited-state DFT and TD-DFT
+studies, CAM-B3LYP, Coulomb-attenuating method based on Becke three-parameter
+Lee&#x02013;Yang&#x02013;Parr functional (65% exchange and 35% correlation
+weighting at long range), was employed. The basis for choosing CAM-B3LYP,
+a range-separated hybrid functional, is its accuracy similar to the
+functionals having 50% exact exchange part or more for charge transfer
+(CT) excited-state studies producing more consistent de-excitation
+energies.<sup><xref ref-type="bibr" rid="ref63">63</xref>&#x02212;<xref ref-type="bibr" rid="ref66">66</xref></sup> The 6-31G(d), a split-valence atomic basis set, was employed for
+all of the DFT/TD-DFT calculations because 6-31G(d) is well constructed
+for the electronic structure calculations in molecules containing
+the first and second row elements with a reasonable accuracy.<sup><xref ref-type="bibr" rid="ref67">67</xref>&#x02212;<xref ref-type="bibr" rid="ref70">70</xref></sup> To further validate the use of CAM-B3LYP for the DFT/TD-DFT calculations,
+a series of functionals [CAM-B3LYP {long-range-corrected functional
+(LC), 65% exchange and 35% correlation}, M06-2X (meta-generalized
+gradient approximation (meta-GGA) functional, with 54% exchange),
+B3PW91 (hybrid functional, with 20% exchange), PBEPBE (a hybrid Perdew,
+Burke, and Ernzerhof functional, 25% exchange and 75% correlation
+weighting), local spin density approximation (LSDA), and HCTH (pure
+GGA functional)] were used to carry out a test as reported earlier.<sup><xref ref-type="bibr" rid="ref45">45</xref>,<xref ref-type="bibr" rid="ref71">71</xref>&#x02212;<xref ref-type="bibr" rid="ref73">73</xref></sup> The test reveals that out of all of the employed
+functionals, CAM-B3LYP having highest exchange part provides excitation
+energies, which show a fine agreement with the experiment (see <xref rid="tbl6" ref-type="other">Table <xref rid="tbl6" ref-type="other">6</xref></xref>).<sup><xref ref-type="bibr" rid="ref40">40</xref></sup> Thus, all of the DFT/TD-DFT studies were performed at the
+CAM-B3LYP/6-31G(d) level, which was considered most appropriate for
+studying triarylboranes and their derivatives. Grimme and Parac noted
+a substantial failure while estimating excitation energies for lowest-lying
+&#x003c0; &#x02192; &#x003c0;* states in oligoacenes by using standard
+hybrid functionals in TD-DFT (error &#x0003e; 0.5 eV).<sup><xref ref-type="bibr" rid="ref74">74</xref></sup> To address this unexpected and surprising failure of TD-DFT
+in these simple valence excitations, Wong and co-workers<sup><xref ref-type="bibr" rid="ref75">75</xref>,<xref ref-type="bibr" rid="ref76">76</xref></sup> and Peng et al.<sup><xref ref-type="bibr" rid="ref77">77</xref></sup> showed that some range-separated
+functionals,<sup><xref ref-type="bibr" rid="ref78">78</xref>,<xref ref-type="bibr" rid="ref79">79</xref></sup> which possess both an asymptotically
+correct contribution of Hartree&#x02013;Fock (HF) exchange and a position-dependent
+admixture, yield significant improvements over the conventional hybrids
+in the excitations of oligoacenes and DNA complexes. They observed
+that all full-HF-exchange LC functionals gave similar results for
+the linear acenes upon employing several range-separated and LC functionals
+like CAM-B3LYP, LC-BOP, LC-PBE, LC-&#x003c9;PBE, and LC-BLYP. The CAM-B3LYP
+functional as defined<sup><xref ref-type="bibr" rid="ref80">80</xref></sup> has a Coulomb-attenuating
+parameter of &#x003b1; + &#x003b2; = 0.65 and &#x02212;0.65/<italic>r</italic> dependence for the exchange potential. Hence, the CAM-B3LYP functional
+is principally different from other LC functionals considered in the
+work of Wong and Hsieh<sup><xref ref-type="bibr" rid="ref75">75</xref></sup> because at large
+interelectronic distances, it does not include a full 100% HF exchange.
+It is also found that the previously obtained systematic errors for
+the acene systems by Grimme and Parac<sup><xref ref-type="bibr" rid="ref74">74</xref></sup> is mainly due to the HF exchange component rather than the specific
+DFT correlation contribution used because similar results were obtained
+from other full-exchange LC functionals as well. As the CAM-B3LYP
+functional cannot capture the correct 100% asymptotic distance, it
+gives inaccurate results. Among all of the functionals employed herein,
+the CAM-B3LYP, however, has the highest exchange part (65% exchange
+and 35% correlation); thus, it gives the better accuracy and is more
+reliable comparatively. In both the ground and excited states, potential
+energy surface (PES) scanning was done along the angles over which
+maximum configurational change occurs in traversing from S<sub>0</sub> to S<sub>1</sub> state. It is worth mentioning that the configurations
+at the local minima of S<sub>0</sub> and S<sub>1</sub> potential energy
+surfaces are same as those of the corresponding optimized geometries
+attained at CAM-B3LYP/6-31G(d), validating the structural choice of
+optimized ions and complexes given by this method. To take into account
+the effect of solvation in tetrahydrofuran (THF, &#x003b5; = 7.58),
+conductor-like polarizable continuum model (CPCM) as implemented in
+Gaussian 09 was used in all of the calculations.<sup><xref ref-type="bibr" rid="ref81">81</xref></sup> Natural bond orbital (NBO) method using the NBO 3.1 version
+as implemented in Gaussian 09 program was exploited for performing
+the natural population analysis at the CAM-B3LYP/6-31G(d) level of
+theory.<sup><xref ref-type="bibr" rid="ref82">82</xref></sup> Binding energies (&#x00394;<italic>E</italic>) and free-energy changes (&#x00394;<italic>G</italic>) were
+calculated for complexes of <bold>1</bold>, <bold>2</bold>, <bold>3</bold>, and <bold>4</bold> with the seven different anionic analytes
+considered herein with the following equations<disp-formula id="eq1"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ao-2018-03237e_m001" position="anchor"/><label>1</label></disp-formula><disp-formula id="eq2"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ao-2018-03237e_m002" position="anchor"/><label>2</label></disp-formula>where <italic>E</italic> and <italic>G</italic> refer to total energy and Gibbs free energy,
+respectively. For reducing
+the basis set superposition error (BSSE) in these energy terms, the
+Boys&#x02013;Bernardi scheme was used to offer the counterpoise corrected
+energies.<sup><xref ref-type="bibr" rid="ref83">83</xref></sup></p></sec></body><back><notes id="notes-1" notes-type="si"><title>Supporting Information Available</title><p>The Supporting Information
+is available free of charge on the <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org">ACS Publications website</ext-link> at DOI: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/abs/10.1021/acsomega.8b03237">10.1021/acsomega.8b03237</ext-link>.<list id="silist" list-type="simple"><list-item><p>Calculated geometrical
+parameters for the fully optimized
+structures of <bold>1</bold>&#x02013;<bold>4</bold>, <bold>1F</bold>&#x02013;<bold>4F</bold>, and <bold>1CN</bold>&#x02013;<bold>4CN</bold> in the ground and excited states and the corresponding X-ray data;
+excitation and de-excitation energies calculated by employing different
+functionals; ground-state optimized structures of <bold>1F</bold>&#x02013;<bold>4F</bold>, <bold>1CN</bold>&#x02013;<bold>4CN</bold>; excited-state
+optimized structures of <bold>1</bold>&#x02013;<bold>4</bold>, <bold>1F</bold>&#x02013;<bold>4F</bold>, and <bold>1CN</bold>&#x02013;<bold>4CN</bold>; potential energy curves of the ground and excited states
+of <bold>1F</bold> and <bold>2CN</bold>; calculated FMOs and their
+corresponding energies involved in excitation and emission of <bold>2</bold>&#x02013;<bold>4</bold>, <bold>2F</bold>&#x02013;<bold>4F</bold>, and <bold>2CN</bold>&#x02013;<bold>4CN</bold>; molecular orbital
+diagrams of (I) <bold>1</bold>, (II) <bold>F</bold><sup>&#x02013;</sup>, and (III) <bold>CN</bold><sup>&#x02013;</sup>; and schemes for the
+different mechanisms of fluorescence emission of <bold>2</bold>&#x02013;<bold>4</bold>, <bold>2F</bold>&#x02013;<bold>4F</bold>, and <bold>2CN</bold>&#x02013;<bold>4CN</bold> (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acsomega.8b03237/suppl_file/ao8b03237_si_001.pdf">PDF</ext-link>)</p></list-item></list></p></notes><sec sec-type="supplementary-material"><title>Supplementary Material</title><supplementary-material content-type="local-data" id="sifile1"><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ao8b03237_si_001.pdf"><caption><p>ao8b03237_si_001.pdf</p></caption></media></supplementary-material></sec><notes notes-type="COI-statement" id="NOTES-d7e4976-autogenerated"><p>The authors declare no
+competing financial interest.</p></notes><ack><title>Acknowledgments</title><p>The authors acknowledge IISER
+Berhampur and IIT Kanpur for
+the computational support. H.R.B. also sincerely acknowledges IISER
+Berhampur for providing him the Institute Postdoc Fellowship to carry
+out this work. H.R.B is also thankful to Dr. Prakash Chandra Jha,
+Central University of Gujarat, Gandhinagar, India for important discussions
+and suggestions.</p></ack><ref-list><title>References</title><ref id="ref1"><mixed-citation publication-type="journal" id="cit1"><name><surname>Koenig</surname><given-names>R.</given-names></name>
+<article-title>Wildlife Deaths
+Are a Grim Wake-Up Call in Eastern Europe</article-title>. <source>Science</source>
+<year>2000</year>, <volume>287</volume>, <fpage>1737</fpage>&#x02013;<lpage>1738</lpage>. <pub-id pub-id-type="doi">10.1126/science.287.5459.1737</pub-id>.<pub-id pub-id-type="pmid">10755922</pub-id></mixed-citation></ref><ref id="ref2"><mixed-citation publication-type="journal" id="cit2"><name><surname>Chen</surname><given-names>Y.</given-names></name>; <name><surname>Deterding</surname><given-names>L. J.</given-names></name>; <name><surname>Tomer</surname><given-names>K. B.</given-names></name>; <name><surname>Mason</surname><given-names>R. P.</given-names></name>
+<article-title>Nature of the Inhibition
+of Horseradish Peroxidase and Mitochondrial Cytochrome c Oxidase by
+Cyanyl Radical</article-title>. <source>Biochemistry</source>
+<year>2000</year>, <volume>39</volume>, <fpage>4415</fpage>&#x02013;<lpage>4422</lpage>. <pub-id pub-id-type="doi">10.1021/bi992652+</pub-id>.<pub-id pub-id-type="pmid">10757991</pub-id></mixed-citation></ref><ref id="ref3"><mixed-citation publication-type="journal" id="cit3"><name><surname>Shiraishi</surname><given-names>Y.</given-names></name>; <name><surname>Nakamura</surname><given-names>M.</given-names></name>; <name><surname>Hayashi</surname><given-names>N.</given-names></name>; <name><surname>Hirai</surname><given-names>T.</given-names></name>
+<article-title>Coumarin-Spiropyran
+Dyad with a Hydrogenated Pyran Moiety for Rapid, Selective, and Sensitive
+Fluorometric Detection of Cyanide Anion</article-title>. <source>Anal.
+Chem.</source>
+<year>2016</year>, <volume>88</volume>, <fpage>6805</fpage>&#x02013;<lpage>6811</lpage>. <pub-id pub-id-type="doi">10.1021/acs.analchem.6b01279</pub-id>.<pub-id pub-id-type="pmid">27268123</pub-id></mixed-citation></ref><ref id="ref4"><mixed-citation publication-type="journal" id="cit4"><name><surname>Yan</surname><given-names>Z.</given-names></name>; <name><surname>Caib</surname><given-names>M.</given-names></name>; <name><surname>Shen</surname><given-names>P. K.</given-names></name>
+<article-title>Low Temperature
+Formation of Porous
+Graphitized Carbon for Electrocatalysis</article-title>. <source>J.
+Mater. Chem.</source>
+<year>2012</year>, <volume>22</volume>, <fpage>2133</fpage>&#x02013;<lpage>2139</lpage>. <pub-id pub-id-type="doi">10.1039/C1JM14765J</pub-id>.</mixed-citation></ref><ref id="ref5"><mixed-citation publication-type="journal" id="cit5"><name><surname>Jiang</surname><given-names>J.</given-names></name>; <name><surname>Wang</surname><given-names>X.</given-names></name>; <name><surname>Zhou</surname><given-names>W.</given-names></name>; <name><surname>Gao</surname><given-names>H.</given-names></name>; <name><surname>Wu</surname><given-names>J.</given-names></name>
+<article-title>Extraction
+of Gold from Alkaline Cyanide Solution by the Tetradecyldimethylbenzylammonium
+Chloride/Tri-n-Butyl Phosphate/n-Heptane System Based on a Microemulsion
+Mechanism</article-title>. <source>Phys. Chem. Chem. Phys.</source>
+<year>2002</year>, <volume>4</volume>, <fpage>4489</fpage>&#x02013;<lpage>4494</lpage>. <pub-id pub-id-type="doi">10.1039/b203467k</pub-id>.</mixed-citation></ref><ref id="ref6"><mixed-citation publication-type="journal" id="cit6"><name><surname>Zheng</surname><given-names>X.</given-names></name>; <name><surname>Zhu</surname><given-names>W.</given-names></name>; <name><surname>Liu</surname><given-names>D.</given-names></name>; <name><surname>Ai</surname><given-names>H.</given-names></name>; <name><surname>Huang</surname><given-names>Y.</given-names></name>; <name><surname>Lu</surname><given-names>Z.</given-names></name>
+<article-title>Highly Selective
+Colorimetric/Fluorometric Dual-Channel Fluoride Ion Probe, and Its
+Capability of Di Ff Erentiating Cancer Cells</article-title>. <source>ACS Appl. Mater. Interfaces</source>
+<year>2014</year>, <volume>6</volume>, <fpage>7996</fpage>&#x02013;<lpage>8000</lpage>. <pub-id pub-id-type="doi">10.1021/am501546h</pub-id>.<pub-id pub-id-type="pmid">24832790</pub-id></mixed-citation></ref><ref id="ref7"><mixed-citation publication-type="journal" id="cit7"><name><surname>Kleerekoper</surname><given-names>M.</given-names></name>
+<article-title>The Role of
+Fluoride in the Prevention of Osteoporosis</article-title>. <source>Endocrinol. Metab. Clin. North Am.</source>
+<year>1998</year>, <volume>27</volume>, <fpage>441</fpage>&#x02013;<lpage>452</lpage>. <pub-id pub-id-type="doi">10.1016/S0889-8529(05)70015-3</pub-id>.<pub-id pub-id-type="pmid">9669148</pub-id></mixed-citation></ref><ref id="ref8"><mixed-citation publication-type="journal" id="cit8"><name><surname>Ayoob</surname><given-names>S.</given-names></name>; <name><surname>Gupta</surname><given-names>A. K.</given-names></name>
+<article-title>Fluoride in Drinking Water: A Review
+on the Status
+and Stress Effects</article-title>. <source>Crit. Rev. Environ. Sci.
+Technol.</source>
+<year>2006</year>, <volume>36</volume>, <fpage>433</fpage>&#x02013;<lpage>487</lpage>. <pub-id pub-id-type="doi">10.1080/10643380600678112</pub-id>.</mixed-citation></ref><ref id="ref9"><mixed-citation publication-type="journal" id="cit9"><name><surname>Singh</surname><given-names>P. P.</given-names></name>; <name><surname>Barjatiya</surname><given-names>M. K.</given-names></name>; <name><surname>Dhing</surname><given-names>S.</given-names></name>; <name><surname>Bhatnagar</surname><given-names>R.</given-names></name>; <name><surname>Kothari</surname><given-names>S.</given-names></name>; <name><surname>Dhar</surname><given-names>V.</given-names></name>
+<article-title>Evidence Suggesting
+That High Intake
+of Fluoride Provokes Nephrolithiasis in Tribal Populations</article-title>. <source>Urol. Res.</source>
+<year>2001</year>, <volume>29</volume>, <fpage>238</fpage>&#x02013;<lpage>244</lpage>. <pub-id pub-id-type="doi">10.1007/s002400100192</pub-id>.<pub-id pub-id-type="pmid">11585278</pub-id></mixed-citation></ref><ref id="ref10"><mixed-citation publication-type="journal" id="cit10"><name><surname>Gessner</surname><given-names>B. D.</given-names></name>; <name><surname>Beller</surname><given-names>M.</given-names></name>; <name><surname>Middaugh</surname><given-names>J. P.</given-names></name>; <name><surname>Whitford</surname><given-names>G. M.</given-names></name>
+<article-title>Acute Fluoride Poisoning
+from a Public Water System</article-title>. <source>N. Engl. J. Med.</source>
+<year>1994</year>, <volume>330</volume>, <fpage>95</fpage>&#x02013;<lpage>99</lpage>. <pub-id pub-id-type="doi">10.1056/NEJM199401133300203</pub-id>.<pub-id pub-id-type="pmid">8259189</pub-id></mixed-citation></ref><ref id="ref11"><mixed-citation publication-type="book" id="cit11"><person-group person-group-type="allauthors"><collab>WHO</collab></person-group>. <source>Guidelines for Drinking-Water Quality</source>; <publisher-name>World Health Organization</publisher-name>: <publisher-loc>Geneva
+Switzerland</publisher-loc>, <year>2011</year>; p <fpage>342</fpage>.</mixed-citation></ref><ref id="ref12"><mixed-citation publication-type="journal" id="cit12"><name><surname>Yiping</surname><given-names>H.</given-names></name>; <name><surname>Caiyun</surname><given-names>W.</given-names></name>
+<article-title>Ion Chromatography
+for Rapid and Sensitive Determination
+of Fluoride in Milk after Headspace Single-Drop Microextraction with
+in Situ Generation of Volatile Hydrogen Fluoride</article-title>. <source>Anal. Chim. Acta</source>
+<year>2010</year>, <volume>661</volume>, <fpage>161</fpage>&#x02013;<lpage>166</lpage>. <pub-id pub-id-type="doi">10.1016/j.aca.2009.12.018</pub-id>.<pub-id pub-id-type="pmid">20113730</pub-id></mixed-citation></ref><ref id="ref13"><mixed-citation publication-type="journal" id="cit13"><name><surname>McCabe</surname><given-names>J. F.</given-names></name>; <name><surname>Carrick</surname><given-names>T. E.</given-names></name>; <name><surname>Sidhu</surname><given-names>S. K.</given-names></name>
+<article-title>Determining
+Low Levels of Fluoride
+Released from Resin Based Dental Materials</article-title>. <source>Eur. J. Oral Sci.</source>
+<year>2002</year>, <volume>110</volume>, <fpage>380</fpage>&#x02013;<lpage>384</lpage>. <pub-id pub-id-type="doi">10.1034/j.1600-0722.2002.21275.x</pub-id>.<pub-id pub-id-type="pmid">12664469</pub-id></mixed-citation></ref><ref id="ref14"><mixed-citation publication-type="journal" id="cit14"><name><surname>Jackson</surname><given-names>P. E.</given-names></name>
+<article-title>Determination
+of Inorganic Ions in Drinking Water by Ion Chromatography</article-title>. <source>TrAC, Trends Anal. Chem.</source>
+<year>2001</year>, <volume>20</volume>, <fpage>320</fpage>&#x02013;<lpage>329</lpage>. <pub-id pub-id-type="doi">10.1016/S0165-9936(01)00070-X</pub-id>.</mixed-citation></ref><ref id="ref15"><mixed-citation publication-type="journal" id="cit15"><name><surname>Kov&#x000e1;cs</surname><given-names>M.</given-names></name>; <name><surname>Nagy</surname><given-names>M. H.</given-names></name>; <name><surname>Borsz&#x000e9;ki</surname><given-names>J.</given-names></name>; <name><surname>Halmos</surname><given-names>P.</given-names></name>
+<article-title>Indirect Determination
+of Fluoride in Aqueous Samples by Inductively Coupled Plasma Atomic
+Emission Spectrometry Following Precipitation of CeF 3</article-title>. <source>J. Fluorine Chem.</source>
+<year>2009</year>, <volume>130</volume>, <fpage>562</fpage>&#x02013;<lpage>566</lpage>. <pub-id pub-id-type="doi">10.1016/j.jfluchem.2009.03.010</pub-id>.</mixed-citation></ref><ref id="ref16"><mixed-citation publication-type="journal" id="cit16"><name><surname>Matsunaga</surname><given-names>H.</given-names></name>; <name><surname>Kanno</surname><given-names>C.</given-names></name>; <name><surname>Yamada</surname><given-names>H.</given-names></name>; <name><surname>Takahashi</surname><given-names>Y.</given-names></name>; <name><surname>Suzuki</surname><given-names>T. M.</given-names></name>
+<article-title>Fluorometric Determination of Fluoride
+Ion by Reagent
+Tablets Containing 3-Hydroxy-2 -Sulfoflavone and Zirconium ( IV )
+Ethylenediamine Tetraacetate</article-title>. <source>Talanta</source>
+<year>2006</year>, <volume>68</volume>, <fpage>1000</fpage>&#x02013;<lpage>1004</lpage>. <pub-id pub-id-type="doi">10.1016/j.talanta.2005.06.068</pub-id>.<pub-id pub-id-type="pmid">18970423</pub-id></mixed-citation></ref><ref id="ref17"><mixed-citation publication-type="journal" id="cit17"><name><surname>Lou</surname><given-names>Z.</given-names></name>; <name><surname>Li</surname><given-names>P.</given-names></name>; <name><surname>Han</surname><given-names>K.</given-names></name>
+<article-title>Redox-Responsive
+Fluorescent Probes with Different
+Design Strategies</article-title>. <source>Acc. Chem. Res.</source>
+<year>2015</year>, <volume>48</volume>, <fpage>1358</fpage>&#x02013;<lpage>1368</lpage>. <pub-id pub-id-type="doi">10.1021/acs.accounts.5b00009</pub-id>.<pub-id pub-id-type="pmid">25901910</pub-id></mixed-citation></ref><ref id="ref18"><mixed-citation publication-type="journal" id="cit18"><name><surname>Yu</surname><given-names>F.</given-names></name>; <name><surname>Li</surname><given-names>P.</given-names></name>; <name><surname>Wang</surname><given-names>B.</given-names></name>; <name><surname>Han</surname><given-names>K.</given-names></name>
+<article-title>Reversible Near-Infrared Fluorescent
+Probe Introducing Tellurium to Mimetic Glutathione Peroxidase for
+Monitoring the Redox Cycles between Peroxynitrite and Glutathione
+in Vivo</article-title>. <source>J. Am. Chem. Soc.</source>
+<year>2013</year>, <volume>135</volume>, <fpage>7674</fpage>&#x02013;<lpage>7680</lpage>. <pub-id pub-id-type="doi">10.1021/ja401360a</pub-id>.<pub-id pub-id-type="pmid">23621710</pub-id></mixed-citation></ref><ref id="ref19"><mixed-citation publication-type="journal" id="cit19"><name><surname>Yu</surname><given-names>F.</given-names></name>; <name><surname>Li</surname><given-names>P.</given-names></name>; <name><surname>Li</surname><given-names>G.</given-names></name>; <name><surname>Zhao</surname><given-names>G.</given-names></name>; <name><surname>Chu</surname><given-names>T.</given-names></name>; <name><surname>Han</surname><given-names>K.</given-names></name>
+<article-title>A Near-IR
+Reversible Fluorescent Probe Modulated by Selenium for Monitoring
+Peroxynitrite and Imaging in Living Cells</article-title>. <source>J.
+Am. Chem. Soc.</source>
+<year>2011</year>, <volume>133</volume>, <fpage>11030</fpage>&#x02013;<lpage>11033</lpage>. <pub-id pub-id-type="doi">10.1021/ja202582x</pub-id>.<pub-id pub-id-type="pmid">21702509</pub-id></mixed-citation></ref><ref id="ref20"><mixed-citation publication-type="journal" id="cit20"><name><surname>Hu</surname><given-names>R.</given-names></name>; <name><surname>Feng</surname><given-names>J.</given-names></name>; <name><surname>Hu</surname><given-names>D.</given-names></name>; <name><surname>Wang</surname><given-names>S.</given-names></name>; <name><surname>Li</surname><given-names>S.</given-names></name>; <name><surname>Li</surname><given-names>Y.</given-names></name>; <name><surname>Yang</surname><given-names>G.</given-names></name>
+<article-title>A Rapid Aqueous
+Fluoride Ion Sensor with Dual Output
+Modes</article-title>. <source>Angew. Chem.</source>
+<year>2010</year>, <volume>122</volume>, <fpage>5035</fpage>&#x02013;<lpage>5038</lpage>. <pub-id pub-id-type="doi">10.1002/ange.201000790</pub-id>.</mixed-citation></ref><ref id="ref21"><mixed-citation publication-type="journal" id="cit21"><name><surname>Zhu</surname><given-names>B.</given-names></name>; <name><surname>Yuan</surname><given-names>F.</given-names></name>; <name><surname>Li</surname><given-names>R.</given-names></name>; <name><surname>Li</surname><given-names>Y.</given-names></name>; <name><surname>Wei</surname><given-names>Q.</given-names></name>; <name><surname>Ma</surname><given-names>Z.</given-names></name>; <name><surname>Du</surname><given-names>B.</given-names></name>; <name><surname>Zhang</surname><given-names>X.</given-names></name>
+<article-title>A Highly Selective Colorimetric and
+Ratiometric Fluorescent Chemodosimeter for Imaging Fluoride Ions in
+Living Cells</article-title>. <source>Chem. Commun.</source>
+<year>2011</year>, <volume>47</volume>, <fpage>7098</fpage>&#x02013;<lpage>7100</lpage>. <pub-id pub-id-type="doi">10.1039/c1cc11308a</pub-id>.</mixed-citation></ref><ref id="ref22"><mixed-citation publication-type="journal" id="cit22"><name><surname>Kubo</surname><given-names>Y.</given-names></name>; <name><surname>Yamamoto</surname><given-names>M.</given-names></name>; <name><surname>Ikeda</surname><given-names>M.</given-names></name>; <name><surname>Takeuchi</surname><given-names>M.</given-names></name>; <name><surname>Shinkai</surname><given-names>S.</given-names></name>; <name><surname>Yamaguchi</surname><given-names>S.</given-names></name>; <name><surname>Tamao</surname><given-names>K.</given-names></name>
+<article-title>A Colorimetric and Ratiometric Fluorescent
+Chemosensor with Three Emission Changes: Fluoride Ion Sensing by a
+Triarylborane&#x02013; Porphyrin Conjugate</article-title>. <source>Angew.
+Chem., Int. Ed.</source>
+<year>2003</year>, <volume>42</volume>, <fpage>2036</fpage>&#x02013;<lpage>2040</lpage>. <pub-id pub-id-type="doi">10.1002/anie.200250788</pub-id>.</mixed-citation></ref><ref id="ref23"><mixed-citation publication-type="journal" id="cit23"><name><surname>El-Ballouli</surname><given-names>A. O.</given-names></name>; <name><surname>Zhang</surname><given-names>Y.</given-names></name>; <name><surname>Barlow</surname><given-names>S.</given-names></name>; <name><surname>Marder</surname><given-names>S. R.</given-names></name>; <name><surname>Al-Sayah</surname><given-names>M. H.</given-names></name>; <name><surname>Kaafarani</surname><given-names>B. R.</given-names></name>
+<article-title>Fluorescent
+Detection of Anions by Dibenzophenazine-Based
+Sensors</article-title>. <source>Tetrahedron Lett.</source>
+<year>2012</year>, <volume>53</volume>, <fpage>661</fpage>&#x02013;<lpage>665</lpage>. <pub-id pub-id-type="doi">10.1016/j.tetlet.2011.11.121</pub-id>.</mixed-citation></ref><ref id="ref24"><mixed-citation publication-type="journal" id="cit24"><name><surname>Lee</surname><given-names>D. Y.</given-names></name>; <name><surname>Singh</surname><given-names>N.</given-names></name>; <name><surname>Satyender</surname><given-names>A.</given-names></name>; <name><surname>Jang</surname><given-names>D. O.</given-names></name>
+<article-title>An Azo Dye-Coupled
+Tripodal Chromogenic Sensor for Cyanide</article-title>. <source>Tetrahedron
+Lett.</source>
+<year>2011</year>, <volume>52</volume>, <fpage>6919</fpage>&#x02013;<lpage>6922</lpage>. <pub-id pub-id-type="doi">10.1016/j.tetlet.2011.10.061</pub-id>.</mixed-citation></ref><ref id="ref25"><mixed-citation publication-type="journal" id="cit25"><name><surname>Li</surname><given-names>G.-Y.</given-names></name>; <name><surname>Zhao</surname><given-names>G.</given-names></name>; <name><surname>Liu</surname><given-names>Y.</given-names></name>; <name><surname>Han</surname><given-names>K.</given-names></name>; <name><surname>He</surname><given-names>G.</given-names></name>
+<article-title>TD-DFT Study
+on the Sensing Mechanism of a Fluorescent Chemosensor for Fluoride:
+Excited-State Proton Transfer</article-title>. <source>J. Comput. Chem.</source>
+<year>2010</year>, <volume>31</volume>, <fpage>1759</fpage>&#x02013;<lpage>1765</lpage>. <pub-id pub-id-type="doi">10.1002/jcc.21466</pub-id>.<pub-id pub-id-type="pmid">20082387</pub-id></mixed-citation></ref><ref id="ref26"><mixed-citation publication-type="journal" id="cit26"><name><surname>Li</surname><given-names>G.-Y.</given-names></name>; <name><surname>Zhao</surname><given-names>G.</given-names></name>; <name><surname>Han</surname><given-names>K.-L.</given-names></name>; <name><surname>He</surname><given-names>G.-Z.</given-names></name>
+<article-title>A TD-DFT Study on
+the Cyanide-Chemosensing Mechanism of 8-Formyl-7-Hydroxycoumarin</article-title>. <source>J. Comput. Chem.</source>
+<year>2011</year>, <volume>32</volume>, <fpage>668</fpage>&#x02013;<lpage>674</lpage>. <pub-id pub-id-type="doi">10.1002/jcc.21651</pub-id>.<pub-id pub-id-type="pmid">20845422</pub-id></mixed-citation></ref><ref id="ref27"><mixed-citation publication-type="journal" id="cit27"><name><surname>Lee</surname><given-names>J. H.</given-names></name>; <name><surname>Reum Jeong</surname><given-names>A.</given-names></name>; <name><surname>Shin</surname><given-names>I. S.</given-names></name>; <name><surname>Kim</surname><given-names>H. J.</given-names></name>; <name><surname>Hong</surname><given-names>J. I.</given-names></name>
+<article-title>Fluorescence
+Turn-on Sensor for Cyanide Based on a Cobalt(II)- Coumarinylsalen
+Complex</article-title>. <source>Org. Lett.</source>
+<year>2010</year>, <volume>12</volume>, <fpage>764</fpage>&#x02013;<lpage>767</lpage>. <pub-id pub-id-type="doi">10.1021/ol902852g</pub-id>.<pub-id pub-id-type="pmid">20092265</pub-id></mixed-citation></ref><ref id="ref28"><mixed-citation publication-type="journal" id="cit28"><name><surname>Zou</surname><given-names>Q.</given-names></name>; <name><surname>Li</surname><given-names>X.</given-names></name>; <name><surname>Zhang</surname><given-names>J.</given-names></name>; <name><surname>Zhou</surname><given-names>J.</given-names></name>; <name><surname>Sun</surname><given-names>B.</given-names></name>; <name><surname>Tian</surname><given-names>H.</given-names></name>
+<article-title>Unsymmetrical
+Diarylethenes as Molecular Keypad Locks with Tunable Photochromism
+and Fluorescence via Cu 2 + and CN &#x000c0; Coordinations W</article-title>. <source>Chem. Commun.</source>
+<year>2012</year>, <volume>48</volume>, <fpage>2095</fpage>&#x02013;<lpage>2097</lpage>. <pub-id pub-id-type="doi">10.1039/c2cc16942h</pub-id>.</mixed-citation></ref><ref id="ref29"><mixed-citation publication-type="journal" id="cit29"><name><surname>Jo</surname><given-names>J.</given-names></name>; <name><surname>Olasz</surname><given-names>A.</given-names></name>; <name><surname>Chen</surname><given-names>C.</given-names></name>; <name><surname>Lee</surname><given-names>D.</given-names></name>
+<article-title>Interdigitated Hydrogen
+Bonds: Electrophile Activation for Covalent Capture and Fluorescence
+Turn-On Detection of Cyanide</article-title>. <source>J. Am. Chem. Soc.</source>
+<year>2013</year>, <volume>135</volume>, <fpage>3620</fpage>&#x02013;<lpage>3632</lpage>. <pub-id pub-id-type="doi">10.1021/ja312313f</pub-id>.<pub-id pub-id-type="pmid">23387303</pub-id></mixed-citation></ref><ref id="ref30"><mixed-citation publication-type="journal" id="cit30"><name><surname>Goswami</surname><given-names>S.</given-names></name>; <name><surname>Manna</surname><given-names>A.</given-names></name>; <name><surname>Paul</surname><given-names>S.</given-names></name>; <name><surname>Das</surname><given-names>A. K.</given-names></name>; <name><surname>Aich</surname><given-names>K.</given-names></name>; <name><surname>Nandi</surname><given-names>P. K.</given-names></name>
+<article-title>Resonance-Assisted Hydrogen Bonding Induced Nucleophilic
+Addition to Hamper ESIPT: Ratiometric Detection of Cyanide in Aqueous
+Media</article-title>. <source>Chem. Commun.</source>
+<year>2013</year>, <volume>49</volume>, <fpage>2912</fpage>&#x02013;<lpage>2914</lpage>. <pub-id pub-id-type="doi">10.1039/c3cc39256b</pub-id>.</mixed-citation></ref><ref id="ref31"><mixed-citation publication-type="journal" id="cit31"><name><surname>Cheng</surname><given-names>X.</given-names></name>; <name><surname>Zhou</surname><given-names>Y.</given-names></name>; <name><surname>Qin</surname><given-names>J.</given-names></name>; <name><surname>Li</surname><given-names>Z.</given-names></name>
+<article-title>Reaction-Based Colorimetric
+Cyanide Chemosensors: Rapid Naked- Eye Detection and High Selectivity</article-title>. <source>ACS Appl. Mater. Interfaces</source>
+<year>2012</year>, <volume>4</volume>, <fpage>2133</fpage>&#x02013;<lpage>2138</lpage>. <pub-id pub-id-type="doi">10.1021/am3001083</pub-id>.<pub-id pub-id-type="pmid">22387560</pub-id></mixed-citation></ref><ref id="ref32"><mixed-citation publication-type="journal" id="cit32"><name><surname>Pramanik</surname><given-names>S.</given-names></name>; <name><surname>Bhalla</surname><given-names>V.</given-names></name>; <name><surname>Kumar</surname><given-names>M.</given-names></name>
+<article-title>Hexaphenylbenzene-Based Fluorescent
+Aggregates for Ratiometric Detection of Cyanide Ions at Nanomolar
+Level: Set&#x02013;Reset Memorized Sequential Logic Device</article-title>. <source>ACS Appl. Mater. Interfaces</source>
+<year>2014</year>, <volume>6</volume>, <fpage>5930</fpage>&#x02013;<lpage>5939</lpage>. <pub-id pub-id-type="doi">10.1021/am500903d</pub-id>.<pub-id pub-id-type="pmid">24684247</pub-id></mixed-citation></ref><ref id="ref33"><mixed-citation publication-type="journal" id="cit33"><name><surname>Lim</surname><given-names>B.</given-names></name>; <name><surname>Lee</surname><given-names>J.</given-names></name>
+<article-title>A Peptoid-Based Fluorescent Sensor for Cyanide Detection</article-title>. <source>Molecules</source>
+<year>2016</year>, <volume>21</volume>, <fpage>339</fpage>&#x02013;<lpage>351</lpage>. <pub-id pub-id-type="doi">10.3390/molecules21030339</pub-id>.<pub-id pub-id-type="pmid">26978334</pub-id></mixed-citation></ref><ref id="ref34"><mixed-citation publication-type="journal" id="cit34"><name><surname>Sukato</surname><given-names>R.</given-names></name>; <name><surname>Sangpetch</surname><given-names>N.</given-names></name>; <name><surname>Palaga</surname><given-names>T.</given-names></name>; <name><surname>Jantra</surname><given-names>S.</given-names></name>; <name><surname>Vchirawongkwin</surname><given-names>V.</given-names></name>; <name><surname>Jongwohan</surname><given-names>C.</given-names></name>; <name><surname>Sukwattanasinitt</surname><given-names>M.</given-names></name>; <name><surname>Wacharasindhu</surname><given-names>S.</given-names></name>
+<article-title>New Turn-on
+Fluorescent and Colorimetric Probe for Cyanide Detection Based on
+BODIPY-Salicylaldehyde and Its Application in Cell Imaging</article-title>. <source>J. Hazard. Mater.</source>
+<year>2016</year>, <volume>314</volume>, <fpage>277</fpage>&#x02013;<lpage>285</lpage>. <pub-id pub-id-type="doi">10.1016/j.jhazmat.2016.04.001</pub-id>.<pub-id pub-id-type="pmid">27136733</pub-id></mixed-citation></ref><ref id="ref35"><mixed-citation publication-type="journal" id="cit35"><name><surname>Badugu</surname><given-names>R.</given-names></name>; <name><surname>Lakowicz</surname><given-names>J. R.</given-names></name>; <name><surname>Geddes</surname><given-names>C. D.</given-names></name>
+<article-title>Fluorescence
+Intensity and Lifetime-Based
+Cyanide Sensitive Probes for Physiological Safeguard</article-title>. <source>Anal. Chim. Acta</source>
+<year>2004</year>, <volume>522</volume>, <fpage>9</fpage>&#x02013;<lpage>17</lpage>. <pub-id pub-id-type="doi">10.1016/j.aca.2004.06.040</pub-id>.</mixed-citation></ref><ref id="ref36"><mixed-citation publication-type="journal" id="cit36"><name><surname>Kumari</surname><given-names>N.</given-names></name>; <name><surname>Jha</surname><given-names>S.</given-names></name>; <name><surname>Bhattacharya</surname><given-names>S.</given-names></name>
+<article-title>Colorimetric
+Probes Based on Anthraimidazolediones
+for Selective Sensing of Fluoride and Cyanide Ion via Intramolecular
+Charge Transfer</article-title>. <source>J. Org. Chem.</source>
+<year>2011</year>, <volume>76</volume>, <fpage>8215</fpage>&#x02013;<lpage>8222</lpage>. <pub-id pub-id-type="doi">10.1021/jo201290a</pub-id>.<pub-id pub-id-type="pmid">21892827</pub-id></mixed-citation></ref><ref id="ref37"><mixed-citation publication-type="journal" id="cit37"><name><surname>Li</surname><given-names>Q.</given-names></name>; <name><surname>Cai</surname><given-names>Y.</given-names></name>; <name><surname>Yao</surname><given-names>H.</given-names></name>; <name><surname>Lin</surname><given-names>Q.</given-names></name>; <name><surname>Zhu</surname><given-names>Y. R.</given-names></name>; <name><surname>Li</surname><given-names>H.</given-names></name>; <name><surname>Zhang</surname><given-names>Y. M.</given-names></name>; <name><surname>Wei</surname><given-names>T. B.</given-names></name>
+<article-title>A Colorimetric and Fluorescent Cyanide
+Chemosensor Based on Dicyanovinyl Derivatives: Utilization of the
+Mechanism of Intramolecular Charge Transfer Blocking</article-title>. <source>Spectrochim. Acta, Part A</source>
+<year>2015</year>, <volume>136</volume>, <fpage>1047</fpage>&#x02013;<lpage>1051</lpage>. <pub-id pub-id-type="doi">10.1016/j.saa.2014.09.128</pub-id>.</mixed-citation></ref><ref id="ref38"><mixed-citation publication-type="journal" id="cit38"><name><surname>Bauman</surname><given-names>A.</given-names></name>
+<article-title>Natriumtriphenylcyanoborat--
+Caisignost-- Ein Selektives Reagens Zur 137Cs-Trennung in Umweltproben</article-title>. <source>Mikrochim. Acta</source>
+<year>1977</year>, <fpage>69</fpage>&#x02013;<lpage>72</lpage>. <pub-id pub-id-type="doi">10.1007/BF01196531</pub-id>.</mixed-citation></ref><ref id="ref39"><mixed-citation publication-type="journal" id="cit39"><name><surname>Parab</surname><given-names>K.</given-names></name>; <name><surname>Venkatasubbaiah</surname><given-names>K.</given-names></name>; <name><surname>Jackle</surname><given-names>F.</given-names></name>
+<article-title>Luminescent Triarylborane-Functionalized
+Polystyrene: Synthesis, Photophysical Characterization, and Anion-Binding
+Studies</article-title>. <source>J. Am. Chem. Soc.</source>
+<year>2006</year>, <volume>128</volume>, <fpage>12879</fpage>&#x02013;<lpage>12885</lpage>. <pub-id pub-id-type="doi">10.1021/ja063302v</pub-id>.<pub-id pub-id-type="pmid">17002382</pub-id></mixed-citation></ref><ref id="ref40"><mixed-citation publication-type="journal" id="cit40"><name><surname>Matsumoto</surname><given-names>T.</given-names></name>; <name><surname>Wade</surname><given-names>C. R.</given-names></name>; <name><surname>Gabba&#x000ef;</surname><given-names>F. P.</given-names></name>
+<article-title>Synthesis and Lewis Acidic Behavior
+of a Cationic 9-Thia-10-Boraanthracene</article-title>. <source>Organometallics</source>
+<year>2010</year>, <volume>29</volume>, <fpage>5490</fpage>&#x02013;<lpage>5495</lpage>. <pub-id pub-id-type="doi">10.1021/om100415z</pub-id>.</mixed-citation></ref><ref id="ref41"><mixed-citation publication-type="journal" id="cit41"><name><surname>Yang</surname><given-names>Z.</given-names></name>; <name><surname>Liu</surname><given-names>Z.</given-names></name>; <name><surname>Chen</surname><given-names>Y.</given-names></name>; <name><surname>Wang</surname><given-names>X.</given-names></name>; <name><surname>He</surname><given-names>W.</given-names></name>; <name><surname>Lud</surname><given-names>Y.</given-names></name>
+<article-title>A New Ratiometric
+and Colorimetric Chemosensor for Cyanide Anion Based on Coumarin&#x02013;hemicyanine
+Hybrid</article-title>. <source>Org. Biomol. Chem.</source>
+<year>2012</year>, <volume>10</volume>, <fpage>5073</fpage>&#x02013;<lpage>5076</lpage>. <pub-id pub-id-type="doi">10.1039/c2ob25516b</pub-id>.<pub-id pub-id-type="pmid">22627395</pub-id></mixed-citation></ref><ref id="ref42"><mixed-citation publication-type="journal" id="cit42"><name><surname>Li</surname><given-names>G.</given-names></name>; <name><surname>Song</surname><given-names>P.</given-names></name>; <name><surname>He</surname><given-names>G.</given-names></name>
+<article-title>TDDFT Study on Different Sensing
+Mechanisms of Similar Cyanide Sensors Based on Michael Addition Reaction</article-title>. <source>Chin. J. Chem. Phys.</source>
+<year>2011</year>, <volume>24</volume>, <fpage>305</fpage>&#x02013;<lpage>310</lpage>. <pub-id pub-id-type="doi">10.1088/1674-0068/24/03/305-310</pub-id>.</mixed-citation></ref><ref id="ref43"><mixed-citation publication-type="journal" id="cit43"><name><surname>Mahapatra</surname><given-names>A. K.</given-names></name>; <name><surname>Maiti</surname><given-names>K.</given-names></name>; <name><surname>Maji</surname><given-names>R.</given-names></name>; <name><surname>Manna</surname><given-names>S. K.</given-names></name>; <name><surname>Mondal</surname><given-names>S.</given-names></name>; <name><surname>Ali</surname><given-names>S. S.</given-names></name>; <name><surname>Manna</surname><given-names>S.</given-names></name>
+<article-title>Ratiometric
+Fluorescent and Chromogenic
+Chemodosimeter for Cyanide Detection in Water and Its Application
+in Bioimaging&#x02020;</article-title>. <source>RSC Adv.</source>
+<year>2015</year>, <volume>5</volume>, <fpage>24274</fpage>&#x02013;<lpage>24280</lpage>. <pub-id pub-id-type="doi">10.1039/C4RA17199C</pub-id>.</mixed-citation></ref><ref id="ref44"><mixed-citation publication-type="journal" id="cit44"><name><surname>Konidena</surname><given-names>R. K.</given-names></name>; <name><surname>Thomas</surname><given-names>K. R. J.</given-names></name>
+<article-title>Selective Naked-Eye Cyanide Detection in Aqueous Media
+Using a Carbazole-Derived Fluorescent Dye</article-title>. <source>RSC
+Adv.</source>
+<year>2014</year>, <volume>4</volume>, <fpage>22902</fpage>&#x02013;<lpage>22910</lpage>. <pub-id pub-id-type="doi">10.1039/c4ra02636e</pub-id>.</mixed-citation></ref><ref id="ref45"><mixed-citation publication-type="journal" id="cit45"><name><surname>Bhat</surname><given-names>H. R.</given-names></name>; <name><surname>Jha</surname><given-names>P. C.</given-names></name>
+<article-title>Cyanide Anion Sensing
+Mechanism of 1,3,5,7-Tetratolyl
+Aza-BODIPY: Intramolecular Charge Transfer and Partial Configuration
+Change</article-title>. <source>Chem. Phys. Lett.</source>
+<year>2017</year>, <volume>669</volume>, <fpage>9</fpage>&#x02013;<lpage>16</lpage>. <pub-id pub-id-type="doi">10.1016/j.cplett.2016.12.025</pub-id>.</mixed-citation></ref><ref id="ref46"><mixed-citation publication-type="journal" id="cit46"><name><surname>Bhat</surname><given-names>H. R.</given-names></name>; <name><surname>Jha</surname><given-names>P. C.</given-names></name>
+<article-title>Intramolecular Charge Transfer: Mechanism
+Behind Cyanide
+Anion Sensing of 3,5-Diformyl-Borondipyrromethene</article-title>. <source>ChemistrySelect</source>
+<year>2017</year>, <volume>2</volume>, <fpage>2732</fpage>&#x02013;<lpage>2739</lpage>. <pub-id pub-id-type="doi">10.1002/slct.201601998</pub-id>.</mixed-citation></ref><ref id="ref47"><mixed-citation publication-type="journal" id="cit47"><name><surname>Gutberlet</surname><given-names>A.</given-names></name>; <name><surname>Schwaab</surname><given-names>G.</given-names></name>; <name><surname>Birer</surname><given-names>&#x000d6;.</given-names></name>; <name><surname>Masia</surname><given-names>M.</given-names></name>; <name><surname>Kaczmarek</surname><given-names>A.</given-names></name>; <name><surname>Forbert</surname><given-names>H.</given-names></name>; <name><surname>Havenith</surname><given-names>M.</given-names></name>; <name><surname>Marx</surname><given-names>D.</given-names></name>
+<article-title>Aggregation-Induced
+Dissociation of HCl(H2O)4 Below 1K: The Smallest Droplet of Acid</article-title>. <source>Science</source>
+<year>2009</year>, <fpage>1545</fpage>&#x02013;<lpage>1548</lpage>. <pub-id pub-id-type="doi">10.1126/science.1171753</pub-id>.<pub-id pub-id-type="pmid">19541993</pub-id></mixed-citation></ref><ref id="ref48"><mixed-citation publication-type="journal" id="cit48"><name><surname>Kiyabu</surname><given-names>S.</given-names></name>; <name><surname>Lowe</surname><given-names>J. S.</given-names></name>; <name><surname>Ahmed</surname><given-names>A.</given-names></name>; <name><surname>Siegel</surname><given-names>D. J.</given-names></name>
+<article-title>Computational Screening
+of Hydration Reactions for Thermal Energy Storage: New Materials and
+Design Rules</article-title>. <source>Chem. Mater.</source>
+<year>2018</year>, <fpage>2006</fpage>&#x02013;<lpage>2017</lpage>. <pub-id pub-id-type="doi">10.1021/acs.chemmater.7b05230</pub-id>.</mixed-citation></ref><ref id="ref49"><mixed-citation publication-type="journal" id="cit49"><name><surname>Plasser</surname><given-names>F.</given-names></name>; <name><surname>Dreuw</surname><given-names>A.</given-names></name>
+<article-title>High-Level Ab Initio Computations of the Absorption Spectra of Organic
+Iridium Complexes</article-title>. <source>J. Phys. Chem. A</source>
+<year>2015</year>, <volume>119</volume>, <fpage>1023</fpage>&#x02013;<lpage>1036</lpage>. <pub-id pub-id-type="doi">10.1021/jp5122917</pub-id>.<pub-id pub-id-type="pmid">25584785</pub-id></mixed-citation></ref><ref id="ref50"><mixed-citation publication-type="journal" id="cit50"><name><surname>Davidson</surname><given-names>R. S.</given-names></name>
+<article-title>The Chemistry
+of Excited Complexes: A Survey of Reactions</article-title>. <source>Adv. Phys. Org. Chem.</source>
+<year>1983</year>, <volume>19</volume>, <fpage>1</fpage>&#x02013;<lpage>130</lpage>. <pub-id pub-id-type="doi">10.1016/s0065-3160(08)60222-1</pub-id>.</mixed-citation></ref><ref id="ref51"><mixed-citation publication-type="journal" id="cit51"><name><surname>Zhao</surname><given-names>G. J.</given-names></name>; <name><surname>Han</surname><given-names>K.</given-names></name>
+<article-title>Hydrogen Bonding in
+the Electronic Excited State</article-title>. <source>Acc. Chem. Res.</source>
+<year>2012</year>, <volume>45</volume>, <fpage>404</fpage>&#x02013;<lpage>413</lpage>. <pub-id pub-id-type="doi">10.1021/ar200135h</pub-id>.<pub-id pub-id-type="pmid">22070387</pub-id></mixed-citation></ref><ref id="ref52"><mixed-citation publication-type="journal" id="cit52"><name><surname>Zhao</surname><given-names>G. J.</given-names></name>; <name><surname>Han</surname><given-names>K.</given-names></name>
+<article-title>Role of Intramolecular and Intermolecular Hydrogen Bonding in Both
+Singlet and Triplet Excited States of Aminofluorenones on Internal
+Conversion, Intersystem Crossing, and Twisted Intramolecular Charge
+Transfer</article-title>. <source>J. Phys. Chem. A</source>
+<year>2009</year>, <volume>113</volume>, <fpage>14329</fpage>&#x02013;<lpage>14335</lpage>. <pub-id pub-id-type="doi">10.1021/jp903200x</pub-id>.<pub-id pub-id-type="pmid">19480423</pub-id></mixed-citation></ref><ref id="ref53"><mixed-citation publication-type="journal" id="cit53"><name><surname>Zhao</surname><given-names>G.</given-names></name>; <name><surname>Han</surname><given-names>K.</given-names></name>
+<article-title>Time-Dependent Density Functional Theory Study on Hydrogen-Bonded
+Intramolecular Charge-Transfer Excited State of 4-Dimethylamino-Benzonitrile
+in Methanol</article-title>. <source>J. Comput. Chem.</source>
+<year>2008</year>, <volume>29</volume>, <fpage>2010</fpage>&#x02013;<lpage>2017</lpage>. <pub-id pub-id-type="doi">10.1002/jcc.20957</pub-id>.<pub-id pub-id-type="pmid">18351604</pub-id></mixed-citation></ref><ref id="ref54"><mixed-citation publication-type="journal" id="cit54"><name><surname>Zhao</surname><given-names>G. J.</given-names></name>; <name><surname>Han</surname><given-names>K.</given-names></name>
+<article-title>PH-Controlled Twisted Intramolecular Charge Transfer ( TICT ) Excited
+State via Changing the Charge Transfer Direction</article-title>. <source>Phys. Chem. Chem. Phys.</source>
+<year>2010</year>, <volume>12</volume>, <fpage>8914</fpage>&#x02013;<lpage>8918</lpage>. <pub-id pub-id-type="doi">10.1039/b924549a</pub-id>.<pub-id pub-id-type="pmid">20556292</pub-id></mixed-citation></ref><ref id="ref55"><mixed-citation publication-type="journal" id="cit55"><name><surname>Qian</surname><given-names>X.</given-names></name>; <name><surname>Lusby</surname><given-names>P. J.</given-names></name>; <name><surname>Qian</surname><given-names>X.</given-names></name>; <name><surname>Xiao</surname><given-names>Y.</given-names></name>; <name><surname>Xu</surname><given-names>Y.</given-names></name>; <name><surname>Guo</surname><given-names>X.</given-names></name>
+<article-title>&#x02018;&#x0201c;Alive&#x0201d;&#x02019;
+Dyes as Fluorescent Sensors:
+Fluorophore, Mechanism, Receptor and Images in Living Cells</article-title>. <source>Chem. Commun.</source>
+<year>2010</year>, <volume>46</volume>, <fpage>6418</fpage>&#x02013;<lpage>6436</lpage>. <pub-id pub-id-type="doi">10.1039/c0cc00686f</pub-id>.</mixed-citation></ref><ref id="ref56"><mixed-citation publication-type="journal" id="cit56"><name><surname>Fidder</surname><given-names>H.</given-names></name>; <name><surname>Rini</surname><given-names>M.</given-names></name>; <name><surname>Nibbering</surname><given-names>E. T. J.</given-names></name>
+<article-title>The
+Role of Large Conformational
+Changes in Efficient Ultrafast Internal Conversion: Deviations from
+the Energy Gap Law</article-title>. <source>J. Am. Chem. Soc.</source>
+<year>2004</year>, <volume>126</volume>, <fpage>3789</fpage>&#x02013;<lpage>3794</lpage>. <pub-id pub-id-type="doi">10.1021/ja038741y</pub-id>.<pub-id pub-id-type="pmid">15038732</pub-id></mixed-citation></ref><ref id="ref57"><mixed-citation publication-type="journal" id="cit57"><name><surname>Lou</surname><given-names>Z.</given-names></name>; <name><surname>Li</surname><given-names>P.</given-names></name>; <name><surname>Pan</surname><given-names>Q.</given-names></name>; <name><surname>Han</surname><given-names>K.</given-names></name>
+<article-title>A Reversible Fluorescent Probe for
+Detecting Hypochloric Acid in Living Cells and Animals: Utilizing
+a Novel Strategy for Effectively Modulating the Fluorescence of Selenide
+and Selenoxide</article-title>. <source>Chem. Commun.</source>
+<year>2013</year>, <volume>49</volume>, <fpage>2445</fpage>&#x02013;<lpage>2447</lpage>. <pub-id pub-id-type="doi">10.1039/c3cc39269d</pub-id>.</mixed-citation></ref><ref id="ref58"><mixed-citation publication-type="journal" id="cit58"><name><surname>Kasha</surname><given-names>M.</given-names></name>
+<article-title>Characterization
+of Electronic Transitions in Complex Molecules</article-title>. <source>Discuss. Faraday Soc.</source>
+<year>1950</year>, <volume>9</volume>, <fpage>14</fpage>&#x02013;<lpage>19</lpage>. <pub-id pub-id-type="doi">10.1039/df9500900014</pub-id>.</mixed-citation></ref><ref id="ref59"><mixed-citation publication-type="journal" id="cit59"><name><surname>Wen</surname><given-names>Z.</given-names></name>; <name><surname>Jiang</surname><given-names>Y.</given-names></name>
+<article-title>Ratiometric Dual Fluorescent
+Receptors for Anions under Intramolecular
+Charge Transfer Mechanism</article-title>. <source>Tetrahedron</source>
+<year>2004</year>, <volume>60</volume>, <fpage>11109</fpage>&#x02013;<lpage>11115</lpage>. <pub-id pub-id-type="doi">10.1016/j.tet.2004.08.045</pub-id>.</mixed-citation></ref><ref id="ref60"><mixed-citation publication-type="computer-program" id="cit60"><person-group person-group-type="allauthors"><name><surname>Frisch</surname><given-names>M. J.</given-names></name>; <name><surname>Trucks</surname><given-names>G. W.</given-names></name>; <name><surname>Schlegel</surname><given-names>H. B.</given-names></name>; <name><surname>Scuseria</surname><given-names>G. E.</given-names></name>; <name><surname>Robb</surname><given-names>M. A.</given-names></name>; <name><surname>Cheeseman</surname><given-names>J. R.</given-names></name>; <name><surname>Scalmani</surname><given-names>G.</given-names></name>; <name><surname>Barone</surname><given-names>V.</given-names></name>; <name><surname>Mennucci</surname><given-names>B.</given-names></name>; <name><surname>Petersson</surname><given-names>G. A.</given-names></name>;</person-group><etal/><source>Gaussian
+09</source>; <publisher-name>Gaussian Inc</publisher-name>: <publisher-loc>Wallingford, CT</publisher-loc>, <year>2009</year>.</mixed-citation></ref><ref id="ref61"><mixed-citation publication-type="journal" id="cit61"><name><surname>Furche</surname><given-names>F.</given-names></name>; <name><surname>Ahlrichs</surname><given-names>R.</given-names></name>
+<article-title>Adiabatic Time-Dependent Density Functional Methods
+for Excited State Properties</article-title>. <source>J. Chem. Phys.</source>
+<year>2002</year>, <volume>117</volume>, <fpage>7433</fpage>&#x02013;<lpage>7447</lpage>. <pub-id pub-id-type="doi">10.1063/1.1508368</pub-id>.</mixed-citation></ref><ref id="ref62"><mixed-citation publication-type="journal" id="cit62"><name><surname>Scalmani</surname><given-names>G.</given-names></name>; <name><surname>Frisch</surname><given-names>M. J.</given-names></name>; <name><surname>Mennucci</surname><given-names>B.</given-names></name>; <name><surname>Tomasi</surname><given-names>J.</given-names></name>; <name><surname>Cammi</surname><given-names>R.</given-names></name>; <name><surname>Barone</surname><given-names>V.</given-names></name>
+<article-title>Geometries and Properties of Excited States in the
+Gas Phase and in Solution: Theory and Application of a Time-Dependent
+Density Functional Theory Polarizable Continuum Model Geometries and
+Properties of Excited States in the Gas Phase and in Solution</article-title>. <source>J. Chem. Phys.</source>
+<year>2006</year>, <volume>124</volume>, <elocation-id>094107</elocation-id><pub-id pub-id-type="doi">10.1063/1.2173258</pub-id>.</mixed-citation></ref><ref id="ref63"><mixed-citation publication-type="journal" id="cit63"><name><surname>Jacquemin</surname><given-names>D.</given-names></name>; <name><surname>Planchat</surname><given-names>A.</given-names></name>; <name><surname>Adamo</surname><given-names>C.</given-names></name>; <name><surname>Mennucci</surname><given-names>B.</given-names></name>
+<article-title>TD-DFT Assessment of
+Functionals for Optical 0-0 Transitions in Solvated Dyes</article-title>. <source>J. Chem. Theory Comput.</source>
+<year>2012</year>, <volume>8</volume>, <fpage>2359</fpage>&#x02013;<lpage>2372</lpage>. <pub-id pub-id-type="doi">10.1021/ct300326f</pub-id>.<pub-id pub-id-type="pmid">26588969</pub-id></mixed-citation></ref><ref id="ref64"><mixed-citation publication-type="journal" id="cit64"><name><surname>Santoro</surname><given-names>F.</given-names></name>; <name><surname>Jacquemin</surname><given-names>D.</given-names></name>
+<article-title>Going beyond
+the Vertical Approximation with Time-
+Dependent Density Functional Theory</article-title>. <source>Wiley Interdiscip.
+Rev.: Comput. Mol. Sci.</source>
+<year>2016</year>, <fpage>460</fpage>&#x02013;<lpage>486</lpage>. <pub-id pub-id-type="doi">10.1002/wcms.1260</pub-id>.</mixed-citation></ref><ref id="ref65"><mixed-citation publication-type="journal" id="cit65"><name><surname>Jacquemin</surname><given-names>D.</given-names></name>; <name><surname>Wathelet</surname><given-names>V.</given-names></name>; <name><surname>Perpe</surname><given-names>E. A.</given-names></name>; <name><surname>Adamo</surname><given-names>C.</given-names></name>
+<article-title>Extensive TD-DFT Benchmark:
+Singlet-Excited States of Organic Molecules</article-title>. <source>J. Chem. Theory Comput.</source>
+<year>2009</year>, <volume>5</volume>, <fpage>2420</fpage>&#x02013;<lpage>2435</lpage>. <pub-id pub-id-type="doi">10.1021/ct900298e</pub-id>.<pub-id pub-id-type="pmid">26616623</pub-id></mixed-citation></ref><ref id="ref66"><mixed-citation publication-type="journal" id="cit66"><name><surname>Peach</surname><given-names>M. J.</given-names></name>; <name><surname>Benfield</surname><given-names>P.</given-names></name>; <name><surname>Helgaker</surname><given-names>T.</given-names></name>; <name><surname>Tozer</surname><given-names>D. J.</given-names></name>
+<article-title>Excitation Energies
+in Density Functional Theory: An Evaluation and a Diagnostic Test</article-title>. <source>J. Chem. Phys.</source>
+<year>2008</year>, <volume>128</volume>, <elocation-id>044118</elocation-id><pub-id pub-id-type="doi">10.1063/1.2831900</pub-id>.<pub-id pub-id-type="pmid">18247941</pub-id></mixed-citation></ref><ref id="ref67"><mixed-citation publication-type="journal" id="cit67"><name><surname>Francl</surname><given-names>M. M.</given-names></name>; <name><surname>Pietro</surname><given-names>W. J.</given-names></name>; <name><surname>Hehre</surname><given-names>W. J.</given-names></name>; et al. <article-title>Self-Consistent Molecular
+Orbital Methods. XXIII. A Polarization-Type Basis Set for Second-Row
+Elements</article-title>. <source>J. Chem. Phys.</source>
+<year>1982</year>, <volume>77</volume>, <fpage>3654</fpage>&#x02013;<lpage>3665</lpage>. <pub-id pub-id-type="doi">10.1063/1.444267</pub-id>.</mixed-citation></ref><ref id="ref68"><mixed-citation publication-type="journal" id="cit68"><name><surname>Kumar</surname><given-names>G. R.</given-names></name>; <name><surname>Thilagar</surname><given-names>P.</given-names></name>
+<article-title>Dicyanovinyl Substituted Triarylboranes: A Rational
+Approach to Distinguish Fluoride and Cyanide Ions</article-title>. <source>Dalton Trans.</source>
+<year>2014</year>, <volume>43</volume>, <fpage>7200</fpage>&#x02013;<lpage>7207</lpage>. <pub-id pub-id-type="doi">10.1039/c3dt53638f</pub-id>.<pub-id pub-id-type="pmid">24676342</pub-id></mixed-citation></ref><ref id="ref69"><mixed-citation publication-type="journal" id="cit69"><name><surname>Parab</surname><given-names>K.</given-names></name>; <name><surname>Venkatasubbaiah</surname><given-names>K.</given-names></name>; <name><surname>J&#x000e4;kle</surname><given-names>F.</given-names></name>
+<article-title>Luminescent Triarylborane-Functionalized
+Polystyrene: Synthesis, Photophysical Characterization, and Anion-Binding
+Studies</article-title>. <source>J. Am. Chem. Soc.</source>
+<year>2006</year>, <volume>128</volume>, <fpage>12879</fpage>&#x02013;<lpage>12885</lpage>. <pub-id pub-id-type="doi">10.1021/ja063302v</pub-id>.<pub-id pub-id-type="pmid">17002382</pub-id></mixed-citation></ref><ref id="ref70"><mixed-citation publication-type="journal" id="cit70"><name><surname>Song</surname><given-names>K. C.</given-names></name>; <name><surname>Kim</surname><given-names>H.</given-names></name>; <name><surname>Mun</surname><given-names>K.</given-names></name>; <name><surname>Sup</surname><given-names>Y.</given-names></name>; <name><surname>Do</surname><given-names>Y.</given-names></name>; <name><surname>Hyung</surname><given-names>M.</given-names></name>
+<article-title>Ratiometric
+Fluorescence Sensing of Fluoride Ions by Triarylborane&#x02013;phenanthroimidazole
+Conjugates</article-title>. <source>Sens. Actuators, B</source>
+<year>2013</year>, <volume>176</volume>, <fpage>850</fpage>&#x02013;<lpage>857</lpage>. <pub-id pub-id-type="doi">10.1016/j.snb.2012.09.049</pub-id>.</mixed-citation></ref><ref id="ref71"><mixed-citation publication-type="journal" id="cit71"><name><surname>Li</surname><given-names>G.</given-names></name>; <name><surname>Chu</surname><given-names>T.</given-names></name>
+<article-title>TD-DFT Study on Fluoride-Sensing
+Mechanism of 2-(2&#x02032;-Phenylureaphenyl)Benzoxazole:
+The Way to Inhibit the ESIPT Process</article-title>. <source>Phys.
+Chem. Chem. Phys.</source>
+<year>2011</year>, <volume>13</volume>, <fpage>20766</fpage>&#x02013;<lpage>20771</lpage>. <pub-id pub-id-type="doi">10.1039/c1cp21470e</pub-id>.<pub-id pub-id-type="pmid">21996924</pub-id></mixed-citation></ref><ref id="ref72"><mixed-citation publication-type="journal" id="cit72"><name><surname>Bhat</surname><given-names>H. R.</given-names></name>; <name><surname>Jha</surname><given-names>P. C.</given-names></name>
+<article-title>Selective Complexation
+of Cyanide and Fluoride Ions
+with Ammonium Boranes: A Theoretical Study on Sensing Mechanism Involving
+Intramolecular Charge Transfer and Configurational Changes</article-title>. <source>J. Phys. Chem. A</source>
+<year>2017</year>, <volume>121</volume>, <fpage>3757</fpage>&#x02013;<lpage>3767</lpage>. <pub-id pub-id-type="doi">10.1021/acs.jpca.7b00502</pub-id>.<pub-id pub-id-type="pmid">28443335</pub-id></mixed-citation></ref><ref id="ref73"><mixed-citation publication-type="journal" id="cit73"><name><surname>Bhat</surname><given-names>H. R.</given-names></name>; <name><surname>Jha</surname><given-names>P. C.</given-names></name>
+<article-title>A Theoretical Study on Anion Sensing Mechanism of Multi-Phosphonium
+Triarylboranes: Intramolecular Charge Transfer and Configurational
+Changes</article-title>. <source>Phys. Chem. Chem. Phys.</source>
+<year>2017</year>, <volume>19</volume>, <fpage>14811</fpage>&#x02013;<lpage>14820</lpage>. <pub-id pub-id-type="doi">10.1039/C7CP02287E</pub-id>.<pub-id pub-id-type="pmid">28548172</pub-id></mixed-citation></ref><ref id="ref74"><mixed-citation publication-type="journal" id="cit74"><name><surname>Grimme</surname><given-names>S.</given-names></name>; <name><surname>Parac</surname><given-names>M.</given-names></name>
+<article-title>Substantial Errors from Time- Dependent Density Functional Theory
+for the Calculation of Excited States of Large p Systems</article-title>. <source>ChemPhysChem</source>
+<year>2003</year>, <volume>4</volume>, <fpage>292</fpage>&#x02013;<lpage>295</lpage>. <pub-id pub-id-type="doi">10.1002/cphc.200390047</pub-id>.<pub-id pub-id-type="pmid">12674603</pub-id></mixed-citation></ref><ref id="ref75"><mixed-citation publication-type="journal" id="cit75"><name><surname>Wong</surname><given-names>B. M.</given-names></name>; <name><surname>Hsieh</surname><given-names>T. H.</given-names></name>
+<article-title>Optoelectronic and
+Excitonic Properties of Oligoacenes:
+Substantial Improvements from Range-Separated Time-Dependent Density
+Functional Theory</article-title>. <source>J. Chem. Theory Comput.</source>
+<year>2010</year>, <volume>6</volume>, <fpage>3704</fpage>&#x02013;<lpage>3712</lpage>. <pub-id pub-id-type="doi">10.1021/ct100529s</pub-id>.<pub-id pub-id-type="pmid">21170284</pub-id></mixed-citation></ref><ref id="ref76"><mixed-citation publication-type="journal" id="cit76"><name><surname>Raeber</surname><given-names>A. E.</given-names></name>; <name><surname>Wong</surname><given-names>B. M.</given-names></name>
+<article-title>The Importance of Short- and Long-Range Exchange on
+Various Excited State Properties of DNA Monomers, Stacked Complexes,
+and Watson&#x02013;Crick Pairs</article-title>. <source>J. Chem. Theory
+Comput.</source>
+<year>2015</year>, <volume>11</volume>, <fpage>2199</fpage>&#x02013;<lpage>2209</lpage>. <pub-id pub-id-type="doi">10.1021/acs.jctc.5b00105</pub-id>.<pub-id pub-id-type="pmid">26574420</pub-id></mixed-citation></ref><ref id="ref77"><mixed-citation publication-type="journal" id="cit77"><name><surname>Peng</surname><given-names>W.</given-names></name>; <name><surname>Chai</surname><given-names>J.</given-names></name>
+<article-title>Assessment of Asymptotically
+Corrected Model Potentials for Charge-Transfer-like
+Excitations in Oligoacenes</article-title>. <source>Phys. Chem. Chem.
+Phys.</source>
+<year>2014</year>, <volume>16</volume>, <fpage>21564</fpage>&#x02013;<lpage>21569</lpage>. <pub-id pub-id-type="doi">10.1039/C4CP02946A</pub-id>.<pub-id pub-id-type="pmid">25188860</pub-id></mixed-citation></ref><ref id="ref78"><mixed-citation publication-type="journal" id="cit78"><name><surname>Leininger</surname><given-names>T.</given-names></name>; <name><surname>Stoll</surname><given-names>H.</given-names></name>; <name><surname>Werner</surname><given-names>H.</given-names></name>; <name><surname>Savin</surname><given-names>A.</given-names></name>
+<article-title>Combining Long-Range
+Configuration Interaction with Short-Range Density Functionals</article-title>. <source>Chem. Phys. Lett.</source>
+<year>1997</year>, <volume>275</volume>, <fpage>151</fpage>&#x02013;<lpage>160</lpage>. <pub-id pub-id-type="doi">10.1016/S0009-2614(97)00758-6</pub-id>.</mixed-citation></ref><ref id="ref79"><mixed-citation publication-type="journal" id="cit79"><name><surname>Sato</surname><given-names>T.</given-names></name>; <name><surname>Tsuneda</surname><given-names>T.</given-names></name>; <name><surname>Hirao</surname><given-names>K.</given-names></name>
+<article-title>Van Der Waals
+Interactions Studied
+by Density Functional Theory</article-title>. <source>Mol. Phys.</source>
+<year>2005</year>, <volume>103</volume>, <fpage>1151</fpage>&#x02013;<lpage>1164</lpage>. <pub-id pub-id-type="doi">10.1080/00268970412331333474</pub-id>.</mixed-citation></ref><ref id="ref80"><mixed-citation publication-type="journal" id="cit80"><name><surname>Yanai</surname><given-names>T.</given-names></name>; <name><surname>Tew</surname><given-names>D. P.</given-names></name>; <name><surname>Handy</surname><given-names>N. C.</given-names></name>
+<article-title>A New Hybrid
+Exchange-Correlation
+Functional Using the Coulomb-Attenuating Method (CAM-B3LYP)</article-title>. <source>Chem. Phys. Lett.</source>
+<year>2004</year>, <volume>393</volume>, <fpage>51</fpage>&#x02013;<lpage>57</lpage>. <pub-id pub-id-type="doi">10.1016/j.cplett.2004.06.011</pub-id>.</mixed-citation></ref><ref id="ref81"><mixed-citation publication-type="journal" id="cit81"><name><surname>Tomasi</surname><given-names>J.</given-names></name>; <name><surname>Persico</surname><given-names>M.</given-names></name>
+<article-title>Molecular Interactions
+in Solution: An Overview of
+Methods Based on Continuous Distributions of the Solvent</article-title>. <source>Chem. Rev.</source>
+<year>1994</year>, <volume>94</volume>, <fpage>2027</fpage>&#x02013;<lpage>2094</lpage>. <pub-id pub-id-type="doi">10.1021/cr00031a013</pub-id>.</mixed-citation></ref><ref id="ref82"><mixed-citation publication-type="journal" id="cit82"><name><surname>Reed</surname><given-names>A. E.</given-names></name>; <name><surname>Curtiss</surname><given-names>L.</given-names></name>; <name><surname>Weinhold</surname><given-names>F.</given-names></name>
+<article-title>Intermolecular
+Interactions from
+a Natural Bond Orbital, Donor-Acceptor Viewpoint</article-title>. <source>Chem. Rev.</source>
+<year>1988</year>, <volume>88</volume>, <fpage>899</fpage>&#x02013;<lpage>926</lpage>. <pub-id pub-id-type="doi">10.1021/cr00088a005</pub-id>.</mixed-citation></ref><ref id="ref83"><mixed-citation publication-type="journal" id="cit83"><name><surname>Boys</surname><given-names>S. F.</given-names></name>; <name><surname>Bernardi</surname><given-names>F.</given-names></name>
+<article-title>The Calculation of
+Small Molecular Interactions by
+the Differences of Separate Total Energies. Some Procedures with Reduced
+Errors</article-title>. <source>Mol. Phys.</source>
+<year>1970</year>, <volume>19</volume>, <fpage>553</fpage>&#x02013;<lpage>566</lpage>. <pub-id pub-id-type="doi">10.1080/00268977000101561</pub-id>.</mixed-citation></ref></ref-list></back></article>

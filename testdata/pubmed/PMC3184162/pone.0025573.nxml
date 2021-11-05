@@ -1,0 +1,513 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.0 20120330//EN" "JATS-archivearticle1.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article"><?properties open_access?><front><journal-meta><journal-id journal-id-type="nlm-ta">PLoS One</journal-id><journal-id journal-id-type="iso-abbrev">PLoS ONE</journal-id><journal-id journal-id-type="publisher-id">plos</journal-id><journal-id journal-id-type="pmc">plosone</journal-id><journal-title-group><journal-title>PLoS ONE</journal-title></journal-title-group><issn pub-type="epub">1932-6203</issn><publisher><publisher-name>Public Library of Science</publisher-name><publisher-loc>San Francisco, USA</publisher-loc></publisher></journal-meta><article-meta><article-id pub-id-type="pmid">21984934</article-id><article-id pub-id-type="pmc">3184162</article-id><article-id pub-id-type="publisher-id">PONE-D-11-11693</article-id><article-id pub-id-type="doi">10.1371/journal.pone.0025573</article-id><article-categories><subj-group subj-group-type="heading"><subject>Research Article</subject></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Biology</subject><subj-group><subject>Biochemistry</subject><subj-group><subject>Metabolism</subject><subj-group><subject>Metabolic Pathways</subject></subj-group></subj-group><subj-group><subject>Enzymes</subject></subj-group></subj-group><subj-group><subject>Microbiology</subject><subj-group><subject>Bacterial Pathogens</subject><subj-group><subject>Escherichia Coli</subject></subj-group></subj-group><subj-group><subject>Microbial Metabolism</subject><subject>Microbial Physiology</subject></subj-group></subj-group><subj-group><subject>Molecular Cell Biology</subject><subj-group><subject>Signal Transduction</subject><subj-group><subject>Signaling Cascades</subject><subj-group><subject>Stress Signaling Cascade</subject></subj-group></subj-group></subj-group><subj-group><subject>Cellular Stress Responses</subject></subj-group></subj-group></subj-group></article-categories><title-group><article-title>Glucose-6-Phosphate Dehydrogenase Protects <italic>Escherichia coli</italic> from Tellurite-Mediated Oxidative Stress</article-title><alt-title alt-title-type="running-head">G6PDH and Tellurite Stress</alt-title></title-group><contrib-group><contrib contrib-type="author"><name><surname>Sandoval</surname><given-names>Juan M.</given-names></name><xref ref-type="aff" rid="aff1"/></contrib><contrib contrib-type="author"><name><surname>Arenas</surname><given-names>Felipe A.</given-names></name><xref ref-type="aff" rid="aff1"/></contrib><contrib contrib-type="author"><name><surname>V&#x000e1;squez</surname><given-names>Claudio C.</given-names></name><xref ref-type="aff" rid="aff1"/><xref ref-type="corresp" rid="cor1">
+<sup>&#x0002a;</sup>
+</xref></contrib></contrib-group><aff id="aff1">
+<addr-line>Departamento de Biolog&#x000ed;a, Facultad de Qu&#x000ed;mica y Biolog&#x000ed;a, Universidad de Santiago de Chile, Santiago, Chile</addr-line>
+</aff><contrib-group><contrib contrib-type="editor"><name><surname>Appanna</surname><given-names>Vasu D.</given-names></name><role>Editor</role><xref ref-type="aff" rid="edit1"/></contrib></contrib-group><aff id="edit1">Laurentian University, Canada</aff><author-notes><corresp id="cor1">&#x0002a; E-mail: <email>claudio.vasquez@usach.cl</email></corresp><fn fn-type="con"><p>Conceived and designed the experiments: JMS CCV. Performed the experiments: JMS FAA. Analyzed the data: JMS FAA CCV. Contributed reagents/materials/analysis tools: CCV. Wrote the paper: CCV JMS.</p></fn></author-notes><pub-date pub-type="collection"><year>2011</year></pub-date><pub-date pub-type="epub"><day>30</day><month>9</month><year>2011</year></pub-date><volume>6</volume><issue>9</issue><elocation-id>e25573</elocation-id><history><date date-type="received"><day>27</day><month>6</month><year>2011</year></date><date date-type="accepted"><day>7</day><month>9</month><year>2011</year></date></history><permissions><copyright-statement>Sandoval et al.</copyright-statement><copyright-year>2011</copyright-year><license xlink:href="http://creativecommons.org/licenses/by/4.0/"><license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are properly credited.</license-p></license></permissions><abstract><p>The tellurium oxyanion tellurite induces oxidative stress in most microorganisms. In <italic>Escherichia coli</italic>, tellurite exposure results in high levels of oxidized proteins and membrane lipid peroxides, inactivation of oxidation-sensitive enzymes and reduced glutathione content. In this work, we show that tellurite-exposed <italic>E. coli</italic> exhibits transcriptional activation of the <italic>zwf</italic> gene, encoding glucose 6-phosphate dehydrogenase (G6PDH), which in turn results in augmented synthesis of reduced nicotinamide adenine dinucleotide phosphate (NADPH). Increased <italic>zwf</italic> transcription under tellurite stress results mainly from reactive oxygen species (ROS) generation and not from a depletion of cellular glutathione. In addition, the observed increase of G6PDH activity was paralleled by accumulation of glucose-6-phosphate (G6P), suggesting a metabolic flux shift toward the pentose phosphate shunt. Upon <italic>zwf</italic> overexpression, bacterial cells also show increased levels of antioxidant molecules (NADPH, GSH), better-protected oxidation-sensitive enzymes and decreased amounts of oxidized proteins and membrane lipids. These results suggest that by increasing NADPH content, G6PDH plays an important role in <italic>E. coli</italic> survival under tellurite stress.</p></abstract><counts><page-count count="8"/></counts></article-meta></front><body><sec id="s1"><title>Introduction</title><p>The tellurium oxyanion, tellurite (TeO<sub>3</sub>
+<sup>2&#x02212;</sup>), is especially harmful to prokaryotic cells mainly because of the generation of reactive oxygen species (ROS) <xref rid="pone.0025573-Borsetti1" ref-type="bibr">[1]</xref>&#x02013;<xref rid="pone.0025573-Tremaroli1" ref-type="bibr">[5]</xref>. In particular, tellurite-exposed <italic>Escherichia coli</italic> exhibits oxidative stress-sensitive [Fe-S] cluster-containing enzyme inactivation, increased protein carbonylation and lipid membrane oxidation, as well as activation of superoxide-responsive genes <xref rid="pone.0025573-Prez1" ref-type="bibr">[3]</xref>, <xref rid="pone.0025573-Caldern1" ref-type="bibr">[6]</xref>. In addition, tellurite causes thiol depletion, especially glutathione (GSH), that in turn causes oxidative stress <xref rid="pone.0025573-Turner1" ref-type="bibr">[7]</xref>, <xref rid="pone.0025573-Turner2" ref-type="bibr">[8]</xref>.</p><p>In response to superoxide-mediated stress, <italic>E. coli</italic> triggers a coordinated expression of a number of genes (<italic>soxRS</italic> regulon) whose biological role includes three different response levels: (i) prevention of oxidative damage, (ii) xenobiotic removal and recycling of damaged macromolecules and (iii) nicotinamide adenine dinucleotide phosphate (NADPH) regeneration <xref rid="pone.0025573-Farr1" ref-type="bibr">[9]</xref>&#x02013;<xref rid="pone.0025573-Pomposiello1" ref-type="bibr">[12]</xref>. In this context, intracellular NADPH levels are critical for maintaining a balanced redox status and therefore for survival <xref rid="pone.0025573-Ying1" ref-type="bibr">[13]</xref>.</p><p>Previous work from our laboratory has shown that NADPH metabolism is affected in cells exposed to the toxicant potassium tellurite. We observed that tellurite (Te<sup>4&#x0002b;</sup>) can be enzymatically reduced to elemental tellurium (Te<sup>0</sup>) by different microorganisms in a NAD(P)H-dependent manner <xref rid="pone.0025573-Chiong1" ref-type="bibr">[14]</xref>&#x02013;<xref rid="pone.0025573-Castro1" ref-type="bibr">[16]</xref>. Preliminary experiments have also indicated that the antioxidant response caused by tellurite-activated <italic>soxRS</italic> regulon might influence NADPH synthesis <xref rid="pone.0025573-Prez1" ref-type="bibr">[3]</xref>. NADPH levels can be also affected because of non-enzymatic tellurite reduction by GSH or other intracellular reducing agents <xref rid="pone.0025573-Turner1" ref-type="bibr">[7]</xref>, <xref rid="pone.0025573-Turner2" ref-type="bibr">[8]</xref>.</p><p>Using a collection of mutants impaired in NADPH synthesis, we found that cells lacking glucose-6-phosphate dehydrogenase (G6PDH) were the most sensitive to tellurite. To a lesser extent, cells deficient in genes encoding isocitrate dehydrogenase (ICDH) or glutamate dehydrogenase (GDH) were also sensitive to the toxicant. Tellurite-exposed <italic>E. coli</italic> exhibited increased <italic>zwf</italic> expression which was paralleled by augmented G6PDH (protein amount and activity) and NADPH synthesis. Thus, upon <italic>zwf</italic> overexpression bacteria seems to be better protected against tellurite-induced stress.</p></sec><sec id="s2"><title>Results and Discussion</title><sec id="s2a"><title>Tellurite exposure results in augmented NADPH synthesis</title><p>Little is known about the <italic>E. coli</italic> antioxidant response when grown in the presence of tellurite. Previous reports by our group and others have shown increased superoxide dismutase activity in tellurite-exposed cells <xref rid="pone.0025573-Prez1" ref-type="bibr">[3]</xref>, <xref rid="pone.0025573-Tremaroli1" ref-type="bibr">[5]</xref>. In this context and since the metabolism of dinucleotides results altered in response to the oxidative stress-generating compounds gallium and menadione <xref rid="pone.0025573-Briault1" ref-type="bibr">[17]</xref>, <xref rid="pone.0025573-Singh1" ref-type="bibr">[18]</xref> both NADP(H) and NAD(H) concentrations were determined to analyze whether tellurite exposure results in similar effects. <xref ref-type="table" rid="pone-0025573-t001">Table 1</xref> shows that while NADPH levels increased &#x0223c;30&#x00025; NADH content was halved in tellurite-exposed wild type <italic>E. coli</italic>. Although decreased NADH concentrations may be counterproductive for energy generation <xref rid="pone.0025573-Singh1" ref-type="bibr">[18]</xref>, it may also represent a response to reduce the overall oxidative status of the cell. In fact, several NAD<sup>&#x0002b;</sup>-dependent enzymes such as &#x003b1;-ketoglutarate- and pyruvate-dehydrogenase complexes from prokaryotic or eukaryotic origins are selectively inhibited upon tellurite exposure (<xref rid="pone.0025573-Castro1" ref-type="bibr">[16]</xref>, <xref rid="pone.0025573-Siliprandi1" ref-type="bibr">[19]</xref>, <xref rid="pone.0025573-Siliprandi2" ref-type="bibr">[20]</xref> V&#x000e1;squez unpublished results). Surprisingly, the amount of oxidized dinucleotides (NAD<sup>&#x0002b;</sup>, NADP<sup>&#x0002b;</sup>) was not modified in the presence of the toxicant, a result that may be explained by NAD<sup>&#x0002b;</sup> kinase activation in response to an oxidative stress-induced temporal NADPH depletion <xref rid="pone.0025573-Singh1" ref-type="bibr">[18]</xref>, <xref rid="pone.0025573-Grose1" ref-type="bibr">[21]</xref>, <xref rid="pone.0025573-Krapp1" ref-type="bibr">[22]</xref>. As expected, similar results were observed upon cell exposure to the superoxide-generating drug menadione (<xref ref-type="table" rid="pone-0025573-t001">Table 1</xref>).</p><table-wrap id="pone-0025573-t001" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0025573.t001</object-id><label>Table 1</label><caption><title>Tellurite exposure results in augmented NADPH levels in <italic>E. coli</italic>.</title></caption><alternatives><graphic id="pone-0025573-t001-1" xlink:href="pone.0025573.t001"/><table frame="hsides" rules="groups"><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup><thead><tr><td align="left" rowspan="1" colspan="1"/><td colspan="3" align="left" rowspan="1">Treatment</td></tr><tr><td align="left" rowspan="1" colspan="1">Cofactor</td><td align="left" rowspan="1" colspan="1">Control</td><td align="left" rowspan="1" colspan="1">K<sub>2</sub>TeO<sub>3</sub> (2 &#x000b5;M)</td><td align="left" rowspan="1" colspan="1">Menadione (100 &#x000b5;M)</td></tr></thead><tbody><tr><td align="left" rowspan="1" colspan="1">NADPH<xref ref-type="table-fn" rid="nt101">a</xref>
+</td><td align="left" rowspan="1" colspan="1">119.1&#x000b1;1.4</td><td align="left" rowspan="1" colspan="1">151.0&#x000b1;6.6<xref ref-type="table-fn" rid="nt102">&#x0002a;</xref>
+</td><td align="left" rowspan="1" colspan="1">155.2&#x000b1;9.1<xref ref-type="table-fn" rid="nt102">&#x0002a;</xref>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">NADP<sup>&#x0002b;</sup>
+</td><td align="left" rowspan="1" colspan="1">46.9&#x000b1;7.8</td><td align="left" rowspan="1" colspan="1">47.7&#x000b1;5.0</td><td align="left" rowspan="1" colspan="1">44.4&#x000b1;6.9</td></tr><tr><td align="left" rowspan="1" colspan="1">NADH</td><td align="left" rowspan="1" colspan="1">53.0&#x000b1;3.1</td><td align="left" rowspan="1" colspan="1">27.0&#x000b1;4.9<xref ref-type="table-fn" rid="nt102">&#x0002a;</xref>
+</td><td align="left" rowspan="1" colspan="1">22.3&#x000b1;2.1<xref ref-type="table-fn" rid="nt102">&#x0002a;</xref>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">NAD<sup>&#x0002b;</sup>
+</td><td align="left" rowspan="1" colspan="1">48.4&#x000b1;0.4</td><td align="left" rowspan="1" colspan="1">43.9&#x000b1;6.4</td><td align="left" rowspan="1" colspan="1">55.0&#x000b1;2.3</td></tr></tbody></table></alternatives><table-wrap-foot><fn id="nt101"><label>a</label><p>NADP(H) (nmol mg prot<sup>&#x02212;1</sup>) and NAD(H) (mmol mg prot<sup>&#x02212;1</sup>) concentration in <italic>E. coli</italic> BW25113 extracts was determined spectrophotometrically at 340 nm as described in <xref ref-type="sec" rid="s3">Methods</xref>. Values are the mean of 3 independent trials &#x000b1; SD.</p></fn><fn id="nt102"><label/><p>&#x0002a;P&#x02264;0.05 as compared to controls.</p></fn></table-wrap-foot></table-wrap><p>Aiming to identify genes whose products could participate in such a response, several strains lacking enzymes involved in NADPH synthesis were tested for tellurite sensitivity. While cells deficient in <italic>gnd</italic>, <italic>maeB</italic>, <italic>pntA</italic>, <italic>pntB</italic> or <italic>udhA</italic> genes were not affected by the toxicant, cells lacking ICDH (&#x00394;<italic>icdA</italic>) or GDH (&#x00394;<italic>gdhA</italic>) were &#x0223c;40&#x02013;60&#x00025; more sensitive when compared to the wild type strain. Interestingly, cells devoid of G6PDH activity (&#x00394;<italic>zwf</italic>) exhibited &#x0223c;2-fold more sensitivity to tellurite, H<sub>2</sub>O<sub>2</sub> and diamide (<xref ref-type="supplementary-material" rid="pone.0025573.s001">Fig. S1</xref>). In addition, ICDH, GDH and G6PDH activity increased &#x0223c;30, 50 and 60&#x00025; when wild type cells were exposed to tellurite (<xref ref-type="table" rid="pone-0025573-t002">Table 2</xref>), suggesting that these activities -mainly G6PDH- are most probably involved in increasing NADPH levels to face tellurite stress. This last assumption was confirmed by determining ICDH and GDH activity in extracts from tellurite-exposed &#x00394;<italic>zwf</italic> cells: while ICDH activity decreased by &#x0223c;25&#x00025; regarding the untreated control, GDH activity results almost undetectable (<xref ref-type="table" rid="pone-0025573-t002">Table 2</xref>). In the absence of tellurite, the &#x00394;<italic>zwf</italic> strain showed decreased (&#x0223c;20&#x00025;) NADPH levels regarding the wild type control and tellurite exposure did not modify them significantly (not shown).</p><table-wrap id="pone-0025573-t002" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0025573.t002</object-id><label>Table 2</label><caption><title>Tellurite induces NADPH-dependent enzymatic activities in <italic>E. coli</italic>.</title></caption><alternatives><graphic id="pone-0025573-t002-2" xlink:href="pone.0025573.t002"/><table frame="hsides" rules="groups"><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup><thead><tr><td align="left" rowspan="1" colspan="1"/><td colspan="2" align="left" rowspan="1">BW25113</td><td colspan="2" align="left" rowspan="1">&#x00394;<italic>zwf</italic>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">Enzyme</td><td align="left" rowspan="1" colspan="1">Control</td><td align="left" rowspan="1" colspan="1">K<sub>2</sub>TeO<sub>3</sub>
+</td><td align="left" rowspan="1" colspan="1">Control</td><td align="left" rowspan="1" colspan="1">K<sub>2</sub>TeO<sub>3</sub>
+</td></tr></thead><tbody><tr><td align="left" rowspan="1" colspan="1">ICDH</td><td align="left" rowspan="1" colspan="1">0.095&#x000b1;0.01</td><td align="left" rowspan="1" colspan="1">0.121&#x000b1;0.01<xref ref-type="table-fn" rid="nt104">&#x0002a;</xref>
+</td><td align="left" rowspan="1" colspan="1">0.011&#x000b1;0.01</td><td align="left" rowspan="1" colspan="1">0.084&#x000b1;0.04<xref ref-type="table-fn" rid="nt104">&#x0002a;</xref>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">GDH</td><td align="left" rowspan="1" colspan="1">7.7&#x000b1;0.7</td><td align="left" rowspan="1" colspan="1">11.8&#x000b1;1.3<xref ref-type="table-fn" rid="nt104">&#x0002a;</xref>
+</td><td align="left" rowspan="1" colspan="1">0.3&#x000b1;0.07</td><td align="left" rowspan="1" colspan="1">0.6&#x000b1;0.1<xref ref-type="table-fn" rid="nt104">&#x0002a;</xref>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">G6PDH</td><td align="left" rowspan="1" colspan="1">7.0&#x000b1;1.4</td><td align="left" rowspan="1" colspan="1">11.3&#x000b1;1.7<xref ref-type="table-fn" rid="nt104">&#x0002a;</xref>
+</td><td align="left" rowspan="1" colspan="1">ND</td><td align="left" rowspan="1" colspan="1">ND</td></tr></tbody></table></alternatives><table-wrap-foot><fn id="nt103"><label/><p>Enzymatic activity (&#x000b5;mol NADPH min<sup>&#x02212;1</sup> mg prot<sup>&#x02212;1</sup>) was determined spectrophotometrically at 340 nm as described in <xref ref-type="sec" rid="s3">Methods</xref>. Values are the mean of 4 independent trials &#x000b1; SD.</p></fn><fn id="nt104"><label/><p>&#x0002a;P&#x02264;0.05 as compared to controls. ND, not detected.</p></fn></table-wrap-foot></table-wrap></sec><sec id="s2b"><title>ROS generation and not thiol depletion is the primary signal for tellurite-induced <italic>zwf</italic> expression</title><p>To determine if tellurite-mediated ROS generation <xref rid="pone.0025573-Prez1" ref-type="bibr">[3]</xref> or thiol depletion <xref rid="pone.0025573-Turner1" ref-type="bibr">[7]</xref>, <xref rid="pone.0025573-Turner2" ref-type="bibr">[8]</xref> is responsible of G6PDH activation, the effect of the superoxide-generating compound menadione <xref rid="pone.0025573-Criddle1" ref-type="bibr">[23]</xref> or the thiol-specific reagent diamide <xref rid="pone.0025573-Kosower1" ref-type="bibr">[24]</xref> was determined. Clearly G6PDH activity was induced by tellurite and menadione but not by diamide (<xref ref-type="fig" rid="pone-0025573-g001">Fig. 1A</xref>); this was true also for ROS production (<xref ref-type="fig" rid="pone-0025573-g001">Fig. 1B</xref>). In spite that tellurite-exposed cells exhibited a decreased GSH content (&#x0223c;50&#x00025;), this effect does not seem to be the primary signal inducing G6PDH activity (<xref ref-type="fig" rid="pone-0025573-g001">Figs. 1C</xref>). To assess if the observed tellurite-mediated increase of G6PDH activity was related to <italic>zwf</italic> induction, &#x003b2;-galactosidase activity was determined in the <italic>E. coli</italic> reporter strain <italic>zwf</italic>::<italic>lacZ</italic>. <xref ref-type="fig" rid="pone-0025573-g001">Fig. 1D</xref> shows that &#x003b2;-galactosidase activity increased 2- and 4-fold in extracts from tellurite- or menadione-exposed cells, respectively, when compared to untreated controls. No augment of &#x003b2;-galactosidase activity was observed in diamide-exposed cells (<xref ref-type="fig" rid="pone-0025573-g001">Fig. 1D</xref>). Increased G6PDH activity was paralleled by an augmented G6PDH protein, as shown by Western blotting (<xref ref-type="fig" rid="pone-0025573-g001">Fig. 1E</xref>). These results are in agreement with the <italic>soxRS</italic> regulon induction occurring at the onset of oxidative stress <xref rid="pone.0025573-Liochev1" ref-type="bibr">[25]</xref>. No induction of G6PDH activity was observed in tellurite-exposed &#x00394;<italic>soxRS E. coli</italic> (not shown), again indicating that the underlying signal for G6PDH induction is related to tellurite-induced ROS generation.</p><fig id="pone-0025573-g001" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0025573.g001</object-id><label>Figure 1</label><caption><title>Tellurite induces G6PDH because of ROS formation and not thiol depletion in <italic>E. coli</italic>.</title><p>(A) G6PDH activity was determined spectrophotometrically at 340 nm as described <xref rid="pone.0025573-Asnis1" ref-type="bibr">[49]</xref>. (B) Intracellular ROS levels were analyzed using the oxidation-sensitive probe H<sub>2</sub>DCFDA (2&#x02032;,7&#x02032;-dichlorofluorescein diacetate) using an Applied Biosystems equipment CytoFluor 4000 Fluorescence Multi-well Plate Reader (excitation 490 nm, emission 519 nm) and normalized to protein concentration. (C) GSH content was assessed as described previously <xref rid="pone.0025573-Griffith2" ref-type="bibr">[56]</xref> with modifications. (D) &#x003b2;-galactosidase activity was determined in extracts of the reporter <italic>E. coli</italic> GC4468 <italic>zwf</italic>::<italic>lacZ</italic> strain <xref rid="pone.0025573-Semchyshyn1" ref-type="bibr">[42]</xref> by monitoring the hydrolysis of <italic>o</italic>-nitrophenyl-&#x003b2;-D-galactopyranoside as described <xref rid="pone.0025573-ContrerasNdel1" ref-type="bibr">[43]</xref>. (E) Western blotting of G6PDH was analyzed using a specific <italic>in-house</italic> made antiserum. Band intensities were analyzed using the Gel-Pro Analyzer Program software, version 3.1. Relative expression was referred to that of control cells. The strain used in A&#x02013;C and E was <italic>E. coli</italic> BW25113. <italic>E. coli</italic> cells were left untreated (control, white) or treated with 2 &#x000b5;M tellurite (black), 100 &#x000b5;M menadione (horizontal stripes) or 500 &#x000b5;M diamide (grey) for 30 min. Values are the mean &#x000b1; SD of 3&#x02013;4 independent trials. au, arbitrary units.</p></caption><graphic xlink:href="pone.0025573.g001"/></fig></sec><sec id="s2c"><title>Tellurite treatment induces G6P accumulation in <italic>E. coli</italic>
+</title><p>Several lines of evidence suggest that the metabolic adaptation model of Singh <italic>et al.</italic>
+<xref rid="pone.0025573-Singh1" ref-type="bibr">[18]</xref> is associated with flux changes in central metabolic pathways. In this context, cell exposure to oxidants results in altered NADH/NADPH content <xref rid="pone.0025573-Singh1" ref-type="bibr">[18]</xref>, <italic>soxRS</italic>-mediated <italic>zwf</italic> activation <xref rid="pone.0025573-Liochev1" ref-type="bibr">[25]</xref> and a shifting of glucose catabolic flux from glycolysis to the pentose phosphate pathway (PPP) <xref rid="pone.0025573-Ralser1" ref-type="bibr">[26]</xref>&#x02013;<xref rid="pone.0025573-Rungrassamee1" ref-type="bibr">[28]</xref>. To determine if a similar event could explain the observed tellurite-mediated increase of NADPH levels (<xref ref-type="table" rid="pone-0025573-t001">Table 1</xref>), the intracellular concentration of glucose-6-phosphate (G6P) was assessed. The G6P content increased &#x0223c;50&#x00025; in tellurite-exposed cells as compared to untreated controls (<xref ref-type="table" rid="pone-0025573-t003">Table 3</xref>). As expected, the activity of the G6P suppliers PtsG (glucose-specific transporter of the phosphotransferase system) and Pgi (phosphoglucose isomerase), involved in a <italic>soxRS</italic>-controlled antioxidant mechanism <xref rid="pone.0025573-Rungrassamee1" ref-type="bibr">[28]</xref>, increased &#x0223c;2&#x02013;3 fold under tellurite stress (<xref ref-type="table" rid="pone-0025573-t003">Table 3</xref>). Preliminary results from our laboratory also indicate that while augmented <italic>pgi</italic> transcription occurs upon tellurite exposure, the activity of the enzymatic regulators phosphofructokinase and pyruvate kinase is significantly decreased, suggesting that the glycolytic pathway is down-regulated in these conditions (V&#x000e1;squez, unpublished data).</p><table-wrap id="pone-0025573-t003" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0025573.t003</object-id><label>Table 3</label><caption><title>Tellurite exposure induces G6P accumulation in <italic>E. coli</italic>.</title></caption><alternatives><graphic id="pone-0025573-t003-3" xlink:href="pone.0025573.t003"/><table frame="hsides" rules="groups"><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup><thead><tr><td align="left" rowspan="1" colspan="1"/><td colspan="3" align="left" rowspan="1">Treatment</td></tr><tr><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1">Control</td><td align="left" rowspan="1" colspan="1">K<sub>2</sub>TeO<sub>3</sub>
+</td><td align="left" rowspan="1" colspan="1">Menadione</td></tr></thead><tbody><tr><td align="left" rowspan="1" colspan="1">G6P<xref ref-type="table-fn" rid="nt105">a</xref>
+</td><td align="left" rowspan="1" colspan="1">6.1&#x000b1;0.5</td><td align="left" rowspan="1" colspan="1">9.2&#x000b1;2.3<xref ref-type="table-fn" rid="nt107">&#x0002a;</xref>
+</td><td align="left" rowspan="1" colspan="1">5.4&#x000b1;0.2</td></tr><tr><td align="left" rowspan="1" colspan="1">PtsG<xref ref-type="table-fn" rid="nt106">b</xref>
+</td><td align="left" rowspan="1" colspan="1">11.9&#x000b1;3.3</td><td align="left" rowspan="1" colspan="1">29.6&#x000b1;7.9<xref ref-type="table-fn" rid="nt107">&#x0002a;</xref>
+</td><td align="left" rowspan="1" colspan="1">28.1&#x000b1;9.1<xref ref-type="table-fn" rid="nt107">&#x0002a;</xref>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">Pgi<xref ref-type="table-fn" rid="nt106">b</xref>
+</td><td align="left" rowspan="1" colspan="1">0.26&#x000b1;0.1</td><td align="left" rowspan="1" colspan="1">0.56&#x000b1;0.1<xref ref-type="table-fn" rid="nt107">&#x0002a;</xref>
+</td><td align="left" rowspan="1" colspan="1">0.46&#x000b1;0.1<xref ref-type="table-fn" rid="nt107">&#x0002a;</xref>
+</td></tr></tbody></table></alternatives><table-wrap-foot><fn id="nt105"><label>a</label><p>Intracellular G6P concentration (nmol mg prot<sup>&#x02212;1</sup>);</p></fn><fn id="nt106"><label>b</label><p>Enzymatic activity (&#x000b5;mol NADPH min<sup>&#x02212;1</sup> mg prot<sup>&#x02212;1</sup>) was determined spectrophotometrically at 340 nm as described in <xref ref-type="sec" rid="s3">Methods</xref>. Values are the mean of 3 independent trials &#x000b1; SD.</p></fn><fn id="nt107"><label/><p>&#x0002a;P&#x02264;0.05 as compared to controls.</p></fn></table-wrap-foot></table-wrap></sec><sec id="s2d"><title>
+<italic>zwf</italic> expression is involved in the <italic>E. coli</italic> response to tellurite stress</title><p>To further unveil the role of G6PDH in the cellular response to tellurite, the effect of overexpressing or eliminating the <italic>E. coli zwf</italic> gene was carried out (see <xref ref-type="supplementary-material" rid="pone.0025573.s004">Table S1</xref> for strain genotypes). Curiously, cells overexpressing <italic>zwf</italic> did not show increased tolerance to tellurite and resistance levels similar to those exhibited by wild type controls were observed in genetically-complemented strains (<xref ref-type="fig" rid="pone-0025573-g002">Fig. 2</xref>). Similar results were obtained when hydrogen peroxide or diamide were used. Since the absence of <italic>zwf</italic> results in increased sensitivity to tellurite and other stress-generating compounds (<xref ref-type="fig" rid="pone-0025573-g002">Figs. 2</xref> and <xref ref-type="supplementary-material" rid="pone.0025573.s001">S1</xref>), it was expected that inducing <italic>zwf</italic> expression would reverse this effect, which was the case in <italic>zwf</italic>-complemented cells (<xref ref-type="fig" rid="pone-0025573-g002">Fig. 2</xref>). Overexpressing <italic>zwf</italic> did not generate increased resistance to these toxicants in either LB (<xref ref-type="fig" rid="pone-0025573-g002">Fig. 2</xref>) or M9-minimal medium (not shown). Similar results have been observed in <italic>Salmonella enterica</italic> serovar Typhimurium and <italic>E. coli</italic> exposed to H<sub>2</sub>O<sub>2</sub>, S-nitroso-glutathione or paraquat <xref rid="pone.0025573-Lundberg1" ref-type="bibr">[29]</xref>, <xref rid="pone.0025573-Gir1" ref-type="bibr">[30]</xref>.</p><fig id="pone-0025573-g002" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0025573.g002</object-id><label>Figure 2</label><caption><title>Effect of <italic>zwf</italic> expression on the <italic>E. coli</italic> sensitivity to oxidative stress elicitors.</title><p>Growth inhibition zones were determined for wild type (BW25113 pBAD), <italic>zwf</italic>-overexpressing (pBAD-<italic>zwf</italic>), mutant (BW25113 &#x00394;<italic>zwf</italic>::<italic>kan</italic>) and genetically complemented (BW25113 &#x00394;<italic>zwf</italic>::<italic>kan</italic> pBAD-<italic>zwf</italic>) strains as described <xref rid="pone.0025573-Herrera1" ref-type="bibr">[41]</xref>. Briefly, cells were grown to OD<sub>600</sub>&#x0223c;0.5, diluted and spread on LB plates. After air drying, ten microliters of tellurite (40 mM), H<sub>2</sub>O<sub>2</sub> (10 M) or diamide (100 mM) were deposited on sterile disks in the centers of the plates. Results were determined after 24 h. Values are the mean of 4&#x02013;5 independent trials &#x000b1; SD.</p></caption><graphic xlink:href="pone.0025573.g002"/></fig><p>In agreement with results of <xref ref-type="table" rid="pone-0025573-t001">Table 1</xref>, tellurite-treated <italic>E. coli</italic> carrying pBAD vector alone also showed increased (&#x0223c;30&#x00025;) NADPH synthesis regarding the respective controls (<xref ref-type="table" rid="pone-0025573-t004">Table 4</xref>). In pBAD-carrying &#x00394;<italic>zwf</italic> cells NADPH levels decreased &#x0223c;20&#x00025; while those of NADP<sup>&#x0002b;</sup> increased &#x0223c;50&#x00025;, an effect that was unchanged in the presence of the toxicants (<xref ref-type="table" rid="pone-0025573-t004">Table 4</xref>). In turn, upon <italic>zwf</italic> overexpression NADPH levels increased &#x0223c;30&#x00025; in the absence of toxicants while genetically-complemented &#x00394;<italic>zwf</italic> cells exhibited dinucleotide levels similar to those of the wild type strain (<xref ref-type="table" rid="pone-0025573-t004">Table 4</xref>). These results suggest that the protective effect of G6PDH activity (or its product NADPH) occurs during the <italic>soxRS</italic>-mediated response in cells facing stress <xref rid="pone.0025573-Krapp1" ref-type="bibr">[22]</xref> and that any further increase of activity is not reflected in higher tellurite resistance. Restitution of the resistance phenotype in the complemented strain (<xref ref-type="fig" rid="pone-0025573-g002">Fig. 2</xref> and <xref ref-type="table" rid="pone-0025573-t004">Table 4</xref>), therefore seems to result from increased NADPH levels.</p><table-wrap id="pone-0025573-t004" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0025573.t004</object-id><label>Table 4</label><caption><title>Effect of <italic>zwf</italic> expression and toxicant exposure on NADPH concentration.</title></caption><alternatives><graphic id="pone-0025573-t004-4" xlink:href="pone.0025573.t004"/><table frame="hsides" rules="groups"><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup><thead><tr><td align="left" rowspan="1" colspan="1">Strain</td><td align="left" rowspan="1" colspan="1">Plasmid</td><td align="left" rowspan="1" colspan="1">Treatment</td><td align="left" rowspan="1" colspan="1">NADP<sup>&#x0002b;a</sup>
+</td><td align="left" rowspan="1" colspan="1">NADPH<xref ref-type="table-fn" rid="nt108">a</xref>
+</td><td align="left" rowspan="1" colspan="1">[NADP<sup>&#x0002b;</sup>&#x0002b;NADPH]</td></tr></thead><tbody><tr><td align="left" rowspan="1" colspan="1">BW25113</td><td align="left" rowspan="1" colspan="1">pBAD</td><td align="left" rowspan="1" colspan="1">Control</td><td align="left" rowspan="1" colspan="1">46.9&#x000b1;7.8</td><td align="left" rowspan="1" colspan="1">119.1&#x000b1;7.7</td><td align="left" rowspan="1" colspan="1">166.0</td></tr><tr><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1">K<sub>2</sub>TeO<sub>3</sub>
+</td><td align="left" rowspan="1" colspan="1">47.7&#x000b1;5.0</td><td align="left" rowspan="1" colspan="1">157.0&#x000b1;6.6<xref ref-type="table-fn" rid="nt109">&#x0002a;</xref>
+</td><td align="left" rowspan="1" colspan="1">204.8</td></tr><tr><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1">Menadione</td><td align="left" rowspan="1" colspan="1">44.4&#x000b1;6.9</td><td align="left" rowspan="1" colspan="1">155.2&#x000b1;9.1<xref ref-type="table-fn" rid="nt109">&#x0002a;</xref>
+</td><td align="left" rowspan="1" colspan="1">199.6</td></tr><tr><td align="left" rowspan="1" colspan="1">BW25113</td><td align="left" rowspan="1" colspan="1">pBAD-<italic>zwf</italic>
+</td><td align="left" rowspan="1" colspan="1">Control</td><td align="left" rowspan="1" colspan="1">35.0&#x000b1;3.5</td><td align="left" rowspan="1" colspan="1">156.8&#x000b1;13.5</td><td align="left" rowspan="1" colspan="1">191.8</td></tr><tr><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1">K<sub>2</sub>TeO<sub>3</sub>
+</td><td align="left" rowspan="1" colspan="1">47.1&#x000b1;1.9<xref ref-type="table-fn" rid="nt109">&#x0002a;</xref>
+</td><td align="left" rowspan="1" colspan="1">218.3&#x000b1;6.6<xref ref-type="table-fn" rid="nt109">&#x0002a;</xref>
+</td><td align="left" rowspan="1" colspan="1">265.4</td></tr><tr><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1">Menadione</td><td align="left" rowspan="1" colspan="1">42.6&#x000b1;4.6</td><td align="left" rowspan="1" colspan="1">229.6&#x000b1;10.0<xref ref-type="table-fn" rid="nt109">&#x0002a;</xref>
+</td><td align="left" rowspan="1" colspan="1">272.2</td></tr><tr><td align="left" rowspan="1" colspan="1">&#x00394;<italic>zwf</italic>
+</td><td align="left" rowspan="1" colspan="1">pBAD</td><td align="left" rowspan="1" colspan="1">Control</td><td align="left" rowspan="1" colspan="1">68.7&#x000b1;3.2</td><td align="left" rowspan="1" colspan="1">100.4&#x000b1;2.8</td><td align="left" rowspan="1" colspan="1">169.1</td></tr><tr><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1">K<sub>2</sub>TeO<sub>3</sub>
+</td><td align="left" rowspan="1" colspan="1">70.2&#x000b1;8.2</td><td align="left" rowspan="1" colspan="1">124.4&#x000b1;10.0</td><td align="left" rowspan="1" colspan="1">194.6</td></tr><tr><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1">Menadione</td><td align="left" rowspan="1" colspan="1">73.8&#x000b1;6.8</td><td align="left" rowspan="1" colspan="1">98.1&#x000b1;8.7</td><td align="left" rowspan="1" colspan="1">172.4</td></tr><tr><td align="left" rowspan="1" colspan="1">&#x00394;<italic>zwf</italic>
+</td><td align="left" rowspan="1" colspan="1">pBAD-<italic>zwf</italic>
+</td><td align="left" rowspan="1" colspan="1">Control</td><td align="left" rowspan="1" colspan="1">45.5&#x000b1;4.1</td><td align="left" rowspan="1" colspan="1">138.8&#x000b1;3.0</td><td align="left" rowspan="1" colspan="1">184.3</td></tr><tr><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1">K<sub>2</sub>TeO<sub>3</sub>
+</td><td align="left" rowspan="1" colspan="1">57.9&#x000b1;3.1</td><td align="left" rowspan="1" colspan="1">156.0&#x000b1;8.5<xref ref-type="table-fn" rid="nt109">&#x0002a;</xref>
+</td><td align="left" rowspan="1" colspan="1">214.1</td></tr><tr><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1">Menadione</td><td align="left" rowspan="1" colspan="1">46.8&#x000b1;8.3</td><td align="left" rowspan="1" colspan="1">141.9&#x000b1;4.0</td><td align="left" rowspan="1" colspan="1">188.7</td></tr></tbody></table></alternatives><table-wrap-foot><fn id="nt108"><label>a</label><p>nmol/mg protein. Values are the mean of 3 independent trials &#x000b1; SD.</p></fn><fn id="nt109"><label>&#x0002a;</label><p>, P&#x02264;0.05 as compared to control.</p></fn></table-wrap-foot></table-wrap><p>Next, the effect of <italic>zwf</italic> expression on several markers of tellurite-triggered oxidative stress was investigated. All tested strains showed increased ROS content in the presence of tellurite as compared to controls (<xref ref-type="fig" rid="pone-0025573-g003">Fig. 3</xref>). While &#x00394;<italic>zwf</italic> cells showed a significant ROS increase (&#x0223c;20&#x00025;) even in the absence of the toxicant, the genetically-complemented strain showed ROS levels comparable to unexposed wild type controls. Also, <italic>zwf</italic> overexpression reduced tellurite-induced ROS content by &#x0223c;20&#x02013;30&#x00025; in BW25113 pBAD-<italic>zwf</italic> and &#x00394;<italic>zwf</italic> pBAD-<italic>zwf</italic> cells. These results suggest a direct relationship between <italic>zwf</italic> expression (resulting in NADPH generation) and intracellular ROS content (<xref ref-type="fig" rid="pone-0025573-g003">Fig. 3</xref>). A putative explanation for these findings may lay in NADPH acting -apart from its role in maintaining the cellular redox state- as scavenger of various radical species <xref rid="pone.0025573-Kirsch1" ref-type="bibr">[31]</xref>, <xref rid="pone.0025573-Petrat1" ref-type="bibr">[32]</xref>.</p><fig id="pone-0025573-g003" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0025573.g003</object-id><label>Figure 3</label><caption><title>Effect of <italic>zwf</italic> expression on ROS content.</title><p>ROS content was assessed in the indicated strains by flow cytometry using the oxidation-sensitive probe H<sub>2</sub>DCFDA. Expression of <italic>zwf</italic> was induced in the presence of L-arabinose (0.2&#x00025;). Cells were incubated for 30 min in the absence or in the presence of 2 &#x000b5;M tellurite, washed and incubated with 2 mM H<sub>2</sub>DCFDA for 30 min in the dark, washed again and diluted 1&#x02236;10 with PBS buffer. Fluorescence intensity was determined using a Becton Dickinson model FacsCanto II equipment equipped with an argon laser (excitation 490 nm, emission 519 nm) <xref rid="pone.0025573-Lushchak1" ref-type="bibr">[45]</xref>. The per cent of cell population that was positive for fluorescence is indicated (blue rectangles). A representative dot plot of 3 independent trials is shown. FITC, fluorescence intensity; SSC-A, cell complexity.</p></caption><graphic xlink:href="pone.0025573.g003"/></fig><p>Since tellurite-mediated ROS generation causes oxidative damage in several macromolecules (protein carbonylation, membrane lipid peroxidation) <xref rid="pone.0025573-Prez1" ref-type="bibr">[3]</xref>, we tested whether <italic>zwf</italic> expression had a potential effect on these oxidation markers (<xref ref-type="supplementary-material" rid="pone.0025573.s002">Fig. S2</xref>). In the presence of the toxicant, both classes of damage were induced in &#x00394;<italic>zwf</italic> cells, probably as consequence of diminished antioxidant ability (lower NADPH content) or the high basal ROS content displayed by these cells (<xref ref-type="table" rid="pone-0025573-t004">Table 4</xref> and <xref ref-type="fig" rid="pone-0025573-g003">Fig. 3</xref>). In <italic>zwf</italic>-expressing mutants, carbonylated proteins and lipid peroxides levels were restored to those observed in wild type controls (<xref ref-type="supplementary-material" rid="pone.0025573.s002">Fig. S2</xref>). Evidence about the role of G6PDH and/or NADPH in regulating the oxidation status of protein and lipid macromolecules in bacterial systems is scarce. However, it has been reported that <italic>Saccharomyces cerevisiae</italic> lacking &#x00394;<italic>idp2</italic> and &#x00394;<italic>zwf1</italic>, encoding the cytoplasmic isoforms of ICDH and G6PDH, respectively, displays increased levels of membrane protein oxidation <xref rid="pone.0025573-Johnson1" ref-type="bibr">[33]</xref>, <xref rid="pone.0025573-Minard1" ref-type="bibr">[34]</xref>.</p><p>On the other hand, it has been previously shown that cell exposure to tellurite also affects essential [Fe-S] cluster-containing enzymes as aconitase and fumarase <xref rid="pone.0025573-Caldern1" ref-type="bibr">[6]</xref> and redox equivalents from G6PDH-synthesized NADPH can be first transferred to NADPH-dependent ferrodoxin/flavodoxin reductase and then to oxidatively-damaged [Fe-S] clusters <xref rid="pone.0025573-Gir1" ref-type="bibr">[30]</xref>. In this context, it was found that <italic>zwf</italic> overexpression results in augmented fumarase activity, even in the presence of toxicants (<xref ref-type="supplementary-material" rid="pone.0025573.s003">Fig. S3</xref>). Increased NADPH levels (in <italic>zwf</italic>-overexpressing cells, <xref ref-type="table" rid="pone-0025573-t004">Table 4</xref>) could probably protect and/or repair more efficiently [Fe-S] cluster-containing enzymes during the <italic>soxRS</italic> response <xref rid="pone.0025573-Krapp1" ref-type="bibr">[22]</xref>, <xref rid="pone.0025573-Gir1" ref-type="bibr">[30]</xref>.</p><p>Finally, since tellurite also triggers GSH oxidation resulting in important changes in the cell's redox status <xref rid="pone.0025573-Turner1" ref-type="bibr">[7]</xref>, <xref rid="pone.0025573-Turner2" ref-type="bibr">[8]</xref>, <xref rid="pone.0025573-Smirnova1" ref-type="bibr">[35]</xref>, it was assessed if <italic>zwf</italic> expression influences intracellular GSH levels. As expected, the GSH content decreased (&#x0223c;45&#x00025;) in the presence of tellurite and diamide, suggesting that <italic>zwf</italic> expression and thus NADPH (<xref ref-type="table" rid="pone-0025573-t004">Table 4</xref>), could participate in regulating GSH levels (not shown). Preliminary results indicate that the observed increase in GSH levels is not related to glutathione reductase activity (not shown). Experiments aiming to determine which route is being used to recover GSH levels in tellurite-exposed <italic>E. coli</italic>
+<xref rid="pone.0025573-Smirnova1" ref-type="bibr">[35]</xref> are under way in our laboratory.</p></sec></sec><sec sec-type="materials|methods" id="s3"><title>Materials and Methods</title><sec id="s3a"><title>Bacterial strains and plasmids</title><p>
+<italic>E. coli</italic> strains and plasmids used in this study are listed in <xref ref-type="supplementary-material" rid="pone.0025573.s004">Table S1</xref>. <italic>E. coli</italic> BW25113 chromosomal DNA and the specific primers indicated was used to amplify the <italic>zwf</italic> gene. The PCR product was ligated to pBAD TOPO (Invitrogen) vector resulting in plasmid pBAD-<italic>zwf</italic>. Insert orientation was confirmed by <italic>Sal</italic>I digestion and PCR. Plasmids pBAD and pBAD-<italic>zwf</italic> were transformed into <italic>E. coli</italic> BW25113 and &#x00394;<italic>zwf</italic> strains.</p></sec><sec id="s3b"><title>Growth conditions and toxicant treatment</title><p>Bacteria were routinely grown in LB medium <xref rid="pone.0025573-Sambrook1" ref-type="bibr">[36]</xref> at 37&#x000b0;C with vigorous shaking to OD<sub>600</sub>&#x0223c;0.5. When required, ampicillin (100 &#x000b5;g ml<sup>&#x02212;1</sup>) or kanamycin (50 &#x000b5;g ml<sup>&#x02212;1</sup>) was added to the medium. Unless otherwise stated, compounds tested were used at final concentrations of 2.0 &#x000b5;M (tellurite), 100 &#x000b5;M (menadione), 1 mM (H<sub>2</sub>O<sub>2</sub>) and 500 &#x000b5;M (diamide). Gene induction was carried out in the presence of 0.2&#x00025; L-arabinose.</p></sec><sec id="s3c"><title>Determination of growth inhibition zones</title><p>Growth inhibition zones were determined as described previously <xref rid="pone.0025573-Fuentes1" ref-type="bibr">[37]</xref>. Briefly, cells were grown to OD<sub>600</sub>&#x0223c;0.5, diluted and spread on LB plates (2&#x00025;). After air drying, toxicants to be tested were deposited on sterile filter disks previously placed at the centers of the plates. Plates were incubated overnight at 37&#x000b0;C.</p></sec><sec id="s3d"><title>Enzyme purification</title><p>
+<italic>E. coli</italic> BL21(DE3) harboring plasmid pET17-G6PDH <xref rid="pone.0025573-Gir1" ref-type="bibr">[30]</xref> was used to purify G6PDH. Cells were grown to OD<sub>600</sub>&#x0223c;0.5 and induced with 1 mM IPTG for 5 h with vigorous agitation. After disrupting by sonication, crude extracts were prepared in 20 mM sodium phosphate buffer, pH 7.4, that contained 0.5 M NaCl and 20 mM imidazole. Proteins were purified by HisTrap HP (Amersham) affinity column chromatography as recommended by the vendor.</p></sec><sec id="s3e"><title>Transcriptional analysis</title><p>Overnight cultures of <italic>E. coli</italic> GC4468 carrying a chromosomal <italic>zwf</italic>::<italic>lacZ</italic> fusion <xref rid="pone.0025573-Griffith1" ref-type="bibr">[38]</xref> were diluted 1&#x02236;1000 with fresh LB medium and grown at 37&#x000b0;C to OD<sub>600</sub>&#x0223c;0.2. Samples (in triplicate) were removed to assay for &#x003b2;-galactosidase by monitoring the hydrolysis of <italic>o</italic>-nitrophenyl-&#x003b2;-D-galactopyranoside as described <xref rid="pone.0025573-Miller1" ref-type="bibr">[39]</xref>.</p></sec><sec id="s3f"><title>Western blotting</title><p>
+<italic>E. coli</italic> cultures (10 ml) were centrifuged and suspended in 0.5 ml of 50 mM phosphate buffer, pH 7.4, which contained 0.1 mM phenylmethylsulfonyl fluoride. Cells were disrupted by sonication and G6PDH content was analyzed by SDS-PAGE and immunoblotting using a specific antiserum. Band intensity was analyzed using the Gel-Pro Analyzer Program software, version 3.1.</p></sec><sec id="s3g"><title>Detection of reactive oxygen species (ROS)</title><p>To determine intracellular ROS, the oxidation-sensitive probe H<sub>2</sub>DCFDA (2&#x02032;,7&#x02032;-dichlorofluorescein diacetate, Calbiochem) was used. Aerobically grown cells in LB medium (OD<sub>600</sub>&#x0223c;0.5) were split up into 4 identical aliquots and treated individually for 30 min with the different compounds tested. Cultures (1 ml) were sedimented and cells washed with potassium phosphate buffer 10 mM, pH 7.0, and incubated for 30 min with an equal volume of buffer containing 20 &#x000b5;M H<sub>2</sub>DCFDA (in dimethylsulfoxide) in the dark. After washing, cells were disrupted by sonication and extracts (100 &#x000b5;l) were loaded in triplicate in 96-well plates. Fluorescence intensity was determined using an Applied Biosystems equipment CytoFluor 4000 Fluorescence Multi-well Plate Reader (excitation 490 nm, emission 519 nm) and normalized to protein concentration as described earlier <xref rid="pone.0025573-Prez1" ref-type="bibr">[3]</xref>, <xref rid="pone.0025573-Echave1" ref-type="bibr">[40]</xref>.</p><p>Assessing intracellular ROS by flow cytometry was performed in the same way with minor modifications. Tert-butylhydroperoxide (100 &#x000b5;M) was used as positive control (not shown). Cells were incubated with 2 mM H<sub>2</sub>DCFDA for 30 min in the dark, washed and diluted 1&#x02236;10 with PBS buffer (137 mM NaCl, 2.7 mM KCl, 10 mM Na<sub>2</sub>HPO<sub>4</sub>, 2 mM KH<sub>2</sub>PO<sub>4</sub>, pH 7.4) <xref rid="pone.0025573-Herrera1" ref-type="bibr">[41]</xref>. Fluorescence intensity was determined using a Becton Dickinson model FacsCanto II equipment equipped with an argon laser (excitation 490 nm, emission 519 nm).</p></sec><sec id="s3h"><title>Determination of protein carbonyl group content</title><p>Protein carbonyl group content was determined as previously described <xref rid="pone.0025573-Semchyshyn1" ref-type="bibr">[42]</xref>, <xref rid="pone.0025573-ContrerasNdel1" ref-type="bibr">[43]</xref>. Nucleic acid-free <italic>E. coli</italic> extracts were mixed with 4 volumes of 10 mM dinitrophenylhydrazine (dissolved in 2 M HCl) and incubated for 1 h at room temperature. Proteins were precipitated with 1 volume of cold 20&#x00025; trichloroacetic acid and centrifuged at 10,000<italic>g</italic> for 10 min. After washing 3 times with ethanol&#x02236;ethyl acetate (1&#x02236;1), the pellet was dissolved with 450 &#x000b5;l of 50 mM dithiothreitol in 6 M guanidine-HCl. Carbonyl content was determined at 370 nm using a molar absorption coefficient of 22,000 M<sup>&#x02212;1</sup> cm<sup>&#x02212;1</sup>
+<xref rid="pone.0025573-Semchyshyn1" ref-type="bibr">[42]</xref>.</p></sec><sec id="s3i"><title>Determination of membrane lipid peroxides</title><p>Membrane lipid peroxides were determined as described previously <xref rid="pone.0025573-Jiang1" ref-type="bibr">[44]</xref>. Toxicant-treated <italic>E. coli</italic> was centrifuged and suspended in 0.5 ml of a solution that contained 50 mM Tris-HCl, pH 7.4, and 1&#x00025; SDS. After sonication samples were washed with water and dried pellets were dissolved in methanol&#x02236;chloroform (2&#x02236;1) and kept at room temperature with agitation for 1 h. Samples were then treated with 300 &#x000b5;l of the FOX II reactant (0.1 mM xylenol orange, 0.25 mM ammonium ferrous sulfate, 25 mM H<sub>2</sub>SO<sub>4</sub>, 4 mM butylated hydroxytoluene, in 90&#x00025; methanol), mixed and let to stand at room temperature for 1 h. Membrane lipid peroxide content was determined at 560 nm using a molar absorption coefficient of 45,200 M<sup>&#x02212;1</sup> cm<sup>&#x02212;1</sup>
+<xref rid="pone.0025573-Jiang1" ref-type="bibr">[44]</xref>.</p></sec><sec id="s3j"><title>Determination of enzyme activity</title><p>Cells from 10 ml cultures were disrupted by sonication and extracts cleared by centrifugation. Aliquots of cell-free extracts were assayed for glucose-6-phosphate dehydrogenase <xref rid="pone.0025573-Lushchak1" ref-type="bibr">[45]</xref>, isocitrate dehydrogenase <xref rid="pone.0025573-Murakami1" ref-type="bibr">[46]</xref>, NADP<sup>&#x0002b;</sup>-glutamate dehydrogenase <xref rid="pone.0025573-Sakamoto1" ref-type="bibr">[47]</xref>, fumarase <xref rid="pone.0025573-Liochev2" ref-type="bibr">[48]</xref> and glutathione reductase <xref rid="pone.0025573-Asnis1" ref-type="bibr">[49]</xref>. Protein concentration was determined as described by Bradford using bovine serum albumin as standard <xref rid="pone.0025573-Bradford1" ref-type="bibr">[50]</xref>.</p></sec><sec id="s3k"><title>Determination of dinucleotide concentration</title><p>Duplicated samples were used for the selective extraction of dinucleotides as described earlier <xref rid="pone.0025573-Heber1" ref-type="bibr">[51]</xref>. Briefly, cells were centrifuged at 13,000<italic>g</italic> for 2 min and immediately frozen in a dry ice-ethanol bath. Samples were treated with 250 &#x000b5;l of 0.2 M HCl or 0.2 M NaOH for extracting NAD(P)<sup>&#x0002b;</sup> or NAD(P)H, respectively. Dinucleotides were extracted after incubating for 10 min at 100&#x000b0;C and centrifuging at 5,000<italic>g</italic> for 5 min to remove the cell debris. Supernatants were transferred to fresh tubes and kept on ice until use. Both NADP<sup>&#x0002b;</sup> and NADPH were assessed spectrophotometrically using commercially available G6PDH and glutathione reductase, respectively <xref rid="pone.0025573-Zhang1" ref-type="bibr">[52]</xref>. NADP<sup>&#x0002b;</sup> and NADPH standards from 0.01&#x02013;1.0 mM were used to calibrate the assays.</p><p>Intracellular concentrations of NAD<sup>&#x0002b;</sup> and NADH were assessed spectrophotometrically using NADH-dependent alcohol dehydrogenase as described previously <xref rid="pone.0025573-Leonardo1" ref-type="bibr">[53]</xref> with modifications <xref rid="pone.0025573-Kohanski1" ref-type="bibr">[54]</xref>. Standards of NAD<sup>&#x0002b;</sup> and NADH from 0.05&#x02013;0.75 mM were used to construct a calibration curve.</p></sec><sec id="s3l"><title>Determination of GSH content</title><p>After tellurite or diamide treatment, cells were washed twice with ice-cold phosphate-buffered saline and centrifuged at 4&#x000b0;C for 2 min at 10,000<italic>g</italic>. Pellets were suspended in 100 &#x000b5;l of 5-sulfosalicylic acid (SSA) (5&#x00025;, w/v), frozen in liquid nitrogen, thawed twice, centrifuged at 4&#x000b0;C and kept at &#x02212;80&#x000b0;C until use. Total glutathione (GSH&#x0002b;GSSG) was determined as described previously <xref rid="pone.0025573-Tietze1" ref-type="bibr">[55]</xref>. Reduced GSH was calculated from total glutathione to which oxidized glutathione (GSSG) was subtracted. GSSG was determined using 2-vinylpyridine (M2VP) as described earlier <xref rid="pone.0025573-Griffith2" ref-type="bibr">[56]</xref> with minor modifications. Both GSH and GSSG standards from 0 to 0.5 mM were used to calibrate the assay.</p></sec><sec id="s3m"><title>Determination of G6P concentration</title><p>Cultures (1 ml) -in duplicate- were centrifuged at 13,000<italic>g</italic> at 4&#x000b0;C for 2 min, washed and sonicated. Cell lysates were cleared by centrifugation at 13,000<italic>g</italic> for 10 min at 4&#x000b0;C. Extracts were boiled for 10 min, chilled and centrifuged at 13,000<italic>g</italic> for 10 min at 4&#x000b0;C. Supernatants were used immediately. Samples (50&#x02013;200 &#x000b5;l) were incubated in a reaction buffer that contained 50 mM Tris-HCl, pH 7.4, 10 mM MgCl<sub>2</sub>, 0.7 mM NADP<sup>&#x0002b;</sup> and 0.5 U ml<sup>&#x02212;1</sup> G6PDH. G6P concentration was assessed spectrophotometrically at 340 nm as described <xref rid="pone.0025573-Hasan1" ref-type="bibr">[57]</xref>. Standards of G6P from 0.005 to 0.25 mM were used to calibrate the assay.</p></sec><sec id="s3n"><title>Data analysis</title><p>In general, results were expressed as the mean &#x000b1; the standard deviation. Differences between experimental groups were analyzed using one-way ANOVA. P values less than 0.05 were considered statistically significant.</p></sec></sec><sec sec-type="supplementary-material" id="s4"><title>Supporting Information</title><supplementary-material content-type="local-data" id="pone.0025573.s001"><label>Figure S1</label><caption><p>
+<bold>Sensitivity of various </bold>
+<bold><italic>E. coli</italic></bold>
+<bold> strains impaired in NADPH synthesis to oxidative stress elicitors.</bold> Growth inhibition zones (cm<sup>2</sup>) were determined for wild type and several strains deficient in NADPH synthesis essentially as described in <xref ref-type="fig" rid="pone-0025573-g002">Fig. 2</xref>. Results were determined after 24 h. Values are the mean of 4&#x02013;5 independent trials &#x000b1; SD. BW25113 (wild type), &#x00394;<italic>zwf</italic> (glucose-6-phosphate dehydrogenase), &#x00394;<italic>gnd</italic> (6-phosphogluconate dehydrogenase), &#x00394;<italic>icdA</italic> (isocitrate dehydrogenase), &#x00394;<italic>maeB</italic> (NADP<sup>&#x0002b;</sup>-dependent malic enzyme), &#x00394;<italic>gdhA</italic> (glutamate dehydrogenase), &#x00394;<italic>pntA</italic> (pyridine nucleotide transhydrogenase, &#x003b1;-subunit), &#x00394;<italic>pntB</italic> (pyridine nucleotide transhydrogenase, &#x003b2;-subunit), &#x00394;<italic>udhA</italic> (soluble pyridine nucleotide transhydrogenase).</p><p>(TIF)</p></caption><media xlink:href="pone.0025573.s001.tif"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0025573.s002"><label>Figure S2</label><caption><p>
+<bold>Effect of </bold>
+<bold><italic>zwf</italic></bold>
+<bold> expression on macromolecule oxidation.</bold> Oxidized cytoplasmatic proteins (A) and total membrane lipid peroxides (B) were assessed in the indicated strains. Cells were grown in LB-arabinose in the absence of toxicant (white bars) or exposed to 2 &#x000b5;M tellurite (black bars) or 100 &#x000b5;M H<sub>2</sub>O<sub>2</sub> (stripes) for 30 min. Values are the average of 3 independent trials &#x000b1; SD.</p><p>(TIF)</p></caption><media xlink:href="pone.0025573.s002.tif"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0025573.s003"><label>Figure S3</label><caption><p>
+<bold>Effect of </bold>
+<bold><italic>zwf</italic></bold>
+<bold> expression on fumarase activity.</bold> Total fumarase activity was assessed as described in <xref ref-type="sec" rid="s3">Methods</xref>. The indicated strains were grown in LB-arabinose in the absence of toxicants (white bars) or exposed for 30 min to 2 &#x000b5;M tellurite (black bars) or 100 &#x000b5;M menadione (stripes) for 30 min. Values are the average of 3 independent trials &#x000b1; SD.</p><p>(TIF)</p></caption><media xlink:href="pone.0025573.s003.tif"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0025573.s004"><label>Table S1</label><caption><p>
+<bold><italic>E. coli</italic></bold>
+<bold> strains, plasmids and primers used in this study.</bold>
+</p><p>(DOCX)</p></caption><media xlink:href="pone.0025573.s004.docx"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material></sec></body><back><fn-group><fn fn-type="COI-statement"><p><bold>Competing Interests: </bold>The authors have declared that no competing interests exist.</p></fn><fn fn-type="financial-disclosure"><p><bold>Funding: </bold>This work was supported by grants # 1090097 from Fondecyt (Fondo Nacional de Investigaci&#x000f3;n Cient&#x000ed;fica y Tecnol&#x000f3;gica) and Dicyt (Direcci&#x000f3;n de Investigaci&#x000f3;n Cient&#x000ed;fica y Tecnol&#x000f3;gica)-USACH (Universidad de Santiago de Chile) to C.C.V. J.M.S. was supported by a doctoral fellowship from MECESUP (Mejoramiento de la Calidad y Equidad de la Educaci&#x000f3;n Superior) UCH407, Chile. F.A.A. received doctoral fellowships from CONICYT (Comisi&#x000f3;n Nacional de Ciencia y Tecnolog&#x000ed;a) and from MECESUP UCH607, Chile. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</p></fn></fn-group><ref-list><title>References</title><ref id="pone.0025573-Borsetti1"><label>1</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Borsetti</surname><given-names>F</given-names></name><name><surname>Tremaroli</surname><given-names>V</given-names></name><name><surname>Michelacci</surname><given-names>F</given-names></name><name><surname>Borghese</surname><given-names>R</given-names></name><name><surname>Winterstein</surname><given-names>C</given-names></name><etal/></person-group>
+<year>2005</year>
+<article-title>Tellurite effects on <italic>Rhodobacter capsulatus</italic> cell viability and superoxide dismutase activity under oxidative stress conditions.</article-title>
+<source>Res Microbiol</source>
+<volume>156</volume>
+<fpage>807</fpage>
+<lpage>813</lpage>
+<pub-id pub-id-type="pmid">15946826</pub-id></element-citation></ref><ref id="pone.0025573-Chasteen1"><label>2</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Chasteen</surname><given-names>TG</given-names></name><name><surname>Fuentes</surname><given-names>DE</given-names></name><name><surname>Tantale&#x000e1;n</surname><given-names>JC</given-names></name><name><surname>V&#x000e1;squez</surname><given-names>CC</given-names></name></person-group>
+<year>2009</year>
+<article-title>Tellurite: history, oxidative stress, and molecular mechanisms of resistance.</article-title>
+<source>FEMS Microbiol Rev</source>
+<volume>33</volume>
+<fpage>820</fpage>
+<lpage>832</lpage>
+<pub-id pub-id-type="pmid">19368559</pub-id></element-citation></ref><ref id="pone.0025573-Prez1"><label>3</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>P&#x000e9;rez</surname><given-names>JM</given-names></name><name><surname>Calder&#x000f3;n</surname><given-names>IL</given-names></name><name><surname>Arenas</surname><given-names>FA</given-names></name><name><surname>Fuentes</surname><given-names>DE</given-names></name><name><surname>Pradenas</surname><given-names>GA</given-names></name><etal/></person-group>
+<year>2007</year>
+<article-title>Bacterial toxicity of potassium tellurite: unveiling an ancient enigma.</article-title>
+<source>PLoS ONE</source>
+<volume>2</volume>
+<fpage>e211</fpage>
+<pub-id pub-id-type="pmid">17299591</pub-id></element-citation></ref><ref id="pone.0025573-Sandoval1"><label>4</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Sandoval</surname><given-names>JM</given-names></name><name><surname>Lev&#x000ea;que</surname><given-names>P</given-names></name><name><surname>Gallez</surname><given-names>B</given-names></name><name><surname>V&#x000e1;squez</surname><given-names>CC</given-names></name><name><surname>Buc Calder&#x000f3;n</surname><given-names>P</given-names></name></person-group>
+<year>2010</year>
+<article-title>Tellurite-induced oxidative stress leads to cell death of murine hepatocarcinoma cells.</article-title>
+<source>Biometals</source>
+<volume>23</volume>
+<fpage>623</fpage>
+<lpage>632</lpage>
+<pub-id pub-id-type="pmid">20213267</pub-id></element-citation></ref><ref id="pone.0025573-Tremaroli1"><label>5</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Tremaroli</surname><given-names>V</given-names></name><name><surname>Fedi</surname><given-names>S</given-names></name><name><surname>Zannoni</surname><given-names>D</given-names></name></person-group>
+<year>2007</year>
+<article-title>Evidence for a tellurite-dependent generation of reactive oxygen species and absence of a tellurite-mediated adaptive response to oxidative stress in cells of <italic>Pseudomonas pseudoalcaligenes</italic> KF707.</article-title>
+<source>Arch Microbiol</source>
+<volume>187</volume>
+<fpage>127</fpage>
+<lpage>135</lpage>
+<pub-id pub-id-type="pmid">17013634</pub-id></element-citation></ref><ref id="pone.0025573-Caldern1"><label>6</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Calder&#x000f3;n</surname><given-names>IL</given-names></name><name><surname>El&#x000ed;as</surname><given-names>AO</given-names></name><name><surname>Fuentes</surname><given-names>EL</given-names></name><name><surname>Pradenas</surname><given-names>GA</given-names></name><name><surname>Castro</surname><given-names>ME</given-names></name><etal/></person-group>
+<year>2009</year>
+<article-title>Tellurite-mediated disabling of [4Fe-4S] clusters of <italic>Escherichia coli</italic> dehydratases.</article-title>
+<source>Microbiology</source>
+<volume>155</volume>
+<fpage>1840</fpage>
+<lpage>1846</lpage>
+<pub-id pub-id-type="pmid">19383690</pub-id></element-citation></ref><ref id="pone.0025573-Turner1"><label>7</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Turner</surname><given-names>RJ</given-names></name><name><surname>Weiner</surname><given-names>JH</given-names></name><name><surname>Taylor</surname><given-names>DE</given-names></name></person-group>
+<year>1999</year>
+<article-title>Tellurite-mediated thiol oxidation in <italic>Escherichia coli</italic>.</article-title>
+<source>Microbiology</source>
+<volume>145</volume>
+<fpage>2549</fpage>
+<lpage>2557</lpage>
+<pub-id pub-id-type="pmid">10517608</pub-id></element-citation></ref><ref id="pone.0025573-Turner2"><label>8</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Turner</surname><given-names>RJ</given-names></name><name><surname>Aharonowitz</surname><given-names>Y</given-names></name><name><surname>Weiner</surname><given-names>JH</given-names></name><name><surname>Taylor</surname><given-names>DE</given-names></name></person-group>
+<year>2001</year>
+<article-title>Glutathione is a target in tellurite toxicity and is protected by tellurite resistance determinants in <italic>Escherichia coli</italic>.</article-title>
+<source>Can J Microbiol</source>
+<volume>47</volume>
+<fpage>33</fpage>
+<lpage>40</lpage>
+<pub-id pub-id-type="pmid">15049447</pub-id></element-citation></ref><ref id="pone.0025573-Farr1"><label>9</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Farr</surname><given-names>SB</given-names></name><name><surname>Kogoma</surname><given-names>T</given-names></name></person-group>
+<year>1991</year>
+<article-title>Oxidative stress responses in <italic>Escherichia coli</italic> and <italic>Salmonella typhimurium</italic>.</article-title>
+<source>Microbiol Rev</source>
+<volume>55</volume>
+<fpage>561</fpage>
+<lpage>585</lpage>
+<pub-id pub-id-type="pmid">1779927</pub-id></element-citation></ref><ref id="pone.0025573-Gaud1"><label>10</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Gaud&#x000fa;</surname><given-names>P</given-names></name><name><surname>Moon</surname><given-names>N</given-names></name><name><surname>Weiss</surname><given-names>B</given-names></name></person-group>
+<year>1997</year>
+<article-title>Regulation of the <italic>soxRS</italic> oxidative stress regulon. Reversible oxidation of the Fe-S centers of SoxR in vivo.</article-title>
+<source>J Biol Chem</source>
+<volume>272</volume>
+<fpage>5082</fpage>
+<lpage>5086</lpage>
+<pub-id pub-id-type="pmid">9030573</pub-id></element-citation></ref><ref id="pone.0025573-Blanchard1"><label>11</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Blanchard</surname><given-names>JL</given-names></name><name><surname>Wholey</surname><given-names>WY</given-names></name><name><surname>Conlon</surname><given-names>EM</given-names></name><name><surname>Pomposiello</surname><given-names>PJ</given-names></name></person-group>
+<year>2007</year>
+<article-title>Rapid changes in gene expression dynamics in response to superoxide reveal SoxRS-dependent and independent transcriptional networks.</article-title>
+<source>PLoS ONE</source>
+<volume>2</volume>
+<fpage>e1186</fpage>
+<pub-id pub-id-type="pmid">18000553</pub-id></element-citation></ref><ref id="pone.0025573-Pomposiello1"><label>12</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Pomposiello</surname><given-names>PJ</given-names></name><name><surname>Bennik</surname><given-names>MH</given-names></name><name><surname>Demple</surname><given-names>B</given-names></name></person-group>
+<year>2001</year>
+<article-title>Genome-wide transcriptional profiling of the <italic>Escherichia coli</italic> responses to superoxide stress and sodium salicylate.</article-title>
+<source>J Bacteriol</source>
+<volume>183</volume>
+<fpage>3890</fpage>
+<lpage>3902</lpage>
+<pub-id pub-id-type="pmid">11395452</pub-id></element-citation></ref><ref id="pone.0025573-Ying1"><label>13</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Ying</surname><given-names>W</given-names></name></person-group>
+<year>2008</year>
+<article-title>NAD&#x0002b;/NADH and NADP&#x0002b;/NADPH in cellular functions and cell death: regulation and biological consequences.</article-title>
+<source>Antioxid Redox Signal</source>
+<volume>10</volume>
+<fpage>179</fpage>
+<lpage>206</lpage>
+<pub-id pub-id-type="pmid">18020963</pub-id></element-citation></ref><ref id="pone.0025573-Chiong1"><label>14</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Chiong</surname><given-names>M</given-names></name><name><surname>Gonz&#x000e1;lez</surname><given-names>E</given-names></name><name><surname>Barra</surname><given-names>R</given-names></name><name><surname>V&#x000e1;squez</surname><given-names>C</given-names></name></person-group>
+<year>1988</year>
+<article-title>Purification and biochemical characterization of tellurite-reducing activities from <italic>Thermus thermophilus</italic> HB8.</article-title>
+<source>J Bacteriol</source>
+<volume>170</volume>
+<fpage>3269</fpage>
+<lpage>3273</lpage>
+<pub-id pub-id-type="pmid">3384810</pub-id></element-citation></ref><ref id="pone.0025573-Caldern2"><label>15</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Calder&#x000f3;n</surname><given-names>IL</given-names></name><name><surname>Arenas</surname><given-names>FA</given-names></name><name><surname>P&#x000e9;rez</surname><given-names>JM</given-names></name><name><surname>Fuentes</surname><given-names>DE</given-names></name><name><surname>Araya</surname><given-names>MA</given-names></name><etal/></person-group>
+<year>2006</year>
+<article-title>Catalases are NAD(P)H-dependent tellurite reductases.</article-title>
+<source>PLoS ONE</source>
+<volume>1</volume>
+<fpage>e70</fpage>
+<pub-id pub-id-type="pmid">17183702</pub-id></element-citation></ref><ref id="pone.0025573-Castro1"><label>16</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Castro</surname><given-names>ME</given-names></name><name><surname>Molina</surname><given-names>R</given-names></name><name><surname>D&#x000ed;az</surname><given-names>W</given-names></name><name><surname>Pichuantes</surname><given-names>SE</given-names></name><name><surname>V&#x000e1;squez</surname><given-names>CC</given-names></name></person-group>
+<year>2008</year>
+<article-title>The dihydrolipoamide dehydrogenase of <italic>Aeromonas caviae</italic> ST exhibits NADH dependent tellurite reductase activity.</article-title>
+<source>Biochem Biophys Res Commun</source>
+<volume>375</volume>
+<fpage>91</fpage>
+<lpage>94</lpage>
+<pub-id pub-id-type="pmid">18675788</pub-id></element-citation></ref><ref id="pone.0025573-Briault1"><label>17</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>B&#x000e9;riault</surname><given-names>R</given-names></name><name><surname>Hamel</surname><given-names>R</given-names></name><name><surname>Chenier</surname><given-names>D</given-names></name><name><surname>Mailloux</surname><given-names>RJ</given-names></name><name><surname>Joly</surname><given-names>H</given-names></name><etal/></person-group>
+<year>2007</year>
+<article-title>The overexpression of NADPH-producing enzymes counters the oxidative stress evoked by gallium, an iron mimetic.</article-title>
+<source>Biometals</source>
+<volume>20</volume>
+<fpage>165</fpage>
+<lpage>176</lpage>
+<pub-id pub-id-type="pmid">16900398</pub-id></element-citation></ref><ref id="pone.0025573-Singh1"><label>18</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Singh</surname><given-names>R</given-names></name><name><surname>Mailloux</surname><given-names>RJ</given-names></name><name><surname>Puiseux-Dao</surname><given-names>S</given-names></name><name><surname>Appanna</surname><given-names>VD</given-names></name></person-group>
+<year>2007</year>
+<article-title>Oxidative stress evokes a metabolic adaptation that favors increased NADPH synthesis and decreased NADH production in <italic>Pseudomonas fluorescens</italic>.</article-title>
+<source>J Bacteriol</source>
+<volume>189</volume>
+<fpage>6665</fpage>
+<lpage>6675</lpage>
+<pub-id pub-id-type="pmid">17573472</pub-id></element-citation></ref><ref id="pone.0025573-Siliprandi1"><label>19</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Siliprandi</surname><given-names>D</given-names></name><name><surname>De Meio</surname><given-names>RH</given-names></name><name><surname>Toninello</surname><given-names>A</given-names></name><name><surname>Zoccarato</surname><given-names>F</given-names></name></person-group>
+<year>1971</year>
+<article-title>The action of tellurite, a reagent for thiol groups, on mitochondria oxidative processes.</article-title>
+<source>Biochem Biophys Res Commun</source>
+<volume>45</volume>
+<fpage>1071</fpage>
+<lpage>1075</lpage>
+<pub-id pub-id-type="pmid">4330140</pub-id></element-citation></ref><ref id="pone.0025573-Siliprandi2"><label>20</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Siliprandi</surname><given-names>D</given-names></name><name><surname>Storey</surname><given-names>DT</given-names></name></person-group>
+<year>1973</year>
+<article-title>Interaction of tellurite with the respiratory chain in rat liver mitochondria.</article-title>
+<source>FEBS Lett</source>
+<volume>29</volume>
+<fpage>101</fpage>
+<lpage>104</lpage>
+<pub-id pub-id-type="pmid">4352501</pub-id></element-citation></ref><ref id="pone.0025573-Grose1"><label>21</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Grose</surname><given-names>JH</given-names></name><name><surname>Joss</surname><given-names>L</given-names></name><name><surname>Velick</surname><given-names>SF</given-names></name><name><surname>Roth</surname><given-names>JR</given-names></name></person-group>
+<year>2006</year>
+<article-title>Evidence that feedback inhibition of NAD kinase controls responses to oxidative stress.</article-title>
+<source>Proc Natl Acad Sci USA</source>
+<volume>103</volume>
+<fpage>7601</fpage>
+<lpage>7606</lpage>
+<pub-id pub-id-type="pmid">16682646</pub-id></element-citation></ref><ref id="pone.0025573-Krapp1"><label>22</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Krapp</surname><given-names>AD</given-names></name><name><surname>Humbert</surname><given-names>MV</given-names></name><name><surname>Carrillo</surname><given-names>N</given-names></name></person-group>
+<year>2011</year>
+<article-title>The <italic>soxRS</italic> response of <italic>Escherichia coli</italic> can be induced in the absence of oxidative stress and oxygen by modulation of NADPH.</article-title>
+<source>Microbiology</source>
+<volume>157</volume>
+<fpage>957</fpage>
+<lpage>965</lpage>
+<pub-id pub-id-type="pmid">21178165</pub-id></element-citation></ref><ref id="pone.0025573-Criddle1"><label>23</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Criddle</surname><given-names>DN</given-names></name><name><surname>Gillies</surname><given-names>S</given-names></name><name><surname>Baumgartner-Wilson</surname><given-names>HK</given-names></name><name><surname>Jaffar</surname><given-names>M</given-names></name><name><surname>Chinje</surname><given-names>EC</given-names></name><etal/></person-group>
+<year>2006</year>
+<article-title>Menadione-induced reactive oxygen species generation via redox cycling promotes apoptosis of murine pancreatic acinar cells.</article-title>
+<source>J Biol Chem</source>
+<volume>281</volume>
+<fpage>40485</fpage>
+<lpage>40492</lpage>
+<pub-id pub-id-type="pmid">17088248</pub-id></element-citation></ref><ref id="pone.0025573-Kosower1"><label>24</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kosower</surname><given-names>NS</given-names></name><name><surname>Kosower</surname><given-names>EM</given-names></name><name><surname>Wertheim</surname><given-names>B</given-names></name><name><surname>Correa</surname><given-names>WS</given-names></name></person-group>
+<year>1969</year>
+<article-title>Diamide, a new reagent for the intracellular oxidation of glutathione to the disulfide.</article-title>
+<source>Biochem Biophys Res Commun</source>
+<volume>37</volume>
+<fpage>593</fpage>
+<lpage>596</lpage>
+<pub-id pub-id-type="pmid">5353890</pub-id></element-citation></ref><ref id="pone.0025573-Liochev1"><label>25</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Liochev</surname><given-names>SI</given-names></name><name><surname>Benov</surname><given-names>L</given-names></name><name><surname>Touati</surname><given-names>D</given-names></name><name><surname>Fridovich</surname><given-names>I</given-names></name></person-group>
+<year>1999</year>
+<article-title>Induction of the <italic>soxRS</italic> regulon of <italic>Escherichia coli</italic> by superoxide.</article-title>
+<source>J Biol Chem</source>
+<volume>274</volume>
+<fpage>9479</fpage>
+<lpage>9481</lpage>
+<pub-id pub-id-type="pmid">10092630</pub-id></element-citation></ref><ref id="pone.0025573-Ralser1"><label>26</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Ralser</surname><given-names>M</given-names></name><name><surname>Wamelink</surname><given-names>MM</given-names></name><name><surname>Kowald</surname><given-names>A</given-names></name><name><surname>Gerisch</surname><given-names>B</given-names></name><name><surname>Heeren</surname><given-names>G</given-names></name><etal/></person-group>
+<year>2007</year>
+<article-title>Dynamic rerouting of the carbohydrate flux is key to counteracting oxidative stress.</article-title>
+<source>J Biol</source>
+<volume>6</volume>
+<fpage>10</fpage>
+<pub-id pub-id-type="pmid">18154684</pub-id></element-citation></ref><ref id="pone.0025573-Rui1"><label>27</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Rui</surname><given-names>B</given-names></name><name><surname>Shen</surname><given-names>T</given-names></name><name><surname>Zhou</surname><given-names>H</given-names></name><name><surname>Liu</surname><given-names>J</given-names></name><name><surname>Chen</surname><given-names>J</given-names></name><etal/></person-group>
+<year>2010</year>
+<article-title>A systematic investigation of <italic>Escherichia coli</italic> central carbon metabolism in response to superoxide stress.</article-title>
+<source>BMC Syst Biol</source>
+<volume>4</volume>
+<fpage>122</fpage>
+<pub-id pub-id-type="pmid">20809933</pub-id></element-citation></ref><ref id="pone.0025573-Rungrassamee1"><label>28</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Rungrassamee</surname><given-names>W</given-names></name><name><surname>Liu</surname><given-names>X</given-names></name><name><surname>Pomposiello</surname><given-names>PJ</given-names></name></person-group>
+<year>2008</year>
+<article-title>Activation of glucose transport under oxidative stress in <italic>Escherichia coli</italic>.</article-title>
+<source>Arch Microbiol</source>
+<volume>190</volume>
+<fpage>41</fpage>
+<lpage>49</lpage>
+<pub-id pub-id-type="pmid">18368388</pub-id></element-citation></ref><ref id="pone.0025573-Lundberg1"><label>29</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Lundberg</surname><given-names>BE</given-names></name><name><surname>Wolf</surname><given-names>RE</given-names><suffix>Jr</suffix></name><name><surname>Dinauer</surname><given-names>MC</given-names></name><name><surname>Xu</surname><given-names>Y</given-names></name><name><surname>Fang</surname><given-names>FC</given-names></name></person-group>
+<year>1999</year>
+<article-title>Glucose 6-phosphate dehydrogenase is required for <italic>Salmonella typhimurium</italic> virulence and resistance to reactive oxygen and nitrogen intermediates.</article-title>
+<source>Infect Immun</source>
+<volume>67</volume>
+<fpage>436</fpage>
+<lpage>438</lpage>
+<pub-id pub-id-type="pmid">9864251</pub-id></element-citation></ref><ref id="pone.0025573-Gir1"><label>30</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Gir&#x000f3;</surname><given-names>M</given-names></name><name><surname>Carrillo</surname><given-names>N</given-names></name><name><surname>Krapp</surname><given-names>AR</given-names></name></person-group>
+<year>2006</year>
+<article-title>Glucose-6-phosphate dehydrogenase and ferredoxin-NADP(H) reductase contribute to damage repair during the <italic>soxRS</italic> response of <italic>Escherichia coli</italic>.</article-title>
+<source>Microbiology</source>
+<volume>152</volume>
+<fpage>1119</fpage>
+<lpage>1128</lpage>
+<pub-id pub-id-type="pmid">16549675</pub-id></element-citation></ref><ref id="pone.0025573-Kirsch1"><label>31</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kirsch</surname><given-names>M</given-names></name><name><surname>de Groot</surname><given-names>H</given-names></name></person-group>
+<year>2001</year>
+<article-title>NAD(P)H, a directly operating antioxidant?</article-title>
+<source>FASEB J</source>
+<volume>15</volume>
+<fpage>1569</fpage>
+<lpage>1574</lpage>
+<pub-id pub-id-type="pmid">11427489</pub-id></element-citation></ref><ref id="pone.0025573-Petrat1"><label>32</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Petrat</surname><given-names>F</given-names></name><name><surname>Pindiur</surname><given-names>S</given-names></name><name><surname>Kirsch</surname><given-names>M</given-names></name><name><surname>de Groot</surname><given-names>H</given-names></name></person-group>
+<year>2003</year>
+<article-title>NAD(P)H, a primary target of <sup>1</sup>O<sub>2</sub> in mitochondria of intact cells.</article-title>
+<source>J Biol Chem</source>
+<volume>278</volume>
+<fpage>3298</fpage>
+<lpage>3307</lpage>
+<pub-id pub-id-type="pmid">12433931</pub-id></element-citation></ref><ref id="pone.0025573-Johnson1"><label>33</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Johnson</surname><given-names>RM</given-names></name><name><surname>Ravindranath</surname><given-names>Y</given-names></name><name><surname>el-Alfy</surname><given-names>M</given-names></name><name><surname>Goyette</surname><given-names>G</given-names><suffix>Jr</suffix></name></person-group>
+<year>1994</year>
+<article-title>Oxidant damage to erythrocyte membrane in glucose-6-phosphate dehydrogenase deficiency: correlation with in vivo reduced glutathione concentration and membrane protein oxidation.</article-title>
+<source>Blood</source>
+<volume>83</volume>
+<fpage>1117</fpage>
+<lpage>1123</lpage>
+<pub-id pub-id-type="pmid">8111051</pub-id></element-citation></ref><ref id="pone.0025573-Minard1"><label>34</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Minard</surname><given-names>KI</given-names></name><name><surname>Carroll</surname><given-names>CA</given-names></name><name><surname>Weintraub</surname><given-names>ST</given-names></name><name><surname>Mc-Alister-Henn</surname><given-names>L</given-names></name></person-group>
+<year>2007</year>
+<article-title>Changes in disulfide bond content of proteins in a yeast strain lacking major sources of NADPH.</article-title>
+<source>Free Radic Biol Med</source>
+<volume>42</volume>
+<fpage>106</fpage>
+<lpage>117</lpage>
+<pub-id pub-id-type="pmid">17157197</pub-id></element-citation></ref><ref id="pone.0025573-Smirnova1"><label>35</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Smirnova</surname><given-names>GV</given-names></name><name><surname>Oktyabrsky</surname><given-names>ON</given-names></name></person-group>
+<year>2005</year>
+<article-title>Glutathione in bacteria.</article-title>
+<source>Biochemistry (Moscow)</source>
+<volume>70</volume>
+<fpage>1199</fpage>
+<lpage>1211</lpage>
+<pub-id pub-id-type="pmid">16336178</pub-id></element-citation></ref><ref id="pone.0025573-Sambrook1"><label>36</label><element-citation publication-type="book">
+<person-group person-group-type="author"><name><surname>Sambrook</surname><given-names>J</given-names></name><name><surname>Fritsch</surname><given-names>EF</given-names></name><name><surname>Maniatis</surname><given-names>T</given-names></name></person-group>
+<year>1989</year>
+<source>Molecular Cloning: a laboratory manual. 2nd Ed</source>
+<publisher-name>Cold Spring Harbor Laboratory Press: Cold Spring Harbor, N.Y</publisher-name>
+</element-citation></ref><ref id="pone.0025573-Fuentes1"><label>37</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Fuentes</surname><given-names>DE</given-names></name><name><surname>Fuentes</surname><given-names>EL</given-names></name><name><surname>Castro</surname><given-names>ME</given-names></name><name><surname>P&#x000e9;rez</surname><given-names>JM</given-names></name><name><surname>Araya</surname><given-names>MA</given-names></name><etal/></person-group>
+<year>2007</year>
+<article-title>Cysteine metabolism-related genes and bacterial resistance to potassium tellurite.</article-title>
+<source>J Bacteriol</source>
+<volume>189</volume>
+<fpage>8953</fpage>
+<lpage>8960</lpage>
+<pub-id pub-id-type="pmid">17951385</pub-id></element-citation></ref><ref id="pone.0025573-Griffith1"><label>38</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Griffith</surname><given-names>KL</given-names></name><name><surname>Wolf</surname><given-names>RE</given-names><suffix>Jr</suffix></name></person-group>
+<year>2004</year>
+<article-title>Genetic evidence for pre-recruitment as the mechanism of transcription activation by SoxS of <italic>Escherichia coli</italic>: the dominance of DNA binding mutations of SoxS.</article-title>
+<source>J Mol Biol</source>
+<volume>344</volume>
+<fpage>1</fpage>
+<lpage>10</lpage>
+<pub-id pub-id-type="pmid">15504398</pub-id></element-citation></ref><ref id="pone.0025573-Miller1"><label>39</label><element-citation publication-type="book">
+<person-group person-group-type="author"><name><surname>Miller</surname><given-names>JH</given-names></name></person-group>
+<year>1972</year>
+<source>Experiments in Molecular Genetics, pp. 201&#x02013;205, 352&#x02013;355, and 431&#x02013;433</source>
+<publisher-loc>New York, USA</publisher-loc>
+<publisher-name>Cold Spring Harbor Laboratory Press</publisher-name>
+</element-citation></ref><ref id="pone.0025573-Echave1"><label>40</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Echave</surname><given-names>P</given-names></name><name><surname>Tamarit</surname><given-names>J</given-names></name><name><surname>Cabiscol</surname><given-names>E</given-names></name><name><surname>Ros</surname><given-names>J</given-names></name></person-group>
+<year>2003</year>
+<article-title>Novel antioxidant role of alcohol dehydrogenase E from <italic>Escherichia coli</italic>.</article-title>
+<source>J Biol Chem</source>
+<volume>32</volume>
+<fpage>30193</fpage>
+<lpage>30198</lpage>
+</element-citation></ref><ref id="pone.0025573-Herrera1"><label>41</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Herrera</surname><given-names>G</given-names></name><name><surname>Mart&#x000ed;nez</surname><given-names>A</given-names></name><name><surname>O'Connor</surname><given-names>JE</given-names></name><name><surname>Blanco</surname><given-names>M</given-names></name></person-group>
+<year>2003</year>
+<article-title>Functional assays of oxidative stress using genetically engineered <italic>Escherichia coli</italic> strains.</article-title>
+<source>Curr Protoc Cytom</source>
+<fpage>11.16.1</fpage>
+<lpage>11.16.9</lpage>
+</element-citation></ref><ref id="pone.0025573-Semchyshyn1"><label>42</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Semchyshyn</surname><given-names>H</given-names></name><name><surname>Bagnyukova</surname><given-names>T</given-names></name><name><surname>Lushchak</surname><given-names>V</given-names></name></person-group>
+<year>2005</year>
+<article-title>Involvement of <italic>soxRS</italic> regulon in response of <italic>Escherichia coli</italic> to oxidative stress induced by hydrogen peroxide.</article-title>
+<source>Biochemistry (Moscow)</source>
+<volume>70</volume>
+<fpage>1238</fpage>
+<lpage>1244</lpage>
+<pub-id pub-id-type="pmid">16336183</pub-id></element-citation></ref><ref id="pone.0025573-ContrerasNdel1"><label>43</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Contreras N del</surname><given-names>P</given-names></name><name><surname>V&#x000e1;squez</surname><given-names>CC</given-names></name></person-group>
+<year>2010</year>
+<article-title>Tellurite-induced carbonylation of the <italic>Escherichia coli</italic> pyruvate dehydrogenase multienzyme complex.</article-title>
+<source>Arch Microbiol</source>
+<volume>192</volume>
+<fpage>969</fpage>
+<lpage>973</lpage>
+<pub-id pub-id-type="pmid">20821193</pub-id></element-citation></ref><ref id="pone.0025573-Jiang1"><label>44</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Jiang</surname><given-names>ZY</given-names></name><name><surname>Hunt</surname><given-names>JV</given-names></name><name><surname>Wolff</surname><given-names>SP</given-names></name></person-group>
+<year>1992</year>
+<article-title>Ferrous ion oxidation in the presence of xylenol orange for detection of lipid hydroperoxide in low density lipoprotein.</article-title>
+<source>Anal Biochem</source>
+<volume>202</volume>
+<fpage>384</fpage>
+<lpage>389</lpage>
+<pub-id pub-id-type="pmid">1519766</pub-id></element-citation></ref><ref id="pone.0025573-Lushchak1"><label>45</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Lushchak</surname><given-names>VI</given-names></name><name><surname>Lushchak</surname><given-names>LP</given-names></name><name><surname>Mota</surname><given-names>AA</given-names></name><name><surname>Hermes-Lima</surname><given-names>M</given-names></name></person-group>
+<year>2001</year>
+<article-title>Oxidative stress and antioxidant defenses in goldfish <italic>Carassius auratus</italic> during anoxia and reoxygenation.</article-title>
+<source>Am J Physiol Regul Integr Comp Physiol</source>
+<volume>280</volume>
+<fpage>R100</fpage>
+<lpage>107</lpage>
+<pub-id pub-id-type="pmid">11124139</pub-id></element-citation></ref><ref id="pone.0025573-Murakami1"><label>46</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Murakami</surname><given-names>K</given-names></name><name><surname>Tsubouchi</surname><given-names>R</given-names></name><name><surname>Fukayama</surname><given-names>M</given-names></name><name><surname>Ogawa</surname><given-names>T</given-names></name><name><surname>Yoshino</surname><given-names>M</given-names></name></person-group>
+<year>2006</year>
+<article-title>Oxidative inactivation of reduced NADP-generating enzymes in <italic>E. coli</italic>: iron-dependent inactivation with affinity cleavage of NADP-isocitrate dehydrogenase.</article-title>
+<source>Arch Microbiol</source>
+<volume>186</volume>
+<fpage>385</fpage>
+<lpage>392</lpage>
+<pub-id pub-id-type="pmid">16897033</pub-id></element-citation></ref><ref id="pone.0025573-Sakamoto1"><label>47</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Sakamoto</surname><given-names>N</given-names></name><name><surname>Kotre</surname><given-names>AM</given-names></name><name><surname>Savageau</surname><given-names>MA</given-names></name></person-group>
+<year>1975</year>
+<article-title>Glutamate dehydrogenase from <italic>Escherichia coli</italic>: purification and properties.</article-title>
+<source>J Bacteriol</source>
+<volume>124</volume>
+<fpage>775</fpage>
+<lpage>783</lpage>
+<pub-id pub-id-type="pmid">241744</pub-id></element-citation></ref><ref id="pone.0025573-Liochev2"><label>48</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Liochev</surname><given-names>SI</given-names></name><name><surname>Fridovich</surname><given-names>I</given-names></name></person-group>
+<year>1992</year>
+<article-title>Fumarase C, the stable fumarase of <italic>Escherichia coli</italic>, is controlled by the <italic>soxRS</italic> regulon.</article-title>
+<source>Proc Natl Acad Sci USA</source>
+<volume>89</volume>
+<fpage>5892</fpage>
+<lpage>5896</lpage>
+<pub-id pub-id-type="pmid">1631070</pub-id></element-citation></ref><ref id="pone.0025573-Asnis1"><label>49</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Asnis</surname><given-names>RE</given-names></name></person-group>
+<year>1955</year>
+<article-title>A glutathione reductase from <italic>Escherichia coli</italic>.</article-title>
+<source>J Biol Chem</source>
+<volume>213</volume>
+<fpage>77</fpage>
+<lpage>85</lpage>
+<pub-id pub-id-type="pmid">14353908</pub-id></element-citation></ref><ref id="pone.0025573-Bradford1"><label>50</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Bradford</surname><given-names>MM</given-names></name></person-group>
+<year>1976</year>
+<article-title>A rapid and sensitive method for the quantitation of microgram quantities of protein utilizing the principle of protein-dye binding.</article-title>
+<source>Anal Biochem</source>
+<volume>72</volume>
+<fpage>248</fpage>
+<lpage>254</lpage>
+<pub-id pub-id-type="pmid">942051</pub-id></element-citation></ref><ref id="pone.0025573-Heber1"><label>51</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Heber</surname><given-names>UW</given-names></name><name><surname>Santarius</surname><given-names>KA</given-names></name></person-group>
+<year>1967</year>
+<article-title>Compartmentation and reduction of pyridine nucleotides in relation to photosynthesis.</article-title>
+<source>Biochim Biophys Acta</source>
+<volume>109</volume>
+<fpage>390</fpage>
+<lpage>408</lpage>
+</element-citation></ref><ref id="pone.0025573-Zhang1"><label>52</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Zhang</surname><given-names>Z</given-names></name><name><surname>Yu</surname><given-names>J</given-names></name><name><surname>Stanton</surname><given-names>RC</given-names></name></person-group>
+<year>2000</year>
+<article-title>A method for determination of pyridine nucleotides using a single extract.</article-title>
+<source>Anal Biochem</source>
+<volume>285</volume>
+<fpage>163</fpage>
+<lpage>167</lpage>
+<pub-id pub-id-type="pmid">10998277</pub-id></element-citation></ref><ref id="pone.0025573-Leonardo1"><label>53</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Leonardo</surname><given-names>MR</given-names></name><name><surname>Dailly</surname><given-names>Y</given-names></name><name><surname>Clark</surname><given-names>DP</given-names></name></person-group>
+<year>1996</year>
+<article-title>Role of NAD in regulating the <italic>adhE</italic> gene of <italic>Escherichia coli</italic>.</article-title>
+<source>J Bacteriol</source>
+<volume>178</volume>
+<fpage>6013</fpage>
+<lpage>6018</lpage>
+<pub-id pub-id-type="pmid">8830700</pub-id></element-citation></ref><ref id="pone.0025573-Kohanski1"><label>54</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kohanski</surname><given-names>MA</given-names></name><name><surname>Dwyer</surname><given-names>DJ</given-names></name><name><surname>Hayete</surname><given-names>B</given-names></name><name><surname>Lawrence</surname><given-names>CA</given-names></name><name><surname>Collins</surname><given-names>JJ</given-names></name></person-group>
+<year>2007</year>
+<article-title>A common mechanism of cellular death induced by bactericidal antibiotics.</article-title>
+<source>Cell</source>
+<volume>130</volume>
+<fpage>797</fpage>
+<lpage>810</lpage>
+<pub-id pub-id-type="pmid">17803904</pub-id></element-citation></ref><ref id="pone.0025573-Tietze1"><label>55</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Tietze</surname><given-names>F</given-names></name></person-group>
+<year>1969</year>
+<article-title>Enzymic method for quantitative determination of nanogram amounts of total and oxidized glutathione: applications to mammalian blood and other tissues.</article-title>
+<source>Anal Biochem</source>
+<volume>27</volume>
+<fpage>502</fpage>
+<lpage>522</lpage>
+<pub-id pub-id-type="pmid">4388022</pub-id></element-citation></ref><ref id="pone.0025573-Griffith2"><label>56</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Griffith</surname><given-names>OW</given-names></name></person-group>
+<year>1980</year>
+<article-title>Determination of glutathione and glutathione disulfide using glutathione reductase and 2-vinylpyridine.</article-title>
+<source>Anal Biochem</source>
+<volume>106</volume>
+<fpage>207</fpage>
+<lpage>212</lpage>
+<pub-id pub-id-type="pmid">7416462</pub-id></element-citation></ref><ref id="pone.0025573-Hasan1"><label>57</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Hasan</surname><given-names>MR</given-names></name><name><surname>Rahman</surname><given-names>M</given-names></name><name><surname>Jaques</surname><given-names>S</given-names></name><name><surname>Purwantini</surname><given-names>E</given-names></name><name><surname>Daniels</surname><given-names>L</given-names></name></person-group>
+<year>2010</year>
+<article-title>Glucose-6-phosphate accumulation in mycobacteria: implications for a novel F420-dependent anti-oxidant defense system.</article-title>
+<source>J Biol Chem</source>
+<volume>285</volume>
+<fpage>19135</fpage>
+<lpage>19144</lpage>
+<pub-id pub-id-type="pmid">20075070</pub-id></element-citation></ref></ref-list></back></article>

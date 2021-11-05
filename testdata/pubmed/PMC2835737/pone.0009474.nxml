@@ -1,0 +1,513 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.0 20120330//EN" "JATS-archivearticle1.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article"><?properties open_access?><front><journal-meta><journal-id journal-id-type="nlm-ta">PLoS One</journal-id><journal-id journal-id-type="iso-abbrev">PLoS ONE</journal-id><journal-id journal-id-type="publisher-id">plos</journal-id><journal-id journal-id-type="pmc">plosone</journal-id><journal-title-group><journal-title>PLoS ONE</journal-title></journal-title-group><issn pub-type="epub">1932-6203</issn><publisher><publisher-name>Public Library of Science</publisher-name><publisher-loc>San Francisco, USA</publisher-loc></publisher></journal-meta><article-meta><article-id pub-id-type="pmid">20224824</article-id><article-id pub-id-type="pmc">2835737</article-id><article-id pub-id-type="publisher-id">09-PONE-RA-13877R1</article-id><article-id pub-id-type="doi">10.1371/journal.pone.0009474</article-id><article-categories><subj-group subj-group-type="heading"><subject>Research Article</subject></subj-group><subj-group subj-group-type="Discipline"><subject>Computational Biology/Population Genetics</subject><subject>Evolutionary Biology/Bioinformatics</subject><subject>Evolutionary Biology/Evolutionary and Comparative Genetics</subject><subject>Evolutionary Biology/Genomics</subject><subject>Genetics and Genomics/Gene Expression</subject><subject>Genetics and Genomics/Genetics of Disease</subject><subject>Genetics and Genomics/Population Genetics</subject></subj-group></article-categories><title-group><article-title>Dosage Sensitivity Shapes the Evolution of Copy-Number Varied Regions</article-title><alt-title alt-title-type="running-head">CNVs and Dosage Sensitivity</alt-title></title-group><contrib-group><contrib contrib-type="author"><name><surname>Schuster-B&#x000f6;ckler</surname><given-names>Benjamin</given-names></name><xref ref-type="aff" rid="aff1">
+<sup>1</sup>
+</xref></contrib><contrib contrib-type="author"><name><surname>Conrad</surname><given-names>Donald</given-names></name><xref ref-type="aff" rid="aff2">
+<sup>2</sup>
+</xref></contrib><contrib contrib-type="author"><name><surname>Bateman</surname><given-names>Alex</given-names></name><xref ref-type="aff" rid="aff2">
+<sup>2</sup>
+</xref><xref ref-type="corresp" rid="cor1">
+<sup>&#x0002a;</sup>
+</xref></contrib></contrib-group><aff id="aff1">
+<label>1</label>
+<addr-line>European Molecular Biology Laboratory-Centre for Genomic Regulation Systems Biology Unit, Centre for Genomic Regulation, Barcelona, Spain</addr-line>
+</aff><aff id="aff2">
+<label>2</label>
+<addr-line>Wellcome Trust Sanger Institute, Wellcome Trust Genome Campus, Cambridge, United Kingdom</addr-line>
+</aff><contrib-group><contrib contrib-type="editor"><name><surname>Stajich</surname><given-names>Jason E.</given-names></name><role>Editor</role><xref ref-type="aff" rid="edit1"/></contrib></contrib-group><aff id="edit1">University of California, Riverside, United States of America</aff><author-notes><corresp id="cor1">&#x0002a; E-mail: <email>agb@sanger.ac.uk</email></corresp><fn fn-type="con"><p>Conceived and designed the experiments: BPSB AB. Performed the experiments: BPSB. Analyzed the data: BPSB. Contributed reagents/materials/analysis tools: DFC.</p></fn></author-notes><pub-date pub-type="collection"><year>2010</year></pub-date><pub-date pub-type="epub"><day>10</day><month>3</month><year>2010</year></pub-date><volume>5</volume><issue>3</issue><elocation-id>e9474</elocation-id><history><date date-type="received"><day>28</day><month>10</month><year>2009</year></date><date date-type="accepted"><day>12</day><month>1</month><year>2010</year></date></history><permissions><copyright-statement>Schuster-B&#x000f6;ckler et al.</copyright-statement><copyright-year>2010</copyright-year><license xlink:href="http://creativecommons.org/licenses/by/4.0/"><license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are properly credited.</license-p></license></permissions><abstract><p>Dosage sensitivity is an important evolutionary force which impacts on gene dispensability and duplicability. The newly available data on human copy-number variation (CNV) allow an analysis of the most recent and ongoing evolution. Provided that heterozygous gene deletions and duplications actually change gene dosage, we expect to observe negative selection against CNVs encompassing dosage sensitive genes. In this study, we make use of several sources of population genetic data to identify selection on structural variations of dosage sensitive genes. We show that CNVs can directly affect expression levels of contained genes. We find that genes encoding members of protein complexes exhibit limited expression variation and overlap significantly with a manually derived set of dosage sensitive genes. We show that complexes and other dosage sensitive genes are underrepresented in CNV regions, with a particular bias against frequent variations and duplications. These results suggest that dosage sensitivity is a significant force of negative selection on regions of copy-number variation.</p></abstract><counts><page-count count="10"/></counts></article-meta></front><body><sec id="s1"><title>Introduction</title><p>It has been estimated that at least 2&#x00025; of the human genome is affected by structural variations <xref rid="pone.0009474-Cooper1" ref-type="bibr">[1]</xref>, such as inversions, small insertions/deletions or large copy-number variants (CNVs) <xref rid="pone.0009474-Conrad1" ref-type="bibr">[2]</xref>. These sometimes large rearrangements can be seen as an important driving force of genome evolution <xref rid="pone.0009474-Freeling1" ref-type="bibr">[3]</xref>. As a consequence, theories on gene evolution have to be re-evaluated in the context of such rapid and widespread large scale variation. Previous studies have already shown that the locations and functional annotations of genes in CNV regions are strongly biased <xref rid="pone.0009474-Cooper1" ref-type="bibr">[1]</xref>, <xref rid="pone.0009474-Nguyen1" ref-type="bibr">[4]</xref>. CNVs are found more often in pericentromeric and subtelomeric regions and they overlap significantly with regions of segmental duplications. Genes within CNV regions are frequently involved in sensory perception and immune system activity, to a lesser extent in cell adhesion and in a number of cases signal transduction <xref rid="pone.0009474-Cooper1" ref-type="bibr">[1]</xref>. Furthermore, it has also been observed that copy-number variability is negatively correlated with protein interaction network metrics such as connectivity and centrality <xref rid="pone.0009474-Dopman1" ref-type="bibr">[5]</xref>. Two theories have been postulated to explain this non-random distribution of CNVs. The <underline>mutational hypothesis</underline> states that most CNVs are in effect phenotypically neutral, but are carried by flanking genomic elements like segmental duplication or ALU repeats which cause the bias in CNV distribution. The opposing theory could be called the <underline>selection hypothesis</underline>, stating that negative and positive selection shape the distribution of CNVs through the functional elements they encompass.</p><p>Gene duplication and loss are key mechanisms in evolution <xref rid="pone.0009474-Prince1" ref-type="bibr">[6]</xref>. Historically, it was assumed in this context that most genes can be duplicated without substantial negative fitness effects. Similarly, the established hypothesis explaining gene dominance formulated by Wright <xref rid="pone.0009474-Wright1" ref-type="bibr">[7]</xref> states that dominance is caused by &#x0201c;bottlenecks&#x0201d; in metabolic pathways and is generally rare <xref rid="pone.0009474-Orr1" ref-type="bibr">[8]</xref>. This is in stark contrast to the observation that at least 20&#x00025; of the entries in the OMIM database of human diseases with a Mendelian pattern of inheritance are described as <underline>heterozygous</underline> mutations <xref rid="pone.0009474-Kondrashov1" ref-type="bibr">[9]</xref>. It has also been shown that there are distinct differences between genes as to their duplicability <xref rid="pone.0009474-Yang1" ref-type="bibr">[10]</xref>, <xref rid="pone.0009474-Veitia1" ref-type="bibr">[11]</xref> and that duplicated genes are in many cases still under negative selection <xref rid="pone.0009474-Lynch1" ref-type="bibr">[12]</xref>, <xref rid="pone.0009474-Kondrashov2" ref-type="bibr">[13]</xref>. Birchler <italic>et al.</italic>
+<xref rid="pone.0009474-Birchler1" ref-type="bibr">[14]</xref> reported widespread dosage compensation upon polyploidization of several large chromosomal regions in maize. For all these reasons, it is now widely accepted that some genes are <underline>dosage sensitive</underline>.</p><p>What are the underlying causes of dosage sensitivity? Papp <italic>et al.</italic>
+<xref rid="pone.0009474-Papp1" ref-type="bibr">[15]</xref> postulated that multi-protein complexes need to maintain the stoichiometry of their subunits to perform their biological function (the <underline>balance hypothesis</underline>). A range of experiments lend support to the balance hypothesis. It has been noted that expression levels of interacting proteins are highly co-ordinated <xref rid="pone.0009474-Jansen1" ref-type="bibr">[16]</xref>, hinting that proportionality of subunit abundances is important. In a previous study, we also reported an enrichment for dominant disease mutations amongst interacting proteins <xref rid="pone.0009474-SchusterBockler1" ref-type="bibr">[17]</xref>. Within the conceptual framework of the balance hypothesis, this can be explained by the impact of even small stoichiometric changes (the one mutated allele) on the function of the entire protein complex. It has also been argued that tolerance towards polyploidization, compared to the sometimes severe effects of smaller duplications can be explained by conservation of stoichiometry <xref rid="pone.0009474-Aury1" ref-type="bibr">[18]</xref>. Finally, it has been noted that highly-interacting proteins in higher organisms belong to small gene families <xref rid="pone.0009474-Yang1" ref-type="bibr">[10]</xref>, which could be conveniently explained by a bias against duplication acting on multi-protein complexes.</p><p>There have been, however, several conflicting reports. Deutschbauer <italic>et al.</italic>
+<xref rid="pone.0009474-Deutschbauer1" ref-type="bibr">[19]</xref> performed an exhaustive heterozygous deletion screen in yeast. They reported only 3&#x00025; of genes to be haploinsufficient. While these genes were enriched for members of protein complexes, their overexpression did not cause a similar phenotype as their deletion. Subsequently, Sopko <italic>et al.</italic>
+<xref rid="pone.0009474-Sopko1" ref-type="bibr">[20]</xref> systematically induced gene overexpression for all ORFs in yeast. The genes found to be toxic when overexpressed did not overlap with the haploinsufficient genes described by Deutschbauer <italic>et al.</italic>, and were not significantly enriched for protein complexes.</p><p>These findings point towards a more complex relationship between haploinsufficiency and duplication sensitivity <xref rid="pone.0009474-Veitia2" ref-type="bibr">[21]</xref>. A limited number of enzymes are sensitive to low dosage because they are the rate limiting factor in a biochemical reaction. A range of proteins are likely to cause non-physiological binding or even agglomeration as a result of overexpression, as exemplified by susceptibility to early-onset Alzheimer's disease as a result of duplication of the APP locus <xref rid="pone.0009474-Lee1" ref-type="bibr">[22]</xref>. Finally, haploinsufficiency as well as duplication sensitivity are likely to affect those <underline>master-regulators</underline> controlling the balanced expression of a range of other proteins <xref rid="pone.0009474-Birchler2" ref-type="bibr">[23]</xref>, <xref rid="pone.0009474-Birchler3" ref-type="bibr">[24]</xref>. These proteins are in fact often complexes <xref rid="pone.0009474-Birchler4" ref-type="bibr">[25]</xref>.</p><p>The newly developed CORUM database <xref rid="pone.0009474-Ruepp1" ref-type="bibr">[26]</xref> contains mammalian protein complexes that were manually annotated by expert curators. It contains a large number of gene regulatory and transcriptional genes, as listed in <xref ref-type="table" rid="pone-0009474-t001">Table 1</xref>. In this work, we use gene expression and copy-number variation data to assess the relationship between protein complexes from CORUM, dosage sensitivity and recent gene evolution in the human population. We show that changes in gene copy number have a weak but measurable effect on gene expression. We find that protein complex genes are enriched for known dosage sensitive genes and exhibit substantially lower expressional noise than other genes. Consequentially, we observe that dosage sensitive genes are underrepresented in CNV regions.</p><table-wrap id="pone-0009474-t001" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0009474.t001</object-id><label>Table 1</label><caption><title>Composition of the CORUM database.</title></caption><alternatives><graphic id="pone-0009474-t001-1" xlink:href="pone.0009474.t001"/><table frame="hsides" rules="groups"><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup><thead><tr><td align="left" rowspan="1" colspan="1">GO-Slim Term</td><td align="left" rowspan="1" colspan="1">Number of CORUM genes</td><td align="left" rowspan="1" colspan="1">P-Value</td></tr></thead><tbody><tr><td align="left" rowspan="1" colspan="1">protein binding</td><td align="left" rowspan="1" colspan="1">1348</td><td align="left" rowspan="1" colspan="1">
+<inline-formula><inline-graphic xlink:href="pone.0009474.e001.jpg" mimetype="image"/></inline-formula>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">nucleus</td><td align="left" rowspan="1" colspan="1">1058</td><td align="left" rowspan="1" colspan="1">
+<inline-formula><inline-graphic xlink:href="pone.0009474.e002.jpg" mimetype="image"/></inline-formula>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">macromolecule metabolic process</td><td align="left" rowspan="1" colspan="1">1321</td><td align="left" rowspan="1" colspan="1">
+<inline-formula><inline-graphic xlink:href="pone.0009474.e003.jpg" mimetype="image"/></inline-formula>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">nucleobase, nucleoside, nucleotide and nucleic acid metabolic process</td><td align="left" rowspan="1" colspan="1">852</td><td align="left" rowspan="1" colspan="1">
+<inline-formula><inline-graphic xlink:href="pone.0009474.e004.jpg" mimetype="image"/></inline-formula>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">nucleic acid binding</td><td align="left" rowspan="1" colspan="1">708</td><td align="left" rowspan="1" colspan="1">
+<inline-formula><inline-graphic xlink:href="pone.0009474.e005.jpg" mimetype="image"/></inline-formula>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">cytoplasm</td><td align="left" rowspan="1" colspan="1">933</td><td align="left" rowspan="1" colspan="1">
+<inline-formula><inline-graphic xlink:href="pone.0009474.e006.jpg" mimetype="image"/></inline-formula>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">regulation of biological process</td><td align="left" rowspan="1" colspan="1">722</td><td align="left" rowspan="1" colspan="1">
+<inline-formula><inline-graphic xlink:href="pone.0009474.e007.jpg" mimetype="image"/></inline-formula>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">chromosome</td><td align="left" rowspan="1" colspan="1">168</td><td align="left" rowspan="1" colspan="1">
+<inline-formula><inline-graphic xlink:href="pone.0009474.e008.jpg" mimetype="image"/></inline-formula>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">structural molecule activity</td><td align="left" rowspan="1" colspan="1">227</td><td align="left" rowspan="1" colspan="1">
+<inline-formula><inline-graphic xlink:href="pone.0009474.e009.jpg" mimetype="image"/></inline-formula>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">transcription regulator activity</td><td align="left" rowspan="1" colspan="1">301</td><td align="left" rowspan="1" colspan="1">
+<inline-formula><inline-graphic xlink:href="pone.0009474.e010.jpg" mimetype="image"/></inline-formula>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">biosynthetic process</td><td align="left" rowspan="1" colspan="1">279</td><td align="left" rowspan="1" colspan="1">
+<inline-formula><inline-graphic xlink:href="pone.0009474.e011.jpg" mimetype="image"/></inline-formula>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">helicase activity</td><td align="left" rowspan="1" colspan="1">53</td><td align="left" rowspan="1" colspan="1">
+<inline-formula><inline-graphic xlink:href="pone.0009474.e012.jpg" mimetype="image"/></inline-formula>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">cell death</td><td align="left" rowspan="1" colspan="1">146</td><td align="left" rowspan="1" colspan="1">
+<inline-formula><inline-graphic xlink:href="pone.0009474.e013.jpg" mimetype="image"/></inline-formula>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">protein transporter activity</td><td align="left" rowspan="1" colspan="1">45</td><td align="left" rowspan="1" colspan="1">
+<inline-formula><inline-graphic xlink:href="pone.0009474.e014.jpg" mimetype="image"/></inline-formula>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">response to stimulus</td><td align="left" rowspan="1" colspan="1">378</td><td align="left" rowspan="1" colspan="1">
+<inline-formula><inline-graphic xlink:href="pone.0009474.e015.jpg" mimetype="image"/></inline-formula>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">translation regulator activity</td><td align="left" rowspan="1" colspan="1">34</td><td align="left" rowspan="1" colspan="1">
+<inline-formula><inline-graphic xlink:href="pone.0009474.e016.jpg" mimetype="image"/></inline-formula>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">cell differentiation</td><td align="left" rowspan="1" colspan="1">232</td><td align="left" rowspan="1" colspan="1">
+<inline-formula><inline-graphic xlink:href="pone.0009474.e017.jpg" mimetype="image"/></inline-formula>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">extracellular region</td><td align="left" rowspan="1" colspan="1">77</td><td align="left" rowspan="1" colspan="1">
+<inline-formula><inline-graphic xlink:href="pone.0009474.e018.jpg" mimetype="image"/></inline-formula>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">membrane</td><td align="left" rowspan="1" colspan="1">532</td><td align="left" rowspan="1" colspan="1">
+<inline-formula><inline-graphic xlink:href="pone.0009474.e019.jpg" mimetype="image"/></inline-formula>
+</td></tr></tbody></table></alternatives><table-wrap-foot><fn id="nt101"><label/><p>Underrepresented terms are set in bold font.</p></fn></table-wrap-foot></table-wrap></sec><sec sec-type="methods" id="s2"><title>Methods</title><sec id="s2a"><title>The CORUM Database of Mammalian Protein Complexes</title><p>The CORUM database <xref rid="pone.0009474-Ruepp1" ref-type="bibr">[26]</xref> is a manually annotated resource, containing, at the time of writing, 1679 protein complexes from 10 mammalian species, with a strong focus on human. Entries are based on specific publications, not high-throughput experiments. <xref ref-type="table" rid="pone-0009474-t001">Table 1</xref> lists Gene Ontology annotations for which CORUM deviates significantly from the rest of the genome. CORUM is enriched for nuclear proteins and contains a large number of transcriptional regulators. Conversely, extracellular and membrane proteins are underrepresented in the dataset. <xref ref-type="fig" rid="pone-0009474-g001">Figure 1</xref> visually conveys an idea of the size distribution of this network of human complexes, as well as reflecting its highly interconnected nature. Relationships for 2080 proteins in 1109 human complexes were downloaded from the CORUM website <xref rid="pone.0009474-CORUM.1" ref-type="bibr">[27]</xref>. 1975 Human Genome Nomenclature Committee (HGNC) identifiers <xref rid="pone.0009474-Bruford1" ref-type="bibr">[28]</xref>, <xref rid="pone.0009474-Human1" ref-type="bibr">[29]</xref> for 2028 proteins could be mapped. Genomic coordinates for these gene identifiers were retrieved from EnsEMBL <xref rid="pone.0009474-Ensembl.1" ref-type="bibr">[30]</xref>
+<italic>via</italic> BioMART.</p><fig id="pone-0009474-g001" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0009474.g001</object-id><label>Figure 1</label><caption><title>A network representation of the CORUM database.</title><p>Nodes represent complexes and are ordered by number of unique components (shown as number next to groups). Edges denote shared components between complexes. The number of shared components is reflected in the colour (from yellow (few) to red (many) shared components) as well as in the line width. The large, highly overlapping complexes in the first row are mainly modules of the ribosome (6 out of 12) and spliceosome (3 out of 12). Other large complexes include RNA polymerase, respiratory chain complex and the proteasome. The group of complexes with only 1 member are homo-dimers.</p></caption><graphic xlink:href="pone.0009474.g001"/></fig></sec><sec id="s2b"><title>Interaction and Complex Data</title><p>As an alternative to the manually compiled set of complexes in CORUM, an independent set of putative complexes was computationally derived from high-throughput protein interaction experiments by identifying highly connected clusters of proteins in an extended network of human protein interactions <xref rid="pone.0009474-Krogan1" ref-type="bibr">[31]</xref>. Data from three recent studies <xref rid="pone.0009474-Rual1" ref-type="bibr">[32]</xref>&#x02013;<xref rid="pone.0009474-Ewing1" ref-type="bibr">[34]</xref> were merged into one network. Interaction information was retrieved from IntAct <xref rid="pone.0009474-Hermjakob1" ref-type="bibr">[35]</xref>, <xref rid="pone.0009474-IntAct.1" ref-type="bibr">[36]</xref>. UniProt identifiers were mapped to HGNC identifiers using the cross references in the full UniProt entries. Clustering analysis was performed using the Markov clustering tool mcl <xref rid="pone.0009474-vanDongen1" ref-type="bibr">[37]</xref> (parameter <inline-formula><inline-graphic xlink:href="pone.0009474.e020.jpg" mimetype="image"/></inline-formula>). The alternative complex set was composed of all clusters with more than 3 components, containing 2325 unique genes.</p></sec><sec id="s2c"><title>Set of Dosage Sensitive Genes</title><p>Dosage sensitive genes were extracted from the annotations of the Baylor College of Medicine Medical Genetics Laboratory 105k diagnostic Chromosomal Microarray (version 7) <xref rid="pone.0009474-Baylor1" ref-type="bibr">[38]</xref>. This post-natal screening tool comprises a manually compiled set of 146 genes known to be sensitive to chromosomal imbalances <xref rid="pone.0009474-Cheung1" ref-type="bibr">[39]</xref>.</p><p>A separate set of genes overexpressed in cancer tissue was also used <xref rid="pone.0009474-Axelsen1" ref-type="bibr">[40]</xref>. The dataset contains 2362 genes which are at least 4-fold overexpressed in brain (astrocytoma and glioblastoma), breast, colon, endometrium, kidney, liver, lung, ovary, prostate, skin, and thyroid cancers compared to healthy tissue of the same type.</p></sec><sec id="s2d"><title>Expression Profiles</title><p>Gene expression data were acquired from two independent sources: Expression data for 44760 probes applied to samples from 79 different tissue types were provided by GNF SymAtlas <xref rid="pone.0009474-Su1" ref-type="bibr">[41]</xref>, <xref rid="pone.0009474-GNF1" ref-type="bibr">[42]</xref>. Population-independently normalised expression data for 47293 probes applied to samples from lymphoblast cell lines of 270 HapMap individuals were provided by Stranger <italic>et al.</italic>
+<xref rid="pone.0009474-Stranger1" ref-type="bibr">[43]</xref>, <xref rid="pone.0009474-Gene1" ref-type="bibr">[44]</xref>. Probe identifiers were mapped to HGNC gene names through EnsEMBL BioMart. Probes which could not be mapped to a gene name were exluded from further analysis. The resulting matrices contained expression data for 17122 genes (HapMap set) and 15012 genes (tissue set), respectively. Due to technical limitations of the Illumina WG6 expression arrays used by Stranger <italic>et al.</italic>, there is a correlation between detectable expression variation and total expression strength (<xref ref-type="fig" rid="pone-0009474-g002">Figure 2A</xref>) for genes with low overall expression. Therefore, 6440 genes with an absolute population standard deviation <inline-formula><inline-graphic xlink:href="pone.0009474.e021.jpg" mimetype="image"/></inline-formula> were removed from the dataset.</p><fig id="pone-0009474-g002" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0009474.g002</object-id><label>Figure 2</label><caption><title>Coefficients of gene expression variation (CV), defined as standard deviation normalised to expression mean, vary for CORUM and non-CORUM genes.</title><p>A) Effects of resolution and dynamic range of expression arrays on CVs. The measurable variation in gene expression is limited by the sensitivity of the employed array technology. Genes which are expressed at extremely low levels, or not expressed at all, cluster in the low expression/low CV region. Shown in grey are genes which were excluded from further calculations (standard deviation <inline-formula><inline-graphic xlink:href="pone.0009474.e022.jpg" mimetype="image"/></inline-formula>). B) CORUM genes have significantly smaller CVs than non-CORUM genes. Outliers beyond <inline-formula><inline-graphic xlink:href="pone.0009474.e023.jpg" mimetype="image"/></inline-formula> are not shown. C) Large CORUM complexes exhibit lower average CVs of their members.</p></caption><graphic xlink:href="pone.0009474.g002"/></fig></sec><sec id="s2e"><title>Correlation Computation</title><p>As a measure of correlation between expression levels of two genes in different tissues/individuals, the Pearson product-moment correlation coefficient was employed. For two vectors <inline-formula><inline-graphic xlink:href="pone.0009474.e024.jpg" mimetype="image"/></inline-formula> and <inline-formula><inline-graphic xlink:href="pone.0009474.e025.jpg" mimetype="image"/></inline-formula> representing genes with <inline-formula><inline-graphic xlink:href="pone.0009474.e026.jpg" mimetype="image"/></inline-formula> expression levels, the correlation <inline-formula><inline-graphic xlink:href="pone.0009474.e027.jpg" mimetype="image"/></inline-formula> is given by<disp-formula><graphic xlink:href="pone.0009474.e028.jpg" mimetype="image" position="float"/><label>(1)</label></disp-formula>where <inline-formula><inline-graphic xlink:href="pone.0009474.e029.jpg" mimetype="image"/></inline-formula> and <inline-formula><inline-graphic xlink:href="pone.0009474.e030.jpg" mimetype="image"/></inline-formula> are the means and <inline-formula><inline-graphic xlink:href="pone.0009474.e031.jpg" mimetype="image"/></inline-formula> and <inline-formula><inline-graphic xlink:href="pone.0009474.e032.jpg" mimetype="image"/></inline-formula> are the standard deviations of <inline-formula><inline-graphic xlink:href="pone.0009474.e033.jpg" mimetype="image"/></inline-formula> and <inline-formula><inline-graphic xlink:href="pone.0009474.e034.jpg" mimetype="image"/></inline-formula>, respectively. For complexes with more than 2 components, correlations for all <inline-formula><inline-graphic xlink:href="pone.0009474.e035.jpg" mimetype="image"/></inline-formula> combinations of gene pairs were averaged.</p></sec><sec id="s2f"><title>Copy-Number Variations</title><p>Chromosomal locations of variations relative to the NCBI36 human genome assembly were downloaded from the Database of Genomic Variants (DGV) <xref rid="pone.0009474-Iafrate1" ref-type="bibr">[45]</xref>, <xref rid="pone.0009474-Database1" ref-type="bibr">[46]</xref>. This data also contains information on number of individuals and gain/loss annotation per CNV. CNV locations and WGTP array hybridisation values for each HapMap individual were provided by Redon <italic>et al.</italic>
+<xref rid="pone.0009474-Redon1" ref-type="bibr">[47]</xref>, <xref rid="pone.0009474-Redon2" ref-type="bibr">[48]</xref>.</p></sec><sec id="s2g"><title>Segmental Duplications</title><p>Segmental duplications of <inline-formula><inline-graphic xlink:href="pone.0009474.e036.jpg" mimetype="image"/></inline-formula> sequence identity and <inline-formula><inline-graphic xlink:href="pone.0009474.e037.jpg" mimetype="image"/></inline-formula> kilobase length were provided by the segmental duplication database <xref rid="pone.0009474-She1" ref-type="bibr">[49]</xref>, <xref rid="pone.0009474-Segmental1" ref-type="bibr">[50]</xref>.</p></sec><sec id="s2h"><title>Gene Ontology Analysis</title><p>Gene Ontology (GO) annotations from the GOA project <xref rid="pone.0009474-Camon1" ref-type="bibr">[51]</xref> were mapped to HGNC identifiers through UniProt accessions. To reduce complexity, GO terms were integrated into GO-slim categories, as defined by the GOA project <xref rid="pone.0009474-Gene2" ref-type="bibr">[52]</xref>.</p></sec><sec id="s2i"><title>Analysis of Selection Pressure</title><p>dN/dS values for human genes relative to mouse orthologs were acquired from EnsEmbl via BioMart. Only genes with a single unique ortholog in mouse were used in the analyses.</p></sec><sec id="s2j"><title>Identification of Paralogs</title><p>In-species paralogs for 10755 HGNC gene identifiers were downloaded from EnsEmbl Compara via BioMart. The paralog prediction uses automatically generated maximum-likelihood phylogenetic trees. Details can be found at the EnsEMBL compara website.</p></sec><sec id="s2k"><title>P-Values</title><p>Statistical significance of overlaps between gene sets was computed with Fisher's exact test (FET). The Mann-Whitney-U test (MWU) was employed to determine significance of differences between two distributions. In cases of multiple testing, Bonferroni correction was applied. All calculations were performed in R <xref rid="pone.0009474-R1" ref-type="bibr">[53]</xref>. Significance of differences in dN/dS ratios was calculated by random resampling: For the null hypothesis, 1000 sets of genes with identical size as the test set were each created by randomly drawing without replacement from the complete gene set. P-Values were calculated as the probability of observing a result at least as extreme, given the normally distributed null model derived from the resampling.</p></sec></sec><sec id="s3"><title>Results</title><sec id="s3a"><title>Effects of CNVs on Gene Expression</title><p>Association studies <xref rid="pone.0009474-Stranger1" ref-type="bibr">[43]</xref> have shown both <italic>cis</italic> and <italic>trans</italic> effects of copy-number variations (CNVs) on genes. However, there are few reports of a direct quantitative effect on expression levels for genes inside a specific CNV <xref rid="pone.0009474-Platzer1" ref-type="bibr">[54]</xref>. We therefore focused our attention on the relationship between copy-number variations and gene dosage. We combined gene expression data derived from lymphoblast cell lines of 270 HapMap individuals <xref rid="pone.0009474-Stranger1" ref-type="bibr">[43]</xref> with the CNV dataset of Redon <italic>et al.</italic>
+<xref rid="pone.0009474-Redon1" ref-type="bibr">[47]</xref> on the same individuals.</p><p>We find that duplications and deletions have distinguishable profiles of expression ratios. The expression ratio is defined as the average expression of a gene in individuals with a CNV phenotype, divided by the average expression in wild-type individuals. Assuming a simple linear relationship between copy-number and expression level, one would expect a distribution with peaks at <inline-formula><inline-graphic xlink:href="pone.0009474.e038.jpg" mimetype="image"/></inline-formula>, <inline-formula><inline-graphic xlink:href="pone.0009474.e039.jpg" mimetype="image"/></inline-formula> and <inline-formula><inline-graphic xlink:href="pone.0009474.e040.jpg" mimetype="image"/></inline-formula>, corresponding to a heterozygous deletion, balanced expression and heterozygous duplication, respectively. The observed distribution shown in <xref ref-type="fig" rid="pone-0009474-g003">Figure 3</xref> reflects a more complex relationship.</p><fig id="pone-0009474-g003" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0009474.g003</object-id><label>Figure 3</label><caption><title>Difference between deletion (white) and duplication (black) variations in HapMap individuals.</title><p>The histograms show the ratio of average expression levels between individuals with and without the CNV for all genes inside a CNV region. The shift between the two distributions is significantly larger than would be expected by chance (MWU: <inline-formula><inline-graphic xlink:href="pone.0009474.e041.jpg" mimetype="image"/></inline-formula>).</p></caption><graphic xlink:href="pone.0009474.g003"/></fig><p>The magnitude of the expression difference between CNV and wild type individuals is smaller and more continuous than expected. However, the location shift between the two distributions is highly significant (MWU: <inline-formula><inline-graphic xlink:href="pone.0009474.e042.jpg" mimetype="image"/></inline-formula>). This indicates that deletions reduce gene expression, while duplications tend to increase expression. As mentioned in the <xref ref-type="sec" rid="s2">Methods</xref>, sensitivity and dynamic range of the expression arrays could partly account for the observed noise, but we did not find a correlation between absolute gene expression level and ratio of expression difference for genes overlapping CNV regions (data not shown).</p><p>The expression ratio distribution reflects a summary over a wide range of individuals. To elucidate the effects of CNVs on gene expression on a per-individual basis, we plotted the logarithm of hybridisation strength on the genomic hybridization arrays relative to the reference individual (<inline-formula><inline-graphic xlink:href="pone.0009474.e043.jpg" mimetype="image"/></inline-formula>) against the logarithm of expression, relative to the reference individual (<inline-formula><inline-graphic xlink:href="pone.0009474.e044.jpg" mimetype="image"/></inline-formula>). We find several examples of a linear relationship between copy-number and gene expression. As a positive control, we compared two X-chromosomal genes, one being inactivated (L1CAM, <xref ref-type="fig" rid="pone-0009474-g004">Figure 4A</xref>), the other being known to escape X-inactivation (UTX, <xref ref-type="fig" rid="pone-0009474-g004">Figure 4B</xref>). The latter exhibits a marked increase in expression in female individuals relative to the (male) reference individual. In contrast, L1CAM maintains equivalent expression levels due to inactivation of one gene copy.</p><fig id="pone-0009474-g004" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0009474.g004</object-id><label>Figure 4</label><caption><title>Ratio of WGTP array hybridisation intensity over relative expression level for four example genes.</title><p>A) L1CAM and B) UTX. The increase in expression as a result of the copy-number increase in females is clearly visible for UTX which is known to escape X-inactivation. C) and D) Examples of autosomal genes with common CNV polymorphisms. Red crosses denote individuals in which a deletion phenotype has been called by Redon <italic>et al.</italic>, red triangles denote duplications. The plot highlights several potential false negatives with similar expression and hybridisation strength as the called deletions/duplications. Non-CNV related expression variation is substantial.</p></caption><graphic xlink:href="pone.0009474.g004"/></fig><p>
+<xref ref-type="fig" rid="pone-0009474-g004">Figures 4C and 4D</xref> show two examples of copy-number varied genes with induced dosage effects. Deletions and duplications have clearly distinguishable expression levels. Notably, though, the expression ratios of the deletion/duplication individuals overlap with the expression ratios of wild-type individuals. In other words, CNVs only partly account for the differences in expression between individuals, while a large portion of the variance must stem from other sources.</p><p>Furthermore, several individuals were not called as CNVs, despite similar <inline-formula><inline-graphic xlink:href="pone.0009474.e045.jpg" mimetype="image"/></inline-formula> and <inline-formula><inline-graphic xlink:href="pone.0009474.e046.jpg" mimetype="image"/></inline-formula> ratios in the analysed region as the identified CNV individuals. These putative false negatives will reduce the magnitude of expression ratios between CNV and wild-type individuals. Summarising these individual effects leads to the conclusion that duplications and deletions affect gene dosage, although they are not usually the primary sources of expression differences between individuals.</p></sec><sec id="s3b"><title>Limited Expressional Noise of Protein-Complex Genes</title><p>It has previously been reported that expression levels of proteins within a complex are significantly more correlated across tissue types than would be expected by chance <xref rid="pone.0009474-Jansen1" ref-type="bibr">[16]</xref>, <xref rid="pone.0009474-Hahn1" ref-type="bibr">[55]</xref>. Using both the expression from HapMap individuals mentioned above as well as a tissue-specific gene expression dataset, we verify that members of complexes from the CORUM database exhibit increased expression correlation (<xref ref-type="fig" rid="pone-0009474-g005">Figure 5</xref>).</p><fig id="pone-0009474-g005" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0009474.g005</object-id><label>Figure 5</label><caption><title>Distribution of average Pearson correlation coefficients between all members of known proteins complexes as defined in CORUM (black), and randomly sampled proteins (white, N&#x0200a;=&#x0200a;10).</title><p>Expression data was taken from the Human Gene Expression Atlas (see <xref ref-type="sec" rid="s2">Methods</xref>).</p></caption><graphic xlink:href="pone.0009474.g005"/></fig><p>In addition to that, the HapMap expression data allow us to perform a direct comparison of expression levels between individuals. We calculated coefficients of variation (CV), defined as the average variation in absolute expression levels per gene, normalised to the mean absolute expression level, see <xref ref-type="fig" rid="pone-0009474-g002">Figure 2</xref>. The CVs are significantly smaller for CORUM genes than for the rest of the genome (MWU: <inline-formula><inline-graphic xlink:href="pone.0009474.e047.jpg" mimetype="image"/></inline-formula>). Interestingly, the average CV of genes within one complex decreases with the size of the complex, as shown in <xref ref-type="fig" rid="pone-0009474-g002">Figure 2C</xref>. We asserted that this effect is not a sampling artefact: Splitting all CORUM genes into sets with complexes of size <inline-formula><inline-graphic xlink:href="pone.0009474.e048.jpg" mimetype="image"/></inline-formula> and size <inline-formula><inline-graphic xlink:href="pone.0009474.e049.jpg" mimetype="image"/></inline-formula> and comparing the distribution of CVs, we see that small complexes possess higher CVs (MWU: <inline-formula><inline-graphic xlink:href="pone.0009474.e050.jpg" mimetype="image"/></inline-formula>). These results indicate that members of protein complexes are not just more likely to maintain relative expression levels between tissue types, but they are also more restricted as to their expression variation between individuals within the same tissue.</p><p>Axelsen <italic>et al.</italic>
+<xref rid="pone.0009474-Axelsen1" ref-type="bibr">[40]</xref> compiled a list of 2362 genes which are overexpressed in various cancer tissues (see <xref ref-type="sec" rid="s2">Methods</xref>). We speculated that these cancer related genes will be enriched for dosage sensitive genes whose overexpression in turn contributes to the disease phenotype. Consequentially, we find that CORUM is enriched for these cancer related genes (356 genes, FET: <inline-formula><inline-graphic xlink:href="pone.0009474.e051.jpg" mimetype="image"/></inline-formula>). The fact that the tight regulation of expression of CORUM genes is disturbed in cancer tissue provides an interesting link between cancer, protein complexes and dosage sensitivity.</p><p>CORUM is a manually curated data source and thus prone to ascertainment bias. To ensure that these results are not biased by the composition of CORUM, we generated a separate dataset of putative protein complexes extracted from several high-throughput protein interaction detection experiments (see <xref ref-type="sec" rid="s2">Methods</xref>). The clusters represent an alternative set of &#x0201c;complexes&#x0201d; composed of 2325 proteins, 505 of which are also contained in CORUM. The CV distribution difference between these highly interacting proteins and the rest of the genome is also skewed towards lower CVs (<inline-formula><inline-graphic xlink:href="pone.0009474.e052.jpg" mimetype="image"/></inline-formula>). This suggests that highly connected proteins in general avoid imbalances in protein expression.</p></sec><sec id="s3c"><title>Dosage Sensitive Genes and CNVs</title><p>We have shown above that protein complexes are under constraint to maintain their relative expression levels and exhibit limited expression variability between individuals. For our further analysis of dosage sensitivity, we also used an independently assembled set of 146 genes with known dosage-related disease phenotypes (see <xref ref-type="sec" rid="s2">Methods</xref>). There is a significant overlap between CORUM and this set of dosage sensitive genes (32 genes, FET: <inline-formula><inline-graphic xlink:href="pone.0009474.e053.jpg" mimetype="image"/></inline-formula>), further supporting the link between dosage sensitivity and protein complexes. We henceforth use these two datasets as examples of dosage sensitivity.</p><p>As previously stated, we found that CNVs can affect the expression levels of genes they contain. We therefore hypothesised that a CNV that encompasses a gene which is part of a protein complex will be more likely to have a negative effect on fitness. As most available CNV data were derived from healthy individuals, we expect that genes encoding protein complexes will be underrepresented in CNV regions.</p><p>Out of 18534 protein coding genes for which both genomic locations and a unique gene name could be retrieved, 2311 genes are fully inside a CNV region. From 1975 proteins in the CORUM database, only 165 are found in a CNV region, significantly fewer than one would expect by chance (FET: <inline-formula><inline-graphic xlink:href="pone.0009474.e054.jpg" mimetype="image"/></inline-formula>). The set of automatically clustered complexes were also underrepresented in CNV regions (256 out of 2325 genes, <inline-formula><inline-graphic xlink:href="pone.0009474.e055.jpg" mimetype="image"/></inline-formula>). Lastly, both the set of 146 dosage sensitive genes (8 genes overlap, <inline-formula><inline-graphic xlink:href="pone.0009474.e056.jpg" mimetype="image"/></inline-formula>) as well as the 2362 genes overexpressed in cancer (246 genes overlap, <inline-formula><inline-graphic xlink:href="pone.0009474.e057.jpg" mimetype="image"/></inline-formula>) are unlikely to be contained in CNV regions.</p><p>Nguyen <italic>et al.</italic> as well as Cooper <italic>et al.</italic> reported a highly significant depletion of genes with the Gene Ontology (GO) category &#x0201c;binding&#x0201d; within CNV regions, but they do not comment further on this fact. We verified independently that &#x0201c;binding&#x0201d; is the second most underrepresented GO category after &#x0201c;intracellular&#x0201d; amongst genes in CNV regions. This lends further support to the hypothesis that dosage sensitivity due to protein complex membership has an influence of the composition of CNV regions.</p><p>We speculated that a negative fitness effect due to a copy-number variation will increase the likelihood of subsequent removal of that CNV from the gene pool. The CNVs that contain CORUM genes occur in significantly fewer individuals (MWU: <inline-formula><inline-graphic xlink:href="pone.0009474.e058.jpg" mimetype="image"/></inline-formula>) than non-CORUM genes, indicating that purifying selection has acted on some of the genes.</p><p>We also tested whether CORUM genes are underrepresented in gains compared to losses. Out of the 167 CORUM genes that overlap a CNV, <inline-formula><inline-graphic xlink:href="pone.0009474.e059.jpg" mimetype="image"/></inline-formula> occur in a gain, compared to <inline-formula><inline-graphic xlink:href="pone.0009474.e060.jpg" mimetype="image"/></inline-formula> of non-CORUM genes. This significant difference in ratios (FET: <inline-formula><inline-graphic xlink:href="pone.0009474.e061.jpg" mimetype="image"/></inline-formula>) suggests that amongst copy-number varied genes, there is indeed a bias against duplications for genes in protein complexes, supporting the notion that stoichiometric imbalance has a negative effect on protein complexes.</p></sec><sec id="s3d"><title>Compositional Bias of Copy-Number Varied Genes</title><p>Various compositional biases on genes in CNV regions have been described <xref rid="pone.0009474-Cooper1" ref-type="bibr">[1]</xref>, <xref rid="pone.0009474-Nguyen1" ref-type="bibr">[4]</xref>. Most notably, it has been reported that genes within CNV regions exhibit higher dN/dS than the rest of the genome. Is the observed low frequency of CORUM and other dosage sensitive genes in CNV regions merely a result of a bias against faster evolving genes? We verified that dN/dS ratios of genes within CNV regions were elevated compared to their mouse orthologs (Median: <inline-formula><inline-graphic xlink:href="pone.0009474.e062.jpg" mimetype="image"/></inline-formula>, P-Value by resampling: <inline-formula><inline-graphic xlink:href="pone.0009474.e063.jpg" mimetype="image"/></inline-formula>). CORUM genes exhibit lower than expected dN/dS (Median: <inline-formula><inline-graphic xlink:href="pone.0009474.e064.jpg" mimetype="image"/></inline-formula>, <inline-formula><inline-graphic xlink:href="pone.0009474.e065.jpg" mimetype="image"/></inline-formula>). In contrast to non-complex genes, there is no significant difference in dN/dS between CORUM genes that overlap CNVs and those that do not. We therefore tested if there is a causal relationship between complex membership, low dN/dS and CNV overlap.</p><p>Like CORUM genes, the automatically clustered complexes also exhibited low dN/dS (Median 0.08, <inline-formula><inline-graphic xlink:href="pone.0009474.e066.jpg" mimetype="image"/></inline-formula>). It has been argued that proteins with obligate interactions are under stronger selective pressure <xref rid="pone.0009474-Mintseris1" ref-type="bibr">[56]</xref>, which could explain the low dN/dS in both CORUM and the automatically clustered complexes. Interestingly, Cooper <italic>et al.</italic> showed that CNVs and segmental duplications (SDs) are of fundamentally similar nature and frequently overlap. We thus hypothesised that the reduction in negative selection within CNVs is related to the higher copy number of some genes which have been recently duplicated in a fixed SD. If we split the genes in CNV regions into those that overlap a SD and those that do not, we see that dN/dS ratios are highly significantly elevated in the genes that overlap SDs (MWU: <inline-formula><inline-graphic xlink:href="pone.0009474.e067.jpg" mimetype="image"/></inline-formula>), but not in the group outside SDs (<inline-formula><inline-graphic xlink:href="pone.0009474.e068.jpg" mimetype="image"/></inline-formula>).</p><p>Subsequently, we analysed the distribution of numbers of paralogs for human genes. We found that genes in CNV regions have significantly more paralogs than would be expected by chance (MWU, <inline-formula><inline-graphic xlink:href="pone.0009474.e069.jpg" mimetype="image"/></inline-formula>),whereas genes from CORUM have significantly fewer (<inline-formula><inline-graphic xlink:href="pone.0009474.e070.jpg" mimetype="image"/></inline-formula>). As with the evolutionary rate, the increase in numbers of paralogs is largely driven by CNVs that overlap SDs. Removing all genes inside SDs reduced the number of paralogs substantially (P-value reduced to from <inline-formula><inline-graphic xlink:href="pone.0009474.e071.jpg" mimetype="image"/></inline-formula> to <inline-formula><inline-graphic xlink:href="pone.0009474.e072.jpg" mimetype="image"/></inline-formula>). Conversely, the genes that are in both CNVs and SDs have significantly more paralogs than genes only found in CNV regions (<inline-formula><inline-graphic xlink:href="pone.0009474.e073.jpg" mimetype="image"/></inline-formula>). We conclude that the increase in dN/dS in CNV regions is driven by an increase in gene copy number and thus does not explain the underrepresentation of dosage sensitive genes in CNV regions.</p><p>If SDs are largely responsible for the increased dN/dS within CNVs and the increase in number of paralogs, can we still detect the underrepresentation of CORUM genes in CNVs that do not overlap a SD? We recalculated the contingency tables after removing all genes that overlap a SD. CORUM genes are still significantly underrepresented (<inline-formula><inline-graphic xlink:href="pone.0009474.e074.jpg" mimetype="image"/></inline-formula>), indicating that negative selective pressure not only affects regions of segmental duplication but also other types of CNVs.</p></sec></sec><sec id="s4"><title>Discussion</title><sec id="s4a"><title>Protein Complexes Are Sensitive to Alterations in Gene Expression</title><p>Correlated gene expression of interacting proteins is a well known phenomenon, to the extent that correlation analysis is used to validate high-throughput protein interaction experiments <xref rid="pone.0009474-Hahn1" ref-type="bibr">[55]</xref>. Usually, expression data is gathered under diverse physiological conditions, <italic>e.g.</italic> at different stages of cell cycle. In our analysis, we have compared data from 79 different human tissue types. As expected, we observe strong correlation between the changes in gene expression for members of the same protein complex in different tissues. This observation hints at the importance of tightly regulated gene expression for the correct functioning of protein complexes.</p><p>However, it does not directly verify if the stoichiometry of complexes is under the same strong regulation. We therefore measured the variation in expression levels for interacting proteins in different HapMap individuals. Expressional noise of protein complexes has been analysed in yeast and fruit-fly <xref rid="pone.0009474-Lemos1" ref-type="bibr">[57]</xref>, but the HapMap gene expression data allow the first systematic evaluation of protein complex expression in human. We find that genes in CORUM exhibit significantly smaller variation in expression than the rest of the genome. This is direct evidence that expression of complex genes is under tighter regulation than the rest of the genome. Furthermore, we see that genes in large complexes maintain particularly low expression variation. While we cannot rule out that this observation is due to functional constraints on the particular complexes, it does suggest that sensitivity to expressional noise is related to the number of subunits a complex maintains.</p><p>When we analysed the composition of genes in CNV regions, we made the curious observation that the small number of CORUM genes that overlap a CNV (165 genes in total) are biased towards deletions rather than duplications. If we assume that negative selection is acting on CNVs, the intuitive biological explanation for this phenomenon would be that CORUM genes are at least as sensitive to duplication than deletion, which in turn supports the concept that members of protein complexes are sensitive not just to under- but also to overexpression.</p><p>We made another observation that support this hypothesis. When comparing a manually curated set of dosage sensitive genes derived from the scientific literature, we found that a significantly larger than expected proportion of these genes were members of a protein complex as defined by the CORUM database. Taken together, these findings clearly indicate that stoichiometric fluctuations negatively affect protein complexes.</p></sec><sec id="s4b"><title>CNVs Affect Expression Levels of Contained Genes</title><p>A key proposition that underpins our understanding of dosage sensitivity is that duplication or deletion of the genomic region containing a gene will result in a significant up- or downregulation of expression of the gene <xref rid="pone.0009474-McCarroll1" ref-type="bibr">[58]</xref>. There have been previous reports of widespread expressional silencing of chromosomal amplifications <xref rid="pone.0009474-Platzer1" ref-type="bibr">[54]</xref>. In contrast, we observed lower average gene expression in deletion CNVs compared to duplication CNVs (<xref ref-type="fig" rid="pone-0009474-g003">Figure 3</xref>). It has to be noted, though, that these differences in expression are small for the majority of genes within a CNV. Furthermore, there are numerous cases where deletions seemingly result in increased expression and vice versa. <xref ref-type="fig" rid="pone-0009474-g004">Figures 4C and 4D</xref> exemplify how noisy the expression data for a gene can be, despite a visible expression difference between deletion and duplication genotypes. Sensitivity to detect expression differences at low concentration is not the main source of this variability in gene expression. Rather, we suspect there to be inherent fluctuations between the different cell lines used in the analysis <xref rid="pone.0009474-Blake1" ref-type="bibr">[59]</xref>. Expressional noise alone does not explain that some CNVs seem not to affect gene expression at all. Rather, the inaccurate prediction of start and end coordinates of CNVs is likely to be largely responsible for the lack of correlation between CNVs and gene expression. Individuals with a CNV genotype falsely labelled as unaffected, or a gene erroneously placed inside a CNV, will skew the distribution of expression ratios.</p><p>We speculate, however, that there could also be a physiological explanation for the unexpectedly low change in gene expression upon copy-number variation. It is conceivable that the cell attempts to compensate changes in copy number on gene expression by <italic>e.g.</italic> increasing or decreasing transcription or modulating mRNA degradation. Such autosomal dosage compensation has been first observed in maize and <italic>Drosophila</italic>
+<xref rid="pone.0009474-Birchler5" ref-type="bibr">[60]</xref>&#x02013;<xref rid="pone.0009474-Devlin1" ref-type="bibr">[62]</xref> and a general mechanism for dosage regulation has been proposed <xref rid="pone.0009474-Birchler7" ref-type="bibr">[63]</xref>. According to this theory, dosage balance is achieved through a network of regulatory genes which themselves are therefore dosage sensitive. The enrichment of CORUM for regulatory and transcription related functions might thus explain its sensitivity to copy-number variation and the low effect of CNVs on gene expression at the same time. With the arrival of new CNV datasets featuring improved breakpoint accuracy, it should become possible to better distinguish between false positive predictions and genes that are actually subject to dosage compensation. Subsequently, this will make it possible to determine the frequency of dosage compensation of copy-number varied genes.</p></sec><sec id="s4c"><title>CNVs as the Source of Recent Duplications</title><p>It has been noted <xref rid="pone.0009474-Nguyen1" ref-type="bibr">[4]</xref> that genes within CNV regions exhibit higher than expected dN/dS ratios, suggesting a relaxation of selective pressure. On the contrary, complex genes, dosage sensitive genes and highly connected genes in general, show very low dN/dS ratios, irrespective of whether they overlap CNVs or not. Stronger selective constraints in highly connected proteins have previously been attributed to functional constraints on the protein surface in order to maintain multiple binding sites <xref rid="pone.0009474-Mintseris1" ref-type="bibr">[56]</xref>.</p><p>Interestingly, we also show that genes in CNV regions have significantly more paralogs than expected by chance, while genes in protein complexes possess, on average, fewer paralogs <xref rid="pone.0009474-Yang1" ref-type="bibr">[10]</xref>. This suggests that CNV regions have been hot-spots of large scale variation for a prolonged period of time, as it has also been shown that gene-rich CNV regions correspond well with regions of segmental duplications <xref rid="pone.0009474-Cooper1" ref-type="bibr">[1]</xref>. In fact, we found that those CNV regions that overlap segmental duplications are primarily (though not exclusively) responsible for the high number of paralogs.</p><p>Conversely, the reason for the increase in dN/dS in many genes within CNV regions could be attributed to their higher number of paralogous sequences. In fact, genes in CNVs overlapping segmental duplications are again primarily, but not exclusively, responsible for the elevated dN/dS ratios. These observations underline that CNV regions are a frequent source of gene duplicates which occasionally get fixed over the course of evolution and thus drive evolution of some gene families.</p></sec><sec id="s4d"><title>Dosage Sensitivity and Negative Selection on CNVs</title><p>We observed that CNV regions are less likely to contain genes encoding protein complexes, as well as other dosage sensitive genes. Furthermore, CNVs which occur in multiple individuals and can thus be assumed to be older than unique CNVs are particularly depleted of CORUM genes. Hence, it appears that pressures on correct dosage limit the set of genes which can sustain variation in copy-number, even though the effect of CNVs on gene expression is not straightforward.</p><p>Dang <italic>et al.</italic>
+<xref rid="pone.0009474-Dang1" ref-type="bibr">[64]</xref> reported that haploinsufficient genes are seldomly found between two regions of segmental duplication. Our results shed new light on this finding: It seems that dosage sensitive genes in general are biased against regions in which they are prone to suffer from copy-number variation. Segmental duplications are the most common source of such rearrangements, however we show that other CNVs not related to segmental duplications are also depleted of dosage sensitive genes. This indicates that negative selection is acting at the level of CNVs. Our findings offer a partial but consistent explanation for the biased composition of CNV regions. In addition to that, the correlation between dosage sensitivity and protein complex membership provides a convenient way to predict which genes are likely to be important in diseases which involve genomic rearrangements. The enrichment of CORUM for genes upregulated in cancer clearly hints towards this possibility. Future investigations should focus on the involvement of CNVs of putative dosage sensitive genes in cancer and complex diseases.</p></sec></sec></body><back><ack><p>We thank Manolis Dermitzakis and Christine Bird for valuable discussions and suggestions, Matt Hurles and Ben Lehner for critical reading of the manuscript and Maureen Liu for information on escapees of X inactivation.</p></ack><fn-group><fn fn-type="COI-statement"><p><bold>Competing Interests: </bold>The authors have declared that no competing interests exist.</p></fn><fn fn-type="financial-disclosure"><p><bold>Funding: </bold>This study was funded by the Wellcome Trust [grant number WT077044/Z/05/Z]. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</p></fn></fn-group><ref-list><title>References</title><ref id="pone.0009474-Cooper1"><label>1</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Cooper</surname><given-names>GM</given-names></name><name><surname>Nickerson</surname><given-names>DA</given-names></name><name><surname>Eichler</surname><given-names>EE</given-names></name></person-group>
+<year>2007</year>
+<article-title>Mutational and selective effects on copy-number variants in the human genome.</article-title>
+<source>Nat Genet</source>
+<volume>29</volume>
+<fpage>S22</fpage>
+<lpage>S29</lpage>
+</element-citation></ref><ref id="pone.0009474-Conrad1"><label>2</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Conrad</surname><given-names>DF</given-names></name><name><surname>Hurles</surname><given-names>ME</given-names></name></person-group>
+<year>2007</year>
+<article-title>The population genetics of structural variation.</article-title>
+<source>Nat Genet</source>
+<volume>39</volume>
+<fpage>S30</fpage>
+<lpage>36</lpage>
+<pub-id pub-id-type="pmid">17597779</pub-id></element-citation></ref><ref id="pone.0009474-Freeling1"><label>3</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Freeling</surname><given-names>M</given-names></name><name><surname>Lyons</surname><given-names>E</given-names></name><name><surname>Pedersen</surname><given-names>B</given-names></name><name><surname>Alam</surname><given-names>M</given-names></name><name><surname>Ming</surname><given-names>R</given-names></name><etal/></person-group>
+<year>2008</year>
+<article-title>Many or most genes in Arabidopsis transposed after the origin of the order Brassicales.</article-title>
+<source>Genome Res</source>
+<volume>18</volume>
+<fpage>1924</fpage>
+<lpage>1937</lpage>
+<pub-id pub-id-type="pmid">18836034</pub-id></element-citation></ref><ref id="pone.0009474-Nguyen1"><label>4</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Nguyen</surname><given-names>DQ</given-names></name><name><surname>Webber</surname><given-names>C</given-names></name><name><surname>Ponting</surname><given-names>CP</given-names></name></person-group>
+<year>2006</year>
+<article-title>Bias of selection on human copy-number variants.</article-title>
+<source>PLoS Genet</source>
+<volume>2</volume>
+<fpage>e20</fpage>
+<pub-id pub-id-type="pmid">16482228</pub-id></element-citation></ref><ref id="pone.0009474-Dopman1"><label>5</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Dopman</surname><given-names>EB</given-names></name><name><surname>Hartl</surname><given-names>DL</given-names></name></person-group>
+<year>2007</year>
+<article-title>A portrait of copy-number polymorphism in drosophila melanogaster.</article-title>
+<source>Proc Natl Acad Sci USA</source>
+<volume>104</volume>
+<fpage>19920</fpage>
+<lpage>19925</lpage>
+<pub-id pub-id-type="pmid">18056801</pub-id></element-citation></ref><ref id="pone.0009474-Prince1"><label>6</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Prince</surname><given-names>VE</given-names></name><name><surname>Pickett</surname><given-names>FB</given-names></name></person-group>
+<year>2002</year>
+<article-title>Splitting pairs: the diverging fates of duplicated genes.</article-title>
+<source>Nat Rev Genet</source>
+<volume>3</volume>
+<fpage>827</fpage>
+<lpage>837</lpage>
+<pub-id pub-id-type="pmid">12415313</pub-id></element-citation></ref><ref id="pone.0009474-Wright1"><label>7</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Wright</surname><given-names>S</given-names></name></person-group>
+<year>1934</year>
+<article-title>Physiological and evolutionary theories of dominance.</article-title>
+<source>Am Nat</source>
+<volume>68</volume>
+<fpage>24</fpage>
+<lpage>53</lpage>
+</element-citation></ref><ref id="pone.0009474-Orr1"><label>8</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Orr</surname><given-names>H</given-names></name></person-group>
+<year>1991</year>
+<article-title>A test of fisher's theory of dominance.</article-title>
+<source>Proc Natl Acad Sci USA</source>
+<volume>88</volume>
+<fpage>11413</fpage>
+<lpage>11415</lpage>
+<pub-id pub-id-type="pmid">1763055</pub-id></element-citation></ref><ref id="pone.0009474-Kondrashov1"><label>9</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kondrashov</surname><given-names>FA</given-names></name><name><surname>Koonin</surname><given-names>EV</given-names></name></person-group>
+<year>2004</year>
+<article-title>A common framework for understanding the origin of genetic dominance and evolutionary fates of gene duplications.</article-title>
+<source>Trends Genet</source>
+<volume>20</volume>
+<fpage>287</fpage>
+<lpage>290</lpage>
+<pub-id pub-id-type="pmid">15219392</pub-id></element-citation></ref><ref id="pone.0009474-Yang1"><label>10</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Yang</surname><given-names>J</given-names></name><name><surname>Lusk</surname><given-names>R</given-names></name><name><surname>Li</surname><given-names>WH</given-names></name></person-group>
+<year>2003</year>
+<article-title>Organismal complexity, protein complexity, and gene duplicability.</article-title>
+<source>Proc Natl Acad Sci USA</source>
+<volume>100</volume>
+<fpage>15661</fpage>
+<lpage>15665</lpage>
+<pub-id pub-id-type="pmid">14660792</pub-id></element-citation></ref><ref id="pone.0009474-Veitia1"><label>11</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Veitia</surname><given-names>RA</given-names></name></person-group>
+<year>2005</year>
+<article-title>Gene dosage balance: deletions, duplications and dominance.</article-title>
+<source>Trends Genet</source>
+<volume>21</volume>
+<fpage>33</fpage>
+<lpage>35</lpage>
+<pub-id pub-id-type="pmid">15680512</pub-id></element-citation></ref><ref id="pone.0009474-Lynch1"><label>12</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Lynch</surname><given-names>M</given-names></name><name><surname>Conery</surname><given-names>JS</given-names></name></person-group>
+<year>2000</year>
+<article-title>The evolutionary fate and consequences of duplicate genes.</article-title>
+<source>Science</source>
+<volume>290</volume>
+<fpage>1151</fpage>
+<lpage>1155</lpage>
+<pub-id pub-id-type="pmid">11073452</pub-id></element-citation></ref><ref id="pone.0009474-Kondrashov2"><label>13</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kondrashov</surname><given-names>F</given-names></name><name><surname>Rogozin</surname><given-names>I</given-names></name><name><surname>Wolf</surname><given-names>Y</given-names></name><name><surname>Koonin</surname><given-names>E</given-names></name></person-group>
+<year>2002</year>
+<article-title>Selection in the evolution of gene duplications.</article-title>
+<source>Genome Biol</source>
+<volume>3</volume>
+<fpage>2</fpage>
+</element-citation></ref><ref id="pone.0009474-Birchler1"><label>14</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Birchler</surname><given-names>JA</given-names></name><name><surname>Newton</surname><given-names>KJ</given-names></name></person-group>
+<year>1981</year>
+<article-title>Modulation of protein levels in chromosomal dosage series of maize: The biochemical basis of aneuploid syndromes.</article-title>
+<source>Genetics</source>
+<volume>99</volume>
+<fpage>247</fpage>
+<lpage>266</lpage>
+<pub-id pub-id-type="pmid">17249116</pub-id></element-citation></ref><ref id="pone.0009474-Papp1"><label>15</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Papp</surname><given-names>B</given-names></name><name><surname>Pal</surname><given-names>C</given-names></name><name><surname>Hurst</surname><given-names>LD</given-names></name></person-group>
+<year>2003</year>
+<article-title>Dosage sensitivity and the evolution of gene families in yeast.</article-title>
+<source>Nature</source>
+<volume>424</volume>
+<fpage>194</fpage>
+<lpage>197</lpage>
+<pub-id pub-id-type="pmid">12853957</pub-id></element-citation></ref><ref id="pone.0009474-Jansen1"><label>16</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Jansen</surname><given-names>R</given-names></name><name><surname>Greenbaum</surname><given-names>D</given-names></name><name><surname>Gerstein</surname><given-names>M</given-names></name></person-group>
+<year>2002</year>
+<article-title>Relating whole-genome expression data with protein&#x02013;protein interactions.</article-title>
+<source>Genome Res</source>
+<volume>12</volume>
+<fpage>37</fpage>
+<lpage>46</lpage>
+<pub-id pub-id-type="pmid">11779829</pub-id></element-citation></ref><ref id="pone.0009474-SchusterBockler1"><label>17</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Schuster-Bockler</surname><given-names>B</given-names></name><name><surname>Bateman</surname><given-names>A</given-names></name></person-group>
+<year>2008</year>
+<article-title>Protein interactions in human genetic diseases.</article-title>
+<source>Genome Biol</source>
+<volume>9</volume>
+<fpage>9</fpage>
+</element-citation></ref><ref id="pone.0009474-Aury1"><label>18</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Aury</surname><given-names>JM</given-names></name><name><surname>Jaillon</surname><given-names>O</given-names></name><name><surname>Duret</surname><given-names>L</given-names></name><name><surname>Noel</surname><given-names>B</given-names></name><name><surname>Jubin</surname><given-names>C</given-names></name><etal/></person-group>
+<year>2006</year>
+<article-title>Global trends of whole-genome duplications revealed by the ciliate <italic>Paramecium tetraurelia</italic>.</article-title>
+<source>Nature</source>
+<volume>444</volume>
+<fpage>171</fpage>
+<lpage>178</lpage>
+<pub-id pub-id-type="pmid">17086204</pub-id></element-citation></ref><ref id="pone.0009474-Deutschbauer1"><label>19</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Deutschbauer</surname><given-names>AM</given-names></name><name><surname>Jaramillo</surname><given-names>DF</given-names></name><name><surname>Proctor</surname><given-names>M</given-names></name><name><surname>Kumm</surname><given-names>J</given-names></name><name><surname>Hillenmeyer</surname><given-names>ME</given-names></name><etal/></person-group>
+<year>2005</year>
+<article-title>Mechanisms of haploinsufficiency revealed by genome-wide profiling in yeast.</article-title>
+<source>Genetics</source>
+<volume>169</volume>
+<fpage>1915</fpage>
+<lpage>1925</lpage>
+<pub-id pub-id-type="pmid">15716499</pub-id></element-citation></ref><ref id="pone.0009474-Sopko1"><label>20</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Sopko</surname><given-names>R</given-names></name><name><surname>Huang</surname><given-names>D</given-names></name><name><surname>Preston</surname><given-names>N</given-names></name><name><surname>Chua</surname><given-names>G</given-names></name><name><surname>Papp</surname><given-names>B</given-names></name><etal/></person-group>
+<year>2006</year>
+<article-title>Mapping pathways and phenotypes by systematic gene overexpression.</article-title>
+<source>Mol Cell</source>
+<volume>21</volume>
+<fpage>319</fpage>
+<lpage>330</lpage>
+<pub-id pub-id-type="pmid">16455487</pub-id></element-citation></ref><ref id="pone.0009474-Veitia2"><label>21</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Veitia</surname><given-names>RA</given-names></name></person-group>
+<year>2002</year>
+<article-title>Exploring the etiology of haploinsufficiency.</article-title>
+<source>Bioessays</source>
+<volume>24</volume>
+<fpage>175</fpage>
+<lpage>184</lpage>
+<pub-id pub-id-type="pmid">11835282</pub-id></element-citation></ref><ref id="pone.0009474-Lee1"><label>22</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Lee</surname><given-names>JA</given-names></name><name><surname>Lupski</surname><given-names>JR</given-names></name></person-group>
+<year>2006</year>
+<article-title>Genomic rearrangements and gene copy-number alterations as a cause of nervous system disorders.</article-title>
+<source>Neuron</source>
+<volume>52</volume>
+<fpage>103</fpage>
+<lpage>121</lpage>
+<pub-id pub-id-type="pmid">17015230</pub-id></element-citation></ref><ref id="pone.0009474-Birchler2"><label>23</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Birchler</surname><given-names>JA</given-names></name><name><surname>Bhadra</surname><given-names>U</given-names></name><name><surname>Bhadra</surname><given-names>MP</given-names></name><name><surname>Auger</surname><given-names>DL</given-names></name></person-group>
+<year>2001</year>
+<article-title>Dosage-dependent gene regulation in multicellular eukaryotes: implications for dosage compensation, aneuploid syndromes, and quantitative traits.</article-title>
+<source>Dev Biol</source>
+<volume>234</volume>
+<fpage>275</fpage>
+<lpage>288</lpage>
+<pub-id pub-id-type="pmid">11396999</pub-id></element-citation></ref><ref id="pone.0009474-Birchler3"><label>24</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Birchler</surname><given-names>JA</given-names></name><name><surname>Veitia</surname><given-names>RA</given-names></name></person-group>
+<year>2007</year>
+<article-title>The gene balance hypothesis: from classical genetics to modern genomics.</article-title>
+<source>Plant Cell</source>
+<volume>19</volume>
+<fpage>395</fpage>
+<lpage>402</lpage>
+<pub-id pub-id-type="pmid">17293565</pub-id></element-citation></ref><ref id="pone.0009474-Birchler4"><label>25</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Birchler</surname><given-names>JA</given-names></name><name><surname>Yao</surname><given-names>H</given-names></name><name><surname>Chudalayandi</surname><given-names>S</given-names></name></person-group>
+<year>2007</year>
+<article-title>Biological consequences of dosage dependent gene regulatory systems.</article-title>
+<source>Biochim Biophys Acta</source>
+<volume>1769</volume>
+<fpage>422</fpage>
+<lpage>428</lpage>
+<pub-id pub-id-type="pmid">17276527</pub-id></element-citation></ref><ref id="pone.0009474-Ruepp1"><label>26</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Ruepp</surname><given-names>A</given-names></name><name><surname>Brauner</surname><given-names>B</given-names></name><name><surname>Dunger-Kaltenbach</surname><given-names>I</given-names></name><name><surname>Frishman</surname><given-names>G</given-names></name><name><surname>Montrone</surname><given-names>C</given-names></name><etal/></person-group>
+<year>2008</year>
+<article-title>CORUM: the comprehensive resource of mammalian protein complexes.</article-title>
+<source>Nucleic Acids Res</source>
+<volume>36</volume>
+<fpage>D646</fpage>
+<lpage>650</lpage>
+<pub-id pub-id-type="pmid">17965090</pub-id></element-citation></ref><ref id="pone.0009474-CORUM.1"><label>27</label><element-citation publication-type="other">
+<collab>CORUM.</collab>
+<comment>URL <ext-link ext-link-type="uri" xlink:href="http://mips.gsf.de/genre/proj/corum">http://mips.gsf.de/genre/proj/corum</ext-link></comment>
+</element-citation></ref><ref id="pone.0009474-Bruford1"><label>28</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Bruford</surname><given-names>EA</given-names></name><name><surname>Lush</surname><given-names>MJ</given-names></name><name><surname>Wright</surname><given-names>MW</given-names></name><name><surname>Sneddon</surname><given-names>TP</given-names></name><name><surname>Povey</surname><given-names>S</given-names></name><etal/></person-group>
+<year>2008</year>
+<article-title>The HGNC database in 2008: a resource for the human genome.</article-title>
+<source>Nucleic Acids Res</source>
+<volume>36</volume>
+<fpage>D445</fpage>
+<lpage>448</lpage>
+<pub-id pub-id-type="pmid">17984084</pub-id></element-citation></ref><ref id="pone.0009474-Human1"><label>29</label><element-citation publication-type="other">
+<collab>Human Genome Nomenclature Committee.</collab>
+<comment>URL <ext-link ext-link-type="uri" xlink:href="http://www.genenames.org">http://www.genenames.org</ext-link></comment>
+</element-citation></ref><ref id="pone.0009474-Ensembl.1"><label>30</label><element-citation publication-type="other">
+<collab>Ensembl.</collab>
+<comment>URL <ext-link ext-link-type="uri" xlink:href="http://www.ensembl.org">http://www.ensembl.org</ext-link></comment>
+</element-citation></ref><ref id="pone.0009474-Krogan1"><label>31</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Krogan</surname><given-names>NJ</given-names></name><name><surname>Cagney</surname><given-names>G</given-names></name><name><surname>Yu</surname><given-names>H</given-names></name><name><surname>Zhong</surname><given-names>G</given-names></name><name><surname>Guo</surname><given-names>X</given-names></name><etal/></person-group>
+<year>2006</year>
+<article-title>Global landscape of protein complexes in the yeast <italic>saccharomyces cerevisiae</italic>.</article-title>
+<source>Nature</source>
+<volume>440</volume>
+<fpage>637</fpage>
+<lpage>643</lpage>
+<pub-id pub-id-type="pmid">16554755</pub-id></element-citation></ref><ref id="pone.0009474-Rual1"><label>32</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Rual</surname><given-names>JF</given-names></name><name><surname>Venkatesan</surname><given-names>K</given-names></name><name><surname>Hao</surname><given-names>T</given-names></name><name><surname>Hirozane-Kishikawa</surname><given-names>T</given-names></name><name><surname>Dricot</surname><given-names>A</given-names></name><etal/></person-group>
+<year>2005</year>
+<article-title>Towards a proteome-scale map of the human protein&#x02013;protein interaction network.</article-title>
+<source>Nature</source>
+<volume>437</volume>
+<fpage>1173</fpage>
+<lpage>1178</lpage>
+<pub-id pub-id-type="pmid">16189514</pub-id></element-citation></ref><ref id="pone.0009474-Stelzl1"><label>33</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Stelzl</surname><given-names>U</given-names></name><name><surname>Worm</surname><given-names>U</given-names></name><name><surname>Lalowski</surname><given-names>M</given-names></name><name><surname>Haenig</surname><given-names>C</given-names></name><name><surname>Brembeck</surname><given-names>FH</given-names></name><etal/></person-group>
+<year>2005</year>
+<article-title>A human protein&#x02013;protein interaction network: a resource for annotating the proteome.</article-title>
+<source>Cell</source>
+<volume>122</volume>
+<fpage>957</fpage>
+<lpage>968</lpage>
+<pub-id pub-id-type="pmid">16169070</pub-id></element-citation></ref><ref id="pone.0009474-Ewing1"><label>34</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Ewing</surname><given-names>RM</given-names></name><name><surname>Chu</surname><given-names>P</given-names></name><name><surname>Elisma</surname><given-names>F</given-names></name><name><surname>Li</surname><given-names>H</given-names></name><name><surname>Taylor</surname><given-names>P</given-names></name><etal/></person-group>
+<year>2007</year>
+<article-title>Large-scale mapping of human protein&#x02013;protein interactions by mass spectrometry.</article-title>
+<source>Mol Syst Biol</source>
+<volume>3</volume>
+<fpage>89</fpage>
+<pub-id pub-id-type="pmid">17353931</pub-id></element-citation></ref><ref id="pone.0009474-Hermjakob1"><label>35</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Hermjakob</surname><given-names>H</given-names></name><name><surname>Montecchi-Palazzi</surname><given-names>L</given-names></name><name><surname>Lewington</surname><given-names>C</given-names></name><name><surname>Mudali</surname><given-names>S</given-names></name><name><surname>Kerrien</surname><given-names>S</given-names></name><etal/></person-group>
+<year>2004</year>
+<article-title>IntAct: an open source molecular interaction database.</article-title>
+<source>Nucleic Acids Res</source>
+<volume>32</volume>
+<fpage>D452</fpage>
+<lpage>455</lpage>
+<pub-id pub-id-type="pmid">14681455</pub-id></element-citation></ref><ref id="pone.0009474-IntAct.1"><label>36</label><element-citation publication-type="other">
+<collab>IntAct.</collab>
+<comment>URL <ext-link ext-link-type="uri" xlink:href="http://www.ebi.ac.uk/intact">http://www.ebi.ac.uk/intact</ext-link></comment>
+</element-citation></ref><ref id="pone.0009474-vanDongen1"><label>37</label><element-citation publication-type="other">
+<person-group person-group-type="author"><name><surname>van Dongen</surname><given-names>S</given-names></name></person-group>
+<year>2000</year>
+<article-title>Graph clustering by flow simulation.</article-title>
+<comment>Ph.D. thesis, University of Utrecht, The Netherlands</comment>
+</element-citation></ref><ref id="pone.0009474-Baylor1"><label>38</label><element-citation publication-type="other">
+<collab>Baylor College of Medicine CMA.</collab>
+<comment>URL <ext-link ext-link-type="uri" xlink:href="http://www.bcm.edu/geneticlabs/cma">http://www.bcm.edu/geneticlabs/cma</ext-link></comment>
+</element-citation></ref><ref id="pone.0009474-Cheung1"><label>39</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Cheung</surname><given-names>SW</given-names></name><name><surname>Shaw</surname><given-names>CA</given-names></name><name><surname>Yu</surname><given-names>W</given-names></name><name><surname>Li</surname><given-names>J</given-names></name><name><surname>Ou</surname><given-names>Z</given-names></name><etal/></person-group>
+<year>2005</year>
+<article-title>Development and validation of a CGH microarray for clinical cytogenetic diagnosis.</article-title>
+<source>Genet Med</source>
+<volume>7</volume>
+<fpage>422</fpage>
+<lpage>432</lpage>
+<pub-id pub-id-type="pmid">16024975</pub-id></element-citation></ref><ref id="pone.0009474-Axelsen1"><label>40</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Axelsen</surname><given-names>JB</given-names></name><name><surname>Lotem</surname><given-names>J</given-names></name><name><surname>Sachs</surname><given-names>L</given-names></name><name><surname>Domany</surname><given-names>E</given-names></name></person-group>
+<year>2007</year>
+<article-title>Genes overexpressed in different human solid cancers exhibit different tissue-specific expression profiles.</article-title>
+<source>Proc Natl Acad Sci USA</source>
+<volume>104</volume>
+<fpage>13122</fpage>
+<lpage>13127</lpage>
+<pub-id pub-id-type="pmid">17664417</pub-id></element-citation></ref><ref id="pone.0009474-Su1"><label>41</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Su</surname><given-names>AI</given-names></name><name><surname>Wiltshire</surname><given-names>T</given-names></name><name><surname>Batalov</surname><given-names>S</given-names></name><name><surname>Lapp</surname><given-names>H</given-names></name><name><surname>Ching</surname><given-names>KA</given-names></name><etal/></person-group>
+<year>2004</year>
+<article-title>A gene atlas of the mouse and human protein-encoding transcriptomes.</article-title>
+<source>Proc Natl Acad Sci USA</source>
+<volume>101</volume>
+<fpage>6062</fpage>
+<lpage>6067</lpage>
+<pub-id pub-id-type="pmid">15075390</pub-id></element-citation></ref><ref id="pone.0009474-GNF1"><label>42</label><element-citation publication-type="other">
+<collab>GNF SymAtlas.</collab>
+<comment>URL <ext-link ext-link-type="uri" xlink:href="http://symatlas.gnf.org">http://symatlas.gnf.org</ext-link></comment>
+</element-citation></ref><ref id="pone.0009474-Stranger1"><label>43</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Stranger</surname><given-names>BE</given-names></name><name><surname>Forrest</surname><given-names>MS</given-names></name><name><surname>Dunning</surname><given-names>M</given-names></name><name><surname>Ingle</surname><given-names>CE</given-names></name><name><surname>Beazley</surname><given-names>C</given-names></name><etal/></person-group>
+<year>2007</year>
+<article-title>Relative impact of nucleotide and copy number variation on gene expression phenotypes.</article-title>
+<source>Science</source>
+<volume>315</volume>
+<fpage>848</fpage>
+<lpage>853</lpage>
+<pub-id pub-id-type="pmid">17289997</pub-id></element-citation></ref><ref id="pone.0009474-Gene1"><label>44</label><element-citation publication-type="other">
+<collab>Gene Expression Variation Data.</collab>
+<comment>URL <ext-link ext-link-type="uri" xlink:href="http://www.sanger.ac.uk/humgen/genevar">http://www.sanger.ac.uk/humgen/genevar</ext-link></comment>
+</element-citation></ref><ref id="pone.0009474-Iafrate1"><label>45</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Iafrate</surname><given-names>AJ</given-names></name><name><surname>Feuk</surname><given-names>L</given-names></name><name><surname>Rivera</surname><given-names>MN</given-names></name><name><surname>Listewnik</surname><given-names>ML</given-names></name><name><surname>Donahoe</surname><given-names>PK</given-names></name><etal/></person-group>
+<year>2004</year>
+<article-title>Detection of large-scale variation in the human genome.</article-title>
+<source>Nat Genet</source>
+<volume>36</volume>
+<fpage>949</fpage>
+<lpage>951</lpage>
+<pub-id pub-id-type="pmid">15286789</pub-id></element-citation></ref><ref id="pone.0009474-Database1"><label>46</label><element-citation publication-type="other">
+<collab>Database of Genetic Variants.</collab>
+<comment>URL <ext-link ext-link-type="uri" xlink:href="http://projects.tcag.ca/variation">http://projects.tcag.ca/variation</ext-link></comment>
+</element-citation></ref><ref id="pone.0009474-Redon1"><label>47</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Redon</surname><given-names>R</given-names></name><name><surname>Ishikawa</surname><given-names>S</given-names></name><name><surname>Fitch</surname><given-names>KR</given-names></name><name><surname>Feuk</surname><given-names>L</given-names></name><name><surname>Perry</surname><given-names>GH</given-names></name><etal/></person-group>
+<year>2006</year>
+<article-title>Global variation in copy number in the human genome.</article-title>
+<source>Nature</source>
+<volume>444</volume>
+<fpage>444</fpage>
+<lpage>454</lpage>
+<pub-id pub-id-type="pmid">17122850</pub-id></element-citation></ref><ref id="pone.0009474-Redon2"><label>48</label><element-citation publication-type="other">
+<person-group person-group-type="author"><name><surname>Redon</surname></name><etal/></person-group>
+<article-title>CNV data.</article-title>
+<comment>URL <ext-link ext-link-type="uri" xlink:href="http://www.sanger.ac.uk/humgen/cnv/data">http://www.sanger.ac.uk/humgen/cnv/data</ext-link></comment>
+</element-citation></ref><ref id="pone.0009474-She1"><label>49</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>She</surname><given-names>X</given-names></name><name><surname>Jiang</surname><given-names>Z</given-names></name><name><surname>Clark</surname><given-names>RA</given-names></name><name><surname>Liu</surname><given-names>G</given-names></name><name><surname>Cheng</surname><given-names>Z</given-names></name><etal/></person-group>
+<year>2004</year>
+<article-title>Shotgun sequence assembly and recent segmental duplications within the human genome.</article-title>
+<source>Nature</source>
+<volume>431</volume>
+<fpage>927</fpage>
+<lpage>930</lpage>
+<pub-id pub-id-type="pmid">15496912</pub-id></element-citation></ref><ref id="pone.0009474-Segmental1"><label>50</label><element-citation publication-type="other">
+<collab>Segmental Duplication Database.</collab>
+<comment>URL <ext-link ext-link-type="uri" xlink:href="http://humanparalogy.gs.washington.edu">http://humanparalogy.gs.washington.edu</ext-link></comment>
+</element-citation></ref><ref id="pone.0009474-Camon1"><label>51</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Camon</surname><given-names>E</given-names></name><name><surname>Magrane</surname><given-names>M</given-names></name><name><surname>Barrell</surname><given-names>D</given-names></name><name><surname>Lee</surname><given-names>V</given-names></name><name><surname>Dimmer</surname><given-names>E</given-names></name><etal/></person-group>
+<year>2004</year>
+<article-title>The Gene Ontology Annotation (GOA) database: sharing knowledge in UniProt with Gene Ontology.</article-title>
+<source>Nucleic Acids Res</source>
+<volume>32</volume>
+<fpage>D262</fpage>
+<lpage>266</lpage>
+<pub-id pub-id-type="pmid">14681408</pub-id></element-citation></ref><ref id="pone.0009474-Gene2"><label>52</label><element-citation publication-type="other">
+<collab>Gene Ontology Annotations Database.</collab>
+<comment>URL <ext-link ext-link-type="uri" xlink:href="http://www.ebi.ac.uk/GOA/">http://www.ebi.ac.uk/GOA/</ext-link></comment>
+</element-citation></ref><ref id="pone.0009474-R1"><label>53</label><element-citation publication-type="other">
+<collab>R Development Core Team</collab>
+<year>2006</year>
+<article-title>R: A Language and Environment for Statistical Computing. R Foundation for Statistical Computing, Vienna, Austria.</article-title>
+<comment>URL <ext-link ext-link-type="uri" xlink:href="http://www.R-project.org">http://www.R-project.org</ext-link>. ISBN 3-900051-07-0</comment>
+</element-citation></ref><ref id="pone.0009474-Platzer1"><label>54</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Platzer</surname><given-names>P</given-names></name><name><surname>Upender</surname><given-names>MB</given-names></name><name><surname>Wilson</surname><given-names>K</given-names></name><name><surname>Willis</surname><given-names>J</given-names></name><name><surname>Lutterbaugh</surname><given-names>J</given-names></name><etal/></person-group>
+<year>2002</year>
+<article-title>Silence of chromosomal amplifications in colon cancer.</article-title>
+<source>Cancer Res</source>
+<volume>62</volume>
+<fpage>1134</fpage>
+<lpage>1138</lpage>
+<pub-id pub-id-type="pmid">11861394</pub-id></element-citation></ref><ref id="pone.0009474-Hahn1"><label>55</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Hahn</surname><given-names>A</given-names></name><name><surname>Rahnenfuhrer</surname><given-names>J</given-names></name><name><surname>Talwar</surname><given-names>P</given-names></name><name><surname>Lengauer</surname><given-names>T</given-names></name></person-group>
+<year>2005</year>
+<article-title>Confirmation of human protein interaction data by human expression data.</article-title>
+<source>BMC Bioinformatics</source>
+<volume>6</volume>
+<fpage>1</fpage>
+<pub-id pub-id-type="pmid">15631638</pub-id></element-citation></ref><ref id="pone.0009474-Mintseris1"><label>56</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Mintseris</surname><given-names>J</given-names></name><name><surname>Weng</surname><given-names>Z</given-names></name></person-group>
+<year>2005</year>
+<article-title>Structure, function, and evolution of transient and obligate protein&#x02013;protein interactions.</article-title>
+<source>Proc Natl Acad Sci USA</source>
+<volume>102</volume>
+<fpage>10930</fpage>
+<lpage>10935</lpage>
+<pub-id pub-id-type="pmid">16043700</pub-id></element-citation></ref><ref id="pone.0009474-Lemos1"><label>57</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Lemos</surname><given-names>B</given-names></name><name><surname>Meiklejohn</surname><given-names>CD</given-names></name><name><surname>Hartl</surname><given-names>DL</given-names></name></person-group>
+<year>2004</year>
+<article-title>Regulatory evolution across the protein interaction network.</article-title>
+<source>Nat Genet</source>
+<volume>36</volume>
+<fpage>1059</fpage>
+<lpage>1060</lpage>
+<pub-id pub-id-type="pmid">15378060</pub-id></element-citation></ref><ref id="pone.0009474-McCarroll1"><label>58</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>McCarroll</surname><given-names>SA</given-names></name><name><surname>Altshuler</surname><given-names>DM</given-names></name></person-group>
+<year>2007</year>
+<article-title>Copy-number variation and association studies of human disease.</article-title>
+<source>Nat Genet</source>
+<volume>39</volume>
+<fpage>S37</fpage>
+<lpage>42</lpage>
+<pub-id pub-id-type="pmid">17597780</pub-id></element-citation></ref><ref id="pone.0009474-Blake1"><label>59</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Blake</surname><given-names>WJ</given-names></name><name><surname>K&#x000e6;rn</surname><given-names>M</given-names></name><name><surname>Cantor</surname><given-names>CR</given-names></name><name><surname>Collins</surname><given-names>JJ</given-names></name></person-group>
+<year>2003</year>
+<article-title>Noise in eukaryotic gene expression.</article-title>
+<source>Nature</source>
+<volume>422</volume>
+<fpage>633</fpage>
+<lpage>637</lpage>
+<pub-id pub-id-type="pmid">12687005</pub-id></element-citation></ref><ref id="pone.0009474-Birchler5"><label>60</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Birchler</surname><given-names>JA</given-names></name></person-group>
+<year>1979</year>
+<article-title>A study of enzyme activities in a dosage series of the long arm of chromosome one in maize.</article-title>
+<source>Genetics</source>
+<volume>92</volume>
+<fpage>1211</fpage>
+<lpage>1229</lpage>
+<pub-id pub-id-type="pmid">17248947</pub-id></element-citation></ref><ref id="pone.0009474-Birchler6"><label>61</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Birchler</surname><given-names>JA</given-names></name></person-group>
+<year>1981</year>
+<article-title>The genetic basis of dosage compensation of alcohol dehydrogenase-1 in maize.</article-title>
+<source>Genetics</source>
+<volume>97</volume>
+<fpage>625</fpage>
+<lpage>637</lpage>
+<pub-id pub-id-type="pmid">17249082</pub-id></element-citation></ref><ref id="pone.0009474-Devlin1"><label>62</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Devlin</surname><given-names>RH</given-names></name><name><surname>Holm</surname><given-names>DG</given-names></name><name><surname>Grigliatti</surname><given-names>TA</given-names></name></person-group>
+<year>1982</year>
+<article-title>Autosomal dosage compensation in <italic>drosophila melanogaster</italic> strains trisomic for the left arm of chromosome 2.</article-title>
+<source>Proc Natl Acad Sci USA</source>
+<volume>79</volume>
+<fpage>1200</fpage>
+<lpage>1204</lpage>
+<pub-id pub-id-type="pmid">6803235</pub-id></element-citation></ref><ref id="pone.0009474-Birchler7"><label>63</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Birchler</surname><given-names>JA</given-names></name><name><surname>Riddle</surname><given-names>NC</given-names></name><name><surname>Auger</surname><given-names>DL</given-names></name><name><surname>Veitia</surname><given-names>RA</given-names></name></person-group>
+<year>2005</year>
+<article-title>Dosage balance in gene regulation: biological implications.</article-title>
+<source>Trends Genet</source>
+<volume>21</volume>
+<fpage>219</fpage>
+<lpage>226</lpage>
+<pub-id pub-id-type="pmid">15797617</pub-id></element-citation></ref><ref id="pone.0009474-Dang1"><label>64</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Dang</surname><given-names>V</given-names></name><name><surname>Kassahn</surname><given-names>K</given-names></name><name><surname>Marcos</surname><given-names>A</given-names></name><name><surname>Ragan</surname><given-names>M</given-names></name></person-group>
+<year>2008</year>
+<article-title>Identification of human haploinsufficient genes and their genomic proximity to segmental duplications.</article-title>
+<source>Eur J Hum Genet</source>
+<volume>16</volume>
+<fpage>1350</fpage>
+<lpage>1357</lpage>
+<pub-id pub-id-type="pmid">18523451</pub-id></element-citation></ref></ref-list></back></article>

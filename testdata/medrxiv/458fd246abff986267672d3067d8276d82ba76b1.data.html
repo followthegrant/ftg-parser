@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" 
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:mml="http://www.w3.org/1998/Math/MathML">
+  <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# book: http://ogp.me/ns/book#" >
+    <!--[if IE]><![endif]-->
+<link rel="dns-prefetch" href="//d33xdlntwy0kbs.cloudfront.net" />
+<link rel="dns-prefetch" href="//www.google.com" />
+<link rel="dns-prefetch" href="//scholar.google.com" />
+<link rel="dns-prefetch" href="//www.google-analytics.com" />
+<link rel="dns-prefetch" href="//stats.g.doubleclick.net" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="shortcut icon" href="https://www.medrxiv.org/sites/default/files/images/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="alternate" type="application/pdf" title="Full Text (PDF)" href="/content/10.1101/2021.10.21.21265216v1.full.pdf" />
+<link rel="alternate" type="text/plain" title="Full Text (Plain)" href="/content/10.1101/2021.10.21.21265216v1.full.txt" />
+<link rel="alternate" type="application/vnd.ms-powerpoint" title="Powerpoint" href="/content/10.1101/2021.10.21.21265216v1.ppt" />
+<meta name="type" content="article" />
+<meta name="category" content="article" />
+<meta name="HW.identifier" content="/medrxiv/early/2021/10/23/2021.10.21.21265216.atom" />
+<meta name="HW.pisa" content="medrxiv;2021.10.21.21265216v1" />
+<meta name="DC.Format" content="text/html" />
+<meta name="DC.Language" content="en" />
+<meta name="DC.Title" content="Generation time of the Alpha and Delta SARS-CoV-2 variants" />
+<meta name="DC.Identifier" content="10.1101/2021.10.21.21265216" />
+<meta name="DC.Date" content="2021-10-23" />
+<meta name="DC.Publisher" content="Cold Spring Harbor Laboratory Press" />
+<meta name="DC.Rights" content="© 2021, Posted by Cold Spring Harbor Laboratory. This pre-print is available under a Creative Commons License (Attribution-NonCommercial 4.0 International), CC BY-NC 4.0, as described at http://creativecommons.org/licenses/by-nc/4.0/" />
+<meta name="DC.AccessRights" content="restricted" />
+<meta name="DC.Description" content="Background In May 2021, the Delta SARS-CoV-2 variant became dominant in the UK. This variant is associated with increased transmissibility compared to the Alpha variant that was previously dominant. To understand ongoing transmission and interventions, a key question is whether the Delta variant generation time (the time between infections in infector- infectee pairs) is typically shorter–i.e., transmissions are happening more quickly–or whether infected individuals simply generate more infections.
+
+Methods We analysed transmission data from a UK Health Security Agency household study. By fitting a mathematical transmission model to the data, we estimated the generation times for the Alpha and Delta variants.
+
+Results The mean intrinsic generation time (the generation time if there had been a constant supply of susceptibles throughout infection) was shorter for the Delta variant (4·6 days, 95% CrI 4·0-5·4 days) than the Alpha variant (5·5 days, 95% CrI 4·6-6·4 days), although within uncertainty ranges. However, there was a larger difference in the realised mean household generation time between the Delta (3·2 days, 95% CrI 2·4-4·2 days) and Alpha (4·5 days, 95% CrI 3·7-5·4 days) variants. This is because higher transmissibility led to faster susceptible depletion in households, in addition to the reduced intrinsic generation time.
+
+Conclusions The Delta variant transmits more quickly than previously circulating variants. This has implications for interventions such as contact tracing, testing and isolation, which are less effective if the virus is transmitted quickly. Epidemiological models of interventions should be updated to include the shorter generation time of the Delta variant.
+
+### Competing Interest Statement
+
+The authors have declared no competing interest.
+
+### Funding Statement
+
+WSH was funded by an EPSRC Excellence Award for his doctoral studies (Grant Reference EP/R513295/1). EM receives support from the National Institute for Health Research (NIHR) Health Protection Research Unit in Immunisation at the London School of Hygiene and Tropical Medicine in partnership with the UKHSA (Grant Reference NIHR200929). SF receives funding from the Wellcome Trust (Grant Reference 210758/Z/18/Z). RNT receives support from the UKRI (Grant Reference EP/V053507/1).
+
+### Author Declarations
+
+I confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.
+
+Yes
+
+The details of the IRB/oversight body that provided approval or exemption for the research described are given below:
+
+The household surveillance protocol was approved by the UKHSA Research Ethics and Governance Group as part of the portfolio of the UKHSA's enhanced surveillance activities in response to the pandemic. Oral informed consent for sampling and follow up was obtained by the nurses from household members who were free to decline to participate in the surveillance at any time. Consent for children was obtained by a parent or legal guardian. Only anonymised data were provided to non-UKHSA authors.
+
+I confirm that all necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived, and that any patient/participant/sample identifiers included were not known to anyone (e.g., hospital staff, patients or participants themselves) outside the research group so cannot be used to identify individuals.
+
+Yes
+
+I understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).
+
+Yes
+
+I have followed all appropriate research reporting guidelines and uploaded the relevant EQUATOR Network research reporting checklist(s) and other pertinent material as supplementary files, if applicable.
+
+Yes
+
+All data produced are available online at [https://github.com/will-s-hart/variant\_generation\_times][1].
+
+ [1]: https://github.com/will-s-hart/variant_generation_times" />
+<meta name="DC.Contributor" content="WS Hart" />
+<meta name="DC.Contributor" content="E Miller" />
+<meta name="DC.Contributor" content="NJ Andrews" />
+<meta name="DC.Contributor" content="P Waight" />
+<meta name="DC.Contributor" content="PK Maini" />
+<meta name="DC.Contributor" content="S Funk" />
+<meta name="DC.Contributor" content="RN Thompson" />
+<meta name="article:published_time" content="2021-10-23" />
+<meta name="citation_title" content="Generation time of the Alpha and Delta SARS-CoV-2 variants" />
+<meta name="citation_abstract" lang="en" content="&lt;p&gt;Background: In May 2021, the Delta SARS-CoV-2 variant became dominant in the UK. This variant is associated with increased transmissibility compared to the Alpha variant that was previously dominant. To understand ongoing transmission and interventions, a key question is whether the Delta variant generation time (the time between infections in infector-infectee pairs) is typically shorter-i.e., transmissions are happening more quickly-or whether infected individuals simply generate more infections.
+
+Methods: We analysed transmission data from a UK Health Security Agency household study. By fitting a mathematical transmission model to the data, we estimated the generation times for the Alpha and Delta variants.
+
+Results: The mean intrinsic generation time (the generation time if there had been a constant supply of susceptibles throughout infection) was shorter for the Delta variant (4.6 days, 95% CrI 4.0-5.4 days) than the Alpha variant (5.5 days, 95% CrI 4.6-6.4 days), although within uncertainty ranges. However, there was a larger difference in the realised mean household generation time between the Delta (3.2 days, 95% CrI 2.4-4.2 days) and Alpha (4.5 days, 95% CrI 3.7-5.4 days) variants. This is because higher transmissibility led to faster susceptible depletion in households, in addition to the reduced intrinsic generation time.
+
+Conclusions: The Delta variant transmits more quickly than previously circulating variants. This has implications for interventions such as contact tracing, testing and isolation, which are less effective if the virus is transmitted quickly. Epidemiological models of interventions should be updated to include the shorter generation time of the Delta variant.&lt;/p&gt;" />
+<meta name="citation_journal_title" content="medRxiv" />
+<meta name="citation_publisher" content="Cold Spring Harbor Laboratory Press" />
+<meta name="citation_publication_date" content="2021/01/01" />
+<meta name="citation_mjid" content="medrxiv;2021.10.21.21265216v1" />
+<meta name="citation_id" content="2021.10.21.21265216v1" />
+<meta name="citation_public_url" content="https://www.medrxiv.org/content/10.1101/2021.10.21.21265216v1" />
+<meta name="citation_abstract_html_url" content="https://www.medrxiv.org/content/10.1101/2021.10.21.21265216v1.abstract" />
+<meta name="citation_full_html_url" content="https://www.medrxiv.org/content/10.1101/2021.10.21.21265216v1.full" />
+<meta name="citation_pdf_url" content="https://www.medrxiv.org/content/medrxiv/early/2021/10/23/2021.10.21.21265216.full.pdf" />
+<meta name="citation_doi" content="10.1101/2021.10.21.21265216" />
+<meta name="citation_num_pages" content="17" />
+<meta name="citation_article_type" content="Article" />
+<meta name="citation_firstpage" content="2021.10.21.21265216" />
+<meta name="citation_author" content="WS Hart" />
+<meta name="citation_author_institution" content="Mathematical Institute, University of Oxford" />
+<meta name="citation_author" content="E Miller" />
+<meta name="citation_author_institution" content="Department of Infectious Disease Epidemiology, London School of Hygiene and Tropical Medicine" />
+<meta name="citation_author_institution" content="Immunisation and Countermeasures Division, UK Health Security Agency" />
+<meta name="citation_author" content="NJ Andrews" />
+<meta name="citation_author_institution" content="Data and Analytical Sciences, UK Health Security Agency" />
+<meta name="citation_author" content="P Waight" />
+<meta name="citation_author_institution" content="Immunisation and Countermeasures Division, UK Health Security Agency" />
+<meta name="citation_author" content="PK Maini" />
+<meta name="citation_author_institution" content="Mathematical Institute, University of Oxford" />
+<meta name="citation_author" content="S Funk" />
+<meta name="citation_author_institution" content="Department of Infectious Disease Epidemiology, London School of Hygiene and Tropical Medicine" />
+<meta name="citation_author" content="RN Thompson" />
+<meta name="citation_author_institution" content="Mathematics Institute, University of Warwick" />
+<meta name="citation_author_institution" content="Zeeman Institute for Systems Biology and Infectious Disease Epidemiology Research (SBIDER), University of Warwick" />
+<meta name="citation_author_email" content="Robin.N.Thompson@warwick.ac.uk" />
+<meta name="citation_author_orcid" content="http://orcid.org/0000-0001-8545-5212" />
+<meta name="citation_reference" content="Public Health England. SARS-CoV-2 variants of concern and variants under investigation in England (Technical briefing 23). 2021." />
+<meta name="citation_reference" content="World Health Organization. Weekly epidemiological update on COVID-19 (Edition 58). 2021." />
+<meta name="citation_reference" content="Twohig KA, Nyberg T, Zaidi A, et al. Hospital admission and emergency care attendance risk for SARS-CoV-2 delta (B.1.617.2) compared with alpha (B.1.1.7) variants of concern: a cohort study. Lancet Infect Dis 2021." />
+<meta name="citation_reference" content="Lopez Bernal J, Andrews N, Gower C, et al. Effectiveness of Covid-19 vaccines against the B.1.617.2 (Delta) variant. N Engl J Med 2021; 385: 585–94." />
+<meta name="citation_reference" content="Campbell F, Archer B, Laurenson-Schafer H, et al. Increased transmissibility and global spread of SARS-CoV-2 variants of concern as at June 2021. Eurosurveillance 2021; 26: 2100509." />
+<meta name="citation_reference" content="Public Health England. SARS-CoV-2 variants of concern and variants under investigation in England (Technical briefing 7). 2021." />
+<meta name="citation_reference" content="Dushoff J, Park SW. Speed and strength of an epidemic intervention. Proc R Soc B Biol Sci 2021; 288: 20201556." />
+<meta name="citation_reference" content="Park SW, Bolker BM, Funk S, et al. Roles of generation-interval distributions in shaping relative epidemic strength, speed, and control of new SARS-CoV-2 variants. medRxiv 2021; : 2021.05.03.21256545." />
+<meta name="citation_reference" content="Fraser C. Estimating Individual and Household Reproduction Numbers in an Emerging Epidemic. PLOS ONE 2007; 2: e758." />
+<meta name="citation_reference" content="Wallinga J, Lipsitch M. How generation intervals shape the relationship between growth rates and reproductive numbers. Proc R Soc B Biol Sci 2007; 274: 599–604." />
+<meta name="citation_reference" content="Parag KV, Thompson RN, Donnelly CA. Are epidemic growth rates more informative than reproduction numbers? Royal Statistical Society, 2021." />
+<meta name="citation_reference" content="Gostic KM, McGough L, Baskerville EB, et al. Practical considerations for measuring the effective reproductive number, Rt. PLOS Comput Biol 2020; 16: e1008409." />
+<meta name="citation_reference" content="Abbott S, Hellewell J, Thompson RN, et al. Estimating the time-varying reproduction number of SARS-CoV-2 using national and subnational case counts. Wellcome Open Res 2020; 5: 112." />
+<meta name="citation_reference" content="Davies NG, Abbott S, Barnard RC, et al. Estimated transmissibility and impact of SARS-CoV-2 lineage B.1.1.7 in England. Science 2021; : eabg3055." />
+<meta name="citation_reference" content="Ferretti L, Wymant C, Kendall M, et al. Quantifying SARS-CoV-2 transmission suggests epidemic control with digital contact tracing. Science 2020; 368: eabb6936." />
+<meta name="citation_reference" content="Ganyani T, Kremer C, Chen D, et al. Estimating the generation interval for coronavirus disease (COVID-19) based on symptom onset data, March 2020. Eurosurveillance 2020; 25: 2000257." />
+<meta name="citation_reference" content="Hart WS, Maini PK, Thompson RN. High infectiousness immediately before COVID-19 symptom onset highlights the importance of continued contact tracing. eLife 2021; 10: e65534." />
+<meta name="citation_reference" content="Hart WS, Abbott S, Endo A, et al. Inference of SARS-CoV-2 generation times using UK household data. medRxiv 2021; : 2021.05.27.21257936." />
+<meta name="citation_reference" content="Park SW, Champredon D, Dushoff J. Inferring generation-interval distributions from contacttracing data. J R Soc Interface 2020; 17: 20190719." />
+<meta name="citation_reference" content="Ferguson NM, Cummings DAT, Cauchemez S, et al. Strategies for containing an emerging influenza pandemic in Southeast Asia. Nature 2005; 437: 209–14." />
+<meta name="citation_reference" content="McAloon C, Collins Á, Hunt K, et al. Incubation period of COVID-19: a rapid systematic review and meta-analysis of observational research. BMJ Open 2020; 10: e039652." />
+<meta name="citation_reference" content="Buitrago-Garcia D, Egli-Gany D, Counotte MJ, et al. Occurrence and transmission potential of asymptomatic and presymptomatic SARS-CoV-2 infections: A living systematic review and meta-analysis. PLOS Med 2020; 17: e1003346." />
+<meta name="citation_reference" content="Pouwels KB, Pritchard E, Matthews PC, et al. Impact of Delta on viral burden and vaccine effectiveness against new SARS-CoV-2 infections in the UK. medRxiv 2021; : 2021.08.18.21262237." />
+<meta name="citation_reference" content="Lehtinen S, Ashcroft P, Bonhoeffer S. On the relationship between serial interval, infectiousness profile and generation time. J R Soc Interface 2021; 18: 20200756." />
+<meta name="citation_reference" content="Zhang M, Xiao J, Deng A, et al. Transmission dynamics of an outbreak of the COVID-19 Delta variant B.1.617.2 — Guangdong Province, China, May–June 2021. China CDC Wkly 2021; 3: 584–6." />
+<meta name="citation_reference" content="Pung R, Mak TM, Kucharski AJ, Lee VJ. Serial intervals in SARS-CoV-2 B.1.617.2 variant cases. The Lancet 2021; 398: 837–8." />
+<meta name="citation_reference" content="Kang M, Xin H, Yuan J, et al. Transmission dynamics and epidemiological characteristics of Delta variant infections in China. medRxiv 2021; : 2021.08.12.21261991." />
+<meta name="citation_reference" content="Ryu S, Kim D, Lim J-S, Ali ST, Cowling BJ. Changes in the serial interval and transmission dynamics associated with the SARS-CoV-2 Delta variant in South Korea. medRxiv 2021; : 2021.08.18.21262166." />
+<meta name="citation_reference" content="Kissler SM, Fauver JR, Mack C, et al. Viral dynamics of SARS-CoV-2 variants in vaccinated and unvaccinated individuals. medRxiv 2021; : 2021.02.16.21251535." />
+<meta name="citation_reference" content="Li B, Deng A, Li K, et al. Viral infection and transmission in a large, well-traced outbreak caused by the SARS-CoV-2 Delta variant. medRxiv 2021; : 2021.07.07.21260122." />
+<meta name="citation_reference" content="Ong SWX, Chiew CJ, Ang LW, et al. Clinical and virological features of SARS-CoV-2 variants of concern: a retrospective cohort study comparing B.1.1.7 (Alpha), B.1.315 (Beta), and B.1.617.2 (Delta). Clin Infect Dis 2021; published online Aug 23. DOI:10.1093/cid/ciab721." />
+<meta name="citation_reference" content="Hart WS, Maini PK, Yates CA, Thompson RN. A theoretical framework for transitioning from patient-level to population-scale epidemiological dynamics: influenza A as a case study. J R Soc Interface 2020; 17: 20200230." />
+<meta name="twitter:title" content="Generation time of the Alpha and Delta SARS-CoV-2 variants" />
+<meta name="twitter:site" content="@medrxivpreprint" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="Background In May 2021, the Delta SARS-CoV-2 variant became dominant in the UK. This variant is associated with increased transmissibility compared to the Alpha variant that was previously dominant. To understand ongoing transmission and interventions, a key question is whether the Delta variant generation time (the time between infections in infector- infectee pairs) is typically shorter–i.e., transmissions are happening more quickly–or whether infected individuals simply generate more infections.
+
+Methods We analysed transmission data from a UK Health Security Agency household study. By fitting a mathematical transmission model to the data, we estimated the generation times for the Alpha and Delta variants.
+
+Results The mean intrinsic generation time (the generation time if there had been a constant supply of susceptibles throughout infection) was shorter for the Delta variant (4·6 days, 95% CrI 4·0-5·4 days) than the Alpha variant (5·5 days, 95% CrI 4·6-6·4 days), although within uncertainty ranges. However, there was a larger difference in the realised mean household generation time between the Delta (3·2 days, 95% CrI 2·4-4·2 days) and Alpha (4·5 days, 95% CrI 3·7-5·4 days) variants. This is because higher transmissibility led to faster susceptible depletion in households, in addition to the reduced intrinsic generation time.
+
+Conclusions The Delta variant transmits more quickly than previously circulating variants. This has implications for interventions such as contact tracing, testing and isolation, which are less effective if the virus is transmitted quickly. Epidemiological models of interventions should be updated to include the shorter generation time of the Delta variant.
+
+### Competing Interest Statement
+
+The authors have declared no competing interest.
+
+### Funding Statement
+
+WSH was funded by an EPSRC Excellence Award for his doctoral studies (Grant Reference EP/R513295/1). EM receives support from the National Institute for Health Research (NIHR) Health Protection Research Unit in Immunisation at the London School of Hygiene and Tropical Medicine in partnership with the UKHSA (Grant Reference NIHR200929). SF receives funding from the Wellcome Trust (Grant Reference 210758/Z/18/Z). RNT receives support from the UKRI (Grant Reference EP/V053507/1).
+
+### Author Declarations
+
+I confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.
+
+Yes
+
+The details of the IRB/oversight body that provided approval or exemption for the research described are given below:
+
+The household surveillance protocol was approved by the UKHSA Research Ethics and Governance Group as part of the portfolio of the UKHSA's enhanced surveillance activities in response to the pandemic. Oral informed consent for sampling and follow up was obtained by the nurses from household members who were free to decline to participate in the surveillance at any time. Consent for children was obtained by a parent or legal guardian. Only anonymised data were provided to non-UKHSA authors.
+
+I confirm that all necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived, and that any patient/participant/sample identifiers included were not known to anyone (e.g., hospital staff, patients or participants themselves) outside the research group so cannot be used to identify individuals.
+
+Yes
+
+I understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).
+
+Yes
+
+I have followed all appropriate research reporting guidelines and uploaded the relevant EQUATOR Network research reporting checklist(s) and other pertinent material as supplementary files, if applicable.
+
+Yes
+
+All data produced are available online at [https://github.com/will-s-hart/variant\_generation\_times][1].
+
+ [1]: https://github.com/will-s-hart/variant_generation_times" />
+<meta name="og-title" property="og:title" content="Generation time of the Alpha and Delta SARS-CoV-2 variants" />
+<meta name="og-url" property="og:url" content="https://www.medrxiv.org/content/10.1101/2021.10.21.21265216v1" />
+<meta name="og-site-name" property="og:site_name" content="medRxiv" />
+<meta name="og-description" property="og:description" content="Background In May 2021, the Delta SARS-CoV-2 variant became dominant in the UK. This variant is associated with increased transmissibility compared to the Alpha variant that was previously dominant. To understand ongoing transmission and interventions, a key question is whether the Delta variant generation time (the time between infections in infector- infectee pairs) is typically shorter–i.e., transmissions are happening more quickly–or whether infected individuals simply generate more infections.
+
+Methods We analysed transmission data from a UK Health Security Agency household study. By fitting a mathematical transmission model to the data, we estimated the generation times for the Alpha and Delta variants.
+
+Results The mean intrinsic generation time (the generation time if there had been a constant supply of susceptibles throughout infection) was shorter for the Delta variant (4·6 days, 95% CrI 4·0-5·4 days) than the Alpha variant (5·5 days, 95% CrI 4·6-6·4 days), although within uncertainty ranges. However, there was a larger difference in the realised mean household generation time between the Delta (3·2 days, 95% CrI 2·4-4·2 days) and Alpha (4·5 days, 95% CrI 3·7-5·4 days) variants. This is because higher transmissibility led to faster susceptible depletion in households, in addition to the reduced intrinsic generation time.
+
+Conclusions The Delta variant transmits more quickly than previously circulating variants. This has implications for interventions such as contact tracing, testing and isolation, which are less effective if the virus is transmitted quickly. Epidemiological models of interventions should be updated to include the shorter generation time of the Delta variant.
+
+### Competing Interest Statement
+
+The authors have declared no competing interest.
+
+### Funding Statement
+
+WSH was funded by an EPSRC Excellence Award for his doctoral studies (Grant Reference EP/R513295/1). EM receives support from the National Institute for Health Research (NIHR) Health Protection Research Unit in Immunisation at the London School of Hygiene and Tropical Medicine in partnership with the UKHSA (Grant Reference NIHR200929). SF receives funding from the Wellcome Trust (Grant Reference 210758/Z/18/Z). RNT receives support from the UKRI (Grant Reference EP/V053507/1).
+
+### Author Declarations
+
+I confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.
+
+Yes
+
+The details of the IRB/oversight body that provided approval or exemption for the research described are given below:
+
+The household surveillance protocol was approved by the UKHSA Research Ethics and Governance Group as part of the portfolio of the UKHSA's enhanced surveillance activities in response to the pandemic. Oral informed consent for sampling and follow up was obtained by the nurses from household members who were free to decline to participate in the surveillance at any time. Consent for children was obtained by a parent or legal guardian. Only anonymised data were provided to non-UKHSA authors.
+
+I confirm that all necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived, and that any patient/participant/sample identifiers included were not known to anyone (e.g., hospital staff, patients or participants themselves) outside the research group so cannot be used to identify individuals.
+
+Yes
+
+I understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).
+
+Yes
+
+I have followed all appropriate research reporting guidelines and uploaded the relevant EQUATOR Network research reporting checklist(s) and other pertinent material as supplementary files, if applicable.
+
+Yes
+
+All data produced are available online at [https://github.com/will-s-hart/variant\_generation\_times][1].
+
+ [1]: https://github.com/will-s-hart/variant_generation_times" />
+<meta name="og-type" property="og:type" content="article" />
+<meta name="og-image" property="og:image" content="" />
+<meta name="citation_date" content="2021-10-23" />
+<meta name="description" content="medRxiv - The Preprint Server for Health Sciences" />
+<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="canonical" href="https://www.medrxiv.org/content/10.1101/2021.10.21.21265216v1" />
+<link rel="shortlink" href="https://www.medrxiv.org/node/425737" />
+    <title>Generation time of the Alpha and Delta SARS-CoV-2 variants | medRxiv</title>  
+    <link type="text/css" rel="stylesheet" href="https://www.medrxiv.org/sites/default/files/advagg_css/css__7SC0i-kTgUlQGKuqbmyS18Sez8FDO-aG9FSHkGrLGl8__9Xf-fJpmF9h8tvWywQTaOzJzFLt4sEfx108Wh1gYmm0__OWu9jWxbqz5eMqeTDc4xZhOzPlgoEqGh5PmxOqlf8ZY.css" media="all" />
+<link type="text/css" rel="stylesheet" href="//cdn.jsdelivr.net/qtip2/2.2.1/jquery.qtip.min.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.medrxiv.org/sites/default/files/advagg_css/css__6CA0-YpwAeHt1tcr6dmX5ZBUuxlddlGnE8FCmWRwxOw__M2jATP9fgS6Hut-L0G3s312CoMA5SDjnuWFM3KPLIRs__OWu9jWxbqz5eMqeTDc4xZhOzPlgoEqGh5PmxOqlf8ZY.css" media="all" />
+<style type="text/css" media="all">
+/* <![CDATA[ */
+#sliding-popup.sliding-popup-bottom,#sliding-popup.sliding-popup-bottom .eu-cookie-withdraw-banner,.eu-cookie-withdraw-tab{background:gray}#sliding-popup.sliding-popup-bottom.eu-cookie-withdraw-wrapper{background:transparent}#sliding-popup .popup-content #popup-text h1,#sliding-popup .popup-content #popup-text h2,#sliding-popup .popup-content #popup-text h3,#sliding-popup .popup-content #popup-text p,.eu-cookie-compliance-secondary-button,.eu-cookie-withdraw-tab{color:#fff !important}.eu-cookie-withdraw-tab{border-color:#fff}.eu-cookie-compliance-more-button{color:#fff !important}
+/* ]]> */
+</style>
+
+<!--[if lte IE 7]>
+<link type="text/css" rel="stylesheet" href="https://www.medrxiv.org/sites/default/files/advagg_css/css__ElJr3PIJEvw3qLXc1cnYiLj2G4KgDPSXFOfm6Phf8hw__JdWGm15cDWjsK6KrFlQVXQix9YgNeYysf22XZHj-Y-c__OWu9jWxbqz5eMqeTDc4xZhOzPlgoEqGh5PmxOqlf8ZY.css" media="all" />
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="https://www.medrxiv.org/sites/default/files/advagg_css/css__Wnlyen9qEpwh_Qaf9okEu4QdVGM0BDothxeqA6Nbvo8__EJmw6SZD9bYoS8jocCpPYS3JFRURpdzmuvJoAUNiI-g__OWu9jWxbqz5eMqeTDc4xZhOzPlgoEqGh5PmxOqlf8ZY.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.medrxiv.org/sites/default/files/advagg_css/css__XPg6Aobs217v0T9rA_Y-wMrH3jyqmqunImGwMN4WMEE__Nc8_6i0mjd_g-hzHvpxLmo5g2aluEkJf5SXcEKb7YRY__OWu9jWxbqz5eMqeTDc4xZhOzPlgoEqGh5PmxOqlf8ZY.css" media="all" />
+
+<!--[if (lt IE 9)&(!IEMobile)]>
+<link type="text/css" rel="stylesheet" href="https://www.medrxiv.org/sites/default/files/advagg_css/css__XH6bpcI0f2dImc-p674DLCZtWBGb-QwxJK1YexVGtno__vUceGprdo5nIhV6DH93X7fI3r8RcTJbChbas9TQXeW4__OWu9jWxbqz5eMqeTDc4xZhOzPlgoEqGh5PmxOqlf8ZY.css" media="all" />
+<![endif]-->
+
+<!--[if gte IE 9]><!-->
+<link type="text/css" rel="stylesheet" href="https://www.medrxiv.org/sites/default/files/advagg_css/css__2WBMox6sOrN42ss5lCnH7WWVRdFdJCxtTKnQJYRwTE4__yqNvNYLvMpjy3ffuJrjjm9uW2i-Me1c23KLYuWHaqio__OWu9jWxbqz5eMqeTDc4xZhOzPlgoEqGh5PmxOqlf8ZY.css" media="all" />
+<!--<![endif]-->
+<link type="text/css" rel="stylesheet" href="https://www.medrxiv.org/sites/default/files/advagg_css/css__GJ_y0JYBjHihOcdJg-wLEQWRfqvBxU74PCdjUcUHlyY__f0nQteVSjWTKq2ga8E2qYttGognShmPZZJdeGhQoNFI__OWu9jWxbqz5eMqeTDc4xZhOzPlgoEqGh5PmxOqlf8ZY.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://d33xdlntwy0kbs.cloudfront.net/cshl_custom_medrxiv.css" media="all" />
+    <script type="text/javascript" src="https://www.medrxiv.org/sites/default/files/advagg_js/js__BKYqkKToQ7EjirB7eIdMEH5521EU3da9IpoOs8Ex2XI__aSjVoX8giBmLhN2EbCgIGQJNu89Mh5aVu1LvI_gkJ7Y__OWu9jWxbqz5eMqeTDc4xZhOzPlgoEqGh5PmxOqlf8ZY.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/qtip2/2.2.1/jquery.qtip.min.js"></script>
+<script type="text/javascript" src="https://www.medrxiv.org/sites/default/files/advagg_js/js__4Cn2dxvNlsJ-sHe6QOTLREaQvcqb0Yh0Zm9tTOHtQow__DGggC5UtYkPCwIH8nsa7Vw7hug93fb9QVVl0UJ3mfMM__OWu9jWxbqz5eMqeTDc4xZhOzPlgoEqGh5PmxOqlf8ZY.js"></script>
+<script type="text/javascript" src="https://www.google.com/recaptcha/api.js?hl=en&amp;render=explicit&amp;onload=drupalRecaptchaOnload"></script>
+<script type="text/javascript" src="https://www.medrxiv.org/sites/default/files/advagg_js/js__dGWpV57YWu3sX6UOe04RMH-iP9jSkEP7Ajt0caYXZZk__sUEhH4BzLc9Xn679uyzc7yvwgMkxjsks2WFVnFK0PiI__OWu9jWxbqz5eMqeTDc4xZhOzPlgoEqGh5PmxOqlf8ZY.js"></script>
+<script type="text/javascript" async="async" src="https://scholar.google.com/scholar_js/casa.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+/*!
+ * yepnope1.5.4
+ * (c) WTFPL, GPLv2
+ */
+(function(a,b,c){function d(a){return"[object Function]"==o.call(a)}function e(a){return"string"==typeof a}function f(){}function g(a){return!a||"loaded"==a||"complete"==a||"uninitialized"==a}function h(){var a=p.shift();q=1,a?a.t?m(function(){("c"==a.t?B.injectCss:B.injectJs)(a.s,0,a.a,a.x,a.e,1)},0):(a(),h()):q=0}function i(a,c,d,e,f,i,j){function k(b){if(!o&&g(l.readyState)&&(u.r=o=1,!q&&h(),l.onload=l.onreadystatechange=null,b)){"img"!=a&&m(function(){t.removeChild(l)},50);for(var d in y[c])y[c].hasOwnProperty(d)&&y[c][d].onload()}}var j=j||B.errorTimeout,l=b.createElement(a),o=0,r=0,u={t:d,s:c,e:f,a:i,x:j};1===y[c]&&(r=1,y[c]=[]),"object"==a?l.data=c:(l.src=c,l.type=a),l.width=l.height="0",l.onerror=l.onload=l.onreadystatechange=function(){k.call(this,r)},p.splice(e,0,u),"img"!=a&&(r||2===y[c]?(t.insertBefore(l,s?null:n),m(k,j)):y[c].push(l))}function j(a,b,c,d,f){return q=0,b=b||"j",e(a)?i("c"==b?v:u,a,b,this.i++,c,d,f):(p.splice(this.i++,0,a),1==p.length&&h()),this}function k(){var a=B;return a.loader={load:j,i:0},a}var l=b.documentElement,m=a.setTimeout,n=b.getElementsByTagName("script")[0],o={}.toString,p=[],q=0,r="MozAppearance"in l.style,s=r&&!!b.createRange().compareNode,t=s?l:n.parentNode,l=a.opera&&"[object Opera]"==o.call(a.opera),l=!!b.attachEvent&&!l,u=r?"object":l?"script":"img",v=l?"script":u,w=Array.isArray||function(a){return"[object Array]"==o.call(a)},x=[],y={},z={timeout:function(a,b){return b.length&&(a.timeout=b[0]),a}},A,B;B=function(a){function b(a){var a=a.split("!"),b=x.length,c=a.pop(),d=a.length,c={url:c,origUrl:c,prefixes:a},e,f,g;for(f=0;f<d;f++)g=a[f].split("="),(e=z[g.shift()])&&(c=e(c,g));for(f=0;f<b;f++)c=x[f](c);return c}function g(a,e,f,g,h){var i=b(a),j=i.autoCallback;i.url.split(".").pop().split("?").shift(),i.bypass||(e&&(e=d(e)?e:e[a]||e[g]||e[a.split("/").pop().split("?")[0]]),i.instead?i.instead(a,e,f,g,h):(y[i.url]?i.noexec=!0:y[i.url]=1,f.load(i.url,i.forceCSS||!i.forceJS&&"css"==i.url.split(".").pop().split("?").shift()?"c":c,i.noexec,i.attrs,i.timeout),(d(e)||d(j))&&f.load(function(){k(),e&&e(i.origUrl,h,g),j&&j(i.origUrl,h,g),y[i.url]=2})))}function h(a,b){function c(a,c){if(a){if(e(a))c||(j=function(){var a=[].slice.call(arguments);k.apply(this,a),l()}),g(a,j,b,0,h);else if(Object(a)===a)for(n in m=function(){var b=0,c;for(c in a)a.hasOwnProperty(c)&&b++;return b}(),a)a.hasOwnProperty(n)&&(!c&&!--m&&(d(j)?j=function(){var a=[].slice.call(arguments);k.apply(this,a),l()}:j[n]=function(a){return function(){var b=[].slice.call(arguments);a&&a.apply(this,b),l()}}(k[n])),g(a[n],j,b,n,h))}else!c&&l()}var h=!!a.test,i=a.load||a.both,j=a.callback||f,k=j,l=a.complete||f,m,n;c(h?a.yep:a.nope,!!i),i&&c(i)}var i,j,l=this.yepnope.loader;if(e(a))g(a,0,l,0);else if(w(a))for(i=0;i<a.length;i++)j=a[i],e(j)?g(j,0,l,0):w(j)?B(j):Object(j)===j&&h(j,l);else Object(a)===a&&h(a,l)},B.addPrefix=function(a,b){z[a]=b},B.addFilter=function(a){x.push(a)},B.errorTimeout=1e4,null==b.readyState&&b.addEventListener&&(b.readyState="loading",b.addEventListener("DOMContentLoaded",A=function(){b.removeEventListener("DOMContentLoaded",A,0),b.readyState="complete"},0)),a.yepnope=k(),a.yepnope.executeStack=h,a.yepnope.injectJs=function(a,c,d,e,i,j){var k=b.createElement("script"),l,o,e=e||B.errorTimeout;k.src=a;for(o in d)k.setAttribute(o,d[o]);c=j?h:c||f,k.onreadystatechange=k.onload=function(){!l&&g(k.readyState)&&(l=1,c(),k.onload=k.onreadystatechange=null)},m(function(){l||(l=1,c(1))},e),i?k.onload():n.parentNode.insertBefore(k,n)},a.yepnope.injectCss=function(a,c,d,e,g,i){var e=b.createElement("link"),j,c=i?h:c||f;e.href=a,e.rel="stylesheet",e.type="text/css";for(j in d)e.setAttribute(j,d[j]);g||(n.parentNode.insertBefore(e,n),m(c,0))}})(this,document);
+
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+yepnope({
+  test: Modernizr.matchmedia,
+  nope: '/sites/all/libraries/media-match/media.match.min.js'
+});
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _prum=[['id', '52e95df3abe53d2e33000000'], ['mark', 'firstbyte',
+      (new Date()).getTime()]]; (function() {
+      var s=document.getElementsByTagName('script')[0],
+      p=document.createElement('script');
+      p.async='async'; p.src='//rum-static.pingdom.net/prum.min.js';s.parentNode.insertBefore(p,s);})();
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+if(typeof window.MathJax === "undefined") window.MathJax = { menuSettings: { zoom: "Click" } };
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-141606356-1", {"cookieDomain":"auto"});ga("set", "page", location.pathname + location.search + location.hash);ga("send", "pageview");ga('create', 'UA-189672-38', 'auto', {'name': 'hwTracker'});
+ga('set', 'anonymizeIp', true);
+ga('hwTracker.send', 'pageview');
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings,{"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"jcore_1","theme_token":"--e-5ZBrq_-TP2pn6o27SZc9ppQ8VT1u6vn0qaAr41s"},"colorbox":{"opacity":"0.85","current":"{current} of {total}","previous":"\u00ab Prev","next":"Next \u00bb","close":"Close","maxWidth":"98%","maxHeight":"98%","fixed":true,"mobiledetect":true,"mobiledevicewidth":"480px"},"highwire":{"nid":"425737","apath":"\/medrxiv\/early\/2021\/10\/23\/2021.10.21.21265216.atom","pisa":"medrxiv;2021.10.21.21265216v1","ac":{"\/medrxiv\/early\/2021\/10\/23\/2021.10.21.21265216.atom":{"access":{"full":true},"pisa_id":"","apath":"\/medrxiv\/early\/2021\/10\/23\/2021.10.21.21265216.atom","jcode":"medrxiv"}},"processed":["highwire_math"],"markup":[{"requested":"abstract","variant":"abstract","view":"abstract","pisa":"medrxiv;2021.10.21.21265216v1"}],"modal_window_width":"560","share_modal_width":"560","share_modal_title":"Share this Article"},"jcarousel":{"ajaxPath":"\/jcarousel\/ajax\/views"},"instances":"{\u0022highwire_abstract_tooltip\u0022:{\u0022content\u0022:{\u0022text\u0022:\u0022\u0022},\u0022style\u0022:{\u0022tip\u0022:{\u0022width\u0022:20,\u0022height\u0022:20,\u0022border\u0022:1,\u0022offset\u0022:0,\u0022corner\u0022:true},\u0022classes\u0022:\u0022qtip-custom hw-tooltip hw-abstract-tooltip qtip-shadow qtip-rounded\u0022,\u0022classes_custom\u0022:\u0022hw-tooltip hw-abstract-tooltip\u0022},\u0022position\u0022:{\u0022at\u0022:\u0022right center\u0022,\u0022my\u0022:\u0022left center\u0022,\u0022viewport\u0022:true,\u0022adjust\u0022:{\u0022method\u0022:\u0022shift\u0022}},\u0022show\u0022:{\u0022event\u0022:\u0022mouseenter click \u0022,\u0022solo\u0022:true},\u0022hide\u0022:{\u0022event\u0022:\u0022mouseleave \u0022,\u0022fixed\u0022:1,\u0022delay\u0022:\u0022100\u0022}},\u0022highwire_author_tooltip\u0022:{\u0022content\u0022:{\u0022text\u0022:\u0022\u0022},\u0022style\u0022:{\u0022tip\u0022:{\u0022width\u0022:15,\u0022height\u0022:15,\u0022border\u0022:1,\u0022offset\u0022:0,\u0022corner\u0022:true},\u0022classes\u0022:\u0022qtip-custom hw-tooltip hw-author-tooltip qtip-shadow qtip-rounded\u0022,\u0022classes_custom\u0022:\u0022hw-tooltip hw-author-tooltip\u0022},\u0022position\u0022:{\u0022at\u0022:\u0022top center\u0022,\u0022my\u0022:\u0022bottom center\u0022,\u0022viewport\u0022:true,\u0022adjust\u0022:{\u0022method\u0022:\u0022\u0022}},\u0022show\u0022:{\u0022event\u0022:\u0022mouseenter \u0022,\u0022solo\u0022:true},\u0022hide\u0022:{\u0022event\u0022:\u0022mouseleave \u0022,\u0022fixed\u0022:1,\u0022delay\u0022:\u0022100\u0022}},\u0022highwire_reflinks_tooltip\u0022:{\u0022content\u0022:{\u0022text\u0022:\u0022\u0022},\u0022style\u0022:{\u0022tip\u0022:{\u0022width\u0022:15,\u0022height\u0022:15,\u0022border\u0022:1,\u0022mimic\u0022:\u0022top center\u0022,\u0022offset\u0022:0,\u0022corner\u0022:true},\u0022classes\u0022:\u0022qtip-custom hw-tooltip hw-ref-link-tooltip qtip-shadow qtip-rounded\u0022,\u0022classes_custom\u0022:\u0022hw-tooltip hw-ref-link-tooltip\u0022},\u0022position\u0022:{\u0022at\u0022:\u0022bottom left\u0022,\u0022my\u0022:\u0022top left\u0022,\u0022viewport\u0022:true,\u0022adjust\u0022:{\u0022method\u0022:\u0022flip\u0022}},\u0022show\u0022:{\u0022event\u0022:\u0022mouseenter \u0022,\u0022solo\u0022:true},\u0022hide\u0022:{\u0022event\u0022:\u0022mouseleave \u0022,\u0022fixed\u0022:1,\u0022delay\u0022:\u0022100\u0022}}}","qtipDebug":"{\u0022leaveElement\u0022:0}","panel_ajax_tab":{"path":"sites\/all\/modules\/contrib\/panels_ajax_tab"},"disqus":{"domain":"medRxiv","url":"https:\/\/www.medrxiv.org\/content\/10.1101\/2021.10.21.21265216v1","title":"Generation time of the Alpha and Delta SARS-CoV-2 variants","identifier":"node\/425737"},"panels_ajax_pane":{"new-41":"{\u0022encrypted\u0022:\u0022{\\\u0022encrypted\\\u0022:\\\u0022lBo6b1xuac2CSiZByOe4NmdFEwmHRwTl+pgagVZEk1jiijPbkN4+wkq8h\\\\\\\/kNknr0FmYjFGyx6bIM9VHgx1q6K9SiAEDxuSnNWlN+AQOal8+GDclbMr5v\\\\\\\/s0iJ9KmrNEs6eB6ToJsRPZglifI0ERBQjD3YxcauYxKaYEzHFYAsdhqudRfMkp14yZq4b40MhUvWuTQ7Z7oB27AfJqOiieBLGD9Gnmcoympan8B\\\\\\\/uGFlDEkP9v6qYLuRckSpb\\\\\\\/saVniSKhf6FiefU0l9bZgHbz7VoKoxsn9JqlXY4Pc8eVawmEIkKJPwBd\\\\\\\/WSzDJ1jnEJnhe2jyPFEaJ5pDM0gta2SX01kEZ5Tn9EXXGmGR+jvJfoD8b03jJfvRXiB3RGFWAV73JKrGf9VH8f9qvriIqONnDO3G1UipLNeTlLAEXdbuA89U6v3BR0WnX2BSrjaMurMNaJ2glZMYhQkrYSi\\\\\\\/d4xdxTes\\\\\\\/ciRoMzB6jfKJiJGX53ZVas0sDVdACUDBRmxlcSBCxAsAiRAifpRuyLJGJF6fg0pMUpywCYky4ZGP7SUF49SRWaeLQzVJkf4i9UsCMcstzASAYge2gRcAWUvCQH9gWPTZhjr2Qi9\\\\\\\/mUnaELx07qlJvTKdcLUih4kVb3+fZaj8l6LZxQA\\\\\\\/7Vt6YxmOJjSrCqwkTTZWdz2SpU+zXOF3DqxUDhmJ9ji0N8lq0iNRIpk\\\\\\\/nUZAV6dLITyQl9X3qHtFhVI+YQQw5Vwo+CbeUUGEQNQhM\\\\\\\/exD839Qbzclkgv5Tp4Kt1gLeEeJWnaOXc8RHUF46PDL+Sb6lerqNoD2pEgH\\\\\\\/LrSycXPGo+bdt\\\\\\\/YSn5LDDfi1nS8HfNPGqGJ7a2D1sJBxL4zf3DmaknksDdTO7s+VdThJBLSUAPie3gXHx8dL4\\\\\\\/eumzl5W1lhQcYiq\\\\\\\/1PCAcFWhvcgUKAgH0jOltAuQL7TzivJzZ9kTmgNKa2zTVIHqJ8t09KmkAvtPuOqJ0AB8pkeJuPzCTxM7MZTPNK74XlX7GaoPBi3uaFKArK3A3XyrOkN8amxH6t3BjV+ddNDdhRN4ZjQsczOMGUzfMg6w3Ib4E1or91uXP2Yve+rq3++gKwnWPcKGioTAaw5+TtUL7cGisJ6FYxeljVwQHT4LtMDfpS5j4fRlyuixhbJPwjjoEJpr6LQSVxCDGnV4XLIkNS6\\\\\\\/REXCDmwDhL2y4oDDHelKSW1FBefRIsJLRn\\\\\\\/8wgVEzFCfT4fFZs6nCoYWNmgxSKUqCwQS5I8rHf+aDdAns7VmsRq6AdV1cvYbFIOeRYm\\\u0022,\\\u0022iv\\\u0022:\\\u0022mZNF0ObXE80ljG2Xtv+4Zw==\\\u0022,\\\u0022salt\\\u0022:\\\u0022f9d8845712f72c9fee5db7d9ff111eab\\\u0022}\u0022,\u0022hmac\u0022:\u002261a23cbde2cf319710b7b8921b32477264679b0fff4eb8756bb4d93d0fde8128\u0022}"},"urlIsAjaxTrusted":{"\/content\/10.1101\/2021.10.21.21265216v1":true},"ws_fl":{"width":100,"height":21},"ws_gpo":{"size":"","annotation":"","lang":"","callback":"","width":300},"color":{"logo":"https:\/\/www.medrxiv.org\/sites\/default\/files\/medrxiv_internal_logo.png"},"highwire_list_expand":{"is_collapsed":"1"},"highwireResponsive":{"enquire_enabled":1,"breakpoints_configured":1,"breakpoints":{"zero":"all and (min-width: 0px)","xsmall":"all and (min-width: 380px)","narrow":"all and (min-width: 768px) and (min-device-width: 768px), (max-device-width: 800px) and (min-width: 768px) and (orientation:landscape)","normal":"all and (min-width: 980px) and (min-device-width: 980px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation:landscape)","wide":"all and (min-width: 1220px)"}},"eu_cookie_compliance":{"popup_enabled":1,"popup_agreed_enabled":0,"popup_hide_agreed":0,"popup_clicking_confirmation":1,"popup_scrolling_confirmation":false,"popup_html_info":"\u003Cdiv\u003E\n  \u003Cdiv class =\u0022popup-content info\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022\u003E\n      \u003Cp\u003EWe use cookies on this site to enhance your user experience. By clicking any link on this page you are giving your consent for us to set cookies.\u003C\/p\u003E\n    \u003C\/div\u003E\n    \u003Cdiv id=\u0022popup-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022agree-button eu-cookie-compliance-default-button\u0022\u003EContinue\u003C\/button\u003E\n                    \u003Cbutton type=\u0022button\u0022 class=\u0022find-more-button eu-cookie-compliance-more-button\u0022\u003EFind out more\u003C\/button\u003E\n          \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E","use_mobile_message":false,"mobile_popup_html_info":"\u003Cdiv\u003E\n  \u003Cdiv class =\u0022popup-content info\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022\u003E\n          \u003C\/div\u003E\n    \u003Cdiv id=\u0022popup-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022agree-button eu-cookie-compliance-default-button\u0022\u003EContinue\u003C\/button\u003E\n                    \u003Cbutton type=\u0022button\u0022 class=\u0022find-more-button eu-cookie-compliance-more-button\u0022\u003EFind out more\u003C\/button\u003E\n          \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E\n","mobile_breakpoint":"768","popup_html_agreed":"\u003Cdiv\u003E\n  \u003Cdiv class=\u0022popup-content agreed\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022\u003E\n      \u003Ch2\u003EThank you for accepting cookies\u003C\/h2\u003E\u003Cp\u003EYou can now hide this message or find out more about cookies.\u003C\/p\u003E    \u003C\/div\u003E\n    \u003Cdiv id=\u0022popup-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022hide-popup-button eu-cookie-compliance-hide-button\u0022\u003EHide\u003C\/button\u003E\n              \u003Cbutton type=\u0022button\u0022 class=\u0022find-more-button eu-cookie-compliance-more-button-thank-you\u0022 \u003EMore info\u003C\/button\u003E\n          \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E","popup_use_bare_css":false,"popup_height":"auto","popup_width":"100%","popup_delay":1000,"popup_link":"\/help\/cookie-policy","popup_link_new_window":1,"popup_position":null,"popup_language":"en","store_consent":false,"better_support_for_screen_readers":0,"reload_page":0,"domain":"","popup_eu_only_js":0,"cookie_lifetime":"365","cookie_session":false,"disagree_do_not_show_popup":0,"method":"default","whitelisted_cookies":"","withdraw_markup":"\u003Cbutton type=\u0022button\u0022 class=\u0022eu-cookie-withdraw-tab\u0022\u003EPrivacy settings\u003C\/button\u003E\n\u003Cdiv class=\u0022eu-cookie-withdraw-banner\u0022\u003E\n  \u003Cdiv class=\u0022popup-content info\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022\u003E\n      \u003Cp\u003E\u0026lt;h2\u0026gt;We use cookies on this site to enhance your user experience\u0026lt;\/h2\u0026gt;\u0026lt;p\u0026gt;You have given your consent for us to set cookies.\u0026lt;\/p\u0026gt;\u003C\/p\u003E\n    \u003C\/div\u003E\n    \u003Cdiv id=\u0022popup-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022eu-cookie-withdraw-button\u0022\u003EWithdraw consent\u003C\/button\u003E\n    \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E\n","withdraw_enabled":false},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip","trackColorbox":1,"trackUrlFragments":1},"jnl_biorxiv_styles":{"defaultJCode":"medrxiv"},"omega":{"layouts":{"primary":"normal","order":["narrow","normal","wide"],"queries":{"narrow":"all and (min-width: 768px) and (min-device-width: 768px), (max-device-width: 800px) and (min-width: 768px) and (orientation:landscape)","normal":"all and (min-width: 980px) and (min-device-width: 980px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation:landscape)","wide":"all and (min-width: 1220px)"}}}});
+//--><!]]>
+</script>
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  </head>
+  <body class="html not-front not-logged-in page-node page-node- page-node-425737 node-type-highwire-article context-content hw-default-jcode-medrxiv hw-article-type-article">
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-P4HH5NV" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script type="text/javascript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0];var j=d.createElement(s);var dl=l!='dataLayer'?'&l='+l:'';j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;j.type='text/javascript';j.async=true;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-P4HH5NV');</script>
+<!-- End Google Tag Manager -->
+    <div id="skip-link">
+      <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+    </div>
+        <div class="page clearfix page-box-shadows footer-borders panels-page panels-layout-jcore_2col" id="page">
+      <header id="section-header" class="section section-header">
+    
+  <div id="zone-branding" class="zone zone-branding clearfix print-display-block container-30">
+    <div class="grid-15 prefix-1 region region-branding print-display-block" id="region-branding">
+  <div class="region-inner region-branding-inner">
+        <div class="branding-data clearfix">
+            <div class="logo-img">
+        <a href="/" rel="home" class="" data-icon-position="" data-hide-link-title="0"><img alt="medRxiv" src="https://www.medrxiv.org/sites/default/files/medrxiv_internal_logo.png" /></a>      </div>
+                </div>
+          </div>
+</div><div class="grid-11 suffix-1 region region-branding-second print-hidden" id="region-branding-second">
+  <div class="region-inner region-branding-second-inner">
+    <div class="block block-system block-menu block-main-menu block-system-main-menu odd block-without-title" id="block-system-main-menu">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <nav class="menubar-nav"><ul class="menu" role="menu"><li class="first leaf" role="menuitem"><a href="/" title="" class="" data-icon-position="" data-hide-link-title="0">Home</a></li>
+<li class="leaf" role="menuitem"><a href="/content/about-medrxiv" class="" data-icon-position="" data-hide-link-title="0">About</a></li>
+<li class="leaf" role="menuitem"><a href="/submit-a-manuscript" class="" data-icon-position="" data-hide-link-title="0">Submit</a></li>
+<li class="last leaf" role="menuitem"><a href="/content/alertsrss" title="" class="" data-icon-position="" data-hide-link-title="0">ALERTS / RSS</a></li>
+</ul></nav>    </div>
+  </div>
+</div><div class="block block-panels-mini block-biorxiv-search-box block-panels-mini-biorxiv-search-box even block-without-title" id="block-panels-mini-biorxiv-search-box">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <div class="panel-display panel-1col clearfix" id="mini-panel-biorxiv_search_box">
+  <div class="panel-panel panel-col">
+    <div><div class="panel-pane pane-highwire-seach-quicksearch" >
+  
+      
+  
+  <div class="pane-content">
+    <form class="highwire-quicksearch button-style-mini button-style-mini" action="/content/10.1101/2021.10.21.21265216v1" method="post" id="highwire-search-quicksearch-form-0" accept-charset="UTF-8"><div><div class="form-item form-item-label-invisible form-type-textfield form-item-keywords">
+  <label class="element-invisible" for="edit-keywords">Search for this keyword </label>
+ <input placeholder="Search" type="text" id="edit-keywords" name="keywords" value="" size="60" maxlength="128" class="form-text" />
+</div>
+<div class="button-wrapper button-mini"><span class="icon-search"></span><input data-icon-only="1" data-font-icon="icon-search" data-icon-position="after" type="submit" id="edit-submit--2" name="op" value="Search" class="form-submit" /></div><input type="hidden" name="form_build_id" value="form-fmZ_5R3q939FCY2DRDV3NT2sw8yjh-9iDF2RKmzd6ow" />
+<input type="hidden" name="form_id" value="highwire_search_quicksearch_form_0" />
+</div></form>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-custom pane-2 advanced-search-link" >
+  
+      
+  
+  <div class="pane-content">
+    <a href="/search">Advanced Search</a>  </div>
+
+  
+  </div>
+</div>
+  </div>
+</div>
+    </div>
+  </div>
+</div>  </div>
+</div>  </div>
+  
+  <div id="zone-header" class="zone zone-header clearfix container-30">
+  	      </div>
+</header>    
+      <section id="section-content" class="section section-content">
+    
+  <div id="zone-content" class="zone zone-content clearfix container-30">    
+        
+    <div class="grid-28 suffix-1 prefix-1 region region-content" id="region-content">
+  <div class="region-inner region-content-inner">
+    <a id="main-content"></a>
+                        <div class="block block-system block-main block-system-main odd block-without-title" id="block-system-main">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <div class="panel-display panels-960-layout jcore-2col-layout" >
+	  
+  <div class="panel-row-wrapper clearfix">
+		
+		<div class="main-content-wrapper grid-17 suffix-1 alpha">
+			<div class="panel-panel panel-region-content">
+			  <div class="inside"><div class="panel-pane pane-highwire-article-citation" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="highwire-article-citation highwire-citation-type-highwire-article node425737" data-node-nid="425737" id="node425737--2952832357" data-pisa="medrxiv;2021.10.21.21265216v1" data-pisa-master="medrxiv;2021.10.21.21265216" data-apath="/medrxiv/early/2021/10/23/2021.10.21.21265216.atom" data-hw-author-tooltip-instance=""><div  class="highwire-cite highwire-cite-highwire-article highwire-citation-medrxiv-article-top clearfix has-author-tooltip" >
+
+  
+      <h1 class="highwire-cite-title" id="page-title">Generation time of the Alpha and Delta SARS-CoV-2 variants</h1>  
+      <div  class="highwire-cite-authors" ><span  class="highwire-citation-authors"><span class="highwire-citation-author first" data-delta="0"><span class="nlm-given-names">WS</span> <span class="nlm-surname">Hart</span></span>, <span class="highwire-citation-author" data-delta="1"><span class="nlm-given-names">E</span> <span class="nlm-surname">Miller</span></span>, <span class="highwire-citation-author" data-delta="2"><span class="nlm-given-names">NJ</span> <span class="nlm-surname">Andrews</span></span>, <span class="highwire-citation-author" data-delta="3"><span class="nlm-given-names">P</span> <span class="nlm-surname">Waight</span></span>, <span class="highwire-citation-author" data-delta="4"><span class="nlm-given-names">PK</span> <span class="nlm-surname">Maini</span></span>, <span class="highwire-citation-author" data-delta="5"><span class="nlm-given-names">S</span> <span class="nlm-surname">Funk</span></span>, <span class="highwire-citation-author hw-author-orcid-logo-wrapper" data-delta="6"><a href="http://orcid.org/0000-0001-8545-5212" target="_blank" class="hw-author-orcid-logo link-icon-only link-icon"><span class="hw-icon-orcid hw-icon-color-orcid"></span> <span class="title element-invisible">View ORCID Profile</span></a><span class="nlm-given-names">RN</span> <span class="nlm-surname">Thompson</span></span></span></div>
+  
+      <div  class="highwire-cite-metadata" ><span  class="highwire-cite-metadata-doi highwire-cite-metadata"><span class="label">doi:</span> https://doi.org/10.1101/2021.10.21.21265216 </span></div>
+  
+  
+  
+</div>
+<div id="hw-article-author-popups-node425737--2952832357" style="display: none;"><div class="author-tooltip-0"><div class="author-tooltip-name">WS Hart </div><div class="author-tooltip-affiliation"><span class="author-tooltip-text"><div class='author-affiliation'><span class='nlm-sup'>1</span><span class='nlm-institution'>Mathematical Institute, University of Oxford</span>, Oxford, OX2 6GG, <span class='nlm-country'>UK</span></div></span></div><ul class="author-tooltip-find-more"><li class="author-tooltip-gs-link first"><a href="/lookup/google-scholar?link_type=googlescholar&amp;gs_type=author&amp;author%5B0%5D=WS%2BHart%2B" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on Google Scholar</a></li><li class="author-tooltip-pubmed-link"><a href="/lookup/external-ref?access_num=Hart%20W&amp;link_type=AUTHORSEARCH" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on PubMed</a></li><li class="author-site-search-link last"><a href="/search/author1%3AWS%2BHart%2B" rel="nofollow" class="" data-icon-position="" data-hide-link-title="0">Search for this author on this site</a></li></ul></div><div class="author-tooltip-1"><div class="author-tooltip-name">E Miller </div><div class="author-tooltip-affiliation"><span class="author-tooltip-text"><div class='author-affiliation'><span class='nlm-sup'>2</span><span class='nlm-institution'>Department of Infectious Disease Epidemiology, London School of Hygiene and Tropical Medicine</span>, London, WC1E 7HT, <span class='nlm-country'>UK</span></div><div class='author-affiliation'><span class='nlm-sup'>3</span><span class='nlm-institution'>Immunisation and Countermeasures Division, UK Health Security Agency</span>, London, NW9 5EQ, <span class='nlm-country'>UK</span></div></span></div><ul class="author-tooltip-find-more"><li class="author-tooltip-gs-link first"><a href="/lookup/google-scholar?link_type=googlescholar&amp;gs_type=author&amp;author%5B0%5D=E%2BMiller%2B" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on Google Scholar</a></li><li class="author-tooltip-pubmed-link"><a href="/lookup/external-ref?access_num=Miller%20E&amp;link_type=AUTHORSEARCH" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on PubMed</a></li><li class="author-site-search-link last"><a href="/search/author1%3AE%2BMiller%2B" rel="nofollow" class="" data-icon-position="" data-hide-link-title="0">Search for this author on this site</a></li></ul></div><div class="author-tooltip-2"><div class="author-tooltip-name">NJ Andrews </div><div class="author-tooltip-affiliation"><span class="author-tooltip-text"><div class='author-affiliation'><span class='nlm-sup'>4</span><span class='nlm-institution'>Data and Analytical Sciences, UK Health Security Agency</span>, London, NW9 5EQ, <span class='nlm-country'>UK</span></div></span></div><ul class="author-tooltip-find-more"><li class="author-tooltip-gs-link first"><a href="/lookup/google-scholar?link_type=googlescholar&amp;gs_type=author&amp;author%5B0%5D=NJ%2BAndrews%2B" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on Google Scholar</a></li><li class="author-tooltip-pubmed-link"><a href="/lookup/external-ref?access_num=Andrews%20N&amp;link_type=AUTHORSEARCH" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on PubMed</a></li><li class="author-site-search-link last"><a href="/search/author1%3ANJ%2BAndrews%2B" rel="nofollow" class="" data-icon-position="" data-hide-link-title="0">Search for this author on this site</a></li></ul></div><div class="author-tooltip-3"><div class="author-tooltip-name">P Waight </div><div class="author-tooltip-affiliation"><span class="author-tooltip-text"><div class='author-affiliation'><span class='nlm-sup'>3</span><span class='nlm-institution'>Immunisation and Countermeasures Division, UK Health Security Agency</span>, London, NW9 5EQ, <span class='nlm-country'>UK</span></div></span></div><ul class="author-tooltip-find-more"><li class="author-tooltip-gs-link first"><a href="/lookup/google-scholar?link_type=googlescholar&amp;gs_type=author&amp;author%5B0%5D=P%2BWaight%2B" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on Google Scholar</a></li><li class="author-tooltip-pubmed-link"><a href="/lookup/external-ref?access_num=Waight%20P&amp;link_type=AUTHORSEARCH" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on PubMed</a></li><li class="author-site-search-link last"><a href="/search/author1%3AP%2BWaight%2B" rel="nofollow" class="" data-icon-position="" data-hide-link-title="0">Search for this author on this site</a></li></ul></div><div class="author-tooltip-4"><div class="author-tooltip-name">PK Maini </div><div class="author-tooltip-affiliation"><span class="author-tooltip-text"><div class='author-affiliation'><span class='nlm-sup'>1</span><span class='nlm-institution'>Mathematical Institute, University of Oxford</span>, Oxford, OX2 6GG, <span class='nlm-country'>UK</span></div></span></div><ul class="author-tooltip-find-more"><li class="author-tooltip-gs-link first"><a href="/lookup/google-scholar?link_type=googlescholar&amp;gs_type=author&amp;author%5B0%5D=PK%2BMaini%2B" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on Google Scholar</a></li><li class="author-tooltip-pubmed-link"><a href="/lookup/external-ref?access_num=Maini%20P&amp;link_type=AUTHORSEARCH" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on PubMed</a></li><li class="author-site-search-link last"><a href="/search/author1%3APK%2BMaini%2B" rel="nofollow" class="" data-icon-position="" data-hide-link-title="0">Search for this author on this site</a></li></ul></div><div class="author-tooltip-5"><div class="author-tooltip-name">S Funk </div><div class="author-tooltip-affiliation"><span class="author-tooltip-text"><div class='author-affiliation'><span class='nlm-sup'>2</span><span class='nlm-institution'>Department of Infectious Disease Epidemiology, London School of Hygiene and Tropical Medicine</span>, London, WC1E 7HT, <span class='nlm-country'>UK</span></div></span></div><ul class="author-tooltip-find-more"><li class="author-tooltip-gs-link first"><a href="/lookup/google-scholar?link_type=googlescholar&amp;gs_type=author&amp;author%5B0%5D=S%2BFunk%2B" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on Google Scholar</a></li><li class="author-tooltip-pubmed-link"><a href="/lookup/external-ref?access_num=Funk%20S&amp;link_type=AUTHORSEARCH" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on PubMed</a></li><li class="author-site-search-link last"><a href="/search/author1%3AS%2BFunk%2B" rel="nofollow" class="" data-icon-position="" data-hide-link-title="0">Search for this author on this site</a></li></ul></div><div class="author-tooltip-6"><div class="author-tooltip-name">RN Thompson </div><div class="author-tooltip-affiliation"><span class="author-tooltip-text"><div class='author-affiliation'><span class='nlm-sup'>5</span><span class='nlm-institution'>Mathematics Institute, University of Warwick</span>, Coventry, CV4 7AL, <span class='nlm-country'>UK</span></div><div class='author-affiliation'><span class='nlm-sup'>6</span><span class='nlm-institution'>Zeeman Institute for Systems Biology and Infectious Disease Epidemiology Research (SBIDER), University of Warwick</span>, Coventry, CV4 7AL, <span class='nlm-country'>UK</span></div></span></div><ul class="author-tooltip-find-more"><li class="author-tooltip-gs-link first"><a href="/lookup/google-scholar?link_type=googlescholar&amp;gs_type=author&amp;author%5B0%5D=RN%2BThompson%2B" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on Google Scholar</a></li><li class="author-tooltip-pubmed-link"><a href="/lookup/external-ref?access_num=Thompson%20R&amp;link_type=AUTHORSEARCH" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on PubMed</a></li><li class="author-site-search-link"><a href="/search/author1%3ARN%2BThompson%2B" rel="nofollow" class="" data-icon-position="" data-hide-link-title="0">Search for this author on this site</a></li><li class="author-orcid-link"><a href="http://orcid.org/0000-0001-8545-5212" target="_blank" class="" data-icon-position="" data-hide-link-title="0">ORCID record for RN Thompson</a></li><li class="author-corresp-email-link last"><span>For correspondence: 
+<a href="mailto:Robin.N.Thompson@warwick.ac.uk" class="" data-icon-position="" data-hide-link-title="0">Robin.N.Thompson@warwick.ac.uk</a></span></li></ul></div></div></div>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-highwire-panel-tabs pane-panels-ajax-tab-tabs" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="item-list"><ul class="tabs inline panels-ajax-tab"><li class="first"><a href="/content/10.1101/2021.10.21.21265216v1" class="panels-ajax-tab-tab" data-panel-name="biorxiv_tab_art" data-target-id="highwire_article_tabs" data-entity-context="node:425737" data-trigger="" data-url-enabled="1">Abstract</a><a href="/panels_ajax_tab/biorxiv_tab_art/node:425737/1" rel="nofollow" style="display:none" class="js-crawler-link"></a></li><li><a href="/content/10.1101/2021.10.21.21265216v1.full-text" class="panels-ajax-tab-tab" data-panel-name="article_tab_full_text" data-target-id="highwire_article_tabs" data-entity-context="node:425737" data-trigger="full-text" data-url-enabled="1">Full Text</a><a href="/panels_ajax_tab/article_tab_full_text/node:425737/1" rel="nofollow" style="display:none" class="js-crawler-link"></a></li><li><a href="/content/10.1101/2021.10.21.21265216v1.article-info" class="panels-ajax-tab-tab" data-panel-name="biorxiv_tab_info" data-target-id="highwire_article_tabs" data-entity-context="node:425737" data-trigger="article-info" data-url-enabled="1">Info/History</a><a href="/panels_ajax_tab/biorxiv_tab_info/node:425737/1" rel="nofollow" style="display:none" class="js-crawler-link"></a></li><li><a href="/content/10.1101/2021.10.21.21265216v1.article-metrics" class="panels-ajax-tab-tab" data-panel-name="article_tab_metrics" data-target-id="highwire_article_tabs" data-entity-context="node:425737" data-trigger="article-metrics" data-url-enabled="1">Metrics</a><a href="/panels_ajax_tab/article_tab_metrics/node:425737/1" rel="nofollow" style="display:none" class="js-crawler-link"></a></li><li><a href="/content/10.1101/2021.10.21.21265216v1.supplementary-material" class="panels-ajax-tab-tab" data-panel-name="biorxiv_tab_data" data-target-id="highwire_article_tabs" data-entity-context="node:425737" data-trigger="supplementary-material" data-url-enabled="1">Supplementary material</a><a href="/panels_ajax_tab/biorxiv_tab_data/node:425737/1" rel="nofollow" style="display:none" class="js-crawler-link"></a></li><li><a href="/content/10.1101/2021.10.21.21265216v1.external-links" class="panels-ajax-tab-tab" data-panel-name="article_tab_data_code" data-target-id="highwire_article_tabs" data-entity-context="node:425737" data-trigger="external-links" data-url-enabled="1">Data/Code</a><a href="/panels_ajax_tab/article_tab_data_code/node:425737/1" rel="nofollow" style="display:none" class="js-crawler-link"></a></li><li class="last"><a href="/content/10.1101/2021.10.21.21265216v1.full.pdf+html" class="panels-ajax-tab-tab" data-panel-name="biorxiv_tab_pdf" data-target-id="highwire_article_tabs" data-entity-context="node:425737" data-trigger="full.pdf+html" data-url-enabled="1"><i class="icon-file-alt"></i> Preview PDF</a><a href="/panels_ajax_tab/biorxiv_tab_pdf/node:425737/1" rel="nofollow" style="display:none" class="js-crawler-link"></a></li></ul></div>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-highwire-panel-tabs-container" >
+  
+      
+  
+  <div class="pane-content">
+    <div data-panels-ajax-tab-preloaded="biorxiv_tab_art" id="panels-ajax-tab-container-highwire_article_tabs" class="panels-ajax-tab-container"><div class="panels-ajax-tab-loading" style ="display:none"><img class="loading" src="https://www.medrxiv.org/sites/all/modules/contrib/panels_ajax_tab/images/loading.gif" alt="Loading" title="Loading" /></div><div class="panels-ajax-tab-wrap-biorxiv_tab_art"><div class="panel-display panel-1col clearfix" >
+  <div class="panel-panel panel-col">
+    <div><div class="panel-pane pane-highwire-markup" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="highwire-markup"><div xmlns="http://www.w3.org/1999/xhtml" data-highwire-cite-ref-tooltip-instance="highwire_reflinks_tooltip" class="content-block-markup" xmlns:xhtml="http://www.w3.org/1999/xhtml"><div class="article abstract-view "><span class="highwire-journal-article-marker-start"></span><div class="section abstract" id="abstract-1"><h2 class="">Summary</h2><div id="sec-1" class="subsection"><p id="p-2"><strong>Background</strong> In May 2021, the Delta SARS-CoV-2 variant became dominant in the UK. This variant is associated with increased transmissibility compared to the Alpha variant that was previously dominant. To understand ongoing transmission and interventions, a key question is whether the Delta variant generation time (the time between infections in infector- infectee pairs) is typically shorter–i.e., transmissions are happening more quickly–or whether infected individuals simply generate more infections.</p></div><div id="sec-2" class="subsection"><p id="p-3"><strong>Methods</strong> We analysed transmission data from a UK Health Security Agency household study. By fitting a mathematical transmission model to the data, we estimated the generation times for the Alpha and Delta variants.</p></div><div id="sec-3" class="subsection"><p id="p-4"><strong>Results</strong> The mean intrinsic generation time (the generation time if there had been a constant supply of susceptibles throughout infection) was shorter for the Delta variant (4·6 days, 95% CrI 4·0-5·4 days) than the Alpha variant (5·5 days, 95% CrI 4·6-6·4 days), although within uncertainty ranges. However, there was a larger difference in the realised mean household generation time between the Delta (3·2 days, 95% CrI 2·4-4·2 days) and Alpha (4·5 days, 95% CrI 3·7-5·4 days) variants. This is because higher transmissibility led to faster susceptible depletion in households, in addition to the reduced intrinsic generation time.</p></div><div id="sec-4" class="subsection"><p id="p-5"><strong>Conclusions</strong> The Delta variant transmits more quickly than previously circulating variants. This has implications for interventions such as contact tracing, testing and isolation, which are less effective if the virus is transmitted quickly. Epidemiological models of interventions should be updated to include the shorter generation time of the Delta variant.</p></div></div><h3>Competing Interest Statement</h3><p id="p-6">The authors have declared no competing interest.</p><h3>Funding Statement</h3><p id="p-7">WSH was funded by an EPSRC Excellence Award for his doctoral studies (Grant Reference EP/R513295/1). EM receives support from the National Institute for Health Research (NIHR) Health Protection Research Unit in Immunisation at the London School of Hygiene and Tropical Medicine in partnership with the UKHSA (Grant Reference NIHR200929). SF receives funding from the Wellcome Trust (Grant Reference 210758/Z/18/Z). RNT receives support from the UKRI (Grant Reference EP/V053507/1).</p><h3>Author Declarations</h3><p id="p-8">I confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.</p><p id="p-9">Yes</p><p id="p-10">The details of the IRB/oversight body that provided approval or exemption for the research described are given below:</p><p id="p-11">The household surveillance protocol was approved by the UKHSA Research Ethics and Governance Group as part of the portfolio of the UKHSA's enhanced surveillance activities in response to the pandemic. Oral informed consent for sampling and follow up was obtained by the nurses from household members who were free to decline to participate in the surveillance at any time. Consent for children was obtained by a parent or legal guardian. Only anonymised data were provided to non-UKHSA authors.</p><p id="p-12">I confirm that all necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived, and that any patient/participant/sample identifiers included were not known to anyone (e.g., hospital staff, patients or participants themselves) outside the research group so cannot be used to identify individuals.</p><p id="p-13">Yes</p><p id="p-14">I understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).</p><p id="p-15">Yes</p><p id="p-16">I have followed all appropriate research reporting guidelines and uploaded the relevant EQUATOR Network research reporting checklist(s) and other pertinent material as supplementary files, if applicable.</p><p id="p-17">Yes</p><div class="section data-availability" id="sec-12"><h2 class="">Data Availability</h2><p id="p-56">All data produced are available online at <a href="https://github.com/will-s-hart/variant_generation_times">https://github.com/will-s-hart/variant_generation_times</a>.</p></div><span class="highwire-journal-article-marker-end"></span></div><span class="related-urls"></span></div></div>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-biorxiv-copyright" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="field field-name-field-highwire-copyright field-type-text field-label-inline clearfix"><div class="field-label">Copyright&nbsp;</div><div class="field-items"><div class="field-item even">The copyright holder for this preprint is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity.<span class="license-type"> It is made available under a <a href="http://creativecommons.org/licenses/by-nc/4.0/" class="" data-icon-position="" data-hide-link-title="0">CC-BY-NC 4.0 International license</a>.</span></div></div></div>  </div>
+
+  
+  </div>
+</div>
+  </div>
+</div>
+</div></div>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-disqus-comment" >
+  
+      
+  
+  <div class="pane-content">
+    <div id="disqus_thread"><noscript><p><a href="http://medRxiv.disqus.com/?url=https%3A%2F%2Fwww.medrxiv.org%2Fcontent%2F10.1101%2F2021.10.21.21265216v1" class="" data-icon-position="" data-hide-link-title="0">View the discussion thread.</a></p></noscript></div>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-highwire-back-to-top" >
+  
+      
+  
+  <div class="pane-content">
+    <a href="#page" class="back-to-top" data-icon-position="" data-hide-link-title="0"><span class="icon-chevron-up"></span> Back to top</a>  </div>
+
+  
+  </div>
+</div>
+			</div>
+		</div>
+		
+		<div class="sidebar-right-wrapper grid-10 omega">
+			<div class="panel-panel panel-region-sidebar-right">
+			  <div class="inside"><div class="panel-pane pane-highwire-node-pager" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="pager highwire-pager pager-mini clearfix highwire-node-pager highwire-article-pager"><span class="pager-prev"><a href="/content/10.1101/2021.10.20.21265288v1" title="COVID-19 Vaccine Perceptions and Uptake in a National Prospective Cohort of Essential Workers" rel="prev" class="pager-link-prev link-icon"><span class="icon-circle-arrow-left"></span> <span class="title">Previous</span></a></span><span class="pager-next"><a href="/content/10.1101/2021.10.21.21265313v1" title="Clinical characteristics of pregnant women infected with Coronavirus Disease 2019 in China: a nationwide case-control study" rel="next" class="pager-link-next link-icon-right link-icon"><span class="title">Next</span> <span class="icon-circle-arrow-right"></span></a></span></div>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-custom pane-1" >
+  
+      
+  
+  <div class="pane-content">
+    Posted&nbsp;October 23, 2021.  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-panels-mini pane-biorxiv-art-tools" >
+  
+      
+  
+  <div class="pane-content">
+    <div id="mini-panel-biorxiv_art_tools" class="highwire-2col-stacked panel-display">
+	  
+  <div class="panel-row-wrapper clearfix">
+		<div class="content-left-wrapper content-column">
+          <div class="panel-panel panel-region-content-left">
+            <div class="inside"><div class="panel-pane pane-highwire-variant-link" >
+  
+      
+  
+  <div class="pane-content">
+    <a href="/content/10.1101/2021.10.21.21265216v1.full.pdf" target="_self" class="article-dl-pdf-link link-icon"><span class="icon-external-link-sign"></span> <span class="title">Download PDF</span></a>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-biorxiv-supplementary-fragment" >
+  
+      
+  
+  <div class="pane-content">
+    <p><a href="/content/10.1101/2021.10.21.21265216v1.supplementary-material"><i class="icon-file"></i>Supplementary Material </a></p>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-highwire-variant-link" >
+  
+      
+  
+  <div class="pane-content">
+    <a href="/content/early/2021/10/23/2021.10.21.21265216.external-links" target="_self" class="link-icon"><span class="icon-file"></span> <span class="title">Data/Code</span></a>  </div>
+
+  
+  </div>
+</div>
+          </div>
+        </div>
+        
+        <div class="content-right-wrapper content-column">
+          <div class="panel-panel panel-region-content-right">
+            <div class="inside"><div class="panel-pane pane-minipanel-dialog-link pane-biorxiv-art-email" >
+  
+      
+  
+  <div class="pane-content">
+    <div class='minipanel-dialog-wrapper'><div class='minipanel-dialog-link-link'><a href="/" oncontextmenu="javascript: return false;" class="minipanel-dialog-link-trigger" title="Email this Article" data-icon-position="" data-hide-link-title="0"><i class = 'icon-envelope'></i> Email</a></div><div class='minipanel-dialog-link-mini' style='display:none'><div class="panel-display panel-1col clearfix" id="mini-panel-biorxiv_art_email">
+  <div class="panel-panel panel-col">
+    <div><div class="panel-pane pane-block pane-forward-form pane-forward" >
+  
+      
+  
+  <div class="pane-content">
+    <form action="/content/10.1101/2021.10.21.21265216v1" method="post" id="forward-form" accept-charset="UTF-8"><div><div id="edit-instructions" class="form-item form-item-label-before form-type-item">
+ <p>Thank you for your interest in spreading the word about medRxiv.</p><p>NOTE: Your email address is requested solely to identify you as the sender of this article.</p>
+</div>
+<div class="form-item form-item-label-before form-type-textfield form-item-email">
+  <label for="edit-email">Your Email <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" id="edit-email" name="email" value="" size="58" maxlength="256" class="form-text required" />
+</div>
+<div class="form-item form-item-label-before form-type-textfield form-item-name">
+  <label for="edit-name">Your Name <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" id="edit-name" name="name" value="" size="58" maxlength="256" class="form-text required" />
+</div>
+<div class="form-item form-item-label-before form-type-textarea form-item-recipients">
+  <label for="edit-recipients">Send To <span class="form-required" title="This field is required.">*</span></label>
+ <div class="form-textarea-wrapper resizable"><textarea id="edit-recipients" name="recipients" cols="50" rows="5" class="form-textarea required"></textarea></div>
+<div class="description">Enter multiple addresses on separate lines or separate them with commas.</div>
+</div>
+<div id="edit-page" class="form-item form-item-label-before form-type-item">
+  <label for="edit-page">You are going to email the following </label>
+ <a href="/content/10.1101/2021.10.21.21265216v1" class="active" data-icon-position="" data-hide-link-title="0">Generation time of the Alpha and Delta SARS-CoV-2 variants</a>
+</div>
+<div id="edit-subject" class="form-item form-item-label-before form-type-item">
+  <label for="edit-subject">Message Subject </label>
+ (Your Name) has forwarded a page to you from medRxiv
+</div>
+<div id="edit-body" class="form-item form-item-label-before form-type-item">
+  <label for="edit-body">Message Body </label>
+ (Your Name) thought you would like to see this page from the medRxiv website.
+</div>
+<div class="form-item form-item-label-before form-type-textarea form-item-message">
+  <label for="edit-message--2">Your Personal Message </label>
+ <div class="form-textarea-wrapper resizable"><textarea id="edit-message--2" name="message" cols="50" rows="10" class="form-textarea"></textarea></div>
+</div>
+<input type="hidden" name="path" value="node/425737" />
+<input type="hidden" name="path_cid" value="" />
+<input type="hidden" name="forward_footer" value=" " />
+<input type="hidden" name="form_build_id" value="form-7pZB7wiP2Bm_P90YY9LEzW2UT-CCiwCepm-4Uc5-F3o" />
+<input type="hidden" name="form_id" value="forward_form" />
+<fieldset class="captcha form-wrapper"><legend><span class="fieldset-legend">CAPTCHA</span></legend><div class="fieldset-wrapper"><div class="fieldset-description">This question is for testing whether or not you are a human visitor and to prevent automated spam submissions.</div><input type="hidden" name="captcha_sid" value="157699742" />
+<input type="hidden" name="captcha_token" value="e676d9de4baeee4017b99c39fbf5e492" />
+<input type="hidden" name="captcha_response" value="Google no captcha" />
+<div class="g-recaptcha" data-sitekey="6LfnJVIUAAAAAE-bUOMg0MJGki4lqSvDmhJp19fN" data-theme="light" data-type="image"></div></div></fieldset>
+<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Send Message" class="form-submit" /></div></div></form>  </div>
+
+  
+  </div>
+</div>
+  </div>
+</div>
+</div></div>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-highwire-share-link highwire_clipboard_link_ajax"  id="shareit">
+  
+      
+  
+  <div class="pane-content">
+    <a href="/" class="link-icon"><span class="icon-share-alt"></span> <span class="title">Share</span></a>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-panels-mini pane-biorxiv-share highwire_clipboard_form_ajax_shareit" >
+  
+      
+  
+  <div class="pane-content">
+    
+<div class="panel-display omega-12-onecol" id="mini-panel-biorxiv_share">
+
+		  <div class="panel-panel grid-12 panel-region-preface">
+		  <div class="inside"><div class="panel-pane pane-highwire-article-citation" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="highwire-article-citation highwire-citation-type-highwire-article node425737--3" data-node-nid="425737" id="node425737--4193596122" data-pisa="medrxiv;2021.10.21.21265216v1" data-pisa-master="medrxiv;2021.10.21.21265216" data-seqnum="425737" data-apath="/medrxiv/early/2021/10/23/2021.10.21.21265216.atom"><div  class="highwire-cite highwire-cite-highwire-article highwire-citation-biorxiv-article-pap-list clearfix" >
+
+      <div class="highwire-cite-title" >
+      <div class="highwire-cite-title">Generation time of the Alpha and Delta SARS-CoV-2 variants</div>    </div>
+  
+      <div  class="highwire-cite-authors" ><span  class="highwire-citation-authors"><span class="highwire-citation-author first" data-delta="0"><span class="nlm-given-names">WS</span> <span class="nlm-surname">Hart</span></span>, <span class="highwire-citation-author" data-delta="1"><span class="nlm-given-names">E</span> <span class="nlm-surname">Miller</span></span>, <span class="highwire-citation-author" data-delta="2"><span class="nlm-given-names">NJ</span> <span class="nlm-surname">Andrews</span></span>, <span class="highwire-citation-author" data-delta="3"><span class="nlm-given-names">P</span> <span class="nlm-surname">Waight</span></span>, <span class="highwire-citation-author" data-delta="4"><span class="nlm-given-names">PK</span> <span class="nlm-surname">Maini</span></span>, <span class="highwire-citation-author" data-delta="5"><span class="nlm-given-names">S</span> <span class="nlm-surname">Funk</span></span>, <span class="highwire-citation-author" data-delta="6"><span class="nlm-given-names">RN</span> <span class="nlm-surname">Thompson</span></span></span></div>
+  
+      <div  class="highwire-cite-metadata" ><span  class="highwire-cite-metadata-journal highwire-cite-metadata">medRxiv </span><span  class="highwire-cite-metadata-pages highwire-cite-metadata">2021.10.21.21265216; </span><span  class="highwire-cite-metadata-doi highwire-cite-metadata"><span class="doi_label">doi:</span> https://doi.org/10.1101/2021.10.21.21265216 </span></div>
+  
+  
+  </div>
+</div>  </div>
+
+  
+  </div>
+</div>
+	  </div>
+	
+  <div class="panel-panel grid-12 panel-region-content">
+  	<div class="inside"><div class="panel-pane pane-highwire-article-clipboard-copy" >
+  
+      
+  
+  <div class="pane-content">
+    <div class = "clipboard-copy">
+  <span class="label-url">
+    <label for="dynamic">Share This Article:</label>
+  </span>
+  <span class="input-text-url">
+    <input type="text" id="dynamic" value="https://www.medrxiv.org/content/10.1101/2021.10.21.21265216v1" size="50"/>
+  </span>
+  <span class="copy-button button">
+    <button id="copy-dynamic" class="clipboardjs-button" data-clipboard-target="#dynamic" data-clipboard-alert-style="tooltip" data-clipboard-alert-text="Copied!">Copy</button>
+  </span>
+</div>
+  </div>
+
+  
+  </div>
+</div>
+  </div>
+	
+		  <div class="panel-panel grid-12 panel-region-postscript">
+	    <div class="inside"><div class="panel-pane pane-service-links" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="service-links"><a href="http://digg.com/submit?phase=2&amp;url=https%3A//www.medrxiv.org/content/10.1101/2021.10.21.21265216v1&amp;title=Generation%20time%20of%20the%20Alpha%20and%20Delta%20SARS-CoV-2%20variants" id="digg" title="Digg this post on digg.com" class="service-links-digg" rel="nofollow" data-icon-position="" data-hide-link-title="0"><img src="https://www.medrxiv.org/sites/all/modules/highwire/highwire/images/digg.png" alt="Digg logo" /></a> <a href="http://reddit.com/submit?url=https%3A//www.medrxiv.org/content/10.1101/2021.10.21.21265216v1&amp;title=Generation%20time%20of%20the%20Alpha%20and%20Delta%20SARS-CoV-2%20variants" id="reddit" title="Submit this post on reddit.com" class="service-links-reddit" rel="nofollow" data-icon-position="" data-hide-link-title="0"><img src="https://www.medrxiv.org/sites/all/modules/highwire/highwire/images/reddit.png" alt="Reddit logo" /></a> <a href="http://twitter.com/share?url=https%3A//www.medrxiv.org/content/10.1101/2021.10.21.21265216v1&amp;text=Generation%20time%20of%20the%20Alpha%20and%20Delta%20SARS-CoV-2%20variants" id="twitter" title="Share this on Twitter" class="service-links-twitter" rel="nofollow" data-icon-position="" data-hide-link-title="0"><img src="https://www.medrxiv.org/sites/all/modules/highwire/highwire/images/twitter.png" alt="Twitter logo" /></a> <a href="http://www.citeulike.org/posturl?url=https%3A//www.medrxiv.org/content/10.1101/2021.10.21.21265216v1&amp;title=Generation%20time%20of%20the%20Alpha%20and%20Delta%20SARS-CoV-2%20variants" id="citeulike" title="Share on CiteULike" class="service-links-citeulike" rel="nofollow" data-icon-position="" data-hide-link-title="0"><img src="https://www.medrxiv.org/sites/all/modules/highwire/highwire/images/citeyoulike.png" alt="CiteULike logo" /></a> <a href="http://www.facebook.com/sharer.php?u=https%3A//www.medrxiv.org/content/10.1101/2021.10.21.21265216v1&amp;t=Generation%20time%20of%20the%20Alpha%20and%20Delta%20SARS-CoV-2%20variants" id="facebook" title="Share on Facebook" class="service-links-facebook" rel="nofollow" data-icon-position="" data-hide-link-title="0"><img src="https://www.medrxiv.org/sites/all/modules/highwire/highwire/images/fb-blue.png" alt="Facebook logo" /></a> <a href="http://www.google.com/bookmarks/mark?op=add&amp;bkmk=https%3A//www.medrxiv.org/content/10.1101/2021.10.21.21265216v1&amp;title=Generation%20time%20of%20the%20Alpha%20and%20Delta%20SARS-CoV-2%20variants" id="google" title="Bookmark this post on Google" class="service-links-google" rel="nofollow" data-icon-position="" data-hide-link-title="0"><img src="https://www.medrxiv.org/sites/all/modules/highwire/highwire/images/google-32.png" alt="Google logo" /></a> <a href="http://www.mendeley.com/import/?url=https%3A//www.medrxiv.org/content/10.1101/2021.10.21.21265216v1&amp;title=Generation%20time%20of%20the%20Alpha%20and%20Delta%20SARS-CoV-2%20variants" id="mendeley" title="Share on Mendeley" class="service-links-mendeley" rel="nofollow" data-icon-position="" data-hide-link-title="0"><img src="https://www.medrxiv.org/sites/all/modules/highwire/highwire/images/mendeley.png" alt="Mendeley logo" /></a></div>  </div>
+
+  
+  </div>
+</div>
+	  </div>
+	
+</div>
+  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-minipanel-dialog-link pane-biorxiv-cite-tool" >
+  
+      
+  
+  <div class="pane-content">
+    <div class='minipanel-dialog-wrapper'><div class='minipanel-dialog-link-link'><a href="/" oncontextmenu="javascript: return false;" class="minipanel-dialog-link-trigger link-icon" title="Citation Tools"><span class="icon-globe"></span> <span class="title">Citation Tools</span></a></div><div class='minipanel-dialog-link-mini' style='display:none'><div class="panel-display panel-1col clearfix" id="mini-panel-biorxiv_cite_tool">
+  <div class="panel-panel panel-col">
+    <div><div class="panel-pane pane-highwire-citation-export" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="highwire-citation-export">  
+  <div class="highwire-citation-info">
+      <div class="highwire-article-citation highwire-citation-type-highwire-article node425737--5" data-node-nid="425737" id="node425737--61204357167" data-pisa="medrxiv;2021.10.21.21265216v1" data-pisa-master="medrxiv;2021.10.21.21265216" data-seqnum="425737" data-apath="/medrxiv/early/2021/10/23/2021.10.21.21265216.atom"><div  class="highwire-cite highwire-cite-highwire-article highwire-citation-biorxiv-article-pap-list clearfix" >
+
+      <div class="highwire-cite-title" >
+      <div class="highwire-cite-title">Generation time of the Alpha and Delta SARS-CoV-2 variants</div>    </div>
+  
+      <div  class="highwire-cite-authors" ><span  class="highwire-citation-authors"><span class="highwire-citation-author first" data-delta="0"><span class="nlm-given-names">WS</span> <span class="nlm-surname">Hart</span></span>, <span class="highwire-citation-author" data-delta="1"><span class="nlm-given-names">E</span> <span class="nlm-surname">Miller</span></span>, <span class="highwire-citation-author" data-delta="2"><span class="nlm-given-names">NJ</span> <span class="nlm-surname">Andrews</span></span>, <span class="highwire-citation-author" data-delta="3"><span class="nlm-given-names">P</span> <span class="nlm-surname">Waight</span></span>, <span class="highwire-citation-author" data-delta="4"><span class="nlm-given-names">PK</span> <span class="nlm-surname">Maini</span></span>, <span class="highwire-citation-author" data-delta="5"><span class="nlm-given-names">S</span> <span class="nlm-surname">Funk</span></span>, <span class="highwire-citation-author" data-delta="6"><span class="nlm-given-names">RN</span> <span class="nlm-surname">Thompson</span></span></span></div>
+  
+      <div  class="highwire-cite-metadata" ><span  class="highwire-cite-metadata-journal highwire-cite-metadata">medRxiv </span><span  class="highwire-cite-metadata-pages highwire-cite-metadata">2021.10.21.21265216; </span><span  class="highwire-cite-metadata-doi highwire-cite-metadata"><span class="doi_label">doi:</span> https://doi.org/10.1101/2021.10.21.21265216 </span></div>
+  
+  
+  </div>
+</div>  </div>
+  <div class="highwire-citation-formats">
+  	      <h2>Citation Manager Formats</h2>
+        <div class="highwire-citation-formats-links">
+      <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.spage&amp;rft.epage&amp;rft.atitle=Generation%20time%20of%20the%20Alpha%20and%20Delta%20SARS-CoV-2%20variants&amp;rft.volume&amp;rft.issue&amp;rft.date=2021-01-01%2000%3A00%3A00&amp;rft.stitle&amp;rft.jtitle=medRxiv&amp;rft.au=Hart%2C+WS&amp;rft.au=Miller%2C+E&amp;rft.au=Andrews%2C+NJ&amp;rft.au=Waight%2C+P&amp;rft.au=Maini%2C+PK&amp;rft.au=Funk%2C+S&amp;rft.au=Thompson%2C+RN"></span><ul class="hw-citation-links inline button button-alt button-grid clearfix"><li class="bibtext first"><a href="/highwire/citation/425737/bibtext" class="hw-download-citation-link" data-icon-position="" data-hide-link-title="0">BibTeX</a></li><li class="bookends"><a href="/highwire/citation/425737/bookends" class="hw-download-citation-link" data-icon-position="" data-hide-link-title="0">Bookends</a></li><li class="easybib"><a href="/highwire/citation/425737/easybib" class="hw-download-citation-link" data-icon-position="" data-hide-link-title="0">EasyBib</a></li><li class="endnote-tagged"><a href="/highwire/citation/425737/endnote-tagged" class="hw-download-citation-link" data-icon-position="" data-hide-link-title="0">EndNote (tagged)</a></li><li class="endnote-8-xml"><a href="/highwire/citation/425737/endnote-8-xml" class="hw-download-citation-link" data-icon-position="" data-hide-link-title="0">EndNote 8 (xml)</a></li><li class="medlars"><a href="/highwire/citation/425737/medlars" class="hw-download-citation-link" data-icon-position="" data-hide-link-title="0">Medlars</a></li><li class="mendeley"><a href="/highwire/citation/425737/mendeley" class="hw-download-citation-link" data-icon-position="" data-hide-link-title="0">Mendeley</a></li><li class="papers"><a href="/highwire/citation/425737/papers" class="hw-download-citation-link" data-icon-position="" data-hide-link-title="0">Papers</a></li><li class="refworks-tagged"><a href="/highwire/citation/425737/refworks-tagged" class="hw-download-citation-link" data-icon-position="" data-hide-link-title="0">RefWorks Tagged</a></li><li class="reference-manager"><a href="/highwire/citation/425737/reference-manager" class="hw-download-citation-link" data-icon-position="" data-hide-link-title="0">Ref Manager</a></li><li class="ris"><a href="/highwire/citation/425737/ris" class="hw-download-citation-link" data-icon-position="" data-hide-link-title="0">RIS</a></li><li class="zotero last"><a href="/highwire/citation/425737/zotero" class="hw-download-citation-link" data-icon-position="" data-hide-link-title="0">Zotero</a></li></ul>    </div>
+  </div>
+</div>
+  </div>
+
+  
+  </div>
+</div>
+  </div>
+</div>
+</div></div>  </div>
+
+  
+  </div>
+</div>
+          </div>
+        </div>
+	</div> <!-- /.panel-row-wrapper -->	
+	
+	</div>
+
+  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-service-links" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="service-links"><div class="item-list"><ul><li class="first"><a href="http://twitter.com/share?url=https%3A//www.medrxiv.org/content/10.1101/2021.10.21.21265216v1&amp;count=horizontal&amp;via=&amp;text=Generation%20time%20of%20the%20Alpha%20and%20Delta%20SARS-CoV-2%20variants&amp;counturl=https%3A//www.medrxiv.org/content/10.1101/2021.10.21.21265216v1" class="twitter-share-button service-links-twitter-widget" id="twitter_widget" title="Tweet This" rel="nofollow" data-icon-position="" data-hide-link-title="0"><span class="element-invisible">Tweet Widget</span></a></li><li><a href="http://www.facebook.com/plugins/like.php?href=https%3A//www.medrxiv.org/content/10.1101/2021.10.21.21265216v1&amp;layout=button_count&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;width=100&amp;height=21&amp;font=&amp;locale=" id="facebook_like" title="I Like it" class="service-links-facebook-like" rel="nofollow" data-icon-position="" data-hide-link-title="0"><span class="element-invisible">Facebook Like</span></a></li><li class="last"><a href="https://www.medrxiv.org/content/10.1101/2021.10.21.21265216v1" id="google_plus_one" title="Plus it" class="service-links-google-plus-one" rel="nofollow" data-icon-position="" data-hide-link-title="0"><span class="element-invisible">Google Plus One</span></a></li></ul></div></div>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-highwire-article-collections" >
+  
+        <h2 class="pane-title">Subject Area</h2>
+    
+  
+  <div class="pane-content">
+    <div class="highwire-list-wrapper highwire-article-collections"><div class="highwire-list"><ul class="highwire-article-collection-term-list"><li class="first last odd"><span class="highwire-article-collection-term"><a href="/collection/epidemiology" class="highlight" data-icon-position="" data-hide-link-title="0">Epidemiology<i class="icon-caret-right"></i>
+</a></span></li></ul></div></div>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-panels-mini pane-biorxiv-subject-collections block-style-col2" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="panel-flexible panels-flexible-8 clearfix" id="mini-panel-biorxiv_subject_collections">
+<div class="panel-flexible-inside panels-flexible-8-inside">
+<div class="panels-flexible-region panels-flexible-region-8-center panels-flexible-region-first panels-flexible-region-last">
+  <div class="inside panels-flexible-region-inside panels-flexible-region-8-center-inside panels-flexible-region-inside-first panels-flexible-region-inside-last">
+<div class="panel-pane pane-snippet" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="snippet biorxiv-subject-areas-table-title" id="biorxiv-subject-areas-table-title">
+  
+      
+  <div class="snippet-content">
+    <b>Subject Areas</b>  </div>
+
+</div>
+  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-snippet" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="snippet biorxiv-subject-areas-view-papers" id="biorxiv-subject-areas-view-papers">
+  
+      
+  <div class="snippet-content">
+    <a href="/content/early/recent"><strong>All Articles</strong></a>  </div>
+
+</div>
+  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-highwire-subject-collections" >
+  
+      
+  
+  <div class="pane-content">
+    <ul id="collection" class="collection highwire-list-expand"><li class="outer collection depth-2  child first"><div class = "data-wrapper"><a href="/collection/addiction-medicine" class="" data-icon-position="" data-hide-link-title="0">Addiction Medicine</a> <span class = "article-count">(111)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/allergy-and-immunology" class="" data-icon-position="" data-hide-link-title="0">Allergy and Immunology</a> <span class = "article-count">(299)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/anesthesia" class="" data-icon-position="" data-hide-link-title="0">Anesthesia</a> <span class = "article-count">(75)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/cardiovascular-medicine" class="" data-icon-position="" data-hide-link-title="0">Cardiovascular Medicine</a> <span class = "article-count">(665)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/dentistry-and-oral-medicine" class="" data-icon-position="" data-hide-link-title="0">Dentistry and Oral Medicine</a> <span class = "article-count">(121)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/dermatology" class="" data-icon-position="" data-hide-link-title="0">Dermatology</a> <span class = "article-count">(77)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/emergency-medicine" class="" data-icon-position="" data-hide-link-title="0">Emergency Medicine</a> <span class = "article-count">(216)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/endocrinology-including-diabetes-mellitus-and-metabolic-disease" class="" data-icon-position="" data-hide-link-title="0">Endocrinology (including Diabetes Mellitus and Metabolic Disease)</a> <span class = "article-count">(299)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/epidemiology" class="" data-icon-position="" data-hide-link-title="0">Epidemiology</a> <span class = "article-count">(7268)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/forensic-medicine" class="" data-icon-position="" data-hide-link-title="0">Forensic Medicine</a> <span class = "article-count">(4)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/gastroenterology" class="" data-icon-position="" data-hide-link-title="0">Gastroenterology</a> <span class = "article-count">(306)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/genetic-and-genomic-medicine" class="" data-icon-position="" data-hide-link-title="0">Genetic and Genomic Medicine</a> <span class = "article-count">(1295)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/geriatric-medicine" class="" data-icon-position="" data-hide-link-title="0">Geriatric Medicine</a> <span class = "article-count">(126)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/health-economics" class="" data-icon-position="" data-hide-link-title="0">Health Economics</a> <span class = "article-count">(308)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/health-informatics" class="" data-icon-position="" data-hide-link-title="0">Health Informatics</a> <span class = "article-count">(1004)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/health-policy" class="" data-icon-position="" data-hide-link-title="0">Health Policy</a> <span class = "article-count">(526)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/health-systems-and-quality-improvement" class="" data-icon-position="" data-hide-link-title="0">Health Systems and Quality Improvement</a> <span class = "article-count">(359)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/hematology" class="" data-icon-position="" data-hide-link-title="0">Hematology</a> <span class = "article-count">(151)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/hiv-aids" class="" data-icon-position="" data-hide-link-title="0">HIV/AIDS</a> <span class = "article-count">(287)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/infectious_diseases" class="" data-icon-position="" data-hide-link-title="0">Infectious Diseases (except HIV/AIDS)</a> <span class = "article-count">(8512)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/intensive-care-and-critical-care-medicine" class="" data-icon-position="" data-hide-link-title="0">Intensive Care and Critical Care Medicine</a> <span class = "article-count">(483)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/medical-education" class="" data-icon-position="" data-hide-link-title="0">Medical Education</a> <span class = "article-count">(160)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/medical-ethics" class="" data-icon-position="" data-hide-link-title="0">Medical Ethics</a> <span class = "article-count">(40)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/nephrology" class="" data-icon-position="" data-hide-link-title="0">Nephrology</a> <span class = "article-count">(153)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/neurology" class="" data-icon-position="" data-hide-link-title="0">Neurology</a> <span class = "article-count">(1239)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/nursing" class="" data-icon-position="" data-hide-link-title="0">Nursing</a> <span class = "article-count">(63)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/nutrition" class="" data-icon-position="" data-hide-link-title="0">Nutrition</a> <span class = "article-count">(200)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/obstetrics-and-gynecology" class="" data-icon-position="" data-hide-link-title="0">Obstetrics and Gynecology</a> <span class = "article-count">(255)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/occupational-and-environmental-health" class="" data-icon-position="" data-hide-link-title="0">Occupational and Environmental Health</a> <span class = "article-count">(368)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/oncology" class="" data-icon-position="" data-hide-link-title="0">Oncology</a> <span class = "article-count">(702)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/ophthalmology" class="" data-icon-position="" data-hide-link-title="0">Ophthalmology</a> <span class = "article-count">(217)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/orthopedics" class="" data-icon-position="" data-hide-link-title="0">Orthopedics</a> <span class = "article-count">(70)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/otolaryngology" class="" data-icon-position="" data-hide-link-title="0">Otolaryngology</a> <span class = "article-count">(139)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/pain-medicine" class="" data-icon-position="" data-hide-link-title="0">Pain Medicine</a> <span class = "article-count">(73)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/palliative-medicine" class="" data-icon-position="" data-hide-link-title="0">Palliative Medicine</a> <span class = "article-count">(30)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/pathology" class="" data-icon-position="" data-hide-link-title="0">Pathology</a> <span class = "article-count">(195)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/pediatrics" class="" data-icon-position="" data-hide-link-title="0">Pediatrics</a> <span class = "article-count">(410)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/pharmacology-and-therapeutics" class="" data-icon-position="" data-hide-link-title="0">Pharmacology and Therapeutics</a> <span class = "article-count">(195)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/primary-care-research" class="" data-icon-position="" data-hide-link-title="0">Primary Care Research</a> <span class = "article-count">(158)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/psychiatry-and-clinical-psychology" class="" data-icon-position="" data-hide-link-title="0">Psychiatry and Clinical Psychology</a> <span class = "article-count">(1369)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/public-and-global-health" class="" data-icon-position="" data-hide-link-title="0">Public and Global Health</a> <span class = "article-count">(3057)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/radiology-and-imaging" class="" data-icon-position="" data-hide-link-title="0">Radiology and Imaging</a> <span class = "article-count">(509)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/rehabilitation-medicine-and-physical-therapy" class="" data-icon-position="" data-hide-link-title="0">Rehabilitation Medicine and Physical Therapy</a> <span class = "article-count">(244)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/respiratory-medicine" class="" data-icon-position="" data-hide-link-title="0">Respiratory Medicine</a> <span class = "article-count">(415)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/rheumatology" class="" data-icon-position="" data-hide-link-title="0">Rheumatology</a> <span class = "article-count">(158)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/sexual-and-reproductive-health" class="" data-icon-position="" data-hide-link-title="0">Sexual and Reproductive Health</a> <span class = "article-count">(118)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/sports-medicine" class="" data-icon-position="" data-hide-link-title="0">Sports Medicine</a> <span class = "article-count">(115)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/surgery" class="" data-icon-position="" data-hide-link-title="0">Surgery</a> <span class = "article-count">(153)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/toxicology" class="" data-icon-position="" data-hide-link-title="0">Toxicology</a> <span class = "article-count">(32)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/transplantation" class="" data-icon-position="" data-hide-link-title="0">Transplantation</a> <span class = "article-count">(67)</span></div></li>
+<li class="outer collection depth-2  child last"><div class = "data-wrapper"><a href="/collection/urology" class="" data-icon-position="" data-hide-link-title="0">Urology</a> <span class = "article-count">(51)</span></div></li>
+</ul>  </div>
+
+  
+  </div>
+  </div>
+</div>
+</div>
+</div>
+  </div>
+
+  
+  </div>
+</div>
+			</div>
+		</div>
+	
+	</div> <!-- /.panel-row-wrapper -->	
+	
+	</div>
+
+    </div>
+  </div>
+</div>      </div>
+</div>  </div>
+</section>    
+  
+  </div>    <div class="region region-page-bottom" id="region-page-bottom">
+  <div class="region-inner region-page-bottom-inner">
+      </div>
+</div><script type="text/javascript" src="https://www.medrxiv.org/sites/default/files/advagg_js/js__Vh5BcRYb6VtLoN3uam6O4DIKltYUVMjVDWtakoysPq0__Wed8jsPTirEozek7dWSCS8970Cp7a9xKKgFk6FPuSVM__OWu9jWxbqz5eMqeTDc4xZhOzPlgoEqGh5PmxOqlf8ZY.js"></script>
+<script type="text/javascript" src="https://d33xdlntwy0kbs.cloudfront.net/cshl_custom_medrxiv.js"></script>
+<script type="text/javascript" src="https://www.medrxiv.org/sites/default/files/advagg_js/js__BmqjBnkz3MgYCAoc25s1lDRMEjLhC3mEPVonUFIHi08__Unwv5-ZIuHBfFwytsjEx1niBVJ7n1T4lPws7VrkHXM4__OWu9jWxbqz5eMqeTDc4xZhOzPlgoEqGh5PmxOqlf8ZY.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+function euCookieComplianceLoadScripts() {}
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var eu_cookie_compliance_cookie_name = "";
+//--><!]]>
+</script>
+  </body>
+</html>

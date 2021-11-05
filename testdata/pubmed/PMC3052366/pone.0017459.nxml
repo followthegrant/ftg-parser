@@ -1,0 +1,985 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.0 20120330//EN" "JATS-archivearticle1.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article"><?properties open_access?><front><journal-meta><journal-id journal-id-type="nlm-ta">PLoS One</journal-id><journal-id journal-id-type="iso-abbrev">PLoS ONE</journal-id><journal-id journal-id-type="publisher-id">plos</journal-id><journal-id journal-id-type="pmc">plosone</journal-id><journal-title-group><journal-title>PLoS ONE</journal-title></journal-title-group><issn pub-type="epub">1932-6203</issn><publisher><publisher-name>Public Library of Science</publisher-name><publisher-loc>San Francisco, USA</publisher-loc></publisher></journal-meta><article-meta><article-id pub-id-type="pmid">21408011</article-id><article-id pub-id-type="pmc">3052366</article-id><article-id pub-id-type="publisher-id">PONE-D-10-02971</article-id><article-id pub-id-type="doi">10.1371/journal.pone.0017459</article-id><article-categories><subj-group subj-group-type="heading"><subject>Research Article</subject></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Biology</subject><subj-group><subject>Biochemistry</subject><subj-group><subject>Enzymes</subject><subj-group><subject>Enzyme Structure</subject></subj-group></subj-group><subj-group><subject>Proteins</subject><subj-group><subject>Protein Structure</subject></subj-group></subj-group></subj-group><subj-group><subject>Biophysics</subject><subj-group><subject>Protein Folding</subject></subj-group></subj-group><subj-group><subject>Computational Biology</subject><subj-group><subject>Macromolecular Structure Analysis</subject><subj-group><subject>Protein Structure</subject></subj-group></subj-group><subj-group><subject>Evolutionary Modeling</subject><subject>Sequence Analysis</subject></subj-group></subj-group><subj-group><subject>Evolutionary Biology</subject><subj-group><subject>Evolutionary Processes</subject><subj-group><subject>Coevolution</subject><subject>Mutation</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Physics</subject><subj-group><subject>Biophysics</subject><subj-group><subject>Protein Folding</subject></subj-group></subj-group></subj-group></article-categories><title-group><article-title>The Contribution of Coevolving Residues to the Stability of KDO8P Synthase</article-title><alt-title alt-title-type="running-head">Coevolving Residues of KDO8P Synthase</alt-title></title-group><contrib-group><contrib contrib-type="author"><name><surname>Ackerman</surname><given-names>Sharon H.</given-names></name><xref ref-type="aff" rid="aff1">
+<sup>1</sup>
+</xref></contrib><contrib contrib-type="author"><name><surname>Gatti</surname><given-names>Domenico L.</given-names></name><xref ref-type="aff" rid="aff1">
+<sup>1</sup>
+</xref><xref ref-type="aff" rid="aff2">
+<sup>2</sup>
+</xref><xref ref-type="corresp" rid="cor1">
+<sup>&#x0002a;</sup>
+</xref></contrib></contrib-group><aff id="aff1">
+<label>1</label>
+<addr-line>Department of Biochemistry and Molecular Biology, Wayne State University School of Medicine, Detroit, Michigan, United States of America</addr-line>
+</aff><aff id="aff2">
+<label>2</label>
+<addr-line>Cardiovascular Research Institute, Wayne State University School of Medicine, Detroit, Michigan, United States of America</addr-line>
+</aff><contrib-group><contrib contrib-type="editor"><name><surname>Romesberg</surname><given-names>Floyd</given-names></name><role>Editor</role><xref ref-type="aff" rid="edit1"/></contrib></contrib-group><aff id="edit1">The Scripps Research Institute, United States of America</aff><author-notes><corresp id="cor1">&#x0002a; E-mail: <email>dgatti@med.wayne.edu</email></corresp><fn fn-type="con"><p>Conceived and designed the experiments: SHA DLG. Analyzed the data: SHA DLG. Wrote the paper: SHA DLG.</p></fn></author-notes><pub-date pub-type="collection"><year>2011</year></pub-date><pub-date pub-type="epub"><day>9</day><month>3</month><year>2011</year></pub-date><volume>6</volume><issue>3</issue><elocation-id>e17459</elocation-id><history><date date-type="received"><day>6</day><month>10</month><year>2010</year></date><date date-type="accepted"><day>3</day><month>2</month><year>2011</year></date></history><permissions><copyright-statement>Ackerman, Gatti.</copyright-statement><copyright-year>2011</copyright-year><license xlink:href="http://creativecommons.org/licenses/by/4.0/"><license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are properly credited.</license-p></license></permissions><abstract><sec><title>Background</title><p>The evolutionary tree of 3-deoxy-<italic>D</italic>-manno-octulosonate 8-phosphate (KDO8P) synthase (KDO8PS), a bacterial enzyme that catalyzes a key step in the biosynthesis of bacterial endotoxin, is evenly divided between metal and non-metal forms, both having similar structures, but diverging in various degrees in amino acid sequence. Mutagenesis, crystallographic and computational studies have established that only a few residues determine whether or not KDO8PS requires a metal for function. The remaining divergence in the amino acid sequence of KDO8PSs is apparently unrelated to the underlying catalytic mechanism.</p></sec><sec><title>Methodology/Principal Findings</title><p>The multiple alignment of all known KDO8PS sequences reveals that several residue pairs coevolved, an indication of their possible linkage to a structural constraint. In this study we investigated by computational means the contribution of coevolving residues to the stability of KDO8PS. We found that about 1/4 of all strongly coevolving pairs probably originated from cycles of mutation (decreasing stability) and suppression (restoring it), while the remaining pairs are best explained by a succession of neutral or nearly neutral covarions.</p></sec><sec><title>Conclusions/Significance</title><p>Both sequence conservation and coevolution are involved in the preservation of the core structure of KDO8PS, but the contribution of coevolving residues is, in proportion, smaller. This is because small stability gains or losses associated with selection of certain residues in some regions of the stability landscape of KDO8PS are easily offset by a large number of possible changes in other regions. While this effect increases the tolerance of KDO8PS to deleterious mutations, it also decreases the probability that specific pairs of residues could have a strong contribution to the thermodynamic stability of the protein.</p></sec></abstract><counts><page-count count="14"/></counts></article-meta></front><body><sec id="s1"><title>Introduction</title><p>3-Deoxy-<italic>D</italic>-manno-octulosonate 8-phosphate (KDO8P) synthase (KDO8PS) is a bacterial enzyme that synthesizes KDO8P from phosphoenolpyruvate (PEP) and arabinose 5-phosphate (A5P). This reaction is of significant biological relevance, as KDO8P is the phosphorylated precursor of KDO, which is an essential component of the endotoxin of Gram negative bacteria <xref rid="pone.0017459-Raetz1" ref-type="bibr">[1]</xref>. The enzyme exists in two forms, differing in the requirement (or lack thereof) of a divalent metal for activity <xref rid="pone.0017459-Duewel1" ref-type="bibr">[2]</xref>. We and others have determined high-resolution structures of both metallo- and non-metallo forms of KDO8PS <xref rid="pone.0017459-Duewel1" ref-type="bibr">[2]</xref>, <xref rid="pone.0017459-Wagner1" ref-type="bibr">[3]</xref>, <xref rid="pone.0017459-Radaev1" ref-type="bibr">[4]</xref>, <xref rid="pone.0017459-Duewel2" ref-type="bibr">[5]</xref>, <xref rid="pone.0017459-Cochrane1" ref-type="bibr">[6]</xref>, which revealed the features of the active site: in metal dependent KDO8PSs the divalent metal ion (Zn<sup>2&#x0002b;</sup>, or Fe<sup>2&#x0002b;</sup>, <xref rid="pone.0017459-Kona1" ref-type="bibr">[7]</xref>) is coordinated by the side chains of a cysteine, a histidine, a glutamic acid, and an aspartic acid. In non-metallo KDO8PSs an asparagine replaces the metal binding cysteine and there is no metal ion. Several mutagenesis studies <xref rid="pone.0017459-Cochrane1" ref-type="bibr">[6]</xref>, <xref rid="pone.0017459-Oliynyk1" ref-type="bibr">[8]</xref>, <xref rid="pone.0017459-Shulami1" ref-type="bibr">[9]</xref>, <xref rid="pone.0017459-Li1" ref-type="bibr">[10]</xref>, <xref rid="pone.0017459-Kona2" ref-type="bibr">[11]</xref>, <xref rid="pone.0017459-Allison1" ref-type="bibr">[12]</xref> and more recently, quantum mechanical simulations <xref rid="pone.0017459-Kona1" ref-type="bibr">[7]</xref>, <xref rid="pone.0017459-Tao1" ref-type="bibr">[13]</xref>, <xref rid="pone.0017459-Tao2" ref-type="bibr">[14]</xref>, have established that substitution of the metal binding cysteine with asparagine is absolutely required to convert metal-dependent to metal-independent KDO8PSs, although additional changes in the highly conserved CysAspGlyPro motif of the loop that contains the metal binding aspartic acid are necessary to achieve appreciable levels of activity <xref rid="pone.0017459-Cochrane1" ref-type="bibr">[6]</xref>, <xref rid="pone.0017459-Allison1" ref-type="bibr">[12]</xref>. These observations are intriguing and raise the possibility that during the evolution of KDO8PS, after the initial choice between cysteine &#x0002b; metal and asparagine, additional sequence divergence occurred primarily to maximize the stability of the protein in the environment of hundreds of different bacteria. In this study we aimed to establish if the climb to stability fitness was a key factor in determining the amino acid sequence of KDO8PSs, and whether it affected only conserved positions or also positions with a high propensity for coevolution. A new combination of tools from information theory and structural modeling provided an avenue to quantify the contribution of coevolving residues to the stability of KDO8P synthase: this methodology may be of general value in the study of all protein families.</p></sec><sec id="s2"><title>Results</title><sec id="s2a"><title>The stability landscape of KDO8PS</title><p>From the point of view of protein stability the organization of enzyme active sites is inherently unstable because these sites are optimized for catalysis, which means they are pre-organized to stabilize the transition state(s), rather than the protein <xref rid="pone.0017459-Warshel1" ref-type="bibr">[15]</xref>, <xref rid="pone.0017459-Roca1" ref-type="bibr">[16]</xref>. Thus, the substitution of a catalytic side chain (most often to alanine) will typically increase the overall protein stability, while sacrificing function <xref rid="pone.0017459-Nagatani1" ref-type="bibr">[17]</xref>, <xref rid="pone.0017459-Beadle1" ref-type="bibr">[18]</xref>. Conversely, most mutations that introduce a new function are destabilizing <xref rid="pone.0017459-Wang1" ref-type="bibr">[19]</xref>, <xref rid="pone.0017459-Bloom1" ref-type="bibr">[20]</xref>. The generality of this stability-function tradeoff must be viewed within the context of the fact that regardless of their effect on functions most mutations are destabilizing <xref rid="pone.0017459-Matthews1" ref-type="bibr">[21]</xref>, <xref rid="pone.0017459-Guerois1" ref-type="bibr">[22]</xref>, <xref rid="pone.0017459-Schymkowitz1" ref-type="bibr">[23]</xref>, <xref rid="pone.0017459-Tokuriki1" ref-type="bibr">[24]</xref>. With respect to KDO8PS, several attempts were made (e.g., <xref rid="pone.0017459-Cochrane1" ref-type="bibr">[6]</xref>, <xref rid="pone.0017459-Kona2" ref-type="bibr">[11]</xref>) to map the evolutionary paths from metallo- to non-metallo forms (and vice versa) without giving sufficient consideration to the fact that sequence differences between and within these forms in different bacterial backgrounds, may be related not only to activity but also to stability.</p><p>One way we looked at the relevance of individual residues in the context of the three-dimensional structure of KDO8PSs was by computing a Hidden Markov Model (HMM) for the entire KDO8PS protein family (multiple sequence alignment <xref ref-type="supplementary-material" rid="pone.0017459.s006">MSA S1</xref>, Supporting Information). This family contains the &#x02018;C23&#x02019; metallo sub-family (175 sequences with Cys at position 23 of <italic>Neisseria meningitidis</italic> (<italic>Nm.</italic>) KDO8PS (Uniref Q9JZ55, PDB 2QKF), used here as reference <xref rid="pone.0017459-Cochrane1" ref-type="bibr">[6]</xref>), and the &#x02018;N23&#x02019; non-metallo sub-family (173 sequences with Asn at position 23). Only the positions of the MSA corresponding to the sequence of <italic>Nm.</italic> KDO8PS (<xref ref-type="supplementary-material" rid="pone.0017459.s007">MSA S2</xref>, Supporting Information) were used in the calculation of the HMM profile. A HMM profile specifies a probability distribution over the alphabet of the 20 common amino acids, taking into consideration the background frequency for each amino acid, computed by counting amino acid occurrences in all known proteins, or only in the proteins of the family under consideration <xref rid="pone.0017459-Eddy1" ref-type="bibr">[25]</xref>,<xref rid="pone.0017459-Sonnhammer1" ref-type="bibr">[26]</xref>. If the background frequency of amino acid <italic>j</italic> is &#x003c0;<italic><sub>j</sub></italic>, then the important positions are those whose distribution differs from &#x003c0;. Therefore, the relative entropy between the observed distribution <italic>P</italic>
+<sub>i</sub> at the <italic>i</italic>-th position of the profile and &#x003c0;, <italic>H</italic>(<italic>P</italic>
+<sub>i</sub> || &#x003c0;)&#x0200a;=&#x0200a;<italic>I</italic>(<italic>P</italic>
+<sub>i</sub>), defines the information content of <italic>P</italic>
+<sub>i</sub>. This information can be visualized as a HMM histogram or vector (<xref ref-type="fig" rid="pone-0017459-g001">Figure 1A</xref>). In practice, the height (relative entropy &#x0200a;=&#x0200a; information content) of the histogram at each position indicates how much the observed frequency of amino acids at that position deviates from the background frequency. In the HMM vector of <xref ref-type="fig" rid="pone-0017459-g001">Figure 1A</xref>, position numbers refer to the reference sequence of <italic>Nm.</italic> KDO8PS <xref rid="pone.0017459-Cochrane1" ref-type="bibr">[6]</xref>. There is a &#x0201c;wavy&#x0201d; pattern in the histogram derived from the MSA of all KDO8PSs (1<sup>st</sup> inset of <xref ref-type="fig" rid="pone-0017459-g001">Figure 1A</xref>), which is clearly evident in the superimposed Loess <xref rid="pone.0017459-Cleveland1" ref-type="bibr">[27]</xref>, <xref rid="pone.0017459-Cleveland2" ref-type="bibr">[28]</xref> fit. Regions of the histogram higher than the mean value are marked with an orange bar below the sequence; these regions invariably include the strands of the &#x003b2;-barrel in the structure (<xref ref-type="fig" rid="pone-0017459-g001">Figure 1B</xref>), a clear indication that the sequence of the interior of the protein is less determined by chance. The HMM vectors of metallo (C23) or non-metallo (N23) KDO8PSs, calculated independently, are shown in the 2<sup>nd</sup> inset of <xref ref-type="fig" rid="pone-0017459-g001">Figure 1A</xref>. Their difference is shown in the 3<sup>rd</sup> inset of <xref ref-type="fig" rid="pone-0017459-g001">Figure 1A</xref>. The difference vector identifies positions that best fulfill the specific demands of the two subfamilies of KDO8PS: while partly still in regions of the HMM profile with high relative entropy, these positions tend to cluster outside the &#x003b2;-barrel (<xref ref-type="fig" rid="pone-0017459-g001">Figure 1B</xref>).</p><fig id="pone-0017459-g001" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0017459.g001</object-id><label>Figure 1</label><caption><title>HMM histograms of metallo and non-metallo KDO8PSs.</title><p>A. 1<sup>st</sup> inset, HMM vector for all KDO8PSs with superimposed Loess fit (calculated with a span of 20 residues). Regions of the histogram higher than the mean are highlighted with an orange bar below the sequence. 2<sup>nd</sup> inset, HMM vectors for the C23 and N23 sub-families of KDO8PS. 3<sup>rd</sup> inset, difference between the HMM vectors of the C23 and N23 sub-families. B. Stereo view of a monomer of <italic>Nm.</italic> KDO8PS shown here as a ribbon drawing. The regions of the structure corresponding to the orange bars in the 1<sup>st</sup> inset of Panel A are colored in yellow. Residues corresponding to positions with values &#x0003e;2&#x003c3; in the difference histogram of panel A are shown as sticks with green carbon atoms. Residues corresponding to positions with values &#x0003e;2&#x003c3; for the difference between C23 and N23 KDO8PSs in the correlation between stability and amino acid usage (last inset in <xref ref-type="fig" rid="pone-0017459-g002">Figure 2B</xref>) are shown as sticks with magenta carbon atoms. Helices are labeled (H1 to H8) according to their position in the amino acid sequence.</p></caption><graphic xlink:href="pone.0017459.g001"/></fig><p>Unfortunately the HMM vectors do not reveal whether the driving force for these effects is only function or whether stability is also a factor. This question was addressed by using the experimentally validated FoldX algorithm <xref rid="pone.0017459-Guerois1" ref-type="bibr">[22]</xref>, <xref rid="pone.0017459-Schymkowitz1" ref-type="bibr">[23]</xref>, <xref rid="pone.0017459-Schymkowitz2" ref-type="bibr">[29]</xref> to calculate the &#x00394;&#x00394;G changes associated with introducing any one of the 20 possible amino acids at each position of the structure of <italic>Nm.</italic> KDO8PS (again taken here as the reference structure for this class of proteins). This type of calculation was initially introduced by Tokuriki <italic>et al.</italic>
+<xref rid="pone.0017459-Tokuriki2" ref-type="bibr">[30]</xref> to study the overall distribution of stability effects for all possible mutations in a large set of different single domain globular proteins. In our case we used an entire tetramer of <italic>Nm.</italic> KDO8PS, which is known to be the biological unit of the enzyme <xref rid="pone.0017459-Cochrane1" ref-type="bibr">[6]</xref>, and the individual mutations were introduced simultaneously in all four subunits. Thus, the calculated &#x00394;&#x00394;G changes account also for the effects of mutations at the interface between subunits. Furthermore, as &#x00394;&#x00394;G changes can be dependent on a particular conformation of the enzyme, a three-dimensional model of tetrameric <italic>Nm.</italic> KDO8PS derived from the X-ray structure <xref rid="pone.0017459-Cochrane1" ref-type="bibr">[6]</xref> (see <xref ref-type="sec" rid="s4">Methods</xref> section) was subjected to 12 nanoseconds (ns) of molecular dynamics (MD) simulation at 300 K under solvated conditions. This very long simulation time progressively eliminated possible errors in the original model and assured that the equilibrium structure of <italic>Nm.</italic> KDO8PS that is used in the FoldX calculations is as close as possible to the native structure in solution. Progressive convergence of the structure toward equilibrium was evaluated from the changes in the C&#x003b1; root mean square deviation, C&#x003b1;-RMSD, from the structure at time <italic>t</italic>&#x0200a;=&#x0200a;0 (<xref ref-type="supplementary-material" rid="pone.0017459.s001">Figure S1A</xref>, Supporting Information). The final part of the simulation (6&#x02013;12 ns) was selected to gather statistics about the conformational properties of the enzyme. The fluctuations around the average structure (C&#x003b1; root mean square fluctuation, C&#x003b1;-RMSF) that occur in this part of the simulation reflect the degree of mobility in the solution structure (<xref ref-type="supplementary-material" rid="pone.0017459.s001">Figure S1A</xref>).</p><p>Frames from the final 6 ns of the simulation were investigated further with a clustering procedure (incorporated in the program X-Cluster, Schrodinger, LLC) that, based on the cross-RMSDs between frames, identified three structures (<xref ref-type="supplementary-material" rid="pone.0017459.s011">PDB S1</xref>, <xref ref-type="supplementary-material" rid="pone.0017459.s012">PDB S2</xref>, <xref ref-type="supplementary-material" rid="pone.0017459.s013">PDB S3</xref>, Supporting Information) as representative of all the states sampled during this part of the MD run. Thus, the final 6 ns of the MD simulation can be considered as fluctuations around these three main conformations, which appear in a 58&#x02236;24&#x02236;18 relative ratio. &#x00394;&#x00394;G changes associated with mutating every amino acid of all four subunits to all 20 possible amino acids were calculated in duplicate for each of the three conformers. Values derived from each configuration were then merged by weighing each configuration according to its contribution to the population of states in solution as determined from the MD run (<xref ref-type="supplementary-material" rid="pone.0017459.s001">Figure S1B</xref>). The final &#x00394;&#x00394;G values reflect not only the distribution of energies in the solution ensemble of tetrameric <italic>Nm.</italic> KDO8PS, but also the differences originating from the slightly different environment that each residue senses in the four subunits of the tetramer. The outcome of this calculation is a &#x0201c;stability landscape&#x0201d; of KDO8PS (<xref ref-type="fig" rid="pone-0017459-g002">Figure 2A</xref>; <xref ref-type="supplementary-material" rid="pone.0017459.s014">Energy Matrix S1</xref>, Supporting Information): the peaks in the landscape represent positions in the protein where introduction of a certain amino acid would significantly increase the &#x00394;G, and therefore decrease the overall stability. It is worth noting that while the energies derived from FoldX are clearly not on an absolute scale <xref rid="pone.0017459-Tokuriki2" ref-type="bibr">[30]</xref>, the relative trends are expected to be correct <xref rid="pone.0017459-Potapov1" ref-type="bibr">[31]</xref>, <xref rid="pone.0017459-Khan1" ref-type="bibr">[32]</xref>. In general, it can be seen how bulky aromatic residues (W,Y,F,H) tend to decrease stability (&#x0200a;=&#x0200a;increase energy) at every position, and in four positions (21,68,231,232) any residue besides glycine or alanine decreases stability dramatically. These effects appear to be due to very large energy terms derived from van der Waals clashes of these residues with their surroundings, which are not sufficiently relieved by the relaxation of the structure. The observed amino acid frequencies at each position in the C23 and N23 sub-families of KDO8PSs are shown as lolly-pops (yellow for C23, green for N23, height proportional to the corresponding frequency) superimposed to the stability landscape of KDO8PS (<xref ref-type="fig" rid="pone-0017459-g002">Figure 2A</xref>). In most positions, the amino acids most often used are those that do not decrease stability: in other words, only the planes of the stability landscape are significantly populated.</p><fig id="pone-0017459-g002" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0017459.g002</object-id><label>Figure 2</label><caption><title>Stability landscape of KDO8PS.</title><p>A. &#x00394;&#x00394;G changes associated with introducing any one of the 20 possible amino acids at each position of all four subunits of the structure of <italic>Nm.</italic> KDO8PS were calculated using the FoldX algorithm to produce a &#x0201c;stability landscape&#x0201d; of KDO8PS: the peaks in the landscape represent positions in the protein where introduction of a certain amino acid would significantly decrease the overall stability. The observed frequency of different amino acids at each position in the two subfamilies of C23 and N23 KDO8PSs is superimposed to the stability landscape as lolly-pops (yellow for C23, green for N23), whose height is proportional to the frequency of a certain amino acid at a certain position. B. Stability/(amino acid usage) correlation in the two subfamilies of KDO8PSs. Correlation coefficients are based on the stability landscape and the relative frequency of each amino acid at each position as shown in panel A. From top to bottom: 1<sup>st</sup> inset, correlation between stability and amino acid usage at each position in the entire family of KDO8PSs; a Loess fit (calculated with a span of 20 residues) is superimposed. The regions of the structure with the highest relative entropy in the HMM vector of <xref ref-type="fig" rid="pone-0017459-g001">Figure 1A</xref> are shown with an orange bar below the stem plot. 2<sup>nd</sup> inset, <italic>p</italic>-values for the correlations shown in the 1<sup>st</sup> inset. 3<sup>rd</sup> and 4<sup>th</sup> insets, correlation between stability and amino acid usage at each position of C23 (yellow circles) and N23 (green circles) KDO8PSs. 5<sup>th</sup> inset, difference between the correlations in C23 and N23 KDO8PSs. Residues corresponding to positions with values &#x0003e;2&#x003c3; for this difference are shown as sticks with magenta carbon atoms in <xref ref-type="fig" rid="pone-0017459-g001">Figure 1B</xref>.</p></caption><graphic xlink:href="pone.0017459.g002"/></fig><p>The data presented in <xref ref-type="fig" rid="pone-0017459-g002">Figure 2A</xref> offer an interesting opportunity to understand the relationship between sequence and stability in KDO8PS: for each position in the reference structure of <italic>Nm.</italic> KDO8PS we consider two vectors (each with 20 elements): the first is the vector of the &#x00394;&#x00394;G changes associated with mutating the original sequence to each of the 20 amino acids; the other contains the frequencies of each of the 20 amino acids for that position in each of the two subfamilies of KDO8PS (or in the entire family). We recall that if a MSA is composed of independent sequences all producing stable folds with approximately the same structure, and if individual residues contribute additively to stability (no epistasis) <xref rid="pone.0017459-Horovitz1" ref-type="bibr">[33]</xref>, <xref rid="pone.0017459-Tracewell1" ref-type="bibr">[34]</xref>, then the stability contribution &#x00394;&#x00394;G<italic><sub>a,i</sub></italic> of a particular amino acid <italic>a</italic> at a given position <italic>i</italic> should be a roughly logarithmic function of its frequency <italic>f<sub>a,i</sub></italic> in the MSA <xref rid="pone.0017459-Ohage1" ref-type="bibr">[35]</xref>:<disp-formula><graphic xlink:href="pone.0017459.e001.jpg" mimetype="image" position="float"/><label>(1)</label></disp-formula>
+</p><p>Approaches based on this idea have been generally successful in engineering more stable proteins <xref rid="pone.0017459-Polizzi1" ref-type="bibr">[36]</xref>, <xref rid="pone.0017459-ChaparroRiggers1" ref-type="bibr">[37]</xref>, <xref rid="pone.0017459-Lehmann1" ref-type="bibr">[38]</xref>, <xref rid="pone.0017459-Lehmann2" ref-type="bibr">[39]</xref>. It follows that for each of the 280 positions in the reference structure of <italic>Nm.</italic> KDO8PS we can calculate the linear correlation coefficient (<italic>corr</italic>) between the stability vector [exp(-&#x00394;&#x00394;G<italic><sub>a,i</sub></italic>)] derived with FoldX and the amino acid frequency vector derived from the MSA. The result of this calculation is shown in the insets of <xref ref-type="fig" rid="pone-0017459-g002">Figure 2B</xref>; in the family of all KDO8PSs and in both subfamilies there is a clear distinction between positions in which the amino acid usage is influenced by an evolutionary drive to increase stability, and other positions in which there is no such trend. There is a wavy pattern in the correlation between stability and observed amino acid frequencies (see the Loess fit in the first inset of <xref ref-type="fig" rid="pone-0017459-g002">Figure 2B</xref>), which is similar to that already noticed in the HMM vector (<xref ref-type="fig" rid="pone-0017459-g001">Figure 1A</xref>). The 2<sup>nd</sup> inset of <xref ref-type="fig" rid="pone-0017459-g002">Figure 2B</xref> shows the <italic>p</italic>-values for the correlations in the 1<sup>st</sup> inset, calculated by testing the <italic>null</italic> hypothesis of zero correlation against the <italic>alternative</italic> hypothesis of non-zero correlation. The large <italic>p</italic>-values for all the sequence positions with correlation near zero, and the small <italic>p</italic>-values (&#x0003c;5E-4) for all the sequence positions with large correlation, lend credibility to the apparent correlation between stability gains and choice of particular amino acids in certain regions of the protein. The correlation coefficients between the HMM vectors (<xref ref-type="fig" rid="pone-0017459-g001">Figure 1A</xref>) and the stability/sequence correlation vectors are 0.34 (<italic>p</italic>&#x0200a;=&#x0200a;7.1E-9), 0.31 (<italic>p</italic>&#x0200a;=&#x0200a;1.5E-7), and 0.39 (<italic>p</italic>&#x0200a;=&#x0200a;1.9E-11), for all KDO8PSs and for the C23 and N23 subfamilies, respectively, suggesting that the choice of sequence in the regions of high relative entropy is at least in part aimed at increasing the overall stability of the structure. If the correlation vectors between sequence and stability for each sub-family (3<sup>rd</sup> and 4<sup>th</sup> insets of <xref ref-type="fig" rid="pone-0017459-g002">Figure 2B</xref>) are subtracted from each other (5th inset of <xref ref-type="fig" rid="pone-0017459-g002">Figure 2B</xref>), a new set of positions is identified in the structure of <italic>Nm.</italic> KDO8PS, which represent places in which the correlation with stability changes significantly between the two sub-families. These are positions in which one sub-family selectively affects stability with respect to the other sub-family by preferentially adopting or discarding certain amino acids. By and large, these positions (<xref ref-type="fig" rid="pone-0017459-g001">Figure 1B</xref>, residues colored in magenta) are also found outside the &#x003b2;-barrel, as already noted for the positions derived from the difference between the HMM vectors (<xref ref-type="fig" rid="pone-0017459-g001">Figure 1B</xref>, residues colored in green).</p></sec><sec id="s2b"><title>The contribution of coevolving residues to the stability of KDO8PS</title><p>In a MSA some positions are highly conserved, while others vary. The conserved positions are clearly important, but the non-conserved positions are not irrelevant because the net stabilization of the folded state, relative to the unfolded state is usually so small, that all positions may contribute significantly to the protein stability. This is clearly evident in the stability landscape of <xref ref-type="fig" rid="pone-0017459-g002">Figure 2A</xref>. Thus, the destabilizing effects of a given amino acid at one position can be compensated by the stabilizing effect of a certain amino acid at another position: in other words, two positions could be coevolving. A wide variety of algorithms have been developed to detect coevolving positions from a MSA (reviewed in <xref rid="pone.0017459-Horner1" ref-type="bibr">[40]</xref>, <xref rid="pone.0017459-Caporaso1" ref-type="bibr">[41]</xref>, <xref rid="pone.0017459-Codoner1" ref-type="bibr">[42]</xref>). Some of these methods use <inline-formula><inline-graphic xlink:href="pone.0017459.e002.jpg" mimetype="image"/></inline-formula>-tests <xref rid="pone.0017459-Kass1" ref-type="bibr">[43]</xref>, <xref rid="pone.0017459-Fodor1" ref-type="bibr">[44]</xref>, some are perturbative <xref rid="pone.0017459-Dekker1" ref-type="bibr">[45]</xref>, <xref rid="pone.0017459-Lockless1" ref-type="bibr">[46]</xref>, <xref rid="pone.0017459-Halabi1" ref-type="bibr">[47]</xref>, others employ amino acid substitution matrices <xref rid="pone.0017459-Gobel1" ref-type="bibr">[48]</xref>, and many work within the frame of information theory <xref rid="pone.0017459-Reza1" ref-type="bibr">[49]</xref>. Information entropy, <italic>H</italic>(X), is a measure of the uncertainty associated with a discrete random variable X that assumes values {x<sub>1</sub>,..., x<sub>n</sub>}:<disp-formula><graphic xlink:href="pone.0017459.e003.jpg" mimetype="image" position="float"/><label>(2)</label></disp-formula>where <italic>b</italic> is the base of the logarithm used and <italic>p</italic> is the probability mass function of the variable X <xref rid="pone.0017459-Shannon1" ref-type="bibr">[50]</xref>, <xref rid="pone.0017459-Shannon2" ref-type="bibr">[51]</xref>. Related to <italic>H</italic>(X), mutual information, <italic>MI</italic>(X;Y), measures the mutual dependence of two discrete random variables X and Y:<disp-formula><graphic xlink:href="pone.0017459.e004.jpg" mimetype="image" position="float"/><label>(3)</label></disp-formula>where <italic>p</italic>(x,y) is the joint probability mass function of X and Y, and <italic>p</italic>(x) and <italic>p</italic>(y) are the marginal probability mass functions of X and Y, respectively. Intuitively, MI measures how much knowing one of the two variables reduces the uncertainty about the other. In a MSA, the amino acids in a given column can be considered as a set of observations (x<sub>i</sub>) of a random variable X. An estimate of the entropy <italic>H</italic>(X) is obtained by using the observed amino acid frequencies, <italic>f</italic>(x<sub>i</sub>), in place of the underlying probabilities, <italic>p</italic>(x<sub>i</sub>); likewise, <italic>MI</italic>(X;Y) for a pair of columns can be derived using the frequencies, <italic>f</italic>(x<sub>i</sub>,y<sub>j</sub>), of all ordered pairs occurring in the two columns. In practice, MI between positions (columns in a MSA) reflects the extent to which knowledge of the amino acid at one position allows us to predict the identity of the amino acid at the other position <xref rid="pone.0017459-Atchley1" ref-type="bibr">[52]</xref>, <xref rid="pone.0017459-Gloor1" ref-type="bibr">[53]</xref>, <xref rid="pone.0017459-Martin1" ref-type="bibr">[54]</xref>. If amino acids occur independently at the two sites, the theoretical value for MI is zero; conversely, MI is high if the two positions are correlated.</p><p>However, significant background MI can originate from random pairings of residues when the number of sequences in the multiple sequence alignments is small (in practice, less than 125 sequences <xref rid="pone.0017459-Martin1" ref-type="bibr">[54]</xref>). In addition, positions with high entropy (non-conserved positions) have more background MI than positions with low entropy. MI is also affected by various sources of bias, because the sequences in a MSA do not exactly meet the assumption of independent evolution. For example, the appearance of a mutation in an ancestral protein, which is clearly a single evolutionary event, would be considered in a MI analysis as representing an independent event that occurred in each of the proteins in the MSA that descended from that ancestor. This treatment of a single event as multiple independent events acts as a phylogenetic bias that increases the mutual information among residues. Normalization of MI values reduces the effect of positional entropy and phylogenetic bias <xref rid="pone.0017459-Martin1" ref-type="bibr">[54]</xref>, and several normalized variants of MI have been proposed. A useful and symmetric type of normalized MI is symmetric uncertainty (<italic>SU</italic>) <xref rid="pone.0017459-Witten1" ref-type="bibr">[55]</xref>, <xref rid="pone.0017459-Press1" ref-type="bibr">[56]</xref>:<disp-formula><graphic xlink:href="pone.0017459.e005.jpg" mimetype="image" position="float"/><label>(4)</label></disp-formula>
+</p><p>
+<italic>MIr</italic>, a form of MI normalized by the joint entropy of the variables, <italic>H</italic>(X,Y), instead of the sum, <italic>H</italic>(X)&#x0002b;<italic>H</italic>(Y), is conceptually similar to SU and is also widely used <xref rid="pone.0017459-Gloor1" ref-type="bibr">[53]</xref>, <xref rid="pone.0017459-Martin1" ref-type="bibr">[54]</xref>.</p><p>We have calculated the matrix of symmetric uncertainties <italic>SU</italic>(X,Y) for all columns in the MSAs of the entire family of metallo &#x0002b; non-metallo KDO8PSs. As recommended by some authors <xref rid="pone.0017459-Merlo1" ref-type="bibr">[57]</xref>, <xref rid="pone.0017459-Dunn1" ref-type="bibr">[58]</xref>, <xref rid="pone.0017459-Fernandes1" ref-type="bibr">[59]</xref> gaps were not included in the amino acid alphabet as this can lead to artificially high MI values, and if a gap appeared in a row in at least one of the two columns, that row did not contribute to the SU value for just those two columns. On the other hand, also this exclusion may lead to an artificial increase of the SU value. In fact, while the theoretical value for MI is zero if amino acids occur independently at the two sites, MI can be zero only if the observed pair frequencies reflect all possible pairs for the observed amino acid frequencies. If all 20 amino acids are present in each column and are equally probable, MI vanishes only if the frequency of each pair of amino acids is 1/20<sup>2</sup>. This condition is not met in a MSA with less than 400 sequences. Thus, in order to weigh the significance of pairs of columns containing different numbers of ungapped rows, the SU value was scaled linearly by the fraction of ungapped rows in the two columns with respect to the total number of rows in the alignment. Other forms of (non-linear) correction for the number of rows included in the MI calculation have also been proposed <xref rid="pone.0017459-Buslje1" ref-type="bibr">[60]</xref>.</p><p>Many have noticed that MI between positions <italic>i</italic> and <italic>j</italic> in a MSA is highly correlated to the product <inline-formula><inline-graphic xlink:href="pone.0017459.e006.jpg" mimetype="image"/></inline-formula> of the average value of MI at each of these positions <xref rid="pone.0017459-Dunn1" ref-type="bibr">[58]</xref>, <xref rid="pone.0017459-Little1" ref-type="bibr">[61]</xref>. While the origin of this correlation is uncertain, and can perhaps be attributed to positional entropy effects and a combination of both phylogenetic and stochastic bias <xref rid="pone.0017459-Little1" ref-type="bibr">[61]</xref>, it is nonetheless clear that it produces a high background MI that obscures coevolution patterns. Several corrections have been proposed to eliminate this correlation, giving rise to new formulations or scoring of MI defined respectively as positional MI, <italic>MIp</italic>
+<xref rid="pone.0017459-Dunn1" ref-type="bibr">[58]</xref>, Z-scored residual MI, <italic>ZRes</italic>
+<xref rid="pone.0017459-Little1" ref-type="bibr">[61]</xref>, Z-scored-product normalized MI, <italic>ZNMI</italic>
+<xref rid="pone.0017459-Brown1" ref-type="bibr">[62]</xref>. The <italic>Zpx</italic> score introduced by Gloor <italic>et al.</italic>
+<xref rid="pone.0017459-Gloor2" ref-type="bibr">[63]</xref> supercedes the <italic>MIp</italic> score. More recently it has been pointed out that attempts to infer coevolution only from pair-count data are heavily affected by assumptions on the consistency between joint and marginal frequencies <xref rid="pone.0017459-Fernandes1" ref-type="bibr">[59]</xref>, and that additional biological knowledge may be necessary for a meaningful derivation of coevolution patterns. In this line of thinking, Codoner <italic>et al.</italic>
+<xref rid="pone.0017459-Codoner2" ref-type="bibr">[64]</xref> have proposed to consider the correlation in the hydrophobicity and/or molecular weight of coevolving amino acid sites <italic>a priori</italic> to determine statistically their biological significance, and have shown that the application of these statistical filters to the number of pairs detected as coevolving reduces significantly the number of false positives. However, while this is clearly an emerging strategy in coevolution studies, here we are primarily interested in determining whether there is a statistical correlation between coevolution and stability, and therefore we do not include in the identification of coevolving pairs any statistical filters based on structural properties that directly affect stability (like hydrophobicity or molecular weight).</p><p>Finally, the sensitivity of MI analyses to the size and quality of the MSA is also a matter of concern <xref rid="pone.0017459-Buslje1" ref-type="bibr">[60]</xref>, <xref rid="pone.0017459-Brown1" ref-type="bibr">[62]</xref>, <xref rid="pone.0017459-Codoner2" ref-type="bibr">[64]</xref>, <xref rid="pone.0017459-Weil1" ref-type="bibr">[65]</xref>. We have studied the effect of different levels of sequence redundancy in the MSA, by calculating MI not only with the original data set of 348 sequences but also with a series of progressively smaller MSAs in which the highest level of identity between any two sequences was 98, 96, 94, 92, 90, 88, 86, 84, 82, 80&#x00025;. These MSAs consisted respectively of 308, 266, 241, 221, 203, 179, 165, 154, 146, 130 sequences. A threshold point at which the trend in the statistics for the total number and distribution of coevolving pairs appeared to change could be recognized in the MSA with 86&#x00025; maximal sequence identity, which consisted of only 165 sequences (<xref ref-type="supplementary-material" rid="pone.0017459.s002">Figure S2</xref>, <xref ref-type="supplementary-material" rid="pone.0017459.s008">MSA S3</xref>, Supporting Information). While throughout the manuscript we refer to the complete data set of 348 sequences, the corresponding results obtained with the data set of 165 sequences are also provided (<xref ref-type="supplementary-material" rid="pone.0017459.s003">Table S1</xref>, <xref ref-type="supplementary-material" rid="pone.0017459.s004">Table S2</xref>, <xref ref-type="supplementary-material" rid="pone.0017459.s005">Table S3</xref>, Supporting Information). Overall these analyses were fairly insensitive to the size/redundancy of the MSAs, suggesting that in the specific case of KDO8PS MI studies are not particularly affected by stochastic and/or phylogenetic bias.</p><p>Despite normalization and scaling, the SU matrix of the MSA for the KDO8PS family is contaminated by a significant level of background MI (<italic>corr</italic>&#x0200a;=&#x0200a;0.78 to the <inline-formula><inline-graphic xlink:href="pone.0017459.e007.jpg" mimetype="image"/></inline-formula> column product matrix). The <italic>Zpx</italic>, <italic>ZRes</italic> and <italic>ZNMI</italic> matrices all work well with the KDO8PS data set in reducing this background MI; as expected they are highly correlated to each other (<italic>corr</italic>(<italic>Zpx,ZRes</italic>)&#x0200a;=&#x0200a;0.90, <italic>corr</italic>(<italic>Zpx,ZNMI</italic>)&#x0200a;=&#x0200a;0.81, <italic>corr</italic>(<italic>ZNMI,ZRes</italic>)&#x0200a;=&#x0200a;0.73). Since it is not clear yet which of these formulations of MI is more accurate or appropriate for a particular study <xref rid="pone.0017459-Brown1" ref-type="bibr">[62]</xref>, we report the results obtained with each one in our analysis of coevolution in KDO8PS (<xref ref-type="table" rid="pone-0017459-t001">Tables 1</xref>, <xref ref-type="table" rid="pone-0017459-t002">2</xref> and <xref ref-type="table" rid="pone-0017459-t003">3</xref>). In this study we were not interested in determining whether there are patterns of spatial relationship among the coevolving positions, but whether there is a relationship between coevolving pairs and the stability landscape of KDO8PS described in the previous section. As an example of our approach, the number of coevolving pairs with score higher than 1 to 5 &#x003c3; over the mean of all scores in the <italic>ZRes</italic> matrix, are shown for every position in the MSA of all KDO8PSs as histograms in the insets of <xref ref-type="fig" rid="pone-0017459-g003">Figure 3</xref>. The same regions of sequence highlighted for the HMM vector of <xref ref-type="fig" rid="pone-0017459-g001">Figure 1A</xref> are shown below the baseline of the lowest inset, as horizontal orange bars. The correlation coefficients between the histogram vectors for each type of MI matrix and the HMM vector of <xref ref-type="fig" rid="pone-0017459-g001">Figure 1A</xref> are shown in <xref ref-type="table" rid="pone-0017459-t001">Table 1</xref>. These coefficients were calculated including only positions of the MSA that do not correspond to fully conserved residues, as there are no coevolving pairs between these positions. Some modest level of correlation (at best <italic>corr</italic>&#x0200a;=&#x0200a;0.30) with reasonable statistical significance (<italic>p</italic>&#x0003c;0.01) can be recognized only for the strongest signals in the <italic>ZRes</italic>, and <italic>ZNMI</italic> matrices.</p><fig id="pone-0017459-g003" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0017459.g003</object-id><label>Figure 3</label><caption><title>Mutual information in KDO8PS.</title><p>The <italic>ZRes</italic> matrix for the MSA of all KDO8PSs is shown in the upper panel. For better contrast, matrix values are displayed in the z-score range 0 to 20 with the color ramp shown in the side bar; the full range of the matrix is from &#x02212;3.9 to 245.7. Fully conserved positions appear as uniform light blue rows and columns. For each position of the MSA of all KDO8PSs, the insets below the matrix show the number of coevolving pairs with score values larger 1, 2, 3, 4, or 5 &#x003c3; over the mean of all the scores in the matrix. The regions of the structure with the highest relative entropy in the HMM vector of <xref ref-type="fig" rid="pone-0017459-g001">Figure 1A</xref> are shown as orange bars below the histograms; these are the same regions also shown as orange bars in <xref ref-type="fig" rid="pone-0017459-g001">Figures 1</xref> and <xref ref-type="fig" rid="pone-0017459-g002">2</xref>.</p></caption><graphic xlink:href="pone.0017459.g003"/></fig><table-wrap id="pone-0017459-t001" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0017459.t001</object-id><label>Table 1</label><caption><title>Correlation coefficients between the histogram vectors derived from the MI matrices and the HMM vector of <xref ref-type="fig" rid="pone-0017459-g001">Figure 1A</xref>.</title></caption><alternatives><graphic id="pone-0017459-t001-1" xlink:href="pone.0017459.t001"/><table frame="hsides" rules="groups"><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup><thead><tr><td align="left" rowspan="1" colspan="1">Threshold for coevolving pairs</td><td align="left" rowspan="1" colspan="1">1 &#x003c3;</td><td align="left" rowspan="1" colspan="1">2 &#x003c3;</td><td align="left" rowspan="1" colspan="1">3 &#x003c3;</td><td align="left" rowspan="1" colspan="1">4 &#x003c3;</td><td align="left" rowspan="1" colspan="1">5 &#x003c3;</td></tr><tr><td align="left" rowspan="1" colspan="1"/><td colspan="5" align="left" rowspan="1">Correlation to the HMM vector [<italic>p-</italic>value]</td></tr></thead><tbody><tr><td align="left" rowspan="1" colspan="1">
+<bold><italic>Zpx</italic></bold>
+<bold> matrix</bold>
+</td><td align="left" rowspan="1" colspan="1">&#x02212;0.393 [2.0e-10]</td><td align="left" rowspan="1" colspan="1">&#x02212;0.094 [0.144]</td><td align="left" rowspan="1" colspan="1">0.061 [0.346]</td><td align="left" rowspan="1" colspan="1">0.104 [0.012]</td><td align="left" rowspan="1" colspan="1">0.118 [8.0e-4]</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold><italic>ZRes</italic></bold>
+<bold> matrix</bold>
+</td><td align="left" rowspan="1" colspan="1">&#x02212;0.013 [0.838]</td><td align="left" rowspan="1" colspan="1">0.118 [0.066]</td><td align="left" rowspan="1" colspan="1">0.171 [0.007]</td><td align="left" rowspan="1" colspan="1">0.222 [4.9e-4]</td><td align="left" rowspan="1" colspan="1">0.201 [1.6e-3]</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold><italic>ZNMI</italic></bold>
+<bold> matrix</bold>
+</td><td align="left" rowspan="1" colspan="1">&#x02212;0.270 [1.9e-5]</td><td align="left" rowspan="1" colspan="1">0.104 [0.105]</td><td align="left" rowspan="1" colspan="1">0.227 [3.4e-4]</td><td align="left" rowspan="1" colspan="1">0.297 [2.3e-6]</td><td align="left" rowspan="1" colspan="1">0.300 [1.7e-6]</td></tr></tbody></table></alternatives></table-wrap><table-wrap id="pone-0017459-t002" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0017459.t002</object-id><label>Table 2</label><caption><title>Contribution to KDO8PS stability from coevolving pairs with score &#x0003e;5 &#x003c3; in the <italic>ZRes</italic> matrix of <xref ref-type="fig" rid="pone-0017459-g003">Figure&#x000a0;3</xref>.</title></caption><alternatives><graphic id="pone-0017459-t002-2" xlink:href="pone.0017459.t002"/><table frame="hsides" rules="groups"><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup><thead><tr><td align="left" rowspan="1" colspan="1">
+<italic>i,j pair</italic>
+</td><td align="left" rowspan="1" colspan="1">score</td><td align="left" rowspan="1" colspan="1">&#x00394;&#x00394;G(i&#x0002b;j)</td><td align="left" rowspan="1" colspan="1">|&#x00394;&#x00394;G(i-j)|</td><td align="left" rowspan="1" colspan="1">
+<italic>i,j pair</italic>
+</td><td align="left" rowspan="1" colspan="1">score</td><td align="left" rowspan="1" colspan="1">&#x00394;&#x00394;G(i&#x0002b;j)</td><td align="left" rowspan="1" colspan="1">|&#x00394;&#x00394;G(i-j)|</td></tr></thead><tbody><tr><td align="left" rowspan="1" colspan="1">23,179</td><td align="left" rowspan="1" colspan="1">13.464</td><td align="left" rowspan="1" colspan="1">1.473</td><td align="left" rowspan="1" colspan="1">0.866</td><td align="left" rowspan="1" colspan="1">145,169</td><td align="left" rowspan="1" colspan="1">18.448</td><td align="left" rowspan="1" colspan="1">0.481</td><td align="left" rowspan="1" colspan="1">0.299</td></tr><tr><td align="left" rowspan="1" colspan="1">23,201</td><td align="left" rowspan="1" colspan="1">16.307</td><td align="left" rowspan="1" colspan="1">1.264</td><td align="left" rowspan="1" colspan="1">0.674</td><td align="left" rowspan="1" colspan="1">
+<bold>145,193</bold>
+</td><td align="left" rowspan="1" colspan="1">
+<bold>13.953</bold>
+</td><td align="left" rowspan="1" colspan="1">
+<bold>0.380</bold>
+</td><td align="left" rowspan="1" colspan="1">
+<bold>0.399</bold>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">24,65</td><td align="left" rowspan="1" colspan="1">20.772</td><td align="left" rowspan="1" colspan="1">0.494</td><td align="left" rowspan="1" colspan="1">0.302</td><td align="left" rowspan="1" colspan="1">156,157</td><td align="left" rowspan="1" colspan="1">23.782</td><td align="left" rowspan="1" colspan="1">1.169</td><td align="left" rowspan="1" colspan="1">0.428</td></tr><tr><td align="left" rowspan="1" colspan="1">24,66</td><td align="left" rowspan="1" colspan="1">16.083</td><td align="left" rowspan="1" colspan="1">0.600</td><td align="left" rowspan="1" colspan="1">0.203</td><td align="left" rowspan="1" colspan="1">169,193</td><td align="left" rowspan="1" colspan="1">26.494</td><td align="left" rowspan="1" colspan="1">0.217</td><td align="left" rowspan="1" colspan="1">0.209</td></tr><tr><td align="left" rowspan="1" colspan="1">24,74</td><td align="left" rowspan="1" colspan="1">19.011</td><td align="left" rowspan="1" colspan="1">0.594</td><td align="left" rowspan="1" colspan="1">0.217</td><td align="left" rowspan="1" colspan="1">169,218</td><td align="left" rowspan="1" colspan="1">14.159</td><td align="left" rowspan="1" colspan="1">0.686</td><td align="left" rowspan="1" colspan="1">0.553</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>26,244</bold>
+</td><td align="left" rowspan="1" colspan="1">
+<bold>245.65</bold>
+</td><td align="left" rowspan="1" colspan="1">
+<bold>&#x02212;0.021</bold>
+</td><td align="left" rowspan="1" colspan="1">
+<bold>0.024</bold>
+</td><td align="left" rowspan="1" colspan="1">172,204</td><td align="left" rowspan="1" colspan="1">20.79</td><td align="left" rowspan="1" colspan="1">0.294</td><td align="left" rowspan="1" colspan="1">0.205</td></tr><tr><td align="left" rowspan="1" colspan="1">45,215</td><td align="left" rowspan="1" colspan="1">13.477</td><td align="left" rowspan="1" colspan="1">0.602</td><td align="left" rowspan="1" colspan="1">0.505</td><td align="left" rowspan="1" colspan="1">172,205</td><td align="left" rowspan="1" colspan="1">16.916</td><td align="left" rowspan="1" colspan="1">0.516</td><td align="left" rowspan="1" colspan="1">0.424</td></tr><tr><td align="left" rowspan="1" colspan="1">45,268</td><td align="left" rowspan="1" colspan="1">13.995</td><td align="left" rowspan="1" colspan="1">1.112</td><td align="left" rowspan="1" colspan="1">0.651</td><td align="left" rowspan="1" colspan="1">172,206</td><td align="left" rowspan="1" colspan="1">15.603</td><td align="left" rowspan="1" colspan="1">0.413</td><td align="left" rowspan="1" colspan="1">0.333</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>62,107</bold>
+</td><td align="left" rowspan="1" colspan="1">
+<bold>188.1</bold>
+</td><td align="left" rowspan="1" colspan="1">
+<bold>&#x02212;0.009</bold>
+</td><td align="left" rowspan="1" colspan="1">
+<bold>0.030</bold>
+</td><td align="left" rowspan="1" colspan="1">195,221</td><td align="left" rowspan="1" colspan="1">71.347</td><td align="left" rowspan="1" colspan="1">0.285</td><td align="left" rowspan="1" colspan="1">0.252</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>73,76</bold>
+</td><td align="left" rowspan="1" colspan="1">
+<bold>18.029</bold>
+</td><td align="left" rowspan="1" colspan="1">
+<bold>0.174</bold>
+</td><td align="left" rowspan="1" colspan="1">
+<bold>0.387</bold>
+</td><td align="left" rowspan="1" colspan="1">204,205</td><td align="left" rowspan="1" colspan="1">24.25</td><td align="left" rowspan="1" colspan="1">0.709</td><td align="left" rowspan="1" colspan="1">0.235</td></tr><tr><td align="left" rowspan="1" colspan="1">74,173</td><td align="left" rowspan="1" colspan="1">18.367</td><td align="left" rowspan="1" colspan="1">0.378</td><td align="left" rowspan="1" colspan="1">0.285</td><td align="left" rowspan="1" colspan="1">204,206</td><td align="left" rowspan="1" colspan="1">19.581</td><td align="left" rowspan="1" colspan="1">0.606</td><td align="left" rowspan="1" colspan="1">0.356</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>91,106</bold>
+</td><td align="left" rowspan="1" colspan="1">
+<bold>16.741</bold>
+</td><td align="left" rowspan="1" colspan="1">
+<bold>0.272</bold>
+</td><td align="left" rowspan="1" colspan="1">
+<bold>0.323</bold>
+</td><td align="left" rowspan="1" colspan="1">205,206</td><td align="left" rowspan="1" colspan="1">16.747</td><td align="left" rowspan="1" colspan="1">0.828</td><td align="left" rowspan="1" colspan="1">0.579</td></tr><tr><td align="left" rowspan="1" colspan="1">116,137</td><td align="left" rowspan="1" colspan="1">14.649</td><td align="left" rowspan="1" colspan="1">2.573</td><td align="left" rowspan="1" colspan="1">2.497</td><td align="left" rowspan="1" colspan="1">208,211</td><td align="left" rowspan="1" colspan="1">15.733</td><td align="left" rowspan="1" colspan="1">0.326</td><td align="left" rowspan="1" colspan="1">0.274</td></tr><tr><td align="left" rowspan="1" colspan="1">119,120</td><td align="left" rowspan="1" colspan="1">41.6</td><td align="left" rowspan="1" colspan="1">0.025</td><td align="left" rowspan="1" colspan="1">0.025</td><td align="left" rowspan="1" colspan="1">215,249</td><td align="left" rowspan="1" colspan="1">14.89</td><td align="left" rowspan="1" colspan="1">0.176</td><td align="left" rowspan="1" colspan="1">0.081</td></tr><tr><td align="left" rowspan="1" colspan="1">119,175</td><td align="left" rowspan="1" colspan="1">13.509</td><td align="left" rowspan="1" colspan="1">0.094</td><td align="left" rowspan="1" colspan="1">0.083</td><td align="left" rowspan="1" colspan="1">215,268</td><td align="left" rowspan="1" colspan="1">14.422</td><td align="left" rowspan="1" colspan="1">0.662</td><td align="left" rowspan="1" colspan="1">0.518</td></tr><tr><td align="left" rowspan="1" colspan="1">120,124</td><td align="left" rowspan="1" colspan="1">13.63</td><td align="left" rowspan="1" colspan="1">0.073</td><td align="left" rowspan="1" colspan="1">0.058</td><td align="left" rowspan="1" colspan="1">
+<bold>222,248</bold>
+</td><td align="left" rowspan="1" colspan="1">
+<bold>14.622</bold>
+</td><td align="left" rowspan="1" colspan="1">
+<bold>0.241</bold>
+</td><td align="left" rowspan="1" colspan="1">
+<bold>0.256</bold>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">133,234</td><td align="left" rowspan="1" colspan="1">114.09</td><td align="left" rowspan="1" colspan="1">0.111</td><td align="left" rowspan="1" colspan="1">0.092</td><td align="left" rowspan="1" colspan="1">227,229</td><td align="left" rowspan="1" colspan="1">14.026</td><td align="left" rowspan="1" colspan="1">1.276</td><td align="left" rowspan="1" colspan="1">0.971</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>139,213</bold>
+</td><td align="left" rowspan="1" colspan="1">
+<bold>184.35</bold>
+</td><td align="left" rowspan="1" colspan="1">
+<bold>&#x02212;0.067</bold>
+</td><td align="left" rowspan="1" colspan="1">
+<bold>0.083</bold>
+</td><td align="left" rowspan="1" colspan="1">231,268</td><td align="left" rowspan="1" colspan="1">13.469</td><td align="left" rowspan="1" colspan="1">2.913</td><td align="left" rowspan="1" colspan="1">1.800</td></tr><tr><td align="left" rowspan="1" colspan="1">141,172</td><td align="left" rowspan="1" colspan="1">17.902</td><td align="left" rowspan="1" colspan="1">0.194</td><td align="left" rowspan="1" colspan="1">0.136</td><td align="left" rowspan="1" colspan="1">240,243</td><td align="left" rowspan="1" colspan="1">15.497</td><td align="left" rowspan="1" colspan="1">0.872</td><td align="left" rowspan="1" colspan="1">0.805</td></tr><tr><td align="left" rowspan="1" colspan="1">141,204</td><td align="left" rowspan="1" colspan="1">17.453</td><td align="left" rowspan="1" colspan="1">0.388</td><td align="left" rowspan="1" colspan="1">0.120</td><td align="left" rowspan="1" colspan="1">
+<bold>248,249</bold>
+</td><td align="left" rowspan="1" colspan="1">
+<bold>45.125</bold>
+</td><td align="left" rowspan="1" colspan="1">
+<bold>0.162</bold>
+</td><td align="left" rowspan="1" colspan="1">
+<bold>0.186</bold>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">144,205</td><td align="left" rowspan="1" colspan="1">13.579</td><td align="left" rowspan="1" colspan="1">0.782</td><td align="left" rowspan="1" colspan="1">0.160</td><td align="left" rowspan="1" colspan="1">268,272</td><td align="left" rowspan="1" colspan="1">28.615</td><td align="left" rowspan="1" colspan="1">0.820</td><td align="left" rowspan="1" colspan="1">0.440</td></tr></tbody></table></alternatives><table-wrap-foot><fn id="nt101"><label/><p>&#x00394;&#x00394;G's are in kcal/mol. Rows in which |&#x00394;&#x00394;G(i-j)|&#x0003e;&#x00394;&#x00394;G(i&#x0002b;j) are shown in bold.</p></fn></table-wrap-foot></table-wrap><table-wrap id="pone-0017459-t003" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0017459.t003</object-id><label>Table 3</label><caption><title>Correlation coefficients between the vectors of MI scores for <italic>i,j</italic> pairs above a threshold &#x003c3; value and the vectors representing the average effect of those pairs on the stability of KDO8PS.</title></caption><alternatives><graphic id="pone-0017459-t003-3" xlink:href="pone.0017459.t003"/><table frame="hsides" rules="groups"><colgroup span="1"><col width="183*" align="left" span="1"/><col width="83*" align="center" span="1"/><col width="83*" align="center" span="1"/><col width="83*" align="center" span="1"/><col width="83*" align="center" span="1"/><col width="83*" align="center" span="1"/></colgroup><thead><tr><td align="left" rowspan="1" colspan="1">Threshold for coevolving pairs.</td><td align="left" rowspan="1" colspan="1">1 &#x003c3;</td><td align="left" rowspan="1" colspan="1">2 &#x003c3;</td><td align="left" rowspan="1" colspan="1">3 &#x003c3;</td><td align="left" rowspan="1" colspan="1">4 &#x003c3;</td><td align="left" rowspan="1" colspan="1">5 &#x003c3;</td></tr></thead><tbody><tr><td align="left" rowspan="1" colspan="1"/><td colspan="5" align="left" rowspan="1">
+<bold><italic>Zpx</italic></bold>
+<bold> matrix</bold>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>No. of unique coevolving pairs</bold>
+<xref ref-type="table-fn" rid="nt102">a</xref>
+</td><td align="left" rowspan="1" colspan="1">4319</td><td align="left" rowspan="1" colspan="1">1402</td><td align="left" rowspan="1" colspan="1">467</td><td align="left" rowspan="1" colspan="1">162</td><td align="left" rowspan="1" colspan="1">75</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold><italic>corr</italic></bold>
+<bold>(MI<sub>ij</sub>,&#x00394;&#x00394;G<sub>i</sub>&#x0002b;&#x00394;&#x00394;G<sub>j</sub>)</bold> [<italic>p</italic>-value]<xref ref-type="table-fn" rid="nt103">b</xref>
+</td><td align="left" rowspan="1" colspan="1">&#x02212;0.019 [0.103]</td><td align="left" rowspan="1" colspan="1">&#x02212;0.110 [1.9e-5]</td><td align="left" rowspan="1" colspan="1">&#x02212;0.205 [3.8e-6]</td><td align="left" rowspan="1" colspan="1">&#x02212;0.272 [2.3e-4]</td><td align="left" rowspan="1" colspan="1">&#x02212;0.258 [0.013]</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold><italic>corr</italic></bold>
+<bold>(MI<sub>ij</sub>,|&#x00394;&#x00394;G<sub>i</sub>&#x02212;&#x00394;&#x00394;G<sub>j</sub>|)</bold> [<italic>p</italic>-value]</td><td align="left" rowspan="1" colspan="1">&#x02212;0.082 [3.0e-8]</td><td align="left" rowspan="1" colspan="1">&#x02212;0.156 [2.0e-9]</td><td align="left" rowspan="1" colspan="1">&#x02212;0.223 [5.5e-7]</td><td align="left" rowspan="1" colspan="1">&#x02212;0.283 [1.3e-4]</td><td align="left" rowspan="1" colspan="1">&#x02212;0.260 [0.013]</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>&#x00025; of pairs with opposite effects</bold>
+</td><td align="left" rowspan="1" colspan="1">0.343</td><td align="left" rowspan="1" colspan="1">0.301</td><td align="left" rowspan="1" colspan="1">0.244</td><td align="left" rowspan="1" colspan="1">0.222</td><td align="left" rowspan="1" colspan="1">0.223</td></tr><tr><td align="left" rowspan="1" colspan="1"/><td colspan="5" align="left" rowspan="1">
+<bold><italic>ZRes</italic></bold>
+<bold> matrix</bold>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>No. of unique coevolving pairs</bold>
+</td><td align="left" rowspan="1" colspan="1">861</td><td align="left" rowspan="1" colspan="1">267</td><td align="left" rowspan="1" colspan="1">105</td><td align="left" rowspan="1" colspan="1">66</td><td align="left" rowspan="1" colspan="1">42</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold><italic>corr</italic></bold>
+<bold>(MI<sub>ij</sub>,&#x00394;&#x00394;G<sub>i</sub>&#x0002b;&#x00394;&#x00394;G<sub>j</sub>)</bold> [<italic>p</italic>-value]</td><td align="left" rowspan="1" colspan="1">&#x02212;0.116 [3.3e-4]</td><td align="left" rowspan="1" colspan="1">&#x02212;0.183 [1.3e-3]</td><td align="left" rowspan="1" colspan="1">&#x02212;0.236 [7.7e-3]</td><td align="left" rowspan="1" colspan="1">&#x02212;0.260 [0.017]</td><td align="left" rowspan="1" colspan="1">&#x02212;0.353 [0.011]</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold><italic>corr</italic></bold>
+<bold>(MI<sub>ij</sub>,|&#x00394;&#x00394;G<sub>i</sub>&#x02013;&#x00394;&#x00394;G<sub>j</sub>|)</bold> [<italic>p</italic>-value]</td><td align="left" rowspan="1" colspan="1">&#x02212;0.129 [7.1e-5]</td><td align="left" rowspan="1" colspan="1">&#x02212;0.194 [7.3e-4]</td><td align="left" rowspan="1" colspan="1">&#x02212;0.231 [9.0e-3]</td><td align="left" rowspan="1" colspan="1">&#x02212;0.240 [0.026]</td><td align="left" rowspan="1" colspan="1">&#x02212;0.288 [0.032]</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>&#x00025; of pairs with opposite effects</bold>
+</td><td align="left" rowspan="1" colspan="1">0.271</td><td align="left" rowspan="1" colspan="1">0.232</td><td align="left" rowspan="1" colspan="1">0.238</td><td align="left" rowspan="1" colspan="1">0.227</td><td align="left" rowspan="1" colspan="1">0.190</td></tr><tr><td align="left" rowspan="1" colspan="1"/><td colspan="5" align="left" rowspan="1">
+<bold><italic>ZNMI</italic></bold>
+<bold> matrix</bold>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>No. of unique coevolving pairs</bold>
+</td><td align="left" rowspan="1" colspan="1">4157</td><td align="left" rowspan="1" colspan="1">892</td><td align="left" rowspan="1" colspan="1">225</td><td align="left" rowspan="1" colspan="1">78</td><td align="left" rowspan="1" colspan="1">32</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold><italic>corr</italic></bold>
+<bold>(MI<sub>ij</sub>,&#x00394;&#x00394;G<sub>i</sub>&#x0002b;&#x00394;&#x00394;G<sub>j</sub>)</bold> [<italic>p</italic>-value]</td><td align="left" rowspan="1" colspan="1">&#x02212;0.051 [4.5e-4]</td><td align="left" rowspan="1" colspan="1">&#x02212;0.166 [3.3e-7]</td><td align="left" rowspan="1" colspan="1">&#x02212;0.242 [1.2e-4]</td><td align="left" rowspan="1" colspan="1">&#x02212;0.235 [0.019]</td><td align="left" rowspan="1" colspan="1">&#x02212;0.451 [4.8e-3]</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold><italic>corr</italic></bold>
+<bold>(MI<sub>ij</sub>,|&#x00394;&#x00394;G<sub>i</sub>&#x02212;&#x00394;&#x00394;G<sub>j</sub>|)</bold> [<italic>p</italic>-value]</td><td align="left" rowspan="1" colspan="1">&#x02212;0.105 [5.5e-12]</td><td align="left" rowspan="1" colspan="1">&#x02212;0.201 [7.1e-10]</td><td align="left" rowspan="1" colspan="1">&#x02212;0.262 [3.5e-5]</td><td align="left" rowspan="1" colspan="1">&#x02212;0.238 [0.018]</td><td align="left" rowspan="1" colspan="1">&#x02212;0.445 [5.3e-3]</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>&#x00025; of pairs with opposite effects</bold>
+</td><td align="left" rowspan="1" colspan="1">0.362</td><td align="left" rowspan="1" colspan="1">0.314</td><td align="left" rowspan="1" colspan="1">0.280</td><td align="left" rowspan="1" colspan="1">0.269</td><td align="left" rowspan="1" colspan="1">0.250</td></tr></tbody></table></alternatives><table-wrap-foot><fn id="nt102"><label>a</label><p>Since the MI matrix is symmetric the total number of pairs (as represented for example in the histograms of <xref ref-type="fig" rid="pone-0017459-g003">Figure 3</xref>) is twice that of the unique part of the matrix.</p></fn><fn id="nt103"><label>b</label><p>The <italic>null</italic> hypothesis of zero correlation was tested against the <italic>alternative</italic> hypothesis of negative correlation.</p></fn></table-wrap-foot></table-wrap><p>Since the HMM vector represents deviations from the expected background probability distribution to satisfy the demands of structure, stability and function, it is reasonable to suggest that strongly coevolving positions of KDO8PS may be associated with one or more of these demands. In order to determine the specific contribution of coevolution to stability we compared the level of MI of each pair with the average contribution to stability by that pair in the MSA of KDO8PS, as derived by applying to each sequence in the MSA the information contained in the stability matrix shown in <xref ref-type="fig" rid="pone-0017459-g002">Figure 2A</xref> (<xref ref-type="supplementary-material" rid="pone.0017459.s014">Energy Matrix S1</xref>, Supporting Information). For example, based on that matrix a proline would contribute 3.27 kcal/mol at position 31 of a sequence in the MSA, but &#x02212;1.05 kcal/mol at position 56. We were interested not only in the sum (&#x00394;&#x00394;G<italic><sub>i</sub></italic>&#x0002b;&#x00394;&#x00394;G<italic><sub>j</sub></italic>) of the stability contributions of each member of the <italic>i,j</italic> pair (as these contributions can be considered approximately additive under the assumption of no epistasis), but also in the absolute value of the difference |&#x00394;&#x00394;G<italic><sub>i</sub></italic>&#x02212;&#x00394;&#x00394;G<italic><sub>j</sub></italic>|, which depends on whether the two contributions have similar or opposite effects. Since MI is already the log of a probability, consistent with equation (1) the two magnitudes of interest are:<disp-formula><graphic xlink:href="pone.0017459.e008.jpg" mimetype="image" position="float"/><label>(5)</label></disp-formula>
+<disp-formula><graphic xlink:href="pone.0017459.e009.jpg" mimetype="image" position="float"/><label>(6)</label></disp-formula>where the average in equation (6) is over all the sequences in the MSA. As an example, these magnitudes are shown in <xref ref-type="table" rid="pone-0017459-t002">Table 2</xref> for all coevolving pairs with a score &#x0003e;5 &#x003c3; in the <italic>ZRes</italic> matrix of <xref ref-type="fig" rid="pone-0017459-g003">Figure 3</xref>. Less than 20&#x00025; of these pairs (rows in bold in <xref ref-type="table" rid="pone-0017459-t002">Table 2</xref>) have values of |&#x00394;&#x00394;G<italic><sub>i</sub></italic>&#x02212;&#x00394;&#x00394;G<italic><sub>j</sub></italic>|&#x0003e;(&#x00394;&#x00394;G<italic><sub>i</sub></italic>&#x0002b;&#x00394;&#x00394;G<italic><sub>j</sub></italic>), and thus identify positions that, on average, exert opposite effects on the stability of KDO8PS. For each type of MI matrix, the correlations between the score vector (for example, the score columns in <xref ref-type="table" rid="pone-0017459-t002">Table 2</xref>) and the (&#x00394;&#x00394;G<italic><sub>i</sub></italic>&#x0002b;&#x00394;&#x00394;G<italic><sub>j</sub></italic>) and |&#x00394;&#x00394;G<italic><sub>i</sub></italic>&#x02212;&#x00394;&#x00394;G<italic><sub>j</sub></italic>| vectors are shown in <xref ref-type="table" rid="pone-0017459-t003">Table 3</xref>. In general, it can be seen that, as progressively higher &#x003c3; thresholds are chosen, the score vectors become more clearly anti-correlated to the (&#x00394;&#x00394;G<italic><sub>i</sub></italic>&#x0002b;&#x00394;&#x00394;G<italic><sub>j</sub></italic>) vector: this trend is consistent with equation (5), because we expect that pairs whose components raise the &#x00394;&#x00394;G are less likely to occur. The score vectors are also anti-correlated to the |&#x00394;&#x00394;G<italic><sub>i</sub></italic>&#x02212;&#x00394;&#x00394;G<italic><sub>j</sub></italic>| vector, suggesting that on average coevolving pairs have a preference for positions whose individual effects on stability are similar. The trends are similar in the various matrices and <italic>p</italic>-values are acceptable, with <italic>ZRes</italic> and <italic>ZNMI</italic> yielding the largest values of anti-correlation (<xref ref-type="table" rid="pone-0017459-t003">Table 3</xref>).</p><p>These results can be interpreted in the light of current theories of coevolution. According to one hypothesis, a reason for coevolving pairs is to suppress a decrease in stability or function produced by a mutation at one site with an increase in stability or function provided by a mutation in a residue near the site of the first mutation <xref rid="pone.0017459-Yanofsky1" ref-type="bibr">[66]</xref>, <xref rid="pone.0017459-Poon1" ref-type="bibr">[67]</xref>, <xref rid="pone.0017459-Poon2" ref-type="bibr">[68]</xref>. This tenet is challenged by the observation that most suppressor mutations are not close in space to the initial mutations <xref rid="pone.0017459-Klig1" ref-type="bibr">[69]</xref>, while coevolving sites are most often spatially clustered <xref rid="pone.0017459-Gloor1" ref-type="bibr">[53]</xref>, <xref rid="pone.0017459-Martin1" ref-type="bibr">[54]</xref>, <xref rid="pone.0017459-Poon2" ref-type="bibr">[68]</xref>, <xref rid="pone.0017459-Tillier1" ref-type="bibr">[70]</xref>. Directed evolution studies also suggest that epistatic paths can be bypassed (and they certainly are in laboratory evolution), because there are multiple sequences that satisfy a given fitness goal, and there are many different paths to these sequences <xref rid="pone.0017459-Tracewell1" ref-type="bibr">[34]</xref>, <xref rid="pone.0017459-Romero1" ref-type="bibr">[71]</xref>, <xref rid="pone.0017459-Bloom2" ref-type="bibr">[72]</xref>.</p><p>According to an alternative model for coevolution, &#x0201c;covarions&#x0201d; arise when both the original residue and the mutated residue are compatible with function, but the spectrum of residues possible at other positions in the protein is altered by the mutation <xref rid="pone.0017459-Fitch1" ref-type="bibr">[73]</xref>. In this context one might expect that most single mutations that finally become stabilized in coevolving pairs are neutral in the context of the protein in which they occur, but become beneficial (even at a much later time) in the presence of the partner in the pair <xref rid="pone.0017459-Gloor2" ref-type="bibr">[63]</xref>. The data in <xref ref-type="table" rid="pone-0017459-t003">Table 3</xref> suggest that both mechanisms were operational in the evolution of KDO8PS. Approximately 1/4 of all strongly coevolving pairs (for example those shown in bold in <xref ref-type="table" rid="pone-0017459-t002">Table 2</xref>; see also <xref ref-type="table" rid="pone-0017459-t003">Table 3</xref>) may have originated from cycles of mutation and suppression that affected stability. Other pairs, for which both values of (&#x00394;&#x00394;G<italic><sub>i</sub></italic>&#x0002b;&#x00394;&#x00394;G<italic><sub>j</sub></italic>) and |&#x00394;&#x00394;G<italic><sub>i</sub></italic>&#x02212;&#x00394;&#x00394;G<italic><sub>j</sub></italic>| are small, are best explained by a succession of neutral or nearly neutral covarions.</p></sec></sec><sec id="s3"><title>Discussion</title><p>In the metal dependent forms of KDO8PS the metal is not directly involved in an activation process, but together with its ligands stabilizes the position of the reactants that favors the condensation reaction <xref rid="pone.0017459-Kona1" ref-type="bibr">[7]</xref>, <xref rid="pone.0017459-Tao1" ref-type="bibr">[13]</xref>, <xref rid="pone.0017459-Tao2" ref-type="bibr">[14]</xref>. In the non-metal forms of the enzyme, this role is performed by an asparagine side chain that replaces the combination cysteine &#x0002b; metal <xref rid="pone.0017459-Tao1" ref-type="bibr">[13]</xref>, <xref rid="pone.0017459-Tao2" ref-type="bibr">[14]</xref>. In both forms of the enzyme additional stabilization of the reactants is provided by variations in the CysAspGlyPro motif of the loop that contains the metal binding aspartic acid <xref rid="pone.0017459-Cochrane1" ref-type="bibr">[6]</xref>, <xref rid="pone.0017459-Allison1" ref-type="bibr">[12]</xref>. Outside these demands placed on the structure by the need to catalyze a specific reaction, the factors (like protein stability) that contributed to the evolution of hundreds of different forms of KDO8PS are not well understood. The starting point of our study was the derivation of the stability landscape of KDO8PS (<xref ref-type="fig" rid="pone-0017459-g002">Figure 2A</xref>) by calculating the &#x00394;&#x00394;G changes associated with introducing any one of the 20 possible amino acids at each sequence position of the structure of <italic>Nm.</italic> KDO8PS (taken here as the reference structure for this class of proteins). Superposition on this landscape, of the actual amino acid frequencies at each position in the two sub-families of KDO8PSs confirms the intuitive expectation that in most positions of high relative entropy (<xref ref-type="fig" rid="pone-0017459-g001">Figure 1A</xref>, 1<sup>st</sup> inset), the amino acids most often used are those that do not decrease stability (<xref ref-type="fig" rid="pone-0017459-g002">Figure 2B</xref>, 1<sup>st</sup> inset). Furthermore, the plane regions of the landscape tend to be large, such that random drifts of sequence have a high chance of producing only small gains or losses of stability, which can be easily offset by changes in other regions. This feature of the landscape may be part of the physical basis for the threshold robustness (tolerance) to mutations that was observed in other proteins <xref rid="pone.0017459-Bershtein1" ref-type="bibr">[74]</xref>, <xref rid="pone.0017459-Bershtein2" ref-type="bibr">[75]</xref>.</p><p>Another important factor in constraining sequence variation is the need to retain a common core structure, while possibly adapting to specific bacterial environments. Ultimately, the preservation of structure is related to the preservation of function because small changes in atom distances in the active site (produced by overall changes of structure) can have effects on the activation energies as dramatic as those produced by very localized mutations in the active sites <xref rid="pone.0017459-Sigala1" ref-type="bibr">[76]</xref>. Both sequence conservation and coevolution were involved in the preservation of the structure of KDO8PS, but coevolution had a marginal role (<xref ref-type="table" rid="pone-0017459-t001">Table 1</xref>). This result can be rationalized by observing that if most mutations shifted a position in the sequence away from a clearly defined valley in the stability landscape, then it would be more likely for a given amino acid at that position to become fully conserved. Conversely, if most mutations moved a position around between regions of similar height, a large number of different amino acids at other positions might easily compensate the small &#x00394;&#x00394;G changes of the initial mutation, and a clear pattern of coevolution would be less likely to emerge.</p><p>In our study we have used various formulations of MI to identify correlated positions, but other methods may provide different information on the potential cross-talks between conserved and correlated positions, and be better suited for different tasks <xref rid="pone.0017459-Fodor1" ref-type="bibr">[44]</xref>. For example, using the Observed Minus Expected Squared (OMES) covariance method <xref rid="pone.0017459-Kass1" ref-type="bibr">[43]</xref> Kowarsch <italic>et al.</italic> found a statistically significant association between correlated positions and disease-causing mutations <xref rid="pone.0017459-Kowarsch1" ref-type="bibr">[77]</xref>. The association was more pronounced for the exposed accessible sites of the proteins studied, which are expected to be more involved with function, rather than for the structural cores, which are more likely to be involved in stability. Thus, altogether, despite the significantly different algorithm used, the conclusions of Kowarsch's study are compatible and complementary to ours in assessing the contributions of correlated positions to the stability of proteins.</p><p>Derivation of the stability landscape is still at an early stage of refinement and its utility as a tool to understand the evolution of amino acid sequences in protein families needs additional confirmations. Current calculations were carried out with the FoldX algorithm, which uses a full atomic description of the structure of proteins and whose different energy terms have been weighted using empirical data obtained from protein engineering experiments <xref rid="pone.0017459-Guerois1" ref-type="bibr">[22]</xref>, <xref rid="pone.0017459-Schymkowitz2" ref-type="bibr">[29]</xref>, <xref rid="pone.0017459-Mendes1" ref-type="bibr">[78]</xref>. While this or similar algorithms involving empirical functions provide a relatively fast estimation of the importance of the interactions contributing to the stability of proteins and protein complexes, the calculated &#x00394;&#x00394;G changes are unlikely to be on a correct absolute scale <xref rid="pone.0017459-Tokuriki2" ref-type="bibr">[30]</xref> and are certainly not as accurate as those derived from more sophisticated approaches like, for example, Free Energy Perturbation (FEP <xref rid="pone.0017459-Zwanzig1" ref-type="bibr">[79]</xref>); unfortunately, FEP is still computationally too expensive and time consuming, to be compatible with full sequence scans. Two recent comparisons of various methods (including CC/PBSA <xref rid="pone.0017459-Benedix1" ref-type="bibr">[80]</xref>, Rosetta <xref rid="pone.0017459-Kortemme1" ref-type="bibr">[81]</xref>, EGAD <xref rid="pone.0017459-Pokala1" ref-type="bibr">[82]</xref>, I-Mutant2.0 <xref rid="pone.0017459-Capriotti1" ref-type="bibr">[83]</xref>, I-Mutant3.0 <xref rid="pone.0017459-Capriotti2" ref-type="bibr">[84]</xref>, CUPSAT <xref rid="pone.0017459-Parthiban1" ref-type="bibr">[85]</xref>, MultiMutate <xref rid="pone.0017459-Deutsch1" ref-type="bibr">[86]</xref>, Dmutant <xref rid="pone.0017459-Zhou1" ref-type="bibr">[87]</xref>, Hunter <xref rid="pone.0017459-Potapov1" ref-type="bibr">[31]</xref>, and FoldX) designed to predict the &#x00394;&#x00394;G changes associated with mutations, ranked FoldX among the overall best performing ones <xref rid="pone.0017459-Potapov1" ref-type="bibr">[31]</xref>, <xref rid="pone.0017459-Khan1" ref-type="bibr">[32]</xref>. However, while all the methods showed a correct trend in their predictions, they failed to provide precise values, with the best predictors being only moderately (60&#x00025;) accurate.</p><p>All these considerations point to the conclusion that significantly better tools are needed for a quantitative analysis of mutations by computational means. However, regardless of whether further improvements are easily achievable in calculating the stability landscape of proteins, an aim of this study is to stress how such landscape can be an important tool to integrate structural data with information theory to understand the evolution of proteins. For example, it should be noted that HMM profiles would be quite different if the information content of the distribution <italic>P</italic>
+<sub>i</sub> at the <italic>i</italic>-th position of the profile was calculated with respect to the expected frequency of different amino acids as derived from the values of the stability matrix at that position, rather than from the background frequencies of different amino acids in all known proteins, or just in the family under consideration. In that case we might expect that the positions with high information content would be those in which the observed sequence deviates significantly (perhaps for functional reasons) from the stability constraints associated with a certain structure. Similar considerations might apply also to the calculation of mutual information, where the expected frequencies derived from the stability profile could be used as the probability mass function of each variable. This approach is complementary to that adopted by Codoner <italic>et al.</italic>
+<xref rid="pone.0017459-Codoner2" ref-type="bibr">[64]</xref> to filter out (based on the hydrophobicity and molecular weight of residues at specific positions) potential false positives in the ensemble of coevolving pairs inferred from MI analyses. For example, if a model based on the size of side chains is adopted for the distribution of aa's at any given position, we can see how the <italic>largest</italic> contribution to MI between any two positions will originate from deviations (like the match of one large and one small side chain in a defined region of space) of the observed joint distribution with respect to the model. The interpretation of MI as the Kullback-Leibler divergence <xref rid="pone.0017459-Kullback1" ref-type="bibr">[88]</xref>, <xref rid="pone.0017459-Kullback2" ref-type="bibr">[89]</xref>, <xref rid="pone.0017459-Kullback3" ref-type="bibr">[90]</xref> of the observed <italic>versus</italic> the model joint distribution of two variables becomes particularly meaningful in this context.</p><p>While our study was primarily aimed at studying the effect of coevolving residues on the overall stability of KDO8PS, indirectly it provided important information on the functional role of specific pairs. For example, residues 23&#x02013;26 of <italic>Nm.</italic> KDO8PS listed at the top of <xref ref-type="table" rid="pone-0017459-t002">Table 2</xref> represent the sequence AsnValLeuGlu, with Asn being the key residue the replaces the metal binding Cys in all non-metal KDO8PS's. Position 26 appears to coevolve with position 244, which immediately precedes the conserved motif CysAspGlyPro (residues 246&#x02013;249 in <italic>Nm.</italic> KDO8PS), whose functional role in KDO8PS was already noted <xref rid="pone.0017459-Allison1" ref-type="bibr">[12]</xref>. Coevolution of position 24 with positions 65,66, and 74 is explained by the fact that residue 24 is in van der Waals contact with 66 and within 10 &#x000c5; of 65 and 74. Other pairs, like position 23 (Cys or Asn in all KDO8PS) with positions 179 and 201, are of interest but at the moment still unexplained. It is also worth noting that, besides its relevance for the coevolution analysis, the stability matrix of <italic>Nm.</italic> KDO8PS (<xref ref-type="supplementary-material" rid="pone.0017459.s014">Energy Matrix S1</xref>, Supporting Information) provides the platform for designing new mutations of KDO8PS that may be useful to stabilize or destabilize specific regions of the enzyme.</p><p>Finally, it is legitimate to ask whether the conclusions about the role of coevolving residues in the thermodynamic stability of KDO8PS can be extended to other proteins. First, the analysis appears to be fairly insensitive to the choice of the reference sequence in the MSA. In fact, we obtained very similar results using the X-ray structure of KDO8PS from the hyperthermophile <italic>Aquifex aeolicus</italic> (PDB entry 1FWW) as the reference structure for the calculation of the stability matrix (not shown). Second, preliminary application of the method to two other structurally unrelated protein families (the Atp12p chaperones involved in F<sub>1</sub>-ATPase assembly <xref rid="pone.0017459-Ludlam1" ref-type="bibr">[91]</xref>, and B1 type metallo &#x003b2;-lactamases <xref rid="pone.0017459-Bebrone1" ref-type="bibr">[92]</xref>) gave results that are consistent with those obtained with KDO8PS (<xref ref-type="supplementary-material" rid="pone.0017459.s009">Table S4</xref>, <xref ref-type="supplementary-material" rid="pone.0017459.s010">Table S5</xref>, Supporting Information). While these observations are very encouraging, clearly more testing with a larger set of different protein families will be necessary before any general principles about the role of coevolution in protein stability can be derived from the application of the tools described in this study.</p></sec><sec sec-type="methods" id="s4"><title>Methods</title><sec id="s4a"><title>Multiple Sequence Alignments</title><p>Multiple sequence alignments (MSAs) of 348 sequences (175 metallo and 173 non-metallo KDO8PSs) were calculated independently with T-Coffee <xref rid="pone.0017459-Notredame1" ref-type="bibr">[93]</xref>, Muscle <xref rid="pone.0017459-Edgar1" ref-type="bibr">[94]</xref>, and Mafft <xref rid="pone.0017459-Katoh1" ref-type="bibr">[95]</xref> and then merged together with T-Coffee (<xref ref-type="supplementary-material" rid="pone.0017459.s006">MSA S1</xref>, Supporting Information). For clarity and ease of comparison with the X-ray structure, the sequence numbering of <italic>Nm.</italic> KDO8PS was used as reference for the entire family, and only positions in the MSA with a corresponding residue in <italic>Nm.</italic> KDO8PS were finally retained (<xref ref-type="supplementary-material" rid="pone.0017459.s007">MSA S2</xref>, Supporting Information). Hidden Markov Models (HMMs) <xref rid="pone.0017459-Eddy1" ref-type="bibr">[25]</xref> were calculated with the HMMER 3.0 package <xref rid="pone.0017459-Eddy2" ref-type="bibr">[96]</xref>.</p></sec><sec id="s4b"><title>Molecular Dynamics Simulations</title><p>A complete three-dimensional model of <italic>Nm.</italic> KDO8PS was built with Prime 2.1 (Schrodinger, LLC) using primarily the X-ray structure of <italic>Nm.</italic> KDO8PS (PDB 2QKF) as template, and that of <italic>Aa.</italic> KDO8PS (PDB 1FWW) only to build the residues missing in the <italic>Nm.</italic> structure. The ensemble for the MD simulation was constructed with Desmond (D.E. Shaw Research) <xref rid="pone.0017459-Bowers1" ref-type="bibr">[97]</xref> by solvating the enzyme with SPC water <xref rid="pone.0017459-Berendsen1" ref-type="bibr">[98]</xref> inside an orthorhombic box of 87.7, 110.0, 105.4 &#x000c5;: a minimum distance of 12 &#x000c5; was left between any protein atom and the edge of the box. The final ensemble contained a tetramer of <italic>Nm.</italic> KDO8PS, approximately 26,000 solvent molecules, 72 Na and 72 Cl ions in the solvent regions to neutralize charges on the proteins and to achieve a final salt concentration of 150 mM. Prior to additional steps the ensemble was subjected to energy minimization under periodic boundaries condition with a totals of 2,000 iterations first with the steepest descent (SD) method until a gradient threshold of 25 kcal/mol/&#x000c5; was achieved, and then with the LBFGS method <xref rid="pone.0017459-Byrd1" ref-type="bibr">[99]</xref> until a convergence threshold of 1 kcal/mol/&#x000c5; was met. The 2005 release of the OPLS-AA force-field <xref rid="pone.0017459-Jorgensen1" ref-type="bibr">[100]</xref> was used in this and all subsequent calculations. Short range Coulombic interactions were calculated with a cutoff radius of 9.0 &#x000c5;, while long range interactions were calculated with the smooth particle mesh Ewald method <xref rid="pone.0017459-Essmann1" ref-type="bibr">[101]</xref> using an Ewald tolerance of 1e<sup>&#x02212;9</sup>. A 12 nanoseconds (ns) MD simulation of the solvated tetrameric <italic>Nm.</italic> KDO8PS was carried out with Desmond in the NPT ensemble at 300 K. For this purpose the Nose-Hoover thermostat method <xref rid="pone.0017459-Evans1" ref-type="bibr">[102]</xref> with a relaxation time of 1.0 picoseconds (ps), and the Martyna-Tobias-Klein barostat method <xref rid="pone.0017459-Martyna1" ref-type="bibr">[103]</xref> with isotropic coupling of the cell along all three axes to a reference pressure of 1.01325 atm and a relaxation time of 2 ps were used. Integration was carried out with the RESPA integrator <xref rid="pone.0017459-Tuckerman1" ref-type="bibr">[104]</xref> using time steps of 2.0 fentomseconds (fs), 2.0 fs, and 6.0 fs for the bonded, van der Waals and short-range, and long-range electrostatic interactions. SHAKE constraints <xref rid="pone.0017459-Ryckaert1" ref-type="bibr">[105]</xref> were imposed on all the heavy-atom-hydrogen covalent bonds. Coulombic interactions were calculated as for the minimization protocol. Coordinates were saved every 4.8 ps. Before the 12 ns productive run of the simulation, the ensemble was relaxed using the following protocol: 1) 12 ps in the NVT ensemble at 10 K with a fast relaxation constant and non-hydrogen solute atoms restrained; 2) 12 ps in the NPT ensemble at 10 K and 1 atm, with a fast temperature relaxation constant, a slow pressure relaxation constant, and non-hydrogen solute atoms restrained; 3) 24 ps at 300 K and 1 atm with other conditions as in step 2; 4) 24 ps at 300 K and 1 atm with a fast temperature relaxation constant and a fast pressure relaxation constant.</p><p>Conformational clustering based on the cross-RMSDs between the frames contained in the 6&#x02013;12 ns interval was carried out with the program X-Cluster (Schrodinger, LLC).</p></sec><sec id="s4c"><title>FoldX calculations of protein stability</title><p>&#x00394;&#x00394;G changes associated with introducing any one of the 20 possible amino acids at each position in all four monomers of a tetramer (the biological unit) of <italic>Nm.</italic> KDO8PS were calculated with FoldX v3.0b4 <xref rid="pone.0017459-Guerois1" ref-type="bibr">[22]</xref>, <xref rid="pone.0017459-Schymkowitz2" ref-type="bibr">[29]</xref> following the procedure described in <xref rid="pone.0017459-Kiel1" ref-type="bibr">[106]</xref>. First, each of the representative structures of <italic>Nm.</italic> KDO8PS derived from the MD simulation was optimized using the repair function of FoldX. Then, structures corresponding to each of the point mutants were generated and their energies calculated using the FoldX energy function. Finally, the energy of the optimized wild-type structure was subtracted from that of the mutant. Each calculation was carried out in duplicate to ensure convergence: in this case the FoldX algorithm repeated the same mutations twice changing the rotamer set used and the order of moves such that alternative solutions could be explored.</p></sec><sec id="s4d"><title>Mutual Information Analysis</title><p>Correlation coefficients were calculated with the Statistics Toolbox of Matlab 7.10 (The MathWorks&#x02122;). Mutual Information (MI) and Symmetric Uncertainty (SU) were calculated with the Information Theory Toolbox v.1.0 for Matlab developed by Joaquin Goni (Dept. of Physics and Applied Mathematics, University of Navarra, Pamplona, Spain), and available for download at Matlabcentral (<ext-link ext-link-type="uri" xlink:href="http://www.mathworks.com/matlabcentral">www.mathworks.com/matlabcentral</ext-link>). Z-scored cross-product positional MI, <italic>Zpx</italic>
+<xref rid="pone.0017459-Gloor2" ref-type="bibr">[63]</xref>, product based Z-scored residual MI, <italic>ZRes</italic>
+<xref rid="pone.0017459-Little1" ref-type="bibr">[61]</xref>, Z-scored-product normalized MI, <italic>ZNMI</italic>
+<xref rid="pone.0017459-Brown1" ref-type="bibr">[62]</xref> were implemented according to the published algorithms as Matlab programs. All the data sets and Matlab programs required to reproduce the results of the study are available from the authors upon request. Figures were generated with Matlab 7.10 and Pymol 1.2r3 (Schrodinger, LLC).</p></sec></sec><sec sec-type="supplementary-material" id="s5"><title>Supporting Information</title><supplementary-material content-type="local-data" id="pone.0017459.s001"><label>Figure S1</label><caption><p>
+<bold>Derivation of the stability landscape of </bold>
+<bold><italic>Nm.</italic></bold>
+<bold> KDO8PS.</bold> A. MD simulation of tetrameric <italic>Nm.</italic> KDO8PS at 300K. The C&#x003b1; root mean square deviation, C&#x003b1;-RMSD, from the structure at time <italic>t</italic>&#x0200a;=&#x0200a;0 is shown in the upper trace colored in blue (0&#x02013;6 ns) and red (6&#x02013;12 ns). The fluctuations around the average structure (C&#x003b1; root mean square fluctuation, C&#x003b1;-RMSF) that occur during the 6&#x02013;12 ns part of the simulation are shown in the lower green trace, and reflect the degree of mobility in the solution structure. B. &#x00394;&#x00394;G changes associated with mutating every amino acid of all four subunits of <italic>Nm.</italic> KDO8PS to all 20 possible amino acids (a total of 5600 mutations in each subunit) were calculated in duplicate for each of the three main conformers (<xref ref-type="supplementary-material" rid="pone.0017459.s011">PDB S1</xref>, <xref ref-type="supplementary-material" rid="pone.0017459.s012">PDB S2</xref>, <xref ref-type="supplementary-material" rid="pone.0017459.s013">PDB S3</xref>) observed in the 6&#x02013;12 ns part of the MD simulation. Values derived from these three representative configurations were then merged (magenta trace; see also <xref ref-type="supplementary-material" rid="pone.0017459.s014">Energy Matrix S1</xref>) according to their contribution (relative ratio of 58&#x02236;24&#x02236;18 for <xref ref-type="supplementary-material" rid="pone.0017459.s011">PDB S1</xref>&#x02236;<xref ref-type="supplementary-material" rid="pone.0017459.s012">PDB S2</xref>&#x02236;<xref ref-type="supplementary-material" rid="pone.0017459.s013">PDB S3</xref>) to the solution ensemble. Standard deviations of the &#x00394;&#x00394;G values are shown as a black trace.</p><p>(TIF)</p></caption><media xlink:href="pone.0017459.s001.tif"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0017459.s002"><label>Figure S2</label><caption><p>
+<bold>Effect of redundancy in the MSA of KDO8PSs on the identification of coevolving pairs.</bold> A. MI with <italic>ZRes</italic> scoring was calculated for the original data set of 348 sequences (maximum 99&#x00025; identity between any two sequences) and for a series of smaller MSAs in which the highest level of identity between any two sequences was 98, 96, 94, 92, 90, 88, 86, 84, 82, 80&#x00025;. The total number of coevolving positions (left panel) or unique coevolving pairs (right panel) is shown for different &#x003c3; levels in the MI matrix. B. The level of contrast in the MI matrix is expressed as the ratio between the number of coevolving positions (left panel) or unique coevolving pairs (right panel) at 5 and 1 &#x003c3;, respectively.</p><p>(TIF)</p></caption><media xlink:href="pone.0017459.s002.tif"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0017459.s003"><label>Table S1</label><caption><p>Correlation coefficients between the histogram vectors derived from the MI matrices and the HMM vector of a MSA of 165 KDO8PS sequences (<xref ref-type="supplementary-material" rid="pone.0017459.s008">MSA S3</xref>) in which the highest identity allowed between any two sequences is 86&#x00025;.</p><p>(DOC)</p></caption><media xlink:href="pone.0017459.s003.doc"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0017459.s004"><label>Table S2</label><caption><p>Contribution to KDO8PS stability from coevolving pairs with score &#x0003e;5 &#x003c3; in the <italic>ZRes</italic> matrix of a MSA of 165 KDO8PS sequences (<xref ref-type="supplementary-material" rid="pone.0017459.s008">MSA S3</xref>) in which the highest identity allowed between any two sequences is 86&#x00025;. &#x00394;&#x00394;G's are in kcal/mol. Rows in which |&#x00394;&#x00394;G(i&#x02212;j)|&#x0003e;&#x00394;&#x00394;G(i&#x0002b;j) are shown in bold.</p><p>(DOC)</p></caption><media xlink:href="pone.0017459.s004.doc"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0017459.s005"><label>Table S3</label><caption><p>Correlation coefficients between the vectors of MI scores for <italic>i,j</italic> pairs above a threshold &#x003c3; value and the vectors representing the average effect of those pairs on the stability of KDO8PS, based on a MSA of 165 KDO8PS sequences (<xref ref-type="supplementary-material" rid="pone.0017459.s008">MSA S3</xref>) in which the highest identity allowed between any two sequences is 86&#x00025;.</p><p>(DOC)</p></caption><media xlink:href="pone.0017459.s005.doc"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0017459.s006"><label>MSA S1</label><caption><p>MSA in fasta format of all KDO8P synthases.</p><p>(FASTA)</p></caption><media xlink:href="pone.0017459.s006.fasta"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0017459.s007"><label>MSA S2</label><caption><p>MSA in fasta format of all KDO8P synthases with only the positions corresponding to the sequence of <italic>Nm.</italic> KDO8PS (Uniref entry 9JZ55) retained.</p><p>(FASTA)</p></caption><media xlink:href="pone.0017459.s007.fasta"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0017459.s008"><label>MSA S3</label><caption><p>MSA in fasta format of KDO8P synthases with no more than 86&#x00025; identity between any two sequences. Only the positions corresponding to the sequence of <italic>Nm.</italic> KDO8PS (Uniref entry 9JZ55) were retained.</p><p>(FASTA)</p></caption><media xlink:href="pone.0017459.s008.fasta"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0017459.s009"><label>Table S4</label><caption><p>Correlation coefficients between the vectors of MI scores (based on a MSA of 249 sequences) for <italic>i,j</italic> pairs above a threshold &#x003c3; value and the vectors representing the average effect of those pairs on the stability of Atp12p.</p><p>(DOC)</p></caption><media xlink:href="pone.0017459.s009.doc"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0017459.s010"><label>Table S5</label><caption><p>Correlation coefficients between the vectors of MI scores (based on a MSA of 145 sequences) for <italic>i,j</italic> pairs above a threshold &#x003c3; value and the vectors representing the average effect of those pairs on the stability of B1 type metallo &#x003b2;-lactamases.</p><p>(DOC)</p></caption><media xlink:href="pone.0017459.s010.doc"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0017459.s011"><label>PDB S1</label><caption><p>Atomic coordinates in pdb format for the structure of <italic>Nm.</italic> KDO8PS which, based on a clustering procedure, is the most representative conformer of all the states sampled during the 6&#x02013;12 ns part of the MD run shown in <xref ref-type="supplementary-material" rid="pone.0017459.s001">Figure S1</xref>.</p><p>(PDB)</p></caption><media xlink:href="pone.0017459.s011.pdb"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0017459.s012"><label>PDB S2</label><caption><p>Atomic coordinates in pdb format for the structure of <italic>Nm.</italic> KDO8PS which, based on a clustering procedure, is the 2<sup>nd</sup> most representative conformer of all the states sampled during the 6&#x02013;12 ns part of the MD run shown in <xref ref-type="supplementary-material" rid="pone.0017459.s001">Figure S1</xref>.</p><p>(PDB)</p></caption><media xlink:href="pone.0017459.s012.pdb"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0017459.s013"><label>PDB S3</label><caption><p>Atomic coordinates in pdb format for the structure of <italic>Nm.</italic> KDO8PS which, based on a clustering procedure, is the 3<sup>rd</sup> most representative conformer of all the states sampled during the 6&#x02013;12 ns part of the MD run shown in <xref ref-type="supplementary-material" rid="pone.0017459.s001">Figure S1</xref>.</p><p>(PDB)</p></caption><media xlink:href="pone.0017459.s013.pdb"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0017459.s014"><label>Energy Matrix S1</label><caption><p>FoldX energy matrix. The rows (1&#x02013;280, top to bottom) of the matrix correspond to the amino acid sequence of <italic>Nm.</italic> KDO8PS. The columns (1&#x02013;20, left to right) of the matrix correspond to the 20 common amino acids in the following order: G A L V I P R T S C M K E Q D N W Y F H. &#x00394;&#x00394;G values are in kcal/mol.</p><p>(TXT)</p></caption><media xlink:href="pone.0017459.s014.txt"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material></sec></body><back><fn-group><fn fn-type="COI-statement"><p><bold>Competing Interests: </bold>The authors have declared that no competing interests exist.</p></fn><fn fn-type="financial-disclosure"><p><bold>Funding: </bold>This research was supported by U.S. Public Health Service Grants GM41857 to SHA, GM69840 to DLG, and by a Wayne State University Research Enhancement Program in Computational Biology Grant to DLG. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</p></fn></fn-group><ref-list><title>References</title><ref id="pone.0017459-Raetz1"><label>1</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Raetz</surname><given-names>CR</given-names></name><name><surname>Whitfield</surname><given-names>C</given-names></name></person-group>
+<year>2002</year>
+<article-title>Lipopolysaccharide endotoxins.</article-title>
+<source>Annu Rev Biochem</source>
+<volume>71</volume>
+<fpage>635</fpage>
+<lpage>700</lpage>
+<pub-id pub-id-type="pmid">12045108</pub-id></element-citation></ref><ref id="pone.0017459-Duewel1"><label>2</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Duewel</surname><given-names>HS</given-names></name><name><surname>Woodard</surname><given-names>RW</given-names></name></person-group>
+<year>2000</year>
+<article-title>A metal bridge between two enzyme families. 3-deoxy-D-manno-octulosonate 8-phosphate synthase from <italic>Aquifex aeolicus</italic> requires a divalent metal for activity.</article-title>
+<source>J Biol Chem</source>
+<volume>275</volume>
+<fpage>22824</fpage>
+<lpage>22831</lpage>
+<pub-id pub-id-type="pmid">10811802</pub-id></element-citation></ref><ref id="pone.0017459-Wagner1"><label>3</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Wagner</surname><given-names>T</given-names></name><name><surname>Kretsinger</surname><given-names>RH</given-names></name><name><surname>Bauerle</surname><given-names>R</given-names></name><name><surname>Tolbert</surname><given-names>WD</given-names></name></person-group>
+<year>2000</year>
+<article-title>3-Deoxy-d-manno-octulosonate-8-phosphate Synthase from Escherichia coli. Model of Binding of Phosphoenolpyruvate and d-arabinose-5- phosphate.</article-title>
+<source>J Mol Biol</source>
+<volume>301</volume>
+<fpage>233</fpage>
+<lpage>238</lpage>
+<pub-id pub-id-type="pmid">10926505</pub-id></element-citation></ref><ref id="pone.0017459-Radaev1"><label>4</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Radaev</surname><given-names>S</given-names></name><name><surname>Dastidar</surname><given-names>P</given-names></name><name><surname>Patel</surname><given-names>M</given-names></name><name><surname>Woodard</surname><given-names>RW</given-names></name><name><surname>Gatti</surname><given-names>DL</given-names></name></person-group>
+<year>2000</year>
+<article-title>Structure and mechanism of 3-deoxy-D-manno-octulosonate 8-phosphate synthase.</article-title>
+<source>J Biol Chem</source>
+<volume>275</volume>
+<fpage>9476</fpage>
+<lpage>9484</lpage>
+<pub-id pub-id-type="pmid">10734095</pub-id></element-citation></ref><ref id="pone.0017459-Duewel2"><label>5</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Duewel</surname><given-names>HS</given-names></name><name><surname>Radaev</surname><given-names>S</given-names></name><name><surname>Wang</surname><given-names>J</given-names></name><name><surname>Woodard</surname><given-names>RW</given-names></name><name><surname>Gatti</surname><given-names>DL</given-names></name></person-group>
+<year>2001</year>
+<article-title>Substrate and Metal Complexes of 3-Deoxy-D-manno-octulosonate 8- Phosphate Synthase from Aquifex aeolicus at 1.9A Resolution: Implications for the Condensation Mechanism.</article-title>
+<source>J Biol Chem</source>
+<volume>276</volume>
+<fpage>8393</fpage>
+<lpage>8402</lpage>
+<pub-id pub-id-type="pmid">11115499</pub-id></element-citation></ref><ref id="pone.0017459-Cochrane1"><label>6</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Cochrane</surname><given-names>FC</given-names></name><name><surname>Cookson</surname><given-names>TV</given-names></name><name><surname>Jameson</surname><given-names>GB</given-names></name><name><surname>Parker</surname><given-names>EJ</given-names></name></person-group>
+<year>2009</year>
+<article-title>Reversing evolution: re-establishing obligate metal ion dependence in a metal-independent KDO8P synthase.</article-title>
+<source>J Mol Biol</source>
+<volume>390</volume>
+<fpage>646</fpage>
+<lpage>661</lpage>
+<pub-id pub-id-type="pmid">19447118</pub-id></element-citation></ref><ref id="pone.0017459-Kona1"><label>7</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kona</surname><given-names>F</given-names></name><name><surname>Tao</surname><given-names>P</given-names></name><name><surname>Martin</surname><given-names>P</given-names></name><name><surname>Xu</surname><given-names>X</given-names></name><name><surname>Gatti</surname><given-names>DL</given-names></name></person-group>
+<year>2009</year>
+<article-title>Electronic structure of the metal center in the Cd(2&#x0002b;), Zn(2&#x0002b;), and Cu(2&#x0002b;) substituted forms of KDO8P synthase: implications for catalysis.</article-title>
+<source>Biochemistry</source>
+<volume>48</volume>
+<fpage>3610</fpage>
+<lpage>3630</lpage>
+<pub-id pub-id-type="pmid">19228070</pub-id></element-citation></ref><ref id="pone.0017459-Oliynyk1"><label>8</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Oliynyk</surname><given-names>Z</given-names></name><name><surname>Briseno-Roa</surname><given-names>L</given-names></name><name><surname>Janowitz</surname><given-names>T</given-names></name><name><surname>Sondergeld</surname><given-names>P</given-names></name><name><surname>Fersht</surname><given-names>AR</given-names></name></person-group>
+<year>2004</year>
+<article-title>Designing a metal-binding site in the scaffold of Escherichia coli KDO8PS.</article-title>
+<source>Protein Eng Des Sel</source>
+<volume>17</volume>
+<fpage>383</fpage>
+<lpage>390</lpage>
+<pub-id pub-id-type="pmid">15166313</pub-id></element-citation></ref><ref id="pone.0017459-Shulami1"><label>9</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Shulami</surname><given-names>S</given-names></name><name><surname>Furdui</surname><given-names>C</given-names></name><name><surname>Adir</surname><given-names>N</given-names></name><name><surname>Shoham</surname><given-names>Y</given-names></name><name><surname>Anderson</surname><given-names>KS</given-names></name><etal/></person-group>
+<year>2004</year>
+<article-title>A reciprocal single mutation affects the metal requirement of 3-deoxy-D-manno-2-octulosonate-8-phosphate (KDO8P) synthases from Aquifex pyrophilus and Escherichia coli.</article-title>
+<source>J Biol Chem</source>
+<volume>279</volume>
+<fpage>45110</fpage>
+<lpage>45120</lpage>
+<pub-id pub-id-type="pmid">15308670</pub-id></element-citation></ref><ref id="pone.0017459-Li1"><label>10</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Li</surname><given-names>J</given-names></name><name><surname>Wu</surname><given-names>J</given-names></name><name><surname>Fleischhacker</surname><given-names>AS</given-names></name><name><surname>Woodard</surname><given-names>RW</given-names></name></person-group>
+<year>2004</year>
+<article-title>Conversion of aquifex aeolicus 3-deoxy-d-manno-octulosonate 8-phosphate synthase, a metalloenzyme, into a nonmetalloenzyme.</article-title>
+<source>J Am Chem Soc</source>
+<volume>126</volume>
+<fpage>7448</fpage>
+<lpage>7449</lpage>
+<pub-id pub-id-type="pmid">15198585</pub-id></element-citation></ref><ref id="pone.0017459-Kona2"><label>11</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kona</surname><given-names>F</given-names></name><name><surname>Xu</surname><given-names>X</given-names></name><name><surname>Martin</surname><given-names>P</given-names></name><name><surname>Kuzmic</surname><given-names>P</given-names></name><name><surname>Gatti</surname><given-names>DL</given-names></name></person-group>
+<year>2007</year>
+<article-title>Structural and mechanistic changes along an engineered path from metallo to nonmetallo 3-deoxy-D-manno-octulosonate 8-phosphate synthases.</article-title>
+<source>Biochemistry</source>
+<volume>46</volume>
+<fpage>4532</fpage>
+<lpage>4544</lpage>
+<pub-id pub-id-type="pmid">17381075</pub-id></element-citation></ref><ref id="pone.0017459-Allison1"><label>12</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Allison</surname><given-names>TM</given-names></name><name><surname>Yeoman</surname><given-names>JA</given-names></name><name><surname>Hutton</surname><given-names>RD</given-names></name><name><surname>Cochrane</surname><given-names>FC</given-names></name><name><surname>Jameson</surname><given-names>GB</given-names></name><etal/></person-group>
+<year>2010</year>
+<article-title>Specificity and mutational analysis of the metal-dependent 3-deoxy-D-manno-octulosonate 8-phosphate synthase from Acidithiobacillus ferrooxidans.</article-title>
+<source>Biochim Biophys Acta</source>
+<volume>1804</volume>
+<fpage>1526</fpage>
+<lpage>1536</lpage>
+<pub-id pub-id-type="pmid">20406700</pub-id></element-citation></ref><ref id="pone.0017459-Tao1"><label>13</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Tao</surname><given-names>P</given-names></name><name><surname>Gatti</surname><given-names>DL</given-names></name><name><surname>Schlegel</surname><given-names>HB</given-names></name></person-group>
+<year>2009</year>
+<article-title>The energy landscape of 3-deoxy-D-manno-octulosonate 8-phosphate synthase.</article-title>
+<source>Biochemistry</source>
+<volume>48</volume>
+<fpage>11706</fpage>
+<lpage>11714</lpage>
+<pub-id pub-id-type="pmid">19891460</pub-id></element-citation></ref><ref id="pone.0017459-Tao2"><label>14</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Tao</surname><given-names>P</given-names></name><name><surname>Schlegel</surname><given-names>HB</given-names></name><name><surname>Gatti</surname><given-names>DL</given-names></name></person-group>
+<year>2010</year>
+<article-title>Common basis for the mechanism of metallo and non-metallo kdo8p synthases.</article-title>
+<source>Journal of Inorganic Biochemistry</source>
+<volume>104</volume>
+<fpage>1267</fpage>
+<lpage>1275</lpage>
+<pub-id pub-id-type="pmid">20825995</pub-id></element-citation></ref><ref id="pone.0017459-Warshel1"><label>15</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Warshel</surname><given-names>A</given-names></name><name><surname>Parson</surname><given-names>WW</given-names></name></person-group>
+<year>2001</year>
+<article-title>Dynamics of biochemical and biophysical reactions: insight from computer simulations.</article-title>
+<source>Q Rev Biophys</source>
+<volume>34</volume>
+<fpage>563</fpage>
+<lpage>679</lpage>
+<pub-id pub-id-type="pmid">11852595</pub-id></element-citation></ref><ref id="pone.0017459-Roca1"><label>16</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Roca</surname><given-names>M</given-names></name><name><surname>Liu</surname><given-names>H</given-names></name><name><surname>Messer</surname><given-names>B</given-names></name><name><surname>Warshel</surname><given-names>A</given-names></name></person-group>
+<year>2007</year>
+<article-title>On the relationship between thermal stability and catalytic power of enzymes.</article-title>
+<source>Biochemistry</source>
+<volume>46</volume>
+<fpage>15076</fpage>
+<lpage>15088</lpage>
+<pub-id pub-id-type="pmid">18052079</pub-id></element-citation></ref><ref id="pone.0017459-Nagatani1"><label>17</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Nagatani</surname><given-names>RA</given-names></name><name><surname>Gonzalez</surname><given-names>A</given-names></name><name><surname>Shoichet</surname><given-names>BK</given-names></name><name><surname>Brinen</surname><given-names>LS</given-names></name><name><surname>Babbitt</surname><given-names>PC</given-names></name></person-group>
+<year>2007</year>
+<article-title>Stability for function trade-offs in the enolase superfamily &#x0201c;catalytic module&#x0201d;.</article-title>
+<source>Biochemistry</source>
+<volume>46</volume>
+<fpage>6688</fpage>
+<lpage>6695</lpage>
+<pub-id pub-id-type="pmid">17503785</pub-id></element-citation></ref><ref id="pone.0017459-Beadle1"><label>18</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Beadle</surname><given-names>BM</given-names></name><name><surname>Shoichet</surname><given-names>BK</given-names></name></person-group>
+<year>2002</year>
+<article-title>Structural bases of stability-function tradeoffs in enzymes.</article-title>
+<source>J Mol Biol</source>
+<volume>321</volume>
+<fpage>285</fpage>
+<lpage>296</lpage>
+<pub-id pub-id-type="pmid">12144785</pub-id></element-citation></ref><ref id="pone.0017459-Wang1"><label>19</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Wang</surname><given-names>X</given-names></name><name><surname>Minasov</surname><given-names>G</given-names></name><name><surname>Shoichet</surname><given-names>BK</given-names></name></person-group>
+<year>2002</year>
+<article-title>Evolution of an antibiotic resistance enzyme constrained by stability and activity trade-offs.</article-title>
+<source>J Mol Biol</source>
+<volume>320</volume>
+<fpage>85</fpage>
+<lpage>95</lpage>
+<pub-id pub-id-type="pmid">12079336</pub-id></element-citation></ref><ref id="pone.0017459-Bloom1"><label>20</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Bloom</surname><given-names>JD</given-names></name><name><surname>Labthavikul</surname><given-names>ST</given-names></name><name><surname>Otey</surname><given-names>CR</given-names></name><name><surname>Arnold</surname><given-names>FH</given-names></name></person-group>
+<year>2006</year>
+<article-title>Protein stability promotes evolvability.</article-title>
+<source>Proc Natl Acad Sci U S A</source>
+<volume>103</volume>
+<fpage>5869</fpage>
+<lpage>5874</lpage>
+<pub-id pub-id-type="pmid">16581913</pub-id></element-citation></ref><ref id="pone.0017459-Matthews1"><label>21</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Matthews</surname><given-names>BW</given-names></name></person-group>
+<year>1993</year>
+<article-title>Structural and genetic analysis of protein stability.</article-title>
+<source>Annu Rev Biochem</source>
+<volume>62</volume>
+<fpage>139</fpage>
+<lpage>160</lpage>
+<pub-id pub-id-type="pmid">8352587</pub-id></element-citation></ref><ref id="pone.0017459-Guerois1"><label>22</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Guerois</surname><given-names>R</given-names></name><name><surname>Nielsen</surname><given-names>JE</given-names></name><name><surname>Serrano</surname><given-names>L</given-names></name></person-group>
+<year>2002</year>
+<article-title>Predicting changes in the stability of proteins and protein complexes: a study of more than 1000 mutations.</article-title>
+<source>J Mol Biol</source>
+<volume>320</volume>
+<fpage>369</fpage>
+<lpage>387</lpage>
+<pub-id pub-id-type="pmid">12079393</pub-id></element-citation></ref><ref id="pone.0017459-Schymkowitz1"><label>23</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Schymkowitz</surname><given-names>JW</given-names></name><name><surname>Rousseau</surname><given-names>F</given-names></name><name><surname>Martins</surname><given-names>IC</given-names></name><name><surname>Ferkinghoff-Borg</surname><given-names>J</given-names></name><name><surname>Stricher</surname><given-names>F</given-names></name><etal/></person-group>
+<year>2005</year>
+<article-title>Prediction of water and metal binding sites and their affinities by using the Fold-X force field.</article-title>
+<source>Proc Natl Acad Sci U S A</source>
+<volume>102</volume>
+<fpage>10147</fpage>
+<lpage>10152</lpage>
+<pub-id pub-id-type="pmid">16006526</pub-id></element-citation></ref><ref id="pone.0017459-Tokuriki1"><label>24</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Tokuriki</surname><given-names>N</given-names></name><name><surname>Stricher</surname><given-names>F</given-names></name><name><surname>Serrano</surname><given-names>L</given-names></name><name><surname>Tawfik</surname><given-names>DS</given-names></name></person-group>
+<year>2008</year>
+<article-title>How protein stability and new functions trade off.</article-title>
+<source>PLoS Comput Biol</source>
+<volume>4</volume>
+<fpage>1</fpage>
+<lpage>7</lpage>
+</element-citation></ref><ref id="pone.0017459-Eddy1"><label>25</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Eddy</surname><given-names>SR</given-names></name></person-group>
+<year>1998</year>
+<article-title>Profile hidden Markov models.</article-title>
+<source>Bioinformatics</source>
+<volume>14</volume>
+<fpage>755</fpage>
+<lpage>763</lpage>
+<pub-id pub-id-type="pmid">9918945</pub-id></element-citation></ref><ref id="pone.0017459-Sonnhammer1"><label>26</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Sonnhammer</surname><given-names>EL</given-names></name><name><surname>Eddy</surname><given-names>SR</given-names></name><name><surname>Birney</surname><given-names>E</given-names></name><name><surname>Bateman</surname><given-names>A</given-names></name><name><surname>Durbin</surname><given-names>R</given-names></name></person-group>
+<year>1998</year>
+<article-title>Pfam: multiple sequence alignments and HMM-profiles of protein domains.</article-title>
+<source>Nucleic Acids Res</source>
+<volume>26</volume>
+<fpage>320</fpage>
+<lpage>322</lpage>
+<pub-id pub-id-type="pmid">9399864</pub-id></element-citation></ref><ref id="pone.0017459-Cleveland1"><label>27</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Cleveland</surname><given-names>WS</given-names></name></person-group>
+<year>1979</year>
+<article-title>Robust Locally Weighted Regression and Smoothing Scatterplots.</article-title>
+<source>Journal of the American Statistical Association</source>
+<volume>74</volume>
+<fpage>829</fpage>
+<lpage>836</lpage>
+</element-citation></ref><ref id="pone.0017459-Cleveland2"><label>28</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Cleveland</surname><given-names>WS</given-names></name><name><surname>Devlin</surname><given-names>SJ</given-names></name></person-group>
+<year>1988</year>
+<article-title>Locally-Weighted Regression: An Approach to Regression Analysis by Local Fitting.</article-title>
+<source>Journal of the American Statistical Association</source>
+<volume>83</volume>
+<fpage>596</fpage>
+<lpage>610</lpage>
+</element-citation></ref><ref id="pone.0017459-Schymkowitz2"><label>29</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Schymkowitz</surname><given-names>J</given-names></name><name><surname>Borg</surname><given-names>J</given-names></name><name><surname>Stricher</surname><given-names>F</given-names></name><name><surname>Nys</surname><given-names>R</given-names></name><name><surname>Rousseau</surname><given-names>F</given-names></name><etal/></person-group>
+<year>2005</year>
+<article-title>The FoldX web server: an online force field.</article-title>
+<source>Nucleic Acids Res</source>
+<volume>33</volume>
+<fpage>W382</fpage>
+<lpage>388</lpage>
+<pub-id pub-id-type="pmid">15980494</pub-id></element-citation></ref><ref id="pone.0017459-Tokuriki2"><label>30</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Tokuriki</surname><given-names>N</given-names></name><name><surname>Stricher</surname><given-names>F</given-names></name><name><surname>Schymkowitz</surname><given-names>J</given-names></name><name><surname>Serrano</surname><given-names>L</given-names></name><name><surname>Tawfik</surname><given-names>DS</given-names></name></person-group>
+<year>2007</year>
+<article-title>The Stability Effects of Protein Mutations Appear to be Universally Distributed.</article-title>
+<source>Journal of Molecular Biology</source>
+<volume>369</volume>
+<fpage>1318</fpage>
+<lpage>1332</lpage>
+<pub-id pub-id-type="pmid">17482644</pub-id></element-citation></ref><ref id="pone.0017459-Potapov1"><label>31</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Potapov</surname><given-names>V</given-names></name><name><surname>Cohen</surname><given-names>M</given-names></name><name><surname>Schreiber</surname><given-names>G</given-names></name></person-group>
+<year>2009</year>
+<article-title>Assessing computational methods for predicting protein stability upon mutation: good on average but not in the details.</article-title>
+<source>Protein Eng Des Sel</source>
+<volume>22</volume>
+<fpage>553</fpage>
+<lpage>560</lpage>
+<pub-id pub-id-type="pmid">19561092</pub-id></element-citation></ref><ref id="pone.0017459-Khan1"><label>32</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Khan</surname><given-names>S</given-names></name><name><surname>Vihinen</surname><given-names>M</given-names></name></person-group>
+<year>2010</year>
+<article-title>Performance of protein stability predictors.</article-title>
+<source>Hum Mutat</source>
+<volume>31</volume>
+<fpage>675</fpage>
+<lpage>684</lpage>
+<pub-id pub-id-type="pmid">20232415</pub-id></element-citation></ref><ref id="pone.0017459-Horovitz1"><label>33</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Horovitz</surname><given-names>A</given-names></name></person-group>
+<year>1996</year>
+<article-title>Double-mutant cycles: a powerful tool for analyzing protein structure and function.</article-title>
+<source>Fold Des</source>
+<volume>1</volume>
+<fpage>R121</fpage>
+<lpage>126</lpage>
+<pub-id pub-id-type="pmid">9080186</pub-id></element-citation></ref><ref id="pone.0017459-Tracewell1"><label>34</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Tracewell</surname><given-names>CA</given-names></name><name><surname>Arnold</surname><given-names>FH</given-names></name></person-group>
+<year>2009</year>
+<article-title>Directed enzyme evolution: climbing fitness peaks one amino acid at a time.</article-title>
+<source>Curr Opin Chem Biol</source>
+<volume>13</volume>
+<fpage>3</fpage>
+<lpage>9</lpage>
+<pub-id pub-id-type="pmid">19249235</pub-id></element-citation></ref><ref id="pone.0017459-Ohage1"><label>35</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Ohage</surname><given-names>EC</given-names></name><name><surname>Graml</surname><given-names>W</given-names></name><name><surname>Walter</surname><given-names>MM</given-names></name><name><surname>Steinbacher</surname><given-names>S</given-names></name><name><surname>Steipe</surname><given-names>B</given-names></name></person-group>
+<year>1997</year>
+<article-title>Beta-turn propensities as paradigms for the analysis of structural motifs to engineer protein stability.</article-title>
+<source>Protein Sci</source>
+<volume>6</volume>
+<fpage>233</fpage>
+<lpage>241</lpage>
+<pub-id pub-id-type="pmid">9007995</pub-id></element-citation></ref><ref id="pone.0017459-Polizzi1"><label>36</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Polizzi</surname><given-names>KM</given-names></name><name><surname>Bommarius</surname><given-names>AS</given-names></name><name><surname>Broering</surname><given-names>JM</given-names></name><name><surname>Chaparro-Riggers</surname><given-names>JF</given-names></name></person-group>
+<year>2007</year>
+<article-title>Stability of biocatalysts.</article-title>
+<source>Curr Opin Chem Biol</source>
+<volume>11</volume>
+<fpage>220</fpage>
+<lpage>225</lpage>
+<pub-id pub-id-type="pmid">17307381</pub-id></element-citation></ref><ref id="pone.0017459-ChaparroRiggers1"><label>37</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Chaparro-Riggers</surname><given-names>JF</given-names></name><name><surname>Polizzi</surname><given-names>KM</given-names></name><name><surname>Bommarius</surname><given-names>AS</given-names></name></person-group>
+<year>2007</year>
+<article-title>Better library design: data-driven protein engineering.</article-title>
+<source>Biotechnol J</source>
+<volume>2</volume>
+<fpage>180</fpage>
+<lpage>191</lpage>
+<pub-id pub-id-type="pmid">17183506</pub-id></element-citation></ref><ref id="pone.0017459-Lehmann1"><label>38</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Lehmann</surname><given-names>M</given-names></name><name><surname>Pasamontes</surname><given-names>L</given-names></name><name><surname>Lassen</surname><given-names>SF</given-names></name><name><surname>Wyss</surname><given-names>M</given-names></name></person-group>
+<year>2000</year>
+<article-title>The consensus concept for thermostability engineering of proteins.</article-title>
+<source>Biochim Biophys Acta</source>
+<volume>1543</volume>
+<fpage>408</fpage>
+<lpage>415</lpage>
+<pub-id pub-id-type="pmid">11150616</pub-id></element-citation></ref><ref id="pone.0017459-Lehmann2"><label>39</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Lehmann</surname><given-names>M</given-names></name><name><surname>Wyss</surname><given-names>M</given-names></name></person-group>
+<year>2001</year>
+<article-title>Engineering proteins for thermostability: the use of sequence alignments versus rational design and directed evolution.</article-title>
+<source>Curr Opin Biotechnol</source>
+<volume>12</volume>
+<fpage>371</fpage>
+<lpage>375</lpage>
+<pub-id pub-id-type="pmid">11551465</pub-id></element-citation></ref><ref id="pone.0017459-Horner1"><label>40</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Horner</surname><given-names>DS</given-names></name><name><surname>Pirovano</surname><given-names>W</given-names></name><name><surname>Pesole</surname><given-names>G</given-names></name></person-group>
+<year>2008</year>
+<article-title>Correlated substitution analysis and the prediction of amino acid structural contacts.</article-title>
+<source>Brief Bioinform</source>
+<volume>9</volume>
+<fpage>46</fpage>
+<lpage>56</lpage>
+<pub-id pub-id-type="pmid">18000015</pub-id></element-citation></ref><ref id="pone.0017459-Caporaso1"><label>41</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Caporaso</surname><given-names>JG</given-names></name><name><surname>Smit</surname><given-names>S</given-names></name><name><surname>Easton</surname><given-names>B</given-names></name><name><surname>Hunter</surname><given-names>L</given-names></name><name><surname>Huttley</surname><given-names>G</given-names></name><etal/></person-group>
+<year>2008</year>
+<article-title>Detecting coevolution without phylogenetic trees? Tree-ignorant metrics of coevolution perform as well as tree-aware metrics.</article-title>
+<source>BMC Evolutionary Biology</source>
+<volume>8</volume>
+<fpage>327</fpage>
+<pub-id pub-id-type="pmid">19055758</pub-id></element-citation></ref><ref id="pone.0017459-Codoner1"><label>42</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Codoner</surname><given-names>FM</given-names></name><name><surname>Fares</surname><given-names>MA</given-names></name></person-group>
+<year>2008</year>
+<article-title>Why should we care about molecular coevolution?</article-title>
+<source>Evol Bioinform Online</source>
+<volume>4</volume>
+<fpage>29</fpage>
+<lpage>38</lpage>
+<pub-id pub-id-type="pmid">19204805</pub-id></element-citation></ref><ref id="pone.0017459-Kass1"><label>43</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kass</surname><given-names>I</given-names></name><name><surname>Horovitz</surname><given-names>A</given-names></name></person-group>
+<year>2002</year>
+<article-title>Mapping pathways of allosteric communication in GroEL by analysis of correlated mutations.</article-title>
+<source>Proteins</source>
+<volume>48</volume>
+<fpage>611</fpage>
+<lpage>617</lpage>
+<pub-id pub-id-type="pmid">12211028</pub-id></element-citation></ref><ref id="pone.0017459-Fodor1"><label>44</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Fodor</surname><given-names>AA</given-names></name><name><surname>Aldrich</surname><given-names>RW</given-names></name></person-group>
+<year>2004</year>
+<article-title>Influence of conservation on calculations of amino acid covariance in multiple sequence alignments.</article-title>
+<source>Proteins</source>
+<volume>56</volume>
+<fpage>211</fpage>
+<lpage>221</lpage>
+<pub-id pub-id-type="pmid">15211506</pub-id></element-citation></ref><ref id="pone.0017459-Dekker1"><label>45</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Dekker</surname><given-names>JP</given-names></name><name><surname>Fodor</surname><given-names>A</given-names></name><name><surname>Aldrich</surname><given-names>RW</given-names></name><name><surname>Yellen</surname><given-names>G</given-names></name></person-group>
+<year>2004</year>
+<article-title>A perturbation-based method for calculating explicit likelihood of evolutionary co-variance in multiple sequence alignments.</article-title>
+<source>Bioinformatics</source>
+<volume>20</volume>
+<fpage>1565</fpage>
+<lpage>1572</lpage>
+<pub-id pub-id-type="pmid">14962924</pub-id></element-citation></ref><ref id="pone.0017459-Lockless1"><label>46</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Lockless</surname><given-names>SW</given-names></name><name><surname>Ranganathan</surname><given-names>R</given-names></name></person-group>
+<year>1999</year>
+<article-title>Evolutionarily conserved pathways of energetic connectivity in protein families.</article-title>
+<source>Science</source>
+<volume>286</volume>
+<fpage>295</fpage>
+<lpage>299</lpage>
+<pub-id pub-id-type="pmid">10514373</pub-id></element-citation></ref><ref id="pone.0017459-Halabi1"><label>47</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Halabi</surname><given-names>N</given-names></name><name><surname>Rivoire</surname><given-names>O</given-names></name><name><surname>Leibler</surname><given-names>S</given-names></name><name><surname>Ranganathan</surname><given-names>R</given-names></name></person-group>
+<year>2009</year>
+<article-title>Protein sectors: evolutionary units of three-dimensional structure.</article-title>
+<source>Cell</source>
+<volume>138</volume>
+<fpage>774</fpage>
+<lpage>786</lpage>
+<pub-id pub-id-type="pmid">19703402</pub-id></element-citation></ref><ref id="pone.0017459-Gobel1"><label>48</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Gobel</surname><given-names>U</given-names></name><name><surname>Sander</surname><given-names>C</given-names></name><name><surname>Schneider</surname><given-names>R</given-names></name><name><surname>Valencia</surname><given-names>A</given-names></name></person-group>
+<year>1994</year>
+<article-title>Correlated mutations and residue contacts in proteins.</article-title>
+<source>Proteins</source>
+<volume>18</volume>
+<fpage>309</fpage>
+<lpage>317</lpage>
+<pub-id pub-id-type="pmid">8208723</pub-id></element-citation></ref><ref id="pone.0017459-Reza1"><label>49</label><element-citation publication-type="book">
+<person-group person-group-type="author"><name><surname>Reza</surname><given-names>FM</given-names></name></person-group>
+<year>1994</year>
+<article-title>An Introduction to Information Theory.</article-title>
+<publisher-loc>New York</publisher-loc>
+<publisher-name>Dover Publications, Inc</publisher-name>
+</element-citation></ref><ref id="pone.0017459-Shannon1"><label>50</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Shannon</surname><given-names>CE</given-names></name></person-group>
+<year>1948</year>
+<article-title>A mathematical theory of communication.</article-title>
+<source>Bell System, Technical Journal</source>
+<volume>27</volume>
+<fpage>379</fpage>
+<lpage>423</lpage>
+</element-citation></ref><ref id="pone.0017459-Shannon2"><label>51</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Shannon</surname><given-names>CE</given-names></name></person-group>
+<year>1948</year>
+<article-title>A mathematical theory of communication.</article-title>
+<source>Bell System, Technical Journal</source>
+<volume>27</volume>
+<fpage>623</fpage>
+<lpage>656</lpage>
+</element-citation></ref><ref id="pone.0017459-Atchley1"><label>52</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Atchley</surname><given-names>WR</given-names></name><name><surname>Wollenberg</surname><given-names>KR</given-names></name><name><surname>Fitch</surname><given-names>WM</given-names></name><name><surname>Terhalle</surname><given-names>W</given-names></name><name><surname>Dress</surname><given-names>AW</given-names></name></person-group>
+<year>2000</year>
+<article-title>Correlations among amino acid sites in bHLH protein domains: an information theoretic analysis.</article-title>
+<source>Mol Biol Evol</source>
+<volume>17</volume>
+<fpage>164</fpage>
+<lpage>178</lpage>
+<pub-id pub-id-type="pmid">10666716</pub-id></element-citation></ref><ref id="pone.0017459-Gloor1"><label>53</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Gloor</surname><given-names>GB</given-names></name><name><surname>Martin</surname><given-names>LC</given-names></name><name><surname>Wahl</surname><given-names>LM</given-names></name><name><surname>Dunn</surname><given-names>SD</given-names></name></person-group>
+<year>2005</year>
+<article-title>Mutual information in protein multiple sequence alignments reveals two classes of coevolving positions.</article-title>
+<source>Biochemistry</source>
+<volume>44</volume>
+<fpage>7156</fpage>
+<lpage>7165</lpage>
+<pub-id pub-id-type="pmid">15882054</pub-id></element-citation></ref><ref id="pone.0017459-Martin1"><label>54</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Martin</surname><given-names>LC</given-names></name><name><surname>Gloor</surname><given-names>GB</given-names></name><name><surname>Dunn</surname><given-names>SD</given-names></name><name><surname>Wahl</surname><given-names>LM</given-names></name></person-group>
+<year>2005</year>
+<article-title>Using information theory to search for co-evolving residues in proteins.</article-title>
+<source>Bioinformatics</source>
+<volume>21</volume>
+<fpage>4116</fpage>
+<lpage>4124</lpage>
+<pub-id pub-id-type="pmid">16159918</pub-id></element-citation></ref><ref id="pone.0017459-Witten1"><label>55</label><element-citation publication-type="book">
+<person-group person-group-type="author"><name><surname>Witten</surname><given-names>IH</given-names></name><name><surname>Frank</surname><given-names>E</given-names></name></person-group>
+<year>2005</year>
+<article-title>Data Mining: Practical Machine Learning Tools and Techniques.</article-title>
+<publisher-loc>Amsterdam</publisher-loc>
+<publisher-name>Morgan Kaufmann</publisher-name>
+</element-citation></ref><ref id="pone.0017459-Press1"><label>56</label><element-citation publication-type="book">
+<person-group person-group-type="author"><name><surname>Press</surname><given-names>WH</given-names></name><name><surname>Flannery</surname><given-names>BP</given-names></name><name><surname>Teukolsky</surname><given-names>SA</given-names></name><name><surname>Vetterling</surname><given-names>WT</given-names></name></person-group>
+<year>1992</year>
+<article-title>Numerical Recipes in Fortran: The Art of Scientific Computing.</article-title>
+<publisher-loc>Cambridge</publisher-loc>
+<publisher-name>University Press</publisher-name>
+<fpage>626</fpage>
+<lpage>630</lpage>
+</element-citation></ref><ref id="pone.0017459-Merlo1"><label>57</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Merlo</surname><given-names>LM</given-names></name><name><surname>Lunzer</surname><given-names>M</given-names></name><name><surname>Dean</surname><given-names>AM</given-names></name></person-group>
+<year>2007</year>
+<article-title>An empirical test of the concomitantly variable codon hypothesis.</article-title>
+<source>Proc Natl Acad Sci U S A</source>
+<volume>104</volume>
+<fpage>10938</fpage>
+<lpage>10943</lpage>
+<pub-id pub-id-type="pmid">17578921</pub-id></element-citation></ref><ref id="pone.0017459-Dunn1"><label>58</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Dunn</surname><given-names>SD</given-names></name><name><surname>Wahl</surname><given-names>LM</given-names></name><name><surname>Gloor</surname><given-names>GB</given-names></name></person-group>
+<year>2008</year>
+<article-title>Mutual information without the influence of phylogeny or entropy dramatically improves residue contact prediction.</article-title>
+<source>Bioinformatics</source>
+<volume>24</volume>
+<fpage>333</fpage>
+<lpage>340</lpage>
+<pub-id pub-id-type="pmid">18057019</pub-id></element-citation></ref><ref id="pone.0017459-Fernandes1"><label>59</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Fernandes</surname><given-names>AD</given-names></name><name><surname>Gloor</surname><given-names>GB</given-names></name></person-group>
+<year>2010</year>
+<article-title>Mutual information is critically dependent on prior assumptions: would the correct estimate of mutual information please identify itself?</article-title>
+<source>Bioinformatics</source>
+<volume>26</volume>
+<fpage>1135</fpage>
+<lpage>1139</lpage>
+<pub-id pub-id-type="pmid">20236946</pub-id></element-citation></ref><ref id="pone.0017459-Buslje1"><label>60</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Buslje</surname><given-names>CM</given-names></name><name><surname>Santos</surname><given-names>J</given-names></name><name><surname>Delfino</surname><given-names>JM</given-names></name><name><surname>Nielsen</surname><given-names>M</given-names></name></person-group>
+<year>2009</year>
+<article-title>Correction for phylogeny, small number of observations and data redundancy improves the identification of coevolving amino acid pairs using mutual information.</article-title>
+<source>Bioinformatics</source>
+<volume>25</volume>
+<fpage>1125</fpage>
+<lpage>1131</lpage>
+<pub-id pub-id-type="pmid">19276150</pub-id></element-citation></ref><ref id="pone.0017459-Little1"><label>61</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Little</surname><given-names>DY</given-names></name><name><surname>Chen</surname><given-names>L</given-names></name></person-group>
+<year>2009</year>
+<article-title>Identification of coevolving residues and coevolution potentials emphasizing structure, bond formation and catalytic coordination in protein evolution.</article-title>
+<source>PLoS One</source>
+<volume>4</volume>
+<fpage>e4762</fpage>
+<pub-id pub-id-type="pmid">19274093</pub-id></element-citation></ref><ref id="pone.0017459-Brown1"><label>62</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Brown</surname><given-names>CA</given-names></name><name><surname>Brown</surname><given-names>KS</given-names></name></person-group>
+<year>2010</year>
+<article-title>Validation of coevolving residue algorithms via pipeline sensitivity analysis: ELSC and OMES and ZNMI, oh my! </article-title>
+<source>PLoS One</source>
+<volume>5</volume>
+<fpage>e10779</fpage>
+<pub-id pub-id-type="pmid">20531955</pub-id></element-citation></ref><ref id="pone.0017459-Gloor2"><label>63</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Gloor</surname><given-names>GB</given-names></name><name><surname>Tyagi</surname><given-names>G</given-names></name><name><surname>Abrassart</surname><given-names>DM</given-names></name><name><surname>Kingston</surname><given-names>AJ</given-names></name><name><surname>Fernandes</surname><given-names>AD</given-names></name><etal/></person-group>
+<year>2010</year>
+<article-title>Functionally Compensating Coevolving Positions Are Neither Homoplasic Nor Conserved in Clades.</article-title>
+<source>Mol Biol Evol</source>
+<volume>27</volume>
+<fpage>1181</fpage>
+<lpage>1191</lpage>
+<pub-id pub-id-type="pmid">20065119</pub-id></element-citation></ref><ref id="pone.0017459-Codoner2"><label>64</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Codoner</surname><given-names>FM</given-names></name><name><surname>O'Dea</surname><given-names>S</given-names></name><name><surname>Fares</surname><given-names>MA</given-names></name></person-group>
+<year>2008</year>
+<article-title>Reducing the false positive rate in the non-parametric analysis of molecular coevolution.</article-title>
+<source>BMC Evol Biol</source>
+<volume>8</volume>
+<fpage>106</fpage>
+<pub-id pub-id-type="pmid">18402697</pub-id></element-citation></ref><ref id="pone.0017459-Weil1"><label>65</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Weil</surname><given-names>P</given-names></name><name><surname>Hoffgaard</surname><given-names>F</given-names></name><name><surname>Hamacher</surname><given-names>K</given-names></name></person-group>
+<year>2009</year>
+<article-title>Estimating sufficient statistics in co-evolutionary analysis by mutual information.</article-title>
+<source>Comput Biol Chem</source>
+<volume>33</volume>
+<fpage>440</fpage>
+<lpage>444</lpage>
+<pub-id pub-id-type="pmid">19910254</pub-id></element-citation></ref><ref id="pone.0017459-Yanofsky1"><label>66</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Yanofsky</surname><given-names>C</given-names></name><name><surname>Horn</surname><given-names>V</given-names></name><name><surname>Thorpe</surname><given-names>D</given-names></name></person-group>
+<year>1964</year>
+<article-title>Protein Structure Relationships Revealed by Mutational Analysis.</article-title>
+<source>Science</source>
+<volume>146</volume>
+<fpage>1593</fpage>
+<lpage>1594</lpage>
+<pub-id pub-id-type="pmid">14224506</pub-id></element-citation></ref><ref id="pone.0017459-Poon1"><label>67</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Poon</surname><given-names>A</given-names></name><name><surname>Davis</surname><given-names>BH</given-names></name><name><surname>Chao</surname><given-names>L</given-names></name></person-group>
+<year>2005</year>
+<article-title>The coupon collector and the suppressor mutation: estimating the number of compensatory mutations by maximum likelihood.</article-title>
+<source>Genetics</source>
+<volume>170</volume>
+<fpage>1323</fpage>
+<lpage>1332</lpage>
+<pub-id pub-id-type="pmid">15879511</pub-id></element-citation></ref><ref id="pone.0017459-Poon2"><label>68</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Poon</surname><given-names>A</given-names></name><name><surname>Chao</surname><given-names>L</given-names></name></person-group>
+<year>2005</year>
+<article-title>The rate of compensatory mutation in the DNA bacteriophage phiX174.</article-title>
+<source>Genetics</source>
+<volume>170</volume>
+<fpage>989</fpage>
+<lpage>999</lpage>
+<pub-id pub-id-type="pmid">15911582</pub-id></element-citation></ref><ref id="pone.0017459-Klig1"><label>69</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Klig</surname><given-names>LS</given-names></name><name><surname>Oxender</surname><given-names>DL</given-names></name><name><surname>Yanofsky</surname><given-names>C</given-names></name></person-group>
+<year>1988</year>
+<article-title>Second-site revertants of Escherichia coli trp repressor mutants.</article-title>
+<source>Genetics</source>
+<volume>120</volume>
+<fpage>651</fpage>
+<lpage>655</lpage>
+<pub-id pub-id-type="pmid">3066681</pub-id></element-citation></ref><ref id="pone.0017459-Tillier1"><label>70</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Tillier</surname><given-names>ER</given-names></name><name><surname>Lui</surname><given-names>TW</given-names></name></person-group>
+<year>2003</year>
+<article-title>Using multiple interdependency to separate functional from phylogenetic correlations in protein alignments.</article-title>
+<source>Bioinformatics</source>
+<volume>19</volume>
+<fpage>750</fpage>
+<lpage>755</lpage>
+<pub-id pub-id-type="pmid">12691987</pub-id></element-citation></ref><ref id="pone.0017459-Romero1"><label>71</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Romero</surname><given-names>PA</given-names></name><name><surname>Arnold</surname><given-names>FH</given-names></name></person-group>
+<year>2009</year>
+<article-title>Exploring protein fitness landscapes by directed evolution.</article-title>
+<source>Nat Rev Mol Cell Biol</source>
+<volume>10</volume>
+<fpage>866</fpage>
+<lpage>876</lpage>
+<pub-id pub-id-type="pmid">19935669</pub-id></element-citation></ref><ref id="pone.0017459-Bloom2"><label>72</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Bloom</surname><given-names>JD</given-names></name><name><surname>Arnold</surname><given-names>FH</given-names></name></person-group>
+<year>2009</year>
+<article-title>In the light of directed evolution: pathways of adaptive protein evolution.</article-title>
+<source>Proc Natl Acad Sci U S A</source>
+<volume>106</volume>
+<issue>Suppl 1</issue>
+<fpage>9995</fpage>
+<lpage>10000</lpage>
+<pub-id pub-id-type="pmid">19528653</pub-id></element-citation></ref><ref id="pone.0017459-Fitch1"><label>73</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Fitch</surname><given-names>WM</given-names></name><name><surname>Markowitz</surname><given-names>E</given-names></name></person-group>
+<year>1970</year>
+<article-title>An improved method for determining codon variability in a gene and its application to the rate of fixation of mutations in evolution.</article-title>
+<source>Biochem Genet</source>
+<volume>4</volume>
+<fpage>579</fpage>
+<lpage>593</lpage>
+<pub-id pub-id-type="pmid">5489762</pub-id></element-citation></ref><ref id="pone.0017459-Bershtein1"><label>74</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Bershtein</surname><given-names>S</given-names></name><name><surname>Segal</surname><given-names>M</given-names></name><name><surname>Bekerman</surname><given-names>R</given-names></name><name><surname>Tokuriki</surname><given-names>N</given-names></name><name><surname>Tawfik</surname><given-names>DS</given-names></name></person-group>
+<year>2006</year>
+<article-title>Robustness-epistasis link shapes the fitness landscape of a randomly drifting protein.</article-title>
+<source>Nature</source>
+<volume>444</volume>
+<fpage>929</fpage>
+<lpage>932</lpage>
+<pub-id pub-id-type="pmid">17122770</pub-id></element-citation></ref><ref id="pone.0017459-Bershtein2"><label>75</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Bershtein</surname><given-names>S</given-names></name><name><surname>Goldin</surname><given-names>K</given-names></name><name><surname>Tawfik</surname><given-names>DS</given-names></name></person-group>
+<year>2008</year>
+<article-title>Intense neutral drifts yield robust and evolvable consensus proteins.</article-title>
+<source>J Mol Biol</source>
+<volume>379</volume>
+<fpage>1029</fpage>
+<lpage>1044</lpage>
+<pub-id pub-id-type="pmid">18495157</pub-id></element-citation></ref><ref id="pone.0017459-Sigala1"><label>76</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Sigala</surname><given-names>PA</given-names></name><name><surname>Kraut</surname><given-names>DA</given-names></name><name><surname>Caaveiro</surname><given-names>JM</given-names></name><name><surname>Pybus</surname><given-names>B</given-names></name><name><surname>Ruben</surname><given-names>EA</given-names></name><etal/></person-group>
+<year>2008</year>
+<article-title>Testing geometrical discrimination within an enzyme active site: constrained hydrogen bonding in the ketosteroid isomerase oxyanion hole.</article-title>
+<source>J Am Chem Soc</source>
+<volume>130</volume>
+<fpage>13696</fpage>
+<lpage>13708</lpage>
+<pub-id pub-id-type="pmid">18808119</pub-id></element-citation></ref><ref id="pone.0017459-Kowarsch1"><label>77</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kowarsch</surname><given-names>A</given-names></name><name><surname>Fuchs</surname><given-names>A</given-names></name><name><surname>Frishman</surname><given-names>D</given-names></name><name><surname>Pagel</surname><given-names>P</given-names></name></person-group>
+<year>e1000923</year>
+<article-title>Correlated Mutations: A Hallmark of Phenotypic Amino Acid Substitutions.</article-title>
+<source>PLoS Comput Biol</source>
+<volume>6</volume>
+</element-citation></ref><ref id="pone.0017459-Mendes1"><label>78</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Mendes</surname><given-names>J</given-names></name><name><surname>Guerois</surname><given-names>R</given-names></name><name><surname>Serrano</surname><given-names>L</given-names></name></person-group>
+<year>2002</year>
+<article-title>Energy estimation in protein design.</article-title>
+<source>Curr Opin Struct Biol</source>
+<volume>12</volume>
+<fpage>441</fpage>
+<lpage>446</lpage>
+<pub-id pub-id-type="pmid">12163065</pub-id></element-citation></ref><ref id="pone.0017459-Zwanzig1"><label>79</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Zwanzig</surname><given-names>RW</given-names></name></person-group>
+<year>1954</year>
+<article-title>High-Temperature Equation of State by a Perturbation Method. I. Nonpolar Gases.</article-title>
+<source>J Chem Phys</source>
+<volume>22</volume>
+<fpage>1420</fpage>
+<lpage>1426</lpage>
+</element-citation></ref><ref id="pone.0017459-Benedix1"><label>80</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Benedix</surname><given-names>A</given-names></name><name><surname>Becker</surname><given-names>CM</given-names></name><name><surname>de Groot</surname><given-names>BL</given-names></name><name><surname>Caflisch</surname><given-names>A</given-names></name><name><surname>Bockmann</surname><given-names>RA</given-names></name></person-group>
+<year>2009</year>
+<article-title>Predicting free energy changes using structural ensembles.</article-title>
+<source>Nat Meth</source>
+<volume>6</volume>
+<fpage>3</fpage>
+<lpage>4</lpage>
+</element-citation></ref><ref id="pone.0017459-Kortemme1"><label>81</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kortemme</surname><given-names>T</given-names></name><name><surname>Baker</surname><given-names>D</given-names></name></person-group>
+<year>2002</year>
+<article-title>A simple physical model for binding energy hot spots in protein-protein complexes.</article-title>
+<source>Proc Natl Acad Sci U S A</source>
+<volume>99</volume>
+<fpage>14116</fpage>
+<lpage>14121</lpage>
+<pub-id pub-id-type="pmid">12381794</pub-id></element-citation></ref><ref id="pone.0017459-Pokala1"><label>82</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Pokala</surname><given-names>N</given-names></name><name><surname>Handel</surname><given-names>TM</given-names></name></person-group>
+<year>2005</year>
+<article-title>Energy functions for protein design: adjustment with protein-protein complex affinities, models for the unfolded state, and negative design of solubility and specificity.</article-title>
+<source>J Mol Biol</source>
+<volume>347</volume>
+<fpage>203</fpage>
+<lpage>227</lpage>
+<pub-id pub-id-type="pmid">15733929</pub-id></element-citation></ref><ref id="pone.0017459-Capriotti1"><label>83</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Capriotti</surname><given-names>E</given-names></name><name><surname>Fariselli</surname><given-names>P</given-names></name><name><surname>Casadio</surname><given-names>R</given-names></name></person-group>
+<year>2005</year>
+<article-title>I-Mutant2.0: predicting stability changes upon mutation from the protein sequence or structure.</article-title>
+<source>Nucleic Acids Res</source>
+<volume>33</volume>
+<fpage>W306</fpage>
+<lpage>310</lpage>
+<pub-id pub-id-type="pmid">15980478</pub-id></element-citation></ref><ref id="pone.0017459-Capriotti2"><label>84</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Capriotti</surname><given-names>E</given-names></name><name><surname>Fariselli</surname><given-names>P</given-names></name><name><surname>Rossi</surname><given-names>I</given-names></name><name><surname>Casadio</surname><given-names>R</given-names></name></person-group>
+<year>2008</year>
+<article-title>A three-state prediction of single point mutations on protein stability changes.</article-title>
+<source>BMC Bioinformatics</source>
+<volume>9</volume>
+<issue>Suppl 2</issue>
+<fpage>S6</fpage>
+</element-citation></ref><ref id="pone.0017459-Parthiban1"><label>85</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Parthiban</surname><given-names>V</given-names></name><name><surname>Gromiha</surname><given-names>MM</given-names></name><name><surname>Schomburg</surname><given-names>D</given-names></name></person-group>
+<year>2006</year>
+<article-title>CUPSAT: prediction of protein stability upon point mutations.</article-title>
+<source>Nucleic Acids Res</source>
+<volume>34</volume>
+<fpage>W239</fpage>
+<lpage>242</lpage>
+<pub-id pub-id-type="pmid">16845001</pub-id></element-citation></ref><ref id="pone.0017459-Deutsch1"><label>86</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Deutsch</surname><given-names>C</given-names></name><name><surname>Krishnamoorthy</surname><given-names>B</given-names></name></person-group>
+<year>2007</year>
+<article-title>Four-body scoring function for mutagenesis.</article-title>
+<source>Bioinformatics</source>
+<volume>23</volume>
+<fpage>3009</fpage>
+<lpage>3015</lpage>
+<pub-id pub-id-type="pmid">17921497</pub-id></element-citation></ref><ref id="pone.0017459-Zhou1"><label>87</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Zhou</surname><given-names>H</given-names></name><name><surname>Zhou</surname><given-names>Y</given-names></name></person-group>
+<year>2002</year>
+<article-title>Distance-scaled, finite ideal-gas reference state improves structure-derived potentials of mean force for structure selection and stability prediction.</article-title>
+<source>Protein Sci</source>
+<volume>11</volume>
+<fpage>2714</fpage>
+<lpage>2726</lpage>
+<pub-id pub-id-type="pmid">12381853</pub-id></element-citation></ref><ref id="pone.0017459-Kullback1"><label>88</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kullback</surname><given-names>S</given-names></name><name><surname>Leibler</surname><given-names>RA</given-names></name></person-group>
+<year>1951</year>
+<article-title>On Information and Sufficiency.</article-title>
+<source>Annals of Mathematical Statistics</source>
+<volume>22</volume>
+<fpage>79</fpage>
+<lpage>86</lpage>
+</element-citation></ref><ref id="pone.0017459-Kullback2"><label>89</label><element-citation publication-type="book">
+<person-group person-group-type="author"><name><surname>Kullback</surname><given-names>S</given-names></name></person-group>
+<year>1978</year>
+<article-title>Information Theory and Statistics.</article-title>
+<publisher-loc>Mineola, New York</publisher-loc>
+<publisher-name>Dover</publisher-name>
+</element-citation></ref><ref id="pone.0017459-Kullback3"><label>90</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kullback</surname><given-names>S</given-names></name></person-group>
+<year>1987</year>
+<article-title>Letter to the Editor: The Kullback&#x02013;Leibler distance.</article-title>
+<source>The American Statistician</source>
+<volume>41</volume>
+<fpage>340</fpage>
+<lpage>341</lpage>
+</element-citation></ref><ref id="pone.0017459-Ludlam1"><label>91</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Ludlam</surname><given-names>A</given-names></name><name><surname>Brunzelle</surname><given-names>J</given-names></name><name><surname>Pribyl</surname><given-names>T</given-names></name><name><surname>Xu</surname><given-names>X</given-names></name><name><surname>Gatti</surname><given-names>DL</given-names></name><etal/></person-group>
+<year>2009</year>
+<article-title>Chaperones of F1-ATPase.</article-title>
+<source>J Biol Chem</source>
+<volume>284</volume>
+<fpage>17138</fpage>
+<lpage>17146</lpage>
+<pub-id pub-id-type="pmid">19383603</pub-id></element-citation></ref><ref id="pone.0017459-Bebrone1"><label>92</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Bebrone</surname><given-names>C</given-names></name></person-group>
+<year>2007</year>
+<article-title>Metallo-beta-lactamases (classification, activity, genetic organization, structure, zinc coordination) and their superfamily.</article-title>
+<source>Biochem Pharmacol</source>
+<volume>74</volume>
+<fpage>1686</fpage>
+<lpage>1701</lpage>
+<pub-id pub-id-type="pmid">17597585</pub-id></element-citation></ref><ref id="pone.0017459-Notredame1"><label>93</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Notredame</surname><given-names>C</given-names></name><name><surname>Higgins</surname><given-names>DG</given-names></name><name><surname>Heringa</surname><given-names>J</given-names></name></person-group>
+<year>2000</year>
+<article-title>T-coffee: a novel method for fast and accurate multiple sequence alignment.</article-title>
+<source>J Mol Biol</source>
+<volume>302</volume>
+<fpage>205</fpage>
+<lpage>217</lpage>
+<pub-id pub-id-type="pmid">10964570</pub-id></element-citation></ref><ref id="pone.0017459-Edgar1"><label>94</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Edgar</surname><given-names>RC</given-names></name></person-group>
+<year>2004</year>
+<article-title>MUSCLE: multiple sequence alignment with high accuracy and high throughput.</article-title>
+<source>Nucleic Acids Research</source>
+<volume>32</volume>
+<fpage>1792</fpage>
+<lpage>1797</lpage>
+<pub-id pub-id-type="pmid">15034147</pub-id></element-citation></ref><ref id="pone.0017459-Katoh1"><label>95</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Katoh</surname><given-names>K</given-names></name><name><surname>Misawa</surname><given-names>K</given-names></name><name><surname>Kuma</surname><given-names>K-i</given-names></name><name><surname>Miyata</surname><given-names>T</given-names></name></person-group>
+<year>2002</year>
+<article-title>MAFFT: a novel method for rapid multiple sequence alignment based on fast Fourier transform.</article-title>
+<source>Nucl Acids Res</source>
+<volume>30</volume>
+<fpage>3059</fpage>
+<lpage>3066</lpage>
+<pub-id pub-id-type="pmid">12136088</pub-id></element-citation></ref><ref id="pone.0017459-Eddy2"><label>96</label><element-citation publication-type="book">
+<person-group person-group-type="author"><name><surname>Eddy</surname><given-names>SR</given-names></name></person-group>
+<year>2001</year>
+<article-title>HMMER User's Guide: Biological sequence analysis using profile Hidden Markov Models, version 2.3.</article-title>
+<publisher-name>Washington University School of Medicine. Washington University School of Medicine</publisher-name>
+</element-citation></ref><ref id="pone.0017459-Bowers1"><label>97</label><element-citation publication-type="book">
+<person-group person-group-type="author"><name><surname>Bowers</surname><given-names>KJ</given-names></name><name><surname>Chow</surname><given-names>E</given-names></name><name><surname>Xu</surname><given-names>H</given-names></name><name><surname>Dror</surname><given-names>RO</given-names></name><name><surname>Eastwood</surname><given-names>MP</given-names></name><etal/></person-group>
+<article-title>Scalable Algorithms for Molecular Dynamics Simulations on Commodity Clusters; 2006 November 11-17;</article-title>
+<publisher-loc>Tampa, Florida</publisher-loc>
+<publisher-name>IEEE Computer Society</publisher-name>
+<size units="page">43</size>
+</element-citation></ref><ref id="pone.0017459-Berendsen1"><label>98</label><element-citation publication-type="book">
+<person-group person-group-type="author"><name><surname>Berendsen</surname><given-names>HJC</given-names></name><name><surname>Postma</surname><given-names>JPM</given-names></name><name><surname>van Gunsteren</surname><given-names>WF</given-names></name><name><surname>Hermans</surname><given-names>J</given-names></name></person-group>
+<year>1981</year>
+<article-title>Interaction models for water in relation to protein hydration.</article-title>
+<person-group person-group-type="editor"><name><surname>Pullman</surname><given-names>B</given-names></name></person-group>
+<source>Intermolecular Forces</source>
+<publisher-loc>Dordrecht</publisher-loc>
+<publisher-name>Reidel Publishing Company</publisher-name>
+<fpage>331</fpage>
+<lpage>342</lpage>
+</element-citation></ref><ref id="pone.0017459-Byrd1"><label>99</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Byrd</surname><given-names>RH</given-names></name><name><surname>Nocedal</surname><given-names>J</given-names></name><name><surname>Schnabel</surname><given-names>RB</given-names></name></person-group>
+<year>1994</year>
+<article-title>Representations of Quasi-Newton Matrices and their use in Limited Memory Methods.</article-title>
+<source>Mathematical Programming</source>
+<volume>63</volume>
+<fpage>129</fpage>
+<lpage>156</lpage>
+</element-citation></ref><ref id="pone.0017459-Jorgensen1"><label>100</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Jorgensen</surname><given-names>WL</given-names></name><name><surname>Maxwell</surname><given-names>DS</given-names></name><name><surname>Tirado-Rives</surname><given-names>J</given-names></name></person-group>
+<year>1996</year>
+<article-title>Development and Testing of the OPLS All-Atom Force Field on Conformational Energetics and Properties of Organic Liquids.</article-title>
+<source>J Am Chem Soc</source>
+<volume>118</volume>
+<fpage>11225</fpage>
+<lpage>11236</lpage>
+</element-citation></ref><ref id="pone.0017459-Essmann1"><label>101</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Essmann</surname><given-names>U</given-names></name><name><surname>Perera</surname><given-names>L</given-names></name><name><surname>Berkowitz</surname><given-names>ML</given-names></name><name><surname>Darden</surname><given-names>T</given-names></name><name><surname>Lee</surname><given-names>H</given-names></name><etal/></person-group>
+<year>1995</year>
+<article-title>A smooth particle mesh Ewald method.</article-title>
+<source>J Chem Phys</source>
+<volume>103</volume>
+<fpage>8577</fpage>
+<lpage>8593</lpage>
+</element-citation></ref><ref id="pone.0017459-Evans1"><label>102</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Evans</surname><given-names>DJ</given-names></name><name><surname>Holian</surname><given-names>BL</given-names></name></person-group>
+<year>1985</year>
+<article-title>The Nose-Hoover thermostat.</article-title>
+<source>The Journal of Chemical Physics</source>
+<volume>83</volume>
+<fpage>4069</fpage>
+<lpage>4074</lpage>
+</element-citation></ref><ref id="pone.0017459-Martyna1"><label>103</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Martyna</surname><given-names>GJ</given-names></name><name><surname>Tobias</surname><given-names>DJ</given-names></name><name><surname>Klein</surname><given-names>ML</given-names></name></person-group>
+<year>1994</year>
+<article-title>Constant pressure molecular dynamics algorithms.</article-title>
+<source>J Chem Phys</source>
+<volume>101</volume>
+<fpage>4177</fpage>
+<lpage>4189</lpage>
+</element-citation></ref><ref id="pone.0017459-Tuckerman1"><label>104</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Tuckerman</surname><given-names>M</given-names></name><name><surname>Berne</surname><given-names>BJ</given-names></name><name><surname>Martyna</surname><given-names>GJ</given-names></name></person-group>
+<year>1992</year>
+<article-title>Reversible multiple time scale molecular dynamics.</article-title>
+<source>J Chem Phys</source>
+<volume>97</volume>
+<fpage>1990</fpage>
+<lpage>2001</lpage>
+</element-citation></ref><ref id="pone.0017459-Ryckaert1"><label>105</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Ryckaert</surname><given-names>J-P</given-names></name><name><surname>Ciccotti</surname><given-names>G</given-names></name><name><surname>Berendsen</surname><given-names>HJC</given-names></name></person-group>
+<year>1977</year>
+<article-title>Numerical integration of the Cartesian equations of motion of a system with constraints: Molecular dynamics of n-alkanes.</article-title>
+<source>J Comput Phys</source>
+<volume>23</volume>
+<fpage>327</fpage>
+<lpage>341</lpage>
+</element-citation></ref><ref id="pone.0017459-Kiel1"><label>106</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kiel</surname><given-names>C</given-names></name><name><surname>Serrano</surname><given-names>L</given-names></name></person-group>
+<year>2006</year>
+<article-title>The ubiquitin domain superfold: structure-based sequence alignments and characterization of binding epitopes.</article-title>
+<source>J Mol Biol</source>
+<volume>355</volume>
+<fpage>821</fpage>
+<lpage>844</lpage>
+<pub-id pub-id-type="pmid">16310215</pub-id></element-citation></ref></ref-list></back></article>

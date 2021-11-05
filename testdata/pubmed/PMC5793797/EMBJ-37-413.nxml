@@ -1,0 +1,818 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.0 20120330//EN" "JATS-archivearticle1.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article"><?properties open_access?><front><journal-meta><journal-id journal-id-type="nlm-ta">EMBO J</journal-id><journal-id journal-id-type="iso-abbrev">EMBO J</journal-id><journal-id journal-id-type="doi">10.1002/(ISSN)1460-2075</journal-id><journal-id journal-id-type="publisher-id">EMBJ</journal-id><journal-id journal-id-type="hwp">embojnl</journal-id><journal-title-group><journal-title>The EMBO Journal</journal-title></journal-title-group><issn pub-type="ppub">0261-4189</issn><issn pub-type="epub">1460-2075</issn><publisher><publisher-name>John Wiley and Sons Inc.</publisher-name><publisher-loc>Hoboken</publisher-loc></publisher></journal-meta><article-meta><article-id pub-id-type="pmid">29237698</article-id><article-id pub-id-type="pmc">5793797</article-id><article-id pub-id-type="doi">10.15252/embj.201797651</article-id><article-id pub-id-type="publisher-id">EMBJ201797651</article-id><article-categories><subj-group subj-group-type="overline"><subject>Article</subject></subj-group><subj-group subj-group-type="heading"><subject>Articles</subject></subj-group></article-categories><title-group><article-title>OxyS small <styled-content style="fixed-case">RNA</styled-content> induces cell cycle arrest to allow <styled-content style="fixed-case">DNA</styled-content> damage repair</article-title><alt-title alt-title-type="left-running-head">Shir Barshishat <italic>et&#x000a0;al</italic></alt-title></title-group><contrib-group><contrib id="embj201797651-cr-0001" contrib-type="author"><name><surname>Barshishat</surname><given-names>Shir</given-names></name><xref ref-type="aff" rid="embj201797651-aff-0001">
+<sup>1</sup>
+</xref><xref ref-type="author-notes" rid="embj201797651-note-1001">
+<sup>&#x02020;</sup>
+</xref></contrib><contrib id="embj201797651-cr-0002" contrib-type="author"><name><surname>Elgrably&#x02010;Weiss</surname><given-names>Maya</given-names></name><xref ref-type="aff" rid="embj201797651-aff-0001">
+<sup>1</sup>
+</xref><xref ref-type="author-notes" rid="embj201797651-note-1001">
+<sup>&#x02020;</sup>
+</xref></contrib><contrib id="embj201797651-cr-0003" contrib-type="author"><name><surname>Edelstein</surname><given-names>Jonathan</given-names></name><xref ref-type="aff" rid="embj201797651-aff-0001">
+<sup>1</sup>
+</xref><xref ref-type="author-notes" rid="embj201797651-note-1001">
+<sup>&#x02020;</sup>
+</xref></contrib><contrib id="embj201797651-cr-0004" contrib-type="author"><name><surname>Georg</surname><given-names>Jens</given-names></name><xref ref-type="aff" rid="embj201797651-aff-0002">
+<sup>2</sup>
+</xref><xref ref-type="author-notes" rid="embj201797651-note-1001">
+<sup>&#x02020;</sup>
+</xref></contrib><contrib id="embj201797651-cr-0005" contrib-type="author"><name><surname>Govindarajan</surname><given-names>Sutharsan</given-names></name><xref ref-type="aff" rid="embj201797651-aff-0001">
+<sup>1</sup>
+</xref></contrib><contrib id="embj201797651-cr-0006" contrib-type="author"><name><surname>Haviv</surname><given-names>Meytal</given-names></name><xref ref-type="aff" rid="embj201797651-aff-0001">
+<sup>1</sup>
+</xref></contrib><contrib id="embj201797651-cr-0007" contrib-type="author"><name><surname>Wright</surname><given-names>Patrick R</given-names></name><xref ref-type="aff" rid="embj201797651-aff-0003">
+<sup>3</sup>
+</xref></contrib><contrib id="embj201797651-cr-0008" contrib-type="author" corresp="yes"><name><surname>Hess</surname><given-names>Wolfgang R</given-names></name><contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-5340-3423</contrib-id><address><email>wolfgang.hess@biologie.uni-freiburg.de</email></address><xref ref-type="aff" rid="embj201797651-aff-0002">
+<sup>2</sup>
+</xref></contrib><contrib id="embj201797651-cr-0009" contrib-type="author" corresp="yes"><name><surname>Altuvia</surname><given-names>Shoshy</given-names></name><contrib-id contrib-id-type="orcid">http://orcid.org/0000-0001-6596-4140</contrib-id><address><email>shoshy.altuvia@mail.huji.ac.il</email></address><xref ref-type="aff" rid="embj201797651-aff-0001">
+<sup>1</sup>
+</xref></contrib></contrib-group><aff id="embj201797651-aff-0001">
+<label><sup>1</sup></label>
+<named-content content-type="organisation-division">Department of Microbiology and Molecular Genetics</named-content>
+<named-content content-type="organisation-division">IMRIC</named-content>
+<institution>The Hebrew University&#x02010;Hadassah Medical School</institution>
+<named-content content-type="city">Jerusalem</named-content>
+<country country="IL">Israel</country>
+</aff><aff id="embj201797651-aff-0002">
+<label><sup>2</sup></label>
+<named-content content-type="organisation-division">Faculty of Biology, Genetics and Experimental Bioinformatics</named-content>
+<institution>University of Freiburg</institution>
+<named-content content-type="city">Freiburg</named-content>
+<country country="DE">Germany</country>
+</aff><aff id="embj201797651-aff-0003">
+<label><sup>3</sup></label>
+<named-content content-type="organisation-division">Bioinformatics Group</named-content>
+<named-content content-type="organisation-division">Department of Computer Science</named-content>
+<institution>University of Freiburg</institution>
+<named-content content-type="city">Freiburg</named-content>
+<country country="DE">Germany</country>
+</aff><author-notes><corresp id="correspondenceTo"><label>*</label>
+Corresponding author. Tel: +49 761 2032796; E&#x02010;mail: <email>wolfgang.hess@biologie.uni-freiburg.de</email><break/>
+Corresponding author. Tel: +972 54 882 0623; E&#x02010;mail: <email>shoshy.altuvia@mail.huji.ac.il</email><break/></corresp><fn fn-type="equal" id="embj201797651-note-1001"><label>&#x02020;</label><p>These authors contributed equally to this work</p></fn></author-notes><pub-date pub-type="epub"><day>13</day><month>12</month><year>2017</year></pub-date><pub-date pub-type="ppub"><day>01</day><month>2</month><year>2018</year></pub-date><pub-date pub-type="pmc-release"><day>13</day><month>12</month><year>2017</year></pub-date><!-- PMC Release delay is 0 months and 0 days and was based on the <pub-date pub-type="epub"/>. --><volume>37</volume><issue>3</issue><issue-id pub-id-type="doi">10.1002/embj.v37.3</issue-id><fpage>413</fpage><lpage>426</lpage><history><date date-type="received"><day>22</day><month>6</month><year>2017</year></date><date date-type="rev-recd"><day>13</day><month>11</month><year>2017</year></date><date date-type="accepted"><day>20</day><month>11</month><year>2017</year></date></history><permissions><!--<copyright-statement content-type="issue-copyright"> &#x000a9; 2018 EMBO <copyright-statement>--><copyright-statement content-type="article-copyright">&#x000a9; 2017 The Authors. Published under the terms of the CC BY 4.0 license</copyright-statement><license license-type="creativeCommonsBy"><license-p>This is an open access article under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0</ext-link> License, which permits use, distribution and reproduction in any medium, provided the original work is properly cited.</license-p></license></permissions><self-uri content-type="pdf" xlink:type="simple" xlink:href="file:EMBJ-37-413.pdf"/><abstract id="embj201797651-abs-0001"><title>Abstract</title><p>To maintain genome integrity, organisms employ <styled-content style="fixed-case">DNA</styled-content> damage response, the underlying principles of which are conserved from bacteria to humans. The bacterial small <styled-content style="fixed-case">RNA</styled-content> OxyS of <italic>Escherichia coli</italic> is induced upon oxidative stress and has been implicated in protecting cells from <styled-content style="fixed-case">DNA</styled-content> damage; however, the mechanism by which OxyS confers genome stability remained unknown. Here, we revealed an OxyS&#x02010;induced molecular checkpoint relay, leading to temporary cell cycle arrest to allow damage repair. By repressing the expression of the essential transcription termination factor <italic>nusG</italic>, OxyS enables read&#x02010;through transcription into a cryptic prophage encoding <italic>kilR</italic>. The KilR protein interferes with the function of the major cell division protein FtsZ, thus imposing growth arrest. This transient growth inhibition facilitates <styled-content style="fixed-case">DNA</styled-content> damage repair, enabling cellular recovery, thereby increasing viability following stress. The OxyS&#x02010;mediated growth arrest represents a novel tier of defense, introducing a new regulatory concept into bacterial stress response.</p></abstract><kwd-group kwd-group-type="author-generated"><kwd id="embj201797651-kwd-0001">cell cycle arrest</kwd><kwd id="embj201797651-kwd-0002">checkpoint</kwd><kwd id="embj201797651-kwd-0003"><italic>Escherichia coli</italic></kwd><kwd id="embj201797651-kwd-0004">prophage</kwd><kwd id="embj201797651-kwd-0005">small <styled-content style="fixed-case">RNA</styled-content></kwd></kwd-group><kwd-group kwd-group-type="subject-categories"><title>Subject Categories</title><kwd>Cell Cycle</kwd><kwd>Microbiology, Virology &#x00026; Host Pathogen Interaction</kwd><kwd>RNA Biology</kwd></kwd-group><funding-group><award-group><funding-source>German&#x02010;Israeli Foundation for Scientific Research and Development (GIF)</funding-source><award-id>G&#x02010;1311&#x02010;416.13/2015</award-id></award-group><award-group><funding-source>Israel Science Foundation (ISF)</funding-source><award-id>711/13</award-id><award-id>1796/12</award-id></award-group><award-group><funding-source>German Federal Ministry for Education and Research</funding-source><award-id>031L0106B</award-id></award-group><award-group><funding-source>Deutsch Israelische Projektkooperation</funding-source><award-id>AM 441/1&#x02010;1 SO 568/1&#x02010;1</award-id></award-group></funding-group><counts><fig-count count="6"/><table-count count="1"/><page-count count="14"/><word-count count="10037"/></counts><custom-meta-group><custom-meta><meta-name>source-schema-version-number</meta-name><meta-value>2.0</meta-value></custom-meta><custom-meta><meta-name>component-id</meta-name><meta-value>embj201797651</meta-value></custom-meta><custom-meta><meta-name>cover-date</meta-name><meta-value>01 February 2018</meta-value></custom-meta><custom-meta><meta-name>details-of-publishers-convertor</meta-name><meta-value>Converter:WILEY_ML3GV2_TO_NLMPMC version:version=5.3.2 mode:remove_FC converted:01.02.2018</meta-value></custom-meta></custom-meta-group></article-meta><notes><p content-type="self-citation">
+<mixed-citation publication-type="journal" id="embj201797651-cit-1001">
+<source>The EMBO Journal</source> (<year>2018</year>) <volume>37</volume>: <fpage>413</fpage>&#x02013;<lpage>426</lpage>
+</mixed-citation>
+</p></notes></front><body><sec id="embj201797651-sec-0001"><title>Introduction</title><p>The oxidative stress&#x02010;induced OxyS small RNA (sRNA) was one of the first characterized sRNAs (Altuvia <italic>et&#x000a0;al</italic>, <xref rid="embj201797651-bib-0001" ref-type="ref">1997</xref>). A global regulatory role for OxyS was indicated by the substantial changes in the protein synthesis patterns observed with constitutive OxyS expression in <italic>Escherichia coli</italic> (Altuvia <italic>et&#x000a0;al</italic>, <xref rid="embj201797651-bib-0001" ref-type="ref">1997</xref>). Over the years, several approaches have been employed to identify genes controlled by OxyS including genetic screens, computational target prediction, and transcriptome analysis (Altuvia <italic>et&#x000a0;al</italic>, <xref rid="embj201797651-bib-0001" ref-type="ref">1997</xref>; Tjaden <italic>et&#x000a0;al</italic>, <xref rid="embj201797651-bib-0036" ref-type="ref">2006</xref>; De Lay &#x00026; Gottesman, <xref rid="embj201797651-bib-0017" ref-type="ref">2012</xref>). OxyS was shown to negatively regulate the mRNAs of the transcription factors FhlA, RpoS, and FlhDC, as well as a number of additional proteins (Altuvia <italic>et&#x000a0;al</italic>, <xref rid="embj201797651-bib-0001" ref-type="ref">1997</xref>; Tjaden <italic>et&#x000a0;al</italic>, <xref rid="embj201797651-bib-0036" ref-type="ref">2006</xref>; De Lay &#x00026; Gottesman, <xref rid="embj201797651-bib-0017" ref-type="ref">2012</xref>). Whereas negative regulation of <italic>rpoS</italic> (stationary&#x02010;phase sigma factor) appears to be indirect, that is, via titration of Hfq, regulation of <italic>fhlA</italic> and <italic>flhDC</italic> by OxyS results from direct base pairing with their mRNAs (Altuvia <italic>et&#x000a0;al</italic>, <xref rid="embj201797651-bib-0002" ref-type="ref">1998</xref>; Zhang <italic>et&#x000a0;al</italic>, <xref rid="embj201797651-bib-0043" ref-type="ref">1998</xref>; Argaman &#x00026; Altuvia, <xref rid="embj201797651-bib-0003" ref-type="ref">2000</xref>; Moon &#x00026; Gottesman, <xref rid="embj201797651-bib-0026" ref-type="ref">2011</xref>; De Lay &#x00026; Gottesman, <xref rid="embj201797651-bib-0017" ref-type="ref">2012</xref>).</p><p>Despite these findings, an intriguing aspect of OxyS remained enigmatic ever since its discovery; the RNA has been proposed to play a key role in protecting cells against the damaging effects of spontaneous and induced mutagenesis (Altuvia <italic>et&#x000a0;al</italic>, <xref rid="embj201797651-bib-0001" ref-type="ref">1997</xref>). However, attempts to reveal targets responsible for the sRNA antimutagenic phenotype failed. DNA can undergo various forms of damage by exposure to environmental stresses from various sources, or as a result of normal metabolism, producing genotoxic products. To prevent mutagenesis and maintain genome stability, DNA damage responses have evolved that control multiple processes including DNA repair, cell cycle checkpoints, and cell death (Spampinato, <xref rid="embj201797651-bib-0034" ref-type="ref">2016</xref>). Here, we show that the OxyS antimutagenic phenotype is intricately linked with transient induction of cell growth arrest. By lowering the expression of the transcription termination factor NusG, OxyS enables expression of a <italic>rac</italic> prophage <italic>kilR</italic> gene encoding an inhibitor of cell division. We propose that the transient inhibition of cell division induced by OxyS facilitates DNA repair and recovery from oxidative stress.</p><p>NusG is a highly conserved protein regulator of RNA polymerase (RNAP). Through its N&#x02010;terminal domain, it associates with RNAP modulating its processivity and termination properties (Sullivan &#x00026; Gottesman, <xref rid="embj201797651-bib-0035" ref-type="ref">1992</xref>; Werner, <xref rid="embj201797651-bib-0039" ref-type="ref">2012</xref>). The C&#x02010;terminal domain of NusG can either bind the transcription termination factor Rho (stimulating Rho&#x02010;dependent termination) or NusE, a component of the 30S ribosomal subunit (S10) with dual roles in transcription and translation control. Consequently, under certain circumstances, the N&#x02010;terminal domain of NusG is bound by RNAP, while the C&#x02010;terminal domain associates with NusE. Simultaneous binding of NusG to RNAP and NusE directly links the elongating transcription complex to the ribosome and provides the physical framework for the coupling of transcription and translation in bacteria (Burmann <italic>et&#x000a0;al</italic>, <xref rid="embj201797651-bib-0010" ref-type="ref">2010</xref>).</p><p>Transcription termination is essential for cell viability and so are Rho and its cofactor, NusG (Downing <italic>et&#x000a0;al</italic>, <xref rid="embj201797651-bib-0018" ref-type="ref">1990</xref>). Studies of RNAP distribution and mapping of transcription elongation and termination in <italic>E.&#x000a0;coli</italic> cells have provided an explanation for the essentiality of NusG. Rho activity clusters in horizontally acquired DNA fragments including prophages, indicating that Rho and NusG play an important role in silencing potentially harmful foreign genes (Cardinale <italic>et&#x000a0;al</italic>, <xref rid="embj201797651-bib-0011" ref-type="ref">2008</xref>; Mooney <italic>et&#x000a0;al</italic>, <xref rid="embj201797651-bib-0027" ref-type="ref">2009</xref>; Peters <italic>et&#x000a0;al</italic>, <xref rid="embj201797651-bib-0029" ref-type="ref">2009</xref>, <xref rid="embj201797651-bib-0030" ref-type="ref">2012</xref>). Moreover, elimination of such foreign DNA elements permits deletion of <italic>nusG,</italic> although Rho itself remains essential (Cardinale <italic>et&#x000a0;al</italic>, <xref rid="embj201797651-bib-0011" ref-type="ref">2008</xref>). Here, we provide evidence that inhibition of cell division due to transient repression of <italic>nusG</italic> by OxyS protects cells from DNA damage.</p></sec><sec id="embj201797651-sec-0002"><title>Results</title><sec id="embj201797651-sec-0003"><title>OxyS expression inhibits cellular growth</title><p>Studying OxyS, we noticed that plasmid&#x02010;borne, unregulated expression of OxyS is detrimental. Moreover, we identified an <italic>oxyS</italic> point mutation (OxyS<sub>A69C</sub>) that promoted toxicity beyond wild&#x02010;type levels. Intrigued by this phenotype, we set to randomly mutagenize OxyS wild type and OxyS<sub>A69C</sub> and screened for OxyS suppressor mutants that suppressed toxicity. In light of our observation that OxyS toxicity was more pronounced in strains deficient for RelA, the stringent response major regulator, we used this genetic background to select for suppressor mutations. To eliminate mutations rendering OxyS completely inactive, for example, by decreasing sRNA stability, we focused on mutants that are no longer toxic, but capable of repressing <italic>fhlA&#x02010;lacZ</italic>, a previously characterized target of OxyS (Argaman &#x00026; Altuvia, <xref rid="embj201797651-bib-0003" ref-type="ref">2000</xref>). We isolated and sequenced 25 mutants including some carrying identical mutations. Mutations that rendered OxyS harmless clustered in two sites: the loop sequence of hairpin B (OxyS<sub>C56U; C58U</sub>) and the single&#x02010;stranded region located between hairpins B and C (OxyS<sub>C76U; C77U</sub> and OxyS<sub>C70U</sub>) (Fig&#x000a0;<xref rid="embj201797651-fig-0001" ref-type="fig">1</xref>A). The nontoxic mutant OxyS<sub>C76G; C77G</sub> was constructed by site&#x02010;directed mutagenesis based on the screen above. For P<italic>lac</italic>&#x02010;controlled expression, the mutations were transferred to pBR&#x02010;P<italic>lac</italic> plasmid (Guillier &#x00026; Gottesman, <xref rid="embj201797651-bib-0020" ref-type="ref">2006</xref>), and the mutants were examined for their effect on cellular growth upon induction with IPTG. Growth curves and survival assays showed that whereas wild&#x02010;type OxyS and OxyS<sub>A69C</sub> inhibited growth, forming only few CFU, the growth arrest phenotype was no longer detectable in the OxyS<sub>C56U; C58U</sub> and OxyS<sub>C76U; C77U</sub> mutants (Fig&#x000a0;<xref rid="embj201797651-fig-0001" ref-type="fig">1</xref>B and <xref rid="embj201797651-sup-0001" ref-type="supplementary-material">Appendix&#x000a0;Fig S1A</xref>). The revertant of OxyS<sub>A69C</sub>, OxyS<sub>A69C; C70U</sub>, carrying both mutations, exhibited an intermediate growth rescue. Northern blots showed that the RNA levels of the suppressor OxyS mutants were comparable to wild&#x02010;type OxyS (Fig&#x000a0;<xref rid="embj201797651-fig-0002" ref-type="fig">2</xref>B), and functional assays showed that OxyS mutants repressed the translation of <italic>fhlA&#x02010;lacZ</italic> (<xref rid="embj201797651-sup-0001" ref-type="supplementary-material">Appendix&#x000a0;Fig S1B</xref>), indicating that the OxyS mutants were active regulators, though not toxic.</p><fig fig-type="Figure" xml:lang="en" id="embj201797651-fig-0001" orientation="portrait" position="float"><label>Figure 1</label><caption><title>Toxic and nontoxic OxyS</title><p>
+<list list-type="alpha-upper" id="embj201797651-list-0002"><list-item><p>Toxic (purple) and nontoxic suppressor mutations (green) in OxyS. The loops of hairpins A and C were found previously to interact with the <italic>fhlA</italic> ribosome&#x02010;binding site. Hairpin C is Rho&#x02010;independent transcription terminator.</p></list-item><list-item><p>Growth curves of cells (MG1655 <italic>relA</italic>::<italic>cat</italic>,<italic> lacI</italic>
+<sup>q</sup>) with OxyS plasmids. Cultures carrying plasmids were treated with 1&#x000a0;mM IPTG at dilution, OD was measured as indicated.</p></list-item><list-item><p>OxyS is not toxic in <italic>kilR</italic>&#x02010;deficient cells. Wild&#x02010;type and &#x00394;<italic>kilR</italic>::<italic>cat</italic> cells were transformed with plasmids expressing OxyS, wild type and mutants, as indicated.</p></list-item><list-item><p>Growth curves of wild&#x02010;type and <italic>kilR</italic> mutant cells with OxyS plasmids. Cultures of wild&#x02010;type and &#x00394;<italic>kilR</italic>::<italic>cat</italic> carrying plasmids were treated with 1&#x000a0;mM IPTG at dilution, OD was measured as indicated. Both strains are also <italic>relA</italic>::<italic>kan, lacI</italic>
+<sup>q</sup>. Although the plating of OxyS<sub>A69C</sub> in &#x00394;<italic>kilR</italic> seems less efficient than that of OxyS, their growth curves are very similar, indicating that neither OxyS nor OxyS<sub>A69C</sub> are toxic in &#x00394;<italic>kilR</italic>.</p></list-item></list>
+</p></caption><graphic id="nlm-graphic-5" xlink:href="EMBJ-37-413-g002"/></fig><fig fig-type="Figure" xml:lang="en" id="embj201797651-fig-0002" orientation="portrait" position="float"><label>Figure 2</label><caption><title>OxyS represses <italic>nusG</italic> expression</title><p>
+<list list-type="alpha-upper" id="embj201797651-list-0003"><list-item><p>Predicted base pairing between <italic>nusG</italic> and OxyS RNAs. The initiation codon and the Shine&#x02013;Dalgarno sequence of <italic>nusG</italic> are marked in red. Suppressor nontoxic OxyS mutants are in green, the highly toxic mutant is in purple.</p></list-item><list-item><p>Northern analysis of RNA extracted from cells carrying control and OxyS plasmids. Total RNA was extracted from cultures treated at dilution with 1&#x000a0;mM IPTG for 90&#x000a0;min. Samples were analyzed by 1.4% agarose&#x02013;formaldehyde gel electrophoresis to detect the full&#x02010;length transcript of <italic>secE&#x02010;nusG</italic> and tmRNA or 6% urea&#x02013;PAGE to detect OxyS and tmRNA. The tmRNA served as loading control. The membranes were probed with 5&#x02032; end&#x02010;labeled OxyS and tmRNA&#x02010;specific primers and antisense riboprobe to detect <italic>secE&#x02010;nusG</italic> mRNA. Relative intensity (RI) of <italic>secE&#x02010;nusG</italic> in the presence of control, wild&#x02010;type, and OxyS plasmids.</p></list-item><list-item><p>Cultures (<italic>relA</italic>::<italic>cat,</italic> &#x00394;<italic>oxySli</italic>::<italic>frt, lacZ</italic>::<italic>Tn</italic>10, <italic>lacI</italic>
+<sup>q</sup>) carrying P<italic>tac</italic>&#x02010;<italic>nusG&#x02010;lacZ</italic> (pSC101*; single copy) translational fusion and OxyS plasmids were treated with IPTG (1&#x000a0;mM) at OD<sub>600</sub>&#x000a0;=&#x000a0;0.1. &#x003b2;&#x02010;Galactosidase activity was measured 120&#x000a0;min after treatment. Results are displayed as mean of two to eight biological experiments&#x000a0;&#x000b1;&#x000a0;standard deviation.</p></list-item><list-item><p>Primer extension of <italic>in&#x000a0;vitro</italic>&#x02010;synthesized <italic>nusG</italic> mRNA in the absence or presence of synthesized OxyS RNAs. Full&#x02010;length cDNA (FL). Arrow denotes termination signal. The site of Shine&#x02013;Dalgarno sequence (GGAG) is denoted in red. Relative intensity (R.I) denotes the ratio of the termination signal per full&#x02010;length compared to wild&#x02010;type <italic>oxyS</italic>&#x02010;<italic>nusG</italic> interaction, which was used as a 100% reference.</p></list-item></list>
+</p><p>
+<named-content content-type="attribution">Source data are available online for this figure.</named-content>
+</p></caption><graphic id="nlm-graphic-7" xlink:href="EMBJ-37-413-g003"/></fig></sec><sec id="embj201797651-sec-0004"><title>OxyS represses the <italic>nusG</italic> mRNA</title><p>The availability of highly toxic and nontoxic OxyS mutants prompted us to search for targets whose putative complementary sites match the observed changes in OxyS mutants. We performed a whole genome IntaRNA (Wright <italic>et&#x000a0;al</italic>, <xref rid="embj201797651-bib-0040" ref-type="ref">2014</xref>) search in <italic>E.&#x000a0;coli</italic> with wild&#x02010;type OxyS and its suppressor mutant versions. Of 4,301 investigated genes, 66 matched the predicted pattern. To further pin down the critical target(s), this list of genes was compared with the list of <italic>E.&#x000a0;coli</italic> essential genes (Baba <italic>et&#x000a0;al</italic>, <xref rid="embj201797651-bib-0004" ref-type="ref">2006</xref>), yielding three candidates (<italic>nusG</italic>,<italic> pyrG</italic>, and <italic>orn</italic>). Here, we present the physiological consequences of OxyS&#x02010;<italic>nusG</italic> interaction.</p><p>The <italic>nusG</italic> gene is second in the operon <italic>secE</italic>&#x02010;<italic>nusG,</italic> and OxyS is predicted to base&#x02010;pair with the ribosome&#x02010;binding site of <italic>nusG</italic> (Fig&#x000a0;<xref rid="embj201797651-fig-0002" ref-type="fig">2</xref>A). The mutation OxyS<sub>A69C</sub> is expected to extend the interaction with the Shine&#x02013;Dalgarno sequence and to increase the stability of <italic>oxyS&#x02010;nusG</italic> hybrid. Northern Blot analysis detected a 2.5&#x02010;fold to 3.5&#x02010;fold reduction in <italic>nusG</italic> mRNA levels upon exposure to wild&#x02010;type OxyS or OxyS<sub>A69C</sub> pulse expression compared to OxyS suppressor mutants, indicating that expression of <italic>nusG</italic> is negatively regulated by OxyS (Fig&#x000a0;<xref rid="embj201797651-fig-0002" ref-type="fig">2</xref>B). To examine the effect of OxyS on <italic>nusG</italic> at the post&#x02010;transcriptional level, we constructed a P<italic>tac</italic>&#x02010;<italic>nusG&#x02010;lacZ</italic> translational fusion. Levels of <italic>nusG</italic>&#x02010;<italic>lacZ</italic> were reduced twofold to threefold in the presence of OxyS or OxyS<sub>A69C</sub>, whereas the isolated OxyS suppressor mutants had no effect on <italic>nusG</italic>&#x02010;<italic>lacZ</italic> expression (Fig&#x000a0;<xref rid="embj201797651-fig-0002" ref-type="fig">2</xref>C). Given that stable RNA hybrids may block the elongation by reverse transcriptase, we examined the interaction of <italic>in&#x000a0;vitro</italic>&#x02010;synthesized OxyS and <italic>nusG</italic> RNAs using primer extension assays. These assays showed that the interaction between OxyS and <italic>nusG</italic> results in a strong termination signal (Fig&#x000a0;<xref rid="embj201797651-fig-0002" ref-type="fig">2</xref>D). The termination site mapped to the Shine&#x02013;Dalgarno sequence of <italic>nusG</italic> that is the center of complementarity between OxyS and <italic>nusG</italic>. The termination signal produced by OxyS<sub>A69C</sub> was stronger than that of wild type, while the suppressor mutants exhibited a weaker signal. No termination was detected using OxyS<sub>C76G; C77G</sub>. An RNase protection assay further confirmed these findings. In this assay, base&#x02010;pairing RNAs are protected while unpaired nucleotides are cleaved by single&#x02010;stranded specific ribonucleases. As the binding between OxyS and <italic>nusG</italic> is discontinuous, base&#x02010;pairing efficiency between <italic>nusG</italic> and OxyS mutant RNAs was estimated based on the formation of the full&#x02010;length hybrid (<xref rid="embj201797651-sup-0001" ref-type="supplementary-material">Appendix&#x000a0;Fig S2A</xref>). The levels of the full&#x02010;length hybrid formed with OxyS<sub>A69C</sub> were higher than those formed with wild&#x02010;type OxyS, whereas OxyS<sub>C76G; C77G</sub> showed decreased levels of hybrid protection.</p><p>To affirm base pairing, we replaced the GG nucleotides at positions &#x02212;15 and &#x02212;16 in <italic>nusG</italic> mRNA by CC. This change was predicted to complement OxyS<sub>C76G; C77G</sub>. The P<italic>tac</italic>&#x02010;<italic>nusG</italic>
+<sub>G&#x02010;15C; G&#x02010;16C</sub>
+<italic>&#x02010;lacZ</italic> translational fusion was slightly repressed by wild&#x02010;type OxyS; however OxyS<sub>C76G; C77G</sub> failed to restore repression by binding its complementary mutant <italic>nusG</italic>
+<sub>G&#x02010;15C; G&#x02010;16C</sub>, indicating that repression may involve more than one interaction site (Fig&#x000a0;<xref rid="embj201797651-fig-0003" ref-type="fig">3</xref>A and B, left panel). Searching the sequence nearby, we identified another site for OxyS binding slightly upstream of the site overlapping the RBS (Fig&#x000a0;<xref rid="embj201797651-fig-0003" ref-type="fig">3</xref>A). This site of <italic>nusG</italic> was predicted to bind a sequence at the 3&#x02032; end of OxyS from nucleotide G75 to U87, suggesting that <italic>nusG</italic> mRNA can be bound by two different OxyS molecules. The P<italic>tac</italic>&#x02010;<italic>nusG</italic>
+<sub>G&#x02010;31C; G&#x02010;32C</sub>
+<italic>&#x02010;lacZ</italic> translational fusion was repressed by wild&#x02010;type OxyS, whereas repression by its complementary OxyS mutant OxyS<sub>C76G; C77G</sub> was less prominent (Fig&#x000a0;<xref rid="embj201797651-fig-0003" ref-type="fig">3</xref>B). Expression of NusG quadruple mutant (G&#x02010;15C; G&#x02010;16C and G&#x02010;31C; G&#x02010;32C) carrying mutations at the two sites predicted to bind the same sequence in OxyS was repressed by OxyS<sub>C76G; C77G</sub> and unaffected by wild&#x02010;type OxyS (Fig&#x000a0;<xref rid="embj201797651-fig-0003" ref-type="fig">3</xref>B right panel). Together, the data indicate that two molecules of OxyS can simultaneously bind two different sites in <italic>nusG</italic>. Analysis of RNA interactions by EMSA further showed that <italic>nusG</italic> quadruple mutant could be bound by its complementary OxyS<sub>C76G; C77G</sub> mutant as opposed to wild&#x02010;type OxyS (<xref rid="embj201797651-sup-0001" ref-type="supplementary-material">Appendix&#x000a0;Fig S2B</xref>).</p><fig fig-type="Figure" xml:lang="en" id="embj201797651-fig-0003" orientation="portrait" position="float"><label>Figure 3</label><caption><title>Two OxyS molecules can bind <italic>nusG</italic> at two different sites</title><p>
+<list list-type="alpha-upper" id="embj201797651-list-0004"><list-item><p>Extended base pairing between <italic>nusG</italic> and OxyS RNAs. The initiation codon and the Shine&#x02013;Dalgarno sequence of <italic>nusG</italic> are marked in red. Suppressor nontoxic OxyS mutants are in green, the highly toxic mutant is in purple. The OxyS two molecules are marked in blue. <italic>nusG</italic> quadruple mutant (G&#x02010;15C; G&#x02010;16C; G&#x02010;31C; G&#x02010;32C).</p></list-item><list-item><p>Cultures carrying P<italic>tac</italic>&#x02010;<italic>nusG&#x02010;lacZ</italic> (double and quadruple mutants) and OxyS (wild type and C76G; C77G) were treated with IPTG (1&#x000a0;mM) at OD<sub>600</sub>&#x000a0;=&#x000a0;0.1. &#x003b2;&#x02010;Galactosidase activity was measured 120&#x000a0;min after treatment. Results are displayed as mean of three biological experiments&#x000a0;&#x000b1;&#x000a0;standard deviation. Fold repression of <italic>nusG</italic> mutants by wild type and OxyS mutant is denoted. The changes in the basal expression levels of <italic>nusG</italic> mutants could be due to an effect of the mutations on either the sequence or the structure encompassing the RBS.</p></list-item></list>
+</p></caption><graphic id="nlm-graphic-9" xlink:href="EMBJ-37-413-g004"/></fig></sec><sec id="embj201797651-sec-0005"><title>The toxic phenotype of OxyS results from <italic>nusG</italic> repression</title><p>NusG has been implicated in the suppression of toxic activities by horizontally acquired genes (Cardinale <italic>et&#x000a0;al</italic>, <xref rid="embj201797651-bib-0011" ref-type="ref">2008</xref>). Furthermore, deletion of the cryptic <italic>rac</italic> prophage in wild&#x02010;type <italic>E.&#x000a0;coli</italic> permits deletion of <italic>nusG</italic>. The <italic>rac</italic> prophage carries the <italic>kilR</italic> gene encoding an inhibitor of cell division (Conter <italic>et&#x000a0;al</italic>, <xref rid="embj201797651-bib-0015" ref-type="ref">1996</xref>; Burke <italic>et&#x000a0;al</italic>, <xref rid="embj201797651-bib-0009" ref-type="ref">2013</xref>). To determine whether the toxic phenotype of OxyS is due to activation of <italic>kilR</italic>, we transformed plasmid P<italic>lac</italic>&#x02010;<italic>oxyS</italic> into an <italic>E.&#x000a0;coli</italic> strain lacking the <italic>kilR</italic> gene. Wild&#x02010;type <italic>E.&#x000a0;coli</italic> failed to yield any colonies when transformed with P<italic>lac</italic>&#x02010;<italic>oxyS</italic> or P<italic>lac</italic>&#x02010;<italic>oxyS</italic>
+<sub>A69C,</sub> whereas mutation of <italic>kilR</italic> supported colony formation (Fig&#x000a0;<xref rid="embj201797651-fig-0001" ref-type="fig">1</xref>C). The suppressor nontoxic OxyS mutant formed normal size colonies in both wild type and &#x00394;<italic>kilR</italic>. Similarly, growth of wild&#x02010;type cells expressing OxyS and OxyS<sub>A69C</sub> was inhibited, whereas &#x00394;<italic>kilR::cat</italic> cells remained unaffected (Fig&#x000a0;<xref rid="embj201797651-fig-0001" ref-type="fig">1</xref>D). Together, these data indicate that toxicity is due to elevated expression of KilR caused by OxyS&#x02010;mediated repression of <italic>nusG</italic>.</p><p>Furthermore, as <italic>nusG</italic> is second in the operon <italic>secE&#x02010;nusG</italic>, it is possible that OxyS also decreases <italic>secE</italic> expression. However, such a decrease is not relevant for the toxic phenotype of OxyS. OxyS is less toxic in the presence of a plasmid expressing <italic>nusG</italic>, whereas in the presence of a plasmid expressing <italic>secE</italic>, OxyS is highly toxic (<xref rid="embj201797651-sup-0001" ref-type="supplementary-material">Appendix&#x000a0;Fig S3</xref>). These results indicate that an increase in the expression levels of <italic>nusG</italic> can negate <italic>oxyS</italic> toxicity, whereas a concomitant increase in <italic>secE</italic> has no effect on <italic>oxyS</italic> toxicity. Therefore, <italic>oxyS</italic> is toxic because it decreases <italic>nusG</italic> expression levels.</p></sec><sec id="embj201797651-sec-0006"><title>The toxic phenotype of OxyS correlates with bacterial recovery from stress</title><p>Expression of OxyS is induced upon exposure to hydrogen peroxide (Altuvia <italic>et&#x000a0;al</italic>, <xref rid="embj201797651-bib-0001" ref-type="ref">1997</xref>). To determine whether OxyS expression influences recovery of <italic>E.&#x000a0;coli</italic> exposed to oxidative stress, and to investigate whether OxyS toxicity is required for efficient recovery, we transformed P<italic>lac</italic>&#x02010;<italic>oxyS</italic> (toxic) and P<italic>lac</italic>&#x02010;<italic>oxyS</italic>
+<sub>C56U; C58U</sub> (nontoxic) into an <italic>oxyS</italic> mutant in which only the regulatory elements relevant for OxyS toxicity were deleted. In this mutant, the overlapping <italic>oxyR</italic>&#x02010;<italic>oxyS</italic> promoters, the 5&#x02032; end hairpin of OxyS, and its 3&#x02032; end <italic>rho</italic>&#x02010;independent terminator were left intact to avoid polar effects (&#x02206;<italic>oxySli</italic>). Cultures carrying control and OxyS expressing plasmids were grown with IPTG to induce OxyS expression in the exponential phase, when the cultures were treated with hydrogen peroxide to induce oxidative stress. After 30&#x000a0;min of treatment, the cultures were washed and resuspended in fresh medium. Recovery was determined after 60&#x000a0;min of growth in nonstressful medium (after wash). Although the survival of cultures expressing wild&#x02010;type OxyS decreased dramatically (<xref rid="embj201797651-sup-0001" ref-type="supplementary-material">Appendix&#x000a0;Fig S1A</xref>), it was higher than cultures carrying a control plasmid after exposure to hydrogen peroxide. The recovery rate of the nontoxic OxyS mutant was between the rate of the vector control and OxyS, demonstrating that OxyS toxicity has an important role in bacterial recovery (Fig&#x000a0;<xref rid="embj201797651-fig-0004" ref-type="fig">4</xref>A).</p><fig fig-type="Figure" xml:lang="en" id="embj201797651-fig-0004" orientation="portrait" position="float"><label>Figure 4</label><caption><title>OxyS facilitates recovery from oxidative stress</title><p>
+<list list-type="alpha-upper" id="embj201797651-list-0005"><list-item><p>OxyS toxicity facilitates recovery. Cultures (<italic>relA</italic>::<italic>cat</italic> &#x00394;<italic>oxySli</italic>::<italic>kan, lacI</italic>
+<sup>q</sup>) with OxyS plasmids grown with IPTG (1&#x000a0;mM) were treated with 1&#x000a0;mM H<sub>2</sub>O<sub>2</sub> at OD<sub>600</sub>&#x000a0;=&#x000a0;0.1 for 30&#x000a0;min. Thereafter, the cultures were washed and continued to grow in fresh LB medium. Samples were taken 30, 60, and 90&#x000a0;min after wash. The number of cells after wash was used as 100% reference. Results are displayed as mean of two biological experiments&#x000a0;&#x000b1;&#x000a0;standard deviation.</p></list-item><list-item><p>OxyS&#x02010;mediated recovery requires the function of KilR protein. Cultures as indicated were treated with H<sub>2</sub>O<sub>2</sub> for 30&#x000a0;min and washed as described above. <italic>relA</italic>::<italic>cat</italic> (wild&#x02010;type I) and <italic>relA</italic>::<italic>kan</italic> (wild&#x02010;type II) were used as controls for &#x00394;<italic>oxySli</italic>::<italic>kan</italic> and &#x00394;<italic>kilR::cat,</italic> respectively. Results are displayed as mean of four biological experiments&#x000a0;&#x000b1;&#x000a0;standard deviation.</p></list-item><list-item><p>OxyS increases <italic>kilR</italic> mRNA levels in response to oxidative stress. RT&#x02013;PCR of RNA samples taken at the indicated time points following exposure to 1&#x000a0;mM of H<sub>2</sub>O<sub>2</sub>. Two samples per treatment and two reactions per sample were analyzed. Results are displayed as mean of two biological experiments &#x000b1; standard deviation. <italic>kilR</italic> initial levels detected in the absence of treatment were used as 100% reference.</p></list-item><list-item><p>Northern analysis of <italic>secE</italic>&#x02010;<italic>nusG</italic> mRNA in wild type and <italic>oxyS</italic> mutant exposed to hydrogen peroxide prior to the addition of rifampicin (rif).</p></list-item><list-item><p>Calculated half&#x02010;life of <italic>nusG</italic> mRNA in wild type and <italic>oxyS</italic> mutant following exposure to H<sub>2</sub>O<sub>2</sub>. Average and standard deviations of two biological experiments are shown.</p></list-item><list-item><p>OxyS decreases NusG&#x02010;SPA protein levels in response to oxidative stress. Wild&#x02010;type and <italic>oxyS</italic> mutant cells carrying NusG&#x02010;SPA were exposed to 1&#x000a0;mM H<sub>2</sub>O<sub>2</sub>. Protein samples taken at the indicated time points were analyzed using SPA&#x02010;specific antibodies. The intensities of NusG&#x02010;SPA and Hfq (serving as a loading control) were measured using Image Studio Lite program. Relative intensity was calculated using NusG&#x02010;SPA initial levels (in the absence of treatment) as 100% reference. Standard deviations of two biological experiments are shown.</p></list-item></list>
+</p><p>
+<named-content content-type="attribution">Source data are available online for this figure.</named-content>
+</p></caption><graphic id="nlm-graphic-11" xlink:href="EMBJ-37-413-g005"/></fig><p>The levels of OxyS at 30&#x000a0;min after exposure to hydrogen peroxide are about sevenfold lower than OxyS levels produced from the P<italic>lac</italic> plasmid (<xref rid="embj201797651-sup-0001" ref-type="supplementary-material">Appendix&#x000a0;Fig S4</xref>). To investigate the effect of the chromosomally encoded <italic>oxyS</italic> allele on recovery from oxidative stress, and to determine the role of <italic>kilR</italic> in <italic>oxyS</italic>&#x02010;mediated recovery, cultures of wild&#x02010;type &#x00394;<italic>oxyS</italic> and &#x00394;<italic>kilR</italic> exposed to hydrogen peroxide for 30&#x000a0;min were examined at 60&#x000a0;min after H<sub>2</sub>O<sub>2</sub> removal. Survival of cells carrying an intact chromosomally located <italic>oxyS</italic> allele increased by ~4&#x02010;fold, whereas survival of &#x00394;<italic>oxyS</italic> and &#x00394;<italic>kilR</italic> mutants decreased by ~1.5&#x02010;fold (Fig&#x000a0;<xref rid="embj201797651-fig-0004" ref-type="fig">4</xref>B), indicating that <italic>oxyS</italic>&#x02010;mediated recovery required <italic>kilR</italic>. Furthermore, quantification of <italic>kilR</italic> RNA level using real&#x02010;time PCR demonstrated that upon exposure to H<sub>2</sub>O<sub>2,</sub>
+<italic>kilR</italic> mRNA levels increased by ~3&#x02010;fold in wild&#x02010;type cells carrying an intact <italic>oxyS</italic> allele compared to <italic>oxyS&#x02010;</italic>deficient cells (Fig&#x000a0;<xref rid="embj201797651-fig-0004" ref-type="fig">4</xref>C). The increase in <italic>kilR</italic> levels followed a decrease in <italic>nusG</italic> mRNA stability; the half&#x02010;life of <italic>nusG</italic> mRNA in wild&#x02010;type cells exposed to hydrogen peroxide was reduced by 1.5&#x02010;fold compared to its half&#x02010;life in <italic>oxyS</italic> mutant (Fig&#x000a0;<xref rid="embj201797651-fig-0004" ref-type="fig">4</xref>D and E). Likewise, NusG:SPA protein levels carrying the sequential peptide affinity (SPA) tag at the NusG C&#x02010;terminal end decreased upon exposure to H<sub>2</sub>O<sub>2</sub> in wild type but not in an <italic>oxyS</italic>&#x02010;deficient mutant (Fig&#x000a0;<xref rid="embj201797651-fig-0004" ref-type="fig">4</xref>F). Together, the results demonstrate that <italic>kilR</italic> expression was controlled by <italic>nusG</italic> and that expression of the latter was inhibited by OxyS.</p></sec><sec id="embj201797651-sec-0007"><title>OxyS promotes recovery from stress by interfering with cell division</title><p>Assembly of the essential, tubulin&#x02010;like FtsZ protein into a ring&#x02010;shaped structure at the nascent division site serves as a scaffold for recruitment of the cell division machinery. Kil proteins prevent cell division by interfering with FtsZ function (Conter <italic>et&#x000a0;al</italic>, <xref rid="embj201797651-bib-0015" ref-type="ref">1996</xref>; Burke <italic>et&#x000a0;al</italic>, <xref rid="embj201797651-bib-0009" ref-type="ref">2013</xref>; Haeusser <italic>et&#x000a0;al</italic>, <xref rid="embj201797651-bib-0021" ref-type="ref">2014</xref>; Hernandez&#x02010;Rocamora <italic>et&#x000a0;al</italic>, <xref rid="embj201797651-bib-0022" ref-type="ref">2015</xref>). To determine whether recovery is due to interference with cell division, we examined growth resumption in cells with an intact <italic>oxyS</italic> allele and mild overexpression of <italic>ftsQAZ</italic> operon encoding <italic>ftsQ</italic>,<italic> ftsA,</italic> and <italic>ftsZ</italic> genes from a low&#x02010;copy plasmid (Bernhardt &#x00026; de Boer, <xref rid="embj201797651-bib-0007" ref-type="ref">2004</xref>). The presence of <italic>ftsQAZ</italic> abrogated bacterial recovery from stress (<xref rid="embj201797651-sup-0001" ref-type="supplementary-material">Appendix&#x000a0;Fig S5A</xref>). Together, the data indicate that OxyS&#x02010;mediated cell division inhibition is crucial for bacterial growth resumption following stress.</p><p>We visualized the effect of OxyS on cell morphology by fluorescence microscopy. Images of cells expressing OxyS or OxyS<sub>A69C</sub> displayed elongated filaments due to lack of cell division. In contrast, cells expressing the nontoxic mutant OxyS<sub>C56U; C58U</sub> formed short rod&#x02010;shaped cells very similar to control cells (Fig&#x000a0;<xref rid="embj201797651-fig-0005" ref-type="fig">5</xref>A). The ZapA protein interacts with FtsZ at an early stage of FtsZ&#x02010;ring assembly and co&#x02010;localizes with it (Gueiros&#x02010;Filho &#x00026; Losick, <xref rid="embj201797651-bib-0019" ref-type="ref">2002</xref>). Images of cells with <italic>zapA&#x02010;gfp</italic> fusions showed that ring assembly was impaired in cells expressing OxyS (Fig&#x000a0;<xref rid="embj201797651-fig-0005" ref-type="fig">5</xref>A). The OxyS&#x02010;mediated filamentation was prevented in the <italic>kilR</italic> mutant and by overexpression of the <italic>ftsQAZ</italic> operon from a low&#x02010;copy plasmid (Fig&#x000a0;<xref rid="embj201797651-fig-0005" ref-type="fig">5</xref>B and <xref rid="embj201797651-sup-0001" ref-type="supplementary-material">Appendix&#x000a0;Fig S5B</xref>). Statistical analysis of cell length distribution of cultures expressing OxyS in wild type or &#x00394;<italic>kilR</italic> and of wild&#x02010;type cultures expressing both OxyS and FtsQAZ further confirmed the conclusion that OxyS&#x02010;mediated filamentation requires active KilR and inactive FtsZ (<xref rid="embj201797651-sup-0001" ref-type="supplementary-material">Appendix&#x000a0;Fig S5B</xref>). Moreover, images of cells expressing a plasmid&#x02010;encoded KilR protein displayed elongated filaments and impaired ring assembly (Fig&#x000a0;<xref rid="embj201797651-fig-0005" ref-type="fig">5</xref>A).</p><fig fig-type="Figure" xml:lang="en" id="embj201797651-fig-0005" orientation="portrait" position="float"><label>Figure 5</label><caption><title>Fluorescence microscopy images</title><p>
+<list list-type="alpha-upper" id="embj201797651-list-0006"><list-item><p>OxyS expression impairs cell division. Cultures of <italic>Escherichia coli</italic> carrying <italic>ZapA&#x02010;gfp</italic> fusion as a single copy in the native position in the chromosome (<italic>ZapA&#x02010;gfp</italic>:<italic>cat</italic>) and P<italic>lac&#x02010;oxyS</italic> plasmids were treated with 1<bold>&#x000a0;</bold>mM IPTG at dilution. Samples were taken at 3&#x000a0;h post&#x02010;dilution. All samples were spotted on PBS agar pad for imaging. DNA stained blue with DAPI. Scale bar, 5&#x000a0;&#x003bc;m.</p></list-item><list-item><p>OxyS&#x02010;mediated impaired cell division is prevented in &#x00394;<italic>kilR</italic> mutant and by overexpression of FtsQAZ. Cells were grown as described above for 3&#x000a0;h at 37&#x000b0;C in the presence of 1&#x000a0;mM IPTG. The operon FtsQAZ is expressed from its own promoter. Scale bar, 5 &#x003bc;m.</p></list-item><list-item><p>OxyS induced by H<sub>2</sub>O<sub>2</sub> impairs cell division. Scatter plots of cell length distribution of wild&#x02010;type &#x00394;<italic>oxyS</italic> and &#x00394;<italic>kilR</italic> grown without or with H<sub>2</sub>O<sub>2</sub> treatment. The cultures at OD<sub>600</sub>&#x000a0;=&#x000a0;0.1 were exposed to 1&#x000a0;mM H<sub>2</sub>O<sub>2</sub> or remained untreated. Cell lengths were measured 60&#x000a0;min thereafter. The black line in each plot represents the median of three biological experiments. In each experiment, more than 750 cells were analyzed (GraphPad Prism software; unpaired <italic>t</italic>&#x02010;test, ***<italic>P</italic>&#x02010;value&#x000a0;=&#x000a0;0.0001).</p></list-item></list>
+</p></caption><graphic id="nlm-graphic-13" xlink:href="EMBJ-37-413-g006"/></fig><p>Significantly, we find that the presence of an intact <italic>oxyS</italic> allele affects cell length in response to oxidative stress. The length of wild&#x02010;type &#x00394;<italic>oxyS</italic> and &#x00394;<italic>kilR</italic> cells is comparable prior to exposure to H<sub>2</sub>O<sub>2</sub> (Fig&#x000a0;<xref rid="embj201797651-fig-0005" ref-type="fig">5</xref>C), increasing after treatment. Importantly, cells expressing OxyS are longer than &#x00394;<italic>oxyS</italic> or &#x00394;<italic>kilR</italic> mutants, indicating that in response to oxidative stress, expression of chromosomally encoded <italic>oxyS</italic> impairs cell division.</p></sec><sec id="embj201797651-sec-0008"><title>The antimutator phenotype of OxyS is due to <italic>nusG</italic> repression by OxyS</title><p>In our previous study, we showed that OxyS protects cells against DNA damage, decreasing the rate of mutations of spontaneous or induced mutagenesis (Altuvia <italic>et&#x000a0;al</italic>, <xref rid="embj201797651-bib-0001" ref-type="ref">1997</xref>). To determine whether the reduced rate of mutations is due to the regulatory cascade that begins with OxyS&#x02010;mediated repression of <italic>nusG</italic>, we examined the number of rifampicin&#x02010;resistant mutants following exposure to hydrogen peroxide in &#x00394;<italic>oxyS</italic> cells carrying plasmids expressing OxyS or OxyS<sub>C56U; C58U</sub>. The number of rifampicin&#x02010;resistant mutants normalized to the number of viable cells demonstrated that OxyS toxicity correlated with a reduced number of mutants; the nontoxic OxyS suppressor mutant exhibits a higher fraction of Rif<sup>r</sup> mutants, similar to the numbers determined with the control cells (Table&#x000a0;<xref rid="embj201797651-tbl-0001" ref-type="table-wrap">1</xref>). The reduction in mutation rates was no longer detected in the &#x00394;<italic>kilR</italic> mutant, or when FtsQAZ was overexpressed, further confirming that OxyS acts an antimutator by interfering with cell division. Moreover,&#x000a0;cells with in <italic>trans</italic> expression of <italic>rac</italic> KilR from a plasmid exhibited a low number of Rif<sup>r</sup> mutants similar to cells with OxyS expression (Table&#x000a0;<xref rid="embj201797651-tbl-0001" ref-type="table-wrap">1</xref>). This indicates that NusG signaling can be bypassed by expressing KilR, the last component in the <italic>oxyS&#x02010;nusG&#x02010;kilR</italic> cascade.</p><table-wrap id="embj201797651-tbl-0001" xml:lang="en" orientation="portrait" position="float"><label>Table 1</label><caption><p>OxyS protects against DNA damage</p></caption><table frame="hsides" rules="groups"><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><thead valign="top"><tr style="border-bottom:solid 1px #000000"><th align="left" colspan="2" valign="top" rowspan="1">Rif<sup>r</sup> mutants induced by 5&#x000a0;mM H<sub>2</sub>O<sub>2</sub>
+</th></tr></thead><tbody><tr><td align="left" rowspan="1" colspan="1">Genotype</td><td align="left" rowspan="1" colspan="1">Rif<sup>r</sup> mutants per 10<sup>8</sup> cells</td></tr><tr><td align="left" rowspan="1" colspan="1">&#x00394;<italic>oxySli</italic>::<italic>frt</italic>/P<italic>lac</italic>
+</td><td align="left" rowspan="1" colspan="1">68.3&#x000a0;&#x000b1;&#x000a0;36.0</td></tr><tr><td align="left" rowspan="1" colspan="1">&#x00394;<italic>oxySli</italic>::<italic>frt</italic>/P<italic>lac</italic>&#x02010;<italic>oxyS</italic>
+</td><td align="left" rowspan="1" colspan="1">2.2&#x000a0;&#x000b1;&#x000a0;1.8</td></tr><tr><td align="left" rowspan="1" colspan="1">&#x00394;<italic>oxySli</italic>::<italic>frt</italic>/P<italic>lac</italic>&#x02010;<italic>oxyS</italic>
+<sub>C56U;C58U</sub>
+</td><td align="left" rowspan="1" colspan="1">37.4&#x000a0;&#x000b1;&#x000a0;20.0</td></tr><tr><td align="left" rowspan="1" colspan="1">In &#x00394;<italic>kilR</italic> mutant</td><td align="left" rowspan="1" colspan="1">Rif<sup>r</sup> mutants per 10<sup>8</sup> cells</td></tr><tr><td align="left" rowspan="1" colspan="1">&#x00394;<italic>oxySli</italic>::<italic>frt,</italic> &#x00394;<italic>kilR::cat</italic>/P<italic>lac</italic>
+</td><td align="left" rowspan="1" colspan="1">41.3&#x000a0;&#x000b1;&#x000a0;1.2</td></tr><tr><td align="left" rowspan="1" colspan="1">&#x00394;<italic>oxySli</italic>::<italic>frt,</italic> &#x00394;<italic>kilR::cat</italic>/P<italic>lac</italic>&#x02010;<italic>oxyS</italic>
+</td><td align="left" rowspan="1" colspan="1">62.3&#x000a0;&#x000b1;&#x000a0;5.1</td></tr><tr><td align="left" rowspan="1" colspan="1">&#x00394;<italic>oxySli</italic>::<italic>frt,</italic> &#x00394;<italic>kilR::cat</italic>/P<italic>lac</italic>&#x02010;<italic>kilR</italic>
+</td><td align="left" rowspan="1" colspan="1">2.0&#x000a0;&#x000b1;&#x000a0;1.0</td></tr><tr><td align="left" rowspan="1" colspan="1">In the presence of pFtsQAZ</td><td align="left" rowspan="1" colspan="1">Rif<sup>r</sup> mutants per 10<sup>6</sup> cells</td></tr><tr><td align="left" rowspan="1" colspan="1">&#x00394;<italic>oxySli</italic>::<italic>frt</italic>/pFtsQAZ, P<italic>lac</italic>
+</td><td align="left" rowspan="1" colspan="1">65.3&#x000a0;&#x000b1;&#x000a0;2.4</td></tr><tr style="border-bottom:solid 1px #000000"><td align="left" rowspan="1" colspan="1">&#x00394;<italic>oxySli</italic>::<italic>frt</italic>/pFtsQAZ, P<italic>lac</italic>&#x02010;<italic>oxyS</italic>
+</td><td align="left" rowspan="1" colspan="1">493.7&#x000a0;&#x000b1;&#x000a0;229.3</td></tr><tr style="border-bottom:solid 1px #000000"><td align="left" rowspan="1" colspan="1">
+<bold>Rif<sup>r</sup> mutants induced by 1&#x000a0;mM H<sub>2</sub>O<sub>2</sub></bold>
+</td><td align="left" rowspan="1" colspan="1"/></tr><tr><td align="left" rowspan="1" colspan="1">Chromosomal <italic>oxyS</italic>
+</td><td align="left" rowspan="1" colspan="1">Rif<sup>r</sup> mutants per 10<sup>8</sup> cells</td></tr><tr><td align="left" rowspan="1" colspan="1">Wild type</td><td align="left" rowspan="1" colspan="1">12.3&#x000a0;&#x000b1;&#x000a0;3.3</td></tr><tr><td align="left" rowspan="1" colspan="1">&#x00394;<italic>oxyS</italic>
+</td><td align="left" rowspan="1" colspan="1">68.6&#x000a0;&#x000b1;&#x000a0;8.0</td></tr></tbody></table><table-wrap-foot><fn id="embj201797651-note-0002"><p>Results are displayed as mean of four to five biological experiments&#x000a0;&#x000b1;&#x000a0;standard deviation.</p></fn></table-wrap-foot><permissions><copyright-holder>John Wiley &#x00026; Sons, Ltd</copyright-holder></permissions></table-wrap><p>Importantly, we demonstrate that hydrogen peroxide&#x02010;dependent induction of OxyS results in a dramatic reduction in the number of rifampicin&#x02010;resistant mutants (Table&#x000a0;<xref rid="embj201797651-tbl-0001" ref-type="table-wrap">1</xref>).</p></sec></sec><sec id="embj201797651-sec-0009"><title>Discussion</title><p>Our previous study demonstrated that OxyS protects cells from DNA damage (Altuvia <italic>et&#x000a0;al</italic>, <xref rid="embj201797651-bib-0001" ref-type="ref">1997</xref>). Here, we show that OxyS is toxic and that the protection from DNA damage is intricately linked with OxyS toxicity. Acting as a base&#x02010;pairing RNA, OxyS decreases the expression of the essential transcription termination factor NusG. This decrease in transcription termination leads to an increase in the expression of the prophage&#x02010;encoded <italic>kilR</italic> gene. The KilR protein interferes with FtsZ function and thus inhibits cell division. The OxyS&#x02010;induced regulatory cascade results in bacterial growth arrest, thus facilitating DNA damage repair following stress.</p><p>To protect genomic integrity and to promote survival of cells exposed to genotoxic agents, prokaryotic and eukaryotic cells activate DNA damage response (DDR) pathways. In eukaryotes, the DDR is a signal transduction pathway that upon sensing of DNA damages promotes multiple physiological processes including apoptosis, senescence, activation of immune surveillance, and DNA repair. Many of these responses depend on post&#x02010;translational modifications such as phosphorylation. Some are controlled by slowed transcription. An intriguing example is p53, the potent tumor suppressor protein and core transducer of the DDR. Exposure to DNA damage leads to rapid activation of p53, which in turn induces cell cycle arrest, apoptosis, or senescence. The activation of p53 in response to damage is transient and thus provides the cell with a mechanism that connects DNA repair with cell cycle progression (Ciccia &#x00026; Elledge, <xref rid="embj201797651-bib-0014" ref-type="ref">2010</xref>). Here, we establish a link between two enigmatic OxyS phenotypes: the toxic phenotype and the antimutagenic phenotype. We show that a cellular programming mediated by OxyS toxicity is at the heart of its antimutagenic phenotype; OxyS is toxic because it interferes with FtsZ function; however, by inhibiting cell division, OxyS enables the bacterial repair systems to repair damage for a longer period of time, thus leading to an increase in the rate of recovery. The observed reduction in DNA damage and greater recovery are both mediated by the <italic>rac</italic> prophage&#x02010;encoded <italic>kilR</italic> gene.</p><p>The <italic>E.&#x000a0;coli</italic> genome contains nine cryptic prophage elements. Their expression provides protection from sublethal concentrations of quinolone and &#x003b2;&#x02010;lactam antibiotics, primarily through small proteins that inhibit cell division such as <italic>kilR</italic> of Rac prophage and <italic>dicB</italic> of Qin prophage. Furthermore, these prophages help bacteria to cope with adverse environmental conditions providing increased resistance to osmotic, oxidative, and acid stress (Wang <italic>et&#x000a0;al</italic>, <xref rid="embj201797651-bib-0038" ref-type="ref">2010</xref>). Although &#x003bb; <italic>kil</italic> and <italic>rac kilR</italic> share no sequence similarities, their function is similar; &#x003bb; <italic>kil</italic> prevents proper FtsZ assembly, producing shorter oligomers by disrupting FtsZ protofilaments while sequestering the protein subunits (Haeusser <italic>et&#x000a0;al</italic>, <xref rid="embj201797651-bib-0021" ref-type="ref">2014</xref>; Hernandez&#x02010;Rocamora <italic>et&#x000a0;al</italic>, <xref rid="embj201797651-bib-0022" ref-type="ref">2015</xref>). Consequently, &#x003bb; <italic>kil</italic> expression results in cell division inhibition and filamentation. Likewise, although no details on the mechanism have been reported, <italic>kilR</italic> of <italic>rac</italic> phage prevents <italic>E</italic>.&#x000a0;<italic>coli</italic> from dividing, causing cells to grow into long filaments that become nonviable. <italic>kilR</italic>&#x02010;mediated inhibition of cell division is relieved by excess FtsZ (Conter <italic>et&#x000a0;al</italic>, <xref rid="embj201797651-bib-0015" ref-type="ref">1996</xref>; Burke <italic>et&#x000a0;al</italic>, <xref rid="embj201797651-bib-0009" ref-type="ref">2013</xref>). Cell division is also inhibited following DNA damage, as part of the SOS response. Cell survival requires coordination of division with other processes, and SulA of the SOS system inhibits cell division until genetic errors are corrected (Huisman <italic>et&#x000a0;al</italic>, <xref rid="embj201797651-bib-0024" ref-type="ref">1984</xref>; Bi &#x00026; Lutkenhaus, <xref rid="embj201797651-bib-0008" ref-type="ref">1993</xref>; Chen <italic>et&#x000a0;al</italic>, <xref rid="embj201797651-bib-0012" ref-type="ref">2012</xref>). SOS&#x02010;mediated inhibition of cell division involves sequestration of FtsZ subunits similar to that described for <italic>kil</italic> expression. This mechanism is different from that employed by division site selection antagonists, such as SlmA that binds specific regions on the chromosome preventing FtsZ from assembling over unsegregated nucleoids, or MinC that prevents assembly of FtsZ in DNA&#x02010;free regions of cell poles (Haeusser <italic>et&#x000a0;al</italic>, <xref rid="embj201797651-bib-0021" ref-type="ref">2014</xref>). In any case, as OxyS is toxic in SOS off&#x02010;cells, the effect of OxyS is independent of SOS response involving SulA (<xref rid="embj201797651-sup-0001" ref-type="supplementary-material">Appendix&#x000a0;Fig S6</xref>).</p><p>Here, we revealed an OxyS&#x02010;induced molecular checkpoint relay, leading to temporary cell cycle arrest to allow damage repair. We propose that in addition to a first tier of defense that is aimed at elimination of reactive oxygen species and repair of cellular damages, <italic>E.&#x000a0;coli</italic> employs a second tier of defense targeting cell division by modulating NusG levels. The transient growth inhibition caused by interference with cell division enables the bacterial repair systems to repair damage for a longer period of time, thus allowing a higher number of cells to resume growth. We show that by decreasing <italic>nusG</italic> expression, the oxidative stress&#x02010;induced OxyS sRNA leads to an increase in KilR and subsequently to inhibition of cell division (Fig&#x000a0;<xref rid="embj201797651-fig-0006" ref-type="fig">6</xref>). As the production of OxyS in response to oxidative stress is transient, decreasing dramatically by 60&#x000a0;min of exposure, and the levels of <italic>kilR</italic> reach a plateau at about the same time, the <italic>oxyS</italic>/<italic>nusG</italic>/<italic>kilR</italic>&#x02010;dependent regulatory cascade is transient, leading to temporary cell cycle arrest.</p><fig fig-type="Figure" xml:lang="en" id="embj201797651-fig-0006" orientation="portrait" position="float"><label>Figure 6</label><caption><title>The transient growth arrest caused by cell division inhibition allows a greater number of cells to resume growth</title><p>By decreasing <italic>nusG</italic> expression, the oxidative stress&#x02010;induced OxyS sRNA leads to an increase in KilR. KilR prevents proper FtsZ assembly by sequestering the protein subunits. The inhibition of cell division allows for greater repair leading to a decrease in mutation rates concomitant with an increase in the rate of recovery.</p></caption><graphic id="nlm-graphic-15" xlink:href="EMBJ-37-413-g007"/></fig><p>The presence of an intact RelA allele seems to have an effect on the toxic phenotype of OxyS. In the <italic>relA</italic> mutant strain, both wild type and OxyS<sub>A69C</sub> exhibit a similar growth arrest phenotype, whereas in wild&#x02010;type cells carrying an intact RelA allele, toxicity of OxyS<sub>A69C</sub> is more pronounced than that of wild&#x02010;type OxyS (<xref rid="embj201797651-sup-0001" ref-type="supplementary-material">Appendix&#x000a0;Fig S7</xref>). The difference in toxicity of OxyS mutants could be attributed to the observation that RelA&#x02010;mediated synthesis of ppGpp in LB medium increases FtsZ protein levels, possibly through transcriptional regulation (Powell &#x00026; Court, <xref rid="embj201797651-bib-0031" ref-type="ref">1998</xref>). The increase in FtsZ protein levels could possibly compensate for the interference with FtsZ function.</p><p>Intriguingly, our experiments indicate that two molecules of OxyS can bind one <italic>nusG</italic> molecule at the same time. The first binding site spans nucleotides &#x02212;40 to &#x02212;29 with respect to the first nucleotide of the start codon. The second experimentally verified interaction site in <italic>nusG</italic> spans from nucleotide &#x02212;20 to +13 with respect to the AUG. Given that OxyS<sub>C76G; C77G</sub> fails to repress its complementary mutant <italic>nusG</italic>
+<sub>G&#x02010;15C; G&#x02010;16C</sub>, it suggests that the upstream site aids OxyS in binding of the downstream site overlapping the ribosome&#x02010;binding region. Expression of NusG quadruple mutant (G&#x02010;15C; G&#x02010;16C and G&#x02010;31C; G&#x02010;32C) carrying mutations at the two sites predicted to bind the same sequence in OxyS was repressed by OxyS<sub>C76G; C77G</sub> and unaffected by wild&#x02010;type OxyS. Together, the data indicate that two molecules of OxyS can simultaneously bind two different sites in <italic>nusG</italic>. sRNAs interacting with multiple sites within an mRNA have been described before. In most cases, pairing with either site was found to be sufficient for full regulation. For example, the RybB sRNA can base&#x02010;pair with either one of two mutually exclusive pairing sites within the translated portion of OmpD mRNA. However, pairing with either site is sufficient for OmpD regulation (Balbontin <italic>et&#x000a0;al</italic>, <xref rid="embj201797651-bib-0005" ref-type="ref">2010</xref>). SgrS sRNA binds two different sites in <italic>manXYZ</italic> operon, each capable of translation repression of different genes of the operon, although both sites are needed for RNase E&#x02010;dependent degradation of the full&#x02010;length transcript (Rice <italic>et&#x000a0;al</italic>, <xref rid="embj201797651-bib-0032" ref-type="ref">2012</xref>). The long <italic>lrp</italic> leader is bound by GcvB at two independent sites (Lee &#x00026; Gottesman, <xref rid="embj201797651-bib-0025" ref-type="ref">2016</xref>). Pairing with either site was sufficient for significant repression of <italic>lrp</italic> expression, although pairing at both sites gave the best repression (Lee &#x00026; Gottesman, <xref rid="embj201797651-bib-0025" ref-type="ref">2016</xref>). Spot 42 interacts with a number of targets via two different sites. Both sites were shown to contribute to regulation; however, whether Spot 42 base pairs with both sites simultaneously is unclear (Beisel <italic>et&#x000a0;al</italic>, <xref rid="embj201797651-bib-0006" ref-type="ref">2012</xref>). Further biochemical analyses will be required to fully understand the OxyS dual binding of <italic>nusG</italic> and the involvement of Hfq in this unique base&#x02010;pairing regulatory mechanism in which two molecules of OxyS repress one molecule of <italic>nusG</italic> mRNA.</p><p>The small RNA OxyS is highly conserved. An OxyS homology search based on iterative blasting and structural filtering implemented in the GLASSgo web server (<ext-link ext-link-type="uri" xlink:href="http://rna.informatik.uni-freiburg.de/GLASSgo/Input.jsp">http://rna.informatik.uni-freiburg.de/GLASSgo/Input.jsp</ext-link>) detected 603 potential OxyS homologs, which are widely distributed in the enterobacterial clade as they belong to 10 different genera representing at least 27 different species and more than 500 different strains (<xref rid="embj201797651-sup-0001" ref-type="supplementary-material">Appendix&#x000a0;Fig S8</xref>). All homologs are located in the 5&#x02032; intergenic region of the <italic>oxyR</italic> gene, sharing a widely conserved gene synteny (<xref rid="embj201797651-sup-0001" ref-type="supplementary-material">Appendix&#x000a0;Fig S9</xref>). Multiple alignments of 36 randomly selected OxyS homologs exhibited significant nucleotide conservation at specific regions (<xref rid="embj201797651-sup-0001" ref-type="supplementary-material">Appendix&#x000a0;Fig S10A</xref>). These regions encompass the loops of the first and the middle hairpins and the downstream single&#x02010;stranded RNA stretch (<xref rid="embj201797651-sup-0001" ref-type="supplementary-material">Appendix&#x000a0;Fig S10B</xref>). In this study, we show that the middle hairpin B and the single&#x02010;stranded region of OxyS interact with the <italic>nusG</italic> mRNA target of <italic>E.&#x000a0;coli</italic>. As for <italic>nusG</italic>, conservation analysis of the interaction between OxyS and <italic>nusG</italic> predicts two possible base&#x02010;pairing sites within <italic>nusG</italic> mRNAs: the first overlaps the <italic>nusG</italic> ribosome&#x02010;binding site, and the second is located about 20&#x02013;30 nt upstream of the Shine&#x02013;Dalgarno sequence of <italic>nusG</italic>. Of 35 examples examined, 32 were predicted to harbor <italic>nusG</italic>/OxyS interaction; of which 14 were predicted to interact with both sites, and 17 were predicted to interact with the site overlapping the Shine&#x02013;Dalgarno sequence and/or AUG of <italic>nusG</italic> or with the site located upstream (<xref rid="embj201797651-sup-0001" ref-type="supplementary-material">Appendix&#x000a0;Fig S11</xref>). The OxyS sequence and structural conservation and the conservation of the responsive site in <italic>nusG</italic> indicate that regulation of <italic>nusG</italic> by OxyS is an important part in the bacterial response to oxidative stress. Coexistence of <italic>nusG</italic> with <italic>kilR</italic> or with &#x003bb; <italic>kil</italic> gene is predicted in 16 of the respective examples, of which in 14 instances <italic>nusG</italic> is also predicted to base&#x02010;pair with OxyS (<xref rid="embj201797651-sup-0001" ref-type="supplementary-material">Appendix&#x000a0;Fig S12</xref>). Eighteen strains predicted to carry <italic>nusG</italic>/OxyS interaction lack <italic>kilR</italic> or &#x003bb; <italic>kil</italic>. The effect of OxyS on <italic>nusG,</italic> a highly conserved and essential transcription factor in strains lacking Kil proteins, and the physiological impact this interaction may have remains to be addressed in future studies.</p><p>Small RNAs deploy a variety of mechanisms to cope with stress conditions such as, for example, reducing expression of outer membrane proteins in response to membrane stress, decreasing expression of iron&#x02010;containing proteins in response to limiting iron or down&#x02010;regulating the expression of sugar transporters, while up&#x02010;regulating sugar de&#x02010;phosphorylation in response to glucose&#x02013;phosphate stress (Wagner &#x00026; Romby, <xref rid="embj201797651-bib-0037" ref-type="ref">2015</xref>). In all of these cases, the sRNAs cope with stress conditions by targeting genes directly linked to the specific stress. OxyS introduces a new regulatory concept in which a transient growth inhibition caused by this sRNA facilitates damage repair, thus enabling a higher number of cells to resume growth following stress. Whether additional sRNAs exploit the toxic coexistence of genes like <italic>nusG</italic> and <italic>kilR</italic> to coordinate cell growth with damage control remains to be addressed in further studies.</p></sec><sec id="embj201797651-sec-0010"><title>Materials and Methods</title><sec id="embj201797651-sec-0011"><title>Bacterial growth conditions</title><p>
+<italic>Escherichia coli</italic> (MG1655) was grown at 37&#x000b0;C (200&#x000a0;rpm) in LB medium (pH 6.8). Ampicillin (100&#x000a0;&#x003bc;g/ml), tetracycline (10&#x000a0;&#x003bc;g/ml), chloramphenicol (20&#x000a0;&#x003bc;g/ml), and kanamycin (40&#x000a0;&#x003bc;g/ml) were added where appropriate. P<italic>lac</italic> and P<italic>tac</italic> promoters were induced with isopropyl &#x003b2;&#x02010;D&#x02010;thiogalactoside (IPTG; 1&#x000a0;mM) as indicated. (List of strains, plasmids, and DNA primers used in this study appears in <xref rid="embj201797651-sup-0001" ref-type="supplementary-material">Appendix&#x000a0;Tables S1&#x02013;S3</xref>.)</p></sec><sec id="embj201797651-sec-0012"><title>Strain construction</title><p>Gene deletion mutants were generated using the gene disruption method as described (Yu <italic>et&#x000a0;al</italic>, <xref rid="embj201797651-bib-0041" ref-type="ref">2000</xref>). For construction of deletion mutants, tetracycline, chloramphenicol, or kanamycin, cassettes were amplified using mini&#x02010;<italic>Tn</italic>10 chromosomal cassette and plasmids pKD3 or pKD4, respectively (Datsenko &#x00026; Wanner, <xref rid="embj201797651-bib-0016" ref-type="ref">2000</xref>). The PCR product (5&#x02013;10&#x000a0;&#x003bc;g) purified using the Wizard SV PCR cleanup system (Promega, Madison, WI) was introduced into DY378 cells grown at 30&#x000b0;C to OD<sub>600</sub> of 0.4&#x02013;0.6 and then transferred to 42&#x000b0;C for 15&#x000a0;min. The mutations were transferred into a fresh genetic background of MG1655 <italic>mal</italic>::<italic>lacI</italic>
+<sup>q</sup> by P1 transduction. The resistance cassettes were eliminated using pCP20 (Datsenko &#x00026; Wanner, <xref rid="embj201797651-bib-0016" ref-type="ref">2000</xref>). To construct &#x00394;<italic>lacZ</italic>::<italic>Tn</italic>10, the chromosomal region flanked by genome coordinates 363264 and 366272 (GenBank entry NC_000913.3) was replaced by the <italic>tetR</italic> and <italic>tetA</italic>&#x000a0;genes using primers 2081 and 2082. <italic>lacZ</italic> gene disruption was examined by PCR using flanking primers (2083 and 2084). To construct &#x00394;<italic>oxySli</italic>::kan, the chromosomal region flanked by genome coordinates 4158322 and 4158375 (GenBank entry NC_000913.3) was replaced by the <italic>kan</italic> gene using primers 2169 and 2170. <italic>oxyS</italic> gene disruption was examined by PCR using flanking primers, 2026 and 2027. To construct &#x00394;<italic>kil</italic>::<italic>cat</italic>, the chromosomal region flanked by genome coordinates 1417950 and 1418235 (GenBank entry NC_000913.3) was replaced by the <italic>cat</italic> gene using primers 2265 and 2295. <italic>kil</italic> gene disruption was examined by PCR using flanking primers 2267 and 2296. To construct NusG&#x02010;SPA fusion in the chromosome, primers were designed to amplify the SPA tag together with the kanamycin resistance cassette from plasmid pJL148 (Zeghouf <italic>et&#x000a0;al</italic>, <xref rid="embj201797651-bib-0042" ref-type="ref">2004</xref>). At least 42 nt of homologous sequences was allowed. MDS42 <italic>nusG</italic>&#x02010;SPA&#x02010;<italic>kan</italic> was constructed using primers 2216 and 2217. The PCR products were gel&#x02010;purified and then transform into MDS42 cells carrying pKD46 plasmid (Datsenko &#x00026; Wanner, <xref rid="embj201797651-bib-0016" ref-type="ref">2000</xref>). Insertions were confirmed by PCR using primers 2182 and 2219. The products were sequenced using primer 2227. The fusions were transferred into strains by P1 transduction.</p></sec><sec id="embj201797651-sec-0013"><title>Plasmid construction</title><p>To construct P<italic>lac</italic>&#x02010;<italic>oxyS,</italic> the <italic>oxyS</italic> sequence from its transcription start site and 27 nt downstream of its transcription terminator was PCR&#x02010;amplified from MG1655 chromosomal DNA using primers 2026 and 2027 and cloned into the AatII and HindIII restriction sites of pBR&#x02010;<italic>plac</italic> (Guillier &#x00026; Gottesman, <xref rid="embj201797651-bib-0020" ref-type="ref">2006</xref>). To construct&#x000a0;P<italic>tac</italic>&#x02010;<italic>nusG</italic>&#x02010;<italic>lacZ</italic>&#x000a0;translation fusion in the single&#x02010;copy plasmid pBOG552 (Hershko&#x02010;Shalev <italic>et&#x000a0;al</italic>, <xref rid="embj201797651-bib-0023" ref-type="ref">2016</xref>), the <italic>nusG</italic> fragment was PCR&#x02010;amplified from MG1655 using primers 2179 and 2181 and then cloned into the EcoRI and SmaI sites of pKK177&#x02010;3&#x02010;<italic>lacI</italic>. The P<italic>tac&#x02010;nusG</italic> fragment was sub&#x02010;cloned into pBOG552 using the BamHI site. To construct P<italic>lac</italic>&#x02010;<italic>kilR, kilR</italic> sequence was amplified from MG1655 chromosomal DNA using primers 2700 and 2701 and cloned into the AatII and HindIII restriction sites of pBR&#x02010;<italic>plac</italic>. To construct P<sub><italic>secE</italic></sub>
+<italic>secE&#x02010;nusG,</italic> the sequence of <italic>secE&#x02010;nusG</italic> was PCR&#x02010;amplified using primers 2377 and 2378 and then cloned into HindIII and BamHI restriction sites of pACYC184. To construct P<sub><italic>secE</italic></sub>
+<italic>nusG,</italic> we deleted the <italic>secE</italic> gene from the plasmid P<sub><italic>secE</italic></sub>
+<italic>secE&#x02010;nusG</italic> using primers 2725 and 2727. To construct P<sub><italic>secE</italic></sub>
+<italic>secE,</italic> the sequence of <italic>secE</italic> was PCR&#x02010;amplified using primers 2377 and 2727 and then cloned into HindIII and BamHI restriction sites of pACYC184. All pACYC (P15A) plasmids carry the OxyS complementary sequence. The cloning in pACYC plasmids destroyed the <italic>tet</italic> resistance cassette.</p></sec><sec id="embj201797651-sec-0014"><title>Random mutagenesis</title><p>Random mutagenesis of OxyS wild type and OxyS<sub>A69C</sub> was carried out using hydroxylamine as described before (Hershko&#x02010;Shalev <italic>et&#x000a0;al</italic>, <xref rid="embj201797651-bib-0023" ref-type="ref">2016</xref>).</p></sec><sec id="embj201797651-sec-0015"><title>Site&#x02010;directed mutagenesis</title><p>Mutations A69C, A69C,C70U, C56U,C58U, C76U,C77U, and C76G,C77G were generated by PCR using P<italic>lac</italic>&#x02010;<italic>oxyS</italic> (pSA86) and two tail&#x02010;to&#x02010;tail divergent primers of which one carried the desired mutation. The PCR product was gel&#x02010;purified and subjected to blunt end ligation. Likewise, the mutations in <italic>nusG</italic> were generated in P<italic>tac</italic>&#x02010;<italic>nusG</italic> (pKK177&#x02010;3). The mutated P<italic>tac&#x02010;nusG</italic>&#x000a0;fragment was sub&#x02010;cloned into pBOG552 using the BamHI site.</p></sec><sec id="embj201797651-sec-0016"><title>Survival assays</title><p>Overnight cultures of MG1655 strains as indicated in the legends, carrying control or OxyS plasmids, were grown from fresh transformation plates. Starters were diluted 1/100 in 20&#x000a0;ml LB (125&#x02010;ml Erlenmeyer flasks) and grown at 37&#x000b0;C (200&#x000a0;rpm). IPTG (1&#x000a0;mM) was added at the time of dilution, where indicated H<sub>2</sub>O<sub>2</sub> (1&#x000a0;mM) was added at OD<sub>600</sub>&#x000a0;~&#x000a0;0.1 for 30&#x000a0;min. Thereupon, the cells were washed and suspended in fresh warm LB medium. Samples were taken at 30, 60, and 90&#x000a0;min after wash, diluted in 1&#x000d7; PBS, and plated. Each sample was plated twice. Colonies were counted, and the percentage of survival rate was calculated. Cultures with no <italic>oxyS</italic> plasmids were treated and assayed as above except for IPTG induction.</p></sec><sec id="embj201797651-sec-0017"><title>&#x003b2;&#x02010;galactosidase assays</title><p>Overnight cultures of MG1655 <italic>relA</italic>::<italic>cat,</italic> &#x00394;<italic>oxySli</italic>::<italic>frt, lacZ</italic>::<italic>Tn</italic>10<italic>, lacI</italic>
+<sup>q</sup> carrying P<italic>tac</italic>&#x02010;<italic>nusG&#x02010;lacZ</italic> translational fusion (pSC101* <italic>kan</italic>
+<sup>r</sup>) as well as P<italic>lac</italic> control and P<italic>lac</italic>&#x02010;<italic>oxyS</italic> plasmids as indicated, were diluted 1/100 in 10&#x000a0;ml LB medium supplemented with ampicillin and kanamycin. The cultures grown to OD<sub>600</sub>&#x000a0;~&#x000a0;0.1 were treated with IPTG (1&#x000a0;mM) to induce transcription of both <italic>nusG</italic>&#x02010;<italic>lacZ</italic> and OxyS. &#x003b2;&#x02010;Galactosidase activity was measured at 120&#x000a0;min after IPTG induction. To measure OxyS effects on &#x003bb;<italic>fhlA</italic>&#x02010;<italic>lacZ</italic> fusion, MG1655 &#x003bb;<italic>fhlA&#x02010;lacZ</italic>:<italic>kan</italic>,<italic> relA</italic>::<italic>cat</italic>,<italic> lacI</italic>
+<sup>q</sup>
+<italic>, lacZ</italic>::<italic>Tn</italic>10 carrying P<italic>tac</italic>&#x02010;<italic>oxyS</italic> wild type and mutants were diluted 1/100 in 5&#x000a0;ml LB medium supplemented with ampicillin. The cultures grown to OD<sub>600</sub>&#x000a0;~&#x000a0;1.0 were treated with IPTG (1&#x000a0;mM) to induce OxyS expression. &#x003b2;&#x02010;Galactosidase activity was measured at 60&#x000a0;min after IPTG induction.</p></sec><sec id="embj201797651-sec-0018"><title>RNA extraction</title><p>To isolate total RNA, cultures grown as indicated in the specific legends were pelleted and resuspended in 50&#x000a0;&#x003bc;l of 10&#x000a0;mM Tris&#x02013;HCl (pH 8) containing 1&#x000a0;mM EDTA. Lysozyme was added to 0.9&#x000a0;mg/ml, and the samples were subjected to three freeze&#x02013;thaw cycles. Total RNA was purified using TRI reagent (Sigma) according to the manufacturer's protocol. For real&#x02010;time analysis, the purified RNA was ethanol&#x02010;precipitated in the presence of 0.3&#x000a0;M sodium acetate. To estimate the half&#x02010;life of&#x000a0;<italic>secE&#x02010;nusG</italic>&#x000a0;mRNA, cultures of MG1655 <italic>relA</italic>::<italic>cat, lacI</italic>
+<sup>q</sup>
+<italic>,</italic> and MG1655 <italic>relA</italic>::<italic>cat, lacI</italic>
+<sup>q</sup>
+<italic>,</italic> &#x00394;<italic>oxySli</italic>::<italic>kan</italic> grown to early&#x02010;exponential phase in LB medium were treated with 1&#x000a0;mM hydrogen peroxide. After 2&#x000a0;min, rifampin (0.2&#x000a0;mg/ml) was added. Samples were taken at 2, 4, 6&#x000a0;min after the rifampin addition.</p></sec><sec id="embj201797651-sec-0019"><title>Northern analysis</title><p>RNA samples (10&#x02013;20&#x000a0;&#x003bc;g) were denatured for 10&#x000a0;min at 70&#x000b0;C in 98% formamide loading buffer, separated on 8&#x000a0;M urea&#x02013;6% polyacrylamide gels, and transferred to Zeta&#x02010;Probe GT membranes (Bio&#x02010;Rad Laboratories) by electroblotting. To detect OxyS RNA, the membranes were hybridized with [<sup>32</sup>P]&#x02010;end&#x02010;labeled <italic>oxyS</italic> primer (492) in modified CHURCH buffer (Church &#x00026; Gilbert, <xref rid="embj201797651-bib-0013" ref-type="ref">1984</xref>). To detect <italic>secE&#x02010;nusG</italic> full&#x02010;length RNA, samples (15&#x000a0;&#x003bc;g) were denatured for 10&#x000a0;min at 70&#x000b0;C in MOPS loading buffer, separated on 1.4% agarose gels, and transferred to Zeta&#x02010;Probe GT membranes by capillary transfer. <italic>secE&#x02010;nusG</italic>&#x000a0;mRNA levels were detected using anti&#x02010;<italic>nusG</italic>&#x02010;labeled riboprobe synthesized using PCR template (2620 and 2554) as previously described (Hershko&#x02010;Shalev <italic>et&#x000a0;al</italic>, <xref rid="embj201797651-bib-0023" ref-type="ref">2016</xref>). Riboprobe hybridization buffer contained 50% formamide, 3.5% SDS, 250&#x000a0;mM NaCl, 82&#x000a0;mM Na<sub>2</sub>HPO<sub>4</sub>, and 40&#x000a0;mM NaH<sub>2</sub>PO<sub>4</sub> at pH 7.2. After 2&#x000a0;h at 50&#x000b0;C, the membranes were washed for 20&#x000a0;min at 50&#x000b0;C in 2&#x000d7; SSC, 1% SDS, then for 20&#x000a0;min at 55&#x000b0;C in 1&#x000d7; SSC, 0.5% SDS, and last for 20&#x000a0;min at 60&#x000b0;C in 0.5&#x000d7; SSC, 0.1% SDS. tmRNA (10Sa) was used as a loading control (primer 1912).</p></sec><sec id="embj201797651-sec-0020"><title>Western of SPA&#x02010;tagged&#x000a0;<italic>nusG</italic>
+</title><p>Overnight cultures of SPA&#x02010;tagged strains were diluted 1/100 and grown shaking (200&#x000a0;rpm) at 37&#x000b0;C in 100&#x000a0;ml LB (250&#x02010;ml Erlenmeyer flasks). H<sub>2</sub>O<sub>2</sub> (1&#x000a0;mM) was added at OD<sub>600</sub>&#x000a0;~&#x000a0;0.1 for 2, 5, and 7&#x000a0;min. Samples were pelleted and then fluidized in 1&#x000d7; Laemmli sample buffer (Bio&#x02010;Rad), heated at 95&#x000b0;C for 5&#x000a0;min, and centrifuged for 5&#x000a0;min. 10<sup>7</sup> cells of each sample were analyzed on SDS&#x02013;PAGE (12%). The proteins were transferred to a nitrocellulose membrane (Sartorius); the blots were blocked with BSA and skim milk and probed with FLAG M2 monoclonal antibody (Sigma&#x02010;Aldrich) according to the manufacturer's protocol. The membranes were also probed with Hfq&#x02010;specific antibodies as a loading control. The proteins were visualized using secondary antibody Anti&#x02010;Mouse IgG&#x02010;Alkaline Phosphatase (FLAG) or Anti&#x02010;Rabbit IgG&#x02010;Alkaline Phosphatase (Hfq) (Sigma&#x02010;Aldrich) according to the Alkaline Phosphatase development protocol (Promega).</p></sec><sec id="embj201797651-sec-0021"><title>Real&#x02010;time PCR</title><p>RNA concentrations were determined using a NanoDrop machine (NanoDrop Technologies). DNA was removed by DNase treatment according to the manufacturer's instructions (RQ1 RNase&#x02010;free DNase, Promega). 2&#x000a0;&#x003bc;g of DNA&#x02010;free total RNA was used for cDNA synthesis using MMLV reverse transcriptase and random primers (Promega). <italic>kil</italic> cDNA levels were analyzed by real&#x02010;time PCR using specific primers (2531&#x02013;2532) and SYBR green mix (Absolute SYBR GREEN ROX MIX, ABgene) with Rotor&#x02010;gene 3000A (Corbett) according to the manufacturer's instructions. The level of 16S rRNA (<italic>rrsB</italic>; primers 1309&#x02013;1310) (Park <italic>et&#x000a0;al</italic>, <xref rid="embj201797651-bib-0028" ref-type="ref">2007</xref>) was used to normalize <italic>kil</italic> levels. The relative amount of cDNA was calculated using the standard curve method. A standard curve was obtained from PCR on serially diluted genomic DNA as templates and was analyzed using Rotor&#x02010;gene analysis software 6.0.</p></sec><sec id="embj201797651-sec-0022"><title>
+<italic>In vitro</italic> RNA synthesis</title><p>Purified PCR fragments of <italic>nusG</italic> (207&#x000a0;bp) and <italic>oxyS</italic> wild type and mutants (173&#x000a0;bp) generated using primers 2220&#x02013;2221 and 2238&#x02013;2027 were used as templates to produce <italic>nusG</italic> and OxyS RNAs of 176 nt and 109 nt, respectively. The RNAs were synthesized in 50&#x000a0;&#x003bc;l reactions containing T7 RNA polymerase (25 units; New England Biolabs), 40&#x000a0;mM Tris&#x02013;HCl (pH 7.9), 6&#x000a0;mM MgCl<sub>2</sub>, 10&#x000a0;mM dithiothreitol (DTT), 20 units RNase inhibitor (CHIMERx), 500&#x000a0;&#x003bc;M of each NTP, and 200&#x000a0;ng of purified PCR templates carrying the sequence of the T7 RNA polymerase promoter. To synthesized fully labeled RNA, 500&#x000a0;&#x003bc;M of each, UTP, GTP, CTP, and 40&#x000a0;&#x003bc;M ATP was used with 10&#x000a0;&#x003bc;Ci [<sup>32</sup>P]&#x02010;ATP (specific activity 800&#x000a0;Ci/mmol). Synthesis was allowed to proceed for 2&#x000a0;h at 37&#x000b0;C and then terminated by heating (70&#x000b0;C, 10&#x000a0;min). To remove DNA template, 4 U of turbo DNase I (Ambion) was added (37&#x000b0;C, 30&#x000a0;min), followed by phenol/chloroform extraction and ethanol precipitation in the presence of 0.3&#x000a0;M ammonium acetate.</p></sec><sec id="embj201797651-sec-0023"><title>Primer extension</title><p>Annealing mixtures containing in DEPC&#x02010;treated water, 0.05&#x000a0;pmol of <italic>in&#x000a0;vitro</italic>&#x02010;synthesized <italic>nusG</italic> RNA, 0.6&#x000a0;pmol of 5&#x02032; end&#x02010;labeled <italic>nusG</italic>&#x02010;specific primer (2221) without or with 12&#x000a0;pmol of <italic>in&#x000a0;vitro</italic>&#x02010;synthesized OxyS RNAs (wild type and mutants) were heated for 10&#x000a0;min at 70&#x000b0;C and then chilled on ice for 20&#x000a0;min. Thereafter, the reactions were incubated at 37&#x000b0;C in 20&#x000a0;mM Tris&#x02013;HCl, 10&#x000a0;mM magnesium acetate, 0.1&#x000a0;M NH<sub>4</sub>Cl, 0.5&#x000a0;mM EDTA, 2.5&#x000a0;mM &#x003b2;&#x02010;mercaptoethanol, and 0.5&#x000a0;mM each dNTP for 15&#x000a0;min, at which reverse transcriptase (Promega; 40 units) was added. cDNA synthesis was allowed to proceed for 10&#x000a0;min at 37&#x000b0;C. The extension products were separated on 6% sequencing gels, alongside with sequencing reactions.</p></sec><sec id="embj201797651-sec-0024"><title>RNase protection assay</title><p>0.06&#x000a0;pmol of labeled <italic>nusG</italic> RNA and 15 and 30 of OxyS RNAs were precipitated and annealed as described before (Rio <italic>et&#x000a0;al</italic>, <xref rid="embj201797651-bib-0033" ref-type="ref">2011</xref>). After overnight annealing at 45&#x000b0;C, the mixture was subjected to ribonuclease (A and T1) degradation at room temperature for 10&#x000a0;min. The products were separated on 8% sequencing gels, alongside with labeled RNA Marker (Decade Thermo Fisher Scientific).</p></sec><sec id="embj201797651-sec-0025"><title>EMSA</title><p>Fully labeled <italic>in&#x000a0;vitro</italic>&#x02010;synthesized wt and quadruple mutant <italic>nusG</italic> RNAs (176&#x000a0;nt, 0.01&#x000a0;pmol, and 0.004&#x000a0;pmol, respectively) without and with increasing concentrations of OxyS (5, 10, and 15&#x000a0;pmol left panel, or 2, 4 right panel) were incubated for 15&#x000a0;min at 85&#x000b0;C. Thereafter, the mixtures were incubated at 37&#x000b0;C or 42&#x000b0;C for 60&#x000a0;min in binding buffer (6.7&#x000a0;mM Tris&#x02010;acetate (pH 7.4), 3.3&#x000a0;mM Na&#x02010;acetate, 10&#x000a0;mM DTT, and 10&#x000a0;mM MgCl<sub>2</sub>). The RNA samples were separated on 4.5% nondenaturing polyacrylamide gels (19:1) in 20&#x000a0;mM Tris&#x02013;HCl (pH 7.5), 60&#x000a0;mM KCl, and 10&#x000a0;mM MgCl<sub>2</sub> (50&#x000a0;volts for 5&#x02013;6&#x000a0;h at 4&#x000b0;C).</p></sec><sec id="embj201797651-sec-0026"><title>Mutagenesis assays</title><p>Overnight cultures carrying OxyS plasmids wild type and mutant with or without a plasmid expressing <italic>ftsQAZ</italic> (pFtsZ) were diluted 1/100 in 7&#x000a0;ml LB medium supplemented with ampicillin (for <italic>oxyS</italic> plasmids) and tetracycline (for pFtsZ). The cultures were grown to OD<sub>600</sub>&#x000a0;~&#x000a0;0.1 (37&#x000b0;C, 200&#x000a0;rpm) prior to the addition of IPTG (1&#x000a0;mM). At 15&#x000a0;min of IPTG induction, the cultures were exposed to 5&#x000a0;mM hydrogen peroxide at room temperature (22&#x000b0;C), without shaking for 15&#x000a0;min. Thereupon, 0.5&#x000a0;ml of cells was mixed with 2&#x000a0;ml fresh LB and grown overnight (23&#x000a0;h). To determine frequencies of mutagenesis, aliquots were taken after 23&#x000a0;h and plated on LB plates containing 100&#x000a0;&#x003bc;g/ml of rifampicin. The numbers of Rif<sup>r</sup> mutants were normalized to the numbers of viable cells at the 23&#x02010;h time point. To estimate the number of mutations due to KilR expressed from P<italic>lac&#x02010;kilR</italic> plasmid, cells were treated as above, except that expression of <italic>kilR</italic> was induced using 20&#x000a0;&#x003bc;M of IPTG instead of 1&#x000a0;mM. To estimate the number of mutations in wild type and <italic>oxyS</italic> mutant, cultures at OD<sub>600</sub>&#x000a0;~&#x000a0;0.1 were exposed to 1&#x000a0;mM hydrogen peroxide for 30&#x000a0;min (37&#x000b0;C, 200&#x000a0;rpm). The numbers of Rif<sup>r</sup>&#x000a0;were calculated following the protocol described above.</p></sec><sec id="embj201797651-sec-0027"><title>Fluorescence microscopy</title><p>Overnight cultures were sub&#x02010;cultured in fresh LB medium supplemented with 1&#x000a0;mM IPTG and Amp. Tetracycline was included only in cultures that expressed pFtsQAZ. Cultures were grown at 37&#x000b0;C for 3&#x000a0;h before imaging. All the samples were spotted on PBS agar pad for imaging. DNA was stained with DAPI (Sigma&#x02010;Aldrich) at a final concentration of 2&#x000a0;&#x003bc;g/ml. Cells were visualized and photographed using Nikon Eclipse Ti&#x02010;E inverted microscope equipped with Perfect Focus System (PFS) and ORCA Flash 4 camera (Hamamatsu photonics). Images were processed using NIS Elements&#x02010;AR software. To determine cell length distribution, &#x0003e;&#x000a0;250 cells from a 4&#x000a0;&#x000d7;&#x000a0;4 matrix field (16 individual fields) were randomly selected, and their length was measured using NIS Elements&#x02010;AR software. The values given are data obtained from three independent experiments, a total of &#x0003e;&#x000a0;750 cells.</p></sec><sec id="embj201797651-sec-0028"><title>Computational prediction of OxyS homologs and targets</title><p>Iterative blasting and structural filtering implemented in the GLASSgo web server (<ext-link ext-link-type="uri" xlink:href="http://rna.informatik.uni-freiburg.de/GLASSgo/Input.jsp">http://rna.informatik.uni-freiburg.de/GLASSgo/Input.jsp</ext-link>) was used to detect potential OxyS homologs. The maximum allowed <italic>E</italic>&#x02010;value was set to 1, the minimum required identity was 58%, and the structure&#x02010;based filtering value was set to 2. This search yielded 603 candidates belonging to 10 different genera and some uncharacterized enterobacterial sequences, representing at least 27 different species and more than 500 different strains. The computational OxyS target prediction was conducted using IntaRNA and CopraRNA (Wright <italic>et&#x000a0;al</italic>, <xref rid="embj201797651-bib-0040" ref-type="ref">2014</xref>) on the web server version with standard parameters.</p></sec></sec><sec id="embj201797651-sec-0030"><title>Author contributions</title><p>SB, ME&#x02010;W, JE, JG, SG, MH, and PRW performed the experiments. SB, ME&#x02010;W, JE, JG, SG, MH, PRW, SA, and WRH conceived the experiments and analyzed the data. SA wrote the manuscript. SA and WRH managed the project.</p></sec><sec id="embj201797651-sec-0031"><title>Conflict of interest</title><p>The authors declare that they have no conflict of interest.</p></sec><sec sec-type="supplementary-material"><title>Supporting information</title><supplementary-material content-type="local-data"/><supplementary-material content-type="local-data" id="embj201797651-sup-0001"><caption><p>Appendix</p></caption><media xlink:href="EMBJ-37-413-s001.pdf"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="embj201797651-sup-0004"><caption><p>Source Data for Appendix</p></caption><media xlink:href="EMBJ-37-413-s004.zip"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data"><caption><p>Review Process File</p></caption><media xlink:href="EMBJ-37-413-s005.pdf"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="embj201797651-supp-data-0001"><caption><p>Source Data for Figure&#x000a0;2</p></caption><media xlink:href="EMBJ-37-413-s002.zip"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="embj201797651-supp-data-0002"><caption><p>Source Data for Figure&#x000a0;4</p></caption><media xlink:href="EMBJ-37-413-s003.zip"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material></sec></body><back><ack id="embj201797651-sec-0029"><title>Acknowledgements</title><p>This work was supported by the German&#x02010;Israeli Foundation (G&#x02010;1311&#x02010;416.13/2015); the Israel Science Foundation founded by The Israel Academy of Sciences and Humanities (711/13); the Israel Centers of Research Excellence (ICORE), Chromatin and RNA (1796/12); the German Federal Ministry for Education and Research (BMBF) program de.NBI&#x02010;Partner (Grant 031L0106B) and Deutsch&#x02010;Israelische Projektkooperation (AM 441/1&#x02010;1 SO 568/1&#x02010;1).</p></ack><ref-list content-type="cited-references" id="embj201797651-bibl-0001"><title>References</title><ref id="embj201797651-bib-0001"><mixed-citation publication-type="journal" id="embj201797651-cit-0001">
+<string-name>
+<surname>Altuvia</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Weinstein&#x02010;Fischer</surname>
+<given-names>D</given-names>
+</string-name>, <string-name>
+<surname>Zhang</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Postow</surname>
+<given-names>L</given-names>
+</string-name>, <string-name>
+<surname>Storz</surname>
+<given-names>G</given-names>
+</string-name> (<year>1997</year>) <article-title>A small, stable RNA induced by oxidative stress: role as a pleiotropic regulator and antimutator</article-title>. <source>Cell</source>
+<volume>90</volume>: <fpage>43</fpage>&#x02013;<lpage>53</lpage>
+<pub-id pub-id-type="pmid">9230301</pub-id></mixed-citation></ref><ref id="embj201797651-bib-0002"><mixed-citation publication-type="journal" id="embj201797651-cit-0002">
+<string-name>
+<surname>Altuvia</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Zhang</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Argaman</surname>
+<given-names>L</given-names>
+</string-name>, <string-name>
+<surname>Tiwari</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Storz</surname>
+<given-names>G</given-names>
+</string-name> (<year>1998</year>) <article-title>The <italic>Escherichia coli</italic> OxyS regulatory RNA represses <italic>fhlA</italic> translation by blocking ribosome binding</article-title>. <source>EMBO J</source>
+<volume>17</volume>: <fpage>6069</fpage>&#x02013;<lpage>6075</lpage>
+<pub-id pub-id-type="pmid">9774350</pub-id></mixed-citation></ref><ref id="embj201797651-bib-0003"><mixed-citation publication-type="journal" id="embj201797651-cit-0003">
+<string-name>
+<surname>Argaman</surname>
+<given-names>L</given-names>
+</string-name>, <string-name>
+<surname>Altuvia</surname>
+<given-names>S</given-names>
+</string-name> (<year>2000</year>) <article-title>
+<italic>fhlA</italic> repression by OxyS RNA: kissing complex formation at two sites results in a stable antisense&#x02010;target RNA complex</article-title>. <source>J Mol Biol</source>
+<volume>300</volume>: <fpage>1101</fpage>&#x02013;<lpage>1112</lpage>
+<pub-id pub-id-type="pmid">10903857</pub-id></mixed-citation></ref><ref id="embj201797651-bib-0004"><mixed-citation publication-type="journal" id="embj201797651-cit-0004">
+<string-name>
+<surname>Baba</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Ara</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Hasegawa</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Takai</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name>
+<surname>Okumura</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name>
+<surname>Baba</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Datsenko</surname>
+<given-names>KA</given-names>
+</string-name>, <string-name>
+<surname>Tomita</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Wanner</surname>
+<given-names>BL</given-names>
+</string-name>, <string-name>
+<surname>Mori</surname>
+<given-names>H</given-names>
+</string-name> (<year>2006</year>) <article-title>Construction of <italic>Escherichia coli</italic> K&#x02010;12 in&#x02010;frame, single&#x02010;gene knockout mutants: the Keio collection</article-title>. <source>Mol Syst Biol</source>
+<volume>2</volume>: <fpage>2006.0008</fpage>
+</mixed-citation></ref><ref id="embj201797651-bib-0005"><mixed-citation publication-type="journal" id="embj201797651-cit-0005">
+<string-name>
+<surname>Balbontin</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>Fiorini</surname>
+<given-names>F</given-names>
+</string-name>, <string-name>
+<surname>Figueroa&#x02010;Bossi</surname>
+<given-names>N</given-names>
+</string-name>, <string-name>
+<surname>Casadesus</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Bossi</surname>
+<given-names>L</given-names>
+</string-name> (<year>2010</year>) <article-title>Recognition of heptameric seed sequence underlies multi&#x02010;target regulation by RybB small RNA in <italic>Salmonella enterica</italic>
+</article-title>. <source>Mol Microbiol</source>
+<volume>78</volume>: <fpage>380</fpage>&#x02013;<lpage>394</lpage>
+<pub-id pub-id-type="pmid">20979336</pub-id></mixed-citation></ref><ref id="embj201797651-bib-0006"><mixed-citation publication-type="journal" id="embj201797651-cit-0006">
+<string-name>
+<surname>Beisel</surname>
+<given-names>CL</given-names>
+</string-name>, <string-name>
+<surname>Updegrove</surname>
+<given-names>TB</given-names>
+</string-name>, <string-name>
+<surname>Janson</surname>
+<given-names>BJ</given-names>
+</string-name>, <string-name>
+<surname>Storz</surname>
+<given-names>G</given-names>
+</string-name> (<year>2012</year>) <article-title>Multiple factors dictate target selection by Hfq&#x02010;binding small RNAs</article-title>. <source>EMBO J</source>
+<volume>31</volume>: <fpage>1961</fpage>&#x02013;<lpage>1974</lpage>
+<pub-id pub-id-type="pmid">22388518</pub-id></mixed-citation></ref><ref id="embj201797651-bib-0007"><mixed-citation publication-type="journal" id="embj201797651-cit-0007">
+<string-name>
+<surname>Bernhardt</surname>
+<given-names>TG</given-names>
+</string-name>, <string-name>
+<surname>de Boer</surname>
+<given-names>PA</given-names>
+</string-name> (<year>2004</year>) <article-title>Screening for synthetic lethal mutants in <italic>Escherichia coli</italic> and identification of EnvC (YibP) as a periplasmic septal ring factor with murein hydrolase activity</article-title>. <source>Mol Microbiol</source>
+<volume>52</volume>: <fpage>1255</fpage>&#x02013;<lpage>1269</lpage>
+<pub-id pub-id-type="pmid">15165230</pub-id></mixed-citation></ref><ref id="embj201797651-bib-0008"><mixed-citation publication-type="journal" id="embj201797651-cit-0008">
+<string-name>
+<surname>Bi</surname>
+<given-names>E</given-names>
+</string-name>, <string-name>
+<surname>Lutkenhaus</surname>
+<given-names>J</given-names>
+</string-name> (<year>1993</year>) <article-title>Cell division inhibitors SulA and MinCD prevent formation of the FtsZ ring</article-title>. <source>J Bacteriol</source>
+<volume>175</volume>: <fpage>1118</fpage>&#x02013;<lpage>1125</lpage>
+<pub-id pub-id-type="pmid">8432706</pub-id></mixed-citation></ref><ref id="embj201797651-bib-0009"><mixed-citation publication-type="journal" id="embj201797651-cit-0009">
+<string-name>
+<surname>Burke</surname>
+<given-names>C</given-names>
+</string-name>, <string-name>
+<surname>Liu</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Britton</surname>
+<given-names>W</given-names>
+</string-name>, <string-name>
+<surname>Triccas</surname>
+<given-names>JA</given-names>
+</string-name>, <string-name>
+<surname>Thomas</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Smith</surname>
+<given-names>AL</given-names>
+</string-name>, <string-name>
+<surname>Allen</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Salomon</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>Harry</surname>
+<given-names>E</given-names>
+</string-name> (<year>2013</year>) <article-title>Harnessing single cell sorting to identify cell division genes and regulators in bacteria</article-title>. <source>PLoS One</source>
+<volume>8</volume>: <fpage>e60964</fpage>
+<pub-id pub-id-type="pmid">23565292</pub-id></mixed-citation></ref><ref id="embj201797651-bib-0010"><mixed-citation publication-type="journal" id="embj201797651-cit-0010">
+<string-name>
+<surname>Burmann</surname>
+<given-names>BM</given-names>
+</string-name>, <string-name>
+<surname>Schweimer</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Luo</surname>
+<given-names>X</given-names>
+</string-name>, <string-name>
+<surname>Wahl</surname>
+<given-names>MC</given-names>
+</string-name>, <string-name>
+<surname>Stitt</surname>
+<given-names>BL</given-names>
+</string-name>, <string-name>
+<surname>Gottesman</surname>
+<given-names>ME</given-names>
+</string-name>, <string-name>
+<surname>Rosch</surname>
+<given-names>P</given-names>
+</string-name> (<year>2010</year>) <article-title>A NusE:NusG complex links transcription and translation</article-title>. <source>Science</source>
+<volume>328</volume>: <fpage>501</fpage>&#x02013;<lpage>504</lpage>
+<pub-id pub-id-type="pmid">20413501</pub-id></mixed-citation></ref><ref id="embj201797651-bib-0011"><mixed-citation publication-type="journal" id="embj201797651-cit-0011">
+<string-name>
+<surname>Cardinale</surname>
+<given-names>CJ</given-names>
+</string-name>, <string-name>
+<surname>Washburn</surname>
+<given-names>RS</given-names>
+</string-name>, <string-name>
+<surname>Tadigotla</surname>
+<given-names>VR</given-names>
+</string-name>, <string-name>
+<surname>Brown</surname>
+<given-names>LM</given-names>
+</string-name>, <string-name>
+<surname>Gottesman</surname>
+<given-names>ME</given-names>
+</string-name>, <string-name>
+<surname>Nudler</surname>
+<given-names>E</given-names>
+</string-name> (<year>2008</year>) <article-title>Termination factor Rho and its cofactors NusA and NusG silence foreign DNA in <italic>E.&#x000a0;coli</italic>
+</article-title>. <source>Science</source>
+<volume>320</volume>: <fpage>935</fpage>&#x02013;<lpage>938</lpage>
+<pub-id pub-id-type="pmid">18487194</pub-id></mixed-citation></ref><ref id="embj201797651-bib-0012"><mixed-citation publication-type="journal" id="embj201797651-cit-0012">
+<string-name>
+<surname>Chen</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name>
+<surname>Milam</surname>
+<given-names>SL</given-names>
+</string-name>, <string-name>
+<surname>Erickson</surname>
+<given-names>HP</given-names>
+</string-name> (<year>2012</year>) <article-title>SulA inhibits assembly of FtsZ by a simple sequestration mechanism</article-title>. <source>Biochemistry</source>
+<volume>51</volume>: <fpage>3100</fpage>&#x02013;<lpage>3109</lpage>
+<pub-id pub-id-type="pmid">22432817</pub-id></mixed-citation></ref><ref id="embj201797651-bib-0013"><mixed-citation publication-type="journal" id="embj201797651-cit-0013">
+<string-name>
+<surname>Church</surname>
+<given-names>GM</given-names>
+</string-name>, <string-name>
+<surname>Gilbert</surname>
+<given-names>W</given-names>
+</string-name> (<year>1984</year>) <article-title>Genomic sequencing</article-title>. <source>Proc Natl Acad Sci USA</source>
+<volume>81</volume>: <fpage>1991</fpage>&#x02013;<lpage>1995</lpage>
+<pub-id pub-id-type="pmid">6326095</pub-id></mixed-citation></ref><ref id="embj201797651-bib-0014"><mixed-citation publication-type="journal" id="embj201797651-cit-0014">
+<string-name>
+<surname>Ciccia</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Elledge</surname>
+<given-names>SJ</given-names>
+</string-name> (<year>2010</year>) <article-title>The DNA damage response: making it safe to play with knives</article-title>. <source>Mol Cell</source>
+<volume>40</volume>: <fpage>179</fpage>&#x02013;<lpage>204</lpage>
+<pub-id pub-id-type="pmid">20965415</pub-id></mixed-citation></ref><ref id="embj201797651-bib-0015"><mixed-citation publication-type="journal" id="embj201797651-cit-0015">
+<string-name>
+<surname>Conter</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Bouche</surname>
+<given-names>JP</given-names>
+</string-name>, <string-name>
+<surname>Dassain</surname>
+<given-names>M</given-names>
+</string-name> (<year>1996</year>) <article-title>Identification of a new inhibitor of essential division gene <italic>ftsZ</italic> as the kil gene of defective prophage Rac</article-title>. <source>J Bacteriol</source>
+<volume>178</volume>: <fpage>5100</fpage>&#x02013;<lpage>5104</lpage>
+<pub-id pub-id-type="pmid">8752325</pub-id></mixed-citation></ref><ref id="embj201797651-bib-0016"><mixed-citation publication-type="journal" id="embj201797651-cit-0016">
+<string-name>
+<surname>Datsenko</surname>
+<given-names>KA</given-names>
+</string-name>, <string-name>
+<surname>Wanner</surname>
+<given-names>BL</given-names>
+</string-name> (<year>2000</year>) <article-title>One&#x02010;step inactivation of chromosomal genes in <italic>Escherichia coli</italic> K&#x02010;12 using PCR products</article-title>. <source>Proc Natl Acad Sci USA</source>
+<volume>97</volume>: <fpage>6640</fpage>&#x02013;<lpage>6645</lpage>
+<pub-id pub-id-type="pmid">10829079</pub-id></mixed-citation></ref><ref id="embj201797651-bib-0017"><mixed-citation publication-type="journal" id="embj201797651-cit-0017">
+<string-name>
+<surname>De Lay</surname>
+<given-names>N</given-names>
+</string-name>, <string-name>
+<surname>Gottesman</surname>
+<given-names>S</given-names>
+</string-name> (<year>2012</year>) <article-title>A complex network of small non&#x02010;coding RNAs regulate motility in <italic>Escherichia coli</italic>
+</article-title>. <source>Mol Microbiol</source>
+<volume>86</volume>: <fpage>524</fpage>&#x02013;<lpage>538</lpage>
+<pub-id pub-id-type="pmid">22925049</pub-id></mixed-citation></ref><ref id="embj201797651-bib-0018"><mixed-citation publication-type="journal" id="embj201797651-cit-0018">
+<string-name>
+<surname>Downing</surname>
+<given-names>WL</given-names>
+</string-name>, <string-name>
+<surname>Sullivan</surname>
+<given-names>SL</given-names>
+</string-name>, <string-name>
+<surname>Gottesman</surname>
+<given-names>ME</given-names>
+</string-name>, <string-name>
+<surname>Dennis</surname>
+<given-names>PP</given-names>
+</string-name> (<year>1990</year>) <article-title>Sequence and transcriptional pattern of the essential <italic>Escherichia coli</italic> secE&#x02010;nusG operon</article-title>. <source>J Bacteriol</source>
+<volume>172</volume>: <fpage>1621</fpage>&#x02013;<lpage>1627</lpage>
+<pub-id pub-id-type="pmid">2137819</pub-id></mixed-citation></ref><ref id="embj201797651-bib-0019"><mixed-citation publication-type="journal" id="embj201797651-cit-0019">
+<string-name>
+<surname>Gueiros&#x02010;Filho</surname>
+<given-names>FJ</given-names>
+</string-name>, <string-name>
+<surname>Losick</surname>
+<given-names>R</given-names>
+</string-name> (<year>2002</year>) <article-title>A widely conserved bacterial cell division protein that promotes assembly of the tubulin&#x02010;like protein FtsZ</article-title>. <source>Genes Dev</source>
+<volume>16</volume>: <fpage>2544</fpage>&#x02013;<lpage>2556</lpage>
+<pub-id pub-id-type="pmid">12368265</pub-id></mixed-citation></ref><ref id="embj201797651-bib-0020"><mixed-citation publication-type="journal" id="embj201797651-cit-0020">
+<string-name>
+<surname>Guillier</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Gottesman</surname>
+<given-names>S</given-names>
+</string-name> (<year>2006</year>) <article-title>Remodelling of the <italic>Escherichia coli</italic> outer membrane by two small regulatory RNAs</article-title>. <source>Mol Microbiol</source>
+<volume>59</volume>: <fpage>231</fpage>&#x02013;<lpage>247</lpage>
+<pub-id pub-id-type="pmid">16359331</pub-id></mixed-citation></ref><ref id="embj201797651-bib-0021"><mixed-citation publication-type="journal" id="embj201797651-cit-0021">
+<string-name>
+<surname>Haeusser</surname>
+<given-names>DP</given-names>
+</string-name>, <string-name>
+<surname>Hoashi</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Weaver</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Brown</surname>
+<given-names>N</given-names>
+</string-name>, <string-name>
+<surname>Pan</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Sawitzke</surname>
+<given-names>JA</given-names>
+</string-name>, <string-name>
+<surname>Thomason</surname>
+<given-names>LC</given-names>
+</string-name>, <string-name>
+<surname>Court</surname>
+<given-names>DL</given-names>
+</string-name>, <string-name>
+<surname>Margolin</surname>
+<given-names>W</given-names>
+</string-name> (<year>2014</year>) <article-title>The Kil peptide of bacteriophage lambda blocks <italic>Escherichia coli</italic> cytokinesis via ZipA&#x02010;dependent inhibition of FtsZ assembly</article-title>. <source>PLoS Genet</source>
+<volume>10</volume>: <fpage>e1004217</fpage>
+<pub-id pub-id-type="pmid">24651041</pub-id></mixed-citation></ref><ref id="embj201797651-bib-0022"><mixed-citation publication-type="journal" id="embj201797651-cit-0022">
+<string-name>
+<surname>Hernandez&#x02010;Rocamora</surname>
+<given-names>VM</given-names>
+</string-name>, <string-name>
+<surname>Alfonso</surname>
+<given-names>C</given-names>
+</string-name>, <string-name>
+<surname>Margolin</surname>
+<given-names>W</given-names>
+</string-name>, <string-name>
+<surname>Zorrilla</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Rivas</surname>
+<given-names>G</given-names>
+</string-name> (<year>2015</year>) <article-title>Evidence that bacteriophage lambda Kil peptide inhibits bacterial cell division by disrupting FtsZ protofilaments and sequestering protein subunits</article-title>. <source>J Biol Chem</source>
+<volume>290</volume>: <fpage>20325</fpage>&#x02013;<lpage>20335</lpage>
+<pub-id pub-id-type="pmid">26124275</pub-id></mixed-citation></ref><ref id="embj201797651-bib-0023"><mixed-citation publication-type="journal" id="embj201797651-cit-0023">
+<string-name>
+<surname>Hershko&#x02010;Shalev</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Odenheimer&#x02010;Bergman</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Elgrably&#x02010;Weiss</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Ben&#x02010;Zvi</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Govindarajan</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Seri</surname>
+<given-names>H</given-names>
+</string-name>, <string-name>
+<surname>Papenfort</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Vogel</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Altuvia</surname>
+<given-names>S</given-names>
+</string-name> (<year>2016</year>) <article-title>Gifsy&#x02010;1 prophage IsrK with dual function as small and messenger RNA modulates vital bacterial machineries</article-title>. <source>PLoS Genet</source>
+<volume>12</volume>: <fpage>e1005975</fpage>
+<pub-id pub-id-type="pmid">27057757</pub-id></mixed-citation></ref><ref id="embj201797651-bib-0024"><mixed-citation publication-type="journal" id="embj201797651-cit-0024">
+<string-name>
+<surname>Huisman</surname>
+<given-names>O</given-names>
+</string-name>, <string-name>
+<surname>D'Ari</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>Gottesman</surname>
+<given-names>S</given-names>
+</string-name> (<year>1984</year>) <article-title>Cell&#x02010;division control in <italic>Escherichia coli</italic>: specific induction of the SOS function SfiA protein is sufficient to block septation</article-title>. <source>Proc Natl Acad Sci USA</source>
+<volume>81</volume>: <fpage>4490</fpage>&#x02013;<lpage>4494</lpage>
+<pub-id pub-id-type="pmid">6087326</pub-id></mixed-citation></ref><ref id="embj201797651-bib-0025"><mixed-citation publication-type="journal" id="embj201797651-cit-0025">
+<string-name>
+<surname>Lee</surname>
+<given-names>HJ</given-names>
+</string-name>, <string-name>
+<surname>Gottesman</surname>
+<given-names>S</given-names>
+</string-name> (<year>2016</year>) <article-title>sRNA roles in regulating transcriptional regulators: Lrp and SoxS regulation by sRNAs</article-title>. <source>Nucleic Acids Res</source>
+<volume>44</volume>: <fpage>6907</fpage>&#x02013;<lpage>6923</lpage>
+<pub-id pub-id-type="pmid">27137887</pub-id></mixed-citation></ref><ref id="embj201797651-bib-0026"><mixed-citation publication-type="journal" id="embj201797651-cit-0026">
+<string-name>
+<surname>Moon</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Gottesman</surname>
+<given-names>S</given-names>
+</string-name> (<year>2011</year>) <article-title>Competition among Hfq&#x02010;binding small RNAs in <italic>Escherichia coli</italic>
+</article-title>. <source>Mol Microbiol</source>
+<volume>82</volume>: <fpage>1545</fpage>&#x02013;<lpage>1562</lpage>
+<pub-id pub-id-type="pmid">22040174</pub-id></mixed-citation></ref><ref id="embj201797651-bib-0027"><mixed-citation publication-type="journal" id="embj201797651-cit-0027">
+<string-name>
+<surname>Mooney</surname>
+<given-names>RA</given-names>
+</string-name>, <string-name>
+<surname>Davis</surname>
+<given-names>SE</given-names>
+</string-name>, <string-name>
+<surname>Peters</surname>
+<given-names>JM</given-names>
+</string-name>, <string-name>
+<surname>Rowland</surname>
+<given-names>JL</given-names>
+</string-name>, <string-name>
+<surname>Ansari</surname>
+<given-names>AZ</given-names>
+</string-name>, <string-name>
+<surname>Landick</surname>
+<given-names>R</given-names>
+</string-name> (<year>2009</year>) <article-title>Regulator trafficking on bacterial transcription units <italic>in&#x000a0;vivo</italic>
+</article-title>. <source>Mol Cell</source>
+<volume>33</volume>: <fpage>97</fpage>&#x02013;<lpage>108</lpage>
+<pub-id pub-id-type="pmid">19150431</pub-id></mixed-citation></ref><ref id="embj201797651-bib-0028"><mixed-citation publication-type="journal" id="embj201797651-cit-0028">
+<string-name>
+<surname>Park</surname>
+<given-names>JH</given-names>
+</string-name>, <string-name>
+<surname>Lee</surname>
+<given-names>KH</given-names>
+</string-name>, <string-name>
+<surname>Kim</surname>
+<given-names>TY</given-names>
+</string-name>, <string-name>
+<surname>Lee</surname>
+<given-names>SY</given-names>
+</string-name> (<year>2007</year>) <article-title>Metabolic engineering of <italic>Escherichia coli</italic> for the production of L&#x02010;valine based on transcriptome analysis and <italic>in silico</italic> gene knockout simulation</article-title>. <source>Proc Natl Acad Sci USA</source>
+<volume>104</volume>: <fpage>7797</fpage>&#x02013;<lpage>7802</lpage>
+<pub-id pub-id-type="pmid">17463081</pub-id></mixed-citation></ref><ref id="embj201797651-bib-0029"><mixed-citation publication-type="journal" id="embj201797651-cit-0029">
+<string-name>
+<surname>Peters</surname>
+<given-names>JM</given-names>
+</string-name>, <string-name>
+<surname>Mooney</surname>
+<given-names>RA</given-names>
+</string-name>, <string-name>
+<surname>Kuan</surname>
+<given-names>PF</given-names>
+</string-name>, <string-name>
+<surname>Rowland</surname>
+<given-names>JL</given-names>
+</string-name>, <string-name>
+<surname>Keles</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Landick</surname>
+<given-names>R</given-names>
+</string-name> (<year>2009</year>) <article-title>Rho directs widespread termination of intragenic and stable RNA transcription</article-title>. <source>Proc Natl Acad Sci USA</source>
+<volume>106</volume>: <fpage>15406</fpage>&#x02013;<lpage>15411</lpage>
+<pub-id pub-id-type="pmid">19706412</pub-id></mixed-citation></ref><ref id="embj201797651-bib-0030"><mixed-citation publication-type="journal" id="embj201797651-cit-0030">
+<string-name>
+<surname>Peters</surname>
+<given-names>JM</given-names>
+</string-name>, <string-name>
+<surname>Mooney</surname>
+<given-names>RA</given-names>
+</string-name>, <string-name>
+<surname>Grass</surname>
+<given-names>JA</given-names>
+</string-name>, <string-name>
+<surname>Jessen</surname>
+<given-names>ED</given-names>
+</string-name>, <string-name>
+<surname>Tran</surname>
+<given-names>F</given-names>
+</string-name>, <string-name>
+<surname>Landick</surname>
+<given-names>R</given-names>
+</string-name> (<year>2012</year>) <article-title>Rho and NusG suppress pervasive antisense transcription in <italic>Escherichia coli</italic>
+</article-title>. <source>Genes Dev</source>
+<volume>26</volume>: <fpage>2621</fpage>&#x02013;<lpage>2633</lpage>
+<pub-id pub-id-type="pmid">23207917</pub-id></mixed-citation></ref><ref id="embj201797651-bib-0031"><mixed-citation publication-type="journal" id="embj201797651-cit-0031">
+<string-name>
+<surname>Powell</surname>
+<given-names>BS</given-names>
+</string-name>, <string-name>
+<surname>Court</surname>
+<given-names>DL</given-names>
+</string-name> (<year>1998</year>) <article-title>Control of <italic>ftsZ</italic> expression, cell division, and glutamine metabolism in Luria&#x02010;Bertani medium by the alarmone ppGpp in <italic>Escherichia coli</italic>
+</article-title>. <source>J Bacteriol</source>
+<volume>180</volume>: <fpage>1053</fpage>&#x02013;<lpage>1062</lpage>
+<pub-id pub-id-type="pmid">9495742</pub-id></mixed-citation></ref><ref id="embj201797651-bib-0032"><mixed-citation publication-type="journal" id="embj201797651-cit-0032">
+<string-name>
+<surname>Rice</surname>
+<given-names>JB</given-names>
+</string-name>, <string-name>
+<surname>Balasubramanian</surname>
+<given-names>D</given-names>
+</string-name>, <string-name>
+<surname>Vanderpool</surname>
+<given-names>CK</given-names>
+</string-name> (<year>2012</year>) <article-title>Small RNA binding&#x02010;site multiplicity involved in translational regulation of a polycistronic mRNA</article-title>. <source>Proc Natl Acad Sci USA</source>
+<volume>109</volume>: <fpage>E2691</fpage>&#x02013;<lpage>E2698</lpage>
+<pub-id pub-id-type="pmid">22988087</pub-id></mixed-citation></ref><ref id="embj201797651-bib-0033"><mixed-citation publication-type="book" id="embj201797651-cit-0033">
+<string-name>
+<surname>Rio</surname>
+<given-names>DC</given-names>
+</string-name>, <string-name>
+<surname>Ares</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Hannon</surname>
+<given-names>GJ</given-names>
+</string-name>, <string-name>
+<surname>Nilsen</surname>
+<given-names>TW</given-names>
+</string-name> (<year>2011</year>) <chapter-title>Detection and characterization of specific RNAs</chapter-title> In <source>RNA: a laboratory manual</source>, <person-group person-group-type="editor"><name><surname>Rio</surname><given-names>DC</given-names></name></person-group>, <person-group person-group-type="editor"><name><surname>Ares</surname><given-names>M</given-names></name></person-group>, <person-group person-group-type="editor"><name><surname>Hannon</surname><given-names>GJ</given-names></name></person-group>, <person-group person-group-type="editor"><name><surname>Nilsen</surname><given-names>TW</given-names></name></person-group> (eds), pp <fpage>132</fpage>&#x02013;<lpage>134</lpage>. <publisher-loc>Cold Spring Harbor, NY</publisher-loc>: <publisher-name>Cold Spring Harbor Press</publisher-name>
+</mixed-citation></ref><ref id="embj201797651-bib-0034"><mixed-citation publication-type="journal" id="embj201797651-cit-0034">
+<string-name>
+<surname>Spampinato</surname>
+<given-names>CP</given-names>
+</string-name> (<year>2016</year>) <article-title>Protecting DNA from errors and damage: an overview of DNA repair mechanisms in plants compared to mammals</article-title>. <source>Cell Mol Life Sci</source>
+<volume>74</volume>: <fpage>1643</fpage>&#x02013;<lpage>1709</lpage>
+</mixed-citation></ref><ref id="embj201797651-bib-0035"><mixed-citation publication-type="journal" id="embj201797651-cit-0035">
+<string-name>
+<surname>Sullivan</surname>
+<given-names>SL</given-names>
+</string-name>, <string-name>
+<surname>Gottesman</surname>
+<given-names>ME</given-names>
+</string-name> (<year>1992</year>) <article-title>Requirement for <italic>E.&#x000a0;coli</italic> NusG protein in factor&#x02010;dependent transcription termination</article-title>. <source>Cell</source>
+<volume>68</volume>: <fpage>989</fpage>&#x02013;<lpage>994</lpage>
+<pub-id pub-id-type="pmid">1547498</pub-id></mixed-citation></ref><ref id="embj201797651-bib-0036"><mixed-citation publication-type="journal" id="embj201797651-cit-0036">
+<string-name>
+<surname>Tjaden</surname>
+<given-names>B</given-names>
+</string-name>, <string-name>
+<surname>Goodwin</surname>
+<given-names>SS</given-names>
+</string-name>, <string-name>
+<surname>Opdyke</surname>
+<given-names>JA</given-names>
+</string-name>, <string-name>
+<surname>Guillier</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Fu</surname>
+<given-names>DX</given-names>
+</string-name>, <string-name>
+<surname>Gottesman</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Storz</surname>
+<given-names>G</given-names>
+</string-name> (<year>2006</year>) <article-title>Target prediction for small, noncoding RNAs in bacteria</article-title>. <source>Nucleic Acids Res</source>
+<volume>34</volume>: <fpage>2791</fpage>&#x02013;<lpage>2802</lpage>
+<pub-id pub-id-type="pmid">16717284</pub-id></mixed-citation></ref><ref id="embj201797651-bib-0037"><mixed-citation publication-type="journal" id="embj201797651-cit-0037">
+<string-name>
+<surname>Wagner</surname>
+<given-names>EG</given-names>
+</string-name>, <string-name>
+<surname>Romby</surname>
+<given-names>P</given-names>
+</string-name> (<year>2015</year>) <article-title>Small RNAs in bacteria and archaea: who&#x000a0;they are, what they do, and how they do it</article-title>. <source>Adv Genet</source>
+<volume>90</volume>: <fpage>133</fpage>&#x02013;<lpage>208</lpage>
+<pub-id pub-id-type="pmid">26296935</pub-id></mixed-citation></ref><ref id="embj201797651-bib-0038"><mixed-citation publication-type="journal" id="embj201797651-cit-0038">
+<string-name>
+<surname>Wang</surname>
+<given-names>X</given-names>
+</string-name>, <string-name>
+<surname>Kim</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name>
+<surname>Ma</surname>
+<given-names>Q</given-names>
+</string-name>, <string-name>
+<surname>Hong</surname>
+<given-names>SH</given-names>
+</string-name>, <string-name>
+<surname>Pokusaeva</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Sturino</surname>
+<given-names>JM</given-names>
+</string-name>, <string-name>
+<surname>Wood</surname>
+<given-names>TK</given-names>
+</string-name> (<year>2010</year>) <article-title>Cryptic prophages help bacteria cope with adverse environments</article-title>. <source>Nat Commun</source>
+<volume>1</volume>: <fpage>147</fpage>
+<pub-id pub-id-type="pmid">21266997</pub-id></mixed-citation></ref><ref id="embj201797651-bib-0039"><mixed-citation publication-type="journal" id="embj201797651-cit-0039">
+<string-name>
+<surname>Werner</surname>
+<given-names>F</given-names>
+</string-name> (<year>2012</year>) <article-title>A nexus for gene expression&#x02010;molecular mechanisms of Spt5 and NusG in the three domains of life</article-title>. <source>J Mol Biol</source>
+<volume>417</volume>: <fpage>13</fpage>&#x02013;<lpage>27</lpage>
+<pub-id pub-id-type="pmid">22306403</pub-id></mixed-citation></ref><ref id="embj201797651-bib-0040"><mixed-citation publication-type="journal" id="embj201797651-cit-0040">
+<string-name>
+<surname>Wright</surname>
+<given-names>PR</given-names>
+</string-name>, <string-name>
+<surname>Georg</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Mann</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Sorescu</surname>
+<given-names>DA</given-names>
+</string-name>, <string-name>
+<surname>Richter</surname>
+<given-names>AS</given-names>
+</string-name>, <string-name>
+<surname>Lott</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Kleinkauf</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>Hess</surname>
+<given-names>WR</given-names>
+</string-name>, <string-name>
+<surname>Backofen</surname>
+<given-names>R</given-names>
+</string-name> (<year>2014</year>) <article-title>CopraRNA and IntaRNA: predicting small RNA targets, networks and interaction domains</article-title>. <source>Nucleic Acids Res</source>
+<volume>42</volume>: <fpage>W119</fpage>&#x02013;<lpage>W123</lpage>
+<pub-id pub-id-type="pmid">24838564</pub-id></mixed-citation></ref><ref id="embj201797651-bib-0041"><mixed-citation publication-type="journal" id="embj201797651-cit-0041">
+<string-name>
+<surname>Yu</surname>
+<given-names>D</given-names>
+</string-name>, <string-name>
+<surname>Ellis</surname>
+<given-names>HM</given-names>
+</string-name>, <string-name>
+<surname>Lee</surname>
+<given-names>EC</given-names>
+</string-name>, <string-name>
+<surname>Jenkins</surname>
+<given-names>NA</given-names>
+</string-name>, <string-name>
+<surname>Copeland</surname>
+<given-names>NG</given-names>
+</string-name>, <string-name>
+<surname>Court</surname>
+<given-names>DL</given-names>
+</string-name> (<year>2000</year>) <article-title>An&#x000a0;efficient recombination system for chromosome engineering in&#x000a0;<italic>Escherichia coli</italic>
+</article-title>. <source>Proc Natl Acad Sci USA</source>
+<volume>97</volume>: <fpage>5978</fpage>&#x02013;<lpage>5983</lpage>
+<pub-id pub-id-type="pmid">10811905</pub-id></mixed-citation></ref><ref id="embj201797651-bib-0042"><mixed-citation publication-type="journal" id="embj201797651-cit-0042">
+<string-name>
+<surname>Zeghouf</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Li</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Butland</surname>
+<given-names>G</given-names>
+</string-name>, <string-name>
+<surname>Borkowska</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Canadien</surname>
+<given-names>V</given-names>
+</string-name>, <string-name>
+<surname>Richards</surname>
+<given-names>D</given-names>
+</string-name>, <string-name>
+<surname>Beattie</surname>
+<given-names>B</given-names>
+</string-name>, <string-name>
+<surname>Emili</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Greenblatt</surname>
+<given-names>JF</given-names>
+</string-name> (<year>2004</year>) <article-title>Sequential Peptide Affinity (SPA) system for the identification of mammalian and bacterial protein complexes</article-title>. <source>J Proteome Res</source>
+<volume>3</volume>: <fpage>463</fpage>&#x02013;<lpage>468</lpage>
+<pub-id pub-id-type="pmid">15253427</pub-id></mixed-citation></ref><ref id="embj201797651-bib-0043"><mixed-citation publication-type="journal" id="embj201797651-cit-0043">
+<string-name>
+<surname>Zhang</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Altuvia</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Tiwari</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Argaman</surname>
+<given-names>L</given-names>
+</string-name>, <string-name>
+<surname>Hengge&#x02010;Aronis</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>Storz</surname>
+<given-names>G</given-names>
+</string-name> (<year>1998</year>) <article-title>The OxyS regulatory RNA represses rpoS translation and binds the Hfq (HF&#x02010;I) protein</article-title>. <source>EMBO J</source>
+<volume>17</volume>: <fpage>6061</fpage>&#x02013;<lpage>6068</lpage>
+<pub-id pub-id-type="pmid">9774349</pub-id></mixed-citation></ref></ref-list></back></article>

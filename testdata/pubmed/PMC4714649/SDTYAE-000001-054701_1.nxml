@@ -1,0 +1,597 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.0 20120330//EN" "JATS-archivearticle1.dtd">
+<article xmlns:ali="http://www.niso.org/schemas/ali/1.0/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article"><?properties open_access?><front><journal-meta><journal-id journal-id-type="nlm-ta">Struct Dyn</journal-id><journal-id journal-id-type="iso-abbrev">Struct Dyn</journal-id><journal-id journal-id-type="coden">SDTYAE</journal-id><journal-title-group><journal-title>Structural Dynamics</journal-title></journal-title-group><issn pub-type="epub">2329-7778</issn><publisher><publisher-name>American Crystallographic Association</publisher-name></publisher></journal-meta><article-meta><article-id pub-id-type="pmid">26798782</article-id><article-id pub-id-type="pmc">4714649</article-id><article-id pub-id-type="doi">10.1063/1.4894379</article-id><article-id pub-id-type="publisher-id">1.4894379</article-id><article-id pub-id-type="publisher-id">001405SDY</article-id><article-id pub-id-type="publisher-manuscript">SD-RE14-00024R1</article-id><article-categories><subj-group subj-group-type="heading"><subject>ARTICLES</subject><subj-group subj-group-type="heading"><subject>Biological Systems</subject></subj-group></subj-group></article-categories><title-group><article-title>Heterogeneous rotational diffusion of a fluorescent probe in lipid monolayers</article-title></title-group><contrib-group><contrib contrib-type="author"><name><surname>Dadashvand</surname><given-names>Neda</given-names></name></contrib><contrib contrib-type="author"><name><surname>Williams</surname><given-names>LaNell A.</given-names></name></contrib><contrib contrib-type="author"><contrib-id contrib-id-type="orcid" authenticated="false">http://orcid.org/0000-0002-5937-0511</contrib-id><name><surname>Othon</surname><given-names>Christina M.</given-names></name><xref ref-type="author-note" rid="n1">a)</xref></contrib><aff>Physics Department, <institution>Wesleyan University</institution>, Middletown, Connecticut 06459, <country>USA</country></aff></contrib-group><author-notes><fn id="n1"><label>a)</label><p>Author to whom correspondence should be addressed. Electronic mail: <email>cothon@wesleyan.edu</email></p></fn></author-notes><pub-date pub-type="epub"><day>27</day><month>8</month><year>2014</year></pub-date><pub-date pub-type="collection"><month>9</month><year>2014</year></pub-date><pub-date pub-type="pmc-release"><day>27</day><month>8</month><year>2014</year></pub-date><!--PMC Release delay is 0 months and 0 days and was based on the
+							epub date.--><volume>1</volume><issue>5</issue><elocation-id seq="1">054701</elocation-id><history><date date-type="received"><day>11</day><month>5</month><year>2014</year></date><date date-type="accepted"><day>20</day><month>8</month><year>2014</year></date></history><permissions><copyright-statement>&#x000a9; 2014 Author(s).</copyright-statement><copyright-year>2014</copyright-year><copyright-holder>Author(s)</copyright-holder><license license-type="ccc"><license-p>2329-7778/2014/1(5)/054701/9</license-p></license><license license-type="open"><license-p> All article content, except where otherwise noted, is licensed under a Creative Commons Attribution 3.0 Unported License.</license-p></license></permissions><abstract><p>The rotational correlation time of the lipid probe 1-palmitoyl-2-{6-[(7-nitro-2-1,3-benzoxadiazol-4-yl)amino]hexanoyl}-<italic>sn</italic>-glycero-3-phosphocholine (NBD-PC) is measured using fluorescence anisotropy for two lipid species. We measure the rotational diffusion in a monolayer of 1,2-Didecanoyl-sn-glycero-3-phosphocholine (DPPC) which displays a phase transition at room temperature from the liquid-expanded to the liquid-condensed phase. The constant rotational diffusion of the probe throughout the phase transition reflects the measurement of dynamics in only the liquid-expanded phase. We contrast the dynamic changes during this phase coexistence to the continuous density increase observed in 1,2-dimyristoyl-<italic>sn</italic>-glycero-3-phosphocholine (DMPC) at room temperature. We observe a non-exponential decay of the probe diffusion consistent with heterogeneity of the orientational dynamics.</p></abstract><counts><page-count count="9"/></counts><custom-meta-group><custom-meta><meta-name>crossmark</meta-name><meta-value/></custom-meta></custom-meta-group></article-meta></front><body><sec id="s1"><label>I.</label><title>INTRODUCTION</title><p>Biological lipid membranes are inherently dynamic. These dynamics are essential to their ability to adapt to new particle insertion, for the sorting of membrane proteins, and for recycling material within the structure. Dynamic models, such as the lipid raft model, suggest that the nanoscale heterogeneity of lipid structures and dynamics function to drive protein sorting and self-assembly.<xref rid="c1" ref-type="bibr"><sup>1</sup></xref> The mechanism for complex dynamic heterogeneity in cellular membranes remains controversial, although the observation of critical fluctuations in lipid compositions near physiological temperatures may represent one possible mechanism.<xref rid="c2" ref-type="bibr"><sup>2</sup></xref> However, a complete understanding of the interplay between membrane constituents and self-assembly is still lacking. Living lipid structures are extremely complex due to a myriad of lipid species, high concentration and diverse population of membrane proteins, and the variation of composition amongst different lipid structures. This complexity makes identifying universal features of dynamic behavior a significant challenge. Therefore, in this study, we consider a model lipid system that can provide a baseline for describing the distribution of dynamic clustering in free-standing lipid structures. To this end, we measure the distribution of rotational correlation times for lipids at the air-water interface to characterize the degree of dynamic heterogeneity in single constituent lipid monolayers. Such observations have implications for the heterogeneity for more complex lipid structures and biological membranes.</p><p>Lipid monolayers formed at the air-water interface have been studied by the Langmuir technique<xref rid="c3" ref-type="bibr"><sup>3</sup></xref> for many decades. The evolution of lipid phase and domain structure at the air&#x02013;water interface has been well characterized by Brewster-angle microscopy,<xref rid="c4" ref-type="bibr"><sup>4</sup></xref> fluorescence microscopy,<xref rid="c5" ref-type="bibr"><sup>5,6</sup></xref> x-ray scattering,<xref rid="c7" ref-type="bibr"><sup>7,8</sup></xref> and vibrational sum frequency generation spectroscopy.<xref rid="c9" ref-type="bibr"><sup>9</sup></xref> In particular, the large-scale equilibrium phase behavior of single-constituent lipid monolayers are well understood and phase diagrams exist for many lipid species.<xref rid="c10" ref-type="bibr"><sup>10,11</sup></xref></p><p>1,2-Didecanoyl-sn-glycero-3-phosphocholine (DPPC) is the most abundant lipid component in pulmonary surfactant.<xref rid="c12" ref-type="bibr"><sup>12</sup></xref> DPPC exhibits a phase transition at room temperature from liquid-expanded (LE) phase to liquid&#x02013;condensed (LC) phase,<xref rid="c13" ref-type="bibr"><sup>13,14</sup></xref> which is characterized experimentally by a plateau in the pressure-area isotherm, see Figure <xref ref-type="fig" rid="f1">1(a)</xref>. Phase changes in lipid monolayers are accompanied by changes in long-range order which impacts local packing and dynamic mobility. In particular, the condensed phase of DPPC exhibits a tilted phase in which the tails are highly ordered; however, the head groups remain disordered and rotationally mobile.<xref rid="c15" ref-type="bibr"><sup>15</sup></xref> The phase coexistence between the LE and LC phases occurs for molecular area &#x02248; 60&#x02013;80 &#x000c5;<sup>2</sup> (and corresponding pressures between &#x02248;3&#x02009;mN/m and 10&#x02009;mN/m). In this region, fluorescently labeled lipids which preferentially partition to the LE phase<xref rid="c16" ref-type="bibr"><sup>16,17</sup></xref> can be used to image phase coexistence. Within the phase coexistence regime, the fractional area of the LE phase is reduced at the expense of the increased area of the LC phase as pressure increases. However, the average density of the LE phase remains uniform through the phase coexistence regime. Fluorescent microscopy images of the phase coexistence are displayed in the supplementary material.<xref rid="c18" ref-type="bibr"><sup>18</sup></xref> In contrast, a monolayer of 1,2-dimyristoyl-<italic>sn</italic>-glycero-3-phosphocholine (DMPC) near room temperature displays a continuous isotherm, indicating a single liquid phase (Figure <xref ref-type="fig" rid="f1">1(b)</xref>), and no observable partitioning of the probe in fluorescence microscopy images.</p><p>Dynamic studies of lipid films have been performed using a variety of physical techniques.<xref rid="c19" ref-type="bibr"><sup>19&#x02013;25</sup></xref> Most of these studies focus on lateral translation in model membranes. Translational diffusion appears only weakly dependent upon the chemical nature of the probe.<xref rid="c26" ref-type="bibr"><sup>26,27</sup></xref> In contrast, rotational diffusion is more sensitive to the probe properties, including labelling site, polarity, and probe size and shape. We have carefully chosen a probe which strongly orients itself in the polar headgroup region of the monolayer,<xref rid="c28" ref-type="bibr"><sup>28&#x02013;30</sup></xref> and does not change orientation or position within the monolayer over the pressure range reported in this study. Thus, the rotational diffusion of this probe is governed by the nearest-neighbor interactions and dictated by the parent liquid phase,<xref rid="c31" ref-type="bibr"><sup>31</sup></xref> and can be used to assess the uniformity of dynamic freedom experienced by the probes within various lipid phases. The rotational diffusion of fluorescent probes in single-constituent lipid structures has been previously reported. For example, the average rotational correlation time of 1-palmitoyl-2-{6-[(7-nitro-2-1,3-benzoxadiazol-4-yl)amino]hexanoyl}-<italic>sn</italic>-glycero-3-phosphocholine (NBD-PC) in a vesicle of pure DPPC with a diameter of 100&#x02009;nm has been measured to be 5.04&#x02009;ns at 20&#x02009;&#x000b0;C,<xref rid="c32" ref-type="bibr"><sup>32</sup></xref> or 2.5&#x02009;ns for a vesicle diameter of 100&#x02009;nm at 49.8&#x02009;&#x000b0;C.<xref rid="c28" ref-type="bibr"><sup>28</sup></xref> However, the uniformity of the probe dynamics within single component lipid models has not been explored. The distribution of vesicle diameters and the presence of an inner and outer leaflet would create a distribution of membrane curvatures which would compound any interpretation of observed non-exponential behavior in vesicle models.</p><p>This study takes advantage of the adjustable pressure in a Langmuir monolayer to characterize the change in dynamic distributions of lipids as the ordering of the film is altered. Here, we describe the dynamic changes associated with rotational diffusion and nearest neighbor interactions for the LE to LC phase change associated with DPPC; we contrast these dynamic changes to the continuous LE phase of DMPC compressed over the same pressure range. We report the pressure dependent diffusive behavior of lipids in free-standing films, describing the degree of heterogeneity in the measured dynamics for these structures. This work offers insight into the local organization of lipid structures which has important consequences protein self-assembly in biological membranes.</p></sec><sec id="s2"><label>II.</label><title>EXPERIMENTAL METHODS</title><p>Lipid monolayers were prepared via the Langmuir method, and their pressure-area isotherms were monitored using a Wilhelmly film balance.<xref rid="c33" ref-type="bibr"><sup>33</sup></xref> DPPC; DMPC; and NBD-PC were purchased from Avanti Polar Lipids and were used without further purification. Lipid solutions were prepared in chloroform, with a 1 mol. % NBD-PC fluorescent label concentration. Monolayers were prepared on a subphase of ultra-pure water (18 M&#x003a9;). 35&#x02009;<italic>&#x003bc;</italic>l of solution was spread on the water surface, and 15 min is allowed for solvent evaporation and layer stabilization.</p><p>NBD-PC was chosen as the lipid probe due to its location in the polar head-group region of the monolayer. The highly polar nature of the probe anchors it to the lipid-water interface,<xref rid="c28" ref-type="bibr"><sup>28,29</sup></xref> which allows the probe to remain in the same location and orientation through the experimental conditions probed in this study. We verified a uniform orientation and hydration state by monitoring the steady state fluorescence spectrum of NBD upon excitation using an Ocean Optics Spectrofluorimeter and fiber optic collection. This allowed us to collect sample fluorescence <italic>in-situ</italic>. The fluorescence maxima of NBD&#x02014;excited with 463&#x02009;nm light, and collected for a monolayer at the air-water interface&#x02014;was measured to be 544&#x02009;<inline-formula><mml:math id="M1"><mml:mo>&#x000b1;</mml:mo></mml:math></inline-formula>&#x02009;1&#x02009;nm for all samples and pressures. We have also monitored the lifetime of the probe which was measured to be 6&#x02009;ns and invariant to changes in pressure, see supplementary material.<xref rid="c18" ref-type="bibr"><sup>18</sup></xref> These data give us confidence that the orientation and location of the probe within the monolayer is constant, and that the relative size and shape of the probe is not changing during the compression. Thus, the observed changes in rotational dynamics are due to the microviscosity of the local environment, not due to the probe properties.</p><sec id="s2A"><label>A.</label><title>Langmuir system</title><p>Our Langmuir trough was milled from a solid piece of Teflon, and has a maximum working area of &#x0223c;400&#x02009;cm<sup>2</sup>. The temperature of the subphase is controlled by circulating water bath through the aluminum base of the trough. The surface pressure-area isotherm was monitored by controlling the positions of two computer-controlled DC motors which position Delrin barriers to provide symmetric film compression. The rate of compression and position of the barrier are controlled using a Labview feedback program, which continuously monitors the pressure of the film by the Wilhelmy plate method (Nima PS4 Pressure Sensor). Films were compressed at the rate of <inline-formula><mml:math id="M2"><mml:mrow><mml:mo>&#x02009;</mml:mo><mml:mn>5</mml:mn><mml:mi mathvariant="normal">c</mml:mi><mml:msup><mml:mrow><mml:mi mathvariant="normal">m</mml:mi></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msup><mml:mo>/</mml:mo><mml:mi mathvariant="normal">m</mml:mi><mml:mi mathvariant="normal">i</mml:mi><mml:mi mathvariant="normal">n</mml:mi></mml:mrow></mml:math></inline-formula> to the target pressure and then held constant for the duration of the time-resolved fluorescence anisotropy (TRFA) experiments. Our trough and microscope are enclosed to minimize the effects of layer drift and subphase evaporation.</p></sec><sec id="s2B"><label>B.</label><title>Wide-field TRFA microscope</title><p>We have built a time-resolved fluorescence microscope (Figure <xref ref-type="fig" rid="f2">2</xref>) that makes measurements at the air-water interface. There are two modes of operation: layer imaging and measurement of time-resolved dynamics. The combination of our imaging capabilities, tunable and highly selective ultrafast excitation, wide-field excitation, and use of reflective objective (which minimizes chromatic aberration and dispersion) are a novel and flexible combination. We use layer imaging to quantify the phase separation and probe partitioning of the sample, and TRFA for measuring probe dynamic distributions. See supplementary material<xref rid="c18" ref-type="bibr"><sup>18</sup></xref> for fluorescent images of the DPPC phase coexistence and probe partitioning.</p><p>TRFA is used to characterize the rotational diffusion of the probe. The experimental apparatus consists of a tunable ultrafast oscillator (Coherent Chameleon Ultra II, 140 fs), pulse selector (Conoptics model 305), frequency doubling crystal (LBO Type I, 5&#x02009;&#x000d7;&#x02009;5&#x02009;&#x000d7;&#x02009;2&#x02009;mm), and Cassegrain focusing objective (15&#x000d7;, Infinite BFL). Our excitation beam is tuned to 463&#x02009;nm and has a power of 20 mW at 10&#x02009;MHz. We employ a wide-field excitation at the air-water interface with a beam diameter of &#x0223c;500&#x02009;<italic>&#x003bc;</italic>m. By avoiding collinear confocal excitation, we avoid depolarization caused by large NA focusing objectives. In order to measure TRFA signal, we employ traditional time correlated single photon counting (TCSPC) techniques.<xref rid="c34" ref-type="bibr"><sup>34</sup></xref> We use two single photon avalanche photodiodes (SPAD, id100 ID Quantique), a router (HRT-41), and TCSPC module (SPC-1300 Becker-Hickl). Our instrumental response time is 94 ps FWHM determined by measuring the Raman scattering of water. For TRFA, probe signal fluorescence is collected using a Cassegrain objective, and focused through a Wollaston polarizing beam splitter (Thorlabs, WP10). Simultaneous detection of the two polarization channels is accomplished by focusing each beam through a monochromator and onto the SPAD detector using achromatic lenses.</p><p>Most measurements of time-resolved dynamics in membrane structures are investigated using confocal microscopy or epifluorescence microscopy, both of which are limited to co-linear excitation/detection. This restricts the observation of dynamics to molecules whose chromophores have an excitation and emission dipole parallel to the plane of the monolayer. Our system employs a Cassegrain objective which allows for a significant layer gap between the sample and the objective. This allows us tremendous flexibility in excitation and collection angle. Our system can switch between a perpendicular excitation using a small right angle mirror mounted to the face of the objective, or a grazing angle excitation which allows us to probe fluorophore subpopulations which may have significant mobility out of the plane of the membrane.</p><p>Upon excitation with polarized light, the emission from fluorophores is also polarized. The extent of the emission polarization alignment is described in terms of the anisotropy. The ability to excite probe molecules with excitation dipole orientation both parallel and perpendicular to the monolayer represents a significant advantage of our TRFA instrument. This allows the user to monitor changes in molecular orientation or characterize the degree of molecular freedom such as wobbling perpendicular to the membrane surface. The rotational diffusion and mobility of the fluorescent probe is monitored by calculating the anisotropy
+<disp-formula id="d1"><mml:math id="M3"><mml:mrow><mml:mi>r</mml:mi><mml:mrow><mml:mo stretchy="true">(</mml:mo><mml:mi>t</mml:mi><mml:mo stretchy="true">)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:msub><mml:mrow><mml:mi>I</mml:mi></mml:mrow><mml:mrow><mml:mo>&#x02225;</mml:mo></mml:mrow></mml:msub><mml:mrow><mml:mo stretchy="true">(</mml:mo><mml:mi>t</mml:mi><mml:mo stretchy="true">)</mml:mo></mml:mrow><mml:mo>&#x02212;</mml:mo><mml:mi>G</mml:mi><mml:mo>&#x02009;</mml:mo><mml:msub><mml:mrow><mml:mi>I</mml:mi></mml:mrow><mml:mrow><mml:mo>&#x022a5;</mml:mo></mml:mrow></mml:msub><mml:mrow><mml:mo stretchy="true">(</mml:mo><mml:mi>t</mml:mi><mml:mo stretchy="true">)</mml:mo></mml:mrow></mml:mrow><mml:mrow><mml:msub><mml:mrow><mml:mi>I</mml:mi></mml:mrow><mml:mrow><mml:mo>&#x02225;</mml:mo></mml:mrow></mml:msub><mml:mrow><mml:mo stretchy="true">(</mml:mo><mml:mi>t</mml:mi><mml:mo stretchy="true">)</mml:mo></mml:mrow><mml:mo>+</mml:mo><mml:mn>2</mml:mn><mml:mo>&#x02009;</mml:mo><mml:mi>G</mml:mi><mml:mo>&#x02009;</mml:mo><mml:mo>&#x02009;</mml:mo><mml:msub><mml:mrow><mml:mi>I</mml:mi></mml:mrow><mml:mrow><mml:mo>&#x022a5;</mml:mo></mml:mrow></mml:msub><mml:mrow><mml:mo stretchy="true">(</mml:mo><mml:mi>t</mml:mi><mml:mo stretchy="true">)</mml:mo></mml:mrow></mml:mrow></mml:mfrac><mml:mo>&#x02009;</mml:mo><mml:mo>,</mml:mo></mml:mrow></mml:math><label>(1)</label></disp-formula>where <inline-formula><mml:math id="M4"><mml:mrow><mml:msub><mml:mrow><mml:mi>I</mml:mi></mml:mrow><mml:mrow><mml:mo>&#x02225;</mml:mo></mml:mrow></mml:msub></mml:mrow></mml:math></inline-formula> is the signal intensity with polarization parallel to the excitation polarization, <inline-formula><mml:math id="M5"><mml:mrow><mml:msub><mml:mrow><mml:mi>I</mml:mi></mml:mrow><mml:mrow><mml:mo>&#x022a5;</mml:mo></mml:mrow></mml:msub></mml:mrow></mml:math></inline-formula> is the signal intensity with polarization perpendicular to the excitation polarization direction, and <italic>G</italic> represents the correction factor for the detector and monochromator sensitivity to different polarization orientations.<xref rid="c34" ref-type="bibr"><sup>34</sup></xref> The <italic>G</italic>-factor is determined experimentally by the tail matching method using fluorescein in pure water. A value of 145&#x02009;&#x000b1;&#x02009;16 ps was obtained for the rotational correlation time of fluorescein consistent values in the literature.<xref rid="c35" ref-type="bibr"><sup>35</sup></xref> Time-resolved anisotropy represents the rate of reorientation of the excitation dipole moment with respect to the excitation polarization vector, assuming that the angle between the excitation absorption dipole and the emission dipole moment is approximately zero.</p></sec></sec><sec id="s3"><label>III.</label><title>RESULTS AND DISCUSSION</title><p>We obtained time-resolved fluorescence anisotropy for DPPC and DMPC at different surface pressures. Figure <xref ref-type="fig" rid="f3">3</xref> shows a typical experimental measurement of TRFA signal fluorescence using perpendicular excitation. The anisotropy decay is fit with stretched exponential by model
+<disp-formula id="d2"><mml:math id="M6"><mml:mrow><mml:mi>r</mml:mi><mml:mrow><mml:mo stretchy="true">(</mml:mo><mml:mi>t</mml:mi><mml:mo stretchy="true">)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:msub><mml:mrow><mml:mi>r</mml:mi></mml:mrow><mml:mrow><mml:mo>&#x0221e;</mml:mo></mml:mrow></mml:msub><mml:mo>+</mml:mo><mml:msub><mml:mrow><mml:mi>r</mml:mi></mml:mrow><mml:mrow><mml:mn>1</mml:mn></mml:mrow></mml:msub><mml:mo>&#x02009;</mml:mo><mml:mtext>exp</mml:mtext><mml:mo>&#x02009;</mml:mo><mml:msup><mml:mrow><mml:mo stretchy="true">(</mml:mo><mml:mo>&#x02212;</mml:mo><mml:mfrac><mml:mi>t</mml:mi><mml:mrow><mml:msub><mml:mrow><mml:mo>&#x003c4;</mml:mo></mml:mrow><mml:mrow><mml:mn>1</mml:mn></mml:mrow></mml:msub></mml:mrow></mml:mfrac><mml:mo stretchy="true">)</mml:mo></mml:mrow><mml:mo>&#x003b2;</mml:mo></mml:msup><mml:mo>.</mml:mo></mml:mrow></mml:math><label>(2)</label></disp-formula>The stretched exponential model represents the model with the fewest parameters which can accurately describe the dynamic distributions observed for all of our samples. However, the data have also been analyzed using a Maximum Entropy Model (MEM),<xref rid="c18" ref-type="bibr"><sup>18,36</sup></xref> Figure <xref ref-type="fig" rid="f3">3</xref>, right panel. The MEM analysis fits the decay with no assumptions about the number of decay processes or the shape of the distribution, thus it represents an un-biased fit. However, the analysis can provide additional decay components without a significant improvement in the quality of the fit. An extended discussion of the fitting procedure and MEM results are given in the supplementary material.<xref rid="c18" ref-type="bibr"><sup>18</sup></xref> The MEM analysis clearly displays a growing dynamic distribution for DMPC and a more uniform distribution for DPPC, and the results are consistent with the distributions described by the stretched exponential model which is discussed in detail below.</p><p>We evaluated the rotational diffusion of NBD-PC in two different physical systems; one that undergoes a phase transition from the LE to LC phase, and another that remains in a single disordered phase throughout the compression. For DPPC, we describe the changes to rotational reorientation starting from the LE phase and compressing though coexistence until we reach the LC phase. In the coexistence region, the liquid phase has a rotational correlation time of 2.4&#x02009;ns (see Figure <xref ref-type="fig" rid="f4">4</xref> and Table <xref ref-type="table" rid="t1">I</xref>). Essentially, the observed behavior of DPPC is insensitive to pressure since the probe always partitions to the LE phase. This measured value is smaller than rotational correlation times observed for a fluorescent probe a DPPC vesicle at 20&#x02009;&#x000b0;C,<xref rid="c21" ref-type="bibr"><sup>21</sup></xref> which is consistent with the finding that lipid diffusion in a Langmuir monolayer is significantly enhanced, and is about two times faster than that of the plasma membrane.<xref rid="c37" ref-type="bibr"><sup>37</sup></xref></p><p>Within the LC phase of DPPC, our probe excitation dipole moment becomes highly ordered with an orientation perpendicular to the plane of the monolayer. This is observed by a large loss in the fluorescence intensity under perpendicular illumination and measured anisotropy times that are significantly reduced (&#x003c4;&#x02009;&#x0223c;&#x02009;0.7&#x02009;ns). We interpret the reduction of reorientation time to the observation of a small subpopulation of probes with a wobbling component parallel to the plane of the membrane such that this subset represents a non-equilibrium population of probe orientations. We are unable to accurately measure the rotational diffusion of this probe at these pressures due to the ordering of the excitation dipole moment out of the plane of the membrane. However, the use of an alternate probe, such as a headgroup labeled molecule that partitioned to the ordered phase, may allow one to measure dynamics in the LC phase.</p><p>The pressure independent rotational dynamics observed for NBD-PC in the phase coexistence regime of DPPC are to be contrasted with the dynamics observed for the compressed liquid phase of DMPC. For all pressures observed in this study, DMPC exhibits a single LE phase with uniform distribution of fluorescent probe. As we increase the pressure on this liquid phase, we observe an increase in the rotational correlation time (Figure <xref ref-type="fig" rid="f4">4</xref>) and a decreasing half-cone angle obtained from 40&#x000b0; to 30&#x000b0;, assuming a wobbling in cone model.<xref rid="c38" ref-type="bibr"><sup>38</sup></xref> This behavior is consistent with the expected increase in nearest neighbor interactions due to increasing density and correlated motions.</p><p>The values of the stretched exponential fitting parameters are shown in Table <xref ref-type="table" rid="t1">I</xref>. The values of <italic>&#x003b2;</italic> in the stretched exponential fitting demonstrate a distribution of dynamics exhibited by the probes in our monolayer, for DMPC the distribution grows as we compress the film toward a condensed state. Such stretched-exponential relaxation is characteristic of systems that exhibit a broad range, or heterogeneity, of relaxation. A value for <italic>&#x003b2;</italic>&#x02009;&#x0003c;&#x02009;1 is typical, and is observed for systems ranging from glass-forming fluids to proteins. The weak variation of <italic>&#x003b2;</italic> in DPPC suggests that the distribution of dynamics remains unchanged for the LE phase of DPPC as pressure is increased, which is expected for phase coexistence. The departure from purely exponential behavior is indicative of a range of probe microenvironments and could represent the presence of nano-scale density fluctuations similar to those observed for many liquid condensed matter systems.<xref rid="c39" ref-type="bibr"><sup>39&#x02013;41</sup></xref></p><p>Heterogeneous dynamics has been previously reported for lipid diffusion in membrane systems.<xref rid="c42" ref-type="bibr"><sup>42&#x02013;45</sup></xref> The two experimental demonstrations include a measure of steady-state single molecule anisotropy distributions of fluorescent probes in the liquid-ordered state of ternary lipid mixtures<xref rid="c42" ref-type="bibr"><sup>42</sup></xref> and polymer lateral diffusion in a supported lipid bilayer in the disordered phase.<xref rid="c44" ref-type="bibr"><sup>44</sup></xref> The added complexity of phase separation in ternary mixture can cause small compositional variations around the probe molecules which complicate interpretation of observed heterogeneity. Such added complexity is not an issue in the present study. In the second experimental demonstration, the diffusion of polymers in the fluid state of a single-constituent lipid film is monitored. The presence of a large perturbing molecule can influence heterogeneity in liquids; however, it has been found that guest molecules larger than the host molecules actually under-report the heterogeneity of the host liquid.<xref rid="c31" ref-type="bibr"><sup>31</sup></xref> Other measurements of lipid diffusion in vesicle models have not discussed the heterogeneity of rotational dynamics. Perhaps, this is due to complicating geometric factors such as: the presence of two leaflets which could possess distinct rotational freedom, as well as a distribution of vesicle size which can impact membrane curvature, and thus compound the interpretation of these results. The current study does not suffer these limitations, and the broad distribution of observed diffusion times can be viewed as intrinsic to the lipid dynamic freedom.</p><p>The presence of a non-exponential relaxation in the rotational correlation of the lipid probes indicates heterogeneity in the probe microenvironments. The variability of local dynamic freedom can be caused by dynamic density fluctuations which result in regions of enhanced mobility. Such dynamic clusters have been observed for a large range of strongly interacting condensed matter systems.<xref rid="c39" ref-type="bibr"><sup>39&#x02013;41</sup></xref> These dynamic fluctuations are very small (&#x0223c;10&#x02009;nm) and short lived (10&#x02009;<italic>&#x003bc;</italic>s).<xref rid="c45" ref-type="bibr"><sup>45</sup></xref> Dynamic clustering in lipid membranes could have a large impact on membrane recognition, transport, and protein self-assembly in biological systems. Though not a direct observation of dynamic clusters; the measurement of dynamic distributions in lipid diffusion, as presented in this study, warrants much closer examination. Langmuir monolayers are known to display increased dynamic freedom, thus we might expect that the added constraints within the cellular membrane might significantly enhance the dynamic heterogeneity of lipid motion. Specifically, the equivalent pressure within the lipid bilayer is reported to be about 32&#x02009;mN/m,<xref rid="c6" ref-type="bibr"><sup>6</sup></xref> thus we might expect local density fluctuations to play a significant role in membrane lateral density according to our data. Combining the results of rotational and translation relaxation in lipids offers a route to examine the heterogeneity and possible decoupling of translational and rotational relaxation mechanisms; which may play an important practical role in the biological function of living lipid systems.</p></sec></body><back><ack><title>ACKNOWLEDGMENTS</title><p>We would like to thank Rik van Gorsel for his technical assistance. Funding for this project was provided by Wesleyan University Grants in Support of Scholarship.</p></ack><ref-list content-type="numbered"><ref id="c1"><label>1.</label><mixed-citation publication-type="journal">
+<string-name>
+<given-names>K.</given-names>
+<surname>Simons</surname>
+</string-name> and 
+<string-name>
+<given-names>D.</given-names>
+<surname>Toomre</surname>
+</string-name>, &#x0201c;
+<article-title>Lipid rafts and signal transduction</article-title>,&#x0201d; <source>Nat. Rev. Mol. Cell Biol.</source>
+<volume>1</volume>(<issue>1</issue>), <fpage>31</fpage>&#x02013;<lpage>39</lpage> (<year>2000</year>).<pub-id pub-id-type="doi">10.1038/35036052</pub-id><pub-id pub-id-type="pmid">11413487</pub-id></mixed-citation></ref><ref id="c2"><label>2.</label><mixed-citation publication-type="journal">
+<string-name>
+<given-names>S. L.</given-names>
+<surname>Veatch</surname>
+</string-name>, 
+<string-name>
+<given-names>P.</given-names>
+<surname>Cicuta</surname>
+</string-name>, 
+<string-name>
+<given-names>P.</given-names>
+<surname>Sengupta</surname>
+</string-name>, 
+<string-name>
+<given-names>A.</given-names>
+<surname>Honerkamp-Smith</surname>
+</string-name>, 
+<string-name>
+<given-names>D.</given-names>
+<surname>Holowka</surname>
+</string-name>, and 
+<string-name>
+<given-names>B.</given-names>
+<surname>Baird</surname>
+</string-name>, &#x0201c;
+<article-title>Critical fluctuations in plasma membrane vesicles</article-title>,&#x0201d; <source>ACS Chem. Biol.</source>
+<volume>3</volume>(<issue>5</issue>), <fpage>287</fpage>&#x02013;<lpage>293</lpage> (<year>2008</year>).<pub-id pub-id-type="doi">10.1021/cb800012x</pub-id><pub-id pub-id-type="pmid">18484709</pub-id></mixed-citation></ref><ref id="c3"><label>3.</label><mixed-citation publication-type="journal">
+<string-name>
+<given-names>I.</given-names>
+<surname>Langmuir</surname>
+</string-name>, &#x0201c;
+<article-title>The constitution and fundamental properties of solids and liquids. II. Liquids.1</article-title>,&#x0201d; <source>J. Am. Chem. Soc.</source>
+<volume>39</volume>(<issue>9</issue>), <fpage>1848</fpage>&#x02013;<lpage>1906</lpage> (<year>1917</year>).<pub-id pub-id-type="doi">10.1021/ja02254a006</pub-id></mixed-citation></ref><ref id="c4"><label>4.</label><mixed-citation publication-type="journal">
+<string-name>
+<given-names>D.</given-names>
+<surname>Hoenig</surname>
+</string-name> and 
+<string-name>
+<given-names>D.</given-names>
+<surname>Moebius</surname>
+</string-name>, &#x0201c;
+<article-title>Direct visualization of monolayers at the air-water interface by Brewster angle microscopy</article-title>,&#x0201d; <source>J. Phys. Chem.</source>
+<volume>95</volume>(<issue>12</issue>), <fpage>4590</fpage>&#x02013;<lpage>4592</lpage> (<year>1991</year>).<pub-id pub-id-type="doi">10.1021/j100165a003</pub-id></mixed-citation></ref><ref id="c5"><label>5.</label><mixed-citation publication-type="journal">
+<string-name>
+<given-names>H. M.</given-names>
+<surname>McConnell</surname>
+</string-name>, &#x0201c;
+<article-title>Structures and transitions in lipid monolayers at the air-water-interface</article-title>,&#x0201d; <source>Annu. Rev. Phys. Chem.</source>
+<volume>42</volume>, <fpage>171</fpage>&#x02013;<lpage>195</lpage> (<year>1991</year>).<pub-id pub-id-type="doi">10.1146/annurev.pc.42.100191.001131</pub-id></mixed-citation></ref><ref id="c6"><label>6.</label><mixed-citation publication-type="journal">
+<string-name>
+<given-names>B. L.</given-names>
+<surname>Stottrup</surname>
+</string-name>, 
+<string-name>
+<given-names>D. S.</given-names>
+<surname>Stevens</surname>
+</string-name>, and 
+<string-name>
+<given-names>S. L.</given-names>
+<surname>Keller</surname>
+</string-name>, &#x0201c;
+<article-title>Miscibility of ternary mixtures of phospholipids and cholesterol in monolayers, and application to bilayer systems</article-title>,&#x0201d; <source>Biophys. J.</source>
+<volume>88</volume>(<issue>1</issue>), <fpage>269</fpage>&#x02013;<lpage>276</lpage> (<year>2005</year>).<pub-id pub-id-type="doi">10.1529/biophysj.104.048439</pub-id><pub-id pub-id-type="pmid">15475588</pub-id></mixed-citation></ref><ref id="c7"><label>7.</label><mixed-citation publication-type="journal">
+<string-name>
+<given-names>K.</given-names>
+<surname>Kjaer</surname>
+</string-name>, 
+<string-name>
+<given-names>J.</given-names>
+<surname>Alsnielsen</surname>
+</string-name>, 
+<string-name>
+<given-names>C. A.</given-names>
+<surname>Helm</surname>
+</string-name>, 
+<string-name>
+<given-names>L. A.</given-names>
+<surname>Laxhuber</surname>
+</string-name>, and 
+<string-name>
+<given-names>H.</given-names>
+<surname>Mohwald</surname>
+</string-name>, &#x0201c;
+<article-title>Ordering in lipid monolayers studied by synchrotron x-ray-diffraction and fluorescence microscopy</article-title>,&#x0201d; <source>Phys. Rev. Lett.</source>
+<volume>58</volume>(<issue>21</issue>), <fpage>2224</fpage>&#x02013;<lpage>2227</lpage> (<year>1987</year>).<pub-id pub-id-type="doi">10.1103/PhysRevLett.58.2224</pub-id><pub-id pub-id-type="pmid">10034685</pub-id></mixed-citation></ref><ref id="c8"><label>8.</label><mixed-citation publication-type="journal">
+<string-name>
+<given-names>H.</given-names>
+<surname>Mohwald</surname>
+</string-name>, &#x0201c;
+<article-title>Phospholipid and phospholipid-protein monolayers at the air/water interface</article-title>,&#x0201d; <source>Annu. Rev. Phys. Chem.</source>
+<volume>41</volume>, <fpage>441</fpage>&#x02013;<lpage>476</lpage> (<year>1990</year>).<pub-id pub-id-type="doi">10.1146/annurev.pc.41.100190.002301</pub-id><pub-id pub-id-type="pmid">2257038</pub-id></mixed-citation></ref><ref id="c9"><label>9.</label><mixed-citation publication-type="journal">
+<string-name>
+<given-names>G.</given-names>
+<surname>Ma</surname>
+</string-name> and 
+<string-name>
+<given-names>H. C.</given-names>
+<surname>Allen</surname>
+</string-name>, &#x0201c;
+<article-title>DPPC Langmuir monolayer at the air-water interface: Probing the tail and head groups by vibrational sum frequency generation spectroscopy</article-title>,&#x0201d; <source>Langmuir</source>
+<volume>22</volume>(<issue>12</issue>), <fpage>5341</fpage>&#x02013;<lpage>5349</lpage> (<year>2006</year>).<pub-id pub-id-type="doi">10.1021/la0535227</pub-id><pub-id pub-id-type="pmid">16732662</pub-id></mixed-citation></ref><ref id="c10"><label>10.</label><mixed-citation publication-type="journal">
+<string-name>
+<given-names>S. L.</given-names>
+<surname>Veatch</surname>
+</string-name> and 
+<string-name>
+<given-names>S. L.</given-names>
+<surname>Keller</surname>
+</string-name>, &#x0201c;
+<article-title>Organization in lipid membranes containing cholesterol</article-title>,&#x0201d; <source>Phys. Rev. Lett.</source>
+<volume>89</volume>(<issue>26</issue>), <fpage>268101</fpage>&#x02013;<lpage>268105</lpage> (<year>2002</year>).<pub-id pub-id-type="doi">10.1103/PhysRevLett.89.268101</pub-id><pub-id pub-id-type="pmid">12484857</pub-id></mixed-citation></ref><ref id="c11"><label>11.</label><mixed-citation publication-type="journal">
+<string-name>
+<given-names>V. M.</given-names>
+<surname>Kaganer</surname>
+</string-name>, 
+<string-name>
+<given-names>H.</given-names>
+<surname>M&#x000f6;hwald</surname>
+</string-name>, and 
+<string-name>
+<given-names>P.</given-names>
+<surname>Dutta</surname>
+</string-name>, &#x0201c;
+<article-title>Structure and phase transitions in Langmuir monolayers</article-title>,&#x0201d; <source>Rev. Mod. Phys.</source>
+<volume>71</volume>(<issue>3</issue>), <fpage>779</fpage>&#x02013;<lpage>819</lpage> (<year>1999</year>).<pub-id pub-id-type="doi">10.1103/RevModPhys.71.779</pub-id></mixed-citation></ref><ref id="c12"><label>12.</label><mixed-citation publication-type="book">
+<string-name>
+<given-names>G. B.</given-names>
+<surname>Ansell</surname>
+</string-name>, 
+<string-name>
+<given-names>J. N.</given-names>
+<surname>Hawthorne</surname>
+</string-name>, and 
+<string-name>
+<given-names>R. M. C.</given-names>
+<surname>Dawson</surname>
+</string-name>, <source>Form and function of Phospholipids</source> (<publisher-name>Elsevier Scientific Pub. Co.</publisher-name>, <publisher-loc>Amsterdam</publisher-loc>, <year>1973</year>).</mixed-citation></ref><ref id="c13"><label>13.</label><mixed-citation publication-type="journal">
+<string-name>
+<given-names>N. R.</given-names>
+<surname>Pallas</surname>
+</string-name> and 
+<string-name>
+<given-names>B. A.</given-names>
+<surname>Pethica</surname>
+</string-name>, &#x0201c;
+<article-title>Liquid-expanded to liquid-condensed transition in lipid monolayers at the air/water interface</article-title>,&#x0201d; <source>Langmuir</source>
+<volume>1</volume>(<issue>4</issue>), <fpage>509</fpage>&#x02013;<lpage>513</lpage> (<year>1985</year>).<pub-id pub-id-type="doi">10.1021/la00064a019</pub-id></mixed-citation></ref><ref id="c14"><label>14.</label><mixed-citation publication-type="journal">
+<string-name>
+<given-names>J. B.</given-names>
+<surname>Li</surname>
+</string-name>, 
+<string-name>
+<given-names>R.</given-names>
+<surname>Miller</surname>
+</string-name>, 
+<string-name>
+<given-names>D.</given-names>
+<surname>Vollhardt</surname>
+</string-name>, 
+<string-name>
+<given-names>G.</given-names>
+<surname>Weidemann</surname>
+</string-name>, and 
+<string-name>
+<given-names>H.</given-names>
+<surname>M&#x000f6;hwald</surname>
+</string-name>, &#x0201c;
+<article-title>Isotherms of phospholipid monolayers measured by a pendant drop technique</article-title>,&#x0201d; <source>Colloid Polym. Sci.</source>
+<volume>274</volume>(<issue>10</issue>), <fpage>995</fpage>&#x02013;<lpage>999</lpage> (<year>1996</year>).<pub-id pub-id-type="doi">10.1007/BF00656630</pub-id></mixed-citation></ref><ref id="c15"><label>15.</label><mixed-citation publication-type="journal">
+<string-name>
+<given-names>A.</given-names>
+<surname>Gopal</surname>
+</string-name> and 
+<string-name>
+<given-names>K. Y. C.</given-names>
+<surname>Lee</surname>
+</string-name>, &#x0201c;
+<article-title>Headgroup percolation and collapse of condensed Langmuir monolayers</article-title>,&#x0201d; <source>J. Phys. Chem. B</source>
+<volume>110</volume>(<issue>44</issue>), <fpage>22079</fpage>&#x02013;<lpage>22087</lpage> (<year>2006</year>).<pub-id pub-id-type="doi">10.1021/jp061562t</pub-id><pub-id pub-id-type="pmid">17078643</pub-id></mixed-citation></ref><ref id="c16"><label>16.</label><mixed-citation publication-type="journal">
+<string-name>
+<given-names>K.</given-names>
+<surname>Nag</surname>
+</string-name> and 
+<string-name>
+<given-names>K. M.</given-names>
+<surname>Keough</surname>
+</string-name>, &#x0201c;
+<article-title>Epifluorescence microscopic studies of monolayers containing mixtures of dioleoyl- and dipalmitoyl-phosphatidylcholines</article-title>,&#x0201d; <source>Biophys. J.</source>
+<volume>65</volume>(<issue>3</issue>), <fpage>1019</fpage>&#x02013;<lpage>1026</lpage> (<year>1993</year>).<pub-id pub-id-type="doi">10.1016/S0006-3495(93)81155-X</pub-id><pub-id pub-id-type="pmid">8241382</pub-id></mixed-citation></ref><ref id="c17"><label>17.</label><mixed-citation publication-type="journal">
+<string-name>
+<given-names>C. W.</given-names>
+<surname>McConlogue</surname>
+</string-name> and 
+<string-name>
+<given-names>T. K.</given-names>
+<surname>Vanderlick</surname>
+</string-name>, &#x0201c;
+<article-title>A close look at domain formation in dppc monolayers</article-title>,&#x0201d; <source>Langmuir</source>
+<volume>13</volume>(<issue>26</issue>), <fpage>7158</fpage>&#x02013;<lpage>7164</lpage> (<year>1997</year>).<pub-id pub-id-type="doi">10.1021/la970898e</pub-id></mixed-citation></ref><ref id="c18"><label>18.</label><mixed-citation publication-type="supplementary-material">See supplementary material at <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1063/1.4894379">http://dx.doi.org/10.1063/1.4894379</ext-link><ext-link ext-link-type="ftp" xlink:href="ftp://ftp.aip.org/epaps/struct_dyn/E-SDTYAE-1-001405" specific-use="metadata">E-SDTYAE-1-001405</ext-link> for additional fluorescent microscopy, steady-state, and time-resolved data. The supplement also inclues detailed MEM analysis.</mixed-citation></ref><ref id="c19"><label>19.</label><mixed-citation publication-type="journal">
+<string-name>
+<given-names>H.</given-names>
+<surname>Saito</surname>
+</string-name>, 
+<string-name>
+<given-names>T.</given-names>
+<surname>Araiso</surname>
+</string-name>, 
+<string-name>
+<given-names>H.</given-names>
+<surname>Shirahama</surname>
+</string-name>, and 
+<string-name>
+<given-names>T.</given-names>
+<surname>Koyama</surname>
+</string-name>, &#x0201c;
+<article-title>Dynamics of the bilayer-water interface of phospholipid vesicles and the effect of cholesterol: A picosecond fluorescence anisotropy study</article-title>,&#x0201d; <source>J. Biochem.</source>
+<volume>109</volume>(<issue>4</issue>), <fpage>559</fpage>&#x02013;<lpage>565</lpage> (<year>1991</year>); available at <ext-link ext-link-type="uri" xlink:href="http://jb.oxfordjournals.org/content/109/4/559.abstract">http://jb.oxfordjournals.org/content/109/4/559.abstract</ext-link>.<pub-id pub-id-type="pmid">1869508</pub-id></mixed-citation></ref><ref id="c20"><label>20.</label><mixed-citation publication-type="journal">
+<string-name>
+<given-names>A. J.</given-names>
+<surname>Greiner</surname>
+</string-name>, 
+<string-name>
+<given-names>H. A.</given-names>
+<surname>Pillman</surname>
+</string-name>, 
+<string-name>
+<given-names>R. M.</given-names>
+<surname>Worden</surname>
+</string-name>, 
+<string-name>
+<given-names>G. J.</given-names>
+<surname>Blanchard</surname>
+</string-name>, and 
+<string-name>
+<given-names>R. Y.</given-names>
+<surname>Ofoli</surname>
+</string-name>, &#x0201c;
+<article-title>Effect of hydrogen bonding on the rotational and translational dynamics of a headgroup-bound chromophore in bilayer lipid membranes</article-title>,&#x0201d; <source>J. Phys. Chem. B</source>
+<volume>113</volume>(<issue>40</issue>), <fpage>13263</fpage>&#x02013;<lpage>13268</lpage> (<year>2009</year>).<pub-id pub-id-type="doi">10.1021/jp9057862</pub-id><pub-id pub-id-type="pmid">19761197</pub-id></mixed-citation></ref><ref id="c21"><label>21.</label><mixed-citation publication-type="journal">
+<string-name>
+<given-names>J. P.</given-names>
+<surname>Slotte</surname>
+</string-name> and 
+<string-name>
+<given-names>P.</given-names>
+<surname>Mattjus</surname>
+</string-name>, &#x0201c;
+<article-title>Visualization of lateral phases in cholesterol and phosphatidylcholine monolayers at the air/water interface&#x02014;a comparative study with two different reporter molecules</article-title>,&#x0201d; <source>Biochim. Biophys. Acta</source>
+<volume>1254</volume>(<issue>1</issue>), <fpage>22</fpage>&#x02013;<lpage>29</lpage> (<year>1995</year>).<pub-id pub-id-type="doi">10.1016/0005-2760(94)00159-V</pub-id><pub-id pub-id-type="pmid">7811742</pub-id></mixed-citation></ref><ref id="c22"><label>22.</label><mixed-citation publication-type="journal">
+<string-name>
+<given-names>A.</given-names>
+<surname>Sonnleitner</surname>
+</string-name>, 
+<string-name>
+<given-names>G. J.</given-names>
+<surname>Schutz</surname>
+</string-name>, and 
+<string-name>
+<given-names>T.</given-names>
+<surname>Schmidt</surname>
+</string-name>, &#x0201c;
+<article-title>Free Brownian motion of individual lipid molecules in biomembranes</article-title>,&#x0201d; <source>Biophys. J.</source>
+<volume>77</volume>(<issue>5</issue>), <fpage>2638</fpage>&#x02013;<lpage>2642</lpage> (<year>1999</year>).<pub-id pub-id-type="doi">10.1016/S0006-3495(99)77097-9</pub-id><pub-id pub-id-type="pmid">10545363</pub-id></mixed-citation></ref><ref id="c23"><label>23.</label><mixed-citation publication-type="journal">
+<string-name>
+<given-names>M. L.</given-names>
+<surname>Wagner</surname>
+</string-name> and 
+<string-name>
+<given-names>L. K.</given-names>
+<surname>Tamm</surname>
+</string-name>, &#x0201c;
+<article-title>Reconstituted syntaxin1A/SNAP25 interacts with negatively charged lipids as measured by lateral diffusion in planar supported bilayers</article-title>,&#x0201d; <source>Biophys. J.</source>
+<volume>81</volume>(<issue>1</issue>), <fpage>266</fpage>&#x02013;<lpage>275</lpage> (<year>2001</year>).<pub-id pub-id-type="doi">10.1016/S0006-3495(01)75697-4</pub-id><pub-id pub-id-type="pmid">11423412</pub-id></mixed-citation></ref><ref id="c24"><label>24.</label><mixed-citation publication-type="journal">
+<string-name>
+<given-names>C.</given-names>
+<surname>Dietrich</surname>
+</string-name>, 
+<string-name>
+<given-names>L. A.</given-names>
+<surname>Bagatolli</surname>
+</string-name>, 
+<string-name>
+<given-names>Z. N.</given-names>
+<surname>Volovyk</surname>
+</string-name>, 
+<string-name>
+<given-names>N. L.</given-names>
+<surname>Thompson</surname>
+</string-name>, 
+<string-name>
+<given-names>M.</given-names>
+<surname>Levi</surname>
+</string-name>, 
+<string-name>
+<given-names>K.</given-names>
+<surname>Jacobson</surname>
+</string-name>, and 
+<string-name>
+<given-names>E.</given-names>
+<surname>Gratton</surname>
+</string-name>, &#x0201c;
+<article-title>Lipid rafts reconstituted in model membranes</article-title>,&#x0201d; <source>Biophys. J.</source>
+<volume>80</volume>(<issue>3</issue>), <fpage>1417</fpage>&#x02013;<lpage>1428</lpage> (<year>2001</year>).<pub-id pub-id-type="doi">10.1016/S0006-3495(01)76114-0</pub-id><pub-id pub-id-type="pmid">11222302</pub-id></mixed-citation></ref><ref id="c25"><label>25.</label><mixed-citation publication-type="journal">
+<string-name>
+<given-names>A.</given-names>
+<surname>Filippov</surname>
+</string-name>, 
+<string-name>
+<given-names>G.</given-names>
+<surname>Oradd</surname>
+</string-name>, and 
+<string-name>
+<given-names>G.</given-names>
+<surname>Lindblom</surname>
+</string-name>, &#x0201c;
+<article-title>Lipid lateral diffusion in ordered and disordered phases in raft mixtures</article-title>,&#x0201d; <source>Biophys. J.</source>
+<volume>86</volume>(<issue>2</issue>), <fpage>891</fpage>&#x02013;<lpage>896</lpage> (<year>2004</year>).<pub-id pub-id-type="doi">10.1016/S0006-3495(04)74164-8</pub-id><pub-id pub-id-type="pmid">14747324</pub-id></mixed-citation></ref><ref id="c26"><label>26.</label><mixed-citation publication-type="journal">
+<string-name>
+<given-names>Z.</given-names>
+<surname>Derzko</surname>
+</string-name> and 
+<string-name>
+<given-names>K.</given-names>
+<surname>Jacobson</surname>
+</string-name>, &#x0201c;
+<article-title>Comparative lateral diffusion of fluorescent lipid analogs in phospholipid multibilayers</article-title>,&#x0201d; <source>Biochemistry</source>
+<volume>19</volume>(<issue>26</issue>), <fpage>6050</fpage>&#x02013;<lpage>6057</lpage> (<year>1980</year>).<pub-id pub-id-type="doi">10.1021/bi00567a016</pub-id><pub-id pub-id-type="pmid">7470449</pub-id></mixed-citation></ref><ref id="c27"><label>27.</label><mixed-citation publication-type="journal">
+<string-name>
+<given-names>B. J.</given-names>
+<surname>Balcom</surname>
+</string-name> and 
+<string-name>
+<given-names>N. O.</given-names>
+<surname>Petersen</surname>
+</string-name>, &#x0201c;
+<article-title>Lateral diffusion in model membranes is independent of the size of the hydrophobic region of molecules</article-title>,&#x0201d; <source>Biophys. J.</source>
+<volume>65</volume>(<issue>2</issue>), <fpage>630</fpage>&#x02013;<lpage>637</lpage> (<year>1993</year>).<pub-id pub-id-type="doi">10.1016/S0006-3495(93)81106-8</pub-id><pub-id pub-id-type="pmid">8218892</pub-id></mixed-citation></ref><ref id="c28"><label>28.</label><mixed-citation publication-type="journal">
+<string-name>
+<given-names>L.</given-names>
+<surname>Loura</surname>
+</string-name> and 
+<string-name>
+<given-names>J.</given-names>
+<surname>Ramalho</surname>
+</string-name>, &#x0201c;
+<article-title>Location and dynamics of acyl chain NBD-labeled phosphatidylcholine (NBD-PC) in DPPC bilayers. A molecular dynamics and time-resolved fluorescence anisotropy study</article-title>,&#x0201d; <source>Biochim. Biophys. Acta, Biomembr.</source>
+<volume>1768</volume>(<issue>3</issue>), <fpage>467</fpage>&#x02013;<lpage>478</lpage> (<year>2007</year>).<pub-id pub-id-type="doi">10.1016/j.bbamem.2006.10.011</pub-id></mixed-citation></ref><ref id="c29"><label>29.</label><mixed-citation publication-type="journal">
+<string-name>
+<given-names>A.</given-names>
+<surname>Chattopadhyay</surname>
+</string-name> and 
+<string-name>
+<given-names>E.</given-names>
+<surname>London</surname>
+</string-name>, &#x0201c;
+<article-title>Parallax method for direct measurement of membrane penetration depth utilizing fluorescence quenching by spin-labeled phospholipids</article-title>,&#x0201d; <source>Biochemistry</source>
+<volume>26</volume>(<issue>1</issue>), <fpage>39</fpage>&#x02013;<lpage>45</lpage> (<year>1987</year>).<pub-id pub-id-type="doi">10.1021/bi00375a006</pub-id><pub-id pub-id-type="pmid">3030403</pub-id></mixed-citation></ref><ref id="c30"><label>30.</label><mixed-citation publication-type="journal">
+<string-name>
+<given-names>S.</given-names>
+<surname>Maz&#x000e8;res</surname>
+</string-name>, 
+<string-name>
+<given-names>V.</given-names>
+<surname>Schram</surname>
+</string-name>, 
+<string-name>
+<given-names>J. F.</given-names>
+<surname>Tocanne</surname>
+</string-name>, and 
+<string-name>
+<given-names>A.</given-names>
+<surname>Lopez</surname>
+</string-name>, &#x0201c;
+<article-title>7-nitrobenz-2-oxa-1,3-diazole-4-yl-labeled phospholipids in lipid membranes: Differences in fluorescence behavior</article-title>,&#x0201d; <source>Biophys. J.</source>
+<volume>71</volume>(<issue>1</issue>), <fpage>327</fpage>&#x02013;<lpage>335</lpage> (<year>1996</year>).<pub-id pub-id-type="doi">10.1016/S0006-3495(96)79228-7</pub-id><pub-id pub-id-type="pmid">8804615</pub-id></mixed-citation></ref><ref id="c31"><label>31.</label><mixed-citation publication-type="journal">
+<string-name>
+<given-names>M. T.</given-names>
+<surname>Cicerone</surname>
+</string-name>, 
+<string-name>
+<given-names>F. R.</given-names>
+<surname>Blackburn</surname>
+</string-name>, and 
+<string-name>
+<given-names>M. D.</given-names>
+<surname>Ediger</surname>
+</string-name>, &#x0201c;
+<article-title>How do molecules move near T<sub>g</sub>? - molecular rotation of 6 probes in o-terphenyl across 14 decades in time</article-title>,&#x0201d; <source>J. Chem. Phys.</source>
+<volume>102</volume>(<issue>1</issue>), <fpage>471</fpage>&#x02013;<lpage>479</lpage> (<year>1995</year>).<pub-id pub-id-type="doi">10.1063/1.469425</pub-id></mixed-citation></ref><ref id="c32"><label>32.</label><mixed-citation publication-type="journal">
+<string-name>
+<given-names>H.</given-names>
+<surname>Raghuraman</surname>
+</string-name>, 
+<string-name>
+<given-names>S.</given-names>
+<surname>Shrivastava</surname>
+</string-name>, and 
+<string-name>
+<given-names>A.</given-names>
+<surname>Chattopadhyay</surname>
+</string-name>, &#x0201c;
+<article-title>Monitoring the looping up of acyl chain labeled NBD lipids in membranes as a function of membrane phase state</article-title>,&#x0201d; <source>Biochim. Biophys. Acta, Biomembr.</source>
+<volume>1768</volume>(<issue>5</issue>), <fpage>1258</fpage>&#x02013;<lpage>1267</lpage> (<year>2007</year>).<pub-id pub-id-type="doi">10.1016/j.bbamem.2007.02.001</pub-id></mixed-citation></ref><ref id="c33"><label>33.</label><mixed-citation publication-type="book">
+<string-name>
+<given-names>H.-J.</given-names>
+<surname>Butt</surname>
+</string-name>, 
+<string-name>
+<given-names>K.</given-names>
+<surname>Graf</surname>
+</string-name>, and 
+<string-name>
+<given-names>M.</given-names>
+<surname>Kappl</surname>
+</string-name>, in <source>Physics and Chemistry of Interfaces</source> (
+<publisher-name>Wiley-VCH Verlag GmbH &#x00026; Co. KGaA</publisher-name>, <year>2004</year>), pp. <fpage>4</fpage>&#x02013;<lpage>25</lpage>.</mixed-citation></ref><ref id="c34"><label>34.</label><mixed-citation publication-type="book">
+<string-name>
+<given-names>J.</given-names>
+<surname>Lakowicz</surname>
+</string-name>, <source>Principles of Fluorescence Spectroscopy</source> (
+<publisher-name>Kluwer Academic/Plenum Publishers</publisher-name>, 
+<publisher-loc>New York, Boston, Dordrecht, London</publisher-loc>, Moscow, <year>1999</year>).</mixed-citation></ref><ref id="c35"><label>35.</label><mixed-citation publication-type="book">
+<string-name>
+<given-names>T.</given-names>
+<surname>Christopher</surname>
+</string-name>, 
+<string-name>
+<given-names>S. B.</given-names>
+<surname>Paul</surname>
+</string-name>, 
+<string-name>
+<given-names>V. K.</given-names>
+<surname>Srinagesh</surname>
+</string-name>, and 
+<string-name>
+<given-names>S. V.</given-names>
+<surname>Steven</surname>
+</string-name>, in <source>FLIM Microscopy in Biology and Medicine</source> (
+<publisher-name>Chapman and Hall/CRC</publisher-name>, <year>2009</year>), pp. <fpage>245</fpage>&#x02013;<lpage>320</lpage>.</mixed-citation></ref><ref id="c36"><label>36.</label><mixed-citation publication-type="journal">
+<string-name>
+<given-names>P. J.</given-names>
+<surname>Steinbach</surname>
+</string-name>, 
+<string-name>
+<given-names>R.</given-names>
+<surname>Ionescu</surname>
+</string-name>, and 
+<string-name>
+<given-names>C. R.</given-names>
+<surname>Matthews</surname>
+</string-name>, &#x0201c;
+<article-title>Analysis of kinetics using a hybrid maximum-entropy/nonlinear-least-squares method: Application to protein folding</article-title>,&#x0201d; <source>Biophys. J.</source>
+<volume>82</volume>(<issue>4</issue>), <fpage>2244</fpage>&#x02013;<lpage>2255</lpage> (<year>2002</year>).<pub-id pub-id-type="doi">10.1016/S0006-3495(02)75570-7</pub-id><pub-id pub-id-type="pmid">11916879</pub-id></mixed-citation></ref><ref id="c37"><label>37.</label><mixed-citation publication-type="journal">
+<string-name>
+<given-names>M.</given-names>
+<surname>Kocun</surname>
+</string-name>, 
+<string-name>
+<given-names>T. D.</given-names>
+<surname>Lazzara</surname>
+</string-name>, 
+<string-name>
+<given-names>C.</given-names>
+<surname>Steinem</surname>
+</string-name>, and 
+<string-name>
+<given-names>A.</given-names>
+<surname>Janshoff</surname>
+</string-name>, &#x0201c;
+<article-title>Preparation of solvent-free, pore-spanning lipid bilayers: Modeling the low tension of plasma membranes</article-title>,&#x0201d; <source>Langmuir</source>
+<volume>27</volume>(<issue>12</issue>), <fpage>7672</fpage>&#x02013;<lpage>7680</lpage> (<year>2011</year>).<pub-id pub-id-type="doi">10.1021/la2003172</pub-id><pub-id pub-id-type="pmid">21619014</pub-id></mixed-citation></ref><ref id="c38"><label>38.</label><mixed-citation publication-type="journal">
+<string-name>
+<given-names>K.</given-names>
+<surname>Kinosita</surname>, <suffix>Jr.</suffix>
+</string-name>, 
+<string-name>
+<given-names>S.</given-names>
+<surname>Kawato</surname>
+</string-name>, and 
+<string-name>
+<given-names>A.</given-names>
+<surname>Ikegami</surname>
+</string-name>, &#x0201c;
+<article-title>A theory of fluorescence polarization decay in membranes</article-title>,&#x0201d; <source>Biophys. J.</source>
+<volume>20</volume>(<issue>3</issue>), <fpage>289</fpage>&#x02013;<lpage>305</lpage> (<year>1977</year>).<pub-id pub-id-type="doi">10.1016/S0006-3495(77)85550-1</pub-id><pub-id pub-id-type="pmid">922121</pub-id></mixed-citation></ref><ref id="c39"><label>39.</label><mixed-citation publication-type="journal">
+<string-name>
+<given-names>C.</given-names>
+<surname>Donati</surname>
+</string-name>, 
+<string-name>
+<given-names>S. C.</given-names>
+<surname>Glotzer</surname>
+</string-name>, 
+<string-name>
+<given-names>P. H.</given-names>
+<surname>Poole</surname>
+</string-name>, 
+<string-name>
+<given-names>W.</given-names>
+<surname>Kob</surname>
+</string-name>, and 
+<string-name>
+<given-names>S. J.</given-names>
+<surname>Plimpton</surname>
+</string-name>, &#x0201c;
+<article-title>Spatial correlations of mobility and immobility in a glass-forming Lennard-Jones liquid</article-title>,&#x0201d; <source>Phys. Rev. E</source>
+<volume>60</volume>(<issue>3</issue>), <fpage>3107</fpage>&#x02013;<lpage>3119</lpage> (<year>1999</year>).<pub-id pub-id-type="doi">10.1103/PhysRevE.60.3107</pub-id></mixed-citation></ref><ref id="c40"><label>40.</label><mixed-citation publication-type="journal">
+<string-name>
+<given-names>M. D.</given-names>
+<surname>Ediger</surname>
+</string-name>, &#x0201c;
+<article-title>Spatially heterogeneous dynamics in supercooled liquids</article-title>,&#x0201d; <source>Annu. Rev. Phys. Chem.</source>
+<volume>51</volume>, <fpage>99</fpage>&#x02013;<lpage>128</lpage> (<year>2000</year>).<pub-id pub-id-type="doi">10.1146/annurev.physchem.51.1.99</pub-id><pub-id pub-id-type="pmid">11031277</pub-id></mixed-citation></ref><ref id="c41"><label>41.</label><mixed-citation publication-type="journal">
+<string-name>
+<given-names>R.</given-names>
+<surname>Richert</surname>
+</string-name>, &#x0201c;
+<article-title>Heterogeneous dynamics in liquids: Fluctuations in space and time</article-title>,&#x0201d; <source>J. Phys.: Condens. Matter</source>
+<volume>14</volume>(<issue>23</issue>), <fpage>R703</fpage>&#x02013;<lpage>R738</lpage> (<year>2002</year>).<pub-id pub-id-type="doi">10.1088/0953-8984/14/23/201</pub-id></mixed-citation></ref><ref id="c42"><label>42.</label><mixed-citation publication-type="journal">
+<string-name>
+<given-names>A.</given-names>
+<surname>Honigmann</surname>
+</string-name>, 
+<string-name>
+<given-names>C.</given-names>
+<surname>Walter</surname>
+</string-name>, 
+<string-name>
+<given-names>F.</given-names>
+<surname>Erdmann</surname>
+</string-name>, 
+<string-name>
+<given-names>C.</given-names>
+<surname>Eggeling</surname>
+</string-name>, and 
+<string-name>
+<given-names>R.</given-names>
+<surname>Wagner</surname>
+</string-name>, &#x0201c;
+<article-title>Characterization of horizontal lipid bilayers as a model system to study lipid phase separation</article-title>,&#x0201d; <source>Biophys. J.</source>
+<volume>98</volume>(<issue>12</issue>), <fpage>2886</fpage>&#x02013;<lpage>2894</lpage> (<year>2010</year>).<pub-id pub-id-type="doi">10.1016/j.bpj.2010.03.033</pub-id><pub-id pub-id-type="pmid">20550901</pub-id></mixed-citation></ref><ref id="c43"><label>43.</label><mixed-citation publication-type="journal">
+<string-name>
+<given-names>E.</given-names>
+<surname>Falck</surname>
+</string-name>, 
+<string-name>
+<given-names>T.</given-names>
+<surname>Rog</surname>
+</string-name>, 
+<string-name>
+<given-names>M.</given-names>
+<surname>Karttunen</surname>
+</string-name>, and 
+<string-name>
+<given-names>I.</given-names>
+<surname>Vattulainen</surname>
+</string-name>, &#x0201c;
+<article-title>Lateral diffusion in lipid membranes through collective flows</article-title>,&#x0201d; <source>J. Am. Chem. Soc.</source>
+<volume>130</volume>(<issue>1</issue>), <fpage>44</fpage>&#x02013;<lpage>45</lpage> (<year>2008</year>).<pub-id pub-id-type="doi">10.1021/ja7103558</pub-id><pub-id pub-id-type="pmid">18078342</pub-id></mixed-citation></ref><ref id="c44"><label>44.</label><mixed-citation publication-type="journal">
+<string-name>
+<given-names>L. F.</given-names>
+<surname>Zhang</surname>
+</string-name> and 
+<string-name>
+<given-names>S.</given-names>
+<surname>Granick</surname>
+</string-name>, &#x0201c;
+<article-title>Slaved diffusion in phospholipid bilayers</article-title>,&#x0201d; <source>Proc. Natl. Acad. Sci. U.S.A.</source>
+<volume>102</volume>(<issue>26</issue>), <fpage>9118</fpage>&#x02013;<lpage>9121</lpage> (<year>2005</year>).<pub-id pub-id-type="doi">10.1073/pnas.0502723102</pub-id><pub-id pub-id-type="pmid">15967988</pub-id></mixed-citation></ref><ref id="c45"><label>45.</label><mixed-citation publication-type="journal">
+<string-name>
+<given-names>F. W.</given-names>
+<surname>Starr</surname>
+</string-name>, 
+<string-name>
+<given-names>B.</given-names>
+<surname>Hartmann</surname>
+</string-name>, and 
+<string-name>
+<given-names>J. F.</given-names>
+<surname>Douglas</surname>
+</string-name>, &#x0201c;
+<article-title>Dynamical clustering and a mechanism for raft-like structures in a model lipid membrane</article-title>,&#x0201d; <source>Soft Matter</source>
+<volume>10</volume>(<issue>17</issue>), <fpage>3036</fpage>&#x02013;<lpage>3047</lpage> (<year>2014</year>).<pub-id pub-id-type="doi">10.1039/c3sm53187b</pub-id><pub-id pub-id-type="pmid">24695573</pub-id></mixed-citation></ref></ref-list></back><floats-group><fig fig-type="figure" id="f1" orientation="portrait" position="float"><label>FIG. 1.</label><caption><p>Isotherm of a monolayer of (a) DPPC containing 1&#x02009;mol. % NBD-PC and (b) DMPC containing 1&#x02009;mol. % NBD-PC at temperature 20&#x02009;&#x000b0;C.</p></caption><graphic xlink:href="SDTYAE-000001-054701_1-g001"/></fig><fig fig-type="figure" id="f2" orientation="portrait" position="float"><label>FIG. 2.</label><caption><p>(a) Schematic diagram of experimental apparatus. Excitation beam can illuminate the sample from perpendicular excitation (90&#x000b0;) down to a grazing angle of 2&#x000b0;. Signal fluorescence is collected using a Cassegrain objective and focused through a Wollaston beam splitting polarizer. Each polarization is then passed through a monochromater and onto a single photon avalanche diode (SPAD). Imaging is accomplished by removing the first mirror and focusing the light on to a CCD (not shown). (b) Schematic diagram illustrating probe location and approximate orientation.<xref rid="c28" ref-type="bibr"><sup>28,29</sup></xref></p></caption><graphic xlink:href="SDTYAE-000001-054701_1-g002"/></fig><fig fig-type="figure" id="f3" orientation="portrait" position="float"><label>FIG. 3.</label><caption><p>(Left panel) TRFA decay for DMPC with 1% mole NBD-PC at surface pressure 20&#x02009;mN/m. The data are fit with a stretched exponential, and the corresponding residual is displayed. Right panel: The maximum entropy method fitting output for both DMPC (upper) and DPPC (lower). The rotational correlation times for DMPC exhibit broad heterogeneity.</p></caption><graphic xlink:href="SDTYAE-000001-054701_1-g003"/></fig><fig fig-type="figure" id="f4" orientation="portrait" position="float"><label>FIG. 4.</label><caption><p>Rotational correlation time as a function of pressure for 1% NBD-PC labeled in a DPPC monolayer which exhibits phase coexistence of the LE and LC phase for surface pressures of 3.5&#x02013;10&#x02009;mN/m (the probe preferentially partitions to the LE phase); and a DMPC monolayer which represents the compression of a uniform liquid phase. Both data sets are taken at a temperature of 20&#x02009;&#x000b0;C.</p></caption><graphic xlink:href="SDTYAE-000001-054701_1-g004"/></fig><table-wrap id="t1" orientation="portrait" position="float"><label>TABLE I.</label><caption><p>Rotational correlation time constants and stretched exponential fitting parameters for DMPC and DPPC at 20&#x02009;&#x000b0;C.</p></caption><table frame="hsides" rules="groups" border="1"><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="char" char="&#x000b1;" span="1"/><col align="char" char="&#x000b1;" span="1"/><col align="char" char="&#x000b1;" span="1"/></colgroup><thead><tr><th align="left" colspan="1" rowspan="1">Lipid</th><th align="center" colspan="1" rowspan="1">Pressure (mN/m)</th><th align="center" colspan="1" rowspan="1"><inline-formula><mml:math id="M7"><mml:mrow><mml:msub><mml:mi mathvariant="italic">r</mml:mi><mml:mn>1</mml:mn></mml:msub></mml:mrow></mml:math></inline-formula></th><th align="center" colspan="1" rowspan="1"><inline-formula><mml:math id="M8"><mml:mrow><mml:msub><mml:mi mathvariant="italic">&#x003c4;</mml:mi><mml:mn>1</mml:mn></mml:msub></mml:mrow></mml:math></inline-formula> (ns)</th><th align="center" colspan="1" rowspan="1"><inline-formula><mml:math id="M9"><mml:mi mathvariant="italic">&#x003b2;</mml:mi></mml:math></inline-formula></th></tr></thead><tbody><tr><td colspan="1" rowspan="1">DMPC</td><td colspan="1" rowspan="1">3.5</td><td colspan="1" rowspan="1">0.18&#x02009;&#x000b1;&#x02009;0.01</td><td colspan="1" rowspan="1">1.71&#x02009;&#x000b1;&#x02009;0.19</td><td colspan="1" rowspan="1">0.98&#x02009;&#x000b1;&#x02009;0.12</td></tr><tr><td colspan="1" rowspan="1">DMPC</td><td colspan="1" rowspan="1">5</td><td colspan="1" rowspan="1">0.2&#x02009;&#x000b1;&#x02009;0.01</td><td colspan="1" rowspan="1">2.04&#x02009;&#x000b1;&#x02009;0.17</td><td colspan="1" rowspan="1">0.86&#x02009;&#x000b1;&#x02009;0.07</td></tr><tr><td colspan="1" rowspan="1">DMPC</td><td colspan="1" rowspan="1">7</td><td colspan="1" rowspan="1">0.19&#x02009;&#x000b1;&#x02009;0.01</td><td colspan="1" rowspan="1">2.3&#x02009;&#x000b1;&#x02009;0.23</td><td colspan="1" rowspan="1">0.92&#x02009;&#x000b1;&#x02009;0.1</td></tr><tr><td colspan="1" rowspan="1">DMPC</td><td colspan="1" rowspan="1">10</td><td colspan="1" rowspan="1">0.18&#x02009;&#x000b1;&#x02009;0.01</td><td colspan="1" rowspan="1">2.84&#x02009;&#x000b1;&#x02009;0.21</td><td colspan="1" rowspan="1">0.93&#x02009;&#x000b1;&#x02009;0.08</td></tr><tr><td colspan="1" rowspan="1">DMPC</td><td colspan="1" rowspan="1">15</td><td colspan="1" rowspan="1">0.19&#x02009;&#x000b1;&#x02009;0.01</td><td colspan="1" rowspan="1">3.11&#x02009;&#x000b1;&#x02009;0.12</td><td colspan="1" rowspan="1">0.84&#x02009;&#x000b1;&#x02009;0.03</td></tr><tr><td colspan="1" rowspan="1">DMPC</td><td colspan="1" rowspan="1">20</td><td colspan="1" rowspan="1">0.18&#x02009;&#x000b1;&#x02009;0.01</td><td colspan="1" rowspan="1">4.34&#x02009;&#x000b1;&#x02009;0.27</td><td colspan="1" rowspan="1">0.81&#x02009;&#x000b1;&#x02009;0.06</td></tr><tr><td colspan="1" rowspan="1">DPPC</td><td colspan="1" rowspan="1">3.5</td><td colspan="1" rowspan="1">0.18&#x02009;&#x000b1;&#x02009;0.01</td><td colspan="1" rowspan="1">2.42&#x02009;&#x000b1;&#x02009;0.22</td><td colspan="1" rowspan="1">0.87&#x02009;&#x000b1;&#x02009;0.08</td></tr><tr><td colspan="1" rowspan="1">DPPC</td><td colspan="1" rowspan="1">5</td><td colspan="1" rowspan="1">0.15&#x02009;&#x000b1;&#x02009;0.01</td><td colspan="1" rowspan="1">2.33&#x02009;&#x000b1;&#x02009;0.27</td><td colspan="1" rowspan="1">0.94&#x02009;&#x000b1;&#x02009;0.12</td></tr><tr><td colspan="1" rowspan="1">DPPC</td><td colspan="1" rowspan="1">7</td><td colspan="1" rowspan="1">0.16&#x02009;&#x000b1;&#x02009;0.01</td><td colspan="1" rowspan="1">2.56&#x02009;&#x000b1;&#x02009;0.35</td><td colspan="1" rowspan="1">0.9&#x02009;&#x000b1;&#x02009;0.11</td></tr><tr><td colspan="1" rowspan="1">DPPC</td><td colspan="1" rowspan="1">10</td><td colspan="1" rowspan="1">0.1&#x02009;&#x000b1;&#x02009;0.01</td><td colspan="1" rowspan="1">2.23&#x02009;&#x000b1;&#x02009;0.49</td><td colspan="1" rowspan="1">0.88&#x02009;&#x000b1;&#x02009;0.2</td></tr></tbody></table></table-wrap></floats-group></article>

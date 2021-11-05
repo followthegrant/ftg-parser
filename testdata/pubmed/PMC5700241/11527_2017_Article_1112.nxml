@@ -1,0 +1,1031 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.0 20120330//EN" "JATS-archivearticle1.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article"><?properties open_access?><front><journal-meta><journal-id journal-id-type="nlm-ta">Mater Struct</journal-id><journal-id journal-id-type="iso-abbrev">Mater Struct</journal-id><journal-title-group><journal-title>Materials and Structures</journal-title></journal-title-group><issn pub-type="ppub">1359-5997</issn><issn pub-type="epub">1871-6873</issn><publisher><publisher-name>Springer Netherlands</publisher-name><publisher-loc>Dordrecht</publisher-loc></publisher></journal-meta><article-meta><article-id pub-id-type="pmid">29213209</article-id><article-id pub-id-type="pmc">5700241</article-id><article-id pub-id-type="publisher-id">1112</article-id><article-id pub-id-type="doi">10.1617/s11527-017-1112-9</article-id><article-categories><subj-group subj-group-type="heading"><subject>Original Article</subject></subj-group></article-categories><title-group><article-title>Creep and cracking of concrete hinges: insight from centric and eccentric compression experiments</article-title></title-group><contrib-group><contrib contrib-type="author"><name><surname>Schlappal</surname><given-names>Thomas</given-names></name><xref ref-type="aff" rid="Aff1">1</xref></contrib><contrib contrib-type="author"><name><surname>Schweigler</surname><given-names>Michael</given-names></name><xref ref-type="aff" rid="Aff1">1</xref></contrib><contrib contrib-type="author"><name><surname>Gmainer</surname><given-names>Susanne</given-names></name><xref ref-type="aff" rid="Aff2">2</xref></contrib><contrib contrib-type="author"><name><surname>Peyerl</surname><given-names>Martin</given-names></name><xref ref-type="aff" rid="Aff2">2</xref></contrib><contrib contrib-type="author" corresp="yes"><name><surname>Pichler</surname><given-names>Bernhard</given-names></name><address><phone>+43 1 58801-20224/20230</phone><email>Bernhard.Pichler@tuwien.ac.at</email></address><xref ref-type="aff" rid="Aff1">1</xref></contrib><aff id="Aff1"><label>1</label><institution-wrap><institution-id institution-id-type="ISNI">0000 0001 2348 4034</institution-id><institution-id institution-id-type="GRID">grid.5329.d</institution-id><institution>Institute for Mechanics of Materials and Structures, </institution><institution>TU Wien &#x02013; Vienna University of Technology, </institution></institution-wrap>Karlsplatz 13/202, 1040 Vienna, Austria </aff><aff id="Aff2"><label>2</label>Smart Minerals GmbH, Reisnerstra&#x000df;e 53, 1030 Vienna, Austria </aff></contrib-group><pub-date pub-type="epub"><day>22</day><month>11</month><year>2017</year></pub-date><pub-date pub-type="pmc-release"><day>22</day><month>11</month><year>2017</year></pub-date><pub-date pub-type="ppub"><year>2017</year></pub-date><volume>50</volume><issue>6</issue><elocation-id>244</elocation-id><history><date date-type="received"><day>9</day><month>3</month><year>2017</year></date><date date-type="accepted"><day>4</day><month>11</month><year>2017</year></date></history><permissions><copyright-statement>&#x000a9; The Author(s) 2017</copyright-statement><license license-type="OpenAccess"><license-p>
+<bold>Open Access</bold>This article is distributed under the terms of the Creative Commons Attribution 4.0 International License (<ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</ext-link>), which permits unrestricted use, distribution, and reproduction in any medium, provided you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons license, and indicate if changes were made.</license-p></license></permissions><abstract id="Abs1"><p id="Par1">Existing design guidelines for concrete hinges consider bending-induced tensile cracking, but the structural behavior is oversimplified to be time-independent. This is the motivation to study creep and bending-induced tensile cracking of initially monolithic concrete hinges systematically. Material tests on plain concrete specimens and structural tests on marginally reinforced concrete hinges are performed. The experiments characterize material and structural creep under centric compression as well as bending-induced tensile cracking and the interaction between creep and cracking of concrete hinges. As for the latter two aims, three nominally identical concrete hinges are subjected to short-term and to longer-term eccentric compression tests. Obtained material and structural creep functions referring to <italic>centric</italic> compression are found to be very similar. The structural creep activity under <italic>eccentric</italic> compression is significantly larger because of the interaction between creep and cracking, i.e. bending-induced cracks progressively open and propagate under sustained eccentric loading. As for concrete hinges in frame-like integral bridge construction, it is concluded (i) that realistic simulation of variable loads requires consideration of the here-studied time-dependent behavior and (ii) that permanent compressive normal forces shall be limited by 45% of the ultimate load carrying capacity, in order to avoid damage of concrete hinges under sustained loading.</p></abstract><kwd-group xml:lang="en"><title>Keywords</title><kwd>Integral bridge construction</kwd><kwd>Mechanized tunneling</kwd><kwd>Segmented tunnel lining</kwd><kwd>Tensile cracking of concrete</kwd><kwd>Digital image correlation</kwd></kwd-group><funding-group><award-group><funding-source><institution>&#x000d6;sterreichische Forschungsf&#x000f6;rderungsgesellschaft</institution></funding-source><award-id>845681</award-id><principal-award-recipient><name><surname>Pichler</surname><given-names>Bernhard</given-names></name></principal-award-recipient></award-group></funding-group><custom-meta-group><custom-meta><meta-name>issue-copyright-statement</meta-name><meta-value>&#x000a9; RILEM 2017</meta-value></custom-meta></custom-meta-group></article-meta></front><body><sec id="Sec1"><title>Introduction</title><p id="Par2">Concrete hinges were invented by Freyssinet [<xref ref-type="bibr" rid="CR1">1</xref>, <xref ref-type="bibr" rid="CR2">2</xref>]. They are unreinforced or marginally reinforced necks in reinforced concrete structures, such as, e.g. supports in integral bridge construction [<xref ref-type="bibr" rid="CR3">3</xref>&#x02013;<xref ref-type="bibr" rid="CR10">10</xref>] and segment-to-segment interfaces of segmented linings used in mechanized tunneling [<xref ref-type="bibr" rid="CR11">11</xref>&#x02013;<xref ref-type="bibr" rid="CR28">28</xref>]. Eventually a few pairs of crossed steel rebars (or bolts) run across a concrete hinge. Their cross-over point is typically at the center of the neck. Therefore, the bending stiffness of the neck is significantly smaller than the ones of the two connected reinforced concrete parts. The corresponding concentration of bending deformation at the concrete hinge results, already under regular service loads, either in tension-induced cracking of initially monolithic necks, or in partial separation of segment-to-segment interfaces. Both effects further reduce the effective bending stiffness of the neck. This further promotes the ability of concrete hinges to develop relative rotation angles.</p><p id="Par3">Current design guidelines for concrete hinges are based on pioneering developments of Leonhardt and Reimann [<xref ref-type="bibr" rid="CR5">5</xref>]. In the field of integral bridge construction, these guidelines were further developed by M&#x000f6;nnig and Netzel [<xref ref-type="bibr" rid="CR29">29</xref>], Marx and Schacht [<xref ref-type="bibr" rid="CR6">6</xref>], as well as by Morgenthal and Olney [<xref ref-type="bibr" rid="CR7">7</xref>]. As for mechanized tunneling, Gladwell [<xref ref-type="bibr" rid="CR30">30</xref>] developed a moment-rotation relation for concrete hinges representing longitudinal joints. A few years later, Jan&#x000df;en [<xref ref-type="bibr" rid="CR17">17</xref>] adapted the formulas of Leonhardt and Reimann to interfaces between reinforced concrete segments. These formulas are up to date the golden standard [<xref ref-type="bibr" rid="CR13">13</xref>, <xref ref-type="bibr" rid="CR27">27</xref>, <xref ref-type="bibr" rid="CR28">28</xref>, <xref ref-type="bibr" rid="CR31">31</xref>, <xref ref-type="bibr" rid="CR32">32</xref>]. All described guidelines and recommendations provide unique relationships between bending moment and rotation angle, see their comparison with available experimental data in Fig.&#x000a0;<xref rid="Fig1" ref-type="fig">1</xref>.<fig id="Fig1"><label>Fig. 1</label><caption><p>Dimensionless relation between bending moment <italic>M</italic> and relative rotation angle <inline-formula id="IEq1"><alternatives><tex-math id="M1">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\Delta \varphi $$\end{document}</tex-math><mml:math id="M2"><mml:mrow><mml:mi mathvariant="normal">&#x00394;</mml:mi><mml:mi mathvariant="italic">&#x003c6;</mml:mi></mml:mrow></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq1.gif"/></alternatives></inline-formula> (&#x0201c;Leonhardt and Reimann&#x0201d;-diagram): modeled relationships by Gladwell [<xref ref-type="bibr" rid="CR30">30</xref>], Leonhardt and Reimann [<xref ref-type="bibr" rid="CR5">5</xref>], and Jan&#x000df;en [<xref ref-type="bibr" rid="CR17">17</xref>], as well as experimental data from Base [<xref ref-type="bibr" rid="CR33">33</xref>], Tourasse [<xref ref-type="bibr" rid="CR34">34</xref>], and EMPA [<xref ref-type="bibr" rid="CR35">35</xref>]; <inline-formula id="IEq2"><alternatives><tex-math id="M3">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$N=$$\end{document}</tex-math><mml:math id="M4"><mml:mrow><mml:mi>N</mml:mi><mml:mo>=</mml:mo></mml:mrow></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq2.gif"/></alternatives></inline-formula> normal force, <inline-formula id="IEq3"><alternatives><tex-math id="M5">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$e=$$\end{document}</tex-math><mml:math id="M6"><mml:mrow><mml:mi>e</mml:mi><mml:mo>=</mml:mo></mml:mrow></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq3.gif"/></alternatives></inline-formula> eccentricity, <inline-formula id="IEq4"><alternatives><tex-math id="M7">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$a=$$\end{document}</tex-math><mml:math id="M8"><mml:mrow><mml:mi>a</mml:mi><mml:mo>=</mml:mo></mml:mrow></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq4.gif"/></alternatives></inline-formula> width of neck, <inline-formula id="IEq5"><alternatives><tex-math id="M9">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$b=$$\end{document}</tex-math><mml:math id="M10"><mml:mrow><mml:mi>b</mml:mi><mml:mo>=</mml:mo></mml:mrow></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq5.gif"/></alternatives></inline-formula> depth of neck, <inline-formula id="IEq6"><alternatives><tex-math id="M11">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$E=$$\end{document}</tex-math><mml:math id="M12"><mml:mrow><mml:mi>E</mml:mi><mml:mo>=</mml:mo></mml:mrow></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq6.gif"/></alternatives></inline-formula> Young&#x02019;s modulus of concrete</p></caption><graphic xlink:href="11527_2017_1112_Fig1_HTML" id="MO1"/></fig>
+</p><p id="Par4">Concrete hinges are nowadays experiencing a renaissance in integral bridge construction. Examples are (i) the viaduct &#x0201c;Wei&#x000df;enbrunn am Forst&#x0201d;, Germany, which was constructed in 2011, see [<xref ref-type="bibr" rid="CR36">36</xref>], and (ii) the Huyck-bridge, Austria, which was finished in 2014, see [<xref ref-type="bibr" rid="CR37">37</xref>].</p><p id="Par5">Since the 1960s, many concrete hinges were investigated experimentally, e.g., by Tourasse [<xref ref-type="bibr" rid="CR34">34</xref>], Base [<xref ref-type="bibr" rid="CR33">33</xref>], Dix [<xref ref-type="bibr" rid="CR38">38</xref>], Leonhardt and Reimann [<xref ref-type="bibr" rid="CR5">5</xref>], Fessler [<xref ref-type="bibr" rid="CR35">35</xref>], Franz and Fein [<xref ref-type="bibr" rid="CR39">39</xref>], as well as Hordijk and Gijsbers [<xref ref-type="bibr" rid="CR40">40</xref>]. The underlying test protocols are typically structured in two phases. At first, a compressive axial force was applied and kept constant thereafter. This was followed by imposing a rotation angle and keeping it constant thereafter. The first type of loading resulted in <italic>creep</italic> of concrete, and the second type in <italic>stress relaxation</italic>. This mixed viscoelastic behavior of concrete was one motivation for the current contribution, where we focus on <italic>creep</italic> of concrete and of concrete hinges subjected to compression and bending. The second motivation is that the interaction between bending-induced tensile cracking and creep of initially monolithic concrete hinges is an open research question.</p><p id="Par6">We report on experiments both on the material level of plain concrete and on the structural scale of initially monolithic concrete hinges. As for material testing, concrete prisms are subjected to centric compression, in order to quantify material creep functions at load levels being equal to virtually 20% of the short-term uniaxial compressive strength. As for structural testing, initially monolithic concrete hinges are subjected to centric and eccentric compression. The underlying aim is to study (i) structural creep under centric loading, (ii) tensile cracking under short-term eccentric loading, (iii) structural creep under eccentric compression at virtually 25% of the ultimate load carrying capacity, and (iv) the interaction between bending-induced tensile cracking and creep. Rotations of the concrete hinges are quantified by means of Inductive Displacement Transducers (LVDTs). Crack propagation is observed with a non-contact displacement measurement system, based on Digital Image Correlation (DIC).</p><p id="Par7">The present contribution is structured as follows. Materials and test specimens are discussed in Sect.&#x000a0;<xref rid="Sec2" ref-type="sec">2</xref>. Characterization of linear creep of plain concrete under uniaxial compression is the topic of Sect.&#x000a0;<xref rid="Sec5" ref-type="sec">3</xref>. Structural testing of concrete hinges up to service loads as well as up to their load carrying capacity are described in Sects.&#x000a0;<xref rid="Sec6" ref-type="sec">4</xref> and&#x000a0;<xref rid="Sec11" ref-type="sec">5</xref>, respectively. Experimental results are analyzed in Sect.&#x000a0;<xref rid="Sec14" ref-type="sec">6</xref> and discussed in Sect.&#x000a0;<xref rid="Sec21" ref-type="sec">7</xref>, including implications for design guidelines and for the necessary consideration of time-dependent behavior of concrete hinges in integral bridge construction. Conclusions are drawn in Sect.&#x000a0;<xref rid="Sec27" ref-type="sec">8</xref>. Throughout this work, compression is considered by a positive sign.</p></sec><sec id="Sec2"><title>Materials and test specimens</title><sec id="Sec3"><title>Concrete and steel</title><p id="Par8">Concrete C 35/45 F45 GK16 B5 [<xref ref-type="bibr" rid="CR41">41</xref>] is produced with a commercial CEM&#x000a0;II/A-L&#x000a0;42.5&#x000a0;N cement [<xref ref-type="bibr" rid="CR41">41</xref>], Viennese tap water, and calcite aggregates with a maximum size of <inline-formula id="IEq7"><alternatives><tex-math id="M13">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$a_\mathrm{agg}=16$$\end{document}</tex-math><mml:math id="M14"><mml:mrow><mml:msub><mml:mi>a</mml:mi><mml:mi mathvariant="normal">agg</mml:mi></mml:msub><mml:mo>=</mml:mo><mml:mn>16</mml:mn></mml:mrow></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq7.gif"/></alternatives></inline-formula>&#x000a0;mm. The initial water-to-cement mass ratio amounts to <inline-formula id="IEq8"><alternatives><tex-math id="M15">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$w/c=0.48$$\end{document}</tex-math><mml:math id="M16"><mml:mrow><mml:mi>w</mml:mi><mml:mo stretchy="false">/</mml:mo><mml:mi>c</mml:mi><mml:mo>=</mml:mo><mml:mn>0.48</mml:mn></mml:mrow></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq8.gif"/></alternatives></inline-formula>, the initial aggregate-to-cement mass ratio to <inline-formula id="IEq9"><alternatives><tex-math id="M17">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$a/c=3.97$$\end{document}</tex-math><mml:math id="M18"><mml:mrow><mml:mi>a</mml:mi><mml:mo stretchy="false">/</mml:mo><mml:mi>c</mml:mi><mml:mo>=</mml:mo><mml:mn>3.97</mml:mn></mml:mrow></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq9.gif"/></alternatives></inline-formula>, and the initial mass density to <inline-formula id="IEq10"><alternatives><tex-math id="M19">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\rho =2318$$\end{document}</tex-math><mml:math id="M20"><mml:mrow><mml:mi mathvariant="italic">&#x003c1;</mml:mi><mml:mo>=</mml:mo><mml:mn>2318</mml:mn></mml:mrow></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq10.gif"/></alternatives></inline-formula>&#x000a0;kg/m<inline-formula id="IEq11"><alternatives><tex-math id="M21">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$^3$$\end{document}</tex-math><mml:math id="M22"><mml:msup><mml:mrow/><mml:mn>3</mml:mn></mml:msup></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq11.gif"/></alternatives></inline-formula>. The cube compressive strength <inline-formula id="IEq12"><alternatives><tex-math id="M23">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$f_{c,\mathrm{cube}}$$\end{document}</tex-math><mml:math id="M24"><mml:msub><mml:mi>f</mml:mi><mml:mrow><mml:mi>c</mml:mi><mml:mo>,</mml:mo><mml:mi mathvariant="normal">cube</mml:mi></mml:mrow></mml:msub></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq12.gif"/></alternatives></inline-formula> and Young&#x02019;s modulus <italic>E</italic> are determined 28 days after production, following the Austrian standards for testing of concrete [<xref ref-type="bibr" rid="CR42">42</xref>], as<disp-formula id="Equ1"><label>1</label><alternatives><tex-math id="M25">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\begin{aligned} f_{c,{\mathrm{cube}}}=56.25\,{\text {MPa}},\quad E=34.75\,{\text {GPa}}. \end{aligned}$$\end{document}</tex-math><mml:math id="M26" display="block"><mml:mrow><mml:mtable><mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:msub><mml:mi>f</mml:mi><mml:mrow><mml:mi>c</mml:mi><mml:mo>,</mml:mo><mml:mi mathvariant="normal">cube</mml:mi></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:mn>56.25</mml:mn><mml:mspace width="0.166667em"/><mml:mtext>MPa</mml:mtext><mml:mo>,</mml:mo><mml:mspace width="1em"/><mml:mi>E</mml:mi><mml:mo>=</mml:mo><mml:mn>34.75</mml:mn><mml:mspace width="0.166667em"/><mml:mtext>GPa</mml:mtext><mml:mo>.</mml:mo></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:mrow></mml:math><graphic xlink:href="11527_2017_1112_Article_Equ1.gif" position="anchor"/></alternatives></disp-formula>The cube compressive strength allows for estimating the uniaxial compressive strength <inline-formula id="IEq13"><alternatives><tex-math id="M27">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$f_c$$\end{document}</tex-math><mml:math id="M28"><mml:msub><mml:mi>f</mml:mi><mml:mi>c</mml:mi></mml:msub></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq13.gif"/></alternatives></inline-formula> as [<xref ref-type="bibr" rid="CR43">43</xref>]<disp-formula id="Equ2"><label>2</label><alternatives><tex-math id="M29">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\begin{aligned} f_c = \frac{f_{c,{\mathrm{cube}}}}{1.2} = 46.88\,{\text {MPa}}. \end{aligned}$$\end{document}</tex-math><mml:math id="M30" display="block"><mml:mrow><mml:mtable><mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:msub><mml:mi>f</mml:mi><mml:mi>c</mml:mi></mml:msub><mml:mo>=</mml:mo><mml:mfrac><mml:msub><mml:mi>f</mml:mi><mml:mrow><mml:mi>c</mml:mi><mml:mo>,</mml:mo><mml:mi mathvariant="normal">cube</mml:mi></mml:mrow></mml:msub><mml:mrow><mml:mn>1.2</mml:mn></mml:mrow></mml:mfrac><mml:mo>=</mml:mo><mml:mn>46.88</mml:mn><mml:mspace width="0.166667em"/><mml:mtext>MPa</mml:mtext><mml:mo>.</mml:mo></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:mrow></mml:math><graphic xlink:href="11527_2017_1112_Article_Equ2.gif" position="anchor"/></alternatives></disp-formula>The produced concrete is well suited for bridge applications. In order to provide adequate frost-thaw resistance within exposure class XF3, it contains 2.5&#x02013;5.0 volume percent entrained air.</p><p id="Par9">As for the rebars, steel quality B550 A was chosen. The von Mises yield stress <inline-formula id="IEq14"><alternatives><tex-math id="M31">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$f_y$$\end{document}</tex-math><mml:math id="M32"><mml:msub><mml:mi>f</mml:mi><mml:mi>y</mml:mi></mml:msub></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq14.gif"/></alternatives></inline-formula> and Young&#x02019;s modulus <inline-formula id="IEq15"><alternatives><tex-math id="M33">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$E_s$$\end{document}</tex-math><mml:math id="M34"><mml:msub><mml:mi>E</mml:mi><mml:mi>s</mml:mi></mml:msub></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq15.gif"/></alternatives></inline-formula> of this material amount to<disp-formula id="Equ3"><label>3</label><alternatives><tex-math id="M35">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\begin{aligned} f_y=550\,{\text{MPa}},\quad E_s=200\,{\text {GPa}}. \end{aligned}$$\end{document}</tex-math><mml:math id="M36" display="block"><mml:mrow><mml:mtable><mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:msub><mml:mi>f</mml:mi><mml:mi>y</mml:mi></mml:msub><mml:mo>=</mml:mo><mml:mn>550</mml:mn><mml:mspace width="0.166667em"/><mml:mtext>MPa</mml:mtext><mml:mo>,</mml:mo><mml:mspace width="1em"/><mml:msub><mml:mi>E</mml:mi><mml:mi>s</mml:mi></mml:msub><mml:mo>=</mml:mo><mml:mn>200</mml:mn><mml:mspace width="0.166667em"/><mml:mtext>GPa</mml:mtext><mml:mo>.</mml:mo></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:mrow></mml:math><graphic xlink:href="11527_2017_1112_Article_Equ3.gif" position="anchor"/></alternatives></disp-formula>
+</p></sec><sec id="Sec4"><title>Plain concrete prisms and reinforced concrete hinges</title><p id="Par10">As for material testing of plain concrete, 10 prisms are produced. They exhibit nominal dimensions of 75&#x000a0;mm <inline-formula id="IEq16"><alternatives><tex-math id="M37">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\times $$\end{document}</tex-math><mml:math id="M38"><mml:mo>&#x000d7;</mml:mo></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq16.gif"/></alternatives></inline-formula> 75&#x000a0;mm <inline-formula id="IEq17"><alternatives><tex-math id="M39">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\times $$\end{document}</tex-math><mml:math id="M40"><mml:mo>&#x000d7;</mml:mo></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq17.gif"/></alternatives></inline-formula> 250&#x000a0;mm, see Fig.&#x000a0;<xref rid="Fig2" ref-type="fig">2</xref>.<fig id="Fig2"><label>Fig. 2</label><caption><p>Plain concrete prisms used for material testing: test specimens consist of two prisms in serial arrangement</p></caption><graphic xlink:href="11527_2017_1112_Fig2_HTML" id="MO5"/></fig>
+</p><p id="Par11">As for structural testing, three marginally reinforced concrete hinges are produced. Their geometric shape (i) is inspired by the concrete hinges of Huyck-bridge [<xref ref-type="bibr" rid="CR37">37</xref>], and (ii) complies with the design guidelines of Leonhardt and Reimann [<xref ref-type="bibr" rid="CR5">5</xref>]. In more detail, the concrete hinges exhibit width, height, and depth amounting to 25, 35, and 40&#x000a0;cm, respectively, see Fig.&#x000a0;<xref rid="Fig3" ref-type="fig">3</xref>. Lateral notches are 8.75&#x000a0;cm deep and front notches 5&#x000a0;cm, such that the cross-sectional area of the neck, <inline-formula id="IEq18"><alternatives><tex-math id="M41">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$A_c$$\end{document}</tex-math><mml:math id="M42"><mml:msub><mml:mi>A</mml:mi><mml:mi>c</mml:mi></mml:msub></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq18.gif"/></alternatives></inline-formula>, amounts to<disp-formula id="Equ4"><label>4</label><alternatives><tex-math id="M43">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\begin{aligned} A_c = 7.5\times 30 = 225.00\,\text {cm}^2. \end{aligned}$$\end{document}</tex-math><mml:math id="M44" display="block"><mml:mrow><mml:mtable><mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:msub><mml:mi>A</mml:mi><mml:mi>c</mml:mi></mml:msub><mml:mo>=</mml:mo><mml:mn>7.5</mml:mn><mml:mo>&#x000d7;</mml:mo><mml:mn>30</mml:mn><mml:mo>=</mml:mo><mml:mn>225.00</mml:mn><mml:mspace width="0.166667em"/><mml:msup><mml:mtext>cm</mml:mtext><mml:mn>2</mml:mn></mml:msup><mml:mo>.</mml:mo></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:mrow></mml:math><graphic xlink:href="11527_2017_1112_Article_Equ4.gif" position="anchor"/></alternatives></disp-formula>Both at the top and at the bottom of the concrete hinges, a steel plate of 2&#x000a0;cm thickness is welded (well before casting of fresh concrete) to the neighboring reinforcement cage (Fig.&#x000a0;<xref rid="Fig3" ref-type="fig">3</xref>). These plates ensure an effective distribution of concentrated external line loads. The top and bottom reinforcement cages are connected by three pairs of crossed steel rebars, with cross-over points right at the center of the neck, see Fig.&#x000a0;<xref rid="Fig3" ref-type="fig">3</xref>. They exhibit a diameter of 0.8&#x000a0;cm, such that the total cross-sectional area of reinforcements running across the neck, <inline-formula id="IEq19"><alternatives><tex-math id="M45">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$A_s$$\end{document}</tex-math><mml:math id="M46"><mml:msub><mml:mi>A</mml:mi><mml:mi>s</mml:mi></mml:msub></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq19.gif"/></alternatives></inline-formula>, amounts to<disp-formula id="Equ5"><label>5</label><alternatives><tex-math id="M47">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\begin{aligned} A_s=6 \times 0.8^2 \pi /4=3.02\,\text {cm}^2. \end{aligned}$$\end{document}</tex-math><mml:math id="M48" display="block"><mml:mrow><mml:mtable><mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:msub><mml:mi>A</mml:mi><mml:mi>s</mml:mi></mml:msub><mml:mo>=</mml:mo><mml:mn>6</mml:mn><mml:mo>&#x000d7;</mml:mo><mml:mn>0</mml:mn><mml:mo>.</mml:mo><mml:msup><mml:mn>8</mml:mn><mml:mn>2</mml:mn></mml:msup><mml:mi mathvariant="italic">&#x003c0;</mml:mi><mml:mo stretchy="false">/</mml:mo><mml:mn>4</mml:mn><mml:mo>=</mml:mo><mml:mn>3.02</mml:mn><mml:mspace width="0.166667em"/><mml:msup><mml:mtext>cm</mml:mtext><mml:mn>2</mml:mn></mml:msup><mml:mo>.</mml:mo></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:mrow></mml:math><graphic xlink:href="11527_2017_1112_Article_Equ5.gif" position="anchor"/></alternatives></disp-formula>The reinforcement ratio <inline-formula id="IEq20"><alternatives><tex-math id="M49">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\varrho $$\end{document}</tex-math><mml:math id="M50"><mml:mi mathvariant="italic">&#x003f1;</mml:mi></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq20.gif"/></alternatives></inline-formula> follows as<disp-formula id="Equ6"><label>6</label><alternatives><tex-math id="M51">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\begin{aligned} \varrho =A_s/A_c=1.3\%. \end{aligned}$$\end{document}</tex-math><mml:math id="M52" display="block"><mml:mrow><mml:mtable><mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:mi mathvariant="italic">&#x003f1;</mml:mi><mml:mo>=</mml:mo><mml:msub><mml:mi>A</mml:mi><mml:mi>s</mml:mi></mml:msub><mml:mo stretchy="false">/</mml:mo><mml:msub><mml:mi>A</mml:mi><mml:mi>c</mml:mi></mml:msub><mml:mo>=</mml:mo><mml:mn>1.3</mml:mn><mml:mo>%</mml:mo><mml:mo>.</mml:mo></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:mrow></mml:math><graphic xlink:href="11527_2017_1112_Article_Equ6.gif" position="anchor"/></alternatives></disp-formula>Three batches of fresh concrete are mixed in a laboratory mixer. From each batch, two to four plain concrete prisms and one reinforced concrete hinge are produced at the same time. Formworks are stripped 24&#x000a0;h after production. After that, all specimens are air cured in order to simulate a practical real-life application. In other words, the specimens were allowed to dry in an environment with temperature und relative humidity ranging in estimated intervals from 24 to 29<inline-formula id="IEq21"><alternatives><tex-math id="M53">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\,^\circ $$\end{document}</tex-math><mml:math id="M54"><mml:msup><mml:mspace width="0.166667em"/><mml:mo>&#x02218;</mml:mo></mml:msup></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq21.gif"/></alternatives></inline-formula>C and from 50 to 70&#x000a0;%, respectively.<fig id="Fig3"><label>Fig. 3</label><caption><p>Geometric dimensions and rebar positions of the tested reinforced concrete hinges</p></caption><graphic xlink:href="11527_2017_1112_Fig3_HTML" id="MO6"/></fig>
+</p></sec></sec><sec id="Sec5"><title>Material testing: creep characterization of plain concrete</title><p id="Par13">Plain concrete exhibits <italic>linear creep</italic> as long as the stress level <inline-formula id="IEq22"><alternatives><tex-math id="M55">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\sigma $$\end{document}</tex-math><mml:math id="M56"><mml:mi mathvariant="italic">&#x003c3;</mml:mi></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq22.gif"/></alternatives></inline-formula> is small compared to the uniaxial compressive strength <inline-formula id="IEq23"><alternatives><tex-math id="M57">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$f_c$$\end{document}</tex-math><mml:math id="M58"><mml:msub><mml:mi>f</mml:mi><mml:mi>c</mml:mi></mml:msub></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq23.gif"/></alternatives></inline-formula>, and <italic>nonlinear creep</italic> for larger stress levels. The transition from linear to nonlinear creep is still not fully understood. Eurocode&#x000a0;2&#x02014;regulating the design of concrete bridges, see [<xref ref-type="bibr" rid="CR44">44</xref>]&#x02014;suggests that the transition threshold amounts to <inline-formula id="IEq24"><alternatives><tex-math id="M59">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\sigma /f_c = 0.45$$\end{document}</tex-math><mml:math id="M60"><mml:mrow><mml:mi mathvariant="italic">&#x003c3;</mml:mi><mml:mo stretchy="false">/</mml:mo><mml:msub><mml:mi>f</mml:mi><mml:mi>c</mml:mi></mml:msub><mml:mo>=</mml:mo><mml:mn>0.45</mml:mn></mml:mrow></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq24.gif"/></alternatives></inline-formula> while Mazzotti and Savoia [<xref ref-type="bibr" rid="CR45">45</xref>] recommend a more conservative value amounting to <inline-formula id="IEq25"><alternatives><tex-math id="M61">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\sigma /f_c = 0.20$$\end{document}</tex-math><mml:math id="M62"><mml:mrow><mml:mi mathvariant="italic">&#x003c3;</mml:mi><mml:mo stretchy="false">/</mml:mo><mml:msub><mml:mi>f</mml:mi><mml:mi>c</mml:mi></mml:msub><mml:mo>=</mml:mo><mml:mn>0.20</mml:mn></mml:mrow></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq25.gif"/></alternatives></inline-formula>.</p><p id="Par14">This is the motivation to perform five linear creep tests with compressive stress level <inline-formula id="IEq26"><alternatives><tex-math id="M63">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\sigma \approx 0.2\,f_c$$\end{document}</tex-math><mml:math id="M64"><mml:mrow><mml:mi mathvariant="italic">&#x003c3;</mml:mi><mml:mo>&#x02248;</mml:mo><mml:mn>0.2</mml:mn><mml:mspace width="0.166667em"/><mml:msub><mml:mi>f</mml:mi><mml:mi>c</mml:mi></mml:msub></mml:mrow></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq26.gif"/></alternatives></inline-formula>, on an electromechanical testing machine of type Zwick/Roell Z050. Loading is applied via two metal prisms with a cross-section of 75&#x000a0;<inline-formula id="IEq27"><alternatives><tex-math id="M65">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\times $$\end{document}</tex-math><mml:math id="M66"><mml:mo>&#x000d7;</mml:mo></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq27.gif"/></alternatives></inline-formula>&#x000a0;75 mm<inline-formula id="IEq28"><alternatives><tex-math id="M67">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$^2$$\end{document}</tex-math><mml:math id="M68"><mml:msup><mml:mrow/><mml:mn>2</mml:mn></mml:msup></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq28.gif"/></alternatives></inline-formula>, and a height of 20&#x000a0;mm, see Fig.&#x000a0;<xref rid="Fig2" ref-type="fig">2</xref>.</p><p id="Par15">Compression-induced shortening of the specimens is measured directly at the surface of the specimens. In order to increase the measurement length, two concrete prisms are put into a serial arrangement, see Fig.&#x000a0;<xref rid="Fig2" ref-type="fig">2</xref> and Table&#x000a0;<xref rid="Tab1" ref-type="table">1</xref>. To this end, the two prisms are pushed together by hand and the prism-to-prism interface is connected laterally using an adhesive tape (Fig.&#x000a0;<xref rid="Fig2" ref-type="fig">2</xref>). The shortening of the specimens is measured by four Inductive Displacement Transducers (LVDTs) of type HBM W1/2mm-T. They are mounted to the specimen by means of LVDT holders which are attached to the specimen by means of screws. The LVDT holders are located at a distance of 75&#x000a0;mm to the top and bottom load platens (Fig.&#x000a0;<xref rid="Fig2" ref-type="fig">2</xref>), i.e. they measure the shortening of the specimen in the central region which is free of friction-induced, unavoidable, and self-equilibrated shear stresses activated in the interfaces between specimen and load platens, see [<xref ref-type="bibr" rid="CR46">46</xref>] for more details. Firm contact in the prism-to-prism interface avoided possible sliding or rotation/bending of the prisms. This is underlined by the four individual LVDT measurements which show no indication of a significant eccentricity of loading.<table-wrap id="Tab1"><label>Table 1</label><caption><p>Properties of plain concrete specimens used for characterization of linear creep behavior</p></caption><table frame="hsides" rules="groups"><thead><tr><th align="left">No.</th><th align="left">Height <italic>h</italic> (mm)</th><th align="left">Cross-section <inline-formula id="IEq29"><alternatives><tex-math id="M69">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$a_1\times a_2$$\end{document}</tex-math><mml:math id="M70"><mml:mrow><mml:msub><mml:mi>a</mml:mi><mml:mn>1</mml:mn></mml:msub><mml:mo>&#x000d7;</mml:mo><mml:msub><mml:mi>a</mml:mi><mml:mn>2</mml:mn></mml:msub></mml:mrow></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq29.gif"/></alternatives></inline-formula> (mm<inline-formula id="IEq30"><alternatives><tex-math id="M71">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$^2$$\end{document}</tex-math><mml:math id="M72"><mml:msup><mml:mrow/><mml:mn>2</mml:mn></mml:msup></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq30.gif"/></alternatives></inline-formula>)</th><th align="left">Mass <italic>m</italic> (kg)</th><th align="left">Mass density <inline-formula id="IEq31"><alternatives><tex-math id="M73">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\rho $$\end{document}</tex-math><mml:math id="M74"><mml:mi mathvariant="italic">&#x003c1;</mml:mi></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq31.gif"/></alternatives></inline-formula> (kg/m<inline-formula id="IEq32"><alternatives><tex-math id="M75">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$^3$$\end{document}</tex-math><mml:math id="M76"><mml:msup><mml:mrow/><mml:mn>3</mml:mn></mml:msup></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq32.gif"/></alternatives></inline-formula>)</th></tr></thead><tbody><tr><td align="left">1</td><td char="." align="char">501.10</td><td char="&#x000d7;" align="char">75.48&#x000a0;&#x000d7;&#x000a0;76.83</td><td char="." align="char">6.794</td><td char="." align="char">2338.27</td></tr><tr><td align="left">2</td><td char="." align="char">500.90</td><td char="&#x000d7;" align="char">75.55&#x000a0;&#x000d7;&#x000a0;75.48</td><td char="." align="char">6.706</td><td char="." align="char">2347.87</td></tr><tr><td align="left">3</td><td char="." align="char">501.50</td><td char="&#x000d7;" align="char">75.60&#x000a0;&#x000d7;&#x000a0;76.05</td><td char="." align="char">6.752</td><td char="." align="char">2341.75</td></tr><tr><td align="left">4</td><td char="." align="char">501.50</td><td char="&#x000d7;" align="char">75.43&#x000a0;&#x000d7;&#x000a0;76.33</td><td char="." align="char">6.764</td><td char="." align="char">2342.88</td></tr><tr><td align="left">5</td><td char="." align="char">500.65</td><td char="&#x000d7;" align="char">74.98&#x000a0;&#x000d7;&#x000a0;75.40</td><td char="." align="char">6.672</td><td char="." align="char">2357.40</td></tr></tbody></table></table-wrap>
+</p><p id="Par16">In order to avoid temperature-induced deformation of the specimens during creep testing, the experiments are carried out in an insulated test chamber conditioned to 20&#x000a0;&#x000b0;C with a temperature control unit Lauda RK8 KP. In addition, after closing the test chamber and before starting the creep tests, specimens are allowed to achieve isothermal conditions during a waiting period amounting to more than 24&#x000a0;h.</p><p id="Par17">The creep tests are carried out as follows. All of the five specimens are involved in a linear creep test. During the described waiting period before actual loading, the specimens are subjected to a compressive force of 2&#x000a0;kN, in order to establish good contact along the interfaces between load platens and specimen as well as the prism-to-prism interface in the middle of the specimen. Compressive loading is increased with a force rate amounting to 1&#x000a0;kN/s up to 49&#x000a0;kN, and the load level <inline-formula id="IEq39"><alternatives><tex-math id="M77">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\sigma \approx 0.2\,f_c$$\end{document}</tex-math><mml:math id="M78"><mml:mrow><mml:mi mathvariant="italic">&#x003c3;</mml:mi><mml:mo>&#x02248;</mml:mo><mml:mn>0.2</mml:mn><mml:mspace width="0.166667em"/><mml:msub><mml:mi>f</mml:mi><mml:mi>c</mml:mi></mml:msub></mml:mrow></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq39.gif"/></alternatives></inline-formula> is kept constant for 20&#x000a0;h (specimens 1, 2, and 3) and for 12&#x000a0;h (specimens 4 and 5), respectively.</p></sec><sec id="Sec6"><title>Structural testing of concrete hinges up to service loads</title><p id="Par18">A first set of structural tests deals with creep and tensile cracking of concrete hinges subjected to centric and eccentric service loads. The test setup is described in Sect.&#x000a0;<xref rid="Sec7" ref-type="sec">4.1</xref>. The extensional stiffness of undamaged concrete hinges and their structural creep behavior under centric compression is the topic of Sect.&#x000a0;<xref rid="Sec8" ref-type="sec">4.2</xref>. The bending stiffness of undamaged concrete hinges and the development of tensile cracking as a function of eccentric loading is studied in Sect.&#x000a0;<xref rid="Sec9" ref-type="sec">4.3</xref>. Finally, the coupling between creep and tensile cracking of concrete hinges is analyzed in eccentric creep tests, see Sect.&#x000a0;<xref rid="Sec10" ref-type="sec">4.4</xref>.</p><sec id="Sec7"><title>Test setup and measurement equipment</title><p id="Par19">Concrete hinges are subjected, 26 days after production, to compressive line loads using a servo-hydraulic testing machine of the type Walter and Bai DLFV-250DZ-10-D. The load measurement cell of the testing machine is used to carry out force-controlled tests, where compressive normal forces <italic>N</italic> are imposed on the concrete hinges. Tests are carried out with and without eccentricity of the normal force. In case of load eccentricity <italic>e</italic>, concrete hinges are subjected to coupled compression <italic>and</italic> bending, whereby the bending moment <italic>M</italic> is proportional to the normal force:<disp-formula id="Equ7"><label>7</label><alternatives><tex-math id="M79">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\begin{aligned} M = N\cdot e. \end{aligned}$$\end{document}</tex-math><mml:math id="M80" display="block"><mml:mrow><mml:mtable><mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:mi>M</mml:mi><mml:mo>=</mml:mo><mml:mi>N</mml:mi><mml:mo>&#x000b7;</mml:mo><mml:mi>e</mml:mi><mml:mo>.</mml:mo></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:mrow></mml:math><graphic xlink:href="11527_2017_1112_Article_Equ7.gif" position="anchor"/></alternatives></disp-formula>Ten LVDTs of type HBM W1/2mm-T are mounted to the lateral surfaces of the concrete hinges, in order to measure changes of the notch mouth opening displacements of the lateral notches, see Fig.&#x000a0;<xref rid="Fig4" ref-type="fig">4</xref>. The measurement length of the displacement sensors, measured in loading direction, amounts to <inline-formula id="IEq40"><alternatives><tex-math id="M81">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\ell _\varepsilon =65\,\mathrm {mm}$$\end{document}</tex-math><mml:math id="M82"><mml:mrow><mml:msub><mml:mi>&#x02113;</mml:mi><mml:mi mathvariant="italic">&#x003b5;</mml:mi></mml:msub><mml:mo>=</mml:mo><mml:mn>65</mml:mn><mml:mspace width="0.166667em"/><mml:mi mathvariant="normal">mm</mml:mi></mml:mrow></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq40.gif"/></alternatives></inline-formula>. The LVDTs are arranged symmetrically in thickness direction with a sensor-to-sensor distance amounting to 80&#x000a0;mm. The measurement axis of each LVDT exhibits a normal distance of 22&#x000a0;mm to the lateral surface of the concrete hinge, i.e. opposite LVDTs exhibit a mutual distance which amounts to <inline-formula id="IEq41"><alternatives><tex-math id="M83">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\ell _{\varphi } =250\,\mathrm {mm}+2\cdot 22\,\mathrm {mm}=294\,\mathrm {mm}$$\end{document}</tex-math><mml:math id="M84"><mml:mrow><mml:msub><mml:mi>&#x02113;</mml:mi><mml:mi mathvariant="italic">&#x003c6;</mml:mi></mml:msub><mml:mo>=</mml:mo><mml:mn>250</mml:mn><mml:mspace width="0.166667em"/><mml:mi mathvariant="normal">mm</mml:mi><mml:mo>+</mml:mo><mml:mn>2</mml:mn><mml:mo>&#x000b7;</mml:mo><mml:mn>22</mml:mn><mml:mspace width="0.166667em"/><mml:mi mathvariant="normal">mm</mml:mi><mml:mo>=</mml:mo><mml:mn>294</mml:mn><mml:mspace width="0.166667em"/><mml:mi mathvariant="normal">mm</mml:mi></mml:mrow></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq41.gif"/></alternatives></inline-formula>.</p><p id="Par20">A Digital Image Correlation (DIC) system of type Dantec Dynamics Q&#x000a0;400, is used to observe tensile crack propagation along the notch roots of the front side and the back side notches. To this end, both notches are monitored with a pair of 5 megapixel cameras each. Application of two cameras per notch allows for recording three-dimensional displacement fields, whereby the in-plane displacements are of special interest. The observed field of view is approximately equal to 12&#x000a0;cm <inline-formula id="IEq42"><alternatives><tex-math id="M85">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\times $$\end{document}</tex-math><mml:math id="M86"><mml:mo>&#x000d7;</mml:mo></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq42.gif"/></alternatives></inline-formula> 10&#x000a0;cm. Fine speckle patterns are sprayed to the notch roots prior to testing, with a desired point size amounting to 2 to 3 pixels. A facet size of 21&#x000a0;pixel and grid spacing of 17&#x000a0;pixel are chosen, for further specifications of the DIC see Table&#x000a0;<xref rid="Tab2" ref-type="table">2</xref>.<fig id="Fig4"><label>Fig. 4</label><caption><p>Structural testing of concrete hinges up to service loads: Five Inductive Displacement Transducers are mounted on each lateral surface of the concrete hinges; two pairs of cameras of a Digital Image Correlation system are used to monitor tensile cracking at the notch roots of the front side and the back side notches (not shown); normal forces <italic>N</italic> are imposed in form of line loads, acting with eccentricity <italic>e</italic>, resulting in combined compression and bending, see also Eq.&#x000a0;(<xref rid="Equ7" ref-type="">7</xref>); temporary supports are removed during testing</p></caption><graphic xlink:href="11527_2017_1112_Fig4_HTML" id="MO11"/></fig>
+<table-wrap id="Tab2"><label>Table 2</label><caption><p>Specifications and settings used for the DIC measurements and evaluation, respectively</p></caption><table frame="hsides" rules="groups"><thead><tr><th align="left" colspan="2">Dantec Dynamics Q-400 ISTRA 4.4.2</th></tr></thead><tbody><tr><td align="left" colspan="2">Specifiations</td></tr><tr><td align="left">&#x000a0;Number of 5 megapixel cameras used</td><td align="left">
+<inline-formula id="IEq43"><alternatives><tex-math id="M87">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$2 \times 2$$\end{document}</tex-math><mml:math id="M88"><mml:mrow><mml:mn>2</mml:mn><mml:mo>&#x000d7;</mml:mo><mml:mn>2</mml:mn></mml:mrow></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq43.gif"/></alternatives></inline-formula>
+</td></tr><tr><td align="left">&#x000a0;Names of front side cameras</td><td align="left">Cam1/2</td></tr><tr><td align="left">&#x000a0;Names of back side cameras</td><td align="left">Cam3/4</td></tr><tr><td align="left">&#x000a0;Cam1-to-Cam2 distance</td><td align="left">60&#x000a0;cm</td></tr><tr><td align="left">&#x000a0;Cam3-to-Cam4 distance</td><td align="left">60&#x000a0;cm</td></tr><tr><td align="left">&#x000a0;Camera-to-specimen distance</td><td align="left">82&#x000a0;cm</td></tr><tr><td align="left">&#x000a0;Exposure Cam1/2</td><td align="left">Red light</td></tr><tr><td align="left">&#x000a0;Exposure Cam3/4</td><td align="left">Diffuse light</td></tr><tr><td align="left">&#x000a0;Facet size</td><td align="left">21&#x000a0;pixel</td></tr><tr><td align="left">&#x000a0;Grid spacing</td><td align="left">17&#x000a0;pixel</td></tr><tr><td align="left">&#x000a0;Object lens</td><td align="left">2.8/50</td></tr><tr><td align="left">&#x000a0;F-number</td><td align="left">5.6&#x02013;11</td></tr><tr><td align="left">&#x000a0;Shutter speed</td><td align="left">80&#x000a0;ms</td></tr><tr><td align="left" colspan="2">Settings for evaluation</td></tr><tr><td align="left">&#x000a0;Crack identification: upper threshold</td><td align="left">0.006 [&#x02013;]</td></tr><tr><td align="left">&#x000a0;Crack identification: lower threshold</td><td align="left">0.002 [&#x02013;]</td></tr><tr><td align="left">&#x000a0;Contour smoothing:</td><td align="left">Disabled</td></tr><tr><td align="left">&#x000a0;Displacement smoothing:</td><td align="left">Spline</td></tr><tr><td align="left">&#x000a0;&#x000a0;Grid reduction factor</td><td align="left">1</td></tr><tr><td align="left">&#x000a0;&#x000a0;Smoothness factor</td><td align="left">&#x02212;0.5</td></tr></tbody></table></table-wrap>
+</p></sec><sec id="Sec8"><title>Creep under centric compression (200&#x000a0;kN)</title><p id="Par21">Centric compression tests up to 200&#x000a0;kN are used to characterize the extensional stiffness of undamaged concrete hinges and their structural creep behavior under pure normal force (no bending). To this end, each of the three concrete hinges is installed into the testing machine, resting on temporary supports. After fine tuning the position and installing the deformation measurement equipment, loading is increased up to 4&#x000a0;kN. This allows for removing the temporary supports, because 4&#x000a0;kN loading is sufficient to keep the concrete hinge in the desired position (no tipping over). Reference readings of the deformation measurement system are taken. Finally, the loading is increased with a force rate amounting to 5&#x000a0;kN/s up to 200&#x000a0;kN. This loading is kept constant for 4&#x000a0;h, followed by complete unloading, using again the force rate of 5&#x000a0;kN/s.</p></sec><sec id="Sec9"><title>Bending and tensile cracking under short-term eccentric compression up to 200&#x000a0;kN</title><p id="Par22">Minutes-long eccentric compression tests are used to characterize (i) the bending stiffness of undamaged concrete hinges and (ii) the development of tensile cracking as a function of the eccentricity <italic>e</italic> and of the compressive normal force <italic>N</italic>. This requires a careful development of the test design described next.</p><p id="Par23">As for characterization of the <italic>undamaged</italic> bending stiffness of the investigated concrete hinges, a trade off must be found between (i) a <italic>large</italic> eccentricity, resulting in relatively large bending, see Eq.&#x000a0;(<xref rid="Equ7" ref-type="">7</xref>) and, hence, in relatively large rotation angles, as well as (ii) a <italic>small</italic> eccentricity, ensuring that bending-induced tensile stresses in the neck region remain smaller than the tensile strength of concrete. The latter cannot be directly measured in the present case, because the test design must be finished well before the specimens reach the testing age. Therefore, the tensile strength is estimated, based on the known compressive strength <inline-formula id="IEq44"><alternatives><tex-math id="M89">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$f_c$$\end{document}</tex-math><mml:math id="M90"><mml:msub><mml:mi>f</mml:mi><mml:mi>c</mml:mi></mml:msub></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq44.gif"/></alternatives></inline-formula> according to Eq.&#x000a0;(<xref rid="Equ2" ref-type="">2</xref>), using the following standard relation [<xref ref-type="bibr" rid="CR43">43</xref>]<disp-formula id="Equ8"><label>8</label><alternatives><tex-math id="M91">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\begin{aligned} f_t = -0.3\,{\text {MPa}}\cdot \left( \frac{f_c}{1\,{\mathrm {MPa}}}\right) ^{2/3} = -3.9\,{\text {MPa}}. \end{aligned}$$\end{document}</tex-math><mml:math id="M92" display="block"><mml:mrow><mml:mtable><mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:msub><mml:mi>f</mml:mi><mml:mi>t</mml:mi></mml:msub><mml:mo>=</mml:mo><mml:mo>-</mml:mo><mml:mn>0.3</mml:mn><mml:mspace width="0.166667em"/><mml:mtext>MPa</mml:mtext><mml:mo>&#x000b7;</mml:mo><mml:msup><mml:mfenced close=")" open="(" separators=""><mml:mfrac><mml:msub><mml:mi>f</mml:mi><mml:mi>c</mml:mi></mml:msub><mml:mrow><mml:mn>1</mml:mn><mml:mspace width="0.166667em"/><mml:mi mathvariant="normal">MPa</mml:mi></mml:mrow></mml:mfrac></mml:mfenced><mml:mrow><mml:mn>2</mml:mn><mml:mo stretchy="false">/</mml:mo><mml:mn>3</mml:mn></mml:mrow></mml:msup><mml:mo>=</mml:mo><mml:mo>-</mml:mo><mml:mn>3.9</mml:mn><mml:mspace width="0.166667em"/><mml:mtext>MPa</mml:mtext><mml:mo>.</mml:mo></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:mrow></mml:math><graphic xlink:href="11527_2017_1112_Article_Equ8.gif" position="anchor"/></alternatives></disp-formula>Two-dimensional plane strain Finite Element analyses of the investigated concrete hinges provide quantitative insight into the stress concentrations resulting from loading by a normal force <italic>N</italic> and by a bending moment <italic>M</italic>, respectively. Denoting the cross-sectional area of the neck as <inline-formula id="IEq45"><alternatives><tex-math id="M93">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$a\,b$$\end{document}</tex-math><mml:math id="M94"><mml:mrow><mml:mi>a</mml:mi><mml:mspace width="0.166667em"/><mml:mi>b</mml:mi></mml:mrow></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq45.gif"/></alternatives></inline-formula> and its beam theory-related elastic section modulus as <inline-formula id="IEq46"><alternatives><tex-math id="M95">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$a^2\,b/6$$\end{document}</tex-math><mml:math id="M96"><mml:mrow><mml:msup><mml:mi>a</mml:mi><mml:mn>2</mml:mn></mml:msup><mml:mspace width="0.166667em"/><mml:mi>b</mml:mi><mml:mo stretchy="false">/</mml:mo><mml:mn>6</mml:mn></mml:mrow></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq46.gif"/></alternatives></inline-formula>, the largest tensile stress in the neck region follows as<disp-formula id="Equ9"><label>9</label><alternatives><tex-math id="M97">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\begin{aligned} \max \sigma _{t} = 2.77\,\frac{N}{a\,b} - 2.00\,\frac{6\,M}{a^2\,b}, \end{aligned}$$\end{document}</tex-math><mml:math id="M98" display="block"><mml:mrow><mml:mtable><mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:mo movablelimits="true">max</mml:mo><mml:msub><mml:mi mathvariant="italic">&#x003c3;</mml:mi><mml:mi>t</mml:mi></mml:msub><mml:mo>=</mml:mo><mml:mn>2.77</mml:mn><mml:mspace width="0.166667em"/><mml:mfrac><mml:mi>N</mml:mi><mml:mrow><mml:mi>a</mml:mi><mml:mspace width="0.166667em"/><mml:mi>b</mml:mi></mml:mrow></mml:mfrac><mml:mo>-</mml:mo><mml:mn>2.00</mml:mn><mml:mspace width="0.166667em"/><mml:mfrac><mml:mrow><mml:mn>6</mml:mn><mml:mspace width="0.166667em"/><mml:mi>M</mml:mi></mml:mrow><mml:mrow><mml:msup><mml:mi>a</mml:mi><mml:mn>2</mml:mn></mml:msup><mml:mspace width="0.166667em"/><mml:mi>b</mml:mi></mml:mrow></mml:mfrac><mml:mo>,</mml:mo></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:mrow></mml:math><graphic xlink:href="11527_2017_1112_Article_Equ9.gif" position="anchor"/></alternatives></disp-formula>where 2.77 and 2.00 are numerically determined stress increase factors relative to the stress levels foreseen by beam theory. Specializing Eq.&#x000a0;(<xref rid="Equ9" ref-type="">9</xref>) for <italic>M</italic> according to Eq.&#x000a0;(<xref rid="Equ7" ref-type="">7</xref>), and the resulting expression for <inline-formula id="IEq47"><alternatives><tex-math id="M99">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$a=75\,\mathrm {mm}$$\end{document}</tex-math><mml:math id="M100"><mml:mrow><mml:mi>a</mml:mi><mml:mo>=</mml:mo><mml:mn>75</mml:mn><mml:mspace width="0.166667em"/><mml:mi mathvariant="normal">mm</mml:mi></mml:mrow></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq47.gif"/></alternatives></inline-formula>, for <inline-formula id="IEq48"><alternatives><tex-math id="M101">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$b = 300\,\mathrm {mm}$$\end{document}</tex-math><mml:math id="M102"><mml:mrow><mml:mi>b</mml:mi><mml:mo>=</mml:mo><mml:mn>300</mml:mn><mml:mspace width="0.166667em"/><mml:mi mathvariant="normal">mm</mml:mi></mml:mrow></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq48.gif"/></alternatives></inline-formula>, for the targeted maximum loading <inline-formula id="IEq49"><alternatives><tex-math id="M103">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$N=200\,\mathrm {kN}$$\end{document}</tex-math><mml:math id="M104"><mml:mrow><mml:mi>N</mml:mi><mml:mo>=</mml:mo><mml:mn>200</mml:mn><mml:mspace width="0.166667em"/><mml:mi mathvariant="normal">kN</mml:mi></mml:mrow></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq49.gif"/></alternatives></inline-formula>, and for an eccentricity <inline-formula id="IEq50"><alternatives><tex-math id="M105">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$e=20\,\mathrm {mm}$$\end{document}</tex-math><mml:math id="M106"><mml:mrow><mml:mi>e</mml:mi><mml:mo>=</mml:mo><mml:mn>20</mml:mn><mml:mspace width="0.166667em"/><mml:mi mathvariant="normal">mm</mml:mi></mml:mrow></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq50.gif"/></alternatives></inline-formula>, delivers a maximum tensile stress which is only slightly smaller than the tensile strength:<disp-formula id="Equ10"><label>10</label><alternatives><tex-math id="M107">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\begin{aligned} \max \sigma _{t} = -3.8\dot{2}\,{\text {MPa}}. \end{aligned}$$\end{document}</tex-math><mml:math id="M108" display="block"><mml:mrow><mml:mtable><mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:mo movablelimits="true">max</mml:mo><mml:msub><mml:mi mathvariant="italic">&#x003c3;</mml:mi><mml:mi>t</mml:mi></mml:msub><mml:mo>=</mml:mo><mml:mo>-</mml:mo><mml:mn>3.8</mml:mn><mml:mover accent="true"><mml:mn>2</mml:mn><mml:mo>&#x002d9;</mml:mo></mml:mover><mml:mspace width="0.166667em"/><mml:mtext>MPa</mml:mtext><mml:mo>.</mml:mo></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:mrow></mml:math><graphic xlink:href="11527_2017_1112_Article_Equ10.gif" position="anchor"/></alternatives></disp-formula>In other words, Finite Element analyses suggest that a normal force <inline-formula id="IEq51"><alternatives><tex-math id="M109">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$N=200\,\mathrm {kN}$$\end{document}</tex-math><mml:math id="M110"><mml:mrow><mml:mi>N</mml:mi><mml:mo>=</mml:mo><mml:mn>200</mml:mn><mml:mspace width="0.166667em"/><mml:mi mathvariant="normal">kN</mml:mi></mml:mrow></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq51.gif"/></alternatives></inline-formula>, acting with an eccentricity of <inline-formula id="IEq52"><alternatives><tex-math id="M111">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$e=20\,\mathrm {mm}$$\end{document}</tex-math><mml:math id="M112"><mml:mrow><mml:mi>e</mml:mi><mml:mo>=</mml:mo><mml:mn>20</mml:mn><mml:mspace width="0.166667em"/><mml:mi mathvariant="normal">mm</mml:mi></mml:mrow></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq52.gif"/></alternatives></inline-formula> on the herein investigate concrete hinges, can be expected to result in large tensile stresses, but small enough to keep the concrete hinges intact (no tensile cracking).</p><p id="Par24">As for studying the development of tensile cracking as a function of the eccentricity <italic>e</italic> and of the compressive normal force <italic>N</italic>, a maximum reasonable eccentricity needs to be defined. In this context, we consider the design guidelines of Leonhardt and Reimann [<xref ref-type="bibr" rid="CR5">5</xref>], which exhibit a limit of application reading as<disp-formula id="Equ11"><label>11</label><alternatives><tex-math id="M113">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\begin{aligned} \max e = a/3, \end{aligned}$$\end{document}</tex-math><mml:math id="M114" display="block"><mml:mrow><mml:mtable><mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:mo movablelimits="true">max</mml:mo><mml:mi>e</mml:mi><mml:mo>=</mml:mo><mml:mi>a</mml:mi><mml:mo stretchy="false">/</mml:mo><mml:mn>3</mml:mn><mml:mo>,</mml:mo></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:mrow></mml:math><graphic xlink:href="11527_2017_1112_Article_Equ11.gif" position="anchor"/></alternatives></disp-formula>because the guidelines envision (i) that for <inline-formula id="IEq53"><alternatives><tex-math id="M115">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$e=a/3$$\end{document}</tex-math><mml:math id="M116"><mml:mrow><mml:mi>e</mml:mi><mml:mo>=</mml:mo><mml:mi>a</mml:mi><mml:mo stretchy="false">/</mml:mo><mml:mn>3</mml:mn></mml:mrow></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq53.gif"/></alternatives></inline-formula> tensile cracking will extend across half of the neck width, i.e. right to the center of the concrete hinge, and (ii) that an even larger extension of tensile cracking shall be avoided. Specializing Eq.&#x000a0;(<xref rid="Equ11" ref-type="">11</xref>) for the neck width <inline-formula id="IEq54"><alternatives><tex-math id="M117">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$a=75\,\mathrm {mm}$$\end{document}</tex-math><mml:math id="M118"><mml:mrow><mml:mi>a</mml:mi><mml:mo>=</mml:mo><mml:mn>75</mml:mn><mml:mspace width="0.166667em"/><mml:mi mathvariant="normal">mm</mml:mi></mml:mrow></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq54.gif"/></alternatives></inline-formula> of the investigated concrete hinges delivers the maximum eccentricity to amount to <inline-formula id="IEq55"><alternatives><tex-math id="M119">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$e = 25\,\mathrm {mm}$$\end{document}</tex-math><mml:math id="M120"><mml:mrow><mml:mi>e</mml:mi><mml:mo>=</mml:mo><mml:mn>25</mml:mn><mml:mspace width="0.166667em"/><mml:mi mathvariant="normal">mm</mml:mi></mml:mrow></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq55.gif"/></alternatives></inline-formula>. This eccentricity is chosen for the load carrying capacity tests described in Sect.&#x000a0;<xref rid="Sec11" ref-type="sec">5</xref>.</p><p id="Par25">As for the tests with service loads <inline-formula id="IEq56"><alternatives><tex-math id="M121">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$N\le 200\,\mathrm {kN}$$\end{document}</tex-math><mml:math id="M122"><mml:mrow><mml:mi>N</mml:mi><mml:mo>&#x02264;</mml:mo><mml:mn>200</mml:mn><mml:mspace width="0.166667em"/><mml:mi mathvariant="normal">kN</mml:mi></mml:mrow></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq56.gif"/></alternatives></inline-formula>, three different eccentricities are chosen:<disp-formula id="Equ12"><label>12</label><alternatives><tex-math id="M123">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\begin{aligned} e \in \big \{20\,\mathrm {mm}\,, 22\,\mathrm {mm}\,, 24\,\mathrm {mm}\big \}. \end{aligned}$$\end{document}</tex-math><mml:math id="M124" display="block"><mml:mrow><mml:mtable><mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:mi>e</mml:mi><mml:mo>&#x02208;</mml:mo><mml:mrow><mml:mo maxsize="1.2em" minsize="1.2em" stretchy="true">{</mml:mo></mml:mrow><mml:mn>20</mml:mn><mml:mspace width="0.166667em"/><mml:mi mathvariant="normal">mm</mml:mi><mml:mspace width="0.166667em"/><mml:mo>,</mml:mo><mml:mn>22</mml:mn><mml:mspace width="0.166667em"/><mml:mi mathvariant="normal">mm</mml:mi><mml:mspace width="0.166667em"/><mml:mo>,</mml:mo><mml:mn>24</mml:mn><mml:mspace width="0.166667em"/><mml:mi mathvariant="normal">mm</mml:mi><mml:mrow><mml:mo maxsize="1.2em" minsize="1.2em" stretchy="true">}</mml:mo></mml:mrow><mml:mo>.</mml:mo></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:mrow></mml:math><graphic xlink:href="11527_2017_1112_Article_Equ12.gif" position="anchor"/></alternatives></disp-formula>Testing is started with the smallest eccentricity <inline-formula id="IEq57"><alternatives><tex-math id="M125">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$e=20\,\mathrm {mm}$$\end{document}</tex-math><mml:math id="M126"><mml:mrow><mml:mi>e</mml:mi><mml:mo>=</mml:mo><mml:mn>20</mml:mn><mml:mspace width="0.166667em"/><mml:mi mathvariant="normal">mm</mml:mi></mml:mrow></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq57.gif"/></alternatives></inline-formula>. One after the other, the concrete hinges are installed into the testing machine, resting on temporary supports. After fine tuning the position and installing the deformation measurement equipment, loading is increased up to 0.2&#x000a0;kN. This allows for removing the temporary supports, because 0.2&#x000a0;kN loading is sufficient to keep the concrete hinge in the desired position (no tipping over). Reference readings of the deformation measurement system are taken. Right before starting the test, the DIC system is activated to take pictures with a frequency amounting to 2&#x000a0;Hz. Loading is increased with a force rate amounting to 5&#x000a0;kN/s. Once 25&#x000a0;kN are reached, the loading process is stopped for a waiting period of 5&#x000a0;s, such that the DIC system takes 10 pictures at that load level. After that, loading is increased by another 25&#x000a0;kN, followed by the next waiting period. Step-by-step loading is increased up to a maximum load of 200&#x000a0;kN. After another waiting period of 5&#x000a0;s, the concrete hinge is completely unloaded with a force rate of 5&#x000a0;kN/s. After that, the eccentricity of the concrete hinge is increased to <inline-formula id="IEq58"><alternatives><tex-math id="M127">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$22\,\mathrm {mm}$$\end{document}</tex-math><mml:math id="M128"><mml:mrow><mml:mn>22</mml:mn><mml:mspace width="0.166667em"/><mml:mi mathvariant="normal">mm</mml:mi></mml:mrow></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq58.gif"/></alternatives></inline-formula> with the help of a special threaded bolt assembly, where turning of screws results in a controlled lateral displacement of the concrete hinge. The test protocol described above is repeated, followed by another increase of the eccentricity to <inline-formula id="IEq59"><alternatives><tex-math id="M129">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$24\,\mathrm {mm}$$\end{document}</tex-math><mml:math id="M130"><mml:mrow><mml:mn>24</mml:mn><mml:mspace width="0.166667em"/><mml:mi mathvariant="normal">mm</mml:mi></mml:mrow></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq59.gif"/></alternatives></inline-formula> and another repetition of stepwise loading up to <inline-formula id="IEq60"><alternatives><tex-math id="M131">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$200\,\mathrm {kN}$$\end{document}</tex-math><mml:math id="M132"><mml:mrow><mml:mn>200</mml:mn><mml:mspace width="0.166667em"/><mml:mi mathvariant="normal">kN</mml:mi></mml:mrow></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq60.gif"/></alternatives></inline-formula> and unloading. Thereafter, testing is continued with hours-long creep experiments, as described next.</p></sec><sec id="Sec10"><title>Creep under longer-term eccentric compression (175&#x000a0;kN)</title><p id="Par26">Hours-long eccentric compression tests are used to characterize (i) the structural creep behavior under combined compression and bending as well as (ii) the interaction between creep and bending-induced tensile crack propagation. With these two aims in mind, continued testing of concrete hinges was organized as follows.</p><p id="Par27">A 16 h-long creep test is carried out with eccentricity <inline-formula id="IEq61"><alternatives><tex-math id="M133">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$e=24\,\mathrm {mm}$$\end{document}</tex-math><mml:math id="M134"><mml:mrow><mml:mi>e</mml:mi><mml:mo>=</mml:mo><mml:mn>24</mml:mn><mml:mspace width="0.166667em"/><mml:mi mathvariant="normal">mm</mml:mi></mml:mrow></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq61.gif"/></alternatives></inline-formula> and a normal force <inline-formula id="IEq62"><alternatives><tex-math id="M135">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$N=175\,\mathrm {kN}$$\end{document}</tex-math><mml:math id="M136"><mml:mrow><mml:mi>N</mml:mi><mml:mo>=</mml:mo><mml:mn>175</mml:mn><mml:mspace width="0.166667em"/><mml:mi mathvariant="normal">kN</mml:mi></mml:mrow></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq62.gif"/></alternatives></inline-formula>. After installing the respective concrete hinge into the testing machine, fine tuning the position, installing the deformation measurement equipment, preliminary loading up to 0.2&#x000a0;kN, removal of the temporary supports, and taking reference readings of the deformation measurement system, loading is increased with a force rate amounting to 5&#x000a0;kN/s up to 175&#x000a0;kN, and this load level is kept constant for 16&#x000a0;h. During this creep test, the DIC system takes 1 picture every 15&#x000a0;min.</p></sec></sec><sec id="Sec11"><title>Structural testing of concrete hinges up to their load carrying capacity</title><p id="Par28">A second set of structural tests deals with the load carrying capacity of concrete hinges subjected to eccentric loads. These tests are carried out in order to characterize the relation between eccentric loading and rotation angle, up to structural failure.</p><sec id="Sec12"><title>Test setup and measurement equipment</title><p id="Par29">Concrete hinges are subjected, 40 days after production, to compressive line loads using a servo-hydraulic testing machine of type Schenk POZ 0367. The load carrying capacity tests are carried out with an eccentricity of <inline-formula id="IEq63"><alternatives><tex-math id="M137">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$e =a/3= 25\,\mathrm {mm}$$\end{document}</tex-math><mml:math id="M138"><mml:mrow><mml:mi>e</mml:mi><mml:mo>=</mml:mo><mml:mi>a</mml:mi><mml:mo stretchy="false">/</mml:mo><mml:mn>3</mml:mn><mml:mo>=</mml:mo><mml:mn>25</mml:mn><mml:mspace width="0.166667em"/><mml:mi mathvariant="normal">mm</mml:mi></mml:mrow></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq63.gif"/></alternatives></inline-formula>, which refers to the limit of application of the design guidelines of Leonhardt and Reimann [<xref ref-type="bibr" rid="CR5">5</xref>].</p><p id="Par30">Eight LVDTs of type HBM WI 10 are mounted to the lateral surfaces of the concrete hinges, in order to measure changes of the notch mouth opening displacements of the lateral notches. The measurement length in loading direction amounts to <inline-formula id="IEq64"><alternatives><tex-math id="M139">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\ell _\varepsilon ^\mathrm{LCC} =50\,\mathrm {mm}$$\end{document}</tex-math><mml:math id="M140"><mml:mrow><mml:msubsup><mml:mi>&#x02113;</mml:mi><mml:mi mathvariant="italic">&#x003b5;</mml:mi><mml:mi mathvariant="normal">LCC</mml:mi></mml:msubsup><mml:mo>=</mml:mo><mml:mn>50</mml:mn><mml:mspace width="0.166667em"/><mml:mi mathvariant="normal">mm</mml:mi></mml:mrow></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq64.gif"/></alternatives></inline-formula>. The LVDTs are arranged symmetrically in thickness direction with a sensor-to-sensor distance amounting to 100&#x000a0;mm. The measurement axis of each LVDT exhibits a normal distance of 35&#x000a0;mm to the lateral surface of the concrete hinge, i.e. opposite LVDTs exhibit a mutual distance which amounts to <inline-formula id="IEq65"><alternatives><tex-math id="M141">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\ell _{\varphi }^\mathrm{LCC} = 250\,\mathrm {mm}+2\cdot 35\,\mathrm {mm}= 320\,\mathrm {mm}$$\end{document}</tex-math><mml:math id="M142"><mml:mrow><mml:msubsup><mml:mi>&#x02113;</mml:mi><mml:mrow><mml:mi mathvariant="italic">&#x003c6;</mml:mi></mml:mrow><mml:mi mathvariant="normal">LCC</mml:mi></mml:msubsup><mml:mo>=</mml:mo><mml:mn>250</mml:mn><mml:mspace width="0.166667em"/><mml:mi mathvariant="normal">mm</mml:mi><mml:mo>+</mml:mo><mml:mn>2</mml:mn><mml:mo>&#x000b7;</mml:mo><mml:mn>35</mml:mn><mml:mspace width="0.166667em"/><mml:mi mathvariant="normal">mm</mml:mi><mml:mo>=</mml:mo><mml:mn>320</mml:mn><mml:mspace width="0.166667em"/><mml:mi mathvariant="normal">mm</mml:mi></mml:mrow></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq65.gif"/></alternatives></inline-formula>.</p></sec><sec id="Sec13"><title>Load carrying capacity tests</title><p id="Par31">In eccentric compression tests (<inline-formula id="IEq66"><alternatives><tex-math id="M143">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$e = 25\,\mathrm {mm}$$\end{document}</tex-math><mml:math id="M144"><mml:mrow><mml:mi>e</mml:mi><mml:mo>=</mml:mo><mml:mn>25</mml:mn><mml:mspace width="0.166667em"/><mml:mi mathvariant="normal">mm</mml:mi></mml:mrow></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq66.gif"/></alternatives></inline-formula>) the compressive normal force <italic>N</italic> is increased up to the load carrying capacity. After installing the respective concrete hinge into the testing machine, fine tuning the position, installing the deformation measurement equipment, preliminary loading up to 1&#x000a0;kN, removal of the temporary supports, and taking reference readings of the deformation measurement system, the line-load is increased. This is carried out by manually increasing the displacement of the load application system, with a target rate amounting to 0.2&#x000a0;mm/min. Once 100&#x000a0;kN is reached, the loading process is stopped for 1&#x000a0;min, in order to quantify the time-dependent structural response at that load level. After that, loading is increased by another 100&#x000a0;kN, followed by the next waiting period. Step by step loading is increased up to the load carrying capacity. The latter is assumed to be reached once the rotation angle increases significantly while no significant increase of the normal force is observed. Unloading is performed by using again the rate of 0.2&#x000a0;mm/min. The duration of one test is approximately 30&#x000a0;min.</p></sec></sec><sec id="Sec14"><title>Test evaluation and results</title><sec id="Sec15"><title>Postprocessing of LVDT measurements</title><p id="Par32">Individual LVDT readings are used to quantify the shortening and the rotation angle of the neck region. To this end, readings on both sides (left and right) are averaged<disp-formula id="Equ13"><label>13</label><alternatives><tex-math id="M145">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\begin{aligned} \Delta l_\mathrm{left}&#x00026;=  {} \frac{1}{n_s} \sum \limits _{i=1}^{n_s} \Delta l_{\mathrm{left},i}(t) \end{aligned}$$\end{document}</tex-math><mml:math id="M146" display="block"><mml:mrow><mml:mtable><mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:mi mathvariant="normal">&#x00394;</mml:mi><mml:msub><mml:mi>l</mml:mi><mml:mi mathvariant="normal">left</mml:mi></mml:msub></mml:mrow></mml:mtd><mml:mtd columnalign="left"><mml:mrow><mml:mo>=</mml:mo><mml:mrow/><mml:mfrac><mml:mn>1</mml:mn><mml:msub><mml:mi>n</mml:mi><mml:mi>s</mml:mi></mml:msub></mml:mfrac><mml:munderover><mml:mo movablelimits="false">&#x02211;</mml:mo><mml:mrow><mml:mi>i</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:msub><mml:mi>n</mml:mi><mml:mi>s</mml:mi></mml:msub></mml:munderover><mml:mi mathvariant="normal">&#x00394;</mml:mi><mml:msub><mml:mi>l</mml:mi><mml:mrow><mml:mi mathvariant="normal">left</mml:mi><mml:mo>,</mml:mo><mml:mi>i</mml:mi></mml:mrow></mml:msub><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mi>t</mml:mi><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:mrow></mml:math><graphic xlink:href="11527_2017_1112_Article_Equ13.gif" position="anchor"/></alternatives></disp-formula>
+<disp-formula id="Equ14"><label>14</label><alternatives><tex-math id="M147">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\begin{aligned} \Delta l_\mathrm{right}&#x00026;=  {} \frac{1}{n_s} \sum \limits _{i=1}^{n_s} \Delta l_{\mathrm{right},i}(t) \end{aligned}$$\end{document}</tex-math><mml:math id="M148" display="block"><mml:mrow><mml:mtable><mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:mi mathvariant="normal">&#x00394;</mml:mi><mml:msub><mml:mi>l</mml:mi><mml:mi mathvariant="normal">right</mml:mi></mml:msub></mml:mrow></mml:mtd><mml:mtd columnalign="left"><mml:mrow><mml:mo>=</mml:mo><mml:mrow/><mml:mfrac><mml:mn>1</mml:mn><mml:msub><mml:mi>n</mml:mi><mml:mi>s</mml:mi></mml:msub></mml:mfrac><mml:munderover><mml:mo movablelimits="false">&#x02211;</mml:mo><mml:mrow><mml:mi>i</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:msub><mml:mi>n</mml:mi><mml:mi>s</mml:mi></mml:msub></mml:munderover><mml:mi mathvariant="normal">&#x00394;</mml:mi><mml:msub><mml:mi>l</mml:mi><mml:mrow><mml:mi mathvariant="normal">right</mml:mi><mml:mo>,</mml:mo><mml:mi>i</mml:mi></mml:mrow></mml:msub><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mi>t</mml:mi><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:mrow></mml:math><graphic xlink:href="11527_2017_1112_Article_Equ14.gif" position="anchor"/></alternatives></disp-formula>where <inline-formula id="IEq67"><alternatives><tex-math id="M149">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$n_s$$\end{document}</tex-math><mml:math id="M150"><mml:msub><mml:mi>n</mml:mi><mml:mi>s</mml:mi></mml:msub></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq67.gif"/></alternatives></inline-formula> denotes the number of sensors mounted on each side of the concrete hinges.<xref ref-type="fn" rid="Fn1">1</xref> The shortening of the neck region, <inline-formula id="IEq70"><alternatives><tex-math id="M151">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\Delta l$$\end{document}</tex-math><mml:math id="M152"><mml:mrow><mml:mi mathvariant="normal">&#x00394;</mml:mi><mml:mi>l</mml:mi></mml:mrow></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq70.gif"/></alternatives></inline-formula>, is quantified as<disp-formula id="Equ15"><label>15</label><alternatives><tex-math id="M153">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\begin{aligned} \Delta l = \frac{\Delta l_\mathrm{left}+\Delta l_\mathrm{right}}{2} \end{aligned}$$\end{document}</tex-math><mml:math id="M154" display="block"><mml:mrow><mml:mtable><mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:mi mathvariant="normal">&#x00394;</mml:mi><mml:mi>l</mml:mi><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:mi mathvariant="normal">&#x00394;</mml:mi><mml:msub><mml:mi>l</mml:mi><mml:mi mathvariant="normal">left</mml:mi></mml:msub><mml:mo>+</mml:mo><mml:mi mathvariant="normal">&#x00394;</mml:mi><mml:msub><mml:mi>l</mml:mi><mml:mi mathvariant="normal">right</mml:mi></mml:msub></mml:mrow><mml:mn>2</mml:mn></mml:mfrac></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:mrow></mml:math><graphic xlink:href="11527_2017_1112_Article_Equ15.gif" position="anchor"/></alternatives></disp-formula>and the rotation angle as<disp-formula id="Equ16"><label>16</label><alternatives><tex-math id="M155">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\begin{aligned} \Delta \varphi = \left| \frac{\Delta l_\mathrm{left}-\Delta l_\mathrm{right}}{\ell _{\varphi }}\right| \end{aligned}$$\end{document}</tex-math><mml:math id="M156" display="block"><mml:mrow><mml:mtable><mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:mi mathvariant="normal">&#x00394;</mml:mi><mml:mi mathvariant="italic">&#x003c6;</mml:mi><mml:mo>=</mml:mo><mml:mfenced close="|" open="|" separators=""><mml:mfrac><mml:mrow><mml:mi mathvariant="normal">&#x00394;</mml:mi><mml:msub><mml:mi>l</mml:mi><mml:mi mathvariant="normal">left</mml:mi></mml:msub><mml:mo>-</mml:mo><mml:mi mathvariant="normal">&#x00394;</mml:mi><mml:msub><mml:mi>l</mml:mi><mml:mi mathvariant="normal">right</mml:mi></mml:msub></mml:mrow><mml:msub><mml:mi>&#x02113;</mml:mi><mml:mi mathvariant="italic">&#x003c6;</mml:mi></mml:msub></mml:mfrac></mml:mfenced></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:mrow></mml:math><graphic xlink:href="11527_2017_1112_Article_Equ16.gif" position="anchor"/></alternatives></disp-formula>where <inline-formula id="IEq71"><alternatives><tex-math id="M157">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\ell _{\varphi }$$\end{document}</tex-math><mml:math id="M158"><mml:msub><mml:mi>&#x02113;</mml:mi><mml:mi mathvariant="italic">&#x003c6;</mml:mi></mml:msub></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq71.gif"/></alternatives></inline-formula> denotes the distance of opposite LVDTs, see Sects.&#x000a0;<xref rid="Sec7" ref-type="sec">4.1</xref> and&#x000a0;<xref rid="Sec12" ref-type="sec">5.1</xref>.</p></sec><sec id="Sec16"><title>Material creep tests</title><p id="Par34">The five creep tests performed under <inline-formula id="IEq72"><alternatives><tex-math id="M159">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\approx 20$$\end{document}</tex-math><mml:math id="M160"><mml:mrow><mml:mo>&#x02248;</mml:mo><mml:mn>20</mml:mn></mml:mrow></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq72.gif"/></alternatives></inline-formula>&#x000a0;% of the compressive strength yield creep strain evolutions reminiscent of a power-law, see Fig.&#x000a0;<xref rid="Fig5" ref-type="fig">5</xref>. Three out of five tests delivered virtually the same creep response, framed by the results of the other two tests. This indicates a satisfactory reproducibility of the experiments.<fig id="Fig5"><label>Fig. 5</label><caption><p>Evolution of creep strains of concrete under constant load (<inline-formula id="IEq73"><alternatives><tex-math id="M161">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$0.2\cdot f_c$$\end{document}</tex-math><mml:math id="M162"><mml:mrow><mml:mn>0.2</mml:mn><mml:mo>&#x000b7;</mml:mo><mml:msub><mml:mi>f</mml:mi><mml:mi>c</mml:mi></mml:msub></mml:mrow></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq73.gif"/></alternatives></inline-formula>): results from testing of five plain concrete specimens</p></caption><graphic xlink:href="11527_2017_1112_Fig5_HTML" id="MO21"/></fig>
+</p></sec><sec id="Sec17"><title>Centric compression of concrete hinges (200&#x000a0;kN)</title><p id="Par35">All three concrete hinges showed virtually the same behavior during the creep tests. The force-shortening relationships during 40&#x000a0;s-long loading are practically linear. The shortening of the neck, just after arriving at 200&#x000a0;kN, amounts to <inline-formula id="IEq74"><alternatives><tex-math id="M163">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\approx 35\,\upmu $$\end{document}</tex-math><mml:math id="M164"><mml:mrow><mml:mo>&#x02248;</mml:mo><mml:mn>35</mml:mn><mml:mspace width="0.166667em"/><mml:mi mathvariant="normal">&#x003bc;</mml:mi></mml:mrow></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq74.gif"/></alternatives></inline-formula>m, see the circles in Fig.&#x000a0;<xref rid="Fig6" ref-type="fig">6</xref>. During the subsequent 4&#x000a0;h-long creep period, the shortening increases nonlinearly by some 20&#x000a0;%, again reminiscent of a power-law creep evolution, see Fig.&#x000a0;<xref rid="Fig6" ref-type="fig">6</xref>.<fig id="Fig6"><label>Fig. 6</label><caption><p>Measured shortenings of the neck regions of three concrete hinges as a function of time; loading is increased with a force rate of 5&#x000a0;kN/s up to 200&#x000a0;kN and kept constant thereafter, demonstrating structural creep under centric compression</p></caption><graphic xlink:href="11527_2017_1112_Fig6_HTML" id="MO22"/></fig>
+</p></sec><sec id="Sec18"><title>Bending stiffness of concrete hinges and crack propagation during short-term eccentric compression tests up to 200&#x000a0;kN</title><p id="Par36">Increasing eccentric loading in steps of 25&#x000a0;kN and interrupting the loading process for 5&#x000a0;s at each completed loading step, demonstrates that concrete hinges are very creep active even under small degrees of utilization (relative to the load carrying capacity), see the visible load plateaus highlighted in red color in Fig.&#x000a0;<xref rid="Fig7" ref-type="fig">7</xref>. Subtracting rotation angles developing during the 5&#x000a0;s waiting periods from the total measurements, would result in rotation angles that increase virtually linearly with increasing loading, with a slope that decreases with increasing eccentricity.<fig id="Fig7"><label>Fig. 7</label><caption><p>Measured rotation angles of three concrete hinges as a function of eccentricity and loading; loading is increased with a force rate of 5&#x000a0;kN/s and held constant every 25&#x000a0;kN for 10&#x000a0;s; creep deformation developing during these intermediate load plateaus are highlighted in red color. (Color figure online)</p></caption><graphic xlink:href="11527_2017_1112_Fig7_HTML" id="MO23"/></fig>
+</p><p id="Par37">When it comes to identification of crack length at the different load plateaus, we consider a region to be cracked, if the maximum strain in loading direction is larger than a threshold. Definition of the latter is a challenging task given the small strain amplitudes before tensile cracking. We here defined an upper and a lower threshold which are expected to be bounds containing the real crack initiation strain, see Table&#x000a0;<xref rid="Tab2" ref-type="table">2</xref>. Already with the first eccentricity, nominally amounting to 20&#x000a0;mm, first cracks developed at load levels amounting to 175 and 200&#x000a0;kN, see the triangles in Fig.&#x000a0;<xref rid="Fig8" ref-type="fig">8</xref>.<xref ref-type="fn" rid="Fn2">2</xref> After unloading, the eccentricity was increased by nominally 2&#x000a0;mm. Since DIC allows for quantifying rigid body motions, the actual lateral movement could be shown to be slightly larger, i.e. 2.13&#x000a0;mm for concrete hinge 1. When reloading with the increased eccentricity to the first intermediate load level of 25&#x000a0;kN, the already existing crack opened visibly. Crack propagation was observed for loading beyond 100&#x000a0;kN, see the circles in Fig.&#x000a0;<xref rid="Fig8" ref-type="fig">8</xref>. Similar observations were made also with the third eccentricity and the final crack length amounted to some 20% of the neck width, see the squares in Fig.&#x000a0;<xref rid="Fig8" ref-type="fig">8</xref>.<fig id="Fig8"><label>Fig. 8</label><caption><p>Measured average crack length (=mean of front-side and back-side crack length) of the concrete hinge 1 determined from DIC with settings according to Table&#x000a0;<xref rid="Tab2" ref-type="table">2</xref>, with nominal eccentricities of 20, 22, and 24&#x000a0;mm, as well as loading up to 200&#x000a0;kN</p></caption><graphic xlink:href="11527_2017_1112_Fig8_HTML" id="MO24"/></fig>
+</p></sec><sec id="Sec19"><title>Creep and tensile cracking of concrete hinges during longer-term eccentric compression (175&#x000a0;kN)</title><p id="Par39">All three concrete hinges showed virtually the same behavior during the eccentric creep tests. The relationships between the eccentric force and the rotation angle are practically linear during the loading period amounting to 35&#x000a0;s. The rotation angle of the neck, just after arriving at 175&#x000a0;kN, amounts to <inline-formula id="IEq75"><alternatives><tex-math id="M165">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\approx \,0.9$$\end{document}</tex-math><mml:math id="M166"><mml:mrow><mml:mo>&#x02248;</mml:mo><mml:mspace width="0.166667em"/><mml:mn>0.9</mml:mn></mml:mrow></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq75.gif"/></alternatives></inline-formula>&#x000a0;mrad, see the circles in Fig.&#x000a0;<xref rid="Fig9" ref-type="fig">9</xref>. During the subsequent 16&#x000a0;h-long sustained eccentric loading, the rotation angle increases nonlinearly by around 50%, again reminiscent of a power-law creep evolution, see Fig.&#x000a0;<xref rid="Fig9" ref-type="fig">9</xref>.<fig id="Fig9"><label>Fig. 9</label><caption><p>Measured rotation angles of the neck regions of three concrete hinges as a function of time; loading is increased with a force rate of 5&#x000a0;kN/s up to 175&#x000a0;kN and kept constant thereafter, demonstrating structural creep under eccentric load (<inline-formula id="IEq76"><alternatives><tex-math id="M167">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$e=24$$\end{document}</tex-math><mml:math id="M168"><mml:mrow><mml:mi>e</mml:mi><mml:mo>=</mml:mo><mml:mn>24</mml:mn></mml:mrow></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq76.gif"/></alternatives></inline-formula>&#x000a0;mm, <inline-formula id="IEq77"><alternatives><tex-math id="M169">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$N=175$$\end{document}</tex-math><mml:math id="M170"><mml:mrow><mml:mi>N</mml:mi><mml:mo>=</mml:mo><mml:mn>175</mml:mn></mml:mrow></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq77.gif"/></alternatives></inline-formula>&#x000a0;kN)</p></caption><graphic xlink:href="11527_2017_1112_Fig9_HTML" id="MO25"/></fig>
+</p><p id="Par40">The behavior of the pre-existing crack under constant eccentric loading (<inline-formula id="IEq78"><alternatives><tex-math id="M171">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$e=24$$\end{document}</tex-math><mml:math id="M172"><mml:mrow><mml:mi>e</mml:mi><mml:mo>=</mml:mo><mml:mn>24</mml:mn></mml:mrow></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq78.gif"/></alternatives></inline-formula>&#x000a0;mm) is quantified based on DIC images. Just after loading up to 175&#x000a0;kN, the visible cracks are identical to the final cracks observed during short-term eccentric compression tests up to 200&#x000a0;kN. Comparing these initial crack images with DIC images taken 16&#x000a0;h later, it is concluded that the crack mouth opening increases by 52&#x000a0;% (concrete hinge 1) and by 77&#x000a0;% (concrete hinge&#x000a0;3), and that the crack length increases by 16&#x000a0;% (concrete hinge 1) and by 5&#x000a0;% (concrete hinge 3), see Fig.&#x000a0;<xref rid="Fig10" ref-type="fig">10</xref>. It is noteworthy that the finally obtained crack lengths are by 35&#x000a0;% (concrete hinge 1) and by 32&#x000a0;% (concrete hinge 3) larger than the crack lengths obtained during short-term loading to 175&#x000a0;kN (Fig.&#x000a0;<xref rid="Fig8" ref-type="fig">8</xref>), i.e. up to the load level of the long-term creep experiment.<fig id="Fig10"><label>Fig. 10</label><caption><p>Crack behavior during structural creep at the <italic>back</italic> side notch of concrete hinge 1; eccentricity <inline-formula id="IEq79"><alternatives><tex-math id="M173">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$e=24$$\end{document}</tex-math><mml:math id="M174"><mml:mrow><mml:mi>e</mml:mi><mml:mo>=</mml:mo><mml:mn>24</mml:mn></mml:mrow></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq79.gif"/></alternatives></inline-formula>&#x000a0;mm, load <inline-formula id="IEq80"><alternatives><tex-math id="M175">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$N=175$$\end{document}</tex-math><mml:math id="M176"><mml:mrow><mml:mi>N</mml:mi><mml:mo>=</mml:mo><mml:mn>175</mml:mn></mml:mrow></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq80.gif"/></alternatives></inline-formula>&#x000a0;kN: strain field in load direction; right after completed load application (time= 0&#x000a0;h) and 16&#x000a0;h later (time= 16&#x000a0;h)</p></caption><graphic xlink:href="11527_2017_1112_Fig10_HTML" id="MO26"/></fig>
+</p></sec><sec id="Sec20"><title>Load carrying capacity of concrete hinges</title><p id="Par41">The reached load carrying capacities of the three tested concrete hinges range from 653 to 750&#x000a0;kN, see Fig.&#x000a0;<xref rid="Fig11" ref-type="fig">11</xref>. The concrete hinges failed in a pronounced ductile fashion, i.e. rotation angles increased for more than 20&#x000a0;mrad while the external loading was practically constant. When interrupting the loading process all 100&#x000a0;kN for 1&#x000a0;min by freezing the piston displacement, the viscoelastic behavior of concrete resulted in increasing rotation and decreasing normal forces, see the red parts of the graphs in Fig.&#x000a0;<xref rid="Fig11" ref-type="fig">11</xref>. Removing these readings with the aim to obtain graphs which are at least to a certain extent representative for continuous load increase up to the load carrying capacity, would result in quite smooth force-rotation diagrams, indicating a satisfactory reproducibility of the tests.<fig id="Fig11"><label>Fig. 11</label><caption><p>Measured rotation angles of the neck regions of three concrete hinges as a function of eccentric loading (<inline-formula id="IEq81"><alternatives><tex-math id="M177">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$e=25$$\end{document}</tex-math><mml:math id="M178"><mml:mrow><mml:mi>e</mml:mi><mml:mo>=</mml:mo><mml:mn>25</mml:mn></mml:mrow></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq81.gif"/></alternatives></inline-formula>&#x000a0;mm) up to the load carrying capacity; viscoelastic deformation developing during short-term test interruptions are highlighted in red color. (Color figure online)</p></caption><graphic xlink:href="11527_2017_1112_Fig11_HTML" id="MO27"/></fig>
+</p></sec></sec><sec id="Sec21"><title>Discussion</title><p id="Par42">The following discussion refers to curing and testing conditions (Sect.&#x000a0;<xref rid="Sec22" ref-type="sec">7.1</xref>), to lessons learned from the numerical re-analysis of the bearing capacity tests (Sect.&#x000a0;<xref rid="Sec23" ref-type="sec">7.2</xref>), to the interaction between creep and bending-induced tensile cracking of initially monolithic concrete hinges (Sect.&#x000a0;<xref rid="Sec24" ref-type="sec">7.3</xref>), to implications concerning design guidelines (Sect.&#x000a0;<xref rid="Sec25" ref-type="sec">7.4</xref>), and to the time-dependent behavior of concrete hinges in integral bridge construction (Sect.&#x000a0;<xref rid="Sec26" ref-type="sec">7.5</xref>).</p><sec id="Sec22"><title>Curing and test conditions</title><p id="Par44">In order to simulate a practical real-life application, all tested specimens were air-cured after formwork removal. Drying resulted in moisture gradients and potentially even in a premature stopping of the hydration process in close-to-surface subvolumes of the specimens. In addition, drying shrinkage strains and autogeneous shrinkage strains of the concrete hinges were restrained by the rebars and the steel plates. Therefore, self-equilibrated stresses (tension in concrete and compression in the steel rebars) developed inside the concrete hinges even before mechanical loading. The tensile stresses may have well resulted in damage of concrete, in form of microcracking. This effect was already pointed out in 1965 by Leonhardt and Reimann [<xref ref-type="bibr" rid="CR5">5</xref>] for concrete hinges with reinforced necks. A quantitative assessment of pre-existing damage of the tested concrete hinges is provided by the elasto-brittle numerical re-analysis of the bearing capacity tests described in [<xref ref-type="bibr" rid="CR47">47</xref>], see Sect.&#x000a0;<xref rid="Sec23" ref-type="sec">7.2</xref>.</p></sec><sec id="Sec23"><title>Lessons learned from the numerical re-analysis of the bearing capacity tests</title><p id="Par45">In [<xref ref-type="bibr" rid="CR47">47</xref>], elasto-brittle numerical simulations (carried out with a commercial Finite Element software for reinforced concrete structures) were combined with a multiscale model for elasticity and tensile strength of concrete. The latter model uses Budiansky and O&#x02019;Connel&#x02019;s crack density parameter as the damage variable. Setting it equal to 0.065 allowed for simulating the measured behavior (Figs.&#x000a0;<xref rid="Fig7" ref-type="fig">7</xref>, <xref rid="Fig11" ref-type="fig">11</xref>) very reliably. The corresponding values of the damaged Young&#x02019;s modulus of concrete, <inline-formula id="IEq82"><alternatives><tex-math id="M179">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$E_\mathrm{dam}$$\end{document}</tex-math><mml:math id="M180"><mml:msub><mml:mi>E</mml:mi><mml:mi mathvariant="normal">dam</mml:mi></mml:msub></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq82.gif"/></alternatives></inline-formula>, and the damaged tensile strength of the material, <inline-formula id="IEq83"><alternatives><tex-math id="M181">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$f_{t,{\mathrm{dam}}}$$\end{document}</tex-math><mml:math id="M182"><mml:msub><mml:mi>f</mml:mi><mml:mrow><mml:mi>t</mml:mi><mml:mo>,</mml:mo><mml:mi mathvariant="normal">dam</mml:mi></mml:mrow></mml:msub></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq83.gif"/></alternatives></inline-formula>, amount to [<xref ref-type="bibr" rid="CR47">47</xref>]<disp-formula id="Equ17"><label>17</label><alternatives><tex-math id="M183">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\begin{aligned} E_{\mathrm{dam}} = 26.07\,{\text {GPa}}, \quad f_{t,{\mathrm{dam}}} = -3.4\,{\text {MPa}}. \end{aligned}$$\end{document}</tex-math><mml:math id="M184" display="block"><mml:mrow><mml:mtable><mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:msub><mml:mi>E</mml:mi><mml:mi mathvariant="normal">dam</mml:mi></mml:msub><mml:mo>=</mml:mo><mml:mn>26.07</mml:mn><mml:mspace width="0.166667em"/><mml:mtext>GPa</mml:mtext><mml:mo>,</mml:mo><mml:mspace width="1em"/><mml:msub><mml:mi>f</mml:mi><mml:mrow><mml:mi>t</mml:mi><mml:mo>,</mml:mo><mml:mi mathvariant="normal">dam</mml:mi></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:mo>-</mml:mo><mml:mn>3.4</mml:mn><mml:mspace width="0.166667em"/><mml:mtext>MPa</mml:mtext><mml:mo>.</mml:mo></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:mrow></mml:math><graphic xlink:href="11527_2017_1112_Article_Equ17.gif" position="anchor"/></alternatives></disp-formula>Notably, the two mechanical properties listed in Eq.&#x000a0;(<xref rid="Equ17" ref-type="">17</xref>) were found in [<xref ref-type="bibr" rid="CR47">47</xref>] by fitting. This provides the motivation to check their plausibility based on research results presented herein. Checking is started with the tensile strength value <inline-formula id="IEq84"><alternatives><tex-math id="M185">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$f_{t,{\mathrm{dam}}}$$\end{document}</tex-math><mml:math id="M186"><mml:msub><mml:mi>f</mml:mi><mml:mrow><mml:mi>t</mml:mi><mml:mo>,</mml:mo><mml:mi mathvariant="normal">dam</mml:mi></mml:mrow></mml:msub></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq84.gif"/></alternatives></inline-formula>.</p><p id="Par46">During the short term loading experiments carried out with eccentricity <inline-formula id="IEq85"><alternatives><tex-math id="M187">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$e=20\,\mathrm {mm}$$\end{document}</tex-math><mml:math id="M188"><mml:mrow><mml:mi>e</mml:mi><mml:mo>=</mml:mo><mml:mn>20</mml:mn><mml:mspace width="0.166667em"/><mml:mi mathvariant="normal">mm</mml:mi></mml:mrow></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq85.gif"/></alternatives></inline-formula>, cracking of the concrete hinges initiated at an axial force <inline-formula id="IEq86"><alternatives><tex-math id="M189">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$N=175\,\mathrm {kN}$$\end{document}</tex-math><mml:math id="M190"><mml:mrow><mml:mi>N</mml:mi><mml:mo>=</mml:mo><mml:mn>175</mml:mn><mml:mspace width="0.166667em"/><mml:mi mathvariant="normal">kN</mml:mi></mml:mrow></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq86.gif"/></alternatives></inline-formula>, see Fig.&#x000a0;<xref rid="Fig8" ref-type="fig">8</xref>. Inserting these values together with <inline-formula id="IEq87"><alternatives><tex-math id="M191">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$M=N\cdot e$$\end{document}</tex-math><mml:math id="M192"><mml:mrow><mml:mi>M</mml:mi><mml:mo>=</mml:mo><mml:mi>N</mml:mi><mml:mo>&#x000b7;</mml:mo><mml:mi>e</mml:mi></mml:mrow></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq87.gif"/></alternatives></inline-formula> as well as with <inline-formula id="IEq88"><alternatives><tex-math id="M193">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$a=75\,\mathrm {mm}$$\end{document}</tex-math><mml:math id="M194"><mml:mrow><mml:mi>a</mml:mi><mml:mo>=</mml:mo><mml:mn>75</mml:mn><mml:mspace width="0.166667em"/><mml:mi mathvariant="normal">mm</mml:mi></mml:mrow></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq88.gif"/></alternatives></inline-formula> and <inline-formula id="IEq89"><alternatives><tex-math id="M195">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$b = 300\,\mathrm {mm}$$\end{document}</tex-math><mml:math id="M196"><mml:mrow><mml:mi>b</mml:mi><mml:mo>=</mml:mo><mml:mn>300</mml:mn><mml:mspace width="0.166667em"/><mml:mi mathvariant="normal">mm</mml:mi></mml:mrow></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq89.gif"/></alternatives></inline-formula> into Eq.&#x000a0;(<xref rid="Equ9" ref-type="">9</xref>) delivers an experimentally-derived estimate of the actual tensile strength amounting to <inline-formula id="IEq90"><alternatives><tex-math id="M197">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$-3.3\,{\text {MPa}}$$\end{document}</tex-math><mml:math id="M198"><mml:mrow><mml:mo>-</mml:mo><mml:mn>3.3</mml:mn><mml:mspace width="0.166667em"/><mml:mtext>MPa</mml:mtext></mml:mrow></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq90.gif"/></alternatives></inline-formula>. This is only slightly different compared to the value found in [<xref ref-type="bibr" rid="CR47">47</xref>] and, hence, corroborates the value of <inline-formula id="IEq91"><alternatives><tex-math id="M199">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$f_{t,{\mathrm{dam}}}$$\end{document}</tex-math><mml:math id="M200"><mml:msub><mml:mi>f</mml:mi><mml:mrow><mml:mi>t</mml:mi><mml:mo>,</mml:mo><mml:mi mathvariant="normal">dam</mml:mi></mml:mrow></mml:msub></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq91.gif"/></alternatives></inline-formula> given in Eq.&#x000a0;(<xref rid="Equ17" ref-type="">17</xref>). The plausibility of the value of the damaged Young&#x02019;s modulus of concrete, <inline-formula id="IEq92"><alternatives><tex-math id="M201">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$E_\mathrm{dam}$$\end{document}</tex-math><mml:math id="M202"><mml:msub><mml:mi>E</mml:mi><mml:mi mathvariant="normal">dam</mml:mi></mml:msub></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq92.gif"/></alternatives></inline-formula>, will be checked in the following Sect.&#x000a0;<xref rid="Sec24" ref-type="sec">7.3</xref>.</p></sec><sec id="Sec24"><title>Interaction between creep and bending-induced tensile cracking of concrete hinges</title><p id="Par47">The herein measured material and structural creep properties are qualitatively similar, see the &#x0201c;power-law&#x0201d;-type normalized creep evolutions in Fig.&#x000a0;<xref rid="Fig12" ref-type="fig">12</xref>. Therein, the ordinates refer to the evolutions of the deformation quantities measured under sustained loading (shortening in centric compression tests, see Figs.&#x000a0;<xref rid="Fig5" ref-type="fig">5</xref> and&#x000a0;<xref rid="Fig6" ref-type="fig">6</xref>, and relative rotation angles in eccentric compression tests, see Fig.&#x000a0;<xref rid="Fig9" ref-type="fig">9</xref>) divided by the corresponding average deformation quantities measured right after the end of the loading phase.</p><p id="Par48">The material tests and the centric structural experiments delivered also quantitatively very similar normalized creep evolutions, particularly so during the first hour of the tests, see Fig.&#x000a0;<xref rid="Fig12" ref-type="fig">12</xref>. After this initial phase, load redistributions inside the concrete hinges, i.e. the load transfer from creeping concrete to the non-creeping steel rebars may explain why structural centric creep is by some 10 percent smaller than material creep under centric compression, see Fig.&#x000a0;<xref rid="Fig12" ref-type="fig">12</xref>.</p><p id="Par49">The described quantitative differences allow for the announced checking of the plausibility of the damaged elastic stiffness value of concrete reported in Eq.&#x000a0;(<xref rid="Equ17" ref-type="">17</xref>). In this context, we follow old French regulations (see [<xref ref-type="bibr" rid="CR48">48</xref>] for a similar approach) and consider two specimens: one made of plain concrete and the second made of reinforced concrete, whereby concrete and steel rebars are arranged in parallel. Also, we envision that uniaxial loading is applied in the rebar direction and that concrete and steel are firmly bonded to each other in the reinforced specimen, such that both materials exhibit the same axial normal strain. Provided that the same force density is applied to both specimens, the stress of plain concrete will be by a factor of <inline-formula id="IEq93"><alternatives><tex-math id="M203">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$1 + \varrho \,E_s/E_\mathrm{dam}$$\end{document}</tex-math><mml:math id="M204"><mml:mrow><mml:mn>1</mml:mn><mml:mo>+</mml:mo><mml:mi mathvariant="italic">&#x003f1;</mml:mi><mml:mspace width="0.166667em"/><mml:msub><mml:mi>E</mml:mi><mml:mi>s</mml:mi></mml:msub><mml:mo stretchy="false">/</mml:mo><mml:msub><mml:mi>E</mml:mi><mml:mi mathvariant="normal">dam</mml:mi></mml:msub></mml:mrow></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq93.gif"/></alternatives></inline-formula> larger than the stress of concrete in the reinforced specimen [<xref ref-type="bibr" rid="CR48">48</xref>], where <inline-formula id="IEq94"><alternatives><tex-math id="M205">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$E_\mathrm{dam}$$\end{document}</tex-math><mml:math id="M206"><mml:msub><mml:mi>E</mml:mi><mml:mi mathvariant="normal">dam</mml:mi></mml:msub></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq94.gif"/></alternatives></inline-formula> denotes the Young&#x02019;s modulus of the concrete of the reinforced specimen. Therefore, also the creep activity of the plain concrete specimen can be envisioned to be by the same factor larger than the one of the reinforced specimen. Inserting the values of <inline-formula id="IEq95"><alternatives><tex-math id="M207">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\varrho $$\end{document}</tex-math><mml:math id="M208"><mml:mi mathvariant="italic">&#x003f1;</mml:mi></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq95.gif"/></alternatives></inline-formula>, <inline-formula id="IEq96"><alternatives><tex-math id="M209">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$E_s$$\end{document}</tex-math><mml:math id="M210"><mml:msub><mml:mi>E</mml:mi><mml:mi>s</mml:mi></mml:msub></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq96.gif"/></alternatives></inline-formula>, and <inline-formula id="IEq97"><alternatives><tex-math id="M211">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$E_\mathrm{dam}$$\end{document}</tex-math><mml:math id="M212"><mml:msub><mml:mi>E</mml:mi><mml:mi mathvariant="normal">dam</mml:mi></mml:msub></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq97.gif"/></alternatives></inline-formula> according to Eqs.&#x000a0;(<xref rid="Equ6" ref-type="">6</xref>),&#x000a0;(<xref rid="Equ3" ref-type="">3</xref>), and (<xref rid="Equ17" ref-type="">17</xref>) into the expression <inline-formula id="IEq98"><alternatives><tex-math id="M213">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$1 + \varrho \,E_s/E_\mathrm{dam}$$\end{document}</tex-math><mml:math id="M214"><mml:mrow><mml:mn>1</mml:mn><mml:mo>+</mml:mo><mml:mi mathvariant="italic">&#x003f1;</mml:mi><mml:mspace width="0.166667em"/><mml:msub><mml:mi>E</mml:mi><mml:mi>s</mml:mi></mml:msub><mml:mo stretchy="false">/</mml:mo><mml:msub><mml:mi>E</mml:mi><mml:mi mathvariant="normal">dam</mml:mi></mml:msub></mml:mrow></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq98.gif"/></alternatives></inline-formula> delivers a numerical value of the multiplication factor amounting to 1.10. This is consistent with the experimentally observed difference in the creep strains between (i) plain concrete and (ii) reinforced concrete hinges subjected to centric compression, see Fig.&#x000a0;<xref rid="Fig12" ref-type="fig">12</xref>. Therefore, the value of <inline-formula id="IEq99"><alternatives><tex-math id="M215">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$E_\mathrm{dam}$$\end{document}</tex-math><mml:math id="M216"><mml:msub><mml:mi>E</mml:mi><mml:mi mathvariant="normal">dam</mml:mi></mml:msub></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq99.gif"/></alternatives></inline-formula> given in Eq.&#x000a0;(<xref rid="Equ17" ref-type="">17</xref>) is corroborated.</p><p id="Par50">The by far largest normalized creep activity was measured in the eccentric tests on initially monolithic concrete hinges. This underlines a considerable interaction between creep <italic>and</italic> bending-induced tensile cracking:<list list-type="bullet"><list-item><p id="Par51">Structural creep under eccentric compression increases both the crack opening displacements and the crack length, see Sect.&#x000a0;<xref rid="Sec19" ref-type="sec">6.5</xref>.</p></list-item><list-item><p id="Par52">Vice versa, progressive crack opening and crack propagation amplify the structural creep activity compared to the one observed in centric creep tests, see Fig.&#x000a0;<xref rid="Fig12" ref-type="fig">12</xref>.</p></list-item></list>This result of the present study is consistent with the frequently described expectation that during <italic>relaxation</italic> of concrete hinges under an imposed relative rotation angle (i) cracks will close in the vicinity of the crack tip and (ii) crack opening displacements will decrease elsewhere.<fig id="Fig12"><label>Fig. 12</label><caption><p>Evolution of creep deformations under sustained loading, normalized by the averaged deformation reached right after completing the loading process</p></caption><graphic xlink:href="11527_2017_1112_Fig12_HTML" id="MO29"/></fig>
+</p><p id="Par53">The described creep tests had a characteristic duration ranging from 12 to 20&#x000a0;h. This is negligibly short as compared to 24&#x000a0;days which is the period of drying ranging from stripping of the formworks to the start of the creep tests. Therefore, no significant <italic>additional drying</italic> happened <italic>during</italic> the creep tests and the measured creep behavior refers to basic creep of <italic>pre-dried</italic> specimens. Also, the performed creep tests were very short compared to real application cases. This is the motivation to discuss decades long creep processes in Sect.&#x000a0;<xref rid="Sec25" ref-type="sec">7.4</xref>. Before that, it is noteworthy for future modeling activities that measured creep activities could be fitted by standard models such as the ones, e.g., suggested by the FIB Model Code [<xref ref-type="bibr" rid="CR43">43</xref>] or the B4 model [<xref ref-type="bibr" rid="CR49">49</xref>].</p></sec><sec id="Sec25"><title>Consideration of the time-dependent behavior of concrete hinges in available design guidelines</title><p id="Par54">Existing design guidelines either disregard the time-dependent behavior of concrete hinges or consider it in a very simplified manner. The model by Gladwell [<xref ref-type="bibr" rid="CR30">30</xref>] was derived from the elastic contact problem of a flat punch pressed unsymmetrically into a half space. This elasto-brittle model envisions a vanishing tensile strength of concrete and does not consider any time-dependent deformation mechanism. Therefore, it is expected to represent an upper bound for all available experimental data, see Figs.&#x000a0;<xref rid="Fig1" ref-type="fig">1</xref> and&#x000a0;<xref rid="Fig13" ref-type="fig">13</xref>. Leonhardt and Reimann [<xref ref-type="bibr" rid="CR5">5</xref>], in turn, combined equilibrium conditions with a linear compressive stress distribution in the neck region, i.e. also this approach is based on a vanishing tensile strength. In addition, the model considers time-dependent behavior of concrete in a very simplified manner, i.e. the elastic compliance is increased by a multiplicative factor of 2. In the 1960s, namely, the time-dependent behavior of concrete was considered to come to an end, such that a concrete structure would reach asymptotically a stationary state under permanent loading. Leonhardt and Reimann assumed that the finally reached <italic>total</italic> compliance of concrete, related to both instantaneous elastic and delayed time-dependent deformation, would be twice as large as the instantaneous compliance.<fig id="Fig13"><label>Fig. 13</label><caption><p>Dimensionless relation between bending moment and relative rotation angle (&#x0201c;Leonhardt and Reimann&#x0201d;-diagram): modeled relationships by Gladwell [<xref ref-type="bibr" rid="CR30">30</xref>], Leonhardt and Reimann [<xref ref-type="bibr" rid="CR5">5</xref>], and Jan&#x000df;en [<xref ref-type="bibr" rid="CR17">17</xref>], as well as experimental data from the present study; see the caption of Fig.&#x000a0;<xref rid="Fig1" ref-type="fig">1</xref> for the explanation of the used symbols</p></caption><graphic xlink:href="11527_2017_1112_Fig13_HTML" id="MO30"/></fig>
+</p><p id="Par55">Creep of concrete, however, does not come to an end: it starts with power-law-type creep rates and decays later to logarithmic creep rates which do not approach a stable asymptotic value [<xref ref-type="bibr" rid="CR46">46</xref>]. This is evidenced by decades long testing of concrete samples [<xref ref-type="bibr" rid="CR50">50</xref>] and monitoring of the deflections of concrete bridges [<xref ref-type="bibr" rid="CR51">51</xref>]. It is the motivation to consider bending-related creep and relaxation explicitly in Fig.&#x000a0;<xref rid="Fig13" ref-type="fig">13</xref>, whereby the normal force is considered to be constant:<list list-type="bullet"><list-item><p id="Par56">Creep under a sustained bending moment results in a progressive increase of the relative rotation angle, see the abscissa-parallel chains of data points in Fig.&#x000a0;<xref rid="Fig13" ref-type="fig">13</xref>, referring to short-term and longer-term testing under loads <inline-formula id="IEq100"><alternatives><tex-math id="M217">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\le 200$$\end{document}</tex-math><mml:math id="M218"><mml:mrow><mml:mo>&#x02264;</mml:mo><mml:mn>200</mml:mn></mml:mrow></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq100.gif"/></alternatives></inline-formula>&#x000a0;kN. Because creep of concrete does not come to an end (see above), relative rotation angles must be expected to increase monotonously in a long-term creep test, see the abscissa-parallel arrow in Fig.&#x000a0;<xref rid="Fig13" ref-type="fig">13</xref>.</p></list-item><list-item><p id="Par57">Relaxation under an imposed relative rotation angle, in turn, results in a progressive reduction of the bending moment, see the ordinate-parallel arrow in Fig.&#x000a0;<xref rid="Fig13" ref-type="fig">13</xref>. Since unbounded creep functions imply that relaxation functions of concrete decay to zero, one may expect that bending moments will finally vanish in a long-term relaxation test.</p></list-item></list>In integral bridge construction, however, concrete hinges experience bending loads which do not refer to perfect creep or relaxation scenarios, as discussed next for the important exemplary case of frame-type integral bridges.</p></sec><sec id="Sec26"><title>Time-dependent behavior of concrete hinges in frame-type integral bridge construction</title><p id="Par58">Once a frame-type bridge is completed, dead load of the structure is transmitted across concrete hinges positioned, e.g., at the feet of the columns. Therefore, each concrete hinge is subjected to a compressive normal force and to a bending moment. The viscoelastic behavior of concrete results in a progressively increasing rotation angle at the neck of the concrete hinge. As a feedback from the statically indeterminate structure, the bending moment at the concrete hinge decreases. In other words, the time-dependent behavior of concrete hinges results in load redistributions within the bridge structure, such that&#x02014;asymptotically&#x02014;a vanishing bending moment at the concrete hinge will be obtained. Therefore, modeling concrete hinges as classical hinges without bending stiffness is a well-suited approach for the simulation of the finally reached structural state under permanent loading. The corresponding normal forces, however, have to be transmitted across the concrete hinges permanently. In order to avoid the risk of nonlinear creep in compression, i.e. the interaction between creep and progressive damage [<xref ref-type="bibr" rid="CR52">52</xref>&#x02013;<xref ref-type="bibr" rid="CR54">54</xref>], it is recommended&#x02014;in agreement with Eurocode 2 regulating the design of concrete bridges, see [<xref ref-type="bibr" rid="CR44">44</xref>]&#x02014;(i) to limit the permanent compressive normal forces with 45&#x000a0;% of the corresponding ultimate load carrying capacity of the concrete hinge, and (ii) to treat load redistributions from creeping concrete to non-creeping steel rebars as hidden reserves.</p><p id="Par59">Variable loads, such as the ones resulting from daily changes of the ambient temperature, exhibit characteristic times which are equal to the ones studied in the present creep experiments. This implies that modeling concrete hinges as rotational springs with a time-dependent stiffness is required for realistic structural simulations in integral bridge construction. The herein characterized mechanical properties of concrete and the experimental data obtained in the structural tests are well suited to support these future modeling activities. In this context, it is noteworthy that the structural tests with forces <inline-formula id="IEq101"><alternatives><tex-math id="M219">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\le 200$$\end{document}</tex-math><mml:math id="M220"><mml:mrow><mml:mo>&#x02264;</mml:mo><mml:mn>200</mml:mn></mml:mrow></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq101.gif"/></alternatives></inline-formula>&#x000a0;kN are representative for both reinforced and unreinforced concrete hinges, because of the small reinforcement ratio, see Eq.&#x000a0;(<xref rid="Equ6" ref-type="">6</xref>), and because the reinforcements were compressed, as is evidenced from crack lengths which are significantly smaller than half of the neck width.</p></sec></sec><sec id="Sec27"><title>Conclusions</title><p id="Par60">From the obtained experimental data and from the related discussions, the following conclusions are drawn:<list list-type="bullet"><list-item><p id="Par61">Concrete hinges are very creep active structures. The creep-related shortening of the neck under centric compression increased in 4&#x000a0;h by 20&#x000a0;% relative to the shortening developing during loading (Fig.&#x000a0;<xref rid="Fig6" ref-type="fig">6</xref>). The creep-related rotation angle of the neck under eccentric compression increased in 16&#x000a0;h by 50&#x000a0;% relative to the rotation angle developing during loading (Fig.&#x000a0;<xref rid="Fig9" ref-type="fig">9</xref>).</p></list-item><list-item><p id="Par62">Creep and bending-induced tensile cracking of concrete hinges are interacting phenomena. Creep under eccentric compression increases the length and opening displacements of bending-induced tensile cracks. The increased crack length, in turn, amplifies the structural creep activity relative to material or structural creep under centric compression (Fig.&#x000a0;<xref rid="Fig12" ref-type="fig">12</xref>).</p></list-item><list-item><p id="Par63">Vice versa, stress relaxation will result in partial crack closure and in decreasing crack opening displacements, which is very beneficial for the durability of concrete hinges.</p></list-item></list>As for the simulation of initially monolithic concrete hinges in frame-like integral bridge construction, the following conclusions are drawn:<list list-type="bullet"><list-item><p id="Par64">As for permanent loads, modeling of concrete hinges as classical hinges <italic>without</italic> bending stiffness is a sound approach for assessing the finally reached structural state.</p></list-item><list-item><p id="Par65">In order to avoid progressive damage under permanent compressive normal forces, the latter shall be limited to 45&#x000a0;% of the corresponding ultimate load carrying capacity of the concrete hinge.</p></list-item><list-item><p id="Par66">As for variable loads, future modeling of concrete hinges as rotational springs with <italic>time-dependent</italic> stiffness is required for reliable simulations.</p></list-item><list-item><p id="Par67">The presented experimental data may well support such future modeling activities.</p></list-item></list>
+</p></sec></body><back><fn-group><fn id="Fn1"><label>1</label><p id="Par33">One of the outermost LVDTs failed during one test with <inline-formula id="IEq68"><alternatives><tex-math id="M221">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$N \le 200$$\end{document}</tex-math><mml:math id="M222"><mml:mrow><mml:mi>N</mml:mi><mml:mo>&#x02264;</mml:mo><mml:mn>200</mml:mn></mml:mrow></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq68.gif"/></alternatives></inline-formula>&#x000a0;kN. In the interest of comparability of different tests, <inline-formula id="IEq69"><alternatives><tex-math id="M223">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$n_s$$\end{document}</tex-math><mml:math id="M224"><mml:msub><mml:mi>n</mml:mi><mml:mi>s</mml:mi></mml:msub></mml:math><inline-graphic xlink:href="11527_2017_1112_Article_IEq69.gif"/></alternatives></inline-formula> is set equal to 3 referring to the three central LVDTs of each side.</p></fn><fn id="Fn2"><label>2</label><p id="Par38">DIC images of concrete hinge 2 could not be evaluated due to insufficient contrast. Results regarding concrete hinge 3 are similar to the ones of concrete hinge 1, but they cannot be shown due to the limited number of allowed figures.</p></fn></fn-group><ack><title>Acknowledgements</title><p>Open access funding provided by TU Wien (TUW). Financial support of the experiments by the Austrian Ministry for Transport and Technology (bmvit), the Austrian Research Promotion Agency (FFG), &#x000d6;BB-Infrastruktur AG, ASFINAG Bau Management GmbH, provided within VIF-project 845681 &#x0201e;Optimierte Bemessungsregeln f&#x000fc;r dauerhafte bewehrte Betongelenke&#x0201c;, corresponding discussions with Markus Vill (Vill ZT GmbH), Alfred H&#x000fc;ngsberg (&#x000d6;BB-Infrastruktur AG), Erwin Pilch and Michael Kleiser (ASFINAG Bau Management GmbH), as well as help of the laboratory staff both at the TU Wien &#x02013; Vienna University of Technology and Smart Minerals GmbH, by Roland Reihsner, Wolfgang D&#x000f6;rner, Herbert Pardatscher, and Rudolf Dechet are gratefully acknowledged. Additional discussions regarding the use of concrete hinges in mechanized tunneling, carried out within the Austrian Science Fund (FWF) project P 281 31-N32 &#x0201c;Bridging the Gap by means of Multiscale Structural Analysis&#x0201d; with Herbert Mang (TU Wien/Tongji University), Yong Yuan (Tongji University), Jiaolong Zhang (TU Wien/Tongji University) are also gratefully acknowledged.</p><sec id="d29e3832"><title>Funding</title><p>This study was funded by the Austrian Ministry for Transport and Technology (bmvit), the Austrian Research Promotion Agency (FFG), &#x000d6;BB-Infrastruktur AG, and ASFINAG Bau Management GmbH (Grant Number 845681), see the first acknowledgement.</p></sec></ack><notes notes-type="COI-statement"><title>Compliance with ethical standards</title><sec id="FPar2"><title>Conflict of interest</title><p id="Par70">The authors declare that they have no conflict of interest.</p></sec></notes><ref-list id="Bib1"><title>References</title><ref id="CR1"><label>1.</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Freyssinet</surname><given-names>E</given-names></name></person-group><article-title>Le pont de Candelier (The bridge of Candelier)</article-title><source>Ann Ponts Chauss&#x000e9;es</source><year>1923</year><volume>1</volume><fpage>165f</fpage></element-citation></ref><ref id="CR2"><label>2.</label><mixed-citation publication-type="other">Freyssinet E (1954) Naissance du b&#x000e9;ton pr&#x000e9;contraint et vues davenir (Birth of prestressed concrete and future outlook). Travaux, pp 463&#x02013;474&#x000a0;<bold>(in French)</bold></mixed-citation></ref><ref id="CR3"><label>3.</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Bernhardt</surname><given-names>K</given-names></name><name><surname>Mohr</surname><given-names>B</given-names></name><name><surname>Seifried</surname><given-names>G</given-names></name><name><surname>Angelmaier</surname><given-names>V</given-names></name></person-group><article-title>Talbr&#x000fc;cke Korntal-M&#x000fc;nchingen - innovativer Br&#x000fc;ckenentwurf als Rohrfachwerk-Verbundbr&#x000fc;cke (Korntal-M&#x000fc;nchingen&#x02014;innovative bridge design)</article-title><source>Stahlbau</source><year>2003</year><volume>72</volume><issue>2</issue><fpage>61</fpage><lpage>70</lpage><pub-id pub-id-type="doi">10.1002/stab.200300240</pub-id></element-citation></ref><ref id="CR4"><label>4.</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Leonhardt</surname><given-names>F</given-names></name></person-group><article-title>Mainbr&#x000fc;cke Gem&#x000fc;nden - Eisenbahnbr&#x000fc;cke aus Spannbeton mit 135 m Spannweite (Main bridge Gem&#x000fc;nden&#x02014;prestressed railway bridge with a span of 135 m)</article-title><source>Beton Stahlbetonbau</source><year>1986</year><volume>81</volume><fpage>1</fpage><lpage>8</lpage><pub-id pub-id-type="doi">10.1002/best.198600010</pub-id></element-citation></ref><ref id="CR5"><label>5.</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Leonhardt</surname><given-names>F</given-names></name><name><surname>Reimann</surname><given-names>H</given-names></name></person-group><article-title>Betongelenke: Versuchsbericht, Vorschl&#x000e4;ge zur Bemessung und konstruktiven Ausbildung (Concrete hinges: experiments, design, and execution)</article-title><source>Dtsch Aussch Stahlbeton</source><year>1965</year><volume>175</volume><fpage>1</fpage><lpage>34</lpage></element-citation></ref><ref id="CR6"><label>6.</label><mixed-citation publication-type="other">Marx S, Schacht G (2010) Betongelenke im Br&#x000fc;ckenbau (Concrete hinges in bridge construction). Berlin Deutscher Beton- und Bautechnik Verein, vol 18&#x000a0;<bold>(in German)</bold></mixed-citation></ref><ref id="CR7"><label>7.</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Morgenthal</surname><given-names>G</given-names></name><name><surname>Olney</surname><given-names>P</given-names></name></person-group><article-title>Concrete hinges and integral bridge piers</article-title><source>J Bridge Eng</source><year>2015</year><volume>21</volume><issue>1</issue><fpage>06015,005</fpage><pub-id pub-id-type="doi">10.1061/(ASCE)BE.1943-5592.0000783</pub-id></element-citation></ref><ref id="CR8"><label>8.</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Sallenbach</surname><given-names>HH</given-names></name></person-group><article-title>Betongelenke beim Hardturm-Viadukt (Concrete hinges used for the Hardturm&#x02013;Viadukt)</article-title><source>Schweiz Bauztg</source><year>1967</year><volume>85</volume><fpage>615</fpage><lpage>618</lpage></element-citation></ref><ref id="CR9"><label>9.</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Schacht</surname><given-names>G</given-names></name><name><surname>Marx</surname><given-names>S</given-names></name></person-group><article-title>Unbewehrte Betongelenke - 100 Jahre Erfahrung im Br&#x000fc;ckenbau (Unreinforced concrete hinges&#x02014;100 years of experience in bridge construction)</article-title><source>Beton Stahlbetonbau</source><year>2010</year><volume>105</volume><fpage>599</fpage><lpage>607</lpage><pub-id pub-id-type="doi">10.1002/best.201000030</pub-id></element-citation></ref><ref id="CR10"><label>10.</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Tue</surname><given-names>NV</given-names></name><name><surname>Jankowiak</surname><given-names>H</given-names></name></person-group><article-title>Betongelenke aus selbstverdichtendem und hochfestem Beton bei der Elbebr&#x000fc;cke M&#x000fc;hlberg (Concrete hinges made of self compacting and high-strength concrete for the new Elbe bridge M&#x000fc;hlberg)</article-title><source>Bautechnik</source><year>2009</year><volume>86</volume><fpage>637</fpage><lpage>646</lpage><pub-id pub-id-type="doi">10.1002/bate.200910064</pub-id></element-citation></ref><ref id="CR11"><label>11.</label><mixed-citation publication-type="other">Blom CBM (2002) Design philosophy of concrete linings for tunnels in soft soils. Ph.D. thesis, Delft University of Technology</mixed-citation></ref><ref id="CR12"><label>12.</label><mixed-citation publication-type="other">De Waal RGA (2000) Steel fibre reinforced tunnel segments&#x02014;for the application in shield driven tunnel linings. Ph.D. thesis, Delft University of Technology</mixed-citation></ref><ref id="CR13"><label>13.</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Do</surname><given-names>NA</given-names></name><name><surname>Dias</surname><given-names>D</given-names></name><name><surname>Oreste</surname><given-names>P</given-names></name><name><surname>Djeran-Maigre</surname><given-names>I</given-names></name></person-group><article-title>A new numerical approach to the hyperstatic reaction method for segmental tunnel linings</article-title><source>Int J Numer Anal Methods Geomech</source><year>2014</year><volume>38</volume><issue>15</issue><fpage>1617</fpage><lpage>1632</lpage><pub-id pub-id-type="doi">10.1002/nag.2277</pub-id></element-citation></ref><ref id="CR14"><label>14.</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>El Naggar</surname><given-names>H</given-names></name><name><surname>Hinchberger</surname><given-names>SD</given-names></name></person-group><article-title>An analytical solution for jointed tunnel linings in elastic soil or rock</article-title><source>Can Geotech J</source><year>2008</year><volume>45</volume><issue>11</issue><fpage>1572</fpage><lpage>1593</lpage><pub-id pub-id-type="doi">10.1139/T08-075</pub-id></element-citation></ref><ref id="CR15"><label>15.</label><mixed-citation publication-type="other">Harding A, Chappell M, King M (2014) Myth and reality: bolts in modern concrete segmental tunnel linings. North American tunneling: 2014 proceedings</mixed-citation></ref><ref id="CR16"><label>16.</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Hefny</surname><given-names>AM</given-names></name><name><surname>Chua</surname><given-names>HC</given-names></name></person-group><article-title>An investigation into the behaviour of jointed tunnel lining</article-title><source>Tunn Undergr Space Technol</source><year>2006</year><volume>21</volume><issue>3</issue><fpage>428</fpage><pub-id pub-id-type="doi">10.1016/j.tust.2005.12.070</pub-id></element-citation></ref><ref id="CR17"><label>17.</label><mixed-citation publication-type="other">Jan&#x000df;en P (1986) Tragverhalten von Tunnelausbauten mit Gelenkst&#x000fc;bbings (Structural behavior of segmented tunnel linings). Ph.D. thesis, Technical University of Braunschweig <bold>(in German)</bold></mixed-citation></ref><ref id="CR18"><label>18.</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Jusoh</surname><given-names>SN</given-names></name><name><surname>Mohamad</surname><given-names>H</given-names></name><name><surname>Marto</surname><given-names>A</given-names></name><name><surname>Yunus</surname><given-names>NZM</given-names></name><name><surname>Kasim</surname><given-names>F</given-names></name></person-group><article-title>Segments joint in precast tunnel lining design</article-title><source>J Teknol</source><year>2015</year><volume>77</volume><issue>11</issue><fpage>91</fpage><lpage>98</lpage></element-citation></ref><ref id="CR19"><label>19.</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Klappers</surname><given-names>C</given-names></name><name><surname>Gr&#x000fc;bl</surname><given-names>F</given-names></name><name><surname>Ostermeier</surname><given-names>B</given-names></name></person-group><article-title>Structural analyses of segmental lining&#x02014;coupled beam and spring analyses versus 3D-FEM calculations with shell elements</article-title><source>Tunn Undergr Space Technol</source><year>2006</year><volume>21</volume><issue>3</issue><fpage>254</fpage><lpage>255</lpage><pub-id pub-id-type="doi">10.1016/j.tust.2005.12.116</pub-id></element-citation></ref><ref id="CR20"><label>20.</label><mixed-citation publication-type="other">Luttikholt A (2007) Ultimate limit state analysis of a segmented tunnel lining. Ph.D. thesis, Delft University of Technology</mixed-citation></ref><ref id="CR21"><label>21.</label><mixed-citation publication-type="other">Maidl B, Herrenknecht M, Maidl U, Wehrmeyer G (2013) Mechanised shield tunnelling. Wiley</mixed-citation></ref><ref id="CR22"><label>22.</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Majdi</surname><given-names>A</given-names></name><name><surname>Ajamzadeh</surname><given-names>H</given-names></name><name><surname>Nadimi</surname><given-names>S</given-names></name></person-group><article-title>Investigation of moment-rotation relation in different joint types and evaluation of their effects on segmental tunnel lining</article-title><source>Arab J Geosci</source><year>2016</year><volume>9</volume><issue>7</issue><fpage>1</fpage><lpage>15</lpage><pub-id pub-id-type="doi">10.1007/s12517-016-2538-z</pub-id></element-citation></ref><ref id="CR23"><label>23.</label><mixed-citation publication-type="other">Mok P, Norbert M (2014) Tunnel boring machine excavation stability&#x02014;double shield tunnel boring machine advance with partially grouted annulus. In: 15th Australiasian tunneling conference/Sydney, NSW, 17&#x02013;19 September 2014, pp 51&#x02013;62</mixed-citation></ref><ref id="CR24"><label>24.</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Nikkhah</surname><given-names>M</given-names></name><name><surname>Mousavi</surname><given-names>SS</given-names></name><name><surname>Zare</surname><given-names>S</given-names></name><name><surname>Khademhosseini</surname><given-names>O</given-names></name></person-group><article-title>Evaluation of structural analysis of tunnel segmental lining using beam-spring method and force-method (case study: Chamshir water conveyance tunnel)</article-title><source>J Min Environ</source><year>2017</year><volume>8</volume><issue>1</issue><fpage>111</fpage><lpage>130</lpage></element-citation></ref><ref id="CR25"><label>25.</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Salemi</surname><given-names>A</given-names></name><name><surname>Esmaeili</surname><given-names>M</given-names></name><name><surname>Sereshki</surname><given-names>F</given-names></name></person-group><article-title>Normal and shear resistance of longitudinal contact surfaces of segmental tunnel linings</article-title><source>Int J Rock Mech Min Sci</source><year>2015</year><volume>77</volume><fpage>328</fpage><lpage>338</lpage></element-citation></ref><ref id="CR26"><label>26.</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Teachavorasinskun</surname><given-names>S</given-names></name><name><surname>Chub-uppakarn</surname><given-names>T</given-names></name></person-group><article-title>Influence of segmental joints on tunnel lining</article-title><source>Tunn Undergr Space Technol</source><year>2010</year><volume>25</volume><issue>4</issue><fpage>490</fpage><lpage>494</lpage><pub-id pub-id-type="doi">10.1016/j.tust.2010.02.003</pub-id></element-citation></ref><ref id="CR27"><label>27.</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Yanzhi</surname><given-names>Y</given-names></name><name><surname>Weiwei</surname><given-names>Z</given-names></name><name><surname>Jianwei</surname><given-names>W</given-names></name><name><surname>Zhihao</surname><given-names>Y</given-names></name></person-group><article-title>Three-dimensional orthotropic equivalent modelling method of large-scale circular jointed lining</article-title><source>Tunn Undergr Space Technol</source><year>2014</year><volume>44</volume><fpage>33</fpage><lpage>41</lpage><pub-id pub-id-type="doi">10.1016/j.tust.2014.07.002</pub-id></element-citation></ref><ref id="CR28"><label>28.</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Zhang</surname><given-names>W</given-names></name><name><surname>Jin</surname><given-names>X</given-names></name><name><surname>Yang</surname><given-names>Z</given-names></name></person-group><article-title>Combined equivalent &#x00026; multi-scale simulation method for 3-D seismic analysis of large-scale shield tunnel</article-title><source>Eng Comput</source><year>2014</year><volume>31</volume><issue>3</issue><fpage>584</fpage><lpage>620</lpage><pub-id pub-id-type="doi">10.1108/EC-02-2012-0034</pub-id></element-citation></ref><ref id="CR29"><label>29.</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>M&#x000f6;nnig</surname><given-names>E</given-names></name><name><surname>Netzel</surname><given-names>D</given-names></name></person-group><article-title>Zur Bemessung von Betongelenken (Design of concrete hinges)</article-title><source>Der Bauing</source><year>1969</year><volume>44</volume><fpage>433</fpage><lpage>439</lpage></element-citation></ref><ref id="CR30"><label>30.</label><element-citation publication-type="book"><person-group person-group-type="author"><name><surname>Gladwell</surname><given-names>GM</given-names></name></person-group><source>Contact problems in the classical theory of elasticity</source><year>1980</year><publisher-loc>New York</publisher-loc><publisher-name>Springer</publisher-name></element-citation></ref><ref id="CR31"><label>31.</label><mixed-citation publication-type="other">&#x000d6;BV-Guideline (2011) Concrete segmental lining systems. Austrian Society for Construction Technology</mixed-citation></ref><ref id="CR32"><label>32.</label><mixed-citation publication-type="other">DAUB-Guideline 10.2013 (2013) Recommendations for the design, production and installation of segmental rings. German Tunnelling Committee (ITA-AITES)</mixed-citation></ref><ref id="CR33"><label>33.</label><element-citation publication-type="book"><person-group person-group-type="author"><name><surname>Base</surname><given-names>GD</given-names></name></person-group><source>Tests on a reinforced concrete hinge with a large design rotation</source><year>1962</year><publisher-loc>New York</publisher-loc><publisher-name>Cement and Concrete Association</publisher-name></element-citation></ref><ref id="CR34"><label>34.</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Tourasse</surname><given-names>M</given-names></name></person-group><article-title>Essais sur articulation Freyssinet (Experiments on Freyssinet hinges)</article-title><source>Ann lInstitute Technique du B&#x000e2;timent et des Travaux Publics</source><year>1961</year><volume>40</volume><issue>57</issue><fpage>62</fpage><lpage>87</lpage></element-citation></ref><ref id="CR35"><label>35.</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Fessler</surname><given-names>EO</given-names></name></person-group><article-title>Die EMPA-Versuche an armierten Betongelenken f&#x000fc;r den Hardturm-Viadukt (EMPA-Experiments on reinforced concrete hinges for the Hardturm&#x02013;Viadukt)</article-title><source>Schweiz Bauztg</source><year>1967</year><volume>85</volume><fpage>623</fpage><lpage>630</lpage></element-citation></ref><ref id="CR36"><label>36.</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Feldwisch</surname><given-names>W</given-names></name><name><surname>Drescher</surname><given-names>O</given-names></name><name><surname>Fl&#x000fc;gel</surname><given-names>M</given-names></name></person-group><article-title>Die Talbr&#x000fc;cken der Neu- und Ausbaustrecke N&#x000fc;rnberg - Erfurt (Viaducts of the newly built and extended line N&#x000fc;rnberg&#x02013;Erfurt)</article-title><source>Eisenbahntechnische Rundsch</source><year>2010</year><volume>9</volume><fpage>558</fpage><lpage>567</lpage></element-citation></ref><ref id="CR37"><label>37.</label><mixed-citation publication-type="other">&#x000d6;BV-communication (2016) Bautechnik 2016 (Structural engineering 2016). Austrian Society for Construction Technology (<bold>in German</bold>)</mixed-citation></ref><ref id="CR38"><label>38.</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Dix</surname><given-names>J</given-names></name></person-group><article-title>Betongelenke unter oftmals wiederholter Druck- und Biegebeanspruchung (Concrete hinges subjected to frequently repeated axial compression and bending)</article-title><source>Deutsch Aussch Stahlbeton</source><year>1962</year><volume>150</volume><fpage>1</fpage><lpage>41</lpage></element-citation></ref><ref id="CR39"><label>39.</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Franz</surname><given-names>G</given-names></name><name><surname>Fein</surname><given-names>H-D</given-names></name></person-group><article-title>Betongelenke unter wiederholten Gelenkverdrehungen (Concrete hinges under repeated hinge rotation)</article-title><source>Dtsch Aussch Stahlbeton</source><year>1968</year><volume>200</volume><fpage>56</fpage><lpage>91</lpage></element-citation></ref><ref id="CR40"><label>40.</label><mixed-citation publication-type="other">Hordijk D, Gijsbers F, Boortunnels P (1996) Laboratoriumproeven tunnelsegmenten (Laboratory testing of tunnel segments). Reporte Interno K100-W-026, TNO-Bouw, Delft&#x000a0;<bold>(in Dutch)</bold></mixed-citation></ref><ref id="CR41"><label>41.</label><mixed-citation publication-type="other">&#x000d6;NORM B 4710-1 (2007) Concrete-part 1: specification, production, use and verification of conformity. Austrian Standards Institute</mixed-citation></ref><ref id="CR42"><label>42.</label><mixed-citation publication-type="other">ONR 23303 (2010) Test methods for concrete: National application of testing standards for concrete and its source materials. Austrian Standards Institute</mixed-citation></ref><ref id="CR43"><label>43.</label><mixed-citation publication-type="other">CEB-FIB (2013) Fib model code for concrete structures 2010. International Federation for Structural Concrete</mixed-citation></ref><ref id="CR44"><label>44.</label><mixed-citation publication-type="other">EN 1992-2:2005 (2005) Eurocode 2: design of concrete structures&#x02014;part 2: concrete bridges&#x02014;design and detailing rules. European Committee for Standardization (CEN)</mixed-citation></ref><ref id="CR45"><label>45.</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Mazzotti</surname><given-names>C</given-names></name><name><surname>Savoia</surname><given-names>M</given-names></name></person-group><article-title>Nonlinear creep damage model for concrete under uniaxial compression</article-title><source>J Eng Mech</source><year>2003</year><volume>129</volume><issue>9</issue><fpage>1065</fpage><lpage>1075</lpage><pub-id pub-id-type="doi">10.1061/(ASCE)0733-9399(2003)129:9(1065)</pub-id></element-citation></ref><ref id="CR46"><label>46.</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Irfan-ul-Hassan</surname><given-names>M</given-names></name><name><surname>Pichler</surname><given-names>B</given-names></name><name><surname>Reihsner</surname><given-names>R</given-names></name><name><surname>Hellmich</surname><given-names>C</given-names></name></person-group><article-title>Elastic and creep properties of young cement paste, as determination from hourly repeated minute-long quasi-static tests</article-title><source>Cem Concr Res</source><year>2016</year><volume>82</volume><fpage>36</fpage><lpage>49</lpage><pub-id pub-id-type="doi">10.1016/j.cemconres.2015.11.007</pub-id></element-citation></ref><ref id="CR47"><label>47.</label><mixed-citation publication-type="other">Kalliauer J, Schlappal T, Vill M, Mang H, Pichler B (2017) Bearing capacity of concrete hinges subjected to eccentric compression&#x02014;multiscale structural analysis of experiments. Accepted for publication in Acta Mech</mixed-citation></ref><ref id="CR48"><label>48.</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Ross</surname><given-names>AD</given-names></name></person-group><article-title>Creep of concrete under variable stress</article-title><source>J Am Concr Inst</source><year>1958</year><volume>54</volume><issue>3</issue><fpage>739</fpage><lpage>758</lpage></element-citation></ref><ref id="CR49"><label>49.</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Wendner</surname><given-names>R</given-names></name><name><surname>Hubler</surname><given-names>MH</given-names></name><name><surname>Ba&#x0017e;ant</surname><given-names>ZP</given-names></name></person-group><article-title>Statistical justification of model B4 for multi-decade concrete creep using laboratory and bridge databases and comparisons to other models</article-title><source>Mater Struct</source><year>2015</year><volume>48</volume><issue>4</issue><fpage>815</fpage><lpage>833</lpage><pub-id pub-id-type="doi">10.1617/s11527-014-0486-1</pub-id></element-citation></ref><ref id="CR50"><label>50.</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Zhang</surname><given-names>Q</given-names></name><name><surname>Roy</surname><given-names>RL</given-names></name><name><surname>Vandamme</surname><given-names>M</given-names></name><name><surname>Zuber</surname><given-names>B</given-names></name></person-group><article-title>Long-term creep properties of cementitious materials: comparing microindentation testing with macroscopic uniaxial compressive testing</article-title><source>Cem Concr Res</source><year>2014</year><volume>58</volume><fpage>89</fpage><lpage>98</lpage><pub-id pub-id-type="doi">10.1016/j.cemconres.2014.01.004</pub-id></element-citation></ref><ref id="CR51"><label>51.</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Ba&#x0017e;ant</surname><given-names>ZP</given-names></name><name><surname>Hubler</surname><given-names>MH</given-names></name><name><surname>Yu</surname><given-names>Q</given-names></name></person-group><article-title>Pervasiveness of excessive segmental bridge deflections: wake-up call for creep</article-title><source>ACI Struct J</source><year>2011</year><volume>108</volume><issue>6</issue><fpage>766</fpage><lpage>774</lpage></element-citation></ref><ref id="CR52"><label>52.</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Fischer</surname><given-names>I</given-names></name><name><surname>Pichler</surname><given-names>B</given-names></name><name><surname>Lach</surname><given-names>E</given-names></name><name><surname>Terner</surname><given-names>C</given-names></name><name><surname>Barraud</surname><given-names>E</given-names></name><name><surname>Britz</surname><given-names>F</given-names></name></person-group><article-title>Compressive strength of cement paste as a function of loading rate: experiments and engineering mechanics analysis</article-title><source>Cem Concr Res</source><year>2014</year><volume>58</volume><fpage>186</fpage><lpage>200</lpage><pub-id pub-id-type="doi">10.1016/j.cemconres.2014.01.013</pub-id></element-citation></ref><ref id="CR53"><label>53.</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Rossi</surname><given-names>P</given-names></name><name><surname>Tailhan</surname><given-names>JL</given-names></name><name><surname>Le Maou</surname><given-names>F</given-names></name><name><surname>Gaillet</surname><given-names>L</given-names></name><name><surname>Martin</surname><given-names>E</given-names></name></person-group><article-title>Basic creep behavior of concretes investigation of the physical mechanisms by using acoustic emission</article-title><source>Cem Concr Res</source><year>2012</year><volume>42</volume><issue>1</issue><fpage>61</fpage><lpage>73</lpage><pub-id pub-id-type="doi">10.1016/j.cemconres.2011.07.011</pub-id></element-citation></ref><ref id="CR54"><label>54.</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Ruiz</surname><given-names>M</given-names></name><name><surname>Muttoni</surname><given-names>A</given-names></name><name><surname>Gambarova</surname><given-names>P</given-names></name></person-group><article-title>Relationship between nonlinear creep and cracking of concrete under uniaxial compression</article-title><source>J Adv Concr Technol</source><year>2007</year><volume>5</volume><fpage>383</fpage><lpage>393</lpage><pub-id pub-id-type="doi">10.3151/jact.5.383</pub-id></element-citation></ref></ref-list></back></article>

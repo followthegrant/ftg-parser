@@ -1,0 +1,645 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.0 20120330//EN" "JATS-archivearticle1.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="review-article"><?properties open_access?><front><journal-meta><journal-id journal-id-type="nlm-ta">Genes (Basel)</journal-id><journal-id journal-id-type="iso-abbrev">Genes (Basel)</journal-id><journal-id journal-id-type="publisher-id">genes</journal-id><journal-title-group><journal-title>Genes</journal-title></journal-title-group><issn pub-type="epub">2073-4425</issn><publisher><publisher-name>MDPI</publisher-name></publisher></journal-meta><article-meta><article-id pub-id-type="pmid">28085061</article-id><article-id pub-id-type="pmc">5295021</article-id><article-id pub-id-type="doi">10.3390/genes8010026</article-id><article-id pub-id-type="publisher-id">genes-08-00026</article-id><article-categories><subj-group subj-group-type="heading"><subject>Review</subject></subj-group></article-categories><title-group><article-title>Origin DNA Melting&#x02014;An Essential Process with Divergent Mechanisms</article-title></title-group><contrib-group><contrib contrib-type="author"><name><surname>Martinez</surname><given-names>Matthew P.</given-names></name><xref ref-type="author-notes" rid="fn1-genes-08-00026">&#x02020;</xref></contrib><contrib contrib-type="author"><name><surname>Jones</surname><given-names>John M.</given-names></name><xref ref-type="author-notes" rid="fn1-genes-08-00026">&#x02020;</xref></contrib><contrib contrib-type="author"><name><surname>Bruck</surname><given-names>Irina</given-names></name></contrib><contrib contrib-type="author"><name><surname>Kaplan</surname><given-names>Daniel L.</given-names></name><xref rid="c1-genes-08-00026" ref-type="corresp">*</xref></contrib></contrib-group><contrib-group><contrib contrib-type="editor"><name><surname>Noguchi</surname><given-names>Eishi</given-names></name><role>Academic Editor</role></contrib></contrib-group><aff id="af1-genes-08-00026">Department of Biomedical Sciences, Florida State University College of Medicine, 1115 W. Call St., Tallahassee, FL 32306, USA; <email>mm14d@my.fsu.edu</email> (M.P.M.); <email>jmj13b@my.fsu.edu</email> (J.M.J.); <email>irina.bruck@med.fsu.edu</email> (I.B.)</aff><author-notes><corresp id="c1-genes-08-00026"><label>*</label>Correspondence: <email>Daniel.Kaplan@med.fsu.edu</email>; Tel.: +1-850-645-0237</corresp><fn id="fn1-genes-08-00026"><label>&#x02020;</label><p>These two authors contributed equally to this work.</p></fn></author-notes><pub-date pub-type="epub"><day>11</day><month>1</month><year>2017</year></pub-date><pub-date pub-type="collection"><month>1</month><year>2017</year></pub-date><volume>8</volume><issue>1</issue><elocation-id>26</elocation-id><history><date date-type="received"><day>21</day><month>11</month><year>2016</year></date><date date-type="accepted"><day>03</day><month>1</month><year>2017</year></date></history><permissions><copyright-statement>&#x000a9; 2017 by the authors; licensee MDPI, Basel, Switzerland.</copyright-statement><copyright-year>2017</copyright-year><license><license-p><!--CREATIVE COMMONS-->This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC-BY) license (<ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</ext-link>).</license-p></license></permissions><abstract><p>Origin DNA melting is an essential process in the various domains of life. The replication fork helicase unwinds DNA ahead of the replication fork, providing single-stranded DNA templates for the replicative polymerases. The replication fork helicase is a ring shaped-assembly that unwinds DNA by a steric exclusion mechanism in most DNA replication systems. While one strand of DNA passes through the central channel of the helicase ring, the second DNA strand is excluded from the central channel. Thus, the origin, or initiation site for DNA replication, must melt during the initiation of DNA replication to allow for the helicase to surround a single-DNA strand. While this process is largely understood for bacteria and eukaryotic viruses, less is known about how origin DNA is melted at eukaryotic cellular origins. This review describes the current state of knowledge of how genomic DNA is melted at a replication origin in bacteria and eukaryotes. We propose that although the process of origin melting is essential for the various domains of life, the mechanism for origin melting may be quite different among the different DNA replication initiation systems.</p></abstract><kwd-group><kwd>DNA helicase</kwd><kwd>DNA replication</kwd><kwd>initiation</kwd><kwd>protein-DNA interaction</kwd><kwd>DnaA</kwd><kwd>Large T antigen</kwd><kwd>E1 helicase</kwd><kwd>Mcm2&#x02013;7</kwd><kwd>melting</kwd></kwd-group></article-meta></front><body><sec id="sec1-genes-08-00026"><title>1. Review of Bacterial Replication Initiator DnaA</title><p>Like every other organism, bacteria must replicate their DNA in order to produce viable offspring. However, bacteria cannot infinitely replicate, meaning there must be a tight regulation of this process. The fact that replication does not just start and pause indicates that there is a lot of regulation on the initiation of chromosome replication. DnaA, the key initiator protein among almost all bacteria, is a highly conserved protein and is the driver of the system in which DNA replication initiation is regulated. This protein has been studied extensively and understood through the <italic>Escherichia coli</italic> model.</p></sec><sec id="sec2-genes-08-00026"><title>2. DnaA-Orisome Structure</title><p>DnaA is a key protein in the initiation of bacterial replication (<xref ref-type="fig" rid="genes-08-00026-f001">Figure 1</xref>). Bound to high- and low-affinity sites at the initiation sequence, <italic>oriC</italic>, DnaA is a highly conserved protein among all bacteria that comprises the DNA-protein complex termed the orisome, which triggers the initiation of chromosome replication. OriC DNA is not bare throughout the cell cycle, but instead has bound DnaA to three high-affinity sites (left to right: R1, R2, R4). These three DnaA sites, along with oriC bending protein Fis, set a nucleosome-like conformation in the origin that has been suggested to prevent replication initiation (<xref ref-type="fig" rid="genes-08-00026-f002">Figure 2</xref>) [<xref rid="B1-genes-08-00026" ref-type="bibr">1</xref>]. Fis is not necessary for viability, however, the lack of Fis binding results in asynchronous replication in rapidly growing cells. This is due to the binding of DnaA to low affinity sites at a lower concentration than what is normally required, since there is no Fis protein to inhibit DnaA binding [<xref rid="B2-genes-08-00026" ref-type="bibr">2</xref>]. Additionally, this conformation keeps the DNA double-stranded until the appropriate replication-promoting proteins bind and separate the two strands. The review by Leonard and Grimwade [<xref rid="B1-genes-08-00026" ref-type="bibr">1</xref>] discusses that these replication-promoting proteins include additional DnaA and another DNA bending protein, Integration Host Factor (IHF). Upon accumulation of a sufficient level of DnaA-ATP, the active form of DnaA, Fis will be displaced and IHF will bind, along with DnaA, to low affinity sites between R1 and R2, and R2 and R4 [<xref rid="B3-genes-08-00026" ref-type="bibr">3</xref>]. IHF has been shown to be nonessential for the assembly of a functional orisome, however, this loss of IHF results in perturbed replication initiation [<xref rid="B1-genes-08-00026" ref-type="bibr">1</xref>]. The viability of cells lacking IHF binding is most likely due to the flexibility of the DNA between R1 and R5M.</p><p>Although the exact mechanism of the displacement of this initiator inhibition is unclear, a recent study has shown that ATP-bound DnaA, as opposed to ADP-bound DnaA, experiences a conformational change within domains I&#x02013;III that enhances its ability to bind to low affinity sites within oriC as well as cooperatively bind to already bound DnaA molecules [<xref rid="B4-genes-08-00026" ref-type="bibr">4</xref>]. Once a threshold concentration of DnaA-ATP is achieved in the cell, Fis can successfully be displaced and the inhibitory complex can progress to an active one. DNase I footprinting studies have suggested that DNA wraps around the DnaA oligomer once bound [<xref rid="B5-genes-08-00026" ref-type="bibr">5</xref>]. As illustrated in <xref ref-type="fig" rid="genes-08-00026-f001">Figure 1</xref>, the function of each domain has been determined via reverse genetics: DnaA recruitment (I), DNA binding (IV), oligomerization (I, III), ATP binding (III), and helicase loading (I, III) [<xref rid="B1-genes-08-00026" ref-type="bibr">1</xref>]. Between domains III and IV is an amphipathic region that is involved in binding to the inner membrane of the cell [<xref rid="B6-genes-08-00026" ref-type="bibr">6</xref>]. Additionally, domain II serves as a flexible linker, aligning domain I with domains III + IV [<xref rid="B4-genes-08-00026" ref-type="bibr">4</xref>]. </p></sec><sec id="sec3-genes-08-00026"><title>3. DNA Conformation</title><p>The oriC DNA contains multiple sites of DnaA binding in which specific binding is required for duplex unwinding (<xref ref-type="fig" rid="genes-08-00026-f003">Figure 3</xref>). Between the three high affinity sites mentioned in the above paragraph are low affinity DnaA sites (R5M, &#x003c4;2, I1, and I2, respectively, between R1 and R2; C3, C2, I3, and C1, respectively, between R2 and R4) [<xref rid="B3-genes-08-00026" ref-type="bibr">3</xref>], which become DnaA bound just before origin melting. The left half of oriC (R1&#x02013;I2) and right half of oriC (R2&#x02013;R4) have opposite orientations, with both oriented inward of oriC (towards each other) [<xref rid="B3-genes-08-00026" ref-type="bibr">3</xref>]. Kaur et al. demonstrated that the loss of any two high affinity sites resulted in the loss of oriC function, while the loss of any single high affinity site resulted in a functional oriC with perturbed initiation timing, with an R4 mutation being the most significant [<xref rid="B3-genes-08-00026" ref-type="bibr">3</xref>]. The loss of R2 showed the least significant impact, implying that R2 may be a redundant site or may stabilize the oligomers from R1 and R4. The loss of any single high affinity site rendered the cell dependent on both Fis and IHF binding for a functional oriC. When either R1 or R4 was deleted, R2 was shown to be capable of nucleating a DnaA oligomer, although a higher concentration of DnaA was required. Less DnaA was detected in the right half of oriC in R4 mutants, supporting the importance of R4 [<xref rid="B2-genes-08-00026" ref-type="bibr">2</xref>]. Additionally, it was shown that <italic>E. coli</italic> mutants with a deletion in the entire right half or oriC (R2&#x02013;R4) are still viable under slow growth conditions. However, with sensitivity to rich media and other rapid growth conditions, it is possible that the right half of oriC has evolved to support multi-forked replication [<xref rid="B7-genes-08-00026" ref-type="bibr">7</xref>]. With these data on alternative methods for pre-RC formation, the minimum requirements for origin melting can be further investigated and understood with greater complexity.</p><p>The DNA unwinding element is an AT-rich region towards the left of oriC that has less helical stability than the rest of oriC DNA. DNA unwinding element (DUE) consists of three regions (L, M, R) 13-mer repeats [<xref rid="B1-genes-08-00026" ref-type="bibr">1</xref>]. The DUE is the first piece of DNA to unwind in replication initiation [<xref rid="B8-genes-08-00026" ref-type="bibr">8</xref>], with evidence supporting initiation of melting beginning with the L-region [<xref rid="B9-genes-08-00026" ref-type="bibr">9</xref>]. Kowalski and Eddy have demonstrated that by deleting the l-13mer and replacing it with a dissimilar sequence, its helical instability, rather than its specific sequence, is essential for origin function and duplex unwinding. Meanwhile, the sequence of the r-13mer is the most evolutionarily conserved of the three segments, suggesting a role for the r-13mer in specific protein recognition [<xref rid="B10-genes-08-00026" ref-type="bibr">10</xref>].</p><p>An increase in net negative supercoiling (a general undertwist in the DNA has been shown in more efficient <italic>E. coli</italic> initiation, indicating that this chromosomal topology is preferred for replication initiation [<xref rid="B11-genes-08-00026" ref-type="bibr">11</xref>]. The flanking gene <italic>gidA</italic> introduces negative supercoiling to the left of the DUE, which helps further destabilize the already less thermodynamically stable AT-rich DUE [<xref rid="B11-genes-08-00026" ref-type="bibr">11</xref>]. Supporting this, maximal <italic>gidA</italic> transcription occurs before initiation. Additionally, Magnan and Bates discuss in their review the importance of positive supercoiling in regulating oriC transcription [<xref rid="B11-genes-08-00026" ref-type="bibr">11</xref>]. The positive supercoiling to the right of DUE is regulated by the flanking gene <italic>mioC</italic>, with maximal transcription immediately after initiation. While <italic>gidA</italic> and <italic>mioC</italic> are both dispensable, it is possible that they help drive initiation under suboptimal conditions [<xref rid="B11-genes-08-00026" ref-type="bibr">11</xref>]. Kaur et al. tested for the conformation of oriC pre-melting, and developed a model in which oriC forms a constrained loop by interactions of the N-termini of high affinity-bound DnaA, and this loop and repression of active low affinity sites is assisted by Fis binding (<xref ref-type="fig" rid="genes-08-00026-f002">Figure 2</xref>) [<xref rid="B3-genes-08-00026" ref-type="bibr">3</xref>]. It is possible that this pre-initiation complex causes a reduction of negative supercoiling adjacent to the DUE, and further research is needed to support this.</p><p>Recent research has found a DnaA-trio, which consists of a repeating trinucleotide motif, beginning with 3&#x02032;-GAT-5&#x02032;, which lies between the AT-rich DUE and the GC rich region (which is adjacent to the DnaA boxes) (<xref ref-type="fig" rid="genes-08-00026-f003">Figure 3</xref>) [<xref rid="B12-genes-08-00026" ref-type="bibr">12</xref>]. These newer findings will be discussed in greater detail later on. </p></sec><sec id="sec4-genes-08-00026"><title>4. Initiator Mechanism</title><p>DnaA contains various AAA+ (ATPases Associated with various cellular Activities) motif sequences which provide a range of functions, including DnaA-DnaA binding [<xref rid="B13-genes-08-00026" ref-type="bibr">13</xref>] and DnaA-ssDNA (single-stranded DNA) binding [<xref rid="B14-genes-08-00026" ref-type="bibr">14</xref>]. DnaA bound to oriC high affinity DNA boxes, via its domain IV helix-turn-helix motif [<xref rid="B4-genes-08-00026" ref-type="bibr">4</xref>], nucleates by binding ATP-DnaA at adjacent low affinity sites. Interestingly, one method of regulation of this step is through a chromosome-membrane protein tether. Bound to an array of operator sequences on the chromosome up to 1 Mb away from oriC, this tether is proposed to inhibit DnaA binding to DNA by reducing the net negative supercoiling [<xref rid="B15-genes-08-00026" ref-type="bibr">15</xref>], although this mechanism is not quite yet understood. DnaA-ATP is required for effective binding to low affinity sites and DnaA oligomer formation [<xref rid="B4-genes-08-00026" ref-type="bibr">4</xref>], yet DnaA cannot always be bound to ATP. Examining the crystal structure of DnaA bound to ssDNA revealed four DnaA protomers per oligomer, forming a right hand spiral around a single strand of the duplex DNA [<xref rid="B14-genes-08-00026" ref-type="bibr">14</xref>].</p><p>The DnaA oligomer formation from R1 and R4 inwards towards R2 [<xref rid="B3-genes-08-00026" ref-type="bibr">3</xref>] is mediated by the Arg285 residue within domain III, which is oriented inward towards R2 for both the right and left half of oriC [<xref rid="B13-genes-08-00026" ref-type="bibr">13</xref>]. These Arg285 fingers stimulate subcomplex formation by binding the ATP nucleotide of the next DnaA monomer, eventually forming a DnaA oligomer. This study also found that the Arg285 finger of R1-box-bound DnaA is crucial for DUE unwinding and single-stranded DNA unwinding element (ssDUE) binding, where the same residue of R4-box-bound DnaA plays a necessary role in DnaB helicase loading.</p><p>The interaction between DnaA monomers facilitates a conformational change in the bound strand of DNA, stretching the contacted strand and disrupting the base pairs of the thermodynamically unstable DUE [<xref rid="B14-genes-08-00026" ref-type="bibr">14</xref>]. Once this region of oriC unwinds, origin melting is enhanced by binding of the DnaA box-bound DnaA filaments to the partially melted region of oriC DNA. DnaA forms a helical filament around the ssDNA, where each protomer binds three nucleotides via two pairs of helices, &#x003b1; 3/&#x003b1; 4 and &#x003b1; 5/&#x003b1; 6, which line the inner channel of this protein assembly [<xref rid="B14-genes-08-00026" ref-type="bibr">14</xref>]. Additionally, this conformation prevents reannealing of the two strands of DNA. Once this conformation is set, as visualized in <xref ref-type="fig" rid="genes-08-00026-f004">Figure 4</xref>, DnaA stabilizes the partially melted origin by nucleating from the already bound DnaA, forming dynamic filaments on the ssDNA monomer by monomer in a 3&#x02032;-5&#x02032; directionality [<xref rid="B16-genes-08-00026" ref-type="bibr">16</xref>]. </p><p>While the details of this mechanism have been widely unknown, a recent study has identified a DnaA-trio motif within the ssDNA, which is recognized by the DnaA box-bound DnaA [<xref rid="B12-genes-08-00026" ref-type="bibr">12</xref>], facilitating filament formation on the ssDNA via the domain III Initiator Specific Motif (ISM) Initiator Specific Motif [<xref rid="B14-genes-08-00026" ref-type="bibr">14</xref>]. According to the study conducted by Richardson et al., the box-bound DnaA recognizes a 3&#x02032;-GAT-5&#x02032; sequence, with some variability between the first and third nucleotide, but a highly conserved second adenine nucleotide [<xref rid="B12-genes-08-00026" ref-type="bibr">12</xref>]. At this point, DnaA will nucleate across the next few DnaA-trios and into the DUE. Upon filament formation and further duplex melting, DnaA will load DnaB via domain I and domain III interactions, initiating the formation of the prepriming complex (<xref ref-type="fig" rid="genes-08-00026-f004">Figure 4</xref>, [<xref rid="B17-genes-08-00026" ref-type="bibr">17</xref>]).</p></sec><sec id="sec5-genes-08-00026"><title>5. Large T-Antigen and E1 Helicases</title><p>Mechanisms of origin melting can be derived from the structural analysis of the DNA tumor virus Simian virus 40 (SV40) and papillomavirus. Specifically, SV40 utilizes its Large T antigen (LTag) to initially separate and continually unwind double-stranded DNA (dsDNA) in host cells, and the papillomavirus enlists E1 to do the same. Due to eukaryotic similarities, such as homohexameric domains and beta hairpin loops, results derived from these models may be applicable to the understanding of eukaryotic melting processes. Unlike replication in eukaryotes, melting with initiators SV40 and E1 is performed through cooperation of only a handful of protein domains compared to the variety of protein complexes often necessary to facilitate eukaryotic DNA replication. This lack of complexity yet abundance of shared homology has allowed recent studying of SV40 and E1 to elucidate potential mechanisms for eukaryotic origin melting.</p></sec><sec id="sec6-genes-08-00026"><title>6. Structure of LTag and the Core Ori</title><p>Melting of eukaryotic DNA is thought to require a variety of protein factors which work together to manipulate dsDNA, ultimately separating the two strands via mechanical force. Due to the complexity of the eukaryotic cellular machinery, researchers have turned to more simplistic models of initiation, such as the Large T antigen. LTag is a double hexameric protein complex produced by the SV40 virus which is solely responsible for melting of SV40 viral DNA origins, as well as helicase activity once replication forks have been established. Three distinguishable domains compartmentalize these actions, the first of which is known as the origin binding domain (OBD). The OBD of LTag has been shown to bind both dsDNA and ssDNA [<xref rid="B18-genes-08-00026" ref-type="bibr">18</xref>] much like the DNA binding domains of DnaA [<xref rid="B12-genes-08-00026" ref-type="bibr">12</xref>]. Many similarly structured DNA binding domains (DBDs) of eukaryotic and prokaryotic replication machinery bind ssDNA specifically, such as eukaryotic replication protein A (RPA), and bacterial <italic>E. coli</italic> single-stranded DNA-binding proteins (EcoSSB) [<xref rid="B19-genes-08-00026" ref-type="bibr">19</xref>,<xref rid="B20-genes-08-00026" ref-type="bibr">20</xref>,<xref rid="B21-genes-08-00026" ref-type="bibr">21</xref>]. The second and third domains are the Zn domains, and AAA+ domains, respectively [<xref rid="B22-genes-08-00026" ref-type="bibr">22</xref>]. The three domains can be found in <xref ref-type="fig" rid="genes-08-00026-f005">Figure 5</xref>A. To initiate replication, these domains seek out designated binding sites on viral DNA along a segment known as the core origin of DNA.</p><p>The SV40 core origin for DNA replication (core ori) is composed of four pentanucleotide GAGGC sequences, an AT-rich region (AT), and an early palindromic sequence (EP). From 5&#x02019;-3&#x02019; the ori is composed of the EP, the four pentanucleotides, and the AT region (<xref ref-type="fig" rid="genes-08-00026-f005">Figure 5</xref>B). Due to the double hexameric nature of LTag, and the asymmetry of the core ori, each hexamer is bound to two GAGGC sequences and either an EP or AT. Once each hexamer is bound, the double hexamer is complete, and completion of the double hexamer is associated with ori melting [<xref rid="B23-genes-08-00026" ref-type="bibr">23</xref>]. The GAGGC sequences themselves are recognized by the OBDs of LTag at major grooves [<xref rid="B24-genes-08-00026" ref-type="bibr">24</xref>,<xref rid="B25-genes-08-00026" ref-type="bibr">25</xref>], while AAA+ regions were found to utilize histidine residues at the tips of beta hairpin loops to interact with ori DNA electrostatically at minor grooves (<xref ref-type="fig" rid="genes-08-00026-f006">Figure 6</xref>B) [<xref rid="B22-genes-08-00026" ref-type="bibr">22</xref>]. Because proteins often use arginine residues to orient themselves into narrow minor grooves of DNA [<xref rid="B26-genes-08-00026" ref-type="bibr">26</xref>], histidine&#x02019;s role in the AAA+ domains of LTag was originally thought to be the same as that of arginine elsewhere (i.e., as a DNA recognition element) [<xref rid="B22-genes-08-00026" ref-type="bibr">22</xref>]. However, research into the role of these histidines and their respective beta hairpins has suggested unique models for melting discussed below.</p></sec><sec id="sec7-genes-08-00026"><title>7. Mechanisms of Melting with LTag</title><p>The identified histidine residue is a component of beta hairpin loops which the AAA+ domain utilizes to interact with DNA (<xref ref-type="fig" rid="genes-08-00026-f006">Figure 6</xref>B). Because LTag is a double hexamer, the dodecahedric complex contains two AAA+ domains with a total of twelve beta hairpin loops, and therefore twelve interactive histidines [<xref rid="B28-genes-08-00026" ref-type="bibr">28</xref>]. Only a single pair of histidines, one imidazole ring from each AAA+ domain, were found to lie in the same minor groove, as well as in the same plane, and within 2.7 angstroms of each other, suggesting the presence of hydrogen bonds to provide enhanced stabilization of the LTag dimer [<xref rid="B22-genes-08-00026" ref-type="bibr">22</xref>]. Portions of the core ori, at which these histidine anchors were found, have been confirmed to be melted after double hexamer assembly [<xref rid="B29-genes-08-00026" ref-type="bibr">29</xref>]. Further mutagenesis of these beta hairpin structures has confirmed their necessity during melting of regions flanking the central pentameric sequences of the core ori [<xref rid="B30-genes-08-00026" ref-type="bibr">30</xref>]. Each set of six beta hairpins are arranged in a planar pattern ultimately creating a ring with a central, positively charged channel (<xref ref-type="fig" rid="genes-08-00026-f006">Figure 6</xref>B) [<xref rid="B31-genes-08-00026" ref-type="bibr">31</xref>]. This channel is between 7&#x02013;15 angstroms in diameter [<xref rid="B32-genes-08-00026" ref-type="bibr">32</xref>], making it incredibly unlikely for dsDNA to be thread through, but highly likely for ssDNA [<xref rid="B30-genes-08-00026" ref-type="bibr">30</xref>,<xref rid="B33-genes-08-00026" ref-type="bibr">33</xref>]. For comparison, a hexameric helicase that has been shown to envelop dsDNA, known as RuvB, has a central channel diameter of 30 angstroms [<xref rid="B34-genes-08-00026" ref-type="bibr">34</xref>]. The SV40 distant homolog, E1, utilizes helicase domains determined to envelop solely ssDNA (<xref ref-type="fig" rid="genes-08-00026-f007">Figure 7</xref>D), and it contains a central channel 17 angstroms in diameter as a result [<xref rid="B35-genes-08-00026" ref-type="bibr">35</xref>]. It is therefore likely that after initial melting, the ssDNA will become engulfed in the central channel as the helicase domains translocate down the DNA, separating the double helix via steric exclusion principles. The steric exclusion model of strand separation occurs when one ssDNA strand, from the duplex that was melted, is enclosed by a hexameric helicase channel so that when the other strand remains outside of the channel, the duplex may be pried apart further by helicase progression down the ssDNA [<xref rid="B36-genes-08-00026" ref-type="bibr">36</xref>]. </p><p>Crystal structures of LTag-DNA complexes have elucidated that each of the OBDs of the double hexamer are oriented 180 degrees to each other when bound to DNA, potentially as a result of a twisting motion which could have generated mechanical force to melt the ori DNA [<xref rid="B22-genes-08-00026" ref-type="bibr">22</xref>]. Since hairpin histidines act as the anchor for LTag&#x02019;s AAA+ domains, and the minor grooves in which they anchor were subsequently melted, it is feasible that this twisting motion would provide enough force to disrupt hydrogen bonds between base pairs of ori nucleotides, similar to the &#x0201c;untwisting&#x0201d; mechanism utilized by the LTag homolog, E1 (<xref ref-type="fig" rid="genes-08-00026-f007">Figure 7</xref>). However, LTag-ori-DNA crystal structures showed no significant deformations of DNA [<xref rid="B22-genes-08-00026" ref-type="bibr">22</xref>]. Because of proposals of E1 utilizing trimers in the &#x0201c;untwisting&#x0201d; mechanism before construction of the E1 double hexamers homologous to LTag (<xref ref-type="fig" rid="genes-08-00026-f007">Figure 7</xref>) [<xref rid="B37-genes-08-00026" ref-type="bibr">37</xref>], it has been proposed that an intermediate LTag structure is formed as well, which melts the ori before the final LTag double hexamer is assembled for translocation [<xref rid="B22-genes-08-00026" ref-type="bibr">22</xref>].</p></sec><sec id="sec8-genes-08-00026"><title>8. Structure of the E1 Double Hexamer and Double Trimer </title><p>Much like SV40&#x02019;s LTag, papillomavirus&#x02019;s E1 is a homohexameric protein complex responsible for both the initiation of melting and the successive unwinding of DNA. E1 recognizes its unique origin of replication (ori) through DBDs which work to recognize four E1 binding sites, in a nature homologous to SV40&#x02019;s use of OBDs to bind four GAGGC sequences. From left to right, the E1 protein complex consists of an N-terminal domain, a DBD, an oligomerization domain, a helicase domain, and an acidic C-terminal tail [<xref rid="B37-genes-08-00026" ref-type="bibr">37</xref>]. The DBD is oriented between the two helicase domains which are arranged facing each other. The DBD binds to the E1 binding sites at the center of the ori, while the neighboring helicase domains bind to flanking regions of DNA. The helicase domains of the double hexamer (DH) arrange their beta hairpins in a staircase manner as opposed to the planar formation characteristic of LTag helicase domains (<xref ref-type="fig" rid="genes-08-00026-f006">Figure 6</xref>).</p><p>Unique to studies of E1, formation of an E1 double trimer (DT) has been identified before formation of a double hexamer. Although the exact structure of the DT has not been identified, it is accepted that the DBD of the trimer is oriented between helicase domains, and that the DBD binds the center of the origin while the helicase domains remain bound to flanking regions of DNA. The DT arises when E1 interacts with a dsDNA ori probe in the presence of nucleotides, while the DH subsequently forms in the presence of ATP [<xref rid="B37-genes-08-00026" ref-type="bibr">37</xref>]. The DT has been shown to recognize the origin of replication, and ultimately convert into a double hexamer on ssDNA derived from a melted origin [<xref rid="B37-genes-08-00026" ref-type="bibr">37</xref>].</p></sec><sec id="sec9-genes-08-00026"><title>9. Mechanisms of Melting with E1</title><p>Although a single E1 trimer does not maintain helicase abilities [<xref rid="B38-genes-08-00026" ref-type="bibr">38</xref>], the DT has conclusively demonstrated an ability to melt dsDNA into ssDNA so that the resulting ssDNA may be used as a template for DH assembly [<xref rid="B37-genes-08-00026" ref-type="bibr">37</xref>]. The identity of the melting complex as DT and not DH, or an intermediate between the two, was concluded through time-course experimentation [<xref rid="B39-genes-08-00026" ref-type="bibr">39</xref>]. The determination of the DT as the melting machinery of E1 has led to recent extensive kinetic and biochemical analyses with the goal of identifying the DT melting mechanism. Plasmid untwisting assays have supported the hypothesis that initial melting is performed via an untwisting mechanism of ori DNA by the DT (<xref ref-type="fig" rid="genes-08-00026-f007">Figure 7</xref>) [<xref rid="B39-genes-08-00026" ref-type="bibr">39</xref>]. It is proposed that by hydrolyzing ATP, the DT manages to utilize Histidine residues (H507) in the beta hairpins of the helicase domains to initiate melting (<xref ref-type="fig" rid="genes-08-00026-f006">Figure 6</xref>A). Because the helicase domains themselves remain on the flanks of the E1 binding sites, the histidine interactions with DNA are thought to melt the central portion indirectly through structural deformations of the flanks which propagate through the center binding sites via an untwisting mechanism [<xref rid="B39-genes-08-00026" ref-type="bibr">39</xref>]. If this mechanism were to occur, then mechanical force must be transmitted from the flanks of the ori through the central binding sites. Therefore, nicks in the DNA should inhibit ori melting as a result of interrupting the path of force transference. This is precisely what Shuck and Stenlund found during nicking experiments of ori DNA [<xref rid="B39-genes-08-00026" ref-type="bibr">39</xref>].</p><p>The untwisting mechanism has become a widely accepted proposal. However, a &#x0201c;squeeze-to-open&#x0201d; model has been suggested, in which dsDNA is enveloped by DH and ultimately compressed in the central channel of the helicase domains until base pairs are separated [<xref rid="B40-genes-08-00026" ref-type="bibr">40</xref>]. The &#x0201c;squeeze-to-open&#x0201d; model is supported by evidence of melting occurring simultaneously as LTag assembly occurs [<xref rid="B29-genes-08-00026" ref-type="bibr">29</xref>]. Since E1 has only demonstrated central channels capable of enveloping ssDNA, a model involving a larger central channel proves more promising for LTag structures, because they have been shown to undergo conformational changes promoting slight dilations of their central channels [<xref rid="B32-genes-08-00026" ref-type="bibr">32</xref>].</p></sec><sec id="sec10-genes-08-00026"><title>10. MCM2-7 Helicase</title><p>In eukaryotic cells, it has not yet been determined what melts replication origin DNA. The MCM2&#x02013;7 helicase [<xref rid="B41-genes-08-00026" ref-type="bibr">41</xref>] and the origin recognition complex (ORC) [<xref rid="B42-genes-08-00026" ref-type="bibr">42</xref>] assemblies are the most likely candidates, since these complexes hydrolyze ATP, and energy is required for origin melting. The MCM2&#x02013;7 helicase is related to Large T and E1 helicase proteins, suggesting conservation of mechanism [<xref rid="B43-genes-08-00026" ref-type="bibr">43</xref>]. However, MCM2&#x02013;7 lacks much of the machinery present in the viral counterparts, suggesting that the mechanism for origin melting is different for MCM2&#x02013;7 compared to Large T and E1 [<xref rid="B43-genes-08-00026" ref-type="bibr">43</xref>]. Furthermore, the MCM2&#x02013;7 helicase is very weak on its own [<xref rid="B44-genes-08-00026" ref-type="bibr">44</xref>], and MCM2&#x02013;7 requires Cdc45 and GINS attachment for full helicase activity [<xref rid="B45-genes-08-00026" ref-type="bibr">45</xref>]. The CMG (CDC45-MCM2&#x02013;7-GINS) helicase is conserved in archaea as well [<xref rid="B46-genes-08-00026" ref-type="bibr">46</xref>].</p><p>The MCM2&#x02013;7 has an N-terminal domain, required for double hexamer attachment, and a C-terminal AAA+ domain, required for ATPase activity [<xref rid="B41-genes-08-00026" ref-type="bibr">41</xref>,<xref rid="B47-genes-08-00026" ref-type="bibr">47</xref>]. The double-hexamer interface is active during late M and G<sub>1</sub> phase, when the MCM2&#x02013;7 is loaded as a double hexamer [<xref rid="B47-genes-08-00026" ref-type="bibr">47</xref>,<xref rid="B48-genes-08-00026" ref-type="bibr">48</xref>]. However, during S phase, when the replication fork helicase is activated, the MCM2&#x02013;7 double hexamers dissociate, and the resulting CMG helicases unwind bidirectionally from the origin [<xref rid="B49-genes-08-00026" ref-type="bibr">49</xref>,<xref rid="B50-genes-08-00026" ref-type="bibr">50</xref>]. The MCM2&#x02013;7 helicase also has DNA binding regions within the N-terminal and AAA+ domains [<xref rid="B51-genes-08-00026" ref-type="bibr">51</xref>,<xref rid="B52-genes-08-00026" ref-type="bibr">52</xref>]. It is generally agreed that the CDC45-MCM2&#x02013;7-GINS assembly, the fully-active helicase, unwinds DNA by a steric exclusion mechanism [<xref rid="B49-genes-08-00026" ref-type="bibr">49</xref>,<xref rid="B53-genes-08-00026" ref-type="bibr">53</xref>,<xref rid="B54-genes-08-00026" ref-type="bibr">54</xref>,<xref rid="B55-genes-08-00026" ref-type="bibr">55</xref>]. In this model, the leading strand passes through the central channel of CMG [<xref rid="B49-genes-08-00026" ref-type="bibr">49</xref>,<xref rid="B53-genes-08-00026" ref-type="bibr">53</xref>,<xref rid="B54-genes-08-00026" ref-type="bibr">54</xref>,<xref rid="B55-genes-08-00026" ref-type="bibr">55</xref>]. The excluded lagging strand may pass through a side channel of the CMG, or alternatively the lagging strand may pass completely outside the CMG [<xref rid="B49-genes-08-00026" ref-type="bibr">49</xref>,<xref rid="B53-genes-08-00026" ref-type="bibr">53</xref>,<xref rid="B54-genes-08-00026" ref-type="bibr">54</xref>,<xref rid="B55-genes-08-00026" ref-type="bibr">55</xref>]. In either event, the double-stranded origin DNA must be melted to activate CMG unwinding.</p><p>What is the mechanism for replication fork unwinding by the CMG? According to the rotary model, the ssDNA lying inside the central channel of CMG is passed from one AAA+ domain to another in a sequential manner [<xref rid="B35-genes-08-00026" ref-type="bibr">35</xref>]. This model is derived mainly from homology to the Large T and E1 viral helicase systems, for which a rotary model is proposed [<xref rid="B35-genes-08-00026" ref-type="bibr">35</xref>]. A second model, based upon recent electron microscopy structures, proposes that the ssDNA binding regions of the AAA+ domain hands-off the ssDNA to the ssDNA binding region within the N-terminal region [<xref rid="B49-genes-08-00026" ref-type="bibr">49</xref>,<xref rid="B53-genes-08-00026" ref-type="bibr">53</xref>,<xref rid="B54-genes-08-00026" ref-type="bibr">54</xref>,<xref rid="B55-genes-08-00026" ref-type="bibr">55</xref>]. Future studies may reveal which one of these two models reflects the CMG mechanism for unwinding DNA in vivo.</p><p>The origin dsDNA encircled by MCM2&#x02013;7 must be converted from dsDNA to ssDNA during replication initiation. In budding yeast, the origins are AT-rich, similar to the origins of bacteria and eukaryotic viral origins, suggesting that this may be conserved to promote initial melting of the origin, since AT-rich regions are inherently prone to melting. The MCM2&#x02013;7 may open to promote exclusion of the lagging strand during the replication initiation. However, the mechanism for MCM2&#x02013;7 ring opening is currently not known, but it may occur at the MCM2&#x02013;MCM5 interface because this interaction surface is inherently weak [<xref rid="B44-genes-08-00026" ref-type="bibr">44</xref>,<xref rid="B56-genes-08-00026" ref-type="bibr">56</xref>,<xref rid="B57-genes-08-00026" ref-type="bibr">57</xref>]. Future studies may reveal how the MCM2&#x02013;7 ring opens during S phase to allow for origin melting, and future studies may also reveal whether ring opening occurs before or after MCM2&#x02013;7 double hexamer dissociation.</p><p>Additional ssDNA binding proteins may participate in the origin melting process. Proteins that bind origin ssDNA in budding yeast include MCM10 [<xref rid="B58-genes-08-00026" ref-type="bibr">58</xref>,<xref rid="B59-genes-08-00026" ref-type="bibr">59</xref>], SLD3 [<xref rid="B60-genes-08-00026" ref-type="bibr">60</xref>], SLD2 [<xref rid="B61-genes-08-00026" ref-type="bibr">61</xref>], DPB11 [<xref rid="B62-genes-08-00026" ref-type="bibr">62</xref>], and RPA [<xref rid="B63-genes-08-00026" ref-type="bibr">63</xref>], the eukaryotic single-stranded binding protein. These proteins do not hydrolyze ATP, and therefore their contribution to origin melting lies in their ability to bind ssDNA and stabilize the melted state. Interestingly, mutating the ssDNA binding residues of MCM10, SLD2, SLD3, and DPB11 results in decreased replication initiation and diminished recruitment of RPA to replication origins [<xref rid="B62-genes-08-00026" ref-type="bibr">62</xref>,<xref rid="B64-genes-08-00026" ref-type="bibr">64</xref>,<xref rid="B65-genes-08-00026" ref-type="bibr">65</xref>,<xref rid="B66-genes-08-00026" ref-type="bibr">66</xref>]. These data suggest that one or more of these initiation factors may be required to stabilize melted origin ssDNA, and perhaps even hand off melted origin DNA to RPA. However, little is known regarding the mechanism for how the initiation factors melt origin DNA, and little is known how the initiation factors hand off ssDNA to RPA. The human homologs of MCM10 (human MCM10) [<xref rid="B67-genes-08-00026" ref-type="bibr">67</xref>,<xref rid="B68-genes-08-00026" ref-type="bibr">68</xref>], SLD3 (Treslin) [<xref rid="B66-genes-08-00026" ref-type="bibr">66</xref>], and SLD2, RECQL4 [<xref rid="B69-genes-08-00026" ref-type="bibr">69</xref>], have also been shown to bind ssDNA, suggesting that the function may be conserved from budding yeast to human. </p><p>A replication initiation assay has recently been reconstituted for budding yeast using only purified proteins [<xref rid="B70-genes-08-00026" ref-type="bibr">70</xref>]. Furthermore, methods exist in budding yeast for the induced-degradation of essential genes, with phenotypic scoring of the mutant phenotype [<xref rid="B71-genes-08-00026" ref-type="bibr">71</xref>,<xref rid="B72-genes-08-00026" ref-type="bibr">72</xref>]. In addition, the ssDNA binding residues of the initiation factors have now been identified for budding yeast [<xref rid="B62-genes-08-00026" ref-type="bibr">62</xref>,<xref rid="B64-genes-08-00026" ref-type="bibr">64</xref>,<xref rid="B65-genes-08-00026" ref-type="bibr">65</xref>,<xref rid="B66-genes-08-00026" ref-type="bibr">66</xref>]. Thus, through a combination of in vitro reconstitution assays and in vivo experiments, a mechanistic understanding of how origin DNA is melted, stabilized, and transferred to RPA will soon be revealed for this model eukaryotic organism.</p></sec><sec id="sec11-genes-08-00026"><title>11. Concluding Remarks</title><p>A key step in replication initiation in all organisms may be the melting of origin DNA, since replication fork helicases in all systems seem to unwind DNA by a steric exclusion mechanism. In bacteria, the DnaA protein may be responsible for melting origin DNA, and also for loading the helicase onto the melted ssDNA. For eukaryotic viruses, the Large T and E1 helicases are competent to melt the origin DNA and subsequently unwind the DNA by steric exclusion. For the cellular eukaryotic replication initiation machinery, it appears that essential initiation factors, including MCM10, SLD3, SLD2, and DPB11, may be responsible for stabilizing the melted origin DNA, and these proteins may also participate in the hand-off of melted origin ssDNA to RPA. Thus, while origin melting is common for all domains of life, the mechanism for origin melting may be quite different for each DNA replication initiation system.</p></sec></body><back><ack><title>Acknowledgments</title><p>This work has been supported by the National Institute of General Medical Sciences of the National Institutes of Health under Award Number R15GM113167.</p></ack><notes><title>Author Contributions</title><p>M.P.M., J.M.J., I.B., and D.L.K. wrote the manuscript.</p></notes><notes notes-type="COI-statement"><title>Conflicts of Interest</title><p>The authors declare no conflict of interest.</p></notes><ref-list><title>References</title><ref id="B1-genes-08-00026"><label>1.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Leonard</surname><given-names>A.</given-names></name><name><surname>Grimwade</surname><given-names>J.</given-names></name></person-group>
+<article-title>The orisome: Structure and function</article-title>
+<source>Front. Microbiol.</source>
+<year>2015</year>
+<volume>6</volume>
+<fpage>1</fpage>
+<lpage>13</lpage>
+<pub-id pub-id-type="doi">10.3389/fmicb.2015.00545</pub-id>
+<pub-id pub-id-type="pmid">25653648</pub-id></element-citation></ref><ref id="B2-genes-08-00026"><label>2.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Ryan</surname><given-names>V.T.</given-names></name><name><surname>Grimwade</surname><given-names>J.</given-names></name><name><surname>Camara</surname><given-names>J.E.</given-names></name><name><surname>Crooke</surname><given-names>E.</given-names></name><name><surname>Leonard</surname><given-names>A.</given-names></name></person-group>
+<article-title>Escherichia coli prereplication complex assembly is regulated by dynamic interplay among Fis, IHF and DnaA</article-title>
+<source>Mol. Microbiol.</source>
+<year>2004</year>
+<volume>51</volume>
+<fpage>1347</fpage>
+<lpage>1359</lpage>
+<pub-id pub-id-type="doi">10.1046/j.1365-2958.2003.03906.x</pub-id>
+<pub-id pub-id-type="pmid">14982629</pub-id></element-citation></ref><ref id="B3-genes-08-00026"><label>3.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kaur</surname><given-names>G.</given-names></name><name><surname>Vora</surname><given-names>M.</given-names></name><name><surname>Czerwonka</surname><given-names>C.</given-names></name><name><surname>Rozgaja</surname><given-names>T.</given-names></name><name><surname>Grimwade</surname><given-names>J.</given-names></name><name><surname>Leonard</surname><given-names>A.</given-names></name></person-group>
+<article-title>Building the bacterial orisome: High affinity DnaA recognition plays a role in setting the conformation of oriC DNA</article-title>
+<source>Mol. Microbiol.</source>
+<year>2014</year>
+<volume>91</volume>
+<fpage>1148</fpage>
+<lpage>1163</lpage>
+<pub-id pub-id-type="doi">10.1111/mmi.12525</pub-id>
+<pub-id pub-id-type="pmid">24443848</pub-id></element-citation></ref><ref id="B4-genes-08-00026"><label>4.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Saxena</surname><given-names>R.</given-names></name><name><surname>Vasudevan</surname><given-names>S.</given-names></name><name><surname>Patil</surname><given-names>D.</given-names></name><name><surname>Ashoura</surname><given-names>N.</given-names></name><name><surname>Grimwade</surname><given-names>J.</given-names></name><name><surname>Crooke</surname><given-names>E.</given-names></name></person-group>
+<article-title>Nucleotide-induced conformational changes in <italic>Escherichia coli</italic> DnaA protein are required for bacterial ORC to pre-RC conversion at the chromosomal origin</article-title>
+<source>Int. J. Mol. Sci.</source>
+<year>2015</year>
+<volume>16</volume>
+<fpage>27897</fpage>
+<lpage>27911</lpage>
+<pub-id pub-id-type="doi">10.3390/ijms161126064</pub-id>
+<pub-id pub-id-type="pmid">26610483</pub-id></element-citation></ref><ref id="B5-genes-08-00026"><label>5.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Fuller</surname><given-names>R.S.</given-names></name><name><surname>Funnell</surname><given-names>B.E.</given-names></name><name><surname>Kornberg</surname><given-names>A.</given-names></name></person-group>
+<article-title>The DnaA protein complex with the <italic>E. coli</italic> chromosomal replication origin (oriC) and other DNA sites</article-title>
+<source>Cell</source>
+<year>1984</year>
+<volume>38</volume>
+<fpage>889</fpage>
+<lpage>900</lpage>
+<pub-id pub-id-type="doi">10.1016/0092-8674(84)90284-8</pub-id>
+<pub-id pub-id-type="pmid">6091903</pub-id></element-citation></ref><ref id="B6-genes-08-00026"><label>6.</label><element-citation publication-type="book">
+<person-group person-group-type="author"><name><surname>Periasamy</surname><given-names>V.</given-names></name></person-group>
+<article-title>Co-Ordination of Replication Initiation with Transcriptional Regulation in <italic>Escherichia coli</italic></article-title>
+<source>Ph.D. Thesis</source>
+<publisher-name>University of Buffalo</publisher-name>
+<publisher-loc>Buffalo, NY, USA</publisher-loc>
+<year>2015</year>
+</element-citation></ref><ref id="B7-genes-08-00026"><label>7.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Stepankiw</surname><given-names>N.</given-names></name><name><surname>Kaidow</surname><given-names>A.</given-names></name><name><surname>Boye</surname><given-names>E.</given-names></name><name><surname>Bates</surname><given-names>D.</given-names></name></person-group>
+<article-title>The right half of the <italic>Escherichia coli</italic> replication origin is not essential for viability, but facilitates multi-forked replication</article-title>
+<source>Mol. Microbiol.</source>
+<year>2009</year>
+<volume>74</volume>
+<fpage>467</fpage>
+<lpage>479</lpage>
+<pub-id pub-id-type="doi">10.1111/j.1365-2958.2009.06877.x</pub-id>
+<pub-id pub-id-type="pmid">19737351</pub-id></element-citation></ref><ref id="B8-genes-08-00026"><label>8.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Gille</surname><given-names>H.</given-names></name><name><surname>Messer</surname><given-names>W.</given-names></name></person-group>
+<article-title>Localized DNA melting and structural perturbations in the origin of replication, oriC, of <italic>Escherichia coli</italic> in vitro and in vivo</article-title>
+<source>EMBO J.</source>
+<year>1991</year>
+<volume>10</volume>
+<fpage>1579</fpage>
+<lpage>1584</lpage>
+<pub-id pub-id-type="pmid">2026151</pub-id></element-citation></ref><ref id="B9-genes-08-00026"><label>9.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Gonz&#x000e1;lez-Soltero</surname><given-names>R.</given-names></name><name><surname>Botello</surname><given-names>E.</given-names></name><name><surname>Jim&#x000e9;nez-S&#x000e1;nchez</surname><given-names>A.</given-names></name></person-group>
+<article-title>Initiation of heat-induced replication requires DnaA and the L-13-mer of oriC</article-title>
+<source>J. Bacteriol.</source>
+<year>2006</year>
+<volume>188</volume>
+<fpage>8294</fpage>
+<lpage>8298</lpage>
+<pub-id pub-id-type="doi">10.1128/JB.00814-06</pub-id>
+<pub-id pub-id-type="pmid">16980453</pub-id></element-citation></ref><ref id="B10-genes-08-00026"><label>10.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kowalski</surname><given-names>D.</given-names></name><name><surname>Eddy</surname><given-names>M.</given-names></name></person-group>
+<article-title>The DNA unwinding element: A novel, <italic>cis</italic>-acting component that facilitates opening of the <italic>Escherichia coli</italic> replication origin</article-title>
+<source>EMBO J.</source>
+<year>1989</year>
+<volume>8</volume>
+<fpage>4335</fpage>
+<lpage>4344</lpage>
+<pub-id pub-id-type="pmid">2556269</pub-id></element-citation></ref><ref id="B11-genes-08-00026"><label>11.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Magnan</surname><given-names>D.</given-names></name><name><surname>Bates</surname><given-names>D.</given-names></name></person-group>
+<article-title>Regulation of DNA replication initiation by chromosome structure</article-title>
+<source>J. Bacteriol.</source>
+<year>2015</year>
+<volume>197</volume>
+<fpage>3370</fpage>
+<lpage>3377</lpage>
+<pub-id pub-id-type="doi">10.1128/JB.00446-15</pub-id>
+<pub-id pub-id-type="pmid">26283772</pub-id></element-citation></ref><ref id="B12-genes-08-00026"><label>12.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Richardson</surname><given-names>T.</given-names></name><name><surname>Harran</surname><given-names>O.</given-names></name><name><surname>Murray</surname><given-names>H.</given-names></name></person-group>
+<article-title>The bacterial DnaA-trio replication origin element specifies single-stranded DNA initiator binding</article-title>
+<source>Nature</source>
+<year>2016</year>
+<volume>534</volume>
+<fpage>412</fpage>
+<lpage>416</lpage>
+<pub-id pub-id-type="doi">10.1038/nature17962</pub-id>
+<pub-id pub-id-type="pmid">27281207</pub-id></element-citation></ref><ref id="B13-genes-08-00026"><label>13.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Noguchi</surname><given-names>Y.</given-names></name><name><surname>Sakiyama</surname><given-names>Y.</given-names></name><name><surname>Kawakami</surname><given-names>H.</given-names></name><name><surname>Katayama</surname><given-names>T.</given-names></name></person-group>
+<article-title>The Arg fingers of key DnaA promoters are oriented inward of the replication origin oriC and stimulate DnaA subcomplexes in the initiation complex</article-title>
+<source>J. Biol. Chem.</source>
+<year>2015</year>
+<volume>290</volume>
+<fpage>20295</fpage>
+<lpage>20312</lpage>
+<pub-id pub-id-type="doi">10.1074/jbc.M115.662601</pub-id>
+<pub-id pub-id-type="pmid">26126826</pub-id></element-citation></ref><ref id="B14-genes-08-00026"><label>14.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Duderstadt</surname><given-names>K.</given-names></name><name><surname>Chuang</surname><given-names>K.</given-names></name><name><surname>Berger</surname><given-names>J.</given-names></name></person-group>
+<article-title>DNA stretching by bacterial initiators promotes replication origin melting</article-title>
+<source>Nature</source>
+<year>2012</year>
+<volume>478</volume>
+<fpage>209</fpage>
+<lpage>213</lpage>
+<pub-id pub-id-type="doi">10.1038/nature10455</pub-id>
+<pub-id pub-id-type="pmid">21964332</pub-id></element-citation></ref><ref id="B15-genes-08-00026"><label>15.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Magnan</surname><given-names>D.</given-names></name><name><surname>Joshi</surname><given-names>M.</given-names></name><name><surname>Barker</surname><given-names>A.</given-names></name><name><surname>Visser</surname><given-names>B.</given-names></name><name><surname>Bates</surname><given-names>D.</given-names></name></person-group>
+<article-title>DNA replication initiation is blocked by a distant chromosome-membrane attachment</article-title>
+<source>Curr. Biol.</source>
+<year>2015</year>
+<volume>25</volume>
+<fpage>2143</fpage>
+<lpage>2149</lpage>
+<pub-id pub-id-type="doi">10.1016/j.cub.2015.06.058</pub-id>
+<pub-id pub-id-type="pmid">26255849</pub-id></element-citation></ref><ref id="B16-genes-08-00026"><label>16.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Cheng</surname><given-names>H.</given-names></name><name><surname>Gr&#x000f6;ger</surname><given-names>P.</given-names></name><name><surname>Hartann</surname><given-names>A.</given-names></name><name><surname>Schlierf</surname><given-names>M.</given-names></name></person-group>
+<article-title>Bacterial initiators form dynamic filaments on single-stranded DNA monomer by monomer</article-title>
+<source>Nucleic Acids Res.</source>
+<year>2015</year>
+<volume>43</volume>
+<fpage>396</fpage>
+<lpage>405</lpage>
+<pub-id pub-id-type="doi">10.1093/nar/gku1284</pub-id>
+<pub-id pub-id-type="pmid">25477384</pub-id></element-citation></ref><ref id="B17-genes-08-00026"><label>17.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Chodavarapu</surname><given-names>S.</given-names></name><name><surname>Felczak</surname><given-names>M.</given-names></name><name><surname>Yaniv</surname><given-names>J.</given-names></name><name><surname>Kaguni</surname><given-names>J.</given-names></name></person-group>
+<article-title><italic>Escherichia coli</italic> DnaA interacts with HU in initiation at the <italic>E. coli</italic> replication origin</article-title>
+<source>Mol. Microbiol.</source>
+<year>2008</year>
+<volume>67</volume>
+<fpage>781</fpage>
+<lpage>792</lpage>
+<pub-id pub-id-type="doi">10.1111/j.1365-2958.2007.06094.x</pub-id>
+<pub-id pub-id-type="pmid">18179598</pub-id></element-citation></ref><ref id="B18-genes-08-00026"><label>18.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Titolo</surname><given-names>S.</given-names></name><name><surname>Welchner</surname><given-names>E.</given-names></name><name><surname>White</surname><given-names>P.W.</given-names></name><name><surname>Archambault</surname><given-names>J.</given-names></name></person-group>
+<article-title>Characterization of the DNA-binding properties of the origin-binding domain of simian virus 40 large T antigen by fluorescence anisotropy</article-title>
+<source>J. Virol.</source>
+<year>2003</year>
+<volume>77</volume>
+<fpage>5512</fpage>
+<lpage>5518</lpage>
+<pub-id pub-id-type="doi">10.1128/JVI.77.9.5512-5518.2003</pub-id>
+<pub-id pub-id-type="pmid">12692254</pub-id></element-citation></ref><ref id="B19-genes-08-00026"><label>19.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Bochkarev</surname><given-names>A.</given-names></name><name><surname>Pfuetzner</surname><given-names>R.A.</given-names></name><name><surname>Edwards</surname><given-names>A.M.</given-names></name><name><surname>Frappier</surname><given-names>L.</given-names></name></person-group>
+<article-title>Single Stranded Dna-Binding Domain of Human Replication Protein A Bound to Single Stranded DNA, RpA70 Subunit, Residues 183&#x02013;420</article-title>
+<source>Nature</source>
+<year>1997</year>
+<volume>385</volume>
+<fpage>176</fpage>
+<lpage>181</lpage>
+<pub-id pub-id-type="doi">10.1038/385176a0</pub-id>
+<pub-id pub-id-type="pmid">8990123</pub-id></element-citation></ref><ref id="B20-genes-08-00026"><label>20.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Bhat</surname><given-names>K.P.</given-names></name><name><surname>Betous</surname><given-names>R.</given-names></name><name><surname>Cortez</surname><given-names>D.</given-names></name></person-group>
+<article-title>High-affinity DNA-binding Domains of Replication Protein A (RPA) Direct SMARCAL1-dependent Replication Fork Remodeling</article-title>
+<source>J. Biol. Chem.</source>
+<year>2014</year>
+<volume>290</volume>
+<fpage>4110</fpage>
+<lpage>4117</lpage>
+<pub-id pub-id-type="doi">10.1074/jbc.M114.627083</pub-id>
+<pub-id pub-id-type="pmid">25552480</pub-id></element-citation></ref><ref id="B21-genes-08-00026"><label>21.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Sigal</surname><given-names>N.</given-names></name><name><surname>Delius</surname><given-names>H.</given-names></name><name><surname>Kornberg</surname><given-names>T.</given-names></name><name><surname>Gefter</surname><given-names>M.L.</given-names></name><name><surname>Alberts</surname><given-names>B.</given-names></name></person-group>
+<article-title>A DNA unwinding protein isolated from <italic>Escherichia coli</italic>: Its interaction with DNA and DNA polymerase</article-title>
+<source>Proc. Natl. Acad. Sci. USA</source>
+<year>1972</year>
+<volume>69</volume>
+<fpage>3537</fpage>
+<lpage>3541</lpage>
+<pub-id pub-id-type="doi">10.1073/pnas.69.12.3537</pub-id>
+<pub-id pub-id-type="pmid">4566449</pub-id></element-citation></ref><ref id="B22-genes-08-00026"><label>22.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Chang</surname><given-names>Y.</given-names></name><name><surname>Xu</surname><given-names>M.</given-names></name><name><surname>Machado</surname><given-names>A.</given-names></name><name><surname>Yu</surname><given-names>X.</given-names></name><name><surname>Rohs</surname><given-names>R.</given-names></name><name><surname>Chen</surname><given-names>X.</given-names></name></person-group>
+<article-title>Mechanism of origin DNA recognition and assembly of an initiator-helicase complex by SV40 large tumor antigen</article-title>
+<source>Cell Rep.</source>
+<year>2013</year>
+<volume>3</volume>
+<fpage>1117</fpage>
+<lpage>1127</lpage>
+<pub-id pub-id-type="doi">10.1016/j.celrep.2013.03.002</pub-id>
+<pub-id pub-id-type="pmid">23545501</pub-id></element-citation></ref><ref id="B23-genes-08-00026"><label>23.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Valle</surname><given-names>M.</given-names></name><name><surname>Chen</surname><given-names>X.</given-names></name><name><surname>Donate</surname><given-names>L.</given-names></name><name><surname>Fanning</surname><given-names>E.</given-names></name><name><surname>Carazo</surname><given-names>J.</given-names></name></person-group>
+<article-title>Structural basis for the cooperative assembly of large T antigen on the origin of replication</article-title>
+<source>J. Mol. Biol.</source>
+<year>2006</year>
+<volume>357</volume>
+<fpage>1295</fpage>
+<lpage>1305</lpage>
+<pub-id pub-id-type="doi">10.1016/j.jmb.2006.01.021</pub-id>
+<pub-id pub-id-type="pmid">16481006</pub-id></element-citation></ref><ref id="B24-genes-08-00026"><label>24.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Bochkareva</surname><given-names>E.</given-names></name><name><surname>Martynowski</surname><given-names>D.</given-names></name><name><surname>Seitova</surname><given-names>A.</given-names></name><name><surname>Bochkarev</surname><given-names>A.</given-names></name></person-group>
+<article-title>Structure of the origin-binding domain of simian virus 40 large T antigen bound to DNA</article-title>
+<source>EMBO J.</source>
+<year>2006</year>
+<volume>25</volume>
+<fpage>5961</fpage>
+<lpage>5969</lpage>
+<pub-id pub-id-type="doi">10.1038/sj.emboj.7601452</pub-id>
+<pub-id pub-id-type="pmid">17139255</pub-id></element-citation></ref><ref id="B25-genes-08-00026"><label>25.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Luo</surname><given-names>X.</given-names></name><name><surname>Sanford</surname><given-names>D.</given-names></name><name><surname>Bullock</surname><given-names>P.</given-names></name><name><surname>Bachovchin</surname><given-names>W.</given-names></name></person-group>
+<article-title>Solution structure of the origin DNA-binding domain of SV40 T-antigen</article-title>
+<source>Nat. Struct Biol.</source>
+<year>1996</year>
+<volume>3</volume>
+<fpage>1034</fpage>
+<lpage>1039</lpage>
+<pub-id pub-id-type="doi">10.1038/nsb1296-1034</pub-id>
+<pub-id pub-id-type="pmid">8946857</pub-id></element-citation></ref><ref id="B26-genes-08-00026"><label>26.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Rohs</surname><given-names>R.</given-names></name><name><surname>West</surname><given-names>S.</given-names></name><name><surname>Sosinsky</surname><given-names>A.</given-names></name><name><surname>Liu</surname><given-names>P.</given-names></name><name><surname>Mann</surname><given-names>R.</given-names></name><name><surname>Honig</surname><given-names>B.</given-names></name></person-group>
+<article-title>The role of DNA shape in protein-DNA recognition</article-title>
+<source>Nature</source>
+<year>2009</year>
+<volume>461</volume>
+<fpage>1248</fpage>
+<lpage>1253</lpage>
+<pub-id pub-id-type="doi">10.1038/nature08473</pub-id>
+<pub-id pub-id-type="pmid">19865164</pub-id></element-citation></ref><ref id="B27-genes-08-00026"><label>27.</label><element-citation publication-type="book">
+<person-group person-group-type="author"><name><surname>Erzberger</surname><given-names>J.</given-names></name><name><surname>Mott</surname><given-names>M.</given-names></name><name><surname>Berger</surname><given-names>J.</given-names></name></person-group>
+<article-title>Structural basis for ATP-dependent DnaA assembly and replication-origin remodeling</article-title>
+<source>Nat. Struct. Mol. Biol.</source>
+<publisher-name>Berger</publisher-name>
+<year>2006</year>
+<volume>13</volume>
+<fpage>676</fpage>
+<lpage>683</lpage>
+<pub-id pub-id-type="doi">10.1038/nsmb1115</pub-id>
+<pub-id pub-id-type="pmid">16829961</pub-id></element-citation></ref><ref id="B28-genes-08-00026"><label>28.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Shen</surname><given-names>J.</given-names></name><name><surname>Gai</surname><given-names>D.</given-names></name><name><surname>Patrick</surname><given-names>A.</given-names></name><name><surname>Greenleaf</surname><given-names>W.</given-names></name><name><surname>Chen</surname><given-names>X.</given-names></name></person-group>
+<article-title>The roles of the residues on the channel beta-hairpin and loop structures of simian virus 40 hexameric helicase</article-title>
+<source>Proc. Natl. Acad. Sci. USA</source>
+<year>2005</year>
+<volume>102</volume>
+<fpage>11248</fpage>
+<lpage>11253</lpage>
+<pub-id pub-id-type="doi">10.1073/pnas.0409646102</pub-id>
+<pub-id pub-id-type="pmid">16061814</pub-id></element-citation></ref><ref id="B29-genes-08-00026"><label>29.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Borowiec</surname><given-names>J.A.</given-names></name><name><surname>Hurwitz</surname><given-names>J.</given-names></name></person-group>
+<article-title>Localized melting and structural changes in the SV40 origin of replication induced by T-antigen</article-title>
+<source>EMBO J.</source>
+<year>1988</year>
+<volume>7</volume>
+<fpage>3149</fpage>
+<lpage>3158</lpage>
+<pub-id pub-id-type="pmid">2846276</pub-id></element-citation></ref><ref id="B30-genes-08-00026"><label>30.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kumar</surname><given-names>A.</given-names></name><name><surname>Meinke</surname><given-names>G.</given-names></name><name><surname>Reese</surname><given-names>D.</given-names></name><name><surname>Moine</surname><given-names>S.</given-names></name><name><surname>Phelan</surname><given-names>P.</given-names></name><name><surname>Fradet-Turcotte</surname><given-names>A.</given-names></name><name><surname>Archambault</surname><given-names>J.</given-names></name><name><surname>Bohm</surname><given-names>A.</given-names></name><name><surname>Bullock</surname><given-names>P.</given-names></name></person-group>
+<article-title>Model for T-antigen-dependent melting of the simian virus 40 core origin based on studies of the interaction of the beta-hairpin with DNA</article-title>
+<source>J. Virol.</source>
+<year>2007</year>
+<volume>81</volume>
+<fpage>4808</fpage>
+<lpage>4818</lpage>
+<pub-id pub-id-type="doi">10.1128/JVI.02451-06</pub-id>
+<pub-id pub-id-type="pmid">17287270</pub-id></element-citation></ref><ref id="B31-genes-08-00026"><label>31.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Lilyestrom</surname><given-names>W.</given-names></name><name><surname>Klein</surname><given-names>M.</given-names></name><name><surname>Zhang</surname><given-names>R.</given-names></name><name><surname>Joachimiak</surname><given-names>A.</given-names></name><name><surname>Chen</surname><given-names>X.</given-names></name></person-group>
+<article-title>Crystal structure of SV40 large T-antigen bound to p53: Interplay between a viral oncoprotein and a cellular tumor suppressor</article-title>
+<source>Genes Dev.</source>
+<year>2006</year>
+<volume>20</volume>
+<fpage>2373</fpage>
+<lpage>2382</lpage>
+<pub-id pub-id-type="doi">10.1101/gad.1456306</pub-id>
+<pub-id pub-id-type="pmid">16951253</pub-id></element-citation></ref><ref id="B32-genes-08-00026"><label>32.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Gai</surname><given-names>D.</given-names></name><name><surname>Zhao</surname><given-names>R.</given-names></name><name><surname>Li</surname><given-names>D.</given-names></name><name><surname>Finkielstein</surname><given-names>C.</given-names></name><name><surname>Chen</surname><given-names>X.</given-names></name></person-group>
+<article-title>Mechanisms of conformational change for a replicative hexameric helicase of SV40 large tumor antigen</article-title>
+<source>Cell</source>
+<year>2004</year>
+<volume>119</volume>
+<fpage>47</fpage>
+<lpage>60</lpage>
+<pub-id pub-id-type="doi">10.1016/j.cell.2004.09.017</pub-id>
+<pub-id pub-id-type="pmid">15454080</pub-id></element-citation></ref><ref id="B33-genes-08-00026"><label>33.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Meinke</surname><given-names>G.</given-names></name><name><surname>Bullock</surname><given-names>P.</given-names></name><name><surname>Bohm</surname><given-names>A.</given-names></name></person-group>
+<article-title>Crystal structure of the simian virus 40 large T-antigen origin-binding domain</article-title>
+<source>J. Virol.</source>
+<year>2006</year>
+<volume>80</volume>
+<fpage>4304</fpage>
+<lpage>4312</lpage>
+<pub-id pub-id-type="doi">10.1128/JVI.80.9.4304-4312.2006</pub-id>
+<pub-id pub-id-type="pmid">16611889</pub-id></element-citation></ref><ref id="B34-genes-08-00026"><label>34.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Miyata</surname><given-names>T.</given-names></name><name><surname>Yamada</surname><given-names>K.</given-names></name><name><surname>Iwasaki</surname><given-names>H.</given-names></name><name><surname>Shinagawa</surname><given-names>H.</given-names></name><name><surname>Morikawa</surname><given-names>K.</given-names></name><name><surname>Mayanagi</surname><given-names>K.</given-names></name></person-group>
+<article-title>Two different oligomeric states of the RuvB branch migration motor protein as revealed by electron microscopy</article-title>
+<source>J. Struct. Biol.</source>
+<year>2000</year>
+<volume>131</volume>
+<fpage>83</fpage>
+<lpage>89</lpage>
+<pub-id pub-id-type="doi">10.1006/jsbi.2000.4290</pub-id>
+<pub-id pub-id-type="pmid">11042078</pub-id></element-citation></ref><ref id="B35-genes-08-00026"><label>35.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Enemark</surname><given-names>E.</given-names></name><name><surname>Joshua-Tor</surname><given-names>L.</given-names></name></person-group>
+<article-title>Mechanism of DNA translocation in a replicative hexameric helicase</article-title>
+<source>Nature</source>
+<year>2006</year>
+<volume>442</volume>
+<fpage>270</fpage>
+<lpage>275</lpage>
+<pub-id pub-id-type="doi">10.1038/nature04943</pub-id>
+<pub-id pub-id-type="pmid">16855583</pub-id></element-citation></ref><ref id="B36-genes-08-00026"><label>36.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Hacker</surname><given-names>K.</given-names></name><name><surname>Kenneth</surname><given-names>J.</given-names></name></person-group>
+<article-title>A Hexameric Helicase Encircles One DNA Strand and Excludes the Other during DNA Unwinding</article-title>
+<source>Am. Chem. Soc.</source>
+<year>1997</year>
+<volume>46</volume>
+<fpage>14080</fpage>
+<lpage>14087</lpage>
+<pub-id pub-id-type="doi">10.1021/bi971644v</pub-id>
+<pub-id pub-id-type="pmid">9369480</pub-id></element-citation></ref><ref id="B37-genes-08-00026"><label>37.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Schuck</surname><given-names>S.</given-names></name><name><surname>Stenlund</surname><given-names>A.</given-names></name></person-group>
+<article-title>Assembly of a double hexameric helicase</article-title>
+<source>Mol. Cell</source>
+<year>2005</year>
+<volume>20</volume>
+<fpage>377</fpage>
+<lpage>389</lpage>
+<pub-id pub-id-type="doi">10.1016/j.molcel.2005.09.020</pub-id>
+<pub-id pub-id-type="pmid">16285920</pub-id></element-citation></ref><ref id="B38-genes-08-00026"><label>38.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Lee</surname><given-names>S.</given-names></name><name><surname>Syed</surname><given-names>S.</given-names></name><name><surname>Enemark</surname><given-names>E.</given-names></name><name><surname>Schuck</surname><given-names>S.</given-names></name><name><surname>Stenlund</surname><given-names>A.</given-names></name><name><surname>Ha</surname><given-names>T.</given-names></name><name><surname>Joshua-Tor</surname><given-names>L.</given-names></name></person-group>
+<article-title>Dynamic look at DNA unwinding by a replicative helicase</article-title>
+<source>Proc. Natl. Acad. Sci. USA</source>
+<year>2014</year>
+<volume>111</volume>
+<fpage>E827</fpage>
+<lpage>E835</lpage>
+<pub-id pub-id-type="doi">10.1073/pnas.1322254111</pub-id>
+<pub-id pub-id-type="pmid">24550505</pub-id></element-citation></ref><ref id="B39-genes-08-00026"><label>39.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Schuck</surname><given-names>S.</given-names></name><name><surname>Stenlund</surname><given-names>A.</given-names></name></person-group>
+<article-title>Mechanistic analysis of local ori melting and helicase assembly by the papillomavirus E1 protein</article-title>
+<source>Mol. Cell</source>
+<year>2011</year>
+<volume>43</volume>
+<fpage>776</fpage>
+<lpage>787</lpage>
+<pub-id pub-id-type="doi">10.1016/j.molcel.2011.06.026</pub-id>
+<pub-id pub-id-type="pmid">21884978</pub-id></element-citation></ref><ref id="B40-genes-08-00026"><label>40.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Gai</surname><given-names>D.</given-names></name><name><surname>Chang</surname><given-names>Y.</given-names></name><name><surname>Chen</surname><given-names>X.</given-names></name></person-group>
+<article-title>Origin DNA melting and unwinding in DNA replication</article-title>
+<source>Curr. Opin. Struct. Biol.</source>
+<year>2010</year>
+<volume>20</volume>
+<fpage>756</fpage>
+<lpage>762</lpage>
+<pub-id pub-id-type="doi">10.1016/j.sbi.2010.08.009</pub-id>
+<pub-id pub-id-type="pmid">20870402</pub-id></element-citation></ref><ref id="B41-genes-08-00026"><label>41.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Schwacha</surname><given-names>A.</given-names></name><name><surname>Bell</surname><given-names>S.P.</given-names></name></person-group>
+<article-title>Interactions between two catalytically distinct MCM subgroups are essential for coordinated ATP hydrolysis and DNA replication</article-title>
+<source>Mol. Cell</source>
+<year>2001</year>
+<volume>8</volume>
+<fpage>1093</fpage>
+<lpage>1104</lpage>
+<pub-id pub-id-type="doi">10.1016/S1097-2765(01)00389-6</pub-id>
+<pub-id pub-id-type="pmid">11741544</pub-id></element-citation></ref><ref id="B42-genes-08-00026"><label>42.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Randell</surname><given-names>J.</given-names></name><name><surname>Bowers</surname><given-names>J.</given-names></name><name><surname>Rodriguez</surname><given-names>H.</given-names></name><name><surname>Bell</surname><given-names>S.</given-names></name></person-group>
+<article-title>Sequential ATP Hydrolysis by Cdc6 and ORC Directs Loading of the MCM2&#x02013;7 Helicase</article-title>
+<source>Mol. Cell</source>
+<year>2006</year>
+<volume>21</volume>
+<fpage>29</fpage>
+<lpage>39</lpage>
+<pub-id pub-id-type="doi">10.1016/j.molcel.2005.11.023</pub-id>
+<pub-id pub-id-type="pmid">16387651</pub-id></element-citation></ref><ref id="B43-genes-08-00026"><label>43.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Yao</surname><given-names>N.</given-names></name><name><surname>O&#x02019;Donnell</surname><given-names>M.</given-names></name></person-group>
+<article-title>Evolution of replication machines</article-title>
+<source>Crit. Rev. Biochem. Mol. Biol.</source>
+<year>2016</year>
+<volume>51</volume>
+<fpage>135</fpage>
+<lpage>149</lpage>
+<pub-id pub-id-type="doi">10.3109/10409238.2015.1125845</pub-id>
+<pub-id pub-id-type="pmid">27160337</pub-id></element-citation></ref><ref id="B44-genes-08-00026"><label>44.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Bochman</surname><given-names>M.</given-names></name><name><surname>Schwacha</surname><given-names>A.</given-names></name></person-group>
+<article-title>The MCM2&#x02013;7 complex has in vitro helicase activity</article-title>
+<source>Mol. Cell</source>
+<year>2008</year>
+<volume>31</volume>
+<fpage>287</fpage>
+<lpage>293</lpage>
+<pub-id pub-id-type="doi">10.1016/j.molcel.2008.05.020</pub-id>
+<pub-id pub-id-type="pmid">18657510</pub-id></element-citation></ref><ref id="B45-genes-08-00026"><label>45.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Ilves</surname><given-names>I.</given-names></name><name><surname>Petojevic</surname><given-names>T.</given-names></name><name><surname>Pesavento</surname><given-names>J.</given-names></name><name><surname>Botchan</surname><given-names>M.</given-names></name></person-group>
+<article-title>Activation of the MCM2&#x02013;7 Helicase by Association with Cdc45 and GINS Proteins</article-title>
+<source>Mol. Cell</source>
+<year>2010</year>
+<volume>37</volume>
+<fpage>247</fpage>
+<lpage>258</lpage>
+<pub-id pub-id-type="doi">10.1016/j.molcel.2009.12.030</pub-id>
+<pub-id pub-id-type="pmid">20122406</pub-id></element-citation></ref><ref id="B46-genes-08-00026"><label>46.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Xu</surname><given-names>Y.</given-names></name><name><surname>Gristwood</surname><given-names>T.</given-names></name><name><surname>Hodgson</surname><given-names>B.</given-names></name><name><surname>Trinidad</surname><given-names>J.</given-names></name><name><surname>Albers</surname><given-names>S.</given-names></name><name><surname>Bell</surname><given-names>S.</given-names></name></person-group>
+<article-title>Archaeal orthologs of CDC45 and GINS form a stable complex that stimulates the helicase activity of MCM</article-title>
+<source>Proc. Natl. Acad. Sci. USA</source>
+<year>2016</year>
+<volume>113</volume>
+<fpage>13390</fpage>
+<lpage>13395</lpage>
+<pub-id pub-id-type="doi">10.1073/pnas.1613825113</pub-id>
+<pub-id pub-id-type="pmid">27821767</pub-id></element-citation></ref><ref id="B47-genes-08-00026"><label>47.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Remus</surname><given-names>D.</given-names></name><name><surname>Beuron</surname><given-names>F.</given-names></name><name><surname>Tolun</surname><given-names>G.</given-names></name><name><surname>Griffith</surname><given-names>J.</given-names></name><name><surname>Morris</surname><given-names>E.</given-names></name><name><surname>Diffley</surname><given-names>J.</given-names></name></person-group>
+<article-title>Concerted loading of MCM2&#x02013;7 double hexamers around DNA during DNA replication origin licensing</article-title>
+<source>Cell</source>
+<year>2009</year>
+<volume>139</volume>
+<fpage>719</fpage>
+<lpage>730</lpage>
+<pub-id pub-id-type="doi">10.1016/j.cell.2009.10.015</pub-id>
+<pub-id pub-id-type="pmid">19896182</pub-id></element-citation></ref><ref id="B48-genes-08-00026"><label>48.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Evrin</surname><given-names>C.</given-names></name><name><surname>Clarke</surname><given-names>P.</given-names></name><name><surname>Zech</surname><given-names>J.</given-names></name><name><surname>Lurz</surname><given-names>R.</given-names></name><name><surname>Sun</surname><given-names>J.</given-names></name><name><surname>Uhle</surname><given-names>S.</given-names></name><name><surname>Li</surname><given-names>H.</given-names></name><name><surname>Stillman</surname><given-names>B.</given-names></name><name><surname>Speck</surname><given-names>C.</given-names></name></person-group>
+<article-title>A double-hexameric MCM2&#x02013;7 complex is loaded onto origin DNA during licensing of eukaryotic DNA replication</article-title>
+<source>Proc. Natl. Acad. Sci. USA</source>
+<year>2009</year>
+<volume>106</volume>
+<fpage>20240</fpage>
+<lpage>20245</lpage>
+<pub-id pub-id-type="doi">10.1073/pnas.0911500106</pub-id>
+<pub-id pub-id-type="pmid">19910535</pub-id></element-citation></ref><ref id="B49-genes-08-00026"><label>49.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Fu</surname><given-names>Y.</given-names></name><name><surname>Yardimci</surname><given-names>H.</given-names></name><name><surname>Long</surname><given-names>D.</given-names></name><name><surname>Ho</surname><given-names>T.</given-names></name><name><surname>Guainazzi</surname><given-names>A.</given-names></name><name><surname>Bermudez</surname><given-names>V.</given-names></name><name><surname>Hurwitz</surname><given-names>J.</given-names></name><name><surname>van Oijen</surname><given-names>A.</given-names></name><name><surname>Sch&#x000e4;rer</surname><given-names>O.</given-names></name><name><surname>Walter</surname><given-names>J.</given-names></name></person-group>
+<article-title>Selective bypass of a lagging strand roadblock by the eukaryotic replicative DNA helicase</article-title>
+<source>Cell</source>
+<year>2011</year>
+<volume>146</volume>
+<fpage>931</fpage>
+<lpage>941</lpage>
+<pub-id pub-id-type="doi">10.1016/j.cell.2011.07.045</pub-id>
+<pub-id pub-id-type="pmid">21925316</pub-id></element-citation></ref><ref id="B50-genes-08-00026"><label>50.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Yardimci</surname><given-names>H.</given-names></name><name><surname>Loveland</surname><given-names>A.</given-names></name><name><surname>Habuchi</surname><given-names>S.</given-names></name><name><surname>van Oijen</surname><given-names>A.</given-names></name><name><surname>Walter</surname><given-names>J.</given-names></name></person-group>
+<article-title>Uncoupling of Sister Replisomes during Eukaryotic DNA Replication</article-title>
+<source>Mol. Cell</source>
+<year>2010</year>
+<volume>40</volume>
+<fpage>834</fpage>
+<lpage>840</lpage>
+<pub-id pub-id-type="doi">10.1016/j.molcel.2010.11.027</pub-id>
+<pub-id pub-id-type="pmid">21145490</pub-id></element-citation></ref><ref id="B51-genes-08-00026"><label>51.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Froelich</surname><given-names>C.</given-names></name><name><surname>Kang</surname><given-names>S.</given-names></name><name><surname>Epling</surname><given-names>L.</given-names></name><name><surname>Bell</surname><given-names>S.</given-names></name><name><surname>Enemark</surname><given-names>E.</given-names></name></person-group>
+<article-title>A conserved MCM single-stranded DNA binding element is essential for replication initiation</article-title>
+<source>eLife</source>
+<year>2014</year>
+<volume>3</volume>
+<fpage>e019993</fpage>
+<pub-id pub-id-type="doi">10.7554/eLife.01993</pub-id>
+<pub-id pub-id-type="pmid">24692448</pub-id></element-citation></ref><ref id="B52-genes-08-00026"><label>52.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>McGeoch</surname><given-names>A.</given-names></name><name><surname>Trakselis</surname><given-names>M.</given-names></name><name><surname>Laskey</surname><given-names>R.</given-names></name><name><surname>Bell</surname><given-names>S.D.</given-names></name></person-group>
+<article-title>Organization of the archaeal MCM complex on DNA and implications for the helicase mechanism</article-title>
+<source>Nat. Struct. Mol. Biol.</source>
+<year>2005</year>
+<volume>12</volume>
+<fpage>756</fpage>
+<lpage>762</lpage>
+<pub-id pub-id-type="doi">10.1038/nsmb974</pub-id>
+<pub-id pub-id-type="pmid">16116441</pub-id></element-citation></ref><ref id="B53-genes-08-00026"><label>53.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Sun</surname><given-names>J.</given-names></name><name><surname>Shi</surname><given-names>Y.</given-names></name><name><surname>Georgescu</surname><given-names>R.</given-names></name><name><surname>Yuan</surname><given-names>Z.</given-names></name><name><surname>Chait</surname><given-names>B.</given-names></name><name><surname>Li</surname><given-names>H.</given-names></name><name><surname>O&#x02019;Donnell</surname><given-names>M.</given-names></name></person-group>
+<article-title>The architecture of a eukaryotic replisome</article-title>
+<source>Nat. Struct. Mol. Biol.</source>
+<year>2015</year>
+<volume>22</volume>
+<fpage>976</fpage>
+<lpage>982</lpage>
+<pub-id pub-id-type="doi">10.1038/nsmb.3113</pub-id>
+<pub-id pub-id-type="pmid">26524492</pub-id></element-citation></ref><ref id="B54-genes-08-00026"><label>54.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Yuan</surname><given-names>Z.</given-names></name><name><surname>Bai</surname><given-names>L.</given-names></name><name><surname>Sun</surname><given-names>J.</given-names></name><name><surname>Georgescu</surname><given-names>R.</given-names></name><name><surname>Liu</surname><given-names>J.</given-names></name><name><surname>O&#x02019;Donnell</surname><given-names>M.</given-names></name><name><surname>Li</surname><given-names>H.</given-names></name></person-group>
+<article-title>Structure of the eukaryotic replicative CMG helicase suggests a pumpjack motion for translocation</article-title>
+<source>Nat. Struct. Mol. Biol.</source>
+<year>2016</year>
+<volume>23</volume>
+<fpage>217</fpage>
+<lpage>224</lpage>
+<pub-id pub-id-type="doi">10.1038/nsmb.3170</pub-id>
+<pub-id pub-id-type="pmid">26854665</pub-id></element-citation></ref><ref id="B55-genes-08-00026"><label>55.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Pellegrini</surname><given-names>L.</given-names></name><name><surname>Costa</surname><given-names>A.</given-names></name></person-group>
+<article-title>New insights inot the mechanism of DNA duplicaiton by the eukaryotic replisome</article-title>
+<source>Trends Biochem. Sci.</source>
+<year>2016</year>
+<volume>41</volume>
+<fpage>859</fpage>
+<lpage>871</lpage>
+<pub-id pub-id-type="doi">10.1016/j.tibs.2016.07.011</pub-id>
+<pub-id pub-id-type="pmid">27555051</pub-id></element-citation></ref><ref id="B56-genes-08-00026"><label>56.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Bochman</surname><given-names>M.</given-names></name><name><surname>Schwacha</surname><given-names>A.</given-names></name></person-group>
+<article-title>The Saccharomyces cerevisiae MCM6/2 and MCM5/3 ATPase active sites contribute to the function of the putative MCM2&#x02013;7 &#x02018;gate&#x02019;</article-title>
+<source>Nucleic Acids Res.</source>
+<year>2010</year>
+<volume>38</volume>
+<fpage>6078</fpage>
+<lpage>6088</lpage>
+<pub-id pub-id-type="doi">10.1093/nar/gkq422</pub-id>
+<pub-id pub-id-type="pmid">20484375</pub-id></element-citation></ref><ref id="B57-genes-08-00026"><label>57.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Bruck</surname><given-names>I.</given-names></name><name><surname>Kaplan</surname><given-names>D.L.</given-names></name></person-group>
+<article-title>The DBF4-CDC7 kinase promotes MCM2&#x02013;7 ring opening to allow for single-stranded DNA extrusion and helicase assembly</article-title>
+<source>J. Biol. Chem.</source>
+<year>2015</year>
+<volume>290</volume>
+<fpage>1210</fpage>
+<lpage>1221</lpage>
+<pub-id pub-id-type="doi">10.1074/jbc.M114.608232</pub-id>
+<pub-id pub-id-type="pmid">25471369</pub-id></element-citation></ref><ref id="B58-genes-08-00026"><label>58.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Warren</surname><given-names>E.</given-names></name><name><surname>Vaithiyalingam</surname><given-names>S.</given-names></name><name><surname>Haworth</surname><given-names>J.</given-names></name><name><surname>Greer</surname><given-names>B.</given-names></name><name><surname>Bielinsky</surname><given-names>A.</given-names></name><name><surname>Chazin</surname><given-names>W.</given-names></name><name><surname>Eichman</surname><given-names>B.</given-names></name></person-group>
+<article-title>Structural basis for DNA binding by replication initiator MCM10</article-title>
+<source>Structure</source>
+<year>2008</year>
+<volume>16</volume>
+<fpage>1892</fpage>
+<lpage>1901</lpage>
+<pub-id pub-id-type="doi">10.1016/j.str.2008.10.005</pub-id>
+<pub-id pub-id-type="pmid">19081065</pub-id></element-citation></ref><ref id="B59-genes-08-00026"><label>59.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Eisenberg</surname><given-names>S.</given-names></name><name><surname>Korza</surname><given-names>G.</given-names></name><name><surname>Carson</surname><given-names>J.</given-names></name><name><surname>Liachko</surname><given-names>I.</given-names></name><name><surname>Tye</surname><given-names>B.</given-names></name></person-group>
+<article-title>Novel DNA binding properties of the Mcm10 protein from Saccharomyces cerevisiae</article-title>
+<source>J. Biol. Chem.</source>
+<year>2009</year>
+<volume>284</volume>
+<fpage>25412</fpage>
+<lpage>25420</lpage>
+<pub-id pub-id-type="doi">10.1074/jbc.M109.033175</pub-id>
+<pub-id pub-id-type="pmid">19605346</pub-id></element-citation></ref><ref id="B60-genes-08-00026"><label>60.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Bruck</surname><given-names>I.</given-names></name><name><surname>Kaplan</surname><given-names>D.</given-names></name></person-group>
+<article-title>Origin Single-stranded DNA Releases SLD3 Protein from the MCM2&#x02013;7 Complex, Allowing the GINS Tetramer to Bind the MCM2&#x02013;7 Complex</article-title>
+<source>J. Biol. Chem.</source>
+<year>2011</year>
+<volume>286</volume>
+<fpage>18602</fpage>
+<lpage>18613</lpage>
+<pub-id pub-id-type="doi">10.1074/jbc.M111.226332</pub-id>
+<pub-id pub-id-type="pmid">21460226</pub-id></element-citation></ref><ref id="B61-genes-08-00026"><label>61.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kanter</surname><given-names>D.</given-names></name><name><surname>Kaplan</surname><given-names>D.</given-names></name></person-group>
+<article-title>SLD2 binds to origin single-stranded DNA and stimulates DNA annealing</article-title>
+<source>Nucleic Acids Res.</source>
+<year>2011</year>
+<volume>39</volume>
+<fpage>2580</fpage>
+<lpage>2592</lpage>
+<pub-id pub-id-type="doi">10.1093/nar/gkq1222</pub-id>
+<pub-id pub-id-type="pmid">21109535</pub-id></element-citation></ref><ref id="B62-genes-08-00026"><label>62.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Dhingra</surname><given-names>N.</given-names></name><name><surname>Bruck</surname><given-names>I.</given-names></name><name><surname>Smith</surname><given-names>S.</given-names></name><name><surname>Ning</surname><given-names>B.</given-names></name><name><surname>Kaplan</surname><given-names>D.</given-names></name></person-group>
+<article-title>DPB11 helps control assembly of the CDC45-MCM2&#x02013;7-GINS replication fork helicase</article-title>
+<source>J. Biol. Chem.</source>
+<year>2015</year>
+<volume>290</volume>
+<fpage>7586</fpage>
+<lpage>7601</lpage>
+<pub-id pub-id-type="doi">10.1074/jbc.M115.640383</pub-id>
+<pub-id pub-id-type="pmid">25659432</pub-id></element-citation></ref><ref id="B63-genes-08-00026"><label>63.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Chen</surname><given-names>R.</given-names></name><name><surname>Wold</surname><given-names>M.</given-names></name></person-group>
+<article-title>Replication protein A: Single-stranded DNA&#x02019;s first responder: Dynamic DNA-interactions allow replication protein A to direct single-strand DNA intermediates into different pathways for synthesis or repair</article-title>
+<source>Bioessays</source>
+<year>2014</year>
+<volume>36</volume>
+<fpage>1156</fpage>
+<lpage>1161</lpage>
+<pub-id pub-id-type="doi">10.1002/bies.201400107</pub-id>
+<pub-id pub-id-type="pmid">25171654</pub-id></element-citation></ref><ref id="B64-genes-08-00026"><label>64.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Perez-Arnaiz</surname><given-names>P.</given-names></name><name><surname>Kaplan</surname><given-names>D.</given-names></name></person-group>
+<article-title>An Mcm10 mutant defective in ssDNA binding shows defects in DNA replication initiation</article-title>
+<source>J. Mol. Biol.</source>
+<year>2016</year>
+<volume>428</volume>
+<fpage>4608</fpage>
+<lpage>4625</lpage>
+<pub-id pub-id-type="doi">10.1016/j.jmb.2016.10.014</pub-id>
+<pub-id pub-id-type="pmid">27751725</pub-id></element-citation></ref><ref id="B65-genes-08-00026"><label>65.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Bruck</surname><given-names>I.</given-names></name><name><surname>Kaplan</surname><given-names>D.</given-names></name></person-group>
+<article-title>The replication initiation protein sld2 regulates helicase assembly</article-title>
+<source>J. Biol. Chem.</source>
+<year>2014</year>
+<volume>289</volume>
+<fpage>1948</fpage>
+<lpage>1959</lpage>
+<pub-id pub-id-type="doi">10.1074/jbc.M113.532085</pub-id>
+<pub-id pub-id-type="pmid">24307213</pub-id></element-citation></ref><ref id="B66-genes-08-00026"><label>66.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Bruck</surname><given-names>I.</given-names></name><name><surname>Kaplan</surname><given-names>D.</given-names></name></person-group>
+<article-title>The replication initiation protein SLD3/Treslin orchestrates the assembly of the replication fork helicase during S phase</article-title>
+<source>J. Biol. Chem.</source>
+<year>2015</year>
+<volume>290</volume>
+<fpage>27414</fpage>
+<lpage>27424</lpage>
+<pub-id pub-id-type="doi">10.1074/jbc.M115.688424</pub-id>
+<pub-id pub-id-type="pmid">26405041</pub-id></element-citation></ref><ref id="B67-genes-08-00026"><label>67.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Tye</surname><given-names>B.K.</given-names></name></person-group>
+<article-title>MCM proteins in DNA replication</article-title>
+<source>Annu. Rev. Biochem.</source>
+<year>1999</year>
+<volume>68</volume>
+<fpage>649</fpage>
+<lpage>686</lpage>
+<pub-id pub-id-type="doi">10.1146/annurev.biochem.68.1.649</pub-id>
+<pub-id pub-id-type="pmid">10872463</pub-id></element-citation></ref><ref id="B68-genes-08-00026"><label>68.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Thu</surname><given-names>Y.</given-names></name><name><surname>Bielinsky</surname><given-names>A.</given-names></name></person-group>
+<article-title>Enigmatic rles of Mcm10 in DNA replication</article-title>
+<source>Trends Biochem. Sci.</source>
+<year>2013</year>
+<volume>38</volume>
+<fpage>184</fpage>
+<lpage>194</lpage>
+<pub-id pub-id-type="doi">10.1016/j.tibs.2012.12.003</pub-id>
+<pub-id pub-id-type="pmid">23332289</pub-id></element-citation></ref><ref id="B69-genes-08-00026"><label>69.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Ohlenschl&#x000e4;ger</surname><given-names>O.</given-names></name><name><surname>Kuhnert</surname><given-names>A.</given-names></name><name><surname>Schneider</surname><given-names>A.</given-names></name><name><surname>Haumann</surname><given-names>S.</given-names></name><name><surname>Bellstedt</surname><given-names>P.</given-names></name><name><surname>Keller</surname><given-names>H.</given-names></name><name><surname>Saluz</surname><given-names>H.-P.</given-names></name><name><surname>Hortschansky</surname><given-names>P.</given-names></name><name><surname>H&#x000e4;nel</surname><given-names>F.</given-names></name><name><surname>Grosse</surname><given-names>F.</given-names></name><etal/></person-group>
+<article-title>The N-terminus of the human RECQL4 helicase is a homeodomain-like DNA interaction motif</article-title>
+<source>Nucleic Acids Res.</source>
+<year>2012</year>
+<volume>40</volume>
+<fpage>8309</fpage>
+<lpage>8324</lpage>
+<pub-id pub-id-type="doi">10.1093/nar/gks591</pub-id>
+<pub-id pub-id-type="pmid">22730300</pub-id></element-citation></ref><ref id="B70-genes-08-00026"><label>70.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Yeeles</surname><given-names>J.</given-names></name><name><surname>Deegan</surname><given-names>T.</given-names></name><name><surname>Janska</surname><given-names>A.</given-names></name><name><surname>Early</surname><given-names>A.</given-names></name><name><surname>Diffley</surname><given-names>J.</given-names></name></person-group>
+<article-title>Regulated eukaryotic DNA replication origin firing with purified proteins</article-title>
+<source>Nature</source>
+<year>2015</year>
+<volume>519</volume>
+<fpage>431</fpage>
+<lpage>435</lpage>
+<pub-id pub-id-type="doi">10.1038/nature14285</pub-id>
+<pub-id pub-id-type="pmid">25739503</pub-id></element-citation></ref><ref id="B71-genes-08-00026"><label>71.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Tanaka</surname><given-names>S.</given-names></name><name><surname>Miyazawa-Onami</surname><given-names>M.</given-names></name><name><surname>Iida</surname><given-names>T.</given-names></name><name><surname>Araki</surname><given-names>H.</given-names></name></person-group>
+<article-title>iAID: An improved auxin-inducible degron system for the construction of a &#x02018;tight&#x02019; conditional mutant in the budding yeast <italic>Saccharomyces cerevisiae</italic></article-title>
+<source>Yeast</source>
+<year>2015</year>
+<volume>32</volume>
+<fpage>567</fpage>
+<lpage>581</lpage>
+<pub-id pub-id-type="doi">10.1002/yea.3080</pub-id>
+<pub-id pub-id-type="pmid">26081484</pub-id></element-citation></ref><ref id="B72-genes-08-00026"><label>72.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Labib</surname><given-names>K.</given-names></name><name><surname>Tercero</surname><given-names>J.A.</given-names></name><name><surname>Diffley</surname><given-names>J.F.X.</given-names></name></person-group>
+<article-title>Uninterrupted MCM2&#x02013;7 function required for DNA replication fork progression</article-title>
+<source>Science</source>
+<year>2000</year>
+<volume>288</volume>
+<fpage>1643</fpage>
+<lpage>1647</lpage>
+<pub-id pub-id-type="doi">10.1126/science.288.5471.1643</pub-id>
+<pub-id pub-id-type="pmid">10834843</pub-id></element-citation></ref></ref-list></back><floats-group><fig id="genes-08-00026-f001" position="float"><label>Figure 1</label><caption><p>A schematic map of the four domains of DnaA. ssDNA: single-stranded DNA.</p></caption><graphic xlink:href="genes-08-00026-g001"/></fig><fig id="genes-08-00026-f002" position="float"><label>Figure 2</label><caption><p>Proposed loop conformation of inactive oriC, constrained by DnaA bound to high-affinity sites R1, R2, and R4 via domain I N-terminus interactions. This conformation is facilitated by Fis.</p></caption><graphic xlink:href="genes-08-00026-g002"/></fig><fig id="genes-08-00026-f003" position="float"><label>Figure 3</label><caption><p>The origin of replication in <italic>Escherichia coli</italic>, oriC. This 245-bp sequence consists of the 13-mer DNA unwinding element (red), DnaA-trio motifs (blue), and binding sites for DnaA, Integration Host Factor (IHF), and Fis. Additionally, flanking genes <italic>gidA</italic> and <italic>mioC</italic> are shown. The arrows represent the transcription direction of the flanking genes (large, hollow arrows) and directionality of DnaA filament formation (small arrows above DnaA boxes). The black arrows help visualize each type of supercoiling, shown above the oriC<italic>.</italic></p></caption><graphic xlink:href="genes-08-00026-g003"/></fig><fig id="genes-08-00026-f004" position="float"><label>Figure 4</label><caption><p>Active oriC conformation, showing interactions between R1 and R5M facilitated by IHF, and interactions between R1 DnaA and DNA unwinding element (DUE)-bound DnaA, which facilitates filament formation on ssDNA. The thicker blue line represents double-stranded oriC DNA, and the thin lines of the &#x0201c;bubble&#x0201d; represent the single-stranded DNA of the melted DUE.</p></caption><graphic xlink:href="genes-08-00026-g004"/></fig><fig id="genes-08-00026-f005" position="float"><label>Figure 5</label><caption><p>Structure of the Large T Antigen (LTag) and the Simian Virus 40 (SV40) Core Ori. (<bold>A</bold>) A cartoon model illustrating the double hexameric LTag complex and its relevant subdivisions. A single hexamer is noted to contain a portion of the origin binding domain (OBD) and a helicase domain, which itself includes a Zn and AAA+ domain; (<bold>B</bold>) Depiction of the Core Ori of SV40 viral double-stranded DNA (dsDNA) including the four GAGGC pentamers and the flanking AT-rich (AT) and early palindromic sequence (EP) regions. The box around two pentamers and the EP region indicates what portion of the core ori a single hexamer of LTag would occupy.</p></caption><graphic xlink:href="genes-08-00026-g005"/></fig><fig id="genes-08-00026-f006" position="float"><label>Figure 6</label><caption><p>E1 vs. LTag Beta Hairpin Structure. (<bold>A</bold>) A cartoon model depicting the central channel of an E1 helicase domain from a down-the-barrel point of view. The outer circles represent helicase subunits while the structures numbered 1&#x02013;6 designate the beta hairpin loops. These loops overlap to create a &#x0201c;staircase&#x0201d; pattern. The foot of the beta hairpin staircase is numbered 1. The increasing numbers correspond to higher steps in the staircase. Hairpin loop 2 sits higher than hairpin 1, while 3 overlaps 2, 4 overlaps 3, and so on in an ascending pattern characteristic of E1 hairpins. The histidine residues employed in the untwisting mechanism of melting are denoted in purple at the tip of each hairpin; (<bold>B</bold>) A cartoon model depicting the central channel of an LTag hexameric complex. The six circular domains signify the six helicase subunits while the six oval structures represent beta hairpin loops. The hairpin loops are organized into a planar arrangement characteristic of LTag helicase domains, a distinct organizational method not found in E1 that may contribute to unique melting mechanisms. Histidine residues at the tip of each hairpin are marked in purple [<xref rid="B27-genes-08-00026" ref-type="bibr">27</xref>].</p></caption><graphic xlink:href="genes-08-00026-g006"/></fig><fig id="genes-08-00026-f007" position="float"><label>Figure 7</label><caption><p>The E1 &#x0201c;Unwinding&#x0201d; Mechanism of Origin Melting. (<bold>A</bold>) An illustration of an E1 monomer. Twelve of these constitute an E1 double hexameric complex shown to unwind DNA after initial melting; (<bold>B</bold>) Pre-twist: Assembly of a single trimer of E1 monomers around dsDNA, and the insertion of histidine residues into the dsDNA; The numbers 1, 2, and 3 demark the three subunits of the trimer. (<bold>C</bold>) Post-twist: The slight rotation, or &#x0201c;twist&#x0201d;, has resulted in a melted origin and reorientation of the three subunits as a result; (<bold>D</bold>) Assembly of a single hexamer of E1 onto ssDNA post melting.</p></caption><graphic xlink:href="genes-08-00026-g007"/></fig></floats-group></article>

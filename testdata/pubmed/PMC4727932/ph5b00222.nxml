@@ -1,0 +1,451 @@
+<!DOCTYPE article
+PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with MathML3 v1.2 20190208//EN" "JATS-archivearticle1-mathml3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article" xml:lang="EN"><?properties open_access?><front><journal-meta><journal-id journal-id-type="nlm-ta">ACS Photonics</journal-id><journal-id journal-id-type="iso-abbrev">ACS Photonics</journal-id><journal-id journal-id-type="publisher-id">ph</journal-id><journal-id journal-id-type="coden">apchd5</journal-id><journal-title-group><journal-title>ACS Photonics</journal-title></journal-title-group><issn pub-type="epub">2330-4022</issn><publisher><publisher-name>American
+Chemical Society</publisher-name></publisher></journal-meta><article-meta><article-id pub-id-type="pmid">26878027</article-id><article-id pub-id-type="pmc">4727932</article-id><article-id pub-id-type="doi">10.1021/acsphotonics.5b00222</article-id><article-categories><subj-group><subject>Article</subject></subj-group></article-categories><title-group><article-title>Efficient Multiterminal Spectrum Splitting via a Nanowire
+Array Solar Cell</article-title></title-group><contrib-group><contrib contrib-type="author" corresp="yes" id="ath1"><name><surname>Dorodnyy</surname><given-names>Alexander</given-names></name><xref rid="cor1" ref-type="other">*</xref><xref rid="aff1" ref-type="aff">&#x02020;</xref></contrib><contrib contrib-type="author" id="ath2"><name><surname>Alarcon-Llad&#x000f3;</surname><given-names>Esther</given-names></name><xref rid="aff2" ref-type="aff">&#x02021;</xref></contrib><contrib contrib-type="author" id="ath3"><name><surname>Shklover</surname><given-names>Valery</given-names></name><xref rid="aff3" ref-type="aff">&#x000a7;</xref></contrib><contrib contrib-type="author" id="ath4"><name><surname>Hafner</surname><given-names>Christian</given-names></name><xref rid="aff1" ref-type="aff">&#x02020;</xref></contrib><contrib contrib-type="author" id="ath5"><name><surname>Fontcuberta i Morral</surname><given-names>Anna</given-names></name><xref rid="aff2" ref-type="aff">&#x02021;</xref></contrib><contrib contrib-type="author" id="ath6"><name><surname>Leuthold</surname><given-names>Juerg</given-names></name><xref rid="aff1" ref-type="aff">&#x02020;</xref></contrib><aff id="aff1"><label>&#x02020;</label>Institute
+of Electromagnetic Fields, <institution>ETH Zurich</institution>, 8092 Zurich, <country>Switzerland</country></aff><aff id="aff2"><label>&#x02021;</label>Laboratory
+of Semiconductor Materials, <institution>EPFL Lausanne</institution>, 1015 Lausanne, <country>Switzerland</country></aff><aff id="aff3"><label>&#x000a7;</label>Laboratory
+of Crystallography, <institution>ETH Zurich</institution>, 8093 Zurich, <country>Switzerland</country></aff></contrib-group><author-notes><corresp id="cor1"><label>*</label>E-mail: <email>dorodnya@ethz.ch</email>.</corresp></author-notes><pub-date pub-type="epub"><day>31</day><month>07</month><year>2015</year></pub-date><pub-date pub-type="ppub"><day>16</day><month>09</month><year>2015</year></pub-date><volume>2</volume><issue>9</issue><fpage>1284</fpage><lpage>1288</lpage><history><date date-type="received"><day>26</day><month>04</month><year>2015</year></date></history><permissions><copyright-statement>Copyright &#x000a9; 2015 American Chemical
+Society</copyright-statement><copyright-year>2015</copyright-year><copyright-holder>American Chemical
+Society</copyright-holder><license><license-p>This is an open access article published under an ACS AuthorChoice <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/page/policy/authorchoice_termsofuse.html">License</ext-link>, which permits copying and redistribution of the article or any adaptations for non-commercial purposes.</license-p></license></permissions><abstract><p content-type="toc-graphic"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ph-2015-00222a_0005" id="ab-tgr1"/></p><p>Nanowire-based solar cells opened
+a new avenue for increasing conversion
+efficiency and rationalizing material use by growing different III&#x02013;V
+materials on silicon substrates. Here, we propose a multiterminal
+nanowire solar cell design with a theoretical conversion efficiency
+of 48.3% utilizing an efficient lateral spectrum splitting between
+three different III&#x02013;V material nanowire arrays grown on a flat
+silicon substrate. This allows choosing an ideal material combination
+to achieve the proper spectrum splitting as well as fabrication feasibility.
+The high efficiency is possible due to an enhanced absorption cross-section
+of standing nanowires and optimization of the geometric parameters.
+Furthermore, we propose a multiterminal contacting scheme that can
+be fabricated with a technology close to standard CMOS. As an alternative
+we also consider a single power source with a module level voltage
+matching. These new concepts open avenues for next-generation solar
+cells for terrestrial and space applications.</p></abstract><kwd-group><kwd>photovoltaics</kwd><kwd>nanowire</kwd><kwd>spectrum
+splitting</kwd><kwd>photonic crystals</kwd></kwd-group><custom-meta-group><custom-meta><meta-name>document-id-old-9</meta-name><meta-value>ph5b00222</meta-value></custom-meta><custom-meta><meta-name>document-id-new-14</meta-name><meta-value>ph-2015-00222a</meta-value></custom-meta><custom-meta><meta-name>ccc-price</meta-name><meta-value/></custom-meta></custom-meta-group></article-meta></front><body><p id="sec1">Introducing
+multiple band gap
+concepts into nanowire solar cell designs has high promise for maximum
+solar conversion efficiency while keeping the unique advantages of
+the nanowires. Nanowire-based solar cells are increasingly attracting
+attention due to their enhanced absorption properties and the possibility
+to combine a wide selection of different materials.<sup><xref ref-type="bibr" rid="ref1">1</xref>&#x02212;<xref ref-type="bibr" rid="ref8">8</xref></sup> The nanowire geometry allows them to be used in various ways from
+vertical<sup><xref ref-type="bibr" rid="ref9">9</xref></sup> or horizontal<sup><xref ref-type="bibr" rid="ref10">10</xref></sup> arrangements to hybrid cells comprising organic materials.<sup><xref ref-type="bibr" rid="ref11">11</xref>&#x02212;<xref ref-type="bibr" rid="ref14">14</xref></sup> The diameter of a nanowire is much smaller than its length, so that
+defect-free nanowires can be grown on substrates with lattice constants
+considerably different from their own.<sup><xref ref-type="bibr" rid="ref15">15</xref>&#x02212;<xref ref-type="bibr" rid="ref17">17</xref></sup> As a result, silicon
+and III&#x02013;V materials can be combined in a double-junction cell.<sup><xref ref-type="bibr" rid="ref18">18</xref>,<xref ref-type="bibr" rid="ref19">19</xref></sup> The geometry of nanowires also allows engineering light&#x02013;matter
+interactions to obtain enhanced absorption combined with antireflection
+properties.<sup><xref ref-type="bibr" rid="ref20">20</xref>&#x02212;<xref ref-type="bibr" rid="ref23">23</xref></sup> Various nanowire-based solar cell designs have been proposed. The
+profound understanding of the photonic properties of standing nanowires
+resulted in an experimental realization of a single-junction InP nanowire
+cell reaching 13.8% efficiency.<sup><xref ref-type="bibr" rid="ref4">4</xref></sup> Various
+designs suggest that the cells can be improved by using dual-junction
+nanowires with axial or radial junctions,<sup><xref ref-type="bibr" rid="ref24">24</xref>&#x02212;<xref ref-type="bibr" rid="ref26">26</xref></sup> by an additional
+junction in the substrate,<sup><xref ref-type="bibr" rid="ref26">26</xref>,<xref ref-type="bibr" rid="ref27">27</xref></sup> by heterojunction with
+organic semiconductors,<sup><xref ref-type="bibr" rid="ref11">11</xref>&#x02212;<xref ref-type="bibr" rid="ref13">13</xref></sup> etc. It was also predicted that
+efficiencies above 39% for double-junction nanowire designs should
+be feasible.<sup><xref ref-type="bibr" rid="ref24">24</xref></sup> With all the work done however
+the pool of possibilities and concepts leading to principally new
+efficient solar cell designs that utilize nanowires is far from being
+depleted. For example, the spectrum splitting, a natural way to increase
+a photovoltaic conversion system efficiency,<sup><xref ref-type="bibr" rid="ref28">28</xref>,<xref ref-type="bibr" rid="ref29">29</xref></sup> has found yet a very limited application in nanowire solar cell
+concepts. Spectrum splitting allows reducing the carrier thermalization
+loss and thereby greatly improving the conversion efficiency of each
+photon.<sup><xref ref-type="bibr" rid="ref30">30</xref>,<xref ref-type="bibr" rid="ref31">31</xref></sup> The efficiency of classical multijunction
+cells (the most common cells utilizing the spectrum splitting) has
+recently reached 44.7%.<sup><xref ref-type="bibr" rid="ref32">32</xref></sup> For the nanowires
+it was suggested to use core&#x02013;shell<sup><xref ref-type="bibr" rid="ref24">24</xref></sup> or axial<sup><xref ref-type="bibr" rid="ref26">26</xref></sup> tandem structures. The issue
+however is that such designs require a fabrication of tunnel junctions
+in dissimilar materials, which has proven to be extremely challenging.<sup><xref ref-type="bibr" rid="ref33">33</xref>,<xref ref-type="bibr" rid="ref34">34</xref></sup> In addition, the performance of these cells is limited by the current-matching
+condition.</p><p>The questions we address in this work are the following:
+Should
+one be bound to the classical multijunction design<sup><xref ref-type="bibr" rid="ref32">32</xref></sup> and replicate it directly on each nanowire?<sup><xref ref-type="bibr" rid="ref24">24</xref>,<xref ref-type="bibr" rid="ref26">26</xref></sup> Is it possible to think outside the box and to lay out new arrangements
+of nanowires that act effectively like a multijunction device, just
+by considering their special photonic properties?</p><sec id="sec2"><title>Multiterminal
+Nanowire Array</title><p>In this paper we present a novel nanowire-based
+triple band gap
+design with a two-dimensional spatial arrangement of three independently
+contacted nanowire subarrays grown on a single flat substrate. The
+design combines all the advantages of the spectrum splitting with
+independent subcell contacting and fabrication on a silicon substrate.
+Nanowires allow one to combine a wide range of materials such as growing
+III&#x02013;V nanowires on a silicon substrate<sup><xref ref-type="bibr" rid="ref3">3</xref>,<xref ref-type="bibr" rid="ref15">15</xref>,<xref ref-type="bibr" rid="ref17">17</xref>,<xref ref-type="bibr" rid="ref35">35</xref></sup> and to simultaneously
+grow different nanowires on the same substrate.<sup><xref ref-type="bibr" rid="ref35">35</xref>,<xref ref-type="bibr" rid="ref36">36</xref></sup> From the detailed balance consideration we chose Al<sub>0.54</sub>Ga<sub>0.46</sub>As, GaAs, and In<sub>0.37</sub>Ga<sub>0.63</sub>As so that they form an ideal band gap combination (2.01, 1.42, and
+0.93 eV, correspondingly). These materials can be grown in the same
+epitaxial system, which is important for the fabrication process.
+The nanowires of different materials are physically separated, so
+that the complexity of each wire is not greater than that in a single-junction
+nanowire design. This makes the fabrication of such nanowires much
+easier than, for example, double-junction nanowires, which additionally
+require a tunnel junction.<sup><xref ref-type="bibr" rid="ref24">24</xref>,<xref ref-type="bibr" rid="ref26">26</xref></sup> The spectrum splitting
+and the independent electrical connection of the subarrays bring a
+high conversion efficiency and great spectrum change tolerance (due
+to the absence of current and voltage matching limitations; see <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acsphotonics.5b00222/suppl_file/ph5b00222_si_001.pdf">Supporting Information</ext-link> section 1). To allow independent
+connections, the substrate must have three independent contact grids,
+one for each nanowire subarray. The latter can be realized by a layered
+structure of highly doped silicon conduction lines within an insulating
+silicon dioxide substrate fabricated with a CMOS-like technology (see <xref rid="fig1" ref-type="fig">Figure <xref rid="fig1" ref-type="fig">1</xref></xref>). We should note
+here that we suggest using radial junction nanowires so that the silicon
+conduction lines will be contacting the cores of the corresponding
+nanowires while the shells will be connected by transparent contacts
+(see <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acsphotonics.5b00222/suppl_file/ph5b00222_si_001.pdf">Supporting Information</ext-link> section 3 for
+a detailed description).</p><p><xref rid="fig1" ref-type="fig">Figure <xref rid="fig1" ref-type="fig">1</xref></xref> shows the
+general scheme, working principle, and contacting scheme for the triple-junction
+nanowire array proposed in this work. Nanowires made of materials
+with different band gaps are arranged on the substrate in a two-dimensional
+periodic array such that the incoming light is absorbed selectively
+within the wires according to the band gap. As a general rule, the
+larger the band gap, the taller the nanowires should be. The idea
+here is that high-energy photons will be completely absorbed before
+they reach the height of nanowires with a lower band gap (see <xref rid="fig1" ref-type="fig">Figure <xref rid="fig1" ref-type="fig">1</xref></xref>b). This is due to
+the advantage of the increased absorption cross-section in standing
+nanowires. As a result, the solar spectrum is divided into three absorption
+spectral ranges. The periodic array has a rectangular unit cell, where
+the higher and lower band gap nanowires are disposed on one side of
+the cell, while the nanowires with a medium band gap are arranged
+on the other side (see <xref rid="fig1" ref-type="fig">Figure <xref rid="fig1" ref-type="fig">1</xref></xref>a). Simulations indicate that the best performance is achieved
+with two medium band gap nanowires per unit cell. This configuration
+was chosen over others because it has a similar or superior performance
+with a simpler geometry and fewer parameters. In particular we performed
+a short set of comparisons for several hexagonal arrangements and
+rectangular unit cells. Similar results were obtained for most of
+the configurations. Thus, we focus on the simplest rectangular unit
+cell with a rectangular arrangement of nanowires inside. For this
+arrangement it is natural that one of the nanowire types is duplicated
+within the cell in order to achieve an efficient space utilization.
+The GaAs nanowires were chosen to be doubled because they provide
+the highest contribution to the efficiency, arising from light absorption
+closest to the maximum of the solar spectrum. A more detailed study
+of different nanowire arrangements is very time-consuming and will
+be performed in future works.</p><p>The optimized structure has the
+following parameters: Al<sub>0.54</sub>Ga<sub>0.46</sub>As, GaAs,
+In<sub>0.37</sub>Ga<sub>0.63</sub>As nanowire
+radii (lengths) of 51 nm (12 &#x003bc;m), 73 nm (6.6 &#x003bc;m), and
+114 nm (3.3 &#x003bc;m), respectively, array periods of 580 &#x000d7; 500
+nm, and center-to-center spacing between GaAs&#x02013;GaAs (GaAs&#x02013;InGaAs)
+nanowires of 290 nm (250 nm). The equivalent bulk thicknesses of AlGaAs,
+GaAs, and InGaAs layers are 340, 760, and 460 nm, correspondingly.
+The lengths, diameters, and positions of the nanowires are calculated
+and optimized using a Fourier modal method (FMM)<sup><xref ref-type="bibr" rid="ref37">37</xref></sup> combined with an evolution strategy (ES)<sup><xref ref-type="bibr" rid="ref38">38</xref></sup> and Nelder&#x02013;Mead<sup><xref ref-type="bibr" rid="ref39">39</xref></sup> optimizers
+(see <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acsphotonics.5b00222/suppl_file/ph5b00222_si_001.pdf">Supporting Information</ext-link> section 2 for
+more details). We present here the calculations for a triple band
+gap solar cell, but the principle can be employed for a higher number
+of junctions.</p><fig id="fig1" position="float"><label>Figure 1</label><caption><p>Design concept. (a) Schematic illustration of the triple-junction
+nanowire array on a Si substrate. Each unit cell contains high, low,
+and two medium band gap nanowires (the higher the band gap value,
+the higher the wires). (b) Working principle of the design. (c) Contacting
+scheme of the multiterminal device. Photoelectrical power is extracted
+separately from nanowires of different band gaps (lengths), so that
+the generated power is directly added.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ph-2015-00222a_0002" id="gr1" position="float"/></fig><p><xref rid="fig1" ref-type="fig">Figure <xref rid="fig1" ref-type="fig">1</xref></xref>c
+depicts
+a contacting scheme of the three solar subcells. The junctions are
+designed in a core&#x02013;shell fashion. The core&#x02013;shell structures
+offer more robustness in terms of surface recombination losses. Still,
+axial junctions would also be possible if adequate surface passivation
+is provided. The photogenerated power is collected separately for
+each of the three different kinds of nanowires. Nanowires are grown
+on sub-micrometer-scale platforms insulated electrically from the
+neighboring ones. Such a scheme could be achieved by subsequently
+growing three nanowire subarrays on a patterned (highly doped) silicon-on-insulator
+substrate (SOI). The highly doped silicon platforms would directly
+contact nanowire cores, while nanowire shells would be contacted via
+transparent top-contacts. The process would involve the insulation
+(passivation) of the nanowires and selective etch of each of the nanowire
+tips, as shown in prior works.<sup><xref ref-type="bibr" rid="ref40">40</xref></sup> A transparent
+polymer layer would ensure the mechanical stability of the nanowire/contacts
+ensemble (see <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acsphotonics.5b00222/suppl_file/ph5b00222_si_001.pdf">Supporting Information</ext-link> section
+3 for the detailed fabrication steps description).</p><p>A natural
+way to collect the generated power of the multiterminal
+contacting scheme is to use three independent external converters
+supplying energy to the grid. Such schemes have a high spectrum change
+stability. An alternative with only one converter is a voltage matching
+scheme on the module level leading to a single power source. One example
+of such scheme with still high efficiency is presented in the <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acsphotonics.5b00222/suppl_file/ph5b00222_si_001.pdf">Supporting Information</ext-link> section 4. As an advantage
+of such a scheme, we do not have to include tunnel junctions for current
+matching as in standard multijunction cells, which would make fabrication
+more demanding.<sup><xref ref-type="bibr" rid="ref33">33</xref>,<xref ref-type="bibr" rid="ref34">34</xref></sup> Although the voltage-matched
+scheme is less tolerant to the spectrum changes, the module interconnection
+scheme is very flexible. One can imagine that it could even have electronic
+controls that adapt to the spectrum during operation.</p></sec><sec id="sec3"><title>Results and Discussion</title><p>In <xref rid="fig2" ref-type="fig">Figure <xref rid="fig2" ref-type="fig">2</xref></xref>a the
+spectral distribution of light absorption within the nanowires and
+detailed balance current&#x02013;voltage dependences for the optimal
+structure are shown. The detailed balance limit efficiency estimation<sup><xref ref-type="bibr" rid="ref41">41</xref></sup> of the optimized structure is 48.3% for an AM1.5
+direct solar spectrum (see <xref rid="fig2" ref-type="fig">Figure <xref rid="fig2" ref-type="fig">2</xref></xref>a). This value is close to the maximum conversion efficiency
+for a triple band gap design under ideal sunlight splitting, which
+is 51.3% (for the same spectrum, see the <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acsphotonics.5b00222/suppl_file/ph5b00222_si_001.pdf">Supporting Information</ext-link> section 5). One can see that the GaAs subcell gives
+the highest contribution to the overall conversion efficiency (see <xref rid="fig2" ref-type="fig">Figure <xref rid="fig2" ref-type="fig">2</xref></xref>b) and is closest
+to the maximum absorption within the corresponding spectral range
+(see <xref rid="fig2" ref-type="fig">Figure <xref rid="fig2" ref-type="fig">2</xref></xref>a). Such
+a result is to be expected due to the doubled number of GaAs nanowires
+compared to Al(In)GaAs. It is also beneficial from the fabrication
+point of view because the GaAs is a simple compound material and the
+least demanding in the growth process. Furthermore, the GaAs single-junction
+cell showed 28.8% efficiency,<sup><xref ref-type="bibr" rid="ref42">42</xref></sup> which is
+close to the detailed balance conversion efficiency. The highest yield
+subcell in the design is therefore also the most promising from the
+fabrication point of view. Another observation one can make from <xref rid="fig2" ref-type="fig">Figure <xref rid="fig2" ref-type="fig">2</xref></xref>a is that the majority
+of the absorption losses are happening at the beginning and at the
+end of the absorption range. The loss at the beginning (low frequencies)
+happens due to the low absorptivity of InGaAs close to its band gap.
+That could be compensated by increasing the lengths of the corresponding
+nanowires or a choice of material with a steeper absorption growth
+near the band gap. The loss at the end (high frequencies) happens
+due to the cross-section of AlGaAs nanowires reaching its limits.
+At high frequencies the wavelength of the light becomes smaller than
+the internanowire distance and some photons are passing through without
+feeling the nanowires&#x02019; presence. Both of the issues listed
+above will become a subject of further research on improved material
+combinations and nanowire array geometries.</p><p>The obtained result
+(48.3% out of a maximal 51.3% detailed balance
+efficiency) shows a high potential of the optical design due to the
+nanowire concentration effect. It is evident though that a more realistic
+conversion efficiency could be obtained with a more detailed consideration
+of factors such as nonradiative losses, resistive losses, and additional
+losses introduced by transparent contacts. To get a hint about the
+fabrication demands and resistive losses of the designed cell, one
+can consult the band profile estimations for nanowires performed in
+ref (<xref ref-type="bibr" rid="ref43">43</xref>). We will take
+the AlGaAs wires as an example. Due to these nanowires being the thinnest
+and longest, the corresponding subcell will certainly exhibit the
+highest series resistance and voltage reduction. We assume core and
+shell doping levels of <italic>n</italic> = 10<sup>19</sup> cm<sup>&#x02013;3</sup> and a surface-state density below 10<sup>11</sup> cm<sup>&#x02013;2</sup> eV<sup>&#x02013;1</sup>. For the nanowires
+with a diameter of around 100 nm we can estimate from ref (<xref ref-type="bibr" rid="ref43">43</xref>) that it is possible to
+have a partially nondepleted core and shell, which is essential for
+the conductivity. Due to the smaller mobility of free holes, we address
+here the voltage drop given in the p-type core of the AlGaAs nanowires.
+For 54% of aluminum the hole mobility is expected to be around &#x003bc;<sub>h</sub> = 54 cm<sup>2</sup>/V/s. The nondepleted (conductive) section
+roughly corresponds to half of the nanowire cross-section, <italic>S</italic> = 0.5&#x003c0;<italic>r</italic><sup>2</sup> = 3.93 &#x000d7;
+10<sup>&#x02013;11</sup> cm<sup>2</sup>. Thus, the resistance at the
+nanowire core will be R = <italic>l</italic>/(<italic>n</italic>&#x003bc;<sub>h</sub><italic>eS</italic>) = 353 k&#x003a9;, where <italic>l</italic> = 12 &#x003bc;m is the nanowire length. Under the one sun operation
+conditions, the current flowing through the AlGaAs nanowire will be <italic>I</italic> = 2.93 &#x000d7; 10<sup>&#x02013;11</sup> A. Thus, the voltage
+drop due to the core resistance will be <italic>dV</italic> = <italic>I</italic><italic>R</italic> = 3 &#x000d7; 10<sup>&#x02013;5</sup> V.
+In conclusion, the series resistance for a realistic device should
+not degrade too much the theoretical values, provided that there is
+an impeccable fabrication protocol. It is also worth mentioning that
+the surface recombination is less critical for radial junctions.<sup><xref ref-type="bibr" rid="ref44">44</xref></sup></p><p>The actual efficiency that would be obtained
+experimentally depends
+on multiple parameters, some of which depend strongly on the fabrication
+process (such as defect densities). However, a rough estimation of
+efficiency can be given based on the known technological achievements.
+As described in ref (<xref ref-type="bibr" rid="ref45">45</xref>), we can assume that recombination in GaAs-based III&#x02013;V materials
+is around 150 times stronger than its radiative values, and therefore
+the actual efficiency would be around 42% rather than 48%.</p><fig id="fig2" position="float"><label>Figure 2</label><caption><p>Performance
+calculation. (a) Absorption distribution between the
+different band gaps. (b) Current&#x02013;voltage dependences of the
+optimal nanowires&#x02019; structure. Calculations are made using detailed
+balance limit and AM1.5 direct solar spectrum. Overall efficiency
+limit of the nanowire array is 48.3%. Current/voltage (in mA/cm<sup>2</sup> and V) in the optimal points for Al<sub>0.54</sub>Ga<sub>0.46</sub>As is 10.1/1.64, for GaAs, 17.5/1.03, and for In<sub>0.37</sub>Ga<sub>0.63</sub>As, 14.7/0.60.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ph-2015-00222a_0003" id="gr2" position="float"/></fig><p>To further illustrate the working principle of our design,
+we show
+how the light is spatially distributed and selectively absorbed in
+the nanowire array. In <xref rid="fig3" ref-type="fig">Figure <xref rid="fig3" ref-type="fig">3</xref></xref> we depict the Poynting vector flow-lines near the nanowires
+for photon energies of 1.2, 1.7, and 2.2 eV. The Poynting vector is
+a direct illustration of the electromagnetic energy flow. Calculations
+shown in <xref rid="fig2" ref-type="fig">Figure <xref rid="fig2" ref-type="fig">2</xref></xref>a
+indicate that for all of the absorbed photon energies not only does
+light enter the nanowire through the top surface, but the Poynting
+vector gradually leads in through the side walls. This is a consequence
+of the nanowire light concentration. The pattern of energy flow is
+key to the efficient spectral light splitting within the nanowire
+array. In this way high-frequency photons (above the AlGaAs band gap)
+are being mostly absorbed before reaching the GaAs nanowires, and
+in the same way medium-frequency photons (above the GaAs and below
+the AlGaAs band gap) are being absorbed by GaAs nanowires before reaching
+InGaAs.</p><fig id="fig3" position="float"><label>Figure 3</label><caption><p>Poynting vector flow-lines for frequencies of 1.2, 1.7, and 2.2
+eV. Each distribution is shown near a nanowire with an appropriate
+band gap. The nanowire array structure shown here is the optimal design
+found from the optimization.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ph-2015-00222a_0004" id="gr3" position="float"/></fig></sec><sec id="sec4"><title>Conclusion</title><p>In conclusion, a new strategy for the design
+of highly efficient
+nanowire-based solar cells is outlined. We propose splitting the incoming
+solar spectrum spatially so that nanowires with different band gaps
+separately photoconvert it into electrical power. This opens new possibilities
+for multijunction cells, where materials with different band gaps
+and lattice constants are combined on a single substrate. The physically
+separated junctions based on nanowires guarantee spatial solar spectrum
+splitting while avoiding the need to fabricate complicated nanowires
+with tunnel junctions. The absence of the current/voltage matching
+limitations results in an extremely high theoretical conversion efficiency,
+namely, 48.3% without light concentration. The design ensures a significantly
+reduced material consumption compared to standard bulk structures
+due to the low nanowire volume and the fabrication on a silicon substrate.
+Although the fabrication and contacting scheme are challenging, we
+propose that current CMOS technology processes could be transferred
+to this kind of device. Finally, independent contacting of different
+junctions grants improved spectrum stability, compared to current
+matched schemes. This novel nanowire-based multi-band-gap solar cell
+scheme opens the path toward a new generation of devices that fully
+exploit the potential of nanowires.</p></sec></body><back><notes id="notes-1" notes-type="si"><title>Supporting Information Available</title><p>The Supporting Information
+is available free of charge on the <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org">ACS Publications website</ext-link> at DOI: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/abs/10.1021/acsphotonics.5b00222">10.1021/acsphotonics.5b00222</ext-link>.<list id="silist" list-type="simple"><list-item><p>Proposed fabrication
+process and contacting arrangement
+as well as detailed description of simulation and optimization techniques
+(<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acsphotonics.5b00222/suppl_file/ph5b00222_si_001.pdf">PDF</ext-link>)</p></list-item></list></p></notes><sec sec-type="supplementary-material"><title>Supplementary Material</title><supplementary-material content-type="local-data" id="sifile1"><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ph5b00222_si_001.pdf"><caption><p>ph5b00222_si_001.pdf</p></caption></media></supplementary-material></sec><notes notes-type="COI-statement" id="NOTES-d1343e593-autogenerated"><p>The authors declare no
+competing financial interest.</p></notes><ack><title>Acknowledgments</title><p>The authors are indebted to Swiss National Science Foundation
+(project 143908 &#x0201c;Light trapping enhanced mesoscopic solar cells&#x0201d;),
+Ambizione Energy PZENP2_154283, ERC StG UpCon, NanoTera Synergy, ITN
+Nanoembrace, and Zeropower.</p></ack><ref-list><title>References</title><ref id="ref1"><mixed-citation publication-type="journal" id="cit1"><name><surname>Zeng</surname><given-names>Y.</given-names></name>; <name><surname>Ye</surname><given-names>Q. H.</given-names></name>; <name><surname>Shen</surname><given-names>W. Z.</given-names></name>
+<article-title>Design
+principles for single standing
+nanowire solar cells: going beyond the planar efficiency limits</article-title>. <source>Sci. Rep.</source>
+<year>2014</year>, <volume>4</volume>, <fpage>4915</fpage><pub-id pub-id-type="doi">10.1038/srep04915</pub-id>.<pub-id pub-id-type="pmid">24810591</pub-id></mixed-citation></ref><ref id="ref2"><mixed-citation publication-type="journal" id="cit2"><name><surname>Callahan</surname><given-names>D. M.</given-names></name>; <name><surname>Munday</surname><given-names>J. N.</given-names></name>; <name><surname>Atwater</surname><given-names>H. A.</given-names></name>
+<article-title>Solar Cell
+Light Trapping beyond
+the Ray Optic Limit</article-title>. <source>Nano Lett.</source>
+<year>2012</year>, <volume>12</volume>, <fpage>214</fpage>&#x02013;<lpage>218</lpage>. <pub-id pub-id-type="doi">10.1021/nl203351k</pub-id>.<pub-id pub-id-type="pmid">22149061</pub-id></mixed-citation></ref><ref id="ref3"><mixed-citation publication-type="journal" id="cit3"><name><surname>Krogstrup</surname><given-names>P.</given-names></name>; <name><surname>Jorgensen</surname><given-names>H. I.</given-names></name>; <name><surname>Heiss</surname><given-names>M.</given-names></name>; <name><surname>Demichel</surname><given-names>O.</given-names></name>; <name><surname>Holm</surname><given-names>J. V.</given-names></name>; <name><surname>Aagesen</surname><given-names>M.</given-names></name>; <name><surname>Nygard</surname><given-names>J.</given-names></name>; <name><surname>Morral</surname><given-names>A. F. I.</given-names></name>
+<article-title>Single-nanowire
+solar cells beyond the Shockley-Queisser limit</article-title>. <source>Nat. Photonics</source>
+<year>2013</year>, <volume>7</volume>, <fpage>306</fpage>&#x02013;<lpage>310</lpage>. <pub-id pub-id-type="doi">10.1038/nphoton.2013.32</pub-id>.</mixed-citation></ref><ref id="ref4"><mixed-citation publication-type="journal" id="cit4"><name><surname>Wallentin</surname><given-names>J.</given-names></name>; <name><surname>Anttu</surname><given-names>N.</given-names></name>; <name><surname>Asoli</surname><given-names>D.</given-names></name>; <name><surname>Huffman</surname><given-names>M.</given-names></name>; <name><surname>Aberg</surname><given-names>I.</given-names></name>; <name><surname>Magnusson</surname><given-names>M. H.</given-names></name>; <name><surname>Siefer</surname><given-names>G.</given-names></name>; <name><surname>Fuss-Kailuweit</surname><given-names>P.</given-names></name>; <name><surname>Dimroth</surname><given-names>F.</given-names></name>; <name><surname>Witzigmann</surname><given-names>B.</given-names></name>; <name><surname>Xu</surname><given-names>H. Q.</given-names></name>; <name><surname>Samuelson</surname><given-names>L.</given-names></name>; <name><surname>Deppert</surname><given-names>K.</given-names></name>; <name><surname>Borgstrom</surname><given-names>M. T.</given-names></name>
+<article-title>InP nanowire array solar cells achieving
+13.8% efficiency by exceeding the ray optics limit</article-title>. <source>Science</source>
+<year>2013</year>, <volume>339</volume>, <fpage>1057</fpage>&#x02013;<lpage>60</lpage>. <pub-id pub-id-type="doi">10.1126/science.1230969</pub-id>.<pub-id pub-id-type="pmid">23328392</pub-id></mixed-citation></ref><ref id="ref5"><mixed-citation publication-type="journal" id="cit5"><name><surname>Garnett</surname><given-names>E. C.</given-names></name>; <name><surname>Yang</surname><given-names>P. D.</given-names></name>
+<article-title>Silicon nanowire radial p&#x02013;n junction solar cells</article-title>. <source>J. Am. Chem. Soc.</source>
+<year>2008</year>, <volume>130</volume>, <fpage>9224</fpage>&#x02013;<lpage>9225</lpage>. <pub-id pub-id-type="doi">10.1021/ja8032907</pub-id>.<pub-id pub-id-type="pmid">18576622</pub-id></mixed-citation></ref><ref id="ref6"><mixed-citation publication-type="journal" id="cit6"><name><surname>Kelzenberg</surname><given-names>M. D.</given-names></name>; <name><surname>Boettcher</surname><given-names>S. W.</given-names></name>; <name><surname>Petykiewicz</surname><given-names>J. A.</given-names></name>; <name><surname>Turner-Evans</surname><given-names>D. B.</given-names></name>; <name><surname>Putnam</surname><given-names>M. C.</given-names></name>; <name><surname>Warren</surname><given-names>E. L.</given-names></name>; <name><surname>Spurgeon</surname><given-names>J. M.</given-names></name>; <name><surname>Briggs</surname><given-names>R. M.</given-names></name>; <name><surname>Lewis</surname><given-names>N. S.</given-names></name>; <name><surname>Atwater</surname><given-names>H. A.</given-names></name>
+<article-title>Enhanced absorption and carrier collection
+in Si wire arrays for photovoltaic applications</article-title>. <source>Nat. Mater.</source>
+<year>2010</year>, <volume>9</volume>, <fpage>239</fpage>&#x02013;<lpage>244</lpage>. <pub-id pub-id-type="doi">10.1038/nmat2635</pub-id>.<pub-id pub-id-type="pmid">20154692</pub-id></mixed-citation></ref><ref id="ref7"><mixed-citation publication-type="journal" id="cit7"><name><surname>Kempa</surname><given-names>T. J.</given-names></name>; <name><surname>Cahoon</surname><given-names>J. F.</given-names></name>; <name><surname>Kim</surname><given-names>S. K.</given-names></name>; <name><surname>Day</surname><given-names>R. W.</given-names></name>; <name><surname>Bell</surname><given-names>D. C.</given-names></name>; <name><surname>Park</surname><given-names>H. G.</given-names></name>; <name><surname>Lieber</surname><given-names>C. M.</given-names></name>
+<article-title>Coaxial
+multishell nanowires with
+high-quality electronic interfaces and tunable optical cavities for
+ultrathin photovoltaics</article-title>. <source>Proc. Natl. Acad. Sci.
+U. S. A.</source>
+<year>2012</year>, <volume>109</volume>, <fpage>1407</fpage>&#x02013;<lpage>1412</lpage>. <pub-id pub-id-type="doi">10.1073/pnas.1120415109</pub-id>.<pub-id pub-id-type="pmid">22307592</pub-id></mixed-citation></ref><ref id="ref8"><mixed-citation publication-type="journal" id="cit8"><name><surname>Ji</surname><given-names>S.</given-names></name>; <name><surname>Ye</surname><given-names>C.</given-names></name>
+<article-title>Cu<sub>2</sub>ZnSnS<sub>4</sub> as a New Solar Cell Material: The
+History and the Future</article-title>. <source>Rev. Adv. Sci. Eng.</source>
+<year>2012</year>, <volume>1</volume>, <fpage>42</fpage>&#x02013;<lpage>58</lpage>. <pub-id pub-id-type="doi">10.1166/rase.2012.1003</pub-id>.</mixed-citation></ref><ref id="ref9"><mixed-citation publication-type="journal" id="cit9"><name><surname>Rao</surname><given-names>H. S.</given-names></name>; <name><surname>Wu</surname><given-names>W. Q.</given-names></name>; <name><surname>Liu</surname><given-names>Y.</given-names></name>; <name><surname>Xu</surname><given-names>Y. F.</given-names></name>; <name><surname>Chen</surname><given-names>B. X.</given-names></name>; <name><surname>Chen</surname><given-names>H. Y.</given-names></name>; <name><surname>Kuang</surname><given-names>D. B.</given-names></name>; <name><surname>Su</surname><given-names>C. Y.</given-names></name>
+<article-title>CdS/CdSe co-sensitized
+vertically aligned anatase TiO2 nanowire arrays for efficient solar
+cells</article-title>. <source>Nano Energy</source>
+<year>2014</year>, <volume>8</volume>, <fpage>1</fpage>&#x02013;<lpage>8</lpage>. <pub-id pub-id-type="doi">10.1016/j.nanoen.2014.05.003</pub-id>.</mixed-citation></ref><ref id="ref10"><mixed-citation publication-type="journal" id="cit10"><name><surname>Choi</surname><given-names>H.</given-names></name>; <name><surname>Radich</surname><given-names>J. G.</given-names></name>; <name><surname>Kamat</surname><given-names>P. V.</given-names></name>
+<article-title>Sequentially
+Layered CdSe/CdS Nanowire
+Architecture for Improved Nanowire Solar Cell Performance</article-title>. <source>J. Phys. Chem. C</source>
+<year>2014</year>, <volume>118</volume>, <fpage>206</fpage>&#x02013;<lpage>213</lpage>. <pub-id pub-id-type="doi">10.1021/jp410235s</pub-id>.</mixed-citation></ref><ref id="ref11"><mixed-citation publication-type="journal" id="cit11"><name><surname>Ben
+Dkhil</surname><given-names>S.</given-names></name>; <name><surname>Ebdelli</surname><given-names>R.</given-names></name>; <name><surname>Dachraoui</surname><given-names>W.</given-names></name>; <name><surname>Faltakh</surname><given-names>H.</given-names></name>; <name><surname>Bourguiga</surname><given-names>R.</given-names></name>; <name><surname>Davenas</surname><given-names>J.</given-names></name>
+<article-title>Improved photovoltaic
+performance of hybrid solar cells based on silicon nanowire and P3HT</article-title>. <source>Synth. Met.</source>
+<year>2014</year>, <volume>192</volume>, <fpage>74</fpage>&#x02013;<lpage>81</lpage>. <pub-id pub-id-type="doi">10.1016/j.synthmet.2014.03.016</pub-id>.</mixed-citation></ref><ref id="ref12"><mixed-citation publication-type="journal" id="cit12"><name><surname>Wang</surname><given-names>W. B.</given-names></name>; <name><surname>Li</surname><given-names>X. H.</given-names></name>; <name><surname>Wen</surname><given-names>L.</given-names></name>; <name><surname>Zhao</surname><given-names>Y. F.</given-names></name>; <name><surname>Duan</surname><given-names>H. H.</given-names></name>; <name><surname>Zhou</surname><given-names>B. K.</given-names></name>; <name><surname>Shi</surname><given-names>T. F.</given-names></name>; <name><surname>Zeng</surname><given-names>X. S.</given-names></name>; <name><surname>Li</surname><given-names>N.</given-names></name>; <name><surname>Wang</surname><given-names>Y. Q.</given-names></name>
+<article-title>Optical simulations
+of P3HT/Si nanowire array hybrid
+solar cells</article-title>. <source>Nanoscale Res. Lett.</source>
+<year>2014</year>, <volume>9</volume>, <fpage>238</fpage><pub-id pub-id-type="doi">10.1186/1556-276X-9-238</pub-id>.<pub-id pub-id-type="pmid">24948883</pub-id></mixed-citation></ref><ref id="ref13"><mixed-citation publication-type="journal" id="cit13"><name><surname>Qiu</surname><given-names>J.</given-names></name>; <name><surname>Qiu</surname><given-names>Y.</given-names></name>; <name><surname>Yan</surname><given-names>K.</given-names></name>; <name><surname>Zhong</surname><given-names>M.</given-names></name>; <name><surname>Mu</surname><given-names>C.</given-names></name>; <name><surname>Yan</surname><given-names>H.</given-names></name>; <name><surname>Yang</surname><given-names>S.</given-names></name>
+<article-title>All-solid-state
+hybrid solar cells based on a new organometal halide
+perovskite sensitizer and one-dimensional TiO2 nanowire arrays</article-title>. <source>Nanoscale</source>
+<year>2013</year>, <volume>5</volume>, <fpage>3245</fpage>&#x02013;<lpage>3248</lpage>. <pub-id pub-id-type="doi">10.1039/c3nr00218g</pub-id>.<pub-id pub-id-type="pmid">23508213</pub-id></mixed-citation></ref><ref id="ref14"><mixed-citation publication-type="journal" id="cit14"><name><surname>Casadei</surname><given-names>A.</given-names></name>; <name><surname>Llado</surname><given-names>E. A.</given-names></name>; <name><surname>Amaduzzi</surname><given-names>F.</given-names></name>; <name><surname>Russo-Averchi</surname><given-names>E.</given-names></name>; <name><surname>Ruffer</surname><given-names>D.</given-names></name>; <name><surname>Heiss</surname><given-names>M.</given-names></name>; <name><surname>Negro</surname><given-names>L. D.</given-names></name>; <name><surname>Morral</surname><given-names>A. F. i.</given-names></name>
+<article-title>Polarization
+response of nanowires a la carte</article-title>. <source>Sci. Rep.</source>
+<year>2015</year>, <volume>5</volume>, <fpage>7651</fpage><pub-id pub-id-type="doi">10.1038/srep07651</pub-id>.<pub-id pub-id-type="pmid">25564366</pub-id></mixed-citation></ref><ref id="ref15"><mixed-citation publication-type="journal" id="cit15"><name><surname>Chuang</surname><given-names>L. C.</given-names></name>; <name><surname>Moewe</surname><given-names>M.</given-names></name>; <name><surname>Chase</surname><given-names>C.</given-names></name>; <name><surname>Kobayashi</surname><given-names>N. P.</given-names></name>; <name><surname>Chang-Hasnain</surname><given-names>C.</given-names></name>; <name><surname>Crankshaw</surname><given-names>S.</given-names></name>
+<article-title>Critical diameter
+for III-V nanowires
+grown on lattice-mismatched substrates</article-title>. <source>Appl.
+Phys. Lett.</source>
+<year>2007</year>, <volume>90</volume>, <fpage>043115</fpage><pub-id pub-id-type="doi">10.1063/1.2436655</pub-id>.</mixed-citation></ref><ref id="ref16"><mixed-citation publication-type="journal" id="cit16"><name><surname>Glas</surname><given-names>F.</given-names></name>
+<article-title>Critical dimensions
+for the plastic relaxation of strained axial heterostructures in free-standing
+nanowires</article-title>. <source>Phys. Rev. B: Condens. Matter Mater.
+Phys.</source>
+<year>2006</year>, <volume>74</volume>, <fpage>121302</fpage><pub-id pub-id-type="doi">10.1103/PhysRevB.74.121302</pub-id>.</mixed-citation></ref><ref id="ref17"><mixed-citation publication-type="journal" id="cit17"><name><surname>Fan</surname><given-names>Z.</given-names></name>; <name><surname>Razavi</surname><given-names>H.</given-names></name>; <name><surname>Do</surname><given-names>J.</given-names></name>; <name><surname>Moriwaki</surname><given-names>A.</given-names></name>; <name><surname>Ergen</surname><given-names>O.</given-names></name>; <name><surname>Chueh</surname><given-names>Y.-L.</given-names></name>; <name><surname>Leu</surname><given-names>P. W.</given-names></name>; <name><surname>Ho</surname><given-names>J. C.</given-names></name>; <name><surname>Takahashi</surname><given-names>T.</given-names></name>; <name><surname>Reichertz</surname><given-names>L. A.</given-names></name>; <name><surname>Neale</surname><given-names>S.</given-names></name>; <name><surname>Yu</surname><given-names>K.</given-names></name>; <name><surname>Wu</surname><given-names>M.</given-names></name>; <name><surname>Ager</surname><given-names>J. W.</given-names></name>; <name><surname>Javey</surname><given-names>A.</given-names></name>
+<article-title>Three-dimensional nanopillar-array
+photovoltaics on low-cost and flexible substrates</article-title>. <source>Nat. Mater.</source>
+<year>2009</year>, <volume>8</volume>, <fpage>648</fpage>&#x02013;<lpage>653</lpage>. <pub-id pub-id-type="doi">10.1038/nmat2493</pub-id>.<pub-id pub-id-type="pmid">19578336</pub-id></mixed-citation></ref><ref id="ref18"><mixed-citation publication-type="journal" id="cit18"><name><surname>Mallorqui</surname><given-names>A. D.</given-names></name>; <name><surname>Alarcon-Llado</surname><given-names>E.</given-names></name>; <name><surname>Russo-Averchi</surname><given-names>E.</given-names></name>; <name><surname>Tutuncuoglu</surname><given-names>G.</given-names></name>; <name><surname>Matteini</surname><given-names>F.</given-names></name>; <name><surname>Ruffer</surname><given-names>D.</given-names></name>; <name><surname>Morral</surname><given-names>A. F. I.</given-names></name>
+<article-title>Characterization
+and analysis of InAs/p-Si heterojunction nanowire-based solar cell</article-title>. <source>J. Phys. D: Appl. Phys.</source>
+<year>2014</year>, <volume>47</volume>, <fpage>394017</fpage><pub-id pub-id-type="doi">10.1088/0022-3727/47/39/394017</pub-id>.</mixed-citation></ref><ref id="ref19"><mixed-citation publication-type="journal" id="cit19"><name><surname>Kandala</surname><given-names>A.</given-names></name>; <name><surname>Betti</surname><given-names>T.</given-names></name>; <name><surname>Morral</surname><given-names>A. F. I.</given-names></name>
+<article-title>General theoretical considerations
+on nanowire solar cell designs</article-title>. <source>Phys. Status
+Solidi A</source>
+<year>2009</year>, <volume>206</volume>, <fpage>173</fpage>&#x02013;<lpage>178</lpage>. <pub-id pub-id-type="doi">10.1002/pssa.200723672</pub-id>.</mixed-citation></ref><ref id="ref20"><mixed-citation publication-type="journal" id="cit20"><name><surname>Ding</surname><given-names>W. C.</given-names></name>; <name><surname>Jia</surname><given-names>R.</given-names></name>; <name><surname>Li</surname><given-names>H. F.</given-names></name>; <name><surname>Chen</surname><given-names>C.</given-names></name>; <name><surname>Sun</surname><given-names>Y.</given-names></name>; <name><surname>Jin</surname><given-names>Z.</given-names></name>; <name><surname>Liu</surname><given-names>X. Y.</given-names></name>
+<article-title>Design of two dimensional silicon nanowire arrays for
+antireflection and light trapping in silicon solar cells</article-title>. <source>J. Appl. Phys.</source>
+<year>2014</year>, <volume>115</volume>, <fpage>014307</fpage><pub-id pub-id-type="doi">10.1063/1.4848996</pub-id>.</mixed-citation></ref><ref id="ref21"><mixed-citation publication-type="journal" id="cit21"><name><surname>Um</surname><given-names>H. D.</given-names></name>; <name><surname>Park</surname><given-names>K. T.</given-names></name>; <name><surname>Jung</surname><given-names>J. Y.</given-names></name>; <name><surname>Li</surname><given-names>X. P.</given-names></name>; <name><surname>Zhou</surname><given-names>K.</given-names></name>; <name><surname>Jee</surname><given-names>S. W.</given-names></name>; <name><surname>Lee</surname><given-names>J. H.</given-names></name>
+<article-title>Incorporation
+of a self-aligned selective
+emitter to realize highly efficient (12.8%) Si nanowire solar cells</article-title>. <source>Nanoscale</source>
+<year>2014</year>, <volume>6</volume>, <fpage>5193</fpage>&#x02013;<lpage>5199</lpage>. <pub-id pub-id-type="doi">10.1039/c4nr00455h</pub-id>.<pub-id pub-id-type="pmid">24733668</pub-id></mixed-citation></ref><ref id="ref22"><mixed-citation publication-type="journal" id="cit22"><name><surname>Diedenhofen</surname><given-names>S. L.</given-names></name>; <name><surname>Janssen</surname><given-names>O. T. A.</given-names></name>; <name><surname>Grzela</surname><given-names>G.</given-names></name>; <name><surname>Bakkers</surname><given-names>E.</given-names></name>; <name><surname>Rivas</surname><given-names>J. G.</given-names></name>
+<article-title>Strong
+Geometrical Dependence of the Absorption of Light in Arrays of Semiconductor
+Nanowires</article-title>. <source>ACS Nano</source>
+<year>2011</year>, <volume>5</volume>, <fpage>2316</fpage>&#x02013;<lpage>2323</lpage>. <pub-id pub-id-type="doi">10.1021/nn103596n</pub-id>.<pub-id pub-id-type="pmid">21366282</pub-id></mixed-citation></ref><ref id="ref23"><mixed-citation publication-type="journal" id="cit23"><name><surname>Kupec</surname><given-names>J.</given-names></name>; <name><surname>Witzigmann</surname><given-names>B.</given-names></name>
+<article-title>Computational
+electromagnetics for nanowire solar cells</article-title>. <source>J.
+Comput. Electron.</source>
+<year>2012</year>, <volume>11</volume>, <fpage>153</fpage>&#x02013;<lpage>165</lpage>. <pub-id pub-id-type="doi">10.1007/s10825-012-0388-9</pub-id>.</mixed-citation></ref><ref id="ref24"><mixed-citation publication-type="journal" id="cit24"><name><surname>Yu</surname><given-names>S.</given-names></name>; <name><surname>Witzigmann</surname><given-names>B.</given-names></name>
+<article-title>A high efficiency dual-junction solar cell implemented
+as a nanowire array</article-title>. <source>Opt. Express</source>
+<year>2013</year>, <volume>21</volume>, <fpage>A167</fpage>&#x02013;<lpage>A172</lpage>. <pub-id pub-id-type="doi">10.1364/OE.21.00A167</pub-id>.<pub-id pub-id-type="pmid">23389268</pub-id></mixed-citation></ref><ref id="ref25"><mixed-citation publication-type="journal" id="cit25"><name><surname>Kempa</surname><given-names>T. J.</given-names></name>; <name><surname>Tian</surname><given-names>B. Z.</given-names></name>; <name><surname>Kim</surname><given-names>D. R.</given-names></name>; <name><surname>Hu</surname><given-names>J. S.</given-names></name>; <name><surname>Zheng</surname><given-names>X. L.</given-names></name>; <name><surname>Lieber</surname><given-names>C. M.</given-names></name>
+<article-title>Single and Tandem
+Axial p-i-n Nanowire Photovoltaic
+Devices</article-title>. <source>Nano Lett.</source>
+<year>2008</year>, <volume>8</volume>, <fpage>3456</fpage>&#x02013;<lpage>3460</lpage>. <pub-id pub-id-type="doi">10.1021/nl8023438</pub-id>.<pub-id pub-id-type="pmid">18763836</pub-id></mixed-citation></ref><ref id="ref26"><mixed-citation publication-type="journal" id="cit26"><name><surname>Wen</surname><given-names>L.</given-names></name>; <name><surname>Li</surname><given-names>X. H.</given-names></name>; <name><surname>Zhao</surname><given-names>Z. F.</given-names></name>; <name><surname>Bu</surname><given-names>S. J.</given-names></name>; <name><surname>Zeng</surname><given-names>X. S.</given-names></name>; <name><surname>Huang</surname><given-names>J. H.</given-names></name>; <name><surname>Wang</surname><given-names>Y. Q.</given-names></name>
+<article-title>Theoretical
+consideration of III-V
+nanowire/Si triple-junction solar cells</article-title>. <source>Nanotechnology</source>
+<year>2012</year>, <volume>23</volume>, <fpage>505202</fpage><pub-id pub-id-type="doi">10.1088/0957-4484/23/50/505202</pub-id>.<pub-id pub-id-type="pmid">23182996</pub-id></mixed-citation></ref><ref id="ref27"><mixed-citation publication-type="journal" id="cit27"><name><surname>Huang</surname><given-names>N. F.</given-names></name>; <name><surname>Lin</surname><given-names>C. X.</given-names></name>; <name><surname>Povinelli</surname><given-names>M. L.</given-names></name>
+<article-title>Limiting
+efficiencies of tandem solar
+cells consisting of III-V nanowire arrays on silicon</article-title>. <source>J. Appl. Phys.</source>
+<year>2012</year>, <volume>112</volume>, <fpage>064321</fpage><pub-id pub-id-type="doi">10.1063/1.4754317</pub-id>.</mixed-citation></ref><ref id="ref28"><mixed-citation publication-type="journal" id="cit28"><name><surname>Imenes</surname><given-names>A.
+G.</given-names></name>; <name><surname>Mills</surname><given-names>D. R.</given-names></name>
+<article-title>Spectral
+beam splitting technology for increased conversion
+efficiency in solar concentrating systems: a review</article-title>. <source>Sol. Energy Mater. Sol. Cells</source>
+<year>2004</year>, <volume>84</volume>, <fpage>19</fpage>&#x02013;<lpage>69</lpage>. <pub-id pub-id-type="doi">10.1016/j.solmat.2004.01.038</pub-id>.</mixed-citation></ref><ref id="ref29"><mixed-citation publication-type="journal" id="cit29"><name><surname>Polman</surname><given-names>A.</given-names></name>; <name><surname>Atwater</surname><given-names>H. A.</given-names></name>
+<article-title>Photonic design principles for ultrahigh-efficiency
+photovoltaics</article-title>. <source>Nat. Mater.</source>
+<year>2012</year>, <volume>11</volume>, <fpage>174</fpage>&#x02013;<lpage>177</lpage>. <pub-id pub-id-type="doi">10.1038/nmat3263</pub-id>.<pub-id pub-id-type="pmid">22349847</pub-id></mixed-citation></ref><ref id="ref30"><mixed-citation publication-type="journal" id="cit30"><name><surname>Hirst</surname><given-names>L. C.</given-names></name>; <name><surname>Ekins-Daukes</surname><given-names>N. J.</given-names></name>
+<article-title>Fundamental
+losses in solar cells</article-title>. <source>Prog. Photovoltaics</source>
+<year>2011</year>, <volume>19</volume>, <fpage>286</fpage>&#x02013;<lpage>293</lpage>. <pub-id pub-id-type="doi">10.1002/pip.1024</pub-id>.</mixed-citation></ref><ref id="ref31"><mixed-citation publication-type="journal" id="cit31"><name><surname>Rau</surname><given-names>U.</given-names></name>; <name><surname>Paetzold</surname><given-names>U. W.</given-names></name>; <name><surname>Kirchartz</surname><given-names>T.</given-names></name>
+<article-title>Thermodynamics
+of light management
+in photovoltaic devices</article-title>. <source>Phys. Rev. B: Condens.
+Matter Mater. Phys.</source>
+<year>2014</year>, <volume>90</volume>, <fpage>035211</fpage><pub-id pub-id-type="doi">10.1103/PhysRevB.90.035211</pub-id>.</mixed-citation></ref><ref id="ref32"><mixed-citation publication-type="journal" id="cit32"><name><surname>Dimroth</surname><given-names>F.</given-names></name>; <name><surname>Grave</surname><given-names>M.</given-names></name>; <name><surname>Beutel</surname><given-names>P.</given-names></name>; <name><surname>Fiedeler</surname><given-names>U.</given-names></name>; <name><surname>Karcher</surname><given-names>C.</given-names></name>; <name><surname>Tibbits</surname><given-names>T. N. D.</given-names></name>; <name><surname>Oliva</surname><given-names>E.</given-names></name>; <name><surname>Siefer</surname><given-names>G.</given-names></name>; <name><surname>Schachtner</surname><given-names>M.</given-names></name>; <name><surname>Wekkeli</surname><given-names>A.</given-names></name>; <name><surname>Bett</surname><given-names>A. W.</given-names></name>; <name><surname>Krause</surname><given-names>R.</given-names></name>; <name><surname>Piccin</surname><given-names>M.</given-names></name>; <name><surname>Blanc</surname><given-names>N.</given-names></name>; <name><surname>Drazek</surname><given-names>C.</given-names></name>; <name><surname>Guiot</surname><given-names>E.</given-names></name>; <name><surname>Ghyselen</surname><given-names>B.</given-names></name>; <name><surname>Salvetat</surname><given-names>T.</given-names></name>; <name><surname>Tauzin</surname><given-names>A.</given-names></name>; <name><surname>Signamarcheix</surname><given-names>T.</given-names></name>; <name><surname>Dobrich</surname><given-names>A.</given-names></name>; <name><surname>Hannappel</surname><given-names>T.</given-names></name>; <name><surname>Schwarzburg</surname><given-names>K.</given-names></name>
+<article-title>Wafer bonded
+four-junction GaInP/GaAs//GaInAsP/GaInAs concentrator solar cells
+with 44.7% efficiency</article-title>. <source>Prog. Photovoltaics</source>
+<year>2014</year>, <volume>22</volume>, <fpage>277</fpage>&#x02013;<lpage>282</lpage>. <pub-id pub-id-type="doi">10.1002/pip.2475</pub-id>.</mixed-citation></ref><ref id="ref33"><mixed-citation publication-type="journal" id="cit33"><name><surname>Yamaguchi</surname><given-names>M.</given-names></name>
+<article-title>III-V compound
+multi-junction solar cells: present and future</article-title>. <source>Sol. Energy Mater. Sol. Cells</source>
+<year>2003</year>, <volume>75</volume>, <fpage>261</fpage>&#x02013;<lpage>269</lpage>. <pub-id pub-id-type="doi">10.1016/S0927-0248(02)00168-X</pub-id>.</mixed-citation></ref><ref id="ref34"><mixed-citation publication-type="journal" id="cit34"><name><surname>Wallentin</surname><given-names>J.</given-names></name>; <name><surname>Persson</surname><given-names>J. M.</given-names></name>; <name><surname>Wagner</surname><given-names>J. B.</given-names></name>; <name><surname>Samuelson</surname><given-names>L.</given-names></name>; <name><surname>Deppert</surname><given-names>K.</given-names></name>; <name><surname>Borgstrom</surname><given-names>M. T.</given-names></name>
+<article-title>High-Performance Single Nanowire
+Tunnel Diodes</article-title>. <source>Nano Lett.</source>
+<year>2010</year>, <volume>10</volume>, <fpage>974</fpage>&#x02013;<lpage>979</lpage>. <pub-id pub-id-type="doi">10.1021/nl903941b</pub-id>.<pub-id pub-id-type="pmid">20163125</pub-id></mixed-citation></ref><ref id="ref35"><mixed-citation publication-type="journal" id="cit35"><name><surname>Rieger</surname><given-names>T.</given-names></name>; <name><surname>Rosenbach</surname><given-names>D.</given-names></name>; <name><surname>Mussler</surname><given-names>G.</given-names></name>; <name><surname>Sch&#x000e4;Pers</surname><given-names>T.</given-names></name>; <name><surname>Gr&#x000fc;tzmacher</surname><given-names>D.</given-names></name>; <name><surname>Lepsa</surname><given-names>M. I.</given-names></name>
+<article-title>Simultaneous Integration of Different
+Nanowires on Single Textured Si (100) Substrates</article-title>. <source>Nano Lett.</source>
+<year>2015</year>, <volume>15</volume>, <fpage>1979</fpage>&#x02013;<lpage>1986</lpage>. <pub-id pub-id-type="doi">10.1021/nl504854v</pub-id>.<pub-id pub-id-type="pmid">25650521</pub-id></mixed-citation></ref><ref id="ref36"><mixed-citation publication-type="journal" id="cit36"><name><surname>Kakko</surname><given-names>J.-P.
+P.</given-names></name>; <name><surname>Haggr&#x000e9;n</surname><given-names>T.</given-names></name>; <name><surname>Dhaka</surname><given-names>V.</given-names></name>; <name><surname>Huhtio</surname><given-names>T.</given-names></name>; <name><surname>Peltonen</surname><given-names>A.</given-names></name>; <name><surname>Jiang</surname><given-names>H.</given-names></name>; <name><surname>Kauppinen</surname><given-names>E.</given-names></name>; <name><surname>Lipsanen</surname><given-names>H.</given-names></name>
+<article-title>Fabrication of Dual-Type Nanowire
+Arrays on a Single
+Substrate</article-title>. <source>Nano Lett.</source>
+<year>2015</year>, <volume>15</volume>, <fpage>1679</fpage>&#x02013;<lpage>1683</lpage>. <pub-id pub-id-type="doi">10.1021/nl504308x</pub-id>.<pub-id pub-id-type="pmid">25654331</pub-id></mixed-citation></ref><ref id="ref37"><mixed-citation publication-type="journal" id="cit37"><name><surname>Li</surname><given-names>L.</given-names></name>
+<article-title>New formulation
+of the Fourier modal method for crossed surface-relief gratings</article-title>. <source>J. Opt. Soc. Am. A</source>
+<year>1997</year>, <volume>14</volume>, <fpage>2758</fpage>&#x02013;<lpage>2767</lpage>. <pub-id pub-id-type="doi">10.1364/JOSAA.14.002758</pub-id>.</mixed-citation></ref><ref id="ref38"><mixed-citation publication-type="journal" id="cit38"><name><surname>Erni</surname><given-names>D.</given-names></name>; <name><surname>Wiesmann</surname><given-names>D.</given-names></name>; <name><surname>Spuhler</surname><given-names>M.</given-names></name>; <name><surname>Hunziker</surname><given-names>S.</given-names></name>; <name><surname>Moreno</surname><given-names>E.</given-names></name>; <name><surname>Oswald</surname><given-names>B.</given-names></name>; <name><surname>Frohlich</surname><given-names>J.</given-names></name>; <name><surname>Hafner</surname><given-names>C.</given-names></name>
+<article-title>Application of evolutionary
+optimization algorithms in computational optics</article-title>. <source>ACES J.</source>
+<year>2000</year>, <volume>15</volume>, <fpage>43</fpage>&#x02013;<lpage>60</lpage>.</mixed-citation></ref><ref id="ref39"><mixed-citation publication-type="journal" id="cit39"><name><surname>Olsson</surname><given-names>D.
+M.</given-names></name>; <name><surname>Nelson</surname><given-names>L. S.</given-names></name>
+<article-title>Nelder-Mead
+Simplex Procedure for Function Minimization</article-title>. <source>Technometrics</source>
+<year>1975</year>, <volume>17</volume>, <fpage>45</fpage>&#x02013;<lpage>51</lpage>. <pub-id pub-id-type="doi">10.1080/00401706.1975.10489269</pub-id>.</mixed-citation></ref><ref id="ref40"><mixed-citation publication-type="journal" id="cit40"><name><surname>Mallorqu&#x000ed;</surname><given-names>A.</given-names></name>; <name><surname>Alarc&#x000f3;n-Llad&#x000f3;</surname><given-names>E.</given-names></name>; <name><surname>Mundet</surname><given-names>I.</given-names></name>; <name><surname>Kiani</surname><given-names>A.</given-names></name>; <name><surname>Demaurex</surname><given-names>B.</given-names></name>; <name><surname>De Wolf</surname><given-names>S.</given-names></name>; <name><surname>Menzel</surname><given-names>A.</given-names></name>; <name><surname>Zacharias</surname><given-names>M.</given-names></name>; <name><surname>Fontcuberta i Morral</surname><given-names>A.</given-names></name>
+<article-title>Field-effect
+passivation on silicon nanowire solar
+cells</article-title>. <source>Nano Res.</source>
+<year>2015</year>, <volume>8</volume>, <fpage>673</fpage>&#x02013;<lpage>681</lpage>. <pub-id pub-id-type="doi">10.1007/s12274-014-0551-7</pub-id>.</mixed-citation></ref><ref id="ref41"><mixed-citation publication-type="journal" id="cit41"><name><surname>Shockley</surname><given-names>W.</given-names></name>; <name><surname>Queisser</surname><given-names>H. J.</given-names></name>
+<article-title>Detailed Balance
+Limit of Efficiency of P-N Junction
+Solar Cells</article-title>. <source>J. Appl. Phys.</source>
+<year>1961</year>, <volume>32</volume>, <fpage>510</fpage>&#x02013;<lpage>519</lpage>. <pub-id pub-id-type="doi">10.1063/1.1736034</pub-id>.</mixed-citation></ref><ref id="ref42"><mixed-citation publication-type="journal" id="cit42"><name><surname>Green</surname><given-names>M. A.</given-names></name>; <name><surname>Emery</surname><given-names>K.</given-names></name>; <name><surname>Hishikawa</surname><given-names>Y.</given-names></name>; <name><surname>Warta</surname><given-names>W.</given-names></name>; <name><surname>Dunlop</surname><given-names>E. D.</given-names></name>
+<article-title>Solar cell
+efficiency tables (version 43)</article-title>. <source>Prog. Photovoltaics</source>
+<year>2014</year>, <volume>22</volume>, <fpage>1</fpage>&#x02013;<lpage>9</lpage>. <pub-id pub-id-type="doi">10.1002/pip.2452</pub-id>.</mixed-citation></ref><ref id="ref43"><mixed-citation publication-type="journal" id="cit43"><name><surname>Chia</surname><given-names>A. C. E.</given-names></name>; <name><surname>LaPierre</surname><given-names>R. R.</given-names></name>
+<article-title>Electrostatic model
+of radial pn junction nanowires</article-title>. <source>J. Appl. Phys.</source>
+<year>2013</year>, <volume>114</volume>, <fpage>074317</fpage><pub-id pub-id-type="doi">10.1063/1.4818958</pub-id>.</mixed-citation></ref><ref id="ref44"><mixed-citation publication-type="journal" id="cit44"><name><surname>Yu</surname><given-names>S. Q.</given-names></name>; <name><surname>Roemer</surname><given-names>F.</given-names></name>; <name><surname>Witzigmann</surname><given-names>B.</given-names></name>
+<article-title>Analysis of
+surface recombination
+in nanowire array solar cells</article-title>. <source>J. Photonics
+Energy</source>
+<year>2012</year>, <volume>2</volume>, <fpage>84380O</fpage><pub-id pub-id-type="doi">10.1117/12.922458</pub-id>.</mixed-citation></ref><ref id="ref45"><mixed-citation publication-type="journal" id="cit45"><name><surname>Dorodnyy</surname><given-names>A.</given-names></name>; <name><surname>Shklover</surname><given-names>V.</given-names></name>; <name><surname>Braginsky</surname><given-names>L.</given-names></name>; <name><surname>Hafner</surname><given-names>C.</given-names></name>; <name><surname>Leuthold</surname><given-names>J.</given-names></name>
+<article-title>High-efficiency
+spectrum splitting for solar photovoltaics</article-title>. <source>Sol. Energy Mater. Sol. Cells</source>
+<year>2015</year>, <volume>136</volume>, <fpage>120</fpage>&#x02013;<lpage>126</lpage>. <pub-id pub-id-type="doi">10.1016/j.solmat.2015.01.005</pub-id>.</mixed-citation></ref></ref-list></back></article>

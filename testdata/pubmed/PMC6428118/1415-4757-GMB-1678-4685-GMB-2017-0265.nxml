@@ -1,0 +1,403 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.0 20120330//EN" "JATS-archivearticle1.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article"><?properties open_access?><front><journal-meta><journal-id journal-id-type="nlm-ta">Genet Mol Biol</journal-id><journal-id journal-id-type="iso-abbrev">Genet. Mol. Biol</journal-id><journal-id journal-id-type="publisher-id">gmb</journal-id><journal-title-group><journal-title>Genetics and Molecular Biology</journal-title></journal-title-group><issn pub-type="ppub">1415-4757</issn><issn pub-type="epub">1678-4685</issn><publisher><publisher-name>Sociedade Brasileira de Gen&#x000e9;tica</publisher-name></publisher></journal-meta><article-meta><article-id pub-id-type="pmid">30856242</article-id><article-id pub-id-type="pmc">6428118</article-id><article-id pub-id-type="doi">10.1590/1678-4685-GMB-2017-0265</article-id><article-categories><subj-group subj-group-type="heading"><subject>Genomics and Bioinformatics</subject></subj-group></article-categories><title-group><article-title>The complete chloroplast genome sequences of three
+<italic>Spondias</italic> species reveal close relationship among the
+species</article-title></title-group><contrib-group><contrib contrib-type="author"><name><surname>Santos</surname><given-names>Vanessa</given-names></name><xref ref-type="aff" rid="aff1">
+<sup>1</sup>
+</xref></contrib><contrib contrib-type="author"><contrib-id contrib-id-type="orcid" authenticated="false">http://orcid.org/0000-0002-6793-8787</contrib-id><name><surname>Almeida</surname><given-names>C&#x000ed;cero</given-names></name><xref ref-type="aff" rid="aff1">
+<sup>1</sup>
+</xref><xref ref-type="corresp" rid="c1"/></contrib><aff id="aff1">
+<label>1</label>
+<institution content-type="normalized">Universidade Federal de
+Alagoas</institution>
+<institution content-type="orgname">Universidade Federal de
+Alagoas</institution>
+<institution content-type="orgdiv1">Laborat&#x000f3;rio de Recursos
+Gen&#x000e9;ticos</institution>
+<addr-line><named-content content-type="city">Arapiraca</named-content></addr-line>
+<country country="BR">Brazil</country>
+<institution content-type="original">Laborat&#x000f3;rio de Recursos Gen&#x000e9;ticos, Campus
+Arapiraca, Universidade Federal de Alagoas, Arapiraca, Brazil</institution>
+</aff></contrib-group><author-notes><corresp id="c1">Send correspondence to C&#x000ed;cero Almeida. Arapiraca Campus,
+Universidade Federal de Alagoas, Avenida Manoel Severino Barbosa s/n, Rodovia AL
+115, km 6,5. Bairro Bom Sucesso, Arapiraca, CEP 57300-970, Alagoas Brazil.
+E-mail: <email>cicero@arapiraca.ufal.br</email></corresp></author-notes><pub-date pub-type="epub"><day>11</day><month>3</month><year>2019</year></pub-date><pub-date pub-type="ppub"><season>Jan-Mar</season><year>2019</year></pub-date><volume>42</volume><issue>1</issue><fpage>132</fpage><lpage>138</lpage><history><date date-type="received"><day>25</day><month>8</month><year>2017</year></date><date date-type="accepted"><day>17</day><month>6</month><year>2018</year></date></history><permissions><copyright-statement>Copyright &#x000a9; 2019, Sociedade Brasileira de
+Gen&#x000e9;tica.</copyright-statement><copyright-year>2019</copyright-year><license license-type="open-access" xlink:href="https://creativecommons.org/licenses/by/4.0/"><license-p>License information: This is an open-access article distributed under
+the terms of the Creative Commons Attribution License (type CC-BY), which
+permits unrestricted use, distribution and reproduction in any medium,
+provided the original article is properly cited.</license-p></license></permissions><abstract><title>Abstract</title><p>This study reports the complete chloroplast sequences of three
+<italic>Spondias</italic> species. The genome sequences were obtained for
+<italic>Spondias tuberosa</italic>, <italic>Spondias bahienses</italic>, and
+<italic>Spondias mombin</italic> using the Illumina sequencing technology by
+a combination of <italic>de novo</italic> methods and a reference-guided
+assembly using <italic>Sapindus mukorossi</italic> as reference. The genomes of
+<italic>S. tuberosa</italic>, <italic>S. bahiensis</italic>, and <italic>S.
+mombin</italic> had 162,036, 162,218, and 162,302 bp, respectively. The
+coding regions exhibited 130 genes, including 34&#x02013;35 tRNAs and 4 rRNAs. The
+results revealed synteny among the genomes, with high conservation in the gene
+order and content and CG content. The inverted repeat regions (IRA and IRB) and
+the large and small single copies were very similar among the three genomes. The
+phylogenomic analysis reported similar topologies as that of previous studies,
+which used partial chloroplast, wherein <italic>S. mombin</italic> was the first
+diverging lineage, while <italic>S. tuberosa</italic> and <italic>S.
+bahiensis</italic> were derived, indicating that the phylogenetic analysis
+using partial or complete genome produces similar results. In summary, (1) we
+presented the first complete chloroplast genome for the genus
+<italic>Spondias</italic>, (2) phylogenies analyzed using the complete
+chloroplast genomes revealed a robust phylogenetic topology for
+<italic>Spondias</italic>, and (3) gene order, content, and orientation in
+<italic>Spondias</italic> are highly conserved.</p></abstract><kwd-group><title>Keywords:</title><kwd>plastome</kwd><kwd>evolution</kwd><kwd>Spondias</kwd></kwd-group><counts><fig-count count="3"/><table-count count="3"/><equation-count count="0"/><ref-count count="23"/></counts></article-meta></front><body><sec sec-type="intro"><title>Introduction</title><p>The genus <italic>Spondias</italic>, belonging to the family Anacardiaceae (order:
+Sapindales), comprises about 20 species and is of economic, ecological, and social
+importance, as certain species are utilized in agriculture and industry for human
+and animal food. Some species are occur in Brazil, such as <italic>Spondias
+mombin</italic> Jacq, <italic>Spondias purpurea</italic> L., <italic>Spondias
+tuberosa</italic> Arruda Camara, <italic>Spondias venulosa</italic> Mart. ex
+Engl, <italic>Spondias bahiensis</italic> P. Carvalho, van den Berg &#x00026; M.
+Machado, and <italic>Spondias dulcis</italic> Parkinson (<xref rid="B17" ref-type="bibr">Mitchell and Daly, 2015</xref>). These species have 2n = 32
+chromosomes with similar chromosome morphology among the <italic>Spondias</italic>
+species (<xref rid="B2" ref-type="bibr">Almeida <italic>et al.</italic>,
+2007</xref>). Recent phylogenetic analysis has indicated that these species are
+closely related, wherein the species <italic>S. tuberosa</italic>, <italic>S.
+venulosa</italic>, and <italic>S. bahiensis</italic> are the most derived ones,
+and <italic>S. purpurea</italic>, <italic>S. mombin</italic>, and <italic>S.
+dulcis</italic> belong to a basal clade (<xref rid="B16" ref-type="bibr">Machado
+<italic>et al.</italic>, 2015</xref>; <xref rid="B22" ref-type="bibr"/>
+<xref rid="B21" ref-type="bibr">Silva <italic>et al.</italic>, 2015</xref>).
+However, these species are neglected in genetic studies, and only few genomic
+studies exist for the genus. In this context, sequencing the complete chloroplast
+genome is essential for studying the phylogeny and evolution of the genus, family
+Anacardiaceae, and order Sapindales. The complete chloroplast genome has been
+utilized for phylogenetic analysis with robust branch support in other taxa (<xref rid="B4" ref-type="bibr">Barret <italic>et al., 2016</italic></xref>).</p><p>Chloroplasts are essential components of plants and are important for photosynthesis,
+biosynthesis, and carbon sequestration. These cytoplasmic organelles have a genome
+independent of the nuclear genome, which is inherited through the female plant only.
+Their genome is organized in a circular structure with a 100&#x02013;200 kbp size range and
+a &#x0201c;quadripartite&#x0201d; structure comprising two large inverted repeats (IRs), which
+include the ribosomal genes and other plastid genes, separated by a large single
+copy (LSC) region and a small single copy (SSC) region. In general, the chloroplasts
+comprise 16S, 23S, 5S, and 27&#x02013;31 tRNA genes, which are sufficient to translate all
+the amino acids, including three genes for the RNA polymerase subunit (similar to
+prokaryotes) and a majority of the genes for photosystem I, photosystem II,
+cytochrome, and ATP synthesis (revised by <xref rid="B8" ref-type="bibr">Green
+<italic>et al.</italic>, 2011</xref>), totaling approximately 80 proteins
+(<xref rid="B10" ref-type="bibr">Huang <italic>et al.</italic>, 2013</xref>).
+Plastid genomes are widely used for studies in taxonomy, phylogeny, phylogeography,
+and molecular identification of plants using <italic>rbc</italic>L and
+<italic>mat</italic>K genes and the intergenic
+<italic>trn</italic>H&#x02013;<italic>psb</italic>A spacer as DNA bar coding (<xref rid="B9" ref-type="bibr">Hollingsworth <italic>et al.</italic>, 2009</xref>). As
+the chloroplast genomes are haploid and highly conserved regarding the genetic
+content and genomic structure, they have been widely used to study the evolutionary
+relationships of different taxonomic levels in plants. For
+<italic>Spondias</italic>, only two genes and one intergenic spacer have been used
+in the phylogenetic analyses, and the complete genome sequencing has a potential to
+resolve the hybrid origin for certain species.</p><p>With the advent of next-generation DNA sequencing technologies, there has been an
+increase in the number of chloroplast genomes sequenced; however, within the order
+Sapindales, which comprises 460 genera and 5670 species, only few plastid genomes
+have been sequenced. This study aimed to sequence the plastid genomes of <italic>S.
+tuberosa</italic>, <italic>S. bahiensis</italic>, <italic>S. mombin</italic>
+using high-throughput sequencing technology and to construct a phylogeny utilizing
+the complete chloroplast genomes of <italic>Spondias</italic>.</p></sec><sec sec-type="materials|methods"><title>Material and Methods</title><sec><title>Plant material, DNA isolation, and high-throughput DNA sequencing</title><p><italic>Spondias</italic> plant material was collected in the state of Alagoas,
+Brazil, and total DNA was extracted (including nuclear, chloroplast, and
+mitochondrial DNA) using approximately 2 cm<sup>2</sup> of leaves following the
+cetyltrimethylammonium bromide (CTAB) extraction method (<xref rid="B7" ref-type="bibr">Doyle and Doyle, 1987</xref>). The quality and quantity of the
+extracted DNA were verified by visualization on 1% agarose gel and
+spectrophotometry, respectively. The DNA sample was fragmented into pieces of
+400&#x02013;500 bp to construct the sequencing library. The fragments were ligated with
+adapters using the Nextera DNA Sample Preparation kit (Illumina), and 100 nt
+single-end reads for <italic>S. bahiensis</italic> and 100 nt paired-end reads
+for <italic>S. tuberosa</italic> and <italic>S. mombin</italic> were obtained by
+Illumina HiSeq2500 sequencing, done at the Central Laboratory for High
+Performance Technologies in Life Sciences (LaCTAD-<italic>Laborat&#x000f3;rio Central de
+Tecnologias de Alto Desempenho em Ci&#x000ea;ncias da Vida</italic>) at the State
+University of Campinas (UNICAMP, Campinas, SP, Brazil).</p></sec><sec><title>Chloroplast genome assembly and annotation</title><p>To generate the genomes, four million reads were mapped to the plastid genome of
+<italic>Sapindus mukorossi</italic> as reference (<xref rid="t1" ref-type="table">Table 1</xref>), using the software Geneious 9.1
+(http://www.geneious.com) and the Map-to-Reference tool with a minimum 85% of
+identity, including 15% for gaps. The draft genomes were corrected using
+<italic>de novo</italic> contigs obtained from 165 million reads for
+<italic>S. tuberosa</italic>, 77 million reads for <italic>S.
+bahiensis</italic>, and 23 million reads for <italic>S. mombin</italic>, by
+means of the Ray software (<xref rid="B5" ref-type="bibr">Boisvert <italic>et
+al.</italic>, 2012</xref>), with a minimum size of 500 nt and 8&#x000d7;
+coverage. The <italic>de novo</italic> contigs were then mapped using the draft
+genome as the reference, and the regions with gaps or errors were manually
+corrected.</p><table-wrap id="t1" orientation="portrait" position="float"><label>Table 1</label><caption><title>Chloroplast genomes sequenced in this study, and others utilized as
+reference or out-group in phylogenetic analysis.</title></caption><table frame="hsides" rules="groups"><colgroup width="33%" span="1"><col span="1"/><col span="1"/><col span="1"/></colgroup><thead style="border-top: thin solid; border-bottom: thin solid; border-color: #000000"><tr><th align="left" rowspan="1" colspan="1">Taxon</th><th align="center" rowspan="1" colspan="1">GenBank</th><th align="center" rowspan="1" colspan="1">References</th></tr></thead><tbody><tr><td align="left" rowspan="1" colspan="1">
+<italic>Spondias tuberosa</italic>
+</td><td align="center" rowspan="1" colspan="1">KU756562</td><td align="center" rowspan="1" colspan="1">This study</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>Spodnias bahiensis</italic>
+</td><td align="center" rowspan="1" colspan="1">KU756561</td><td align="center" rowspan="1" colspan="1">This study</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>Spondias mombin</italic>
+</td><td align="center" rowspan="1" colspan="1">KY828469</td><td align="center" rowspan="1" colspan="1">This study</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>Pistacia vera</italic>
+</td><td align="center" rowspan="1" colspan="1">KY549635</td><td align="center" rowspan="1" colspan="1">unpublished</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>Sapindus mukorossi</italic>
+</td><td align="center" rowspan="1" colspan="1">KM454982</td><td align="center" rowspan="1" colspan="1">Yang <italic>et al</italic>., 2016</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>Mangifera indica</italic>
+</td><td align="center" rowspan="1" colspan="1">KY635882</td><td align="center" rowspan="1" colspan="1">Rabah <italic>et al</italic>., 2017</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>Anacardium occidentale</italic>
+</td><td align="center" rowspan="1" colspan="1">KY635877</td><td align="center" rowspan="1" colspan="1">Rabah <italic>et al</italic>., 2017</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>Rhus chinensis</italic>
+</td><td align="center" rowspan="1" colspan="1">KX447140</td><td align="center" rowspan="1" colspan="1">Lee <italic>et al</italic>., 2016</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>Boswellia sacra</italic>
+</td><td align="center" rowspan="1" colspan="1">KU756561</td><td align="center" rowspan="1" colspan="1">Khan <italic>et al</italic>., 2017</td></tr></tbody></table></table-wrap><p>Validation was achieved by Sanger sequencing of the
+<italic>trn</italic>H&#x02013;<italic>psb</italic>A, <italic>mat</italic>K,
+<italic>trn</italic>D&#x02013;<italic>trn</italic>T,
+<italic>acc</italic>D&#x02013;<italic>psa</italic>I, <italic>rbl</italic>C, and
+<italic>trn</italic>K&#x02013;<italic>rpd</italic>16 regions, using primers
+described by <xref rid="B20" ref-type="bibr">Scarcelli <italic>et al.</italic>
+(2011)</xref>. PCR analyses were performed using a volume of 50 &#x003bc;L,
+containing 5 &#x003bc;L of a reaction buffer, 1.5 mM MgCl<sub>2</sub>, 0.2 mM dNTPs, 1 U
+Taq DNA polymerase, 0.5 &#x003bc;M of each primer, and 200 ng of DNA. Amplification was
+achieved with an initial denaturation at 94 &#x000b0;C for 3 min, followed by 40 cycles
+at 94 &#x000b0;C for 30 s, annealing at 55&#x02013;60 &#x000b0;C for 30 s, and a final extension at 72
+&#x000b0;C for 10 min. The PCR experiments were performed in a BioCycler thermocycler
+(Thermo Fisher Scientific), and the PCR products were subjected to
+electrophoresis on 1% agarose gels to confirm the amplification. The PCR
+products were then sequenced using BigDye<sup>&#x000ae;</sup> Terminator v3.1 Cycle
+Sequencing Kit (Applied Biosystems<sup>&#x000ae;</sup>) on a 3500 Genetic Analyzer
+(Applied Biosystems Inc., Foster City, CA, USA).</p><p>Genome annotation was achieved by the Geneious software, using <italic>S.
+mukorossi</italic> as the reference, and it was checked with the annotation
+achieved using Verdant (Mckain <italic>et al.</italic>, 2016). For the
+annotation using Geneious, a minimum of 80% identity cutoff between the genomes
+was considered. The annotations were individually checked, and if necessary,
+were manually corrected for start and stop codons. A graphic representation of
+the plastomes was created using Organellar Genome DRAW (<xref rid="B15" ref-type="bibr">Lohse <italic>et al.</italic>, 2013</xref>).</p></sec><sec><title>Genome comparison and phylogenetic analyses</title><p>The chloroplast genome sequences were aligned using the program MAFFT v7.017
+(<xref rid="B12" ref-type="bibr">Katoh and Standley, 2013</xref>)
+implemented as the Multiple align tool in Geneious R9. The GTR model was
+determined using the Bayesian Information Criterion Evolutionary implemented in
+MEGA7 software (<xref rid="B14" ref-type="bibr"/>
+<xref rid="B13" ref-type="bibr">Kumar <italic>et al.</italic>, 2016</xref>). The
+evolutionary history was inferred by using the Maximum Likelihood method, and
+branch support was assessed with 1000 bootstrap replicates conducted in MEGA7
+software. The three Spondias chloroplast genomes were compared using a BLAST
+Ring Image Generator assuming the default software settings (<xref rid="B1" ref-type="bibr">Alikhan <italic>et al.</italic>, 2011</xref>), and
+the number of interspecific SNPs were identified using Geneious. Single sequence
+repeats (SSRs) or microsatellites were identified using Phobos software (<xref rid="B23" ref-type="bibr">Mayer, 2010</xref>).</p></sec></sec><sec sec-type="results"><title>Results</title><sec><title>Genome assembly and validation</title><p>The Illumina single-end and paired-end reads from <italic>Spondias</italic>
+species were mapped to the <italic>S. mukorossi</italic> chloroplast genome to
+obtain the draft genomes. The draft genomes revealed few errors and/or mapping
+failures of the reads (approximately 1&#x02013;2% of the genomes), which were corrected
+using <italic>de novo</italic> contigs. After obtaining the final genomes, the
+reads were mapped with no errors and 100% identity, resulting in an average
+coverage of 150&#x000d7;. In addition, the <italic>trn</italic>H&#x02013;<italic>psb</italic>A,
+<italic>mat</italic>K, <italic>trn</italic>D&#x02013;<italic>trn</italic>T,
+<italic>acc</italic>D&#x02013;<italic>psa</italic>I, <italic>rbl</italic>C, and
+<italic>trn</italic>K&#x02013;<italic>rpd</italic>16 regions were sequenced using
+the Sanger method and aligned with the genome, resulting in high identity as the
+regions indicated intraspecific variation.</p></sec><sec><title>Comparative chloroplast genome analysis</title><p>The plastid genome sizes of <italic>S. tuberosa, S. bahiensis,</italic> and
+<italic>S. mombin</italic> were 162,039, 162,218, and 162,302 bp,
+respectively (<xref rid="t2" ref-type="table">Table 2</xref>). All the genomes
+indicated a conserved structure with a pair of inverted repeats, IRA and IRB,
+separated by the LSC and SSC regions (<inline-supplementary-material mime-subtype="pdf" mimetype="application" xlink:href="1415-4757-GMB-1678-4685-GMB-2017-0265-20170265-suppl1.pdf" id="d35e666" content-type="local-data">Figures S1</inline-supplementary-material>, <inline-supplementary-material mime-subtype="pdf" mimetype="application" xlink:href="1415-4757-GMB-1678-4685-GMB-2017-0265-20170265-suppl2.pdf" id="d35e669" content-type="local-data">S2</inline-supplementary-material>, and <inline-supplementary-material mime-subtype="pdf" mimetype="application" xlink:href="1415-4757-GMB-1678-4685-GMB-2017-0265-20170265-suppl3.pdf" id="d35e673" content-type="local-data">S3</inline-supplementary-material>). For the <italic>Spondias</italic>
+species, the CG content was 37.6&#x02013;37.7% and the length of the IR, LSC, and SSC
+regions were almost identical, revealing high similarity among the genomes
+(<xref rid="t2" ref-type="table">Table 2</xref>). The genomes comprised 130
+genes, including 34&#x02013;35 <italic>t</italic>RNA<italic>s</italic> and 4
+<italic>r</italic>RNAs (<xref rid="t2" ref-type="table">Tables 2</xref> and
+<xref rid="t3" ref-type="table">3</xref>), and the arrangements of these
+regions were exclusively collinear (<xref ref-type="fig" rid="f1">Figure
+1</xref>). All protein-coding genes displayed AUG as the start codon; the
+coding sequences accounted for 63.8&#x02013;64.2%, and the remaining regions included
+noncoding sequences (intergenic spacers).</p><fig id="f1" orientation="portrait" position="float"><label>Figure 1</label><caption><title>Complete gene map of <italic>Spondias</italic> chloroplast genomes.
+Gene annotations are represented in green. The chloroplast genomes are
+represented in purple (<italic>S. tuberosa</italic>), red (<italic>S.
+bahiensis</italic>), and blue (<italic>S. mombin</italic>). LSC:
+large single copy region; SSC: small single copy region; IR: inverted
+repeat. The green ring represents the A+T contents and the blue ring
+indicates C+G contents. The numbers near to <italic>S. tuberosa</italic>
+(purple circle) represent the nucleotide positions (in kbp).</title></caption><graphic xlink:href="1415-4757-GMB-1678-4685-GMB-2017-0265-gf01"/></fig><table-wrap id="t2" orientation="portrait" position="float"><label>Table 2</label><caption><title>Summary of the chloroplast genome characteristics within the
+Anacardiaceae family. Genome size (bp), GC content (%), large single
+copy region - LSC (bp), small single copy region - SSC (bp), inverted
+repeat - IR (bp), N. of protein-coding genes, N. of tRNAs, and N. of
+rRNAs.</title></caption><table frame="hsides" rules="groups"><colgroup width="11%" span="1"><col span="1"/><col span="1"/><col span="1"/><col span="1"/><col span="1"/><col span="1"/><col span="1"/><col span="1"/><col span="1"/></colgroup><thead style="border-top: thin solid; border-bottom: thin solid; border-color: #000000"><tr><th align="left" rowspan="2" valign="top" colspan="1">Species</th><th align="center" colspan="8" rowspan="1">Characteristics</th></tr><tr style="border-top: thin solid; border-color: #000000"><th align="center" rowspan="1" colspan="1">Size (bp)</th><th align="center" rowspan="1" colspan="1">GC (%)</th><th align="center" rowspan="1" colspan="1">LSC</th><th align="center" rowspan="1" colspan="1">SSC</th><th align="center" rowspan="1" colspan="1">IR</th><th align="center" rowspan="1" colspan="1">Genes</th><th align="center" rowspan="1" colspan="1">tRNAs</th><th align="center" rowspan="1" colspan="1">rRNAs</th></tr></thead><tbody><tr><td align="left" rowspan="1" colspan="1">
+<italic>Spondias tuberosa</italic>
+</td><td align="center" rowspan="1" colspan="1">162,039</td><td align="center" rowspan="1" colspan="1">37.7</td><td align="center" rowspan="1" colspan="1">89,453</td><td align="center" rowspan="1" colspan="1">18,369</td><td align="center" rowspan="1" colspan="1">27,139</td><td align="center" rowspan="1" colspan="1">130</td><td align="center" rowspan="1" colspan="1">35</td><td align="center" rowspan="1" colspan="1">4</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>Spondias bahiense</italic>
+</td><td align="center" rowspan="1" colspan="1">162,218</td><td align="center" rowspan="1" colspan="1">37.7</td><td align="center" rowspan="1" colspan="1">89,606</td><td align="center" rowspan="1" colspan="1">18,381</td><td align="center" rowspan="1" colspan="1">27,156</td><td align="center" rowspan="1" colspan="1">130</td><td align="center" rowspan="1" colspan="1">34</td><td align="center" rowspan="1" colspan="1">4</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>Spondias mombin</italic>
+</td><td align="center" rowspan="1" colspan="1">162,302</td><td align="center" rowspan="1" colspan="1">37.6</td><td align="center" rowspan="1" colspan="1">89,938</td><td align="center" rowspan="1" colspan="1">18,094</td><td align="center" rowspan="1" colspan="1">27,135</td><td align="center" rowspan="1" colspan="1">130</td><td align="center" rowspan="1" colspan="1">35</td><td align="center" rowspan="1" colspan="1">4</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>Pistacia vera</italic>
+</td><td align="center" rowspan="1" colspan="1">160,674</td><td align="center" rowspan="1" colspan="1">37.9</td><td align="center" rowspan="1" colspan="1">88,236</td><td align="center" rowspan="1" colspan="1">19,086</td><td align="center" rowspan="1" colspan="1">26,676</td><td align="center" rowspan="1" colspan="1">126</td><td align="center" rowspan="1" colspan="1">37</td><td align="center" rowspan="1" colspan="1">4</td></tr></tbody></table></table-wrap><table-wrap id="t3" orientation="portrait" position="float"><label>Table 3</label><caption><title>List of genes present in the <italic>Spondias tuberosa</italic>
+chloroplast genome, obtained by genome annotation using <italic>Sapindus
+mukorossi</italic> as reference.</title></caption><table frame="hsides" rules="groups"><colgroup width="33%" span="1"><col span="1"/><col span="1"/><col span="1"/></colgroup><thead style="border-top: thin solid; border-bottom: thin solid; border-color: #000000"><tr><th align="left" rowspan="1" colspan="1"/><th align="left" rowspan="1" colspan="1">Group of genes</th><th align="left" rowspan="1" colspan="1">Name of genes</th></tr></thead><tbody><tr><td align="left" valign="top" rowspan="1" colspan="1">
+<bold>Protein synthesis and DNA replication</bold>
+</td><td align="left" valign="top" rowspan="1" colspan="1">Transfer RNAs</td><td align="left" valign="top" rowspan="1" colspan="1">trnA-UGC (2x), trnC-GCA, trnD-GUC,
+trnE-UUC, trnF-GAA, trnfM-CAU, trnG-UCC, trnH-GUG, trnI-CAU
+(2x), trnI-GAU (3x) trnK-UUU, trnL-CAA(2x), trnL-UAA, trnL-UAG,
+trnM-CAU, trnN-GUU (2x), trnP-UGG, trnQ-UUG, trnR-ACG (2x),
+trnR-UCU, trnS-GCU, trnS-GGA, trnS-UGA, trnT-GGU (2x), trnT-UGU,
+trnV-GAC (2x), trnV-UAC, trnW-CCA, trnY-GUA</td></tr><tr><td align="left" rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1">Ribossomal RNAs (16S, 23S, 4.5S,
+5S)</td><td align="left" valign="top" rowspan="1" colspan="1">rrn16 (2x), rrn23 (2x), rrn4.5 (2x),
+rrn5 (2x)</td></tr><tr><td align="left" rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1">Ribossomal Protein small subunit</td><td align="left" valign="top" rowspan="1" colspan="1">rps2, rps3, rps4, rps7 (2x), rps8,
+rps11, rps12, rps14, rps15, rps16, rps18, rps19 (2x)</td></tr><tr><td align="left" rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1">Ribossomal Protein large subunit</td><td align="left" valign="top" rowspan="1" colspan="1">rpl2 (2x), rpl14, rpl16, rpl20, rpl22,
+rpl23 (2x), rpl32, rpl33, rpl36</td></tr><tr><td align="left" rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1">Subunits (&#x003b1;, &#x003b2;, &#x003b2;&#x02018;, &#x003b2;&#x0201c;) of the
+DNA-dependent RNA polymerase</td><td align="left" valign="top" rowspan="1" colspan="1">rpoA, rpoB, rpoC1, rpoC2</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">
+<bold>Photosynthesis</bold>
+</td><td align="left" valign="top" rowspan="1" colspan="1">Photosystem I</td><td align="left" valign="top" rowspan="1" colspan="1">psaA, psaB, psaC, psaI, psaJ</td></tr><tr><td align="left" rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1">Photosystem II</td><td align="left" valign="top" rowspan="1" colspan="1">psbA, psbB, psbC, psbD, psbE, psbF,
+psbH, psbI, psbJ, psbK, psbL, psbM, psbN, psbT, psbZ</td></tr><tr><td align="left" rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1">Cythochrome b/f complex</td><td align="left" valign="top" rowspan="1" colspan="1">petA, petB, petD, petG, petL,
+petN</td></tr><tr><td align="left" rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1">ATP synthase</td><td align="left" valign="top" rowspan="1" colspan="1">atpA, atpB, atpE, atpF, atpH,
+atpI</td></tr><tr><td align="left" rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1">NADH-dehydrogenase</td><td align="left" valign="top" rowspan="1" colspan="1">ndhA, ndhB (2&#x000d7;), ndhC, ndhD, ndhE,
+ndhF, ndhG, ndhH, ndhI, ndhJ, ndhK</td></tr><tr><td align="left" rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1">Large subunit RUBISCO</td><td align="left" valign="top" rowspan="1" colspan="1">rbcL</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">
+<bold>Miscellaneous</bold>
+</td><td align="left" valign="top" rowspan="1" colspan="1">Acetyl-CoA carboxylase</td><td align="left" valign="top" rowspan="1" colspan="1">accD</td></tr><tr><td align="left" rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1">Cythochrome c biogenesis</td><td align="left" valign="top" rowspan="1" colspan="1">ccsA</td></tr><tr><td align="left" rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1">Maturase</td><td align="left" valign="top" rowspan="1" colspan="1">matK</td></tr><tr><td align="left" rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1">ATP-dependent protease</td><td align="left" valign="top" rowspan="1" colspan="1">clpP</td></tr><tr><td align="left" rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1">Inner membrane protein</td><td align="left" valign="top" rowspan="1" colspan="1">cemA</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">
+<bold>Pseudogene unknown function</bold>
+</td><td align="left" valign="top" rowspan="1" colspan="1">Conserved hypothetical chloroplast
+ORFs</td><td align="left" valign="top" rowspan="1" colspan="1">ycf1 (2&#x000d7;), ycf2 (2&#x000d7;), ycf3, ycf4,
+ycf15 (2x)</td></tr></tbody></table></table-wrap><p>In the three genomes of the genus <italic>Spondias</italic> we found 159 SSRs,
+which were evenly distributed (<xref ref-type="fig" rid="f2">Figure 2A</xref>),
+and the motifs AT and AG were more abundant. The <italic>Spondias</italic>
+species indicated similar SSR distribution, wherein <italic>S. tuberosa</italic>
+and <italic>S. bahiensis</italic> had one species-specific SSR each, and
+<italic>S. mombin</italic> had two species-specific SSRs (<xref ref-type="fig" rid="f2">Figure 2B</xref>). The comparison among
+<italic>Spondias</italic> species indicated 856 SNPs between <italic>S.
+tuberosa</italic> and <italic>S. bahiensis</italic>, 3044 SNPs between
+<italic>S. tuberosa</italic> and <italic>S. mombin</italic>, and 3289 SNPs
+between S<italic>. bahiensis</italic> and <italic>S. mombin</italic>. The
+phylogenetic analysis revealed three clades, of which one clade was formed by
+<italic>S. tuberosa</italic> and <italic>S. bahiensis</italic>, the second
+clade by <italic>S. mombin</italic>, and the outgroup clade was formed by other
+species (<xref ref-type="fig" rid="f3">Figure 3</xref>).</p><fig id="f2" orientation="portrait" position="float"><label>Figure 2</label><caption><title>Comparative analysis of microsatellites in the chloroplast genomes of
+<italic>Spondias</italic>. (A) Microsatellite type distribution in
+three <italic>Spondias</italic> species. (B) Venn diagram showing the
+number of SSR that are shared among <italic>S. bahiensis</italic>,
+<italic>S. tuberosa</italic>, and <italic>S.
+mombin</italic>.</title></caption><graphic xlink:href="1415-4757-GMB-1678-4685-GMB-2017-0265-gf02"/></fig><fig id="f3" orientation="portrait" position="float"><label>Figure 3</label><caption><title>Molecular phylogenetic analysis by maximum likelihood method, with
+supported values estimated by bootstrap.</title></caption><graphic xlink:href="1415-4757-GMB-1678-4685-GMB-2017-0265-gf03"/></fig></sec></sec><sec sec-type="discussion"><title>Discussion</title><p>The assembly of the chloroplast genomes using single- or paired-end reads resulted in
+genomes with few errors due to the differences between the reads of the species and
+the reference genome utilized; however, these errors were easily identified and
+corrected by the alignment of the <italic>de novo</italic> contigs. Genetic analysis
+of the genus <italic>Spondias</italic> was performed using molecular (<xref rid="B16" ref-type="bibr">Machado <italic>et al.</italic>, 2015</xref>; <xref rid="B21" ref-type="bibr">Silva <italic>et al.</italic>, 2015</xref>) and
+cytogenetic data (<xref rid="B2" ref-type="bibr">Almeida <italic>et al.</italic>,
+2007</xref>). These studies have utilized the partial chloroplast regions or
+expressed sequences for the phylogenetic analysis; however, the advent of
+next-generation sequencing technologies has increased the number of complete
+chloroplast genomes sequencing, allowing robust phylogenetic analysis. In this
+context, the complete chloroplast genome sequences are important to assess the
+phylogenetic relationships. The chloroplast genomes have been utilized for
+phylogenetic analyses in Arecaceae and they provide robust branch support for deep
+phylogenetic relationships among tribes of the subfamily (<xref rid="B4" ref-type="bibr">Barrett <italic>et al.</italic>, 2016</xref>).</p><p>The chloroplast genomes of the genus <italic>Spondias</italic> are highly similar,
+with only one deletion of tRNA in <italic>S. bahiensis</italic>. The order and
+structure of the IR, LSC, and SSC regions were exclusively collinear. The genome
+size, CG content, and the length of the IR, SLC, and SSC regions were almost
+identical, revealing high similarity among the genomes and suggesting low diversity
+within the genus <italic>Spondias</italic>. Remarkably, the chloroplast genomes of
+<italic>S. tuberosa</italic> and <italic>S. bahiensis</italic> are highly
+similar when compared with <italic>S. mombin</italic>, suggesting a close genetic
+relationship and indicating a possible hybrid origin for <italic>S.
+bahiensis</italic>. <italic>S. bahiensis</italic> has been described as a hybrid
+between <italic>S. tuberosa</italic> and <italic>S. mombin</italic> (<xref rid="B2" ref-type="bibr">Almeida <italic>et al.</italic>, 2007</xref>). Studies
+using chromosome banding and genomic <italic>in situ</italic> hybridization could
+not determine if <italic>S. bahiensis</italic> is a hybrid (<xref rid="B2" ref-type="bibr">Almeida <italic>et al.</italic>, 2007</xref>); however, molecular
+studies using phylogeny with chloroplast regions (<xref rid="B16" ref-type="bibr">Machado <italic>et al.</italic>, 2015</xref>; <xref rid="B21" ref-type="bibr">Silva <italic>et al.</italic>, 2015</xref>) and ESTs (<xref rid="B16" ref-type="bibr">Machado <italic>et al.</italic>, 2015</xref>) suggest that <italic>S.
+bahiensis</italic> is a new species and a hybrid between <italic>S.
+tuberosa</italic> and <italic>S. venulosa</italic>. In the present study, the
+comparison between <italic>S. tuberosa</italic> and <italic>S. bahiensis</italic>
+suggests the hybrid origin of <italic>S. bahiensis</italic>, with <italic>S.
+tuberosa</italic> as the female genitor; the SNP comparison displayed few SNPs
+between <italic>S. bahiensis</italic> and <italic>S. tuberosa,</italic> whereas
+<italic>S. bahiensis</italic> and <italic>S. mombin</italic> revealed several
+SNPs. The SSRs revealed high conservation in the three species, indicating low
+evolution of SSRs in the genus.</p><p>We demonstrate that the gene order, content, and orientation in
+<italic>Spondias</italic> are highly conserved, and that this observation is
+similar to other taxa, such as in <italic>Aconitum</italic> (Ranunculaceae) (<xref rid="B19" ref-type="bibr"/>
+<xref rid="B18" ref-type="bibr">Park <italic>et al.</italic>, 2017</xref>),
+<italic>Salix</italic> (Salicaceae) (<xref rid="B11" ref-type="bibr"/>Huang
+<italic>et al.</italic>, 2017), and in the gymnosperm genus
+<italic>Pinus</italic> (<xref rid="B3" ref-type="bibr">Asaf <italic>et
+al.</italic>, 2018</xref>), indicating that the chloroplast genomes reveal
+high synteny in close species; however, when analyzed across distant species of the
+Malpighiales order, three inversions were found in the LSC region (<xref rid="B6" ref-type="bibr">Cauz-Santos <italic>et al.</italic>, 2017</xref>). In
+summary, (1) we presented the first complete chloroplast genome sequences for the
+genus <italic>Spondias</italic>; (2) phylogenies analyzed using the complete
+chloroplast genomes revealed a robust phylogenetic topology for
+<italic>Spondias</italic>; and (3) gene order, content, and orientation in
+<italic>Spondias</italic> are highly conserved.</p></sec></body><back><ack><title>Acknowledgments</title><p>We thank the Federal University of Alagoas for the laboratory and scientific support
+and the Funda&#x000e7;&#x000e3;o de Apoio &#x000e0; Pesquisa de Alagoas (FAPEAL) for funding this
+Project.</p></ack><fn-group><fn fn-type="other" id="fn1"><p>
+<italic>Associate Editor: Guilherme Corr&#x000ea;a de Oliveira</italic>
+</p></fn></fn-group><sec><title>Conflict of interest</title><p>The authors declare that they have no conflict of interest.</p></sec><sec><title>Author contributions</title><p>VS conducted the experiments and CA analyzed the data and wrote the manuscript.</p></sec><ref-list><title>References</title><ref id="B1"><element-citation publication-type="journal" id="B1-gen-1"><person-group person-group-type="author"><name><surname>Alikhan</surname><given-names>NF</given-names></name><name><surname>Petty</surname><given-names>NK</given-names></name><name><surname>Ben Zakour</surname><given-names>NL</given-names></name><name><surname>Beatson</surname><given-names>S</given-names></name></person-group><year>2011</year><article-title>BLAST Ring Image Generator (BRIG): simple prokaryote genome
+comparisons</article-title><source>BMC Genomics</source><volume>12</volume><fpage>402</fpage><pub-id pub-id-type="pmid">21824423</pub-id></element-citation><mixed-citation publication-type="other" id="B1-gen-2">Alikhan NF, Petty NK, Ben Zakour NL and Beatson S (2011) BLAST Ring
+Image Generator (BRIG): simple prokaryote genome comparisons. BMC Genomics
+12:402.</mixed-citation></ref><ref id="B2"><element-citation publication-type="journal" id="B2-gen-1"><person-group person-group-type="author"><name><surname>Almeida</surname><given-names>CC</given-names></name><name><surname>De Lemos Carvalho</surname><given-names>PC</given-names></name><name><surname>Guerra</surname><given-names>M</given-names></name></person-group><year>2007</year><article-title>Karyotype differentiation among <italic>Spondias</italic> species
+and the putative hybrid Umbu-caj&#x000e1; (Anacardiaceae)</article-title><source>Bot J Linn Soc</source><volume>155</volume><fpage>541</fpage><lpage>547</lpage></element-citation><mixed-citation publication-type="other" id="B2-gen-2">Almeida CC, De Lemos Carvalho PC and Guerra M (2007) Karyotype
+differentiation among <italic>Spondias</italic> species and the putative hybrid
+Umbu-caj&#x000e1; (Anacardiaceae). Bot J Linn Soc 155:541&#x02013;547.</mixed-citation></ref><ref id="B3"><element-citation publication-type="journal" id="B3-gen-1"><person-group person-group-type="author"><name><surname>Asaf</surname><given-names>S</given-names></name><name><surname>Khan</surname><given-names>AL</given-names></name><name><surname>Khan</surname><given-names>MA</given-names></name><name><surname>Shahzad</surname><given-names>R</given-names></name><name><surname>Kang</surname><given-names>SM</given-names></name><name><surname>Al-harrasi</surname><given-names>A</given-names></name><name><surname>Al-rawahi</surname><given-names>A</given-names></name><name><surname>Lee</surname><given-names>I</given-names></name></person-group><year>2018</year><article-title>Complete chloroplast genome sequence and comparative analysis of
+loblolly pine (<italic>Pinus taeda</italic> L.) with related
+species</article-title><source>PLoS One</source><volume>13</volume><fpage>e192966</fpage></element-citation><mixed-citation publication-type="other" id="B3-gen-2">Asaf S, Khan AL, Khan MA, Shahzad R, Kang SM, Al-harrasi A,
+Al-rawahi A and Lee I (2018) Complete chloroplast genome sequence and
+comparative analysis of loblolly pine (<italic>Pinus taeda</italic> L.) with
+related species. PLoS One 13:e192966.</mixed-citation></ref><ref id="B4"><element-citation publication-type="journal" id="B4-gen-1"><person-group person-group-type="author"><name><surname>Barrett</surname><given-names>CF</given-names></name><name><surname>Baker</surname><given-names>WJ</given-names></name><name><surname>Comer</surname><given-names>JR</given-names></name><name><surname>Conran</surname><given-names>JG</given-names></name><name><surname>Lahmeyer</surname><given-names>SC</given-names></name><name><surname>Leebens-Mack</surname><given-names>JH</given-names></name><name><surname>Li</surname><given-names>J</given-names></name><name><surname>Lim</surname><given-names>GS</given-names></name><name><surname>Mayfield-Jones</surname><given-names>DR</given-names></name><name><surname>Perez</surname><given-names>L</given-names></name><etal/></person-group><year>2016</year><article-title>Plastid genomes reveal support for deep phylogenetic
+relationships and extensive rate variation among palms and other commelinid
+monocots</article-title><source>New Phytol</source><volume>209</volume><fpage>855</fpage><lpage>870</lpage><pub-id pub-id-type="pmid">26350789</pub-id></element-citation><mixed-citation publication-type="other" id="B4-gen-2">Barrett CF, Baker WJ, Comer JR, Conran JG, Lahmeyer SC, Leebens-Mack
+JH, Li J, Lim GS, Mayfield-Jones DR, Perez L <italic>et al.</italic> (2016)
+Plastid genomes reveal support for deep phylogenetic relationships and extensive
+rate variation among palms and other commelinid monocots. New Phytol
+209:855&#x02013;870.</mixed-citation></ref><ref id="B5"><element-citation publication-type="journal" id="B5-gen-1"><person-group person-group-type="author"><name><surname>Boisvert</surname><given-names>S</given-names></name><name><surname>Raymond</surname><given-names>F</given-names></name><name><surname>Godzaridis</surname><given-names>E</given-names></name><name><surname>Laviolette</surname><given-names>F</given-names></name><name><surname>Corbeil</surname><given-names>J</given-names></name></person-group><year>2012</year><article-title>Ray Meta: Scalable de novo metagenome assembly and
+profiling</article-title><source>Genome Biol</source><volume>13</volume><fpage>R122</fpage><pub-id pub-id-type="pmid">23259615</pub-id></element-citation><mixed-citation publication-type="other" id="B5-gen-2">Boisvert S, Raymond F, Godzaridis E, Laviolette F and Corbeil J
+(2012) Ray Meta: Scalable de novo metagenome assembly and profiling. Genome Biol
+13:R122.</mixed-citation></ref><ref id="B6"><element-citation publication-type="journal" id="B6-gen-1"><person-group person-group-type="author"><name><surname>Cauz-Santos</surname><given-names>LA</given-names></name><name><surname>Munhoz</surname><given-names>CF</given-names></name><name><surname>Rodde</surname><given-names>N</given-names></name><name><surname>Cauet</surname><given-names>S</given-names></name><name><surname>Santos</surname><given-names>AA</given-names></name><name><surname>Penha</surname><given-names>HA</given-names></name><name><surname>Dornelas</surname><given-names>MC</given-names></name><name><surname>Varani</surname><given-names>AM</given-names></name><name><surname>Oliveira</surname><given-names>GCX</given-names></name><name><surname>Berg&#x000e8;s</surname><given-names>H</given-names></name><etal/></person-group><year>2017</year><article-title>The chloroplast genome of <italic>Passiflora edulis</italic>
+(Passifloraceae) assembled from long sequence reads: Structural organization
+and phylogenomic studies in Malpighiales</article-title><source>Front Plant Sci</source><volume>8</volume><fpage>1</fpage><lpage>17</lpage><pub-id pub-id-type="pmid">28220127</pub-id></element-citation><mixed-citation publication-type="other" id="B6-gen-2">Cauz-Santos LA, Munhoz CF, Rodde N, Cauet S, Santos AA, Penha HA,
+Dornelas MC, Varani AM, Oliveira GCX, Berg&#x000e8;s H <italic>et al.</italic> (2017)
+The chloroplast genome of <italic>Passiflora edulis</italic> (Passifloraceae)
+assembled from long sequence reads: Structural organization and phylogenomic
+studies in Malpighiales. Front Plant Sci 8:1&#x02013;17.</mixed-citation></ref><ref id="B7"><element-citation publication-type="journal" id="B7-gen-1"><person-group person-group-type="author"><name><surname>Doyle</surname><given-names>JJ</given-names></name><name><surname>Doyle</surname><given-names>JL</given-names></name></person-group><year>1987</year><article-title>A rapid DNA isolation procedure for small quantities of fresh
+leaf tissue</article-title><source>Phytochem Bull</source><volume>19</volume><fpage>11</fpage><lpage>15</lpage></element-citation><mixed-citation publication-type="other" id="B7-gen-2">Doyle JJ and Doyle JL (1987) A rapid DNA isolation procedure for
+small quantities of fresh leaf tissue. Phytochem Bull 19:11-15.</mixed-citation></ref><ref id="B8"><element-citation publication-type="journal" id="B8-gen-1"><person-group person-group-type="author"><name><surname>Green</surname><given-names>BR</given-names></name></person-group><year>2011</year><article-title>Chloroplast genomes of photosynthetic eukaryotes</article-title><source>Plant J</source><volume>66</volume><fpage>34</fpage><lpage>44</lpage><pub-id pub-id-type="pmid">21443621</pub-id></element-citation><mixed-citation publication-type="other" id="B8-gen-2">Green BR (2011) Chloroplast genomes of photosynthetic eukaryotes.
+Plant J 66:34&#x02013;44.</mixed-citation></ref><ref id="B9"><element-citation publication-type="journal" id="B9-gen-1"><person-group person-group-type="author"><name><surname>Hollingsworth</surname><given-names>PM</given-names></name><name><surname>Forrest</surname><given-names>LL</given-names></name><name><surname>Spouge</surname><given-names>JL</given-names></name><name><surname>Hajibabaei</surname><given-names>M</given-names></name><name><surname>Ratnasingham</surname><given-names>S</given-names></name><name><surname>Bank</surname><given-names>M</given-names></name><name><surname>Chase</surname><given-names>MW</given-names></name><name><surname>Cowan</surname><given-names>RS</given-names></name><name><surname>Erickson</surname><given-names>DL</given-names></name><name><surname>Fazekas</surname><given-names>AJ</given-names></name><etal/></person-group><year>2009</year><article-title>A DNA barcode for land plants</article-title><source>Proc Natl Acad Sci U S A</source><volume>106</volume><fpage>12794</fpage><lpage>12797</lpage><pub-id pub-id-type="pmid">19666622</pub-id></element-citation><mixed-citation publication-type="other" id="B9-gen-2">Hollingsworth PM, Forrest LL, Spouge JL, Hajibabaei M, Ratnasingham
+S, Bank M, Chase MW, Cowan RS, Erickson DL, Fazekas AJ <italic>et al.</italic>
+(2009) A DNA barcode for land plants. Proc Natl Acad Sci U S A
+106:12794-12797.</mixed-citation></ref><ref id="B10"><element-citation publication-type="journal" id="B10-gen-1"><person-group person-group-type="author"><name><surname>Huang</surname><given-names>YY</given-names></name><name><surname>Matzke</surname><given-names>AJM</given-names></name><name><surname>Matzke</surname><given-names>M</given-names></name></person-group><year>2013</year><article-title>Complete sequence and comparative analysis of the chloroplast
+genome of coconut palm (<italic>Cocos nucifera</italic>)</article-title><source>PLoS One</source><volume>8</volume><fpage>e74736</fpage><pub-id pub-id-type="pmid">24023703</pub-id></element-citation><mixed-citation publication-type="other" id="B10-gen-2">Huang YY, Matzke AJM and Matzke M (2013) Complete sequence and
+comparative analysis of the chloroplast genome of coconut palm (<italic>Cocos
+nucifera</italic>). PLoS One 8:e74736.</mixed-citation></ref><ref id="B11"><element-citation publication-type="journal" id="B11-gen-1"><person-group person-group-type="author"><name><surname>Huang</surname><given-names>Y</given-names></name><name><surname>Wang</surname><given-names>J</given-names></name><name><surname>Yang</surname><given-names>Y</given-names></name><name><surname>Fan</surname><given-names>C</given-names></name><name><surname>Chen</surname><given-names>J</given-names></name></person-group><year>2017</year><article-title>Phylogenomic analysis and dynamic evolution of chloroplast
+genomes in Salicaceae</article-title><source>Front Plant Sci</source><volume>8</volume><fpage>1050</fpage><pub-id pub-id-type="pmid">28676809</pub-id></element-citation><mixed-citation publication-type="other" id="B11-gen-2">Huang Y, Wang J, Yang Y, Fan C and Chen J (2017) Phylogenomic
+analysis and dynamic evolution of chloroplast genomes in Salicaceae. Front Plant
+Sci 8: 1050.</mixed-citation></ref><ref id="B12"><element-citation publication-type="journal" id="B12-gen-1"><person-group person-group-type="author"><name><surname>Katoh</surname><given-names>K</given-names></name><name><surname>Standley</surname><given-names>DM</given-names></name></person-group><year>2013</year><article-title>MAFFT multiple sequence alignment software version 7:
+Improvements in performance and usability</article-title><source>Mol Biol Evol</source><volume>30</volume><fpage>772</fpage><lpage>780</lpage><pub-id pub-id-type="pmid">23329690</pub-id></element-citation><mixed-citation publication-type="other" id="B12-gen-2">Katoh K and Standley DM (2013) MAFFT multiple sequence alignment
+software version 7: Improvements in performance and usability. Mol Biol Evol
+30:772&#x02013;780.</mixed-citation></ref><ref id="B13"><element-citation publication-type="journal" id="B13-gen-1"><person-group person-group-type="author"><name><surname>Kumar</surname><given-names>S</given-names></name><name><surname>Stecher</surname><given-names>G</given-names></name><name><surname>Tamura</surname><given-names>K</given-names></name></person-group><year>2016</year><article-title>MEGA7: Molecular Evolutionary Genetics Analysis version 7.0 for
+bigger datasets</article-title><source>Mol Biol Evol</source><volume>33</volume><fpage>1870</fpage><lpage>1874</lpage><pub-id pub-id-type="pmid">27004904</pub-id></element-citation><mixed-citation publication-type="other" id="B13-gen-2">Kumar S, Stecher G and Tamura K (2016) MEGA7: Molecular Evolutionary
+Genetics Analysis version 7.0 for bigger datasets. Mol Biol Evol
+33:1870-1874</mixed-citation></ref><ref id="B14"><element-citation publication-type="journal" id="B14-gen-1"><person-group person-group-type="author"><name><surname>Lee</surname><given-names>YS</given-names></name><name><surname>Kim</surname><given-names>I</given-names></name><name><surname>Kim</surname><given-names>JK</given-names></name><name><surname>Park</surname><given-names>JY</given-names></name><name><surname>Joh</surname><given-names>HJ</given-names></name><name><surname>Park</surname><given-names>H</given-names></name><name><surname>Lee</surname><given-names>HO</given-names></name><name><surname>Lee</surname><given-names>SC</given-names></name><name><surname>Hur</surname><given-names>YJ</given-names></name><name><surname>Yan</surname><given-names>TJ</given-names></name></person-group><year>2016</year><article-title>The complete chloroplast genome sequence of <italic>Rhus
+chinensis</italic> Mill (Anacardiaceae)</article-title><source>Mitochondrial DNA Part B Resour</source><volume>1</volume><fpage>696</fpage><lpage>697</lpage></element-citation><mixed-citation publication-type="other" id="B14-gen-2">Lee YS, Kim I, Kim JK, Park JY, Joh HJ, Park H, Lee HO, Lee SC, Hur
+YJ and Yan TJ (2016) The complete chloroplast genome sequence of <italic>Rhus
+chinensis</italic> Mill (Anacardiaceae). Mitochondrial DNA Part B Resour
+1:696-697.</mixed-citation></ref><ref id="B15"><element-citation publication-type="journal" id="B15-gen-1"><person-group person-group-type="author"><name><surname>Lohse</surname><given-names>M</given-names></name><name><surname>Drechsel</surname><given-names>O</given-names></name><name><surname>Kahlau</surname><given-names>S</given-names></name><name><surname>Bock</surname><given-names>R</given-names></name></person-group><year>2013</year><article-title>Organellar Genome DRAW&#x02014; a suite of tools for generating physical
+maps of plastid and mitochondrial genomes and visualizing expression data
+sets</article-title><source>Nucleic Acids Res</source><volume>41</volume><fpage>575</fpage><lpage>581</lpage><pub-id pub-id-type="pmid">23161687</pub-id></element-citation><mixed-citation publication-type="other" id="B15-gen-2">Lohse M, Drechsel O, Kahlau S and Bock R (2013) Organellar Genome
+DRAW&#x02014; a suite of tools for generating physical maps of plastid and mitochondrial
+genomes and visualizing expression data sets<italic>.</italic> Nucleic Acids Res
+41:575-581.</mixed-citation></ref><ref id="B16"><element-citation publication-type="journal" id="B16-gen-1"><person-group person-group-type="author"><name><surname>Machado</surname><given-names>M</given-names></name><name><surname>Carvalho</surname><given-names>P</given-names></name><name><surname>van den Berg</surname><given-names>C</given-names></name></person-group><year>2015</year><article-title>Domestication, hybridization, speciation, and the origins of an
+economically important tree crop of <italic>Spondias</italic>
+(Anacardiaceae) from the Brazilian Caatinga dry forest</article-title><source>Neodiversity</source><volume>8</volume><fpage>8</fpage><lpage>49</lpage></element-citation><mixed-citation publication-type="other" id="B16-gen-2">Machado M, Carvalho P and van den Berg C (2015) Domestication,
+hybridization, speciation, and the origins of an economically important tree
+crop of <italic>Spondias</italic> (Anacardiaceae) from the Brazilian Caatinga
+dry forest. Neodiversity 8:8&#x02013;49.</mixed-citation></ref><ref id="B17"><element-citation publication-type="journal" id="B17-gen-1"><person-group person-group-type="author"><name><surname>Mitchell</surname><given-names>JD</given-names></name><name><surname>Daly</surname><given-names>DC</given-names></name></person-group><year>2015</year><article-title>A revision of <italic>Spondias</italic> (Anacardiaceae) in the
+Neotropics</article-title><source>Phytotaxa</source><volume>92</volume><fpage>1</fpage><lpage>92</lpage></element-citation><mixed-citation publication-type="other" id="B17-gen-2">Mitchell JD and Daly DC (2015) A revision of
+<italic>Spondias</italic> (Anacardiaceae) in the Neotropics. Phytotaxa
+92:1&#x02013;92.</mixed-citation></ref><ref id="B18"><element-citation publication-type="journal" id="B18-gen-1"><person-group person-group-type="author"><name><surname>Park</surname><given-names>I</given-names></name><name><surname>Kim</surname><given-names>WJ</given-names></name><name><surname>Yang</surname><given-names>S</given-names></name><name><surname>Yeo</surname><given-names>SM</given-names></name><name><surname>Li</surname><given-names>H</given-names></name><name><surname>Moon</surname><given-names>BC</given-names></name></person-group><year>2017</year><article-title>The complete chloroplast genome sequence of <italic>Aconitum
+coreanum</italic> and <italic>Aconitum carmichaelii</italic> and
+comparative analysis with other <italic>Aconitum</italic>
+species</article-title><source>PLoS One</source><volume>12</volume><fpage>e184257</fpage></element-citation><mixed-citation publication-type="other" id="B18-gen-2">Park I, Kim WJ, Yang S, Yeo SM, Li H and Moon BC (2017) The complete
+chloroplast genome sequence of <italic>Aconitum coreanum</italic> and
+<italic>Aconitum carmichaelii</italic> and comparative analysis with other
+<italic>Aconitum</italic> species. PLoS One 12:e184257.</mixed-citation></ref><ref id="B19"><element-citation publication-type="journal" id="B19-gen-1"><person-group person-group-type="author"><name><surname>Rabah</surname><given-names>SO</given-names></name><name><surname>Lee</surname><given-names>C</given-names></name><name><surname>Hajrah</surname><given-names>NH</given-names></name><name><surname>Makki</surname><given-names>RM</given-names></name><name><surname>Alharby</surname><given-names>HF</given-names></name><name><surname>Alhebshi</surname><given-names>AM</given-names></name><name><surname>Sabir</surname><given-names>JSM</given-names></name><name><surname>Jansen</surname><given-names>RK</given-names></name><name><surname>Ruhlman</surname><given-names>TA</given-names></name></person-group><year>2017</year><article-title>Plastome sequencing of ten nonmodel crop species uncovers a large
+insertion of mitochondrial DNA in cashew</article-title><source>Plant Genome</source><volume>10</volume><fpage>1</fpage><lpage>14</lpage></element-citation><mixed-citation publication-type="other" id="B19-gen-2">Rabah SO, Lee C, Hajrah NH, Makki RM, Alharby HF, Alhebshi AM, Sabir
+JSM, Jansen RK and Ruhlman TA (2017) Plastome sequencing of ten nonmodel crop
+species uncovers a large insertion of mitochondrial DNA in cashew. Plant Genome
+10:1-14.</mixed-citation></ref><ref id="B20"><element-citation publication-type="journal" id="B20-gen-1"><person-group person-group-type="author"><name><surname>Scarcelli</surname><given-names>N</given-names></name><name><surname>Barnaud</surname><given-names>A</given-names></name><name><surname>Eiserhardt</surname><given-names>W</given-names></name><name><surname>Treier</surname><given-names>UA</given-names></name><name><surname>Seveno</surname><given-names>M</given-names></name><name><surname>d&#x02019;Anfray</surname><given-names>A</given-names></name><name><surname>Vigouroux</surname><given-names>Y</given-names></name><name><surname>Pintaud</surname><given-names>JC</given-names></name></person-group><year>2011</year><article-title>A set of 100 chloroplast DNA primer pairs to study population
+genetics and phylogeny in monocotyledons</article-title><source>PLoS One</source><volume>6</volume><fpage>e19954</fpage><pub-id pub-id-type="pmid">21637837</pub-id></element-citation><mixed-citation publication-type="other" id="B20-gen-2">Scarcelli N, Barnaud A, Eiserhardt W, Treier UA, Seveno M, d&#x02019;Anfray
+A, Vigouroux Y and Pintaud JC (2011) A set of 100 chloroplast DNA primer pairs
+to study population genetics and phylogeny in monocotyledons. PLoS One
+6:e19954.</mixed-citation></ref><ref id="B21"><element-citation publication-type="journal" id="B21-gen-1"><person-group person-group-type="author"><name><surname>Silva</surname><given-names>JN</given-names></name><name><surname>Costa</surname><given-names>A</given-names></name><name><surname>Silva</surname><given-names>JV</given-names></name><name><surname>Almeida</surname><given-names>C</given-names></name></person-group><year>2015</year><article-title>DNA barcoding and phylogeny in Neotropical species of the genus
+<italic>Spondias</italic></article-title><source>Biochem Syst Ecol</source><volume>61</volume><fpage>240</fpage><lpage>243</lpage></element-citation><mixed-citation publication-type="other" id="B21-gen-2">Silva JN, Costa A, Silva JV and Almeida C (2015) DNA barcoding and
+phylogeny in Neotropical species of the genus <italic>Spondias</italic>. Biochem
+Syst Ecol 61:240&#x02013;243.</mixed-citation></ref><ref id="B22"><element-citation publication-type="journal" id="B22-gen-1"><person-group person-group-type="author"><name><surname>Yang</surname><given-names>B</given-names></name><name><surname>Li</surname><given-names>M</given-names></name><name><surname>Ma</surname><given-names>J</given-names></name><name><surname>Fu</surname><given-names>Z</given-names></name><name><surname>Xu</surname><given-names>X</given-names></name><name><surname>Chen</surname><given-names>Q</given-names></name></person-group><year>2016</year><article-title>The complete chloroplast genome sequence of <italic>Sapindus
+mukorossi</italic></article-title><source>Mitochondrial DNA Part A</source><volume>27</volume><fpage>1825</fpage><lpage>1826</lpage></element-citation><mixed-citation publication-type="other" id="B22-gen-2">Yang B, Li M, Ma J, Fu Z, Xu X and Chen Q (2016) The complete
+chloroplast genome sequence of <italic>Sapindus mukorossi</italic>.
+Mitochondrial DNA Part A 27:1825-1826.</mixed-citation></ref></ref-list><ref-list><title>Internet Resources</title><ref id="B23"><element-citation publication-type="webpage" id="B23-gen-1"><person-group person-group-type="author"><name><surname>Mayer</surname><given-names>C</given-names></name></person-group><year>2010</year><article-title>Phobos 3.3.11, 2006-2010</article-title><comment><ext-link ext-link-type="uri" xlink:href="http://www.rub.de/spezzoo/cm/cm_phobos.htm">http://www.rub.de/spezzoo/cm/cm_phobos.htm</ext-link></comment></element-citation><mixed-citation publication-type="other" id="B23-gen-2">Mayer C, (2010) Phobos 3.3.11, 2006-2010, <ext-link ext-link-type="uri" xlink:href="http://www.rub.de/spezzoo/cm/cm_phobos.htm">http://www.rub.de/spezzoo/cm/cm_phobos.htm</ext-link>
+</mixed-citation></ref></ref-list><app-group><app id="app1"><title>Supplementary material</title><p>The following online material is available for this article:</p><p>
+<supplementary-material content-type="local-data" id="suppl1"><label>Figure S1 </label><caption><title>Chloroplast genome map of <italic>S. tuberosa</italic>.</title></caption><media xlink:href="1415-4757-GMB-1678-4685-GMB-2017-0265-20170265-suppl1.pdf"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material>
+</p><p>
+<supplementary-material content-type="local-data" id="suppl2"><label>Figure S2 </label><caption><title>Chloroplast genome map of <italic>S. bahiensis</italic>.</title></caption><media xlink:href="1415-4757-GMB-1678-4685-GMB-2017-0265-20170265-suppl2.pdf"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material>
+</p><p>
+<supplementary-material content-type="local-data" id="suppl3"><label>Figure S3 </label><caption><title>Chloroplast genome map of <italic>S. mombin</italic>.</title></caption><media xlink:href="1415-4757-GMB-1678-4685-GMB-2017-0265-20170265-suppl3.pdf"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material>
+</p></app></app-group></back></article>
