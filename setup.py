@@ -39,6 +39,7 @@ setup(
         "pydantic",
         "spacy",
         "pyyaml<6.0.0",
+        "pyparsing<3",
     ],
     entry_points={
         "console_scripts": ["ftg = ftg.cli:cli"],
