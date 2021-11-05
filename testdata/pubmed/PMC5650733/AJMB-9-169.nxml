@@ -1,0 +1,415 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.0 20120330//EN" "JATS-archivearticle1.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article"><?properties open_access?><front><journal-meta><journal-id journal-id-type="nlm-ta">Avicenna J Med Biotechnol</journal-id><journal-id journal-id-type="publisher-id">AJMB</journal-id><journal-id journal-id-type="pmc">AJMB</journal-id><journal-title-group><journal-title>Avicenna Journal of Medical Biotechnology</journal-title></journal-title-group><issn pub-type="ppub">2008-2835</issn><issn pub-type="epub">2008-4625</issn><publisher><publisher-name>Avicenna Research Institute</publisher-name></publisher></journal-meta><article-meta><article-id pub-id-type="pmid">29090065</article-id><article-id pub-id-type="pmc">5650733</article-id><article-id pub-id-type="publisher-id">ajmb-9-169</article-id><article-categories><subj-group subj-group-type="heading"><subject>Original Article</subject></subj-group></article-categories><title-group><article-title>Cloning, Expression and Purification of <italic>Pseudomonas putida ATCC12633</italic> Creatinase</article-title></title-group><contrib-group><contrib contrib-type="author"><name><surname>Afshari</surname><given-names>Elnaz</given-names></name><xref ref-type="aff" rid="AFF1"><sup>1</sup></xref></contrib><contrib contrib-type="author"><name><surname>Amini-bayat</surname><given-names>Zahra</given-names></name><xref ref-type="aff" rid="AFF2"><sup>2</sup></xref><xref ref-type="corresp" rid="C1"><sup>*</sup></xref></contrib><contrib contrib-type="author"><name><surname>Hosseinkhani</surname><given-names>Saman</given-names></name><xref ref-type="aff" rid="AFF3"><sup>3</sup></xref></contrib><contrib contrib-type="author"><name><surname>Bakhtiari</surname><given-names>Nahid</given-names></name><xref ref-type="aff" rid="AFF2"><sup>2</sup></xref></contrib><aff id="AFF1"><label>1.</label>Department of Microbiology, Islamic Azad University of Pharmaceutical Sciences Branch, Tehran, Iran</aff><aff id="AFF2"><label>2.</label>Department of Biotechnology, Iranian Research Organization for Science and Technology (IROST), Tehran, Iran</aff><aff id="AFF3"><label>3.</label>Department of Biochemistry, Faculty of Biological Sciences, Tarbiat Modares University, Tehran, Iran</aff></contrib-group><author-notes><corresp id="C1"><label>*</label>Corresponding author: Zahra Amini-bayat, Ph.D., Department of Biotechnology, Iranian Research Organization for Science and Technology (IROST), Tehran, Iran, Tel: +98 21 56276020, ext: 2259, Fax: +98 21 56276636, E-mail: <email>amini-bayat@irost.ir</email></corresp></author-notes><pub-date pub-type="ppub"><season>Oct-Dec</season><year>2017</year></pub-date><volume>9</volume><issue>4</issue><fpage>169</fpage><lpage>175</lpage><history><date date-type="received"><day>19</day><month>7</month><year>2016</year></date><date date-type="accepted"><day>21</day><month>12</month><year>2016</year></date></history><permissions><copyright-statement>Copyright&#x000a9; 2017 Avicenna Research Institute</copyright-statement><copyright-year>2017</copyright-year><license license-type="open-access" xlink:href="http://creativecommons.org/licenses/by/3.0/"><license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.</license-p></license></permissions><abstract><sec><title>Background:</title><p><italic>Pseudomonas putida (P. putida)</italic> ATCC12633 can produce creatinase. It is a microbial enzyme which degrades creatinine in bacteria and provides source of carbon and nitrogen. Also, this enzyme is used in the enzymatic measurement of creatinine concentration for diagnosis of renal and muscles functions and diseases. Our purpose was recombinant production of creatinase for using in clinical measurement of serum or urine creatinine.</p></sec><sec><title>Methods:</title><p>A 1209bp of open reading frame of creatinase was amplified by PCR from <italic>P. putida ATCC12633</italic> genome and cloned into pET28a expression vector which was digested using NheI and XhoI restriction enzymes. Cloning was confirmed by colony PCR, double digestion analysis and sequencing. Recombinant pET28a vector was transformed to <italic>Escherichia coli (E. coli) BL21 (DE3)</italic>. Creatinase expression was induced in <italic>E.coli BL21 (DE3)</italic> using IPTG and confirmed by SDS-PAGE and western blotting. Purification of creatinase was performed using Ni-NTA column. The specific activity of this enzyme was also investigated.</p></sec><sec><title>Results:</title><p>The creatinase gene cloning was confirmed by DNA sequencing. Successful expression of creatinase was performed in <italic>E. coli</italic> (57.4% of total protein). SDS-PAGE and western blot analysis showed a 45 <italic>kDa</italic> creatinase protein. Purification of creatinase was done with high purity. The specific activity of recombinant enzyme is 26.54 <italic>unit/mg</italic> that is much higher than other creatinase used in the commercial kits (9 <italic>unit/mg</italic>).</p></sec><sec><title>Conclusion:</title><p>The <italic>P. putida ATCC12633</italic> recombinant creatinase was expressed efficiently in <italic>E. coli BL21</italic> and 57% of total protein was the recombinant creatinase. Also, expressed creatinase has high solubility and also the enzyme has good activity compared to enzymes used in commercial kits, so a new source of creatinase was produced for creatinine assay kit in this study.</p></sec></abstract><kwd-group><kwd>Creatine</kwd><kwd>Creatinase</kwd><kwd><italic>Pseudomonas putida</italic></kwd></kwd-group></article-meta></front><body><sec sec-type="intro"><title>Introduction</title><p>Creatinase [creatine amidinohydrolase (EC 3.5.3.3)] converts creatine to sarcosine and urea <sup><xref rid="B1" ref-type="bibr">1</xref>&#x02013;<xref rid="B3" ref-type="bibr">3</xref></sup>. This enzyme is used for creatine and creatinine assessment in biological fluids <sup><xref rid="B3" ref-type="bibr">3</xref></sup>. Creatine and creatinine levels are the most important diagnostic markers in the assay of RBC age <sup><xref rid="B4" ref-type="bibr">4</xref>&#x02013;<xref rid="B7" ref-type="bibr">7</xref></sup>, thyroid, renal and muscular functions <sup><xref rid="B8" ref-type="bibr">8</xref>,<xref rid="B9" ref-type="bibr">9</xref></sup> and in the diagnosis of anemia <sup><xref rid="B10" ref-type="bibr">10</xref>,<xref rid="B11" ref-type="bibr">11</xref></sup>. In human body, creatine is naturally produced in kidney, liver and pancreas from aminoacids such as L-arginine, glycine and L-methionine <sup><xref rid="B12" ref-type="bibr">12</xref></sup>, then creatine can be transported to muscles, brain and heart tissues through the blood-stream. It is phosphorylated to phosphocreatine by creatine kinase and stored as the source of energy. During the muscle contraction, phosphocreatine is converted to creatinine. Finally, creatinine is absorbed by kidney and is especially excreted through urine <sup><xref rid="B13" ref-type="bibr">13</xref></sup>. So the metabolism of creatine has been studied as a relationship between creatine uptake and creatinine excretion <sup><xref rid="B14" ref-type="bibr">14</xref></sup>.</p><p>Disturbance of creatine metabolism is shown by reduced concentration of muscle creatine, decreased excretion of urine creatinine and increased excretion of urine creatine in muscular dystrophy patients <sup><xref rid="B15" ref-type="bibr">15</xref>,<xref rid="B16" ref-type="bibr">16</xref></sup>. Also, increased concentration of creatinine is shown by reduced glomerular filtration rate in renal diseases. Creatine and creatine phosphate are changed into creatinine nonenzymatically in vertebrates but there are a growing number of microorganisms that express specific enzymes for the degradation of creatinine. One of these enzymes is creatinase, an inducible enzyme expressed in bacteria when creatinine is provided as the main source of carbon or nitrogen <sup><xref rid="B17" ref-type="bibr">17</xref>&#x02013;<xref rid="B22" ref-type="bibr">22</xref></sup>. The creatine decomposing enzyme (creatinase) with 403 amino acids is a homodimeric enzyme (with small N-terminal domain and large C-terminal domain) that is classified as a member of the hydrolases family of enzymes <sup><xref rid="B3" ref-type="bibr">3</xref>,<xref rid="B23" ref-type="bibr">23</xref></sup>. This enzyme was first identified in two species of <italic>Pseudomonas</italic> (<italic>P. eisenbergii</italic> and <italic>ovalis</italic>) <sup><xref rid="B20" ref-type="bibr">20</xref></sup>. The other bacteria which produce creatinase are as follows: <italic>Pseudomonas</italic>
+<sup><xref rid="B2" ref-type="bibr">2</xref>,<xref rid="B24" ref-type="bibr">24</xref></sup>, <italic>Bacillus</italic>
+<sup><xref rid="B25" ref-type="bibr">25</xref></sup>, <italic>Flavobacterium</italic>
+<sup><xref rid="B1" ref-type="bibr">1</xref></sup>, <italic>Micrococcus</italic>
+<sup><xref rid="B26" ref-type="bibr">26</xref></sup>, <italic>Alcaligenes</italic>, <italic>Clostridium</italic>
+<sup><xref rid="B27" ref-type="bibr">27</xref></sup>, <italic>Athrobacter</italic>
+<sup><xref rid="B28" ref-type="bibr">28</xref></sup>, and <italic>Paracoccus</italic>
+<sup><xref rid="B9" ref-type="bibr">9</xref></sup>. The routine technique for creatinine measurement is the Jaffe reaction that is non-specific and many substances could interfere in this assay. Due to lack of interference and being specific, the enzymatic methods are preferred. One of the enzymatic methods is as follows: at first creatinine is converted to creatine by creatininase (EC 3.5.2.10), then creatine is hydrolyzed to urea and sarcosine by creatinase (EC 3.5.3.3). In the third step, sarcosine is demethylated to H<sub>2</sub>O<sub>2</sub> by sarcosine oxidase (EC 1.5. 3.1) <sup><xref rid="B3" ref-type="bibr">3</xref></sup>. Finally, H<sub>2</sub>O<sub>2</sub> can be measured by spectrophotometric methods.</p><p>Extraction of enzymes from natural sources is hard and it does not meet the requirement for quantity. Recombinant technology using different expression hosts is the method of choice among all recombinant expression hosts and <italic>Escherichia coli</italic> (<italic>E. coli)</italic> is the most conventional organism.</p><p>Because creatinase is an enzyme that is used for clinical application, its activity is an important property. To the best of our knowledge, the creatinase that has been used in commercial kits has maximum activity of 9 <italic>unit/mg</italic>, so availability of enzyme with higher activity is distinctly a need. On the other hand, in industrial production, increasing expression yield is desirable.</p><p>The aim of this study was to investigate if ATCC-12633 creatinase has better activity than commonly used commercially creatinases. So, <italic>Pseudomonas putida (P. putida)</italic> ATCC12633 creatinase gene was amplified from this strain genome and cloned into pET28a expression vector. The recombinant DNA was expressed in <italic>E. coli BL21 (DE3)</italic> and verified by western blot analysis then purified by affinity chromatography and its activity has been determined.</p></sec><sec sec-type="materials|methods"><title>Materials and Methods</title><sec sec-type="materials"><title>Materials and bacterial strains and vector</title><p><italic>P. putida</italic> ATCC12633 was used as the source of creatinase gene (Persian Type Culture Collection (IRO-ST PTCC, Iran)). <italic>E. coli DH5&#x003b1;</italic> strain (Novagen, Germany) and <italic>E. coli BL21 (DE3)</italic> were used as cloning and expression hosts and the pET28a(+) vector (Novagen, Germany) was used as expression vector. Kanamycin was obtained from duchefa, Taq polymerase, 2x PCR master mixes, 1 <italic>kb</italic> DNA Ladder, NheI and XhoI Restriction Enzymes, T4 DNA Ligase, IPTG (isopropyl-&#x003b2;-D-thiogalactopyranoside) and Protein ladder were obtained from fermentas. Ni-NTA agarose resin was from QIAGEN and Anti poly-Histidine Antibody conjugated with HRP was from Sigma. Creatine, DMSO (Dimethylsulfoxide), DMAB (4-Dimethyl aminobenzaldehyde), and Imidazole were obtained from Merck. YTA DNA extraction, plasmid extraction and gel extraction kits (Yekta Tajhiz Azma, Iran) were used in this study as well.</p></sec><sec><title>Genomic DNA extraction and amplification of creatinase gene</title><p>Genome of <italic>P. putida</italic> ATCC12633 has been sequenced in 2014 <sup><xref rid="B29" ref-type="bibr">29</xref></sup> and according to the blast analysis, one of its gene was predicted as a gene encoding creatinase. On the other hand, in our lab, the bacteria showed creatinase activity in the presence of creatinine as the unique organic source.</p><p>The genomic DNA of <italic>P. putida</italic> was extracted using the YTA DNA extraction mini kit (Yekta Tajhiz Azma, Iran). Based on creatinase nucleotide sequence which was obtained from NCBI database (accession number: NC_021505.1), two specific oligonucleotide primers were designed by oligoanalyzer software and were synthesized by Bioneer company. The complete open reading frame of creatinase gene was amplified using forward primer: 5&#x02032;-CTATA<bold><underline>GCTAGC</underline></bold>CAAATGCCCA AGACCCTG-3&#x02032; which contained a NheI restriction site and reverse primer: 5&#x02032;-GGC<bold><underline>CTCGAG</underline></bold>TTATTTGCGA ATGATGTTGTG-3&#x02032; which contained a XhoI restriction site (underlined). Amplification was carried out by thermocycler (Palm Cycler hp ipaq) under the following program: denaturation at 95&#x000b0;<italic>C</italic> for 3 <italic>min</italic> followed by 30 cycles at 95&#x000b0;<italic>C</italic> for 30 <italic>s</italic>, 63&#x000b0;<italic>C</italic> for 30 <italic>s</italic>, and 72&#x000b0;<italic>C</italic> for 80 <italic>s</italic> and a 10 <italic>min</italic>-final extension at 72&#x000b0;<italic>C</italic>. To assess the quality and quantity of amplified gene, 0.7% agarose gel electrophoresis was used. YTA gel extraction kit was used to purify PCR products.</p></sec><sec><title>Cloning of creatinase gene into expression vector</title><p>pET28a(+) was extracted using YTA plasmid DNA extraction kit. PCR product and plasmid were double digested with NheI and XhoI restriction enzymes and gel purified using YTA gel extraction kit, then ligation was performed at 3:1 vector/insert ratio. Preparation of <italic>E. coli DH5&#x003b1;</italic> competent cells was performed by FB buffer method <sup><xref rid="B30" ref-type="bibr">30</xref></sup>. Then, recombinant plasmid was transformed to <italic>E. coli DH5&#x003b1;</italic> by chemical method. Colony PCR, double digestion and nucleotide sequencing were performed to confirm gene cloning. Colony PCR was done using T7 terminator and T7 promoter primers under the following program: denaturation at 94&#x000b0;<italic>C</italic> for 5 <italic>min</italic> followed by 30 cycles at 94&#x000b0;<italic>C</italic> for 60 <italic>s</italic>, 50&#x000b0;<italic>C</italic> for 90 <italic>s</italic>, and 72&#x000b0;<italic>C</italic> for 90 <italic>s</italic> and a 10 <italic>min</italic>-final extension at 72&#x000b0;<italic>C</italic>. PCR products were analyzed using 1% agarose gel electrophoresis.</p></sec><sec sec-type="methods"><title>Expression and solubility analysis by SDS-PAGE</title><p>The recombinant pET28a-cre vector was transformed into <italic>E. coli BL21(DE3)</italic> competent cells. The recombinant creatinase was expressed as N-terminal fusion to His-tag. The creatinase expression was done in LB broth medium containing kanamycin (50 <italic>&#x003bc;g/ml</italic>) at 37&#x000b0;<italic>C</italic> with 1 <italic>mM</italic> IPTG for two different times, 4 <italic>hr</italic> and overnight. The same method was used for negative control (a colony containing pET28a without cre gene). The cells were harvested at 4<italic>&#x000b0;C</italic> and 8000 <italic>rpm</italic> for 20 <italic>min</italic>. For disrupting the cells, pellet was resuspended in lysis buffer (containing: 10 <italic>mM</italic> Imidazole, 300 <italic>mM</italic> NaCl, 50 <italic>mM</italic> NaH<sub>2</sub>PO<sub>4</sub> in pH=8) then different methods such as grinding with liquid nitrogen and sonication (Misonix 600W) with amplitude of 20%, 10 <italic>s</italic> ON, 20 <italic>s</italic> OFF were used. Finally, cell lysate was analyzed for total (containing: soluble and insoluble proteins) and soluble recombinant protein by 12% SDS-PAGE.</p></sec><sec><title>Plasmid stability test</title><p>One of the most important problems in the production of recombinant proteins is the tendency of transformed cells to lose their engineered properties following loss of their plasmids. Instability of plasmids can result in a significant loss in productivity <sup><xref rid="B31" ref-type="bibr">31</xref></sup>. For stability test, the serial dilutions (10<sup>&#x02212;1</sup>, 10<sup>&#x02212;2</sup>, 10<sup>&#x02212;3</sup>, 10<sup>&#x02212;4</sup>, 10<sup>&#x02212;5</sup>) of transformed cells were prepared, then 50 <italic>&#x003bc;l</italic> of diluted samples were plated on selective (containing kanamycin) and nonselective (without kanamycin) LB plates and let to grow for 16/18 <italic>hr</italic> in 37<italic>&#x000b0;C</italic>.</p></sec><sec sec-type="methods"><title>Western blot analysis</title><p>Soluble and total fractions of bacterial lysate were subjected to electrophoresis under reduced conditions using a 12% SDS-PAGE gel and transformed to a nitrocellulose membrane by Bio-rad transfer system (Schleicher &#x00026; Schuell). Then, membrane was blocked by 5% skim milk in TBS-T and immunoblotted with anti his-tag antibody conjugated to HRP at a 1:2000 dilution. Protein bands were developed using DAB (3, 3&#x02032;-diaminobenzidine) and H<sub>2</sub>O<sub>2</sub> in PBS containing NiCl<sub>2</sub> and kept in a dark place for appearance of the protein band.</p></sec><sec><title>Protein purification</title><p>For purification by native method, transformed cell harboring pET28-cre plasmid was grown at a large scale under the following conditions: in LB broth, OD<sub>600</sub>
+<italic><sub>nm</sub></italic>=1, 1 <italic>mM</italic> IPTG at 37<italic>&#x000b0;C</italic> for 4 <italic>hr</italic>. Then, cells were harvested by centrifugation for 20 <italic>min</italic> at 4<italic>&#x000b0;C</italic> at 8000 <italic>rpm</italic> and resuspended in 15 <italic>ml</italic> lysis buffer (containing 10 <italic>mM</italic> imidazole) and stored for overnight at &#x02212;20<italic>&#x000b0;C</italic>. Cell pellets were sonicated for 10 <italic>min</italic> and centrifuged at 8000 <italic>rpm</italic> at 4<italic>&#x000b0;C</italic> for 20 <italic>min</italic>. Supernatant that included soluble form of recombinant creatinase was added to Ni-NTA column and column was washed with wash buffer (containing 20 <italic>mM</italic> imidazole) and finally recombinant protein was eluted using elution buffer (containing 250 <italic>mM</italic> imidazole) (Ni-NTA Aga-rose; Qiagen). The purity of fractions was analyzed by 12% SDS-PAGE.</p></sec><sec><title>Recombinant creatinase concentration and activity assay</title><p>The creatinase concentration was obtained using Bradford method <sup><xref rid="B32" ref-type="bibr">32</xref></sup> and creatinase activity was measured by estimating the amount of urea formation from the hydrolysis of creatine in a colorimetric assay. For this reason, 0.1 <italic>ml</italic> of recombinant creatinase solution was added to 0.9 <italic>ml</italic> of 50 <italic>mM</italic> phosphate buffer containing 100 <italic>mM</italic> creatine (pH=7.5), and incubated for 10 <italic>min</italic> at 37<italic>&#x000b0;C</italic>. The reaction was stopped by addition of 2 <italic>ml</italic> of 2% dimethyl aminobenzaldehyde in dimethyl sulfoxide and 15 <italic>ml</italic> HCl. After 20 <italic>min</italic> at 25<italic>&#x000b0;C</italic>, the optical density was measured at 435 <italic>nm</italic>. One unit of creatinase activity was defined as the amount of enzyme that liberated 1 <italic>&#x003bc;mol</italic> of <italic>urea/min/ml</italic> under standard conditions <sup><xref rid="B22" ref-type="bibr">22</xref></sup>.</p></sec></sec><sec sec-type="results"><title>Results</title><sec><title>Amplification of cre gene and construction of pET28a-cre plasmid</title><p>PCR amplification of creatinase gene from <italic>P. putida</italic> ATCC 12633 genomic DNA led to a 1209 <italic>bp</italic> single band (<xref ref-type="fig" rid="F1">Figure 1</xref>). The PCR product and pET28a plasmid were digested using NheI and XhoI restriction enzymes and ligated and transformed to chemical competent <italic>DH5&#x003b1; E. coli</italic> cells. Cloning of recombinant creatinase was confirmed by colony PCR, double digestion using NheI and XhoI and sequencing. Double digestion of recombinant plasmid (pET28a-cre) led to two bands of 5369 <italic>bp</italic> and 1209 <italic>bp</italic> according to linear pET28a and cre gene sizes, respectively (<xref ref-type="fig" rid="F1">Figure 1</xref>).</p><fig id="F1" orientation="portrait" position="float"><label>Figure 1.</label><caption><p>Lane 1: PCR product of Cre gene, lane 2: pET28a-cre plasmid extraction result, lane 3: DNA ladder, lane 4: double digestion of recombinant pET28a-cre by NheI and XhoI. Products were electrophoresed on 0.7% agarose gel.</p></caption><graphic xlink:href="AJMB-9-169-g001"/></fig></sec><sec sec-type="methods"><title>Expression and western blot analysis</title><p>Total and soluble forms of recombinant enzyme were analyzed using SDS-PAGE (<xref ref-type="fig" rid="F2">Figure 2</xref>). For increasing the amount of soluble protein and lysis of whole bacterial cells, different lysis methods were tested and grinding with liquid nitrogen was the best (data was not shown). Estimation of expression yield by AlphaEase software showed the creatinase was expressed in high yield (57% of the total protein) and the majority of the protein was in soluble form (<xref ref-type="fig" rid="F2">Figure 2</xref>). To confirm the expression of desired protein, western blot analysis was performed using rabbit anti-His-tag monoclonal antibody conjugated to HRP. The single band with a molecular weight of approximately 45 <italic>kDa</italic> appeared (<xref ref-type="fig" rid="F3">Figure 3</xref>).</p><fig id="F2" orientation="portrait" position="float"><label>Figure 2.</label><caption><p>SDS-PAGE analysis of recombinant creatinase expression. Lane 1 and 2 are soluble fractions of induced <italic>BL21</italic> (containing pET28a-cre) for 4 and 16 <italic>hr</italic> and 3 is soluble fraction of induced negative control. Lane 4 is the protein ladder. Lane 5 and 6 are crude extract of total protein of induced <italic>BL21</italic> (containing pET28a-cre), and lane 7 is the negative control.</p></caption><graphic xlink:href="AJMB-9-169-g002"/></fig><fig id="F3" orientation="portrait" position="float"><label>Figure 3.</label><caption><p>Western blot analysis of expressed creatinase using anti-His-tag monoclonal antibody conjugated to HRP. Lane 1: total protein, lane 2: soluble protein<italic>,</italic> lane 3: total protein in negative control, lane 4: thermo scientific Spectra Multicolor Broad Range Protein marker.</p></caption><graphic xlink:href="AJMB-9-169-g003"/></fig></sec><sec><title>Purification of recombinant creatinase</title><p>Finally, recombinant creatinase was purified under native condition using Ni-NTA affinity chromatography and fractions were observed in SDS-PAGE (<xref ref-type="fig" rid="F4">Figure 4</xref>). Purity percent of different fractions was estimated by AlphaEase software and minimum purity percent of fractions was 98%.</p><fig id="F4" orientation="portrait" position="float"><label>Figure 4.</label><caption><p>Protein purification with Ni-NTA agarose resin. F1&#x02013;F2: different fractions of flow-through, W1&#x02013;W2: different fractions of wash, E1&#x02013;E7: different fractions of elution.</p></caption><graphic xlink:href="AJMB-9-169-g004"/></fig></sec><sec><title>Plasmid stability</title><p>The results of plasmid stability test showed that the number of transformed colonies with pET28a-cre in plates containing antibiotics were over 50% of colonies in plates without antibiotics, thus this plasmid demonstrated good stability (data was not shown).</p></sec><sec><title>Concentration and activity of recombinant enzyme</title><p>Based on the total protein concentration and percentage of the creatinase in total protein (estimated using AlphaEase software), the concentration of recombinant enzymes that was expressed in different temperatures of 22, 28 and 37&#x000b0;<italic>C</italic> were measured. The enzyme which was expressed at 28&#x000b0;<italic>C</italic> had the highest concentration (0.727 <italic>mg/ml</italic>) (<xref ref-type="table" rid="T1">Table 1</xref>). The enzyme activity of creatinase which was expressed in different induction temperatures (22, 28 and 37<italic>&#x000b0;C</italic>) was measured <sup><xref rid="B33" ref-type="bibr">33</xref></sup> and the results showed that the activity of enzyme that induced at 37<italic>&#x000b0;C</italic> was more than two other samples (<xref ref-type="table" rid="T1">Table 1</xref>).</p><table-wrap id="T1" orientation="portrait" position="float"><label>Table 1.</label><caption><p>Concentration and specific activity of recombinant creatinase which expressed in different induced temperatures (22, 28 and 37<italic>&#x000b0;C</italic>)</p></caption><table frame="hsides" rules="groups"><thead><tr><th align="left" valign="middle" rowspan="1" colspan="1"><bold>Samples</bold></th><th align="center" valign="middle" rowspan="1" colspan="1"><bold>Absorbance at 595 <italic>nm</italic></bold></th><th align="center" valign="middle" rowspan="1" colspan="1"><bold>Sample concentration (<italic>mg/ml</italic>)</bold></th><th align="center" valign="middle" rowspan="1" colspan="1"><bold>Absorbance at 435 <italic>nm</italic></bold></th><th align="center" valign="middle" rowspan="1" colspan="1"><bold>Activity (<italic>unit/ml</italic>)</bold></th><th align="center" valign="middle" rowspan="1" colspan="1"><bold>Specific activity (<italic>unit/mg</italic>)</bold></th></tr></thead><tbody><tr><td align="left" valign="middle" rowspan="1" colspan="1"><bold>Recombinant creatinase expressed at 22&#x000b0;<italic>C</italic></bold></td><td align="center" valign="middle" rowspan="1" colspan="1">1.194</td><td align="center" valign="middle" rowspan="1" colspan="1">0.437</td><td align="center" valign="middle" rowspan="1" colspan="1">1.18</td><td align="center" valign="middle" rowspan="1" colspan="1">11.02</td><td align="center" valign="middle" rowspan="1" colspan="1">25.23</td></tr><tr><td align="left" valign="middle" rowspan="1" colspan="1"><bold>Recombinant creatinase expressed at 28&#x000b0;<italic>C</italic></bold></td><td align="center" valign="middle" rowspan="1" colspan="1">1.848</td><td align="center" valign="middle" rowspan="1" colspan="1">0.727</td><td align="center" valign="middle" rowspan="1" colspan="1">1.42</td><td align="center" valign="middle" rowspan="1" colspan="1">13.27</td><td align="center" valign="middle" rowspan="1" colspan="1">18.53</td></tr><tr><td align="left" valign="middle" rowspan="1" colspan="1"><bold>Recombinant creatinase expressed at 37&#x000b0;<italic>C</italic></bold></td><td align="center" valign="middle" rowspan="1" colspan="1">1.4</td><td align="center" valign="middle" rowspan="1" colspan="1">0.438</td><td align="center" valign="middle" rowspan="1" colspan="1">1.24</td><td align="center" valign="middle" rowspan="1" colspan="1">11.58</td><td align="center" valign="middle" rowspan="1" colspan="1">26.54</td></tr></tbody></table></table-wrap></sec></sec><sec sec-type="discussion"><title>Discussion</title><p>The muscular creatine and phosphocreatine are changed into creatinine nonenzymatically at a constant rate which disperses out the cell and is excreted into urine by kidney. Increasing the serum concentration and decreasing the renal clearance of creatinine are indicative of the progression of renal disease <sup><xref rid="B34" ref-type="bibr">34</xref></sup> and measuring creatinine concentration is much important in diagnosis of muscle, kidney and thyroid gland health and function. Several methods for the determination of creatinine in biological fluids have been described <sup><xref rid="B10" ref-type="bibr">10</xref></sup>. Kepller <italic>et al</italic> compared a colorimetric picric acid, an enzymatic and a High Performance Liquid Chromatography (HPLC) method to assess their appropriateness for routine measurement of creatinine. The colorimetric jaffe method showed interferences with some substances in biological fluids. But comparison between HPLC and the enzymatic measurement gave a good agreement <sup><xref rid="B35" ref-type="bibr">35</xref></sup>. In another study, it was shown that albumin, IgG and HbF interferences with jaffe reaction lead to large nonspecific variances and inaccurate GFR estimates especially in children and neonates, so enzymatic method is preferred and enzymatic method should become the method of choice for evaluating kidney function with samples from pediatric patients <sup><xref rid="B36" ref-type="bibr">36</xref></sup>. On the other hand, in diabetic patients, blood sugar and acetone make interferences <sup><xref rid="B37" ref-type="bibr">37</xref>,<xref rid="B38" ref-type="bibr">38</xref></sup>.</p><p>A large amount of creatinase enzyme is required for clinical use so in this study recombinant DNA technology was used to obtain an overproducing strain and a high creatinase production yield that high productivity and fusion tags lead to simplification of purification process and improvement of the quality of the enzyme.</p><p>Creatinase of <italic>Flavobacterium sp</italic>. (strain u-188) <sup><xref rid="B1" ref-type="bibr">1</xref></sup>, <italic>Bacillus sp</italic>. (strain B-0618) <sup><xref rid="B11" ref-type="bibr">11</xref></sup> and <italic>P. putida</italic> DSM2106 (<italic>Arthrobacter siderocapsulatus</italic>) <sup><xref rid="B23" ref-type="bibr">23</xref></sup> have been completely recognized and well characterized and have been used in commercial kits. The highest specific activity of these native creatinases was about 9 <italic>u/mg</italic> protein. Hoeffken <italic>et al</italic> reported the activity of <italic>P. putida</italic> creatinase purified by various methods of purification from 4.03 to 8.9 <italic>u/mg</italic>
+<sup><xref rid="B23" ref-type="bibr">23</xref></sup>. The specific activity of recombinant creatinase <sup><xref rid="B37" ref-type="bibr">37</xref>,<xref rid="B38" ref-type="bibr">38</xref></sup> expressed in <italic>E. coli</italic> JM109 has been 1.8 <italic>u/ml</italic>
+<sup><xref rid="B1" ref-type="bibr">1</xref></sup> and also Ming Chung Chang has reported recombinant creatinase activity at 0.04 <italic>u/ml</italic>
+<sup><xref rid="B26" ref-type="bibr">26</xref></sup> while the activity of our recombinant creatinase (<italic>P. putida</italic> PTCC1694) was about 26.54 <italic>u/mg</italic>, 3 fold more than the above mentioned creatinase. The multiple sequence alignment of <italic>P. putida</italic> ATCC-12633 and <italic>P. putida</italic> DSM1206 creatinases revealed a large degree of homology. The overall amino acid identity of these two enzymes was 85.30% (<xref ref-type="fig" rid="F5">Figure 5</xref>).</p><fig id="F5" orientation="portrait" position="float"><label>Figure 5.</label><caption><p>Alignment of <italic>P. putida ATCC12633</italic> creatinase with <italic>P. putida DSM1206</italic> creatinase.</p></caption><graphic xlink:href="AJMB-9-169-g005"/></fig><p>As mentioned, high productivity yield is so important in producing clinical enzymes. Some studies indicated recombinant creatinase expressed as inclusion bodies; to circumvent this problem, they used signal peptide and produced creatinase as secretory protein to increase protein folding and solubility but 50% of total protein remains unprocessed containing signal peptide which has no activity <sup><xref rid="B2" ref-type="bibr">2</xref></sup>. But in our recombinant expression system, the creatinase is completely soluble and 57% of total protein is the recombinant enzyme. So, in this study, <italic>P. putida</italic> ATCC-12633 was introduced as a new source of highly active creatinase for using in clinical application.</p></sec><sec sec-type="conclusion"><title>Conclusion</title><p>The <italic>P. putida ATCC12633</italic> recombinant creatinase was expressed efficiently in <italic>E. coli BL21</italic> and 57% of total protein was the recombinant creatinase. On the other hand, the expressed creatinase has high solubility and also the enzyme has good activity compared to enzymes used in commercial kits, so a new source of creatinase for creatinine assay kit was produced.</p></sec></body><back><ack><p>We thank Persian Type Culture Collection (PTCC) in Iranian Research Organization for Science and Technology (IROST) for supplying <italic>P. putida</italic> ATCC12633 (or PTCC1694).</p></ack><ref-list><title>References</title><ref id="B1"><label>1.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Koyama</surname><given-names>Y</given-names></name><name><surname>Kitao</surname><given-names>S</given-names></name><name><surname>Yamamoto-Otake</surname><given-names>H</given-names></name><name><surname>Suzuki</surname><given-names>M</given-names></name><name><surname>Nakano</surname><given-names>E</given-names></name></person-group>
+<article-title>Cloning and expression of the creatinase gene from Flavobacterium sp. U-188 in Escherichia coli</article-title>. 
+<source>Agric Biol Chem</source>
+<year>1990</year>;
+<volume>54</volume>
+(<issue>6</issue>):
+<fpage>1453</fpage>&#x02013;
+<lpage>1457</lpage>.
+<pub-id pub-id-type="pmid">1368564</pub-id></mixed-citation></ref><ref id="B2"><label>2.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Hong</surname><given-names>MC</given-names></name><name><surname>Chang</surname><given-names>JC</given-names></name><name><surname>Wu</surname><given-names>ML</given-names></name><name><surname>Chang</surname><given-names>MC</given-names></name></person-group>
+<article-title>Expression and export of Pseudomonas putida NTU-8 creatinase by Escherichia coli using the chitinase signal sequence of Aeromonas hydrophila</article-title>. 
+<source>Biochem Genet</source>
+<year>1998</year>;
+<volume>36</volume>
+(<issue>11&#x02013;12</issue>): 
+<fpage>407</fpage>&#x02013;
+<lpage>415</lpage>.
+<pub-id pub-id-type="pmid">10230521</pub-id></mixed-citation></ref><ref id="B3"><label>3.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Padmanabhan</surname><given-names>B</given-names></name><name><surname>Paehler</surname><given-names>A</given-names></name><name><surname>Horikoshi</surname><given-names>M</given-names></name></person-group>
+<article-title>Structure of creatine amidinohydrolase from Actinobacillus</article-title>. 
+<source>Acta Crystallogr D Biol Crystallogr</source>
+<year>2002</year>;
+<volume>58</volume>
+(<issue>Pt 8</issue>):
+<fpage>1322</fpage>&#x02013;
+<lpage>1328</lpage>.
+<pub-id pub-id-type="pmid">12136144</pub-id></mixed-citation></ref><ref id="B4"><label>4.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Fehr</surname><given-names>J</given-names></name><name><surname>Knob</surname><given-names>M</given-names></name></person-group>
+<article-title>Comparison of red cell creatine level and reticulocyte count in appraising the severity of hemolytic processes</article-title>. 
+<source>Blood</source>
+<year>1979</year>;
+<volume>53</volume>
+(<issue>5</issue>):
+<fpage>966</fpage>&#x02013;
+<lpage>976</lpage>.
+<pub-id pub-id-type="pmid">435648</pub-id></mixed-citation></ref><ref id="B5"><label>5.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Griffiths</surname><given-names>WJ</given-names></name><name><surname>Fitzpatrick</surname><given-names>M</given-names></name></person-group>
+<article-title>The effect of age on the creatine in red cells</article-title>. 
+<source>Br J Haematol</source>
+<year>1967</year>;
+<volume>13</volume>
+(<issue>2</issue>):
+<fpage>175</fpage>&#x02013;
+<lpage>180</lpage>.
+<pub-id pub-id-type="pmid">6019027</pub-id></mixed-citation></ref><ref id="B6"><label>6.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Syllm-Rapoport</surname><given-names>I</given-names></name><name><surname>Daniel</surname><given-names>A</given-names></name><name><surname>Rapoport</surname><given-names>S</given-names></name></person-group>
+<article-title>Creatine transport into red blood cells</article-title>. 
+<source>Acta Biol Med Ger</source>
+<year>1980</year>;
+<volume>39</volume>
+(<issue>7</issue>): 
+<fpage>771</fpage>&#x02013;
+<lpage>779</lpage>.
+<pub-id pub-id-type="pmid">7211065</pub-id></mixed-citation></ref><ref id="B7"><label>7.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Syllm-Rapoport</surname><given-names>I</given-names></name><name><surname>Daniel</surname><given-names>A</given-names></name><name><surname>Starck</surname><given-names>H</given-names></name><name><surname>G&#x000f6;tze</surname><given-names>W</given-names></name><name><surname>Hartwig</surname><given-names>A</given-names></name><name><surname>Gross</surname><given-names>J</given-names></name><etal/></person-group>
+<article-title>Creatine in red cells: transport and erythropoietic dynamics</article-title>. 
+<source>Acta Biol Med Ger</source>
+<year>1981</year>;
+<volume>40</volume>
+(<issue>4&#x02013;5</issue>):
+<fpage>653</fpage>&#x02013;
+<lpage>659</lpage>.
+<pub-id pub-id-type="pmid">7315111</pub-id></mixed-citation></ref><ref id="B8"><label>8.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>M&#x00103;d&#x00103;ra&#x0015f;</surname><given-names>MB</given-names></name><name><surname>Buck</surname><given-names>RP</given-names></name></person-group>
+<article-title>Miniaturized biosensors employing electropolymerized permselective films and their use for creatinine assays in human serum</article-title>. 
+<source>Anal Chem</source>
+<year>1996</year>; 
+<volume>68</volume>
+(<issue>21</issue>):
+<fpage>3832</fpage>&#x02013;
+<lpage>3839</lpage>.
+<pub-id pub-id-type="pmid">8914485</pub-id></mixed-citation></ref><ref id="B9"><label>9.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Wang</surname><given-names>Y</given-names></name><name><surname>Ma</surname><given-names>X</given-names></name><name><surname>Zhao</surname><given-names>W</given-names></name><name><surname>Jia</surname><given-names>X</given-names></name><name><surname>Kai</surname><given-names>L</given-names></name><name><surname>Xu</surname><given-names>X</given-names></name></person-group>
+<article-title>Study on the creatinase from Paracoccus sp. strain WB1</article-title>. 
+<source>Process Biochem</source>
+<year>2006</year>;
+<volume>41</volume>
+(<issue>9</issue>):
+<fpage>2072</fpage>&#x02013;
+<lpage>2077</lpage>.
+</mixed-citation></ref><ref id="B10"><label>10.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Cramer</surname><given-names>H</given-names></name><name><surname>Dauwalder</surname><given-names>H</given-names></name><name><surname>Meier</surname><given-names>H</given-names></name><name><surname>Colombo</surname><given-names>JP</given-names></name></person-group>
+<article-title>Enzymatic determination of red cell creatine as an index of hemolysis</article-title>. 
+<source>Clin Biochem</source>
+<year>1987</year>;
+<volume>20</volume>
+(<issue>5</issue>):
+<fpage>329</fpage>&#x02013;
+<lpage>332</lpage>.
+<pub-id pub-id-type="pmid">3690832</pub-id></mixed-citation></ref><ref id="B11"><label>11.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Smith</surname><given-names>BJ</given-names></name><name><surname>Mohler</surname><given-names>DN</given-names></name><name><surname>Wills</surname><given-names>MR</given-names></name><name><surname>Savory</surname><given-names>J</given-names></name></person-group>
+<article-title>Erythrocyte creatine levels in anemia</article-title>. 
+<source>Ann Clin Lab Sci</source>
+<year>1982</year>;
+<volume>12</volume>
+(<issue>6</issue>): 
+<fpage>439</fpage>&#x02013;
+<lpage>446</lpage>.
+<pub-id pub-id-type="pmid">7181438</pub-id></mixed-citation></ref><ref id="B12"><label>12.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Schulze</surname><given-names>A</given-names></name></person-group>
+<article-title>Creatine deficiency syndromes</article-title>. 
+<source>Mol Cell Biochem</source>
+<year>2003</year>;
+<volume>244</volume>
+(<issue>1&#x02013;2</issue>):
+<fpage>143</fpage>&#x02013;
+<lpage>150</lpage>.
+<pub-id pub-id-type="pmid">12701824</pub-id></mixed-citation></ref><ref id="B13"><label>13.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Narayanan</surname><given-names>S</given-names></name><name><surname>Appleton</surname><given-names>HD</given-names></name></person-group>
+<article-title>Creatinine: a review</article-title>. 
+<source>Clin Chem</source>
+<year>1980</year>;
+<volume>26</volume>
+(<issue>8</issue>):
+<fpage>1119</fpage>&#x02013;
+<lpage>1126</lpage>.
+<pub-id pub-id-type="pmid">6156031</pub-id></mixed-citation></ref><ref id="B14"><label>14.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Bloch</surname><given-names>K</given-names></name><name><surname>Schoenheimer</surname><given-names>R</given-names></name></person-group>
+<article-title>Studies in protein metabolism XI. The metabolic relation of creatine and creatinine studied with isotopic nitrogen</article-title>. 
+<source>J Biol Chem</source>
+<year>1939</year>;
+<volume>131</volume>
+(<issue>1</issue>): 
+<fpage>111</fpage>&#x02013;
+<lpage>119</lpage>.
+</mixed-citation></ref><ref id="B15"><label>15.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Crim</surname><given-names>MC</given-names></name><name><surname>Calloway</surname><given-names>DH</given-names></name><name><surname>Margen</surname><given-names>S</given-names></name></person-group>
+<article-title>Creatine metabolism in men: creatine pool size and turnover in relation to creatine intake</article-title>. 
+<source>J Nutr</source>
+<year>1976</year>;
+<volume>106</volume>:
+<fpage>371</fpage>&#x02013;
+<lpage>381</lpage>.
+</mixed-citation></ref><ref id="B16"><label>16.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Fitch</surname><given-names>CD</given-names></name><name><surname>Sinton</surname><given-names>DW</given-names></name></person-group>
+<article-title>A study of creatine metabolism in diseases causing muscle wasting</article-title>. 
+<source>J Clin Invest</source>
+<year>1964</year>;
+<volume>43</volume>: 
+<fpage>444</fpage>&#x02013;
+<lpage>452</lpage>.
+<pub-id pub-id-type="pmid">14135495</pub-id></mixed-citation></ref><ref id="B17"><label>17.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Akamatsu</surname><given-names>S</given-names></name><name><surname>Kanai</surname><given-names>Y</given-names></name></person-group>
+<article-title>Bacterial decomposition of creatinine; I. Creatinomutase</article-title>. 
+<source>Enzymologia</source>
+<year>1951</year>;
+<volume>15</volume>
+(<issue>3</issue>):
+<fpage>122</fpage>&#x02013;
+<lpage>125</lpage>.
+<pub-id pub-id-type="pmid">14936963</pub-id></mixed-citation></ref><ref id="B18"><label>18.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Appleyard</surname><given-names>G</given-names></name><name><surname>Woods</surname><given-names>DD</given-names></name></person-group>
+<article-title>The pathway of creatine catabolism by Pseudomonas ovalis</article-title>. 
+<source>J Gen Microbiol</source>
+<year>1956</year>; 
+<volume>14</volume>
+(<issue>2</issue>):
+<fpage>351</fpage>&#x02013;
+<lpage>365</lpage>.
+<pub-id pub-id-type="pmid">13319640</pub-id></mixed-citation></ref><ref id="B19"><label>19.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kaplan</surname><given-names>A</given-names></name><name><surname>Naugler</surname><given-names>D</given-names></name></person-group>
+<article-title>Creatinine hydrolase and creatine amidinohydrolase: I. Presence in cell-free extracts of arthrobacter ureafaciens</article-title>. 
+<source>Mol Cell Biochem</source>
+<year>1974</year>;
+<volume>3</volume>
+(<issue>1</issue>):
+<fpage>9</fpage>&#x02013;
+<lpage>15</lpage>.
+<pub-id pub-id-type="pmid">4826702</pub-id></mixed-citation></ref><ref id="B20"><label>20.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Roche</surname><given-names>J</given-names></name><name><surname>Lacombe</surname><given-names>G</given-names></name><name><surname>Girard</surname><given-names>H</given-names></name></person-group>
+<article-title>[On the specificity of certain bacterial deguanidases generating urea and on arginindihydrolase]</article-title>. 
+<source>Biochim Biophys Acta</source>
+<year>1950</year>;
+<volume>6</volume>
+(<issue>1</issue>): 
+<fpage>210</fpage>&#x02013;
+<lpage>216</lpage>. Undetermined Language.
+<pub-id pub-id-type="pmid">14791411</pub-id></mixed-citation></ref><ref id="B21"><label>21.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Shimizu</surname><given-names>S</given-names></name><name><surname>Kim</surname><given-names>JM</given-names></name><name><surname>Shinmen</surname><given-names>Y</given-names></name><name><surname>Yamada</surname><given-names>H</given-names></name></person-group>
+<article-title>Evaluation of two alternative metabolic pathways for creatinine degradation in microorganisms</article-title>. 
+<source>Arch Microbiol</source>
+<year>1986</year>;
+<volume>145</volume> 
+(<issue>4</issue>):
+<fpage>322</fpage>&#x02013;
+<lpage>328</lpage>.
+</mixed-citation></ref><ref id="B22"><label>22.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Tsuru</surname><given-names>D</given-names></name><name><surname>Oka</surname><given-names>I</given-names></name><name><surname>Yoshimoto</surname><given-names>T</given-names></name></person-group>
+<article-title>Creatinine decomposing enzymes in Pseudomonas putida</article-title>. 
+<source>Agric Biol Chem</source>
+<year>1976</year>;
+<volume>40</volume>
+(<issue>5</issue>):
+<fpage>1011</fpage>&#x02013;
+<lpage>1018</lpage>.
+</mixed-citation></ref><ref id="B23"><label>23.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Hoeffken</surname><given-names>HW</given-names></name><name><surname>Knof</surname><given-names>SH</given-names></name><name><surname>Bartlett</surname><given-names>PA</given-names></name><name><surname>Huber</surname><given-names>R</given-names></name><name><surname>Moellering</surname><given-names>H</given-names></name><name><surname>Schumacher</surname><given-names>G</given-names></name></person-group>
+<article-title>Crystal structure determination, refinement and molecular model of creatine amidino-hydrolase from Pseudomonas putida</article-title>. 
+<source>J Mol Biol</source>
+<year>1988</year>; 
+<volume>204</volume>
+(<issue>2</issue>):
+<fpage>417</fpage>&#x02013;
+<lpage>433</lpage>.
+<pub-id pub-id-type="pmid">3221393</pub-id></mixed-citation></ref><ref id="B24"><label>24.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Yoshimoto</surname><given-names>T</given-names></name><name><surname>Oka</surname><given-names>I</given-names></name><name><surname>Tsuru</surname><given-names>D</given-names></name></person-group>
+<article-title>Creatine amidinohydrolase of Pseudomonas putida: crystallization and some properties</article-title>. 
+<source>Arch Biochem Biophys</source>
+<year>1976</year>;
+<volume>177</volume>
+(<issue>2</issue>):
+<fpage>508</fpage>&#x02013;
+<lpage>515</lpage>.
+<pub-id pub-id-type="pmid">1015832</pub-id></mixed-citation></ref><ref id="B25"><label>25.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Suzuki</surname><given-names>K</given-names></name><name><surname>Sagai</surname><given-names>H</given-names></name><name><surname>Sugiyama</surname><given-names>M</given-names></name><name><surname>Imamura</surname><given-names>S</given-names></name></person-group>
+<article-title>Molecular cloning and high expression of the Bacillus creatinase gene in Escherichia coli</article-title>. 
+<source>J Ferment Bioeng</source>
+<year>1993</year>;
+<volume>76</volume>
+(<issue>2</issue>): 
+<fpage>77</fpage>&#x02013;
+<lpage>81</lpage>.
+</mixed-citation></ref><ref id="B26"><label>26.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Chang</surname><given-names>MC</given-names></name><name><surname>Chang</surname><given-names>CC</given-names></name><name><surname>Chang</surname><given-names>JC</given-names></name></person-group>
+<article-title>Cloning of a creatinase gene from Pseudomonas putida in Escherichia coli by using an indicator plate</article-title>. 
+<source>Appl Environ Microbiol</source>
+<year>1992</year>;
+<volume>58</volume>
+(<issue>10</issue>):
+<fpage>3437</fpage>&#x02013;
+<lpage>3440</lpage>.
+<pub-id pub-id-type="pmid">1444379</pub-id></mixed-citation></ref><ref id="B27"><label>27.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Hermann</surname><given-names>M</given-names></name><name><surname>Knerr</surname><given-names>HJ</given-names></name><name><surname>Mai</surname><given-names>N</given-names></name><name><surname>Gross</surname><given-names>A</given-names></name><name><surname>Kaltwasser</surname><given-names>H</given-names></name></person-group>
+<article-title>Creatinine and N-methylhydantoin degradation in two newly isolated Clostridium species</article-title>. 
+<source>Arch Microbiol</source>
+<year>1992</year>;
+<volume>157</volume>
+(<issue>5</issue>):
+<fpage>395</fpage>&#x02013;
+<lpage>401</lpage>.
+<pub-id pub-id-type="pmid">1510564</pub-id></mixed-citation></ref><ref id="B28"><label>28.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Nishiya</surname><given-names>Y</given-names></name><name><surname>Toda</surname><given-names>A</given-names></name><name><surname>Imanaka</surname><given-names>T</given-names></name></person-group>
+<article-title>Gene cluster for creatinine degradation in Arthrobacter sp. TE1826</article-title>. 
+<source>Mole Gen Genet MGG</source>
+<year>1998</year>;
+<volume>257</volume>
+(<issue>5</issue>):
+<fpage>581</fpage>&#x02013;
+<lpage>586</lpage>.
+</mixed-citation></ref><ref id="B29"><label>29.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Ohji</surname><given-names>S</given-names></name><name><surname>Yamazoe</surname><given-names>A</given-names></name><name><surname>Hosoyama</surname><given-names>A</given-names></name><name><surname>Tsuchikane</surname><given-names>K</given-names></name><name><surname>Ezaki</surname><given-names>T</given-names></name><name><surname>Fujita</surname><given-names>N</given-names></name></person-group>
+<article-title>The complete genome sequence of Pseudomonas putida NBRC 14164T confirms high intraspecies variation</article-title>. 
+<source>Genome Announc</source>
+<year>
+2014
+</year>
+;
+<volume>
+2
+</volume>
+(
+<issue>
+1
+</issue>
+). pii: e00029&#x02013;14.
+</mixed-citation></ref><ref id="B30"><label>30.</label><mixed-citation publication-type="book">
+<person-group person-group-type="author"><name><surname>Sambrook</surname><given-names>J</given-names></name><name><surname>Fritsch</surname><given-names>EF</given-names></name><name><surname>Maniatis</surname><given-names>T</given-names></name></person-group>
+<source>
+Molecular cloning: a laboratory manual
+</source>
+. 
+<edition>
+2nd ed
+</edition>
+. 
+<publisher-loc>
+New York
+</publisher-loc>
+: 
+<publisher-name>
+Cold Spring Harbor Laboratory Press
+</publisher-name>
+; 
+<year>
+1989
+</year>
+. 
+<fpage>
+1546
+</fpage>
+p.
+</mixed-citation></ref><ref id="B31"><label>31.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Zhang</surname><given-names>Z</given-names></name><name><surname>Moo-Young</surname><given-names>M</given-names></name><name><surname>Chisti</surname><given-names>Y</given-names></name></person-group>
+<article-title>Plasmid stability in recombinant Saccharomyces cerevisiae</article-title>. 
+<source>Biotech Adv</source>
+<year>1996</year>;
+<volume>14</volume>
+(<issue>4</issue>):
+<fpage>401</fpage>&#x02013;
+<lpage>435</lpage>.
+</mixed-citation></ref><ref id="B32"><label>32.</label><mixed-citation publication-type="book">
+<person-group person-group-type="author"><name><surname>Walker</surname><given-names>JM</given-names></name></person-group>
+<source>
+The protein protocols handbook
+</source>
+. 
+<edition>
+3rd ed
+</edition>
+. 
+<publisher-loc>
+US
+</publisher-loc>
+: 
+<publisher-name>
+Humana Press
+</publisher-name>
+; 
+<year>
+2009
+</year>
+. The Bradford method for protein quantitation; p. 
+<fpage>
+17
+</fpage>
+&#x02013;
+<lpage>
+24
+</lpage>
+.
+</mixed-citation></ref><ref id="B33"><label>33.</label><mixed-citation publication-type="book">
+<person-group person-group-type="author"><name><surname>Dawson</surname><given-names>RMC</given-names></name><name><surname>Elliott</surname><given-names>DC</given-names></name><name><surname>Elliott</surname><given-names>WH</given-names></name><name><surname>Jones</surname><given-names>KM</given-names></name></person-group>
+<source>
+Data for biochemical research
+</source>
+. 
+<edition>
+3rd ed
+</edition>
+. 
+<publisher-loc>
+US
+</publisher-loc>
+: 
+<publisher-name>
+Oxford University Press
+</publisher-name>
+; 
+<year>
+1986
+</year>
+. 
+<fpage>
+592
+</fpage>
+p.
+</mixed-citation></ref><ref id="B34"><label>34.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Wyss</surname><given-names>M</given-names></name><name><surname>Kaddurah-Daouk</surname><given-names>R</given-names></name></person-group>
+<article-title>Creatine and creatinine metabolism</article-title>. 
+<source>Physiol Rev</source>
+<year>2000</year>;
+<volume>80</volume>
+(<issue>3</issue>):
+<fpage>1107</fpage>&#x02013;
+<lpage>1213</lpage>.
+<pub-id pub-id-type="pmid">10893433</pub-id></mixed-citation></ref><ref id="B35"><label>35.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Keppler</surname><given-names>A</given-names></name><name><surname>Gretz</surname><given-names>N</given-names></name><name><surname>Schmidt</surname><given-names>R</given-names></name><name><surname>Kloetzer</surname><given-names>HM</given-names></name><name><surname>Groene</surname><given-names>HJ</given-names></name><name><surname>Lelongt</surname><given-names>B</given-names></name><etal/></person-group>
+<article-title>Plasma creatinine determination in mice and rats: an enzymatic method compares favorably with a high-performance liquid chromatography assay</article-title>. 
+<source>Kidney Int</source>
+<year>2007</year>;
+<volume>71</volume>
+(<issue>1</issue>):
+<fpage>74</fpage>&#x02013;
+<lpage>78</lpage>.
+<pub-id pub-id-type="pmid">17082757</pub-id></mixed-citation></ref><ref id="B36"><label>36.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Cobbaert</surname><given-names>CM</given-names></name><name><surname>Baadenhuijsen</surname><given-names>H</given-names></name><name><surname>Weykamp</surname><given-names>CW</given-names></name></person-group>
+<article-title>Prime time for enzymatic creatinine methods in pediatrics</article-title>. 
+<source>Clin Chem</source>
+<year>2009</year>;
+<volume>55</volume>
+(<issue>3</issue>):
+<fpage>549</fpage>&#x02013;
+<lpage>558</lpage>.
+<pub-id pub-id-type="pmid">19168555</pub-id></mixed-citation></ref><ref id="B37"><label>37.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Haugen</surname><given-names>H</given-names></name></person-group>
+<article-title>Glucose and acetone as sources of error in plasma creatinine determinations</article-title>. 
+<source>Scand J Clin Lab Invest</source>
+<year>1954</year>;
+<volume>6</volume>
+(<issue>1</issue>):
+<fpage>17</fpage>&#x02013;
+<lpage>21</lpage>.
+<pub-id pub-id-type="pmid">13186778</pub-id></mixed-citation></ref><ref id="B38"><label>38.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Hunter</surname><given-names>A</given-names></name><name><surname>Campbell</surname><given-names>WR</given-names></name></person-group>
+<article-title>The probable accuracy, in whole blood and plasma, of colorimetric determinations of creatinine and creatine</article-title>. 
+<source>J Biol Chem</source>
+<year>1917</year>;
+<volume>32</volume>
+(<issue>2</issue>):
+<fpage>195</fpage>&#x02013;
+<lpage>231</lpage>.
+</mixed-citation></ref></ref-list></back></article>

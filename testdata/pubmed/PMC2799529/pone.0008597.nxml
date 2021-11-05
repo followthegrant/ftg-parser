@@ -1,0 +1,1075 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.0 20120330//EN" "JATS-archivearticle1.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article"><?properties open_access?><front><journal-meta><journal-id journal-id-type="nlm-ta">PLoS One</journal-id><journal-id journal-id-type="iso-abbrev">PLoS ONE</journal-id><journal-id journal-id-type="publisher-id">plos</journal-id><journal-id journal-id-type="pmc">plosone</journal-id><journal-title-group><journal-title>PLoS ONE</journal-title></journal-title-group><issn pub-type="epub">1932-6203</issn><publisher><publisher-name>Public Library of Science</publisher-name><publisher-loc>San Francisco, USA</publisher-loc></publisher></journal-meta><article-meta><article-id pub-id-type="pmid">20087411</article-id><article-id pub-id-type="pmc">2799529</article-id><article-id pub-id-type="publisher-id">09-PONE-RA-09132R1</article-id><article-id pub-id-type="doi">10.1371/journal.pone.0008597</article-id><article-categories><subj-group subj-group-type="heading"><subject>Research Article</subject></subj-group><subj-group subj-group-type="Discipline"><subject>Evolutionary Biology</subject><subject>Genetics and Genomics</subject><subject>Evolutionary Biology/Animal Genetics</subject><subject>Evolutionary Biology/Genomics</subject><subject>Genetics and Genomics/Animal Genetics</subject><subject>Genetics and Genomics/Comparative Genomics</subject><subject>Genetics and Genomics/Genomics</subject></subj-group></article-categories><title-group><article-title>Recombination and Its Impact on the Genome of the Haplodiploid Parasitoid Wasp <italic>Nasonia</italic>
+</article-title><alt-title alt-title-type="running-head">Recombination in <italic>Nasonia</italic></alt-title></title-group><contrib-group><contrib contrib-type="author"><name><surname>Niehuis</surname><given-names>Oliver</given-names></name><xref ref-type="aff" rid="aff1">
+<sup>1</sup>
+</xref><xref ref-type="corresp" rid="cor1">
+<sup>&#x0002a;</sup>
+</xref></contrib><contrib contrib-type="author"><name><surname>Gibson</surname><given-names>Joshua D.</given-names></name><xref ref-type="aff" rid="aff1">
+<sup>1</sup>
+</xref></contrib><contrib contrib-type="author"><name><surname>Rosenberg</surname><given-names>Michael S.</given-names></name><xref ref-type="aff" rid="aff1">
+<sup>1</sup>
+</xref><xref ref-type="aff" rid="aff2">
+<sup>2</sup>
+</xref></contrib><contrib contrib-type="author"><name><surname>Pannebakker</surname><given-names>Bart A.</given-names></name><xref ref-type="aff" rid="aff3">
+<sup>3</sup>
+</xref><xref ref-type="aff" rid="aff4">
+<sup>4</sup>
+</xref></contrib><contrib contrib-type="author"><name><surname>Koevoets</surname><given-names>Tosca</given-names></name><xref ref-type="aff" rid="aff4">
+<sup>4</sup>
+</xref></contrib><contrib contrib-type="author"><name><surname>Judson</surname><given-names>Andrea K.</given-names></name><xref ref-type="aff" rid="aff1">
+<sup>1</sup>
+</xref></contrib><contrib contrib-type="author"><name><surname>Desjardins</surname><given-names>Christopher A.</given-names></name><xref ref-type="aff" rid="aff5">
+<sup>5</sup>
+</xref></contrib><contrib contrib-type="author"><name><surname>Kennedy</surname><given-names>Kathleen</given-names></name><xref ref-type="aff" rid="aff6">
+<sup>6</sup>
+</xref></contrib><contrib contrib-type="author"><name><surname>Duggan</surname><given-names>David</given-names></name><xref ref-type="aff" rid="aff6">
+<sup>6</sup>
+</xref></contrib><contrib contrib-type="author"><name><surname>Beukeboom</surname><given-names>Leo W.</given-names></name><xref ref-type="aff" rid="aff4">
+<sup>4</sup>
+</xref></contrib><contrib contrib-type="author"><name><surname>van de Zande</surname><given-names>Louis</given-names></name><xref ref-type="aff" rid="aff4">
+<sup>4</sup>
+</xref></contrib><contrib contrib-type="author"><name><surname>Shuker</surname><given-names>David M.</given-names></name><xref ref-type="aff" rid="aff3">
+<sup>3</sup>
+</xref><xref ref-type="aff" rid="aff7">
+<sup>7</sup>
+</xref></contrib><contrib contrib-type="author"><name><surname>Werren</surname><given-names>John H.</given-names></name><xref ref-type="aff" rid="aff5">
+<sup>5</sup>
+</xref></contrib><contrib contrib-type="author"><name><surname>Gadau</surname><given-names>J&#x000fc;rgen</given-names></name><xref ref-type="aff" rid="aff1">
+<sup>1</sup>
+</xref></contrib></contrib-group><aff id="aff1">
+<label>1</label>
+<addr-line>School of Life Sciences, Arizona State University, Tempe, Arizona, United States of America</addr-line>
+</aff><aff id="aff2">
+<label>2</label>
+<addr-line>Center for Evolutionary Functional Genomics, The Biodesign Institute, Arizona State University, Tempe, Arizona, United States of America</addr-line>
+</aff><aff id="aff3">
+<label>3</label>
+<addr-line>Institute of Evolutionary Biology, University of Edinburgh, Edinburgh, United Kingdom</addr-line>
+</aff><aff id="aff4">
+<label>4</label>
+<addr-line>Centre for Ecological and Evolutionary Studies, Evolutionary Genetics, University of Groningen, Haren, AA, The Netherlands</addr-line>
+</aff><aff id="aff5">
+<label>5</label>
+<addr-line>Department of Biology, University of Rochester, Rochester, New York, United States of America</addr-line>
+</aff><aff id="aff6">
+<label>6</label>
+<addr-line>Translational Genomics Research Institute, Phoenix, Arizona, United States of America</addr-line>
+</aff><aff id="aff7">
+<label>7</label>
+<addr-line>School of Biology, University of St Andrews, St Andrews, United Kingdom</addr-line>
+</aff><contrib-group><contrib contrib-type="editor"><name><surname>Buckley</surname><given-names>Thomas</given-names></name><role>Editor</role><xref ref-type="aff" rid="edit1"/></contrib></contrib-group><aff id="edit1">Landcare Research, New Zealand</aff><author-notes><corresp id="cor1">&#x0002a; E-mail: <email>oliver.niehuis@gmail.com</email></corresp><fn fn-type="con"><p>Conceived and designed the experiments: ON JDG LWB JHW JG. Performed the experiments: ON JDG BAP TK AKJ. Analyzed the data: ON JDG MSR. Contributed reagents/materials/analysis tools: ON JDG CAD KK DJD LWB LvdZ DS JHW JG. Wrote the paper: ON JDG JHW JG.</p></fn></author-notes><pub-date pub-type="collection"><year>2010</year></pub-date><pub-date pub-type="epub"><day>19</day><month>1</month><year>2010</year></pub-date><volume>5</volume><issue>1</issue><elocation-id>e8597</elocation-id><history><date date-type="received"><day>9</day><month>3</month><year>2009</year></date><date date-type="accepted"><day>14</day><month>6</month><year>2009</year></date></history><permissions><copyright-statement>Niehuis et al.</copyright-statement><copyright-year>2010</copyright-year><license xlink:href="http://creativecommons.org/licenses/by/4.0/"><license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are properly credited.</license-p></license></permissions><abstract><p>Homologous meiotic recombination occurs in most sexually reproducing organisms, yet its evolutionary advantages are elusive. Previous research explored recombination in the honeybee, a eusocial hymenopteran with an exceptionally high genome-wide recombination rate. A comparable study in a non-social member of the Hymenoptera that would disentangle the impact of sociality from Hymenoptera-specific features such as haplodiploidy on the evolution of the high genome-wide recombination rate in social Hymenoptera is missing. Utilizing single-nucleotide polymorphisms (SNPs) between two <italic>Nasonia</italic> parasitoid wasp genomes, we developed a SNP genotyping microarray to infer a high-density linkage map for <italic>Nasonia</italic>. The map comprises 1,255 markers with an average distance of 0.3 cM. The mapped markers enabled us to arrange 265 scaffolds of the <italic>Nasonia</italic> genome assembly 1.0 on the linkage map, representing 63.6&#x00025; of the assembled <italic>N. vitripennis</italic> genome. We estimated a genome-wide recombination rate of 1.4&#x02013;1.5 cM/Mb for <italic>Nasonia</italic>, which is less than one tenth of the rate reported for the honeybee. The local recombination rate in <italic>Nasonia</italic> is positively correlated with the distance to the center of the linkage groups, GC content, and the proportion of simple repeats. In contrast to the honeybee genome, gene density in the parasitoid wasp genome is positively associated with the recombination rate; regions of low recombination are characterized by fewer genes with larger introns and by a greater distance between genes. Finally, we found that genes in regions of the genome with a low recombination frequency tend to have a higher ratio of non-synonymous to synonymous substitutions, likely due to the accumulation of slightly deleterious non-synonymous substitutions. These findings are consistent with the hypothesis that recombination reduces interference between linked sites and thereby facilitates adaptive evolution and the purging of deleterious mutations. Our results imply that the genomes of haplodiploid and of diploid higher eukaryotes do not differ systematically in their recombination rates and associated parameters.</p></abstract><counts><page-count count="13"/></counts></article-meta></front><body><sec id="s1"><title>Introduction</title><p>Homologous meiotic recombination in eukaryotes is a process by which genetic material is exchanged between homologous chromosomes <xref rid="pone.0008597-Kleckner1" ref-type="bibr">[1]</xref>&#x02013;<xref rid="pone.0008597-Smith1" ref-type="bibr">[3]</xref>. It occurs in almost all sexually reproducing organisms and results in the reshuffling of the genetic material of corresponding pairs of parental chromosomes <xref rid="pone.0008597-Michod1" ref-type="bibr">[4]</xref>. As a consequence, the offspring of sexually reproducing organisms carry genotype combinations that are not found in either of their parents <xref rid="pone.0008597-Kleckner1" ref-type="bibr">[1]</xref>&#x02013;<xref rid="pone.0008597-Smith1" ref-type="bibr">[3]</xref>. The evolutionary advantages of homologous meiotic recombination and recombination in general are not immediately apparent. In fact, recombination seemingly contradicts the expectations of Darwinian natural selection, since genotype combinations that have been proven successful in the current environment by natural selection are actively broken up <xref rid="pone.0008597-Otto1" ref-type="bibr">[5]</xref>. This is one of the aspects of the &#x0201c;paradox of sex&#x0201d;.</p><p>Evolutionary biologists have put forward various hypotheses to explain the evolutionary advantages of recombination <xref rid="pone.0008597-Michod1" ref-type="bibr">[4]</xref>&#x02013;<xref rid="pone.0008597-Kondrashov1" ref-type="bibr">[6]</xref>. One of them states that homologous meiotic recombination increases the efficiency of natural selection by alleviating interference between linked sites, thereby facilitating adaptive evolution and the purging of deleterious mutations <xref rid="pone.0008597-Hill1" ref-type="bibr">[7]</xref>&#x02013;<xref rid="pone.0008597-Otto2" ref-type="bibr">[11]</xref>. Given that most amino acid changes are slightly deleterious <xref rid="pone.0008597-Li1" ref-type="bibr">[12]</xref> and assuming that most genes in the genome are relatively conserved, one would expect that regions of the genome with a low recombination rate, when compared to those with a high rate, would show i) a higher ratio of non-synonymous (amino acid replacing) to synonymous (silent) substitutions (<italic>&#x003c9;</italic>) and ii) a higher degree of protein divergence (<italic>d</italic>
+<sub>A</sub>) due, in both cases, to the reduced effectiveness of selection against slightly deleterious mutations. In addition, differences in the recombination rate should be reflected in the structure of the genome. Functional genomic elements, for example, are expected to be found at higher density in genome regions with a high recombination rate where fewer slightly deleterious mutations accumulate than in areas of low recombination <xref rid="pone.0008597-Gaut1" ref-type="bibr">[13]</xref>. However, few studies have actually tested these predictions (e.g., <xref rid="pone.0008597-Kliman1" ref-type="bibr">[14]</xref>&#x02013;<xref rid="pone.0008597-Kulathinal1" ref-type="bibr">[20]</xref>).</p><p>Beye et al. <xref rid="pone.0008597-Beye1" ref-type="bibr">[21]</xref> analyzed chromosome, sequence, and gene parameters and their association with the recombination rate in the social honeybee, a taxon with a genome-wide recombination rate approximately ten times higher than any other higher Eukaryote studied so far <xref rid="pone.0008597-Beye1" ref-type="bibr">[21]</xref>&#x02013;<xref rid="pone.0008597-The1" ref-type="bibr">[23]</xref>. However, honeybees are both haplodiploid and eusocial, factors that could both influence genome evolution. A comparable study on the evolution of the genome-wide recombination rate in a non-social Hymenoptera species that would disentangle the impact of eusociality from Hymenoptera-specific features such as haplodiploidy is missing <xref rid="pone.0008597-Gadau1" ref-type="bibr">[24]</xref>, <xref rid="pone.0008597-Wilfert1" ref-type="bibr">[25]</xref>. With the recent sequencing of the <italic>Nasonia</italic> parasitoid wasp genomes <xref rid="pone.0008597-Werren1" ref-type="bibr">[26]</xref>, we now have the resources to study recombination in the genome of another haplodiploid hymenopteran in similar detail and to contrast the results with those from the eusocial honeybee.</p><p>In the present paper, we provide estimates of recombination rates in <italic>Nasonia</italic>, study parameters that could be correlated with the recombination rate, and assess the impact of recombination on the efficiency of natural selection. First, we infer a high-density linkage map for <italic>Nasonia</italic> by analyzing SNP microarray genotype data of recombinant F<sub>2</sub> hybrids of <italic>N. vitripennis</italic> and <italic>N. giraulti</italic>. We use the map information to order and orient the sequence scaffolds (&#x0200a;=&#x0200a;arranged contiguous DNA sequences with interior gaps of known size) of the <italic>N. vitripennis</italic> assembly 1.0 and to estimate recombination rates along all five chromosomes of <italic>Nasonia</italic>. While these estimates are derived from recombination events in an interspecific cross, a separate study that compared intra- and interspecific recombination frequencies in 33 genomic regions distributed across the entire genome indicated that they are likely representative of the intraspecific recombination rates in all three <italic>Nasonia</italic> species (Leo Beukeboom, unpublished; data available upon request). Next, we analyze chromosome, sequence, and gene parameters in the <italic>N. vitripennis</italic> genome and study their association with the recombination rate. Finally, we examine the amino acid divergence and the ratio between synonymous and non-synonymous substitutions per site between <italic>N. vitripennis</italic> and <italic>N. giraulti</italic> or <italic>N. longicornis</italic>, respectively, to assess the impact of recombination on the efficiency of selection in the <italic>Nasonia</italic> parasitoid wasp genome.</p></sec><sec id="s2"><title>Results</title><sec id="s2a"><title>Linkage Map Reconstruction</title><p>We studied a total of 1,645 markers, of which 310 were excluded from the linkage analysis on the grounds that &#x02265;10&#x00025; of their genotypes were missing and/or one of the two parental genotypes occurred at an improbable frequency (&#x02265;70&#x00025;; <xref ref-type="supplementary-material" rid="pone.0008597.s001">Table S1</xref>). We removed an additional 77 markers during linkage map reconstruction because they disturbed marker order stability and/or showed genotype combinations that could only be explained by two unlikely simultaneous recombination events in immediate spatial proximity or by mutation (<xref ref-type="supplementary-material" rid="pone.0008597.s002">Table S2</xref>). The remaining 1,258 markers clustered into seven major groups. Chromosome anchored markers (<xref rid="pone.0008597-Rtten1" ref-type="bibr">[27]</xref>, <xref rid="pone.0008597-Pietsch1" ref-type="bibr">[28]</xref>; <xref ref-type="supplementary-material" rid="pone.0008597.s003">Table S3</xref>) revealed that five of the seven groups corresponded with the five chromosomes (Chr 1&#x02013;5) of <italic>Nasonia</italic> and that these five groups comprised 99.9&#x00025; of all analyzed markers. The remaining two groups included only one and two markers, respectively. We consequently regarded these two groups as questionable and omitted them in the subsequent analyses (<xref ref-type="supplementary-material" rid="pone.0008597.s004">Table S4</xref>).</p><p>Our final <italic>Nasonia</italic> linkage map consisted of 1,255 markers on five linkage groups corresponding to the five chromosomes of <italic>Nasonia</italic> and spanned 446.9 cM (<xref ref-type="supplementary-material" rid="pone.0008597.s005">Table S5</xref>; <xref ref-type="fig" rid="pone-0008597-g001">Fig. 1</xref>). The markers mapped in 264 marker clusters (i.e., groups of markers in which the markers of a group did not recombine; <xref ref-type="fig" rid="pone-0008597-g001">Fig. 1:</xref> 1.01&#x02013;5.51) with an average distance between the clusters of 1.7 cM (min/max: 0.9/8.8 cM). The average distance between individual markers was 0.3 cM. The average frequency of the <italic>N. vitripennis</italic> genotype for markers on the linkage map was 49.5&#x00025; (min/max: 38.8&#x00025;/61.2&#x00025;). We estimated an average number of 1.8 chiasmata per chromosome per meiosis and a total of 499 recombination events to explain the observed distribution of genotypes in the 112 studied F<sub>2</sub> hybrid males (<xref ref-type="supplementary-material" rid="pone.0008597.s006">Table S6</xref>). In 113 instances, we found two simultaneous recombination events on a chromosome, and in one instance, we counted three events. The average distance between two recombination events, when observed on a single chromosome, was 46.2 cM (min/max: 6.2/91.8 cM). The above results are summarized in <xref ref-type="table" rid="pone-0008597-t001">Table 1</xref>, which also provides chromosome specific information.</p><fig id="pone-0008597-g001" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0008597.g001</object-id><label>Figure 1</label><caption><title>High-density linkage map and estimated recombination rates of the <italic>Nasonia</italic> genome.</title><p>High-density linkage map of the <italic>Nasonia</italic> parasitoid wasp genome inferred from segregation data of 1,255 markers in a <italic>N. vitripennis</italic> (&#x02640;)&#x000d7;<italic>N. giraulti</italic> (&#x02642;) F<sub>2</sub> hybrid population of 112 male embryos. Horizontal bars (1.01&#x02013;5.51) represent clusters of markers with no recombination among them (see <xref ref-type="supplementary-material" rid="pone.0008597.s005">Table S5</xref>). The average distance between the 1,255 markers and 265 marker clusters was 0.3 cM and 1.7 cM, respectively. The heat map next to the linkage map depicts the estimated local recombination rate (cM/Mb) in the corresponding region of parasitoid wasp genome. The local recombination rate was approximated for a total of 259 overlapping windows of two consecutive marker clusters each and an average width of 3.4 cM (<xref ref-type="supplementary-material" rid="pone.0008597.s007">Table S7</xref>).</p></caption><graphic xlink:href="pone.0008597.g001"/></fig><table-wrap id="pone-0008597-t001" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0008597.t001</object-id><label>Table 1</label><caption><title>Characteristics of the mapping population, linkage map, and selected sequence and gene parameters.</title></caption><alternatives><graphic id="pone-0008597-t001-1" xlink:href="pone.0008597.t001"/><table frame="hsides" rules="groups"><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup><thead><tr><td align="left" rowspan="1" colspan="1"/><td colspan="5" align="left" rowspan="1">Chromosome</td><td align="left" rowspan="1" colspan="1">Total</td></tr><tr><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">2</td><td align="left" rowspan="1" colspan="1">3</td><td align="left" rowspan="1" colspan="1">4</td><td align="left" rowspan="1" colspan="1">5</td><td align="left" rowspan="1" colspan="1"/></tr></thead><tbody><tr><td align="left" rowspan="1" colspan="1">
+<bold>Number of analyzed male F<sub>2</sub> hybrid embryos</bold>
+</td><td align="left" rowspan="1" colspan="1">112</td><td align="left" rowspan="1" colspan="1">112</td><td align="left" rowspan="1" colspan="1">112</td><td align="left" rowspan="1" colspan="1">112</td><td align="left" rowspan="1" colspan="1">112</td><td align="left" rowspan="1" colspan="1">112</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>Observed number of recombination events</bold>
+</td><td align="left" rowspan="1" colspan="1">106</td><td align="left" rowspan="1" colspan="1">100</td><td align="left" rowspan="1" colspan="1">110</td><td align="left" rowspan="1" colspan="1">99</td><td align="left" rowspan="1" colspan="1">84</td><td align="left" rowspan="1" colspan="1">499</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>Average number of recombination events per chromosome</bold>
+</td><td align="left" rowspan="1" colspan="1">0.95</td><td align="left" rowspan="1" colspan="1">0.89</td><td align="left" rowspan="1" colspan="1">0.98</td><td align="left" rowspan="1" colspan="1">0.88</td><td align="left" rowspan="1" colspan="1">0.75</td><td align="left" rowspan="1" colspan="1">0.89</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>Observed instances of two/three recombination events per chromosome</bold>
+</td><td align="left" rowspan="1" colspan="1">27/0</td><td align="left" rowspan="1" colspan="1">18/0</td><td align="left" rowspan="1" colspan="1">28/1</td><td align="left" rowspan="1" colspan="1">21/0</td><td align="left" rowspan="1" colspan="1">19/0</td><td align="left" rowspan="1" colspan="1">113/1</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>Average distance between two recombination events (cM)</bold>
+</td><td align="left" rowspan="1" colspan="1">49.4</td><td align="left" rowspan="1" colspan="1">49.4</td><td align="left" rowspan="1" colspan="1">50.3<xref ref-type="table-fn" rid="nt102">&#x0002a;</xref>
+</td><td align="left" rowspan="1" colspan="1">39.7</td><td align="left" rowspan="1" colspan="1">39.7</td><td align="left" rowspan="1" colspan="1">46.2</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>Min/Max distance between two recombination events (cM)</bold>
+</td><td align="left" rowspan="1" colspan="1">14.1/86.3</td><td align="left" rowspan="1" colspan="1">23.5/80.9</td><td align="left" rowspan="1" colspan="1">15.5/91.8<xref ref-type="table-fn" rid="nt102">&#x0002a;</xref>
+</td><td align="left" rowspan="1" colspan="1">6.2/65.6</td><td align="left" rowspan="1" colspan="1">17.8/55.5</td><td align="left" rowspan="1" colspan="1">6.2/91.8</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>Number of mapped markers</bold>
+</td><td align="left" rowspan="1" colspan="1">372</td><td align="left" rowspan="1" colspan="1">207</td><td align="left" rowspan="1" colspan="1">188</td><td align="left" rowspan="1" colspan="1">224</td><td align="left" rowspan="1" colspan="1">264</td><td align="left" rowspan="1" colspan="1">1255</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>Average genetic distance between markers (cM)</bold>
+</td><td align="left" rowspan="1" colspan="1">0.3</td><td align="left" rowspan="1" colspan="1">0.4</td><td align="left" rowspan="1" colspan="1">0.5</td><td align="left" rowspan="1" colspan="1">0.4</td><td align="left" rowspan="1" colspan="1">0.3</td><td align="left" rowspan="1" colspan="1">0.4</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>Number of marker clusters</bold>
+</td><td align="left" rowspan="1" colspan="1">61</td><td align="left" rowspan="1" colspan="1">58</td><td align="left" rowspan="1" colspan="1">53</td><td align="left" rowspan="1" colspan="1">41</td><td align="left" rowspan="1" colspan="1">51</td><td align="left" rowspan="1" colspan="1">264</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>Average distance between marker clusters (cM)</bold>
+</td><td align="left" rowspan="1" colspan="1">1.6</td><td align="left" rowspan="1" colspan="1">1.6</td><td align="left" rowspan="1" colspan="1">1.9</td><td align="left" rowspan="1" colspan="1">2.2</td><td align="left" rowspan="1" colspan="1">1.5</td><td align="left" rowspan="1" colspan="1">1.7</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>Min/Max distance between marker clusters (cM)</bold>
+</td><td align="left" rowspan="1" colspan="1">0.9/4.8</td><td align="left" rowspan="1" colspan="1">0.9/6.7</td><td align="left" rowspan="1" colspan="1">0.9/5.7</td><td align="left" rowspan="1" colspan="1">0.9/8.7</td><td align="left" rowspan="1" colspan="1">0.9/4.7</td><td align="left" rowspan="1" colspan="1">0.9/8.8</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>Average </bold>
+<bold><italic>N. vitripennis</italic></bold>
+<bold> genotype frequency (&#x00025;)</bold>
+</td><td align="left" rowspan="1" colspan="1">49.2</td><td align="left" rowspan="1" colspan="1">52.5</td><td align="left" rowspan="1" colspan="1">47.5</td><td align="left" rowspan="1" colspan="1">55.0</td><td align="left" rowspan="1" colspan="1">44.4</td><td align="left" rowspan="1" colspan="1">49.5</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>Min/Max </bold>
+<bold><italic>N. vitripennis</italic></bold>
+<bold> genotype frequency (&#x00025;)</bold>
+</td><td align="left" rowspan="1" colspan="1">42.0/53.3</td><td align="left" rowspan="1" colspan="1">45.1/56.3</td><td align="left" rowspan="1" colspan="1">44.3/60.7</td><td align="left" rowspan="1" colspan="1">47.3/61.2</td><td align="left" rowspan="1" colspan="1">39.3/55.4</td><td align="left" rowspan="1" colspan="1">39.3/61.2</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>Genetic length (cM)</bold>
+</td><td align="left" rowspan="1" colspan="1">94.5</td><td align="left" rowspan="1" colspan="1">89.8</td><td align="left" rowspan="1" colspan="1">98.9</td><td align="left" rowspan="1" colspan="1">87.6</td><td align="left" rowspan="1" colspan="1">76.1</td><td align="left" rowspan="1" colspan="1">446.9</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>Mapped scaffolds</bold>
+</td><td align="left" rowspan="1" colspan="1">91</td><td align="left" rowspan="1" colspan="1">48</td><td align="left" rowspan="1" colspan="1">46</td><td align="left" rowspan="1" colspan="1">61</td><td align="left" rowspan="1" colspan="1">31</td><td align="left" rowspan="1" colspan="1">265</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>Mapped scaffolds (orientated)</bold>
+<xref ref-type="table-fn" rid="nt103">&#x0002a;&#x0002a;</xref>
+</td><td align="left" rowspan="1" colspan="1">11</td><td align="left" rowspan="1" colspan="1">10</td><td align="left" rowspan="1" colspan="1">9</td><td align="left" rowspan="1" colspan="1">5</td><td align="left" rowspan="1" colspan="1">7</td><td align="left" rowspan="1" colspan="1">39</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>Physical length (Mb)</bold>
+</td><td align="left" rowspan="1" colspan="1">48.3</td><td align="left" rowspan="1" colspan="1">39.5</td><td align="left" rowspan="1" colspan="1">34.0</td><td align="left" rowspan="1" colspan="1">35.8</td><td align="left" rowspan="1" colspan="1">30.0</td><td align="left" rowspan="1" colspan="1">187.6</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>GC content (&#x00025;)</bold>
+</td><td align="left" rowspan="1" colspan="1">42.2</td><td align="left" rowspan="1" colspan="1">43.6</td><td align="left" rowspan="1" colspan="1">43.2</td><td align="left" rowspan="1" colspan="1">42.8</td><td align="left" rowspan="1" colspan="1">43.4</td><td align="left" rowspan="1" colspan="1">43.0</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>Simple repeat content (nt/Kb)</bold>
+</td><td align="left" rowspan="1" colspan="1">17.0</td><td align="left" rowspan="1" colspan="1">20.3</td><td align="left" rowspan="1" colspan="1">19.2</td><td align="left" rowspan="1" colspan="1">18.7</td><td align="left" rowspan="1" colspan="1">18.4</td><td align="left" rowspan="1" colspan="1">18.6</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>Average gene density (genes per Mb)</bold>
+</td><td align="left" rowspan="1" colspan="1">59.2</td><td align="left" rowspan="1" colspan="1">58.7</td><td align="left" rowspan="1" colspan="1">49.7</td><td align="left" rowspan="1" colspan="1">59.3</td><td align="left" rowspan="1" colspan="1">66.9</td><td align="left" rowspan="1" colspan="1">58.6</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>Average gene distance (Kb)</bold>
+</td><td align="left" rowspan="1" colspan="1">10.8</td><td align="left" rowspan="1" colspan="1">10.6</td><td align="left" rowspan="1" colspan="1">14.9</td><td align="left" rowspan="1" colspan="1">9.2</td><td align="left" rowspan="1" colspan="1">9.9</td><td align="left" rowspan="1" colspan="1">11.0</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>Average protein size (aa)</bold>
+</td><td align="left" rowspan="1" colspan="1">574.6</td><td align="left" rowspan="1" colspan="1">578.8</td><td align="left" rowspan="1" colspan="1">595.2</td><td align="left" rowspan="1" colspan="1">587.2</td><td align="left" rowspan="1" colspan="1">588.6</td><td align="left" rowspan="1" colspan="1">583.8</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>Average number of exons per gene</bold>
+</td><td align="left" rowspan="1" colspan="1">6.4</td><td align="left" rowspan="1" colspan="1">6.6</td><td align="left" rowspan="1" colspan="1">6.8</td><td align="left" rowspan="1" colspan="1">6.7</td><td align="left" rowspan="1" colspan="1">6.8</td><td align="left" rowspan="1" colspan="1">6.7</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>Average exon size (nt)</bold>
+</td><td align="left" rowspan="1" colspan="1">270.9</td><td align="left" rowspan="1" colspan="1">261.3</td><td align="left" rowspan="1" colspan="1">264.1</td><td align="left" rowspan="1" colspan="1">262.2</td><td align="left" rowspan="1" colspan="1">259.0</td><td align="left" rowspan="1" colspan="1">264.1</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>Average intron size (nt)</bold>
+</td><td align="left" rowspan="1" colspan="1">1324.3</td><td align="left" rowspan="1" colspan="1">1173.0</td><td align="left" rowspan="1" colspan="1">1311.3</td><td align="left" rowspan="1" colspan="1">1265.8</td><td align="left" rowspan="1" colspan="1">1079.5</td><td align="left" rowspan="1" colspan="1">1240.7</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>Average </bold>
+<bold><italic>d</italic></bold>
+<bold><sub>A</sub> (</bold>
+<bold><italic>N. vitripennis</italic></bold>
+<bold>/</bold>
+<bold><italic>N. giraulti</italic></bold>
+<bold>)</bold>
+<xref ref-type="table-fn" rid="nt104">&#x0002a;&#x0002a;&#x0002a;</xref>
+</td><td align="left" rowspan="1" colspan="1">0.019</td><td align="left" rowspan="1" colspan="1">0.015</td><td align="left" rowspan="1" colspan="1">0.017</td><td align="left" rowspan="1" colspan="1">0.018</td><td align="left" rowspan="1" colspan="1">0.016</td><td align="left" rowspan="1" colspan="1">0.017</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>Average </bold>
+<bold><italic>d</italic></bold>
+<bold><sub>A</sub> (</bold>
+<bold><italic>N. vitripennis</italic></bold>
+<bold>/</bold>
+<bold><italic>N. longicornis</italic></bold>
+<bold>)</bold>
+<xref ref-type="table-fn" rid="nt104">&#x0002a;&#x0002a;&#x0002a;</xref>
+</td><td align="left" rowspan="1" colspan="1">0.018</td><td align="left" rowspan="1" colspan="1">0.014</td><td align="left" rowspan="1" colspan="1">0.016</td><td align="left" rowspan="1" colspan="1">0.017</td><td align="left" rowspan="1" colspan="1">0.016</td><td align="left" rowspan="1" colspan="1">0.017</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>Average </bold>
+<bold><italic>&#x003c9;</italic></bold>
+<bold> (</bold>
+<bold><italic>N. vitripennis</italic></bold>
+<bold>/</bold>
+<bold><italic>N. giraulti</italic></bold>
+<bold>)</bold>
+<xref ref-type="table-fn" rid="nt105">&#x0002a;&#x0002a;&#x0002a;&#x0002a;</xref>
+</td><td align="left" rowspan="1" colspan="1">0.282</td><td align="left" rowspan="1" colspan="1">0.236</td><td align="left" rowspan="1" colspan="1">0.267</td><td align="left" rowspan="1" colspan="1">0.262</td><td align="left" rowspan="1" colspan="1">0.258</td><td align="left" rowspan="1" colspan="1">0.262</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>Average </bold>
+<bold><italic>&#x003c9;</italic></bold>
+<bold> (</bold>
+<bold><italic>N. vitripennis</italic></bold>
+<bold>/</bold>
+<bold><italic>N. longicornis</italic></bold>
+<bold>)</bold>
+<xref ref-type="table-fn" rid="nt105">&#x0002a;&#x0002a;&#x0002a;&#x0002a;</xref>
+</td><td align="left" rowspan="1" colspan="1">0.273</td><td align="left" rowspan="1" colspan="1">0.251</td><td align="left" rowspan="1" colspan="1">0.252</td><td align="left" rowspan="1" colspan="1">0.259</td><td align="left" rowspan="1" colspan="1">0.264</td><td align="left" rowspan="1" colspan="1">0.261</td></tr></tbody></table></alternatives><table-wrap-foot><fn id="nt101"><label/><p>Characteristics of the studied mapping population of recombinant F<sub>2</sub> hybrids of <italic>Nasonia vitripennis</italic> and <italic>Nasonia giraulti</italic>, the high-density <italic>Nasonia</italic> linkage map derived from it, and selected sequence and gene parameters of the mapped sequence scaffolds of the <italic>Nasonia</italic> genome assembly 1.0.</p></fn><fn id="nt102"><label>&#x0002a;</label><p>The single instance of three recombination events per chromosome is excluded from the calculation.</p></fn><fn id="nt103"><label>&#x0002a;&#x0002a;</label><p>For misaligned scaffolds, we included them if at least one fragment was orientated.</p></fn><fn id="nt104"><label>&#x0002a;&#x0002a;&#x0002a;</label><p>
+<italic>d</italic>
+<sub>A</sub>&#x0200a;=&#x0200a;amino acid divergence.</p></fn><fn id="nt105"><label>&#x0002a;&#x0002a;&#x0002a;&#x0002a;</label><p>
+<italic>&#x003c9;&#x0200a;=&#x0200a;</italic>ratio of non-synonymous (amino acid replacing) to synonymous (silent) substitution rates.</p></fn></table-wrap-foot></table-wrap></sec><sec id="s2b"><title>Scaffold Mapping</title><p>The segregation data of the markers allowed us to map 265 sequence scaffolds of the <italic>Nasonia</italic> genome assembly 1.0 (<xref ref-type="table" rid="pone-0008597-t001">Table 1</xref>; <xref ref-type="supplementary-material" rid="pone.0008597.s005">Table S5</xref>). For 39 of them, the segregation data also enabled us to orient them on the chromosomes (<xref ref-type="supplementary-material" rid="pone.0008597.s005">Table S5</xref>). The mapping data indicated that at least twelve scaffolds of the <italic>Nasonia</italic> genome assembly 1.0 are misassembled. For example, markers of scaffold 1 mapped to Chr 1 (1.29&#x02013;1.58) and Chr 5 (5.19&#x02013;5.26), suggesting an erroneous concatenation of sequences between the nucleotides 5,823,787 and 5,831,911. The fragment of scaffold 1 on Chr 5 is likely misassembled as well since markers of scaffold 1664 and scaffold 4559 mapped to Chr 5 between those of scaffold 1. The currently known instances of misassembled scaffolds of the <italic>Nasonia</italic> genome assembly 1.0 are summarized in <xref ref-type="table" rid="pone-0008597-t002">Table 2</xref>.</p><table-wrap id="pone-0008597-t002" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0008597.t002</object-id><label>Table 2</label><caption><title>Misassembled sequence scaffolds.</title></caption><alternatives><graphic id="pone-0008597-t002-2" xlink:href="pone.0008597.t002"/><table frame="hsides" rules="groups"><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup><thead><tr><td align="left" rowspan="1" colspan="1">Scaf</td><td colspan="5" align="left" rowspan="1">Chromosome</td></tr><tr><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">2</td><td align="left" rowspan="1" colspan="1">3</td><td align="left" rowspan="1" colspan="1">4</td><td align="left" rowspan="1" colspan="1">5</td></tr></thead><tbody><tr><td align="left" rowspan="1" colspan="1">
+<bold>1</bold>
+</td><td align="left" rowspan="1" colspan="1">
+<bold>1.29&#x02013;1.58</bold>: 1&#x02013;5,823,787</td><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1">
+<bold>5.19&#x02013;5.21</bold>: 5,831,911&#x02013;6,693,166 <bold>5.22</bold>: 7,059,870&#x02013;7,169,619 <bold>5.24&#x02013;5.26</bold>: 8,284,408&#x02013;9,425,349</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>5</bold>
+</td><td align="left" rowspan="1" colspan="1">
+<bold>1.25</bold>: 1&#x02013;33,395</td><td align="left" rowspan="1" colspan="1">
+<bold>2.25&#x02013;2.28</bold>: 135,295&#x02013;4,548,788</td><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>6</bold>
+</td><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1">
+<bold>3.16&#x02013;3.19</bold>: 4,401,492&#x02013;2,651,642 <bold>3.21&#x02013;3.26</bold>: 2,502,175&#x02013;1</td><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>7</bold>
+</td><td align="left" rowspan="1" colspan="1">
+<bold>1.59&#x02013;1.61</bold>: 429,779&#x02013;1</td><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1">
+<bold>5.12&#x02013;5.19</bold>: 4,040,552&#x02013;710,069</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>8</bold>
+</td><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1">
+<bold>2.02&#x02013;2.04</bold>: 1&#x02013;907,155</td><td align="left" rowspan="1" colspan="1">
+<bold>3.30&#x02013;3.31</bold>: 3,676,232&#x02013;960,353</td><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>17</bold>
+</td><td align="left" rowspan="1" colspan="1">
+<bold>1.24</bold>: 2,656,364&#x02013;2,710,507</td><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1">
+<bold>3.39&#x02013;3.46</bold>: 669,157&#x02013;2,316,969</td><td align="left" rowspan="1" colspan="1">
+<bold>4.20</bold>: 1&#x02013;421,253</td><td align="left" rowspan="1" colspan="1"/></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>21</bold>
+</td><td align="left" rowspan="1" colspan="1">
+<bold>1.19</bold>: 1&#x02013;245,801</td><td align="left" rowspan="1" colspan="1">
+<bold>2.42&#x02013;2.49</bold>: 2,981,920&#x02013;696,328</td><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>24</bold>
+</td><td align="left" rowspan="1" colspan="1">
+<bold>1.18</bold>: 2,056,045&#x02013;2,507,974</td><td align="left" rowspan="1" colspan="1">
+<bold>2.50&#x02013;2.58</bold>: 1,831,414&#x02013;1</td><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>39</bold>
+</td><td align="left" rowspan="1" colspan="1">
+<bold>1.23&#x02013;1.24</bold>: 177,399&#x02013;1,144,834 <bold>1.27</bold>: 1&#x02013;9,220</td><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>69</bold>
+</td><td align="left" rowspan="1" colspan="1">
+<bold>1.24</bold>: 1&#x02013;455,644</td><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1">
+<bold>4.22</bold>: 695,384&#x02013;797,218</td><td align="left" rowspan="1" colspan="1"/></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>163</bold>
+</td><td align="left" rowspan="1" colspan="1">
+<bold>1.24</bold>: 378,363&#x02013;381,988</td><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1">
+<bold>5.28</bold>: 1&#x02013;185,791</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>429</bold>
+</td><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1">
+<bold>3.27</bold>: 1&#x02013;44,229</td><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1">
+<bold>5.27</bold>: 68,222&#x02013;106,947</td></tr></tbody></table></alternatives><table-wrap-foot><fn id="nt106"><label/><p>Misassembled sequence scaffolds of the <italic>Nasonia</italic> genome assembly 1.0.</p></fn><fn id="nt107"><label/><p>For each misassembled sequence scaffold (&#x0200a;=&#x0200a;Scaf; rows), the table shows the chromosome (columns) and position (bold coordinates, see <xref ref-type="fig" rid="pone-0008597-g001">Figure 1</xref> and <xref ref-type="supplementary-material" rid="pone.0008597.s005">Table S5</xref>) where a scaffold fragment (non-bold coordinates) mapped. For more information about the position of the markers that had been used to derive the estimates, see <xref ref-type="supplementary-material" rid="pone.0008597.s005">Table S5</xref>.</p></fn></table-wrap-foot></table-wrap></sec><sec id="s2c"><title>Genome Coverage</title><p>The <italic>Nasonia</italic> genome assembly 1.0 consists of 6,181 scaffold sequences with a total of 295.1 Mb <xref rid="pone.0008597-Werren1" ref-type="bibr">[26]</xref>. Only 4.3&#x00025; of these scaffolds are mapped on our linkage map. However, since most of the mapped markers lie on comparatively large scaffolds&#x02013;for example, all 46 scaffolds larger than 1 Mb are mapped&#x02013;63.6&#x00025; (187.6 Mb) of the assembled genome (295.1 Mb) and 60.1&#x00025; of the total estimated genome size of <italic>N. vitripennis</italic> (312 Mb) are represented by the scaffolds on the present linkage map (<xref ref-type="table" rid="pone-0008597-t001">Table 1</xref>).</p></sec><sec id="s2d"><title>Recombination Rate Estimates</title><p>Assuming that the inferred <italic>Nasonia</italic> linkage map is saturated (i.e., the mapping of additional scaffolds would not lead to its expansion) and that the physical size estimate of the <italic>N. vitripennis</italic> genome (312 Mb) is accurate, we estimated a genome wide recombination rate of 1.4 cM/Mb. However, almost all analyzed markers were developed by studying the sequences of the <italic>Nasonia</italic> genome assembly 1.0. Hence, our linkage map might only reflect the fraction of the <italic>Nasonia</italic> genome that has actually been sequenced. We therefore performed a second estimate of the genome-wide recombination rate by dividing the length of the genetic map by the total length of all scaffold sequences of the <italic>Nasonia</italic> genome assembly 1.0 (295.1 Mb; see above) and obtained a marginally higher value: 1.5 cM/Mb.</p><p>The local recombination rate in <italic>Nasonia</italic> was approximated for a total of 259 overlapping windows of two consecutive marker clusters each and an average width of 3.4 cM (min/max: 1.4/10.7 cM; <xref ref-type="supplementary-material" rid="pone.0008597.s007">Table S7</xref>). The estimates suggest that the local recombination rate in the <italic>Nasonia</italic> genome varies by two orders of magnitude and lies between 0.08 cM/Mb and 29.6 cM/Mb (<xref ref-type="fig" rid="pone-0008597-g001">Figure 1</xref>; <xref ref-type="supplementary-material" rid="pone.0008597.s007">Table S7</xref>). The bulk (94&#x00025;) of the <italic>Nasonia</italic> linkage map covers genome regions with an estimated local recombination rate of 1&#x02013;10 cM/Mb or higher (<xref ref-type="fig" rid="pone-0008597-g001">Figures 1</xref> and <xref ref-type="fig" rid="pone-0008597-g002">2</xref>). The remaining 6&#x00025; of the map represent regions with an estimated local recombination rate&#x0003c;1 cM/Mb. However, these 6&#x00025; encompass 54&#x00025; of the mapped physical genome (<xref ref-type="fig" rid="pone-0008597-g002">Figure 2</xref>).</p><fig id="pone-0008597-g002" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0008597.g002</object-id><label>Figure 2</label><caption><title>Recombination rates in the linkage map, physical map, and predicted genes.</title><p>Estimated percentages of the linkage map, the physical map, and of predicted genes of the <italic>Nasonia vitripennis</italic> nuclear genome with low (&#x0003c;1 cM/Mb), medium (1&#x02013;10 cM/Mb), and high (&#x0003e;10 cM/Mb) recombination rates.</p></caption><graphic xlink:href="pone.0008597.g002"/></fig></sec><sec id="s2e"><title>Association of Chromosome, Sequence, and Gene Parameters with the Local Recombination Rate</title><p>Using 125 non-overlapping windows of two consecutive marker clusters each, we assessed the association of the local recombination rate in <italic>Nasonia</italic> with 14 different chromosome, sequence, and gene parameters (average window-width: 3.4 cM; min/max: 1.8/10.7 cM; <xref ref-type="table" rid="pone-0008597-t003">Table 3</xref>; <xref ref-type="supplementary-material" rid="pone.0008597.s008">Table S8</xref>). For this purpose, we used Dutilleul's modified <italic>t</italic> test <xref rid="pone.0008597-Dutilleul1" ref-type="bibr">[29]</xref>, which corrects for spatial autocorrelation (since variables sampled spatially close to one another are not necessarily independent from each other). We found that the recombination rate is positively correlated with the physical distance to the center of the linkage groups as well as with GC and simple repeat content (<xref ref-type="table" rid="pone-0008597-t003">Table 3</xref>). In addition, we found a strong correlation of the recombination rate with gene content. In fact, the majority of mapped genes (57&#x00025;) lay in regions of the mapped genome with an estimated recombination rate of &#x02265;1 cM/Mb (<xref ref-type="fig" rid="pone-0008597-g002">Figure 2</xref>). No correlation was found between the recombination rate and the size of proteins, the length of exons or the number of exons per gene (<xref ref-type="table" rid="pone-0008597-t003">Table 3</xref>). The fact that regions of the genome with a high recombination rate tend to have more genes is explained by a strong negative association of the recombination rate and the distance between genes and the size of their introns (<xref ref-type="table" rid="pone-0008597-t003">Table 3</xref>). Finally, we detected an overall negative trend of <italic>d</italic>
+<sub>A</sub> (amino acid distance) and <italic>&#x003c9;</italic> (ratio of non-synonymous to synonymous substitution rates) with the recombination rate, but the only significant association after Bonferroni correction for multiple testing was that of the recombination rate with <italic>&#x003c9;</italic> when comparing <italic>N. vitripennis</italic> exon sequences with that of <italic>N. longicornis</italic> (<xref ref-type="table" rid="pone-0008597-t003">Table 3</xref>). Average values of the 14 studied parameters are similar over all five chromosomes (<xref ref-type="table" rid="pone-0008597-t001">Table 1</xref>).</p><table-wrap id="pone-0008597-t003" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0008597.t003</object-id><label>Table 3</label><caption><title>Association of sequence and gene parameters with the local recombination rate.</title></caption><alternatives><graphic id="pone-0008597-t003-3" xlink:href="pone.0008597.t003"/><table frame="hsides" rules="groups"><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup><thead><tr><td align="left" rowspan="1" colspan="1">Parameter</td><td align="left" rowspan="1" colspan="1">Correlation</td><td align="left" rowspan="1" colspan="1">Effective sample size</td><td align="left" rowspan="1" colspan="1">
+<italic>p</italic>
+</td></tr></thead><tbody><tr><td align="left" rowspan="1" colspan="1">Physical distance from center of linkage group</td><td align="left" rowspan="1" colspan="1">0.501</td><td align="left" rowspan="1" colspan="1">116.8</td><td align="left" rowspan="1" colspan="1">
+<bold>&#x0003c;0.00001<sup>&#x0002a;&#x0002a;</sup></bold>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">GC content</td><td align="left" rowspan="1" colspan="1">0.282</td><td align="left" rowspan="1" colspan="1">119.1</td><td align="left" rowspan="1" colspan="1">
+<bold>0.00188<sup>&#x0002a;</sup></bold>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">Simple repeat content</td><td align="left" rowspan="1" colspan="1">0.302</td><td align="left" rowspan="1" colspan="1">106.5</td><td align="left" rowspan="1" colspan="1">
+<bold>0.00163<sup>&#x0002a;</sup></bold>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">Gene content</td><td align="left" rowspan="1" colspan="1">0.349</td><td align="left" rowspan="1" colspan="1">124.6</td><td align="left" rowspan="1" colspan="1">
+<bold>0.00007<sup>&#x0002a;&#x0002a;</sup></bold>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">Gene distance</td><td align="left" rowspan="1" colspan="1">&#x02212;0.429</td><td align="left" rowspan="1" colspan="1">121.9</td><td align="left" rowspan="1" colspan="1">
+<bold>&#x0003c;0.00001<sup>&#x0002a;&#x0002a;</sup></bold>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">Protein size</td><td align="left" rowspan="1" colspan="1">0.140</td><td align="left" rowspan="1" colspan="1">142.5</td><td align="left" rowspan="1" colspan="1">0.09640</td></tr><tr><td align="left" rowspan="1" colspan="1">Number of exons per gene</td><td align="left" rowspan="1" colspan="1">0.044</td><td align="left" rowspan="1" colspan="1">137.3</td><td align="left" rowspan="1" colspan="1">0.60965</td></tr><tr><td align="left" rowspan="1" colspan="1">Exon size</td><td align="left" rowspan="1" colspan="1">0.098</td><td align="left" rowspan="1" colspan="1">118.6</td><td align="left" rowspan="1" colspan="1">0.29026</td></tr><tr><td align="left" rowspan="1" colspan="1">Intron size</td><td align="left" rowspan="1" colspan="1">&#x02212;0.467</td><td align="left" rowspan="1" colspan="1">122.3</td><td align="left" rowspan="1" colspan="1">
+<bold>&#x0003c;0.00001<sup>&#x0002a;&#x0002a;</sup></bold>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>d</italic>
+<sub>A</sub> (<italic>N. vitripennis</italic>/<italic>N. giraulti</italic>)<xref ref-type="table-fn" rid="nt110">a</xref>
+</td><td align="left" rowspan="1" colspan="1">&#x02212;0.199</td><td align="left" rowspan="1" colspan="1">55.8</td><td align="left" rowspan="1" colspan="1">0.14239</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>d</italic>
+<sub>A</sub> (<italic>N. vitripennis</italic>/<italic>N. longicornis</italic>)<xref ref-type="table-fn" rid="nt110">a</xref>
+</td><td align="left" rowspan="1" colspan="1">&#x02212;0.221</td><td align="left" rowspan="1" colspan="1">89.2</td><td align="left" rowspan="1" colspan="1">0.03753</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>&#x003c9;</italic> (<italic>N. vitripennis</italic>/<italic>N. giraulti</italic>)<xref ref-type="table-fn" rid="nt111">b</xref>
+</td><td align="left" rowspan="1" colspan="1">&#x02212;0.302</td><td align="left" rowspan="1" colspan="1">47.9</td><td align="left" rowspan="1" colspan="1">0.03695</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>&#x003c9;</italic> (<italic>N. vitripennis</italic>/<italic>N. longicornis</italic>)<xref ref-type="table-fn" rid="nt111">b</xref>
+</td><td align="left" rowspan="1" colspan="1">&#x02212;0.317</td><td align="left" rowspan="1" colspan="1">89.6</td><td align="left" rowspan="1" colspan="1">
+<bold>0.00236<sup>&#x0002a;</sup></bold>
+</td></tr></tbody></table></alternatives><table-wrap-foot><fn id="nt108"><label/><p>Sequence and gene parameters tested for their association with the local recombination rate in the <italic>Nasonia vitripennis</italic> parasitoid wasp genome.</p></fn><fn id="nt109"><label/><p>The analyses were based on data from 125 non-overlapping windows of two consecutive marker clusters each and an average width of 3.4 cM. To account for spatial autocorrelation of the tested parameters, we applied Dutilleul's modified <italic>t</italic> test <xref rid="pone.0008597-Dutilleul1" ref-type="bibr">[29]</xref> using ranked data. One and two asterisks, respectively, indicate significant (<italic>&#x003b1;</italic>&#x0200a;=&#x0200a;0.05) and highly significant (<italic>&#x003b1;</italic>&#x0200a;=&#x0200a;0.01) correlations after Bonferroni correction for 13 simultaneous tests.</p></fn><fn id="nt110"><label>a</label><p>
+<italic>d</italic>
+<sub>A</sub>&#x0200a;=&#x0200a;amino acid divergence.</p></fn><fn id="nt111"><label>b</label><p>
+<italic>&#x003c9;&#x0200a;=&#x0200a;</italic>ratio of non-synonymous (amino acid replacing) to synonymous (silent) substitution rates.</p></fn></table-wrap-foot></table-wrap></sec></sec><sec id="s3"><title>Discussion</title><sec id="s3a"><title>Linkage Map Reconstruction</title><p>Using genotype data from a SNP microarray, we inferred the first high-density linkage map for <italic>Nasonia</italic> with a total of 1,255 markers on five linkage groups corresponding to the five metacentric to submetacentric chromosomes of <italic>Nasonia</italic>
+<xref rid="pone.0008597-Gokhman1" ref-type="bibr">[30]</xref>. The small average distance (0.3 cM) between the markers on the five chromosomes suggests that the <italic>Nasonia</italic> linkage map is highly saturated and not likely to expand by the mapping of additional scaffolds. However, when comparing our map with those from prior studies on <italic>Nasonia</italic> that all included less than 100 molecular markers <xref rid="pone.0008597-Rtten1" ref-type="bibr">[27]</xref>, <xref rid="pone.0008597-Pietsch1" ref-type="bibr">[28]</xref>, <xref rid="pone.0008597-Gadau2" ref-type="bibr">[31]</xref>&#x02013;<xref rid="pone.0008597-Niehuis1" ref-type="bibr">[33]</xref>, it is not particularly long (446.9 cM). In fact, the linkage map inferred here is 41.5&#x00025; shorter than the only other available genome map for <italic>Nasonia</italic> that includes more than 90 markers (764.5 cM; <xref rid="pone.0008597-Gadau2" ref-type="bibr">[31]</xref>). Does this indicate that we are nevertheless missing parts of the <italic>Nasonia</italic> genome that other maps covered? A closer inspection shows that this concern is most likely unfounded. R&#x000fc;tten et al. <xref rid="pone.0008597-Rtten1" ref-type="bibr">[27]</xref> reported sequence-tagged site (STS) and microsatellite (MS) markers that they studied together with random amplified polymorphic DNA (RAPD) in <italic>Nasonia</italic>. The size of their linkage map, including RAPD, STS, and MS markers, lies in the same size range as the map published by Gadau et al. <xref rid="pone.0008597-Gadau2" ref-type="bibr">[31]</xref>, which is also based on RAPD markers <xref rid="pone.0008597-Gadau3" ref-type="bibr">[34]</xref>. When searching the most distant STS and MS markers of each linkage group against the <italic>N. vitripennis</italic> genome, we found that all of them lie in genome regions that are covered by our high-density linkage map. The size differences between the <italic>Nasonia</italic> linkage maps thus appear to have other causes.</p><p>The most likely explanation for the discrepancies in the size of the <italic>Nasonia</italic> linkage maps is the differential quality of the genotype data on which they are based and the use of different mapping functions to adjust for undetected recombination events. Almost all linkage maps for <italic>Nasonia</italic> published so far have relied on RAPD or amplified fragment length polymorphic (AFLP) markers <xref rid="pone.0008597-Gadau3" ref-type="bibr">[34]</xref>. Both types of markers are known to be sensitive to changes in the reaction conditions and hence to frequently miscall genotypes, while in tests the SNP genotyping assay employed here consistently assigned the majority of species-specific genotypes correctly when studying pure strain individuals of <italic>N. vitripennis</italic> and <italic>N. giraulti</italic> (J. D. Gibson, unpubl. results). In particular, we were able to unambiguously identify failed reactions since the SNP genotyping assay allowed us to detect the two competing alleles simultaneously. However, our workflow included additional steps during which we assessed the plausibility of the inferred genotype data. For example, prior analysis of randomly distributed markers in the mapping population of F<sub>2</sub> hybrid embryos found neither of the two parental genotypes at a frequency &#x0003e;57&#x00025; <xref rid="pone.0008597-Niehuis1" ref-type="bibr">[33]</xref>. We consequently considered markers showing a genotype at a frequency &#x02265;70&#x00025; as doubtful and removed them from the dataset. Could our action have led to excluding regions of the genome with an unexpectedly high marker transmission ratio distortion (MTRD)? If regions in the genome of the F<sub>2</sub> hybrid embryos had a MTRD&#x02265;70&#x00025;, we would expect to find linked markers showing genotype frequencies between 60&#x00025; and 69&#x00025;. However, the highest frequency of a genotype seen in our dataset was 60.7&#x00025;. If the corresponding marker was linked to a region with a MTRD&#x02265;70&#x00025;, it would mean that we had been very unfortunate in not having mapped any additional markers with a MTRD between 61&#x00025; and 70&#x00025;. This appears unlikely given the high density of markers on our linkage map.</p><p>A second criterion that we applied after an initial ordering of all markers to identify genotypes likely to be false was the occurrence of genotype distributions along the linkage groups of individual recombinant F<sub>2</sub> hybrids that could only be explained by two simultaneous recombination events in close spatial proximity or by mutation. Specifically, we considered the genotype of a marker that differed from the genotypes of immediately adjacent markers left and right of it as highly improbable due to chiasma interference <xref rid="pone.0008597-Sturtevant1" ref-type="bibr">[35]</xref>&#x02013;<xref rid="pone.0008597-Colombo1" ref-type="bibr">[37]</xref>, and removed the markers with the deviant genotype(s) from the dataset. Could this procedure have caused us to underestimate recombination frequencies? We think this is unlikely to be the case. After having removed all markers with suspect genotypes (77), we counted a total of 113 unambiguous instances of two simultaneous recombination events on a chromosome. The average estimated distance between two recombination events was 46.2 cM and the smallest observed distance was 6.2 cM. These numbers stand in stark contrast to the 482 cases where we observed a single marker with (a) deviant genotype(s) that would have required one to assume two simultaneous recombination events in its immediate vicinity. While we cannot rule out the possibility that we might have discarded a small number of markers whose genotypes provided evidence for two recombination events in close spatial proximity, their impact on the total size estimate of the <italic>Nasonia</italic> linkage map would most likely have been small. In contrast, the consideration of more than 450 false genotypes would have led us to dramatically overestimate recombination in the <italic>Nasonia</italic> genome. Overall, we think that the applied measures to detect and exclude unreliable genotype data significantly improved the accuracy of the <italic>Nasonia</italic> linkage map and that our map reflects recombination frequencies in the <italic>Nasonia</italic> genome far better than previous attempts.</p><p>A third and important difference between the current study and that by Gadau et al. <xref rid="pone.0008597-Gadau2" ref-type="bibr">[31]</xref> is that mapping here was performed on embryos whereas the previous study was performed on adult males. Significant post hatching mortality is known for F<sub>2</sub> hybrid males between <italic>N. vitripennis</italic> and <italic>N. giraulti</italic>
+<xref rid="pone.0008597-Niehuis1" ref-type="bibr">[33]</xref>, <xref rid="pone.0008597-Breeuwer1" ref-type="bibr">[38]</xref> and can result in pseudolinkage effects <xref rid="pone.0008597-Korol1" ref-type="bibr">[39]</xref>&#x02013;<xref rid="pone.0008597-Peng1" ref-type="bibr">[44]</xref>, an apparent linkage between regions due to epistatic interactions causing mortality which could distort map distances. That said, a comparison of recombination frequencies in intraspecific versus interspecific mapping populations of <italic>Nasonia</italic> by Leo Beukeboom (unpublished; data available upon request) suggests that pseudolinkage may only have a minor impact, if at all, on map distances in <italic>Nasonia</italic>.</p></sec><sec id="s3b"><title>Genome-Wide Recombination Rate</title><p>Depending on whether we take the estimated total physical size <xref rid="pone.0008597-Beukeboom1" ref-type="bibr">[45]</xref> or the size of the assembled genome of <italic>N. vitripennis</italic>
+<xref rid="pone.0008597-Werren1" ref-type="bibr">[26]</xref> as a basis for the calculation, we estimated the genome-wide recombination frequency in <italic>Nasonia</italic> to be 1.4&#x02013;1.5 cM/Mb. This is considerably lower than that of the honeybee (19 cM/Mb), the only other Hymenoptera taxon for which an accurate high-density linkage map and a sequenced genome are currently available. Could the genome-wide recombination rate that we estimated for <italic>Nasonia</italic> be so low because we analyzed recombination in an interspecific and not an intraspecific cross? We think this is not the case. Leo Beukeboom studied recombination in intra- and interspecific mapping populations of <italic>N. vitripennis</italic> and <italic>N giraulti</italic> by analyzing 33 genomic segments with an average width of 11 cM (intraspecific cross) distributed across the entire genome (unpublished; data available upon request). He found that recombination frequencies are only marginally (1.8&#x00025;) higher in the intraspecific cross than in the interspecific cross. This difference thus cannot account for the substantial discrepancy that we see in the genome-wide recombination rate between the parasitoid wasp and the honeybee.</p><p>The genome-wide recombination frequency in <italic>Nasonia</italic> lies within the range found in other insect species for which high-density linkage maps based on reliable genotype data exist (e.g., <italic>Drosophila</italic> species <xref rid="pone.0008597-True1" ref-type="bibr">[46]</xref>; <italic>Bombyx</italic>
+<xref rid="pone.0008597-Yamamoto1" ref-type="bibr">[47]</xref>). Previous studies proposed that the haplodiploid Hymenoptera could have a higher genome-wide recombination rate to compensate for the fact that meiosis occurs only during oogenesis and not during spermatogenesis, because their males are typically haploid <xref rid="pone.0008597-Sirvi1" ref-type="bibr">[48]</xref>. Our data do not support this hypothesis. In fact, we suspect that the slightly higher genome-wide recombination rates for parasitoid Hymenoptera reported by Wilfert et al. <xref rid="pone.0008597-Wilfert1" ref-type="bibr">[25]</xref> are an artifact of inaccurate genetic size estimates. Our estimate of the genome-wide recombination rate in <italic>Nasonia</italic> are, for example, around 40&#x00025; lower than the estimate (2.5 cM/Mb) referred to by Wilfert et al. <xref rid="pone.0008597-Wilfert1" ref-type="bibr">[25]</xref>, which was based on the RAPD marker linkage map for <italic>Nasonia</italic> published by Gadau et al. <xref rid="pone.0008597-Gadau2" ref-type="bibr">[31]</xref>. Since the three other genetic size estimates for parasitoid wasp genomes considered by Wilfert et al. <xref rid="pone.0008597-Wilfert1" ref-type="bibr">[25]</xref> in their meta-analysis also relied on genotype data of RAPD markers <xref rid="pone.0008597-Antolin1" ref-type="bibr">[49]</xref>&#x02013;<xref rid="pone.0008597-Holloway1" ref-type="bibr">[51]</xref>, they could be inflated as well.</p><p>Using the data from our high-density linkage map, we estimated an average number of 1.8 chiasmata per chromosome per meiosis for <italic>Nasonia</italic>. This value is only marginally higher than the average number (approximately 1.6) found across a wide range of protist, plant, and animal taxa <xref rid="pone.0008597-Otto1" ref-type="bibr">[5]</xref>, <xref rid="pone.0008597-Thuriaux1" ref-type="bibr">[52]</xref>. It is generally assumed that the relatively uniform number of chiasmata per chromosome per meiosis across taxa is related to the stabilizing function of chiasmata in the pairing of homologous chromosomes during meiosis <xref rid="pone.0008597-Baker1" ref-type="bibr">[53]</xref>, <xref rid="pone.0008597-Hawley1" ref-type="bibr">[54]</xref>. However, this mechanistic explanation does not seem to hold for the honeybee, for which an average number of 5.7 chiasmata per chromosome per meiosis has been reported <xref rid="pone.0008597-Beye1" ref-type="bibr">[21]</xref>. The substantial difference in the frequency of chiasmata per chromosome per meiosis between <italic>Apis</italic> and <italic>Nasonia</italic> thus raises the question of whether it is caused by a chromosome-wide elevation of the recombination rates or by an increased proportion of genome regions with a high recombination frequency in the honeybee.</p></sec><sec id="s3c"><title>Estimation of Local Recombination Rates and Associated Parameters</title><p>In order to infer recombination rates along chromosomes, we estimated the physical size of two consecutive marker clusters (i.e., two consecutive groups of markers in which the markers within a group did not recombine) and divided it by their estimated genetic size (see <xref ref-type="sec" rid="s4">methods</xref> section for further details). The use of pairs of consecutive marker clusters allowed us to obtain upper limit estimates of the recombination rates for genome regions with low recombination frequency and/or discontinuous genome sequence data. Since we calculated the recombination rate for intervals of approximately 3.4 cM&#x02013;the average estimated size of two consecutive marker clusters on our linkage map&#x02013;we ensured that a minimum and an approximately equal number of recombination events were included in each calculation.</p><p>Traditional approaches infer local recombination rates by calculating the ratio of genetic to physical distance between pairs of markers mapping on the same continuous genome sequence. These ratios are positioned along the chromosomes and a polynomial function is fitted to the data in order to account for local variation in the rates <xref rid="pone.0008597-Gaut1" ref-type="bibr">[13]</xref>. Despite its widespread use and popularity, this approach has disadvantages: the fitting of a polynomial function across a chromosome artificially increases spatial autocorrelation of recombination rate estimates, which renders most statistical analyses using multiple recombination rate estimates derived from this function inappropriate. The approach is also difficult to apply in regions of the genome with low recombination frequency, unless a huge number of recombinant individuals are screened, since recombination data have to be obtained from continuous genome sequences.</p><p>The approach used here to estimate local recombination frequencies tries to cope with both problems mentioned in the previous paragraph. However, it has its own drawbacks as well. Most notably, recombination rates can only be estimated for windows of approximately constant genetic width, but not for windows of constant physical width. The physical size of windows with the same genetic width can consequently differ considerably. There are two main problems associated with different window widths. First, the uncertainty (variance) of the estimates may scale with window width. Second, it is difficult to compare data not estimated at the same physical scale. The first problem is particularly difficult to resolve, since choosing a window of constant genetic width might control for variation in the accuracy of the recombination rate estimates, but this means that the variances associated with sequence and gene parameter estimates may vary across the different physical widths. Likewise, choosing a window of constant physical width might control for the size of the analyzed sequence, but adds a possible bias to the estimates of the recombination rate, unless one dynamically adapts locally the number of analyzed recombinants. Even then, however, the accuracy of sequence and gene parameters that vary significantly within the genome might still differ between windows. Given this trade-off between parameter estimates associated with physical versus genetic width, we think that the decision to employ a window-width that provides reasonably robust estimates across the entire genome, considering both the genetic and the physical dimension, is likely to be the most productive.</p></sec><sec id="s3d"><title>Local Recombination Rates</title><p>We found that the recombination rate along the chromosomes varies in <italic>Nasonia</italic> by two orders of magnitude and lies between 0.08 cM/Mb and 29.6 cM/Mb, when estimating the recombination frequencies for windows with a genetic size of approximately 3.4 cM. The variation in the recombination rate for the honeybee genome reported by Beye et al. <xref rid="pone.0008597-Beye1" ref-type="bibr">[21]</xref> is considerably larger (0&#x02013;143 cM/Mb). However, their estimates are for windows with a constant physical width of 125 Kb. A direct comparison between the estimates for the parasitoid wasp and the eusocial honeybee is therefore not possible. More informative are the calculated relative proportions of the <italic>Apis</italic> and of the <italic>Nasonia</italic> genome with low and high recombination frequencies. We found that 54&#x00025; of the mapped physical genome of the parasitoid wasp has estimated recombination rates&#x0003c;1 cM/Mb (<xref ref-type="fig" rid="pone-0008597-g002">Figure 2</xref>). When looking at the entire genome, this estimated fraction is likely to be conservative since we assume that the majority of unmapped scaffold sequences (107.5 Mb) will fall in regions with low recombination. This result contrasts with the much smaller fraction of 9&#x00025; of the honeybee genome with estimated recombination rates&#x02264;5 cM/Mb <xref rid="pone.0008597-Beye1" ref-type="bibr">[21]</xref>. Using the same benchmark, we calculate a fraction of over 81&#x00025; for the parasitoid wasp. Beye et al. <xref rid="pone.0008597-Beye1" ref-type="bibr">[21]</xref> further found 12&#x00025; of the studied honeybee genome sequences (30.7&#x00025; of the sequenced genome) to have recombination rates&#x0003e;50 cM/Mb. Comparable rates have not been observed in any region of the <italic>Nasonia</italic> genome.</p><p>As with the genome-wide recombination estimates, we have to ask whether the discrepancy in the recombination rate estimates for the honeybee and the parasitoid wasp could be due to the fact that we inferred recombination from an interspecific cross and not an intraspecific cross. A study by Leo Beukeboom (unpublished; data available upon request) showed that the difference in the genome-wide recombination rate between inter- and intraspecific mapping populations of <italic>N. vitripennis</italic> and <italic>N giraulti</italic> is almost negligible. This does not mean, however, that the recombination frequency could not differ substantially at a more local scale. While we do not yet have the definitive data to address this caveat, we have reason to believe that at the scale at which we studied local recombination frequencies (approximately 3.4 cM intervals), these differences are likely to be small. Our data suggest that the recombination rate in the <italic>Nasonia</italic> genome varies by at least two orders of magnitude and that adjacent genome regions tend to have similar rates (<xref ref-type="fig" rid="pone-0008597-g001">Figure 1</xref>). When comparing recombination frequencies for 33 genomic segments from an intraspecific <italic>N. vitripennis</italic> cross, analyzed by Leo Beukeboom (unpublished; data available upon request), with those from our interspecific <italic>N. vitripennis</italic>&#x000d7;<italic>N. giraulti</italic> cross, we find no single pair of values differing by more than a factor of 3.5 (average 1.4). We therefore think that the striking pattern of local recombination rate variation observed in the <italic>Nasonia</italic> genome would not have been different if we had studied an intraspecific cross.</p><p>Overall, whilst the differences in the analyses (e.g., constant genetic vs. constant physical window-width) and in the proportion of the genome (i.e., 63.6&#x00025; vs. 30.7&#x00025;) analyzed to identify regions of low- or high recombination in the parasitoid wasp and in the honeybee may account for some of the striking differences in the estimated proportions of the genomes with low- and high recombination frequencies, our data do suggest that the recombination frequency in the honeybee is elevated across the entire genome, for regions of both low and high recombination alike. However, a more detailed analysis that directly compares homologous syntenic blocks in the genomes of <italic>Apis</italic> and <italic>Nasonia</italic> is necessary to substantiate this hypothesis.</p></sec><sec id="s3e"><title>Association of Chromosome, Sequence, and Gene Parameters with the Local Recombination Rate</title><p>We studied 13 chromosome, sequence, and gene parameters in the parasitoid wasp genome and assessed their association with the recombination rate. A genome- and chromosome-wide screen for average values of these parameters (<xref ref-type="table" rid="pone-0008597-t001">Table 1</xref>) suggested that a window&#x02013;width of approximately 3.4 cM, corresponding with a physical window-width ranging from 73 Kb to 23 Mb (median 630 Kb), was appropriate to obtain accurate parameter estimates in each interval. The comparison of the 13 parameters with the recombination rate revealed several significant associations. The strongest association was found between the recombination rate and the physical distance from the center of the linkage group. While we have no data explicitly mapping the position of the chromosomes' centromeres, the fact that all of the <italic>Nasonia</italic> chromosomes are meta- or submetracentric strongly suggests that the centromeres map in or near the center of the inferred linkage groups. These regions show a very low recombination frequency (&#x0003c;1 cM/Mb) across all five chromosomes (<xref ref-type="fig" rid="pone-0008597-g001">Fig. 1</xref>). This finding is consistent with the well-known &#x02018;centromere effect&#x02019; documented over a wide range of taxa, including the honeybee, and meaning a lack of recombination at the centromeres and in pericentromeric heterochromatin (e.g., <xref rid="pone.0008597-Beadle1" ref-type="bibr">[55]</xref>&#x02013;<xref rid="pone.0008597-Lambie1" ref-type="bibr">[65]</xref>). We further found that the recombination rate in <italic>Nasonia</italic> is positively correlated with the GC content. The same association was reported by Beye et al. <xref rid="pone.0008597-Beye1" ref-type="bibr">[21]</xref> for the honeybee and had previously been mentioned for other taxa as well (e.g., <xref rid="pone.0008597-JensenSeaman1" ref-type="bibr">[62]</xref>, <xref rid="pone.0008597-Fullerton1" ref-type="bibr">[66]</xref>&#x02013;<xref rid="pone.0008597-Hey1" ref-type="bibr">[68]</xref>). Several lines of evidence suggest that the strong association of GC content and recombination could be due to a GC-biased repair of G&#x02236;T mismatches in heteroduplex DNA formed during recombination, particularly in groups of organisms like mammals which have a high level of methylated CpG which is hypermutagenic to TpG <xref rid="pone.0008597-Galtier1" ref-type="bibr">[69]</xref>, <xref rid="pone.0008597-Marais1" ref-type="bibr">[70]</xref>. Consistent with this idea is the recent finding that CpG dinucleotides in <italic>Nasonia</italic> undergo DNA methylation in a pattern that suggests its relevance for gene regulation <xref rid="pone.0008597-Werren1" ref-type="bibr">[26]</xref>. Finally, we identified a significant positive association between the simple repeat content and the recombination rate. This association has also been documented across a wide range of taxa including the honeybee <xref rid="pone.0008597-Beye1" ref-type="bibr">[21]</xref>, <xref rid="pone.0008597-JensenSeaman1" ref-type="bibr">[62]</xref>, <xref rid="pone.0008597-Majewski1" ref-type="bibr">[71]</xref>, <xref rid="pone.0008597-Bagshaw1" ref-type="bibr">[72]</xref>. However, the basis for this relationship is unclear. Some data indicate that simple repeats could be involved in the initiation of recombination <xref rid="pone.0008597-Treco1" ref-type="bibr">[73]</xref>&#x02013;<xref rid="pone.0008597-Gendrel1" ref-type="bibr">[76]</xref>, while others suggest that simple repeats are functionally involved in the regulation of gene expression <xref rid="pone.0008597-Struhl1" ref-type="bibr">[77]</xref>&#x02013;<xref rid="pone.0008597-Curi1" ref-type="bibr">[83]</xref>. The present data do not allow us to evaluate these two hypotheses.</p><p>The analysis of gene parameters in the parasitoid wasp genome revealed a strong positive correlation between the recombination rate and gene content. This contrasts with the data from the honeybee genome, where the two parameters apparently vary independently of each other <xref rid="pone.0008597-Beye1" ref-type="bibr">[21]</xref>. A more detailed analysis of the <italic>Nasonia</italic> genome sequences showed that the strong association between the recombination rate and the gene content is due to a greater distance between genes and an increased size of their introns in regions of the genome with a low recombination rate, relative to those with a high rate. No significant correlation between the recombination rate and the size of introns has been found in the eusocial honeybee <xref rid="pone.0008597-Beye1" ref-type="bibr">[21]</xref>, and whether the recombination rate in the honeybee is correlated with the distance between genes is unclear: the reported <italic>p</italic> value of &#x0003c;0.014 is inconclusive when the significance level is adjusted for multiple testing.</p><p>Our data for the parasitoid wasp are in accordance with those from <italic>Drosophila</italic> and human <xref rid="pone.0008597-Kliman1" ref-type="bibr">[14]</xref>, <xref rid="pone.0008597-Comeron1" ref-type="bibr">[16]</xref> where the recombination rate has a strong negative association with the size of introns. Comeron and Kreitman <xref rid="pone.0008597-Comeron1" ref-type="bibr">[16]</xref> proposed that a low recombination rate indirectly selects for larger introns, which reduce Hill-Robertson interference between adjacent exons and thus facilitate adaptive evolution. However, Prachumwat et al. <xref rid="pone.0008597-Prachumwat1" ref-type="bibr">[84]</xref> found that the recombination rate in <italic>Caenorhabditis elegans</italic> is positively associated with the size of introns and suggested that other (additional) factors influence intron size evolution. One such factor could be the gene expression level <xref rid="pone.0008597-Pl1" ref-type="bibr">[17]</xref>, <xref rid="pone.0008597-Prachumwat1" ref-type="bibr">[84]</xref>, <xref rid="pone.0008597-CastilloDavis1" ref-type="bibr">[85]</xref>. If recombination happens to occur more often in regions that contain highly expressed genes <xref rid="pone.0008597-Gerton1" ref-type="bibr">[86]</xref>, and if highly expressed genes tend to have shorter introns <xref rid="pone.0008597-CastilloDavis1" ref-type="bibr">[85]</xref>, thereby reducing the cost of transcription, we would also expect to find an association between the recombination rate and the size of introns. Could this indicate that the observed correlation between the recombination rate and the size of introns in <italic>Nasonia</italic> may rather reflect an association between the recombination rate and gene expression? Currently, we cannot test this hypothesis as we have no genome-wide gene expression data available for <italic>Nasonia</italic>. The only clue indicating that differences in gene expression level are not the reason for the observed correlation between the recombination rate and the size of introns is that we do not see a comparable pattern when examining the size of exons, the number of exons per gene, and the overall size of proteins. If the transcription costs of highly expressed genes have been optimized, reducing the length of introns, we would expect a similar, although weaker, pattern for exons. A statistically significant dependency between gene expression and total exon length has indeed been found in <italic>C. elegans</italic>, but a similar analysis in humans failed to demonstrate this association <xref rid="pone.0008597-CastilloDavis1" ref-type="bibr">[85]</xref>. However, differences in gene expression levels cannot explain the observed negative correlation between the recombination rate and the distance between genes. This correlation could be construed as a reduction of the Hill-Robertson effect between functional genomic elements in areas of low recombination and/or as a depletion of functional genomic elements in regions with a low recombination rate where more slightly deleterious mutations may accumulate <xref rid="pone.0008597-Gaut1" ref-type="bibr">[13]</xref>.</p><p>Do we find evidence for an accumulation of slightly deleterious mutations in regions of the <italic>Nasonia</italic> genome with low recombination frequencies? Our data show an overall negative trend between the recombination rate and both the amino acid distance (<italic>d</italic>
+<sub>A</sub>) and the ratio of non-synonymous to synonymous substitutions per site (<italic>&#x003c9;</italic>) when comparing <italic>N. vitripennis</italic> exon sequences with those of <italic>N. giraulti</italic> and <italic>N. longicornis</italic>. A negative correlation is expected if slightly deleterious mutations, and possibly also genes that are less constrained, accumulate in regions of the genome with low recombination frequency because of the reduced efficiency of natural selection. However, only the correlation between the recombination rate and <italic>&#x003c9;</italic> when comparing <italic>N. vitripennis</italic> with <italic>N. longicornis</italic> proved to be statistically significant. Since males of <italic>N. giraulti</italic> tend to mate more frequently with their sisters than males of <italic>N. longicornis</italic>
+<xref rid="pone.0008597-Drapeau1" ref-type="bibr">[87]</xref>, <xref rid="pone.0008597-Leonard1" ref-type="bibr">[88]</xref>, a smaller effective population size is expected for <italic>N. giraulti</italic>. One explanation for the lack of statistical significance could therefore be a lag in the removal of slightly deleterious non-synonymous mutations in this species <xref rid="pone.0008597-Rocha1" ref-type="bibr">[89]</xref>, given the comparatively young age of the species group of 0.4&#x02013;1.0 Myr <xref rid="pone.0008597-Campbell1" ref-type="bibr">[90]</xref>. In the honeybee, Beye et al. <xref rid="pone.0008597-Beye1" ref-type="bibr">[21]</xref> also assessed the relationship between the recombination rate and the broad scale evolutionary rate. In contrast to the amino acid divergence and the ratio of non-synonymous to synonymous substitutions per site that we examined in the present investigation, they analyzed the proportion of most diverged genes by using the E value of the best hit when searching annotated honeybee genes against the Genbank non-redundant protein database. However, no significant association was found <xref rid="pone.0008597-Beye1" ref-type="bibr">[21]</xref>.</p></sec><sec id="s3f"><title>Conclusions</title><p>The inference of the recombination frequencies and the analysis of chromosome, sequence, and gene parameters associated with it in the genome of the parasitoid wasp <italic>Nasonia</italic> confirmed that the honeybee genome differs in many features from the genomes of other taxa, even those belonging to the same order, the Hymenoptera. The genome-wide recombination rate in our parasitoid wasp is less than one tenth that of the honeybee, similar to the genome-wide recombination rate found in most other higher eukaryotes. Genes in regions of the <italic>Nasonia</italic> genome with a high local recombination rate have significantly smaller introns and are more densely packed than genes in regions with a low rate&#x02013;a pattern that has also been found in most other organisms, but not the honeybee. In these respects, the genome of the haplodiploid wasp <italic>Nasonia</italic> resembles the genomes of diploid organisms, suggesting that the genomes of haplodiploid and diploid organisms do not have to differ systematically in their recombination rates and associated parameters. The exceptionally high recombination rate in eusocial Hymenoptera is most likely not therefore a consequence of haplodiploidy, but rather of some more honeybee-specific character, perhaps eusociality itself. With the availability of the <italic>Nasonia</italic> genome sequences and the high-density linkage map presented here, we have taken the first step in exploring the complex causes and consequences of the recombination rate differences between the honeybee and other taxa. However, the conspicuous discrepancy in the recombination frequencies between the two comparatively closely related taxa, <italic>Apis</italic> and <italic>Nasonia</italic>, is a striking phenomenon that still merits further investigation.</p></sec></sec><sec sec-type="materials|methods" id="s4"><title>Materials and Methods</title><sec id="s4a"><title>Mapping Population</title><p>Marker segregation data were collected from a population of 112, 12&#x02013;16 h old male F<sub>2</sub> hybrid embryos of <italic>Nasonia vitripennis</italic> (strain AsymCX, &#x02640;) and <italic>Nasonia giraulti</italic> (strain RV2X(U), &#x02642;). The same population had been used before by Niehuis et al. <xref rid="pone.0008597-Niehuis1" ref-type="bibr">[33]</xref> to infer a <italic>Nasonia</italic> framework map with chromosomal anchored markers. The parental strains AsymCX and RV2X(U) are those for which the genome had been sequenced <xref rid="pone.0008597-Werren1" ref-type="bibr">[26]</xref> and were generated in the Werren laboratory by inbreeding followed by antibiotic curing of the endosymbiont <italic>Wolbachia</italic>
+<xref rid="pone.0008597-Bordenstein1" ref-type="bibr">[91]</xref>.</p></sec><sec id="s4b"><title>Design of Locus and Allele Specific Oligonucleotides for SNP Genotyping</title><p>Using BLASTN <xref rid="pone.0008597-Altschul1" ref-type="bibr">[92]</xref> and applying the SEG filter for low complexity sequences, we searched for single nucleotide polymorphisms (SNPs) between NCBI REFSEQ predicted exons of the <italic>N. vitripennis</italic> genome and trace sequences of <italic>N. giraulti</italic>. We only considered SNPs that were i) flanked by 100 nucleotides (nt) up and downstream that were identical between <italic>N. vitripennis</italic> and <italic>N. giraulti</italic> and ii) verified by at least two identical <italic>N. giraulti</italic> trace sequences, since the <italic>N. giraulti</italic> trace sequence archive consists of unreplicated single-pass sequences. All <italic>N. vitripennis</italic> sequences with a SNP site were searched against the <italic>N. vitripennis</italic> genome and those with a second best BLAST hit with an E value&#x0003c;10<sup>&#x02212;10</sup> were discarded as non-unique sequences. A total of 2,293 sequence alignments were submitted to Illumina (Illumina Inc., San Diego, USA) for design of locus and allele specific oligonucleotide primers. For 2,035 of them, it was possible to design suitable primers for high-throughput SNP genotyping with the Illumina GoldenGate Genotyping Assay. Given the restricted capacity of the SNP genotyping microarray, however, only 644 were necessary to maximize the number of scaffolds represented on the array (<xref ref-type="supplementary-material" rid="pone.0008597.s009">Table S9</xref>).</p><p>We searched for extra SNPs in exon sequences of nuclear encoded genes of the oxidative phosphorylation (OXPHOS) pathway for a separate study <xref rid="pone.0008597-Gibson1" ref-type="bibr">[93]</xref> by allowing a narrower alignment window-width up and downstream of a potential SNP. For all 125 sequence alignments that had been submitted to Illumina suitable oligonucleotides were designed (<xref ref-type="supplementary-material" rid="pone.0008597.s010">Table S10</xref>). Finally, we designed oligonucleotides for 765 more SNPs without restricting the SNP search to coding sequences as described by Werren et al. <xref rid="pone.0008597-Werren1" ref-type="bibr">[26]</xref> (<xref ref-type="supplementary-material" rid="pone.0008597.s011">Table S11</xref>).</p></sec><sec id="s4c"><title>Microsatellite Markers</title><p>In addition to the 1,534 SNP markers for the Illumina GoldenGate Genotyping Assay and the 38 SNP, length polymorphic, and present/absent markers that had been genotyped in the mapping population by Niehuis et al. <xref rid="pone.0008597-Niehuis1" ref-type="bibr">[33]</xref>, we included 73 microsatellite markers from a study that will be published elsewhere (Leo Beukeboom, unpublished; data available upon request; <xref ref-type="supplementary-material" rid="pone.0008597.s003">Table S3</xref>).</p></sec><sec id="s4d"><title>Molecular Procedures</title><p>Genomic DNA of the 112 male F<sub>2</sub> hybrid embryos was isolated earlier by Niehuis et al. <xref rid="pone.0008597-Niehuis1" ref-type="bibr">[33]</xref> and had been pre-amplified with the GenomiPhi DNA Amplification Kit (Amersham Biosciences, Piscataway, NJ) to cope with the small amount of extracted DNA (see <xref rid="pone.0008597-Niehuis1" ref-type="bibr">[33]</xref>). We re-amplified aliquots of the DNA by using the same amplification kit and purified the DNA with a standard ethanol precipitation protocol (Note: previous work in our lab had shown that genotype data of pre-amplified and re-amplified genomic DNA from <italic>Nasonia</italic> embryos are fully consistent). We estimated the amount of amplified DNA with a NanoDrop 1000 spectrophotometer (NanoDrop Technologies, Wilmington, DE) and diluted the DNA of all samples with TE buffer (pH 8.0) to a final concentration of 50 ng per &#x000b5;l.</p><p>For SNP genotyping, we followed the Illumina Goldengate Genotyping Assay protocol provided by the manufacturer (Illumina Inc., San Diego, USA). All samples were hybridized to an Illumina Sentrix Array Matrix platform at The Translational Genomics Research Institute (Phoenix, AZ, USA), which was then scanned with an Illumina Beadstation 500 reader. The genotyping data were analyzed with the Illumina Beadstudio software.</p><p>Microsatellite markers were genotyped by separating their PCR products on a denaturing polyacrylamide gel as described by Niehuis et al. <xref rid="pone.0008597-Niehuis1" ref-type="bibr">[33]</xref>, <xref rid="pone.0008597-Niehuis2" ref-type="bibr">[94]</xref> or on a 4&#x00025; agarose gel. The PCR reaction set up for MS marker &#x02018;mtRNApoly&#x02019; and the MS markers of the &#x02018;Scaf&#x02019; series (<xref ref-type="supplementary-material" rid="pone.0008597.s003">Table S3</xref>) followed the protocol provided by Niehuis et al. <xref rid="pone.0008597-Niehuis1" ref-type="bibr">[33]</xref>, <xref rid="pone.0008597-Niehuis2" ref-type="bibr">[94]</xref>. The applied PCR temperature profile started with a 5 min denaturation step at 95&#x000b0;C followed by 30 cycles of 1 min at 95&#x000b0;C, 1 min at 55&#x000b0;C, and 1 min at 72&#x000b0;C, followed by 10 min at 72&#x000b0;C. PCR amplification of the MS markers of the Nv100 and Nv300 series (<xref ref-type="supplementary-material" rid="pone.0008597.s003">Table S3</xref>) followed a protocol that will by published elsewhere (data available upon request).</p></sec><sec id="s4e"><title>Linkage Map Reconstruction</title><p>Prior to linkage map reconstruction, we removed all markers with &#x02265;10&#x00025; missing information from the data set. We further excluded markers that showed one of the two parental genotypes at a frequency &#x02265;70&#x00025;; prior screening of a representative subset of the studied markers in the mapping population revealed neither of the two parental genotypes at a frequency higher than 59&#x00025; <xref rid="pone.0008597-Niehuis1" ref-type="bibr">[33]</xref>. The segregation data of the remaining markers were studied with the program MultiPoint (<xref rid="pone.0008597-Mester1" ref-type="bibr">[95]</xref>&#x02013;<xref rid="pone.0008597-Mester3" ref-type="bibr">[97]</xref>; <ext-link ext-link-type="uri" xlink:href="http://www.multiqtl.com">http://www.multiqtl.com</ext-link>). The optimal overall marker order was inferred following the protocol described by Niehuis et al. <xref rid="pone.0008597-Niehuis1" ref-type="bibr">[33]</xref>. We subsequently visually checked the genotype data of each marker for plausibility and removed markers that differed in a genotype from that of immediately adjacent markers on both sides, since we regarded their deviating genotype(s) as highly improbable (see <xref ref-type="sec" rid="s3">discussion</xref>). Map distances were calculated from the recombination fractions using Haldane's mapping function <xref rid="pone.0008597-Haldane1" ref-type="bibr">[98]</xref> and are given in centimorgans (cM).</p></sec><sec id="s4f"><title>Recombination Rate Estimates</title><p>The genome-wide recombination rate was assessed by dividing the estimated genetic length of the linkage map (in cM) by i) the estimated physical size of the total <italic>Nasonia</italic> genome (312 Mb; <xref rid="pone.0008597-Beukeboom1" ref-type="bibr">[45]</xref>) and ii) the total size of the assembled <italic>N. vitripennis</italic> genome (295.1 Mb; <xref rid="pone.0008597-Werren1" ref-type="bibr">[26]</xref>).</p><p>To approximate local recombination rates, we first estimated the genetic and the physical length of each marker cluster (i.e., group of markers in which the markers did not recombine) on the linkage map. The genetic length of a marker cluster was regarded as half the sum of its genetic distances to the two adjacent marker clusters (see also <xref ref-type="supplementary-material" rid="pone.0008597.s007">Table S7</xref>). The physical length of a marker cluster was estimated by summation of the lengths of the scaffolds or scaffold regions with markers on it that mapped in the marker cluster (see also <xref ref-type="supplementary-material" rid="pone.0008597.s007">Table S7</xref> and <xref ref-type="supplementary-material" rid="pone.0008597.s012">Table S12</xref>). In cases in which a scaffold spanned more than one marker cluster, the physical length of the fraction of the scaffold in the marker cluster under consideration was estimated by i) calculating the distance between the two most distant markers on the scaffold in the specific marker cluster and ii) adding half of the distance(s) between the two nearest markers on the scaffold in the marker cluster under consideration and the adjacent marker cluster(s). The distance between the last mapped marker on either side of a scaffold and the actual end of the scaffolds was added to the marker cluster that included the nearest mapped marker on this scaffold.</p><p>We inferred local recombination rates by dividing the sum of the genetic lengths of two consecutive marker clusters by the sum of the two marker clusters' physical length. We thereby ensured that at least one recombination event had occurred within a given window along a chromosome. To visualize differences in the local recombination rate along the chromosomes, we applied a sliding window approach. For the statistical analysis, however, recombination rates as well as chromosome, sequence, and gene parameters (see below) were estimated for consecutive non-overlapping windows, since a sliding window approach artificially increases spatial autocorrelation due to non-independence of the data within each window relative to its neighbors. We omitted the first and the last marker cluster on each linkage group to account for the fact that its genetic and physical size are not well defined. Four additional marker clusters (i.e., 1.61, 3.53, 4.41, and 5.51; see <xref ref-type="fig" rid="pone-0008597-g001">Figure 1</xref>) had to be discarded from the statistical analyses, since four of the five chromosomes had an uneven number of marker clusters on the linkage map.</p></sec><sec id="s4g"><title>Chromosome, Sequence, and Gene Parameters</title><p>The distance (in megabases, Mb) from the physical center of the linkage group of the non-overlapping windows to the center of a window was calculated using the physical size estimates for the 264 marker clusters (see above). GC content was calculated with the aid of a Perl script. Simple repeats were analyzed with the program <italic>Msatfinder</italic> and applying the <italic>regex</italic> search engine <xref rid="pone.0008597-Thurston1" ref-type="bibr">[99]</xref>. We considered <italic>monomers</italic> with more than eleven repeats as well as <italic>di</italic>-, <italic>tri</italic>-, <italic>tetra</italic>-, <italic>penta</italic>-, and <italic>hexamers</italic> with more than five repeats (<italic>i.e.</italic>, microsatellites in the narrow sense <xref rid="pone.0008597-Epplen1" ref-type="bibr">[100]</xref>).</p><p>To statistically test for an association of the recombination rate with specific gene parameters, we analyzed the distribution and characteristics of 10,769 predicted <italic>N. vitripennis</italic> genes on the mapped scaffolds of the non-overlapping windows using a GLEAN consensus gene set for <italic>N. vitripennis</italic> with a total of 15,216 predicted genes kindly provided by Christine Elsik (A&#x00026;M University, Austin, TX; GLEAN6). We estimated gene density by counting the number of predicted genes for a given window and dividing by the estimated physical size (in Mb) of the window (N<sub>g</sub>&#x0200a;=&#x0200a;10,769). In cases where only part of a gene was laying in a window, we added the fraction of the gene's total length (defined as the distance between start and stop codon) laying in the window under consideration to the window's gene count. The average distance (in kilobases, Kb) between genes in a window was calculated for scaffolds or scaffold fragments with two or more predicted genes (N<sub>d</sub>&#x0200a;=&#x0200a;10,291). The average size of genes (i.e., number of amino acids, aa) and the average number of exons of a gene in a window was inferred only from genes contained entirely within the window under consideration (N<sub>s</sub>&#x0200a;=&#x0200a;10,656). The average size of exons and the average size of introns were deduced from all exons and introns in a window except those, which span more than one window (N<sub>e</sub>&#x0200a;=&#x0200a;71,550; N<sub>i</sub>&#x0200a;=&#x0200a;60,822).</p><p>To identify orthologous sequences of predicted <italic>N. vitripennis</italic> exons in the <italic>N. giraulti</italic> genome as well as in the <italic>N. longicornis</italic> genome, we used each mapped <italic>N. vitripennis</italic> exon contained entirely in the non-overlapping windows as a query against the <italic>N. giraulti</italic> and <italic>N. longicornis</italic> trace sequence archives using BLASTN <xref rid="pone.0008597-Altschul1" ref-type="bibr">[92]</xref> and applying the SEG filter for low complexity sequences and retained only those hits with an E value&#x0003c;10<sup>&#x02212;20</sup>. Given that the <italic>N. giraulti</italic> and <italic>N. longicornis</italic> trace sequence archives consist of unreplicated single-pass sequences, we subsequently searched the <italic>N. giraulti</italic> and <italic>N. longicornis</italic> trace sequence archives with the respective hit sequence; only those sequences or sequence sections were considered for which a second trace archive sequence (E value&#x0003c;10<sup>&#x02212;20</sup>) confirmed its nucleotide sequence. We then searched each putative <italic>N. giraulti</italic> and <italic>N. longicornis</italic> orthologous exon sequence against the <italic>N. vitripennis</italic> genome. We considered sequences as orthologs if the coordinates of the hit with the highest BLAST score and an E value&#x0003c;10<sup>&#x02212;20</sup> fell within the bounds of the initial <italic>N. vitripennis</italic> exon query sequence. All exon sequences were finally trimmed so that they started with the reading frame 0 and were a multiple of three nucleotides long. <italic>N. giraulti</italic> and <italic>N. longicornis</italic> sequences that included an internal stop codon were discarded. We obtained a total of 18,081 ortholog exon sequences or sequence sections for <italic>N. giraulti</italic> and 12,986 for <italic>N. longicornis</italic>. They respectively cover 17.1&#x00025; and 12.2&#x00025; of the predicted coding sequence in the <italic>N. vitripennis</italic> genome that map within the non-overlapping windows and 13.1&#x00025; and 9.3&#x00025; of the total predicted coding sequence of <italic>N. vitripennis</italic>.</p><p>All orthologous amino acid sequences were aligned with CLUSTAL W (1.83) <xref rid="pone.0008597-Thompson1" ref-type="bibr">[101]</xref> employing the BLOSUM62 substitution matrix. The alignment of the corresponding coding sequences was deduced from the amino acid alignments. Amino acid divergence (<italic>d</italic>
+<sub>A</sub>) were calculated with the PHYLIP software package <xref rid="pone.0008597-Felsenstein2" ref-type="bibr">[102]</xref> and using the PAM substitution matrix <xref rid="pone.0008597-Dayhoff1" ref-type="bibr">[103]</xref>. The ratio of non-synonymous to synonymous substitutions (<italic>&#x003c9;</italic>) was estimated with the maximum likelihood method proposed by Goldman and Yang <xref rid="pone.0008597-Goldman1" ref-type="bibr">[104]</xref> and implemented in the software package PAML 4 <xref rid="pone.0008597-Yang1" ref-type="bibr">[105]</xref>. Based on a parameter sensitivity analysis, we applied a codon substitution model that accounted for transitional rate bias (&#x003ba; estimated) and unequal codon frequencies (F61 matrix).</p><p>Average values of the above specified chromosome, sequence, and gene parameters were calculated using the data from the non-overlapping windows.</p></sec><sec id="s4h"><title>Statistical Analyses</title><p>We applied Dutilleul's modified <italic>t</italic> test <xref rid="pone.0008597-Dutilleul1" ref-type="bibr">[29]</xref> to assess correlations between variables using the program PASSaGE 2.0 <xref rid="pone.0008597-Rosenberg1" ref-type="bibr">[106]</xref>. The test corrects for spatial autocorrelation, i.e., the fact that values of variables sampled spatially close to one another are not necessarily independent from each other. The test requires information about the distance between all pairs of marker clusters, which we calculated using the genetic distance estimates from the inferred linkage map. The genetic distance between marker clusters from separate chromosomes was treated as missing information. The distance values were sorted into 15 contrast sets, each with an approximately equal number of observations (97&#x02013;105). All tests were performed using ranked data, since we could not assume normal distributions.</p></sec></sec><sec sec-type="supplementary-material" id="s5"><title>Supporting Information</title><supplementary-material content-type="local-data" id="pone.0008597.s001"><label>Table S1</label><caption><p>Markers removed due to missing genotypes or skewed genotype frequencies. Markers removed because genotype information is missing for 10&#x00025; or more individuals and/or because they show one of the two genotypes with 70&#x00025; or higher frequency.</p><p>(0.55 MB XLS)</p></caption><media xlink:href="pone.0008597.s001.xls"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0008597.s002"><label>Table S2</label><caption><p>Markers removed due to disturbance of marker order or improbable genotypes. Markers removed from the dataset because they disturbed marker order stability or showed improbable genotypes.</p><p>(0.15 MB XLS)</p></caption><media xlink:href="pone.0008597.s002.xls"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0008597.s003"><label>Table S3</label><caption><p>Studied MS, SNP, length polymorphic, and present/absent markers.</p><p>(0.05 MB XLS)</p></caption><media xlink:href="pone.0008597.s003.xls"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0008597.s004"><label>Table S4</label><caption><p>SNP markers that did not map on any of the five <italic>Nasonia</italic> chromosomes. SNP markers that did not map on any of the five <italic>Nasonia</italic> chromosomes.</p><p>(0.02 MB XLS)</p></caption><media xlink:href="pone.0008597.s004.xls"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0008597.s005"><label>Table S5</label><caption><p>Final genotype dataset used to infer high-density linkage map.</p><p>(2.43 MB XLS)</p></caption><media xlink:href="pone.0008597.s005.xls"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0008597.s006"><label>Table S6</label><caption><p>Observed number of recombination events per chromosome and distance between them. Observed number of recombination events per chromosome and distance between them.</p><p>(0.03 MB XLS)</p></caption><media xlink:href="pone.0008597.s006.xls"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0008597.s007"><label>Table S7</label><caption><p>Size and recombination rate estimates for marker clusters. Size and recombination rate estimates for marker clusters.</p><p>(0.05 MB XLS)</p></caption><media xlink:href="pone.0008597.s007.xls"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0008597.s008"><label>Table S8</label><caption><p>Estimates of chromosome, sequence, and gene parameters. Chromosome, sequence, and gene parameters estimated for non-overlapping windows of two consecutive marker clusters each.</p><p>(0.09 MB XLS)</p></caption><media xlink:href="pone.0008597.s008.xls"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0008597.s009"><label>Table S9</label><caption><p>SNP markers of <italic>Nasonia</italic> REFSEQ exon sequences.</p><p>(0.16 MB XLS)</p></caption><media xlink:href="pone.0008597.s009.xls"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0008597.s010"><label>Table S10</label><caption><p>SNP markers of <italic>Nasonia</italic> OXPHOS pathway exon sequences.</p><p>(0.05 MB XLS)</p></caption><media xlink:href="pone.0008597.s010.xls"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0008597.s011"><label>Table S11</label><caption><p>SNP markers of coding and non-coding sequences (Desjardins et al. in prep.).</p><p>(0.19 MB XLS)</p></caption><media xlink:href="pone.0008597.s011.xls"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0008597.s012"><label>Table S12</label><caption><p>Estimated sections of <italic>N. vitripennis</italic> scaffold sequences within marker clusters.</p><p>(0.06 MB XLS)</p></caption><media xlink:href="pone.0008597.s012.xls"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material></sec></body><back><ack><p>We are grateful to Stephen Pratt for support with the statistical analysis of the genome data, and Robert E. Page Jr. and Sylvia Gerritsma for helpful comments on an earlier draft of this article. We are indebted to Benjamin Normark and an anonymous reviewer for valuable feedback that helped to further improve this manuscript. Christine Elsik kindly provided us with the GLEAN6 consensus gene set for <italic>N. vitripennis</italic> prior to its publication.</p></ack><fn-group><fn fn-type="COI-statement"><p><bold>Competing Interests: </bold>The authors have declared that no competing interests exist.</p></fn><fn fn-type="financial-disclosure"><p><bold>Funding: </bold>ON acknowledges the Alexander von Humboldt Foundation for a Feodor Lynen Research Fellowship for Postdoctoral Researchers. BAP, TK, and LWB acknowledge the Netherlands Organization for Scientific Research NWO/ALW (grants 863.08.008, 816.01.004, and 833.02.003). BAP and DMS were supported by the Natural Environment Research Council (NE/C51932X/1 and NE/D009979/1). Computational work by CAD was supported by a grant from the National Institutes of Health to JHW (NIH 5R01GM070026). This research was enabled by a grant to JG from the National Institutes of Health (NIH 1R21 RR024199-01). The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</p></fn></fn-group><ref-list><title>References</title><ref id="pone.0008597-Kleckner1"><label>1</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kleckner</surname><given-names>N</given-names></name></person-group>
+<year>1996</year>
+<article-title>Meiosis: How could it work?</article-title>
+<source>Proc Natl Acad Sci U S A</source>
+<volume>93</volume>
+<fpage>8167</fpage>
+<lpage>8174</lpage>
+<pub-id pub-id-type="pmid">8710842</pub-id></element-citation></ref><ref id="pone.0008597-Roeder1"><label>2</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Roeder</surname><given-names>GS</given-names></name></person-group>
+<year>1997</year>
+<article-title>Meiotic chromosomes: it takes two to tango.</article-title>
+<source>Genes Dev</source>
+<volume>11</volume>
+<fpage>2600</fpage>
+<lpage>2621</lpage>
+<pub-id pub-id-type="pmid">9334324</pub-id></element-citation></ref><ref id="pone.0008597-Smith1"><label>3</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Smith</surname><given-names>KN</given-names></name><name><surname>Nicolas</surname><given-names>A</given-names></name></person-group>
+<year>1998</year>
+<article-title>Recombination at work for meiosis.</article-title>
+<source>Curr Opin Genet Dev</source>
+<volume>8</volume>
+<fpage>200</fpage>
+<lpage>211</lpage>
+<pub-id pub-id-type="pmid">9610411</pub-id></element-citation></ref><ref id="pone.0008597-Michod1"><label>4</label><element-citation publication-type="book">
+<person-group person-group-type="author"><name><surname>Michod</surname><given-names>RE</given-names></name><name><surname>Levin</surname><given-names>BR</given-names></name></person-group>
+<year>1988</year>
+<article-title>The Evolution of Sex.</article-title>
+<publisher-loc>Sunderland, Mass</publisher-loc>
+<publisher-name>Sinauer Associates</publisher-name>
+<size units="page">342</size>
+</element-citation></ref><ref id="pone.0008597-Otto1"><label>5</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Otto</surname><given-names>SP</given-names></name><name><surname>Lenormand</surname><given-names>T</given-names></name></person-group>
+<year>2002</year>
+<article-title>Resolving the paradox of sex and recombination.</article-title>
+<source>Nature Rev Genet</source>
+<volume>3</volume>
+<fpage>252</fpage>
+<lpage>261</lpage>
+<pub-id pub-id-type="pmid">11967550</pub-id></element-citation></ref><ref id="pone.0008597-Kondrashov1"><label>6</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kondrashov</surname><given-names>AS</given-names></name></person-group>
+<year>1993</year>
+<article-title>Classification of hypotheses on the advantage of amphimixis.</article-title>
+<source>J Hered</source>
+<volume>84</volume>
+<fpage>372</fpage>
+<lpage>387</lpage>
+<pub-id pub-id-type="pmid">8409359</pub-id></element-citation></ref><ref id="pone.0008597-Hill1"><label>7</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Hill</surname><given-names>WG</given-names></name><name><surname>Robertson</surname><given-names>A</given-names></name></person-group>
+<year>1966</year>
+<article-title>The effect of linkage on limits to artificial selection.</article-title>
+<source>Genet Res</source>
+<volume>8</volume>
+<fpage>269</fpage>
+<lpage>294</lpage>
+<pub-id pub-id-type="pmid">5980116</pub-id></element-citation></ref><ref id="pone.0008597-Felsenstein1"><label>8</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Felsenstein</surname><given-names>J</given-names></name></person-group>
+<year>1974</year>
+<article-title>The evolutionary advantage of recombination.</article-title>
+<source>Genetics</source>
+<volume>78</volume>
+<fpage>737</fpage>
+<lpage>756</lpage>
+<pub-id pub-id-type="pmid">4448362</pub-id></element-citation></ref><ref id="pone.0008597-Peck1"><label>9</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Peck</surname><given-names>JR</given-names></name></person-group>
+<year>1994</year>
+<article-title>A ruby in the rubbish: beneficial mutations, deleterious mutations and the evolution of sex.</article-title>
+<source>Genetics</source>
+<volume>137</volume>
+<fpage>597</fpage>
+<lpage>606</lpage>
+<pub-id pub-id-type="pmid">8070669</pub-id></element-citation></ref><ref id="pone.0008597-Barton1"><label>10</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Barton</surname><given-names>NH</given-names></name></person-group>
+<year>1995</year>
+<article-title>Linkage and the limits to natural selection.</article-title>
+<source>Genetics</source>
+<volume>140</volume>
+<fpage>821</fpage>
+<lpage>841</lpage>
+<pub-id pub-id-type="pmid">7498757</pub-id></element-citation></ref><ref id="pone.0008597-Otto2"><label>11</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Otto</surname><given-names>SP</given-names></name><name><surname>Barton</surname><given-names>NH</given-names></name></person-group>
+<year>1997</year>
+<article-title>The evolution of recombination: removing the limits to natural selection.</article-title>
+<source>Genetics</source>
+<volume>147</volume>
+<fpage>879</fpage>
+<lpage>906</lpage>
+<pub-id pub-id-type="pmid">9335621</pub-id></element-citation></ref><ref id="pone.0008597-Li1"><label>12</label><element-citation publication-type="book">
+<person-group person-group-type="author"><name><surname>Li</surname><given-names>WH</given-names></name></person-group>
+<year>1997</year>
+<article-title>Molecular evolution.</article-title>
+<publisher-loc>Sunderland, Mass</publisher-loc>
+<publisher-name>Sinauer Associates</publisher-name>
+<size units="page">487</size>
+</element-citation></ref><ref id="pone.0008597-Gaut1"><label>13</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Gaut</surname><given-names>BS</given-names></name><name><surname>Wright</surname><given-names>SI</given-names></name><name><surname>Rizzon</surname><given-names>C</given-names></name><name><surname>Dvorak</surname><given-names>J</given-names></name><name><surname>Anderson</surname><given-names>LK</given-names></name></person-group>
+<year>1997</year>
+<article-title>Recombination: an underappreciated factor in the evolution of plant genomes.</article-title>
+<source>Nature Rev Genet</source>
+<volume>8</volume>
+<fpage>77</fpage>
+<lpage>84</lpage>
+</element-citation></ref><ref id="pone.0008597-Kliman1"><label>14</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kliman</surname><given-names>RM</given-names></name><name><surname>Hey</surname><given-names>J</given-names></name></person-group>
+<year>1993</year>
+<article-title>Reduced natural selection associated with low recombination in <italic>Drosophila melanogaster</italic>.</article-title>
+<source>Mol Bio Evo</source>
+<volume>10</volume>
+<fpage>1239</fpage>
+<lpage>1258</lpage>
+</element-citation></ref><ref id="pone.0008597-Carvalho1"><label>15</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Carvalho</surname><given-names>AB</given-names></name><name><surname>Clark</surname><given-names>AG</given-names></name></person-group>
+<year>1999</year>
+<article-title>Intron size and natural selection.</article-title>
+<source>Nature</source>
+<volume>401</volume>
+<fpage>344</fpage>
+<pub-id pub-id-type="pmid">10517631</pub-id></element-citation></ref><ref id="pone.0008597-Comeron1"><label>16</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Comeron</surname><given-names>J</given-names></name><name><surname>Kreitman</surname><given-names>M</given-names></name></person-group>
+<year>2000</year>
+<article-title>The correlation between intron length and recombination in <italic>Drosophila</italic>. Dynamic equilibrium between mutational and selective forces.</article-title>
+<source>Genetics</source>
+<volume>156</volume>
+<fpage>1175</fpage>
+<lpage>1190</lpage>
+<pub-id pub-id-type="pmid">11063693</pub-id></element-citation></ref><ref id="pone.0008597-Pl1"><label>17</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>P&#x000e1;l</surname><given-names>C</given-names></name><name><surname>Papp</surname><given-names>B</given-names></name><name><surname>Hurst</surname><given-names>LD</given-names></name></person-group>
+<year>2001</year>
+<article-title>Does the recombination rate affect the efficiency of purifying selection? The yeast genome provides a partial answer.</article-title>
+<source>Mol Biol Evol</source>
+<volume>18</volume>
+<fpage>2323</fpage>
+<lpage>2326</lpage>
+<pub-id pub-id-type="pmid">11719582</pub-id></element-citation></ref><ref id="pone.0008597-Bachtrog1"><label>18</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Bachtrog</surname><given-names>D</given-names></name><name><surname>Charlesworth</surname><given-names>B</given-names></name></person-group>
+<year>2002</year>
+<article-title>Reduced adaptation of a non-recombining neo-Y chromosome.</article-title>
+<source>Nature</source>
+<volume>416</volume>
+<fpage>323</fpage>
+<lpage>326</lpage>
+<pub-id pub-id-type="pmid">11907578</pub-id></element-citation></ref><ref id="pone.0008597-Betancourt1"><label>19</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Betancourt</surname><given-names>AJ</given-names></name><name><surname>Presgraves</surname><given-names>D</given-names></name></person-group>
+<year>2002</year>
+<article-title>Linkage limits the power of natural selection in <italic>Drosophila</italic>.</article-title>
+<source>Proc Natl Acad Sci U S A</source>
+<volume>99</volume>
+<fpage>13616</fpage>
+<lpage>13620</lpage>
+<pub-id pub-id-type="pmid">12370444</pub-id></element-citation></ref><ref id="pone.0008597-Kulathinal1"><label>20</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kulathinal</surname><given-names>RJ</given-names></name><name><surname>Bennett</surname><given-names>SM</given-names></name><name><surname>Fitzpatrick</surname><given-names>CL</given-names></name><name><surname>Noor</surname><given-names>MAF</given-names></name></person-group>
+<year>2008</year>
+<article-title>Fine-scale mapping of recombination rate in <italic>Drosophila</italic> refines its correlation to diversity and divergence.</article-title>
+<source>Proc Natl Acad Sci U S A</source>
+<volume>105</volume>
+<fpage>10051</fpage>
+<lpage>10056</lpage>
+<pub-id pub-id-type="pmid">18621713</pub-id></element-citation></ref><ref id="pone.0008597-Beye1"><label>21</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Beye</surname><given-names>M</given-names></name><name><surname>Gattermeier</surname><given-names>I</given-names></name><name><surname>Hasselmann</surname><given-names>M</given-names></name><name><surname>Gempe</surname><given-names>T</given-names></name><name><surname>Schioett</surname><given-names>M</given-names></name><etal/></person-group>
+<year>2006</year>
+<article-title>Exceptionally high levels of recombination across the honey bee genome.</article-title>
+<source>Genome Res</source>
+<volume>16</volume>
+<fpage>1339</fpage>
+<lpage>1344</lpage>
+<pub-id pub-id-type="pmid">17065604</pub-id></element-citation></ref><ref id="pone.0008597-Hunt1"><label>22</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Hunt</surname><given-names>GJ</given-names></name><name><surname>Page</surname><given-names>RE</given-names><suffix>Jr</suffix></name></person-group>
+<year>1995</year>
+<article-title>Linkage map of the honey bee, <italic>Apis mellifera</italic>, based on RAPD markers.</article-title>
+<source>Genetics</source>
+<volume>139</volume>
+<fpage>1371</fpage>
+<lpage>1382</lpage>
+<pub-id pub-id-type="pmid">7768445</pub-id></element-citation></ref><ref id="pone.0008597-The1"><label>23</label><element-citation publication-type="journal">
+<collab>The Honeybee Genome Sequencing Consortium</collab>
+<year>2006</year>
+<article-title>Insights into social insects from the genome of the honeybee <italic>Apis mellifera</italic>.</article-title>
+<source>Nature</source>
+<volume>443</volume>
+<fpage>931</fpage>
+<lpage>949</lpage>
+<pub-id pub-id-type="pmid">17073008</pub-id></element-citation></ref><ref id="pone.0008597-Gadau1"><label>24</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Gadau</surname><given-names>J</given-names></name><name><surname>Page</surname><given-names>RE</given-names><suffix>Jr</suffix></name><name><surname>Werren</surname><given-names>JH</given-names></name><name><surname>Schmid-Hempel</surname><given-names>P</given-names></name></person-group>
+<year>2000</year>
+<article-title>Genome organization and social evolution in Hymenoptera.</article-title>
+<source>Naturwissenschaften</source>
+<volume>87</volume>
+<fpage>87</fpage>
+<lpage>89</lpage>
+<pub-id pub-id-type="pmid">10663141</pub-id></element-citation></ref><ref id="pone.0008597-Wilfert1"><label>25</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Wilfert</surname><given-names>L</given-names></name><name><surname>Gadau</surname><given-names>J</given-names></name><name><surname>Schmid-Hempel</surname><given-names>P</given-names></name></person-group>
+<year>2007</year>
+<article-title>Variation in genomic recombination rates among animal taxa and the case of social insects.</article-title>
+<source>Heredity</source>
+<volume>98</volume>
+<fpage>189</fpage>
+<lpage>197</lpage>
+<pub-id pub-id-type="pmid">17389895</pub-id></element-citation></ref><ref id="pone.0008597-Werren1"><label>26</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Werren</surname><given-names>JH</given-names></name><name><surname>Richards</surname><given-names>S</given-names></name><name><surname>Desjardins</surname><given-names>CA</given-names></name><name><surname>Niehuis</surname><given-names>O</given-names></name><name><surname>Gadau</surname><given-names>J</given-names></name><etal/></person-group>
+<article-title>Functional and evolutionary insights from the genomes of three parasitoid <italic>Nasonia</italic> species.</article-title>
+<source>Science</source>
+<comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1126/science.1178028">10.1126/science.1178028</ext-link></comment>
+</element-citation></ref><ref id="pone.0008597-Rtten1"><label>27</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>R&#x000fc;tten</surname><given-names>K</given-names></name><name><surname>Pietsch</surname><given-names>C</given-names></name><name><surname>Olek</surname><given-names>K</given-names></name><name><surname>Neusser</surname><given-names>M</given-names></name><name><surname>Beukeboom</surname><given-names>LW</given-names></name><etal/></person-group>
+<year>2004</year>
+<article-title>Chromosomal anchoring of linkage groups and identification of wing size QTL markers and FISH probes derived from microdissected chromosomes in <italic>Nasonia</italic> (Pteromalidae: Hymenoptera).</article-title>
+<source>Cytogenet Genome Res</source>
+<volume>105</volume>
+<fpage>126</fpage>
+<lpage>133</lpage>
+<pub-id pub-id-type="pmid">15218268</pub-id></element-citation></ref><ref id="pone.0008597-Pietsch1"><label>28</label><element-citation publication-type="other">
+<person-group person-group-type="author"><name><surname>Pietsch</surname><given-names>C</given-names></name></person-group>
+<year>2005</year>
+<article-title>The genetics of species differences within the genus Nasonia Ashmead 1904 (Hymenoptera: Pteromalidae).</article-title>
+<source>D Nat Sci Thesis</source>
+<comment>University of W&#x000fc;rzburg, W&#x000fc;rzburg, Germany</comment>
+</element-citation></ref><ref id="pone.0008597-Dutilleul1"><label>29</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Dutilleul</surname><given-names>P</given-names></name></person-group>
+<year>1993</year>
+<article-title>Modifying the <italic>t</italic> test for assessing the correlation between two spatial processes.</article-title>
+<source>Biometrics</source>
+<volume>49</volume>
+<fpage>305</fpage>
+<lpage>314</lpage>
+</element-citation></ref><ref id="pone.0008597-Gokhman1"><label>30</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Gokhman</surname><given-names>VE</given-names></name><name><surname>Westendorf</surname><given-names>M</given-names></name></person-group>
+<year>2000</year>
+<article-title>The chromosomes of three species of the <italic>Nasonia</italic> complex (Hymenoptera, Pteromalidae).</article-title>
+<source>Beitr Entomol</source>
+<issue>Suppl</issue>
+<volume>50</volume>
+<fpage>193</fpage>
+<lpage>198</lpage>
+</element-citation></ref><ref id="pone.0008597-Gadau2"><label>31</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Gadau</surname><given-names>J</given-names></name><name><surname>Werren</surname><given-names>JH</given-names></name><name><surname>Page</surname><given-names>RE</given-names><suffix>Jr</suffix></name></person-group>
+<year>1999</year>
+<article-title>Mapping of hybrid incompatibility loci in <italic>Nasonia</italic>.</article-title>
+<source>Genetics</source>
+<volume>153</volume>
+<fpage>1731</fpage>
+<lpage>1741</lpage>
+<pub-id pub-id-type="pmid">10581280</pub-id></element-citation></ref><ref id="pone.0008597-Velthuis1"><label>32</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Velthuis</surname><given-names>BJ</given-names></name><name><surname>Yang</surname><given-names>W</given-names></name><name><surname>van Opijnen</surname><given-names>T</given-names></name><name><surname>Werren</surname><given-names>JH</given-names></name></person-group>
+<year>2005</year>
+<article-title>Genetics of female mate discrimination of heterospecific males in <italic>Nasonia</italic> (Hymenoptera, Pteromalidae).</article-title>
+<source>Anim Behav</source>
+<volume>69</volume>
+<fpage>1107</fpage>
+<lpage>1120</lpage>
+</element-citation></ref><ref id="pone.0008597-Niehuis1"><label>33</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Niehuis</surname><given-names>O</given-names></name><name><surname>Judson</surname><given-names>A</given-names></name><name><surname>Gadau</surname><given-names>J</given-names></name></person-group>
+<year>2008</year>
+<article-title>Cytonuclear genic incompatibilities cause increase mortality in male F<sub>2</sub> hybrids of <italic>Nasonia giraulti</italic> and <italic>Nasonia vitripennis</italic>.</article-title>
+<source>Genetics</source>
+<volume>178</volume>
+<fpage>413</fpage>
+<lpage>426</lpage>
+<pub-id pub-id-type="pmid">18202384</pub-id></element-citation></ref><ref id="pone.0008597-Gadau3"><label>34</label><element-citation publication-type="book">
+<person-group person-group-type="author"><name><surname>Gadau</surname><given-names>J</given-names></name><name><surname>Niehuis</surname><given-names>O</given-names></name><name><surname>Peire</surname><given-names>A</given-names></name><name><surname>Werren</surname><given-names>JH</given-names></name><name><surname>Baudry</surname><given-names>E</given-names></name><etal/></person-group>
+<year>2008</year>
+<article-title>The jewel wasp <italic>Nasonia</italic>.</article-title>
+<person-group person-group-type="editor"><name><surname>Kole</surname><given-names>C</given-names></name><name><surname>Hunter</surname><given-names>W</given-names></name></person-group>
+<source>Genome Mapping and Genomic in Animals, Vol. 1</source>
+<publisher-loc>Berlin, Heidelberg</publisher-loc>
+<publisher-name>Springer</publisher-name>
+<fpage>27</fpage>
+<lpage>41</lpage>
+</element-citation></ref><ref id="pone.0008597-Sturtevant1"><label>35</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Sturtevant</surname><given-names>AH</given-names></name></person-group>
+<year>1915</year>
+<article-title>The behaviour of the chromosomes as studied through linkage.</article-title>
+<source>Z f&#x000fc;r induk Abst Vererb</source>
+<volume>13</volume>
+<fpage>234</fpage>
+<lpage>297</lpage>
+</element-citation></ref><ref id="pone.0008597-Muller1"><label>36</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Muller</surname><given-names>HO</given-names></name></person-group>
+<year>1916</year>
+<article-title>The mechanism of crossing-over.</article-title>
+<source>Am Nat</source>
+<volume>50</volume>
+<fpage>193</fpage>
+<lpage>221</lpage>
+</element-citation></ref><ref id="pone.0008597-Colombo1"><label>37</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Colombo</surname><given-names>PC</given-names></name><name><surname>Jones</surname><given-names>GH</given-names></name></person-group>
+<year>1997</year>
+<article-title>Chiasma interference is blind to centromeres.</article-title>
+<source>Heredity</source>
+<volume>79</volume>
+<fpage>214</fpage>
+<lpage>227</lpage>
+<pub-id pub-id-type="pmid">9279014</pub-id></element-citation></ref><ref id="pone.0008597-Breeuwer1"><label>38</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Breeuwer</surname><given-names>JAJ</given-names></name><name><surname>Werren</surname><given-names>JH</given-names></name></person-group>
+<year>1995</year>
+<article-title>Hybrid breakdown between two haplodiploid species: the role of nuclear and cytoplasmic genes.</article-title>
+<source>Evolution</source>
+<volume>49</volume>
+<fpage>705</fpage>
+<lpage>717</lpage>
+<pub-id pub-id-type="pmid">28565135</pub-id></element-citation></ref><ref id="pone.0008597-Korol1"><label>39</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Korol</surname><given-names>AB</given-names></name><name><surname>Preygel</surname><given-names>IA</given-names></name><name><surname>Nyutin</surname><given-names>YI</given-names></name></person-group>
+<year>1989</year>
+<article-title>Quasi-linkage in tomato: formal analysis.</article-title>
+<source>Genetika</source>
+<volume>25</volume>
+<fpage>2225</fpage>
+<lpage>2233</lpage>
+</element-citation></ref><ref id="pone.0008597-Lorieux1"><label>40</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Lorieux</surname><given-names>M</given-names></name><name><surname>Goffinet</surname><given-names>B</given-names></name><name><surname>Perrier</surname><given-names>X</given-names></name><name><surname>Gonz&#x000e1;lez de Le&#x000f3;n</surname><given-names>D</given-names></name><name><surname>Lanaud</surname><given-names>C</given-names></name></person-group>
+<year>1995</year>
+<article-title>Maximum likelihood models for mapping genetic markers showing segregation distortion. 1. Backcross populations.</article-title>
+<source>Theor Appl Genet</source>
+<volume>90</volume>
+<fpage>73</fpage>
+<lpage>80</lpage>
+<pub-id pub-id-type="pmid">24173786</pub-id></element-citation></ref><ref id="pone.0008597-Lorieux2"><label>41</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Lorieux</surname><given-names>M</given-names></name><name><surname>Perrier</surname><given-names>X</given-names></name><name><surname>Goffinet</surname><given-names>B</given-names></name><name><surname>Lanaud</surname><given-names>C</given-names></name><name><surname>Gonz&#x000e1;lez de Le&#x000f3;n</surname><given-names>D</given-names></name></person-group>
+<year>1995</year>
+<article-title>Maximum likelihood models for mapping genetic markers showing segregation distortion. 2. F2-populations.</article-title>
+<source>Theor Appl Genet</source>
+<volume>90</volume>
+<fpage>81</fpage>
+<lpage>89</lpage>
+<pub-id pub-id-type="pmid">24173787</pub-id></element-citation></ref><ref id="pone.0008597-Liu1"><label>42</label><element-citation publication-type="book">
+<person-group person-group-type="author"><name><surname>Liu</surname><given-names>BH</given-names></name></person-group>
+<year>1998</year>
+<article-title>Statistical Genomics: Linkage, Mapping, and QTL Analysis.</article-title>
+<publisher-loc>Boca Raton, FL</publisher-loc>
+<publisher-name>CRC Press</publisher-name>
+<size units="page">611</size>
+</element-citation></ref><ref id="pone.0008597-Weston1"><label>43</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Weston</surname><given-names>R</given-names></name><name><surname>Qureshi</surname><given-names>I</given-names></name><name><surname>Werren</surname><given-names>JH</given-names></name></person-group>
+<year>1999</year>
+<article-title>Genetics of a morphological difference between two insect species.</article-title>
+<source>J Evol Biol</source>
+<volume>12</volume>
+<fpage>586</fpage>
+<lpage>595</lpage>
+</element-citation></ref><ref id="pone.0008597-Peng1"><label>44</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Peng</surname><given-names>JH</given-names></name><name><surname>Korol</surname><given-names>AB</given-names></name><name><surname>Fahima</surname><given-names>T</given-names></name><name><surname>R&#x000f6;der</surname><given-names>MS</given-names></name><name><surname>Ronin</surname><given-names>YI</given-names></name><etal/></person-group>
+<year>2000</year>
+<article-title>Molecular genetic maps in wild emmer wheat, <italic>Triticum dicoccoides</italic>: genome-wide coverage, massive negative interference, and putative quasi-linkage.</article-title>
+<source>Genome Res</source>
+<volume>10</volume>
+<fpage>1509</fpage>
+<lpage>1531</lpage>
+<pub-id pub-id-type="pmid">11042150</pub-id></element-citation></ref><ref id="pone.0008597-Beukeboom1"><label>45</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Beukeboom</surname><given-names>LW</given-names></name><name><surname>Kamping</surname><given-names>A</given-names></name><name><surname>Louter</surname><given-names>M</given-names></name><name><surname>Pijnacker</surname><given-names>LP</given-names></name><name><surname>Katju</surname><given-names>V</given-names></name><etal/></person-group>
+<year>2007</year>
+<article-title>Haploid females in the parasitic wasp <italic>Nasonia vitripennis</italic>.</article-title>
+<source>Science</source>
+<volume>315</volume>
+<fpage>206</fpage>
+<pub-id pub-id-type="pmid">17218519</pub-id></element-citation></ref><ref id="pone.0008597-True1"><label>46</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>True</surname><given-names>JR</given-names></name><name><surname>Mercer</surname><given-names>JM</given-names></name><name><surname>Laurie</surname><given-names>CC</given-names></name></person-group>
+<year>1996</year>
+<article-title>Differences in crossover frequency and distribution among three sibling species of <italic>Drosophila</italic>.</article-title>
+<source>Genetics</source>
+<volume>142</volume>
+<fpage>507</fpage>
+<lpage>523</lpage>
+<pub-id pub-id-type="pmid">8852849</pub-id></element-citation></ref><ref id="pone.0008597-Yamamoto1"><label>47</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Yamamoto</surname><given-names>K</given-names></name><name><surname>Narukawa</surname><given-names>J</given-names></name><name><surname>Kadono-Okuda</surname><given-names>K</given-names></name><name><surname>Nohata</surname><given-names>J</given-names></name><name><surname>Sasanuma</surname><given-names>M</given-names></name><etal/></person-group>
+<year>2006</year>
+<article-title>Construction of a single nucleotide polymorphism linkage map for the silkworm, <italic>Bombyx mori</italic>, based on artificial chromosome end sequences.</article-title>
+<source>Genetics</source>
+<volume>173</volume>
+<fpage>151</fpage>
+<lpage>161</lpage>
+<pub-id pub-id-type="pmid">16547112</pub-id></element-citation></ref><ref id="pone.0008597-Sirvi1"><label>48</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Sirvi&#x000f6;</surname><given-names>A</given-names></name><name><surname>Gadau</surname><given-names>J</given-names></name><name><surname>R&#x000fc;ppell</surname><given-names>O</given-names></name><name><surname>Lamatsch</surname><given-names>D</given-names></name><name><surname>Boomsma</surname><given-names>JJ</given-names></name><etal/></person-group>
+<year>2006</year>
+<article-title>High recombination frequency creates genotypic diversity in colonies of the leaf-cutting ant <italic>Acromyrmex echinatior</italic>.</article-title>
+<source>J Evo Biol</source>
+<volume>19</volume>
+<fpage>1475</fpage>
+<lpage>1485</lpage>
+</element-citation></ref><ref id="pone.0008597-Antolin1"><label>49</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Antolin</surname><given-names>MF</given-names></name><name><surname>Bosio</surname><given-names>CF</given-names></name><name><surname>Cotton</surname><given-names>J</given-names></name><name><surname>Sweeney</surname><given-names>W</given-names></name><name><surname>Strand</surname><given-names>MR</given-names></name><etal/></person-group>
+<year>1996</year>
+<article-title>Intensive linkage mapping in a wasp (<italic>Bracon hebetor</italic>) and a mosquito (<italic>Aedes aegpyti</italic>) with single-strand conformation polymorphism analysis of random amplified polymorphic DNA markers.</article-title>
+<source>Genetics</source>
+<volume>143</volume>
+<fpage>1727</fpage>
+<lpage>1738</lpage>
+<pub-id pub-id-type="pmid">8844159</pub-id></element-citation></ref><ref id="pone.0008597-Laurent1"><label>50</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Laurent</surname><given-names>V</given-names></name><name><surname>Wajnberg</surname><given-names>E</given-names></name><name><surname>Mangin</surname><given-names>B</given-names></name><name><surname>Schiex</surname><given-names>T</given-names></name><name><surname>Gaspin</surname><given-names>C</given-names></name><etal/></person-group>
+<year>1998</year>
+<article-title>A composite map of the parasitoid wasp <italic>Trichogramma brassicae</italic> based on RAPD markers.</article-title>
+<source>Genetics</source>
+<volume>150</volume>
+<fpage>275</fpage>
+<lpage>282</lpage>
+<pub-id pub-id-type="pmid">9725846</pub-id></element-citation></ref><ref id="pone.0008597-Holloway1"><label>51</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Holloway</surname><given-names>AK</given-names></name><name><surname>Strand</surname><given-names>MR</given-names></name><name><surname>Black WC</surname><given-names>IV</given-names></name><name><surname>Antolin</surname><given-names>MF</given-names></name></person-group>
+<year>2000</year>
+<article-title>Linkage analysis of sex determination in <italic>Bracon</italic> sp. near <italic>hebetor</italic> (Hymenoptera: Braconidae).</article-title>
+<source>Genetics</source>
+<volume>154</volume>
+<fpage>205</fpage>
+<lpage>212</lpage>
+<pub-id pub-id-type="pmid">10628981</pub-id></element-citation></ref><ref id="pone.0008597-Thuriaux1"><label>52</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Thuriaux</surname><given-names>P</given-names></name></person-group>
+<year>1977</year>
+<article-title>Is recombination confined to structural genes on the eukaryotic genome?</article-title>
+<source>Nature</source>
+<volume>268</volume>
+<fpage>460</fpage>
+<lpage>462</lpage>
+<pub-id pub-id-type="pmid">895854</pub-id></element-citation></ref><ref id="pone.0008597-Baker1"><label>53</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Baker</surname><given-names>BS</given-names></name><name><surname>Carpenter</surname><given-names>ATC</given-names></name><name><surname>Esposito</surname><given-names>MS</given-names></name><name><surname>Esposito</surname><given-names>RE</given-names></name><name><surname>Sandler</surname><given-names>L</given-names></name></person-group>
+<year>1976</year>
+<article-title>The genetic control of meiosis.</article-title>
+<source>Annu Rev Genet</source>
+<volume>10</volume>
+<fpage>53</fpage>
+<lpage>134</lpage>
+<pub-id pub-id-type="pmid">797314</pub-id></element-citation></ref><ref id="pone.0008597-Hawley1"><label>54</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Hawley</surname><given-names>RS</given-names></name><name><surname>Theurkauf</surname><given-names>WE</given-names></name></person-group>
+<year>1993</year>
+<article-title>Requiem for distributive segregation: achiasmate segregation in <italic>Drosophila</italic> females.</article-title>
+<source>Trends Genet</source>
+<volume>9</volume>
+<fpage>310</fpage>
+<lpage>317</lpage>
+<pub-id pub-id-type="pmid">8236460</pub-id></element-citation></ref><ref id="pone.0008597-Beadle1"><label>55</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Beadle</surname><given-names>G</given-names></name></person-group>
+<year>1932</year>
+<article-title>A possible influence of the spindle fibre on crossing-over in <italic>Drosophila</italic>.</article-title>
+<source>Proc Natl Acad Sci U S A</source>
+<volume>18</volume>
+<fpage>160</fpage>
+<lpage>165</lpage>
+<pub-id pub-id-type="pmid">16577442</pub-id></element-citation></ref><ref id="pone.0008597-Mather1"><label>56</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Mather</surname><given-names>K</given-names></name></person-group>
+<year>1939</year>
+<article-title>Crossing over and heterochromatin in the X chromosome of <italic>Drosophila melanogaster</italic>.</article-title>
+<source>Genetics</source>
+<volume>24</volume>
+<fpage>413</fpage>
+<lpage>435</lpage>
+<pub-id pub-id-type="pmid">17246931</pub-id></element-citation></ref><ref id="pone.0008597-Choo1"><label>57</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Choo</surname><given-names>KHA</given-names></name></person-group>
+<year>1998</year>
+<article-title>Why is the centromere so cold?</article-title>
+<source>Genome Res</source>
+<volume>8</volume>
+<fpage>81</fpage>
+<lpage>82</lpage>
+<pub-id pub-id-type="pmid">9477334</pub-id></element-citation></ref><ref id="pone.0008597-Mahtani1"><label>58</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Mahtani</surname><given-names>MM</given-names></name><name><surname>Willard</surname><given-names>HF</given-names></name></person-group>
+<year>1990</year>
+<article-title>Pulsed-field gel analysis of &#x003b1;-satellite DNA of the human X chromosome centromere: high-frequency polymorphisms and array size estimate.</article-title>
+<source>Genomics</source>
+<volume>7</volume>
+<fpage>607</fpage>
+<lpage>613</lpage>
+<pub-id pub-id-type="pmid">1974881</pub-id></element-citation></ref><ref id="pone.0008597-Mahtani2"><label>59</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Mahtani</surname><given-names>MM</given-names></name><name><surname>Willard</surname><given-names>HF</given-names></name></person-group>
+<year>1998</year>
+<article-title>Physical and genetic mapping of the human X chromosome centromere: repression of recombination.</article-title>
+<source>Genome Res</source>
+<volume>8</volume>
+<fpage>100</fpage>
+<lpage>110</lpage>
+<pub-id pub-id-type="pmid">9477338</pub-id></element-citation></ref><ref id="pone.0008597-Round1"><label>60</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Round</surname><given-names>EK</given-names></name><name><surname>Flowers</surname><given-names>SK</given-names></name><name><surname>Richards</surname><given-names>EJ</given-names></name></person-group>
+<year>1997</year>
+<article-title>
+<italic>Arabidopsis thaliana</italic> centromere regions: genetic map positions and repetitive DNA structure.</article-title>
+<source>Genome Res</source>
+<volume>7</volume>
+<fpage>1045</fpage>
+<lpage>1053</lpage>
+<pub-id pub-id-type="pmid">9371740</pub-id></element-citation></ref><ref id="pone.0008597-Copenhaver1"><label>61</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Copenhaver</surname><given-names>GP</given-names></name><name><surname>Nickel</surname><given-names>K</given-names></name><name><surname>Kuromori</surname><given-names>T</given-names></name><name><surname>Benito</surname><given-names>MI</given-names></name><name><surname>Kaul</surname><given-names>S</given-names></name><etal/></person-group>
+<year>1999</year>
+<article-title>Genetic definition and sequence analysis of <italic>Arabidopsis</italic> centromeres.</article-title>
+<source>Science</source>
+<volume>286</volume>
+<fpage>2468</fpage>
+<lpage>2474</lpage>
+<pub-id pub-id-type="pmid">10617454</pub-id></element-citation></ref><ref id="pone.0008597-JensenSeaman1"><label>62</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Jensen-Seaman</surname><given-names>MI</given-names></name><name><surname>Furey</surname><given-names>TS</given-names></name><name><surname>Payseur</surname><given-names>BA</given-names></name><name><surname>Lu</surname><given-names>Y</given-names></name><name><surname>Roskin</surname><given-names>KM</given-names></name><etal/></person-group>
+<year>2004</year>
+<article-title>Comparative recombination rates in the rat, mouse, and human genomes.</article-title>
+<source>Genome Res</source>
+<volume>14</volume>
+<fpage>528</fpage>
+<lpage>538</lpage>
+<pub-id pub-id-type="pmid">15059993</pub-id></element-citation></ref><ref id="pone.0008597-Wang1"><label>63</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Wang</surname><given-names>Y</given-names></name><name><surname>Tang</surname><given-names>X</given-names></name><name><surname>Cheng</surname><given-names>Z</given-names></name><name><surname>Mueller</surname><given-names>L</given-names></name><name><surname>Giovannoni</surname><given-names>J</given-names></name><etal/></person-group>
+<year>2006</year>
+<article-title>Euchromatin and pericentromeric heterochromatin: comparative composition in the tomato genome.</article-title>
+<source>Genetics</source>
+<volume>172</volume>
+<fpage>2529</fpage>
+<lpage>2540</lpage>
+<pub-id pub-id-type="pmid">16489216</pub-id></element-citation></ref><ref id="pone.0008597-Yamamoto2"><label>64</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Yamamoto</surname><given-names>M</given-names></name><name><surname>Miklos</surname><given-names>G</given-names></name></person-group>
+<year>1978</year>
+<article-title>Genetic studies on heterochromatin in <italic>Drosophila melanogaster</italic> and their implications for the functions of satellite DNA.</article-title>
+<source>Chromosoma</source>
+<volume>66</volume>
+<fpage>71</fpage>
+<lpage>98</lpage>
+<pub-id pub-id-type="pmid">416935</pub-id></element-citation></ref><ref id="pone.0008597-Lambie1"><label>65</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Lambie</surname><given-names>E</given-names></name><name><surname>Roeder</surname><given-names>G</given-names></name></person-group>
+<year>1986</year>
+<article-title>Repression of meiotic crossing over by a centromere (CEN3) in <italic>Saccharomyces cerevisiae</italic>.</article-title>
+<source>Genetics</source>
+<volume>114</volume>
+<fpage>769</fpage>
+<lpage>789</lpage>
+<pub-id pub-id-type="pmid">3539697</pub-id></element-citation></ref><ref id="pone.0008597-Fullerton1"><label>66</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Fullerton</surname><given-names>SM</given-names></name><name><surname>Bernardo Carvalho</surname><given-names>A</given-names></name><name><surname>Clark</surname><given-names>AG</given-names></name></person-group>
+<year>2001</year>
+<article-title>Local rates of recombination are positively correlated with GC content in the human genome.</article-title>
+<source>Mol Biol Evol</source>
+<volume>18</volume>
+<fpage>1139</fpage>
+<lpage>1142</lpage>
+<pub-id pub-id-type="pmid">11371603</pub-id></element-citation></ref><ref id="pone.0008597-Birdsell1"><label>67</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Birdsell</surname><given-names>JA</given-names></name></person-group>
+<year>2002</year>
+<article-title>Integrating genomics, bioinformatics, and classical genetics to study the effects of recombination on genome evolution.</article-title>
+<source>Mol Biol Evol</source>
+<volume>19</volume>
+<fpage>1181</fpage>
+<lpage>1197</lpage>
+<pub-id pub-id-type="pmid">12082137</pub-id></element-citation></ref><ref id="pone.0008597-Hey1"><label>68</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Hey</surname><given-names>J</given-names></name><name><surname>Kliman</surname><given-names>RM</given-names></name></person-group>
+<year>2002</year>
+<article-title>Interactions between natural selection, recombination and gene density in the genes of <italic>Drosophila</italic>.</article-title>
+<source>Genetics</source>
+<volume>160</volume>
+<fpage>595</fpage>
+<lpage>608</lpage>
+<pub-id pub-id-type="pmid">11861564</pub-id></element-citation></ref><ref id="pone.0008597-Galtier1"><label>69</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Galtier</surname><given-names>N</given-names></name><name><surname>Piganeau</surname><given-names>G</given-names></name><name><surname>Mouchiroud</surname><given-names>D</given-names></name><name><surname>Duret</surname><given-names>L</given-names></name></person-group>
+<year>2001</year>
+<article-title>GC-content evolution in mammalian genomes: the biased gene conversion hypothesis.</article-title>
+<source>Genetics</source>
+<volume>159</volume>
+<fpage>907</fpage>
+<lpage>911</lpage>
+<pub-id pub-id-type="pmid">11693127</pub-id></element-citation></ref><ref id="pone.0008597-Marais1"><label>70</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Marais</surname><given-names>G</given-names></name></person-group>
+<year>2003</year>
+<article-title>Biased gene conversion: implications for genome and sex evolution.</article-title>
+<source>Trends Genet</source>
+<volume>19</volume>
+<fpage>330</fpage>
+<lpage>338</lpage>
+<pub-id pub-id-type="pmid">12801726</pub-id></element-citation></ref><ref id="pone.0008597-Majewski1"><label>71</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Majewski</surname><given-names>J</given-names></name><name><surname>Ott</surname><given-names>J</given-names></name></person-group>
+<year>2000</year>
+<article-title>GT repeats are associated with recombination on human chromosome 22.</article-title>
+<source>Genome Res</source>
+<volume>10</volume>
+<fpage>1108</fpage>
+<lpage>1114</lpage>
+<pub-id pub-id-type="pmid">10958629</pub-id></element-citation></ref><ref id="pone.0008597-Bagshaw1"><label>72</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Bagshaw</surname><given-names>ATM</given-names></name><name><surname>Pitt</surname><given-names>JPW</given-names></name><name><surname>Gemmell</surname><given-names>NJ</given-names></name></person-group>
+<year>2008</year>
+<article-title>High frequency of microsatellites in <italic>S. cerevisiae</italic> meiotic recombination hotspots.</article-title>
+<source>BMC Genomics</source>
+<volume>9</volume>
+<fpage>49</fpage>
+<pub-id pub-id-type="pmid">18226240</pub-id></element-citation></ref><ref id="pone.0008597-Treco1"><label>73</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Treco</surname><given-names>D</given-names></name><name><surname>Arnheim</surname><given-names>N</given-names></name></person-group>
+<year>1986</year>
+<article-title>The evolutionarily conserved repetitive sequence d(TG&#x000b7;AC)<italic><sub>n</sub></italic> promotes reciprocal exchange and generates unusual recombinant tetrads during yeast meiosis.</article-title>
+<source>Mol Cell Biol</source>
+<volume>6</volume>
+<fpage>3934</fpage>
+<lpage>3947</lpage>
+<pub-id pub-id-type="pmid">3540602</pub-id></element-citation></ref><ref id="pone.0008597-Schultes1"><label>74</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Schultes</surname><given-names>NP</given-names></name><name><surname>Szostak</surname><given-names>JW</given-names></name></person-group>
+<year>1991</year>
+<article-title>A poly(dA&#x000b7;dT) tract is a component of the recombination initiation site at the ARG4 locus in <italic>Saccharomyces cerevisiae</italic>.</article-title>
+<source>Mol Cell Biol</source>
+<volume>11</volume>
+<fpage>322</fpage>
+<lpage>328</lpage>
+<pub-id pub-id-type="pmid">1986228</pub-id></element-citation></ref><ref id="pone.0008597-Kirkpatrick1"><label>75</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kirkpatrick</surname><given-names>DT</given-names></name><name><surname>Wang</surname><given-names>YH</given-names></name><name><surname>Dominska</surname><given-names>M</given-names></name><name><surname>Griffith</surname><given-names>JD</given-names></name><name><surname>Petes</surname><given-names>TD</given-names></name></person-group>
+<year>1999</year>
+<article-title>Control of meiotic recombination and gene expression in yeast by a simple repetitive DNA sequence that excludes nucleosomes.</article-title>
+<source>Mol Cell Biol</source>
+<volume>19</volume>
+<fpage>7661</fpage>
+<lpage>7671</lpage>
+<pub-id pub-id-type="pmid">10523654</pub-id></element-citation></ref><ref id="pone.0008597-Gendrel1"><label>76</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Gendrel</surname><given-names>CG</given-names></name><name><surname>Boulet</surname><given-names>A</given-names></name><name><surname>Dutreix</surname><given-names>M</given-names></name></person-group>
+<year>2000</year>
+<article-title>(CA/GT)<sub>n</sub> microsatellites affect homologous recombination during yeast meiosis.</article-title>
+<source>Genes Dev</source>
+<volume>14</volume>
+<fpage>1261</fpage>
+<lpage>1268</lpage>
+<pub-id pub-id-type="pmid">10817760</pub-id></element-citation></ref><ref id="pone.0008597-Struhl1"><label>77</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Struhl</surname><given-names>K</given-names></name></person-group>
+<year>1985</year>
+<article-title>Naturally occurring poly(dA-dT) sequences are upstream promoter elements for constitutive transcription in yeast.</article-title>
+<source>Proc Natl Acad Sci U S A</source>
+<volume>82</volume>
+<fpage>8419</fpage>
+<lpage>8423</lpage>
+<pub-id pub-id-type="pmid">3909145</pub-id></element-citation></ref><ref id="pone.0008597-Contente1"><label>78</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Contente</surname><given-names>A</given-names></name><name><surname>Dittmer</surname><given-names>A</given-names></name><name><surname>Koch</surname><given-names>MC</given-names></name><name><surname>Roth</surname><given-names>J</given-names></name><name><surname>Dobbelstein</surname><given-names>M</given-names></name></person-group>
+<year>2002</year>
+<article-title>A polymorphic microsatellite that mediates induction of <italic>PIG3</italic> by p53.</article-title>
+<source>Nat Genet</source>
+<volume>30</volume>
+<fpage>315</fpage>
+<lpage>320</lpage>
+<pub-id pub-id-type="pmid">11919562</pub-id></element-citation></ref><ref id="pone.0008597-Borrmann1"><label>79</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Borrmann</surname><given-names>L</given-names></name><name><surname>Seebeck</surname><given-names>B</given-names></name><name><surname>Rogalla</surname><given-names>P</given-names></name><name><surname>Bullerdiek</surname><given-names>J</given-names></name></person-group>
+<year>2003</year>
+<article-title>Human <italic>HMGA2</italic> promoter is coregulated by a polymorphic dinucleotide (TC)-repeat.</article-title>
+<source>Oncogene</source>
+<volume>22</volume>
+<fpage>756</fpage>
+<lpage>760</lpage>
+<pub-id pub-id-type="pmid">12569368</pub-id></element-citation></ref><ref id="pone.0008597-Uhlemann1"><label>80</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Uhlemann</surname><given-names>AC</given-names></name><name><surname>Szlez&#x000e1;k</surname><given-names>NA</given-names></name><name><surname>Vonthein</surname><given-names>R</given-names></name><name><surname>Tomiuk</surname><given-names>J</given-names></name><name><surname>Emmer</surname><given-names>SA</given-names></name><etal/></person-group>
+<year>2004</year>
+<article-title>DNA phasing by TA dinucleotide microsatellite length determines in vitro and in vivo expression of the <italic>gp91<sup>phox</sup></italic> subunit of NADPH oxidase and mediates protection against severe malaria.</article-title>
+<source>J Infect Dis</source>
+<volume>189</volume>
+<fpage>2227</fpage>
+<lpage>2234</lpage>
+<pub-id pub-id-type="pmid">15181570</pub-id></element-citation></ref><ref id="pone.0008597-Hammock1"><label>81</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Hammock</surname><given-names>EA</given-names></name><name><surname>Young</surname><given-names>LJ</given-names></name></person-group>
+<year>2004</year>
+<article-title>Functional microsatellite polymorphism associated with divergent social structure in vole species.</article-title>
+<source>Mol Biol Evol</source>
+<volume>21</volume>
+<fpage>1057</fpage>
+<lpage>1063</lpage>
+<pub-id pub-id-type="pmid">15014156</pub-id></element-citation></ref><ref id="pone.0008597-Hammock2"><label>82</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Hammock</surname><given-names>EAD</given-names></name><name><surname>Young</surname><given-names>LJ</given-names></name></person-group>
+<year>2005</year>
+<article-title>Microsatellite instability generates diversity in brain and sociobehavioral traits.</article-title>
+<source>Science</source>
+<volume>308</volume>
+<fpage>1630</fpage>
+<lpage>1634</lpage>
+<pub-id pub-id-type="pmid">15947188</pub-id></element-citation></ref><ref id="pone.0008597-Curi1"><label>83</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Curi</surname><given-names>RA</given-names></name><name><surname>de Oliveira</surname><given-names>HN</given-names></name><name><surname>Silveira</surname><given-names>AC</given-names></name><name><surname>Lopes</surname><given-names>CR</given-names></name></person-group>
+<year>2005</year>
+<article-title>Effects of polymorphic microsatellites in the regulatory region of <italic>IGF1</italic> and <italic>GHR</italic> on growth and carcass traits in beef cattle.</article-title>
+<source>Anim Genet</source>
+<volume>36</volume>
+<fpage>58</fpage>
+<lpage>62</lpage>
+<pub-id pub-id-type="pmid">15670132</pub-id></element-citation></ref><ref id="pone.0008597-Prachumwat1"><label>84</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Prachumwat</surname><given-names>A</given-names></name><name><surname>DeVincentis</surname><given-names>L</given-names></name><name><surname>Palopoli</surname><given-names>MF</given-names></name></person-group>
+<year>2004</year>
+<article-title>Intron size correlates positively with recombination rate in <italic>Caenorhabditis elegans</italic>.</article-title>
+<source>Genetics</source>
+<volume>166</volume>
+<fpage>1585</fpage>
+<lpage>1590</lpage>
+<pub-id pub-id-type="pmid">15082572</pub-id></element-citation></ref><ref id="pone.0008597-CastilloDavis1"><label>85</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Castillo-Davis</surname><given-names>CI</given-names></name><name><surname>Mekhedov</surname><given-names>SL</given-names></name><name><surname>Hartl</surname><given-names>DL</given-names></name><name><surname>Koonin</surname><given-names>EV</given-names></name><name><surname>Kondrashov</surname><given-names>FA</given-names></name></person-group>
+<year>2002</year>
+<article-title>Selection for short introns in highly expressed genes.</article-title>
+<source>Nature Genetics</source>
+<volume>31</volume>
+<fpage>415</fpage>
+<lpage>418</lpage>
+<pub-id pub-id-type="pmid">12134150</pub-id></element-citation></ref><ref id="pone.0008597-Gerton1"><label>86</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Gerton</surname><given-names>JL</given-names></name><name><surname>Derisi</surname><given-names>J</given-names></name><name><surname>Shroff</surname><given-names>R</given-names></name><name><surname>Lichten</surname><given-names>M</given-names></name><name><surname>Brown</surname><given-names>PO</given-names></name><etal/></person-group>
+<year>2000</year>
+<article-title>Global mapping of meiotic recombination hotspots and coldspots in the yeast <italic>Saccharomyces cerevisiae</italic>.</article-title>
+<source>Proc Natl Acad Sci U S A</source>
+<volume>97</volume>
+<fpage>11383</fpage>
+<lpage>11390</lpage>
+<pub-id pub-id-type="pmid">11027339</pub-id></element-citation></ref><ref id="pone.0008597-Drapeau1"><label>87</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Drapeau</surname><given-names>M</given-names></name><name><surname>Werren</surname><given-names>JH</given-names></name></person-group>
+<year>1999</year>
+<article-title>Differences in mating behavior and sex ratio between three sibling species of <italic>Nasonia</italic>.</article-title>
+<source>Evol Ecol Res</source>
+<volume>1</volume>
+<fpage>223</fpage>
+<lpage>234</lpage>
+</element-citation></ref><ref id="pone.0008597-Leonard1"><label>88</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Leonard</surname><given-names>JE</given-names></name><name><surname>Boake</surname><given-names>CRB</given-names></name></person-group>
+<year>2006</year>
+<article-title>Site-dependent aggression and mating behaviour in three species of <italic>Nasonia</italic> (Hymenpotera: Pteromalidae).</article-title>
+<source>Anim Behav</source>
+<volume>71</volume>
+<fpage>641</fpage>
+<lpage>647</lpage>
+</element-citation></ref><ref id="pone.0008597-Rocha1"><label>89</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Rocha</surname><given-names>EPC</given-names></name><name><surname>Smith</surname><given-names>JM</given-names></name><name><surname>Hurst</surname><given-names>LD</given-names></name><name><surname>Holden</surname><given-names>MTG</given-names></name><name><surname>Cooper</surname><given-names>JE</given-names></name><etal/></person-group>
+<year>2006</year>
+<article-title>Comparisons of dN/dS are time dependent for closely related bacterial genomes.</article-title>
+<source>J Theor Biol</source>
+<volume>239</volume>
+<fpage>226</fpage>
+<lpage>235</lpage>
+<pub-id pub-id-type="pmid">16239014</pub-id></element-citation></ref><ref id="pone.0008597-Campbell1"><label>90</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Campbell</surname><given-names>BC</given-names></name><name><surname>Steffen-Campbell</surname><given-names>JD</given-names></name><name><surname>Werren</surname><given-names>JH</given-names></name></person-group>
+<year>1993</year>
+<article-title>Phylogeny of the <italic>Nasonia</italic> species complex (Hymenoptera: Pteromalidae) inferred from an rDNA internal transcribed spacer (ITS2).</article-title>
+<source>Insect Mol Biol</source>
+<volume>2</volume>
+<fpage>225</fpage>
+<lpage>237</lpage>
+<pub-id pub-id-type="pmid">9087560</pub-id></element-citation></ref><ref id="pone.0008597-Bordenstein1"><label>91</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Bordenstein</surname><given-names>SR</given-names></name><name><surname>Werren</surname><given-names>JH</given-names></name></person-group>
+<year>1998</year>
+<article-title>Effects of A and B <italic>Wolbachia</italic> and host genotype on interspecies cytoplasmic incompatibility between two <italic>Nasonia</italic> species.</article-title>
+<source>Genetics</source>
+<volume>148</volume>
+<fpage>1833</fpage>
+<lpage>1844</lpage>
+<pub-id pub-id-type="pmid">9560398</pub-id></element-citation></ref><ref id="pone.0008597-Altschul1"><label>92</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Altschul</surname><given-names>SF</given-names></name><name><surname>Madden</surname><given-names>TL</given-names></name><name><surname>Sch&#x000e4;ffer</surname><given-names>AA</given-names></name><name><surname>Zhang</surname><given-names>J</given-names></name><name><surname>Zhang</surname><given-names>Z</given-names></name><etal/></person-group>
+<year>1997</year>
+<article-title>Gapped BLAST and PSI-BLAST: a new generation of protein database search programs.</article-title>
+<source>Nucleic Acids Res</source>
+<volume>25</volume>
+<fpage>3389</fpage>
+<lpage>3402</lpage>
+<pub-id pub-id-type="pmid">9254694</pub-id></element-citation></ref><ref id="pone.0008597-Gibson1"><label>93</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Gibson</surname><given-names>JD</given-names></name><name><surname>Niehuis</surname><given-names>O</given-names></name><name><surname>Verrelli</surname><given-names>BC</given-names></name><name><surname>Gadau</surname><given-names>J</given-names></name></person-group>
+<year>2010</year>
+<article-title>Contrasting patterns of selective constraints in nuclear encoded genes of the oxidative phosphorylation pathway in holometabolous insects and their possible role in hybrid breakdown in <italic>Nasonia</italic>.</article-title>
+<source>Heredity. In press</source>
+</element-citation></ref><ref id="pone.0008597-Niehuis2"><label>94</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Niehuis</surname><given-names>O</given-names></name><name><surname>Judson</surname><given-names>AK</given-names></name><name><surname>Werren</surname><given-names>JH</given-names></name><name><surname>Hunter</surname><given-names>WB</given-names></name><name><surname>Dang</surname><given-names>PM</given-names></name><etal/></person-group>
+<year>2007</year>
+<article-title>Species diagnostic single-nucleotide polymorphism and sequence-tagged site markers for the parasitic wasp genus <italic>Nasonia</italic> (Hymenoptera: Pteromalidae).</article-title>
+<source>J Econ Entomol</source>
+<volume>100</volume>
+<fpage>1033</fpage>
+<lpage>1036</lpage>
+<pub-id pub-id-type="pmid">17849848</pub-id></element-citation></ref><ref id="pone.0008597-Mester1"><label>95</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Mester</surname><given-names>DI</given-names></name><name><surname>Ronin</surname><given-names>YI</given-names></name><name><surname>Hu</surname><given-names>Y</given-names></name><name><surname>Peng</surname><given-names>J</given-names></name><name><surname>Nevo</surname><given-names>E</given-names></name><etal/></person-group>
+<year>2003</year>
+<article-title>Efficient multipoint mapping: making use of dominant repulsion-phase markers.</article-title>
+<source>Theor Appl Genet</source>
+<volume>107</volume>
+<fpage>1102</fpage>
+<lpage>1112</lpage>
+<pub-id pub-id-type="pmid">12928774</pub-id></element-citation></ref><ref id="pone.0008597-Mester2"><label>96</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Mester</surname><given-names>DI</given-names></name><name><surname>Ronin</surname><given-names>YI</given-names></name><name><surname>Minkov</surname><given-names>D</given-names></name><name><surname>Nevo</surname><given-names>E</given-names></name><name><surname>Korol</surname><given-names>AB</given-names></name></person-group>
+<year>2003</year>
+<article-title>Constructing large-scale genetic maps using an evolutionary strategy algorithm.</article-title>
+<source>Genetics</source>
+<volume>165</volume>
+<fpage>2269</fpage>
+<lpage>2282</lpage>
+<pub-id pub-id-type="pmid">14704202</pub-id></element-citation></ref><ref id="pone.0008597-Mester3"><label>97</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Mester</surname><given-names>DI</given-names></name><name><surname>Ronin</surname><given-names>YI</given-names></name><name><surname>Nevo</surname><given-names>E</given-names></name><name><surname>Korol</surname><given-names>AB</given-names></name></person-group>
+<year>2004</year>
+<article-title>Fast and high precision algorithms for optimization in large-scale genomic problems.</article-title>
+<source>Comput Biol Chem</source>
+<volume>28</volume>
+<fpage>281</fpage>
+<lpage>290</lpage>
+<pub-id pub-id-type="pmid">15548455</pub-id></element-citation></ref><ref id="pone.0008597-Haldane1"><label>98</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Haldane</surname><given-names>JBS</given-names></name></person-group>
+<year>1919</year>
+<article-title>The combination of linkage values, and the calculation of distances between the loci of linked factors.</article-title>
+<source>J Genet</source>
+<volume>8</volume>
+<fpage>299</fpage>
+<lpage>309</lpage>
+</element-citation></ref><ref id="pone.0008597-Thurston1"><label>99</label><element-citation publication-type="other">
+<person-group person-group-type="author"><name><surname>Thurston</surname><given-names>MI</given-names></name><name><surname>Field</surname><given-names>D</given-names></name></person-group>
+<year>2005</year>
+<article-title>Msatfinder: detection and characterisation of microsatellites.</article-title>
+<comment>Available: <ext-link ext-link-type="uri" xlink:href="http://www.genomics.ceh.ac.uk/msatfinder/">http://www.genomics.ceh.ac.uk/msatfinder/</ext-link>. Oxford: CEH Oxford</comment>
+</element-citation></ref><ref id="pone.0008597-Epplen1"><label>100</label><element-citation publication-type="book">
+<person-group person-group-type="author"><name><surname>Epplen</surname><given-names>JT</given-names></name><name><surname>B&#x000f6;hringer</surname><given-names>S</given-names></name></person-group>
+<year>2005</year>
+<article-title>Microsatellites.</article-title>
+<publisher-loc>Chichester</publisher-loc>
+<publisher-name>John Wiley &#x00026; Sons</publisher-name>
+<comment>In: <italic>Encyclopedia of Life Sciences (ELS)</italic></comment>
+</element-citation></ref><ref id="pone.0008597-Thompson1"><label>101</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Thompson</surname><given-names>JD</given-names></name><name><surname>Higgins</surname><given-names>DG</given-names></name><name><surname>Gibson</surname><given-names>TJ</given-names></name></person-group>
+<year>1994</year>
+<article-title>CLUSTAL W: improving the sensitivity of progressive multiple sequence alignment through sequence weighting, position-specific gap penalties and weight matrix choice.</article-title>
+<source>Nucleic Acids Res</source>
+<volume>22</volume>
+<fpage>4673</fpage>
+<lpage>4680</lpage>
+<pub-id pub-id-type="pmid">7984417</pub-id></element-citation></ref><ref id="pone.0008597-Felsenstein2"><label>102</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Felsenstein</surname><given-names>J</given-names></name></person-group>
+<year>1989</year>
+<article-title>PHYLIP (phylogeny inference package). Version 3.2.</article-title>
+<source>Cladistics</source>
+<volume>5</volume>
+<fpage>164</fpage>
+<lpage>166</lpage>
+</element-citation></ref><ref id="pone.0008597-Dayhoff1"><label>103</label><element-citation publication-type="book">
+<person-group person-group-type="author"><name><surname>Dayhoff</surname><given-names>MO</given-names></name><name><surname>Schwartz</surname><given-names>RM</given-names></name><name><surname>Orcutt</surname><given-names>BC</given-names></name></person-group>
+<year>1978</year>
+<article-title>A model of evolutionary change in proteins, matrices for detecting distant relationships.</article-title>
+<person-group person-group-type="editor"><name><surname>Dayhoff</surname><given-names>MO</given-names></name></person-group>
+<source>Atlas of Protein Sequence and Structure, Vol. 5</source>
+<publisher-loc>Washington, DC</publisher-loc>
+<publisher-name>National Biomedical Research Foundation</publisher-name>
+<fpage>345</fpage>
+<lpage>358</lpage>
+</element-citation></ref><ref id="pone.0008597-Goldman1"><label>104</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Goldman</surname><given-names>N</given-names></name><name><surname>Yang</surname><given-names>Z</given-names></name></person-group>
+<year>1994</year>
+<article-title>A codon-based model of nucleotide substitution for protein-coding DNA sequences.</article-title>
+<source>Mol Biol Evol</source>
+<volume>11</volume>
+<fpage>725</fpage>
+<lpage>736</lpage>
+<pub-id pub-id-type="pmid">7968486</pub-id></element-citation></ref><ref id="pone.0008597-Yang1"><label>105</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Yang</surname><given-names>Z</given-names></name></person-group>
+<year>2007</year>
+<article-title>PAML 4: Phylogenetic Analysis by Maximum Likelihood.</article-title>
+<source>Mol Biol Evol</source>
+<volume>24</volume>
+<fpage>1586</fpage>
+<lpage>1591</lpage>
+<pub-id pub-id-type="pmid">17483113</pub-id></element-citation></ref><ref id="pone.0008597-Rosenberg1"><label>106</label><element-citation publication-type="other">
+<person-group person-group-type="author"><name><surname>Rosenberg</surname><given-names>MS</given-names></name></person-group>
+<year>2008</year>
+<article-title>PASSaGE: Pattern Analysis, Spatial Statistics, and Geographic Exegesis. Version 2.</article-title>
+<comment>Available: <ext-link ext-link-type="uri" xlink:href="http://www.passagesoftware.net">http://www.passagesoftware.net</ext-link>. Accessed 2007 Nov 01</comment>
+</element-citation></ref></ref-list></back></article>

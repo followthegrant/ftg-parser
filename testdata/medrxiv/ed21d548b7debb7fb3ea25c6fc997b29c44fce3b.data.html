@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" 
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:mml="http://www.w3.org/1998/Math/MathML">
+  <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# book: http://ogp.me/ns/book#" >
+    <!--[if IE]><![endif]-->
+<link rel="dns-prefetch" href="//d33xdlntwy0kbs.cloudfront.net" />
+<link rel="dns-prefetch" href="//www.google.com" />
+<link rel="dns-prefetch" href="//scholar.google.com" />
+<link rel="dns-prefetch" href="//www.google-analytics.com" />
+<link rel="dns-prefetch" href="//stats.g.doubleclick.net" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="shortcut icon" href="https://www.medrxiv.org/sites/default/files/images/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="alternate" type="application/pdf" title="Full Text (PDF)" href="/content/10.1101/2021.10.23.21265421v1.full.pdf" />
+<link rel="alternate" type="text/plain" title="Full Text (Plain)" href="/content/10.1101/2021.10.23.21265421v1.full.txt" />
+<link rel="alternate" type="application/vnd.ms-powerpoint" title="Powerpoint" href="/content/10.1101/2021.10.23.21265421v1.ppt" />
+<meta name="article_thumbnail" content="https://www.medrxiv.org/content/medrxiv/early/2021/10/26/2021.10.23.21265421/embed/graphic-2.gif" />
+<meta name="type" content="article" />
+<meta name="category" content="article" />
+<meta name="HW.identifier" content="/medrxiv/early/2021/10/26/2021.10.23.21265421.atom" />
+<meta name="HW.pisa" content="medrxiv;2021.10.23.21265421v1" />
+<meta name="DC.Format" content="text/html" />
+<meta name="DC.Language" content="en" />
+<meta name="DC.Title" content="Assessing the potential impact of immunity waning on the dynamics of COVID-19: an endemic model of COVID-19" />
+<meta name="DC.Identifier" content="10.1101/2021.10.23.21265421" />
+<meta name="DC.Date" content="2021-10-26" />
+<meta name="DC.Publisher" content="Cold Spring Harbor Laboratory Press" />
+<meta name="DC.Rights" content="© 2021, Posted by Cold Spring Harbor Laboratory. This pre-print is available under a Creative Commons License (Attribution-NonCommercial 4.0 International), CC BY-NC 4.0, as described at http://creativecommons.org/licenses/by-nc/4.0/" />
+<meta name="DC.AccessRights" content="restricted" />
+<meta name="DC.Description" content="We developed an endemic model of COVID-19 to assess the impact of vaccination and immunity waning on the dynamics of the disease. Our model exhibits the phenomenon of back-ward bifurcation and bi-stability, where a stable disease-free equilibrium co-exists with a stable endemic equilibrium. The epidemiological implication of this is that the control reproduction number being less than unity is no longer sufficient to guarantee disease eradication. We showed that this phenomenon could be eliminated by either increasing the vaccine efficacy or by reducing the disease transmission rate (adhering to non-pharmaceutical interventions). Furthermore, we numerically investigated the impacts of vaccination and waning of both vaccine-induced immunity and post-recovery immunity on the disease dynamics. Our simulation results show that the waning of vaccine-induced immunity has more effect on the disease dynamics relative to post-recovery immunity waning, and suggests that more emphasis should be on reducing the waning of vaccine-induced immunity to eradicate COVID-19.
+
+### Competing Interest Statement
+
+The authors have declared no competing interest.
+
+### Funding Statement
+
+This study did not receive any funding
+
+### Author Declarations
+
+I confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.
+
+Yes
+
+I confirm that all necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived, and that any patient/participant/sample identifiers included were not known to anyone (e.g., hospital staff, patients or participants themselves) outside the research group so cannot be used to identify individuals.
+
+Yes
+
+I understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).
+
+Yes
+
+I have followed all appropriate research reporting guidelines and uploaded the relevant EQUATOR Network research reporting checklist(s) and other pertinent material as supplementary files, if applicable.
+
+Yes
+
+All data produced in the present work are contained in the manuscript" />
+<meta name="DC.Contributor" content="Musa Rabiu" />
+<meta name="DC.Contributor" content="Sarafa A. Iyaniwura" />
+<meta name="article:published_time" content="2021-10-26" />
+<meta name="citation_title" content="Assessing the potential impact of immunity waning on the dynamics of COVID-19: an endemic model of COVID-19" />
+<meta name="citation_abstract" lang="en" content="&lt;p&gt;We developed an endemic model of COVID-19 to assess the impact of vaccination and immunity waning on the dynamics of the disease. Our model exhibits the phenomenon of backward bifurcation and bi-stability, where a stable disease-free equilibrium co-exists with a stable endemic equilibrium. The epidemiological implication of this is that the control reproduction number being less than unity is no longer sufficient to guarantee disease eradication. We showed that this phenomenon could be eliminated by either increasing the vaccine efficacy or by reducing the disease transmission rate (adhering to non-pharmaceutical interventions). Furthermore, we numerically investigated the impacts of vaccination and waning of both vaccine-induced immunity and post-recovery immunity on the disease dynamics.  Our simulation results show that the waning of vaccine-induced immunity has more effect on the disease dynamics relative to post-recovery immunity waning, and suggests that more emphasis should be on reducing the waning of vaccine-induced immunity to eradicate COVID-19.&lt;/p&gt;" />
+<meta name="citation_journal_title" content="medRxiv" />
+<meta name="citation_publisher" content="Cold Spring Harbor Laboratory Press" />
+<meta name="citation_publication_date" content="2021/01/01" />
+<meta name="citation_mjid" content="medrxiv;2021.10.23.21265421v1" />
+<meta name="citation_id" content="2021.10.23.21265421v1" />
+<meta name="citation_public_url" content="https://www.medrxiv.org/content/10.1101/2021.10.23.21265421v1" />
+<meta name="citation_abstract_html_url" content="https://www.medrxiv.org/content/10.1101/2021.10.23.21265421v1.abstract" />
+<meta name="citation_full_html_url" content="https://www.medrxiv.org/content/10.1101/2021.10.23.21265421v1.full" />
+<meta name="citation_pdf_url" content="https://www.medrxiv.org/content/medrxiv/early/2021/10/26/2021.10.23.21265421.full.pdf" />
+<meta name="citation_doi" content="10.1101/2021.10.23.21265421" />
+<meta name="citation_num_pages" content="23" />
+<meta name="citation_article_type" content="Article" />
+<meta name="citation_firstpage" content="2021.10.23.21265421" />
+<meta name="citation_author" content="Musa Rabiu" />
+<meta name="citation_author_institution" content="School of Mathematics, Statistics &amp; Computer Science, University of KwaZulu-Natal" />
+<meta name="citation_author_email" content="rabiumusa003@gmail.com" />
+<meta name="citation_author_orcid" content="http://orcid.org/0000-0002-4830-8624" />
+<meta name="citation_author" content="Sarafa A. Iyaniwura" />
+<meta name="citation_author_institution" content="Department of Mathematics and Institute of Applied Mathematics, University of British Columbia" />
+<meta name="citation_author_orcid" content="http://orcid.org/0000-0002-8854-2335" />
+<meta name="citation_reference" content="STATISTICS SOUTH AFRICA. STATISTICAL RELEASE, Mid-year population estimates, 2019, (accessed August 28, 2021). http://www.statssa.gov.za/publications/P0302/P03022019.pdf." />
+<meta name="citation_reference" content="Sean C Anderson, Andrew M Edwards, Madi Yerlanov, Nicola Mulberry, Jessica E Stockdale, Sarafa A Iyaniwura, Rebeca C Falcao, Michael C Otterstatter, Michael A Irvine, Naveed Z Janjua, et al. Quantifying the impact of covid-19 control measures using a bayesian model of physical distancing. PLoScomputational biology, 16(12):e1008274, 2020." />
+<meta name="citation_reference" content="Ally Yeketi Ayinla, Wan Ainun Mior Othman, and Musa Rabiu. A mathematical model of the tuber-culosis epidemic. Acta Biotheoretica, pages 1–31, 2021." />
+<meta name="citation_reference" content="Sarita Bugalia, Vijay Pal Bajiya, Jai Prakash Tripathi, Ming-Tao Li, and Gui-Quan Sun. Mathematical modeling of covid-19 transmission: the roles of intervention strategies and lockdown. MathematicalBiosciences and Engineering, 17(5):5961–5986, 2020." />
+<meta name="citation_reference" content="Carlos Castillo-Chavez and Baojun Song. Dynamical models of tuberculosis and their applications. Mathematical Biosciences &amp; Engineering, 1(2):361, 2004." />
+<meta name="citation_reference" content="Monika Chaudhary, PR Sodani, and Shankar Das. Effect of covid-19 on economy in india: Some reflections for policy and programme. Journal of Health Management, 22(2):169–180, 2020." />
+<meta name="citation_reference" content="Zhangkai J Cheng and Jing Shan. 2019 novel coronavirus: where we are and what we know. Infection, 48(2):155–163, 2020." />
+<meta name="citation_reference" content="Pyoeng Gyun Choe, Chang Kyung Kang, Hyeon Jeong Suh, Jongtak Jung, Kyoung-Ho Song, Ji Hwan Bang, Eu Suk Kim, Hong Bin Kim, Sang Won Park, Nam Joong Kim, et al. Waning antibody responses in asymptomatic and symptomatic sars-cov-2 infection. Emerging infectious diseases, 27(1):327, 2021." />
+<meta name="citation_reference" content="Republic of South Africa Department of health. COVID-19 Statistics in SouthAfrica, (accessed August 29, 2021). https://sacoronavirus.co.za/2021/08/29/update-on-covid-19-sunday-29-august-2021/." />
+<meta name="citation_reference" content="Republic of South Africa Department of health. COVID-19 Total Vaccination Summary, (accessed August 29, 2021). https://sacoronavirus.co.za/latest-vaccine-statistics/." />
+<meta name="citation_reference" content="Republic of South Africa Department of Statistics. Mid-year population estimates, 2021, (accessed August 29, 2021). http://www.statssa.gov.za/publications/P0302/P03022021.pdf." />
+<meta name="citation_reference" content="Amelie Desvars-Larrive, Elma Dervic, Nils Haug, Thomas Niederkrotenthaler, Jiaying Chen, Anna Di Natale, Jana Lasser, Diana S Gliga, Alexandra Roux, Johannes Sorger, et al. A structured open dataset of government interventions in response to covid-19. Scientific Data, 7(1):1–9, 2020." />
+<meta name="citation_reference" content="Odo Diekmann, Johan Andre Peter Heesterbeek, and Johan AJ Metz. On the definition and the computation of the basic reproduction ratio r 0 in models for infectious diseases in heterogeneous populations. Journal of mathematical biology, 28(4):365–382, 1990." />
+<meta name="citation_reference" content="Mathias Dzobo, Itai Chitungo, and Tafadzwa Dzinamarira. Covid-19: a perspective for lifting lockdown in zimbabwe. The Pan African Medical Journal, 35(Suppl 2), 2020." />
+<meta name="citation_reference" content="Lilybeth Fontanesi, Daniela Marchetti, Cristina Mazza, Serena Di Giandomenico, Paolo Roma, and Maria Cristina Verrocchio. The effect of the covid-19 lockdown on parents: A call to adopt urgent measures. Psychological Trauma: Theory, Research, Practice, and Policy, 12(S1):S79, 2020." />
+<meta name="citation_reference" content="Tapiwa Ganyani, Cecile Kremer, Dongxuan Chen, Andrea Torneri, Christel Faes, Jacco Wallinga, and Niel Hens. Estimating the generation interval for coronavirus disease (covid-19) based on symptom onset data, march 2020. Eurosurveillance, 25(17):2000257, 2020." />
+<meta name="citation_reference" content="Mukoro Duke George. A novel corona virus (covid-19) pandemic, pathogenesis, clinical features and management options, public health measures. International Journal of TROPICAL DISEASE &amp; Health, pages 11–21, 2020." />
+<meta name="citation_reference" content="Yair Goldberg, Micha Mandel, Yinon M Bar-On, Omri Bodenheimer, Laurence S Freedman, Eric Haas, Ron Milo, Sharon Alroy-Preis, Nachman Ash, and Amit Huppert. Waning immunity of the bnt162b2 vaccine: A nationwide study from israel. medRxiv, 2021." />
+<meta name="citation_reference" content="Brian Greenwood. The contribution of vaccination to global health: past, present and future. Philosophical Transactions of the Royal Society B: Biological Sciences, 369(1645):20130433, 2014." />
+<meta name="citation_reference" content="John Guckenheimer and Philip Holmes. Nonlinear oscillations, dynamical systems, and bifurcations ofvector fields, volume 42. Springer Science &amp; Business Media, 2013." />
+<meta name="citation_reference" content="Ali Hamady, JinJu Lee, and Zuzanna A Loboda. Waning antibody responses in covid-19: what can we learn from the analysis of other coronaviruses? Infection, pages 1–15, 2021." />
+<meta name="citation_reference" content="Nils Haug, Lukas Geyrhofer, Alessandro Londei, Elma Dervic, Amélie Desvars-Larrive, Vittorio Loreto, Beate Pinior, Stefan Thurner, and Peter Klimek. Ranking the effectiveness of worldwide covid-19 government interventions. Nature human behaviour, 4(12):1303–1312, 2020." />
+<meta name="citation_reference" content="Mackenzie Henderson, Amanda Bragg, Germin Fahim, Monica Shah, and Evelyn R Hermes-DeSantis. A review of the safety and efficacy of vaccines as prophylaxis for clostridium difficile infections. Vaccines, 5(3):25, 2017." />
+<meta name="citation_reference" content="Enahoro A Iboi, Calistus N Ngonghala, and Abba B Gumel. Will an imperfect vaccine curtail the covid-19 pandemic in the us? Infectious Disease Modelling, 5:510–524, 2020." />
+<meta name="citation_reference" content="Hiroyasu Inoue and Yasuyuki Todo. The propagation of economic impacts through supply chains: The case of a mega-city lockdown to prevent the spread of covid-19. PloS one, 15(9):e0239251, 2020." />
+<meta name="citation_reference" content="Benjamin Ivorra, Miriam R Ferrández, María Vela-Pérez, and Angel Manuel Ramos. Mathematical modeling of the spread of the coronavirus disease 2019 (covid-19) taking into account the undetected infections. the case of china. Communications in nonlinear science and numerical simulation, 88:105303, 2020." />
+<meta name="citation_reference" content="Sarafa Adewale Iyaniwura, Musa Abolade Rabiu, Jummy David, and Jude Dzevela Kong. Assessing the impact of adherence to non-pharmaceutical interventions and indirect transmission on the dynamics of covid-19: a mathematical modelling study. medRxiv, 2021." />
+<meta name="citation_reference" content="Waasila Jassat, Caroline Mudara, Lovelyn Ozougwu, Stefano Tempia, Lucille Blumberg, Mary-Ann Davies, Yogan Pillay, Terence Carter, Ramphelane Morewane, Milani Wolmarans, et al. Difference in mortality among individuals admitted to hospital with covid-19 during the first and second waves in south africa: a cohort study. The Lancet Global Health, 2021." />
+<meta name="citation_reference" content="Natalie Kash, Michael A Lee, Ramya Kollipara, Christopher Downing, Jacqueline Guidry, and Stephen K Tyring. Safety and efficacy data on vaccines and immunization to human papillomavirus. Journal of clinical medicine, 4(4):614–633, 2015." />
+<meta name="citation_reference" content="Dennis M Klinman, Mitsuhiro Takeno, Motohide Ichino, Mili Gu, Galina Yamshchikov, Gil Mor, and Jacqueline Conover. Dna vaccines: safety and efficacy issues. In Springer seminars in immunopathology, volume 19, pages 245–256. Springer, 1997." />
+<meta name="citation_reference" content="Philip R Krause and Marion F Gruber. Emergency use authorization of covid vaccines—safety and efficacy follow-up considerations. New England Journal of Medicine, 383(19):e107, 2020." />
+<meta name="citation_reference" content="Adam J Kucharski, Timothy W Russell, Charlie Diamond, Yang Liu, John Edmunds, Sebastian Funk, Rosalind M Eggo, Fiona Sun, Mark Jit, James D Munday, et al. Early dynamics of transmission and control of covid-19: a mathematical modelling study. The lancet infectious diseases, 20(5):553–558, 2020." />
+<meta name="citation_reference" content="Stephen A Lauer, Kyra H Grantz, Qifang Bi, Forrest K Jones, Qulu Zheng, Hannah R Meredith, Andrew S Azman, Nicholas G Reich, and Justin Lessler. The incubation period of coronavirus disease 2019 (covid-19) from publicly reported confirmed cases: estimation and application. Annals of internalmedicine, 172(9):577–582, 2020." />
+<meta name="citation_reference" content="Shaoqing Lei, Fang Jiang, Wating Su, Chang Chen, Jingli Chen, Wei Mei, Li-Ying Zhan, Yifan Jia, Liangqing Zhang, Danyong Liu, et al. Clinical characteristics and outcomes of patients undergoing surgeries during the incubation period of covid-19 infection. EClinicalMedicine, 21:100331, 2020." />
+<meta name="citation_reference" content="Long-quan Li, Tian Huang, Yong-qing Wang, Zheng-ping Wang, Yuan Liang, Tao-bi Huang, Hui-yun Zhang, Weiming Sun, and Yuping Wang. Covid-19 patients’ clinical characteristics, discharge rate, and fatality rate of meta-analysis. Journal of medical virology, 92(6):577–583, 2020." />
+<meta name="citation_reference" content="Qun Li, Xuhua Guan, Peng Wu, Xiaoye Wang, Lei Zhou, Yeqing Tong, Ruiqi Ren, Kathy SM Leung, Eric HY Lau, Jessica Y Wong, et al. Early transmission dynamics in wuhan, china, of novel coronavirus–infected pneumonia. New England journal of medicine, 2020." />
+<meta name="citation_reference" content="Qun Li, Xuhua Guan, Peng Wu, Xiaoye Wang, Lei Zhou, Yeqing Tong, Ruiqi Ren, Kathy SM Leung, Eric HY Lau, Jessica Y Wong, et al. Early transmission dynamics in wuhan, china, of novel coronavirus–infected pneumonia. New England journal of medicine, 2020." />
+<meta name="citation_reference" content="Zhihua Liu, Pierre Magal, Ousmane Seydi, and Glenn Webb. A covid-19 epidemic model with latency period. Infectious Disease Modelling, 5:323–337, 2020." />
+<meta name="citation_reference" content="Shabir A Madhi, Vicky Baillie, Clare L Cutland, Merryn Voysey, Anthonet L Koen, Lee Fairlie, Sherman D Padayachee, Keertan Dheda, Shaun L Barnabas, Qasim Ebrahim Bhorat, et al. Safety and efficacy of the chadox1 ncov-19 (azd1222) covid-19 vaccine against the b. 1.351 variant in south africa. MedRxiv, 2021." />
+<meta name="citation_reference" content="Matete R Magamela, Tafadzwa Dzinamarira, and Mbuzeleni Hlongwa. Covid-19 consequences on mental health: An african perspective. South African Journal of Psychiatry, 27(1):1–2, 2021." />
+<meta name="citation_reference" content="Elisabeth Mahase. Covid-19: South africa pauses use of oxford vaccine after study casts doubt on efficacy against variant, 2021." />
+<meta name="citation_reference" content="Daily Maverick. South Africa to Give First COVID-19 Vaccine Doses to President,Health Workers., (accessed on 29 August 2021). https://www.dailymaverick.co.za/article/2021-02-17-south-africa-to-give-first-covid-19-vaccine-doses-to-president\-health-workers/." />
+<meta name="citation_reference" content="Liam G McCoy, Jonathan Smith, Kavya Anchuri, Isha Berry, Joanna Pineda, Vinyas Harish, Andrew T Lam, Seung Eun Yi, Sophie Hu, Laura Rosella, et al. Characterizing early canadian federal, provincial, territorial and municipal nonpharmaceutical interventions in response to covid-19: a descriptive analysis. CMAJ open, 8(3):E545, 2020." />
+<meta name="citation_reference" content="Malizgani Mhango, Itai Chitungo, and Tafadzwa Dzinamarira. Covid-19 lockdowns: impact on facility-based hiv testing and the case for the scaling up of home-based testing services in sub-saharan africa. AIDS and Behavior, 24:3014–3016, 2020." />
+<meta name="citation_reference" content="Rabiu Musa, Absalom E Ezugwu, and Godwin CE Mbah. Assessment of the impacts of pharmaceutical and non-pharmaceutical intervention on covid-19 in south africa using mathematical model. medRxiv, 2020." />
+<meta name="citation_reference" content="Steady Mushayabasa, Ethel T Ngarakana-Gwasira, and Josiah Mushanyu. On the role of governmental action and individual reaction on covid-19 dynamics in south africa: A mathematical modelling study. Informatics in Medicine Unlocked, 20:100387, 2020." />
+<meta name="citation_reference" content="Neha Pathak. The great invader: How covid attacks every organ, 2020." />
+<meta name="citation_reference" content="Gashema Pierre, Annette Uwineza, and Tafadzwa Dzinamarira. Attendance to hiv antiretroviral collection clinic appointments during covid-19 lockdown. a single center study in kigali, rwanda. AIDSand Behavior, 24(12):3299–3301, 2020." />
+<meta name="citation_reference" content="Musa Rabiu, Robert Willie, and Nabendra Parumasur. Analysis of a virus-resistant hiv-1 model with behavior change in non-progressors. Biomath, 9(1):2006143, 2020." />
+<meta name="citation_reference" content="Musa Rabiu, Robert Willie, and Nabendra Parumasur. Mathematical analysis of a disease-resistant model with imperfect vaccine, quarantine and treatment. Ricerche di Matematica, 69(2):603–627, 2020." />
+<meta name="citation_reference" content="Manish Sadarangani, Bahaa Abu Raya, Jessica M Conway, Sarafa A Iyaniwura, Rebeca Cardim Falcao, Caroline Colijn, Daniel Coombs, and Soren Gantt. Importance of covid-19 vaccine efficacy in older age groups. Vaccine, 39(15):2020–2023, 2021." />
+<meta name="citation_reference" content="Muhammad Arif Nadeem Saqib, Shajee Siddiqui, Muhammad Qasim, Muhammad Azhar Jamil, Ibrar Rafique, Usman Ayub Awan, Haroon Ahmad, and Muhammad Sohail Afzal. Effect of covid-19 lockdown on patients with chronic diseases. Diabetes &amp; Metabolic Syndrome: Clinical Research &amp; Reviews, 14(6):1621–1623, 2020." />
+<meta name="citation_reference" content="Sadeeq Sheshe, Abdullahi Nazifi, AM Labbo, GM Khalid, Abubakar Yahya, Umar Muhammad, and Aliyu Musa Haruna. Mechanism of antiviral immune response and covid-19 infection. Asian Journalof Immunology, pages 1–8, 2020." />
+<meta name="citation_reference" content="Madhumita Shrotri, Annalan MD Navaratnam, Vincent Nguyen, Thomas Byrne, Cyril Geismar, Ellen Fragaszy, Sarah Beale, Wing Lam Erica Fong, Parth Patel, Jana Kovar, et al. Spike-antibody waning after second dose of bnt162b2 or chadox1. The Lancet, 398(10298):385–387, 2021." />
+<meta name="citation_reference" content="Surya Singh, Mujaheed Shaikh, Katharina Hauck, and Marisa Miraldo. Impacts of introducing and lifting nonpharmaceutical interventions on covid-19 daily growth rate and compliance in the united states. Proceedings of the National Academy of Sciences, 118(12), 2021." />
+<meta name="citation_reference" content="Lauren Tindale, Michelle Coombe, Jessica E Stockdale, Emma Garlock, Wing Yin Venus Lau, Manu Saraswat, Yen-Hsiang Brian Lee, Louxin Zhang, Dongxuan Chen, Jacco Wallinga, et al. Transmission interval estimates suggest pre-symptomatic spread of covid-19. MedRxiv, 2020." />
+<meta name="citation_reference" content="Pauline Van den Driessche and James Watmough. Reproduction numbers and sub-threshold endemic equilibria for compartmental models of disease transmission. Mathematical biosciences, 180(1-2):29–48, 2002." />
+<meta name="citation_reference" content="Relief Web. COVAX Expects to Start Sending Millions of COVID-19 Vaccines toAfrica in February, (accessed on 29 August 2021). https://reliefweb.int/report/world/covax-expects-start-sending-millions-covid-19-vaccines-africa-february." />
+<meta name="citation_reference" content="Webometer. Total Coronavirus Deaths in South Africa, (accessed August 28, 2021). https://www.worldometers.info/coronavirus/country/south-africa/." />
+<meta name="citation_reference" content="World Health Organization (WHO). First COVID-19 COVAX vaccine doses administeredin Africa, (accessed September 16, 2021). https://www.who.int/news/item/01-03-2021-first-covid-19-covax-vaccine-doses-administered-in-africa." />
+<meta name="citation_reference" content="World Health Organization (WHO) et al. Naming the coronavirus disease(COVID-19) and the virus that causes it. 2020, 2020. https://www.who.int/emergencies/diseases/novel-coronavirus-2019/technical-guidance/naming-the-coronavirus-disease-(covid-2019)-and-the-virus-that-causes-it#:~:text=The%20International%20Committee%20on%20Taxonomy,two%20viruses%20are%20different." />
+<meta name="citation_reference" content="Uwe Wollina, Ayşe Serap Karadağ, Christopher Rowland-Payne, Anca Chiriac, and Torello Lotti. Cutaneous signs in covid-19 patients: a review. Dermatologic therapy, 33(5):e13549, 2020." />
+<meta name="citation_reference" content="Worldometer. Corona-virus data, (accessed August 29, 2021). https://www.worldometers.info/coronavirus/." />
+<meta name="citation_reference" content="Chuang Xu, Yongzhen Pei, Shengqiang Liu, and Jinzhi Lei. Effectiveness of non-pharmaceutical interventions against local transmission of covid-19: An individual-based modelling study. InfectiousDisease Modelling, 6:848–858, 2021." />
+<meta name="citation_reference" content="Zifeng Yang, Zhiqi Zeng, Ke Wang, Sook-San Wong, Wenhua Liang, Mark Zanin, Peng Liu, Xudong Cao, Zhongqiang Gao, Zhitong Mai, et al. Modified seir and ai prediction of the epidemics trend of covid-19 in china under public health interventions. Journal of thoracic disease, 12(3):165, 2020." />
+<meta name="citation_reference" content="New york times. They Were Infected With the Coronavirus. They Never Showed Signs., (accessed August 29, 2021). https://www.nytimes.com/2020/02/26/health/coronavirus-asymptomatic.html." />
+<meta name="citation_reference" content="Zebin Zhao, Xin Li, Feng Liu, Gaofeng Zhu, Chunfeng Ma, and Liangxu Wang. Prediction of the covid-19 spread in african countries and implications for prevention and control: A case study in south africa, egypt, algeria, nigeria, senegal and kenya. Science of the Total Environment, 729:138959, 2020." />
+<meta name="citation_reference" content="Haonan Zhong and Wendi Wang. Mathematical analysis for covid-19 resurgence in the contaminated environment. Mathematical Biosciences and Engineering, 17(6):6909–6927, 2020." />
+<meta name="citation_reference" content="Lirong Zou, Feng Ruan, Mingxing Huang, Lijun Liang, Huitao Huang, Zhongsi Hong, Jianxiang Yu, Min Kang, Yingchao Song, Jinyu Xia, et al. Sars-cov-2 viral load in upper respiratory specimens of infected patients. New England Journal of Medicine, 382(12):1177–1179, 2020." />
+<meta name="twitter:title" content="Assessing the potential impact of immunity waning on the dynamics of COVID-19: an endemic model of COVID-19" />
+<meta name="twitter:site" content="@medrxivpreprint" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="We developed an endemic model of COVID-19 to assess the impact of vaccination and immunity waning on the dynamics of the disease. Our model exhibits the phenomenon of back-ward bifurcation and bi-stability, where a stable disease-free equilibrium co-exists with a stable endemic equilibrium. The epidemiological implication of this is that the control reproduction number being less than unity is no longer sufficient to guarantee disease eradication. We showed that this phenomenon could be eliminated by either increasing the vaccine efficacy or by reducing the disease transmission rate (adhering to non-pharmaceutical interventions). Furthermore, we numerically investigated the impacts of vaccination and waning of both vaccine-induced immunity and post-recovery immunity on the disease dynamics. Our simulation results show that the waning of vaccine-induced immunity has more effect on the disease dynamics relative to post-recovery immunity waning, and suggests that more emphasis should be on reducing the waning of vaccine-induced immunity to eradicate COVID-19.
+
+### Competing Interest Statement
+
+The authors have declared no competing interest.
+
+### Funding Statement
+
+This study did not receive any funding
+
+### Author Declarations
+
+I confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.
+
+Yes
+
+I confirm that all necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived, and that any patient/participant/sample identifiers included were not known to anyone (e.g., hospital staff, patients or participants themselves) outside the research group so cannot be used to identify individuals.
+
+Yes
+
+I understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).
+
+Yes
+
+I have followed all appropriate research reporting guidelines and uploaded the relevant EQUATOR Network research reporting checklist(s) and other pertinent material as supplementary files, if applicable.
+
+Yes
+
+All data produced in the present work are contained in the manuscript" />
+<meta name="og-title" property="og:title" content="Assessing the potential impact of immunity waning on the dynamics of COVID-19: an endemic model of COVID-19" />
+<meta name="og-url" property="og:url" content="https://www.medrxiv.org/content/10.1101/2021.10.23.21265421v1" />
+<meta name="og-site-name" property="og:site_name" content="medRxiv" />
+<meta name="og-description" property="og:description" content="We developed an endemic model of COVID-19 to assess the impact of vaccination and immunity waning on the dynamics of the disease. Our model exhibits the phenomenon of back-ward bifurcation and bi-stability, where a stable disease-free equilibrium co-exists with a stable endemic equilibrium. The epidemiological implication of this is that the control reproduction number being less than unity is no longer sufficient to guarantee disease eradication. We showed that this phenomenon could be eliminated by either increasing the vaccine efficacy or by reducing the disease transmission rate (adhering to non-pharmaceutical interventions). Furthermore, we numerically investigated the impacts of vaccination and waning of both vaccine-induced immunity and post-recovery immunity on the disease dynamics. Our simulation results show that the waning of vaccine-induced immunity has more effect on the disease dynamics relative to post-recovery immunity waning, and suggests that more emphasis should be on reducing the waning of vaccine-induced immunity to eradicate COVID-19.
+
+### Competing Interest Statement
+
+The authors have declared no competing interest.
+
+### Funding Statement
+
+This study did not receive any funding
+
+### Author Declarations
+
+I confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.
+
+Yes
+
+I confirm that all necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived, and that any patient/participant/sample identifiers included were not known to anyone (e.g., hospital staff, patients or participants themselves) outside the research group so cannot be used to identify individuals.
+
+Yes
+
+I understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).
+
+Yes
+
+I have followed all appropriate research reporting guidelines and uploaded the relevant EQUATOR Network research reporting checklist(s) and other pertinent material as supplementary files, if applicable.
+
+Yes
+
+All data produced in the present work are contained in the manuscript" />
+<meta name="og-type" property="og:type" content="article" />
+<meta name="og-image" property="og:image" content="" />
+<meta name="citation_date" content="2021-10-26" />
+<meta name="description" content="medRxiv - The Preprint Server for Health Sciences" />
+<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="canonical" href="https://www.medrxiv.org/content/10.1101/2021.10.23.21265421v1" />
+<link rel="shortlink" href="https://www.medrxiv.org/node/426579" />
+    <title>Assessing the potential impact of immunity waning on the dynamics of COVID-19: an endemic model of COVID-19 | medRxiv</title>  
+    <link type="text/css" rel="stylesheet" href="https://www.medrxiv.org/sites/default/files/advagg_css/css__7SC0i-kTgUlQGKuqbmyS18Sez8FDO-aG9FSHkGrLGl8__9Xf-fJpmF9h8tvWywQTaOzJzFLt4sEfx108Wh1gYmm0__OWu9jWxbqz5eMqeTDc4xZhOzPlgoEqGh5PmxOqlf8ZY.css" media="all" />
+<link type="text/css" rel="stylesheet" href="//cdn.jsdelivr.net/qtip2/2.2.1/jquery.qtip.min.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.medrxiv.org/sites/default/files/advagg_css/css__6CA0-YpwAeHt1tcr6dmX5ZBUuxlddlGnE8FCmWRwxOw__M2jATP9fgS6Hut-L0G3s312CoMA5SDjnuWFM3KPLIRs__OWu9jWxbqz5eMqeTDc4xZhOzPlgoEqGh5PmxOqlf8ZY.css" media="all" />
+<style type="text/css" media="all">
+/* <![CDATA[ */
+#sliding-popup.sliding-popup-bottom,#sliding-popup.sliding-popup-bottom .eu-cookie-withdraw-banner,.eu-cookie-withdraw-tab{background:gray}#sliding-popup.sliding-popup-bottom.eu-cookie-withdraw-wrapper{background:transparent}#sliding-popup .popup-content #popup-text h1,#sliding-popup .popup-content #popup-text h2,#sliding-popup .popup-content #popup-text h3,#sliding-popup .popup-content #popup-text p,.eu-cookie-compliance-secondary-button,.eu-cookie-withdraw-tab{color:#fff !important}.eu-cookie-withdraw-tab{border-color:#fff}.eu-cookie-compliance-more-button{color:#fff !important}
+/* ]]> */
+</style>
+
+<!--[if lte IE 7]>
+<link type="text/css" rel="stylesheet" href="https://www.medrxiv.org/sites/default/files/advagg_css/css__ElJr3PIJEvw3qLXc1cnYiLj2G4KgDPSXFOfm6Phf8hw__JdWGm15cDWjsK6KrFlQVXQix9YgNeYysf22XZHj-Y-c__OWu9jWxbqz5eMqeTDc4xZhOzPlgoEqGh5PmxOqlf8ZY.css" media="all" />
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="https://www.medrxiv.org/sites/default/files/advagg_css/css__Wnlyen9qEpwh_Qaf9okEu4QdVGM0BDothxeqA6Nbvo8__EJmw6SZD9bYoS8jocCpPYS3JFRURpdzmuvJoAUNiI-g__OWu9jWxbqz5eMqeTDc4xZhOzPlgoEqGh5PmxOqlf8ZY.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.medrxiv.org/sites/default/files/advagg_css/css__XPg6Aobs217v0T9rA_Y-wMrH3jyqmqunImGwMN4WMEE__Nc8_6i0mjd_g-hzHvpxLmo5g2aluEkJf5SXcEKb7YRY__OWu9jWxbqz5eMqeTDc4xZhOzPlgoEqGh5PmxOqlf8ZY.css" media="all" />
+
+<!--[if (lt IE 9)&(!IEMobile)]>
+<link type="text/css" rel="stylesheet" href="https://www.medrxiv.org/sites/default/files/advagg_css/css__XH6bpcI0f2dImc-p674DLCZtWBGb-QwxJK1YexVGtno__vUceGprdo5nIhV6DH93X7fI3r8RcTJbChbas9TQXeW4__OWu9jWxbqz5eMqeTDc4xZhOzPlgoEqGh5PmxOqlf8ZY.css" media="all" />
+<![endif]-->
+
+<!--[if gte IE 9]><!-->
+<link type="text/css" rel="stylesheet" href="https://www.medrxiv.org/sites/default/files/advagg_css/css__2WBMox6sOrN42ss5lCnH7WWVRdFdJCxtTKnQJYRwTE4__yqNvNYLvMpjy3ffuJrjjm9uW2i-Me1c23KLYuWHaqio__OWu9jWxbqz5eMqeTDc4xZhOzPlgoEqGh5PmxOqlf8ZY.css" media="all" />
+<!--<![endif]-->
+<link type="text/css" rel="stylesheet" href="https://www.medrxiv.org/sites/default/files/advagg_css/css__GJ_y0JYBjHihOcdJg-wLEQWRfqvBxU74PCdjUcUHlyY__f0nQteVSjWTKq2ga8E2qYttGognShmPZZJdeGhQoNFI__OWu9jWxbqz5eMqeTDc4xZhOzPlgoEqGh5PmxOqlf8ZY.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://d33xdlntwy0kbs.cloudfront.net/cshl_custom_medrxiv.css" media="all" />
+    <script type="text/javascript" src="https://www.medrxiv.org/sites/default/files/advagg_js/js__BKYqkKToQ7EjirB7eIdMEH5521EU3da9IpoOs8Ex2XI__aSjVoX8giBmLhN2EbCgIGQJNu89Mh5aVu1LvI_gkJ7Y__OWu9jWxbqz5eMqeTDc4xZhOzPlgoEqGh5PmxOqlf8ZY.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/qtip2/2.2.1/jquery.qtip.min.js"></script>
+<script type="text/javascript" src="https://www.medrxiv.org/sites/default/files/advagg_js/js__4Cn2dxvNlsJ-sHe6QOTLREaQvcqb0Yh0Zm9tTOHtQow__DGggC5UtYkPCwIH8nsa7Vw7hug93fb9QVVl0UJ3mfMM__OWu9jWxbqz5eMqeTDc4xZhOzPlgoEqGh5PmxOqlf8ZY.js"></script>
+<script type="text/javascript" src="https://www.google.com/recaptcha/api.js?hl=en&amp;render=explicit&amp;onload=drupalRecaptchaOnload"></script>
+<script type="text/javascript" src="https://www.medrxiv.org/sites/default/files/advagg_js/js__dGWpV57YWu3sX6UOe04RMH-iP9jSkEP7Ajt0caYXZZk__sUEhH4BzLc9Xn679uyzc7yvwgMkxjsks2WFVnFK0PiI__OWu9jWxbqz5eMqeTDc4xZhOzPlgoEqGh5PmxOqlf8ZY.js"></script>
+<script type="text/javascript" async="async" src="https://scholar.google.com/scholar_js/casa.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+/*!
+ * yepnope1.5.4
+ * (c) WTFPL, GPLv2
+ */
+(function(a,b,c){function d(a){return"[object Function]"==o.call(a)}function e(a){return"string"==typeof a}function f(){}function g(a){return!a||"loaded"==a||"complete"==a||"uninitialized"==a}function h(){var a=p.shift();q=1,a?a.t?m(function(){("c"==a.t?B.injectCss:B.injectJs)(a.s,0,a.a,a.x,a.e,1)},0):(a(),h()):q=0}function i(a,c,d,e,f,i,j){function k(b){if(!o&&g(l.readyState)&&(u.r=o=1,!q&&h(),l.onload=l.onreadystatechange=null,b)){"img"!=a&&m(function(){t.removeChild(l)},50);for(var d in y[c])y[c].hasOwnProperty(d)&&y[c][d].onload()}}var j=j||B.errorTimeout,l=b.createElement(a),o=0,r=0,u={t:d,s:c,e:f,a:i,x:j};1===y[c]&&(r=1,y[c]=[]),"object"==a?l.data=c:(l.src=c,l.type=a),l.width=l.height="0",l.onerror=l.onload=l.onreadystatechange=function(){k.call(this,r)},p.splice(e,0,u),"img"!=a&&(r||2===y[c]?(t.insertBefore(l,s?null:n),m(k,j)):y[c].push(l))}function j(a,b,c,d,f){return q=0,b=b||"j",e(a)?i("c"==b?v:u,a,b,this.i++,c,d,f):(p.splice(this.i++,0,a),1==p.length&&h()),this}function k(){var a=B;return a.loader={load:j,i:0},a}var l=b.documentElement,m=a.setTimeout,n=b.getElementsByTagName("script")[0],o={}.toString,p=[],q=0,r="MozAppearance"in l.style,s=r&&!!b.createRange().compareNode,t=s?l:n.parentNode,l=a.opera&&"[object Opera]"==o.call(a.opera),l=!!b.attachEvent&&!l,u=r?"object":l?"script":"img",v=l?"script":u,w=Array.isArray||function(a){return"[object Array]"==o.call(a)},x=[],y={},z={timeout:function(a,b){return b.length&&(a.timeout=b[0]),a}},A,B;B=function(a){function b(a){var a=a.split("!"),b=x.length,c=a.pop(),d=a.length,c={url:c,origUrl:c,prefixes:a},e,f,g;for(f=0;f<d;f++)g=a[f].split("="),(e=z[g.shift()])&&(c=e(c,g));for(f=0;f<b;f++)c=x[f](c);return c}function g(a,e,f,g,h){var i=b(a),j=i.autoCallback;i.url.split(".").pop().split("?").shift(),i.bypass||(e&&(e=d(e)?e:e[a]||e[g]||e[a.split("/").pop().split("?")[0]]),i.instead?i.instead(a,e,f,g,h):(y[i.url]?i.noexec=!0:y[i.url]=1,f.load(i.url,i.forceCSS||!i.forceJS&&"css"==i.url.split(".").pop().split("?").shift()?"c":c,i.noexec,i.attrs,i.timeout),(d(e)||d(j))&&f.load(function(){k(),e&&e(i.origUrl,h,g),j&&j(i.origUrl,h,g),y[i.url]=2})))}function h(a,b){function c(a,c){if(a){if(e(a))c||(j=function(){var a=[].slice.call(arguments);k.apply(this,a),l()}),g(a,j,b,0,h);else if(Object(a)===a)for(n in m=function(){var b=0,c;for(c in a)a.hasOwnProperty(c)&&b++;return b}(),a)a.hasOwnProperty(n)&&(!c&&!--m&&(d(j)?j=function(){var a=[].slice.call(arguments);k.apply(this,a),l()}:j[n]=function(a){return function(){var b=[].slice.call(arguments);a&&a.apply(this,b),l()}}(k[n])),g(a[n],j,b,n,h))}else!c&&l()}var h=!!a.test,i=a.load||a.both,j=a.callback||f,k=j,l=a.complete||f,m,n;c(h?a.yep:a.nope,!!i),i&&c(i)}var i,j,l=this.yepnope.loader;if(e(a))g(a,0,l,0);else if(w(a))for(i=0;i<a.length;i++)j=a[i],e(j)?g(j,0,l,0):w(j)?B(j):Object(j)===j&&h(j,l);else Object(a)===a&&h(a,l)},B.addPrefix=function(a,b){z[a]=b},B.addFilter=function(a){x.push(a)},B.errorTimeout=1e4,null==b.readyState&&b.addEventListener&&(b.readyState="loading",b.addEventListener("DOMContentLoaded",A=function(){b.removeEventListener("DOMContentLoaded",A,0),b.readyState="complete"},0)),a.yepnope=k(),a.yepnope.executeStack=h,a.yepnope.injectJs=function(a,c,d,e,i,j){var k=b.createElement("script"),l,o,e=e||B.errorTimeout;k.src=a;for(o in d)k.setAttribute(o,d[o]);c=j?h:c||f,k.onreadystatechange=k.onload=function(){!l&&g(k.readyState)&&(l=1,c(),k.onload=k.onreadystatechange=null)},m(function(){l||(l=1,c(1))},e),i?k.onload():n.parentNode.insertBefore(k,n)},a.yepnope.injectCss=function(a,c,d,e,g,i){var e=b.createElement("link"),j,c=i?h:c||f;e.href=a,e.rel="stylesheet",e.type="text/css";for(j in d)e.setAttribute(j,d[j]);g||(n.parentNode.insertBefore(e,n),m(c,0))}})(this,document);
+
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+yepnope({
+  test: Modernizr.matchmedia,
+  nope: '/sites/all/libraries/media-match/media.match.min.js'
+});
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _prum=[['id', '52e95df3abe53d2e33000000'], ['mark', 'firstbyte',
+      (new Date()).getTime()]]; (function() {
+      var s=document.getElementsByTagName('script')[0],
+      p=document.createElement('script');
+      p.async='async'; p.src='//rum-static.pingdom.net/prum.min.js';s.parentNode.insertBefore(p,s);})();
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+if(typeof window.MathJax === "undefined") window.MathJax = { menuSettings: { zoom: "Click" } };
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-141606356-1", {"cookieDomain":"auto"});ga("set", "page", location.pathname + location.search + location.hash);ga("send", "pageview");ga('create', 'UA-189672-38', 'auto', {'name': 'hwTracker'});
+ga('set', 'anonymizeIp', true);
+ga('hwTracker.send', 'pageview');
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings,{"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"jcore_1","theme_token":"QYYgcICS7jRTFrEHhPbsQbZQMxDg0o-ctBRIA-1a2CQ"},"colorbox":{"opacity":"0.85","current":"{current} of {total}","previous":"\u00ab Prev","next":"Next \u00bb","close":"Close","maxWidth":"98%","maxHeight":"98%","fixed":true,"mobiledetect":true,"mobiledevicewidth":"480px"},"highwire":{"nid":"426579","apath":"\/medrxiv\/early\/2021\/10\/26\/2021.10.23.21265421.atom","pisa":"medrxiv;2021.10.23.21265421v1","ac":{"\/medrxiv\/early\/2021\/10\/26\/2021.10.23.21265421.atom":{"access":{"full":true},"pisa_id":"","apath":"\/medrxiv\/early\/2021\/10\/26\/2021.10.23.21265421.atom","jcode":"medrxiv"}},"processed":["highwire_math"],"markup":[{"requested":"abstract","variant":"abstract","view":"abstract","pisa":"medrxiv;2021.10.23.21265421v1"}],"modal_window_width":"560","share_modal_width":"560","share_modal_title":"Share this Article"},"jcarousel":{"ajaxPath":"\/jcarousel\/ajax\/views"},"instances":"{\u0022highwire_abstract_tooltip\u0022:{\u0022content\u0022:{\u0022text\u0022:\u0022\u0022},\u0022style\u0022:{\u0022tip\u0022:{\u0022width\u0022:20,\u0022height\u0022:20,\u0022border\u0022:1,\u0022offset\u0022:0,\u0022corner\u0022:true},\u0022classes\u0022:\u0022qtip-custom hw-tooltip hw-abstract-tooltip qtip-shadow qtip-rounded\u0022,\u0022classes_custom\u0022:\u0022hw-tooltip hw-abstract-tooltip\u0022},\u0022position\u0022:{\u0022at\u0022:\u0022right center\u0022,\u0022my\u0022:\u0022left center\u0022,\u0022viewport\u0022:true,\u0022adjust\u0022:{\u0022method\u0022:\u0022shift\u0022}},\u0022show\u0022:{\u0022event\u0022:\u0022mouseenter click \u0022,\u0022solo\u0022:true},\u0022hide\u0022:{\u0022event\u0022:\u0022mouseleave \u0022,\u0022fixed\u0022:1,\u0022delay\u0022:\u0022100\u0022}},\u0022highwire_author_tooltip\u0022:{\u0022content\u0022:{\u0022text\u0022:\u0022\u0022},\u0022style\u0022:{\u0022tip\u0022:{\u0022width\u0022:15,\u0022height\u0022:15,\u0022border\u0022:1,\u0022offset\u0022:0,\u0022corner\u0022:true},\u0022classes\u0022:\u0022qtip-custom hw-tooltip hw-author-tooltip qtip-shadow qtip-rounded\u0022,\u0022classes_custom\u0022:\u0022hw-tooltip hw-author-tooltip\u0022},\u0022position\u0022:{\u0022at\u0022:\u0022top center\u0022,\u0022my\u0022:\u0022bottom center\u0022,\u0022viewport\u0022:true,\u0022adjust\u0022:{\u0022method\u0022:\u0022\u0022}},\u0022show\u0022:{\u0022event\u0022:\u0022mouseenter \u0022,\u0022solo\u0022:true},\u0022hide\u0022:{\u0022event\u0022:\u0022mouseleave \u0022,\u0022fixed\u0022:1,\u0022delay\u0022:\u0022100\u0022}},\u0022highwire_reflinks_tooltip\u0022:{\u0022content\u0022:{\u0022text\u0022:\u0022\u0022},\u0022style\u0022:{\u0022tip\u0022:{\u0022width\u0022:15,\u0022height\u0022:15,\u0022border\u0022:1,\u0022mimic\u0022:\u0022top center\u0022,\u0022offset\u0022:0,\u0022corner\u0022:true},\u0022classes\u0022:\u0022qtip-custom hw-tooltip hw-ref-link-tooltip qtip-shadow qtip-rounded\u0022,\u0022classes_custom\u0022:\u0022hw-tooltip hw-ref-link-tooltip\u0022},\u0022position\u0022:{\u0022at\u0022:\u0022bottom left\u0022,\u0022my\u0022:\u0022top left\u0022,\u0022viewport\u0022:true,\u0022adjust\u0022:{\u0022method\u0022:\u0022flip\u0022}},\u0022show\u0022:{\u0022event\u0022:\u0022mouseenter \u0022,\u0022solo\u0022:true},\u0022hide\u0022:{\u0022event\u0022:\u0022mouseleave \u0022,\u0022fixed\u0022:1,\u0022delay\u0022:\u0022100\u0022}}}","qtipDebug":"{\u0022leaveElement\u0022:0}","panel_ajax_tab":{"path":"sites\/all\/modules\/contrib\/panels_ajax_tab"},"disqus":{"domain":"medRxiv","url":"https:\/\/www.medrxiv.org\/content\/10.1101\/2021.10.23.21265421v1","title":"Assessing the potential impact of immunity waning on the dynamics of COVID-19: an endemic model of COVID-19","identifier":"node\/426579"},"panels_ajax_pane":{"new-41":"{\u0022encrypted\u0022:\u0022{\\\u0022encrypted\\\u0022:\\\u0022oRJHQfpECBDxWUOTg6dD3XsuYlkGAxRjGNJdwj+fVtfO6cfc977RIx1nO8B90yta44aBdlaXAB6+yhrwiM1Ky\\\\\\\/oKuMxf0VN9Fc0AJzaa57v5+8w8Zd1NCTzmZpr1ejv1\\\\\\\/D4a8Ized\\\\\\\/uvB7y1cv7WSxxe517cM44FsJmpj5KuBiN78sRf9BPsgYMyaHTPN9MQwwcHGD+TEBTX\\\\\\\/+8WY0XhgZ6xl2joTZLUD5wJL3knIEKsWh3ljrfKCesqeoXsnC33Gg+kOpzZDU1RRDz+jtSBSoJtIz9P4LTOPglDYe4xqkqPomhH1BTWu1deceQ9NlHbtu77W++FempMVTdQaC1ptF62F9YO9tBc2j8ouQdfEFeBwavnsfHhRl1y0olBOsvdXpbsM1vPgoKSVFVxCXvSzmYuVA115AV9+UrrBqmXRTIoarznbJgwRU0AUItan1ukA9sgJuJ4axIQEQ\\\\\\\/4SUk68jz1y1F8Qsyy5CiJhBXw214pJM3bitdMNLcu7xm6VEtl0+nAsFSMyladcDeEmCQWF1it94k2eqGxmsjnyvau91KzhLuP33Nhe67cMABTmbdBDp96tn5OaOKSbD1oFVlxzTgPaiDzvg5cnvXwfV3SsVtYL8ob+93hzyrIHa37FaPs6SB\\\\\\\/7mZdzr0csKuubU8XdtbT\\\\\\\/LobXXCUsjxrAl6vka2zaGOSkHuxPfl+q6AwJVAIxgAY\\\\\\\/qoD5TlUiNdRqB1vvB\\\\\\\/3nMNgK1iV4xjW4o4R4h9jnqc7dWYc6YPnyHu3NWVDXhTn3o489iZlqQnJsxIJUE5nEEKSfQbwz36qVsi6c+L22pOj5K7UxpX3R+LReAGFQp+hU9ufJ7DdeEMQDyxlwE18i9Kc1Q3x\\\\\\\/5ZPi\\\\\\\/s9GG2w6RUwaRmR5PIrKUDbXfrqh3G7HJ6P6MqusYThuWC2TfdyYZfv9MKIbK+YZX2VON0KAq2aBEnwPUWLH8tICgCME5J5+ZQgsJVOMoyaD4fLJFTCJ0u3RbjzhK8JiBi8v4K+MDJrz6576R9it2e4sz8JrCSn1MTUnyPMuuEOwU+lu7xvPB7Q7px0qisJz4Gf9pJ35Q6XYK2BvQh3ck7LtKsAsw8PYubl0BkpdtNPqtCD0l4CmV1\\\\\\\/jrFN8yAWjBBW1OP4bdev1XpCzezdZdm7wXphuz308w4QS4MXysOSdtv9rU8JTAgM06JsgbGyXzJNMQ4d\\\\\\\/zzvW00NHU73Im6Wu8Eh1oq9K8fCV9fMYNQ465Tou8XrwXuHNTXQtGg6qvGOKnHc1LFH+GPkhRv4NO3m+psQ\\\u0022,\\\u0022iv\\\u0022:\\\u0022ULYFGIY6lFG8gQwfPNMM2g==\\\u0022,\\\u0022salt\\\u0022:\\\u0022f9d8845712f72c9fee5db7d9ff111eab\\\u0022}\u0022,\u0022hmac\u0022:\u00220435d1ce53b2667d2232d0e46ef956eb323c41197cfbe787f9e69834a7709add\u0022}"},"urlIsAjaxTrusted":{"\/content\/10.1101\/2021.10.23.21265421v1":true},"ws_fl":{"width":100,"height":21},"ws_gpo":{"size":"","annotation":"","lang":"","callback":"","width":300},"color":{"logo":"https:\/\/www.medrxiv.org\/sites\/default\/files\/medrxiv_internal_logo.png"},"highwire_list_expand":{"is_collapsed":"1"},"highwireResponsive":{"enquire_enabled":1,"breakpoints_configured":1,"breakpoints":{"zero":"all and (min-width: 0px)","xsmall":"all and (min-width: 380px)","narrow":"all and (min-width: 768px) and (min-device-width: 768px), (max-device-width: 800px) and (min-width: 768px) and (orientation:landscape)","normal":"all and (min-width: 980px) and (min-device-width: 980px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation:landscape)","wide":"all and (min-width: 1220px)"}},"eu_cookie_compliance":{"popup_enabled":1,"popup_agreed_enabled":0,"popup_hide_agreed":0,"popup_clicking_confirmation":1,"popup_scrolling_confirmation":false,"popup_html_info":"\u003Cdiv\u003E\n  \u003Cdiv class =\u0022popup-content info\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022\u003E\n      \u003Cp\u003EWe use cookies on this site to enhance your user experience. By clicking any link on this page you are giving your consent for us to set cookies.\u003C\/p\u003E\n    \u003C\/div\u003E\n    \u003Cdiv id=\u0022popup-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022agree-button eu-cookie-compliance-default-button\u0022\u003EContinue\u003C\/button\u003E\n                    \u003Cbutton type=\u0022button\u0022 class=\u0022find-more-button eu-cookie-compliance-more-button\u0022\u003EFind out more\u003C\/button\u003E\n          \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E","use_mobile_message":false,"mobile_popup_html_info":"\u003Cdiv\u003E\n  \u003Cdiv class =\u0022popup-content info\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022\u003E\n          \u003C\/div\u003E\n    \u003Cdiv id=\u0022popup-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022agree-button eu-cookie-compliance-default-button\u0022\u003EContinue\u003C\/button\u003E\n                    \u003Cbutton type=\u0022button\u0022 class=\u0022find-more-button eu-cookie-compliance-more-button\u0022\u003EFind out more\u003C\/button\u003E\n          \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E\n","mobile_breakpoint":"768","popup_html_agreed":"\u003Cdiv\u003E\n  \u003Cdiv class=\u0022popup-content agreed\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022\u003E\n      \u003Ch2\u003EThank you for accepting cookies\u003C\/h2\u003E\u003Cp\u003EYou can now hide this message or find out more about cookies.\u003C\/p\u003E    \u003C\/div\u003E\n    \u003Cdiv id=\u0022popup-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022hide-popup-button eu-cookie-compliance-hide-button\u0022\u003EHide\u003C\/button\u003E\n              \u003Cbutton type=\u0022button\u0022 class=\u0022find-more-button eu-cookie-compliance-more-button-thank-you\u0022 \u003EMore info\u003C\/button\u003E\n          \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E","popup_use_bare_css":false,"popup_height":"auto","popup_width":"100%","popup_delay":1000,"popup_link":"\/help\/cookie-policy","popup_link_new_window":1,"popup_position":null,"popup_language":"en","store_consent":false,"better_support_for_screen_readers":0,"reload_page":0,"domain":"","popup_eu_only_js":0,"cookie_lifetime":"365","cookie_session":false,"disagree_do_not_show_popup":0,"method":"default","whitelisted_cookies":"","withdraw_markup":"\u003Cbutton type=\u0022button\u0022 class=\u0022eu-cookie-withdraw-tab\u0022\u003EPrivacy settings\u003C\/button\u003E\n\u003Cdiv class=\u0022eu-cookie-withdraw-banner\u0022\u003E\n  \u003Cdiv class=\u0022popup-content info\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022\u003E\n      \u003Cp\u003E\u0026lt;h2\u0026gt;We use cookies on this site to enhance your user experience\u0026lt;\/h2\u0026gt;\u0026lt;p\u0026gt;You have given your consent for us to set cookies.\u0026lt;\/p\u0026gt;\u003C\/p\u003E\n    \u003C\/div\u003E\n    \u003Cdiv id=\u0022popup-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022eu-cookie-withdraw-button\u0022\u003EWithdraw consent\u003C\/button\u003E\n    \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E\n","withdraw_enabled":false},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip","trackColorbox":1,"trackUrlFragments":1},"jnl_biorxiv_styles":{"defaultJCode":"medrxiv"},"omega":{"layouts":{"primary":"normal","order":["narrow","normal","wide"],"queries":{"narrow":"all and (min-width: 768px) and (min-device-width: 768px), (max-device-width: 800px) and (min-width: 768px) and (orientation:landscape)","normal":"all and (min-width: 980px) and (min-device-width: 980px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation:landscape)","wide":"all and (min-width: 1220px)"}}}});
+//--><!]]>
+</script>
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  </head>
+  <body class="html not-front not-logged-in page-node page-node- page-node-426579 node-type-highwire-article context-content hw-default-jcode-medrxiv hw-article-type-article">
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-P4HH5NV" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script type="text/javascript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0];var j=d.createElement(s);var dl=l!='dataLayer'?'&l='+l:'';j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;j.type='text/javascript';j.async=true;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-P4HH5NV');</script>
+<!-- End Google Tag Manager -->
+    <div id="skip-link">
+      <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+    </div>
+        <div class="page clearfix page-box-shadows footer-borders panels-page panels-layout-jcore_2col" id="page">
+      <header id="section-header" class="section section-header">
+    
+  <div id="zone-branding" class="zone zone-branding clearfix print-display-block container-30">
+    <div class="grid-15 prefix-1 region region-branding print-display-block" id="region-branding">
+  <div class="region-inner region-branding-inner">
+        <div class="branding-data clearfix">
+            <div class="logo-img">
+        <a href="/" rel="home" class="" data-icon-position="" data-hide-link-title="0"><img alt="medRxiv" src="https://www.medrxiv.org/sites/default/files/medrxiv_internal_logo.png" /></a>      </div>
+                </div>
+          </div>
+</div><div class="grid-11 suffix-1 region region-branding-second print-hidden" id="region-branding-second">
+  <div class="region-inner region-branding-second-inner">
+    <div class="block block-system block-menu block-main-menu block-system-main-menu odd block-without-title" id="block-system-main-menu">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <nav class="menubar-nav"><ul class="menu" role="menu"><li class="first leaf" role="menuitem"><a href="/" title="" class="" data-icon-position="" data-hide-link-title="0">Home</a></li>
+<li class="leaf" role="menuitem"><a href="/content/about-medrxiv" class="" data-icon-position="" data-hide-link-title="0">About</a></li>
+<li class="leaf" role="menuitem"><a href="/submit-a-manuscript" class="" data-icon-position="" data-hide-link-title="0">Submit</a></li>
+<li class="last leaf" role="menuitem"><a href="/content/alertsrss" title="" class="" data-icon-position="" data-hide-link-title="0">ALERTS / RSS</a></li>
+</ul></nav>    </div>
+  </div>
+</div><div class="block block-panels-mini block-biorxiv-search-box block-panels-mini-biorxiv-search-box even block-without-title" id="block-panels-mini-biorxiv-search-box">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <div class="panel-display panel-1col clearfix" id="mini-panel-biorxiv_search_box">
+  <div class="panel-panel panel-col">
+    <div><div class="panel-pane pane-highwire-seach-quicksearch" >
+  
+      
+  
+  <div class="pane-content">
+    <form class="highwire-quicksearch button-style-mini button-style-mini" action="/content/10.1101/2021.10.23.21265421v1" method="post" id="highwire-search-quicksearch-form-0" accept-charset="UTF-8"><div><div class="form-item form-item-label-invisible form-type-textfield form-item-keywords">
+  <label class="element-invisible" for="edit-keywords">Search for this keyword </label>
+ <input placeholder="Search" type="text" id="edit-keywords" name="keywords" value="" size="60" maxlength="128" class="form-text" />
+</div>
+<div class="button-wrapper button-mini"><span class="icon-search"></span><input data-icon-only="1" data-font-icon="icon-search" data-icon-position="after" type="submit" id="edit-submit--2" name="op" value="Search" class="form-submit" /></div><input type="hidden" name="form_build_id" value="form-I1Gj3Qs8XjoS7nTLejvyCDIEPTKKZgCryzw4c5Q7HUw" />
+<input type="hidden" name="form_id" value="highwire_search_quicksearch_form_0" />
+</div></form>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-custom pane-2 advanced-search-link" >
+  
+      
+  
+  <div class="pane-content">
+    <a href="/search">Advanced Search</a>  </div>
+
+  
+  </div>
+</div>
+  </div>
+</div>
+    </div>
+  </div>
+</div>  </div>
+</div>  </div>
+  
+  <div id="zone-header" class="zone zone-header clearfix container-30">
+  	      </div>
+</header>    
+      <section id="section-content" class="section section-content">
+    
+  <div id="zone-content" class="zone zone-content clearfix container-30">    
+        
+    <div class="grid-28 suffix-1 prefix-1 region region-content" id="region-content">
+  <div class="region-inner region-content-inner">
+    <a id="main-content"></a>
+                        <div class="block block-system block-main block-system-main odd block-without-title" id="block-system-main">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <div class="panel-display panels-960-layout jcore-2col-layout" >
+	  
+  <div class="panel-row-wrapper clearfix">
+		
+		<div class="main-content-wrapper grid-17 suffix-1 alpha">
+			<div class="panel-panel panel-region-content">
+			  <div class="inside"><div class="panel-pane pane-highwire-article-citation" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="highwire-article-citation highwire-citation-type-highwire-article node426579" data-node-nid="426579" id="node426579--2541992399" data-pisa="medrxiv;2021.10.23.21265421v1" data-pisa-master="medrxiv;2021.10.23.21265421" data-apath="/medrxiv/early/2021/10/26/2021.10.23.21265421.atom" data-hw-author-tooltip-instance=""><div  class="highwire-cite highwire-cite-highwire-article highwire-citation-medrxiv-article-top clearfix has-author-tooltip" >
+
+  
+      <h1 class="highwire-cite-title" id="page-title">Assessing the potential impact of immunity waning on the dynamics of COVID-19: an endemic model of COVID-19</h1>  
+      <div  class="highwire-cite-authors" ><span  class="highwire-citation-authors"><span class="highwire-citation-author first hw-author-orcid-logo-wrapper" data-delta="0"><a href="http://orcid.org/0000-0002-4830-8624" target="_blank" class="hw-author-orcid-logo link-icon-only link-icon"><span class="hw-icon-orcid hw-icon-color-orcid"></span> <span class="title element-invisible">View ORCID Profile</span></a><span class="nlm-given-names">Musa</span> <span class="nlm-surname">Rabiu</span></span>, <span class="highwire-citation-author hw-author-orcid-logo-wrapper" data-delta="1"><a href="http://orcid.org/0000-0002-8854-2335" target="_blank" class="hw-author-orcid-logo link-icon-only link-icon"><span class="hw-icon-orcid hw-icon-color-orcid"></span> <span class="title element-invisible">View ORCID Profile</span></a><span class="nlm-given-names">Sarafa A.</span> <span class="nlm-surname">Iyaniwura</span></span></span></div>
+  
+      <div  class="highwire-cite-metadata" ><span  class="highwire-cite-metadata-doi highwire-cite-metadata"><span class="label">doi:</span> https://doi.org/10.1101/2021.10.23.21265421 </span></div>
+  
+  
+  
+</div>
+<div id="hw-article-author-popups-node426579--2541992399" style="display: none;"><div class="author-tooltip-0"><div class="author-tooltip-name">Musa Rabiu </div><div class="author-tooltip-affiliation"><span class="author-tooltip-text"><div class='author-affiliation'><span class='nlm-sup'>1</span><span class='nlm-institution'>School of Mathematics, Statistics & Computer Science, University of KwaZulu-Natal</span>, Durban, <span class='nlm-country'>South Africa</span></div></span></div><ul class="author-tooltip-find-more"><li class="author-tooltip-gs-link first"><a href="/lookup/google-scholar?link_type=googlescholar&amp;gs_type=author&amp;author%5B0%5D=Musa%2BRabiu%2B" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on Google Scholar</a></li><li class="author-tooltip-pubmed-link"><a href="/lookup/external-ref?access_num=Rabiu%20M&amp;link_type=AUTHORSEARCH" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on PubMed</a></li><li class="author-site-search-link"><a href="/search/author1%3AMusa%2BRabiu%2B" rel="nofollow" class="" data-icon-position="" data-hide-link-title="0">Search for this author on this site</a></li><li class="author-orcid-link"><a href="http://orcid.org/0000-0002-4830-8624" target="_blank" class="" data-icon-position="" data-hide-link-title="0">ORCID record for Musa Rabiu</a></li><li class="author-corresp-email-link last"><span>For correspondence: 
+<a href="mailto:rabiumusa003@gmail.com" class="" data-icon-position="" data-hide-link-title="0">rabiumusa003@gmail.com</a></span></li></ul></div><div class="author-tooltip-1"><div class="author-tooltip-name">Sarafa A. Iyaniwura </div><div class="author-tooltip-affiliation"><span class="author-tooltip-text"><div class='author-affiliation'><span class='nlm-sup'>2</span><span class='nlm-institution'>Department of Mathematics and Institute of Applied Mathematics, University of British Columbia</span>, Vancouver, BC, <span class='nlm-country'>Canada</span></div></span></div><ul class="author-tooltip-find-more"><li class="author-tooltip-gs-link first"><a href="/lookup/google-scholar?link_type=googlescholar&amp;gs_type=author&amp;author%5B0%5D=Sarafa%2BA.%2BIyaniwura%2B" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on Google Scholar</a></li><li class="author-tooltip-pubmed-link"><a href="/lookup/external-ref?access_num=Iyaniwura%20SA&amp;link_type=AUTHORSEARCH" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on PubMed</a></li><li class="author-site-search-link"><a href="/search/author1%3ASarafa%2BA.%2BIyaniwura%2B" rel="nofollow" class="" data-icon-position="" data-hide-link-title="0">Search for this author on this site</a></li><li class="author-orcid-link last"><a href="http://orcid.org/0000-0002-8854-2335" target="_blank" class="" data-icon-position="" data-hide-link-title="0">ORCID record for Sarafa A. Iyaniwura</a></li></ul></div></div></div>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-highwire-panel-tabs pane-panels-ajax-tab-tabs" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="item-list"><ul class="tabs inline panels-ajax-tab"><li class="first"><a href="/content/10.1101/2021.10.23.21265421v1" class="panels-ajax-tab-tab" data-panel-name="biorxiv_tab_art" data-target-id="highwire_article_tabs" data-entity-context="node:426579" data-trigger="" data-url-enabled="1">Abstract</a><a href="/panels_ajax_tab/biorxiv_tab_art/node:426579/1" rel="nofollow" style="display:none" class="js-crawler-link"></a></li><li><a href="/content/10.1101/2021.10.23.21265421v1.full-text" class="panels-ajax-tab-tab" data-panel-name="article_tab_full_text" data-target-id="highwire_article_tabs" data-entity-context="node:426579" data-trigger="full-text" data-url-enabled="1">Full Text</a><a href="/panels_ajax_tab/article_tab_full_text/node:426579/1" rel="nofollow" style="display:none" class="js-crawler-link"></a></li><li><a href="/content/10.1101/2021.10.23.21265421v1.article-info" class="panels-ajax-tab-tab" data-panel-name="biorxiv_tab_info" data-target-id="highwire_article_tabs" data-entity-context="node:426579" data-trigger="article-info" data-url-enabled="1">Info/History</a><a href="/panels_ajax_tab/biorxiv_tab_info/node:426579/1" rel="nofollow" style="display:none" class="js-crawler-link"></a></li><li><a href="/content/10.1101/2021.10.23.21265421v1.article-metrics" class="panels-ajax-tab-tab" data-panel-name="article_tab_metrics" data-target-id="highwire_article_tabs" data-entity-context="node:426579" data-trigger="article-metrics" data-url-enabled="1">Metrics</a><a href="/panels_ajax_tab/article_tab_metrics/node:426579/1" rel="nofollow" style="display:none" class="js-crawler-link"></a></li><li><a href="/content/10.1101/2021.10.23.21265421v1.external-links" class="panels-ajax-tab-tab" data-panel-name="article_tab_data_code" data-target-id="highwire_article_tabs" data-entity-context="node:426579" data-trigger="external-links" data-url-enabled="1">Data/Code</a><a href="/panels_ajax_tab/article_tab_data_code/node:426579/1" rel="nofollow" style="display:none" class="js-crawler-link"></a></li><li class="last"><a href="/content/10.1101/2021.10.23.21265421v1.full.pdf+html" class="panels-ajax-tab-tab" data-panel-name="biorxiv_tab_pdf" data-target-id="highwire_article_tabs" data-entity-context="node:426579" data-trigger="full.pdf+html" data-url-enabled="1"><i class="icon-file-alt"></i> Preview PDF</a><a href="/panels_ajax_tab/biorxiv_tab_pdf/node:426579/1" rel="nofollow" style="display:none" class="js-crawler-link"></a></li></ul></div>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-highwire-panel-tabs-container" >
+  
+      
+  
+  <div class="pane-content">
+    <div data-panels-ajax-tab-preloaded="biorxiv_tab_art" id="panels-ajax-tab-container-highwire_article_tabs" class="panels-ajax-tab-container"><div class="panels-ajax-tab-loading" style ="display:none"><img class="loading" src="https://www.medrxiv.org/sites/all/modules/contrib/panels_ajax_tab/images/loading.gif" alt="Loading" title="Loading" /></div><div class="panels-ajax-tab-wrap-biorxiv_tab_art"><div class="panel-display panel-1col clearfix" >
+  <div class="panel-panel panel-col">
+    <div><div class="panel-pane pane-highwire-markup" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="highwire-markup"><div xmlns="http://www.w3.org/1999/xhtml" data-highwire-cite-ref-tooltip-instance="highwire_reflinks_tooltip" class="content-block-markup" xmlns:xhtml="http://www.w3.org/1999/xhtml"><div class="article abstract-view "><span class="highwire-journal-article-marker-start"></span><div class="section abstract" id="abstract-1"><h2 class="">Abstract</h2><p id="p-2">We developed an endemic model of COVID-19 to assess the impact of vaccination and immunity waning on the dynamics of the disease. Our model exhibits the phenomenon of back-ward bifurcation and bi-stability, where a stable disease-free equilibrium co-exists with a stable endemic equilibrium. The epidemiological implication of this is that the control reproduction number being less than unity is no longer sufficient to guarantee disease eradication. We showed that this phenomenon could be eliminated by either increasing the vaccine efficacy or by reducing the disease transmission rate (adhering to non-pharmaceutical interventions). Furthermore, we numerically investigated the impacts of vaccination and waning of both vaccine-induced immunity and post-recovery immunity on the disease dynamics. Our simulation results show that the waning of vaccine-induced immunity has more effect on the disease dynamics relative to post-recovery immunity waning, and suggests that more emphasis should be on reducing the waning of vaccine-induced immunity to eradicate COVID-19.</p></div><h3>Competing Interest Statement</h3><p id="p-3">The authors have declared no competing interest.</p><h3>Funding Statement</h3><p id="p-4">This study did not receive any funding</p><h3>Author Declarations</h3><p id="p-5">I confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.</p><p id="p-6">Yes</p><p id="p-7">I confirm that all necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived, and that any patient/participant/sample identifiers included were not known to anyone (e.g., hospital staff, patients or participants themselves) outside the research group so cannot be used to identify individuals.</p><p id="p-8">Yes</p><p id="p-9">I understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).</p><p id="p-10">Yes</p><p id="p-11">I have followed all appropriate research reporting guidelines and uploaded the relevant EQUATOR Network research reporting checklist(s) and other pertinent material as supplementary files, if applicable.</p><p id="p-12">Yes</p><div class="section data-availability" id="sec-9"><h2 class="">Data Availability</h2><p id="p-89">All data produced in the present work are contained in the manuscript</p></div><span class="highwire-journal-article-marker-end"></span></div><span class="related-urls"></span></div></div>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-biorxiv-copyright" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="field field-name-field-highwire-copyright field-type-text field-label-inline clearfix"><div class="field-label">Copyright&nbsp;</div><div class="field-items"><div class="field-item even">The copyright holder for this preprint is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity.<span class="license-type"> It is made available under a <a href="http://creativecommons.org/licenses/by-nc/4.0/" class="" data-icon-position="" data-hide-link-title="0">CC-BY-NC 4.0 International license</a>.</span></div></div></div>  </div>
+
+  
+  </div>
+</div>
+  </div>
+</div>
+</div></div>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-disqus-comment" >
+  
+      
+  
+  <div class="pane-content">
+    <div id="disqus_thread"><noscript><p><a href="http://medRxiv.disqus.com/?url=https%3A%2F%2Fwww.medrxiv.org%2Fcontent%2F10.1101%2F2021.10.23.21265421v1" class="" data-icon-position="" data-hide-link-title="0">View the discussion thread.</a></p></noscript></div>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-highwire-back-to-top" >
+  
+      
+  
+  <div class="pane-content">
+    <a href="#page" class="back-to-top" data-icon-position="" data-hide-link-title="0"><span class="icon-chevron-up"></span> Back to top</a>  </div>
+
+  
+  </div>
+</div>
+			</div>
+		</div>
+		
+		<div class="sidebar-right-wrapper grid-10 omega">
+			<div class="panel-panel panel-region-sidebar-right">
+			  <div class="inside"><div class="panel-pane pane-highwire-node-pager" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="pager highwire-pager pager-mini clearfix highwire-node-pager highwire-article-pager"><span class="pager-prev"><a href="/content/10.1101/2021.10.19.21265210v1" title="Opioid Use Stigmatization and Destigmatization in Healthcare Professional Social Media" rel="prev" class="pager-link-prev link-icon"><span class="icon-circle-arrow-left"></span> <span class="title">Previous</span></a></span><span class="pager-next"><a href="/content/10.1101/2021.10.24.21265447v1" title="Predicting willingness to be vaccinated for Covid-19: evidence from New Zealand" rel="next" class="pager-link-next link-icon-right link-icon"><span class="title">Next</span> <span class="icon-circle-arrow-right"></span></a></span></div>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-custom pane-1" >
+  
+      
+  
+  <div class="pane-content">
+    Posted&nbsp;October 26, 2021.  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-panels-mini pane-biorxiv-art-tools" >
+  
+      
+  
+  <div class="pane-content">
+    <div id="mini-panel-biorxiv_art_tools" class="highwire-2col-stacked panel-display">
+	  
+  <div class="panel-row-wrapper clearfix">
+		<div class="content-left-wrapper content-column">
+          <div class="panel-panel panel-region-content-left">
+            <div class="inside"><div class="panel-pane pane-highwire-variant-link" >
+  
+      
+  
+  <div class="pane-content">
+    <a href="/content/10.1101/2021.10.23.21265421v1.full.pdf" target="_self" class="article-dl-pdf-link link-icon"><span class="icon-external-link-sign"></span> <span class="title">Download PDF</span></a>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-highwire-variant-link" >
+  
+      
+  
+  <div class="pane-content">
+    <a href="/content/early/2021/10/26/2021.10.23.21265421.external-links" target="_self" class="link-icon"><span class="icon-file"></span> <span class="title">Data/Code</span></a>  </div>
+
+  
+  </div>
+</div>
+          </div>
+        </div>
+        
+        <div class="content-right-wrapper content-column">
+          <div class="panel-panel panel-region-content-right">
+            <div class="inside"><div class="panel-pane pane-minipanel-dialog-link pane-biorxiv-art-email" >
+  
+      
+  
+  <div class="pane-content">
+    <div class='minipanel-dialog-wrapper'><div class='minipanel-dialog-link-link'><a href="/" oncontextmenu="javascript: return false;" class="minipanel-dialog-link-trigger" title="Email this Article" data-icon-position="" data-hide-link-title="0"><i class = 'icon-envelope'></i> Email</a></div><div class='minipanel-dialog-link-mini' style='display:none'><div class="panel-display panel-1col clearfix" id="mini-panel-biorxiv_art_email">
+  <div class="panel-panel panel-col">
+    <div><div class="panel-pane pane-block pane-forward-form pane-forward" >
+  
+      
+  
+  <div class="pane-content">
+    <form action="/content/10.1101/2021.10.23.21265421v1" method="post" id="forward-form" accept-charset="UTF-8"><div><div id="edit-instructions" class="form-item form-item-label-before form-type-item">
+ <p>Thank you for your interest in spreading the word about medRxiv.</p><p>NOTE: Your email address is requested solely to identify you as the sender of this article.</p>
+</div>
+<div class="form-item form-item-label-before form-type-textfield form-item-email">
+  <label for="edit-email">Your Email <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" id="edit-email" name="email" value="" size="58" maxlength="256" class="form-text required" />
+</div>
+<div class="form-item form-item-label-before form-type-textfield form-item-name">
+  <label for="edit-name">Your Name <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" id="edit-name" name="name" value="" size="58" maxlength="256" class="form-text required" />
+</div>
+<div class="form-item form-item-label-before form-type-textarea form-item-recipients">
+  <label for="edit-recipients">Send To <span class="form-required" title="This field is required.">*</span></label>
+ <div class="form-textarea-wrapper resizable"><textarea id="edit-recipients" name="recipients" cols="50" rows="5" class="form-textarea required"></textarea></div>
+<div class="description">Enter multiple addresses on separate lines or separate them with commas.</div>
+</div>
+<div id="edit-page" class="form-item form-item-label-before form-type-item">
+  <label for="edit-page">You are going to email the following </label>
+ <a href="/content/10.1101/2021.10.23.21265421v1" class="active" data-icon-position="" data-hide-link-title="0">Assessing the potential impact of immunity waning on the dynamics of COVID-19: an endemic model of COVID-19</a>
+</div>
+<div id="edit-subject" class="form-item form-item-label-before form-type-item">
+  <label for="edit-subject">Message Subject </label>
+ (Your Name) has forwarded a page to you from medRxiv
+</div>
+<div id="edit-body" class="form-item form-item-label-before form-type-item">
+  <label for="edit-body">Message Body </label>
+ (Your Name) thought you would like to see this page from the medRxiv website.
+</div>
+<div class="form-item form-item-label-before form-type-textarea form-item-message">
+  <label for="edit-message--2">Your Personal Message </label>
+ <div class="form-textarea-wrapper resizable"><textarea id="edit-message--2" name="message" cols="50" rows="10" class="form-textarea"></textarea></div>
+</div>
+<input type="hidden" name="path" value="node/426579" />
+<input type="hidden" name="path_cid" value="" />
+<input type="hidden" name="forward_footer" value=" " />
+<input type="hidden" name="form_build_id" value="form-44gm0kQwY2mX7WCFKj634wf7DwpX4N5VZBXvnprzxO0" />
+<input type="hidden" name="form_id" value="forward_form" />
+<fieldset class="captcha form-wrapper"><legend><span class="fieldset-legend">CAPTCHA</span></legend><div class="fieldset-wrapper"><div class="fieldset-description">This question is for testing whether or not you are a human visitor and to prevent automated spam submissions.</div><input type="hidden" name="captcha_sid" value="157694824" />
+<input type="hidden" name="captcha_token" value="1768b569d7d09700e92077596e832694" />
+<input type="hidden" name="captcha_response" value="Google no captcha" />
+<div class="g-recaptcha" data-sitekey="6LfnJVIUAAAAAE-bUOMg0MJGki4lqSvDmhJp19fN" data-theme="light" data-type="image"></div></div></fieldset>
+<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Send Message" class="form-submit" /></div></div></form>  </div>
+
+  
+  </div>
+</div>
+  </div>
+</div>
+</div></div>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-highwire-share-link highwire_clipboard_link_ajax"  id="shareit">
+  
+      
+  
+  <div class="pane-content">
+    <a href="/" class="link-icon"><span class="icon-share-alt"></span> <span class="title">Share</span></a>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-panels-mini pane-biorxiv-share highwire_clipboard_form_ajax_shareit" >
+  
+      
+  
+  <div class="pane-content">
+    
+<div class="panel-display omega-12-onecol" id="mini-panel-biorxiv_share">
+
+		  <div class="panel-panel grid-12 panel-region-preface">
+		  <div class="inside"><div class="panel-pane pane-highwire-article-citation" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="highwire-article-citation highwire-citation-type-highwire-article node426579--3" data-node-nid="426579" id="node426579--4538425962" data-pisa="medrxiv;2021.10.23.21265421v1" data-pisa-master="medrxiv;2021.10.23.21265421" data-seqnum="426579" data-apath="/medrxiv/early/2021/10/26/2021.10.23.21265421.atom"><div  class="highwire-cite highwire-cite-highwire-article highwire-citation-biorxiv-article-pap-list clearfix" >
+
+      <div class="highwire-cite-title" >
+      <div class="highwire-cite-title">Assessing the potential impact of immunity waning on the dynamics of COVID-19: an endemic model of COVID-19</div>    </div>
+  
+      <div  class="highwire-cite-authors" ><span  class="highwire-citation-authors"><span class="highwire-citation-author first" data-delta="0"><span class="nlm-given-names">Musa</span> <span class="nlm-surname">Rabiu</span></span>, <span class="highwire-citation-author" data-delta="1"><span class="nlm-given-names">Sarafa A.</span> <span class="nlm-surname">Iyaniwura</span></span></span></div>
+  
+      <div  class="highwire-cite-metadata" ><span  class="highwire-cite-metadata-journal highwire-cite-metadata">medRxiv </span><span  class="highwire-cite-metadata-pages highwire-cite-metadata">2021.10.23.21265421; </span><span  class="highwire-cite-metadata-doi highwire-cite-metadata"><span class="doi_label">doi:</span> https://doi.org/10.1101/2021.10.23.21265421 </span></div>
+  
+  
+  </div>
+</div>  </div>
+
+  
+  </div>
+</div>
+	  </div>
+	
+  <div class="panel-panel grid-12 panel-region-content">
+  	<div class="inside"><div class="panel-pane pane-highwire-article-clipboard-copy" >
+  
+      
+  
+  <div class="pane-content">
+    <div class = "clipboard-copy">
+  <span class="label-url">
+    <label for="dynamic">Share This Article:</label>
+  </span>
+  <span class="input-text-url">
+    <input type="text" id="dynamic" value="https://www.medrxiv.org/content/10.1101/2021.10.23.21265421v1" size="50"/>
+  </span>
+  <span class="copy-button button">
+    <button id="copy-dynamic" class="clipboardjs-button" data-clipboard-target="#dynamic" data-clipboard-alert-style="tooltip" data-clipboard-alert-text="Copied!">Copy</button>
+  </span>
+</div>
+  </div>
+
+  
+  </div>
+</div>
+  </div>
+	
+		  <div class="panel-panel grid-12 panel-region-postscript">
+	    <div class="inside"><div class="panel-pane pane-service-links" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="service-links"><a href="http://digg.com/submit?phase=2&amp;url=https%3A//www.medrxiv.org/content/10.1101/2021.10.23.21265421v1&amp;title=Assessing%20the%20potential%20impact%20of%20immunity%20waning%20on%20the%20dynamics%20of%20COVID-19%3A%20an%20endemic%20model%20of%20COVID-19" id="digg" title="Digg this post on digg.com" class="service-links-digg" rel="nofollow" data-icon-position="" data-hide-link-title="0"><img src="https://www.medrxiv.org/sites/all/modules/highwire/highwire/images/digg.png" alt="Digg logo" /></a> <a href="http://reddit.com/submit?url=https%3A//www.medrxiv.org/content/10.1101/2021.10.23.21265421v1&amp;title=Assessing%20the%20potential%20impact%20of%20immunity%20waning%20on%20the%20dynamics%20of%20COVID-19%3A%20an%20endemic%20model%20of%20COVID-19" id="reddit" title="Submit this post on reddit.com" class="service-links-reddit" rel="nofollow" data-icon-position="" data-hide-link-title="0"><img src="https://www.medrxiv.org/sites/all/modules/highwire/highwire/images/reddit.png" alt="Reddit logo" /></a> <a href="http://twitter.com/share?url=https%3A//www.medrxiv.org/content/10.1101/2021.10.23.21265421v1&amp;text=Assessing%20the%20potential%20impact%20of%20immunity%20waning%20on%20the%20dynamics%20of%20COVID-19%3A%20an%20endemic%20model%20of%20COVID-19" id="twitter" title="Share this on Twitter" class="service-links-twitter" rel="nofollow" data-icon-position="" data-hide-link-title="0"><img src="https://www.medrxiv.org/sites/all/modules/highwire/highwire/images/twitter.png" alt="Twitter logo" /></a> <a href="http://www.citeulike.org/posturl?url=https%3A//www.medrxiv.org/content/10.1101/2021.10.23.21265421v1&amp;title=Assessing%20the%20potential%20impact%20of%20immunity%20waning%20on%20the%20dynamics%20of%20COVID-19%3A%20an%20endemic%20model%20of%20COVID-19" id="citeulike" title="Share on CiteULike" class="service-links-citeulike" rel="nofollow" data-icon-position="" data-hide-link-title="0"><img src="https://www.medrxiv.org/sites/all/modules/highwire/highwire/images/citeyoulike.png" alt="CiteULike logo" /></a> <a href="http://www.facebook.com/sharer.php?u=https%3A//www.medrxiv.org/content/10.1101/2021.10.23.21265421v1&amp;t=Assessing%20the%20potential%20impact%20of%20immunity%20waning%20on%20the%20dynamics%20of%20COVID-19%3A%20an%20endemic%20model%20of%20COVID-19" id="facebook" title="Share on Facebook" class="service-links-facebook" rel="nofollow" data-icon-position="" data-hide-link-title="0"><img src="https://www.medrxiv.org/sites/all/modules/highwire/highwire/images/fb-blue.png" alt="Facebook logo" /></a> <a href="http://www.google.com/bookmarks/mark?op=add&amp;bkmk=https%3A//www.medrxiv.org/content/10.1101/2021.10.23.21265421v1&amp;title=Assessing%20the%20potential%20impact%20of%20immunity%20waning%20on%20the%20dynamics%20of%20COVID-19%3A%20an%20endemic%20model%20of%20COVID-19" id="google" title="Bookmark this post on Google" class="service-links-google" rel="nofollow" data-icon-position="" data-hide-link-title="0"><img src="https://www.medrxiv.org/sites/all/modules/highwire/highwire/images/google-32.png" alt="Google logo" /></a> <a href="http://www.mendeley.com/import/?url=https%3A//www.medrxiv.org/content/10.1101/2021.10.23.21265421v1&amp;title=Assessing%20the%20potential%20impact%20of%20immunity%20waning%20on%20the%20dynamics%20of%20COVID-19%3A%20an%20endemic%20model%20of%20COVID-19" id="mendeley" title="Share on Mendeley" class="service-links-mendeley" rel="nofollow" data-icon-position="" data-hide-link-title="0"><img src="https://www.medrxiv.org/sites/all/modules/highwire/highwire/images/mendeley.png" alt="Mendeley logo" /></a></div>  </div>
+
+  
+  </div>
+</div>
+	  </div>
+	
+</div>
+  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-minipanel-dialog-link pane-biorxiv-cite-tool" >
+  
+      
+  
+  <div class="pane-content">
+    <div class='minipanel-dialog-wrapper'><div class='minipanel-dialog-link-link'><a href="/" oncontextmenu="javascript: return false;" class="minipanel-dialog-link-trigger link-icon" title="Citation Tools"><span class="icon-globe"></span> <span class="title">Citation Tools</span></a></div><div class='minipanel-dialog-link-mini' style='display:none'><div class="panel-display panel-1col clearfix" id="mini-panel-biorxiv_cite_tool">
+  <div class="panel-panel panel-col">
+    <div><div class="panel-pane pane-highwire-citation-export" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="highwire-citation-export">  
+  <div class="highwire-citation-info">
+      <div class="highwire-article-citation highwire-citation-type-highwire-article node426579--5" data-node-nid="426579" id="node426579--6158459729" data-pisa="medrxiv;2021.10.23.21265421v1" data-pisa-master="medrxiv;2021.10.23.21265421" data-seqnum="426579" data-apath="/medrxiv/early/2021/10/26/2021.10.23.21265421.atom"><div  class="highwire-cite highwire-cite-highwire-article highwire-citation-biorxiv-article-pap-list clearfix" >
+
+      <div class="highwire-cite-title" >
+      <div class="highwire-cite-title">Assessing the potential impact of immunity waning on the dynamics of COVID-19: an endemic model of COVID-19</div>    </div>
+  
+      <div  class="highwire-cite-authors" ><span  class="highwire-citation-authors"><span class="highwire-citation-author first" data-delta="0"><span class="nlm-given-names">Musa</span> <span class="nlm-surname">Rabiu</span></span>, <span class="highwire-citation-author" data-delta="1"><span class="nlm-given-names">Sarafa A.</span> <span class="nlm-surname">Iyaniwura</span></span></span></div>
+  
+      <div  class="highwire-cite-metadata" ><span  class="highwire-cite-metadata-journal highwire-cite-metadata">medRxiv </span><span  class="highwire-cite-metadata-pages highwire-cite-metadata">2021.10.23.21265421; </span><span  class="highwire-cite-metadata-doi highwire-cite-metadata"><span class="doi_label">doi:</span> https://doi.org/10.1101/2021.10.23.21265421 </span></div>
+  
+  
+  </div>
+</div>  </div>
+  <div class="highwire-citation-formats">
+  	      <h2>Citation Manager Formats</h2>
+        <div class="highwire-citation-formats-links">
+      <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.spage&amp;rft.epage&amp;rft.atitle=Assessing%20the%20potential%20impact%20of%20immunity%20waning%20on%20the%20dynamics%20of%20COVID-19%3A%20an%20endemic%20model%20of%20COVID-19&amp;rft.volume&amp;rft.issue&amp;rft.date=2021-01-01%2000%3A00%3A00&amp;rft.stitle&amp;rft.jtitle=medRxiv&amp;rft.au=Rabiu%2C+Musa&amp;rft.au=Iyaniwura%2C+Sarafa+A."></span><ul class="hw-citation-links inline button button-alt button-grid clearfix"><li class="bibtext first"><a href="/highwire/citation/426579/bibtext" class="hw-download-citation-link" data-icon-position="" data-hide-link-title="0">BibTeX</a></li><li class="bookends"><a href="/highwire/citation/426579/bookends" class="hw-download-citation-link" data-icon-position="" data-hide-link-title="0">Bookends</a></li><li class="easybib"><a href="/highwire/citation/426579/easybib" class="hw-download-citation-link" data-icon-position="" data-hide-link-title="0">EasyBib</a></li><li class="endnote-tagged"><a href="/highwire/citation/426579/endnote-tagged" class="hw-download-citation-link" data-icon-position="" data-hide-link-title="0">EndNote (tagged)</a></li><li class="endnote-8-xml"><a href="/highwire/citation/426579/endnote-8-xml" class="hw-download-citation-link" data-icon-position="" data-hide-link-title="0">EndNote 8 (xml)</a></li><li class="medlars"><a href="/highwire/citation/426579/medlars" class="hw-download-citation-link" data-icon-position="" data-hide-link-title="0">Medlars</a></li><li class="mendeley"><a href="/highwire/citation/426579/mendeley" class="hw-download-citation-link" data-icon-position="" data-hide-link-title="0">Mendeley</a></li><li class="papers"><a href="/highwire/citation/426579/papers" class="hw-download-citation-link" data-icon-position="" data-hide-link-title="0">Papers</a></li><li class="refworks-tagged"><a href="/highwire/citation/426579/refworks-tagged" class="hw-download-citation-link" data-icon-position="" data-hide-link-title="0">RefWorks Tagged</a></li><li class="reference-manager"><a href="/highwire/citation/426579/reference-manager" class="hw-download-citation-link" data-icon-position="" data-hide-link-title="0">Ref Manager</a></li><li class="ris"><a href="/highwire/citation/426579/ris" class="hw-download-citation-link" data-icon-position="" data-hide-link-title="0">RIS</a></li><li class="zotero last"><a href="/highwire/citation/426579/zotero" class="hw-download-citation-link" data-icon-position="" data-hide-link-title="0">Zotero</a></li></ul>    </div>
+  </div>
+</div>
+  </div>
+
+  
+  </div>
+</div>
+  </div>
+</div>
+</div></div>  </div>
+
+  
+  </div>
+</div>
+          </div>
+        </div>
+	</div> <!-- /.panel-row-wrapper -->	
+	
+	</div>
+
+  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-service-links" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="service-links"><div class="item-list"><ul><li class="first"><a href="http://twitter.com/share?url=https%3A//www.medrxiv.org/content/10.1101/2021.10.23.21265421v1&amp;count=horizontal&amp;via=&amp;text=Assessing%20the%20potential%20impact%20of%20immunity%20waning%20on%20the%20dynamics%20of%20COVID-19%3A%20an%20endemic%20model%20of%20COVID-19&amp;counturl=https%3A//www.medrxiv.org/content/10.1101/2021.10.23.21265421v1" class="twitter-share-button service-links-twitter-widget" id="twitter_widget" title="Tweet This" rel="nofollow" data-icon-position="" data-hide-link-title="0"><span class="element-invisible">Tweet Widget</span></a></li><li><a href="http://www.facebook.com/plugins/like.php?href=https%3A//www.medrxiv.org/content/10.1101/2021.10.23.21265421v1&amp;layout=button_count&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;width=100&amp;height=21&amp;font=&amp;locale=" id="facebook_like" title="I Like it" class="service-links-facebook-like" rel="nofollow" data-icon-position="" data-hide-link-title="0"><span class="element-invisible">Facebook Like</span></a></li><li class="last"><a href="https://www.medrxiv.org/content/10.1101/2021.10.23.21265421v1" id="google_plus_one" title="Plus it" class="service-links-google-plus-one" rel="nofollow" data-icon-position="" data-hide-link-title="0"><span class="element-invisible">Google Plus One</span></a></li></ul></div></div>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-highwire-article-collections" >
+  
+        <h2 class="pane-title">Subject Area</h2>
+    
+  
+  <div class="pane-content">
+    <div class="highwire-list-wrapper highwire-article-collections"><div class="highwire-list"><ul class="highwire-article-collection-term-list"><li class="first last odd"><span class="highwire-article-collection-term"><a href="/collection/public-and-global-health" class="highlight" data-icon-position="" data-hide-link-title="0">Public and Global Health<i class="icon-caret-right"></i>
+</a></span></li></ul></div></div>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-panels-mini pane-biorxiv-subject-collections block-style-col2" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="panel-flexible panels-flexible-8 clearfix" id="mini-panel-biorxiv_subject_collections">
+<div class="panel-flexible-inside panels-flexible-8-inside">
+<div class="panels-flexible-region panels-flexible-region-8-center panels-flexible-region-first panels-flexible-region-last">
+  <div class="inside panels-flexible-region-inside panels-flexible-region-8-center-inside panels-flexible-region-inside-first panels-flexible-region-inside-last">
+<div class="panel-pane pane-snippet" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="snippet biorxiv-subject-areas-table-title" id="biorxiv-subject-areas-table-title">
+  
+      
+  <div class="snippet-content">
+    <b>Subject Areas</b>  </div>
+
+</div>
+  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-snippet" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="snippet biorxiv-subject-areas-view-papers" id="biorxiv-subject-areas-view-papers">
+  
+      
+  <div class="snippet-content">
+    <a href="/content/early/recent"><strong>All Articles</strong></a>  </div>
+
+</div>
+  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-highwire-subject-collections" >
+  
+      
+  
+  <div class="pane-content">
+    <ul id="collection" class="collection highwire-list-expand"><li class="outer collection depth-2  child first"><div class = "data-wrapper"><a href="/collection/addiction-medicine" class="" data-icon-position="" data-hide-link-title="0">Addiction Medicine</a> <span class = "article-count">(111)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/allergy-and-immunology" class="" data-icon-position="" data-hide-link-title="0">Allergy and Immunology</a> <span class = "article-count">(299)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/anesthesia" class="" data-icon-position="" data-hide-link-title="0">Anesthesia</a> <span class = "article-count">(75)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/cardiovascular-medicine" class="" data-icon-position="" data-hide-link-title="0">Cardiovascular Medicine</a> <span class = "article-count">(665)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/dentistry-and-oral-medicine" class="" data-icon-position="" data-hide-link-title="0">Dentistry and Oral Medicine</a> <span class = "article-count">(121)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/dermatology" class="" data-icon-position="" data-hide-link-title="0">Dermatology</a> <span class = "article-count">(77)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/emergency-medicine" class="" data-icon-position="" data-hide-link-title="0">Emergency Medicine</a> <span class = "article-count">(216)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/endocrinology-including-diabetes-mellitus-and-metabolic-disease" class="" data-icon-position="" data-hide-link-title="0">Endocrinology (including Diabetes Mellitus and Metabolic Disease)</a> <span class = "article-count">(299)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/epidemiology" class="" data-icon-position="" data-hide-link-title="0">Epidemiology</a> <span class = "article-count">(7268)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/forensic-medicine" class="" data-icon-position="" data-hide-link-title="0">Forensic Medicine</a> <span class = "article-count">(4)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/gastroenterology" class="" data-icon-position="" data-hide-link-title="0">Gastroenterology</a> <span class = "article-count">(306)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/genetic-and-genomic-medicine" class="" data-icon-position="" data-hide-link-title="0">Genetic and Genomic Medicine</a> <span class = "article-count">(1295)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/geriatric-medicine" class="" data-icon-position="" data-hide-link-title="0">Geriatric Medicine</a> <span class = "article-count">(126)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/health-economics" class="" data-icon-position="" data-hide-link-title="0">Health Economics</a> <span class = "article-count">(308)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/health-informatics" class="" data-icon-position="" data-hide-link-title="0">Health Informatics</a> <span class = "article-count">(1004)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/health-policy" class="" data-icon-position="" data-hide-link-title="0">Health Policy</a> <span class = "article-count">(526)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/health-systems-and-quality-improvement" class="" data-icon-position="" data-hide-link-title="0">Health Systems and Quality Improvement</a> <span class = "article-count">(359)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/hematology" class="" data-icon-position="" data-hide-link-title="0">Hematology</a> <span class = "article-count">(151)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/hiv-aids" class="" data-icon-position="" data-hide-link-title="0">HIV/AIDS</a> <span class = "article-count">(287)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/infectious_diseases" class="" data-icon-position="" data-hide-link-title="0">Infectious Diseases (except HIV/AIDS)</a> <span class = "article-count">(8512)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/intensive-care-and-critical-care-medicine" class="" data-icon-position="" data-hide-link-title="0">Intensive Care and Critical Care Medicine</a> <span class = "article-count">(483)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/medical-education" class="" data-icon-position="" data-hide-link-title="0">Medical Education</a> <span class = "article-count">(160)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/medical-ethics" class="" data-icon-position="" data-hide-link-title="0">Medical Ethics</a> <span class = "article-count">(40)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/nephrology" class="" data-icon-position="" data-hide-link-title="0">Nephrology</a> <span class = "article-count">(153)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/neurology" class="" data-icon-position="" data-hide-link-title="0">Neurology</a> <span class = "article-count">(1239)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/nursing" class="" data-icon-position="" data-hide-link-title="0">Nursing</a> <span class = "article-count">(63)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/nutrition" class="" data-icon-position="" data-hide-link-title="0">Nutrition</a> <span class = "article-count">(200)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/obstetrics-and-gynecology" class="" data-icon-position="" data-hide-link-title="0">Obstetrics and Gynecology</a> <span class = "article-count">(255)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/occupational-and-environmental-health" class="" data-icon-position="" data-hide-link-title="0">Occupational and Environmental Health</a> <span class = "article-count">(368)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/oncology" class="" data-icon-position="" data-hide-link-title="0">Oncology</a> <span class = "article-count">(702)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/ophthalmology" class="" data-icon-position="" data-hide-link-title="0">Ophthalmology</a> <span class = "article-count">(217)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/orthopedics" class="" data-icon-position="" data-hide-link-title="0">Orthopedics</a> <span class = "article-count">(70)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/otolaryngology" class="" data-icon-position="" data-hide-link-title="0">Otolaryngology</a> <span class = "article-count">(139)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/pain-medicine" class="" data-icon-position="" data-hide-link-title="0">Pain Medicine</a> <span class = "article-count">(73)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/palliative-medicine" class="" data-icon-position="" data-hide-link-title="0">Palliative Medicine</a> <span class = "article-count">(30)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/pathology" class="" data-icon-position="" data-hide-link-title="0">Pathology</a> <span class = "article-count">(195)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/pediatrics" class="" data-icon-position="" data-hide-link-title="0">Pediatrics</a> <span class = "article-count">(410)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/pharmacology-and-therapeutics" class="" data-icon-position="" data-hide-link-title="0">Pharmacology and Therapeutics</a> <span class = "article-count">(195)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/primary-care-research" class="" data-icon-position="" data-hide-link-title="0">Primary Care Research</a> <span class = "article-count">(158)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/psychiatry-and-clinical-psychology" class="" data-icon-position="" data-hide-link-title="0">Psychiatry and Clinical Psychology</a> <span class = "article-count">(1369)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/public-and-global-health" class="" data-icon-position="" data-hide-link-title="0">Public and Global Health</a> <span class = "article-count">(3057)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/radiology-and-imaging" class="" data-icon-position="" data-hide-link-title="0">Radiology and Imaging</a> <span class = "article-count">(509)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/rehabilitation-medicine-and-physical-therapy" class="" data-icon-position="" data-hide-link-title="0">Rehabilitation Medicine and Physical Therapy</a> <span class = "article-count">(244)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/respiratory-medicine" class="" data-icon-position="" data-hide-link-title="0">Respiratory Medicine</a> <span class = "article-count">(415)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/rheumatology" class="" data-icon-position="" data-hide-link-title="0">Rheumatology</a> <span class = "article-count">(158)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/sexual-and-reproductive-health" class="" data-icon-position="" data-hide-link-title="0">Sexual and Reproductive Health</a> <span class = "article-count">(118)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/sports-medicine" class="" data-icon-position="" data-hide-link-title="0">Sports Medicine</a> <span class = "article-count">(115)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/surgery" class="" data-icon-position="" data-hide-link-title="0">Surgery</a> <span class = "article-count">(153)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/toxicology" class="" data-icon-position="" data-hide-link-title="0">Toxicology</a> <span class = "article-count">(32)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/transplantation" class="" data-icon-position="" data-hide-link-title="0">Transplantation</a> <span class = "article-count">(67)</span></div></li>
+<li class="outer collection depth-2  child last"><div class = "data-wrapper"><a href="/collection/urology" class="" data-icon-position="" data-hide-link-title="0">Urology</a> <span class = "article-count">(51)</span></div></li>
+</ul>  </div>
+
+  
+  </div>
+  </div>
+</div>
+</div>
+</div>
+  </div>
+
+  
+  </div>
+</div>
+			</div>
+		</div>
+	
+	</div> <!-- /.panel-row-wrapper -->	
+	
+	</div>
+
+    </div>
+  </div>
+</div>      </div>
+</div>  </div>
+</section>    
+  
+  </div>    <div class="region region-page-bottom" id="region-page-bottom">
+  <div class="region-inner region-page-bottom-inner">
+      </div>
+</div><script type="text/javascript" src="https://www.medrxiv.org/sites/default/files/advagg_js/js__Vh5BcRYb6VtLoN3uam6O4DIKltYUVMjVDWtakoysPq0__Wed8jsPTirEozek7dWSCS8970Cp7a9xKKgFk6FPuSVM__OWu9jWxbqz5eMqeTDc4xZhOzPlgoEqGh5PmxOqlf8ZY.js"></script>
+<script type="text/javascript" src="https://d33xdlntwy0kbs.cloudfront.net/cshl_custom_medrxiv.js"></script>
+<script type="text/javascript" src="https://www.medrxiv.org/sites/default/files/advagg_js/js__BmqjBnkz3MgYCAoc25s1lDRMEjLhC3mEPVonUFIHi08__Unwv5-ZIuHBfFwytsjEx1niBVJ7n1T4lPws7VrkHXM4__OWu9jWxbqz5eMqeTDc4xZhOzPlgoEqGh5PmxOqlf8ZY.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+function euCookieComplianceLoadScripts() {}
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var eu_cookie_compliance_cookie_name = "";
+//--><!]]>
+</script>
+  </body>
+</html>

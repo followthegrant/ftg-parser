@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" 
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:mml="http://www.w3.org/1998/Math/MathML">
+  <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# book: http://ogp.me/ns/book#" >
+    <!--[if IE]><![endif]-->
+<link rel="dns-prefetch" href="//d33xdlntwy0kbs.cloudfront.net" />
+<link rel="dns-prefetch" href="//www.google.com" />
+<link rel="dns-prefetch" href="//scholar.google.com" />
+<link rel="dns-prefetch" href="//www.google-analytics.com" />
+<link rel="dns-prefetch" href="//stats.g.doubleclick.net" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="shortcut icon" href="https://www.medrxiv.org/sites/default/files/images/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="alternate" type="application/pdf" title="Full Text (PDF)" href="/content/10.1101/2021.10.21.21265318v1.full.pdf" />
+<link rel="alternate" type="text/plain" title="Full Text (Plain)" href="/content/10.1101/2021.10.21.21265318v1.full.txt" />
+<link rel="alternate" type="application/vnd.ms-powerpoint" title="Powerpoint" href="/content/10.1101/2021.10.21.21265318v1.ppt" />
+<meta name="article_thumbnail" content="https://www.medrxiv.org/content/medrxiv/early/2021/10/25/2021.10.21.21265318/embed/inline-graphic-1.gif" />
+<meta name="type" content="article" />
+<meta name="category" content="article" />
+<meta name="HW.identifier" content="/medrxiv/early/2021/10/25/2021.10.21.21265318.atom" />
+<meta name="HW.pisa" content="medrxiv;2021.10.21.21265318v1" />
+<meta name="DC.Format" content="text/html" />
+<meta name="DC.Language" content="en" />
+<meta name="DC.Title" content="The impact of vaccinating adolescents and children on COVID-19 disease outcomes" />
+<meta name="DC.Identifier" content="10.1101/2021.10.21.21265318" />
+<meta name="DC.Date" content="2021-10-25" />
+<meta name="DC.Publisher" content="Cold Spring Harbor Laboratory Press" />
+<meta name="DC.Rights" content="© 2021, Posted by Cold Spring Harbor Laboratory. This pre-print is available under a Creative Commons License (Attribution-NonCommercial-NoDerivs 4.0 International), CC BY-NC-ND 4.0, as described at http://creativecommons.org/licenses/by-nc-nd/4.0/" />
+<meta name="DC.AccessRights" content="restricted" />
+<meta name="DC.Description" content="Introduction Despite the high COVID-19 vaccination coverage among adults, there is concern over a peak in SARS-CoV-2 infections in the coming months. To help ensure that healthcare systems are not overwhelmed in the event of a new wave of SARS-CoV-2 infections, many countries have extended vaccination to adolescents (those aged 12-17 years) and may consider further extending to children aged 5-11 years. However, there is considerable debate about whether or not to vaccinate healthy adolescents and children against SARS-CoV-2 because, while vaccination of children and adolescents may limit transmission from these groups to other, more vulnerable groups, adolescents and children themselves have limited risk of severe disease if infected and may experience adverse events from vaccination. To quantify the benefits of extending COVID-19 vaccination beyond adults we compare daily cases, hospital admissions, and intensive care (IC) admissions for vaccination in adults only, those 12 years and above, and those 5 years and above.
+
+Methods and Findings We developed a deterministic, age-structured susceptible-exposed-infectious-recovered (SEIR) model to simulate disease outcomes (e.g., cases, hospital admissions, IC admissions) under different vaccination scenarios. The model is partitioned into 10-year age bands (0-9, 10-19, …, 70-79, 80+) and accounts for differences in susceptibility and infectiousness by age group, seasonality in transmission rate, modes of vaccine protection (e.g., infection, transmission), and vaccine characteristics (e.g., vaccine effectiveness). Model parameters are estimated by fitting the model piecewise to daily cases from the Dutch notification database Osiris from 01 January 2020 to 22 June 2021. Forward simulations are performed from 22 June 2021 to 31 March 2022. We performed sensitivity analyses in which vaccine-induced immunity waned.
+
+We found that upon relaxation of all non-pharmaceutical control measures a large wave occurred regardless of vaccination strategy. We found overall reductions of 5.7% (4.4%, 6.9%) of cases, 2.0% (0.7%, 3.2%) of hospital admissions, and 1.7% (0.6%, 2.8%) of IC admissions when those 12 years and above were vaccinated compared to vaccinating only adults. When those 5 years and above were vaccinated we observed reductions of 8.7% (7.5%, 9.9%) of cases, 3.2% (2.0%, 4.5%) of hospital admissions, and 2.4% (1.2%, 3.5%) of IC admissions compared to vaccination in adults only. Benefits of extending vaccination were larger within the age groups included in the vaccination program extension than in other age groups. The benefits of vaccinating adolescents and children were smaller if vaccine protection against infection, hospitalization, and transmission (once infected) wanes.
+
+Discussion Our results highlight the benefits of extending COVID-19 vaccination programs beyond adults to reduce infections and severe outcomes in adolescents and children and in the wider population. A reduction of infections in school-aged children/adolescents may have the added benefit of reducing the need for school closures during a new wave. Additional control measures may be required in future to prevent a large wave despite vaccination program extensions. While the results presented here are based on population characteristics and the COVID-19 vaccination program in The Netherlands, they may provide valuable insights for other countries who are considering COVID-19 vaccination program extensions.
+
+### Competing Interest Statement
+
+The authors have declared no competing interest.
+
+### Funding Statement
+
+The study was financed by the Netherlands Ministry of Health, Welfare and Sport. This project has received funding from the European Union's Horizon 2020 research and innovation programme - project EpiPose (grant agreement number 101003688).
+
+### Author Declarations
+
+I confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.
+
+Yes
+
+The details of the IRB/oversight body that provided approval or exemption for the research described are given below:
+
+The source data used in this work is publicly available and can be obtained from: https://geodata.rivm.nl/covid-19/
+
+I confirm that all necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived, and that any patient/participant/sample identifiers included were not known to anyone (e.g., hospital staff, patients or participants themselves) outside the research group so cannot be used to identify individuals.
+
+Yes
+
+I understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).
+
+Yes
+
+I have followed all appropriate research reporting guidelines and uploaded the relevant EQUATOR Network research reporting checklist(s) and other pertinent material as supplementary files, if applicable.
+
+Yes
+
+All data and code produced are available online at: &lt;https://github.com/kylieainslie/vacamole&gt;" />
+<meta name="DC.Contributor" content="Kylie E. C. Ainslie" />
+<meta name="DC.Contributor" content="Jantien Backer" />
+<meta name="DC.Contributor" content="Pieter de Boer" />
+<meta name="DC.Contributor" content="Albert Jan van Hoek" />
+<meta name="DC.Contributor" content="Don Klinkenberg" />
+<meta name="DC.Contributor" content="Hester Korthals Altes" />
+<meta name="DC.Contributor" content="Ka Yin Leung" />
+<meta name="DC.Contributor" content="Hester de Melker" />
+<meta name="DC.Contributor" content="Fuminari Miura" />
+<meta name="DC.Contributor" content="Jacco Wallinga" />
+<meta name="article:published_time" content="2021-10-25" />
+<meta name="citation_title" content="The impact of vaccinating adolescents and children on COVID-19 disease outcomes" />
+<meta name="citation_abstract" lang="en" content="&lt;p&gt;Introduction: Despite the high COVID-19 vaccination coverage among adults, there is concern over a peak in SARS-CoV-2 infections in the coming months. To help ensure that healthcare systems are not overwhelmed in the event of a new wave of SARS-CoV-2 infections, many countries have extended vaccination to adolescents (those aged 12-17 years) and may consider further extending to children aged 5-11 years. However, there is considerable debate about whether or not to vaccinate healthy adolescents and children against SARS-CoV-2 because, while vaccination of children and adolescents may limit transmission from these groups to other, more vulnerable groups, adolescents and children themselves have limited risk of severe disease if infected and may experience adverse events from vaccination. To quantify the benefits of extending COVID-19 vaccination beyond adults we compare daily cases, hospital admissions, and intensive care (IC) admissions for vaccination in adults only, those 12 years and above, and those 5 years and above.
+
+Methods and Findings: We developed a deterministic, age-structured susceptible-exposed-infectious-recovered (SEIR) model to simulate disease outcomes (e.g., cases, hospital admissions, IC admissions) under different vaccination scenarios. The model is partitioned into 10-year age bands (0-9, 10-19, ..., 70-79, 80+) and accounts for differences in susceptibility and infectiousness by age group, seasonality in transmission rate, modes of vaccine protection (e.g., infection, transmission), and vaccine characteristics (e.g., vaccine effectiveness). Model parameters are estimated by fitting the model piecewise to daily cases from the Dutch notification database Osiris from 01 January 2020 to 22 June 2021. Forward simulations are performed from 22 June 2021 to 31 March 2022. We performed sensitivity analyses in which vaccine-induced immunity waned.
+
+We found that upon relaxation of all non-pharmaceutical control measures a large wave occurred regardless of vaccination strategy. We found overall reductions of 5.7% (4.4%, 6.9%) of cases, 2.0% (0.7%, 3.2%) of hospital admissions, and 1.7% (0.6%, 2.8%) of IC admissions when those 12 years and above were vaccinated compared to vaccinating only adults. When those 5 years and above were vaccinated we observed reductions of 8.7% (7.5%, 9.9%) of cases, 3.2% (2.0%, 4.5%) of hospital admissions, and 2.4% (1.2%, 3.5%) of IC admissions compared to vaccination in adults only. Benefits of extending vaccination were larger within the age groups included in the vaccination program extension than in other age groups. The benefits of vaccinating adolescents and children were smaller if vaccine protection against infection, hospitalization, and transmission (once infected) wanes.
+
+Discussion: Our results highlight the benefits of extending COVID-19 vaccination programs beyond adults to reduce infections and severe outcomes in adolescents and children and in the wider population. A reduction of infections in school-aged children/adolescents may have the added benefit of reducing the need for school closures during a new wave. Additional control measures may be required in future to prevent a large wave despite vaccination program extensions. While the results presented here are based on population characteristics and the COVID-19 vaccination program in The Netherlands, they may provide valuable insights for other countries who are considering COVID-19 vaccination program extensions.&lt;/p&gt;" />
+<meta name="citation_journal_title" content="medRxiv" />
+<meta name="citation_publisher" content="Cold Spring Harbor Laboratory Press" />
+<meta name="citation_publication_date" content="2021/01/01" />
+<meta name="citation_mjid" content="medrxiv;2021.10.21.21265318v1" />
+<meta name="citation_id" content="2021.10.21.21265318v1" />
+<meta name="citation_public_url" content="https://www.medrxiv.org/content/10.1101/2021.10.21.21265318v1" />
+<meta name="citation_abstract_html_url" content="https://www.medrxiv.org/content/10.1101/2021.10.21.21265318v1.abstract" />
+<meta name="citation_full_html_url" content="https://www.medrxiv.org/content/10.1101/2021.10.21.21265318v1.full" />
+<meta name="citation_pdf_url" content="https://www.medrxiv.org/content/medrxiv/early/2021/10/25/2021.10.21.21265318.full.pdf" />
+<meta name="citation_doi" content="10.1101/2021.10.21.21265318" />
+<meta name="citation_num_pages" content="32" />
+<meta name="citation_article_type" content="Article" />
+<meta name="citation_firstpage" content="2021.10.21.21265318" />
+<meta name="citation_author" content="Kylie E. C. Ainslie" />
+<meta name="citation_author_institution" content="Centre for Infectious Disease Control, National Institute for Public Health and the Environment" />
+<meta name="citation_author_institution" content="School of Public Health, Imperial College London" />
+<meta name="citation_author_institution" content="MRC Centre for Global Infectious Disease Analysis and Abdul Latif Jameel Institute for Disease and Emergency Analytics, Imperial College London" />
+<meta name="citation_author_email" content="kylie.ainslie@rivm.nl" />
+<meta name="citation_author_orcid" content="http://orcid.org/0000-0001-5419-7206" />
+<meta name="citation_author" content="Jantien Backer" />
+<meta name="citation_author_institution" content="Centre for Infectious Disease Control, National Institute for Public Health and the Environment" />
+<meta name="citation_author_orcid" content="http://orcid.org/0000-0003-4169-5665" />
+<meta name="citation_author" content="Pieter de Boer" />
+<meta name="citation_author_institution" content="Centre for Infectious Disease Control, National Institute for Public Health and the Environment" />
+<meta name="citation_author" content="Albert Jan van Hoek" />
+<meta name="citation_author_institution" content="Centre for Infectious Disease Control, National Institute for Public Health and the Environment" />
+<meta name="citation_author" content="Don Klinkenberg" />
+<meta name="citation_author_institution" content="Centre for Infectious Disease Control, National Institute for Public Health and the Environment" />
+<meta name="citation_author_orcid" content="http://orcid.org/0000-0002-9449-6873" />
+<meta name="citation_author" content="Hester Korthals Altes" />
+<meta name="citation_author_institution" content="Centre for Infectious Disease Control, National Institute for Public Health and the Environment" />
+<meta name="citation_author_orcid" content="http://orcid.org/0000-0001-8274-1627" />
+<meta name="citation_author" content="Ka Yin Leung" />
+<meta name="citation_author_institution" content="Centre for Infectious Disease Control, National Institute for Public Health and the Environment" />
+<meta name="citation_author_orcid" content="http://orcid.org/0000-0002-7596-7641" />
+<meta name="citation_author" content="Hester de Melker" />
+<meta name="citation_author_institution" content="Centre for Infectious Disease Control, National Institute for Public Health and the Environment" />
+<meta name="citation_author" content="Fuminari Miura" />
+<meta name="citation_author_institution" content="Centre for Infectious Disease Control, National Institute for Public Health and the Environment" />
+<meta name="citation_author_institution" content="Center for Marine Environmental Studies (CMES), Ehime University" />
+<meta name="citation_author_orcid" content="http://orcid.org/0000-0001-8235-757X" />
+<meta name="citation_author" content="Jacco Wallinga" />
+<meta name="citation_author_institution" content="Centre for Infectious Disease Control, National Institute for Public Health and the Environment" />
+<meta name="citation_author_institution" content="Department of Biomedical Data Sciences, Leiden University Medical Center" />
+<meta name="citation_author_orcid" content="http://orcid.org/0000-0003-1725-5627" />
+<meta name="citation_reference" content="U.S. Food and Drug Administration, Pfizer-BioNTech COVID-19 Vaccine EUA Letter of Authorization. 2021, FDA: Silver Spring, MD." />
+<meta name="citation_reference" content="European Medicines Agency, Spikevax (previously COVID-19 mRNA Vaccine Moderna): European public assessment report (EPAR) - Medicine Overview. 2021, EMA: Amsterdam." />
+<meta name="citation_reference" content="European Medicines Agency, Comirnaty European public assessment report (EPAR) - Medicine overview. 2021, EMA: Amsterdam." />
+<meta name="citation_reference" content="LaFreniere, S. and N. Weiland, Pfizer asks F.D.A. to authorize its COVID-19 vaccine for children 5 to 11, in The New York Times. 2021, The New York Times Company: New York." />
+<meta name="citation_reference" content="Gavenčiak, T., et al., Seasonal variation in SARS-CoV-2 transmission in temperate climates. medRxiv, 2021: p. 2021.06.10.21258647." />
+<meta name="citation_reference" content="Liu, X., et al., The role of seasonality in the spread of COVID-19 pandemic. Environmental research, 2021. 195: p. 110874." />
+<meta name="citation_reference" content="Ma, Y., et al., Role of air temperature and humidity in the transmission of SARS-CoV-2 in the United States. medRxiv, 2020." />
+<meta name="citation_reference" content="Israel, A., et al., Elapsed time since BNT162b2 vaccine and risk of SARS-CoV-2 infection in a large cohort. medRxiv, 2021: p. 2021.08.03.21261496." />
+<meta name="citation_reference" content="Mizrahi, B., et al., Correlation of SARS-CoV-2 Breakthrough Infections to Time-from-vaccine; Preliminary Study. medRxiv, 2021: p. 2021.07.29.21261317." />
+<meta name="citation_reference" content="Pouwels, K.B., et al., Impact of Delta on viral burden and vaccine effectiveness against new SARS-CoV-2 infections in the UK. (preprint), 2021." />
+<meta name="citation_reference" content="Lopez Bernal, J., et al., Effectiveness of Covid-19 Vaccines against the B.1.617.2 (Delta) Variant. New England Journal of Medicine, 2021. 385(7): p. 585–594." />
+<meta name="citation_reference" content="Nasreen, S., et al., Effectiveness of COVID-19 vaccines against variants of concern in Ontario, Canada. medRxiv, 2021: p. 2021.06.28.21259420." />
+<meta name="citation_reference" content="Sheikh, A., et al., SARS-CoV-2 Delta VOC in Scotland: demographics, risk of hospital admission, and vaccine effectiveness. The Lancet, 2021. 397(10293): p. 2461–2462." />
+<meta name="citation_reference" content="Fowlkes, A., et al., Effectiveness of COVID-19 Vaccines in Preventing SARS-CoV-2 Infection Among Frontline Workers Before and During B.1.617.2 (Delta) Variant Predominance — Eight U.S. Locations, December 2020–August 2021. MMWR Morbidity and Mortality Weekly, 2021." />
+<meta name="citation_reference" content="Ritchie, H., et al., Coronavirus Pandemic (COVID-19). 2020, OurWorldInData.org." />
+<meta name="citation_reference" content="Gezondheidsraad (Health Council), Advice: Vaccination of adolescents against COVID-19 [Dutch]. 2021." />
+<meta name="citation_reference" content="Danish Health Authority. 12-15 year olds. 2021 2021/8/6; Available from: https://www.sst.dk/en/English/Corona-eng/Vaccination-against-COVID-19/Who-should-be-vaccinated/12-15-year-olds." />
+<meta name="citation_reference" content="Public Health Agency of Canada, An Advisory Committee Statement (ACS) National Advisory Committee on Immunization (NACI): Recommendations on the use of COVID-19 Vaccines, 22 July 2021. 2021, {Public Health Agency of Canada}." />
+<meta name="citation_reference" content="Centers for Disease Control and Prevention. COVID-19 Vaccines for Children and Teens. 2021 17 August 2021 [cited 2021 09 September 2021]; Available from: https://www.cdc.gov/coronavirus/2019-ncov/vaccines/recommendations/adolescents.html." />
+<meta name="citation_reference" content="Public Health, E., JCVI issues advice on COVID-19 vaccination of children and young people. 2021." />
+<meta name="citation_reference" content="European Centre for Disease Prevention and Control (ECDC), Interim public health considerations for COVID-19 vaccination of adolescents in the EU/EEA. 2021, ECDC: Stockholm." />
+<meta name="citation_reference" content="European Centre for Disease Prevention and Control (ECDC), COVID-19 in children and the role of school settings in transmission - first update. 2020, ECDC: Stockholm." />
+<meta name="citation_reference" content="Zimmermann, P. and N. Curtis, Coronavirus Infections in Children Including COVID-19: An Overview of the Epidemiology, Clinical Features, Diagnosis, Treatment and Prevention Options in Children. Pediatr Infect Dis J, 2020. 39(5): p. 355–368." />
+<meta name="citation_reference" content="Castagnoli, R., et al., Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV-2) Infection in Children and Adolescents: A Systematic Review. JAMA Pediatrics, 2020. 174(9): p. 882–889." />
+<meta name="citation_reference" content="Ludvigsson, J.F., Systematic review of COVID-19 in children shows milder cases and a better prognosis than adults. Acta Paediatr, 2020. 109(6): p. 1088–1095." />
+<meta name="citation_reference" content="Smith, C., et al., Deaths in Children and Young People in England following SARS-CoV-2 infection during the first pandemic year: a national study using linked mandatory child death reporting data. medRxiv, 2021: p. 2021.07.07.21259779." />
+<meta name="citation_reference" content="Bhopal, S.S., et al., Children and young people remain at low risk of COVID-19 mortality. The Lancet Child &amp; Adolescent Health, 2021. 5(5): p. e12–e13." />
+<meta name="citation_reference" content="Centers for Disease Control and Prevention. Myocarditis and Pericarditis Following mRNA COVID-19 Vaccination 2021 24 August 2021]; July 2, 2021:[Available from: https://www.cdc.gov/coronavirus/2019-ncov/vaccines/safety/myocarditis.html." />
+<meta name="citation_reference" content="Marshall, M., et al., Symptomatic Acute Myocarditis in Seven Adolescents Following Pfizer-BioNTech COVID-19 Vaccination. Pediatrics, 2021: p. e2021052478." />
+<meta name="citation_reference" content="Buonsenso, D., et al., Preliminary evidence on long COVID in children. Acta Paediatrica, 2021. 110(7): p. 2208–2211." />
+<meta name="citation_reference" content="Ludvigsson, J.F., Case report and systematic review suggest that children may experience similar long-term effects to adults after clinical COVID-19. Acta Paediatrica, 2021. 110(3): p. 914–921." />
+<meta name="citation_reference" content="Osmanov, I.M., et al., Risk factors for long covid in previously hospitalised children using the ISARIC Global follow-up protocol: A prospective cohort study. European Respiratory Journal, 2021: p. 2101341." />
+<meta name="citation_reference" content="Ainslie, K.E.C., et al., The Expected Outcome of COVID-19 Vaccination Strategies, Rijksinstituut voor Volksgezondheid en Milieu (RIVM), Editor. 2021, RIVM: Bilthoven." />
+<meta name="citation_reference" content="Havers, F.P., et al., Hospitalization of Adolescents Aged 12–17 Years with Laboratory-Confirmed COVID-19 — COVID-NET, 14 States, March 1, 2020–April 24,2021. MMWR Morb Mortal Wkly Rep, 2021. 70(23): p. 851–857." />
+<meta name="citation_reference" content="Engzell, P., A. Frey, and M.D. Verhagen, Learning loss due to school closures during the COVID-19 pandemic. Proceedings of the National Academy of Sciences, 2021. 118(17): p. e2022376118." />
+<meta name="citation_reference" content="Viner, R., et al., Impacts of school closures on physical and mental health of children and young people: a systematic review. medRxiv, 2021: p. 2021.02.10.21251526." />
+<meta name="citation_reference" content="United Nations Educational Scientific and Cultural Organization (UNESCO). Adverse consequences of school closures. 2021; Available from: https://en.unesco.org/covid19/educationresponse/consequences." />
+<meta name="citation_reference" content="Backer, J.A., et al., Impact of physical distancing measures against COVID-19 on contacts and mixing patterns: repeated cross-sectional surveys, the Netherlands, 2016–17, April 2020 and June 2020. Eurosurveillance, 2021. 26(8): p. 2000994." />
+<meta name="citation_reference" content="Zhang, J., et al., Changes in contact patterns shape the dynamics of the COVID-19 outbreak in China. Science, 2020. 368(6498): p. 1481–1486." />
+<meta name="citation_reference" content="Mossong, J., et al., Social contacts and mixing patterns relevant to the spread of infectious diseases. PLoS Med, 2008. 5(3): p. e74." />
+<meta name="citation_reference" content="Wright, L., A. Steptoe, and D. Fancourt, Trajectories of compliance with COVID-19 related guidelines: longitudinal analyses of 50,000 UK adults. medRxiv, 2021: p. 2021.04.13.21255336." />
+<meta name="citation_reference" content="Rijksoverheid. Coronavirus Dashboard. 2020 07 September 2021 [cited 2021 07 September 2021]; Available from: https://coronadashboard.government.nl/." />
+<meta name="citation_reference" content="Riley, S., et al., Resurgence of SARS-CoV-2: Detection by community viral surveillance. Science, 2021. 372(6545): p. 990–995." />
+<meta name="citation_reference" content="Ward, H., et al., SARS-CoV-2 antibody prevalence in England following the first peak of the pandemic. Nature communications, 2021. 12(1): p. 905–905." />
+<meta name="citation_reference" content="Office for National Statistics (ONS), Coronavirus (COVID-19) Infection Survey, UK: 8 January 2021. 2021." />
+<meta name="citation_reference" content="Riley, S., et al., High prevalence of SARS-CoV-2 swab positivity and increasing R number in England during October 2020: REACT-1 round 6 interim report. medRxiv, 2020: p. 2020.10.30.20223123." />
+<meta name="citation_reference" content="de Gier, B., et al., Vaccine effectiveness against SARS-CoV-2 transmission and infections among household and other close contacts of confirmed cases, the Netherlands, February to May 2021. Eurosurveillance, 2021. 26(31): p. 2100640." />
+<meta name="citation_reference" content="Harris, R.J., et al., Impact of vaccination on household transmission of SARS-CoV-2 in England. preprint, 2021." />
+<meta name="citation_reference" content="V Shah, A.S., et al., Effect of vaccination on transmission of COVID-19: an observational study in healthcare workers and their households. medRxiv, 2021: p. 2021.03.11.21253275." />
+<meta name="citation_reference" content="Baguelin, M., et al., Assessing optimal target populations for influenza vaccination programmes: an evidence synthesis and modelling study. PLoS Med, 2013. 10(10): p. e1001527." />
+<meta name="citation_reference" content="Tran Kiem, C., et al., A modelling study investigating short and medium-term challenges for COVID-19 vaccination: From prioritisation to the relaxation of measures. EClinicalMedicine, 2021. 38." />
+<meta name="citation_reference" content="Milne, G.J., J. Carrivick, and D. Whyatt, Non-pharmaceutical interventions and vaccinating school children required to contain SARS-CoV-2 Delta variant outbreaks in Australia: a modelling analysis. medRxiv, 2021: p. 2021.10.03.21264492." />
+<meta name="citation_reference" content="Verberk, J.D.M., et al., Third national biobank for population-based seroprevalence studies in the Netherlands, including the Caribbean Netherlands. BMC Infectious Diseases, 2019. 19(1): p. 470." />
+<meta name="citation_reference" content="Rijksinstituut voor Volksgezondheid en Milieu (RIVM). PIENTER Corona Study [Dutch]. 2021 6 October 2021 [cited 2021 21 October 2021]; Available from: https://www.rivm.nl/pienter-corona-studie." />
+<meta name="citation_reference" content="Martinez, M.E., The calendar of epidemics: Seasonal cycles of infectious diseases. PLOS Pathogens, 2018. 14(11): p. e1007327." />
+<meta name="citation_reference" content="Shaman, J. and M. Kohn, Absolute humidity modulates influenza survival, transmission, and seasonality. Proceedings of the National Academy of Sciences, 2009. 106(9): p. 3243–3248." />
+<meta name="citation_reference" content="Shaman, J., et al., Absolute Humidity and the Seasonal Onset of Influenza in the Continental United States. PLOS Biology, 2010. 8(2): p. e1000316." />
+<meta name="citation_reference" content="Pitzer, V.E., et al., Environmental Drivers of the Spatiotemporal Dynamics of Respiratory Syncytial Virus in the United States. PLOS Pathogens, 2015. 11(1): p. e1004591." />
+<meta name="citation_reference" content="van de Kassteele, J., J. van Eijkeren, and J. Wallinga, Efficient estimation of age-specific social contact rates between men and women. The Annals of Applied Statistics, 2017. 11(1): p. 320-339, 20." />
+<meta name="citation_reference" content="R Core Team, R: A Language and Environment for Statistical Computing. 2020, R Foundation for Statistical Computing: Vienna, Austria." />
+<meta name="citation_reference" content="Soetaert, K., T. Petzoldt, and R.W. Setzer, Solving Differential Equations in R: Package deSolve. 2010, 2010. 33(9): p. 25." />
+<meta name="citation_reference" content="Pfizer Inc. and BioNTech SE, Pfizer and BioNTech announce positive topline results from pivotal trial of COVID-19 vaccine in children 5 to 11 years. 2021: New York and Mainz, Hermany." />
+<meta name="citation_reference" content="Poulain, T., et al., Loss of childcare and classroom teaching during the Covid-19-related lockdown in spring 2020: A longitudinal study on consequences on leisure behavior and schoolwork at home. PLOS ONE, 2021. 16(3): p. e0247949." />
+<meta name="citation_reference" content="World Health Organization. Regional Office for, E., Fourth meeting of the Technical Advisory Group on Safe Schooling during the COVID-19 Pandemic: Copenhagen, Denmark, 9 March 2021. 2021, World Health Organization. Regional Office for Europe: Copenhagen." />
+<meta name="citation_reference" content="Tillett, R.L., et al., Genomic evidence for reinfection with SARS-CoV-2: a case study. The Lancet Infectious Diseases, 2021. 21(1): p. 52–58." />
+<meta name="citation_reference" content="I &amp; O Research. Most young people want to be vaccinated [Dutch]. 2021 08 October 2021]; Available from: https://www.ioresearch.nl/actueel/merendeel-jongeren-wil-zich-laten-vaccineren/." />
+<meta name="citation_reference" content="Twohig, K.A., et al., Hospital admission and emergency care attendance risk for SARS-CoV-2 delta (B.1.617.2) compared with alpha (B.1.1.7) variants of concern: a cohort study. The Lancet Infectious Diseases." />
+<meta name="citation_reference" content="Rijksinstituut voor Volksgezondheid en Milieu (RIVM). Figures on the COVID-19 vaccination programme. COVID-19 Vaccination 2021 05 October 2021 8 October 2021]; Available from: https://www.rivm.nl/en/covid-19-vaccination/figures-vaccination-programme." />
+<meta name="citation_reference" content="Rijksinstituut voor Volksgezondheid en Milieu (RIVM). How calculation models contribute to the fight against COVID-19 [Dutch]. 2020 1 October 2021 [cited 2021 18 October 2021]; Available from: https://www.rivm.nl/coronavirus-covid-19/rekenmodellen#rm-hoe-bereken-je-de-r-454461-more." />
+<meta name="citation_reference" content="The Royal Netherlands Meteorological Institute (KNMI). Daily weather data in the Netherlands. 2021 18 October 2021]; Available from: https://www.knmi.nl/nederland-nu/klimatologie/daggegevens." />
+<meta name="citation_reference" content="Google LLC, Google COVID-19 Community Mobility Reports. 2021." />
+<meta name="citation_reference" content="Rijksinstituut voor Volksgezondheid en Milieu (RIVM). Pathogen Surveillance. COVID-19 2021 28 September 2021 18 October 2021]; Available from: https://www.rivm.nl/en/coronavirus-covid-19/research/pathogen-surveillance." />
+<meta name="citation_reference" content="Pritchard, E., et al., Impact of vaccination on new SARS-CoV-2 infections in the United Kingdom. Nature Medicine, 2021. 27(8): p. 1370–1378." />
+<meta name="citation_reference" content="Corchado-Garcia, J., et al., Real-world effectiveness of Ad26.COV2.S adenoviral vector vaccine for COVID-19. medRxiv, 2021: p. 2021.04.27.21256193." />
+<meta name="citation_reference" content="Stowe, J., et al., Effectiveness of COVID-19 vaccines against hospital admission with the Delta (B.1.617.2) variant. preprint, 2021." />
+<meta name="citation_reference" content="(RIVM), R.v.V.e.M. Effectiveness of the COVID-19 vaccines. Efficacy and protection 2021 25 August 2021 [cited 2021 25 August 2021]; Available from: https://www.rivm.nl/en/covid-19-vaccination/vaccines/efficacy-and-protection." />
+<meta name="citation_reference" content="Martínez-Baz, I., et al., Product-specific COVID-19 vaccine effectiveness against secondary infection in close contacts, Navarre, Spain, April to August 2021. Eurosurveillance, 2021. 26(39): p. 2100894." />
+<meta name="citation_reference" content="de Gier, B., et al., COVID-19 vaccine effectiveness against hospitalizations and ICU admissions in the Netherlands, April-August 2021. medRxiv, 2021: p. 2021.09.15.21263613." />
+<meta name="citation_reference" content="de Gier, B., et al., Vaccine effectiveness against SARS-CoV-2 transmission to household contacts during dominance of Delta variant (B.1.617.2), August-September 2021, the Netherlands. medRxiv, 2021: p. 2021.10.14.21264959." />
+<meta name="twitter:title" content="The impact of vaccinating adolescents and children on COVID-19 disease outcomes" />
+<meta name="twitter:site" content="@medrxivpreprint" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="Introduction Despite the high COVID-19 vaccination coverage among adults, there is concern over a peak in SARS-CoV-2 infections in the coming months. To help ensure that healthcare systems are not overwhelmed in the event of a new wave of SARS-CoV-2 infections, many countries have extended vaccination to adolescents (those aged 12-17 years) and may consider further extending to children aged 5-11 years. However, there is considerable debate about whether or not to vaccinate healthy adolescents and children against SARS-CoV-2 because, while vaccination of children and adolescents may limit transmission from these groups to other, more vulnerable groups, adolescents and children themselves have limited risk of severe disease if infected and may experience adverse events from vaccination. To quantify the benefits of extending COVID-19 vaccination beyond adults we compare daily cases, hospital admissions, and intensive care (IC) admissions for vaccination in adults only, those 12 years and above, and those 5 years and above.
+
+Methods and Findings We developed a deterministic, age-structured susceptible-exposed-infectious-recovered (SEIR) model to simulate disease outcomes (e.g., cases, hospital admissions, IC admissions) under different vaccination scenarios. The model is partitioned into 10-year age bands (0-9, 10-19, …, 70-79, 80+) and accounts for differences in susceptibility and infectiousness by age group, seasonality in transmission rate, modes of vaccine protection (e.g., infection, transmission), and vaccine characteristics (e.g., vaccine effectiveness). Model parameters are estimated by fitting the model piecewise to daily cases from the Dutch notification database Osiris from 01 January 2020 to 22 June 2021. Forward simulations are performed from 22 June 2021 to 31 March 2022. We performed sensitivity analyses in which vaccine-induced immunity waned.
+
+We found that upon relaxation of all non-pharmaceutical control measures a large wave occurred regardless of vaccination strategy. We found overall reductions of 5.7% (4.4%, 6.9%) of cases, 2.0% (0.7%, 3.2%) of hospital admissions, and 1.7% (0.6%, 2.8%) of IC admissions when those 12 years and above were vaccinated compared to vaccinating only adults. When those 5 years and above were vaccinated we observed reductions of 8.7% (7.5%, 9.9%) of cases, 3.2% (2.0%, 4.5%) of hospital admissions, and 2.4% (1.2%, 3.5%) of IC admissions compared to vaccination in adults only. Benefits of extending vaccination were larger within the age groups included in the vaccination program extension than in other age groups. The benefits of vaccinating adolescents and children were smaller if vaccine protection against infection, hospitalization, and transmission (once infected) wanes.
+
+Discussion Our results highlight the benefits of extending COVID-19 vaccination programs beyond adults to reduce infections and severe outcomes in adolescents and children and in the wider population. A reduction of infections in school-aged children/adolescents may have the added benefit of reducing the need for school closures during a new wave. Additional control measures may be required in future to prevent a large wave despite vaccination program extensions. While the results presented here are based on population characteristics and the COVID-19 vaccination program in The Netherlands, they may provide valuable insights for other countries who are considering COVID-19 vaccination program extensions.
+
+### Competing Interest Statement
+
+The authors have declared no competing interest.
+
+### Funding Statement
+
+The study was financed by the Netherlands Ministry of Health, Welfare and Sport. This project has received funding from the European Union's Horizon 2020 research and innovation programme - project EpiPose (grant agreement number 101003688).
+
+### Author Declarations
+
+I confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.
+
+Yes
+
+The details of the IRB/oversight body that provided approval or exemption for the research described are given below:
+
+The source data used in this work is publicly available and can be obtained from: https://geodata.rivm.nl/covid-19/
+
+I confirm that all necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived, and that any patient/participant/sample identifiers included were not known to anyone (e.g., hospital staff, patients or participants themselves) outside the research group so cannot be used to identify individuals.
+
+Yes
+
+I understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).
+
+Yes
+
+I have followed all appropriate research reporting guidelines and uploaded the relevant EQUATOR Network research reporting checklist(s) and other pertinent material as supplementary files, if applicable.
+
+Yes
+
+All data and code produced are available online at: &lt;https://github.com/kylieainslie/vacamole&gt;" />
+<meta name="og-title" property="og:title" content="The impact of vaccinating adolescents and children on COVID-19 disease outcomes" />
+<meta name="og-url" property="og:url" content="https://www.medrxiv.org/content/10.1101/2021.10.21.21265318v1" />
+<meta name="og-site-name" property="og:site_name" content="medRxiv" />
+<meta name="og-description" property="og:description" content="Introduction Despite the high COVID-19 vaccination coverage among adults, there is concern over a peak in SARS-CoV-2 infections in the coming months. To help ensure that healthcare systems are not overwhelmed in the event of a new wave of SARS-CoV-2 infections, many countries have extended vaccination to adolescents (those aged 12-17 years) and may consider further extending to children aged 5-11 years. However, there is considerable debate about whether or not to vaccinate healthy adolescents and children against SARS-CoV-2 because, while vaccination of children and adolescents may limit transmission from these groups to other, more vulnerable groups, adolescents and children themselves have limited risk of severe disease if infected and may experience adverse events from vaccination. To quantify the benefits of extending COVID-19 vaccination beyond adults we compare daily cases, hospital admissions, and intensive care (IC) admissions for vaccination in adults only, those 12 years and above, and those 5 years and above.
+
+Methods and Findings We developed a deterministic, age-structured susceptible-exposed-infectious-recovered (SEIR) model to simulate disease outcomes (e.g., cases, hospital admissions, IC admissions) under different vaccination scenarios. The model is partitioned into 10-year age bands (0-9, 10-19, …, 70-79, 80+) and accounts for differences in susceptibility and infectiousness by age group, seasonality in transmission rate, modes of vaccine protection (e.g., infection, transmission), and vaccine characteristics (e.g., vaccine effectiveness). Model parameters are estimated by fitting the model piecewise to daily cases from the Dutch notification database Osiris from 01 January 2020 to 22 June 2021. Forward simulations are performed from 22 June 2021 to 31 March 2022. We performed sensitivity analyses in which vaccine-induced immunity waned.
+
+We found that upon relaxation of all non-pharmaceutical control measures a large wave occurred regardless of vaccination strategy. We found overall reductions of 5.7% (4.4%, 6.9%) of cases, 2.0% (0.7%, 3.2%) of hospital admissions, and 1.7% (0.6%, 2.8%) of IC admissions when those 12 years and above were vaccinated compared to vaccinating only adults. When those 5 years and above were vaccinated we observed reductions of 8.7% (7.5%, 9.9%) of cases, 3.2% (2.0%, 4.5%) of hospital admissions, and 2.4% (1.2%, 3.5%) of IC admissions compared to vaccination in adults only. Benefits of extending vaccination were larger within the age groups included in the vaccination program extension than in other age groups. The benefits of vaccinating adolescents and children were smaller if vaccine protection against infection, hospitalization, and transmission (once infected) wanes.
+
+Discussion Our results highlight the benefits of extending COVID-19 vaccination programs beyond adults to reduce infections and severe outcomes in adolescents and children and in the wider population. A reduction of infections in school-aged children/adolescents may have the added benefit of reducing the need for school closures during a new wave. Additional control measures may be required in future to prevent a large wave despite vaccination program extensions. While the results presented here are based on population characteristics and the COVID-19 vaccination program in The Netherlands, they may provide valuable insights for other countries who are considering COVID-19 vaccination program extensions.
+
+### Competing Interest Statement
+
+The authors have declared no competing interest.
+
+### Funding Statement
+
+The study was financed by the Netherlands Ministry of Health, Welfare and Sport. This project has received funding from the European Union's Horizon 2020 research and innovation programme - project EpiPose (grant agreement number 101003688).
+
+### Author Declarations
+
+I confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.
+
+Yes
+
+The details of the IRB/oversight body that provided approval or exemption for the research described are given below:
+
+The source data used in this work is publicly available and can be obtained from: https://geodata.rivm.nl/covid-19/
+
+I confirm that all necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived, and that any patient/participant/sample identifiers included were not known to anyone (e.g., hospital staff, patients or participants themselves) outside the research group so cannot be used to identify individuals.
+
+Yes
+
+I understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).
+
+Yes
+
+I have followed all appropriate research reporting guidelines and uploaded the relevant EQUATOR Network research reporting checklist(s) and other pertinent material as supplementary files, if applicable.
+
+Yes
+
+All data and code produced are available online at: &lt;https://github.com/kylieainslie/vacamole&gt;" />
+<meta name="og-type" property="og:type" content="article" />
+<meta name="og-image" property="og:image" content="" />
+<meta name="citation_date" content="2021-10-25" />
+<meta name="description" content="medRxiv - The Preprint Server for Health Sciences" />
+<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="canonical" href="https://www.medrxiv.org/content/10.1101/2021.10.21.21265318v1" />
+<link rel="shortlink" href="https://www.medrxiv.org/node/426154" />
+    <title>The impact of vaccinating adolescents and children on COVID-19 disease outcomes | medRxiv</title>  
+    <link type="text/css" rel="stylesheet" href="https://www.medrxiv.org/sites/default/files/advagg_css/css__DcKr3CumsZTU8f2X6BlpTbZkTl0a4ktIvtu7FpBmIVw__TTo2i8J-9814EgFI83jP9bGBs2EjZDgQa8pyzUSxjOU__OWu9jWxbqz5eMqeTDc4xZhOzPlgoEqGh5PmxOqlf8ZY.css" media="all" />
+<link type="text/css" rel="stylesheet" href="//cdn.jsdelivr.net/qtip2/2.2.1/jquery.qtip.min.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.medrxiv.org/sites/default/files/advagg_css/css__PyYHFwY5MxAn4BX77TYDdU4RDXeQS5jXeWU_EhtPpxE__Qw-rezBwY6q5lzhujTh7mg-q1yvjz_nglxTt9kKsaF0__OWu9jWxbqz5eMqeTDc4xZhOzPlgoEqGh5PmxOqlf8ZY.css" media="all" />
+<style type="text/css" media="all">
+/* <![CDATA[ */
+#sliding-popup.sliding-popup-bottom,#sliding-popup.sliding-popup-bottom .eu-cookie-withdraw-banner,.eu-cookie-withdraw-tab{background:gray}#sliding-popup.sliding-popup-bottom.eu-cookie-withdraw-wrapper{background:transparent}#sliding-popup .popup-content #popup-text h1,#sliding-popup .popup-content #popup-text h2,#sliding-popup .popup-content #popup-text h3,#sliding-popup .popup-content #popup-text p,.eu-cookie-compliance-secondary-button,.eu-cookie-withdraw-tab{color:#fff !important}.eu-cookie-withdraw-tab{border-color:#fff}.eu-cookie-compliance-more-button{color:#fff !important}
+/* ]]> */
+</style>
+
+<!--[if lte IE 7]>
+<link type="text/css" rel="stylesheet" href="https://www.medrxiv.org/sites/default/files/advagg_css/css__ElJr3PIJEvw3qLXc1cnYiLj2G4KgDPSXFOfm6Phf8hw__JdWGm15cDWjsK6KrFlQVXQix9YgNeYysf22XZHj-Y-c__OWu9jWxbqz5eMqeTDc4xZhOzPlgoEqGh5PmxOqlf8ZY.css" media="all" />
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="https://www.medrxiv.org/sites/default/files/advagg_css/css__Wnlyen9qEpwh_Qaf9okEu4QdVGM0BDothxeqA6Nbvo8__EJmw6SZD9bYoS8jocCpPYS3JFRURpdzmuvJoAUNiI-g__OWu9jWxbqz5eMqeTDc4xZhOzPlgoEqGh5PmxOqlf8ZY.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.medrxiv.org/sites/default/files/advagg_css/css__XPg6Aobs217v0T9rA_Y-wMrH3jyqmqunImGwMN4WMEE__Nc8_6i0mjd_g-hzHvpxLmo5g2aluEkJf5SXcEKb7YRY__OWu9jWxbqz5eMqeTDc4xZhOzPlgoEqGh5PmxOqlf8ZY.css" media="all" />
+
+<!--[if (lt IE 9)&(!IEMobile)]>
+<link type="text/css" rel="stylesheet" href="https://www.medrxiv.org/sites/default/files/advagg_css/css__XH6bpcI0f2dImc-p674DLCZtWBGb-QwxJK1YexVGtno__vUceGprdo5nIhV6DH93X7fI3r8RcTJbChbas9TQXeW4__OWu9jWxbqz5eMqeTDc4xZhOzPlgoEqGh5PmxOqlf8ZY.css" media="all" />
+<![endif]-->
+
+<!--[if gte IE 9]><!-->
+<link type="text/css" rel="stylesheet" href="https://www.medrxiv.org/sites/default/files/advagg_css/css__2WBMox6sOrN42ss5lCnH7WWVRdFdJCxtTKnQJYRwTE4__yqNvNYLvMpjy3ffuJrjjm9uW2i-Me1c23KLYuWHaqio__OWu9jWxbqz5eMqeTDc4xZhOzPlgoEqGh5PmxOqlf8ZY.css" media="all" />
+<!--<![endif]-->
+<link type="text/css" rel="stylesheet" href="https://www.medrxiv.org/sites/default/files/advagg_css/css__GJ_y0JYBjHihOcdJg-wLEQWRfqvBxU74PCdjUcUHlyY__f0nQteVSjWTKq2ga8E2qYttGognShmPZZJdeGhQoNFI__OWu9jWxbqz5eMqeTDc4xZhOzPlgoEqGh5PmxOqlf8ZY.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://d33xdlntwy0kbs.cloudfront.net/cshl_custom_medrxiv.css" media="all" />
+    <script type="text/javascript" src="https://www.medrxiv.org/sites/default/files/advagg_js/js__BKYqkKToQ7EjirB7eIdMEH5521EU3da9IpoOs8Ex2XI__aSjVoX8giBmLhN2EbCgIGQJNu89Mh5aVu1LvI_gkJ7Y__OWu9jWxbqz5eMqeTDc4xZhOzPlgoEqGh5PmxOqlf8ZY.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/qtip2/2.2.1/jquery.qtip.min.js"></script>
+<script type="text/javascript" src="https://www.medrxiv.org/sites/default/files/advagg_js/js__cTu5xPrxXhjVN5aAnPJMuPpBY19xTkrTcv2IlQCNS94__DbBDIaPID44_lOD9MTlulOTk4IJuDRxONi_dobBuM1g__OWu9jWxbqz5eMqeTDc4xZhOzPlgoEqGh5PmxOqlf8ZY.js"></script>
+<script type="text/javascript" src="https://www.google.com/recaptcha/api.js?hl=en&amp;render=explicit&amp;onload=drupalRecaptchaOnload"></script>
+<script type="text/javascript" src="https://www.medrxiv.org/sites/default/files/advagg_js/js__6hIesE0QCBXoXlEIn01f-78o39DmDNEoInQ35EHxoXw__qAjUcZEMaB7nsfhw64tJNfG5xuXddaTuPmbIfa6fPMk__OWu9jWxbqz5eMqeTDc4xZhOzPlgoEqGh5PmxOqlf8ZY.js"></script>
+<script type="text/javascript" async="async" src="https://scholar.google.com/scholar_js/casa.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+/*!
+ * yepnope1.5.4
+ * (c) WTFPL, GPLv2
+ */
+(function(a,b,c){function d(a){return"[object Function]"==o.call(a)}function e(a){return"string"==typeof a}function f(){}function g(a){return!a||"loaded"==a||"complete"==a||"uninitialized"==a}function h(){var a=p.shift();q=1,a?a.t?m(function(){("c"==a.t?B.injectCss:B.injectJs)(a.s,0,a.a,a.x,a.e,1)},0):(a(),h()):q=0}function i(a,c,d,e,f,i,j){function k(b){if(!o&&g(l.readyState)&&(u.r=o=1,!q&&h(),l.onload=l.onreadystatechange=null,b)){"img"!=a&&m(function(){t.removeChild(l)},50);for(var d in y[c])y[c].hasOwnProperty(d)&&y[c][d].onload()}}var j=j||B.errorTimeout,l=b.createElement(a),o=0,r=0,u={t:d,s:c,e:f,a:i,x:j};1===y[c]&&(r=1,y[c]=[]),"object"==a?l.data=c:(l.src=c,l.type=a),l.width=l.height="0",l.onerror=l.onload=l.onreadystatechange=function(){k.call(this,r)},p.splice(e,0,u),"img"!=a&&(r||2===y[c]?(t.insertBefore(l,s?null:n),m(k,j)):y[c].push(l))}function j(a,b,c,d,f){return q=0,b=b||"j",e(a)?i("c"==b?v:u,a,b,this.i++,c,d,f):(p.splice(this.i++,0,a),1==p.length&&h()),this}function k(){var a=B;return a.loader={load:j,i:0},a}var l=b.documentElement,m=a.setTimeout,n=b.getElementsByTagName("script")[0],o={}.toString,p=[],q=0,r="MozAppearance"in l.style,s=r&&!!b.createRange().compareNode,t=s?l:n.parentNode,l=a.opera&&"[object Opera]"==o.call(a.opera),l=!!b.attachEvent&&!l,u=r?"object":l?"script":"img",v=l?"script":u,w=Array.isArray||function(a){return"[object Array]"==o.call(a)},x=[],y={},z={timeout:function(a,b){return b.length&&(a.timeout=b[0]),a}},A,B;B=function(a){function b(a){var a=a.split("!"),b=x.length,c=a.pop(),d=a.length,c={url:c,origUrl:c,prefixes:a},e,f,g;for(f=0;f<d;f++)g=a[f].split("="),(e=z[g.shift()])&&(c=e(c,g));for(f=0;f<b;f++)c=x[f](c);return c}function g(a,e,f,g,h){var i=b(a),j=i.autoCallback;i.url.split(".").pop().split("?").shift(),i.bypass||(e&&(e=d(e)?e:e[a]||e[g]||e[a.split("/").pop().split("?")[0]]),i.instead?i.instead(a,e,f,g,h):(y[i.url]?i.noexec=!0:y[i.url]=1,f.load(i.url,i.forceCSS||!i.forceJS&&"css"==i.url.split(".").pop().split("?").shift()?"c":c,i.noexec,i.attrs,i.timeout),(d(e)||d(j))&&f.load(function(){k(),e&&e(i.origUrl,h,g),j&&j(i.origUrl,h,g),y[i.url]=2})))}function h(a,b){function c(a,c){if(a){if(e(a))c||(j=function(){var a=[].slice.call(arguments);k.apply(this,a),l()}),g(a,j,b,0,h);else if(Object(a)===a)for(n in m=function(){var b=0,c;for(c in a)a.hasOwnProperty(c)&&b++;return b}(),a)a.hasOwnProperty(n)&&(!c&&!--m&&(d(j)?j=function(){var a=[].slice.call(arguments);k.apply(this,a),l()}:j[n]=function(a){return function(){var b=[].slice.call(arguments);a&&a.apply(this,b),l()}}(k[n])),g(a[n],j,b,n,h))}else!c&&l()}var h=!!a.test,i=a.load||a.both,j=a.callback||f,k=j,l=a.complete||f,m,n;c(h?a.yep:a.nope,!!i),i&&c(i)}var i,j,l=this.yepnope.loader;if(e(a))g(a,0,l,0);else if(w(a))for(i=0;i<a.length;i++)j=a[i],e(j)?g(j,0,l,0):w(j)?B(j):Object(j)===j&&h(j,l);else Object(a)===a&&h(a,l)},B.addPrefix=function(a,b){z[a]=b},B.addFilter=function(a){x.push(a)},B.errorTimeout=1e4,null==b.readyState&&b.addEventListener&&(b.readyState="loading",b.addEventListener("DOMContentLoaded",A=function(){b.removeEventListener("DOMContentLoaded",A,0),b.readyState="complete"},0)),a.yepnope=k(),a.yepnope.executeStack=h,a.yepnope.injectJs=function(a,c,d,e,i,j){var k=b.createElement("script"),l,o,e=e||B.errorTimeout;k.src=a;for(o in d)k.setAttribute(o,d[o]);c=j?h:c||f,k.onreadystatechange=k.onload=function(){!l&&g(k.readyState)&&(l=1,c(),k.onload=k.onreadystatechange=null)},m(function(){l||(l=1,c(1))},e),i?k.onload():n.parentNode.insertBefore(k,n)},a.yepnope.injectCss=function(a,c,d,e,g,i){var e=b.createElement("link"),j,c=i?h:c||f;e.href=a,e.rel="stylesheet",e.type="text/css";for(j in d)e.setAttribute(j,d[j]);g||(n.parentNode.insertBefore(e,n),m(c,0))}})(this,document);
+
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+yepnope({
+  test: Modernizr.matchmedia,
+  nope: '/sites/all/libraries/media-match/media.match.min.js'
+});
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _prum=[['id', '52e95df3abe53d2e33000000'], ['mark', 'firstbyte',
+      (new Date()).getTime()]]; (function() {
+      var s=document.getElementsByTagName('script')[0],
+      p=document.createElement('script');
+      p.async='async'; p.src='//rum-static.pingdom.net/prum.min.js';s.parentNode.insertBefore(p,s);})();
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+if(typeof window.MathJax === "undefined") window.MathJax = { menuSettings: { zoom: "Click" } };
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-141606356-1", {"cookieDomain":"auto"});ga("set", "page", location.pathname + location.search + location.hash);ga("send", "pageview");ga('create', 'UA-189672-38', 'auto', {'name': 'hwTracker'});
+ga('set', 'anonymizeIp', true);
+ga('hwTracker.send', 'pageview');
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings,{"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"jcore_1","theme_token":"pRExc2aeXYD5qJJLMr-c8n1WXu6v47ya0UpsJezI48I"},"colorbox":{"opacity":"0.85","current":"{current} of {total}","previous":"\u00ab Prev","next":"Next \u00bb","close":"Close","maxWidth":"98%","maxHeight":"98%","fixed":true,"mobiledetect":true,"mobiledevicewidth":"480px"},"highwire":{"nid":"426154","apath":"\/medrxiv\/early\/2021\/10\/25\/2021.10.21.21265318.atom","pisa":"medrxiv;2021.10.21.21265318v1","ac":{"\/medrxiv\/early\/2021\/10\/25\/2021.10.21.21265318.atom":{"access":{"full":true},"pisa_id":"","apath":"\/medrxiv\/early\/2021\/10\/25\/2021.10.21.21265318.atom","jcode":"medrxiv"}},"processed":["highwire_math"],"markup":[{"requested":"abstract","variant":"abstract","view":"abstract","pisa":"medrxiv;2021.10.21.21265318v1"}],"modal_window_width":"560","share_modal_width":"560","share_modal_title":"Share this Article"},"jcarousel":{"ajaxPath":"\/jcarousel\/ajax\/views"},"instances":"{\u0022highwire_abstract_tooltip\u0022:{\u0022content\u0022:{\u0022text\u0022:\u0022\u0022},\u0022style\u0022:{\u0022tip\u0022:{\u0022width\u0022:20,\u0022height\u0022:20,\u0022border\u0022:1,\u0022offset\u0022:0,\u0022corner\u0022:true},\u0022classes\u0022:\u0022qtip-custom hw-tooltip hw-abstract-tooltip qtip-shadow qtip-rounded\u0022,\u0022classes_custom\u0022:\u0022hw-tooltip hw-abstract-tooltip\u0022},\u0022position\u0022:{\u0022at\u0022:\u0022right center\u0022,\u0022my\u0022:\u0022left center\u0022,\u0022viewport\u0022:true,\u0022adjust\u0022:{\u0022method\u0022:\u0022shift\u0022}},\u0022show\u0022:{\u0022event\u0022:\u0022mouseenter click \u0022,\u0022solo\u0022:true},\u0022hide\u0022:{\u0022event\u0022:\u0022mouseleave \u0022,\u0022fixed\u0022:1,\u0022delay\u0022:\u0022100\u0022}},\u0022highwire_author_tooltip\u0022:{\u0022content\u0022:{\u0022text\u0022:\u0022\u0022},\u0022style\u0022:{\u0022tip\u0022:{\u0022width\u0022:15,\u0022height\u0022:15,\u0022border\u0022:1,\u0022offset\u0022:0,\u0022corner\u0022:true},\u0022classes\u0022:\u0022qtip-custom hw-tooltip hw-author-tooltip qtip-shadow qtip-rounded\u0022,\u0022classes_custom\u0022:\u0022hw-tooltip hw-author-tooltip\u0022},\u0022position\u0022:{\u0022at\u0022:\u0022top center\u0022,\u0022my\u0022:\u0022bottom center\u0022,\u0022viewport\u0022:true,\u0022adjust\u0022:{\u0022method\u0022:\u0022\u0022}},\u0022show\u0022:{\u0022event\u0022:\u0022mouseenter \u0022,\u0022solo\u0022:true},\u0022hide\u0022:{\u0022event\u0022:\u0022mouseleave \u0022,\u0022fixed\u0022:1,\u0022delay\u0022:\u0022100\u0022}},\u0022highwire_reflinks_tooltip\u0022:{\u0022content\u0022:{\u0022text\u0022:\u0022\u0022},\u0022style\u0022:{\u0022tip\u0022:{\u0022width\u0022:15,\u0022height\u0022:15,\u0022border\u0022:1,\u0022mimic\u0022:\u0022top center\u0022,\u0022offset\u0022:0,\u0022corner\u0022:true},\u0022classes\u0022:\u0022qtip-custom hw-tooltip hw-ref-link-tooltip qtip-shadow qtip-rounded\u0022,\u0022classes_custom\u0022:\u0022hw-tooltip hw-ref-link-tooltip\u0022},\u0022position\u0022:{\u0022at\u0022:\u0022bottom left\u0022,\u0022my\u0022:\u0022top left\u0022,\u0022viewport\u0022:true,\u0022adjust\u0022:{\u0022method\u0022:\u0022flip\u0022}},\u0022show\u0022:{\u0022event\u0022:\u0022mouseenter \u0022,\u0022solo\u0022:true},\u0022hide\u0022:{\u0022event\u0022:\u0022mouseleave \u0022,\u0022fixed\u0022:1,\u0022delay\u0022:\u0022100\u0022}}}","qtipDebug":"{\u0022leaveElement\u0022:0}","panel_ajax_tab":{"path":"sites\/all\/modules\/contrib\/panels_ajax_tab"},"disqus":{"domain":"medRxiv","url":"https:\/\/www.medrxiv.org\/content\/10.1101\/2021.10.21.21265318v1","title":"The impact of vaccinating adolescents and children on COVID-19 disease outcomes","identifier":"node\/426154"},"panels_ajax_pane":{"new-41":"{\u0022encrypted\u0022:\u0022{\\\u0022encrypted\\\u0022:\\\u0022LX5iYJ2oD\\\\\\\/eflLblVqRG9LJYql56Ub7VXIRZtJrRM0yJ8o8puumSXBeeOkhHqc7Yc2oHSeI4eUWO63nHEIMi\\\\\\\/x\\\\\\\/KizAdC8T3VqnxMABqHjTcgGGdw43QDvI5AAERbYgKObTbr\\\\\\\/CADZqBg9\\\\\\\/wLJvr85MwaofpXFwOfYz4WdnYUr9LVUjuNiAY7Sg+RoL7pj75PQ3loxLCwKG1UvXsU3y\\\\\\\/BKXtuTUtWqMCpptoh5F5pgmKNpxpfoSZlvzwTz7nCSa8imTq87gDlQ5Qy+ldQzHD9IJ8DUQozrcVi\\\\\\\/vMx8Aemv23cW+Ud6RbZ74DTv2I65PS1ywiv8KAwSErYPuGJ+vdTrctp4xPl3oJf4\\\\\\\/caOXzXV0rdF3Sk25E9m2p3bO647APAOw4wJ4tkynzZA17CtFoMOvmv0Ak034Ar0XEjz+V0TpJ8WAsDM8ZpbCIsgWUIbZqgXU+PlClJ3PBnaI4jLG677POJvmuNqbBwnF1WdAZNLCqgjodeEebrKNKJnRjHi8vhi5+OftfitiHgy\\\\\\\/ox4WTbdld0qsk8uNhFLtpQEZjUVE1y7jBao5zoij2mTq5LyVEgkSUoKK6RG0x58R2hTcWZhTmD\\\\\\\/uGtYniX2aLiGDKBjV\\\\\\\/mCJ3JWPKyUrzOvxH5d4u5QZFLkwcokGhfTva9Fbspa3h2O4VcSDXfdlNZW2zl73lLUhNh8ekLs9KRah0R9Ce4UbWWUVDj66k62cySGCkklndc\\\\\\\/sH+v5fXWCIIIijqaZ4a\\\\\\\/AUZ8aOf1Cj1\\\\\\\/\\\\\\\/jL07UfuiDG3wqI3xiE7fKnejJNsg7WFTsL98UcC\\\\\\\/vow2qCF3hq7kheWr9BC55E5kaj+aLzk3fT+Mege2\\\\\\\/zKTMNhiRvA1DTYthcR99Lg9s7UJxWVDOSJB7Z5BBj9UFIvCvpg21kM0qvbc2BnvfM3ifK2WpfGCSkSBYa+mNhjzLrBYfDc56R3gQSHGs0fsYGcaLAAkh147PIjpbVsSFVzH9iky8sNH8MDUNAuuADWBlWcOQduc\\\\\\\/8cEEk9wJeltcY2ILRszCfXJ0g8iyriVdp7x9+1XraE11oK0WRr1x\\\\\\\/L9cdICezBJIBoGy2xxg0iualBcUlSfFmR1q5ZyozjwpKJoR\\\\\\\/eZG7jnhk\\\\\\\/prU8+ALnHepoqlBRPPXh8guWsUUSeuNlhpq6odyLEbnOLnUxidYtL6pFcR8XfZzzoCYoWGkb9M296OMrGeN18NqhxXp5OYI911mwWefD3j8v9Iu92gQI\\\\\\\/t+NZZnwUCjDUSXzl5uL6uwpr4nynYsRjWT++4HZ4QJzO\\\\\\\/11k8\\\u0022,\\\u0022iv\\\u0022:\\\u0022JnNBP2m2V56BdoQkP2Bgsw==\\\u0022,\\\u0022salt\\\u0022:\\\u0022f9d8845712f72c9fee5db7d9ff111eab\\\u0022}\u0022,\u0022hmac\u0022:\u0022ff9d4037071f5a3aa9a9cacc4dc8261a24da71a569e36f32e3d64f8e97f552e9\u0022}"},"urlIsAjaxTrusted":{"\/content\/10.1101\/2021.10.21.21265318v1":true},"ws_fl":{"width":100,"height":21},"ws_gpo":{"size":"","annotation":"","lang":"","callback":"","width":300},"color":{"logo":"https:\/\/www.medrxiv.org\/sites\/default\/files\/medrxiv_internal_logo.png"},"highwire_list_expand":{"is_collapsed":"1"},"highwireResponsive":{"enquire_enabled":1,"breakpoints_configured":1,"breakpoints":{"zero":"all and (min-width: 0px)","xsmall":"all and (min-width: 380px)","narrow":"all and (min-width: 768px) and (min-device-width: 768px), (max-device-width: 800px) and (min-width: 768px) and (orientation:landscape)","normal":"all and (min-width: 980px) and (min-device-width: 980px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation:landscape)","wide":"all and (min-width: 1220px)"}},"eu_cookie_compliance":{"popup_enabled":1,"popup_agreed_enabled":0,"popup_hide_agreed":0,"popup_clicking_confirmation":1,"popup_scrolling_confirmation":false,"popup_html_info":"\u003Cdiv\u003E\n  \u003Cdiv class =\u0022popup-content info\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022\u003E\n      \u003Cp\u003EWe use cookies on this site to enhance your user experience. By clicking any link on this page you are giving your consent for us to set cookies.\u003C\/p\u003E\n    \u003C\/div\u003E\n    \u003Cdiv id=\u0022popup-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022agree-button eu-cookie-compliance-default-button\u0022\u003EContinue\u003C\/button\u003E\n                    \u003Cbutton type=\u0022button\u0022 class=\u0022find-more-button eu-cookie-compliance-more-button\u0022\u003EFind out more\u003C\/button\u003E\n          \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E","use_mobile_message":false,"mobile_popup_html_info":"\u003Cdiv\u003E\n  \u003Cdiv class =\u0022popup-content info\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022\u003E\n          \u003C\/div\u003E\n    \u003Cdiv id=\u0022popup-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022agree-button eu-cookie-compliance-default-button\u0022\u003EContinue\u003C\/button\u003E\n                    \u003Cbutton type=\u0022button\u0022 class=\u0022find-more-button eu-cookie-compliance-more-button\u0022\u003EFind out more\u003C\/button\u003E\n          \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E\n","mobile_breakpoint":"768","popup_html_agreed":"\u003Cdiv\u003E\n  \u003Cdiv class=\u0022popup-content agreed\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022\u003E\n      \u003Ch2\u003EThank you for accepting cookies\u003C\/h2\u003E\u003Cp\u003EYou can now hide this message or find out more about cookies.\u003C\/p\u003E    \u003C\/div\u003E\n    \u003Cdiv id=\u0022popup-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022hide-popup-button eu-cookie-compliance-hide-button\u0022\u003EHide\u003C\/button\u003E\n              \u003Cbutton type=\u0022button\u0022 class=\u0022find-more-button eu-cookie-compliance-more-button-thank-you\u0022 \u003EMore info\u003C\/button\u003E\n          \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E","popup_use_bare_css":false,"popup_height":"auto","popup_width":"100%","popup_delay":1000,"popup_link":"\/help\/cookie-policy","popup_link_new_window":1,"popup_position":null,"popup_language":"en","store_consent":false,"better_support_for_screen_readers":0,"reload_page":0,"domain":"","popup_eu_only_js":0,"cookie_lifetime":"365","cookie_session":false,"disagree_do_not_show_popup":0,"method":"default","whitelisted_cookies":"","withdraw_markup":"\u003Cbutton type=\u0022button\u0022 class=\u0022eu-cookie-withdraw-tab\u0022\u003EPrivacy settings\u003C\/button\u003E\n\u003Cdiv class=\u0022eu-cookie-withdraw-banner\u0022\u003E\n  \u003Cdiv class=\u0022popup-content info\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022\u003E\n      \u003Cp\u003E\u0026lt;h2\u0026gt;We use cookies on this site to enhance your user experience\u0026lt;\/h2\u0026gt;\u0026lt;p\u0026gt;You have given your consent for us to set cookies.\u0026lt;\/p\u0026gt;\u003C\/p\u003E\n    \u003C\/div\u003E\n    \u003Cdiv id=\u0022popup-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022eu-cookie-withdraw-button\u0022\u003EWithdraw consent\u003C\/button\u003E\n    \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E\n","withdraw_enabled":false},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip","trackColorbox":1,"trackUrlFragments":1},"jnl_biorxiv_styles":{"defaultJCode":"medrxiv"},"omega":{"layouts":{"primary":"normal","order":["narrow","normal","wide"],"queries":{"narrow":"all and (min-width: 768px) and (min-device-width: 768px), (max-device-width: 800px) and (min-width: 768px) and (orientation:landscape)","normal":"all and (min-width: 980px) and (min-device-width: 980px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation:landscape)","wide":"all and (min-width: 1220px)"}}}});
+//--><!]]>
+</script>
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  </head>
+  <body class="html not-front not-logged-in page-node page-node- page-node-426154 node-type-highwire-article context-content hw-default-jcode-medrxiv hw-article-type-article">
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-P4HH5NV" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script type="text/javascript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0];var j=d.createElement(s);var dl=l!='dataLayer'?'&l='+l:'';j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;j.type='text/javascript';j.async=true;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-P4HH5NV');</script>
+<!-- End Google Tag Manager -->
+    <div id="skip-link">
+      <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+    </div>
+        <div class="page clearfix page-box-shadows footer-borders panels-page panels-layout-jcore_2col" id="page">
+      <header id="section-header" class="section section-header">
+    
+  <div id="zone-branding" class="zone zone-branding clearfix print-display-block container-30">
+    <div class="grid-15 prefix-1 region region-branding print-display-block" id="region-branding">
+  <div class="region-inner region-branding-inner">
+        <div class="branding-data clearfix">
+            <div class="logo-img">
+        <a href="/" rel="home" class="" data-icon-position="" data-hide-link-title="0"><img alt="medRxiv" src="https://www.medrxiv.org/sites/default/files/medrxiv_internal_logo.png" /></a>      </div>
+                </div>
+          </div>
+</div><div class="grid-11 suffix-1 region region-branding-second print-hidden" id="region-branding-second">
+  <div class="region-inner region-branding-second-inner">
+    <div class="block block-system block-menu block-main-menu block-system-main-menu odd block-without-title" id="block-system-main-menu">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <nav class="menubar-nav"><ul class="menu" role="menu"><li class="first leaf" role="menuitem"><a href="/" title="" class="" data-icon-position="" data-hide-link-title="0">Home</a></li>
+<li class="leaf" role="menuitem"><a href="/content/about-medrxiv" class="" data-icon-position="" data-hide-link-title="0">About</a></li>
+<li class="leaf" role="menuitem"><a href="/submit-a-manuscript" class="" data-icon-position="" data-hide-link-title="0">Submit</a></li>
+<li class="last leaf" role="menuitem"><a href="/content/alertsrss" title="" class="" data-icon-position="" data-hide-link-title="0">ALERTS / RSS</a></li>
+</ul></nav>    </div>
+  </div>
+</div><div class="block block-panels-mini block-biorxiv-search-box block-panels-mini-biorxiv-search-box even block-without-title" id="block-panels-mini-biorxiv-search-box">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <div class="panel-display panel-1col clearfix" id="mini-panel-biorxiv_search_box">
+  <div class="panel-panel panel-col">
+    <div><div class="panel-pane pane-highwire-seach-quicksearch" >
+  
+      
+  
+  <div class="pane-content">
+    <form class="highwire-quicksearch button-style-mini button-style-mini" action="/content/10.1101/2021.10.21.21265318v1" method="post" id="highwire-search-quicksearch-form-0" accept-charset="UTF-8"><div><div class="form-item form-item-label-invisible form-type-textfield form-item-keywords">
+  <label class="element-invisible" for="edit-keywords">Search for this keyword </label>
+ <input placeholder="Search" type="text" id="edit-keywords" name="keywords" value="" size="60" maxlength="128" class="form-text" />
+</div>
+<div class="button-wrapper button-mini"><span class="icon-search"></span><input data-icon-only="1" data-font-icon="icon-search" data-icon-position="after" type="submit" id="edit-submit--2" name="op" value="Search" class="form-submit" /></div><input type="hidden" name="form_build_id" value="form-UVMLComll0JUzH_5er7JZiQYBwSgoiikXrZyJynyP6s" />
+<input type="hidden" name="form_id" value="highwire_search_quicksearch_form_0" />
+</div></form>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-custom pane-2 advanced-search-link" >
+  
+      
+  
+  <div class="pane-content">
+    <a href="/search">Advanced Search</a>  </div>
+
+  
+  </div>
+</div>
+  </div>
+</div>
+    </div>
+  </div>
+</div>  </div>
+</div>  </div>
+  
+  <div id="zone-header" class="zone zone-header clearfix container-30">
+  	      </div>
+</header>    
+      <section id="section-content" class="section section-content">
+    
+  <div id="zone-content" class="zone zone-content clearfix container-30">    
+        
+    <div class="grid-28 suffix-1 prefix-1 region region-content" id="region-content">
+  <div class="region-inner region-content-inner">
+    <a id="main-content"></a>
+                        <div class="block block-system block-main block-system-main odd block-without-title" id="block-system-main">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <div class="panel-display panels-960-layout jcore-2col-layout" >
+	  
+  <div class="panel-row-wrapper clearfix">
+		
+		<div class="main-content-wrapper grid-17 suffix-1 alpha">
+			<div class="panel-panel panel-region-content">
+			  <div class="inside"><div class="panel-pane pane-highwire-article-citation" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="highwire-article-citation highwire-citation-type-highwire-article node426154" data-node-nid="426154" id="node426154--21879024912" data-pisa="medrxiv;2021.10.21.21265318v1" data-pisa-master="medrxiv;2021.10.21.21265318" data-apath="/medrxiv/early/2021/10/25/2021.10.21.21265318.atom" data-hw-author-tooltip-instance=""><div  class="highwire-cite highwire-cite-highwire-article highwire-citation-medrxiv-article-top clearfix has-author-tooltip" >
+
+  
+      <h1 class="highwire-cite-title" id="page-title">The impact of vaccinating adolescents and children on COVID-19 disease outcomes</h1>  
+      <div  class="highwire-cite-authors" ><span  class="highwire-citation-authors"><span class="highwire-citation-author first hw-author-orcid-logo-wrapper" data-delta="0"><a href="http://orcid.org/0000-0001-5419-7206" target="_blank" class="hw-author-orcid-logo link-icon-only link-icon"><span class="hw-icon-orcid hw-icon-color-orcid"></span> <span class="title element-invisible">View ORCID Profile</span></a><span class="nlm-given-names">Kylie E. C.</span> <span class="nlm-surname">Ainslie</span></span>, <span class="highwire-citation-author hw-author-orcid-logo-wrapper" data-delta="1"><a href="http://orcid.org/0000-0003-4169-5665" target="_blank" class="hw-author-orcid-logo link-icon-only link-icon"><span class="hw-icon-orcid hw-icon-color-orcid"></span> <span class="title element-invisible">View ORCID Profile</span></a><span class="nlm-given-names">Jantien</span> <span class="nlm-surname">Backer</span></span>, <span class="highwire-citation-author" data-delta="2"><span class="nlm-given-names">Pieter</span> <span class="nlm-surname">de Boer</span></span>, <span class="highwire-citation-author" data-delta="3"><span class="nlm-given-names">Albert Jan</span> <span class="nlm-surname">van Hoek</span></span>, <span class="highwire-citation-author hw-author-orcid-logo-wrapper" data-delta="4"><a href="http://orcid.org/0000-0002-9449-6873" target="_blank" class="hw-author-orcid-logo link-icon-only link-icon"><span class="hw-icon-orcid hw-icon-color-orcid"></span> <span class="title element-invisible">View ORCID Profile</span></a><span class="nlm-given-names">Don</span> <span class="nlm-surname">Klinkenberg</span></span>, <span class="highwire-citation-author hw-author-orcid-logo-wrapper" data-delta="5"><a href="http://orcid.org/0000-0001-8274-1627" target="_blank" class="hw-author-orcid-logo link-icon-only link-icon"><span class="hw-icon-orcid hw-icon-color-orcid"></span> <span class="title element-invisible">View ORCID Profile</span></a><span class="nlm-given-names">Hester Korthals</span> <span class="nlm-surname">Altes</span></span>, <span class="highwire-citation-author hw-author-orcid-logo-wrapper" data-delta="6"><a href="http://orcid.org/0000-0002-7596-7641" target="_blank" class="hw-author-orcid-logo link-icon-only link-icon"><span class="hw-icon-orcid hw-icon-color-orcid"></span> <span class="title element-invisible">View ORCID Profile</span></a><span class="nlm-given-names">Ka Yin</span> <span class="nlm-surname">Leung</span></span>, <span class="highwire-citation-author" data-delta="7"><span class="nlm-given-names">Hester</span> <span class="nlm-surname">de Melker</span></span>, <span class="highwire-citation-author hw-author-orcid-logo-wrapper" data-delta="8"><a href="http://orcid.org/0000-0001-8235-757X" target="_blank" class="hw-author-orcid-logo link-icon-only link-icon"><span class="hw-icon-orcid hw-icon-color-orcid"></span> <span class="title element-invisible">View ORCID Profile</span></a><span class="nlm-given-names">Fuminari</span> <span class="nlm-surname">Miura</span></span>, <span class="highwire-citation-author hw-author-orcid-logo-wrapper" data-delta="9"><a href="http://orcid.org/0000-0003-1725-5627" target="_blank" class="hw-author-orcid-logo link-icon-only link-icon"><span class="hw-icon-orcid hw-icon-color-orcid"></span> <span class="title element-invisible">View ORCID Profile</span></a><span class="nlm-given-names">Jacco</span> <span class="nlm-surname">Wallinga</span></span></span></div>
+  
+      <div  class="highwire-cite-metadata" ><span  class="highwire-cite-metadata-doi highwire-cite-metadata"><span class="label">doi:</span> https://doi.org/10.1101/2021.10.21.21265318 </span></div>
+  
+  
+  
+</div>
+<div id="hw-article-author-popups-node426154--21879024912" style="display: none;"><div class="author-tooltip-0"><div class="author-tooltip-name">Kylie E. C. Ainslie </div><div class="author-tooltip-affiliation"><span class="author-tooltip-text"><div class='author-affiliation'><span class='nlm-sup'>1</span><span class='nlm-institution'>Centre for Infectious Disease Control, National Institute for Public Health and the Environment</span>, Bilthoven, <span class='nlm-country'>the Netherlands</span></div><div class='author-affiliation'><span class='nlm-sup'>2</span><span class='nlm-institution'>School of Public Health, Imperial College London</span>, London, <span class='nlm-country'>United Kingdom</span></div><div class='author-affiliation'><span class='nlm-sup'>3</span><span class='nlm-institution'>MRC Centre for Global Infectious Disease Analysis and Abdul Latif Jameel Institute for Disease and Emergency Analytics, Imperial College London</span>, London, <span class='nlm-country'>United Kingdom</span></div></span></div><ul class="author-tooltip-find-more"><li class="author-tooltip-gs-link first"><a href="/lookup/google-scholar?link_type=googlescholar&amp;gs_type=author&amp;author%5B0%5D=Kylie%2BE.%2BC.%2BAinslie%2B" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on Google Scholar</a></li><li class="author-tooltip-pubmed-link"><a href="/lookup/external-ref?access_num=Ainslie%20KE&amp;link_type=AUTHORSEARCH" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on PubMed</a></li><li class="author-site-search-link"><a href="/search/author1%3AKylie%2BE.%2BC.%2BAinslie%2B" rel="nofollow" class="" data-icon-position="" data-hide-link-title="0">Search for this author on this site</a></li><li class="author-orcid-link"><a href="http://orcid.org/0000-0001-5419-7206" target="_blank" class="" data-icon-position="" data-hide-link-title="0">ORCID record for Kylie E. C. Ainslie</a></li><li class="author-corresp-email-link last"><span>For correspondence: 
+<a href="mailto:kylie.ainslie@rivm.nl" class="" data-icon-position="" data-hide-link-title="0">kylie.ainslie@rivm.nl</a></span></li></ul></div><div class="author-tooltip-1"><div class="author-tooltip-name">Jantien Backer </div><div class="author-tooltip-affiliation"><span class="author-tooltip-text"><div class='author-affiliation'><span class='nlm-sup'>1</span><span class='nlm-institution'>Centre for Infectious Disease Control, National Institute for Public Health and the Environment</span>, Bilthoven, <span class='nlm-country'>the Netherlands</span></div></span></div><ul class="author-tooltip-find-more"><li class="author-tooltip-gs-link first"><a href="/lookup/google-scholar?link_type=googlescholar&amp;gs_type=author&amp;author%5B0%5D=Jantien%2BBacker%2B" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on Google Scholar</a></li><li class="author-tooltip-pubmed-link"><a href="/lookup/external-ref?access_num=Backer%20J&amp;link_type=AUTHORSEARCH" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on PubMed</a></li><li class="author-site-search-link"><a href="/search/author1%3AJantien%2BBacker%2B" rel="nofollow" class="" data-icon-position="" data-hide-link-title="0">Search for this author on this site</a></li><li class="author-orcid-link last"><a href="http://orcid.org/0000-0003-4169-5665" target="_blank" class="" data-icon-position="" data-hide-link-title="0">ORCID record for Jantien Backer</a></li></ul></div><div class="author-tooltip-2"><div class="author-tooltip-name">Pieter de Boer </div><div class="author-tooltip-affiliation"><span class="author-tooltip-text"><div class='author-affiliation'><span class='nlm-sup'>1</span><span class='nlm-institution'>Centre for Infectious Disease Control, National Institute for Public Health and the Environment</span>, Bilthoven, <span class='nlm-country'>the Netherlands</span></div></span></div><ul class="author-tooltip-find-more"><li class="author-tooltip-gs-link first"><a href="/lookup/google-scholar?link_type=googlescholar&amp;gs_type=author&amp;author%5B0%5D=Pieter%2Bde%2BBoer%2B" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on Google Scholar</a></li><li class="author-tooltip-pubmed-link"><a href="/lookup/external-ref?access_num=de%20Boer%20P&amp;link_type=AUTHORSEARCH" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on PubMed</a></li><li class="author-site-search-link last"><a href="/search/author1%3APieter%2Bde%2BBoer%2B" rel="nofollow" class="" data-icon-position="" data-hide-link-title="0">Search for this author on this site</a></li></ul></div><div class="author-tooltip-3"><div class="author-tooltip-name">Albert Jan van Hoek </div><div class="author-tooltip-affiliation"><span class="author-tooltip-text"><div class='author-affiliation'><span class='nlm-sup'>1</span><span class='nlm-institution'>Centre for Infectious Disease Control, National Institute for Public Health and the Environment</span>, Bilthoven, <span class='nlm-country'>the Netherlands</span></div></span></div><ul class="author-tooltip-find-more"><li class="author-tooltip-gs-link first"><a href="/lookup/google-scholar?link_type=googlescholar&amp;gs_type=author&amp;author%5B0%5D=Albert%2BJan%2Bvan%2BHoek%2B" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on Google Scholar</a></li><li class="author-tooltip-pubmed-link"><a href="/lookup/external-ref?access_num=van%20Hoek%20AJ&amp;link_type=AUTHORSEARCH" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on PubMed</a></li><li class="author-site-search-link last"><a href="/search/author1%3AAlbert%2BJan%2Bvan%2BHoek%2B" rel="nofollow" class="" data-icon-position="" data-hide-link-title="0">Search for this author on this site</a></li></ul></div><div class="author-tooltip-4"><div class="author-tooltip-name">Don Klinkenberg </div><div class="author-tooltip-affiliation"><span class="author-tooltip-text"><div class='author-affiliation'><span class='nlm-sup'>1</span><span class='nlm-institution'>Centre for Infectious Disease Control, National Institute for Public Health and the Environment</span>, Bilthoven, <span class='nlm-country'>the Netherlands</span></div></span></div><ul class="author-tooltip-find-more"><li class="author-tooltip-gs-link first"><a href="/lookup/google-scholar?link_type=googlescholar&amp;gs_type=author&amp;author%5B0%5D=Don%2BKlinkenberg%2B" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on Google Scholar</a></li><li class="author-tooltip-pubmed-link"><a href="/lookup/external-ref?access_num=Klinkenberg%20D&amp;link_type=AUTHORSEARCH" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on PubMed</a></li><li class="author-site-search-link"><a href="/search/author1%3ADon%2BKlinkenberg%2B" rel="nofollow" class="" data-icon-position="" data-hide-link-title="0">Search for this author on this site</a></li><li class="author-orcid-link last"><a href="http://orcid.org/0000-0002-9449-6873" target="_blank" class="" data-icon-position="" data-hide-link-title="0">ORCID record for Don Klinkenberg</a></li></ul></div><div class="author-tooltip-5"><div class="author-tooltip-name">Hester Korthals Altes </div><div class="author-tooltip-affiliation"><span class="author-tooltip-text"><div class='author-affiliation'><span class='nlm-sup'>1</span><span class='nlm-institution'>Centre for Infectious Disease Control, National Institute for Public Health and the Environment</span>, Bilthoven, <span class='nlm-country'>the Netherlands</span></div></span></div><ul class="author-tooltip-find-more"><li class="author-tooltip-gs-link first"><a href="/lookup/google-scholar?link_type=googlescholar&amp;gs_type=author&amp;author%5B0%5D=Hester%2BKorthals%2BAltes%2B" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on Google Scholar</a></li><li class="author-tooltip-pubmed-link"><a href="/lookup/external-ref?access_num=Altes%20HK&amp;link_type=AUTHORSEARCH" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on PubMed</a></li><li class="author-site-search-link"><a href="/search/author1%3AHester%2BKorthals%2BAltes%2B" rel="nofollow" class="" data-icon-position="" data-hide-link-title="0">Search for this author on this site</a></li><li class="author-orcid-link last"><a href="http://orcid.org/0000-0001-8274-1627" target="_blank" class="" data-icon-position="" data-hide-link-title="0">ORCID record for Hester Korthals Altes</a></li></ul></div><div class="author-tooltip-6"><div class="author-tooltip-name">Ka Yin Leung </div><div class="author-tooltip-affiliation"><span class="author-tooltip-text"><div class='author-affiliation'><span class='nlm-sup'>1</span><span class='nlm-institution'>Centre for Infectious Disease Control, National Institute for Public Health and the Environment</span>, Bilthoven, <span class='nlm-country'>the Netherlands</span></div></span></div><ul class="author-tooltip-find-more"><li class="author-tooltip-gs-link first"><a href="/lookup/google-scholar?link_type=googlescholar&amp;gs_type=author&amp;author%5B0%5D=Ka%2BYin%2BLeung%2B" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on Google Scholar</a></li><li class="author-tooltip-pubmed-link"><a href="/lookup/external-ref?access_num=Leung%20KY&amp;link_type=AUTHORSEARCH" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on PubMed</a></li><li class="author-site-search-link"><a href="/search/author1%3AKa%2BYin%2BLeung%2B" rel="nofollow" class="" data-icon-position="" data-hide-link-title="0">Search for this author on this site</a></li><li class="author-orcid-link last"><a href="http://orcid.org/0000-0002-7596-7641" target="_blank" class="" data-icon-position="" data-hide-link-title="0">ORCID record for Ka Yin Leung</a></li></ul></div><div class="author-tooltip-7"><div class="author-tooltip-name">Hester de Melker </div><div class="author-tooltip-affiliation"><span class="author-tooltip-text"><div class='author-affiliation'><span class='nlm-sup'>1</span><span class='nlm-institution'>Centre for Infectious Disease Control, National Institute for Public Health and the Environment</span>, Bilthoven, <span class='nlm-country'>the Netherlands</span></div></span></div><ul class="author-tooltip-find-more"><li class="author-tooltip-gs-link first"><a href="/lookup/google-scholar?link_type=googlescholar&amp;gs_type=author&amp;author%5B0%5D=Hester%2Bde%2BMelker%2B" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on Google Scholar</a></li><li class="author-tooltip-pubmed-link"><a href="/lookup/external-ref?access_num=de%20Melker%20H&amp;link_type=AUTHORSEARCH" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on PubMed</a></li><li class="author-site-search-link last"><a href="/search/author1%3AHester%2Bde%2BMelker%2B" rel="nofollow" class="" data-icon-position="" data-hide-link-title="0">Search for this author on this site</a></li></ul></div><div class="author-tooltip-8"><div class="author-tooltip-name">Fuminari Miura </div><div class="author-tooltip-affiliation"><span class="author-tooltip-text"><div class='author-affiliation'><span class='nlm-sup'>1</span><span class='nlm-institution'>Centre for Infectious Disease Control, National Institute for Public Health and the Environment</span>, Bilthoven, <span class='nlm-country'>the Netherlands</span></div><div class='author-affiliation'><span class='nlm-sup'>4</span><span class='nlm-institution'>Center for Marine Environmental Studies (CMES), Ehime University</span>, Ehime, <span class='nlm-country'>Japan</span></div></span></div><ul class="author-tooltip-find-more"><li class="author-tooltip-gs-link first"><a href="/lookup/google-scholar?link_type=googlescholar&amp;gs_type=author&amp;author%5B0%5D=Fuminari%2BMiura%2B" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on Google Scholar</a></li><li class="author-tooltip-pubmed-link"><a href="/lookup/external-ref?access_num=Miura%20F&amp;link_type=AUTHORSEARCH" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on PubMed</a></li><li class="author-site-search-link"><a href="/search/author1%3AFuminari%2BMiura%2B" rel="nofollow" class="" data-icon-position="" data-hide-link-title="0">Search for this author on this site</a></li><li class="author-orcid-link last"><a href="http://orcid.org/0000-0001-8235-757X" target="_blank" class="" data-icon-position="" data-hide-link-title="0">ORCID record for Fuminari Miura</a></li></ul></div><div class="author-tooltip-9"><div class="author-tooltip-name">Jacco Wallinga </div><div class="author-tooltip-affiliation"><span class="author-tooltip-text"><div class='author-affiliation'><span class='nlm-sup'>1</span><span class='nlm-institution'>Centre for Infectious Disease Control, National Institute for Public Health and the Environment</span>, Bilthoven, <span class='nlm-country'>the Netherlands</span></div><div class='author-affiliation'><span class='nlm-sup'>5</span><span class='nlm-institution'>Department of Biomedical Data Sciences, Leiden University Medical Center</span>, Leiden, <span class='nlm-country'>the Netherlands</span></div></span></div><ul class="author-tooltip-find-more"><li class="author-tooltip-gs-link first"><a href="/lookup/google-scholar?link_type=googlescholar&amp;gs_type=author&amp;author%5B0%5D=Jacco%2BWallinga%2B" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on Google Scholar</a></li><li class="author-tooltip-pubmed-link"><a href="/lookup/external-ref?access_num=Wallinga%20J&amp;link_type=AUTHORSEARCH" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on PubMed</a></li><li class="author-site-search-link"><a href="/search/author1%3AJacco%2BWallinga%2B" rel="nofollow" class="" data-icon-position="" data-hide-link-title="0">Search for this author on this site</a></li><li class="author-orcid-link last"><a href="http://orcid.org/0000-0003-1725-5627" target="_blank" class="" data-icon-position="" data-hide-link-title="0">ORCID record for Jacco Wallinga</a></li></ul></div></div></div>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-highwire-panel-tabs pane-panels-ajax-tab-tabs" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="item-list"><ul class="tabs inline panels-ajax-tab"><li class="first"><a href="/content/10.1101/2021.10.21.21265318v1" class="panels-ajax-tab-tab" data-panel-name="biorxiv_tab_art" data-target-id="highwire_article_tabs" data-entity-context="node:426154" data-trigger="" data-url-enabled="1">Abstract</a><a href="/panels_ajax_tab/biorxiv_tab_art/node:426154/1" rel="nofollow" style="display:none" class="js-crawler-link"></a></li><li><a href="/content/10.1101/2021.10.21.21265318v1.full-text" class="panels-ajax-tab-tab" data-panel-name="article_tab_full_text" data-target-id="highwire_article_tabs" data-entity-context="node:426154" data-trigger="full-text" data-url-enabled="1">Full Text</a><a href="/panels_ajax_tab/article_tab_full_text/node:426154/1" rel="nofollow" style="display:none" class="js-crawler-link"></a></li><li><a href="/content/10.1101/2021.10.21.21265318v1.article-info" class="panels-ajax-tab-tab" data-panel-name="biorxiv_tab_info" data-target-id="highwire_article_tabs" data-entity-context="node:426154" data-trigger="article-info" data-url-enabled="1">Info/History</a><a href="/panels_ajax_tab/biorxiv_tab_info/node:426154/1" rel="nofollow" style="display:none" class="js-crawler-link"></a></li><li><a href="/content/10.1101/2021.10.21.21265318v1.article-metrics" class="panels-ajax-tab-tab" data-panel-name="article_tab_metrics" data-target-id="highwire_article_tabs" data-entity-context="node:426154" data-trigger="article-metrics" data-url-enabled="1">Metrics</a><a href="/panels_ajax_tab/article_tab_metrics/node:426154/1" rel="nofollow" style="display:none" class="js-crawler-link"></a></li><li><a href="/content/10.1101/2021.10.21.21265318v1.external-links" class="panels-ajax-tab-tab" data-panel-name="article_tab_data_code" data-target-id="highwire_article_tabs" data-entity-context="node:426154" data-trigger="external-links" data-url-enabled="1">Data/Code</a><a href="/panels_ajax_tab/article_tab_data_code/node:426154/1" rel="nofollow" style="display:none" class="js-crawler-link"></a></li><li class="last"><a href="/content/10.1101/2021.10.21.21265318v1.full.pdf+html" class="panels-ajax-tab-tab" data-panel-name="biorxiv_tab_pdf" data-target-id="highwire_article_tabs" data-entity-context="node:426154" data-trigger="full.pdf+html" data-url-enabled="1"><i class="icon-file-alt"></i> Preview PDF</a><a href="/panels_ajax_tab/biorxiv_tab_pdf/node:426154/1" rel="nofollow" style="display:none" class="js-crawler-link"></a></li></ul></div>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-highwire-panel-tabs-container" >
+  
+      
+  
+  <div class="pane-content">
+    <div data-panels-ajax-tab-preloaded="biorxiv_tab_art" id="panels-ajax-tab-container-highwire_article_tabs" class="panels-ajax-tab-container"><div class="panels-ajax-tab-loading" style ="display:none"><img class="loading" src="https://www.medrxiv.org/sites/all/modules/contrib/panels_ajax_tab/images/loading.gif" alt="Loading" title="Loading" /></div><div class="panels-ajax-tab-wrap-biorxiv_tab_art"><div class="panel-display panel-1col clearfix" >
+  <div class="panel-panel panel-col">
+    <div><div class="panel-pane pane-highwire-markup" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="highwire-markup"><div xmlns="http://www.w3.org/1999/xhtml" data-highwire-cite-ref-tooltip-instance="highwire_reflinks_tooltip" class="content-block-markup" xmlns:xhtml="http://www.w3.org/1999/xhtml"><div class="article abstract-view "><span class="highwire-journal-article-marker-start"></span><div class="section abstract" id="abstract-1"><h2 class="">Abstract</h2><div id="sec-1" class="subsection"><p id="p-2"><strong>Introduction</strong> Despite the high COVID-19 vaccination coverage among adults, there is concern over a peak in SARS-CoV-2 infections in the coming months. To help ensure that healthcare systems are not overwhelmed in the event of a new wave of SARS-CoV-2 infections, many countries have extended vaccination to adolescents (those aged 12-17 years) and may consider further extending to children aged 5-11 years. However, there is considerable debate about whether or not to vaccinate healthy adolescents and children against SARS-CoV-2 because, while vaccination of children and adolescents may limit transmission from these groups to other, more vulnerable groups, adolescents and children themselves have limited risk of severe disease if infected and may experience adverse events from vaccination. To quantify the benefits of extending COVID-19 vaccination beyond adults we compare daily cases, hospital admissions, and intensive care (IC) admissions for vaccination in adults only, those 12 years and above, and those 5 years and above.</p></div><div id="sec-2" class="subsection"><p id="p-3"><strong>Methods and Findings</strong> We developed a deterministic, age-structured susceptible-exposed-infectious-recovered (SEIR) model to simulate disease outcomes (e.g., cases, hospital admissions, IC admissions) under different vaccination scenarios. The model is partitioned into 10-year age bands (0-9, 10-19, …, 70-79, 80+) and accounts for differences in susceptibility and infectiousness by age group, seasonality in transmission rate, modes of vaccine protection (e.g., infection, transmission), and vaccine characteristics (e.g., vaccine effectiveness). Model parameters are estimated by fitting the model piecewise to daily cases from the Dutch notification database Osiris from 01 January 2020 to 22 June 2021. Forward simulations are performed from 22 June 2021 to 31 March 2022. We performed sensitivity analyses in which vaccine-induced immunity waned.</p><p id="p-4">We found that upon relaxation of all non-pharmaceutical control measures a large wave occurred regardless of vaccination strategy. We found overall reductions of 5.7% (4.4%, 6.9%) of cases, 2.0% (0.7%, 3.2%) of hospital admissions, and 1.7% (0.6%, 2.8%) of IC admissions when those 12 years and above were vaccinated compared to vaccinating only adults. When those 5 years and above were vaccinated we observed reductions of 8.7% (7.5%, 9.9%) of cases, 3.2% (2.0%, 4.5%) of hospital admissions, and 2.4% (1.2%, 3.5%) of IC admissions compared to vaccination in adults only. Benefits of extending vaccination were larger within the age groups included in the vaccination program extension than in other age groups. The benefits of vaccinating adolescents and children were smaller if vaccine protection against infection, hospitalization, and transmission (once infected) wanes.</p></div><div id="sec-3" class="subsection"><p id="p-5"><strong>Discussion</strong> Our results highlight the benefits of extending COVID-19 vaccination programs beyond adults to reduce infections and severe outcomes in adolescents and children and in the wider population. A reduction of infections in school-aged children/adolescents may have the added benefit of reducing the need for school closures during a new wave. Additional control measures may be required in future to prevent a large wave despite vaccination program extensions. While the results presented here are based on population characteristics and the COVID-19 vaccination program in The Netherlands, they may provide valuable insights for other countries who are considering COVID-19 vaccination program extensions.</p></div></div><h3>Competing Interest Statement</h3><p id="p-6">The authors have declared no competing interest.</p><h3>Funding Statement</h3><p id="p-7">The study was financed by the Netherlands Ministry of Health, Welfare and Sport. This project has received funding from the European Union's Horizon 2020 research and innovation programme - project EpiPose (grant agreement number 101003688).</p><h3>Author Declarations</h3><p id="p-8">I confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.</p><p id="p-9">Yes</p><p id="p-10">The details of the IRB/oversight body that provided approval or exemption for the research described are given below:</p><p id="p-11">The source data used in this work is publicly available and can be obtained from: https://geodata.rivm.nl/covid-19/</p><p id="p-12">I confirm that all necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived, and that any patient/participant/sample identifiers included were not known to anyone (e.g., hospital staff, patients or participants themselves) outside the research group so cannot be used to identify individuals.</p><p id="p-13">Yes</p><p id="p-14">I understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).</p><p id="p-15">Yes</p><p id="p-16">I have followed all appropriate research reporting guidelines and uploaded the relevant EQUATOR Network research reporting checklist(s) and other pertinent material as supplementary files, if applicable.</p><p id="p-17">Yes</p><div class="section data-availability" id="sec-17"><h2 class="">Data Availability</h2><p id="p-75">All data and code produced are available online at: <a href="https://github.com/kylieainslie/vacamole">https://github.com/kylieainslie/vacamole</a></p></div><span class="highwire-journal-article-marker-end"></span></div><span class="related-urls"></span></div></div>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-biorxiv-copyright" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="field field-name-field-highwire-copyright field-type-text field-label-inline clearfix"><div class="field-label">Copyright&nbsp;</div><div class="field-items"><div class="field-item even">The copyright holder for this preprint is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity.<span class="license-type"> It is made available under a <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" class="" data-icon-position="" data-hide-link-title="0">CC-BY-NC-ND 4.0 International license</a>.</span></div></div></div>  </div>
+
+  
+  </div>
+</div>
+  </div>
+</div>
+</div></div>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-disqus-comment" >
+  
+      
+  
+  <div class="pane-content">
+    <div id="disqus_thread"><noscript><p><a href="http://medRxiv.disqus.com/?url=https%3A%2F%2Fwww.medrxiv.org%2Fcontent%2F10.1101%2F2021.10.21.21265318v1" class="" data-icon-position="" data-hide-link-title="0">View the discussion thread.</a></p></noscript></div>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-highwire-back-to-top" >
+  
+      
+  
+  <div class="pane-content">
+    <a href="#page" class="back-to-top" data-icon-position="" data-hide-link-title="0"><span class="icon-chevron-up"></span> Back to top</a>  </div>
+
+  
+  </div>
+</div>
+			</div>
+		</div>
+		
+		<div class="sidebar-right-wrapper grid-10 omega">
+			<div class="panel-panel panel-region-sidebar-right">
+			  <div class="inside"><div class="panel-pane pane-highwire-node-pager" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="pager highwire-pager pager-mini clearfix highwire-node-pager highwire-article-pager"><span class="pager-prev"><a href="/content/10.1101/2021.10.21.21265338v1" title="Predictors of treatment outcomes with Auto-titrating CPAP therapy in adults with Obstructive Sleep Apnea" rel="prev" class="pager-link-prev link-icon"><span class="icon-circle-arrow-left"></span> <span class="title">Previous</span></a></span><span class="pager-next"><a href="/content/10.1101/2021.10.21.21265339v1" title="Comparative Effectiveness of BNT162b2 versus Ad26.COV2.S for the Prevention of COVID-19 among Dialysis Patients" rel="next" class="pager-link-next link-icon-right link-icon"><span class="title">Next</span> <span class="icon-circle-arrow-right"></span></a></span></div>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-custom pane-1" >
+  
+      
+  
+  <div class="pane-content">
+    Posted&nbsp;October 25, 2021.  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-panels-mini pane-biorxiv-art-tools" >
+  
+      
+  
+  <div class="pane-content">
+    <div id="mini-panel-biorxiv_art_tools" class="highwire-2col-stacked panel-display">
+	  
+  <div class="panel-row-wrapper clearfix">
+		<div class="content-left-wrapper content-column">
+          <div class="panel-panel panel-region-content-left">
+            <div class="inside"><div class="panel-pane pane-highwire-variant-link" >
+  
+      
+  
+  <div class="pane-content">
+    <a href="/content/10.1101/2021.10.21.21265318v1.full.pdf" target="_self" class="article-dl-pdf-link link-icon"><span class="icon-external-link-sign"></span> <span class="title">Download PDF</span></a>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-highwire-variant-link" >
+  
+      
+  
+  <div class="pane-content">
+    <a href="/content/early/2021/10/25/2021.10.21.21265318.external-links" target="_self" class="link-icon"><span class="icon-file"></span> <span class="title">Data/Code</span></a>  </div>
+
+  
+  </div>
+</div>
+          </div>
+        </div>
+        
+        <div class="content-right-wrapper content-column">
+          <div class="panel-panel panel-region-content-right">
+            <div class="inside"><div class="panel-pane pane-minipanel-dialog-link pane-biorxiv-art-email" >
+  
+      
+  
+  <div class="pane-content">
+    <div class='minipanel-dialog-wrapper'><div class='minipanel-dialog-link-link'><a href="/" oncontextmenu="javascript: return false;" class="minipanel-dialog-link-trigger" title="Email this Article" data-icon-position="" data-hide-link-title="0"><i class = 'icon-envelope'></i> Email</a></div><div class='minipanel-dialog-link-mini' style='display:none'><div class="panel-display panel-1col clearfix" id="mini-panel-biorxiv_art_email">
+  <div class="panel-panel panel-col">
+    <div><div class="panel-pane pane-block pane-forward-form pane-forward" >
+  
+      
+  
+  <div class="pane-content">
+    <form action="/content/10.1101/2021.10.21.21265318v1" method="post" id="forward-form" accept-charset="UTF-8"><div><div id="edit-instructions" class="form-item form-item-label-before form-type-item">
+ <p>Thank you for your interest in spreading the word about medRxiv.</p><p>NOTE: Your email address is requested solely to identify you as the sender of this article.</p>
+</div>
+<div class="form-item form-item-label-before form-type-textfield form-item-email">
+  <label for="edit-email">Your Email <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" id="edit-email" name="email" value="" size="58" maxlength="256" class="form-text required" />
+</div>
+<div class="form-item form-item-label-before form-type-textfield form-item-name">
+  <label for="edit-name">Your Name <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" id="edit-name" name="name" value="" size="58" maxlength="256" class="form-text required" />
+</div>
+<div class="form-item form-item-label-before form-type-textarea form-item-recipients">
+  <label for="edit-recipients">Send To <span class="form-required" title="This field is required.">*</span></label>
+ <div class="form-textarea-wrapper resizable"><textarea id="edit-recipients" name="recipients" cols="50" rows="5" class="form-textarea required"></textarea></div>
+<div class="description">Enter multiple addresses on separate lines or separate them with commas.</div>
+</div>
+<div id="edit-page" class="form-item form-item-label-before form-type-item">
+  <label for="edit-page">You are going to email the following </label>
+ <a href="/content/10.1101/2021.10.21.21265318v1" class="active" data-icon-position="" data-hide-link-title="0">The impact of vaccinating adolescents and children on COVID-19 disease outcomes</a>
+</div>
+<div id="edit-subject" class="form-item form-item-label-before form-type-item">
+  <label for="edit-subject">Message Subject </label>
+ (Your Name) has forwarded a page to you from medRxiv
+</div>
+<div id="edit-body" class="form-item form-item-label-before form-type-item">
+  <label for="edit-body">Message Body </label>
+ (Your Name) thought you would like to see this page from the medRxiv website.
+</div>
+<div class="form-item form-item-label-before form-type-textarea form-item-message">
+  <label for="edit-message--2">Your Personal Message </label>
+ <div class="form-textarea-wrapper resizable"><textarea id="edit-message--2" name="message" cols="50" rows="10" class="form-textarea"></textarea></div>
+</div>
+<input type="hidden" name="path" value="node/426154" />
+<input type="hidden" name="path_cid" value="" />
+<input type="hidden" name="forward_footer" value=" " />
+<input type="hidden" name="form_build_id" value="form-uWUshjG8XmuDOVLZPVlRNXi-asCDaKSZmVkFmgtGSII" />
+<input type="hidden" name="form_id" value="forward_form" />
+<fieldset class="captcha form-wrapper"><legend><span class="fieldset-legend">CAPTCHA</span></legend><div class="fieldset-wrapper"><div class="fieldset-description">This question is for testing whether or not you are a human visitor and to prevent automated spam submissions.</div><input type="hidden" name="captcha_sid" value="157699940" />
+<input type="hidden" name="captcha_token" value="68ac7203a66c9ba8369958b9a500f7eb" />
+<input type="hidden" name="captcha_response" value="Google no captcha" />
+<div class="g-recaptcha" data-sitekey="6LfnJVIUAAAAAE-bUOMg0MJGki4lqSvDmhJp19fN" data-theme="light" data-type="image"></div></div></fieldset>
+<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Send Message" class="form-submit" /></div></div></form>  </div>
+
+  
+  </div>
+</div>
+  </div>
+</div>
+</div></div>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-highwire-share-link highwire_clipboard_link_ajax"  id="shareit">
+  
+      
+  
+  <div class="pane-content">
+    <a href="/" class="link-icon"><span class="icon-share-alt"></span> <span class="title">Share</span></a>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-panels-mini pane-biorxiv-share highwire_clipboard_form_ajax_shareit" >
+  
+      
+  
+  <div class="pane-content">
+    
+<div class="panel-display omega-12-onecol" id="mini-panel-biorxiv_share">
+
+		  <div class="panel-panel grid-12 panel-region-preface">
+		  <div class="inside"><div class="panel-pane pane-highwire-article-citation" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="highwire-article-citation highwire-citation-type-highwire-article node426154--3" data-node-nid="426154" id="node426154--4636897404" data-pisa="medrxiv;2021.10.21.21265318v1" data-pisa-master="medrxiv;2021.10.21.21265318" data-seqnum="426154" data-apath="/medrxiv/early/2021/10/25/2021.10.21.21265318.atom"><div  class="highwire-cite highwire-cite-highwire-article highwire-citation-biorxiv-article-pap-list clearfix" >
+
+      <div class="highwire-cite-title" >
+      <div class="highwire-cite-title">The impact of vaccinating adolescents and children on COVID-19 disease outcomes</div>    </div>
+  
+      <div  class="highwire-cite-authors" ><span  class="highwire-citation-authors"><span class="highwire-citation-author first" data-delta="0"><span class="nlm-given-names">Kylie E. C.</span> <span class="nlm-surname">Ainslie</span></span>, <span class="highwire-citation-author" data-delta="1"><span class="nlm-given-names">Jantien</span> <span class="nlm-surname">Backer</span></span>, <span class="highwire-citation-author" data-delta="2"><span class="nlm-given-names">Pieter</span> <span class="nlm-surname">de Boer</span></span>, <span class="highwire-citation-author" data-delta="3"><span class="nlm-given-names">Albert Jan</span> <span class="nlm-surname">van Hoek</span></span>, <span class="highwire-citation-author" data-delta="4"><span class="nlm-given-names">Don</span> <span class="nlm-surname">Klinkenberg</span></span>, <span class="highwire-citation-author" data-delta="5"><span class="nlm-given-names">Hester Korthals</span> <span class="nlm-surname">Altes</span></span>, <span class="highwire-citation-author" data-delta="6"><span class="nlm-given-names">Ka Yin</span> <span class="nlm-surname">Leung</span></span>, <span class="highwire-citation-author" data-delta="7"><span class="nlm-given-names">Hester</span> <span class="nlm-surname">de Melker</span></span>, <span class="highwire-citation-author" data-delta="8"><span class="nlm-given-names">Fuminari</span> <span class="nlm-surname">Miura</span></span>, <span class="highwire-citation-author" data-delta="9"><span class="nlm-given-names">Jacco</span> <span class="nlm-surname">Wallinga</span></span></span></div>
+  
+      <div  class="highwire-cite-metadata" ><span  class="highwire-cite-metadata-journal highwire-cite-metadata">medRxiv </span><span  class="highwire-cite-metadata-pages highwire-cite-metadata">2021.10.21.21265318; </span><span  class="highwire-cite-metadata-doi highwire-cite-metadata"><span class="doi_label">doi:</span> https://doi.org/10.1101/2021.10.21.21265318 </span></div>
+  
+  
+  </div>
+</div>  </div>
+
+  
+  </div>
+</div>
+	  </div>
+	
+  <div class="panel-panel grid-12 panel-region-content">
+  	<div class="inside"><div class="panel-pane pane-highwire-article-clipboard-copy" >
+  
+      
+  
+  <div class="pane-content">
+    <div class = "clipboard-copy">
+  <span class="label-url">
+    <label for="dynamic">Share This Article:</label>
+  </span>
+  <span class="input-text-url">
+    <input type="text" id="dynamic" value="https://www.medrxiv.org/content/10.1101/2021.10.21.21265318v1" size="50"/>
+  </span>
+  <span class="copy-button button">
+    <button id="copy-dynamic" class="clipboardjs-button" data-clipboard-target="#dynamic" data-clipboard-alert-style="tooltip" data-clipboard-alert-text="Copied!">Copy</button>
+  </span>
+</div>
+  </div>
+
+  
+  </div>
+</div>
+  </div>
+	
+		  <div class="panel-panel grid-12 panel-region-postscript">
+	    <div class="inside"><div class="panel-pane pane-service-links" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="service-links"><a href="http://digg.com/submit?phase=2&amp;url=https%3A//www.medrxiv.org/content/10.1101/2021.10.21.21265318v1&amp;title=The%20impact%20of%20vaccinating%20adolescents%20and%20children%20on%20COVID-19%20disease%20outcomes" id="digg" title="Digg this post on digg.com" class="service-links-digg" rel="nofollow" data-icon-position="" data-hide-link-title="0"><img src="https://www.medrxiv.org/sites/all/modules/highwire/highwire/images/digg.png" alt="Digg logo" /></a> <a href="http://reddit.com/submit?url=https%3A//www.medrxiv.org/content/10.1101/2021.10.21.21265318v1&amp;title=The%20impact%20of%20vaccinating%20adolescents%20and%20children%20on%20COVID-19%20disease%20outcomes" id="reddit" title="Submit this post on reddit.com" class="service-links-reddit" rel="nofollow" data-icon-position="" data-hide-link-title="0"><img src="https://www.medrxiv.org/sites/all/modules/highwire/highwire/images/reddit.png" alt="Reddit logo" /></a> <a href="http://twitter.com/share?url=https%3A//www.medrxiv.org/content/10.1101/2021.10.21.21265318v1&amp;text=The%20impact%20of%20vaccinating%20adolescents%20and%20children%20on%20COVID-19%20disease%20outcomes" id="twitter" title="Share this on Twitter" class="service-links-twitter" rel="nofollow" data-icon-position="" data-hide-link-title="0"><img src="https://www.medrxiv.org/sites/all/modules/highwire/highwire/images/twitter.png" alt="Twitter logo" /></a> <a href="http://www.citeulike.org/posturl?url=https%3A//www.medrxiv.org/content/10.1101/2021.10.21.21265318v1&amp;title=The%20impact%20of%20vaccinating%20adolescents%20and%20children%20on%20COVID-19%20disease%20outcomes" id="citeulike" title="Share on CiteULike" class="service-links-citeulike" rel="nofollow" data-icon-position="" data-hide-link-title="0"><img src="https://www.medrxiv.org/sites/all/modules/highwire/highwire/images/citeyoulike.png" alt="CiteULike logo" /></a> <a href="http://www.facebook.com/sharer.php?u=https%3A//www.medrxiv.org/content/10.1101/2021.10.21.21265318v1&amp;t=The%20impact%20of%20vaccinating%20adolescents%20and%20children%20on%20COVID-19%20disease%20outcomes" id="facebook" title="Share on Facebook" class="service-links-facebook" rel="nofollow" data-icon-position="" data-hide-link-title="0"><img src="https://www.medrxiv.org/sites/all/modules/highwire/highwire/images/fb-blue.png" alt="Facebook logo" /></a> <a href="http://www.google.com/bookmarks/mark?op=add&amp;bkmk=https%3A//www.medrxiv.org/content/10.1101/2021.10.21.21265318v1&amp;title=The%20impact%20of%20vaccinating%20adolescents%20and%20children%20on%20COVID-19%20disease%20outcomes" id="google" title="Bookmark this post on Google" class="service-links-google" rel="nofollow" data-icon-position="" data-hide-link-title="0"><img src="https://www.medrxiv.org/sites/all/modules/highwire/highwire/images/google-32.png" alt="Google logo" /></a> <a href="http://www.mendeley.com/import/?url=https%3A//www.medrxiv.org/content/10.1101/2021.10.21.21265318v1&amp;title=The%20impact%20of%20vaccinating%20adolescents%20and%20children%20on%20COVID-19%20disease%20outcomes" id="mendeley" title="Share on Mendeley" class="service-links-mendeley" rel="nofollow" data-icon-position="" data-hide-link-title="0"><img src="https://www.medrxiv.org/sites/all/modules/highwire/highwire/images/mendeley.png" alt="Mendeley logo" /></a></div>  </div>
+
+  
+  </div>
+</div>
+	  </div>
+	
+</div>
+  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-minipanel-dialog-link pane-biorxiv-cite-tool" >
+  
+      
+  
+  <div class="pane-content">
+    <div class='minipanel-dialog-wrapper'><div class='minipanel-dialog-link-link'><a href="/" oncontextmenu="javascript: return false;" class="minipanel-dialog-link-trigger link-icon" title="Citation Tools"><span class="icon-globe"></span> <span class="title">Citation Tools</span></a></div><div class='minipanel-dialog-link-mini' style='display:none'><div class="panel-display panel-1col clearfix" id="mini-panel-biorxiv_cite_tool">
+  <div class="panel-panel panel-col">
+    <div><div class="panel-pane pane-highwire-citation-export" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="highwire-citation-export">  
+  <div class="highwire-citation-info">
+      <div class="highwire-article-citation highwire-citation-type-highwire-article node426154--5" data-node-nid="426154" id="node426154--61589518515" data-pisa="medrxiv;2021.10.21.21265318v1" data-pisa-master="medrxiv;2021.10.21.21265318" data-seqnum="426154" data-apath="/medrxiv/early/2021/10/25/2021.10.21.21265318.atom"><div  class="highwire-cite highwire-cite-highwire-article highwire-citation-biorxiv-article-pap-list clearfix" >
+
+      <div class="highwire-cite-title" >
+      <div class="highwire-cite-title">The impact of vaccinating adolescents and children on COVID-19 disease outcomes</div>    </div>
+  
+      <div  class="highwire-cite-authors" ><span  class="highwire-citation-authors"><span class="highwire-citation-author first" data-delta="0"><span class="nlm-given-names">Kylie E. C.</span> <span class="nlm-surname">Ainslie</span></span>, <span class="highwire-citation-author" data-delta="1"><span class="nlm-given-names">Jantien</span> <span class="nlm-surname">Backer</span></span>, <span class="highwire-citation-author" data-delta="2"><span class="nlm-given-names">Pieter</span> <span class="nlm-surname">de Boer</span></span>, <span class="highwire-citation-author" data-delta="3"><span class="nlm-given-names">Albert Jan</span> <span class="nlm-surname">van Hoek</span></span>, <span class="highwire-citation-author" data-delta="4"><span class="nlm-given-names">Don</span> <span class="nlm-surname">Klinkenberg</span></span>, <span class="highwire-citation-author" data-delta="5"><span class="nlm-given-names">Hester Korthals</span> <span class="nlm-surname">Altes</span></span>, <span class="highwire-citation-author" data-delta="6"><span class="nlm-given-names">Ka Yin</span> <span class="nlm-surname">Leung</span></span>, <span class="highwire-citation-author" data-delta="7"><span class="nlm-given-names">Hester</span> <span class="nlm-surname">de Melker</span></span>, <span class="highwire-citation-author" data-delta="8"><span class="nlm-given-names">Fuminari</span> <span class="nlm-surname">Miura</span></span>, <span class="highwire-citation-author" data-delta="9"><span class="nlm-given-names">Jacco</span> <span class="nlm-surname">Wallinga</span></span></span></div>
+  
+      <div  class="highwire-cite-metadata" ><span  class="highwire-cite-metadata-journal highwire-cite-metadata">medRxiv </span><span  class="highwire-cite-metadata-pages highwire-cite-metadata">2021.10.21.21265318; </span><span  class="highwire-cite-metadata-doi highwire-cite-metadata"><span class="doi_label">doi:</span> https://doi.org/10.1101/2021.10.21.21265318 </span></div>
+  
+  
+  </div>
+</div>  </div>
+  <div class="highwire-citation-formats">
+  	      <h2>Citation Manager Formats</h2>
+        <div class="highwire-citation-formats-links">
+      <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.spage&amp;rft.epage&amp;rft.atitle=The%20impact%20of%20vaccinating%20adolescents%20and%20children%20on%20COVID-19%20disease%20outcomes&amp;rft.volume&amp;rft.issue&amp;rft.date=2021-01-01%2000%3A00%3A00&amp;rft.stitle&amp;rft.jtitle=medRxiv&amp;rft.au=Ainslie%2C+Kylie+E.+C.&amp;rft.au=Backer%2C+Jantien&amp;rft.au=de+Boer%2C+Pieter&amp;rft.au=van+Hoek%2C+Albert+Jan&amp;rft.au=Klinkenberg%2C+Don&amp;rft.au=Altes%2C+Hester+Korthals&amp;rft.au=Leung%2C+Ka+Yin&amp;rft.au=de+Melker%2C+Hester&amp;rft.au=Miura%2C+Fuminari&amp;rft.au=Wallinga%2C+Jacco"></span><ul class="hw-citation-links inline button button-alt button-grid clearfix"><li class="bibtext first"><a href="/highwire/citation/426154/bibtext" class="hw-download-citation-link" data-icon-position="" data-hide-link-title="0">BibTeX</a></li><li class="bookends"><a href="/highwire/citation/426154/bookends" class="hw-download-citation-link" data-icon-position="" data-hide-link-title="0">Bookends</a></li><li class="easybib"><a href="/highwire/citation/426154/easybib" class="hw-download-citation-link" data-icon-position="" data-hide-link-title="0">EasyBib</a></li><li class="endnote-tagged"><a href="/highwire/citation/426154/endnote-tagged" class="hw-download-citation-link" data-icon-position="" data-hide-link-title="0">EndNote (tagged)</a></li><li class="endnote-8-xml"><a href="/highwire/citation/426154/endnote-8-xml" class="hw-download-citation-link" data-icon-position="" data-hide-link-title="0">EndNote 8 (xml)</a></li><li class="medlars"><a href="/highwire/citation/426154/medlars" class="hw-download-citation-link" data-icon-position="" data-hide-link-title="0">Medlars</a></li><li class="mendeley"><a href="/highwire/citation/426154/mendeley" class="hw-download-citation-link" data-icon-position="" data-hide-link-title="0">Mendeley</a></li><li class="papers"><a href="/highwire/citation/426154/papers" class="hw-download-citation-link" data-icon-position="" data-hide-link-title="0">Papers</a></li><li class="refworks-tagged"><a href="/highwire/citation/426154/refworks-tagged" class="hw-download-citation-link" data-icon-position="" data-hide-link-title="0">RefWorks Tagged</a></li><li class="reference-manager"><a href="/highwire/citation/426154/reference-manager" class="hw-download-citation-link" data-icon-position="" data-hide-link-title="0">Ref Manager</a></li><li class="ris"><a href="/highwire/citation/426154/ris" class="hw-download-citation-link" data-icon-position="" data-hide-link-title="0">RIS</a></li><li class="zotero last"><a href="/highwire/citation/426154/zotero" class="hw-download-citation-link" data-icon-position="" data-hide-link-title="0">Zotero</a></li></ul>    </div>
+  </div>
+</div>
+  </div>
+
+  
+  </div>
+</div>
+  </div>
+</div>
+</div></div>  </div>
+
+  
+  </div>
+</div>
+          </div>
+        </div>
+	</div> <!-- /.panel-row-wrapper -->	
+	
+	</div>
+
+  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-service-links" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="service-links"><div class="item-list"><ul><li class="first"><a href="http://twitter.com/share?url=https%3A//www.medrxiv.org/content/10.1101/2021.10.21.21265318v1&amp;count=horizontal&amp;via=&amp;text=The%20impact%20of%20vaccinating%20adolescents%20and%20children%20on%20COVID-19%20disease%20outcomes&amp;counturl=https%3A//www.medrxiv.org/content/10.1101/2021.10.21.21265318v1" class="twitter-share-button service-links-twitter-widget" id="twitter_widget" title="Tweet This" rel="nofollow" data-icon-position="" data-hide-link-title="0"><span class="element-invisible">Tweet Widget</span></a></li><li><a href="http://www.facebook.com/plugins/like.php?href=https%3A//www.medrxiv.org/content/10.1101/2021.10.21.21265318v1&amp;layout=button_count&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;width=100&amp;height=21&amp;font=&amp;locale=" id="facebook_like" title="I Like it" class="service-links-facebook-like" rel="nofollow" data-icon-position="" data-hide-link-title="0"><span class="element-invisible">Facebook Like</span></a></li><li class="last"><a href="https://www.medrxiv.org/content/10.1101/2021.10.21.21265318v1" id="google_plus_one" title="Plus it" class="service-links-google-plus-one" rel="nofollow" data-icon-position="" data-hide-link-title="0"><span class="element-invisible">Google Plus One</span></a></li></ul></div></div>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-highwire-article-collections" >
+  
+        <h2 class="pane-title">Subject Area</h2>
+    
+  
+  <div class="pane-content">
+    <div class="highwire-list-wrapper highwire-article-collections"><div class="highwire-list"><ul class="highwire-article-collection-term-list"><li class="first last odd"><span class="highwire-article-collection-term"><a href="/collection/epidemiology" class="highlight" data-icon-position="" data-hide-link-title="0">Epidemiology<i class="icon-caret-right"></i>
+</a></span></li></ul></div></div>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-panels-mini pane-biorxiv-subject-collections block-style-col2" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="panel-flexible panels-flexible-8 clearfix" id="mini-panel-biorxiv_subject_collections">
+<div class="panel-flexible-inside panels-flexible-8-inside">
+<div class="panels-flexible-region panels-flexible-region-8-center panels-flexible-region-first panels-flexible-region-last">
+  <div class="inside panels-flexible-region-inside panels-flexible-region-8-center-inside panels-flexible-region-inside-first panels-flexible-region-inside-last">
+<div class="panel-pane pane-snippet" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="snippet biorxiv-subject-areas-table-title" id="biorxiv-subject-areas-table-title">
+  
+      
+  <div class="snippet-content">
+    <b>Subject Areas</b>  </div>
+
+</div>
+  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-snippet" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="snippet biorxiv-subject-areas-view-papers" id="biorxiv-subject-areas-view-papers">
+  
+      
+  <div class="snippet-content">
+    <a href="/content/early/recent"><strong>All Articles</strong></a>  </div>
+
+</div>
+  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-highwire-subject-collections" >
+  
+      
+  
+  <div class="pane-content">
+    <ul id="collection" class="collection highwire-list-expand"><li class="outer collection depth-2  child first"><div class = "data-wrapper"><a href="/collection/addiction-medicine" class="" data-icon-position="" data-hide-link-title="0">Addiction Medicine</a> <span class = "article-count">(111)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/allergy-and-immunology" class="" data-icon-position="" data-hide-link-title="0">Allergy and Immunology</a> <span class = "article-count">(299)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/anesthesia" class="" data-icon-position="" data-hide-link-title="0">Anesthesia</a> <span class = "article-count">(75)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/cardiovascular-medicine" class="" data-icon-position="" data-hide-link-title="0">Cardiovascular Medicine</a> <span class = "article-count">(665)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/dentistry-and-oral-medicine" class="" data-icon-position="" data-hide-link-title="0">Dentistry and Oral Medicine</a> <span class = "article-count">(121)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/dermatology" class="" data-icon-position="" data-hide-link-title="0">Dermatology</a> <span class = "article-count">(77)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/emergency-medicine" class="" data-icon-position="" data-hide-link-title="0">Emergency Medicine</a> <span class = "article-count">(216)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/endocrinology-including-diabetes-mellitus-and-metabolic-disease" class="" data-icon-position="" data-hide-link-title="0">Endocrinology (including Diabetes Mellitus and Metabolic Disease)</a> <span class = "article-count">(299)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/epidemiology" class="" data-icon-position="" data-hide-link-title="0">Epidemiology</a> <span class = "article-count">(7268)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/forensic-medicine" class="" data-icon-position="" data-hide-link-title="0">Forensic Medicine</a> <span class = "article-count">(4)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/gastroenterology" class="" data-icon-position="" data-hide-link-title="0">Gastroenterology</a> <span class = "article-count">(306)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/genetic-and-genomic-medicine" class="" data-icon-position="" data-hide-link-title="0">Genetic and Genomic Medicine</a> <span class = "article-count">(1295)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/geriatric-medicine" class="" data-icon-position="" data-hide-link-title="0">Geriatric Medicine</a> <span class = "article-count">(126)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/health-economics" class="" data-icon-position="" data-hide-link-title="0">Health Economics</a> <span class = "article-count">(308)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/health-informatics" class="" data-icon-position="" data-hide-link-title="0">Health Informatics</a> <span class = "article-count">(1004)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/health-policy" class="" data-icon-position="" data-hide-link-title="0">Health Policy</a> <span class = "article-count">(526)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/health-systems-and-quality-improvement" class="" data-icon-position="" data-hide-link-title="0">Health Systems and Quality Improvement</a> <span class = "article-count">(359)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/hematology" class="" data-icon-position="" data-hide-link-title="0">Hematology</a> <span class = "article-count">(151)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/hiv-aids" class="" data-icon-position="" data-hide-link-title="0">HIV/AIDS</a> <span class = "article-count">(287)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/infectious_diseases" class="" data-icon-position="" data-hide-link-title="0">Infectious Diseases (except HIV/AIDS)</a> <span class = "article-count">(8512)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/intensive-care-and-critical-care-medicine" class="" data-icon-position="" data-hide-link-title="0">Intensive Care and Critical Care Medicine</a> <span class = "article-count">(483)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/medical-education" class="" data-icon-position="" data-hide-link-title="0">Medical Education</a> <span class = "article-count">(160)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/medical-ethics" class="" data-icon-position="" data-hide-link-title="0">Medical Ethics</a> <span class = "article-count">(40)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/nephrology" class="" data-icon-position="" data-hide-link-title="0">Nephrology</a> <span class = "article-count">(153)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/neurology" class="" data-icon-position="" data-hide-link-title="0">Neurology</a> <span class = "article-count">(1239)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/nursing" class="" data-icon-position="" data-hide-link-title="0">Nursing</a> <span class = "article-count">(63)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/nutrition" class="" data-icon-position="" data-hide-link-title="0">Nutrition</a> <span class = "article-count">(200)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/obstetrics-and-gynecology" class="" data-icon-position="" data-hide-link-title="0">Obstetrics and Gynecology</a> <span class = "article-count">(255)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/occupational-and-environmental-health" class="" data-icon-position="" data-hide-link-title="0">Occupational and Environmental Health</a> <span class = "article-count">(368)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/oncology" class="" data-icon-position="" data-hide-link-title="0">Oncology</a> <span class = "article-count">(702)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/ophthalmology" class="" data-icon-position="" data-hide-link-title="0">Ophthalmology</a> <span class = "article-count">(217)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/orthopedics" class="" data-icon-position="" data-hide-link-title="0">Orthopedics</a> <span class = "article-count">(70)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/otolaryngology" class="" data-icon-position="" data-hide-link-title="0">Otolaryngology</a> <span class = "article-count">(139)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/pain-medicine" class="" data-icon-position="" data-hide-link-title="0">Pain Medicine</a> <span class = "article-count">(73)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/palliative-medicine" class="" data-icon-position="" data-hide-link-title="0">Palliative Medicine</a> <span class = "article-count">(30)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/pathology" class="" data-icon-position="" data-hide-link-title="0">Pathology</a> <span class = "article-count">(195)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/pediatrics" class="" data-icon-position="" data-hide-link-title="0">Pediatrics</a> <span class = "article-count">(410)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/pharmacology-and-therapeutics" class="" data-icon-position="" data-hide-link-title="0">Pharmacology and Therapeutics</a> <span class = "article-count">(195)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/primary-care-research" class="" data-icon-position="" data-hide-link-title="0">Primary Care Research</a> <span class = "article-count">(158)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/psychiatry-and-clinical-psychology" class="" data-icon-position="" data-hide-link-title="0">Psychiatry and Clinical Psychology</a> <span class = "article-count">(1369)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/public-and-global-health" class="" data-icon-position="" data-hide-link-title="0">Public and Global Health</a> <span class = "article-count">(3057)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/radiology-and-imaging" class="" data-icon-position="" data-hide-link-title="0">Radiology and Imaging</a> <span class = "article-count">(509)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/rehabilitation-medicine-and-physical-therapy" class="" data-icon-position="" data-hide-link-title="0">Rehabilitation Medicine and Physical Therapy</a> <span class = "article-count">(244)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/respiratory-medicine" class="" data-icon-position="" data-hide-link-title="0">Respiratory Medicine</a> <span class = "article-count">(415)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/rheumatology" class="" data-icon-position="" data-hide-link-title="0">Rheumatology</a> <span class = "article-count">(158)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/sexual-and-reproductive-health" class="" data-icon-position="" data-hide-link-title="0">Sexual and Reproductive Health</a> <span class = "article-count">(118)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/sports-medicine" class="" data-icon-position="" data-hide-link-title="0">Sports Medicine</a> <span class = "article-count">(115)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/surgery" class="" data-icon-position="" data-hide-link-title="0">Surgery</a> <span class = "article-count">(153)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/toxicology" class="" data-icon-position="" data-hide-link-title="0">Toxicology</a> <span class = "article-count">(32)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/transplantation" class="" data-icon-position="" data-hide-link-title="0">Transplantation</a> <span class = "article-count">(67)</span></div></li>
+<li class="outer collection depth-2  child last"><div class = "data-wrapper"><a href="/collection/urology" class="" data-icon-position="" data-hide-link-title="0">Urology</a> <span class = "article-count">(51)</span></div></li>
+</ul>  </div>
+
+  
+  </div>
+  </div>
+</div>
+</div>
+</div>
+  </div>
+
+  
+  </div>
+</div>
+			</div>
+		</div>
+	
+	</div> <!-- /.panel-row-wrapper -->	
+	
+	</div>
+
+    </div>
+  </div>
+</div>      </div>
+</div>  </div>
+</section>    
+  
+  </div>    <div class="region region-page-bottom" id="region-page-bottom">
+  <div class="region-inner region-page-bottom-inner">
+      </div>
+</div><script type="text/javascript" src="https://www.medrxiv.org/sites/default/files/advagg_js/js__Vh5BcRYb6VtLoN3uam6O4DIKltYUVMjVDWtakoysPq0__Wed8jsPTirEozek7dWSCS8970Cp7a9xKKgFk6FPuSVM__OWu9jWxbqz5eMqeTDc4xZhOzPlgoEqGh5PmxOqlf8ZY.js"></script>
+<script type="text/javascript" src="https://d33xdlntwy0kbs.cloudfront.net/cshl_custom_medrxiv.js"></script>
+<script type="text/javascript" src="https://www.medrxiv.org/sites/default/files/advagg_js/js__BmqjBnkz3MgYCAoc25s1lDRMEjLhC3mEPVonUFIHi08__Unwv5-ZIuHBfFwytsjEx1niBVJ7n1T4lPws7VrkHXM4__OWu9jWxbqz5eMqeTDc4xZhOzPlgoEqGh5PmxOqlf8ZY.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+function euCookieComplianceLoadScripts() {}
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var eu_cookie_compliance_cookie_name = "";
+//--><!]]>
+</script>
+  </body>
+</html>

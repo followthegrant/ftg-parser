@@ -13,7 +13,7 @@ setup(
     long_description_content_type="text/markdown",
     author="Simon Wörpel",
     author_email="simon.woerpel@medienrevolte.de",
-    url="https://gitlab.com/follow-the-grant/ftg-cli",
+    url="https://gitlab.com/follow-the-grant/followthegrant-parser",
     license="MIT",
     classifiers=[
         "Intended Audience :: Developers",
@@ -23,17 +23,22 @@ setup(
         "Programming Language :: Python :: 3.7",
     ],
     packages=find_packages(),
+    package_dir={"followthegrant": "ftg"},
     install_requires=[
-        "Click<8.0.0",
+        "Click",
         "alephclient",
         "countrytagger",
+        "dateparser",
         "fingerprints",
         "followthemoney",
         "followthemoney-store",
         "html2text",
         "pandas",
-        "pubmed_parser @ git+https://github.com/simonwoerpel/pubmed_parser.git@master",
+        "pubmed_parser @ git+https://github.com/simonwoerpel/pubmed_parser.git@master",  # noqa
+        "pyicu",
+        "pydantic",
         "spacy",
+        "pyyaml<6.0.0",
     ],
     entry_points={
         "console_scripts": ["ftg = ftg.cli:cli"],

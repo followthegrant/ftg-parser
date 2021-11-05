@@ -1,0 +1,474 @@
+<!DOCTYPE article
+PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with MathML3 v1.2 20190208//EN" "JATS-archivearticle1-mathml3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article" xml:lang="EN"><?properties open_access?><front><journal-meta><journal-id journal-id-type="nlm-ta">ACS Omega</journal-id><journal-id journal-id-type="iso-abbrev">ACS Omega</journal-id><journal-id journal-id-type="publisher-id">ao</journal-id><journal-id journal-id-type="coden">acsodf</journal-id><journal-title-group><journal-title>ACS Omega</journal-title></journal-title-group><issn pub-type="epub">2470-1343</issn><publisher><publisher-name>American Chemical Society</publisher-name></publisher></journal-meta><article-meta><article-id pub-id-type="pmid">31459752</article-id><article-id pub-id-type="pmc">6648391</article-id><article-id pub-id-type="doi">10.1021/acsomega.9b00619</article-id><article-categories><subj-group><subject>Article</subject></subj-group></article-categories><title-group><article-title>Optical Stability of 1,1&#x02032;-Binaphthyl Derivatives</article-title></title-group><contrib-group><contrib contrib-type="author" id="ath1"><name><surname>Tkachenko</surname><given-names>Nikolay
+V.</given-names></name></contrib><contrib contrib-type="author" corresp="yes" id="ath2"><name><surname>Scheiner</surname><given-names>Steve</given-names></name><xref rid="cor1" ref-type="other">*</xref></contrib><aff id="aff1">Department of Chemistry and
+Biochemistry, <institution>Utah State University</institution>, Logan, Utah 84322-0300, <country>United States</country></aff></contrib-group><author-notes><corresp id="cor1"><label>*</label>E-mail: <email>steve.scheiner@usu.edu</email>.</corresp></author-notes><pub-date pub-type="epub"><day>29</day><month>03</month><year>2019</year></pub-date><pub-date pub-type="collection"><day>31</day><month>03</month><year>2019</year></pub-date><volume>4</volume><issue>3</issue><fpage>6044</fpage><lpage>6049</lpage><history><date date-type="received"><day>05</day><month>03</month><year>2019</year></date><date date-type="accepted"><day>11</day><month>03</month><year>2019</year></date></history><permissions><copyright-statement>Copyright &#x000a9; 2019 American Chemical
+Society</copyright-statement><copyright-year>2019</copyright-year><copyright-holder>American Chemical
+Society</copyright-holder><license><license-p>This is an open access article published under an ACS AuthorChoice <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/page/policy/authorchoice_termsofuse.html">License</ext-link>, which permits copying and redistribution of the article or any adaptations for non-commercial purposes.</license-p></license></permissions><abstract><p content-type="toc-graphic"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ao-2019-00619c_0008" id="ab-tgr1"/></p><p>The racemization process of various
+1,1&#x02032;-binaphthyl derivatives
+is studied by quantum calculations. The preferred racemization pathway
+passes through a transition state belonging to the <italic>C<sub>i</sub></italic> symmetry group. The energy barrier for this process is
+independent of solvation, the electron-withdrawing/releasing power
+of substituents, or their ability to engage in H-bonds within the
+molecule. The primary factor is instead the substituent size. The
+barrier is thus reduced when the &#x02212;OH groups of 1,1&#x02032;-bi-2-naphthol
+are replaced by H. There is a drop in the barrier also when the substituents
+are moved from the 2,2&#x02032; positions to 6,6&#x02032;, where they
+will not come close to one another in the transition state. Upon removal
+of the peripheral aromatic rings of the binaphthyl system, the biphenyl
+system undergoes a facile racemization. It is concluded that the optimal
+means of improving optical stability of 1,1&#x02032;-binaphthyl systems
+is the substitution of large bulky groups in the 2,2&#x02032; positions.</p></abstract><custom-meta-group><custom-meta><meta-name>document-id-old-9</meta-name><meta-value>ao9b00619</meta-value></custom-meta><custom-meta><meta-name>document-id-new-14</meta-name><meta-value>ao-2019-00619c</meta-value></custom-meta><custom-meta><meta-name>ccc-price</meta-name><meta-value/></custom-meta></custom-meta-group></article-meta></front><body><sec id="sec1"><title>Introduction</title><p>Due to its high optical
+stability, molecules containing the 1,1&#x02032;-binaphthyl
+skeleton (<xref rid="fig1" ref-type="fig">Figure <xref rid="fig1" ref-type="fig">1</xref></xref>)
+have found wide applications in various enantioselective processes
+for several decades. In particular, 1,1&#x02032;-bi-2-naphthol (or
+BINOL) is widely used for asymmetric catalysis,<sup><xref ref-type="bibr" rid="ref1">1</xref>,<xref ref-type="bibr" rid="ref2">2</xref></sup> for
+chiral recognition processes,<sup><xref ref-type="bibr" rid="ref3">3</xref></sup> and as a
+progenitor of chiral binaphthyl polymers.<sup><xref ref-type="bibr" rid="ref4">4</xref></sup> Over the past half century, a huge number of effective methods have
+been developed to obtain optically pure BINOL isomers, including those
+utilizing chemical<sup><xref ref-type="bibr" rid="ref5">5</xref>&#x02212;<xref ref-type="bibr" rid="ref7">7</xref></sup> and enzymatic resolution of racemic BINOLs,<sup><xref ref-type="bibr" rid="ref8">8</xref>&#x02212;<xref ref-type="bibr" rid="ref10">10</xref></sup> as well as various catalytic procedures implementing Cu-,<sup><xref ref-type="bibr" rid="ref11">11</xref>&#x02212;<xref ref-type="bibr" rid="ref13">13</xref></sup> V-,<sup><xref ref-type="bibr" rid="ref14">14</xref>&#x02212;<xref ref-type="bibr" rid="ref16">16</xref></sup> Ru-,<sup><xref ref-type="bibr" rid="ref17">17</xref></sup> and Fe-based<sup><xref ref-type="bibr" rid="ref18">18</xref>,<xref ref-type="bibr" rid="ref19">19</xref></sup> catalysts for direct asymmetric oxidative coupling of 2-naphthols.</p><fig id="fig1" position="float"><label>Figure 1</label><caption><p>Structure
+of 1,1&#x02032;-binaphthyl, including atomic numbering.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ao-2019-00619c_0001" id="gr1" position="float"/></fig><p>The high optical stability of these molecules revolves
+around the
+high energy barrier for their racemization. However, despite the wide
+use of binaphthyl derivatives, the racemization process of these compounds
+has not been fully explored. There have been some computational efforts
+in this direction.<sup><xref ref-type="bibr" rid="ref20">20</xref>&#x02212;<xref ref-type="bibr" rid="ref26">26</xref></sup> In 1963, Cooke and Harris suggested two possible anti pathways of
+the racemization process of 1,1&#x02032;-binaphthyl derivatives.<sup><xref ref-type="bibr" rid="ref35">35</xref></sup> Later, Carter and Liljefors
+introduced two possible syn pathways.<sup><xref ref-type="bibr" rid="ref24">24</xref></sup> However, these racemization routes were investigated only via very
+approximate molecular mechanics and semiempirical methods. The computationally
+predicted value of the racemization barrier for the anti-<italic>C<sub>i</sub></italic> TS of 1,1&#x02032;-binaphthalene lies in the 18.3&#x02013;24.8
+kcal/mol interval, depending upon the level of theory. The most recent
+and accurate result (23.0 kcal/mol) was obtained using the B3LYP/6-31G(d,p)
+level of theory.<sup><xref ref-type="bibr" rid="ref22">22</xref></sup> Previous theoretical
+analyses agree that the anti-<italic>C<sub>i</sub></italic> pathway
+is preferred. Schleyer and co-workers made the assumption that the
+distortion of the aromatic rings makes the greatest contribution to
+the activation energy of the process,<sup><xref ref-type="bibr" rid="ref21">21</xref></sup> which was echoed later by Havlas et al.<sup><xref ref-type="bibr" rid="ref22">22</xref></sup> Experimental measurements of the optical stability of 1,1&#x02032;-binaphthyl<sup><xref ref-type="bibr" rid="ref22">22</xref>,<xref ref-type="bibr" rid="ref27">27</xref>&#x02212;<xref ref-type="bibr" rid="ref30">30</xref></sup> in different solvents suggest only slight sensitivity of the racemization
+energy barrier to the particular solvent, varying in the narrow range
+between 23.5 and 24.1 kcal/mol. For the &#x02212;OH-substituted 1,1&#x02032;-bi-2-naphthol,
+the activation free energy of the racemization process in naphthalene
+and diphenyl ether is a bit higher, at 37.2 and 37.8 kcal/mol, respectively.</p><p>There remain some interesting and fundamental question as to why
+this barrier is so high. Is this an electronic effect or is it related
+to the steric interactions during racemization? Are there present
+any noncovalent interactions that impede or facilitate the conversion
+from one optical isomer to another? What is the precise path of molecular
+arrangement that accompanies the racemization? What sorts of substituents
+might compromise the optical stability by lowering the barrier, or
+might add to it via raising the barrier even higher?</p><p>The current
+work describes a quantum chemical investigation of
+these questions. A thorough examination of the entire potential energy
+surface leads to the likely racemization pathway and elucidates the
+structure of the transition state along this reaction profile. Various
+substituents are added that allow identification of the components
+that contribute to the racemization barrier and suggest modifications
+of the molecular skeleton that would add to or subtract from the optical
+stability.</p></sec><sec id="sec2"><title>Methods</title><p>Full geometry optimizations were performed
+at various levels of
+theory. For 1,1&#x02032;-bi-2-naphthol geometry optimization and frequency
+calculations (harmonic approximation), three density functional theory
+(DFT) methods were used (PBE0,<sup><xref ref-type="bibr" rid="ref32">32</xref></sup> B3LYP,<sup><xref ref-type="bibr" rid="ref33">33</xref>&#x02212;<xref ref-type="bibr" rid="ref35">35</xref></sup> and TPSSh<sup><xref ref-type="bibr" rid="ref36">36</xref></sup>) with Pople augmented basis
+set 6-311+G*. For a more accurate accounting of electron correlation,
+the MP4/cc-pVDZ//B3LYP/6-311+G* level of theory was implemented. Transition
+state structures were identified using a synchronous transit-guided
+quasi-Newton method.<sup><xref ref-type="bibr" rid="ref31">31</xref></sup> Optimization of
+displaced geometry along the reaction coordinate ensured that each
+transition state truly refers to the racemization process. For investigating
+substituent effects, the B3LYP/6-311+G* level of theory was applied.
+All energies in this work are presented with the zero-point energy
+(ZPE) corrections included. (Coordinates of optimized geometries are
+contained in the Supporting Information (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acsomega.9b00619/suppl_file/ao9b00619_si_001.pdf">SI</ext-link>) as well as energetics without ZPE correction and free energies.)
+All calculations utilized the Gaussian-09<sup><xref ref-type="bibr" rid="ref37">37</xref></sup> and Gaussian-16<sup><xref ref-type="bibr" rid="ref38">38</xref></sup> programs. The ChemCraft
+1.8 program was used for structure visualization. Charge transfer
+between individual orbitals was measured by the natural bond orbital
+(NBO) protocol.<sup><xref ref-type="bibr" rid="ref39">39</xref>,<xref ref-type="bibr" rid="ref40">40</xref></sup> Atoms in molecules (AIM) procedures<sup><xref ref-type="bibr" rid="ref41">41</xref>,<xref ref-type="bibr" rid="ref42">42</xref></sup> as implemented in the MultiWFN code were used for the elucidation
+of bonding paths between atoms and for the quantification of the electron
+density at bond critical points.</p></sec><sec id="sec3"><title>Results and Discussion</title><p>To facilitate discussion of the results, the following notation
+is adopted. The peripheral six-membered rings are those not engaged
+in a covalent bond between the two naphthyl systems, containing C5&#x02013;C8
+and C5&#x02032;&#x02013;C8&#x02032; (<xref rid="fig1" ref-type="fig">Figure <xref rid="fig1" ref-type="fig">1</xref></xref>). When these two peripheral rings lie on
+the same side of the C1&#x02013;C1&#x02032; bond, as they do in <xref rid="fig1" ref-type="fig">Figure <xref rid="fig1" ref-type="fig">1</xref></xref>, this sort of geometry
+is designated as syn. A 180&#x000b0; rotation around the C1&#x02013;C1&#x02032;
+bond results in an antistructure. In addition to this general distinction,
+there is also the precise symmetry adopted by the transition state
+along the pathway. The four transition state geometries for the BINOL
+molecule are displayed in <xref rid="fig2" ref-type="fig">Figure <xref rid="fig2" ref-type="fig">2</xref></xref>, along with their designations, which include the
+TS point group. (The same notation was used in a previous study of
+binaphthyl racemization pathways.<sup><xref ref-type="bibr" rid="ref22">22</xref></sup>) It
+should be added that in some cases the presence of substituents will
+remove the strict symmetry described above, but this notation will
+be applied nonetheless for purposes of consistency.</p><fig id="fig2" position="float"><label>Figure 2</label><caption><p>Top and side views of
+racemization pathways of BINOL.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ao-2019-00619c_0002" id="gr2" position="float"/></fig><p>Given the freedom of rotation around the &#x02212;OH bonds
+of BINOL,
+the three most likely isomers of this molecule are illustrated in <xref rid="fig3" ref-type="fig">Figure <xref rid="fig3" ref-type="fig">3</xref></xref> for the (R)-enantiomer.<sup><xref ref-type="bibr" rid="ref43">43</xref></sup> One would anticipate that isomer <bold>A</bold> ought to be the most stable, containing as it does the possibility
+of two internal OH&#x000b7;&#x000b7;&#x000b7;O
+H-bonds. Indeed, calculations confirm <bold>A</bold> to be more stable
+than <bold>B</bold>, with its single such H-bond by 3.8, and <bold>C</bold> by 6.9 kcal/mol since the latter contains no such bond.
+Transformation between the isomers in <xref rid="fig3" ref-type="fig">Figure <xref rid="fig3" ref-type="fig">3</xref></xref> is facile. The energy barrier for <bold>B</bold> collapsing to <bold>A</bold> is only 1.7 kcal/mol, whereas
+there is no effective barrier for the transition from <bold>C</bold> to <bold>B</bold>.</p><fig id="fig3" position="float"><label>Figure 3</label><caption><p>Isomers of (<italic>R</italic>)-1,1&#x02032;-bi-2-naphthol.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ao-2019-00619c_0003" id="gr3" position="float"/></fig><p>Even though <bold>C</bold> is
+unlikely to exist in any large proportion,
+and the transition from <bold>B</bold> to <bold>A</bold> requires
+surmounting only a small barrier, in the interest of thoroughness,
+the barriers to racemization were calculated for all three isomers
+and are listed in <xref rid="tbl1" ref-type="other">Table <xref rid="tbl1" ref-type="other">1</xref></xref>. A first observation concerns the insensitivity of the data to the
+level of theory. The barrier to conversion of the <bold>A</bold> isomer
+through the anti-<italic>C<sub>i</sub></italic> transition state,
+for example, lies in the narrow range between 37.0 and 39.7 kcal/mol
+regardless of the DFT functional or the incorporation of electron
+correlation via any level of M&#x000f8;ller&#x02013;Plesset perturbation
+(MP<italic>n</italic>) theory.</p><table-wrap id="tbl1" position="float"><label>Table 1</label><caption><title>Transition State
+Energies (kcal/mol)
+of 1,1&#x02032;-Bis-2-naphthol<xref rid="t1fn1" ref-type="table-fn">a</xref></title></caption><table frame="hsides" rules="groups" border="0"><colgroup><col align="left"/><col align="left"/><col align="char" char="."/><col align="char" char="."/><col align="char" char="."/><col align="char" char="."/><col align="char" char="."/><col align="char" char="."/></colgroup><thead><tr><th style="border:none;" align="center">isomer</th><th style="border:none;" align="center">TS-type</th><th style="border:none;" align="center" char=".">B3LYP&#x000a0;6-311+G*</th><th style="border:none;" align="center" char=".">TPSSh&#x000a0;6-311+G*</th><th style="border:none;" align="center" char=".">PBE0&#x000a0;6-311+G*</th><th style="border:none;" align="center" char=".">MP2&#x000a0;cc-pVDZ</th><th style="border:none;" align="center" char=".">MP3&#x000a0;cc-pVDZ</th><th style="border:none;" align="center" char=".">MP4&#x000a0;cc-pVDZ</th></tr></thead><tbody><tr><td style="border:none;" align="left"><bold>A</bold></td><td style="border:none;" align="left">anti-<italic>C<sub>i</sub></italic></td><td style="border:none;" align="char" char=".">39.3</td><td style="border:none;" align="char" char=".">37.0</td><td style="border:none;" align="char" char=".">38.7</td><td style="border:none;" align="char" char=".">36.3</td><td style="border:none;" align="char" char=".">39.7</td><td style="border:none;" align="char" char=".">35.8</td></tr><tr><td style="border:none;" align="left">&#x000a0;</td><td style="border:none;" align="left">syn-<italic>C</italic><sub>2</sub></td><td style="border:none;" align="char" char=".">43.2</td><td style="border:none;" align="char" char=".">41.2</td><td style="border:none;" align="char" char=".">42.9</td><td style="border:none;" align="char" char=".">40.9</td><td style="border:none;" align="char" char=".">43.3</td><td style="border:none;" align="char" char=".">40.0</td></tr><tr><td style="border:none;" align="left"><bold>B</bold></td><td style="border:none;" align="left">syn-<italic>C</italic><sub>2</sub></td><td style="border:none;" align="char" char=".">42.2</td><td style="border:none;" align="char" char=".">43.0</td><td style="border:none;" align="char" char=".">44.0</td><td style="border:none;" align="char" char=".">40.3</td><td style="border:none;" align="char" char=".">42.7</td><td style="border:none;" align="char" char=".">39.5</td></tr><tr><td style="border:none;" align="left"><bold>C</bold></td><td style="border:none;" align="left">anti-<italic>C<sub>i</sub></italic></td><td style="border:none;" align="char" char=".">39.5</td><td style="border:none;" align="char" char=".">37.6</td><td style="border:none;" align="char" char=".">39.0</td><td style="border:none;" align="char" char=".">37.6</td><td style="border:none;" align="char" char=".">40.3</td><td style="border:none;" align="char" char=".">36.9</td></tr><tr><td style="border:none;" align="left">&#x000a0;</td><td style="border:none;" align="left">anti-<italic>C</italic><sub>2</sub></td><td style="border:none;" align="char" char=".">52.2</td><td style="border:none;" align="char" char=".">50.6</td><td style="border:none;" align="char" char=".">52.6</td><td style="border:none;" align="char" char=".">52.0</td><td style="border:none;" align="char" char=".">54.3</td><td style="border:none;" align="char" char=".">50.6</td></tr><tr><td style="border:none;" align="left">&#x000a0;</td><td style="border:none;" align="left">syn-<italic>C</italic><sub>2</sub></td><td style="border:none;" align="char" char=".">40.8</td><td style="border:none;" align="char" char=".">39.1</td><td style="border:none;" align="char" char=".">40.5</td><td style="border:none;" align="char" char=".">39.3</td><td style="border:none;" align="char" char=".">41.3</td><td style="border:none;" align="char" char=".">38.5</td></tr></tbody></table><table-wrap-foot><fn id="t1fn1"><label>a</label><p>All energies are indicated relative
+to the energy of the optimized geometry of the corresponding isomer,
+with geometries optimized at noted levels.</p></fn></table-wrap-foot></table-wrap><p>It may be noted that not all of the starting isomers
+pass through
+each of the four possible transition states. Isomer <bold>A</bold>, for example, pass through only the anti-<italic>C<sub>i</sub></italic> and syn-<italic>C</italic><sub>2</sub> transition states. However,
+in any case, the overall conclusion is that the preferred pathway
+lies through the anti-<italic>C<sub>i</sub></italic> structure, with
+a barrier of just under 40 kcal/mol. This finding conforms to an earlier
+hypothesis.<sup><xref ref-type="bibr" rid="ref22">22</xref></sup> It is noteworthy that energy
+barriers of each of the different isomers are roughly the same. One
+may presume that, given the low energy barrier separating <bold>B</bold> from <bold>A</bold>, the most likely racemization process of the
+former would take it through <bold>A</bold> and its anti-<italic>C<sub>i</sub></italic> transition state.</p><p>These energetics of the
+various conversion routes are presented
+graphically in <xref rid="fig4" ref-type="fig">Figure <xref rid="fig4" ref-type="fig">4</xref></xref>, in which the energies of the various pathways can be directly compared.
+The energy of the anti-<italic>C<sub>i</sub></italic> transition state
+for the <bold>A</bold> isomer lies lower by 7.1 kcal/mol as compared
+to that of the same symmetry transition state for the <bold>C</bold> structure. To probe the reasons for this energy advantage, both
+AIM and NBO were applied to the two structures. <xref rid="fig5" ref-type="fig">Figure <xref rid="fig5" ref-type="fig">5</xref></xref> indicates the position of a pair of bond
+paths connecting the OH proton with the C atom of the phenyl ring
+of <bold>A</bold>. These paths are replaced in <bold>C</bold> by a
+similar pair in which it is the hydroxyl O atom that connects with
+the phenyl C atom. The AIM analysis might term these interactions
+a OH&#x000b7;&#x000b7;&#x000b7;C H-bond and a O&#x000b7;&#x000b7;&#x000b7;C tetrel bond,
+respectively. The electron densities for the bond critical points
+in the <bold>A</bold> TS are equal to 0.0241 and 0.0195, which compared to 0.0217
+for both of the <bold>C</bold> bond paths are quite similar. The NBO
+analysis suggests a significant degree of charge transfer (with <italic>E</italic>(2)=1.97 kcal/mol) from a &#x003c0;(CC) bonding orbital of
+the phenyl ring to the &#x003c3;*(OH) bond in the <bold>A</bold> TS,
+indicative of a OH&#x000b7;&#x000b7;&#x000b7;&#x003c0; H-bond. For the <bold>C</bold> isomer, a charge transfer (<italic>E</italic>(2)=1.63 kcal/mol)
+occurs from the O lone pair to the &#x003c0;*(CC) of the phenyl ring,
+which is likely attributable to a tetrel bond. These results suggest
+that the difference in energy between the <bold>A</bold> and <bold>C</bold> transition states is not due to these intramolecular contacts
+but due to some other factors, as described below.</p><fig id="fig4" position="float"><label>Figure 4</label><caption><p>Energy diagram of BINOL
+isomers and transition states, calculated
+at the B3LYP/6-311+G* level.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ao-2019-00619c_0004" id="gr4" position="float"/></fig><fig id="fig5" position="float"><label>Figure 5</label><caption><p>AIM bond paths and bond critical points for anti-<italic>C<sub>i</sub></italic> transition states of isomers <bold>A</bold> and <bold>C</bold>.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ao-2019-00619c_0005" id="gr5" position="float"/></fig><p>It is important to consider the
+optical stability of BINOL not
+just in vacuo but also in a solvent environment. Accordingly, the
+energies of the two transition states of the <bold>A</bold> isomer
+were assessed in two different solvents. The dielectric constants
+of diphenyl ether and <italic>N</italic>,<italic>N</italic>-dimethylformamide
+are equal to 3.73 ad 37.22, respectively, thus representing a fairly
+wide range of this parameter. Within the context of the former solvent,
+the energies of the anti-<italic>C<sub>i</sub></italic> and syn-<italic>C</italic><sub>2</sub> transition states, relative to the optimized <bold>A</bold> isomer, are 39.6 and 43.3 kcal/mol, respectively, quite
+similar to the gas phase values of 39.3 and 43.2 kcal/mol. Increasing
+the dielectric constant to 37.2 also has a little effect, with activation
+barriers of 39.8 and 43.3 kcal/mol. The insensitivity of this quantity
+to solvation suggests that there is little differentiation between
+the equilibrium and transition state structures in terms of charge
+separation, adding to the argument that electronic effects are not
+a primary factor in the barrier to racemization.</p><sec id="sec3.1"><title>Substituents</title><p>To
+probe this issue more deeply, the next
+question arises with regard to the effect of the &#x02212;OH groups
+of the BINOL molecule upon its optical stability. By removing these
+groups, one can obtain a pure representation of the rotational profile
+of the basic 1,1&#x02032;-binaphthyl skeleton. Similarly, by replacing
+&#x02212;OH with a number of other groups, it would be possible to
+learn about how both electronic and steric effects might enter into
+the picture. As the calculations of BINOL at various levels described
+above have shown little sensitivity to the level of theory, the following
+results were extracted from application of B3LYP/6-311+G*, which nicely
+reproduces the data from more complete calculations.</p><p>The nature
+of the potential energy surface is such that the search for transition
+states is not always successful. It was only possible to identify
+such geometries for certain substituents for the anti-<italic>C</italic><sub>2</sub> structure, whereas none could be found for syn-<italic>C<sub>s</sub></italic>. However, even with the incomplete set of
+data presented in <xref rid="tbl2" ref-type="other">Table <xref rid="tbl2" ref-type="other">2</xref></xref>, it is nonetheless possible to extract key features of the sensitivity
+of the activation energy to the nature of the substituent. Considering
+the anti-<italic>C<sub>i</sub></italic> data in the first row of the
+table, the removal of the &#x02212;OH substituent, replacing it by
+H, drops the barrier to roughly half its value. On the other hand,
+all of the substituents are associated with barriers in the surprisingly
+narrow range of 36.5&#x02013;43.5 kcal/mol. There is little correlation
+between the barrier and electron-withdrawing or -releasing character
+of R. For example, the strongly electron-releasing &#x02212;NH<sub>2</sub> shows nearly the identical barrier as the electron-withdrawing
+&#x02212;NO<sub>2</sub>. It would appear, then, that the dominating
+characteristic is the size of the substituent. Previous theoretical
+results obtained for large substituents are consistent with this assumption
+(computed rotational barriers for 2,2&#x02032;-bis(diphenylphosphino)-1,1&#x02032;-binaphthyl
+and 2-amino-2&#x02032;-hydroxy-1,1&#x02032;-binaphthyl are 49.4<sup><xref ref-type="bibr" rid="ref44">44</xref></sup> and 40.4<sup><xref ref-type="bibr" rid="ref45">45</xref></sup> kcal/mol,
+respectively). The barrier for H is by far the lowest, whereas the
+highest barrier occurs for the bulky phenyl group. The relatively
+small size of the monatomic F leads to the lowest barrier (with the
+exception of H of course). Very similar trends are observed in the
+case of the syn-<italic>C</italic><sub>2</sub> transition states.
+Qualitatively, such behavior is consistent with the <italic>B</italic> parameter proposed by Schlosser.<sup><xref ref-type="bibr" rid="ref46">46</xref></sup> The
+main idea of this approach is to rank substituents as a function of
+steric congestion. Following this concept, one could predict the relative
+energy of rotational barrier for 2,2&#x02032; disubstituted 1,1&#x02032;-binaphthyls.</p><table-wrap id="tbl2" position="float"><label>Table 2</label><caption><title>Transition State Energies<xref rid="t2fn1" ref-type="table-fn">a</xref> (kcal/mol) of 2,2&#x02032; Disubstituted 1,1&#x02032;-Binaphthyls
+as Well as Experimental Data of Rotational Barrier</title></caption><table frame="hsides" rules="groups" border="0"><colgroup><col align="left"/><col align="left"/><col align="left"/><col align="left"/><col align="left"/><col align="left"/><col align="left"/><col align="left"/></colgroup><thead><tr><th style="border:none;" align="center">TS-type</th><th style="border:none;" align="center">&#x02013;H</th><th style="border:none;" align="center">&#x02013;OH (<bold>A</bold>)</th><th style="border:none;" align="center">&#x02013;NH<sub>2</sub></th><th style="border:none;" align="center">&#x02013;NO<sub>2</sub></th><th style="border:none;" align="center">&#x02013;F</th><th style="border:none;" align="center">&#x02013;CN</th><th style="border:none;" align="center">&#x02013;Ph</th></tr></thead><tbody><tr><td style="border:none;" align="left">anti-<italic>C<sub>i</sub></italic></td><td style="border:none;" align="left">19.5</td><td style="border:none;" align="left">39.3</td><td style="border:none;" align="left">42.2</td><td style="border:none;" align="left">41.1</td><td style="border:none;" align="left">36.5</td><td style="border:none;" align="left">40.9</td><td style="border:none;" align="left">43.5</td></tr><tr><td style="border:none;" align="left">anti-<italic>C</italic><sub>2</sub></td><td style="border:none;" align="left">26.0<xref rid="t2fn2" ref-type="table-fn">b</xref></td><td style="border:none;" align="left">&#x02013;<xref rid="t2fn3" ref-type="table-fn">c</xref></td><td style="border:none;" align="left">&#x02013;<xref rid="t2fn3" ref-type="table-fn">c</xref></td><td style="border:none;" align="left">&#x02013;<xref rid="t2fn3" ref-type="table-fn">c</xref></td><td style="border:none;" align="left">48.1</td><td style="border:none;" align="left">57.0</td><td style="border:none;" align="left">&#x02013;<xref rid="t2fn3" ref-type="table-fn">c</xref></td></tr><tr><td style="border:none;" align="left">syn-<italic>C</italic><sub>2</sub></td><td style="border:none;" align="left">27.9</td><td style="border:none;" align="left">43.2</td><td style="border:none;" align="left">44.4</td><td style="border:none;" align="left">44.7</td><td style="border:none;" align="left">38.4</td><td style="border:none;" align="left">41.8</td><td style="border:none;" align="left">43.9</td></tr><tr><td style="border:none;" align="left">exp.</td><td style="border:none;" align="left">23.5<sup><xref ref-type="bibr" rid="ref27">27</xref></sup></td><td style="border:none;" align="left">37.8<sup><xref ref-type="bibr" rid="ref22">22</xref></sup></td><td style="border:none;" align="left">42.5<sup><xref ref-type="bibr" rid="ref47">47</xref></sup></td><td style="border:none;" align="left">&#x02013;</td><td style="border:none;" align="left">&#x02013;</td><td style="border:none;" align="left">&#x02013;</td><td style="border:none;" align="left">&#x02013;</td></tr><tr><td style="border:none;" align="left"><italic>B</italic>&#x000a0;val.<sup><xref ref-type="bibr" rid="ref46">46</xref></sup></td><td style="border:none;" align="left">&#x02013;</td><td style="border:none;" align="left">&#x0003c;5.0</td><td style="border:none;" align="left">8.1</td><td style="border:none;" align="left">7.6</td><td style="border:none;" align="left">&#x0003c;5.0</td><td style="border:none;" align="left">&#x02013;</td><td style="border:none;" align="left">&#x02013;</td></tr></tbody></table><table-wrap-foot><fn id="t2fn1"><label>a</label><p>All energies
+are indicated relative
+to the energy of the optimized geometry of the corresponding isomer,
+with geometries optimized at the B3LYP/6-311+G* level.</p></fn><fn id="t2fn2"><label>b</label><p>Second-order stationary point.</p></fn><fn id="t2fn3"><label>c</label><p>Structure cannot be located at this
+level of theory.</p></fn></table-wrap-foot></table-wrap><p>By placing
+the substituent on the peripheral pair of rings, the
+ones that do not form covalent attachment between the two naphthyl
+systems, it is possible to examine electronic effects without the
+strong influence of steric factors. The effects of 6,6&#x02032; substitution
+upon the racemization barriers are reported in <xref rid="tbl3" ref-type="other">Table <xref rid="tbl3" ref-type="other">3</xref></xref>. Again, the identification of transition
+states for the syn-<italic>C</italic><sub>2</sub> geometry was difficult,
+leading to second-order stationary points. However, the data for the
+anti-<italic>C<sub>i</sub></italic> and syn-<italic>C</italic><sub>2</sub> are unambiguous. As above for the 2,2&#x02032; substitution,
+the barriers for R=H are the smallest, but by less of a margin,
+only by 5 kcal/mol or so. Within the other substituents, the sensitivity
+to either electron-withdrawing power or even substituent size has
+all but disappeared. The barrier for the bulky Ph group is in fact
+even slightly smaller than that for the other R. In fact, what small
+differences that do occur are due not to the electronic energies but
+rather to zero-point vibrations. When the latter are removed, and
+it is only the electronic energies that are considered, the activation
+energies are virtually identical, even including R=H. Placement
+of the F substituent pair into the 3,3&#x02032; and 7,7&#x02032; positions
+leads to data quite similar to values in <xref rid="tbl3" ref-type="other">Table <xref rid="tbl3" ref-type="other">3</xref></xref> for 6.6&#x02032;.</p><table-wrap id="tbl3" position="float"><label>Table 3</label><caption><title>Transition
+State Energies (kcal/mol)
+of 6,6&#x02032; Disubstituted 1,1&#x02032;-Binaphthyls<xref rid="t3fn1" ref-type="table-fn">a</xref></title></caption><table frame="hsides" rules="groups" border="0"><colgroup><col align="left"/><col align="char" char="."/><col align="char" char="."/><col align="char" char="."/><col align="char" char="."/><col align="left"/></colgroup><thead><tr><th style="border:none;" align="center">TS-type</th><th style="border:none;" align="center" char=".">&#x02013;H</th><th style="border:none;" align="center" char=".">&#x02013;NH<sub>2</sub></th><th style="border:none;" align="center" char=".">&#x02013;F</th><th style="border:none;" align="center" char=".">&#x02013;Br</th><th style="border:none;" align="center">&#x02013;Ph</th></tr></thead><tbody><tr><td style="border:none;" align="left">anti-<italic>C<sub>i</sub></italic></td><td style="border:none;" align="char" char=".">19.5</td><td style="border:none;" align="char" char=".">24.6</td><td style="border:none;" align="char" char=".">24.8</td><td style="border:none;" align="char" char=".">24.4</td><td style="border:none;" align="left">24.1</td></tr><tr><td style="border:none;" align="left">anti-<italic>C</italic><sub>2</sub></td><td style="border:none;" align="char" char=".">26.0<xref rid="t3fn2" ref-type="table-fn">b</xref></td><td style="border:none;" align="char" char=".">30.9<xref rid="t3fn2" ref-type="table-fn">b</xref></td><td style="border:none;" align="char" char=".">31.4<xref rid="t3fn2" ref-type="table-fn">b</xref></td><td style="border:none;" align="char" char=".">30.9<xref rid="t3fn2" ref-type="table-fn">b</xref></td><td style="border:none;" align="left">&#x02013;<xref rid="t3fn3" ref-type="table-fn">c</xref></td></tr><tr><td style="border:none;" align="left">syn-<italic>C</italic><sub>2</sub></td><td style="border:none;" align="char" char=".">27.9</td><td style="border:none;" align="char" char=".">33.2</td><td style="border:none;" align="char" char=".">33.3</td><td style="border:none;" align="char" char=".">32.8</td><td style="border:none;" align="left">32.5</td></tr></tbody></table><table-wrap-foot><fn id="t3fn1"><label>a</label><p>All energies are indicated relative
+to the energy of the optimized geometry of the corresponding isomer,
+with geometries optimized at the B3LYP/6-311+G* level.</p></fn><fn id="t3fn2"><label>b</label><p>Second-order stationary point.</p></fn><fn id="t3fn3"><label>c</label><p>Structure cannot be located at this
+level of theory.</p></fn></table-wrap-foot></table-wrap><p>Given what
+is apparently a dominating influence of steric repulsions
+on the racemization process, it is tempting to consider how this process
+would be affected if the peripheral rings were removed entirely, leaving
+only the 2,2&#x02032;-biphenyl system. As one interesting difference,
+the transition states to the racemization of the smaller bisphenol
+system contain a pair of completely flat rings. That is, the ring
+nonplanarity, that is characteristic of the binaphthyl transition
+states, vanishes along with the peripheral rings. Second, and perhaps
+more importantly, the barriers to racemization are dramatically lowered.
+The barriers drop from 19.5 and 39.3 kcal/mol for binaphthyl and 1,1&#x02032;-bi-2-naphthol,
+respectively, down to 2.4 and 11.2 kcal/mol for the corresponding
+biphenyl and 2,2&#x02032;-biphenol. The removal of the peripheral rings,
+and the steric hindrance that they bring, thus reduces the optical
+stability of this system.</p><p>Since the major deformation of the
+aromatic system occurs in the
+phenyl rings that are directly attached to one another, the dihedral
+angle &#x003b8;(1&#x02013;9&#x02013;4&#x02013;3), shown in <xref rid="fig6" ref-type="fig">Figure <xref rid="fig6" ref-type="fig">6</xref></xref>, was taken as a measure of
+this nonplanarity. This angle would be 0&#x000b0; for a completely planar
+system. The dihedral angle &#x003c6;(2&#x02013;1&#x02013;1&#x02032;&#x02013;2&#x02032;)
+characterizes the relative orientations of the two aromatic systems.</p><fig id="fig6" position="float"><label>Figure 6</label><caption><p>Dihedral
+angles &#x003b8;, shown by green dotted lines, and &#x003c6;
+representing the relative orientation of two aromatic systems.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ao-2019-00619c_0006" id="gr6" position="float"/></fig><p>The values of these angles are
+displayed in <xref rid="tbl4" ref-type="other">Table <xref rid="tbl4" ref-type="other">4</xref></xref> for the anti-<italic>C<sub>i</sub></italic> and syn-<italic>C</italic><sub>2</sub> transition state structures
+with various substituents. &#x003c6; is equal to 180&#x000b0; for the anti-<italic>C<sub>i</sub></italic> pathway for all cases except &#x02212;OH(2,2&#x02032;)
+and &#x02212;NH<sub>2</sub>(2,2&#x02032;) substituents. This approximately
+8&#x02013;9&#x000b0; deviation suggests some involvement of H-bonds. This
+same angle is equal to roughly 30&#x000b0; for most of the syn-<italic>C</italic><sub>2</sub> transition states, with the exception of the
+&#x02212;NO<sub>2</sub> and &#x02212;CN substituents, where it is closer
+to planar. An intriguing correlation is observed between the nonplanarity
+angle &#x003b8; and the transition state energy. As illustrated in <xref rid="fig7" ref-type="fig">Figure <xref rid="fig7" ref-type="fig">7</xref></xref>, the energy rises
+as nonplanarity is introduced into this aromatic system. There is
+one outlier, in that the &#x02212;Ph(2,2&#x02032;) substituent falls
+off this linear relationship (and excluded from the linear approximation
+sample), which is attributed to the close proximity of the two phenyl
+groups along the syn-<italic>C</italic><sub>2</sub> pathway, which
+is in turn accompanied by additional repulsive interactions.</p><fig id="fig7" position="float"><label>Figure 7</label><caption><p>Nonplanarity
+angle &#x003b8; vs relative electronic energies (without
+ZPE corrections) for anti-<italic>C<sub>i</sub></italic> isomers (<bold>A</bold>) and syn-<italic>C</italic><sub>2</sub> isomers (<bold>B</bold>).</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ao-2019-00619c_0007" id="gr7" position="float"/></fig><table-wrap id="tbl4" position="float"><label>Table 4</label><caption><title>&#x003b8; and &#x003c6;
+Dihedral Angles
+for Substituted 1,1&#x02032;-Binaphthyls</title></caption><table frame="hsides" rules="groups" border="0"><colgroup><col align="left"/><col align="left"/><col align="char" char="."/><col align="char" char="."/><col align="char" char="."/><col align="char" char="."/><col align="char" char="."/><col align="char" char="."/><col align="char" char="."/><col align="char" char="."/><col align="char" char="."/><col align="char" char="."/><col align="char" char="."/></colgroup><thead><tr><th style="border:none;" align="center">&#x000a0;</th><th style="border:none;" align="center">&#x000a0;</th><th colspan="7" align="center" char=".">2,2&#x02032;&#x000a0;substituents<hr/></th><th colspan="4" align="center" char=".">6,6&#x02032;&#x000a0;substituents<hr/></th></tr><tr><th style="border:none;" align="center">TS-type</th><th style="border:none;" align="center">angle</th><th style="border:none;" align="center" char=".">&#x02013;H</th><th style="border:none;" align="center" char=".">&#x02013;OH</th><th style="border:none;" align="center" char=".">&#x02013;NH<sub>2</sub></th><th style="border:none;" align="center" char=".">&#x02013;NO<sub>2</sub></th><th style="border:none;" align="center" char=".">&#x02013;F</th><th style="border:none;" align="center" char=".">&#x02013;CN</th><th style="border:none;" align="center" char=".">&#x02013;Ph</th><th style="border:none;" align="center" char=".">&#x02013;NH<sub>2</sub></th><th style="border:none;" align="center" char=".">&#x02013;F</th><th style="border:none;" align="center" char=".">&#x02013;Br</th><th style="border:none;" align="center" char=".">&#x02013;Ph</th></tr></thead><tbody><tr><td rowspan="2" style="border:none;" align="left">anti-<italic>C<sub>i</sub></italic></td><td style="border:none;" align="left">|&#x003b8;|</td><td style="border:none;" align="char" char=".">13.5</td><td style="border:none;" align="char" char=".">16.7</td><td style="border:none;" align="char" char=".">18.9</td><td style="border:none;" align="char" char=".">17.3</td><td style="border:none;" align="char" char=".">16.5</td><td style="border:none;" align="char" char=".">18.6</td><td style="border:none;" align="char" char=".">18.7</td><td style="border:none;" align="char" char=".">12.9</td><td style="border:none;" align="char" char=".">13.4</td><td style="border:none;" align="char" char=".">13.4</td><td style="border:none;" align="char" char=".">13.1</td></tr><tr><td style="border:none;" align="left">|&#x003c6;|</td><td style="border:none;" align="char" char=".">180.0</td><td style="border:none;" align="char" char=".">172.2</td><td style="border:none;" align="char" char=".">170.6</td><td style="border:none;" align="char" char=".">180.0</td><td style="border:none;" align="char" char=".">180.0</td><td style="border:none;" align="char" char=".">180.0</td><td style="border:none;" align="char" char=".">180.0</td><td style="border:none;" align="char" char=".">180.0</td><td style="border:none;" align="char" char=".">180.0</td><td style="border:none;" align="char" char=".">180.0</td><td style="border:none;" align="char" char=".">179.8</td></tr><tr><td rowspan="2" style="border:none;" align="left">syn-<italic>C</italic><sub>2</sub></td><td style="border:none;" align="left">|&#x003b8;|</td><td style="border:none;" align="char" char=".">13.6</td><td style="border:none;" align="char" char=".">18.0</td><td style="border:none;" align="char" char=".">19.4</td><td style="border:none;" align="char" char=".">17.8</td><td style="border:none;" align="char" char=".">16.2</td><td style="border:none;" align="char" char=".">17.5</td><td style="border:none;" align="char" char=".">14.7</td><td style="border:none;" align="char" char=".">13.0</td><td style="border:none;" align="char" char=".">13.5</td><td style="border:none;" align="char" char=".">13.4</td><td style="border:none;" align="char" char=".">13.4</td></tr><tr><td style="border:none;" align="left">|&#x003c6;|</td><td style="border:none;" align="char" char=".">27.0</td><td style="border:none;" align="char" char=".">25.6</td><td style="border:none;" align="char" char=".">30.3</td><td style="border:none;" align="char" char=".">10.2</td><td style="border:none;" align="char" char=".">25.0</td><td style="border:none;" align="char" char=".">2.6</td><td style="border:none;" align="char" char=".">28.2</td><td style="border:none;" align="char" char=".">26.6</td><td style="border:none;" align="char" char=".">27.1</td><td style="border:none;" align="char" char=".">27.1</td><td style="border:none;" align="char" char=".">26.9</td></tr></tbody></table></table-wrap></sec></sec><sec id="sec4"><title>Conclusions</title><p>The racemization of BINOL and its variations with a 1,1&#x02032;-binaphthyl
+skeleton passes through a preferred anti-<italic>C<sub>i</sub></italic> transition state. Replacement of H at the 2,2&#x02032; positions
+with any substituent, whether &#x02212;OH as in BINOL or any other
+group, raises the barriers to racemization up to about 40 kcal/mol,
+leading to the optical stability of this series of molecules. This
+barrier is insensitive to the electron-withdrawing power of the substituents
+but depends to some extent on their bulkiness. Placing the substituents
+in the 6,6&#x02032; positions, where there are less steric repulsions
+between them, reduces the racemization barrier to only about 25 kcal/mol.
+Removal of the peripheral rings of the naphthyl systems, leaving only
+a biphenyl skeleton, reduces the barrier still further to 11 kcal/mol
+or less. It would appear that 2,2&#x02032; substitution, especially
+of large bulky groups, offers the optimal means of improvements in
+optical stability of the 1,1&#x02032;-binaphthyl system.</p></sec></body><back><notes id="notes-1" notes-type="si"><title>Supporting Information Available</title><p>The Supporting Information
+is available free of charge on the <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org">ACS Publications website</ext-link> at DOI: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/abs/10.1021/acsomega.9b00619">10.1021/acsomega.9b00619</ext-link>.<list id="silist" list-type="simple"><list-item><p>Energies of transition
+states of 1,1&#x02032;-binaphthyl
+derivatives without ZPE correction; free energies of transition states
+of 1,1&#x02032;-binaphthyl derivatives at 298 K; Cartesian coordinates
+of optimized geometries; total energies, number of imaginary frequencies;
+and value of ZPE corrections for all structures discussed above (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acsomega.9b00619/suppl_file/ao9b00619_si_001.pdf">PDF</ext-link>)</p></list-item></list></p></notes><sec sec-type="supplementary-material"><title>Supplementary Material</title><supplementary-material content-type="local-data" id="sifile1"><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ao9b00619_si_001.pdf"><caption><p>ao9b00619_si_001.pdf</p></caption></media></supplementary-material></sec><notes notes-type="COI-statement" id="NOTES-d7e1538-autogenerated"><p>The authors declare no
+competing financial interest.</p></notes><ref-list><title>References</title><ref id="ref1"><mixed-citation publication-type="journal" id="cit1"><name><surname>Chen</surname><given-names>Y.</given-names></name>; <name><surname>Yekta</surname><given-names>S.</given-names></name>; <name><surname>Yudin</surname><given-names>A. K.</given-names></name>
+<article-title>Modified
+BINOL Ligands in Asymmetric
+Catalysis</article-title>. <source>Chem. Rev.</source>
+<year>2003</year>, <volume>103</volume>, <fpage>3155</fpage>&#x02013;<lpage>3211</lpage>. <pub-id pub-id-type="doi">10.1021/cr020025b</pub-id>.<pub-id pub-id-type="pmid">12914495</pub-id></mixed-citation></ref><ref id="ref2"><mixed-citation publication-type="journal" id="cit2"><name><surname>Brunel</surname><given-names>J. M.</given-names></name>
+<article-title>Update
+1 of: BINOL: A Versatile Chiral Reagent</article-title>. <source>Chem.
+Rev.</source>
+<year>2007</year>, <volume>107</volume>, <fpage>PR1</fpage>&#x02013;<lpage>PR45</lpage>. <pub-id pub-id-type="doi">10.1021/cr078004a</pub-id>.</mixed-citation></ref><ref id="ref3"><mixed-citation publication-type="journal" id="cit3"><name><surname>Pu</surname><given-names>L.</given-names></name>
+<article-title>1,1&#x02032;-Binaphthyl
+Dimers, Oligomers, and Polymers: Molecular Recognition, Asymmetric
+Catalysis, and New Materials</article-title>. <source>Chem. Rev.</source>
+<year>1998</year>, <volume>98</volume>, <fpage>2405</fpage>&#x02013;<lpage>2494</lpage>. <pub-id pub-id-type="doi">10.1021/cr970463w</pub-id>.<pub-id pub-id-type="pmid">11848968</pub-id></mixed-citation></ref><ref id="ref4"><mixed-citation publication-type="journal" id="cit4"><name><surname>Morgan</surname><given-names>B. J.</given-names></name>; <name><surname>Xie</surname><given-names>X.</given-names></name>; <name><surname>Phuan</surname><given-names>P.-W.</given-names></name>; <name><surname>Kozlowski</surname><given-names>M. C.</given-names></name>
+<article-title>Enantioselective Synthesis of Binaphthyl
+Polymers Using Chiral Asymmetric Phenolic Coupling Catalysts: Oxidative
+Coupling and Tandem Glaser/Oxidative Coupling</article-title>. <source>J. Org. Chem.</source>
+<year>2007</year>, <volume>72</volume>, <fpage>6171</fpage>&#x02013;<lpage>6182</lpage>. <pub-id pub-id-type="doi">10.1021/jo070636+</pub-id>.<pub-id pub-id-type="pmid">17629337</pub-id></mixed-citation></ref><ref id="ref5"><mixed-citation publication-type="journal" id="cit5"><name><surname>Brunel</surname><given-names>J. M.</given-names></name>; <name><surname>Buono</surname><given-names>G.</given-names></name>
+<article-title>A New and Efficient
+Method for the Resolution of 1,1&#x02032;-Binaphtha1ene-2,2&#x02032;-diol</article-title>. <source>J. Org. Chem.</source>
+<year>1993</year>, <volume>58</volume>, <fpage>7313</fpage>&#x02013;<lpage>7314</lpage>. <pub-id pub-id-type="doi">10.1021/jo00077a072</pub-id>.</mixed-citation></ref><ref id="ref6"><mixed-citation publication-type="journal" id="cit6"><name><surname>Fabbri</surname><given-names>D.</given-names></name>; <name><surname>Delogu</surname><given-names>G.</given-names></name>; <name><surname>De Lucchi</surname><given-names>O.</given-names></name>
+<article-title>A Widely Applicable
+Method of Resolution
+of Binaphthyls: Preparation of Enantiomerically Pure 1,1&#x02032;-Binaphthalene-2,2&#x02032;-diol,
+1,1&#x02032;-Binaphthalene-2,2&#x02032;-dithiol, 2&#x02032;-Mercapto-1,1&#x02032;-binaphthalen-2-ol,
+and 1,1&#x02032;-Binaphthalene-8,8&#x02032;-diol</article-title>. <source>J. Org. Chem.</source>
+<year>1995</year>, <volume>60</volume>, <fpage>6599</fpage>&#x02013;<lpage>6601</lpage>. <pub-id pub-id-type="doi">10.1021/jo00125a057</pub-id>.</mixed-citation></ref><ref id="ref7"><mixed-citation publication-type="journal" id="cit7"><name><surname>Wang</surname><given-names>M.</given-names></name>; <name><surname>Liu</surname><given-names>S. Z.</given-names></name>; <name><surname>Liu</surname><given-names>J.</given-names></name>; <name><surname>Hu</surname><given-names>B. F.</given-names></name>
+<article-title>Diastereoselective
+Synthesis of 1,1&#x02032;-Binaphthy-2,2&#x02032;-diol</article-title>. <source>J. Org. Chem.</source>
+<year>1995</year>, <volume>60</volume>, <fpage>7364</fpage>&#x02013;<lpage>7365</lpage>. <pub-id pub-id-type="doi">10.1021/jo00127a053</pub-id>.</mixed-citation></ref><ref id="ref8"><mixed-citation publication-type="journal" id="cit8"><name><surname>Wu</surname><given-names>S.-H.</given-names></name>; <name><surname>Zhang</surname><given-names>L.-Q.</given-names></name>; <name><surname>Chen</surname><given-names>C.-S.</given-names></name>; <name><surname>Girdaukas</surname><given-names>G.</given-names></name>; <name><surname>Sih</surname><given-names>C. J.</given-names></name>
+<article-title>Bifunctional Chiral Synthons via
+Biochemical Methods.:
+VII. Optically-Active 2,2&#x02032;-Dihydroxy-1,1&#x02032;-Binaphthyl</article-title>. <source>Tetrahedron Lett.</source>
+<year>1985</year>, <volume>26</volume>, <fpage>4323</fpage>&#x02013;<lpage>4326</lpage>. <pub-id pub-id-type="doi">10.1016/S0040-4039(00)98724-0</pub-id>.</mixed-citation></ref><ref id="ref9"><mixed-citation publication-type="journal" id="cit9"><name><surname>Kazlauskas</surname><given-names>R. J.</given-names></name>
+<article-title>Resolution
+of Binaphthols and Spirobiindanols Using Cholesterol Esterase</article-title>. <source>J. Am. Chem. Soc.</source>
+<year>1989</year>, <volume>111</volume>, <fpage>4953</fpage>&#x02013;<lpage>4959</lpage>. <pub-id pub-id-type="doi">10.1021/ja00195a059</pub-id>.</mixed-citation></ref><ref id="ref10"><mixed-citation publication-type="journal" id="cit10"><name><surname>Gialih</surname><given-names>L.</given-names></name>; <name><surname>Shih-Huang</surname><given-names>L.</given-names></name>; <name><surname>Show-Jane</surname><given-names>C.</given-names></name>; <name><surname>Fang-Chen</surname><given-names>W.</given-names></name>; <name><surname>Hwey-Lin</surname><given-names>S.</given-names></name>
+<article-title>&#x0201c;Triple Enantioselection&#x0201d; by an Enzyme-Catalyzed
+Transacylation Reaction</article-title>. <source>Tetrahedron Lett.</source>
+<year>1993</year>, <volume>34</volume>, <fpage>6057</fpage>&#x02013;<lpage>6058</lpage>. <pub-id pub-id-type="doi">10.1016/S0040-4039(00)61726-4</pub-id>.</mixed-citation></ref><ref id="ref11"><mixed-citation publication-type="journal" id="cit11"><name><surname>Hewgley</surname><given-names>J. B.</given-names></name>; <name><surname>Stahl</surname><given-names>S. S.</given-names></name>; <name><surname>Kozlowski</surname><given-names>M. C.</given-names></name>
+<article-title>Mechanistic
+Study of Asymmetric Oxidative
+Biaryl Coupling: Evidence for Self-Processing of the Copper Catalyst
+to Achieve Control of Oxidase vs Oxygenase Activity</article-title>. <source>J. Am. Chem. Soc.</source>
+<year>2008</year>, <volume>130</volume>, <fpage>12232</fpage>&#x02013;<lpage>12233</lpage>. <pub-id pub-id-type="doi">10.1021/ja804570b</pub-id>.<pub-id pub-id-type="pmid">18710234</pub-id></mixed-citation></ref><ref id="ref12"><mixed-citation publication-type="journal" id="cit12"><name><surname>Alamsetti</surname><given-names>S. K.</given-names></name>; <name><surname>Poonguzhali</surname><given-names>E.</given-names></name>; <name><surname>Ganapathy</surname><given-names>D.</given-names></name>; <name><surname>Sekar</surname><given-names>G.</given-names></name>
+<article-title>Enantioselective Oxidative
+Coupling of 2-Naphthol Derivatives by Copper-(R)-1,1&#x02032;-Binaphthyl-2,2&#x02032;-diamine-TEMPO
+Catalyst</article-title>. <source>Adv. Synth. Catal.</source>
+<year>2013</year>, <volume>355</volume>, <fpage>2803</fpage>&#x02013;<lpage>2808</lpage>. <pub-id pub-id-type="doi">10.1002/adsc.201300513</pub-id>.</mixed-citation></ref><ref id="ref13"><mixed-citation publication-type="journal" id="cit13"><name><surname>Gao</surname><given-names>J.</given-names></name>; <name><surname>Reibenspies</surname><given-names>J. H.</given-names></name>; <name><surname>Martell</surname><given-names>A. E.</given-names></name>
+<article-title>Structurally Defined Catalysts for
+Enantioselective Oxidative Coupling Reactions</article-title>. <source>Angew. Chem.</source>
+<year>2003</year>, <volume>115</volume>, <fpage>6190</fpage>&#x02013;<lpage>6194</lpage>. <pub-id pub-id-type="doi">10.1002/ange.200351978</pub-id>.</mixed-citation></ref><ref id="ref14"><mixed-citation publication-type="journal" id="cit14"><name><surname>Guo</surname><given-names>Q.-X.</given-names></name>; <name><surname>Wu</surname><given-names>Z.-J.</given-names></name>; <name><surname>Luo</surname><given-names>Z.-B.</given-names></name>; <name><surname>Liu</surname><given-names>Q.-Z.</given-names></name>; <name><surname>Ye</surname><given-names>J.-L.</given-names></name>; <name><surname>Luo</surname><given-names>S.-W.</given-names></name>; <name><surname>Cun</surname><given-names>L.-F.</given-names></name>; <name><surname>Gong</surname><given-names>L.-Z.</given-names></name>
+<article-title>Highly Enantioselective
+Oxidative Couplings of 2-Naphthols Catalyzed by Chiral Bimetallic
+Oxovanadium Complexes with Either Oxygen or Air as Oxidant</article-title>. <source>J. Am. Chem. Soc.</source>
+<year>2007</year>, <volume>129</volume>, <fpage>13927</fpage>&#x02013;<lpage>13938</lpage>. <pub-id pub-id-type="doi">10.1021/ja074322f</pub-id>.<pub-id pub-id-type="pmid">17956093</pub-id></mixed-citation></ref><ref id="ref15"><mixed-citation publication-type="journal" id="cit15"><name><surname>Luo</surname><given-names>Z.</given-names></name>; <name><surname>Liu</surname><given-names>Q.</given-names></name>; <name><surname>Gong</surname><given-names>L.</given-names></name>; <name><surname>Cui</surname><given-names>X.</given-names></name>; <name><surname>Mi</surname><given-names>A.</given-names></name>; <name><surname>Jiang</surname><given-names>Y.</given-names></name>
+<article-title>Novel Achiral
+Biphenol-Derived Diastereomeric Oxovanadium(IV) Complexes for Highly
+Enantioselective Oxidative Coupling of 2-Naphthols</article-title>. <source>Angew. Chem.</source>
+<year>2002</year>, <volume>114</volume>, <fpage>4714</fpage>&#x02013;<lpage>4717</lpage>. <pub-id pub-id-type="doi">10.1002/1521-3757(20021202)114:23&#x0003c;4714::AID-ANGE4714&#x0003e;3.0.CO;2-3</pub-id>.</mixed-citation></ref><ref id="ref16"><mixed-citation publication-type="journal" id="cit16"><name><surname>Somei</surname><given-names>H.</given-names></name>; <name><surname>Asano</surname><given-names>Y.</given-names></name>; <name><surname>Yoshida</surname><given-names>T.</given-names></name>; <name><surname>Takizawa</surname><given-names>S.</given-names></name>; <name><surname>Yamataka</surname><given-names>H.</given-names></name>; <name><surname>Sasai</surname><given-names>H.</given-names></name>
+<article-title>Dual Activation in
+a Homolytic Coupling Reaction Promoted by an Enantioselective
+Dinuclear Vanadium(IV) Catalyst</article-title>. <source>Tetrahedron
+Lett.</source>
+<year>2004</year>, <volume>45</volume>, <fpage>1841</fpage>&#x02013;<lpage>1844</lpage>. <pub-id pub-id-type="doi">10.1016/j.tetlet.2004.01.007</pub-id>.</mixed-citation></ref><ref id="ref17"><mixed-citation publication-type="journal" id="cit17"><name><surname>Irie</surname><given-names>R.</given-names></name>; <name><surname>Katsuki</surname><given-names>T.</given-names></name>
+<article-title>Selective Aerobic Oxidation
+of Hydroxy Compounds Catalyzed
+by Photoactivated Ruthenium-Salen Complexes (Selective Catalytic Aerobic
+Oxidation)</article-title>. <source>Chem. Rec.</source>
+<year>2004</year>, <volume>4</volume>, <fpage>96</fpage>&#x02013;<lpage>109</lpage>. <pub-id pub-id-type="doi">10.1002/tcr.20001</pub-id>.<pub-id pub-id-type="pmid">15073877</pub-id></mixed-citation></ref><ref id="ref18"><mixed-citation publication-type="journal" id="cit18"><name><surname>Egami</surname><given-names>H.</given-names></name>; <name><surname>Katsuki</surname><given-names>T.</given-names></name>
+<article-title>Iron-Catalyzed Asymmetric Aerobic Oxidation: Oxidative
+Coupling of 2-Naphthols</article-title>. <source>J. Am. Chem. Soc.</source>
+<year>2009</year>, <volume>131</volume>, <fpage>6082</fpage>&#x02013;<lpage>6083</lpage>. <pub-id pub-id-type="doi">10.1021/ja901391u</pub-id>.<pub-id pub-id-type="pmid">19361160</pub-id></mixed-citation></ref><ref id="ref19"><mixed-citation publication-type="journal" id="cit19"><name><surname>Tkachenko</surname><given-names>N. V.</given-names></name>; <name><surname>Lyakin</surname><given-names>O. Y.</given-names></name>; <name><surname>Samsonenko</surname><given-names>D. G.</given-names></name>; <name><surname>Talsi</surname><given-names>E. P.</given-names></name>; <name><surname>Bryliakov</surname><given-names>K. P.</given-names></name>
+<article-title>Highly
+Efficient Asymmetric Aerobic Oxidative Coupling of 2-Naphthols in
+the Presence of Bioinspired Iron Aminopyridine Complexes</article-title>. <source>Catal. Commun.</source>
+<year>2018</year>, <volume>104</volume>, <fpage>112</fpage>&#x02013;<lpage>117</lpage>. <pub-id pub-id-type="doi">10.1016/j.catcom.2017.10.025</pub-id>.</mixed-citation></ref><ref id="ref20"><mixed-citation publication-type="journal" id="cit20"><name><surname>Tsuzuki</surname><given-names>S.</given-names></name>; <name><surname>Tanabe</surname><given-names>K.</given-names></name>; <name><surname>Nagawa</surname><given-names>Y.</given-names></name>; <name><surname>Nakanishi</surname><given-names>H.</given-names></name>
+<article-title>Calculations
+of Internal Rotational Pathways of Peri Substituted Naphthalenes by
+Molecular Mechanics</article-title>. <source>J. Mol. Struct.</source>
+<year>1990</year>, <volume>216</volume>, <fpage>279</fpage>&#x02013;<lpage>295</lpage>. <pub-id pub-id-type="doi">10.1016/0022-2860(90)80335-H</pub-id>.</mixed-citation></ref><ref id="ref21"><mixed-citation publication-type="journal" id="cit21"><name><surname>Kranz</surname><given-names>M.</given-names></name>; <name><surname>Clark</surname><given-names>T.</given-names></name>; <name><surname>Schleyer</surname><given-names>P. v. R.</given-names></name>
+<article-title>Rotational
+Barriers of 1,1&#x02032;-Binaphthyls:
+A Computational Study</article-title>. <source>J. Org. Chem.</source>
+<year>1993</year>, <volume>58</volume>, <fpage>3317</fpage>&#x02013;<lpage>3325</lpage>. <pub-id pub-id-type="doi">10.1021/jo00064a018</pub-id>.</mixed-citation></ref><ref id="ref22"><mixed-citation publication-type="journal" id="cit22"><name><surname>Meca</surname><given-names>L.</given-names></name>; <name><surname>&#x00158;eha</surname><given-names>D.</given-names></name>; <name><surname>Havlas</surname><given-names>Z.</given-names></name>
+<article-title>Racemization Barriers
+of 1,1&#x02032;-Binaphthyl
+and 1,1&#x02032;-Binaphthalene-2,2&#x02032;-diol: A DFT Study</article-title>. <source>J. Org. Chem.</source>
+<year>2003</year>, <volume>68</volume>, <fpage>5677</fpage>&#x02013;<lpage>5680</lpage>. <pub-id pub-id-type="doi">10.1021/jo034344u</pub-id>.<pub-id pub-id-type="pmid">12839462</pub-id></mixed-citation></ref><ref id="ref23"><mixed-citation publication-type="journal" id="cit23"><name><surname>Gamba</surname><given-names>A.</given-names></name>; <name><surname>Rusconi</surname><given-names>E.</given-names></name>; <name><surname>Simonetta</surname><given-names>M.</given-names></name>
+<article-title>A Conformational
+Study of Phenyl-
+and Naphthyl-naphthalenes</article-title>. <source>Tetrahedron</source>
+<year>1970</year>, <volume>26</volume>, <fpage>871</fpage>&#x02013;<lpage>877</lpage>. <pub-id pub-id-type="doi">10.1016/S0040-4020(01)97885-8</pub-id>.</mixed-citation></ref><ref id="ref24"><mixed-citation publication-type="journal" id="cit24"><name><surname>Carter</surname><given-names>R. E.</given-names></name>; <name><surname>Liljefors</surname><given-names>T.</given-names></name>
+<article-title>A Theoretical
+Study of Configurational Inversion of
+1,1&#x02032;-Binaphthyl by Molecular Mechanics</article-title>. <source>Tetrahedron</source>
+<year>1976</year>, <volume>32</volume>, <fpage>2915</fpage>&#x02013;<lpage>2922</lpage>. <pub-id pub-id-type="doi">10.1016/0040-4020(76)80145-7</pub-id>.</mixed-citation></ref><ref id="ref25"><mixed-citation publication-type="journal" id="cit25"><name><surname>Liljefors</surname><given-names>T.</given-names></name>; <name><surname>Carter</surname><given-names>R. E.</given-names></name>
+<article-title>The configurational
+inversion of methyl-substituted
+1,1&#x02032;-binaphthyls as studied by molecular mechanics</article-title>. <source>Tetrahedron</source>
+<year>1978</year>, <volume>34</volume>, <fpage>1611</fpage>&#x02013;<lpage>1615</lpage>. <pub-id pub-id-type="doi">10.1016/0040-4020(78)80192-6</pub-id>.</mixed-citation></ref><ref id="ref26"><mixed-citation publication-type="journal" id="cit26"><name><surname>Leister</surname><given-names>D.</given-names></name>; <name><surname>Kao</surname><given-names>J.</given-names></name>
+<article-title>Theoretical Studies
+of Rotational Barriers in 1,1&#x02032;-Biisoquinoline,
+2,2&#x02032;-Biquinoline and Substituted Styrenes, Alkenyl-Naphthalenes,
+and Alkyl-Binaphthyls</article-title>. <source>J. Mol. Struct.: THEOCHEM</source>
+<year>1988</year>, <volume>168</volume>, <fpage>105</fpage>&#x02013;<lpage>118</lpage>. <pub-id pub-id-type="doi">10.1016/0166-1280(88)80345-2</pub-id>.</mixed-citation></ref><ref id="ref27"><mixed-citation publication-type="journal" id="cit27"><name><surname>Cooke</surname><given-names>A. S.</given-names></name>; <name><surname>Harris</surname><given-names>M. M.</given-names></name>
+<article-title>Ground-state strain
+and other factors influencing optical
+stability in the 1,1&#x02032;-binaphthyl series</article-title>. <source>J. Chem. Soc.</source>
+<year>1963</year>, <fpage>2365</fpage><pub-id pub-id-type="doi">10.1039/JR9630002365</pub-id>.</mixed-citation></ref><ref id="ref28"><mixed-citation publication-type="journal" id="cit28"><name><surname>Colter</surname><given-names>A. K.</given-names></name>; <name><surname>Clemens</surname><given-names>L. M.</given-names></name>
+<article-title>Solvent Effects in the Racemization of 1,1&#x02032;-Binaphthyl.
+A Note on the Influence of Internal Pressure on Reaction Rates</article-title>. <source>J. Phys. Chem.</source>
+<year>1964</year>, <volume>68</volume>, <fpage>651</fpage><pub-id pub-id-type="doi">10.1021/j100785a503</pub-id>.</mixed-citation></ref><ref id="ref29"><mixed-citation publication-type="journal" id="cit29"><name><surname>Kyba</surname><given-names>E. P.</given-names></name>; <name><surname>Gokel</surname><given-names>G. W.</given-names></name>; <name><surname>Jong</surname><given-names>F.</given-names></name>; <name><surname>Koga</surname><given-names>K.</given-names></name>; <name><surname>Sousa</surname><given-names>L. R.</given-names></name>; <name><surname>Siegel</surname><given-names>M. G.</given-names></name>; <name><surname>Kaplan</surname><given-names>L.</given-names></name>; <name><surname>Sogah</surname><given-names>D. Y.</given-names></name>; <name><surname>Cram</surname><given-names>D. J.</given-names></name>
+<article-title>Host-Guest
+Complexation. 7. The Binaphthyl Structural Unit in Host Compounds</article-title>. <source>J. Org. Chem.</source>
+<year>1977</year>, <volume>42</volume>, <fpage>4173</fpage><pub-id pub-id-type="doi">10.1021/jo00862a001</pub-id>.</mixed-citation></ref><ref id="ref30"><mixed-citation publication-type="journal" id="cit30"><name><surname>Cooke</surname><given-names>A. S.</given-names></name>; <name><surname>Harris</surname><given-names>M. M.</given-names></name>
+<article-title>Optical Activity
+in the 1,1&#x02032;-Binaphthyl Series.
+Energy Barriers to Racemisation of 8-Substituted 1,1&#x02032;-Binaphthyls</article-title>. <source>J. Chem. Soc. C</source>
+<year>1967</year>, <fpage>988</fpage>&#x02013;<lpage>992</lpage>. <pub-id pub-id-type="doi">10.1039/J39670000988</pub-id>.</mixed-citation></ref><ref id="ref31"><mixed-citation publication-type="journal" id="cit31"><name><surname>Peng</surname><given-names>C.</given-names></name>; <name><surname>Schlegel</surname><given-names>H. B.</given-names></name>
+<article-title>Combining Synchronous
+Transit and Quasi-Newton Methods
+for Finding Transition States</article-title>. <source>Isr. J. Chem.</source>
+<year>1993</year>, <volume>33</volume>, <fpage>449</fpage>&#x02013;<lpage>454</lpage>. <pub-id pub-id-type="doi">10.1002/ijch.199300051</pub-id>.</mixed-citation></ref><ref id="ref32"><mixed-citation publication-type="journal" id="cit32"><name><surname>Adamo</surname><given-names>C.</given-names></name>; <name><surname>Barone</surname><given-names>V.</given-names></name>
+<article-title>Toward Reliable Density Functional
+Methods Without
+Adjustable Parameters: The PBE0 Model</article-title>. <source>J. Chem.
+Phys.</source>
+<year>1999</year>, <volume>110</volume>, <fpage>6158</fpage>&#x02013;<lpage>6170</lpage>. <pub-id pub-id-type="doi">10.1063/1.478522</pub-id>.</mixed-citation></ref><ref id="ref33"><mixed-citation publication-type="book" id="cit33"><person-group person-group-type="allauthors"><name><surname>Parr</surname><given-names>R. G.</given-names></name>; <name><surname>Yang</surname><given-names>W.</given-names></name></person-group><source>Density-Functional Theory
+of Atoms and Molecules</source>; <publisher-name>Oxford University
+Press</publisher-name>: <publisher-loc>Oxford</publisher-loc>, <year>1989</year>.</mixed-citation></ref><ref id="ref34"><mixed-citation publication-type="journal" id="cit34"><name><surname>Becke</surname><given-names>A. D.</given-names></name>
+<article-title>Density-Functional
+Thermochemistry. III. The Role of Exact Exchange</article-title>. <source>J. Chem. Phys.</source>
+<year>1993</year>, <volume>98</volume>, <fpage>5648</fpage><pub-id pub-id-type="doi">10.1063/1.464913</pub-id>.</mixed-citation></ref><ref id="ref35"><mixed-citation publication-type="journal" id="cit35"><name><surname>Perdew</surname><given-names>J. P.</given-names></name>; <name><surname>Chevary</surname><given-names>J. A.</given-names></name>; <name><surname>Vosko</surname><given-names>S. H.</given-names></name>; <name><surname>Jackson</surname><given-names>K. A.</given-names></name>; <name><surname>Pederson</surname><given-names>M. R.</given-names></name>; <name><surname>Singh</surname><given-names>D. J.</given-names></name>; <name><surname>Fiolhais</surname><given-names>C.</given-names></name>
+<article-title>Atoms, Molecules,
+Solids, and Surfaces:
+Applications of the Generalized Gradient Approximation for Exchange
+and Correlation</article-title>. <source>Phys. Rev. B</source>
+<year>1992</year>, <volume>46</volume>, <fpage>6671</fpage><pub-id pub-id-type="doi">10.1103/PhysRevB.46.6671</pub-id>.</mixed-citation></ref><ref id="ref36"><mixed-citation publication-type="journal" id="cit36"><name><surname>Perdew</surname><given-names>J. P.</given-names></name>; <name><surname>Tao</surname><given-names>J.</given-names></name>; <name><surname>Staroverov</surname><given-names>V. N.</given-names></name>; <name><surname>Scuseria</surname><given-names>G. E. J.</given-names></name>
+<article-title>Meta-Generalized
+Gradient Approximation: Explanation of a Realistic Nonempirical Density
+Functional</article-title>. <source>J. Chem. Phys.</source>
+<year>2004</year>, <volume>120</volume>, <fpage>6898</fpage>&#x02013;<lpage>6911</lpage>. <pub-id pub-id-type="doi">10.1063/1.1665298</pub-id>.<pub-id pub-id-type="pmid">15267588</pub-id></mixed-citation></ref><ref id="ref37"><mixed-citation publication-type="computer-program" id="cit37"><person-group person-group-type="allauthors"><name><surname>Frisch</surname><given-names>M. J.</given-names></name></person-group><etal/><source>Gaussian
+09</source>, revision D.01; <publisher-name>Gaussian, Inc.</publisher-name>, <year>2009</year>.</mixed-citation></ref><ref id="ref38"><mixed-citation publication-type="computer-program" id="cit38"><person-group person-group-type="allauthors"><name><surname>Frisch</surname><given-names>M. J.</given-names></name></person-group><etal/><source>Gaussian
+16</source>, revision B.01; <publisher-name>Gaussian, Inc.</publisher-name>, <year>2016</year>.</mixed-citation></ref><ref id="ref39"><mixed-citation publication-type="journal" id="cit39"><name><surname>Foster</surname><given-names>J.
+P.</given-names></name>; <name><surname>Weinhold</surname><given-names>F.</given-names></name>
+<article-title>Natural Hybrid
+Orbitals</article-title>. <source>J. Am.
+Chem. Soc.</source>
+<year>1980</year>, <volume>102</volume>, <fpage>7211</fpage>&#x02013;<lpage>7218</lpage>. <pub-id pub-id-type="doi">10.1021/ja00544a007</pub-id>.</mixed-citation></ref><ref id="ref40"><mixed-citation publication-type="journal" id="cit40"><name><surname>Reed</surname><given-names>A. E.</given-names></name>; <name><surname>Curtiss</surname><given-names>L. A.</given-names></name>; <name><surname>Weinhold</surname><given-names>F.</given-names></name>
+<article-title>Intermolecular
+Interactions from
+a Natural Bond Orbital, Donor&#x02014;Acceptor Viewpoint</article-title>. <source>Chem. Rev.</source>
+<year>1988</year>, <volume>88</volume>, <fpage>899</fpage>&#x02013;<lpage>926</lpage>. <pub-id pub-id-type="doi">10.1021/cr00088a005</pub-id>.</mixed-citation></ref><ref id="ref41"><mixed-citation publication-type="book" id="cit41"><person-group person-group-type="allauthors"><name><surname>Bader</surname><given-names>R. F. W.</given-names></name></person-group><source>Atoms in Molecules,
+A Quantum Theory</source>; <publisher-name>Clarendon Press</publisher-name>: <publisher-loc>Oxford, U.K.</publisher-loc>, <year>1990</year>;
+Vol. <volume>22</volume>, p <fpage>438</fpage>.</mixed-citation></ref><ref id="ref42"><mixed-citation publication-type="journal" id="cit42"><name><surname>Carroll</surname><given-names>M. T.</given-names></name>; <name><surname>Bader</surname><given-names>R. F. W.</given-names></name>
+<article-title>An Analysis of the Hydrogen Bond in Base-HF Complexes
+Using the Theory of Atoms in Molecules</article-title>. <source>Mol.
+Phys.</source>
+<year>1988</year>, <volume>65</volume>, <fpage>695</fpage>&#x02013;<lpage>722</lpage>. <pub-id pub-id-type="doi">10.1080/00268978800101351</pub-id>.</mixed-citation></ref><ref id="ref43"><mixed-citation publication-type="journal" id="cit43"><name><surname>Sahnoun</surname><given-names>R.</given-names></name>; <name><surname>Koseki</surname><given-names>S.</given-names></name>; <name><surname>Fujimura</surname><given-names>Y.</given-names></name>
+<article-title>Theoretical
+Investigation of 1,1&#x02032;-Bi-2-Naphthol
+Isomerization</article-title>. <source>J. Mol. Struct.</source>
+<year>2005</year>, <volume>735&#x02013;736</volume>, <fpage>315</fpage>&#x02013;<lpage>324</lpage>. <pub-id pub-id-type="doi">10.1016/j.molstruc.2004.11.041</pub-id>.</mixed-citation></ref><ref id="ref44"><mixed-citation publication-type="journal" id="cit44"><name><surname>Garc&#x000ed;a</surname><given-names>J. S.</given-names></name>; <name><surname>Lepetit</surname><given-names>C.</given-names></name>; <name><surname>Canac</surname><given-names>Y.</given-names></name>; <name><surname>Chauvin</surname><given-names>R.</given-names></name>; <name><surname>Boggio-Pasqua</surname><given-names>M.</given-names></name>
+<article-title>Enantiomerization
+Pathway and Atropochiral Stability of the BINAP Ligand: A Density
+Functional Theory Study</article-title>. <source>Chem. Asian J.</source>
+<year>2014</year>, <volume>9</volume>, <fpage>462</fpage>&#x02013;<lpage>465</lpage>. <pub-id pub-id-type="doi">10.1002/asia.201301265</pub-id>.<pub-id pub-id-type="pmid">25202766</pub-id></mixed-citation></ref><ref id="ref45"><mixed-citation publication-type="journal" id="cit45"><name><surname>Da</surname><given-names>L.-G.</given-names></name>; <name><surname>He</surname><given-names>J.</given-names></name>; <name><surname>Hu</surname><given-names>L.-F.</given-names></name>
+<article-title>DFT Study on the
+Structure and Racemization Mechanism
+of 2-Amino-2&#x02032;-Hydroxy-1,1&#x02032;-Binaphthyl</article-title>. <source>J. Phys. Org. Chem.</source>
+<year>2019</year>, <volume>32</volume>, <elocation-id>e3900</elocation-id><pub-id pub-id-type="doi">10.1002/poc.3900</pub-id>.</mixed-citation></ref><ref id="ref46"><mixed-citation publication-type="journal" id="cit46"><name><surname>Ruzziconi</surname><given-names>R.</given-names></name>; <name><surname>Spizzichino</surname><given-names>S.</given-names></name>; <name><surname>Lunazzi</surname><given-names>L.</given-names></name>; <name><surname>Mazzanti</surname><given-names>A.</given-names></name>; <name><surname>Schlosser</surname><given-names>M.</given-names></name>
+<article-title>BValues as
+a Sensitive Measure of Steric Effects</article-title>. <source>Chem.
+&#x02013; Eur. J.</source>
+<year>2009</year>, <volume>15</volume>, <fpage>2645</fpage>&#x02013;<lpage>2652</lpage>. <pub-id pub-id-type="doi">10.1002/chem.200801963</pub-id>.<pub-id pub-id-type="pmid">19177475</pub-id></mixed-citation></ref><ref id="ref47"><mixed-citation publication-type="journal" id="cit47"><name><surname>Patel</surname><given-names>D. C.</given-names></name>; <name><surname>Woods</surname><given-names>R. M.</given-names></name>; <name><surname>Breitbach</surname><given-names>Z. S.</given-names></name>; <name><surname>Berthod</surname><given-names>A.</given-names></name>; <name><surname>Armstrong</surname><given-names>D. W.</given-names></name>
+<article-title>Thermal
+Racemization of Biaryl Atropisomers</article-title>. <source>Tetrahedron:
+Asymmetry</source>
+<year>2017</year>, <volume>28</volume>, <fpage>1557</fpage>&#x02013;<lpage>1561</lpage>. <pub-id pub-id-type="doi">10.1016/j.tetasy.2017.09.006</pub-id>.</mixed-citation></ref></ref-list></back></article>

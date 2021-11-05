@@ -1,0 +1,407 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.0 20120330//EN" "JATS-archivearticle1.dtd">
+<article article-type="research-article"><?properties open_access?><front><journal-meta><journal-id journal-id-type="nlm-ta">Sci Rep</journal-id><journal-id journal-id-type="iso-abbrev">Sci Rep</journal-id><journal-title-group><journal-title>Scientific Reports</journal-title></journal-title-group><issn pub-type="epub">2045-2322</issn><publisher><publisher-name>Nature Publishing Group</publisher-name></publisher></journal-meta><article-meta><article-id pub-id-type="pmid">25029660</article-id><article-id pub-id-type="pmc">4103701</article-id><article-id pub-id-type="pii">srep05703</article-id><article-id pub-id-type="doi">10.1038/srep05703</article-id><article-categories><subj-group subj-group-type="heading"><subject>Article</subject></subj-group></article-categories><title-group><article-title>Hearing the Shape of the Ising Model with a Programmable
+Superconducting-Flux Annealer</article-title></title-group><contrib-group><contrib contrib-type="author"><name><surname>Vinci</surname><given-names>Walter</given-names></name><xref ref-type="corresp" rid="c1">a</xref><xref ref-type="aff" rid="a1">1</xref></contrib><contrib contrib-type="author"><name><surname>Markstr&#x000f6;m</surname><given-names>Klas</given-names></name><xref ref-type="aff" rid="a2">2</xref></contrib><contrib contrib-type="author"><name><surname>Boixo</surname><given-names>Sergio</given-names></name><xref ref-type="aff" rid="a3">3</xref><xref ref-type="aff" rid="a4">4</xref></contrib><contrib contrib-type="author"><name><surname>Roy</surname><given-names>Aidan</given-names></name><xref ref-type="aff" rid="a5">5</xref></contrib><contrib contrib-type="author"><name><surname>Spedalieri</surname><given-names>Federico M.</given-names></name><xref ref-type="aff" rid="a3">3</xref></contrib><contrib contrib-type="author"><name><surname>Warburton</surname><given-names>Paul A.</given-names></name><xref ref-type="aff" rid="a1">1</xref></contrib><contrib contrib-type="author"><name><surname>Severini</surname><given-names>Simone</given-names></name><xref ref-type="aff" rid="a6">6</xref></contrib><aff id="a1"><label>1</label><institution>London Centre for Nanotechnology, University College London</institution>,
+WC1E 6BT London, <country>UK</country></aff><aff id="a2"><label>2</label><institution>Department of Mathematics and Mathematical Statistics, Ume&#x000e5;
+University</institution>, S-901 87 Ume&#x000e5;, <country>Sweden</country></aff><aff id="a3"><label>3</label><institution>Information Sciences Institute and Ming-Hsieh Department of Electrical
+Engineering, University of Southern California</institution>, Los Angeles, CA 90089,
+<country>USA</country></aff><aff id="a4"><label>4</label><institution>Google</institution>, Venice Beach, CA 90292,
+<country>U.S.A</country></aff><aff id="a5"><label>5</label><institution>D-Wave Systems Inc., 100-4401 Still Creek Drive</institution>, Burnaby,
+BC V5C 6G9, <country>Canada</country></aff><aff id="a6"><label>6</label><institution>Department of Computer Science, and Department of Physics &#x00026;
+Astronomy, University College London</institution>, WC1E 6BT London,
+<country>UK</country></aff></contrib-group><author-notes><corresp id="c1"><label>a</label>
+<email>w.vinci@ucl.ac.uk</email>
+</corresp></author-notes><pub-date pub-type="epub"><day>16</day><month>07</month><year>2014</year></pub-date><pub-date pub-type="collection"><year>2014</year></pub-date><volume>4</volume><elocation-id>5703</elocation-id><history><date date-type="received"><day>07</day><month>05</month><year>2014</year></date><date date-type="accepted"><day>26</day><month>06</month><year>2014</year></date></history><permissions><copyright-statement>Copyright &#x000a9; 2014, Macmillan Publishers Limited. All rights reserved</copyright-statement><copyright-year>2014</copyright-year><copyright-holder>Macmillan Publishers Limited. All rights reserved</copyright-holder><license xmlns:xlink="http://www.w3.org/1999/xlink" license-type="open-access" xlink:href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><!--author-paid--><license-p>This work is licensed under a Creative Commons
+Attribution-NonCommercial-ShareAlike 4.0 International License. The images or other third
+party material in this article are included in the article's Creative Commons license,
+unless indicated otherwise in the credit line; if the material is not included under the
+Creative Commons license, users will need to obtain permission from the license holder in
+order to reproduce the material. To view a copy of this license, visit <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by-nc-sa/4.0/">http://creativecommons.org/licenses/by-nc-sa/4.0/</ext-link></license-p></license></permissions><abstract><p>Two objects can be distinguished if they have different measurable properties. Thus,
+distinguishability depends on the Physics of the objects. In considering graphs, we revisit
+the Ising model as a framework to define physically meaningful spectral invariants. In this
+context, we introduce a family of refinements of the classical spectrum and consider the
+quantum partition function. We demonstrate that the energy spectrum of the quantum Ising
+Hamiltonian is a stronger invariant than the classical one without refinements. For the
+purpose of implementing the related physical systems, we perform experiments on a
+programmable annealer with superconducting flux technology. Departing from the paradigm of
+adiabatic computation, we take advantage of a noisy evolution of the device to generate
+statistics of low energy states. The graphs considered in the experiments have the same
+classical partition functions, but different quantum spectra. The data obtained from the
+annealer distinguish non-isomorphic graphs via information contained in the classical
+refinements of the functions but not via the differences in the quantum spectra.</p></abstract></article-meta></front><body><p>Kac's<xref ref-type="bibr" rid="b1">1</xref> question &#x0201c;Can one hear the shape of a drum?&#x0201d; is part of the scientific
+pop culture<xref ref-type="bibr" rid="b2">2</xref>. The technical side of the question concerns our ability to
+completely specify the geometry of a domain from the eigenvalues of its Laplacian. The
+question has been reinterpreted in the study of Schr&#x000f6;dinger operators on metric graphs by
+Gutkin and Smilansky<xref ref-type="bibr" rid="b3">3</xref> and restated in Algebraic Graphs Theory as &#x0201c;Which graphs
+are determined by their spectrum?&#x0201d; by van Dam and Haemers<xref ref-type="bibr" rid="b4">4</xref>. (Through this work,
+the <italic>spectrum</italic> of a matrix <italic>M</italic>, denoted by <italic>S<sub>M</sub></italic>, is the set of its
+eigenvalues.) While we commonly employ different types of matrices to encode the structure of
+graphs, none has yet been shown to efficiently provide a <italic>complete graph invariant</italic>,
+<italic>i.e.</italic>, a parameter that does not change under a permutation of the vertex labels. The
+spectrum of the adjacency matrix, for example, is a common invariant and easily seen to
+satisfy the &#x0201c;if&#x0201d; part of this statement; however, it is not a complete invariant, given the
+fact that co-spectral non-isomorphic graphs are abundant<xref ref-type="bibr" rid="b5">5</xref><xref ref-type="bibr" rid="b6">6</xref> (see for instance
+<xref ref-type="supplementary-material" rid="s1">Supplementary Information Section A</xref>). In the same spirit, physical
+scenarios have suggested various notions of refined spectra as a tool for distinguishing
+graphs, with partial degrees of success<xref ref-type="bibr" rid="b7">7</xref><xref ref-type="bibr" rid="b8">8</xref><xref ref-type="bibr" rid="b9">9</xref>. A common intersection for these
+approaches is Quantum Mechanics, arguably due to the popularization of quantum dynamics on
+graphs at the beginning of the last decade<xref ref-type="bibr" rid="b10">10</xref>.</p><p>It is interesting, not only from the historical point of view, to observe that the strong
+link between Physics and graphs is via the Ising model, perhaps the most studied model in
+Statistical Mechanics. Originally proposed in 1925<xref ref-type="bibr" rid="b11">11</xref> as a simplified
+description of the magnetic properties of materials, the Ising model has found a vast number
+of applications from Biology to Solid State Physics. Its great importance is emphasized by
+exact solutions and numerical techniques for the identification of phase transitions and
+critical phenomena<xref ref-type="bibr" rid="b12">12</xref>. The Ising model framework seems particularly suitable to
+observe differences between Classical and Quantum Mechanics in terms of spectral information,
+since the quantum case is directly obtained by adding an appropriate (transverse) magnetic
+field to the classical Hamiltonian.</p><p>In what follows, we map a graph into an Ising model and interpret its energy spectrum as a
+graph invariant, before and after the &#x0201c;switch&#x0201d; from Classical to Quantum Mechanics. We
+demonstrate with exhaustive numerical examples that the quantum spectrum is a stronger
+invariant and propose a general framework to define physically meaningful graph polynomials.
+Determining whether the quantum energy spectrum is a complete invariant remains an open
+problem. We perform experiments on a programmable annealer with superconducting flux
+technology<xref ref-type="bibr" rid="b13">13</xref>. Our purpose is to &#x0201c;hear the shape of an Ising model&#x0201d;, by
+generating statistics of low energy states as the outcome of a noisy evolution. The experiment
+is run disregarding whether or not the state of the device follows an adiabatic path along its
+instantaneous ground state, therefore against the prescription for successful annealing<xref ref-type="bibr" rid="b14">14</xref>. In other words, we are not only interested in the ground state but,
+unconventionally, in the full output of a noisy computation. We obtain data on non-isomorphic
+graphs that are distinguished by their quantum energy spectra but not by the classical
+ones.</p><sec disp-level="1" sec-type="results"><title>Results</title><sec disp-level="2"><title>Classical Cospectrality and Ising models</title><p>The Hamiltonian of the <italic>Ising model</italic><xref ref-type="bibr" rid="b15">15</xref> (or, equivalent, 2-<italic>state
+Potts model</italic>) on a graph <italic>G</italic>, with <italic>n</italic> vertices <italic>V</italic>(<italic>G</italic>) and
+edges <italic>E</italic>(<italic>G</italic>), is defined by the diagonal matrix <disp-formula id="m1"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="d33e298" xlink:href="srep05703-m1.jpg"/></disp-formula>where, for each edge <inline-formula id="m12"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="d33e301" xlink:href="srep05703-m12.jpg"/></inline-formula> is a
+2<italic><sup>n</sup></italic> &#x000d7; 2<italic><sup>n</sup></italic> matrix, with <italic>H</italic>(<italic>k</italic>) =
+<italic>&#x003c3;<sub>z</sub></italic> if <italic>k</italic> = <italic>i</italic>, <italic>j</italic> and <italic>H</italic>(<italic>k</italic>) =
+<italic>I</italic>, otherwise. <italic>A</italic>(<italic>G</italic>) is the <italic>adjacency matrix</italic> with
+[<italic>A</italic>(<italic>G</italic>)]<italic><sub>i</sub></italic><sub>,<italic>j</italic></sub> = 1 if {<italic>i</italic>, <italic>j</italic>}
+&#x02208; <italic>E</italic>(<italic>G</italic>) and [<italic>A</italic>(<italic>G</italic>)]<italic><sub>i</sub></italic><sub>,<italic>j</italic></sub> = 0,
+otherwise. <italic>&#x003c3;<sub>z</sub></italic> is the Pauli matrix in the <italic>z</italic>-th coordinate axis,
+<italic>I</italic> is the identity matrix, and <italic>J</italic> is the strength of interaction. From now
+on, whenever the interaction strength is not expressly indicated as, <italic>e.g.</italic>, in
+<italic>H</italic>(<italic>G</italic>), we implicitly set <italic>J</italic> = 1 for all edges. The <italic>partition
+function</italic> of the Ising model on <italic>G</italic> is <disp-formula id="m2"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="d33e428" xlink:href="srep05703-m2.jpg"/></disp-formula>where <italic>&#x003b2;</italic>: =
+(<italic>k<sub>B</sub>T</italic>)<sup>&#x02212;1</sup> and <italic>v</italic> = <italic>e<sup>&#x003b2;J</sup></italic> &#x02212; 1;
+<italic>k<sub>B</sub></italic> is Boltzmann's constant, <inline-formula id="m13"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="d33e458" xlink:href="srep05703-m13.jpg"/></inline-formula> is the temperature. By the Fortuin-Kasteleyn<xref ref-type="bibr" rid="b16">16</xref> combinatorial identity, <italic>Z</italic>(<italic>G</italic>, <italic>v</italic>) is an evaluation of the
+<italic>Tutte polynomial</italic><xref ref-type="bibr" rid="b17">17</xref><xref ref-type="bibr" rid="b18">18</xref>, which is a fundamental invariant that
+determines many parameters including girth, chromatic number, <italic>etc.</italic> Remarkably, the
+Jones polynomial of a knot is contained in the Tutte polynomial<xref ref-type="bibr" rid="b19">19</xref>. Recall
+that, formally, <italic>G</italic> and <italic>G</italic>&#x02032; are <italic>isomorphic</italic> if they are the same graph up
+to a relabeling of the vertices. This is denoted by <inline-formula id="m14"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="d33e492" xlink:href="srep05703-m14.jpg"/></inline-formula>. It is not hard to find graphs with the same Tutte
+polynomial (T-equivalent) that are not isomorphic<xref ref-type="bibr" rid="b20">20</xref><xref ref-type="bibr" rid="b21">21</xref>: for example, all
+trees on the same number of vertices.</p><p>Observe that two graphs <italic>G</italic> and <italic>G</italic>&#x02032; have the same partition function if and
+only if they share the same spectrum of the Hamiltonian in Eq. (1) (<italic>i.e.</italic>
+<inline-formula id="m15"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="d33e508" xlink:href="srep05703-m15.jpg"/></inline-formula>). We say that
+<italic>G</italic> and <italic>G</italic>&#x02032; are <italic>co-Ising</italic> if <inline-formula id="m16"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="d33e521" xlink:href="srep05703-m16.jpg"/></inline-formula>. Since the Tutte polynomial is a generalization of the
+partition function, if two graphs are T-equivalent then they share the same energy
+spectrum and thus are co-Ising. Thus, we know the following: <disp-formula id="m3"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="d33e524" xlink:href="srep05703-m3.jpg"/></disp-formula></p><p>Intuitively, we may attempt a refinement by adding a longitudinal field. The Hamiltonian
+of the <italic>Ising model on G with longitudinal field</italic> is defined by the diagonal matrix
+<disp-formula id="m4"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="d33e531" xlink:href="srep05703-m4.jpg"/></disp-formula>where <inline-formula id="m17"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="d33e534" xlink:href="srep05703-m17.jpg"/></inline-formula> is a
+2<italic><sup>n</sup></italic> &#x000d7; 2<italic><sup>n</sup></italic> matrix, with <inline-formula id="m18"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="d33e546" xlink:href="srep05703-m18.jpg"/></inline-formula>, <italic>H<sub>L</sub></italic>(<italic>k</italic>) =
+<italic>&#x003c3;<sub>z</sub></italic> if <italic>k</italic> = <italic>i</italic> and <italic>H<sub>L</sub></italic>(<italic>k</italic>) =
+<italic>I</italic> otherwise. Physically <italic>hM</italic> can be interpreted as a constant external
+magnetic field applied to all vertices. Again, we set <italic>J</italic> = 1 and <italic>h</italic> = 1 unless
+they are explicitly indicated. We say that two graphs <italic>G</italic> and <italic>G</italic>&#x02032; are
+<italic>longitudinal field co-Ising</italic> if <inline-formula id="m19"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="d33e599" xlink:href="srep05703-m19.jpg"/></inline-formula> for all values of <italic>J</italic> and <italic>h</italic>. The following
+equation summarizes what we know about graphs with this property (see <xref ref-type="supplementary-material" rid="s1">Supplementary Information Section A and B</xref> for examples): <disp-formula id="m5"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="d33e612" xlink:href="srep05703-m5.jpg"/></disp-formula></p><p>From the diagonal matrices <italic>H</italic>(<italic>G</italic>) and <italic>M</italic>, we can define the
+<italic>energy</italic> and <italic>magnetization</italic> vectors as <bold>e</bold><italic><sub>&#x003c3;</sub></italic>(<italic>G</italic>)
+= <italic>H</italic>(<italic>G</italic>)<italic><sub>&#x003c3;</sub></italic><sub>,<italic>&#x003c3;</italic></sub> and
+<bold>m</bold><italic><sub>&#x003c3;</sub></italic> = <italic>M<sub>&#x003c3;</sub></italic><sub>,<italic>&#x003c3;</italic></sub>, where <italic>&#x003c3;</italic> =
+0, 2, &#x02026;, 2<italic><sup>n</sup></italic> &#x02212; 1 runs over the classical states of the Ising model on
+<italic>G</italic>, where 0 denotes the ground state. With the use of these vectors, the
+<italic>bivariate Ising polynomial</italic> is defined as<xref ref-type="bibr" rid="b22">22</xref>: <disp-formula id="m6"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="d33e687" xlink:href="srep05703-m6.jpg"/></disp-formula>Notice that the
+spectrum <inline-formula id="m20"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="d33e690" xlink:href="srep05703-m20.jpg"/></inline-formula> can be
+obtained from <italic>Z</italic>(<italic>G</italic>; <italic>x</italic>, <italic>y</italic>) for all values of the constants
+<italic>J</italic> and <italic>h</italic>, since a change in these parameters is just a rescaling of the
+coefficients <italic>x</italic> and <italic>y</italic>. The Ising polynomial generalizes the partition
+function in Eq. (2) because <italic>Z</italic>(<italic>G</italic>, <italic>e</italic><sup>&#x02212;<italic>J&#x003b2;</italic></sup>, 1) =
+<italic>Z</italic>(<italic>G</italic>, <italic>e<sup>J&#x003b2;</sup></italic> &#x02212; 1), encodes the matching polynomial, is
+related to the van der Waerden polynomial, and is contained in a more general polynomial
+introduced by Goldberg, Jerrum and Paterson<xref ref-type="bibr" rid="b23">23</xref><xref ref-type="bibr" rid="b24">24</xref><xref ref-type="bibr" rid="b25">25</xref>. The bivariate Ising
+polynomial in Eq. (6) can be intuitively generalized by working with <italic>any</italic> physical
+observable in addition to energy and magnetization. If we denote by <inline-formula id="m21"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="d33e749" xlink:href="srep05703-m21.jpg"/></inline-formula> the eigenvalues of a diagonal matrix
+(or observable) &#x0039b;<italic><sup>k</sup></italic>, we can then define a multivariate polynomial <disp-formula id="m7"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="d33e756" xlink:href="srep05703-m7.jpg"/></disp-formula>An
+example is given by the (permutationally invariant) spin-glass order parameter used by Hen
+and Young<xref ref-type="bibr" rid="b26">26</xref>.</p></sec><sec disp-level="2"><title>Quantum Cospectrality</title><p>The invariants that we have so far considered belong to Classical Physics. We can now
+move into a quantum mechanical regime by adding a further field. The Hamiltonian of the
+<italic>quantum Ising model</italic> on <italic>G</italic>, as proposed by Lieb, Schultz, and Mattis<xref ref-type="bibr" rid="b27">27</xref> (see also<xref ref-type="bibr" rid="b28">28</xref>) is defined by the matrix <disp-formula id="m8"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="d33e777" xlink:href="srep05703-m8.jpg"/></disp-formula>where <inline-formula id="m22"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="d33e781" xlink:href="srep05703-m22.jpg"/></inline-formula> is a transverse
+external magnetic field; here <inline-formula id="m23"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="d33e784" xlink:href="srep05703-m23.jpg"/></inline-formula> is a 2<italic><sup>n</sup></italic> &#x000d7; 2<italic><sup>n</sup></italic> matrix, with
+<inline-formula id="m24"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="d33e795" xlink:href="srep05703-m24.jpg"/></inline-formula>,
+<italic>H<sub>T</sub></italic>(<italic>k</italic>) = <italic>&#x003c3;<sub>x</sub></italic> if <italic>k</italic> = <italic>i</italic> and
+<italic>H<sub>T</sub></italic>(<italic>k</italic>) = <italic>I</italic> otherwise. As in the longitudinal case,
+<italic>M<sub>T</sub></italic> does not depend on <italic>G</italic>. Two graphs <italic>G</italic> and <italic>G</italic>&#x02032;
+are said to be <italic>quantum co-Ising</italic> if <inline-formula id="m25"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="d33e848" xlink:href="srep05703-m25.jpg"/></inline-formula> for all values of <italic>J</italic>, <italic>h</italic> and &#x00394;. It follows
+from the definition that two graphs are quantum co-Ising if they are isomorphic. The
+quantum partition function is defined analogously to the classical one: <disp-formula id="m9"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="d33e857" xlink:href="srep05703-m9.jpg"/></disp-formula>Two graphs are quantum
+co-Ising if and only if they have the same quantum partition function. The &#x0201c;if&#x0201d; part of
+this statement comes directly from the definition. For the &#x0201c;only if&#x0201d; part, observe that in
+the limit <italic>&#x003b2;</italic> &#x02192; &#x0221e;, <inline-formula id="m26"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="d33e863" xlink:href="srep05703-m26.jpg"/></inline-formula> determines the lowest eigenvalue <italic>E</italic><sub>0</sub> with its multiplicity
+<italic>&#x003bd;</italic><sub>0</sub>. Similarly, in the same limit <inline-formula id="m27"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="d33e877" xlink:href="srep05703-m27.jpg"/></inline-formula> determines the value and multiplicity of the second
+smallest eigenvalue. The whole spectrum is obtained iteratively. The statement above and
+its proof are valid only for systems of finite size. It is a well-known fact that
+different Hamiltonians can have the same partition function in the thermodynamic
+limit.</p><p>We tested numerically the converse of this fact by computing the smallest eigenvalue for
+<italic>h</italic> = <italic>J</italic> = &#x00394; = 1. We tested all graphs with <italic>n</italic> &#x02264; 9, all bipartite
+graphs with <italic>n</italic> &#x02264; 11, all vertex transitive graphs with <italic>n</italic> &#x02264; 15, all regular
+graphs with <italic>n</italic> &#x02264; 11, and all trees with <italic>n</italic> &#x02264; 14 (also considered in<xref ref-type="bibr" rid="b22">22</xref>). We failed to find a counterexample. Hence, <disp-formula id="m10"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="d33e906" xlink:href="srep05703-m10.jpg"/></disp-formula>The transverse field
+Ising Hamiltonian is a sum of non-commuting terms and determining its full spectrum
+requires the diagonalization of a 2<italic><sup>n</sup></italic> &#x000d7; 2<italic><sup>n</sup></italic>
+matrix. We cannot generalize directly the quantum partition function to a generating Ising
+polynomial as done in the classical case &#x02013; when eigenvalues are integers (for <italic>J</italic> =
+<italic>h</italic> = 1) &#x02013; although we can use the well-known Suzuki-Trotter formalism to obtain a
+classical approximation<xref ref-type="bibr" rid="b29">29</xref>; the direct calculation of the eigenvalues is
+notoriously expensive, due to the size of the problem, and prone to errors, making it
+difficult to numerically show the existence of non-isomorphic quantum co-Ising graphs. A
+reasonable first approximation for this task is to compute the absolute largest
+eigenvalue. That is what we have done in our tests. Taking into account such difficulties,
+finding non-isomorphic quantum co-Ising graphs is an open problem. Natural candidates are
+graphs for which isomorphism testing is known to be harder to solve (<italic>e.g.</italic>, graphs
+for which the Weisfeiler-Lehman algorithm fails)<xref ref-type="bibr" rid="b30">30</xref>. Nevertheless, we
+emphasize that spectral information provided by Quantum Mechanics is more accurate than
+Classical Mechanics. It must be said that there are only a few precise (and in fact
+negative) statements about the physically inspired graph invariants which have been
+introduced recently (see<xref ref-type="bibr" rid="b7">7</xref><xref ref-type="bibr" rid="b8">8</xref><xref ref-type="bibr" rid="b9">9</xref><xref ref-type="bibr" rid="b26">26</xref> and the references therein) and that
+purely numerical analysis does not guarantee sufficient generality.</p></sec><sec disp-level="2"><title>Experiments</title><p>Disregarding computational complexity aspects, we have highlighted that from the
+theoretical point of view one can hear the shape of certain quantum Ising models, while it
+is not possible for the classical analogue. We subsequently encode on the same physical
+system pairs of non-isomorphic graphs that are co-spectral, longitudinal field co-Ising
+(and consequently co-Ising), but not quantum co-Ising. Rather remarkably, our set up finds
+an experimental implementation in the optimization technique called <italic>quantum
+annealing</italic><xref ref-type="bibr" rid="b14">14</xref><xref ref-type="bibr" rid="b31">31</xref><xref ref-type="bibr" rid="b32">32</xref><xref ref-type="bibr" rid="b33">33</xref>. In this technique, the system evolves
+adiabatically according to the following time-dependent Hamiltonian <disp-formula id="m11"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="d33e942" xlink:href="srep05703-m11.jpg"/></disp-formula>where <italic>s</italic> =
+<italic>t</italic>/<italic>T<sub>tot</sub></italic>; <italic>t</italic> is a time parameter and <italic>T<sub>tot</sub></italic>
+is the total duration of the dynamics. At the beginning of the computation, the system is
+prepared in the ground state of the initial simple Hamiltonian
+<italic>H<sub>QA</sub></italic>(<italic>G</italic>, <italic>J</italic>, <italic>h</italic>, &#x00394;, 0) = &#x00394;<italic>M<sub>T</sub></italic>. On
+the basis of the adiabatic theorem<xref ref-type="bibr" rid="b34">34</xref>, adiabatic quantum annealing with
+general Hamiltonians has been shown to be a universal model of computation by Aharonov
+<italic>et al.</italic><xref ref-type="bibr" rid="b35">35</xref>. In synthesis, the core idea is to evolve the system
+slowly enough towards a final ground state, which is the solution of a computational task.
+While the success of this paradigm depends on the ability of avoiding level crossings with
+<italic>ad hoc</italic> annealing schedules, Brooke <italic>et al.</italic><xref ref-type="bibr" rid="b31">31</xref> experimentally
+observed that tunneling can hasten convergence to the solution.</p><p>In the setting specified by Eq. (11), we are interested in measuring the observables
+<bold>e</bold><sub>0</sub>, <bold>m</bold><sub>0</sub>, and <inline-formula id="m28"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="d33e1010" xlink:href="srep05703-m28.jpg"/></inline-formula>. In a realistic situation, temperature and environment
+will usually excite the system. While these effects are disruptive in the standard
+applications of quantum annealing, we regard such a non-ideal implementation as a way to
+generate the statistics of low energy states on which we measure the corresponding
+observables. For this purpose, we run experiments on a D-Wave Vesuvius programmable
+annealer. The hardware consists of 503 usable logical bits on an integrated circuit with
+superconducting flux qubits (see<xref ref-type="bibr" rid="b13">13</xref> for details on the technology). Quantum
+effects on the chip are currently under investigation and there is evidence of quantum
+annealing on random spin glass problems<xref ref-type="bibr" rid="b36">36</xref><xref ref-type="bibr" rid="b37">37</xref><xref ref-type="bibr" rid="b38">38</xref><xref ref-type="bibr" rid="b39">39</xref><xref ref-type="bibr" rid="b40">40</xref>. The Hamiltonians
+that can be realized with the device are exactly of the type in Eq. (11), where <italic>s</italic>
+is a non-linear function of time. The most general form of the final Hamiltonian
+<italic>H<sub>L</sub></italic> is given by an Ising model whose possible spin interactions are
+constrained by the chip architecture. A particular limitation of the hardware is that
+measurements can be performed only at the end of the evolution. Thus, the maximal
+information that we can extract is encoded in the multivariate polynomials of Eq. (7). On
+the other hand, the final state of the chip is a result of a dynamics also governed by the
+transversal field <italic>M<sub>T</sub></italic>. In fact, our experiments attempt to identify the
+effects of <italic>M<sub>T</sub></italic> in the final statistics after the measurement outcomes are
+filtered out using various type of multivariate polynomials.</p><p>We have tested the annealer on two pairs of non-isomorphic graphs <italic>G</italic> and <italic>G</italic>&#x02032;
+(<italic>G</italic><sub>13</sub> and <inline-formula id="m29"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="d33e1049" xlink:href="srep05703-m29.jpg"/></inline-formula>, <italic>G</italic><sub>27</sub> and <inline-formula id="m30"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="d33e1058" xlink:href="srep05703-m30.jpg"/></inline-formula>, in <xref ref-type="supplementary-material" rid="s1">Supplementary Information Section B
+and C</xref>) such that <italic>S<sub>A</sub></italic><sub>(<italic>G</italic>)</sub> =
+<italic>S<sub>A</sub></italic><sub>(<italic>G</italic>&#x02032;)</sub>, <inline-formula id="m31"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="d33e1085" xlink:href="srep05703-m31.jpg"/></inline-formula>, and <inline-formula id="m32"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="d33e1088" xlink:href="srep05703-m32.jpg"/></inline-formula>, <italic>i.e.</italic>, with equal spectra of the adjacency
+matrix, equal classical spectra, even with a longitudinal field, and different quantum
+spectra. To illustrate a possible (arbitrary) refinement as introduced by Eq. (7), we
+include an extra observable, &#x003a9;<sup>2</sup>, corresponding to the next-nearest neighbor
+interaction energy: <inline-formula id="m33"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="d33e1097" xlink:href="srep05703-m33.jpg"/></inline-formula>.
+Notice that <italic>H</italic>(<italic>G</italic>) = &#x003a9;<sup>1</sup>/2. <xref ref-type="fig" rid="f1">Figure 1</xref> shows
+the statistics of measurement outcomes when the states are distinguished through the
+doublet of observables {energy, magnetization} on the pairs {<italic>G</italic><sub>13</sub>, <inline-formula id="m34"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="d33e1118" xlink:href="srep05703-m34.jpg"/></inline-formula>}, for <italic>J</italic> =
+<italic>h</italic> = 1/7 and <italic>J</italic> = <italic>h</italic> = 1. These are respectively the smallest and the
+largest values that can be reliably set on the hardware. The final states are organized
+according to the values of the two observables. As a consequence of the fact that the two
+graphs are co-Ising, the measured values of the pairs {energy, magnetization} are the
+same, and cannot be used to distinguish the two graphs. Moreover, the shape of the two
+distributions is also the same up to statistical errors. The shape of this distribution is
+assumed to be a consequence of (noisy) open system quantum dynamics<xref ref-type="bibr" rid="b36">36</xref><xref ref-type="bibr" rid="b37">37</xref>
+(see <xref ref-type="supplementary-material" rid="s1">Supplementary Information Section D</xref> for a comparison between
+experimental and thermal statistics). This means that we are not able to identify
+differences in the final distributions that may arise due to the different quantum
+spectra, <italic>i.e.</italic> due to non-equivalent quantum evolution along the annealing
+schedule.</p><p>The graphs are indistinguishable by measuring energy and magnetization only. However,
+they become distinguishable in <xref ref-type="fig" rid="f2">Figure 2</xref> by measuring the triplet
+{energy, magnetization, &#x003a9;<sup>2</sup>}, as clearly visible in the statistics obtained
+with the chip. The pair {<italic>G</italic><sub>27</sub>, <inline-formula id="m35"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="d33e1156" xlink:href="srep05703-m35.jpg"/></inline-formula>} is not distinguished by the triplet on the
+experimental data, as showed in <xref ref-type="fig" rid="f3">Figure 3</xref>. It should be possible, in
+principle, to classically distinguish these graphs with the introduction of additional
+observables. Similarly to what happens for the <italic>G</italic><sub>13</sub> pair, there are no
+noticeable differences in the shape of the final distributions that can detect differences
+in the quantum spectra.</p></sec></sec><sec disp-level="1" sec-type="conclusions"><title>Conclusions</title><p>The interplay between combinatorics and the classical Ising model is well-established. We
+have introduced a general family of physically meaningful graph polynomials suggesting a
+hierarchy of graph invariants. We have demonstrated that the quantum Ising model is a finer
+sieve to distinguish graphs than its classical analogue by considering the quantum partition
+function as a graph invariant. We have tested experimentally its distinguishability power on
+a D-Wave programmable annealer, by taking graphs with different quantum spectra and the same
+classical Ising partition function. We used the hardware unconventionally to generate the
+statistics of low energy eigenvalues rather than focusing on the ground state. The data
+obtained can distinguish one pair of graphs when measuring with respect to a classical
+refinement of the partition function. We did not find any measurable difference in the
+statistics of measurement outcomes of the two pairs that can be related to non-equivalent
+quantum dynamics. Notice that the transverse field spectra are very similar (<xref ref-type="supplementary-material" rid="s1">Fig. 9 in the Supplementary Material</xref>). Of course, differences expected in an ideal
+quantum system are possibly lost due to decoherence when approaching the classical regime at
+the end of the adiabatic evolution.</p><p>Going beyond the scope of this work, it would be interesting to compare the experimental
+data with numerical simulations of the corresponding open quantum spin system at finite
+temperature<xref ref-type="bibr" rid="b41">41</xref>. We propose two approaches to amplify the differences in the
+quantum spectra: (a) reduce substantially the annealing time; (b) perform measurements when
+the transverse field is on. Both approaches require a modification of the current control of
+the hardware. Another interesting goal is to define other efficient observables, such as
+&#x003a9;<sup>2</sup>, that would amplify the possible differences in the measurement
+statistics. From the theoretical point of view a natural open question is whether the
+transverse field alone is sufficient to define a complete spectral graph invariant.</p></sec><sec disp-level="1" sec-type="methods"><title>Methods</title><sec disp-level="2"><title>Experimental data collection</title><p>In order to collect enough statistics for averaging over biases and systematic errors, we
+have considered 100 embeddings in the chip for each graph. To average over precision
+errors when setting the intended couplings on the machine, we have run 100 programming
+cycles for each embedding. For each cycle, we have performed 1000 measurements. All the
+experiments have been performed choosing the shortest annealing time allowed by the
+hardware (<italic>T<sub>tot</sub></italic> = 20&#x02005;<italic>&#x003bc;s</italic>) in order to minimize the effects of
+thermal excitations.</p></sec></sec><sec disp-level="1"><title>Author Contributions</title><p>W.V., S.S. and P.A.W. provided the central ideas, that were further developed by all
+authors. K.M. performed the numerical exhaustive analysis of the graphs considered in the
+paper. W.V. performed all data collection and analysis. A.R. contributed in the data
+collection. S.B. and F.M.S. contributed in the data analysis. W.V. and S.S. wrote the main
+manuscript text. All authors thoroughly reviewed the final manuscript.</p></sec><sec sec-type="supplementary-material" id="s1"><title>Supplementary Material</title><supplementary-material id="d33e63" content-type="local-data"><caption><title>Supplementary Information</title><p>Supplementary Material</p></caption><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="srep05703-s1.pdf"/></supplementary-material></sec></body><back><ack><p>We would like to thank Gabriel Aeppli, Andrew Fisher, Andrew Green, Itay Hen, Daniel Lidar,
+Brent Segal, and Peter Young for valuable discussion. This work has been done within a
+&#x0201c;Global Engagement for Global Impact&#x0201d; programme funded by EPSRC, and with support from ARO
+grant number W911NF-12-1-0523, the Lockheed Martin Corporation and DARPA grant number
+FA8750-13-2-0035.</p></ack><ref-list><ref id="b1"><mixed-citation publication-type="journal"><name><surname>Kac</surname><given-names>M.</given-names></name>
+<article-title>Can one hear the shape of a drum?</article-title>
+<source>The American Mathematical Monthly</source>
+<volume>73</volume>, <fpage>1</fpage>&#x02013;<lpage>23</lpage> (<year>1966</year>).</mixed-citation></ref><ref id="b2"><mixed-citation publication-type="journal">Wikipedia contributors. <article-title>Hearing the shape of a drum</article-title>.
+<source>Wikipedia, The Free Encyclopedia.</source>
+<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://en.wikipedia.org/wiki/Hearing_the_shape_of_a_drum">http://en.wikipedia.org/wiki/Hearing_the_shape_of_a_drum</ext-link>
+(24/06/2014).</mixed-citation></ref><ref id="b3"><mixed-citation publication-type="journal"><name><surname>Gutkin</surname><given-names>B.</given-names></name> &#x00026; <name><surname>Smilansky</surname><given-names>U.</given-names></name>
+<article-title>Can one hear the shape of a graph?</article-title>
+<source>J. Phys. A. Math. Gen.</source>
+<volume>34</volume>, <fpage>6061</fpage>&#x02013;<lpage>6068</lpage> (<year>2001</year>).</mixed-citation></ref><ref id="b4"><mixed-citation publication-type="journal"><name><surname>van Dam</surname><given-names>E. R.</given-names></name> &#x00026; <name><surname>Haemers</surname><given-names>W. H.</given-names></name>
+<article-title>Which graphs are determined by their spectrum?</article-title>
+<source>Linear Algebra Appl.</source>
+<volume>373</volume>, <fpage>241</fpage>&#x02013;<lpage>272</lpage> (<year>2003</year>).</mixed-citation></ref><ref id="b5"><mixed-citation publication-type="journal"><name><surname>Godsil</surname><given-names>C. D.</given-names></name> &#x00026; <name><surname>McKay</surname><given-names>B. D.</given-names></name>
+<article-title>Constructing cospectral graphs</article-title>. <source>Aequationes Math.</source>
+<volume>25</volume>, <fpage>257</fpage>&#x02013;<lpage>268</lpage> (<year>1982</year>).</mixed-citation></ref><ref id="b6"><mixed-citation publication-type="journal"><name><surname>Godsil</surname><given-names>C.</given-names></name> &#x00026; <name><surname>Royle</surname><given-names>G.</given-names></name>
+<source>Algebraic Graph Theory</source> (Springer&#x02013;Verlag, <year>2001</year>).</mixed-citation></ref><ref id="b7"><mixed-citation publication-type="journal"><name><surname>Audenaert</surname><given-names>K.</given-names></name>
+<italic>et al.</italic>
+<article-title>Symmetric squares of graphs</article-title>. <source>J. Comb. Theory, Ser. B</source>
+<volume>97</volume>(1), <fpage>74</fpage>&#x02013;<lpage>90</lpage> (<year>2007</year>).</mixed-citation></ref><ref id="b8"><mixed-citation publication-type="journal"><name><surname>Emms</surname><given-names>D.</given-names></name>
+<italic>et al.</italic>
+<article-title>A matrix representation of graphs and its spectrum as a graph
+invariant</article-title>. <source>Electron. J. Combin.</source>
+<volume>13</volume>(1), <fpage>R34</fpage> (<year>2006</year>).</mixed-citation></ref><ref id="b9"><mixed-citation publication-type="journal"><name><surname>Gamble</surname><given-names>J. K.</given-names></name>, <name><surname>Friesen</surname><given-names>M.</given-names></name>, <name><surname>Zhou</surname><given-names>D.</given-names></name>,
+<name><surname>Joynt</surname><given-names>R.</given-names></name> &#x00026; <name><surname>Coppersmith</surname><given-names>S. N.</given-names></name>
+<article-title>Two&#x02013;particle quantum walks applied to the graph isomorphism
+problem</article-title>. <source>Phys. Rev. A</source>
+<volume>81</volume>, <fpage>052313</fpage> (<year>2010</year>).</mixed-citation></ref><ref id="b10"><mixed-citation publication-type="journal"><name><surname>Konno</surname><given-names>N.</given-names></name>
+<article-title>Quantum walks</article-title>. <source>Quantum Potential Theory, Lecture Notes in
+Mathematics</source> [<fpage>309</fpage>&#x02013;<lpage>452</lpage>] (Springer&#x02013;Verlag, Berlin Heidelberg,
+<year>2008</year>).</mixed-citation></ref><ref id="b11"><mixed-citation publication-type="journal"><name><surname>Ising</surname><given-names>E.</given-names></name>
+<article-title>Beitrag zur Theorie des Ferromagnetismus</article-title>. <source>Z. Physik</source>
+<volume>31</volume>, <fpage>253</fpage>&#x02013;<lpage>258</lpage> (<year>1925</year>).</mixed-citation></ref><ref id="b12"><mixed-citation publication-type="journal"><name><surname>Huang</surname><given-names>K.</given-names></name>
+<source>Statistical Mechanics</source> (Wiley, John &#x00026; Sons, <year>1990</year>).</mixed-citation></ref><ref id="b13"><mixed-citation publication-type="journal"><name><surname>Johnson</surname><given-names>M. W.</given-names></name>
+<italic>et al.</italic>
+<article-title>Quantum annealing with manufactured spins</article-title>. <source>Nature</source>
+<volume>473</volume>, <fpage>194198</fpage> (<year>2011</year>).</mixed-citation></ref><ref id="b14"><mixed-citation publication-type="journal"><name><surname>Santoro</surname><given-names>G. E.</given-names></name>
+<italic>et al.</italic>
+<article-title>Theory of Quantum Annealing of an Ising Spin Glass</article-title>.
+<source>Science</source>
+<volume>295</volume>, <fpage>24272430</fpage> (<year>2002</year>).</mixed-citation></ref><ref id="b15"><mixed-citation publication-type="journal"><name><surname>Cipra</surname><given-names>B. A.</given-names></name>
+<article-title>An Introduction to the Ising Model</article-title>. <source>Amer. Math.
+Monthly</source>
+<volume>94</volume>, <fpage>937</fpage>&#x02013;<lpage>959</lpage> (<year>1987</year>).</mixed-citation></ref><ref id="b16"><mixed-citation publication-type="journal"><name><surname>Fortuin</surname><given-names>C. M.</given-names></name> &#x00026;
+<name><surname>Kasteleyn</surname><given-names>P. W.</given-names></name>
+<article-title>On the random cluster model. I. Introduction and relation to other
+models</article-title>. <source>Physica</source>
+<volume>57</volume>, <fpage>536</fpage>&#x02013;<lpage>564</lpage> (<year>1972</year>).</mixed-citation></ref><ref id="b17"><mixed-citation publication-type="journal"><name><surname>Tutte</surname><given-names>W. T.</given-names></name>
+<article-title>A contribution to the theory of chromatic polynomials</article-title>.
+<source>Canad. J. Math.</source>
+<volume>6</volume>, <fpage>80</fpage>&#x02013;<lpage>91</lpage> (<year>1954</year>)</mixed-citation></ref><ref id="b18"><mixed-citation publication-type="journal"><name><surname>Whitney</surname><given-names>H.</given-names></name>
+<article-title>The coloring of graphs</article-title>. <source>Ann. Math.</source>
+<volume>33</volume>, <fpage>688</fpage>&#x02013;<lpage>718</lpage> (<year>1932</year>).</mixed-citation></ref><ref id="b19"><mixed-citation publication-type="journal"><name><surname>Welsh</surname><given-names>D. J. A.</given-names></name>
+<article-title>Complexity: knots, colorings and counting</article-title>. <source>London
+Mathematical Society Lecture Note Series</source>
+<fpage>186</fpage> (Cambridge University Press, Cambridge, <year>1993</year>).</mixed-citation></ref><ref id="b20"><mixed-citation publication-type="journal"><name><surname>de Mier</surname><given-names>A.</given-names></name> &#x00026; <name><surname>Noy</surname><given-names>M.</given-names></name>
+<article-title>On graphs determined by their Tutte polynomial</article-title>. <source>Graph.
+Comb.</source>
+<volume>20</volume>, <fpage>105</fpage>&#x02013;<lpage>119</lpage> 1 (<year>2004</year>).</mixed-citation></ref><ref id="b21"><mixed-citation publication-type="journal"><name><surname>Garijo</surname><given-names>D.</given-names></name>, <name><surname>Goodall</surname><given-names>A.</given-names></name> &#x00026; <name><surname>Ne&#x00161;et&#x00159;il</surname><given-names>J.</given-names></name>
+<article-title>Distinguishing graphs by their left and right homomorphism
+profiles</article-title>. <source>Eur. J. Comb.</source>
+<volume>32</volume>, <fpage>1025</fpage>&#x02013;<lpage>1053</lpage> (<year>2011</year>).</mixed-citation></ref><ref id="b22"><mixed-citation publication-type="journal"><name><surname>Andren</surname><given-names>D.</given-names></name> &#x00026; <name><surname>Markstrom</surname><given-names>K.</given-names></name>
+<article-title>The bivariate Ising polynomial of a graph</article-title>. <source>Discrete Appl.
+Math.</source>
+<volume>157</volume>(11), <fpage>2515</fpage>&#x02013;<lpage>2524</lpage> (<year>2009</year>).</mixed-citation></ref><ref id="b23"><mixed-citation publication-type="journal"><name><surname>Goldberg</surname><given-names>L. A.</given-names></name>, <name><surname>Jerrum</surname><given-names>M.</given-names></name> &#x00026; <name><surname>Paterson</surname><given-names>M.</given-names></name>
+<article-title>The computational complexity of two-state spin systems</article-title>.
+<source>Random Struct. Alg.</source>
+<volume>23</volume>, <fpage>133</fpage>&#x02013;<lpage>154</lpage> (<year>2003</year>).</mixed-citation></ref><ref id="b24"><mixed-citation publication-type="journal"><name><surname>Kotek</surname><given-names>T.</given-names></name>
+<article-title>Complexity of Ising polynomials</article-title>. <source>Combin. Probab.
+Comput.</source>
+<volume>21</volume>, <fpage>743</fpage>&#x02013;<lpage>772</lpage> (<year>2012</year>).</mixed-citation></ref><ref id="b25"><mixed-citation publication-type="journal"><name><surname>van der Waerden</surname><given-names>B. L.</given-names></name>
+<article-title>Die lange reichweite der regelmassigen atomanordnung in
+mischkristallen</article-title>. <source>Zeitschrift f&#x000fc;r Physik</source>
+<volume>118</volume>, <fpage>573</fpage>&#x02013;<lpage>479</lpage> (<year>1941</year>).</mixed-citation></ref><ref id="b26"><mixed-citation publication-type="journal"><name><surname>Hen</surname><given-names>I.</given-names></name>, &#x00026; <name><surname>Young</surname><given-names>A.
+P.</given-names></name>
+<article-title>Solving the graph-isomorphism problem with a quantum annealer</article-title>.
+<source>Phys. Rev. A</source>
+<volume>86</volume>, <fpage>042310</fpage> (<year>2012</year>).</mixed-citation></ref><ref id="b27"><mixed-citation publication-type="journal"><name><surname>Lieb</surname><given-names>E.</given-names></name>, <name><surname>Schultz</surname><given-names>T.</given-names></name> &#x00026; <name><surname>Mattis</surname><given-names>D.</given-names></name>
+<article-title>Two soluble models of an antiferromagnetic chain</article-title>. <source>Ann.
+Phys.</source>
+<volume>16</volume>, <fpage>407</fpage>&#x02013;<lpage>466</lpage> (<year>1961</year>).</mixed-citation></ref><ref id="b28"><mixed-citation publication-type="journal"><name><surname>Sachdev</surname><given-names>S.</given-names></name>
+<source>Quantum Phase Transitions</source> (Cambridge University Press, Cambridge, <year>1999</year>).</mixed-citation></ref><ref id="b29"><mixed-citation publication-type="other"><name><surname>Dutta</surname><given-names>A.</given-names></name>
+<italic>et al.</italic>
+<article-title>Quantum phase transitions in transverse field spin models: From
+Statistical Physics to Quantum Information</article-title>. arXiv:1012.0653.</mixed-citation></ref><ref id="b30"><mixed-citation publication-type="journal"><name><surname>Arvind</surname><given-names>V.</given-names></name> &#x00026; <name><surname>Tor&#x000e1;n</surname><given-names>J.</given-names></name>
+<article-title>Isomorphism Testing: Perspective and Open Problems</article-title>.
+<source>Bulletin of the EATCS</source>
+<volume>86</volume>, <fpage>66</fpage>&#x02013;<lpage>84</lpage> (<year>2005</year>).</mixed-citation></ref><ref id="b31"><mixed-citation publication-type="journal"><name><surname>Brooke</surname></name>
+<italic>et al.</italic>
+<article-title>J. Quantum Annealing of a Disordered Magnet</article-title>. <source>Science</source>
+<volume>284</volume>, <fpage>779781</fpage> (<year>1999</year>).</mixed-citation></ref><ref id="b32"><mixed-citation publication-type="journal"><name><surname>Finnila</surname><given-names>A.</given-names></name>
+<italic>et al.</italic>
+<article-title>Quantum annealing: a new method for minimizing multidimensional
+functions</article-title>. <source>Chem. Phys. Lett.</source>
+<volume>219</volume>, <fpage>343</fpage>&#x02013;<lpage>348</lpage> (<year>1994</year>).</mixed-citation></ref><ref id="b33"><mixed-citation publication-type="journal"><name><surname>Kadowaki</surname><given-names>T.</given-names></name> &#x00026; <name><surname>Nishimori</surname><given-names>H.</given-names></name>
+<article-title>Quantum annealing in the transverse Ising model</article-title>. <source>Phys. Rev.
+E</source>
+<volume>58</volume>, <fpage>5355</fpage>&#x02013;<lpage>5363</lpage> (<year>1998</year>).</mixed-citation></ref><ref id="b34"><mixed-citation publication-type="other"><name><surname>Farhi</surname><given-names>E.</given-names></name>
+<italic>et al.</italic>
+<article-title>Quantum Computation by Adiabatic Evolution</article-title>.
+arXiv:quant-ph/0001106.</mixed-citation></ref><ref id="b35"><mixed-citation publication-type="journal"><name><surname>Aharonov</surname><given-names>D.</given-names></name>
+<italic>et al.</italic>
+<article-title>Adiabatic Quantum Computation is Equivalent to Standard Quantum
+Computation</article-title>. <source>SIAM J. Comput.</source>
+<volume>37</volume>, <fpage>166</fpage> (<year>2007</year>).</mixed-citation></ref><ref id="b36"><mixed-citation publication-type="journal"><name><surname>Boixo</surname><given-names>S.</given-names></name>
+<italic>et al.</italic>
+<article-title>Experimental signature of programmable quantum annealing</article-title>.
+<source>Nature Comm.</source>
+<volume>4</volume>, <fpage>3067</fpage> (<year>2013</year>)</mixed-citation></ref><ref id="b37"><mixed-citation publication-type="journal"><name><surname>Boixo</surname><given-names>S.</given-names></name>
+<italic>et al.</italic>
+<article-title>Evidence for quantum annealing with more than one hundred
+qubits</article-title>. <source>Nature Physics</source>
+<volume>10</volume>, <fpage>218</fpage> (<year>2014</year>).</mixed-citation></ref><ref id="b38"><mixed-citation publication-type="other"><name><surname>Smolin</surname><given-names>J. A.</given-names></name> &#x00026; <name><surname>Smith</surname><given-names>S.</given-names></name>
+<article-title>Classical signature of quantum annealing</article-title>.
+arXiv:1305.4904.</mixed-citation></ref><ref id="b39"><mixed-citation publication-type="other"><name><surname>Shin</surname><given-names>S. W.</given-names></name>
+<italic>et al.</italic>
+<article-title>How &#x0201c;Quantum&#x0201d; is the D-Wave Machine?</article-title> arXiv:1401.7087.</mixed-citation></ref><ref id="b40"><mixed-citation publication-type="other"><name><surname>Vinci</surname><given-names>W.</given-names></name>
+<italic>et al.</italic>
+<article-title>Distinguishing Classical and Quantum Models for the D-Wave
+Device</article-title>. arXiv:1403.4228.</mixed-citation></ref><ref id="b41"><mixed-citation publication-type="journal"><name><surname>Albash</surname><given-names>T.</given-names></name>
+<italic>et al.</italic>
+<article-title>Quantum adiabatic Markovian master equations</article-title>. <source>New J.
+Phys.</source>
+<volume>14</volume>, <fpage>123016</fpage> (<year>2012</year>).</mixed-citation></ref></ref-list></back><floats-group><fig id="f1"><label>Figure 1</label><caption><title>The statistical distribution of measurement outcomes <italic>N<sub>occ</sub></italic> on the
+pairs <inline-formula id="m36"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="d33e1214" xlink:href="srep05703-m36.jpg"/></inline-formula> obtained by
+averaging over 100 cycles for each of the 100 different embeddings considered (10000
+programming cycles in total).</title><p>The horizontal red line corresponds to the median of the data while the edges of the
+blue boxes correspond to the 1st and 3rd quartile. Each red cross is an outlier
+measurement. The outcomes have been filtered after choosing the pair of classical
+observables {<bold>e</bold><sub>0</sub>, <bold>m</bold><sub>0</sub>}. Data showed in the left panels
+correspond to the choice <italic>J</italic> = <italic>h</italic> = 1/7. In the right panels <italic>J</italic> =
+<italic>h</italic> = 1, that is the maximum strength of the couplings allowed by the hardware.
+With the given choice of classical observables, the distribution of measurement outcomes
+is not able to distinguish the two graphs, nor at the classical, neither at the quantum
+level.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="srep05703-f1"/></fig><fig id="f2"><label>Figure 2</label><caption><title>The statistical distribution of measurement outcomes <italic>N<sub>occ</sub></italic> on the
+pairs <inline-formula id="m37"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="d33e1251" xlink:href="srep05703-m37.jpg"/></inline-formula>.</title><p>The outcomes have been now filtered after choosing a triplet of classical observables
+{<bold>e</bold><sub>0</sub>, <bold>m</bold><sub>0</sub>, &#x003a9;<sup>2</sup>}. Data showed in the
+left panels correspond to the choice <italic>J</italic> = <italic>h</italic> = 1/7. In the right panels
+<italic>J</italic> = <italic>h</italic> = 1. Using a third observable distinguishes the two graphs at the
+classical level.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="srep05703-f2"/></fig><fig id="f3"><label>Figure 3</label><caption><title>The statistical distribution of measurement outcomes <italic>N<sub>occ</sub></italic> for the
+pairs {<italic>G</italic><sub>27</sub>, <inline-formula id="m38"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="d33e1296" xlink:href="srep05703-m38.jpg"/></inline-formula>}.</title><p><italic>J</italic> = <italic>h</italic> = 1/7 in the left panels. <italic>J</italic> = <italic>h</italic> = 1 in the right
+panels. Filtering the outcomes after choosing the triplet {<bold>e</bold><sub>0</sub>,
+<bold>m</bold><sub>0</sub>, &#x003a9;<sup>2</sup>} does not distinguishes the graphs at the
+classical level, and the introduction of additional observables is needed. The shape of
+the two distributions is also the same, meaning that the two graphs are not
+distinguished at the quantum level either.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="srep05703-f3"/></fig></floats-group></article>

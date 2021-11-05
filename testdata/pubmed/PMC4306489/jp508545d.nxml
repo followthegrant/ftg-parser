@@ -1,0 +1,574 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.0 20120330//EN" "JATS-archivearticle1.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article" xml:lang="EN"><?properties open_access?><front><journal-meta><journal-id journal-id-type="nlm-ta">J Phys Chem B</journal-id><journal-id journal-id-type="iso-abbrev">J Phys Chem B</journal-id><journal-id journal-id-type="publisher-id">jp</journal-id><journal-id journal-id-type="coden">jpcbfk</journal-id><journal-title-group><journal-title>The Journal of Physical Chemistry. B</journal-title></journal-title-group><issn pub-type="ppub">1520-6106</issn><issn pub-type="epub">1520-5207</issn><publisher><publisher-name>American Chemical
+Society</publisher-name></publisher></journal-meta><article-meta><article-id pub-id-type="pmid">25426702</article-id><article-id pub-id-type="pmc">4306489</article-id><article-id pub-id-type="doi">10.1021/jp508545d</article-id><article-categories><subj-group><subject>Article</subject></subj-group></article-categories><title-group><article-title>Why Bound Amantadine Fails
+to Inhibit Proton Conductance
+According to Simulations of the Drug-Resistant Influenza A M2 (S31N)</article-title></title-group><contrib-group><contrib contrib-type="author" id="ath1"><name><surname>Gleed</surname><given-names>Mitchell
+L.</given-names></name></contrib><contrib contrib-type="author" corresp="yes" id="ath2"><name><surname>Busath</surname><given-names>David D.</given-names></name><xref rid="ath2" ref-type="other">*</xref></contrib><aff id="aff1">Department
+of Physiology
+and Developmental Biology, <institution>Brigham Young
+University</institution>, Provo, Utah 84602, <country>United
+States</country></aff></contrib-group><pub-date pub-type="pmc-release"><day>18</day><month>11</month><year>2015</year></pub-date><pub-date pub-type="epub"><day>18</day><month>11</month><year>2014</year></pub-date><pub-date pub-type="ppub"><day>22</day><month>01</month><year>2015</year></pub-date><volume>119</volume><issue>3</issue><issue-title>William L. Jorgensen Festschrift</issue-title><fpage>1225</fpage><lpage>1231</lpage><history><date date-type="received"><day>23</day><month>08</month><year>2014</year></date><date date-type="rev-recd"><day>15</day><month>11</month><year>2014</year></date></history><permissions><copyright-statement>Copyright &#x000a9; 2014 American
+Chemical Society</copyright-statement><copyright-year>2014</copyright-year><copyright-holder>American
+Chemical Society</copyright-holder><license><license-p>This is an open access article published under an ACS AuthorChoice <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/page/policy/authorchoice_termsofuse.html">License</ext-link>, which permits copying and redistribution of the article or any adaptations for non-commercial purposes.</license-p></license></permissions><abstract><p content-type="toc-graphic"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="jp-2014-08545d_0008" id="ab-tgr1"/></p><p>The mechanisms responsible for drug
+resistance in the Asn31 variant
+of the M2 protein of influenza A are not well understood. Molecular
+dynamics simulations were performed on wild-type (Ser31) and S31N
+influenza A M2 in the homotetramer configuration. After evaluation
+of 13 published M2 structures, a solid-state NMR structure with amantadine
+bound was selected for simulations, an S31N mutant structure was developed
+and equilibrated, and the native and mutant structures were used to
+determine the binding behavior of amantadine and the dynamics of water
+in the two channels. Amantadine is stable in the plugging region of
+wild-type M2, with the adamantane in contact with the Val27 side chains,
+while amantadine in S31N M2 has more variable movement and orientation,
+and spontaneously moves lower into the central cavity of the channel.
+Free energy profiles from umbrella sampling support this observation.
+In this configuration, water surrounds the drug and can easily transport
+protons past it, so the drug binds without blocking proton transport
+in the S31N M2 channel.</p></abstract><funding-group><funding-statement><funding-source>National Institutes of Health, United States</funding-source></funding-statement></funding-group><custom-meta-group><custom-meta><meta-name>document-id-old-9</meta-name><meta-value>jp508545d</meta-value></custom-meta><custom-meta><meta-name>document-id-new-14</meta-name><meta-value>jp-2014-08545d</meta-value></custom-meta><custom-meta><meta-name>ccc-price</meta-name><meta-value/></custom-meta></custom-meta-group></article-meta></front><body><sec sec-type="intro" id="sec1"><title>Introduction</title><p>The M2 proton channel
+plays an important role in transporting protons,
+both across the viral envelope and across the Golgi of the infected
+cell in influenza A or B. The structure and dynamics of water molecules
+in the channel is of fundamental importance for the transport of protons
+through the channel. Blocking the M2 channel arrests these important
+proton transport processes in the viral replication cycle and prevents
+infection.</p><p>Drugs such as amantadine and rimantadine, which were
+once effective
+at treating influenza A, have become obsolete due to widespread resistance.<sup><xref ref-type="bibr" rid="ref1">1</xref></sup> Influenza A with M2 featuring a mutation from
+Ser31 to Asn31 (S31N) has become prevalent worldwide,<sup><xref ref-type="bibr" rid="ref2">2</xref></sup> and no effective anti-M2 influenza medication is currently
+available for its treatment. Understanding why drugs lose efficacy
+after viral mutation can help inspire changes to existing drugs or
+lead to the invention of novel drugs adapted to existing and future
+mutations.</p><p>Molecular modeling and dynamics simulations have
+proven useful
+in studying biological systems, and many studies have been performed
+on M2 channels<sup><xref ref-type="bibr" rid="ref3">3</xref>&#x02212;<xref ref-type="bibr" rid="ref6">6</xref></sup> and its inhibitors.<sup><xref ref-type="bibr" rid="ref7">7</xref>&#x02212;<xref ref-type="bibr" rid="ref10">10</xref></sup> Some of the most salient recent observations include the general
+shape of the free energy profile for the passage of amantadine through
+wild-type (WT) and V27A M2,<sup><xref ref-type="bibr" rid="ref11">11</xref></sup> the three
+main amino positions observed for amine compounds in the WT channel,<sup><xref ref-type="bibr" rid="ref7">7</xref></sup> the C-ward amine configuration for amantadine
+in the WT channel and N-ward isoxazole configuration for a novel S31N
+M2 blocker in the S31N channel,<sup><xref ref-type="bibr" rid="ref12">12</xref></sup> and the
+agreement with experimental efficacies for relative binding energies
+calculated using free energy perturbation for a set of adamantane
+compounds in WT and S31N M2 channels.<sup><xref ref-type="bibr" rid="ref13">13</xref></sup> The important roles of luminal water in the binding cavity have
+been highlighted in these studies, all of which used TIP3P water to
+maintain consistency with the protein, lipid, and ion force fields.
+They all use 4-fold symmetric, homotetrameric M2-truncate structures.
+However, they vary in the precise M2 structures, which have been determined
+with different methods, at different temperatures, and in different
+lipidic or detergent environments; and which vary in M2 His37 and
+drug titration states. These important physical factors, among others
+(presence or absence of counterions in the channel, structure of the
+protein N- and C-termini, lipid characteristics, etc.), are still
+poorly established and are currently in the process of evaluation.
+Although recent FRET data indicate that the functional protein may
+be dimeric in cells,<sup><xref ref-type="bibr" rid="ref14">14</xref></sup> we continue to focus
+on the homotetrameric structure for this investigation to agree with
+earlier structural<sup><xref ref-type="bibr" rid="ref15">15</xref>,<xref ref-type="bibr" rid="ref16">16</xref></sup> and functional studies.<sup><xref ref-type="bibr" rid="ref17">17</xref>&#x02212;<xref ref-type="bibr" rid="ref19">19</xref></sup> We describe our more comprehensive rationale for selection of the
+other physical factors mentioned. This study aims to use molecular
+dynamics simulations to compare binding behavior of amantadine when
+positioned inside WT or the primary amantadine-insensitive M2 (S31N)
+with the goal of identifying the mechanism of resistance.</p></sec><sec sec-type="methods" id="sec2"><title>Methodology</title><p>M2 channel structures used in the study were derived from the RCSB
+Protein Data Bank. The homotetrameric protein was embedded in a membrane
+(situated perpendicular to the <italic>z</italic> axis) comprised
+of 96 1,2-dimyristoyl-<italic>sn</italic>-glycero-3-phosphocholine
+(DMPC) lipid molecules to agree with the lipid used for most solid-state
+NMR structure determinations. Periodic boundary conditions with unit
+cells of about 60 &#x000d7; 60 &#x000d7; 90 &#x000c5;<sup>3</sup> in <italic>x</italic>, <italic>y</italic>, and <italic>z</italic> dimensions
+were used for all systems, and TIP3P<sup><xref ref-type="bibr" rid="ref20">20</xref></sup> water
+molecules with &#x0223c;150 mM NaCl (net electroneutral system) encased
+the bilayer. Molecular dynamics packages CHARMM37,<sup><xref ref-type="bibr" rid="ref21">21</xref></sup> NAMD 2.9,<sup><xref ref-type="bibr" rid="ref22">22</xref></sup> and VMD 1.9.1<sup><xref ref-type="bibr" rid="ref23">23</xref></sup> were used for simulations and analysis, and
+the CHARMM36 all-atom empirical force field was used, except as noted,
+to describe proteins and lipids.<sup><xref ref-type="bibr" rid="ref24">24</xref>&#x02212;<xref ref-type="bibr" rid="ref28">28</xref></sup></p><p>Unless otherwise noted, all simulations were
+performed with positively
+charged amantadine and neutral His37 residues. Despite solid-state
+NMR data that shows the p<italic>K</italic><sub>a</sub> for the His37
+tetrad is near 8.0 for the first two His37 protonations,<sup><xref ref-type="bibr" rid="ref29">29</xref></sup> we reasoned that each His37 side chain would
+be protonated only at the N&#x003b5; site under conditions of neutral
+pH with positively charged amantadine bound.<sup><xref ref-type="bibr" rid="ref30">30</xref>,<xref ref-type="bibr" rid="ref31">31</xref></sup> Although amantadine has a p<italic>K</italic><sub>a</sub> of 10.1
+in aqueous solution and has been shown by solid-state NMR to be neutral
+in the M2 channel at pH 8.0,<sup><xref ref-type="bibr" rid="ref32">32</xref></sup> we reasoned
+that the p<italic>K</italic> shift expected upon binding in the low
+dielectric region would probably not be sufficient to result in deprotonation
+of the drug under neutral, or at least under acidic, conditions.</p><p>Using the Nos&#x000e9;&#x02013;Hoover Langevin piston pressure control<sup><xref ref-type="bibr" rid="ref33">33</xref>,<xref ref-type="bibr" rid="ref34">34</xref></sup> and Langevin dynamics, systems were kept, after initial heating,
+near 1 atm isotropically (i.e., zero surface tension) and 310 K to
+achieve the NPT ensemble. Long-range Coulombic interactions were calculated
+using the particle mesh Ewald (PME) algorithm.<sup><xref ref-type="bibr" rid="ref35">35</xref></sup> The Shake method<sup><xref ref-type="bibr" rid="ref36">36</xref></sup> was used
+to keep all bonds with hydrogen rigid at ideal lengths and angles,
+and short-range electrostatic and van der Waals forces were smoothed
+using a switching distance of 11 &#x000c5;.</p><sec id="sec2.1"><title>Channel Hydration and Initial
+Equilibration</title><p>RCSB Protein
+Data Bank structures 1NYJ,<sup><xref ref-type="bibr" rid="ref37">37</xref></sup>2H95,<sup><xref ref-type="bibr" rid="ref38">38</xref></sup>2KAD,<sup><xref ref-type="bibr" rid="ref39">39</xref></sup>2KIH,<sup><xref ref-type="bibr" rid="ref40">40</xref></sup>2KIX,<sup><xref ref-type="bibr" rid="ref41">41</xref></sup>2KQT,<sup><xref ref-type="bibr" rid="ref42">42</xref></sup>2KWX,<sup><xref ref-type="bibr" rid="ref43">43</xref></sup>2L0J,<sup><xref ref-type="bibr" rid="ref31">31</xref></sup>2LJB,<sup><xref ref-type="bibr" rid="ref44">44</xref></sup>2LJC,<sup><xref ref-type="bibr" rid="ref44">44</xref></sup>2LY0,<sup><xref ref-type="bibr" rid="ref12">12</xref></sup>2RLF,<sup><xref ref-type="bibr" rid="ref45">45</xref></sup> and 3LBW(<xref ref-type="bibr" rid="ref16">16</xref>) were imported, residues beyond position
+46 were truncated, and the transmembrane domains of the M2 channels
+were embedded in DMPC lipid in water, as described previously. Multiple
+phases of energy minimization with decreasing harmonic restraints
+were performed to bring the systems toward an energy minimum under
+the CHARMM force field. Following minimization, water molecules were
+inserted into channel pores in either excess (overhydrated) or low
+(underhydrated) amounts in separate systems to provide starting points
+for water to begin equilibration. With the protein backbone lightly
+restrained to the average backbone coordinates of each channel&#x02019;s
+set of models (or, if the structure consists of just one model, to
+the backbone of that model), the systems were equilibrated for 6 ns
+without drug present to allow water to exit or fill the channel pore.
+Varying random-number-generator seeds for initial velocity assignments
+were used to produce three distinct runs of 6 ns each, which proved
+to be sufficient time to essentially equilibrate the overfilled channels.
+CHARMM was used to postprocess the trajectories for RMSD and water-content
+calculations.</p></sec><sec id="sec2.2"><title>Unrestrained Dynamics of Drugged WT and S31N
+Systems</title><p>The solid-state NMR amantadine-bound structure by
+Cady et al., 2KQT, was ultimately
+selected to model WT M2, and from the same structure, an S31N mutant
+homology model was created with Swiss-PdbViewer,<sup><xref ref-type="bibr" rid="ref46">46</xref>,<xref ref-type="bibr" rid="ref47">47</xref></sup> which was subsequently hydrated and equilibrated as performed for
+the other channels. The M2 blocker, amantadine, was used in each system
+to test for an aqueous path for proton conductance with drug present
+for both WT and S31N M2 channels. Force field parameters for amantadine
+were generated using adamantane parameters from the CHARMM general
+force field (CGenFF) version 36<sup><xref ref-type="bibr" rid="ref48">48</xref>,<xref ref-type="bibr" rid="ref49">49</xref></sup> using ParamChem.<sup><xref ref-type="bibr" rid="ref50">50</xref>,<xref ref-type="bibr" rid="ref51">51</xref></sup></p><p>In the initial simulations with unrestrained drug molecules,
+protonated or deprotonated amantadine molecules were added to previously
+hydrated WT and S31N M2 channel systems. Drugs were inserted with
+adamantane carbon atoms positioned &#x02265;2.2 &#x000c5; away (in the
+C-terminal direction) from the Val27 side chain atoms and oriented
+with the amino group pointing toward the C-terminus in order to agree
+with previous findings.<sup><xref ref-type="bibr" rid="ref52">52</xref></sup> For electroneutrality,
+a chloride ion (Cl<sup>&#x02013;</sup>) was added near the amine group
+in systems with protonated drug. Water molecules within 2.2 &#x000c5;
+of amantadine were deleted, and several rounds of energy minimization
+were performed.</p><p>Each system was heated and equilibrated with
+five different initial
+random velocity sets and then independently simulated for 10.5 ns
+with a time step of 1.5 fs, using NAMD. Following simulations, center-of-mass
+positions were determined from the simulation trajectories, oriented
+frame-wise to the protein backbone, using CHARMM. Two-dimensional
+density profiles were produced using the VMD Density Profile Tool,<sup><xref ref-type="bibr" rid="ref53">53</xref></sup> three-dimensional volume densities were calculated
+using VMD&#x02019;s VolMap plugin, and volume-density maps were processed
+from VolMap output using OpenDX.</p></sec><sec id="sec2.3"><title>Potential of Mean Force
+Computation</title><p>Umbrella sampling
+of protonated amantadine in hydrated WT and S31N M2 channels was carried
+out using CHARMM37. A harmonic restraint of 0.1 kcal/mol-&#x000c5;<sup>2</sup> was applied to hold each protein backbone atom to the highly
+colocalized protein backbone coordinates averaged over all 17 2KQT PDB models. These
+channel backbone restraints allow only modest fluctuations of the
+tetramer, such that the drug binding cavity is readily explored on
+a short time scale, at the obvious cost of not fully simulating the
+protein backbone mobility at each drug umbrella position. 2KQT was determined with
+amantadine in the binding site. There, and at most other sites, where
+the compound is smaller than the cavity, such fluctuations are not
+expected to impact the free energy significantly. A <italic>z</italic>-dimensional harmonic restraint of 10 kcal/mol-&#x000c5;<sup>2</sup> was applied to the center of mass of the drug&#x02019;s adamantane
+cage as an umbrella potential.</p><p>Langevin dynamics were used to
+bring each system to 310 K, after which the Nos&#x000e9;&#x02013;Hoover
+thermostat and the Verlet leapfrog algorithm<sup><xref ref-type="bibr" rid="ref54">54</xref></sup> were used to equilibrate each system at constant pressure and temperature
+for 1.5 ns with a 1.5 fs time step. The effects of initial amantadine
+orientation were explored by inserting amantadine at each umbrella
+window with its amine group oriented either toward the positive-<italic>z</italic> dimension or negative-<italic>z</italic> dimension along
+the simulation <italic>z</italic> axis, after which any overlapping
+water was removed. The preliminary studies showed that Cl<sup>&#x02013;</sup> would fit in the channel with amantadine, but we reasoned that the
+probability of Cl<sup>&#x02013;</sup> being in the channel at the time
+of amantadine entry, or entering the channel in conjunction with amantadine,
+would be low, so we excluded Cl<sup>&#x02013;</sup> from the channel
+for these studies. Two runs with randomized initial velocity assignments
+were performed for each amantadine orientation. Windows were sampled
+at 0.25 &#x000c5; intervals from &#x02212;4 to 12 &#x000c5; along the simulation <italic>z</italic> axis for a total of 65 windows. For each trajectory frame,
+adamantane center-of-mass positions were extracted and processed with
+the weighted histogram analysis program, WHAM,<sup><xref ref-type="bibr" rid="ref55">55</xref></sup> for the potential of mean force (PMF) calculation. A convergence
+tolerance of 1 &#x000d7; 10<sup>&#x02013;6</sup> and 750 bins were used
+to produce the PMF for each channel, orientation, and starting velocity.
+After examining the results and finding substantial amantadine orientation
+sampling, the PMFs from the four runs, each referenced to its global
+minimum, were averaged and then re-referenced to the global minimum
+of the average PMF for each channel.</p></sec></sec><sec id="sec3"><title>Results and Discussion</title><sec id="sec3.1"><title>Preliminary
+Equilibration</title><p>The number of water molecules
+and the root-mean-square deviation (RMSD) in protein atom position
+for the set of 13 aforementioned M2 channels from the RCSB Protein
+Data Bank were studied (see Table S1 in the <xref rid="notes-1" ref-type="notes">Supporting
+Information</xref>). Each channel was placed in DMPC lipid, hydrated,
+and allowed to equilibrate. The average amount of water contained
+in a sphere spanning protein residues 27&#x02013;41 over the last 2
+ns of simulation, the average backbone RMSD of residues 26&#x02013;43
+over the last 2 ns of simulation, and snapshot comparisons between
+initial PDB structures and structures from final, equilibrated trajectory
+frames were determined for each structure (Figure <xref rid="fig1" ref-type="fig">1</xref>).</p><fig id="fig1" position="float"><label>Figure 1</label><caption><p>Averages over the last 2 ns of three 6 ns simulations with light
+backbone constraints, here using the CHARMM27 force field. Each M2
+channel&#x02019;s (a) average protein-backbone RMSD of residues 26&#x02013;43
+from model 1 of its PDB structure, (b) average water content between
+residues 27&#x02013;41, and (c) initial/final trajectory frames are
+shown. The end-view snapshots of the initial (blue) and final (red)
+structures below demonstrate the relative stability of the tilted
+helix bundle. Side views better show the variations between PDB models,<sup><xref ref-type="bibr" rid="ref56">56</xref></sup> but the end-view was chosen here to demonstrate
+the volume of the central cavities.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="jp-2014-08545d_0001" id="gr1" position="float"/></fig><p>The M2 crystal structure, 3LBW, had the smallest average RMSD when equilibrated
+but
+had significantly less water content (about 12 lumenal molecules)
+than all of the other structures, each of which have over 18 water
+molecules in the channel lumen. After filling and equilibrating the
+solid-state NMR M2 protein (see Figure S1 in the <xref rid="notes-1" ref-type="notes">Supporting Information</xref>), 2KQT had the next-lowest average RMSD and
+water content (about 22 lumenal molecules) more closely matched the
+water content of the other structures tested. For these reasons, and
+because the M2 structure was determined and refined in liquid crystal
+bilayer conditions with amantadine present, 2KQT was used for the
+remainder of the study and as the template structure for the creation
+of an S31N homology model.</p></sec><sec id="sec3.2"><title>Amantadine Protonation and Orientation</title><p>With neutral
+amantadine positioned in the hydrated WT M2, unrestrained dynamics
+simulations showed that the amine nitrogen of amantadine flipped between
+facing the C-terminus and the N-terminus and back in three out of
+five 10.5 ns simulations of WT M2 protein (see Figure S2 in the <xref rid="notes-1" ref-type="notes">Supporting Information</xref>). In contrast, with protonated
+amantadine and a Cl<sup>&#x02013;</sup> in the channel, in none of
+the five 10.5 ns simulations did the amine nitrogen flip to face the
+N-terminus.</p><p>During simulations, the Cl<sup>&#x02013;</sup> generally
+stayed near the amine group of amantadine. Apparently, the ionic interaction
+between the Cl<sup>&#x02013;</sup> in the channel and the protonated
+amino group of amantadine was strong enough to prevent amantadine
+from reversing direction and Cl<sup>&#x02013;</sup> from leaving the
+channel. When Cl<sup>&#x02013;</sup> was excluded and the amine group
+left deprotonated, amantadine was more prone to reverse orientation
+toward the N-terminus.</p></sec><sec id="sec3.3"><title>Amantadine Localization: WT vs S31N Channel</title><p>Starting
+from the hydrated, equilibrated amantadine<sup>+</sup>-WT and amantadine<sup>+</sup>-S31N systems, unrestrained simulations of 10.5 ns were performed
+using NAMD. Adamantane center-of-mass positions were compared from
+the simulation trajectories (Figure <xref rid="fig2" ref-type="fig">2</xref>a). In
+WT M2 simulations, amantadine stayed relatively stable between 6 and
+7.5 &#x000c5; along the <italic>z</italic> axis. In simulations of S31N
+M2, amantadine rapidly drifted toward the C-terminus (in some cases
+before the end of the heating phase) and, throughout the five separate
+simulations, appeared to be less stable, with positions ranging from
+2 to 6 &#x000c5; along the <italic>z</italic> axis. Mass-density profiles
+of the adamantane amino carbon (C1) averaged over the five simulations
+for each channel confirm this result (Figure <xref rid="fig2" ref-type="fig">2</xref>b).</p><fig id="fig2" position="float"><label>Figure 2</label><caption><p>Amantadine positions during five unrestrained simulations of WT
+(blue) and S31N (red) M2. (a) Superimposed adamantane center of mass <italic>z</italic>-dimension trajectories for five runs. (b) Carbon mass-density
+profile of the adamantane C1 averaged over all five simulations. Black
+arrowheads in part b denote the mean &#x003b1;-carbon positions for
+Gly34 (left) and Ser/Asn31 (right).</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="jp-2014-08545d_0002" id="gr2" position="float"/></fig><p>The carbon mass-density profile and center-of-mass positions
+indicate
+significantly different binding-site behavior between WT and S31N
+M2 channels in the presence of amantadine. When placed in WT M2, amantadine
+stayed very stable within just a few angstroms of the Val27 residues
+(Figure <xref rid="fig2" ref-type="fig">2</xref>a and b, blue). However, when placed
+in S31N M2, amantadine drifted toward the C-terminus, with greater
+diversity between runs and throughout each simulation (Figure <xref rid="fig2" ref-type="fig">2</xref>a and b, red). Thus, it appears that the S31N mutation
+alters the binding site of M2, preventing amantadine stability within
+the narrower region of the channel between residue positions 27 and
+31.</p></sec><sec id="sec3.4"><title>Water Density</title><p>To determine whether drug position affects
+the location of water molecules and the potential to form water-wires
+for Grotthus transport of protons in M2, linear water densities throughout
+all simulations were calculated (Figure <xref rid="fig3" ref-type="fig">3</xref>).</p><fig id="fig3" position="float"><label>Figure 3</label><caption><p>Water
+density, averaged over the five unrestrained simulations
+of Figure <xref rid="fig2" ref-type="fig">2</xref>. WT (blue) and S31N (red) M2 channels
+with protonated amantadine and Cl<sup>&#x02013;</sup> in the central
+cavity. Black arrowheads denote the mean &#x003b1;-carbon positions
+for Gly34 (left) and Ser/Asn31 (right).</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="jp-2014-08545d_0003" id="gr3" position="float"/></fig><p>The water-density profiles show that the WT M2 channel has
+very
+low water density from 4 to 6 &#x000c5; on the <italic>z</italic> axis,
+and in S31N M2, significantly more water density is observed in the
+same region. Cross-sectional volume-density maps confirm this finding:
+WT M2 shows very little water density around and above the drug in
+the channel pocket (Figure <xref rid="fig4" ref-type="fig">4</xref>a), where S31N
+M2 shows significant water density in this region (Figure <xref rid="fig4" ref-type="fig">4</xref>b).</p><fig id="fig4" position="float"><label>Figure 4</label><caption><p>Amantadine (red) and water (blue) cross-sectional volume
+densities
+are shown for both (a) WT and (b) S31N M2 channels averaged over five
+simulations. Trajectory snapshots of two M2 monomers (green ribbons)
+are superimposed, with stick figures for Val27, Ser/Asn31, His37,
+and Trp41 side chains from top to bottom, respectively.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="jp-2014-08545d_0004" id="gr4" position="float"/></fig><p>It is also noticeable in Figure <xref rid="fig4" ref-type="fig">4</xref> that the
+amantadine density is more distributed in the binding site in the
+S31N channel, with only modest density N-ward from the Ser/Asn31 side
+chains, in contrast to WT M2. Furthermore, amantadine density appears
+to favor one side of the channel, allowing water to fill the available
+space laterally. It appears that amantadine is repelled off of the
+channel axis by water molecules attracted into the space, as there
+are no obvious attractive forces in the walls of the symmetrical channel
+that would pull it away from the axis of the channel.</p><p>The difference
+in water density is readily observed when visualizing
+the trajectories as movies. It is rare to see any water molecules
+approach the upper portion of amantadine in WT M2 (see snapshot in
+Figure <xref rid="fig5" ref-type="fig">5</xref>a); however, in S31N M2, amantadine
+is often oriented in such a way that continuous strands of water can
+be observed to form at different times throughout the simulations
+(Figure <xref rid="fig5" ref-type="fig">5</xref>b).</p><fig id="fig5" position="float"><label>Figure 5</label><caption><p>Trajectory snapshots showing water molecules,
+two adjacent protein
+monomers (with the N- and C-termini arranged from top to bottom, respectively),
+and amantadine (shown in red) in (a) WT and (b) S31N M2 systems.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="jp-2014-08545d_0005" id="gr5" position="float"/></fig><p>The results illustrate that WT
+M2 with amantadine present has much
+less water density near the Val27 residues or lateral to the amantadine.
+S31N M2 has much more water density above amantadine, especially as
+it drifts toward the C-terminus, as well as a visible amount of water
+density surrounding the drug in all simulations. The region between
+Ser/Asn31 and Gly34, according to volume densities and adamantane-cage
+position plots, seems to allow for amantadine to be more flexible
+in its amine orientation and lateral motion, thus preventing consistent
+block of proton conductance.</p></sec><sec id="sec3.5"><title>Umbrella Sampling of WT and S31N Channels</title><p>To investigate
+the reasons behind the difference in binding behavior of amantadine
+to WT and S31N M2, free energy profiles of amantadine through each
+channel were computed via umbrella sampling. The potential of mean
+force (PMF) for each channel was calculated by analyzing the position
+of the adamantane cage of amantadine, the center of mass of which
+was constrained to specific <italic>z</italic> coordinates at 0.25
+&#x000c5; intervals, in independent simulations (Figure <xref rid="fig6" ref-type="fig">6</xref>).</p><fig id="fig6" position="float"><label>Figure 6</label><caption><p>Free energy landscapes of amantadine in WT (blue) and S31N (red)
+M2 channels. The free energy minimum of each channel was set to 0
+kcal/mol. One standard deviation between runs is shown in dotted lines
+of the corresponding color above and below each trace. Gly34 and Ser/Asn31
+mean &#x003b1;-carbon positions (black arrowheads) are shown for reference
+from left to right, respectively.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="jp-2014-08545d_0006" id="gr6" position="float"/></fig><p>The WT PMF shows deep wells at around 0 and 4 &#x000c5;, with
+a broad,
+low shelf at around 6 &#x000c5; along the <italic>z</italic> axis. In
+contrast, the S31N structure produces a steady decline in the free
+energy profile as amantadine moves from the Val27 entryway, followed
+by a very steep decline between 6 and 4 &#x000c5;. For the WT, the shelf
+at 6 &#x000c5; represents a level energy landscape where amantadine can
+dwell with its adamantane center of mass positioned near the Ser31
+residues. Here, the adamantane cage is plugged into the Val27 sphincter,
+filling the lumen as in the simulations of Figure <xref rid="fig2" ref-type="fig">2</xref>b. The deeper well at 3.5 &#x000c5; indicates a somewhat lower
+free energy for amantadine sunk deeper into the central cavity by
+a few &#x000c5;. However, the modest difference between the two free
+energy levels suggests that the amantadine can frequently and rapidly
+return to the blocking position at 6 &#x000c5;. Furthermore, water molecules
+below the Ser31 region in WT are more ordered, and are consequently
+less likely to be displaced.<sup><xref ref-type="bibr" rid="ref7">7</xref></sup> In contrast,
+in the S31N construct, the free energy profile would drive amantadine
+relentlessly to the deeper region of the central cavity, as observed
+in the unconstrained drug simulations above.</p><p>Additional unconstrained
+50 ns simulations with amantadine started
+at the lower position in WT M2 (and a Cl<sup>&#x02013;</sup> nearby)
+also show that amantadine can return to the blocking position at 6
+&#x000c5; from the lower free energy well at 3 &#x000c5;. In two out of
+five runs, amantadine returned spontaneously to the blocking position
+at 6 &#x000c5; within a few ns and remained stable (see Figure S3 in
+the <xref rid="notes-1" ref-type="notes">Supporting Information</xref>).</p><p>The
+S31N PMF in Figure <xref rid="fig6" ref-type="fig">6</xref> exhibits a sharp
+rise in free energy between 4 and 7 &#x000c5;. The plugging site at 6
+&#x000c5; is clearly inhospitable compared with deeper positions in the
+central cavity, as observed in the unrestrained trajectories. A significant
+free energy well at 4 &#x000c5;, with steep barriers on either side,
+indicates a strong binding preference for protonated amantadine in
+this region. The lack of a shelf or well-defined local minimum for
+the adamantane center of mass near the Asn31 residues is a key indicator
+of its instability in that region, compared to amantadine in WT M2.</p><p>The forces underlying the steep free energy well inside the S31N
+channel need to be further investigated. From the simulations presented
+here, it appears likely that attraction of the more polar Asn31 side
+chains to water molecules may be the driving force, as well as decreased
+stability of amantadine in proximity to the bulkier Asn31 side chains,
+as other studies have suggested.<sup><xref ref-type="bibr" rid="ref9">9</xref>,<xref ref-type="bibr" rid="ref10">10</xref></sup></p></sec></sec><sec sec-type="conclusions" id="sec4"><title>Conclusions</title><p>Molecular dynamics simulations on the influenza A M2 channels provide
+an explanation for why amantadine blocks WT M2 and fails to block
+S31N M2, as observed experimentally. Amantadine&#x02019;s stability
+and narrow region of occupancy near the V27 sphincter of the M2 channel
+appears to result in a very dry region in which proton conductance
+by water-wire formation or hydronium-ion diffusion cannot occur. Amantadine&#x02019;s
+instability and unusual binding behavior in the S31N M2 channel, as
+well as the steep free energy drop between the plugging site and the
+deeper noninhibitory binding site, suggest that interactions between
+the channel and water molecules drive the drug too deep into the channel.
+Hence, in the S31N channel, even if the drug can bind, it cannot block
+proton conductance.</p></sec></body><back><notes id="notes-1" notes-type="si"><title>Supporting Information Available</title><p>Hydration study table, as well
+as figures of 2KQT RMSD and water content, amantadine orientation, and amantadine position
+in WT with non-blocking initial position. This material is available
+free of charge via the Internet at <uri xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://pubs.acs.org">http://pubs.acs.org</uri>.</p></notes><sec sec-type="supplementary-material"><title>Supplementary Material</title><supplementary-material content-type="local-data" id="sifile1"><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="jp508545d_si_001.pdf"><caption><p>jp508545d_si_001.pdf</p></caption></media></supplementary-material></sec><notes id="NOTES-d3483e614-autogenerated" notes-type="conflict-of-interest"><p>The authors declare no
+competing financial interest.</p></notes><ack><title>Acknowledgments</title><p>The authors are
+grateful to Curtis Evans for several preliminary
+simulations and to Antonios Kolocouris and Harris Ioannidis for helpful
+discussions. The work was supported by grants from NIH (AI 23007 to
+Timothy Cross) and from the BYU Office of Research and Creative Activities.
+Simulations and analyses were performed at the Fulton Supercomputing
+Lab at Brigham Young University.</p></ack><ref-list><title>References</title><ref id="ref1"><mixed-citation publication-type="journal" id="cit1"><name><surname>Bright</surname><given-names>R. A.</given-names></name>; <name><surname>Shay</surname><given-names>D.</given-names></name>; <name><surname>Bresee</surname><given-names>J.</given-names></name>; <name><surname>Klimov</surname><given-names>A.</given-names></name>; <name><surname>Cox</surname><given-names>N.</given-names></name>; <name><surname>Ortiz</surname><given-names>J.</given-names></name>
+<article-title>High Levels of Adamantane
+Resistance among Influenza A (H3N2) Viruses
+and Interim Guidelines for use of Antiviral Agents. United States,
+2005&#x02013;2006 Influenza Season</article-title>. <source>Morbidity
+and Mortality Weekly Report</source>
+<year>2006</year>, <volume>55</volume>, <fpage>44</fpage>&#x02013;<lpage>46</lpage>.<pub-id pub-id-type="pmid">16424859</pub-id></mixed-citation></ref><ref id="ref2"><mixed-citation publication-type="journal" id="cit2"><name><surname>Bright</surname><given-names>R. A.</given-names></name>; <name><surname>Shay</surname><given-names>D. K.</given-names></name>; <name><surname>Shu</surname><given-names>B.</given-names></name>; <name><surname>Cox</surname><given-names>N. J.</given-names></name>; <name><surname>Klimov</surname><given-names>A. I.</given-names></name>
+<article-title>Adamantane
+Resistance among Influenza A Viruses Isolated Early During the 2005&#x02013;2006
+Influenza Season in the United States</article-title>. <source>J. Am.
+Med. Assoc.</source>
+<year>2006</year>, <volume>295</volume>, <fpage>891</fpage>&#x02013;<lpage>894</lpage>.</mixed-citation></ref><ref id="ref3"><mixed-citation publication-type="journal" id="cit3"><name><surname>Sansom</surname><given-names>M. S.</given-names></name>; <name><surname>Kerr</surname><given-names>I. D.</given-names></name>
+<article-title>Influenza Virus
+M2 Protein: A Molecular Modelling Study
+of the Ion Channel</article-title>. <source>Protein Eng.</source>
+<year>1993</year>, <volume>6</volume>, <fpage>65</fpage>&#x02013;<lpage>74</lpage>.<pub-id pub-id-type="pmid">7679490</pub-id></mixed-citation></ref><ref id="ref4"><mixed-citation publication-type="journal" id="cit4"><name><surname>Wu</surname><given-names>Y.</given-names></name>; <name><surname>Voth</surname><given-names>G. A.</given-names></name>
+<article-title>A Computational
+Study of the Closed and Open States
+of the Influenza A M2 Proton Channel</article-title>. <source>Biophys.
+J.</source>
+<year>2005</year>, <volume>89</volume>, <fpage>2402</fpage>&#x02013;<lpage>2411</lpage>.<pub-id pub-id-type="pmid">16040757</pub-id></mixed-citation></ref><ref id="ref5"><mixed-citation publication-type="journal" id="cit5"><name><surname>Mustafa</surname><given-names>M.</given-names></name>; <name><surname>Henderson</surname><given-names>D. J.</given-names></name>; <name><surname>Busath</surname><given-names>D. D.</given-names></name>
+<article-title>Free-Energy Profiles for Ions in
+the Influenza M2-TMD Channel</article-title>. <source>Proteins</source>
+<year>2009</year>, <volume>76</volume>, <fpage>794</fpage>&#x02013;<lpage>807</lpage>.<pub-id pub-id-type="pmid">19296508</pub-id></mixed-citation></ref><ref id="ref6"><mixed-citation publication-type="journal" id="cit6"><name><surname>Wei</surname><given-names>C.</given-names></name>; <name><surname>Pohorille</surname><given-names>A.</given-names></name>
+<article-title>Activation
+and Proton Transport Mechanism in Influenza
+A M2 Channel</article-title>. <source>Biophys. J.</source>
+<year>2013</year>, <volume>105</volume>, <fpage>2036</fpage>&#x02013;<lpage>2045</lpage>.<pub-id pub-id-type="pmid">24209848</pub-id></mixed-citation></ref><ref id="ref7"><mixed-citation publication-type="journal" id="cit7"><name><surname>Wang</surname><given-names>J.</given-names></name>; <name><surname>Ma</surname><given-names>C.</given-names></name>; <name><surname>Fiorin</surname><given-names>G.</given-names></name>; <name><surname>Carnevale</surname><given-names>V.</given-names></name>; <name><surname>Wang</surname><given-names>T.</given-names></name>; <name><surname>Hu</surname><given-names>F.</given-names></name>; <name><surname>Lamb</surname><given-names>R. A.</given-names></name>; <name><surname>Pinto</surname><given-names>L. H.</given-names></name>; <name><surname>Hong</surname><given-names>M.</given-names></name>; <name><surname>Klein</surname><given-names>M. L.</given-names></name>; et al. <article-title>Molecular Dynamics Simulation
+Directed Rational Design of Inhibitors
+Targeting Drug-Resistant Mutants of Influenza A Virus M2</article-title>. <source>J. Am. Chem. Soc.</source>
+<year>2011</year>, <volume>133</volume>, <fpage>12834</fpage>&#x02013;<lpage>12841</lpage>.<pub-id pub-id-type="pmid">21744829</pub-id></mixed-citation></ref><ref id="ref8"><mixed-citation publication-type="journal" id="cit8"><name><surname>Alhadeff</surname><given-names>R.</given-names></name>; <name><surname>Assa</surname><given-names>D.</given-names></name>; <name><surname>Astrahan</surname><given-names>P.</given-names></name>; <name><surname>Krugliak</surname><given-names>M.</given-names></name>; <name><surname>Arkin</surname><given-names>I. T.</given-names></name>
+<article-title>Computational
+and Experimental Analysis of Drug Binding to the Influenza M2 Channel</article-title>. <source>Biochim. Biophys. Acta</source>
+<year>2014</year>, <volume>1838</volume>, <fpage>1068</fpage>&#x02013;<lpage>1073</lpage>.<pub-id pub-id-type="pmid">24016551</pub-id></mixed-citation></ref><ref id="ref9"><mixed-citation publication-type="journal" id="cit9"><name><surname>Qin</surname><given-names>G.</given-names></name>; <name><surname>Yu</surname><given-names>K.</given-names></name>; <name><surname>Shi</surname><given-names>T.</given-names></name>; <name><surname>Luo</surname><given-names>C.</given-names></name>; <name><surname>Li</surname><given-names>G.</given-names></name>; <name><surname>Zhu</surname><given-names>W.</given-names></name>; <name><surname>Jiang</surname><given-names>H.</given-names></name>
+<article-title>How Does Influenza
+Virus A Escape from Amantadine?</article-title>. <source>J. Phys. Chem.
+B</source>
+<year>2010</year>, <volume>114</volume>, <fpage>8487</fpage>&#x02013;<lpage>8493</lpage>.<pub-id pub-id-type="pmid">20521806</pub-id></mixed-citation></ref><ref id="ref10"><mixed-citation publication-type="journal" id="cit10"><name><surname>Khurana</surname><given-names>E.</given-names></name>; <name><surname>Devane</surname><given-names>R. H.</given-names></name>; <name><surname>Dal Peraro</surname><given-names>M.</given-names></name>; <name><surname>Klein</surname><given-names>M. L.</given-names></name>
+<article-title>Computational Study
+of Drug Binding to the Membrane-Bound Tetrameric M2 Peptide Bundle
+from Influenza A Virus</article-title>. <source>Biochim. Biophys. Acta</source>
+<year>2011</year>, <volume>1808</volume>, <fpage>530</fpage>&#x02013;<lpage>537</lpage>.<pub-id pub-id-type="pmid">20385097</pub-id></mixed-citation></ref><ref id="ref11"><mixed-citation publication-type="journal" id="cit11"><name><surname>Leonov</surname><given-names>H.</given-names></name>; <name><surname>Astrahan</surname><given-names>P.</given-names></name>; <name><surname>Krugliak</surname><given-names>M.</given-names></name>; <name><surname>Arkin</surname><given-names>I. T.</given-names></name>
+<article-title>How Do Aminoadamantanes
+Block the Influenza M2 Channel, and How Does Resistance Develop?</article-title>. <source>J. Am. Chem. Soc.</source>
+<year>2011</year>, <volume>133</volume>, <fpage>9903</fpage>&#x02013;<lpage>9911</lpage>.<pub-id pub-id-type="pmid">21534619</pub-id></mixed-citation></ref><ref id="ref12"><mixed-citation publication-type="journal" id="cit12"><name><surname>Wang</surname><given-names>J.</given-names></name>; <name><surname>Wu</surname><given-names>Y.</given-names></name>; <name><surname>Ma</surname><given-names>C.</given-names></name>; <name><surname>Fiorin</surname><given-names>G.</given-names></name>; <name><surname>Pinto</surname><given-names>L. H.</given-names></name>; <name><surname>Lamb</surname><given-names>R. A.</given-names></name>; <name><surname>Klein</surname><given-names>M. L.</given-names></name>; <name><surname>Degrado</surname><given-names>W. F.</given-names></name>
+<article-title>Structure and Inhibition of the Drug-Resistant
+S31N Mutant of the M2 Ion Channel of Influenza A Virus</article-title>. <source>Proc. Natl. Acad. Sci. U. S. A.</source>
+<year>2013</year>, <volume>110</volume>, <fpage>1315</fpage>&#x02013;<lpage>1320</lpage>.<pub-id pub-id-type="pmid">23302696</pub-id></mixed-citation></ref><ref id="ref13"><mixed-citation publication-type="journal" id="cit13"><name><surname>Gkeka</surname><given-names>P.</given-names></name>; <name><surname>Eleftheratos</surname><given-names>S.</given-names></name>; <name><surname>Kolocouris</surname><given-names>A.</given-names></name>; <name><surname>Cournia</surname><given-names>Z.</given-names></name>
+<article-title>Free Energy Calculations
+Reveal the Origin of Binding Preference for Aminoadamantane Blockers
+of Influenza A/M2TM Pore</article-title>. <source>J. Chem. Theory Comput.</source>
+<year>2013</year>, <volume>9</volume>, <fpage>1272</fpage>&#x02013;<lpage>1281</lpage>.</mixed-citation></ref><ref id="ref14"><mixed-citation publication-type="journal" id="cit14"><name><surname>Kawano</surname><given-names>K.</given-names></name>; <name><surname>Yano</surname><given-names>Y.</given-names></name>; <name><surname>Matsuzaki</surname><given-names>K.</given-names></name>
+<article-title>A Dimer Is
+the Minimal Proton-Conducting
+Unit of the Influenza A Virus M2 Channel</article-title>. <source>J.
+Mol. Biol.</source>
+<year>2014</year>, <volume>426</volume>, <fpage>2679</fpage>&#x02013;<lpage>2691</lpage>.<pub-id pub-id-type="pmid">24816000</pub-id></mixed-citation></ref><ref id="ref15"><mixed-citation publication-type="journal" id="cit15"><name><surname>Salom</surname><given-names>D.</given-names></name>; <name><surname>Hill</surname><given-names>B. R.</given-names></name>; <name><surname>Lear</surname><given-names>J. D.</given-names></name>; <name><surname>DeGrado</surname><given-names>W. F.</given-names></name>
+<article-title>Ph-Dependent Tetramerization
+and Amantadine Binding of the Transmembrane Helix of M2 from the Influenza
+A Virus</article-title>. <source>Biochemistry</source>
+<year>2000</year>, <volume>39</volume>, <fpage>14160</fpage>&#x02013;<lpage>14170</lpage>.<pub-id pub-id-type="pmid">11087364</pub-id></mixed-citation></ref><ref id="ref16"><mixed-citation publication-type="journal" id="cit16"><name><surname>Acharya</surname><given-names>R.</given-names></name>; <name><surname>Carnevale</surname><given-names>V.</given-names></name>; <name><surname>Fiorin</surname><given-names>G.</given-names></name>; <name><surname>Levine</surname><given-names>B. G.</given-names></name>; <name><surname>Polishchuk</surname><given-names>A. L.</given-names></name>; <name><surname>Balannik</surname><given-names>V.</given-names></name>; <name><surname>Samish</surname><given-names>I.</given-names></name>; <name><surname>Lamb</surname><given-names>R. A.</given-names></name>; <name><surname>Pinto</surname><given-names>L. H.</given-names></name>; <name><surname>DeGrado</surname><given-names>W. F.</given-names></name>; et al. <article-title>Structure and Mechanism
+of Proton Transport
+through the Transmembrane Tetrameric M2 Protein Bundle of the Influenza
+A Virus</article-title>. <source>Proc. Natl. Acad. Sci. U. S. A.</source>
+<year>2010</year>, <volume>107</volume>, <fpage>15075</fpage>&#x02013;<lpage>15080</lpage>.<pub-id pub-id-type="pmid">20689043</pub-id></mixed-citation></ref><ref id="ref17"><mixed-citation publication-type="journal" id="cit17"><name><surname>Sakaguchi</surname><given-names>T.</given-names></name>; <name><surname>Tu</surname><given-names>Q.</given-names></name>; <name><surname>Pinto</surname><given-names>L. H.</given-names></name>; <name><surname>Lamb</surname><given-names>R. A.</given-names></name>
+<article-title>The Active Oligomeric State of the
+Minimalistic Influenza Virus M2 Ion Channel Is a Tetramer</article-title>. <source>Proc. Natl. Acad. Sci. U. S. A.</source>
+<year>1997</year>, <volume>94</volume>, <fpage>5000</fpage>&#x02013;<lpage>5005</lpage>.<pub-id pub-id-type="pmid">9144179</pub-id></mixed-citation></ref><ref id="ref18"><mixed-citation publication-type="journal" id="cit18"><name><surname>Sugrue</surname><given-names>R. J.</given-names></name>; <name><surname>Hay</surname><given-names>A. J.</given-names></name>
+<article-title>Structural Characteristics of the
+M2 Protein of Influenza
+A Viruses: Evidence That It Forms a Tetrameric Channel</article-title>. <source>Virology</source>
+<year>1991</year>, <volume>180</volume>, <fpage>617</fpage>&#x02013;<lpage>624</lpage>.<pub-id pub-id-type="pmid">1989386</pub-id></mixed-citation></ref><ref id="ref19"><mixed-citation publication-type="journal" id="cit19"><name><surname>Holsinger</surname><given-names>L. J.</given-names></name>; <name><surname>Lamb</surname><given-names>R. A.</given-names></name>
+<article-title>Influenza Virus M2 Integral Membrane Protein Is a Homotetramer
+Stabilized by Formation of Disulfide Bonds</article-title>. <source>Virology</source>
+<year>1991</year>, <volume>183</volume>, <fpage>32</fpage>&#x02013;<lpage>43</lpage>.<pub-id pub-id-type="pmid">2053285</pub-id></mixed-citation></ref><ref id="ref20"><mixed-citation publication-type="journal" id="cit20"><name><surname>Jorgensen</surname><given-names>W. L.</given-names></name>; <name><surname>Chandrasekhar</surname><given-names>J.</given-names></name>; <name><surname>Madura</surname><given-names>J. D.</given-names></name>; <name><surname>Impey</surname><given-names>R. W.</given-names></name>; <name><surname>Klein</surname><given-names>M. L.</given-names></name>
+<article-title>Comparison
+of Simple Potential Functions for Simulating Liquid Water</article-title>. <source>J. Chem. Phys.</source>
+<year>1983</year>, <volume>79</volume>, <fpage>926</fpage>&#x02013;<lpage>935</lpage>.</mixed-citation></ref><ref id="ref21"><mixed-citation publication-type="journal" id="cit21"><name><surname>Brooks</surname><given-names>B. R.</given-names></name>; <name><surname>Brooks</surname><given-names>C. L.</given-names><suffix>3rd</suffix></name>; <name><surname>Mackerell</surname><given-names>A. D.</given-names><suffix>Jr.</suffix></name>; <name><surname>Nilsson</surname><given-names>L.</given-names></name>; <name><surname>Petrella</surname><given-names>R. J.</given-names></name>; <name><surname>Roux</surname><given-names>B.</given-names></name>; <name><surname>Won</surname><given-names>Y.</given-names></name>; <name><surname>Archontis</surname><given-names>G.</given-names></name>; <name><surname>Bartels</surname><given-names>C.</given-names></name>; <name><surname>Boresch</surname><given-names>S.</given-names></name>; et al. <article-title>CHARMM:
+The Biomolecular Simulation Program</article-title>. <source>J. Comput.
+Chem.</source>
+<year>2009</year>, <volume>30</volume>, <fpage>1545</fpage>&#x02013;<lpage>1614</lpage>.<pub-id pub-id-type="pmid">19444816</pub-id></mixed-citation></ref><ref id="ref22"><mixed-citation publication-type="journal" id="cit22"><name><surname>Phillips</surname><given-names>J.
+C.</given-names></name>; <name><surname>Braun</surname><given-names>R.</given-names></name>; <name><surname>Wang</surname><given-names>W.</given-names></name>; <name><surname>Gumbart</surname><given-names>J.</given-names></name>; <name><surname>Tajkhorshid</surname><given-names>E.</given-names></name>; <name><surname>Villa</surname><given-names>E.</given-names></name>; <name><surname>Chipot</surname><given-names>C.</given-names></name>; <name><surname>Skeel</surname><given-names>R. D.</given-names></name>; <name><surname>Kal&#x000e9;</surname><given-names>L.</given-names></name>; <name><surname>Schulten</surname><given-names>K.</given-names></name>
+<article-title>Scalable Molecular Dynamics with NAMD</article-title>. <source>J. Comput. Chem.</source>
+<year>2005</year>, <volume>26</volume>, <fpage>1781</fpage>&#x02013;<lpage>1802</lpage>.<pub-id pub-id-type="pmid">16222654</pub-id></mixed-citation></ref><ref id="ref23"><mixed-citation publication-type="journal" id="cit23"><person-group><name><surname>Humphrey</surname><given-names>W.</given-names></name>; <name><surname>Dalke</surname><given-names>A.</given-names></name>; <name><surname>Schulten</surname><given-names>K.</given-names></name></person-group><article-title>Vmd:
+Visual Molecular Dynamics</article-title>. <source>J. Mol. Graphics</source><year>1996</year>, <volume>14</volume>, <fpage>33-8, 27-8</fpage>.</mixed-citation></ref><ref id="ref24"><mixed-citation publication-type="journal" id="cit24"><name><surname>MacKerell</surname><given-names>A. D.</given-names></name>; <name><surname>Bashford</surname><given-names>D.</given-names></name>; <name><surname>Bellott</surname></name>; <name><surname>Dunbrack</surname><given-names>R. L.</given-names></name>; <name><surname>Evanseck</surname><given-names>J. D.</given-names></name>; <name><surname>Field</surname><given-names>M. J.</given-names></name>; <name><surname>Fischer</surname><given-names>S.</given-names></name>; <name><surname>Gao</surname><given-names>J.</given-names></name>; <name><surname>Guo</surname><given-names>H.</given-names></name>; <name><surname>Ha</surname><given-names>S.</given-names></name>; et al. <article-title>All-Atom Empirical Potential for Molecular Modeling
+and Dynamics
+Studies of Proteins</article-title>. <source>J. Phys. Chem. B</source>
+<year>1998</year>, <volume>102</volume>, <fpage>3586</fpage>&#x02013;<lpage>3616</lpage>.<pub-id pub-id-type="pmid">24889800</pub-id></mixed-citation></ref><ref id="ref25"><mixed-citation publication-type="journal" id="cit25"><name><surname>Mackerell</surname><given-names>A. D.</given-names><suffix>Jr.</suffix></name>; <name><surname>Feig</surname><given-names>M.</given-names></name>; <name><surname>Brooks</surname><given-names>C. L.</given-names><suffix>3rd</suffix></name>
+<article-title>Extending the Treatment of Backbone
+Energetics in Protein Force Fields:
+Limitations of Gas-Phase Quantum Mechanics in Reproducing Protein
+Conformational Distributions in Molecular Dynamics Simulations</article-title>. <source>J. Comput. Chem.</source>
+<year>2004</year>, <volume>25</volume>, <fpage>1400</fpage>&#x02013;<lpage>1415</lpage>.<pub-id pub-id-type="pmid">15185334</pub-id></mixed-citation></ref><ref id="ref26"><mixed-citation publication-type="book" id="cit26"><person-group person-group-type="allauthors"><name><surname>Merz</surname><given-names>K. M.</given-names></name>; <name><surname>Roux</surname><given-names>B.</given-names></name></person-group><source>Biological Membranes:
+A Molecular Perspective from Computation and Experiment</source>; <publisher-name>Birkh&#x000e4;user</publisher-name>: <publisher-loc>Boston, MA</publisher-loc>, <year>1996</year>.</mixed-citation></ref><ref id="ref27"><mixed-citation publication-type="journal" id="cit27"><name><surname>Feller</surname><given-names>S.
+E.</given-names></name>; <name><surname>Yin</surname><given-names>D.</given-names></name>; <name><surname>Pastor</surname><given-names>R. W.</given-names></name>; <name><surname>MacKerell</surname><given-names>A. D.</given-names><suffix>Jr.</suffix></name>
+<article-title>Molecular Dynamics
+Simulation of Unsaturated Lipid Bilayers at Low Hydration: Parameterization
+and Comparison with Diffraction Studies</article-title>. <source>Biophys.
+J.</source>
+<year>1997</year>, <volume>73</volume>, <fpage>2269</fpage>&#x02013;<lpage>2279</lpage>.<pub-id pub-id-type="pmid">9370424</pub-id></mixed-citation></ref><ref id="ref28"><mixed-citation publication-type="journal" id="cit28"><name><surname>Klauda</surname><given-names>J.
+B.</given-names></name>; <name><surname>Venable</surname><given-names>R. M.</given-names></name>; <name><surname>Freites</surname><given-names>J. A.</given-names></name>; <name><surname>O&#x02019;Connor</surname><given-names>J. W.</given-names></name>; <name><surname>Tobias</surname><given-names>D. J.</given-names></name>; <name><surname>Mondragon-Ramirez</surname><given-names>C.</given-names></name>; <name><surname>Vorobyov</surname><given-names>I.</given-names></name>; <name><surname>MacKerell</surname><given-names>A. D.</given-names></name>; <name><surname>Pastor</surname><given-names>R. W.</given-names></name>
+<article-title>Update of the CHARMM
+All-Atom Additive Force Field
+for Lipids: Validation on Six Lipid Types</article-title>. <source>J.
+Phys. Chem. B</source>
+<year>2010</year>, <volume>114</volume>, <fpage>7830</fpage>&#x02013;<lpage>7843</lpage>.<pub-id pub-id-type="pmid">20496934</pub-id></mixed-citation></ref><ref id="ref29"><mixed-citation publication-type="journal" id="cit29"><name><surname>Hu</surname><given-names>J.</given-names></name>; <name><surname>Fu</surname><given-names>R.</given-names></name>; <name><surname>Nishimura</surname><given-names>K.</given-names></name>; <name><surname>Zhang</surname><given-names>L.</given-names></name>; <name><surname>Zhou</surname><given-names>H.-X.</given-names></name>; <name><surname>Busath</surname><given-names>D. D.</given-names></name>; <name><surname>Vijayvergiya</surname><given-names>V.</given-names></name>; <name><surname>Cross</surname><given-names>T. A.</given-names></name>
+<article-title>Histidines, Heart of the Hydrogen
+Ion Channel from Influenza A Virus: Toward an Understanding of Conductance
+and Proton Selectivity</article-title>. <source>Proc. Natl. Acad. Sci.
+U. S. A.</source>
+<year>2006</year>, <volume>103</volume>, <fpage>6865</fpage>&#x02013;<lpage>6870</lpage>.<pub-id pub-id-type="pmid">16632600</pub-id></mixed-citation></ref><ref id="ref30"><mixed-citation publication-type="journal" id="cit30"><name><surname>Williams</surname><given-names>J.
+K.</given-names></name>; <name><surname>Tietze</surname><given-names>D.</given-names></name>; <name><surname>Wang</surname><given-names>J.</given-names></name>; <name><surname>Wu</surname><given-names>Y.</given-names></name>; <name><surname>DeGrado</surname><given-names>W. F.</given-names></name>; <name><surname>Hong</surname><given-names>M.</given-names></name>
+<article-title>Drug-Induced
+Conformational and Dynamical Changes of the S31N Mutant
+of the Influenza M2 Proton Channel Investigated by Solid-State NMR</article-title>. <source>J. Am. Chem. Soc.</source>
+<year>2013</year>, <volume>135</volume>, <fpage>9885</fpage>&#x02013;<lpage>9897</lpage>.<pub-id pub-id-type="pmid">23758317</pub-id></mixed-citation></ref><ref id="ref31"><mixed-citation publication-type="journal" id="cit31"><name><surname>Sharma</surname><given-names>M.</given-names></name>; <name><surname>Yi</surname><given-names>M.</given-names></name>; <name><surname>Dong</surname><given-names>H.</given-names></name>; <name><surname>Qin</surname><given-names>H.</given-names></name>; <name><surname>Peterson</surname><given-names>E.</given-names></name>; <name><surname>Busath</surname><given-names>D. D.</given-names></name>; <name><surname>Zhou</surname><given-names>H.-X.</given-names></name>; <name><surname>Cross</surname><given-names>T. A.</given-names></name>
+<article-title>Insight into the Mechanism of the
+Influenza A Proton Channel from a Structure in a Lipid Bilayer</article-title>. <source>Science</source>
+<year>2010</year>, <volume>330</volume>, <fpage>509</fpage>&#x02013;<lpage>512</lpage>.<pub-id pub-id-type="pmid">20966252</pub-id></mixed-citation></ref><ref id="ref32"><mixed-citation publication-type="journal" id="cit32"><name><surname>Sharma</surname><given-names>M.</given-names></name>; <name><surname>Li</surname><given-names>C.</given-names></name>; <name><surname>Busath</surname><given-names>D. D.</given-names></name>; <name><surname>Zhou</surname><given-names>H. X.</given-names></name>; <name><surname>Cross</surname><given-names>T. A.</given-names></name>
+<article-title>Drug Sensitivity,
+Drug-Resistant Mutations, and Structures of Three Conductance Domains
+of Viral Porins</article-title>. <source>Biochim. Biophys. Acta</source>
+<year>2011</year>, <volume>1808</volume>, <fpage>538</fpage>&#x02013;<lpage>546</lpage>.<pub-id pub-id-type="pmid">20655872</pub-id></mixed-citation></ref><ref id="ref33"><mixed-citation publication-type="journal" id="cit33"><name><surname>Martyna</surname><given-names>G. J.</given-names></name>; <name><surname>Tobias</surname><given-names>D. J.</given-names></name>; <name><surname>Klein</surname><given-names>M. L.</given-names></name>
+<article-title>Constant
+Pressure Molecular Dynamics
+Algorithms</article-title>. <source>J. Chem. Phys.</source>
+<year>1994</year>, <volume>101</volume>, <fpage>4177</fpage>&#x02013;<lpage>4189</lpage>.</mixed-citation></ref><ref id="ref34"><mixed-citation publication-type="journal" id="cit34"><name><surname>Feller</surname><given-names>S. E.</given-names></name>; <name><surname>Zhang</surname><given-names>Y.</given-names></name>; <name><surname>Pastor</surname><given-names>R. W.</given-names></name>; <name><surname>Brooks</surname><given-names>B. R.</given-names></name>
+<article-title>Constant
+Pressure
+Molecular Dynamics Simulation: The Langevin Piston Method</article-title>. <source>J. Chem. Phys.</source>
+<year>1995</year>, <volume>103</volume>, <fpage>4613</fpage>&#x02013;<lpage>4621</lpage>.</mixed-citation></ref><ref id="ref35"><mixed-citation publication-type="journal" id="cit35"><name><surname>Essmann</surname><given-names>U.</given-names></name>; <name><surname>Perera</surname><given-names>L.</given-names></name>; <name><surname>Berkowitz</surname><given-names>M. L.</given-names></name>; <name><surname>Darden</surname><given-names>T.</given-names></name>; <name><surname>Lee</surname><given-names>H.</given-names></name>; <name><surname>Pedersen</surname><given-names>L. G.</given-names></name>; <name><surname>Smooth</surname><given-names>A.</given-names></name>
+<article-title>Particle Mesh Ewald Method</article-title>. <source>J. Chem. Phys.</source>
+<year>1995</year>, <volume>103</volume>, <fpage>8577</fpage>&#x02013;<lpage>8593</lpage>.</mixed-citation></ref><ref id="ref36"><mixed-citation publication-type="journal" id="cit36"><name><surname>Ryckaert</surname><given-names>J.-P.</given-names></name>; <name><surname>Ciccotti</surname><given-names>G.</given-names></name>; <name><surname>Berendsen</surname><given-names>H. J. C.</given-names></name>
+<article-title>Numerical Integration of the Cartesian
+Equations of Motion of a System with Constraints: Molecular Dynamics
+of N-Alkanes</article-title>. <source>J. Comput. Phys.</source>
+<year>1977</year>, <volume>23</volume>, <fpage>327</fpage>&#x02013;<lpage>341</lpage>.</mixed-citation></ref><ref id="ref37"><mixed-citation publication-type="journal" id="cit37"><name><surname>Nishimura</surname><given-names>K.</given-names></name>; <name><surname>Kim</surname><given-names>S.</given-names></name>; <name><surname>Zhang</surname><given-names>L.</given-names></name>; <name><surname>Cross</surname><given-names>T. A.</given-names></name>
+<article-title>The Closed State of a H<sup>+</sup> Channel Helical
+Bundle Combining Precise Orientational and Distance
+Restraints from Solid State NMR</article-title>. <source>Biochemistry</source>
+<year>2002</year>, <volume>41</volume>, <fpage>13170</fpage>&#x02013;<lpage>13177</lpage>.<pub-id pub-id-type="pmid">12403618</pub-id></mixed-citation></ref><ref id="ref38"><mixed-citation publication-type="journal" id="cit38"><name><surname>Hu</surname><given-names>J.</given-names></name>; <name><surname>Asbury</surname><given-names>T.</given-names></name>; <name><surname>Achuthan</surname><given-names>S.</given-names></name>; <name><surname>Li</surname><given-names>C.</given-names></name>; <name><surname>Bertram</surname><given-names>R.</given-names></name>; <name><surname>Quine</surname><given-names>J. R.</given-names></name>; <name><surname>Fu</surname><given-names>R.</given-names></name>; <name><surname>Cross</surname><given-names>T. A.</given-names></name>
+<article-title>Backbone
+Structure
+of the Amantadine-Blocked Trans-Membrane Domain M2 Proton Channel
+from Influenza A Virus</article-title>. <source>Biophys. J.</source>
+<year>2007</year>, <volume>92</volume>, <fpage>4335</fpage>&#x02013;<lpage>4343</lpage>.<pub-id pub-id-type="pmid">17384070</pub-id></mixed-citation></ref><ref id="ref39"><mixed-citation publication-type="journal" id="cit39"><name><surname>Cady</surname><given-names>S. D.</given-names></name>; <name><surname>Mishanina</surname><given-names>T. V.</given-names></name>; <name><surname>Hong</surname><given-names>M.</given-names></name>
+<article-title>Structure of Amantadine-Bound M2
+Transmembrane Peptide of Influenza A in Lipid Bilayers from Magic-Angle-Spinning
+Solid-State NMR: The Role of Ser31 in Amantadine Binding</article-title>. <source>J. Mol. Biol.</source>
+<year>2009</year>, <volume>385</volume>, <fpage>1127</fpage>&#x02013;<lpage>1141</lpage>.<pub-id pub-id-type="pmid">19061899</pub-id></mixed-citation></ref><ref id="ref40"><mixed-citation publication-type="journal" id="cit40"><name><surname>Pielak</surname><given-names>R. M.</given-names></name>; <name><surname>Schnell</surname><given-names>J. R.</given-names></name>; <name><surname>Chou</surname><given-names>J. J.</given-names></name>
+<article-title>Mechanism of Drug Inhibition and
+Drug Resistance of Influenza A M2 Channel</article-title>. <source>Proc.
+Natl. Acad. Sci. U. S. A.</source>
+<year>2009</year>, <volume>106</volume>, <fpage>7379</fpage>&#x02013;<lpage>7384</lpage>.<pub-id pub-id-type="pmid">19383794</pub-id></mixed-citation></ref><ref id="ref41"><mixed-citation publication-type="journal" id="cit41"><name><surname>Wang</surname><given-names>J.</given-names></name>; <name><surname>Pielak</surname><given-names>R. M.</given-names></name>; <name><surname>McClintock</surname><given-names>M. A.</given-names></name>; <name><surname>Chou</surname><given-names>J. J.</given-names></name>
+<article-title>Solution Structure
+and Functional Analysis of the Influenza B Proton Channel</article-title>. <source>Nat. Struct. Mol. Biol.</source>
+<year>2009</year>, <volume>16</volume>, <fpage>1267</fpage>&#x02013;<lpage>1271</lpage>.<pub-id pub-id-type="pmid">19898475</pub-id></mixed-citation></ref><ref id="ref42"><mixed-citation publication-type="journal" id="cit42"><name><surname>Cady</surname><given-names>S. D.</given-names></name>; <name><surname>Schmidt-Rohr</surname><given-names>K.</given-names></name>; <name><surname>Wang</surname><given-names>J.</given-names></name>; <name><surname>Soto</surname><given-names>C. S.</given-names></name>; <name><surname>Degrado</surname><given-names>W. F.</given-names></name>; <name><surname>Hong</surname><given-names>M.</given-names></name>
+<article-title>Structure of the Amantadine Binding Site of Influenza M2 Proton Channels
+in Lipid Bilayers</article-title>. <source>Nature</source>
+<year>2010</year>, <volume>463</volume>, <fpage>689</fpage>&#x02013;<lpage>692</lpage>.<pub-id pub-id-type="pmid">20130653</pub-id></mixed-citation></ref><ref id="ref43"><mixed-citation publication-type="journal" id="cit43"><name><surname>Pielak</surname><given-names>R. M.</given-names></name>; <name><surname>Chou</surname><given-names>J. J.</given-names></name>
+<article-title>Solution NMR Structure of the V27A
+Drug Resistant Mutant
+of Influenza A M2 Channel</article-title>. <source>Biochem. Biophys.
+Res. Commun.</source>
+<year>2010</year>, <volume>401</volume>, <fpage>58</fpage>&#x02013;<lpage>63</lpage>.<pub-id pub-id-type="pmid">20833142</pub-id></mixed-citation></ref><ref id="ref44"><mixed-citation publication-type="journal" id="cit44"><name><surname>Pielak</surname><given-names>R.
+M.</given-names></name>; <name><surname>Oxenoid</surname><given-names>K.</given-names></name>; <name><surname>Chou</surname><given-names>J. J.</given-names></name>
+<article-title>Structural Investigation of Rimantadine
+Inhibition of the AM2-BM2 Chimera Channel of Influenza Viruses</article-title>. <source>Structure</source>
+<year>2011</year>, <volume>19</volume>, <fpage>1655</fpage>&#x02013;<lpage>1663</lpage>.<pub-id pub-id-type="pmid">22078564</pub-id></mixed-citation></ref><ref id="ref45"><mixed-citation publication-type="journal" id="cit45"><name><surname>Schnell</surname><given-names>J. R.</given-names></name>; <name><surname>Chou</surname><given-names>J. J.</given-names></name>
+<article-title>Structure and Mechanism of the M2 Proton Channel of
+Influenza A Virus</article-title>. <source>Nature</source>
+<year>2008</year>, <volume>451</volume>, <fpage>591</fpage>&#x02013;<lpage>595</lpage>.<pub-id pub-id-type="pmid">18235503</pub-id></mixed-citation></ref><ref id="ref46"><mixed-citation publication-type="journal" id="cit46"><name><surname>Guex</surname><given-names>N.</given-names></name>; <name><surname>Peitsch</surname><given-names>M. C.</given-names></name>
+<article-title>Swiss-Model and the Swiss-PDBViewer:
+An Environment
+for Comparative Protein Modeling</article-title>. <source>Electrophoresis</source>
+<year>1997</year>, <volume>18</volume>, <fpage>2714</fpage>&#x02013;<lpage>2723</lpage>.<pub-id pub-id-type="pmid">9504803</pub-id></mixed-citation></ref><ref id="ref47"><mixed-citation publication-type="journal" id="cit47"><name><surname>Schwede</surname><given-names>T.</given-names></name>; <name><surname>Kopp</surname><given-names>J.</given-names></name>; <name><surname>Guex</surname><given-names>N.</given-names></name>; <name><surname>Peitsch</surname><given-names>M. C.</given-names></name>
+<article-title>Swiss-Model: An
+Automated Protein Homology-Modeling Server</article-title>. <source>Nucleic Acids Res.</source>
+<year>2003</year>, <volume>31</volume>, <fpage>3381</fpage>&#x02013;<lpage>3385</lpage>.<pub-id pub-id-type="pmid">12824332</pub-id></mixed-citation></ref><ref id="ref48"><mixed-citation publication-type="journal" id="cit48"><name><surname>Vanommeslaeghe</surname><given-names>K.</given-names></name>; <name><surname>Hatcher</surname><given-names>E.</given-names></name>; <name><surname>Acharya</surname><given-names>C.</given-names></name>; <name><surname>Kundu</surname><given-names>S.</given-names></name>; <name><surname>Zhong</surname><given-names>S.</given-names></name>; <name><surname>Shim</surname><given-names>J.</given-names></name>; <name><surname>Darian</surname><given-names>E.</given-names></name>; <name><surname>Guvench</surname><given-names>O.</given-names></name>; <name><surname>Lopes</surname><given-names>P.</given-names></name>; <name><surname>Vorobyov</surname><given-names>I.</given-names></name>; et al. <article-title>CHARMM General Force Field: A Force Field for
+Drug-Like Molecules Compatible with the CHARMM All-Atom Additive Biological
+Force Fields</article-title>. <source>J. Comput. Chem.</source>
+<year>2010</year>, <volume>31</volume>, <fpage>671</fpage>&#x02013;<lpage>690</lpage>.<pub-id pub-id-type="pmid">19575467</pub-id></mixed-citation></ref><ref id="ref49"><mixed-citation publication-type="journal" id="cit49"><name><surname>Yu</surname><given-names>W.</given-names></name>; <name><surname>He</surname><given-names>X.</given-names></name>; <name><surname>Vanommeslaeghe</surname><given-names>K.</given-names></name>; <name><surname>MacKerell</surname><given-names>A. D.</given-names><suffix>Jr.</suffix></name>
+<article-title>Extension of the CHARMM General Force
+Field to Sulfonyl-Containing
+Compounds and Its Utility in Biomolecular Simulations</article-title>. <source>J. Comput. Chem.</source>
+<year>2012</year>, <volume>33</volume>, <fpage>2451</fpage>&#x02013;<lpage>2468</lpage>.<pub-id pub-id-type="pmid">22821581</pub-id></mixed-citation></ref><ref id="ref50"><mixed-citation publication-type="journal" id="cit50"><name><surname>Vanommeslaeghe</surname><given-names>K.</given-names></name>; <name><surname>MacKerell</surname><given-names>A. D.</given-names><suffix>Jr.</suffix></name>
+<article-title>Automation of the CHARMM General
+Force Field (CGenFF) II: Bond Perception and Atom Typing</article-title>. <source>J. Chem. Inf. Model.</source>
+<year>2012</year>, <volume>52</volume>, <fpage>3144</fpage>&#x02013;<lpage>3154</lpage>.<pub-id pub-id-type="pmid">23146088</pub-id></mixed-citation></ref><ref id="ref51"><mixed-citation publication-type="journal" id="cit51"><name><surname>Vanommeslaeghe</surname><given-names>K.</given-names></name>; <name><surname>Raman</surname><given-names>E. P.</given-names></name>; <name><surname>MacKerell</surname><given-names>A. D.</given-names><suffix>Jr.</suffix></name>
+<article-title>Automation of
+the Charmm General Force Field (Cgenff) Ii: Assignment of Bonded Parameters
+and Partial Atomic Charges</article-title>. <source>J. Chem. Inf. Model.</source>
+<year>2012</year>, <volume>52</volume>, <fpage>3155</fpage>&#x02013;<lpage>3168</lpage>.<pub-id pub-id-type="pmid">23145473</pub-id></mixed-citation></ref><ref id="ref52"><mixed-citation publication-type="journal" id="cit52"><name><surname>Cady</surname><given-names>S. D.</given-names></name>; <name><surname>Wang</surname><given-names>J.</given-names></name>; <name><surname>Wu</surname><given-names>Y.</given-names></name>; <name><surname>DeGrado</surname><given-names>W. F.</given-names></name>; <name><surname>Hong</surname><given-names>M.</given-names></name>
+<article-title>Specific Binding
+of Adamantane Drugs and Direction of Their Polar Amines in the Pore
+of the Influenza M2 Transmembrane Domain in Lipid Bilayers and Dodecylphosphocholine
+Micelles Determined by NMR Spectroscopy</article-title>. <source>J.
+Am. Chem. Soc.</source>
+<year>2011</year>, <volume>133</volume>, <fpage>4274</fpage>&#x02013;<lpage>4284</lpage>.<pub-id pub-id-type="pmid">21381693</pub-id></mixed-citation></ref><ref id="ref53"><mixed-citation publication-type="journal" id="cit53"><name><surname>Giorgino</surname><given-names>T.</given-names></name>
+<article-title>Computing
+1-D Atomic Densities in Macromolecular Simulations: The Density Profile
+Tool for VMD</article-title>. <source>Comput. Phys. Commun.</source>
+<year>2014</year>, <volume>185</volume>, <fpage>317</fpage>&#x02013;<lpage>322</lpage>.</mixed-citation></ref><ref id="ref54"><mixed-citation publication-type="book" id="cit54"><person-group person-group-type="allauthors"><name><surname>Allen</surname><given-names>P.</given-names></name>; <name><surname>Tildesley</surname><given-names>D. J.</given-names></name></person-group><source>Computer
+Simulation
+of Liquids</source>; <publisher-name>Clarendon Press</publisher-name>: <publisher-loc>Oxford, U.K.</publisher-loc>, <year>1989</year>.</mixed-citation></ref><ref id="ref55"><mixed-citation publication-type="computer-program" id="cit55"><person-group person-group-type="allauthors"><name><surname>Grossfield</surname><given-names>A.</given-names></name></person-group><source>Wham: The
+Weighted Histogram Analysis Method</source>, 2.0.9. Available: <uri xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://membrane.urmc.rochester.edu/content/wham">http://membrane.urmc.rochester.edu/content/wham</uri>.</mixed-citation></ref><ref id="ref56"><mixed-citation publication-type="journal" id="cit56"><name><surname>Zhou</surname><given-names>H. X.</given-names></name>; <name><surname>Cross</surname><given-names>T. A.</given-names></name>
+<article-title>Modeling the Membrane Environment Has Implications
+for Membrane Protein Structure and Function: Influenza A M2 Protein</article-title>. <source>Protein Sci.</source>
+<year>2013</year>, <volume>22</volume>, <fpage>381</fpage>&#x02013;<lpage>394</lpage>.<pub-id pub-id-type="pmid">23389890</pub-id></mixed-citation></ref></ref-list></back></article>

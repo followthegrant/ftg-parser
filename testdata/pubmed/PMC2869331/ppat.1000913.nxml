@@ -1,0 +1,664 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.0 20120330//EN" "JATS-archivearticle1.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="discussion"><?properties open_access?><front><journal-meta><journal-id journal-id-type="nlm-ta">PLoS Pathog</journal-id><journal-id journal-id-type="iso-abbrev">PLoS Pathog</journal-id><journal-id journal-id-type="publisher-id">plos</journal-id><journal-id journal-id-type="pmc">plospath</journal-id><journal-title-group><journal-title>PLoS Pathogens</journal-title></journal-title-group><issn pub-type="ppub">1553-7366</issn><issn pub-type="epub">1553-7374</issn><publisher><publisher-name>Public Library of Science</publisher-name><publisher-loc>San Francisco, USA</publisher-loc></publisher></journal-meta><article-meta><article-id pub-id-type="pmid">20485522</article-id><article-id pub-id-type="pmc">2869331</article-id><article-id pub-id-type="publisher-id">09-PLPA-RV-2162R2</article-id><article-id pub-id-type="doi">10.1371/journal.ppat.1000913</article-id><article-categories><subj-group subj-group-type="heading"><subject>Review</subject></subj-group><subj-group subj-group-type="Discipline"><subject>Immunology/Immunity to Infections</subject><subject>Immunology/Immunomodulation</subject><subject>Immunology/Innate Immunity</subject><subject>Infectious Diseases/HIV Infection and AIDS</subject><subject>Virology</subject><subject>Virology/Effects of Virus Infection on Host Gene Expression</subject><subject>Virology/Host Antiviral Responses</subject><subject>Virology/Immune Evasion</subject><subject>Virology/Immunodeficiency Viruses</subject><subject>Virology/Mechanisms of Resistance and Susceptibility, including Host Genetics</subject><subject>Virology/Virion Structure, Assembly, and Egress</subject><subject>Virology/Virulence Factors and Mechanisms</subject><subject>Virology/Virus Evolution and Symbiosis</subject></subj-group></article-categories><title-group><article-title>The Great Escape: Viral Strategies to Counter BST-2/Tetherin</article-title></title-group><contrib-group><contrib contrib-type="author"><name><surname>Douglas</surname><given-names>Janet L.</given-names></name><xref ref-type="aff" rid="aff1"/></contrib><contrib contrib-type="author"><name><surname>Gustin</surname><given-names>Jean K.</given-names></name><xref ref-type="aff" rid="aff1"/></contrib><contrib contrib-type="author"><name><surname>Viswanathan</surname><given-names>Kasinath</given-names></name><xref ref-type="aff" rid="aff1"/></contrib><contrib contrib-type="author"><name><surname>Mansouri</surname><given-names>Mandana</given-names></name><xref ref-type="aff" rid="aff1"/></contrib><contrib contrib-type="author"><name><surname>Moses</surname><given-names>Ashlee V.</given-names></name><xref ref-type="aff" rid="aff1"/><xref ref-type="corresp" rid="cor1">
+<sup>&#x0002a;</sup>
+</xref></contrib><contrib contrib-type="author"><name><surname>Fr&#x000fc;h</surname><given-names>Klaus</given-names></name><xref ref-type="aff" rid="aff1"/></contrib></contrib-group><aff id="aff1">
+<addr-line>Vaccine and Gene Therapy Institute, Oregon Health &#x00026; Science University, Beaverton, Oregon, United States of America</addr-line>
+</aff><contrib-group><contrib contrib-type="editor"><name><surname>Rall</surname><given-names>Glenn F.</given-names></name><role>Editor</role><xref ref-type="aff" rid="edit1"/></contrib></contrib-group><aff id="edit1">The Fox Chase Cancer Center, United States of America</aff><author-notes><corresp id="cor1">&#x0002a; E-mail: <email>mosesa@ohsu.edu</email></corresp></author-notes><pub-date pub-type="collection"><month>5</month><year>2010</year></pub-date><pub-date pub-type="epub"><day>13</day><month>5</month><year>2010</year></pub-date><volume>6</volume><issue>5</issue><elocation-id>e1000913</elocation-id><permissions><copyright-statement>Douglas et al.</copyright-statement><copyright-year>2010</copyright-year><license xlink:href="http://creativecommons.org/licenses/by/4.0/"><license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are properly credited.</license-p></license></permissions><abstract><p>The interferon-induced BST-2 protein has the unique ability to restrict the egress of HIV-1, Kaposi's sarcoma&#x02013;associated herpesvirus (KSHV), Ebola virus, and other enveloped viruses. The observation that virions remain attached to the surface of BST-2-expressing cells led to the renaming of BST-2 as &#x0201c;tetherin&#x0201d;. However, viral proteins such as HIV-1 Vpu, simian immunodeficiency virus Nef, and KSHV K5 counteract BST-2, thereby allowing mature virions to readily escape from infected cells. Since the anti-viral function of BST-2 was discovered, there has been an explosion of research into several aspects of this intriguing interplay between host and virus. This review focuses on recent work addressing the molecular mechanisms involved in BST-2 restriction of viral egress and the species-specific countermeasures employed by various viruses.</p></abstract><counts><page-count count="12"/></counts></article-meta></front><body><sec id="s1"><title>Introduction</title><p>BST-2 (CD317/HM1.24) was initially identified by two independent groups searching for novel surface markers of terminally differentiated normal and neoplastic B cells <xref rid="ppat.1000913-Goto1" ref-type="bibr">[1]</xref>, <xref rid="ppat.1000913-Ishikawa1" ref-type="bibr">[2]</xref>. In a proteomics screen, our group subsequently identified BST-2 as a novel target for the viral ubiquitin-ligase K5 of Kaposi's sarcoma&#x02013;associated herpesvirus (KSHV) <xref rid="ppat.1000913-Bartee1" ref-type="bibr">[3]</xref>. However, the function of BST-2 remained unknown until it was identified as an intrinsic anti-viral factor that restricts the egress of HIV-1 by tethering mature virions to the host cell surface <xref rid="ppat.1000913-Neil1" ref-type="bibr">[4]</xref>. Coincident with this discovery, BST-2 was identified as a target of the HIV-1 accessory protein Vpu, providing a plausible mechanism for the well-established, but ill-defined, virus release function of Vpu <xref rid="ppat.1000913-Neil1" ref-type="bibr">[4]</xref>. Work by other investigators showing that Vpu downregulates BST-2 from the cell surface <xref rid="ppat.1000913-Bartee1" ref-type="bibr">[3]</xref>, <xref rid="ppat.1000913-VanDamme1" ref-type="bibr">[5]</xref> suggested a mechanism for Vpu antagonism of BST-2. These discoveries have stimulated an active area of research that explores several intriguing aspects of BST-2 function, including its role as a general inhibitor of enveloped virus release, the mechanisms underlying its neutralization by viral immunomodulators, and the possibility that additional activities for this enigmatic protein remain to be identified. In addition to providing a critical overview of recent discoveries in the field, the intent of this review is to summarize the history of BST-2, its anti-viral activities, and potential modes of action. We focus primarily on human BST-2 and HIV-1 to describe the molecular characteristics of BST-2, countermeasures employed by HIV-1 Vpu, and the genetic and mechanistic aspects of the host&#x02013;virus interaction. To put the significance of BST-2/HIV-1 into a larger perspective, we also address species specificity and discuss other viruses restricted by BST-2, and the means, if any, utilized by these viruses to overcome BST-2. While much remains to be clarified regarding the nature and significance of BST-2 function, its role as an intrinsic mediator of anti-viral resistance provides unique insight into the complexity of host&#x02013;virus relationships and reminds us of the potential to exploit these relationships for therapeutic benefit.</p></sec><sec id="s2"><title>Molecular Characteristics of BST-2</title><sec id="s2a"><title>Membrane Topology of BST-2</title><p>Human, rat, and mouse BST-2 have been independently identified and subsequently cloned by several groups <xref rid="ppat.1000913-Ishikawa1" ref-type="bibr">[2]</xref>, <xref rid="ppat.1000913-Kupzig1" ref-type="bibr">[6]</xref>&#x02013;<xref rid="ppat.1000913-Blasius1" ref-type="bibr">[8]</xref>. This work and that of others <xref rid="ppat.1000913-Masuyama1" ref-type="bibr">[9]</xref> revealed that <italic>bst-2</italic> encodes a 20-kDa, single pass, type II glycosylated membrane protein that localizes to lipid rafts via its COOH-terminal glycosylphosphatidylinisotol (GPI) anchor (<xref ref-type="fig" rid="ppat-1000913-g001">Figure 1A</xref>). While BST-2 migrates as a heterogenous smear of approximately 30&#x02013;36k Da in reducing SDS-PAGE, the protein migrates as a larger dimer under non-reducing conditions, presumably due to the formation of disulfide bonds among the three conserved cysteine residues in the extracellular domain. Among known proteins, this topology is relatively unique, as it has only been observed for one variant of the prion protein <xref rid="ppat.1000913-Hegde1" ref-type="bibr">[10]</xref>.</p><fig id="ppat-1000913-g001" position="float"><object-id pub-id-type="doi">10.1371/journal.ppat.1000913.g001</object-id><label>Figure 1</label><caption><title>Host and viral factors involved in virion release.</title><p>Schematics of human BST-2 (A), HIV-1 Vpu (B), and SIVmac239 Nef (C) proteins with salient features indicated. The coiled-coil domain of BST-2 was predicted using PCOILS (<ext-link ext-link-type="uri" xlink:href="http://toolkit.tuebingen.mpg.de/pcoils">http://toolkit.tuebingen.mpg.de/pcoils</ext-link>) <xref rid="ppat.1000913-Gruber1" ref-type="bibr">[58]</xref>.</p></caption><graphic xlink:href="ppat.1000913.g001"/></fig></sec><sec id="s2b"><title>Sub-Cellular Localization and Transport of BST-2</title><p>BST-2 localizes not only to the plasma membrane but also to internal membranes, particularly the trans-Golgi network (TGN) and recycling endosomes <xref rid="ppat.1000913-Kupzig1" ref-type="bibr">[6]</xref>. Unlike other GPI-anchored proteins, BST-2 is endocytosed from the cell surface in a clathrin-dependent manner. This appears to depend upon an interaction between an AP-2 subunit and a non-canonical, dual tyrosine motif within the BST-2 cytosolic domain <xref rid="ppat.1000913-Masuyama1" ref-type="bibr">[9]</xref>, <xref rid="ppat.1000913-Rollason1" ref-type="bibr">[11]</xref> (<xref ref-type="fig" rid="ppat-1000913-g001">Figure 1A</xref>). Recent studies also show that BST-2 expressed at the apical surface of polarized epithelial cells is linked to the actin cytoskeleton through a series of ezrin-radixin-moesin (ERM)-binding and adapter proteins: RICH2, EBP50, and ezrin. Furthermore, siRNA knockdown of BST-2 in these cells resulted in a re-organization of the actin cytoskeleton in a Rac- and Rho-dependent manner <xref rid="ppat.1000913-Rollason2" ref-type="bibr">[12]</xref>. While the implications of these interactions for the anti-viral function of BST-2 have not yet been evaluated, BST-2 appears to locate to subcellular sites frequently used for viral egress.</p></sec><sec id="s2c"><title>Transcriptional Regulation of BST-2</title><p>Within the <italic>bst-2</italic> promoter region is a tandem repeat containing interferon (IFN) response elements and three STAT3 binding sites that are activated in response to interleukin (IL)-6 <xref rid="ppat.1000913-Ohtomo1" ref-type="bibr">[7]</xref>. Indeed, BST-2 is upregulated in most mouse and human cell types upon type I and type II IFN treatment <xref rid="ppat.1000913-Neil1" ref-type="bibr">[4]</xref>, <xref rid="ppat.1000913-Blasius1" ref-type="bibr">[8]</xref>, consistent with an evolutionarily conserved innate immune function. Interestingly, BST-2 can also inhibit the production of IFN and pro-inflammatory cytokines, such as IL-6 and tumor necrosis factor (TNF)-&#x003b1; by human plasmacytoid dendritic cells (pDCs) <xref rid="ppat.1000913-Cao1" ref-type="bibr">[13]</xref>. This inhibition is accomplished by BST-2 binding to the orphan receptor immunoglobulin-like transcript 7 (ILT7), which is expressed exclusively on pDCs. This interaction establishes a negative feedback loop in which IFN-induced BST-2 binds to the ILT7-Fc&#x003b5;RI&#x003b3; complex, thereby signaling the inhibition of IFN and proinflammatory cytokines <xref rid="ppat.1000913-Cao1" ref-type="bibr">[13]</xref>. In addition to the well-studied anti-viral function described below, BST-2 might also play a role in regulating innate immune cells.</p></sec></sec><sec id="s3"><title>Mechanisms of BST-2 Anti-Viral Restriction and Vpu Countermeasures</title><p>The HIV-1 accessory protein Vpu is a small NH2-terminally anchored TM protein that mediates the degradation of CD4 <xref rid="ppat.1000913-Willey1" ref-type="bibr">[14]</xref> via interaction with the beta transducin repeat-containing protein (&#x003b2;TrCP), a subunit of the Skp1-Cullin-F-box (SCF) E3 ubiquitin ligase complex <xref rid="ppat.1000913-Margottin1" ref-type="bibr">[15]</xref> (<xref ref-type="fig" rid="ppat-1000913-g001">Figure 1B</xref>). In addition, Vpu enhances the release of progeny virions from certain cell types (&#x0201c;Vpu responsive&#x0201d; cells), a phenomenon that was discovered 20 years ago <xref rid="ppat.1000913-Klimkait1" ref-type="bibr">[16]</xref>. However, the mechanism of this enhancement remained obscure. The recent identification of BST-2 as a putative viral restriction factor subject to Vpu antagonism has answered a long-standing question regarding Vpu's virion release function. However, it has also stimulated many intriguing new questions about the evolution and function of both of these proteins.</p><sec id="s3a"><title>Evidence for a BST-2 Anti-Viral Tethering Function</title><p>Electron micrographs of Vpu-responsive cells infected with &#x00394;Vpu HIV-1 reveal the presence of viral particles accumulated at the cell surface in what appear to be tethered chains <xref rid="ppat.1000913-Klimkait1" ref-type="bibr">[16]</xref>. In two seminal papers it was shown that the expression of BST-2 confers the Vpu-responsive phenotype, and that in cells lacking BST-2 expression, there is a marked reduction in &#x0201c;tethered&#x0201d; &#x00394;Vpu virions <xref rid="ppat.1000913-Neil1" ref-type="bibr">[4]</xref>, <xref rid="ppat.1000913-VanDamme1" ref-type="bibr">[5]</xref>. To reflect this unique activity, BST-2 was renamed &#x0201c;tetherin&#x0201d; <xref rid="ppat.1000913-Neil1" ref-type="bibr">[4]</xref>. Tethered, cell-associated virions appear to be fully mature, based on the presence of both electron dense cores and the functional reverse transcriptase activity of particles that have been physically dislodged from the infected cell surface <xref rid="ppat.1000913-Klimkait1" ref-type="bibr">[16]</xref>. The virions can also be released by protease treatment, which Neil et al. present as evidence for a protein-based tether, as opposed to a budding defect that prevents membrane separation <xref rid="ppat.1000913-Neil1" ref-type="bibr">[4]</xref>, <xref rid="ppat.1000913-Neil2" ref-type="bibr">[17]</xref>. However, this protease sensitivity does not rule out a potential role for other host proteins besides BST-2 in restricting virion release or alternative hypotheses to tethering as the mechanism of viral restriction. A recent report has identified BCA2 as a BST-2-interacting factor, which is thought to supplement the BST-2 viral restriction by enhancing the internalization and degradation of tethered virions from the cell surface <xref rid="ppat.1000913-Miyakawa1" ref-type="bibr">[18]</xref>. Because BST-2 can restrict a large number of enveloped viruses (see <xref ref-type="table" rid="ppat-1000913-t001">Table 1</xref>), it is unlikely that it interacts with a specific viral protein to induce tethering. Neil et al. hypothesized that because BST-2 forms dimers and higher order multimers, perhaps BST-2 is incorporated into virions, thereby allowing for tethering between virus- and cell-associated BST-2 <xref rid="ppat.1000913-Neil1" ref-type="bibr">[4]</xref>. Perez et al. tested this hypothesis and found that they could only detect BST-2 in &#x00394;Vpu HIV-1 particles when BST-2 was functionally inactivated via deletion of either its transmembrane (TM) domain or GPI anchor <xref rid="ppat.1000913-PerezCaballero1" ref-type="bibr">[19]</xref>. Wild-type BST-2 could only be detected in over-expressed Gag viral-like particles (VLPs). Interestingly, only the &#x00394;TM mutant was incorporated into wild-type HIV-1 virions, suggesting that Vpu limits BST-2 incorporation into viral particles via the TM domain. Several other reports have confirmed the incorporation of BST-2 into HIV virions, although discrepancies remain. For example, Hammonds et al. <xref rid="ppat.1000913-Hammonds1" ref-type="bibr">[20]</xref> were able to detect IFN-induced BST-2 in &#x00394;Vpu virions, but not wild-type HIV virions, while Fitzpatrick et al. <xref rid="ppat.1000913-Fitzpatrick1" ref-type="bibr">[21]</xref> and Habermann et al. <xref rid="ppat.1000913-Habermann1" ref-type="bibr">[22]</xref> detected endogenous BST-2 in both wild-type and &#x00394;Vpu HIV. In contrast to these studies, Miyagi et al. were able to detect endogenous BST-2 in &#x00394;Vpu, but not wild-type HIV virions released via vortexing from infected cells <xref rid="ppat.1000913-Miyagi1" ref-type="bibr">[23]</xref>. However, they also detected BST-2 in control preparations of vesicles isolated from uninfected cells, and therefore concluded that BST-2 is not specifically incorporated into viral particles. Neil et al. <xref rid="ppat.1000913-Neil1" ref-type="bibr">[4]</xref> went on to hypothesize that if BST-2 were incorporated into viral particles, a tethering mechanism might depend upon homo-dimeric/oligomeric interactions between cell- and virus-associated BST-2 molecules. This has been tested by several groups. Treatment of cell surface-tethered HIV and Ebola VLPs <xref rid="ppat.1000913-Kaletsky1" ref-type="bibr">[24]</xref> or wild-type HIV <xref rid="ppat.1000913-Fitzpatrick1" ref-type="bibr">[21]</xref> with reducing agents did not induce particle release, suggesting that tethering does not involve disulfide linkage of BST-2 dimers or oligomers. Similarly, treatment of tethered virions with the GPI anchor-cleaving enzyme Pi-PLC did not effectively release the virions <xref rid="ppat.1000913-Fitzpatrick1" ref-type="bibr">[21]</xref>. Thus, while it is now clearly established that &#x0201c;Vpu-responsiveness&#x0201d; is caused by BST-2, additional studies are required to further elucidate the BST-2-dependent tethering mechanism and to determine whether there is a functional role for virion-associated BST-2.</p><table-wrap id="ppat-1000913-t001" position="float"><object-id pub-id-type="doi">10.1371/journal.ppat.1000913.t001</object-id><label>Table 1</label><caption><title>Viruses Restricted by BST-2 and Their Countermeasures.</title></caption><alternatives><graphic id="ppat-1000913-t001-1" xlink:href="ppat.1000913.t001"/><table frame="hsides" rules="groups"><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup><thead><tr><td align="left" rowspan="1" colspan="1">Virus</td><td align="left" rowspan="1" colspan="1">BST-2 Antagonist</td><td align="left" rowspan="1" colspan="1">Mechanism</td><td align="left" rowspan="1" colspan="1">Species Specificity of Antagonist</td><td align="left" rowspan="1" colspan="1">Reference</td></tr></thead><tbody><tr><td align="left" rowspan="1" colspan="1">HIV-1</td><td align="left" rowspan="1" colspan="1">Vpu</td><td align="left" rowspan="1" colspan="1">Cell surface downregulation/degradation</td><td align="left" rowspan="1" colspan="1">Yes</td><td align="left" rowspan="1" colspan="1">See <xref ref-type="table" rid="ppat-1000913-t003">Table 3</xref>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">SIVmus/gsn/mon</td><td align="left" rowspan="1" colspan="1">Vpu</td><td align="left" rowspan="1" colspan="1">Presumably same as HIV-1 Vpu</td><td align="left" rowspan="1" colspan="1">Yes</td><td align="left" rowspan="1" colspan="1">
+<xref rid="ppat.1000913-Lim1" ref-type="bibr">[44]</xref>, <xref rid="ppat.1000913-Sauter1" ref-type="bibr">[48]</xref>, <xref rid="ppat.1000913-Yang1" ref-type="bibr">[49]</xref>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">SIVcpz/gor</td><td align="left" rowspan="1" colspan="1">Nef (although it expresses Vpu)</td><td align="left" rowspan="1" colspan="1">?</td><td align="left" rowspan="1" colspan="1">Yes</td><td align="left" rowspan="1" colspan="1">
+<xref rid="ppat.1000913-Sauter1" ref-type="bibr">[48]</xref>, <xref rid="ppat.1000913-Yang1" ref-type="bibr">[49]</xref>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">SIVmac</td><td align="left" rowspan="1" colspan="1">Nef</td><td align="left" rowspan="1" colspan="1">?</td><td align="left" rowspan="1" colspan="1">Yes</td><td align="left" rowspan="1" colspan="1">
+<xref rid="ppat.1000913-Jia1" ref-type="bibr">[41]</xref>, <xref rid="ppat.1000913-Zhang1" ref-type="bibr">[55]</xref>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">SIVagm</td><td align="left" rowspan="1" colspan="1">Nef</td><td align="left" rowspan="1" colspan="1">?</td><td align="left" rowspan="1" colspan="1">Yes</td><td align="left" rowspan="1" colspan="1">
+<xref rid="ppat.1000913-Zhang1" ref-type="bibr">[55]</xref>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">SIVagm</td><td align="left" rowspan="1" colspan="1">Env</td><td align="left" rowspan="1" colspan="1">cell surface downregulation/sequestration</td><td align="left" rowspan="1" colspan="1">No</td><td align="left" rowspan="1" colspan="1">
+<xref rid="ppat.1000913-Gupta2" ref-type="bibr">[56]</xref>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">SIVagm</td><td align="left" rowspan="1" colspan="1">None</td><td align="left" rowspan="1" colspan="1">&#x0201c;Not needed&#x0201d;</td><td align="left" rowspan="1" colspan="1">N/A</td><td align="left" rowspan="1" colspan="1">
+<xref rid="ppat.1000913-Lim1" ref-type="bibr">[44]</xref>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">HIV-2</td><td align="left" rowspan="1" colspan="1">Env</td><td align="left" rowspan="1" colspan="1">Cell surface downregulation/not degradation</td><td align="left" rowspan="1" colspan="1">No</td><td align="left" rowspan="1" colspan="1">
+<xref rid="ppat.1000913-Douglas1" ref-type="bibr">[30]</xref>, <xref rid="ppat.1000913-Jia1" ref-type="bibr">[41]</xref>, <xref rid="ppat.1000913-LeTortorec1" ref-type="bibr">[54]</xref>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">Other lentiviruses (EIAV, FIV); other retroviruses (RSV, MPMV, HTLV-1,PFV)</td><td align="left" rowspan="1" colspan="1">? not evaluated</td><td align="left" rowspan="1" colspan="1">N/A</td><td align="left" rowspan="1" colspan="1">N/A</td><td align="left" rowspan="1" colspan="1">
+<xref rid="ppat.1000913-Jouvenet1" ref-type="bibr">[59]</xref>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">Filoviruses (Ebola, Marburg, Lassa)</td><td align="left" rowspan="1" colspan="1">Ebola GP</td><td align="left" rowspan="1" colspan="1">Not degradation</td><td align="left" rowspan="1" colspan="1">No</td><td align="left" rowspan="1" colspan="1">
+<xref rid="ppat.1000913-Kaletsky1" ref-type="bibr">[24]</xref>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">KSHV</td><td align="left" rowspan="1" colspan="1">K5</td><td align="left" rowspan="1" colspan="1">Cell surface downregulation/lysosomal degradation</td><td align="left" rowspan="1" colspan="1">?</td><td align="left" rowspan="1" colspan="1">
+<xref rid="ppat.1000913-Mansouri1" ref-type="bibr">[57]</xref>
+</td></tr></tbody></table></alternatives></table-wrap></sec><sec id="s3b"><title>BST-2 Domains Important for Restricting Virus Release</title><p>To date, the majority of BST-2 mapping studies have revealed species-specific residues important for virus-mediated antagonism of BST-2, but not for the anti-viral function of BST-2. The original studies identifying BST-2 as a viral release restriction factor suggested that the COOH-terminal GPI anchor is necessary for the anti-viral function of human BST-2, as an NH2-terminally hemagglutinin (HA)-tagged mutant missing the GPI anchor and downstream sequences was unable to restrict HIV release <xref rid="ppat.1000913-Neil1" ref-type="bibr">[4]</xref>. This same group later showed that along with the GPI anchor, both the TM domain and the predicted internal coiled-coil (CC) domain are also important for the BST-2 tethering function <xref rid="ppat.1000913-PerezCaballero1" ref-type="bibr">[19]</xref>. Surprisingly, they discovered that the amino acid sequence of these domains was not important for tethering function. A molecule consisting of structurally similar domains from three unrelated proteins (TM from transferrin receptor, CC from dystrophia myotonica protein kinase [DMPK], and GPI anchor from urokinase plasminogen activator receptor) was able to restrict viral release as efficiently as BST-2. To investigate whether dimer formation plays a role in the BST-2 release function, Andrew et al. and Perez-Caballero et al. both constructed mutants substituted for the putative disulfide-linked cysteines located within the BST-2 extracellular domain. Each group found that when all three extracellular cysteine residues were mutated (C53A, C63A, and C91A), both dimer formation and BST-2 function were prevented, while single and double substitutions had no effect <xref rid="ppat.1000913-PerezCaballero1" ref-type="bibr">[19]</xref>, <xref rid="ppat.1000913-Andrew1" ref-type="bibr">[25]</xref>, suggesting that promiscuous dimer formation is important for BST-2 anti-viral activity. Conversely, both groups made substitutions for the two putative N-linked glycosylation sites (N65 and N92) and obtained conflicting results. Andrew et al. found that substituting both of these Asn residues with Gln affected glycosylation, but they had no impact upon either BST-2 function or sensitivity to Vpu <xref rid="ppat.1000913-Andrew1" ref-type="bibr">[25]</xref>. In contrast, Perez-Caballero et al. replaced both Asn residues with Ala, which resulted in a non-functional BST-2 <xref rid="ppat.1000913-PerezCaballero1" ref-type="bibr">[19]</xref>. However, because this latter mutant was not efficiently expressed at the cell surface, it is likely that in addition to affecting BST-2 glycosylation, this particular mutation impacted intracellular transport. In summary, the sequence requirements for BST-2 tethering seem to be extraordinarily flexible as long as overall topology and intracellular transport are maintained.</p></sec><sec id="s3c"><title>Molecular Mechanisms of Vpu-Dependent BST-2 Antagonism</title><p>Earlier attempts to map the Vpu domains necessary for enhanced virus release were inconclusive. One group found that the two phosphorylation sites within the Vpu C-terminus that are essential for binding to &#x003b2;TrCP were dispensable for virus release <xref rid="ppat.1000913-Friborg1" ref-type="bibr">[26]</xref>, while another group showed an approximate 50&#x00025; reduction in virus release when substitutions were made for these serines <xref rid="ppat.1000913-Schubert1" ref-type="bibr">[27]</xref>, <xref rid="ppat.1000913-Schubert2" ref-type="bibr">[28]</xref>. A role for the Vpu TM domain in viral egress was first noted when a Vpu TM mutant that was functional with respect to CD4 downregulation failed to enhance viral release <xref rid="ppat.1000913-Schubert3" ref-type="bibr">[29]</xref>. While all of these studies were performed prior to the discovery that BST-2 inhibits viral egress, recent studies (detailed below) have confirmed a role for Vpu's &#x003b2;TrCP-binding and TM domains in counteracting BST-2.</p></sec><sec id="s3d"><title>The &#x003b2;TrCP-Binding Domain of Vpu Is Important for BST-2 Antagonism</title><p>Our group and others have determined that the &#x003b2;TrCP-binding site located within the Vpu cytoplasmic domain is necessary for the downregulation of BST-2 <xref rid="ppat.1000913-Douglas1" ref-type="bibr">[30]</xref>&#x02013;<xref rid="ppat.1000913-Mitchell1" ref-type="bibr">[34]</xref> (<xref ref-type="fig" rid="ppat-1000913-g001">Figure 1B</xref>). This was demonstrated by showing that a Vpu &#x003b2;TrCP-binding mutant did not induce downregulation or degradation of BST-2. In addition, both a dominant negative &#x003b2;TrCP mutant and an siRNA directed against &#x003b2;TrCP effectively block Vpu's ability to downregulate BST-2. While the &#x003b2;TrCP-binding domain is necessary for counteracting BST-2, it does not appear to be necessary for direct interaction between the proteins, as both wild-type Vpu and the &#x003b2;TrCP-binding mutant co-immunoprecipitate and co-localize with BST-2 <xref rid="ppat.1000913-Douglas1" ref-type="bibr">[30]</xref>, <xref rid="ppat.1000913-Mangeat1" ref-type="bibr">[33]</xref>. These results suggested that another region(s) within Vpu mediates BST-2 binding.</p></sec><sec id="s3e"><title>The Vpu Transmembrane Domain May Mediate BST-2 Binding</title><p>One candidate region for a putative BST-2 binding site is the Vpu TM domain (<xref ref-type="fig" rid="ppat-1000913-g001">Figure 1B</xref>). While recent data suggest that the Vpu TM domain interacts with BST-2 <xref rid="ppat.1000913-Iwabu1" ref-type="bibr">[32]</xref>, <xref rid="ppat.1000913-Banning1" ref-type="bibr">[35]</xref> and is important for Vpu's ability to downregulate BST-2 <xref rid="ppat.1000913-VanDamme1" ref-type="bibr">[5]</xref>, no comprehensive mapping has been reported thus far.</p></sec><sec id="s3f"><title>The Transmembrane Proximal Region Affects the Subcellular Localization of Vpu</title><p>Varthakavi et al. have suggested that the localization of Vpu to a specific pericentriolar compartment of the TGN is necessary for its ability to enhance virion release <xref rid="ppat.1000913-Varthakavi1" ref-type="bibr">[36]</xref>. The domain responsible for this TGN localization was later mapped to the Vpu TM proximal region, which contains two overlapping putative sorting signals (tyrosine-based YXX&#x003a6; and di-leucine based (D/E)XXXL(L/I)) <xref rid="ppat.1000913-Dub1" ref-type="bibr">[37]</xref> (<xref ref-type="fig" rid="ppat-1000913-g001">Figure 1B</xref>). This region was first identified in Vpu C, where it was shown to be involved in both the plasma membrane localization of Vpu C and viral egress <xref rid="ppat.1000913-Ruiz1" ref-type="bibr">[38]</xref>. Mutagenesis of this region in Vpu B was also shown to reduce viral release <xref rid="ppat.1000913-Dub1" ref-type="bibr">[37]</xref>.</p></sec><sec id="s3g"><title>Degradation of BST-2 in the Presence of Vpu</title><p>Flow cytometry analyses from many studies clearly indicate that the levels of endogenous BST-2 at the cell surface of HeLa cells are markedly diminished in the presence of Vpu <xref rid="ppat.1000913-VanDamme1" ref-type="bibr">[5]</xref>, <xref rid="ppat.1000913-Miyagi1" ref-type="bibr">[23]</xref>, <xref rid="ppat.1000913-Douglas1" ref-type="bibr">[30]</xref>, <xref rid="ppat.1000913-Goffinet1" ref-type="bibr">[31]</xref>, <xref rid="ppat.1000913-Mitchell1" ref-type="bibr">[34]</xref>. This decrease in cell surface expression could be caused by either BST-2 degradation or BST-2 sequestration within an intracellular compartment (see <xref ref-type="fig" rid="ppat-1000913-g002">Figure 2</xref>). Due to conflicting data that has likely arisen from the different methodologies employed (see <xref ref-type="table" rid="ppat-1000913-t002">Table 2</xref>), distinguishing between these mechanisms has not been straightforward. However, immunoblot analyses from the majority of studies have demonstrated a decrease in total cellular BST-2 levels in the presence of Vpu, which would favor a degradation mechanism <xref rid="ppat.1000913-Bartee1" ref-type="bibr">[3]</xref>, <xref rid="ppat.1000913-Miyagi1" ref-type="bibr">[23]</xref>, <xref rid="ppat.1000913-Douglas1" ref-type="bibr">[30]</xref>&#x02013;<xref rid="ppat.1000913-Mangeat1" ref-type="bibr">[33]</xref>. <xref ref-type="table" rid="ppat-1000913-t003">Table 3</xref> provides a compilation of the reagents and techniques used, as well as the results obtained from each of these mechanistic studies.</p><fig id="ppat-1000913-g002" position="float"><object-id pub-id-type="doi">10.1371/journal.ppat.1000913.g002</object-id><label>Figure 2</label><caption><title>Potential mechanistic models of BST-2 tethering and viral antagonists against BST-2.</title><p>(A) BST-2 acting as a virion tether in the absence of any antagonist; (B) efficient virus release when BST-2 function is inhibited by a generic viral antagonist; (C) Vpu-mediated &#x003b2;TrCP-dependent degradation of BST-2 via the endosome/lysosome pathway; (D) Vpu-mediated &#x003b2;TrCP-dependent degradation of BST-2 via the ubiquitin/proteasome pathway; (E) HIV-2/SIV<sub>AGM</sub> Env- or Vpu-mediated BST-2 sequestration; (F) SIV Nef-mediated BST-2 downregulation. Ub(n), mono- or poly-ubiquitin.</p></caption><graphic xlink:href="ppat.1000913.g002"/></fig><table-wrap id="ppat-1000913-t002" position="float"><object-id pub-id-type="doi">10.1371/journal.ppat.1000913.t002</object-id><label>Table 2</label><caption><title>Advantages and Disadvantages of Various Expression and Assay Systems.</title></caption><alternatives><graphic id="ppat-1000913-t002-2" xlink:href="ppat.1000913.t002"/><table frame="hsides" rules="groups"><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup><thead><tr><td align="left" rowspan="1" colspan="1">BST-2 Expression Systems</td><td align="left" rowspan="1" colspan="1">Advantages</td><td align="left" rowspan="1" colspan="1">Disadvantages</td></tr></thead><tbody><tr><td align="left" rowspan="1" colspan="1">Endogenous</td><td align="left" rowspan="1" colspan="1">&#x02022;&#x02003;Physiologically relevant&#x02022;&#x02003;100&#x00025; of cells express protein&#x02022;&#x02003;No need for expression vectors&#x02022;&#x02003;Correct modifications and localization</td><td align="left" rowspan="1" colspan="1">&#x02022;&#x02003;Cell-type limitations (transfection efficiency and viral vector compatibility)&#x02022;&#x02003;Cannot make mutants&#x02022;&#x02003;No isogenic negative control</td></tr><tr><td align="left" rowspan="1" colspan="1">Lenti/retrovirus</td><td align="left" rowspan="1" colspan="1">&#x02022;&#x02003;100&#x00025; of cells express protein&#x02022;&#x02003;Isogenic negative control&#x02022;&#x02003;Easy mutant analysis&#x02022;&#x02003;Single copy per genome&#x02022;&#x02003;Expression levels and processing similar to endogenous</td><td align="left" rowspan="1" colspan="1">&#x02022;&#x02003;More time consuming to generate stable cell lines&#x02022;&#x02003;Potential loss of BST-2 expression over time</td></tr><tr><td align="left" rowspan="1" colspan="1">Transient transfection</td><td align="left" rowspan="1" colspan="1">&#x02022;&#x02003;Quick&#x02022;&#x02003;Isogenic negative control&#x02022;&#x02003;Easy mutant analysis</td><td align="left" rowspan="1" colspan="1">&#x02022;&#x02003;Over-expression anomalies&#x02022;&#x02003;(processing/secretion defects)&#x02022;&#x02003;Variable transfection efficiency (cell-type dependent)&#x02022;&#x02003;Must perform dose-response</td></tr></tbody></table><table frame="hsides" rules="groups"><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup><thead><tr><td align="left" rowspan="1" colspan="1">BST-2 Molecules</td><td align="left" rowspan="1" colspan="1">Advantages</td><td align="left" rowspan="1" colspan="1">Disadvantages</td></tr></thead><tbody><tr><td align="left" rowspan="1" colspan="1">Epitope-tagged</td><td align="left" rowspan="1" colspan="1">&#x02022;&#x02003;Well-characterized, efficient antibodies to tag</td><td align="left" rowspan="1" colspan="1">&#x02022;&#x02003;Could adversely affect processing, localization and function</td></tr><tr><td align="left" rowspan="1" colspan="1">Untagged</td><td align="left" rowspan="1" colspan="1">&#x02022;&#x02003;Physiological</td><td align="left" rowspan="1" colspan="1">&#x02022;&#x02003;Need efficient antibodies to molecule</td></tr></tbody></table><table frame="hsides" rules="groups"><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup><thead><tr><td align="left" rowspan="1" colspan="1">Viral Egress Assays</td><td align="left" rowspan="1" colspan="1">Advantages</td><td align="left" rowspan="1" colspan="1">Disadvantages</td></tr></thead><tbody><tr><td align="left" rowspan="1" colspan="1">Secreted p24/intracellular p24</td><td align="left" rowspan="1" colspan="1">&#x02022;&#x02003;Quick&#x02022;&#x02003;Only measures viral release</td><td align="left" rowspan="1" colspan="1">&#x02022;&#x02003;Measures all particle release including non-infectious&#x02022;&#x02003;Quantitation of immunoblots</td></tr><tr><td align="left" rowspan="1" colspan="1">HIV reporter assay</td><td align="left" rowspan="1" colspan="1">&#x02022;&#x02003;Only measures infectious particles&#x02022;&#x02003;Reliable quantitation</td><td align="left" rowspan="1" colspan="1">&#x02022;&#x02003;Viral entry, reverse transcription, and integration must not be affected</td></tr><tr><td align="left" rowspan="1" colspan="1">Long-term viral replication</td><td align="left" rowspan="1" colspan="1">&#x02022;&#x02003;Most physiologically relevant</td><td align="left" rowspan="1" colspan="1">&#x02022;&#x02003;7&#x02013;10 days&#x02022;&#x02003;Allows cell to cell spread, which can mask egress</td></tr></tbody></table></alternatives></table-wrap><table-wrap id="ppat-1000913-t003" position="float"><object-id pub-id-type="doi">10.1371/journal.ppat.1000913.t003</object-id><label>Table 3</label><caption><title>Methods and Results from Mechanistic Studies Evaluating Vpu-Mediated Downregulation of BST-2.</title></caption><alternatives><graphic id="ppat-1000913-t003-3" xlink:href="ppat.1000913.t003"/><table frame="hsides" rules="groups"><colgroup span="1"><col width="99*" align="left" span="1"/><col width="99*" align="center" span="1"/><col width="99*" align="center" span="1"/><col width="102*" align="center" span="1"/><col width="99*" align="center" span="1"/><col width="100*" align="center" span="1"/><col width="99*" align="center" span="1"/><col width="99*" align="center" span="1"/><col width="100*" align="center" span="1"/><col width="99*" align="center" span="1"/><col width="99*" align="center" span="1"/><col width="99*" align="center" span="1"/><col width="100*" align="center" span="1"/><col width="99*" align="center" span="1"/></colgroup><thead><tr><td align="left" rowspan="1" colspan="1">Reference</td><td align="left" rowspan="1" colspan="1">Cell Type</td><td align="left" rowspan="1" colspan="1">BST-2 Source</td><td align="left" rowspan="1" colspan="1">Vpu Source</td><td align="left" rowspan="1" colspan="1">Surface BST-2</td><td align="left" rowspan="1" colspan="1">Total BST-2</td><td align="left" rowspan="1" colspan="1">&#x003b2;TrCP-Dependent BST-2 <inline-formula><inline-graphic xlink:href="ppat.1000913.e001.jpg" mimetype="image"/></inline-formula>
+</td><td align="left" rowspan="1" colspan="1">&#x003b2;TrCP-Dependent Egress</td><td align="left" rowspan="1" colspan="1">VpuTM-Dependent BST-2 <inline-formula><inline-graphic xlink:href="ppat.1000913.e002.jpg" mimetype="image"/></inline-formula>
+</td><td align="left" rowspan="1" colspan="1">VpuTM-Dependent Egress</td><td align="left" rowspan="1" colspan="1">Vpu/BST-2 Co-IP</td><td align="left" rowspan="1" colspan="1">BST-2 Half-Life</td><td align="left" rowspan="1" colspan="1">Drug Inhibition of Vpu Function</td><td align="left" rowspan="1" colspan="1">Conclusion</td></tr></thead><tbody><tr><td align="left" rowspan="1" colspan="1">
+<xref rid="ppat.1000913-Bartee1" ref-type="bibr">[3]</xref>
+</td><td align="left" rowspan="1" colspan="1">HeLa</td><td align="left" rowspan="1" colspan="1">Endogenous</td><td align="left" rowspan="1" colspan="1">Ad-Vpu</td><td align="left" rowspan="1" colspan="1">
+<italic>n.d.</italic>
+</td><td align="left" rowspan="1" colspan="1">
+<inline-formula><inline-graphic xlink:href="ppat.1000913.e003.jpg" mimetype="image"/></inline-formula>
+</td><td align="left" rowspan="1" colspan="1">
+<italic>n.d.</italic>
+</td><td align="left" rowspan="1" colspan="1">
+<italic>n.d.</italic>
+</td><td align="left" rowspan="1" colspan="1">
+<italic>n.d.</italic>
+</td><td align="left" rowspan="1" colspan="1">
+<italic>n.d.</italic>
+</td><td align="left" rowspan="1" colspan="1">
+<italic>n.d.</italic>
+</td><td align="left" rowspan="1" colspan="1">
+<italic>n.d.</italic>
+</td><td align="left" rowspan="1" colspan="1">
+<italic>n.d.</italic>
+</td><td align="left" rowspan="1" colspan="1">&#x02022;&#x02003;Vpu targets BST-2 for degradation</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<xref rid="ppat.1000913-VanDamme1" ref-type="bibr">[5]</xref>
+</td><td align="left" rowspan="1" colspan="1">HeLa</td><td align="left" rowspan="1" colspan="1">Endogenous</td><td align="left" rowspan="1" colspan="1">pVphu (transfect)HIV-1pVpu::GFP (subtype B)pVpu::GFP (subtype C)</td><td align="left" rowspan="1" colspan="1">
+<inline-formula><inline-graphic xlink:href="ppat.1000913.e004.jpg" mimetype="image"/></inline-formula>
+<inline-formula><inline-graphic xlink:href="ppat.1000913.e005.jpg" mimetype="image"/></inline-formula>
+<inline-formula><inline-graphic xlink:href="ppat.1000913.e006.jpg" mimetype="image"/></inline-formula>
+<inline-formula><inline-graphic xlink:href="ppat.1000913.e007.jpg" mimetype="image"/></inline-formula>
+</td><td align="left" rowspan="1" colspan="1">
+<italic>n.d.</italic>
+<italic>n.d.</italic>
+<italic>n.d.</italic>
+<italic>n.d.</italic>
+</td><td align="left" rowspan="1" colspan="1">
+<italic>n.d.</italic>Yes<italic>n.d.</italic>
+<italic>n.d.</italic>
+</td><td align="left" rowspan="1" colspan="1">
+<italic>n.d.</italic>Yes<italic>n.d.</italic>
+<italic>n.d.</italic>
+</td><td align="left" rowspan="1" colspan="1">
+<italic>n.d.</italic>Yes<italic>n.d.</italic>
+<italic>n.d.</italic>
+</td><td align="left" rowspan="1" colspan="1">
+<italic>n.d.</italic>Yes<italic>n.d.</italic>
+<italic>n.d.</italic>
+</td><td align="left" rowspan="1" colspan="1">
+<italic>n.d.</italic>
+<italic>n.d.</italic>
+<italic>n.d.</italic>
+<italic>n.d.</italic>
+</td><td align="left" rowspan="1" colspan="1">
+<italic>n.d.</italic>
+<italic>n.d.</italic>
+<italic>n.d.</italic>
+<italic>n.d.</italic>
+</td><td align="left" rowspan="1" colspan="1">
+<italic>n.d.</italic>5 h MG132&#x0200a;=&#x0200a;no effect<italic>n.d.n.d.</italic>
+</td><td align="left" rowspan="1" colspan="1">&#x02022;&#x02003;Vpu downregulates surface BST-2&#x02022;&#x02003;Vpu dependent BST-2 degradation is proteasome dependent&#x02022;&#x02003;Vpu-&#x003b2;TrCP binding is required&#x02022;&#x02003;Vpu TM domain is involved</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<xref rid="ppat.1000913-Mitchell1" ref-type="bibr">[34]</xref>
+</td><td align="left" rowspan="1" colspan="1">HeLa</td><td align="left" rowspan="1" colspan="1">Endogenous</td><td align="left" rowspan="1" colspan="1">pVphu (transfect)</td><td align="left" rowspan="1" colspan="1">
+<inline-formula><inline-graphic xlink:href="ppat.1000913.e008.jpg" mimetype="image"/></inline-formula>
+</td><td align="left" rowspan="1" colspan="1">No &#x00394;</td><td align="left" rowspan="1" colspan="1">Yes</td><td align="left" rowspan="1" colspan="1">Yes</td><td align="left" rowspan="1" colspan="1">
+<italic>n.d.</italic>
+</td><td align="left" rowspan="1" colspan="1">
+<italic>n.d.</italic>
+</td><td align="left" rowspan="1" colspan="1">
+<italic>n.d.</italic>
+</td><td align="left" rowspan="1" colspan="1">
+<italic>n.d.</italic>
+</td><td align="left" rowspan="1" colspan="1">Bafilomycin and MG132 (14 h)</td><td align="left" rowspan="1" colspan="1">&#x02022;&#x02003;Vpu targets BST-2 between the endosome and lysosome&#x02022;&#x02003;Lysosomal degradation</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<xref rid="ppat.1000913-Goffinet1" ref-type="bibr">[31]</xref>
+</td><td align="left" rowspan="1" colspan="1">TZM-bl (HeLa)A3.01 (T cell)293T</td><td align="left" rowspan="1" colspan="1">EndogenousEndogenousExogenous, NH2-term. HA-tag</td><td align="left" rowspan="1" colspan="1">HIV-1HIV-1pVphu (transfect)</td><td align="left" rowspan="1" colspan="1">
+<inline-formula><inline-graphic xlink:href="ppat.1000913.e009.jpg" mimetype="image"/></inline-formula>
+<inline-formula><inline-graphic xlink:href="ppat.1000913.e010.jpg" mimetype="image"/></inline-formula>
+<italic>n.d.</italic>
+</td><td align="left" rowspan="1" colspan="1">
+<italic>n.d.</italic>
+<italic>n.d.<inline-formula><inline-graphic xlink:href="ppat.1000913.e011.jpg" mimetype="image"/></inline-formula></italic>
+</td><td align="left" rowspan="1" colspan="1">
+<italic>n.d.</italic>
+<italic>n.d.</italic>Yes</td><td align="left" rowspan="1" colspan="1">
+<italic>n.d.</italic>
+<italic>n.d.</italic>Yes</td><td align="left" rowspan="1" colspan="1">
+<italic>n.d.</italic>
+<italic>n.d.</italic>
+<italic>n.d.</italic>
+</td><td align="left" rowspan="1" colspan="1">
+<italic>n.d.</italic>
+<italic>n.d.</italic>
+<italic>n.d.</italic>
+</td><td align="left" rowspan="1" colspan="1">
+<italic>n.d.</italic>
+<italic>n.d.</italic>
+<italic>n.d.</italic>
+</td><td align="left" rowspan="1" colspan="1">
+<italic>n.d.</italic>
+<italic>n.d.</italic>&#x0223c;1&#x02013;3 h, &#x0201c;biphasic&#x0201d;</td><td align="left" rowspan="1" colspan="1">
+<italic>n.d.</italic>
+<italic>n.d.</italic>MG132 and clastolactocystin increase to &#x0003c;18 h</td><td align="left" rowspan="1" colspan="1">&#x02022;&#x02003;Vpu-&#x003b2;TrCP dependent BST-2 downregulation&#x02022;&#x02003;BST-2 degradation is proteosomal</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<xref rid="ppat.1000913-Miyagi1" ref-type="bibr">[23]</xref>
+</td><td align="left" rowspan="1" colspan="1">HeLaMDMCEMx174 (B/T cell hybrid)H9</td><td align="left" rowspan="1" colspan="1">EndogenousEndogenousEndogenousEndogenous</td><td align="left" rowspan="1" colspan="1">pVphu (transfect)HIV-1 AdaHIV-1 (long term)HIV-1 (long term)</td><td align="left" rowspan="1" colspan="1">
+<inline-formula><inline-graphic xlink:href="ppat.1000913.e012.jpg" mimetype="image"/></inline-formula>
+<italic>n.d.</italic>No &#x00394;No &#x00394;</td><td align="left" rowspan="1" colspan="1">
+<inline-formula><inline-graphic xlink:href="ppat.1000913.e013.jpg" mimetype="image"/></inline-formula>
+<inline-formula><inline-graphic xlink:href="ppat.1000913.e014.jpg" mimetype="image"/></inline-formula> No &#x00394;No &#x00394;</td><td align="left" rowspan="1" colspan="1">
+<italic>n.d.</italic>
+<italic>n.d.</italic>N/AN/A</td><td align="left" rowspan="1" colspan="1">
+<italic>n.d.</italic>
+<italic>n.d.</italic>NoNo</td><td align="left" rowspan="1" colspan="1">
+<italic>n.d.</italic>
+<italic>n.d.</italic>N/AN/A</td><td align="left" rowspan="1" colspan="1">
+<italic>n.d.</italic>
+<italic>n.d.</italic>YesYes</td><td align="left" rowspan="1" colspan="1">
+<italic>n.d.</italic>
+<italic>n.d.</italic>
+<italic>n.d.</italic>
+<italic>n.d.</italic>
+</td><td align="left" rowspan="1" colspan="1">
+<italic>n.d.</italic>
+<italic>n.d.</italic>
+<italic>n.d.</italic>
+<italic>n.d.</italic>
+</td><td align="left" rowspan="1" colspan="1">
+<italic>n.d.</italic>
+<italic>n.d.</italic>
+<italic>n.d.</italic>
+<italic>n.d.</italic>
+</td><td align="left" rowspan="1" colspan="1">&#x02022;&#x02003;Vpu leads to BST-2 degradation in some, but not all, cell types&#x02022;&#x02003;Viral release may not depend on BST-2 degradation</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<xref rid="ppat.1000913-Douglas1" ref-type="bibr">[30]</xref>
+</td><td align="left" rowspan="1" colspan="1">HeLaCEM::GFP (T cell)</td><td align="left" rowspan="1" colspan="1">EndogenousEndogenous</td><td align="left" rowspan="1" colspan="1">Adeno-VpuHIV-1</td><td align="left" rowspan="1" colspan="1">
+<inline-formula><inline-graphic xlink:href="ppat.1000913.e015.jpg" mimetype="image"/></inline-formula>
+<inline-formula><inline-graphic xlink:href="ppat.1000913.e016.jpg" mimetype="image"/></inline-formula>
+</td><td align="left" rowspan="1" colspan="1">
+<inline-formula><inline-graphic xlink:href="ppat.1000913.e017.jpg" mimetype="image"/></inline-formula>
+<inline-formula><inline-graphic xlink:href="ppat.1000913.e018.jpg" mimetype="image"/></inline-formula>
+</td><td align="left" rowspan="1" colspan="1">YesYes</td><td align="left" rowspan="1" colspan="1">Yes<italic>n.d.</italic>
+</td><td align="left" rowspan="1" colspan="1">
+<italic>n.d.</italic>
+<italic>n.d.</italic>
+</td><td align="left" rowspan="1" colspan="1">
+<italic>n.d.</italic>
+<italic>n.d.</italic>
+</td><td align="left" rowspan="1" colspan="1">Yes<italic>n.d.</italic>
+</td><td align="left" rowspan="1" colspan="1">&#x0003e;24 h, Vpu- &#x0223c;12 h, Vpu&#x0002b;<italic>n.d.</italic>
+</td><td align="left" rowspan="1" colspan="1">CMA inhibits turnover, MG132 does not<italic>n.d.</italic>
+</td><td align="left" rowspan="1" colspan="1">&#x02022;&#x02003;&#x003b2;TrCP-dependent, lysosomal BST-2 degradation</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<xref rid="ppat.1000913-Mangeat1" ref-type="bibr">[33]</xref>
+</td><td align="left" rowspan="1" colspan="1">293T</td><td align="left" rowspan="1" colspan="1">Exogenous, NH2-term. HA-tag</td><td align="left" rowspan="1" colspan="1">pVphu (transfect)</td><td align="left" rowspan="1" colspan="1">
+<italic>n.d.</italic>
+</td><td align="left" rowspan="1" colspan="1">
+<inline-formula><inline-graphic xlink:href="ppat.1000913.e019.jpg" mimetype="image"/></inline-formula>
+</td><td align="left" rowspan="1" colspan="1">Yes</td><td align="left" rowspan="1" colspan="1">Yes</td><td align="left" rowspan="1" colspan="1">
+<italic>n.d.</italic>
+</td><td align="left" rowspan="1" colspan="1">
+<italic>n.d.</italic>
+</td><td align="left" rowspan="1" colspan="1">Yes</td><td align="left" rowspan="1" colspan="1">
+<italic>n.d.</italic>
+</td><td align="left" rowspan="1" colspan="1">12 h MG132</td><td align="left" rowspan="1" colspan="1">&#x02022;&#x02003;&#x003b2;TrCP-dependent, proteasomal BST-2 degradation</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<xref rid="ppat.1000913-Iwabu1" ref-type="bibr">[32]</xref>
+</td><td align="left" rowspan="1" colspan="1">293TCOS7</td><td align="left" rowspan="1" colspan="1">ExogenousExogenous, FLAG, and MYC tags</td><td align="left" rowspan="1" colspan="1">pCA-Vpu-RRE&#x0002b;pCa-REVpCA-Vpu-RRE&#x0002b;pCa-REV</td><td align="left" rowspan="1" colspan="1">
+<inline-formula><inline-graphic xlink:href="ppat.1000913.e020.jpg" mimetype="image"/></inline-formula>
+<inline-formula><inline-graphic xlink:href="ppat.1000913.e021.jpg" mimetype="image"/></inline-formula>
+</td><td align="left" rowspan="1" colspan="1">
+<inline-formula><inline-graphic xlink:href="ppat.1000913.e022.jpg" mimetype="image"/></inline-formula>
+<italic>n.d.</italic>
+</td><td align="left" rowspan="1" colspan="1">
+<italic>n.d.</italic>
+<italic>n.d.</italic>
+</td><td align="left" rowspan="1" colspan="1">
+<italic>n.d.</italic>
+<italic>n.d.</italic>
+</td><td align="left" rowspan="1" colspan="1">
+<italic>n.d.</italic>
+<italic>n.d.</italic>
+</td><td align="left" rowspan="1" colspan="1">Yes<italic>n.d.</italic>
+</td><td align="left" rowspan="1" colspan="1">Yes<italic>n.d.</italic>
+</td><td align="left" rowspan="1" colspan="1">
+<italic>n.d.</italic>
+<italic>n.d.</italic>
+</td><td align="left" rowspan="1" colspan="1">MG132 stabilizes BST-2 regardless of VpuLysosomal inhibitors cause Vpu and BST-2 to co-localize to the lysosome</td><td align="left" rowspan="1" colspan="1">&#x02022;&#x02003;&#x003b2;TrCP-dependent lysosomal BST-2 degradation&#x02022;&#x02003;Vpu acts upon BST-2 at the plasma membrane&#x02022;&#x02003;Vpu binds to BST-2 via their TM domains</td></tr></tbody></table></alternatives><table-wrap-foot><fn id="nt101"><label/><p>N/A, not applicable; n.d., not done; <inline-formula><inline-graphic xlink:href="ppat.1000913.e023.jpg" mimetype="image"/></inline-formula>, downregulation.</p></fn></table-wrap-foot></table-wrap></sec><sec id="s3h"><title>Vpu-Mediated Degradation Pathways of BST-2</title><p>While it remains to be determined whether BST-2 is directly ubiquitinated upon interaction with Vpu and &#x003b2;TrCP, support for a ubiquitin-dependent mechanism was provided by experiments in which the Vpu-mediated downregulation of BST-2 was significantly inhibited by concanamycin A <xref rid="ppat.1000913-Douglas1" ref-type="bibr">[30]</xref>, bafilomycin A1 <xref rid="ppat.1000913-Mitchell1" ref-type="bibr">[34]</xref>, and long-term MG132 treatment (&#x02265;12 h) <xref rid="ppat.1000913-Goffinet1" ref-type="bibr">[31]</xref>, <xref rid="ppat.1000913-Mangeat1" ref-type="bibr">[33]</xref>, <xref rid="ppat.1000913-Mitchell1" ref-type="bibr">[34]</xref>. Concanamycin A and bafilomycin A1 are both vacuolar H(&#x0002b;)-ATPase inhibitors that block endosomal maturation and thus lysosomal degradation. In contrast, MG132 is a proteasome inhibitor that, when used for extended periods, prevents cellular ubiquitin recycling. Since the resulting ubiquitin depletion can affect ubiquitin-mediated endocytosis and other ubiquitin-dependent pathways, MG132-treatment does not necessarily implicate proteasomal degradation. Depending on the drugs used, opposing conclusions have been reached, in which Vpu-mediated degradation of BST-2 occurs via either the lysosome <xref rid="ppat.1000913-Douglas1" ref-type="bibr">[30]</xref>, <xref rid="ppat.1000913-Iwabu1" ref-type="bibr">[32]</xref>, <xref rid="ppat.1000913-Mitchell1" ref-type="bibr">[34]</xref> or the proteasome <xref rid="ppat.1000913-Goffinet1" ref-type="bibr">[31]</xref>, <xref rid="ppat.1000913-Mangeat1" ref-type="bibr">[33]</xref> (see <xref ref-type="table" rid="ppat-1000913-t003">Table 3</xref> and <xref ref-type="fig" rid="ppat-1000913-g002">Figure 2</xref>). Another possible cause for these conflicting results may be the BST-2 expression systems utilized (see <xref ref-type="table" rid="ppat-1000913-t002">Table 2</xref>). In general, data supporting a lysosomal degradation mechanism have come from studies of endogenously expressed BST-2, while data supporting a proteasome-dependent pathway have arisen from the use of exogenously expressed, epitope-tagged BST-2, which often results in the accumulation of immature BST-2 within the endoplasmic reticulum (ER) <xref rid="ppat.1000913-Andrew1" ref-type="bibr">[25]</xref>.</p><p>To further investigate a role for ubiquitination of BST-2, two groups have mutated the cytoplasmic lysine residues of BST-2, which are the most likely targets for ubiquitin addition (<xref ref-type="fig" rid="ppat-1000913-g001">Figure 1B</xref>). Both groups found that the double lysine mutant retained the ability to restrict viral egress and was still downregulated by Vpu. These data suggest that if BST-2 ubiquitination is required for its viral restriction function or necessary for Vpu-mediated downregulation, then residues other than the cytoplasmic lysines must be the ubiquitin target <xref rid="ppat.1000913-Mangeat1" ref-type="bibr">[33]</xref>, <xref rid="ppat.1000913-Mitchell1" ref-type="bibr">[34]</xref>. A definitive mechanism for the Vpu-mediated degradation of BST-2 awaits a more extensive analysis of the role that ubiquitin plays in this process.</p></sec><sec id="s3i"><title>The Role of BST-2 Endocytosis in the Vpu-Mediated Downregulation of BST-2</title><p>Mitchell et al. presented data that indicates a role for the endosomal adapter protein complex member AP-2 (&#x003bc;2) in the Vpu-dependent downregulation of BST-2 <xref rid="ppat.1000913-Mitchell1" ref-type="bibr">[34]</xref>. However, Vpu did not appear to enhance the rate of BST-2 internalization, leading the authors to conclude that Vpu acts after BST-2 is naturally endocytosed. In contrast, Iwabu et al. mutated a dual-tyrosine site in BST-2 (Y6/8A) (<xref ref-type="fig" rid="ppat-1000913-g001">Figure 1B</xref>) involved in clathrin-dependent endocytosis and found that Vpu was still able to induce BST-2 downregulation, suggesting that natural BST-2 endocytosis is not required for this process <xref rid="ppat.1000913-Iwabu1" ref-type="bibr">[32]</xref>. The interpretation of any effects Vpu might have on BST-2 endocytosis are complicated by the conflicting reports regarding which AP-2 subunit, either &#x003bc;2 <xref rid="ppat.1000913-Rollason1" ref-type="bibr">[11]</xref> or &#x003b1;-adaptin <xref rid="ppat.1000913-Masuyama1" ref-type="bibr">[9]</xref>, is involved in the natural BST-2 endocytosis pathway.</p></sec></sec><sec id="s4"><title>Species-Specific Lentiviral Countermeasures against BST-2</title><p>The retroviral restriction factor TRIM5&#x003b1; was identified in studies designed to identify host factors responsible for HIV-1 restriction in Old World monkeys <xref rid="ppat.1000913-Stremlau1" ref-type="bibr">[39]</xref>. A number of recent publications (described below) suggest a similar species specificity in the abilities of primate lentiviruses to overcome BST-2 restriction by their respective hosts.</p><sec id="s4a"><title>Non-Human BST-2 Proteins Restrict HIV-1</title><p>Several studies have found that HIV-1 egress is inhibited by BST-2 proteins from a wide selection of mammalian species. This list includes Old World monkeys, such as rhesus macaques <xref rid="ppat.1000913-McNatt1" ref-type="bibr">[40]</xref>, <xref rid="ppat.1000913-Jia1" ref-type="bibr">[41]</xref>, African green monkeys (AGMs) <xref rid="ppat.1000913-McNatt1" ref-type="bibr">[40]</xref>, <xref rid="ppat.1000913-Gupta1" ref-type="bibr">[42]</xref>, <xref rid="ppat.1000913-Rong1" ref-type="bibr">[43]</xref>, and Mustached monkeys <xref rid="ppat.1000913-Lim1" ref-type="bibr">[44]</xref>, as well as both mice and rats <xref rid="ppat.1000913-Goffinet1" ref-type="bibr">[31]</xref>, <xref rid="ppat.1000913-McNatt1" ref-type="bibr">[40]</xref>. Thus far, the only primate BST-2 shown not to restrict HIV-1 was found in a species of New World owl monkey (<italic>Aotus lemurinus griseimembra</italic>) <xref rid="ppat.1000913-Wong1" ref-type="bibr">[45]</xref>. However, when the sequence of this defective BST-2 was compared to that of closely related owl monkeys encoding functional BST-2 proteins, the defect mapped to residue 181 (I 181 T) within the predicted COOH-terminal GPI-anchor signal peptide. This mutation altered normal BST-2 glycosylation, which leads to the inactivation or mistargeting of the protein in this owl monkey species. Taken together, these data suggest that as long as BST-2 is able to mature properly, BST-2 restriction of HIV-1 is remarkably species independent. This generalization was extended further by Sato et al., who showed that when transfected into a variety of mammalian and bird cell lines, human BST-2 can still restrict HIV-1 release. This suggests that BST-2 function requires no species-specific cofactors <xref rid="ppat.1000913-Sato1" ref-type="bibr">[46]</xref>.</p></sec><sec id="s4b"><title>HIV-1 Vpu Does Not Counteract Non-Hominid BST-2</title><p>Another interesting aspect of the aforementioned studies was the consistent observation that HIV-1 Vpu counteracts human and chimpanzee (cpz) BST-2, but not BST-2 proteins encoded by non-hominids <xref rid="ppat.1000913-Goffinet1" ref-type="bibr">[31]</xref>, <xref rid="ppat.1000913-McNatt1" ref-type="bibr">[40]</xref>&#x02013;<xref rid="ppat.1000913-Wong1" ref-type="bibr">[45]</xref>. These findings explain the previous observation that regardless of Vpu expression, COS-7 cells (derived from AGMs) tethered HIV-1 upon IFN induction <xref rid="ppat.1000913-Neil3" ref-type="bibr">[47]</xref>. Further support for the species specificity of Vpu-mediated antagonism of BST-2 came from studies demonstrating that Vpu encoded by SIVmus (which infects Moustached monkeys [<italic>Cercopithecus cephus</italic>]) could antagonize the <italic>C. cephus</italic> and the closely related AGM BST-2s, but not human BST-2. This phenomenon has recently been extended to include numerous other Vpu-expressing simian immunodeficiency virus (SIV) isolates (SIVgsn/mus/mon) <xref rid="ppat.1000913-Sauter1" ref-type="bibr">[48]</xref>, <xref rid="ppat.1000913-Yang1" ref-type="bibr">[49]</xref>. Surprisingly, the Vpus encoded by SIVcpz and SIVgor were inactive against all BST-2s tested. Instead, these SIV strains appear to utilize Nef for this purpose (see below) <xref rid="ppat.1000913-Sauter1" ref-type="bibr">[48]</xref>, <xref rid="ppat.1000913-Yang1" ref-type="bibr">[49]</xref>. Thus, while BST-2's ability to restrict viral egress appears to be pleiotropic, there appears to be a clear adaptation of viral Vpu proteins to their respective host species, with the notable exception of SIVcpz/gor.</p></sec><sec id="s4c"><title>BST-2 Domains Required for Sensitivity to Vpu</title><p>The species specificity of BST-2 antagonism has provided the unique opportunity to map residues within human BST-2 that are required for Vpu-mediated downregulation. Swapping the cytoplasmic, TM, and extracellular domains between human and mouse BST-2 showed that important determinants are present in each human domain that are required for Vpu downregulation <xref rid="ppat.1000913-Goffinet1" ref-type="bibr">[31]</xref>. Other studies showed that rhesus BST-2 was downregulated by Vpu when the TM was replaced with that of human BST-2 <xref rid="ppat.1000913-McNatt1" ref-type="bibr">[40]</xref>&#x02013;<xref rid="ppat.1000913-Rong1" ref-type="bibr">[43]</xref>. Conversely, replacing the TM of human BST-2 with that of rhesus BST-2 rendered the chimeric protein resistant to Vpu. In an alternative approach, a comparison of primate BST-2 nucleotide sequences suggested that the ratios of non-synonymous substitutions (nucleotide changes that affect the protein sequence) to synonymous substitutions were higher in the cytoplasmic and TM domains compared to those in the extracellular domain <xref rid="ppat.1000913-McNatt1" ref-type="bibr">[40]</xref>, <xref rid="ppat.1000913-Gupta1" ref-type="bibr">[42]</xref>. Focusing on these regions led to the identification of residues within the TM of human BST-2 that influenced Vpu-mediated downregulation (<xref ref-type="fig" rid="ppat-1000913-g003">Figure 3</xref>) <xref rid="ppat.1000913-McNatt1" ref-type="bibr">[40]</xref>, <xref rid="ppat.1000913-Gupta1" ref-type="bibr">[42]</xref>, <xref rid="ppat.1000913-Rong1" ref-type="bibr">[43]</xref>. However, due to the wide variation in both BST-2 expression and maturation presented in these studies, no clear consensus has emerged.</p><fig id="ppat-1000913-g003" position="float"><object-id pub-id-type="doi">10.1371/journal.ppat.1000913.g003</object-id><label>Figure 3</label><caption><title>Compilation of BST-2 TM mutants evaluated for sensitivity to Vpu antagonism.</title><p>The schematic at the top represents human BST-2 with the sequence of the TM domain. Also shown are the five amino acids present in rhesus, but absent from human BST-2, that confer sensitivity to SIV Nef. Residues in purple have been shown to be under positive selection <xref rid="ppat.1000913-Gupta1" ref-type="bibr">[42]</xref>. Three laboratories have generated substitution mutants in human BST-2 that replace the human residue for the corresponding rhesus or AGM residue. Mutants made by each group are color-coded; Rong et al. in blue <xref rid="ppat.1000913-Rong1" ref-type="bibr">[43]</xref>, Gupta et al. in red <xref rid="ppat.1000913-Gupta1" ref-type="bibr">[42]</xref>, and McNatt et al. in green <xref rid="ppat.1000913-McNatt1" ref-type="bibr">[40]</xref>. All three groups evaluated their mutants in similar infectious virus-release assays that compared the egress of wild-type HIV-1 to that of &#x00394;Vpu HIV-1. Mutants shown in boxes were identified in their respective publications as having a significant impact on sensitivity to Vpu with little to no effect on BST-2 tethering function.</p></caption><graphic xlink:href="ppat.1000913.g003"/></fig></sec></sec><sec id="s5"><title>Other Viruses Restricted by BST-2 and Their Countermeasures</title><p>BST-2 has been shown to inhibit the release of viral or viral-like particles from a variety of enveloped viruses (<xref ref-type="table" rid="ppat-1000913-t001">Table 1</xref> and references therein). Many of these viruses share little or no homology with one another, thus highlighting BST-2's intrinsic anti-viral function. Because viruses co-evolve with their hosts, it was perhaps not surprising to find that HIV-1 encodes a BST-2 countermeasure in the form of Vpu. Therefore, by extension, one might suspect that other viruses have also developed mechanisms to deal with BST-2. The following section explores the manner in which viruses other than HIV-1 antagonize BST-2.</p><sec id="s5a"><title>HIV-2</title><p>In contrast to HIV-1, HIV-2 does not encode a Vpu protein. Regardless, some strains of HIV-2 have been shown to exhibit an enhanced release phenotype in Vpu-restrictive cells <xref rid="ppat.1000913-Bour1" ref-type="bibr">[50]</xref>, <xref rid="ppat.1000913-Ritter1" ref-type="bibr">[51]</xref>. Interestingly, this HIV-2 release function maps to the envelope (Env) protein. Attempts to map those residues that contribute to this phenotype have revealed both a single amino acid (T598) within the gp41 ectodomain <xref rid="ppat.1000913-Bour2" ref-type="bibr">[52]</xref> and a GYXX&#x003b8; endocytic-sorting motif within the cytoplasmic tail <xref rid="ppat.1000913-Abada1" ref-type="bibr">[53]</xref>. Although these studies were performed prior to the identification of BST-2, recent data confirms that egress-competent HIV-2 strains can downregulate cell surface BST-2, and that both residue T598 <xref rid="ppat.1000913-Douglas1" ref-type="bibr">[30]</xref>, <xref rid="ppat.1000913-Jia1" ref-type="bibr">[41]</xref> and the GYXX&#x003b8; motif <xref rid="ppat.1000913-LeTortorec1" ref-type="bibr">[54]</xref> may be involved in this process. Mutations that prevent envelope processing are also defective for both egress <xref rid="ppat.1000913-Bour2" ref-type="bibr">[52]</xref> and BST-2 antagonism <xref rid="ppat.1000913-LeTortorec1" ref-type="bibr">[54]</xref>. Mechanistically, it has been shown that, like Vpu, HIV-2 Env co-immunprecipitates with BST-2 <xref rid="ppat.1000913-LeTortorec1" ref-type="bibr">[54]</xref>. However, unlike Vpu, no evidence for HIV-2 Env-dependent BST-2 degradation has been shown. In one study, BST-2 was found to accumulate in the TGN in the presence of HIV-2 Env, suggesting that BST-2 sequestration may be the mechanism whereby HIV-2 Env enhances viral egress <xref rid="ppat.1000913-LeTortorec1" ref-type="bibr">[54]</xref> (see <xref ref-type="fig" rid="ppat-1000913-g002">Figure 2</xref>). Of note, HIV-2 Env was also able to antagonize rhesus BST-2 <xref rid="ppat.1000913-Jia1" ref-type="bibr">[41]</xref>, suggesting that HIV-2 Env functions in a species-independent manner.</p></sec><sec id="s5b"><title>Simian Immunodeficiency Viruses</title><p>Like HIV-2, most SIV strains do not encode a Vpu homolog. However, in contrast to HIV-2, two recent studies have shown that deleting the SIV <italic>env</italic> gene does not significantly inhibit SIVmac release from cells expressing rhesus BST-2 <xref rid="ppat.1000913-Jia1" ref-type="bibr">[41]</xref>, <xref rid="ppat.1000913-Zhang1" ref-type="bibr">[55]</xref>. Instead, these studies revealed that SIV Nef counteracts BST-2. This inhibition appears to be species specific; while Nef proteins from various SIV strains effectively antagonize BST-2 from their respective hosts, they are inactive against human BST-2 <xref rid="ppat.1000913-Zhang1" ref-type="bibr">[55]</xref>. New evidence suggests that this is also the case for SIVgor and SIVcpz even though they express Vpu <xref rid="ppat.1000913-Sauter1" ref-type="bibr">[48]</xref>. Interestingly, both HIV-1 and HIV-2 Nef appear to have lost much of this functionality, as they do not antagonize human BST-2 <xref rid="ppat.1000913-Jia1" ref-type="bibr">[41]</xref>, <xref rid="ppat.1000913-Zhang1" ref-type="bibr">[55]</xref>. However, they have maintained some detectable activity against the rhesus BST-2 <xref rid="ppat.1000913-Jia1" ref-type="bibr">[41]</xref>. Using chimeras between human and rhesus BST-2, the region necessary for sensitivity to antagonism by SIVmac Nef was mapped to five amino acids (GDIWK) within the cytoplasmic domain of rhesus BST-2, which are missing in human BST-2 <xref rid="ppat.1000913-Jia1" ref-type="bibr">[41]</xref>, <xref rid="ppat.1000913-Zhang1" ref-type="bibr">[55]</xref> (<xref ref-type="fig" rid="ppat-1000913-g003">Figure 3</xref>). Mutational analyses have shown that both the Nef myristoylation site <xref rid="ppat.1000913-Jia1" ref-type="bibr">[41]</xref>, <xref rid="ppat.1000913-Zhang1" ref-type="bibr">[55]</xref> and cholesterol recognition motif <xref rid="ppat.1000913-Jia1" ref-type="bibr">[41]</xref> are important for Nef's ability to counteract rhesus BST-2, thus highlighting the importance of Nef membrane localization (<xref ref-type="fig" rid="ppat-1000913-g001">Figure 1C</xref>). Nef mutations that abolish downregulation of CD4 and CD28, but not MHC-I, also prevented BST-2 antagonism, suggesting potential mechanistic similarities between Nef-mediated downregulation of both CD4 and BST-2 <xref rid="ppat.1000913-Zhang1" ref-type="bibr">[55]</xref> (see <xref ref-type="fig" rid="ppat-1000913-g002">Figure 2</xref>). However, aside from the observation that SIV Nef induced cell surface downregulation of rhesus BST-2 <xref rid="ppat.1000913-Jia1" ref-type="bibr">[41]</xref>, no other mechanistic studies have been performed to date. Interestingly, the use of Nef to counteract BST-2 may not be universal among SIV strains. One group has found that, like HIV-2, the SIVagmTan Env downregulates cell surface BST-2 in a species-independent manner <xref rid="ppat.1000913-Gupta2" ref-type="bibr">[56]</xref>. However, this study relied exclusively on exogenously expressed SIVagm Env; <italic>env</italic> deletion viruses were not tested, and control experiments to determine Nef's role were not performed. Further complicating these conclusions, Lim et al. observed only a modest antagonism of AGM BST-2 by wild-type SIVagmTan. They hypothesize that this particular SIV strain may not require a BST-2 antagonist because it does not induce a robust IFN response in vivo <xref rid="ppat.1000913-Lim1" ref-type="bibr">[44]</xref>. More systematic, comparative studies will be necessary to a) confirm which strains of SIV have evolved BST-2 countermeasures and b) clarify the contributions that Vpu, Nef, and/or Env make towards SIV egress.</p></sec><sec id="s5c"><title>Filoviruses</title><p>The inhibition of Ebola VLP release provided the first demonstration that BST-2 limits the egress of a non-retrovirus <xref rid="ppat.1000913-Neil3" ref-type="bibr">[47]</xref>. Kaletsky et al. screened four Ebola proteins that are known to impact viral egress for their ability to overcome BST-2 <xref rid="ppat.1000913-Kaletsky1" ref-type="bibr">[24]</xref>. Only the glycoprotein (GP) restored VLP release in cells expressing BST-2. In contrast to Vpu, Ebola GP was found to counteract both murine and human BST-2, suggesting a lack of species specificity. While a direct interaction between GP and BST-2 was inferred from their co-localization and co-immunoprecipitation, no degradation or obvious mislocalization of BST-2 was observed, leaving the mechanism of antagonism by GP unresolved.</p></sec><sec id="s5d"><title>Kaposi's Sarcoma&#x02013;Associated Herpesvirus</title><p>Although KSHV is the only DNA virus currently known to counteract BST-2, our studies of KSHV-encoded immunomodulators established the first viral connection for BST-2 <xref rid="ppat.1000913-Bartee1" ref-type="bibr">[3]</xref>. In a proteomics screen for new host targets of the viral TM ubiquitin ligase K5, we observed that BST-2 levels were reduced in the presence of K5 <xref rid="ppat.1000913-Bartee1" ref-type="bibr">[3]</xref>. More recently, we demonstrated that, similar to other K5 targets, BST-2 is ubiquitinated by K5, resulting in ubiquitin-mediated endocytosis and lysosomal destruction <xref rid="ppat.1000913-Mansouri1" ref-type="bibr">[57]</xref>. Ubiquitination occurred at lysines in the cytoplasmic domain of BST-2 (<xref ref-type="fig" rid="ppat-1000913-g001">Figure 1A</xref>) and removal of the two lysines rendered BST-2 resistant to K5. In contrast, lysine-less BST-2 is still degraded by Vpu <xref rid="ppat.1000913-Mangeat1" ref-type="bibr">[33]</xref>, indicating that either alternative residues act as ubiquitin substrates or BST-2 is not a direct target of ubiquitin ligases in HIV-1-infected cells. Further analyses revealed that upon knockdown of K5, BST-2 reduced the release of KSHV from HeLa cells <xref rid="ppat.1000913-Mansouri1" ref-type="bibr">[57]</xref>. While this result indicates that BST-2 interferes with KSHV egress, further studies will be needed to determine how this interference is achieved since, unlike retroviral budding, herpesviral egress occurs by vesicular transport. Nevertheless, these studies indicate that the anti-viral function of BST-2 acts across an exceptionally wide spectrum of viruses.</p></sec></sec><sec id="s6"><title>Future Directions</title><p>Aside from the mechanistic questions regarding both the manner by which BST-2 inhibits viral egress and the means by which various viruses neutralize this activity, still larger questions remain. For example, how important is it for HIV to improve viral release if the virus can easily spread via cell-to-cell fusion? In long-term viral replication cultures, &#x00394;Vpu viruses show increased syncytia formation and cell-to-cell spread <xref rid="ppat.1000913-Klimkait1" ref-type="bibr">[16]</xref>, suggesting that under these conditions, overall viral replication is not decreased, even though particle release is significantly inhibited. Also, since the majority of studies investigating the BST-2 viral restriction and Vpu countermeasures have been performed in cell lines that are not physiological targets of HIV, will the same conclusions be reached when primary CD4&#x0002b; T cells are evaluated? Regardless, the very existence and current prevalence of Vpu among HIV-1 subtypes points to an evolutionary pressure to maintain this molecule. This raises the possibilities that a) viral release plays a much larger role in vivo, b) that the selection for the maintenance of Vpu is a result of one of its other functions (i.e., CD4 downregulation), and c) that BST-2 has other important anti-viral function(s) in addition to tethering virions. This latter hypothesis is intriguing in light of the study showing that BST-2 activates the ILT7 receptor on pDCs, leading to inhibition of IFN and proinflammatory cytokine production <xref rid="ppat.1000913-Cao1" ref-type="bibr">[13]</xref>. This result is somewhat counterintuitive, as it suggests that HIV is promoting immune activation. At the same time, if the goal of this activity is the continued recruitment of T cells to sites of infection, then the result of BST-2 downregulation might be expanded to include both enhanced viral egress and dissemination. Further evidence for an alternative BST-2 function(s) comes from the finding that an entirely synthetic, functional tetherin can be assembled from entirely non-BST-2 sequences <xref rid="ppat.1000913-PerezCaballero1" ref-type="bibr">[19]</xref>. If structure trumps sequence regarding tethering, compensatory mutations within BST-2 would easily arise in response to viral countermeasures, such that there would be little cross-species consensus among BST-2 sequences. That this is not true suggests that BST-2 does indeed perform other functions that require sequence fidelity, although these may or may not serve an anti-viral purpose. While a great deal has been accomplished in this emerging field, many loose ends remain, such that it is too early to become &#x0201c;tethered&#x0201d; to any particular model for either BST-2 function or antagonism.</p></sec></body><back><fn-group><fn fn-type="COI-statement"><p>The authors have declared that no competing interests exist.</p></fn><fn fn-type="financial-disclosure"><p>JLD, JKG, and AVM were supported by NIH grants AI063938 and RR00163. KV, MM, and KF were supported by NIH grant CA/AI 094011. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</p></fn></fn-group><ref-list><title>References</title><ref id="ppat.1000913-Goto1"><label>1</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Goto</surname><given-names>T</given-names></name><name><surname>Kennel</surname><given-names>SJ</given-names></name><name><surname>Abe</surname><given-names>M</given-names></name><name><surname>Takishita</surname><given-names>M</given-names></name><name><surname>Kosaka</surname><given-names>M</given-names></name><etal/></person-group>
+<year>1994</year>
+<article-title>A novel membrane antigen selectively expressed on terminally differentiated human B cells.</article-title>
+<source>Blood</source>
+<volume>84</volume>
+<fpage>1922</fpage>
+<lpage>1930</lpage>
+<pub-id pub-id-type="pmid">8080996</pub-id></element-citation></ref><ref id="ppat.1000913-Ishikawa1"><label>2</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Ishikawa</surname><given-names>J</given-names></name><name><surname>Kaisho</surname><given-names>T</given-names></name><name><surname>Tomizawa</surname><given-names>H</given-names></name><name><surname>Lee</surname><given-names>BO</given-names></name><name><surname>Kobune</surname><given-names>Y</given-names></name><etal/></person-group>
+<year>1995</year>
+<article-title>Molecular cloning and chromosomal mapping of a bone marrow stromal cell surface gene, BST2, that may be involved in pre-B-cell growth.</article-title>
+<source>Genomics</source>
+<volume>26</volume>
+<fpage>527</fpage>
+<lpage>534</lpage>
+<pub-id pub-id-type="pmid">7607676</pub-id></element-citation></ref><ref id="ppat.1000913-Bartee1"><label>3</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Bartee</surname><given-names>E</given-names></name><name><surname>McCormack</surname><given-names>A</given-names></name><name><surname>Fruh</surname><given-names>K</given-names></name></person-group>
+<year>2006</year>
+<article-title>Quantitative membrane proteomics reveals new cellular targets of viral immune modulators.</article-title>
+<source>PLoS Pathog</source>
+<volume>2</volume>
+<fpage>e107</fpage>
+<comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.ppat.0020107">10.1371/journal.ppat.0020107</ext-link></comment>
+<pub-id pub-id-type="pmid">17238276</pub-id></element-citation></ref><ref id="ppat.1000913-Neil1"><label>4</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Neil</surname><given-names>SJ</given-names></name><name><surname>Zang</surname><given-names>T</given-names></name><name><surname>Bieniasz</surname><given-names>PD</given-names></name></person-group>
+<year>2008</year>
+<article-title>Tetherin inhibits retrovirus release and is antagonized by HIV-1 Vpu.</article-title>
+<source>Nature</source>
+<volume>451</volume>
+<fpage>425</fpage>
+<lpage>430</lpage>
+<pub-id pub-id-type="pmid">18200009</pub-id></element-citation></ref><ref id="ppat.1000913-VanDamme1"><label>5</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Van Damme</surname><given-names>N</given-names></name><name><surname>Goff</surname><given-names>D</given-names></name><name><surname>Katsura</surname><given-names>C</given-names></name><name><surname>Jorgenson</surname><given-names>RL</given-names></name><name><surname>Mitchell</surname><given-names>R</given-names></name><etal/></person-group>
+<year>2008</year>
+<article-title>The interferon-induced protein BST-2 restricts HIV-1 release and is downregulated from the cell surface by the viral Vpu protein.</article-title>
+<source>Cell Host Microbe</source>
+<volume>3</volume>
+<fpage>245</fpage>
+<lpage>252</lpage>
+<pub-id pub-id-type="pmid">18342597</pub-id></element-citation></ref><ref id="ppat.1000913-Kupzig1"><label>6</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kupzig</surname><given-names>S</given-names></name><name><surname>Korolchuk</surname><given-names>V</given-names></name><name><surname>Rollason</surname><given-names>R</given-names></name><name><surname>Sugden</surname><given-names>A</given-names></name><name><surname>Wilde</surname><given-names>A</given-names></name><etal/></person-group>
+<year>2003</year>
+<article-title>Bst-2/HM1.24 is a raft-associated apical membrane protein with an unusual topology.</article-title>
+<source>Traffic</source>
+<volume>4</volume>
+<fpage>694</fpage>
+<lpage>709</lpage>
+<pub-id pub-id-type="pmid">12956872</pub-id></element-citation></ref><ref id="ppat.1000913-Ohtomo1"><label>7</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Ohtomo</surname><given-names>T</given-names></name><name><surname>Sugamata</surname><given-names>Y</given-names></name><name><surname>Ozaki</surname><given-names>Y</given-names></name><name><surname>Ono</surname><given-names>K</given-names></name><name><surname>Yoshimura</surname><given-names>Y</given-names></name><etal/></person-group>
+<year>1999</year>
+<article-title>Molecular cloning and characterization of a surface antigen preferentially overexpressed on multiple myeloma cells.</article-title>
+<source>Biochem Biophys Res Commun</source>
+<volume>258</volume>
+<fpage>583</fpage>
+<lpage>591</lpage>
+<pub-id pub-id-type="pmid">10329429</pub-id></element-citation></ref><ref id="ppat.1000913-Blasius1"><label>8</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Blasius</surname><given-names>AL</given-names></name><name><surname>Giurisato</surname><given-names>E</given-names></name><name><surname>Cella</surname><given-names>M</given-names></name><name><surname>Schreiber</surname><given-names>RD</given-names></name><name><surname>Shaw</surname><given-names>AS</given-names></name><etal/></person-group>
+<year>2006</year>
+<article-title>Bone marrow stromal cell antigen 2 is a specific marker of type I IFN-producing cells in the naive mouse, but a promiscuous cell surface antigen following IFN stimulation.</article-title>
+<source>J Immunol</source>
+<volume>177</volume>
+<fpage>3260</fpage>
+<lpage>3265</lpage>
+<pub-id pub-id-type="pmid">16920966</pub-id></element-citation></ref><ref id="ppat.1000913-Masuyama1"><label>9</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Masuyama</surname><given-names>N</given-names></name><name><surname>Kuronita</surname><given-names>T</given-names></name><name><surname>Tanaka</surname><given-names>R</given-names></name><name><surname>Muto</surname><given-names>T</given-names></name><name><surname>Hirota</surname><given-names>Y</given-names></name><etal/></person-group>
+<year>2009</year>
+<article-title>HM1.24 is Internalized from Lipid Rafts by Clathrin-Mediated Endocytosis through Interaction with -adaptin.</article-title>
+<source>Journal of Biological Chemistry</source>
+<fpage>1</fpage>
+<lpage>27</lpage>
+</element-citation></ref><ref id="ppat.1000913-Hegde1"><label>10</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Hegde</surname><given-names>RS</given-names></name><name><surname>Mastrianni</surname><given-names>JA</given-names></name><name><surname>Scott</surname><given-names>MR</given-names></name><name><surname>DeFea</surname><given-names>KA</given-names></name><name><surname>Tremblay</surname><given-names>P</given-names></name><etal/></person-group>
+<year>1998</year>
+<article-title>A transmembrane form of the prion protein in neurodegenerative disease.</article-title>
+<source>Science</source>
+<volume>279</volume>
+<fpage>827</fpage>
+<lpage>834</lpage>
+<pub-id pub-id-type="pmid">9452375</pub-id></element-citation></ref><ref id="ppat.1000913-Rollason1"><label>11</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Rollason</surname><given-names>R</given-names></name><name><surname>Korolchuk</surname><given-names>V</given-names></name><name><surname>Hamilton</surname><given-names>C</given-names></name><name><surname>Schu</surname><given-names>P</given-names></name><name><surname>Banting</surname><given-names>G</given-names></name></person-group>
+<year>2007</year>
+<article-title>Clathrin-mediated endocytosis of a lipid-raft-associated protein is mediated through a dual tyrosine motif.</article-title>
+<source>J Cell Sci</source>
+<volume>120</volume>
+<fpage>3850</fpage>
+<lpage>3858</lpage>
+<pub-id pub-id-type="pmid">17940069</pub-id></element-citation></ref><ref id="ppat.1000913-Rollason2"><label>12</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Rollason</surname><given-names>R</given-names></name><name><surname>Korolchuk</surname><given-names>V</given-names></name><name><surname>Hamilton</surname><given-names>C</given-names></name><name><surname>Jepson</surname><given-names>M</given-names></name><name><surname>Banting</surname><given-names>G</given-names></name></person-group>
+<year>2009</year>
+<article-title>A CD317/tetherin-RICH2 complex plays a critical role in the organization of the subapical actin cytoskeleton in polarized epithelial cells.</article-title>
+<source>J Cell Biol</source>
+<volume>184</volume>
+<fpage>721</fpage>
+<lpage>736</lpage>
+<pub-id pub-id-type="pmid">19273615</pub-id></element-citation></ref><ref id="ppat.1000913-Cao1"><label>13</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Cao</surname><given-names>W</given-names></name><name><surname>Bover</surname><given-names>L</given-names></name><name><surname>Cho</surname><given-names>M</given-names></name><name><surname>Wen</surname><given-names>X</given-names></name><name><surname>Hanabuchi</surname><given-names>S</given-names></name><etal/></person-group>
+<year>2009</year>
+<article-title>Regulation of TLR7/9 responses in plasmacytoid dendritic cells by BST2 and ILT7 receptor interaction.</article-title>
+<source>Journal of Experimental Medicine</source>
+<volume>206</volume>
+<fpage>1603</fpage>
+<lpage>1614</lpage>
+<pub-id pub-id-type="pmid">19564354</pub-id></element-citation></ref><ref id="ppat.1000913-Willey1"><label>14</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Willey</surname><given-names>RL</given-names></name><name><surname>Maldarelli</surname><given-names>F</given-names></name><name><surname>Martin</surname><given-names>MA</given-names></name><name><surname>Strebel</surname><given-names>K</given-names></name></person-group>
+<year>1992</year>
+<article-title>Human immunodeficiency virus type 1 Vpu protein regulates the formation of intracellular gp160-CD4 complexes.</article-title>
+<source>J Virol</source>
+<volume>66</volume>
+<fpage>226</fpage>
+<lpage>234</lpage>
+<pub-id pub-id-type="pmid">1727486</pub-id></element-citation></ref><ref id="ppat.1000913-Margottin1"><label>15</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Margottin</surname><given-names>F</given-names></name><name><surname>Bour</surname><given-names>SP</given-names></name><name><surname>Durand</surname><given-names>H</given-names></name><name><surname>Selig</surname><given-names>L</given-names></name><name><surname>Benichou</surname><given-names>S</given-names></name><etal/></person-group>
+<year>1998</year>
+<article-title>A novel human WD protein, h-beta TrCp, that interacts with HIV-1 Vpu connects CD4 to the ER degradation pathway through an F-box motif.</article-title>
+<source>Mol Cell</source>
+<volume>1</volume>
+<fpage>565</fpage>
+<lpage>574</lpage>
+<pub-id pub-id-type="pmid">9660940</pub-id></element-citation></ref><ref id="ppat.1000913-Klimkait1"><label>16</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Klimkait</surname><given-names>T</given-names></name><name><surname>Strebel</surname><given-names>K</given-names></name><name><surname>Hoggan</surname><given-names>MD</given-names></name><name><surname>Martin</surname><given-names>MA</given-names></name><name><surname>Orenstein</surname><given-names>JM</given-names></name></person-group>
+<year>1990</year>
+<article-title>The human immunodeficiency virus type 1-specific protein vpu is required for efficient virus maturation and release.</article-title>
+<source>J Virol</source>
+<volume>64</volume>
+<fpage>621</fpage>
+<lpage>629</lpage>
+<pub-id pub-id-type="pmid">2404139</pub-id></element-citation></ref><ref id="ppat.1000913-Neil2"><label>17</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Neil</surname><given-names>SJ</given-names></name><name><surname>Eastman</surname><given-names>S</given-names></name><name><surname>Jouvenet</surname><given-names>N</given-names></name><name><surname>Bieniasz</surname><given-names>P</given-names></name></person-group>
+<year>2006</year>
+<article-title>HIV-1 Vpu promotes release and prevents endocytosis of nascent retrovirus particles from the plasma membrane.</article-title>
+<source>PLoS Pathog</source>
+<volume>2</volume>
+<fpage>e39</fpage>
+<comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.ppat.0020039">10.1371/journal.ppat.0020039</ext-link></comment>
+<pub-id pub-id-type="pmid">16699598</pub-id></element-citation></ref><ref id="ppat.1000913-Miyakawa1"><label>18</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Miyakawa</surname><given-names>K</given-names></name><name><surname>Ryo</surname><given-names>A</given-names></name><name><surname>Murakami</surname><given-names>T</given-names></name><name><surname>Ohba</surname><given-names>K</given-names></name><name><surname>Yamaoka</surname><given-names>S</given-names></name><etal/></person-group>
+<year>2009</year>
+<article-title>BCA2/Rabring7 promotes tetherin-dependent HIV-1 restriction.</article-title>
+<source>PLoS Pathog</source>
+<volume>5</volume>
+<fpage>e1000700</fpage>
+<comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.ppat.1000700">10.1371/journal.ppat.1000700</ext-link></comment>
+<pub-id pub-id-type="pmid">20019814</pub-id></element-citation></ref><ref id="ppat.1000913-PerezCaballero1"><label>19</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Perez-Caballero</surname><given-names>D</given-names></name><name><surname>Zang</surname><given-names>T</given-names></name><name><surname>Ebrahimi</surname><given-names>A</given-names></name><name><surname>Mcnatt</surname><given-names>MW</given-names></name><name><surname>Gregory</surname><given-names>DA</given-names></name><etal/></person-group>
+<year>2009</year>
+<article-title>Tetherin Inhibits HIV-1 Release by Directly Tethering Virions to Cells.</article-title>
+<source>Cell</source>
+<volume>139</volume>
+<fpage>499</fpage>
+<lpage>511</lpage>
+<pub-id pub-id-type="pmid">19879838</pub-id></element-citation></ref><ref id="ppat.1000913-Hammonds1"><label>20</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Hammonds</surname><given-names>J</given-names></name><name><surname>Wang</surname><given-names>JJ</given-names></name><name><surname>Yi</surname><given-names>H</given-names></name><name><surname>Spearman</surname><given-names>P</given-names></name></person-group>
+<year>2010</year>
+<article-title>Immunoelectron microscopic evidence for Tetherin/BST2 as the physical bridge between HIV-1 virions and the plasma membrane.</article-title>
+<source>PLoS Pathog</source>
+<volume>6</volume>
+<fpage>e1000749</fpage>
+<comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.ppat.1000749">10.1371/journal.ppat.1000749</ext-link></comment>
+<pub-id pub-id-type="pmid">20140192</pub-id></element-citation></ref><ref id="ppat.1000913-Fitzpatrick1"><label>21</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Fitzpatrick</surname><given-names>K</given-names></name><name><surname>Skasko</surname><given-names>M</given-names></name><name><surname>Deerinck</surname><given-names>TJ</given-names></name><name><surname>Crum</surname><given-names>J</given-names></name><name><surname>Ellisman</surname><given-names>MH</given-names></name><etal/></person-group>
+<year>2010</year>
+<article-title>Direct restriction of virus release and incorporation of the interferon-induced protein BST-2 into HIV-1 particles.</article-title>
+<source>PLoS Pathog</source>
+<volume>6</volume>
+<fpage>e1000701</fpage>
+<comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.ppat.1000701">10.1371/journal.ppat.1000701</ext-link></comment>
+<pub-id pub-id-type="pmid">20221443</pub-id></element-citation></ref><ref id="ppat.1000913-Habermann1"><label>22</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Habermann</surname><given-names>A</given-names></name><name><surname>Krijnse-Locker</surname><given-names>J</given-names></name><name><surname>Oberwinkler</surname><given-names>H</given-names></name><name><surname>Eckhardt</surname><given-names>M</given-names></name><name><surname>Homann</surname><given-names>S</given-names></name><etal/></person-group>
+<year>2010</year>
+<article-title>CD317/tetherin is enriched in the HIV-1 envelope and downregulated from the plasma membrane upon virus infection.</article-title>
+<source>J Virol</source>
+<volume>84</volume>
+<fpage>4646</fpage>
+<lpage>4658</lpage>
+<pub-id pub-id-type="pmid">20147389</pub-id></element-citation></ref><ref id="ppat.1000913-Miyagi1"><label>23</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Miyagi</surname><given-names>E</given-names></name><name><surname>Andrew</surname><given-names>AJ</given-names></name><name><surname>Kao</surname><given-names>S</given-names></name><name><surname>Strebel</surname><given-names>K</given-names></name></person-group>
+<year>2009</year>
+<article-title>Vpu enhances HIV-1 virus release in the absence of Bst-2 cell surface down-modulation and intracellular depletion.</article-title>
+<source>Proc Natl Acad Sci U S A</source>
+<volume>106</volume>
+<fpage>2868</fpage>
+<lpage>2873</lpage>
+<pub-id pub-id-type="pmid">19196977</pub-id></element-citation></ref><ref id="ppat.1000913-Kaletsky1"><label>24</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kaletsky</surname><given-names>RL</given-names></name><name><surname>Francica</surname><given-names>JR</given-names></name><name><surname>Agrawal-Gamse</surname><given-names>C</given-names></name><name><surname>Bates</surname><given-names>P</given-names></name></person-group>
+<year>2009</year>
+<article-title>Tetherin-mediated restriction of filovirus budding is antagonized by the Ebola glycoprotein.</article-title>
+<source>Proc Natl Acad Sci U S A</source>
+<volume>106</volume>
+<fpage>2886</fpage>
+<lpage>2891</lpage>
+<pub-id pub-id-type="pmid">19179289</pub-id></element-citation></ref><ref id="ppat.1000913-Andrew1"><label>25</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Andrew</surname><given-names>AJ</given-names></name><name><surname>Miyagi</surname><given-names>E</given-names></name><name><surname>Kao</surname><given-names>S</given-names></name><name><surname>Strebel</surname><given-names>K</given-names></name></person-group>
+<year>2009</year>
+<article-title>The formation of cysteine-linked dimers of BST-2/tetherin is important for inhibition of HIV-1 virus release but not for sensitivity to Vpu.</article-title>
+<source>Retrovirology</source>
+<volume>6</volume>
+<fpage>80</fpage>
+<pub-id pub-id-type="pmid">19737401</pub-id></element-citation></ref><ref id="ppat.1000913-Friborg1"><label>26</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Friborg</surname><given-names>J</given-names></name><name><surname>Ladha</surname><given-names>A</given-names></name><name><surname>Gottlinger</surname><given-names>H</given-names></name><name><surname>Haseltine</surname><given-names>WA</given-names></name><name><surname>Cohen</surname><given-names>EA</given-names></name></person-group>
+<year>1995</year>
+<article-title>Functional analysis of the phosphorylation sites on the human immunodeficiency virus type 1 Vpu protein.</article-title>
+<source>J Acquir Immune Defic Syndr Hum Retrovirol</source>
+<volume>8</volume>
+<fpage>10</fpage>
+<lpage>22</lpage>
+<pub-id pub-id-type="pmid">8548340</pub-id></element-citation></ref><ref id="ppat.1000913-Schubert1"><label>27</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Schubert</surname><given-names>U</given-names></name><name><surname>Clouse</surname><given-names>KA</given-names></name><name><surname>Strebel</surname><given-names>K</given-names></name></person-group>
+<year>1995</year>
+<article-title>Augmentation of virus secretion by the human immunodeficiency virus type 1 Vpu protein is cell type independent and occurs in cultured human primary macrophages and lymphocytes.</article-title>
+<source>J Virol</source>
+<volume>69</volume>
+<fpage>7699</fpage>
+<lpage>7711</lpage>
+<pub-id pub-id-type="pmid">7494279</pub-id></element-citation></ref><ref id="ppat.1000913-Schubert2"><label>28</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Schubert</surname><given-names>U</given-names></name><name><surname>Strebel</surname><given-names>K</given-names></name></person-group>
+<year>1994</year>
+<article-title>Differential activities of the human immunodeficiency virus type 1-encoded Vpu protein are regulated by phosphorylation and occur in different cellular compartments.</article-title>
+<source>J Virol</source>
+<volume>68</volume>
+<fpage>2260</fpage>
+<lpage>2271</lpage>
+<pub-id pub-id-type="pmid">8139011</pub-id></element-citation></ref><ref id="ppat.1000913-Schubert3"><label>29</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Schubert</surname><given-names>U</given-names></name><name><surname>Bour</surname><given-names>S</given-names></name><name><surname>Ferrer-Montiel</surname><given-names>AV</given-names></name><name><surname>Montal</surname><given-names>M</given-names></name><name><surname>Maldarell</surname><given-names>F</given-names></name><etal/></person-group>
+<year>1996</year>
+<article-title>The two biological activities of human immunodeficiency virus type 1 Vpu protein involve two separable structural domains.</article-title>
+<source>J Virol</source>
+<volume>70</volume>
+<fpage>809</fpage>
+<lpage>819</lpage>
+<pub-id pub-id-type="pmid">8551619</pub-id></element-citation></ref><ref id="ppat.1000913-Douglas1"><label>30</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Douglas</surname><given-names>JL</given-names></name><name><surname>Viswanathan</surname><given-names>K</given-names></name><name><surname>Mccarroll</surname><given-names>MN</given-names></name><name><surname>Gustin</surname><given-names>JK</given-names></name><name><surname>Fruh</surname><given-names>K</given-names></name><etal/></person-group>
+<year>2009</year>
+<article-title>Vpu Directs the Degradation of the Human Immunodeficiency Virus Restriction Factor BST-2/Tetherin via a TrCP-Dependent Mechanism.</article-title>
+<source>J Virol</source>
+<volume>83</volume>
+<fpage>7931</fpage>
+<lpage>7947</lpage>
+<pub-id pub-id-type="pmid">19515779</pub-id></element-citation></ref><ref id="ppat.1000913-Goffinet1"><label>31</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Goffinet</surname><given-names>C</given-names></name><name><surname>Allespach</surname><given-names>I</given-names></name><name><surname>Homann</surname><given-names>S</given-names></name><name><surname>Tervo</surname><given-names>H</given-names></name><name><surname>Habermann</surname><given-names>A</given-names></name><etal/></person-group>
+<year>2009</year>
+<article-title>HIV-1 Antagonism of CD317 Is Species Specific and Involves Vpu-Mediated Proteasomal Degradation of the Restriction Factor.</article-title>
+<source>Cell Host and Microbe</source>
+<volume>5</volume>
+<fpage>285</fpage>
+<lpage>297</lpage>
+<pub-id pub-id-type="pmid">19286137</pub-id></element-citation></ref><ref id="ppat.1000913-Iwabu1"><label>32</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Iwabu</surname><given-names>Y</given-names></name><name><surname>Fujita</surname><given-names>H</given-names></name><name><surname>Kinomoto</surname><given-names>M</given-names></name><name><surname>Kaneko</surname><given-names>K</given-names></name><name><surname>Ishizaka</surname><given-names>Y</given-names></name><etal/></person-group>
+<year>2009</year>
+<article-title>HIV-1 accessory protein Vpu internalizes cell-surface BST-2/tetherin through transmembrane interactions leading to lysosomes.</article-title>
+<source>Journal of Biological Chemistry</source>
+<fpage>1</fpage>
+<lpage>22</lpage>
+</element-citation></ref><ref id="ppat.1000913-Mangeat1"><label>33</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Mangeat</surname><given-names>B</given-names></name><name><surname>Gers-Huber</surname><given-names>G</given-names></name><name><surname>Lehmann</surname><given-names>M</given-names></name><name><surname>Zufferey</surname><given-names>M</given-names></name><name><surname>Luban</surname><given-names>J</given-names></name><etal/></person-group>
+<year>2009</year>
+<article-title>HIV-1 Vpu Neutralizes the Antiviral Factor Tetherin/BST-2 by Binding It and Directing Its Beta-TrCP2-Dependent Degradation.</article-title>
+<source>PLoS Pathog</source>
+<volume>5</volume>
+<fpage>e1000574</fpage>
+<comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.ppat.1000574">10.1371/journal.ppat.1000574</ext-link></comment>
+<pub-id pub-id-type="pmid">19730691</pub-id></element-citation></ref><ref id="ppat.1000913-Mitchell1"><label>34</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Mitchell</surname><given-names>R</given-names></name><name><surname>Katsura</surname><given-names>C</given-names></name><name><surname>Skasko</surname><given-names>M</given-names></name><name><surname>Fitzpatrick</surname><given-names>K</given-names></name><name><surname>Lau</surname><given-names>D</given-names></name><etal/></person-group>
+<year>2009</year>
+<article-title>Vpu Antagonizes BST-2&#x02013;Mediated Restriction of HIV-1 Release via &#x003b2;-TrCP and Endo-Lysosomal Trafficking.</article-title>
+<source>PLoS Pathog</source>
+<volume>5</volume>
+<fpage>e1000450</fpage>
+<comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.ppat.1000450">10.1371/journal.ppat.1000450</ext-link></comment>
+<pub-id pub-id-type="pmid">19478868</pub-id></element-citation></ref><ref id="ppat.1000913-Banning1"><label>35</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Banning</surname><given-names>C</given-names></name><name><surname>Votteler</surname><given-names>J</given-names></name><name><surname>Hoffmann</surname><given-names>D</given-names></name><name><surname>Koppensteiner</surname><given-names>H</given-names></name><name><surname>Warmer</surname><given-names>M</given-names></name><etal/></person-group>
+<year>2010</year>
+<article-title>A flow cytometry-based FRET assay to identify and analyse protein-protein interactions in living cells.</article-title>
+<source>PLoS ONE</source>
+<volume>5</volume>
+<fpage>e9344</fpage>
+<comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pone.0009344">10.1371/journal.pone.0009344</ext-link></comment>
+<pub-id pub-id-type="pmid">20179761</pub-id></element-citation></ref><ref id="ppat.1000913-Varthakavi1"><label>36</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Varthakavi</surname><given-names>V</given-names></name><name><surname>Smith</surname><given-names>R</given-names></name><name><surname>Martin</surname><given-names>K</given-names></name><name><surname>Derdowski</surname><given-names>A</given-names></name><name><surname>Lapierre</surname><given-names>L</given-names></name><etal/></person-group>
+<year>2006</year>
+<article-title>The pericentriolar recycling endosome plays a key role in Vpu-mediated enhancement of HIV-1 particle release.</article-title>
+<source>Traffic</source>
+<volume>7</volume>
+<fpage>298</fpage>
+<lpage>307</lpage>
+<pub-id pub-id-type="pmid">16497224</pub-id></element-citation></ref><ref id="ppat.1000913-Dub1"><label>37</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Dub&#x000e9;</surname><given-names>M</given-names></name><name><surname>Roy</surname><given-names>BB</given-names></name><name><surname>Guiot-Guillain</surname><given-names>P</given-names></name><name><surname>Mercier</surname><given-names>J</given-names></name><name><surname>Binette</surname><given-names>J</given-names></name><etal/></person-group>
+<year>2009</year>
+<article-title>Suppression of Tetherin-restricting activity upon human immunodeficiency virus type 1 particle release correlates with localization of Vpu in the trans-Golgi network.</article-title>
+<source>J Virol</source>
+<volume>83</volume>
+<fpage>4574</fpage>
+<lpage>4590</lpage>
+<pub-id pub-id-type="pmid">19244337</pub-id></element-citation></ref><ref id="ppat.1000913-Ruiz1"><label>38</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Ruiz</surname><given-names>A</given-names></name><name><surname>Hill</surname><given-names>MS</given-names></name><name><surname>Schmitt</surname><given-names>K</given-names></name><name><surname>Guatelli</surname><given-names>J</given-names></name><name><surname>Stephens</surname><given-names>EB</given-names></name></person-group>
+<year>2008</year>
+<article-title>Requirements of the membrane proximal tyrosine and dileucine-based sorting signals for efficient transport of the subtype C Vpu protein to the plasma membrane and in virus release.</article-title>
+<source>Virology</source>
+<volume>378</volume>
+<fpage>58</fpage>
+<lpage>68</lpage>
+<pub-id pub-id-type="pmid">18579178</pub-id></element-citation></ref><ref id="ppat.1000913-Stremlau1"><label>39</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Stremlau</surname><given-names>M</given-names></name><name><surname>Owens</surname><given-names>CM</given-names></name><name><surname>Perron</surname><given-names>MJ</given-names></name><name><surname>Kiessling</surname><given-names>M</given-names></name><name><surname>Autissier</surname><given-names>P</given-names></name><etal/></person-group>
+<year>2004</year>
+<article-title>The cytoplasmic body component TRIM5alpha restricts HIV-1 infection in Old World monkeys.</article-title>
+<source>Nature</source>
+<volume>427</volume>
+<fpage>848</fpage>
+<lpage>853</lpage>
+<pub-id pub-id-type="pmid">14985764</pub-id></element-citation></ref><ref id="ppat.1000913-McNatt1"><label>40</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>McNatt</surname><given-names>MW</given-names></name><name><surname>Zang</surname><given-names>T</given-names></name><name><surname>Hatziioannou</surname><given-names>T</given-names></name><name><surname>Bartlett</surname><given-names>M</given-names></name><name><surname>Fofana</surname><given-names>IB</given-names></name><etal/></person-group>
+<year>2009</year>
+<article-title>Species-specific activity of HIV-1 Vpu and positive selection of tetherin transmembrane domain variants.</article-title>
+<source>PLoS Pathog</source>
+<volume>5</volume>
+<fpage>e1000300</fpage>
+<comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.ppat.1000300">10.1371/journal.ppat.1000300</ext-link></comment>
+<pub-id pub-id-type="pmid">19214216</pub-id></element-citation></ref><ref id="ppat.1000913-Jia1"><label>41</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Jia</surname><given-names>B</given-names></name><name><surname>Serra-Moreno</surname><given-names>R</given-names></name><name><surname>Neidermyer</surname><given-names>W</given-names></name><name><surname>Rahmberg</surname><given-names>A</given-names></name><name><surname>Mackey</surname><given-names>J</given-names></name><etal/></person-group>
+<year>2009</year>
+<article-title>Species-Specific Activity of SIV Nef and HIV-1 Vpu in Overcoming Restriction by Tetherin/BST2.</article-title>
+<source>PLoS Pathog</source>
+<volume>5</volume>
+<fpage>e1000429</fpage>
+<comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.ppat.1000429">10.1371/journal.ppat.1000429</ext-link></comment>
+<pub-id pub-id-type="pmid">19436700</pub-id></element-citation></ref><ref id="ppat.1000913-Gupta1"><label>42</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Gupta</surname><given-names>R</given-names></name><name><surname>Hu&#x000e9;</surname><given-names>S</given-names></name><name><surname>Schaller</surname><given-names>T</given-names></name><name><surname>Verschoor</surname><given-names>E</given-names></name><name><surname>Pillay</surname><given-names>D</given-names></name><etal/></person-group>
+<year>2009</year>
+<article-title>Mutation of a Single Residue Renders Human Tetherin Resistant to HIV-1 Vpu-Mediated Depletion.</article-title>
+<source>PLoS Pathog</source>
+<volume>5</volume>
+<fpage>e1000443</fpage>
+<comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.ppat.1000443">10.1371/journal.ppat.1000443</ext-link></comment>
+<pub-id pub-id-type="pmid">19461879</pub-id></element-citation></ref><ref id="ppat.1000913-Rong1"><label>43</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Rong</surname><given-names>L</given-names></name><name><surname>Zhang</surname><given-names>J</given-names></name><name><surname>Lu</surname><given-names>J</given-names></name><name><surname>Pan</surname><given-names>Q</given-names></name><name><surname>Lorgeoux</surname><given-names>R</given-names></name><etal/></person-group>
+<year>2009</year>
+<article-title>The Transmembrane Domain of BST-2 Determines Its Sensitivity to Down-Modulation by HIV-1 Vpu.</article-title>
+<source>J Virol</source>
+<fpage>1</fpage>
+<lpage>35</lpage>
+</element-citation></ref><ref id="ppat.1000913-Lim1"><label>44</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Lim</surname><given-names>E</given-names></name><name><surname>Emerman</surname><given-names>M</given-names></name></person-group>
+<year>2009</year>
+<article-title>Simian immunodeficiency virus from African green monkeys (SIVAGM) does not antagonize endogenous levels of African green monkey tetherin/BST-2.</article-title>
+<source>J Virol</source>
+<fpage>1</fpage>
+<lpage>33</lpage>
+</element-citation></ref><ref id="ppat.1000913-Wong1"><label>45</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Wong</surname><given-names>SK</given-names></name><name><surname>Connole</surname><given-names>M</given-names></name><name><surname>Sullivan</surname><given-names>JS</given-names></name><name><surname>Choe</surname><given-names>H</given-names></name><name><surname>Carville</surname><given-names>A</given-names></name><etal/></person-group>
+<year>2009</year>
+<article-title>A New World primate deficient in tetherin-mediated restriction of human immunodeficiency virus type 1.</article-title>
+<source>Journal of Virology</source>
+<volume>83</volume>
+<fpage>8771</fpage>
+<lpage>8780</lpage>
+<pub-id pub-id-type="pmid">19553332</pub-id></element-citation></ref><ref id="ppat.1000913-Sato1"><label>46</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Sato</surname><given-names>K</given-names></name><name><surname>Yamamoto</surname><given-names>S</given-names></name><name><surname>Misawa</surname><given-names>N</given-names></name><name><surname>Yoshida</surname><given-names>T</given-names></name><name><surname>Miyazawa</surname><given-names>T</given-names></name><etal/></person-group>
+<year>2009</year>
+<article-title>Comparative study on the effect of human BST-2/Tetherin on HIV-1 release in cells of various species.</article-title>
+<source>Retrovirology</source>
+<volume>6</volume>
+<fpage>53</fpage>
+<pub-id pub-id-type="pmid">19490609</pub-id></element-citation></ref><ref id="ppat.1000913-Neil3"><label>47</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Neil</surname><given-names>SJ</given-names></name><name><surname>Sandrin</surname><given-names>V</given-names></name><name><surname>Sundquist</surname><given-names>WI</given-names></name><name><surname>Bieniasz</surname><given-names>P</given-names></name></person-group>
+<year>2007</year>
+<article-title>An interferon-alpha-induced tethering mechanism inhibits HIV-1 and Ebola virus particle release but is counteracted by the HIV-1 Vpu protein.</article-title>
+<source>Cell Host &#x00026; Microbe</source>
+<volume>2</volume>
+<fpage>193</fpage>
+<lpage>203</lpage>
+<pub-id pub-id-type="pmid">18005734</pub-id></element-citation></ref><ref id="ppat.1000913-Sauter1"><label>48</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Sauter</surname><given-names>D</given-names></name><name><surname>Schindler</surname><given-names>M</given-names></name><name><surname>Specht</surname><given-names>A</given-names></name><name><surname>Landford</surname><given-names>WN</given-names></name><name><surname>Munch</surname><given-names>J</given-names></name><etal/></person-group>
+<year>2009</year>
+<article-title>Tetherin-Driven Adaptation of Vpu and Nef Function and the Evolution of Pandemic and Nonpandemic HIV-1 Strains.</article-title>
+<source>Cell Host and Microbe</source>
+<volume>6</volume>
+<fpage>409</fpage>
+<lpage>421</lpage>
+<pub-id pub-id-type="pmid">19917496</pub-id></element-citation></ref><ref id="ppat.1000913-Yang1"><label>49</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Yang</surname><given-names>SJ</given-names></name><name><surname>Lopez</surname><given-names>LA</given-names></name><name><surname>Hauser</surname><given-names>H</given-names></name><name><surname>Exline</surname><given-names>CM</given-names></name><name><surname>Haworth</surname><given-names>KG</given-names></name><etal/></person-group>
+<year>2010</year>
+<article-title>Anti-tetherin activities in Vpu-expressing primate lentiviruses.</article-title>
+<source>Retrovirology</source>
+<volume>7</volume>
+<fpage>13</fpage>
+<pub-id pub-id-type="pmid">20167081</pub-id></element-citation></ref><ref id="ppat.1000913-Bour1"><label>50</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Bour</surname><given-names>S</given-names></name><name><surname>Strebel</surname><given-names>K</given-names></name></person-group>
+<year>1996</year>
+<article-title>The human immunodeficiency virus (HIV) type 2 envelope protein is a functional complement to HIV type 1 Vpu that enhances particle release of heterologous retroviruses.</article-title>
+<source>J Virol</source>
+<volume>70</volume>
+<fpage>8285</fpage>
+<lpage>8300</lpage>
+<pub-id pub-id-type="pmid">8970948</pub-id></element-citation></ref><ref id="ppat.1000913-Ritter1"><label>51</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Ritter</surname><given-names>GD</given-names></name><name><surname>Yamshchikov</surname><given-names>G</given-names></name><name><surname>Cohen</surname><given-names>SJ</given-names></name><name><surname>Mulligan</surname><given-names>MJ</given-names></name></person-group>
+<year>1996</year>
+<article-title>Human immunodeficiency virus type 2 glycoprotein enhancement of particle budding: role of the cytoplasmic domain.</article-title>
+<source>J Virol</source>
+<volume>70</volume>
+<fpage>2669</fpage>
+<lpage>2673</lpage>
+<pub-id pub-id-type="pmid">8642705</pub-id></element-citation></ref><ref id="ppat.1000913-Bour2"><label>52</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Bour</surname><given-names>S</given-names></name><name><surname>Akari</surname><given-names>H</given-names></name><name><surname>Miyagi</surname><given-names>E</given-names></name><name><surname>Strebel</surname><given-names>K</given-names></name></person-group>
+<year>2003</year>
+<article-title>Naturally occurring amino acid substitutions in the HIV-2 ROD envelope glycoprotein regulate its ability to augment viral particle release.</article-title>
+<source>Virology</source>
+<volume>309</volume>
+<fpage>85</fpage>
+<lpage>98</lpage>
+<pub-id pub-id-type="pmid">12726729</pub-id></element-citation></ref><ref id="ppat.1000913-Abada1"><label>53</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Abada</surname><given-names>P</given-names></name><name><surname>Noble</surname><given-names>B</given-names></name><name><surname>Cannon</surname><given-names>PM</given-names></name></person-group>
+<year>2005</year>
+<article-title>Functional domains within the human immunodeficiency virus type 2 envelope protein required to enhance virus production.</article-title>
+<source>J Virol</source>
+<volume>79</volume>
+<fpage>3627</fpage>
+<lpage>3638</lpage>
+<pub-id pub-id-type="pmid">15731257</pub-id></element-citation></ref><ref id="ppat.1000913-LeTortorec1"><label>54</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Le Tortorec</surname><given-names>A</given-names></name><name><surname>Neil</surname><given-names>SJD</given-names></name></person-group>
+<year>2009</year>
+<article-title>Antagonism and intracellular sequestration of human tetherin by the HIV-2 envelope glycoprotein.</article-title>
+<source>J Virol:</source>
+<fpage>1</fpage>
+<lpage>49</lpage>
+</element-citation></ref><ref id="ppat.1000913-Zhang1"><label>55</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Zhang</surname><given-names>F</given-names></name><name><surname>Wilson</surname><given-names>SJ</given-names></name><name><surname>Landford</surname><given-names>WC</given-names></name><name><surname>Virgen</surname><given-names>B</given-names></name><name><surname>Gregory</surname><given-names>D</given-names></name><etal/></person-group>
+<year>2009</year>
+<article-title>Nef Proteins from Simian Immunodeficiency Viruses Are Tetherin Antagonists.</article-title>
+<source>Cell Host and Microbe:</source>
+<fpage>1</fpage>
+<lpage>14</lpage>
+</element-citation></ref><ref id="ppat.1000913-Gupta2"><label>56</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Gupta</surname><given-names>R</given-names></name><name><surname>Mlcochova</surname><given-names>P</given-names></name><name><surname>Pelchen-Matthews</surname><given-names>A</given-names></name><name><surname>Petit</surname><given-names>S</given-names></name><name><surname>Mattiuzzo</surname><given-names>G</given-names></name><etal/></person-group>
+<year>2009</year>
+<article-title>Simian immunodeficiency virus envelope glycoprotein counteracts tetherin/BST-2/CD317 by intracellular sequestration.</article-title>
+<source>Proc Natl Acad Sci USA</source>
+</element-citation></ref><ref id="ppat.1000913-Mansouri1"><label>57</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Mansouri</surname><given-names>M</given-names></name><name><surname>Viswanathan</surname><given-names>K</given-names></name><name><surname>Douglas</surname><given-names>J</given-names></name><name><surname>Hines</surname><given-names>J</given-names></name><name><surname>Gustin</surname><given-names>J</given-names></name><etal/></person-group>
+<year>2009</year>
+<article-title>Molecular mechanism of BST2/Tetherin downregulation by K5/MIR2 of Kaposi's sarcoma herpesvirus.</article-title>
+<source>J Virol</source>
+</element-citation></ref><ref id="ppat.1000913-Gruber1"><label>58</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Gruber</surname><given-names>M</given-names></name><name><surname>Soding</surname><given-names>J</given-names></name><name><surname>Lupas</surname><given-names>AN</given-names></name></person-group>
+<year>2005</year>
+<article-title>REPPER&#x02013;repeats and their periodicities in fibrous proteins.</article-title>
+<source>Nucleic Acids Res</source>
+<volume>33</volume>
+<fpage>W239</fpage>
+<lpage>243</lpage>
+<pub-id pub-id-type="pmid">15980460</pub-id></element-citation></ref><ref id="ppat.1000913-Jouvenet1"><label>59</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Jouvenet</surname><given-names>N</given-names></name><name><surname>Neil</surname><given-names>SJ</given-names></name><name><surname>Zhadina</surname><given-names>M</given-names></name><name><surname>Zang</surname><given-names>T</given-names></name><name><surname>Kratovac</surname><given-names>Z</given-names></name><etal/></person-group>
+<year>2009</year>
+<article-title>Broad-spectrum inhibition of retroviral and filoviral particle release by tetherin.</article-title>
+<source>J Virol</source>
+<volume>83</volume>
+<fpage>1837</fpage>
+<lpage>1844</lpage>
+<pub-id pub-id-type="pmid">19036818</pub-id></element-citation></ref></ref-list></back></article>

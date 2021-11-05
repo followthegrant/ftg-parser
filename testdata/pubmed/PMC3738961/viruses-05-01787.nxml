@@ -1,0 +1,618 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.0 20120330//EN" "JATS-archivearticle1.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="review-article"><?properties open_access?><front><journal-meta><journal-id journal-id-type="nlm-ta">Viruses</journal-id><journal-id journal-id-type="iso-abbrev">Viruses</journal-id><journal-id journal-id-type="publisher-id">viruses</journal-id><journal-title-group><journal-title>Viruses</journal-title></journal-title-group><issn pub-type="epub">1999-4915</issn><publisher><publisher-name>MDPI</publisher-name></publisher></journal-meta><article-meta><article-id pub-id-type="pmid">23863879</article-id><article-id pub-id-type="pmc">3738961</article-id><article-id pub-id-type="doi">10.3390/v5071787</article-id><article-id pub-id-type="publisher-id">viruses-05-01787</article-id><article-categories><subj-group subj-group-type="heading"><subject>Review</subject></subj-group></article-categories><title-group><article-title>Posttranslational Modifications of HIV-1 Integrase by Various Cellular Proteins during Viral Replication</article-title></title-group><contrib-group><contrib contrib-type="author"><name><surname>Zheng</surname><given-names>Yingfeng</given-names></name></contrib><contrib contrib-type="author"><name><surname>Yao</surname><given-names>Xiaojian</given-names></name><xref rid="c1-viruses-05-01787" ref-type="corresp">*</xref></contrib></contrib-group><aff id="af1-viruses-05-01787">Laboratory of Molecular Human Retrovirology, Department of Medical Microbiology, University of Manitoba, 508-730 William Avenue, Winnipeg, R3E 0W3, Canada; E-Mail: <email>umzhen28@cc.umanitoba.ca</email></aff><author-notes><corresp id="c1-viruses-05-01787"><label>*</label>Author to whom correspondence should be addressed; E-Mail: <email>yao2@cc.umanitoba.ca</email>; Tel.: +1-204-789-3983; Fax: +1-204-789-3926.</corresp></author-notes><pub-date pub-type="epub"><day>16</day><month>7</month><year>2013</year></pub-date><pub-date pub-type="collection"><month>7</month><year>2013</year></pub-date><volume>5</volume><issue>7</issue><fpage>1787</fpage><lpage>1801</lpage><history><date date-type="received"><day>17</day><month>5</month><year>2013</year></date><date date-type="rev-recd"><day>08</day><month>7</month><year>2013</year></date><date date-type="accepted"><day>09</day><month>7</month><year>2013</year></date></history><permissions><copyright-statement>&#x000a9; 2013 by the authors; licensee MDPI, Basel, Switzerland.</copyright-statement><copyright-year>2013</copyright-year><license license-type="open-access" xlink:href="http://creativecommons.org/licenses/by/3.0/"><license-p><!--CREATIVE COMMONS-->This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution license (<ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/3.0/">http://creativecommons.org/licenses/by/3.0/</ext-link>).</license-p></license></permissions><abstract><p>HIV-1 integrase (IN) is a key viral enzyme during HIV-1 replication that catalyzes the insertion of viral DNA into the host genome. Recent studies have provided important insights into the multiple posttranslational modifications (PTMs) of IN (e.g., ubiquitination, SUMOylation, acetylation and phosphorylation), which regulate its multifaceted functions. A number of host cellular proteins, including Lens Epithelium&#x02011;derived Growth factor (LEDGF/p75), p300 and Ku70 have been shown to interact with IN and be involved in the PTM process of IN, either facilitating or counteracting the IN PTMs. Although previous studies have revealed much about the important roles of IN PTMs, how IN functions are fine-tuned by these PTMs under the physiological setting still needs to be determined. Here, we review the advances in the understanding of the mechanisms and roles of multiple IN PTMs.</p></abstract><kwd-group><kwd>HIV</kwd><kwd>integrase</kwd><kwd>posttranslational modification</kwd><kwd>ubiquitination</kwd><kwd>SUMOylation</kwd><kwd>acetylation</kwd><kwd>phosphorylation </kwd></kwd-group></article-meta></front><body><sec><title>1. Introduction</title><p>Proteins translated from mRNA undergo various posttranslational modifications (PTMs) [<xref ref-type="bibr" rid="B1-viruses-05-01787">1</xref>]. In general, 15 of 20 amino acids (aa) can be modified in different ways (e.g., phosphorylation, methylation, acetylation, ADP-ribosylation, glycosylation, ubiquitination, SUMOylation and lipid additions) [<xref ref-type="bibr" rid="B1-viruses-05-01787">1</xref>]. These modifications increase the functional diversity of the proteome and play crucial roles in the normal cell biology and disease outcomes. Microbial pathogenesis is accompanied by various PTMs occurring in proteins, both pathogen proteins as well as the proteins of host origin [<xref ref-type="bibr" rid="B2-viruses-05-01787">2</xref>]. These modifications either promote the survival and propagation of pathogens or overwhelm the host defense systems [<xref ref-type="bibr" rid="B2-viruses-05-01787">2</xref>,<xref ref-type="bibr" rid="B3-viruses-05-01787">3</xref>,<xref ref-type="bibr" rid="B4-viruses-05-01787">4</xref>]. During HIV-1 infection, several viral proteins, including proteases, envelope glycoprotein, Tat and integrase (IN) undergo different types of PTMs, which greatly impact the different steps of viral replication [<xref ref-type="bibr" rid="B5-viruses-05-01787">5</xref>,<xref ref-type="bibr" rid="B6-viruses-05-01787">6</xref>,<xref ref-type="bibr" rid="B7-viruses-05-01787">7</xref>,<xref ref-type="bibr" rid="B8-viruses-05-01787">8</xref>,<xref ref-type="bibr" rid="B9-viruses-05-01787">9</xref>,<xref ref-type="bibr" rid="B10-viruses-05-01787">10</xref>,<xref ref-type="bibr" rid="B11-viruses-05-01787">11</xref>,<xref ref-type="bibr" rid="B12-viruses-05-01787">12</xref>]. </p><p>HIV-1 IN is encoded by the HIV <italic>pol</italic> gene. IN is first synthesized as part of the Gag-Pol polyprotein, in which Pol is cleaved into three viral enzymes, reverse transcriptase, protease and IN, during the maturation step. IN is a 288-aa, 32-kD viral protein that contains three distinct structural domains, the N-terminal zinc-binding domain (NTD, residues 1&#x02013;50), the central catalytic core domain (CCD) and the C-terminal domain (CTD, residues 212&#x02013;288) (<xref ref-type="fig" rid="viruses-05-01787-f001">Figure 1</xref>) [<xref ref-type="bibr" rid="B13-viruses-05-01787">13</xref>]. IN is a pleiotropic protein that affects different steps throughout the viral life cycle, including reverse transcription, nuclear import of the preintegration complex (PIC), integration and post-integration steps, such as viral protein expression, transcription, packaging and processing [<xref ref-type="bibr" rid="B14-viruses-05-01787">14</xref>,<xref ref-type="bibr" rid="B15-viruses-05-01787">15</xref>,<xref ref-type="bibr" rid="B16-viruses-05-01787">16</xref>,<xref ref-type="bibr" rid="B17-viruses-05-01787">17</xref>]. As a single viral protein, HIV-1 IN interacts with numerous cellular cofactors in a temporally and spatially specific manner and exhibits multifunctional properties, the interactions of which are tightly regulated by different PTMs events. IN has been shown to be modified by four PTMs: ubiquitination, SUMOylation, acetylation and phosphorylation [<xref ref-type="bibr" rid="B5-viruses-05-01787">5</xref>,<xref ref-type="bibr" rid="B10-viruses-05-01787">10</xref>,<xref ref-type="bibr" rid="B11-viruses-05-01787">11</xref>,<xref ref-type="bibr" rid="B12-viruses-05-01787">12</xref>,<xref ref-type="bibr" rid="B18-viruses-05-01787">18</xref>]. IN-interacting proteins either facilitate or counteract IN PTMs (<xref ref-type="table" rid="viruses-05-01787-t001">Table 1</xref> and <xref ref-type="fig" rid="viruses-05-01787-f002">Figure 2</xref>). For instance, p300 acetylates IN, whereas Ku70 reduces the ubiquitination level of IN [<xref ref-type="bibr" rid="B5-viruses-05-01787">5</xref>,<xref ref-type="bibr" rid="B12-viruses-05-01787">12</xref>]. PTMs on IN play central roles in the functions of IN and viral replication, affecting the stability and conformational structure of IN, DNA binding of IN, integration and infection of the virus [<xref ref-type="bibr" rid="B5-viruses-05-01787">5</xref>,<xref ref-type="bibr" rid="B10-viruses-05-01787">10</xref>,<xref ref-type="bibr" rid="B11-viruses-05-01787">11</xref>,<xref ref-type="bibr" rid="B12-viruses-05-01787">12</xref>,<xref ref-type="bibr" rid="B18-viruses-05-01787">18</xref>]. Despite an increasing understanding of the IN PTMs, the full functions of these modifications and how these modifications coordinate with each other following viral infection are still unknown. The focus of this review is to summarize the various IN PTMs modulated by host proteins and the related functions during viral infection. </p><fig id="viruses-05-01787-f001" position="float"><label>Figure 1</label><caption><p>Sites of posttranslational modifications (PTMs) on HIV-1 integrase (IN). The schematic representation of the 288-amino acid domain structure of HIV-1 IN showing the amino acids subject to various PTMs, including ubiquitination, SUMOylation, acetylation and phosphorylation. Abbreviations: N-terminal domain (NTD); catalytic core domain (CCD); C-terminal domain (CTD). </p></caption><graphic xlink:href="viruses-05-01787-g001"/></fig><table-wrap id="viruses-05-01787-t001" position="float"><object-id pub-id-type="pii">viruses-05-01787-t001_Table 1</object-id><label>Table 1</label><caption><p>Human proteins implicated in the PTMs of IN.</p></caption><table frame="hsides" rules="all" style="border:solid thin"><thead><tr><th align="left" valign="middle" rowspan="1" colspan="1">Human proteins </th><th align="left" valign="middle" rowspan="1" colspan="1">PTM type </th><th align="left" valign="middle" rowspan="1" colspan="1">Interaction sites in IN</th><th align="left" valign="middle" rowspan="1" colspan="1">Mechanisms </th><th align="left" valign="middle" rowspan="1" colspan="1">Reference</th></tr></thead><tbody><tr><td align="left" valign="middle" rowspan="1" colspan="1">LEDGF/p75</td><td align="left" valign="middle" rowspan="1" colspan="1">Ubiquitination</td><td align="left" valign="middle" rowspan="1" colspan="1">W131, W132, 161&#x02013;170</td><td align="left" valign="middle" rowspan="1" colspan="1">Inhibits Ub proteasome degradation</td><td align="left" valign="middle" rowspan="1" colspan="1">[<xref ref-type="bibr" rid="B19-viruses-05-01787">19</xref>,<xref ref-type="bibr" rid="B20-viruses-05-01787">20</xref>]</td></tr><tr><td align="left" valign="middle" rowspan="1" colspan="1">Ku70</td><td align="left" valign="middle" rowspan="1" colspan="1">Ubiquitination</td><td align="left" valign="middle" rowspan="1" colspan="1">230&#x02013;288</td><td align="left" valign="middle" rowspan="1" colspan="1">Inhibits ubiquitination by decreasing cellular ubiquitin level and deubiquitinates IN through their interaction </td><td align="left" valign="middle" rowspan="1" colspan="1">[<xref ref-type="bibr" rid="B12-viruses-05-01787">12</xref>]</td></tr><tr><td align="left" valign="middle" rowspan="1" colspan="1">hRad18</td><td align="left" valign="middle" rowspan="1" colspan="1">Ubiquitination</td><td align="left" valign="middle" rowspan="1" colspan="1">NA</td><td align="left" valign="middle" rowspan="1" colspan="1">Inhibits ubiquitination</td><td align="left" valign="middle" rowspan="1" colspan="1">[<xref ref-type="bibr" rid="B21-viruses-05-01787">21</xref>]</td></tr><tr><td align="left" valign="middle" rowspan="1" colspan="1">VBP1</td><td align="left" valign="middle" rowspan="1" colspan="1">Ubiquitination</td><td align="left" valign="middle" rowspan="1" colspan="1">43&#x02013;195</td><td align="left" valign="middle" rowspan="1" colspan="1">Promotes ubiquitination by targeting IN to E3 ligase</td><td align="left" valign="middle" rowspan="1" colspan="1">[<xref ref-type="bibr" rid="B22-viruses-05-01787">22</xref>]</td></tr><tr><td align="left" valign="middle" rowspan="1" colspan="1">Cul2/VHL ligase</td><td align="left" valign="middle" rowspan="1" colspan="1">Ubiquitination</td><td align="left" valign="middle" rowspan="1" colspan="1">NA</td><td align="left" valign="middle" rowspan="1" colspan="1">Acts as Ub E3 ligase and promotes ubiquitination</td><td align="left" valign="middle" rowspan="1" colspan="1">[<xref ref-type="bibr" rid="B22-viruses-05-01787">22</xref>]</td></tr><tr><td align="left" valign="middle" rowspan="1" colspan="1">p300</td><td align="left" valign="middle" rowspan="1" colspan="1">Acetylation</td><td align="left" valign="middle" rowspan="1" colspan="1">264&#x02013;288</td><td align="left" valign="middle" rowspan="1" colspan="1">Acetylates IN, increases IN affinity to DNA, and promotes integration </td><td align="left" valign="middle" rowspan="1" colspan="1">[<xref ref-type="bibr" rid="B5-viruses-05-01787">5</xref>]</td></tr><tr><td align="left" valign="middle" rowspan="1" colspan="1">GCN5</td><td align="left" valign="middle" rowspan="1" colspan="1">Acetylation </td><td align="left" valign="middle" rowspan="1" colspan="1">244&#x02013;288</td><td align="left" valign="middle" rowspan="1" colspan="1">Acetylates IN, enhances enzymatic activity of IN</td><td align="left" valign="middle" rowspan="1" colspan="1">[<xref ref-type="bibr" rid="B23-viruses-05-01787">23</xref>]</td></tr><tr><td align="left" valign="middle" rowspan="1" colspan="1">KAP1</td><td align="left" valign="middle" rowspan="1" colspan="1">Acetylation</td><td align="left" valign="middle" rowspan="1" colspan="1">NA</td><td align="left" valign="middle" rowspan="1" colspan="1">Binds and deacetylates IN by recruiting HDAC1, reduces integration</td><td align="left" valign="middle" rowspan="1" colspan="1">[<xref ref-type="bibr" rid="B24-viruses-05-01787">24</xref>]</td></tr><tr><td align="left" valign="middle" rowspan="1" colspan="1">JNK</td><td align="left" valign="middle" rowspan="1" colspan="1">Phosphorylation</td><td align="left" valign="middle" rowspan="1" colspan="1">NA</td><td align="left" valign="middle" rowspan="1" colspan="1">Phosphorylates IN</td><td align="left" valign="middle" rowspan="1" colspan="1">[<xref ref-type="bibr" rid="B11-viruses-05-01787">11</xref>]</td></tr><tr><td align="left" valign="middle" rowspan="1" colspan="1">Pin1</td><td align="left" valign="middle" rowspan="1" colspan="1">Phosphorylation</td><td align="left" valign="middle" rowspan="1" colspan="1">NA</td><td align="left" valign="middle" rowspan="1" colspan="1">Binds phosphorylated IN, leading to conformational changes and stabilization of IN from ubiquitination</td><td align="left" valign="middle" rowspan="1" colspan="1">[<xref ref-type="bibr" rid="B11-viruses-05-01787">11</xref>]</td></tr></tbody></table></table-wrap><fig id="viruses-05-01787-f002" position="float"><label>Figure 2</label><caption><p>Model for regulation of IN by various PTMs. The interactions of IN with LEDGF/p75, hRad18 and Ku70 prevent IN from K48-linked Ub proteasome degradation pathway. LEDGF/p75 prevents IN from degradation through the formation of IN&#x02011;LEDGF/p75 complex which stabilizes IN. Ku70 reduces total Ub level in the cell and specifically decreases Ub modification of IN through their protein-protein interaction. Protection of IN from proteasomal degradation by hRad18 is independent of its N-end rule, but its molecular mechanism involved is still unclear. Pin1 binds phosphorylated IN which is catalyzed by JNK, leading to conformational change and prolonged half-life of IN. Therefore, phosphorylation of IN antagonizes ubiquitination of IN. The fate of SUMOylated IN is currently unknown. Both phosphorylation and SUMOylation of IN seem to occur after reverse transcription but before integration. IN is acetylated by two HATs p300 and GCN5. Acetylation of IN enhances IN/DNA binding affinity and integration. KAP1 binds and deacetylates IN by recruiting HDAC1. For clarity, other cellular cofactors of IN and viral proteins have been omitted in the figure. Abbreviations: integrase (IN); post-translational modification (PTM); Lens Epithelium-derived Growth factor (LEDGF); human Rad18 (hRad18); Ubiquitin (Ub); c-Jun N-terminal kinase (JNK); histone acetyltransferase (HAT); histone deacetylase 1 (HDAC1); small ubiquitin-like modifier (SUMO). </p></caption><graphic xlink:href="viruses-05-01787-g002"/></fig></sec><sec><title>2. Ubiquitination of HIV-1 IN</title><sec><title>2.1. What Is the Signal for Degradation: N-Degron and Lys-48-Linked Polyubiquitination Chain</title><p>Ubiquitination is a reversible PTM, in which ubiquitin (Ub) conjugates to the substrate proteins through covalent binding between the C-terminal Gly of Ub and the Lys residue of substrates via a cascade of enzyme reactions. Three classes of enzymes are involved with conjugating Ub to the substrates: Ub-activating enzyme (E1), Ub-conjugating enzyme (E2) and Ub-ligase (E3). Following the attachment of the first Ub, a polyubiquitination chain is formed. Polyubiquitinated proteins are then recognized by the 26S proteasome, which catalyzes the degradation of the ubiquitinated protein and the recycling of ubiquitin. </p><p>IN is known to be a metabolically unstable protein. In the absence of other viral proteins, IN presents as a short-lived protein in transfected cells and has increased expression with proteasome inhibitor treatment [<xref ref-type="bibr" rid="B18-viruses-05-01787">18</xref>]. The N-terminal Phe of IN has been suggested to be the degradation signal or N-degron [<xref ref-type="bibr" rid="B18-viruses-05-01787">18</xref>]. After proteolytic cleavage from the Gag-pol precursor, HIV-1 IN bears natural Phe in its N-terminus, which belongs to a type 2 N-degron (bulky hydrophobic, including Phe, Leu, Trp, Tyr, and Ile) [<xref ref-type="bibr" rid="B25-viruses-05-01787">25</xref>,<xref ref-type="bibr" rid="B26-viruses-05-01787">26</xref>]. This previous study revealed that the N-terminal residue of IN (N-Phe) accounts for its instability, and replacing Phe with a stabilizing residue (Met, Val, and Gly) is able to stabilize IN [<xref ref-type="bibr" rid="B18-viruses-05-01787">18</xref>]. A similar finding was obtained in another independent study [<xref ref-type="bibr" rid="B26-viruses-05-01787">26</xref>]. Therefore, the degradation signal for IN fits into the general N-end rule pathway, which has been observed in mammals, plants and bacteria [<xref ref-type="bibr" rid="B27-viruses-05-01787">27</xref>]. </p><p>Protein substrates can be mono-ubiquitinated or poly-ubiquitinated, both of which confer distinct properties to the substrate proteins. Ub has 7 internal Lys (K6, K11, K27, K29, K33, K48, and K63). All of these Lys can bind to the C-terminal Gly of the preceding Ub, forming different Lys-Gly linked polyubiquitination chains. The K48-linked polyubiquitination chain (conventional chain) is the main signal for 26S proteasome degradation. Nonconventional chains, such as K63-linked polyubiquitination chain, have nonproteolytic functions, including DNA repair and stress response [<xref ref-type="bibr" rid="B28-viruses-05-01787">28</xref>,<xref ref-type="bibr" rid="B29-viruses-05-01787">29</xref>,<xref ref-type="bibr" rid="B30-viruses-05-01787">30</xref>]. However, studies have also revealed that all of the polyubiquitination chains can participate in either proteolytic or non-proteolytic processes in different protein contexts [<xref ref-type="bibr" rid="B31-viruses-05-01787">31</xref>]. One study indicated that IN presented the highest expression level when it was cotransfected with Ub mutant K48R, which is defective for the formation of K48-linked polyubiquitination chain [<xref ref-type="bibr" rid="B29-viruses-05-01787">29</xref>], whereas IN is less stable in the presence of wild-type and Ub mutant K63R [<xref ref-type="bibr" rid="B12-viruses-05-01787">12</xref>]. This study provides direct evidence that IN is degraded through the K48-linked polyubiquitination proteasome pathway. </p><p>In searching for which Lys residue(s) of IN is linked with the K48-polyubiquitination chain and subject to proteasome degradation, a study by Mousnier<italic> et al.</italic> discovered that replacing Lys 211, 215, 219, or 273 with Arg in IN slowed down its degradation, suggesting that these Lys might be at least some of the targets of Ub [<xref ref-type="bibr" rid="B22-viruses-05-01787">22</xref>] (<xref ref-type="fig" rid="viruses-05-01787-f001">Figure 1</xref>). When Lys 211, 215, and 219 of IN were all mutated into Arg in the virus, a 60% reduction of HIV infectivity was observed [<xref ref-type="bibr" rid="B22-viruses-05-01787">22</xref>]. However, further studies are still needed to verify whether the reduction of viral infectivity is associated with the prolonged degradation of these IN mutations in the context of viral infection. </p></sec><sec><title>2.2. What Is the Ub E3 Ligase for IN?</title><p>Ub E3 ligase, which determines the substrate specificity, catalyzes the covalent binding of Ub&#x02011;substrate and Ub-Ub multimer formation through isopeptide bond [<xref ref-type="bibr" rid="B30-viruses-05-01787">30</xref>]. There are two types of E3 ligases differentiated by their unique domains: HECT (homologous to E6-AP carboxy-terminus) and RING (Really Interesting New Gene) fingers [<xref ref-type="bibr" rid="B30-viruses-05-01787">30</xref>]. Two RING-finger domain-containing E3 ligase complexes have been identified as E3 ligases for IN. By using knockout and knockdown technique, an early study suggested that mammalian UBR1 (ubiquitin ligase N-recognin 1), UBR2, and UBR4, as part of the cellular E3 ligase complex, accounted for the recognition and degradation of IN by the Ub proteasome system (UPS) [<xref ref-type="bibr" rid="B26-viruses-05-01787">26</xref>]. This type of E3 ligase recognizes substrates through direct binding to the N-terminal residue of protein substrates, including Phe in IN [<xref ref-type="bibr" rid="B25-viruses-05-01787">25</xref>]. Mousnier<italic> et al.</italic> presented a distinct IN degradation model in which both the prefoldin chaperone subunit von Hippel-Lindau binding protein 1 (VBP1) and the Cul2/von Hippel&#x02013;Lindau protein (VHL) ligase interacted with IN and coordinately mediated the polyubiquitination and proteasome degradation of IN [<xref ref-type="bibr" rid="B22-viruses-05-01787">22</xref>]. It remains unanswered whether these two E3 ligases cooperatively or independently regulate the proteasome degradation of IN.</p><p>In addition to these two RING-finger containing E3 ligases, a HECT-type E3 ligase, Huwe1, (HECT, UBA and WWE domain containing 1) has also been shown to interact with both IN and the IN domain of the Gag-Pol precursor protein. However, Huwe1 does not appear to be involved in the modulation of the ubiquitination and proteasome degradation of IN and the Gag-Pol precursor protein in the overexpression system [<xref ref-type="bibr" rid="B32-viruses-05-01787">32</xref>]. Similarly, the E3 ligase human Rad18 (hRad18), which possesses a RING-finger domain, does not degrade IN but rather it binds and protects IN through an as yet unknown mechanism [<xref ref-type="bibr" rid="B21-viruses-05-01787">21</xref>]. Thus, IN appears to utilize different components of the host UPS for its own benefit during HIV-1 infection. </p></sec><sec><title>2.3. How Does IN Escape Host Degradation?</title><p>Although HIV-1 IN is subject to rapid degradation in the absence of other viral proteins, it is clear that IN stays stable during a large portion of the viral life cycle. To date, a few cellular proteins have been shown to interact with IN and shield it from the host proteasome degradation pathway. Lens epithelium-derived growth factor (LEDGF/p75) was the first cellular protein reported to have a protective role on IN stability [<xref ref-type="bibr" rid="B19-viruses-05-01787">19</xref>]. LEDGF/p75 was discovered as an IN-interacting protein using a chemical cross-linking and mass spectrometry approach in 2003 [<xref ref-type="bibr" rid="B33-viruses-05-01787">33</xref>]. Since then, multiple roles of LEDGF/p75 in HIV-1 integration and infection have been revealed. The protective role of LEDGF is supported by a few lines of evidence. For example, IN is less stable in LEDGF-knockdown cells. Artificial overexpression of LEDGF/p75 outside of the viral life cycle increases IN expression [<xref ref-type="bibr" rid="B19-viruses-05-01787">19</xref>]. It has been highlighted that LEDGF/p75 protects IN from proteasome degradation, dependent on their interaction but not the nuclear or cytoplasmic localization of both proteins [<xref ref-type="bibr" rid="B19-viruses-05-01787">19</xref>]. A subsequent study undertaken by Mousnier<italic> et al.</italic> suggested that the protective role of LEDGF/p75 might be the result of masking the interaction site for VBP1 binding within IN, which bridges IN with Ub E3 ligase Cul2/VHL [<xref ref-type="bibr" rid="B22-viruses-05-01787">22</xref>]. It should be noted that all these findings are derived from the data from overexpression of IN or LEDGF-knockdown. The real scenario of the protection from proteasomal degradation by LEDGF/75 under HIV-1 infection still remains a challenging problem.</p><p>In addition, two DNA repair proteins, hRad18 and Ku70, have been reported to interact and stabilize HIV-1 IN. hRad18 contains a RING-finger domain shared by E3 ubiquitin ligase, and it has been shown to target proliferating cell nuclear antigen (PCNA) for monoubiquitination [<xref ref-type="bibr" rid="B34-viruses-05-01787">34</xref>,<xref ref-type="bibr" rid="B35-viruses-05-01787">35</xref>,<xref ref-type="bibr" rid="B36-viruses-05-01787">36</xref>]. However, hRad18 was observed to stabilize IN independent of its N-end rule in an overexpression system [<xref ref-type="bibr" rid="B21-viruses-05-01787">21</xref>]. Nonetheless, the mechanisms by which hRad18 prevents IN from proteasomal degradation are still unknown. Another IN-interacting protein, Ku70, which also protects IN from proteasomal degradation, is one of the components of the non-homologous end joining (NHEJ) pathway [<xref ref-type="bibr" rid="B37-viruses-05-01787">37</xref>,<xref ref-type="bibr" rid="B38-viruses-05-01787">38</xref>]. The NHEJ pathway has versatile functions during HIV-1 infection, such as promoting apoptosis of infected cells, association with the PIC, viral cDNA circularization, retroviral DNA integration and suppression of HIV transcription [<xref ref-type="bibr" rid="B39-viruses-05-01787">39</xref>,<xref ref-type="bibr" rid="B40-viruses-05-01787">40</xref>,<xref ref-type="bibr" rid="B41-viruses-05-01787">41</xref>]. The study found that Ku70 is incorporated into the HIV-1 virion, and both virus-associated and cell-associated Ku70 are critical for the stability of IN during viral replication [<xref ref-type="bibr" rid="B12-viruses-05-01787">12</xref>]. This protection of IN from proteasome degradation might be ascribed to the deubiquitinating activity of Ku70 [<xref ref-type="bibr" rid="B12-viruses-05-01787">12</xref>,<xref ref-type="bibr" rid="B42-viruses-05-01787">42</xref>]. In addition to its general effect on the host UPS, Ku70 specifically reduces the ubiquitination level of IN through their interaction [<xref ref-type="bibr" rid="B12-viruses-05-01787">12</xref>]. More functional studies are still needed to investigate the exact roles of cellular proteins including (but not limited to) LEDGF/p75, hRad18 and Ku70 in the regulation of IN metabolism during HIV-1 infection. </p></sec><sec><title>2.4. Where Does Degradation Take Place &#x02014; Cytoplasm <italic>versus</italic> Nuclei?</title><p>IN is synthesized and incorporated into virions as part of Gag-Pol polyproteins, and during maturation, IN is cleaved from the Gag-Pol polyprotein by a viral protease inside the virion. After cleavage, the N-terminal Phe of IN is exposed. The degradation of IN does not appear to take place inside the virion after budding, despite the fact that ubiquitin is indeed incorporated into the HIV-1 virion [<xref ref-type="bibr" rid="B43-viruses-05-01787">43</xref>,<xref ref-type="bibr" rid="B44-viruses-05-01787">44</xref>]. Rather, several lines of evidence indicate that the degradation of IN occurs in both the cytoplasm and nucleus of infected cells. The notion that IN is degraded in the cytoplasm is supported by the facts that cytoplasmic IN has a faster degradation rate than the nuclear portion, and that the cytoplasmic fraction of IN is stabilized in the presence of a proteasome inhibitor [<xref ref-type="bibr" rid="B19-viruses-05-01787">19</xref>,<xref ref-type="bibr" rid="B45-viruses-05-01787">45</xref>]. During viral infection, HIV PIC sheds most of its capsid proteins after entry [<xref ref-type="bibr" rid="B46-viruses-05-01787">46</xref>], rendering its components, including HIV-1 IN, accessible to the host environment. Alternatively, it has been proposed that degradation of IN might take place inside the nucleus after the completion of integration but before viral transcription [<xref ref-type="bibr" rid="B22-viruses-05-01787">22</xref>]. This model is supported by the indirect evidence that the cellular proteins VBP1 and Cul2/VHL Ub ligase complex together contribute to the degradation of IN and function in the transition of integration to transcription [<xref ref-type="bibr" rid="B22-viruses-05-01787">22</xref>]. To support this notion, it has been suggested that after completion of strand transfer, IN must be degraded from the integration intermediate to allow the cellular DNA repair pathway to fill in the gap and proceed into transcription [<xref ref-type="bibr" rid="B18-viruses-05-01787">18</xref>]. </p><p>IN is protected by multiple cellular cofactors, such as LEDGF/p75, Ku70 and hRad18, against the host UPS to catalyze 3' processing in the cytoplasm and 5' strand transfer close to the host chromatin. However, IN is inevitably exposed to the host UPS, which is ubiquitous in the nucleus and cytoplasm of all cells. Currently, how IN interacts with various cellular proteins, in terms of protection or destruction in a timely regulated manner, still remains largely unknown. </p></sec></sec><sec><title>3. SUMOylation of HIV-1 Integrase</title><p>In addition to ubiquitination, IN also undergoes small ubiquitin-like modifier (SUMO) modification [<xref ref-type="bibr" rid="B10-viruses-05-01787">10</xref>]. Similar to the ubiquitination cascade, SUMOylation is catalyzed by SUMO activating enzyme E1 (a heterodimer of Aos1 and Uba2), which is the unique E2 conjugating enzyme Ubc9, and a number of different E3 ligases, such as protein inhibitor of activated STAT (PIAS) and RAN binding protein 2 (RanBP2) [<xref ref-type="bibr" rid="B47-viruses-05-01787">47</xref>]. This whole process is reversed by specific isopeptidases or deSUMOylases. The outcomes for SUMO modification vary greatly from substrate to substrate, including protein stability, cytosolic-nuclear translocation, antagonizing other PTMs and transcriptional regulation [<xref ref-type="bibr" rid="B48-viruses-05-01787">48</xref>]. SUMO proteins are ~10 kD in size, and there are four subtypes (SUMO 1-4) in mammals [<xref ref-type="bibr" rid="B48-viruses-05-01787">48</xref>]. SUMO 1, 2 and 3 are ubiquitous in the cells and share a globular ubiquitin-like shape, whereas SUMO4 is only detected in certain tissues and organs [<xref ref-type="bibr" rid="B48-viruses-05-01787">48</xref>,<xref ref-type="bibr" rid="B49-viruses-05-01787">49</xref>]. Whereas SUMO2 and SUMO3 are 96% identical to each other, SUMO1 only shares 45% amino acid identity with SUMO2/3. SUMOs covalently conjugate to protein substrates through a canonical four-aa SUMOylation consensus site, &#x003c8;-K-x-D/E (where &#x003c8; is a hydrophobic aa and x is any aa). </p><p>SUMOylation of IN is newly identified and its function is as yet poorly understood. A study found that IN contains three &#x003c8;-K-x-D/E motifs, and it is SUMOylated at three Lys residues, K46, K136 and K244 [<xref ref-type="bibr" rid="B10-viruses-05-01787">10</xref>] (<xref ref-type="fig" rid="viruses-05-01787-f001">Figure 1</xref>). However, SUMOylation of IN is not completely abolished with all these key Lys residues mutated, implying the presence of other SUMOylation sites. Furthermore, SUMOs have three major isoforms (SUMO1-3), all of which have been shown to modify IN in both<italic> in vitro</italic> and <italic>in vivo</italic> studies. However, it is still unknown which SUMO subtype(s) preferentially target IN and whether IN is mono-SUMOylated or poly-SUMOylated. It has been suggested that SUMOylation of IN might occur between reverse transcription and integration during viral replication, while it exerts no direct effect on its enzymatic activity or IN-LEDGF/p75 interaction. Therefore, the exact functions of IN SUMOylation in HIV-1 infection still await further characterization [<xref ref-type="bibr" rid="B10-viruses-05-01787">10</xref>]. Of note, conjugated SUMO proteins provide a platform to recruit SUMO-interacting motif (SIM)-containing cofactors through non-covalent binding. For example, the SIMs of human TRIM5&#x003b1; binding to SUMO-conjugated capsid protein restricts murine leukemia virus infection [<xref ref-type="bibr" rid="B50-viruses-05-01787">50</xref>], and RanBP2 SIM mediates its binding with the complex of RanGAP1/SUMO1 and Ubc9 [<xref ref-type="bibr" rid="B51-viruses-05-01787">51</xref>]. Interestingly, IN has been shown to bind SUMO1/2 in a co-immunoprecipitation assay and a yeast two-hybrid assay [<xref ref-type="bibr" rid="B52-viruses-05-01787">52</xref>], whereas some IN&#x02011;interacting proteins, such as LEDGF/p75, Ku70, p300, are SUMOylated [<xref ref-type="bibr" rid="B41-viruses-05-01787">41</xref>,<xref ref-type="bibr" rid="B53-viruses-05-01787">53</xref>,<xref ref-type="bibr" rid="B54-viruses-05-01787">54</xref>,<xref ref-type="bibr" rid="B55-viruses-05-01787">55</xref>]. Therefore, it is intriguing to consider that IN bears one or more SIMs that mediate IN/SUMO interaction and binding to SUMO-conjugated cofactors, thereby modulating the activities and functions of IN. Whether IN contains SIM(s) and their functions are currently under investigation. The most well&#x02011;characterized SIM is defined as V/I-x-V/I-V/I or V/I-V/I-x-V/I/L, where x can be any amino acid, in a parallel or anti-parallel orientation [<xref ref-type="bibr" rid="B56-viruses-05-01787">56</xref>,<xref ref-type="bibr" rid="B57-viruses-05-01787">57</xref>,<xref ref-type="bibr" rid="B58-viruses-05-01787">58</xref>]. The examination of the HIV IN aa sequence revealed that IN indeed harbors three putative SIMs: SIM1 72IILV75, SIM2 200IVDI204 and SIM3 257IKVV260. Future studies, including mutagenesis and biochemical analysis of the covalent SUMO conjugation and possible SIM&#x02011;mediated non-covalent SUMO binding of IN, are needed for better understanding of the SUMO&#x02011;regulated interactions between IN and cofactors and their functions. </p></sec><sec><title>4. Acetylation of Lys Residues in the CTD of HIV-1 IN by the Cellular Histone Acetyltransferase (HAT) p300 and GCN5</title><p>Like ubiquitination and SUMOylation, acetylation is another PTM that targets Lys residues on substrates. Lysine acetylation has been observed in the histone proteins and nonhistone proteins of both nuclear and cytosolic origin. During acetylation, one single acetyltransferase transfers acetyl groups to either the &#x003b1;-amino group of amino-terminal residues or to the &#x003b5;-amino group of Lys residues of the substrates [<xref ref-type="bibr" rid="B59-viruses-05-01787">59</xref>]. Acetylation is reversed by histone deacetylases (HDACs). Histone acetylation is related to the chromatin structure and transcriptional activity, whereas acetylation of nonhistone proteins regulates protein activity, localization, protein-protein or protein-DNA interactions, and stability/degradation [<xref ref-type="bibr" rid="B59-viruses-05-01787">59</xref>,<xref ref-type="bibr" rid="B60-viruses-05-01787">60</xref>]. Two HATs, p300 and GCN5, bind and modify IN both<italic> in vitro</italic> and <italic>in vivo</italic> [<xref ref-type="bibr" rid="B5-viruses-05-01787">5</xref>,<xref ref-type="bibr" rid="B23-viruses-05-01787">23</xref>]. Structurally, both p300/CBP and GCN5 contain a HAT domain and a bromodomain, in which the HAT domain confers acetylation activity, whereas the bromodomain, a conserved protein&#x02011;interaction module, selectively targets acetylated Lys residues [<xref ref-type="bibr" rid="B61-viruses-05-01787">61</xref>]. While both of these proteins acetylate IN at Lys residues K264, K266, and K273, K258 is exclusively modified by GCN5 (<xref ref-type="fig" rid="viruses-05-01787-f001">Figure 1</xref>) [<xref ref-type="bibr" rid="B5-viruses-05-01787">5</xref>,<xref ref-type="bibr" rid="B23-viruses-05-01787">23</xref>]. Consistent with this observation, deletion analysis of IN revealed that the C-terminal last 24&#x02013;44 aa of IN are the binding interface for both HATs (aa 264&#x02013;288 for p300 and aa 244&#x02013;288 for GCN5). Moreover, the binding models of IN/p300 and the IN/GCN5 complexes have been solved based on structural studies and experimental mutagenesis in an independent study [<xref ref-type="bibr" rid="B62-viruses-05-01787">62</xref>]. It is known that the IN CTD is critical for its DNA binding [<xref ref-type="bibr" rid="B63-viruses-05-01787">63</xref>], and acetylation is able to increase DNA affinity through the neutralization of the positive charge of the target Lys residues [<xref ref-type="bibr" rid="B64-viruses-05-01787">64</xref>]. Not surprisingly, the acetylation of IN by these two HATs increases the binding affinity of IN/DNA, and other functions of IN acetylation include the positive regulation on IN enzymatic activity and integration [<xref ref-type="bibr" rid="B5-viruses-05-01787">5</xref>,<xref ref-type="bibr" rid="B23-viruses-05-01787">23</xref>]. However, the importance of IN acetylation was questioned by another study in which HIV-1 virus containing an untagged K(264/266/273)R IN was fully replication competent, and the integration frequency was modestly impaired, even though IN acetylation was confirmed [<xref ref-type="bibr" rid="B65-viruses-05-01787">65</xref>]. The discrepancy was explained by the usage of an epitope tag at the C-terminus of IN, adjacent to the acetylation and mutation sites [<xref ref-type="bibr" rid="B65-viruses-05-01787">65</xref>]. Nonetheless, the exact functions of IN acetylation, especially in the setting of viral replication, still await further characterization.</p><p>To search for cellular proteins selectively interacting with acetylated IN, a yeast two-hybrid system was employed to screen for cellular protein candidates involved in the acetylation of IN [<xref ref-type="bibr" rid="B66-viruses-05-01787">66</xref>]. The study identified 13 cellular proteins that specifically bound acetylated IN, including transcriptional factor, chromatin remodeling factor and nuclear import protein, among others [<xref ref-type="bibr" rid="B66-viruses-05-01787">66</xref>]. Among these, LEDGF/p75 and Kr&#x000fc;ppel-associated protein 1 (KAP1 or TRIM28) were listed as potential candidates [<xref ref-type="bibr" rid="B66-viruses-05-01787">66</xref>]. A follow-up study by the same group revealed that KAP1 binds and deacetylates IN by recruiting the deacetylase HDAC1, thus reducing integration efficiency [<xref ref-type="bibr" rid="B24-viruses-05-01787">24</xref>]. This finding underscored KAP1 as another molecular control of HIV-1 IN acetylation and its related integration. </p></sec><sec><title>5. Phosphorylation of HIV-1 IN by the Cellular Kinase JNK in the Ser Residue of Its Core Domain</title><p>Phosphorylation is also a reversible PTM, in which kinases phosphorylate protein substrates and phosphatases dephosphorylate proteins, acting as an on/off switch. Phosphorylation predominantly targets protein subjects on Ser, Thr or Tyr residues in eukaryotes [<xref ref-type="bibr" rid="B67-viruses-05-01787">67</xref>]. Protein kinases are categorized into two main groups: the Ser/Thr-specific kinases and the Tyr-specific kinases. During phosphorylation, the catalytic subunits within the kinases catalyze the transfer of the terminal &#x003b3;&#x02011;phosphate of ATP to the hydroxyl oxygen of the Ser, Thr or Tyr residue of the substrate [<xref ref-type="bibr" rid="B67-viruses-05-01787">67</xref>]. This phosphoryl group replaces neutral hydroxyl groups on Ser, Thr or Tyr with negatively charged phosphates in the modified protein, which can further interfere with or enhance binding of certain proteins. Thus, the reversible phosphorylation/dephosphorylation plays key roles in the control of many distinct cellular processes. </p><p>Phosphorylation of IN was first discussed by Manganaro<italic> et al.</italic> in 2010 [<xref ref-type="bibr" rid="B11-viruses-05-01787">11</xref>]. IN has been shown to be phosphorylated at activated T lymphocytes by cellular kinase c-Jun N-terminal kinase (JNK) at Ser 57 (<xref ref-type="fig" rid="viruses-05-01787-f001">Figure 1</xref>) [<xref ref-type="bibr" rid="B11-viruses-05-01787">11</xref>]. The modified form of IN is then recognized and stabilized by cellular peptidyl prolyl-isomerase enzyme Pin1, which is required for efficient HIV-1 integration and infection [<xref ref-type="bibr" rid="B11-viruses-05-01787">11</xref>]. To understand the possible linkage between the phosphorylation of IN and other identified PTMs, the acetylation and ubiquitination of IN were studied in this same report [<xref ref-type="bibr" rid="B11-viruses-05-01787">11</xref>]. The antagonism between phosphorylation and acetylation has been extensively reported. For instance, the acetylation of STAT1 counteracts Interferon-induced STAT1 phosphorylation [<xref ref-type="bibr" rid="B68-viruses-05-01787">68</xref>]. However, the results suggested that the phosphorylation and acetylation of IN are two independent events [<xref ref-type="bibr" rid="B11-viruses-05-01787">11</xref>]. Interestingly, there is a direct linkage between phosphorylation and the ubiquitination of IN. The observation that the IN mutant S57A, in which phosphorylation is abolished, is more ubiquitinated, suggests that the phosphorylation and ubiquitination of IN antagonize one another in the regulation of IN stability [<xref ref-type="bibr" rid="B11-viruses-05-01787">11</xref>]. This raises the question as to how the phosphorylation of IN impacts its stability. Pin1, which is a peptidyl-prolyl <italic>cis/trans</italic> isomerase, binds and catalyzes conformational changes of phosphorylated proline-directed Ser/Thr residues from <italic>cis</italic> isomers to a more stable <italic>trans</italic> configuration in target proteins [<xref ref-type="bibr" rid="B26-viruses-05-01787">26</xref>]. Indeed, experimental evidence has confirmed that Pin1 binding to phosphorylated IN leads to a prolonged IN half-life [<xref ref-type="bibr" rid="B11-viruses-05-01787">11</xref>]. Such conformational change of IN by Pin1 might result in the inaccessibility of components from the host UPS, such as ubiquitin and E3 ligase, subsequently resulting in more stable IN.</p></sec><sec><title>6. Conclusions</title><p>Like all viruses, the replication of HIV-1 relies heavily on host proteins due to the limited number of viral genome products. A number of proteins and/or cellular pathways are hijacked by HIV-1 to efficiently complete the replication cycle. In addition, viral proteins such as HIV-1 IN and Tat are extensively modified by various PTMs and consequently contribute significantly to viral replication. These modifications are tightly controlled by various cellular proteins as discussed above (also see <xref ref-type="table" rid="viruses-05-01787-t001">Table 1</xref> and <xref ref-type="fig" rid="viruses-05-01787-f002">Figure 2</xref>). Furthermore, the PTMs, including ubiquitination, SUMOylation, acetylation and phosphorylation, mingle with each other, either antagonistically or cooperatively, providing another level of cellular control. Among these four major PTMs that IN is subject to, SUMOylation and phosphorylation have only recently been reported and are poorly understood. The important linkages among the network of ubiquitination, acetylation, SUMOylation and phosphorylation are still missing. Meanwhile, the exact functions of various IN PTMs, especially in the setting of viral replication, still await further characterization. Proteome-wide screening would be a useful and important research tool that would facilitate a better understanding of the network interactions between HIV-1 IN and cellular cofactors along with different PTMs. The use of a tethered catalysis yeast two&#x02011;hybrid system, which was invented to study protein-protein interactions that require PTMs, would allow for high-throughput experimental screening [<xref ref-type="bibr" rid="B69-viruses-05-01787">69</xref>]. For example, using this method, a study was conducted to identify the cellular proteins binding to the acetylated form of IN [<xref ref-type="bibr" rid="B66-viruses-05-01787">66</xref>]. In addition, other new technologies, such as tandem affinity purification together with high-accuracy mass spectrometry, also provide useful tools for the study of host-virus protein complexes (reviewed by Ole N. Jensen) [<xref ref-type="bibr" rid="B70-viruses-05-01787">70</xref>]. </p><p>In summary, the regulation of HIV-1 IN by PTMs is complicated by various cellular proteins and is a highly relevant and active research area. A better understanding of these virus-host protein-protein complex interactions will certainly lead to exciting findings and potentially may uncover a new intervention target for treating HIV-1 infection. </p></sec></body><back><ack><title>Acknowledgements</title><p>YZ is the recipient of studentships from the Manitoba Health Research Council/Manitoba Institute of Child Health (MHRC/MICH) and the CIHR International Infectious Disease &#x00026; Global Health Training Program. This work was supported by the Canadian Foundation for AIDS Research (CANFAR grant# 023-013) and the National Sciences and Engineering Research Council of Canada (NSERC, 418543) to X-J Y. </p></ack><notes><title>Conflict of Interest</title><p>The authors declare no conflict of interest.</p></notes><ref-list><title>References and Notes</title><ref id="B1-viruses-05-01787"><label>1.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Walsh</surname><given-names>C.T.</given-names></name><name><surname>Garneau-Tsodikova</surname><given-names>S.</given-names></name><name><surname>Gatto</surname><given-names>G.J.</given-names><suffix>Jr.</suffix></name></person-group>
+<article-title>Protein posttranslational modifications: The chemistry of proteome diversifications</article-title>
+<source>Angew. Chem. Int. Ed. Engl.</source>
+<year>2005</year>
+<volume>44</volume>
+<fpage>7342</fpage>
+<lpage>7372</lpage>
+<pub-id pub-id-type="doi">10.1002/anie.200501023</pub-id>
+<pub-id pub-id-type="pmid">16267872</pub-id></element-citation></ref><ref id="B2-viruses-05-01787"><label>2.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Ribet</surname><given-names>D.</given-names></name><name><surname>Cossart</surname><given-names>P.</given-names></name></person-group>
+<article-title>Pathogen-mediated posttranslational modifications: A re-emerging field</article-title>
+<source>Cell</source>
+<year>2010</year>
+<volume>143</volume>
+<fpage>694</fpage>
+<lpage>702</lpage>
+<pub-id pub-id-type="doi">10.1016/j.cell.2010.11.019</pub-id>
+<pub-id pub-id-type="pmid">21111231</pub-id></element-citation></ref><ref id="B3-viruses-05-01787"><label>3.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Ribet</surname><given-names>D.</given-names></name><name><surname>Cossart</surname><given-names>P.</given-names></name></person-group>
+<article-title>Post-translational modifications in host cells during bacterial infection</article-title>
+<source>FEBS Lett.</source>
+<year>2010</year>
+<volume>584</volume>
+<fpage>2748</fpage>
+<lpage>2758</lpage>
+<pub-id pub-id-type="doi">10.1016/j.febslet.2010.05.012</pub-id>
+<pub-id pub-id-type="pmid">20493189</pub-id></element-citation></ref><ref id="B4-viruses-05-01787"><label>4.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Randow</surname><given-names>F.</given-names></name><name><surname>Lehner</surname><given-names>P.J.</given-names></name></person-group>
+<article-title>Viral avoidance and exploitation of the ubiquitin system</article-title>
+<source>Nat. Cell Biol.</source>
+<year>2009</year>
+<volume>11</volume>
+<fpage>527</fpage>
+<lpage>534</lpage>
+<pub-id pub-id-type="doi">10.1038/ncb0509-527</pub-id>
+<pub-id pub-id-type="pmid">19404332</pub-id></element-citation></ref><ref id="B5-viruses-05-01787"><label>5.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Cereseto</surname><given-names>A.</given-names></name><name><surname>Manganaro</surname><given-names>L.</given-names></name><name><surname>Gutierrez</surname><given-names>M.I.</given-names></name><name><surname>Terreni</surname><given-names>M.</given-names></name><name><surname>Fittipaldi</surname><given-names>A.</given-names></name><name><surname>Lusic</surname><given-names>M.</given-names></name><name><surname>Marcello</surname><given-names>A.</given-names></name><name><surname>Giacca</surname><given-names>M.</given-names></name></person-group>
+<article-title>Acetylation of HIV-1 integrase by p300 regulates viral integration</article-title>
+<source>EMBO J.</source>
+<year>2005</year>
+<volume>24</volume>
+<fpage>3070</fpage>
+<lpage>3081</lpage>
+<pub-id pub-id-type="doi">10.1038/sj.emboj.7600770</pub-id>
+<pub-id pub-id-type="pmid">16096645</pub-id></element-citation></ref><ref id="B6-viruses-05-01787"><label>6.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kiernan</surname><given-names>R.E.</given-names></name><name><surname>Vanhulle</surname><given-names>C.</given-names></name><name><surname>Schiltz</surname><given-names>L.</given-names></name><name><surname>Adam</surname><given-names>E.</given-names></name><name><surname>Xiao</surname><given-names>H.</given-names></name><name><surname>Maudoux</surname><given-names>F.</given-names></name><name><surname>Calomme</surname><given-names>C.</given-names></name><name><surname>Burny</surname><given-names>A.</given-names></name><name><surname>Nakatani</surname><given-names>Y.</given-names></name><name><surname>Jeang</surname><given-names>K.T.</given-names></name><etal/></person-group>
+<article-title>HIV-1 tat transcriptional activity is regulated by acetylation</article-title>
+<source>EMBO J.</source>
+<year>1999</year>
+<volume>18</volume>
+<fpage>6106</fpage>
+<lpage>6118</lpage>
+<pub-id pub-id-type="doi">10.1093/emboj/18.21.6106</pub-id>
+<pub-id pub-id-type="pmid">10545121</pub-id></element-citation></ref><ref id="B7-viruses-05-01787"><label>7.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Haggerty</surname><given-names>S.</given-names></name><name><surname>Dempsey</surname><given-names>M.P.</given-names></name><name><surname>Bukrinsky</surname><given-names>M.I.</given-names></name><name><surname>Guo</surname><given-names>L.</given-names></name><name><surname>Stevenson</surname><given-names>M.</given-names></name></person-group>
+<article-title>Posttranslational modifications within the HIV-1 envelope glycoprotein which restrict virus assembly and CD4-dependent infection</article-title>
+<source>AIDS Res. Hum. Retrovir.</source>
+<year>1991</year>
+<volume>7</volume>
+<fpage>501</fpage>
+<lpage>510</lpage>
+<pub-id pub-id-type="doi">10.1089/aid.1991.7.501</pub-id>
+<pub-id pub-id-type="pmid">1931229</pub-id></element-citation></ref><ref id="B8-viruses-05-01787"><label>8.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Ott</surname><given-names>M.</given-names></name><name><surname>Schnolzer</surname><given-names>M.</given-names></name><name><surname>Garnica</surname><given-names>J.</given-names></name><name><surname>Fischle</surname><given-names>W.</given-names></name><name><surname>Emiliani</surname><given-names>S.</given-names></name><name><surname>Rackwitz</surname><given-names>H.R.</given-names></name><name><surname>Verdin</surname><given-names>E.</given-names></name></person-group>
+<article-title>Acetylation of the HIV-1 Tat protein by p300 is important for its transcriptional activity</article-title>
+<source>Curr. Biol.</source>
+<year>1999</year>
+<volume>9</volume>
+<fpage>1489</fpage>
+<lpage>1492</lpage>
+<pub-id pub-id-type="doi">10.1016/S0960-9822(00)80120-7</pub-id>
+<pub-id pub-id-type="pmid">10607594</pub-id></element-citation></ref><ref id="B9-viruses-05-01787"><label>9.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Lentini</surname><given-names>A.</given-names></name><name><surname>Tabolacci</surname><given-names>C.</given-names></name><name><surname>Melino</surname><given-names>S.</given-names></name><name><surname>Provenzano</surname><given-names>B.</given-names></name><name><surname>Beninati</surname><given-names>S.</given-names></name></person-group>
+<article-title>Post-translational modification of glutamine and lysine residues of HIV-1 aspartyl protease by transglutaminase increases its catalytic activity</article-title>
+<source>Biochem. Biophys. Res. Commun.</source>
+<year>2010</year>
+<volume>393</volume>
+<fpage>546</fpage>
+<lpage>550</lpage>
+<pub-id pub-id-type="doi">10.1016/j.bbrc.2010.02.060</pub-id>
+<pub-id pub-id-type="pmid">20170637</pub-id></element-citation></ref><ref id="B10-viruses-05-01787"><label>10.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Zamborlini</surname><given-names>A.</given-names></name><name><surname>Coiffic</surname><given-names>A.</given-names></name><name><surname>Beauclair</surname><given-names>G.</given-names></name><name><surname>Delelis</surname><given-names>O.</given-names></name><name><surname>Paris</surname><given-names>J.</given-names></name><name><surname>Koh</surname><given-names>Y.</given-names></name><name><surname>Magne</surname><given-names>F.</given-names></name><name><surname>Giron</surname><given-names>M.L.</given-names></name><name><surname>Tobaly-Tapiero</surname><given-names>J.</given-names></name><name><surname>Deprez</surname><given-names>E.</given-names></name><etal/></person-group>
+<article-title>Impairment of human immunodeficiency virus type-1 integrase SUMOylation correlates with an early replication defect</article-title>
+<source>J. Biol. Chem.</source>
+<year>2012</year>
+<volume>286</volume>
+<fpage>21013</fpage>
+<lpage>21022</lpage>
+<pub-id pub-id-type="pmid">21454548</pub-id></element-citation></ref><ref id="B11-viruses-05-01787"><label>11.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Manganaro</surname><given-names>L.</given-names></name><name><surname>Lusic</surname><given-names>M.</given-names></name><name><surname>Gutierrez</surname><given-names>M.I.</given-names></name><name><surname>Cereseto</surname><given-names>A.</given-names></name><name><surname>Del Sal</surname><given-names>G.</given-names></name><name><surname>Giacca</surname><given-names>M.</given-names></name></person-group>
+<article-title>Concerted action of cellular JNK and Pin1 restricts HIV-1 genome integration to activated CD4+ T lymphocytes</article-title>
+<source>Nat. Med.</source>
+<year>2010</year>
+<volume>16</volume>
+<fpage>329</fpage>
+<lpage>333</lpage>
+<pub-id pub-id-type="doi">10.1038/nm.2102</pub-id>
+<pub-id pub-id-type="pmid">20173753</pub-id></element-citation></ref><ref id="B12-viruses-05-01787"><label>12.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Zheng</surname><given-names>Y.</given-names></name><name><surname>Ao</surname><given-names>Z.</given-names></name><name><surname>Wang</surname><given-names>B.</given-names></name><name><surname>Jayappa</surname><given-names>K.D.</given-names></name><name><surname>Yao</surname><given-names>X.</given-names></name></person-group>
+<article-title>Host protein Ku70 binds and protects HIV-1 integrase from proteasomal degradation and is required for HIV replication</article-title>
+<source>J. Biol. Chem.</source>
+<year>2012</year>
+<volume>286</volume>
+<fpage>17722</fpage>
+<lpage>17735</lpage>
+<pub-id pub-id-type="pmid">21454661</pub-id></element-citation></ref><ref id="B13-viruses-05-01787"><label>13.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Pommier</surname><given-names>Y.</given-names></name><name><surname>Johnson</surname><given-names>A.A.</given-names></name><name><surname>Marchand</surname><given-names>C.</given-names></name></person-group>
+<article-title>Integrase inhibitors to treat HIV/AIDS</article-title>
+<source>Nat. Rev. Drug Discov.</source>
+<year>2005</year>
+<volume>4</volume>
+<fpage>236</fpage>
+<lpage>248</lpage>
+<pub-id pub-id-type="doi">10.1038/nrd1660</pub-id>
+<pub-id pub-id-type="pmid">15729361</pub-id></element-citation></ref><ref id="B14-viruses-05-01787"><label>14.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Engelman</surname><given-names>A.</given-names></name><name><surname>Englund</surname><given-names>G.</given-names></name><name><surname>Orenstein</surname><given-names>J.M.</given-names></name><name><surname>Martin</surname><given-names>M.A.</given-names></name><name><surname>Craigie</surname><given-names>R.</given-names></name></person-group>
+<article-title>Multiple effects of mutations in human immunodeficiency virus type 1 integrase on viral replication</article-title>
+<source>J. Virol.</source>
+<year>1995</year>
+<volume>69</volume>
+<fpage>2729</fpage>
+<lpage>2736</lpage>
+<pub-id pub-id-type="pmid">7535863</pub-id></element-citation></ref><ref id="B15-viruses-05-01787"><label>15.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Tsurutani</surname><given-names>N.</given-names></name><name><surname>Kubo</surname><given-names>M.</given-names></name><name><surname>Maeda</surname><given-names>Y.</given-names></name><name><surname>Ohashi</surname><given-names>T.</given-names></name><name><surname>Yamamoto</surname><given-names>N.</given-names></name><name><surname>Kannagi</surname><given-names>M.</given-names></name><name><surname>Masuda</surname><given-names>T.</given-names></name></person-group>
+<article-title>Identification of critical amino acid residues in human immunodeficiency virus type 1 IN required for efficient proviral DNA formation at steps prior to integration in dividing and nondividing cells</article-title>
+<source>J. Virol.</source>
+<year>2000</year>
+<volume>74</volume>
+<fpage>4795</fpage>
+<lpage>4806</lpage>
+<pub-id pub-id-type="doi">10.1128/JVI.74.10.4795-4806.2000</pub-id>
+<pub-id pub-id-type="pmid">10775618</pub-id></element-citation></ref><ref id="B16-viruses-05-01787"><label>16.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Gallay</surname><given-names>P.</given-names></name><name><surname>Hope</surname><given-names>T.</given-names></name><name><surname>Chin</surname><given-names>D.</given-names></name><name><surname>Trono</surname><given-names>D.</given-names></name></person-group>
+<article-title>HIV-1 infection of nondividing cells through the recognition of integrase by the importin/karyopherin pathway</article-title>
+<source>Proc. Natl. Acad. Sci. USA</source>
+<year>1997</year>
+<volume>94</volume>
+<fpage>9825</fpage>
+<lpage>9830</lpage>
+<pub-id pub-id-type="doi">10.1073/pnas.94.18.9825</pub-id>
+<pub-id pub-id-type="pmid">9275210</pub-id></element-citation></ref><ref id="B17-viruses-05-01787"><label>17.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Wu</surname><given-names>X.</given-names></name><name><surname>Liu</surname><given-names>H.</given-names></name><name><surname>Xiao</surname><given-names>H.</given-names></name><name><surname>Conway</surname><given-names>J.A.</given-names></name><name><surname>Hehl</surname><given-names>E.</given-names></name><name><surname>Kalpana</surname><given-names>G.V.</given-names></name><name><surname>Prasad</surname><given-names>V.</given-names></name><name><surname>Kappes</surname><given-names>J.C.</given-names></name></person-group>
+<article-title>Human immunodeficiency virus type 1 integrase protein promotes reverse transcription through specific interactions with the nucleoprotein reverse transcription complex</article-title>
+<source>J. Virol.</source>
+<year>1999</year>
+<volume>73</volume>
+<fpage>2126</fpage>
+<lpage>2135</lpage>
+<pub-id pub-id-type="pmid">9971795</pub-id></element-citation></ref><ref id="B18-viruses-05-01787"><label>18.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Mulder</surname><given-names>L.C.</given-names></name><name><surname>Muesing</surname><given-names>M.A.</given-names></name></person-group>
+<article-title>Degradation of HIV-1 integrase by the N-end rule pathway</article-title>
+<source>J. Biol. Chem.</source>
+<year>2000</year>
+<volume>275</volume>
+<fpage>29749</fpage>
+<lpage>29753</lpage>
+<pub-id pub-id-type="doi">10.1074/jbc.M004670200</pub-id>
+<pub-id pub-id-type="pmid">10893419</pub-id></element-citation></ref><ref id="B19-viruses-05-01787"><label>19.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Llano</surname><given-names>M.</given-names></name><name><surname>Delgado</surname><given-names>S.</given-names></name><name><surname>Vanegas</surname><given-names>M.</given-names></name><name><surname>Poeschla</surname><given-names>E.M.</given-names></name></person-group>
+<article-title>Lens epithelium-derived growth factor/p75 prevents proteasomal degradation of HIV-1 integrase</article-title>
+<source>J. Biol. Chem.</source>
+<year>2004</year>
+<volume>279</volume>
+<fpage>55570</fpage>
+<lpage>55577</lpage>
+<pub-id pub-id-type="doi">10.1074/jbc.M408508200</pub-id>
+<pub-id pub-id-type="pmid">15475359</pub-id></element-citation></ref><ref id="B20-viruses-05-01787"><label>20.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Busschots</surname><given-names>K.</given-names></name><name><surname>Voet</surname><given-names>A.</given-names></name><name><surname>De Maeyer</surname><given-names>M.</given-names></name><name><surname>Rain</surname><given-names>J.C.</given-names></name><name><surname>Emiliani</surname><given-names>S.</given-names></name><name><surname>Benarous</surname><given-names>R.</given-names></name><name><surname>Desender</surname><given-names>L.</given-names></name><name><surname>Debyser</surname><given-names>Z.</given-names></name><name><surname>Christ</surname><given-names>F.</given-names></name></person-group>
+<article-title>Identification of the LEDGF/p75 binding site in HIV-1 integrase</article-title>
+<source>J. Mol. Biol.</source>
+<year>2007</year>
+<volume>365</volume>
+<fpage>1480</fpage>
+<lpage>1492</lpage>
+<pub-id pub-id-type="doi">10.1016/j.jmb.2006.10.094</pub-id>
+<pub-id pub-id-type="pmid">17137594</pub-id></element-citation></ref><ref id="B21-viruses-05-01787"><label>21.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Mulder</surname><given-names>L.C.</given-names></name><name><surname>Chakrabarti</surname><given-names>L.A.</given-names></name><name><surname>Muesing</surname><given-names>M.A.</given-names></name></person-group>
+<article-title>Interaction of HIV-1 integrase with DNA repair protein hRad18</article-title>
+<source>J. Biol. Chem.</source>
+<year>2002</year>
+<volume>277</volume>
+<fpage>27489</fpage>
+<lpage>27493</lpage>
+<pub-id pub-id-type="doi">10.1074/jbc.M203061200</pub-id>
+<pub-id pub-id-type="pmid">12016221</pub-id></element-citation></ref><ref id="B22-viruses-05-01787"><label>22.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Mousnier</surname><given-names>A.</given-names></name><name><surname>Kubat</surname><given-names>N.</given-names></name><name><surname>Massias-Simon</surname><given-names>A.</given-names></name><name><surname>Segeral</surname><given-names>E.</given-names></name><name><surname>Rain</surname><given-names>J.C.</given-names></name><name><surname>Benarous</surname><given-names>R.</given-names></name><name><surname>Emiliani</surname><given-names>S.</given-names></name><name><surname>Dargemont</surname><given-names>C.</given-names></name></person-group>
+<article-title>von Hippel Lindau binding protein 1-mediated degradation of integrase affects HIV-1 gene expression at a postintegration step</article-title>
+<source>Proc. Natl. Acad. Sci. USA</source>
+<year>2007</year>
+<volume>104</volume>
+<fpage>13615</fpage>
+<lpage>13620</lpage>
+<pub-id pub-id-type="doi">10.1073/pnas.0705162104</pub-id>
+<pub-id pub-id-type="pmid">17698809</pub-id></element-citation></ref><ref id="B23-viruses-05-01787"><label>23.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Terreni</surname><given-names>M.</given-names></name><name><surname>Valentini</surname><given-names>P.</given-names></name><name><surname>Liverani</surname><given-names>V.</given-names></name><name><surname>Gutierrez</surname><given-names>M.I.</given-names></name><name><surname>Di Primio</surname><given-names>C.</given-names></name><name><surname>Di Fenza</surname><given-names>A.</given-names></name><name><surname>Tozzini</surname><given-names>V.</given-names></name><name><surname>Allouch</surname><given-names>A.</given-names></name><name><surname>Albanese</surname><given-names>A.</given-names></name><name><surname>Giacca</surname><given-names>M.</given-names></name><etal/></person-group>
+<article-title>GCN5-dependent acetylation of HIV-1 integrase enhances viral integration</article-title>
+<source>Retrovirology</source>
+<year>2010</year>
+<volume>7</volume>
+<fpage>18</fpage>
+<pub-id pub-id-type="doi">10.1186/1742-4690-7-18</pub-id>
+<pub-id pub-id-type="pmid">20226045</pub-id></element-citation></ref><ref id="B24-viruses-05-01787"><label>24.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Allouch</surname><given-names>A.</given-names></name><name><surname>Di Primio</surname><given-names>C.</given-names></name><name><surname>Alpi</surname><given-names>E.</given-names></name><name><surname>Lusic</surname><given-names>M.</given-names></name><name><surname>Arosio</surname><given-names>D.</given-names></name><name><surname>Giacca</surname><given-names>M.</given-names></name><name><surname>Cereseto</surname><given-names>A.</given-names></name></person-group>
+<article-title>The TRIM family protein KAP1 inhibits HIV-1 integration</article-title>
+<source>Cell Host Microbe</source>
+<year>2011</year>
+<volume>9</volume>
+<fpage>484</fpage>
+<lpage>495</lpage>
+<pub-id pub-id-type="doi">10.1016/j.chom.2011.05.004</pub-id>
+<pub-id pub-id-type="pmid">21669397</pub-id></element-citation></ref><ref id="B25-viruses-05-01787"><label>25.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Sriram</surname><given-names>S.M.</given-names></name><name><surname>Kim</surname><given-names>B.Y.</given-names></name><name><surname>Kwon</surname><given-names>Y.T.</given-names></name></person-group>
+<article-title>The N-end rule pathway: Emerging functions and molecular principles of substrate recognition</article-title>
+<source>Nat. Rev. Mol. Cell Biol.</source>
+<year>2011</year>
+<volume>12</volume>
+<fpage>735</fpage>
+<lpage>747</lpage>
+<pub-id pub-id-type="doi">10.1038/nrm3217</pub-id>
+<pub-id pub-id-type="pmid">22016057</pub-id></element-citation></ref><ref id="B26-viruses-05-01787"><label>26.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Tasaki</surname><given-names>T.</given-names></name><name><surname>Mulder</surname><given-names>L.C.</given-names></name><name><surname>Iwamatsu</surname><given-names>A.</given-names></name><name><surname>Lee</surname><given-names>M.J.</given-names></name><name><surname>Davydov</surname><given-names>I.V.</given-names></name><name><surname>Varshavsky</surname><given-names>A.</given-names></name><name><surname>Muesing</surname><given-names>M.</given-names></name><name><surname>Kwon</surname><given-names>Y.T.</given-names></name></person-group>
+<article-title>A family of mammalian E3 ubiquitin ligases that contain the UBR box motif and recognize N-degrons</article-title>
+<source>Mol. Cell. Biol.</source>
+<year>2005</year>
+<volume>25</volume>
+<fpage>7120</fpage>
+<lpage>7136</lpage>
+<pub-id pub-id-type="doi">10.1128/MCB.25.16.7120-7136.2005</pub-id>
+<pub-id pub-id-type="pmid">16055722</pub-id></element-citation></ref><ref id="B27-viruses-05-01787"><label>27.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Ravid</surname><given-names>T.</given-names></name><name><surname>Hochstrasser</surname><given-names>M.</given-names></name></person-group>
+<article-title>Diversity of degradation signals in the ubiquitin-proteasome system</article-title>
+<source>Nat. Rev. Mol. Cell Biol.</source>
+<year>2008</year>
+<volume>9</volume>
+<fpage>679</fpage>
+<lpage>690</lpage>
+<pub-id pub-id-type="doi">10.1038/nrm2468</pub-id>
+<pub-id pub-id-type="pmid">18698327</pub-id></element-citation></ref><ref id="B28-viruses-05-01787"><label>28.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Jin</surname><given-names>L.</given-names></name><name><surname>Williamson</surname><given-names>A.</given-names></name><name><surname>Banerjee</surname><given-names>S.</given-names></name><name><surname>Philipp</surname><given-names>I.</given-names></name><name><surname>Rape</surname><given-names>M.</given-names></name></person-group>
+<article-title>Mechanism of ubiquitin-chain formation by the human anaphase-promoting complex</article-title>
+<source>Cell</source>
+<year>2008</year>
+<volume>133</volume>
+<fpage>653</fpage>
+<lpage>665</lpage>
+<pub-id pub-id-type="doi">10.1016/j.cell.2008.04.012</pub-id>
+<pub-id pub-id-type="pmid">18485873</pub-id></element-citation></ref><ref id="B29-viruses-05-01787"><label>29.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Adhikari</surname><given-names>A.</given-names></name><name><surname>Chen</surname><given-names>Z.J.</given-names></name></person-group>
+<article-title>Diversity of polyubiquitin chains</article-title>
+<source>Dev. Cell</source>
+<year>2009</year>
+<volume>16</volume>
+<fpage>485</fpage>
+<lpage>486</lpage>
+<pub-id pub-id-type="doi">10.1016/j.devcel.2009.04.001</pub-id>
+<pub-id pub-id-type="pmid">19386255</pub-id></element-citation></ref><ref id="B30-viruses-05-01787"><label>30.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Glickman</surname><given-names>M.H.</given-names></name><name><surname>Ciechanover</surname><given-names>A.</given-names></name></person-group>
+<article-title>The ubiquitin-proteasome proteolytic pathway: Destruction for the sake of construction</article-title>
+<source>Physiol. Rev.</source>
+<year>2002</year>
+<volume>82</volume>
+<fpage>373</fpage>
+<lpage>428</lpage>
+<pub-id pub-id-type="pmid">11917093</pub-id></element-citation></ref><ref id="B31-viruses-05-01787"><label>31.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Xu</surname><given-names>P.</given-names></name><name><surname>Duong</surname><given-names>D.M.</given-names></name><name><surname>Seyfried</surname><given-names>N.T.</given-names></name><name><surname>Cheng</surname><given-names>D.</given-names></name><name><surname>Xie</surname><given-names>Y.</given-names></name><name><surname>Robert</surname><given-names>J.</given-names></name><name><surname>Rush</surname><given-names>J.</given-names></name><name><surname>Hochstrasser</surname><given-names>M.</given-names></name><name><surname>Finley</surname><given-names>D.</given-names></name><name><surname>Peng</surname><given-names>J.</given-names></name></person-group>
+<article-title>Quantitative proteomics reveals the function of unconventional ubiquitin chains in proteasomal degradation</article-title>
+<source>Cell</source>
+<year>2009</year>
+<volume>137</volume>
+<fpage>133</fpage>
+<lpage>145</lpage>
+<pub-id pub-id-type="doi">10.1016/j.cell.2009.01.041</pub-id>
+<pub-id pub-id-type="pmid">19345192</pub-id></element-citation></ref><ref id="B32-viruses-05-01787"><label>32.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Yamamoto</surname><given-names>S.P.</given-names></name><name><surname>Okawa</surname><given-names>K.</given-names></name><name><surname>Nakano</surname><given-names>T.</given-names></name><name><surname>Sano</surname><given-names>K.</given-names></name><name><surname>Ogawa</surname><given-names>K.</given-names></name><name><surname>Masuda</surname><given-names>T.</given-names></name><name><surname>Morikawa</surname><given-names>Y.</given-names></name><name><surname>Koyanagi</surname><given-names>Y.</given-names></name><name><surname>Suzuki</surname><given-names>Y.</given-names></name></person-group>
+<article-title>Huwe1, a novel cellular interactor of Gag-Pol through integrase binding, negatively influences HIV-1 infectivity</article-title>
+<source>Microbes Infect.</source>
+<year>2011</year>
+<volume>13</volume>
+<fpage>339</fpage>
+<lpage>349</lpage>
+<pub-id pub-id-type="doi">10.1016/j.micinf.2010.12.002</pub-id>
+<pub-id pub-id-type="pmid">21167302</pub-id></element-citation></ref><ref id="B33-viruses-05-01787"><label>33.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Cherepanov</surname><given-names>P.</given-names></name><name><surname>Maertens</surname><given-names>G.</given-names></name><name><surname>Proost</surname><given-names>P.</given-names></name><name><surname>Devreese</surname><given-names>B.</given-names></name><name><surname>Van Beeumen</surname><given-names>J.</given-names></name><name><surname>Engelborghs</surname><given-names>Y.</given-names></name><name><surname>De Clercq</surname><given-names>E.</given-names></name><name><surname>Debyser</surname><given-names>Z.</given-names></name></person-group>
+<article-title>HIV-1 integrase forms stable tetramers and associates with LEDGF/p75 protein in human cells</article-title>
+<source>J. Biol. Chem.</source>
+<year>2003</year>
+<volume>278</volume>
+<fpage>372</fpage>
+<lpage>381</lpage>
+<pub-id pub-id-type="pmid">12407101</pub-id></element-citation></ref><ref id="B34-viruses-05-01787"><label>34.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Yang</surname><given-names>K.</given-names></name><name><surname>Moldovan</surname><given-names>G.L.</given-names></name><name><surname>D'Andrea</surname><given-names>A.D.</given-names></name></person-group>
+<article-title>RAD18-dependent recruitment of SNM1A to DNA repair complexes by a ubiquitin-binding zinc finger</article-title>
+<source>J. Biol. Chem.</source>
+<year>2010</year>
+<volume>285</volume>
+<fpage>19085</fpage>
+<lpage>19091</lpage>
+<pub-id pub-id-type="doi">10.1074/jbc.M109.100032</pub-id>
+<pub-id pub-id-type="pmid">20385554</pub-id></element-citation></ref><ref id="B35-viruses-05-01787"><label>35.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Geng</surname><given-names>L.</given-names></name><name><surname>Huntoon</surname><given-names>C.J.</given-names></name><name><surname>Karnitz</surname><given-names>L.M.</given-names></name></person-group>
+<article-title>RAD18-mediated ubiquitination of PCNA activates the Fanconi anemia DNA repair network</article-title>
+<source>J. Cell Biol.</source>
+<year>2010</year>
+<volume>191</volume>
+<fpage>249</fpage>
+<lpage>257</lpage>
+<pub-id pub-id-type="doi">10.1083/jcb.201005101</pub-id>
+<pub-id pub-id-type="pmid">20937699</pub-id></element-citation></ref><ref id="B36-viruses-05-01787"><label>36.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Tateishi</surname><given-names>S.</given-names></name><name><surname>Sakuraba</surname><given-names>Y.</given-names></name><name><surname>Masuyama</surname><given-names>S.</given-names></name><name><surname>Inoue</surname><given-names>H.</given-names></name><name><surname>Yamaizumi</surname><given-names>M.</given-names></name></person-group>
+<article-title>Dysfunction of human Rad18 results in defective postreplication repair and hypersensitivity to multiple mutagens</article-title>
+<source>Proc. Natl. Acad. Sci. USA</source>
+<year>2000</year>
+<volume>97</volume>
+<fpage>7927</fpage>
+<lpage>7932</lpage>
+<pub-id pub-id-type="doi">10.1073/pnas.97.14.7927</pub-id>
+<pub-id pub-id-type="pmid">10884424</pub-id></element-citation></ref><ref id="B37-viruses-05-01787"><label>37.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Haber</surname><given-names>J.E.</given-names></name><name><surname>Ira</surname><given-names>G.</given-names></name><name><surname>Malkova</surname><given-names>A.</given-names></name><name><surname>Sugawara</surname><given-names>N.</given-names></name></person-group>
+<article-title>Repairing a double-strand chromosome break by homologous recombination: Revisiting Robin Holliday's model</article-title>
+<source>Philos. Trans. R. Soc. Lond. B Biol. Sci.</source>
+<year>2004</year>
+<volume>359</volume>
+<fpage>79</fpage>
+<lpage>86</lpage>
+<pub-id pub-id-type="doi">10.1098/rstb.2003.1367</pub-id>
+<pub-id pub-id-type="pmid">15065659</pub-id></element-citation></ref><ref id="B38-viruses-05-01787"><label>38.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Walker</surname><given-names>J.R.</given-names></name><name><surname>Corpina</surname><given-names>R.A.</given-names></name><name><surname>Goldberg</surname><given-names>J.</given-names></name></person-group>
+<article-title>Structure of the Ku heterodimer bound to DNA and its implications for double-strand break repair</article-title>
+<source>Nature</source>
+<year>2001</year>
+<volume>412</volume>
+<fpage>607</fpage>
+<lpage>614</lpage>
+<pub-id pub-id-type="doi">10.1038/35088000</pub-id>
+<pub-id pub-id-type="pmid">11493912</pub-id></element-citation></ref><ref id="B39-viruses-05-01787"><label>39.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Jeanson</surname><given-names>L.</given-names></name><name><surname>Mouscadet</surname><given-names>J.F.</given-names></name></person-group>
+<article-title>Ku represses the HIV-1 transcription: Identification of a putative Ku binding site homologous to the mouse mammary tumor virus NRE1 sequence in the HIV-1 long terminal repeat</article-title>
+<source>J. Biol. Chem.</source>
+<year>2002</year>
+<volume>277</volume>
+<fpage>4918</fpage>
+<lpage>4924</lpage>
+<pub-id pub-id-type="doi">10.1074/jbc.M110830200</pub-id>
+<pub-id pub-id-type="pmid">11733502</pub-id></element-citation></ref><ref id="B40-viruses-05-01787"><label>40.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Daniel</surname><given-names>R.</given-names></name><name><surname>Katz</surname><given-names>R.A.</given-names></name><name><surname>Skalka</surname><given-names>A.M.</given-names></name></person-group>
+<article-title>A role for DNA-PK in retroviral DNA integration</article-title>
+<source>Science</source>
+<year>1999</year>
+<volume>284</volume>
+<fpage>644</fpage>
+<lpage>647</lpage>
+<pub-id pub-id-type="doi">10.1126/science.284.5414.644</pub-id>
+<pub-id pub-id-type="pmid">10213687</pub-id></element-citation></ref><ref id="B41-viruses-05-01787"><label>41.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Malim</surname><given-names>M.H.</given-names></name><name><surname>Emerman</surname><given-names>M.</given-names></name></person-group>
+<article-title>HIV-1 Accessory Proteins Ensuring Viral Survival in a Hostile Environment</article-title>
+<source>Cell Host Microbe</source>
+<year>2008</year>
+<volume>3</volume>
+<fpage>388</fpage>
+<lpage>398</lpage>
+<pub-id pub-id-type="doi">10.1016/j.chom.2008.04.008</pub-id>
+<pub-id pub-id-type="pmid">18541215</pub-id></element-citation></ref><ref id="B42-viruses-05-01787"><label>42.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Amsel</surname><given-names>A.D.</given-names></name><name><surname>Rathaus</surname><given-names>M.</given-names></name><name><surname>Kronman</surname><given-names>N.</given-names></name><name><surname>Cohen</surname><given-names>H.Y.</given-names></name></person-group>
+<article-title>Regulation of the proapoptotic factor Bax by Ku70-dependent deubiquitylation</article-title>
+<source>Proc. Natl. Acad. Sci. USA</source>
+<year>2008</year>
+<volume>105</volume>
+<fpage>5117</fpage>
+<lpage>5122</lpage>
+<pub-id pub-id-type="doi">10.1073/pnas.0706700105</pub-id>
+<pub-id pub-id-type="pmid">18362350</pub-id></element-citation></ref><ref id="B43-viruses-05-01787"><label>43.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Ott</surname><given-names>D.E.</given-names></name><name><surname>Coren</surname><given-names>L.V.</given-names></name><name><surname>Copeland</surname><given-names>T.D.</given-names></name><name><surname>Kane</surname><given-names>B.P.</given-names></name><name><surname>Johnson</surname><given-names>D.G.</given-names></name><name><surname>Sowder</surname><given-names>R.C.</given-names><suffix>2nd</suffix></name><name><surname>Yoshinaka</surname><given-names>Y.</given-names></name><name><surname>Oroszlan</surname><given-names>S.</given-names></name><name><surname>Arthur</surname><given-names>L.O.</given-names></name><name><surname>Henderson</surname><given-names>L.E.</given-names></name></person-group>
+<article-title>Ubiquitin is covalently attached to the p6Gag proteins of human immunodeficiency virus type 1 and simian immunodeficiency virus and to the p12Gag protein of Moloney murine leukemia virus</article-title>
+<source>J. Virol.</source>
+<year>1998</year>
+<volume>72</volume>
+<fpage>2962</fpage>
+<lpage>2968</lpage>
+<pub-id pub-id-type="pmid">9525617</pub-id></element-citation></ref><ref id="B44-viruses-05-01787"><label>44.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Ott</surname><given-names>D.E.</given-names></name><name><surname>Coren</surname><given-names>L.V.</given-names></name><name><surname>Chertova</surname><given-names>E.N.</given-names></name><name><surname>Gagliardi</surname><given-names>T.D.</given-names></name><name><surname>Schubert</surname><given-names>U.</given-names></name></person-group>
+<article-title>Ubiquitination of HIV-1 and MuLV Gag</article-title>
+<source>Virology</source>
+<year>2000</year>
+<volume>278</volume>
+<fpage>111</fpage>
+<lpage>121</lpage>
+<pub-id pub-id-type="doi">10.1006/viro.2000.0648</pub-id>
+<pub-id pub-id-type="pmid">11112487</pub-id></element-citation></ref><ref id="B45-viruses-05-01787"><label>45.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Devroe</surname><given-names>E.</given-names></name><name><surname>Engelman</surname><given-names>A.</given-names></name><name><surname>Silver</surname><given-names>P.A.</given-names></name></person-group>
+<article-title>Intracellular transport of human immunodeficiency virus type 1 integrase</article-title>
+<source>J. Cell Sci.</source>
+<year>2003</year>
+<volume>116</volume>
+<fpage>4401</fpage>
+<lpage>4408</lpage>
+<pub-id pub-id-type="doi">10.1242/jcs.00747</pub-id>
+<pub-id pub-id-type="pmid">13130095</pub-id></element-citation></ref><ref id="B46-viruses-05-01787"><label>46.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Miller</surname><given-names>M.D.</given-names></name><name><surname>Farnet</surname><given-names>C.M.</given-names></name><name><surname>Bushman</surname><given-names>F.D.</given-names></name></person-group>
+<article-title>Human immunodeficiency virus type 1 preintegration complexes: Studies of organization and composition</article-title>
+<source>J. Virol.</source>
+<year>1997</year>
+<volume>71</volume>
+<fpage>5382</fpage>
+<lpage>5390</lpage>
+<pub-id pub-id-type="pmid">9188609</pub-id></element-citation></ref><ref id="B47-viruses-05-01787"><label>47.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Seeler</surname><given-names>J.S.</given-names></name><name><surname>Dejean</surname><given-names>A.</given-names></name></person-group>
+<article-title>Nuclear and unclear functions of SUMO</article-title>
+<source>Nat. Rev. Mol. Cell Biol.</source>
+<year>2003</year>
+<volume>4</volume>
+<fpage>690</fpage>
+<lpage>699</lpage>
+<pub-id pub-id-type="doi">10.1038/nrm1200</pub-id>
+<pub-id pub-id-type="pmid">14506472</pub-id></element-citation></ref><ref id="B48-viruses-05-01787"><label>48.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Geiss-Friedlander</surname><given-names>R.</given-names></name><name><surname>Melchior</surname><given-names>F.</given-names></name></person-group>
+<article-title>Concepts in sumoylation: A decade on</article-title>
+<source>Nat. Rev. Mol. Cell Biol.</source>
+<year>2007</year>
+<volume>8</volume>
+<fpage>947</fpage>
+<lpage>956</lpage>
+<pub-id pub-id-type="doi">10.1038/nrm2293</pub-id>
+<pub-id pub-id-type="pmid">18000527</pub-id></element-citation></ref><ref id="B49-viruses-05-01787"><label>49.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Guo</surname><given-names>D.</given-names></name><name><surname>Li</surname><given-names>M.</given-names></name><name><surname>Zhang</surname><given-names>Y.</given-names></name><name><surname>Yang</surname><given-names>P.</given-names></name><name><surname>Eckenrode</surname><given-names>S.</given-names></name><name><surname>Hopkins</surname><given-names>D.</given-names></name><name><surname>Zheng</surname><given-names>W.</given-names></name><name><surname>Purohit</surname><given-names>S.</given-names></name><name><surname>Podolsky</surname><given-names>R.H.</given-names></name><name><surname>Muir</surname><given-names>A.</given-names></name><etal/></person-group>
+<article-title>A functional variant of SUMO4, a new I kappa B alpha modifier, is associated with type 1 diabetes</article-title>
+<source>Nat. Genet.</source>
+<year>2004</year>
+<volume>36</volume>
+<fpage>837</fpage>
+<lpage>841</lpage>
+<pub-id pub-id-type="doi">10.1038/ng1391</pub-id>
+<pub-id pub-id-type="pmid">15247916</pub-id></element-citation></ref><ref id="B50-viruses-05-01787"><label>50.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Arriagada</surname><given-names>G.</given-names></name><name><surname>Muntean</surname><given-names>L.N.</given-names></name><name><surname>Goff</surname><given-names>S.P.</given-names></name></person-group>
+<article-title>SUMO-interacting motifs of human TRIM5alpha are important for antiviral activity</article-title>
+<source>PLoS Pathog.</source>
+<year>2011</year>
+<volume>7</volume>
+<fpage>e1002019</fpage>
+<pub-id pub-id-type="doi">10.1371/journal.ppat.1002019</pub-id>
+<pub-id pub-id-type="pmid">21490953</pub-id></element-citation></ref><ref id="B51-viruses-05-01787"><label>51.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Werner</surname><given-names>A.</given-names></name><name><surname>Flotho</surname><given-names>A.</given-names></name><name><surname>Melchior</surname><given-names>F.</given-names></name></person-group>
+<article-title>The RanBP2/RanGAP1*SUMO1/Ubc9 complex is a multisubunit SUMO E3 ligase</article-title>
+<source>Mol. Cell</source>
+<year>2012</year>
+<volume>46</volume>
+<fpage>287</fpage>
+<lpage>298</lpage>
+<pub-id pub-id-type="doi">10.1016/j.molcel.2012.02.017</pub-id>
+<pub-id pub-id-type="pmid">22464730</pub-id></element-citation></ref><ref id="B52-viruses-05-01787"><label>52.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Li</surname><given-names>Z.</given-names></name><name><surname>Wu</surname><given-names>S.</given-names></name><name><surname>Wang</surname><given-names>J.</given-names></name><name><surname>Li</surname><given-names>W.</given-names></name><name><surname>Lin</surname><given-names>Y.</given-names></name><name><surname>Ji</surname><given-names>C.</given-names></name><name><surname>Xue</surname><given-names>J.</given-names></name><name><surname>Chen</surname><given-names>J.</given-names></name></person-group>
+<article-title>Evaluation of the interactions of HIV-1 integrase with small ubiquitin-like modifiers and their conjugation enzyme Ubc9</article-title>
+<source>Int. J. Mol. Med.</source>
+<year>2012</year>
+<volume>30</volume>
+<fpage>1053</fpage>
+<lpage>1060</lpage>
+<pub-id pub-id-type="pmid">22895527</pub-id></element-citation></ref><ref id="B53-viruses-05-01787"><label>53.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Bueno</surname><given-names>M.T.</given-names></name><name><surname>Garcia-Rivera</surname><given-names>J.A.</given-names></name><name><surname>Kugelman</surname><given-names>J.R.</given-names></name><name><surname>Morales</surname><given-names>E.</given-names></name><name><surname>Rosas-Acosta</surname><given-names>G.</given-names></name><name><surname>Llano</surname><given-names>M.</given-names></name></person-group>
+<article-title>SUMOylation of the lens epithelium-derived growth factor/p75 attenuates its transcriptional activity on the heat shock protein 27 promoter</article-title>
+<source>J. Mol. Biol.</source>
+<year>2010</year>
+<volume>399</volume>
+<fpage>221</fpage>
+<lpage>239</lpage>
+<pub-id pub-id-type="doi">10.1016/j.jmb.2010.03.063</pub-id>
+<pub-id pub-id-type="pmid">20382164</pub-id></element-citation></ref><ref id="B54-viruses-05-01787"><label>54.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Girdwood</surname><given-names>D.</given-names></name><name><surname>Bumpass</surname><given-names>D.</given-names></name><name><surname>Vaughan</surname><given-names>O.A.</given-names></name><name><surname>Thain</surname><given-names>A.</given-names></name><name><surname>Anderson</surname><given-names>L.A.</given-names></name><name><surname>Snowden</surname><given-names>A.W.</given-names></name><name><surname>Garcia-Wilson</surname><given-names>E.</given-names></name><name><surname>Perkins</surname><given-names>N.D.</given-names></name><name><surname>Hay</surname><given-names>R.T.</given-names></name></person-group>
+<article-title>P300 transcriptional repression is mediated by SUMO modification</article-title>
+<source>Mol. Cell</source>
+<year>2003</year>
+<volume>11</volume>
+<fpage>1043</fpage>
+<lpage>1054</lpage>
+<pub-id pub-id-type="doi">10.1016/S1097-2765(03)00141-2</pub-id>
+<pub-id pub-id-type="pmid">12718889</pub-id></element-citation></ref><ref id="B55-viruses-05-01787"><label>55.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Yurchenko</surname><given-names>V.</given-names></name><name><surname>Xue</surname><given-names>Z.</given-names></name><name><surname>Gama</surname><given-names>V.</given-names></name><name><surname>Matsuyama</surname><given-names>S.</given-names></name><name><surname>Sadofsky</surname><given-names>M.J.</given-names></name></person-group>
+<article-title>Ku70 is stabilized by increased cellular SUMO</article-title>
+<source>Biochem. Biophys. Res. Commun.</source>
+<year>2008</year>
+<volume>366</volume>
+<fpage>263</fpage>
+<lpage>268</lpage>
+<pub-id pub-id-type="doi">10.1016/j.bbrc.2007.11.136</pub-id>
+<pub-id pub-id-type="pmid">18062920</pub-id></element-citation></ref><ref id="B56-viruses-05-01787"><label>56.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Hecker</surname><given-names>C.M.</given-names></name><name><surname>Rabiller</surname><given-names>M.</given-names></name><name><surname>Haglund</surname><given-names>K.</given-names></name><name><surname>Bayer</surname><given-names>P.</given-names></name><name><surname>Dikic</surname><given-names>I.</given-names></name></person-group>
+<article-title>Specification of SUMO1- and SUMO2-interacting motifs</article-title>
+<source>J. Biol. Chem.</source>
+<year>2006</year>
+<volume>281</volume>
+<fpage>16117</fpage>
+<lpage>16127</lpage>
+<pub-id pub-id-type="doi">10.1074/jbc.M512757200</pub-id>
+<pub-id pub-id-type="pmid">16524884</pub-id></element-citation></ref><ref id="B57-viruses-05-01787"><label>57.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Song</surname><given-names>J.</given-names></name><name><surname>Durrin</surname><given-names>L.K.</given-names></name><name><surname>Wilkinson</surname><given-names>T.A.</given-names></name><name><surname>Krontiris</surname><given-names>T.G.</given-names></name><name><surname>Chen</surname><given-names>Y.</given-names></name></person-group>
+<article-title>Identification of a SUMO-binding motif that recognizes SUMO-modified proteins</article-title>
+<source>Proc. Natl. Acad. Sci. USA</source>
+<year>2004</year>
+<volume>101</volume>
+<fpage>14373</fpage>
+<lpage>14378</lpage>
+<pub-id pub-id-type="doi">10.1073/pnas.0403498101</pub-id>
+<pub-id pub-id-type="pmid">15388847</pub-id></element-citation></ref><ref id="B58-viruses-05-01787"><label>58.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Song</surname><given-names>J.</given-names></name><name><surname>Zhang</surname><given-names>Z.</given-names></name><name><surname>Hu</surname><given-names>W.</given-names></name><name><surname>Chen</surname><given-names>Y.</given-names></name></person-group>
+<article-title>Small ubiquitin-like modifier (SUMO) recognition of a SUMO binding motif: A reversal of the bound orientation</article-title>
+<source>J. Biol. Chem.</source>
+<year>2005</year>
+<volume>280</volume>
+<fpage>40122</fpage>
+<lpage>40129</lpage>
+<pub-id pub-id-type="doi">10.1074/jbc.M507059200</pub-id>
+<pub-id pub-id-type="pmid">16204249</pub-id></element-citation></ref><ref id="B59-viruses-05-01787"><label>59.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Polevoda</surname><given-names>B.</given-names></name><name><surname>Sherman</surname><given-names>F.</given-names></name></person-group>
+<article-title>The diversity of acetylated proteins</article-title>
+<source>Genome Biol.</source>
+<year>2002</year>
+<volume>3</volume>
+<fpage>reviews0006</fpage>
+<pub-id pub-id-type="pmid">12049668</pub-id></element-citation></ref><ref id="B60-viruses-05-01787"><label>60.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kouzarides</surname><given-names>T.</given-names></name></person-group>
+<article-title>Acetylation: A regulatory modification to rival phosphorylation?</article-title>
+<source>EMBO J.</source>
+<year>2000</year>
+<volume>19</volume>
+<fpage>1176</fpage>
+<lpage>1179</lpage>
+<pub-id pub-id-type="doi">10.1093/emboj/19.6.1176</pub-id>
+<pub-id pub-id-type="pmid">10716917</pub-id></element-citation></ref><ref id="B61-viruses-05-01787"><label>61.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Muller</surname><given-names>S.</given-names></name><name><surname>Filippakopoulos</surname><given-names>P.</given-names></name><name><surname>Knapp</surname><given-names>S.</given-names></name></person-group>
+<article-title>Bromodomains as therapeutic targets</article-title>
+<source>Expert Rev. Mol. Med.</source>
+<year>2011</year>
+<volume>13</volume>
+<fpage>e29</fpage>
+<pub-id pub-id-type="doi">10.1017/S1462399411001992</pub-id>
+<pub-id pub-id-type="pmid">21933453</pub-id></element-citation></ref><ref id="B62-viruses-05-01787"><label>62.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Di Fenza</surname><given-names>A.</given-names></name><name><surname>Rocchia</surname><given-names>W.</given-names></name><name><surname>Tozzini</surname><given-names>V.</given-names></name></person-group>
+<article-title>Complexes of HIV-1 integrase with HAT proteins: Multiscale models, dynamics, and hypotheses on allosteric sites of inhibition</article-title>
+<source>Proteins</source>
+<year>2009</year>
+<volume>76</volume>
+<fpage>946</fpage>
+<lpage>958</lpage>
+<pub-id pub-id-type="doi">10.1002/prot.22399</pub-id>
+<pub-id pub-id-type="pmid">19306343</pub-id></element-citation></ref><ref id="B63-viruses-05-01787"><label>63.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Lutzke</surname><given-names>R.A.</given-names></name><name><surname>Vink</surname><given-names>C.</given-names></name><name><surname>Plasterk</surname><given-names>R.H.</given-names></name></person-group>
+<article-title>Characterization of the minimal DNA-binding domain of the HIV integrase protein</article-title>
+<source>Nucleic Acids Res.</source>
+<year>1994</year>
+<volume>22</volume>
+<fpage>4125</fpage>
+<lpage>4131</lpage>
+<pub-id pub-id-type="doi">10.1093/nar/22.20.4125</pub-id>
+<pub-id pub-id-type="pmid">7937137</pub-id></element-citation></ref><ref id="B64-viruses-05-01787"><label>64.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Legube</surname><given-names>G.</given-names></name><name><surname>Trouche</surname><given-names>D.</given-names></name></person-group>
+<article-title>Regulating histone acetyltransferases and deacetylases</article-title>
+<source>EMBO Rep.</source>
+<year>2003</year>
+<volume>4</volume>
+<fpage>944</fpage>
+<lpage>947</lpage>
+<pub-id pub-id-type="doi">10.1038/sj.embor.embor941</pub-id>
+<pub-id pub-id-type="pmid">14528264</pub-id></element-citation></ref><ref id="B65-viruses-05-01787"><label>65.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Topper</surname><given-names>M.</given-names></name><name><surname>Luo</surname><given-names>Y.</given-names></name><name><surname>Zhadina</surname><given-names>M.</given-names></name><name><surname>Mohammed</surname><given-names>K.</given-names></name><name><surname>Smith</surname><given-names>L.</given-names></name><name><surname>Muesing</surname><given-names>M.A.</given-names></name></person-group>
+<article-title>Posttranslational acetylation of the human immunodeficiency virus type 1 integrase carboxyl-terminal domain is dispensable for viral replication</article-title>
+<source>J. Virol.</source>
+<year>2007</year>
+<volume>81</volume>
+<fpage>3012</fpage>
+<lpage>3017</lpage>
+<pub-id pub-id-type="doi">10.1128/JVI.02257-06</pub-id>
+<pub-id pub-id-type="pmid">17182677</pub-id></element-citation></ref><ref id="B66-viruses-05-01787"><label>66.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Allouch</surname><given-names>A.</given-names></name><name><surname>Cereseto</surname><given-names>A.</given-names></name></person-group>
+<article-title>Identification of cellular factors binding to acetylated HIV-1 integrase</article-title>
+<source>Amino Acids</source>
+<year>2011</year>
+<volume>41</volume>
+<fpage>1137</fpage>
+<lpage>1145</lpage>
+<pub-id pub-id-type="doi">10.1007/s00726-009-0444-3</pub-id>
+<pub-id pub-id-type="pmid">20016921</pub-id></element-citation></ref><ref id="B67-viruses-05-01787"><label>67.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Ubersax</surname><given-names>J.A.</given-names></name><name><surname>Ferrell</surname><given-names>J.E.</given-names><suffix>Jr.</suffix></name></person-group>
+<article-title>Mechanisms of specificity in protein phosphorylation</article-title>
+<source>Nat. Rev. Mol. Cell Biol.</source>
+<year>2007</year>
+<volume>8</volume>
+<fpage>530</fpage>
+<lpage>541</lpage>
+<pub-id pub-id-type="doi">10.1038/nrm2203</pub-id>
+<pub-id pub-id-type="pmid">17585314</pub-id></element-citation></ref><ref id="B68-viruses-05-01787"><label>68.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kramer</surname><given-names>O.H.</given-names></name><name><surname>Knauer</surname><given-names>S.K.</given-names></name><name><surname>Greiner</surname><given-names>G.</given-names></name><name><surname>Jandt</surname><given-names>E.</given-names></name><name><surname>Reichardt</surname><given-names>S.</given-names></name><name><surname>Guhrs</surname><given-names>K.H.</given-names></name><name><surname>Stauber</surname><given-names>R.H.</given-names></name><name><surname>Bohmer</surname><given-names>F.D.</given-names></name><name><surname>Heinzel</surname><given-names>T.</given-names></name></person-group>
+<article-title>A phosphorylation-acetylation switch regulates STAT1 signaling</article-title>
+<source>Genes Dev.</source>
+<year>2009</year>
+<volume>23</volume>
+<fpage>223</fpage>
+<lpage>235</lpage>
+<pub-id pub-id-type="doi">10.1101/gad.479209</pub-id>
+<pub-id pub-id-type="pmid">19171783</pub-id></element-citation></ref><ref id="B69-viruses-05-01787"><label>69.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Guo</surname><given-names>D.</given-names></name><name><surname>Hazbun</surname><given-names>T.R.</given-names></name><name><surname>Xu</surname><given-names>X.J.</given-names></name><name><surname>Ng</surname><given-names>S.L.</given-names></name><name><surname>Fields</surname><given-names>S.</given-names></name><name><surname>Kuo</surname><given-names>M.H.</given-names></name></person-group>
+<article-title>A tethered catalysis, two-hybrid system to identify protein-protein interactions requiring post-translational modifications</article-title>
+<source>Nat. Biotechnol.</source>
+<year>2004</year>
+<volume>22</volume>
+<fpage>888</fpage>
+<lpage>892</lpage>
+<pub-id pub-id-type="doi">10.1038/nbt985</pub-id>
+<pub-id pub-id-type="pmid">15208639</pub-id></element-citation></ref><ref id="B70-viruses-05-01787"><label>70.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Jensen</surname><given-names>O.N.</given-names></name></person-group>
+<article-title>Interpreting the protein language using proteomics</article-title>
+<source>Nat. Rev. Mol. Cell Biol.</source>
+<year>2006</year>
+<volume>7</volume>
+<fpage>391</fpage>
+<lpage>403</lpage>
+<pub-id pub-id-type="doi">10.1038/nrm1939</pub-id>
+<pub-id pub-id-type="pmid">16723975</pub-id></element-citation></ref></ref-list></back></article>

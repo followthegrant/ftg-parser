@@ -1,0 +1,198 @@
+ftg:
+  query:
+    entities:
+      ## ARTICLE METADATA
+      article:
+        schema: Article
+        id_column: article_id
+        properties:
+          title:
+            column: article_title
+            required: true
+          summary:
+            column: article_abstract
+          publisher:
+            column: journal_name
+          publishedAt:
+            column: article_published_at
+          author:
+            column: article_authors
+            split: ","
+          keywords:
+            column: article_keywords
+            split: ","
+          indexText:
+            column: article_index_text
+      ids:
+        schema: Note
+        id_column: articleidentifier_id
+        properties:
+          name:
+            column: articleidentifier_label
+            required: true
+          description:
+            column: articleidentifier_value
+            required: true
+          entity:
+            column: article_id
+            required: true
+      publisher:
+        schema: LegalEntity
+        id_column: journal_id
+        properties:
+          name:
+            column: journal_name
+            required: true
+      articlepublished:
+        schema: Documentation
+        key_literal: journal-article
+        keys:
+          - journal_id
+          - article_id
+        properties:
+          entity:
+            column: journal_id
+            required: true
+          document:
+            column: article_id
+            required: true
+          role:
+            literal: "publisher"
+          date:
+            column: article_published_at
+      ## ARTICLE AUTHORS
+      author:
+        schema: Person
+        id_column: author_id
+        properties:
+          name:
+            column: author_name
+            required: true
+          firstName:
+            column: author_first_name
+          middleName:
+            column: author_middle_names
+            split: ","
+          lastName:
+            column: author_last_name
+          country:
+            column: author_countries
+            split: ","
+      authorship:
+        schema: Documentation
+        key_literal: article-author
+        keys:
+          - article_id
+          - author_id
+        properties:
+          entity:
+            column: author_id
+            required: true
+          document:
+            column: article_id
+            required: true
+          date:
+            column: article_published_at
+          role:
+            literal: "author"
+          publisher:
+            column: journal_name
+      institution:
+        schema: Organization
+        id_column: institution_id
+        properties:
+          name:
+            column: institution_name
+            required: true
+          country:
+            column: institution_country
+      affiliation:
+        schema: Membership
+        key_literal: institution-author
+        keys:
+          - institution_id
+          - author_id
+        properties:
+          member:
+            column: author_id
+            required: true
+          organization:
+            column: institution_id
+            required: true
+          date:
+            column: article_published_at
+          role:
+            literal: "affiliated with"
+          publisher:
+            column: journal_name
+      ## COI STATEMENT
+      coi_statement:
+        schema: PlainText
+        id_column: coi_id
+        properties:
+          title:
+            column: coi_title
+            required: true
+          bodyText:
+            column: coi_text
+            required: true
+          publisher:
+            column: coi_journal_name
+          date:
+            column: coi_published_at
+          parent:
+            column: coi_article_id
+            required: true
+          author:
+            columns:
+              - coi_authors
+              - coi_author_name
+            split: ","
+          notes:
+            column: coi_flag
+          indexText:
+            column: coi_index_text
+      coi_reference:
+        schema: Documentation
+        key_literal: article-coistatement
+        keys:
+          - coi_article_id
+          - coi_id
+        properties:
+          document:
+            column: coi_article_id
+            required: true
+          entity:
+            column: coi_id
+            required: true
+          role:
+            column: coi_role
+          summary:
+            column: coi_text
+            required: true
+          date:
+            column: coi_published_at
+          publisher:
+            column: coi_journal_name
+      coi_authorship:
+        schema: Documentation
+        key_literal: author-coistatement
+        keys:
+          - coi_author_id
+          - coi_id
+        properties:
+          document:
+            column: coi_id
+            required: true
+          entity:
+            column: coi_author_id
+            required: true
+          summary:
+            column: coi_text
+            required: true
+          role:
+            column: coi_role
+          date:
+            column: coi_published_at
+          publisher:
+            column: coi_journal_name

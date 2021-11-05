@@ -1,0 +1,119 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.0 20120330//EN" "JATS-archivearticle1.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="other"><?properties open_access?><front><journal-meta><journal-id journal-id-type="nlm-ta">Global Spine J</journal-id><journal-id journal-id-type="iso-abbrev">Global Spine J</journal-id><journal-id journal-id-type="publisher-id">GSJ</journal-id><journal-id journal-id-type="hwp">spgsj</journal-id><journal-title-group><journal-title>Global Spine Journal</journal-title></journal-title-group><issn pub-type="ppub">2192-5682</issn><issn pub-type="epub">2192-5690</issn><publisher><publisher-name>SAGE Publications</publisher-name><publisher-loc>Sage CA: Los Angeles, CA</publisher-loc></publisher></journal-meta><article-meta><article-id pub-id-type="pmid">30560043</article-id><article-id pub-id-type="pmc">6293424</article-id><article-id pub-id-type="doi">10.1177/2192568218811922</article-id><article-id pub-id-type="publisher-id">10.1177_2192568218811922</article-id><article-categories><subj-group subj-group-type="heading"><subject>EBSJ Special Section: Science-in-Spine</subject></subj-group></article-categories><title-group><article-title>The Sin of Missing Data: Is All Forgiven by Way of
+Imputation?</article-title></title-group><contrib-group><contrib contrib-type="author"><name><surname>Dettori</surname><given-names>Joseph R.</given-names></name><degrees>PhD</degrees><xref ref-type="aff" rid="aff1-2192568218811922">1</xref><xref ref-type="corresp" rid="corresp1-2192568218811922"/></contrib><contrib contrib-type="author"><name><surname>Norvell</surname><given-names>Daniel C.</given-names></name><degrees>PhD</degrees><xref ref-type="aff" rid="aff1-2192568218811922">1</xref></contrib><contrib contrib-type="author"><name><surname>Chapman</surname><given-names>Jens R.</given-names></name><degrees>MD</degrees><xref ref-type="aff" rid="aff2-2192568218811922">2</xref></contrib></contrib-group><aff id="aff1-2192568218811922">
+<label>1</label>Spectrum Research, Inc, Steilacoom, WA, USA</aff><aff id="aff2-2192568218811922">
+<label>2</label>Swedish Neuroscience Institute, Swedish Medical Center, Seattle, WA,
+USA</aff><author-notes><corresp id="corresp1-2192568218811922">Joseph R. Dettori, Spectrum Research, Inc, Box
+88998, Steilacoom, WA 98388, USA. Email: <email>joe@specri.com</email></corresp></author-notes><pub-date pub-type="epub"><day>03</day><month>12</month><year>2018</year></pub-date><pub-date pub-type="ppub"><month>12</month><year>2018</year></pub-date><volume>8</volume><issue>8</issue><fpage>892</fpage><lpage>894</lpage><permissions><copyright-statement>&#x000a9; The Author(s) 2018</copyright-statement><copyright-year>2018</copyright-year><copyright-holder content-type="sage">AO Spine, unless otherwise noted. Manuscript content
+on this site is licensed under Creative Commons Licenses</copyright-holder><license license-type="creative-commons" xlink:href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><license-p>This article is distributed under the terms of the Creative Commons
+Attribution-NonCommercial-NoDerivs 4.0 License (<ext-link ext-link-type="uri" xlink:href="http://www.creativecommons.org/licenses/by-nc-nd/4.0/">http://www.creativecommons.org/licenses/by-nc-nd/4.0/</ext-link>) which permits
+non-commercial use, reproduction and distribution of the work as published without
+adaptation or alteration, without further permission provided the original work is
+attributed as specified on the SAGE and Open Access pages (<ext-link ext-link-type="uri" xlink:href="https://us.sagepub.com/en-us/nam/open-access-at-sage">https://us.sagepub.com/en-us/nam/open-access-at-sage</ext-link>).</license-p></license></permissions></article-meta></front><body><p>
+<disp-quote><p>&#x02026;in this world nothing can be said to be certain, except death and taxes.</p><attrib>&#x02014;Benjamin Franklin</attrib></disp-quote>
+</p><p>
+<disp-quote><p>In clinical research, nothing can be said to be certain, except measurement error and
+<italic>missing data</italic>.</p><attrib>&#x02014;various clinical researchers</attrib></disp-quote>
+</p><p>Missing data can seriously compromise inferences from clinical research studies. While great
+effort should be undertaken to limit the likelihood of missing data through careful study
+design and conduct, it is inevitable that some values for various reasons will be missing.
+Missing data are problematic for the data analyst because most statistical procedures require
+a value for each variable. Therefore, when a dataset is not complete, the analyst needs to
+decide on how to best deal with the data.</p><p>The most common method used for handling missing data is complete case analysis. In complete
+case analysis, one analyzes only the cases with complete data. Individuals with missing data
+on any of the included variables are dropped from the analysis. The advantages of this method
+are its simplicity, its ease of use, and that it is the default for most statistical programs.
+However, it has its disadvantages, which include lower sample size leading to reduced study
+power, and potentially biased results, depending on the reason for the missing data. One
+alternative method for handling missing data is to substitute each missing value with a
+reasonable guess, and then carry out the analysis as if there were no missing values. This
+method is termed imputation and is the subject of this article.</p><sec id="section1-2192568218811922"><title>Single and Multiple Imputation</title><sec id="section2-2192568218811922"><title>Single Imputation</title><p>In single imputation, a replacement value is determined by a certain rule. There are many
+forms of single imputation. Some common examples include the following:<list list-type="bullet"><list-item><p>Last observation carried forward. In this form of simple imputation, a
+participant&#x02019;s missing values are replaced by the study participant&#x02019;s last observed
+value.</p></list-item><list-item><p>Worst observation carried forward. This form of simple imputation provides a
+conservative estimate by replacing the participant&#x02019;s missing values with the worst
+observed value.</p></list-item><list-item><p>Simple mean imputation. Missing values are replaced with the mean of the nonmissing
+values for that variable.</p></list-item></list></p><p>In general, single imputation methods are not recommended as they depend on assumptions
+that are often unrealistic and frequently result in an underestimation of the variability
+and a spuriously low <italic>P</italic> value.<sup><xref rid="bibr1-2192568218811922" ref-type="bibr">1</xref>,<xref rid="bibr2-2192568218811922" ref-type="bibr">2</xref></sup></p></sec><sec id="section3-2192568218811922"><title>Multiple Imputation</title><p>Multiple imputation is a statistical technique that narrows the uncertainty around
+missing values by calculating several different options or imputations. It is
+characterized by 3 steps.<list list-type="simple"><list-item><p><italic>Step 1</italic>. Create multiple copies of the dataset where the missing
+values are replaced by imputed values. The imputed values are derived statistically
+from the observed data, those values not missing. Each imputed dataset is
+different.</p></list-item><list-item><p><italic>Step 2</italic>. Analyze each of the completed imputed datasets. This step
+results in a separate result for each dataset.</p></list-item><list-item><p><italic>Step 3</italic>. Pool the results from step 2 into a final result.</p></list-item></list></p><p>The use of multiple imputation in the medical literature has become more popular of late,
+in part because it is readily available in standard statistical software. A search on the
+term in PubMed from 2008 through 2017 reveals a steady increase in the number of citations
+from 76 in 2008 to 310 in 2017 (<xref ref-type="fig" rid="fig1-2192568218811922">Figure
+1</xref>). But is multiple imputation the solution for missing data? The short answer
+is, &#x0201c;it depends on the reason why the data are missing.&#x0201d;</p><fig id="fig1-2192568218811922" orientation="portrait" position="float"><label>Figure 1.</label><caption><p>Annual number of citations in PubMed with &#x0201c;multiple imputation&#x0201d; in the title or
+abstract over a 10-year period.</p></caption><graphic xlink:href="10.1177_2192568218811922-fig1"/></fig></sec></sec><sec id="section4-2192568218811922"><title>Missing Data Mechanisms</title><p>Missing data can be placed into 1 of 3 categories based on the process that generated the
+missing data, which is called the missing data mechanism. These categories are important to
+understand because the problems caused by missing data and the solutions to these problems
+are different for the 3 categories. Comprehending the differences among the categories is
+complicated by the fact that 2 of these mechanisms have confusing names: <italic>missing
+completely at random</italic> (MCAR) and <italic>missing at random</italic> (MAR).</p><sec id="section5-2192568218811922"><title>Missing Completely at Random</title><p>Data is said to be MCAR if the missing data value is unrelated to any observed or missing
+data. In this case, the tendency for the data point to be missing is completely random. In
+other words, there is no systematic reason that makes some data more likely to be missing
+than others. For example, missing data as a result of a laboratory technician dropping a
+blood sample, or data missing from surveys lost in the mail likely occur randomly. This
+assumption can be tested by separating the missing and the complete cases and examine the
+group characteristics. If characteristics are not similar for both groups, the MCAR
+assumption does not hold. Unfortunately, most missing data are not MCAR.</p></sec><sec id="section6-2192568218811922"><title>Missing at Random</title><p>Data is considered MAR if the reason for the missing data is unrelated to the missing
+values but are related to some of the observed data. The tendency for the data point to be
+missing under this assumption is systematically associated with the observed data, but not
+the missing data. For example, if men are more likely to correctly report weight than
+women, the weight variable is considered MAR.</p></sec><sec id="section7-2192568218811922"><title>Missing Not at Random</title><p>In data missing not at random (MNAR), missing values <italic>do</italic> depend on
+unobserved values. Examples include people who are overweight and, as a result, less
+likely to report their weight, or patients with more comorbidities who tend to drop out of
+a study more readily than those with less comorbidities.</p></sec></sec><sec id="section8-2192568218811922"><title>When Is It Appropriate to Perform Multiple Impution?<sup><xref rid="bibr1-2192568218811922" ref-type="bibr">1</xref><xref rid="bibr2-2192568218811922" ref-type="bibr"/>-<xref rid="bibr3-2192568218811922" ref-type="bibr">3</xref></sup>
+</title><p>Multiple imputation <italic>is not appropriate</italic> when:<list list-type="bullet"><list-item><p>The proportion of missing data is small (&#x02264;5% as a general rule). In this case, the
+potential impact of the missing data is likely small.</p></list-item><list-item><p>Only the outcome variable has missing values, and not covariate (independent)
+variables.</p></list-item><list-item><p>The data are MCAR (rare).</p></list-item><list-item><p>The proportion of missing data is quite large (&#x02265;40% as a general rule).</p></list-item></list></p><p>In all these situations, complete cases analysis can be performed. However, in each
+situation, an appropriate sensitivity analysis should be conducted and the potential effect
+of the missing values discussed.</p><p>Multiple imputation <italic>is appropriate</italic> when the MAR assumption is reasonable,
+based on the characteristics of the missing data. When used properly, multiple imputation
+has been shown to be a valid method for handling missing data in clinical research studies.<sup><xref rid="bibr4-2192568218811922" ref-type="bibr">4</xref><xref rid="bibr5-2192568218811922" ref-type="bibr"/>-<xref rid="bibr6-2192568218811922" ref-type="bibr">6</xref></sup>
+<xref ref-type="fig" rid="fig2-2192568218811922">Figure 2</xref> is a flowchart adapted from
+Jakobsen et al<sup><xref rid="bibr2-2192568218811922" ref-type="bibr">2</xref></sup> to help determine if multiple imputation is appropriately used in a study.</p><fig id="fig2-2192568218811922" orientation="portrait" position="float"><label>Figure 2.</label><caption><p>Flowchart to determine when multiple imputation should be used for missing data in
+clinical research studies. Figure adapted from Jakobsen et al.<sup><xref rid="bibr2-2192568218811922" ref-type="bibr">2</xref></sup></p></caption><graphic xlink:href="10.1177_2192568218811922-fig2"/></fig></sec><sec id="section9-2192568218811922"><title>Summary</title><p>
+<list list-type="bullet"><list-item><p>Missing data can seriously compromise inferences from clinical research studies.</p></list-item><list-item><p>One method for handling missing data is to substitute each missing value with a
+reasonable guess, and then carry out the analysis as if there were no missing values
+(imputation).</p></list-item><list-item><p>Single imputation replaces a missing value based on a predefined rule and includes
+last observation carried forward, worst observation carried forward, and simple mean
+imputation. In general, single imputation methods are not recommended.</p></list-item><list-item><p>Multiple imputation is a statistical technique that creates multiple complete
+datasets, substituting missing with imputed values. The datasets are analyzed
+separately, and the results pooled into a final result.</p></list-item><list-item><p>Whether to use multiple imputation for missing data depends on the missing data
+mechanism (reason for missing data). To properly use multiple imputation, the missing
+data should be MAR.</p></list-item></list>
+</p></sec></body><back><ref-list><title>References</title><ref id="bibr1-2192568218811922"><label>1</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Little</surname><given-names>RJ</given-names></name><name><surname>D&#x02019;Agostino</surname><given-names>R</given-names></name><name><surname>Cohen</surname><given-names>ML</given-names></name><etal/></person-group>
+<article-title>The prevention and treatment of missing data in clinical
+trials</article-title>. <source>N Engl J Med</source>.
+<year>2012</year>;<volume>367</volume>:<fpage>1355</fpage>&#x02013;<lpage>1360</lpage>
+<pub-id pub-id-type="pmid">23034025</pub-id></mixed-citation></ref><ref id="bibr2-2192568218811922"><label>2</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Jakobsen</surname><given-names>JC</given-names></name><name><surname>Gluud</surname><given-names>C</given-names></name><name><surname>Wetterslev</surname><given-names>J</given-names></name><name><surname>Winkel</surname><given-names>P</given-names></name></person-group>
+<article-title>When and how should multiple imputation be used for
+handling missing data in randomised clinical trials&#x02014;a practical guide with
+flowcharts</article-title>. <source>BMC Med Res Methodol</source>.
+<year>2017</year>;<issue>17</issue>:<fpage>162</fpage>
+<pub-id pub-id-type="pmid">29207961</pub-id></mixed-citation></ref><ref id="bibr3-2192568218811922"><label>3</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Ibrahim</surname><given-names>JG</given-names></name><name><surname>Molenberghs</surname><given-names>G</given-names></name></person-group>
+<article-title>Missing data methods in longitudinal studies: a
+review</article-title>. <source>Test (Madr)</source>.
+<year>2009</year>;<volume>18</volume>:<fpage>1</fpage>&#x02013;<lpage>43</lpage>.<pub-id pub-id-type="pmid">21218187</pub-id></mixed-citation></ref><ref id="bibr4-2192568218811922"><label>4</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Dziura</surname><given-names>JD</given-names></name><name><surname>Post</surname><given-names>LA</given-names></name><name><surname>Zhao</surname><given-names>Q</given-names></name><name><surname>Fu</surname><given-names>Z</given-names></name><name><surname>Peduzzi</surname><given-names>P</given-names></name></person-group>
+<article-title>Strategies for dealing with missing data in clinical
+trials: from design to analysis</article-title>. <source>Yale J Biol Med</source>.
+<year>2013</year>;<volume>86</volume>:<fpage>343</fpage>&#x02013;<lpage>358</lpage>.<pub-id pub-id-type="pmid">24058309</pub-id></mixed-citation></ref><ref id="bibr5-2192568218811922"><label>5</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Jorgensen</surname><given-names>AW</given-names></name><name><surname>Lundstrom</surname><given-names>LH</given-names></name><name><surname>Wetterslev</surname><given-names>J</given-names></name><name><surname>Astrup</surname><given-names>A</given-names></name><name><surname>Gotzsche</surname><given-names>PC</given-names></name></person-group>
+<article-title>Comparison of results from different imputation techniques
+for missing data from an anti-obesity drug trial</article-title>. <source>PLoS
+One</source>. <year>2014</year>;<fpage>9</fpage>:
+<volume>e111964</volume>.</mixed-citation></ref><ref id="bibr6-2192568218811922"><label>6</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Zhang</surname><given-names>Y</given-names></name><name><surname>Alyass</surname><given-names>A</given-names></name><name><surname>Vanniyasingam</surname><given-names>T</given-names></name><etal/></person-group>
+<article-title>A systematic survey of the methods literature on the
+reporting quality and optimal methods of handling participants with missing outcome data
+for continuous outcomes in randomized controlled trials</article-title>. <source>J Clin
+Epidemiol</source>.
+<year>2017</year>;<volume>88</volume>:<fpage>67</fpage>&#x02013;<lpage>80</lpage>.<pub-id pub-id-type="pmid">28579378</pub-id></mixed-citation></ref></ref-list></back></article>

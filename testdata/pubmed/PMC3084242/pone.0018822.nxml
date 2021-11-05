@@ -1,0 +1,571 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.0 20120330//EN" "JATS-archivearticle1.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article"><?properties open_access?><front><journal-meta><journal-id journal-id-type="nlm-ta">PLoS One</journal-id><journal-id journal-id-type="iso-abbrev">PLoS ONE</journal-id><journal-id journal-id-type="publisher-id">plos</journal-id><journal-id journal-id-type="pmc">plosone</journal-id><journal-title-group><journal-title>PLoS ONE</journal-title></journal-title-group><issn pub-type="epub">1932-6203</issn><publisher><publisher-name>Public Library of Science</publisher-name><publisher-loc>San Francisco, USA</publisher-loc></publisher></journal-meta><article-meta><article-id pub-id-type="pmid">21552556</article-id><article-id pub-id-type="pmc">3084242</article-id><article-id pub-id-type="publisher-id">PONE-D-11-01847</article-id><article-id pub-id-type="doi">10.1371/journal.pone.0018822</article-id><article-categories><subj-group subj-group-type="heading"><subject>Research Article</subject></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Biology</subject><subj-group><subject>Neuroscience</subject><subj-group><subject>Neurophysiology</subject><subj-group><subject>Central Nervous System</subject><subject>Motor Systems</subject></subj-group></subj-group><subj-group><subject>Motor Systems</subject><subject>Sensory Systems</subject></subj-group></subj-group></subj-group></article-categories><title-group><article-title>
+<italic>In Vivo</italic> Analysis of Inhibitory Synaptic Inputs and Rebounds in Deep Cerebellar Nuclear Neurons</article-title><alt-title alt-title-type="running-head">IPSP Integration in DCN Cells</alt-title></title-group><contrib-group><contrib contrib-type="author"><name><surname>Bengtsson</surname><given-names>Fredrik</given-names></name><xref ref-type="aff" rid="aff1">
+<sup>1</sup>
+</xref></contrib><contrib contrib-type="author"><name><surname>Ekerot</surname><given-names>Carl-Fredrik</given-names></name><xref ref-type="aff" rid="aff1">
+<sup>1</sup>
+</xref></contrib><contrib contrib-type="author"><name><surname>J&#x000f6;rntell</surname><given-names>Henrik</given-names></name><xref ref-type="aff" rid="aff1">
+<sup>1</sup>
+</xref><xref ref-type="aff" rid="aff2">
+<sup>2</sup>
+</xref><xref ref-type="corresp" rid="cor1">
+<sup>&#x0002a;</sup>
+</xref></contrib></contrib-group><aff id="aff1">
+<label>1</label>
+<addr-line>Section for Neurophysiology, Department of Experimental Medical Science, Lund University, Lund, Sweden</addr-line>
+</aff><aff id="aff2">
+<label>2</label>
+<addr-line>NeuroNano Research Center, Department of Experimental Medical Science, Lund University, Lund, Sweden</addr-line>
+</aff><contrib-group><contrib contrib-type="editor"><name><surname>Tell</surname><given-names>Fabien</given-names></name><role>Editor</role><xref ref-type="aff" rid="edit1"/></contrib></contrib-group><aff id="edit1">The Research Center of Neurobiology-Neurophysiology of Marseille, France</aff><author-notes><corresp id="cor1">&#x0002a; E-mail: <email>henrik.jorntell@med.lu.se</email></corresp><fn fn-type="con"><p>Conceived and designed the experiments: FB HJ CFE. Performed the experiments: FB HJ C-FE. Contributed reagents/materials/analysis tools: FB HJ. Wrote the paper: HJ.</p></fn></author-notes><pub-date pub-type="collection"><year>2011</year></pub-date><pub-date pub-type="epub"><day>28</day><month>4</month><year>2011</year></pub-date><volume>6</volume><issue>4</issue><elocation-id>e18822</elocation-id><history><date date-type="received"><day>21</day><month>1</month><year>2011</year></date><date date-type="accepted"><day>4</day><month>3</month><year>2011</year></date></history><permissions><copyright-statement>Bengtsson et al.</copyright-statement><copyright-year>2011</copyright-year><license xlink:href="http://creativecommons.org/licenses/by/4.0/"><license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are properly credited.</license-p></license></permissions><abstract><p>Neuronal function depends on the properties of the synaptic inputs the neuron receive and on its intrinsic responsive properties. However, the conditions for synaptic integration and activation of intrinsic responses may to a large extent depend on the level of background synaptic input. In this respect, the deep cerebellar nuclear (DCN) neurons are of particular interest: they feature a massive background synaptic input and an intrinsic, postinhibitory rebound depolarization with profound effects on the synaptic integration. Using <italic>in vivo</italic> whole cell patch clamp recordings from DCN cells in the cat, we find that the background of Purkinje cell input provides a tonic inhibitory synaptic noise in the DCN cell. Under these conditions, individual Purkinje cells appear to have a near negligible influence on the DCN cell and clear-cut rebounds are difficult to induce. Peripheral input that drives the simple spike output of the afferent PCs to the DCN cell generates a relatively strong DCN cell inhibition, but do not induce rebounds. In contrast, synchronized climbing fiber activation, which leads to a synchronized input from a large number of Purkinje cells, can induce profound rebound responses. In light of what is known about climbing fiber activation under behaviour, the present findings suggest that DCN cell rebound responses may be an unusual event. Our results also suggest that cortical modulation of DCN cell output require a substantial co-modulation of a large proportion of the PCs that innervate the cell, which is a possible rationale for the existence of the cerebellar microcomplex.</p></abstract><counts><page-count count="12"/></counts></article-meta></front><body><sec id="s1"><title>Introduction</title><p>For practical reasons, studies of synaptic integration and intrinsic neuronal properties have mostly been performed in excised pieces of brain tissue (brain slices/in vitro preparations). However, it has gradually become recognized that the information processing carried out by a neuron may change when it is provided with <italic>in vivo</italic>-like patterns of synaptic input <xref rid="pone.0018822-Destexhe1" ref-type="bibr">[1]</xref>, <xref rid="pone.0018822-Destexhe2" ref-type="bibr">[2]</xref>, <xref rid="pone.0018822-Wolfart1" ref-type="bibr">[3]</xref>. So far, the main effects described have been an increase in the sensitivity and a decrease in the response times to a given input <xref rid="pone.0018822-Destexhe1" ref-type="bibr">[1]</xref>, <xref rid="pone.0018822-Destexhe2" ref-type="bibr">[2]</xref>, <xref rid="pone.0018822-Wolfart1" ref-type="bibr">[3]</xref>, <xref rid="pone.0018822-Gauck1" ref-type="bibr">[4]</xref>, <xref rid="pone.0018822-Anderson1" ref-type="bibr">[5]</xref>, <xref rid="pone.0018822-Gauck2" ref-type="bibr">[6]</xref>. However, the impact of synaptic noise on more profound intrinsic membrane responses remains to be elucidated.</p><p>One such intrinsic neuronal response is the postinhibitory, excitatory rebound response of the deep cerebellar nuclear (DCN) cells described <italic>in vitro</italic>
+<xref rid="pone.0018822-Jahnsen1" ref-type="bibr">[7]</xref>, <xref rid="pone.0018822-Aizenman1" ref-type="bibr">[8]</xref>. The rebound response is a dominating response <italic>in vitro</italic> and many theories of cerebellar function incorporate this response as a central feature of how the cerebellum works <xref rid="pone.0018822-Kistler1" ref-type="bibr">[9]</xref>, <xref rid="pone.0018822-Medina1" ref-type="bibr">[10]</xref>, <xref rid="pone.0018822-Wetmore1" ref-type="bibr">[11]</xref>, <xref rid="pone.0018822-Jacobson1" ref-type="bibr">[12]</xref>.</p><p>However, in the cerebellum <italic>in vivo</italic> DCN cells receive input from 100's of Purkinje cells (PCs), which are spontaneously active at high rates, even in the absence of excitatory synaptic inputs <xref rid="pone.0018822-Cerminara1" ref-type="bibr">[13]</xref>. This situation is likely to have a big impact on (1) how the DCN cells integrate synaptic input and (2) the conditions under which the rebound responses can be elicited. Although it is clear that rebound-like responses can be evoked <italic>in vivo</italic> with electrical stimulation within brain tissue <xref rid="pone.0018822-Hoebeek1" ref-type="bibr">[14]</xref>, <xref rid="pone.0018822-Kitai1" ref-type="bibr">[15]</xref>, the conditions and limits for evoking rebound responses <italic>in vivo</italic>, and thereby their potential functional roles under behaviour, have not been explored.</p><p>DCN cells in the anterior interposed nucleus (AIP) receive PC input from the C3 zone of the cerebellar cortex, for which the sagittal microzonal organization has been investigated in a particularly high level of detail <xref rid="pone.0018822-Apps1" ref-type="bibr">[16]</xref>, <xref rid="pone.0018822-Ekerot1" ref-type="bibr">[17]</xref>. Each microzone receives climbing fiber input from specific cell groups in the rostral dorsal accessory part of the inferior olive (rDAO) <xref rid="pone.0018822-Garwicz1" ref-type="bibr">[18]</xref>. The PCs of a specific microzone in turn have a specific innervation territory in the AIP <xref rid="pone.0018822-Garwicz1" ref-type="bibr">[18]</xref>, <xref rid="pone.0018822-Garwicz2" ref-type="bibr">[19]</xref>, <xref rid="pone.0018822-Apps2" ref-type="bibr">[20]</xref>, <xref rid="pone.0018822-Apps3" ref-type="bibr">[21]</xref>, <xref rid="pone.0018822-Sugihara1" ref-type="bibr">[22]</xref>, and the specificity in the olivo-cortico-nuclear connections forms the basis for the microcomplex organization of the cerebellar cicruitry <xref rid="pone.0018822-Apps2" ref-type="bibr">[20]</xref>, <xref rid="pone.0018822-Sugihara1" ref-type="bibr">[22]</xref>, <xref rid="pone.0018822-Ito1" ref-type="bibr">[23]</xref>, <xref rid="pone.0018822-Oscarsson1" ref-type="bibr">[24]</xref>, <xref rid="pone.0018822-Andersson1" ref-type="bibr">[25]</xref>. In the present study, we take advantage of the detailed knowledge of the microcomplex organization for the rDAO-C3 zone-AIP system to obtain a controlled activation of the PC input to the DCN cells to characterize the limits and conditions for rebound activation. We also analyze the spontaneous and evoked IPSPs to explore the conditions for synaptic integration in DCN cells under a high background of PC inputs.</p></sec><sec id="s2"><title>Results</title><p>All DCN neurons in the present study were located in the forelimb area of the anterior interposed nucleus (AIP) in the decerebrated cat (<xref ref-type="fig" rid="pone-0018822-g001">Fig. 1A</xref>). We limited our study to neurons, which in intracellular recordings had intermediate spike-widths (0.61&#x0002b;/&#x02212;0.07 ms, mean&#x0002b;/&#x02212;sd.; N&#x0200a;=&#x0200a;36) (<xref ref-type="fig" rid="pone-0018822-g001">Fig. 1C</xref>). In contrast, spike-widths of DCN neurons with broad spikes were 1.1&#x0002b;/&#x02212;0.14 ms (N&#x0200a;=&#x0200a;14) and for neurons with narrow spikes 0.49&#x0002b;/&#x02212;0.06 ms (N&#x0200a;=&#x0200a;3). Apart from spike widths, the neuron type we limited our analysis to also differed from cells with narrow and broad spikes by the distribution of their interspike intervals (21&#x0002b;/&#x02212;12 ms, 46&#x0002b;/&#x02212;11 and 104&#x0002b;/&#x02212;51 ms, respectively) (<xref ref-type="fig" rid="pone-0018822-g001">Fig. 1C,D</xref>). DCN neurons with intermediate spike widths presumably correspond to the non-GABAergic projection neurons of the DCN <xref rid="pone.0018822-Uusisaari1" ref-type="bibr">[26]</xref>.</p><fig id="pone-0018822-g001" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0018822.g001</object-id><label>Figure 1</label><caption><title>Identification of DCN neurons in whole cell recordings.</title><p>(A) Location in the forelimb region (dashed line) of the anterior interposed nucleus (reconstructed in 3D) and morphological reconstruction of a DCN neuron, recorded with neurobiotin in the recording solution. (B) Responses of a DCN neuron to rectangular current step commands. (C) Average of 100 spikes recorded in one DCN neuron. Dashed lines indicate the start and the end of the spike, with the starting point defined as the point at which the second derivative of the voltage trace reached its peak value. (D) Frequency histogram of interspike intervals recorded in this cell. (E) Examples of spontaneous activity recorded at rest (0 pA bias current).</p></caption><graphic xlink:href="pone.0018822.g001"/></fig><p>Reconstructions of stained neurons (N&#x0200a;=&#x0200a;3, <xref ref-type="fig" rid="pone-0018822-g001">Fig. 1A</xref>) were only partial because of difficulties in following the dendrites along their entire extent. Stained neurons were characterized by 7&#x02013;9 dendrites that each could be followed for more than 0.4 mm and radiated in all directions. The membrane input resistance of the DCN neurons, measured from the voltage response obtained by current step commands (<xref ref-type="fig" rid="pone-0018822-g001">Fig. 1B</xref>), was 31&#x0002b;/&#x02212;5.2 MOhm (N&#x0200a;=&#x0200a;5). This is in the order of 1/10 to 1/20 of the values reported for rodents in the slice <italic>in vitro</italic>
+<xref rid="pone.0018822-Gauck3" ref-type="bibr">[27]</xref>, <xref rid="pone.0018822-Pedroarena1" ref-type="bibr">[28]</xref>. The time-constant, measured from the voltage response to the hyperpolarizing current step, was 7.1&#x0002b;/&#x02212;1.9 ms.</p><sec id="s2a"><title>Spontaneous IPSPs</title><p>Purkinje cells (PCs) of the C3 zone in our preparation fire spontaneously at about 40 Hz (<xref ref-type="fig" rid="pone-0018822-g002">Fig. 2</xref>), similar to the PC firing rate observed in the awake animal at rest (see for example <xref rid="pone.0018822-Cerminara2" ref-type="bibr">[29]</xref>). Given that a DCN cell in the cat receives at least in the order of 100's of PC inputs <xref rid="pone.0018822-Ito1" ref-type="bibr">[23]</xref>, <xref rid="pone.0018822-Palkovits1" ref-type="bibr">[30]</xref>, one would have expected the baseline to be heavily influenced by distinct IPSP events. However, this was not the case. On the contrary, the intracellular DCN recordings showed long periods with very low amplitude fluctuations, seemingly devoid of unitary synaptic inputs (<xref ref-type="fig" rid="pone-0018822-g001">Fig. 1E</xref>, <xref ref-type="fig" rid="pone-0018822-g003">3A</xref>), which were only intermittently interrupted by spontaneous large IPSPs (cf. below). Periods of low amplitude fluctuations were defined as contiguous periods of 100 ms or more, during which the time derivative of the recorded membrane potential was free of deviations larger than two standard deviations. The root mean square (RMS) value of periods of low amplitude fluctuations was 1.4&#x02013;1.7 mV, recorded in 14 different cells.</p><fig id="pone-0018822-g002" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0018822.g002</object-id><label>Figure 2</label><caption><title>Activity in Purkinje cell projecting to the AIP.</title><p>(A) Superimposed simple spike (top) and complex spikes from PC recorded in the C3 zone. (B) Frequency distribution histogram of interspike intervals for the simple spike. Bin width, 1 ms. (C) Peri-complex spike histogram of simple spike activity. Bin width 10 ms. (D) Histogram showing that the simple spike frequency remained relatively constant over time. Bin width, 1 s. We recorded the simple and complex spike activity of 16 PCs during more than 5 mins. The average firing frequency for simple spikes was 42&#x0002b;/&#x02212;5.4 Hz and for complex spikes 2.8&#x0002b;/&#x02212;0.5 Hz.</p></caption><graphic xlink:href="pone.0018822.g002"/></fig><fig id="pone-0018822-g003" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0018822.g003</object-id><label>Figure 3</label><caption><title>Non-synchronized, high frequency IPSP inputs generate smooth baseline.</title><p>(A) Close-up of raw data. (B) Simulated data for varying number of PC inputs. The number of PCs, the average IPSP frequency and the average IPSP amplitude is indicated for each simulation run. (C) Power spectral density analysis for recorded signal and simulated signal with low and high number of PC inputs, respectively. Numerical comparisons were made for the relative power in different frequency intervals (inset table).</p></caption><graphic xlink:href="pone.0018822.g003"/></fig><p>To investigate the conditions that could generate the periods of low amplitude fluctuations in the face of a high synaptic background activity we used a model of a DCN neuron, in which we simulated the integration of inhibitory synaptic inputs driven by recorded spontaneous spike times in PCs (<xref ref-type="fig" rid="pone-0018822-g003">Fig. 3</xref>). The simulation was carried out using different numbers of PCs (<xref ref-type="fig" rid="pone-0018822-g003">Fig. 3B</xref>). In order to calibrate the model against recorded data, we adjusted the synaptic weights of the afferent PCs so that the simulated membrane potential obtained a RMS value of about 1.5 mV, i.e. in the range of the recorded data. Notably, in order for the simulated membrane potential to stay within the same RMS range as the recorded signal, the mean unitary IPSP amplitude had to be very small, i.e. less than 0.1 mV in simulations with &#x0003e;200 PCs.</p><p>With this model, we found that periods of low amplitude fluctuations could only be obtained with a large number of non-synchronized PCs onto the DCN neuron (<xref ref-type="fig" rid="pone-0018822-g003">Fig. 3B</xref>, bottom). In contrast, if a low number of non-synchronized PCs converged on the DCN, the simulation indicated that the baseline would display a multitude of fast IPSP events (i.e. with deviations higher than 2 standard deviations, <xref ref-type="fig" rid="pone-0018822-g003">Fig. 3B</xref>, top). To further verify that the model produced an accurate reflection of the recorded low amplitude fluctuation periods in our DCN cells, we made a power spectral density analysis of the recorded and simulated subthreshold membrane potentials. Again, with a high number of PCs in the model, the power spectral density of the baseline activity became nearly identical to that of the DCN cell recording, which was not the case for simulations with a low number of PCs (<xref ref-type="fig" rid="pone-0018822-g003">Fig. 3C</xref>).</p></sec><sec id="s2b"><title>Inferior olive stimulation</title><p>In the next step, we wanted to test how synchronization of PC spike output was reflected in the membrane potential of the DCN cell. Because of the microcomplex organization of the cerebellum (see <xref ref-type="sec" rid="s1">Introduction</xref>), in which the DCN cells only receive inputs from Purkinje cells within a single or a few sagittal microzones, electrical microstimulation within the inferior olive (IO) to simultaneously activate the PCs of single microzones should be an effective way to activate a large set of the inhibitory PC input to a DCN neuron. Using this approach, we found that thresholds for evoking DCN cell IPSPs, in the subset of DCN cells that were located within the same microcomplex as the stimulation electrode in the IO, were less than 15 uA. At current intensities of 50 uA or less we could evoke IPSPs of up to 20 mV in amplitude (<xref ref-type="fig" rid="pone-0018822-g004">Fig. 4A</xref>) (15&#x0002b;/&#x02212;2.6 mV, N&#x0200a;=&#x0200a;14). These IO-evoked giant IPSPs were maximal, since further increases in the IO stimulation intensity did not result in larger IPSPs (<xref ref-type="fig" rid="pone-0018822-g004">Fig. 4A,B</xref>). The DCN cells were recorded at a membrane potential of &#x02212;45 to &#x02212;50 mV to prevent the IPSPs from reaching the reversal potential for chloride. The reversal potential has been estimated to &#x02212;78 mV in granule cells using the same recording solution (J&#x000f6;rntell and Ekerot, 2006), which is also close to the chloride reversal potential of &#x02212;75 mV recorded for DCN cells <italic>in vitro</italic> with the perforated patch technique <xref rid="pone.0018822-Zheng1" ref-type="bibr">[31]</xref>.</p><fig id="pone-0018822-g004" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0018822.g004</object-id><label>Figure 4</label><caption><title>IPSPs evoked in DCN neurons by IO stimulation.</title><p>(A) Superimposed averages of IPSP responses evoked at different intensities of IO-stimulation in the same DCN cell. Note that even at nearly 10 times the stimulus intensity for evoking a maximal response, the amplitude of the response did not change. The double-peaked nature of the evoked IPSP matched that of the complex spikes in the afferent PCs (see panel E). (B) Stimulus-response curves for DCN cells with low-threshold IO-evoked IPSPs (T&#x0003c;15 uA, red curves) compared with stimulus-response curves for IO-evoked IPSPs in DCN neurons with higher thresholds (blue curves). (C) Thresholds for cerebellar cortical climbing fiber field responses along the longitudinal axis of different folia of the forelimb area of the C3 zone. The recording sites are indicated on a photograph of the cerebellar anterior lobe sublobules Va-Vc, in which the forelimb area of the C3 zone is located. The borders of the C3 zone are indicated by thick blue lines. The yellow to red coloring indicates the specific thresholds for evoking climbing fiber responses according to the key at left. (D) Comparison between stimulus response curves for low threshold DCN cell IPSPs and the number of cortical spots with evoked climbing fiber responses (data averaged from 5 experiments, indicated by dashed line and crosses). (E) Maximal IO-evoked IPSPs consistently displayed two peaks, separated by about 3 ms (3.4&#x0002b;/&#x02212;0.7 ms, N&#x0200a;=&#x0200a;5, analyzed only for cells with identified, low thresholds for IO-evoked IPSPs). The timing of the two peaks of the IPSP paralleled the timing of the first two spikes recorded in the complex spikes from whole cell PC recordings (2.5&#x0002b;/&#x02212;0.3 ms, N&#x0200a;=&#x0200a;9).</p></caption><graphic xlink:href="pone.0018822.g004"/></fig><p>To verify that IO stimulation intensities of this magnitude only activated one or a few microzones of PCs in the cerebellar cortex, we recorded the thresholds for evoking climbing fiber field potentials across the entire mediolateral extent of the cerebellar C3 zone over several folia (<xref ref-type="fig" rid="pone-0018822-g004">Fig. 4C</xref>). With threshold stimulation, we could evoke climbing fiber field potentials along single cortical strips/microzones (i.e. sagittally connected bands of spots) in the medial and lateral parts of the C3 zone (c.f.(<xref rid="pone.0018822-Ekerot1" ref-type="bibr">[17]</xref>, <xref rid="pone.0018822-Ekerot2" ref-type="bibr">[32]</xref>). With increased stimulation intensities, the number of cortical microzones with activated climbing fiber input also increased, but at the point at which IO-evoked IPSPs were saturated, only 2&#x02013;5 cortical microzones were activated (<xref ref-type="fig" rid="pone-0018822-g004">Fig. 4D</xref>, dotted/crossed line). As the stimulation intensity reached 300 uA, at least half of the microzones of the C3 zone was activated (<xref ref-type="fig" rid="pone-0018822-g004">Fig. 4D</xref>). Notably, in DCN cells for which the thresholds for IO-evoked IPSPs were higher (blue lines in <xref ref-type="fig" rid="pone-0018822-g004">Fig. 4B</xref>), saturation of the evoked IPSPs required considerably higher stimulation intensities.</p></sec><sec id="s2c"><title>Spontaneous giant IPSP</title><p>The predominant low amplitude fluctuation periods of the DCN cell membrane potential trace (<xref ref-type="fig" rid="pone-0018822-g003">Fig. 3</xref>) were intermittently interrupted by episodes of large spontaneous IPSP-like events (<xref ref-type="fig" rid="pone-0018822-g005">Fig. 5A,B</xref>). These events could have very large peak amplitudes (typically 3&#x02013;10 mV) when recorded at a membrane potential of &#x02212;45 to &#x02212;50 mV and are referred to as &#x02018;spontaneous giant IPSPs&#x02019; below. Spontaneous giant IPSPs had a falling phase with a similar time course as submaximal IPSPs evoked by IO stimulation (<xref ref-type="fig" rid="pone-0018822-g005">Fig. 5C</xref>) (Since each olivary cell innervates on average 7 PCs <xref rid="pone.0018822-Sugihara2" ref-type="bibr">[33]</xref>, the IO evoked submaximal IPSPs must have been generated by at least 7 PCs, but possibly more since the IO stimulation could have activated more than one olivary cell). Spontaneous giant IPSPs typically occurred in bursts with highly irregular intervals (<xref ref-type="fig" rid="pone-0018822-g005">Fig. 5D</xref>) (the average CV for intervals between spontaneous giant IPSPs was 98&#x00025;&#x0002b;/&#x02212;6&#x00025;) and at an average rate of 8&#x02013;17 Hz (12.2&#x0002b;/&#x02212;1.2, all data from 14 DCN recordings of at least 30 seconds each, 0 pA bias current). About 10&#x00025; (9.8&#x0002b;/&#x02212;6.1&#x00025;) of the intervals between spontaneous giant IPSPs were longer than 1 s, excluding that they were generated by any single PC (<xref ref-type="fig" rid="pone-0018822-g002">Fig. 2</xref>). The high CV of the intervals and the occurrence of very long intervals suggested that the spontaneous giant IPSPs were generated by spontaneous discharges in the climbing fibers, which occur in similar patterns <xref rid="pone.0018822-Chorev1" ref-type="bibr">[34]</xref>, <xref rid="pone.0018822-Bengtsson1" ref-type="bibr">[35]</xref>. The widely varying peak amplitudes further suggested that the spontaneous giant IPSPs were generated by synchronous activation of multiple olivary cells with a highly variable recruitment. Both spontaneous and IO-evoked giant IPSPs also shared the conspicuous feature of a precisely timed, preceding EPSP (peak amplitude: 0.5&#x02013;1.5 mV (N&#x0200a;=&#x0200a;10 cells)), which is elicited via the direct climbing fiber collateral input to the DCN cell <xref rid="pone.0018822-Llinas1" ref-type="bibr">[36]</xref>. The fact that the spontaneous giant IPSPs always were smaller than the maximal IO-evoked IPSPs suggested that they represented the activation of a subpopulation of the IO cells of the particular microcomplex to which the DCN cell belonged. The coactivation of small subpopulations of the IO cells could also explain how spontaneous giant IPSPs episodically could occur at much higher rates than the spontaneous climbing fiber discharge &#x02013; bursts of giant IPSPs could represent the sequential activation of different subpopulations of IO cells innervating the microcomplex. Importantly, even though spontaneous giant IPSPs had a strong inhibitory effect on the spike activity, they failed to induce rebound excitation (<xref ref-type="fig" rid="pone-0018822-g005">Fig. 5F</xref>).</p><fig id="pone-0018822-g005" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0018822.g005</object-id><label>Figure 5</label><caption><title>Properties of spontaneous giant IPSPs.</title><p>(A) Raw trace illustrating a sample period (dashed line) during which spontaneous giant IPSPs (arrows) occurred. (B) Close-up of another period with spontaneous giant IPSPs. (C) Raw traces of IPSPs (arrows, middle panel) and histogram of IPSP amplitudes (right panel) evoked by threshold IO stimulation. For comparison, the averaged maximal IO evoked IPSP is illustrated to the left. Dashed lines indicate onset of stimulation and onset latency time of the maximal IPSP. Note the later, variable response latencies (summarized in histogram at bottom right) of the threshold IPSPs, which are likely due to that the direct neuronal activation is replaced with a more indirect, synaptic activation of the IO neurons as the stimulation intensity is reduced <xref rid="pone.0018822-Jorntell4" ref-type="bibr">[65]</xref>. All recordings were made at &#x02212;50 mV. Only IPSP events with an absolute amplitude &#x0003e;0.7 mV were analyzed. (D) Histogram of intervals between sequential giant IPSPs recorded during 3 minutes. The coefficient of variation of the intervals was 104&#x00025;. (E) Average of the largest spontaneous giant IPSPs (N&#x0200a;=&#x0200a;15) recorded from one DCN neuron and average of submaximal IO-evoked IPSPs (N&#x0200a;=&#x0200a;10) recorded in the same neuron. Dashed lines indicate start of excitatory component, start of inhibitory component and peak of inhibitory component, respectively. (F) Peri-IPSP histogram of spike discharge relative to the onset of spontaneous giant IPSPs. Average from 9 DCN neurons. Bin width 5 ms.</p></caption><graphic xlink:href="pone.0018822.g005"/></fig></sec><sec id="s2d"><title>Rebounds evoked by inferior olive stimulation</title><p>In contrast, in cells in which IO stimulation evoked saturated IPSPs (<xref ref-type="fig" rid="pone-0018822-g004">Fig. 4</xref>), rebound responses were always evoked (<xref ref-type="fig" rid="pone-0018822-g006">Fig. 6</xref>) (the spike inhibition was 88&#x00025;&#x0002b;/&#x02212;7.8&#x00025; for 10&#x02013;15 ms, followed by a rebound of &#x0002b;72&#x0002b;/&#x02212;14&#x00025; lasting at least than 10 ms, N&#x0200a;=&#x0200a;14). This response was hence similar to the rebound depolarizing response that has been described <italic>in vitro</italic>
+<xref rid="pone.0018822-Jahnsen1" ref-type="bibr">[7]</xref>, <xref rid="pone.0018822-Aizenman1" ref-type="bibr">[8]</xref> in that it appeared to require a preceding hyperpolarizing response beyond a threshold magnitude (<xref ref-type="fig" rid="pone-0018822-g006">Fig. 6B,C</xref>). To directly investigate whether the rebound responses were generated by the intrinsic membrane properties of the DCN cells, we compared the responses evoked at different membrane potentials (<xref ref-type="fig" rid="pone-0018822-g006">Fig. 6D</xref>). If the rebound response was directly driven by excitatory synaptic input, a hyperpolarized membrane potential would be expected to result in a decrease in the spike response after the IO stimulation. In contrast, we could systematically observe a clear INCREASE in the rebound spike response when the cell was hyperpolarized. Conversely, when the cells were depolarized there was a clear reduction of the rebound response (<xref ref-type="fig" rid="pone-0018822-g006">Fig. 6D</xref>). A possible interpretation of these findings is that hyperpolarization leads to a higher degree of deinactivation of low threshold calcium channels, which in turn could lead to a boost of the rebound <xref rid="pone.0018822-Alvina1" ref-type="bibr">[37]</xref>.</p><fig id="pone-0018822-g006" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0018822.g006</object-id><label>Figure 6</label><caption><title>IO-evoked rebound responses.</title><p>(A) Sample raw trace of rebound response evoked by maximal IO stimulation recorded at resting potential. (B) Spike responses evoked by subthreshold, submaximal, maximal and supramaximal IO stimulation (20, 30, 50 and 150 uA). Bin width, 5 ms. (C) Averages of responses evoked from the IO at different stimulation intensities recorded from another DCN neuron that was hyperpolarized to prevent spiking, Note all-or-nothing character of the rebound response as the IPSP (arrowheads) became maximal. (D) Relationship between membrane potential and the magnitude of the rebound response (expressed as net number of spikes, beyond prestimulus baseline, per stimulation). Lines indicate data obtained from the same cell at different membrane potentials.</p></caption><graphic xlink:href="pone.0018822.g006"/></fig><p>Since the magnitude of IPSPs in whole cell recordings could potentially be abnormal due to the uncertainty of the estimates of the normal intracellular chloride concentrations <italic>in vivo</italic>, we also made a large number of extracellular metal electrode recordings (N&#x0200a;=&#x0200a;174). In neurons with low-threshold inhibitory responses evoked from the IO (N&#x0200a;=&#x0200a;36), maximal inhibitory responses (net change in spike activity &#x02212;87&#x00025;&#x0002b;/&#x02212;3.7&#x00025; during 13&#x0002b;/&#x02212;1.5 ms, mean&#x0002b;/&#x02212;sem) were evoked by an increase of the stimulation intensity of only 0&#x02013;20 uA from the threshold, i.e. there was a similar stimulus-response relationship as in the intracellular records (<xref ref-type="fig" rid="pone-0018822-g006">Fig. 6A,B</xref>). In addition, in all these cases (N&#x0200a;=&#x0200a;36), maximal IO-evoked inhibition was associated with prominent postinhibitory excitatory spike responses (net change in spike output &#x0002b;124&#x00025;&#x0002b;/&#x02212;22&#x00025; during 26&#x0002b;/&#x02212;8.2 ms). At the point at which IO stimulation evoked a maximal inhibitory response the rebound response was saturated, i.e. it did not increase when the stimulation intensity was increased by 2&#x02013;3 times (<xref ref-type="fig" rid="pone-0018822-g006">Fig. 6B</xref>). In all cases where the inhibitory response evoked from the IO was graded (N&#x0200a;=&#x0200a;11), we observed that submaximal inhibition, even though it provided strong spike suppression (&#x02212;67&#x00025;&#x0002b;/&#x02212;5.7&#x00025;), failed to trigger a rebound response (i.e. no increase in post-inhibitory spike activity beyond 2 SDs of prestimulus activity) (<xref ref-type="fig" rid="pone-0018822-g006">Fig. 6B</xref>).</p><p>IO-evoked rebound excitatory responses could not be explained by the discharge patterns of PC simple spikes or mossy fibers (<xref ref-type="fig" rid="pone-0018822-g007">Fig. 7</xref>). IO stimulation evoked a weak post-complex spike facilitation of simple spike output (the facilitation was &#x0002b;43&#x00025;&#x0002b;/&#x02212;6&#x00025; (mean&#x0002b;/&#x02212;sem, N&#x0200a;=&#x0200a;14 cells) so the amount of PC inhibition would actually increase at the time of the DCN cell rebound response. Similarly, the mossy fiber EPSP responses in whole cell recordings from 72 granule cells in the C3 zone showed no post-IO-stimulation change (at one standard deviation vs. prestimulus activity; <xref ref-type="fig" rid="pone-0018822-g007">Fig. 7</xref>, bottom).</p><fig id="pone-0018822-g007" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0018822.g007</object-id><label>Figure 7</label><caption><title>IO-evoked responses in cortical neurons.</title><p>Simple spike responses of a PC (1) and MF-EPSP responses of a granule cell recorded in the whole cell mode (2) to IO stimulation. The granule cell data is shown both as a sample raw trace (recorded at &#x02212;65 mV) and as a peristimulus histogram of EPSPs with IO-stimulation at 150 uA, which evoked substantial local climbing fiber field potentials in the cortex. Inset illustrates that the mossy fibers that innervate the DCN cells are collaterals of the mossy fibers that innervate the granule cells (2). Bin widths in all histograms, 5 ms.</p></caption><graphic xlink:href="pone.0018822.g007"/></fig></sec><sec id="s2e"><title>DCN cell responses to electrical stimulation in the climbing fiber receptive field</title><p>The Purkinje cells of an entire microzone/microcomplex can also be activated by using skin stimulation in the specific receptive field of the climbing fibers of that microzone <xref rid="pone.0018822-Ekerot1" ref-type="bibr">[17]</xref>, <xref rid="pone.0018822-Garwicz2" ref-type="bibr">[19]</xref>. A particularly effective way to evoke synchronized climbing fiber input is to use electrical stimulation of this receptive field <xref rid="pone.0018822-Garwicz2" ref-type="bibr">[19]</xref>. As shown in <xref ref-type="fig" rid="pone-0018822-g008">Fig. 8A</xref>, this approach can be used to evoke a spike response in the DCN cell that is very similar to that evoked from the IO (<xref ref-type="fig" rid="pone-0018822-g006">Fig. 6B</xref>), i.e. initial excitation followed by strong inhibition and then a postinhibitory rebound. The climbing fiber receptive field of the DCN cell was defined as the skin site from which this type of response (spike suppression of 100&#x00025; for at least 20 ms followed by a rebound of at least &#x0002b;50&#x00025; for 30 ms, analyzed for 16 cells) could be evoked using electrical skin stimulation.</p><fig id="pone-0018822-g008" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0018822.g008</object-id><label>Figure 8</label><caption><title>DCN cell responses to skin stimulation.</title><p>(A) Spike responses of a DCN cell to electrical skin stimulation (single shock, 0.2 ms) within the climbing fiber receptive field. (B) Responses evoked by manual skin stimulation (50 ms) in the climbing fiber receptive field. (C) Locations of the parallel fiber and climbing fiber receptive fields for the PC input to the DCN neuron. (D) Response evoked by manual skin stimulation in the PC-parallel fiber receptive field. (E) For comparison, a peristimulus histogram of PC simple spike responses to manual skin stimulation within the parallel fiber receptive field. Histogram bin widths, 5 ms in (A), otherwise 10 ms.</p></caption><graphic xlink:href="pone.0018822.g008"/></fig></sec><sec id="s2f"><title>DCN cell responses to manual activation from specific skin areas</title><p>We also investigated the responses of DCN cells to more natural patterns of synaptic input evoked by manual skin stimulation. Manual skin stimulation within the climbing fiber receptive field evoked the same response sequence (a spike activity depression of &#x02212;84&#x0002b;/&#x02212;3.6&#x00025; followed by a postinhibitory rebound of &#x0002b;46&#x0002b;/&#x02212;5.5&#x00025;, lasting for 22&#x0002b;/&#x02212;4 ms and 53&#x0002b;/&#x02212;8 ms, respectively (N&#x0200a;=&#x0200a;16)) as IO-stimulation (<xref ref-type="fig" rid="pone-0018822-g008">Fig. 8B</xref>). In the PCs of the C3 zone, also the parallel fiber (PF) input is evoked from a small receptive field. Importantly, the location of the PF receptive field is specific to (and also &#x02018;opposite&#x02019; to) that of the climbing fiber receptive field of the PC (<xref ref-type="fig" rid="pone-0018822-g008">Fig. 8C</xref>), meaning that the PCs of a microzone can also be driven by PF input from one specific skin area <xref rid="pone.0018822-Dean1" ref-type="bibr">[38]</xref>, <xref rid="pone.0018822-Ekerot3" ref-type="bibr">[39]</xref>, <xref rid="pone.0018822-Jorntell1" ref-type="bibr">[40]</xref>. However, in contrast to the responses evoked from the climbing fiber receptive field, manual skin stimulation of the PF receptive field of the PC input evoked inhibition (as expected) but not rebound. The spike reduction evoked from this skin area was &#x02212;54&#x00025;&#x0002b;/&#x02212;8.8&#x00025; (lasting for 46&#x0002b;/&#x02212;3.0 ms) but the postinhibitory activity was unchanged (1.3&#x00025;&#x0002b;/&#x02212;0.7&#x00025;, measured over the 50 ms that immediately followed the inhibition) (N&#x0200a;=&#x0200a;16) (<xref ref-type="fig" rid="pone-0018822-g008">Fig. 8D</xref>).</p></sec></sec><sec id="s3"><title>Discussion</title><p>In the present study, we used <italic>in vivo</italic> whole cell patch clamp recordings from presumed excitatory projection cells of the anterior interposed nucleus to explore the integration of PC inhibitory synaptic inputs and the conditions for evoking rebounds. We found a number of indications that individual PC IPSPs <italic>in vivo</italic> are exceptionally small. At least during rest, the PC inhibitory inputs seemed to be provided in a relatively tonic fashion with a low degree of synchronization between the different PCs (in accordance with observations on PC simple spike firing <italic>in vivo</italic>
+<xref rid="pone.0018822-DeZeeuw1" ref-type="bibr">[41]</xref>, <xref rid="pone.0018822-Wise1" ref-type="bibr">[42]</xref>). Synchronized PC input, which was effectively achieved with inferior olivary stimulation, resulted in very large compound IPSPs in all of our DCN cells. Strong rebound responses required near maximal IO-evoked IPSPs, most likely involving synchronous activation of all or most PC inputs onto the DCN cell.</p><sec id="s3a"><title>PC-to-DCN cell convergence</title><p>A critical factor in the understanding of DCN cell synaptic integration is the number of convergent PCs onto each cell <xref rid="pone.0018822-Palkovits1" ref-type="bibr">[30]</xref>. estimated the number of PC synapses on an interpositus neuron in the cat to 18,000, but used only indirect numerical estimates. A detailed electron microscopy study in the mouse <xref rid="pone.0018822-Sultan1" ref-type="bibr">[43]</xref> found that the number of GABA boutons per um<sup>2</sup> is 0.023. Since the somatic diameter of stained DCN cells (this study and <xref rid="pone.0018822-Matsushita1" ref-type="bibr">[44]</xref>) is about 35&#x02013;40 um, the surface area of the soma is about 15000 um2. On the cell body alone, there should hence be more than 200 PC synapses. Each DCN cell has about 8 dendrites (<xref ref-type="fig" rid="pone-0018822-g001">Fig. 1</xref>, see also <xref rid="pone.0018822-Matsushita1" ref-type="bibr">[44]</xref>) that each is at least 500 um long. About 70&#x00025; of the dendritic synapses are inhibitory <xref rid="pone.0018822-DeZeeuw2" ref-type="bibr">[45]</xref>. With the dendritic diameter estimated to be between 1 and 2 um, the dendritic surface area was in the order of 25000&#x02013;50000 um2. Altogether, the dendrites and soma would be expected to receive roughly 600&#x02013;1200 inhibitory synapses.</p><p>With a convergence of 600&#x02013;1200 PCs, each firing at about 40 Hz, the DCN cells would be expected to receive PC-IPSP input at 24000&#x02013;48000 Hz. A major effect is the reduction of the input resistance by one or two orders of magnitude, as compared to <italic>in vitro</italic> preparations. This, in turn, will for example affect the magnitude of the unitary IPSPs. Our data indicated that they were much too small to be resolved individually, probably well below 0.1 mV. This was indicated by the amplitudes of 15&#x02013;20 mVs of maximal IO-evoked IPSPs (since these should correspond to the simultaneous activation of all PCs, a unitary PC IPSP would be in the range of 0.01&#x02013;0.04 mV), the presence of IO-evoked IPSPs with peak amplitudes of 0.8 mV or smaller and the simulations of the membrane potential with spontaneous PC inputs.</p><p>The power spectral analysis showed that periods with low amplitude fluctuations are a natural consequence of the convergence on the DCN neuron of a large number of PC inhibitory synaptic inputs with low individual weights, which occurred with a low degree of synchronization. The resulting tonic inhibition can be counterbalanced by a cationic leak with a reversal potential of &#x02212;30 mV, which is a dominating conductance in these neurons <xref rid="pone.0018822-Raman1" ref-type="bibr">[46]</xref>, and possibly also by background excitatory synaptic input <xref rid="pone.0018822-Gauck2" ref-type="bibr">[6]</xref>.</p></sec><sec id="s3b"><title>Concerted PC activation and the cerebellar microcomplex organization</title><p>It follows that the membrane potential of the DCN cell is in a highly dynamic equilibrium <xref rid="pone.0018822-Gauck1" ref-type="bibr">[4]</xref>, <xref rid="pone.0018822-Gauck2" ref-type="bibr">[6]</xref>, that could be rapidly changed as a result of any increase or decrease in PC activity. However, if each PC has a low influence, any substantial inhibitory or excitatory cortical modulation of a DCN cell requires a concerted increase or decrease in the activity of many of the PCs that innervate it. This is precisely what the microcomplex organization of the cerebellar olivo-cortico-nuclear circuitry provides for. In a cerebellar microcomplex, all PCs are innervated by climbing fibers activated from the same receptive field <xref rid="pone.0018822-Garwicz2" ref-type="bibr">[19]</xref>, <xref rid="pone.0018822-Apps3" ref-type="bibr">[21]</xref>. The parallel fiber (PF) inputs to all the PCs of a microcomplex are normally from the same or closely functionally related peripheral sources, and also the inhibitory input to the PCs of a microcomplex is homogenous <xref rid="pone.0018822-Ekerot3" ref-type="bibr">[39]</xref>, <xref rid="pone.0018822-Jorntell1" ref-type="bibr">[40]</xref>, <xref rid="pone.0018822-Ekerot4" ref-type="bibr">[47]</xref>, presumably depending on cortical plasticity processes <xref rid="pone.0018822-Dean1" ref-type="bibr">[38]</xref>, <xref rid="pone.0018822-Jorntell2" ref-type="bibr">[48]</xref>, <xref rid="pone.0018822-Jorntell3" ref-type="bibr">[49]</xref>. Thereby, the PCs of a microcomplex are likely to be activated and inhibited by similar behavioral events and their firing modulations will be concerted across the microcomplex. Behavioural studies have shown that this type of concerted PC activation among functionally related PCs does indeed occur <xref rid="pone.0018822-Medina2" ref-type="bibr">[50]</xref>.</p></sec><sec id="s3c"><title>Relationship to previous <italic>in vivo</italic> studies of rebounds</title><p>In line with previous studies, we showed that IO stimulation can evoke rebound responses <xref rid="pone.0018822-Hoebeek1" ref-type="bibr">[14]</xref>, <xref rid="pone.0018822-Kitai1" ref-type="bibr">[15]</xref>. However, with the cortical recordings of the climbing fiber and mossy fiber responses in PCs and granule cells, the present study provides a control of the extent of activated elements that was not provided in these previous studies. Presumably as the result of a more elaborated electrode placement, we could also obtain our maximal responses at much lower stimulation intensities (about one order of magnitude), which means more specific effects in terms of the elements stimulated. In our experiments, IO stimulation that evoked maximal DCN cell inhibition also evoked powerful rebound responses in the DCN cells. In contrast, submaximal IO-evoked inhibition consistently failed to evoke clear-cut rebounds (i.e. post-inhibitory excitation that exceeds 2 standard deviations of the pre-stimulus baseline). These findings are hence partly in line with the findings of <xref rid="pone.0018822-Alvina2" ref-type="bibr">[51]</xref>, who questioned the role of rebounds <italic>in vivo</italic>, by confirming a relatively high threshold in terms of the (high) proportion of the afferent PCs that need to be activated with a high degree of synchrony to elicit the rebound response <italic>in vivo</italic>.</p><p>A recent study <xref rid="pone.0018822-Hoebeek1" ref-type="bibr">[14]</xref> could also confirm previous studies that inferior olivary stimulation <xref rid="pone.0018822-Kitai1" ref-type="bibr">[15]</xref> and high-intensity cortical stimulation <xref rid="pone.0018822-Hesslow1" ref-type="bibr">[52]</xref> evoke rebound-like responses in the DCN. However, Hoebeek et al. used very high stimulation intensities and did not control the effects of the stimulation, raising the issue that the recorded responses may have been excitatory synaptic responses rather than a true rebound response. Train stimulation at current intensities of 150&#x02013;300 uA is likely to activate more or less the entire brain stem of the mouse, in particular the pyramidal tract and the medial lemniscus. In the case of the cerebellar cortical stimulation <xref rid="pone.0018822-Hoebeek1" ref-type="bibr">[14]</xref>, the intensity used would be expected to essentially activate the entire cerebellum. Both types of stimulations could set up substantial prolonged responses in the cerebral cortex, or other mossy fiber sources, which may spread to the cerebellum in the form of late excitation in DCN cells.</p><p>The presence of rebounds <italic>in vivo</italic> has been demonstrated directly by using hyperpolarizing current injections <xref rid="pone.0018822-Hoebeek1" ref-type="bibr">[14]</xref>. This issue was not systematically investigated here, but current induced hyperpolarization that would correspond to quite intense PC activation did not evoke rebounds (<xref ref-type="fig" rid="pone-0018822-g001">Fig. 1</xref>), in line with our other findings suggesting a high threshold for inducing rebounds in the adult cat <italic>in vivo</italic>. Furthermore, our rebound responses were not entirely congruent with the rebound responses from in vitro work, which has described one fast rebound response, attributed to T-type calcium channels <xref rid="pone.0018822-Molineux1" ref-type="bibr">[53]</xref>, and a slow, prolonged rebound attributed to persistent sodium current <xref rid="pone.0018822-Sangrey1" ref-type="bibr">[54]</xref>. Possible reasons for the discrepancy is that the channel composition in juvenile rodents, explored <italic>in vitro</italic>, and the adult cat <italic>in vivo</italic> could be different. Perhaps more importantly, the very different conductance state of the <italic>in vivo</italic> neuron could mean that the activation of these components is less distinct and may have different dynamics.</p></sec><sec id="s3d"><title>Potential roles of the post-inhibitory excitation <italic>in vivo</italic>
+</title><p>We used manual peripheral activation of PF inputs to PCs but found that this type of input consistently failed to evoke rebounds in the DCN cells. Since the temporal response profile and depth of modulation of PC simple spike activation obtained with this stimulation (<xref ref-type="fig" rid="pone-0018822-g008">Fig. 8E</xref> and <xref rid="pone.0018822-Jorntell1" ref-type="bibr">[40]</xref>) is not different from that recorded from PCs during different forms of behavioural modulation <xref rid="pone.0018822-Cerminara2" ref-type="bibr">[29]</xref>, <xref rid="pone.0018822-Medina2" ref-type="bibr">[50]</xref>, <xref rid="pone.0018822-Pasalar1" ref-type="bibr">[55]</xref> this finding suggested that PF activation of PCs in the normal operational range may not be capable of eliciting rebounds. A hypothetical possibility is that the degree of simple spike synchrony between the different PCs of a microzone would be dramatically higher in the awake than in the decerebrate animal. However, speaking against this possibility is that the background PC simple spike activity in our preparation is very similar to that obtained in awake animals <xref rid="pone.0018822-Cerminara2" ref-type="bibr">[29]</xref>, <xref rid="pone.0018822-Armstrong1" ref-type="bibr">[56]</xref>, and the degree of coupling between climbing fibers is similar to that recorded in intact animals <xref rid="pone.0018822-Bengtsson1" ref-type="bibr">[35]</xref>, <xref rid="pone.0018822-DeZeeuw1" ref-type="bibr">[41]</xref>, <xref rid="pone.0018822-Lang1" ref-type="bibr">[57]</xref>. In addition, the findings obtained from IO stimulation in the present study suggest that rebounds require that a very large proportion of the PCs innervating the same DCN cell (i.e. PCs activated within the same sagittal band of one or a few microzones) are activated in near-perfect synchrony (i.e. within a couple of ms). Available data from awake animals show that simple spikes among pairs of PCs within the same sagittal, functional zone can be activated in relative synchrony during relevant behaviour but only with a coupling ratio of a few percent above chance <xref rid="pone.0018822-DeZeeuw1" ref-type="bibr">[41]</xref>.</p><p>In contrast, we found that synchronized activation of all the climbing fibers within the microcomplex evoked strong rebounds, which could suggest a role <italic>in vivo</italic> in association with climbing fiber activation. Climbing fiber responses can be readily recorded during motor performance <xref rid="pone.0018822-Apps4" ref-type="bibr">[58]</xref>, <xref rid="pone.0018822-vanKan1" ref-type="bibr">[59]</xref>, <xref rid="pone.0018822-Gibson1" ref-type="bibr">[60]</xref>, <xref rid="pone.0018822-Horn1" ref-type="bibr">[61]</xref>. In addition, the climbing fiber system has natural mechanisms for synchronizing its activation, and climbing fibers within the same microcomplex display a heightened degree of synchrony <xref rid="pone.0018822-Bengtsson1" ref-type="bibr">[35]</xref>, <xref rid="pone.0018822-Sugihara3" ref-type="bibr">[62]</xref>. However, movement initiation is associated with a strong depression of IO excitability <xref rid="pone.0018822-Apps4" ref-type="bibr">[58]</xref>, <xref rid="pone.0018822-Gibson1" ref-type="bibr">[60]</xref>, <xref rid="pone.0018822-Horn1" ref-type="bibr">[61]</xref>, <xref rid="pone.0018822-Horn2" ref-type="bibr">[63]</xref> and during normal motor control, strong inhibition followed by rebound excitation is a pattern that is not observed in the DCN cell firing behaviour <xref rid="pone.0018822-vanKan1" ref-type="bibr">[59]</xref>, <xref rid="pone.0018822-Mason1" ref-type="bibr">[64]</xref>. A remaining possibility is that climbing fiber activation sufficiently synchronized to evoke rebounds occurs only when a strong afferent drive to the IO and synchronization of IO neurons coincide. This could for example be triggered by situations that require cerebellar learning. Alternatively, full-blown rebounds may be experimental artefacts in the sense that the degree of synchronous activation obtained by intracranial stimulation is unphysiological. The conductance machinery underlying the rebound could instead serve the purpose of speeding up the DCN cell response to situations that lead to a fast reduction in the PC simple spike output. This would help DCN cells to overcome the temporal limitations imposed by the lingering decay phases of the spontaneously activated PC IPSPs following inhibition from the cortical interneurons. Future studies are needed to resolve whether rebound responses actually occur under behavior or whether the conductance machinery that underlie them have other functions.</p></sec></sec><sec sec-type="materials|methods" id="s4"><title>Materials and Methods</title><p>Adult cats were prepared as previously described <xref rid="pone.0018822-Jorntell1" ref-type="bibr">[40]</xref>, <xref rid="pone.0018822-Jorntell4" ref-type="bibr">[65]</xref>. Briefly, following an initial anesthesia with propofol (Diprivan&#x000ae; Zeneca Ltd, Macclesfield Cheshire, UK), the animals were decerebrated at the intercollicular level and the anesthesia was discontinued. The animals were artificially ventilated and the end-expiratory CO<sub>2</sub>, blood pressure and rectal temperature were continuously monitored and maintained within physiological limits. Mounting in a stereotaxic frame, drainage of cerebrospinal fluid, pneumothorax and clamping the spinal processes of a few cervical and lumbar vertebral bodies served to increase the mechanical stability of the preparation. Our EEG recordings were characterized by a background of periodic 1&#x02013;4 Hz oscillatory activity, periodically interrupted by large-amplitude 7&#x02013;14 Hz spindle oscillations lasting for 0.5 s or more. These forms of EEG activities are normally associated with deep stages of sleep. The pattern of EEG activity and the blood pressure remained stable, also on noxious stimulation, throughout experiments.</p><sec id="s4a"><title>Recordings and stimulation</title><p>The initial delineation of the forelimb area of the C3 zone in the cerebellar anterior lobe and the continuous monitoring of the general condition in the sensitive mossy fiber-to-granule cell-to-parallel fiber pathway were performed as described previously <xref rid="pone.0018822-Ekerot3" ref-type="bibr">[39]</xref>. Also the general recording procedures and the procedures for placing stimulation electrodes in the inferior olive have been described in detail elsewhere <xref rid="pone.0018822-Jorntell4" ref-type="bibr">[65]</xref>. In vivo patch clamp recordings were made from deep cerebellar nuclear cells with patch pipettes pulled to 6&#x02013;14 MOhm (potassium-gluconate based internal solution, chloride 7.3 mM, same solution as in <xref rid="pone.0018822-Jorntell4" ref-type="bibr">[65]</xref>, <xref rid="pone.0018822-Jorntell5" ref-type="bibr">[66]</xref>. A special adaptation for the DCN recordings was to pull the final 10 mm of the patch pipettes to one long, narrow part (&#x0003c;200 um) using a custom-made box-filament on a Sutter micropipette puller (P-97, Sutter Instruments Co., USA). Extracellular metal electrode recordings (exposed metal tips 3&#x02013;15 um) were made from DCN neurons, Purkinje cells of the C3 zone, and climbing fiber field potentials in the molecular layer of the C3 zone.</p><p>In order to localize the anterior interposed nucleus (AIP), all experiments started with a topographical exploration using a metal electrode. The microelectrode was inserted at around the border between the C2 and C3 zones just rostral to the primary fissure at 90&#x000b0; angle relative to the horizontal stereotaxic plane. To keep track of the electrode location, we continuously monitored the spontaneous activity and the field and unitary responses evoked by electrical skin stimulation throughout electrode tracks. The dorsal border of the AIP was identified by a marked increase in background noise (presumably reflected neuronal multi-unit activity) relative to the overlying white matter, and the characteristic field potentials evoked by electrical skin stimulation <xref rid="pone.0018822-Garwicz2" ref-type="bibr">[19]</xref>, <xref rid="pone.0018822-Ekerot5" ref-type="bibr">[67]</xref>. The medial and lateral borders of the AIP could be identified on the basis of the receptive field topography for climbing fiber-activated Purkinje cell inputs, as previously described <xref rid="pone.0018822-Garwicz2" ref-type="bibr">[19]</xref>, <xref rid="pone.0018822-Ekerot5" ref-type="bibr">[67]</xref>, <xref rid="pone.0018822-Jorntell6" ref-type="bibr">[68]</xref>. The ventral part of the nucleus was characterized by a reduction in background noise.</p><p>Patch clamp pipettes were lowered under high positive pressure (3&#x02013;10 atmospheres) until we reached the dorsal part of the nucleus according to the previous identification done with the metal electrode. Once inside the nucleus, the positive pressure was reduced but not removed. When dramatic increases in tip resistance occurred as the electrode was advanced, the positive pressure was removed and a seal formation was attempted. Once obtained (0.5&#x02013;6 GOhm), rapid application of negative pressure was used to gain access to intracellular space (N&#x0200a;=&#x0200a;24). The failure rate to both establish and break seals was markedly higher than in granule cells <xref rid="pone.0018822-Jorntell5" ref-type="bibr">[66]</xref>, <xref rid="pone.0018822-Bengtsson2" ref-type="bibr">[69]</xref>. In addition to the measures we have previously used, for DCN neuron recordings major quality checks for the recordings were the spike amplitudes (at least 35 mV) and the amplitudes of the spontaneous and IO-evoked giant IPSPs. Resting membrane potential was defined as the average potential recorded between spikes at 0 pA bias current within 30 s after intracellular access (&#x02212;50 to &#x02212;55 mV). Whenever spike amplitudes or giant IPSP amplitudes deteriorated by more than 20&#x00025; from the initial record after we gained intracellular access, the recording was stopped since it was taken as an indication that the seal between the recording electrode and the cell membrane deteriorated. Access resistance was 7&#x02013;15 MOhm and compensated off-line. Some neurons were stained by neurobiotin in the electrode solution. After sagittal sectioning, the neurons, which were always located in the AIP, were studied in the confocal microscope. The reconstruction shown in <xref ref-type="fig" rid="pone-0018822-g001">Fig. 1</xref> was made from transparent z-stacks of confocal images from three contiguous sagittal sections. The full extent of the dendrites was not reconstructed, since the dendrites extended more than 0.4 mm in each direction perpendicular to the plane of section (sagittal), which made them very difficult to follow. Patch clamp recordings from granule cells and Purkinje cells were obtained using the same protocols as previously described <xref rid="pone.0018822-Jorntell5" ref-type="bibr">[66]</xref>, with the difference that Purkinje cells were recorded with electrodes with 4&#x02013;8 MOhm resistance.</p><p>Input from the skin was quantified using pairs of closely spaced percutaneous needles (stimulation with one square pulse at 0.1 ms, 1 Hz, 1 mA) and a strain-gauge device mounted on the index finger of the investigator <xref rid="pone.0018822-Jorntell4" ref-type="bibr">[65]</xref>, <xref rid="pone.0018822-Jorntell5" ref-type="bibr">[66]</xref>.</p><p>Periods of inhibited spike activity and postinhibitory rebound spike responses were defined as coherent periods, that followed immediately after a spike inhibition (more than 2 standard deviations below prestimulus baseline), during which the spiking activity was increased relative to the prestimulus baseline activity by at least 2 standard deviations (SDs) for 10 ms or more.</p><p>In order to characterize the degree of randomness of the membrane potential over time, we used Welch's method to estimate the power spectral density (PSD) (Matlab). This analysis was applied to the intracellular activity in DCN cells prevented from firing using hyperpolarizing bias current and in the traces simulated by the model (see below).</p><p>We defined the onset of IPSPs (and EPSPs in granule cells) after computing the standard deviation of the second time derivative (smoothed by adjacent averaging of &#x000b1;5 samples of digitized data) of the membrane potential during a 10 ms interval representing baseline membrane activity starting 5 ms before the onset of the PSP. The point when the recorded second time derivative first exceeded a value greater than 2 standard deviations over more than 5 sample bins (sample time 40 us) was taken as a probable start of a PSP. The potential PSP was then searched for a time-course typical for IPSPs (EPSPs in granule cells) as assessed by template-matching (using scalable EPSP templates created from isolated unitary EPSPs from the same recorded neuron using in-house software, see <xref rid="pone.0018822-Bengtsson2" ref-type="bibr">[69]</xref>) and if a match was found it was classified as an IPSP (/EPSP). The amplitude of a PSP was measured as the difference between the average membrane potential during a &#x000b1;0.5 ms epoch around its the peak amplitude and the average membrane potential during a 1 ms epoch preceding the onset of the PSP.</p><p>Recordings of climbing fiber field potentials in the cerebellar cortex were made with a tungsten-in-glass microelectrode inserted in the superficial part of the cortex (inserted 100 um below the cortical surface). Each folium of the cortex was investigated with 15&#x02013;20 recording spots within the C3 zone.</p><p>All data are given as mean &#x000b1; standard deviation unless stated otherwise.</p></sec><sec id="s4b"><title>Model of synaptic integration of IPSPs in DCN cells</title><p>A simple model of DCN cell synaptic integration, similar to that previously used for granule cells <xref rid="pone.0018822-Jorntell5" ref-type="bibr">[66]</xref>, <xref rid="pone.0018822-Bengtsson2" ref-type="bibr">[69]</xref>, was used to calculate the summation of Purkinje cell IPSPs. The only purpose of this model was to analyze the pattern of membrane potential fluctuations which could be obtained as a result of varying the number and temporal density of Purkinje cell synaptic inputs. As the model was used for simulations within a very narrow membrane potential range, it was simplified to not include any active membrane conductances. Different Purkinje cell inputs were assigned one random out of 4 standardized IPSP amplitudes, with the largest IPSP having four times the amplitude of the smallest IPSP. The model assumed a background tonic excitation or leak to counterbalance the tonic inhibition level to bring the membrane potential to &#x02212;50 mV on average (cf <xref rid="pone.0018822-Gauck1" ref-type="bibr">[4]</xref>, <xref rid="pone.0018822-Raman1" ref-type="bibr">[46]</xref>). The spike times of Purkinje cell simple spikes, recorded at a temporal resolution of 0.1 ms, was used to activate the IPSPs of the model. The simulation runs were made with 4, 13, 40, 120 and 600 PC inhibitory synapses, respectively.</p></sec><sec id="s4c"><title>Ethics statement</title><p>The experimental procedures were approved in advance by the Malm&#x000f6;/Lund Animal Research Ethics Committee (permit number and approval-ID: M32-09).</p></sec></sec></body><back><ack><p>We thank Palmi Thor Thorbergsson at the Dept. of Electrical and Information Technology, Lund University, for helping us with the power spectral density analysis.</p></ack><fn-group><fn fn-type="COI-statement"><p><bold>Competing Interests: </bold>The authors have declared that no competing interests exist.</p></fn><fn fn-type="financial-disclosure"><p><bold>Funding: </bold>The work was supported by SENSOPAC (an Integrated Project funded by the EU under FP6, IST-028056-SENSOPAC), by the National Institute of Neurological Disorders and Stroke Grant (R01 NS-040863), the Swedish Research Council (project no. K2005-04X-14780-03A and K2006-04X-08291-19-3), the Segerfalk Foundation, the Swedish Medical Society, a Linn&#x000e9; grant (project number 60012701) from the Swedish Research Council, the Knut and Alice Wallenberg Foundation (project number: KAW 2004.0119) and the Medical Faculty at Lund University. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</p></fn></fn-group><ref-list><title>References</title><ref id="pone.0018822-Destexhe1"><label>1</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Destexhe</surname><given-names>A</given-names></name><name><surname>Contreras</surname><given-names>D</given-names></name></person-group>
+<year>2006</year>
+<article-title>Neuronal computations with stochastic network states.</article-title>
+<source>Science</source>
+<volume>314</volume>
+<fpage>85</fpage>
+<lpage>90</lpage>
+<pub-id pub-id-type="pmid">17023650</pub-id></element-citation></ref><ref id="pone.0018822-Destexhe2"><label>2</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Destexhe</surname><given-names>A</given-names></name><name><surname>Rudolph</surname><given-names>M</given-names></name><name><surname>Pare</surname><given-names>D</given-names></name></person-group>
+<year>2003</year>
+<article-title>The high-conductance state of neocortical neurons in vivo.</article-title>
+<source>Nat Rev Neurosci</source>
+<volume>4</volume>
+<fpage>739</fpage>
+<lpage>751</lpage>
+<pub-id pub-id-type="pmid">12951566</pub-id></element-citation></ref><ref id="pone.0018822-Wolfart1"><label>3</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Wolfart</surname><given-names>J</given-names></name><name><surname>Debay</surname><given-names>D</given-names></name><name><surname>Le Masson</surname><given-names>G</given-names></name><name><surname>Destexhe</surname><given-names>A</given-names></name><name><surname>Bal</surname><given-names>T</given-names></name></person-group>
+<year>2005</year>
+<article-title>Synaptic background activity controls spike transfer from thalamus to cortex.</article-title>
+<source>Nat Neurosci</source>
+<volume>8</volume>
+<fpage>1760</fpage>
+<lpage>1767</lpage>
+<pub-id pub-id-type="pmid">16261132</pub-id></element-citation></ref><ref id="pone.0018822-Gauck1"><label>4</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Gauck</surname><given-names>V</given-names></name><name><surname>Jaeger</surname><given-names>D</given-names></name></person-group>
+<year>2000</year>
+<article-title>The control of rate and timing of spikes in the deep cerebellar nuclei by inhibition.</article-title>
+<source>Journal of Neuroscience</source>
+<volume>20</volume>
+<fpage>3006</fpage>
+<lpage>3016</lpage>
+<pub-id pub-id-type="pmid">10751453</pub-id></element-citation></ref><ref id="pone.0018822-Anderson1"><label>5</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Anderson</surname><given-names>JS</given-names></name><name><surname>Lampl</surname><given-names>I</given-names></name><name><surname>Gillespie</surname><given-names>DC</given-names></name><name><surname>Ferster</surname><given-names>D</given-names></name></person-group>
+<year>2000</year>
+<article-title>The contribution of noise to contrast invariance of orientation tuning in cat visual cortex.</article-title>
+<source>Science</source>
+<volume>290</volume>
+<fpage>1968</fpage>
+<lpage>1972</lpage>
+<pub-id pub-id-type="pmid">11110664</pub-id></element-citation></ref><ref id="pone.0018822-Gauck2"><label>6</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Gauck</surname><given-names>V</given-names></name><name><surname>Jaeger</surname><given-names>D</given-names></name></person-group>
+<year>2003</year>
+<article-title>The contribution of NMDA and AMPA conductances to the control of spiking in neurons of the deep cerebellar nuclei.</article-title>
+<source>J Neurosci</source>
+<volume>23</volume>
+<fpage>8109</fpage>
+<lpage>8118</lpage>
+<pub-id pub-id-type="pmid">12954873</pub-id></element-citation></ref><ref id="pone.0018822-Jahnsen1"><label>7</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Jahnsen</surname><given-names>H</given-names></name></person-group>
+<year>1986</year>
+<article-title>Electrophysiological characteristics of neurones in the guinea-pig deep cerebellar nuclei in vitro.</article-title>
+<source>j</source>
+<volume>372</volume>
+<fpage>129</fpage>
+<lpage>147</lpage>
+</element-citation></ref><ref id="pone.0018822-Aizenman1"><label>8</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Aizenman</surname><given-names>CD</given-names></name><name><surname>Manis</surname><given-names>PB</given-names></name><name><surname>Linden</surname><given-names>DJ</given-names></name></person-group>
+<year>1998</year>
+<article-title>Polarity of long-term synaptic gain change is related to postsynaptic spike firing at a cerebellar inhibitory synapse.</article-title>
+<source>Neuron</source>
+<volume>21</volume>
+<fpage>827</fpage>
+<lpage>835</lpage>
+<pub-id pub-id-type="pmid">9808468</pub-id></element-citation></ref><ref id="pone.0018822-Kistler1"><label>9</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kistler</surname><given-names>WM</given-names></name><name><surname>De Zeeuw</surname><given-names>CI</given-names></name></person-group>
+<year>2003</year>
+<article-title>Time windows and reverberating loops: a reverse-engineering approach to cerebellar function.</article-title>
+<source>Cerebellum</source>
+<volume>2</volume>
+<fpage>44</fpage>
+<lpage>54</lpage>
+<pub-id pub-id-type="pmid">12882234</pub-id></element-citation></ref><ref id="pone.0018822-Medina1"><label>10</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Medina</surname><given-names>JF</given-names></name><name><surname>Nores</surname><given-names>WL</given-names></name><name><surname>Ohyama</surname><given-names>T</given-names></name><name><surname>Mauk</surname><given-names>MD</given-names></name></person-group>
+<year>2000</year>
+<article-title>Mechanisms of cerebellar learning suggested by eyelid conditioning.</article-title>
+<source>Current Opinion in Neurobiology</source>
+<volume>10</volume>
+<fpage>717</fpage>
+<lpage>724</lpage>
+<pub-id pub-id-type="pmid">11240280</pub-id></element-citation></ref><ref id="pone.0018822-Wetmore1"><label>11</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Wetmore</surname><given-names>DZ</given-names></name><name><surname>Mukamel</surname><given-names>EA</given-names></name><name><surname>Schnitzer</surname><given-names>MJ</given-names></name></person-group>
+<year>2008</year>
+<article-title>Lock-and-key mechanisms of cerebellar memory recall based on rebound currents.</article-title>
+<source>J Neurophysiol</source>
+<volume>100</volume>
+<fpage>2328</fpage>
+<lpage>2347</lpage>
+<pub-id pub-id-type="pmid">17671105</pub-id></element-citation></ref><ref id="pone.0018822-Jacobson1"><label>12</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Jacobson</surname><given-names>GA</given-names></name><name><surname>Rokni</surname><given-names>D</given-names></name><name><surname>Yarom</surname><given-names>Y</given-names></name></person-group>
+<year>2008</year>
+<article-title>A model of the olivo-cerebellar system as a temporal pattern generator.</article-title>
+<source>Trends in Neurosciences</source>
+<volume>31</volume>
+<fpage>617</fpage>
+<lpage>625</lpage>
+<pub-id pub-id-type="pmid">18952303</pub-id></element-citation></ref><ref id="pone.0018822-Cerminara1"><label>13</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Cerminara</surname><given-names>NL</given-names></name><name><surname>Rawson</surname><given-names>JA</given-names></name></person-group>
+<year>2004</year>
+<article-title>Evidence that climbing fibers control an intrinsic spike generator in cerebellar Purkinje cells.</article-title>
+<source>Journal of Neuroscience</source>
+<volume>24</volume>
+<fpage>4510</fpage>
+<lpage>4517</lpage>
+<pub-id pub-id-type="pmid">15140921</pub-id></element-citation></ref><ref id="pone.0018822-Hoebeek1"><label>14</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Hoebeek</surname><given-names>FE</given-names></name><name><surname>Witter</surname><given-names>L</given-names></name><name><surname>Ruigrok</surname><given-names>TJ</given-names></name><name><surname>De Zeeuw</surname><given-names>CI</given-names></name></person-group>
+<year>2010</year>
+<article-title>Differential olivo-cerebellar cortical control of rebound activity in the cerebellar nuclei.</article-title>
+<source>Proc Natl Acad Sci U S A</source>
+<volume>107</volume>
+<fpage>8410</fpage>
+<lpage>8415</lpage>
+<pub-id pub-id-type="pmid">20395550</pub-id></element-citation></ref><ref id="pone.0018822-Kitai1"><label>15</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kitai</surname><given-names>ST</given-names></name><name><surname>McCrea</surname><given-names>RA</given-names></name><name><surname>Preston</surname><given-names>RJ</given-names></name><name><surname>Bishop</surname><given-names>GA</given-names></name></person-group>
+<year>1977</year>
+<article-title>Electrophysiological and horseradish peroxidase studies of precerebellar afferents to the nucleus interpositus anterior. I. Climbing fiber system.</article-title>
+<source>Brain Res</source>
+<volume>122</volume>
+<fpage>197</fpage>
+<lpage>214</lpage>
+<pub-id pub-id-type="pmid">837228</pub-id></element-citation></ref><ref id="pone.0018822-Apps1"><label>16</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Apps</surname><given-names>R</given-names></name><name><surname>Hawkes</surname><given-names>R</given-names></name></person-group>
+<year>2009</year>
+<article-title>Cerebellar cortical organization: a one-map hypothesis.</article-title>
+<source>Nat Rev Neurosci</source>
+<volume>10</volume>
+<fpage>670</fpage>
+<lpage>681</lpage>
+<pub-id pub-id-type="pmid">19693030</pub-id></element-citation></ref><ref id="pone.0018822-Ekerot1"><label>17</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Ekerot</surname><given-names>CF</given-names></name><name><surname>Garwicz</surname><given-names>M</given-names></name><name><surname>Schouenborg</surname><given-names>J</given-names></name></person-group>
+<year>1991</year>
+<article-title>Topography and nociceptive receptive fields of climbing fibres projecting to the cerebellar anterior lobe in the cat.</article-title>
+<source>Journal of Physiology (London)</source>
+<volume>441</volume>
+<fpage>257</fpage>
+<lpage>274</lpage>
+<pub-id pub-id-type="pmid">1816375</pub-id></element-citation></ref><ref id="pone.0018822-Garwicz1"><label>18</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Garwicz</surname><given-names>M</given-names></name><name><surname>Apps</surname><given-names>R</given-names></name><name><surname>Trott</surname><given-names>JR</given-names></name></person-group>
+<year>1996</year>
+<article-title>Micro-organization of olivocerebellar and corticonuclear connections of the paravermal cerebellum in the cat.</article-title>
+<source>European Journal of Neuroscience</source>
+<volume>8</volume>
+<fpage>2726</fpage>
+<lpage>2738</lpage>
+<pub-id pub-id-type="pmid">8996822</pub-id></element-citation></ref><ref id="pone.0018822-Garwicz2"><label>19</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Garwicz</surname><given-names>M</given-names></name><name><surname>Ekerot</surname><given-names>CF</given-names></name></person-group>
+<year>1994</year>
+<article-title>Topographical organization of the cerebellar cortical projection to nucleus interpositus anterior in the cat.</article-title>
+<source>Journal of Physiology (London)</source>
+<volume>474</volume>
+<fpage>245</fpage>
+<lpage>260</lpage>
+<pub-id pub-id-type="pmid">8006811</pub-id></element-citation></ref><ref id="pone.0018822-Apps2"><label>20</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Apps</surname><given-names>R</given-names></name><name><surname>Garwicz</surname><given-names>M</given-names></name></person-group>
+<year>2005</year>
+<article-title>Anatomical and physiological foundations of cerebellar information processing.</article-title>
+<source>Nature Reviews: Neuroscience</source>
+<volume>6</volume>
+<fpage>297</fpage>
+<lpage>311</lpage>
+<pub-id pub-id-type="pmid">15803161</pub-id></element-citation></ref><ref id="pone.0018822-Apps3"><label>21</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Apps</surname><given-names>R</given-names></name><name><surname>Garwicz</surname><given-names>M</given-names></name></person-group>
+<year>2000</year>
+<article-title>Precise matching of olivo-cortical divergence and cortico-nuclear convergence between somatotopically corresponding areas in the medial C1 and medial C3 zones of the paravermal cerebellum.</article-title>
+<source>European Journal of Neuroscience</source>
+<volume>12</volume>
+<fpage>205</fpage>
+<lpage>214</lpage>
+<pub-id pub-id-type="pmid">10651875</pub-id></element-citation></ref><ref id="pone.0018822-Sugihara1"><label>22</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Sugihara</surname><given-names>I</given-names></name></person-group>
+<year>2010</year>
+<article-title>Compartmentalization of the Deep Cerebellar Nuclei Based on Afferent Projections and Aldolase C Expression.</article-title>
+<source>Cerebellum</source>
+</element-citation></ref><ref id="pone.0018822-Ito1"><label>23</label><element-citation publication-type="book">
+<person-group person-group-type="author"><name><surname>Ito</surname><given-names>M</given-names></name></person-group>
+<year>1984</year>
+<source>The Cerebellum and Neural Control</source>
+<publisher-loc>New York</publisher-loc>
+<publisher-name>Raven Press</publisher-name>
+</element-citation></ref><ref id="pone.0018822-Oscarsson1"><label>24</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Oscarsson</surname><given-names>O</given-names></name></person-group>
+<year>1979</year>
+<article-title>Functional units of the cerebellum - sagittal zones and microzones.</article-title>
+<source>Trends in Neurosciences</source>
+<volume>2</volume>
+<fpage>144</fpage>
+<lpage>145</lpage>
+</element-citation></ref><ref id="pone.0018822-Andersson1"><label>25</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Andersson</surname><given-names>G</given-names></name><name><surname>Oscarsson</surname><given-names>O</given-names></name></person-group>
+<year>1978</year>
+<article-title>Climbing fiber microzones in cerebellar vermis and their projection to different groups of cells in the lateral vestibular nucleus.</article-title>
+<source>Experimental Brain Research</source>
+<volume>32</volume>
+<fpage>565</fpage>
+<lpage>579</lpage>
+<pub-id pub-id-type="pmid">689129</pub-id></element-citation></ref><ref id="pone.0018822-Uusisaari1"><label>26</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Uusisaari</surname><given-names>M</given-names></name><name><surname>Obata</surname><given-names>K</given-names></name><name><surname>Knopfel</surname><given-names>T</given-names></name></person-group>
+<year>2007</year>
+<article-title>Morphological and electrophysiological properties of GABAergic and non-GABAergic cells in the deep cerebellar nuclei.</article-title>
+<source>J Neurophysiol</source>
+<volume>97</volume>
+<fpage>901</fpage>
+<lpage>911</lpage>
+<pub-id pub-id-type="pmid">17093116</pub-id></element-citation></ref><ref id="pone.0018822-Gauck3"><label>27</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Gauck</surname><given-names>V</given-names></name><name><surname>Thomann</surname><given-names>M</given-names></name><name><surname>Jaeger</surname><given-names>D</given-names></name><name><surname>Borst</surname><given-names>A</given-names></name></person-group>
+<year>2001</year>
+<article-title>Spatial distribution of low- and high-voltage-activated calcium currents in neurons of the deep cerebellar nuclei.</article-title>
+<source>J Neurosci</source>
+<volume>21</volume>
+<fpage>RC158</fpage>
+<pub-id pub-id-type="pmid">11459879</pub-id></element-citation></ref><ref id="pone.0018822-Pedroarena1"><label>28</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Pedroarena</surname><given-names>CM</given-names></name><name><surname>Schwarz</surname><given-names>C</given-names></name></person-group>
+<year>2003</year>
+<article-title>Efficacy and short-term plasticity at GABAergic synapses between Purkinje and cerebellar nuclei neurons.</article-title>
+<source>J Neurophysiol</source>
+<volume>89</volume>
+<fpage>704</fpage>
+<lpage>715</lpage>
+<pub-id pub-id-type="pmid">12574448</pub-id></element-citation></ref><ref id="pone.0018822-Cerminara2"><label>29</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Cerminara</surname><given-names>NL</given-names></name><name><surname>Apps</surname><given-names>R</given-names></name><name><surname>Marple-Horvat</surname><given-names>DE</given-names></name></person-group>
+<year>2009</year>
+<article-title>An internal model of a moving visual target in the lateral cerebellum.</article-title>
+<source>J Physiol</source>
+<volume>587</volume>
+<fpage>429</fpage>
+<lpage>442</lpage>
+<pub-id pub-id-type="pmid">19047203</pub-id></element-citation></ref><ref id="pone.0018822-Palkovits1"><label>30</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Palkovits</surname><given-names>M</given-names></name><name><surname>Mezey</surname><given-names>E</given-names></name><name><surname>Hamori</surname><given-names>J</given-names></name><name><surname>Szentagothai</surname><given-names>J</given-names></name></person-group>
+<year>1977</year>
+<article-title>Quantitative histological analysis of the cerebellar nuclei in the cat. I. Numerical data on cells and synapses.</article-title>
+<source>Exp Brain Res</source>
+<volume>28</volume>
+<fpage>189</fpage>
+<lpage>209</lpage>
+<pub-id pub-id-type="pmid">881003</pub-id></element-citation></ref><ref id="pone.0018822-Zheng1"><label>31</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Zheng</surname><given-names>N</given-names></name><name><surname>Raman</surname><given-names>IM</given-names></name></person-group>
+<year>2009</year>
+<article-title>Ca currents activated by spontaneous firing and synaptic disinhibition in neurons of the cerebellar nuclei.</article-title>
+<source>J Neurosci</source>
+<volume>29</volume>
+<fpage>9826</fpage>
+<lpage>9838</lpage>
+<pub-id pub-id-type="pmid">19657035</pub-id></element-citation></ref><ref id="pone.0018822-Ekerot2"><label>32</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Ekerot</surname><given-names>CF</given-names></name><name><surname>Larson</surname><given-names>B</given-names></name></person-group>
+<year>1979</year>
+<article-title>The dorsal spino-olivocerebellar system in the cat. II. Somatotopical organization.</article-title>
+<source>Experimental Brain Research</source>
+<volume>36</volume>
+<fpage>219</fpage>
+<lpage>232</lpage>
+<pub-id pub-id-type="pmid">488197</pub-id></element-citation></ref><ref id="pone.0018822-Sugihara2"><label>33</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Sugihara</surname><given-names>I</given-names></name><name><surname>Wu</surname><given-names>HS</given-names></name><name><surname>Shinoda</surname><given-names>Y</given-names></name></person-group>
+<year>2001</year>
+<article-title>The entire trajectories of single olivocerebellar axons in the cerebellar cortex and their contribution to Cerebellar compartmentalization.</article-title>
+<source>J Neurosci</source>
+<volume>21</volume>
+<fpage>7715</fpage>
+<lpage>7723</lpage>
+<pub-id pub-id-type="pmid">11567061</pub-id></element-citation></ref><ref id="pone.0018822-Chorev1"><label>34</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Chorev</surname><given-names>E</given-names></name><name><surname>Yarom</surname><given-names>Y</given-names></name><name><surname>Lampl</surname><given-names>I</given-names></name></person-group>
+<year>2007</year>
+<article-title>Rhythmic episodes of subthreshold membrane potential oscillations in the rat inferior olive nuclei in vivo.</article-title>
+<source>J Neurosci</source>
+<volume>27</volume>
+<fpage>5043</fpage>
+<lpage>5052</lpage>
+<pub-id pub-id-type="pmid">17494690</pub-id></element-citation></ref><ref id="pone.0018822-Bengtsson1"><label>35</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Bengtsson</surname><given-names>F</given-names></name><name><surname>Jorntell</surname><given-names>H</given-names></name></person-group>
+<year>2009</year>
+<article-title>Climbing Fiber Coupling between Adjacent Purkinje Cell Dendrites in Vivo.</article-title>
+<source>Front Cell Neurosci</source>
+<volume>3</volume>
+<fpage>7</fpage>
+<pub-id pub-id-type="pmid">19710952</pub-id></element-citation></ref><ref id="pone.0018822-Llinas1"><label>36</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Llinas</surname><given-names>R</given-names></name><name><surname>Muhlethaler</surname><given-names>M</given-names></name></person-group>
+<year>1988</year>
+<article-title>Electrophysiology of guinea-pig cerebellar nuclear cells in the in vitro brain stem-cerebellar preparation.</article-title>
+<source>J Physiol</source>
+<volume>404</volume>
+<fpage>241</fpage>
+<lpage>258</lpage>
+<pub-id pub-id-type="pmid">2855348</pub-id></element-citation></ref><ref id="pone.0018822-Alvina1"><label>37</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Alvina</surname><given-names>K</given-names></name><name><surname>Ellis-Davies</surname><given-names>G</given-names></name><name><surname>Khodakhah</surname><given-names>K</given-names></name></person-group>
+<year>2009</year>
+<article-title>T-type calcium channels mediate rebound firing in intact deep cerebellar neurons.</article-title>
+<source>Neuroscience</source>
+<volume>158</volume>
+<fpage>635</fpage>
+<lpage>641</lpage>
+<pub-id pub-id-type="pmid">18983899</pub-id></element-citation></ref><ref id="pone.0018822-Dean1"><label>38</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Dean</surname><given-names>P</given-names></name><name><surname>Porrill</surname><given-names>J</given-names></name><name><surname>Ekerot</surname><given-names>CF</given-names></name><name><surname>Jorntell</surname><given-names>H</given-names></name></person-group>
+<year>2010</year>
+<article-title>The cerebellar microcircuit as an adaptive filter: experimental and computational evidence.</article-title>
+<source>Nat Rev Neurosci</source>
+<volume>11</volume>
+<fpage>30</fpage>
+<lpage>43</lpage>
+<pub-id pub-id-type="pmid">19997115</pub-id></element-citation></ref><ref id="pone.0018822-Ekerot3"><label>39</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Ekerot</surname><given-names>CF</given-names></name><name><surname>Jorntell</surname><given-names>H</given-names></name></person-group>
+<year>2001</year>
+<article-title>Parallel fibre receptive fields of Purkinje cells and interneurons are climbing fibre-specific.</article-title>
+<source>EurJNeurosci</source>
+<volume>13</volume>
+<fpage>1303</fpage>
+<lpage>1310</lpage>
+</element-citation></ref><ref id="pone.0018822-Jorntell1"><label>40</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Jorntell</surname><given-names>H</given-names></name><name><surname>Ekerot</surname><given-names>CF</given-names></name></person-group>
+<year>2002</year>
+<article-title>Reciprocal bidirectional plasticity of parallel fiber receptive fields in cerebellar Purkinje cells and their afferent interneurons.</article-title>
+<source>Neuron</source>
+<volume>34</volume>
+<fpage>797</fpage>
+<lpage>806</lpage>
+<pub-id pub-id-type="pmid">12062025</pub-id></element-citation></ref><ref id="pone.0018822-DeZeeuw1"><label>41</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>De Zeeuw</surname><given-names>CI</given-names></name><name><surname>Koekkoek</surname><given-names>SK</given-names></name><name><surname>Wylie</surname><given-names>DR</given-names></name><name><surname>Simpson</surname><given-names>JI</given-names></name></person-group>
+<year>1997</year>
+<article-title>Association between dendritic lamellar bodies and complex spike synchrony in the olivocerebellar system.</article-title>
+<source>J Neurophysiol</source>
+<volume>77</volume>
+<fpage>1747</fpage>
+<lpage>1758</lpage>
+<pub-id pub-id-type="pmid">9114233</pub-id></element-citation></ref><ref id="pone.0018822-Wise1"><label>42</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Wise</surname><given-names>AK</given-names></name><name><surname>Cerminara</surname><given-names>NL</given-names></name><name><surname>Marple-Horvat</surname><given-names>DE</given-names></name><name><surname>Apps</surname><given-names>R</given-names></name></person-group>
+<year>2010</year>
+<article-title>Mechanisms of synchronous activity in cerebellar Purkinje cells.</article-title>
+<source>J Physiol</source>
+<volume>588</volume>
+<fpage>2373</fpage>
+<lpage>2390</lpage>
+<pub-id pub-id-type="pmid">20442262</pub-id></element-citation></ref><ref id="pone.0018822-Sultan1"><label>43</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Sultan</surname><given-names>F</given-names></name><name><surname>Konig</surname><given-names>T</given-names></name><name><surname>Mock</surname><given-names>M</given-names></name><name><surname>Thier</surname><given-names>P</given-names></name></person-group>
+<year>2002</year>
+<article-title>Quantitative organization of neurotransmitters in the deep cerebellar nuclei of the Lurcher mutant.</article-title>
+<source>J Comp Neurol</source>
+<volume>452</volume>
+<fpage>311</fpage>
+<lpage>323</lpage>
+<pub-id pub-id-type="pmid">12355415</pub-id></element-citation></ref><ref id="pone.0018822-Matsushita1"><label>44</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Matsushita</surname><given-names>M</given-names></name><name><surname>Iwahori</surname><given-names>N</given-names></name></person-group>
+<year>1971</year>
+<article-title>Structural organization of the interpositus and the dentate nuclei.</article-title>
+<source>Brain Res</source>
+<volume>35</volume>
+<fpage>17</fpage>
+<lpage>36</lpage>
+<pub-id pub-id-type="pmid">4109144</pub-id></element-citation></ref><ref id="pone.0018822-DeZeeuw2"><label>45</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>De Zeeuw</surname><given-names>CI</given-names></name><name><surname>Berrebi</surname><given-names>AS</given-names></name></person-group>
+<year>1996</year>
+<article-title>Individual Purkinje cell axons terminate on both inhibitory and excitatory neurons in the cerebellar and vestibular nuclei.</article-title>
+<source>AnnNYAcadSci</source>
+<volume>781</volume>
+<fpage>607</fpage>
+<lpage>610</lpage>
+</element-citation></ref><ref id="pone.0018822-Raman1"><label>46</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Raman</surname><given-names>IM</given-names></name><name><surname>Gustafson</surname><given-names>AE</given-names></name><name><surname>Padgett</surname><given-names>D</given-names></name></person-group>
+<year>2000</year>
+<article-title>Ionic currents and spontaneous firing in neurons isolated from the cerebellar nuclei.</article-title>
+<source>Journal of Neuroscience</source>
+<volume>20</volume>
+<fpage>9004</fpage>
+<lpage>9016</lpage>
+<pub-id pub-id-type="pmid">11124976</pub-id></element-citation></ref><ref id="pone.0018822-Ekerot4"><label>47</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Ekerot</surname><given-names>CF</given-names></name><name><surname>Jorntell</surname><given-names>H</given-names></name></person-group>
+<year>2003</year>
+<article-title>Parallel fiber receptive fields: a key to understanding cerebellar operation and learning.</article-title>
+<source>Cerebellum</source>
+<volume>2</volume>
+<fpage>101</fpage>
+<lpage>109</lpage>
+<pub-id pub-id-type="pmid">12880177</pub-id></element-citation></ref><ref id="pone.0018822-Jorntell2"><label>48</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Jorntell</surname><given-names>H</given-names></name><name><surname>Hansel</surname><given-names>C</given-names></name></person-group>
+<year>2006</year>
+<article-title>Synaptic memories upside down: bidirectional plasticity at cerebellar parallel fiber-Purkinje cell synapses.</article-title>
+<source>Neuron</source>
+<volume>52</volume>
+<fpage>227</fpage>
+<lpage>238</lpage>
+<pub-id pub-id-type="pmid">17046686</pub-id></element-citation></ref><ref id="pone.0018822-Jorntell3"><label>49</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Jorntell</surname><given-names>H</given-names></name><name><surname>Bengtsson</surname><given-names>F</given-names></name><name><surname>Schonewille</surname><given-names>M</given-names></name><name><surname>De Zeeuw</surname><given-names>CI</given-names></name></person-group>
+<year>2010</year>
+<article-title>Cerebellar molecular layer interneurons - computational properties and roles in learning.</article-title>
+<source>Trends Neurosci</source>
+<volume>33</volume>
+<fpage>524</fpage>
+<lpage>532</lpage>
+<pub-id pub-id-type="pmid">20869126</pub-id></element-citation></ref><ref id="pone.0018822-Medina2"><label>50</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Medina</surname><given-names>JF</given-names></name><name><surname>Lisberger</surname><given-names>SG</given-names></name></person-group>
+<year>2007</year>
+<article-title>Variation, signal, and noise in cerebellar sensory-motor processing for smooth-pursuit eye movements.</article-title>
+<source>J Neurosci</source>
+<volume>27</volume>
+<fpage>6832</fpage>
+<lpage>6842</lpage>
+<pub-id pub-id-type="pmid">17581971</pub-id></element-citation></ref><ref id="pone.0018822-Alvina2"><label>51</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Alvina</surname><given-names>K</given-names></name><name><surname>Walter</surname><given-names>JT</given-names></name><name><surname>Kohn</surname><given-names>A</given-names></name><name><surname>Ellis-Davies</surname><given-names>G</given-names></name><name><surname>Khodakhah</surname><given-names>K</given-names></name></person-group>
+<year>2008</year>
+<article-title>Questioning the role of rebound firing in the cerebellum.</article-title>
+<source>Nat Neurosci</source>
+<volume>11</volume>
+<fpage>1256</fpage>
+<lpage>1258</lpage>
+<pub-id pub-id-type="pmid">18820695</pub-id></element-citation></ref><ref id="pone.0018822-Hesslow1"><label>52</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Hesslow</surname><given-names>G</given-names></name></person-group>
+<year>1994</year>
+<article-title>Inhibition of classically conditioned eyeblink responses by stimulation of the cerebellar cortex in the decerebrate cat.</article-title>
+<source>Journal of Physiology (London)</source>
+<volume>476</volume>
+<fpage>245</fpage>
+<lpage>256</lpage>
+<pub-id pub-id-type="pmid">8046641</pub-id></element-citation></ref><ref id="pone.0018822-Molineux1"><label>53</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Molineux</surname><given-names>ML</given-names></name><name><surname>McRory</surname><given-names>JE</given-names></name><name><surname>McKay</surname><given-names>BE</given-names></name><name><surname>Hamid</surname><given-names>J</given-names></name><name><surname>Mehaffey</surname><given-names>WH</given-names></name><etal/></person-group>
+<year>2006</year>
+<article-title>Specific T-type calcium channel isoforms are associated with distinct burst phenotypes in deep cerebellar nuclear neurons.</article-title>
+<source>Proc Natl Acad Sci U S A</source>
+<volume>103</volume>
+<fpage>5555</fpage>
+<lpage>5560</lpage>
+<pub-id pub-id-type="pmid">16567615</pub-id></element-citation></ref><ref id="pone.0018822-Sangrey1"><label>54</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Sangrey</surname><given-names>T</given-names></name><name><surname>Jaeger</surname><given-names>D</given-names></name></person-group>
+<year>2010</year>
+<article-title>Analysis of distinct short and prolonged components in rebound spiking of deep cerebellar nucleus neurons.</article-title>
+<source>Eur J Neurosci</source>
+<volume>32</volume>
+<fpage>1646</fpage>
+<lpage>1657</lpage>
+<pub-id pub-id-type="pmid">21039958</pub-id></element-citation></ref><ref id="pone.0018822-Pasalar1"><label>55</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Pasalar</surname><given-names>S</given-names></name><name><surname>Roitman</surname><given-names>AV</given-names></name><name><surname>Durfee</surname><given-names>WK</given-names></name><name><surname>Ebner</surname><given-names>TJ</given-names></name></person-group>
+<year>2006</year>
+<article-title>Force field effects on cerebellar Purkinje cell discharge with implications for internal models.</article-title>
+<source>Nat Neurosci</source>
+<volume>9</volume>
+<fpage>1404</fpage>
+<lpage>1411</lpage>
+<pub-id pub-id-type="pmid">17028585</pub-id></element-citation></ref><ref id="pone.0018822-Armstrong1"><label>56</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Armstrong</surname><given-names>DM</given-names></name><name><surname>Rawson</surname><given-names>JA</given-names></name></person-group>
+<year>1979</year>
+<article-title>Activity patterns of cerebellar cortical neurones and climbing fibre afferents in the awake cat.</article-title>
+<source>Journal of Physiology (London)</source>
+<volume>289</volume>
+<fpage>425</fpage>
+<lpage>448</lpage>
+<pub-id pub-id-type="pmid">458677</pub-id></element-citation></ref><ref id="pone.0018822-Lang1"><label>57</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Lang</surname><given-names>EJ</given-names></name><name><surname>Sugihara</surname><given-names>I</given-names></name><name><surname>Welsh</surname><given-names>JP</given-names></name><name><surname>Llinas</surname><given-names>R</given-names></name></person-group>
+<year>1999</year>
+<article-title>Patterns of spontaneous purkinje cell complex spike activity in the awake rat.</article-title>
+<source>J Neurosci</source>
+<volume>19</volume>
+<fpage>2728</fpage>
+<lpage>2739</lpage>
+<pub-id pub-id-type="pmid">10087085</pub-id></element-citation></ref><ref id="pone.0018822-Apps4"><label>58</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Apps</surname><given-names>R</given-names></name><name><surname>Atkins</surname><given-names>MJ</given-names></name><name><surname>Garwicz</surname><given-names>M</given-names></name></person-group>
+<year>1997</year>
+<article-title>Gating of cutaneous input to cerebellar climbing fibres during a reaching task in the cat.</article-title>
+<source>Journal of Physiology (London)</source>
+<volume>502</volume>
+<issue>Pt 1</issue>
+<fpage>203</fpage>
+<lpage>214</lpage>
+<pub-id pub-id-type="pmid">9234207</pub-id></element-citation></ref><ref id="pone.0018822-vanKan1"><label>59</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>van Kan</surname><given-names>PL</given-names></name><name><surname>Houk</surname><given-names>JC</given-names></name><name><surname>Gibson</surname><given-names>AR</given-names></name></person-group>
+<year>1993</year>
+<article-title>Output organization of intermediate cerebellum of the monkey.</article-title>
+<source>J Neurophysiol</source>
+<volume>69</volume>
+<fpage>57</fpage>
+<lpage>73</lpage>
+<pub-id pub-id-type="pmid">8433134</pub-id></element-citation></ref><ref id="pone.0018822-Gibson1"><label>60</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Gibson</surname><given-names>AR</given-names></name><name><surname>Horn</surname><given-names>KM</given-names></name><name><surname>Pong</surname><given-names>M</given-names></name></person-group>
+<year>2004</year>
+<article-title>Activation of climbing fibers.</article-title>
+<source>Cerebellum</source>
+<volume>3</volume>
+<fpage>212</fpage>
+<lpage>221</lpage>
+<pub-id pub-id-type="pmid">15686099</pub-id></element-citation></ref><ref id="pone.0018822-Horn1"><label>61</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Horn</surname><given-names>KM</given-names></name><name><surname>Pong</surname><given-names>M</given-names></name><name><surname>Gibson</surname><given-names>AR</given-names></name></person-group>
+<year>2004</year>
+<article-title>Discharge of inferior olive cells during reaching errors and perturbations.</article-title>
+<source>Brain Res</source>
+<volume>996</volume>
+<fpage>148</fpage>
+<lpage>158</lpage>
+<pub-id pub-id-type="pmid">14697492</pub-id></element-citation></ref><ref id="pone.0018822-Sugihara3"><label>62</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Sugihara</surname><given-names>I</given-names></name><name><surname>Marshall</surname><given-names>SP</given-names></name><name><surname>Lang</surname><given-names>EJ</given-names></name></person-group>
+<year>2007</year>
+<article-title>Relationship of complex spike synchrony bands and climbing fiber projection determined by reference to aldolase C compartments in Crus IIa of the rat cerebellar cortex.</article-title>
+<source>Journal of Comparative Neurology</source>
+<volume>501</volume>
+<fpage>13</fpage>
+<lpage>29</lpage>
+<pub-id pub-id-type="pmid">17206616</pub-id></element-citation></ref><ref id="pone.0018822-Horn2"><label>63</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Horn</surname><given-names>KM</given-names></name><name><surname>Van Kan</surname><given-names>PL</given-names></name><name><surname>Gibson</surname><given-names>AR</given-names></name></person-group>
+<year>1996</year>
+<article-title>Reduction of rostral dorsal accessory olive responses during reaching.</article-title>
+<source>J Neurophysiol</source>
+<volume>76</volume>
+<fpage>4140</fpage>
+<lpage>4151</lpage>
+<pub-id pub-id-type="pmid">8985907</pub-id></element-citation></ref><ref id="pone.0018822-Mason1"><label>64</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Mason</surname><given-names>CR</given-names></name><name><surname>Miller</surname><given-names>LE</given-names></name><name><surname>Baker</surname><given-names>JF</given-names></name><name><surname>Houk</surname><given-names>JC</given-names></name></person-group>
+<year>1998</year>
+<article-title>Organization of reaching and grasping movements in the primate cerebellar nuclei as revealed by focal muscimol inactivations.</article-title>
+<source>J Neurophysiol</source>
+<volume>79</volume>
+<fpage>537</fpage>
+<lpage>554</lpage>
+<pub-id pub-id-type="pmid">9463420</pub-id></element-citation></ref><ref id="pone.0018822-Jorntell4"><label>65</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Jorntell</surname><given-names>H</given-names></name><name><surname>Ekerot</surname><given-names>CF</given-names></name></person-group>
+<year>2003</year>
+<article-title>Receptive field plasticity profoundly alters the cutaneous parallel fiber synaptic input to cerebellar interneurons in vivo.</article-title>
+<source>Journal of Neuroscience</source>
+<volume>23</volume>
+<fpage>9620</fpage>
+<lpage>9631</lpage>
+<pub-id pub-id-type="pmid">14573542</pub-id></element-citation></ref><ref id="pone.0018822-Jorntell5"><label>66</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Jorntell</surname><given-names>H</given-names></name><name><surname>Ekerot</surname><given-names>CF</given-names></name></person-group>
+<year>2006</year>
+<article-title>Properties of somatosensory synaptic integration in cerebellar granule cells in vivo.</article-title>
+<source>Journal of Neuroscience</source>
+<volume>26</volume>
+<fpage>11786</fpage>
+<lpage>11797</lpage>
+<pub-id pub-id-type="pmid">17093099</pub-id></element-citation></ref><ref id="pone.0018822-Ekerot5"><label>67</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Ekerot</surname><given-names>CF</given-names></name><name><surname>Jorntell</surname><given-names>H</given-names></name><name><surname>Garwicz</surname><given-names>M</given-names></name></person-group>
+<year>1995</year>
+<article-title>Functional relation between corticonuclear input and movements evoked on microstimulation in cerebellar nucleus interpositus anterior in the cat.</article-title>
+<source>Experimental Brain Research</source>
+<volume>106</volume>
+<fpage>365</fpage>
+<lpage>376</lpage>
+<pub-id pub-id-type="pmid">8983981</pub-id></element-citation></ref><ref id="pone.0018822-Jorntell6"><label>68</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Jorntell</surname><given-names>H</given-names></name><name><surname>Ekerot</surname><given-names>CF</given-names></name></person-group>
+<year>1999</year>
+<article-title>Topographical organization of projections to cat motor cortex from nucleus interpositus anterior and forelimb skin.</article-title>
+<source>Journal of Physiology (London)</source>
+<volume>514</volume>
+<issue>Pt 2</issue>
+<fpage>551</fpage>
+<lpage>566</lpage>
+<pub-id pub-id-type="pmid">9852335</pub-id></element-citation></ref><ref id="pone.0018822-Bengtsson2"><label>69</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Bengtsson</surname><given-names>F</given-names></name><name><surname>Jorntell</surname><given-names>H</given-names></name></person-group>
+<year>2009</year>
+<article-title>Sensory transmission in cerebellar granule cells relies on similarly coded mossy fiber inputs.</article-title>
+<source>Proc Natl Acad Sci U S A</source>
+<volume>106</volume>
+<fpage>2389</fpage>
+<lpage>2394</lpage>
+<pub-id pub-id-type="pmid">19164536</pub-id></element-citation></ref></ref-list></back></article>

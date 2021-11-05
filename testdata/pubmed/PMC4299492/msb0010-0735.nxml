@@ -1,0 +1,515 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.0 20120330//EN" "JATS-archivearticle1.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article"><?properties open_access?><front><journal-meta><journal-id journal-id-type="nlm-ta">Mol Syst Biol</journal-id><journal-id journal-id-type="iso-abbrev">Mol. Syst. Biol</journal-id><journal-id journal-id-type="publisher-id">msb</journal-id><journal-title-group><journal-title>Molecular Systems Biology</journal-title></journal-title-group><issn pub-type="ppub">1744-4292</issn><issn pub-type="epub">1744-4292</issn><publisher><publisher-name>Blackwell Publishing Ltd</publisher-name><publisher-loc>Oxford, UK</publisher-loc></publisher></journal-meta><article-meta><article-id pub-id-type="pmid">24987114</article-id><article-id pub-id-type="pmc">4299492</article-id><article-id pub-id-type="doi">10.15252/msb.20145108</article-id><article-categories><subj-group subj-group-type="heading"><subject>Articles</subject></subj-group></article-categories><title-group><article-title>An integrative, multi-scale, genome-wide model reveals the phenotypic landscape of
+<italic>Escherichia coli</italic></article-title></title-group><contrib-group><contrib contrib-type="author"><name><surname>Carrera</surname><given-names>Javier</given-names></name><xref ref-type="aff" rid="au1">1</xref><xref ref-type="author-notes" rid="fn1">&#x02020;</xref></contrib><contrib contrib-type="author"><name><surname>Estrela</surname><given-names>Raissa</given-names></name><xref ref-type="aff" rid="au2">2</xref></contrib><contrib contrib-type="author"><name><surname>Luo</surname><given-names>Jing</given-names></name><xref ref-type="aff" rid="au1">1</xref></contrib><contrib contrib-type="author"><name><surname>Rai</surname><given-names>Navneet</given-names></name><xref ref-type="aff" rid="au1">1</xref></contrib><contrib contrib-type="author"><name><surname>Tsoukalas</surname><given-names>Athanasios</given-names></name><xref ref-type="aff" rid="au1">1</xref><xref ref-type="aff" rid="au3">3</xref></contrib><contrib contrib-type="author"><name><surname>Tagkopoulos</surname><given-names>Ilias</given-names></name><xref ref-type="aff" rid="au1">1</xref><xref ref-type="aff" rid="au3">3</xref><xref ref-type="corresp" rid="cor1">*</xref></contrib><aff id="au1"><label>1</label><institution>UC Davis Genome Center, University of
+California</institution><addr-line>Davis, CA, USA</addr-line></aff><aff id="au2"><label>2</label><institution>Department of Molecular and Cell Biology, University of
+California</institution><addr-line>Berkeley, CA, USA</addr-line></aff><aff id="au3"><label>3</label><institution>Department of Computer Science, University of
+California</institution><addr-line>Davis, CA, USA</addr-line></aff></contrib-group><author-notes><corresp id="cor1">*Corresponding author. Tel: +1 530 752 7707; Fax: +1 530 752
+4767; E-mail: <email>iliast@ucdavis.edu</email></corresp><fn id="fn1" fn-type="present-address"><label>&#x02020;</label><p>Present address Department of Bioengineering, Stanford University, Stanford, CA, USA</p></fn><fn><p><bold>Subject Categories</bold> Computational Biology; Genome-Scale &#x00026; Integrative Biology;
+Metabolism</p></fn></author-notes><pub-date pub-type="collection"><month>7</month><year>2014</year></pub-date><pub-date pub-type="epub"><day>01</day><month>7</month><year>2014</year></pub-date><volume>10</volume><issue>7</issue><fpage>735</fpage><lpage>735</lpage><history><date date-type="received"><day>08</day><month>1</month><year>2014</year></date><date date-type="rev-recd"><day>02</day><month>5</month><year>2014</year></date><date date-type="accepted"><day>13</day><month>5</month><year>2014</year></date></history><permissions><copyright-statement>&#x000a9; 2014 The Authors. Published under the terms of the CC BY 4.0
+license</copyright-statement><copyright-year>2014</copyright-year><license license-type="open-access" xlink:href="http://creativecommons.org/licenses/by/4.0/"><license-p>This is an open access article under the terms of the Creative Commons Attribution 4.0 License,
+which permits use, distribution and reproduction in any medium, provided the original work is
+properly cited.</license-p></license></permissions><abstract><p>Given the vast behavioral repertoire and biological complexity of even the simplest organisms,
+accurately predicting phenotypes in novel environments and unveiling their biological organization
+is a challenging endeavor. Here, we present an integrative modeling methodology that unifies under a
+common framework the various biological processes and their interactions across multiple layers. We
+trained this methodology on an extensive normalized compendium for the gram-negative bacterium
+<italic>Escherichia coli,</italic> which incorporates gene expression data for genetic and
+environmental perturbations, transcriptional regulation, signal transduction, and metabolic
+pathways, as well as growth measurements. Comparison with measured growth and high-throughput data
+demonstrates the enhanced ability of the integrative model to predict phenotypic outcomes in various
+environmental and genetic conditions, even in cases where their underlying functions are
+under-represented in the training set. This work paves the way toward integrative techniques that
+extract knowledge from a variety of biological data to achieve more than the sum of their parts in
+the context of prediction, analysis, and redesign of biological systems.</p></abstract><kwd-group><kwd>genome engineering</kwd><kwd>genome-scale model</kwd><kwd>model-driven experimentation</kwd><kwd>predictive modeling and integration</kwd><kwd>systems and synthetic biology</kwd></kwd-group></article-meta></front><body><sec><title>Introduction</title><p>The development of an integrative genome-scale model is considered to be the Holy Grail of
+computational predictive modeling in systems biology (Tomita, <xref rid="b43" ref-type="bibr">2001</xref>). The potential of such a feat is transformative and spans most areas of life science
+research: discovery of novel properties and emerging behaviors at the organism level, generating and
+testing predictable hypotheses in well-defined simulated environments, guiding experimentation, and
+accelerating the in-depth understanding of cellular physiology. Despite its utility, whole-cell
+modeling across multiple scales remains elusive due to a number of factors. First, even for
+well-studied organisms, we still have a limited knowledge of the cellular machinery, pathways,
+proteins, and their respective functions (Frishman, <xref rid="b14" ref-type="bibr">2007</xref>;
+Hanson <italic>et al</italic>, <xref rid="b17" ref-type="bibr">2010</xref>). Furthermore, the
+complex interconnectivity and interdependencies of cellular processes render their detailed mapping
+a challenging task that is further hindered by the lack of comprehensive quantitative data across
+different environmental conditions. The latter is rapidly changing, however, due to the
+technological advances in high-throughput sequencing that enable the acquisition of an unprecedented
+amount of data that span all aspects of cellular organization. Concomitantly, research advances in
+the computational front have reached the level of maturity needed for the analysis and integration
+of these datasets.</p><p>Early work in integrative modeling under one umbrella was E-cell (Tomita <italic>et al</italic>,
+<xref rid="b42" ref-type="bibr">1999</xref>), a modular software environment for whole-cell
+simulation that included organelle sub-models (Yugi &#x00026; Tomita, <xref rid="b44" ref-type="bibr">2004</xref>). More recently, genome-scale simulations were performed to study complex phenomena,
+such as the emergence of anticipatory behavior during evolution in varying environments (Tagkopoulos
+<italic>et al</italic>, <xref rid="b39" ref-type="bibr">2008</xref>), the noise contributions of an
+inducible switch (Roberts <italic>et al</italic>, <xref rid="b37" ref-type="bibr">2011</xref>) and
+the effect of stochastic expression to metabolic variability (Labhsetwar <italic>et al</italic>,
+<xref rid="b123" ref-type="bibr">2013</xref>). A whole-cell model of <italic>Mycoplasma
+genitalium</italic>, a human urogenital parasite whose genome contains 525 genes and is described by
+28 cellular processes, was presented recently with encouraging results on the prediction of cellular
+behavior (Karr <italic>et al</italic>, <xref rid="b24" ref-type="bibr">2012</xref>). A crucial tool
+for integrative modeling is network inference algorithms, both unsupervised and supervised, which
+can be used to generate topological models and consensus networks from data (Basso <italic>et
+al</italic>, <xref rid="b3" ref-type="bibr">2005</xref>; Faith <italic>et al</italic>, <xref rid="b11" ref-type="bibr">2007</xref>; Mordelet &#x00026; Vert, <xref rid="b32" ref-type="bibr">2008</xref>; Taylor <italic>et al</italic>, <xref rid="b40" ref-type="bibr">2008</xref>; Zare
+<italic>et al</italic>, <xref rid="b45" ref-type="bibr">2009</xref>; Marbach <italic>et al</italic>,
+<xref rid="b29" ref-type="bibr">2010</xref>, <xref rid="b30" ref-type="bibr">2012</xref>). Several
+methods have targeted the integration of models across the transcriptional, proteomic, signal
+transduction, and metabolomics layers (Reed <italic>et al</italic>, <xref rid="b35" ref-type="bibr">2003</xref>, <xref rid="b36" ref-type="bibr">2006</xref>; Covert <italic>et al</italic>, <xref rid="b9" ref-type="bibr">2004</xref>; Duarte <italic>et al</italic>, <xref rid="b10" ref-type="bibr">2004</xref>; Beltran <italic>et al</italic>, <xref rid="b6" ref-type="bibr">2006</xref>; Joyce
+&#x00026; Palsson, <xref rid="b23" ref-type="bibr">2006</xref>; Kresnowati <italic>et al</italic>,
+<xref rid="b25" ref-type="bibr">2006</xref>; Becker <italic>et al</italic>, <xref rid="b4" ref-type="bibr">2007</xref>; Feist <italic>et al</italic>, <xref rid="b12" ref-type="bibr">2007</xref>;
+Andersen <italic>et al</italic>, <xref rid="b2" ref-type="bibr">2008</xref>; Feist &#x00026; Palsson,
+<xref rid="b13" ref-type="bibr">2008</xref>; Herrgard <italic>et al</italic>, <xref rid="b19" ref-type="bibr">2008</xref>; Carrera <italic>et al</italic>, <xref rid="b7" ref-type="bibr">2012a</xref>,<xref rid="b8" ref-type="bibr">b</xref>).</p><p>Our aim here was to construct a phenomenological model for bacterial organisms that integrates
+multiple layers of biological organization. We focused on a genome-scale model for
+<italic>Escherichia coli</italic>, a gram-negative, facultative anaerobic model bacterium.
+<italic>E. coli</italic> serves as an ideal candidate for multi-scale cell modeling, due to the
+wealth of data and knowledge accumulated over the years, the easiness to culture and manipulate
+experimentally, and its importance in medical and biotechnological applications. Figure<xref ref-type="fig" rid="fig01">1</xref> depicts the training&#x02013;simulation&#x02013;refinement
+methodology that can be used for the construction of data-driven genome-scale models. Starting from
+a collection of &#x0201c;omics&#x0201d; data (Fig<xref ref-type="fig" rid="fig01">1</xref>A), cellular
+processes are divided into modules, constructed from composite networks, and data-driven sub-models
+that are ultimately integrated under a unifying framework (Fig<xref ref-type="fig" rid="fig01">1</xref>B). Parameters are trained so that the model optimally captures the observed relationships
+given an objective function and a set of constraints, and the predictive ability of the model is
+then assessed through a number of statistical tests (Fig<xref ref-type="fig" rid="fig01">1</xref>C).
+Such a model can be used to generate and test biological hypotheses through simulations pertaining
+to genetic and environmental perturbations that can subsequently be validated through targeted
+experimentation (Fig<xref ref-type="fig" rid="fig01">1</xref>D). A critical aspect of any
+data-driven model is to identify the areas where further experimentation is needed to accurately
+capture phenomena and biological processes, so that targeted experiments can be performed to address
+these shortcomings. The resulting experimental data are then integrated to the training dataset,
+which in turn increase the predictive power of the model.</p><fig id="fig01" position="float"><label>Figure 1</label><caption><title>Overview of integrative modeling through targeted experimentation</title><p><list list-type="alpha-upper"><list-item><p>Collection of training data across multiple layers of cellular organization and from various data
+sources.</p></list-item><list-item><p>Development and training of a multi-scale model that integrates transcription, signal
+transduction and metabolism.</p></list-item><list-item><p>Evaluation of model generalization via comparison between predicted and measured growth and
+expression data.</p></list-item><list-item><p>Experimentally test hypotheses generated by the model and incorporate new measurements in the
+training set.</p></list-item></list></p></caption><graphic xlink:href="msb0010-0735-f1"/></fig><p>Toward this goal, we constructed a normalized gene expression (4,189 genes in 2,198 microarrays
+from 127 scientific articles), signal transduction (151 regulatory pathways, 152 publications), and
+phenomics (616 arrays) compendium (Fig<xref ref-type="fig" rid="fig02">2</xref>). The constructed
+knowledgebase was then integrated with a recently published <italic>E. coli</italic> metabolic model
+(2,583 reactions and 1,805 metabolites) (Orth <italic>et al</italic>, <xref rid="b34" ref-type="bibr">2011</xref>). The construction of this compendium led to significantly improved
+predictions by highly ranked inference methods. To allow for genetic and environmental
+perturbations, we developed a quadratic programming method coined as &#x0201c;<italic>Expression
+Balance Analysis</italic>&#x0201d; (EBA) that takes into account genetic, capacity, phenomenological,
+and environmental constraints to predict gene expression. We extended the current models for flux
+boundary calculations by developing a new method called &#x0201c;TRAnscription-based Metabolic flux
+Enrichment&#x0201d; (TRAME) that accounts for both metabolic and transcriptional interactions.
+Statistical tests and subsequent experimental validation demonstrate the capacity of this
+integrative model to predict environmental and genetic perturbations beyond current stand-alone
+metabolic and expression (ME) models.</p><fig id="fig02" position="float"><label>Figure 2</label><caption><title>Integration of signal transduction, gene expression, metabolic and phenomics data within an
+integrative framework</title><p>Links between databases, models, and knowledgebase to the computational methodologies depict the
+dependences between the various modules in the integrative genome-scale model.</p></caption><graphic xlink:href="msb0010-0735-f2"/></fig></sec><sec sec-type="results"><title>Results</title><sec><title>Genetic and environmental gene expression diversity</title><p>Genetic diversity analysis in <italic>Eco</italic>MAC shows that genetic perturbations led to
+more diverse gene expression profiles than environmental changes (Kolmogorov&#x02013;Smirnov test
+<italic>P</italic> &#x0003c; 0.023; Mann&#x02013;Whitney test <italic>P</italic> &#x0003c;
+10<sup>&#x02212;15</sup>; Supplementary Fig S4A and B). In addition, different types of genetic
+perturbations had a profoundly different expression profile: the gene expression diversity observed
+in arrays of TF rewiring experiments is more than 2.1-fold (<italic>P</italic> &#x0003c;
+10<sup>&#x02212;10</sup>) higher than in arrays from single-TF perturbation experiments such as TF
+knockouts or TF over-expressions. We did not observe significant differences in the variability
+signatures when comparing arrays of knockouts and over-expression experiments in TFs, enzymes, or
+other genes. Nonetheless, genetic perturbations of TFs led to significantly higher expression
+diversity levels (Mann&#x02013;Whitney test <italic>P</italic> &#x0003c; 10<sup>&#x02212;18</sup>;
+Kolmogorov&#x02013;Smirnov test <italic>P</italic> &#x0003c; 10<sup>&#x02212;17</sup>) than other genes
+(Supplementary Fig S4C and D). These results argue that transcriptional rewiring of the existing
+transcriptional regulatory network (TRN) tends to create larger ripple effects that reverberate
+across the global transcriptional network, when compared to other single-gene perturbations.</p><p>Visualization of the gene targets present in <italic>Eco</italic>MAC reveals a remarkably sparse
+landscape of genetic and environmental perturbations that have been conducted so far (Fig<xref ref-type="fig" rid="fig03">3</xref>A). Overlap of <italic>Eco</italic>MAC and <italic>Eco</italic>ST
+depicts clusters of TFs that are implicated in sensing environmental states, such as variations in
+carbon, nitrogen, and phosphate sources, as well as oxygen, metals, and other supplements (Fig<xref ref-type="fig" rid="fig03">3</xref>B). The calculated effector strength in the whole spectrum of
+environment-sensing regulatory mechanisms reveals a bias toward highly sensitive TF-effector pairs,
+where small changes have major implications in cellular expression (<xref ref-type="supplementary-material" rid="SD1">Supplementary Fig S9</xref>).</p><fig id="fig03" position="float"><label>Figure 3</label><caption><title>Map of genetic perturbations, signal transduction pathways and inferred interactions</title><p><list list-type="alpha-upper"><list-item><p>TRN of <italic>Escherichia coli</italic> including all transcriptional interactions
+experimentally verified. Color nodes represent genes identified as genetic perturbations in
+<italic>Eco</italic>MAC. The TRN contains 1,591 genes (182 TFs representing a 55.5% of the
+total), and 3,704 transcriptional interactions. 97 of the 141 genetic perturbations fall within the
+experimentally verified interactions and are shown here.</p></list-item><list-item><p>STSs of <italic>Escherichia coli</italic> represented in the <italic>Eco</italic>ST TRN. Nodes
+represent TFs that are related to carbon sources (red), metals (grey), acids (yellow), nitrogen
+sources (orange), oxygen (blue), phosphate sources (green), or supplements such as amino acids or
+precursors of amino acids (light blue). All transcriptional interactions between TFs are represented
+(416 regulations between 183 TFs).</p></list-item><list-item><p>Number of transcriptional interactions with low, strong, and confirmed evidence and ROC/PR curves
+for predicted transcriptional activators/repressors (bottom panels) and inferred interactions (top,
+right panel). The performance of three methods trained on <italic>Eco</italic>MAC (AUC =
+0.73, AUPRC = 0.23) and 35 methods trained on the 809 arrays of DREAM 5 (AUC = 0.6,
+AUPRC = 0.23) is shown. The confirmed interactions in RegulonDB v8.1 constitute the golden
+standard.</p></list-item><list-item><p>GO enrichment of the top 500 inferred interactions (0.45 precision threshold).</p></list-item></list></p><p>Source data are available online for this figure.</p></caption><graphic xlink:href="msb0010-0735-f3"/></fig></sec><sec><title>An integrative knowledgebase as a base to regulatory network enrichment</title><p>We performed network analysis to tap on <italic>Eco</italic>MAC's potential to reveal
+novel interactions in <italic>E. coli</italic>'s TRN. We used inference methods that were
+highly ranked in the latest DREAM challenge to capture distinct <italic>Eco</italic>MAC features by
+applying mutual information, constrained regression, tree-based methods, and other statistical
+techniques. Remarkably, inference of regulatory interactions based on the <italic>Eco</italic>MAC
+compendium increased the performance of the community classifier by 8 to 22%, depending on
+the number of methods and golden standard used (Supplementary Fig S5). From the top 500
+computationally inferred interactions (precision cutoff at 0.45, Fig<xref ref-type="fig" rid="fig03">3</xref>C), the most enriched biological processes are response to stimulus (222 interactions),
+locomotion and taxis (81 interactions), and cell, ciliar, or flagellar motility (33 interactions,
+Fig<xref ref-type="fig" rid="fig03">3</xref>D). Comparison of the Pearson correlation coefficient
+(PCC) between the expression profiles of TFs and their targets to random pairs shows the first to be
+significantly highly correlated (Kolmogorov&#x02013;Smirnov test <italic>P</italic> &#x0003c;
+10<sup>&#x02212;10</sup> and Mann&#x02013;Whitney test <italic>P</italic> &#x0003c;
+10<sup>&#x02212;10</sup>; <xref ref-type="supplementary-material" rid="SD1">Supplementary Fig
+S6</xref>) and with similar profiles for both experimentally validated and computationally inferred
+interactions, which reinforces the likelihood that these putative interactions are indeed present in
+the respective experimental conditions.</p></sec><sec><title>Expression Balance Analysis</title><p>Training a regression model on <italic>Eco</italic>MAC was found to be highly predictive of
+positive (0.74 AUC) and negative (0.91 AUC) interactions for arrays where TFs and genes were
+significantly correlated (interactions with <italic>PCC</italic> &#x0003e; 0.75, Fig<xref ref-type="fig" rid="fig03">3</xref>C). The EBA model was used to predict genome-wide gene expression
+values under genetic and environmental perturbations in <italic>Eco</italic>MAC (<xref ref-type="supplementary-material" rid="SD8">Supplementary Methods</xref>, section 4.4). We analyzed
+the predictive power of EBA on the entire gene expression profile or a subset of it, resulting in
+two evaluation classes (global and local, respectively). For local evaluation, all genes with a
+distance of two links or less from the perturbed gene were considered. After parameter training
+(Supplementary Fig S12), the EBA model was significantly more accurate in predicting global
+expression profiles when compared to the null-model (Fig<xref ref-type="fig" rid="fig04">4</xref>A
+and B). Specifically, the 50 and 64% of well-predicted arrays for genetic and environmental
+perturbations, respectively, outperformed the <italic>PCC</italic> average of all predictions (437
+and 55 arrays evaluated, respectively; Fig<xref ref-type="fig" rid="fig04">4</xref>A, solid area;
+Fig<xref ref-type="fig" rid="fig04">4</xref>B, blue points), whereas the null-model is shown in
+(Fig<xref ref-type="fig" rid="fig04">4</xref>A, hatched area; Fig<xref ref-type="fig" rid="fig04">4</xref>B, red points). We also assessed the effect of genetic and environmental constraints in the
+EBA model by comparing its performance to EBA predictions when no or random constraints are imposed.
+Although the performance in both these cases is closer to that of the (constraint-driven) EBA model,
+the latter results in better predictions (measured by the number of arrays above the average PCC
+threshold) as shown in Fig<xref ref-type="fig" rid="fig04">4</xref>A (bottom panel). Furthermore,
+the EBA method was found to be robust to parameter perturbations (<xref ref-type="supplementary-material" rid="SD1">Supplementary Fig S13</xref>). Similar results were
+obtained when computationally inferred interactions were included in the analysis (Supplementary Fig
+S14), and individual classes of genetic perturbations were taken into account (Supplementary Fig
+S15).</p><fig id="fig04" position="float"><label>Figure 4</label><caption><title>Quantitative assessment of Expression Balance Analysis</title><p><list list-type="alpha-upper"><list-item><p>Percentage of arrays where EBA achieved a higher (solid bars), equal (non-solid bars with lines),
+or lower (non-solid bars with pattern) PCC between the predicted and the measured expression
+profile, when compared to a randomized model. Three randomized models were considered: randomized
+<italic>Eco</italic>MAC expression profiles (null-model, black bars), expression profiles that are
+derived by EBA that does not encode the environmental or genetic constraints of the expression
+profile under investigation (dark green) and EBA-derived expression profiles with random genetic
+and/or environmental constraints (light green). Both genetic (left panel) and environmental (right
+panel) perturbations were considered. The percentage of the arrays predicted by EBA with PCC higher
+than a threshold PCC (noted as TH, calculated as the average over all predicted arrays) is denoted
+in the bottom panel. Bottom panel contains the number of well-predicted arrays with PCC higher than
+the average. The comparison is performed for all well-predicted arrays (global), those within a
+distance of two links (local), and those local arrays with a PCC that is statistically significant
+(<italic>P</italic>-value &#x0003c; 0.05; local*).</p></list-item><list-item><p>Predictive power of EBA for all genetic perturbations by using the null-model (black bars in
+panel A). Blue and red points show arrays in which the <italic>PCC</italic> between the measured and
+predicted (EBA) expression profile is significantly higher (<italic>P</italic> &#x0003c; 0.05) or
+lower (NS, non-significant), respectively, than the <italic>PCC</italic> between the measured
+expression profile and the null-model (i.e., random profiles from <italic>Eco</italic>MAC).</p></list-item><list-item><p>Phenotype predictions for arrays in <italic>Eco</italic>Phe compare different categories of
+perturbations (low <italic>vs</italic> high growth rate measured; genetic <italic>vs</italic>
+environmental perturbations; gene knockouts <italic>vs</italic> rewired networks) by using the
+integrative genome-scale model of <italic>Escherichia coli</italic> in which EBA with experimental
+and inferred interactions predicted gene expression profiles. PCC corresponds to the correlation
+between the predicted and experimentally measured growth for each category.</p></list-item></list></p></caption><graphic xlink:href="msb0010-0735-f4"/></fig><p>We studied the performance of EBA by training random sub-sets of transcriptional interactions
+(Supplementary Fig S16A and B). As expected, the EBA local performance decreased significantly when
+the TRN was constructed by using random interactions between TFs and genes. Moreover, when
+interactions were excluded from the TRN, an exponential decrease in performance on local profiles
+was observed that is consistent with the scale-free nature of the TRN network. A fivefold
+cross-validation argues that EBA is robust in the size and nature of the training set (Supplementary
+Fig S16C and D).</p></sec><sec><title>Integrating transcription, fluxes, and metabolic models</title><p>Next, we used the <italic>E. coli</italic> metabolic model iJO1336 together with Flux Variability
+Analysis (FVA) (Mahadevan &#x00026; Schilling, <xref rid="b28" ref-type="bibr">2003</xref>;
+Gudmundsson &#x00026; Thiele, <xref rid="b16" ref-type="bibr">2010</xref>) and Flux Balance Analysis
+(FBA) (Orth <italic>et al</italic>, <xref rid="b34" ref-type="bibr">2011</xref>) to calculate the
+reaction fluxes and their bounds. In order to test the metabolic model under various environmental
+conditions, we simulated 100 random environments where cells grew in minimal media and a
+growth-affecting parameter in abundance or limitation (carbon sources, nitrogen, supplemental amino
+acids, or metals). In all cases, the model provides a quantitative measure of the variations in
+growth rate for the different environmental perturbations (Supplementary Fig S17 and Supplementary
+Dataset S6). TF and enzyme knockouts were found to be phenotypically more diverse than
+over-expressions, as shown in analysis of the metabolic benefit under single (Supplementary Fig S18)
+and multiple (Supplementary Fig S19) genetic perturbations. We then used TRAME to integrate
+metabolic and transcriptional regulatory networks by modifying the metabolic flux bounds
+(Supplementary Methods, section 5).</p></sec><sec><title>Phenotypic predictions in an integrated model</title><p>To integrate all the models described above, we used a cost-benefit scheme across the various
+layers to determine the genome-scale gene expression profile, metabolic flux distribution, and
+growth rate. The cost-benefit model outperformed growth predictions of models that contained only
+benefit or cost-limited functions, with PCC between predicted and measured phenotypes at 0.76
+(<italic>P</italic> &#x0003c; 10<sup>&#x02212;3</sup>) for benefit-only model predictions versus 0.84
+(<italic>P</italic> &#x0003c; 10<sup>&#x02212;4</sup>) in our model (Supplementary Fig S21).
+Interestingly, when inferred interactions were added in the analysis, more arrays were well
+predicted, leading to a higher PCC between predicted and measured growth rates than when EBA was
+restricted only to experimental interactions (<italic>PCC</italic> &#x0003e; 0.53, <italic>P</italic>
+&#x0003c; 2&#x000b7;10<sup>&#x02212;4</sup>; Supplementary Fig S21C). Fig<xref ref-type="fig" rid="fig04">4</xref>C shows high correlations between predicted and measured growth rates for
+different categories of arrays in <italic>Eco</italic>MAC. The model accurately predicted growth in
+all cases with <italic>PCC</italic> ranging from 0.8 (genetic perturbations; <italic>P</italic>
+&#x0003c; 10<sup>&#x02212;10</sup>) to 0.99 (gene knockouts; <italic>P</italic> &#x0003c;
+10<sup>&#x02212;10</sup>).</p><p>Next, we assessed the predictive power of this work in comparison with three recent M-models (Beg
+<italic>et al</italic>, <xref rid="b5" ref-type="bibr">2007</xref>; Orth <italic>et al</italic>,
+<xref rid="b34" ref-type="bibr">2011</xref>; Adadi <italic>et al</italic>, <xref rid="b1" ref-type="bibr">2012</xref>) and a ME-model (O'Brien <italic>et al</italic>, 2013) for <italic>E.
+coli</italic>, as well as to the first whole-cell model for <italic>M. genitalium</italic> (Karr
+<italic>et al</italic>, <xref rid="b24" ref-type="bibr">2012</xref>). We used our integrative model
+to predict growth rates in 14 different batch cultures that can be captured by the model and gene
+essentiality of all the 4,189 <italic>E. coli</italic> genes considered in our model (Supplementary
+Dataset S11). Interestingly, the correlation between measured and predicted growth rates by using
+our model (PCC = 0.60, <italic>P</italic>-value = 0.02) was higher and statistically
+more significant than for two M-models (PCC = 0.20, <italic>P</italic>-value = 0.49
+for the iJO1366 yield model presented in (Orth <italic>et al</italic>, <xref rid="b34" ref-type="bibr">2011</xref>), PCC = 0.36, <italic>P</italic>-value = 0.20 for the FBAwMC
+model presented (Beg <italic>et al</italic>, <xref rid="b5" ref-type="bibr">2007</xref>)), and ME
+(PCC = 0.50, <italic>P</italic>-value = 0.07 for the ME-model in (O'Brien
+<italic>et al</italic>, <xref rid="b33" ref-type="bibr">2013</xref>)). Similarly, <italic>in
+silico</italic> prediction of gene essentiality in glucose M9 minimal medium results in an accuracy
+of 91.1% (Supplementary Dataset S11, &#x0201c;Gene Essentiality&#x0201d;). This accuracy is on
+par with previous approaches using the metabolic reaction network alone (accuracy =
+91.2% reported in Orth <italic>et al</italic>, <xref rid="b34" ref-type="bibr">2011</xref>)
+and the ME-model (accuracy = 88.8% reported in O'Brien <italic>et al</italic>,
+<xref rid="b33" ref-type="bibr">2013</xref>), as well as the reported accuracy of 79% on the
+whole-cell model of <italic>M. genitalium</italic> (Karr <italic>et al</italic>, <xref rid="b24" ref-type="bibr">2012</xref>).</p></sec><sec><title>Model enrichment through targeted experimentation</title><p>We explored the landscape of biological processes that could be affected by implementing all
+genetic perturbations contained in <italic>Eco</italic>MAC. From the 1,361 GO terms associated with
+biological processes in <italic>E. coli</italic>, we included GO terms belonging to the first five
+levels of the GO-hierarchy, resulting in a set of 686 GO terms, covering 3,319 <italic>E.
+coli</italic> genes (80% of total; Supplementary Fig S23A and B). Only 23% of these GO
+terms are affected by the genetic perturbations present in <italic>Eco</italic>MAC given two
+coverage constraints (Fig<xref ref-type="fig" rid="fig05">5</xref>A; <xref ref-type="supplementary-material" rid="SD8">Supplementary Methods</xref>, section 7.1), a remarkably
+low number that signifies the limitations of the training set for capturing biological processes by
+any model. In order to determine the minimal set of gene knockouts that maximizes the GO term
+coverage and expected gene expression variability, we devised a greedy algorithm (Supplementary
+Methods, section 7.2; Supplementary Fig S23C and D) that produced a ranked list of gene knockouts
+that maximize the likelihood for model enrichment by performing expression profiling and growth
+measurements. Including the top 35 candidate genes improves the number of affected GO terms by a
+staggering 14.6%, which is in strong contrast to the 3.3 &#x000b1; 1.1% that is
+expected by a random assignment of 35 genes that are currently not present in the dataset (Fig<xref ref-type="fig" rid="fig05">5</xref>B).</p><fig id="fig05" position="float"><label>Figure 5</label><caption><title>Model validation</title><p><list list-type="alpha-upper"><list-item><p>Perturbed genes in arrays of <italic>Eco</italic>MAC grouped by GO terms altered. The 172 links
+are the transcriptional interactions identified in the experimental TRN. Note that the 36 low-level
+GO terms are plotted from the 160 GO terms found to be enriched.</p></list-item><list-item><p>Accumulative GO term coverage under the list of the 35 top gene perturbations, according to gene
+expression variability under genetic (orange), environmental (purple), or gene&#x02013;environment
+combinatorial (red) perturbations. The 10 gene knockouts that were experimentally measured and their
+corresponding under-represented GO terms are highlighted.</p></list-item><list-item><p>Growth rates of the 10 gene knockouts in environments with and without supplementation (*
+<italic>P</italic> &#x0003c; 10<sup>&#x02212;2</sup>, ** <italic>P</italic> &#x0003c;
+10<sup>&#x02212;3</sup>, *** <italic>P</italic> &#x0003c;
+10<sup>&#x02212;10</sup>). The dashed red line depicts the growth rate for the WT strain in M9 salt,
+0.3% glucose media without any other supplements.</p></list-item><list-item><p>Comparison of the 28 predicted and observed phenotypes.</p></list-item><list-item><p>Phenotypic predictions for the 28 newly measured phenotypes, grouped into categories based on the
+perturbation type (low growth rate; genetic and environmental perturbations; and gene knockouts).
+Each panel shows the percentage of accurately predicted conditions. Both validated and inferred
+interactions were used for training the integrative model (Supplementary Methods, section 7.3 and
+7.4). Orange (pink) and green dots depict arrays predicted from Fig<xref ref-type="fig" rid="fig04">4</xref>C and newly measured phenotypes, respectively. Black dots are measurements for the WT
+strain in non-supplemented M9 media.</p></list-item></list></p><p>Source data are available online for this figure.</p></caption><graphic xlink:href="msb0010-0735-f5"/></fig><p>To further test the ability of the genome-scale model to predict growth rates under adverse
+conditions, we isolated 10 single-gene knockouts from these 35 genes that are part of
+under-represented GO biological processes in <italic>Eco</italic>MAC and for which we had no growth
+or expression information (Fig<xref ref-type="fig" rid="fig05">5</xref>C, <xref ref-type="supplementary-material" rid="SD10">Supplementary Dataset S7</xref>). We then
+computationally predicted and experimentally measured the growth rates of these knockout strains in
+minimal and supplemented media (28 different combinatorial phenotypes explored; Fig<xref ref-type="fig" rid="fig05">5</xref>C; <xref ref-type="supplementary-material" rid="SD8">Supplementary Methods</xref> 7.4). In 9 out of the 10 cases, supplementation of the media with the
+necessary compounds led to significant increase (<italic>P</italic> &#x0003c;
+10<sup>&#x02212;10</sup>, <italic>Z</italic>-test) in growth (Supplementary Fig S24). Interestingly,
+the model captures growth-related defects with 79% accuracy (<italic>P</italic> &#x0003c;
+10<sup>&#x02212;4</sup> Fisher's exact test; Fig<xref ref-type="fig" rid="fig05">5</xref>D)
+across the 28 phenotypes related to strains with gene knockouts in transport genes (methionine and
+short-chain fatty acids transport, <italic>metN</italic>; rhamnose transport, <italic>rhaT</italic>;
+cobalt, manganese, and ferrous ions transport, <italic>mntH</italic>), biosynthesis-related genes
+(cobalamin and siroheme biosynthesis, c<italic>ysG</italic>; cysteine biosynthesis,
+<italic>cysH</italic>; fatty acid, methionine, threonine, and homoserine biosynthesis,
+<italic>metL</italic>), and metabolic processes (arginine catabolism, c<italic>astE</italic>;
+D-ribose catabolic process, <italic>rbsK</italic>; galactonate catabolism, <italic>dgoA</italic>;
+galactose metabolic process and carbohydrate phosphorylation, <italic>galK</italic>). In addition,
+the model predictions were within the confidence intervals for 75%, 53%, and
+58% of the phenotypes related to genetic perturbations, environmental perturbations, and gene
+knockouts, respectively, despite the fact that these knockouts were not part of the
+<italic>Eco</italic>MAC dataset and with GO terms that are not represented in the compendium
+(Fig<xref ref-type="fig" rid="fig05">5</xref>E). Enrichment analysis of the differential expression
+predicted by the model shows 149 genes were significantly altered (<italic>P</italic> &#x0003c;
+10<sup>&#x02212;3</sup>
+<italic>Z</italic>-test) and are implicated in signal transduction systems and TRN (response to
+external stimulus), and metabolism (primary metabolic process, carbohydrate and amino acid metabolic
+and catabolic process) of <italic>E. coli</italic> (<xref ref-type="supplementary-material" rid="SD11">Supplementary Dataset S8</xref>). A detailed analysis of the pathways implicated and
+justification for the observed growth can be found in Supplementary Methods (sections 7.3 and
+7.4).</p></sec></sec><sec sec-type="discussion"><title>Discussion</title><p>One of the most striking realizations that came to light after constructing the various
+<italic>E. coli</italic> compendia was the paucity of our knowledge even for the most-studied
+bacterial organism: when accounting for all gene knockouts, rewirings, or over-expressions, we have
+data for 141 genes that cover 23% of GO terms, a surprisingly low percentage of coverage.
+Given that these experiments have been performed in different strains and experimental conditions,
+there is a clear and present need for the creation of comprehensive datasets that aim at the
+construction of more informative models. The idea of targeted experimentation for model enrichment
+departs from the classical view of experiments as an answer to hypothesis testing and subsequent
+model training on seemingly disparate datasets. Rather, to maximize the impact on the model's
+predictive ability, the experimental focus and type can be selected based on current model
+deficiencies by using the proper heuristics, such as the maximal increase in GO term coverage and
+gene expression variability that we used in this work.</p><p>The <italic>Eco</italic>MAC compendium increased considerably both the sensitivity and
+specificity of the known inference methods. Indeed, training only three inference methods on
+<italic>Eco</italic>MAC yielded results that were significantly better than those obtained recently
+by using 35 methods (Marbach <italic>et al</italic>, <xref rid="b30" ref-type="bibr">2012</xref>),
+but on a smaller compendium. A limitation here is the severe bias to negative samples in the ground
+truth: while experimentally confirmed interactions are well documented and categorized, there is no
+such set for true negatives, that is interactions that were experimentally tested and found
+non-existent. As such, all inference assessments consider all TF&#x02013;gene combinations that are
+not denoted as confirmed, to be negative, hence introducing an artificially high False Positive
+Rate.</p><p>Integration of signal transduction, gene expression, and metabolic levels under one overarching
+framework led to a significantly more predictive model that can capture environmental and genetic
+perturbations beyond what was possible before (Monk <italic>et al</italic>, <xref rid="b31" ref-type="bibr">2013</xref>; O'Brien <italic>et al</italic>, <xref rid="b33" ref-type="bibr">2013</xref>). There are several extensions over previous attempts that have made this possible.
+Having constructed a phenomenological model that focuses more on the statistical associations among
+the various components and less on the biophysical mechanisms of each individual sub-component, we
+reduced the parameter space compared to other biophysical models (Segre <italic>et al</italic>,
+<xref rid="b38" ref-type="bibr">2002</xref>; Beg <italic>et al</italic>, <xref rid="b5" ref-type="bibr">2007</xref>; Lee <italic>et al</italic>, <xref rid="b26" ref-type="bibr">2008</xref>; Adadi
+<italic>et al</italic>, <xref rid="b1" ref-type="bibr">2012</xref>; Karr <italic>et al</italic>,
+<xref rid="b24" ref-type="bibr">2012</xref>; Lerman <italic>et al</italic>, <xref rid="b27" ref-type="bibr">2012</xref>; Thiele <italic>et al</italic>, <xref rid="b41" ref-type="bibr">2012</xref>),
+a step that reduces the amount of over-fitting given the limited availability of experimental data.
+Instead of using summary statistics to provide kinetic and flow bounds to macromolecular synthesis
+machinery reactions (Lerman <italic>et al</italic>, <xref rid="b27" ref-type="bibr">2012</xref>;
+Thiele <italic>et al</italic>, <xref rid="b41" ref-type="bibr">2012</xref>), we here rely on a
+methodological large-scale analysis of gene expression datasets to capture the dependencies and
+predictive associations among gene products. This allows the model to generate predictions beyond
+the subset of gene products related to biosynthesis that have been explicitly modeled and reported
+in the past. Computationally, the Expression Balance Analysis (EBA) technique that we developed is
+similar to previous work (Covert <italic>et al</italic>, <xref rid="b9" ref-type="bibr">2004</xref>;
+Lerman <italic>et al</italic>, <xref rid="b27" ref-type="bibr">2012</xref>) in the sense that it
+employs constrained optimization, although the actual constraints and objective functions are
+different, aiming at training the model parameters so that they maximize the likelihood of the data,
+in a realistic fashion. An important contribution of this work is the creation of a signal
+transduction network (<italic>Eco</italic>ST) and its integration to the transcriptional and
+metabolic network through constraint modeling, which enables our model to capture environmental
+perturbations related to carbon, nitrogen and phosphate sources, oxygen, acids, metals, and other
+medium supplements. Expanding the fitness function to calculate a relative cost for altered gene
+expression with respect to wild type allowed our model to predict a wide range of genetic
+perturbations that includes transcription factor rewirings to the set of knockout and
+over-expression perturbations that past models have focused on.</p><p>Aside from its merit as a hypothesis-testing tool for systems biology, integration of this work
+with synthetic circuit and genome redesign platforms (Huynh <italic>et al</italic>, <xref rid="b20" ref-type="bibr">2013</xref>) is a stepping stone toward unifying, model-driven designs
+that transcend multiple layers of biological function. Further refinement and extension of the
+supporting compendia will inarguably provide an important knowledgebase for integrative models that
+exploit associations between heterogeneous genotypic and phenotypic characteristics. While
+innovative, the current model can be extended to use a mixture of statistical learning techniques
+that capture different aspects of the data structure. This, together with iterative cycles of
+training, targeted experimentation and refinement is poised to have a transformative potential on
+our ability to accurately predict cellular states and generalize in new environments.</p></sec><sec sec-type="materials|methods"><title>Materials and Methods</title><sec><title>A gene expression, signal transduction, and phenomics compendium for <italic>Escherichia
+coli</italic></title><p>By integration of microarray data from GEO, ASAP database, ArrayExpress, and individual
+investigators, we have constructed a gene expression compendium of 4,189 genes over 2,198 arrays
+that were collected from 127 scientific articles (Supplementary Methods, section 1.1 and 1.2;
+Supplementary Fig S1). A total of 328 transcription factors (TFs) and 1,357 enzymes were identified
+by using RegulonDB. From the 2,198 arrays, 90 were considered as &#x0201c;wild-type&#x0201d;
+conditions (MG1655 strain, aerobic growth in M9/LB media with 0.3% glucose) and 332 arrays
+that had experimental settings that deviate considerably from these conditions were classified as
+&#x0201c;environmental perturbations&#x0201d;. Another 718 arrays correspond to &#x0201c;genetic
+perturbation&#x0201d; experiments, where a knockout, over-expression, or gene rewiring took place
+(Isalan <italic>et al</italic>, <xref rid="b22" ref-type="bibr">2008</xref>). The resulting
+<italic>E. coli</italic> Microarray Affymetrix Compendium (<italic>Eco</italic>MAC) includes data
+from 31 strains and over 15 different media with high gene expression diversity (Supplementary Figs
+S2 and S3). <italic>Eco</italic>MAC is supplemented by <italic>EcoPhe</italic> (Supplementary
+Methods, section 1.4), a phenomics compendium that has bacterial growth information for 616 of the
+arrays in <italic>Eco</italic>MAC.</p><p>To identify signal transduction pathways that are responsible for cellular responses to
+environmental stimuli, we curated the EcoCyc/RegulonDB knowledgebase and then curated relevant
+literature to identify 151 instances of signal transduction systems (STSs) where the expression
+level of one or more TFs is regulated by the presence of effector molecules. In the resulting
+database, <italic>Eco</italic>ST, 71 of these TF-effector interactions fall under one of the
+following four types of auto-regulation: (a) Type I (28 instances): the TF represses its own
+expression in the absence of an inducer, while derepression occurs at its presence (e.g.,
+<italic>lldR</italic> and <italic>L</italic>-lactate; Supplementary Figs <xref ref-type="supplementary-material" rid="SD1">S7B</xref> and <xref ref-type="supplementary-material" rid="SD1">S8A</xref>), (b) Type II (11 instances): the TF-effector complex regulates its own
+expression in the presence of the effector (e.g., <italic>fur</italic> and iron; Supplementary Figs
+<xref ref-type="supplementary-material" rid="SD1">S7C</xref> and <xref ref-type="supplementary-material" rid="SD1">S8B</xref>), (c) Type III (4 instances): two component
+systems where a histidine kinase sensor is auto-phosphorylated in the presence of an effector and
+transfers the phosphate to a TF that can in turn positively (3 instances) or negatively (1 instance)
+regulate its own expression (e.g., <italic>dpiA</italic> and citrates Supplementary Fig S7D), and
+(d) Type IV (28 instances) where TF gene expression is altered in the presence of the effector but
+the corresponding mechanism is not known (e.g., <italic>fhlA</italic> and formate; Supplementary Fig
+S7E). The rest of the 80 signal-mediated regulatory interactions were described in literature, but
+they did not show a significant change in gene expression levels in presence of the effectors.
+Supplementary Dataset S5 contains all the signal transduction systems that we considered.</p></sec><sec><title>Gene regulatory network reconstruction</title><p>We compiled a list of 3,704 regulatory interactions from RegulonDB v8.1, 115 of which were
+auto-regulatory interactions (3.1%) (Supplementary Dataset S3). Positive interactions are
+slightly more represented than negative interactions (1,807 versus 1,664), with 233 interactions
+being dual in nature. We also created three sets of data based on the confidence level of the
+interactions (Supplementary Methods, section 2.1): a first set with 566 &#x0201c;confirmed&#x0201d;
+evidence interactions (existence of two or more types of strong experimental evidence), a second set
+that includes all 566 confirmed and another 2,517 &#x0201c;strong&#x0201d; evidence interactions
+(existence of only one type of strong evidence) for a total of 3,083 interactions, and the third set
+includes all 3,704 interactions, with 711 of them based only on &#x0201c;weak&#x0201d; evidence
+(Fig<xref ref-type="fig" rid="fig03">3</xref>C). For evaluation, we used three golden standards.
+First, we used the golden standard used in Marbach <italic>et al</italic>, <xref rid="b30" ref-type="bibr">2012</xref>, which includes interactions with strong evidence from RegulonDB v6.8. The
+other two testing sets consist of the interactions that are labeled as strong (one type of strong
+evidence, 3,083 interactions) and confirmed (two types of strong evidence, 556 interactions) based
+on RegulonDB v8.1, respectively (Fig<xref ref-type="fig" rid="fig03">3</xref>C).</p><p>We evaluated five top-ranked regulatory interaction inference methods, and we selected three
+(GENIE3 (Huynh-Thu <italic>et al</italic>, <xref rid="b21" ref-type="bibr">2010</xref>), TIGRESS
+(Haury <italic>et al</italic>, <xref rid="b18" ref-type="bibr">2012</xref>) and Inferelator
+(Greenfield <italic>et al</italic>, <xref rid="b15" ref-type="bibr">2010</xref>)) based on their
+performance to integrate as a meta-classifier and train with <italic>Eco</italic>MAC. By using the
+same evaluation criteria with the DREAM5 network inference challenge, we compared the performance of
+the meta-classifier trained on <italic>Eco</italic>MAC to that trained on the 805-array dataset used
+in (Marbach <italic>et al</italic>, <xref rid="b30" ref-type="bibr">2012</xref>). Supplementary Fig
+S5 depicts the ROC curves and AUC values for the meta-classifiers and individual methods for both
+datasets and for three different golden standards. The resulting consensus network of the first 500
+inferred interactions achieves a precision of 0.45, with 381 (76.2%) of them overlapping with
+previous predictions.</p></sec><sec><title>Cellular sub-models</title><sec><title>Signal transduction model</title><p>To model the effect of signal transduction systems (STSs) on gene expression, we considered the
+cases where the effector's presence alters TF concentration or its structural conformation
+and functionality. In the case where the effector has a direct impact to the TF's
+concentration, we defined a linear constraint to describe the TF expression
+<italic>y</italic><sub>TF</sub> as a function of changes in effector concentrations
+&#x025b5;<italic>n</italic><sub>E</sub>:</p><p><disp-formula><graphic xlink:href="msb0010-0735-m1.jpg" mimetype="image" position="float"/></disp-formula></p><p>where <inline-formula><inline-graphic xlink:href="msb0010-0735-mu2.jpg" mimetype="image"/></inline-formula>, <inline-formula><inline-graphic xlink:href="msb0010-0735-mu3.jpg" mimetype="image"/></inline-formula> and
+<inline-formula><inline-graphic xlink:href="msb0010-0735-mu4.jpg" mimetype="image"/></inline-formula> are the wild-type, minimum and maximum
+expression values of the TF gene obtained from <italic>Eco</italic>MAC.
+<italic>&#x00394;n</italic><sub><italic>E</italic></sub> is the difference in the effector
+concentration between the predicted and reference (WT) levels, and <inline-formula><inline-graphic xlink:href="msb0010-0735-mu5.jpg" mimetype="image"/></inline-formula> is
+an empirical parameter. The parameter <inline-formula><inline-graphic xlink:href="msb0010-0735-mu6.jpg" mimetype="image"/></inline-formula> is
+positive (negative) depending on whether the presence of the effector increases (decreases) the TF
+concentration, and parameter &#x003a9; was used to fine-tune the STSs (Supplementary Methods, section
+3.2). In the second case, we modeled the change in the TF activity by introducing a binary variable
+<inline-formula><inline-graphic xlink:href="msb0010-0735-mu7.jpg" mimetype="image"/></inline-formula> that was zero or one depending whether the TF
+was still functional after the binding event.</p></sec><sec><title>Transcriptional model and EBA</title><p>We model the mRNA dynamics of all genes in the compendium as a function of the TF concentration
+by linear ordinary differential equations (ODEs). Then, we developed a novel method called
+&#x0201c;<italic>Expression Balance Analysis</italic>&#x0201d; (EBA) to predict the global gene
+expression profile of <italic>E. coli</italic> under genetic modifications and environmental changes
+(Supplementary Methods, section 4). EBA formulates an optimization problem to find the gene
+expression profile subject to four sets of constraints (phenomenological, capacity, environmental,
+and genetic constraints). Specifically, we used a fitness function, <italic>E</italic>, that
+minimizes the gene expression errors of the 328 TFs (&#x003b5;<sub>TF</sub>):</p><p>Minimize:</p><p><disp-formula><graphic xlink:href="msb0010-0735-m8.jpg" mimetype="image" position="float"/></disp-formula></p><p>subject to:</p><p><disp-formula><graphic xlink:href="msb0010-0735-m9.jpg" mimetype="image" position="float"/></disp-formula></p><p><disp-formula><graphic xlink:href="msb0010-0735-m10.jpg" mimetype="image" position="float"/></disp-formula></p><p><disp-formula><graphic xlink:href="msb0010-0735-m11.jpg" mimetype="image" position="float"/></disp-formula></p><p><disp-formula><graphic xlink:href="msb0010-0735-m12.jpg" mimetype="image" position="float"/></disp-formula></p><p>where <inline-formula><inline-graphic xlink:href="msb0010-0735-mu13.jpg" mimetype="image"/></inline-formula> the hessian matrix
+<inline-formula><inline-graphic xlink:href="msb0010-0735-mu14.jpg" mimetype="image"/></inline-formula>
+<inline-formula><inline-graphic xlink:href="msb0010-0735-mu15.jpg" mimetype="image"/></inline-formula> is a vector of the basal transcription
+coefficients, and <inline-formula><inline-graphic xlink:href="msb0010-0735-mu16.jpg" mimetype="image"/></inline-formula> is a matrix with elements
+&#x003b2;<sub><italic>ij</italic></sub> that represent the effect of the
+<italic>j</italic><sup><italic>th</italic></sup> TF to the
+<italic>i</italic><sup><italic>th</italic></sup> gene. The maximum (<inline-formula><inline-graphic xlink:href="msb0010-0735-mu17.jpg" mimetype="image"/></inline-formula>)
+and minimum (<inline-formula><inline-graphic xlink:href="msb0010-0735-mu18.jpg" mimetype="image"/></inline-formula>) values of gene expression for each gene were
+obtained from <italic>Eco</italic>MAC.</p></sec><sec><title>Metabolic model and Transcription-based Flux Enrichment</title><p>We created a transcription-based metabolic flux enrichment (TRAME) method to integrate metabolic
+and transcriptional regulatory networks modifying the <italic>V</italic><sub>min</sub> and
+<italic>V</italic><sub>max</sub> calculated from Flux Variability Analysis (FVA) for each metabolic
+flux in the <italic>E. coli</italic> metabolic model iJO1336 (Orth <italic>et al</italic>, <xref rid="b34" ref-type="bibr">2011</xref>). This approach determines the new values of the flux bounds
+<italic>V</italic><sub>min</sub> and <italic>V</italic><sub><italic>max</italic></sub> for a given
+enzyme, <italic>e</italic>, as a function of the expression (<italic>P</italic>-function) relative
+to the WT enzyme expression (Supplementary Methods, section 5), <inline-formula><inline-graphic xlink:href="msb0010-0735-mu19.jpg" mimetype="image"/></inline-formula>,
+and <italic>n</italic> is a parameter that allows us to factor in the variability observed on the
+wild-type arrays regarding the expression of that specific enzyme, <inline-formula><inline-graphic xlink:href="msb0010-0735-mu20.jpg" mimetype="image"/></inline-formula>.</p></sec></sec><sec><title>Model integration</title><p>Integration of the various cellular and environmental components to phenotypic changes was
+performed through a cost-benefit model. As such, we compute the growth burden due to the production
+and maintenance of all proteins (cost), as well as the growth advantage due to the energy uptake of
+the metabolic pathways in each environment (benefit). Figure<xref ref-type="fig" rid="fig02">2</xref> and <xref ref-type="supplementary-material" rid="SD1">Supplementary Fig S20</xref> depict
+the information flow among the distinct sub-components in our framework. In this cost-benefit model,
+the genetic cost is defined as the relative reduction in growth rate (&#x003bc;) due to the
+production of essential proteins. We used the EBA method to predict gene expression profiles
+(<inline-formula><inline-graphic xlink:href="msb0010-0735-mu21.jpg" mimetype="image"/></inline-formula>) under environmental and genetic
+perturbations. To measure the <italic>cost c</italic>, we computed the deviation between the WT
+(<inline-formula><inline-graphic xlink:href="msb0010-0735-mu22.jpg" mimetype="image"/></inline-formula>) and predicted
+(<inline-formula><inline-graphic xlink:href="msb0010-0735-mu23.jpg" mimetype="image"/></inline-formula>) gene expression profiles:</p><p><disp-formula><graphic xlink:href="msb0010-0735-m24.jpg" mimetype="image" position="float"/></disp-formula></p><p>where <italic>N</italic><sub><italic>G</italic></sub> is the number of genes in <italic>E.
+coli</italic> genome. Similarly, to compute the <italic>metabolic benefit B,</italic> we used the
+metabolic sub-model (Supplementary Methods, section 6.1). As such, the fitness function that
+represents the growth rate <inline-formula><inline-graphic xlink:href="msb0010-0735-mu25.jpg" mimetype="image"/></inline-formula> is
+given by the difference between the benefit and the cost:</p><p><disp-formula><graphic xlink:href="msb0010-0735-m26.jpg" mimetype="image" position="float"/></disp-formula></p><p>Environmental perturbations can modify gene expression through the signal transduction sub-model
+according to the change of effector concentrations (<inline-formula><inline-graphic xlink:href="msb0010-0735-mu27.jpg" mimetype="image"/></inline-formula>).
+Similarly, genetic perturbations alter the basal and regulatory coefficients
+(<inline-formula><inline-graphic xlink:href="msb0010-0735-mu28.jpg" mimetype="image"/></inline-formula>
+<inline-formula><inline-graphic xlink:href="msb0010-0735-mu29.jpg" mimetype="image"/></inline-formula>) of the respective genes in the
+transcriptional model. Both environmental and genetic perturbations can directly modify the
+metabolic fluxes (<inline-formula><inline-graphic xlink:href="msb0010-0735-mu30.jpg" mimetype="image"/></inline-formula>
+<inline-formula><inline-graphic xlink:href="msb0010-0735-mu31.jpg" mimetype="image"/></inline-formula>).</p><sec><title>Experimental model validation</title><p>We identified 10 single-gene knockouts from under-represented GO terms in
+<italic>Eco</italic>MAC, and we used the <italic>E. coli</italic> model to predict their growth in
+various environments. Experimental measurements for those single-knockout strains (Keio collection)
+determined their growth in minimal M9 media under various conditions (with/without supplement carbon
+sources related to the specific knockout deficiency, and with/without 0.3% glucose;
+Supplementary Methods, section 7.3). We compared computational predictions to observed growth rates
+under those 28 phenotypes measured. In addition, we compared predicted and observed growth rates for
+all the environmental and genetic perturbations included in <italic>Eco</italic>Phe (Supplementary
+Methods, section 6.2).</p></sec></sec></sec></body><back><ack><p>We thank Arun Durvasula for his help with the curation of the various databases, James Costello
+for his help with the microarray compendium and members of the Tagkopoulos laboratory for helpful
+discussions. We would like to thank Mark Isalan for providing rewiring microarray data and comments
+on the manuscript. This work was supported by the NSF CAREER award CCF-1254205, OCI-0941360,
+MCB-1244626, and DOD Army Research Office award W911NF-12-1-023 to IT.</p></ack><sec><title>Author contributions</title><p>JC and IT conceived the project. JC, RE, and JL constructed the compendia. JC wrote the code,
+performed all simulations and analysis. NR performed all wetlab experiments and their analysis. AT
+performed network inference and enrichment analysis. JC, NR, AT, and IT wrote the paper. IT
+supervised all aspects of the project.</p></sec><sec><title>Conflict of interest</title><p>The authors declare that they have no conflict of interest.</p></sec><ref-list><title>References</title><ref id="b1"><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Adadi</surname><given-names>R</given-names></name><name><surname>Volkmer</surname><given-names>B</given-names></name><name><surname>Milo</surname><given-names>R</given-names></name><name><surname>Heinemann</surname><given-names>M</given-names></name><name><surname>Shlomi</surname><given-names>T</given-names></name></person-group><article-title>Prediction of microbial growth rate versus biomass yield by a metabolic network with
+kinetic parameters</article-title><source>PLoS Comput Biol</source><year>2012</year><volume>8</volume><fpage>e1002575</fpage><pub-id pub-id-type="pmid">22792053</pub-id></element-citation></ref><ref id="b2"><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Andersen</surname><given-names>MR</given-names></name><name><surname>Nielsen</surname><given-names>ML</given-names></name><name><surname>Nielsen</surname><given-names>J</given-names></name></person-group><article-title>Metabolic model integration of the bibliome, genome, metabolome and reactome of
+<italic>Aspergillus niger</italic></article-title><source>Mol Syst Biol</source><year>2008</year><volume>4</volume><fpage>178</fpage><pub-id pub-id-type="pmid">18364712</pub-id></element-citation></ref><ref id="b3"><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Basso</surname><given-names>K</given-names></name><name><surname>Margolin</surname><given-names>AA</given-names></name><name><surname>Stolovitzky</surname><given-names>G</given-names></name><name><surname>Klein</surname><given-names>U</given-names></name><name><surname>Dalla-Favera</surname><given-names>R</given-names></name><name><surname>Califano</surname><given-names>A</given-names></name></person-group><article-title>Reverse engineering of regulatory networks in human B cells</article-title><source>Nat Genet</source><year>2005</year><volume>37</volume><fpage>382</fpage><lpage>390</lpage><pub-id pub-id-type="pmid">15778709</pub-id></element-citation></ref><ref id="b4"><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Becker</surname><given-names>SA</given-names></name><name><surname>Feist</surname><given-names>AM</given-names></name><name><surname>Mo</surname><given-names>ML</given-names></name><name><surname>Hannum</surname><given-names>G</given-names></name><name><surname>Palsson</surname><given-names>BO</given-names></name><name><surname>Herrgard</surname><given-names>MJ</given-names></name></person-group><article-title>Quantitative prediction of cellular metabolism with constraint-based models: the
+COBRA Toolbox</article-title><source>Nat Protoc</source><year>2007</year><volume>2</volume><fpage>727</fpage><lpage>738</lpage><pub-id pub-id-type="pmid">17406635</pub-id></element-citation></ref><ref id="b5"><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Beg</surname><given-names>QK</given-names></name><name><surname>Vazquez</surname><given-names>A</given-names></name><name><surname>Ernst</surname><given-names>J</given-names></name><name><surname>de Menezes</surname><given-names>MA</given-names></name><name><surname>Bar-Joseph</surname><given-names>Z</given-names></name><name><surname>Barabasi</surname><given-names>AL</given-names></name><name><surname>Oltvai</surname><given-names>ZN</given-names></name></person-group><article-title>Intracellular crowding defines the mode and sequence of substrate uptake by
+<italic>Escherichia coli</italic> and constrains its metabolic activity</article-title><source>Proc Natl Acad Sci USA</source><year>2007</year><volume>104</volume><fpage>12663</fpage><lpage>12668</lpage><pub-id pub-id-type="pmid">17652176</pub-id></element-citation></ref><ref id="b6"><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Beltran</surname><given-names>G</given-names></name><name><surname>Novo</surname><given-names>M</given-names></name><name><surname>Leberre</surname><given-names>V</given-names></name><name><surname>Sokol</surname><given-names>S</given-names></name><name><surname>Labourdette</surname><given-names>D</given-names></name><name><surname>Guillamon</surname><given-names>JM</given-names></name><name><surname>Mas</surname><given-names>A</given-names></name><name><surname>Francois</surname><given-names>J</given-names></name><name><surname>Rozes</surname><given-names>N</given-names></name></person-group><article-title>Integration of transcriptomic and metabolic analyses for understanding the global
+responses of low-temperature winemaking fermentations</article-title><source>FEMS Yeast Res</source><year>2006</year><volume>6</volume><fpage>1167</fpage><lpage>1183</lpage><pub-id pub-id-type="pmid">17156014</pub-id></element-citation></ref><ref id="b7"><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Carrera</surname><given-names>J</given-names></name><name><surname>Elena</surname><given-names>SF</given-names></name><name><surname>Jaramillo</surname><given-names>A</given-names></name></person-group><article-title>Computational design of genomic transcriptional networks with adaptation to varying
+environments</article-title><source>Proc Natl Acad Sci USA</source><year>2012a</year><volume>109</volume><fpage>15277</fpage><lpage>15282</lpage><pub-id pub-id-type="pmid">22927389</pub-id></element-citation></ref><ref id="b8"><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Carrera</surname><given-names>J</given-names></name><name><surname>Fernandez Del Carmen</surname><given-names>A</given-names></name><name><surname>Fernandez-Munoz</surname><given-names>R</given-names></name><name><surname>Rambla</surname><given-names>JL</given-names></name><name><surname>Pons</surname><given-names>C</given-names></name><name><surname>Jaramillo</surname><given-names>A</given-names></name><name><surname>Elena</surname><given-names>SF</given-names></name><name><surname>Granell</surname><given-names>A</given-names></name></person-group><article-title>Fine-tuning tomato agronomic properties by computational genome
+redesign</article-title><source>PLoS Comput Biol</source><year>2012b</year><volume>8</volume><fpage>e1002528</fpage><pub-id pub-id-type="pmid">22685389</pub-id></element-citation></ref><ref id="b9"><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Covert</surname><given-names>MW</given-names></name><name><surname>Knight</surname><given-names>EM</given-names></name><name><surname>Reed</surname><given-names>JL</given-names></name><name><surname>Herrgard</surname><given-names>MJ</given-names></name><name><surname>Palsson</surname><given-names>BO</given-names></name></person-group><article-title>Integrating high-throughput and computational data elucidates bacterial
+networks</article-title><source>Nature</source><year>2004</year><volume>429</volume><fpage>92</fpage><lpage>96</lpage><pub-id pub-id-type="pmid">15129285</pub-id></element-citation></ref><ref id="b10"><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Duarte</surname><given-names>NC</given-names></name><name><surname>Herrgard</surname><given-names>MJ</given-names></name><name><surname>Palsson</surname><given-names>BO</given-names></name></person-group><article-title>Reconstruction and validation of <italic>Saccharomyces cerevisiae</italic> iND750, a
+fully compartmentalized genome-scale metabolic model</article-title><source>Genome Res</source><year>2004</year><volume>14</volume><fpage>1298</fpage><lpage>1309</lpage><pub-id pub-id-type="pmid">15197165</pub-id></element-citation></ref><ref id="b11"><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Faith</surname><given-names>JJ</given-names></name><name><surname>Hayete</surname><given-names>B</given-names></name><name><surname>Thaden</surname><given-names>JT</given-names></name><name><surname>Mogno</surname><given-names>I</given-names></name><name><surname>Wierzbowski</surname><given-names>J</given-names></name><name><surname>Cottarel</surname><given-names>G</given-names></name><name><surname>Kasif</surname><given-names>S</given-names></name><name><surname>Collins</surname><given-names>JJ</given-names></name><name><surname>Gardner</surname><given-names>TS</given-names></name></person-group><article-title>Large-scale mapping and validation of <italic>Escherichia coli</italic>
+transcriptional regulation from a compendium of expression profiles</article-title><source>PLoS Biol</source><year>2007</year><volume>5</volume><fpage>e8</fpage><pub-id pub-id-type="pmid">17214507</pub-id></element-citation></ref><ref id="b12"><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Feist</surname><given-names>AM</given-names></name><name><surname>Henry</surname><given-names>CS</given-names></name><name><surname>Reed</surname><given-names>JL</given-names></name><name><surname>Krummenacker</surname><given-names>M</given-names></name><name><surname>Joyce</surname><given-names>AR</given-names></name><name><surname>Karp</surname><given-names>PD</given-names></name><name><surname>Broadbelt</surname><given-names>LJ</given-names></name><name><surname>Hatzimanikatis</surname><given-names>V</given-names></name><name><surname>Palsson</surname><given-names>BO</given-names></name></person-group><article-title>A genome-scale metabolic reconstruction for <italic>Escherichia coli</italic> K-12
+MG1655 that accounts for 1260 ORFs and thermodynamic information</article-title><source>Mol Syst Biol</source><year>2007</year><volume>3</volume><fpage>121</fpage><pub-id pub-id-type="pmid">17593909</pub-id></element-citation></ref><ref id="b13"><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Feist</surname><given-names>AM</given-names></name><name><surname>Palsson</surname><given-names>BO</given-names></name></person-group><article-title>The growing scope of applications of genome-scale metabolic reconstructions using
+<italic>Escherichia coli</italic></article-title><source>Nat Biotechnol</source><year>2008</year><volume>26</volume><fpage>659</fpage><lpage>667</lpage><pub-id pub-id-type="pmid">18536691</pub-id></element-citation></ref><ref id="b14"><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Frishman</surname><given-names>D</given-names></name></person-group><article-title>Protein annotation at genomic scale: the current status</article-title><source>Chem Rev</source><year>2007</year><volume>107</volume><fpage>3448</fpage><lpage>3466</lpage><pub-id pub-id-type="pmid">17658902</pub-id></element-citation></ref><ref id="b15"><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Greenfield</surname><given-names>A</given-names></name><name><surname>Madar</surname><given-names>A</given-names></name><name><surname>Ostrer</surname><given-names>H</given-names></name><name><surname>Bonneau</surname><given-names>R</given-names></name></person-group><article-title>DREAM4: combining genetic and dynamic information to identify biological networks and
+dynamical models</article-title><source>PLoS ONE</source><year>2010</year><volume>5</volume><fpage>e13397</fpage><pub-id pub-id-type="pmid">21049040</pub-id></element-citation></ref><ref id="b16"><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Gudmundsson</surname><given-names>S</given-names></name><name><surname>Thiele</surname><given-names>I</given-names></name></person-group><article-title>Computationally efficient flux variability analysis</article-title><source>BMC Bioinformatics</source><year>2010</year><volume>11</volume><fpage>489</fpage><pub-id pub-id-type="pmid">20920235</pub-id></element-citation></ref><ref id="b17"><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Hanson</surname><given-names>AD</given-names></name><name><surname>Pribat</surname><given-names>A</given-names></name><name><surname>Waller</surname><given-names>JC</given-names></name><name><surname>de Crecy-Lagard</surname><given-names>V</given-names></name></person-group><article-title>&#x02018;Unknown&#x02019; proteins and &#x02018;orphan&#x02019; enzymes: the missing half
+of the engineering parts list&#x02013;and how to find it</article-title><source>Biochem J</source><year>2010</year><volume>425</volume><fpage>1</fpage><lpage>11</lpage><pub-id pub-id-type="pmid">20001958</pub-id></element-citation></ref><ref id="b18"><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Haury</surname><given-names>AC</given-names></name><name><surname>Mordelet</surname><given-names>F</given-names></name><name><surname>Vera-Licona</surname><given-names>P</given-names></name><name><surname>Vert</surname><given-names>JP</given-names></name></person-group><article-title>TIGRESS: trustful Inference of Gene REgulation using Stability
+Selection</article-title><source>BMC Syst Biol</source><year>2012</year><volume>6</volume><fpage>145</fpage><pub-id pub-id-type="pmid">23173819</pub-id></element-citation></ref><ref id="b19"><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Herrgard</surname><given-names>MJ</given-names></name><name><surname>Swainston</surname><given-names>N</given-names></name><name><surname>Dobson</surname><given-names>P</given-names></name><name><surname>Dunn</surname><given-names>WB</given-names></name><name><surname>Arga</surname><given-names>KY</given-names></name><name><surname>Arvas</surname><given-names>M</given-names></name><name><surname>Bluthgen</surname><given-names>N</given-names></name><name><surname>Borger</surname><given-names>S</given-names></name><name><surname>Costenoble</surname><given-names>R</given-names></name><name><surname>Heinemann</surname><given-names>M</given-names></name><name><surname>Hucka</surname><given-names>M</given-names></name><name><surname>Le Novere</surname><given-names>N</given-names></name><name><surname>Li</surname><given-names>P</given-names></name><name><surname>Liebermeister</surname><given-names>W</given-names></name><name><surname>Mo</surname><given-names>ML</given-names></name><name><surname>Oliveira</surname><given-names>AP</given-names></name><name><surname>Petranovic</surname><given-names>D</given-names></name><name><surname>Pettifer</surname><given-names>S</given-names></name><name><surname>Simeonidis</surname><given-names>E</given-names></name><name><surname>Smallbone</surname><given-names>K</given-names></name><etal/></person-group><article-title>A consensus yeast metabolic network reconstruction obtained from a community approach
+to systems biology</article-title><source>Nat Biotechnol</source><year>2008</year><volume>26</volume><fpage>1155</fpage><lpage>1160</lpage><pub-id pub-id-type="pmid">18846089</pub-id></element-citation></ref><ref id="b20"><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Huynh</surname><given-names>L</given-names></name><name><surname>Tsoukalas</surname><given-names>A</given-names></name><name><surname>Koppe</surname><given-names>M</given-names></name><name><surname>Tagkopoulos</surname><given-names>I</given-names></name></person-group><article-title>SBROME: a scalable optimization and module matching framework for automated
+biosystems design</article-title><source>ACS Synth Biol</source><year>2013</year><volume>2</volume><fpage>263</fpage><lpage>273</lpage><pub-id pub-id-type="pmid">23654271</pub-id></element-citation></ref><ref id="b21"><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Huynh-Thu</surname><given-names>VA</given-names></name><name><surname>Irrthum</surname><given-names>A</given-names></name><name><surname>Wehenkel</surname><given-names>L</given-names></name><name><surname>Geurts</surname><given-names>P</given-names></name></person-group><article-title>Inferring regulatory networks from expression data using tree-based
+methods</article-title><source>PLoS ONE</source><year>2010</year><volume>5</volume><fpage>e12776</fpage><pub-id pub-id-type="pmid">20927193</pub-id></element-citation></ref><ref id="b22"><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Isalan</surname><given-names>M</given-names></name><name><surname>Lemerle</surname><given-names>C</given-names></name><name><surname>Michalodimitrakis</surname><given-names>K</given-names></name><name><surname>Horn</surname><given-names>C</given-names></name><name><surname>Beltrao</surname><given-names>P</given-names></name><name><surname>Raineri</surname><given-names>E</given-names></name><name><surname>Garriga-Canut</surname><given-names>M</given-names></name><name><surname>Serrano</surname><given-names>L</given-names></name></person-group><article-title>Evolvability and hierarchy in rewired bacterial gene networks</article-title><source>Nature</source><year>2008</year><volume>452</volume><fpage>840</fpage><lpage>845</lpage><pub-id pub-id-type="pmid">18421347</pub-id></element-citation></ref><ref id="b23"><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Joyce</surname><given-names>AR</given-names></name><name><surname>Palsson</surname><given-names>BO</given-names></name></person-group><article-title>The model organism as a system: integrating &#x02018;omics&#x02019; data
+sets</article-title><source>Nat Rev Mol Cell Biol</source><year>2006</year><volume>7</volume><fpage>198</fpage><lpage>210</lpage><pub-id pub-id-type="pmid">16496022</pub-id></element-citation></ref><ref id="b24"><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Karr</surname><given-names>JR</given-names></name><name><surname>Sanghvi</surname><given-names>JC</given-names></name><name><surname>Macklin</surname><given-names>DN</given-names></name><name><surname>Gutschow</surname><given-names>MV</given-names></name><name><surname>Jacobs</surname><given-names>JM</given-names></name><name><surname>Bolival</surname><given-names>B</given-names><suffix>Jr</suffix></name><name><surname>Assad-Garcia</surname><given-names>N</given-names></name><name><surname>Glass</surname><given-names>JI</given-names></name><name><surname>Covert</surname><given-names>MW</given-names></name></person-group><article-title>A whole-cell computational model predicts phenotype from genotype</article-title><source>Cell</source><year>2012</year><volume>150</volume><fpage>389</fpage><lpage>401</lpage><pub-id pub-id-type="pmid">22817898</pub-id></element-citation></ref><ref id="b25"><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Kresnowati</surname><given-names>MT</given-names></name><name><surname>van Winden</surname><given-names>WA</given-names></name><name><surname>Almering</surname><given-names>MJ</given-names></name><name><surname>ten Pierick</surname><given-names>A</given-names></name><name><surname>Ras</surname><given-names>C</given-names></name><name><surname>Knijnenburg</surname><given-names>TA</given-names></name><name><surname>Daran-Lapujade</surname><given-names>P</given-names></name><name><surname>Pronk</surname><given-names>JT</given-names></name><name><surname>Heijnen</surname><given-names>JJ</given-names></name><name><surname>Daran</surname><given-names>JM</given-names></name></person-group><article-title>When transcriptome meets metabolome: fast cellular responses of yeast to sudden
+relief of glucose limitation</article-title><source>Mol Syst Biol</source><year>2006</year><volume>2</volume><fpage>49</fpage><pub-id pub-id-type="pmid">16969341</pub-id></element-citation></ref><ref id="b123"><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Labhsetwar</surname><given-names>P</given-names></name><name><surname>Cole</surname><given-names>JA</given-names></name><name><surname>Roberts</surname><given-names>E</given-names></name><name><surname>Price</surname><given-names>ND</given-names></name><name><surname>Luthey-Schulten</surname><given-names>Z</given-names></name></person-group><article-title>Heterogeneity in protein expression induces metabolic variability in a modeled
+<italic>Escherichia coli</italic> population</article-title><source>Proc Nat Acad Sci USA</source><year>2013</year><volume>110</volume><fpage>14006</fpage><lpage>14011</lpage><pub-id pub-id-type="pmid">23908403</pub-id></element-citation></ref><ref id="b26"><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Lee</surname><given-names>JM</given-names></name><name><surname>Gianchandani</surname><given-names>EP</given-names></name><name><surname>Eddy</surname><given-names>JA</given-names></name><name><surname>Papin</surname><given-names>JA</given-names></name></person-group><article-title>Dynamic analysis of integrated signaling, metabolic, and regulatory
+networks</article-title><source>PLoS Comput Biol</source><year>2008</year><volume>4</volume><fpage>e1000086</fpage><pub-id pub-id-type="pmid">18483615</pub-id></element-citation></ref><ref id="b27"><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Lerman</surname><given-names>JA</given-names></name><name><surname>Hyduke</surname><given-names>DR</given-names></name><name><surname>Latif</surname><given-names>H</given-names></name><name><surname>Portnoy</surname><given-names>VA</given-names></name><name><surname>Lewis</surname><given-names>NE</given-names></name><name><surname>Orth</surname><given-names>JD</given-names></name><name><surname>Schrimpe-Rutledge</surname><given-names>AC</given-names></name><name><surname>Smith</surname><given-names>RD</given-names></name><name><surname>Adkins</surname><given-names>JN</given-names></name><name><surname>Zengler</surname><given-names>K</given-names></name><name><surname>Palsson</surname><given-names>BO</given-names></name></person-group><article-title>In silico method for modelling metabolism and gene product expression at genome
+scale</article-title><source>Nat Commun</source><year>2012</year><volume>3</volume><fpage>929</fpage><pub-id pub-id-type="pmid">22760628</pub-id></element-citation></ref><ref id="b28"><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Mahadevan</surname><given-names>R</given-names></name><name><surname>Schilling</surname><given-names>CH</given-names></name></person-group><article-title>The effects of alternate optimal solutions in constraint-based genome-scale metabolic
+models</article-title><source>Metab Eng</source><year>2003</year><volume>5</volume><fpage>264</fpage><lpage>276</lpage><pub-id pub-id-type="pmid">14642354</pub-id></element-citation></ref><ref id="b29"><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Marbach</surname><given-names>D</given-names></name><name><surname>Prill</surname><given-names>RJ</given-names></name><name><surname>Schaffter</surname><given-names>T</given-names></name><name><surname>Mattiussi</surname><given-names>C</given-names></name><name><surname>Floreano</surname><given-names>D</given-names></name><name><surname>Stolovitzky</surname><given-names>G</given-names></name></person-group><article-title>Revealing strengths and weaknesses of methods for gene network
+inference</article-title><source>Proc Natl Acad Sci USA</source><year>2010</year><volume>107</volume><fpage>6286</fpage><lpage>6291</lpage><pub-id pub-id-type="pmid">20308593</pub-id></element-citation></ref><ref id="b30"><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Marbach</surname><given-names>D</given-names></name><name><surname>Costello</surname><given-names>JC</given-names></name><name><surname>Kuffner</surname><given-names>R</given-names></name><name><surname>Vega</surname><given-names>NM</given-names></name><name><surname>Prill</surname><given-names>RJ</given-names></name><name><surname>Camacho</surname><given-names>DM</given-names></name><name><surname>Allison</surname><given-names>KR</given-names></name><name><surname>Kellis</surname><given-names>M</given-names></name><name><surname>Collins</surname><given-names>JJ</given-names></name><name><surname>Stolovitzky</surname><given-names>G</given-names></name></person-group><article-title>Wisdom of crowds for robust gene network inference</article-title><source>Nat Methods</source><year>2012</year><volume>9</volume><fpage>796</fpage><lpage>804</lpage><pub-id pub-id-type="pmid">22796662</pub-id></element-citation></ref><ref id="b31"><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Monk</surname><given-names>JM</given-names></name><name><surname>Charusanti</surname><given-names>P</given-names></name><name><surname>Aziz</surname><given-names>RK</given-names></name><name><surname>Lerman</surname><given-names>JA</given-names></name><name><surname>Premyodhin</surname><given-names>N</given-names></name><name><surname>Orth</surname><given-names>JD</given-names></name><name><surname>Feist</surname><given-names>AM</given-names></name><name><surname>Palsson</surname><given-names>BO</given-names></name></person-group><article-title>Genome-scale metabolic reconstructions of multiple <italic>Escherichia coli</italic>
+strains highlight strain-specific adaptations to nutritional environments</article-title><source>Proc Natl Acad Sci USA</source><year>2013</year><volume>110</volume><fpage>20338</fpage><lpage>20343</lpage><pub-id pub-id-type="pmid">24277855</pub-id></element-citation></ref><ref id="b32"><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Mordelet</surname><given-names>F</given-names></name><name><surname>Vert</surname><given-names>JP</given-names></name></person-group><article-title>SIRENE: supervised inference of regulatory networks</article-title><source>Bioinformatics</source><year>2008</year><volume>24</volume><fpage>i76</fpage><lpage>i82</lpage><pub-id pub-id-type="pmid">18689844</pub-id></element-citation></ref><ref id="b33"><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>O'Brien</surname><given-names>EJ</given-names></name><name><surname>Lerman</surname><given-names>JA</given-names></name><name><surname>Chang</surname><given-names>RL</given-names></name><name><surname>Hyduke</surname><given-names>DR</given-names></name><name><surname>Palsson</surname><given-names>BO</given-names></name></person-group><article-title>Genome-scale models of metabolism and gene expression extend and refine growth
+phenotype prediction</article-title><source>Mol Syst Biol</source><year>2013</year><volume>9</volume><fpage>693</fpage><pub-id pub-id-type="pmid">24084808</pub-id></element-citation></ref><ref id="b34"><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Orth</surname><given-names>JD</given-names></name><name><surname>Conrad</surname><given-names>TM</given-names></name><name><surname>Na</surname><given-names>J</given-names></name><name><surname>Lerman</surname><given-names>JA</given-names></name><name><surname>Nam</surname><given-names>H</given-names></name><name><surname>Feist</surname><given-names>AM</given-names></name><name><surname>Palsson</surname><given-names>BO</given-names></name></person-group><article-title>A comprehensive genome-scale reconstruction of <italic>Escherichia coli</italic>
+metabolism&#x02013;2011</article-title><source>Mol Syst Biol</source><year>2011</year><volume>7</volume><fpage>535</fpage><pub-id pub-id-type="pmid">21988831</pub-id></element-citation></ref><ref id="b35"><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Reed</surname><given-names>JL</given-names></name><name><surname>Vo</surname><given-names>TD</given-names></name><name><surname>Schilling</surname><given-names>CH</given-names></name><name><surname>Palsson</surname><given-names>BO</given-names></name></person-group><article-title>An expanded genome-scale model of <italic>Escherichia coli</italic> K-12 (iJR904
+GSM/GPR)</article-title><source>Genome Biol</source><year>2003</year><volume>4</volume><fpage>R54</fpage><pub-id pub-id-type="pmid">12952533</pub-id></element-citation></ref><ref id="b36"><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Reed</surname><given-names>JL</given-names></name><name><surname>Famili</surname><given-names>I</given-names></name><name><surname>Thiele</surname><given-names>I</given-names></name><name><surname>Palsson</surname><given-names>BO</given-names></name></person-group><article-title>Towards multidimensional genome annotation</article-title><source>Nat Rev Genet</source><year>2006</year><volume>7</volume><fpage>130</fpage><lpage>141</lpage><pub-id pub-id-type="pmid">16418748</pub-id></element-citation></ref><ref id="b37"><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Roberts</surname><given-names>E</given-names></name><name><surname>Magis</surname><given-names>A</given-names></name><name><surname>Ortiz</surname><given-names>JO</given-names></name><name><surname>Baumeister</surname><given-names>W</given-names></name><name><surname>Luthey-Schulten</surname><given-names>Z</given-names></name></person-group><article-title>Noise contributions in an inducible genetic switch: a whole-cell simulation
+study</article-title><source>PLoS Comput Biol</source><year>2011</year><volume>7</volume><fpage>e1002010</fpage><pub-id pub-id-type="pmid">21423716</pub-id></element-citation></ref><ref id="b38"><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Segre</surname><given-names>D</given-names></name><name><surname>Vitkup</surname><given-names>D</given-names></name><name><surname>Church</surname><given-names>GM</given-names></name></person-group><article-title>Analysis of optimality in natural and perturbed metabolic networks</article-title><source>Proc Natl Acad Sci USA</source><year>2002</year><volume>99</volume><fpage>15112</fpage><lpage>15117</lpage><pub-id pub-id-type="pmid">12415116</pub-id></element-citation></ref><ref id="b39"><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Tagkopoulos</surname><given-names>I</given-names></name><name><surname>Liu</surname><given-names>YC</given-names></name><name><surname>Tavazoie</surname><given-names>S</given-names></name></person-group><article-title>Predictive behavior within microbial genetic networks</article-title><source>Science</source><year>2008</year><volume>320</volume><fpage>1313</fpage><lpage>1317</lpage><pub-id pub-id-type="pmid">18467556</pub-id></element-citation></ref><ref id="b40"><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Taylor</surname><given-names>RC</given-names></name><name><surname>Acquaah-Mensah</surname><given-names>G</given-names></name><name><surname>Singhal</surname><given-names>M</given-names></name><name><surname>Malhotra</surname><given-names>D</given-names></name><name><surname>Biswal</surname><given-names>S</given-names></name></person-group><article-title>Network inference algorithms elucidate Nrf2 regulation of mouse lung oxidative
+stress</article-title><source>PLoS Comput Biol</source><year>2008</year><volume>4</volume><fpage>e1000166</fpage><pub-id pub-id-type="pmid">18769717</pub-id></element-citation></ref><ref id="b41"><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Thiele</surname><given-names>I</given-names></name><name><surname>Fleming</surname><given-names>RM</given-names></name><name><surname>Que</surname><given-names>R</given-names></name><name><surname>Bordbar</surname><given-names>A</given-names></name><name><surname>Diep</surname><given-names>D</given-names></name><name><surname>Palsson</surname><given-names>BO</given-names></name></person-group><article-title>Multiscale modeling of metabolism and macromolecular synthesis in <italic>E.
+coli</italic> and its application to the evolution of codon usage</article-title><source>PLoS ONE</source><year>2012</year><volume>7</volume><fpage>e45635</fpage><pub-id pub-id-type="pmid">23029152</pub-id></element-citation></ref><ref id="b42"><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Tomita</surname><given-names>M</given-names></name><name><surname>Hashimoto</surname><given-names>K</given-names></name><name><surname>Takahashi</surname><given-names>K</given-names></name><name><surname>Shimizu</surname><given-names>TS</given-names></name><name><surname>Matsuzaki</surname><given-names>Y</given-names></name><name><surname>Miyoshi</surname><given-names>F</given-names></name><name><surname>Saito</surname><given-names>K</given-names></name><name><surname>Tanida</surname><given-names>S</given-names></name><name><surname>Yugi</surname><given-names>K</given-names></name><name><surname>Venter</surname><given-names>JC</given-names></name><name><surname>Hutchison</surname><given-names>CA</given-names><suffix>3rd</suffix></name></person-group><article-title>E-CELL: software environment for whole-cell simulation</article-title><source>Bioinformatics</source><year>1999</year><volume>15</volume><fpage>72</fpage><lpage>84</lpage><pub-id pub-id-type="pmid">10068694</pub-id></element-citation></ref><ref id="b43"><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Tomita</surname><given-names>M</given-names></name></person-group><article-title>Whole-cell simulation: a grand challenge of the 21st century</article-title><source>Trends Biotechnol</source><year>2001</year><volume>19</volume><fpage>205</fpage><lpage>210</lpage><pub-id pub-id-type="pmid">11356281</pub-id></element-citation></ref><ref id="b44"><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Yugi</surname><given-names>K</given-names></name><name><surname>Tomita</surname><given-names>M</given-names></name></person-group><article-title>A general computational model of mitochondrial metabolism in a whole organelle
+scale</article-title><source>Bioinformatics</source><year>2004</year><volume>20</volume><fpage>1795</fpage><lpage>1796</lpage><pub-id pub-id-type="pmid">14962921</pub-id></element-citation></ref><ref id="b45"><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Zare</surname><given-names>H</given-names></name><name><surname>Sangurdekar</surname><given-names>D</given-names></name><name><surname>Srivastava</surname><given-names>P</given-names></name><name><surname>Kaveh</surname><given-names>M</given-names></name><name><surname>Khodursky</surname><given-names>A</given-names></name></person-group><article-title>Reconstruction of <italic>Escherichia coli</italic> transcriptional regulatory
+networks via regulon-based associations</article-title><source>BMC Syst Biol</source><year>2009</year><volume>3</volume><fpage>39</fpage><pub-id pub-id-type="pmid">19366454</pub-id></element-citation></ref></ref-list><sec sec-type="supplementary-material"><title>Supporting Information</title><p><bold>Supplementary information</bold> for this article is available online: <ext-link ext-link-type="uri" xlink:href="http://msb.embopress.org">http://msb.embopress.org</ext-link></p><supplementary-material content-type="local-data" id="SD1"><caption><p>Supplementary Figures S1-S24</p></caption><media mimetype="application" mime-subtype="docx" xlink:href="msb0010-0735-sd1.docx" xlink:type="simple" id="d35e3497" position="anchor"/></supplementary-material><supplementary-material content-type="local-data" id="SD2"><caption><p>Supplementary Table S1</p></caption><media mimetype="application" mime-subtype="pdf" xlink:href="msb0010-0735-sd2.pdf" xlink:type="simple" id="d35e3502" position="anchor"/></supplementary-material><supplementary-material content-type="local-data" id="SD3"><caption><p>Supplementary Methods</p></caption><media mimetype="application" mime-subtype="pdf" xlink:href="msb0010-0735-sd3.pdf" xlink:type="simple" id="d35e3507" position="anchor"/></supplementary-material><supplementary-material content-type="local-data" id="SD4"><caption><p>Supplementary Dataset S1</p></caption><media mimetype="application" mime-subtype="zip" xlink:href="msb0010-0735-sd4.zip" xlink:type="simple" id="d35e3512" position="anchor"/></supplementary-material><supplementary-material content-type="local-data" id="SD5"><caption><p>Supplementary Dataset S2</p></caption><media mimetype="application" mime-subtype="xlsx" xlink:href="msb0010-0735-sd5.xlsx" xlink:type="simple" id="d35e3517" position="anchor"/></supplementary-material><supplementary-material content-type="local-data" id="SD6"><caption><p>Supplementary Dataset S3</p></caption><media mimetype="application" mime-subtype="xlsx" xlink:href="msb0010-0735-sd6.xlsx" xlink:type="simple" id="d35e3522" position="anchor"/></supplementary-material><supplementary-material content-type="local-data" id="SD7"><caption><p>Supplementary Dataset S4</p></caption><media mimetype="application" mime-subtype="xlsx" xlink:href="msb0010-0735-sd7.xlsx" xlink:type="simple" id="d35e3527" position="anchor"/></supplementary-material><supplementary-material content-type="local-data" id="SD8"><caption><p>Supplementary Dataset S5</p></caption><media mimetype="application" mime-subtype="xlsx" xlink:href="msb0010-0735-sd8.xlsx" xlink:type="simple" id="d35e3532" position="anchor"/></supplementary-material><supplementary-material content-type="local-data" id="SD9"><caption><p>Supplementary Dataset S6</p></caption><media mimetype="application" mime-subtype="xlsx" xlink:href="msb0010-0735-sd9.xlsx" xlink:type="simple" id="d35e3537" position="anchor"/></supplementary-material><supplementary-material content-type="local-data" id="SD10"><caption><p>Supplementary Dataset S7</p></caption><media mimetype="application" mime-subtype="xlsx" xlink:href="msb0010-0735-sd10.xlsx" xlink:type="simple" id="d35e3543" position="anchor"/></supplementary-material><supplementary-material content-type="local-data" id="SD11"><caption><p>Supplementary Dataset S8</p></caption><media mimetype="application" mime-subtype="xlsx" xlink:href="msb0010-0735-sd11.xlsx" xlink:type="simple" id="d35e3548" position="anchor"/></supplementary-material><supplementary-material content-type="local-data" id="SD12"><caption><p>Supplementary Dataset S9</p></caption><media mimetype="application" mime-subtype="xlsx" xlink:href="msb0010-0735-sd12.xlsx" xlink:type="simple" id="d35e3553" position="anchor"/></supplementary-material><supplementary-material content-type="local-data" id="SD13"><caption><p>Supplementary Dataset S10</p></caption><media mimetype="application" mime-subtype="zip" xlink:href="msb0010-0735-sd13.zip" xlink:type="simple" id="d35e3558" position="anchor"/></supplementary-material><supplementary-material content-type="local-data" id="SD14"><caption><p>Supplementary Dataset S11</p></caption><media mimetype="application" mime-subtype="xlsx" xlink:href="msb0010-0735-sd14.xlsx" xlink:type="simple" id="d35e3563" position="anchor"/></supplementary-material><supplementary-material content-type="local-data" id="SD15"><caption><p>Supplementary File Legends</p></caption><media mimetype="application" mime-subtype="pdf" xlink:href="msb0010-0735-sd15.pdf" xlink:type="simple" id="d35e3568" position="anchor"/></supplementary-material><supplementary-material content-type="local-data" id="SD16"><caption><p>Review Process File</p></caption><media mimetype="application" mime-subtype="pdf" xlink:href="msb0010-0735-sd16.pdf" xlink:type="simple" id="d35e3573" position="anchor"/></supplementary-material><supplementary-material content-type="local-data" id="SD17"><caption><p>Source Data for Figure 3A</p></caption><media mimetype="application" mime-subtype="zip" xlink:href="msb0010-0735-sd17.zip" xlink:type="simple" id="d35e3578" position="anchor"/></supplementary-material><supplementary-material content-type="local-data" id="SD18"><caption><p>Source Data for Figure 3B</p></caption><media mimetype="application" mime-subtype="zip" xlink:href="msb0010-0735-sd18.zip" xlink:type="simple" id="d35e3583" position="anchor"/></supplementary-material><supplementary-material content-type="local-data" id="SD19"><caption><p>Source Data for Figure 3D</p></caption><media mimetype="application" mime-subtype="zip" xlink:href="msb0010-0735-sd19.zip" xlink:type="simple" id="d35e3588" position="anchor"/></supplementary-material><supplementary-material content-type="local-data" id="SD20"><caption><p>Source Data for Figure 5A</p></caption><media mimetype="application" mime-subtype="zip" xlink:href="msb0010-0735-sd20.zip" xlink:type="simple" id="d35e3593" position="anchor"/></supplementary-material></sec></back></article>
