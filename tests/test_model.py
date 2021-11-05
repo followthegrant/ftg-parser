@@ -263,3 +263,16 @@ class ModelTestCase(TestCase):
             },
             cois[1].serialize(),
         )
+
+    def test_identifiers(self):
+        identifiers = {"pmid": "123"}
+        identifier = model.ArticleIdentifier(**{"key": "pmid", "value": 123})
+        data = {
+            "title": "Reversible covalent direct thrombin inhibitors",
+            "abstract": "Introduction In recent years, the traditional...",
+            "published_at": "2018-02-08",
+            "journal": {"name": "PLoS ONE"},
+            "identifiers": identifiers,
+        }
+        article = model.Article(**data)
+        self.assertEqual(article.id, identifier.get_article_id())

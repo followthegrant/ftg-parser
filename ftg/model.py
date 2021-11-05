@@ -112,6 +112,9 @@ class ArticleIdentifier(Base):
     def get_id_parts(self) -> Iterable[str]:
         return [self.input.key, self.input.value]
 
+    def get_article_id(self) -> str:
+        return make_entity_id(self.input.key, self.input.value, key_prefix="article")
+
     def get_output_data(self) -> dict:
         return {
             "id": self.id,
