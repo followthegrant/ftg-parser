@@ -276,3 +276,9 @@ class ModelTestCase(TestCase):
         }
         article = model.Article(**data)
         self.assertEqual(article.id, identifier.get_article_id())
+
+    def test_pmcid(self):
+        identifier1 = model.ArticleIdentifier(**{"key": "pmcid", "value": 123})
+        identifier2 = model.ArticleIdentifier(**{"key": "pmcid", "value": "PMC123"})
+        self.assertEqual(identifier1.id, identifier2.id)
+        self.assertEqual(identifier1.get_article_id(), identifier2.get_article_id())

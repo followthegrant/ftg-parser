@@ -109,6 +109,13 @@ class ArticleIdentifier(Base):
     )
     identifiers_dict = dict(identifiers)
 
+    def __init__(self, **data):
+        # migrate PMC124 -> 124
+        if data["key"] in ("pmcid", "pmc"):
+            if str(data["value"]).lower().startswith("pmc"):
+                data["value"] = data["value"][3:]
+        super().__init__(**data)
+
     def get_id_parts(self) -> Iterable[str]:
         return [self.input.key, self.input.value]
 
