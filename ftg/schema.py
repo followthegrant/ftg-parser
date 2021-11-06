@@ -62,7 +62,7 @@ class ArticleInput(BaseModel):
     journal: JournalInput
     identifiers: Optional[dict] = {}
     title: str
-    published_at: Union[date, str]
+    published_at: Optional[Union[date, str]] = None
     abstract: Optional[str] = None
     keywords: Optional[list] = []
     authors: Optional[list[AuthorInput]] = []
@@ -72,7 +72,7 @@ class ArticleInput(BaseModel):
 class ArticleOutput(BaseModel):
     id: str
     title: str
-    published_at: date
+    published_at: Optional[date]
     abstract: Optional[str] = None
     journal: JournalOutput
     authors: Optional[List[AuthorOutput]] = []
@@ -121,7 +121,7 @@ class PublisherFtm(BaseModel):
 class ArticleFtm(BaseModel):
     article_id: str
     article_title: str
-    article_published_at: str
+    article_published_at: Optional[str] = None
     article_abstract: Optional[str] = None
     article_index_text: Optional[str] = None
     article_authors: Optional[str] = None
@@ -138,7 +138,7 @@ class ArticleIdentifierFtm(BaseModel):  # Note
 class ArticlePublishedFtm(BaseModel):  # Documentation
     journal_id: str
     article_id: str
-    article_published_at: str
+    article_published_at: Optional[str] = None
 
 
 class AuthorFtm(BaseModel):
@@ -153,7 +153,7 @@ class AuthorFtm(BaseModel):
 class AuthorshipFtm(BaseModel):
     author_id: str
     article_id: str
-    article_published_at: str
+    article_published_at: Optional[str] = None
     journal_name: str
 
 
@@ -166,7 +166,7 @@ class OrganizationFtm(BaseModel):
 class MembershipFtm(BaseModel):
     author_id: str
     institution_id: str
-    article_published_at: str
+    article_published_at: Optional[str] = None
     journal_name: str
 
 
@@ -176,7 +176,7 @@ class CoiStatementFtm(BaseModel):  # PlainText
     coi_text: str
     coi_journal_name: str
     coi_article_id: str
-    coi_published_at: str
+    coi_published_at: Optional[str] = None
     coi_author_id: Optional[str]
     coi_author_name: Optional[str]
     coi_authors: Optional[str]
