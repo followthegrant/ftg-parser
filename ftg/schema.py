@@ -144,9 +144,9 @@ class ArticlePublishedFtm(BaseModel):  # Documentation
 class AuthorFtm(BaseModel):
     author_id: str
     author_name: str
-    author_first_name: str
+    author_first_name: Optional[str] = None
     author_middle_names: Optional[str] = None
-    author_last_name: str
+    author_last_name: Optional[str] = None
     author_countries: Optional[str] = None
 
 

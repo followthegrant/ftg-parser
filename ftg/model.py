@@ -165,15 +165,19 @@ class Author(Base):
         return " ".join(parts[:-1]), parts[-1]
 
     def get_output_data(self) -> dict:
-        first_name, last_name = None, None
+        first_name, middle_names, last_name = None, None, None
         if self.input.first_name is None and self.input.last_name is None:
-            first_name, last_name = self.input.name.split()
+            try:
+                first_name, *middle_names, last_name = self.input.name.split()
+                middle_names = " ".join(middle_names)
+            except ValueError:
+                pass
         return {
             "id": self.id,
             "name": self.input.name,
             "first_name": first_name or self.input.first_name,
             "last_name": last_name or self.input.last_name,
-            "middle_names": self.input.middle_names,
+            "middle_names": middle_names or self.input.middle_names,
             "institutions": [i.serialize() for i in self.institutions],
             "countries": self.countries,
         }
