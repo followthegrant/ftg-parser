@@ -1,4 +1,5 @@
-from banal import clean_dict as _clean_dict, is_mapping
+from banal import clean_dict as _clean_dict
+from banal import is_mapping
 
 
 def clean_dict(data, expensive=False):
