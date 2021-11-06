@@ -106,6 +106,7 @@ class ArticleIdentifier(Base):
         ("pmcid", "PubMed Central ID"),
         ("pmc", "Pubmed Central ID"),
         ("doi", "Digital Object Identifier"),
+        ("magid", "Microsoft Academic Graph UID"),
     )
     identifiers_dict = dict(identifiers)
 
