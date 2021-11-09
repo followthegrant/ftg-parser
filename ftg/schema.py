@@ -101,7 +101,7 @@ class CoiStatementOutput(BaseModel):
     title: str
     text: str
     published_at: Optional[date]
-    flag: bool
+    flag: int
     index_text: str
     role: str
 
@@ -131,6 +131,7 @@ class ArticleFtm(BaseModel):
 class ArticleIdentifierFtm(BaseModel):  # Note
     articleidentifier_id: str
     article_id: str
+    articleidentifier_key: str
     articleidentifier_label: str
     articleidentifier_value: str
 
