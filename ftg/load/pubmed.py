@@ -6,6 +6,7 @@ from banal import ensure_list
 from dateparser import parse
 
 from ..coi import extract_coi_from_fulltext
+from ..model import ArticleIdentifier
 from ..util import clean_dict
 
 log = logging.getLogger(__name__)
@@ -57,7 +58,7 @@ def wrangle(data: dict, fpath: Optional[str] = None) -> dict:
 
     # reshaping identifiers
     data["identifiers"] = clean_dict(
-        {k: data[k] for k in ("pmc", "pmcid", "pmid", "doi") if k in data}
+        {k: data[k] for k in ArticleIdentifier.identifiers_dict if k in data}
     )
 
     if not data["coi_statement"]:
