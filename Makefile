@@ -1,19 +1,37 @@
-DATA_ROOT ?= /data
+DATA_ROOT ?= data
 FTM_STORE_URI ?= postgresql:///ftg
 
-# parsing source datasets
+# PUBMED CENTRAL
+pubmed.download:
+	mkdir -p $(DATA_ROOT)/pubmed/src
+	wget -P $(DATA_ROOT)/pubmed/src/ -r -l1 -H -nd -N -np -A "*.xml.tar.gz" -e robots=off ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_bulk/
 
 pubmed.parse: src = extracted
 pubmed.parse: pat = *.xml
 pubmed.parse: parser = pubmed
 
+# EUROPEPMC
+europepmc.download:
+	mkdir -p $(DATA_ROOT)/europepmc/src
+	wget -P $(DATA_ROOT)/europepmc/src/ -r -l1 -H -nd -N -np -A "*.xml.gz" -e robots=off https://europepmc.org/ftp/oa/
+
 europepmc.parse: src = src
 europepmc.parse: pat = *.xml.gz
 europepmc.parse: parser = europepmc
 
+# BIORXIV
 biorxiv.parse: src = src
 biorxiv.parse: pat = *.xml
 biorxiv.parse: parser = pubmed
+
+# MEDRXIV
+medrxiv.download:
+	mkdir -p $(DATA_ROOT)/medrxiv/src
+	# ca. 1.5 yrs back
+	aws s3 sync s3://medrxiv-src-monthly/Current_Content/ $(DATA_ROOT)/src/ --request-payer requester
+	# for all data:
+	aws s3 sync s3://medrxiv-src-monthly/Back_Content/ $(DATA_ROOT)/src/ --request-payer requester
+
 
 medrxiv.parse: src = src
 medrxiv.parse: pat = *.xml
@@ -28,7 +46,7 @@ medrxiv.parse: parser = pubmed
 # wrangling
 
 %.aggregate:
-	ftm store iterate -d ftg_$* | parallel --pipe -N10000 ftm store write -d ftg_$*_aggregated
+	ftm store iterate -d ftg_$* | parallel --pipe -N10000 ftm store write -d ftg_$*_aggregated -o aggregated
 	ftm store delete -d ftg_$*
 
 %.db:
