@@ -43,7 +43,7 @@ class LoaderTestCase(TestCase):
         self._test(load.cord, "./testdata/cord/*.json")
 
     def test_pubmed(self):
-        self._test(load.pubmed, "./testdata/pubmed/*/*xml")
+        self._test(load.pubmed, "./testdata/pubmed/*xml")
 
     def test_europepmc_xml(self):
         self._test(load.europepmc, "./testdata/europepmc/*xml")
