@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.2d1 20170631//EN" "JATS-archivearticle1.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" article-type="article" dtd-version="1.2d1" specific-use="production" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="publisher-id">MEDRXIV</journal-id>
+<journal-title-group>
+<journal-title>medRxiv</journal-title>
+<abbrev-journal-title abbrev-type="publisher">medRxiv</abbrev-journal-title>
+</journal-title-group>
+<publisher>
+<publisher-name>Cold Spring Harbor Laboratory</publisher-name>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1101/2021.03.19.21253837</article-id>
+<article-version>1.2</article-version>
+<article-categories>
+<subj-group subj-group-type="hwp-journal-coll">
+<subject>Radiology and Imaging</subject>
+</subj-group>
+</article-categories>
+<title-group>
+<article-title>Quantifying structural connectivity in brain tumor patients</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author">
+<name><surname>Wei</surname><given-names>Yiran</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author" corresp="yes">
+<name><surname>Li</surname><given-names>Chao</given-names></name>
+<xref ref-type="corresp" rid="cor1">&#x002A;&#x002A;</xref>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Price</surname><given-names>Stephen John</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<aff id="a1"><label>1</label><institution>Department of Clinical Neurosciences, University of Cambridge</institution></aff>
+<aff id="a2"><label>2</label><institution>Department of Neurosurgery, Shanghai General Hospital, Shanghai Jiao Tong University School of Medicine</institution></aff>
+</contrib-group>
+<author-notes>
+<fn fn-type="others"><p>{<email>cl647@cam.ac.uk</email>}</p></fn>
+<fn id="n1" fn-type="others"><label>&#x002A;</label><p>Accepted by MICCAI 2021</p></fn>
+<corresp id="cor1"><label>&#x002A;&#x002A;</label>Corresponding author; email: <email>cl647@cam.ac.uk</email></corresp>
+</author-notes>
+<pub-date pub-type="epub">
+<year>2021</year>
+</pub-date>
+<elocation-id>2021.03.19.21253837</elocation-id>
+<history>
+<date date-type="received">
+<day>19</day>
+<month>3</month>
+<year>2021</year>
+</date>
+<date date-type="rev-recd">
+<day>18</day>
+<month>5</month>
+<year>2021</year>
+</date>
+<date date-type="accepted">
+<day>19</day>
+<month>5</month>
+<year>2021</year>
+</date>
+</history>
+<permissions>
+<copyright-statement>&#x00A9; 2021, Posted by Cold Spring Harbor Laboratory</copyright-statement>
+<copyright-year>2021</copyright-year>
+<license license-type="creative-commons" xlink:href="http://creativecommons.org/licenses/by-nc/4.0/"><license-p>This pre-print is available under a Creative Commons License (Attribution-NonCommercial 4.0 International), CC BY-NC 4.0, as described at <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by-nc/4.0/">http://creativecommons.org/licenses/by-nc/4.0/</ext-link></license-p></license>
+</permissions>
+<self-uri xlink:href="21253837.pdf" content-type="pdf" xlink:role="full-text"/>
+<abstract>
+<title>Abstract</title>
+<p>Brain tumors are characterised by infiltration along the white matter tracts, posing significant challenges to precise treatment. Mounting evidence shows that an infiltrative tumor can interfere with the brain network diffusely. Therefore, quantifying structural connectivity has potential to identify tumor invasion and stratify patients more accurately. The tract-based statistics (TBSS) is widely used to measure the white matter integrity. This voxel-wise method, however, cannot directly quantify the connectivity of brain regions. Tractography is a fiber tracking approach, which has been widely used to quantify brain connectivity. However, the performance of tractography on the brain with tumors is biased by the tumor mass effect. A robust method of quantifying the structural connectivity in brain tumor patients is still lacking. Here we propose a method which could provide robust estimation of tract strength for brain tumor patients. Specifically, we firstly construct an unbiased tract template in healthy subjects using tractography. The voxel projection procedure of TBSS is employed to quantify the tract connectivity in patients, based on the location of each tract fiber from the template. To further improve the standard TBSS, we propose an approach of iterative projection of tract voxels, under the guidance of tract orientation measured by voxel-wise eigenvectors. Compared to the conventional tractography methods, our approach is more sensitive in reflecting functional relevance. Further, the different extent of network disruption revealed by our approach correspond to the clinical prior knowledge of tumor histology. The proposed method could provide a robust estimation of the structural connectivity for brain tumor patients.</p>
+</abstract>
+<kwd-group kwd-group-type="author">
+<title>Keywords</title>
+<kwd>brain networks</kwd>
+<kwd>structural connectivity</kwd>
+<kwd>brain tumor</kwd>
+<kwd>tractography</kwd>
+<kwd>diffusion MRI</kwd>
+</kwd-group>
+<counts>
+<page-count count="11"/>
+</counts>
+</article-meta>
+<notes>
+<notes notes-type="competing-interest-statement">
+<title>Competing Interest Statement</title><p>The authors have declared no competing interest.</p></notes>
+<notes notes-type="financial-disclosure">
+<title>Funding Statement</title><p>SJP acknowledges National Institute for Health Research (NIHR) Career Development Fellowship (CDF-18-11-ST2-003). CL acknowledges Cancer Research UK biomarker grant (CRUK/A19732).</p></notes>
+<notes notes-type="disclosures">
+<title>Author Declarations</title><p>I confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.</p><p>Yes</p><p>The details of the IRB/oversight body that provided approval or exemption for the research described are given below:</p><p>Ethical Committee: The Cambridgeshire 2 LREC, Ethics number: 10/H308/23</p><p>All necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived.</p><p>Yes</p><p>I understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).</p><p>Yes</p><p>I have followed all appropriate research reporting guidelines and uploaded the relevant EQUATOR Network research reporting checklist(s) and other pertinent material as supplementary files, if applicable.</p><p>Yes</p></notes>
+</notes>
+</front>
+<body>
+<sec id="s1">
+<label>1</label>
+<title>Introduction</title>
+<sec id="s1a">
+<label>1.1</label>
+<title>Brain tumors and white matter tracts</title>
+<p>A brain tumor refers to a mass lesion identified within the brain or related structures. Among them, gliomas and meningiomas are the most common primary tumor types in adults. Impacts of tumors are characterized by diffuse infiltration and interference with the white matter tracts [<xref ref-type="bibr" rid="c24">24</xref>, <xref ref-type="bibr" rid="c26">26</xref>], the neuronal fiber bundles forming a complex network connecting cortical regions. As a result, the tumor infiltration along white matter tracts may lead to structural disturbance of the brain[<xref ref-type="bibr" rid="c13">13</xref>].</p>
+<p>Brain tumor patients frequently demonstrate neurological deficits that are not directly explained by the focal lesion [<xref ref-type="bibr" rid="c8">8</xref>]. Therefore, it is increasingly accepted that brain tumors may cause broader impacts to the global brain beyond the focal site through the white matter tracts [<xref ref-type="bibr" rid="c1">1</xref>]. Therefore, accurately measuring structural connectivity strength offers a promising imaging surrogate to detect the tumor-related brain alterations. Further, the pre-treatment mapping of the structural connectivity provides significance for the planning of both surgery and radiotherapy[<xref ref-type="bibr" rid="c18">18</xref>]</p>
+</sec>
+<sec id="s1b">
+<label>1.2</label>
+<title>Connectivity strength measurement</title>
+<p>Recent development of neuroimaging techniques have facilitated characterization of brain connectivity at the whole-brain level, based on diffusion MRI (dMRI). The derived fractional anisotropy (FA) map is commonly used to measure the tract strength. The tract-based spatial statistics (TBSS) is a method to estimate the strength of specific tracts using a FA skeleton derived by mapping the local maxima FA voxels to the template [<xref ref-type="bibr" rid="c19">19</xref>]. As a voxel-based method, however, TBSS fails to consider the spatial continuity of the fiber pathway, which has difficulties in multiple testing and tracking the fibers that tumor infiltrates along [<xref ref-type="bibr" rid="c4">4</xref>]. Further, as the projection procedure in TBSS is purely based on the FA values, the traditional TBSS does not consider the orientation of the tract fibers that are frequently affected in brain tumor patients.</p>
+<p>Tractography is a widely-used fiber tracking method to measure the tract connectivity. This method has the advantage of detecting the fiber pathway with spatial consistency. Performing tractography on brain tumor patients, however, has the below challenges: 1) The tract pathways in vicinity to the tumor are often anatomically deviated, which may cause errors in fiber tracking. 2) Many brain tumors are remarkably heterogeneous [<xref ref-type="bibr" rid="c28">28</xref>, <xref ref-type="bibr" rid="c11">11</xref>, <xref ref-type="bibr" rid="c10">10</xref>, <xref ref-type="bibr" rid="c27">27</xref>]. Particularly, the edema region surrounding the tumor may cause artefacts in fiber tracking, as the FA value is commonly affected in these regions [<xref ref-type="bibr" rid="c17">17</xref>].</p>
+</sec>
+<sec id="s1c">
+<label>1.3</label>
+<title>Related work</title>
+<p>The conventional tractography methods include Fiber Assignment by Continuous Tracking (FACT) and Unscented Kalman Filter (UKF) tractography.</p>
+<sec id="s1c1">
+<title>FACT tractography</title>
+<p>FACT [<xref ref-type="bibr" rid="c14">14</xref>] is a deterministic method that tracks fiber streamlines from a seed region by following the primary eigenvector from one voxel to the next. FACT is highly sensitive to the changes of FA and tensor values in the white matter. As a result, the tracking frequently fails when encountering peritumoral edema, leading to overestimated disruption of the structural networks. In some other cases, it may produce spurious tract rings around the tumor, which may underestimate the connectivity reduction.[<xref ref-type="bibr" rid="c6">6</xref>]</p>
+</sec>
+<sec id="s1c2">
+<title>UKF tractography</title>
+<p>UKF is shown to be able to track inside the peritumoral edema using two tensor models [<xref ref-type="bibr" rid="c12">12</xref>]. However, in order to achieve this, the model weakly controls the false positive fibers compared to healthy subjects [<xref ref-type="bibr" rid="c6">6</xref>]. The trade-off between false positive and false negative rates is challenging to be optimized among patients, which could particularly cause bias in the group analysis when individual tumors have heterogeneous extent of peritumoral edema.</p>
+</sec>
+</sec>
+<sec id="s1d">
+<label>1.4</label>
+<title>Our contributions</title>
+<p>We propose a method of estimating structural connectivity for network construction in brain tumor patients, without directly fiber tracking on patients (<xref rid="fig1" ref-type="fig">Fig. 1</xref>). Inspired by a method for traumatic brain injury [<xref ref-type="bibr" rid="c20">20</xref>], we firstly performed tratography on healthy controls and generated an unbiased tract template, with the location of each tract fiber derived. The TBSS approach was then employed to derive the skeletonized FA maps from patients, for estimating the connectivity strength of each specific tract in patients. To mitigate the bias in TBSS voxel projection caused by tumor mass effect, we further proposed an improved TBSS tailored to brain tumors, using an iterative projection of FA voxels guided by the tract orientation based on the voxel-wise eigenvector.</p>
+<fig id="fig1" position="float" fig-type="figure">
+<label>Fig. 1.</label>
+<caption><p>Flowchart of network construction. A. An unbiased tractography template is generated using probabilistic tractography in ten healthy subjects to indicate the location of the tracts between brain regions parcellated using the brain atlas. B. By using an iterative projection approach that considers the direction of voxles (V1), a skeletonized FA map with maximum tract continuity can be produced. The red arrows indicate the discontinuity in the FA skeleton from the traditonal TBSS that is corrected with our proposed method</p></caption>
+<graphic xlink:href="21253837v2_fig1.tif"/>
+</fig>
+<p>We compared the connectivity strength estimated by the proposed approach and the conventional tractography methods in multiple datasets of brain tumor patients. The results show that our approach is reflecting more functional relevance. Further, the different extent of network disruption revealed by our approach correspond to the clinical prior knowledge of tumor histology.</p>
+</sec>
+</sec>
+<sec id="s2">
+<label>2</label>
+<title>Methods</title>
+<sec id="s2a">
+<label>2.1</label>
+<title>Datasets</title>
+<p>Three datasets of glioma or meningioma patients were included, with both diffusion MRI (dMRI) and resting-state functional MRI (rs-fMRI) available: 1) 4 low-grade gliomas (LGGs), 5 high-grade gliomas (HGGs) and 2 meningiomas (dMRI: 60 directions, b = 1000 s/mm2; rs-fMRI : TR = 2.5 s) were obtained from [<xref ref-type="bibr" rid="c16">16</xref>]; 2) OpenNeuro database: 7 LGGs, 4 HGGs, and 14 meningiomas (dMRI: 101 directions, b = 0, 700, 1200, 2800 s/mm2; rs-fMRI : TR = 2.4 s) [<xref ref-type="bibr" rid="c2">2</xref>]. 3) an in-house dataset: 12 HGGs (dMRI: 12 directions for each b values, b = 0, 350, 650, 1000, 1300, 1600 s/mm2; rs-fMRI : TR = 2.43 s). In total, 11 LGGs, 21 HGGs and 16 meningiomas were included.</p>
+</sec>
+<sec id="s2b">
+<label>2.2</label>
+<title>Template-based brain networks</title>
+<p>The proposed method includes three main steps:</p>
+<list list-type="simple">
+<list-item><label>&#x2013;</label><p>Producing an unbiased tractography template (<xref rid="fig1" ref-type="fig">Fig. 1A</xref>),</p></list-item>
+<list-item><label>&#x2013;</label><p>Generating individualized FA skeleton (<xref rid="fig1" ref-type="fig">Fig. 1B</xref>),</p></list-item>
+<list-item><label>&#x2013;</label><p>Combining tractography template with FA skeleton to estimate the connectivity strength between each pair of brain regions in patients</p></list-item>
+</list>
+<sec id="s2b1">
+<title>Tractography template</title>
+<p>An unbiased tract template was generated in four steps using ten age-matched elderly healthy controls obtained from the Alzheimer&#x2019;s disease Neuroimaging Initiative (ADNI, <ext-link ext-link-type="uri" xlink:href="http://adni.loni.usc.edu/">http://adni.loni.usc.edu/</ext-link>).</p>
+<list list-type="order">
+<list-item><p>A diffusion model was fitted at each voxel of dMRI using Bedpostx of FM-RIB software library (FSL, <ext-link ext-link-type="uri" xlink:href="https://fsl.fmrib.ox.ac.uk/fsl/">https://fsl.fmrib.ox.ac.uk/fsl/</ext-link>). Pairwise probabilistic tractography was performed between 90 regions of Automated Anatomical Labelling atlas (AAL) atlas [<xref ref-type="bibr" rid="c22">22</xref>] using Probtrackx2 to generate a path distribution map in healthy controls [<xref ref-type="bibr" rid="c5">5</xref>].</p></list-item>
+<list-item><p>The path distribution map was nonlinearly tranformed to standard MNI-152 space [<xref ref-type="bibr" rid="c7">7</xref>] using the Advanced Normalization Tools (ANTs)[<xref ref-type="bibr" rid="c3">3</xref>] and finally averaged, to produce a group distribution map for each tract. The maps were thresholded and binarized to preserve the top 5&#x0025; strongest connections and generate a conservative tract atlas in the standard space.</p></list-item>
+</list>
+</sec>
+<sec id="s2b2">
+<title>Individual FA skeleton from iterative projection</title>
+<p>An FA skeleton of each patient was generated at the individualized native space using an improved TBSS approach.</p>
+<list list-type="order">
+<list-item><p>FA maps of all patients were first non-linearly co-registered to the standard space using ANTs. In addition, the corresponding principal eigenvector V1 maps were also transformed to the standard space. Instead of using the patient group thinned FA skeleton, we used the standard FA skeleton of FSL as the target for projection to reduce bias introduced by tumor.</p></list-item>
+<list-item><p>We further improved TBSS that only projects the voxels with local maximum value at the tract center on the FA skeleton. Specifically, we compared the principal eigenvector (V1) of the projected voxel to the the standard V1 and calculated the orientation difference using vector product. The voxels with the orientation difference over 90 degrees were discarded, where neighbor voxels were selected instead. The projection iteration continued until all voxels on the skeleton converged to minimum direction difference with the standard FA skeleton. Using this procedure, the continuity of the voxel directions on each tract could be improved. An individualized FA skeleton was generated in each patient.</p></list-item>
+</list>
+</sec>
+<sec id="s2b3">
+<title>Structural connectivity strength estimation</title>
+<p>The segments of the individualized FA skeleton within each tract of the template was extracted and averaged, representing the connectivity strengths of the major tracts.</p>
+</sec>
+</sec>
+<sec id="s2c">
+<label>2.3</label>
+<title>Baseline methods</title>
+<p>FACT was performed using diffusion toolkits [<xref ref-type="bibr" rid="c25">25</xref>], while UKF was performed using the UKFTratography packages in 3D Slicer(<ext-link ext-link-type="uri" xlink:href="https://www.slicer.org/">https://www.slicer.org/</ext-link>) via the SlicerDMRI project (<ext-link ext-link-type="uri" xlink:href="http://dmri.slicer.org">http://dmri.slicer.org</ext-link>) [<xref ref-type="bibr" rid="c30">30</xref>, <xref ref-type="bibr" rid="c15">15</xref>]. For both methods, the mean FA value of the tracts connecting two ROIs of AAL atlas was calculated using MRTrix3 by sampling and averaging the FA values along the streamlines generated by the tractography [<xref ref-type="bibr" rid="c21">21</xref>].</p>
+</sec>
+<sec id="s2d">
+<label>2.4</label>
+<title>Functional brain networks</title>
+<p>We constructed functional networks from rs-fMRI using GRETNA[<xref ref-type="bibr" rid="c23">23</xref>]. Firstly, the rs-fMRI signals were regressed, bandpass-filtered, smoothed with a kernel with a full width at half maximum of 6mm and co-registered to the standard space. Secondly, the brain regions of each patient were parcellated using the AAL atlas. Finally, pairwise Pearson correlation was performed between the mean rs-fMRI signals in 90 brain regions.</p>
+</sec>
+<sec id="s2e">
+<label>2.5</label>
+<title>Functional relevance of the structural networks</title>
+<sec id="s2e1">
+<title>Whole-brain structural and functional connectivity coupling</title>
+<p>To measure the individualized functional relevance of a structural network, we calculated the whole brain structural connectivity-functional connectivity (SC-FC) coupling. Spearman rank correlation was performed between the non-zero elements of the structural connections with their corresponding functional connections to produce correlation coefficient for each patient. To compare the group difference, the correlation coefficients were transformed using Fisher Z-Transformation.</p>
+</sec>
+<sec id="s2e2">
+<title>Group-wise structural-functional connection correlation</title>
+<p>The strength of functional connections varies due to the distinct extent of disruptions in corresponding structural connections. By testing the correlation of each functional and structural connection, the functional connections sensitive to structural damage can be identified. To weakly control the family-wise error in multiple comparisons, we used the network-based statistics (NBS)[<xref ref-type="bibr" rid="c29">29</xref>], providing higher sensitivity in controlling false discovery rate.</p>
+</sec>
+</sec>
+<sec id="s2f">
+<label>2.6</label>
+<title>Clinical validation</title>
+<p>The clinical prior knowledge establishes that meningiomas normally cause less disturbance to the brain than gliomas. A robust network construction method should be sensitive to the difference between meningioma and glioma. We used the global efficiency, calculated according to graph theory, to characterize the brain networks, which were compared in meningioma and glioma patients [<xref ref-type="bibr" rid="c9">9</xref>].</p>
+</sec>
+</sec>
+<sec id="s3">
+<label>3</label>
+<title>Results</title>
+<sec id="s3a">
+<label>3.1</label>
+<title>Iterative TBSS projection</title>
+<p>The proposed approach showed smaller orientation differences between patient FA skeleton and standard FA, compared to the baseline methods (<xref rid="tbl1" ref-type="table">Table 1</xref>). One example is illustrated on <xref rid="fig2" ref-type="fig">Fig. 2</xref>. Tracts that are displaced by the tumor have voxels from the wrong directions projected onto the FA skeleton. In comparison, our approach could ensure the maximum orientation continuity of the tracts.</p>
+<table-wrap id="tbl1" orientation="portrait" position="float">
+<label>Table 1.</label>
+<caption><p>Mean orientation differences between patient FA skeleton and standard FA</p></caption>
+<graphic xlink:href="21253837v2_tbl1.tif"/>
+</table-wrap>
+<fig id="fig2" position="float" fig-type="figure">
+<label>Fig. 2.</label>
+<caption><p>Example of voxel projection in coronal (left), axial (middle) and sagittal (right) views. A. T1 contrast MRI indicating tumor location. B. Traditional TBSS voxel projection: the tracts surrounding the tumor display different direction (green) from the contralesional tract (blue). C. The proposed method improves the direction continuity of the tract.</p></caption>
+<graphic xlink:href="21253837v2_fig2.tif"/>
+</fig>
+</sec>
+<sec id="s3b">
+<label>3.2</label>
+<title>Whole brain structural and functional connectivity coupling</title>
+<p>The proposed method achieved higher SC-FC coupling over the baseline methods (<xref rid="tbl2" ref-type="table">Table 2</xref>), suggesting the robustness of the brain network constructed using the proposed method.</p>
+<table-wrap id="tbl2" orientation="portrait" position="float">
+<label>Table 2.</label>
+<caption><p>SC-FC Coupling coefficient (z-transformed)</p></caption>
+<graphic xlink:href="21253837v2_tbl2.tif"/>
+</table-wrap>
+</sec>
+<sec id="s3c">
+<label>3.3</label>
+<title>Group-wise structural-functional connection correlation</title>
+<p>Only the proposed method identified significantly correlated functional and structural sub-networks across the patient group, suggesting its high sensitivity to functional related structural disruptions.(<xref ref-type="fig" rid="fig3">Fig.3</xref>)</p>
+<fig id="fig3" position="float" fig-type="figure">
+<label>Fig. 3.</label>
+<caption><p>A. Sub-network is identified by the proposed method, with clusters of significantly correlated structural and functional connections (<italic>P</italic> = 0.0014). B. Fewer correlated structural and functional connections are identified by the UKF (<italic>P &#x003E;</italic> 0.05). Family wise errors of both methods are corrected by NBS with 5000 permuations.</p></caption>
+<graphic xlink:href="21253837v2_fig3.tif"/>
+</fig>
+</sec>
+<sec id="s3d">
+<label>3.4</label>
+<title>Global efficiency of different tumor types</title>
+<p>The meningioma group in general has significantly higher global efficiency than the glioma group (<italic>P</italic> = 2.9e-4), while the baseline methods did not capture significant difference in <xref rid="fig4" ref-type="fig">Fig. 4</xref>. Further, in a subgroup of menigioma and high-grade glioma with comparable size, menigioma patients still have significant higher global efficiency comparing to high-grade glioma group (<italic>P</italic> = 9.3e-5), while baseline methods did not show significant difference.</p>
+<fig id="fig4" position="float" fig-type="figure">
+<label>Fig. 4.</label>
+<caption><p>Global efficiency of the structural networks constructed using the proposed method, FACT, and UKF. Compared to glioma, meningioma patients display significantly higher global efficiency in the network constructed using the proposed approach.&#x002A; : <italic>P &#x003C;</italic> 0.05</p></caption>
+<graphic xlink:href="21253837v2_fig4.tif"/>
+</fig>
+</sec>
+</sec>
+<sec id="s4">
+<label>4</label>
+<title>Conclusion</title>
+<p>This study proposes an approach to construct structural network and estimate the connectivity, which employs an improved TBSS approach and the tractography template from healthy controls. This method is shown to be robust compared to the conventional tractography, with higher functional and clinical relevance. The proposed method shows promise to aid treatment planning and patient risk assessment.</p>
+</sec>
+</body>
+<back>
+<sec sec-type="data-availability">
+<title>Data Availability</title>
+<p>The datasets generated during and/or analysed during the current study are available from the corresponding author on reasonable request</p>
+</sec>
+<ref-list>
+<title>References</title>
+<ref id="c1"><label>1.</label><mixed-citation publication-type="journal"><string-name><surname>Aerts</surname>, <given-names>H.</given-names></string-name>, <string-name><surname>Fias</surname>, <given-names>W.</given-names></string-name>, <string-name><surname>Caeyenberghs</surname>, <given-names>K.</given-names></string-name>, <string-name><surname>Marinazzo</surname>, <given-names>D.</given-names></string-name>: <article-title>Brain networks under attack: robustness properties and the impact of lesions</article-title>. <source>Brain</source> <volume>139</volume> (<issue>12</issue>), <fpage>3063</fpage>&#x2013;<lpage>3083</lpage> (<year>2016</year>)</mixed-citation></ref>
+<ref id="c2"><label>2.</label><mixed-citation publication-type="website"><string-name><surname>Aerts</surname>, <given-names>H.</given-names></string-name>, <string-name><surname>Marinazzo</surname>, <given-names>D.</given-names></string-name>: <source>Brain tumor connectomics data</source> (<year>2019</year>). <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.18112/openneuro.ds001226.v1.0.0">https://doi.org/10.18112/openneuro.ds001226.v1.0.0</ext-link></mixed-citation></ref>
+<ref id="c3"><label>3.</label><mixed-citation publication-type="journal"><string-name><surname>Avants</surname>, <given-names>B.B.</given-names></string-name>, <string-name><surname>Tustison</surname>, <given-names>N.</given-names></string-name>, <string-name><surname>Song</surname>, <given-names>G.</given-names></string-name>: <article-title>Advanced normalization tools (ants)</article-title>. <source>Insight j</source> <volume>2</volume> (<issue>365</issue>), <fpage>1</fpage>&#x2013;<lpage>35</lpage> (<year>2009</year>)</mixed-citation></ref>
+<ref id="c4"><label>4.</label><mixed-citation publication-type="journal"><string-name><surname>Bach</surname>, <given-names>M.</given-names></string-name>, <string-name><surname>Laun</surname>, <given-names>F.B.</given-names></string-name>, <string-name><surname>Leemans</surname>, <given-names>A.</given-names></string-name>, <string-name><surname>Tax</surname>, <given-names>C.M.</given-names></string-name>, <string-name><surname>Biessels</surname>, <given-names>G.J.</given-names></string-name>, <string-name><surname>Stieltjes</surname>, <given-names>B.</given-names></string-name>, <string-name><surname>Maier-Hein</surname>, <given-names>K.H.</given-names></string-name>: <article-title>Methodological considerations on tract-based spatial statistics (tbss)</article-title>. <source>Neuroimage</source> <volume>100</volume>, <fpage>358</fpage>&#x2013;<lpage>369</lpage> (<year>2014</year>)</mixed-citation></ref>
+<ref id="c5"><label>5.</label><mixed-citation publication-type="journal"><string-name><surname>Behrens</surname>, <given-names>T.E.</given-names></string-name>, <string-name><surname>Berg</surname>, <given-names>H.J.</given-names></string-name>, <string-name><surname>Jbabdi</surname>, <given-names>S.</given-names></string-name>, <string-name><surname>Rushworth</surname>, <given-names>M.F.</given-names></string-name>, <string-name><surname>Woolrich</surname>, <given-names>M.W.</given-names></string-name>: <article-title>Proba-bilistic diffusion tractography with multiple fibre orientations: What can we gain?</article-title> <source>Neuroimage</source> <volume>34</volume> (<issue>1</issue>), <fpage>144</fpage>&#x2013;<lpage>155</lpage> (<year>2007</year>)</mixed-citation></ref>
+<ref id="c6"><label>6.</label><mixed-citation publication-type="journal"><string-name><surname>Chen</surname>, <given-names>Z.</given-names></string-name>, <string-name><surname>Tie</surname>, <given-names>Y.</given-names></string-name>, <string-name><surname>Olubiyi</surname>, <given-names>O.</given-names></string-name>, <string-name><surname>Rigolo</surname>, <given-names>L.</given-names></string-name>, <string-name><surname>Mehrtash</surname>, <given-names>A.</given-names></string-name>, <string-name><surname>Norton</surname>, <given-names>I.</given-names></string-name>, <string-name><surname>Pasternak</surname>, <given-names>O.</given-names></string-name>, <string-name><surname>Rathi</surname>, <given-names>Y.</given-names></string-name>, <string-name><surname>Golby</surname>, <given-names>A.J.</given-names></string-name>, <string-name><surname>O&#x2019;Donnell</surname>, <given-names>L.J.</given-names></string-name>: <article-title>Reconstruction of the arcuate fasciculus for surgical planning in the setting of peritumoral edema using two-tensor unscented kalman filter tractography</article-title>. <source>NeuroImage: Clinical</source> <volume>7</volume>, <fpage>815</fpage>&#x2013;<lpage>822</lpage> (<year>2015</year>)</mixed-citation></ref>
+<ref id="c7"><label>7.</label><mixed-citation publication-type="book"><string-name><surname>Grabner</surname>, <given-names>G.</given-names></string-name>, <string-name><surname>Janke</surname>, <given-names>A.L.</given-names></string-name>, <string-name><surname>Budge</surname>, <given-names>M.M.</given-names></string-name>, <string-name><surname>Smith</surname>, <given-names>D.</given-names></string-name>, <string-name><surname>Pruessner</surname>, <given-names>J.</given-names></string-name>, <string-name><surname>Collins</surname>, <given-names>D.L.</given-names></string-name>: <chapter-title>Symmetric atlasing and model based segmentation: an application to the hip-pocampus in older adults</chapter-title>. <source>In: International Conference on Medical Image Computing and Computer-Assisted Intervention</source>. pp. <fpage>58</fpage>&#x2013;<lpage>66</lpage>. <publisher-name>Springer</publisher-name> (<year>2006</year>)</mixed-citation></ref>
+<ref id="c8"><label>8.</label><mixed-citation publication-type="journal"><string-name><surname>Incekara</surname>, <given-names>F.</given-names></string-name>, <string-name><surname>Satoer</surname>, <given-names>D.</given-names></string-name>, <string-name><surname>Visch-Brink</surname>, <given-names>E.</given-names></string-name>, <string-name><surname>Vincent</surname>, <given-names>A.</given-names></string-name>, <string-name><surname>Smits</surname>, <given-names>M.</given-names></string-name>: <article-title>Changes in language white matter tract microarchitecture associated with cognitive deficits in patients with presumed low-grade glioma</article-title>. <source>Journal of neurosurgery</source> <volume>130</volume> (<issue>5</issue>), <fpage>1538</fpage>&#x2013; <lpage>1546</lpage> (<year>2018</year>)</mixed-citation></ref>
+<ref id="c9"><label>9.</label><mixed-citation publication-type="journal"><string-name><surname>Latora</surname>, <given-names>V.</given-names></string-name>, <string-name><surname>Marchiori</surname>, <given-names>M.</given-names></string-name>: <article-title>Efficient behavior of small-world networks</article-title>. <source>Physical review letters</source> <volume>87</volume> (<issue>19</issue>), <fpage>198701</fpage> (<year>2001</year>)</mixed-citation></ref>
+<ref id="c10"><label>10.</label><mixed-citation publication-type="journal"><string-name><surname>Li</surname>, <given-names>C.</given-names></string-name>, <string-name><surname>Wang</surname>, <given-names>S.</given-names></string-name>, <string-name><surname>Yan</surname>, <given-names>J.L.</given-names></string-name>, <string-name><surname>Piper</surname>, <given-names>R.J.</given-names></string-name>, <string-name><surname>Liu</surname>, <given-names>H.</given-names></string-name>, <string-name><surname>Torheim</surname>, <given-names>T.</given-names></string-name>, <string-name><surname>Kim</surname>, <given-names>H.</given-names></string-name>, <string-name><surname>Zou</surname>, <given-names>J.</given-names></string-name>, <string-name><surname>Boonzaier</surname>, <given-names>N.R.</given-names></string-name>, <string-name><surname>Sinha</surname>, <given-names>R.</given-names></string-name>, <etal>et al.</etal>: <article-title>Intratumoral heterogeneity of glioblastoma infiltration revealed by joint histogram analysis of diffusion tensor imaging</article-title>. <source>Neurosurgery</source> <volume>85</volume> (<issue>4</issue>), <fpage>524</fpage>&#x2013;<lpage>534</lpage> (<year>2019</year>)</mixed-citation></ref>
+<ref id="c11"><label>11.</label><mixed-citation publication-type="journal"><string-name><surname>Li</surname>, <given-names>C.</given-names></string-name>, <string-name><surname>Wang</surname>, <given-names>S.</given-names></string-name>, <string-name><surname>Yan</surname>, <given-names>J.L.</given-names></string-name>, <string-name><surname>Torheim</surname>, <given-names>T.</given-names></string-name>, <string-name><surname>Boonzaier</surname>, <given-names>N.R.</given-names></string-name>, <string-name><surname>Sinha</surname>, <given-names>R.</given-names></string-name>, <string-name><surname>Matys</surname>, <given-names>T.</given-names></string-name>, <string-name><surname>Markowetz</surname>, <given-names>F.</given-names></string-name>, <string-name><surname>Price</surname>, <given-names>S.J.</given-names></string-name>: <article-title>Characterizing tumor invasiveness of glioblastoma using multiparametric magnetic resonance imaging</article-title>. <source>Journal of neurosurgery</source> <volume>132</volume> (<issue>5</issue>), <fpage>1465</fpage>&#x2013;<lpage>1472</lpage> (<year>2019</year>)</mixed-citation></ref>
+<ref id="c12"><label>12.</label><mixed-citation publication-type="journal"><string-name><surname>Liao</surname>, <given-names>R.</given-names></string-name>, <string-name><surname>Ning</surname>, <given-names>L.</given-names></string-name>, <string-name><surname>Chen</surname>, <given-names>Z.</given-names></string-name>, <string-name><surname>Rigolo</surname>, <given-names>L.</given-names></string-name>, <string-name><surname>Gong</surname>, <given-names>S.</given-names></string-name>, <string-name><surname>Pasternak</surname>, <given-names>O.</given-names></string-name>, <string-name><surname>Golby</surname>, <given-names>A.J.</given-names></string-name>, <string-name><surname>Rathi</surname>, <given-names>Y.</given-names></string-name>, <string-name><surname>O&#x2019;Donnell</surname>, <given-names>L.J.</given-names></string-name>: <article-title>Performance of unscented kalman filter tractography in edema: Analysis of the two-tensor model</article-title>. <source>NeuroImage: Clinical</source> <volume>15</volume>, <fpage>819</fpage>&#x2013;<lpage>831</lpage> (<year>2017</year>)</mixed-citation></ref>
+<ref id="c13"><label>13.</label><mixed-citation publication-type="journal"><string-name><surname>Liu</surname>, <given-names>Y.</given-names></string-name>, <string-name><surname>Yang</surname>, <given-names>K.</given-names></string-name>, <string-name><surname>Hu</surname>, <given-names>X.</given-names></string-name>, <string-name><surname>Xiao</surname>, <given-names>C.</given-names></string-name>, <string-name><surname>Rao</surname>, <given-names>J.</given-names></string-name>, <string-name><surname>Li</surname>, <given-names>Z.</given-names></string-name>, <string-name><surname>Liu</surname>, <given-names>D.</given-names></string-name>, <string-name><surname>Zou</surname>, <given-names>Y.</given-names></string-name>, <string-name><surname>Chen</surname>, <given-names>J.</given-names></string-name>, <string-name><surname>Liu</surname>, <given-names>H.</given-names></string-name>: <article-title>Altered rich-club organization and regional topology are associated with cognitive decline in patients with frontal and temporal gliomas</article-title>. <source>Frontiers in human neuroscience</source> <volume>14</volume>, <fpage>23</fpage> (<year>2020</year>)</mixed-citation></ref>
+<ref id="c14"><label>14.</label><mixed-citation publication-type="journal"><string-name><surname>Mori</surname>, <given-names>S.</given-names></string-name>, <string-name><surname>Crain</surname>, <given-names>B.J.</given-names></string-name>, <string-name><surname>Chacko</surname>, <given-names>V.P.</given-names></string-name>, <string-name><surname>Van Zijl</surname>, <given-names>P.C.</given-names></string-name>: <article-title>Three-dimensional tracking of axonal projections in the brain by magnetic resonance imaging</article-title>. <source>Annals of Neurology: Official Journal of the American Neurological Association and the Child Neurology Society</source> <volume>45</volume> (<issue>2</issue>), <fpage>265</fpage>&#x2013;<lpage>269</lpage> (<year>1999</year>)</mixed-citation></ref>
+<ref id="c15"><label>15.</label><mixed-citation publication-type="journal"><string-name><surname>Norton</surname>, <given-names>I.</given-names></string-name>, <string-name><surname>Essayed</surname>, <given-names>W.I.</given-names></string-name>, <string-name><surname>Zhang</surname>, <given-names>F.</given-names></string-name>, <string-name><surname>Pujol</surname>, <given-names>S.</given-names></string-name>, <string-name><surname>Yarmarkovich</surname>, <given-names>A.</given-names></string-name>, <string-name><surname>Golby</surname>, <given-names>A.J.</given-names></string-name>, <string-name><surname>Kindlmann</surname>, <given-names>G.</given-names></string-name>, <string-name><surname>Wassermann</surname>, <given-names>D.</given-names></string-name>, <string-name><surname>Estepar</surname>, <given-names>R.S.J.</given-names></string-name>, <string-name><surname>Rathi</surname>, <given-names>Y.</given-names></string-name>, <etal>et al.</etal>: <article-title>Slicerdmri: open source diffusion mri software for brain cancer research</article-title>. <source>Cancer research</source> <volume>77</volume> (<issue>21</issue>), <fpage>e101</fpage>&#x2013;<lpage>e103</lpage> (<year>2017</year>)</mixed-citation></ref>
+<ref id="c16"><label>16.</label><mixed-citation publication-type="journal"><string-name><surname>Pernet</surname>, <given-names>C.R.</given-names></string-name>, <string-name><surname>Gorgolewski</surname>, <given-names>K.J.</given-names></string-name>, <string-name><surname>Job</surname>, <given-names>D.</given-names></string-name>, <string-name><surname>Rodriguez</surname>, <given-names>D.</given-names></string-name>, <string-name><surname>Whittle</surname>, <given-names>I.</given-names></string-name>, <string-name><surname>Wardlaw</surname>, <given-names>J.</given-names></string-name>: <article-title>A structural and functional magnetic resonance imaging dataset of brain tumour patients</article-title>. <source>Scientific data</source> <volume>3</volume> (<issue>1</issue>), <fpage>1</fpage>&#x2013;<lpage>6</lpage> (<year>2016</year>)</mixed-citation></ref>
+<ref id="c17"><label>17.</label><mixed-citation publication-type="journal"><string-name><surname>Schult</surname>, <given-names>T.</given-names></string-name>, <string-name><surname>Hauser</surname>, <given-names>T.K.</given-names></string-name>, <string-name><surname>Klose</surname>, <given-names>U.</given-names></string-name>, <string-name><surname>Hurth</surname>, <given-names>H.</given-names></string-name>, <string-name><surname>Ehricke</surname>, <given-names>H.H.</given-names></string-name>: <article-title>Fiber visualization for preoperative glioma assessment: Tractography versus local connectivity mapping</article-title>. <source>Plos one</source> <volume>14</volume> (<issue>12</issue>), <fpage>e0226153</fpage> (<year>2019</year>)</mixed-citation></ref>
+<ref id="c18"><label>18.</label><mixed-citation publication-type="journal"><string-name><surname>Sinha</surname>, <given-names>R.</given-names></string-name>, <string-name><surname>Dijkshoorn</surname>, <given-names>A.B.</given-names></string-name>, <string-name><surname>Li</surname>, <given-names>C.</given-names></string-name>, <string-name><surname>Manly</surname>, <given-names>T.</given-names></string-name>, <string-name><surname>Price</surname>, <given-names>S.J.</given-names></string-name>: <article-title>Glioblastoma surgery related emotion recognition deficits are associated with right cerebral hemisphere tract changes</article-title>. <source>Brain communications</source> <volume>2</volume> (<issue>2</issue>), <fpage>fcaa169</fpage> (<year>2020</year>)</mixed-citation></ref>
+<ref id="c19"><label>19.</label><mixed-citation publication-type="journal"><string-name><surname>Smith</surname>, <given-names>S.M.</given-names></string-name>, <string-name><surname>Jenkinson</surname>, <given-names>M.</given-names></string-name>, <string-name><surname>Johansen-Berg</surname>, <given-names>H.</given-names></string-name>, <string-name><surname>Rueckert</surname>, <given-names>D.</given-names></string-name>, <string-name><surname>Nichols</surname>, <given-names>T.E.</given-names></string-name>, <string-name><surname>Mackay</surname>, <given-names>C.E.</given-names></string-name>, <string-name><surname>Watkins</surname>, <given-names>K.E.</given-names></string-name>, <string-name><surname>Ciccarelli</surname>, <given-names>O.</given-names></string-name>, <string-name><surname>Cader</surname>, <given-names>M.Z.</given-names></string-name>, <string-name><surname>Matthews</surname>, <given-names>P.M.</given-names></string-name>, <etal>et al.</etal>: <article-title>Tract-based spatial statistics: voxelwise analysis of multi-subject diffusion data</article-title>. <source>Neuroimage</source> <volume>31</volume> (<issue>4</issue>), <fpage>1487</fpage>&#x2013;<lpage>1505</lpage> (<year>2006</year>)</mixed-citation></ref>
+<ref id="c20"><label>20.</label><mixed-citation publication-type="journal"><string-name><surname>Squarcina</surname>, <given-names>L.</given-names></string-name>, <string-name><surname>Bertoldo</surname>, <given-names>A.</given-names></string-name>, <string-name><surname>Ham</surname>, <given-names>T.E.</given-names></string-name>, <string-name><surname>Heckemann</surname>, <given-names>R.</given-names></string-name>, <string-name><surname>Sharp</surname>, <given-names>D.J.</given-names></string-name>: <article-title>A robust method for investigating thalamic white matter tracts after traumatic brain injury</article-title>. <source>Neuroimage</source> <volume>63</volume> (<issue>2</issue>), <fpage>779</fpage>&#x2013;<lpage>788</lpage> (<year>2012</year>)</mixed-citation></ref>
+<ref id="c21"><label>21.</label><mixed-citation publication-type="journal"><string-name><surname>Tournier</surname>, <given-names>J.D.</given-names></string-name>, <string-name><surname>Smith</surname>, <given-names>R.</given-names></string-name>, <string-name><surname>Raffelt</surname>, <given-names>D.</given-names></string-name>, <string-name><surname>Tabbara</surname>, <given-names>R.</given-names></string-name>, <string-name><surname>Dhollander</surname>, <given-names>T.</given-names></string-name>, <string-name><surname>Pietsch</surname>, <given-names>M.</given-names></string-name>, <string-name><surname>Christiaens</surname>, <given-names>D.</given-names></string-name>, <string-name><surname>Jeurissen</surname>, <given-names>B.</given-names></string-name>, <string-name><surname>Yeh</surname>, <given-names>C.H.</given-names></string-name>, <string-name><surname>Connelly</surname>, <given-names>A.</given-names></string-name>: <article-title>Mrtrix3: A fast, flexible and open software framework for medical image processing and visualisation</article-title>. <source>NeuroImage</source> <volume>202</volume>, <fpage>116137</fpage> (<year>2019</year>)</mixed-citation></ref>
+<ref id="c22"><label>22.</label><mixed-citation publication-type="journal"><string-name><surname>Tzourio-Mazoyer</surname>, <given-names>N.</given-names></string-name>, <string-name><surname>Landeau</surname>, <given-names>B.</given-names></string-name>, <string-name><surname>Papathanassiou</surname>, <given-names>D.</given-names></string-name>, <string-name><surname>Crivello</surname>, <given-names>F.</given-names></string-name>, <string-name><surname>Etard</surname>, <given-names>O.</given-names></string-name>, <string-name><surname>Delcroix</surname>, <given-names>N.</given-names></string-name>, <string-name><surname>Mazoyer</surname>, <given-names>B.</given-names></string-name>, <string-name><surname>Joliot</surname>, <given-names>M.</given-names></string-name>: <article-title>Automated anatomical labeling of activations in spm using a macroscopic anatomical parcellation of the mni mri single-subject brain</article-title>. <source>Neuroimage</source> <volume>15</volume> (<issue>1</issue>), <fpage>273</fpage>&#x2013;<lpage>289</lpage> (<year>2002</year>)</mixed-citation></ref>
+<ref id="c23"><label>23.</label><mixed-citation publication-type="journal"><string-name><surname>Wang</surname>, <given-names>J.</given-names></string-name>, <string-name><surname>Wang</surname>, <given-names>X.</given-names></string-name>, <string-name><surname>Xia</surname>, <given-names>M.</given-names></string-name>, <string-name><surname>Liao</surname>, <given-names>X.</given-names></string-name>, <string-name><surname>Evans</surname>, <given-names>A.</given-names></string-name>, <string-name><surname>He</surname>, <given-names>Y.</given-names></string-name>: <article-title>Gretna: a graph theoretical network analysis toolbox for imaging connectomics</article-title>. <source>Frontiers in human neuroscience</source> <volume>9</volume>, <fpage>386</fpage> (<year>2015</year>)</mixed-citation></ref>
+<ref id="c24"><label>24.</label><mixed-citation publication-type="journal"><string-name><surname>Wang</surname>, <given-names>J.</given-names></string-name>, <string-name><surname>Xu</surname>, <given-names>S.L.</given-names></string-name>, <string-name><surname>Duan</surname>, <given-names>J.J.</given-names></string-name>, <string-name><surname>Yi</surname>, <given-names>L.</given-names></string-name>, <string-name><surname>Guo</surname>, <given-names>Y.F.</given-names></string-name>, <string-name><surname>Shi</surname>, <given-names>Y.</given-names></string-name>, <string-name><surname>Li</surname>, <given-names>L.</given-names></string-name>, <string-name><surname>Yang</surname>, <given-names>Z.Y.</given-names></string-name>, <string-name><surname>Liao</surname>, <given-names>X.M.</given-names></string-name>, <string-name><surname>Cai</surname>, <given-names>J.</given-names></string-name>, <etal>et al.</etal>: <article-title>Invasion of white matter tracts by glioma stem cells is regulated by a notch1&#x2013;sox2 positive-feedback loop</article-title>. <source>Nature neuroscience</source> <volume>22</volume> (<issue>1</issue>), <fpage>91</fpage>&#x2013;<lpage>105</lpage> (<year>2019</year>)</mixed-citation></ref>
+<ref id="c25"><label>25.</label><mixed-citation publication-type="book"><string-name><surname>Wang</surname>, <given-names>R.</given-names></string-name>, <string-name><surname>Benner</surname>, <given-names>T.</given-names></string-name>, <string-name><surname>Sorensen</surname>, <given-names>A.G.</given-names></string-name>, <string-name><surname>Wedeen</surname>, <given-names>V.J.</given-names></string-name>: <chapter-title>Diffusion toolkit: a software package for diffusion imaging data processing and tractography</chapter-title>. <source>In: Proc Intl Soc Mag Reson Med</source>. vol. <volume>15</volume>. <publisher-loc>Berlin</publisher-loc> (<year>2007</year>)</mixed-citation></ref>
+<ref id="c26"><label>26.</label><mixed-citation publication-type="journal"><string-name><surname>Wei</surname>, <given-names>Y.</given-names></string-name>, <string-name><surname>Li</surname>, <given-names>C.</given-names></string-name>, <string-name><surname>Cui</surname>, <given-names>Z.</given-names></string-name>, <string-name><surname>Mayrand</surname>, <given-names>R.C.</given-names></string-name>, <string-name><surname>Zou</surname>, <given-names>J.</given-names></string-name>, <string-name><surname>Wong</surname>, <given-names>A.L.</given-names></string-name>, <string-name><surname>Sinha</surname>, <given-names>R.</given-names></string-name>, <string-name><surname>Matys</surname>, <given-names>T.</given-names></string-name>, <string-name><surname>Sch&#x00F6;nlieb</surname>, <given-names>C.B.</given-names></string-name>, <string-name><surname>Price</surname>, <given-names>S.J.</given-names></string-name>: <article-title>Structural connectome quantifies tumor invasion and predicts survival in glioblastoma patients</article-title>. <source>bioRxiv</source> (<year>2021</year>)</mixed-citation></ref>
+<ref id="c27"><label>27.</label><mixed-citation publication-type="journal"><string-name><surname>Yan</surname>, <given-names>J.L.</given-names></string-name>, <string-name><surname>Li</surname>, <given-names>C.</given-names></string-name>, <string-name><surname>Boonzaier</surname>, <given-names>N.R.</given-names></string-name>, <string-name><surname>Fountain</surname>, <given-names>D.M.</given-names></string-name>, <string-name><surname>Larkin</surname>, <given-names>T.J.</given-names></string-name>, <string-name><surname>Matys</surname>, <given-names>T.</given-names></string-name>, <string-name><surname>van der Hoorn</surname>, <given-names>A.</given-names></string-name>, <string-name><surname>Price</surname>, <given-names>S.J.</given-names></string-name>: <article-title>Multimodal mri characteristics of the glioblastoma infiltration beyond contrast enhancement</article-title>. <source>Therapeutic advances in neurological disorders</source> <volume>12</volume>, <fpage>1756286419844664</fpage> (<year>2019</year>)</mixed-citation></ref>
+<ref id="c28"><label>28.</label><mixed-citation publication-type="journal"><string-name><surname>Yan</surname>, <given-names>J.L.</given-names></string-name>, <string-name><surname>Li</surname>, <given-names>C.</given-names></string-name>, <string-name><surname>van der Hoorn</surname>, <given-names>A.</given-names></string-name>, <string-name><surname>Boonzaier</surname>, <given-names>N.R.</given-names></string-name>, <string-name><surname>Matys</surname>, <given-names>T.</given-names></string-name>, <string-name><surname>Price</surname>, <given-names>S.J.</given-names></string-name>: <article-title>A neural network approach to identify the peritumoral invasive areas in glioblastoma patients by using mr radiomics</article-title>. <source>Scientific reports</source> <volume>10</volume> (<issue>1</issue>), <fpage>1</fpage>&#x2013;<lpage>10</lpage> (<year>2020</year>)</mixed-citation></ref>
+<ref id="c29"><label>29.</label><mixed-citation publication-type="journal"><string-name><surname>Zalesky</surname>, <given-names>A.</given-names></string-name>, <string-name><surname>Fornito</surname>, <given-names>A.</given-names></string-name>, <string-name><surname>Bullmore</surname>, <given-names>E.T.</given-names></string-name>: <article-title>Network-based statistic: identifying differences in brain networks</article-title>. <source>Neuroimage</source> <volume>53</volume>(<issue>4</issue>), <fpage>1197</fpage>&#x2013;<lpage>1207</lpage> (<year>2010</year>)</mixed-citation></ref>
+<ref id="c30"><label>30.</label><mixed-citation publication-type="journal"><string-name><surname>Zhang</surname>, <given-names>F.</given-names></string-name>, <string-name><surname>Noh</surname>, <given-names>T.</given-names></string-name>, <string-name><surname>Juvekar</surname>, <given-names>P.</given-names></string-name>, <string-name><surname>Frisken</surname>, <given-names>S.F.</given-names></string-name>, <string-name><surname>Rigolo</surname>, <given-names>L.</given-names></string-name>, <string-name><surname>Norton</surname>, <given-names>I.</given-names></string-name>, <string-name><surname>Kapur</surname>, <given-names>T.</given-names></string-name>, <string-name><surname>Pujol</surname>, <given-names>S.</given-names></string-name>, <string-name><surname>Wells III</surname>, <given-names>W.</given-names></string-name>, <string-name><surname>Yarmarkovich</surname>, <given-names>A.</given-names></string-name>, <etal>et al.</etal>: <article-title>Slicerdmri: Diffusion mri and tractography research software for brain cancer surgery planning and visualization</article-title>. <source>JCO clinical cancer informatics</source> <volume>4</volume>, <fpage>299</fpage>&#x2013;<lpage>309</lpage> (<year>2020</year>)</mixed-citation></ref>
+</ref-list>
+</back>
+</article>

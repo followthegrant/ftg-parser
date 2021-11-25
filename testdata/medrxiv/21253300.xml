@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.2d1 20170631//EN" "JATS-archivearticle1.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" article-type="article" dtd-version="1.2d1" specific-use="production" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="publisher-id">MEDRXIV</journal-id>
+<journal-title-group>
+<journal-title>medRxiv</journal-title>
+<abbrev-journal-title abbrev-type="publisher">medRxiv</abbrev-journal-title>
+</journal-title-group>
+<publisher>
+<publisher-name>Cold Spring Harbor Laboratory</publisher-name>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1101/2021.03.17.21253300</article-id>
+<article-version>1.1</article-version>
+<article-categories>
+<subj-group subj-group-type="hwp-journal-coll">
+<subject>Genetic and Genomic Medicine</subject>
+</subj-group>
+</article-categories>
+<title-group>
+<article-title>Physiological (TCR-like) regulated lentiviral vectors for the generation of improved CAR-T cells</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0001-8721-1414</contrib-id>
+<name><surname>Trist&#x00E1;n-Manzano</surname><given-names>Mar&#x00ED;a</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="author-notes" rid="n1">&#x002A;</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0001-5975-0488</contrib-id>
+<name><surname>Maldonado-P&#x00E9;rez</surname><given-names>Noelia</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="author-notes" rid="n1">&#x002A;</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-6823-7747</contrib-id>
+<name><surname>Justicia-Lirio</surname><given-names>Pedro</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-0262-811X</contrib-id>
+<name><surname>Mu&#x00F1;oz</surname><given-names>Pilar</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-0161-515X</contrib-id>
+<name><surname>Cortijo-Guti&#x00E9;rrez</surname><given-names>Marina</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Pavlovic</surname><given-names>Kristina</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a3">3</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0001-8207-6428</contrib-id>
+<name><surname>Jim&#x00E9;nez-Moreno</surname><given-names>Rosario</given-names></name>
+<xref ref-type="aff" rid="a3">3</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Nogueras</surname><given-names>Sonia</given-names></name>
+<xref ref-type="aff" rid="a3">3</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0001-9296-6096</contrib-id>
+<name><surname>Carmona</surname><given-names>MDolores</given-names></name>
+<xref ref-type="aff" rid="a3">3</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>S&#x00E1;nchez-Hern&#x00E1;ndez</surname><given-names>Sabina</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-2960-8672</contrib-id>
+<name><surname>Aguilar-Gonz&#x00E1;lez</surname><given-names>Araceli</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a4">4</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-2062-0373</contrib-id>
+<name><surname>Castella</surname><given-names>Mar&#x00ED;a</given-names></name>
+<xref ref-type="aff" rid="a5">5</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-3064-1648</contrib-id>
+<name><surname>Juan</surname><given-names>Manel</given-names></name>
+<xref ref-type="aff" rid="a5">5</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-7827-6301</contrib-id>
+<name><surname>Mara&#x00F1;&#x00F3;n</surname><given-names>Concepci&#x00F3;n</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-4673-2111</contrib-id>
+<name><surname>Benabdellah</surname><given-names>Karim</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Herrera</surname><given-names>Concha</given-names></name>
+<xref ref-type="aff" rid="a3">3</xref>
+</contrib>
+<contrib contrib-type="author" corresp="yes">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-1961-8612</contrib-id>
+<name><surname>Martin</surname><given-names>Francisco</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="corresp" rid="cor1">&#x0023;</xref>
+</contrib>
+<aff id="a1"><label>1</label><institution>Department of Genomic Medicine, Pfizer-University of Granada-Andalusian Regional Government Centre for Genomics and Oncological Research (GENYO), PTS, Avda. de la Ilustraci&#x00F3;n 114</institution>, 18016 Granada, <country>Spain</country></aff>
+<aff id="a2"><label>2</label><institution>LentiStem Biotech, Pfizer-University of Granada-Junta de Andaluc&#x00ED;a Centre for Genomics and Oncological Research (GENYO), PTS</institution>, Avda. de la Ilustraci&#x00F3;n 114, 18016 Granada, <country>Spain</country></aff>
+<aff id="a3"><label>3</label><institution>Maimonides Institute of Biomedical Research in C&#x00F3;rdoba (IMIBIC), Cellular Therapy Unit, Reina Sofia University Hospital, University of C&#x00F3;rdoba</institution>, C&#x00F3;rdoba, <country>Spain</country></aff>
+<aff id="a4"><label>4</label><institution>Department of Medicinal and Organic Chemistry, Faculty of Pharmacy, University of Granada</institution>, Campus Cartuja, 18071 Granada, <country>Spain</country></aff>
+<aff id="a5"><label>5</label><institution>Department of Hematology, ICMHO, Hospital Cl&#x00ED;nic de Barcelona, Villarroel 170</institution>, 08036 Barcelona, <country>Spain</country></aff>
+</contrib-group>
+<author-notes>
+<corresp id="cor1"><label>&#x0023;</label>Corresponding author: Francisco Martin., Gene and Cell therapy Unit, Department of Genomic Medicine, Pfizer-University of Granada-Andalusian Regional Government Centre for Genomics and Oncological Research (GENYO), PTS, Avda. de la Ilustraci&#x00F3;n 114, 18016 Granada, Spain., <email>francisco.martin@genyo.es</email></corresp>
+<fn id="n1"><label>&#x002A;</label><p>Share authorship</p></fn>
+</author-notes>
+<pub-date pub-type="epub">
+<year>2021</year>
+</pub-date>
+<elocation-id>2021.03.17.21253300</elocation-id>
+<history>
+<date date-type="received">
+<day>17</day>
+<month>3</month>
+<year>2021</year>
+</date>
+<date date-type="rev-recd">
+<day>17</day>
+<month>3</month>
+<year>2021</year>
+</date>
+<date date-type="accepted">
+<day>20</day>
+<month>3</month>
+<year>2021</year>
+</date>
+</history>
+<permissions>
+<copyright-statement>&#x00A9; 2021, Posted by Cold Spring Harbor Laboratory</copyright-statement>
+<copyright-year>2021</copyright-year>
+<license license-type="creative-commons" xlink:href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><license-p>This pre-print is available under a Creative Commons License (Attribution-NonCommercial-NoDerivs 4.0 International), CC BY-NC-ND 4.0, as described at <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by-nc-nd/4.0/">http://creativecommons.org/licenses/by-nc-nd/4.0/</ext-link></license-p></license>
+</permissions>
+<self-uri xlink:href="21253300.pdf" content-type="pdf" xlink:role="full-text"/>
+<abstract>
+<title>ABSTRACT</title>
+<sec>
+<title>Background</title>
+<p>Chimeric antigen receptor (CAR) T cells directed against CD19 have achieved impressive outcomes for the treatment of relapsed/refractory B lineage lymphoid neoplasms. However, CAR-T therapy still has important limitations due to severe side effects and the lack of efficiency in 40-50&#x0025; of the patients. Most CARs-T products are generated using retroviral vectors with strong promoters. However, high CAR expression levels can lead to tonic signalling, premature exhaustion and over-stimulation of CAR-T cells, reducing efficacy and increasing side effects. TCR-like expression of the CAR through genome editing resulted in enhanced anti-tumour potency, reducing tonic signalling and improving CAR-T phenotype. In this manuscript, we searched for LVs that mimic the TCR expression pattern as a closer-to-clinic alternative for the generation of improved CAR-T cells.</p></sec>
+<sec>
+<title>Methods</title>
+<p>Different LVs containing viral and human promoters were analysed to select those that closely mimic a TCR-like kinetic profile upon T-cell activation. <italic>WAS</italic> gene proximal promoter-driven LVs (AW-LVs) were selected to express a second generation 4-1BB aCD19 CAR (ARI-0001) into T cells to generate AWARI CAR-T cells. TCR-like AWARI and EF1&#x03B1;-driven ARI CAR T cells were analysed for <italic>in vitro</italic> and <italic>in vivo</italic> killing efficiency using leukaemia and lymphoma cellular models. Tonic signalling, exhaustion markers and phenotype were determined by flow cytometry. Large-scale automated manufacturing of AWARI CAR-T cells was performed in a CliniMACs Prodigy bioreactor.</p></sec>
+<sec>
+<title>Results</title>
+<p>Our data showed that LVs expressing the transgene through the <italic>WAS</italic> gene proximal promoter mimic very closely the TCR (CD3) expression pattern kinetic upon TCR stimulation or antigen encounter. Compared to EF1&#x03B1;-driven ARI CAR-T cells, AWARI CAR-T cells exhibited a higher proportion of na&#x00EF;ve/stem cell memory T cells with less exhausted phenotype after efficient killing of CD19&#x002B; cells both <italic>in vitro</italic> and <italic>in vivo</italic>. AWARI CAR-T cells also showed lower tonic signalling and reduced secretion of pro-inflammatory cytokines and were efficiently manufactured in large-scale GMP-like conditions.</p></sec>
+<sec>
+<title>Conclusions</title>
+<p><italic>WAS-gene</italic>-promoter driven LVs can be used to generate physiological 4-1BB-CAR-T cell products with lower tonic signalling, improved phenotype and a safer profile. We propose the use of TCR-like LVs as an alternative to strong-promoter driven LVs for the generation of CAR-T products.</p></sec>
+</abstract>
+<kwd-group kwd-group-type="Author">
+<title>Keywords</title>
+<kwd>CAR-T</kwd>
+<kwd>Physiological expression</kwd>
+<kwd>TCR-like expression</kwd>
+<kwd>Lentiviral vectors</kwd>
+<kwd>tonic signalling</kwd>
+<kwd>Pro-inflammatory cytokines</kwd>
+<kwd>Exhaustion</kwd>
+<kwd>CAR silencing</kwd>
+<kwd><italic>WAS</italic> gene promoter</kwd>
+<kwd>Stem Cell Memory T cells</kwd>
+</kwd-group>
+<counts>
+<page-count count="34"/>
+</counts>
+</article-meta>
+<notes>
+<notes notes-type="competing-interest-statement">
+<title>Competing Interest Statement</title><p>FMM, MTM, NMP, PM and KB are inventors of a patent for AW promoter for CAR-T cells applications. P.J.L is contractually associated to LentiStem Biotech, a Spin-Off company that has the license of that patent. The rest of the authors declare that the research was conducted in the absence of other commercial or financial relationships that could be construed as a potential conflict of interest.</p></notes>
+<notes notes-type="financial-disclosure">
+<title>Funding Statement</title><p>This study was funded by the Spanish ISCIII Health Research Fund and the European Regional Development Fund (FEDER) through research grants PI12/01097, PI15/02015, PI18/00337 (F.M.) and PI18/00330 (K.B.); The CECEyU and CSyF of the Junta de Andalucia FEDER/European Cohesion Fund (FSE) for Andalusia provided the following research grants: 2016000073391-TRA, 2016000073332-TRA, PI-57069, PAIDI-Bio326, CARTPI-0001-201 (F.M.) and PI-0014-2016 (K.B); The Ministerio de Ciencia, Innovacion y Universidades (CDTI) to F.M. (00123009 / SNEO-20191072). K.B. and C.M held Nicolas Monardes contracts from regional Ministry of Health (#0006/2018 and C2-0002-2019 respectively). M.T.M., N.M.P and A.A.G. are funded by Spanish Ministry of Education and Science through fellowships FPU16/05467, FPU17/02268 and FPU17/04327 respectively. P.J.L is funded through an industrial doctorate MCI DIN2018-010180 to LentiStem Biotech. P.M is funded by Fundacion Andaluza Progreso y Salud. PM holds projects PI17/00672 (ISCIII) and PEER-0286-2019 (Consejeria de Salud-Junta de Andalucia). M.C.G is funded by Spanish Ministry of Education and Science through fellowship GJ (PEJ-2018-001760-A). MDC is funded by the grant PE-0223-2018CSyF of the Junta de Andalucia. MTM, NPM, PLJL, MCG, AGG are PhD students from the Biomedicine Programme of the University of Granada (Spain).</p></notes>
+<notes notes-type="disclosures">
+<title>Author Declarations</title><p>I confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.</p><p>Yes</p><p>The details of the IRB/oversight body that provided approval or exemption for the research described are given below:</p><p>All donors from the Haematology Unit of Hospital Reina Sofia, Cordoba (Spain) gave their written informed consent and the study was performed according to the established guidelines of in the approved by the Regional Government Junta de Andalucia-Consejeria de Salud (date of approval: 22/02/2019, signed by Dra Cristina Lucia Davila Fajardo as secretary of the Research Ethics Committee), that comply with the requirements regarding quality and safety for donation, obtaining, storage, distribution, and preservation of human cells and tissues under the Spanish specific regulation (RD 9/2014) and International Conference of Good Clinical Practice. All the experiments involving animals were performed according to a protocol approved by the Institutional Animal Care and Use Committee of the University of Granada (13/12/2016/181) were in accordance with the European Convention for the Protection of Vertebrate Animals used for Experimental and Other Scientific Purposes (CETS # 123) and the specific Spanish law (R.D. 53/2013). Subjects were randomly assigned to receive the different treatments and sample size estimation was calculated based on Mayer et al20.</p><p>All necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived.</p><p>Yes</p><p>I understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).</p><p>Yes</p><p>I have followed all appropriate research reporting guidelines and uploaded the relevant EQUATOR Network research reporting checklist(s) and other pertinent material as supplementary files, if applicable.</p><p>Yes</p></notes>
+</notes>
+</front>
+<body>
+<sec id="s1">
+<title>BACKGROUND</title>
+<p>Chimeric antigen receptor (CAR) T cells have become one of the most promising approaches for the treatment of cancer in particular for B lineage lymphoid neoplasms using &#x03B1;CD19-CAR-T cells, as emphasized with four FDA/EMA-approved Advance Therapy Medicinal Products (ATMPs): tisagenlecleucel (Kymriah, Novartis), axicabtageneciloleucel (Yescarta, Kite-Gilead), brexucabtagene autoleucel (Tecartus, Kite-Gilead) and lisocabtagenemaraleucel (Breyanzi, Bristol Myers Squibb). However, in spite of the impressive results of &#x03B1;CD19-CAR-T cells, there are still several aspects that must be improved. Aggressive severe side effects due to CAR-T overstimulation, such as cytokine release syndrome (CRS) and neuroinflammation are common among treated patients and can lead to fatal outcomes. Furthermore, sustained complete remissions range from 62&#x0025; to 42&#x0025; for patients treated with commercial ATMPs, evidencing much room for improvement<sup><xref ref-type="bibr" rid="c1">1</xref></sup>.</p>
+<p>Different works have uncovered the importance of controlling CAR expression levels at the surface of the CAR-T cells in order to optimize its therapeutic activity <sup><xref ref-type="bibr" rid="c2">2</xref>-<xref ref-type="bibr" rid="c4">4</xref></sup>. In spite of this, all four approved ATMPs approved and most of those that are been tested in ongoing clinical trials use autologous T cells transduced with retroviral vectors expressing a &#x03B1;CD19-CAR through constitutive, strong promoters such as the human EF1&#x03B1; and the murine stem cell virus LTR (MSCV). High CARs concentrations on the T cell surface can result in spontaneous clustering of the CARs (independent of the ligand) leading to tonic-signalling<sup>45</sup>. This tonic signalling can affect safety (pro-inflammatory cytokines secretion in non-target tissues) and efficacy (premature exhaustion due to continuous proliferation) of CAR-T cells<sup><xref ref-type="bibr" rid="c3">3</xref>-<xref ref-type="bibr" rid="c5">5</xref></sup>. Furthermore, high-density and constitutive CAR presence on the T cell surface can also lead to overstimulation upon antigen recognition that also affect safety (excess of pro-inflammatory cytokine secretion) and efficacy (early exhaustion, apoptosis and loss of T<sub>N/SCM</sub> phenotype) of the CAR-T cells<sup><xref ref-type="bibr" rid="c2">2</xref>, <xref ref-type="bibr" rid="c3">3</xref></sup>. In this direction, Eyquem et al. generated CAR-T cells expressing the &#x03B1;CD19-28&#x03B6; CAR through the endogenous T cell receptor constant alpha chain (TRAC) locus using CRISPR/Cas9<sup><xref ref-type="bibr" rid="c2">2</xref></sup>. In this manuscript, the authors concluded that tight transcriptional regulation of CAR expression, lowering CAR levels upon target binding and recovering 1-3 days later, was critical for optimal CAR-T performance. However, despite the great potential of genome editing tools for therapeutic applications, there are still several technological and safety issues that need to be solved before the approval of genome edited cells as ATMPs.</p>
+<p>Contrary to genome editing tools, lentiviral vectors (LVs) derived from HIV-1 have already been approved by the FDA and EMA (Kymriah, Breyanzi and Zynteglo). Latest generation LVs are very resistant to transgene silencing<sup><xref ref-type="bibr" rid="c6">6</xref>,<xref ref-type="bibr" rid="c7">7</xref></sup>, and allow the control of the transgene through physiological or drug inducible promoters<sup><xref ref-type="bibr" rid="c8">8</xref>-<xref ref-type="bibr" rid="c13">13</xref></sup>. We therefore searched for LVs that express transgenes on T cells following a TCR expression kinetic. Since the TRAC promoter in human mature T cells is not well defined, we focus in a well-defined promoter that controls the expression of the WASP protein, which is involved in the formation of the immunological synapse and in translating TCR signals to several T cells functions<sup><xref ref-type="bibr" rid="c14">14</xref>,<xref ref-type="bibr" rid="c15">15</xref></sup>. We reason that <italic>WAS-</italic> promoter driven LVs <sup><xref ref-type="bibr" rid="c8">8</xref> <xref ref-type="bibr" rid="c11">11</xref> <xref ref-type="bibr" rid="c16">16</xref></sup> could be an interesting option to express CARs due to their moderate expression levels and the functional relationship with the TCR. Here we showed that, indeed, <italic>WAS</italic>-promoter driven LVs partially mimicked the TCR expression kinetic both in eGFP- and CAR-expressing LVs, with a small down-regulation upon stimulation and recovering basal levels in 5-7 days. Based on these data, we generated TCR-like CAR-T cells using LVs and analysed potential improvements compared to standard CAR-T cells expressing the CAR through strong promoters. TCR-like expression of a aCD19-CAR lead to lower tonic signalling in the absence of antigen as well as a better response in its presence, with lower exhaustion markers, lower proinflammatory cytokine secretion and improved phenotype both <italic>in vitro</italic> and <italic>in vivo</italic>.</p>
+</sec>
+<sec id="s2">
+<title>MATERIALS and METHODS</title>
+<sec id="s2a">
+<title>Cell culture</title>
+<p>Nalm6 (ATCC&#x00AE; CRL-3273), Namalwa (ATCC&#x00AE; CRL-1432), Jurkat (ATCC&#x00AE; TIB-152), HL-60 (ATCC&#x00AE; CCL-240) and HEK-293T (ATCC&#x00AE; CRL-11268) cells were cultured as described elsewhere. Namalwa and Nalm6 were modified to express enhanced GFP (eGFP) and Nanoluciferase (NanoLuc) using the SELWP, as described previously<sup><xref ref-type="bibr" rid="c17">17</xref></sup>.</p>
+</sec>
+<sec id="s2b">
+<title>Human samples</title>
+<p>Primary T cells were isolated from fresh or frozen apheresis products obtained from healthy donors at the Hematology Department of the Hospital Universitario Reina Sof&#x00ED;a (C&#x00F3;rdoba, Spain). All donors gave their written informed consent and the study was performed according to the guidelines of the local ethics committee and complies with the requirements regarding quality and safety for donation, obtaining, storage, distribution, and preservation of human cells and tissues under the Spanish specific regulation (RD-L 9/2014). Pan-T cells were isolated by negative selection using immunomagnetic beads (Pan T cell Isolation Kit, Miltenyi Biotec) and following MACSExpress Separator (Miltenyi Biotec) or AutoMACs Pro Separator&#x2019;s (Miltenyi Biotec) protocol and cultured in TexMACS (Miltenyi Biotec) supplemented with 20 UI/ml of IL-2 (Miltenyi Biotec). T cells were activated with T Cell TransAct (Miltenyi Biotec).</p>
+</sec>
+<sec id="s2c">
+<title>Plasmid constructs</title>
+<p>To construct the SELWP vector, a self-inactivated (SIN) LV expressing eGFP and NanoLuc under the spleen focus-forming virus (SFFV) promoter, an eGFP-P2A-NanoLuc (NanoLuc sequence obtained from GeneBank accession: JQ437370. Nucleotides 100-616) flanked by AscI/SbfI restriction sites was designed and synthesized by Genscript (Genscript USA Inc. NY, U.S.A). The eGFP-P2A-NLuc was cloned into the SEWP LV <sup><xref ref-type="bibr" rid="c18">18</xref></sup> by standard molecular biology techniques to obtain the SELWP.</p>
+<p>We used self-inactivated LVs-driven eGFP already available in our laboratory. SE<sup><xref ref-type="bibr" rid="c16">16</xref></sup>, CEWP<sup><xref ref-type="bibr" rid="c10">10</xref></sup> and EFEWP (our laboratory) driving eGFP under the control of SFFV, cytomegalovirus, and EF1a promoters, respectively. <italic>WAS</italic>-promoter based LVs: WE-LVs harbours 0.5kb of the <italic>WAS</italic> proximal promoter<sup><xref ref-type="bibr" rid="c16">16</xref></sup>, and the AWE-LVs include 0.5kb of the <italic>WAS</italic> proximal promoter and 0.38 kb of the alternative promoter<sup><xref ref-type="bibr" rid="c8">8</xref></sup>.</p>
+<p>For AWARI LVs generation, the AW promoter were obtained from the AWE <sup><xref ref-type="bibr" rid="c8">8</xref></sup> by ClaI / BamHI and inserted into the ARI-0001 plasmid<sup><xref ref-type="bibr" rid="c19">19</xref></sup>, replacing the EF1a promoter.</p>
+</sec>
+<sec id="s2d">
+<title>Lentiviral vector production and titration</title>
+<p>Lentiviral vectors were generated by co-transfection of HEK-293T cells with the plasmid of interest, the plasmid pCMVDR8.91and the p-MD-G plasmid as previously described<sup><xref ref-type="bibr" rid="c12">12</xref></sup>. LVs were concentrated by ultracentrifugation at 90.000g for 2h at 4&#x00B0;C, resuspended in TexMACs and storaged at &#x2212;80&#x00B0;C. LVs titters were determined by transducing Jurkat cells with different dilutions of viral supernatant. Percentage of positive cells was determined by flow cytometry and transducing units per ml (TU/ml) were estimated according to the formula: (10<sup><xref ref-type="bibr" rid="c5">5</xref></sup> plated cells &#x00D7; &#x0025; of positive cells)]/ml of LV.</p>
+</sec>
+<sec id="s2e">
+<title>T cell transduction</title>
+<p>Activated primary T cells were transduced with the different LVs at a multiplicity of infection (MOI) of 10 through spinoculation (800 x g for 60 min at 32&#x00B0;C). Media was exchanged after 5 hours of incubation. At 4-6 days after transduction, the percentage of transduced cells was determined by flow cytometry.</p>
+</sec>
+<sec id="s2f">
+<title>Expression pattern analysis of LVs on T cells</title>
+<p>For T cells transduced with eGFP-LVs, 10<sup><xref ref-type="bibr" rid="c5">5</xref></sup> T cells were stimulated with TransAct (Miltenyi Biotec) after 10 days of the initial activation for transduction. Similarly, 10<sup><xref ref-type="bibr" rid="c4">4</xref></sup> transduced CAR-T cells were stimulated with 10<sup><xref ref-type="bibr" rid="c4">4</xref></sup> CD19&#x002B; Namalwa-GFP-NLuc cells in order to simulate the CAR/TCR signalling axis in U-bottom 96-wells plates. eGFP or CAR expression was determined at different time-points after stimulation. Cells were stained and fixed with 2&#x0025; PFA prior FACS acquisition. Expression was indicated as the ratio of MeFI of positive population against the MeFI of non-transduced total population. Fold change indicates the ratio of expression or percentage related to those values at 0h.</p>
+</sec>
+<sec id="s2g">
+<title>Flow cytometry</title>
+<p>CAR expression was determined with a biotin-conjugated goat anti-murine Fab SP-longer Spacer IgG (Jackson Immunoresearch) and APC-conjugated streptavidin (ThermoFisher). For human T cell phenotyping the following mAbs were used: CD45RA-PE/FITC (HI-100), CD62L-PE-Cy7 (DREG56), CD3-PerCP-Cy5/APC-780 (OKT3), PD1-APC (MIH4), LAG-3-PE (3DS223H), TIM-3-APC-Cy7 (F38-2E2) all from eBioscience (ThermoFisher). Tonic signalling was determined by intracellular staining with pCD3z-PE (Tyr142, 3ZBR4S) and Fix &#x0026; Perm Kit (Nordic Bio). Samples were acquired on a FACSCantoII cytometer. FlowJo software (TreeStar) was used for data analysis.</p>
+</sec>
+<sec id="s2h">
+<title>Cytokine secretion of CAR-T cells</title>
+<p>To analyse cytokine production after T cells stimulation, 5&#x00D7;10<sup><xref ref-type="bibr" rid="c4">4</xref></sup> CAR-T cells were co-cultured with Namalwa-GFP target cells at ratio 1:1 in TexMACs without any supplement. Supernatants were collected after 24h and frozen at &#x2212;80&#x00B0;C. TNF&#x03B1; and IFN&#x25A1; were measured with anti-human TFN-&#x03B1; Ready-SET-Go! Kit of Affymetrix (eBioscience) and ELISA MAX Deluxe Set (Biolegend) respectively following manufacturer&#x2019;s instructions.</p>
+</sec>
+<sec id="s2i">
+<title>Cytotoxicity assay</title>
+<p>Target cells (CD19&#x002B;), such as Namalwa and Nalm-6 cells expressing GFP-Nluc, and non-target cells (CD19-) HL60 cells (unlabelled), were co-cultured at a concentration of 5&#x00D7;10<sup><xref ref-type="bibr" rid="c3">3</xref></sup> cells per well in duplicate in 96-well U-bottom plates, and incubated with T cells at various effector target (E:T) ratios (0.5:1, 1:1, 2:1) in non-supplemented TexMACs during 16h or 48h as indicated. Percentage of lysis was determined by flow cytometry related to basal lysis produced by non-transduced T cells. Specific lysis was determined as follows: 1-(&#x0025;CD19&#x002B; /&#x0025; HL-60 in CAR-T cells condition/ &#x0025;CD19&#x002B;/&#x0025;HL-60 in NTD condition) x100.</p>
+</sec>
+<sec id="s2j">
+<title><italic>In vivo</italic> xenograft animal model and bioluminescence analysis</title>
+<p>10 to 12-weeks-old NOD/scid-IL-2Rnull (NSG) mice were inoculated intravenously with 3&#x00D7;10<sup><xref ref-type="bibr" rid="c5">5</xref></sup> Namalwa-GFP-NLuc cells per mice, and three days later, mice were randomly infused with CAR-T cells (5&#x00D7;10<sup><xref ref-type="bibr" rid="c6">6</xref></sup> or 10&#x00D7;10<sup><xref ref-type="bibr" rid="c6">6</xref></sup>), non-transduced T cells (5&#x00D7;10<sup><xref ref-type="bibr" rid="c6">6</xref></sup> or 10&#x00D7;10<sup><xref ref-type="bibr" rid="c6">6</xref></sup>) or PBS in the tail&#x2019;s vein. Re-challenge was assessed by re-inoculating intravenously a new dose of Namalwa-GFP-Nluc cells. Our experiments are based on a modified randomized block design in which each block receives more than one treatment at different periods. Subjects were randomly assigned to receive the different treatments (PBS, T cells or CAR-T cells). This will allow a comparison between the different treatment groups in pairs (each one compared to the control and each one compared to each other). For the estimation of the sample size in each experiment, we calculated the sample size necessary to obtain a p &#x2265; 0.05 to be of n &#x2265; 5 for controls/CAR-T comparison and an n &#x2265; 8 for AWARI/ARI comparisons based on Mayer et al<sup><xref ref-type="bibr" rid="c20">20</xref></sup>. For bioluminescence analysis, furimazine (Nano-Glo, Promega) was diluted at 1/60 in PBS and injected intraperitoneally immediately prior to acquisition on an IVIS Spectrum analyzer (Caliper, Perkin Elmer). Images were acquired during 180s, open field, and analysed using the Living Image 3.2 (Perkin Elmer) or AURA Imaging Software 3.2 (Spectral Instruments Imaging). Mice were sacrificed if experiencing a weight loss greater than 20&#x0025; or at the indicated days. Samples of blood, bone marrow, liver, spleen and brain were collected. Blood was extracted and diluted 1/5 in EDTA. Cells were obtained from liver and spleen by mechanical disruption and from bone marrow by the perfusion of both femurs and tibias. Brain&#x2019;s cells were obtained after Percoll-gradient separation. Percentage of surviving Namalwa-GFP-Nluc and T cells (hCD3&#x002B;) were determined by FACS in the singlet&#x2019;s gate and then in &#x201C;human cells&#x201D; gate, which was previously established after acquiring an artificial mixture of Namalwa cells and human T cells used as control.</p>
+</sec>
+<sec id="s2k">
+<title>GMP-like manufacturing of CAR-T cells on CliniMACs Prodigy</title>
+<p>Large scale manufacturing of CAR-T cells on CliniMACs Prodigy was carried out under GMP-like conditions into Gene-Cell Therapy cleanrooms of Cell Therapy Unit of Hospital Universitario Reina Sof&#x00ED;a (C&#x00F3;rdoba, Spain). Two different apheresis from a healthy donor was thawed and around 100&#x00D7;10<sup><xref ref-type="bibr" rid="c6">6</xref></sup> T cells were inoculated into the CliniMACs prodigy bioreactor (Miltenyi Biotec). CD4 and CD8 cells were selected with CD8 and CD4 Reagent (Miltenyi Biotec), cultured with IL-7/IL-15 (Miltenyi Biotec) and activated with &#x03B1;CD3/&#x03B1;CD28 GMP T cell TransAct (Miltenyi Biotec). At day 2 of the process, these cells were transduced with AWARI-LVs (MOI=5). Cells were cultured in TexMACs GMP medium containing GMP-grade IL-15 and IL-7 (Miltenyi Biotec) for 9 or 10 days. Final product was collected with 100ml of NaCl 0,9&#x0025; &#x002B; 0,5&#x0025; human serum albumin (HSA).</p>
+<p>Cells were stained with CD3-APC, CD4-FITC, CD8-APC Vio770, CD14-PE Vio770, CD45-Vioblue (Miltenyi Biotec). To assess the efficiency of transduction CAR-T cells were stained with CD-19 Biotin and Anti-biotin PE (Miltenyi Biotec). Viability was tested by using 7AAD (Miltenyi Biotec). Phenotype was determined with CD45RA-APC (HI100) and CCR7-BV421 (2-L1-A RUO) from BD Pharmingen. Cells were acquired on a MACsQuant cytometer (Miltenyi Biotec) and analyzed with MACsQuantify Analysis Software (Miltenyi Biotec).</p>
+</sec>
+<sec id="s2l">
+<title>Data analysis</title>
+<p>Statistical analyses were performed using GraphPad 1.6 software (GraphPad Software Inc., La Jolla, CA). Data were expressed as the mean &#x00B1; SEM. Each performed statistical test was indicated in every figure caption. Survival curves were constructed using the Kaplan-Meier method.</p>
+</sec>
+</sec>
+<sec id="s3">
+<title>RESULTS</title>
+<sec id="s3a">
+<title><italic>WAS</italic> promoter-driven LVs mimic the TCR expression pattern upon T-cell activation</title>
+<p>As LVs have already been approved by EMA and the FDA, LVs expressing the CARs with a similar kinetic than the TCR (TCR-like LVs) could be a real alternative to existing LVs to generate more potent and safer CAR-T cells. We first investigated whether <italic>WAS</italic>-promoter-driven LVs could have a more physiological expression pattern compared to current LVs used for CAR-T cells generation. We generated eGFP-expressing LVs particles from two different <italic>WAS</italic>-pronioter-driven LVs (<bold><xref rid="fig1" ref-type="fig">Fig. 1A</xref></bold>, WE and AWE)<sup><xref ref-type="bibr" rid="c8">8</xref>, <xref ref-type="bibr" rid="c16">16</xref></sup> and three LVs driven by strong promoters (<bold><xref rid="fig1" ref-type="fig">Fig. 1A</xref></bold>, CEWP, SE and EFEWP).</p>
+<fig id="fig1" position="float" fig-type="figure">
+<label>Figure 1.</label>
+<caption><title>T cells transduced with <italic>WAS</italic> promoter-driven LVs mimic the TCR expression pattern.</title>
+<p>A) Top: Timeline of the experiments to study eGFP expression pattern after TCR/CAR stimulation. Bottom: diagrams of the different used eGFP-expressing LVs analyzed. B) Fold change of CD3 expression (&#x0025; relative to 0h) in WT T cells stimulated with &#x03B1;CD3/&#x03B1;CD28 and &#x03B1;CD19CAR-T cells stimulated with CD19&#x002B; cells. Left: fold change in CD3 expression at different times post-stimulation. (Data are MeFI&#x00B1; SEM &#x002A;, indicates p&#x003C;0,05, 2-way-ANOVA, Bonferroni post-Test. n&#x2265;5). Right: Representative histograms showing CD3 expression on WT T cells (left) and aCD19CAR-T cells (right) at different times post-stimulation. C) Representative histograms of eGFP expression driven by strong-promoter driven (CEWP, SE and EFEWP-top panels) and <italic>WAS-promoter</italic> driven (WE, AWE - bottom panels) LVs at different times post-stimulation. D, E) Graphs showing fold change in eGFP (colored lines) and CD3 (black lines) expression along time after &#x03B1;CD3/&#x03B1;CD28 stimulation of T cells transduced with viral promoter-driven (CEWP, SEWP) (D) or eukaryotic-promoters driven (EFEWP, WE and AWE) LVs (E). Fold change is calculated by the following formula: ((MeFI of GFP&#x002B; population xh/ MeFI of non-transduced cells xh)/ MeFI of GFP&#x002B; population 0h/ MeFI of non-transduced cells 0h). 2-way-ANOVA, Bonferroni post-Test, compared with CD3 pattern: &#x002A;, p&#x003C;0.05; &#x002A;&#x002A;, p&#x003C;0.01; &#x002A;&#x002A;&#x002A;, p&#x003C;0.001. &#x002B;&#x002B;&#x002B; indicates p&#x003C;0.001 for SEWP compared to CD3 expression. n=5. F) Diagrams of the EF1a promoter-driven (ARI) and <italic>WAS</italic>-promoter driven (AWARI) LVs expressing the ARI-0001 CAR (&#x03B1;CD19 A3B1-41BB-CD3&#x03B6;) G) Representative histograms of CAR expression levels on CAR-T cells generated with the ARI (top) or AWARI (bottom) LVs and measured at different time points after activation with CD19&#x002B; cells (left) or &#x03B1;CD3/&#x03B1;CD28 (right). H, I) Graphs showing fold change in CAR expression on ARI-CAR-T (green lines) and AWARI-CAR-T (blue lines) cells at different time points after activation with CD19&#x002B; cells (H) or aCD3/aCD28 (I). Data shows the percentage of CAR&#x002B; cells at different time points relative to 0 hours. Man-Whitney test, two tails, &#x002A;&#x002A; indicates p&#x003C;0.01 compared to CD3 and &#x002B; indicates p&#x003C;0,05 compared to AWARI-CAR-T cells. n &#x2265; 5.</p></caption>
+<graphic xlink:href="21253300v1_fig1.tif"/>
+</fig>
+<p>In order to analyse if the <italic>WAS</italic>-promoter-driven LVs mimic the TCR expression pattern, we first studied the CD3 expression levels (<bold><xref rid="fig1" ref-type="fig">Fig. 1B</xref> and Fig. S1a</bold>) of primary human T cells after stimulation with &#x03B1;CD3/&#x03B1;CD28 nanomatrix and CD19&#x002B; cells (in CAR&#x002B; cells, <bold><xref rid="fig1" ref-type="fig">Fig 1B</xref> and Fig S1b</bold>) at different time-points. In parallel, T cells transduced with the different eGFP-expressing LVs were stimulated and analysed by flow cytometry as described in <bold><xref rid="fig1" ref-type="fig">Fig. 1A</xref></bold>. As it has been reported previously<sup><xref ref-type="bibr" rid="c2">2</xref></sup>, CD3 expression in T cells decreased soon after stimulation reaching minimal expression at 24h/48h at both protein and mRNA levels and recover basal levels after 5-7 days (<bold><xref rid="fig1" ref-type="fig">Fig 1B</xref>, S1a</bold>). Contrary to the CD3 expression pattern, all LVs harbouring constitutive-strong promoters (EF1a (EFEWP), SFFV (SE) and CMV (CEWP)), behaved in an opposite manner, increasing eGFP expression soon after T cell stimulation (<bold><xref rid="fig1" ref-type="fig">Fig. 1C</xref></bold>-top panels, <bold>1D</bold> and <bold>1E</bold>-orange line). Interestingly, <italic>WAS</italic>-promoter driven LVs partially mimicked the TCR expression kinetic, down-regulating eGFP expression upon stimulation that peak at 48h and recover basal levels after 7 days (<bold><xref rid="fig1" ref-type="fig">Fig. 1C</xref></bold>-bottom panels, <bold>1E-</bold>blue and green lines).</p>
+<p>We next investigated whether CARs expressed by <italic>WAS</italic>-promoter driven LVs also followed a TCR-like kinetic. We constructed the AWARI LV (see M&#x0026;M for details) based on the ARI-0001 LV backbone<sup><xref ref-type="bibr" rid="c21">21</xref></sup>, a CAR19-BBzz recently approved as ATMP in Spain, which uses the A1B6 clone as scFv (<xref rid="fig1" ref-type="fig">Fig. <bold>1F</bold></xref>). We then generated ARI and AWARI CAR-T cells using the ARI and AWARI LVs and analysed their CAR expression kinetic upon activation with CD19&#x002B; cells <bold>(<xref rid="fig1" ref-type="fig">Fig 1G</xref></bold>-left,<bold>1H</bold> and <bold>S1B</bold>-left) or &#x03B1;CD3/&#x03B1;CD28 (<bold><xref rid="fig1" ref-type="fig">Fig 1G</xref></bold>-right, <bold>1I</bold> and <bold>S1B</bold>-right). Interestingly, AWARI CAR-T cells showed a down-regulation of CAR levels after antigenic stimulation and a recovery after 48h (<bold><xref rid="fig1" ref-type="fig">Fig. 1H, 1I</xref></bold>, blue line; <bold><xref rid="fig1" ref-type="fig">Fig. 1G</xref></bold>, bottom panel), while ARI CAR-T cells showed a clear increment on CAR levels after T cell activation (<bold><xref rid="fig1" ref-type="fig">Fig. 1H, 1I</xref></bold>, green lines, <bold><xref rid="fig1" ref-type="fig">Fig. 1G</xref></bold>, top panel). A similar behaviour was also observed when using a third generation &#x03B1;CD19-CAR-28BBzz (<bold>Fig S1C, S1D</bold>). Altogether, our results showed that the AW-LVs can be used to generate CAR-T cells expressing the CAR in a TCR-like manner.</p>
+</sec>
+<sec id="s3b">
+<title>TCR-like expression of CAR prevents exhaustion and control proinflammatory cytokines secretion upon antigen exposure <italic>in vitro</italic></title>
+<p>We next compared the behaviour of 2<sup>nd</sup> generation ARI versus AWARI CAR-T cells. First, we measured basal levels of exhaustion markers (LAG-3, PD1, Tim3) (<bold><xref rid="fig2" ref-type="fig">Fig. 2A</xref></bold>) and tonic signalling (phospho-CD3z) (<bold><xref rid="fig2" ref-type="fig">Fig. 2B</xref></bold>) in a CD19-independent context. AWARI CAR-T cells expressed significant lower levels of LAG-3 and Tim3 (and also a trend for PD1) (<bold><xref rid="fig2" ref-type="fig">Fig. 2A</xref></bold>) and less phosphorylation of CD3z (<bold><xref rid="fig2" ref-type="fig">Figure 2B</xref></bold>). Both CAR-T cells efficiently killed CD19&#x002B; Nalm6 (B-ALL derived) and Namalwa (Hodgkin&#x2019;s lymphoma derived), without significant differences (<bold><xref rid="fig2" ref-type="fig">Fig. 2C</xref></bold>). Interestingly, LAG-3 expression levels were significantly lower in AWARI compared to ARI CAR-T cells after killing Namalwa cells (<bold><xref rid="fig2" ref-type="fig">Fig. 2D</xref></bold>, right). In addition, AWARI CAR-T cells secreted lower levels of TNF&#x03B1; and IFN&#x03B3; compared to ARI cells (<bold><xref rid="fig2" ref-type="fig">Fig. 2E</xref></bold>), indicating a more controlled proinflammatory activity. We also observed a tendency of increased stem memory T cells (CD45RA&#x002B;CD62L&#x002B;) population in AWARI versus ARI CAR-T cell (but not statically significant, <bold>Figs. S2D, S2E</bold>). Finally, similar observations were found when 3<sup>rd</sup> generation CARs (CAR19-28BBzz) were expressed with the AW-LVs in terms of lower tonic signalling (<bold>Fig S2A</bold>) and milder IFN&#x03B3; secretion (<bold>Fig. S2B</bold>).</p>
+<fig id="fig2" position="float" fig-type="figure">
+<label>Figure 2.</label>
+<caption><title>TCR-like expression improves CAR-T cells properties<italic>in vitro</italic>.</title>
+<p>A) Top: Representative histograms of LAG-3, PD1 and Tim3 expression of NTD (non-transduced, gray), ARI (blue) and AWARI (green) CAR-T cells determined 10 days after activation with &#x03B1;CD3/CD28. Bottom: Graphs showing expression levels of LAG-3, PD1 and Tim3 of ARI and AWARI CAR-T cells related to the expression in NTD cells. Data are MeFI &#x00B1; SEM. One-tailed Man-Whitney test (4 independent-donors). B) Left: Representative histograms of intracellular phospho-CD3z expression after 10 days post-initial activation of NTD (gray), ARI (blue) and AWARI (green) CAR-T cells. Right: Graph showing pCD3z expression levels of each CAR-T cells related to NTD cells. Represented data is the ratio of pCD3z MeFI of ARI or AWARI CAR-T cells divided by the pCD3z MeFI of NTD cells. One-tailed Man-Whitney test (4 independent-donors, n&#x2265;4). C) Lysis of CD19&#x002B; cells (Nalm6 and Namalwa) at different ratios of co-culture with ARI and AWARI-CAR-T cells during 48h. Percentage of lysis is related to NTD-driven non-specific CD19&#x002B; lysis (n=5). D) Relative expression levels of LAG-3 on ARI and AWARI CAR-T cells 48h after co-culture with Nalm6 (left) or Namalwa (right) cells. Data represents LAG-3MeFI of ARI or AWARI CAR-T cells divided by the LAG-3 MeFI of NTD cells. One-tailed Man-Whitney test (n&#x2265;5). E) Levels of secreted TNF&#x03B1; (left) and IFN&#x25A1; (right) produced by NTD, ARI and AWARI CAR-T cells after 24h of stimulation with Namalwa at ratio 1:1 and determined by ELISA (4 independent-donors, n&#x2265;4).</p></caption>
+<graphic xlink:href="21253300v1_fig2.tif"/>
+</fig>
+</sec>
+<sec id="s3c">
+<title>AWARI CAR-T cells are as efficient as ARI CAR-T cells eradicating CD19&#x002B; tumour cells <italic>in vivo</italic> and maintain a more stem-like phenotype</title>
+<p><italic>In vitro</italic> cytotoxicity experiments only represent a direct-short term activity of CAR-T cells. We therefore performed a direct comparison of the anti-tumour activity of ARI versus AWARI CAR-T cells in a xenograft mice model of human lymphoma using two different CAR-T doses and a re-challenge after first lymphoma cells clearance (<bold><xref rid="fig3" ref-type="fig">Fig. 3A</xref></bold>, See M&#x0026;M for details). Both CAR-T cells efficiently eliminated Namalwa tumour cells in treated mice with both doses (<bold><xref rid="fig3" ref-type="fig">Figs. 3B, 3C</xref></bold> and <bold>Fig. S3A</bold>). However, a small amount of Namalwa cells (less than &#x003C;5&#x0025;) were detected in liver of some ARI-mice and in brain of some AWARI-mice treated with the low dose (<bold><xref rid="fig3" ref-type="fig">Fig. 3C</xref></bold>, left panels). Importantly, CAR expression driven by the two vectors was maintained in all the organs after sacrifice (<bold><xref rid="fig3" ref-type="fig">Fig. 3D</xref></bold>), even with a second-challenge, when compared to those ex-vivo levels prior to infusion (<bold>Fig. S3B</bold>), indicating no promoter silencing.</p>
+<fig id="fig3" position="float" fig-type="figure">
+<label>Figure 3.</label>
+<caption><title><italic>In vivo</italic> anti-tumor activity and phenotype of ARI and AWARI CAR-T cells.</title>
+<p>A) Experimental design of <italic>in vivo</italic> antitumor activity and phenotypic studies of 5e6 (purple dots) and a 10e6 (blue dots) of ARI and AWARI CAR-T cells. Re-challenge with new Namalwa is indicated with an arrow at day 16 in the 10e6 dose. Phenotypic analysis was performed after sacrifice at day 13 for 5e6 dose and day 28 for 10e6 dose. B) Tumor bioluminescence (BLI) progression with 5e6 (left) and 10e6 T cells doses (right) at different days post-Namalwa inoculation. C) Percentage of surviving Namalwa-GFP-Nluc cells in bone marrow (BM), spleen, blood, liver and blood determined by FACS after the sacrifice with the low (left panels) and high (right panels) doses. This value is analyzed in &#x201C;singlets human cells&#x201D; gate (see M&#x0026;M). Two-tailed Mann-Whitney test, &#x002A;, p&#x003C;0.05; &#x002A;&#x002A;, p&#x003C;0.01, and &#x002A;&#x002A;&#x002A;, p&#x003C;0.001. N(mice) of low dose: PBS=3, NTD=3, ARI=3, AWARI=3; and high dose: PBS=2, NTD=3, ARI=8, AWARI=5. D) Representative dot-plots of CAR expression and phenotype of CAR&#x002B; cells of gated hCD3 from the spleen of ARI and AWARI mice after sacrifice of the high-dose experiment. E) Graphical representation of proportions of T<sub>N</sub>/T<sub>SCM</sub> (CD62L&#x002B;CD45RA&#x002B;) (green), T<sub>CM</sub> (CD62L&#x002B;CD45RA-) (blue), T<sub>EM</sub> (CD62L-CD45RA-) (grey) and T<sub>EF</sub> (CD62L-CD45RA&#x002B;) (red) subpopulations in ARI (top) and AWARI (bottom) CAR&#x002B; cells in the indicated organs after sacrifice of challenged (outer circle) and re-challenged (inner circle) mice. &#x002A;, p&#x003C;0.05 when compared the T cells subsets of re-challenged ARI and AWARI treated mice. Mann-Whitney one-tail. &#x002B;&#x002B; and &#x002B;&#x002B;&#x002B; p&#x003C;0.01 and p&#x003C;0.001 respectively of 2-way ANOVA, Bonferroni post-Test of all the population of the total mice (ARI=8 (3&#x002B;5R), AWARI=5 (2&#x002B;3R). F) Percentage of T<sub>N</sub>/T<sub>SCM</sub> and T<sub>CM</sub> after sacrifice of ARI and AWARI hCD3&#x002B;CAR&#x002B; cells (ARI=8, AWARI=5, Mann-Whitney one-tail. G) Spleen from treated mice were isolated and cells suspensions were cultured with 200 UI/ml of IL-2 in TexMACS medium and 2&#x0025; P/S during 48h. H) Representative dot-plots of CD45RA/CD62L and PD1/LAG3 populations of ARI and AWARI mice. I) Percentage of hCD3&#x002B; T<sub>N</sub>/T<sub>SCM</sub> and T<sub>CM</sub>after 48h of <italic>in-vitro</italic> culture. Two-tailed Mann-Whitney test (N=4). J) Percentage of PD1&#x002B;LAG3&#x002B; cells. One-tailed Mann-Whitney test (N=4).</p></caption>
+<graphic xlink:href="21253300v1_fig3.tif"/>
+</fig>
+<p>After showing the same therapeutic efficacy, we investigated potential differences in CAR-T cell phenotype after tumour clearance. Interestingly, AWARI-CAR-T cells showed a higher proportion of memory (T<sub>CM:</sub> CD45RA-CD62L&#x002B;) and stem memory (T<sub>SCM</sub>: CD45RA&#x002B;CD62L&#x002B;) (<bold><xref rid="fig3" ref-type="fig">Fig. 3D</xref></bold>) cells in spleen, bone marrow (BM), blood and liver when compared to ARI-treated mice (<bold>Fig</bold>.<bold>3E, 3F</bold>). Specially after re-challenge (inner circle, <bold><xref rid="fig3" ref-type="fig">Fig. 3E</xref></bold>), T<sub>SCM</sub> population of AWARI-CAR-T cells was increased in spleen and liver and T<sub>CM</sub> subset in BM and brain. In order to further characterize the potential differences, we cultured the cells from processed spleens during 48h <italic>in vitro</italic> with 200 UI/ml of IL-2 in TexMACs medium (<bold><xref rid="fig3" ref-type="fig">Fig. 3G</xref></bold>), and we confirmed an increment in T cell memory populations in AWARI-derived spleens (<bold><xref rid="fig3" ref-type="fig">Fig. 3H, 3I</xref></bold>) and a tendency to have lower expression of exhaustion markers (PD1&#x002B;LAG3&#x002B;) (<bold><xref rid="fig3" ref-type="fig">Fig. 3H, 3J</xref></bold>).</p>
+</sec>
+<sec id="s3d">
+<title>Large-scale semi-automated manufacturing of AWARI CAR-T cells</title>
+<p>Before translation of AW-LV to ATMP production for clinical applications, it is important to demonstrate their performance for large-scale automated manufacturing. We therefore used laboratory grade AWARI LVs to generate two batches of CAR-T cells (#01 and #02) in the CliniMACs Prodigy Bioreactor (Miltenyi Biotec) under GMP conditions (see M&#x0026;M). Samples at days 7 and 10 for batch #01, and 6 and 9 days for batch #02 (<bold><xref rid="fig4" ref-type="fig">Fig. 4A</xref></bold>) were collected to study CAR expression (<bold><xref rid="fig4" ref-type="fig">Fig. 4B</xref></bold>), viability, expansion (<bold><xref rid="fig4" ref-type="fig">Fig 4C</xref></bold>), CD4/CD8 ratio (<bold><xref rid="fig4" ref-type="fig">Fig. 4D</xref></bold>), phenotype (<bold><xref rid="fig4" ref-type="fig">Fig. 4E</xref></bold>), and <italic>in vitro</italic> lytic activity (<bold><xref rid="fig4" ref-type="fig">Fig. 4F</xref></bold>). In both productions processes, cells were efficiently expanded, with more CD4&#x002B; than CD8&#x002B; CAR&#x002B; cells and prominent T<sub>N</sub>/<sub>SCM</sub> (CCR7&#x002B; CD62L&#x002B;) subset (44,85 &#x00B1;0.07&#x0025;) at day 7 or day 6, that were drastically reduced at final day of the production (16,55 &#x00B1;13.93&#x0025;), turning into T<sub>CM</sub> cells but with minimal effector and effector memory populations (<bold><xref rid="fig4" ref-type="fig">Fig. 4E</xref></bold>). As described for other CAR-T cell products, lower expansion times rendered more potent AWARI CAR-T cells (<bold><xref rid="fig4" ref-type="fig">Fig. 4F</xref></bold>). All these results point out to the AWARI LVs as a valuable tool for a future clinical trial, although improvements in its lentiviral backbone could further increase transduction efficacy in order to lower costs and time of production.</p>
+<fig id="fig4" position="float" fig-type="figure">
+<label>Figure 4.</label>
+<caption><title>GMP-like large-scale production of AWARI CAR T cells.</title>
+<p>A) Time-line of the GMP-like batches #01 and #02 of AWARI CAR-T cells in the CliniMACS Prodigy. B) Dot-plots of CAR expression at days of sample (7/6) and final product (10/9) for both #01 (left) and #02 (right) batches. C) Data from viability, number of CD3, efficiency of CAR-T cell transduction and number of obtained CAR-T cells. FC= flow cytometry, NC= Neubauer chamber counting. D) Variation of percentage of CD4 and CD8&#x002B; cells in CAR- and CAR&#x002B; cells at sample (s) and final products (f). Two-tailed Mann-Whitney test. E) Graphical representation of the T cells populations at sample (days 6 or 7) and final products (day 9 or 10). T<sub>N</sub>/T<sub>SCM</sub>=Na&#x00EF;ve/stem cell memory (CD45RA&#x002B;CCR7&#x002B;), T<sub>CM</sub>= central memory (CD45RA-CCR7&#x002B;), T<sub>EM</sub>= effector memory (CD45RA-CCR7-) and T<sub>EMRA</sub>= effector memory RA&#x002B;(CD45RA&#x002B;CCR7-). F) <italic>In vitro</italic> specific lysis of CD19&#x002B; cells Nalm6 (left) and Namalwa (right) CD19&#x002B; cells by AWARI CAR-T cells harvested at sample day (black line) and final day (red line) for productions #01 and #02. CAR-T cells products were co-cultured at different ratios during 16h (dashed line) or 48h (continuous line).</p></caption>
+<graphic xlink:href="21253300v1_fig4.tif"/>
+</fig>
+</sec>
+<sec id="s3e">
+<title>Large-scaled manufactured AWARI CAR-T cells products are highly efficient for tumour clearance and maintain good levels of T<sub>N/SCM</sub> cells <italic>in vivo</italic></title>
+<p>Finally, we performed a detailed analysis of large-scale manufactured AWARI CAR-T cells in terms of their <italic>in vivo</italic> anti-tumour efficacy and their phenotype after isolation from treated mice (<bold><xref rid="fig5" ref-type="fig">Fig. 5</xref></bold>) for both #01 (blue dots) and #02 (green dots) CliniMACS batches. Anti-tumour activity of both AWARI CAR-T cells products were analysed in the Namalwa xenograft mice model as depicted in <xref rid="fig5" ref-type="fig">Fig 5A</xref>. Survival (<bold><xref rid="fig5" ref-type="fig">Fig. 5B</xref></bold>) and tumour progression (<bold><xref rid="fig5" ref-type="fig">Figs. 5C</xref></bold> and <bold><xref rid="fig5" ref-type="fig">5D</xref></bold>) were monitored up to 28-30 days post-treatment showing a strong anti-tumour activity of the AWARI CAR-T cells with 100&#x0025; survival and undetectable tumour cells in treated mice (<bold><xref rid="fig5" ref-type="fig">Figs. 5C, 5D</xref></bold> and <bold>Fig, S4A</bold>). Control PBS and NTD-inoculated mice developed the disease at similar rates and the majority required to be sacrificed for compassionate reasons at days 13-16. At this time point, the stemness of human CAR-T cells of two AWARI-treated mice (<bold><xref rid="fig5" ref-type="fig">Fig. 5F</xref></bold> top panel, <bold>S4C</bold>) in #01 experiment was clearly maintained. New Namalwa cells were inoculated in AWARI-T cells-treated mice and also in new mice (&#x201C;New PBS&#x201D;). Re-challenged AWARI-mice remained tumour-free through the duration of the experiment as did the follow-up group. Similar results were observed in both productions (<bold><xref rid="fig5" ref-type="fig">Fig. 5C, 5D</xref>, S4A</bold>). The percentage of CAR&#x002B; cells (<bold><xref rid="fig5" ref-type="fig">Fig 5E</xref></bold>) was maintained before <italic>(ex-vivo)</italic> and after <italic>in vivo</italic> elimination of Namalwa cells in the xenograf model with a slight increase in some of the organs (<bold>Fig. S4b</bold>). Importantly, the phenotypic analysis confirmed the presence of a high proportion of T<sub>SCM</sub>/T<sub>CM</sub> populations (<bold><xref rid="fig5" ref-type="fig">Fig. 5E, 5F</xref>, S4D</bold>) at the end point of rechallenged and non-rechallenged mice. However, a significant reduction of these populations was observed from day 13 to day 30 (<bold><xref rid="fig5" ref-type="fig">Fig. 5F</xref> top panel, S4C</bold>). This data confirmed the <italic>in vitro</italic> (<bold>Fig. S2</bold>) and <italic>in vivo</italic> (<bold><xref rid="fig3" ref-type="fig">Fig. 3</xref></bold>) results showing that the expression of the ARI-CAR19-BBzz through a TCR-like promoter (AWARI-CAR-T cells) maintains the proportion of T<sub>SCM</sub>/T<sub>CM</sub> CAR-T cells upon antigen encounter.</p>
+<fig id="fig5" position="float" fig-type="figure">
+<label>Figure 5.</label>
+<caption><title><italic>In vivo</italic> anti-tumor activity and phenotype of CliniMACS-produced AWARI-CAR-T cells after one or two Namalwa challenges.</title>
+<p>A) Experimental design and <bold>t</bold>ime-line of the two experiments with CliniMACS batches #01 and #02. R indicates re-challenge. B) Survival of PBS, NTD or AWARI-inoculated mice of #01 and #02 products. Log-Ranked test. C, D) Representative BLI images of tumor burden measured in #01 (C) and #02 (D) experiments at different days post Namalwa inoculation as indicated. In both studies, at day 15 (#01) or 13 (#02) respectively, new Namalwa cells were inoculated to AWARI treated mice (rechallenge, yellow line) and to control mice (&#x2018;New PBS&#x2019;). E) Representative dot-plots of Namalwa/hCD3 presence, CAR&#x002B; cells of hCD3 and phenotype of CAR- and CAR&#x002B; of NTD cells and AWARI CliniMACS #01 from BM after sacrifice. F) Percentage of T<sub>N</sub>/<sub>SCM</sub>&#x002B;T<sub>CM</sub> population in hCD3&#x002B;CAR&#x002B; cells analyzed in different organs from mice with one or two (rechallenge, R) inoculations of Namalwa tumor cells in #01 (left) and #02 (right) CliniMACS batches at final day. Only when CAR&#x002B; population was &#x003E;1&#x0025;, data was analyzed and included here. N (CliniMACS #01): PBS=3, NTD=5, AWARI=10 (2 sacrificed at day 13, 4 mice with one- and 4 mice with two-challenges. N (CliniMACS #02): PBS=2, NTD=3, AWARI =5 (2&#x002B;3 re-challenged mice). 2-way-ANOVA, Bonferroni Post Test, &#x002A;, indicates p&#x003C;0.05, &#x002A;&#x002A;, p&#x003C;0.001, &#x002A;&#x002A;&#x002A;, p&#x003C;0.0001.</p></caption>
+<graphic xlink:href="21253300v1_fig5.tif"/>
+</fig>
+</sec>
+</sec>
+<sec id="s4">
+<title>DISCUSSION</title>
+<p>&#x03B1;CD19 CAR-T cells have achieved impressive therapeutic benefits in R/R B lineage lymphoid neoplasms, leading to the approval of Kymriah, Yescarta, Tecartus and Breyanzi and over 800 clinical trials around the globe. Most of these studies have used autologous T cells that are gene modified by retrovirus-based vectors to express the CAR through a strong promoter (often the EF1&#x03B1; or MSCV promoters). However, CAR-T therapy still has important limitations due to severe side effects and the lack of complete cures in 40-62&#x0025; of the CD19&#x002B; lymphomas <sup><xref ref-type="bibr" rid="c1">1</xref></sup> and most solid tumours<sup><xref ref-type="bibr" rid="c22">22</xref>,<xref ref-type="bibr" rid="c23">23</xref></sup>. Improvements in CAR structure (scFV, hinge/spacer, costimulatory domains, bi-especific or multispecific CARs, etc) T cell composition or combinational therapies have already shown improved results<sup><xref ref-type="bibr" rid="c24">24</xref></sup>. New approaches to improve CAR-T efficacy and/or safety include the control of CAR activity and or other molecules<sup><xref ref-type="bibr" rid="c13">13</xref></sup> and mechanism to avoid immune-reactions against the CAR-T cells<sup><xref ref-type="bibr" rid="c25">25</xref></sup>.</p>
+<p>There are several evidences indicating that high levels and continuous expression of the CAR can be deleterious for the efficacy and safety of the CAR-T products<sup><xref ref-type="bibr" rid="c2">2</xref>-<xref ref-type="bibr" rid="c4">4</xref></sup>. The loss of efficacy comes in part from the early exhaustion and/or apoptosis of the CAR-T cells due to an excess of CAR signalling after antigen encounter<sup><xref ref-type="bibr" rid="c26">26</xref></sup>. Strong and unregulated CAR expression also increase tonic signalling in the absence of target antigen<sup><xref ref-type="bibr" rid="c4">4</xref></sup> promoting exhaustion<sup><xref ref-type="bibr" rid="c3">3</xref>, <xref ref-type="bibr" rid="c5">5</xref></sup>. On the other side, safety issues due to CAR overexpression relates to the increased antigen-independent tonic signalling and to over-stimulation of CAR-T cells that generate CRS. Using genome editing technologies, Eyquem et al. demonstrated that TCR-like expression of CARs resulted in lower tonic signalling, reduced CAR-T exhaustion and increased proportion of TSM/TN CAR-T cells, resulting in improved anti-tumour activity<sup><xref ref-type="bibr" rid="c2">2</xref></sup>. These authors also showed that low expression was not enough to achieve optimal CAR-T products, concluding that a down-regulation of the CAR upon antigen encounter was required for optimal CAR-T performance.</p>
+<p>In this manuscript we investigated whether LVs can be used to obtain a TCR-like expression kinetics that could also result in an improved CAR-T cell product. Our search for human promoters that could mimic the TCR expression pattern pointed to the TRAC locus, however, the TRAC promoter in mature human T cells is not well defined. We therefore focus on the <italic>WAS</italic> gene promoter because WASP protein is only expressed in hematopoietic cells, is involved in the formation of the immunological synapse and acts as an adaptor of TCR signals<sup><xref ref-type="bibr" rid="c14">14</xref>,<xref ref-type="bibr" rid="c15">15</xref></sup>. We have previously developed different <italic>WAS</italic>-gene based promoters and identified the AW promoter, harbouring fragments from the alternative and proximal promoter, as the best option to express transgenes in hematopoietic cells<sup><xref ref-type="bibr" rid="c8">8</xref>,<xref ref-type="bibr" rid="c11">11</xref>,<xref ref-type="bibr" rid="c16">16</xref></sup>. Here we showed that, indeed, <italic>WAS</italic>-promoter driven LVs (AW-LVs) partially mimicked the TCR expression kinetic, with a small downregulation upon stimulation and recovering basal levels in 5-7 days.</p>
+<p>Based on the ability of AW-LVs to mimic TCR expression pattern on T cells, we investigated whether 4-1BB-CAR-T cells generated with this &#x201C;physiological&#x201D; LVs have a better behaviour compared to that generated with LVs harbouring strong or viral promoters. Although in terms of <italic>in vitro</italic> or <italic>in vivo</italic> anti-tumour activity we could not detect significant differences with EF1&#x03B1;-driven CAR-T cells, AW-CAR-T cells exhibited lower tonic signalling and a better phenotype after efficient killing of CD19&#x002B; cells, with reduced secretion of pro-inflammatory cytokines. These data is largely in agreement with the observations of Eyquem et al. using genome editing technologies to express the CAR through the TRAC locus<sup><xref ref-type="bibr" rid="c2">2</xref></sup>. However, these authors also showed improved <italic>in vivo</italic> anti-tumour activity<sup><xref ref-type="bibr" rid="c2">2</xref></sup>. The differences in the tumour model (Nalm6 versus Namalwa) as well as in the CAR signalling domain (CD28 versus 4-1BB) and scFv (FMC63 versus A3B1) could explain the observed differences. Indeed, the potential deleterious effects of CAR over-expression and tonic signalling are highly influenced by the CAR configuration<sup><xref ref-type="bibr" rid="c2">2</xref>, <xref ref-type="bibr" rid="c4">4</xref></sup>. For instance, replacing CD28 with the 4-1BB costimulatory domain reversed exhaustion in CAR T cells and improved its persistence and therapeutic efficacy<sup><xref ref-type="bibr" rid="c27">27</xref></sup>. The good behaviour of EF1&#x03B1;-driven 4-1BB-CARs T cells and the experimental limitations derived by the graft versus host disease (GVHD) caused by the administration of the CAR-T cells can explain the absence of increased therapeutic efficacy in our animal models.</p>
+<p>In spite of the good behaviour of 4-1BB-CARs, Gomes-Silva et al demonstrated that very high expression levels of 4-1BB-CARs also lead to apoptosis and limit CAR-T cells expansion<sup><xref ref-type="bibr" rid="c4">4</xref></sup>. The same authors also showed that lowering it expression levels by using EF1&#x03B1;-driven LVs instead of LTR-driven &#x25A1;-retroviral vector, improved phenotype, expansion potential and therapeutic efficacy. These studies showed that EF1&#x03B1;-driven LVs already generate a good CAR product for some 4-1BB-CARs. Here we show that TCR-like expression can further improve 4-1BB-CAR-T products, in particular for the ARI-0001, by maintaining a better phenotype and controlling tonic signalling and pro-inflammatory cytokine secretion.</p>
+<p>An important aspect to consider in CAR-T cells is the potential side effects due to overstimulation and/or inadequate stimulation. Severe CRS (grades 3 or 4) is an important hallmark in CD19&#x002B; that can compromise efficacy and lead to life-threatening conditions<sup><xref ref-type="bibr" rid="c28">28</xref>,<xref ref-type="bibr" rid="c29">29</xref></sup>. Upon tumour cell encounter, CAR-T cells release different pro-inflammatory cytokines such as TNF&#x03B1;, IFN&#x25A1;, IL-1 and GM-CSF that leads to macrophage recruitment and activation causing a dangerous cytokine storm involving IL-6 and GM-CSF<sup><xref ref-type="bibr" rid="c30">30</xref>, <xref ref-type="bibr" rid="c31">31</xref></sup>. It has also been demonstrated that activation of macrophages through CD40/CD40L, CD69 and LAG-3 also contributes to massive activation<sup><xref ref-type="bibr" rid="c29">29</xref></sup>. Although CRS can be managed with corticosteroids and anti-IL6R (Tocilizumab), these interventions also block T cell activation compromising CAR-T efficacy <sup><xref ref-type="bibr" rid="c29">29</xref></sup>. In this manuscript, we have shown that CAR-T cells generated with AW-LVs exhibit a milder secretion of TNF&#x03B1; and IFN&#x25A1; after tumour cells encounter. In addition, we noted that LAG-3 expression was reduced after Namalwa interaction which suggests that AW-CAR-T cells could lower the risk of CRS.</p>
+<p>We finally investigated the feasibility of generating a viable CAR-T cell product for clinical translation. Here, we have demonstrated that it is feasible to generate TCR-like CAR-T cells in a CliniMACs Prodigy, with high cell viability, predominant stem and CM populations and potent <italic>in vitro</italic> and <italic>in vivo</italic> anti-tumour activity. In contrast and consistent with our comparative results, ARI-0001 generated more memory and effector memory population<sup><xref ref-type="bibr" rid="c19">19</xref></sup>, highlighting another potential advantage of AW-CAR-T cells during the manufacturing process. On the other hand, the efficacy of transduction was lower compared to ARI (&#x223C; 18.4&#x0025; vs &#x223C;30.6&#x0025;), suggesting that a future optimization of the AWARI LV backbone could further improve the manufacturing process of AW-CAR-T cells.</p>
+<p>Taken all together, we propose the use of AW-LVs as an alternative platform for the manufacturing of CAR-T cells in order to provide better efficacies and/or safety of the final products. The final benefits of expressing different CARs through the AW promoter will need to be determined in each case.</p>
+</sec>
+<sec id="s5">
+<title>Conclusions</title>
+<p>In this work we showed that LVs expressing the transgene through the <italic>WAS</italic> gene proximal promoter mimic very closely the TCR expression pattern kinetic in T cells. 4-1BB-CAR-T cells generated with <italic>WAS-</italic>promoter-driven LVs (AWARI CAR-T) exhibited a higher proportion of Na&#x00EF;ve/Stem Cell Memory T cells, less exhausted phenotype, lower tonic signalling and reduced secretion of pro-inflammatory cytokines compared to EF1-driven ARI CAR-T. Finally, AWARI CAR-T cells were efficiently manufactured in large-scale GMP-like conditions. Altogether, our data showed that the AW-LVs can be used to generate improved, physiological 4-1BB-CAR-T cell products and propose these LVs as efficient tools for the generation of clinical-grade TCR-like CAR-T cells.</p>
+</sec>
+<sec sec-type="supplementary-material">
+<title>Supporting information</title>
+<supplementary-material>
+<label>Figure S1</label>
+<media xlink:href="supplements/253300_file09.jpg" />
+</supplementary-material>
+<supplementary-material>
+<label>Figure S2</label>
+<media xlink:href="supplements/253300_file10.jpg" />
+</supplementary-material>
+<supplementary-material>
+<label>Figure S3</label>
+<media xlink:href="supplements/253300_file11.jpg" />
+</supplementary-material>
+<supplementary-material>
+<label>Figure S4</label>
+<media xlink:href="supplements/253300_file12.jpg" />
+</supplementary-material>
+<supplementary-material>
+<label>Supplementary text</label>
+<media xlink:href="supplements/253300_file13.docx" />
+</supplementary-material>
+</sec>
+</body>
+<back>
+<sec sec-type="data-availability">
+<title>Data Availability</title>
+<p>All data relevant to the study are included in the article or uploaded as online supplemental information.</p>
+</sec>
+<sec id="s6">
+<title>DECLARATIONS</title>
+<sec id="s6a">
+<title>Ethics approval and consent to participate</title>
+<p>All donors from the Haematology Unit of Hospital Reina Sof&#x00ED;a, C&#x00F3;rdoba (Spain) gave their written informed consent and the study was performed according to the established guidelines of in the approved by the Regional Government Junta de Andaluc&#x00ED;a-Consejeria de Salud (date of approval: 22/02/2019, signed by D<sup>a</sup> Cristina Luc&#x00ED;a D&#x00E1;vila Fajardo as secretary of the Research Ethics Committee), that comply with the requirements regarding quality and safety for donation, obtaining, storage, distribution, and preservation of human cells and tissues under the Spanish specific regulation (RD 9/2014) and International Conference of Good Clinical Practice. All the experiments involving animals were performed according to a protocol approved by the Institutional Animal Care and Use Committee of the University of Granada (13/12/2016/181) were in accordance with the European Convention for the Protection of Vertebrate Animals used for Experimental and Other Scientific Purposes (CETS # 123) and the specific Spanish law (R.D. 53/2013). Subjects were randomly assigned to receive the different treatments and sample size estimation was calculated based on Mayer et al<sup><xref ref-type="bibr" rid="c20">20</xref></sup>.</p>
+</sec>
+<sec id="s6b">
+<title>Consent for publication</title>
+<p>All the authors consent the publication of this manuscript.</p>
+</sec>
+<sec id="s6c">
+<title>Availability of data and material</title>
+<p>All data relevant to the study are included in the article or uploaded as online supplemental information. Figures were created with Biorender.com.</p>
+</sec>
+<sec id="s6d">
+<title>Competing interests</title>
+<p>FMM, MTM, NMP, PM and KB are inventors of a patent for AW promoter for CAR-T cells applications. P.J.L is contractually associated to LentiStem Biotech, a Spin-Off company that has the license of that patent. The rest of the authors declare that the research was conducted in the absence of other commercial or financial relationships that could be construed as a potential conflict of interest.</p>
+</sec>
+<sec id="s6e">
+<title>Funding</title>
+<p>This study was funded by the Spanish ISCIII Health Research Fund and the European Regional Development Fund (FEDER) through research grants PI12/01097, PI15/02015, PI18/00337 (F.M.), PI18/00330 (K.B.) and PI17/00672 (P.M.); The CECEyU and CSyF of the Junta de Andaluc&#x00ED;a FEDER/European Cohesion Fund (FSE) for Andalusia provided the following research grants: 2016000073391-TRA, 2016000073332-TRA, PI-57069, PAIDI-Bio326, CARTPI-0001-201 (F.M.), PI-0014-2016 (K.B) and PEER-0286-2019 (P.M.), PE-0223-2018; The Ministerio de Ciencia, Innovaci&#x00F3;n y Universidades (CDTI) to F.M. (00123009 / SNEO-20191072). K.B. and C.M held Nicolas Monardes contracts from regional Ministry of Health (#0006/2018 and C2-0002-2019 respectively). M.T.M., N.M.P and A.A.G. are funded by Spanish Ministry of Education and Science through fellowships FPU16/05467, FPU17/02268 and FPU17/04327 respectively. P.J.L is funded through an industrial doctorate MCI DIN2018-010180 to LentiStem Biotech. P.M is funded by Fundaci&#x00F3;n Andaluza Progreso y Salud. M.C.G is funded by Spanish Ministry of Education and Science through fellowship GJ (PEJ-2018-001760-A). MDC is funded by the grant PE-0223-2018 CSyF of the Junta de Andalucia. M.T.M., N.P.M., P.L.J.L., M.C.G. and A.G.G. are PhD students from the Biomedicine Programme of the University of Granada (Spain).</p>
+</sec>
+<sec id="s6f">
+<title>Authors&#x2019; contributions</title>
+<p>MTM and NMP designed and performed experiments, analysed data and wrote the manuscript. PLJL performed and analysed experiments and critical review of the manuscript. PM contributed to animal experiments. MCG and KP contributed to T cells isolation and revised the manuscript. RJM and SN designed and produced CliniMACs Prodigy large scale CAR-T cells production process. RJM, SN and MDC performed the phenotypic characterization of CliniMACs-derived products. SSH and AAG contributed to AWARI LVs production. MC and MJ provided ARI-0001 LV and critical review. CM provided material and critical review. KB provided funding and critical review. CH provided funding and critical review of the manuscript. FM conceals the project, designed experiments, analysed data, provides the main funding and wrote the manuscript.</p>
+</sec>
+</sec>
+<ack>
+<title>Acknowledgements</title>
+<p>We thank Ana Fern&#x00E1;ndez-Ib&#x00E1;&#x00F1;ez for her support with the IVIS Spectrum Analyzer, Nieves &#x00C1;lvarez for her help of ELISA assays. We also thank GENYO&#x2019;s supporting units.</p>
+</ack>
+<ref-list>
+<title>References</title>
+<ref id="c1"><label>1.</label><mixed-citation publication-type="journal"><string-name><surname>Vitale</surname> <given-names>C</given-names></string-name>, <string-name><surname>Strati</surname> <given-names>P.</given-names></string-name> <article-title>CAR T-Cell Therapy for B-Cell non-Hodgkin Lymphoma and Chronic Lymphocytic Leukemia: Clinical Trials and Real-World Experiences</article-title>. <source>Front Oncol</source> <year>2020</year>;<volume>10</volume>:<fpage>849</fpage>.</mixed-citation></ref>
+<ref id="c2"><label>2.</label><mixed-citation publication-type="journal"><string-name><surname>Eyquem</surname> <given-names>J</given-names></string-name>, <string-name><surname>Mansilla-Soto</surname> <given-names>J</given-names></string-name>, <string-name><surname>Giavridis</surname> <given-names>T</given-names></string-name>, <etal>et al.</etal> <article-title>Targeting a CAR to the TRAC locus with CRISPR/Cas9 enhances tumour rejection</article-title>. <source>Nature</source> <year>2017</year>;<volume>543</volume>(<issue>7643</issue>):<fpage>113</fpage>&#x2013;<lpage>17</lpage>.</mixed-citation></ref>
+<ref id="c3"><label>3.</label><mixed-citation publication-type="journal"><string-name><surname>Frigault</surname> <given-names>MJ</given-names></string-name>, <string-name><surname>Lee</surname> <given-names>J</given-names></string-name>, <string-name><surname>Basil</surname> <given-names>MC</given-names></string-name>, <etal>et al.</etal> <article-title>Identification of chimeric antigen receptors that mediate constitutive or inducible proliferation of T cells</article-title>. <source>Cancer Immunol Res</source> <year>2015</year>;<volume>3</volume>(<issue>4</issue>):<fpage>356</fpage>&#x2013;<lpage>67</lpage>.</mixed-citation></ref>
+<ref id="c4"><label>4.</label><mixed-citation publication-type="journal"><string-name><surname>Gomes-Silva</surname> <given-names>D</given-names></string-name>, <string-name><surname>Mukherjee</surname> <given-names>M</given-names></string-name>, <string-name><surname>Srinivasan</surname> <given-names>M</given-names></string-name>, <etal>et al.</etal> <article-title>Tonic 4-1BB Costimulation in Chimeric Antigen Receptors Impedes T Cell Survival and Is Vector-Dependent</article-title>. <source>Cell Rep</source> <year>2017</year>;<volume>21</volume>(<issue>1</issue>):<fpage>17</fpage>&#x2013;<lpage>26</lpage>.</mixed-citation></ref>
+<ref id="c5"><label>5.</label><mixed-citation publication-type="journal"><string-name><surname>Ajina</surname> <given-names>A</given-names></string-name>, <string-name><surname>Maher</surname> <given-names>J.</given-names></string-name> <article-title>Strategies to Address Chimeric Antigen Receptor Tonic Signaling</article-title>. <source>Mol Cancer Ther</source> <year>2018</year>;<volume>17</volume>(<issue>9</issue>):<fpage>1795</fpage>&#x2013;<lpage>815</lpage>.</mixed-citation></ref>
+<ref id="c6"><label>6.</label><mixed-citation publication-type="journal"><string-name><surname>Benabdellah</surname> <given-names>K</given-names></string-name>, <string-name><surname>Gutierrez-Guerrero</surname> <given-names>A</given-names></string-name>, <string-name><surname>Cobo</surname> <given-names>M</given-names></string-name>, <etal>et al.</etal> <article-title>A chimeric HS4-SAR insulator (IS2) that prevents silencing and enhances expression of lentiviral vectors in pluripotent stem cells</article-title>. <source>PLoS ONE</source> <year>2014</year>;<volume>9</volume>(<issue>1</issue>):<fpage>e84268</fpage>.</mixed-citation></ref>
+<ref id="c7"><label>7.</label><mixed-citation publication-type="journal"><string-name><surname>Naldini</surname> <given-names>L</given-names></string-name>, <string-name><surname>Trono</surname> <given-names>D</given-names></string-name>, <string-name><surname>Verma</surname> <given-names>IM</given-names></string-name>. <article-title>Lentiviral vectors, two decades later</article-title>. <source>Science</source> <year>2016</year>;<volume>353</volume>(<issue>6304</issue>):<fpage>1101</fpage>&#x2013;<lpage>2</lpage>.</mixed-citation></ref>
+<ref id="c8"><label>8.</label><mixed-citation publication-type="journal"><string-name><surname>Frecha</surname> <given-names>C</given-names></string-name>, <string-name><surname>Toscano</surname> <given-names>MG</given-names></string-name>, <string-name><surname>Costa</surname> <given-names>C</given-names></string-name>, <etal>et al.</etal> <article-title>Improved lentiviral vectors for Wiskott-Aldrich syndrome gene therapy mimic endogenous expression profiles throughout haematopoiesis</article-title>. <source>Gene Ther</source> <year>2008</year>;<volume>15</volume>(<issue>12</issue>):<fpage>930</fpage>&#x2013;<lpage>41</lpage>.</mixed-citation></ref>
+<ref id="c9"><label>9.</label><mixed-citation publication-type="journal"><string-name><surname>Romero</surname> <given-names>Z</given-names></string-name>, <string-name><surname>Torres</surname> <given-names>S</given-names></string-name>, <string-name><surname>Cobo</surname> <given-names>M</given-names></string-name>, <etal>et al.</etal> <article-title>A tissue-specific, activation-inducible, lentiviral vector regulated by human CD40L proximal promoter sequences</article-title>. <source>Gene Ther</source> <year>2011</year>;<volume>18</volume>(<issue>4</issue>):<fpage>364</fpage>&#x2013;<lpage>71</lpage>.</mixed-citation></ref>
+<ref id="c10"><label>10.</label><mixed-citation publication-type="journal"><string-name><surname>Benabdellah</surname> <given-names>K</given-names></string-name>, <string-name><surname>Cobo</surname> <given-names>M</given-names></string-name>, <string-name><surname>Munoz</surname> <given-names>P</given-names></string-name>, <etal>et al.</etal> <article-title>Development of an all-in-one lentiviral vector system based on the original TetR for the easy generation of Tet-ON cell lines</article-title>. <source>PLoS ONE</source> <year>2011</year>;<volume>6</volume>(<issue>8</issue>):<fpage>e23734</fpage>.</mixed-citation></ref>
+<ref id="c11"><label>11.</label><mixed-citation publication-type="journal"><string-name><surname>Munoz</surname> <given-names>P</given-names></string-name>, <string-name><surname>Tristan-Manzano</surname> <given-names>M</given-names></string-name>, <string-name><surname>Sanchez-Gilabert</surname> <given-names>A</given-names></string-name>, <etal>et al.</etal> <article-title>WAS Promoter-Driven Lentiviral Vectors Mimic Closely the Lopsided WASP Expression during Megakaryocytic Differentiation</article-title>. <source>Mol Ther Methods Clin Dev</source> <year>2020</year>;<volume>19</volume>:<fpage>220</fpage>&#x2013;<lpage>35</lpage>.</mixed-citation></ref>
+<ref id="c12"><label>12.</label><mixed-citation publication-type="journal"><string-name><surname>Benabdellah</surname> <given-names>K</given-names></string-name>, <string-name><surname>Munoz</surname> <given-names>P</given-names></string-name>, <string-name><surname>Cobo</surname> <given-names>M</given-names></string-name>, <etal>et al.</etal> <article-title>Lent-On-Plus Lentiviral vectors for conditional expression in human stem cells</article-title>. <source>Sci Rep</source> <year>2016</year>;<volume>6</volume>:<fpage>37289</fpage>.</mixed-citation></ref>
+<ref id="c13"><label>13.</label><mixed-citation publication-type="journal"><string-name><surname>Tristan-Manzano</surname> <given-names>M</given-names></string-name>, <string-name><surname>Justicia-Lirio</surname> <given-names>P</given-names></string-name>, <string-name><surname>Maldonado-Perez</surname> <given-names>N</given-names></string-name>, <etal>et al.</etal> <article-title>Externally-Controlled Systems for Immunotherapy: From Bench to Bedside</article-title>. <source>Front Immunol</source> <year>2020</year>;<volume>11</volume>:<fpage>2044</fpage>.</mixed-citation></ref>
+<ref id="c14"><label>14.</label><mixed-citation publication-type="journal"><string-name><surname>Calvez</surname> <given-names>R</given-names></string-name>, <string-name><surname>Lafouresse</surname> <given-names>F</given-names></string-name>, <string-name><surname>De Meester</surname> <given-names>J</given-names></string-name>, <etal>et al.</etal> <article-title>The Wiskott-Aldrich syndrome protein permits assembly of a focused immunological synapse enabling sustained T-cell receptor signaling</article-title>. <source>Haematologica</source> <year>2011</year>;<volume>96</volume>(<issue>10</issue>):<fpage>1415</fpage>&#x2013;<lpage>23</lpage>.</mixed-citation></ref>
+<ref id="c15"><label>15.</label><mixed-citation publication-type="journal"><string-name><surname>Cotta-de-Almeida</surname> <given-names>V</given-names></string-name>, <string-name><surname>Dupre</surname> <given-names>L</given-names></string-name>, <string-name><surname>Guipouy</surname> <given-names>D</given-names></string-name>, <etal>et al.</etal> <article-title>Signal Integration during T Lymphocyte Activation and Function: Lessons from the Wiskott-Aldrich Syndrome</article-title>. <source>Front Immunol</source> <year>2015</year>;<volume>6</volume>:<fpage>47</fpage>.</mixed-citation></ref>
+<ref id="c16"><label>16.</label><mixed-citation publication-type="journal"><string-name><surname>Martin</surname> <given-names>F</given-names></string-name>, <string-name><surname>Toscano</surname> <given-names>MG</given-names></string-name>, <string-name><surname>Blundell</surname> <given-names>M</given-names></string-name>, <etal>et al.</etal> <article-title>Lentiviral vectors transcriptionally targeted to hematopoietic cells by WASP gene proximal promoter sequences</article-title>. <source>Gene Ther</source> <year>2005</year>;<volume>12</volume>(<issue>8</issue>):<fpage>715</fpage>&#x2013;<lpage>23</lpage>.</mixed-citation></ref>
+<ref id="c17"><label>17.</label><mixed-citation publication-type="other"><string-name><surname>>Navarro-Marchal SG-L</surname>, <given-names>Carmen</given-names></string-name>; <string-name><surname>Entrena</surname>, <given-names>Jose-Manuel</given-names></string-name>; <string-name><surname>Ruiz-Alcala</surname>, <given-names>Gloria</given-names></string-name>; <string-name><surname>Trist&#x00E1;n-Manzano</surname>, <given-names>Maria</given-names></string-name>; <string-name><surname>Mart&#x00ED;n</surname>, <given-names>Francisco</given-names></string-name>; <string-name><surname>P&#x00E9;rez-Victoria</surname>, <given-names>Ignacio</given-names></string-name>; Peula-Garcia, <string-name><given-names>Jos&#x00ED; Manuel;</given-names> <surname>Marchal</surname></string-name>, <string-name><surname>Juan</surname> <given-names>A.</given-names></string-name> <article-title>Anti-CD44-conjugated olive oil liquid nanocapsules for targeting pancreatic cancer stem cells</article-title>. <source>Biomacromolecules</source> <year>2021</year>.</mixed-citation></ref>
+<ref id="c18"><label>18.</label><mixed-citation publication-type="journal"><string-name><surname>Demaison</surname> <given-names>C</given-names></string-name>, <string-name><surname>Parsley</surname> <given-names>K</given-names></string-name>, <string-name><surname>Brouns</surname> <given-names>G</given-names></string-name>, <etal>et al.</etal> <article-title>High-level transduction and gene expression in hematopoietic repopulating cells using a human immunodeficiency [correction of imunodeficiency] virus type 1-based lentiviral vector containing an internal spleen focus forming virus promoter</article-title>. <source>Hum Gene Ther</source> <year>2002</year>;<volume>13</volume>(<issue>7</issue>):<fpage>803</fpage>&#x2013;<lpage>13</lpage>.</mixed-citation></ref>
+<ref id="c19"><label>19.</label><mixed-citation publication-type="journal"><string-name><surname>Castella</surname> <given-names>M</given-names></string-name>, <string-name><surname>Caballero-Banos</surname> <given-names>M</given-names></string-name>, <string-name><surname>Ortiz-Maldonado</surname> <given-names>V</given-names></string-name>, <etal>et al.</etal> <article-title>Point-Of-Care CAR T-Cell Production (ARI-0001) Using a Closed Semi-automatic Bioreactor: Experience From an Academic Phase I Clinical Trial</article-title>. <source>Front Immunol</source> <year>2020</year>;<volume>11</volume>:<fpage>482</fpage>.</mixed-citation></ref>
+<ref id="c20"><label>20.</label><mixed-citation publication-type="journal"><string-name><surname>Mayer</surname> <given-names>B</given-names></string-name>, <string-name><surname>Stahl</surname> <given-names>V</given-names></string-name>, <string-name><surname>Kron</surname> <given-names>M.</given-names></string-name> <article-title>The use of gatekeeping procedures in the statistical planning of animal experiments</article-title>. <source>Altern Lab Anim</source> <year>2017</year>;<volume>45</volume>(<issue>6</issue>):<fpage>317</fpage>&#x2013;<lpage>28</lpage>.</mixed-citation></ref>
+<ref id="c21"><label>21.</label><mixed-citation publication-type="journal"><string-name><surname>Castella</surname> <given-names>M</given-names></string-name>, <string-name><surname>Boronat</surname> <given-names>A</given-names></string-name>, <string-name><surname>Martin-Ibanez</surname> <given-names>R</given-names></string-name>, <etal>et al.</etal> <article-title>Development of a Novel Anti-CD19 Chimeric Antigen Receptor: A Paradigm for an Affordable CAR T Cell Production at Academic Institutions</article-title>. <source>Mol Ther Methods Clin Dev</source> <year>2019</year>;<volume>12</volume>:<fpage>134</fpage>&#x2013;<lpage>44</lpage>.</mixed-citation></ref>
+<ref id="c22"><label>22.</label><mixed-citation publication-type="journal"><string-name><surname>Marofi</surname> <given-names>F</given-names></string-name>, <string-name><surname>Motavalli</surname> <given-names>R</given-names></string-name>, <string-name><surname>Safonov</surname> <given-names>VA</given-names></string-name>, <etal>et al.</etal> <article-title>CAR T cells in solid tumors: challenges and opportunities</article-title>. <source>Stem Cell Res Ther</source> <year>2021</year>;<volume>12</volume>(<issue>1</issue>):<fpage>81</fpage>.</mixed-citation></ref>
+<ref id="c23"><label>23.</label><mixed-citation publication-type="journal"><string-name><surname>Martinez</surname> <given-names>M</given-names></string-name>, <string-name><surname>Moon</surname> <given-names>EK</given-names></string-name>. <article-title>CAR T Cells for Solid Tumors: New Strategies for Finding, Infiltrating, and Surviving in the Tumor Microenvironment</article-title>. <source>Front Immunol</source> <year>2019</year>;<volume>10</volume>:<fpage>128</fpage>.</mixed-citation></ref>
+<ref id="c24"><label>24.</label><mixed-citation publication-type="journal"><string-name><surname>Rodriguez-Garcia</surname> <given-names>A</given-names></string-name>, <string-name><surname>Palazon</surname> <given-names>A</given-names></string-name>, <string-name><surname>Noguera-Ortega</surname> <given-names>E</given-names></string-name>, <etal>et al.</etal> <article-title>CAR-T Cells Hit the Tumor Microenvironment: Strategies to Overcome Tumor Escape</article-title>. <source>Front Immunol</source> <year>2020</year>;<volume>11</volume>:<fpage>1109</fpage>.</mixed-citation></ref>
+<ref id="c25"><label>25.</label><mixed-citation publication-type="other"><string-name><surname>Wagner</surname> <given-names>DL</given-names></string-name>, <string-name><surname>Fritsche</surname> <given-names>E</given-names></string-name>, <string-name><surname>Pulsipher</surname> <given-names>MA</given-names></string-name>, <etal>et al.</etal> <article-title>Immunogenicity of CAR T cells in cancer therapy</article-title>. <source>Nat Rev Clin Oncol</source> <year>2021</year>.</mixed-citation></ref>
+<ref id="c26"><label>26.</label><mixed-citation publication-type="journal"><string-name><surname>Finney</surname> <given-names>OC</given-names></string-name>, <string-name><surname>Brakke</surname> <given-names>HM</given-names></string-name>, <string-name><surname>Rawlings-Rhea</surname> <given-names>S</given-names></string-name>, <etal>et al.</etal> <article-title>CD19 CAR T cell product and disease attributes predict leukemia remission durability</article-title>. <source>J Clin Invest</source> <year>2019</year>;<volume>129</volume>(<issue>5</issue>):<fpage>2123</fpage>&#x2013;<lpage>32</lpage>.</mixed-citation></ref>
+<ref id="c27"><label>27.</label><mixed-citation publication-type="journal"><string-name><surname>Long</surname> <given-names>AH</given-names></string-name>, <string-name><surname>Haso</surname> <given-names>WM</given-names></string-name>, <string-name><surname>Shern</surname> <given-names>JF</given-names></string-name>, <etal>et al.</etal> <article-title>4-1BB costimulation ameliorates T cell exhaustion induced by tonic signaling of chimeric antigen receptors</article-title>. <source>Nat Med</source> <year>2015</year>;<volume>21</volume>(<issue>6</issue>):<fpage>581</fpage>&#x2013;<lpage>90</lpage>.</mixed-citation></ref>
+<ref id="c28"><label>28.</label><mixed-citation publication-type="journal"><string-name><surname>Lee</surname> <given-names>DW</given-names></string-name>, <string-name><surname>Santomasso</surname> <given-names>BD</given-names></string-name>, <string-name><surname>Locke</surname> <given-names>FL</given-names></string-name>, <etal>et al.</etal> <article-title>ASTCT Consensus Grading for Cytokine Release Syndrome and Neurologic Toxicity Associated with Immune Effector Cells</article-title>. <source>Biol Blood Marrow Transplant</source> <year>2019</year>;<volume>25</volume>(<issue>4</issue>):<fpage>625</fpage>&#x2013;<lpage>38</lpage>.</mixed-citation></ref>
+<ref id="c29"><label>29.</label><mixed-citation publication-type="journal"><string-name><surname>Wei</surname> <given-names>J</given-names></string-name>, <string-name><surname>Liu</surname> <given-names>Y</given-names></string-name>, <string-name><surname>Wang</surname> <given-names>C</given-names></string-name>, <etal>et al.</etal> <article-title>The model of cytokine release syndrome in CAR T-cell treatment for B-cell non-Hodgkin lymphoma</article-title>. <source>Signal Transduct Target Ther</source> <year>2020</year>;<volume>5</volume>(<issue>1</issue>):<fpage>134</fpage>.</mixed-citation></ref>
+<ref id="c30"><label>30.</label><mixed-citation publication-type="journal"><string-name><surname>Sterner</surname> <given-names>RM</given-names></string-name>, <string-name><surname>Sakemura</surname> <given-names>R</given-names></string-name>, <string-name><surname>Cox</surname> <given-names>MJ</given-names></string-name>, <etal>et al.</etal> <article-title>GM-CSF inhibition reduces cytokine release syndrome and neuroinflammation but enhances CAR-T cell function in xenografts</article-title>. <source>Blood</source> <year>2019</year>;<volume>133</volume>(<issue>7</issue>):<fpage>697</fpage>&#x2013;<lpage>709</lpage>.</mixed-citation></ref>
+<ref id="c31"><label>31.</label><mixed-citation publication-type="journal"><string-name><surname>Hao</surname> <given-names>Z</given-names></string-name>, <string-name><surname>Li</surname> <given-names>R</given-names></string-name>, <string-name><surname>Meng</surname> <given-names>L</given-names></string-name>, <etal>et al.</etal> <article-title>Macrophage, the potential key mediator in CAR-T related CRS</article-title>. <source>Exp Hematol Oncol</source> <year>2020</year>;<volume>9</volume>:<fpage>15</fpage>.</mixed-citation></ref>
+</ref-list>
+<sec id="s7">
+<title>Physiological (TCR-like) regulated lentiviral vectors for the generation of improved CAR-T cells</title>
+<fig id="ufig1" position="float" fig-type="figure">
+<graphic xlink:href="21253300v1_ufig1.tif"/>
+</fig>
+</sec>
+<glossary>
+<title>List of abbreviations</title>
+<def-list>
+<def-item>
+<term>ATMP</term>
+<def><p>advanced therapy medical product</p></def>
+</def-item>
+<def-item>
+<term>B-ALL</term>
+<def><p>B-acute lymphoblastic leukaemia</p></def>
+</def-item>
+<def-item>
+<term>CAR</term>
+<def><p>Chimeric Antigen Receptor</p></def>
+</def-item>
+<def-item>
+<term>CMV</term>
+<def><p>Cytomegalovirus</p></def>
+</def-item>
+<def-item>
+<term>eGFP</term>
+<def><p>enhanced green fluorescent protein</p></def>
+</def-item>
+<def-item>
+<term>EF1&#x03B1;</term>
+<def><p>Elongation Factor 1-&#x03B1;</p></def>
+</def-item>
+<def-item>
+<term>EMA</term>
+<def><p>European Medicine Agency</p></def>
+</def-item>
+<def-item>
+<term>FDA</term>
+<def><p>Food and Drug administration</p></def>
+</def-item>
+<def-item>
+<term>LVs</term>
+<def><p>Lentiviral vectors</p></def>
+</def-item>
+<def-item>
+<term>LTR</term>
+<def><p>long-terminal repeats</p></def>
+</def-item>
+<def-item>
+<term>MSCV</term>
+<def><p>murine stem cells virus</p></def>
+</def-item>
+<def-item>
+<term>NTD</term>
+<def><p>non-transduced cells</p></def>
+</def-item>
+<def-item>
+<term>R/R</term>
+<def><p>relapsed/ refractory</p></def>
+</def-item>
+<def-item>
+<term>ScFv</term>
+<def><p>Single chain variable fragment</p></def>
+</def-item>
+<def-item>
+<term>SFFV</term>
+<def><p>Spleen focus forming virus</p></def>
+</def-item>
+<def-item>
+<term>TCR</term>
+<def><p>T cell receptor</p></def>
+</def-item>
+<def-item>
+<term>TCM</term>
+<def><p>T central memory</p></def>
+</def-item>
+<def-item>
+<term>TEF</term>
+<def><p>T effectors</p></def>
+</def-item>
+<def-item>
+<term>TEM</term>
+<def><p>T effectors memory</p></def>
+</def-item>
+<def-item>
+<term>TN/SCM</term>
+<def><p>T naive/stem cell memory</p></def>
+</def-item>
+<def-item>
+<term>TRAC</term>
+<def><p>T cell receptor (TCR) constant alpha locus</p></def>
+</def-item>
+<def-item>
+<term>WAS</term>
+<def><p>Wiskott-Aldrich syndrome</p></def>
+</def-item>
+</def-list>
+</glossary>
+</back>
+</article>

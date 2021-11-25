@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.2d1 20170631//EN" "JATS-archivearticle1.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" article-type="article" dtd-version="1.2d1" specific-use="production" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="publisher-id">MEDRXIV</journal-id>
+<journal-title-group>
+<journal-title>medRxiv</journal-title>
+<abbrev-journal-title abbrev-type="publisher">medRxiv</abbrev-journal-title>
+</journal-title-group>
+<publisher>
+<publisher-name>Cold Spring Harbor Laboratory</publisher-name>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1101/2021.01.13.21249779</article-id>
+<article-version>1.4</article-version>
+<article-categories>
+<subj-group subj-group-type="hwp-journal-coll">
+<subject>Infectious Diseases (except HIV/AIDS)</subject>
+</subj-group>
+</article-categories>
+<title-group>
+<article-title>Evaluating the Long-Term Efficacy of COVID-19 Vaccines</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" corresp="yes">
+<name><surname>Lin</surname><given-names>Dan-Yu</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="corresp" rid="cor1">&#x002A;</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Zeng</surname><given-names>Donglin</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Gilbert</surname><given-names>Peter B.</given-names></name>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<aff id="a1"><label>1</label><institution>Department of Biostatistics, University of North Carolina</institution>, Chapel Hill, North Carolina, <country>USA</country></aff>
+<aff id="a2"><label>2</label><institution>Vaccine and Infectious Disease Division</institution>, Fred Hutch, Seattle, Washington, <country>USA</country></aff>
+</contrib-group>
+<author-notes>
+<corresp id="cor1"><label>&#x002A;</label>Correspondence: Dan-Yu Lin, PhD, Department of Biostatistics, University of North Carolina, Chapel Hill, NC 27599-7420, USA (<email>lin@bios.unc.edu</email>).</corresp>
+</author-notes>
+<pub-date pub-type="epub">
+<year>2021</year>
+</pub-date>
+<elocation-id>2021.01.13.21249779</elocation-id>
+<history>
+<date date-type="received">
+<day>13</day>
+<month>1</month>
+<year>2021</year>
+</date>
+<date date-type="rev-recd">
+<day>08</day>
+<month>3</month>
+<year>2021</year>
+</date>
+<date date-type="accepted">
+<day>09</day>
+<month>3</month>
+<year>2021</year>
+</date>
+</history>
+<permissions>
+<copyright-statement>&#x00A9; 2021, Posted by Cold Spring Harbor Laboratory</copyright-statement>
+<copyright-year>2021</copyright-year>
+<license><license-p>The copyright holder for this pre-print is the author. All rights reserved. The material may not be redistributed, re-used or adapted without the author's permission.</license-p></license>
+</permissions>
+<self-uri xlink:href="21249779.pdf" content-type="pdf" xlink:role="full-text"/>
+<abstract>
+<title>Abstract</title>
+<p>Large-scale deployment of safe and durably effective vaccines can curtail the COVID-19 pandemic.<sup>1&#x2212;3</sup> However, the high vaccine efficacy (VE) reported by ongoing phase 3 placebo-controlled clinical trials is based on a median follow-up time of only about two months<sup>4&#x2212;5</sup> and thus does not pertain to long-term efficacy. To evaluate the duration of protection while allowing trial participants timely access to efficacious vaccine, investigators can sequentially cross participants over from the placebo arm to the vaccine arm according to priority groups. Here, we show how to estimate potentially time-varying placebo-controlled VE in this type of staggered vaccination of participants. In addition, we compare the performance of blinded and unblinded crossover designs in estimating long-term VE.</p><sec>
+<title>Authors&#x2019; Information</title>
+<p>Dan-Yu Lin, Ph.D., is Dennis Gillings Distinguished Professor of Biostatistics, and Donglin Zeng, Ph.D., is Professor of Biostatistics, Gillings School of Global Public Health, University of North Carolina, Chapel Hill, NC 27599-7420, USA. Peter B. Gilbert, Ph.D., is Member, Vaccine and Infectious Disease Division, Fred Hutch, Seattle, WA 98109-1024, USA.</p></sec>
+<sec>
+<title>Summary</title>
+<p>We show how to estimate the potentially waning long-term efficacy of COVID-19 vaccines using data from randomized, placebo-controlled clinical trials with staggered enrollment of participants and sequential crossover of placebo recipients.</p>
+</sec>
+</abstract>
+<kwd-group kwd-group-type="author">
+<title>Keywords</title>
+<kwd>booster vaccination</kwd>
+<kwd>durability of vaccine efficacy</kwd>
+<kwd>phase 3 trials</kwd>
+<kwd>SARS-CoV-2</kwd>
+<kwd>severe COVID-19</kwd>
+<kwd>waning efficacy</kwd>
+</kwd-group>
+<counts>
+<page-count count="33"/>
+</counts>
+</article-meta>
+<notes>
+<notes notes-type="competing-interest-statement">
+<title>Competing Interest Statement</title><p>The authors have declared no competing interest.</p></notes>
+<notes notes-type="clinical-trial-statement">
+<title>Clinical Trial</title><p>N/A</p></notes>
+<notes notes-type="financial-disclosure">
+<title>Funding Statement</title><p>National Institutes of Health grants R01 AI029168, R01 GM124104, and UM1 AI068635.
+</p></notes>
+<notes notes-type="disclosures">
+<title>Author Declarations</title><p>I confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.</p><p>Yes</p><p>The details of the IRB/oversight body that provided approval or exemption for the research described are given below:</p><p>N/A</p><p>All necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived.</p><p>Yes</p><p>I understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).</p><p>Yes</p><p>I have followed all appropriate research reporting guidelines and uploaded the relevant EQUATOR Network research reporting checklist(s) and other pertinent material as supplementary files, if applicable.</p><p>Yes</p></notes>
+<fn-group content-type="summary-of-updates">
+<title>Summary of Updates:</title>
+<fn fn-type="update"><p>Added methods and results for estimating vaccine efficacy over successive time intervals.
+</p></fn>
+</fn-group>
+</notes>
+</front>
+<body>
+<sec id="s1">
+<title>Introduction</title>
+<p>A number of studies have been conducted around the world to evaluate the efficacy and safety of investigational vaccines against novel coronavirus disease-2019 (COVID-19).<sup><xref ref-type="bibr" rid="c4">4</xref>&#x2212;<xref ref-type="bibr" rid="c12">12</xref></sup> Interim results from several large-scale phase 3 randomized, observer-blinded, placebo-controlled clinical trials have demonstrated high VE,<sup><xref ref-type="bibr" rid="c4">4</xref>&#x2212;<xref ref-type="bibr" rid="c6">6</xref></sup> far exceeding the FDA and WHO thresholds of 50% reduction of symptomatic disease.<sup><xref ref-type="bibr" rid="c13">13</xref>&#x2212;<xref ref-type="bibr" rid="c14">14</xref></sup> However, those trials have been underway for only several months, and the data they have collected thus far can only speak to short-term VE. For example, the recently published results for the Pfizer/BioNTech vaccine BNT162b2 and the Moderna vaccine mRNA-1273 are based on a median follow-up time of approximately two months after the second dose;<sup><xref ref-type="bibr" rid="c4">4</xref>&#x2212;<xref ref-type="bibr" rid="c5">5</xref></sup> therefore, the reported 94-95% VE pertains only to an average of two months post vaccination.</p>
+<p>Vaccine effect can wane over time because of declining immunologic memory or changing antigenicity of the pathogen. A vaccination can be followed with booster doses to maintain a protective level of immunity among susceptible individuals, but the nature of the protection over time must be understood so that an effective vaccination and boosting schedule can be determined. Thus, after FDA issues an Emergency Use Authorization (EUA), vaccine sponsors should continue to collect placebo-controlled data on primary endpoints in any ongoing trials for as long as feasible.<sup><xref ref-type="bibr" rid="c15">15</xref></sup></p>
+<p>Although continuing blinded follow-up of the original treatment arms is the ideal way to evaluate long-term efficacy and safety, placebo recipients should be offered the vaccine at some point after an EUA. One strategy is the &#x201C;rolling crossover&#x201D;, which vaccinates placebo recipients around the same time as general population members in the same priority tier. Under this design, placebo participants are vaccinated at different times, with the timing of vaccination depending on enrollment characteristics that define their priority tier.</p>
+<p>Because participants are vaccinated at different times and community transmission of SARS-CoV-2 virus changes over time, existing statistical methods &#x2014; which assume that trial participants are vaccinated at the same time or that community transmission is constant over time &#x2014; do not produce valid estimates of long-term VE in the presence of waning vaccine effect. In fact, participants in COVID-19 vaccine trials are enrolled over several months and thus are randomized to the vaccine and placebo groups at different times; therefore, the timing of vaccination varies among vaccinees even if the placebo group is maintained throughout the study.</p>
+<p>At the time of interim analysis, there were 8 and 162 symptomatic COVID-19 cases in the BNT162b2 vaccine and placebo groups, respectively,<sup><xref ref-type="bibr" rid="c4">4</xref></sup> such that standard methods would estimate VE at 95%. Because of staggered enrollment and time-varying community transmission, this estimate is difficult to interpret if the VE wanes over time. (Adjustment for the participant&#x2019;s follow-up time would not change the estimate since the person years of follow-up are the same between the vaccine and placebo groups. Due to relatively low disease incidence, standard Poisson and Cox models would yield the same estimate.<sup><xref ref-type="bibr" rid="c16">16</xref></sup>)</p>
+<p>In this article, we show how to properly assess the durability of VE under staggered enrollment and time-varying community transmission, allowing higher-risk placebo volunteers to get vaccinated earlier than lower-risk ones during the crossover period. Our framework provides unbiased estimation of the entire curve of placebo-controlled VE as a function of time elapsed since vaccination, up to the point where most of the placebo volunteers have been vaccinated. We investigate the bias and precision of our approach in estimating long-term VE under various crossover designs, including blinded crossover, in which participants do not know the order of treatments they receive, and unblinded crossover, in which participants are notified of their randomization assignments at the time of crossover. We also discuss how to perform sensitivity analysis when unblinded follow-up data are used.</p>
+</sec>
+<sec id="s2">
+<title>Methods</title>
+<p><xref rid="fig1" ref-type="fig">Figure 1</xref> provides a schematic illustration of the rolling crossover strategy in the context of COVID-19 vaccine trials. In this scenario, participants are screened and randomly assigned to vaccine or placebo over a 4-month period, the vaccine is granted EUA in the 5th month on the basis of interim results, and crossover occurs over the next five months. This design provides information about VE for 10 months. We aim to estimate time-varying VE under any crossover design, up to the point when there are very few placebo participants left.</p>
+<fig id="fig1" position="float" fig-type="figure">
+<label>Figure 1.</label>
+<caption><p>A phase 3 COVID-19 vaccine trial. Participants are enrolled over a 4-month period, EUA is issued at month 5, and crossover occurs over months 6&#x2013;10. The top two lines represent a participant who is vaccinated at month 2 and does not develop symptomatic COVID-19 during the trial, and the bottom two lines represent a participant who is vaccinated at month 7 and develops symptomatic COVID-19 at month 9.</p></caption>
+<graphic xlink:href="21249779v4_fig1.tif"/>
+</fig>
+<p>The endpoint of interest is time to symptomatic COVID-19 disease. We allow the risk of disease to vary over the calendar time and to depend on baseline risk factors, such as age, sex, ethnicity, race, occupation, and underlying health conditions; we allow the effect of vaccine on disease occurrence to depend on the time elapsed since vaccination.</p>
+<p>We consider two definitions of time-varying VE: (1) day-<italic>t</italic> VE is the percentage reduction in the hazard rate or instantaneous risk of disease at day <italic>t</italic> for those who were vaccinated <italic>t</italic> days ago compared with those who have not been vaccinated; and (2) <italic>t</italic>-day VE is the percentage reduction in the attack rate or cumulative incidence of disease over the <italic>t</italic>-day period for those who were vaccinated at the start of the period compared with those who were unvaccinated throughout the period. We denote these two VE measures by VE<sub>h</sub> and VE<sub>a</sub>, where h and a stand for hazard rate and attack rate, respectively. These two definitions are equivalent when the effect of vaccine is constant over time. If the effect of vaccine wanes over time, then VE<sub>a</sub> is larger than VE<sub>h</sub>.</p>
+<p>In <xref ref-type="sec" rid="s5a">Supplemental Appendix 1</xref>, we formulate the above concepts through an adaptation of the well-known Cox regression model,<sup><xref ref-type="bibr" rid="c17">17</xref>&#x2212;<xref ref-type="bibr" rid="c18">18</xref></sup> in which each participant&#x2019;s time to disease occurrence is measured from a common origin, namely the start of the clinical trial, and the hazard ratio of vaccine versus placebo depends on the time elapsed since vaccination. We formally define VE<sub>a</sub> as one minus the time-averaged hazard ratio, which is approximately the ratio of the cumulative incidence. We derive the maximum likelihood estimator for VE<sub>a</sub> as a function of time elapsed since vaccination. We show that the estimator is approximately unbiased and normally distributed, with a variance that can be estimated analytically, enabling one to construct valid confidence intervals for the VE<sub>a</sub> curve. Finally, we propose a method to estimate VE<sub>h</sub> by kernel-smoothing the estimate of VE<sub>a</sub>.</p>
+</sec>
+<sec id="s3">
+<title>Results</title>
+<p>We conducted a set of simulation studies mimicking the BNT162b2 vaccine trial. We considered 40,000 participants, who entered the trial at a constant rate over a 4-month period and were randomly assigned to vaccine or placebo in a 1:1 ratio. The vaccine received an EUA from FDA at the 5th month, by which time there were about 300 COVID-19 cases in the placebo group. To reflect the increase of COVID-19 cases since last summer and the expected downward trend in the spring due to vaccine rollout and other factors, we let the disease risk increase over the first 7 months and decrease afterward. We chose three combinations of 5-month VE and 10-month VE: (a) VE<sub>a</sub>(5 mos.) &#x003D; VE<sub>a</sub>(10 mos.) &#x003D; 95%; (b) VE<sub>a</sub>(5 mos.) &#x003D; 85%, VE<sub>a</sub>(10 mos.) &#x003D; 75%; and (c) VE<sub>a</sub>(5 mos.) &#x003D; 70%, VE<sub>a</sub>(10 mos.) &#x003D; 50%.</p>
+<p>We considered the statistically optimal design of keeping all participants on their original treatment assignments until the end of the trial. We refer to this design as Plan A and regard it as a benchmark. We also considered three blinded crossover designs:</p>
+<p>B. Crossover starts at month 6, 7, 8, 9, or 10 for participants with priority tier of 1, 2, 3, 4, or 5, respectively, with each participant&#x2019;s waiting time for the clinic visit following the exponential distribution with mean of 0.5 month.</p>
+<p>C. 20% of participants follow Plan A, and the rest follow Plan B.</p>
+<p>D. Crossover starts at month 6 for all participants, with the waiting time following the exponential distribution with mean of 0.5 month.</p>
+<p>Both B and C are priority tier-dependent rolling crossover designs. The difference is that under Plan B, all placebo recipients cross over to the vaccine arm, whereas under Plan C, 20% of participants choose for altruistic reasons to stay on their original treatment assignments. Under Plan D, all placebo recipients are vaccinated quickly without any priority tiering. With blinded crossover, placebo participants receive the vaccine and vaccine participants receive the placebo at the point of crossover; none of the participants are aware of the order of their treatments. All participants are followed until the end of the trial or the time of analysis, which is 10.5 months since trial initiation. The designs of these simulation studies are detailed in <xref ref-type="sec" rid="s6">Supplemental Appendix 2</xref>.</p>
+<p>The results for the estimation of VE<sub>a</sub> based on 10,000 simulated datasets are summarized in <xref rid="tbl1" ref-type="table">Table 1</xref> and <xref rid="fig2" ref-type="fig">Figure 2</xref>. The proposed method yields virtually unbiased estimates of the VE<sub>a</sub> curves over the 10-month period for Plans A&#x2013;C in all three scenarios of long-term VE; it also yields accurate variance estimates, such that the confidence intervals have correct coverage probabilities. When VE is constant over time, the standard errors for the estimates of VE<sub>a</sub> under Plans B and C are slightly lower than those of Plan A. When VE wanes over time, the standard errors for the estimates of 5-month VE<sub>a</sub> under Plans B and C are also slightly lower than those of Plan A; however, the standard errors for the estimates of 10-month VE<sub>a</sub> under Plans B and C are higher than those of Plan A, with the standard errors being slightly lower under Plan C than under Plan B. Under Plan D, the estimates of 10-month VE<sub>a</sub> may be slightly biased, with higher standard errors than under Plans A&#x2013;C; these results are not surprising, because under this plan, the number of unvaccinated participants diminishes rapidly after month 6.</p>
+<table-wrap id="tbl1" orientation="portrait" position="float">
+<label>Table 1.</label>
+<caption><p><bold>Estimation of Time-Varying</bold> VE<sub>a</sub> <bold>by the Proposed and Standard Methods Under No Crossover (A) and Three Blinded Crossover Plans (B&#x2013;D)</bold></p></caption>
+<graphic xlink:href="21249779v4_tbl1.tif"/>
+</table-wrap>
+<fig id="fig2" position="float" fig-type="figure">
+<label>Figure 2.</label>
+<caption><p>Proposed estimates of VE<sub>a</sub> under no crossover and three blinded crossover plans.</p></caption>
+<graphic xlink:href="21249779v4_fig2.tif"/>
+</fig>
+<p>We also evaluated the performance of standard Cox regression,<sup><xref ref-type="bibr" rid="c17">17</xref>&#x2212;<xref ref-type="bibr" rid="c18">18</xref></sup> using vaccine status as a potentially time-dependent covariate with a constant hazard ratio. Because it estimates an overall VE among individuals who have been vaccinated for different amounts of time, this method over-estimates long-term VE when VE decreases over time, although the estimation is unbiased when VE is constant over time. Even though the results for standard Cox regression are shown in the &#x201C;10-mos.&#x201D; row of the table, the estimates do not pertain to the hazard ratio at month 10 or to the average hazard ratio over the first 10 months. In scenario (c), where 10-month VE<sub>a</sub> equals 50% and month-10 VE<sub>h</sub> equals &#x2013;3.8%, standard Cox regression yields mean VE estimates of 57.2%, 64.0%, 62.5%, and 69.5% under Plans A, B, C, and D, respectively; the poor performance under Plan A highlights the fact that standard Cox regression does not properly capture waning VE even when all placebo recipients remain on their original assignments until the end of the trial.</p>
+<p>We conducted a second set of simulation studies by considering four unblinded crossover designs:</p>
+<p>B&#x2019;. Crossover occurs at month 6.5, 7.5, 8.5, 9.5, or 10.5 for participants with priority tier of 1, 2, 3, 4, or 5, respectively.</p>
+<p>C&#x2019;. 20% of participants follow Plan A, and the rest follow Plan B&#x2019;. D&#x2019;. Crossover occurs at month 6.5 for all participants.</p>
+<p>D&#x201D;. Crossover starts at month 6 for all participants, with the waiting time following the exponential distribution with mean of 0.5 month.</p>
+<p>With unblinded crossover, participants are notified of their original treatment assignments at the point of crossover, and placebo recipients are vaccinated soon after. In Plan B&#x2019;, everyone in a given priority-tier group is notified of their original treatment assignment on the same day. In Plan D&#x2019;, all participants are notified of their original treatment assignments on the same day. In Plan D&#x201D;, participants are notified of their randomization assignments without priority tiering; the timing of crossover is the same as that of Plan D. Plan D&#x201D; was meant to mimic the crossover that has been occurring in the two mRNA vaccine trials, where participants have been unblinded gradually.</p>
+<p>Because vaccine recipients may engage in riskier behavior upon unblinding and placebo recipients may also change their behavior upon unblinding (in a manner that likely differs from vaccine recipients), we discarded the data collected after unblinding for both the vaccine and placebo groups by censoring each participant&#x2019;s time to disease at their time of unblinding. This strategy avoids any bias due to behavioral confounding.</p>
+<p>The results for the estimation of VE<sub>a</sub> based on 10,000 simulated datasets are summarized in <xref rid="tbl2" ref-type="table">Table 2</xref> and <xref rid="fig3" ref-type="fig">Figure 3</xref>. The proposed method yields unbiased estimates of the VE<sub>a</sub> curves under Plans B&#x2019; and C&#x2019;, but the standard errors for estimates of long-term VE are markedly higher than under Plans B and C; the standard errors estimates are accurate only up to month 8. Under Plan D&#x2019;, where all placebo recipients are vaccinated at month 6.5, the estimates of 5-month VE<sub>a</sub> are unbiased; however, the estimates of 8-month or 10-month VE<sub>a</sub> are biased, especially when VE wanes over time. (Using the unblinded data would not reduce the bias in estimating long-term VE because there are no placebo participants beyond month 6.5.) Of note, the bias of standard Cox regression in estimating waning VE is more severe under unblinded crossover than under blinded crossover. This result reflects the fact that standard statistical methods do not provide valid estimates of waning VE even in the absence of crossover &#x2014; because time to disease is censored at time of unblinding, there is no actual crossover of treatments in this analysis.</p>
+<table-wrap id="tbl2" orientation="portrait" position="float">
+<label>Table 2.</label>
+<caption><p><bold>Estimation of Time-Varying</bold> VE<sub>a</sub> <bold>by the Proposed and Standard Methods Under Four Unblinded Crossover Plans</bold></p></caption>
+<graphic xlink:href="21249779v4_tbl2.tif"/>
+</table-wrap>
+<fig id="fig3" position="float" fig-type="figure">
+<label>Figure 3.</label>
+<caption><p>Proposed estimates of VE<sub>a</sub> under four unblinded crossover plans.</p></caption>
+<graphic xlink:href="21249779v4_fig3.tif"/>
+</fig>
+<p>The results under Plan D&#x201D; are encouraging: the estimates of the VE<sub>a</sub> curves have little bias, and the standard errors are accurately estimated, such that confidence intervals have proper coverage probabilities &#x2014; at least for the first 8 months. The timing of crossover is the same between Plans D and D&#x201D;; however, we disregarded the follow-up data collected after unblinding, such that the precision of estimates is lower under Plan D&#x201D; than under Plan D. Although the mean time to crossover under Plan D&#x201D; is the same as that of Plan D&#x2019;, crossover spreads over a longer period under Plan D&#x201D;, making it possible to estimate long-term VE.</p>
+<p><xref rid="fig4" ref-type="fig">Figures 4</xref> and <xref rid="fig5" ref-type="fig">5</xref> show the results for estimating VE<sub>h</sub> from the first and second sets of simulation studies, respectively. Under Plans A&#x2013;D, the estimates of the VE<sub>h</sub> curves are virtually unbiased, at least up to month 9. Under Plans B&#x2019; and C&#x2019;, the VE<sub>h</sub> estimates are nearly unbiased up to month 8. Under Plan D&#x2019;, VE<sub>h</sub> is estimated well until month 5. Under Plan D&#x201D;, the estimates of the VE<sub>h</sub> curves are virtually unbiased, except for the last 2 months in scenario (a).</p>
+<fig id="fig4" position="float" fig-type="figure">
+<label>Figure 4.</label>
+<caption><p>Proposed estimates of VE<sub>h</sub> under no crossover and three blinded crossover plans.</p></caption>
+<graphic xlink:href="21249779v4_fig4.tif"/>
+</fig>
+<fig id="fig5" position="float" fig-type="figure">
+<label>Figure 5.</label>
+<caption><p>Proposed estimates of VE<sub>h</sub> under four unblinded crossover plans.</p></caption>
+<graphic xlink:href="21249779v4_fig5.tif"/>
+</fig>
+<p><xref rid="fig6" ref-type="fig">Figure 6</xref> displays the estimation results for VE<sub>a</sub> produced by the proposed methods in one of the trials simulated with 75% 10-month VE<sub>a</sub>. The estimates of VE<sub>a</sub> are close to the truth, and the 95% confidence intervals cover the truth up to the end of crossover. In terms of estimating long-term VE<sub>a</sub>, Plan C is nearly as good as Plan A and is slightly better than Plan B, which is better than Plan D; Plans B, C, and D are considerably better than Plans B&#x2019;, C&#x2019;, and D&#x2019;, respectively; and Plan D&#x201D; is much better than Plan D&#x2019;.</p>
+<fig id="fig6" position="float" fig-type="figure">
+<label>Figure 6.</label>
+<caption><p>Estimation of VE<sub>a</sub> a clinical trial with no crossover (A), three blinded crossover (B&#x2013;D), and four unblinded crossover (B&#x2019;&#x2013;D&#x201D;): the black curve pertains to the true value, the red curve to the proposed estimate, and the green curves to the 95% confidence intervals.</p></caption>
+<graphic xlink:href="21249779v4_fig6.tif"/>
+</fig>
+<p><xref rid="fig7" ref-type="fig">Figure 7</xref> presents the analysis results for VE<sub>h</sub> from the same trial. The estimates are close to the truth up to the point where there are still a few placebo participants under follow-up. The estimates are more bumpy under unblinded than blinded crossover. Comparing <xref rid="fig6" ref-type="fig">Figures 6</xref> and <xref rid="fig7" ref-type="fig">7</xref> shows that VE<sub>h</sub> is much lower than VE<sub>a</sub> in the presence of waning vaccine effect.</p>
+<fig id="fig7" position="float" fig-type="figure">
+<label>Figure 7.</label>
+<caption><p>Estimation of VE<sub>h</sub> a clinical trial with no crossover (A), three blinded crossover (B&#x2013;D), and four unblinded crossover (B&#x2019;&#x2013;D&#x201D;): the black curve pertains to the true value, and the red curve to the proposed estimate.</p></caption>
+<graphic xlink:href="21249779v4_fig7.tif"/>
+</fig>
+</sec>
+<sec id="s4">
+<title>Discussion</title>
+<p>For a preventive COVID-19 vaccine to be administered to millions of people, including healthy individuals, its safety and efficacy must be demonstrated in a clear and compelling manner. Although preliminary results from ongoing phase 3 clinical trials have revealed higher than expected efficacy of COVID-19 vaccines,<sup><xref ref-type="bibr" rid="c4">4</xref>&#x2013;<xref ref-type="bibr" rid="c6">6</xref></sup> additional follow-up is required to assess long-term efficacy and safety. Indeed, FDA does not consider issuance of an EUA, in and of itself, as grounds for stopping blinded follow-up in an ongoing clinical trial.<sup><xref ref-type="bibr" rid="c15">15</xref></sup></p>
+<p>We recommend the rolling crossover design, which allows placebo volunteers to be vaccinated in a timely manner while still making it possible to assess long-term vaccine safety and efficacy. As our simulation studies have shown, standard Cox regression with a constant hazard ratio seriously over-estimates long-term VE in the presence of waning vaccine effect. We have developed a valid and efficient approach to evaluate the effect of a COVID-19 vaccine that potentially wanes over time. The estimated curve of time-varying VE can be used to determine when a booster vaccination is needed to sustain protection; this information is also an important input parameter in mathematical modeling of the population impact of COVID-19 vaccines.</p>
+<p>We have considered vaccine effects on cumulative incidence and on instantaneous risk. It is also of interest to study vaccine effects over successive time periods. We present the method and results for estimating period-specific VE in <xref ref-type="sec" rid="s5a">Supplemental Appendices 1</xref> and <xref ref-type="sec" rid="s6">2</xref>.</p>
+<p>To ensure high-quality follow-up data, crossover should ideally be blinded, with participants not knowing their treatment assignments even after crossover. It is advantageous, when possible, to implement crossover on a rolling basis rather than instantaneously since time-varying VE can be estimated (without adding assumptions) only up to the point where there are still a few placebo recipients under follow-up. Indeed, rolling crossover is even more important than blinding for the express purpose of assessing long-term VE without imposing additional assumptions.</p>
+<p>Of course, unblinded crossover has practical benefits over blinded crossover: it reduces operational complexity and trial cost. However, unblinding can lead to differential exposure to SARS-CoV-2 between the original vaccinees and the placebo crossovers, which in turn can bias the estimation of VE. This bias can be avoided by analyzing only the blinded follow-up data. However, discarding the unblinded follow-up data may substantially reduce the precision in estimating long-term VE. We may estimate VE twice, once with all follow-up data and once with only blinded follow-up data, and compare the two sets of results.</p>
+<p>Alternatively, our methods can be applied to all follow-up data, followed by a sensitivity analysis to assess the robustness of the results to potential unmeasured confounding caused by unblinding of trial participants. In <xref ref-type="sec" rid="s7">Supplemental Appendix 3</xref>, we show how to apply a best-practice general methodology in epidemiological research<sup><xref ref-type="bibr" rid="c19">19</xref>&#x2212;<xref ref-type="bibr" rid="c20">20</xref></sup> to perform this sensitivity analysis. Using this methodology, we can assess how strong unmeasured confounding due to unblinding would need to be in order to fully explain away the observed VE. We can also provide a conservative estimate of VE that accounts for unmeasured confounding.</p>
+<p>Recently, Follmann et al <sup><xref ref-type="bibr" rid="c21">21</xref></sup> advocated blinded crossover and continued follow-up of trial participants to assess vaccine durability and potential delayed enhancement of disease. They estimated an overall VE for the original vaccine arm in the post-crossover period (after all placebo volunteers were vaccinated) by imputing the case count for a counter-factual placebo group under certain assumptions. We address the issue of VE durability in a different way, using observed data to estimate the entire curve of VE as a function of time elapsed since vaccination, up to the point where most participants have been vaccinated. Our approach requires minimal assumptions and is applicable to both blinded and unblinded crossover plans, with any length of additional follow-up.</p>
+<p>The methods we have described assess overall VE against all viral variants of COVID-19. The results may be difficult to interpret if the distribution of viral variants changes during the trial, because waning VE might be caused by increasing prevalence of resistant variants while VE against specific variants remains constant. It is possible to address this challenge if SARS-CoV-2 sequences from all COVID-19 cases are measured. Our methods can then be applied to the subset of COVID-19 cases caused by each specific variant or set of variants. Conducting this analysis for each spectrum of viral genotypes provides interpretable results on the durability of VE.</p>
+<p>Although we have focused on VE in the entire study population, we can also estimate VE for various subgroups, such as age group, sex, and race/ethnic group, by applying our methods to a subset of participants. Because we allow the effect of vaccination to vary over time in an arbitrary manner, however, our estimates of long-term VE may be unstable if there are only a small number of cases in a subgroup. To alleviate this problem, we may formulate the time-varying hazard ratio through a parametric (e.g., log-linear) function, which is then allowed to interact with subgroups.</p>
+<p>We have targeted VE over the first 10 months for several reasons. First, it is unlikely that there will be any placebo volunteers beyond month 10 in the ongoing COVID-19 vaccine trials, and follow-up data in the absence of a placebo arm do not provide direct information about VE durability. Second, estimates of long-term VE will become more uncertain as community transmission decreases.</p>
+<p>Although we have framed the discussion in the context of randomized, placebo-controlled phase 3 trials, our methods do not require the designation of vaccine and placebo groups; instead, everyone is considered a potential vaccinee, with the only distinction being <italic>when</italic> they are vaccinated. This general framework can be applied to surveillance data in order to estimate the risk of disease as a function of time elapsed since vaccination in the &#x201C;real world&#x201D;. With the large volume of surveillance data, we can estimate the effectiveness of vaccination in various sub-populations and against different viral variants, as well as the duration of any protective effect. Causal interpretations of results, however, require the timing of vaccination to depend only on observed covariates. If it is impossible to measure the key timing factors or inappropriate to include them as covariates in the model, then the aforementioned sensitivity analysis would be warranted.</p>
+<p>We have implemented the methods described in this paper in an R package, which is available at <ext-link ext-link-type="uri" xlink:href="https://dlin.web.unc.edu/software/dove/">https://dlin.web.unc.edu/software/dove/</ext-link>.</p>
+</sec>
+</body>
+<back>
+<sec sec-type="data-availability">
+<title>Data Availability</title>
+<p>N/A</p>
+<p>
+<ext-link ext-link-type="uri" xlink:href="https://dlin.web.unc.edu/software/dove/">https://dlin.web.unc.edu/software/dove/</ext-link>
+</p>
+</sec>
+<ack>
+<title>Acknowledgments</title>
+<p>The authors are grateful to Yu Gu and Bridget I. Lin for assistance, to Thomas Fleming, David Harrington, and Ross Prentice for helpful discussions, and to the editors and two referees for fast reviews. This work was supported by the National Institutes of Health grants R01 AI029168, R01 GM124104, P01 CA142538, and UM1 AI068635.</p>
+</ack>
+<ref-list>
+<title>References</title>
+<ref id="c1"><label>1.</label><mixed-citation publication-type="journal"><string-name><surname>Krause</surname> <given-names>P</given-names></string-name>, <string-name><surname>Fleming</surname>, <given-names>TR</given-names></string-name>, <string-name><surname>Longini</surname> <given-names>I</given-names></string-name>, <etal>et al</etal> (<year>2020</year>). <article-title>COVID-19 vaccine trials should seek worthwhile efficacy</article-title>. <source>Lancet</source>, <volume>396</volume>:<fpage>741</fpage>&#x2013;<lpage>3</lpage>.</mixed-citation></ref>
+<ref id="c2"><label>2.</label><mixed-citation publication-type="journal"><string-name><surname>Cohen</surname> <given-names>MS</given-names></string-name>, <string-name><surname>Corey</surname> <given-names>L</given-names></string-name> (<year>2020</year>). <article-title>Combination prevention for COVID-19</article-title>. <source>Science</source> <volume>368</volume>: <fpage>551</fpage>.</mixed-citation></ref>
+<ref id="c3"><label>3.</label><mixed-citation publication-type="journal"><string-name><surname>Corey</surname> <given-names>L</given-names></string-name>, <string-name><surname>Mascola</surname> <given-names>JR</given-names></string-name>, <string-name><surname>Fauci</surname> <given-names>AS</given-names></string-name>, <string-name><surname>Collins</surname> <given-names>FS</given-names></string-name> (<year>2020</year>). <article-title>A strategic approach to COVID-19 vaccine R&#x0026;D</article-title>. <source>Science</source> <volume>368</volume>: <fpage>948</fpage>&#x2013;<lpage>50</lpage>.</mixed-citation></ref>
+<ref id="c4"><label>4.</label><mixed-citation publication-type="journal"><string-name><surname>Polack</surname> <given-names>FP</given-names></string-name>, <string-name><surname>Thomas</surname> <given-names>SJ</given-names></string-name>, <string-name><surname>Kitchin</surname> <given-names>N</given-names></string-name>, <etal>et al</etal> (<year>2021</year>). <article-title>Safety and efficacy of the BNT162b2 mRNA Covid-19 vaccine</article-title>. <source>New Eng J Med</source>, <volume>383</volume>:<fpage>2603</fpage>&#x2013;<lpage>15</lpage>.</mixed-citation></ref>
+<ref id="c5"><label>5.</label><mixed-citation publication-type="journal"><string-name><surname>Baden</surname> <given-names>LR</given-names></string-name>, <string-name><surname>El Sahly</surname> <given-names>HM</given-names></string-name>, <string-name><surname>Essink</surname> <given-names>B</given-names></string-name>, <etal>et al</etal> (<year>2021</year>). <article-title>Efficacy and safety of the mRNA-1273 SARS-CoV-2 vaccine</article-title>. <source>New Eng J Med</source>, <volume>384</volume>:<fpage>403</fpage>&#x2013;<lpage>16</lpage>.</mixed-citation></ref>
+<ref id="c6"><label>6.</label><mixed-citation publication-type="journal"><string-name><surname>Voysey</surname> <given-names>M</given-names></string-name>, <string-name><surname>Clemens</surname> <given-names>SAC</given-names></string-name>, <string-name><surname>Madhi</surname> <given-names>SA</given-names></string-name>, <etal>et al</etal> (<year>2021</year>). <article-title>Safety and efficacy of the ChA-dOx1 nCoV-19 vaccine (AZD1222) against SARS-CoV-2: an interim analysis of four randomised controlled trials in Brazil, South Africa, and the UK</article-title>. <source>Lancet</source>, <volume>397</volume>:<fpage>99</fpage>&#x2013;<lpage>111</lpage>.</mixed-citation></ref>
+<ref id="c7"><label>7.</label><mixed-citation publication-type="journal"><string-name><surname>Xia</surname> <given-names>S</given-names></string-name>, <string-name><surname>Duan</surname> <given-names>K</given-names></string-name>, <string-name><surname>Zhang</surname> <given-names>Y</given-names></string-name>, <etal>et al</etal> (<year>2020</year>). <article-title>Effect of an inactivated vaccine against SARS-CoV-2 on safety and immunogenicity outcomes: Interim analysis of 2 randomized clinical trials</article-title>. <source>J Am Med Ass</source>, <volume>324</volume>:<fpage>951</fpage>&#x2013;<lpage>60</lpage>.</mixed-citation></ref>
+<ref id="c8"><label>8.</label><mixed-citation publication-type="journal"><string-name><surname>Jackson</surname> <given-names>LA</given-names></string-name>, <string-name><surname>Anderson</surname> <given-names>EJ</given-names></string-name>, <string-name><surname>Rouphael</surname> <given-names>NG</given-names></string-name>, <etal>et al</etal> (<year>2020</year>). <article-title>An mRNA vaccine against SARS-CoV-2 &#x2013; Preliminary report</article-title>. <source>New Eng J Med</source>, <volume>383</volume>:<fpage>1920</fpage>&#x2013;<lpage>31</lpage>.</mixed-citation></ref>
+<ref id="c9"><label>9.</label><mixed-citation publication-type="journal"><string-name><surname>Folegatti</surname> <given-names>PM</given-names></string-name>, <string-name><surname>Ewer</surname> <given-names>KJ</given-names></string-name>, <string-name><surname>Aley</surname> <given-names>PK</given-names></string-name>, <etal>et al</etal> (<year>2020</year>). <article-title>Safety and immunogenicity of the ChAdOx1 nCoV-19 vaccine against SARS-CoV-2: a preliminary report of a phase 1/2, single-blind, randomised controlled trial</article-title>. <source>Lancet</source>, <volume>396</volume>:<fpage>467</fpage>&#x2013;<lpage>78</lpage>.</mixed-citation></ref>
+<ref id="c10"><label>10.</label><mixed-citation publication-type="journal"><string-name><surname>Keech</surname> <given-names>C</given-names></string-name>, <string-name><surname>Albert</surname> <given-names>G</given-names></string-name>, <string-name><surname>Cho</surname> <given-names>I</given-names></string-name>, <etal>et al</etal> (<year>2020</year>). <article-title>Phase 1-2 Trial of a SARS-CoV-2 recombinant spike protein nanoparticle vaccine</article-title>. <source>New Eng J Med</source>, <volume>383</volume>:<fpage>2320</fpage>&#x2013;<lpage>32</lpage>.</mixed-citation></ref>
+<ref id="c11"><label>11.</label><mixed-citation publication-type="website"><collab>The World Health Organization</collab> (<year>2020</year>). <source>Draft landscape of COVID-19 candidate vac-cines</source>. <ext-link ext-link-type="uri" xlink:href="https://www.who.int/publications/m/item/draft-landscape-of-covid-19-candidate-vaccines">https://www.who.int/publications/m/item/draft-landscape-of-covid-19-candidate-vaccines</ext-link> (accessed <date-in-citation content-type="access-date">December 8, 2020</date-in-citation>).</mixed-citation></ref>
+<ref id="c12"><label>12.</label><mixed-citation publication-type="website"><collab>The World Health Organization</collab> (<year>2020</year>). <source>An international randomised trial of candidate vaccines against COVID-19</source>. <ext-link ext-link-type="uri" xlink:href="https://www.who.int/publications-detail/an-international-randomised-trial-of-candidate-vaccines-against-covid-19">https://www.who.int/publications-detail/an-international-randomised-trial-of-candidate-vaccines-against-covid-19</ext-link>.</mixed-citation></ref>
+<ref id="c13"><label>13.</label><mixed-citation publication-type="other"><collab>U.S. Food and Drug Administration</collab> (<year>2020</year>). <source>Development and Licensure of Vaccines to Prevent COVID-19: Guidance for Industry</source>.</mixed-citation></ref>
+<ref id="c14"><label>14.</label><mixed-citation publication-type="website"><collab>The World Health Organization</collab> (<year>2020</year>). <source>WHO target product profiles for COVID-19 vaccines</source>. <ext-link ext-link-type="uri" xlink:href="https://www.who.int/who-documents-detail/who-target-productprofiles-for-covid-19-vaccines">https://www.who.int/who-documents-detail/who-target-productprofiles-for-covid-19-vaccines</ext-link>.</mixed-citation></ref>
+<ref id="c15"><label>15.</label><mixed-citation publication-type="website"><collab>U.S. Food and Drug Administration</collab> (<year>2021</year>). <source>Emergency Use Authorization for Vaccines to Prevent COVID-19: Guidance for Industry</source>. <ext-link ext-link-type="uri" xlink:href="https://www.fda.gov/media/142749/download">https://www.fda.gov/media/142749/download</ext-link>.</mixed-citation></ref>
+<ref id="c16"><label>16.</label><mixed-citation publication-type="other"><string-name><surname>Lin</surname> <given-names>DY</given-names></string-name>, <string-name><surname>Zeng</surname> <given-names>D</given-names></string-name>, <string-name><surname>Mehrotra</surname> <given-names>DV</given-names></string-name>, <string-name><surname>Corey</surname> <given-names>L</given-names></string-name>, <string-name><surname>Gilbert</surname> <given-names>PB</given-names></string-name> (<year>2021</year>). <article-title>Evaluating the efficacy of COVID-19 vaccines</article-title>. <source>Clin Infect Dis, in press</source> (DOI: <pub-id pub-id-type="doi">10.1093/cid/ciaa1863</pub-id>)</mixed-citation></ref>
+<ref id="c17"><label>17.</label><mixed-citation publication-type="journal"><string-name><surname>Cox</surname> <given-names>DR</given-names></string-name> (<year>1972</year>). <article-title>Regression models and life-tables</article-title>. <source>J Roy Stat Soc B</source>, <volume>34</volume>:<fpage>187</fpage>&#x2013;<lpage>202</lpage>.</mixed-citation></ref>
+<ref id="c18"><label>18.</label><mixed-citation publication-type="book"><string-name><surname>Kalbfleisch</surname> <given-names>JD</given-names></string-name>, <string-name><surname>Prentice</surname> <given-names>RL</given-names></string-name> (<year>2011</year>). <source>The Statistical Analysis of Failure Time Data</source>, <edition>2nd</edition> Ed. <publisher-name>John Wiley &#x0026; Sons</publisher-name>.</mixed-citation></ref>
+<ref id="c19"><label>19.</label><mixed-citation publication-type="journal"><string-name><surname>VanderWeele</surname> <given-names>TJ</given-names></string-name>, <string-name><surname>Ding</surname> <given-names>P</given-names></string-name> (<year>2017</year>). <article-title>Sensitivity analysis in observational research: introducing the E-value</article-title>. <source>Ann Int Med</source>, <volume>167</volume>:<fpage>268</fpage>&#x2013;<lpage>74</lpage>.</mixed-citation></ref>
+<ref id="c20"><label>20.</label><mixed-citation publication-type="journal"><string-name><surname>Ding</surname> <given-names>P</given-names></string-name>, <string-name><surname>VanderWeele</surname> <given-names>TJ</given-names></string-name> (<year>2016</year>). <article-title>Sensitivity analysis without assumptions</article-title>. <source>Epidemiology</source>, <volume>27</volume>:<fpage>368</fpage>.</mixed-citation></ref>
+<ref id="c21"><label>21.</label><mixed-citation publication-type="website"><string-name><surname>Follmann</surname> <given-names>D</given-names></string-name>, <string-name><surname>Fintzi</surname> <given-names>J</given-names></string-name>, <string-name><surname>Fay</surname> <given-names>MP</given-names></string-name>, <etal>et al.</etal> (<year>2020</year>). <source>Assessing durability of vaccine effect following blinded crossover in COVID-19 vaccine efficacy trials</source>. <ext-link ext-link-type="uri" xlink:href="https://www.medrxiv.org/">https://www.medrxiv.org/</ext-link> content/10.1101/2020.12.14.20248137v1</mixed-citation></ref>
+</ref-list>
+<sec id="s5">
+<title>Supplemental Appendix</title>
+<sec id="s5a">
+<label>1.</label>
+<title>Vaccine Efficacy</title>
+<p>Let <italic>S</italic> denote the time when vaccination takes place and <italic>T</italic> denote the time when symptomatic COVID-19 develops; both times are measured in days from the start of the clinical trial (<xref rid="fig1" ref-type="fig">Figure 1</xref>). (We measure each participant&#x2019;s time to disease from the start of the trial rather than from their time of enrollment because the risk of disease depends on community transmission, which varies over the calendar time. Obviously, the two time scales are different under staggered enrollment.) In addition, let <italic>X</italic> denote baseline risk factors (e.g., age, occupation, comorbidities). We specify that the hazard function of <italic>T</italic> is related to <italic>S</italic> and <italic>X</italic> through the Cox regression model [1] with a time-varying vaccine effect
+<disp-formula id="eqn1">
+<alternatives><graphic xlink:href="21249779v4_eqn1.gif"/></alternatives>
+</disp-formula>
+where <italic>&#x03BB;</italic><sub>0</sub>(<italic>&#x00B7;</italic>) is an arbitrary baseline hazard function, <italic>v</italic>(<italic>&#x00B7;</italic>) is a positive function characterizing the time-varying effect of vaccination, <italic>&#x03B2;</italic> is a set of regression parameters representing the effects of baseline risk factors, and <italic>I</italic>(<italic>&#x00B7;</italic>) is the indicator function. Under this formulation, the baseline hazard rate varies over the calendar time; the effect of vaccine on the risk of disease depends on the time elapsed since vaccination, but not on the specific date of vaccination or on the baseline risk factors. (The latter restriction can be relaxed by applying the model separately to each sub-population of interest.)</p>
+<p>Vaccine efficacy (VE) at time <italic>t</italic> after vaccination is generally defined by <italic>V E</italic>(<italic>t</italic>) &#x003D; 1 <italic>&#x2212; RR</italic>(<italic>t</italic>), where <italic>RR</italic>(<italic>t</italic>) is some measure of relative risk at time <italic>t</italic> comparing the vaccinated population to the unvaccinated population [2,3]. The most common measures of risk in vaccine trials are hazard rate and attack rate [3,4]. In our formulation, the relative hazard rate or hazard ratio at time <italic>t</italic> is simply <italic>v</italic>(<italic>t</italic>). The relative attack rate at time <italic>t</italic> is the ratio of the cumulative incidence of disease at time <italic>t</italic> for individuals who have been vaccinated for <italic>t</italic> days compared with those who are unvaccinated:
+<disp-formula id="ueqn1">
+<alternatives><graphic xlink:href="21249779v4_ueqn1.gif"/></alternatives>
+</disp-formula>
+which is approximately
+<disp-formula id="ueqn2">
+<alternatives><graphic xlink:href="21249779v4_ueqn2.gif"/></alternatives>
+</disp-formula>
+when the incidence is low. (This condition holds for Covid-19 vaccine trials because the annualized incidence of symptomatic COVID-19 is less than 5%.) If <italic>&#x03BB;</italic><sub>0</sub>(<italic>&#x00B7;</italic>) is approximately constant, then the above ratio can be written as <inline-formula><alternatives><inline-graphic xlink:href="21249779v4_inline1.gif"/></alternatives></inline-formula>, where
+<disp-formula id="ueqn3">
+<alternatives><graphic xlink:href="21249779v4_ueqn3.gif"/></alternatives>
+</disp-formula>
+Clearly, <inline-formula><alternatives><inline-graphic xlink:href="21249779v4_inline2.gif"/></alternatives></inline-formula> is the average hazard ratio over the time period (0, <italic>t</italic>].</p>
+<p>Thus, we have two definitions of time-varying VE: one in terms of hazard rate
+<disp-formula id="eqn2">
+<alternatives><graphic xlink:href="21249779v4_eqn2.gif"/></alternatives>
+</disp-formula>
+and one in terms of attack rate
+<disp-formula id="eqn3">
+<alternatives><graphic xlink:href="21249779v4_eqn3.gif"/></alternatives>
+</disp-formula>
+Note that the assumption of an approximately constant baseline hazard rate over time is needed in order to interpret <inline-formula><alternatives><inline-graphic xlink:href="21249779v4_inline3.gif"/></alternatives></inline-formula> as the ratio of the cumulative incidence but is not used in estimation. We will refer to <italic>V E</italic><sub><italic>a</italic></sub>(<italic>t</italic>) as the VE in attack rate whether the baseline hazard rate is constant or not. We call <italic>V E</italic><sub><italic>h</italic></sub>(<italic>t</italic>) the day-<italic>t</italic> VE, which pertains to the instantaneous vaccine effect at time <italic>t</italic>, and call <italic>V E</italic><sub><italic>a</italic></sub>(<italic>t</italic>) the <italic>t</italic>-day VE, which pertains to the cumulative vaccine effect over the time interval (0, <italic>t</italic>]. If the hazard ratio is constant over time, then the two definitions are equivalent. If the hazard ratio increases over time, then <italic>V E</italic><sub><italic>a</italic></sub>(<italic>t</italic>) will be higher than <italic>V E</italic><sub><italic>h</italic></sub>(<italic>t</italic>).</p>
+<p>Suppose that the clinical trial enrolls a total of <italic>n</italic> participants. For <italic>i</italic> &#x003D; 1,&#x2026;, <italic>n</italic>, let <italic>R</italic><sub><italic>i</italic></sub>, <italic>T</italic><sub><italic>i</italic></sub>, <italic>S</italic><sub><italic>i</italic></sub>, <italic>C</italic><sub><italic>i</italic></sub>, and <italic>X</italic><sub><italic>i</italic></sub> denote, respectively, the entry time, the time to symptomatic COVID-19, the time to vaccination, the time to loss to follow-up, and the baseline risk factors for the <italic>i</italic>th participant. The data consist of (<italic>R</italic><sub><italic>i</italic></sub>, <italic>Y</italic><sub><italic>i</italic></sub>, &#x0394;<sub><italic>i</italic></sub>, <italic>D</italic><sub><italic>i</italic></sub>, <italic>D</italic><sub><italic>i</italic></sub><italic>S</italic><sub><italic>i</italic></sub>, <italic>X</italic><sub><italic>i</italic></sub>) (<italic>i</italic> &#x003D; 1,&#x2026;, <italic>n</italic>), where <italic>Y</italic><sub><italic>i</italic></sub> &#x003D; min(<italic>T</italic><sub><italic>i</italic></sub>, <italic>C</italic><sub><italic>i</italic></sub>), &#x0394;<sub><italic>i</italic></sub> &#x003D; <italic>I</italic>(<italic>T</italic><sub><italic>i</italic></sub> &#x2264; <italic>C</italic><sub><italic>i</italic></sub>), and <italic>D</italic><sub><italic>i</italic></sub> &#x003D; <italic>I</italic>(<italic>S</italic><sub><italic>i</italic></sub> &#x2264; <italic>Y</italic><sub><italic>i</italic></sub>).</p>
+<p>We assume that (<italic>R</italic><sub><italic>i</italic></sub>, <italic>S</italic><sub><italic>i</italic></sub>, <italic>C</italic><sub><italic>i</italic></sub>) are independent of <italic>T</italic><sub><italic>i</italic></sub> conditional on <italic>X</italic><sub><italic>i</italic></sub>. The likelihood takes</p>
+<p>the form
+<disp-formula id="ueqn4">
+<alternatives><graphic xlink:href="21249779v4_ueqn4.gif"/></alternatives>
+</disp-formula>
+where <inline-formula><alternatives><inline-graphic xlink:href="21249779v4_inline4.gif"/></alternatives></inline-formula>, and<inline-formula><alternatives><inline-graphic xlink:href="21249779v4_inline5.gif"/></alternatives></inline-formula>. We approximate log <italic>&#x03BB;</italic><sub>0</sub>(<italic>t</italic>) through splines with <italic>m</italic> basis functions, <italic>B</italic><sub>1</sub>(<italic>t</italic>),&#x2026;, <italic>B</italic><sub><italic>m</italic></sub>(<italic>t</italic>), such that <inline-formula><alternatives><inline-graphic xlink:href="21249779v4_inline6.gif"/></alternatives></inline-formula> Let <italic>&#x03B8;</italic> &#x003D; (<italic>&#x03B2;</italic><sup>T</sup>, <italic>&#x03B3;</italic><sub>1</sub>,&#x2026;, <italic>&#x03B3;</italic><sub><italic>m</italic></sub>)<sup>T</sup>, and <inline-formula><alternatives><inline-graphic xlink:href="21249779v4_inline7.gif"/></alternatives></inline-formula>. We perform the nonpara-metric maximum likelihood estimation [5], in which <italic>V</italic> (<italic>&#x00B7;</italic>) is treated as a step function jumping at the time points <inline-formula><alternatives><inline-graphic xlink:href="21249779v4_inline8.gif"/></alternatives></inline-formula> with <italic>D</italic><sub><italic>i</italic></sub> &#x003D; &#x0394;<sub><italic>i</italic></sub> &#x003D; 1. Thus, we maximize the objective function
+<disp-formula id="eqn4">
+<alternatives><graphic xlink:href="21249779v4_eqn4.gif"/></alternatives>
+</disp-formula>
+where <italic>V</italic> {<italic>t</italic>} is the jump size of <italic>V</italic> (<italic>&#x00B7;</italic>) at <italic>t</italic>.</p>
+<p>We first maximize the objective function in (4) for fixed <italic>&#x03B8;</italic> to yield
+<disp-formula id="eqn5">
+<alternatives><graphic xlink:href="21249779v4_eqn5.gif"/></alternatives>
+</disp-formula>
+Here and in the sequel, <inline-formula><alternatives><inline-graphic xlink:href="21249779v4_inline9.gif"/></alternatives></inline-formula>, where <italic>a</italic><sup>&#x2297;0</sup> &#x003D; 1, <italic>a</italic><sup>&#x2297;1</sup> &#x003D; <italic>a</italic>, and <italic>a</italic><sup>&#x2297;2</sup> &#x003D; <italic>aa</italic><sup>T</sup> for a column vector <italic>a</italic>. After plugging (5) into (4), we obtain the profile likelihood for <italic>&#x03B8;</italic>. Differentiating the profile log-likelihood with respect to <italic>&#x03B8;</italic> yields the estimating function
+<disp-formula id="ueqn5">
+<alternatives><graphic xlink:href="21249779v4_ueqn5.gif"/></alternatives>
+</disp-formula>
+Denote the resulting estimator of <italic>&#x03B8;</italic> by <inline-formula><alternatives><inline-graphic xlink:href="21249779v4_inline10.gif"/></alternatives></inline-formula>. Replacing <italic>&#x03B8;</italic> in (5) by <inline-formula><alternatives><inline-graphic xlink:href="21249779v4_inline11.gif"/></alternatives></inline-formula> yields the estimator of <italic>V</italic> (<italic>t</italic>)
+<disp-formula id="ueqn6">
+<alternatives><graphic xlink:href="21249779v4_ueqn6.gif"/></alternatives>
+</disp-formula>
+which is reminiscent of the Breslow estimator [6] for the cumulative baseline hazard function under the standard Cox model. We then estimate <italic>V E</italic><sub><italic>a</italic></sub>(<italic>t</italic>) through <xref ref-type="disp-formula" rid="eqn3">equation (3)</xref>.</p>
+<p>Using counting-process martingale theory and other mathematical arguments [7,8], we can show that <inline-formula><alternatives><inline-graphic xlink:href="21249779v4_inline12.gif"/></alternatives></inline-formula>is consistent and asymptotically normal. In addition, the covariance between <inline-formula><alternatives><inline-graphic xlink:href="21249779v4_inline13.gif"/></alternatives></inline-formula> and <inline-formula><alternatives><inline-graphic xlink:href="21249779v4_inline14.gif"/></alternatives></inline-formula> can be consistently estimated by <inline-formula><alternatives><inline-graphic xlink:href="21249779v4_inline15.gif"/></alternatives></inline-formula>, where
+<disp-formula id="ueqn7">
+<alternatives><graphic xlink:href="21249779v4_ueqn7.gif"/></alternatives>
+</disp-formula>
+and
+<disp-formula id="ueqn8">
+<alternatives><graphic xlink:href="21249779v4_ueqn8.gif"/></alternatives>
+</disp-formula>
+These results can be used to construct confidence intervals for <italic>V E</italic><sub><italic>a</italic></sub>(<italic>t</italic>). Specifically, we first construct the confidence intervals for log{<italic>V</italic> (<italic>t</italic>)} and then transform them to <italic>V E</italic><sub><italic>a</italic></sub>(<italic>t</italic>). We can also construct simultaneous confidence bands for <italic>V E</italic><sub><italic>a</italic></sub>(<italic>&#x00B7;</italic>) [8].</p>
+<p>We estimate <italic>v</italic>(<italic>&#x00B7;</italic>) by applying a local linear smoother to the jump sizes of <inline-formula><alternatives><inline-graphic xlink:href="21249779v4_inline16.gif"/></alternatives></inline-formula>. The jump size of <inline-formula><alternatives><inline-graphic xlink:href="21249779v4_inline17.gif"/></alternatives></inline-formula> at <inline-formula><alternatives><inline-graphic xlink:href="21249779v4_inline18.gif"/></alternatives></inline-formula><sub><italic>i</italic></sub> is given by <inline-formula><alternatives><inline-graphic xlink:href="21249779v4_inline19.gif"/></alternatives></inline-formula>. For any <italic>t</italic>, we fit a local linear regression model and estimate its intercept <italic>A</italic>(<italic>t</italic>) and slope <italic>B</italic>(<italic>t</italic>) by solving the equation
+<disp-formula id="ueqn9">
+<alternatives><graphic xlink:href="21249779v4_ueqn9.gif"/></alternatives>
+</disp-formula>
+where <inline-formula><alternatives><inline-graphic xlink:href="21249779v4_inline20.gif"/></alternatives></inline-formula>, and <italic>b</italic> is a data-adaptive bandwidth. We let <inline-formula><alternatives><inline-graphic xlink:href="21249779v4_inline21.gif"/></alternatives></inline-formula>, where <italic>c</italic> is a tuning parameter, <italic>R</italic><sub><italic>D</italic></sub> is the range of the observed event times, and <italic>n</italic><sub><italic>D</italic></sub> is the number of disease cases [9]. Denote the resulting estimator of <italic>A</italic>(<italic>t</italic>) by <italic>&#x00C2;</italic> (<italic>t</italic>). We then estimate <italic>v</italic>(<italic>t</italic>) by
+<disp-formula id="ueqn10">
+<alternatives><graphic xlink:href="21249779v4_ueqn10.gif"/></alternatives>
+</disp-formula>
+and estimate VE<sub>h</sub>(t) according to <xref ref-type="disp-formula" rid="eqn2">equation (2)</xref>. We let the tuning parameter <italic>c</italic> lie between 0.1 and 1.0. A smaller value of <italic>c</italic> makes <inline-formula><alternatives><inline-graphic xlink:href="21249779v4_inline22.gif"/></alternatives></inline-formula> less biased but more variable, whereas a larger value of <italic>c</italic> generates a more smooth estimate of the VE<sub>h</sub> curve.</p>
+<p>Finally, we define the VE in attack rate over the time interval (<italic>t</italic><sub>1</sub>, <italic>t</italic><sub>2</sub>] by
+<disp-formula id="ueqn11">
+<alternatives><graphic xlink:href="21249779v4_ueqn11.gif"/></alternatives>
+</disp-formula>
+The fraction on the right-hand side is the average hazard ratio over the time period (<italic>t</italic><sub>1</sub>, <italic>t</italic><sub>2</sub>]. We estimate <inline-formula><alternatives><inline-graphic xlink:href="21249779v4_inline23.gif"/></alternatives></inline-formula>, which is normally distributed with variance <inline-formula><alternatives><inline-graphic xlink:href="21249779v4_inline24.gif"/></alternatives></inline-formula>. We then construct the confidence intervals for <italic>V E</italic><sub><italic>a</italic></sub>(<italic>t</italic><sub>1</sub>, <italic>t</italic><sub>2</sub>) based on the log-transformation.</p>
+<p><italic>Remark</italic>. Durham et al. [2] considered a special case of model (1) in which all participants are vaccinated at approximately the same time (such that <italic>S</italic> can be set 0 for all participants) and estimated the time-varying hazard ratio by smoothing the residuals from the standard Cox model with a constant hazard ratio. If community transmission is constant over time, then one can estimate the incidence rate in the vaccine group by using the number of cases among the participants who have been vaccinated for the same amount of time and assess waning VE by comparing the estimates of relative incidence rates for successive time periods. In COVID-19 vaccine trials, the enrollment period is relatively long compared with the study duration, and community transmission varies considerably over time. Thus, it is necessary to adopt two different time scales: time since study initiation for the disease endpoint and time since vaccination for the vaccine effect.</p>
+</sec>
+</sec>
+<sec id="s6">
+<label>2.</label>
+<title>Simulation Studies</title>
+<p>We assumed that 40,000 participants entered the study at a constant rate over four months, i.e., <italic>R &#x223C;</italic> Uniform(0, 4). We created a composite baseline risk score <italic>X</italic>, which takes values 1, 2, 3, 4, and 5 with equal probability. At study entry, half of the participants were assigned to vaccine and half to placebo. The statistically optimal design would be to maintain the original vaccine and placebo groups until the end of the study; we refer to this design as Plan A. We also considered three blinded crossover designs, under which placebo participants receive vaccine and vaccine participants receive placebo at the time of crossover, and all participants are followed until the end of the study or the time of analysis, which was set to be 10.5 months. The three blinded crossover designs are as follows:</p>
+<p>Plan B. Crossover occurs at month (11 <italic>&#x2212; X</italic> &#x002B; <italic>G</italic>), where <italic>G</italic> follows the exponential distribution with mean of 0.5 month.</p>
+<p>Plan C. 20% of participants follow Plan A and 80% follow Plan B.</p>
+<p>Plan D. Crossover occurs at month 6 &#x002B; <italic>G</italic>, where <italic>G</italic> follows the exponential distribution with mean of 0.5 month.</p>
+<p>Plan C mimics a scenario where all participants are offered the option of crossover, but a small percentage (20%) choose to stay on the original assignments.</p>
+<p>In addition, we considered four unblinded crossover designs:</p>
+<p>Plan B&#x2019;. Crossover occurs at month (11.5 <italic>&#x2212; X</italic>).</p>
+<p>Plan C&#x2019;. 20% of participants follow Plan A and 80% follow Plan B&#x2019;.</p>
+<p>Plan D&#x2019;. Crossover occurs at month 6.5.</p>
+<p>Plan D&#x201D;. Crossover occurs at the same time as Plan D.</p>
+<p>Under unblinded crossover, participants are notified of their original assignments at the time of crossover, and placebo participants receive the vaccine soon after. In practice, only placebo participants would cross over, since there is no need to give placebo to vaccine recipients after unblinding. In Plans B&#x2019;&#x2013;D&#x201D;, the time of crossover is the time of unblinding rather than the time when placebo participants actually receive the vaccine. Because participants might change their behavior upon discovering their original treatment assignments, we discarded the follow-up data collected after unblinding by censoring each participant&#x2019;s time to disease at their time of unblinding. This strategy avoids bias due to behavioral confounding at the cost of reduced statistical efficiency.</p>
+<p>We generated the event time <italic>T</italic> from m
+<disp-formula id="ueqn12">
+<alternatives><graphic xlink:href="21249779v4_ueqn12.gif"/></alternatives>
+</disp-formula>
+And
+<disp-formula id="ueqn13">
+<alternatives><graphic xlink:href="21249779v4_ueqn13.gif"/></alternatives>
+</disp-formula>
+where <italic>t</italic><sub>&#x002B;</sub> &#x003D; <italic>t</italic> if <italic>t &#x003E;</italic> 0 and 0 otherwise, and <italic>a</italic> and <italic>b</italic> were chosen to achieve the desired 5-month and 10-month VE<sub>a</sub>. We censored <italic>T</italic> at the time of unblinding under Plans B&#x2019;&#x2013;D&#x201D;.</p>
+<p>For each simulated dataset, we estimated log <italic>&#x03BB;</italic><sub>0</sub>(<italic>t</italic>) using a piece-wise constant function with 20 pieces placed at the equal quantiles of the observed event times. We then estimated <italic>V</italic> (<italic>t</italic>) using the proposed method and estimated <italic>V E</italic><sub><italic>a</italic></sub>(<italic>t</italic>) according to <xref ref-type="disp-formula" rid="eqn3">equation (3)</xref>. In addition, we estimated <italic>v</italic>(<italic>t</italic>) through local linear regression with tuning parameter <italic>c</italic> &#x003D; 0.1 and estimated <italic>V E</italic><sub><italic>h</italic></sub>(<italic>t</italic>) according to <xref ref-type="disp-formula" rid="eqn2">equation (2)</xref>. For comparison, we also fit the standard Cox proportional hazards model that includes <italic>X</italic> and time-dependent covariate <italic>I</italic>(<italic>S &#x003C; t</italic>) with a constant hazard ratio and estimated VE by 1 minus the estimated hazard ratio of the time-dependent covariate. The results are reported in the main text.</p>
+<p>We also evaluated our method for estimating <italic>V E</italic><sub><italic>a</italic></sub>(<italic>t</italic><sub>1</sub>, <italic>t</italic><sub>2</sub>) over a partition of the study period in the simulation studies. We found that the method performs well when the time interval is at least one-month wide. For example, Table S.1 summarizes the results for estimating monthly <italic>V E</italic><sub><italic>a</italic></sub> under Plan D&#x201D; in scenario (b). The <italic>V E</italic><sub><italic>a</italic></sub> estimates are virtually unbiased, the standard errors are accurately estimated, and the confidence intervals have proper coverage probabilities. Table S.2 shows the analysis results for bimonthly <italic>V E</italic><sub><italic>a</italic></sub> in one simulated trial. Bimonthly <italic>V E</italic><sub><italic>a</italic></sub> is estimated with higher precision than monthly <italic>V E</italic><sub><italic>a</italic></sub>.</p>
+</sec>
+<sec id="s7">
+<label>3.</label>
+<title>Sensitivity Analysis</title>
+<p>We suggest reporting the E-value [10] as a summary measure of the evidence against the null hypothesis <italic>H</italic><sub>0</sub>: <italic>V E</italic>(<italic>t</italic>) &#x2264; 0. The E-value is the minimum strength of association on the risk ratio scale, i.e, <italic>RR</italic>(<italic>t</italic>) &#x003D; 1 <italic>&#x2212; V E</italic>(<italic>t</italic>), that an unmeasured confounder would need to have with both vaccination status and disease outcome in order to fully explain away a specific observed VE. Let <inline-formula><alternatives><inline-graphic xlink:href="21249779v4_inline25.gif"/></alternatives></inline-formula>) be the estimate of <italic>RR</italic>(<italic>t</italic>), and let <italic>UL</italic>(<italic>t</italic>) be the upper limit of the 95% confidence interval for <italic>RR</italic>(<italic>t</italic>). Then the E-value for <inline-formula><alternatives><inline-graphic xlink:href="21249779v4_inline26.gif"/></alternatives></inline-formula> is given by
+<disp-formula id="ueqn14">
+<alternatives><graphic xlink:href="21249779v4_ueqn14.gif"/></alternatives>
+</disp-formula>
+provided that <inline-formula><alternatives><inline-graphic xlink:href="21249779v4_inline27.gif"/></alternatives></inline-formula>. In addition, the E-value for <italic>UL</italic>(<italic>t</italic>) is computed as 1 if <italic>UL</italic>(<italic>t</italic>) &#x2265; 1 and as
+<disp-formula id="ueqn15">
+<alternatives><graphic xlink:href="21249779v4_ueqn15.gif"/></alternatives>
+</disp-formula>
+otherwise. E-values near one suggest weak support for a causal inference, and greater E-values provide increasing evidence for causality.</p>
+<p>Suppose, for example, that <inline-formula><alternatives><inline-graphic xlink:href="21249779v4_inline28.gif"/></alternatives></inline-formula>, with 95% confidence interval (0.08, 0.75). Then <italic>e</italic>(<italic>t</italic>) &#x003D; 3.4, meaning that the result of <inline-formula><alternatives><inline-graphic xlink:href="21249779v4_inline29.gif"/></alternatives></inline-formula> being less than one could be explained away by an unmeasured confounder associated with both vaccination status and disease by a risk ratio of 3.4-fold each after accounting for the vector <italic>X</italic> of measured confounders, but not by a weaker unmeasured confounder. In addition, <italic>e</italic><sub><italic>UL</italic></sub>(<italic>t</italic>) &#x003D; 2, which is the strength of unmeasured confounding at which statistical significance for <italic>V E</italic>(<italic>t</italic>) <italic>&#x003E;</italic> 0 would be lost. These two E-values judge how confident we can be that <italic>V E</italic>(<italic>t</italic>) truly exceeds 0, accounting for potential unmeasured confounding due to unblinding and for sampling variability.</p>
+<p>We can provide a conservative estimate of <italic>V E</italic>(<italic>t</italic>) that accounts for potential unmeasured confounding [11]. Let <italic>RR</italic><sub><italic>UD</italic></sub>(<italic>t</italic>) be the maximum risk ratio for disease when comparing any two categories of the unmeasured confounder <italic>U</italic>, within either the vaccinated group or the unvaccinated group, conditional on the vector <italic>X</italic> of observed covariates, and let <italic>RR</italic><sub><italic>EU</italic></sub> (<italic>t</italic>) be the maximum risk ratio for any specific level of the unmeasured confounder <italic>U</italic> when comparing the vaccinated and unvaccinated individuals. Of note, <italic>RR</italic><sub><italic>UD</italic></sub>(<italic>t</italic>) quantifies the importance of the unmeasured confounder <italic>U</italic> for disease, and <italic>RR</italic><sub><italic>EU</italic></sub> (<italic>t</italic>) quantifies how imbalanced the vaccinated and unvaccinated groups are in the unmeasured confounder <italic>U</italic>. We define the bias or bounding factor
+<disp-formula id="ueqn16">
+<alternatives><graphic xlink:href="21249779v4_ueqn16.gif"/></alternatives>
+</disp-formula>
+Then a conservative (lower bound) estimate of the VE is given by <inline-formula><alternatives><inline-graphic xlink:href="21249779v4_inline30.gif"/></alternatives></inline-formula>, and a conservative confidence interval is obtained by multiplying the lower and upper limits of the confidence interval for <italic>RR</italic>(<italic>t</italic>) by <italic>B</italic>(<italic>t</italic>).</p>
+</sec>
+<ref-list>
+<title>References</title>
+<ref id="sc1"><label>1.</label><mixed-citation publication-type="journal"><string-name><surname>Cox</surname> <given-names>DR</given-names></string-name> (<year>1972</year>). <article-title>Regression models and life-tables</article-title>. <source>J Roy Stat Soc B</source>, <volume>34</volume>:<fpage>187</fpage>&#x2013;<lpage>202</lpage>.</mixed-citation></ref>
+<ref id="sc2"><label>2.</label><mixed-citation publication-type="journal"><string-name><surname>Durham</surname> <given-names>LK</given-names></string-name>, <string-name><surname>Longini Jr</surname> <given-names>IM</given-names></string-name>, <string-name><surname>Halloran</surname> <given-names>ME</given-names></string-name>, <string-name><surname>Clemens</surname> <given-names>JD</given-names></string-name>, <string-name><surname>Azhar</surname> <given-names>N</given-names></string-name>, <string-name><surname>Rao</surname> <given-names>M</given-names></string-name> (<year>1998</year>). <article-title>Estimation of vaccine efficacy in the presence of waning: application to cholera vaccines</article-title>. <source>American Journal of Epidemiology</source>, <volume>147</volume>:<fpage>948</fpage>&#x2013;<lpage>959</lpage>.</mixed-citation></ref>
+<ref id="sc3"><label>3.</label><mixed-citation publication-type="book"><string-name><surname>Halloran</surname> <given-names>ME</given-names></string-name>, <string-name><surname>Longini</surname> <given-names>IM</given-names></string-name>, <string-name><surname>Struchiner</surname> <given-names>CJ</given-names></string-name> (<year>2010</year>). <source>Design and Analysis of Vaccine Studies</source>. <publisher-loc>New York</publisher-loc>: <publisher-name>Springer</publisher-name>.</mixed-citation></ref>
+<ref id="sc4"><label>4.</label><mixed-citation publication-type="journal"><string-name><surname>Hudgens</surname> <given-names>MG</given-names></string-name>, <string-name><surname>Gilbert</surname> <given-names>PB</given-names></string-name>, <string-name><surname>Self</surname> <given-names>SG</given-names></string-name> (<year>2004</year>). <article-title>Endpoints in vaccine trials</article-title>. <source>Statistical Methods in Medical Research</source>, <volume>13</volume>:<fpage>89</fpage>&#x2013;<lpage>114</lpage>.</mixed-citation></ref>
+<ref id="sc5"><label>5.</label><mixed-citation publication-type="book"><string-name><surname>Kalbfleisch</surname> <given-names>JD</given-names></string-name>, <string-name><surname>Prentice</surname> <given-names>RL</given-names></string-name> (<year>2011</year>). <source>The Statistical Analysis of Failure Time Data</source>, <edition>2nd</edition> Ed. <publisher-name>John Wiley &#x0026; Sons</publisher-name>.</mixed-citation></ref>
+<ref id="sc6"><label>6.</label><mixed-citation publication-type="journal"><string-name><surname>Breslow</surname> <given-names>NE</given-names></string-name> (<year>1972</year>). <article-title>Discussion of the paper by D. R. Cox</article-title>. <source>J Roy Stat Soc B</source>, <volume>34</volume>:<fpage>216</fpage>&#x2013;<lpage>217</lpage>.</mixed-citation></ref>
+<ref id="sc7"><label>7.</label><mixed-citation publication-type="book"><string-name><surname>Fleming</surname> <given-names>TR</given-names></string-name>, <string-name><surname>Harrington</surname> <given-names>DP</given-names></string-name> (<year>1991</year>). <source>Counting Processes and Survival Analysis</source>. <publisher-name>John Wiley &#x0026; Sons</publisher-name>.</mixed-citation></ref>
+<ref id="sc8"><label>8.</label><mixed-citation publication-type="journal"><string-name><surname>Lin</surname> <given-names>DY</given-names></string-name>, <string-name><surname>Fleming</surname> <given-names>TR</given-names></string-name>, <string-name><surname>Wei</surname> <given-names>LJ</given-names></string-name> (<year>1994</year>). <article-title>Confidence bands for survival curves under the proportional hazards model</article-title>. <source>Biometrika</source>, <volume>81</volume>:<fpage>73</fpage>&#x2013;<lpage>81</lpage>.</mixed-citation></ref>
+<ref id="sc9"><label>9.</label><mixed-citation publication-type="journal"><string-name><surname>Muller</surname> <given-names>HG</given-names></string-name>, <string-name><surname>Wang</surname> <given-names>JL</given-names></string-name> (<year>1994</year>). <article-title>Hazard rate estimation under random censoring with varying kernels and bandwidths</article-title>. <source>Biometrics</source>, <volume>50</volume>:<fpage>61</fpage>&#x2013;<lpage>76</lpage>.</mixed-citation></ref>
+<ref id="sc10"><label>10.</label><mixed-citation publication-type="journal"><string-name><surname>VanderWeele</surname> <given-names>TJ</given-names></string-name>, <string-name><surname>Ding</surname> <given-names>P</given-names></string-name> (<year>2017</year>). <article-title>Sensitivity analysis in observational research: introducing the E-value</article-title>. <source>Ann Int Med</source>, <volume>167</volume>:<fpage>268</fpage>&#x2013;<lpage>74</lpage>.</mixed-citation></ref>
+<ref id="sc11"><label>11.</label><mixed-citation publication-type="journal"><string-name><surname>Ding</surname> <given-names>P</given-names></string-name>, <string-name><surname>VanderWeele</surname> <given-names>TJ</given-names></string-name> (<year>2016</year>). <article-title>Sensitivity analysis without assumptions</article-title>. <source>Epidemiology</source>, <volume>27</volume>:<fpage>368</fpage>.</mixed-citation></ref>
+</ref-list>
+<sec>
+<table-wrap id="tblS1" orientation="portrait" position="float">
+<label>Table S1.</label>
+<caption><title>Estimation of Monthly VE<sub>a</sub> Under Unblinded Crossover Plan D&#x201D;</title></caption>
+<graphic xlink:href="21249779v4_tblS1.tif"/>
+</table-wrap>
+<table-wrap id="tblS2" orientation="portrait" position="float">
+<label>Table S2.</label>
+<caption><title>Estimation of Bimonthly VE<sub>a</sub> in a Clinical Trial</title></caption>
+<graphic xlink:href="21249779v4_tblS2.tif"/>
+</table-wrap>
+</sec>
+</back>
+</article>

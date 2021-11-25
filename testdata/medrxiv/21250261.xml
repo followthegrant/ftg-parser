@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.2d1 20170631//EN" "JATS-archivearticle1.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" article-type="article" dtd-version="1.2d1" specific-use="production" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="publisher-id">MEDRXIV</journal-id>
+<journal-title-group>
+<journal-title>medRxiv</journal-title>
+<abbrev-journal-title abbrev-type="publisher">medRxiv</abbrev-journal-title>
+</journal-title-group>
+<publisher>
+<publisher-name>Cold Spring Harbor Laboratory</publisher-name>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1101/2021.01.21.21250261</article-id>
+<article-version>1.1</article-version>
+<article-categories>
+<subj-group subj-group-type="hwp-journal-coll">
+<subject>Emergency Medicine</subject>
+</subj-group>
+</article-categories>
+<title-group>
+<article-title>Using body temperature and variables commonly available in the EHR to predict acute infection: A proof-of-concept study showing improved pretest probability estimates for acute COVID-19 infection among discharged emergency department patients</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" corresp="yes">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-4374-3280</contrib-id>
+<name><surname>Berdahl</surname><given-names>Carl T</given-names></name>
+<degrees>MD, MS</degrees>
+<xref ref-type="corresp" rid="cor1">&#x002A;</xref>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-2408-6307</contrib-id>
+<name><surname>Nguyen</surname><given-names>An T</given-names></name>
+<degrees>OTD, OTR/L</degrees>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-2427-7843</contrib-id>
+<name><surname>Diniz</surname><given-names>Marcio A</given-names></name>
+<degrees>PhD</degrees>
+<xref ref-type="aff" rid="a3">3</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0001-8466-1057</contrib-id>
+<name><surname>Henreid</surname><given-names>Andrew J</given-names></name>
+<degrees>BA, EMT-B</degrees>
+<xref ref-type="aff" rid="a3">3</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-0416-1595</contrib-id>
+<name><surname>Nuckols</surname><given-names>Teryl K</given-names></name>
+<degrees>MD, MSHS</degrees>
+<xref ref-type="aff" rid="a4">4</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Libby</surname><given-names>Christopher P</given-names></name>
+<degrees>MD, MPH</degrees>
+<xref ref-type="aff" rid="a5">5</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-0621-1485</contrib-id>
+<name><surname>Pevnick</surname><given-names>Joshua M</given-names></name>
+<degrees>MD, MSHS</degrees>
+<xref ref-type="aff" rid="a6">6</xref>
+</contrib>
+<aff id="a1"><label>1</label><institution>Cedars-Sinai Medical Center; Departments of Medicine and Emergency Medicine: Los Angeles</institution>, CA, <country>US</country></aff>
+<aff id="a2"><label>2</label><institution>Cedars-Sinai Medical Center; Department of Physical Medicine and Rehabilitation: Los Angeles</institution>, CA, <country>US</country></aff>
+<aff id="a3"><label>3</label><institution>Cedars-Sinai Health System; Biostatistics and Bionformatics Research Center: Los Angeles</institution>, CA, <country>US</country></aff>
+<aff id="a4"><label>4</label><institution>Cedars-Sinai Medical Center; Department of Medicine: Los Angeles</institution>, CA, <country>US</country></aff>
+<aff id="a5"><label>5</label><institution>Cedars-Sinai Medical Center; EIS: Los Angeles</institution>, CA, <country>US</country></aff>
+<aff id="a6"><label>6</label><institution>Cedars-Sinai Medical Center; Department of General Internal Medicine: Los Angeles</institution>, CA, <country>US</country></aff>
+</contrib-group>
+<author-notes>
+<corresp id="cor1"><label>&#x002A;</label>Corresponding Author Address: 8687 Melrose Ave G-562, West Hollywood, CA 90069 Corresponding Author Academic Title: Assistant Professor of Medicine and Emergency Medicine; email: <email>carl.berdahl@csmc.edu</email></corresp>
+</author-notes>
+<pub-date pub-type="epub">
+<year>2021</year>
+</pub-date>
+<elocation-id>2021.01.21.21250261</elocation-id>
+<history>
+<date date-type="received">
+<day>21</day>
+<month>1</month>
+<year>2021</year>
+</date>
+<date date-type="rev-recd">
+<day>21</day>
+<month>1</month>
+<year>2021</year>
+</date>
+<date date-type="accepted">
+<day>22</day>
+<month>1</month>
+<year>2021</year>
+</date>
+</history>
+<permissions>
+<copyright-statement>&#x00A9; 2021, Posted by Cold Spring Harbor Laboratory</copyright-statement>
+<copyright-year>2021</copyright-year>
+<license license-type="creative-commons" xlink:href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><license-p>This pre-print is available under a Creative Commons License (Attribution-NonCommercial-NoDerivs 4.0 International), CC BY-NC-ND 4.0, as described at <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by-nc-nd/4.0/">http://creativecommons.org/licenses/by-nc-nd/4.0/</ext-link></license-p></license>
+</permissions>
+<self-uri xlink:href="21250261.pdf" content-type="pdf" xlink:role="full-text"/>
+<abstract>
+<title>ABSTRACT</title>
+<sec>
+<title>Objectives</title>
+<p>Obtaining body temperature is a quick and easy method to screen for acute infection such as COVID-19. Currently, the predictive value of body temperature for acute infection is inhibited by failure to account for other readily available variables that affect temperature values. In this proof-of-concept study, we sought to improve COVID-19 pretest probability estimation by incorporating covariates known to be associated with body temperature, including patient age, sex, comorbidities, month, time of day.</p></sec>
+<sec>
+<title>Methods</title>
+<p>For patients discharged from an academic hospital emergency department after testing for COVID-19 in March and April of 2020, we abstracted clinical data. We reviewed physician documentation to retrospectively generate estimates of pretest probability for COVID-19. Using patients&#x2019; COVID-19 PCR test results as a gold standard, we compared AUCs of logistic regression models predicting COVID-19 positivity that used: 1) body temperature alone; 2) body temperature and pretest probability; 3) body temperature, pretest probability, and body temperature-relevant covariates. Calibration plots and bootstrap validation were used to assess predictive performance for model #3.</p></sec>
+<sec>
+<title>Results</title>
+<p>Data from 117 patients were included. The models&#x2019; AUCs were: 1) 0.69 2) 0.72, and 3) 0.76, respectively. The absolute difference in AUC was 0.029 (95&#x0025;CI &#x2212;0.057 to 0.114, p=0.25) between model 2 and 1 and 0.038 (95&#x0025;CI &#x2212;0.021 to 0.097, p=0.10) between model 3 and 2.</p></sec>
+<sec>
+<title>Conclusions</title>
+<p>By incorporating covariates known to affect body temperature, we demonstrated improved pretest probability estimates of acute COVID-19 infection. Future work should be undertaken to further develop and validate our model in a larger, multi-institutional sample.</p></sec>
+</abstract>
+<kwd-group kwd-group-type="author">
+<title>Key Words</title>
+<kwd>COVID-19</kwd>
+<kwd>body temperature</kwd>
+<kwd>acute infection</kwd>
+<kwd>emergency department</kwd>
+<kwd>clinical diagnosis</kwd>
+</kwd-group>
+<counts>
+<page-count count="21"/>
+</counts>
+</article-meta>
+<notes>
+<notes notes-type="competing-interest-statement">
+<title>Competing Interest Statement</title><p>The authors have declared no competing interest.</p></notes>
+<notes notes-type="financial-disclosure">
+<title>Funding Statement</title><p>Funding was provided by Cedars-Sinai Precision Health.</p></notes>
+<notes notes-type="disclosures">
+<title>Author Declarations</title><p>I confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.</p><p>Yes</p><p>The details of the IRB/oversight body that provided approval or exemption for the research described are given below:</p><p>All study procedures were reviewed and approved by the Institutional Review Board at Cedars-Sinai Medical Center.
+Office of Research Compliance and Quality Improvement, 6500 Wilshire Blvd., Suite 1800, Los Angeles, CA 90048</p><p>All necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived.</p><p>Yes</p><p>I understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).</p><p>Yes</p><p>I have followed all appropriate research reporting guidelines and uploaded the relevant EQUATOR Network research reporting checklist(s) and other pertinent material as supplementary files, if applicable.</p><p>Yes</p></notes>
+</notes>
+</front>
+<body>
+<sec id="s1">
+<title>INTRODUCTION</title>
+<p>Improving the detection of acute COVID-19 infection is critical to minimizing spread of the infection and limiting avoidable morbidity and mortality.[<xref ref-type="bibr" rid="c1">1</xref>] However, the ability to diagnose COVID-19 is often limited because of asymptomatic or mildly symptomatic infection;[<xref ref-type="bibr" rid="c2">2</xref>] limited testing availability;[<xref ref-type="bibr" rid="c3">3</xref>] and slow turnaround time for test results. Given these limitations, improving pretest probability estimation is a crucial way to improve decision-making about when testing is warranted and thus curb community spread of acute infection.[<xref ref-type="bibr" rid="c4">4</xref>]</p>
+<p>Measuring body temperature is a quick, easy, and almost ubiquitously available way to evaluate for acute infection. However, the use of temperature to diagnose COVID-19 has not reached its fullest potential for three reasons. First, clinicians tend to use temperature as a binary variable, often with a cutoff of 100.4 degrees Fahrenheit signaling active infection.[<xref ref-type="bibr" rid="c5">5</xref>] Thus, many infections can be missed when patients exhibit temperatures that are mildly elevated.[<xref ref-type="bibr" rid="c6">6</xref>] Second, failure to account for the effects of other variables on temperature values lead to missed opportunities to detect active infection. Differences in measured body temperature and/or a patient&#x2019;s ability to mount an elevated temperature in the setting of acute infection occur with: patient age, sex, baseline body temperature, and comorbidities (e.g. depression, allergic conditions); time of day; ambient temperature; calendar month; and route of body temperature measurement.[<xref ref-type="bibr" rid="c7">7</xref>-<xref ref-type="bibr" rid="c9">9</xref>] Third, our clinical experience suggests that, while clinicians are aware of some of these relationships that should alter the interpretation of temperature values, they probably do not account for them effectively when making clinical decisions.</p>
+<p>We propose that it may be possible to improve pretest probability estimation for COVID-19 by developing a novel model that includes variables readily available in the electronic health record (EHR). <xref rid="fig1" ref-type="fig">Figure 1</xref> depicts a conceptual model demonstrating how body temperature-related covariates influence pretest probability, including how a clinician should decide to test for COVID-19 and act on results. Estimating pretest probability is critical to determining which patients should be tested. Additionally, because false-negative rates for COVID-19 testing have been found to range between 2&#x0025; and 29&#x0025;,[<xref ref-type="bibr" rid="c10">10</xref>] estimating pretest probability has been strongly encouraged to determine which patients should get a second test, even after an initial negative test.[<xref ref-type="bibr" rid="c11">11</xref>]</p>
+<fig id="fig1" position="float" fig-type="figure">
+<label>Figure 1.</label>
+<caption><p>Conceptual model demonstrating how relevant factors (e.g. antipyretic use, time of day) should influence interpretation of body temperature and the resultant effect on pretest probability. Direct influence is shown in red. Note also that in the example shown with a high pretest probability, a positive test result nearly always implies a posttest probability that exceeds the threshold requiring further testing, whereas a negative result may still result in a high enough posttest probability that further testing is warranted.</p></caption>
+<graphic xlink:href="21250261v1_fig1.tif"/>
+</fig>
+<p>In this proof-of-concept study of model development, we sought to evaluate whether pretest probability estimates of COVID-19 could be improved by incorporating covariates known to be associated with body temperature, including demographics, comorbidities, time of day, and month of the year. We hypothesized that adding body temperature-relevant covariates would improve the area under the curve (AUC) for a logistic regression model predicting COVID-19 polymerase chain reaction (PCR) test positivity.</p>
+</sec>
+<sec id="s2">
+<title>MATERIALS, SUBJECTS, AND METHODS</title>
+<sec id="s2a">
+<title>Setting and Population</title>
+<p>This study was conducted at the emergency department (ED) of an academic medical center in Los Angeles, CA. The study population included patients who were triaged to a temporary COVID-19 surge tent (open from 7:00am to 11:00pm), tested for acute COVID-19 infection with a nasopharyngeal PCR test, and discharged home for outpatient management between March 12 and April 6, 2020. Patients were excluded from the study if they did not have an oral temperature reading, if they were previously seen in the ED within the prior 7 days, if they did not complete ED evaluation (i.e., left without being seen, left against medical advice, or eloped), or if they reported no symptoms.</p>
+</sec>
+<sec id="s2b">
+<title>Data Sources</title>
+<p>Study procedures involved accessing an existing operational database to collect variables characterizing: patient age, sex, vital signs (including date, time, and route of measurement), comorbidities, and COVID-19 PCR test results from nasal swab samples.[<xref ref-type="bibr" rid="c12">12</xref>] Additionally, the content of physician and physician assistant notes describing patients&#x2019; visits was reviewed.</p>
+</sec>
+<sec id="s2c">
+<title>Measures</title>
+<sec id="s2c1">
+<title>Outcome variable</title>
+<p>The pilot model predicted acute COVID-19 infection at the individual patient level based on results of COVID-19 PCR testing performed during the ED visit.</p>
+</sec>
+<sec id="s2c2">
+<title>Predictor variables</title>
+<p>Selected predictor variables were covariates known to be associated with individual-level body temperature, including age, sex, month and time of day of temperature measurement, and comorbidities [<xref ref-type="bibr" rid="c8">8</xref>, <xref ref-type="bibr" rid="c9">9</xref>, <xref ref-type="bibr" rid="c13">13</xref>, <xref ref-type="bibr" rid="c14">14</xref>]. Body temperature was operationally defined as the highest temperature measurement taken during the ED visit. Time of day of body temperature measurement ranged from 9:00AM to 9:00PM and was defined as a continuous variable, derived by squaring the nearest rounded hour of body temperature measurement. Comorbidities associated with individual variation in baseline body temperature and considered for inclusion as predictor variables were cancer, pulmonary disease, hypothyroidism, kidney disease, congestive heart failure, allergies, and depression [<xref ref-type="bibr" rid="c9">9</xref>, <xref ref-type="bibr" rid="c13">13</xref>]. Comorbidities were enumerated through study team review of diagnoses listed in the patient&#x2019;s past medical history.</p>
+</sec>
+<sec id="s2c3">
+<title>Justification for using clinicians&#x2019; estimates of pretest probability without access to objective temperature data</title>
+<p>Because body temperature is a key predictor for acute COVID-19 infection, we included it directly in our final model based on structured EHR data rather than asking clinicians to incorporate it in an overall pretest probability. To avoid using body temperature twice, we used clinicians&#x2019; estimates of pretest probability without access to objective body temperature data.</p>
+</sec>
+</sec>
+<sec id="s2d">
+<title>Analyses</title>
+<sec id="s2d1">
+<title>Derivation of Independent Variable</title>
+<sec id="s2d1a">
+<title>Physician pretest probability estimation</title>
+<p>Two study team members trained in emergency medicine (CB and CL) independently reviewed clinical documentation (ED notes from physician assistants and physicians) to estimate pretest probability for COVID-19 while blinded to patients&#x2019; ED visit temperature measurements. Reviewers rated each case on a 5-point ordinal scale (1=20&#x0025; suspicion or less; 5=80&#x0025; suspicion or more). To determine estimates, reviewers were instructed to consider clinically relevant contextual factors, including local prevalence of COVID-19 at the time of the visit; patient-reported history of recent COVID-19 exposure within the last 14 days; patient-reported symptoms (e.g., fever, chills, cough, shortness of breath, chest tightness, headache, sore throat, fatigue, body aches, diarrhea, abdominal pain, confusion, loss of taste, loss of smell); and objective criteria (e.g., vital signs, excluding redacted temperature). In cases where reviewers&#x2019; estimates differed by exactly one point, the estimates were averaged to obtain a mean pretest probability. If estimates differed by more than one point, the two reviewers discussed the case until consensus was achieved. Physician pretest probability estimates were included as a continuous predictor variable in statistical modeling.</p>
+</sec>
+</sec>
+<sec id="s2d2">
+<title>Statistical Analysis</title>
+<p>Descriptive statistics were obtained using SPSS Statistics version 24.0 (IBM Corporation, Armonk, New York, USA) to compare demographics, comorbidities, and clinical characteristics of patients who tested positive and negative for acute COVID-19 infection. Between-group differences in demographics, comorbidities, and clinical characteristics were assessed using independent samples t-tests, Mann Whitney U tests, Pearson&#x2019;s chi-square tests of independence, or Fisher&#x2019;s exact tests. Intraclass correlation coefficients (ICCs) were calculated to estimate inter-rater agreement on physician pretest probability estimates [<xref ref-type="bibr" rid="c15">15</xref>, <xref ref-type="bibr" rid="c16">16</xref>].</p>
+<p>Bivariable and multivariable logistic regression models were fitted to the data to test the research hypotheses that independent variables are predictive of acute COVID-19 infection.</p>
+<p>Three pilot models were estimated with the following combinations of predictor variables:</p>
+<p>Model #1: Body temperature</p>
+<p>Model #2: Clinical probability (Body temperature and pretest probability estimate)</p>
+<p>Model #3: Enhanced clinical probability (Body temperature, pretest probability estimate, and body temperature-relevant covariates</p>
+<p>Our primary hypothesis was that the predictive performance of Model #3 would exceed that of Model #2 due to the incorporation of body temperature-relevant covariates in Model #3. Predictive performance was evaluated using the area under the curve (AUC) and receiver operating curve (ROC) for discrimination, and calibration-in-large and calibration slope for calibration. Model performance, when evaluated in the same sample that was fitted, is overestimated. Therefore, we calculated the optimism of predictive performance measures using bootstrap to obtain optimism bias-corrected estimates.[<xref ref-type="bibr" rid="c17">17</xref>, <xref ref-type="bibr" rid="c18">18</xref>] The significance of predictor main effects in bivariable and multivariable models were assessed using likelihood ratio chi-square tests, calculated as twice the difference of the log-likelihoods between the full model and the constrained model that that does not contain the effect. Differences in AUCs between models were tested for statistical significance using Delong&#x2019;s Test with alpha set to 0.05 and using a one-sided test.[<xref ref-type="bibr" rid="c19">19</xref>] Regression analyses were carried out by the logistic procedure in SAS version 9.4 (SAS Institute Inc., Cary, North Carolina, USA). Calibration and optimism bias-corrected estimates were obtained using R version 4.0.3 (The R Foundation for Statistical Computing, Vienna, Austria). All study procedures were reviewed and approved by the Institutional Review Board at Cedars-Sinai Medical Center.</p>
+</sec>
+</sec>
+</sec>
+<sec id="s3">
+<title>RESULTS</title>
+<p>Out of 128 patients evaluated for inclusion in the study, a total of 117 patients met inclusion criteria. (See <xref rid="figA1" ref-type="fig">Appendix Figure 1</xref> for a study flow chart.) Forty out of 117 (34&#x0025;) patients in the sample tested positive for COVID-19. Compared to patients who tested negative for COVID-19, patients who tested positive had higher maximum oral body temperatures in the emergency department (99.3 vs 98.5&#x00B0;F, p &#x003C; 0.05), but demographic and comorbidity characteristics were generally similar to patients who tested negative (<xref rid="tbl1" ref-type="table">Table 1</xref>).</p>
+<table-wrap id="tbl1" orientation="portrait" position="float">
+<label>Table 1.</label>
+<caption><p>Participant demographics</p></caption>
+<graphic xlink:href="21250261v1_tbl1.tif"/>
+</table-wrap>
+<p>For the 117 patients in our study, COVID-19 pretest probability estimation by dual reviewers yielded identical scores in 55 (43.0&#x0025;) cases, adjacent scores in 66 (51.6&#x0025;) cases; and scores initially differing by more than 2 or more points in 7 (5.5&#x0025;), which were resolved by adjudication. The intraclass correlation coefficient (ICC) for pretest probability estimation was 0.75 (95&#x0025; CI 0.64-0.83).</p>
+<p>After pretest probability estimates were determined, we used our data to derive three models of the relationship between body temperature and acute COVID-19 infection (<xref rid="tbl2" ref-type="table">Tables 2</xref>-4). Model #1, which used a patient&#x2019;s maximum oral temperature alone, resulted in an AUC of 0.69 (95&#x0025; CI 0.58-0.79). Model #2 used pretest probability estimates in addition to body temperature, and it achieved an AUC of 0.72 (95&#x0025; CI 0.62-0.82, absolute difference in AUC between Model 2 versus 1 of 0.029 (95&#x0025; CI &#x2212;0.057-0.115, p=0.25)). Model #3, which approximated clinicians&#x2019; current method of developing a pretest probability by using the objective temperature data, pretest probability estimates, and body temperature-relevant covariates, yielded an AUC of 0.76 (95&#x0025; CI 0.67-0.86, absolute difference in AUC between Model 3 versus 2 of 0.038 (95&#x0025; CI &#x2212;0.021 to 0.097, p=0.10), and optimism-adjusted AUC estimate of 0.672. See <xref rid="tbl2" ref-type="table">Table 2</xref> for a list of AUCs for the three models, <xref rid="tbl3" ref-type="table">Table 3</xref> for multivariable logistic regression coefficients and odds ratios predicting COVID-19 test result positivity under Model #3. See <xref rid="fig2" ref-type="fig">Figure 2</xref> for a graphical representation of the ROC curves for Models #1-3.</p>
+<table-wrap id="tbl2" orientation="portrait" position="float">
+<label>Table 2.</label>
+<caption><p>Models derived from pilot data (N = 117)</p></caption>
+<graphic xlink:href="21250261v1_tbl2.tif"/>
+</table-wrap>
+<table-wrap id="tbl3" orientation="portrait" position="float">
+<label>Table 3.</label>
+<caption><p>Multivariable logistic regression coefficients predicting COVID-19 test positivity under Model #3 (n=117)</p></caption>
+<graphic xlink:href="21250261v1_tbl3.tif"/>
+</table-wrap>
+<fig id="fig2" position="float" fig-type="figure">
+<label>Figure 2.</label>
+<caption><p>Receiver operating curves for Models #1-3</p></caption>
+<graphic xlink:href="21250261v1_fig2.tif"/>
+</fig>
+<p>Apparent calibration slope and calibration-in-large for Model #3 were 1.0 and 0.0, respectively, indicating perfect calibration and overfitting. Bootstrap validation of Model #3 yielded an optimism-adjusted calibration slope of 0.478, indicating that the model underestimates low risk of COVID-19 infection and overestimates high risk of COVID-19 infection. Optimism-adjusted calibration-in-large was &#x2212;0.293, indicating that the model on average overestimates the risk of a COVID-19 infection. See <xref rid="fig3" ref-type="fig">Figure 3</xref> for calibration plots of apparent and optimism-adjusted Model #3.</p>
+<fig id="fig3" position="float" fig-type="figure">
+<label>Figure 3.</label>
+<caption><p>Calibration plot for apparent and optimism-adjusted Model #3</p></caption>
+<graphic xlink:href="21250261v1_fig3.tif"/>
+</fig>
+</sec>
+<sec id="s4">
+<title>DISCUSSION</title>
+<p>Based on our <italic>a priori</italic> hypothesis that several covariates known to be associated with body temperature in non-infected subjects [<xref ref-type="bibr" rid="c8">8</xref>, <xref ref-type="bibr" rid="c9">9</xref>, <xref ref-type="bibr" rid="c13">13</xref>, <xref ref-type="bibr" rid="c14">14</xref>] could improve the performance of body temperature as a predictor of COVID-19 acute infection status, we compared the predictive performance of three models. These models included oral body temperature alone, physicians&#x2019; temperature-blinded pretest probability plus objective temperature data, and a proposed enhanced model (which added age, sex, month, time of day, and comorbidities), which increased the AUC from 0.69 to 0.76&#x2014;a statistically nonsignificant difference but a trend which should undergo investigation in further research.</p>
+<p>Clinicians have long known that covariates are relevant to the interpretation of body temperature. Until now, however, most consideration of covariates&#x2019; effects has been handled qualitatively in clinicians&#x2019; minds. To the extent that these associations hold true and can be validated in other datasets, they provide a method for clinicians to quantitatively adjust their interpretation of body temperature which could be used to produce an evidence-based adjusted body temperature for every patient encounter. This could be likened to using a corrected QT interval, which has superseded use of an unadjusted QT interval in nearly all clinical settings. Because there are billions of patient encounters per year that use body temperature, the public health implications of even a tiny improvement in discriminatory ability are large.</p>
+<p>We recognize that this initial analysis has several limitations. First, we expect that these AUCs are optimistic because they are evaluated in a derivation sample at a single site,[<xref ref-type="bibr" rid="c20">20</xref>] though we attempted to mitigate this effect by reporting optimism-adjusted performance measures of calibration and discrimination. Second, our data used a subset of patients who were tested for COVID-19 during a time when testing supplies were limited, making selection bias a potential limitation. Third, members of the research team who generated pretest probability estimates were not blinded to the study hypothesis regarding which covariates should affect interpretation of temperature. This may have caused their estimates to differ from estimates that would otherwise by generated in practicing clinicians. Fourth, even when AUC is increased, it must be considered in a clinical context to ensure that yields clinically significant benefit. Fifth, we were unable to include two important classes of variables in our analysis because of gaps in the sample: patients&#x2019; baseline temperature values and variables related to women&#x2019;s hormonal cycles. Accounting for patients&#x2019; baseline temperature has been endorsed by the Infectious Disease Society of America[<xref ref-type="bibr" rid="c21">21</xref>]. Moreover, use of hormonal contraceptives and estrogen replacement therapy have been demonstrated to impact temperature interpretation,[<xref ref-type="bibr" rid="c7">7</xref>] which suggests that time since a woman&#x2019;s last menstrual period may also affect temperature elevation in the setting of acute infection. These variables were infeasible for us to collect in our proof-of-concept study, but we believe that they would likely further enhance predictive performance of our model if we had been able to include them.</p>
+<p>In conclusion, we present preliminary evidence that enhancing the interpretation of body temperature with body temperature-relevant covariates can improve discriminatory ability for COVID-19 above and beyond what is currently possible by using clinical suspicion and body temperature alone. If future research can validate these findings in other datasets, use of body-temperature relevant covariates to generate an adjusted temperature could be a promising method to improve detection of COVID-19 and other febrile illnesses, and to curb their spread.</p>
+</sec>
+</body>
+<back>
+<sec sec-type="data-availability">
+<title>Data Availability</title>
+<p>Data will be made available upon request, and only after permission from the Cedars-Sinai Medical Center Institutional Review Board.</p>
+</sec>
+<ref-list>
+<title>REFERENCES</title>
+<ref id="c1"><label>1.</label><mixed-citation publication-type="journal"><string-name><surname>Luo</surname>, <given-names>Z.</given-names></string-name>, <etal>et al.</etal>, <article-title>Combating the Coronavirus Pandemic: Early Detection</article-title>, <source>Medical Treatment, and a Concerted Effort by the Global Community. Research (Wash D C)</source>, <year>2020</year>. <volume>2020</volume>: p. <fpage>6925296</fpage>.</mixed-citation></ref>
+<ref id="c2"><label>2.</label><mixed-citation publication-type="journal"><string-name><surname>Kim</surname>, <given-names>G.U.</given-names></string-name>, <etal>et al.</etal>, <article-title>Clinical characteristics of asymptomatic and symptomatic patients with mild COVID-19</article-title>. <source>Clin Microbiol Infect</source>, <year>2020</year>. <volume>26</volume>(<issue>7</issue>): p. <fpage>948 e1</fpage>&#x2013;<lpage>948 e3</lpage>.</mixed-citation></ref>
+<ref id="c3"><label>3.</label><mixed-citation publication-type="journal"><string-name><surname>Cheng</surname>, <given-names>M.P.</given-names></string-name>, <etal>et al.</etal>, <article-title>Diagnostic Testing for Severe Acute Respiratory Syndrome-Related Coronavirus 2: A Narrative Review</article-title>. <source>Ann Intern Med</source>, <year>2020</year>. <volume>172</volume>(<issue>11</issue>): p. <fpage>726</fpage>&#x2013;<lpage>734</lpage>.</mixed-citation></ref>
+<ref id="c4"><label>4.</label><mixed-citation publication-type="journal"><string-name><surname>Watson</surname>, <given-names>J.</given-names></string-name>, <string-name><given-names>P.F.</given-names> <surname>Whiting</surname></string-name>, and <string-name><given-names>J.E.</given-names> <surname>Brush</surname></string-name>, <article-title>Interpreting a covid-19 test result</article-title>. <source>BMJ</source>, <year>2020</year>. <volume>369</volume>: p. <fpage>m1808</fpage>.</mixed-citation></ref>
+<ref id="c5"><label>5.</label><mixed-citation publication-type="journal"><string-name><surname>Mackowiak</surname>, <given-names>P.A.</given-names></string-name>, <string-name><given-names>S.S.</given-names> <surname>Wasserman</surname></string-name>, and <string-name><given-names>M.M.</given-names> <surname>Levine</surname></string-name>, <article-title>A critical appraisal of 98.6 degrees F, the upper limit of the normal body temperature, and other legacies of Carl Reinhold August Wunderlich</article-title>. <source>JAMA</source>, <year>1992</year>. <volume>268</volume>(<issue>12</issue>): p. <fpage>1578</fpage>&#x2013;<lpage>80</lpage>.</mixed-citation></ref>
+<ref id="c6"><label>6.</label><mixed-citation publication-type="journal"><string-name><surname>Liu</surname>, <given-names>K.</given-names></string-name>, <etal>et al.</etal>, <article-title>Clinical characteristics of novel coronavirus cases in tertiary hospitals in Hubei Province</article-title>. <source>Chin Med J (Engl)</source>, <year>2020</year>. <volume>133</volume>(<issue>9</issue>): p. <fpage>1025</fpage>&#x2013;<lpage>1031</lpage>.</mixed-citation></ref>
+<ref id="c7"><label>7.</label><mixed-citation publication-type="journal"><string-name><surname>Obermeyer</surname>, <given-names>Z.</given-names></string-name>, <string-name><given-names>J.K.</given-names> <surname>Samra</surname></string-name>, and <string-name><given-names>S.</given-names> <surname>Mullainathan</surname></string-name>, <article-title>Individual differences in normal body temperature: longitudinal big data analysis of patient records</article-title>. <source>BMJ</source>, <year>2017</year>. <volume>359</volume>: p. <issue>j5468</issue>.</mixed-citation></ref>
+<ref id="c8"><label>8.</label><mixed-citation publication-type="journal"><string-name><surname>Kelly</surname>, <given-names>G.</given-names></string-name>, <article-title>Body temperature variability (Part 1): a review of the history of body temperature and its variability due to site selection, biological rhythms, fitness, and aging</article-title>. <source>Altern Med Rev</source>, <year>2006</year>. <volume>11</volume>(<issue>4</issue>): p. <fpage>278</fpage>&#x2013;<lpage>93</lpage>.</mixed-citation></ref>
+<ref id="c9"><label>9.</label><mixed-citation publication-type="journal"><string-name><surname>Kelly</surname>, <given-names>G.S.</given-names></string-name>, <article-title>Body temperature variability (Part 2): masking influences of body temperature variability and a review of body temperature variability in disease</article-title>. <source>Altern Med Rev</source>, <year>2007</year>. <volume>12</volume>(<issue>1</issue>): p. <fpage>49</fpage>&#x2013;<lpage>62</lpage>.</mixed-citation></ref>
+<ref id="c10"><label>10.</label><mixed-citation publication-type="other"><string-name><surname>Arevalo-Rodriguez</surname>, <given-names>I.</given-names></string-name>, <etal>et al.</etal>, <article-title>FALSE-NEGATIVE RESULTS OF INITIAL RT-PCR ASSAYS FOR COVID-19: A SYSTEMATIC REVIEW</article-title>. <source>medRxiv, 2020: p. 2020.04.16.20066787</source>.</mixed-citation></ref>
+<ref id="c11"><label>11.</label><mixed-citation publication-type="journal"><string-name><surname>Woloshin</surname>, <given-names>S.</given-names></string-name>, <string-name><given-names>N.</given-names> <surname>Patel</surname></string-name>, and <string-name><given-names>A.S.</given-names> <surname>Kesselheim</surname></string-name>, <article-title>False Negative Tests for SARS-CoV-2 Infection - Challenges and Implications</article-title>. <source>N Engl J Med</source>, <year>2020</year>. <volume>383</volume>(<issue>6</issue>): p. <fpage>e38</fpage>.</mixed-citation></ref>
+<ref id="c12"><label>12.</label><mixed-citation publication-type="other"><string-name><surname>Berdahl</surname>, <given-names>C.T.</given-names></string-name>, <etal>et al.</etal>, <article-title>The safety of home discharge for low-risk emergency department patients presenting with coronavirus-like symptoms during the COVID-19 pandemic: A retrospective cohort study</article-title>. <source>J Am Coll Emerg Physicians Open</source>, <year>2020</year>.</mixed-citation></ref>
+<ref id="c13"><label>13.</label><mixed-citation publication-type="journal"><string-name><surname>Obermeyer</surname>, <given-names>Z.</given-names></string-name>, <string-name><given-names>J.K.</given-names> <surname>Samra</surname></string-name>, and <string-name><given-names>S.</given-names> <surname>Mullainathan</surname></string-name>, <article-title>Individual differences in normal body temperature: Longitudinal big data analysis of patient records</article-title>. <source>British Medical Journal</source>, <year>2017</year>. <volume>359</volume>: p. <fpage>j5468</fpage>.</mixed-citation></ref>
+<ref id="c14"><label>14.</label><mixed-citation publication-type="journal"><string-name><surname>Shilaih</surname>, <given-names>M.</given-names></string-name>, <etal>et al.</etal>, <article-title>Modern fertility awareness methods: wrist wearables capture the changes in temperature associated with the menstrual cycle</article-title>. <source>Biosci Rep</source>, <year>2018</year>. <volume>38</volume>(<issue>6</issue>).</mixed-citation></ref>
+<ref id="c15"><label>15.</label><mixed-citation publication-type="journal"><string-name><surname>Hallgren</surname>, <given-names>K.A.</given-names></string-name>, <article-title>Computing Inter-Rater Reliability for Observational Data: An Overview and Tutorial</article-title>. <source>Tutorials in quantitative methods for psychology</source>, <year>2012</year>. <volume>8</volume>(<issue>1</issue>): p. <fpage>23</fpage>&#x2013;<lpage>34</lpage>.</mixed-citation></ref>
+<ref id="c16"><label>16.</label><mixed-citation publication-type="other"><string-name><surname>Cicchetti</surname>, <given-names>D.</given-names></string-name>, <article-title>Interreliability Standards in Psychological Evaluations</article-title>. <source>Psychol Assess</source>, <year>1994</year>: p. <fpage>284</fpage>&#x2013;<lpage>290</lpage>.</mixed-citation></ref>
+<ref id="c17"><label>17.</label><mixed-citation publication-type="book"><string-name><surname>Harrell</surname> <suffix>Jr</suffix>, <given-names>F.E.</given-names></string-name>, <source>Regression modeling strategies: with applications to linear models, logistic and ordinal regression, and survival analysis</source>. <year>2015</year>: <publisher-name>Springer</publisher-name>.</mixed-citation></ref>
+<ref id="c18"><label>18.</label><mixed-citation publication-type="journal"><string-name><surname>Huang</surname>, <given-names>Y.</given-names></string-name>, <etal>et al.</etal>, <article-title>A tutorial on calibration measurements and calibration models for clinical prediction models</article-title>. <source>Journal of the American Medical Informatics Association</source>, <year>2020</year>. <volume>27</volume>(<issue>4</issue>): p. <fpage>621</fpage>&#x2013;<lpage>633</lpage>.</mixed-citation></ref>
+<ref id="c19"><label>19.</label><mixed-citation publication-type="journal"><string-name><surname>DeLong</surname>, <given-names>E.R.</given-names></string-name>, <string-name><given-names>D.M.</given-names> <surname>DeLong</surname></string-name>, and <string-name><given-names>D.L.</given-names> <surname>Clarke-Pearson</surname></string-name>, <article-title>Comparing the areas under two or more correlated receiver operating characteristic curves: a nonparametric approach</article-title>. <source>Biometrics</source>, <year>1988</year>. <volume>44</volume>(<issue>3</issue>): p. <fpage>837</fpage>&#x2013;<lpage>45</lpage>.</mixed-citation></ref>
+<ref id="c20"><label>20.</label><mixed-citation publication-type="journal"><string-name><surname>Smith</surname>, <given-names>G.C.S.</given-names></string-name>, <etal>et al.</etal>, <article-title>Correcting for optimistic prediction in small data sets</article-title>. <source>American Journal of Epidemiology</source>, <year>2014</year>. <volume>180</volume>(<issue>3</issue>): p. <fpage>318</fpage>&#x2013;<lpage>324</lpage>.</mixed-citation></ref>
+<ref id="c21"><label>21.</label><mixed-citation publication-type="journal"><string-name><surname>High</surname>, <given-names>K.P.</given-names></string-name>, <etal>et al.</etal>, <article-title>Clinical practice guideline for the evaluation of fever and infection in older adult residents of long-term care facilities: 2008 update by the Infectious Diseases Society of America</article-title>. <source>Clin Infect Dis</source>, <year>2009</year>. <volume>48</volume>(<issue>2</issue>): p. <fpage>149</fpage>&#x2013;<lpage>71</lpage>.</mixed-citation></ref>
+</ref-list>
+<app-group>
+<app id="app1">
+<label>APPENDICES</label>
+<fig id="figA1" position="float" fig-type="figure">
+<label>Appendix Figure 1.</label>
+<caption><p>Study flow diagram</p></caption>
+<graphic xlink:href="21250261v1_figA1.tif"/>
+</fig>
+</app>
+</app-group>
+</back>
+</article>

@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.2d1 20170631//EN" "JATS-archivearticle1.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" article-type="article" dtd-version="1.2d1" specific-use="production" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="publisher-id">MEDRXIV</journal-id>
+<journal-title-group>
+<journal-title>medRxiv</journal-title>
+<abbrev-journal-title abbrev-type="publisher">medRxiv</abbrev-journal-title>
+</journal-title-group>
+<publisher>
+<publisher-name>Cold Spring Harbor Laboratory</publisher-name>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1101/2020.11.17.20220681</article-id>
+<article-version>1.1</article-version>
+<article-categories>
+<subj-group subj-group-type="hwp-journal-coll">
+<subject>Epidemiology</subject>
+</subj-group>
+</article-categories>
+<title-group>
+<article-title>An efficient distributed algorithm with application to COVID-19 data from heterogeneous clinical sites</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-1213-6699</contrib-id>
+<name><surname>Tong</surname><given-names>Jiayi</given-names></name>
+<degrees>BS</degrees>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Luo</surname><given-names>Chongliang</given-names></name>
+<degrees>PhD</degrees>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Islam</surname><given-names>Md Nazmul</given-names></name>
+<degrees>PhD, MBA</degrees>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Sheils</surname><given-names>Natalie</given-names></name>
+<degrees>PhD</degrees>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Buresh</surname><given-names>John</given-names></name>
+<degrees>BS</degrees>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Edmondson</surname><given-names>Mackenzie</given-names></name>
+<degrees>MS</degrees>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Merkel</surname><given-names>Peter A.</given-names></name>
+<degrees>MD, MPH</degrees>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Lautenbach</surname><given-names>Ebbing</given-names></name>
+<degrees>MD, MPH, MSCE</degrees>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Duan</surname><given-names>Rui</given-names></name>
+<degrees>PhD</degrees>
+<xref ref-type="aff" rid="a3">3</xref>
+</contrib>
+<contrib contrib-type="author" corresp="yes">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-0835-0788</contrib-id>
+<name><surname>Chen</surname><given-names>Yong</given-names></name>
+<degrees>PhD</degrees>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="corresp" rid="cor1">&#x002A;</xref>
+</contrib>
+<aff id="a1"><label>1</label><institution>Perelman School of Medicine, The University of Pennsylvania</institution>, Philadelphia, PA, <country>USA</country></aff>
+<aff id="a2"><label>2</label><institution>UnitedHealth Group</institution>, Minnetonka, MN, <country>USA</country></aff>
+<aff id="a3"><label>3</label><institution>School of Public Health, Harvard University</institution>, MA, <country>USA</country></aff>
+</contrib-group>
+<author-notes>
+<corresp id="cor1"><label>&#x002A;</label>Correspondence author: Yong Chen, University of Pennsylvania, Perelman School of Medicine, Blockley Hall 602, 423 Guardian Drive, Philadelphia, PA 19104, Office: 215-746-8155, E-mail: <email>ychen123@upenn.edu</email></corresp>
+</author-notes>
+<pub-date pub-type="epub">
+<year>2020</year>
+</pub-date>
+<elocation-id>2020.11.17.20220681</elocation-id>
+<history>
+<date date-type="received">
+<day>17</day>
+<month>11</month>
+<year>2020</year>
+</date>
+<date date-type="rev-recd">
+<day>17</day>
+<month>11</month>
+<year>2020</year>
+</date>
+<date date-type="accepted">
+<day>18</day>
+<month>11</month>
+<year>2020</year>
+</date>
+</history>
+<permissions>
+<copyright-statement>&#x00A9; 2020, Posted by Cold Spring Harbor Laboratory</copyright-statement>
+<copyright-year>2020</copyright-year>
+<license><license-p>The copyright holder for this pre-print is the author. All rights reserved. The material may not be redistributed, re-used or adapted without the author's permission.</license-p></license>
+</permissions>
+<self-uri xlink:href="20220681.pdf" content-type="pdf" xlink:role="full-text"/>
+<abstract>
+<title>ABSTRACT</title>
+<sec>
+<title>Objectives</title>
+<p>Integrating electronic health records (EHR) data from several clinical sites offers great opportunities to improve estimation with a more general population compared to analyses based on a single clinical site. However, sharing patient-level data across sites is practically challenging due to concerns about maintaining patient privacy. The objective of this study is to develop a novel distributed algorithm to integrate heterogeneous EHR data from multiple clinical sites without sharing patient-level data.</p>
+</sec>
+<sec>
+<title>Materials and Methods</title>
+<p>The proposed distributed algorithm for binary regression can effectively account for between-site heterogeneity and is communication-efficient. Our method is built on a pairwise likelihood function in the extended Mantel-Haenszel regression, which is known to be statistically highly efficient. We construct a surrogate pairwise likelihood function through approximating the target pairwise likelihood by its surrogate. We show that the proposed surrogate pairwise likelihood leads to a consistent and asymptotically normal estimator by effective communication without sharing individual patient-level data. We study the empirical performance of the proposed method through a systematic simulation study and an application with data of 14,215 COVID-19 patients from 230 clinical sites at UnitedHealth Group Clinical Research Database.</p>
+</sec>
+<sec>
+<title>Results</title>
+<p>The proposed method was shown to perform close to the gold standard approach under extensive simulation settings. When the event rate is &#x003C;5&#x0025;, the relative bias of the proposed estimator is 30&#x0025; smaller than that of the meta-analysis estimator. The proposed method retained high accuracy across different sample sizes and event rates compared with meta-analysis. In the data evaluation, the proposed estimate has a relative bias &#x003C;9&#x0025; when the event rate is &#x003C;1&#x0025;, whereas the meta-analysis estimate has a relative bias at least 10&#x0025; higher than that of the proposed method.</p>
+</sec>
+<sec>
+<title>Conclusions</title>
+<p>Our simulation study and data application demonstrate that the proposed distributed algorithm provides an estimator that is robust to heterogeneity in event rates when effectively integrating data from multiple clinical sites. Our algorithm is therefore an effective alternative to both meta-analysis and existing distributed algorithms for modeling heterogeneous multi-site binary outcomes.</p>
+</sec>
+</abstract>
+<kwd-group kwd-group-type="author">
+<title>Keywords</title>
+<kwd>distributed computing</kwd>
+<kwd>heterogeneity</kwd>
+<kwd>multi-site analysis</kwd>
+<kwd>surrogate pairwise likelihood function</kwd>
+</kwd-group>
+<counts>
+<page-count count="26"/>
+</counts>
+</article-meta>
+<notes>
+<notes notes-type="competing-interest-statement">
+<title>Competing Interest Statement</title><p>The authors have declared no competing interest.</p></notes>
+<notes notes-type="financial-disclosure">
+<title>Funding Statement</title><p>This work was supported in part by the National Institutes of Health grants 1R01LM012607 and 1R01AI130460.
+</p></notes>
+<notes notes-type="disclosures">
+<title>Author Declarations</title><p>I confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.</p><p>Yes</p><p>The details of the IRB/oversight body that provided approval or exemption for the research described are given below:</p><p>This is the IRB exemption from UnitedHealth Group Office of Human Research Affairs (OHRA). The action is approved by the OHRA. Please see the following certificate of action:
+Documents:
+- An efficient distributed algorithm with application to COVID-19 data from heterogeneous clinical sites paper, received 10/29/2020
+Regulatory Determinations:
+The research was determined to qualify as negligible risk and is permissible under exempt category 4 (ii). The research was determined to be exempt as the activities did not identify subjects directly or through identifiers via the claims database, subjects were not contacted, and investigators will not re - identify subjects.
+Notes &amp; Reminders:
+Annual renewal of this project is not required. If any aspects of the project change, please engage the OHRA to determine whether any additional research determinations or risk assessments are needed. Please inform the OHRA when they project and any associated data utilization have concluded.</p><p>All necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived.</p><p>Yes</p><p>I understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).</p><p>Yes</p><p> I have followed all appropriate research reporting guidelines and uploaded the relevant EQUATOR Network research reporting checklist(s) and other pertinent material as supplementary files, if applicable.</p><p>Yes</p></notes>
+</notes>
+</front>
+<body>
+<sec id="s1">
+<title>INTRODUCTION</title>
+<p>Electronic health records (EHR) data have become one of the most well-known data sources for medical and health research use. EHRs contain various elements of patient-level health information, including diagnoses, medications, procedures, imaging, and clinical notes [<xref ref-type="bibr" rid="c1">1</xref>-<xref ref-type="bibr" rid="c4">4</xref>]. Synthesis of this real-world evidence (RWE) from multiple clinical sites provides a larger sample size of the population compared to a single site study [<xref ref-type="bibr" rid="c5">5</xref>]. Analyses using larger populations benefit from better accuracy in estimation and prediction. Furthermore, the integration of research networks inside healthcare systems allows rapid translation and dissemination of research findings into evidence-based healthcare decision making to improve health outcomes, consistent with the idea of a learning health system [<xref ref-type="bibr" rid="c6">6</xref>-<xref ref-type="bibr" rid="c11">11</xref>].</p>
+<p>In the past few years, several successful networks have been founded and become beneficial to multicenter research. One of them is the Observational Health Data Sciences and Informatics (OHDSI) consortium [<xref ref-type="bibr" rid="c12">12</xref>]. OHDSI was founded for the primary purpose of developing open-source tools that could be shared across multiple sites. OHDSI developed the Observational Medical Outcomes Partnership (OMOP) Common Data Model (CDM) for data standardization [<xref ref-type="bibr" rid="c13">13</xref>]. The OMOP allows each institution to transform the local EHR data to the CDM&#x2019;s standards. This procedure makes it feasible for the researchers to develop methods that can be simultaneously applied to the datasets from many institutions. The conversion and standardization of the data format decrease the probability of translation error and also increase the efficiency of data analysis. Another successful network is the National Pediatric Learning Health System (PEDSnet), a National Pediatric Learning Health System, within the PCORnet system [<xref ref-type="bibr" rid="c14">14</xref>,<xref ref-type="bibr" rid="c15">15</xref>]. This network contains eight large pediatric health systems in the US. Comprising clinical information from millions of children, PEDSnet offers the capacity to conduct multicenter pediatric research with broad real-world evidence. The Sentinel System is another example of a multi-site network, a national electronic system for monitoring performance of FDA-regulated medical products [<xref ref-type="bibr" rid="c16">16</xref>].</p>
+<p>In multi-center studies, maintaining privacy of patient data is a major challenge [<xref ref-type="bibr" rid="c17">17</xref>-<xref ref-type="bibr" rid="c19">19</xref>]. Due to data privacy policies, directly sharing patient-level data, especially demographic, comorbidity, and outcome data, is restricted and poorly feasible in practice. The Health Insurance Portability and Accountability Act of 1996 (HIPAA) introduced a privacy rule to regulate use of protected health information (PHI) often found in EHRs, requiring de-identification of PHI before use in biomedical research [<xref ref-type="bibr" rid="c18">18</xref>]. De-identified PHI has been shown to be susceptible to re-identification, causing concern among patients [<xref ref-type="bibr" rid="c20">20</xref>,<xref ref-type="bibr" rid="c21">21</xref>].</p>
+<p>In light of patient privacy concerns, many multicenter EHR-based studies currently conduct analyses by combining shareable summary statistics through meta-analysis [<xref ref-type="bibr" rid="c22">22</xref>-<xref ref-type="bibr" rid="c24">24</xref>]. While relatively simple to use, meta-analysis has been shown to result in biased or imprecise estimation in the context of rare outcomes, as well as with smaller sample sizes [<xref ref-type="bibr" rid="c25">25</xref>]. Other than meta-analysis, several distributed algorithms have been developed and considered in studies with multi-site data. In these distributed algorithms, a model estimation process is decomposed into smaller computational tasks that are distributed to each site. After parallel computation, intermediate results are transferred back to the coordinating center for final synthesis. Under this framework, there is no need to share patient-level data across sites. For example, GLORE (Grid Binary LOgistic Regression) was developed for conducting distributed logistic regressions [<xref ref-type="bibr" rid="c26">26</xref>], and WebDISCO (a Web service for distributed Cox model learning) was developed to fit the Cox proportional hazard model distributively and iteratively [<xref ref-type="bibr" rid="c27">27</xref>]. Both algorithms have been successfully deployed to the pSCANNER consortium [<xref ref-type="bibr" rid="c28">28</xref>]. Through iterative communication of aggregated information across the sites, these two algorithms provide accurate and lossless results, which are equivalent to fitting a model on the pooled data from all sites. However, in practice these two methods can be time-consuming and communication-intensive due to the need for iteratively transferring data. To overcome this limitation, non-iterative privacy-preserving distributed algorithms for logistic regression (termed as ODAL) and Cox model (termed as ODAC) through the construction of a surrogate likelihood have been proposed [<xref ref-type="bibr" rid="c25">25</xref>,<xref ref-type="bibr" rid="c29">29</xref>,<xref ref-type="bibr" rid="c30">30</xref>].</p>
+<p>However, all of the aforementioned distributed algorithms rely on the assumption that data across clinical sites are homogeneous. This assumption is often inaccurate in biomedical studies because it ignores the heterogeneity caused by the intrinsic differences across clinical sites or population characteristics. Ignoring heterogeneity across clinical sites can induce biases in estimating associations between the exposures of interest and outcomes [<xref ref-type="bibr" rid="c17">17</xref>,<xref ref-type="bibr" rid="c31">31</xref>]. Recently, a single Robust-ODAL algorithm was proposed to account for the heterogeneity across the clinical sites, but it only considers the limited situation when there exist a small number of outlying studies within the network [<xref ref-type="bibr" rid="c32">32</xref>].</p>
+<p>One motivating example is the EHR data of 14,215 patients who were diagnosed with COVID-19 prior to June 29, 2020 from 230 sites in the UnitedHealth Group Clinical Research Database. There is a substantial difference in clinical practices across these sites due to such factors as geographical variability in disease patterns, variations in patients&#x2019; characteristics, and regional differences in practice patterns. Therefore, developing methods to account for the heterogeneity in the data is especially needed when analyzing multi-site data within the networks.</p>
+<p>To fill the above methodology gap, in this paper, we develop an effective privacy-preserving distributed data integration algorithm. We propose a distributed algorithm for binary regression to account for between-site heterogeneity by efficient communication (i.e., only requires one round of communication of aggregated information among the sites). Influenced by the pairwise likelihood in the extended Mantel-Haenszel regression [<xref ref-type="bibr" rid="c31">31</xref>] and the idea proposed by Jordan et al. (2019) [<xref ref-type="bibr" rid="c33">33</xref>], we construct a surrogate pairwise likelihood through approximating the target pairwise likelihood by its surrogate. We show that the proposed surrogate pairwise likelihood leads to a consistent and asymptotically normal estimator, which is asymptotically equivalent to the maximum pairwise likelihood estimator based on the pooled data. This result is established based on U statistics, which is different from Jordan et al. (2019) [<xref ref-type="bibr" rid="c33">33</xref>]. We evaluate the empirical performance of the proposed method through simulation studies and apply the proposed method to investigate the associations between length of stay and the risk factors of interests. <bold><xref rid="fig1" ref-type="fig">Figure 1</xref></bold> shows the comparisons between the pooled analysis, meta-analysis method, iterative distributed algorithms, and the proposed method from various aspects. The proposed method can retain high estimation accuracy, protect patient privacy, handle heterogeneity, and save communication cost compared to the others.</p>
+<fig id="fig1" position="float" fig-type="figure">
+<label>Figure 1:</label>
+<caption><p>Comparisons between pooled analysis, meta-analysis, iterative distributed algorithms, and the proposed method. The proposed method can retain high accuracy when estimating association between exposures and outcome of interest. In addition, the proposed method can handle heterogeneity across the sites and protect patient privacy with efficient communication.</p></caption>
+<graphic xlink:href="20220681v1_fig1.tif"/>
+</fig>
+</sec>
+<sec id="s2">
+<title>MATERIALS AND METHODS</title>
+<sec id="s2a">
+<title>Surrogate Pairwise Likelihood</title>
+<p>Suppose we have K different clinical sites. To keep the notation simple, we assume that each site has an equal number of n patients. Let {<italic>x</italic><sub><italic>ij</italic></sub>} denote the collection of risk factors and {<italic>y</italic><sub><italic>ij</italic></sub>} denote the independent response variable for the j-th patient in the i-th site where <italic>j</italic> = 1,&#x2026;, <italic>n</italic> and <italic>i</italic>= 1,&#x2026;, <italic>k</italic>. The logistic regression model to characterize the association between the risk factors and the outcome is
+<disp-formula id="eqn1">
+<alternatives><graphic xlink:href="20220681v1_eqn1.gif"/></alternatives>
+</disp-formula>
+where <italic>logit</italic>(<italic>p</italic>) =<italic>log</italic>{<italic>p</italic>/(1 &#x2212; <italic>p</italic>)},<italic>&#x03B1;</italic><sub><italic>i</italic></sub> represents the site-specific prevalence of response variable, and <italic>&#x03B2;</italic> is the log odds ratio, meaning the association between risk factors <italic>x</italic><sub><italic>ij</italic></sub> and the outcome <italic>y</italic><sub><italic>ij</italic></sub>.</p>
+<p>Following Liang (1987)&#x2019;s extended Mantel-Haenszel regression, the pairwise likelihood can be constructed by conditioning (<italic>y</italic><sub><italic>ij;</italic></sub> <italic>y</italic><sub><italic>il</italic></sub>) on their order statistics. The pairwise likelihood for the i-th site can be written as
+<disp-formula id="eqn2">
+<alternatives><graphic xlink:href="20220681v1_eqn2.gif"/></alternatives>
+</disp-formula>
+We note that unlike generalized linear mixed effect model, where site-specific effects <italic>&#x03B1;</italic><sub><italic>i</italic></sub>&#x2019;s are assumed to follow a known distribution, the conditional pairwise likelihood eliminates the nuisance parameters (<italic>&#x03B1;</italic><sub><italic>1</italic></sub>,&#x2026;, <italic>&#x03B1;</italic><sub><italic>k</italic></sub>) through the conditioning technique, hence avoids estimation of the nuisance parameters. Moreover, as studied in Liang (1987), the estimator, defined as the maximum of the pairwise likelihood, retains high statistical efficiency.</p>
+<p>Now summing over all K sites, the overall likelihood function can be written as the product of <italic>L</italic><sub><italic>i</italic></sub>,
+<disp-formula id="eqn3">
+<alternatives><graphic xlink:href="20220681v1_eqn3.gif"/></alternatives>
+</disp-formula>
+which can be calculated if we have access to the patient-level data from all sites.</p>
+<p>However, in practice, the individual patient-level data are only available at the local site and for the rest of the clinical sites in the network, we can only access aggregated information. Motivated by the surrogate likelihood in Jordan et al. (2019) which approximates the target pairwise likelihood by the likelihood from a single site, we propose a surrogate pairwise likelihood which can still handle the heterogeneity across the clinical sites.</p>
+<p>For simplicity, we assume the first site as the local site, where we have access to the individual patient-level data. Let <italic>l</italic><sub>1</sub>(<italic>&#x03B2;</italic>) denote the pairwise log-likelihood function for the local site,<inline-formula><alternatives><inline-graphic xlink:href="20220681v1_inline1.gif"/></alternatives></inline-formula>. We construct the following surrogate log pairwise likelihood function <inline-formula><alternatives><inline-graphic xlink:href="20220681v1_inline2.gif"/></alternatives></inline-formula> with the patient-level data from the local site, the initial value <inline-formula><alternatives><inline-graphic xlink:href="20220681v1_inline3.gif"/></alternatives></inline-formula>, and the aggregated information <inline-formula><alternatives><inline-graphic xlink:href="20220681v1_inline4.gif"/></alternatives></inline-formula> and <inline-formula><alternatives><inline-graphic xlink:href="20220681v1_inline5.gif"/></alternatives></inline-formula>. Specifically, we define
+<disp-formula id="eqn4">
+<alternatives><graphic xlink:href="20220681v1_eqn4.gif"/></alternatives>
+</disp-formula>
+where <italic>l</italic><sub>1</sub> (<italic>&#x03B2;</italic>) is the log pairwise likelihood function calculated from patient-level data in the local site; <inline-formula><alternatives><inline-graphic xlink:href="20220681v1_inline6.gif"/></alternatives></inline-formula> and <inline-formula><alternatives><inline-graphic xlink:href="20220681v1_inline7.gif"/></alternatives></inline-formula> are the first and second gradients of the surrogate pairwise likelihood function at <inline-formula><alternatives><inline-graphic xlink:href="20220681v1_inline8.gif"/></alternatives></inline-formula> respectively. By maximizing the surrogate pairwise likelihood <inline-formula><alternatives><inline-graphic xlink:href="20220681v1_inline9.gif"/></alternatives></inline-formula> we obtain the surrogate estimator <inline-formula><alternatives><inline-graphic xlink:href="20220681v1_inline10.gif"/></alternatives></inline-formula>.</p>
+<p>A natural choice of the initial value of <inline-formula><alternatives><inline-graphic xlink:href="20220681v1_inline11.gif"/></alternatives></inline-formula> is the maximum likelihood estimator of the local site <italic>l</italic><sub>1</sub> (<italic>&#x03B2;</italic>). Alternatively, since the performance of the surrogate estimator <inline-formula><alternatives><inline-graphic xlink:href="20220681v1_inline12.gif"/></alternatives></inline-formula> may depend on the choice of the initial values, we may use the inverse variance weighted average of the estimates from all sites, i.e.,
+<disp-formula id="eqn5">
+<alternatives><graphic xlink:href="20220681v1_eqn5.gif"/></alternatives>
+</disp-formula>
+where <inline-formula><alternatives><inline-graphic xlink:href="20220681v1_inline13.gif"/></alternatives></inline-formula> is the maximum of the pairwise likelihood and <inline-formula><alternatives><inline-graphic xlink:href="20220681v1_inline14.gif"/></alternatives></inline-formula> is the covariance matrix of <inline-formula><alternatives><inline-graphic xlink:href="20220681v1_inline15.gif"/></alternatives></inline-formula> in the i-th site; <inline-formula><alternatives><inline-graphic xlink:href="20220681v1_inline16.gif"/></alternatives></inline-formula> and <inline-formula><alternatives><inline-graphic xlink:href="20220681v1_inline17.gif"/></alternatives></inline-formula> are functions of <italic>&#x03B2;</italic> for the i-th site. The definition of the covariance matrix, the asymptotic distribution of the surrogate estimator <inline-formula><alternatives><inline-graphic xlink:href="20220681v1_inline18.gif"/></alternatives></inline-formula>, the derivation of the limiting distribution of <inline-formula><alternatives><inline-graphic xlink:href="20220681v1_inline19.gif"/></alternatives></inline-formula> are provided in Supplementary Appendix 1.</p>
+<statement id="alg1">
+<label>Algorithm</label>
+<p>The proposed surrogate pairwise likelihood leads to the following algorithm.</p>
+<p><bold>Algorithm: Proposed method</bold></p>
+<p><fig id="alg1a" position="float" fig-type="figure">
+<graphic xlink:href="20220681v1_alg1.tif"/>
+</fig></p>
+</statement>
+<p>In the following figure, we provide a graphical explanation to illustrate the implementation of the proposed algorithm.</p>
+<statement id="rem1">
+<label>REMARK 1:</label>
+<p>We implemented the proposed algorithm with R calling C programming language, which is a few dozen times faster than using R programming language only. Such implementation is necessary for the application of our algorithm to real-world settings where the number of patients in each site is relatively large.</p>
+</statement>
+<statement id="rem2">
+<label>REMARK 2:</label>
+<p>In the situation that each site is treated as the local site, each site can obtain its own surrogate pairwise likelihood estimate. These estimates can be further synthesized together with the inverse variance weighted average method to obtain an overall estimate.</p>
+</statement>
+</sec>
+<sec id="s2b">
+<title>Simulation Design</title>
+<p>To evaluate the empirical performance of the proposed algorithm, we conduct a simulation study to cover a wide spectrum of practical settings. We set the total number of sites, K = 5 or 20 and sample size of each site is 1000 (i.e., the total numbers of patients are 5000 and 20,000 respectively.)</p>
+<p>In our simulation study, we consider a setting where a binary outcome is associated with two risk factors, (<italic>x</italic><sub>1</sub>,<italic>x</italic><sub>2</sub>), where <italic>x</italic><sub>1</sub> represents a continuous predictor (e.g., age) and <italic>x</italic><sub>2</sub> is a binary predictor (e.g., sex, race). The binary outcome Y (e.g., presence/absence of hospitalization) is generated from a Bernoulli distribution, with the conditional probability specified by the following logistic regression model,
+<disp-formula id="ueqn1">
+<alternatives><graphic xlink:href="20220681v1_ueqn1.gif"/></alternatives>
+</disp-formula>
+where <italic>&#x03B2;</italic><sub>1</sub> and <italic>&#x03B2;</italic><sub>2</sub> are the coefficients of <italic>x</italic><sub>1</sub> and <italic>x</italic><sub>2</sub> respectively, and <italic>&#x03B2;</italic><sub>0</sub> is the intercept, characterizing the prevalence of the outcome Y. We set the true value of <italic>&#x03B2;</italic><sub>1</sub> is 1 and of <italic>&#x03B2;</italic><sub>2</sub> is -1. The distribution of <italic>x</italic><sub>1</sub> for each study site is <italic>Uni</italic> (&#x2212;1,1) to mimic the empirical distribution of variable &#x201C;age&#x201D;, and <italic>x</italic><sub>2</sub> is generated from a Bernoulli distribution with probability equal to 0.5 to mimic the empirical distribution of variable &#x201C;sex&#x201D;.</p>
+<p>We simulated three scenarios of the disease prevalence. The medians of the prevalence are 20&#x0025;, 5&#x0025;, and 0.5&#x0025;. Specifically, the prevalence of the sites is randomly generated from a range of values as presented in <bold><xref rid="fig3" ref-type="fig">Figure 3</xref></bold>. We also simulated two scenarios of heterogeneity under each disease prevalence to mimic less heterogeneous cases (upper panel) and more heterogeneous (lower panel) cases, where the prevalence ranges are larger than those of the less heterogeneous cases.</p>
+<fig id="fig2" position="float" fig-type="figure">
+<label>Figure 2:</label>
+<caption><p>Illustration of the proposed method. Step I: Using data from each local site to estimate <inline-formula><alternatives><inline-graphic xlink:href="20220681v1_inline21.gif"/></alternatives></inline-formula>, where <italic>i</italic> = 1,&#x2026;,<italic>K</italic> and broadcast the values to calculate the weighted initial value <inline-formula><alternatives><inline-graphic xlink:href="20220681v1_inline22.gif"/></alternatives></inline-formula>. Step II: With <inline-formula><alternatives><inline-graphic xlink:href="20220681v1_inline23.gif"/></alternatives></inline-formula>, calculating the intermediate terms <inline-formula><alternatives><inline-graphic xlink:href="20220681v1_inline24.gif"/></alternatives></inline-formula> at each site and then transfer the results back to the local site. With the intermediate results and <inline-formula><alternatives><inline-graphic xlink:href="20220681v1_inline25.gif"/></alternatives></inline-formula> to construct the surrogate pairwise log-likelihood function <inline-formula><alternatives><inline-graphic xlink:href="20220681v1_inline26.gif"/></alternatives></inline-formula> in the local site. Maximizing <inline-formula><alternatives><inline-graphic xlink:href="20220681v1_inline27.gif"/></alternatives></inline-formula> to obtain the estimator <inline-formula><alternatives><inline-graphic xlink:href="20220681v1_inline28.gif"/></alternatives></inline-formula>.</p></caption>
+<graphic xlink:href="20220681v1_fig2.tif"/>
+</fig>
+<fig id="fig3" position="float" fig-type="figure">
+<label>Figure 3:</label>
+<caption><p><bold>Upper panel</bold>: relative bias of <italic>&#x03B2;</italic><sub>1</sub> estimation compared with the pairwise likelihood method under three scenarios with median prevalence 20&#x0025;, 5&#x0025;, and 0.5&#x0025; when the total number of sites is 5 or 20 (i.e., K = 5 or 20). <bold>Lower panel</bold>: relative bias of <italic>&#x03B2;</italic><sub>1</sub> estimation compared with the pairwise likelihood method under three scenarios with median prevalence 20&#x0025;, 5&#x0025;, and 0.5&#x0025; with larger heterogeneity (i.e., larger prevalence range than upper panel) when the total number of sites is 5 or 20 (i.e., K = 5 or 20).</p></caption>
+<graphic xlink:href="20220681v1_fig3.tif"/>
+</fig>
+<p>Under each scenario, we compared the proposed method with the pairwise likelihood method (Liang, 1987), which can be treated as the gold standard and the commonly used meta-analysis. In the pairwise likelihood method, we assume that we have the access to all of the patient-level data. The simulation was conducted with 100 replications.</p>
+</sec>
+<sec id="s2c">
+<title>Data Evaluation</title>
+<p>Our analytical dataset is composed of hospitalized patients who were diagnosed with COVID-19 prior to June 29, 2020 from a single large national health insurer, which covers a broad swath of the population. The data are from multiple EHR systems including EPIC [<xref ref-type="bibr" rid="c34">34</xref>], Cerner [<xref ref-type="bibr" rid="c35">35</xref>], and others. The data are recorded from <italic>K</italic> = 230 sites with <inline-formula><alternatives><inline-graphic xlink:href="20220681v1_inline20.gif"/></alternatives></inline-formula> insured (Commercial and Medicare) patients; see <bold><xref rid="fig4" ref-type="fig">Figure 4</xref> (a)</bold> for the details of inclusion-exclusion criteria and the distribution of COVID patients across the United States. Our objective is to develop an association model between clinical-and-demographic covariates (i.e., age, sex, line of business, and Charlson comorbidity index) and therapeutic patient outcomes. More details about the data quality are provided in Supplementary Appendix 2.</p>
+<fig id="fig4" position="float" fig-type="figure">
+<label>Figure 4:</label>
+<caption><p>(a) Diagram of the patient inclusion-exclusion criteria. (b) Box plots of the prevalence rates of composite outcomes of 230 hospitals. (c) COVID-19 cases distribution: number of COVID-19 hospitalizations included in the study are represented across 47 states.</p></caption>
+<graphic xlink:href="20220681v1_fig4.tif"/>
+</fig>
+<p>Outcomes are defined by combining both hospitalizations (days) and the status of patients being expired (i.e., a binary value taking value 1 if a patient is deceased or 0 otherwise). Consider three composite binary outcomes which take values 1 if the event occurs, and 0, otherwise. Here the events are defined as (a) LOS &#x003E; 1 week and patient died, (b) LOS &#x003E; 3 weeks and patient died, and (c) LOS &#x003E; 4 weeks and patient died, respectively. <bold><xref rid="fig4" ref-type="fig">Figure 4</xref> (b)</bold> illustrates the prevalence rates of composite outcomes by 230 hospitals and <bold><xref rid="fig4" ref-type="fig">Figure 4</xref> (c)</bold> shows the number of COVID-19 hospitalizations included in the study across 47 states in the U.S. These two figures exhibit substantial variation in prevalence rates across sites. Moreover, patients admitted within the same hospital are subject to somewhat similar care, administrative facilities, and treatments provided by the same physicians. This phenomenon leads us to treat sites as internally homogeneous and externally heterogeneous blocks. For details of the covariates, we refer to <bold><xref rid="tbl1" ref-type="table">Table 1</xref></bold>.</p>
+<table-wrap id="tbl1" orientation="portrait" position="float">
+<label>Table 1.</label>
+<caption><p>Summary characteristics of the 14,215 patients from 230 hospitals in our population.</p></caption>
+<graphic xlink:href="20220681v1_tbl1.tif"/>
+</table-wrap>
+</sec>
+</sec>
+<sec id="s3">
+<title>RESULTS</title>
+<sec id="s3a">
+<title>Simulation studies results</title>
+<p>For simplicity, we only present the results for the estimation of coefficient <italic>&#x03B2;</italic><sub>1</sub> and the results for the other coefficients are similar. <bold><xref rid="fig3" ref-type="fig">Figure 3</xref></bold> shows the violin plot of the relative bias compared with the pairwise likelihood method under different numbers of sites and event rates. The first row in each panel is for the results when the total number sites, K = 5, and the second row is for K = 20. The black dashed line represents zero relative bias compared with the gold standard method. From the figure we observe that for all scenarios, the proposed method obtains smaller relative bias compared with meta-analysis. Importantly, as the event rate decreases under both less and more heterogeneous cases, the meta-analysis estimator is observed to have larger bias. When the event rate is &#x003C;5&#x0025;, the relative bias of the proposed estimator is 30&#x0025; smaller than that of the meta-analysis estimator. In summary, the proposed method can provide better performance than the meta-analysis estimators to handle the heterogeneity across the clinical sites when the event is rare.</p>
+</sec>
+<sec id="s3b">
+<title>Data evaluation results</title>
+<p>We primarily focus on estimating and comparing parameter estimates by the proposed method and the meta-analysis method. We stress that the parameter estimates need to be interpreted with caution since the effects&#x2019; magnitudes or directions might be misleading without adjusting for potential confounders in the model. <bold><xref rid="fig5" ref-type="fig">Figure 5</xref></bold> illustrates the results obtained by the pairwise likelihood method (i.e., gold standard), the proposed method, and meta-analysis. As the prevalence rate decreases (i.e., in rare events), the proposed method outperforms meta-analysis in terms of estimating parameters. Specifically, the odds ratio (OR) of the proposed method remains closer to that of the gold standard approach, compared with the OR of meta-analysis. The proposed estimates have a relative bias &#x003C;9&#x0025; when the event rate is &#x003C;1&#x0025;, whereas the meta-analysis estimates have a relative bias at least 10&#x0025; higher than that of the proposed method. This observation matches with that of the simulation study.</p>
+<fig id="fig5" position="float" fig-type="figure">
+<label>Figure 5:</label>
+<caption><p>Point estimates and 95&#x0025; confidence intervals (CI) for the association (in odds ratio scale) between the LOS (i.e., length of stay) and covariates (i.e., sex, age, Charlson score, line of business, from left to right). Each row represents an event rate of the outcome: 6&#x0025;, 2&#x0025;, and &#x003C;1&#x0025; from top to bottom. Each column represents the estimation of the covariate.</p></caption>
+<graphic xlink:href="20220681v1_fig5.tif"/>
+</fig>
+<p>Besides, meta-analysis underestimates variance (or standard error of estimates) leading to far narrower confidence intervals relative to those of the gold standard method, especially for rare events. Ignoring between-and-within sites correlation in meta-analysis is likely to induce bias and underestimate uncertainty in parameter estimates leading to conflicting inference about the testing of significance of the effect size. For example, 95&#x0025; confidence intervals of ORs for Charlson score based on meta-analysis does not contain OR value of one implying its significance, which is inconsistent with the inference based on the gold standard method. In contrast, the proposed method produces comparable inferences to the gold standard method.</p>
+</sec>
+</sec>
+<sec id="s4">
+<title>DISCUSSION</title>
+<p>In this paper, we proposed an effective privacy-preserving distributed algorithm for modeling binary outcomes while accounting for heterogeneity across clinical sites. Motivated by real-world multicenter data, the proposed method requires transferring initial values and intermediate information instead of patient-level data. Our algorithm provides an estimator that is robust to heterogeneity in event rates. In simulations, the proposed method is shown to have higher accuracy than meta-analysis when the outcome is relatively rare, suggesting its utility in a rare-event context.</p>
+<p>There are several advantages of our proposed algorithm compared to existing methods for privacy-preserving data analysis. Relative to meta-analysis, our method accesses patient data at a higher granularity while requiring minimal additional effort to institute. For multi-site studies operating under a common data model, such as OHDSI, analyses using our method can be carried out at individual sites concurrently without the need for any site-specific modifications. In addition, there are many benefits of using our method compared to existing distributed algorithms. First, compared to the iterative algorithms such as GLORE and WebDISCO [<xref ref-type="bibr" rid="c26">26</xref>,<xref ref-type="bibr" rid="c27">27</xref>], the proposed algorithm does not require iterative communication across the sites, leading to the reduction in communication costs and administrative efforts. Secondly, to implement the proposed method, the patient-level data are only required in one single site. For the other sites within the network, the aggregated information will be used instead of patient-level data transfer across the sites to construct the surrogate pairwise likelihood function. Given the understandable privacy- and proprietary-related sensitivities health systems have to provide &#x201C;outside&#x201D; collaborators with access to patient-level data, limiting the need to use such data to only one site would be extremely beneficial to a multi-site project in terms of feasibility, costs, and time. Thirdly, by canceling out the baseline probability function, the proposed method can handle the heterogeneity in the event rate between the sites. In addition, the proof of the proposed method is established based on U statistics and is different from that of Jordan et al. (2019) [<xref ref-type="bibr" rid="c33">33</xref>]. In terms of computational complexity, the implementation of the proposed method is slow when the sample size is large compared with the traditional regression model. We thus implemented the algorithm with R calling C, which is a few dozen times faster than using the R programming language only. The R and C code will be made available at <ext-link ext-link-type="uri" xlink:href="https://github.com/Penncil">https://github.com/Penncil</ext-link> and through our R package: &#x2018;pda&#x2019;.</p>
+<p>To investigate the proposed non-iterative distributed algorithm, we can extend it in several aspects. First, the proposed pairwise likelihood function can only handle the heterogeneity of the intercepts in the regression model. To handle the other types of heterogeneity (e.g., heterogeneous effects of the predictors), more robust algorithms should be developed. Secondly, we are going to develop methods for other types of outcomes, such as continuous and time-to-event data. In addition, the development of distributed algorithms to handle the missingness in the longitudinal EHR is needed in the future. Lastly, we have been working on the development of the open-source software R package to implement the proposed distributed algorithm within a multicenter network. We believe that the proposed algorithm would be a robust method to account for the heterogeneity across multiple clinical sites, leading to a better data integration framework inside health systems.</p>
+</sec>
+<sec id="s5">
+<title>CONCLUSION</title>
+<p>The proposed distributed algorithm provides an estimator that is robust to heterogeneity in event rates when effectively integrating data from multiple clinical sites. Through a simulation study and a real-world use case using data from the UnitedHealth Group Clinical Research Database, the proposed method is shown to be an effective alternative to both meta-analysis and existing distributed algorithms for modeling heterogeneous multi-site binary outcomes.</p>
+</sec>
+<sec sec-type="supplementary-material">
+<title>Supporting information</title>
+<supplementary-material>
+<label>Supplementary Appendix</label>
+<media xlink:href="supplements/220681_file03.pdf" />
+</supplementary-material>
+</sec>
+</body>
+<back>
+<sec sec-type="data-availability">
+<title>Data Availability</title>
+<p>The dataset is composed of 14,215 hospitalized patients who were diagnosed with COVID-19 prior to June 29, 2020 from a single large national health insurer at UnitedHealth Group Clinical Research Database, which covers a broad swath of the population. The data are from multiple EHR systems including EPIC, Cerner, and others. The data are proprietary and are not available for public use but can be made available to editors and their approved auditors under a data use agreement to confirm the findings of the current study.</p>
+</sec>
+<sec id="s6">
+<title>FUNDING</title>
+<p>This work was supported in part by the National Institutes of Health grants 1R01LM012607 and 1R01AI130460.</p>
+</sec>
+<sec id="s7">
+<title>AUTHOR CONTRIBUTIONS</title>
+<p>JT and YC designed methods and experiments; MI, NS, and JN provided the dataset from UnitedHealth Group Clinical Research Database for data analysis; CL, RD and YC guided the theoretical development and dataset generation for the simulation study; JT generated the simulation datasets, conducted simulation experiments; MI, NS and JB conducted data analysis of the EHR data from the UnitedHealth Group; all authors interpreted the results and provided instructive comments; JT drafted the main manuscript. All authors have approved the manuscript.</p>
+</sec>
+<sec id="s8">
+<title>CONFLICT OF INTEREST STATEMENT</title>
+<p>The authors have no competing interests to declare.</p>
+</sec>
+<ref-list>
+<title>REFERENCES</title>
+<ref id="c1"><label>1</label><mixed-citation publication-type="journal"><string-name><surname>Sherman</surname> <given-names>RE</given-names></string-name>, <string-name><surname>Anderson</surname> <given-names>SA</given-names></string-name>, <string-name><surname>Dal Pan</surname> <given-names>GJ</given-names></string-name>, <etal>et al.</etal> <article-title>Real-world evidence&#x2014;what is it and what can it tell us</article-title>. <source>N Engl J Med</source> <year>2016</year>;<volume>375</volume>:<fpage>2293</fpage>&#x2013;<lpage>7</lpage>.</mixed-citation></ref>
+<ref id="c2"><label>2</label><mixed-citation publication-type="other"><collab>Food US, Administration D, Others</collab>. <article-title>Use of real-world evidence to support regulatory decision-making for medical devices: guidance for industry and Food and Drug Administration staff</article-title>. <source>Silver Spring, MD: US Food and Drug Administration</source> <year>2017</year>.</mixed-citation></ref>
+<ref id="c3"><label>3</label><mixed-citation publication-type="other"><string-name><surname>Food</surname> <given-names>US</given-names></string-name>, <string-name><surname>Administration</surname> <given-names>D</given-names></string-name>, <article-title>Others. Use of electronic health record data in clinical investigations: guidance for industry</article-title>. <source>Silver Spring, MD: US Department of Health and Human Services</source> <year>2018</year>.</mixed-citation></ref>
+<ref id="c4"><label>4</label><mixed-citation publication-type="other"><collab>Center for Drug Evaluation and Research</collab>. <article-title>Submitting Documents Using Real-World Data and Real-World Evidence</article-title>. <source>FDA Med Bull</source><ext-link ext-link-type="uri" xlink:href="http://www.fda.gov/regulatory-information/search-fda-guidance-documents/submitting-documents-using-real-world-data-and-real-world-evidence-fda-drugs-and-biologics-guidance">www.fda.gov/regulatory-information/search-fda-guidance-documents/submitting-documents-using-real-world-data-and-real-world-evidence-fda-drugs-and-biologics-guidance</ext-link></mixed-citation></ref>
+<ref id="c5"><label>5</label><mixed-citation publication-type="journal"><string-name><surname>Bowens</surname> <given-names>FM</given-names></string-name>, <string-name><surname>Frye</surname> <given-names>PA</given-names></string-name>, <string-name><surname>Jones</surname> <given-names>WA</given-names></string-name>. <article-title>Health information technology: integration of clinical workflow into meaningful use of electronic health records</article-title>. <source>Perspect Health Inf Manag</source> <year>2010</year>;<volume>7</volume>:<fpage>1d</fpage>.</mixed-citation></ref>
+<ref id="c6"><label>6</label><mixed-citation publication-type="journal"><string-name><surname>Friedman</surname> <given-names>CP</given-names></string-name>, <string-name><surname>Wong</surname> <given-names>AK</given-names></string-name>, <string-name><surname>Blumenthal</surname> <given-names>D.</given-names></string-name> <article-title>Achieving a nationwide learning health system</article-title>. <source>Sci Transl Med</source> <year>2010</year>;<volume>2</volume>:<fpage>57cm29</fpage>.</mixed-citation></ref>
+<ref id="c7"><label>7</label><mixed-citation publication-type="journal"><string-name><surname>Weng</surname> <given-names>C</given-names></string-name>, <string-name><surname>Appelbaum</surname> <given-names>P</given-names></string-name>, <string-name><surname>Hripcsak</surname> <given-names>G</given-names></string-name>, <etal>et al.</etal> <article-title>Using EHRs to integrate research with patient care: promises and challenges</article-title>. <source>J Am Med Inform Assoc</source> <year>2012</year>;<volume>19</volume>:<fpage>684</fpage>&#x2013;<lpage>7</lpage>.</mixed-citation></ref>
+<ref id="c8"><label>8</label><mixed-citation publication-type="journal"><string-name><surname>Greene</surname> <given-names>SM</given-names></string-name>, <string-name><surname>Reid</surname> <given-names>RJ</given-names></string-name>, <string-name><surname>Larson</surname> <given-names>EB</given-names></string-name>. <article-title>Implementing the learning health system: from concept to action</article-title>. <source>Ann Intern Med</source> <year>2012</year>;<volume>157</volume>:<fpage>207</fpage>&#x2013;<lpage>10</lpage>.</mixed-citation></ref>
+<ref id="c9"><label>9</label><mixed-citation publication-type="journal"><string-name><surname>Smoyer</surname> <given-names>WE</given-names></string-name>, <string-name><surname>Embi</surname> <given-names>PJ</given-names></string-name>, <string-name><surname>Moffatt-Bruce</surname> <given-names>S.</given-names></string-name> <article-title>Creating Local Learning Health Systems: Think Globally, Act Locally</article-title>. <source>JAMA</source> <year>2016</year>;<volume>316</volume>:<fpage>2481</fpage>&#x2013;<lpage>2</lpage>.</mixed-citation></ref>
+<ref id="c10"><label>10</label><mixed-citation publication-type="journal"><string-name><surname>Maro</surname> <given-names>JC</given-names></string-name>, <string-name><surname>Platt</surname> <given-names>R</given-names></string-name>, <string-name><surname>Holmes</surname> <given-names>JH</given-names></string-name>, <etal>et al.</etal> <article-title>Design of a national distributed health data network</article-title>. <source>Ann Intern Med</source> <year>2009</year>;<volume>151</volume>:<fpage>341</fpage>&#x2013;<lpage>4</lpage>.</mixed-citation></ref>
+<ref id="c11"><label>11</label><mixed-citation publication-type="journal"><string-name><surname>Brown</surname> <given-names>JS</given-names></string-name>, <string-name><surname>Holmes</surname> <given-names>JH</given-names></string-name>, <string-name><surname>Shah</surname> <given-names>K</given-names></string-name>, <etal>et al.</etal> <article-title>Distributed health data networks: a practical and preferred approach to multi-institutional evaluations of comparative effectiveness, safety, and quality of care</article-title>. <source>Med Care</source> <year>2010</year>;<volume>48</volume>:<fpage>S45</fpage>&#x2013;<lpage>51</lpage>.</mixed-citation></ref>
+<ref id="c12"><label>12</label><mixed-citation publication-type="journal"><string-name><surname>Hripcsak</surname> <given-names>G</given-names></string-name>, <string-name><surname>Duke</surname> <given-names>JD</given-names></string-name>, <string-name><surname>Shah</surname> <given-names>NH</given-names></string-name>, <etal>et al.</etal> <article-title>Observational Health Data Sciences and Informatics (OHDSI): Opportunities for Observational Researchers</article-title>. <source>Stud Health Technol Inform</source> <year>2015</year>;<volume>216</volume>:<fpage>574</fpage>&#x2013;<lpage>8</lpage>.</mixed-citation></ref>
+<ref id="c13"><label>13</label><mixed-citation publication-type="journal"><string-name><surname>Overhage</surname> <given-names>JM</given-names></string-name>, <string-name><surname>Ryan</surname> <given-names>PB</given-names></string-name>, <string-name><surname>Reich</surname> <given-names>CG</given-names></string-name>, <etal>et al.</etal> <article-title>Validation of a common data model for active safety surveillance research</article-title>. <source>J Am Med Inform Assoc</source> <year>2012</year>;<volume>19</volume>:<fpage>54</fpage>&#x2013;<lpage>60</lpage>.</mixed-citation></ref>
+<ref id="c14"><label>14</label><mixed-citation publication-type="journal"><string-name><surname>Forrest</surname> <given-names>CB</given-names></string-name>, <string-name><surname>Margolis</surname> <given-names>PA</given-names></string-name>, <string-name><surname>Bailey</surname> <given-names>LC</given-names></string-name>, <etal>et al.</etal> <article-title>PEDSnet: a National Pediatric Learning Health System</article-title>. <source>J Am Med Inform Assoc</source> <year>2014</year>;<volume>21</volume>:<fpage>602</fpage>&#x2013;<lpage>6</lpage>.</mixed-citation></ref>
+<ref id="c15"><label>15</label><mixed-citation publication-type="journal"><string-name><surname>Fleurence</surname> <given-names>RL</given-names></string-name>, <string-name><surname>Curtis</surname> <given-names>LH</given-names></string-name>, <string-name><surname>Califf</surname> <given-names>RM</given-names></string-name>, <etal>et al.</etal> <article-title>Launching PCORnet, a national patient-centered clinical research network</article-title>. <source>J Am Med Inform Assoc</source> <year>2014</year>;<volume>21</volume>:<fpage>578</fpage>&#x2013;<lpage>82</lpage>.</mixed-citation></ref>
+<ref id="c16"><label>16</label><mixed-citation publication-type="journal"><string-name><surname>Platt</surname> <given-names>R</given-names></string-name>, <string-name><surname>Carnahan</surname> <given-names>RM</given-names></string-name>, <string-name><surname>Brown</surname> <given-names>JS</given-names></string-name>, <etal>et al.</etal> <article-title>The US Food and Drug Administration&#x2019;s Mini-Sentinel program: status and direction</article-title>. <source>Pharmacoepidemiol Drug Saf</source> <year>2012</year>;<volume>21</volume>:<fpage>1</fpage>&#x2013;<lpage>8</lpage>.</mixed-citation></ref>
+<ref id="c17"><label>17</label><mixed-citation publication-type="book"><string-name><given-names>Wu</given-names> <surname>H-DI</surname></string-name>. <chapter-title>Effect of Ignoring Heterogeneity in Hazards Regression</chapter-title>. In: <person-group person-group-type="editor"><string-name><surname>Balakrishnan</surname> <given-names>N</given-names></string-name>, <string-name><surname>Nikulin</surname> <given-names>MS</given-names></string-name>, <string-name><surname>Mesbah</surname> <given-names>M</given-names></string-name>, <etal>et al.</etal></person-group>, eds. <source>Parametric and Semiparametric Models with Applications to Reliability, Survival Analysis, and Quality of Life</source>. <publisher-name>Boston, MA: : Birkh&#x00E4;user Boston</publisher-name> <year>2004</year>. <fpage>239</fpage>&#x2013;<lpage>50</lpage>.</mixed-citation></ref>
+<ref id="c18"><label>18</label><mixed-citation publication-type="journal"><string-name><surname>Arellano</surname> <given-names>AM</given-names></string-name>, <string-name><surname>Dai</surname> <given-names>W</given-names></string-name>, <string-name><surname>Wang</surname> <given-names>S</given-names></string-name>, <etal>et al.</etal> <article-title>Privacy Policy and Technology in Biomedical Data Science</article-title>. <source>Annu Rev Biomed Data Sci</source> <year>2018</year>;<volume>1</volume>:<fpage>115</fpage>&#x2013;<lpage>29</lpage>.</mixed-citation></ref>
+<ref id="c19"><label>19</label><mixed-citation publication-type="journal"><string-name><surname>Loukides</surname> <given-names>G</given-names></string-name>, <string-name><surname>Denny</surname> <given-names>JC</given-names></string-name>, <string-name><surname>Malin</surname> <given-names>B.</given-names></string-name> <article-title>The disclosure of diagnosis codes can breach research participants&#x2019; privacy</article-title>. <source>J Am Med Inform Assoc</source> <year>2010</year>;<volume>17</volume>:<fpage>322</fpage>&#x2013;<lpage>7</lpage>.</mixed-citation></ref>
+<ref id="c20"><label>20</label><mixed-citation publication-type="journal"><string-name><surname>Benitez</surname> <given-names>K</given-names></string-name>, <string-name><surname>Malin</surname> <given-names>B.</given-names></string-name> <article-title>Evaluating re-identification risks with respect to the HIPAA privacy rule</article-title>. <source>J Am Med Inform Assoc</source> <year>2010</year>;<volume>17</volume>:<fpage>169</fpage>&#x2013;<lpage>77</lpage>.</mixed-citation></ref>
+<ref id="c21"><label>21</label><mixed-citation publication-type="journal"><string-name><surname>McGraw</surname> <given-names>D.</given-names></string-name> <article-title>Building public trust in uses of Health Insurance Portability and Accountability Act de-identified data</article-title>. <source>J Am Med Inform Assoc</source> <year>2013</year>;<volume>20</volume>:<fpage>29</fpage>&#x2013;<lpage>34</lpage>.</mixed-citation></ref>
+<ref id="c22"><label>22</label><mixed-citation publication-type="journal"><string-name><surname>Vashisht</surname> <given-names>R</given-names></string-name>, <string-name><surname>Jung</surname> <given-names>K</given-names></string-name>, <string-name><surname>Schuler</surname> <given-names>A</given-names></string-name>, <etal>et al.</etal> <article-title>Association of Hemoglobin A1c Levels With Use of Sulfonylureas, Dipeptidyl Peptidase 4 Inhibitors, and Thiazolidinediones in Patients With Type 2 Diabetes Treated With Metformin</article-title>. <source>JAMA Network Open</source>. <year>2018</year>;<volume>1</volume>:<fpage>e181755.</fpage> doi:<pub-id pub-id-type="doi">10.1001/jamanetworkopen.2018.1755</pub-id></mixed-citation></ref>
+<ref id="c23"><label>23</label><mixed-citation publication-type="journal"><string-name><surname>Hripcsak</surname> <given-names>G</given-names></string-name>, <string-name><surname>Ryan</surname> <given-names>PB</given-names></string-name>, <string-name><surname>Duke</surname> <given-names>JD</given-names></string-name>, <etal>et al.</etal> <article-title>Characterizing treatment pathways at scale using the OHDSI network</article-title>. <source>Proc Natl Acad Sci U S A</source> <year>2016</year>;<volume>113</volume>:<fpage>7329</fpage>&#x2013;<lpage>36</lpage>.</mixed-citation></ref>
+<ref id="c24"><label>24</label><mixed-citation publication-type="journal"><string-name><surname>Boland</surname> <given-names>MR</given-names></string-name>, <string-name><surname>Parhi</surname> <given-names>P</given-names></string-name>, <string-name><surname>Li</surname> <given-names>L</given-names></string-name>, <etal>et al.</etal> <article-title>Uncovering exposures responsible for birth season--disease effects: a global study</article-title>. <source>J Am Med Inform Assoc</source> <year>2018</year>;<volume>25</volume>:<fpage>275</fpage>&#x2013;<lpage>88</lpage>.</mixed-citation></ref>
+<ref id="c25"><label>25</label><mixed-citation publication-type="journal"><string-name><surname>Duan</surname>, <given-names>R.</given-names></string-name>, <string-name><surname>Luo</surname>, <given-names>C.</given-names></string-name>, <string-name><surname>Schuemie</surname>, <given-names>M. H.</given-names></string-name>, <string-name><surname>Tong</surname>, <given-names>J.</given-names></string-name>, <string-name><surname>Liang</surname>, <given-names>J. C.</given-names></string-name>, <string-name><surname>Chang</surname>, <given-names>H. H.</given-names></string-name>, <string-name><surname>Boland</surname>, <given-names>M. R.</given-names></string-name>, <string-name><surname>Bian</surname>, <given-names>J.</given-names></string-name>, <string-name><surname>Xu</surname>, <given-names>H.</given-names></string-name>, <string-name><surname>Holmes</surname>, <given-names>J. H.</given-names></string-name>. <article-title>Learning from local to global-an efficient distributed algorithm for modeling time-to-event data</article-title>. <source>Journal of the American Medical Informatics Association</source>. <year>2020</year> <month>July</month>; <volume>27</volume>(<issue>7</issue>):<fpage>1028</fpage>&#x2013;<lpage>1036</lpage>.</mixed-citation></ref>
+<ref id="c26"><label>26</label><mixed-citation publication-type="journal"><string-name><surname>Wu</surname> <given-names>Y</given-names></string-name>, <string-name><surname>Jiang</surname> <given-names>X</given-names></string-name>, <string-name><surname>Kim</surname> <given-names>J</given-names></string-name>, <etal>et al.</etal> <article-title>G rid Binary LO gistic RE gression (GLORE): building shared models without sharing data</article-title>. <source>J Am Med Inform Assoc</source> <year>2012</year>;<volume>19</volume>:<fpage>758</fpage>&#x2013;<lpage>64</lpage>.</mixed-citation></ref>
+<ref id="c27"><label>27</label><mixed-citation publication-type="journal"><string-name><surname>Lu</surname> <given-names>C-L</given-names></string-name>, <string-name><surname>Wang</surname> <given-names>S</given-names></string-name>, <string-name><surname>Ji</surname> <given-names>Z</given-names></string-name>, <etal>et al.</etal> <article-title>WebDISCO: a web service for distributed cox model learning without patient-level data sharing</article-title>. <source>J Am Med Inform Assoc</source> <year>2015</year>;<volume>22</volume>:<fpage>1212</fpage>&#x2013;<lpage>9</lpage>.</mixed-citation></ref>
+<ref id="c28"><label>28</label><mixed-citation publication-type="journal"><string-name><surname>Ohno-Machado</surname> <given-names>L</given-names></string-name>, <string-name><surname>Agha</surname> <given-names>Z</given-names></string-name>, <string-name><surname>Bell</surname> <given-names>DS</given-names></string-name>, <etal>et al.</etal> <article-title>pSCANNER: patient-centered Scalable National Network for Effectiveness Research</article-title>. <source>J Am Med Inform Assoc</source> <year>2014</year>;<volume>21</volume>:<fpage>621</fpage>&#x2013;<lpage>6</lpage>.</mixed-citation></ref>
+<ref id="c29"><label>29</label><mixed-citation publication-type="other"><string-name><surname>Duan</surname> <given-names>R</given-names></string-name>, <string-name><surname>Boland</surname> <given-names>MR</given-names></string-name>, <string-name><surname>Moore</surname> <given-names>JH</given-names></string-name>, <string-name><surname>Chen</surname> <given-names>Y.</given-names></string-name> <article-title>ODAL: a one-shot distributed algorithm to perform logistic regressions on electronic health records data from multiple clinical sites</article-title>. In: <person-group person-group-type="editor"><string-name><surname>Altman</surname> <given-names>RB</given-names></string-name>, <string-name><surname>Dunker</surname> <given-names>AK</given-names></string-name>, <string-name><surname>Hunter</surname> <given-names>L</given-names></string-name>, <string-name><surname>Ritchie</surname> <given-names>MD</given-names></string-name>, <string-name><surname>Murray</surname> <given-names>T</given-names></string-name>, <string-name><surname>Klein</surname> <given-names>TE</given-names></string-name></person-group>, eds. <source>Pacific Symposium on Biocomputing</source> <year>2019. Singapore: World Scientific; 30&#x2013;41</year>.</mixed-citation></ref>
+<ref id="c30"><label>30</label><mixed-citation publication-type="journal"><string-name><surname>Duan</surname> <given-names>R</given-names></string-name>, <string-name><surname>Boland</surname> <given-names>MR</given-names></string-name>, <string-name><surname>Liu</surname> <given-names>Z</given-names></string-name>, <string-name><surname>Liu</surname> <given-names>Y</given-names></string-name>, <string-name><surname>Chang</surname> <given-names>HH</given-names></string-name>, <string-name><surname>Xu</surname> <given-names>H</given-names></string-name>, <string-name><surname>Chu</surname> <given-names>H</given-names></string-name>, <string-name><surname>Schmid</surname> <given-names>CH</given-names></string-name>, <string-name><surname>Forrest</surname> <given-names>CB</given-names></string-name>, <string-name><surname>Holmes</surname> <given-names>JH</given-names></string-name>, <string-name><surname>Schuemie</surname> <given-names>MJ</given-names></string-name>, <string-name><surname>Chen</surname> <given-names>Y.</given-names></string-name> <article-title>Learning from electronic health records across multiple sites: A communication-efficient and privacy-preserving distributed algorithm</article-title>. <source>Journal of the American Medical Informatics Association</source>. <year>2020</year> <month>Mar</month>;<volume>27</volume>(<issue>3</issue>):<fpage>376</fpage>&#x2013;<lpage>85</lpage>.</mixed-citation></ref>
+<ref id="c31"><label>31</label><mixed-citation publication-type="journal"><string-name><surname>Liang</surname> <given-names>KY</given-names></string-name>. <article-title>Extended Mantel-Haenszel estimating procedure for multivariate logistic regression models</article-title>. <source>Biometrics</source> <year>1987</year>;<volume>43</volume>:<fpage>289</fpage>&#x2013;<lpage>99</lpage>.</mixed-citation></ref>
+<ref id="c32"><label>32</label><mixed-citation publication-type="journal"><string-name><surname>Tong</surname> <given-names>J</given-names></string-name>, <string-name><surname>Duan</surname> <given-names>R</given-names></string-name>, <string-name><surname>Li</surname> <given-names>R</given-names></string-name>, <string-name><surname>Schmid</surname> <given-names>CH</given-names></string-name>, <string-name><surname>Moore</surname> <given-names>JH</given-names></string-name>, <string-name><surname>Chen</surname> <given-names>Y.</given-names></string-name> <article-title>Robust-ODAL: Learning from heterogeneous health systems without sharing patient-level data</article-title>. <source>Pacific Symposium on Biocomputing</source> <year>2020</year>;<volume>25</volume>:<fpage>695</fpage>&#x2013;<lpage>706</lpage>.</mixed-citation></ref>
+<ref id="c33"><label>33</label><mixed-citation publication-type="journal"><string-name><surname>Jordan</surname> <given-names>MI</given-names></string-name>, <string-name><surname>Lee</surname> <given-names>JD</given-names></string-name>, <string-name><surname>Yang</surname> <given-names>Y.</given-names></string-name> <article-title>Communication-Efficient Distributed Statistical Inference</article-title>. <source>Journal of the American Statistical Association</source>. <year>2019</year>;<volume>114</volume>:<fpage>668</fpage>&#x2013;<lpage>81</lpage>. doi:<pub-id pub-id-type="doi">10.1080/01621459.2018.1429274</pub-id></mixed-citation></ref>
+<ref id="c34"><label>34</label><mixed-citation publication-type="website"><collab>Epic</collab>. <ext-link ext-link-type="uri" xlink:href="https://www.epic.com">https://www.epic.com</ext-link> (accessed <date-in-citation content-type="access-date">15 Oct 2020</date-in-citation>).</mixed-citation></ref>
+<ref id="c35"><label>35</label><mixed-citation publication-type="website"><collab>Home</collab>. <ext-link ext-link-type="uri" xlink:href="https://www.cerner.com">https://www.cerner.com</ext-link> (accessed <date-in-citation content-type="access-date">15 Oct 2020</date-in-citation>).</mixed-citation></ref>
+</ref-list>
+</back>
+</article>

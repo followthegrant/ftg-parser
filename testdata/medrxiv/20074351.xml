@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.2d1 20170631//EN" "JATS-archivearticle1.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" article-type="article" dtd-version="1.2d1" specific-use="production" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="publisher-id">MEDRXIV</journal-id>
+<journal-title-group>
+<journal-title>medRxiv</journal-title>
+<abbrev-journal-title abbrev-type="publisher">medRxiv</abbrev-journal-title>
+</journal-title-group>
+<publisher>
+<publisher-name>Cold Spring Harbor Laboratory</publisher-name>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1101/2020.04.22.20074351</article-id>
+<article-version>1.4</article-version>
+<article-categories>
+<subj-group subj-group-type="hwp-journal-coll">
+<subject>Infectious Diseases (except HIV/AIDS)</subject>
+</subj-group>
+</article-categories>
+<title-group>
+<article-title>Resilient SARS-CoV-2 diagnostics workflows including viral heat inactivation</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author">
+<name><surname>Lista</surname><given-names>Maria Jose</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a2">2</xref>
+<xref ref-type="author-notes" rid="n1">11</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-8386-6613</contrib-id>
+<name><surname>Matos</surname><given-names>Pedro M.</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a2">2</xref>
+<xref ref-type="author-notes" rid="n1">11</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-3769-9962</contrib-id>
+<name><surname>Maguire</surname><given-names>Thomas J. A.</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a3">3</xref>
+<xref ref-type="author-notes" rid="n1">11</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Poulton</surname><given-names>Kate</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a2">2</xref>
+<xref ref-type="author-notes" rid="n1">11</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Ortiz-Zapater</surname><given-names>Elena</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a4">4</xref>
+<xref ref-type="aff" rid="a5">5</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-9288-694X</contrib-id>
+<name><surname>Page</surname><given-names>Robert</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a3">3</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Sertkaya</surname><given-names>Helin</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-9023-0103</contrib-id>
+<name><surname>Ortega-Prieto</surname><given-names>Ana M.</given-names></name>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0001-8185-2501</contrib-id>
+<name><surname>O&#x2019;Byrne</surname><given-names>Aoife M.</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a7">7</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Bouton</surname><given-names>Clement</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Dickenson</surname><given-names>Ruth E</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-9380-132X</contrib-id>
+<name><surname>Ficarelli</surname><given-names>Mattia</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-1726-8033</contrib-id>
+<name><surname>Jimenez-Guarde&#x00F1;o</surname><given-names>Jose M.</given-names></name>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Howard</surname><given-names>Mark</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a5">5</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Betancor</surname><given-names>Gilberto</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-3368-5053</contrib-id>
+<name><surname>Galao</surname><given-names>Rui Pedro</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-2747-9029</contrib-id>
+<name><surname>Pickering</surname><given-names>Suzanne</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-4620-6891</contrib-id>
+<name><surname>Signell</surname><given-names>Adrian W</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-3185-1073</contrib-id>
+<name><surname>Wilson</surname><given-names>Harry</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Cliff</surname><given-names>Penelope</given-names></name>
+<xref ref-type="aff" rid="a8">8</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Tan Kia Ik</surname><given-names>Mark</given-names></name>
+<xref ref-type="aff" rid="a9">9</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Patel</surname><given-names>Amita</given-names></name>
+<xref ref-type="aff" rid="a9">9</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>MacMahon</surname><given-names>Eithne</given-names></name>
+<xref ref-type="aff" rid="a9">9</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Cunningham</surname><given-names>Emma</given-names></name>
+<xref ref-type="aff" rid="a9">9</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-5507-1725</contrib-id>
+<name><surname>Doores</surname><given-names>Katie</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0001-6477-1750</contrib-id>
+<name><surname>Agromayor</surname><given-names>Monica</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-8183-3914</contrib-id>
+<name><surname>Martin-Serrano</surname><given-names>Juan</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-7802-0875</contrib-id>
+<name><surname>Perucha</surname><given-names>Esperanza</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a7">7</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-1884-2578</contrib-id>
+<name><surname>Mischo</surname><given-names>Hannah E.</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-5338-2538</contrib-id>
+<name><surname>Shankar-Hari</surname><given-names>Manu</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Batra</surname><given-names>Rahul</given-names></name>
+<xref ref-type="aff" rid="a9">9</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Edgeworth</surname><given-names>Jonathan</given-names></name>
+<xref ref-type="aff" rid="a9">9</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Zuckerman</surname><given-names>Mark</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a10">10</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-7699-2064</contrib-id>
+<name><surname>Malim</surname><given-names>Michael H.</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-3306-5831</contrib-id>
+<name><surname>Neil</surname><given-names>Stuart</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author" corresp="yes">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-2507-4738</contrib-id>
+<name><surname>Martinez-Nunez</surname><given-names>Rocio Teresa</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a2">2</xref>
+<xref ref-type="corresp" rid="cor1">&#x002A;</xref>
+</contrib>
+<aff id="a1"><label>1</label><institution>King&#x2019;s College London Diagnostics Team at Guy&#x2019;s Campus</institution> (London, <country>UK</country>)</aff>
+<aff id="a2"><label>2</label><institution>Dept. Infectious Diseases, School of Immunology and Microbial Sciences. Guy&#x2019;s Campus, King&#x2019;s College London</institution> SE1 9RT, <country>UK</country></aff>
+<aff id="a3"><label>3</label><institution>Dept. Inflammation Biology, School of Immunology and Microbial Sciences. Asthma UK Centre in Allergic Mechanisms of Asthma. Guy&#x2019;s Campus, King&#x2019;s College London</institution> SE1 9RT, <country>UK</country></aff>
+<aff id="a4"><label>4</label><institution>Randall Centre for Cell &#x0026; Molecular Biophysics. Guy&#x2019;s Campus, King&#x2019;s College London</institution>, SE1 1UL, <country>UK</country></aff>
+<aff id="a5"><label>5</label><institution>Peter Gorer Department of Immunobiology. Guy&#x2019;s Campus, King&#x2019;s College London</institution>, SE1 9RT, <country>UK</country></aff>
+<aff id="a6"><label>6</label><institution>King&#x2019;s Health Partners Integrated Cancer Centre, School of Cancer and Pharmaceutical Sciences, Guy&#x2019;s Hospital, King&#x2019;s College London</institution>, London SE1 9RT</aff>
+<aff id="a7"><label>7</label><institution>Centre for Inflammation Biology and Cancer Immunology (CIBCI). Centre for Rheumatic Diseases (CRD &#x2013; EULAR Centre of Excellence). Guy&#x2019;s Campus, King&#x2019;s College London</institution> SE1 1UL, <country>UK</country></aff>
+<aff id="a8"><label>8</label><institution>Viapath pathology laboratories at St Thomas&#x2019; Hospital</institution></aff>
+<aff id="a9"><label>9</label><institution>Centre for Infectious Diseases Research, St Thomas&#x2019; Hospital</institution> (London, <country>UK</country>)</aff>
+<aff id="a10"><label>10</label><institution>Dept. Virology. King&#x2019;s College Hospital</institution> (London, <country>UK</country>)</aff>
+</contrib-group>
+<author-notes>
+<corresp id="cor1"><label>&#x002A;</label>Corresponding author: <email>rocio.martinez_nunez@kcl.ac.uk</email></corresp>
+<fn id="n1" fn-type="equal"><label>11</label><p>All these authors contributed equally to the completion of this work.</p></fn>
+<fn id="n2" fn-type="conflict"><p><bold>Conflict of Interest Statement:</bold> The authors declare that they have no conflict of interest.</p></fn>
+</author-notes>
+<pub-date pub-type="epub">
+<year>2021</year>
+</pub-date>
+<elocation-id>2020.04.22.20074351</elocation-id>
+<history>
+<date date-type="received">
+<day>22</day>
+<month>4</month>
+<year>2020</year>
+</date>
+<date date-type="rev-recd">
+<day>10</day>
+<month>4</month>
+<year>2021</year>
+</date>
+<date date-type="accepted">
+<day>10</day>
+<month>4</month>
+<year>2021</year>
+</date>
+</history>
+<permissions>
+<copyright-statement>&#x00A9; 2021, Posted by Cold Spring Harbor Laboratory</copyright-statement>
+<copyright-year>2021</copyright-year>
+<license license-type="creative-commons" xlink:href="http://creativecommons.org/licenses/by/4.0/"><license-p>This pre-print is available under a Creative Commons License (Attribution 4.0 International), CC BY 4.0, as described at <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</ext-link></license-p></license>
+</permissions>
+<self-uri xlink:href="20074351.pdf" content-type="pdf" xlink:role="full-text"/>
+<abstract>
+<title>Abstract</title>
+<p>There is a worldwide need for reagents to perform SARS-CoV-2 detection. Some laboratories have implemented kit-free protocols, but many others do not have the capacity to develop these and/or perform manual processing. We provide multiple workflows for SARS-CoV-2 nucleic acid detection in clinical samples by comparing several commercially available RNA extraction methods: QIAamp Viral RNA Mini Kit (QIAgen), RNAdvance Blood/Viral (Beckman) and Mag-Bind Viral DNA/RNA 96 Kit (Omega Bio-tek). We also compared One-step RT-qPCR reagents: TaqMan Fast Virus 1-Step Master Mix (FastVirus, ThermoFisher Scientific), qPCRBIO Probe 1-Step Go Lo-ROX (PCR Biosystems) and Luna<sup>&#x00AE;</sup> Universal Probe One-Step RT-qPCR Kit (Luna, NEB). We used primer-probes that detect viral N (EUA CDC) and RdRP (PHE guidelines). All RNA extraction methods provided similar results. FastVirus and Luna proved most sensitive. N detection was more reliable than that of RdRP, particularly in samples with low viral titres. Importantly, we demonstrate that treatment of nasopharyngeal swabs with 70 degrees for 10 or 30 min, or 90 degrees for 10 or 30 min (both original variant and B 1.1.7) inactivates SARS-CoV-2 employing plaque assays, and that it has minimal impact on the sensitivity of the qPCR in clinical samples. These findings make SARS-CoV-2 testing portable to settings that do not have CL-3 facilities. In summary, we provide several testing pipelines that can be easily implemented in other laboratories and have made all our protocols and SOPs freely available at <ext-link ext-link-type="uri" xlink:href="https://osf.io/uebvj/">https://osf.io/uebvj/</ext-link>.</p>
+</abstract>
+<counts>
+<page-count count="18"/>
+</counts>
+</article-meta>
+<notes>
+<notes notes-type="competing-interest-statement">
+<title>Competing Interest Statement</title><p>The authors have declared no competing interest.</p></notes>
+<notes notes-type="clinical-protocols-statement">
+<title>Clinical Protocols</title><p>
+<ext-link ext-link-type="uri" xlink:href="https://osf.io/uebvj/">https://osf.io/uebvj/</ext-link>
+</p></notes>
+<notes notes-type="financial-disclosure">
+<title>Funding Statement</title><p>This work was funded by; Kings Together Rapid COVID-19 Call awards to RTM-N, MHM, KD, SN, JE and MS-H, MRC Discovery Award MC/PC/15068 to SN, KD and MHM, a Huo Family Foundation Award to MHM, KD, RTM-N, SN, JE and MS-H, MRC Programme Grant MR/S023747/1 to MHM, Wellcome Trust Investigator Award 106223/Z/14/Z to MHM, NIAID Awards U54AI150472 and R01AI076119 to MHM. A.S., M.F. and R.E.D. were supported by the MRC-KCL Doctoral Training Partnership in Biomedical Sciences (MR/N013700/1); E. O-Z was supported by MR/S009191/1 to Parsons M and Santis G; M.F. was supported by the MRC (MR/R50225X/1); H.S was supported by the BBSRC (BB/P504609/1); R.P. was supported by the by the (NIHR) Biomedical Research Centre based at Guys and St Thomas NHS Foundation Trust and Kings College London; T.J.A.M. was supported by Asthma UK at the Asthma UK Centre in Allergic Mechanisms of Asthma; P.M., S. P. and H.W. were supported by WT098049AIA to Neil S. and Swanson C.; M.J.L.B and C.B. were supported by MRC (MR/S000844/1) to Neil S. and Swanson C. This UK funded award is part of the EDCTP2 programme supported by the European Union; K.P. was funded by KHP Challenge Fund to R.T.M-N; M.H. was funded by RP_007_20190305 from Kidney research UK; H.M. was funded by the Wellcome Trust and Royal Society Sir Henry Dale Fellowship 218537/Z/19/Z.</p></notes>
+<notes notes-type="disclosures">
+<title>Author Declarations</title><p>I confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.</p><p>Yes</p><p>The details of the IRB/oversight body that provided approval or exemption for the research described are given below:</p><p>Guy's and St Thomas' NHS Foundation Trust
+King's College Hospital</p><p>All necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived.</p><p>Yes</p><p>I understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).</p><p>Yes</p><p>I have followed all appropriate research reporting guidelines and uploaded the relevant EQUATOR Network research reporting checklist(s) and other pertinent material as supplementary files, if applicable.</p><p>Yes</p></notes>
+<fn-group content-type="summary-of-updates">
+<title>Summary of Updates:</title>
+<fn fn-type="update"><p>We have now performed heat inactivation experiments including the B.1.1.7 strain and included almost 100 more samples in our validations</p></fn>
+</fn-group>
+</notes>
+</front>
+<body>
+<sec id="s1">
+<title>Introduction</title>
+<p>&#x201C;Test, test, test&#x201D; &#x2013; this was the message from the World Health Organization&#x2019;s Head Tedros Adhanom Ghebreyesus on the 16<sup>th</sup> of March 2020. This message is still current, more than a year after the pandemic was declared. To fight the exponential spread of SARS-CoV-2, measures of social distancing have been imposed in many countries worldwide, while others are now in a phase of de-escalation. Social distancing and lockdown measures have resulted in stagnant or dropping numbers of new infections-however, appearance of outbreaks has proven inevitable in places where measures have been relaxed. Vaccination has decreased the spread in certain countries; however, these are few nations and the spread of new variants makes testing as imperative as before. Test, Trace and Isolate have been essential to halt SARS-CoV-2 infection. Non-PCR tests such as lateral flow tests have proven useful particularly in the case of symptomatic testing<sup><xref ref-type="bibr" rid="c1">1</xref></sup>; however, large scale PCR-based testing is essential to contain and prevent outbreaks due to its high sensitivity. This is particularly relevant in asymptomatic individuals and should also be central in implementing an &#x2018;exit strategy&#x2019; plan.</p>
+<p>In order to increase testing capacity, many countries rely on centralised efforts to build large diagnostic centres. However, the involvement of smaller academic or commercial laboratories has proven helpful and necessary too <sup><xref ref-type="bibr" rid="c2">2</xref>-<xref ref-type="bibr" rid="c5">5</xref></sup>. These decenatralised laboratories can repurpose existing equipment and technical expertise for SARS-CoV-2 testing, for example by comparing methods of extraction vs extraction-free methods or samples treated with heat<sup><xref ref-type="bibr" rid="c6">6</xref>-<xref ref-type="bibr" rid="c11">11</xref></sup>, combining heat with proteinase K treatments to improve sensitivity<sup><xref ref-type="bibr" rid="c12">12</xref></sup> or establishing sensitivity of primer-probe pairs<sup><xref ref-type="bibr" rid="c13">13</xref>,<xref ref-type="bibr" rid="c14">14</xref></sup>. The UK government document &#x201C;Guidance for organisations to seek supporting the COVID-19 testing programme&#x201D; published on the 9<sup>th</sup> of April 2020, by the Department of Health and Social Care, clearly welcomes academic institutions to increase testing capacities within the UK referred here as NHS-helper labs. However, due to global high demand of the kits and reagents used in the WHO (World Health Organization), CDC (Centre for Disease Control, US), ECDC (European Centre for Disease Prevention and Control) and PHE (Public Health England) ratified testing strategies, the NHS-helper labs are encouraged to use alternative strategies that will not interfere with the reagent demand of larger testing facilities. Moreover, helper laboratories can provide their research expertise and experimental validation of other kits enabling clinical labs to benefit from their results. We set out to perform this task.</p>
+<p>Here we describe different strategies for SARS-CoV-2 PCR-based detection by employing reagents that are not currently used in the NHS setting. We also performed heat inactivation employing dry bead baths of SARS-CoV-2, for both the original strain and the more recent B 1.1.7 strain and present data supporting good limit of detection (LoD) for both strains upon heat treatment. Within the UK, the NHS agrees on the use of alternative RNA isolation and qPCR protocols, providing these have been internally validated and discussed with the local NHS partner. To increase visibility of these alternative strategies, we have created a webpage under the Open Science Framework platform (<ext-link ext-link-type="uri" xlink:href="https://osf.io/uebvj/">https://osf.io/uebvj/</ext-link>) that we hope will stimulate exchange between smaller laboratory facilities, increase confidence in tested alternative routes of RNA isolation and viral RNA detection and thereby expedite the establishment of smaller academic testing centres.</p>
+</sec>
+<sec id="s2">
+<title>Results</title>
+<p>Our pipelines are adaptable for both manual and automatic handling; we also employ heat inactivation of virus within the swabs for easier processing. We compare three RNA extraction methods, one column-based and two magnetic beads-based that are currently or have the potential to be automatized. As a benchmark, we use the QIAamp Viral RNA Mini Kit (QIAGEN) as their proprietary buffer AVL inactivates SARS-CoV-2 according to CDC guidelines. We also validate three different one-step RT-qPCR kits. We use the CDC recommended N1 and N2 primer-probe sets<sup><xref ref-type="bibr" rid="c15">15</xref></sup> and compare these against the PHE recommended RdRP_SARSr primers<sup><xref ref-type="bibr" rid="c16">16</xref></sup>. We did not test efficiency of the reverse transcription (RT) step, as we had no access to <italic>in vitro</italic> transcribed RNA. For these validations we received clinical swab material from St Thomas&#x2019; Hospital and King&#x2019;s College Hospital (London, UK) and compared our results with their diagnostics clinical pipelines. Detailed step-to-step standard operating procedures (SOPs) can be found at <ext-link ext-link-type="uri" xlink:href="https://osf.io/uebvj/">https://osf.io/uebvj/</ext-link>.</p>
+<p>We have created a flowchart of the different processing steps and combinations in our pipeline (<xref rid="fig1" ref-type="fig">Figure 1</xref>), which we subsequently explain in more detail.</p>
+<fig id="fig1" position="float" fig-type="figure">
+<label>Figure 1.</label>
+<caption><title>Representation of our workflow.</title>
+<p>We employed heat inactivation vs non heat inactivation <sup><xref ref-type="bibr" rid="c24">24</xref></sup>; compared three different RNA extraction kits (blue) followed by three RT-qPCR mixes and three sets of primers (green).</p></caption>
+<graphic xlink:href="20074351v4_fig1.tif"/>
+</fig>
+<p>To test the efficiency and detection range of the CDC-recommended N1 and N2 primer-probes, we amplified serial dilutions of plasmids encoding the N SARS-CoV-2 gene (positive controls provided by Integrated DNA Technologies, IDT) using the TaqMan&#x2122; Fast Virus 1-Step Master Mix (<xref rid="fig2" ref-type="fig">Figure 2A</xref>), FastVirus hereafter. Good linearity could be achieved up to 10 copies of DNA molecules. Using the N1 and N2 primer-probes, we compared the efficiency of RNA recovery between the column-based QIAamp Viral RNA Mini Kit (QIAGEN, QIAmp herein) endorsed by the CDC, and two magnetic bead extraction kits: the RNAdvance Blood (now RNAdvance Viral) (Beckman hereinafter) and Mag-Bind Viral DNA/RNA 96 Kit (Omega Bio-tek, Omega herein), starting from the same material (140 &#x03BC;L). RNA isolation from four different coronavirus positive samples (CPS) with all three kits rendered comparable cycle thresholds (Cts) when amplified with the primer-probes N1 and N2. This was the case for two different RT-qPCR Master Mixes, FastVirus (<xref rid="fig2" ref-type="fig">Figure 2B</xref>) or Luna<sup>&#x00AE;</sup> Universal Probe One-Step RT-qPCR Kit (NEB, Luna hereafter) (<xref rid="fig2" ref-type="fig">Figure 2C</xref>).</p>
+<fig id="fig2" position="float" fig-type="figure">
+<label>Figure 2.</label>
+<caption><title>Comparison between different RNA extraction methods.</title>
+<p><bold>(A)</bold> Dilution curve of the positive control provided by IDT (plasmid containing SARS-CoV-2 N gene) using N1 or N2 primer-probe sets with the Taqman FastVirus mix. A semi-log regression was used to calculate the coefficient of determination (R<sup>2</sup>). <bold>(B, C)</bold> A set of four swab samples were used for RNA extraction with the indicated kit. RT-qPCR was run with N1 and N2 primer-probe sets employing the FastVirus <bold>(B)</bold> or the Luna Master mixes <bold>(C)</bold>. Shapiro-Wilk test was used for normality assessment prior to analysis employing ANOVA (parametric data) or Friedman test (non-parametric data). These samples were previously classified as positive (CPS) by the diagnostics lab, the number indicates different donors. Dots represent each individual RT-qPCR technical duplicate, line connects average of replicates and statistics were performed in average duplicates.</p></caption>
+<graphic xlink:href="20074351v4_fig2.tif"/>
+</fig>
+<p>We also compared different one-step RT-qPCR kits to amplify swab-material purified using the QIAamp viral RNA mini kit which we considered our &#x2018;benchmark&#x2019; given CDC-guidelines on buffer AVL inactivating SARS-CoV-2. Supplemental Figure 1 shows RNA from ten different positive donors amplified with Luna, FastVirus and qPCRBIO Probe 1-Step Go Lo-ROX (PCR Biosystems, qPCRBio). All Master Mixes detected comparable amounts of RNA using primer-probes against N1 primer-probe, with the exception of donor CPS_101 which had borderline Ct values of 38 in both FastVirus and Luna and was undetectable using qPCRBio Master Mix (ANOVA p=0.1278). Tukey&#x2019;s multiple comparisons showed Luna performing better than FastVirus (p adjusted=0.007) with no samples missed by FastVirus. Thus, three different RNA extraction kits, and three different one-step RT-qPCR kits achieve detection of viral RNA within swab material.</p>
+<p>As a diagnostic assay, it is paramount to be able to detect very low viral loads in swab samples. To determine the efficiency of the RT-qPCR we serially diluted the RNA from a confirmed positive swab isolated with each one of the three different kits used in this study. All dilutions were assessed with the N1 and N2 primer-probe amplification employing the Luna Master Mix. <xref rid="fig3" ref-type="fig">Figure 3A</xref> shows that the RT-qPCR reaction remains linear over a 10<sup>5</sup>-fold RNA dilution range. To ensure that low viral presence can be reliably detected with each one of these methods, we prepared serial dilutions of swab material from three different CPS donors in Hank&#x2019;s Balanced Salt Solution (HBSS) &#x002B; 1% bovine serum albumin (BSA) since viral transport medium contains these only with the addition of amphotericin and gentamicin. Viral RNA was isolated from these diluted swabs with the three RNA isolation kits from <xref rid="fig2" ref-type="fig">Figure 2</xref>. <xref rid="fig3" ref-type="fig">Figure 3B</xref> shows that all three kits recover viral RNA over a wide range of concentrations, with the N gene being reliably amplified with the N1 and N2 primer-probe sets and the Luna Master Mix. CPS21 10<sup>&#x2212;1</sup> dilution was excluded from the r calculations. The N2 primer-probe set in the donor CPS79 extracted with Omega showed poor linearity, possibly related to initial variation in the non-diluted sample.</p>
+<fig id="fig3" position="float" fig-type="figure">
+<label>Figure 3.</label>
+<caption><title>Sensitivity of qPCR detection by serial dilutions of extracted RNA or swab samples.</title>
+<p><bold>(A)</bold> RNA from sample CPS83 was serially diluted and extracted with three different methods. RT-qPCR was run with N1 and N2 primer-probe sets with Luna Master Mix. <bold>(B)</bold> Three distinct positive swab samples (CPS) were serially diluted followed by RNA extraction by the indicated method. RT-qPCR was run with N1 and N2 primer-probe sets with Luna Master Mix. Dots represent each individual technical duplicate. A semi-log regression was used to calculate the coefficient of determination (R<sup>2</sup>).</p></caption>
+<graphic xlink:href="20074351v4_fig3.tif"/>
+</fig>
+<p>One major limitation for many academic and commercial laboratory settings is the lack of available CL-3 laboratory space and/or Class I MSCs required to handle/open the potentially infectious swabs. Moreover, samples with high viral load pose a risk of infection for the handler. Most recommended viral inactivation protocols use a combination of guanidinium thiocyanate (GTC) and Triton X-100. GTC became scarce due to its wide use, it is quite toxic and not compatible with some kits, and the use of chemical inactivation protocols after sample collection inherently requires opening of the swab sample, with the consequent risk of exposure for lab staff. Heat treatment of viral particles has been shown effective in inactivating SARS-CoV-2 with 70&#x00B0;C 5min treatment rendering viral infectivity undetectable employing Vero-6 cells (limit of detection of TCID50 assay was 100 TCID50/mL)<sup><xref ref-type="bibr" rid="c17">17</xref>-<xref ref-type="bibr" rid="c19">19</xref></sup>. Other heat treatment protocols have also been demonstrated, with variable effects on PCR sensitivity<sup><xref ref-type="bibr" rid="c20">20</xref></sup>.</p>
+<p>We firstly assessed different temperature and time conditions for heat treatment of both SARS-CoV-2 original and B 1.1.7 strains. The novel strain of SARS-CoV-2 B.1.1.7 was originally described in December 2020 in the UK, firstly detected in samples as early as 20<sup>th</sup> September 2020<sup><xref ref-type="bibr" rid="c21">21</xref></sup>. Since then, it has spread to many other countries where it is now the predominant strain. We thus evaluated the effect of heat in the detection of B.1.1.7. To that end we performed serial dilutions of cultured virus in viral transport medium, extracted employing Beckman and assessing the presence of N using the N1 and N2 primer probe combinations in the resulting RNA. <xref rid="fig4" ref-type="fig">Figure 4</xref> shows that heat at either 70&#x00B0;C (4A) or 90&#x00B0;C (4B) for 30 minutes did not alter the detection of viral RNA (red vs blue). <xref rid="fig4" ref-type="fig">Figure 4C</xref> and Supplemental Figure 2A show that treatment of B.1.1.7 with 70&#x00B0;C or 90&#x00B0;C for 10 and 30 mins fully inactivates this strain of SARS-CoV-2 virus. Supplemental Figure 2B shows complete inactivation of the original strain at all temperatures and times. Importantly, we observed incomplete inactivation when temperatures between 60 and 70 degrees were applied for 30 min (Supplemental Figure 3), making imperative the use of well-calibrated thermometers, or use of higher temperatures/longer time periods.</p>
+<fig id="fig4" position="float" fig-type="figure">
+<label>Figure 4.</label>
+<caption><title>Sensitivity of qPCR detection by serial dilutions of viral stocks of the new B.1.1.7 strain.</title>
+<p>B.1.1.7 SARS-CoV-2 viral stocks were serially diluted in viral transport medium, extracted employing Beckman and assessed employing N1 and N2 primer-probe sets using the FastVirus Master Mix. Samples were heat treated for 30 minutes with either 70&#x00B0;C <bold>(A)</bold> or 90&#x00B0;C <bold>(B)</bold>. Dots represent the mean of the qPCR technical duplicates. A semi-log regression was used to calculate the coefficient of determination (R<sup>2</sup>). <bold>(C)</bold>. Results of plaque assays for heat treatment of cultured SARS-CoV-2 B.1.1.7 variant.</p></caption>
+<graphic xlink:href="20074351v4_fig4.tif"/>
+</fig>
+<p>We then assessed if heat treatment of nasopharyngeal swab-material constitutes a method of treating samples within their original unopened collection tubes without compromising RT-qPCR results. Data shown were obtained employing QIAamp RNA extraction. We first assessed heating sample aliquots at 70&#x00B0;C for 30min with different samples and performed RT-qPCR with N1 primer-probes and Luna Master Mix. As <xref rid="fig5" ref-type="fig">Figure 5A</xref> shows, we did not observe any change in Ct values upon heat treatment of the sample (t-test p=0.1946).</p>
+<fig id="fig5" position="float" fig-type="figure">
+<label>Figure 5.</label>
+<caption><title>Primer comparisons and heat inactivation of nasopharyngeal swab samples.</title>
+<p><bold>(A)</bold> A different set of six positive samples were used to compare directly non treated with heat treated at 70&#x00B0;C for 30 min. RNA extraction was done with QIAamp and RT-qPCR with N1 primers and NEB Luna mix. <bold>(B)</bold> Three additional positive samples were subjected to different temperatures and incubation times as indicated, with RNA extracted by QIAamp. All three primer-probe sets from panel A were used, together with Taqman FastVirus master mix. <bold>(C)</bold> 20 additional samples, 10 from positive donors (CPS) and 10 from negative donors (CNS) were used to compare directly non treated with heat treated at 70&#x00B0;C for 30 min. RNA extraction was done with QIAamp and RT-qPCR with N1 primers and Luna Master Mix. For panels A-C, dots represent each individual technical duplicate, line connects the average of replicates. <bold>(D)</bold> 93 additional samples were non treated or heat treated at 90&#x00B0;C for 10 min. RNA extraction was done with Beckman and RT-qPCR with N1, N2 and RNAseP primer-probes and FastVirus Master Mix. Samples were run in singlets.</p></caption>
+<graphic xlink:href="20074351v4_fig5.tif"/>
+</fig>
+<p>We then set out to test a wider range of heat-inactivation conditions on six confirmed positive samples using two extraction methods. We treated aliquots of the same sample with no heat, 70&#x00B0;C for 10min, 70&#x00B0;C for 30min, 90&#x00B0;C for 10min or 90&#x00B0;C for 30min and extracted RNA employing the QIAamp kit. We employed a dry metallic bead bath to heat the sample tubes, since water baths are not allowed in Cat-3 laboratories due to the risk of spillage. Our results show that none of the heat conditions altered the Ct values (ANOVA for N1 p= 0.3656 and Friedman test for N2 p=0.3469, <xref rid="fig5" ref-type="fig">Figure 5B</xref>). Both the N1 and N2 primer-probe sets gave reliable and near-identical amplification of viral RNA; however, we noticed that the RdRP primer-probe set failed to amplify viral samples with high Ct values. These results of high Ct values for RdRP were also observed when we used the MagMax kit (ThermoFisher Scientific) as an extra RNA extraction method (Supplemental Figure 4). Comparison of the different primer-probe combination for RdRP rendered similar results (Supplemental Figure 5) and as previously shown<sup><xref ref-type="bibr" rid="c13">13</xref></sup>. This important finding should be considered when laboratories decide to rely only on one primer-probe set.</p>
+<p>To confirm the reproducibility of our results, we employed another distinct set of samples, assessing both positive and negative samples. We aliquoted swab material, warmed it at 70&#x00B0;C for 30min, extracted their RNA using QIAmp and performed RT-qPCR using Luna Master Mix using primer-probe N1. Ct values did not change upon heat inactivation as observed previously (t-test p=0.3697). However, we determined multiple instances where swabs previously identified as negative amplified in one of the RT-qPCR duplicates at high Ct values of around 38 (<xref rid="fig5" ref-type="fig">Figure 5C</xref>). All our water controls (no template and water template) yielded no amplification. RNAse P controls are in Supplemental Figure 6.</p>
+<p>To further test a higher temperature we employed 90&#x00B0;C for 10min in 93 samples, extracted their RNA using Beckman and performed RT-qPCR using FastVirus Master Mix using primer-probes for N1, N2 and RNAseP. <xref rid="fig5" ref-type="fig">Figure 5D</xref> shows the results for those samples where we detected positive amplification in either of the treatments (88 for N1 and 90 for N2). More samples were lost upon heating, although statistical analysis of Ct ranges remained similar between heat vs non-heat (Supplemental Table 1). N2 primer-probe appeared more heat-resistant, as 90 samples were detected vs 88 with N1 primer-probes. Interestingly, we observed no clear trend for samples with high Ct values lost upon heat treatment (Supplemental Figure 7).</p>
+</sec>
+<sec id="s3">
+<title>Discussion</title>
+<p>Our work shows different workflows for nasopharyngeal swab processing for SARAS-CoV-2 detection employing different combinations of inactivation, extraction and amplification. We present data employing our in-house validation of two viral RNA purification kits (Beckman and Omega) as alternatives to the QIAamp viral RNA mini kit. We have also tested three alternative, commercially available one step RT-qPCR kits (FastVirus, Luna and PCRBio) and assessed different recommended primer-probe sets (N1, N2, RdRP) which can currently detect all circulating SARS-CoV-2 variants to date.</p>
+<p>With regards to extraction methods, our data in <xref rid="fig2" ref-type="fig">Figure 2</xref> suggest that Beckman performs better as seen for sample CPS_84. This is also supported by data in <xref rid="fig3" ref-type="fig">Figure 3</xref> where CPS_21 and CPS_79 samples showed no good linearity when diluted and extracted with Omega. When analysed together, we did not observed any statistically significant difference between Luna, FastVirus and PCRBio, although one sample was not detected employing PCRBio and Luna appeared to perform better than FastVirus (Supplemental Figure 1). The difference in Ct values between Luna and FastVirus was very small and did not alter overall sensitivity (mean Ct difference 0.8335).</p>
+<p>We find that N1 and N2 primer-probe are more sensitive than RdRP (<xref rid="fig5" ref-type="fig">Figure 5B</xref>), similar to others<sup><xref ref-type="bibr" rid="c13">13</xref></sup>. This may likely be due to higher amount of sub-genomic RNAs encoding for N<sup><xref ref-type="bibr" rid="c22">22</xref></sup>. Our data show that heat inactivates the original and B 1.1.7 strains at 70&#x00B0;C or 90&#x00B0;C for 10 and 30 mins (<xref rid="fig4" ref-type="fig">Figure 4</xref> and Supplemental Figure 2). Importantly, we observed that high viral concentrations using inadequate temperatures between 60 and 70&#x00B0;C are not fully inactivated (Supplemental Figure 3). We observed this in early experiments where were relied on a heat block thermometer, which was proven inaccurate and set at a temperature of &#x223C;62-63&#x00B0;C instead. This highlights the need to accurately measure temperatures when performing inactivation of clinical samples &#x2013; or the use of temperatures above 70&#x00B0;C. Importantly, temperatures of the swabs must be considered when performing heat inactivation, since swabs kept in the fridge will take longer to reach a certain temperature vs swabs kept at room temperature. Our data also highlight that adequate titrations employing high viral loads of SARS-CoV-2 are required to establish if full inactivation has been achieved. 70&#x00B0;C during 30 min appeared to have no effect on sensitivity (<xref rid="fig5" ref-type="fig">Figure 5C</xref>) while 90&#x00B0;C during 10 min appeared to decrease sensitivity (<xref rid="fig5" ref-type="fig">Figure 5D</xref>). Our data supports heating at temperatures below 90&#x00B0;C, method that may be used to reduce the need for CL-3 laboratory and to speed up sample processing given the chemical inactivation methods are labour-intensive increasing the risk of exposure to the lab staff. Some laboratories have implemented dry heat in ovens<sup><xref ref-type="bibr" rid="c4">4</xref></sup> to inactivate samples; we propose the use of dry heat with beads as it allows for both high and low throughputs and is safe against possible sample leaks (beads can be disinfected at the moment of leakage). Our pipeline can therefore be implemented in places that only have CL-2 facilities to detect SARS-CoV-2. Our results differ from those observed by others with regards to samples with low viral loads being lost upon heating<sup><xref ref-type="bibr" rid="c20">20</xref></sup> since we did not observe a clear pattern of samples with low viral loads being undetected upon heat and interestingly some samples were only detected upon heat treatment (Supplemental Figure 7). Our higher temperatures employed may possibly denature RNAses and/or facilitate viral RNA denaturation while preserving enough integrity for detection with the N1 and N2 primer-probe sets. Regardless, we advise the use of 70&#x00B0;C over 90&#x00B0;C when possible.</p>
+<p>Together these data highlight the need for performing cross-validations of RNA extraction kits and primer-probe pairs prior to implementing in diagnostics, with an emphasis on the need of using clinical samples (rather than diluted RNA or plasmid DNA) to establish &#x2018;real-world&#x2019; data that better relate with clinical samples. Swab material and inherent inhibitors will perform variably with different workflows and we thus highlight the need to assess their performance &#x2013; a task in which diagnostics laboratories can leverage on collaborations with academic institutions to speed up the establishment of new protocols.</p>
+<p>Based on the above, and understanding that including RT-qPCR duplicates may decrease the number of samples a diagnostic laboratory can process (particularly if employing 96 well plates), we suggest to:</p>
+<list list-type="bullet">
+<list-item><p>employ heat (70&#x00B0;C preferably to 90&#x00B0;C) for 10-30min. Ensure temperature is at least 70&#x00B0;C;</p></list-item>
+<list-item><p>preferably employ N1 and N2 primer-probes vs RdRP;</p></list-item>
+<list-item><p>test samples without RT-qPCR technical replicates to increase the testing throughput;</p></list-item>
+<list-item><p>run duplicates in case of borderline &#x2265;36Ct<sup><xref ref-type="bibr" rid="c23">23</xref></sup> and always check amplification curves of samples. If 1) amplification is shown reproducibly consider it a positive sample with low viral load 2) amplification unclear (one replicate positive, one negative) for these donors to be re-tested as soon as possible to confirm positive or negative detection of SARS-CoV-2 regardless of symptoms. Although we acknowledge the limitations, if possible, re-swabbing of doubtful samples is highly recommended as a first option.</p></list-item>
+</list>
+</sec>
+<sec id="s4">
+<title>Methods</title>
+<p>All materials with their catalogue numbers are available at <ext-link ext-link-type="uri" xlink:href="https://osf.io/uebvj/">https://osf.io/uebvj/</ext-link>.</p>
+<sec id="s4a">
+<title>Heat inactivation</title>
+<p>Swab tubes containing Viral Transport Medium (VTM) were checked for cracks to ensure no viral material had leaked. Swab tubes were then transferred to a water bath (Grant) containing dry metallic beads (Starlab) preheated to 70&#x00B0;C or 90&#x00B0;C, ensuring the entire swab tube (including lid) was covered by the beads. Samples were incubated in the following conditions: 70&#x00B0;C for 10 mins, 70&#x00B0;C for 30 mins, 90&#x00B0;C for 10 mins, or 90&#x00B0;C for 30 mins, then transferred back to Class I MSC and allowed to cool to room temperature prior to RNA extraction.</p>
+</sec>
+<sec id="s4b">
+<title>RNA Extraction</title>
+<p>Serial dilutions were done in Hank balanced salt solution (HBBS) and 1% Bovine Serum Albumin (BSA) to closely mimic viral transport media,</p>
+<sec id="s4b1">
+<title>Qiagen QIAamp Viral RNA Mini Kit</title>
+<p>From swab tube, 140 &#x00B5;l sample was transferred to 1.5 mL screw-cap microcentrifuge tube and treated with 560 &#x00B5;l AVE, containing carrier RNA, followed by 560 &#x00B5;l molecular-grade 100% ethanol (Fisher Scientific). Samples were then taken out of the Class I MSC and CL-3 lab as AVL is known to inactivate SARS-CoV-2, transferred into QiaAmp mini spin columns (Qiagen) and centrifuged according to manufacturer&#x2019;s instructions. Two wash steps were performed, with 714 &#x00B5;l buffer AW1 and 714 &#x00B5;l buffer AW2 (both Qiagen). RNA was then eluted from the columns with 40 &#x00B5;l RNase-free water (Ambion), followed by a second 40 &#x00B5;l elution to maximise RNA yield and giving a final RNA sample volume of 80 &#x00B5;l.</p>
+</sec>
+<sec id="s4b2">
+<title>Beckman Coulter Agencourt RNAdvance Blood Total RNA Kit</title>
+<p>Reagents were prepared prior to RNA extraction according to manufacturer&#x2019;s instructions. The protocol was conducted in a Class I MSC in a CL-3 lab. From a swab tube, 140 &#x00B5;l were transferred to a Zymo-Spin I-96 Plate (Zymo Research). 7 &#x03BC;l of Proteinase K/PK buffer and 105 &#x00B5;l of Lysis buffer was added to each sample, mixed and incubated at room temperature for 15 minutes. Following incubation, 143 &#x03BC;l of Bind1/Isopropanol was added to each sample, mixed, and the samples were left to incubate at room temperature for 5 min. The Zymo-Spin I-96 Plate was placed on ZR-96 MagStand (Zymo Research), and the magnetic beads left to form a pellet. The supernatant was removed, and the magnetic beads washed three times, first, with 280 &#x03BC;l of Wash buffer (Beckman Coulter), followed by two washes with 70% ethanol. Following the wash steps, RNA was eluted from the columns with 80 &#x00B5;l RNase-free water (Ambion).</p>
+</sec>
+<sec id="s4b3">
+<title>Omega Bio-tek Mag-Bind<sup>&#x00AE;</sup> Viral DNA/RNA kit</title>
+<p>Reagents were prepared prior to RNA extraction according to manufacturer&#x2019;s instructions. The protocol was conducted in a Class I MSC in a CL-3 lab. From a swab tube, 140 &#x00B5;l sample was transferred to a Zymo-Spin I-96 Plate (Zymo Research). 369.5 &#x03BC;l of Lysis mastermix was added to each sample, mixed, and incubated at room temperature for 10 minutes. Following incubation, 7 &#x03BC;l of Mag-Bind<sup>&#x00AE;</sup> Particles CNR and 7 &#x03BC;l of Proteinase K solution was added to each sample, mixed and incubated at room temperature for 5 minutes. The Zymo-Spin I-96 Plate was placed on ZR-96 MagStand (Zymo Research), and the magnetic beads left to form a pellet. The supernatant was removed, and the magnetic beads washed three times, first, with 280 &#x03BC;l of VHB buffer (Omega Bio-tek), followed by two washes with 350 &#x03BC;l SPR Wash Buffer (Omega Bio-tek). Following the wash steps, RNA was eluted from the columns with 80 &#x00B5;l RNase-free water (Ambion).</p>
+</sec>
+</sec>
+<sec id="s4c">
+<title>One-step RT-qPCR</title>
+<sec id="s4c1">
+<title>qPCRBIO Probe 1-Step Go Lo-ROX (PCR Biosystems)</title>
+<p>Reactions were done with 5 &#x00B5;L RNA, 5 &#x00B5;L 2x qPCRBIO Probe 1-Step Go mix, 1.2 &#x00B5;L forward primer RdRP_SARSr-F2 (10 &#x00B5;M), 1.6 &#x00B5;L reverse primer RdRP_SARSr-R1 (10 &#x00B5;M), and 0.2 &#x00B5;L probe RdRP_SARSr-P2 (10 &#x00B5;M), 2 &#x00B5;L of 20x RTase Go, and completed with RNase-free water to 20 &#x00B5;L. The samples were incubated in a QuantStudio 5 (Applied Biosystems/ThermoFisher Scientific). Reverse transcription was performed for 10 minutes at 45&#x00B0;C. The DNA polymerase was activated for 2 minutes at 95&#x00B0;C and the samples underwent 50 cycles of denaturation (5 seconds at 95&#x00B0;C) and annealing/extension (30 seconds at 60&#x00B0;C). A plate read was included at the end of each extension step. Each sample was run in duplicate.</p>
+</sec>
+<sec id="s4c2">
+<title>TaqMan Fast Virus 1-Step Master Mix (Applied Biosystems)</title>
+<p>Reactions were performed with 5 &#x00B5;L RNA, 5 &#x00B5;L TaqMan Fast Virus 1-Step master mix, with probes and water making the 20 &#x00B5;L reaction. For Charit&#x00E9;/WHO/PHE primers, 1.2 &#x00B5;L forward primer RdRP_SARSr-F2 (10 &#x00B5;M), 1.6 &#x00B5;L reverse primer RdRP_SARSr-R1 (10 &#x00B5;M), and 0.2 &#x00B5;L probe RdRP_SARSr-P2 (10 &#x00B5;M), and 7 &#x00B5;L RNase-free water were used. For CDC primers (EUA kit IDT), 1.5 &#x00B5;L of each primer-probe premixture (N1, N2 or RNAseP) and 8.5 &#x00B5;L water were used. The samples were run in a QuantStudio 5 (Applied Biosystems/ThermoFisher Scientific) using the &#x201C;Fast&#x201D; cycling mode. Reverse transcription was performed for 5 minutes at 50&#x00B0;C. The reverse-transcriptase was then inactivated for 20 seconds at 95&#x00B0;C and the samples underwent 50 cycles of denaturation (3 seconds at 95&#x00B0;C) and annealing/extension (30 seconds at 60&#x00B0;C). A plate read was included at the end of each extension step. Each sample was run in duplicate.</p>
+</sec>
+<sec id="s4c3">
+<title>Luna Universal Probe One-Step RT-qPCR (NEB)</title>
+<p>Reactions were performed with 5 &#x00B5;L RNA, 10 &#x00B5;L 2x Luna Universal Probe One-Step reaction mix, 1 &#x00B5;L Luna WarmStart RT enzyme mix, 1.5 &#x00B5;L of each CDC primer-probe premixture (N1, N2 or RNAseP), and 2.5 &#x00B5;L RNase-free water. The samples were incubated in a QuantStudio 5 (Applied Biosystems/ThermoFisher Scientific) using the &#x201C;Fast&#x201D; cycling mode. Reverse transcription was performed for 10 minutes at 55&#x00B0;C. The samples were denatured for 1 minute at 95&#x00B0;C and then underwent 50 cycles of denaturation (10 seconds at 95&#x00B0;C) and annealing/extension (30 seconds at 60&#x00B0;C). A plate read was included at the end of each extension step. Each sample was run in duplicate.</p>
+<p>Primer and probe sequences are supplied in Supplemental Material. Supplemental Tables 2 and 3 show the volume reaction and cycling conditions.</p>
+</sec>
+</sec>
+<sec id="s4d">
+<title>Virus work</title>
+<p>Original SARS-CoV-2 Strain England 2 (England 02/2020/407073) was obtained from Public Health England and 2 lineage B 1.1.7 (VOC 2 2020212/01) was kindly provided by W. Barclay (Imperial College London). The infectious virus titre was determined by plaque assay in Vero-E6 cells. Limit of detection was 40 plaque forming units (pfu)/mL.</p>
+<p>Vero-E6 cells were kindly provided by W. Barclay (Imperial College London). Cells were maintained in complete DMEM GlutaMAX (Gibco) supplemented with 10% foetal bovine serum (FBS; Gibco), 100 U/mL penicillin and 100&#x03BC;g/mL streptomycin and incubated at 37&#x00B0;C with 5% CO2.</p>
+</sec>
+<sec id="s5">
+<title>Study approval</title>
+<p>This study was approved by Guy&#x2019;s and St Thomas&#x2019; NHS Trust, REC Ref 18/NW/0584</p>
+</sec>
+</sec>
+<sec sec-type="supplementary-material">
+<title>Supporting information</title>
+<supplementary-material>
+<label>Supplemental Material</label>
+<media xlink:href="supplements/074351_file02.pdf" />
+</supplementary-material>
+</sec>
+</body>
+<back>
+<sec sec-type="data-availability">
+<title>Data Availability</title>
+<p>All raw data files are available to anyone that requires them. Our protocols are also published at https://osf.io/uebvj/</p>
+<p>
+<ext-link ext-link-type="uri" xlink:href="https://osf.io/uebvj/">https://osf.io/uebvj/</ext-link>
+</p>
+</sec>
+<ack>
+<title>Acknowledgements</title>
+<p>This work was funded by; King&#x2019;s Together Rapid COVID-19 Call awards to RTM-N, MHM, KD, SN, JE and MS-H, MRC Discovery Award MC/PC/15068 to SN, KD and MHM, a Huo Family Foundation Award to MHM, KD, RTM-N, SN, JE and MS-H, MRC Programme Grant MR/S023747/1 to MHM, Wellcome Trust Investigator Award 106223/Z/14/Z to MHM, NIAID Awards U54AI150472 and R01AI076119 to MHM. A.S., M.F. and R.E.D. were supported by the MRC-KCL Doctoral Training Partnership in Biomedical Sciences (MR/N013700/1); E. O-Z was supported by MR/S009191/1 to Parsons M and Santis G; M.F. was supported by the MRC (MR/R50225X/1); H.S was supported by the BBSRC (BB/P504609/1); R.P. was supported by the by the (NIHR) Biomedical Research Centre based at Guy&#x2019;s and St Thomas&#x2019; NHS Foundation Trust and King&#x2019;s College London; T.J.A.M. was supported by Asthma UK at the Asthma UK Centre in Allergic Mechanisms of Asthma; P.M., S. P. and H.W. were supported by WT098049AIA to Neil S. and Swanson C.; M.J.L.B and C.B. were supported by MRC (MR/S000844/1) to Neil S. and Swanson C. This UK funded award is part of the EDCTP2 programme supported by the European Union; K.P. was funded by KHP Challenge Fund to R.T.M-N; M.H. was funded by RP_007_20190305 from Kidney research UK; H.M. was funded by the Wellcome Trust and Royal Society Sir Henry Dale Fellowship 218537/Z/19/Z.</p>
+</ack>
+<sec id="s6">
+<title>Author contributions</title>
+<p>M. J. L., R. P., H. S., P. M. M., E. O-Z., T. J. A. M., K. P., A. M. O-P., C. B., J.M. J-G, R. E. D., M. F., conducted and designed experiments, acquired and analysed data and wrote the manuscript; M. H. analysed data and wrote the manuscript; G. B., R. P. G., S. P., A. W. S. and H. W. contributed to data and sample acquisition; P. C., M. T. K. I., A. P., E. M. and E. C. provided clinical samples; K. D., J. M-S. and M. S-H. contributed to design and execution of the study; M. A., E. P., H. E. M. contributed to experimental design, supervision, data interpretation and wrote the manuscript; R. B., J. E. and M.Z. contributed to execution of the study and provided samples; M. H. M. and S. N. contributed to design and supervision of the study; R. T. M-N. designed the study and experiments, contributed to data acquisition, interpretation and analysis and wrote the manuscript.</p>
+</sec>
+<ref-list>
+<title>References</title>
+<ref id="c1"><label>1</label><mixed-citation publication-type="journal"><string-name><surname>Dinnes</surname>, <given-names>J.</given-names></string-name> <etal>et al.</etal> <article-title>Rapid, point-of-care antigen and molecular-based tests for diagnosis of SARS-CoV-2 infection</article-title>. <source>Cochrane Database Syst Rev</source> <volume>3</volume>, <fpage>CD013705</fpage>, doi:<pub-id pub-id-type="doi">10.1002/14651858.CD013705.pub2</pub-id> (<year>2021</year>).</mixed-citation></ref>
+<ref id="c2"><label>2</label><mixed-citation publication-type="journal"><string-name><surname>Consortium</surname>, <given-names>I. G. I. T.</given-names></string-name> <article-title>Blueprint for a pop-up SARS-CoV-2 testing lab</article-title>. <source>Nat Biotechnol</source> <volume>38</volume>, <fpage>791</fpage>&#x2013;<lpage>797</lpage>, doi:<pub-id pub-id-type="doi">10.1038/s41587-020-0583-3</pub-id> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c3"><label>3</label><mixed-citation publication-type="other"><string-name><surname>Gillam</surname>, <given-names>T. B.</given-names></string-name> <etal>et al.</etal> <article-title>Norwich COVID-19 testing initiative pilot: evaluating the feasibility of asymptomatic testing on a university campus</article-title>. <source>J Public Health (Oxf)</source>, doi:<pub-id pub-id-type="doi">10.1093/pubmed/fdaa194</pub-id> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c4"><label>4</label><mixed-citation publication-type="journal"><string-name><surname>Richter</surname>, <given-names>A.</given-names></string-name> <etal>et al.</etal> <article-title>How to establish an academic SARS-CoV-2 testing laboratory</article-title>. <source>Nat Microbiol</source> <volume>5</volume>, <fpage>1452</fpage>&#x2013;<lpage>1454</lpage>, doi:<pub-id pub-id-type="doi">10.1038/s41564-020-00818-3</pub-id> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c5"><label>5</label><mixed-citation publication-type="journal"><string-name><surname>Veldhoen</surname>, <given-names>M.</given-names></string-name> &#x0026; <string-name><surname>Zuzarte-Luis</surname>, <given-names>V.</given-names></string-name> <article-title>Academic labs supporting COVID-19 diagnostics</article-title>. <source>Eur J Immunol</source> <volume>51</volume>, <fpage>13</fpage>&#x2013;<lpage>16</lpage>, doi:<pub-id pub-id-type="doi">10.1002/eji.202170015</pub-id> (<year>2021</year>).</mixed-citation></ref>
+<ref id="c6"><label>6</label><mixed-citation publication-type="journal"><string-name><surname>Nalla</surname>, <given-names>A. K.</given-names></string-name> <etal>et al.</etal> <article-title>Comparative Performance of SARS-CoV-2 Detection Assays Using Seven Different Primer-Probe Sets and One Assay Kit</article-title>. <source>J Clin Microbiol</source> <volume>58</volume>, doi:<pub-id pub-id-type="doi">10.1128/JCM.00557-20</pub-id> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c7"><label>7</label><mixed-citation publication-type="journal"><string-name><surname>Merindol</surname>, <given-names>N.</given-names></string-name> <etal>et al.</etal> <article-title>SARS-CoV-2 detection by direct rRT-PCR without RNA extraction</article-title>. <source>J Clin Virol</source> <volume>128</volume>, <fpage>104423</fpage>, doi:<pub-id pub-id-type="doi">10.1016/j.jcv.2020.104423</pub-id> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c8"><label>8</label><mixed-citation publication-type="journal"><string-name><surname>Mancini</surname>, <given-names>F.</given-names></string-name> <etal>et al.</etal> <article-title>Laboratory management for SARS-CoV-2 detection: a user-friendly combination of the heat treatment approach and rt-Real-time PCR testing</article-title>. <source>Emerg Microbes Infect</source> <volume>9</volume>, <fpage>1393</fpage>&#x2013;<lpage>1396</lpage>, doi:<pub-id pub-id-type="doi">10.1080/22221751.2020.1775500</pub-id> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c9"><label>9</label><mixed-citation publication-type="journal"><string-name><surname>Fomsgaard</surname>, <given-names>A. S.</given-names></string-name> &#x0026; <string-name><surname>Rosenstierne</surname>, <given-names>M.</given-names></string-name> <article-title>W. An alternative workflow for molecular detection of SARS-CoV-2 - escape from the NA extraction kit-shortage, Copenhagen, Denmark, March 2020</article-title>. <source>Euro Surveill</source> <volume>25</volume>, doi:<pub-id pub-id-type="doi">10.2807/1560-7917.ES.2020.25.14.2000398</pub-id> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c10"><label>10</label><mixed-citation publication-type="journal"><string-name><surname>Bruce</surname>, <given-names>E. A.</given-names></string-name> <etal>et al.</etal> <article-title>Direct RT-qPCR detection of SARS-CoV-2 RNA from patient nasopharyngeal swabs without an RNA extraction step</article-title>. <source>PLoS Biol</source> <volume>18</volume>, <fpage>e3000896</fpage>, doi:<pub-id pub-id-type="doi">10.1371/journal.pbio.3000896</pub-id> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c11"><label>11</label><mixed-citation publication-type="journal"><string-name><surname>Beltran-Pavez</surname>, <given-names>C.</given-names></string-name> <etal>et al.</etal> <article-title>Accuracy of a RT-qPCR SARS-CoV-2 detection assay without prior RNA extraction</article-title>. <source>J Virol Methods</source> <volume>287</volume>, <fpage>113969</fpage>, doi:<pub-id pub-id-type="doi">10.1016/j.jviromet.2020.113969</pub-id> (<year>2021</year>).</mixed-citation></ref>
+<ref id="c12"><label>12</label><mixed-citation publication-type="journal"><string-name><surname>Genoud</surname>, <given-names>V.</given-names></string-name> <etal>et al.</etal> <article-title>Extraction-free protocol combining proteinase K and heat inactivation for detection of SARS-CoV-2 by RT-qPCR</article-title>. <source>PLoS One</source> <volume>16</volume>, <fpage>e0247792</fpage>, doi:<pub-id pub-id-type="doi">10.1371/journal.pone.0247792</pub-id> (<year>2021</year>).</mixed-citation></ref>
+<ref id="c13"><label>13</label><mixed-citation publication-type="journal"><string-name><surname>Vogels</surname>, <given-names>C. B. F.</given-names></string-name> <etal>et al.</etal> <article-title>Analytical sensitivity and efficiency comparisons of SARS-CoV-2 RT-qPCR primer-probe sets</article-title>. <source>Nat Microbiol</source> <volume>5</volume>, <fpage>1299</fpage>&#x2013;<lpage>1305</lpage>, doi:<pub-id pub-id-type="doi">10.1038/s41564-020-0761-6</pub-id> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c14"><label>14</label><mixed-citation publication-type="journal"><string-name><surname>Reijns</surname>, <given-names>M. A. M.</given-names></string-name> <etal>et al.</etal> <article-title>A sensitive and affordable multiplex RT-qPCR assay for SARS-CoV-2 detection</article-title>. <source>PLoS Biol</source> <volume>18</volume>, <fpage>e3001030</fpage>, doi:<pub-id pub-id-type="doi">10.1371/journal.pbio.3001030</pub-id> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c15"><label>15</label><mixed-citation publication-type="website"><collab>CDC</collab>. <source>CDC 2019-Novel Coronavirus (2019-nCoV) Real-Time RT-PCR Diagnostic Panel CDC Website Revision 06</source>, doi: <ext-link ext-link-type="uri" xlink:href="https://www.fda.gov/media/134922/download">https://www.fda.gov/media/134922/download</ext-link> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c16"><label>16</label><mixed-citation publication-type="journal"><string-name><surname>Corman</surname>, <given-names>V. M.</given-names></string-name> <etal>et al.</etal> <article-title>Detection of 2019 novel coronavirus (2019-nCoV) by real-time RT-PCR</article-title>. <source>Euro Surveill</source> <volume>25</volume>, doi:<pub-id pub-id-type="doi">10.2807/1560-7917.ES.2020.25.3.2000045</pub-id> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c17"><label>17</label><mixed-citation publication-type="journal"><string-name><surname>Patterson</surname>, <given-names>E. I.</given-names></string-name> <etal>et al.</etal> <article-title>Methods of Inactivation of SARS-CoV-2 for Downstream Biological Assays</article-title>. <source>J Infect Dis</source> <volume>222</volume>, <fpage>1462</fpage>&#x2013;<lpage>1467</lpage>, doi:<pub-id pub-id-type="doi">10.1093/infdis/jiaa507</pub-id> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c18"><label>18</label><mixed-citation publication-type="journal"><string-name><surname>Chin</surname>, <given-names>A. W. H.</given-names></string-name> <etal>et al.</etal> <article-title>Stability of SARS-CoV-2 in different environmental conditions</article-title>. <source>Lancet Microbe</source> <volume>1</volume>, <fpage>e10</fpage>, doi:<pub-id pub-id-type="doi">10.1016/S2666-5247(20)30003-3</pub-id> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c19"><label>19</label><mixed-citation publication-type="other"><string-name><surname>Auerswald</surname>, <given-names>H.</given-names></string-name> <etal>et al.</etal> <article-title>Assessment of inactivation procedures for SARS-CoV-2</article-title>. <source>J Gen Virol</source>, doi:<pub-id pub-id-type="doi">10.1099/jgv.0.001539</pub-id> (<year>2021</year>).</mixed-citation></ref>
+<ref id="c20"><label>20</label><mixed-citation publication-type="journal"><string-name><surname>Pan</surname>, <given-names>Y.</given-names></string-name> <etal>et al.</etal> <article-title>Potential False-Negative Nucleic Acid Testing Results for Severe Acute Respiratory Syndrome Coronavirus 2 from Thermal Inactivation of Samples with Low Viral Loads</article-title>. <source>Clin Chem</source> <volume>66</volume>, <fpage>794</fpage>&#x2013;<lpage>801</lpage>, doi:<pub-id pub-id-type="doi">10.1093/clinchem/hvaa091</pub-id> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c21"><label>21</label><mixed-citation publication-type="website"><string-name><surname>Andrew Rambaut</surname>, <given-names>N. L.</given-names></string-name>, <string-name><given-names>Oliver</given-names> <surname>Pybus</surname></string-name>, <string-name><given-names>Wendy</given-names> <surname>Barclay</surname></string-name>, <string-name><given-names>Jeff</given-names> <surname>Barrett</surname></string-name>, <string-name><given-names>Alesandro</given-names> <surname>Carabelli</surname></string-name>, <string-name><given-names>Tom</given-names> <surname>Connor</surname></string-name>, <string-name><given-names>Tom</given-names> <surname>Peacock</surname></string-name>, <string-name><given-names>David L</given-names> <surname>Robertson</surname></string-name>, <string-name><given-names>Erik</given-names> <surname>Volk</surname></string-name>, <collab>on behalf of COVID-19 Genomics Consortium UK (CoG-UK)</collab>. <source>Preliminary genomic characterisation of an emergent SARS-CoV-2 lineage in the UK defined by a novel set of spike mutations</source>. doi:<ext-link ext-link-type="uri" xlink:href="https://virological.org/t/preliminary-genomic-characterisation-of-an-emergent-sars-cov-2-lineage-in-the-uk-defined-by-a-novel-set-of-spike-mutations/563">https://virological.org/t/preliminary-genomic-characterisation-of-an-emergent-sars-cov-2-lineage-in-the-uk-defined-by-a-novel-set-of-spike-mutations/563</ext-link> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c22"><label>22</label><mixed-citation publication-type="journal"><string-name><surname>Kim</surname>, <given-names>D.</given-names></string-name> <etal>et al.</etal> <article-title>The Architecture of SARS-CoV-2 Transcriptome</article-title>. <source>Cell</source> <volume>181</volume>, <fpage>914</fpage>&#x2013;<lpage>921 e910</lpage>, doi:<pub-id pub-id-type="doi">10.1016/j.cell.2020.04.011</pub-id> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c23"><label>23</label><mixed-citation publication-type="website"><string-name><surname>England</surname>, <given-names>P. H.</given-names></string-name> <article-title>Understanding cycle threshold (Ct) in SARS-CoV-2 RT-PCR. A guide for health protection teams</article-title>. <source>Public Health England</source>, doi:<ext-link ext-link-type="uri" xlink:href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/926410/Understanding_Cycle_ThresholdCtin_SARS-CoV-2_RT-PCR_.pdf">https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/926410/Understanding_Cycle_ThresholdCtin_SARS-CoV-2_RT-PCR_.pdf</ext-link> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c24"><label>24</label><mixed-citation publication-type="other"><string-name><surname>Jiang</surname>, <given-names>Y. Q.</given-names></string-name> <etal>et al.</etal> <article-title>Sub-second heat inactivation of coronavirus using a betacoronavirus model</article-title>. <source>Biotechnology and Bioengineering</source>, doi:<pub-id pub-id-type="doi">10.1002/bit.27720</pub-id> (<year>2021</year>).</mixed-citation></ref>
+</ref-list>
+</back>
+</article>

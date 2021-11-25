@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.2d1 20170631//EN" "JATS-archivearticle1.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" article-type="article" dtd-version="1.2d1" specific-use="production" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="publisher-id">MEDRXIV</journal-id>
+<journal-title-group>
+<journal-title>medRxiv</journal-title>
+<abbrev-journal-title abbrev-type="publisher">medRxiv</abbrev-journal-title>
+</journal-title-group>
+<publisher>
+<publisher-name>Cold Spring Harbor Laboratory</publisher-name>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1101/2021.05.21.21257603</article-id>
+<article-version>1.1</article-version>
+<article-categories>
+<subj-group subj-group-type="hwp-journal-coll">
+<subject>Epidemiology</subject>
+</subj-group>
+</article-categories>
+<title-group>
+<article-title>COVID-19 County Level Severity Classification with Class Imbalance: A NearMiss Under-sampling Approach</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" corresp="yes">
+<name><surname>Oladunni</surname><given-names>Timohty</given-names></name>
+<xref ref-type="corresp" rid="cor1">&#x002A;</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Tossou</surname><given-names>Sourou</given-names></name>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Haile</surname><given-names>Yayehyrad</given-names></name>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Kidane</surname><given-names>Adonias</given-names></name>
+</contrib>
+<aff id="a1"><institution>Computer Science/Information Technology Department, University of the District of Columbia</institution>, Washington DC, <country>USA</country></aff>
+</contrib-group>
+<author-notes>
+<corresp id="cor1"><label>&#x002A;</label><email>Timothy.oladunni@udc.edu</email></corresp>
+<fn id="n1" fn-type="others"><p><email>sourou.tossou@udc.edu</email>, <email>yayehyrad.haile@udc.edu</email>, <email>adonias.kidane@udc.edu</email></p></fn>
+</author-notes>
+<pub-date pub-type="epub">
+<year>2021</year>
+</pub-date>
+<elocation-id>2021.05.21.21257603</elocation-id>
+<history>
+<date date-type="received">
+<day>21</day>
+<month>5</month>
+<year>2021</year>
+</date>
+<date date-type="rev-recd">
+<day>21</day>
+<month>5</month>
+<year>2021</year>
+</date>
+<date date-type="accepted">
+<day>25</day>
+<month>5</month>
+<year>2021</year>
+</date>
+</history>
+<permissions>
+<copyright-statement>&#x00A9; 2021, Posted by Cold Spring Harbor Laboratory</copyright-statement>
+<copyright-year>2021</copyright-year>
+<license license-type="creative-commons" xlink:href="http://creativecommons.org/licenses/by-nd/4.0/"><license-p>This pre-print is available under a Creative Commons License (Attribution-NoDerivs 4.0 International), CC BY-ND 4.0, as described at <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by-nd/4.0/">http://creativecommons.org/licenses/by-nd/4.0/</ext-link></license-p></license>
+</permissions>
+<self-uri xlink:href="21257603.pdf" content-type="pdf" xlink:role="full-text"/>
+<abstract>
+<title>Abstract</title>
+<p>COVID-19 pandemic that broke out in the late 2019 has spread across the globe. The disease has infected millions of people. Thousands of lives have been lost. The momentum of the disease has been slowed by the introduction of vaccine. However, some countries are still recording high number of casualties. The focus of this work is to design, develop and evaluate a machine learning county level COVID-19 severity classifier. The proposed model will predict severity of the disease in a county into low, moderate, or high. Policy makers will find the work useful in the distribution of vaccines. Four learning algorithms (two ensembles and two non-ensembles) were trained and evaluated. Class imbalance was addressed using NearMiss under-sampling of the majority classes. The result of our experiment shows that the ensemble models outperformed the non-ensemble models by a considerable margin.</p>
+</abstract>
+<kwd-group kwd-group-type="author">
+<title>Keywords</title>
+<kwd>COVID-19</kwd>
+<kwd>Classification</kwd>
+<kwd>predictive model</kwd>
+<kwd>KNN</kwd>
+<kwd>Random Forest</kwd>
+<kwd>Boosting</kwd>
+<kwd>imbalance class</kwd>
+</kwd-group>
+<counts>
+<page-count count="6"/>
+</counts>
+</article-meta>
+<notes>
+<notes notes-type="competing-interest-statement">
+<title>Competing Interest Statement</title><p>The authors have declared no competing interest.</p></notes>
+<notes notes-type="financial-disclosure">
+<title>Funding Statement</title><p>National Science Foundation</p></notes>
+<notes notes-type="disclosures">
+<title>Author Declarations</title><p>I confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.</p><p>Yes</p><p>The details of the IRB/oversight body that provided approval or exemption for the research described are given below:</p><p>University of the District of Columbia IRB</p><p>All necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived.</p><p>Yes</p><p>I understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).</p><p>Yes</p><p>I have followed all appropriate research reporting guidelines and uploaded the relevant EQUATOR Network research reporting checklist(s) and other pertinent material as supplementary files, if applicable.</p><p>Yes</p></notes>
+</notes>
+</front>
+<body>
+<sec id="s1">
+<label>I.</label>
+<title>INTRODUCTION</title>
+<p>Since the outbreak of the coronavirus pandemic, the Centers for Disease Control and Prevention (CDC) has recorded close to 30 million cases. Thousands of lives have been lost to COVID-19 [<xref ref-type="bibr" rid="c1">1</xref>]. While the United States and other developed countries has been able to bend the curve on the fatality rate, emerging evidence suggests that the disease is just taking root in some countries. As of May 19, 2021, Mexico tops the fatality rate with 9.3&#x0025;. At a distant second is Peru with 3&#x0025; and 3.5 &#x0025;. Italy and Iran came third and fourth with 3&#x0025; and 2.8&#x0025; respectively. The origin of this pandemic is an ongoing research; however, most scientists believe that it originated from a bat in Wuhan, China.</p>
+<p>The question now is: how do we categorize the severity of COVID-19 fatality in a county? We answered this question by building a machine learning classifier using the fatality rate dataset from the 3 006 counties in the US. Dataset was obtained from the John Hopkins University repository.</p>
+<p>Machine learning algorithms have been shown to have the capability to learn pattern and discover knowledge from a dataset. It has been used in image recognition, fraud detection, voice recognition, malware detection etc. Since the outbreak of the coronavirus pandemic, several studies have been done using machine learning algorithms to understand the pandemic and provide strategies to reduce its spread.</p>
+<p>Author [<xref ref-type="bibr" rid="c2">2</xref>] proposed a quantitative model to predict vulnerability to COVID-19 using genomes. Neural networks and Random Forests were used as learning algorithms. The result of the study confirmed previous work on phenotypic comorbidity patterns in susceptibility to COVID-19. In another study, Kexin studied nineteen risk factors associated with COVID-19 severity. The result suggested that severity relates to individual&#x2019;s characteristics, disease factors, and biomarkers [<xref ref-type="bibr" rid="c3">3</xref>]. Hina et al., proposed a model to predict patient COVID-19 severity in Pakistan. Seven learning algorithms were trained and evaluated. The result of the experiment showed that Random Forest had the best performance with 60&#x0025; accuracy.</p>
+<p>While there are several studies on COVID-19 severity, there seems to be a gap in machine learning literature on the imbalanced classification of COVID-19 severity at the county level. Therefore, the focus of this study is the algorithmic imbalance classification of COVID-19 of a county into low, moderate, or high. <italic>We hypothesized that ensemble learning in conjunction with the under-sampled majority class of an imbalance COVID-19 dataset has a superior capability of predicting the severity of COVID-19 at the county level</italic>.</p>
+<p>We test our hypothesis by experimenting with ensemble and non-ensemble learning algorithms. Random Forest and Boosting Trees were trained and evaluated as our ensemble model, while Logistic Regression and K Nearest Neighbors as the non-ensemble models.</p>
+<p>This paper is organized as follows: <xref ref-type="sec" rid="s2b">Section 2</xref> describes the methodology for the study. Discussions, and conclusions are highlighted in <xref ref-type="sec" rid="s2c">sections 3</xref> and <xref ref-type="sec" rid="s2d">4</xref> respectively. Finally, we acknowledged the source of our funding in <xref ref-type="sec" rid="s2e">section 5</xref>.</p>
+</sec>
+<sec id="s2">
+<label>II.</label>
+<title>METHOGOLOGY</title>
+<sec id="s2a">
+<label>1.</label>
+<title>Dataset</title>
+<p>Dataset was obtained from the John Hopkins University COVID-19 repository [<xref ref-type="bibr" rid="c4">4</xref>]. Dataset was cleansed at the processing stage. Non-numerical variables were converted into numerical variables. Data consisted of the 3 006 counties of the United States. Insignificant and redundant features were dropped during the cleaning phase. Normalization was also done.</p>
+</sec>
+<sec id="s2b">
+<label>2.</label>
+<title>Categorization</title>
+<p>Severity of COVID-19 was measured using the fatality rate as the response variable. The fatality rate as recorded in the dataset was a continuous variable. Therefore, attributes were split into 3 groups based on the following criterion: counties with fatality rates less than 1 were categorized as low (0 &#x003C; x &#x2264; 1). Moderate class are the counties with fatality rate greater than 1 but less than or equal to 2 (1 &#x003C; x &#x2264; 2). Finally, the high class are counties that have greater than 2 but less than equal to 4 fatalities (2 &#x003C; x &#x2264; 4). Categorization or grouping is crucial for classification of continuous variables.</p>
+</sec>
+<sec id="s2c">
+<label>3.</label>
+<title>Imbalance Class</title>
+<p>The above categorization resulted into skewed class distribution. This skewness of the class distribution is referred to as class imbalance. An imbalance dataset has one or more classes with low records (minority class) and one or more classes with many records (majority class). Class imbalance has been shown to have a considerable negative impact on the effectiveness of a learning algorithm.</p>
+</sec>
+<sec id="s2d">
+<label>4.</label>
+<title>Under-sampling of the majority class-The Near Miss Under-sampling (NMU) Approach</title>
+<p>The question is, <italic>how do we balance the dataset?</italic> An imbalanced data can be balanced by oversampling of the minority class or under-sampling of the majority class. In oversampling approach, more data are created to increase the size of the minority class records to equal the majority class records. However, this approach has the risk of overfitting. On the other hand, in under-sampling, the size of the majority class is reduced to balance the class distribution. We believe this is a better approach. Therefore, in this study, we used the Near Miss Under-sampling (NMU) strategy.</p>
+<p>NMU selection is based on distance of the majority records to the minority records. It is a k nearest neighbor approach. Distance is based on the Euclidean distance measure. NMU has three versions: version 1, version 2 and version 3. Version 1 is based on the smallest average distance between the majority class and three closest records of the minority class. Version 2 selects records from the majority class with farthest distance from three minority class. Lastly, in version 3, a given number of the majority class is selected for each closest example in the minority class. In this study, version 1 is used. The result of our experiment shows the effectiveness of our strategy. The NearMiss function from the imblearn.under_sampling library was used.</p>
+</sec>
+<sec id="s2e">
+<label>5.</label>
+<title>Experiment</title>
+<p>We trained and evaluated 2 ensemble learning algorithms (Random Forest and Boosting). We also trained and evaluated 2 non-ensembles (Logistic Regression and K Nearest Neighbors). Dataset was split into 90&#x0025; and 10&#x0025; for training and testing, respectively. Performance evaluation was based on precision, recall, accuracy and F1 score.</p>
+<sec id="s2e1">
+<label>5.1</label>
+<title>Performance Evaluation</title>
+<p>To compare the results of our experiment, we used accuracy, the recall, and the f-1 score as our factors of comparison.</p>
+<sec id="s2e1a">
+<label>5.1.1</label>
+<title>Accuracy</title>
+<p>Accuracy is defined as the percentage of correct predictions for the test data. It can be calculated easily by dividing the number of correct predictions by the number of total predictions, and the formula is as follow:
+<disp-formula id="eqn1">
+<alternatives><graphic xlink:href="21257603v1_eqn1.gif"/></alternatives>
+</disp-formula>
+</p>
+</sec>
+<sec id="s2e1b">
+<label>5.1.2</label>
+<title>Precision</title>
+<p>Precision is a metric that quantifies the number of correct positive predictions made. And it is calculated using the following formula:
+<disp-formula id="eqn2">
+<alternatives><graphic xlink:href="21257603v1_eqn2.gif"/></alternatives>
+</disp-formula>
+</p>
+</sec>
+<sec id="s2e1c">
+<label>5.1.3</label>
+<title>Recall</title>
+<p>Recall is a metric that quantifies the number of correct positive predictions made from all positive predictions that could have been made. Its operation is as followed:
+<disp-formula id="eqn4">
+<alternatives><graphic xlink:href="21257603v1_eqn4.gif"/></alternatives>
+</disp-formula>
+</p>
+</sec>
+<sec id="s2e1d">
+<label>5.1.4</label>
+<title>F-Measure</title>
+<p>F-Measure provides a way to combine both precision and recall into a single measure that captures both properties. Its formula is as given:
+<disp-formula id="eqn5">
+<alternatives><graphic xlink:href="21257603v1_eqn5.gif"/></alternatives>
+</disp-formula>
+</p>
+</sec>
+</sec>
+<sec id="s2e2">
+<label>5.2</label>
+<title>Learning Algorithms</title>
+<p>We trained and evaluated the performances of 4 learning algorithm.</p>
+<sec id="s2e2a">
+<label>5.2.1</label>
+<title>K-Nearest Neighboring (KNN)</title>
+<p>In a dataset with y response variable <italic>y</italic> and <bold>X</bold> feature vectors, a KNN learning algorithm identifies K points in a training dataset that are closest to a new testing datapoint <italic>x</italic><sub><italic>0</italic></sub>.
+<disp-formula id="eqn6">
+<alternatives><graphic xlink:href="21257603v1_eqn6.gif"/></alternatives>
+</disp-formula></p>
+<p>Where <italic>j</italic> is estimated response and <italic>y</italic><sub><italic>i</italic></sub> as the target (label). N<sub>0</sub> is the K points. In our experiment 5 was selected as the value of K. In addition, we used the MixedMeasures for the measure types. The Euclidean distance was used as the distance metric. [<xref ref-type="bibr" rid="c5">5</xref>]
+<disp-formula id="eqn7">
+<alternatives><graphic xlink:href="21257603v1_eqn7.gif"/></alternatives>
+</disp-formula></p>
+<p>Where <bold>d</bold> represents the distance, <bold>x</bold> and <bold>y</bold> are 2 data points.</p>
+<p>Performance of the KNN learning algorithm is shown in <xref rid="tbl1" ref-type="table">table 1</xref>. In all evaluation criterion, the result suggest that moderate class has the lowest prediction. Accuracy score was approximately 0.61.</p>
+<table-wrap id="tbl1" orientation="portrait" position="float">
+<label>Table 1.</label>
+<caption><p>KNN performance</p></caption>
+<graphic xlink:href="21257603v1_tbl1.tif"/>
+</table-wrap>
+</sec>
+<sec id="s2e2b">
+<label>5.2.2</label>
+<title>Logistic Regression</title>
+<p>Logistic regression is a supervised learning algorithm for predicting the likelihood of a target variable. In a two-class problem, the target or dependent variable is dichotomous, which implies there would be just two potential classes [<xref ref-type="bibr" rid="c6">6</xref>]. The logistic function produces output between 0 and 1.
+<disp-formula id="eqn8">
+<alternatives><graphic xlink:href="21257603v1_eqn8.gif"/></alternatives>
+</disp-formula></p>
+<p>It can be shown that,
+<disp-formula id="eqn9">
+<alternatives><graphic xlink:href="21257603v1_eqn9.gif"/></alternatives>
+</disp-formula></p>
+<p>Taking logarithms,
+<disp-formula id="eqn10">
+<alternatives><graphic xlink:href="21257603v1_eqn10.gif"/></alternatives>
+</disp-formula>
+where b<sub>0</sub> is the bias or intercept term and b<sub>1</sub> is the coefficient for the single input value (x). L2 regularization was used as the overfitting control. Tolerance for stoppage criteria was 1e-4. Optimization was based on lbfgs. <xref rid="tbl2" ref-type="table">Table 2</xref> shows the result of the Logistic Regression.</p>
+<table-wrap id="tbl2" orientation="portrait" position="float">
+<label>Table 2.</label>
+<caption><p>Logistic Regression performance.</p></caption>
+<graphic xlink:href="21257603v1_tbl2.tif"/>
+</table-wrap>
+<p>As shown in <xref rid="tbl2" ref-type="table">table 2</xref>. The performance of Logistic Regression is worse than that of KNN.</p>
+</sec>
+<sec id="s2e2c">
+<label>5.2.3</label>
+<title>Random Forest</title>
+<p>Random forest is a supervised learning algorithm that is utilized for classifications as well as regression. A forest is comprising of trees and more trees suggest a stronger forest. Aggregating decision trees in ensemble learning, produces a better performance. Essentially, the Random forest calculation creates decision trees on bootstrapped training data samples. and afterward gets the forecast from every one of them and then lastly chooses the best solution through voting [<xref ref-type="bibr" rid="c7">7</xref>]. It is an ensemble method that is superior to a solitary decision tree since it decreases the over-fitting by averaging the outcome.
+<disp-formula id="eqn11">
+<alternatives><graphic xlink:href="21257603v1_eqn11.gif"/></alternatives>
+</disp-formula>
+where <italic>RFfi</italic><sub><italic>i</italic></sub> is the importance of feature i calculated from all trees, <italic>normfi</italic><sub><italic>ij</italic></sub> is the normalized feature importance for i in tree j.</p>
+<p><xref rid="tbl3" ref-type="table">Table 3</xref> shows that the Random Forest model outperformed KNN and Logistic Regression models.</p>
+<table-wrap id="tbl3" orientation="portrait" position="float">
+<label>Table 3.</label>
+<caption><p>Random Forest performance.</p></caption>
+<graphic xlink:href="21257603v1_tbl3.tif"/>
+</table-wrap>
+<table-wrap id="tbl4" orientation="portrait" position="float">
+<label>Table 4.</label>
+<caption><p>Boosting Tree Performance</p></caption>
+<graphic xlink:href="21257603v1_tbl4.tif"/>
+</table-wrap>
+</sec>
+<sec id="s2e2d">
+<label>5.2.4</label>
+<title>Boosting Tree</title>
+<p>Boosting is an ensemble modeling technique that endeavors to fabricate a solid classifier from the number of weak classifiers. It is done by building a model by utilizing weak models in series like Random forest. First and foremost, a model is built from the training data. At that point the subsequent model is constructed which attempts to address the errors present in the first model. This method is proceeded, and models are added until either the total training data is predicted accurately, or the most extreme number of models are added [<xref ref-type="bibr" rid="c8">8</xref>].</p>
+<p>Its implementation required us to 100 for the number of trees, a maximal depth of 5, a min rows of 10, a min split improvement of 1.0E-5, a number of bins equals to 20, a learning rate of 0.01, and a sample rate of 1.</p>
+</sec>
+</sec>
+</sec>
+</sec>
+<sec id="s3">
+<label>III.</label>
+<title>DISCUSSION</title>
+<p>Accuracy of the models were compared. For each model, we also took the average performance of the precision, recall and F1 score. <xref rid="tbl5" ref-type="table">Table 5</xref> shows the comparison table.</p>
+<table-wrap id="tbl5" orientation="portrait" position="float">
+<label>Table 5.</label>
+<caption><p>Model Performance Comparison</p></caption>
+<graphic xlink:href="21257603v1_tbl5.tif"/>
+</table-wrap>
+<p>As shown in the experimental result, Random Forest and Boosting Tree models outperformed other models. These two models were built with large number of decision trees on bootstrapped training data. The results of shows that the Boosting model has the best performance with 93.41&#x0025; of accuracy. Performances based on precision, recall and F1 showed an averaged value of 93&#x0025;, 93&#x0025;, and 93&#x0025; respectively. The superior performance of the Boosting Model is not surprising because, a boosting tree is a large combination of decision trees grown sequentially. Random Forest and Boosting Tree are built on the ensemble of decision trees. However, the arrangement of fitting small trees with a few terminal nodes into the residual of the previous tress in a Boosting Tree sequentially improves the performance of the model.</p>
+</sec>
+<sec id="s4">
+<label>IV.</label>
+<title>CONCLUSION</title>
+<p>In this study we have designed, developed, and evaluated a COVID-19 severity classifier using imbalance class dataset. The proposed model has the capability of predicting the severity level of COVID-19 in a given county. Dataset was obtained from the JHU COVID-19 repository. COVID-19 Severity level was based on fatality rates in all the 3 006 counties of the US. For classification purpose, fatality rate was categorized into low, moderate and high. Imbalance class was addressed using the Near Miss Under-sampling (NMU) approach. Ensemble and non-ensemble learning algorithms were trained and evaluated. Ensemble models include Random Forest and Boosting Trees. KNN and Logistic Regression were used as the non-ensemble models.</p>
+<p>The result of our experiment suggests that the ensemble models are the most effective in building a COVID-19 severity classifier at the county level using imbalanced dataset. Thus, we do not have sufficient evidence against our hypothesis. Therefore, we contend that <italic>ensemble learning in conjunction with under-sampled majority class of an imbalance COVID-19 dataset has a superior capability of classifying the severity of COVID-19 at the county level</italic>.</p>
+</sec>
+</body>
+<back>
+<sec sec-type="data-availability">
+<title>Data Availability</title>
+<p>John Hopkins University COVID-19 Repository</p>
+</sec>
+<ack>
+<label>V.</label>
+<title>ACKNOWLEDGEMENT</title>
+<p>This work is funded by the National Science Foundation grant number 2032345.</p>
+</ack>
+<ref-list>
+<title>References</title>
+<ref id="c1"><label>[1]</label><mixed-citation publication-type="website"><collab>C. f. D. C. a. P</collab>., <source>&#x201C;&#x201C;CDC&#x201D;,&#x201D; [Online]</source>. Available: <ext-link ext-link-type="uri" xlink:href="https://www.cdc.gov/">https://www.cdc.gov/</ext-link>.</mixed-citation></ref>
+<ref id="c2"><label>[2]</label><mixed-citation publication-type="other"><string-name><given-names>R. Y.</given-names> <surname>Wang</surname></string-name>, <string-name><given-names>T. Q.</given-names> <surname>Guo</surname></string-name>, <string-name><given-names>L. G.</given-names> <surname>Li</surname></string-name>, <string-name><given-names>J. Y.</given-names> <surname>Jiao</surname></string-name> and <string-name><given-names>L. Y.</given-names> <surname>Wang</surname></string-name>, &#x201C;<article-title>&#x201C;Predictions of COVID-19 Infection Severity Based on Co-associations between the SNPs of Co-morbid Diseases and COVID-19 through Machine Learning of Genetic Data</article-title>,&#x201D; <source>in IEEE 8th International Conference on Computer Science and Network Technology (ICCSNT)</source>, <year>2020</year>.</mixed-citation></ref>
+<ref id="c3"><label>[3]</label><mixed-citation publication-type="other"><string-name><given-names>K.</given-names> <surname>Tang</surname></string-name>, &#x201C;<article-title>Risk factors and indicators for COVID-19 severity: Clinical severe cases and their implications to prevention and treatment</article-title>,&#x201D; <source>in International Conference on Public Health and Data Science (ICPHDS)</source>, <year>2020</year>.</mixed-citation></ref>
+<ref id="c4"><label>[4]</label><mixed-citation publication-type="website"><source>John Hopkis University COVID-19 Repository, [Online]</source>. Available: <ext-link ext-link-type="uri" xlink:href="https://coronavirus.jhu.edu/">https://coronavirus.jhu.edu/</ext-link>.</mixed-citation></ref>
+<ref id="c5"><label>[5]</label><mixed-citation publication-type="other"><collab>I. G. M. a. N. G. I. R. Okfalisa</collab>, &#x201C;<article-title>Comparative analysis of k-nearest neighbor and modified knearest neighbor algorithm for data classification</article-title>,&#x201D; <source>in 2nd International conferences on Information Technology, Information Systems and Electrical Engineering (ICITISEE), Yogyakarta, Indonesia</source>,, <year>2017</year>.</mixed-citation></ref>
+<ref id="c6"><label>[6]</label><mixed-citation publication-type="other"><string-name><given-names>Y. H. Z. T. a. K. S. X.</given-names> <surname>Zou</surname></string-name>, &#x201C;<article-title>Logistic Regression Model Optimization and Case Analysis</article-title>,&#x201D; <source>in IEEE 7th International Conference on Computer Science and Network Technology (ICCSNT), Dalian, China</source>, <year>2019</year>.</mixed-citation></ref>
+<ref id="c7"><label>[7]</label><mixed-citation publication-type="other"><collab>J. C. B. B. a. K. M. B. B. R. I. H. Ortiz</collab>, &#x201C;<article-title>Analysis model of the most important factors in Covid-19 through data mining, descriptive statistics and random forest</article-title>,&#x201D; <source>in IEEE International Autumn Meeting on Power, Electronics and Computing (ROPEC), Ixtapa, Mexico</source>, <year>2020</year>.</mixed-citation></ref>
+<ref id="c8"><label>[8]</label><mixed-citation publication-type="other"><collab>Y. W. K. a. D. D. J. Dutta</collab>, &#x201C;<article-title>Comparison of Gradient Boosting and Extreme Boosting Ensemble Methods for Webpage Classification</article-title>,&#x201D; <source>in Fifth International Conference on Research in Computational Intelligence and Communication Networks (ICRCICN), Bangalore, India</source>, <year>2020</year>.</mixed-citation></ref>
+<ref id="c9"><label>[9]</label><mixed-citation publication-type="journal"><collab>Y. C. Y. Z. X. F. a. Y. L. F. Miao</collab>, &#x201C;<article-title>Predictive Modeling of Hospital Mortality for Patients With Heart Failure by Using an Improved Random Survival Forest</article-title>,&#x201D; <source>IEEE Access, vol</source>. vol. <volume>6</volume>, no. IEEE, pp. pp. <fpage>7244</fpage>&#x2013;<lpage>7253</lpage>, <year>2018</year>.</mixed-citation></ref>
+<ref id="c10"><label>[10]</label><mixed-citation publication-type="other"><collab>[. L. A. S. L. F. A. M. L. M. B. C. M. &#x0026;. M. P. D. M. McCormack</collab>, &#x201C;<article-title>Gaps in knowledge about COVID-19 among US residents early in the outbreak</article-title>,&#x201D; <source>in Public Health Reports, United States</source>, <year>2021</year>..</mixed-citation></ref>
+<ref id="c11"><label>[11]</label><mixed-citation publication-type="other"><collab>[. U. W. a. S. H. A. C. Braun</collab>, &#x201C;<article-title>Support vector machines, import vector machines and relevance vector machines for hyperspectral classification</article-title>,&#x201D; <source>in in 3rd Workshop on Hyperspectral Image and Signal Processing: Evolution in Remote Sensing (WHISPERS), Lisbon, Portugal</source>, <year>2011</year>.</mixed-citation></ref>
+<ref id="c12"><label>[12]</label><mixed-citation publication-type="other"><collab>Y. Z. H. Z. a. Q. W. C. Zhan</collab>, &#x201C;<article-title>Random-Forest-Bagging Broad Learning System with Applications for COVID-19 Pandemic</article-title>,,&#x201D; <source>IEEE Internet of Things Journal</source>, <year>2021</year>.</mixed-citation></ref>
+</ref-list>
+</back>
+</article>

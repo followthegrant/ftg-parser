@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.2d1 20170631//EN" "JATS-archivearticle1.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" article-type="article" dtd-version="1.2d1" specific-use="production" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="publisher-id">MEDRXIV</journal-id>
+<journal-title-group>
+<journal-title>medRxiv</journal-title>
+<abbrev-journal-title abbrev-type="publisher">medRxiv</abbrev-journal-title>
+</journal-title-group>
+<publisher>
+<publisher-name>Cold Spring Harbor Laboratory</publisher-name>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1101/2021.07.23.21260626</article-id>
+<article-version>1.1</article-version>
+<article-categories>
+<subj-group subj-group-type="hwp-journal-coll">
+<subject>Radiology and Imaging</subject>
+</subj-group>
+</article-categories>
+<title-group>
+<article-title>A comprehensive evaluation methodology for the publicly accessible AI services for medical diagnostics</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0001-6545-6170</contrib-id>
+<name><surname>Morozov</surname><given-names>Sergey P.</given-names></name>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-1816-1315</contrib-id>
+<name><surname>Gombolevskiy</surname><given-names>Victor A.</given-names></name>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-2681-9378</contrib-id>
+<name><surname>Blokhin</surname><given-names>Ivan A.</given-names></name>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-2585-0864</contrib-id>
+<name><surname>Semenov</surname><given-names>Serafim S.</given-names></name>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0001-6036-2060</contrib-id>
+<name><surname>Logunova</surname><given-names>Tatiana A.</given-names></name>
+</contrib>
+<contrib contrib-type="author" corresp="yes">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0001-6359-0763</contrib-id>
+<name><surname>Andreychenko</surname><given-names>Anna E.</given-names></name>
+<xref ref-type="corresp" rid="cor1">&#x002A;</xref>
+</contrib>
+<aff id="a1"><institution>Research and Practical Clinical Center for Diagnostics and Telemedicine Technologies of the Moscow Healthcare Department</institution>. 24 Petrovka Str., bldg. 1, Moscow, 127051, <country>Russia</country></aff>
+</contrib-group>
+<author-notes>
+<corresp id="cor1"><label>&#x002A;</label><bold>Corresponding author Anna Andreychenko:</bold> &#x002B;7 916 321 2570; <email>andreychenko.a@gmail.com</email></corresp>
+<fn id="n1" fn-type="conflict"><p><bold>Conflict of Interest</bold>. The authors declare that there is no conflict of interest.</p></fn>
+</author-notes>
+<pub-date pub-type="epub">
+<year>2021</year>
+</pub-date>
+<elocation-id>2021.07.23.21260626</elocation-id>
+<history>
+<date date-type="received">
+<day>23</day>
+<month>7</month>
+<year>2021</year>
+</date>
+<date date-type="rev-recd">
+<day>23</day>
+<month>7</month>
+<year>2021</year>
+</date>
+<date date-type="accepted">
+<day>30</day>
+<month>7</month>
+<year>2021</year>
+</date>
+</history>
+<permissions>
+<copyright-statement>&#x00A9; 2021, Posted by Cold Spring Harbor Laboratory</copyright-statement>
+<copyright-year>2021</copyright-year>
+<license license-type="creative-commons" xlink:href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><license-p>This pre-print is available under a Creative Commons License (Attribution-NonCommercial-NoDerivs 4.0 International), CC BY-NC-ND 4.0, as described at <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by-nc-nd/4.0/">http://creativecommons.org/licenses/by-nc-nd/4.0/</ext-link></license-p></license>
+</permissions>
+<self-uri xlink:href="21260626.pdf" content-type="pdf" xlink:role="full-text"/>
+<abstract>
+<title>Summary</title>
+<p>Online AI in telemedicine for radiology became widely available and valuable in the pandemic, particularly for chest CT analysis. On the other hand, the potentially harmful consequences of such services&#x2019; inappropriate usage cannot be neglected. Thus, a suitable methodology for quality assurance and quality control has to be established.</p><p>A study&#x2019;s purpose was to develop and test an original methodology for a complex evaluation of open-access AI services in teleradiology. The approach included assessing the user experience, accessibility, safety, and diagnostic accuracy on the independent reference dataset. The methodology was applied to assess seven AI services for the detection of COVID-19 on a CT scan. A comparative analysis of this assessment is presented in this work. The analysis allowed us to draw conclusions about AI services&#x2019; quality and their value for different users &#x2013; patients, physicians, and healthcare data scientists. The originality of the findings, timeliness, and interdisciplinary approach make this quality assurance methodology of particular interest for further application and spreading.</p><sec>
+<title>Highlights</title>
+<list list-type="bullet">
+<list-item><p>The availability of diagnostic procedures increases each year with a corresponding increase of low-impact workload.</p></list-item>
+<list-item><p>During pandemics, medical AI services have become valuable in reducing the workload on healthcare professionals.</p></list-item>
+<list-item><p>Quality assurance for AI in healthcare requires an interdisciplinary approach - medicine, IT, and data science collaboration.</p></list-item>
+<list-item><p>Suggested methodology of AI quality assurance suits different target users groups, such as the general public, physicians, and data scientists.</p></list-item>
+</list>
+</sec>
+</abstract>
+<kwd-group kwd-group-type="author">
+<title>Key words</title>
+<kwd>AI (Artificial Intelligence)</kwd>
+<kwd>Teleradiology</kwd>
+<kwd>Internet-Based Intervention</kwd>
+<kwd>Methodology</kwd>
+<kwd>Healthcare Quality Assurance</kwd>
+<kwd>SARS CoV 2 Infection</kwd>
+<kwd>Multidetector Computed Tomography</kwd>
+</kwd-group>
+<counts>
+<page-count count="24"/>
+</counts>
+</article-meta>
+<notes>
+<notes notes-type="competing-interest-statement">
+<title>Competing Interest Statement</title><p>The authors have declared no competing interest.</p></notes>
+<notes notes-type="clinical-trial-statement">
+<title>Clinical Trial</title><p>NCT04489992</p></notes>
+<notes notes-type="financial-disclosure">
+<title>Funding Statement</title><p>The authors declare that there is no external funding for the work.</p></notes>
+<notes notes-type="disclosures">
+<title>Author Declarations</title><p>I confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.</p><p>Yes</p><p>The details of the IRB/oversight body that provided approval or exemption for the research described are given below:</p><p>This research is interconnected with Experiment on the use of innovative computer vision technologies for medical image analysis and subsequent applicability in the healthcare system of Moscow for which Independent Ethics Committee (IEC) of Moscow Regional Office (MRO) of the Russian Society of Radiologists and Radiographists (RSRR) approval was obtained.
+Details of the IEC:
+Approval Number No.2 (1-II-2020) of the meeting of IEC of RSRR MRO dated February 20, 2020.
+Address: 28 Srednyaya Kalitnikovskaya St., bld. 1, Moscow.
+Email: <email>ethics@npcmr.ru</email>
+Present: O.A. Agafonova, E.G. Bahteeva, A.S. Laipan, I.S. Komolov, O.A. Mokienko, I.I. Nadelyaeva, L.A. Nizovtsova, O.V. Omelyanskaya, A.V. Petraikin.
+Topics: Expert review of the documents for the upcoming study titled the "Experiment on the use of innovative technologies in the field of computer vision for the analysis of medical images and further use in the healthcare system of Moscow."
+Documents submitted for review:
+1. The abstract of the study titled "Experiment on the use of innovative technologies in the field of computer vision for the analysis of medical images and further use in the healthcare system of Moscow"
+2. A cover letter to the attention of the Chairman of IEC of RSRR MRO concerning the erhical expert review of the study titled the "Experiment on the use of innovative technologies in the field of computer vision for the analysis of medical images and further use in the healthcare system of Moscow"
+3. CV of the Principal Investigator
+4. A patient information and informed consent form
+5. A project overview
+Resolution: To approve the upcoming study titled the "Experiment on the use of innovative technologies in the field of computer vision for the analysis of medical images and further use in the healthcare system of Moscow."
+Due to the conflict of interest O.A. Agafonova, the co-implementer of the project, did not take part in the vote.</p><p>All necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived.</p><p>Yes</p><p>I understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).</p><p>Yes</p><p>I have followed all appropriate research reporting guidelines and uploaded the relevant EQUATOR Network research reporting checklist(s) and other pertinent material as supplementary files, if applicable.</p><p>Yes</p></notes>
+</notes>
+</front>
+<body>
+<sec id="s1">
+<title>Introduction</title>
+<p>In 2020, the COVID-19 pandemic spread rapidly worldwide, involving more than 120 million patients and more than 2.6 million deaths (Accessed 15 March 2021). During the COVID-19 pandemic, information technologies, especially telemedicine, have been vital worldwide, allowing patients and clinicians to communicate without contracting the infection from each other. AI services have become a full-fledged diagnostic tool in healthcare. At the same time, telehealth and AI vendors see &#x2018;explosive&#x2019; spikes in demand, which leads to rapid AI development and implementation. As a result, there was a boost in AI-based solutions developed for COVID-19 diagnosis, especially in radiology for automated chest CT scan analysis<sup><xref ref-type="bibr" rid="c1">1</xref>-<xref ref-type="bibr" rid="c3">3</xref></sup>.</p>
+<p>A laboratory verification (reverse transcription-polymerase chain reaction and enzyme-linked immunosorbent assay) is considered the gold standard for verifying COVID-19 infection. However, when comparing the speed of reporting and obtaining results, radiology overtakes laboratory methods. A recent study demonstrated higher sensitivity of chest CT in detecting lung involvement than the laboratory test results in cases with negative or false-negative nasopharyngeal assays<sup><xref ref-type="bibr" rid="c4">4</xref></sup>. Also, laboratory verification methods are associated with many requirements, such as correct material sampling, proper storage, transportation, and analysis. Non-compliance can lead to the as low sensitivity of the method as 10&#x0025;<sup><xref ref-type="bibr" rid="c5">5</xref></sup>.</p>
+<p>All mentioned above led to a worldwide shift in the radiology workflow<sup><xref ref-type="bibr" rid="c6">6</xref></sup> with the increase in chest CT scans up to 250&#x0025; during pandemic peaks accompanied by a shortage of cardiothoracic radiologists and decreased usage of other modalities and anatomical areas&#x2019; examinations<sup><xref ref-type="bibr" rid="c7">7</xref>,<xref ref-type="bibr" rid="c8">8</xref></sup>. Chest imaging in COVID-19 may be based on the recommendations of the Fleischner Society<sup><xref ref-type="bibr" rid="c9">9</xref></sup>. The World Health Organization recommendations divide patients into those not recommended for imaging and those for whom these studies are reasonable<sup><xref ref-type="bibr" rid="c10">10</xref></sup>. Faster results than molecular tests (51&#x0025;) and easy access (39&#x0025;) are the main reasons for using diagnostic radiology during the COVID-19 pandemic<sup><xref ref-type="bibr" rid="c11">11</xref></sup>. However, radiology&#x2019;s efficacy and clinical value can be decreased due to the limited human resources leading to a 16.6&#x0025; increase in medical errors under a requirement for the report turn-around-time reduction up to 50&#x0025;<sup><xref ref-type="bibr" rid="c12">12</xref></sup>. In this case, the application of CAD systems and AI technologies can be beneficial for healthcare to assist radiologists in preserving high-quality reporting under the extreme conditions of a massive amount of chest CT studies as the additional diagnostic test in the COVID-19 pandemic. Simultaneously, AI technologies are developing rapidly, and many developers create services that offer an automatic AI-based CT analysis to estimate COVID-19 probability. Access to these services is open to a professional AI developer community, medical professionals, and the general public (i.e., patients).</p>
+<p>However, no certification procedure exists for such services to indicate their quality and set guidelines on their application. Given that open online AI in telemedicine is in high demand these days and evaluation procedures are limited and can mask vulnerabilities of services<sup><xref ref-type="bibr" rid="c13">13</xref></sup> and potential harmful effect on individual health, there is a need for developing a methodology and guidelines for comparative analysis and quality assurance of such services. It could lead to new standards and terms of development and using such open-access digital health services to improve management in healthcare. Therefore, this study aimed to develop and test a methodology of multiparametric AI-based telemedicine service evaluation. The interdisciplinary methodology was applied and optimized to test seven AI services for radiological diagnosis of COVID-19 during a pandemic.</p>
+</sec>
+<sec id="s2">
+<title>Material and methods</title>
+<p>This study is a comparative retrospective analysis performed according to STARD criteria, centered toward the diagnostic accuracy evaluation of AI services. The independent ethics committee of the professional community of the MRS RSRR (Moscow Regional Society of the Russian Society of Radiology) was informed, and patient consent was obtained.</p>
+<p>This study consists of two main stages: a service evaluation with the developed methodology and comparison analysis based on the evaluation results. The proposed evaluation methodology was created to test the usability, functionality, and safety of AI services on the one hand and on the other hand to assess their diagnostic accuracy on the independent reference dataset.</p>
+<sec id="s2a">
+<title>Evaluation methodology</title>
+<p>Evaluation methodology consists of assessing the usability and functionality of AI services from a general and professional user perspective and determining the services&#x2019; diagnostic accuracy on the reference dataset (<xref rid="tbl1" ref-type="table">Table 1</xref>).</p>
+<table-wrap id="tbl1" orientation="portrait" position="float">
+<label>Table 1.</label>
+<caption><p>Stages of the developed methodology.</p></caption>
+<graphic xlink:href="21260626v1_tbl1.tif"/>
+</table-wrap>
+<p>According to potential users of AI services, the functionality options can be divided into three groups: for data scientists, who collect information and test systems; for patients, who would like to have a second opinion; for clinicians (not radiologists), who need to have results to provide treatment. A dedicated questionnaire was developed to assess the services&#x2019; user interface and functionality (<xref rid="tbl2" ref-type="table">Table 2</xref>). The questionnaire consists of seven subsections. Each subsection targets a particular aspect of the user interaction with the service.</p>
+<table-wrap id="tbl2" orientation="portrait" position="float">
+<label>Table 2.</label>
+<caption><p>The developed questionnaire with relevant questions for each target user group that was utilized on the usability and functionality evaluation stage. Prioritized options for each group of users are marked in colors.</p></caption>
+<graphic xlink:href="21260626v1_tbl2.tif"/>
+<graphic xlink:href="21260626v1_tbl2a.tif"/>
+</table-wrap>
+<list list-type="order">
+<list-item><p>Usability of services&#x2019; interface and functionality. It reflects how user-friendly is the service&#x2019; interface and the number of clicks to achieve a result &#x2014; 15 points in total (33&#x0025; of the final score).</p></list-item>
+<list-item><p>Clearness of instructions and guidelines. Assessing the presence and quality of text or video guides or other illustrative materials explaining the service&#x2019;s operation process &#x2013; 2 points in total (4&#x0025; of the final score).</p></list-item>
+<list-item><p>Available evidence-based information about the AI model. Assessment of the provided specific information proving the model&#x2019;s reliability and increasing user&#x2019;s trust (possible contradictions, accuracy levels, validation results, information about available functions and expected results, links to scientific publications that contain validation results of the AI-model) &#x2013; 12 points in total (27&#x0025; of the final score).</p></list-item>
+<list-item><p>Convenient and safe data uploading. The study is anonymized and secured by the internal service; if it cannot be anonymized, a warning appears. Convenience means no need to convert CT data from DICOM into any other format &#x2013; 3 points in total (7&#x0025; of the final score).</p></list-item>
+<list-item><p>AI service stability is evaluated by a number of errors during data uploading or analysis. The analysis speed is compared with a relative cut-off of 10 minutes. A lengthy analysis slows a diagnostic process &#x2013; 5 points in total (11&#x0025; of the final score).</p></list-item>
+<list-item><p>Clearness of the results implies clarity in text data and visualization. Whereas ordinary users can be satisfied with just a text conclusion about the presence or absence of COVID-19 findings, medical professionals or data scientists need more detailed information about a volume of affected areas and the service&#x2019;s specifications and accuracy &#x2013; 5 points in total (11&#x0025; of the final score).</p></list-item>
+<list-item><p>Follow-up and recommendations on the results. Patient care management with a provision of recommendations and a consultation by a radiologist on-demand is helpful for both patients and non-radiology clinicians. If a patient uses an AI service, these recommendations are necessary in every case of pathological findings, even though they are not related to COVID-19. Data scientists can neglect these recommendations in the field of research but can be taken into account for the development purpose &#x2013; 3 points in total (7&#x0025; of the final score).</p></list-item>
+</list>
+</sec>
+<sec id="s2b">
+<title>Statistical analysis</title>
+<p>The evaluated AI services provided quantitative data results: a probability of COVID-19 was presented as a value from 0 to 1 or as a severity score (Thirona); a volume of the affected lung parenchyma was presented in a percentage of the total lung volume and expressed as a value from 0 to 1. If a service provided a percentage of the affected lung, it was directly used for analysis. If a service provided data in absolute values, the relative affected lung area was calculated as a ratio of the affected volume to a total lung volume. AI-models were assessed independently for each task &#x2013; segmentation, and classification. ROC-analysis was performed, and AUROC values were reported with a confidence interval of 95&#x0025;. Diagnostic performance was evaluated by the AUC, sensitivity, and specificity (based on the maximum Youden index) for classification and segmentation tasks of the tested AI services.</p>
+</sec>
+</sec>
+<sec id="s3">
+<title>Preparations for the evaluation</title>
+<sec id="s3a">
+<title>Dataset structure</title>
+<p>The final reference dataset included 60 anonymized chest CT studies. Forty cases were taken from a prospective registered study NCT04379531 (<ext-link ext-link-type="uri" xlink:href="https://clinicaltrials.gov/ct2/show/NCT04379531">https://clinicaltrials.gov/ct2/show/NCT04379531</ext-link>). Among them, 20 positive and 20 negative COVID-19 cases were presented. Ground truth for these studies (i.e., positive or negative for COVID-19) was based on the laboratory-verified presence of coronavirus infection by RT-PCR positive test and a presence of typical COVID-19 radiological findings on CT scan. Ten different radiologists with 4-20 years of experience confirmed imaging findings. Each study was included in the dataset after reading by four randomly assigned radiologists in consensus. COVID-19 associated findings on chest CT scans included multiple peripheral ground-glass opacities, lung consolidations, and a &#x201C;reverse halo&#x201D; sign.</p>
+<p>In order to test the AI model&#x2019;s ability to differentiate the most socially significant lung diseases detected on chest CT scan, we randomly selected and included in our research 20 cases from the Lung Cancer Screening trial obtained in 2019 (before the COVID-19 pandemic)<sup><xref ref-type="bibr" rid="c14">14</xref></sup>. Fifteen cases contained CT studies with findings associated with non-viral pneumonia, and five cases had pathologically confirmed lung cancer. These cases were labeled as negative for COVID-19.</p>
+<p>Ground truth for those studies was based on the assumption that there was no COVID-19 disease in the evaluated population before 2020. Two radiologists with 4 and 10 years of experience in thoracic radiology confirmed the presence of pathological findings on CT scans. Additional morphological verification was provided for studies with lung neoplasms.</p>
+<p>Inclusion and exclusion criteria for the dataset are listed below. The structure and details of the resulting dataset are illustrated in <xref rid="tbl3" ref-type="table">Table 3</xref>.</p>
+<table-wrap id="tbl3" orientation="portrait" position="float">
+<label>Table 3.</label>
+<caption><p>Reference dataset content</p></caption>
+<graphic xlink:href="21260626v1_tbl3.tif"/>
+</table-wrap>
+<p>Inclusion criteria for studies in a dataset:</p>
+<list list-type="bullet">
+<list-item><p>only a chest region;</p></list-item>
+<list-item><p>inspiration breath-hold scanning;</p></list-item>
+<list-item><p>full chest coverage;</p></list-item>
+<list-item><p>spine position;</p></list-item>
+<list-item><p>hands at the head level.</p></list-item>
+</list>
+<p>Exclusion criteria for studies in a dataset:</p>
+<list list-type="bullet">
+<list-item><p>pregnancy;</p></list-item>
+<list-item><p>age younger than 20 years old;</p></list-item>
+<list-item><p>studies with incomplete chest coverage;</p></list-item>
+<list-item><p>studies with intravenous contrast enhancement;</p></list-item>
+<list-item><p>any anatomical region except a chest;</p></list-item>
+<list-item><p>artifacts at the lung level;</p></list-item>
+<list-item><p>studies of patients who underwent chest surgery.</p></list-item>
+</list>
+</sec>
+<sec id="s3b">
+<title>CT scanning protocol</title>
+<p>All chest CT studies were obtained with a standard scanning protocol (provided by a manufacturer) on two identical 64-detector CT scanners (Toshiba Aquilion 64; Canon Medical Systems, Japan) without iterative reconstruction algorithms. The standard chest CT scan protocol had the following settings: voltage - 120 kV; rotation time - 0,5 seconds; direction - out (from legs to a head); modulation XY - on; collimation - 64&#x002A;0,5 mm; helical pitch - 53,0; scanning is performed at the deep inspiration breath-hold; scan time - 6 sec on average (depending on individual constitutional features). No intravenous injection of a contrast agent was performed.</p>
+<p>In total, each study contained two image reconstructions in an axial plane:</p>
+<list list-type="simple">
+<list-item><p>- reconstruction No. 1 (lungs): matrix 512&#x002A;512; D-FOV - 350 mm; scan length - 300 mm (depending on individual constitutional features); reconstruction image filter - FBP QDS&#x002B;; reconstruction kernel - FC51; slice thickness - 1,0 mm; increment - 1,0 mm;</p></list-item>
+<list-item><p>- reconstruction No. 2 (soft tissues): matrix 512&#x002A;512; D-FOV 350 mm; scan length - 300 mm (depending on individual constitutional features); reconstruction image filter - FBP QDS&#x002B;; reconstruction kernel - FC07; slice thickness - 1,0 mm; increment - 1,0 mm.</p></list-item>
+</list>
+</sec>
+<sec id="s3c">
+<title>Additional data preparations</title>
+<p>For AI services that were not capable of processing DICOM data, additional preparations were performed. If the AI service was intended to analyze only .jpeg images in each study (Joint Photographic Experts Group), a slice with the most visible lesion was selected and converted by free of charge viewer tool RadiAnt DICOM-Viewer Poland2016 (URL: <ext-link ext-link-type="uri" xlink:href="http://www.radiantviewer.com">http://www.radiantviewer.com</ext-link>).</p>
+</sec>
+<sec id="s3d">
+<title>AI services search</title>
+<p>Internet search was conducted using standard search systems and PubMed. Open-access AI services for a chest CT scan analysis were selected if the service was mentioned in the scientific publication, social media, or news or was available in a quick web search. Entry criteria for the services&#x2019; selection are listed below. In total, six services were selected for the study. Each service provides an AI model for COVID-19 analysis. Each service is available in the public domain for all Internet users.</p>
+<p>Inclusion criteria for AI services:</p>
+<list list-type="bullet">
+<list-item><p>AI service with the declared capability to assess chest CT scans for COVID-19 associated findings;</p></list-item>
+<list-item><p>online access to AI service;</p></list-item>
+<list-item><p>free of charge analysis with AI models.</p></list-item>
+</list>
+<p>Exclusion criteria for AI services:</p>
+<list list-type="bullet">
+<list-item><p>Commercial subscription or fee-paying AI-service;</p></list-item>
+<list-item><p>AI service is not capable of diagnosing COVID-19.</p></list-item>
+</list>
+<p>List of selected open-access AI services for free of charge analysis of chest CT scans for COVID-19 findings and their access links:</p>
+<list list-type="bullet">
+<list-item><p>AiRay &#x2013; <ext-link ext-link-type="uri" xlink:href="https://airay.tachyhealth.com">https://airay.tachyhealth.com</ext-link>; accessed in March 2021;</p></list-item>
+<list-item><p>Deep Insights AI &#x2013; <ext-link ext-link-type="uri" xlink:href="https://labs.deep-insights.ai">https://labs.deep-insights.ai</ext-link>; accessed in March 2021;</p></list-item>
+<list-item><p>Medseg &#x2013; <ext-link ext-link-type="uri" xlink:href="http://medicalsegmentation.com/covid-19-burdenload/">http://medicalsegmentation.com/covid-19-burdenload/</ext-link>; accessed in September 2020;</p></list-item>
+<list-item><p>QUIBIM &#x2013; <ext-link ext-link-type="uri" xlink:href="https://imagingcovid19.quibim.com/">https://imagingcovid19.quibim.com/</ext-link>; accessed in February 2021;</p></list-item>
+<list-item><p>SBERHealth &#x2013; <ext-link ext-link-type="uri" xlink:href="https://ai.sberhealth.ru/covid19/">https://ai.sberhealth.ru/covid19/</ext-link>; accessed in October 2020;</p></list-item>
+<list-item><p>TelemedHUB (COVID-IRA) &#x2013; <ext-link ext-link-type="uri" xlink:href="http://hub.tele-med.ai">http://hub.tele-med.ai</ext-link>; accessed in October 2020, version 1.1;</p></list-item>
+<list-item><p>Thirona &#x2013; <ext-link ext-link-type="uri" xlink:href="https://thirona.eu/cad4covid/">https://thirona.eu/cad4covid/</ext-link>; accessed in October 2020, version 2.0.0.</p></list-item>
+</list>
+</sec>
+<sec id="s3e">
+<title>Comparative analysis</title>
+<p>The usability, functionality, and structure of the provided report were evaluated for each service by completing the questionnaire table (<xref rid="tbl2" ref-type="table">Table 2</xref>).</p>
+<p>For comparative analysis, a total score and a score for each group were calculated with a maximum available 45 points, followed by comparing the summary results. A higher score means increased use and convenience. We analyzed the content of the provided study&#x2019;s report in a similar way &#x2014; if it was enough for target audiences and provided functionality required for the targeted population.</p>
+<p>Comparison analysis of diagnostic accuracy is based on ROC-analysis results for each service in solving segmentation and classification tasks separately. The higher values of AUC correspond to higher accuracy levels. A number of false-positive and false-negative results was calculated for each service &#x2014; the higher number of false reports corresponded to less valuable and reliable results.</p>
+<p>Descriptive statistics methods with minimum and maximum values, median, first and third quartile for numerical variables, and absolute number and proportion for categorical variables were used to present the results. Nonparametric methods were used for the intergroup comparison of numerical data because the data had significant deviations from a normal distribution with a small sample size &#x2013; the Kruskal-Wallis method was used to compare several groups, Mann-Whitney test was used for pairwise comparison of independent samples. The McNemar exact test was used to compare sensitivity and specificity results between different services. Given a large number of comparisons made, a p-value &#x003C; 0.005 was taken as the level of statistical significance, while values of 0.005 &#x003C; p &#x003C; 0.05 were considered as the presence of a trend. Statistical analysis was performed using STATA14 software.</p>
+</sec>
+</sec>
+<sec id="s4">
+<title>Results</title>
+<sec id="s4a">
+<title>Usability and functionality evaluation</title>
+<p>In total, seven open access AI services for the chest CT scan evaluation for COVID-19 diagnosis were found suitable and included in the study: AiRay (<ext-link ext-link-type="uri" xlink:href="https://airay.tachyhealth.com/landing/airay.html">https://airay.tachyhealth.com/landing/airay.html</ext-link>), Deep Insights AI (<ext-link ext-link-type="uri" xlink:href="https://labs.deep-insights.ai">https://labs.deep-insights.ai</ext-link>), MedSeg (<ext-link ext-link-type="uri" xlink:href="http://medicalsegmentation.com/covid-19-burdenload/">http://medicalsegmentation.com/covid-19-burdenload/</ext-link>), QUIBIM (<ext-link ext-link-type="uri" xlink:href="https://imagingcovid19.quibim.com/">https://imagingcovid19.quibim.com/</ext-link>), SBERHealth (<ext-link ext-link-type="uri" xlink:href="https://ai.sberhealth.ru/covid19/">https://ai.sberhealth.ru/covid19/</ext-link>), TelemedHUB (<ext-link ext-link-type="uri" xlink:href="http://hub.tele-med.ai">http://hub.tele-med.ai</ext-link>), Thirona (<ext-link ext-link-type="uri" xlink:href="https://thirona.eu/cad4covid/">https://thirona.eu/cad4covid/</ext-link>).</p>
+<p>The assessment of usability and functionality was made by filling in a questionnaire for each service and calculating a total score (<xref rid="tbl4" ref-type="table">Table 4</xref> - compact version, <xref rid="tbl5" ref-type="table">Table 5</xref> - full version).</p>
+<table-wrap id="tbl4" orientation="portrait" position="float">
+<label>Table 4.</label>
+<caption><p>Points per subsection and total score received by each service based on the questionnaire.</p></caption>
+<graphic xlink:href="21260626v1_tbl4.tif"/>
+</table-wrap>
+<table-wrap id="tbl5" orientation="portrait" position="float">
+<label>Table 5.</label>
+<caption><p>Completed questionnaire for usability and functionality for all tested AI-services.</p></caption>
+<graphic xlink:href="21260626v1_tbl5.tif"/>
+<graphic xlink:href="21260626v1_tbl5a.tif"/>
+</table-wrap>
+<p>There are two general remarks about the usability of services that are worth mentioning even though they have not been assessed directly with the developed scoring system:</p>
+<list list-type="simple">
+<list-item><p>- the SBERHealth included a warning that uploaded CT data have been stored in a local database for 72 hours and not transferred to third parties;</p></list-item>
+<list-item><p>- the Thirona included an additional warning to use a widescreen monitor or connect a second one for better visualization;</p></list-item>
+<list-item><p>- three services (SBERHealth, QUIBIM, and Deep Insights AI) displayed a warning on the main page about a limited clinical utility or research purposes only.</p></list-item>
+</list>
+<p>A probability of COVID-19 was reported by Thirona (via Severity Score), TelemedHUB, QUIBIM, AiRay, and Deep Insights AI. Five services calculated affected areas (i.e., ground-glass opacities, consolidations) and total lung volumes &#x2013; Thirona, TelemedHUB, SBERHealth, QUIBIM, MedSeg.</p>
+<p>The examples of AI service reports are presented in <xref rid="fig1" ref-type="fig">figure 1</xref>. Five out of seven reports contained a clear warning about the limited clinical applicability. The most detailed report was provided by QUIBIM (<xref rid="fig1" ref-type="fig">fig. 1d</xref>). It included tables with quantitative data about each lung&#x2019;s affected area and a probability of COVID-19 or any other infectious disease. The most concise report was received from the MedSeg service. It contained a table with quantitative data about an affected area volume of the total lung volume (absolute values and percentages). Two services (AiRay (<xref rid="fig1" ref-type="fig">fig. 1a</xref>) and Deep Insights AI (<xref rid="fig1" ref-type="fig">fig. 1b</xref>)) did not generate a separate report except for a short message about COVID-19 suspicion or probability. TelemedHUB provided all the results via DICOM format.</p>
+<fig id="fig1" position="float" fig-type="figure">
+<label>Figure 1.</label>
+<caption><p>Examples of the reports provided by each service after a study analysis.</p>
+<p>a) AI Ray report contains only results for COVID-19 probability without lesion markings on the image;</p>
+<p>b) Deep Insights AI report contains only information on COVID-19 probability accompanied by the disclaimer; c) MedSeg reports COVID-19 lesions&#x2019; volume of the total lung parenchyma separately for different lesion types (ground glass-opacities and consolidations) together with 3D-rendering of lung parenchyma and several examples of axial slices with markings of the affected area; d) QUIBIM presents three probabilities (COVID-19, other infection, or no pathological changes), as well as a lesion volume and a percentage of the affected area for each lung and for the total lung parenchyma, illustrated by 3D-rendering and an example slice with markings of the affected area; e) SBERHealth reports COVID-19 lesions&#x2019; volume and a percentage of the affected area for each lung and for the total lung parenchyma, illustrations contain an additional axial CT DICOM series with markings of all lesions; f) TelemedHUB does not send a separate report file, it provides a full-sized DICOM-folder which contains text information about probability of COVID-19 and a percentage of the affected area for each lung and for the total lung parenchyma; illustrations contain a colored summary coronal slice and an additional axial CT series with markings of all lesions; g) Thirona presents results on the severity of COVID-19 disease and reports lesion volumes for each lung and for the total lung parenchyma separately for different lesion types (ground-glass opacities and emphysema); illustrations contain only two coronal reconstructions with marked lesions.</p>
+</caption>
+<graphic xlink:href="21260626v1_fig1.tif"/>
+</fig>
+<p>Visualization of findings on the CT images was included in five out of seven reports &#x2013; either on a single axial slice (TelemedHUB, Quibim), several axial slices (Medseg, SBERhealth) or coronal slices (Thirona, TelemedHUB). 3D-rendering of COVID-19 suspected lesions in the lungs was available with MedSeg and QUIBIM. QUIBIM made illustrative examples with a single axial slice added to the report&#x2019;s textual information. Stratification of ground-glass opacity and consolidation areas was available at MedSeg. Three services (TelemedHUB, SBERHealth, and QUIBIM) provided an additional separate DICOM series with marked pathological lesions.</p>
+<p><bold>Usability of interface and functionality</bold> score for all AI-services varied from moderate to high levels (from 8 to 12 points out of 15). Since an analysis of the entire study provides more reliable information, the lesser score was obtained from AI-services, which analyzed only a single image (AiRay and Deep Insights AI). Also, the smaller score was observed due to inconvenient access to results &#x2013; three services did not provide online access to AI-analysis results, they were to be obtained via e-mail only and due to lack of available infographics on the website of four services (<xref rid="tbl2" ref-type="table">Table 2</xref>). All services provided clear user instructions on uploading a study and receiving a result in the textual form or infographics. Three services (Thirona, MedSeg, AiRay) also provided video guidance or a link to their websites.</p>
+<p>Variations in the score concerning <bold>available evidence-based information</bold> about the AI model are substantial, from 3 to 11 points out of 12. The majority included descriptions of contradictions and limitations (five out of seven services), information that one can expect from analysis (five services out of seven informed the user about severity, or probability, and/or affected area&#x2019;s volume). Thirona service was reported in peer-reviewed journal publications<sup><xref ref-type="bibr" rid="c15">15</xref></sup>, and the other services were not mentioned in scientific publications. Thirona provided open access to user manuals and specification documentation that can be helpful for medical professionals and data scientists. There was a lack of information about AI models&#x2019; diagnostic accuracy metrics and the absence of certification of four services (AiRay, MedSeg, SBERHealth, QUIBIM).</p>
+<p><bold>Convenient and safe study uploading</bold> assumes uploading of DICOM data directly without conversion to other formats and study anonymization by a provided internal tool. Two of the tested services (AiRay and Deep Insights AI) required a study conversion into .jpeg format with upload limited to a single image per time. Forced DICOM anonymization was encountered in QUIBIM &#x2013; the next step of the analysis was not available without completing the anonymization procedure. One service (SBERHealth) had a warning about the absence of anonymization functionality.</p>
+<p><bold>AI-service stability</bold> was evaluated by a number of errors that occurred during uploading or analysis. The biggest number of errors was six. Two services (SBERHealth and Thirona) demonstrated six and one errors correspondingly. Five services demonstrated no errors during a study upload and analyzed all studies in the reference dataset. AI-service speed appeared to be comparable &#x2013; analysis of a single study did not take more than 10 minutes, which is more than acceptable even for the emergency turnaround time for analysis of a radiological examination and a turnaround time for a notification referring clinicians<sup><xref ref-type="bibr" rid="c16">16</xref>-<xref ref-type="bibr" rid="c18">18</xref></sup>.</p>
+<p><bold>Clearness of results</bold> implies clarity in the report&#x2019;s text and the presence of detailed visualization. Reported results varied from short messages about COVID-19 suspicion to complete DICOM CT series with marked findings in addition to quantitative data on severity and probability of the disease. TelemedHUB provides results in a DICOM format which requires a DICOM-viewer. The folder contains a text report illustrated by a summarized coronal slice and the entire chest CT series with lesion markings. No service had any identification of a potential target audience or any limitations for users to interpret their reports correctly.</p>
+<p>A presence of <bold>recommendations for a user on further actions after receiving the AI results</bold> (3 points) was available in three services. It contained information about the necessity to consult with a radiologist or physician. Two services (SBERHealth and TelemedHUB) provided a radiologist&#x2019;s consultation on-demand.</p>
+</sec>
+<sec id="s4b">
+<title>Diagnostic accuracy assessment results performed with the reference dataset</title>
+<p>Diagnostic accuracy was evaluated on the reference dataset containing 60 chest CT studies (20 studies with a positive result for COVID-19, 20 studies with no pathological findings, 15 studies with community-acquired pneumonia, and 5 studies with lung cancer).</p>
+<p>Five services provided segmentation of the COVID-19 related radiological findings on chest CT scans, including ground-glass opacities, consolidations, and crazy paving. Quantitative information of the segmented areas was reported (via tables or text reports) as a percentage of the affected lung volume to a volume of the whole lung with corresponding markings on CT scans. In the case of two or more types of findings (e.g., if results were differentiated between consolidation and ground-glass opacities), their percentage was summarized to compare with the results of other services that did not distinguish the affected area types. Two services &#x2013; AiRay and Deep Insights AI &#x2013; did not provide results for the segmentation.</p>
+<p>Five services provided a COVID-19 classification of the analyzed study expressed as a COVID-19 probability from 0 to 1, a severity score (0-25), or a binary decision on suspicion/non-suspicion regarding COVID-19. Thus, two separate ROC-analysis were performed for the segmentation and classification outputs (<xref rid="fig2" ref-type="fig">Figure 2 a,b</xref>, initial data per study can be found in Table_Raw_data.xlsx). For a confusion matrix analysis, a threshold at the maximum value of the Youden index was used. For studies with community-acquired pneumonia, lung neoplasms, and no pathological findings, if the probability of COVID-19 or value of the affected area were higher than the cut-off (maximum Youden index), the service result was labeled as a false positive. For studies with laboratory-confirmed COVID-19, if a calculated probability of COVID-19 or affected area volume was less than the cut-off (maximum Youden index), the result was labeled as a false negative.</p>
+<fig id="fig2" position="float" fig-type="figure">
+<label>Figure 2.</label>
+<caption><p>ROC curves for segmentation (a) and classification (b) tasks of the AI services for COVID-19.</p></caption>
+<graphic xlink:href="21260626v1_fig2.tif"/>
+</fig>
+<p>The standard metrics of diagnostic performance are summarized in <xref rid="tbl6" ref-type="table">Table 6</xref>. Notably, an optimal operation point for the segmentation task was similar among AI models and varied from 0.4&#x0025; to 0.7&#x0025;.</p>
+<table-wrap id="tbl6" orientation="portrait" position="float">
+<label>Table 6.</label>
+<caption><p>Common diagnostic accuracy metrics based on the ROC-analysis of the AI-models performance on the reference dataset</p></caption>
+<graphic xlink:href="21260626v1_tbl6.tif"/>
+<graphic xlink:href="21260626v1_tbl6a.tif"/>
+</table-wrap>
+<p>Sensitivity values of the affected lung detection varied from 60&#x0025; to 85&#x0025;, sensitivity values of COVID-19 probability varied from 65&#x0025; to 100&#x0025;. Specificity levels varied from 72&#x0025; to 98&#x0025; and from 52&#x0025; to 100&#x0025; for the affected lung detection and COVID-19 probability, correspondingly. One AI service, AiRay, demonstrated 0&#x0025; specificity and was excluded from the comparative analysis.</p>
+</sec>
+<sec id="s4c">
+<title>COVID-19 PROBABILITY COMPARISON</title>
+<p>Four AI-services (Deep Insights, QUIBIM, TelemedHub, and Thirona) demonstrated significantly different values of a probability in COVID-19 positive and COVID-19 negative groups (p&#x003C;0.001, Kruskell-Wallis test). Also, QUIBIM and Thirona AI-services demonstrated statistically significant differences in probability levels for studies with community-acquired pneumonia and lung cancer compared to studies with no pathological findings (p&#x003C;0.005, Mann-Wheatney).</p>
+<p>Comparative pairwise analysis (McNemar exact test) revealed no significant differences in sensitivity of COVID-19 probability evaluation between four AI services that provided such information (p&#x003E;0.005), with a slight tendency for Deep Insights with zero false-negative results to differ from QUIBIM and Thirona, which had 7 false-negative results. TelemedHUB demonstrated intermediate sensitivity &#x2013; 3 false-negative results.</p>
+<p>Comparative pairwise analysis (McNemar exact test) revealed no significant differences in specificity levels of COVID-19 probability evaluation between QUIBIM, TelemedHUB, and Thirona (p&#x003E;0.05, 32 &#x2013; 40 out of 40 true negative results). Deep Insights demonstrated 21 true negative results and significantly differed from other AI services (p&#x003C;=0.001). Specificity values of COVID-19 probability for Deep Insights in subgroups of community-acquired pneumonia, lung cancer, and studies with no pathological findings had a slight tendency to differ from such values for all other AI-services (0.005&#x003C;p&#x003C;0.05). Specificity values of COVID-19 probability for all other AI services had no significant differences (p&#x003E;0.05).</p>
+</sec>
+<sec id="s4d">
+<title>COMPARISON OF THE AFFECTED LUNG RATIO</title>
+<p>Five AI-services demonstrated significantly different ratio values of the affected lung in COVID-19 positive and COVID-19 negative groups (p&#x003C;0.001, Kruskell-Wallis test). Also, MedSeg and SBERHealth demonstrated statistically significant differences in lesion detection for studies with community-acquired pneumonia compared to studies with lung cancer and studies with no pathological findings (p&#x003C;0.005, Mann-Weatney). Thirona demonstrated statistically significant differences in lesion detection for studies with community-acquired pneumonia and lung cancer compared to studies with no pathological findings (p&#x003C;0.005, Mann-Wheatney).</p>
+<p>Comparative pairwise analysis (McNemar exact test) revealed no significant differences in sensitivity of lesion detection between five AI-services that provided such information (p&#x003E;0.005, 3-8 false-negative results).</p>
+<p>Specificity values of lesion detection by QUIBIM demonstrated a slight tendency to be higher (p-values 0.008-0.04; 39 true negative results out of 40). The same tendency was revealed in a pairwise comparison of QUIBIM and SBERHealth in the subgroup of community-acquired pneumonia. Other AI services had no significant differences in the level of specificity for lesion detection.</p>
+<p>Among the analyzed studies, there were cases when the majority of models made false predictions. However, there were no studies misinterpreted by all AI-services simultaneously. Examples of the studies that were misinterpreted by most of the services are illustrated in <xref rid="fig3" ref-type="fig">Figures 3</xref>, <xref rid="fig4" ref-type="fig">4</xref>.</p>
+<fig id="fig3" position="float" fig-type="figure">
+<label>Figure 3.</label>
+<caption><p>Example of a study labeled as false positive by all tested AI-services, except for the classification result by TelemedHUB. AiRay (a), Deep Insights (b), MedSeg (c), QUIBIM (d), SBERHealth (e), TelemedHUB (f), Thirona (g) determined this study as COVID-19 positive incorrectly. A correct result of the low probability of COVID-19 was provided by TelemedHUB (f). (h) Massive infiltrations in upper and lower lobes of the right lung corresponding to community-acquired pneumonia in a man in the 61-65 age group. The study was performed in 2019 before the first COVID-19 patient was registered in Russia.</p></caption>
+<graphic xlink:href="21260626v1_fig3.tif"/>
+</fig>
+<fig id="fig4" position="float" fig-type="figure">
+<label>Figure 4.</label>
+<caption><p>Example of study labeled as false-negative by 5 out of 7 tested AI-services. AiRay (a) and SBERHealth labeled this study as suspicious for COVID-19 correctly. Deep Insights (b), MedSeg (c), QUIBIM (d), Thirona (e), TelemedHUB<sup>&#x002A;</sup> determined erroneously this study as COVID-19-negative. On the original axial chest CT slice of a patient in the 26-30 age group with laboratory-confirmed coronavirus infection, there are three small lesions in lower lobes with subsolid structure and a presence of ground-glass opacity (f). <sup>&#x002A;</sup>Report results for SBERHealth and TelemedHUB are not presented here because the AI services had a different version online at the time of the figure creation than at the moment of the dataset analysis, so the reports were not included to this figure.</p></caption>
+<graphic xlink:href="21260626v1_fig4.tif"/>
+</fig>
+</sec>
+</sec>
+<sec id="s5">
+<title>Discussion</title>
+<p>In this study, we used a multidisciplinary approach (medicine, IT and data science) to develop a universal methodology for evaluating the AI services that could indicate the appropriate user groups. The proposed methodology is not limited to radiology but could be used for other medical AI applications.</p>
+<p>COVID-19 pandemic has become an excellent accelerator for developing remote radiology-related services, including education, consulting, automated diagnostic systems for COVID-19 detection and management. Simultaneously, the certification and regulations have not been matured yet, and the AI services for COVID-19 diagnosis available on the web have hardly undergone an independent quality assessment. Generally, an independent validation is necessary to separate unreliable, non-user-friendly tools that may cause harm. Nevertheless, during a pandemic, healthcare services experience a shortage of medical staff, and a need for it increases, which could be partially compensated by AI services. Different groups of users could benefit from such services: for radiologists and other medical professionals, any additional information on patients&#x2019; examinations received without delay is meaningful; for the general public and patients, it is convenient to have access to their medical information from any place and to get a professional second opinion on the study; for medical data scientists, open AI services provide valuable insights that can be used for AI research and development in healthcare. That is why many users, regardless of experience and training, continue to stay interested in such open AI services and use them despite a lack of quality assurance and certification.</p>
+<p>For patients, high usability is important to get results quickly, without any errors, and from any place. However, the absence of explicit instructions, too many steps to get the analysis result, and a lack of data anonymization may put off the users. The availability of scientific publications on AI services and objective information about the AI-model capability and limitations may increase users&#x2019; interest and trust. It is disputable whether such information is necessary for everyday users. However, there is no doubt that scientists and medical professionals need such additional information.</p>
+<p>While there is no clear separation of target user groups, we noticed that despite high usability levels for the public (patients), Thirona, TelemedHUB services are intended for professional usage in healthcare and research. At the same time, SBERHealth, Quibim, and MedSeg could be successfully used by general users (<xref rid="fig5" ref-type="fig">figure 5</xref>). QUIBIM, TelemedHUB, and Thirona services are most suitable for medical professionals&#x2019; needs. The highest usability and functionality score was obtained for services with several years&#x2019; experience in developing computer vision-based products for radiologists and scientists. It needs to be noted that a user-friendly AI report varies depending on the target audience. For example, the DICOM format of the results report in TelemedHUB does not cause any problems for trained specialists (data scientists and physicians) but can become an insuperable obstacle for general users.</p>
+<fig id="fig5" position="float" fig-type="figure">
+<label>Figure 5.</label>
+<caption><p>Ranking of AI-services for each user group. For medical professionals (physicians), the most conclusive results are provided by Thirona, TelemedHUB, followed by QUIBIM. For patients, results of Thirona, TelemedHUB and QUIBIM are the most conclusive; the results of SBERHealth and MedSeg are comparable and relatively high as well. For data scientists, Thirona is the most valuable, followed by QUIBIM and Telemed HUB.</p></caption>
+<graphic xlink:href="21260626v1_fig5.tif"/>
+</fig>
+<p>The high accuracy of TelemedHUB and SBERHealth is most likely associated with the population used for model training and reference dataset since both were developed in Russia. Other AI models were trained on the different population data. Overall, our evaluation using independent data demonstrated that the services were comparable in assessing the affected area on chest CT in COVID-19, while the estimation of COVID-19 probability varied greatly &#x2013; AiRay demonstrated results similar to a random guess which are not reliable. The lowest diagnostic accuracy results for COVID-19 probability evaluation by AiRay and Deep Insights AI could be explained by the limited number of analyzed slices per subject &#x2013; only one axial slice converted into the image could be analyzed at once with no instructions regarding possible limitations of such an approach and a proper slice selection. It can be concluded that AI services with insufficient accuracy levels cannot be used either by medical professionals or by the general public (patients) due to a high risk of wrong decisions and errors despite the simplicity of the image upload procedure.</p>
+<p>Since both general users and medical professionals can use open access AI services, they should operate at a high level of sensitivity. Physicians can use these services to identify patients with lung damage even if a radiologist is unavailable. Besides that, general users may easily understand the necessity of medical care. Setting a high level of specificity may be relevant to all medical professionals as it can completely change medical care. Simultaneously, AI service with high specificity and moderate sensitivity may be unwanted for general users because it may lead to self-treatment without professional medical advice.</p>
+<p>Due to limited availability of radiologists in a pandemic, the AI services with a sensitivity reaching 100&#x0025; may be of particular interest for other medical specialists as a decision support system, as well as for a non-medical public as a screening system &#x2013; an early notification about a high probability of COVID-19 based on the study results can provide the opportunity to take actions at the early stage of the disease. The early detection of infected patients may save time for isolating them and starting treatment, reducing the probability of contaminating medical personal and surroundings, warning medical personnel about contact with the infected patient.</p>
+<p>At present, the majority of offered AI services provide limited diagnostic functionality. It would be helpful for practical healthcare to provide additional information to experienced medical professionals &#x2013; reports on possible outcomes, study list prioritization, possible differential diagnoses<sup><xref ref-type="bibr" rid="c19">19</xref>-<xref ref-type="bibr" rid="c21">21</xref></sup>. Despite the current limitations of AI services, we have observed a successful implementation of AI technologies during the pandemic that would stimulate their further application in healthcare on a routine basis. A flexible developers&#x2019; industry can meet demand from general users and specialists for specialized services and technologies. Thus, the impact of AI technologies in healthcare will increase among professionals and everyday users.</p>
+<p>There are several undoubted advantages of the open-access AI services in healthcare for society:</p>
+<list list-type="bullet">
+<list-item><p>Disease severity assessment by AI is more robust than by physicians &#x201C;by sight,&#x201D; which should be considered since a shortage of radiologists in a pandemic can affect patient management.</p></list-item>
+<list-item><p>Reduction of the workload on medical professionals and radiologists in particular.</p></list-item>
+<list-item><p>Online services are more useful for patients than for practicing physicians. Medical professionals often use medical information systems with integrated services, and in most cases, are advised against external services due to personal data protection.</p></list-item>
+<list-item><p>In perspective, AI services can save doctors&#x2019; time, which will allow physicians to focus on challenging cases.</p></list-item>
+<list-item><p>Such services popularize AI by providing more clear results with an impact on the AI technology acceptance among the population &#x2013; a moderate increase of trust in AI and a decrease of fear of AI.</p></list-item>
+</list>
+<p>Disadvantages of open access AI services for the non-professional community also need to be mentioned:</p>
+<list list-type="bullet">
+<list-item><p>A usage of non-certified AI increases the risk of unreliable results and misdiagnosis.</p></list-item>
+<list-item><p>The opportunity to analyze studies can lead to harmful consequences for patients if they misuse the analysis results.</p></list-item>
+<list-item><p>Also, getting results on their own may encourage patients to undergo unnecessary medical procedures and self-treatment.</p></list-item>
+</list>
+<p>Weighing up all advantages and disadvantages of open access AI services, we can present a list of perspectives for them:</p>
+<list list-type="order">
+<list-item><p>Reduction of a low-impact workload for doctors; workload redistribution - simple tasks can be entrusted to an AI, and doctors may focus on more complicated cases.</p></list-item>
+<list-item><p>Increasing trust in AI, reducing fear of AI.</p></list-item>
+<list-item><p>The requirements and quality of open services will increase only in a competitive environment, like any commercial product.</p></list-item>
+<list-item><p>New AI can capture the market faster thanks to these open services as an advertisement/promo.</p></list-item>
+<list-item><p>Carrying out critical research on open services can reveal the best of them that could be safely recommended for society.</p></list-item>
+<list-item><p>The market is changing with a focus on personalized and patient-centered medicine. Initially, AI models were supposed to be integrated into medical information systems and could be used only by medical professionals. With the increased amount of data for each patient, the algorithms can be personalized, increasing accuracy and reliability. Analogy: earlier, only physicians had blood pressure monitors, but nowadays, we have automatic blood pressure monitors in almost every household. However, the main conclusions and decisions will remain with doctors since AI capabilities are still limited.</p></list-item>
+</list>
+</sec>
+<sec id="s6">
+<title>Conclusions</title>
+<p>Quality assurance for AI in healthcare requires an interdisciplinary approach due to the complexity of human health, management systems and certain immaturity computer vision technologies/artificial intelligence technologies for healthcare. We developed a universal methodology for quality assurance of the AI services, which was successfully tested on seven radiological AI services. This methodology is applicable for different target groups of users, such as the general public (patients), physicians, and data scientists. It facilitates objective comparison of online AI services to determine their reliability, safety, and accuracy.</p>
+<p>The availability of diagnostic procedures increases each year. A rapid increase in digital medical data has improved diagnostic accuracy and healthcare effectiveness over the last years. This tendency is going to stay for the nearest future. At the same time, the level of low-impact workload is also increasing. During a pandemic with a lack of human resources, AI services have become valuable in reducing the low-specialized workload on overburdened medical professionals via automated analysis, i.g. for tuberculosis and breast cancer screening<sup><xref ref-type="bibr" rid="c22">22</xref>,<xref ref-type="bibr" rid="c23">23</xref></sup>. However, at the moment, such services are not able to substitute medical professionals.</p>
+<p>Such an automated approach can be spread among medical professionals and patients by developing high-quality open access AI services tailored for their user group. The purpose of publicly available AI services for the automatic analysis of radiology data is to provide its application even to untrained users. For medical professionals, it can save time to analyze more complicated and serious cases. For everyday users, automatic tools provide an opportunity to receive appropriate medical care even in lack of medical professionals and take an active part in self-care. Benefits for data scientists are in obtaining an excellent practical experience in AI development for healthcare.</p>
+<p>Quality assurance, medical certification, and government approval are necessary for AI services and models to become full-fledged and reliable diagnostic and research tools for medical professionals, scientists, and general users.</p>
+</sec>
+<sec sec-type="supplementary-material">
+<title>Supporting information</title>
+<supplementary-material>
+<label>Result of the Independent Ethics Committee meeting</label>
+<media xlink:href="supplements/260626_file03.pdf" />
+</supplementary-material>
+</sec>
+</body>
+<back>
+<sec sec-type="data-availability">
+<title>Data Availability</title>
+<p>AiRay accessed in March 2021; Deep Insights AI accessed in March 2021; Medseg accessed in September 2020; QUIBIM accessed in February 2021; SBERHealth accessed in October 2020; TelemedHUB (COVID-IRA) accessed in October 2020, version 1.1; Thirona accessed in October 2020, version 2.0.0. Dataset with CT studies is available upon request from the corresponding author.</p>
+<p>
+<ext-link ext-link-type="uri" xlink:href="https://airay.tachyhealth.com">https://airay.tachyhealth.com</ext-link>
+</p>
+<p>
+<ext-link ext-link-type="uri" xlink:href="https://labs.deep-insights.ai">https://labs.deep-insights.ai</ext-link>
+</p>
+<p>
+<ext-link ext-link-type="uri" xlink:href="http://medicalsegmentation.com/covid-19-burdenload">http://medicalsegmentation.com/covid-19-burdenload</ext-link>
+</p>
+<p>
+<ext-link ext-link-type="uri" xlink:href="https://imagingcovid19.quibim.com">https://imagingcovid19.quibim.com</ext-link>
+</p>
+<p>
+<ext-link ext-link-type="uri" xlink:href="https://ai.sberhealth.ru/covid19">https://ai.sberhealth.ru/covid19</ext-link>
+</p>
+<p>
+<ext-link ext-link-type="uri" xlink:href="http://hub.tele-med.ai">http://hub.tele-med.ai</ext-link>
+</p>
+<p>
+<ext-link ext-link-type="uri" xlink:href="https://thirona.eu/cad4covid">https://thirona.eu/cad4covid</ext-link>
+</p>
+</sec>
+<ack>
+<title>Acknowledgments</title>
+<p>We would like to express our great appreciation to several people for their contribution to this study: Y. Kirpichev for providing data analysis; N. Pavlov for assisting in the dataset formation; V. Klyashtorny, for providing statistical analysis; A. Ovsyannikov for his help in collecting the data.</p>
+</ack>
+<sec id="s7">
+<title>Funding</title>
+<p>This research did not receive any specific grant from funding agencies in the public, commercial, or not-for-profit sectors.</p>
+</sec>
+<ref-list>
+<title>References</title>
+<ref id="c1"><label>1.</label><mixed-citation publication-type="journal"><string-name><surname>Clipper</surname>, <given-names>B.</given-names></string-name> <article-title>The influence of the COVID-19 pandemic on technology: adoption in health care</article-title>. <source>Nurse Leader</source> <volume>18</volume>, <fpage>500</fpage>&#x2013;<lpage>503</lpage> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c2"><label>2.</label><mixed-citation publication-type="other"><string-name><surname>Kaplan</surname>, <given-names>B.</given-names></string-name> <article-title>Revisting Health Information Technology Ethical, Legal, and Social Issues and Evaluation: Telehealth/Telemedicine and COVID-19</article-title>. <source>International journal of medical informatics</source>, <fpage>104239</fpage> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c3"><label>3.</label><mixed-citation publication-type="journal"><string-name><surname>Such&#x00E1;</surname>, <given-names>D.</given-names></string-name>, <string-name><surname>van Hamersvelt</surname>, <given-names>R.W.</given-names></string-name>, <string-name><surname>van den Hoven</surname>, <given-names>A.F.</given-names></string-name>, <string-name><surname>de Jong</surname>, <given-names>P.A.</given-names></string-name> &#x0026; <string-name><surname>Verkooijen</surname>, <given-names>H.M.</given-names></string-name> <article-title>Suboptimal Quality and High Risk of Bias in Diagnostic Test Accuracy Studies on Chest Radiography and Computed Tomography in the Acute Setting of the COVID-19 Pandemic: A Systematic Review</article-title>. <source>Radiology. Cardiothoracic Imaging</source> <volume>2</volume>(<year>2020</year>).</mixed-citation></ref>
+<ref id="c4"><label>4.</label><mixed-citation publication-type="journal"><string-name><surname>Patrucco</surname>, <given-names>F.</given-names></string-name>, <etal>et al.</etal> <article-title>COVID-19 diagnosis in case of two negative nasopharyngeal swabs: association between chest CT and bronchoalveolar lavage results</article-title>. <source>Radiology</source> <volume>298</volume>, <fpage>E152</fpage>&#x2013;<lpage>E155</lpage> (<year>2021</year>).</mixed-citation></ref>
+<ref id="c5"><label>5.</label><mixed-citation publication-type="journal"><string-name><surname>Mina</surname>, <given-names>M.J.</given-names></string-name>, <string-name><surname>Parker</surname>, <given-names>R.</given-names></string-name> &#x0026; <string-name><surname>Larremore</surname>, <given-names>D.B.</given-names></string-name> <article-title>Rethinking Covid-19 test sensitivity&#x2014;A strategy for containment</article-title>. <source>New England Journal of Medicine</source> <volume>383</volume>, <fpage>e120</fpage> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c6"><label>6.</label><mixed-citation publication-type="journal"><string-name><surname>Herpe</surname>, <given-names>G.</given-names></string-name>, <etal>et al.</etal> x<article-title>COVID-19 impact assessment on the French radiological centers: a nationwide survey</article-title>. <source>European radiology</source> <volume>30</volume>, <fpage>6537</fpage>&#x2013;<lpage>6544</lpage> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c7"><label>7.</label><mixed-citation publication-type="other"><string-name><surname>Hashemimadani</surname>, <given-names>N.</given-names></string-name>, <string-name><surname>Emami</surname>, <given-names>Z.</given-names></string-name>, <string-name><surname>Janani</surname>, <given-names>L.</given-names></string-name> &#x0026; <string-name><surname>Khamseh</surname>, <given-names>M.E.</given-names></string-name> <article-title>Typical chest CT features can determine the severity of COVID-19: A systematic review and meta-analysis of the observational studies</article-title>. <source>Clinical Imaging</source>.</mixed-citation></ref>
+<ref id="c8"><label>8.</label><mixed-citation publication-type="journal"><string-name><surname>Radmard</surname>, <given-names>A.R.</given-names></string-name>, <etal>et al.</etal> <article-title>A Multicenter Survey on the Trend of Chest CT Scan Utilization: Tracing the First Footsteps of COVID-19 in Iran</article-title>. <source>Archives of Iranian medicine</source> <volume>23</volume>, <fpage>787</fpage>&#x2013;<lpage>793</lpage> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c9"><label>9.</label><mixed-citation publication-type="journal"><string-name><surname>Rubin</surname>, <given-names>G.D.</given-names></string-name>, <etal>et al.</etal> <article-title>The role of chest imaging in patient management during the COVID-19 pandemic: a multinational consensus statement from the Fleischner Society</article-title>. <source>Chest</source> <volume>158</volume>, <fpage>106</fpage>&#x2013;<lpage>116</lpage> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c10"><label>10.</label><mixed-citation publication-type="journal"><string-name><surname>Akl</surname>, <given-names>E.A.</given-names></string-name>, <etal>et al.</etal> <article-title>Use of chest imaging in the diagnosis and management of COVID-19: a WHO rapid advice guide</article-title>. <source>Radiology</source> <volume>298</volume>, <fpage>E63</fpage>&#x2013;<lpage>E69</lpage> (<year>2021</year>).</mixed-citation></ref>
+<ref id="c11"><label>11.</label><mixed-citation publication-type="journal"><string-name><surname>Bla&#x017E;i&#x0107;</surname>, <given-names>I.</given-names></string-name>, <string-name><surname>Brklja&#x010D;i&#x0107;</surname>, <given-names>B.</given-names></string-name> &#x0026; <string-name><surname>Frija</surname>, <given-names>G.</given-names></string-name> <article-title>The use of imaging in COVID-19&#x2014;results of a global survey by the International Society of Radiology</article-title>. <source>European radiology</source> <volume>31</volume>, <fpage>1185</fpage>&#x2013;<lpage>1193</lpage> (<year>2021</year>).</mixed-citation></ref>
+<ref id="c12"><label>12.</label><mixed-citation publication-type="journal"><string-name><surname>Berlin</surname>, <given-names>L.</given-names></string-name> <article-title>Faster reporting speed and interpretation errors: conjecture, evidence, and malpractice implications</article-title>. <source>Journal of the American College of Radiology</source> <volume>12</volume>, <fpage>894</fpage>&#x2013;<lpage>896</lpage> (<year>2015</year>).</mixed-citation></ref>
+<ref id="c13"><label>13.</label><mixed-citation publication-type="other"><string-name><surname>Wu</surname>, <given-names>E.</given-names></string-name>, <etal>et al.</etal> <article-title>How medical AI devices are evaluated: limitations and recommendations from an analysis of FDA approvals</article-title>. <source>Nature Medicine</source>, <fpage>1</fpage>&#x2013;<lpage>3</lpage> (<year>2021</year>).</mixed-citation></ref>
+<ref id="c14"><label>14.</label><mixed-citation publication-type="journal"><string-name><surname>Morozov</surname>, <given-names>S.P.</given-names></string-name>, <etal>et al.</etal> <article-title>Low-dose computed tomography in Moscow for lung cancer screening (LDCT - MLCS): baseline results</article-title>. <source>Voprosy onkologii</source> <volume>65</volume>, <fpage>224</fpage>&#x2013;<lpage>233</lpage> (<year>2019</year>).</mixed-citation></ref>
+<ref id="c15"><label>15.</label><mixed-citation publication-type="journal"><string-name><surname>Lessmann</surname>, <given-names>N.</given-names></string-name>, <etal>et al.</etal> <article-title>Automated Assessment of COVID-19 Reporting and Data System and Chest CT Severity Scores in Patients Suspected of Having COVID-19 Using Artificial Intelligence</article-title>. <source>Radiology</source> <volume>298</volume>, <fpage>E18</fpage>&#x2013;<lpage>E28</lpage> (<year>2021</year>).</mixed-citation></ref>
+<ref id="c16"><label>16.</label><mixed-citation publication-type="journal"><string-name><surname>Do</surname>, <given-names>H.M.</given-names></string-name>, <etal>et al.</etal> <article-title>Augmented radiologist workflow improves report value and saves time: a potential model for implementation of artificial intelligence</article-title>. <source>Academic radiology</source> <volume>27</volume>, <fpage>96</fpage>&#x2013;<lpage>105</lpage> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c17"><label>17.</label><mixed-citation publication-type="book"><string-name><surname>Perotte</surname>, <given-names>R.</given-names></string-name>, <etal>et al.</etal> <chapter-title>Improving emergency department flow: reducing turnaround time for emergent CT scans</chapter-title>. <source>in AMIA Annual Symposium Proceedings</source>, Vol. <volume>2018</volume> <fpage>897</fpage> (<publisher-name>American Medical Informatics Association</publisher-name>, <year>2018</year>).</mixed-citation></ref>
+<ref id="c18"><label>18.</label><mixed-citation publication-type="journal"><string-name><surname>Towbin</surname>, <given-names>A.J.</given-names></string-name>, <etal>et al.</etal> <article-title>Practice policy and quality initiatives: decreasing variability in turnaround time for radiographic studies from the emergency department</article-title>. <source>Radiographics</source> <volume>33</volume>, <fpage>361</fpage>&#x2013;<lpage>371</lpage> (<year>2013</year>).</mixed-citation></ref>
+<ref id="c19"><label>19.</label><mixed-citation publication-type="journal"><string-name><surname>Aggarwal</surname>, <given-names>R.</given-names></string-name>, <etal>et al.</etal> <article-title>Diagnostic accuracy of deep learning in medical imaging: a systematic review and meta-analysis</article-title>. <source>npj Digital Medicine</source> <volume>4</volume>, <fpage>1</fpage>&#x2013;<lpage>23</lpage> (<year>2021</year>).</mixed-citation></ref>
+<ref id="c20"><label>20.</label><mixed-citation publication-type="journal"><string-name><surname>Loria</surname>, <given-names>K.</given-names></string-name> <article-title>Putting the AI in radiology</article-title>. <source>Radiology Today</source> <volume>19</volume>(<year>2018</year>).</mixed-citation></ref>
+<ref id="c21"><label>21.</label><mixed-citation publication-type="other"><string-name><surname>Neri</surname>, <given-names>E.</given-names></string-name>, <etal>et al.</etal> <source>What the radiologist should know about artificial intelligence-an ESR white paper</source>. (<year>2019</year>).</mixed-citation></ref>
+<ref id="c22"><label>22.</label><mixed-citation publication-type="website"><collab>Qure.ai</collab>. <ext-link ext-link-type="uri" xlink:href="https://qure.ai">https://qure.ai</ext-link> <month>April</month> 19, <year>2021</year></mixed-citation></ref>
+<ref id="c23"><label>23.</label><mixed-citation publication-type="website"><collab>Lunit INSIGHT</collab>. <ext-link ext-link-type="uri" xlink:href="https://insight.lunit.io">https://insight.lunit.io</ext-link> <month>April</month> 19, <year>2021</year></mixed-citation></ref>
+</ref-list>
+</back>
+</article>

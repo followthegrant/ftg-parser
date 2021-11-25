@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.2d1 20170631//EN" "JATS-archivearticle1.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" article-type="article" dtd-version="1.2d1" specific-use="production" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="publisher-id">MEDRXIV</journal-id>
+<journal-title-group>
+<journal-title>medRxiv</journal-title>
+<abbrev-journal-title abbrev-type="publisher">medRxiv</abbrev-journal-title>
+</journal-title-group>
+<publisher>
+<publisher-name>Cold Spring Harbor Laboratory</publisher-name>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1101/2020.11.10.20229385</article-id>
+<article-version>1.1</article-version>
+<article-categories>
+<subj-group subj-group-type="hwp-journal-coll">
+<subject>Neurology</subject>
+</subj-group>
+</article-categories>
+<title-group>
+<article-title>Application of transformers for predicting epilepsy treatment response</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" corresp="yes">
+<name><surname>Choong</surname><given-names>Jiun</given-names></name>
+<xref ref-type="aff" rid="a1">a</xref>
+<xref ref-type="corresp" rid="cor1">&#x002A;</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Hakeem</surname><given-names>Haris</given-names></name>
+<xref ref-type="aff" rid="a1">a</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Chen</surname><given-names>Zhibin</given-names></name>
+<xref ref-type="aff" rid="a2">b</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Brodie</surname><given-names>Martin</given-names></name>
+<xref ref-type="aff" rid="a3">c</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Lawn</surname><given-names>Nicholas</given-names></name>
+<xref ref-type="aff" rid="a4">d</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Drummond</surname><given-names>Tom</given-names></name>
+<xref ref-type="aff" rid="a1">a</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Kwan</surname><given-names>Patrick</given-names></name>
+<xref ref-type="aff" rid="a2">b</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Ge</surname><given-names>Zongyuan</given-names></name>
+<xref ref-type="aff" rid="a1">a</xref>
+</contrib>
+<aff id="a1"><label>a</label><institution>Monash University</institution>, Melbourne, <country>Australia</country></aff>
+<aff id="a2"><label>b</label><institution>Alfred Hospital</institution>, Melbourne, <country>Australia</country></aff>
+<aff id="a3"><label>c</label><institution>University of Glasgow</institution>, Glasgow, <country>Scotland</country></aff>
+<aff id="a4"><label>d</label><institution>WA Adult Epilepsy Service</institution>, Perth, <country>Australia</country></aff>
+</contrib-group>
+<author-notes>
+<corresp id="cor1"><label>&#x002A;</label>Corresponding author; email: <email>jiun.choong@monash.edu</email></corresp>
+</author-notes>
+<pub-date pub-type="epub">
+<year>2020</year>
+</pub-date>
+<elocation-id>2020.11.10.20229385</elocation-id>
+<history>
+<date date-type="received">
+<day>10</day>
+<month>11</month>
+<year>2020</year>
+</date>
+<date date-type="rev-recd">
+<day>10</day>
+<month>11</month>
+<year>2020</year>
+</date>
+<date date-type="accepted">
+<day>13</day>
+<month>11</month>
+<year>2020</year>
+</date>
+</history>
+<permissions>
+<copyright-statement>&#x00A9; 2020, Posted by Cold Spring Harbor Laboratory</copyright-statement>
+<copyright-year>2020</copyright-year>
+<license license-type="creative-commons" xlink:href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><license-p>This pre-print is available under a Creative Commons License (Attribution-NonCommercial-NoDerivs 4.0 International), CC BY-NC-ND 4.0, as described at <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by-nc-nd/4.0/">http://creativecommons.org/licenses/by-nc-nd/4.0/</ext-link></license-p></license>
+</permissions>
+<self-uri xlink:href="20229385.pdf" content-type="pdf" xlink:role="full-text"/>
+<abstract>
+<title>ABSTRACT</title>
+<p>There is growing interest in machine learning based approaches to assist clinicians in treatment selection. In the treatment of epilepsy, a common neurological disorder that affects 70 million people worldwide, previous research has employed scoring methods generated from traditional machine learning methods based on pre-treatment patient characteristics to classify those with drug-resistant epilepsy (DRE). In this study, we used an attention-based approach in predicting the response to different antiseizure medications (ASMs) in individuals with newly diagnosed epilepsy. By applying a conventional transformer to model the patient&#x2019;s response, we can use the predicted probability to determine the success rate of specific ASMs. Applying the transformer allowed the model to place attention on patient information and past treatments to model future drug responses. We trained a conventional transformer model based on one cohort of 1536 patients with newly diagnosed epilepsy, compared its performance with other trained models using RNN and LSTM, and applied it to a validation cohort of 736 patients. In the development cohort, the transformer model showed the highest accuracy (81&#x0025;) and AUC (0.85), and maintained similar accuracy and AUC (74&#x0025; and 0.79, respectively) in the validation cohort.</p>
+</abstract>
+<kwd-group kwd-group-type="author">
+<title>Keywords</title>
+<kwd>D eep learning</kwd>
+<kwd>transformer</kwd>
+<kwd>self-attention mechanism</kwd>
+<kwd>epilepsy</kwd>
+<kwd>treatment</kwd>
+<kwd>machine learning</kwd>
+<kwd>prediction</kwd>
+<kwd>time-series</kwd>
+<kwd>longitudinal</kwd>
+<kwd>prediction</kwd>
+</kwd-group>
+<counts>
+<page-count count="11"/>
+</counts>
+</article-meta>
+<notes>
+<notes notes-type="competing-interest-statement">
+<title>Competing Interest Statement</title><p>The authors have declared no competing interest.</p></notes>
+<notes notes-type="financial-disclosure">
+<title>Funding Statement</title><p>Did not receive any specific funding</p></notes>
+<notes notes-type="disclosures">
+<title>Author Declarations</title><p>I confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.</p><p>Yes</p><p>The details of the IRB/oversight body that provided approval or exemption for the research described are given below:</p><p>This study protocol was ruled exempt by the institutional review broad of Western Infirmary in Glasgow, Scotland. Patient consent was waived because all data were deidentified prior to analysis.
+The study was approved by the Royal Perth Hospital Human Research Ethics Committee (Reference number: EC 2009/054) and registered with the Monash University Human Research Ethics Committee (project number: 12131).
+</p><p>All necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived.</p><p>Yes</p><p>I understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).</p><p>Yes</p><p>I have followed all appropriate research reporting guidelines and uploaded the relevant EQUATOR Network research reporting checklist(s) and other pertinent material as supplementary files, if applicable.</p><p>Yes</p></notes>
+</notes>
+</front>
+<body>
+<sec id="s1">
+<label>1.</label>
+<title>INTRODUCTION</title>
+<p>Epilepsy is one of the common neurological diseases affecting approximately 0.8&#x0025; of people during their lifetime.<sup><xref ref-type="bibr" rid="c1">1</xref></sup> It is characterized by an increased tendency to have recurrent seizures at unpredictable times which can lead to physical injury, impair social functioning, affect mental health and quality of life or even cause death.<sup><xref ref-type="bibr" rid="c2">2</xref></sup> Despite advances in non-pharmacological treatment options over the years in the form of resective surgery, neuromodulation and dietary therapies, the mainstay and first-line treatment remains as drug therapy, for which over 20 antiseizure medications (ASMs) are currently available. However, drug selection still relies on a trial-and-error approach and 30&#x0025; of patients have drug-resistant epilepsy (DRE) that does not respond to currently available ASMs.<sup><xref ref-type="bibr" rid="c3">3</xref></sup> Although there are general guidelines based on broad seizure types, there is currently no reliable way to predict the optimal drug choice for individual patients.</p>
+<p>There is growing interest in applying machine learning in assisting healthcare decision making, fuelled by advancements in the deep learning field such as BioBERT for natural language processing (NLP) tasks,<sup><xref ref-type="bibr" rid="c4">4</xref></sup> generative adversarial networks (GANs) for medical image generation<sup><xref ref-type="bibr" rid="c5">5</xref></sup> and convolutional neural networks (CNNs) for detection through image classification.<sup><xref ref-type="bibr" rid="c6">6</xref></sup> In epilepsy, the application of machine learning has been limited to traditional models such as random forest (RF) algorithms<sup><xref ref-type="bibr" rid="c7">7</xref></sup> and scoring based systems<sup><xref ref-type="bibr" rid="c8">8</xref></sup> to predict a patient&#x2019;s ASM treatment outcome. Furthermore, recent advances with transformers which uses attention-mechanisms have proven success in many domains<sup><xref ref-type="bibr" rid="c4">4</xref>, <xref ref-type="bibr" rid="c9">9</xref>, <xref ref-type="bibr" rid="c10">10</xref></sup> due to the ability to focus on specific parts of the data.</p>
+<p>In this study, we applied an attention-based model to predict the optimal ASM prescription for individual patients based on a broad range of demographic factors and epilepsy information. The performance and robustness were verified through a separate cohort that was not used in the training or validation of the transformer model.</p>
+<p>Our contributions are as follows:</p>
+<list list-type="bullet">
+<list-item><p>We are the first to utilise and show that an attention-based model can capture the latent structure for individual epilepsy patient response to ASM treatment. The transformer model is able to capture additional information from the demographic and ASM information due to the multi-headed self-attention mechanism.</p></list-item>
+<list-item><p>We show that the transformer model is more suitable for capturing the relevant longitudinal information in predicting treatment response compared to other time-series based models.</p></list-item>
+<list-item><p>We achieve reasonable performance with an external validation cohort in <xref ref-type="sec" rid="s4d">Section 4.4</xref> without further fine-tuning of the model. The transformer model is able to generalise to an extent as seen in <xref ref-type="sec" rid="s4e">Section 4.5</xref>.</p></list-item>
+</list>
+</sec>
+<sec id="s2">
+<label>2.</label>
+<title>RELATED WORK</title>
+<p>Machine learning in epilepsy management can potentially assist epileptologists in clinical decision making in diverse domains such as automated analysis of electroencephalography (EEG) and diagnosis though images, prediction of responses to ASM, and resective surgery.<sup><xref ref-type="bibr" rid="c11">11</xref></sup> Past papers that investigated epilepsy treatment typically used traditional ML algorithms<sup><xref ref-type="bibr" rid="c7">7</xref></sup> and there has been a recent shift towards deep learning ML algorithms due to their exceptional performances in different domains.<sup><xref ref-type="bibr" rid="c12">12</xref></sup> Other cases of modelling within epilepsy is to predict seizure recurrence after withdrawal from ASMs by using a scoring system.<sup><xref ref-type="bibr" rid="c8">8</xref>, <xref ref-type="bibr" rid="c13">13</xref></sup> These models generally include demographic and clinical risk factors identified by standard statistical methods. There has also been a recent paper that employed a manually tuned mathematical model to determine which ASM to use.<sup><xref ref-type="bibr" rid="c8">8</xref></sup> A few studies have also looked at developing individualized prediction models for early diagnosis of DRE<sup><xref ref-type="bibr" rid="c14">14</xref>, <xref ref-type="bibr" rid="c15">15</xref></sup> and for selecting the most appropriate ASM.<sup><xref ref-type="bibr" rid="c6">6</xref>, <xref ref-type="bibr" rid="c14">14</xref>, <xref ref-type="bibr" rid="c15">15</xref></sup></p>
+<p>In recent advances of deep learning, attention-based models have shown promise in various applications such as NLP, image recognition, and even electronic health records (EHR) data.<sup><xref ref-type="bibr" rid="c4">4</xref>, <xref ref-type="bibr" rid="c10">10</xref>, <xref ref-type="bibr" rid="c16">16</xref></sup> Attention-based models is a method in deep learning that allows the network to break down complex inputs into smaller parts for a sequence of data. The backbone of transformers utilises these attention-mechanisms in a modular fashion to focus its attention on different parts of the data.<sup><xref ref-type="bibr" rid="c17">17</xref></sup> Although there have been applications of transformers within the medical domain, the usage of transformers to predict treatment outcomes has not been adapted before.</p>
+</sec>
+<sec id="s3">
+<label>3.</label>
+<title>METHODS</title>
+<p>In this section, we will discuss the methodology applied to train and validate the model. Due to the nature of longitudinal data encompassing a time aspect, time-series models are used for baselines to compare against the transformer model. Recurrent neural networks (RNN) and long-short term memory cells (LSTM) are networks that are used to compare against the transformer. <xref rid="fig1" ref-type="fig">Figure 1</xref> depicts the high level overview of the procedure used for using the transformer to predict ASM treatment response for patients.</p>
+<fig id="fig1" position="float" fig-type="figure">
+<label>Figure 1.</label>
+<caption><p>High level overview of using the transformer model for longitudinal data. a) Each row of patient data corresponds to an ASM taken for a duration of time. Individual patients may trial different ASMs. b) The raw data is normalized across each variable to <italic>&#x00B5;</italic> = 0 and <italic>&#x03C3;</italic> = 1 within the training set and applied to the validation and test set. ASM trials are grouped by patient and split into training/validation sets. c) The transformer is trained and tuned with the first cohort d) The transformer will output a treatment outcome probability for each patient based on the ASM provided. The model can provide a prediction to the ASM treatment response for individual epilepsy patients.</p></caption>
+<graphic xlink:href="20229385v1_fig1.tif"/>
+</fig>
+<sec id="s3a">
+<label>3.1</label>
+<title>Baseline models and transformer</title>
+<p>This section explains the structure of the baseline models and the transformer architecture. <xref rid="fig2" ref-type="fig">Figure 2</xref> highlights the different structures of each model.</p>
+<fig id="fig2" position="float" fig-type="figure">
+<label>Figure 2.</label>
+<caption><p>In both figures, <italic>x</italic><sub><italic>t</italic></sub>, <italic>h</italic><sub><italic>t</italic></sub>, <italic>h</italic><sub><italic>t&#x2212;</italic>1</sub>, <italic>zt</italic> represents input, output from current neuron, output from the previous time period of the current neuron, and output at the final layer respectively. a) The top shows the common MLP connection for a RNN and LSTM network. RNN cells have a direct recurrent connection to itself. LSTM cells have several gates to control the long and short term memory of the inputs and previous outputs. b) High level overview of the transformer</p></caption>
+<graphic xlink:href="20229385v1_fig2.tif"/>
+</fig>
+<sec id="s3a1">
+<label>3.1.1</label>
+<title>RNN</title>
+<p>Recurrent neural networks (RNN) have a feedback aspect within the neuron to roll back input sequences for time-series data.<sup><xref ref-type="bibr" rid="c18">18</xref></sup> Basic RNNs follow a standard multi-layer perceptron (MLP) except for each neuron in the hidden layer, there is a connection that feed back into itself. Hence, this weight can be updated and it allows the neuron to retain temporal information for a sequence of data. However, due to the nature of a RNN having a simple recurrent loop, the network cannot hold long term memory as the gradient flowing back in time will either diminish or explode.<sup><xref ref-type="bibr" rid="c18">18</xref></sup></p>
+<p>Before the prevalence of transformers, RNNs were typically used for time series data due to the simplicity of the network. However, RNNs are difficult to train and extending the complexity of the network results in vanishing and exploding gradients during back propagation of the network.<sup><xref ref-type="bibr" rid="c19">19</xref></sup></p>
+</sec>
+<sec id="s3a2">
+<label>3.1.2</label>
+<title>LSTM</title>
+<p>LSTMs tackles the long term dependency by introducing &#x201C;gates&#x201D; into the cell where the gates act as a switch to control the reading and writing of inputs within the cell.<sup><xref ref-type="bibr" rid="c18">18</xref></sup> As the gates control the read and write of past input sequences, it mitigates the vanishing and exploding gradients problem encountered by a RNN. LSTMs are more complex compared to a basic RNN, as it has several gates and additional activation functions within the model.<sup><xref ref-type="bibr" rid="c18">18</xref></sup></p>
+<p>Although LSTMs were created to mitigate the vanishing and exploding gradient problems faced by RNNs, LSTMs are unable to model extensively long term dependencies. Furthermore, LSTMs are difficult to train in nature compared to a non-recurrent neural network.</p>
+</sec>
+</sec>
+<sec id="s3b">
+<label>3.2</label>
+<title>Transformer model</title>
+<p>The transformer model is a relatively new deep learning model that uses an attention mechanism which allows the model to pay attention to different parts of an input sequence of data.<sup><xref ref-type="bibr" rid="c17">17</xref></sup> Transformers are able to focus on different parts of the data by dividing the self-attention mechanism into parts and aggregating the results in the latter part of the model.</p>
+<p>In this work, we will apply a vanilla transformer<sup><xref ref-type="bibr" rid="c17">17</xref></sup> to predict ASM treatment responses at the individual patient level, using longitudinal registries of new onset epilepsy patients containing comprehensive diagnostic and follow-up information. Transformers have demonstrated prominence in modelling of longitudinal electronic health records (EHR) for personalised diagnosis.<sup><xref ref-type="bibr" rid="c16">16</xref>, <xref ref-type="bibr" rid="c20">20</xref></sup> We adopt the transformer to predict individual patient response to ASM treatment with longitudinal data.</p>
+<p>To adapt the transformer to the longitudinal data, each ASM trial is a separate input to the transformer as seen in <xref rid="fig3" ref-type="fig">Figure 3</xref>. The inputs are passed on sequentially for each patient with the inputs being reset when it reaches the next patient. The inputs are first passed through a positional encoder to encode the time step for the ASM trial. The encoded data is passed through a multi-head attention layer described as:</p>
+<fig id="fig3" position="float" fig-type="figure">
+<label>Figure 3.</label>
+<caption><p>Overview of a single encoder-decoder pair for a transformer network. Note that the modularity of the transformer arises from stacking encoder and decoders. The transformer model utilises the original structure<sup><xref ref-type="bibr" rid="c17">17</xref></sup> except there is no input embedding that needs to be learnt. Each ASM trial is fed into the network sequentially and the time period is encoded via the positional encoder.</p></caption>
+<graphic xlink:href="20229385v1_fig3.tif"/>
+</fig>
+<p>
+<disp-formula id="ueqn1">
+<alternatives><graphic xlink:href="20229385v1_ueqn1.gif"/></alternatives>
+</disp-formula>
+where <italic>T</italic><sub><italic>in</italic></sub>, <italic>T</italic><sub><italic>out</italic></sub> are input and output data in the mult-head attention layer. <italic>K, Q, V</italic> are key, query, and value vectors that retrieves corresponding values for each of the inputs. <inline-formula><alternatives><inline-graphic xlink:href="20229385v1_inline1.gif"/></alternatives></inline-formula> represents a scaling factor for the queried value. The multi-attention layer analyses the encoding of the current ASM trial and its encoded information such as demographic and past ASM trials, and relates it to other ASM trials. There are several multi-head attention layers within the network as the transformer builds its own representation of the data within the feedforward layers. The inputs to the decoder are the treatment responses from previous ASM trial outcomes and current ASM trial information passed from the encoder.</p>
+<p>We utilise the transformer in this setting due to its ability to capture hidden latent dependencies between each patient ASM trial, and the ability of the attention mechanism to focus on different ASM treatment outcomes. The transformer model also allows a variable length of patient visits, hence it is not restricted to only training and validating the model on the first few regimen. This allows the transformer model to effectively utilise the entire dataset.</p>
+</sec>
+<sec id="s3c">
+<label>3.3</label>
+<title>Model training</title>
+<p>To utilise the data effectively, the model was trained on each progressive ASM trial. For example, a patient treated with 2 regimens will be used to train the model 2 times, with the first time only using the first regimen and the second time utilising both ASM trials. Furthermore, the final treatment outcome for the current sequence of data is always masked within the training data to avoid the model from seeing the current treatment outcome. The transformer model uses a 5-fold cross validation approach on the Glasgow dataset to obtain optimal hyper-parameters. <xref rid="tbl4" ref-type="table">Table 4</xref> in the Appendix shows the final hyper parameter values that were used. The model was used to validate its performance on the Perth cohort without any further training of the models using the Perth dataset as seen in <xref ref-type="sec" rid="s4e">section 4.5</xref>.</p>
+</sec>
+</sec>
+<sec id="s4">
+<label>4.</label>
+<title>EXPERIMENTS</title>
+<sec id="s4a">
+<label>4.1</label>
+<title>Dataset</title>
+<p>The data was obtained from two longitudinal registries of patients maintained in UK (Glasgow) and in Australia (Perth). These registries include a total of 2,272 adults with newly diagnosed and treated epilepsy. The Glasgow dataset (n=1536) includes patients seen at the Epilepsy Unit of Western infirmary in Glasgow, Scotland from 1 July 1982 to 31 October 2012 and followed up prospectively till 30 April 2016 or death. The Perth dataset (n=736) has started registering patients seen at First Seizure Clinics in Western Australia since 1999 and is being actively maintained. The patients&#x2019; characteristics, treatment approach, and database structure are similar across the registries. The registries collect similar patient data including demographics, medical history, family history, epilepsy risk factors, ASM regimens, pre-treatment seizure number and frequency, EEG and MRI results, and treatment response (including seizure control and tolerability).</p>
+<p>Between the two cohorts, there are differences in the distribution with the demographic information such as the patient history, EEG, age initiated and MRI results as seen in <xref rid="fig4" ref-type="fig">Figure 4</xref>. The Perth dataset is more dispersed across the age group whereas the Glasgow dataset has a younger population. There is also a lower proportion of epileptogenic abnormalities on brain imaging and higher proportion of patients with unknown aetiology in the Glasgow cohort which could be due low field MRI scans before the year 2000. The list of variables describing the patients used in this work<xref rid="fn1" ref-type="fn">&#x002A;</xref> can be found in <xref rid="tbl5" ref-type="table">table 5</xref>.</p>
+<fig id="fig4" position="float" fig-type="figure">
+<label>Figure 4.</label>
+<caption><p>Side-by-side comparison of the Glasgow and Perth cohort patient data. The y-axis represents the &#x0025; of patients within that cohort with the coloured label.</p></caption>
+<graphic xlink:href="20229385v1_fig4.tif"/>
+</fig>
+</sec>
+<sec id="s4b">
+<label>4.2</label>
+<title>Pre-processing</title>
+<p>The dataset was normalized before being used for training and validation of the model. Before normalization, the categorical variables were binarised into separate columns for each category and continuous variables were split into discrete categories to reduce the complexity for the model. Furthermore, ASMs that were not commonly prescribed were removed from both cohorts.</p>
+<p>To prevent information from leaking between the training and validation cohorts, the normalization step was calculated from the training samples for each input variable (<italic>&#x00B5;</italic><sub><italic>i</italic></sub> = 0, <italic>&#x03C3;</italic><sub><italic>i</italic></sub> = 1, <italic>where i is the i</italic><sup><italic>th</italic></sup> <italic>input variable</italic>) and the normalization values were applied to the validation samples. This allows the transformer model to predict treatment outcomes of new patients by applying the same normalization. Moreover, the complexity of the input variables were further reduced by categorising continuous variables into discrete categories based on quartiles. This was shown to improve the model performance as shown in <xref ref-type="sec" rid="s4c">Section 4.3</xref>.</p>
+</sec>
+<sec id="s4c">
+<label>4.3</label>
+<title>Ablation studies</title>
+<p>In this section, we perform ablation studies on the techniques described in <xref ref-type="sec" rid="s4b">Section 4.2</xref> to isolate their individual contributions. The studies were performed with a 5-fold cross validation with the Glasgow cohort. Accuracy is determined by the predicted treatment outcome by the model based on each ASM trial, with a threshold of 0.5 to separate successful and unsuccessful treatment outcomes. This predicted treatment outcome is compared with the actual result from the ASM trial, and the accuracy is calculated across each ASM trial in the 5-fold cross validation. AUC is derived from the predicted treatment outcome values compared to the ground truth (0 = unsuccessful, 1 = successful) as the model predicts values between 0 to 1.</p>
+<sec id="s4c1">
+<title>Categorising continuous variables</title>
+<p>To reduce the complexity of the data, continuous variables such as age were categorised into equal segments. The results in <xref rid="tbl1" ref-type="table">Table 1</xref> highlights the effectiveness of reducing the complexity of the input data by discretizing the continuous variables.</p>
+<table-wrap id="tbl1" orientation="portrait" position="float">
+<label>Table 1.</label>
+<caption><p>Discretizing continuous variables. Numbers represent (<italic>&#x00B5; &#x00B1; &#x03C3;</italic>)</p></caption>
+<graphic xlink:href="20229385v1_tbl1.tif"/>
+</table-wrap>
+</sec>
+<sec id="s4c2">
+<title>Multi-head attention</title>
+<p>Here, we study the effects of tuning the number of heads for the multi-head attention mechanism. The results in <xref rid="tbl2" ref-type="table">Table 2</xref> highlight the use of additional heads in improving the performance of the model. This shows that the model benefits from separating the embedding spaces within the network.</p>
+<table-wrap id="tbl2" orientation="portrait" position="float">
+<label>Table 2.</label>
+<caption><p>Effect of multi-head attention. Numbers represent (<italic>&#x00B5; &#x00B1; &#x03C3;</italic>)</p></caption>
+<graphic xlink:href="20229385v1_tbl2.tif"/>
+</table-wrap>
+</sec>
+</sec>
+<sec id="s4d">
+<label>4.4</label>
+<title>Results</title>
+<p>The model performances were based off a 5-fold cross validation split of the Glasgow dataset. <xref rid="tbl3" ref-type="table">Table 3</xref> highlights the capability of the transformer to model the variable lengths between epilepsy treatment outcomes. In contrast, RNN and LSTM have trouble modelling the different time lengths across the patient dataset. LSTM converges to classifying a single treatment outcome for each ASM treatment while the RNN converges to a performance that is lower than the transformer model. This can also be explained with the sequences of data typically being around 2-4 trials long, with the highest number of trials within the dataset being 13 trials for an individual patient. Due to the nature of the dataset, the longer term dependencies are not as prevalent compared to the shorter term dependencies for each treatment response.</p>
+<table-wrap id="tbl3" orientation="portrait" position="float">
+<label>Table 3.</label>
+<caption><p>Model testing performance comparison on Glasgow cohort. Numbers represent (<italic>&#x00B5; &#x00B1; &#x03C3;</italic>)</p></caption>
+<graphic xlink:href="20229385v1_tbl3.tif"/>
+</table-wrap>
+<table-wrap id="tbl4" orientation="portrait" position="float">
+<label>Table 4.</label>
+<caption><p>Tuned hyper-parameters for the final transformer model</p></caption>
+<graphic xlink:href="20229385v1_tbl4.tif"/>
+</table-wrap>
+<table-wrap id="tbl5" orientation="portrait" position="float">
+<label>Table 5.</label>
+<caption><p>List of variables describing the patient.</p></caption>
+<graphic xlink:href="20229385v1_tbl5.tif"/>
+</table-wrap>
+<p>Overall, the performance of the transformer can be attributed to the architecture of the model, as it focuses on relevant embeddings within the network due to the multi-head attention mechanism. It is also able to capture the time aspect effectively without the direct use of recurrent connections compared to RNNs and LSTMs.</p>
+</sec>
+<sec id="s4e">
+<label>4.5</label>
+<title>Cross-Cohort validation</title>
+<p>To ensure that the model is generalising well, a cross-cohort validation was used to test the transformer model. The trained transformer model from the Glasgow dataset was applied directly to the Perth dataset without further fine-tuning of the model. The accuracy and AUC on the Perth dataset are 74.05&#x0025; and 0.79 respectively. <xref rid="fig5" ref-type="fig">Figure 5</xref> shows the similarities of the two cohorts captured by the encoder of the transformer but there are still distinct clusters of each cohort that the transformer cannot capture. <xref rid="fig6" ref-type="fig">Figure 6</xref> shows the misclassifications (indicated by the blue points) are clustered closely with the correctly classified treatment outcomes. The cluster of Perth data towards the bottom right of the <xref rid="fig5" ref-type="fig">Figure 5</xref> indicates that the model has not been able to generalise information from the Glasgow patients as there are clusters of Perth patients resulting in misclassifications of the Perth cohort towards bottom right of <xref rid="fig6" ref-type="fig">Figure 6</xref>. This indicates that the transformer model requires additional relevant variables and data to further separate the treatment outcomes within the latent space of the model.</p>
+<fig id="fig5" position="float" fig-type="figure">
+<label>Figure 5.</label>
+<caption><p>Projection of the Glasgow validation and Perth patients within the last encoder layer of the transformer network</p></caption>
+<graphic xlink:href="20229385v1_fig5.tif"/>
+</fig>
+<fig id="fig6" position="float" fig-type="figure">
+<label>Figure 6.</label>
+<caption><p>Projection of the different predictions for the treatment outcome of each ASM schedule. There are clusters of incorrect predictions which indicates the complexity of separating the treatment outcomes</p></caption>
+<graphic xlink:href="20229385v1_fig6.tif"/>
+</fig>
+</sec>
+</sec>
+<sec id="s5">
+<label>5.</label>
+<title>LIMITATIONS AND DISCUSSION</title>
+<p>We present a novel approach in adapting a transformer architecture to model epilepsy treatment responses. The approach in this work can greatly advance the application of machine learning in predicting treatment outcome in epilepsy, by using novel deep learning techniques in this area. While previous attempts at the same were done largely through surrogate markers of treatment response,<sup><xref ref-type="bibr" rid="c14">14</xref>, <xref ref-type="bibr" rid="c15">15</xref>, <xref ref-type="bibr" rid="c22">22</xref></sup> we have the advantage of being able to train our predictive model using relevant clinical information with known standard treatment outcome measures in two large cohorts of newly diagnosed and treated epilepsy patients.<sup><xref ref-type="bibr" rid="c3">3</xref>, <xref ref-type="bibr" rid="c23">23</xref></sup></p>
+<p>Although the preliminary results show promise of the transformer architecture being able to predict the outcome of epilepsy treatment, our study has notable limitations such as limited patient information and data. We plan to improve the prediction models by incorporating more clinically relevant input variables for model training such as the latest etiological classification of epilepsy proposed by International League Against Epilepsy (ILAE),<sup><xref ref-type="bibr" rid="c24">24</xref></sup> electroencephalographic abnormalities, relevant imaging abnormalities, comorbidities considered during drug selection and concomitant medication use.</p>
+<p>In clinical practice, safety of ASM is also factored in while prescribing. An efficacious and tolerable drug may not be the safest to use in a given situation.<sup><xref ref-type="bibr" rid="c21">21</xref></sup> For instance, although valproate is efficacious for idiopathic generalised epilepsy, it is not recommended for women of child bearing age due to its teratogenic potential. These sorts of decisions require more nuanced knowledge of balancing pros and cons of selecting a particular regimen. As the model does not naturally account for this limitation, a generalized approach needs to be further investigated to implement these additional considerations.</p>
+</sec>
+<sec id="s6">
+<label>6.</label>
+<title>CONCLUSION AND CLINICAL OUTCOMES</title>
+<p>The usage of an attention-based model to capture relationships within treatment outcomes for epilepsy patients has yielded promising results. The model was able to generalise well to an external cohort without further fine-tuning of the model. In the future, the model can be improved upon with additional variables, which will allow the model to aid clinicians in selecting the most suitable ASM based on its predicted efficacy in an individual.</p>
+</sec>
+</body>
+<back>
+<sec sec-type="data-availability">
+<title>Data Availability</title>
+<p>Data can be provided to qualified investigators with institutional regulations.</p>
+</sec>
+<ref-list>
+<title>REFERENCES</title>
+<ref id="c1"><label>[1]</label><mixed-citation publication-type="journal"><string-name><surname>Fiest</surname>, <given-names>K. M.</given-names></string-name>, <string-name><surname>Sauro</surname>, <given-names>K. M.</given-names></string-name>, <string-name><surname>Wiebe</surname>, <given-names>S.</given-names></string-name>, <string-name><surname>Patten</surname>, <given-names>S. B.</given-names></string-name>, <string-name><surname>Kwon</surname>, <given-names>C. S.</given-names></string-name>, <string-name><surname>Dykeman</surname>, <given-names>J.</given-names></string-name>, <string-name><surname>Pringsheim</surname>, <given-names>T.</given-names></string-name>, <string-name><surname>Lorenzetti</surname>, <given-names>D. L.</given-names></string-name>, and <string-name><surname>Jette</surname>, <given-names>N.</given-names></string-name>, &#x201C;<article-title>Prevalence and incidence of epilepsy: A systematic review and meta-analysis of international studies</article-title>,&#x201D; <source>Neurology</source> <volume>88</volume>(<issue>3</issue>), <fpage>296</fpage>&#x2013;<lpage>303</lpage> (<year>2017</year>).</mixed-citation></ref>
+<ref id="c2"><label>[2]</label><mixed-citation publication-type="other"><string-name><surname>Kerr</surname>, <given-names>M. P.</given-names></string-name>, &#x201C;<article-title>The impact of epilepsy on patients&#x2019; lives</article-title>,&#x201D; <source>Acta Neurol Scand Suppl</source> (<issue>194</issue>), <fpage>1</fpage>&#x2013;<lpage>9</lpage> (<year>2012</year>).</mixed-citation></ref>
+<ref id="c3"><label>[3]</label><mixed-citation publication-type="journal"><string-name><surname>Chen</surname>, <given-names>Z.</given-names></string-name>, <string-name><surname>Brodie</surname>, <given-names>M. J.</given-names></string-name>, <string-name><surname>Liew</surname>, <given-names>D.</given-names></string-name>, and <string-name><surname>Kwan</surname>, <given-names>P.</given-names></string-name>, &#x201C;<article-title>Treatment outcomes in patients with newly diagnosed epilepsy treated with established and new antiepileptic drugs: A 30-year longitudinal cohort study</article-title>,&#x201D; <source>JAMA Neurol</source> <volume>75</volume>(<issue>3</issue>), <fpage>279</fpage>&#x2013;<lpage>286</lpage> (<year>2018</year>).</mixed-citation></ref>
+<ref id="c4"><label>[4]</label><mixed-citation publication-type="journal"><string-name><surname>Lee</surname>, <given-names>J.</given-names></string-name>, <string-name><surname>Yoon</surname>, <given-names>W.</given-names></string-name>, <string-name><surname>Kim</surname>, <given-names>S.</given-names></string-name>, <string-name><surname>Kim</surname>, <given-names>D.</given-names></string-name>, <string-name><surname>Kim</surname>, <given-names>S.</given-names></string-name>, <string-name><surname>So</surname>, <given-names>C. H.</given-names></string-name>, and <string-name><surname>Kang</surname>, <given-names>J.</given-names></string-name>, &#x201C;<article-title>Biobert: a pre-trained biomedical language representation model for biomedical text mining</article-title>,&#x201D; <source>Bioinformatics</source> <volume>36</volume>(<issue>4</issue>), <fpage>1234</fpage>&#x2013;<lpage>1240</lpage> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c5"><label>[5]</label><mixed-citation publication-type="journal"><string-name><surname>Yi</surname>, <given-names>X.</given-names></string-name>, <string-name><surname>Walia</surname>, <given-names>E.</given-names></string-name>, and <string-name><surname>Babyn</surname>, <given-names>P.</given-names></string-name>, &#x201C;<article-title>Generative adversarial network in medical imaging: A review</article-title>,&#x201D; <source>Med Image Anal</source> <volume>58</volume>, <fpage>101552</fpage> (<year>2019</year>).</mixed-citation></ref>
+<ref id="c6"><label>[6]</label><mixed-citation publication-type="other"><string-name><surname>Liu</surname>, <given-names>Y.</given-names></string-name>, <string-name><surname>Sivathamboo</surname>, <given-names>S.</given-names></string-name>, <string-name><surname>Goodin</surname>, <given-names>P.</given-names></string-name>, <string-name><surname>Bonnington</surname>, <given-names>P.</given-names></string-name>, <string-name><surname>Kwan</surname>, <given-names>P.</given-names></string-name>, <string-name><surname>Kuhlmann</surname>, <given-names>L.</given-names></string-name>, <string-name><surname>O&#x2019;Brien</surname>, <given-names>T.</given-names></string-name>, <string-name><surname>Perucca</surname>, <given-names>P.</given-names></string-name>, and <string-name><surname>Ge</surname>, <given-names>Z.</given-names></string-name>, <article-title>&#x201C;Epileptic seizure detection using convolutional neural network: A multi-biosignal study,&#x201D; in [Proceedings of the Australasian Computer Science Week Multiconference 2020, ACSW 2020]</article-title>, <person-group person-group-type="editor"><string-name><surname>Forkan</surname>, <given-names>A.</given-names></string-name>, ed</person-group>., <source>Association for Computing Machinery (ACM), United States of America (feb 2020). Australasian Computer Science Week Multiconference 2020, ACSW</source> <year>2020</year>; Conference date: 03-02-2020 Through 07-02-2020.</mixed-citation></ref>
+<ref id="c7"><label>[7]</label><mixed-citation publication-type="journal"><string-name><surname>Colic</surname>, <given-names>S.</given-names></string-name>, <string-name><surname>Wither</surname>, <given-names>R. G.</given-names></string-name>, <string-name><surname>Lang</surname>, <given-names>M.</given-names></string-name>, <string-name><surname>Zhang</surname>, <given-names>L.</given-names></string-name>, <string-name><surname>Eubanks</surname>, <given-names>J. H.</given-names></string-name>, and <string-name><surname>Bardakjian</surname>, <given-names>B. L.</given-names></string-name>, &#x201C;<article-title>Prediction of antiepileptic drug treatment outcomes using machine learning</article-title>,&#x201D; <source>J Neural Eng</source> <volume>14</volume>(<issue>1</issue>), <fpage>016002</fpage> (<year>2017</year>).</mixed-citation></ref>
+<ref id="c8"><label>[8]</label><mixed-citation publication-type="other"><string-name><surname>Choi</surname>, <given-names>H.</given-names></string-name>, <string-name><surname>Detyniecki</surname>, <given-names>K.</given-names></string-name>, <string-name><surname>Bazil</surname>, <given-names>C.</given-names></string-name>, <string-name><surname>Thornton</surname>, <given-names>S.</given-names></string-name>, <string-name><surname>Crosta</surname>, <given-names>P.</given-names></string-name>, <string-name><surname>Tolba</surname>, <given-names>H.</given-names></string-name>, <string-name><surname>Muneeb</surname>, <given-names>M.</given-names></string-name>, <string-name><surname>Hirsch</surname>, <given-names>L. J.</given-names></string-name>, <string-name><surname>Heinzen</surname>, <given-names>E. L.</given-names></string-name>, <string-name><surname>Sen</surname>, <given-names>A.</given-names></string-name>, <string-name><surname>Depondt</surname>, <given-names>C.</given-names></string-name>, <string-name><surname>Perucca</surname>, <given-names>P.</given-names></string-name>, <string-name><surname>Heiman</surname>, <given-names>G. A.</given-names></string-name>, and <string-name><surname>Consortium</surname>, <given-names>E.</given-names></string-name>, &#x201C;<article-title>Development and validation of a predictive model of drug-resistant genetic generalized epilepsy</article-title>,&#x201D; <source>Neurology</source> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c9"><label>[9]</label><mixed-citation publication-type="other"><string-name><surname>Xiong</surname>, <given-names>Y.</given-names></string-name>, <string-name><surname>Du</surname>, <given-names>B.</given-names></string-name>, and <string-name><surname>Yan</surname>, <given-names>P.</given-names></string-name>, <source>[Reinforced Transformer for Medical Image Captioning]</source>, <fpage>673</fpage>&#x2013;<lpage>680</lpage> (10 <year>2019</year>).</mixed-citation></ref>
+<ref id="c10"><label>[10]</label><mixed-citation publication-type="other"><string-name><surname>Carion</surname>, <given-names>N.</given-names></string-name>, <string-name><surname>Massa</surname>, <given-names>F.</given-names></string-name>, <string-name><surname>Synnaeve</surname>, <given-names>G.</given-names></string-name>, <string-name><surname>Usunier</surname>, <given-names>N.</given-names></string-name>, <string-name><surname>Kirillov</surname>, <given-names>A.</given-names></string-name>, and <string-name><surname>Zagoruyko</surname>, <given-names>S.</given-names></string-name>, <source>[End-to-End Object Detection with Transformers]</source> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c11"><label>[11]</label><mixed-citation publication-type="journal"><string-name><surname>Abbasi</surname>, <given-names>B.</given-names></string-name> and <string-name><surname>Goldenholz</surname>, <given-names>D. M.</given-names></string-name>, &#x201C;<article-title>Machine learning applications in epilepsy</article-title>,&#x201D; <source>Epilepsia</source> <volume>60</volume>(<issue>10</issue>), <fpage>2037</fpage>&#x2013;<lpage>2047</lpage> (<year>2019</year>).</mixed-citation></ref>
+<ref id="c12"><label>[12]</label><mixed-citation publication-type="journal"><string-name><surname>Esteva</surname>, <given-names>A.</given-names></string-name>, <string-name><surname>Robicquet</surname>, <given-names>A.</given-names></string-name>, <string-name><surname>Ramsundar</surname>, <given-names>B.</given-names></string-name>, <string-name><surname>Kuleshov</surname>, <given-names>V.</given-names></string-name>, <string-name><surname>DePristo</surname>, <given-names>M.</given-names></string-name>, <string-name><surname>Chou</surname>, <given-names>K.</given-names></string-name>, <string-name><surname>Cui</surname>, <given-names>C.</given-names></string-name>, <string-name><surname>Corrado</surname>, <given-names>G.</given-names></string-name>, <string-name><surname>Thrun</surname>, <given-names>S.</given-names></string-name>, and <string-name><surname>Dean</surname>, <given-names>J.</given-names></string-name>, &#x201C;<article-title>A guide to deep learning in healthcare</article-title>,&#x201D; <source>Nat Med</source> <volume>25</volume>(<issue>1</issue>), <fpage>24</fpage>&#x2013;<lpage>29</lpage> (<year>2019</year>).</mixed-citation></ref>
+<ref id="c13"><label>[13]</label><mixed-citation publication-type="other"><string-name><surname>Asadi-Pooya</surname>, <given-names>A. A.</given-names></string-name>, <string-name><surname>Beniczky</surname>, <given-names>S.</given-names></string-name>, <string-name><surname>Rubboli</surname>, <given-names>G.</given-names></string-name>, <string-name><surname>Sperling</surname>, <given-names>M. R.</given-names></string-name>, <string-name><surname>Rampp</surname>, <given-names>S.</given-names></string-name>, and <string-name><surname>Perucca</surname>, <given-names>E.</given-names></string-name>, &#x201C;<article-title>A pragmatic algorithm to select appropriate antiseizure medications in patients with epilepsy</article-title>,&#x201D; <source>Epilepsia</source> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c14"><label>[14]</label><mixed-citation publication-type="journal"><string-name><surname>An</surname>, <given-names>S.</given-names></string-name>, <string-name><surname>Malhotra</surname>, <given-names>K.</given-names></string-name>, <string-name><surname>Dilley</surname>, <given-names>C.</given-names></string-name>, <string-name><surname>Han-Burgess</surname>, <given-names>E.</given-names></string-name>, <string-name><surname>Valdez</surname>, <given-names>J. N.</given-names></string-name>, <string-name><surname>Robertson</surname>, <given-names>J.</given-names></string-name>, <string-name><surname>Clark</surname>, <given-names>C.</given-names></string-name>, <string-name><surname>Westover</surname>, <given-names>M. B.</given-names></string-name>, and <string-name><surname>Sun</surname>, <given-names>J.</given-names></string-name>, &#x201C;<article-title>Predicting drug-resistant epilepsy - a machine learning approach based on administrative claims data</article-title>,&#x201D; <source>Epilepsy Behav</source> <volume>89</volume>, <fpage>118</fpage>&#x2013;<lpage>125</lpage> (<year>2018</year>).</mixed-citation></ref>
+<ref id="c15"><label>[15]</label><mixed-citation publication-type="journal"><string-name><surname>Delen</surname>, <given-names>D.</given-names></string-name>, <string-name><surname>Davazdahemami</surname>, <given-names>B.</given-names></string-name>, <string-name><surname>Eryarsoy</surname>, <given-names>E.</given-names></string-name>, <string-name><surname>Tomak</surname>, <given-names>L.</given-names></string-name>, and <string-name><surname>Valluru</surname>, <given-names>A.</given-names></string-name>, &#x201C;<article-title>Using predictive analytics to identify drug-resistant epilepsy patients</article-title>,&#x201D; <source>Health Informatics J</source> <volume>26</volume>(<issue>1</issue>), <fpage>449</fpage>&#x2013;<lpage>460</lpage> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c16"><label>[16]</label><mixed-citation publication-type="other"><string-name><surname>Choi</surname>, <given-names>E.</given-names></string-name>, <string-name><surname>Xu</surname>, <given-names>Z.</given-names></string-name>, <string-name><surname>Li</surname>, <given-names>Y.</given-names></string-name>, <string-name><surname>Dusenberry</surname>, <given-names>M. W.</given-names></string-name>, <string-name><surname>Flores</surname>, <given-names>G.</given-names></string-name>, <string-name><surname>Xue</surname>, <given-names>Y.</given-names></string-name>, and <string-name><surname>Dai</surname>, <given-names>A. M.</given-names></string-name>, &#x201C;<article-title>Graph convolutional transformer: Learning the graphical structure of electronic health records</article-title>,&#x201D; <source>ArXiv abs/1906.04716</source> (<year>2019</year>).</mixed-citation></ref>
+<ref id="c17"><label>[17]</label><mixed-citation publication-type="other"><string-name><surname>Vaswani</surname>, <given-names>A.</given-names></string-name>, <string-name><surname>Shazeer</surname>, <given-names>N.</given-names></string-name>, <string-name><surname>Parmar</surname>, <given-names>N.</given-names></string-name>, <string-name><surname>Uszkoreit</surname>, <given-names>J.</given-names></string-name>, <string-name><surname>Jones</surname>, <given-names>L.</given-names></string-name>, <string-name><surname>Gomez</surname>, <given-names>A. N.</given-names></string-name>, <string-name><surname>Kaiser</surname>, <given-names>L.</given-names></string-name>, and <string-name><surname>Polosukhin</surname>, <given-names>I.</given-names></string-name>, &#x201C;<article-title>Attention is all you need</article-title>,&#x201D; <source>in [Advances in Neural Information Processing Systems]</source>, <fpage>5998</fpage>&#x2013;<lpage>6008</lpage> (<year>2017</year>).</mixed-citation></ref>
+<ref id="c18"><label>[18]</label><mixed-citation publication-type="journal"><string-name><surname>Yu</surname>, <given-names>Y.</given-names></string-name>, <string-name><surname>Si</surname>, <given-names>X.</given-names></string-name>, <string-name><surname>Hu</surname>, <given-names>C.</given-names></string-name>, and <string-name><surname>Zhang</surname>, <given-names>J.</given-names></string-name>, &#x201C;<article-title>A review of recurrent neural networks: Lstm cells and network architectures</article-title>,&#x201D; <source>Neural Computation</source> <volume>31</volume>, <fpage>1</fpage>&#x2013;<lpage>36</lpage> (05 <year>2019</year>).</mixed-citation></ref>
+<ref id="c19"><label>[19]</label><mixed-citation publication-type="other"><string-name><surname>Informatik</surname>, <given-names>F.</given-names></string-name>, <string-name><surname>Bengio</surname>, <given-names>Y.</given-names></string-name>, <string-name><surname>Frasconi</surname>, <given-names>P.</given-names></string-name>, and <string-name><surname>Schmidhuber</surname>, <given-names>J.</given-names></string-name>, &#x201C;<article-title>Gradient flow in recurrent nets: the difficulty of learning long-term dependencies</article-title>,&#x201D; <source>A Field Guide to Dynamical Recurrent Neural Networks</source> (03 <year>2003</year>).</mixed-citation></ref>
+<ref id="c20"><label>[20]</label><mixed-citation publication-type="journal"><string-name><surname>Li</surname>, <given-names>Y.</given-names></string-name>, <string-name><surname>Rao</surname>, <given-names>S.</given-names></string-name>, <string-name><surname>Solares</surname>, <given-names>J. R. A.</given-names></string-name>, <string-name><surname>Hassaine</surname>, <given-names>A.</given-names></string-name>, <string-name><surname>Ramakrishnan</surname>, <given-names>R.</given-names></string-name>, <string-name><surname>Canoy</surname>, <given-names>D.</given-names></string-name>, <string-name><surname>Zhu</surname>, <given-names>Y.</given-names></string-name>, <string-name><surname>Rahimi</surname>, <given-names>K.</given-names></string-name>, and <string-name><surname>Salimi-Khorshidi</surname>, <given-names>G.</given-names></string-name>, &#x201C;<article-title>Behrt: Transformer for electronic health records</article-title>,&#x201D; <source>Scientific Reports</source> <volume>10</volume>(<issue>1</issue>), <fpage>7155</fpage> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c21"><label>[21]</label><mixed-citation publication-type="journal"><string-name><surname>Perucca</surname>, <given-names>E.</given-names></string-name>, <string-name><surname>Brodie</surname>, <given-names>M. J.</given-names></string-name>, <string-name><surname>Kwan</surname>, <given-names>P.</given-names></string-name>, and <string-name><surname>Tomson</surname>, <given-names>T.</given-names></string-name>, &#x201C;<article-title>30 years of second-generation antiseizure medications: impact and future perspectives</article-title>,&#x201D; <source>Lancet Neurol</source> <volume>19</volume>(<issue>6</issue>), <fpage>544</fpage>&#x2013;<lpage>556</lpage> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c22"><label>[22]</label><mixed-citation publication-type="journal"><string-name><surname>Devinsky</surname>, <given-names>O.</given-names></string-name>, <string-name><surname>Dilley</surname>, <given-names>C.</given-names></string-name>, <string-name><surname>Ozery-Flato</surname>, <given-names>M.</given-names></string-name>, <string-name><surname>Aharonov</surname>, <given-names>R.</given-names></string-name>, <string-name><surname>Goldschmidt</surname>, <given-names>Y.</given-names></string-name>, <string-name><surname>Rosen-Zvi</surname>, <given-names>M.</given-names></string-name>, <string-name><surname>Clark</surname>, <given-names>C.</given-names></string-name>, and <string-name><surname>Fritz</surname>, <given-names>P.</given-names></string-name>, &#x201C;<article-title>Changing the approach to treatment choice in epilepsy using big data</article-title>,&#x201D; <source>Epilepsy Behav</source> <volume>56</volume>, <fpage>32</fpage>&#x2013;<lpage>7</lpage> (<year>2016</year>).</mixed-citation></ref>
+<ref id="c23"><label>[23]</label><mixed-citation publication-type="journal"><string-name><surname>Sharma</surname>, <given-names>S.</given-names></string-name>, <string-name><surname>Chen</surname>, <given-names>Z.</given-names></string-name>, <string-name><surname>Rychkova</surname>, <given-names>M.</given-names></string-name>, <string-name><surname>Dunne</surname>, <given-names>J.</given-names></string-name>, <string-name><surname>Lee</surname>, <given-names>J.</given-names></string-name>, <string-name><surname>Kalilani</surname>, <given-names>L.</given-names></string-name>, <string-name><surname>Lawn</surname>, <given-names>N.</given-names></string-name>, and <string-name><surname>Kwan</surname>, <given-names>P.</given-names></string-name>, &#x201C;<article-title>Treatment initiation decisions in newly diagnosed epilepsy-a longitudinal cohort study</article-title>,&#x201D; <source>Epilepsia</source> <volume>61</volume>(<issue>3</issue>), <fpage>445</fpage>&#x2013;<lpage>454</lpage> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c24"><label>[24]</label><mixed-citation publication-type="journal"><string-name><surname>Fisher</surname>, <given-names>R. S.</given-names></string-name>, <string-name><surname>Cross</surname>, <given-names>J. H.</given-names></string-name>, <string-name><surname>D&#x2019;Souza</surname>, <given-names>C.</given-names></string-name>, <string-name><surname>French</surname>, <given-names>J. A.</given-names></string-name>, <string-name><surname>Haut</surname>, <given-names>S. R.</given-names></string-name>, <string-name><surname>Higurashi</surname>, <given-names>N.</given-names></string-name>, <string-name><surname>Hirsch</surname>, <given-names>E.</given-names></string-name>, <string-name><surname>Jansen</surname>, <given-names>F. E.</given-names></string-name>, <string-name><surname>Lagae</surname>, <given-names>L.</given-names></string-name>, <string-name><surname>Moshe</surname>, <given-names>S. L.</given-names></string-name>, <string-name><surname>Peltola</surname>, <given-names>J.</given-names></string-name>, <string-name><surname>Roulet Perez</surname>, <given-names>E.</given-names></string-name>, <string-name><surname>Scheffer</surname>, <given-names>I. E.</given-names></string-name>, <string-name><surname>Schulze-Bonhage</surname>, <given-names>A.</given-names></string-name>, <string-name><surname>Somerville</surname>, <given-names>E.</given-names></string-name>, <string-name><surname>Sperling</surname>, <given-names>M.</given-names></string-name>, <string-name><surname>Yacubian</surname>, <given-names>E. M.</given-names></string-name>, and <string-name><surname>Zuberi</surname>, <given-names>S. M.</given-names></string-name>, &#x201C;<article-title>Instruction manual for the ilae 2017 operational classification of seizure types</article-title>,&#x201D; <source>Epilepsia</source> <volume>58</volume>(<issue>4</issue>), <fpage>531</fpage>&#x2013;<lpage>542</lpage> (<year>2017</year>).</mixed-citation></ref>
+</ref-list>
+<app-group>
+<app id="app1">
+<label>APPENDIX A.</label>
+<title>HYPER-PARAMETERS</title>
+<p><xref rid="fig4" ref-type="fig">Figure 4</xref> the list of hyper-parameters that were tuned with with the training/validation split of the Glasgow dataset.</p>
+</app>
+<app id="app2">
+<label>APPENDIX B.</label>
+<title>LIST OF VARIABLES</title>
+<p><xref rid="fig5" ref-type="fig">Figure 5</xref> outlines the patient variables that were used to train the model. The ASMs that were used in the Glasgow and Perth datasets are not shown in this section. Further information on the variables can be found in.<sup><xref ref-type="bibr" rid="c21">21</xref></sup></p>
+</app>
+</app-group>
+<fn-group>
+<fn id="fn1">
+<label>&#x002A;</label>
+<p>Detailed explanation of the Glasgow data can be found in<sup><xref ref-type="bibr" rid="c21">21</xref></sup></p>
+</fn>
+</fn-group>
+</back>
+</article>

@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.2d1 20170631//EN" "JATS-archivearticle1.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" article-type="article" dtd-version="1.2d1" specific-use="production" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="publisher-id">MEDRXIV</journal-id>
+<journal-title-group>
+<journal-title>medRxiv</journal-title>
+<abbrev-journal-title abbrev-type="publisher">medRxiv</abbrev-journal-title>
+</journal-title-group>
+<publisher>
+<publisher-name>Cold Spring Harbor Laboratory</publisher-name>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1101/2021.05.13.21256216</article-id>
+<article-version>1.1</article-version>
+<article-categories>
+<subj-group subj-group-type="hwp-journal-coll">
+<subject>Epidemiology</subject>
+</subj-group>
+</article-categories>
+<title-group>
+<article-title><monospace>SPARSEMODr</monospace>: Rapid simulations of spatially explicit and stochastic models of infectious disease</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" corresp="yes">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-2320-5773</contrib-id>
+<name><surname>Mihaljevic</surname><given-names>Joseph R</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="corresp" rid="cor1">&#x002A;</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Borkovec</surname><given-names>Seth</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Ratnavale</surname><given-names>Saikanth</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-3146-0865</contrib-id>
+<name><surname>Hocking</surname><given-names>Toby D</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Banister</surname><given-names>Kelsey E</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Eppinger</surname><given-names>Joseph E</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-0612-3648</contrib-id>
+<name><surname>Hepp</surname><given-names>Crystal</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-5511-1854</contrib-id>
+<name><surname>Doerry</surname><given-names>Eck</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<aff id="a1"><label>1</label><institution>School of Informatics, Computing, and Cyber Systems, Northern Arizona University</institution>, Flagstaff, AZ 86011</aff>
+<aff id="a2"><label>2</label><institution>Pathogen and Microbiome Institute, Northern Arizona University</institution>, Flagstaff, AZ 86011</aff>
+</contrib-group>
+<author-notes>
+<corresp id="cor1"><label>&#x002A;</label>Corresponding author; e-mail: <email>joseph.mihaljevic@nau.edu</email>.</corresp>
+</author-notes>
+<pub-date pub-type="epub">
+<year>2021</year>
+</pub-date>
+<elocation-id>2021.05.13.21256216</elocation-id>
+<history>
+<date date-type="received">
+<day>13</day>
+<month>5</month>
+<year>2021</year>
+</date>
+<date date-type="rev-recd">
+<day>13</day>
+<month>5</month>
+<year>2021</year>
+</date>
+<date date-type="accepted">
+<day>18</day>
+<month>5</month>
+<year>2021</year>
+</date>
+</history>
+<permissions>
+<copyright-statement>&#x00A9; 2021, Posted by Cold Spring Harbor Laboratory</copyright-statement>
+<copyright-year>2021</copyright-year>
+<license license-type="creative-commons" xlink:href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><license-p>This pre-print is available under a Creative Commons License (Attribution-NonCommercial-NoDerivs 4.0 International), CC BY-NC-ND 4.0, as described at <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by-nc-nd/4.0/">http://creativecommons.org/licenses/by-nc-nd/4.0/</ext-link></license-p></license>
+</permissions>
+<self-uri xlink:href="21256216.pdf" content-type="pdf" xlink:role="full-text"/>
+<abstract>
+<title>Summary</title>
+<list list-type="order">
+<list-item><p>Simulating the dynamics of realistically complex models of infectious disease is conceptually challenging and computationally expensive. This results in a heavy reliance on customized software and, correspondingly, lower reproducibility across disease modeling studies.</p></list-item>
+<list-item><p>SPARSEMOD stands for <bold>SPA</bold>tial <bold>R</bold>esolution-<bold>SE</bold>nsitive <bold>M</bold>odels of <bold>O</bold>utbreak <bold>D</bold>ynamics. The goal of our project, encapsulated by the <monospace>SPARSEMODr</monospace> package for R package, is to offer a framework for rapidly simulating the dynamics of stochastic and spatially-explicit models of infectious disease for use in pedagogical and applied contexts.</p></list-item>
+<list-item><p>We outline the universal functions of our package that allow for user-customization while demonstrating the common work flow.</p></list-item>
+<list-item><p><monospace>SPARSEMODr</monospace> offers an extendable framework that should allow the open-source community of disease modelers to add new model types and functionalities in future releases.</p></list-item></list>
+</abstract>
+<kwd-group kwd-group-type="author">
+<title>Keywords</title>
+<kwd>epidemiological model</kwd>
+<kwd>spatial disease models</kwd>
+<kwd>R</kwd>
+<kwd>C&#x002B;&#x002B;</kwd>
+<kwd>disease ecology</kwd>
+<kwd>host-pathogen interactions</kwd>
+</kwd-group>
+<counts>
+<page-count count="14"/>
+</counts>
+</article-meta>
+<notes>
+<notes notes-type="competing-interest-statement">
+<title>Competing Interest Statement</title><p>The authors have declared no competing interest.</p></notes>
+<notes notes-type="financial-disclosure">
+<title>Funding Statement</title><p>This material is based upon work supported by the National Science Foundation under Grant No. 2028629.</p></notes>
+<notes notes-type="disclosures">
+<title>Author Declarations</title><p>I confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.</p><p>Yes</p><p>The details of the IRB/oversight body that provided approval or exemption for the research described are given below:</p><p>Non-human-subjects research</p><p>All necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived.</p><p>Yes</p><p>I understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).</p><p>Yes</p><p>I have followed all appropriate research reporting guidelines and uploaded the relevant EQUATOR Network research reporting checklist(s) and other pertinent material as supplementary files, if applicable.</p><p>Yes</p></notes>
+</notes>
+</front>
+<body>
+<sec id="s1">
+<label>1</label>
+<title>Introduction</title>
+<p>The recent emergence of SARS-CoV-2 has reinforced the strong role that mathematical models of disease spread play in understanding pathogen transmission and in designing effective public health interventions (<xref ref-type="bibr" rid="c5">Ferguson <italic>et al</italic>., 2020</xref>; <xref ref-type="bibr" rid="c21">Tian <italic>et al</italic>., 2020</xref>; <xref ref-type="bibr" rid="c20">Saad-Roy <italic>et al</italic>., 2020</xref>). Models of infectious disease transmission vary widely in their structural form and complexity (<xref ref-type="bibr" rid="c13">Keeling &#x0026; Rohani, 2008</xref>). Classical models take the form of ordinary differential equations describing &#x201C;compartments&#x201D; of the population (e.g., susceptible versus infectious), but even these models can become quite complex, containing numerous equations that might, for instance, account for heterogeneities in the host population or for the progression of pathogen-induced disease through various stages. Some of the most complex - and perhaps realistic - disease models explicitly account for spatial dynamics, referred to as meta-population models.</p>
+<p>In meta-population models of disease, distinct host populations are delineated and are explicitly situated geographically, such that movement of host individuals between the populations affects transmission (<xref ref-type="bibr" rid="c19">Rohani <italic>et al</italic>., 1999</xref>; <xref ref-type="bibr" rid="c14">Lachiany &#x0026; Stone, 2012</xref>; <xref ref-type="bibr" rid="c6">Ferrari <italic>et al</italic>., 2010</xref>; <xref ref-type="bibr" rid="c16">Pei <italic>et al</italic>., 2020</xref>). These spatial models are therefore used to understand how host or pathogen movement influences within-population transmission dynamics and the regional patterns of epidemics that emerge by aggregating the distinct populations. For example, spatial models can help us understand how quickly a pathogen is expected to travel across a landscape once it emerges; they can be used to understand the synchrony of outbreaks in the face of spatial heterogeneity; and they can be used to simulate spatial intervention strategies (e.g., targeted vaccination). In this way, spatial models are often necessary to explain large-scale patterns of disease transmission that cannot be captured by simpler, non-spatial models (<xref ref-type="bibr" rid="c4">Eggo <italic>et al</italic>., 2021</xref>). Yet the use of spatial disease models in practice can be hindered by their level of complexity (<xref ref-type="bibr" rid="c18">Riley <italic>et al</italic>., 2015</xref>; <xref ref-type="bibr" rid="c22">Willem <italic>et al</italic>., 2017</xref>), meaning that spatial models may be underutilized in educational settings and in applied situations.</p>
+<p>Spatial disease models may become computationally burdensome due to the necessity of tracking the values of multiple state variables (i.e., host compartments) within each distinct population over time, while also simulating explicit movement dynamics between host populations over time (<xref ref-type="bibr" rid="c17">Riley, 2007</xref>; <xref ref-type="bibr" rid="c18">Riley <italic>et al</italic>., 2015</xref>). We believe that this leads to two problems. First, spatial models must be custom-coded, which may reduce the reproducibility of results between studies, especially if model code is not open-source. We are unaware of any open-source frameworks that allow users to simulate spatial disease models in a flexible way without having to code their own model. One could argue that spatial disease models are complex enough that they should only be constructed and analyzed by highly qualified experts; however, this seems philosophical and debatable. There are distinct advantages of imagining a software environment in which many spatial models of various structural form could be simulated with some universal, but user-controlled constraints. In such a scenario, researchers could cite the universal parameters, which would increase reproducibility and facilitate peer-review.</p>
+<p>A second problem is that because spatial models require customized software and the availability of computational resources, this may limit the opportunity for hands-on learning in the classroom. From experience, having students code their own spatial model or attempt to read and understand example code from a spatial model can be extremely time-intensive. This may lead some instructors to rely on lecture-style learning to convey the importance of spatial disease dynamics, depriving students of critical experiences in deriving their own understanding through manipulating the models. Therefore, it would be very useful to have a software environment that allows students to simulate spatial models &#x201C;out-of-the-box&#x201D; while still deriving an understanding of fundamental concepts in epidemiology.</p>
+<p>Here we introduce the <monospace>SPARSEMODr</monospace> package, which allows users to rapidly simulate complex models of infectious disease in a spatially-explicit and stochastic environment. The first release of this package contains two model structures, each based on coupled systems of ordinary differential equations. First, we supply a classic Susceptible-Exposed-Infectious-Removed (SEIR) model with host demography (births and deaths), which can be used in the classroom to understand the cycling of disease outbreaks and the spatial synchrony of these cycles in a spatially-explicit context. This model is not fully described herein; however, our package vignettes provide a detailed model description and coded examples. Second, and described in detail below, we supply a more complex and specific model of SARS-CoV-2 transmission and disease progression through the hospital system (<xref ref-type="bibr" rid="c8">Gel <italic>et al</italic>., 2020</xref>). Our group has been using this model in an applied context to make projections of hospitalization on a county-specific basis in Arizona, but the model could also be used in a pedagogical context. Importantly, the SPARSEMODr package has a set of conventions (i.e., universal constraints) that dictate how hosts move between populations, that allow for multiple sources of stochasticity, that define the effects of host density on transmission (i.e., frequency-versus density-dependent transmission), and that allow users to specify time-varying parameters (e.g., time-varying transmission rates). In this way the package is extendable: in future releases, more model structures can be added that follow the same core conventions. We hope that the package will increase reproducibility in the field of spatially-explicit disease modeling, while also providing a straightforward way for students and instructors to learn about these perhaps otherwise inaccessible model types.</p>
+</sec>
+<sec id="s2">
+<label>2</label>
+<title>Universal features of <monospace>SPARSEMODr</monospace> disease models</title>
+<p>All of our models are coded in C&#x002B;&#x002B; and use the Rcpp package to conveniently wrap the functions into the R computing environment (<xref ref-type="bibr" rid="c3">Eddelbuettel, 2013</xref>). We therefore take advantage of the speed offered by C&#x002B;&#x002B; and the user-friendliness offered by the higher-level language, R. The output of each model is a data frame that includes the value of each state variable per time step per population, as well as the number of new &#x201C;events&#x201D; per time step per population (e.g., new exposure events or recovery events). We supply detailed vignettes that describe different use-cases of the <monospace>SPARSEMODr</monospace> package on our website: <ext-link ext-link-type="uri" xlink:href="https://sparsemod.nau.edu/rpkg/">https://sparsemod.nau.edu/rpkg/</ext-link>. Here we describe the key universal features of these spatially-explicit and stochastic disease models.</p>
+<sec id="s2a">
+<label>2.1</label>
+<title>Stochastic dynamics</title>
+<sec id="s2a1">
+<title>Demographic stochasticity</title>
+<p>All of our models implement a form of demographic stochasticity, which represents the effects of probabilistic events that befall individuals in a population and that can affect epidemic trajectories. These random processes are especially important early in outbreaks and in small host populations (<xref ref-type="bibr" rid="c13">Keeling &#x0026; Rohani, 2008</xref>). To implement demographic stochasticity, we simulate the differential equations forward one day at a time using a Gillespie-style algorithm known as the tau-leaping algorithm (<xref ref-type="bibr" rid="c9">Gillespie, 2001</xref>). In addition to accounting for important random processes, this approach has several practical advantages. First, this simulation approach is more computationally efficient compared to some numerical integration techniques (<xref ref-type="bibr" rid="c7">Ganyani <italic>et al</italic>., 2021</xref>). Second, this approach allows us provide integer outputs that represent the number of new &#x201C;events&#x201D; that occurs on each day of the simulation. Whereas the number of new events would have to be estimated in numerical integration of continuous-time differential equations, because the output values would be real numbers. One downside to the tau-leaping approach is that it forces the user to work with integers, and simulating the equations can be more unstable when the integers are very small. However, this is simply an issue of scaling; the state variables and model parameter values can easily be re-scaled to improve the stability of the simulations.</p>
+</sec>
+<sec id="s2a2">
+<title>Stochastic transmission process</title>
+<p>We implement daily stochastic variation in the transmission rate that scales with the number of infectious individuals in the focal population. In other words, as the number of infectious individuals increases, the variation in transmission rate decreases, emphasizing that stochasticity has larger effects in smaller populations (i.e., larger effects when there are few infectious individuals) (<xref ref-type="bibr" rid="c13">Keeling &#x0026; Rohani, 2008</xref>). This type of stochasticity can account for super-spreader events, which have dis-proportionate effects early in the epidemic. To implement this stochasticity, we draw a random variate from a normal distribution with a mean of zero and a standard deviation of <monospace>stoch_sd</monospace>, and we call this random variate <monospace>noise</monospace>. We calculate the total number of infectious individuals as <monospace>infect_sum</monospace>. The functional form of stochasticity is then:
+<disp-formula id="eqn1">
+<alternatives><graphic xlink:href="21256216v1_eqn1.gif"/></alternatives>
+</disp-formula>
+</p>
+</sec>
+</sec>
+<sec id="s2b">
+<label>2.2</label>
+<title>Spatial dynamics</title>
+<p>Our models allow migration between populations in the meta-population to affect local and regional transmission dynamics. In general, susceptible individuals in a focal population can become exposed to the pathogen by infectious &#x201C;visitors&#x201D; from other populations or by infectious visitors from outside of the meta-population (&#x201C;immigrants&#x201D;). Similarly, susceptible individuals can visit a different population within the meta-community and these susceptible travelers may become exposed by infectious individuals in those other populations.</p>
+<p>The user can control the per-capita movement rate <italic>m</italic> of susceptible and infectious hosts. The probability of moving to any specific population is controlled by a simple, distance-based dispersal kernel:
+<disp-formula id="eqn2">
+<alternatives><graphic xlink:href="21256216v1_eqn2.gif"/></alternatives>
+</disp-formula>
+Here <italic>p</italic><sub><italic>i,j</italic></sub> is the probability of moving from population <italic>j</italic> to population <italic>i</italic>, and <italic>d</italic><sub><italic>i, j</italic></sub> is the euclidean distance between the two populations. Larger values of the <monospace>dist_param</monospace> constant make it more likely for hosts to travel farther distances. In future releases we could include the option of using more complicated kernels, like gravity kernels, which assume movement probability is also dependent on the local size of population <italic>i</italic>.</p>
+<p>To determine which individuals will move to which outside population, we draw from a multinomial probability distribution using the <italic>p</italic><sub><italic>i, j</italic></sub> values. Once individuals are assigned to their new, temporary populations, transmission can occur dependent upon the local composition of infectious individuals. Thus, transmission occurs within a population and then additional transmission can occur after hosts commute.</p>
+<p>The model also allows immigrants, who do not usually reside in the meta-population, to commute to the meta-population each day. As an analogy, imagine modeling the meta-population within a state, but wanting to model the effects of out-of-state persons that visit the State of interest. In this case, the user can define the parameter <monospace>imm_frac</monospace>, which is the proportion of the focal population that may constitute visitors on any given day. For example if for a given focal population, the population size is 1000 hosts, and <monospace>imm_frac</monospace> = 0.05, an average of 50 temporary immigrants may arrive on a given day. The exact number of these immigrants arriving on a given day is determined by drawing from a Poisson distribution. Then, the number of infectious visitors from this pool of immigrants is assumed to be proportional to the number of infectious residents in the focal population. In other words, we assume that the pathogen is present in &#x201C;non-resident&#x201D; populations at similar prevalence as the focal population. The exact number of infectious immigrants is again determined by a Poisson draw. After immigrants arrive at the focal population, transmission between susceptible residents and infectious immigrants is determined, and the immigrants then leave the population. In other words, immigrants are commuters and only visit for one day at a time.</p>
+</sec>
+<sec id="s2c">
+<label>2.3</label>
+<title>Time-varying parameters</title>
+<p>The <monospace>SPARSEMODr</monospace> models allow users to change transmission dynamics over time by specifying time-varying parameters. Time-varying parameters can take on unique values per day, and we provide two ways for users to specify these changes. First, users can specify &#x201C;time windows&#x201D; over which the parameter values change linearly from a starting value to an ending value. Second, users can supply a vector of values for a given parameter such that it takes on a user-specified value per day in the simulation (see <xref ref-type="sec" rid="s3a">sec 3.1</xref> for more details on time windows).</p>
+<p>All models allow the transmission rate to vary over time; however, because the value of the transmission rate can be hard to interpret or estimate over time, we instead allow the user to input a time-varying reproductive number. Note that this not the same as the instantaneous reproductive number, so we call this value the time-varying <italic>R</italic><sub>0</sub>. In each model we use the value of <italic>R</italic><sub>0</sub> at each time point to back-calculate a timespecific value of the transmission rate (<italic>&#x03B2;</italic><sub>(<italic>t</italic>)</sub>), but we do not adjust for the current proportions of susceptible or recovered hosts. Hence, it is different from the instantaneous reproductive number, <italic>R</italic><sub><italic>t</italic></sub> (<xref ref-type="bibr" rid="c10">Gostic <italic>et al</italic>., 2020</xref>). In this way, we are assuming that time-varying <italic>R</italic><sub>0</sub> is effectively changing only due to changes in the <italic>&#x03B2;</italic><sub>(<italic>t</italic>)</sub> term, which encapsulates the effective contact rate among individuals and the probability of transmission, given contact between a susceptible and infectious individual. For simple models, the calculation of <italic>&#x03B2;</italic><sub>(<italic>t</italic>)</sub> from a time-varying <italic>R</italic><sub>0</sub> value is straightforward algebra; e.g., for a classic SIR model with host demography: <italic>&#x03B2;</italic><sub>(<italic>t</italic>)</sub> = <italic>R</italic><sub>0(<italic>t</italic>)</sub>(<italic>&#x03B3;</italic> &#x002B; <italic>&#x00B5;</italic>), where <italic>&#x03B3;</italic> is the recovery rate and <italic>&#x00B5;</italic> is the natural mortality rate. For more complex models with many state variables, this becomes more complicated. Therefore, to back-calculate the <italic>&#x03B2;</italic><sub>(<italic>t</italic>)</sub> parameter from the time-varying <italic>R</italic><sub>0</sub> value, we derive the equation for time-varying <italic>R</italic><sub>0</sub> for each <monospace>SPARSEMODr</monospace> model. We implement a root-finding algorithm with the Brent-Dekker method using the GNU Scientific Library to calculate <italic>&#x03B2;</italic><sub>(<italic>t</italic>)</sub> in our underlying C&#x002B;&#x002B; code, which is fast, robust, and does not require an initial guess (<xref ref-type="bibr" rid="c2">Brent, 2013</xref>). Thus, the user inputs the time-varying <italic>R</italic><sub>0</sub> value, and we calculate the value of <italic>&#x03B2;</italic><sub>(<italic>t</italic>)</sub> on the back-end.</p>
+<p>In the model of SARS-CoV-2 transmission, we also allow a number of other relevant parameters to fluctuate through time, which we describe below. Therefore, each model that is developed in <monospace>SPARSEMODr</monospace> could include any number of time-varying parameters following the universal conventions.</p>
+</sec>
+<sec id="s2d">
+<label>2.4</label>
+<title>Frequency- and density-dependent transmission</title>
+<p>In <monospace>SPARSEMODr</monospace> models, the transmission process can be described as frequency-dependent, where contact rates are invariable to population density, or density-dependent, where contact rates depend on population density (<xref ref-type="bibr" rid="c12">Hopkins <italic>et al</italic>., 2020</xref>).</p>
+<p>To model frequency-dependent transmission, we scale the time-specific transmission rate by the local population size <italic>&#x03B2;</italic><sub><italic>scaled</italic></sub> = <italic>&#x03B2;</italic><sub>(<italic>t</italic>)</sub><italic>/N</italic><sub><italic>i</italic></sub>, where <italic>N</italic><sub><italic>i</italic></sub> is the size of a given focal population. The day-specific transmission rate <italic>&#x03B2;</italic><sub>(<italic>t</italic>)</sub> is back-calculated from the user-provided value of time-varying <italic>R</italic><sub>0</sub> (above).</p>
+<p>We also allow the user to specify a relationship between the realized transmission rate in a population and the population&#x2019;s density. For instance, for some pathogens, we may expect the effective contact rate to increase with increasing population density (i.e., density-dependent transmission). We therefore allow the user to specify a non-linear Monod equation (<xref ref-type="bibr" rid="c15">Monod, 1949</xref>) to describe the relationship between host population density and the transmission rate <italic>&#x03B2;</italic><sub>(<italic>t</italic>)</sub>. The Monod equation is:
+<disp-formula id="eqn3">
+<alternatives><graphic xlink:href="21256216v1_eqn3.gif"/></alternatives>
+</disp-formula>
+where <italic>&#x03B2;</italic><sub>(<italic>t</italic>)</sub> becomes the maximum possible transmission rate for that day. D is the density of the focal host population (<italic>N</italic><sub><italic>i</italic></sub><italic>/</italic>census area), and <italic>K</italic> is a constant that controls the effect of density, which is the user-specified value of <monospace>dd_trans_monod_k.</monospace> We again scale the realized value of the transmission rate by the population size: <italic>&#x03B2;</italic><sub><italic>scaled</italic></sub> = <italic>&#x03B2;</italic><sub>realized</sub><italic>/N</italic><sub><italic>i</italic></sub>.</p>
+</sec>
+</sec>
+<sec id="s3">
+<label>3</label>
+<title>Work flow</title>
+<p>Here we demonstrate the work flow of the <monospace>SPARSEMODr</monospace> package using our version of the COVID-19 model with frequency-dependent transmission, described by the following equations (see also <xref ref-type="bibr" rid="c8">Gel <italic>et al</italic>. (2020)</xref>):
+<disp-formula id="eqn4">
+<alternatives><graphic xlink:href="21256216v1_eqn4.gif"/></alternatives>
+</disp-formula>
+Here, <italic>&#x03BB;</italic><sub><italic>t</italic></sub> represents a component of the force of infection, given by:
+<disp-formula id="eqn5">
+<alternatives><graphic xlink:href="21256216v1_eqn5.gif"/></alternatives>
+</disp-formula>
+Definitions of state variables and model parameters are displayed in the tables below, which also show the corresponding model inputs to the <monospace>SPARSEMODr</monospace> package. We provide default parameter values as a guide in the package documentation, but all of them can be user-specified. The package also conducts parameter validation steps via warnings and errors to ensure specified parameters are within feasible limits. Note that we also allow individuals in the <italic>S, I</italic><sub><italic>a</italic></sub>, <italic>I</italic><sub><italic>p</italic></sub>, and <italic>I</italic><sub><italic>s</italic></sub> compartments to move between populations, controlled the per-capita movement rate <italic>m</italic>. However, these dynamics are not explicitly represented in the model equations.</p>
+<table-wrap id="tbl1" orientation="portrait" position="float">
+<label>Table 1:</label>
+<caption><title>COVID-19 model state variables</title></caption>
+<graphic xlink:href="21256216v1_tbl1.tif"/>
+</table-wrap>
+<table-wrap id="tbl2" orientation="portrait" position="float">
+<label>Table 2:</label>
+<caption><title>COVID-19 model parameter descriptions</title></caption>
+<graphic xlink:href="21256216v1_tbl2.tif"/>
+</table-wrap>
+<sec id="s3a">
+<label>3.1</label>
+<title>Process overview</title>
+<p>Our software package runs the spatial, stochastic modeling framework across a user-specified grid of populations. <xref rid="fig2" ref-type="fig">Figure 2</xref> shows a simulated case-study using the COVID-19 model described above. In this case, we simulated populations that are scattered across a spatial lattice; one could imagine these are local communities situated within counties, within a state, such that the &#x201C;Regions&#x201D; represent counties (<xref rid="fig2" ref-type="fig">Fig. 2(a)</xref>). Across the whole meta-population (i.e., state), we impose a time-varying <italic>R</italic><sub>0</sub>, such that each local population experiences the same pattern of time-varying <italic>R</italic><sub>0</sub> (<xref rid="fig2" ref-type="fig">Fig. 2(b))</xref>. In our spatial modeling framework, we simulate the set of ordinary differential equations (above) within each local population, allowing movement (as described above) during each time step of one day. This means that we can track the spread of the disease in each population individually ((<xref rid="fig2" ref-type="fig">Fig. 2(c)</xref>), and we can aggregate patterns in local populations to higher spatial scales (e.g., &#x201C;Regions&#x201D;; <xref rid="fig2" ref-type="fig">Fig. 2(d)</xref>) to look at higher-level, emergent patterns. Below we describe the necessary setup and declarations to run the spatial simulations in <monospace>SPARSEMODr.</monospace></p>
+<fig id="fig1" position="float" fig-type="figure">
+<label>Figure 1:</label>
+<caption><title>COVID-19 model schematic.</title></caption>
+<graphic xlink:href="21256216v1_fig1.tif"/>
+</fig>
+<fig id="fig2" position="float" fig-type="figure">
+<label>Figure 2:</label>
+<caption><p>Overview of stochastic, spatial modeling scheme using simulated data and the COVID-19 <monospace>SPARSEMODr</monospace> model. (a) Simulated host populations of varying abundance on a spatially-explicit grid. (b) Imposing a pattern of time-varying <italic>R</italic><sub>0</sub> across all of the local populations. Note that hospitalization rate may also be an underlying change over time. (c) Pattern of new hospitalizations over time from a particular population. The lighter lines are individual realizations of the stochastic model, while the dark line is the median trajectory of these realizations. (d) Aggregating local patterns to regional scales to explore differences in epidemic trajectories across regions. Light and dark lines as in panel (c).</p></caption>
+<graphic xlink:href="21256216v1_fig2.tif"/>
+</fig>
+</sec>
+<sec id="s3b">
+<label>3.2</label>
+<title>Declaring initial conditions and constant parameters</title>
+<p>Users must specify the initial conditions of the state variables. To initiate the epidemic, at least one of the following vectors must be supplied with a value of greater than one for at least one population: input E pops, <monospace>input_I_asym_pops, input_I_presym_pops, input_I_sym_pops, input_I_home_pops, input_I_hosp_pops, input_I_icu1_pops, or input_I_icu2_pops.</monospace> Any of these population parameters not supplied will be assumed to be a vector of zeroes. Moreover, either a vector of input N pops or a vector of input S pops must be supplied. Let&#x2019;s take the following data set for as inputs for the our examples:</p>
+<preformat preformat-type="dialog">
+N_pops &#x003C;-rep(5000, 10) # 10 populations each with 5000 individuals.
+E_pops &#x003C;-c(0,1,0,3,2,0,14,3,0,0) # Number of initially exposed in each pop.
+S_pops &#x003C;-N_pops - E_pops
+</preformat>
+<p>The user must also declare some inputs that are universal to all <monospace>SPARSEMODr</monospace> models: input dist mat is a matrix that specifies the distance between populations; <monospace>input_realz_seeds</monospace> is a vector of seeds for the random realizations of the model; <monospace>stoch_sd</monospace> is the standard deviation of the stochastic transmission rate, as described above; <monospace>trans_type</monospace> specifies the type of transmission type (frequency- or density-dependent, see above); <monospace>input_census_area</monospace> is the spatial area of each population (only required when transmission is density-dependent); <monospace>dd_trans_monod_k</monospace> the parameter controlling density&#x2019;s effect on transmission, as described above (only required when transmission is density-dependent); and <monospace>input_tw</monospace> a time window object, which we will describe in the next section. More information on these parameters is found in our package documentation.</p>
+<p>The next step is to populate the model-specific &#x201C;control&#x201D; object, which is a special R class defined in our package. Each model in the package must have its own control class that includes the model-specific parameters and initial conditions of the state variables. This also lets the system know which model from the library of <monospace>SPARSEMODr</monospace> models will be run.</p>
+<p>A simple example, given the initial conditions above is as follows. In this case, all of the constant model parameters would use default values, except the two specified.</p>
+<preformat preformat-type="dialog">
+my_covid19_control &#x003C;-SPARSEMODr::covid19_control(
+ input_S_pops = S_pops, # susceptible population counts
+ input_E_pops = E_pops, # exposed population counts
+ asym_rate = 0.4, # fraction of exposed that become asymptomatic
+ recov_icu1 = 0.125) # average ICU recovery rate, i.e., 8 days (1/8)</preformat>
+<p>Also, in this case, because <monospace>input_N_pops</monospace> was not provided, the package internally assumes <monospace>input_N_pops = input_S_pops &#x002B; input_E_pops. covid19_control()</monospace> returns a named list of vectors that must be supplied when running the model. Error and warning messages help the user with understanding which parameters are necessary and which are suggested.</p>
+</sec>
+<sec id="s3c">
+<label>3.3</label>
+<title>Declaring time-varying parameters with the <monospace>time-windows</monospace> object</title>
+<p>A <monospace>time_windows</monospace> object is required to specify the time-varying parameters (or whether these will be constant in the simulation). Importantly, there are two ways to specify these &#x201C;time windows&#x201D;: (1) daily, or (2) start and end dates of the window. For the &#x201C;daily&#x201D; method, the parameter vectors must be of size equal to the number of days in the simulation. For the start/end method, values for each parameter are assigned at the beginning and end of the time window. The model then implements a linear interpolation to assign daily values; in other words, the parameter values change linearly from the starting value to the ending value over the number of days within the time window.</p>
+<p>Here is an example that was used to generate the time-varying <italic>R</italic><sub>0</sub> pattern of <xref rid="fig2" ref-type="fig">Figure 2(b)</xref>. In this case, we specify the start and end dates of our time windows, that each vary in the number of days included. Then we specify the values of each potentially time-varying parameter at the start of each time window. The system internally populates vectors of length equal to the number of days represented by the whole simulation, where parameters are assumed to change linearly within the time windows. Below, we show examples and dates are formatted using the <monospace>lubridate</monospace> package (<xref ref-type="bibr" rid="c11">Grolemund &#x0026; Wickham, 2011</xref>).</p>
+<preformat preformat-type="dialog">
+# Function to specify all of the required parameters in a single time-window
+# In this example, only r0 is variable between the time periods
+one.window &#x003C;-function(
+    start_dates, #start of time window (date class)
+    end_dates, #end of time window (date class)
+    r0, #value of time-varying R0
+    dist_param=150, #controls dispersal kernel (see Key Features vignette)
+    m=0.1, #per-capita movement rate, i.e., move every 10 days on avg.
+    imm_frac=0){#zero outside immigration
+    data.frame(r0, start_dates, end_dates, dist_param, m, imm_frac)
+}
+library(lubridate) # for mdy()
+time.window.args &#x003C;- rbind(# Specify the components of 5 time windows
+  one.window(mdy(&#x201C;1-1-20&#x201D;), mdy(&#x201C;1-31-20&#x201D;), r0=3.0),
+  one.window(mdy(&#x201C;2-1-20&#x201D;), mdy(&#x201C;2-15-20&#x201D;), r0=0.8),
+  one.window(mdy(&#x201C;2-16-20&#x201D;), mdy(&#x201C;3-10-20&#x201D;), r0=0.8),
+  one.window(mdy(&#x201C;3-11-20&#x201D;), mdy(&#x201C;3-21-20&#x201D;), r0=1.4),
+  one.window(mdy(&#x201C;3-22-20&#x201D;), mdy(&#x201C;5-1-20&#x201D;), r0=1.4)
+)
+# Populate the required object of class time_windows
+my_tw &#x003C;-do.call(SPARSEMODr::time_windows, time.window.args)</preformat>
+<p>The package documentation gives additional examples of how to flexibly structure these time window objects to allow parameters to vary over time.</p>
+</sec>
+<sec id="s3d">
+<label>3.4</label>
+<title>Running stochastic realizations in parallel</title>
+<p>We suggest running stochastic realizations of the <monospace>SPAREMODr</monospace> spatial models in parallel for efficiency. We have therefore created a function, <monospace>model_parallel()</monospace>, that relies upon the future package in R to use R-level parallelization and to speed up run times (<xref ref-type="bibr" rid="c1">Bengtsson, 2020</xref>). The <monospace>model_parallel()</monospace> function also compiles the output of the individual model runs into a user-friendly data frame.</p>
+<p>As an example:</p>
+<preformat preformat-type="dialog">
+# Specify the number of realizations to run:
+n_realz &#x003C;-75
+# Specify unique seeds to run the realizations.
+## Note, realizations with the same seeds will produce ## equivalent output
+my_realz_seeds &#x003C;-1:n_realz
+# Run the model in parallel and store the output:
+model_output &#x003C;-SPARSEMODr::model_parallel(
+                                        input_dist_mat = dist_mat,
+                                        input_census_area = census_area,
+                                        input_tw = my_tw,
+                                        input_realz_seeds = my_realz_seeds,
+                                        control = my_covid19_control,
+                                        &#x2026;universal_model_params&#x2026;)</preformat>
+<p>Here &#x201C;&#x2026; <monospace>universal_model_params</monospace> &#x2026; &#x201C;represents the universal model parameters, such as <monospace>trans_type</monospace> or <monospace>stoch_sd</monospace>, as described above an in our package documentation. Note that <monospace>dist_mat</monospace> is a pairwise distance matrix, and <monospace>census_area</monospace> is a vector of population areas (e.g., in km<sup>2</sup>). See the package vignettes for examples of creating these two inputs. Since <monospace>model_parallel()</monospace> produces a data frame, the output can easily be subset and summarized at the user&#x2019;s discretion for plotting. Our package vignettes provide coding examples for subsetting and plotting output (e.g., <xref rid="fig2" ref-type="fig">Figure 2</xref>) using <monospace>tidyverse</monospace> packages.</p>
+</sec>
+</sec>
+<sec id="s4">
+<label>4</label>
+<title>Conclusion</title>
+<p>The <monospace>SPARSEMODr</monospace> package therefore allows for advanced simulations of disease models that are both stochastic and spatially explicit. The package could be used in pedagogical contexts to demonstrate fundamental concepts in epidemiology, such as spreading waves of transmission or spatial (a)synchrony of epidemics. In applied contexts, parameterized models could be simulated in realistic spatial lattices to project transmission dynamics under various scenarios of population movement. We envision multiple extensions to our package in the future. First, more model structures can be added, including vector-borne disease models. For package contributors, a model would have to be written in C&#x002B;&#x002B; and follow the conventions herein: tauleaping algorithm, commuter-model of host (or vector) movement between sub-populations, outputs as data frames, etc. Our team would provide guidance and approve all outside contributed model structures via pull and merge requests on Github. Second, we plan to introduce a graphical user-interface that allows users to dynamically simulate toy models under various assumptions. Such an interface could aid in understanding the effects of targeted interventions on disease control. Given the open-source nature of this R package, we hope that the community of epidemiological modelers will help us to refine the package, make it more accessible to broad audiences, add vignettes and case-studies, and add functionality that makes the package more meaningful in applied contexts, such as wildlife conservation or human public health.</p>
+</sec>
+<sec id="s5">
+<label>5</label>
+<title>Author Contributions</title>
+<p>JRM, CH, and ED designed the project. JRM, TDH, SB, SR, KEB, and JEE contributed code and methods. JRM, TDH, and SB designed the R package structure. JRM, SB, and SR wrote the first draft of this manuscript, and all authors contributed to manuscript revisions.</p>
+</sec>
+</body>
+<back>
+<sec sec-type="data-availability">
+<title>Data Availability</title>
+<p>No data used</p>
+</sec>
+<ack>
+<label>6</label>
+<title>Acknowledgements</title>
+<p>This material is based upon work supported by the National Science Foundation under Grant No. 2028629.</p>
+</ack>
+<ref-list>
+<title>References</title>
+<ref id="c1"><mixed-citation publication-type="other"><string-name><surname>Bengtsson</surname>, <given-names>H.</given-names></string-name> (<year>2020</year>) <article-title>future: Unified Parallel and Distributed Processing in R for Everyone</article-title>. <source>R package version 1.18.0</source>.</mixed-citation></ref>
+<ref id="c2"><mixed-citation publication-type="other"><string-name><surname>Brent</surname>, <given-names>R.P.</given-names></string-name> (<year>2013</year>) <article-title>Algorithms for minimization without derivatives</article-title>. <source>Courier Corporation</source>.</mixed-citation></ref>
+<ref id="c3"><mixed-citation publication-type="book"><string-name><surname>Eddelbuettel</surname>, <given-names>D.</given-names></string-name> (<year>2013</year>) <source>Seamless R and C&#x002B;&#x002B; Integration with Rcpp</source>. <publisher-name>Springer</publisher-name>, <publisher-loc>New York</publisher-loc>. ISBN <isbn>978-1-4614-6867-7</isbn>.</mixed-citation></ref>
+<ref id="c4"><mixed-citation publication-type="journal"><string-name><surname>Eggo</surname>, <given-names>R.M.</given-names></string-name>, <string-name><surname>Dawa</surname>, <given-names>J.</given-names></string-name>, <string-name><surname>Kucharski</surname>, <given-names>A.J.</given-names></string-name> &#x0026; <string-name><surname>Cucunuba</surname>, <given-names>Z.M.</given-names></string-name> (<year>2021</year>) <article-title>The importance of local context in covid-19 models</article-title>. <source>Nature Computational Science</source>, <volume>1</volume>, <fpage>6</fpage>&#x2013;<lpage>8</lpage>.</mixed-citation></ref>
+<ref id="c5"><mixed-citation publication-type="other"><string-name><surname>Ferguson</surname>, <given-names>N.</given-names></string-name>, <string-name><surname>Laydon</surname>, <given-names>D.</given-names></string-name>, <string-name><surname>Nedjati Gilani</surname>, <given-names>G.</given-names></string-name>, <string-name><surname>Imai</surname>, <given-names>N.</given-names></string-name>, <string-name><surname>Ainslie</surname>, <given-names>K.</given-names></string-name>, <string-name><surname>Baguelin</surname>, <given-names>M.</given-names></string-name>, <string-name><surname>Bhatia</surname>, <given-names>S.</given-names></string-name>, <string-name><surname>Boonyasiri</surname>, <given-names>A.</given-names></string-name>, <string-name><surname>Cucunuba Perez</surname>, <given-names>Z.</given-names></string-name>, <string-name><surname>Cuomo-Dannenburg</surname>, <given-names>G.</given-names></string-name> <etal>et al..</etal> (<year>2020</year>) <source>Report 9: Impact of non-pharmaceutical interventions (npis) to reduce covid19 mortality and healthcare demand</source>.</mixed-citation></ref>
+<ref id="c6"><mixed-citation publication-type="journal"><string-name><surname>Ferrari</surname>, <given-names>M.J.</given-names></string-name>, <string-name><surname>Djibo</surname>, <given-names>A.</given-names></string-name>, <string-name><surname>Grais</surname>, <given-names>R.F.</given-names></string-name>, <string-name><surname>Bharti</surname>, <given-names>N.</given-names></string-name>, <string-name><surname>Grenfell</surname>, <given-names>B.T.</given-names></string-name> &#x0026; <string-name><surname>Bjornstad</surname>, <given-names>O.N.</given-names></string-name> (<year>2010</year>) <article-title>Rural-urban gradi-ent in seasonal forcing of measles transmission in Niger</article-title>. <source>Proceedings of the Royal Society B: Biological Sciences</source>, <volume>277</volume>, <fpage>2775</fpage>&#x2013;<lpage>2782</lpage>.</mixed-citation></ref>
+<ref id="c7"><mixed-citation publication-type="journal"><string-name><surname>Ganyani</surname>, <given-names>T.</given-names></string-name>, <string-name><surname>Faes</surname>, <given-names>C.</given-names></string-name> &#x0026; <string-name><surname>Hens</surname>, <given-names>N.</given-names></string-name> (<year>2021</year>) <article-title>Simulation and analysis methods for stochastic compartmental epidemic models</article-title>. <source>Annual Review of Statistics and Its Application</source>, <volume>8</volume>, <fpage>69</fpage>&#x2013;<lpage>88</lpage>.</mixed-citation></ref>
+<ref id="c8"><mixed-citation publication-type="journal"><string-name><surname>Gel</surname>, <given-names>E.S.</given-names></string-name>, <string-name><surname>Jehn</surname>, <given-names>M.</given-names></string-name>, <string-name><surname>Lant</surname>, <given-names>T.</given-names></string-name>, <string-name><surname>Muldoon</surname>, <given-names>A.R.</given-names></string-name>, <string-name><surname>Nelson</surname>, <given-names>T.</given-names></string-name> &#x0026; <string-name><surname>Ross</surname>, <given-names>H.M.</given-names></string-name> (<year>2020</year>) <article-title>Covid-19 healthcare demand projections: Arizona</article-title>. <source>PloS one</source>, <volume>15</volume>, <fpage>e0242588</fpage>.</mixed-citation></ref>
+<ref id="c9"><mixed-citation publication-type="journal"><string-name><surname>Gillespie</surname>, <given-names>D.T.</given-names></string-name> (<year>2001</year>) <article-title>Approximate accelerated stochastic simulation of chemically reacting systems</article-title>. <source>The Journal of Chemical Physics</source>, <volume>115</volume>, <fpage>1716</fpage>&#x2013;<lpage>1733</lpage>.</mixed-citation></ref>
+<ref id="c10"><mixed-citation publication-type="journal"><string-name><surname>Gostic</surname>, <given-names>K.M.</given-names></string-name>, <string-name><surname>Mcgough</surname>, <given-names>L.</given-names></string-name>, <string-name><surname>Baskerville</surname>, <given-names>E.</given-names></string-name>, <string-name><surname>Abbott</surname>, <given-names>S.</given-names></string-name>, <string-name><surname>Joshi</surname>, <given-names>K.</given-names></string-name>, <string-name><surname>Tedijanto</surname>, <given-names>C.</given-names></string-name>, <string-name><surname>Kahn</surname>, <given-names>R.</given-names></string-name>, <string-name><surname>Niehus</surname>, <given-names>R.</given-names></string-name>, <string-name><surname>Hay</surname>, <given-names>J.</given-names></string-name>, <string-name><surname>Salazar</surname>, <given-names>P.D.</given-names></string-name>, <string-name><surname>Meakin</surname>, <given-names>S.</given-names></string-name>, <string-name><surname>Munday</surname>, <given-names>J.</given-names></string-name>, <string-name><surname>Bosse</surname>, <given-names>N.I.</given-names></string-name>, <string-name><surname>Sherrat</surname>, <given-names>K.</given-names></string-name>, <string-name><surname>Robin</surname>, <given-names>N.</given-names></string-name>, <string-name><surname>White</surname>, <given-names>L.F.</given-names></string-name>, <string-name><surname>Huisman</surname>, <given-names>J.S.</given-names></string-name>, <string-name><surname>Stadler</surname>, <given-names>T.</given-names></string-name>, <string-name><surname>Wallinga</surname>, <given-names>J.</given-names></string-name>, <string-name><surname>Funk</surname>, <given-names>S.</given-names></string-name>, <string-name><surname>Lipsitch</surname>, <given-names>M.</given-names></string-name> &#x0026; <string-name><surname>Cobey</surname>, <given-names>S.</given-names></string-name> (<year>2020</year>) <source>Practical considerations for measuring the effective reproductive number, R t</source>.</mixed-citation></ref>
+<ref id="c11"><mixed-citation publication-type="journal"><string-name><surname>Grolemund</surname>, <given-names>G.</given-names></string-name> &#x0026; <string-name><surname>Wickham</surname>, <given-names>H.</given-names></string-name> (<year>2011</year>) <article-title>Dates and times made easy with lubridate</article-title>. <source>Journal of Statistical Software</source>, <volume>40</volume>, <fpage>1</fpage>&#x2013;<lpage>25</lpage>.</mixed-citation></ref>
+<ref id="c12"><mixed-citation publication-type="journal"><string-name><surname>Hopkins</surname>, <given-names>S.R.</given-names></string-name>, <string-name><surname>Fleming-Davies</surname>, <given-names>A.E.</given-names></string-name>, <string-name><surname>Belden</surname>, <given-names>L.K.</given-names></string-name> &#x0026; <string-name><surname>Wojdak</surname>, <given-names>J.M.</given-names></string-name> (<year>2020</year>) <article-title>Systematic review of modelling assumptions and empirical evidence: Does parasite transmission increase nonlinearly with host density?</article-title> <source>Methods in Ecology and Evolution</source>, <volume>11</volume>, <fpage>476</fpage>&#x2013;<lpage>486</lpage>.</mixed-citation></ref>
+<ref id="c13"><mixed-citation publication-type="book"><string-name><surname>Keeling</surname>, <given-names>M.</given-names></string-name> &#x0026; <string-name><surname>Rohani</surname>, <given-names>P.</given-names></string-name> (<year>2008</year>) <source>Modeling infectious diseases in humans and animals</source>. <publisher-name>Princeton University Press</publisher-name>.</mixed-citation></ref>
+<ref id="c14"><mixed-citation publication-type="journal"><string-name><surname>Lachiany</surname>, <given-names>M.</given-names></string-name> &#x0026; <string-name><surname>Stone</surname>, <given-names>L.</given-names></string-name> (<year>2012</year>) <article-title>A Vaccination Model for a Multi-City System</article-title>. <source>Bulletin of Mathematical Biology</source>, <volume>74</volume>, <fpage>2474</fpage>&#x2013;<lpage>2487</lpage>.</mixed-citation></ref>
+<ref id="c15"><mixed-citation publication-type="journal"><string-name><surname>Monod</surname>, <given-names>J.</given-names></string-name> (<year>1949</year>) <article-title>The growth of bacterial cultures</article-title>. <source>Annual review of microbiology</source>, <volume>3</volume>, <fpage>371</fpage>&#x2013;<lpage>394</lpage>.</mixed-citation></ref>
+<ref id="c16"><mixed-citation publication-type="journal"><string-name><surname>Pei</surname>, <given-names>S.</given-names></string-name>, <string-name><surname>Kandula</surname>, <given-names>S.</given-names></string-name> &#x0026; <string-name><surname>Shaman</surname>, <given-names>J.</given-names></string-name> (<year>2020</year>) <article-title>Differential effects of intervention timing on COVID-19 spread in the United States</article-title>. <source>Science Advances</source>, <volume>6</volume>, <fpage>eabd6370</fpage>.</mixed-citation></ref>
+<ref id="c17"><mixed-citation publication-type="journal"><string-name><surname>Riley</surname>, <given-names>S.</given-names></string-name> (<year>2007</year>) <article-title>Large-Scale Models of Infectious Disease</article-title>. <source>Science</source>, <volume>316</volume>, <fpage>1298</fpage>&#x2013;<lpage>1301</lpage>.</mixed-citation></ref>
+<ref id="c18"><mixed-citation publication-type="journal"><string-name><surname>Riley</surname>, <given-names>S.</given-names></string-name>, <string-name><surname>Eames</surname>, <given-names>K.</given-names></string-name>, <string-name><surname>Isham</surname>, <given-names>V.</given-names></string-name>, <string-name><surname>Mollison</surname>, <given-names>D.</given-names></string-name> &#x0026; <string-name><surname>Trapman</surname>, <given-names>P.</given-names></string-name> (<year>2015</year>) <article-title>Five challenges for spatial epidemic models</article-title>. <source>Epidemics</source>, <volume>10</volume>, <fpage>68</fpage>&#x2013;<lpage>71</lpage>.</mixed-citation></ref>
+<ref id="c19"><mixed-citation publication-type="journal"><string-name><surname>Rohani</surname>, <given-names>P.</given-names></string-name>, <string-name><surname>Earn</surname>, <given-names>D.</given-names></string-name> &#x0026; <string-name><surname>Grenfell</surname>, <given-names>B.T.</given-names></string-name> (<year>1999</year>) <article-title>Opposite Patterns of Synchrony in Sympatric Disease Metapop-ulations</article-title>. <source>Science</source>, <volume>286</volume>, <fpage>968</fpage>&#x2013;<lpage>971</lpage>.</mixed-citation></ref>
+<ref id="c20"><mixed-citation publication-type="journal"><string-name><surname>Saad-Roy</surname>, <given-names>C.M.</given-names></string-name>, <string-name><surname>Wagner</surname>, <given-names>C.E.</given-names></string-name>, <string-name><surname>Baker</surname>, <given-names>R.E.</given-names></string-name>, <string-name><surname>Morris</surname>, <given-names>S.E.</given-names></string-name>, <string-name><surname>Farrar</surname>, <given-names>J.</given-names></string-name>, <string-name><surname>Graham</surname>, <given-names>A.L.</given-names></string-name>, <string-name><surname>Levin</surname>, <given-names>S.A.</given-names></string-name>, <string-name><surname>Mina</surname>, <given-names>M.J.</given-names></string-name>, <string-name><surname>Metcalf</surname>, <given-names>C.J.E.</given-names></string-name> &#x0026; <string-name><surname>Grenfell</surname>, <given-names>B.T.</given-names></string-name> (<year>2020</year>) <article-title>Immune life history, vaccination, and the dynamics of sars-cov-2 over the next 5 years</article-title>. <source>Science</source>, <volume>370</volume>, <fpage>811</fpage>&#x2013;<lpage>818</lpage>.</mixed-citation></ref>
+<ref id="c21"><mixed-citation publication-type="journal"><string-name><surname>Tian</surname>, <given-names>H.</given-names></string-name>, <string-name><surname>Liu</surname>, <given-names>Y.</given-names></string-name>, <string-name><surname>Li</surname>, <given-names>Y.</given-names></string-name>, <string-name><surname>Wu</surname>, <given-names>C.H.</given-names></string-name>, <string-name><surname>Chen</surname>, <given-names>B.</given-names></string-name>, <string-name><surname>Kraemer</surname>, <given-names>M.U.</given-names></string-name>, <string-name><surname>Li</surname>, <given-names>B.</given-names></string-name>, <string-name><surname>Cai</surname>, <given-names>J.</given-names></string-name>, <string-name><surname>Xu</surname>, <given-names>B.</given-names></string-name>, <string-name><surname>Yang</surname>, <given-names>Q.</given-names></string-name> <etal>et al..</etal> (<year>2020</year>) <article-title>An investigation of transmission control measures during the first 50 days of the covid-19 epidemic in china</article-title>. <source>Science</source>, <volume>368</volume>, <fpage>638</fpage>&#x2013;<lpage>642</lpage>.</mixed-citation></ref>
+<ref id="c22"><mixed-citation publication-type="journal"><string-name><surname>Willem</surname>, <given-names>L.</given-names></string-name>, <string-name><surname>Verelst</surname>, <given-names>F.</given-names></string-name>, <string-name><surname>Bilcke</surname>, <given-names>J.</given-names></string-name>, <string-name><surname>Hens</surname>, <given-names>N.</given-names></string-name> &#x0026; <string-name><surname>Beutels</surname>, <given-names>P.</given-names></string-name> (<year>2017</year>) <article-title>Lessons from a decade of individual-based models for infectious disease transmission: A systematic review (2006-2015)</article-title>. <source>BMC Infectious Diseases</source>, <volume>17</volume>, <fpage>1</fpage>&#x2013;<lpage>16</lpage>.</mixed-citation></ref>
+</ref-list>
+</back>
+</article>

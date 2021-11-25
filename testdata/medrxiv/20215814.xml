@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.2d1 20170631//EN" "JATS-archivearticle1.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" article-type="article" dtd-version="1.2d1" specific-use="production" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="publisher-id">MEDRXIV</journal-id>
+<journal-title-group>
+<journal-title>medRxiv</journal-title>
+<abbrev-journal-title abbrev-type="publisher">medRxiv</abbrev-journal-title>
+</journal-title-group>
+<publisher>
+<publisher-name>Cold Spring Harbor Laboratory</publisher-name>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1101/2020.10.20.20215814</article-id>
+<article-version>1.1</article-version>
+<article-categories>
+<subj-group subj-group-type="hwp-journal-coll">
+<subject>Epidemiology</subject>
+</subj-group>
+</article-categories>
+<title-group>
+<article-title>Extending the range of COVID-19 risk factors in a Bayesian network model for personalised risk assessment</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" corresp="yes">
+<name><surname>Prodhan</surname><given-names>Georgina</given-names></name>
+<xref ref-type="corresp" rid="cor1">&#x002A;</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Fenton</surname><given-names>Norman</given-names></name>
+<role>Supervisor: Professor</role>
+</contrib>
+<aff><institution>School of Electronic Engineering and Computer Science, Queen Mary, University of London</institution>, London, <country>UK</country></aff>
+</contrib-group>
+<author-notes>
+<corresp id="cor1"><label>&#x002A;</label> Corresponding author; email: <email>georgina.prodhan@outlook.com</email></corresp>
+<fn fn-type="other"><p><email>g.m.prodhan@se19.qmul.ac.uk</email></p></fn>
+<fn fn-type="other"><p><email>n.fenton@qmul.ac.uk</email></p></fn>
+</author-notes>
+<pub-date pub-type="epub">
+<year>2020</year>
+</pub-date>
+<elocation-id>2020.10.20.20215814</elocation-id>
+<history>
+<date date-type="received">
+<day>20</day>
+<month>10</month>
+<year>2020</year>
+</date>
+<date date-type="rev-recd">
+<day>20</day>
+<month>10</month>
+<year>2020</year>
+</date>
+<date date-type="accepted">
+<day>21</day>
+<month>10</month>
+<year>2020</year>
+</date>
+</history>
+<permissions>
+<copyright-statement>&#x00A9; 2020, Posted by Cold Spring Harbor Laboratory</copyright-statement>
+<copyright-year>2020</copyright-year>
+<license license-type="creative-commons" xlink:href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><license-p>This pre-print is available under a Creative Commons License (Attribution-NonCommercial-NoDerivs 4.0 International), CC BY-NC-ND 4.0, as described at <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by-nc-nd/4.0/">http://creativecommons.org/licenses/by-nc-nd/4.0/</ext-link></license-p></license>
+</permissions>
+<self-uri xlink:href="20215814.pdf" content-type="pdf" xlink:role="full-text"/>
+<abstract>
+<title>Abstract</title>
+<p>A need is emerging for individuals to gauge their own risks of coronavirus infection as it becomes apparent that contact tracing to contain the spread of the virus is not working in many societies. This paper presents an extension of an existing Bayesian network model for an application in which people can add their own personal risk factors to calculate their probability of exposure to the virus and likely severity if they do catch the illness. The data need not be shared with any central authority. In this way, people can become more aware of their individual risks and adjust their behaviour accordingly, as many countries prepare for a second wave of infections or a prolonged pandemic. This has the advantage not only of preserving privacy but also of containing the virus more effectively by allowing users to act without the time lag of waiting to be informed that a contact has been tested and confirmed COVID-19 positive. Through a nuanced assessment of individual risk, it could also release many people from isolation who are judged highly vulnerable using cruder measures, helping to boost economic activity and decrease social isolation without unduly increasing transmission risk. Although much has been written and reported about single risk factors, little has been done to bring these factors together in a user-friendly way to give an overall risk rating. The causal probabilistic model presented here shows the power of Bayesian networks to represent the interplay of multiple, dependent variables and to predict outcomes. The network, designed for use in the UK, is built using detailed data from government and health authorities and the latest research, and is capable of dynamic updates as new information becomes available. The focus of the paper is on the extended set of risk factors.</p>
+</abstract>
+<kwd-group kwd-group-type="author">
+<title>Keywords</title>
+<kwd>coronavirus</kwd>
+<kwd>COVID-19</kwd>
+<kwd>contact tracing</kwd>
+<kwd>app</kwd>
+<kwd>risk</kwd>
+<kwd>privacy</kwd>
+<kwd>second wave</kwd>
+</kwd-group>
+<counts>
+<page-count count="22"/>
+</counts>
+</article-meta>
+<notes>
+<notes notes-type="competing-interest-statement">
+<title>Competing Interest Statement</title><p>The authors have declared no competing interest.</p></notes>
+<notes notes-type="financial-disclosure">
+<title>Funding Statement</title><p>No external funding was received</p></notes>
+<notes notes-type="disclosures">
+<title>Author Declarations</title><p>I confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.</p><p>Yes</p><p>The details of the IRB/oversight body that provided approval or exemption for the research described are given below:</p><p>Queen Mary, University of London</p><p>All necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived.</p><p>Yes</p><p>I understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).</p><p>Yes</p><p>I have followed all appropriate research reporting guidelines and uploaded the relevant EQUATOR Network research reporting checklist(s) and other pertinent material as supplementary files, if applicable.</p><p>Yes</p></notes>
+</notes>
+</front>
+<body>
+<sec id="s1">
+<label>I.</label>
+<title>I<sc>ntroduction</sc></title>
+<p>Like many countries, Britain is bracing for a second wave of coronavirus. Local lockdowns are being reimposed in areas of England, which suffered the highest levels of excess mortality in Europe (<xref ref-type="bibr" rid="c30">Office for National Statistics, 2020</xref>), even as business are encouraged to stay open, individuals urged to go back to work in offices, and schools go back for the new academic year. Mitigating measures such as the compulsory wearing of face masks in confined public spaces have recently been imposed. But a digital contact-tracing system that was supposed to be the basis for a lifting of restrictions on movement and social activity has yet to prove itself effective. The UK government has just launched a revamped version of its coronavirus app. It has also been reported to be considering a feature that allows people to use personal information to calculate their own risk score (<xref ref-type="bibr" rid="c41">Smyth &#x0026; Wright, 2020</xref>). The model presented here could be the basis for just such an app. The location of new outbreaks could be identified simply by collecting data on users&#x2019; location (via GPS, not the more invasive Bluetooth) and likelihood of infection.</p>
+<p>This approach to containing the virus relies largely on individuals taking responsibility for their own health and that of those around them. This may be thought to be a weakness. But in fact, in all but the most authoritarian regimes, a sense of social responsibility is essential if rules on social distancing, face masks, hand-washing and other measures are to be effective. Globally, experience of past pan- and epidemics including the 2009 swine flu, SARS, the 2014-2016 Ebola outbreak and various outbreaks of bird flu have shown that people&#x2019;s behaviour &#x2013; based on risk perception - can have a profound influence on the spread of infectious diseases (<xref ref-type="bibr" rid="c19">Funk, et al., 2009</xref>).</p>
+<p>There is evidence that the model presented here could be effective in Britain (although it is, of course, adaptable to any country in the world). A study in 10 countries that was published in May (<xref rid="c13" ref-type="bibr">Dryhurst, et al., 2020</xref>) found that the UK had the highest public risk perception of COVID-19 in the group. The COVID Symptom Study, an epidemiological research app that invites users to report any symptoms and share details of their health lifestyle, has more than 4 million contributors, mostly in the UK (<xref ref-type="bibr" rid="c45">Zoe, 2020</xref>). And, according to a poll of 2,254 UK residents carried out in in May by King&#x2019;s College and Ipsos MORI (<xref rid="c2" ref-type="bibr">Allington, et al., 2020</xref>), the majority have been going beyond compliance with government advice, for example by staying at home for long periods. The poll also found that most people would obey a contact-tracing app&#x2019;s recommendation to self-isolate &#x2013; showing the potential utility of an app that relies on voluntary participation. However, the majority did not trust the government to keep their data safe, and almost half were sceptical about the ability of such an app to limit the spread of coronavirus.</p>
+<p>This paper is part of a set of studies conducted by a multidisciplinary team of researchers who argue that contact tracing alone is unlikely to contain a high-prevalence, contagious disease such as COVID-19. It builds on the work most recently of (<xref ref-type="bibr" rid="c16">Fenton, et al., 2020</xref>), which describes details of a Bayesian model to compute the probability that an individual has COVID-19 &#x2013; whether symptomatic or asymptomatic &#x2013; or is likely to catch it. The model presented here expands substantially on that web of relevant risk factors, bringing in ethnicity, religion, occupation and housing conditions, and refining other factors such as age, obesity and underlying medical conditions. It also incorporates concurrent work on an extended set of symptoms described in (<xref ref-type="bibr" rid="c6">Butcher, 2020</xref>).</p>
+<p>Results of running the model are consistent with what is known about the prevalence and severity of COVID-19, and the vulnerability of different groups. This demonstrates its ability to predict risks for individuals, even if relatively little is known about them. For example:</p>
+<list list-type="bullet">
+<list-item><p>Entering the observation that someone is Black or non-Chinese Asian results in a raised probability of having severe COVID-19 in the 55-64 age group and an equal probability in every other age group. This is consistent with observed data (<xref ref-type="bibr" rid="c31">Office for National Statistics, 2020</xref>). The opposite is true, however, when comparing ethnic groups without conditioning on age - an interesting paradox that will be discussed below.</p></list-item>
+<list-item><p>Entering the observation that someone is aged under 16 reduces the probability of having severe COVID-19 to virtually zero but raises the probability of having the disease asymptomatically. This is consistent with observed data and an important factor to watch as schools reopen (<xref ref-type="bibr" rid="c8">Centers for Disease Control and Prevention, 2020</xref>). Adding the observation &#x201C;student/pupil&#x201D; raises the probability of eventual COVID-19.</p></list-item>
+<list-item><p>The probability of infection takes precedence over background risks &#x2013; living in an overcrowded household is more dangerous than being obese. This is logical, since nobody can have COVID-19 without becoming infected, no matter what their vulnerabilities. It shows the power of mitigating measures, and cautions against overemphasising personal risks such as obesity or smoking.</p></list-item>
+</list>
+</sec>
+<sec id="s2">
+<label>II.</label>
+<title>CONTEXT AND RELATED WORK</title>
+<p>Countries around the world have introduced contact-tracing apps in attempts to contain a second wave of coronavirus as lockdowns are eased. Contact tracing using mobile technology has become a particular focus during the current epidemic because COVID-19 presents the challenge that the majority of transmission is believed to occur before symptoms of the disease show. This differentiates it from ebola, smallpox or the 2002 SARS-CoV-1, and makes it vital to reduce the time from symptoms appearing in a person to isolation of that person&#x2019;s contacts. Recent studies including (<xref ref-type="bibr" rid="c18">Ferretti, et al., 2020</xref>) and (<xref ref-type="bibr" rid="c25">Kretzschmar, et al., 2020</xref>) suggest that the time from confirmation of a COVID-19 case to quarantining of contacts needs to be under three days to bring the rate of reproduction below 1, thus containing the virus&#x2019;s spread. Such a time frame is generally beyond the capabilities of manual tracers, especially for an epidemic of the current scale. The (<xref ref-type="bibr" rid="c18">Ferretti, et al., 2020</xref>) study, which examined early epidemic data from China, Singapore and the Diamond Princess cruise ship, concluded that near-instantaneous contact tracing via a mobile phone app, in conjunction with other measures, could contain the virus.</p>
+<p>While adoption of mobile contact-tracing apps has been relatively high and has been credited with helping to flatten the curve in some East Asian countries, the same conditions do not apply in much of the West (<xref ref-type="bibr" rid="c23">Huang, et al., 2020</xref>). In China, using a traffic-light health-code system embedded in the extremely popular WeChat and Alipay platforms is practically mandatory for freedom of movement. In South Korea, which swiftly contained the first outbreak (although it is now battling a second), authority had already been given to disease-prevention authorities to override some privacy laws during the 2015 MERS outbreak (<xref ref-type="bibr" rid="c36">Park, et al., 2020</xref>). Crucially, the country also quickly developed large-scale testing infrastructure. In Singapore, the first country to deploy a national coronavirus-tracing app, a wearable token is being rolled out to address weaknesses in the existing mobile-phone technology &#x2013; and has sparked a rare backlash against the government, with accusations it is on the way to becoming a surveillance state (<xref ref-type="bibr" rid="c3">Asher, 2020</xref>).</p>
+<p>Among Western countries, adoption of government-endorsed mobile contract-tracing apps has been relatively high in Australia, Germany and Italy, with rates of around 22&#x0025;, 14&#x0025; and 7&#x0025; respectively by mid-July (<xref ref-type="bibr" rid="c9">Chan, 2020</xref>). But none of these countries can show or is willing to claim the effectiveness of the app in limiting the spread of the virus. And even the countries with the highest adoption are still well below the threshold of 56&#x0025; of the population, or 80&#x0025; of smartphone users, that experts consider the minimum for the technology to have a chance of being effective (<xref rid="c22" ref-type="bibr">Hinch, et al., 2020</xref>). Privacy concerns are largely to blame, along with technical glitches and discomfort with digital technology among some groups, especially older people.</p>
+<p>Some privacy-preserving contact-tracing apps are already on the market or in development. A few stand out:</p>
+<list list-type="bullet">
+<list-item><p>Private Kit: Safe Paths, developed at Massachusetts Institute of Technology. This is an open-source technology that that provides individual users information on their interaction with COVID-19, and allows them to share their location trails with health officials if they test positive for the disease (<xref ref-type="bibr" rid="c39">Rasker, et al., 2020</xref>). The app is available for iOS and Android.</p></list-item>
+<list-item><p>COVID-19 Watch from Stanford University. This is an early-warning system using Bluetooth, which allows an infected person to send an anonymous alert to others they may have infected, if they are also users of the app (<xref ref-type="bibr" rid="c1">Abate, 2020</xref>). It is currently in testing.</p></list-item>
+<list-item><p>CoEpi. This is a community-based epidemiological tool that uses Bluetooth technology and is based on voluntary symptom-sharing, including before confirmed test results (<xref ref-type="bibr" rid="c11">CoEpi, 2020</xref>). It is currently in development.</p></list-item>
+</list>
+<p>All of these apps and proposed apps address privacy concerns, and CoEpi also potentially collapses the time from infection to isolation of a contact by promoting symptom-sharing before test results. They all deal exclusively with infection risks, however, and none incorporates background risk to give a personalised risk assessment in the way that the model presented here does.</p>
+<p>I searched the preprint servers medRxiv, bioRxiv and arXiv as well as Google Scholar and LitCovid for Bayesian approaches to risk assessment and contact tracing. I found several interesting papers on transmission dynamics and mitigation measures such as physical distancing, face masks and eye coverings. An early study of Chinese data formulated an equation to determine personal risk based on age, sex and comorbidities (<xref ref-type="bibr" rid="c7">Caramelo, et al., 2020</xref>). It used a na&#x00EF;ve Bayesian approach, assuming that all the risk variables were independent of one another. An interesting French study modelled individual risk as a potential decision-making aid to relaxing lockdown restrictions on low-risk populations (<xref rid="c15" ref-type="bibr">Evgeniou, et al., 2020</xref>). It used standard statistical and machine-learning methods such as logistic regression and random forest. Another, Italian, paper aimed to develop a personal risk score for infection (<xref rid="c34" ref-type="bibr">Orlando, et al., 2020</xref>). However, it only measured association, not causality, which was evident in its finding that underlying medical conditions could influence the risk of infection. In causal Bayesian terms, this would be a category mistake as the most vulnerable person in the world could not become infected with coronavirus if they did not come into contact with it. I found nothing that used a Bayesian analysis for personal risk prediction and containment, apart from the work on which this project is based (<xref ref-type="bibr" rid="c17">Fenton, et al., 2020</xref>).</p>
+</sec>
+<sec id="s3">
+<label>III.</label>
+<title>METHODOLOGY</title>
+<p>The model presented is a Bayesian Network, a causal probabilistic model that predicts outcomes &#x2013; in this case, current and projected COVID-19 status and severity of disease &#x2013; using a combination of actual observations and expert calculations. It is built on AgenaRisk Bayesian network software. A simplified schema of the network is shown in <xref rid="fig1" ref-type="fig">Fig. 1</xref>, and a more detailed version can be found in the Appendix. The model, named &#x201C;CombinedModelForContactTracing&#x201D; can be accessed using this link <ext-link ext-link-type="uri" xlink:href="http://www.eecs.qmul.ac.uk/~norman/Models/">http://www.eecs.qmul.ac.uk/~norman/Models/</ext-link> and can be run using trial software from agenarisk.com.</p>
+<fig id="fig1" position="float" fig-type="figure">
+<label>Fig. 1.</label>
+<caption><title>A simplified version of the Bayesian network for COVID-19 risk assessment</title></caption>
+<graphic xlink:href="20215814v1_fig1.tif"/>
+</fig>
+<p>The network is initially populated with prior probabilities for the general population &#x2013; e.g., a person in the UK has a 49.4&#x0025; chance of being male, a 23.4&#x0025; chance of being obese and a 16&#x0025; chance of being a smoker. Together with other factors including infection opportunities, and immunity possibility, these resulted in a 0.2&#x0025; chance of eventually having COVID-19, at the time of writing.</p>
+<p>Bayesian networks are known to be able to solve problems that traditional statistics cannot, notably cases of confounders and colliders &#x2013; in which associated variables are causally related only through a common cause or a common effect. A Bayesian approach is well-suited for the current situation, in which it is crucial to understand the relationships of multiple dependent variables, and where observational data have to be gleaned opportunistically as controlled experimentation is impossible.</p>
+<p>Prime examples of confounding variables surround the issue of ethnicity. Several large studies including (<xref ref-type="bibr" rid="c43">The OpenSAFELY Collaborative, 2020</xref>) and (<xref ref-type="bibr" rid="c32">Office for National Statistics, 2020</xref>) found a significantly higher risk of death from COVID-19 among Black or South Asian people than among White people. But by looking only at association or correlation, their methods were by definition unable to discover the mechanisms by which this occurred. Even after it said it had adjusted for age, region, population density, area deprivation, household composition, socio-economic position, education, household tenure, multigenerational households and occupation, the ONS still found that Black males had twice the risk of White males, which it found to be &#x201C;unexplained&#x201D;.</p>
+<p>In the Bayesian network presented here, it can be clearly seen that the relationship between ethnicity and COVID-19 death is in fact confounded by multiple variables: Black and South Asian people are more likely to be frontline healthcare workers, live in overcrowded households or have sickle cell disease, for example, than White people. The healthcare worker case is illustrated in <xref rid="fig2" ref-type="fig">Fig. 2</xref>. All of these are factors that increase the risk of catching COVID-19 or may lead to a more severe form of the disease. They confound the relationship between ethnicity and COVID-19 outcomes.</p>
+<fig id="fig2" position="float" fig-type="figure">
+<label>Fig. 2.</label>
+<caption><p>The variable &#x201C;frontline healthcare worker&#x201D; confounds the relationship between ethnicity and COVID-19 outcome</p></caption>
+<graphic xlink:href="20215814v1_fig2.tif"/>
+</fig>
+<p>Potential collider variables are also abundant in the current COVID-19 situation because of the nature of the studies that have been carried out. Observational data cannot be randomly sampled and controlled experiments cannot be done so almost all the data available come from hospital populations, individuals who have been tested or people voluntarily taking part in studies. These are not representative of the population: hospital patients are already frail, tested individuals are already exposed or symptomatic, and voluntary participants may tend to be health-conscious, well-educated, tech-savvy or hypochondriac. As such, any study conducted on one of these populations is already conditioned on a collider variable such as &#x201C;frail&#x201D;, &#x201C;vulnerable&#x201D; (e.g. frontline healthcare worker) or &#x201C;tech-savvy&#x201D; (i.e. likely to be younger). A UK government community infection pilot study (<xref ref-type="bibr" rid="c33">Office for National Statistics, 2020</xref>), which conducts regular tests on a large number of randomly selected participants, is beginning to redress this situation to some extent.</p>
+<p>Observing associations between other factors in such pre-selected conditions can result in misleading conclusions. Many of the underlying medical conditions associated with more severe COVID-19 may bear no causal relation to severity of COVID-19 but simply have been observed in hospitalized patients with severe COVID-19 because those conditions make them more likely to be hospitalised in the first place. For example, it is not completely clear how heart disease may influence COVID-19 outcome, but by conditioning studies on the collider variable &#x201C;hospitalised&#x201D; we are confining our observations to a population already more likely to have heart disease or a whole range of other co-morbidities, and ignoring people who have those conditions combined with mild COVID-19 but remain out of hospital. In this way, an exaggerated or even a false association can appear between the variables &#x201C;heart disease&#x201D; and &#x201C;severe COVID-19&#x201D;, as seen in <xref rid="fig3" ref-type="fig">Fig. 3</xref>. The U.S. Centers for Disease Control and Prevention has noted that only 6&#x0025; of the COVID-19 deaths so far have mentioned COVID-19 as the sole cause of death (<xref ref-type="bibr" rid="c28">National Center for Health Statistics, 2020</xref>).</p>
+<fig id="fig3" position="float" fig-type="figure">
+<label>Fig. 3.</label>
+<caption><p>Heart disease and severe COVID-19 collide on the variable &#x201C;hospitalization&#x201D;</p></caption>
+<graphic xlink:href="20215814v1_fig3.tif"/>
+</fig>
+<p>In the current version of the model, I have included the underlying medical conditions that best expert advice considers linked with higher risk of severe COVID-19 because of a lack of further evidence to causally explain them or explain them away. But the list has changed many times during the making of the model and may change again.</p>
+<p>It is worth noting that even though male sex is widely observed and accepted as being associated with higher risk, this has not yet been convincingly explained in a causal way and may yet turn out to be a relationship that is confounded by other factors. It has been suggested that the hormone oestrogen (which men have in smaller amounts) is a protective factor. A new study argues that females may mount a more robust immune response than males, even in older age (<xref rid="c42" ref-type="bibr">Takahashi, et al., 2020</xref>). But research is still at an early stage. Again, a Bayesian model can easily adapt to new knowledge, for example by creating a new node &#x201C;oestrogen level&#x201D; and drawing edges connecting this to both males and females, with different prior probabilities.</p>
+</sec>
+<sec id="s4">
+<label>IV.</label>
+<title>MODEL ARCHITECTURE</title>
+<p>The Bayesian network is an acyclic directed graph that consists of probability nodes connected by edges representing conditional dependencies. Inside each probability node is a probability table. Some of these are simple, e.g. for sex or for age, which are not conditioned on any other factors &#x2013; the nodes have no &#x201C;parents&#x201D; &#x2013; as seen in <xref rid="fig4" ref-type="fig">Fig. 4</xref>. In other cases, they are more complex, e.g. the diabetes node probability table is conditioned on underlying medical condition and ethnicity &#x2013; as seen in <xref rid="fig5" ref-type="fig">Fig. 5</xref>.</p>
+<fig id="fig4" position="float" fig-type="figure">
+<label>Fig. 4.</label>
+<caption><title>Node probability table for &#x201C;sex&#x201D;</title></caption>
+<graphic xlink:href="20215814v1_fig4.tif"/>
+</fig>
+<fig id="fig5" position="float" fig-type="figure">
+<label>Fig. 5.</label>
+<caption><title>Node probability table for &#x201C;diabetes&#x201D;</title></caption>
+<graphic xlink:href="20215814v1_fig5.tif"/>
+</fig>
+<p>The structure of the network, inherited from (<xref ref-type="bibr" rid="c16">Fenton, et al., 2020</xref>), consists of four main areas that feed into the calculation of probability of COVID-19: background risk factors, infection possibility, immunity possibility, and symptoms. I developed the areas of background risk factors and infection possibility. My colleague Rachel Butcher developed the symptoms area.</p>
+<p>Entering an observation in any of the nodes will change the probabilities of all the variables that are connected to it, whether in the direction of influence or by backward inference. For example, entering an observation that a person is aged 75 or older will raise the probability of currently having severe COVID-19 from 0.01&#x0025; to 0.02&#x0025; and of eventual severe COVID-19 from 0.03&#x0025; to 0.06&#x0025;. But it will also raise the probability of being White from 84.8&#x0025; to 95.9&#x0025; (because White people live longer), it will raise the probability of being Christian from 58.7&#x0025; to 62.6&#x0025; (because more White people are Christian) and it will decrease the probability of being morbidly obese from 2.8&#x0025; to 1.5&#x0025; (because some of the morbidly obese will have died by that age, and elderly people tend to eat less). As many facts as are known can be entered - the more observations, the more accurate the prediction.</p>
+<p>A few of these nodes and how their probability tables were arrived at will be discussed below. Details of all the node probability tables that I developed are in the Appendix, along with their data sources.</p>
+<sec id="s4a">
+<label>A.</label>
+<title>Background risk factors</title>
+<p>At the time of writing, there was broad consensus that age, sex, obesity and certain underlying medical conditions were important risk factors for developing more severe forms or dying of COVID-19 (<xref rid="c44" ref-type="bibr">Verity, et al., 2020</xref>) (<xref rid="c20" ref-type="bibr">Gebhard, et al., 2020</xref>) (<xref rid="c37" ref-type="bibr">Petrakis, et al., 2020</xref>) (<xref rid="c10" ref-type="bibr">Clark, et al., 2020</xref>) (<xref rid="c4" ref-type="bibr">Blackshaw, et al., 2020</xref>). The main difficulty arose in how to represent the interplay of the various factors, given that age, sex and obesity were themselves interrelated and in addition could all influence the probability of underlying medical conditions. It would be impossible to give accurate probabilities for each combination of these (e.g. probability of having an underlying medical condition for an overweight woman aged 35-54, and then the probability of an underlying medical condition for that same woman if she were normal/underweight, obese or morbidly obese, and so on). In fact, for seven age categories, two sex categories and four obesity categories there would be 56 combinations of factors that could each lead to a high, medium or low probability of having an underlying medical condition. Clearly, it would be over-engineering the model to give a value to each of these.</p>
+<p>Instead, I drew links between nodes where I did have accurate figures. For example, there were reliable data for obesity by age group and sex so I made age and sex parent nodes of obesity. I made particular underlying medical conditions child nodes of the general underlying medical conditions node, with age, obesity and sex as parent nodes of those individual conditions where their influence was known to be strong.</p>
+<p>To capture the complexity of the influence of ethnicity on COVID-19 risk, the node &#x201C;ethnicity&#x201D; was placed outside the background factors section of the model as a parent of other factors such as age, underlying medical condition and overcrowded housing (an infection factor).</p>
+<p>Despite a flurry of excitement around a French study released in June that proposed smoking may have a protective effect against developing COVID-19 symptoms (<xref rid="c27" ref-type="bibr">Miyara, et al., 2020</xref>), this was soon dismissed by expert consensus, and the direct effects of smoking on COVID-19, if any, are still unknown (<xref ref-type="bibr" rid="c46">Zyl-Smit, et al., 2020</xref>) (<xref ref-type="bibr" rid="c16">Fenton, 2020</xref>). Smoking was therefore included in the model as a parent node of &#x201C;underlying medical condition&#x201D; and also of chronic obstructive pulmonary disease (COPD).</p>
+</sec>
+<sec id="s4b">
+<label>B.</label>
+<title>Infection possibility</title>
+<p>Occupation was the single most important factor in determining the probability of exposure to the virus, with frontline healthcare workers clearly the most exposed. South Asian and Black people are overrepresented in the UK&#x2019;s National Health Service and therefore especially in early COVID-19 deaths, when personal protective equipment (PPE) was scarce.</p>
+<p>Living in multi-generational households is also a risk factor, especially in cases where a middle generation goes out to work and lives with elderly relatives and with children who may socialise more outside the home. This is more common in South Asian communities but is also becoming generally more popular as elderly people move in with their children, while adult offspring move back or stay in their parental home for economic reasons. I drew a link from ethnicity to overcrowded household, as data exist for overcrowding by ethnicity. I also drew a link from religion to overcrowded household, mainly to account for the large multi-generational households of Britain&#x2019;s strictly Orthodox Haredi population, which was not captured by ethnicity (<xref ref-type="bibr" rid="c24">Judah, 2020</xref>).</p>
+</sec>
+</sec>
+<sec id="s5">
+<label>V.</label>
+<title>SELECTED PROBABILITY NODES</title>
+<sec id="s5a">
+<label>A.</label>
+<title>Ethnicity</title>
+<p>The modelling of ethnicity was one of the most complex parts of building the network. A whirlwind of media and statistical reports was published in Britain and the United States regarding the higher vulnerability of non-White ethnic groups to severe COVID-19 symptoms, hospitalisation and death in the wake of the killing of George Floyd and subsequent surge in support for the Black Lives Matter movement that occurred while I was working on the model. No substantial evidence has as yet emerged of genetic factors that would explain a racial bias in the spread of the disease. Genomics England and the University of Edinburgh have launched a nationwide study to understand how a person&#x2019;s genetic makeup could influence how they react to the virus. (<xref ref-type="bibr" rid="c21">Genomics England, 2020</xref>). This is still in progress.</p>
+<p>The media and political storm did cause a lot of data to be published analysing COVID-19 statistics by ethnicity, which was very useful in the building of this model. Therefore, I was able to represent the relationship between ethnicity and severity of COVID-19 risks with some accuracy through a greater tendency of ethnic minorities in the UK to live in overcrowded housing, suffer from certain health conditions such as diabetes, and work on the healthcare frontline. I have reproduced below a visualization of the complexity of the situation by (Pareek, et al., 2020) in <xref rid="fig6" ref-type="fig">Fig. 6</xref>.</p>
+<fig id="fig6" position="float" fig-type="figure">
+<label>Fig. 6.</label>
+<caption><p>The potential interaction of ethnicity-related factors on SARS-CoV-2 infection likelihood and COVID-19 outcomes (<xref rid="c35" ref-type="bibr">Pareek, et al., 2020</xref>)</p></caption>
+<graphic xlink:href="20215814v1_fig6.tif"/>
+</fig>
+<p>Even with only a few of these important factors captured, the model is capable of assessing that a White, female nurse of normal weight living in shared accommodation is at higher risk than a Black, obese male office clerk working from home, where he lives with his nuclear family &#x2013; even though being Black and obese may overall be likely to make for higher risk in the absence of other knowledge. A fragment of the model showing the edges connecting ethnicity to other nodes is shown in <xref rid="fig7" ref-type="fig">Fig. 7</xref>. Note that some of these factors &#x2013; short lifespan, overcrowded household, risky occupation &#x2013; allow for interventions to make matters more equitable. Ethnicity is of course not a variable that can be changed.</p>
+<fig id="fig7" position="float" fig-type="figure">
+<label>Fig. 7.</label>
+<caption><title>Model fragment &#x201C;ethnicity&#x201D;</title></caption>
+<graphic xlink:href="20215814v1_fig7.tif"/>
+</fig>
+<p>The connection between age and ethnicity is an important one. It explains the paradoxical situation that Black and non-Chinese Asian people have a lower risk of developing severe COVID-19 when considered as whole populations &#x2013; in apparent contradiction of the news headlines &#x2013; but they do have an equal or increased risk when considered age group by age group. This is an example of Simpson&#x2019;s Paradox, in which a characteristic of a larger group can disappear or be reversed when considering subgroups one by one. The situation is summarized in <xref rid="tbl1" ref-type="table">Table 1</xref>.</p>
+<table-wrap id="tbl1" orientation="portrait" position="float">
+<label>TABLE 1.</label>
+<caption><title>PROBABILITY OF EVENTUAL SEVERE COVID-19 ILLNESS BY ETHNICITY AND AGE</title></caption>
+<graphic xlink:href="20215814v1_tbl1.tif"/>
+</table-wrap>
+<p>The reason for this is simply that White people, who make up the majority of the UK&#x2019;s population, tend to live longer than other ethnic groups. Age is also the single most important determinant of COVID-19 severity. Taken overall, the UK&#x2019;s Black and non-Chinese Asian populations are relatively young, with only a small proportion living long enough to fall into higher-risk age categories. Considering the sub-categories of age group rather than the whole population is therefore the right way to analyse the situation, comparing like with like. This is a good validation of the model. The effect is similar but more pronounced in the United States, where infection rates are still significantly higher than in Britain (<xref ref-type="bibr" rid="c26">Mackenzie, 2020</xref>).</p>
+</sec>
+<sec id="s5b">
+<label>B.</label>
+<title>Obesity</title>
+<p>Certain underlying medical conditions are widely believed by experts to contribute to the risk of developing more severe COVID-19 symptoms or dying of the disease. Some large-cohort studies of hospital patients have analysed factors associated with COVID-19 death (<xref ref-type="bibr" rid="c43">The OpenSAFELY Collaborative, 2020</xref>) (<xref ref-type="bibr" rid="c14">Emami, et al., 2020</xref>) (<xref rid="c12" ref-type="bibr">Docherty, et al., 2020</xref>). These are observational studies and, as such, do not establish causal relationships. Nonetheless, they represent best expert opinion at the time of writing. Many experts believe that, broadly, underlying medical conditions weaken the immune system and thus limit the body&#x2019;s ability to fight off infection or illness.</p>
+<p>One such condition is obesity, and in late July the UK government launched a campaign to fight it, arguing that people could make themselves less vulnerable to a second wave of coronavirus by losing weight. Public Health England published a long report on the topic, which synthesised a large amount of useful information but was flawed in many ways. For example, it argued:</p>
+<p>&#x201C;Evidence suggests excess weight is associated with an increased risk of the following for COVID-19: a positive test, hospitalisation, advanced levels of treatment (including mechanical ventilation or admission to intensive or critical care) and death.&#x201D; (<xref rid="c4" ref-type="bibr">Blackshaw, et al., 2020</xref>)</p>
+<p>It is unclear why it would be worth noting that excess weight is associated with a positive test since, as the report itself acknowledges, obesity does not increase the chance of infection. Secondly, the report highlighted the fact that 31.3&#x0025; of patients critically ill in intensive care units (ICUs) were obese, with a body mass index (BMI) of 30 or over, compared with 28.9&#x0025; of the population, while 7.9&#x0025; were morbidly obese, with a BMI of 40 or over, compared with 2.9&#x0025; of the general population. Both were adjusted for age and sex in unspecified ways. Aside from the fact that the difference in the case of simple obesity is very small, this gives a misleading impression of the risks of obesity when reading the results in the causal direction &#x2013; from obesity to intensive care. In my model, entering the observation &#x201C;severe&#x201D; in the &#x201C;current COVID status&#x201D; node also raises the probabilities of being morbidly obese or obese, as seen in <xref rid="tbl2" ref-type="table">Table 2</xref>. (The data used differ slightly from those in the PHE report.)</p>
+<table-wrap id="tbl2" orientation="portrait" position="float">
+<label>TABLE 2.</label>
+<caption><title>PROBABILITY OF OBESITY GIVEN SEVERE COVID-19</title></caption>
+<graphic xlink:href="20215814v1_tbl2.tif"/>
+</table-wrap>
+<p>However, reading the data in the direction of influence by clearing the observation &#x201C;severe COVID-19&#x201D; and observing obesity and morbid obesity in turn has no perceptible effect on COVID-19 status measured to two decimal places, as seen in <xref rid="tbl3" ref-type="table">Table 3</xref>.</p>
+<table-wrap id="tbl3" orientation="portrait" position="float">
+<label>TABLE 3.</label>
+<caption><title>PROBABILITY OF EVENTUAL COVID-19 GIVEN OBESITY</title></caption>
+<graphic xlink:href="20215814v1_tbl3.tif"/>
+</table-wrap>
+<p>This shows that backward inference is not a guide to effectiveness of intervention and, while losing weight is certainly good health advice for many people, an anti-obesity drive may be a waste of public time and money as a measure to fight the effects of any second coronavirus wave.</p>
+<p>I included obesity in the model as a parent of &#x201C;underlying medical condition&#x201D; as, like smoking, it is a predictor of several conditions. I did not include it as a parent of &#x201C;risk factors&#x201D; in its own right.</p>
+</sec>
+<sec id="s5c">
+<label>C.</label>
+<title>Occupation</title>
+<p>Occupation is a key determinant of exposure to coronavirus. Frontline healthcare workers are at significantly higher risk because they are exposed to many people, and those people are far more likely than the general population to be ill with COVID-19. Other essential workers who have contact with others at work or who have to travel to their place of work on public transport are also significantly more exposed than the general population. The UK&#x2019;s Office for National Statistics has analysed occupations with the highest potential exposure (<xref ref-type="bibr" rid="c30">Office for National Statistics, 2020</xref>). In some cases, numbers are small and so this is a work in progress. Risky occupations outside healthcare included bus drivers, care home workers and home carers, security guards, primary and nursery teachers, police officers, opticians and pharmacists, plumbers, vets and undertakers. I included students/pupils as an occupational category in their own right, as COVID-19 outbreaks began to appear on campuses and in schools at the start of the new academic term.</p>
+<p>It is envisaged that users of the app would have a multiple-choice question about their occupation, which would yield a high, low or medium risk category. The actual list of risky occupations could be adjusted as more research became available.</p>
+<p>The ONS analysed those employed in these areas by sex and ethnicity. Some occupations were skewed towards women (carers and teachers), some towards South Asians (pharmacists and opticians) and some towards white males (police officers and plumbers). Overall, there seemed no great imbalance in the chances of belonging to one of these medium-risk occupational groups so I did not consider ethnicity or sex as parents of those.</p>
+<p>I did, however, do so for frontline health workers, using data from the NHS, which has critical mass with 1.24 million employees, making it the biggest employer in the UK, and where Black and south Asian employees are overrepresented.</p>
+</sec>
+</sec>
+<sec id="s6">
+<label>VI.</label>
+<title>SCENARIOS</title>
+<p>A few fictional cases illustrate the power of this model over simple contact-tracing exposure models, and also its ability to give a risk assessment far more useful to individuals than the general government guidance.</p>
+<sec id="s6a">
+<label>A.</label>
+<title>The unemployed White male</title>
+<p>Fred is a 55-year-old unemployed White man. He is obese and he smokes but he has no known medical conditions. He lives alone and has minimal interactions with people outside the home. He describes his religion as &#x201C;none&#x201D;. He has not knowingly had any contact with people with COVID-19 or COVID-19 symptoms. He worries about his weight and his smoking but in fact, the model predicts, his risk of eventual severe COVID-19 is lower than average and he is strongly predicted not to get COVID-19 at all, with a probability of 99.85&#x0025;.</p>
+</sec>
+<sec id="s6b">
+<label>B.</label>
+<title>The retired female country-dweller</title>
+<p>Katie is a 79-year-old, white, retired lawyer. She has a touch of Parkinson&#x2019;s Disease but is of a healthy weight and has never smoked. She lives in a small village with her husband and has had minimal contact with other people since the lockdown. She is Catholic and goes once a week to church, where she socially distances. Katie is worried about her vulnerability, mainly because of her age, and follows government advice to shield at home, not even venturing out for walks. The model calculates her probability of eventual severe COVID-19 if she gets it as above average at 0.07&#x0025;, but also a 99.85&#x0025; chance she will not become infected at all.</p>
+</sec>
+<sec id="s6c">
+<label>C.</label>
+<title>The urban Asian bus driver</title>
+<p>Rajiv is a 35-year-old London bus driver of Indian origin. He is a fitness enthusiast and takes care to maintain a healthy weight. Despite that, he has type 1 diabetes. He gave up smoking last year. Rajiv does not observe any religion, and he lives in a comfortable home with no overcrowding. He takes care not to mix with other people too much outside of work, and he feels confident he will not become too ill even if he does catch COVID-19 because of his youth and his commitment to fitness. The model predicts his probability of eventually contracting severe COVID-19 at 0.04&#x0025;, slightly higher than that of the general population. He is more likely than the average person to contract some degree of COVID-19, with a 99.73&#x0025; chance of not contracting it at all.</p>
+</sec>
+<sec id="s6d">
+<label>D.</label>
+<title>The African hospital orderly</title>
+<p>Victor is a 29-year-old Oxford hospital orderly, Black, of Ghanaian origin. His weight is normal, he has never smoked and has no known medical conditions. He goes regularly to an evangelical church but otherwise avoids other people at the moment, although he has to use public transport to travel to work. He lives with a flatmate who works from home. He has been in contact with patients with COVID-19 symptoms at work although he does not work in a COVID-19 ward and has not knowingly been in close contact with a confirmed COVID-19 patient. The model predicts a 0.2&#x0025; chance of severe COVID-19 &#x2013; 10 times that of the general population - and only an 97.64&#x0025; chance of not contracting the disease at all.</p>
+</sec>
+<sec id="s6e">
+<label>E.</label>
+<title>The Chinese schoolgirl</title>
+<p>Yun Chee is an 11-year-old Chinese schoolgirl living in London. She is of normal weight, has no underlying medical conditions, and is not religious. She had only been to school a few times in the past months until her school reopened in September. She has also started going on playdates and sleepovers with her friends. She lives in a small house with her parents and grandparents, with one bathroom and one kitchen. Yun Chee has a lower-than-average probability of 0.01&#x0025; of contracting severe COVID-19, the model predicts, but almost double the average probability of eventually having it asymptomatically, at 0.13&#x0025;. This is a risk that should be monitored closely and may need to be adjusted according to observational data as schools remain open.</p>
+</sec>
+</sec>
+<sec id="s7">
+<label>VII.</label>
+<title>CONCLUSION</title>
+<p>A Bayesian network such as the one presented here could be a powerful tool for evaluating individual risk as countries around the world seek to lift lockdown measures without releasing a second wave of coronavirus. It is more nuanced than current health advice and more comprehensive than other privacy-preserving contact-tracing apps that have been proposed. Its efficacy does depend on a sense of social responsibility but it can also help breed that responsibility by heightening risk awareness.</p>
+<p>Testing the network presents several challenges, and mainly consists of running numerous scenarios to validate the model against what data there is:</p>
+<list list-type="bullet">
+<list-item><p>There are as yet very few general-population studies of COVID-19, meaning that almost all the knowledge we have so far is based on hospital patients.</p></list-item>
+<list-item><p>The studies that do exist are observational, not experimental.</p></list-item>
+<list-item><p>Little is known about how many people have COVID-19 without symptoms, as has been noted in (<xref ref-type="bibr" rid="c29">Neil, et al., 2020</xref>).</p></list-item>
+<list-item><p>As soon as an observation is entered into the model, it no longer represents general population data.</p></list-item>
+</list>
+<p>However, the first three of these problems are relevant for any predictive model. In the circumstances, a causal probabilistic model that uses expert knowledge is likely to be a better tool than other types of statistical analysis.</p>
+<p>There are a few studies emerging that, while still not general-population surveys, do include people who are not ill or infected and provide valuable material for cross-checking probabilities. One such example is (<xref rid="c38" ref-type="bibr">Poletti, et al., 2020</xref>), a study of 64,252 close contacts of 21,410 COVID-19 cases in Lombardy, Italy who were tested between February and April 2020. This study was aimed at discovering the probability of developing symptoms given infection, and was conditioned on age and sex. As testing becomes more prevalent and more such studies are possible, the Bayesian model can be further adjusted to reflect the latest state of knowledge.</p>
+</sec>
+<sec id="s8">
+<label>VIII.</label>
+<title>FUTURE WORK</title>
+<p>The revised complete BN model, which includes both the extended background risks and infection possibility described in this report together with the extended set of symptoms described in (<xref ref-type="bibr" rid="c6">Butcher 2020</xref>), can be seen in the Appendix.</p>
+<p>More work needs to be done on immunity possibility, test types and results, and prevalence and infectiousness of asymptomatic and pre-symptomatic COVID-19 as more evidence becomes available. In general, the model needs to be constantly updated to keep up with the fast-developing state of scientific knowledge.</p>
+<p>The power of the Bayesian model could be more explicitly leveraged by including interventions such as &#x201C;go to school&#x201D;, &#x201C;wear a mask&#x201D; or &#x201C;take public transport&#x201D;.</p>
+<p>If the network were to be used for policy-making rather than personal risk assessment, counterfactuals such as &#x201C;close international borders&#x201D;, &#x201C;shut down pubs&#x201D; or &#x201C;postpone exams&#x201D; could be added, taking advantage of another characteristic of Bayesian networks. Utility nodes could also be added - for example, to model the positive utility of recommencing education against the negative utility of increasing infection risks.</p>
+</sec>
+</body>
+<back>
+<sec sec-type="data-availability">
+<title>Data Availability</title>
+<p>Links to all data sources are provided in the document.</p>
+<p>
+<ext-link ext-link-type="uri" xlink:href="http://www.eecs.qmul.ac.uk/~norman/Models/">http://www.eecs.qmul.ac.uk/~norman/Models/</ext-link>
+</p>
+</sec>
+<ref-list>
+<title>R<sc>eferences</sc></title>
+<ref id="c1"><mixed-citation publication-type="other"><string-name><surname>Abate</surname>, <given-names>T.</given-names></string-name>, <year>2020</year>. <source>Stanford researchers help develop privacy-focused coronavirus alert app. Stanford(California): s.n</source>.</mixed-citation></ref>
+<ref id="c2"><mixed-citation publication-type="other"><string-name><surname>Allington</surname>, <given-names>D.</given-names></string-name> <etal>et al.</etal>, <year>2020</year>. <article-title>Getting used to life under lockdown?</article-title> <source>Coronavirus in the UK, London: s.n</source>.</mixed-citation></ref>
+<ref id="c3"><mixed-citation publication-type="website"><string-name><surname>Asher</surname>, <given-names>S.</given-names></string-name>, <year>2020</year>. <source>Coronavirus: Why Singapore turned to wearable contact-tracing tech. [Online] Available at</source>: <ext-link ext-link-type="uri" xlink:href="https://www.bbc.co.uk/news/technology-53146360">https://www.bbc.co.uk/news/technology-53146360</ext-link> [Accessed <date-in-citation content-type="access-date">8 August 2020</date-in-citation>].</mixed-citation></ref>
+<ref id="c4"><mixed-citation publication-type="other"><string-name><surname>Blackshaw</surname>, <given-names>J.</given-names></string-name> <etal>et al.</etal>, <year>2020</year>. <source>Excess Weight and COVID-19 Insights from new evidence, London: s.n</source>.</mixed-citation></ref>
+<ref id="c5"><mixed-citation publication-type="website"><collab>British Medical Association</collab>, <year>2020</year>. <source>British Medical Association. [Online] Available at</source>: <ext-link ext-link-type="uri" xlink:href="https://www.bma.org.uk/bma-media-centre/bma-calls-for-tangible-and-urgent-action-in-response-to-public-health-england-s-latest-review-into-covid-19-impact-on-bame-communities">https://www.bma.org.uk/bma-media-centre/bma-calls-for-tangible-and-urgent-action-in-response-to-public-health-england-s-latest-review-into-covid-19-impact-on-bame-communities</ext-link> [Accessed <date-in-citation content-type="access-date">9 August 2020</date-in-citation>].</mixed-citation></ref>
+<ref id="c6"><mixed-citation publication-type="other"><string-name><surname>Butcher</surname> <given-names>R.</given-names></string-name> <year>2020</year>. <article-title>Extending the range of symptoms in a Bayesian Network for the Predictive Diagnosis of COVID-19</article-title>, <source>Queen Mary University of London prep-print</source></mixed-citation></ref>
+<ref id="c7"><mixed-citation publication-type="other"><string-name><surname>Caramelo</surname>, <given-names>F.</given-names></string-name>, <string-name><surname>Ferreira</surname>, <given-names>N.</given-names></string-name> &#x0026; <string-name><surname>Oliveiros</surname>, <given-names>B.</given-names></string-name>, <year>2020</year>. <source>Estimation of risk factors for COVID-19 mortality - preliminary results. s.l.:s.n</source>.</mixed-citation></ref>
+<ref id="c8"><mixed-citation publication-type="website"><collab>Centers for Disease Control and Prevention</collab>, <year>2020</year>. <source>Care for Children. [Online]</source> Available at: https://www.cdc.gov/coronavirus/2019-ncov/hcp/pediatric-hcp.html#:~:text=A%20recent%20systematic%20review%20estimated,of%20pediatric%20infections%20are%20asymptomatic. [Accessed <date-in-citation content-type="access-date">21 August 2020</date-in-citation>].</mixed-citation></ref>
+<ref id="c9"><mixed-citation publication-type="website"><string-name><surname>Chan</surname>, <given-names>S.</given-names></string-name>, <year>2020</year>. <source>COVID-19 Contact Tracing Apps Reach 9&#x0025; Adoption In Most Populous Countries. [Online]</source> Available at: <ext-link ext-link-type="uri" xlink:href="https://sensortower.com/blog/contact-tracing-app-adoption">https://sensortower.com/blog/contact-tracing-app-adoption</ext-link> [Accessed <date-in-citation content-type="access-date">21 August 2020</date-in-citation>].</mixed-citation></ref>
+<ref id="c10"><mixed-citation publication-type="journal"><string-name><surname>Clark</surname>, <given-names>A.</given-names></string-name> <etal>et al.</etal>, <year>2020</year>. <article-title>Global, regional and national estimates of the population at increased risk of severe COVID-19 due to underlying health conditions in 2020: a modelling study</article-title>. <source>The Lancet</source>, <volume>8</volume>(<issue>8</issue>), pp. <fpage>E1003</fpage>-<lpage>E1017</lpage>.</mixed-citation></ref>
+<ref id="c11"><mixed-citation publication-type="website"><collab>CoEpi</collab>, <year>2020</year>. <source>CoEpi: Community Epidemiology in Action. [Online]</source>Available at: <ext-link ext-link-type="uri" xlink:href="https://www.coepi.org/">https://www.coepi.org/</ext-link> [Accessed <date-in-citation content-type="access-date">21 August 2020</date-in-citation>].</mixed-citation></ref>
+<ref id="c12"><mixed-citation publication-type="journal"><string-name><surname>Docherty</surname>, <given-names>A. B.</given-names></string-name> <etal>et al.</etal>, <year>2020</year>. <article-title>Features of 20 133 patients in hospital with covid-19 using the ISARIC WHO Clinical Characterisation Protocol: prospective observational cohort study</article-title>. <source>The BMJ</source>, <volume>22</volume> <month>May</month>.</mixed-citation></ref>
+<ref id="c13"><mixed-citation publication-type="journal"><string-name><surname>Dryhurst</surname>, <given-names>S.</given-names></string-name> <etal>et al.</etal>, <year>2020</year>. <article-title>Risk perceptions of COVID-19 around the world</article-title>. <source>Journal of Risk Research</source>, <volume>5 May</volume>.</mixed-citation></ref>
+<ref id="c14"><mixed-citation publication-type="journal"><string-name><surname>Emami</surname>, <given-names>A.</given-names></string-name>, <string-name><surname>Jayanmardi</surname>, <given-names>F.</given-names></string-name>, <string-name><surname>Pirbonyeh</surname>, <given-names>N.</given-names></string-name> &#x0026; <string-name><surname>Akbari</surname>, <given-names>A.</given-names></string-name>, <year>2020</year>. <article-title>Prevalence of Underlying Diseases in Hospitalized Patients with COVID-19: a Systematic Review and Meta-Analysis</article-title>. <source>Archives of Academic Emergency Medicine</source>, <volume>24</volume> <month>March</month>.</mixed-citation></ref>
+<ref id="c15"><mixed-citation publication-type="other"><string-name><surname>Evgeniou</surname>, <given-names>T.</given-names></string-name> <etal>et al.</etal>, <year>2020</year>. <source>Presonalised COVID-19 Isolation and Exit Policies Using Clinical Risk Predictions. s.l.:s.n</source>.</mixed-citation></ref>
+<ref id="c16"><mixed-citation publication-type="other"><string-name><surname>Fenton</surname>, <given-names>N.</given-names></string-name>, <year>2020</year>. <article-title>A note on &#x2018;Collider bias undermines our understanding of COVID-19 disease risk and severity&#x2019; and how causal Bayesian networks both expose and resolve the problem</article-title>, <source>London: arXiv</source>.</mixed-citation></ref>
+<ref id="c17"><mixed-citation publication-type="other"><string-name><surname>Fenton</surname>, <given-names>N. E.</given-names></string-name> <etal>et al.</etal>, <year>2020</year>. <article-title>A privacy-preserving Bayesian network model for personalised COVID19 risk assessment and contact tracing</article-title>. <source>London: medRxiv</source>.</mixed-citation></ref>
+<ref id="c18"><mixed-citation publication-type="journal"><string-name><surname>Ferretti</surname>, <given-names>L.</given-names></string-name> <etal>et al.</etal>, <year>2020</year>. <article-title>Quantifying SARS-CoV-2 transmission suggests epidemic control with digital contact tracing</article-title>. <source>Science, 8 May</source>.<volume>368</volume>(6491).</mixed-citation></ref>
+<ref id="c19"><mixed-citation publication-type="journal"><string-name><surname>Funk</surname>, <given-names>S.</given-names></string-name>, <string-name><surname>Gilad</surname>, <given-names>E.</given-names></string-name>, <string-name><surname>Watkins</surname>, <given-names>C.</given-names></string-name> &#x0026; <string-name><surname>Jansen</surname>, <given-names>V. A. A.</given-names></string-name>, <year>2009</year>. <source>The spread of awareness and its impact on epidemic outbreaks. Proceedings of the National Academy of Sciences of the United States of America, 21 April</source>, <volume>106</volume>(<issue>16</issue>), pp. <fpage>6782</fpage>-<lpage>6877</lpage>.</mixed-citation></ref>
+<ref id="c20"><mixed-citation publication-type="journal"><string-name><surname>Gebhard</surname>, <given-names>C.</given-names></string-name> <etal>et al.</etal>, <year>2020</year>. <article-title>Impact of sex and gender on COVID-19 outcomes in Europe</article-title>. <source>Biology of Sex Differences, 25 May</source>.Volume <volume>11</volume>.</mixed-citation></ref>
+<ref id="c21"><mixed-citation publication-type="website"><collab>Genomics England</collab>, <year>2020</year>. <source>Genomics England. [Online]</source> Available at: <ext-link ext-link-type="uri" xlink:href="https://www.genomicsengland.co.uk/genomics-england-genomicc-nhs-covid-19/">https://www.genomicsengland.co.uk/genomics-england-genomicc-nhs-covid-19/</ext-link> [Accessed <date-in-citation content-type="access-date">9 August 2020</date-in-citation>].</mixed-citation></ref>
+<ref id="c22"><mixed-citation publication-type="other"><string-name><surname>Hinch</surname>, <given-names>R.</given-names></string-name> <etal>et al.</etal>, <year>2020</year>. <source>Effective Configurations of a Digital Contact Tracing App: A report to NHSX, s.l.: s.n</source>.</mixed-citation></ref>
+<ref id="c23"><mixed-citation publication-type="other"><string-name><surname>Huang</surname>, <given-names>Y.</given-names></string-name>, <string-name><surname>Sun</surname>, <given-names>M.</given-names></string-name> &#x0026; <string-name><surname>Sui</surname>, <given-names>Y.</given-names></string-name>, <year>2020</year>. <article-title>How Digital Contact Tracing Slowed Covid-19 in East Asia</article-title>. <source>Harvard Business Review</source>, 15 <month>April</month>.</mixed-citation></ref>
+<ref id="c24"><mixed-citation publication-type="other"><string-name><surname>Judah</surname>, <given-names>J.</given-names></string-name>, <year>2020</year>. <article-title>After N.Y.C. Outbreak, Fearful British ultra-Orthodox Fight to Stave Off Coronavirus</article-title>, <source>London: Haaretz</source>.</mixed-citation></ref>
+<ref id="c25"><mixed-citation publication-type="journal"><string-name><surname>Kretzschmar</surname>, <given-names>M. E.</given-names></string-name> <etal>et al.</etal>, <year>2020</year>. <article-title>Impact of delays on effectiveness of contact tracing strategies for COVID-19: a modelling study</article-title>. <source>The Lancet, 16 July</source>, <volume>5</volume>(<issue>8</issue>), pp. <fpage>E452</fpage>-<lpage>E459</lpage>.</mixed-citation></ref>
+<ref id="c26"><mixed-citation publication-type="other"><string-name><surname>Mackenzie</surname>, <given-names>D.</given-names></string-name>, <year>2020</year>. <source>Race, COVID Mortality, and Simpson&#x2019;s Paradox. Los Angeles(California): UCLA</source>.</mixed-citation></ref>
+<ref id="c27"><mixed-citation publication-type="other"><string-name><surname>Miyara</surname>, <given-names>M.</given-names></string-name> <etal>et al.</etal>, <year>2020</year>. <article-title>Low rate of daily smokers in patients with symptomatic COVID-19</article-title>, <source>Paris: medRxiv</source>.</mixed-citation></ref>
+<ref id="c28"><mixed-citation publication-type="website"><collab>National Center for Health Statistics</collab>, <year>2020</year>. <source>CDC. [Online]</source>Available at:<ext-link ext-link-type="uri" xlink:href="https://www.cdc.gov/nchs/nvss/vsrr/covid_weekly/index.htm?fbclid=IwAR3-wrg3tTKK5-9tOHPGAHWFVO3DfslkJ0KsDEPQpWmPbKtp6EsoVV2Qs1Q#ExcessDeaths">https://www.cdc.gov/nchs/nvss/vsrr/covid_weekly/index.htm?fbclid=IwAR3-wrg3tTKK5-9tOHPGAHWFVO3DfslkJ0KsDEPQpWmPbKtp6EsoVV2Qs1Q#ExcessDeaths</ext-link> [Accessed <date-in-citation content-type="access-date">1 September 2020</date-in-citation>].</mixed-citation></ref>
+<ref id="c29"><mixed-citation publication-type="other"><string-name><surname>Neil</surname>, <given-names>M.</given-names></string-name>, <string-name><surname>Fenton</surname>, <given-names>N.</given-names></string-name>, <string-name><surname>Osman</surname>, <given-names>M.</given-names></string-name> &#x0026; <string-name><surname>McLachlan</surname>, <given-names>S.</given-names></string-name>, <year>2020</year>. <article-title>Bayesian network analysis of Covid-19 data reveals higher infection prevalence rates and lower fatality rates than widely reported</article-title>. <source>Journal of Risk Research, 29 June</source>.</mixed-citation></ref>
+<ref id="c30"><mixed-citation publication-type="other"><collab>Office for National Statistics</collab>, <year>2020</year>. <article-title>Comparisons of all-cause mortality between European countries and regions: January to June 2020</article-title>, <source>London: UK government</source>.</mixed-citation></ref>
+<ref id="c31"><mixed-citation publication-type="website"><collab>Office for National Statistics</collab>, <year>2020</year>. <source>Coronavirus (COVID-19) Infection Survey Pilot. [Online]</source> Available at: <ext-link ext-link-type="uri" xlink:href="https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/conditionsanddiseases/bulletins/coronaviruscovid19infectionsurveypilot/englandwalesandnorthernireland2october2020">https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/conditionsanddiseases/bulletins/coronaviruscovid19infectionsurveypilot/englandwalesandnorthernireland2october2020</ext-link> [Accessed <date-in-citation content-type="access-date">5 October 2020</date-in-citation>].</mixed-citation></ref>
+<ref id="c32"><mixed-citation publication-type="website"><collab>Office for National Statistics</collab>, <year>2020</year>. <source>ons.gov.uk. [Online]</source> Available at: <ext-link ext-link-type="uri" xlink:href="https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/articles/coronaviruscovid19relateddeathsbyethnicgroupenglandandwales/2march2020to15">https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/articles/coronaviruscovid19relateddeathsbyethnicgroupenglandandwales/2march2020to15</ext-link> may2020 [Accessed <date-in-citation content-type="access-date">20 August 2020</date-in-citation>].</mixed-citation></ref>
+<ref id="c33"><mixed-citation publication-type="website"><collab>Office for National Statistics</collab>, <year>2020</year>. <source>Which occupations have the highest potential exposure to the coronavirus (COVID-19)?. [Online]</source> Available at: <ext-link ext-link-type="uri" xlink:href="https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/articles/whichoccupationshavethehighestpotentialexposuretothecoronaviruscovid19/2020-05-11">https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/articles/whichoccupationshavethehighestpotentialexposuretothecoronaviruscovid19/2020-05-11</ext-link> [Accessed <date-in-citation content-type="access-date">9 August 2020</date-in-citation>].</mixed-citation></ref>
+<ref id="c34"><mixed-citation publication-type="other"><string-name><surname>Orlando</surname>, <given-names>V.</given-names></string-name> <etal>et al.</etal>, <year>2020</year>. <source>Development and validation of a clinical risk score to predict the risk of SARS-CoV-2 infection from administrative data: a population-based cohort study from Italy. s.l.:s.n</source>.</mixed-citation></ref>
+<ref id="c35"><mixed-citation publication-type="journal"><string-name><surname>Pareek</surname>, <given-names>M.</given-names></string-name> <etal>et al.</etal>, <year>2020</year>. <article-title>Ethnicity and COVID-19: an urgent public health research priority</article-title>. <source>The Lancet</source>, <volume>395</volume>(<issue>10234</issue>), pp. <fpage>1421</fpage>-<lpage>1422</lpage>.</mixed-citation></ref>
+<ref id="c36"><mixed-citation publication-type="other"><string-name><surname>Park</surname>, <given-names>S.</given-names></string-name>, <string-name><surname>Choi</surname>, <given-names>G. J.</given-names></string-name> &#x0026; <string-name><surname>Ko</surname>, <given-names>H.</given-names></string-name>, <year>2020</year>. <article-title>Information Technology-Based Tracing in Response to COVID-19 in South Korea - Privacy Controversies</article-title>. <source>JAMA Network</source>, 23 April.</mixed-citation></ref>
+<ref id="c37"><mixed-citation publication-type="journal"><string-name><surname>Petrakis</surname>, <given-names>D.</given-names></string-name> <etal>et al.</etal>, <year>2020</year>. <article-title>Obesity - a risk factor for increased COVID-19 prevalence, severity and lethality</article-title>. <source>Molecular Medicine Reports</source>, <volume>22</volume>(<issue>1</issue>), pp. <fpage>9</fpage>-<lpage>19.</lpage></mixed-citation></ref>
+<ref id="c38"><mixed-citation publication-type="other"><string-name><surname>Poletti</surname>, <given-names>P.</given-names></string-name> <etal>et al.</etal>, <year>2020</year>. <source>Probability of symptoms and critical disease after SARS-CoV-2 infection, Ithaca: s.n</source>.</mixed-citation></ref>
+<ref id="c39"><mixed-citation publication-type="other"><string-name><surname>Rasker</surname>, <given-names>R.</given-names></string-name> <etal>et al.</etal>, <year>2020</year>. <article-title>Apps Gone Rogue: Maintaining Personal Privacy in an Epidemic. Boston(Massachusetts)</article-title>: <source>arXiv.org</source>.</mixed-citation></ref>
+<ref id="c40"><mixed-citation publication-type="other"><string-name><surname>Rhodes</surname>, <given-names>J.</given-names></string-name> <etal>et al.</etal>, <year>2020</year>. <article-title>Prespective: Vitamin D deficiency and COVID-19 severity - plausibly linked by latitude, ethnicity, impacts on cytokines, ACE2 and thrombosis</article-title>. <source>Journal of Internet Medicine</source>, 2 July.</mixed-citation></ref>
+<ref id="c41"><mixed-citation publication-type="website"><string-name><surname>Smyth</surname>, <given-names>C.</given-names></string-name> &#x0026; <string-name><surname>Wright</surname>, <given-names>O.</given-names></string-name>, <year>2020</year>. [Online] Available at: <ext-link ext-link-type="uri" xlink:href="https://www.thetimes.co.uk/article/coronavirus-failed-tracing-app-repackaged-to-tell-users-their-risk-ratings-l88n3zhnx">https://www.thetimes.co.uk/article/coronavirus-failed-tracing-app-repackaged-to-tell-users-their-risk-ratings-l88n3zhnx</ext-link> [Accessed <date-in-citation content-type="access-date">6 August 2020</date-in-citation>].</mixed-citation></ref>
+<ref id="c42"><mixed-citation publication-type="journal"><string-name><surname>Takahashi</surname>, <given-names>T.</given-names></string-name> <etal>et al.</etal>, <year>2020</year>. <article-title>Sex differences in immune responses that underlie COVID-19 disease outcomes</article-title>. <source>Nature</source>, <volume>26 August</volume>.</mixed-citation></ref>
+<ref id="c43"><mixed-citation publication-type="journal"><collab>The OpenSAFELY Collaborative</collab>, <year>2020</year>. <article-title>Factors associated with COVID-19-related death using OpenSAFELY</article-title>. <source>Nature</source>, <volume>1 July</volume>.</mixed-citation></ref>
+<ref id="c44"><mixed-citation publication-type="journal"><string-name><surname>Verity</surname>, <given-names>R.</given-names></string-name> <etal>et al.</etal>, <year>2020</year>. <article-title>Estimates of the severity of coronavirus disease 2019: a model-based analysis</article-title>. <source>The Lancet, 1 June</source>, <volume>20</volume>(<issue>6</issue>), pp. <fpage>669</fpage>-<lpage>677.</lpage></mixed-citation></ref>
+<ref id="c45"><mixed-citation publication-type="website"><collab>Zoe</collab>, <year>2020</year>. <source>COVID Symptom Study. [Online]</source> Available at: <ext-link ext-link-type="uri" xlink:href="https://covid.joinzoe.com/">https://covid.joinzoe.com/</ext-link> [Accessed <date-in-citation content-type="access-date">30 August 2020</date-in-citation>].</mixed-citation></ref>
+<ref id="c46"><mixed-citation publication-type="journal"><string-name><surname>Zyl-Smit</surname>, <given-names>R. N. v.</given-names></string-name>, <string-name><surname>Richards</surname>, <given-names>G.</given-names></string-name> &#x0026; <string-name><surname>Leone</surname>, <given-names>F. T.</given-names></string-name>, <year>2020</year>. <article-title>Tobacco Smoking and COVID-19 infection</article-title>. <source>The Lancet, 25 May</source>, <volume>8</volume>(<issue>7</issue>), pp. <fpage>664</fpage>-<lpage>665.</lpage></mixed-citation></ref>
+</ref-list>
+<app-group>
+<app id="app1">
+<label>APPENDIX</label>
+<p>This appendix shows the full model, followed by the nodes on which I worked and details how I arrived at their probability tables.</p>
+<sec id="s9">
+<label>A.</label>
+<title>FULL MODEL</title>
+<fig id="ufig1" position="float" fig-type="figure">
+<graphic xlink:href="20215814v1_ufig1.tif"/>
+</fig>
+<p>The model, entitled &#x201C;CombinedModelForContactTracing.cmpx&#x201D; can be downloaded at Norman Fenton&#x2019;s home page <ext-link ext-link-type="uri" xlink:href="http://www.eecs.qmul.ac.uk/~norman/Models/">http://www.eecs.qmul.ac.uk/~norman/Models/</ext-link> and can be run using trial software from agenarisk.com.</p>
+</sec>
+<sec id="s10">
+<label>B.</label>
+<title>NODES</title>
+<p>The nodes are presented in the following sections:</p>
+<list list-type="order">
+<list-item><p>Ethnicity</p></list-item>
+<list-item><p>Religion</p></list-item>
+<list-item><p>Other major background risk factors</p></list-item>
+<list-item><p>Underlying medical conditions</p></list-item>
+<list-item><p>Risk factors (combined)</p></list-item>
+<list-item><p>Risk conditioned on age</p></list-item>
+<list-item><p>Infection risks</p></list-item>
+<list-item><p>Outcomes</p></list-item>
+</list>
+<p>Other nodes were either inherited from an earlier version of the model or were worked on by my colleague Rachel Butcher.</p>
+<sec id="s10a">
+<label>1.</label>
+<title>ETHNICITY</title>
+<table-wrap id="utbl1" orientation="portrait" position="float">
+<graphic xlink:href="20215814v1_utbl1.tif"/>
+</table-wrap>
+<p>These data were taken from the latest population estimates (2019) by the Office for National Statistics. <ext-link ext-link-type="uri" xlink:href="https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/articles/researchreportonpopulationestimatesbyethnicgroupandreligion/2019-12-04">https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/articles/researchreportonpopulationestimatesbyethnicgroupandreligion/2019-12-04</ext-link>.</p>
+<p>They are only for England and Wales but I decided that extrapolating the proportions to the rest of the UK was preferable to taking the 2011 Census statistics for the whole of the UK.</p>
+<p>I supplemented this with government statistics on the Chinese ethnic group. <ext-link ext-link-type="uri" xlink:href="https://www.ethnicity-facts-figures.service.gov.uk/summaries/chinese-ethnic-group">https://www.ethnicity-facts-figures.service.gov.uk/summaries/chinese-ethnic-group</ext-link>.</p>
+<p>It seemed important to separate Chinese from other Asian groups because of the very different health and cultural profiles of Chinese and South Asian.</p>
+<p>It would also have been useful to separate Black African and Black Caribbean, for the same reasons.</p>
+</sec>
+<sec id="s10b">
+<label>2.</label>
+<title>RELIGION</title>
+<table-wrap id="utbl2" orientation="portrait" position="float">
+<graphic xlink:href="20215814v1_utbl2.tif"/>
+</table-wrap>
+<p>These data came from the ONS via a 2015 Freedom of Information request. <ext-link ext-link-type="uri" xlink:href="https://www.ons.gov.uk/aboutus/transparencyandgovernance/freedomofinformationfoi/ethnicityandreligionbyage">https://www.ons.gov.uk/aboutus/transparencyandgovernance/freedomofinformationfoi/ethnicityandreligionbyage</ext-link> The absolute numbers in the xls file are normalised by the AgenaRisk software to add up to 1 in each column.</p>
+</sec>
+<sec id="s10c">
+<label>3.</label>
+<title>BACKGROUND RISK FACTORS</title>
+<sec id="s10c1">
+<label>3.a.</label>
+<title>AGE</title>
+<table-wrap id="utbl3a" orientation="portrait" position="float">
+<graphic xlink:href="20215814v1_utbl3a.tif"/>
+</table-wrap>
+<p>I used data from the same FOI request as for the Religion node above.</p>
+<p>The numbers needed some rearranging into the age groupings I had chosen. Here and in other similar situations I used this population-distribution calculator from the ONS to weight the results:</p>
+<p><ext-link ext-link-type="uri" xlink:href="https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/articles/overviewoftheukpopulation/august2019">https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/articles/overviewoftheukpopulation/august2019</ext-link></p>
+</sec>
+<sec id="s10c2">
+<label>3.b.</label>
+<title>SEX</title>
+<table-wrap id="utbl3b1" orientation="portrait" position="float">
+<graphic xlink:href="20215814v1_utbl3b.tif"/>
+</table-wrap>
+<p>Data source: <ext-link ext-link-type="uri" xlink:href="https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/bulletins/annualmidyearpopulationestimates/mid2019estimates">https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/bulletins/annualmidyearpopulationestimates/mid2019estimates</ext-link></p>
+</sec>
+<sec id="s10c3">
+<label>3.c.</label>
+<title>OBESITY</title>
+<table-wrap id="utbl3c" orientation="portrait" position="float">
+<graphic xlink:href="20215814v1_utbl3c.tif"/>
+</table-wrap>
+<p>These data were taken from the NHS Health Survey for England 2017. (I could not find such detailed data in more recent surveys.)</p>
+<p><ext-link ext-link-type="uri" xlink:href="https://digital.nhs.uk/data-and-information/publications/statistical/health-survey-for-england/2017">https://digital.nhs.uk/data-and-information/publications/statistical/health-survey-for-england/2017</ext-link> There were separate government figures available on obesity by ethnicity:</p>
+<p><ext-link ext-link-type="uri" xlink:href="https://www.ethnicity-facts-figures.service.gov.uk/health/diet-and-exercise/overweight-adults/latest">https://www.ethnicity-facts-figures.service.gov.uk/health/diet-and-exercise/overweight-adults/latest</ext-link></p>
+<p>But I was unable to find data on obesity by all three factors. I decided in favour of age and sex because a quick Excel analysis suggested they were bigger influencers of obesity than ethnicity. I was also able to capture some of the relationship between ethnicity and obesity by conditioning diabetes on ethnicity (see Diabetes section below).</p>
+</sec>
+<sec id="s10c4">
+<label>3.d.</label>
+<title>SMOKING</title>
+<table-wrap id="utbl3d" orientation="portrait" position="float">
+<graphic xlink:href="20215814v1_utbl3d.tif"/>
+</table-wrap>
+<p>Data are from here: <ext-link ext-link-type="uri" xlink:href="https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthandlifeexpectancies/bulletins/adultsmokinghabitsingreatbritain/2019#data-on-smokers-who-have-quit-and-smokers-who-intend-to-quit-great-britain-1974-to-2019">https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthandlifeexpectancies/bulletins/adultsmokinghabitsingreatbritain/2019#data-on-smokers-who-have-quit-and-smokers-who-intend-to-quit-great-britain-1974-to-2019</ext-link></p>
+<p>The numbers are for adults aged 16 and above. I decided to assume there were no smokers aged below 16, given that numbers would be small and risks at that age, in terms of indicating an underlying health condition, would be minimal.</p>
+</sec>
+<sec id="s10c5">
+<label>3.e.</label>
+<title>UNDERLYING MEDICAL CONDITION</title>
+<table-wrap id="utbl3e" orientation="portrait" position="float">
+<graphic xlink:href="20215814v1_utbl3e.tif"/>
+</table-wrap>
+<p>These are rough approximations conditioned on smoking and obesity status. The probabilities are altered by backward inference when an observation is made for any specific medical condition.</p>
+</sec>
+</sec>
+<sec id="s10d">
+<label>4.</label>
+<title>UNDERLYING CONDITIONS</title>
+<p>I took the risk classification from here: <ext-link ext-link-type="uri" xlink:href="https://www.nhs.uk/conditions/coronavirus-covid-19/people-at-higher-risk/whos-at-higher-risk-from-coronavirus/">https://www.nhs.uk/conditions/coronavirus-covid-19/people-at-higher-risk/whos-at-higher-risk-from-coronavirus/</ext-link></p>
+<p>For each underlying condition, I first took the classification of high- or medium-risk, summed the total high-risk and medium-risk patients, and then calculated how probable this particular condition was given an overall rating of high or medium for &#x201C;underlying medical condition&#x201D;.</p>
+<table-wrap id="utbl4" orientation="portrait" position="float">
+<graphic xlink:href="20215814v1_utbl4.tif"/>
+</table-wrap>
+<sec id="s10d1">
+<label>4.a.</label>
+<title>ORGAN TRANSPLANT</title>
+<table-wrap id="utbl4a" orientation="portrait" position="float">
+<graphic xlink:href="20215814v1_utbl4a.tif"/>
+</table-wrap>
+<p><ext-link ext-link-type="uri" xlink:href="https://www.organdonation.nhs.uk/get-involved/news/more-than-50-000-now-alive-thanks-to-organ-donations/">https://www.organdonation.nhs.uk/get-involved/news/more-than-50-000-now-alive-thanks-to-organ-donations/</ext-link></p>
+</sec>
+<sec id="s10d2">
+<label>4.b.</label>
+<title>CANCER</title>
+<table-wrap id="utbl4b" orientation="portrait" position="float">
+<graphic xlink:href="20215814v1_utbl4b.tif"/>
+</table-wrap>
+<p><ext-link ext-link-type="uri" xlink:href="https://www.macmillan.org.uk/_images/cancer-statistics-factsheet_tcm9-260514.pdf">https://www.macmillan.org.uk/_images/cancer-statistics-factsheet_tcm9-260514.pdf</ext-link></p>
+</sec>
+<sec id="s10d3">
+<label>4.c.</label>
+<title>CYSTIC FIBROSIS</title>
+<table-wrap id="utbl4c" orientation="portrait" position="float">
+<graphic xlink:href="20215814v1_utbl4c.tif"/>
+</table-wrap>
+<p>https://www.cysticfibrosis.org.uk/what-is-cystic-fibrosis/faqs#:~:text=Around%2010%2C500%20people%20in%20the,100%2C000%20people%20in%20the%20world.</p>
+</sec>
+<sec id="s10d4">
+<label>4.d.</label>
+<title>SICKLE CELL DISEASE</title>
+<table-wrap id="utbl4d" orientation="portrait" position="float">
+<graphic xlink:href="20215814v1_utbl4d.tif"/>
+</table-wrap>
+<p>https://www.sicklecellsociety.org/about-sickle-cell/#:~:text=4%20Approximately%2015%2C000%20people%20in,in%20the%20UK%20every%20year.&#x0026;text=7%20Children%20with%20SCD%20are,ages%20of%202%20and%2016</p>
+</sec>
+<sec id="s10d5">
+<label>4.e.</label>
+<title>ASTHMA</title>
+<table-wrap id="utbl4e" orientation="portrait" position="float">
+<graphic xlink:href="20215814v1_utbl4e.tif"/>
+</table-wrap>
+<p><ext-link ext-link-type="uri" xlink:href="https://www.asthma.org.uk/about/media/facts-and-statistics/">https://www.asthma.org.uk/about/media/facts-and-statistics/</ext-link></p>
+</sec>
+<sec id="s10d6">
+<label>4.f.</label>
+<title>HEART DISEASE</title>
+<table-wrap id="utbl4f" orientation="portrait" position="float">
+<graphic xlink:href="20215814v1_utbl4f.tif"/>
+</table-wrap>
+<p><ext-link ext-link-type="uri" xlink:href="https://www.bhf.org.uk/what-we-do/our-research/heart-statistics">https://www.bhf.org.uk/what-we-do/our-research/heart-statistics</ext-link></p>
+</sec>
+<sec id="s10d7">
+<label>4.g.</label>
+<title>DIABETES</title>
+<table-wrap id="utbl4g" orientation="portrait" position="float">
+<graphic xlink:href="20215814v1_utbl4g.tif"/>
+</table-wrap>
+<p><ext-link ext-link-type="uri" xlink:href="https://www.diabetes.org.uk/resources-s3/2017-11/diabetes_in_the_uk_2010.pdf">https://www.diabetes.org.uk/resources-s3/2017-11/diabetes_in_the_uk_2010.pdf</ext-link></p>
+</sec>
+<sec id="s10d8">
+<label>4.h.</label>
+<title>COPD</title>
+<table-wrap id="utbl4h" orientation="portrait" position="float">
+<graphic xlink:href="20215814v1_utbl4h.tif"/>
+</table-wrap>
+<p><ext-link ext-link-type="uri" xlink:href="https://www.hse.gov.uk/statistics/causdis/copd.pdf">https://www.hse.gov.uk/statistics/causdis/copd.pdf</ext-link> <ext-link ext-link-type="uri" xlink:href="https://www.nhs.uk/conditions/chronic-obstructive-pulmonary-disease-copd/causes/">https://www.nhs.uk/conditions/chronic-obstructive-pulmonary-disease-copd/causes/</ext-link></p>
+</sec>
+<sec id="s10d9">
+<label>4.i.</label>
+<title>LIVER DISEASE</title>
+<table-wrap id="utbl4i" orientation="portrait" position="float">
+<graphic xlink:href="20215814v1_utbl4i.tif"/>
+</table-wrap>
+<p><ext-link ext-link-type="uri" xlink:href="https://www.statista.com/statistics/1036415/prevalence-of-cirrhosis-in-the-uk-by-gender/">https://www.statista.com/statistics/1036415/prevalence-of-cirrhosis-in-the-uk-by-gender/</ext-link></p>
+</sec>
+<sec id="s10d10">
+<label>4.j.</label>
+<title>PARKINSON&#x2019;S DISEASE</title>
+<table-wrap id="utbl4j" orientation="portrait" position="float">
+<graphic xlink:href="20215814v1_utbl4j.tif"/>
+</table-wrap>
+<p>https://www.parkinsons.org.uk/professionals/news/parkinsons-diagnoses-rise-uk#:~:text=The%20number%20of%20people%20diagnosed,350%20adults%20in%20the%20UK</p>
+</sec>
+<sec id="s10d11">
+<label>4.k.</label>
+<title>CHRONIC KIDNEY DISEASE</title>
+<table-wrap id="utbl4k" orientation="portrait" position="float">
+<graphic xlink:href="20215814v1_utbl4k.tif"/>
+</table-wrap>
+<p><ext-link ext-link-type="uri" xlink:href="https://www.renalreg.org/wp-content/uploads/2014/09/06-Chap-06.pdf">https://www.renalreg.org/wp-content/uploads/2014/09/06-Chap-06.pdf</ext-link></p>
+</sec>
+<sec id="s10d12">
+<label>4.l.</label>
+<title>CEREBRAL PALSY</title>
+<table-wrap id="utbl4l" orientation="portrait" position="float">
+<graphic xlink:href="20215814v1_utbl4l.tif"/>
+</table-wrap>
+<p><ext-link ext-link-type="uri" xlink:href="https://thepacecentre.org/information-centre/stats-facts/">https://thepacecentre.org/information-centre/stats-facts/</ext-link></p>
+</sec>
+<sec id="s10d13">
+<label>4.m.</label>
+<title>MULTIPLE SCLEROSIS</title>
+<table-wrap id="utbl4m" orientation="portrait" position="float">
+<graphic xlink:href="20215814v1_utbl4m.tif"/>
+</table-wrap>
+<p><ext-link ext-link-type="uri" xlink:href="https://www.gov.uk/government/publications/multiple-sclerosis-prevalence-incidence-and-smoking-status/multiple-sclerosis-prevalence-incidence-and-smoking-status-data-briefing">https://www.gov.uk/government/publications/multiple-sclerosis-prevalence-incidence-and-smoking-status/multiple-sclerosis-prevalence-incidence-and-smoking-status-data-briefing</ext-link></p>
+</sec>
+<sec id="s10d14">
+<label>4.n.</label>
+<title>MOTOR NEURONE DISEASE</title>
+<table-wrap id="utbl4n" orientation="portrait" position="float">
+<graphic xlink:href="20215814v1_utbl4n.tif"/>
+</table-wrap>
+<p>https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/motor-neurone-disease-mnd#:~:text=Motor%20neurone%20disease%20is%20a%20rare%20condition%20that%20affects%20around,although%20this%20is%20extremely%20rare.</p>
+</sec>
+<sec id="s10d15">
+<label>4.o.</label>
+<title>PREGNANCY</title>
+<table-wrap id="utbl4o" orientation="portrait" position="float">
+<graphic xlink:href="20215814v1_utbl4o.tif"/>
+</table-wrap>
+<p><ext-link ext-link-type="uri" xlink:href="https://www.statista.com/statistics/297718/conception-rate-per-thousand-women-in-england-and-wales-by-age/">https://www.statista.com/statistics/297718/conception-rate-per-thousand-women-in-england-and-wales-by-age/</ext-link></p>
+</sec>
+</sec>
+<sec id="s10e">
+<label>5</label>
+<title>RISK FACTORS</title>
+<table-wrap id="utbl5" orientation="portrait" position="float">
+<graphic xlink:href="20215814v1_utbl5.tif"/>
+</table-wrap>
+</sec>
+<sec id="s10f">
+<label>6</label>
+<title>RISK CONDITIONED ON AGE</title>
+<table-wrap id="utbl6" orientation="portrait" position="float">
+<graphic xlink:href="20215814v1_utbl6.tif"/>
+</table-wrap>
+</sec>
+<sec id="s10g">
+<label>7</label>
+<title>INFECTION RISKS</title>
+<sec id="s10g1">
+<label>7.a.</label>
+<title>OCCUPATION</title>
+<table-wrap id="utbl7a" orientation="portrait" position="float">
+<graphic xlink:href="20215814v1_utbl7a.tif"/>
+</table-wrap>
+<p><ext-link ext-link-type="uri" xlink:href="https://www.ethnicity-facts-figures.service.gov.uk/workforce-and-business/workforce-diversity/nhs-workforce/latest">https://www.ethnicity-facts-figures.service.gov.uk/workforce-and-business/workforce-diversity/nhs-workforce/latest</ext-link> <ext-link ext-link-type="uri" xlink:href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/908434/Disparities_in_the_risk_and_outcomes_of_COVID_August_2020_update.pdf">https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/908434/Disparities_in_the_risk_and_outcomes_of_COVID_August_2020_update.pdf</ext-link></p>
+<p><ext-link ext-link-type="uri" xlink:href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/812539/Schools_Pupils_and_their_Characteristics_2019_Main_Text.pdf">https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/812539/Schools_Pupils_and_their_Characteristics_2019_Main_Text.pdf</ext-link></p>
+<p>https://commonslibrary.parliament.uk/research-briefings/cbp-7857/#:~:text=In%20academic%20year%202018%2F19,at%20UK%20higher%20education%20institutions.&#x0026;text=There%20were%20just%20over%20700%2C000,2019%20and%20541%2C000%20were%20accepted.</p>
+</sec>
+<sec id="s10g2">
+<label>7.b.</label>
+<title>OVERCROWDED HOUSEHOLD</title>
+<table-wrap id="utbl7b" orientation="portrait" position="float">
+<graphic xlink:href="20215814v1_utbl7b.tif"/>
+</table-wrap>
+<p><ext-link ext-link-type="uri" xlink:href="https://www.ethnicity-facts-figures.service.gov.uk/housing/housing-conditions/overcrowded-households/latest">https://www.ethnicity-facts-figures.service.gov.uk/housing/housing-conditions/overcrowded-households/latest</ext-link> <ext-link ext-link-type="uri" xlink:href="https://www.jpr.org.uk/documents/JPR_Census_Jewish_families_and_Jewish_households_report_March_2015.pdf">https://www.jpr.org.uk/documents/JPR_Census_Jewish_families_and_Jewish_households_report_March_2015.pdf</ext-link></p>
+</sec>
+<sec id="s10g3">
+<label>7.c.</label>
+<title>CONTACT WITH SYMPTOMATIC COVID-19 PERSON</title>
+<table-wrap id="utbl7c" orientation="portrait" position="float">
+<graphic xlink:href="20215814v1_utbl7c.tif"/>
+</table-wrap>
+</sec>
+<sec id="s10g4">
+<label>7.d.</label>
+<title>CONTACT WITH CONFIRMED COVID-19 PERSON</title>
+<table-wrap id="utbl7d" orientation="portrait" position="float">
+<graphic xlink:href="20215814v1_utbl7d.tif"/>
+</table-wrap>
+<p><ext-link ext-link-type="uri" xlink:href="https://www.gov.uk/government/publications/nhs-test-and-trace-england-and-coronavirus-testing-uk-statistics-6-august-to-12-august-2020/weekly-statistics-for-nhs-test-and-trace-england-and-coronavirus-testing-uk-6-august-to-12-august">https://www.gov.uk/government/publications/nhs-test-and-trace-england-and-coronavirus-testing-uk-statistics-6-august-to-12-august-2020/weekly-statistics-for-nhs-test-and-trace-england-and-coronavirus-testing-uk-6-august-to-12-august</ext-link></p>
+</sec>
+<sec id="s10g5">
+<label>7.e.</label>
+<title>INTERACTIONS WITH OTHER PEOPLE</title>
+<table-wrap id="utbl7e" orientation="portrait" position="float">
+<graphic xlink:href="20215814v1_utbl7e.tif"/>
+</table-wrap>
+</sec>
+<sec id="s10g6">
+<label>7.f.</label>
+<title>AMOUNT OF CONTACT WITH VIRUS</title>
+<table-wrap id="utbl7f" orientation="portrait" position="float">
+<graphic xlink:href="20215814v1_utbl7f.tif"/>
+</table-wrap>
+</sec>
+</sec>
+<sec id="s10h">
+<label>8</label>
+<title>OUTCOMES</title>
+<sec id="s10h1">
+<label>8.a.</label>
+<title>INFECTED WITH COVID-19</title>
+<table-wrap id="utbl8a" orientation="portrait" position="float">
+<graphic xlink:href="20215814v1_utbl8a.tif"/>
+</table-wrap>
+<p>Government community infection survey pilot: <ext-link ext-link-type="uri" xlink:href="https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/conditionsanddiseases/bulletins/coronaviruscovid19infectionsurveypilot/englandandwales21august2020">https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/conditionsanddiseases/bulletins/coronaviruscovid19infectionsurveypilot/englandandwales21august2020</ext-link></p>
+</sec>
+<sec id="s10h2">
+<label>8.b.</label>
+<title>CURRENT TIME SINCE INFECTION IF INFECTED</title>
+<table-wrap id="utbl8b" orientation="portrait" position="float">
+<graphic xlink:href="20215814v1_utbl8b.tif"/>
+</table-wrap>
+<p>This on how long COVID-19 remains infectious: <ext-link ext-link-type="uri" xlink:href="https://covid.joinzoe.com/post/covid-long-term">https://covid.joinzoe.com/post/covid-long-term</ext-link> And this on incubation period: <ext-link ext-link-type="uri" xlink:href="https://www.acpjournals.org/doi/10.7326/M20-0504">https://www.acpjournals.org/doi/10.7326/M20-0504</ext-link></p>
+</sec>
+<sec id="s10h3">
+<label>8.c.</label>
+<title>CURRENT COVID-19 STATUS</title>
+<table-wrap id="utbl8c" orientation="portrait" position="float">
+<graphic xlink:href="20215814v1_utbl8c.tif"/>
+</table-wrap>
+<p><ext-link ext-link-type="uri" xlink:href="https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/conditionsanddiseases/bulletins/coronaviruscovid19infectionsurveypilot/englandandwales21august2020">https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/conditionsanddiseases/bulletins/coronaviruscovid19infectionsurveypilot/englandandwales21august2020</ext-link></p>
+</sec>
+<sec id="s10h4">
+<label>8.d.</label>
+<title>EVENTUAL COVID-19 STATUS</title>
+<table-wrap id="utbl8d" orientation="portrait" position="float">
+<graphic xlink:href="20215814v1_utbl8d.tif"/>
+</table-wrap>
+</sec>
+</sec>
+</sec>
+</app>
+</app-group>
+</back>
+</article>

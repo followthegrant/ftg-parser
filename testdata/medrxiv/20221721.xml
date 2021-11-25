@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.2d1 20170631//EN" "JATS-archivearticle1.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" article-type="article" dtd-version="1.2d1" specific-use="production" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="publisher-id">MEDRXIV</journal-id>
+<journal-title-group>
+<journal-title>medRxiv</journal-title>
+<abbrev-journal-title abbrev-type="publisher">medRxiv</abbrev-journal-title>
+</journal-title-group>
+<publisher>
+<publisher-name>Cold Spring Harbor Laboratory</publisher-name>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1101/2020.10.28.20221721</article-id>
+<article-version>1.1</article-version>
+<article-categories>
+<subj-group subj-group-type="hwp-journal-coll">
+<subject>Epidemiology</subject>
+</subj-group>
+</article-categories>
+<title-group>
+<article-title>A Time-dependent mathematical model for COVID-19 transmission dynamics and analysis of critical and hospitalized cases with bed requirements</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" corresp="yes">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-1200-7897</contrib-id>
+<name><surname>Singh</surname><given-names>Avaneesh</given-names></name>
+<xref ref-type="aff" rid="a1">a</xref>
+<xref ref-type="corresp" rid="cor1">&#x002A;</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Bajpai</surname><given-names>Manish Kumar</given-names></name>
+<xref ref-type="aff" rid="a1">a</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Gupta</surname><given-names>Shyam Lal</given-names></name>
+<xref ref-type="aff" rid="a2">b</xref>
+</contrib>
+<aff id="a1"><label>a</label><institution>Department of Computer Science and Engineering, PDPM Indian Institute of Information Technology, Design and Manufacturing</institution>, Jabalpur, Madhya Pradesh - 482005, <country>India</country></aff>
+<aff id="a2"><label>b</label><institution>Department of Physics, Government College Bassa, Himachal Pradesh University</institution>, Gohar, Mandi, Himachal Pradesh &#x2013; 175029, <country>India</country></aff>
+</contrib-group>
+<author-notes>
+<corresp id="cor1"><label>&#x002A;</label>Corresponding Author: Avaneesh Singh. Email: <email>avaneesh.singh@iiitdmj.ac.in</email></corresp>
+</author-notes>
+<pub-date pub-type="epub">
+<year>2020</year>
+</pub-date>
+<elocation-id>2020.10.28.20221721</elocation-id>
+<history>
+<date date-type="received">
+<day>28</day>
+<month>10</month>
+<year>2020</year>
+</date>
+<date date-type="rev-recd">
+<day>28</day>
+<month>10</month>
+<year>2020</year>
+</date>
+<date date-type="accepted">
+<day>03</day>
+<month>11</month>
+<year>2020</year>
+</date>
+</history>
+<permissions>
+<copyright-statement>&#x00A9; 2020, Posted by Cold Spring Harbor Laboratory</copyright-statement>
+<copyright-year>2020</copyright-year>
+<license license-type="creative-commons" xlink:href="http://creativecommons.org/licenses/by/4.0/"><license-p>This pre-print is available under a Creative Commons License (Attribution 4.0 International), CC BY 4.0, as described at <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</ext-link></license-p></license>
+</permissions>
+<self-uri xlink:href="20221721.pdf" content-type="pdf" xlink:role="full-text"/>
+<abstract>
+<title>Abstract</title>
+<p>A time-dependent SEAIHCRD model is the extension of the SEIR model, which includes some new compartment that is asymptomatic infectious people, hospitalized people, critical people, and dead compartments. In this article, we analyzed six countries, namely the United States, Brazil, India, South Africa, Russia, and Mexico. A time-dependent SEAIHCRD model calculates the magnitude of peaks for exposed people, asymptomatic infectious people, symptomatic infectious people, hospitalized people, the number of people admitted to ICUs, and the number of COVID-19 deaths over time. It also computes the spread scenario and endpoints of disease. The proposed model also involves asymptomatic infectious individuals. To estimate the various parameters, we first collect the data and fit that using the Lavenberg-Marquardt model for death cases. Then we calculate infection rate, recovery rate, case fatality rate, and the basic reproduction number over time. We calculate two types of case fatality rates: one is the daily case fatality rate, and the other is the total case fatality rate. The proposed model includes the social distance parameter, various age classes, hospital beds for severe cases, and ICU beds or ventilators for critical cases. This model will be useful to determine various essential parameters such as daily hospitalization rate, daily death rates, including the requirement of normal and ICU beds during peak days of infection.</p>
+</abstract>
+<kwd-group kwd-group-type="author">
+<title>Keywords</title>
+<kwd>COVID-19</kwd>
+<kwd>Coronavirus</kwd>
+<kwd>SIR Model</kwd>
+<kwd>A Time-Dependent SEAIHCRD Model</kwd>
+<kwd>Mathematical Model</kwd>
+<kwd>SEIR Model</kwd>
+<kwd>Basic Reproduction Number</kwd>
+<kwd>Case Fatality Rate</kwd>
+</kwd-group>
+<counts>
+<page-count count="38"/>
+</counts>
+</article-meta>
+<notes>
+<notes notes-type="competing-interest-statement">
+<title>Competing Interest Statement</title><p>The authors have declared no competing interest.</p></notes>
+<notes notes-type="clinical-trial-statement">
+<title>Clinical Trial</title><p>For this research, no need of clinical trial.</p></notes>
+<notes notes-type="financial-disclosure">
+<title>Funding Statement</title><p>The work has been supported by a grant received from the Ministry of Education, Government of India under the Scheme for the Promotion of Academic and Research Collaboration (SPARC) (ID: SPARC/2019/1396).</p></notes>
+<notes notes-type="disclosures">
+<title>Author Declarations</title><p>I confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.</p><p>Yes</p><p>The details of the IRB/oversight body that provided approval or exemption for the research described are given below:</p><p>Approve all policies</p><p>All necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived.</p><p>Yes</p><p>I understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).</p><p>Yes</p><p>I have followed all appropriate research reporting guidelines and uploaded the relevant EQUATOR Network research reporting checklist(s) and other pertinent material as supplementary files, if applicable.</p><p>Yes</p></notes>
+</notes>
+</front>
+<body>
+<sec id="s1">
+<label>1</label>
+<title>Introduction</title>
+<p>Many countries have suffered a lot from this COVID<bold>-</bold>19. Some countries suffer from loss of beds and ICU beds. Due to triage conditions, doctors have to select critical conditioned people for treatment, and some patients have not been treated due to a lack of hospital beds and ICU beds. It is regrettable to us that someone dies without treatment. Perhaps if they were treated, then save their lives. If the government has prior knowledge of how much beds are needed in a particular time, then the arrangement can be made, and it can save many lives for those who have died of lack of facility. Our proposed model is a new mathematical method that extends the SEIR model by adding death, hospitalized, and critical compartments. The hospitalized compartment and critical compartment are to a new compartment added in this model to enhance the disease transmission visibility. No one has used these two compartments in any model of my knowledge until that time. The model also calculates how many hospital beds and ICU beds are needed in peak time. The proposed model also calculates the case fatality rate and the basic reproduction rate.The calculation process for requiring beds and ICU beds by this method is new. We calculate the basic reproduction number using the logistic regression over time; its unique idea is used in this model. We also consider age groups for case fatality rate analysis; if any country&#x2019;s elderly population is more, then the case fatality rate will be higher in that country.</p>
+<p>The entire world is combating against a new enemy in these days, which is the COVID-19 virus. The virus has spread exponentially around the world since its first appearance in China. Most of the countries are struggling with economic and social fronts due to this virus. Tyrell and Bynoe described the coronavirus for the first time in 1966 [<xref ref-type="bibr" rid="c1">1</xref>]. An outbreak of pneumonia was reported in Wuhan, China, in December 2019 [<xref ref-type="bibr" rid="c2">2</xref>]. The virus causing that outbreak was provisionally named as 2019-nCoV, which was renames as SARS-CoV-2 by the International Committee on Virus Taxonomy [<xref ref-type="bibr" rid="c3">3</xref>-<xref ref-type="bibr" rid="c5">5</xref>]. The World Health Organization announced these outbreaks as an international public health emergency on January 30 and a pandemic on March 11, 2020 [<xref ref-type="bibr" rid="c6">6</xref>, <xref ref-type="bibr" rid="c7">7</xref>]. COVID-19 caused a global recession and has an impact on social life [<xref ref-type="bibr" rid="c8">8</xref>]. More than 22.4 million cases, out of which more than 14.3 million people have recovered and around 788,000 have died, of COVID-19 pandemic have been reported across 188 countries and territories till August 20, 2020. [<xref ref-type="bibr" rid="c9">9</xref>]. Worldwide, researchers are working 24 hours a day to find the SARS-CoV-2 virus vaccine. There are nearly 231 vaccines reported as potential candidates for the cure of COVID-19 till August 2020; however, none of these have successfully established their safety and efficacy in clinical trials. As per various reports, nearly 25 vaccine candidates are in different stages of clinical trials [<xref ref-type="bibr" rid="c10">10</xref>-<xref ref-type="bibr" rid="c12">12</xref>].</p>
+<p>Asymptomatic cases mean people without symptoms. However, there are reports of loss of sense of smell in people who otherwise have no symptoms. This is now recognized as an official symptom of the virus, and people experiencing it should self-isolate themselves. Reports from many countries suggest that asymptomatic infected individuals are much less likely to transmit the virus than those with symptoms [<xref ref-type="bibr" rid="c13">13</xref>]. Most of the symptomatic cases are mild. They do not have to be in the hospital. They can be quarantined at home under the guidance of the doctor. Temperature with minor cough, tiredness, moderate breathlessness, pain in the muscles, headache, sour throat, and diarrhea are the main signs of mild cases. Symptoms of severe cases are more visible in older people. Its symptoms are rarely seen in healthy young people. The main symptoms of severe cases are pneumonia that involves excessive breathlessness, chest pain, high temperature, low oxygen levels, rapid heart rate, and decreased blood pressure. Severe cases need hospital beds for the treatment of patients. Symptoms of critical cases are more visible in older people who have pre-existing diseases such as cardiovascular disease, diabetes, chronic respiratory disease, hypertension, and cancer. Many organs fail to function because of this. Critical cases need ventilators or ICU care for the treatment of patients. COVID-19 shows an increased number of cases and a greater risk of severe disease with increasing age. [<xref ref-type="bibr" rid="c14">14</xref>, <xref ref-type="bibr" rid="c15">15</xref>]</p>
+<p>Mathematical models that forecast the possible effects of various approaches to behavioural changes in the population are an essential source of knowledge for policymakers [<xref ref-type="bibr" rid="c16">16</xref>, <xref ref-type="bibr" rid="c17">17</xref>]. Currently, the countries most affected by COVID-19 disease in the world are the United States, Brazil, India, South Africa, Russia, and Mexico. In the present work, we are introducing a new mathematical model for the study of the Pandemic Transmission and Control Dynamics of COVID-19 based on the reports of these affected countries. Compartmental models are composed of ordinary differential equations. These models are separated into many compartments. Our proposed SEAIHCRD model has eight compartments: susceptible (S), exposed (E), asymptomatic infectious (A), symptomatic infectious (I), hospitalized (H), critical (C), recovered (R), and deceased or death (D), collectively termed as SEAIHCRD. The basic rule of the compartmental model is the transition of people from one compartment to another. Models use mathematics to find the different parameters to estimate the effect of various interventions and then to decide which intervention to stop and which to continue. These models are primarily used in epidemiology and many other fields, such as economics, politics, social science, and medicine, etc.</p>
+<p>Kermack and Mckendrick have introduced the first basic infectious disease compartmental model, SIR [<xref ref-type="bibr" rid="c18">18</xref>]. The SEIR model is a commonly used epidemiological model based on the SIR model [<xref ref-type="bibr" rid="c19">19</xref>]. The Kermack and Mckendrick epidemic model has predicted outbreak behaviour very close to the real scenarios seen in many recorded epidemics [<xref ref-type="bibr" rid="c19">19</xref>]. Since Kermack and Mckendrick&#x2019;s paper, stochastic models, discrete-time models, continuous-time models, and diffusion models have been developed for many diseases. Some manuscripts provide an excellent approach to mathematical models that provide a comprehensive understanding of the disease outbreak scenario [<xref ref-type="bibr" rid="c20">20</xref>-<xref ref-type="bibr" rid="c34">34</xref>]. The SEIR model has not been able to estimate spread where preventive measures such as social distances, different age groups, number of ICU beds, number of hospital beds, and mortality rates have been adopted. The proposed model in this work is a modification to the SEIR model. The present manuscript includes an updated SEIR model for COVID-19 with all the above parameters. We propose a prediction model that has been constrained by many observed data under uncertainties. The time-dependent SEAIHCRD model estimates the magnitude of peaks for exposed people, the number of asymptomatic infectious people, the number of symptomatic infectious people, the number of people hospitalized, the number of people admitted to ICUs and the number of deaths of COVID-19 over time. The proposed method includes asymptomatic infectious cases as a separate compartment. Asymptomatic infection cases are either recovered or, if symptoms begin to appear within a few days, enter into the symptomatic infectious compartment.</p>
+<p>The time-dependent SEAIHCRD model includes a social distancing parameter, analysis of different age groups, number of ICU beds, number of hospital beds, and lock-down effect, which gives a more accurate estimate of the future requirement of the beds normal as well as the ICU in the hospitals. The proposed model also analyzes the basic reproduction number over time. Early stages of the outbreak, the basic reproductive number (R0) in January ranged from 1.4 to 2.5, but a subsequent study suggested that it may be around 5.7 [<xref ref-type="bibr" rid="c35">35</xref>, <xref ref-type="bibr" rid="c36">36</xref>]. The spread of disease in these areas has been stable or declining since mid-May 2020[<xref ref-type="bibr" rid="c37">37</xref>]. The number of cases doubled in almost seven and a half days in the early stages of the outbreak, but later the rate increased [<xref ref-type="bibr" rid="c38">38</xref>]. The proposed model analyzes the case fatality rate over time. The case fatality rate is the ratio of people dying from a specific disease among all individuals suffering from the disease over a certain period. [<xref ref-type="bibr" rid="c39">39</xref>, <xref ref-type="bibr" rid="c40">40</xref>].</p>
+<p>The structure of this paper is as follows; <xref ref-type="sec" rid="s1">Section 1</xref> introduces COVID-19 and explains the significance of this research. A time-dependent SEAIHCRD predictive mathematical model for COVID-19 is presented in <xref ref-type="sec" rid="s2">section 2</xref>. <xref ref-type="sec" rid="s3">Section 3</xref> discusses the data set and its analysis used to validate the proposed mathematical models. Results and discussions on the proposed model are discussed in <xref ref-type="sec" rid="s4">Section 4</xref>. Finally, the conclusion and some future works are discussed in <xref ref-type="sec" rid="s5">Section 5</xref>.</p>
+</sec>
+<sec id="s2">
+<label>2.</label>
+<title>Proposed Methodology</title>
+<p>Modelling is one of the most powerful tools that give intuitive inferences when multiple factors act together. Compartment models such as SIR and SEIR are mostly used today for the mathematical modelling of infectious diseases. Over the last few weeks, many epidemiologists and data scientists have worked on mathematical modelling of infectious diseases, in particular, Coronavirus disease (COVID-19). Coronavirus disease (COVID-19) is an infectious disease that can spread from one member of the population to another. Kermack-McKendrick [<xref ref-type="bibr" rid="c18">18</xref>] proposed the basic compartmental SIR model in 1927. Beretta and Takeuchi [<xref ref-type="bibr" rid="c41">41</xref>] have developed their theories based on research conducted by Kermack and McKendrick [<xref ref-type="bibr" rid="c18">18</xref>] and have proposed a SIR model on time delays. In the spread of infectious diseases, Cooke and Driessche [<xref ref-type="bibr" rid="c42">42</xref>] studied the incubation cycle, developed the &#x201C;Exposed, E&#x201D; compartment, and suggested a time delay SEIR model.</p>
+<p>Singh A et al. (2020) described the basic compartment model SIR, the SEIR model, and the SEIRD model [<xref ref-type="bibr" rid="c27">27</xref>]. Our proposed model, a time-dependent SEAIHCRD model, is a new mathematical method that extends the SEIR model by adding asymptomatic infectious, death, hospitalized, and critical compartments.</p>
+<p>COVID-19 Infectious disease is essentially categorized as symptomatic infectious and asymptomatic infectious cases. Fig.1 shows the categorization of infectious cases and the flow of infectious cases. There is no need to hospitalize asymptomatic cases and mild cases to reduce the pressure on hospitals. At the same time, it would ensure that serious and urgent patients have access to beds when they are most needed. There may be fear among the positive patients that they are ignored and not provided the necessary treatment. However, there is no need for fear, as mild cases can be cured even if the patients stay at home in isolation with the guidelines as prescribed by health professionals [<xref ref-type="bibr" rid="c44">44</xref>].</p>
+<p>In <xref rid="fig2" ref-type="fig">Fig. 2</xref>, the Actor is a source of infection, and it transfers the infection from one Actor to another. The Actor may be either symptomatic or asymptomatic infected. Most of the cases are mild or asymptomatic. Severe cases are significantly less than mild cases but more than critical cases. Initially, some cases are mild, but with time, it becomes severe or critical; then, they need hospital beds or ICU beds.</p>
+<fig id="fig1" position="float" fig-type="figure">
+<label>Figure 1:</label>
+<caption><title>(a) Infectious categorization, (b) Infectious cases flow</title></caption>
+<graphic xlink:href="20221721v1_fig1.tif"/>
+</fig>
+<fig id="fig2" position="float" fig-type="figure">
+<label>Figure 2:</label>
+<caption><title>Hierarchy of COVID-19 Cases in numbers</title></caption>
+<graphic xlink:href="20221721v1_fig2.tif"/>
+</fig>
+<p>Most cases are asymptomatic because many cases are missing from the symptom-based screening test. Children and young adults may become asymptomatic. ICMR has advised asymptomatic and COVID positive cases with mild symptoms like fever and cough to observe self-isolation and put under home quarantine for at least 17 days; hence the pressure on the designate COVID hospitals is reduced [<xref ref-type="bibr" rid="c43">43</xref>-<xref ref-type="bibr" rid="c44">44</xref>].</p>
+<p>The non-infected and asymptomatic population is susceptible to COVID-19. There is an incubation period for the susceptible, exposed person (compartment E), which is defined as the duration in which one exposed may become infected with symptoms or asymptomatic. Asymptomatic infected individuals can enter the Symptomatic infected or recover. From Symptomatic infected, they can either die or recover shown in <xref rid="fig3" ref-type="fig">Fig. 3</xref>.</p>
+<fig id="fig3" position="float" fig-type="figure">
+<label>Figure 3:</label>
+<caption><title>Flow of Asymptomatic infectious cases</title></caption>
+<graphic xlink:href="20221721v1_fig3.tif"/>
+</fig>
+<sec id="s2a">
+<label>2.1</label>
+<title>A time-dependent SEAIHCRD model</title>
+<p>In the present manuscript, the Asymptomatic Infectious, Hospitalized, and Critical compartments are three additional compartments for further accurate analysis. This model allows the asymptomatic cases, overflowing hospitals with less number of hospital beds and ICU beds. A time-dependent SEAIHCRD model has been divided into eight population-wise compartments: Susceptible (S), Exposed (E), Asymptomatic Infectious (A), Symptomatic Infectious (I), Hospitalized (H), Critical (C), Recovered (R) and Dead (D). A time-dependent SEAIHCRD model describes the transition of people from Susceptible to Exposed, then Exposed to Asymptomatic Infectious and Symptomatic Infectious. Then from Asymptomatic Infectious, they can either Symptomatic Infectious or Recovered compartment. According to the proposed time-dependent SEAIHCRD model, only symptomatic infected individuals can enter the hospitalized compartment and critical compartment. Hospitalized cases may either enter the Critical or Recover compartment and the Critical compartment; they may either die or recover. A time-dependent SEAIHCRD model is shown in <xref rid="fig4" ref-type="fig">Fig. 4</xref>.</p>
+<fig id="fig4" position="float" fig-type="figure">
+<label>Figure 4:</label>
+<caption><title>A time-dependent SEAIHCRD model</title></caption>
+<graphic xlink:href="20221721v1_fig4.tif"/>
+</fig>
+<p>Asymptomatic cases and some mild cases, put into a home quarantine that does not require hospitalization, these individuals may recover or, if they show some symptoms, go to the symptomatic infectious compartment in the future. People with a serious infection who have severe pneumonia need hospitalization. These people can either recover or move into the critical compartment. People with critical conditions have multi-organs and multiple disorders and need ICU medication. These people either recover or die of the disease.</p>
+<sec id="s2a1">
+<title>Differential Equations for time-dependent SEAIHCRD model</title>
+<p>The SEAIHCRD model&#x2019;s ordinary differential equations are as follows:
+<disp-formula id="eqn1">
+<alternatives><graphic xlink:href="20221721v1_eqn1.gif"/></alternatives>
+</disp-formula>
+<disp-formula id="eqn2">
+<alternatives><graphic xlink:href="20221721v1_eqn2.gif"/></alternatives>
+</disp-formula>
+<disp-formula id="eqn3">
+<alternatives><graphic xlink:href="20221721v1_eqn3.gif"/></alternatives>
+</disp-formula>
+<disp-formula id="eqn4">
+<alternatives><graphic xlink:href="20221721v1_eqn4.gif"/></alternatives>
+</disp-formula>
+<disp-formula id="eqn5">
+<alternatives><graphic xlink:href="20221721v1_eqn5.gif"/></alternatives>
+</disp-formula>
+<disp-formula id="eqn6">
+<alternatives><graphic xlink:href="20221721v1_eqn6.gif"/></alternatives>
+</disp-formula>
+<disp-formula id="eqn7">
+<alternatives><graphic xlink:href="20221721v1_eqn7.gif"/></alternatives>
+</disp-formula>
+<disp-formula id="eqn8">
+<alternatives><graphic xlink:href="20221721v1_eqn8.gif"/></alternatives>
+</disp-formula>
+<disp-formula id="eqn9">
+<alternatives><graphic xlink:href="20221721v1_eqn9.gif"/></alternatives>
+</disp-formula>
+The exact value of the initial conditions (S(0), I(0), R(0)) is not known. We put the amount of the initial conditions very carefully because these systems of ordinary differential equations are extremely sensitive to the initial parameters.</p>
+<p>X &#x2013; Number of days an infected individual has and may spread the disease <inline-formula><alternatives><inline-graphic xlink:href="20221721v1_inline1.gif"/></alternatives></inline-formula></p>
+<p>Basic reproduction number <italic>R</italic><sub>0</sub> = <italic>&#x03B2;. X</italic></p>
+<p>Therefore, from above, we can write it as <inline-formula><alternatives><inline-graphic xlink:href="20221721v1_inline2.gif"/></alternatives></inline-formula></p>
+<p>Let &#x03B2;(t) and &#x03B3;(t) be the transmission rate and recovering rate at time t. Here</p>
+<p>N &#x2013; Total population</p>
+<p>S &#x2013; A proportion of the entire population that is healthy and has never been infected</p>
+<p>E - A proportion of the whole population exposed to infection, transmit the infection and become Symptomatic or purely asymptomatic without being detected</p>
+<p>A - A proportion of the population that has no symptoms found positive I - A proportion of the population with positive symptoms</p>
+<p>H - A portion of the whole population, which is positive in the test and hospital C - A proportion of the population is seriously ill and requires ICU</p>
+<p>R - A proportion of the population that has recovered from the infection D - A proportion of the whole population who died from the infection.</p>
+<p>The description of some of the notations used in the time-dependent SEAIHCRD model&#x2019;s differential equations is:</p>
+<p>&#x03B7; &#x2013; Social distancing factor</p>
+<p>&#x03B2; &#x2013; Rate of transmission</p>
+<p>&#x03B3;- The Recovery Rate</p>
+<p><italic>&#x03B4;-</italic> The rate of infection transmission from exposed to infectious</p>
+<p><italic>&#x03B1; &#x2013;</italic> Median time to develop asymptomatic to symptomatic symptoms</p>
+<p><italic>&#x03B1;</italic><sub><italic>1</italic></sub> <italic>-</italic> Recovery period of asymptomatic cases</p>
+<p><italic>&#x03A8; &#x2013;</italic> Median time for developing pneumonia and other hospitalization symptoms</p>
+<p><italic>&#x03C3; &#x2013;</italic> Median time to ICU admission from the hospital</p>
+<p><italic>&#x03C6; -</italic> Median Intensive Care Unit (ICU) length of stay</p>
+<p>&#x03C7; - Median hospital stay</p>
+<p><italic>&#x03BC; -</italic> The time of recovery for critical people</p>
+<p>We know that there are limited resources of hospital beds and ICUs available in every country. Sometimes the number of critical cases is more than the number of ICUs. In this condition, doctors have to sort and classify the patients to identify priority and place of treatment. All these conditions are considered in this manuscript.</p>
+<p>If a B number of ICUs and a C number of critical cases exist, then the following condition occurs:</p>
+<list list-type="order">
+<list-item><p>If there are more ICUs than in severe cases, all patients will be treated.</p></list-item>
+<list-item><p>The number of ICUs is less than the number of critical cases (C &#x003E; B), and the number of patients treated will be B, and the rest (C-B) dies due to shortages.</p></list-item>
+</list>
+<p>A time-dependent SEAIHCRD model with critical case analysis is shown in <xref rid="fig5" ref-type="fig">Fig. 5</xref>.</p>
+<fig id="fig5" position="float" fig-type="figure">
+<label>Figure 5:</label>
+<caption><title>A time-dependent SEAIHCRD model with critical case analysis</title></caption>
+<graphic xlink:href="20221721v1_fig5.tif"/>
+</fig>
+<p>The SEAIHCRD model with critical case analysis will modify the ordinary differential equation numbers (6), (7) and (8). Updated equations are as follows:
+<disp-formula id="eqn10">
+<alternatives><graphic xlink:href="20221721v1_eqn10.gif"/></alternatives>
+</disp-formula>
+<disp-formula id="eqn11">
+<alternatives><graphic xlink:href="20221721v1_eqn11.gif"/></alternatives>
+</disp-formula>
+<disp-formula id="eqn12">
+<alternatives><graphic xlink:href="20221721v1_eqn12.gif"/></alternatives>
+</disp-formula>
+We know that COVID-19 data is updated in days [<xref ref-type="bibr" rid="c63">63</xref>]. Hence, we update the differential equations (1), (2), (3), (4), (5), (10), (11), and (12) into discrete-time difference equation:
+<disp-formula id="eqn13">
+<alternatives><graphic xlink:href="20221721v1_eqn13.gif"/></alternatives>
+</disp-formula>
+<disp-formula id="eqn14">
+<alternatives><graphic xlink:href="20221721v1_eqn14.gif"/></alternatives>
+</disp-formula>
+<disp-formula id="eqn15">
+<alternatives><graphic xlink:href="20221721v1_eqn15.gif"/></alternatives>
+</disp-formula>
+<disp-formula id="eqn16">
+<alternatives><graphic xlink:href="20221721v1_eqn16.gif"/></alternatives>
+</disp-formula>
+<disp-formula id="eqn17">
+<alternatives><graphic xlink:href="20221721v1_eqn17.gif"/></alternatives>
+</disp-formula>
+<disp-formula id="eqn18">
+<alternatives><graphic xlink:href="20221721v1_eqn18.gif"/></alternatives>
+</disp-formula>
+<disp-formula id="eqn19">
+<alternatives><graphic xlink:href="20221721v1_eqn19.gif"/></alternatives>
+</disp-formula>
+<disp-formula id="eqn20">
+<alternatives><graphic xlink:href="20221721v1_eqn20.gif"/></alternatives>
+</disp-formula>
+The number of confirmed cases is very low at the very beginning of the spread of the disease, and the majority of the population is susceptible. Hence, for our analysis of COVID-19 in the early stage, we assume that initially, total cases are equal to susceptible cases {S(t) &#x2248; n, t <italic>&#x2265;</italic> 0}.</p>
+</sec>
+</sec>
+</sec>
+<sec id="s3">
+<label>3.</label>
+<title>Data Analysis and parameter estimation</title>
+<p>Compartmental models simplify the mathematical modelling of infectious diseases. Compartmental models are based on ordinary differential equations. A compartmental model can also be used with a stochastic framework that is more accurate but much more complex to analyze. Some initial conditions and characteristic parameters are required to solve these ordinary differential equations. These initial parameters are very sensitive. A small change in them may make a significant difference in outcomes, so they must be carefully introduced in the equations. The distribution of COVID-19 is determined by the nature of several variables in the compartment. Preliminary parameter estimation helps to solve essential consequences like the fatality rate and basic reproduction rate, allowing us to understand more deeply the COVID-19 transmission pattern. In this article, we first collect data for a specific period, then estimate the basic reproduction number, the rate of infection, and the rate of recovery of COVID-19. Based on these estimates, we analyze the spread and endpoint of COVID-19.</p>
+<p>The social distance parameter means that the transmission of infectious diseases will avoid social interactions and physical interaction. &#x03B7; is the parameter of social distancing. The social distancing factor value lies between zero and one. When a lock is implemented, and all people are put in quarantine, its value is null, and its value is one if they follow unrestricted and the routine.</p>
+<sec id="s3a">
+<title>The basic reproduction number R<sub>0</sub> and case fatality rate over time</title>
+<p>The basic reproduction number R<sub>0</sub> is the ratio between the transmission rate and the recovery rate. The basic reproduction number is the average number of people who can potentially be infected by an infected person if no intervention measures are in place. The value of the basic reproduction number is significant, which is very useful in the intervention of the disease. The value of basic reproduction number R<sub>0</sub> changes with time; whenever any country adopts lock-downs, the basic reproduction number value decreases, and when that country removes the lock-down, its value begins to increase again. For strict lock-down, the value of R<sub>0</sub> can be reduced to lower than unity.</p>
+<sec id="s3a1">
+<title>Transmission Rate &#x03B2; (t) and Recovering Rate &#x03B3;(t) by Least Square method</title>
+<p>In this subsection, we track and predict <italic>&#x03B2;</italic>(<italic>t</italic>) and <italic>&#x03B3;</italic>(<italic>t</italic>) by the commonly in linear systems. Denote by <inline-formula><alternatives><inline-graphic xlink:href="20221721v1_inline3.gif"/></alternatives></inline-formula> <italic>and</italic> <inline-formula><alternatives><inline-graphic xlink:href="20221721v1_inline4.gif"/></alternatives></inline-formula> the <italic>predicted</italic> transmission rate and recovering rate. From the FIR filters, they are predicted as follows:
+<disp-formula id="eqn21">
+<alternatives><graphic xlink:href="20221721v1_eqn21.gif"/></alternatives>
+</disp-formula>
+<disp-formula id="eqn22">
+<alternatives><graphic xlink:href="20221721v1_eqn22.gif"/></alternatives>
+</disp-formula>
+Where <italic>J</italic> and <italic>K</italic> are (0 &#x003C; <italic>J, K</italic> &#x003C; <italic>T</italic> &#x2212; 2), <italic>a</italic><sub><italic>j</italic></sub>, <italic>j</italic> = 0, 1,<italic>&#x2026;&#x2026;,J</italic>, and <italic>b</italic><sub><italic>k</italic></sub>, <italic>k</italic> = 0,1,&#x2026;&#x2026;., <italic>K</italic> are the coefficients. There are several widely used machine learning methods for the estimation of these coefficients, e.g., ordinary least squares, regularized least squares (i.e., lasso regression, ridge regression), and partial least squares [64]. We use the least square as our estimation method, which solves the following optimization problem in the present manuscript.
+<disp-formula id="eqn23">
+<alternatives><graphic xlink:href="20221721v1_eqn23.gif"/></alternatives>
+</disp-formula>
+<disp-formula id="eqn24">
+<alternatives><graphic xlink:href="20221721v1_eqn24.gif"/></alternatives>
+</disp-formula>
+R<sub>0</sub> is the ratio of &#x03B2; and &#x03B3; in the compartmental models (R<sub>0</sub>=&#x03B2;/&#x03B3;). Hence, we can say that = <italic>R</italic><sub>0</sub>. <italic>y</italic>. In this manuscript, before the lock-down, the value of R<sub>0</sub> is R<sub>0</sub> start, and if the lock-down is imposed on day L, the value of R<sub>0</sub> is reduced to R<sub>0</sub> end, and the value of &#x03B2; will be changed accordingly. In real life, the basic reproduction number R<sub>0</sub> is not constant and changes over time. When social distancing is imposed or removed, its value will change accordingly. The model illustrates the initial impact of social distancing on the basic reproduction number. The time-dependent variation in R<sub>0</sub> can be given as
+<disp-formula id="eqn25">
+<alternatives><graphic xlink:href="20221721v1_eqn25.gif"/></alternatives>
+</disp-formula>
+The description of the parameters is given below:</p>
+<p><inline-formula><alternatives><inline-graphic xlink:href="20221721v1_inline5.gif"/></alternatives></inline-formula> &#x2013; The value of the R<sub>0</sub> for the first day</p>
+<p><inline-formula><alternatives><inline-graphic xlink:href="20221721v1_inline6.gif"/></alternatives></inline-formula> - The value of R<sub>0</sub> for the last day</p>
+<p>x<sub>0</sub> is the day when R0 drastically decreases or inflection point</p>
+<p>&#x03B7; is the parameter of social distance.</p>
+<p>The value of the x<sub>0</sub> should be given very carefully because it makes a big difference to the result and the value of the <inline-formula><alternatives><inline-graphic xlink:href="20221721v1_inline7.gif"/></alternatives></inline-formula> must be less than 1.</p>
+<p>We know that (R<sub>0</sub> =&#x03B2;/&#x03B3;) then
+<disp-formula id="eqn26">
+<alternatives><graphic xlink:href="20221721v1_eqn26.gif"/></alternatives>
+</disp-formula>
+Where &#x03B2;<sub>1</sub> is the asymptomatic infectious rate, &#x03B3;<sub>1</sub> is the asymptomatic recovery rate, &#x03B2;<sub>2</sub> is the symptomatic infectious rate, and &#x03B3;<sub>2</sub> is the symptomatic recovery rate. The combined probability of asymptomatic &#x03B4; and symptomatic infectious disease (1-&#x03B4;) from the exposed compartment is one ((&#x03B4;)&#x002B;(1-&#x03B4;)=1).</p>
+</sec>
+</sec>
+<sec id="s3b">
+<title>Age-dependent fatality rate</title>
+<p>Infection Fatality Rate is the ratio of the number of deaths to the number of cases. The rate of fatality is not stable and depends on many factors, such as the age factor, fatal diseases. The number of available ICU beds is a common reason, which mostly affects the rate of fatalities. If the majority of people are infected, then the fatality rate is high, and when fewer people are infected, the fatality rate is low. We need more health care if infected people are very high. Sometimes because of the absence of medical facilities, everyone is not treated. Therefore, we need to know what proportion of people are currently infected. Therefore we describe the fatality rate &#x03C6; as
+<disp-formula id="eqn27">
+<alternatives><graphic xlink:href="20221721v1_eqn27.gif"/></alternatives>
+</disp-formula>
+The description of the parameters is given below:</p>
+<p><italic>s</italic> - It is arbitrary, but the fixed value that controls infection</p>
+<p>&#x03C6;<sub>opt</sub> - optimal fatality rate</p>
+<p>The value of parameter <italic>s</italic> is significant as it controls the above equation; very slight changes in s can make a massive difference in results. Therefore, the value of this parameter should be chosen carefully. <italic>I(t)</italic> is the infected at time t, and N is the total population.</p>
+<p>Case fatality analysis is complex, depending on the age group. Therefore, we divide age into different age groups to better analyze the case fatality (e.g. people aged 0 to 9, aged 10-19,&#x2026;.., aged 90-100). Two things are required for the age group analysis are the fatality rate by age group and the proportion of the total population in that age group. If the population of older people is higher, then the death rate will be increased, and if the proportion of young people is higher, then the death rate may be low.</p>
+<p>Therefore, the Death (fatality) rate is calculated as follows:
+<disp-formula id="eqn28">
+<alternatives><graphic xlink:href="20221721v1_eqn28.gif"/></alternatives>
+</disp-formula>
+<disp-formula id="eqn29">
+<alternatives><graphic xlink:href="20221721v1_eqn29.gif"/></alternatives>
+</disp-formula>
+The overall death rate is, therefore, a combination of the above two cases.
+<disp-formula id="eqn30">
+<alternatives><graphic xlink:href="20221721v1_eqn30.gif"/></alternatives>
+</disp-formula>
+All the cases of comorbidity are considered critical cases in this manuscript. The death rate is the ratio between the number of deaths and the number of cases. The probability of dying may be described as if infected by a virus (in percentage) and depends on various age groups. The following table presents the percentages of deaths if a person is infected with COVID-19 in a given age group [<xref ref-type="bibr" rid="c45">45</xref>].</p>
+<table-wrap id="tbl1" orientation="portrait" position="float">
+<label>Table 1:</label>
+<caption><title>Age-wise death rate and comorbidity in all cases</title></caption>
+<graphic xlink:href="20221721v1_tbl1.tif"/>
+</table-wrap>
+</sec>
+<sec id="s3c">
+<title>Hospitalized and critical cases analysis</title>
+<p>We know there is a limited number of hospital beds and ICU beds in every country. All countries are starting new hospitals, opening rooms, etc. to increase the number of hospital beds and ICU beds when the disease spreads. Hence, the number of hospital beds and ICUs is growing over time. We can model the number of beds as follows:
+<disp-formula id="eqn31">
+<alternatives><graphic xlink:href="20221721v1_eqn31.gif"/></alternatives>
+</disp-formula>
+Description of the parameters is given below:</p>
+<p>Beds<sub>hosp0</sub> - Total number of Hospital beds available</p>
+<p><italic>s</italic> - some scaling factor,</p>
+<p>and for ICUs
+<disp-formula id="eqn32">
+<alternatives><graphic xlink:href="20221721v1_eqn32.gif"/></alternatives>
+</disp-formula>
+Description of the parameters is given below:</p>
+<p>Beds<sub>0</sub> - Total number of ICU beds available</p>
+<p><italic>s</italic> - some scaling factor</p>
+<p>As the number of beds shown in the formula increases times per day to determine how many beds are served for the patients in hospitals each day, this is an important factor.</p>
+</sec>
+<sec id="s3d">
+<title>Fitting the model to find some important parameters value</title>
+<p>In this manuscript, we focus on fitting a time-dependent SEAIHCRD model with time-dependent basic reproduction number and fatality of age group, hospital beds, and ICUs with actual COVID-19 data, which come close to the real data and find parameters for our model that can be useful in the future discussions.</p>
+<p>The PYTHON platform used some important libraries such as pandas, NumPy, LMfit, ode, etc. for all the experimental studies. The processor Intel(R) Core (TM) i7-5500U CPU@2.40 GHz, 2401 MHz, 2 Core(s), and 4 Logical Processor(s), 12 GB RAM hardware configuration is used for simulation work.</p>
+<p>The initial assumptions for the parameters are very crucial. First, we need to know what parameters are known and what we need to get out of it. In this proposed model, many parameters have been used. We will calculate some of the parameters and consider some according to the current study and data. There is no need to fit N, just put the population in the place that we need to model. Likewise, one needs not to calculate beds<sub>0</sub>; simply place the number of ICU beds on the model we have. We value some parameters, i.e. the social distance parameter &#x03B7;, in the range 0 to 1, according to the actual data and analysis, where 0 indicates that everyone is locked and quarantined while one is for a regular lifestyle.</p>
+<p>The average incubation period for the virus is 5.2 days but varies between different populations, according to a study by China [<xref ref-type="bibr" rid="c46">46</xref>]. For those exposed to infectious agents, the Chinese team study found that 14 days of medical examinations are required. Median hospital stay is around ten days (&#x03C7;=1/10), the recovery period is around10 days (&#x03B3;=1/10), the median time to develop asymptomatic to symptomatic symptoms is approximately one week (<italic>&#x03B1;=</italic>1/7), and the recovery period of asymptomatic cases is around ten days (<italic>&#x03B1;</italic> <sub><italic>1</italic></sub> <italic>=</italic>1/10). It takes around five days from the appearance of symptoms to the growth of pneumonia [<xref ref-type="bibr" rid="c49">49</xref>, <xref ref-type="bibr" rid="c50">50</xref>], and about severe hypoxemia and ICU admission, the median time between the appearance of symptoms is about five to ten days [<xref ref-type="bibr" rid="c50">50</xref>-<xref ref-type="bibr" rid="c54">54</xref>]. Therefore the median time to develop pneumonia and other symptoms of hospitalization (&#x03C6;=1/5) and hospital to ICU admission (&#x03C3;=1/7) are used in this study [<xref ref-type="bibr" rid="c47">47</xref>-<xref ref-type="bibr" rid="c48">48</xref>]. Finally, for COVID-19 patients, the length of stay in intensive care units (ICUs) was approximately 8-13 days, and the critical recovery time was eight days in a Chinese report[<xref ref-type="bibr" rid="c54">54</xref>, <xref ref-type="bibr" rid="c55">55</xref>]. Therefore, median Intensive Care Unit (ICU) duration of stay &#x03C6; =1/8 and median critical recovery time &#x03BC;=1/8 are chosen.</p>
+<p>The case fatality rate (CFR) is the proportion of cases that die of the disease [<xref ref-type="bibr" rid="c56">56</xref>]. The basic formula for the case fatality rate is <inline-formula><alternatives><inline-graphic xlink:href="20221721v1_inline8.gif"/></alternatives></inline-formula> and this formula is sometimes corrected as <inline-formula><alternatives><inline-graphic xlink:href="20221721v1_inline9.gif"/></alternatives></inline-formula>, Where T is the average time from case confirmation to death.</p>
+<p>We know that <italic>(t)</italic> can be calculated by basic reproduction number <italic>R</italic>0<italic>(t)</italic> and <italic>&#x03B3;</italic>. Hence, no need to find any separate parameter for. The beds scaling factor <italic>s</italic> can be fitted because the number of people being treated due to lack of facility is minimal compared to the number of deaths. Therefore it does not affect much in the result. The proposed model has four estimates of the probabilities <italic>prob(I</italic> &#x2192; <italic>H), prob(H</italic> &#x2192; <italic>C), prob(A</italic> &#x2192; <italic>I) and prob(C</italic> &#x2192; <italic>D)</italic> split by age groups and weighted by age-group proportion. We will try to fit all the above probabilities that are incredibly close to the prediction of a specific risk group, such as diabetics, cancer, heart disease, high blood pressure, etc. now we have to fit all the probabilities <italic>prob(I</italic> &#x2192; <italic>H), prob(H</italic> &#x2192; <italic>C), prob(A</italic> &#x2192; <italic>I) and prob(C</italic> &#x2192; <italic>D)</italic> and <inline-formula><alternatives><inline-graphic xlink:href="20221721v1_inline10.gif"/></alternatives></inline-formula>, <italic>x</italic><sub>0</sub> <italic>and</italic> are the parameters of <italic>R</italic><sub>0</sub><italic>(t)</italic>.</p>
+<p>The Johns Hopkins University Center for Systems Science and Engineering[<xref ref-type="bibr" rid="c57">57</xref>] is the principal source of data. We have gathered and cleaned data from UN data[<xref ref-type="bibr" rid="c58">58</xref>] for age groups, probabilities, and ICU beds. A total number of Hospital beds and ICUs per 100,000 peoples for topmost affected countries. The number of people per age group for top affected countries. Probabilities for <italic>prob(I</italic> &#x2192; <italic>H), prob(H</italic> &#x2192; <italic>C), prob(A</italic> &#x2192; <italic>I) and prob(C</italic> &#x2192; <italic>D)</italic> per age groups, but we use fitted probabilities and collect data on the number of fatalities on a day-to-day basis from January 22, 2020. As the number of reported cases depends on many factors, such as the number of test cases, etc. and hence usually is not very accurate. However, the reported deaths are more accurate. Therefore, we use fatality statistics instead of total or active cases.</p>
+<p>Firstly, we have collected all the related available data and parameters available to us from reliable sources and then defined initial guesses and limits for the remaining parameters of this model within certain limits depending on the situation. We have adopted the Levenberg &#x2013; Marquard algorithm to extract various parameters from the data fitting as this is the most important and effective reported data-fitting algorithm [<xref ref-type="bibr" rid="c59">59</xref>, <xref ref-type="bibr" rid="c60">60</xref>]. For Python, a high-quality interface is provided by the LMfit library for non-linear optimization and curve-fitting problems [<xref ref-type="bibr" rid="c61">61</xref>]. The R-squared value measures the proximity of the data to the fitted line. The R-square value is always between zero and one. In general, higher the R-squared value, better the model a given your data. The curve of death cases in Brazil, India, Mexico, Russia, South Africa, and the United States is shown in <xref rid="fig6" ref-type="fig">Fig. 6</xref></p>
+<table-wrap id="tbl2" orientation="portrait" position="float">
+<label>Table 2:</label>
+<caption><p>R-squared value of curve fitting for Brazil, India, Mexico, Russia, South Africa, and the United States</p></caption>
+<graphic xlink:href="20221721v1_tbl2.tif"/>
+</table-wrap>
+<fig id="fig6" position="float" fig-type="figure">
+<label>Figure 6:</label>
+<caption><p>Curve fitting of death cases in Brazil, India, Mexico, Russia, South Africa, and the United States</p></caption>
+<graphic xlink:href="20221721v1_fig6.tif"/>
+</fig>
+<p>According to the study, most cases are mild or asymptomatic and can recover at home with proper guidance. Fewer percentages of people are critical, but if the patient is old or has some pre-existing illnesses such as chronic respiratory disease, diabetes, cancer, hypertension, and cardiovascular disease, the risk is very high. We gather and analyze data provided by New York City Health as of June 1, 2020 [<xref ref-type="bibr" rid="c61">61</xref>, <xref ref-type="bibr" rid="c62">62</xref>] are shown below:</p>
+<p>We used the publicly available dataset of COVID-19 provided by Johns Hopkins University in this study [83]. This dataset includes the daily count of confirmed cases, recovered cases, and deaths in many countries. The time-series data are available from January 22, 2020, onwards. We also collected and crosschecked data in Worldometer, Coronavirus cases [82], a website providing real-time data for COVID-19. These data are gathered through announcements by public health authorities and report public and unidentified patient data immediately; hence ethical authorization is not necessary.</p>
+<table-wrap id="tbl3" orientation="portrait" position="float">
+<label>Table 3:</label>
+<caption><p>Age-wise rate of hospitalization from infected cases, critical cases from infected cases, and death cases from ICUs</p></caption>
+<graphic xlink:href="20221721v1_tbl3.tif"/>
+</table-wrap>
+</sec>
+<sec id="s3e">
+<title>Distribution of Total cases worldwide</title>
+<p>According to WHO, 216 countries are affected by COVID-19. <xref rid="fig7" ref-type="fig">Fig. 7</xref> shows that 61&#x0025; of cases are from six countries only. The United States of America has the highest number of cases, which alone is 27&#x0025; of the world.</p>
+<fig id="fig7" position="float" fig-type="figure">
+<label>Figure 7:</label>
+<caption><title>Distribution of total cases worldwide</title></caption>
+<graphic xlink:href="20221721v1_fig7.tif"/>
+</fig>
+</sec>
+<sec id="s3f">
+<title>Distribution of Death cases worldwide</title>
+<p>As discussed above, Death cases are more accurate as there is rarely any chance that death due to COVID-19 is not reported or recorded by the related authorities. <xref rid="fig8" ref-type="fig">Fig. 8</xref> shows that 51&#x0025; of cases are from six countries only. The United States of America has the highest number of cases, which alone is 23&#x0025; of the world.</p>
+<fig id="fig8" position="float" fig-type="figure">
+<label>Figure 8:</label>
+<caption><title>Distribution of Death cases worldwide</title></caption>
+<graphic xlink:href="20221721v1_fig8.tif"/>
+</fig>
+</sec>
+<sec id="s3g">
+<title>Total cases</title>
+<p>The <xref rid="fig9" ref-type="fig">fig. 9</xref> shows the country-wise total cases from January 22, 2020 to July 28, 2020 of COVID-19.</p>
+<fig id="fig9" position="float" fig-type="figure">
+<label>Figure 9:</label>
+<caption><p>Day-wise total cases of Brazil, India, Mexico, Russia, South Africa, and the United States</p></caption>
+<graphic xlink:href="20221721v1_fig9.tif"/>
+</fig>
+</sec>
+<sec id="s3h">
+<title>Total death</title>
+<p><xref rid="fig10" ref-type="fig">Fig. 10</xref> shows the country-wise total death from January 22, 2020 to July 28, 2020 of COVID-19.</p>
+<fig id="fig10" position="float" fig-type="figure">
+<label>Figure 10:</label>
+<caption><p>Day-wise total death of Brazil, India, Mexico, Russia, South Africa, and the United States</p></caption>
+<graphic xlink:href="20221721v1_fig10.tif"/>
+</fig>
+</sec>
+<sec id="s3i">
+<title>Daily new cases</title>
+<p><xref rid="fig11" ref-type="fig">Fig. 11</xref> shows the country-wise daily new cases from January 22, 2020 to July 28, 2020 of COVID-19.</p>
+<fig id="fig11" position="float" fig-type="figure">
+<label>Figure 11:</label>
+<caption><title>Daily new cases of Brazil, India, Mexico, Russia, South Africa, and the United States</title></caption>
+<graphic xlink:href="20221721v1_fig11.tif"/>
+</fig>
+</sec>
+<sec id="s3j">
+<title>Daily new death</title>
+<p><xref rid="fig12" ref-type="fig">Fig. 12</xref> shows the country-wise daily new death cases from January 22, 2020 to July 28, 2020 of COVID-19.</p>
+<fig id="fig12" position="float" fig-type="figure">
+<label>Figure 12:</label>
+<caption><title>Daily new death cases of Brazil, India, Mexico, Russia, South Africa, and the United States</title></caption>
+<graphic xlink:href="20221721v1_fig12.tif"/>
+</fig>
+</sec>
+<sec id="s3k">
+<title>Case fatality rate</title>
+<p>The overall fatality rate of an ongoing pandemic is difficult to estimate, but the current fatality rate can be calculated. <xref rid="fig13" ref-type="fig">Fig. 13</xref> shows the Country wise case fatality rate as of the current date of July 28, 2020.</p>
+<fig id="fig13" position="float" fig-type="figure">
+<label>Figure 13:</label>
+<caption><p>Case fatality rate as of July 28, 2020, for Brazil, India, Mexico, Russia, South Africa, and the United States</p></caption>
+<graphic xlink:href="20221721v1_fig13.tif"/>
+</fig>
+</sec>
+<sec id="s3l">
+<title>Age-wise population</title>
+<p>In terms of the age group, the population of Russia and the United States in 70 years and older is more percentage-sized, according to World Bank data. In the age range of 0 to 20 years, the population of South Africa, India, and Brazil is higher. In all these countries, the population distribution of Brazil, India, Mexico, Russia, South Africa, and the United States is nearly equivalent between 20 and 70 years. The population distribution by age group is represented in <xref rid="fig14" ref-type="fig">Fig. 14</xref>.</p>
+<fig id="fig14" position="float" fig-type="figure">
+<label>Figure 14:</label>
+<caption><p>The distribution of the population according to the age category of Brazil, India, Mexico, Russia, South Africa, and the United States</p></caption>
+<graphic xlink:href="20221721v1_fig14.tif"/>
+</fig>
+</sec>
+<sec id="s3m">
+<title>The number of hospital beds per 100k</title>
+<p>Unit beds per 100,000 population or a 100k population, according to WHO and the OECD. Basic measures focus on all hospital beds that are occupied or empty. The Country-wise number of hospital beds is shown in <xref rid="fig15" ref-type="fig">Fig. 15</xref>.</p>
+<fig id="fig15" position="float" fig-type="figure">
+<label>Figure 15:</label>
+<caption><p>The Country-wise number of hospital beds of Brazil, India, Mexico, Russia, South Africa, and the United States</p></caption>
+<graphic xlink:href="20221721v1_fig15.tif"/>
+</fig>
+</sec>
+<sec id="s3n">
+<title>The number of ICU beds per 100k</title>
+<p>ICU Bed Counts are made up of beds per 100,000 population or 100,000 population, according to WHO and OECD. ICU beds are provided for all cases with severe conditions. The Country-wise number of ICU beds is shown in <xref rid="fig16" ref-type="fig">Fig. 16</xref></p>
+<fig id="fig16" position="float" fig-type="figure">
+<label>Figure 16:</label>
+<caption><p>The Country-wise number of ICU beds of Brazil, India, Mexico, Russia, South Africa, and the United States</p></caption>
+<graphic xlink:href="20221721v1_fig16.tif"/>
+</fig>
+</sec>
+</sec>
+<sec id="s4">
+<label>4</label>
+<title>Results and Discussion</title>
+<p>We analyze and forecast in this section, using our proposed A time-dependent SEAIHCRD model, the pattern of COVID-19 among the world&#x2019;s most affected countries. The result of our proposed method shows that Brazil, Russia, South Africa, and the United States have experienced their worst time. India and Mexico have yet to see a peak at the end of August. If the number of cases is very high in the middle and late August, hospital beds and ICU beds will be needed in India and Mexico. Geographical conditions are entirely different in some countries. The distribution of cases in these areas is also very random. In some places, it spreads too much, and in some places, it spreads far less. In India, the distribution of disease is very random, e.g., the number of cases in Maharashtra, Tamil Nadu, Andhra Pradesh, Karnataka, and Delhi is very high as compared to other states. According to the proposed method, cases in India will start to decline continuously in the first week of September, and the cases will end completely in the first week of November. If we compare the results of our proposed method with real-world data, it is mostly the same. In this section, we calculate for each country the basic reproduction number, the case fatality rate, the number of hospital beds required at peak time, and the number of ICU beds required when serious cases are high.</p>
+<sec id="s4a">
+<label>4.1</label>
+<title>A time-dependent SEAIHCRD model for Brazil</title>
+<p>Brazil is one of the most affected countries by the COVID-19 disease, just behind the United States as of the starting of June 2020. According to the proposed method, cases in Brazil will start to decline continuously in the first week of August, and the cases will end completely in the first week of November. The cases reach a peak in Brazil, according to our proposed method, in July and August. The result of our proposed method shows that Brazil will need some Hospital beds and ICU beds in June, July, and August, when the number of cases is at a peak. The result shows the basic reproduction rate is 4.0 in starting after some time, it starts decreasing visually and goes up to one and even lower. A time-dependent SEAIHCRD model for Brazil shows that the case fatality rate of COVID-19 in Brazil is moderate. There are many ups and downs in the daily case fatality rate, but it goes higher and higher up to 5.5 in our model and then slows down, and total CFR is nearly 3.5 overall. The proposed model for Brazil showing that around 200<sup>th</sup> day, the number of hospital beds and the number of ICU beds are required. That time the number of death cases is 1800 per day, and daily-hospitalized cases are nearly 3100. The proposed method requires approximately 550 hospital beds and 500 ICU beds when the cases are at their peak in Brazil. A time-dependent SEAIHCRD model results for Brazil has shown in <xref rid="fig17" ref-type="fig">Fig. 17</xref></p>
+<fig id="fig17" position="float" fig-type="figure">
+<label>Figure 17:</label>
+<caption><p>A time-dependent SEAIHCRD model for Brazil. <bold>(a)</bold> The spread scenario of A time-dependent SEAIHCRD model for Brazil. A 500-day analysis has been done by the proposed model, which starts from January 22. <bold>(b)</bold> In this, the peak point of the model has shown by zooming for cases. <bold>(c)</bold> The basic reproduction number of Brazil over time <bold>(d)</bold> the case fatality rate of Brazil over time. <bold>(e)</bold> Daily death cases in Brazil, where the red line shows the number of deaths per day and the blue line shows how many ICU beds are required during peak days. <bold>(f)</bold> Brazil&#x2019;s Daily Hospital Cases, where the red line indicates the number of hospital cases per day, and the blue line shows how many hospital beds are required during peak days.</p></caption>
+<graphic xlink:href="20221721v1_fig17.tif"/>
+<graphic xlink:href="20221721v1_fig17a.tif"/>
+</fig>
+</sec>
+<sec id="s4b">
+<label>4.2</label>
+<title>A time-dependent SEAIHCRD model for India</title>
+<p>India is one of the most affected countries by the COVID-19 disease, just behind the United States and Brazil as of May 2020. According to the proposed method, cases in India will start to decline continuously in the first week of September, and the cases will end completely in the first week of December. The cases reach a peak in India, according to our proposed method in August. The result of our proposed method shows that India will need some Hospital beds and ICU beds in July, August, and September, when the number of cases is at a peak. The result shows the basic reproduction rate is 2.2 in starting after some time, it starts decreasing visually and goes up to one and even lower. A time-dependent SEAIHCRD model for India shows that the case fatality rate of COVID-19 in India is meagre. There are many ups and downs in the daily case fatality rate, but it goes higher and higher up to 2.7 in our model and then slows down, and total CFR is nearly 2.2 overall. The proposed model for India shows that around 230<sup>th</sup> day, maximum number of hospital beds and the number of ICU beds are required. At that time, the number of death cases is 1200 per day, and daily-hospitalized cases are nearly 2600. As per the proposed method needs approximately 700 hospital beds, and 300 ICU beds will be required during the peak time of COVID-19 in India. A time-dependent SEAIHCRD model results for India has shown in <xref rid="fig18" ref-type="fig">Fig. 18</xref>.</p>
+<fig id="fig18" position="float" fig-type="figure">
+<label>Figure 18:</label>
+<caption><p>A time-dependent SEAIHCRD model for India. <bold>(a)</bold> The spread scenario of A time-dependent SEAIHCRD model for India. A 500-day analysis has been done by the proposed model, which starts from January 22. <bold>(b)</bold> In this, the peak point of the model has shown by zooming for cases. <bold>(c)</bold> The basic reproduction number of India over time <bold>(d)</bold> the case fatality rate of India over time. <bold>(e)</bold> Daily death cases in India, where the red line shows the number of deaths per day and the blue line shows how many ICU beds are required during peak days. <bold>(f)</bold> India&#x2019;s Daily Hospital Cases, where the red line indicates the number of hospital cases per day, and the blue line shows how many hospital beds are required during peak days.</p></caption>
+<graphic xlink:href="20221721v1_fig18.tif"/>
+<graphic xlink:href="20221721v1_fig18a.tif"/>
+</fig>
+</sec>
+<sec id="s4c">
+<label>4.3</label>
+<title>A time-dependent SEAIHCRD model for Mexico</title>
+<p>Mexico is the fourth most affected countries by COVID-19 disease. According to the proposed method, cases in Mexico will start to decline continuously in the first week of September, and the cases will end completely in the first week of December. The cases reach a peak in Mexico, according to our proposed method, in August and September. The result of our proposed method shows that Mexico will need some Hospital beds and ICU beds in July, August, and September, when the number of cases is at a peak. The result shows the basic reproduction rate is 2.2 in starting, and then after some time, it starts decreasing visually and goes up to one and even lower. A time-dependent SEAIHCRD model for Mexico shows that the case fatality rate of COVID-19 in Mexico is very high. There are many ups and downs in the daily case fatality rate, but it goes higher and higher up to 11.5 in our model and then slows down, and total CFR is nearly 5.0. The proposed model for Mexico showing that around 240th day, the number of hospital beds and the number of ICU beds are required. That time the number of death cases is 950 per day, and daily-hospitalized cases are nearly 650. The proposed method requires approximately 150 hospital beds and 200 ICU beds when the cases are at their peak in Mexico. Mexico&#x2019;s case fatality rate is very high, so the death cases are very high here, and with more critical cases, more ICU beds will be needed. A time-dependent SEAIHCRD model results for Mexico has shown in <xref rid="fig19" ref-type="fig">Fig. 19</xref>.</p>
+<fig id="fig19" position="float" fig-type="figure">
+<label>Figure 19:</label>
+<caption><p>A time-dependent SEAIHCRD model for Mexico. <bold>(a)</bold> The spread scenario of A time-dependent SEAIHCRD model for Mexico. A 500-day analysis has been done by the proposed model, which starts from January 22. <bold>(b)</bold> In this, the peak point of the model has shown by zooming for cases. <bold>(c)</bold> The basic reproduction number of Mexico over time <bold>(d)</bold> the case fatality rate of Mexico over time. <bold>(e)</bold> Daily death cases in Mexico, where the red line shows the number of deaths per day and the blue line shows how many ICU beds are required during peak days. <bold>(f)</bold> Mexico&#x2019;s Daily Hospital Cases, where the red line indicates the number of hospital cases per day, and the blue line shows how many hospital beds are required during peak days.</p></caption>
+<graphic xlink:href="20221721v1_fig19.tif"/>
+<graphic xlink:href="20221721v1_fig19a.tif"/>
+</fig>
+</sec>
+<sec id="s4d">
+<label>4.4</label>
+<title>A time-dependent SEAIHCRD model for Russia</title>
+<p>Russia is also one of the most affected countries by COVID-19 disease. According to the proposed method, cases in Russia will start to decline continuously in the first week of June, and the cases will end completely in the last week of October. The cases reach a peak in Russia in May and June, according to our proposed method. The result of our proposed method shows that Russia will need some Hospital beds and ICU beds in May, June, and July when the number of cases is at a peak. The result shows the basic reproduction rate is 3.0 in starting, which starts decreasing visually after some time and goes up to one and even lower. A time-dependent SEAIHCRD model for Russia shows that the case fatality rate of COVID-19 in Russia is very low. There are many ups and downs in the daily case fatality rate with a maximum value of 1.6 in our model and then slows down, and total CFR is nearly 1.4. The proposed model for Russia showing that around 170<sup>th</sup> day, the number of hospital beds and the number of ICU beds are required. That time the number of death cases is 300 per day, and daily-hospitalized cases are nearly 2000. The proposed method requires approximately 300 hospital beds and 60 ICU beds when the cases are at their peak in Russia. A time-dependent SEAIHCRD model results for Russia has shown in <xref rid="fig20" ref-type="fig">Fig. 20</xref>.</p>
+<fig id="fig20" position="float" fig-type="figure">
+<label>Figure 20:</label>
+<caption><p>A time-dependent SEAIHCRD model for Russia. <bold>(a)</bold> The spread scenario of A time-dependent SEAIHCRD model for Russia. A 500-day analysis has been done by the proposed model, which starts from January 22. <bold>(b)</bold> In this, the peak point of the model has shown by zooming for cases. <bold>(c)</bold> The basic reproduction number of Russia over time <bold>(d)</bold> the case fatality rate of Russia over time. <bold>(e)</bold> Daily death cases in Russia, where the red line shows the number of deaths per day and the blue line shows how many ICU beds are required during peak days. <bold>(f)</bold> Russia&#x2019;s Daily Hospital Cases, where the red line indicates the number of hospital cases per day, and the blue line shows how many hospital beds are required during peak days.</p></caption>
+<graphic xlink:href="20221721v1_fig20.tif"/>
+<graphic xlink:href="20221721v1_fig20a.tif"/>
+</fig>
+</sec>
+<sec id="s4e">
+<label>4.5</label>
+<title>A time-dependent SEAIHCRD model for South Africa</title>
+<p>South Africa is one of the most affected countries by COVID-19 disease. According to the proposed method, cases in South Africa will start to decline continuously in the third week of July, and the cases will end completely in the last week of October. The cases reach a peak in South Africa, according to our proposed method, in July and August. The result of our proposed method shows that South Africa will need some Hospital beds and ICU beds in July when the number of cases is at a peak. The result also indicates the basic reproduction rate is 4.5 in starting that decreases visually to values lower that one at a later time. A time-dependent SEAIHCRD model for South Africa shows that the case fatality rate of COVID-19 in South Africa is very low. The daily case fatality rate attains a maximum of 2.4 with many fluctuations in between and then slows down. The total CFR is coming out to be nearly 1.6. The proposed model for South Africa showing that around 175<sup>th</sup> day, the number of hospital beds and the number of ICU beds are required. That time the number of death cases is 450 per day, and daily-hospitalized cases are nearly 1000. The proposed method requires approximately 150 hospital beds and 60 ICU beds when the cases are at their peak in South Africa. A time-dependent SEAIHCRD model results for South Africa has shown in <xref rid="fig21" ref-type="fig">Fig. 21</xref>.</p>
+<fig id="fig21" position="float" fig-type="figure">
+<label>Figure 21:</label>
+<caption><p>A time-dependent SEAIHCRD model for South Africa. <bold>(a)</bold> The spread scenario of A time-dependent SEAIHCRD model for South Africa. A 500-day analysis has been done by the proposed model, which starts from January 22. <bold>(b)</bold> In this, the peak point of the model has shown by zooming for cases. <bold>(c)</bold> The basic reproduction number of South Africa over time <bold>(d)</bold> the case fatality rate of South Africa over time. <bold>(e)</bold> Daily death cases in South Africa, where the red line shows the number of deaths per day and the blue line shows how many ICU beds are required during peak days. <bold>(f)</bold> South Africa&#x2019;s Daily Hospital Cases, where the red line indicates the number of hospital cases per day, and the blue line shows how many hospital beds are required during peak days.</p></caption>
+<graphic xlink:href="20221721v1_fig21.tif"/>
+<graphic xlink:href="20221721v1_fig21a.tif"/>
+</fig>
+</sec>
+<sec id="s4f">
+<label>4.6</label>
+<title>A time-dependent SEAIHCRD model for the United States</title>
+<p>The United States is the most affected country by the COVID-19 disease. According to the proposed method, cases in the United States will start to decline continuously in the first week of July, and the cases will end completely in the last week of November. The cases reach on the peak in the United States, according to our proposed method, in July and August. The results of our proposed method show that the United States will need some Hospital beds and ICU beds in June, July, and August, when the number of cases is at a peak. The result shows the basic reproduction rate is 4.2 in starting, and after some time, it starts decreasing visually and goes up to one and even lower. A time-dependent SEAIHCRD model for the United States shows that the case fatality rate of COVID-19 in the United States is moderate. There are many ups and downs in the daily case fatality rate, but it goes higher and higher up to 5.5 in our model and then slows down, and total CFR is nearly 3.5. The proposed model for the United States is showing that around the 220<sup>th</sup> day, the number of hospital beds and the number of ICU beds are required. That time the number of death cases is 3500 per day, and daily-hospitalized cases are nearly 14000. The proposed method requires approximately 1000 hospital beds and 250 ICU beds when the cases are at their peak in the United States. A time-dependent SEAIHCRD model results for the United States has shown in <xref rid="fig22" ref-type="fig">Fig. 22</xref>.</p>
+<fig id="fig22" position="float" fig-type="figure">
+<label>Figure 22:</label>
+<caption><p>A time-dependent SEAIHCRD model for the United States. <bold>(a)</bold> The spread scenario of A time-dependent SEAIHCRD model for the United States. A 500-day analysis has been done by the proposed model, which starts from January 22. <bold>(b)</bold> In this, the peak point of the model has shown by zooming for cases. <bold>(c)</bold> The basic reproduction number of the United States over time <bold>(d)</bold> the case fatality rate of The United States over time. <bold>(e)</bold> Daily death cases in the United States, where the red line shows the number of deaths per day and the blue line shows how many ICU beds are required during peak days. <bold>(f)</bold> The United States Daily Hospital Cases, where the red line indicates the number of hospital cases per day, and the blue line shows how many hospital beds are required during peak days.</p></caption>
+<graphic xlink:href="20221721v1_fig22.tif"/>
+<graphic xlink:href="20221721v1_fig22a.tif"/>
+</fig>
+</sec>
+</sec>
+<sec id="s5">
+<title>Discussion</title>
+<p>Results from the time-dependent SEAIHCRD model suggest that this model has excellent potential for predicting the incidence of COVID-19 diseases in time series. The central aspect of our proposed model is the addition of hospitalized, critical and asymptomatic infectious compartment, which improves the basic understanding of disease spread and results. Most of the cases are mild or asymptomatic, and asymptomatic cases do not show any symptoms. Still, after some time, some asymptomatic cases show disease symptoms; all of these scenarios are considered in the proposed model. We have the number of hospital beds and the number of ICU beds of the selected countries; based on that, we have calculated the number of beds required in the peak days of infection. Basic reproduction number and case fatality rate are the basic measures for any epidemic that we have also calculated. Sometimes conditions get worse because of a massive number of infected people at the same time, and the country does not have facilities to treat all critical cases when triage conditions occur. The time-dependent SEAIHCRD model can solve the problem of triage.</p>
+<p>The model will propagate and forecast dynamic evolution after estimating the model parameters based on available clinical data. The proposed model is very sensitive to the initial conditions and values of the parameters. We are mainly focused on death cases because death cases hardly go undetected. The proposed model also estimates the approximate date when cases of death are unlikely to occur.</p>
+<sec id="s5a">
+<title>Limitations</title>
+<p>Modelling is one of the most powerful tools that give intuitive effects when multiple factors act together. No model is perfect. Like any other mathematical model, our proposed model also has some limitations as following</p>
+<p>Our Ordinary Differential Equations system is very sensitive to initial parameters. Hence, while giving the initial parameters, one should be very careful. Small parameter changes can cause a massive difference in results. We put cases in the death compartment that are serious and not found treatment in ICU care. Our method is focused, in particular, on serious cases and deaths. The proposed model considers that the value of R<sub>0</sub> cannot be increased; either it decreases or remains constant. We have assumed that the cases that have been recovered will be immunized, meaning that they will not be infected again.</p>
+</sec>
+</sec>
+<sec id="s6">
+<label>5.</label>
+<title>Conclusion</title>
+<p>A mathematical model is a potent tool for the quantitative behaviour of any physical phenomenon, including any pandemic like COVID-19. Some mathematical models like the SIR model and SEIR model have been widely used for the prediction of disease outbreak and spread behaviour. Our proposed time-dependent SEAIHCRD-Model is an extension of the SEIR-Model in which four-compartments are added that are Asymptomatic infectious, hospitalized, critical, and death compartment. Some people have not seen any symptoms of the disease. They are going to the asymptomatic infectious compartment. Some people have seen symptoms of the disease. They are going to the symptomatic infectious compartment. People with a serious infection who have severe pneumonia-like symptoms need hospitalization. These individuals may either recover or move to the critical compartment. The study indicates that most cases are mild or asymptomatic and are carefully monitored at home. Less percentage of people are critical, but if the patient is old or has some pre-existing disease, such as chronic respiratory disease, diabetes, cancer, hypertension, and cardiovascular disease, they are at high risk and may need treatment in an ICU. They either recover from the disease or die of it.</p>
+<p>The proposed model estimates the date and magnitude of peaks of corresponding to exposed people, number of asymptomatic infectious people, symptomatic infectious people, the number of people hospitalized, number of people admitted in ICUs, and the number of death of COVID-19. This proposed model is time-dependent, so we calculate the number of cases asymptomatic infectious cases, symptomatic infectious cases, hospitalized cases, critical cases with time. We have COVID-19 data on hospital beds and ICU beds of most infected countries after we calculate the hospitalized cases and critical cases using the proposed model. Based on our calculation, we can tell how many beds are required. A time-dependent SEAIHCRD model also calculates the basic reproduction number over time, and its computational results are almost the same as the actual data, but sometimes vary. We also calculate the case fatality rate over time for the countries most affected by COVID-19. The proposed model calculates two types of Case fatality rate: one is CFR daily, and the other is total CFR.</p>
+<p>According to the present time-dependent SEAIHCRD model, Mexico&#x2019;s case fatality rate is very high, so the death cases are very high there, and with more critical cases, more ICU beds will be needed. The case fatality rate and basic reproduction number of India, South Africa, and Russia are quite low; hence, the number of deaths here is also low. The United States is most affected country by COVID-19 disease. The United States is taking more time to recover because of more number of cases there. The number of cases and death decreased in the country following the lock-down. Cases in India and Mexico will be at the top in August, and the number of hospital beds and ICU beds will be required during this peak period. India cases will almost stop coming in the first week of December. Brazil is one of the most affected countries by the COVID-19 disease just after the United States, and its cases will almost stop coming in the first week of November.</p>
+</sec>
+</body>
+<back>
+<sec sec-type="data-availability">
+<title>Data Availability</title>
+<p>We used public available data which are taken from trusted government agencies</p>
+<p>
+<ext-link ext-link-type="uri" xlink:href="https://www.who.int/">https://www.who.int/</ext-link>
+</p>
+<p>
+<ext-link ext-link-type="uri" xlink:href="https://www.mohfw.gov.in/">https://www.mohfw.gov.in/</ext-link>
+</p>
+</sec>
+<sec id="s7">
+<title>Conflicts of Interest</title>
+<p>&#x201C;The authors have no conflicts of interest to report regarding the present study.&#x201D;</p>
+</sec>
+<ack>
+<title>Acknowledgement</title>
+<p>The work has been supported by a grant received from the Ministry of Education, Government of India under the Scheme for the Promotion of Academic and Research Collaboration (SPARC) (ID: SPARC/2019/1396).</p>
+</ack>
+<ref-list>
+<title>References</title>
+<ref id="c1"><label>1.</label><mixed-citation publication-type="other"><collab>&#x201C;Novel Coronavirus-China&#x201D;</collab>. <source>World Health Organization (WHO)</source>. <month>April</month> 9, <year>2020</year>.</mixed-citation></ref>
+<ref id="c2"><label>2.</label><mixed-citation publication-type="other"><collab>&#x201C;Is the World Ready for the Coronavirus?&#x2014;Distrust in science and institutions could be a major problem if the outbreak worsens&#x201D;</collab>. <source>The New York Times</source>.</mixed-citation></ref>
+<ref id="c3"><label>3.</label><mixed-citation publication-type="other"><collab>&#x201C;Laboratory testing of human suspected cases of novel coronavirus (nCoV) infection</collab>. <source>Interim guidance, January 10, 2020&#x201D;</source>. 2020-01-20.</mixed-citation></ref>
+<ref id="c4"><label>4.</label><mixed-citation publication-type="other"><collab>&#x201C;Novel Coronavirus 2019, Wuhan, China&#x201D;</collab>. <ext-link ext-link-type="uri" xlink:href="http://www.cdc.gov">www.cdc.gov</ext-link> (CDC). 2020-01-23</mixed-citation></ref>
+<ref id="c5"><label>5.</label><mixed-citation publication-type="other"><collab>&#x201C;2019 Novel Coronavirus infection (Wuhan, China</collab>): <source>Outbreak update&#x201D;. Canada.ca</source>. 2020-01-21.</mixed-citation></ref>
+<ref id="c6"><label>6.</label><mixed-citation publication-type="other"><collab>&#x201C;Statement on the second meeting of the International Health Regulations</collab> (<year>2005</year>) <article-title>Emergency Committee regarding the outbreak of novel coronavirus (2019-nCoV)&#x201D;</article-title>. <source>World Health Organization (WHO)</source>. <month>January</month> 30, 2020.</mixed-citation></ref>
+<ref id="c7"><label>7.</label><mixed-citation publication-type="other"><collab>&#x201C;WHO Director-General&#x2019;s opening remarks at the media briefing on COVID-19&#x2014;11 March 2020&#x201D;</collab>. <source>World Health Organization</source>. <month>March</month> 11, <year>2020</year>.</mixed-citation></ref>
+<ref id="c8"><label>8.</label><mixed-citation publication-type="other"><collab>&#x201C;A List of What&#x2019;s Been Canceled Because of the Coronavirus&#x201D;</collab>. <source>The New York Times</source>. <month>April</month> 1, <year>2020</year>.</mixed-citation></ref>
+<ref id="c9"><label>9.</label><mixed-citation publication-type="other"><collab>&#x201C;Interim Clinical Guidance for Management of Patients with Confirmed Coronavirus Disease (COVID-19)&#x201D;</collab>. <source>Centers for Disease Control and Prevention (CDC)</source>. <month>April</month> 6, <year>2020</year>.</mixed-citation></ref>
+<ref id="c10"><label>10.</label><mixed-citation publication-type="other"><collab>&#x201C;COVID-19 vaccine development pipeline&#x201D;</collab>. <source>Vaccine Centre, London School of Hygiene and Tropical Medicine</source>. <month>July</month> 15, <year>2020</year>.</mixed-citation></ref>
+<ref id="c11"><label>11.</label><mixed-citation publication-type="other"><collab>&#x201C;COVID-19 vaccine tracker&#x201D;</collab>. <source>Milken Institute</source>. <month>June</month> 23, <year>2020</year>.</mixed-citation></ref>
+<ref id="c12"><label>12.</label><mixed-citation publication-type="other"><collab>&#x201C;Draft landscape of COVID 19 candidate vaccines&#x201D;</collab>. <source>World Health Organization</source>. <month>July</month> 21, <year>2020</year>.</mixed-citation></ref>
+<ref id="c13"><label>13.</label><mixed-citation publication-type="other"><collab>&#x201C;Transmission of COVID-19 by asymptomatic cases&#x201D;</collab>, <source>WHO EMRO, August 20</source>, <year>2020</year>.</mixed-citation></ref>
+<ref id="c14"><label>14.</label><mixed-citation publication-type="journal"><string-name><surname>Dong</surname>, <given-names>Y.</given-names></string-name> <etal>et al.</etal> <article-title>Epidemiological characteristics of 2,143 pediatric patients with 2019 coronavirus disease in China</article-title>. <source>Pediatrics</source> <volume>145</volume>, <fpage>e20200702</fpage> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c15"><label>15.</label><mixed-citation publication-type="website"><string-name><surname>Zhao</surname>, <given-names>X.</given-names></string-name> <etal>et al.</etal> <source>Incidence, clinical characteristics and prognostic factor of patients with COVID-19: a systematic review and meta-analysis</source>. Preprint at <ext-link ext-link-type="uri" xlink:href="http://medrxiv.org/lookup/doi/10.1101/2020.03.17.20037572">http://medrxiv.org/lookup/doi/10.1101/2020.03.17.20037572</ext-link> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c16"><label>16.</label><mixed-citation publication-type="website"><string-name><given-names>Anne-Marike</given-names> <surname>Schifer</surname></string-name>, &#x201C;<article-title>Controlling COVID-19</article-title>&#x201D;, <source>Epidemiology Lancet Glob. Health</source> <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/S2214-109X(20)30074-7">https://doi.org/10.1016/S2214-109X(20)30074-7</ext-link>, 11 <month>May</month> <year>2020</year>.</mixed-citation></ref>
+<ref id="c17"><label>17.</label><mixed-citation publication-type="journal"><string-name><given-names>Ottar N.</given-names> <surname>Bj&#x00F8;rnstad</surname></string-name>, <string-name><given-names>Katriona</given-names> <surname>Shea</surname></string-name>, <string-name><given-names>Martin</given-names> <surname>Krzywinski</surname></string-name> and <string-name><given-names>Naomi</given-names> <surname>Altman</surname></string-name>, &#x201C;<article-title>Modeling infectious epidemics</article-title>,&#x201D; <source>Nature Methods</source>, VOL <volume>17</volume>, <month>May</month> <year>2020</year>, <fpage>453</fpage>&#x2013;<lpage>456</lpage>.</mixed-citation></ref>
+<ref id="c18"><label>18.</label><mixed-citation publication-type="journal"><string-name><given-names>W O</given-names> <surname>Kermack</surname></string-name> and <string-name><given-names>A G</given-names> <surname>McKendrick.</surname></string-name> &#x201C;<article-title>A contribution to the mathematical theory of epidemics</article-title>.&#x201D; <source>Proceedings of the royal society of London.1927.Series A, Containing papers of a mathematical and physical character</source>, <volume>115</volume>(<issue>772</issue>):<fpage>700</fpage>&#x2013;<lpage>721</lpage>.</mixed-citation></ref>
+<ref id="c19"><label>19.</label><mixed-citation publication-type="book"><string-name><surname>Brauer</surname>, <given-names>F.</given-names></string-name> &#x0026; <string-name><given-names>C</given-names> <surname>Ch&#x00E1;vez</surname></string-name>, <source>&#x201C;Mathematical Models in Population Biology and Epidemiology.&#x201D;</source> <publisher-name>Springer</publisher-name>(<year>2001</year>).</mixed-citation></ref>
+<ref id="c20"><label>20.</label><mixed-citation publication-type="journal"><string-name><surname>Davies</surname>, <given-names>N.G.</given-names></string-name>, <string-name><surname>Klepac</surname>, <given-names>P.</given-names></string-name>, <string-name><surname>Liu</surname>, <given-names>Y.</given-names></string-name> <etal>et al.</etal> <article-title>Age-dependent effects in the transmission and control of COVID-19 epidemics</article-title>. <source>Nat Med</source> <volume>26</volume>, <fpage>1205</fpage>&#x2013;<lpage>1211</lpage> (<year>2020</year>). <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1038/s41591-020-0962-9">https://doi.org/10.1038/s41591-020-0962-9</ext-link></mixed-citation></ref>
+<ref id="c21"><label>21.</label><mixed-citation publication-type="journal"><string-name><surname>Giordano</surname>, <given-names>G.</given-names></string-name>, <string-name><surname>Blanchini</surname>, <given-names>F.</given-names></string-name>, <string-name><surname>Bruno</surname>, <given-names>R.</given-names></string-name> <etal>et al.</etal> <article-title>Modelling the COVID-19 epidemic and implementation of population-wide interventions in Italy</article-title>. <source>Nat Med</source> <volume>26</volume>, <fpage>855</fpage>&#x2013;<lpage>860</lpage> (<year>2020</year>). <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1038/s41591-020-0883-7">https://doi.org/10.1038/s41591-020-0883-7</ext-link></mixed-citation></ref>
+<ref id="c22"><label>22.</label><mixed-citation publication-type="journal"><string-name><surname>Eker</surname>, <given-names>S.</given-names></string-name> <article-title>Validity and usefulness of COVID-19 models</article-title>. <source>Humanit Soc Sci Commun</source> <volume>7</volume>, <fpage>54</fpage> (<year>2020</year>). <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1057/s41599-020-00553-4">https://doi.org/10.1057/s41599-020-00553-4</ext-link></mixed-citation></ref>
+<ref id="c23"><label>23.</label><mixed-citation publication-type="journal"><string-name><surname>Vespignani</surname>, <given-names>A.</given-names></string-name>, <string-name><surname>Tian</surname>, <given-names>H.</given-names></string-name>, <string-name><surname>Dye</surname>, <given-names>C.</given-names></string-name> <etal>et al.</etal> <article-title>Modelling COVID-19</article-title>. <source>Nat Rev Phys</source> <volume>2</volume>, <fpage>279</fpage>&#x2013;<lpage>281</lpage> (<year>2020</year>). <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1038/s42254-020-0178-4">https://doi.org/10.1038/s42254-020-0178-4</ext-link></mixed-citation></ref>
+<ref id="c24"><label>24.</label><mixed-citation publication-type="journal"><string-name><surname>Tsay</surname>, <given-names>C.</given-names></string-name>, <string-name><surname>Lejarza</surname>, <given-names>F.</given-names></string-name>, <string-name><surname>Stadtherr</surname>, <given-names>M.A.</given-names></string-name> <etal>et al.</etal> <article-title>Modeling, state estimation, and optimal control for the US COVID-19 outbreak</article-title>. <source>Sci Rep</source> <volume>10</volume>, <fpage>10711</fpage> (<year>2020</year>). <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1038/s41598-020-67459-8">https://doi.org/10.1038/s41598-020-67459-8</ext-link></mixed-citation></ref>
+<ref id="c25"><label>25.</label><mixed-citation publication-type="journal"><string-name><surname>Gog</surname>, <given-names>J.R.</given-names></string-name> <article-title>How you can help with COVID-19 modelling</article-title>. <source>Nat Rev Phys</source> <volume>2</volume>, <fpage>274</fpage>&#x2013;<lpage>275</lpage> (<year>2020</year>). <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1038/s42254-020-0175-7">https://doi.org/10.1038/s42254-020-0175-7</ext-link></mixed-citation></ref>
+<ref id="c26"><label>26.</label><mixed-citation publication-type="journal"><string-name><surname>Xu</surname>, <given-names>B.</given-names></string-name>, <string-name><surname>Gutierrez</surname>, <given-names>B.</given-names></string-name>, <string-name><surname>Mekaru</surname>, <given-names>S.</given-names></string-name> <etal>et al.</etal> <article-title>Epidemiological data from the COVID-19 outbreak, real-time case information</article-title>. <source>Sci Data</source> <volume>7</volume>, <fpage>106</fpage> (<year>2020</year>). <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1038/s41597-020-0448-0">https://doi.org/10.1038/s41597-020-0448-0</ext-link></mixed-citation></ref>
+<ref id="c27"><label>27.</label><mixed-citation publication-type="website"><string-name><surname>Singh</surname> <given-names>A.</given-names></string-name>, <string-name><surname>Bajpai</surname> <given-names>M.K.</given-names></string-name>, &#x201C;<article-title>SEIHCRD Model for COVID-19 spread scenarios, disease predictions and estimates the basic reproduction number, case fatality rate, hospital, and ICU beds requirement &#x201C;</article-title> <source>medRxiv</source> 2020.07.24.20161752; doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1101/2020.07.24.20161752">https://doi.org/10.1101/2020.07.24.20161752</ext-link></mixed-citation></ref>
+<ref id="c28"><label>28.</label><mixed-citation publication-type="website"><string-name><surname>Chandra</surname> <given-names>S.K.</given-names></string-name>, <string-name><surname>Singh</surname> <given-names>A.</given-names></string-name>, <string-name><surname>Bajpai</surname> <given-names>M.K.</given-names></string-name>, &#x201C;<article-title>Mathematical Model with Social Distancing Parameter for Early Estimation of COVID-19 Spread &#x201C;</article-title>, <source>medRxiv</source> 2020.04.30.20086611; doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1101/2020.04.30.20086611">https://doi.org/10.1101/2020.04.30.20086611</ext-link></mixed-citation></ref>
+<ref id="c29"><label>29.</label><mixed-citation publication-type="website"><string-name><surname>Singh</surname> <given-names>A.</given-names></string-name>, <string-name><surname>Chandra</surname> <given-names>S.K.</given-names></string-name>, <string-name><surname>Bajpai</surname> <given-names>M.K.</given-names></string-name>, &#x201C;<article-title>Study of Non-Pharmacological Interventions on COVID-19 Spread &#x201C;</article-title>, <source>medRxiv</source> 2020.05.10.20096974; doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1101/2020.05.10.20096974">https://doi.org/10.1101/2020.05.10.20096974</ext-link></mixed-citation></ref>
+<ref id="c30"><label>30.</label><mixed-citation publication-type="website"><string-name><surname>Singh</surname> <given-names>K.K.</given-names></string-name>, <string-name><surname>Kumar</surname> <given-names>S.</given-names></string-name>, <string-name><surname>Dixit</surname> <given-names>P.</given-names></string-name>, <string-name><surname>Bajpai</surname> <given-names>M.K.</given-names></string-name>, &#x201C;<article-title>Kalman Filter Based Short Term Prediction Model for COVID-19 Spread &#x201C;</article-title>, <source>medRxiv</source> 2020.05.30.20117416; doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1101/2020.05.30.20117416">https://doi.org/10.1101/2020.05.30.20117416</ext-link></mixed-citation></ref>
+<ref id="c31"><label>31.</label><mixed-citation publication-type="other"><string-name><given-names>L.</given-names> <surname>Pang</surname></string-name>, <string-name><given-names>S.</given-names> <surname>Liu</surname></string-name>, <string-name><given-names>X.</given-names> <surname>Zhang</surname></string-name>, <string-name><given-names>T.</given-names> <surname>Tian</surname></string-name>, <string-name><given-names>Z.</given-names> <surname>Zhao</surname></string-name>, &#x201C;<article-title>Transmission dynamics and control strategies of COVID-19 in Wuhan, China</article-title>&#x201D;, <source>J. Biol. Syst</source>. (<year>2020</year>), pp. <fpage>1</fpage>&#x2013;<lpage>18</lpage>, <pub-id pub-id-type="doi">10.1142/S0218339020500096</pub-id></mixed-citation></ref>
+<ref id="c32"><label>32.</label><mixed-citation publication-type="journal"><string-name><surname>Dubey</surname> <given-names>B</given-names></string-name>, <string-name><surname>Patra</surname> <given-names>A</given-names></string-name>, <string-name><surname>Srivastava</surname> <given-names>PK</given-names></string-name>, <string-name><surname>Dubey</surname> <given-names>US</given-names></string-name> (<year>2013</year>), &#x201C;<article-title>Modelling and analysis of a SEIR model with different types of non-linear treatment rates</article-title>.&#x201D; <source>J Biol Syst</source> <volume>21</volume>(<issue>3</issue>):<fpage>1350023</fpage>, <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1142/S021833901350023X">https://doi.org/10.1142/S021833901350023X</ext-link></mixed-citation></ref>
+<ref id="c33"><label>33.</label><mixed-citation publication-type="website"><string-name><surname>Geisse</surname> <given-names>K.V.</given-names></string-name>, <string-name><given-names>Calistus N.</given-names> <surname>Ngonghala</surname></string-name> and <string-name><surname>Feng</surname> <given-names>Z.</given-names></string-name>, &#x201C;<article-title>The Impact Of Vaccination On Malaria Prevalence</article-title>: <source>A Vaccine-Age-Structured Modeling Approach,&#x201D;</source> <ext-link ext-link-type="uri" xlink:href="https://Doi.Org/10.1142/S0218339020400094">https://Doi.Org/10.1142/S0218339020400094</ext-link></mixed-citation></ref>
+<ref id="c34"><label>34.</label><mixed-citation publication-type="other"><string-name><surname>Chen</surname> <given-names>Y.C.</given-names></string-name>, <string-name><surname>Lu</surname> <given-names>P.E.</given-names></string-name>, <string-name><surname>Chang</surname> <given-names>C.S.</given-names></string-name>, <source>A Time-dependent SIR model for COVID-19</source>, <pub-id pub-id-type="arxiv">2003.00122</pub-id></mixed-citation></ref>
+<ref id="c35"><label>35.</label><mixed-citation publication-type="other"><collab>&#x201C;Statement on the meeting of the International Health Regulations</collab> (<year>2005</year>) <article-title>Emergency Committee regarding the outbreak of novel coronavirus 2019 (n-CoV) on January 23, 2020&#x201D;</article-title>. <source>World Health Organization (WHO)</source>. Retrieved April 9, 2020.</mixed-citation></ref>
+<ref id="c36"><label>36.</label><mixed-citation publication-type="other"><string-name><surname>Sanche</surname> <given-names>S</given-names></string-name>, <string-name><surname>Lin</surname> <given-names>YT</given-names></string-name>, <string-name><surname>Xu</surname> <given-names>C</given-names></string-name>, <string-name><surname>Romero-Severson</surname> <given-names>E</given-names></string-name>, <string-name><surname>Hengartner</surname> <given-names>N</given-names></string-name>, <string-name><surname>Ke</surname> <given-names>R.</given-names></string-name> &#x201C;<article-title>High Contagiousness and Rapid Spread of Severe Acute Respiratory Syndrome Coronavirus 2&#x201D;. Emerging Infectious Diseases</article-title>. <volume>26</volume> (<issue>7</issue>): <fpage>1470</fpage>&#x2013;<lpage>1477</lpage>. doi:<pub-id pub-id-type="doi">10.3201/eid2607.200282</pub-id>. PMC <pub-id pub-id-type="pmcid">7323562</pub-id>. PMID <pub-id pub-id-type="pmid">32255761</pub-id>. S2CID 215410037. April 2020.</mixed-citation></ref>
+<ref id="c37"><label>37.</label><mixed-citation publication-type="other"><string-name><surname>Roberts</surname> <given-names>L.</given-names></string-name> &#x201C;<article-title>The importance of the coronavirus R rate in other countries across the globe</article-title>&#x201D;. <source>The Telegraph</source>. <month>May</month> 14, <year>2020</year>.</mixed-citation></ref>
+<ref id="c38"><label>38.</label><mixed-citation publication-type="other"><string-name><surname>Li</surname> <given-names>Q</given-names></string-name>, <string-name><surname>Guan</surname> <given-names>X</given-names></string-name>, <string-name><surname>Wu</surname> <given-names>P</given-names></string-name>, <string-name><surname>Wang</surname> <given-names>X</given-names></string-name>, <string-name><surname>Zhou</surname> <given-names>L</given-names></string-name>, <string-name><surname>Tong</surname> <given-names>Y</given-names></string-name>, <etal>et al.</etal>, &#x201C;<article-title>Early Transmission Dynamics in Wuhan, China, of Novel Coronavirus-Infected Pneumonia&#x201D;. The New England Journal of Medicine</article-title>. <volume>382</volume> (<issue>13</issue>): <fpage>1199</fpage>&#x2013;<lpage>1207</lpage>. doi:<pub-id pub-id-type="doi">10.1056/NEJMoa2001316</pub-id>. PMC <pub-id pub-id-type="pmcid">7121484</pub-id>. PMID <pub-id pub-id-type="pmid">31995857</pub-id>. March 2020.</mixed-citation></ref>
+<ref id="c39"><label>39.</label><mixed-citation publication-type="other"><collab>&#x201C;Coronavirus Disease 2019 (COVID-19)&#x201D;</collab>. <source>Centers for Disease Control and Prevention</source>. <month>May</month> <year>2020</year>.</mixed-citation></ref>
+<ref id="c40"><label>40.</label><mixed-citation publication-type="other"><string-name><surname>Azad</surname> <given-names>A.</given-names></string-name> &#x201C;<article-title>CDC estimates that 35&#x0025; of coronavirus patients don&#x2019;t have symptoms</article-title>&#x201D;. <source>CNN</source>. <month>May</month> 22, <year>2020</year>.</mixed-citation></ref>
+<ref id="c41"><label>41.</label><mixed-citation publication-type="journal"><string-name><surname>Beretta</surname>, <given-names>E.</given-names></string-name>, <string-name><surname>Takeuchi</surname>, <given-names>Y.</given-names></string-name> &#x201C;<article-title>Global stability of an SIR epidemic model with time delays</article-title>.&#x201D; <source>J. Math. Biol</source>. (<year>1995</year>) <volume>33</volume>, <fpage>250</fpage>&#x2013;<lpage>260</lpage>. <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1007/BF00169563">https://doi.org/10.1007/BF00169563</ext-link></mixed-citation></ref>
+<ref id="c42"><label>42.</label><mixed-citation publication-type="journal"><string-name><surname>Cooke</surname>, <given-names>K.</given-names></string-name>, <string-name><surname>van den Driessche</surname>, <given-names>P.</given-names></string-name> &#x201C;<article-title>Analysis of an SEIRS epidemic model with two delays</article-title>.&#x201D; <source>J Math Biol</source> (<year>1996</year>) <volume>35</volume>, <fpage>240</fpage>&#x2013;<lpage>260</lpage>. <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1007/s002850050051">https://doi.org/10.1007/s002850050051</ext-link></mixed-citation></ref>
+<ref id="c43"><label>43.</label><mixed-citation publication-type="other"><string-name><given-names>Nidhi</given-names> <surname>Sharma</surname></string-name>, &#x201C;<article-title>Asymptomatic or mild symptoms Covid-19 patients can home quarantine</article-title>&#x201D;, <source>The Economic Times</source>, <month>April</month> 27, <year>2020</year>.</mixed-citation></ref>
+<ref id="c44"><label>44.</label><mixed-citation publication-type="other"><string-name><given-names>A</given-names> <surname>Raju</surname></string-name>, &#x201C;<article-title>ICMR advises asymptotic &#x0026; mild COVID patients to observe home quarantine for 17 days to reduce pressure on hospitals</article-title>&#x201D;, <source>Pharmabiz.com</source>, <month>June</month> 20, <year>2020</year>.</mixed-citation></ref>
+<ref id="c45"><label>45.</label><mixed-citation publication-type="other"><collab>&#x201C;The Epidemiological Characteristics of an Outbreak of 2019 Novel Coronavirus Diseases (COVID-19) China&#x201D;</collab> <source>CCDC</source>, <month>February</month> 17, <year>2020</year></mixed-citation></ref>
+<ref id="c46"><label>46.</label><mixed-citation publication-type="other"><string-name><given-names>Qun</given-names> <surname>Li</surname></string-name> <etal>et al.</etal> &#x201C;<article-title>Early Transmission Dynamics in Wuhan, China, of Novel Coronavirus&#x2013;Infected Pneumonia</article-title>.&#x201D; <source>New England Journal of Medicine</source>, <month>January</month> 29, <year>2020</year>.</mixed-citation></ref>
+<ref id="c47"><label>47.</label><mixed-citation publication-type="other"><collab>&#x201C;Updated understanding of the outbreak of 2019 novel coronavirus (2019nCoV) in Wuhan, China&#x201D;</collab>. <source>Journal of Medical Virology</source>, <month>January</month> 29, <year>2020</year></mixed-citation></ref>
+<ref id="c48"><label>48.</label><mixed-citation publication-type="other"><collab>Wang</collab> <etal>et al.</etal> &#x201C;<article-title>Clinical Characteristics of 138 Hospitalized Patients With 2019 Novel Coronavirus&#x2013;Infected Pneumonia in Wuhan, China</article-title>&#x201D;. <source>JAMA</source>, <month>Feb</month>. 7, <year>2020</year>.</mixed-citation></ref>
+<ref id="c49"><label>49.</label><mixed-citation publication-type="other"><string-name><given-names>WJ</given-names> <surname>Guan</surname></string-name>, <string-name><surname>Ni</surname> <given-names>ZY</given-names></string-name>, <string-name><given-names>Y.</given-names> <surname>Hu</surname></string-name> &#x201C;<article-title>Clinical characteristics of coronavirus disease 2019 in China</article-title>&#x201D;. <source>N Engl J Med</source> <year>2020</year>; DOI:<pub-id pub-id-type="doi">10.1056/NEJMoa2002032</pub-id>.</mixed-citation></ref>
+<ref id="c50"><label>50.</label><mixed-citation publication-type="website"><string-name><given-names>X</given-names> <surname>Yang</surname></string-name>, <string-name><given-names>Y</given-names> <surname>Yu</surname></string-name>, <string-name><given-names>J</given-names> <surname>Xu</surname></string-name> &#x201C;<article-title>Clinical course and outcomes of critically ill patients with SARS-CoV-2 pneumonia in Wuhan, China: a singlecentered, retrospective, observational study</article-title>&#x201D;. <source>Lancet Respir Med</source> <year>2020</year>; <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/S2213-2600(20)30079-5">https://doi.org/10.1016/S2213-2600(20)30079-5</ext-link>.</mixed-citation></ref>
+<ref id="c51"><label>51.</label><mixed-citation publication-type="website"><collab>WHO-China Joint Mission</collab>. <source>Report of the WHO-China Joint Mission on Coronavirus Disease 2019 (COVID-19)</source>. <month>February</month> 28, <year>2020</year>. <ext-link ext-link-type="uri" xlink:href="https://www.who.int/docs/default-source/coronaviruse/who-chinajoint-mission-oncovid-19-final-report.pdf">https://www.who.int/docs/default-source/coronaviruse/who-chinajoint-mission-oncovid-19-final-report.pdf</ext-link>.</mixed-citation></ref>
+<ref id="c52"><label>52.</label><mixed-citation publication-type="journal"><string-name><given-names>C</given-names> <surname>Huang</surname></string-name>, <string-name><given-names>Y</given-names> <surname>Wang</surname></string-name>, <string-name><given-names>X</given-names> <surname>Li</surname></string-name> &#x201C;<article-title>Clinical features of patients infected with 2019 novel coronavirus in Wuhan, China</article-title>&#x201D;. <source>Lancet</source> (<year>2020</year>); <volume>395</volume>: <fpage>497</fpage>&#x2013;<lpage>506</lpage>.</mixed-citation></ref>
+<ref id="c53"><label>53.</label><mixed-citation publication-type="other"><string-name><given-names>J</given-names> <surname>Cao</surname></string-name>, <string-name><given-names>X</given-names> <surname>Hu</surname></string-name>, <string-name><given-names>W</given-names> <surname>Cheng</surname></string-name>, <string-name><given-names>L</given-names> <surname>Yu</surname></string-name>, <string-name><given-names>WJ</given-names> <surname>Tu</surname></string-name>, <string-name><given-names>Q</given-names> <surname>Liu</surname></string-name> &#x201C;<article-title>Clinical features and short-term outcomes of 18 patients with corona virus disease 2019 in intensive care unit</article-title>&#x201D;. <source>Intensive Care Med</source> <year>2020</year>; <month>March</month> 2. DOI:<pub-id pub-id-type="doi">10.1007/s00134-020-05987-7</pub-id>.</mixed-citation></ref>
+<ref id="c54"><label>54.</label><mixed-citation publication-type="journal"><string-name><given-names>F</given-names> <surname>Zhou</surname></string-name>, <string-name><given-names>T</given-names> <surname>Yu</surname></string-name>, <string-name><given-names>R</given-names> <surname>Du</surname></string-name> &#x201C;<article-title>Clinical course and risk factors for mortality of adult inpatients with COVID-19 in Wuhan, China: a retrospective cohort study</article-title>&#x201D;. <source>Lancet g</source><year>2020</year>; <volume>395</volume>: <fpage>1054</fpage>&#x2013;<lpage>62</lpage>.</mixed-citation></ref>
+<ref id="c55"><label>55.</label><mixed-citation publication-type="other"><string-name><given-names>WJ</given-names> <surname>Guan</surname></string-name> &#x201C;<article-title>Clinical characteristics of coronavirus disease 2019 in China</article-title>&#x201D;. <source>New Engl J Med</source>. (<year>2020</year>), doi: <pub-id pub-id-type="doi">10.1056/NEJMoa2002032</pub-id>.</mixed-citation></ref>
+<ref id="c56"><label>56.</label><mixed-citation publication-type="website"><collab>Ghani</collab> &#x201C;<article-title>Methods for Estimating the Case Fatality Ratio for a Novel</article-title>.&#x201D; <source>Emerging Infectious Disease American Journal of Epidemiology</source></mixed-citation></ref>
+<ref id="c57"><label>57.</label><mixed-citation publication-type="website"><ext-link ext-link-type="uri" xlink:href="https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases">https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases</ext-link></mixed-citation></ref>
+<ref id="c58"><label>58.</label><mixed-citation publication-type="website"><ext-link ext-link-type="uri" xlink:href="https://data.un.org/">https://data.un.org/</ext-link></mixed-citation></ref>
+<ref id="c59"><label>59.</label><mixed-citation publication-type="journal"><string-name><surname>Levenberg</surname>, <given-names>Kenneth</given-names></string-name> &#x201C;<article-title>A Method for the Solution of Certain Non-Linear Problems in Least Squares</article-title>&#x201D;. <source>Quarterly of Applied Mathematics</source>. (<year>1944</year>). <volume>2</volume> (<issue>2</issue>): <fpage>164</fpage>&#x2013;<lpage>168</lpage>. doi:<pub-id pub-id-type="doi">10.1090/qam/10666</pub-id>.</mixed-citation></ref>
+<ref id="c60"><label>60.</label><mixed-citation publication-type="journal"><string-name><surname>Marquardt</surname>, <given-names>Donald</given-names></string-name> &#x201C;<article-title>An Algorithm for Least-Squares Estimation of Nonlinear Parameters</article-title>.&#x201D; <source>SIAM Journal on Applied Mathematics</source>. (<year>1963</year>). <volume>11</volume> (<issue>2</issue>): <fpage>431</fpage>&#x2013;<lpage>441</lpage>. doi:<pub-id pub-id-type="doi">10.1137/0111030.hdl:10338.dmlcz/104299</pub-id></mixed-citation></ref>
+<ref id="c61"><label>61.</label><mixed-citation publication-type="website"><collab>&#x201C;Non-Linear Least-Square Minimization and Curve-Fitting for Python.&#x201D;</collab> <ext-link ext-link-type="uri" xlink:href="https://lmfit.github.io/lmfit-py/">https://lmfit.github.io/lmfit-py/</ext-link></mixed-citation></ref>
+<ref id="c62"><label>62.</label><mixed-citation publication-type="website"><collab>Coronavirus Update (Live) Worldometer -</collab> <ext-link ext-link-type="uri" xlink:href="http://www.worldometers.info">www.worldometers.info</ext-link></mixed-citation></ref>
+<ref id="c63"><label>63.</label><mixed-citation publication-type="book"><source>COVID-19 Dashboard by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University (JHU)&#x201D;</source>. <publisher-name>Johns Hopkins University</publisher-name>.</mixed-citation></ref>
+<ref id="c64"><label>64.</label><mixed-citation publication-type="journal"><string-name><given-names>B. S.</given-names> <surname>Dayal</surname></string-name> and <string-name><given-names>J. F.</given-names> <surname>MacGregor</surname></string-name>, &#x201C;<article-title>Identification of finite impulse response models: methods and robustness issues</article-title>,&#x201D; <source>Industrial &#x0026; engineering chemistry research</source>, vol. <volume>35</volume>, no. <issue>11</issue>, pp. <fpage>4078</fpage>&#x2013;<lpage>4090</lpage>, <year>1996</year>.</mixed-citation></ref>
+</ref-list>
+</back>
+</article>

@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.2d1 20170631//EN" "JATS-archivearticle1.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" article-type="article" dtd-version="1.2d1" specific-use="production" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="publisher-id">MEDRXIV</journal-id>
+<journal-title-group>
+<journal-title>medRxiv</journal-title>
+<abbrev-journal-title abbrev-type="publisher">medRxiv</abbrev-journal-title>
+</journal-title-group>
+<publisher>
+<publisher-name>Cold Spring Harbor Laboratory</publisher-name>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1101/2020.10.28.20221853</article-id>
+<article-version>1.1</article-version>
+<article-categories>
+<subj-group subj-group-type="hwp-journal-coll">
+<subject>Infectious Diseases (except HIV/AIDS)</subject>
+</subj-group>
+</article-categories>
+<title-group>
+<article-title>The power and limitations of genomics to track COVID-19 outbreaks: a case study from New Zealand</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" corresp="yes">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-0970-0153</contrib-id>
+<name><surname>Geoghegan</surname><given-names>Jemma L</given-names></name>
+<degrees>PhD</degrees>
+<xref ref-type="author-notes" rid="n1">&#x002A;</xref>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a2">2</xref>
+<xref ref-type="corresp" rid="cor1">&#x2020;</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Douglas</surname><given-names>Jordan</given-names></name>
+<degrees>PhD</degrees>
+<xref ref-type="author-notes" rid="n1">&#x002A;</xref>
+<xref ref-type="aff" rid="a3">3</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Ren</surname><given-names>Xiaoyun</given-names></name>
+<degrees>PhD</degrees>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Storey</surname><given-names>Matthew</given-names></name>
+<degrees>BSc</degrees>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Hadfield</surname><given-names>James</given-names></name>
+<degrees>PhD</degrees>
+<xref ref-type="aff" rid="a4">4</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Silander</surname><given-names>Olin K</given-names></name>
+<degrees>PhD</degrees>
+<xref ref-type="aff" rid="a5">5</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Freed</surname><given-names>Nikki E</given-names></name>
+<degrees>PhD</degrees>
+<xref ref-type="aff" rid="a5">5</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Jelley</surname><given-names>Lauren</given-names></name>
+<degrees>MAppSc</degrees>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Jefferies</surname><given-names>Sarah</given-names></name>
+<degrees>MD</degrees>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Sherwood</surname><given-names>Jillian</given-names></name>
+<degrees>MBChB</degrees>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Paine</surname><given-names>Shevaun</given-names></name>
+<degrees>MAE</degrees>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Huang</surname><given-names>Sue</given-names></name>
+<degrees>PhD</degrees>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Sporle</surname><given-names>Andrew</given-names></name>
+<degrees>MA</degrees>
+<xref ref-type="aff" rid="a6">6</xref>
+<xref ref-type="aff" rid="a7">7</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Baker</surname><given-names>Michael G</given-names></name>
+<degrees>MBChB</degrees>
+<xref ref-type="aff" rid="a8">8</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Murdoch</surname><given-names>David R</given-names></name>
+<degrees>MD</degrees>
+<xref ref-type="aff" rid="a9">9</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Drummond</surname><given-names>Alexei J</given-names></name>
+<degrees>PhD</degrees>
+<xref ref-type="aff" rid="a3">3</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Welch</surname><given-names>David</given-names></name>
+<degrees>PhD</degrees>
+<xref ref-type="aff" rid="a3">3</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Simpson</surname><given-names>Colin R</given-names></name>
+<degrees>PhD</degrees>
+<xref ref-type="aff" rid="a10">10</xref>
+<xref ref-type="aff" rid="a11">11</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>French</surname><given-names>Nigel</given-names></name>
+<degrees>PhD</degrees>
+<xref ref-type="aff" rid="a12">12</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Holmes</surname><given-names>Edward C</given-names></name>
+<degrees>PhD</degrees>
+<xref ref-type="aff" rid="a13">13</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>de Ligt</surname><given-names>Joep</given-names></name>
+<degrees>PhD</degrees>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<aff id="a1"><label>1</label><institution>Department of Microbiology and Immunology, University of Otago</institution>, Dunedin, <country>New Zealand</country></aff>
+<aff id="a2"><label>2</label><institution>Institute of Environmental Science and Research</institution>, Wellington, <country>New Zealand</country></aff>
+<aff id="a3"><label>3</label><institution>Centre for Computational Evolution, School of Computer Science, University of Auckland</institution>, Auckland, <country>New Zealand</country></aff>
+<aff id="a4"><label>4</label><institution>Fred Hutchinson Cancer Research Centre</institution>, Seattle, Washington, <country>USA</country></aff>
+<aff id="a5"><label>5</label><institution>School of Natural and Computational Sciences, Massey University</institution>, Auckland, <country>New Zealand</country></aff>
+<aff id="a6"><label>6</label><institution>Department of Statistics, University of Auckland</institution>, <country>New Zealand</country></aff>
+<aff id="a7"><label>7</label><institution>iNZight Analytics Ltd.</institution>, Auckland, <country>New Zealand</country></aff>
+<aff id="a8"><label>8</label><institution>Department of Public Health, University of Otago</institution>, Wellington, <country>New Zealand</country></aff>
+<aff id="a9"><label>9</label><institution>Department of Pathology and Biomedical Science, University of Otago</institution>, Christchurch, <country>New Zealand</country></aff>
+<aff id="a10"><label>10</label><institution>School of Health, Wellington Faculty of Health, Victoria University of Wellington</institution>, Wellington, <country>New Zealand</country></aff>
+<aff id="a11"><label>11</label><institution>Usher Institute, University of Edinburgh</institution>, Edinburgh, <country>United Kingdom</country></aff>
+<aff id="a12"><label>12</label><institution>School of Veterinary Science, Massey University</institution>, Palmerston North, <country>New Zealand</country></aff>
+<aff id="a13"><label>13</label><institution>Marie Bashir Institute for Infectious Diseases and Biosecurity, School of Life and Environmental Sciences and School of Medical Sciences, The University of Sydney</institution>, Sydney, New South Wales, <country>Australia</country></aff>
+</contrib-group>
+<author-notes>
+<fn id="n1" fn-type="equal"><label>&#x002A;</label><p>contributed equally</p></fn>
+<corresp id="cor1"><label>&#x2020;</label>Author for correspondence: <email>jemma.geoghegan@otago.ac.nz</email></corresp>
+</author-notes>
+<pub-date pub-type="epub">
+<year>2020</year>
+</pub-date>
+<elocation-id>2020.10.28.20221853</elocation-id>
+<history>
+<date date-type="received">
+<day>28</day>
+<month>10</month>
+<year>2020</year>
+</date>
+<date date-type="rev-recd">
+<day>28</day>
+<month>10</month>
+<year>2020</year>
+</date>
+<date date-type="accepted">
+<day>03</day>
+<month>11</month>
+<year>2020</year>
+</date>
+</history>
+<permissions>
+<copyright-statement>&#x00A9; 2020, Posted by Cold Spring Harbor Laboratory</copyright-statement>
+<copyright-year>2020</copyright-year>
+<license license-type="creative-commons" xlink:href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><license-p>This pre-print is available under a Creative Commons License (Attribution-NonCommercial-NoDerivs 4.0 International), CC BY-NC-ND 4.0, as described at <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by-nc-nd/4.0/">http://creativecommons.org/licenses/by-nc-nd/4.0/</ext-link></license-p></license>
+</permissions>
+<self-uri xlink:href="20221853.pdf" content-type="pdf" xlink:role="full-text"/>
+<abstract>
+<title>Summary</title>
+<sec>
+<title>Background</title>
+<p>Real-time genomic sequencing has played a major role in tracking the global spread and local transmission of SARS-CoV-2, contributing greatly to disease mitigation strategies. After effectively eliminating the virus, New Zealand experienced a second outbreak of SARS-CoV-2 in August 2020. During this August outbreak, New Zealand utilised genomic sequencing in a primary role to support its track and trace efforts for the first time, leading to a second successful elimination of the virus.</p></sec>
+<sec>
+<title>Methods</title>
+<p>We generated the genomes of 80&#x0025; of the laboratory-confirmed samples of SARS-CoV-2 from New Zealand&#x2019;s August 2020 outbreak and compared these genomes to the available global genomic data.</p></sec>
+<sec>
+<title>Findings</title>
+<p>Genomic sequencing was able to rapidly identify that the new COVID-19 cases in New Zealand belonged to a single cluster and hence resulted from a single introduction. However, successful identification of the origin of this outbreak was impeded by substantial biases and gaps in global sequencing data.</p></sec>
+<sec>
+<title>Interpretation</title>
+<p>Access to a broader and more heterogenous sample of global genomic data would strengthen efforts to locate the source of any new outbreaks.</p></sec>
+<sec>
+<title>Funding</title>
+<p>This work was funded by the Ministry of Health of New Zealand, New Zealand Ministry of Business, Innovation and Employment COVID-19 Innovation Acceleration Fund (CIAF-0470), ESR Strategic Innovation Fund and the New Zealand Health Research Council (20/1018 and 20/1041).</p>
+</sec>
+</abstract>
+<kwd-group kwd-group-type="author">
+<title>Keywords</title>
+<kwd>SARS-CoV-2</kwd>
+<kwd>COVID-19</kwd>
+<kwd>coronavirus</kwd>
+<kwd>genomics</kwd>
+<kwd>infectious disease</kwd>
+<kwd>New Zealand</kwd>
+</kwd-group>
+<counts>
+<page-count count="11"/>
+</counts>
+</article-meta>
+<notes>
+<notes notes-type="competing-interest-statement">
+<title>Competing Interest Statement</title><p>The authors have declared no competing interest.</p></notes>
+<notes notes-type="financial-disclosure">
+<title>Funding Statement</title><p>This work was funded by the Ministry of Health of New Zealand, New Zealand Ministry of Business, Innovation and Employment COVID-19 Innovation Acceleration Fund (CIAF-0470), ESR Strategic Innovation Fund and the New Zealand Health Research Council (20/1018 and 20/1041).</p></notes>
+<notes notes-type="disclosures">
+<title>Author Declarations</title><p>I confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.</p><p>Yes</p><p>The details of the IRB/oversight body that provided approval or exemption for the research described are given below:</p><p>N/A</p><p>All necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived.</p><p>Yes</p><p>I understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).</p><p>Yes</p><p>I have followed all appropriate research reporting guidelines and uploaded the relevant EQUATOR Network research reporting checklist(s) and other pertinent material as supplementary files, if applicable.</p><p>Yes</p></notes>
+</notes>
+</front>
+<body>
+<sec id="s1">
+<title>Main Text</title>
+<p>Only twelve days after the novel coronavirus SARS-CoV-2 was identified, a genome of the virus was first published<sup><xref ref-type="bibr" rid="c1">1</xref></sup>. This information was pivotal to the subsequent, rapid, development of diagnostic tests and identification of potential treatments<sup><xref ref-type="bibr" rid="c2">2</xref>,<xref ref-type="bibr" rid="c3">3</xref></sup>. Since then, as of 25 September 2020, over 110,000 genomes of SARS-CoV-2 have been shared publicly<sup><xref ref-type="bibr" rid="c4">4</xref></sup>. The underlying genome sequencing has occurred so quickly that, for the first time during an infectious disease outbreak, it has enabled virological and epidemiological data to be integrated in real time<sup><xref ref-type="bibr" rid="c5">5</xref></sup>. Analysis of these data has played an important role in informing the COVID-19 response by tracking the global spread and evolution of SARS-CoV-2, including identification of the number, source, and timing of introductions into individual countries. This has led to a greater understanding of COVID-19 outbreaks around the world<sup><xref ref-type="bibr" rid="c6">6</xref>-<xref ref-type="bibr" rid="c13">13</xref></sup>.</p>
+<p>Of the 185 countries that have reported positive cases of COVID-19 to the World Health Organization<sup><xref ref-type="bibr" rid="c14">14</xref></sup>, 60&#x0025; (n=112) have sequenced and shared SARS-CoV-2 genomes on the GISAID database<sup><xref ref-type="bibr" rid="c4">4</xref></sup> (September 2020). This immense global sequencing effort has facilitated ongoing genomic surveillance of the pandemic, including monitoring viral genetic changes of interest<sup><xref ref-type="bibr" rid="c12">12</xref></sup>, which has informed public health responses<sup><xref ref-type="bibr" rid="c15">15</xref>-<xref ref-type="bibr" rid="c18">18</xref></sup>. Nevertheless, the number and proportion of positive cases sequenced, and genomes published, varies dramatically between countries and over time (<xref rid="fig1" ref-type="fig">Figure 1</xref>). The COVID-19 Genomics UK (COG-UK) consortium, for example, has led to the UK being the most represented sampling location, totalling over 42,000 genomes and comprising 39&#x0025; of the global data set despite recording only 1&#x0025; of the world&#x2019;s positive cases (n = 412,241). Conversely, SARS-CoV-2 genomes sequenced in India represent just 3&#x0025; of the global data set but 18&#x0025; of the world&#x2019;s total reported cases (n = 5,646,010).</p>
+<fig id="fig1" position="float" fig-type="figure">
+<label>Figure 1.</label>
+<caption><p><bold>a</bold> Proportion of global cases sequenced and shared on GISAID between December 2019 to September 2020, where the second mode was largely driven by the COG-UK consortium as illustrated; <bold>b</bold> Number of genomes sequenced and number of reported cases per country (New Zealand is represented in red) on a linear scale; <bold>c</bold> Number of genomes sequenced and number of reported cases per country on a logarithmic scale.</p></caption>
+<graphic xlink:href="20221853v1_fig1.tif"/>
+</fig>
+<p>We show here that such disparities in sequencing effort can have major implications for data interpretation and must be met with careful consideration. Real-time sequencing of SARS-CoV-2 genomes has, however, had particular utility in tracking the re-emergence of the virus in New Zealand. By June 2020 New Zealand had effectively eliminated COVID-19 in the community and positive cases were limited to those linked to managed quarantine facilities at the border<sup><xref ref-type="bibr" rid="c7">7</xref>,<xref ref-type="bibr" rid="c13">13</xref>,<xref ref-type="bibr" rid="c19">19</xref></sup>. Following over 100 days with no detected community transmission of COVID-19, four new cases emerged on August 12, 2020 with no apparent epidemiological link to any known case. We compared the genomes of these cases to sequenced cases from both New Zealand&#x2019;s first wave and those in quarantine facilities and, again, found no link. The vast majority of available sequence data from cases in New Zealand&#x2019;s quarantine facilities were of different virus lineages than that of the August 2020 outbreak. However, this observation was of limited value given that only 42&#x0025; of cases in those quarantine facilities had adequate viral RNA for successful genomic sequencing. In order to determine the likely origins of this outbreak we compared genomes from the new community outbreak to the global data set.</p>
+<p>An initial genomic sequence analysis found that the re-emergence of COVID-19 in New Zealand was due to a SARS-CoV-2 from lineage B.1.1.1<sup><xref ref-type="bibr" rid="c20">20</xref></sup>. Of the countries that have contributed SARS-CoV-2 data, 40&#x0025; had genomes of this lineage. Remarkably, 85&#x0025; of B.1.1.1. genomes were from the UK and were generated between March &#x2013; September 2020, the vast majority of which were sampled during the first wave of disease in the UK (<xref rid="fig2" ref-type="fig">Figure 2</xref>). Phylogenetic analysis of the most recently sampled B.1.1.1. genomes (1,996 of 4,544) identified genomes sampled from Switzerland, South Africa and England in August as the most likely to be contained within the sister clade (<xref rid="fig2" ref-type="fig">Figure 2</xref>): these were the closest sampled genomic relatives of the viruses associated with New Zealand&#x2019;s August 2020 outbreak (Supplementary Figure 1). Additional Bayesian analysis estimated that the outbreak originated 11 days before the first transmission event, with a 95&#x0025; highest posterior density (HPD) of 0 &#x2013; 28 days. We also estimated that the first transmission event in the outbreak occurred between 26 July &#x2013; 13 August 2020 (95&#x0025; HPD; mean date of 5 August). Epidemiological data showed that two confirmed cases linked to the outbreak had a symptom onset date of 31 July, although the most probable sampled genomes within the sister clade were sampled later, between 6 August &#x2013; 28 August. Hence, is unlikely that the currently available global genomic data set contains the source of this outbreak.</p>
+<fig id="fig2" position="float" fig-type="figure">
+<label>Figure 2.</label>
+<caption><p><bold>a</bold> Maximum clade credibility phylogenetic tree of 2,000 subsampled global genomes (1,996 most recently sampled B.1.1.1. plus four non-B.1.1.1. used as an outgroup) with an outer ring coloured by sampling region; <bold>b</bold> Posterior probability of genomes within the sister clade to New Zealand&#x2019;s August outbreak, colour-coded by sampling location; <bold>c</bold> Proportion of genomes within lineage B.1.1.1. in the global data set over time, colour-coded by sampling location.</p></caption>
+<graphic xlink:href="20221853v1_fig2.tif"/>
+</fig>
+<p>Genomic epidemiological analysis on the possible origins of New Zealand&#x2019;s re-emergence was found to be inconclusive, likely due to missing genomic data within the quarantine border facilities as well as in the global data set. A glimpse into the genomic diversity likely omitted from the global data set can be seen in the genomes sequenced in New Zealand from positive quarantine cases which comprise citizens and residents returning from across the globe. For example, 12 SARS-CoV-2 genomes from returnees to New Zealand from India who arrived on the same flight fell across at least four genomic lineages and comprised sequence divergence of up to 34 single nucleotide polymorphisms. This represented far more genomic mutations than was observed in New Zealand during the first outbreak in March &#x2013; May 2020. Such a high level of diversity in just a small sample of positive cases from India suggest that the currently available genomic data fails to encompass the true diversity that existed locally let alone globally.</p>
+<p>The re-emergence of COVID-19 into New Zealand in August 2020 exemplified one of the most complete genomic data sets for a specific outbreak compiled to date, comprising 81&#x0025; of positive cases (145 of 179 total PCR positive cases). Real-time genomic sequencing quickly informed track and trace efforts to control the outbreak, setting New Zealand on track to eliminate the virus from the community for the second time. The rapid genome sequencing of positive samples provided confidence to public health teams regarding links to the outbreak and identified that cases and sub-clusters were linked to a single genomic lineage, resulting from a single introduction event. Indeed, the timing and length of lockdown measures were partly informed based on these data.</p>
+<p>Nevertheless, the biased nature of global sampling, including the contribution of very few genome sequences from certain geographic locations, clearly limited the power of genomics to attribute the geographical origin of New Zealand&#x2019;s August 2020 outbreak. We therefore advocate that careful consideration of the potential sampling biases and gaps in available genomic data be made whenever attempting to determine the geographic origins of a specific outbreak of SARS-CoV-2. Analysis should consider all available evidence, including from genomic and epidemiological sources.</p>
+</sec>
+<sec id="s2">
+<title>Methods</title>
+<sec id="s2a">
+<title>Ethics statement</title>
+<p>Nasopharyngeal samples testing positive for SARS-CoV-2 by real-time polymerase chain reaction (RT-PCR) were obtained from public health medical diagnostics laboratories located throughout New Zealand. All samples were de-identified before receipt by the researchers. Under contract for the New Zealand Ministry of Health, ESR has approval to conduct genomic sequencing for surveillance of notifiable diseases.</p>
+</sec>
+<sec id="s2b">
+<title>Genomic sequencing of SARS-CoV-2: New Zealand&#x2019;s second wave</title>
+<p>A total of 172 (out of 179) laboratory-confirmed samples of SARS-CoV-2 were received by ESR for whole genome sequencing, comprising samples from New Zealand&#x2019;s August 2020 outbreak. Genome sequencing of SARS-CoV-2 samples was performed as before<sup><xref ref-type="bibr" rid="c7">7</xref></sup>. In short, viral extracts were prepared from respiratory tract samples where SARS-CoV-2 was detected by RT-PCR using WHO recommended primers and probes targeting the E and N gene. Extracted RNA from SARS-CoV-2 positive samples were subject to whole genome sequencing following the ARTIC network protocol (V3) (<ext-link ext-link-type="uri" xlink:href="https://www.protocols.io/view/ncov-2019-sequencing-protocol-v3-locost-bh42j8ye">https://www.protocols.io/view/ncov-2019-sequencing-protocol-v3-locost-bh42j8ye</ext-link>) and the Massey University 1200 bp primer set (<ext-link ext-link-type="uri" xlink:href="https://www.protocols.io/view/ncov-2019-sequencing-protocol-rapid-barcoding-1200-bh7hj9j6">https://www.protocols.io/view/ncov-2019-sequencing-protocol-rapid-barcoding-1200-bh7hj9j6</ext-link>)<sup><xref ref-type="bibr" rid="c21">21</xref></sup>.</p>
+<p>Briefly, one of the tiling amplicon designs were used to amplify viral cDNA prepared with SuperScript IV. Sequence libraries were then constructed, using the Oxford Nanopore ligation sequencing and native barcoding expansion kit for samples amplified with the ARTIC V3 primer sets, and the Oxford Nanopore rapid barcoding kit for samples amplified with the 1200 bp primer sets. The 1200 bp primers and rapid barcoding was used in cases where the genomes were required urgently. Libraries were sequenced using R9.4.1 MinION flow cells, respectively. Near-complete (&#x003E;90&#x0025; recovered) viral genomes were subsequently assembled through reference mapping. Steps included in the pipeline are described in detail online (<ext-link ext-link-type="uri" xlink:href="https://github.com/ESR-NZ/NZ_SARS-CoV-2_genomics">https://github.com/ESR-NZ/NZ_SARS-CoV-2_genomics</ext-link>). The reads generated with Nanopore sequencing using ARTIC primer sets (V3) were mapped and assembled using the ARTIC bioinformatics medaka pipeline (v 1.1.0). In total, 145 (out of 172) genomes from New Zealand&#x2019;s August 2020 outbreak passed quality control. All data are available on GISAID.</p>
+</sec>
+<sec id="s2c">
+<title>Phylogenetic analysis of SARS-CoV-2</title>
+<p>All human SARS-CoV-2 genomes available on GISAID<sup><xref ref-type="bibr" rid="c4">4</xref></sup> as of 25 September 2020 (n = 109,379) were downloaded and their lineages assigned according to the proposed nomenclature<sup><xref ref-type="bibr" rid="c16">16</xref></sup> using pangolin (<ext-link ext-link-type="uri" xlink:href="https://github.com/hCoV-2019/pangolin">https://github.com/hCoV-2019/pangolin</ext-link>). Genomes assigned to the B.1.1.1. lineage (n = 4,544) were subsampled to include 1,996 most recent-in-time sequences along with four outgroup (non-B.1.1.1.) sequences, and were aligned with those from the recent New Zealand outbreak (n = 140) using MAFFT (v 7)<sup><xref ref-type="bibr" rid="c22">22</xref></sup> employing the FFT-NS-2 progressive alignment algorithm. Bayesian phylogenetic analyses were performed using BEAST 2.5<sup><xref ref-type="bibr" rid="c23">23</xref></sup>. We used a strict clock model with one HKY substitution model (estimated frequencies) for each codon position and one for non-coding positions. We employed the Bayesian skyline model<sup><xref ref-type="bibr" rid="c24">24</xref></sup> as a tree prior to allow effective population sizes to change over time intervals. These components of the model and their prior distributions are those used by Douglas et al. 2020<sup><xref ref-type="bibr" rid="c13">13</xref></sup>. Phylogenetic trees were annotated using FigTree (v 1.4)<sup><xref ref-type="bibr" rid="c25">25</xref></sup> and Tree of Life (v 4)<sup><xref ref-type="bibr" rid="c26">26</xref></sup>.</p>
+</sec>
+</sec>
+<sec sec-type="supplementary-material">
+<title>Supporting information</title>
+<supplementary-material>
+<label>Supplementary Figure 1</label>
+<media xlink:href="supplements/221853_file02.pdf" />
+</supplementary-material>
+</sec>
+</body>
+<back>
+<sec sec-type="data-availability">
+<title>Data Availability</title>
+<p>All data is available on GISAID database</p>
+<p>
+<ext-link ext-link-type="uri" xlink:href="https://www.gisaid.org/">https://www.gisaid.org/</ext-link>
+</p>
+</sec>
+<ack>
+<title>Acknowledgements</title>
+<p>We thank the ARTIC network for making their protocols and tools openly available and specifically Josh Quick for sending the initial V1 and V3 amplification primers. We thank the diagnostic laboratories that performed the initial RT-PCRs and referred samples for sequencing as well as the public health units for providing epidemiological data. We thank Genomics Aotearoa for their support, the NextStrain team for their support and timely global and local analysis, and all those who have contributed SARS-CoV-2 sequences to GenBank and GISAID databases. The authors wish to acknowledge the use of New Zealand eScience Infrastructure (NeSI) high performance computing facilities. New Zealand&#x2019;s national facilities are provided by NeSI and funded jointly by NeSI&#x2019;s collaborator institutions and through the Ministry of Business, Innovation and Employment&#x2019;s Research Infrastructure programme (<ext-link ext-link-type="uri" xlink:href="https://www.nesi.org.nz">https://www.nesi.org.nz</ext-link>).</p>
+</ack>
+<ref-list>
+<title>References</title>
+<ref id="c1"><label>1.</label><mixed-citation publication-type="website"><string-name><surname>Holmes</surname> <given-names>EC</given-names></string-name>. <source>Novel 2019 coronavirus genome</source>. <year>2020</year>. <ext-link ext-link-type="uri" xlink:href="https://virological.org/t/novel-2019-coronavirus-genome/319">https://virological.org/t/novel-2019-coronavirus-genome/319</ext-link>.</mixed-citation></ref>
+<ref id="c2"><label>2.</label><mixed-citation publication-type="journal"><string-name><surname>Shin</surname> <given-names>MD</given-names></string-name>, <string-name><surname>Shukla</surname> <given-names>S</given-names></string-name>, <string-name><surname>Chung</surname> <given-names>YH</given-names></string-name>, <etal>et al.</etal> <article-title>COVID-19 vaccine development and a potential nanomaterial path forward</article-title>. <source>Nature Nanotechnology</source> <year>2020</year>; <volume>15</volume>(<issue>8</issue>): <fpage>646</fpage>&#x2013;<lpage>55</lpage>.</mixed-citation></ref>
+<ref id="c3"><label>3.</label><mixed-citation publication-type="journal"><string-name><surname>Stebbing</surname> <given-names>J</given-names></string-name>, <string-name><surname>Phelan</surname> <given-names>A</given-names></string-name>, <string-name><surname>Griffin</surname> <given-names>I</given-names></string-name>, <etal>et al.</etal> <article-title>COVID-19: combining antiviral and anti-inflammatory treatments</article-title>. <source>Lancet Infect Dis</source> <year>2020</year>; <volume>20</volume>(<issue>4</issue>): <fpage>400</fpage>&#x2013;<lpage>2</lpage>.</mixed-citation></ref>
+<ref id="c4"><label>4.</label><mixed-citation publication-type="journal"><string-name><surname>Elbe</surname> <given-names>S</given-names></string-name>, <string-name><surname>Buckland-Merrett</surname> <given-names>G.</given-names></string-name> <article-title>Data, disease and diplomacy: GISAID&#x2019;s innovative contribution to global health</article-title>. <source>Global Challenges</source> <year>2017</year>; <volume>1</volume>(<issue>1</issue>): <fpage>33</fpage>&#x2013;<lpage>46</lpage>.</mixed-citation></ref>
+<ref id="c5"><label>5.</label><mixed-citation publication-type="journal"><string-name><surname>Hadfield</surname> <given-names>J</given-names></string-name>, <string-name><surname>Megill</surname> <given-names>C</given-names></string-name>, <string-name><surname>Bell</surname> <given-names>SM</given-names></string-name>, <etal>et al.</etal> <article-title>Nextstrain: real-time tracking of pathogen evolution</article-title>. <source>Bioinformatics</source> <year>2018</year>; <volume>34</volume>(<issue>23</issue>): <fpage>4121</fpage>&#x2013;<lpage>3</lpage>.</mixed-citation></ref>
+<ref id="c6"><label>6.</label><mixed-citation publication-type="other"><string-name><surname>Bedford</surname> <given-names>T</given-names></string-name>, <string-name><surname>Greninger</surname> <given-names>AL</given-names></string-name>, <string-name><surname>Roychoudhury</surname> <given-names>P</given-names></string-name>, <etal>et al.</etal> <article-title>Cryptic transmission of SARS-CoV-2 in Washington State</article-title>. <source>medRxiv</source> <year>2020</year>: 2020.04.02.20051417.</mixed-citation></ref>
+<ref id="c7"><label>7.</label><mixed-citation publication-type="other"><string-name><surname>Geoghegan</surname> <given-names>JL</given-names></string-name>, <string-name><surname>Ren</surname> <given-names>X</given-names></string-name>, <string-name><surname>Storey</surname> <given-names>M</given-names></string-name>, <etal>et al.</etal> <article-title>Genomic epidemiology reveals transmission patterns and dynamics of SARS-CoV-2 in Aotearoa New Zealand</article-title>. <source>medRxiv</source> <year>2020</year>: 2020.08.05.20168930.</mixed-citation></ref>
+<ref id="c8"><label>8.</label><mixed-citation publication-type="other"><string-name><surname>Candido</surname> <given-names>DS</given-names></string-name>, <string-name><surname>Claro</surname> <given-names>IM</given-names></string-name>, <string-name><surname>de Jesus</surname> <given-names>JG</given-names></string-name>, <etal>et al.</etal> <article-title>Evolution and epidemic spread of SARS-CoV-2 in Brazil</article-title>. <source>Science</source> <year>2020</year>: <fpage>eabd2161</fpage>.</mixed-citation></ref>
+<ref id="c9"><label>9.</label><mixed-citation publication-type="journal"><string-name><surname>Eden</surname> <given-names>J-S</given-names></string-name>, <string-name><surname>Rockett</surname> <given-names>R</given-names></string-name>, <string-name><surname>Carter</surname> <given-names>I</given-names></string-name>, <etal>et al.</etal> <article-title>An emergent clade of SARS-CoV-2 linked to returned travellers from Iran</article-title>. <source>Virus Evolution</source> <year>2020</year>; <volume>6</volume>(<issue>1</issue>).</mixed-citation></ref>
+<ref id="c10"><label>10.</label><mixed-citation publication-type="other"><string-name><surname>Filipe</surname> <given-names>ADS</given-names></string-name>, <string-name><surname>Shepherd</surname> <given-names>J</given-names></string-name>, <string-name><surname>Williams</surname> <given-names>T</given-names></string-name>, <etal>et al.</etal> <article-title>Genomic epidemiology of SARS-CoV-2 spread in Scotland highlights the role of European travel in COVID-19 emergence</article-title>. <source>medRxiv</source> <year>2020</year>: 2020.06.08.20124834.</mixed-citation></ref>
+<ref id="c11"><label>11.</label><mixed-citation publication-type="other"><string-name><surname>Seemann</surname> <given-names>T</given-names></string-name>, <string-name><surname>Lane</surname> <given-names>C</given-names></string-name>, <string-name><surname>Sherry</surname> <given-names>N</given-names></string-name>, <etal>et al.</etal> <article-title>Tracking the COVID-19 pandemic in Australia using genomics</article-title>. <source>medRxiv</source> <year>2020</year>: 2020.05.12.20099929.</mixed-citation></ref>
+<ref id="c12"><label>12.</label><mixed-citation publication-type="other"><string-name><surname>Zhang</surname> <given-names>L</given-names></string-name>, <string-name><surname>Jackson</surname> <given-names>CB</given-names></string-name>, <string-name><surname>Mou</surname> <given-names>H</given-names></string-name>, <etal>et al.</etal> <article-title>The D614G mutation in the SARS-CoV-2 spike protein reduces S1 shedding and increases infectivity</article-title>. <source>bioRxiv</source> <year>2020</year>: 2020.06.12.148726.</mixed-citation></ref>
+<ref id="c13"><label>13.</label><mixed-citation publication-type="other"><string-name><surname>Douglas</surname> <given-names>J</given-names></string-name>, <string-name><surname>Mendes</surname> <given-names>FK</given-names></string-name>, <string-name><surname>Bouckaert</surname> <given-names>R</given-names></string-name>, <etal>et al.</etal> <article-title>Phylodynamics reveals the role of human travel and contact tracing in controlling COVID-19 in four island nations</article-title>. <source>medRxiv</source> <year>2020</year>: 2020.08.04.20168518.</mixed-citation></ref>
+<ref id="c14"><label>14.</label><mixed-citation publication-type="journal"><string-name><surname>Dong</surname> <given-names>E</given-names></string-name>, <string-name><surname>Du</surname> <given-names>H</given-names></string-name>, <string-name><surname>Gardner</surname> <given-names>L.</given-names></string-name> <article-title>An interactive web-based dashboard to track COVID-19 in real time</article-title>. <source>The Lancet Infectious Diseases</source> <year>2020</year>; <volume>20</volume>(<issue>5</issue>): <fpage>533</fpage>&#x2013;<lpage>4</lpage>.</mixed-citation></ref>
+<ref id="c15"><label>15.</label><mixed-citation publication-type="journal"><string-name><surname>Oude Munnink</surname> <given-names>BB</given-names></string-name>, <string-name><surname>Nieuwenhuijse</surname> <given-names>DF</given-names></string-name>, <string-name><surname>Stein</surname> <given-names>M</given-names></string-name>, <etal>et al.</etal> <article-title>Rapid SARS-CoV-2 whole-genome sequencing and analysis for informed public health decision-making in the Netherlands</article-title>. <source>Nature Medicine</source> <year>2020</year>; <volume>26</volume>(<issue>9</issue>): <fpage>1405</fpage>&#x2013;<lpage>10</lpage>.</mixed-citation></ref>
+<ref id="c16"><label>16.</label><mixed-citation publication-type="journal"><string-name><surname>Kalinich</surname> <given-names>CC</given-names></string-name>, <string-name><surname>Jensen</surname> <given-names>CG</given-names></string-name>, <string-name><surname>Neugebauer</surname> <given-names>P</given-names></string-name>, <etal>et al.</etal> <article-title>Real-time public health communication of local SARS-CoV-2 genomic epidemiology</article-title>. <source>PLOS Biology</source> <year>2020</year>; <volume>18</volume>(<issue>8</issue>): <fpage>e3000869</fpage>.</mixed-citation></ref>
+<ref id="c17"><label>17.</label><mixed-citation publication-type="journal"><string-name><surname>Rockett</surname> <given-names>RJ</given-names></string-name>, <string-name><surname>Arnott</surname> <given-names>A</given-names></string-name>, <string-name><surname>Lam</surname> <given-names>C</given-names></string-name>, <etal>et al.</etal> <article-title>Revealing COVID-19 transmission in Australia by SARS-CoV-2 genome sequencing and agent-based modeling</article-title>. <source>Nature Medicine</source> <year>2020</year>; <volume>26</volume>(<issue>9</issue>): <fpage>1398</fpage>&#x2013;<lpage>404</lpage>.</mixed-citation></ref>
+<ref id="c18"><label>18.</label><mixed-citation publication-type="journal"><string-name><surname>Bauer</surname> <given-names>DC</given-names></string-name>, <string-name><surname>Tay</surname> <given-names>AP</given-names></string-name>, <string-name><surname>Wilson</surname> <given-names>LOW</given-names></string-name>, <etal>et al.</etal> <article-title>Supporting pandemic response using genomics and bioinformatics: A case study on the emergent SARS-CoV-2 outbreak</article-title>. <source>Transboundary and Emerging Diseases</source> <year>2020</year>; <volume>67</volume>(<issue>4</issue>): <fpage>1453</fpage>&#x2013;<lpage>62</lpage>.</mixed-citation></ref>
+<ref id="c19"><label>19.</label><mixed-citation publication-type="other"><string-name><surname>Jefferies</surname> <given-names>S</given-names></string-name>, <string-name><surname>French</surname> <given-names>N</given-names></string-name>, <string-name><surname>Gilkison</surname> <given-names>C</given-names></string-name>, <etal>et al.</etal> <article-title>COVID-19 in New Zealand and the impact of the national response: a descriptive epidemiological study</article-title>. <source>The Lancet Public Health</source>.</mixed-citation></ref>
+<ref id="c20"><label>20.</label><mixed-citation publication-type="other"><string-name><surname>Rambaut</surname> <given-names>A</given-names></string-name>, <string-name><surname>Holmes</surname> <given-names>EC</given-names></string-name>, <string-name><surname>Hill</surname> <given-names>V</given-names></string-name>, <etal>et al.</etal> <article-title>A dynamic nomenclature proposal for SARS-CoV-2 to assist genomic epidemiology</article-title>. <source>bioRxiv</source> <year>2020</year>: 2020.04.17.046086.</mixed-citation></ref>
+<ref id="c21"><label>21.</label><mixed-citation publication-type="journal"><string-name><surname>Freed</surname> <given-names>NE</given-names></string-name>, <string-name><surname>Vlkov&#x00E1;</surname> <given-names>M</given-names></string-name>, <string-name><surname>Faisal</surname> <given-names>MB</given-names></string-name>, <string-name><surname>Silander</surname> <given-names>OK</given-names></string-name>. <article-title>Rapid and inexpensive whole-genome sequencing of SARS-CoV-2 using 1200bp tiled amplicons and Oxford Nanopore Rapid Barcoding</article-title>. <source>Biology Methods and Protocols</source> <year>2020</year>; <volume>5</volume>(<issue>1</issue>).</mixed-citation></ref>
+<ref id="c22"><label>22.</label><mixed-citation publication-type="journal"><string-name><surname>Katoh</surname> <given-names>K</given-names></string-name>, <string-name><surname>Standley</surname> <given-names>DM</given-names></string-name>. <article-title>MAFFT multiple sequence alignment software version 7: improvements in performance and usability</article-title>. <source>Mol Biol Evol</source> <year>2013</year>; <volume>30</volume>(<issue>4</issue>): <fpage>772</fpage>&#x2013;<lpage>80</lpage>.</mixed-citation></ref>
+<ref id="c23"><label>23.</label><mixed-citation publication-type="journal"><string-name><surname>Bouckaert</surname> <given-names>R</given-names></string-name>, <string-name><surname>Vaughan</surname> <given-names>TG</given-names></string-name>, <string-name><surname>Barido-Sottani</surname> <given-names>J</given-names></string-name>, <etal>et al.</etal> <article-title>BEAST 2.5: An advanced software platform for Bayesian evolutionary analysis</article-title>. <source>PLOS Computational Biology</source> <year>2019</year>; <volume>15</volume>(<issue>4</issue>): <fpage>e1006650</fpage>.</mixed-citation></ref>
+<ref id="c24"><label>24.</label><mixed-citation publication-type="journal"><string-name><surname>Drummond</surname> <given-names>AJ</given-names></string-name>, <string-name><surname>Rambaut</surname> <given-names>A</given-names></string-name>, <string-name><surname>Shapiro</surname> <given-names>B</given-names></string-name>, <string-name><surname>Pybus</surname> <given-names>OG</given-names></string-name>. <article-title>Bayesian coalescent inference of past population dynamics from molecular sequences</article-title>. <source>Mol Biol Evol</source> <year>2005</year>; <volume>22</volume>(<issue>5</issue>): <fpage>1185</fpage>&#x2013;<lpage>92</lpage>.</mixed-citation></ref>
+<ref id="c25"><label>25.</label><mixed-citation publication-type="other"><string-name><surname>Rambaut</surname> <given-names>A</given-names></string-name>, <string-name><surname>Drummond</surname> <given-names>AJ</given-names></string-name>. <source>FigTree version 1.4.0</source>. <year>2012</year>.</mixed-citation></ref>
+<ref id="c26"><label>26.</label><mixed-citation publication-type="journal"><string-name><surname>Letunic</surname> <given-names>I</given-names></string-name>, <string-name><surname>Bork</surname> <given-names>P.</given-names></string-name> <article-title>Interactive Tree Of Life (iTOL) v4: recent updates and new developments</article-title>. <source>Nucleic Acids Research</source> <year>2019</year>; <volume>47</volume>(<issue>W1</issue>): <fpage>W256</fpage>&#x2013;<lpage>W9</lpage>.</mixed-citation></ref>
+</ref-list>
+</back>
+</article>

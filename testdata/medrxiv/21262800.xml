@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.2d1 20170631//EN" "JATS-archivearticle1.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" article-type="article" dtd-version="1.2d1" specific-use="production" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="publisher-id">MEDRXIV</journal-id>
+<journal-title-group>
+<journal-title>medRxiv</journal-title>
+<abbrev-journal-title abbrev-type="publisher">medRxiv</abbrev-journal-title>
+</journal-title-group>
+<publisher>
+<publisher-name>Cold Spring Harbor Laboratory</publisher-name>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1101/2021.08.29.21262800</article-id>
+<article-version>1.1</article-version>
+<article-categories>
+<subj-group subj-group-type="hwp-journal-coll">
+<subject>Epidemiology</subject>
+</subj-group>
+</article-categories>
+<title-group>
+<article-title>Past dynamics of HIV transmission among men who have sex with men in Montr&#x00E9;al, Canada: a mathematical modelling study</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-7660-4199</contrib-id>
+<name><surname>Milwid</surname><given-names>Rachael M</given-names></name>
+<degrees>(PhD)</degrees>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-8785-9621</contrib-id>
+<name><surname>Xia</surname><given-names>Yiqing</given-names></name>
+<degrees>(MSc)</degrees>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Doyle</surname><given-names>Carla</given-names></name>
+<degrees>(MSc)</degrees>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Cox</surname><given-names>Joseph</given-names></name>
+<degrees>(MSc, MD)</degrees>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Lambert</surname><given-names>Gilles</given-names></name>
+<degrees>(MD)</degrees>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Thomas</surname><given-names>R&#x00E9;jean</given-names></name>
+<degrees>(MD)</degrees>
+<xref ref-type="aff" rid="a3">3</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Mishra</surname><given-names>Sharmistha</given-names></name>
+<degrees>(MD, PhD)</degrees>
+<xref ref-type="aff" rid="a4">4</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Grace</surname><given-names>Daniel</given-names></name>
+<degrees>(PhD)</degrees>
+<xref ref-type="aff" rid="a5">5</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Lachowsky</surname><given-names>Nathan J</given-names></name>
+<degrees>(PhD)</degrees>
+<xref ref-type="aff" rid="a6">6</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Hart</surname><given-names>Trevor A</given-names></name>
+<degrees>(PhD)</degrees>
+<xref ref-type="aff" rid="a7">7</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Boily</surname><given-names>Marie-Claude</given-names></name>
+<degrees>(PhD)</degrees>
+<xref ref-type="aff" rid="a8">8</xref>
+</contrib>
+<contrib contrib-type="author" corresp="yes">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-8363-4388</contrib-id>
+<name><surname>Maheu-Giroux</surname><given-names>Mathieu</given-names></name>
+<degrees>(ScD)</degrees>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="corresp" rid="cor1">&#x002A;</xref>
+</contrib>
+<aff id="a1"><label>1</label><institution>Department of Epidemiology and Biostatistics, School of Population and Global Health, McGill University</institution>, Montr&#x00E9;al, QC, <country>Canada</country></aff>
+<aff id="a2"><label>2</label><institution>Direction R&#x00E9;gionale de Sant&#x00E9; Publique de Montr&#x00E9;al</institution>, Montr&#x00E9;al, QC, <country>Canada</country></aff>
+<aff id="a3"><label>3</label><institution>Clinique m&#x00E9;dicale l&#x2019;Actuel</institution>, Montr&#x00E9;al, QC, <country>Canada</country></aff>
+<aff id="a4"><label>4</label><institution>Institute of Health Policy, Management and Evaluation, University of Toronto</institution>, Toronto, ON, <country>Canada</country></aff>
+<aff id="a5"><label>5</label><institution>Social and Behavioural Health Sciences, Dalla Lana School of Public Health, University of Toronto</institution></aff>
+<aff id="a6"><label>6</label><institution>School of Public Health and Social Policy, University of Victoria</institution>, Victoria, <country>Canada</country></aff>
+<aff id="a7"><label>7</label><institution>Department of Psychology, Ryerson University</institution>, Toronto, ON <country>Canada</country></aff>
+<aff id="a8"><label>8</label><institution>Department of Infectious Diseases, Imperial College London</institution>, London, <country>United Kingdom</country></aff>
+</contrib-group>
+<author-notes>
+<corresp id="cor1"><label>&#x002A;</label><bold>Correspondence:</bold> Mathieu Maheu-Giroux, <email>mathieu.maheu-giroux@mcgill.ca</email></corresp>
+<fn fn-type="others"><p><bold>Source of Funding:</bold> This work was funded by the <italic>Canadian Foundation for AIDS Research</italic> and the <italic>Canadian Institutes of Health Research</italic>.</p></fn>
+<fn fn-type="others"><p><bold>Meetings at which parts of the data were presented</bold> This work was presented at the virtual meeting of the <italic>Canadian Association for HIV Research</italic> (CAHR) in May 2021.</p></fn>
+</author-notes>
+<pub-date pub-type="epub">
+<year>2021</year>
+</pub-date>
+<elocation-id>2021.08.29.21262800</elocation-id>
+<history>
+<date date-type="received">
+<day>29</day>
+<month>8</month>
+<year>2021</year>
+</date>
+<date date-type="rev-recd">
+<day>29</day>
+<month>8</month>
+<year>2021</year>
+</date>
+<date date-type="accepted">
+<day>01</day>
+<month>9</month>
+<year>2021</year>
+</date>
+</history>
+<permissions>
+<copyright-statement>&#x00A9; 2021, Posted by Cold Spring Harbor Laboratory</copyright-statement>
+<copyright-year>2021</copyright-year>
+<license license-type="creative-commons" xlink:href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><license-p>This pre-print is available under a Creative Commons License (Attribution-NonCommercial-NoDerivs 4.0 International), CC BY-NC-ND 4.0, as described at <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by-nc-nd/4.0/">http://creativecommons.org/licenses/by-nc-nd/4.0/</ext-link></license-p></license>
+</permissions>
+<self-uri xlink:href="21262800.pdf" content-type="pdf" xlink:role="full-text"/>
+<abstract>
+<title>Abstract</title>
+<sec>
+<title>Background</title>
+<p>Gay, bisexual, and other men who have sex with men (gbMSM) experience disproportionate risks of HIV acquisition/transmission. In 2017, Montr&#x00E9;al became the first Canadian Fast-Track city, setting the 2030 goal of zero new HIV infections. To inform local elimination efforts, we estimate the evolving role of prevention/risk behaviours and HIV transmission dynamics among gbMSM in Montr&#x00E9;al between 1975-2019.</p>
+</sec>
+<sec>
+<title>Methods</title>
+<p>Data from local bio-behavioural surveys were analyzed to develop, parameterize, and calibrate an agent-based model of sexual HIV transmission. Partnership dynamics, the HIV natural history, and treatment and prevention strategies were considered. The model simulations were analyzed to estimate the fraction of HIV acquisitions/transmissions attributable to specific age-groups and unmet prevention needs.</p>
+</sec>
+<sec>
+<title>Results</title>
+<p>The model-estimated HIV incidence peaked in 1985 (2.2%; 90%CrI: 1.3-2.8%) and decreased to 0.1% (90%CrI: 0.04-0.3%) in 2019. Between 1990-2017, the majority of HIV acquisitions/transmissions occurred among men aged 25-44 years, and men aged 35-44 thereafter. The unmet prevention needs of men with &#x003E;10 annual anal sex partners contributed 92-94% of transmissions and 63-73% of acquisitions annually. The primary stage of HIV played an increasing role over time, contributing to 12%-27% of annual transmissions over 1990-2019. In 2019, approximately 75% of transmission events occurred from men who had discontinued, or never initiated ART.</p>
+</sec>
+<sec>
+<title>Conclusions</title>
+<p>The evolving HIV landscape has contributed to the recent low HIV incidence among MSM in Montr&#x00E9;al. The shifting dynamics identified in this study highlight the need for continued population-level surveillance to identify unmet prevention needs and core groups on which to prioritize elimination efforts.</p>
+</sec>
+</abstract>
+<kwd-group kwd-group-type="author">
+<title>Keywords</title>
+<kwd>HIV/AIDS</kwd>
+<kwd>gay bisexual and other men who have sex with men (gbMSM)</kwd>
+<kwd>mathematical modelling</kwd>
+<kwd>agent-based model</kwd>
+<kwd>approximate Bayesian computation-sequential Monte Carlo</kwd>
+<kwd>treatment and care cascade</kwd>
+</kwd-group>
+<counts>
+<page-count count="30"/>
+</counts>
+</article-meta>
+<notes>
+<notes notes-type="competing-interest-statement">
+<title>Competing Interest Statement</title><p>The authors have declared no competing interest.</p></notes>
+<notes notes-type="financial-disclosure">
+<title>Funding Statement</title><p>This work was funded by the Canadian Foundation for AIDS Research and the Canadian Institutes of Health Research.</p></notes>
+<notes notes-type="disclosures">
+<title>Author Declarations</title><p>I confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.</p><p>Yes</p><p>The details of the IRB/oversight body that provided approval or exemption for the research described are given below:</p><p>This study was approved by McGill University Faculty of Medicine and Health Sciences Institutional Review Board (A12-E84-18A)</p><p>All necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived.</p><p>Yes</p><p>I understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).</p><p>Yes</p><p>I have followed all appropriate research reporting guidelines and uploaded the relevant EQUATOR Network research reporting checklist(s) and other pertinent material as supplementary files, if applicable.</p><p>Yes</p></notes>
+</notes>
+</front>
+<body>
+<sec id="s1">
+<title>Introduction</title>
+<p>From the beginning of the HIV epidemic, gay, bisexual, and other men who have sex with men (gbMSM) have been disproportionately impacted<sup><xref rid="c1" ref-type="bibr">1</xref></sup>. In 2019, 60% of new diagnoses in Qu&#x00E9;bec were recorded in Montr&#x00E9;al, Canada&#x2019;s second most populated city<sup><xref rid="c2" ref-type="bibr">2</xref></sup>. Of the new diagnoses, 70% occurred among men, of which 71% were reported among gbMSM<sup><xref rid="c3" ref-type="bibr">3</xref></sup>.</p>
+<p>In 2017, Montr&#x00E9;al became the first Canadian Fast-Track city, pledging to reach zero new HIV infections by 2030<sup><xref rid="c4" ref-type="bibr">4</xref></sup>. The successful achievement of this ambitious goal largely depends on the implementation of effective public health initiatives to reduce the acquisition and transmission potential for HIV. Understanding the impact of sexual behaviors and specific HIV interventions on the epidemic can aid in the development of relevant HIV elimination plans<sup><xref rid="c5" ref-type="bibr">5</xref></sup>. This objective is complicated, however, by the continued evolution of the HIV prevention and treatment landscape, which includes: HIV testing (1985)<sup><xref rid="c6" ref-type="bibr">6</xref></sup>, anti-retroviral therapy (ART; 1996)<sup><xref rid="c7" ref-type="bibr">7</xref></sup>, post-exposure prophylaxis (PEP; 2001)<sup><xref rid="c8" ref-type="bibr">8</xref></sup>, and pre-exposure prophylaxis (PrEP; 2013)<sup><xref rid="c9" ref-type="bibr">9</xref></sup>.</p>
+<p>Characterizing HIV epidemics and their complex transmission dynamics is difficult using traditional epidemiological methods. Tools such as agent-based models (ABM) &#x2013;computer simulations of epidemics&#x2013; are appropriate to understand and characterize past and future transmission dynamics<sup><xref rid="c10" ref-type="bibr">10</xref></sup>. Mathematical models of HIV transmission have been used to describe the drivers (e.g., age, infection stage, knowledge of status, and treatment status<sup><xref rid="c11" ref-type="bibr">11</xref>,<xref rid="c12" ref-type="bibr">12</xref></sup>) and dynamics of global and local HIV epidemics. These models have focused on different population subgroups, have been applied to a range of geographical locations, and have studied, both prospectively and retrospectively, the impact of various interventions on HIV dynamics<sup><xref rid="c13" ref-type="bibr">13</xref>-<xref rid="c16" ref-type="bibr">16</xref></sup>. The relevance and applicability of the models is largely dependent on the quality and quantity of the data used to parameterize and inform the population-specific model<sup><xref rid="c17" ref-type="bibr">17</xref></sup>.</p>
+<p>Despite the large quantity of available Montr&#x00E9;al-based sexual behavioral data, there have been no recent attempts to systematically analyze and triangulate data and surveys on HIV transmission among gbMSM in Montr&#x00E9;al to understand evolving transmission dynamics. The purpose of this study was to describe the epidemiological characteristics of the HIV epidemic and understand sources of HIV acquisition and transmission between 1975-2019.</p>
+</sec>
+<sec id="s2">
+<title>Methods</title>
+<sec id="s2a">
+<title>Data analysis</title>
+<p>Data from the peer-reviewed and grey literature, and individual-level data from the two cross-sectional <italic>Argus</italic> surveys (2005; n=1,957 and 2008; n=1,873), the <italic>Engage</italic> cohort (2017; n=1,179, 2018; n=887, 2019; n=850), and the <italic>L&#x2019;Actuel PrEP Cohort</italic> (2013-2019; n=2746) studies were analyzed to identify temporal trends in sexual behaviors and HIV intervention uptake rates. Details on the studies can be found elsewhere<sup><xref rid="c18" ref-type="bibr">18</xref>-<xref rid="c24" ref-type="bibr">24</xref></sup>. Briefly, the <italic>Argus</italic> surveys used venue-based convenience sampling to recruit gbMSM aged 18&#x002B; years from the island of Montr&#x00E9;al who reported sex with another man during their lifetime. The longitudinal <italic>Engage</italic> cohort used respondent-driven sampling to recruit gbMSM aged 18&#x002B; years from Montr&#x00E9;al who reported sex with another man within the past six months. The <italic>Argus</italic> data were standardized (by age and ethnicity) to the <italic>Engage</italic> data which were analyzed using Volz-Heckathorn weights<sup><xref rid="c25" ref-type="bibr">25</xref></sup>. The data analysis was used to inform model development, parameterization, and calibration (see <italic>Supplementary Materials</italic>).</p>
+</sec>
+<sec id="s2b">
+<title>Agent based model</title>
+<p>An ABM was developed to simulate in discrete time, the sexual transmission dynamics of HIV among gbMSM aged 15&#x002B; years in Montr&#x00E9;al. The model represents an open population, matching the demographic and epidemiological characteristics reported in the surveys and health and census data. A detailed model description can be found in the <italic>Supplementary Materials</italic>. The main characteristics of the partnership formation, natural disease progression, and HIV interventions are described below. A complete list of model parameters (demographic, sexual behaviors, biological, and interventions) is presented in the <italic>Supplementary Materials</italic>.</p>
+</sec>
+<sec id="s2c">
+<title>Partnership formation and duration</title>
+<p>Upon entry into the population, men are assigned an annual partner change rate, informed by the survey data. Only partnerships in which anal sex is performed are modelled. As individuals age, their partner change rate increases slightly up to age 30 and then decreases, in line with the survey data. Men having &#x2264;5, 6-10, and &#x003E;10 anal sex partners per year are categorized as being in the low, medium, and high sexual partnering groups, respectively<sup><xref rid="c26" ref-type="bibr">26</xref></sup>. Men are assigned a partner based on data-driven mixing matrices that vary by age, perceived serostatus, and preferred anal sex role (insertive, receptive, or versatile). If no available partners match all three criteria, the search continues with either age or serostatus dropped. If there are still no suitable partners, the man does not form a partnership at that time.</p>
+<p>Men can form casual or regular partnerships. Casual partnerships begin and end within the same time step (but can involve more than one sex act), while the duration of regular partnerships is assumed to be longer than one month. Men can only have one concurrent regular partnership. Therefore, upon partnership formation, if either man is already part of a regular partnership, then the partnership is assigned a casual status. Otherwise, a Bernoulli distribution is used to determine the partnership type.</p>
+</sec>
+<sec id="s2d">
+<title>HIV transmission and progression</title>
+<p>It is assumed that there are no external sources of sexual HIV transmission (e.g., in the context of sex with female partners or sharing injecting needles). Following HIV acquisition, individuals go through an initial short, highly infectious period<sup><xref rid="c27" ref-type="bibr">27</xref></sup>. Subsequently, people living with HIV (PLHIV) progress through distinct CD4 cell count categories, with some starting at a lower CD4 cell count<sup><xref rid="c28" ref-type="bibr">28</xref></sup>: &#x003E;500 cells <italic>&#x00B5;L</italic><sup>&#x2212;1</sup>, 350-500 cells <italic>&#x00B5;L</italic><sup>&#x2212;1</sup>, 200-350 cells <italic>&#x00B5;L</italic><sup>&#x2212;1</sup>, and &#x003C;200 cells <italic>&#x00B5;L</italic><sup>&#x2212;1</sup>. Men on ART maintain their CD4 cell count from treatment initiation until ART discontinuation or death<sup><xref rid="c29" ref-type="bibr">29</xref></sup>. The AIDS-related death rate varies by age, stage of infection, treatment status, and time on ART<sup><xref rid="c30" ref-type="bibr">30</xref>,<xref rid="c31" ref-type="bibr">31</xref></sup>.</p>
+<p>The probability of HIV transmission within sero-discordant partnerships is computed as a function of the number of sex acts in the partnership, the HIV-positive partner&#x2019;s stage of infection and ART status, and the HIV-negative partner&#x2019;s sex role, PrEP use, the proportion of sex acts protected by condoms within the partnership, and whether the man seeks PEP afterward.</p>
+</sec>
+<sec id="s2e">
+<title>HIV interventions</title>
+<p>All men have similar HIV testing rates prior to 1996. Subsequently, the annual rates of HIV testing were estimated from survey data and were allowed to vary by sexual partnering levels (low versus moderate/high). Once tested for HIV, a minimum inter-testing interval is assigned. From 1985 onwards, testing occurs for undiagnosed symptomatic PLHIV on average six months after progressing to the late stage of infection, irrespective of calendar time.</p>
+<p>Upon HIV diagnosis, eligible men are assigned an ART initiation date. The local time-varying ART eligibility criteria is incorporated in the model such that PLHIV with a CD4 cell count &#x003C;350 cells <italic>&#x00B5;L</italic><sup>&#x2212;1</sup> (1996-2013), &#x003C;500 cells <italic>&#x00B5;L</italic><sup>&#x2212;1</sup> (2013-2016), and all PLHIV (2016 onwards) are eligible for ART. The effectiveness of ART in reducing HIV transmission is assumed to be 80% for the first 3-6 months after initiation<sup><xref rid="c32" ref-type="bibr">32</xref></sup>, and 90-100% thereafter<sup><xref rid="c33" ref-type="bibr">33</xref>,<xref rid="c34" ref-type="bibr">34</xref></sup> as not all those on ART will achieve sustained viral suppression<sup><xref rid="c35" ref-type="bibr">35</xref></sup>. Men can discontinue and later reinitiate ART. Following ART discontinuation, PLHIV continue to progress through lower CD4 cell count categories.</p>
+<p>Survey data regarding the frequency of condom use were used to estimate the per-partner and per-act probability of using condoms. The categorical survey responses (never, occasionally, often, and always) for each stratum (partnership type, age, sero-status, sexual partnering level, and time) were converted into a numerical equivalent and averaged. An all-or-nothing approach is implemented for men in casual partnerships, while regular partners may protect only a proportion of their sex acts with condoms. Condoms are assumed to be 91% efficacious in preventing HIV transmission<sup><xref rid="c36" ref-type="bibr">36</xref></sup>.</p>
+<p>PEP, which is assumed to be 80% efficacious in preventing HIV acquisition<sup><xref rid="c37" ref-type="bibr">37</xref></sup>, became available for non-occupational use for gbMSM at the end of 2000. Given the low PEP uptake at that time<sup><xref rid="c8" ref-type="bibr">8</xref></sup>, PEP was initiated in the model in 2001 and uptake rates increased linearly until 2017. PEP eligibility is modelled according to local clinical protocols.</p>
+<p>In 2013, Qu&#x00E9;bec recommended PrEP and partly reimbursed it using public funds<sup><xref rid="c8" ref-type="bibr">8</xref></sup>. The PrEP eligibility criteria incorporated within the model is consistent with local guidelines<sup><xref rid="c38" ref-type="bibr">38</xref></sup> and includes post-initiation HIV testing. PrEP is assumed to be 86% effective in inhibiting HIV acquisition<sup><xref rid="c39" ref-type="bibr">39</xref></sup>. A detailed description of the PEP and PrEP model components is presented in the <italic>Supplementary Materials</italic>.</p>
+<sec id="s2e1">
+<title>Model calibration</title>
+<p>An approximate Bayesian computation-sequential Monte Carlo algorithm was used to select the parameter sets that best reproduce the following epidemiological features: age-stratified HIV prevalence (2005, 2008, 2017-2019), ART coverage (2005, 2017-2019), the proportion who ever used PrEP (2017-2019), the PrEP coverage (2017-2019), the CD4 cell count at diagnosis (2013-2017), and the annual proportion diagnosed with HIV (2005, 2008, 2017). Additional cross-validation was performed by comparing the model outputs with surveillance data on: HIV incidence, the proportion of PLHIV with knowledge of status (2018), the proportion of PLHIV who used PrEP in the past six months (2017-2019), the proportion of PLHIV with viral load suppression (2017-2019), and the age-stratified CD4 cell count at diagnosis (2013-2017)<sup><xref rid="c40" ref-type="bibr">40</xref></sup>, and number of new diagnoses (2002-2017)<sup><xref rid="c40" ref-type="bibr">40</xref></sup>. The model calibration resulted in 50 posterior parameter sets. A full description of the calibration process can be found in the <italic>Supplementary Materials</italic>.</p>
+<p>The model was initialized in 1975 and progressed in two-week increments. A total of 10,000 agents are simulated and results are scaled-up to the estimated population size of gbMSM. Model simulations were run once for each posterior parameter set. The model was coded in R, version 3.6.3<sup><xref rid="c41" ref-type="bibr">41</xref></sup>, and incorporated C&#x002B;&#x002B; through the Rcpp interface, version 1.0.4.6<sup><xref rid="c42" ref-type="bibr">42</xref></sup></p>
+</sec>
+<sec id="s2e2">
+<title>Model analysis</title>
+<sec id="s2e2a">
+<title>Description of the HIV epidemic</title>
+<p>To capture the salient features of the epidemic, the HIV dynamics are characterized from 1975-2019. The annual prevalence, incidence, and mortality rates are computed. To identify the groups most affected by HIV, each measure is stratified by age group (15-24, 25-34, 35-44, 45-54, and 55&#x002B; years) and sexual partnering level (low, medium, and high).</p>
+</sec>
+<sec id="s2e2b">
+<title>Drivers of the HIV epidemic</title>
+<p>The drivers of the epidemic are calculated from 1990 onwards, following the epidemic peak observed during the calibration process. Model outcomes are calculated from the beginning of the respective calendar year until the end of the year. We examined both who acquired (<xref ref-type="disp-formula" rid="eqn1">Eq. 1</xref>) and who transmitted infections (<xref ref-type="disp-formula" rid="eqn2">Eq. 2</xref>). To characterize who acquired infections (<italic>A</italic><sub><italic>ti</italic></sub>), we divided the number of men with characteristic <italic>i</italic> (e.g., age, sexual partnering level) who acquired HIV over a defined period by the cumulative number of new HIV infections (<italic>I</italic><sub><italic>t</italic></sub>) within that time period (<italic>t</italic><sub>0</sub> &#x2192; <italic>t</italic><sub><italic>n</italic></sub><italic>)</italic>.
+<disp-formula id="eqn1">
+<alternatives><graphic xlink:href="21262800v1_eqn1.gif"/></alternatives>
+</disp-formula>
+The proportion of incident infections transmitted was computed by dividing the cumulative number of transmission events <italic>(T</italic><sub><italic>ti</italic></sub><italic>)</italic> from PLHIV with characteristic <italic>i</italic> (i.e., age, sexual partnership level, infection stage, knowledge of HIV status, ART status) over a defined time period (<italic>t</italic><sub>0</sub> &#x2192; <italic>t</italic><sub><italic>n</italic></sub>) by the cumulative number of new infections (<italic>I</italic><sub><italic>t</italic></sub>) within that time period (<xref ref-type="disp-formula" rid="eqn2">Eq. 2</xref>).
+<disp-formula id="eqn2">
+<alternatives><graphic xlink:href="21262800v1_eqn2.gif"/></alternatives>
+</disp-formula>
+The mean and 90% credible interval (CrI), calculated as the 5<sup>th</sup> and 95<sup>th</sup> percentiles, of the 50 simulations are reported for each measure.</p>
+</sec>
+</sec>
+<sec id="s2e3">
+<title>Ethics</title>
+<p>This study was approved by McGill University&#x2019;s Faculty of Medicine and Health Sciences Institutional Review Board (A12-E84-18A).</p>
+</sec>
+</sec>
+</sec>
+<sec id="s3">
+<title>Results</title>
+<p>The calibrated model adequately replicated the age-specific epidemiological outcomes and intervention coverage (<italic>Supplementary Materials</italic>), providing credence in the ability of the model to capture population-level HIV transmission dynamics over time.</p>
+<sec id="s3a">
+<title>Description of the epidemic</title>
+<p>The simulated HIV incidence peaked in 1985 (2.2% year<sup>-1</sup>, 90%CrI: 1.3-2.8%) and decreased to 0.1% (90%CrI: 0.04-0.3%) in 2019 (<xref rid="fig1" ref-type="fig">Figure 1</xref>). Throughout the epidemic, the incidence among the 35-44-year age group was 2-3 times that of the 15-24-year age group.</p>
+<fig id="fig1" position="float" fig-type="figure">
+<label>Figure 1:</label>
+<caption><p>Overall, age and sexual partnering level stratified estimates of HIV incidence, prevalence, and mortality among men who have sex with men in Montr&#x00E9;al over 1975-2019. The solid line represents the mean of 50 simulations, and the shaded area represents the 90% credible interval. The HIV incidence peaked in 1985, while the prevalence and mortality peaked in 1990 and 1993, respectively. The 35-44-year age group and high sexual partnering group had the highest prevalence and incidence at the epidemic peak, while the 45-54-year age group had the highest mortality. By 2017, the incidence was still highest within the 35-44-year age group. Subsequent to 1990, the HIV prevalence decreased for all age groups, with the exception of the 55&#x002B; year age group for which the prevalence continues to increase.</p></caption>
+<graphic xlink:href="21262800v1_fig1.tif"/>
+</fig>
+<p>Additionally, the incidence ratio between the high and low sexual partnering groups ranged from 10-11 between 1975-1981, 8-10 between 1981-1985, and 5-7 thereafter, while the incidence ratio between the high and medium sexual partnering groups ranged between 2-4 throughout the epidemic.</p>
+<p>The annual HIV prevalence peaked circa 1990 at 13.3% (90%CrI: 9.3-16.4%) (<xref rid="fig1" ref-type="fig">Figure 1</xref>). During this time, the prevalence was highest among men aged 35-44 years (22.6%), and those in the high sexual partnering group (27.4%). Following this 1990 peak, the prevalence decreased for all strata, excluding men aged 55&#x002B; years who continue to experience an increase in prevalence. By 2019, the overall prevalence had decreased to 6.3% (90%CrI: 5.1-7.9%), and the oldest age group and high sexual partnering group had the highest prevalence at 18.1% and 11.5%.</p>
+<p>HIV-specific mortality rates peaked in 1993 at 1.1% (90%CrI: 0.7-1.4%). The mortality rate was highest among the 45-54-year age group, up to 10 times that of the 15-24-year olds from 1975-1988 and 11-25 times greater thereafter. From 1978-1987, the death rate among men in the high sexual partnering group was 9-24 times greater than that of the low sexual partnering group, and 4-8 times greater from 1986 onwards. The HIV-related mortality rate among the high sexual partnering group was 2-4 times that of the medium sexual partnering group from 1978 onwards.</p>
+</sec>
+<sec id="s3b">
+<title>Drivers of the HIV epidemic</title>
+<p>Over 1990-2019, the proportion of infections attributed to the primary stage of HIV infection increased from 12% (90%CrI: 7-19%) to 27% (90%CrI: 0-58%) (<xref rid="fig2" ref-type="fig">Figure 2</xref>). The proportion of incident infections attributed to the late stage of disease decreased from 29% (90%CrI: 19-37%) to 12% (90%CrI: 0-35%).</p>
+<fig id="fig2" position="float" fig-type="figure">
+<label>Figure 2:</label>
+<caption><p>Proportion of annual HIV transmission events from individuals in the primary and late stages of infection. The mean (solid line) and 90% credible interval (shaded region) of 50 simulations are shown. The proportion of infections from men at the primary stage of HIV infection increased over time from a mean of 12% in 1990 to 27% in 2019. In contrast, men at the late stage of infection played a decreasing role in new infections.</p></caption>
+<graphic xlink:href="21262800v1_fig2.tif"/>
+</fig>
+<p>Within a given year, 16-30% and 70-84% of transmission events occurred within regular and casual partnerships respectively (<xref rid="fig3" ref-type="fig">Figure 3</xref>). Regarding age, the majority of infections were transmitted and acquired by individuals aged 25-34 years from 1990 to 2017, and those aged 35-44 thereafter (<xref rid="fig4" ref-type="fig">Figure 4a</xref>). HIV transmissions and acquisitions among men aged 25-34 years peaked in 2008 and decreased until 2019. Over 1990-2019, the 35-44-year age group played an increasing role in HIV transmissions (28-38%), and acquisitions (24-38%). Finally, the high partnering group transmitted (92-94%) and acquired (63-73%) most new infections throughout the epidemic. Of note, while the low/medium partnering groups each transmitted &#x003C;7% of infections, they acquired up to 20% of new HIV infections (<xref rid="fig4" ref-type="fig">Figure 4b</xref>).</p>
+<fig id="fig3" position="float" fig-type="figure">
+<label>Figure 3:</label>
+<caption><p>Proportion of annual incident HIV infections transmitted among casual and regular partners. Regular partnerships were defined as having a duration <underline>&#x003E;</underline>1 month. The mean proportion of transmissions (solid line) among each partnership type and the 90% credible interval (shaded region) are shown. Approximately 25% of new infections were transmitted within regular partnerships, while 75% of new infections were transmitted within casual partnerships.</p></caption>
+<graphic xlink:href="21262800v1_fig3.tif"/>
+</fig>
+<fig id="fig4" position="float" fig-type="figure">
+<label>Figure 4:</label>
+<caption><p>Mean and 90% credible interval of annual proportion of new infections transmitted and acquired by people living with HIV (PLHIV) stratified by age group (panel A) and sexual partnering level (panel B). Most new infections were transmitted and acquired by PLHIV aged 25-34 years between 1990 and 2017, and men aged 35-44 thereafter. With respect to sexual partnering level, through the epidemic, the majority of infections were transmitted by those with more than 10 partners per year.</p></caption>
+<graphic xlink:href="21262800v1_fig4.tif"/>
+</fig>
+<p>The proportion of gbMSM unaware of their HIV status decreased from 74% (90%CrI: 71-77%) in 1990 to 4% (90%CrI: 2-6%) in 2019. Between 1996-2019, the proportion who had never initiated ART decreased from 63% (90%CrI: 55-89%) to 5% (90%CrI: 3-7%), while the proportion who had discontinued ART for any length of time at the time of HIV transmission decreased from 5% (90%CrI: 1-8%) to 1% (90%CrI: 0-3%). The proportion of transmission events from those unaware of their HIV-positive status decreased from 67% (90%CrI: 59-76%) in 1990 to 50% (90%CrI: 20-84%) in 2019. Over 1996-2019, the majority of transmission events occurred among PLHIV who had never been on ART. This proportion dropped from 96% to 60%, while the proportion of transmission events among men who had either discontinued ART or were on treatment (without a suppressed viral load) increased from 2% and 2% to 14% and 26% (<xref rid="fig5" ref-type="fig">Figure 5</xref>).</p>
+<fig id="fig5" position="float" fig-type="figure">
+<label>Figure 5:</label>
+<caption><p>Proportion of people living with HIV (PLHIV) and those transmitting HIV who were unaware of their HIV-positive status, and their antiretroviral therapy (ART) status. The solid line represents the mean of 50 simulations and the shaded band represents the 90% credible interval. The proportion of PLHIV unaware of their status decreased from 74% in 1990 to 4% in 2019, while the equivalent proportion among those transmitting HIV decreased from 67% to 50% between 1990 and 2019. The proportion of PLHIV who had never been on ART decreased from 63% to 5% between 1996 and 2019 while the proportion who had never been on ART at the time of transmitting HIV decreased from 96% to 60%. gbMSM: gay, bisexual, and other men who have sex with men</p></caption>
+<graphic xlink:href="21262800v1_fig5.tif"/>
+</fig>
+</sec>
+</sec>
+<sec id="s4">
+<title>Discussion</title>
+<p>Achieving city-level HIV elimination requires a granular understanding of local past and present transmission dynamics, the identification of unmet prevention needs, and data-driven implementation of appropriate interventions among the populations most impacted by HIV<sup><xref rid="c43" ref-type="bibr">43</xref></sup>. Through the development and analysis of a detailed model of HIV dynamics among gbMSM in Montr&#x00E9;al, we characterized trends in HIV incidence, prevalence, mortality, as well as the individual characteristics of HIV acquisitions and transmissions. Our model points to important improvements in epidemiological and continuum of care outcomes, with low HIV incidence in recent years.</p>
+<p>At the beginning of the epidemic, the rising mortality rates between 1985-1995, combined with some saturation of groups with higher partnering levels, played an important role in reducing the proportion of individuals who could contribute to onward HIV transmission. The latter translated into a decreasing HIV incidence and subsequent fall in prevalence over 1990-2000. The introduction of ART in 1996 lead to a sharp drop in mortality, consistent with national estimates of deaths due to AIDS<sup><xref rid="c1" ref-type="bibr">1</xref></sup>. With the advent of these life-saving treatments and concomitant incidence reductions, the AIDS epidemic aged<sup><xref rid="c44" ref-type="bibr">44</xref></sup>. This was particularly salient with the increasing HIV prevalence among men aged 55&#x002B; years. This trend is similar to the national one in Canada where, despite an overall increase in the number of PLHIV, the number of gbMSM PLHIV has stabilized<sup><xref rid="c45" ref-type="bibr">45</xref></sup>. Nationally, other groups of individuals such as people who inject drugs, Indigenous, and other heterosexual males and females contribute to increasing national prevalence.</p>
+<p>The large incidence ratio between the high and low sexual partnering groups is indicative of the underlying mixing patterns within the population and the increased likelihood of HIV transmission and acquisition among individuals with more sexual partners<sup><xref rid="c46" ref-type="bibr">46</xref></sup>. Consequently, the high partnering group experienced a greater reduction in incidence after the introduction of ART. The low/medium sexual partnering groups acquired approximately 20% of new HIV infections but transmitted few. This highlights their smaller role in ongoing transmission of HIV but suggests that renewed HIV prevention efforts that engage men in the low/medium sexual partnering groups are needed to further reduce HIV acquisition. Improving PrEP use among eligible men (e.g., those not using condoms) in these lower sexual activity groups could address such prevention needs. In addition, the model simulations indicate that the majority of transmission and acquisition events took place among gbMSM aged 25-44. This result is in line with local HIV surveillance data of new HIV diagnoses<sup><xref rid="c3" ref-type="bibr">3</xref></sup> and should be considered as we approach HIV elimination.</p>
+<p>Our analyses identified opportunities to strengthen HIV prevention. Although we evaluate that diagnosis coverage has achieved high levels (&#x003E;90%) in recent years, approximately half of HIV transmission events in 2019 could have occurred from undiagnosed men. With the current low HIV incidence and high HIV testing rates, this undiagnosed fraction has considerably decreased over the last decade. ART coverage among gbMSM in Montr&#x00E9;al was also estimated to be high in 2019 (&#x003E;90%). However, not all men on ART have a suppressed viral load and our model suggests that close to 1 out 4 transmission events could be from PLHIV on treatment. There is a short 3-6 month period following ART initiation where viral load suppression has not been achieved and clinical data of gbMSM in Montr&#x00E9;al suggest that 93% of those on ART are virally suppressed <sup><xref rid="c35" ref-type="bibr">35</xref></sup>. Reflecting this setting of low HIV incidence, high ART coverage, and low AIDS incidence, our model suggests that those in the acute infection stage have contributed a relatively larger proportion of transmission events over the last decade. These estimates are comparable with estimates found among gbMSM in the UK (population attributable fraction: 3-28% in 2014-15)<sup><xref rid="c15" ref-type="bibr">15</xref></sup> and Baltimore (8-35% over 2008-17)<sup><xref rid="c11" ref-type="bibr">11</xref></sup>. Given the heightened HIV transmissibility during the primary stage of infection<sup><xref rid="c47" ref-type="bibr">47</xref></sup>, identifying new clusters of infections through the routine use of recency assays<sup><xref rid="c48" ref-type="bibr">48</xref></sup>, phylogenetic testing<sup><xref rid="c49" ref-type="bibr">49</xref></sup>, and genetic sequencing<sup><xref rid="c50" ref-type="bibr">50</xref></sup> could help achieve HIV elimination. Additionally, continued efforts are necessary to increase timely diagnosis, prompt linkage to ART, the continued promotion of &#x201C;U=U&#x201D; (i.e., undetectable equals untransmittable)<sup><xref rid="c51" ref-type="bibr">51</xref></sup> to reduce stigma, and sustaining viral load suppression among those who have achieved it.</p>
+<p>The study results should be interpreted considering several limitations. First, the paucity of recorded data from the early years of the epidemic (e.g., condom use, sexual behaviors, and HIV testing) necessitated the use of informed assumptions. Although the calibrated model resulted in good fits, we were unable to cross-validate our earlier inferences with empirical data. Further, the inherent biases of self-reported data (e.g., sex role preference), could affect some of our results. Second, the survey instruments had different eligibility criteria and, in some cases, metrics had slightly different definitions across surveys. However, statistical methods were used to standardize survey data, ensuring their comparability and improving representativeness. Third, although ethnicity was not incorporated in the model, studies suggest that in Canada, there are minimal differences in HIV prevalence by race<sup><xref rid="c52" ref-type="bibr">52</xref></sup> although we recognize that some minoritized populations could face distinct barriers. Finally, the lower HIV incidence in recent years resulted in large uncertainty when performing stratified analyses.</p>
+<p>Despite achieving low HIV incidence, Montr&#x00E9;al gbMSM continue to account for the majority of all new HIV diagnoses in Qu&#x00E9;bec<sup><xref rid="c3" ref-type="bibr">3</xref></sup>. To achieve the goal of HIV elimination, continued surveillance efforts and the strategic implementation of combination HIV prevention strategies, including increased frequency of HIV testing among high sexual partnering individuals, and increased PrEP among all PLHIV, should be prioritized. By characterizing the HIV dynamics, it was possible to identify the population subgroups most impacted by HIV and the need to further improve ART retention. The implementation of interventions that focus on gbMSM aged 25-45, and gbMSM in the high partnering group could help to achieve HIV elimination among gbMSM in Montr&#x00E9;al.</p>
+</sec>
+<sec sec-type="supplementary-material">
+<title>Supporting information</title>
+<supplementary-material>
+<label>Supplemental document</label>
+<media xlink:href="supplements/262800_file07.docx" />
+</supplementary-material>
+</sec>
+</body>
+<back>
+<sec sec-type="data-availability">
+<title>Data Availability</title>
+<p>The data used in this work is not publicly available</p>
+</sec>
+<ack>
+<title>Acknowledgements</title>
+<p>R.M.M and M.M-G developed the model structure in consultation with M-C.B, Y.X., C.D., J.C, S.M., and G.L. Y.X and C.D performed the data analysis. R.M.M and M.M-G drafted the manuscript, which was edited by Y.X, C.D, J.C, G.L, R.T, S.M, D.G, T.A.H., N.J.L, and M-C.B. The supplementary appendix was drafted by R.M.M, Y.X and C.D. and edited by Y.X, C.D, J.C, G.L, R.T, S.M, D.G, T.A.H., N.J.L, and M-C.B.</p>
+</ack>
+<ref-list>
+<title>References</title>
+<ref id="c1"><label>1.</label><mixed-citation publication-type="other"><collab>Public Health Agency of Canada</collab>. <source>Chapter 2: Population-Specific HIV/AIDS status report: People living with HIV/AIDS - epidemiological profile of HIV and AIDS in Canada</source>. <year>2015</year>.</mixed-citation></ref>
+<ref id="c2"><label>2.</label><mixed-citation publication-type="other"><collab>Statistics Canada</collab>. <source>Municipalities in Canada with the largest and fastest-growing populations between 2011 and 2016</source>. <year>2017</year>.</mixed-citation></ref>
+<ref id="c3"><label>3.</label><mixed-citation publication-type="other"><collab>Institut national de sant&#x00E9; publique du Qu&#x00E9;bec</collab>. <source>Programme de surveillance de l&#x2019;infection par le virus de l&#x2019;immunod&#x00E9;ficience humaine (VIH) au Qu&#x00E9;bec: rapport annuel 2019</source>. <year>2020</year>.</mixed-citation></ref>
+<ref id="c4"><label>4.</label><mixed-citation publication-type="other"><collab>Montreal sans sida</collab>. <source>Common action plan, 2019-2020; Summary</source>. <year>2019</year>.</mixed-citation></ref>
+<ref id="c5"><label>5.</label><mixed-citation publication-type="journal"><string-name><surname>Rotheram-Borus</surname> <given-names>MJ</given-names></string-name>, <string-name><surname>Swendeman</surname> <given-names>D</given-names></string-name>, <string-name><surname>Chovnick</surname> <given-names>G.</given-names></string-name> <article-title>The past, present, and future of HIV prevention: integrating behavioral, biomedical, and structural intervention strategies for the next generation of HIV prevention</article-title>. <source>Annu Rev Clin Psychol</source>. <year>2009</year>;<volume>5</volume>:<fpage>143</fpage>&#x2013;<lpage>167</lpage>.</mixed-citation></ref>
+<ref id="c6"><label>6.</label><mixed-citation publication-type="journal"><string-name><surname>Paz-Bailey</surname> <given-names>G</given-names></string-name>, <string-name><surname>Mendoza</surname> <given-names>MC</given-names></string-name>, <string-name><surname>Finlayson</surname> <given-names>T</given-names></string-name>, <etal>et al.</etal> <article-title>Trends in condom use among MSM in the United States: the role of antiretroviral therapy and seroadaptive strategies</article-title>. <source>AIDS</source>. <year>2016</year>;<volume>30</volume>(<issue>12</issue>):<fpage>1985</fpage>&#x2013;<lpage>1990</lpage>.</mixed-citation></ref>
+<ref id="c7"><label>7.</label><mixed-citation publication-type="journal"><string-name><surname>Hogg</surname> <given-names>RS</given-names></string-name>, <string-name><surname>Heath</surname> <given-names>K</given-names></string-name>, <string-name><surname>Lima</surname> <given-names>VD</given-names></string-name>, <etal>et al.</etal> <article-title>Disparities in the burden of HIV/AIDS in Canada</article-title>. <source>PLoS One</source>. <year>2012</year>;<volume>7</volume>(<issue>11</issue>):<fpage>e47260</fpage>.</mixed-citation></ref>
+<ref id="c8"><label>8.</label><mixed-citation publication-type="journal"><string-name><surname>Xia</surname> <given-names>Y</given-names></string-name>, <string-name><surname>Greenwald</surname> <given-names>Z</given-names></string-name>, <string-name><surname>Milwid</surname> <given-names>R</given-names></string-name>, <etal>et al.</etal> <article-title>Pre-exposure prophylaxis uptake among men who have sex with men who used nPEP: A longitudinal analysis of attendees at a large sexual health clinic in Montr&#x00E9;al (Canada)</article-title>. <source>JAIDS Journal of Acquired Immune Deficiency Syndromes</source>. <year>2020</year>;<volume>85</volume>:<fpage>408</fpage>&#x2013;<lpage>415</lpage>.</mixed-citation></ref>
+<ref id="c9"><label>9.</label><mixed-citation publication-type="other"><string-name><surname>Xia</surname> <given-names>Y</given-names></string-name>, <string-name><surname>Greenwald</surname> <given-names>ZR</given-names></string-name>, <string-name><surname>Milwid</surname> <given-names>RM</given-names></string-name>, <etal>et al.</etal> <article-title>Pre-exposure prophylaxis uptake among men who have sex with men who used non-occupational post-exposure prophylaxis: a longitudinal analysis of attendees at a large sexual health clinic in Montreal (Canada)</article-title>. <source>J Acquir Immune Defic Syndr</source>. <year>2020</year>.</mixed-citation></ref>
+<ref id="c10"><label>10.</label><mixed-citation publication-type="journal"><string-name><surname>Willem</surname> <given-names>L</given-names></string-name>, <string-name><surname>Verelst</surname> <given-names>F</given-names></string-name>, <string-name><surname>Bilcke</surname> <given-names>J</given-names></string-name>, <string-name><surname>Hens</surname> <given-names>N</given-names></string-name>, <string-name><surname>Beutels</surname> <given-names>P.</given-names></string-name> <article-title>Lessons from a decade of individual-based models for infectious disease transmission: a systematic review (2006-2015)</article-title>. <source>BMC Infect Dis</source>. <year>2017</year>;<volume>17</volume>(<issue>1</issue>):<fpage>612</fpage>.</mixed-citation></ref>
+<ref id="c11"><label>11.</label><mixed-citation publication-type="other"><string-name><surname>Silhol</surname> <given-names>R</given-names></string-name>, <string-name><surname>Boily</surname> <given-names>MC</given-names></string-name>, <string-name><surname>Dimitrov</surname> <given-names>D</given-names></string-name>, <etal>et al.</etal> <article-title>Understanding the HIV epidemic among MSM in Baltimore: a modelling study estimating the impact of past HIV interventions and who acquired and contributed to infections</article-title>. <source>J Acquir Immune Defic Syndr</source>. <year>2020</year>.</mixed-citation></ref>
+<ref id="c12"><label>12.</label><mixed-citation publication-type="journal"><string-name><surname>Goodreau</surname> <given-names>SM</given-names></string-name>, <string-name><surname>Rosenberg</surname> <given-names>ES</given-names></string-name>, <string-name><surname>Jenness</surname> <given-names>SM</given-names></string-name>, <etal>et al.</etal> <article-title>Sources of racial disparities in HIV prevalence in men who have sex with men in Atlanta, GA, USA: a modelling study</article-title>. <source>The Lancet HIV</source>. <year>2017</year>;<volume>4</volume>(<issue>7</issue>):<fpage>e311</fpage>&#x2013;<lpage>e320</lpage>.</mixed-citation></ref>
+<ref id="c13"><label>13.</label><mixed-citation publication-type="journal"><string-name><surname>Baggaley</surname> <given-names>RF</given-names></string-name>, <string-name><surname>Garnett</surname> <given-names>GP</given-names></string-name>, <string-name><surname>Ferguson</surname> <given-names>NM</given-names></string-name>. <article-title>Modelling the impact of antiretroviral use in resource-poor settings</article-title>. <source>PLoS Med</source>. <year>2006</year>;<volume>3</volume>(<issue>4</issue>):<fpage>e124</fpage>.</mixed-citation></ref>
+<ref id="c14"><label>14.</label><mixed-citation publication-type="journal"><string-name><surname>Law</surname> <given-names>MG</given-names></string-name>, <string-name><surname>Prestage</surname> <given-names>G</given-names></string-name>, <string-name><surname>Grulich</surname> <given-names>A</given-names></string-name>, <string-name><surname>Van de Ven</surname> <given-names>P</given-names></string-name>, <string-name><surname>Kippax</surname> <given-names>S.</given-names></string-name> <article-title>Modelling the effect of combination antiretroviral treatments on HIV incidence</article-title>. <source>Aids</source>. <year>2001</year>;<volume>15</volume>(<issue>10</issue>):<fpage>1287</fpage>--1294.</mixed-citation></ref>
+<ref id="c15"><label>15.</label><mixed-citation publication-type="journal"><string-name><surname>Punyacharoensin</surname> <given-names>N</given-names></string-name>, <string-name><surname>Edmunds</surname> <given-names>WJ</given-names></string-name>, <string-name><surname>De Angelis</surname> <given-names>D</given-names></string-name>, <etal>et al.</etal> <article-title>Modelling the HIV epidemic among MSM in the United Kingdom: quantifying the contributions to HIV transmission to better inform prevention initiatives</article-title>. <source>AIDS</source>. <year>2015</year>;<volume>29</volume>(<issue>3</issue>):<fpage>339</fpage>&#x2013;<lpage>349</lpage>.</mixed-citation></ref>
+<ref id="c16"><label>16.</label><mixed-citation publication-type="journal"><string-name><surname>Sorensen</surname> <given-names>SW</given-names></string-name>, <string-name><surname>Sansom</surname> <given-names>SL</given-names></string-name>, <string-name><surname>Brooks</surname> <given-names>JT</given-names></string-name>, <etal>et al.</etal> <article-title>A mathematical model of comprehensive test-and-treat services and HIV incidence among men who have sex with men in the United States</article-title>. <source>PLoS One</source>. <year>2012</year>;<volume>7</volume>(<issue>2</issue>):<fpage>e29098</fpage>.</mixed-citation></ref>
+<ref id="c17"><label>17.</label><mixed-citation publication-type="journal"><string-name><surname>Garnett</surname> <given-names>PG</given-names></string-name>. <article-title>An introduction to mathematical models in sexually transmitted disease epidemiology</article-title>. <source>Sexually transmitted infections</source>. <year>2002</year>;<volume>78</volume>(<issue>1</issue>):<fpage>7</fpage>&#x2013;<lpage>12</lpage>.</mixed-citation></ref>
+<ref id="c18"><label>18.</label><mixed-citation publication-type="other"><collab>Public Health Agency of Canada. M-Track: Enhanced surveillance of HIV, sexually transmitted and blood-borne infections, and associated risk behaviours among men who have sex with men in Canada</collab>. <source>Phase 1 report</source>. <year>2011</year>.</mixed-citation></ref>
+<ref id="c19"><label>19.</label><mixed-citation publication-type="website"><collab>Public Health Agency of Canada</collab>. <source>Survey of HIV, viral hepatitis, STIs and associated risk behaviours among Quebec men who have sex with men</source>. <year>2009</year>; <ext-link ext-link-type="uri" xlink:href="http://argusquebec.ca/english/index.html">http://argusquebec.ca/english/index.html</ext-link>. Accessed <date-in-citation content-type="access-date">2019-080-06</date-in-citation>.</mixed-citation></ref>
+<ref id="c20"><label>20.</label><mixed-citation publication-type="other"><string-name><surname>Lambert</surname> <given-names>G</given-names></string-name>, <string-name><surname>Cox</surname> <given-names>J</given-names></string-name>, <string-name><surname>Miangotar</surname> <given-names>Y</given-names></string-name>, <etal>et al.</etal> <source>ARGUS 2008-2009 : Enqu&#x00EA;te sur l&#x2019;infection par le VIH, les h&#x00E9;patites virales et les infections transmissibles sexuellement et par le sang (ITSS) ainsi que sur les comportements &#x00E0; risques associ&#x00E9;s chez les hommes qu&#x00E9;b&#x00E9;cois ayant des relations sexuelles avec des hommes</source>. <year>2011</year>.</mixed-citation></ref>
+<ref id="c21"><label>21.</label><mixed-citation publication-type="other"><string-name><surname>Lambert</surname> <given-names>G</given-names></string-name>, <string-name><surname>Cox</surname> <given-names>J</given-names></string-name>, <string-name><surname>Messier-Peet</surname> <given-names>M</given-names></string-name>, <string-name><surname>Apelian</surname> <given-names>H</given-names></string-name>, <string-name><surname>Moodie</surname> <given-names>E</given-names></string-name>, <article-title>Engage research team</article-title>. <source>Engage Montr&#x00E9;al, Portrait of the sexual health of men who have sex with men in Greater Montr&#x00E9;al, Cycle 2017-2018, Highlights</source>. <year>2019</year>.</mixed-citation></ref>
+<ref id="c22"><label>22.</label><mixed-citation publication-type="other"><string-name><surname>Doyle</surname> <given-names>CM</given-names></string-name>, <string-name><surname>Maheu-Giroux</surname> <given-names>M</given-names></string-name>, <string-name><surname>Lambert</surname> <given-names>G</given-names></string-name>, <etal>et al.</etal> <article-title>Combination HIV prevention strategies among Montreal gay, bisexual, and other men who have sex with men in the PrEP era: A latent class analysis</article-title>. <source>AIDS Behav</source>. <year>2020</year>.</mixed-citation></ref>
+<ref id="c23"><label>23.</label><mixed-citation publication-type="other"><string-name><surname>Laniece Delaunay</surname> <given-names>C</given-names></string-name>, <string-name><surname>Cox</surname> <given-names>J</given-names></string-name>, <string-name><surname>Klein</surname> <given-names>M</given-names></string-name>, <etal>et al.</etal> <article-title>Trends in hepatitis C virus seroprevalence and associated risk factors among men who have sex with men in Montreal: results from three cross-sectional studies (2005, 2009, 2018)</article-title>. <source>Sex Transm Infect</source>. <year>2020</year>.</mixed-citation></ref>
+<ref id="c24"><label>24.</label><mixed-citation publication-type="journal"><string-name><surname>Greenwald</surname> <given-names>ZR</given-names></string-name>, <string-name><surname>Maheu-Giroux</surname> <given-names>M</given-names></string-name>, <string-name><surname>Szabo</surname> <given-names>J</given-names></string-name>, <etal>et al.</etal> <article-title>Cohort profile: l&#x2019;Actuel pre-exposure prophylaxis (PrEP) cohort study in Montreal, Canada</article-title>. <source>BMJ Open</source>. <year>2019</year>;<volume>9</volume>(<issue>6</issue>):<fpage>e028768</fpage>.</mixed-citation></ref>
+<ref id="c25"><label>25.</label><mixed-citation publication-type="journal"><string-name><surname>Volz</surname> <given-names>E</given-names></string-name>, <string-name><surname>Heckathorn</surname> <given-names>DD</given-names></string-name>. <article-title>Probability based estimation theory for respondent driven sampling</article-title>. <source>Journal of official statistics</source>. <year>2008</year>;<volume>24</volume>:<fpage>79</fpage>.</mixed-citation></ref>
+<ref id="c26"><label>26.</label><mixed-citation publication-type="journal"><string-name><surname>Wong</surname> <given-names>NS</given-names></string-name>, <string-name><surname>Kwan</surname> <given-names>TH</given-names></string-name>, <string-name><surname>Tsang</surname> <given-names>OTY</given-names></string-name>, <etal>et al.</etal> <article-title>Pre-exposure prophylaxis (PrEP) for MSM in low HIV incidence places: should high risk individuals be targeted?</article-title> <source>Sci Rep</source>. <year>2018</year>;<volume>8</volume>(<issue>1</issue>):<fpage>11641</fpage>.</mixed-citation></ref>
+<ref id="c27"><label>27.</label><mixed-citation publication-type="journal"><string-name><surname>Grace</surname> <given-names>D</given-names></string-name>, <string-name><surname>Steinberg</surname> <given-names>M</given-names></string-name>, <string-name><surname>Kwag</surname> <given-names>M</given-names></string-name>, <etal>et al.</etal> <article-title>Diagnostic technologies in practice: gay men&#x2019;s narratives of acute or recent HIV infection diagnosis</article-title>. <source>Qual Health Res</source>. <year>2015</year>;<volume>25</volume>(<issue>2</issue>):<fpage>205</fpage>&#x2013;<lpage>217</lpage>.</mixed-citation></ref>
+<ref id="c28"><label>28.</label><mixed-citation publication-type="journal"><string-name><surname>Cori</surname> <given-names>A</given-names></string-name>, <string-name><surname>Pickles</surname> <given-names>M</given-names></string-name>, <string-name><surname>van Sighem</surname> <given-names>A</given-names></string-name>, <etal>et al.</etal> <article-title>CD4&#x002B; cell dynamics in untreated HIV-1 infection: overall rates, and effects of age, viral load, sex and calendar time</article-title>. <source>AIDS</source>. <year>2015</year>;<volume>29</volume>(<issue>18</issue>):<fpage>2435</fpage>&#x2013;<lpage>2446</lpage>.</mixed-citation></ref>
+<ref id="c29"><label>29.</label><mixed-citation publication-type="journal"><string-name><surname>Sucharitakul</surname> <given-names>K</given-names></string-name>, <string-name><surname>Boily</surname> <given-names>MC</given-names></string-name>, <string-name><surname>Dimitrov</surname> <given-names>D</given-names></string-name>, <string-name><surname>Mitchell</surname> <given-names>KM</given-names></string-name>. <article-title>Influence of model assumptions about HIV disease progression after initiating or stopping treatment on estimates of infections and deaths averted by scaling up antiretroviral therapy</article-title>. <source>PLoS One</source>. <year>2018</year>;<volume>13</volume>(<issue>3</issue>):<fpage>e0194220</fpage>.</mixed-citation></ref>
+<ref id="c30"><label>30.</label><mixed-citation publication-type="journal"><string-name><surname>Palella Jr</surname> <given-names>FJ</given-names></string-name>, <string-name><surname>Deloria-Knoll</surname> <given-names>M</given-names></string-name>, <string-name><surname>Chmiel</surname> <given-names>JS</given-names></string-name>, <etal>et al.</etal> <article-title>Survival benefit of initiating antiretroviral therapy in HIV-infected persons in different CD4&#x002B; cell strata</article-title>. <source>Annals of internal medicine</source>. <year>2003</year>;<volume>138</volume>:<fpage>620</fpage>&#x2013;<lpage>626</lpage>.</mixed-citation></ref>
+<ref id="c31"><label>31.</label><mixed-citation publication-type="website"><collab>Avenir Health</collab>. <source>Spectrum system of policy models</source>. <year>2019</year>; <ext-link ext-link-type="uri" xlink:href="https://www.avenirhealth.org/software-spectrum.php">https://www.avenirhealth.org/software-spectrum.php</ext-link>. Accessed <date-in-citation content-type="access-date">2019-10-25</date-in-citation>.</mixed-citation></ref>
+<ref id="c32"><label>32.</label><mixed-citation publication-type="journal"><string-name><surname>Wilson</surname> <given-names>DP</given-names></string-name>, <string-name><surname>Law</surname> <given-names>MG</given-names></string-name>, <string-name><surname>Grulich</surname> <given-names>AE</given-names></string-name>, <string-name><surname>Cooper</surname> <given-names>DA</given-names></string-name>, <string-name><surname>Kaldor</surname> <given-names>JM</given-names></string-name>. <article-title>Relation between HIV viral load and infectiousness: a model-based analysis</article-title>. <source>The Lancet</source>. <year>2008</year>;<volume>372</volume>(<issue>9635</issue>):<fpage>314</fpage>&#x2013;<lpage>320</lpage>.</mixed-citation></ref>
+<ref id="c33"><label>33.</label><mixed-citation publication-type="journal"><string-name><surname>Rodger</surname> <given-names>AJ</given-names></string-name>, <string-name><surname>Cambiano</surname> <given-names>V</given-names></string-name>, <string-name><surname>Bruun</surname> <given-names>T</given-names></string-name>, <etal>et al.</etal> <article-title>Sexual activity without condoms and risk of HIV transmission in serodifferent couples when the HIV-positive partner is using suppressive antiretroviral therapy</article-title>. <source>JAMA</source>. <year>2016</year>;<volume>316</volume>(<issue>2</issue>):<fpage>171</fpage>&#x2013;<lpage>181</lpage>.</mixed-citation></ref>
+<ref id="c34"><label>34.</label><mixed-citation publication-type="journal"><string-name><surname>Cohen</surname> <given-names>MS</given-names></string-name>, <string-name><surname>Chen</surname> <given-names>YQ</given-names></string-name>, <string-name><surname>McCauley</surname> <given-names>M</given-names></string-name>, <etal>et al.</etal> <article-title>Antiretroviral therapy for the prevention of HIV-1 transmission</article-title>. <source>N Engl J Med</source>. <year>2016</year>;<volume>375</volume>(<issue>9</issue>):<fpage>830</fpage>&#x2013;<lpage>839</lpage>.</mixed-citation></ref>
+<ref id="c35"><label>35.</label><mixed-citation publication-type="other"><string-name><surname>Linthwaite</surname> <given-names>B</given-names></string-name>, <string-name><surname>Sangare</surname> <given-names>N</given-names></string-name>, <string-name><surname>Trottier</surname> <given-names>H</given-names></string-name>, <etal>et al.</etal> <source>In-care HIV cascades for the city of Montreal: Data from the Cohorte Montr&#x00E9;alaise Executive Summary - November 29, 2018</source>. <year>2018</year>.</mixed-citation></ref>
+<ref id="c36"><label>36.</label><mixed-citation publication-type="journal"><string-name><surname>Johnson</surname> <given-names>WD</given-names></string-name>, <string-name><surname>O&#x2019;Leary</surname> <given-names>A</given-names></string-name>, <string-name><surname>Flores</surname> <given-names>SA</given-names></string-name>. <article-title>Per-partner condom effectiveness against HIV for men who have sex with men</article-title>. <source>AIDS</source>. <year>2018</year>;<volume>32</volume>(<issue>11</issue>):<fpage>1499</fpage>&#x2013;<lpage>1505</lpage>.</mixed-citation></ref>
+<ref id="c37"><label>37.</label><mixed-citation publication-type="other"><collab>Centers for Disease Control and Prevention</collab>. <source>Updated guidelines for antiretroviral postexposure prophylaxis after sexual, injection drug use, or other nonoccupational exposure to HIV&#x2014; United States, 2016</source>. <year>2016</year>.</mixed-citation></ref>
+<ref id="c38"><label>38.</label><mixed-citation publication-type="other"><collab>Minist&#x00E8;re de la Sant&#x00E9; et des Services sociaux</collab>. <source>La prophylaxie pr&#x00E9;exposition au virus de l&#x2019;immunod&#x00E9;ficience humaine : Guide pour les professionnels de la sant&#x00E9; du Qu&#x00E9;bec</source>. <year>2019</year>.</mixed-citation></ref>
+<ref id="c39"><label>39.</label><mixed-citation publication-type="journal"><string-name><surname>Molina</surname> <given-names>JM</given-names></string-name>, <string-name><surname>Capitant</surname> <given-names>C</given-names></string-name>, <string-name><surname>Spire</surname> <given-names>B</given-names></string-name>, <etal>et al.</etal> <article-title>On-demand preexposure prophylaxis in men at high risk for HIV-1 infection</article-title>. <source>N Engl J Med</source>. <year>2015</year>;<volume>373</volume>(<issue>23</issue>):<fpage>2237</fpage>&#x2013;<lpage>2246</lpage>.</mixed-citation></ref>
+<ref id="c40"><label>40.</label><mixed-citation publication-type="website"><collab>Institut national de sant&#x00E9; publique du Qu&#x00E9;bec</collab>. <source>INSPQ Public health expertise and reference centre</source>. <ext-link ext-link-type="uri" xlink:href="https://www.inspq.qc.ca/en/institute/about-us">https://www.inspq.qc.ca/en/institute/about-us</ext-link>. Accessed <date-in-citation content-type="access-date">08-12, 2019</date-in-citation>.</mixed-citation></ref>
+<ref id="c41"><label>41.</label><mixed-citation publication-type="other"><collab>R: A language and environment for statistical computing [computer program]</collab>. <source>R Foundation for Statistical Computing</source>,; <year>2019</year>.</mixed-citation></ref>
+<ref id="c42"><label>42.</label><mixed-citation publication-type="journal"><string-name><surname>Eddelbuettel</surname> <given-names>D</given-names></string-name>, <string-name><surname>Francois</surname> <given-names>R.</given-names></string-name> <article-title>Rcpp: Seamless R and C&#x002B;&#x002B; integration</article-title>. <source>Journal of Statistical Software</source>. <year>2011</year>;<volume>40</volume>(<issue>8</issue>):<fpage>1</fpage>&#x2013;<lpage>18</lpage>.</mixed-citation></ref>
+<ref id="c43"><label>43.</label><mixed-citation publication-type="other"><collab>Joint United Nations Programme on HIV/AIDS (UNAIDS</collab>). <source>Cities on the road to success: Good practices in the Fast-Track cities initiative to end AIDS</source>. <year>2019</year>.</mixed-citation></ref>
+<ref id="c44"><label>44.</label><mixed-citation publication-type="journal"><string-name><surname>Cahill</surname> <given-names>S</given-names></string-name>, <string-name><surname>Valadez</surname> <given-names>R.</given-names></string-name> <article-title>Growing older with HIV/AIDS: new public health challenges</article-title>. <source>Am J Public Health</source>. <year>2013</year>;<volume>103</volume>(<issue>3</issue>):<fpage>e7</fpage>&#x2013;<lpage>e15</lpage>.</mixed-citation></ref>
+<ref id="c45"><label>45.</label><mixed-citation publication-type="other"><collab>Public Health Agency of Canada</collab>. <source>Estimates of HIV incidence, prevalence and Canada&#x2019;s progress on meeting the 90-90-90 HIV targets, 2018</source>. <year>2020</year>.</mixed-citation></ref>
+<ref id="c46"><label>46.</label><mixed-citation publication-type="journal"><string-name><surname>Hertog</surname> <given-names>S.</given-names></string-name> <article-title>Heterosexual behavior patterns and the spread of HIV/AIDS: the interacting effects of rate of partner change and sexual mixing</article-title>. <source>Sex Transm Dis</source>. <year>2007</year>;<volume>34</volume>(<issue>10</issue>):<fpage>820</fpage>&#x2013;<lpage>828</lpage>.</mixed-citation></ref>
+<ref id="c47"><label>47.</label><mixed-citation publication-type="journal"><string-name><surname>Hollingsworth</surname> <given-names>TD</given-names></string-name>, <string-name><surname>Anderson</surname> <given-names>RM</given-names></string-name>, <string-name><surname>Fraser</surname> <given-names>C.</given-names></string-name> <article-title>HIV-1 transmission, by stage of infection</article-title>. <source>J Infect Dis</source>. <year>2008</year>;<volume>198</volume>(<issue>5</issue>):<fpage>687</fpage>&#x2013;<lpage>693</lpage>.</mixed-citation></ref>
+<ref id="c48"><label>48.</label><mixed-citation publication-type="journal"><string-name><surname>Brenner</surname> <given-names>BG</given-names></string-name>, <string-name><surname>Ibanescu</surname> <given-names>RI</given-names></string-name>, <string-name><surname>Hardy</surname> <given-names>I</given-names></string-name>, <etal>et al.</etal> <article-title>Large cluster outbreaks sustain the HIV epidemic among MSM in Quebec</article-title>. <source>AIDS</source>. <year>2017</year>;<volume>31</volume>(<issue>5</issue>):<fpage>707</fpage>&#x2013;<lpage>717</lpage>.</mixed-citation></ref>
+<ref id="c49"><label>49.</label><mixed-citation publication-type="journal"><string-name><surname>Dawson</surname> <given-names>L</given-names></string-name>, <string-name><surname>Benbow</surname> <given-names>N</given-names></string-name>, <string-name><surname>Fletcher</surname> <given-names>FE</given-names></string-name>, <etal>et al.</etal> <article-title>Addressing ethical challenges in US-based HIV phylogenetic research</article-title>. <source>J Infect Dis</source>. <year>2020</year>;<volume>222</volume>(<issue>12</issue>):<fpage>1997</fpage>&#x2013;<lpage>2006</lpage>.</mixed-citation></ref>
+<ref id="c50"><label>50.</label><mixed-citation publication-type="journal"><string-name><surname>Andersson</surname> <given-names>E</given-names></string-name>, <string-name><surname>Shao</surname> <given-names>W</given-names></string-name>, <string-name><surname>Bontell</surname> <given-names>I</given-names></string-name>, <etal>et al.</etal> <article-title>Evaluation of sequence ambiguities of the HIV-1 pol gene as a method to identify recent HIV-1 infection in transmitted drug resistance surveys</article-title>. <source>Infect Genet Evol</source>. <year>2013</year>;<volume>18</volume>:<fpage>125</fpage>&#x2013;<lpage>131</lpage>.</mixed-citation></ref>
+<ref id="c51"><label>51.</label><mixed-citation publication-type="other"><string-name><surname>Grace</surname> <given-names>D</given-names></string-name>, <string-name><surname>Nath</surname> <given-names>R</given-names></string-name>, <string-name><surname>Parry</surname> <given-names>R</given-names></string-name>, <string-name><surname>Connell</surname> <given-names>J</given-names></string-name>, <string-name><surname>Wong</surname> <given-names>J</given-names></string-name>, <string-name><surname>Grennan</surname> <given-names>T.</given-names></string-name> <article-title>&#x2018;&#x2026; if U equals U what does the second U mean?&#x2019;: sexual minority men&#x2019;s accounts of HIV undetectability and untransmittable scepticism</article-title>. <source>Cult Health Sex</source>. <year>2020</year>:<fpage>1</fpage>&#x2013;<lpage>17</lpage>.</mixed-citation></ref>
+<ref id="c52"><label>52.</label><mixed-citation publication-type="journal"><string-name><surname>Millett</surname> <given-names>GA</given-names></string-name>, <string-name><surname>Peterson</surname> <given-names>JL</given-names></string-name>, <string-name><surname>Flores</surname> <given-names>SA</given-names></string-name>, <etal>et al.</etal> <article-title>Comparisons of disparities and risks of HIV infection in black and other men who have sex with men in Canada, UK, and USA: a meta-analysis</article-title>. <source>The Lancet</source>. <year>2012</year>;<volume>380</volume>(<issue>9839</issue>):<fpage>341</fpage>&#x2013;<lpage>348</lpage>.</mixed-citation></ref>
+</ref-list>
+<sec id="s5">
+<title>List of supplementary digital content</title>
+<p>Supplementary Digital Content: supplementary materials.docx</p>
+</sec>
+</back>
+</article>

@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.2d1 20170631//EN" "JATS-archivearticle1.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" article-type="article" dtd-version="1.2d1" specific-use="production" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="publisher-id">MEDRXIV</journal-id>
+<journal-title-group>
+<journal-title>medRxiv</journal-title>
+<abbrev-journal-title abbrev-type="publisher">medRxiv</abbrev-journal-title>
+</journal-title-group>
+<publisher>
+<publisher-name>Cold Spring Harbor Laboratory</publisher-name>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1101/2020.12.07.20230235</article-id>
+<article-version>1.2</article-version>
+<article-categories>
+<subj-group subj-group-type="hwp-journal-coll">
+<subject>Genetic and Genomic Medicine</subject>
+</subj-group>
+</article-categories>
+<title-group>
+<article-title>A 6-mRNA host response whole-blood classifier trained on pre-pandemic data accurately predicts severity in COVID-19 and other acute viral infections</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-1732-4338</contrib-id>
+<name><surname>Buturovic</surname><given-names>Ljubomir</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="author-notes" rid="n1">&#x002A;</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Zheng</surname><given-names>Hong</given-names></name>
+<xref ref-type="aff" rid="a2">2</xref>
+<xref ref-type="aff" rid="a3">3</xref>
+<xref ref-type="author-notes" rid="n1">&#x002A;</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-1469-9540</contrib-id>
+<name><surname>Tang</surname><given-names>Benjamin</given-names></name>
+<xref ref-type="aff" rid="a4">4</xref>
+<xref ref-type="aff" rid="a5">5</xref>
+<xref ref-type="aff" rid="a6">6</xref>
+<xref ref-type="aff" rid="a7">7</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Lai</surname><given-names>Kevin</given-names></name>
+<xref ref-type="aff" rid="a8">8</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-2134-7842</contrib-id>
+<name><surname>Kuan</surname><given-names>Win Sen</given-names></name>
+<xref ref-type="aff" rid="a9">9</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-6287-7137</contrib-id>
+<name><surname>Gillett</surname><given-names>Mark</given-names></name>
+<xref ref-type="aff" rid="a10">10</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Santram</surname><given-names>Rahul</given-names></name>
+<xref ref-type="aff" rid="a11">11</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Shojaei</surname><given-names>Maryam</given-names></name>
+<xref ref-type="aff" rid="a4">4</xref>
+<xref ref-type="aff" rid="a5">5</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-4144-7808</contrib-id>
+<name><surname>Almansa</surname><given-names>Raquel</given-names></name>
+<xref ref-type="aff" rid="a12">12</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>&#x00C1;ngel Nieto</surname><given-names>Jose</given-names></name>
+<xref ref-type="aff" rid="a13">13</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Mu&#x00F1;oz</surname><given-names>Sonsoles</given-names></name>
+<xref ref-type="aff" rid="a13">13</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Herrero</surname><given-names>Carmen</given-names></name>
+<xref ref-type="aff" rid="a13">13</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-7552-5878</contrib-id>
+<name><surname>Antonakos</surname><given-names>Nikolaos</given-names></name>
+<xref ref-type="aff" rid="a14">14</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Koufargyris</surname><given-names>Panayiotis</given-names></name>
+<xref ref-type="aff" rid="a14">14</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Kontogiorgi</surname><given-names>Marina</given-names></name>
+<xref ref-type="aff" rid="a14">14</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0001-7986-7720</contrib-id>
+<name><surname>Damoraki</surname><given-names>Georgia</given-names></name>
+<xref ref-type="aff" rid="a14">14</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Liesenfeld</surname><given-names>Oliver</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Wacker</surname><given-names>James</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Midic</surname><given-names>Uros</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Luethy</surname><given-names>Roland</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Rawling</surname><given-names>David</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Remmel</surname><given-names>Melissa</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Coyle</surname><given-names>Sabrina</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Liu</surname><given-names>Yiran E.</given-names></name>
+<xref ref-type="aff" rid="a2">2</xref>
+<xref ref-type="aff" rid="a15">15</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Rao</surname><given-names>Aditya M</given-names></name>
+<xref ref-type="aff" rid="a2">2</xref>
+<xref ref-type="aff" rid="a16">16</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Dermadi</surname><given-names>Denis</given-names></name>
+<xref ref-type="aff" rid="a2">2</xref>
+<xref ref-type="aff" rid="a3">3</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Toh</surname><given-names>Jiaying</given-names></name>
+<xref ref-type="aff" rid="a2">2</xref>
+<xref ref-type="aff" rid="a16">16</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Jones</surname><given-names>Lara Murphy</given-names></name>
+<xref ref-type="aff" rid="a2">2</xref>
+<xref ref-type="aff" rid="a17">17</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Donato</surname><given-names>Michele</given-names></name>
+<xref ref-type="aff" rid="a2">2</xref>
+<xref ref-type="aff" rid="a3">3</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-4143-4708</contrib-id>
+<name><surname>Khatri</surname><given-names>Purvesh</given-names></name>
+<xref ref-type="aff" rid="a2">2</xref>
+<xref ref-type="aff" rid="a3">3</xref>
+<xref ref-type="author-notes" rid="n2">&#x00A7;</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-4713-3911</contrib-id>
+<name><surname>Giamarellos-Bourboulis</surname><given-names>Evangelos J.</given-names></name>
+<xref ref-type="aff" rid="a14">14</xref>
+<xref ref-type="author-notes" rid="n2">&#x00A7;</xref>
+</contrib>
+<contrib contrib-type="author" corresp="yes">
+<name><surname>Sweeney</surname><given-names>Timothy E</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="author-notes" rid="n2">&#x00A7;</xref>
+<xref ref-type="corresp" rid="cor1">&#x2020;</xref>
+</contrib>
+<aff id="a1"><label>1</label><institution>Inflammatix, Inc.</institution>, 863 Mitten Rd, Suite 104, Burlingame, CA, 94010, <country>USA</country></aff>
+<aff id="a2"><label>2</label><institution>Institute for Immunity, Transplantation and Infection, School of Medicine, Stanford University</institution>, Palo Alto, CA 94305, <country>USA</country></aff>
+<aff id="a3"><label>3</label><institution>Center for Biomedical Informatics Research, Department of Medicine, Stanford University</institution>, Stanford, CA 94305, <country>USA</country></aff>
+<aff id="a4"><label>4</label><institution>Centre for Immunology and Allergy Research, Westmead Institute for Medical Research</institution>, Sydney, <country>Australia</country></aff>
+<aff id="a5"><label>5</label><institution>Department of Intensive Care Medicine, Nepean Hospital</institution>, Sydney, <country>Australia</country></aff>
+<aff id="a6"><label>6</label><institution>Nepean Genomic Research Group, Nepean Clinical School, University of Sydney</institution>, Sydney, <country>Australia</country></aff>
+<aff id="a7"><label>7</label><institution>Marie Bashir Institute for Infectious Diseases and Biosecurity</institution>, Sydney, <country>Australia</country></aff>
+<aff id="a8"><label>8</label><institution>Department of Emergency Medicine, Westmead Hospital</institution>, Sydney, <country>Australia</country></aff>
+<aff id="a9"><label>9</label><institution>Department of Emergency Medicine, National University Hospital Singapore</institution>, <country>Singapore</country></aff>
+<aff id="a10"><label>10</label><institution>Department of Emergency Medicine, Royal North Shore Hospital</institution>, Sydney, <country>Australia</country></aff>
+<aff id="a11"><label>11</label><institution>Department of Emergency Medicine, St Vincent Hospital</institution>, Sydney, <country>Australia</country></aff>
+<aff id="a12"><label>12</label><institution>Group for Biomedical Research in Sepsis (BioSepsis), Instituto de Investigaci&#x00F3;n Biom&#x00E9;dica de Salamanca (IBSAL), Salamanca, Spain &#x0026; Hospital Universitario R&#x00ED;o Hortega</institution>, Valladolid, <country>Spain</country></aff>
+<aff id="a13"><label>13</label><institution>Servicio de Urgencias de Atenci&#x00F3;n Primaria</institution>, Salamanca</aff>
+<aff id="a14"><label>14</label><institution>4th Department of Internal Medicine, National and Kapodistrian University of Athens, Medical School</institution>, 124 62 Athens, <country>Greece</country></aff>
+<aff id="a15"><label>15</label><institution>Cancer Biology program, Stanford University</institution>, CA 94305</aff>
+<aff id="a16"><label>16</label><institution>Immunology program, Stanford University</institution>, CA 94305</aff>
+<aff id="a17"><label>17</label><institution>Division of Critical Care Medicine, Department of Pediatrics, School of Medicine, Stanford University</institution>, CA 94305</aff>
+</contrib-group>
+<author-notes>
+<corresp id="cor1"><label>&#x2020;</label>Correspondence to: Timothy E Sweeney (<email>tsweeney@inflammatix.com</email>), 863 Mitten Rd, Suite 104, Burlingame, CA, 94010, USA</corresp>
+<fn id="n1" fn-type="others"><label>&#x002A;</label><p>Co-first authors</p></fn>
+<fn id="n2" fn-type="others"><label>&#x00A7;</label><p>Co-senior authors</p></fn>
+</author-notes>
+<pub-date pub-type="epub">
+<year>2021</year>
+</pub-date>
+<elocation-id>2020.12.07.20230235</elocation-id>
+<history>
+<date date-type="received">
+<day>07</day>
+<month>12</month>
+<year>2020</year>
+</date>
+<date date-type="rev-recd">
+<day>28</day>
+<month>4</month>
+<year>2021</year>
+</date>
+<date date-type="accepted">
+<day>02</day>
+<month>5</month>
+<year>2021</year>
+</date>
+</history>
+<permissions>
+<copyright-statement>&#x00A9; 2021, Posted by Cold Spring Harbor Laboratory</copyright-statement>
+<copyright-year>2021</copyright-year>
+<license license-type="creative-commons" xlink:href="http://creativecommons.org/licenses/by-nd/4.0/"><license-p>This pre-print is available under a Creative Commons License (Attribution-NoDerivs 4.0 International), CC BY-ND 4.0, as described at <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by-nd/4.0/">http://creativecommons.org/licenses/by-nd/4.0/</ext-link></license-p></license>
+</permissions>
+<self-uri xlink:href="20230235.pdf" content-type="pdf" xlink:role="full-text"/>
+<abstract>
+<title>Abstract</title>
+<sec>
+<title>Background</title>
+<p>Determining the severity of COVID-19 remains an unmet medical need. Our objective was to develop a blood-based host-gene-expression classifier for the severity of viral infections and validate it in independent data, including COVID-19.</p></sec>
+<sec>
+<title>Methods</title>
+<p>We developed the classifier for the severity of viral infections and validated it in multiple viral infection settings including COVID-19. We used training data (N=705) from 21 retrospective transcriptomic clinical studies of influenza and other viral illnesses looking at a preselected panel of host immune response messenger RNAs.</p></sec>
+<sec>
+<title>Results</title>
+<p>We selected 6 host RNAs and trained logistic regression classifier with a cross-validation area under curve of 0.90 for predicting 30-day mortality in viral illnesses. Next, in 1,417 samples across 21 independent retrospective cohorts the locked 6-RNA classifier had an area under curve of 0.91 for discriminating patients with severe vs. non-severe infection. Next, in independent cohorts of prospectively (N=97) and retrospectively (N=100) enrolled patients with confirmed COVID-19, the classifier had an area under curve of 0.89 and 0.87, respectively, for identifying patients with severe respiratory failure or 30-day mortality. Finally, we developed a loop-mediated isothermal gene expression assay for the 6-messenger-RNA panel to facilitate implementation as a rapid assay.</p></sec>
+<sec>
+<title>Conclusions</title>
+<p>With further study, the classifier could assist in the risk assessment of COVID-19 and other acute viral infections patients to determine severity and level of care, thereby improving patient management and reducing healthcare burden.</p></sec>
+</abstract>
+<kwd-group kwd-group-type="author">
+<title>Keywords</title>
+<kwd>COVID-19</kwd>
+<kwd>viral infections</kwd>
+<kwd>disease severity</kwd>
+<kwd>gene expression</kwd>
+<kwd>host response</kwd>
+<kwd>logistic regression</kwd>
+<kwd>cross-validation</kwd>
+<kwd>loop-mediated isothermal gene expression</kwd>
+</kwd-group>
+<counts>
+<page-count count="26"/>
+</counts>
+</article-meta>
+<notes>
+<notes notes-type="competing-interest-statement">
+<title>Competing Interest Statement</title><p>LB, OL, JW, UM, RL, DR, MR, SC, and TES are employees of, and stockholders in, Inflammatix, Inc, which is developing the 6-mRNA score into a commercial assay, CoVerityTM. PK is a shareholder and a consultant to Inflammatix, Inc. EJGB has received honoraria from AbbVie USA, Abbott CH, InflaRx GmbH, MSD Greece,
+XBiotech Inc. and Angelini Italy; independent educational grants from AbbVie, Abbott, Astellas Pharma Europe, AxisShield, bioMerieux Inc, InflaRx GmbH, and XBiotech Inc; and funding from the FrameWork 7 program HemoSpec (granted to the National and Kapodistrian University of Athens), the Horizon2020 Marie-
+Curie Project European Sepsis Academy (granted to the National and Kapodistrian University of Athens), and the Horizon 2020 European Grant ImmunoSep (granted to the Hellenic Institute for the Study of Sepsis). The other authors declare no competing interests.
+</p></notes>
+<notes notes-type="clinical-trial-statement">
+<title>Clinical Trial</title><p>EudraCT 2020-001039-29</p></notes>
+<notes notes-type="financial-disclosure">
+<title>Funding Statement</title><p>This study was funded by Inflammatix Inc. No external funding was received
+</p></notes>
+<notes notes-type="disclosures">
+<title>Author Declarations</title><p>I confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.</p><p>Yes</p><p>The details of the IRB/oversight body that provided approval or exemption for the research described are given below:</p><p>COVID-19 blood samples were collected between March and April 2020. The studies were conducted following approvals for the collection of biomaterial for transcriptomic analysis for patients with lower respiratory tract infections provided by the Ethics Committees of the participating hospitals. The studies were conducted under the 23/12.08.2019 approval of the Ethics Committee of Sotiria Athens General Hospital; and the 26.02.2019 approval of the Ethics Committee of ATTIKON University General Hospital. Written informed consent was provided by patients or by first-degree relatives in case of patients unable to consent.
+For Australia/WIMR study, the written consent is provided by all patients or by first-degree
+relatives in case of patients unable to consent. The study was approved by the human research ethics committee of the Nepean Blue
+Mountains Area Health Services.
+For PREVISE study, the IRB was approved by COMITE DE ETICA DE LA INVESTIGACION CON MEDICAMENTOS DEL AREA DE SALUD DE SALAMANCA, Paseo de San Vicente, 58-18, 237007 Salamanca, Spain
+For healthy commercial controls, blood RNA tubes were prospectively collected from healthy controls (HC) through a commercial vendor (BioIVT) under IRB approval (Western IRB #2016165) using informed consent.
+Stanford ICU databank and PROMPT studies have previously been published and provided IRB details.</p><p>All necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived.</p><p>Yes</p><p>I understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).</p><p>Yes</p><p>I have followed all appropriate research reporting guidelines and uploaded the relevant EQUATOR Network research reporting checklist(s) and other pertinent material as supplementary files, if applicable.</p><p>Yes</p></notes>
+<fn-group content-type="summary-of-updates">
+<title>Summary of Updates:</title>
+<fn fn-type="update"><p>The revised manuscript contains results from additional independent validations of the 6-mRNA viral severity classifier.
+</p></fn>
+</fn-group>
+</notes>
+</front>
+<body>
+<sec id="s1">
+<title>Background</title>
+<p>The emergence of the SARS-coronavirus 2 (SARS-CoV-2), causative agent of COVID-19, and its rapid pandemic spread has led to a global health crisis with more than 54 million cases and more than 1 million deaths to date (<italic><xref ref-type="bibr" rid="c1">1</xref></italic>). COVID-19 presents with a spectrum of clinical phenotypes, with most patients exhibiting mild-to-moderate symptoms, and 20&#x0025; progressing to severe or critical disease, typically within a week (<italic><xref ref-type="bibr" rid="c2">2</xref>-<xref ref-type="bibr" rid="c6">6</xref></italic>). Severe cases are often characterized by acute respiratory failure requiring mechanical ventilation and sometimes progressing to ARDS and death (<italic><xref ref-type="bibr" rid="c7">7</xref></italic>). Illness severity and development of ARDS are associated with older age and underlying medical conditions (<italic><xref ref-type="bibr" rid="c3">3</xref></italic>).</p>
+<p>Yet, despite the rapid progress in developing diagnostics for SARS-CoV-2 infection, existing prognostic markers ranging from clinical data to biomarkers and immunopathological findings have proven unable to identify which patients are likely to progress to severe disease (<italic><xref ref-type="bibr" rid="c8">8</xref></italic>). Poor risk stratification means that front-line providers may be unable to determine which patients might be safe to quarantine and convalesce at home, and which need close monitoring. Early identification of severity along with monitoring of immune status may also prove important for selection of treatments such as corticosteroids, intravenous immunoglobulin, or selective cytokine blockade (<italic><xref ref-type="bibr" rid="c9">9</xref>-<xref ref-type="bibr" rid="c11">11</xref></italic>).</p>
+<p>A host of lab values, including neutrophilia, lymphocyte counts, CD3 and CD4 T-cell counts, interleukin-6 and -8, lactate dehydrogenase, D-dimer, AST, prealbumin, creatinine, glucose, low-density lipoprotein, serum ferritin, and prothrombin time rather than viral factors have been associated with higher risk of severe disease and ARDS (<italic><xref ref-type="bibr" rid="c3">3</xref>, <xref ref-type="bibr" rid="c12">12</xref>, <xref ref-type="bibr" rid="c13">13</xref></italic>). While combining multiple weak markers through machine learning (ML) has a potential to increase test discrimination and clinical utility, applications of ML to date have led to serious overfitting and lack of clinical adoption (<italic><xref ref-type="bibr" rid="c14">14</xref></italic>). The failure of such models arises both from a lack of clinical heterogeneity in training, and from the pragmatic nature of the variable selection, which uses existing lab tests which may not be ideal for the task. Furthermore, a number of the lab markers are late indicators of severity since by the time they become abnormal, patient is already very sick.</p>
+<p>The host immune response represented in the whole blood transcriptome has been repeatedly shown to diagnose presence, type, and severity of infections (<italic><xref ref-type="bibr" rid="c15">15</xref>-<xref ref-type="bibr" rid="c19">19</xref></italic>). By leveraging clinical, biological, and technical heterogeneity across multiple independent datasets, we have previously identified a conserved host response to respiratory viral infections (<italic><xref ref-type="bibr" rid="c16">16</xref></italic>) that is distinct from bacterial infections (<italic><xref ref-type="bibr" rid="c15">15</xref>-<xref ref-type="bibr" rid="c17">17</xref></italic>) and can identify asymptomatic infection. Recently, we have demonstrated that this conserved host response to viral infections is strongly associated with severity of outcome, including in patients infected with SARS-CoV-2, chikungunya, and Ebola (20). We have also demonstrated that conserved host immune response to infection can be an accurate prognostic marker of risk of 30-day mortality in patients with infectious diseases (<italic><xref ref-type="bibr" rid="c18">18</xref></italic>). Most importantly, we have demonstrated that accounting for biological, clinical, and technical heterogeneity identifies more generalizable robust host response-based signatures that can be rapidly translated on a targeted platform (<italic><xref ref-type="bibr" rid="c19">19</xref></italic>).</p>
+<p>Based on these previous results that there is a shared blood host-immune response-based mRNA prognostic signature among patients with acute viral infections, we hypothesized that a parsimonious, clinically translatable gene signature for predicting outcome in patients with viral infection can be identified. We tested this hypothesis by integrating 21 independent data sets with 705 peripheral blood transcriptome profiles from patients with acute viral infections and identified a 6-mRNA host-response-based signature for mortality prediction across these multiple viral datasets. Next, we validated the locked model in another 21 independent retrospective cohorts of 1,417 blood transcriptome profiles of patients with a variety of viral infections (non-COVID). Finally, we validated our 6-mRNA model in independent prospectively and retrospectively collected cohorts of patients with COVID-19, demonstrating its ability to predict outcomes despite having been entirely trained using non-COVID data. Our results suggest the conserved host response to acute viral infection can be used to predict its outcome. Finally, we showed validity of a rapid isothermal version of the 6-mRNA host-response-signature which is being further developed into a rapid molecular test (CoVerity&#x2122;) to assist in improving management of patients with COVID-19 and other acute viral infections.</p>
+</sec>
+<sec id="s2">
+<title>Materials and Methods</title>
+<sec id="s2a">
+<title>Data collection, curation, and sample labeling</title>
+<p>We searched public repositories (National Center for Biotechnology Information Gene Expression Omnibus and European Bioinformatics Institute ArrayExpress) for studies of typical acute infection with mortality data present. After removal of pediatric and entirely non-viral datasets, we identified 17 microarray or RNAseq peripheral blood acute infection studies composed of samples from 1,861 adult patients with either 28-day or 30-day mortality information (<bold><xref rid="fig1" ref-type="fig">Figure 1</xref></bold> and <bold><xref rid="tbl1" ref-type="table">Table 1</xref></bold>). We processed and co-normalized these datasets as described previously (<italic><xref ref-type="bibr" rid="c19">19</xref></italic>).</p>
+<table-wrap id="tbl1" orientation="portrait" position="float">
+<label>Table 1.</label>
+<caption><p>Characteristics of viral infection studies used for training. &#x002A;COPD, chronic pulmonary obstruction disorder; &#x002A;&#x002A; ICU, intensive care unit; &#x002A;&#x002A;&#x002A;TB, tuberculosis; &#x002A;&#x002A;&#x002A;&#x002A;CAP, community-acquired penumonia</p></caption>
+<graphic xlink:href="20230235v2_tbl1.tif"/>
+<graphic xlink:href="20230235v2_tbl1a.tif"/>
+</table-wrap>
+<fig id="fig1" position="float" fig-type="figure">
+<label>Figure 1.</label>
+<caption><p>Study flow. (a) Clinical data flows for training and testing. (b) Machine learning worfklow used to develop and validate the 6-mRNA viral severity classifier. LOSO = Leave-One-Study-Out. CV = cross-validation. AUROC = Area Under ROC curve.</p></caption>
+<graphic xlink:href="20230235v2_fig1.tif"/>
+</fig>
+<p>The number of cases with clinically adjudicated viral infection and known mortality outcome among the public samples was too low for robust modeling. Thus, to increase the number of training samples, we assigned viral infection status using a previously developed gene-expression-based bacterial/viral classifier, whose accuracy approaches that of clinical adjudication. Specifically, we utilized an updated version of our previously described neural network-based classifier for diagnosis of bacterial vs. viral infections called &#x2018;Inflammatix Bacterial-Viral Noninfected version 2&#x2019; (IMX-BVN-2), (<italic><xref ref-type="bibr" rid="c18">18</xref></italic>). The rationale is that this method would increase the number of mortality samples with viral infection, without introducing many false positives. For all samples, we applied IMX-BVN-2 to assign a probability of bacterial or viral infection and retained samples for which viral probability according to IMX-BVN-2 was &#x2265;0.5. We refer to this assessment of viral infection as computer-aided adjudication. Out of 1,861 samples, we found 311 samples which had IMX-BVN-2 probability of viral infection &#x2265;0.5, of which 9 patients died within 30-day period.</p>
+<p>In addition to this public microarray/RNAseq data, we included 394 samples across 4 independent cohorts (<italic><xref ref-type="bibr" rid="c19">19</xref></italic>) that were profiled using NanoString nCounter, of which 14 patients died (<bold><xref rid="tbl1" ref-type="table">Table 1</xref></bold>). Thus, overall we included 705 blood samples across 21 independent studies from patients with computer aided-adjudication of viral infection and short-term mortality outcome. Importantly, none of these patients had SARS-CoV-2 infection as they were all enrolled prior to November 2019.</p>
+</sec>
+<sec id="s2b">
+<title>Selection of variables for classifier development</title>
+<p>We preselected 29 mRNAs from which to develop the classifier for several biological and practical reasons. Biologically, the 29 mRNAs are composed of an 11-gene set for predicting 30-day mortality in critically ill patients and a repeatedly validated 18-gene set that can identify viral vs bacterial or noninfectious inflammation (<italic><xref ref-type="bibr" rid="c17">17</xref>-<xref ref-type="bibr" rid="c19">19</xref></italic>). Thus, we hypothesized that if a generalizable viral severity signature were possible, we likely had appropriate (and pre-vetted) variables here. By limiting our input variables, we also lowered our risk of overfitting to the training data. From a practical perspective, first, we are developing a point-of-care diagnostic platform for measuring these 29 genes in less than 30 minutes. Hence, a classifier developed using a subset of these 29 genes would allow us to develop a rapid point-of-care test on our existing platform. Second, 4 of the 21 cohorts included in the training were Inflammatix studies that profiled these 29 genes using NanoString nCounter and therefore for those studies this was the only mRNA expression data available.</p>
+</sec>
+<sec id="s2c">
+<title>Development of a classifier using machine learning</title>
+<p>We analyzed the 705 viral samples using cross-validation (CV) for ranking and selecting machine learning classifiers. We explored three variants of cross-validation: (1) 5-fold random CV, (2) 5-fold grouped CV, where each fold comprises multiple studies, and each study is assigned to exactly one CV fold, and (3) leave-one-study-out (LOSO), where each study forms a CV fold. We included non-random CV variants because we recently demonstrated that the leave-one-study-out cross-validation may reduce overfitting during training and produce more robust classifiers, for certain datasets (<italic><xref ref-type="bibr" rid="c19">19</xref></italic>). The hyperparameter search space was based on machine learning best practices and our previous results in model optimization in infectious disease diagnostics (<italic><xref ref-type="bibr" rid="c21">21</xref></italic>). For rapid turnaround and to reduce overfitting, we only investigated linear classifiers (support vector machine with linear kernel, logistic regression, and multi-layer perceptron with linear activation function) and limited the number of hyperparameter configurations we searched to 1000 per classifier. Finally, to ensure a parsimonious signature for translation to a rapid molecular assay, we limited the number of genes in the final model to six. To select the six genes, we applied forward selection and univariate feature ranking. We followed best practices to avoid overfitting in the gene selection process (<italic><xref ref-type="bibr" rid="c22">22</xref>, <xref ref-type="bibr" rid="c23">23</xref></italic>).</p>
+<p>We performed cross-validations for each of the hyperparameter configurations. Within each fold, we sorted the absolute value of the genes&#x2019; Pearson correlation with class label (survived/died). We then trained a classifier using the six top-ranked genes and applied it to the left-out fold. The predicted probabilities from the folds were pooled, and the Area Under a Receiver Operating Characteristic (AUROC) curve over the pooled cross-validation probabilities was used as a metric to rank classification models. The final ranking of genes was determined using average ranking across the CV folds. Once the best-ranking model hyperparameters were selected and the final list of six genes was established, the final model was trained using the entire training set and the &#x2018;locked&#x2019; hyperparameters. The corresponding model weights were locked and the final classifier was then tested in an independent prospective cohort of patients with COVID-19, and in independent retrospective cohort of patients with viral infections without COVID-19.</p>
+</sec>
+<sec id="s2d">
+<title>Retrospective non-COVID-19 patient cohort</title>
+<p>We selected a subset of samples from our previously described database of 34 independent cohorts derived from whole blood or peripheral blood mononuclear cells (PBMCs) (<italic><xref ref-type="bibr" rid="c20">20</xref></italic>). From this database we removed all samples that were used in our analysis for identifying the 6-gene signature, leaving 1,417 samples across 21 independent cohorts (<bold>Supplementary Table 1</bold>). The samples in these datasets represented the biological and clinical heterogeneity observed in the real-world patient population, including healthy controls and patients infected with 16 different viruses with severity ranging from asymptomatic to fatal viral infection over a broad age range (&#x003C;12 months to 73 years) (<bold><xref rid="fig1" ref-type="fig">Figure 1A</xref></bold> and <bold>Supplementary Table 1</bold>). Notably, the samples were from patients enrolled across 10 different countries representing diverse genetic backgrounds of patients and viruses. Finally, we included technical heterogeneity in our analysis as these datasets were profiled using microarray from different manufacturers.</p>
+<p>We renormalized all microarray datasets using standard methods when raw data were available from the Gene Expression Omnibus database. We applied Guanine Cytosine Robust Multiarray Average to arrays with mismatch probes for Affymetrix arrays. We used normal-exponential background correction followed by quantile normalization for Illumina, Agilent, GE, and other commercial arrays. We did not renormalize custom arrays and used preprocessed data as made publicly available by the study authors. We mapped microarray probes in each dataset to Entrez Gene identifiers (IDs) to facilitate integrated analysis. If a probe matched more than one gene, we expanded the expression data for that probe to add one record for each gene. When multiple probes mapped to the same gene within a dataset, we applied a fixed-effect model. Within a dataset, cohorts assayed with different microarray types were treated as independent.</p>
+</sec>
+<sec id="s2e">
+<title>Standardized severity assignment for retrospective non-COVID-19 patient samples</title>
+<p>We used standardized severity for each of the 1,417 samples as described before (<italic><xref ref-type="bibr" rid="c20">20</xref></italic>). Briefly, for each dataset, we used the sample phenotypes as defined in the original publication. We manually assigned a severity category to each sample based on the cohort description for each dataset in the original publication as follows: (1) healthy controls &#x2013; asymptomatic, uninfected healthy individuals, (2) asymptomatic or convalescents &#x2013; afebrile asymptomatic individuals who tested positive for a virus or those fully recovered from a viral infection with completely resolved symptoms, (3) mild &#x2013; symptomatic individuals with viral infection that were either managed as outpatient or discharged from the emergency department (ED), (4) moderate &#x2013; symptomatic individuals with viral infection who were admitted to the general wards and did not require supplemental oxygen, (5) serious - symptomatic individuals with viral infection who were described as &#x2018;severe&#x2019; by original authors, admitted to general wards with supplemental oxygen, or admitted to the intensive care unit (ICU) without requiring mechanical ventilation or inotropic support, (6) critical - symptomatic individuals with viral infection who were on mechanical ventilation in the ICU or were diagnosed with acute respiratory distress syndrome (ARDS), septic shock, or multiorgan dysfunction syndrome, and (7) fatal &#x2013; patients with viral infection who died in the ICU.</p>
+<p>For datasets that did not provide sample-level severity data (GSE101702, GSE38900, GSE103842, GSE66099, GSE77087), we assigned severity categories as follows. We categorized all samples in a dataset as &#x201C;moderate&#x201D; when either (1) &#x003E;70&#x0025; of patients were admitted to the general wards as opposed to discharged from the ED, (2) &#x003C;20&#x0025; of patients admitted to the general wards required supplemental oxygen, or (3) patients were admitted to the general wards and categorized as &#x2018;mild&#x2019; or &#x2018;moderate&#x2019; by the original authors. We categorized all samples in a dataset as &#x201C;severe&#x201D; when &#x003E;20&#x0025; of patients had either (1) been admitted to the general wards and categorized as &#x2018;severe&#x2019; by original authors, (2) required supplemental oxygen, or (3) required ICU admission without mechanical ventilation.</p>
+</sec>
+<sec id="s2f">
+<title>Retrospective COVID-19 patient cohort</title>
+<p>We used COVID-19 samples (N=100) from GSE 157103 (<italic><xref ref-type="bibr" rid="c24">24</xref></italic>). Briefly, the dataset includes RNA-Seq expression data for adult patients hospitalized for suspected COVID-19 in April 2020, in Albany Medical Center (Albany, NY, United States). We applied the 6-mRNA classifier to the gene expression data for participants who tested positive for COVID-19. The expression values were estimated by &#x201C;RNA-Seq by Expectation Minimization&#x201D; algorithm by the study authors. We used the binary &#x201C;mechanical-ventilation&#x201D; status (yes/no) provided by authors as indicator of the disease severity.</p>
+</sec>
+<sec id="s2g">
+<title>Prospective COVID-19 patient cohort</title>
+<p>Blood samples were collected between March and April 2020 from three study sites participating in the Hellenic Sepsis Study Group (<ext-link ext-link-type="uri" xlink:href="http://www.sepsis.gr">www.sepsis.gr</ext-link>). The studies were conducted following approvals for the collection of biomaterial for transcriptomic analysis for patients with lower respiratory tract infections provided by the Ethics Committees of the participating hospitals. Participants were adults with written informed consent provided by themselves or by first-degree relatives in the case of patients unable to consent, with molecular detection of SARS-CoV-2 in respiratory secretions and radiological evidence of lower respiratory tract involvement. PAXgene&#x00AE; Blood RNA tubes were drawn within the first 24 hours from admission along with other standard laboratory parameters. Data collection included demographic information, clinical scores (SOFA, APACHE II), laboratory results, length of stay and clinical outcomes. Patients were followed up daily for 30 days; severe disease was defined as respiratory failure (PaO2/FiO2 ratio less than 150 requiring mechanical ventilation) or death. PAXgene Blood RNA samples were shipped to Inflammatix, where RNA was extracted and processed using NanoString nCounter&#x00AE;, as previously described (<italic><xref ref-type="bibr" rid="c19">19</xref></italic>). The 6-mRNA scores were calculated after locking the classifier weights.</p>
+</sec>
+<sec id="s2h">
+<title>Healthy controls</title>
+<p>We acquired five whole blood samples from healthy controls through a commercial vendor (BioIVT). The individuals were non-febrile and verbally screened to confirm no signs or symptoms of infection were present within 3 days prior to sample collection. They were also verbally screened to confirm that they were not currently undergoing antibiotic treatment and had not taken antibiotics within 3 days prior to sample collection. Further, all samples were shown to be negative for HIV, West Nile, Hepatitis B, and Hepatitis C by molecular or antibody-based testing. Samples were collected in PAXgene Blood RNA tubes and treated per the manufacturer&#x2019;s protocol. Samples were stored and transported at -80C.</p>
+</sec>
+<sec id="s2i">
+<title>Rapid isothermal assay</title>
+<p>Our goal was to create a rapid assay, and isothermal reactions run much faster than traditional qPCR. Thus, loop-mediated isothermal gene expression (LAMP) assays were designed to span exon junctions, and at least three core (FIP/BIP/F3/B3) solutions meeting these design criteria were identified for each marker and evaluated for successful amplification of cDNA and exclusion of gDNA. Where available, loop primers (LF/LB) were subsequently identified for best core solutions to generate a complete primer set. Solutions were down-selected based on efficient amplification of cDNA and RNA, selectivity against gDNA, and the presence of single, homogenous melt peaks. The final primer sets are attached as <bold>Supplementary Table 2</bold>.</p>
+<p>We designed an analytical validation panel of 61 blood samples from patients in multiple infection classes, including healthy, bacterial or viral. A subset of samples from patients with bacterial or viral infection came from patients with an infection that had progressed to sepsis. Whole blood samples were collected in PAXgene Blood RNA stabilization vacutainers, which preserve the integrity of the host mRNA expression profile at the time of draw. Total RNA was extracted from a 1.5 mL aliquot of each stabilized blood sample using a modified version of the Agencourt RNAdvance Blood kit and protocol. RNA was heat treated at 55&#x00B0;C for 5 min then snap-cooled prior to quantitation. Total RNA material was distributed evenly across LAMP reactions measuring the five markers in triplicate. LAMP assays were carried out using a modified version of the protocol recommended by Optigene Ltd, and performed on a QuantStudio 6 Real-Time PCR System.</p>
+</sec>
+<sec id="s2j">
+<title>Statistical Analyses</title>
+<p>Analyses were performed in R version 3 and Python version 3.6. The area under the receiver operating characteristic curve (AUROC) was chosen as the primary metric for model evaluation since it provides a general measure of diagnostic test quality without depending on prevalence or having to choose a specific cutoff point.</p>
+<p>All validation dataset analyses use the locked 6-mRNA logistic regression output, i.e. predicted probabilities. AUROCs for additional markers (<bold><xref rid="tbl3a" ref-type="table">Table 3</xref></bold>) are calculated from the available data for each marker. For the logistic regression model that includes the 6-mRNA predicted probabilities along with other markers as predictor variables, conditional multiple imputation was used for values to ensure model convergence. Since AUROC may fail to detect poor calibration on validation data (since subject rankings may still hold), we also demonstrated that a cutoff chosen from training data maintains good sensitivity and specificity in validation data even before recalibration. Due to the relatively small sample size, we made inter-group comparisons without assumptions of normality where possible (Kruskal-Wallis rank sum or Mann-Whitney U test). Medians and interquartile ranges are given for continuous variables.</p>
+<table-wrap id="tbl2" orientation="portrait" position="float">
+<label>Table 2.</label>
+<caption><p>Demographics, severity scores, and severity markers for the prospective COVID-19 cohort, overall and split by mortality. P-values correspond to Mann-Whitney tests for difference of means and chi-square tests for difference of proportions between the survival and mortality groups. Unless indicated otherwise, numbers shown are median [IQR].</p></caption>
+<graphic xlink:href="20230235v2_tbl2.tif"/>
+<graphic xlink:href="20230235v2_tbl2a.tif"/>
+</table-wrap>
+<table-wrap id="tbl3a" orientation="portrait" position="float">
+<label>Table 3.</label>
+<caption><p>Prognostic power of the 6-mRNA signature classifier and comparator scores and markers in the independent prospective COVID-19 cohort. Shown are AUROCs for non-missing data, plus 95&#x0025; CI. The final column is a &#x2018;fair&#x2019; assessment of the 6-mRNA signature classifier, i.e. the performance on the subset of patients that was available to the comparator.</p>
+<p><bold><xref ref-type="table" rid="tbl3a">Table 3a</xref>.</bold> Prognostic power for predicting severe respiratory failure. Bold font indicates predictor with higher AUROC, which in nearly all cases is the 6-mRNA classifier. The P value column corresponds to DeLong test for difference between paired ROC curves.</p></caption>
+<graphic xlink:href="20230235v2_tbl3a.tif"/>
+</table-wrap>
+<table-wrap id="tbl3b" orientation="portrait" position="float">
+<label>Table 3b.</label>
+<caption><p>Prognostic power for predicting mortality. Bold font indicates predictor with the higher AUROC. The P value column corresponds to DeLong test for difference between paired ROC curves.</p></caption>
+<graphic xlink:href="20230235v2_tbl3b.tif"/>
+</table-wrap>
+</sec>
+</sec>
+<sec id="s3">
+<title>Results</title>
+<p>We first identified 21 studies (<italic><xref ref-type="bibr" rid="c25">25</xref>-<xref ref-type="bibr" rid="c40">40</xref></italic>) with 705 patients with viral infections (no patient with SARS-CoV-2) based on computer-aided adjudication and available outcomes data (see <bold>Methods</bold>; <bold><xref rid="fig1" ref-type="fig">Figure 1</xref></bold> and <bold><xref rid="tbl1" ref-type="table">Table 1</xref></bold>). These studies included a broad spectrum of clinical, biological, and technical heterogeneity as they profiled blood samples from viral infections from 14 countries using mRNA profiling platforms from four manufacturers (Affymetrix, Agilent, Illumina, Nanostring). Within each dataset, the number of patients who died were very low (two or less for all but one study), meaning traditional approaches for biomarker discovery that rely on a single cohort with sufficient sample size would not have been effective. However, there were sufficient cases (23 deaths within 30 days of sample collection) across these 705 patients. Sample size analysis using pmsampsize package (41) suggested minimal sample size of 450 patients with 18 cases, confirming the adequacy of the pooled dataset. Our previously described approaches for integrating independent datasets and leveraging heterogeneity allowed us to learn across the whole pooled dataset (<italic><xref ref-type="bibr" rid="c19">19</xref>, <xref ref-type="bibr" rid="c42">42</xref>, <xref ref-type="bibr" rid="c43">43</xref></italic>). Visualization of the 705 conormalized samples using all genes present across the studies using t-stochastic neighbor embedding (t-SNE), showed that there was no clear separation between the samples from patients who died and those who survived (<bold><xref rid="fig2" ref-type="fig">Figure 2a</xref></bold>).</p>
+<fig id="fig2" position="float" fig-type="figure">
+<label>Figure 2.</label>
+<caption><p>Training data for the 6-mRNA classifier. (a) Visualization of 705 samples across 21 studies in low dimension using t-SNE. (b) Logistic regression model selection. Each dot corresponds to a model defined by a combination of logistic regression hyperparameters and a decision threshold. Entire search space (100 hyperparameter configurations) is shown. (c) ROC plot for the best model. The plot is constructed using pooled probabilities from cross-validation folds. (d) Expression of the 6 genes used in the logistic regression model according to mortality outcomes.</p></caption>
+<graphic xlink:href="20230235v2_fig2.tif"/>
+</fig>
+<sec id="s3a">
+<title>6-mRNA logistic regression-based model accurately predicts viral patient mortality across multiple retrospective studies</title>
+<p>Across the linear machine learning algorithms employed in our analyses, models using logistic regression had the highest mean AUROC for identifying patients with viral infection who died. Further, within logistic regression models, those trained using random cross-validation were more accurate than those trained using other variants of cross-validation. Finally, within the different 6-mRNA logistic regression-based models trained using CV, the model with highest AUROC used the following 6 genes: <italic>TGFBI, DEFA4, LY86, BATF, HK3</italic> and <italic>HLA-DPB1</italic>. It had an AUROC of 0.896 (95&#x0025; CI: 0.844-0.949) (<bold><xref rid="fig2" ref-type="fig">Figures 2b</xref> and <xref ref-type="fig" rid="fig2">2c</xref>; Supplementary Figure 1</bold>). Each of the 6 genes were significantly differentially expressed between patients with viral infections who survived and those who did not, of which 3 genes (<italic>DEFA4, BATF, HK3</italic>) were higher and 3 genes (<italic>TGFBI, LY86, HLA-DPB1</italic>) were lower in those who died (<bold><xref rid="fig2" ref-type="fig">Figure 2d</xref></bold>). Based on the cross-validation, the 6-mRNA logistic regression model had a 91&#x0025; sensitivity and 68&#x0025; specificity for distinguishing patients with viral infection who died from those who survived. We used this model, referred to as the 6-mRNA classifier, as-is for validation in multiple independent retropective cohorts and a prospective cohort.</p>
+</sec>
+<sec id="s3b">
+<title>6-mRNA classifier is an age-independent predictor of mortality in patients with viral infections</title>
+<p>Age is a known significant predictor of 30-day mortality in patients with respiratory viral infections. To assess the added value of the new prognostic information of the 6-mRNA classifier with regards to age in the training data, we fit a binary logistic regression model with age and pooled cross-validation 6-mRNA classifier probabilities as independent variables. The 6-mRNA score was significantly associated with increased risk of 30-day mortality (P&#x003C;0.001), but age was not (P=0.06).</p>
+</sec>
+<sec id="s3c">
+<title>Validation of the 6-mRNA classifier in multiple independent retrospective cohorts</title>
+<p>We applied the locked 6-mRNA classifier to 1,417 transcriptome profiles of blood samples across 21 independent cohorts from patients with viral infections (663 healthy controls, 674 non-severe, 71 severe, 7 fatal) in 10 countries (<bold>Supplementary Table 1</bold>). Visualization of the 1,417 samples using expression of the 6 genes showed patients with severe outcome clustered closer (<bold><xref rid="fig3" ref-type="fig">Figure 3a</xref></bold>). Among the 6 genes, over-expressed genes (<italic>HK3, DEFA4, BATF</italic>) were positively correlated with severity of viral infection, and under-expressed gene (<italic>HLA-DPB1, LY86, TGFBI</italic>) were negatively correlated with severity (<bold><xref rid="fig3" ref-type="fig">Figure 3b</xref></bold>). Importantly, the 6-mRNA classifier score was positively correlated with severity and was significantly higher in patients with severe or fatal viral infection than those with non-severe viral infections or healthy controls (<bold><xref rid="fig3" ref-type="fig">Figure 3c</xref></bold>). Finally, the 6-mRNA classifier score distinguished patients with severe viral infection from those with non-severe viral infection (AUROC=0.91, 95&#x0025; CI: 0.881-0.938) and healthy controls (AUROC=0.998, 95&#x0025; CI: 0.994-1) (<bold><xref rid="fig3" ref-type="fig">Figure 3d</xref></bold>).</p>
+<fig id="fig3" position="float" fig-type="figure">
+<label>Figure 3.</label>
+<caption><p>Validation of the 6-mRNA classifier in the independent retrospective non-COVID-19 cohorts. (a) Visualization of the samples using t-SNE. (b) Expression of the 6 genes used in the logistic regression model in patients with clinically relevant subgroups. (c) 6-mRNA classifier accurately distinguishes non-severe and severe patients with COVID-19 as well as those who died. (d) ROC plot for the subgroups.</p></caption>
+<graphic xlink:href="20230235v2_fig3.tif"/>
+</fig>
+<p>We plotted ROC curves to assess the discriminative ability of the 6-mRNA classifier among the following subgroups of clinical interest: healthy controls, non-severe cases, severe, and fatal outcomes (<bold><xref rid="fig3" ref-type="fig">Fig. 3d</xref></bold>). Healthy controls are presented (though not mixed with non-severe viral infections in comparison) since some viral infections such as COVID-19 can be asymptomatic. All pairwise comparisons showed robust performance of the classifier on the independent data, achieving AUROC point-estimates between 0.86 (non-severe vs. healthy) and 1 (severe vs. healthy).</p>
+</sec>
+<sec id="s3d">
+<title>Validation of the 6-mRNA logistic regression model in two independent COVID-19 cohorts</title>
+<p>We further validated the 6-mRNA logistic regression model in two independent cohorts of patients with COVID-19. In one of the cohorts, we prospectively enrolled 97 adult patients with pneumonia by SARS-CoV-2 in Greece (Greece cohort). There were 47 patients with non-severe COVID-19 disease, whereas 50 had severe COVID-19, of which 16 died (<bold><xref rid="tbl2" ref-type="table">Table 2</xref>)</bold>. We also used gene expression data for 100 COVID-19-positive participants in the GSE157103 study in Gene Expression Omnibus database (Albany cohort). There were 43 patients with non-severe COVID-19 disease and 57 with severe COVID-19. Visualization of both cohorts in low dimension using expression of the 6 mRNAs (without the classifier) revealed a degree of separation between patients with severe COVID-19 disease and those with non-severe disease (<bold><xref rid="fig4" ref-type="fig">Figure 4a</xref></bold>). When comparing expression of the 6 mRNAs in patients with non-severe COVID-19 disease to those with severe disease, expression of each changed statistically significant in the same direction as the training data in both cohorts (P&#x003C;0.05) (<bold><xref rid="fig4" ref-type="fig">Figure 4b</xref></bold>).</p>
+<fig id="fig4" position="float" fig-type="figure">
+<label>Figure 4.</label>
+<caption><p>Validation of the 6-mRNA classifier in the COVID-19 cohorts. (A) Visualization of prospective (Greece, N=97) and retrospective (Albany, US, N=100) samples in the independent validation cohorts using t-SNE. (B) Expression of the 6 genes used in the logistic regression model in patients with severe/fatal and non-severe SARS-CoV-2 viral infection. (C) 6-mRNA classifier accurately distinguishes non-severe and severe patients with COVID-19 as well as those who died. (D) ROC plot for non-severe COVID-19 vs. severe or death (samples from healthy controls not included).</p></caption>
+<graphic xlink:href="20230235v2_fig4.tif"/>
+</fig>
+<p>We applied the locked 6-mRNA classifier to the 97 COVID-19 patients and the 5 healthy controls in the Greece cohort. The 6-mRNA score was correlated with severity in both cohorts (Greece cohort: R=0.72, p&#x003C;2.2e-16; Albany cohort: R=0.64, p=6.6e-13) (<bold><xref rid="fig4" ref-type="fig">Figure 4c</xref></bold>). In particular, the model distinguished patients with severe respiratory failure from non-severe patients with an AUROC of 0.89 (95&#x0025; CI: 0.82-0.95) in the Greece cohort, and 0.87 (95&#x0025; CI: 0.80-0.94) in the Albany cohort (<bold><xref rid="fig4" ref-type="fig">Figure 4d</xref></bold>).</p>
+<p>We also assessed whether the 6-mRNA score is an independent predictor of severity in patients with COVID-19 by including other predictors of severity (age, SOFA score, CRP, PCT, lactate, and gender) in a logistic regression model. As expected, due to small sample size, and correlations between markers, no markers except SOFA were statistically significant predictors of severe respiratory failure (<bold>Supplementary Table 3</bold>).</p>
+<p>For clinical applications, AUROC is a more relevant indicator of marker performance. To that end, we compared the 6-mRNA score to other clinical parameters of severity using AUROC (<bold><xref rid="tbl3a" ref-type="table">Table 3</xref> and Supplementary Figs. 2-3)</bold>. The 6-mRNA score was the most accurate predictor of severe respiratory failure and death except SOFA. The AUROC confidence intervals were overlapping because the study was not powered to detect statistically significant differences. Of note, the 6-mRNA score was significantly more accurate for predicting severe respiratory failure and death than the only assay under the FDA Emergency Use Authorization, the IL-6. As a proxy for assessing how the 6-mRNA score might add to a clinician&#x2019;s bedside severity assessment, we evaluated whether a combination of our classifier with the SOFA score improves over SOFA alone for the prediction of severe respiratory failure. The two scores together had an AUROC of 0.95; the continuous net reclassification improvement (cNRI) was 0.43 [95&#x0025; CI: 0.04&#x2013;0.81, P=0.03]. Together, these results suggest a potential improvement in clinical risk prediction when adding the 6-mRNA score to standard risk predictors; but definitive conclusion requires validation in additional independent data.</p>
+</sec>
+<sec id="s3e">
+<title>Pooled results</title>
+<p>We combined the predicted probabilities from the COVID-19 and non-COVID-19 independent cohorts and plotted the corresponding ROC graph (<xref rid="fig5" ref-type="fig">Fig. 5</xref>). The corresponding AUROC was 0.90 (95&#x0025; CI: 0.87-0.92).</p>
+<fig id="fig5" position="float" fig-type="figure">
+<label>Figure 5.</label>
+<caption><p>Validation of the 6-mRNA classifier in the COVID-19 and non-COVID-19 cohorts (pooled results of data in Figs. 3-4, excluding healthy subjects). The total number of samples was 951. The number of cases was 187. AUROC = 0.90 (95&#x0025; CI: 0.87-0.92).</p></caption>
+<graphic xlink:href="20230235v2_fig5.tif"/>
+</fig>
+</sec>
+<sec id="s3f">
+<title>Translation to a clinical report</title>
+<p>To improve utility and adoption, a risk prediction score should be presented to clinicians in an intuitive and actionable test report. To that end, we discretized the 6-mRNA score in three bands: low-risk, intermediate-risk, and high-risk of severe outcome. The performance characteristics of each band are shown in <bold><xref rid="tbl4a" ref-type="table">Table 4</xref></bold>. The table shows performance of the test on retrospective data (excluding healthy controls) using two versions of decision thresholds: thresholds optimized on the training data (<bold><xref rid="tbl4a" ref-type="table">Table 4a</xref></bold>), and thresholds optimized using the retrospective test set (<bold><xref rid="tbl4b" ref-type="table">Table 4b</xref></bold>). The outcome was severe infection. <bold><xref rid="tbl4c" ref-type="table">Tables 4c</xref>, <xref ref-type="table" rid="tbl4d">d</xref></bold> show corresponding results on the COVID-19 data, using severe respiratory failure as outcome.</p>
+<table-wrap id="tbl4a" orientation="portrait" position="float">
+<label>Table 4.</label>
+<caption><p>Test characteristics of the 6-mRNA score in non-COVID-19 and COVID-19 patients using the three-band test report. &#x201C;Severe in band&#x201D; is the number of patients with severe viral infection assigned to the corresponding band. &#x201C;Non-severe in band&#x201D; is the number of patients with non-severe viral infection assigned to the corresponding band. The &#x201C;Percent severe in band&#x201D; is the percentage of patients in the band who had severe outcome. The &#x201C;In-band&#x201D; column is the percentage of patients assigned by the classifier to the corresponding band.</p>
+<p><bold><xref ref-type="table" rid="tbl4a">Table 4a</xref></bold>. non-COVID-19 results. The band thresholds were set using training data and locked.</p>
+</caption>
+<graphic xlink:href="20230235v2_tbl4a.tif"/>
+</table-wrap>
+<table-wrap id="tbl4b" orientation="portrait" position="float">
+<label>Table 4b.</label>
+<caption><p>non-COVID-19 results. The band thresholds were set using the retrospective data.</p></caption>
+<graphic xlink:href="20230235v2_tbl4b.tif"/>
+</table-wrap>
+<table-wrap id="tbl4c" orientation="portrait" position="float">
+<label>Table 4c.</label>
+<caption><p>Prospective COVID-19 results. The band thresholds were set using training data and locked.</p></caption>
+<graphic xlink:href="20230235v2_tbl4c.tif"/>
+</table-wrap>
+<table-wrap id="tbl4d" orientation="portrait" position="float">
+<label>Table 4d.</label>
+<caption><p>Prospective COVID-19 results. The band thresholds were set using the prospective data.</p></caption>
+<graphic xlink:href="20230235v2_tbl4d.tif"/>
+</table-wrap>
+<table-wrap id="tbl4e" orientation="portrait" position="float">
+<label>Table 4e.</label>
+<caption><p>Retrospective COVID-19 results. The band thresholds were set using training data and locked.</p></caption>
+<graphic xlink:href="20230235v2_tbl4e.tif"/>
+</table-wrap>
+<table-wrap id="tbl4f" orientation="portrait" position="float">
+<label>Table 4f.</label>
+<caption><p>Retrospective COVID-19 results. The band thresholds were set using the retrospective data.</p></caption>
+<graphic xlink:href="20230235v2_tbl4f.tif"/>
+</table-wrap>
+</sec>
+<sec id="s3g">
+<title>Translation to a rapid assay</title>
+<p>Any risk prediction score should be rapid enough to fit into clinical workflows. We thus developed a LAMP assay as a proof of concept for a rapid 6-mRNA test. We further showed that across 61 clinical samples from healthy controls and acute infections of varying severities that the LAMP 6-mRNA score and the reference NanoString 6-mRNA score had very high correlation (r=0.95; <bold>Supplementary Figure 4)</bold>. These results demonstrate that with further optimization the 6-mRNA model could be translated into a clinical assay to run in less than 30 minutes.</p>
+</sec>
+</sec>
+<sec id="s4">
+<title>Discussion</title>
+<p>The severe economic and societal cost of the ongoing COVID-19 pandemic, the fourth viral pandemic since 2009, has underscored the urgent need for a prognostic test that can help stratify patients as to who can safely convalesce at home in isolation and who needs to be monitored closely. Here we integrated 705 peripheral blood transcriptome profiles across 21 heterogeneous studies from patients with viral infections, none of whom were infected with SARS-CoV-2. Despite the substantial biological, clinical, and technical heterogeneity across these studies, we identified a 6-mRNA host-response signature that distinguished patients with severe viral infections from those without. We demonstrated generalizability of this 6-mRNA model first in a set of 21 independent heterogeneous cohorts of 1,417 retrospectively profiled samples, and then in two independent retrospectively and prospectively collected cohorts of patients with SARS-CoV-2 infection, in United States and Greece, respectively. In each validation analysis, the 6-mRNA classifier accurately distinguished patients with severe outcome from those with non-severe outcomes, irrespective of the infecting virus, including SAR-CoV-2. Importantly, across each analysis, the 6-mRNA classifier had similar accuracy, measured by AUROC, demonstrating its generalizability and robustness to biological, clinical, and technical heterogeneity. Although this study was focused on development of a clinical tool, not a description of transcriptome-wide changes, the applicability of the signature across viral infections further demonstrates that host factors associated with severe outcomes are conserved across viral infections, which is in line with our recent large-scale analysis (<italic><xref ref-type="bibr" rid="c20">20</xref></italic>).</p>
+<p>While many risk-stratification scores and biomarkers exist, few are focused specifically on viral infections. Of the recent models specifically designed for COVID-19, most are trained and validated in the same homogenous cohorts, and their generalizability to other viruses is unknown because they have not been tested across other viral infections (<italic><xref ref-type="bibr" rid="c14">14</xref></italic>). Consequently, when a new virus, such as SARS-CoV-2, emerges, their utility is substantially limited. However, we have repeatedly demonstrated that the host response to viral infections is conserved and distinct from the host response to other acute conditions <italic>(15-20)</italic>.</p>
+<p>Here, building upon our prior results, we developed a 6-mRNA classifier specifically trained in patients with viral infection to risk stratify better than other existing biomarkers. Further, the only assay authorized for clinical use in risk-stratifying COVID-19 (IL-6 measured in blood), substantially underperformed our proposed 6-mRNA model here. That said, the nominal improvement over existing biomarkers (<bold><xref rid="tbl3a" ref-type="table">Table 3</xref></bold>) for prediction of severe respiratory failure requires larger cohorts to confirm statistical significance. The 6-mRNA score is nominally worse than SOFA, but SOFA requires 24 hours to calculate, while the 6-mRNA score could be run in 30 minutes, demonstrating its utility as a triage test. The synergy (positive NRI) in combination with SOFA also suggests that the 6-mRNA score could improve practice in combination with clinical gestalt. The 6-mRNA score has been reduced to practice as a rapid isothermal quantitative RT-LAMP assay, suggesting that it may be practical to implement in the clinic with further development.</p>
+<p>Our goal in this study was not to investigate underlying biological mechanisms, but to address the urgent need for a prognostic test in SARS-CoV-2 pandemic, and to improve our preparedness for future pandemics. However, using immunoStates database (<ext-link ext-link-type="uri" xlink:href="https://metasignature.khatrilab.stanford.edu">https://metasignature.khatrilab.stanford.edu</ext-link>) (<italic><xref ref-type="bibr" rid="c44">44</xref></italic>), we found 5 out of the 6 genes (<italic>HK3, DEFA4, TGFBI, LY86, HLA-DPB1</italic>) are highly expressed in myeloid cells, including monocytes, myeloid dendritic cells, and granulocytes. This is in line with our recent results demonstrating that myeloid cells are the primary source of conserved host response to viral infection (<italic><xref ref-type="bibr" rid="c20">20</xref></italic>). Further, we have previously found that <italic>DEFA4</italic> is over-expressed in patients with dengue virus infection who progress to severe infection (<italic><xref ref-type="bibr" rid="c44">44</xref></italic>), and in those with higher risk of mortality in patients with sepsis (<italic><xref ref-type="bibr" rid="c18">18</xref></italic>). <italic>HLA-DPB1</italic> belongs to the HLA class II beta chain paralogues, and plays a central role in the immune system by presenting peptides derived from extracellular proteins. Class II molecules are expressed in antigen presenting cells (B lymphocytes, dendritic cells, macrophages). Reduced expression of <italic>HLA-DPB1</italic> described herein is fully compatible with the decreased expression of HLA-DR on the cell membranes of circulating monocytes of patients with severe respiratory failure by SARS-CoV-2. This is a unique immune dysregulation where despite the down-regulation of HLA-DR monocytes remain potent for the production of pro-inflammatory cytokines, namely TNF&#x03B1; and IL-6. This complex immune dysregulation fully differentiates critically ill patients with COVID-19 from patients with bacterial sepsis (<italic><xref ref-type="bibr" rid="c46">46</xref></italic>) in patients with severe outcome and suggests dysfunctional antigen presentation that should be further investigated. Similarly, <italic>BATF</italic> is significantly over-expressed, and <italic>TGFBI</italic> is significantly under-expressed in patients with sepsis compared to those with systemic inflammatory response syndrome (SIRS) (<italic><xref ref-type="bibr" rid="c15">15</xref></italic>). Finally, lower expression of <italic>TGFBI</italic> and <italic>LY86</italic> in peripheral blood is associated with increased risk of mortality in patients with sepsis (<italic><xref ref-type="bibr" rid="c18">18</xref></italic>). These results further suggest that there may be a common underlying host immune response associated with severe outcome in infections, irrespective of bacterial or viral infection. Consistent differential expression of these genes in patients with a severe infectious disease across heterogeneous datasets lend further support to our hypothesis that dysregulation in host response can be leveraged to stratify patients in high- and low-risk groups.</p>
+<p>Our study has several limitations. First, our study uses retrospective data with large amount of heterogeneity for discovery of the 6-mRNA signature; such heterogeneity could hide unknown confounders in classifier development. However, our successful representation of biological, clinical, and technical heterogeneity also increased the <italic>a priori</italic> odds of identifying a parsimonious set of generalizable prognostic biomarkers suitable for clinical translation as a point-of-care. Second, owing to practical considerations for urgent need, we focused on a preselected panel of mRNAs. It is possible that similar analysis using the whole transcriptome data would find additional signatures, though with less clinical data. Third, a common limitation in all these types of pandemic observational studies is a lack of understanding of the effect of time from symptoms onset. Finally, additional larger prospective cohorts are needed to further confirm the accuracy of the 6-mRNA model in distinguishing patients at high risk of progressing to severe outcomes from those who do not.</p>
+<p>Overall, our results show that once translated into a rapid assay and validated in larger prospective cohorts, this 6-mRNA prognostic score could be used as a clinical tool to help triage patients after diagnosis with SARS-CoV-2 or other viral infections such as influenza. Improved triage could reduce morbidity and mortality while allocating resources more effectively. By identifying patients at high risk to develop severe viral infection, i.e., the group of patients with viral infection who will benefit the most from close observation and antiviral therapy, our 6-mRNA signature can also guide patient selection and possibly endpoint measurements in clinical trials aimed at evaluating emerging anti-viral therapies. This is particularly important in the setting of current COVID-19 pandemic, but also useful in future pandemics or even seasonal influenza.</p>
+</sec>
+<sec id="s5">
+<title>Conclusions</title>
+<p>With further study, the classifier could assist in the risk assessment of COVID-19 and other acute viral infections patients to determine severity and level of care, thereby improving patient management and reducing healthcare burden.</p>
+</sec>
+<sec sec-type="supplementary-material">
+<title>Supporting information</title>
+<supplementary-material>
+<label>Supplementary information</label>
+<media xlink:href="supplements/230235_file02.pdf" />
+</supplementary-material>
+</sec>
+</body>
+<back>
+<sec sec-type="data-availability">
+<title>Data Availability</title>
+<p>The public cohorts are available under their respective study IDs. The Stanford ICU Databank study is available at <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1038/s41467-020-14975-w">https://doi.org/10.1038/s41467-020-14975-w</ext-link>. The COVID-19 NanoString data are available upon reasonable request from the authors.
+</p>
+<p>
+<ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1038/s41467-020-14975-w">https://doi.org/10.1038/s41467-020-14975-w</ext-link>
+</p>
+</sec>
+<sec id="s6">
+<title>List of abbreviations</title>
+<p>COVID-19; SARS-CoV-2; ARDS; CD3; CD4; ML; mRNA; RNAseq; IMX-BVN-2; CV; LOSO; AUROC; PBMC; ED; ICU; SOFA; HIV; cDNA; gDNA; LAMP; PCR; CI; FDA; cNRI</p>
+</sec>
+<sec id="s7">
+<title>Declarations</title>
+<sec id="s7a">
+<title>Ethics approval and consent to participate</title>
+<p>COVID-19 blood samples were collected between March and April 2020. The studies were conducted following approvals for the collection of biomaterial for transcriptomic analysis for patients with lower respiratory tract infections provided by the Ethics Committees of the participating hospitals. The studies were conducted under the 23/12.08.2019 approval of the Ethics Committee of Sotiria Athens General Hospital; and the 26.02.2019 approval of the Ethics Committee of ATTIKON University General Hospital. Written informed consent was provided by patients or by first-degree relatives in case of patients unable to consent. For Australia/WIMR study, the written consent is provided by all patients or by first-degree relatives in case of patients unable to consent. The study was approved by the human research ethics committee of the Nepean Blue Mountains Area Health Services. For PREVISE study, the IRB was approved by COMITE DE ETICA DE LA INVESTIGACION CON MEDICAMENTOS DEL AREA DE SALUD DE SALAMANCA, Paseo de San Vicente, 58-18, 237007 Salamanca, Spain. For healthy commercial controls, blood RNA tubes were prospectively collected from healthy controls (HC) through a commercial vendor (BioIVT) under IRB approval (Western IRB #2016165) using informed consent. Stanford ICU databank and PROMPT studies have previously been published and provided IRB details.</p>
+<p>All necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived.</p>
+</sec>
+<sec id="s7b">
+<title>Consent for publication</title>
+<p>All necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived.</p>
+</sec>
+</sec>
+<sec id="s8">
+<title>Availability of data and materials</title>
+<p>The public cohorts are available under their respective study IDs. The Stanford ICU Databank study is available at <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1038/s41467-020-14975-w">https://doi.org/10.1038/s41467-020-14975-w</ext-link>. The COVID-19 NanoString data are available upon reasonable request.</p>
+</sec>
+<sec id="s9">
+<title>Competing interests</title>
+<p>LB, OL, JW, UM, RL, DR, MR, SC, and TES are employees of, and stockholders in, Inflammatix, Inc, which is developing the 6-mRNA score into a commercial assay, CoVerity&#x2122;. PK is a shareholder and a consultant to Inflammatix, Inc. EJGB has received honoraria from AbbVie USA, Abbott CH, InflaRx GmbH, MSD Greece, XBiotech Inc. and Angelini Italy; independent educational grants from AbbVie, Abbott, Astellas Pharma Europe, AxisShield, bioM&#x00E9;rieux Inc, InflaRx GmbH, and XBiotech Inc; and funding from the FrameWork 7 program HemoSpec (granted to the National and Kapodistrian University of Athens), the Horizon2020 Marie-Curie Project European Sepsis Academy (granted to the National and Kapodistrian University of Athens), and the Horizon 2020 European Grant ImmunoSep (granted to the Hellenic Institute for the Study of Sepsis). The other authors declare no competing interests.</p>
+</sec>
+<sec id="s10">
+<title>Funding</title>
+<p>This study was funded by Inflammatix Inc. No external funding was received.</p>
+</sec>
+<sec id="s11">
+<title>Authors&#x2019; contributions</title>
+<p>TES, LB, PK, and EJGB designed the study; BT, KL, WSK, MG, RS, MS, RA, JAN, SM, CH, NA, PK, MK, GD, OL conducted clinical studies; LB, HZ, JW, UM, HZ and RL performed data modelling and statistical analysis; YL, AMR, DD, JT, LMJ, MD collected and curated transcriptome data from public repositories; DR, MR, and SC built rapid assays and processed samples; LB, PK, OL, and TES wrote the manuscript; all authors critically revised and approved the manuscript.</p>
+</sec>
+<ack>
+<title>Acknowledgements</title>
+<p>We are grateful for the expert support in sample shipment and receipt of Ashley Prasse Miller and Mario Esquivel. We thank Jes&#x00FA;s Bermejo-Martin for assistance with the PREVISE clinical collaboration.</p>
+</ack>
+<ref-list>
+<title>References</title>
+<ref id="c1"><label>1.</label><mixed-citation publication-type="book"><ext-link ext-link-type="uri" xlink:href="https://coronavirus.jhu.edu/map.html">https://coronavirus.jhu.edu/map.html</ext-link>. (<publisher-loc>Johns Hopkins University</publisher-loc>, <year>2020</year>).</mixed-citation></ref>
+<ref id="c2"><label>2.</label><mixed-citation publication-type="journal"><string-name><given-names>F.</given-names> <surname>Zhou</surname></string-name> <etal>et al.</etal>, <article-title>Clinical course and risk factors for mortality of adult inpatients with COVID-19 in Wuhan, China: a retrospective cohort study</article-title>. <source>Lancet</source> <volume>395</volume>, <fpage>1054</fpage>&#x2013;<lpage>1062</lpage> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c3"><label>3.</label><mixed-citation publication-type="other"><string-name><given-names>D.</given-names> <surname>Wang</surname></string-name> <etal>et al.</etal>, <article-title>Clinical Characteristics of 138 Hospitalized Patients With 2019 Novel Coronavirus-Infected Pneumonia in Wuhan, China</article-title>. <source>Jama</source>, (<year>2020</year>).</mixed-citation></ref>
+<ref id="c4"><label>4.</label><mixed-citation publication-type="other"><string-name><given-names>M.</given-names> <surname>Cevik</surname></string-name>, <string-name><given-names>C.</given-names> <surname>Bamford</surname></string-name>, <string-name><given-names>A.</given-names> <surname>Ho</surname></string-name>, <article-title>COVID-19 pandemic - A focused review for clinicians</article-title>. <source>Clin Microbiol Infect</source>, (<year>2020</year>).</mixed-citation></ref>
+<ref id="c5"><label>5.</label><mixed-citation publication-type="journal"><collab>C. i. C. f. D. C. a. P.</collab> <article-title>Epidemiology Working Group for NCIP Epidemic Response, [The epidemiological characteristics of an outbreak of 2019 novel coronavirus diseases (COVID-19) in China]</article-title>. <source>Zhonghua Liu Xing Bing Xue Za Zhi</source> <volume>41</volume>, <fpage>145</fpage>&#x2013;<lpage>151</lpage> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c6"><label>6.</label><mixed-citation publication-type="journal"><string-name><given-names>W. J.</given-names> <surname>Guan</surname></string-name> <etal>et al.</etal>, <article-title>Clinical Characteristics of Coronavirus Disease 2019 in China</article-title>. <source>N Engl J Med</source> <volume>382</volume>, <fpage>1708</fpage>&#x2013;<lpage>1720</lpage> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c7"><label>7.</label><mixed-citation publication-type="other"><string-name><given-names>D. A.</given-names> <surname>Berlin</surname></string-name>, <string-name><given-names>R. M.</given-names> <surname>Gulick</surname></string-name>, <string-name><given-names>F. J.</given-names> <surname>Martinez</surname>,</string-name> <article-title>Severe Covid-19</article-title>. <source>N Engl J Med</source>, (<year>2020</year>).</mixed-citation></ref>
+<ref id="c8"><label>8.</label><mixed-citation publication-type="other"><string-name><given-names>W.</given-names> <surname>Liang</surname></string-name> <etal>et al.</etal>, <article-title>Development and Validation of a Clinical Risk Score to Predict the Occurrence of Critical Illness in Hospitalized Patients With COVID-19</article-title>. <source>JAMA Intern Med</source>, (<year>2020</year>).</mixed-citation></ref>
+<ref id="c9"><label>9.</label><mixed-citation publication-type="journal"><string-name><given-names>P.</given-names> <surname>Mehta</surname></string-name> <etal>et al.</etal>, <article-title>COVID-19: consider cytokine storm syndromes and immunosuppression</article-title>. <source>Lancet</source> <volume>395</volume>, <fpage>1033</fpage>&#x2013;<lpage>1034</lpage> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c10"><label>10.</label><mixed-citation publication-type="journal"><string-name><given-names>G.</given-names> <surname>Monteleone</surname></string-name>, <string-name><given-names>P. C.</given-names> <surname>Sarzi-Puttini</surname></string-name>, <string-name><given-names>S.</given-names> <surname>Ardizzone</surname></string-name>, <article-title>Preventing COVID-19-induced pneumonia with anticytokine therapy</article-title>. <source>Lancet Rheumatol</source> <volume>2</volume>, <fpage>e255</fpage>&#x2013;<lpage>e256</lpage> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c11"><label>11.</label><mixed-citation publication-type="other"><string-name><given-names>X.</given-names> <surname>Xu</surname></string-name> <etal>et al.</etal>, <article-title>Effective treatment of severe COVID-19 patients with tocilizumab</article-title>. <source>Proc Natl Acad Sci U S A</source>, (<year>2020</year>).</mixed-citation></ref>
+<ref id="c12"><label>12.</label><mixed-citation publication-type="other"><string-name><given-names>F.</given-names> <surname>Wang</surname></string-name> <etal>et al.</etal>, <article-title>The laboratory tests and host immunity of COVID-19 patients with different severity of illness</article-title>. <source>JCI Insight</source>, (<year>2020</year>).</mixed-citation></ref>
+<ref id="c13"><label>13.</label><mixed-citation publication-type="other"><string-name><given-names>X.</given-names> <surname>Zhang</surname></string-name> <etal>et al.</etal>, <article-title>Viral and host factors related to the clinical outcome of COVID-19</article-title>. <source>Nature</source>, (<year>2020</year>).</mixed-citation></ref>
+<ref id="c14"><label>14.</label><mixed-citation publication-type="journal"><string-name><given-names>L.</given-names> <surname>Wynants</surname></string-name> <etal>et al.</etal>, <article-title>Prediction models for diagnosis and prognosis of covid-19 infection: systematic review and critical appraisal</article-title>. <source>BMJ</source> <volume>369</volume>, <fpage>m1328</fpage> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c15"><label>15.</label><mixed-citation publication-type="journal"><string-name><given-names>T. E.</given-names> <surname>Sweeney</surname></string-name>, <string-name><given-names>A.</given-names> <surname>Shidham</surname></string-name>, <string-name><given-names>H. R.</given-names> <surname>Wong</surname></string-name>, <string-name><given-names>P.</given-names> <surname>Khatri</surname></string-name>, <article-title>A comprehensive time-course-based multicohort analysis of sepsis and sterile inflammation reveals a robust diagnostic gene set</article-title>. <source>Sci Transl Med</source> <volume>7</volume>, <fpage>287ra271</fpage> (<year>2015</year>).</mixed-citation></ref>
+<ref id="c16"><label>16.</label><mixed-citation publication-type="journal"><string-name><given-names>M.</given-names> <surname>Andres-Terre</surname></string-name> <etal>et al.</etal>, <article-title>Integrated, Multi-cohort Analysis Identifies Conserved Transcriptional Signatures across Multiple Respiratory Viruses</article-title>. <source>Immunity</source> <volume>43</volume>, <fpage>1199</fpage>&#x2013;<lpage>1211</lpage> (<year>2015</year>).</mixed-citation></ref>
+<ref id="c17"><label>17.</label><mixed-citation publication-type="journal"><string-name><given-names>T. E.</given-names> <surname>Sweeney</surname></string-name>, <string-name><given-names>H. R.</given-names> <surname>Wong</surname></string-name>, <string-name><given-names>P.</given-names> <surname>Khatri</surname></string-name>, <article-title>Robust classification of bacterial and viral infections via integrated host gene expression diagnostics</article-title>. <source>Sci Transl Med</source> <volume>8</volume>, <fpage>346ra391</fpage> (<year>2016</year>).</mixed-citation></ref>
+<ref id="c18"><label>18.</label><mixed-citation publication-type="journal"><string-name><given-names>T. E.</given-names> <surname>Sweeney</surname></string-name> <etal>et al.</etal>, <article-title>A community approach to mortality prediction in sepsis via gene expression analysis</article-title>. <source>Nat Commun</source> <volume>9</volume>, <fpage>694</fpage> (<year>2018</year>).</mixed-citation></ref>
+<ref id="c19"><label>19.</label><mixed-citation publication-type="journal"><string-name><given-names>M. B.</given-names> <surname>Mayhew</surname></string-name> <etal>et al.</etal>, <article-title>A generalizable 29-mRNA neural-network classifier for acute bacterial and viral infections</article-title>. <source>Nat Commun</source> <volume>11</volume>, <fpage>1177</fpage> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c20"><label>20.</label><mixed-citation publication-type="other"><string-name><given-names>H.</given-names> <surname>Zheng</surname></string-name> <etal>et al.</etal>, <article-title>Multi-cohort analysis of host immune response identifies conserved protective and detrimental modules associated with severity irrespective of virus</article-title>. <source>medRxiv</source>, <year>2020</year>.</mixed-citation></ref>
+<ref id="c21"><label>21.</label><mixed-citation publication-type="other"><string-name><given-names>M. B.</given-names> <surname>Mayhew</surname></string-name> <etal>et al.</etal>, <article-title>Optimization of genomic classifiers for clinical deployment: evaluation of Bayesian optimization for identification of predictive models of acute infection and in-hospital mortality</article-title>. <source>ArXiv</source>, 2003.12310 (<year>2020</year>).</mixed-citation></ref>
+<ref id="c22"><label>22.</label><mixed-citation publication-type="journal"><string-name><given-names>D.</given-names> <surname>Krstajic</surname></string-name>, <string-name><given-names>L. J.</given-names> <surname>Buturovic</surname></string-name>, <string-name><given-names>D. E.</given-names> <surname>Leahy</surname></string-name>, <string-name><given-names>S.</given-names> <surname>Thomas</surname></string-name>, <article-title>Cross-validation pitfalls when selecting and assessing regression and classification models</article-title>. <source>J Cheminform</source> <volume>6</volume>, <fpage>10</fpage> (<year>2014</year>).</mixed-citation></ref>
+<ref id="c23"><label>23.</label><mixed-citation publication-type="journal"><string-name><given-names>C.</given-names> <surname>Ambroise</surname></string-name>, <string-name><given-names>G. J.</given-names> <surname>McLachlan</surname></string-name>, <article-title>Selection bias in gene extraction on the basis of microarray gene-expression data</article-title>. <source>Proc Natl Acad Sci U S A</source> <volume>99</volume>, <fpage>6562</fpage>&#x2013;<lpage>6566</lpage> (<year>2002</year>).</mixed-citation></ref>
+<ref id="c24"><label>24.</label><mixed-citation publication-type="other"><string-name><surname>Overmyer</surname> <given-names>KA</given-names></string-name>, <string-name><surname>Shishkova</surname> <given-names>E</given-names></string-name>, <string-name><surname>Miller</surname> <given-names>IJ</given-names></string-name>, <string-name><surname>Balnis</surname> <given-names>J</given-names></string-name>, <string-name><surname>Bernstein</surname> <given-names>MN</given-names></string-name>, <string-name><surname>Peters-Clarke</surname> <given-names>TM</given-names></string-name>, <string-name><surname>Meyer</surname> <given-names>JG</given-names></string-name>, <string-name><surname>Quan</surname> <given-names>Q</given-names></string-name>, <string-name><surname>Muehlbauer</surname> <given-names>LK</given-names></string-name>, <string-name><surname>Trujillo</surname> <given-names>EA</given-names></string-name>, <string-name><surname>He</surname> <given-names>Y.</given-names></string-name> <article-title>Large-scale multi-omic analysis of COVID-19 severity</article-title>. <source>Cell systems</source>. <year>2020</year> <month>Oct</month> 8.</mixed-citation></ref>
+<ref id="c25"><label>25.</label><mixed-citation publication-type="journal"><string-name><given-names>R.</given-names> <surname>Almansa</surname></string-name> <etal>et al.</etal>, <article-title>Critical COPD respiratory illness is linked to increased transcriptomic activity of neutrophil proteases genes</article-title>. <source>BMC Res Notes</source> <volume>5</volume>, <fpage>401</fpage> (<year>2012</year>).</mixed-citation></ref>
+<ref id="c26"><label>26.</label><mixed-citation publication-type="journal"><string-name><given-names>R.</given-names> <surname>Almansa</surname></string-name> <etal>et al.</etal>, <article-title>Transcriptomic correlates of organ failure extent in sepsis</article-title>. <source>J Infect</source> <volume>70</volume>, <fpage>445</fpage>&#x2013;<lpage>456</lpage> (<year>2015</year>).</mixed-citation></ref>
+<ref id="c27"><label>27.</label><mixed-citation publication-type="journal"><string-name><given-names>C. A.</given-names> <surname>van de Weg</surname></string-name> <etal>et al.</etal>, <article-title>Time since onset of disease and individual clinical markers associate with transcriptional changes in uncomplicated dengue</article-title>. <source>PLoS Negl Trop Dis</source> <volume>9</volume>, <fpage>e0003522</fpage> (<year>2015</year>).</mixed-citation></ref>
+<ref id="c28"><label>28.</label><mixed-citation publication-type="journal"><string-name><given-names>R.</given-names> <surname>Pankla</surname></string-name> <etal>et al.</etal>, <article-title>Genomic transcriptional profiling identifies a candidate blood biomarker signature for the diagnosis of septicemic melioidosis</article-title>. <source>Genome Biol</source> <volume>10</volume>, <fpage>R127</fpage> (<year>2009</year>).</mixed-citation></ref>
+<ref id="c29"><label>29.</label><mixed-citation publication-type="journal"><string-name><given-names>J. F.</given-names> <surname>Bermejo-Martin</surname></string-name> <etal>et al.</etal>, <article-title>Host adaptive immunity deficiency in severe pandemic influenza</article-title>. <source>Crit Care</source> <volume>14</volume>, <fpage>R167</fpage> (<year>2010</year>).</mixed-citation></ref>
+<ref id="c30"><label>30.</label><mixed-citation publication-type="journal"><string-name><given-names>M. P.</given-names> <surname>Berry</surname></string-name> <etal>et al.</etal>, <article-title>An interferon-inducible neutrophil-driven blood transcriptional signature in human tuberculosis</article-title>. <source>Nature</source> <volume>466</volume>, <fpage>973</fpage>&#x2013;<lpage>977</lpage> (<year>2010</year>).</mixed-citation></ref>
+<ref id="c31"><label>31.</label><mixed-citation publication-type="journal"><string-name><given-names>J. E.</given-names> <surname>Berdal</surname></string-name> <etal>et al.</etal>, <article-title>Excessive innate immune response and mutant D222G/N in severe A (H1N1) pandemic influenza</article-title>. <source>J Infect</source> <volume>63</volume>, <fpage>308</fpage>&#x2013;<lpage>316</lpage> (<year>2011</year>).</mixed-citation></ref>
+<ref id="c32"><label>32.</label><mixed-citation publication-type="journal"><string-name><given-names>T.</given-names> <surname>Dolinay</surname></string-name> <etal>et al.</etal>, <article-title>Inflammasome-regulated cytokines are critical mediators of acute lung injury</article-title>. <source>Am J Respir Crit Care Med</source> <volume>185</volume>, <fpage>1225</fpage>&#x2013;<lpage>1234</lpage> (<year>2012</year>).</mixed-citation></ref>
+<ref id="c33"><label>33.</label><mixed-citation publication-type="journal"><string-name><given-names>G. P.</given-names> <surname>Parnell</surname></string-name> <etal>et al.</etal>, <article-title>A distinct influenza infection signature in the blood transcriptome of patients with severe community-acquired pneumonia</article-title>. <source>Crit Care</source> <volume>16</volume>, <fpage>R157</fpage> (<year>2012</year>).</mixed-citation></ref>
+<ref id="c34"><label>34.</label><mixed-citation publication-type="journal"><string-name><given-names>G. P.</given-names> <surname>Parnell</surname></string-name> <etal>et al.</etal>, <article-title>Identifying key regulatory genes in the whole blood of septic patients to monitor underlying immune dysfunctions</article-title>. <source>Shock</source> <volume>40</volume>, <fpage>166</fpage>&#x2013;<lpage>174</lpage> (<year>2013</year>).</mixed-citation></ref>
+<ref id="c35"><label>35.</label><mixed-citation publication-type="journal"><string-name><given-names>M.</given-names> <surname>Kwissa</surname></string-name> <etal>et al.</etal>, <article-title>Dengue virus infection induces expansion of a CD14(&#x002B;)CD16(&#x002B;) monocyte population that stimulates plasmablast differentiation</article-title>. <source>Cell Host Microbe</source> <volume>16</volume>, <fpage>115</fpage>&#x2013;<lpage>127</lpage> (<year>2014</year>).</mixed-citation></ref>
+<ref id="c36"><label>36.</label><mixed-citation publication-type="journal"><string-name><given-names>N. M.</given-names> <surname>Suarez</surname></string-name> <etal>et al.</etal>, <article-title>Superiority of transcriptional profiling over procalcitonin for distinguishing bacterial from viral lower respiratory tract infections in hospitalized adults</article-title>. <source>J Infect Dis</source> <volume>212</volume>, <fpage>213</fpage>&#x2013;<lpage>222</lpage> (<year>2015</year>).</mixed-citation></ref>
+<ref id="c37"><label>37.</label><mixed-citation publication-type="journal"><string-name><given-names>B. P.</given-names> <surname>Scicluna</surname></string-name> <etal>et al.</etal>, <article-title>A molecular biomarker to diagnose community-acquired pneumonia on intensive care unit admission</article-title>. <source>Am J Respir Crit Care Med</source> <volume>192</volume>, <fpage>826</fpage>&#x2013;<lpage>835</lpage> (<year>2015</year>).</mixed-citation></ref>
+<ref id="c38"><label>38.</label><mixed-citation publication-type="journal"><string-name><given-names>Y.</given-names> <surname>Zhai</surname></string-name> <etal>et al.</etal>, <article-title>Host Transcriptional Response to Influenza and Other Acute Respiratory Viral Infections-A Prospective Cohort Study</article-title>. <source>PLoS Pathog</source> <volume>11</volume>, <fpage>e1004869</fpage> (<year>2015</year>).</mixed-citation></ref>
+<ref id="c39"><label>39.</label><mixed-citation publication-type="journal"><string-name><given-names>B. M.</given-names> <surname>Tang</surname></string-name> <etal>et al.</etal>, <article-title>A novel immune biomarker</article-title>. <source>Eur Respir J</source> <volume>49</volume>, (<year>2017</year>).</mixed-citation></ref>
+<ref id="c40"><label>40.</label><mixed-citation publication-type="journal"><string-name><given-names>F.</given-names> <surname>Venet</surname></string-name> <etal>et al.</etal>, <article-title>Modulation of LILRB2 protein and mRNA expressions in septic shock patients and after ex vivo lipopolysaccharide stimulation</article-title>. <source>Hum Immunol</source> <volume>78</volume>, <fpage>441</fpage>&#x2013;<lpage>450</lpage> (<year>2017</year>).</mixed-citation></ref>
+<ref id="c41"><label>41.</label><mixed-citation publication-type="journal"><string-name><given-names>R.D.</given-names> <surname>Riley</surname></string-name>, <string-name><given-names>J.</given-names> <surname>Ensor</surname></string-name>, <string-name><given-names>K.I.</given-names> <surname>Snell</surname></string-name>, <string-name><given-names>F.E.</given-names> <surname>Harrell</surname></string-name>, <string-name><given-names>G.P</given-names> <surname>Martin</surname></string-name>, <string-name><given-names>J.B.</given-names> <surname>Reitsma</surname></string-name>, <string-name><given-names>K.G.</given-names> <surname>Moons</surname></string-name>, <string-name><given-names>G.</given-names> <surname>Collins</surname></string-name>, <string-name><given-names>M.</given-names> <surname>van Smeden</surname></string-name>. <article-title>Calculating the sample size required for developing a clinical prediction model</article-title>. <source>Bmj</source>, <volume>368</volume> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c42"><label>42.</label><mixed-citation publication-type="other"><string-name><given-names>T. E.</given-names> <surname>Sweeney</surname></string-name>, <string-name><given-names>W. A.</given-names> <surname>Haynes</surname></string-name>, <string-name><given-names>F.</given-names> <surname>Vallania</surname></string-name>, <string-name><given-names>J. P.</given-names> <surname>Ioannidis</surname></string-name>, <string-name><given-names>P.</given-names> <surname>Khatri</surname></string-name>, <article-title>Methods to increase reproducibility in differential gene expression via meta-analysis</article-title>. <source>Nucleic Acids Res</source> (<year>2016</year>).</mixed-citation></ref>
+<ref id="c43"><label>43.</label><mixed-citation publication-type="journal"><string-name><given-names>W. A.</given-names> <surname>Haynes</surname></string-name> <etal>et al.</etal>, <article-title>Empowering Multi-Cohort Gene Expression Analysis to Increase Reproducibility</article-title>. <source>Pac Symp Biocomput</source> <volume>22</volume>, <fpage>144</fpage>&#x2013;<lpage>153</lpage> (<year>2017</year>).</mixed-citation></ref>
+<ref id="c44"><label>44.</label><mixed-citation publication-type="journal"><string-name><given-names>F.</given-names> <surname>Vallania</surname></string-name> <etal>et al.</etal>, <article-title>Leveraging heterogeneity across multiple datasets increases cell-mixture deconvolution accuracy and reduces biological and technical biases</article-title>. <source>Nat Commun</source> <volume>9</volume>, <fpage>1</fpage>&#x2013;<lpage>8</lpage> (<year>2018</year>).</mixed-citation></ref>
+<ref id="c45"><label>45.</label><mixed-citation publication-type="journal"><string-name><given-names>M.</given-names> <surname>Robinson</surname></string-name> <etal>et al.</etal>, <article-title>A 20-Gene Set Predictive of Progression to Severe Dengue</article-title>. <source>Cell Rep</source> <volume>26</volume>, <fpage>1104</fpage>-<lpage>1111.e1104</lpage> (<year>2019</year>).</mixed-citation></ref>
+<ref id="c46"><label>46.</label><mixed-citation publication-type="journal"><string-name><given-names>E. J.</given-names> <surname>Giamarellos-Bourboulis</surname></string-name> <etal>et al.</etal>, <article-title>Complex Immune Dysregulation in COVID-19 Patients with Severe Respiratory Failure</article-title>. <source>Cell Host &#x0026; Microbe</source> <volume>27</volume>, <fpage>992</fpage>&#x2013;<lpage>1000</lpage> (<year>2020</year>).</mixed-citation></ref>
+</ref-list>
+</back>
+</article>

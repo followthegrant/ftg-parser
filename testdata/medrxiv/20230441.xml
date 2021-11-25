@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.2d1 20170631//EN" "JATS-archivearticle1.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" article-type="article" dtd-version="1.2d1" specific-use="production" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="publisher-id">MEDRXIV</journal-id>
+<journal-title-group>
+<journal-title>medRxiv</journal-title>
+<abbrev-journal-title abbrev-type="publisher">medRxiv</abbrev-journal-title>
+</journal-title-group>
+<publisher>
+<publisher-name>Cold Spring Harbor Laboratory</publisher-name>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1101/2020.11.12.20230441</article-id>
+<article-version>1.4</article-version>
+<article-categories>
+<subj-group subj-group-type="hwp-journal-coll">
+<subject>Intensive Care and Critical Care Medicine</subject>
+</subj-group>
+</article-categories>
+<title-group>
+<article-title>Early Prediction of Hemodynamic Shock in the Intensive Care Units with Deep Learning on Thermal Videos</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author">
+<name><surname>Vats</surname><given-names>Vanshika</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="author-notes" rid="n1">&#x00A7;</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Nagori</surname><given-names>Aditya</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a2">2</xref>
+<xref ref-type="aff" rid="a3">3</xref>
+<xref ref-type="author-notes" rid="n1">&#x00A7;</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Singh</surname><given-names>Pradeep</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="author-notes" rid="n1">&#x00A7;</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Dutt</surname><given-names>Raman</given-names></name>
+<xref ref-type="aff" rid="a4">4</xref>
+<xref ref-type="author-notes" rid="n2">&#x0023;</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Bandhey</surname><given-names>Harsh</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="author-notes" rid="n2">&#x0023;</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Wason</surname><given-names>Mahika</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="author-notes" rid="n2">&#x0023;</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Lodha</surname><given-names>Rakesh</given-names></name>
+<xref ref-type="aff" rid="a5">5</xref>
+</contrib>
+<contrib contrib-type="author" corresp="yes">
+<name><surname>Sethi</surname><given-names>Tavpritesh</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a5">5</xref>
+<xref ref-type="corresp" rid="cor1">&#x002A;</xref>
+</contrib>
+<aff id="a1"><label>1</label><institution>Indraprastha Institute of Information Technology</institution>, Delhi-110020, <country>India</country></aff>
+<aff id="a2"><label>2</label><institution>CSIR-Institute of Genomics and Integrative Biology</institution>, New Delhi-110007, <country>India</country></aff>
+<aff id="a3"><label>3</label><institution>Academy of Scientific and Innovative Research (AcSIR)</institution>, Ghaziabad, 201002, <country>India</country></aff>
+<aff id="a4"><label>4</label><institution>Shiv Nadar University</institution>, Tehsil Dadri, Greater Noida, Uttar Pradesh-201314</aff>
+<aff id="a5"><label>5</label><institution>All India Institute of Medical Sciences, Department of Pediatrics</institution>, New Delhi-110029, <country>India</country></aff>
+</contrib-group>
+<author-notes>
+<corresp id="cor1"><label>&#x002A;</label>Corresponding Author email: <email>tavpriteshsethi@iiitd.ac.in</email></corresp>
+<fn id="n1" fn-type="others"><label>&#x00A7;</label><p>Joint First Author</p></fn>
+<fn id="n2" fn-type="equal"><label>&#x0023;</label><p>Equal Contribution</p></fn>
+</author-notes>
+<pub-date pub-type="epub">
+<year>2021</year>
+</pub-date>
+<elocation-id>2020.11.12.20230441</elocation-id>
+<history>
+<date date-type="received">
+<day>12</day>
+<month>11</month>
+<year>2020</year>
+</date>
+<date date-type="rev-recd">
+<day>10</day>
+<month>7</month>
+<year>2021</year>
+</date>
+<date date-type="accepted">
+<day>10</day>
+<month>7</month>
+<year>2021</year>
+</date>
+</history>
+<permissions>
+<copyright-statement>&#x00A9; 2021, Posted by Cold Spring Harbor Laboratory</copyright-statement>
+<copyright-year>2021</copyright-year>
+<license license-type="creative-commons" xlink:href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><license-p>This pre-print is available under a Creative Commons License (Attribution-NonCommercial-NoDerivs 4.0 International), CC BY-NC-ND 4.0, as described at <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by-nc-nd/4.0/">http://creativecommons.org/licenses/by-nc-nd/4.0/</ext-link></license-p></license>
+</permissions>
+<self-uri xlink:href="20230441.pdf" content-type="pdf" xlink:role="full-text"/>
+<abstract>
+<title>Abstract</title>
+<p>Shock is one of the major killers in Intensive Care Units and early interventions can potentially reverse it. In this study, we advance a non-contact thermal imaging modality to continuous monitoring of hemodynamic shock working on 103,936 frames from 406 videos recorded longitudinally upon 22 patients. Deep learning was used to preprocess and extract the Center-to-Peripheral Difference (CPD) in temperature values from the videos. This time-series data along with heart rate was finally analyzed using Long-Short Term Memory models to predict the shock status up to the next 6 hours. Our models achieved the best area under the receiver operating characteristics curve of 0.81 &#x00B1; 0.06 and area under the precision-recall curve of 0.78 &#x00B1; 0.05 at 5 hours, providing sufficient time to stabilize the patient. Our approach, thus, provides a reliable shock prediction using an automated decision pipeline, that can provide better care and save lives.</p>
+</abstract>
+<counts>
+<page-count count="18"/>
+</counts>
+</article-meta>
+<notes>
+<notes notes-type="competing-interest-statement">
+<title>Competing Interest Statement</title><p>The authors have declared no competing interest.</p></notes>
+<notes notes-type="financial-disclosure">
+<title>Funding Statement</title><p>Wellcome Trust/DBT India Alliance Fellowship IA/CPHE/14/1/501504 awarded to Tavpritesh Sethi
+</p></notes>
+<notes notes-type="disclosures">
+<title>Author Declarations</title><p>I confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.</p><p>Yes</p><p>The details of the IRB/oversight body that provided approval or exemption for the research described are given below:</p><p>The Ethics committee of the medical institute granted consent (Ref. No. IEC/NP-211/08.05.2015, AA-2/09.02.2017)</p><p>All necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived.</p><p>Yes</p><p>I understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).</p><p>Yes</p><p> I have followed all appropriate research reporting guidelines and uploaded the relevant EQUATOR Network research reporting checklist(s) and other pertinent material as supplementary files, if applicable.</p><p>Yes</p></notes>
+<fn-group content-type="summary-of-updates">
+<title>Summary of Updates:</title>
+<fn fn-type="update"><p>Language</p></fn>
+</fn-group>
+</notes>
+</front>
+<body>
+<sec id="s1">
+<title>Introduction</title>
+<p>Hemodynamic shock is an acute and initially reversible condition that can act as an early signal to future-end organ failure[<xref ref-type="bibr" rid="c1">1</xref>]. It manifests due to inadequate blood perfusion than what is essentially required. Such a condition could cause tissue malfunction leading to rapid organ deterioration which can eventually result in death. The mortality rate due to delay in detection and treatment of such shock is as high as 34&#x0025; in the ICU patients admitted in developing countries[<xref ref-type="bibr" rid="c2">2</xref>]. Thus, proactive monitoring and therapy of hemodynamic shock can prevent the risk of impending organ failure and mortality[<xref ref-type="bibr" rid="c3">3</xref>],[<xref ref-type="bibr" rid="c4">4</xref>],[<xref ref-type="bibr" rid="c5">5</xref>]. However, a delayed or insufficient monitoring can increase the risk of hemodynamic shock. Modern ICUs are equipped with a large number of sensors that generate humongous amounts of data besides a large number of clinical investigations. ICU clinicians and nursing staff are exposed to this large quantity of data on a real-time basis. The overall burnout can go as high as 80.5&#x0025; which can contribute to delayed or insufficient care[<xref ref-type="bibr" rid="c6">6</xref>]. Moreover, the resource-limiting areas have a higher risk of shock ignorance mainly due to a lack of technological advancement and a low doctor-to-patient ratio[<xref ref-type="bibr" rid="c7">7</xref>]. Most of the methods dealing with the shock in current times are invasive or require repeated contact, making the patient prone to hospital-acquired infections. The non-invasive ways such as Non-Invasive Blood Pressure monitoring and Ultrasonography are not continuous but require contact with the delicate skin of infants which are infection-prone too[<xref ref-type="bibr" rid="c8">8</xref>]. Thus, the use of artificial intelligence (AI) and frugal open-source technologies such as low-cost non-contact thermal monitoring can be effective for shock management.</p>
+<p>We have created a body thermal imaging data cohort for the pediatric population under the SafeICU initiative which warehouses 1.5 million hours of physiological vitals data, laboratory investigation, treatment charts, doctors and nurse investigation charts[<xref ref-type="bibr" rid="c9">9</xref>]. We have used these data to build an automated hemodynamic monitoring and prediction of future onset of hemodynamic instability pipeline. The most recent minimally invasive way to get sufficient data is to work on the thermal images[<xref ref-type="bibr" rid="c9">9</xref>]. Thermal image data is now increasingly being used in medical literature for breast cancer detection[<xref ref-type="bibr" rid="c10">10</xref>], and even diabetes mellitus (type 1) detection[<xref ref-type="bibr" rid="c11">11</xref>]. Thermography of the skin surfaces is also being used for preliminary hypertension assessment[<xref ref-type="bibr" rid="c12">12</xref>]. The studies have found out that the possibility of shock can be determined using the temperature difference observed between the abdomen and foot of the patient, i.e. Centre-to-Peripheral Difference (CPD)[<xref ref-type="bibr" rid="c13">13</xref>],[<xref ref-type="bibr" rid="c14">14</xref>]. The feature has been exploited along with some vitals and the use of machine learning methods such as Histogram of Oriented Gradients features with Random Forest classifier for detection and prediction of shock with a single snapshot of an image at a time point[<xref ref-type="bibr" rid="c15">15</xref>]. But a single instance might not be able to give robust results because of limited information. Plus, using the handcrafted features for machine learning algorithms might cost us time. To expand upon the work, we aim to reduce the manual tasks performed to calculate the features using deep learning methods and work on the continuous time-series data, improving the efficacy of detection and prediction.</p>
+<p>In this work, we developed a future risk prediction model (see <xref rid="fig1" ref-type="fig">Figure 1</xref>) using continuously streamed videos of body infrared patterns and state-of-the-art Computer Vision (CV) and Deep-Learning (DL) techniques. We carried out thermal monitoring as a part of the SafeICU warehouse. We constructed an automated CPD extraction pipeline by body part segmentation on thermal videos using deep-learning models. Each time-point was labeled for shock and non-shock using age-specific shock-index[<xref ref-type="bibr" rid="c16">16</xref>]. Time-series data of the extracted CPD signals, combined with heart-rate and the labels were pre-processed to case-control cohort design. We constructed cohorts at 0 hour for detection and 1-6 hour lead-time for prediction tasks. We then used multivariate Long Short Term Memory (LSTM)[<xref ref-type="bibr" rid="c17">17</xref>] models to detect and predict the future onset of the shock. We finally evaluated the performance metrics of the models using a 10 fold cross-validation method. Thus, the aim of our work was to build an automated, minimal contact pipeline for proactive hemodynamic monitoring. Automated detection &#x0026; prediction will help prevent the adverse outcomes related to hemodynamic instability. Hence, the impact this problem creates and the scope of extending the solution make this study worthwhile in saving the lives of many.</p>
+<fig id="fig1" position="float" fig-type="figure">
+<label>Figure 1:</label>
+<caption><title>Shock Prediction Steps.</title>
+<p>The summary of the shock pipeline shows the steps from video frame extraction to shock prediction. Step 1 comprises sampling videos to extract frames. Step 2 classifies frames into covered or uncovered, while also finding the presence of multiple people in the frame and mask them, to avoid confusion. The masked images are then input to the ResUNet based segmentation model and CPD is hence extracted. The series of CPDs are then passed through a time series sequence classifier and finally, the predictions are made for shock for the next 6 hours.</p></caption>
+<graphic xlink:href="20230441v4_fig1.tif"/>
+</fig>
+</sec>
+<sec id="s2">
+<title>Results</title>
+<sec id="s2a">
+<title>Patient Characteristics, pre-processing and cohort building</title>
+<p>Statistical Inferences of the cohort characteristics between the shock and non-shock groups are depicted in <xref rid="tbl1" ref-type="table">Table I</xref>. Shock and Non-shock conditions were derived using the Age-specific shock index cut-off values. It can be observed that the most significant difference between the two categories is in the heart rate, as expected, along with the respiratory rate. We obtained a median length of stay of 6.808 days with a total of 132 shock instances and 274 non-shock instances. A total of 130 infants and children (male, female), aged between 0.2-204 months, who were admitted and had the arterial line recordings were considered in this study. A total of 76 (of 52 patients) out of 181 thermal videos recorded through Android Smartphone attached Seek Thermal&#x00AE; camera were considered for analysis after screening for quality and concomitant vitals measurements. Out of these, 44 thermal videos from 30 children (male, female) were chosen based on the availability of their abdomen and feet uncovered. 16 out of 44 videos were of a duration of 1 min or less. Since the project looks at long windows of longitudinal data, only 26 long videos (2&#x002B; hours; 7200s or more), with their vitals present, remain consisting of 22 unique patients.</p>
+<table-wrap id="tbl1" orientation="portrait" position="float">
+<label>Table 1.</label>
+<caption><p>Cohort characteristics and statistical significance of control (non-shock) vs affected (shock) classes. The p-values were calculated using either Wilcoxon rank-sum test (W) or Student&#x2019;s t-test (t) after testing for normality by the D&#x2019;Agostino-Pearson normality test. (n - Number of sequences, IQR - Interquartile Range)</p></caption>
+<graphic xlink:href="20230441v4_tbl1.tif"/>
+</table-wrap>
+</sec>
+<sec id="s2b">
+<title>Segmentation of abdomen and feet achieved a total dice loss of 0.0391 using ResUNet</title>
+<p>Since thermal images lack texture, it is important for the model to recognise the structural shape features. ResUNet was specifically used to make the task possible on relatively less available thermal data, and to capture both the local and global information from the image. A dice loss of 0.0391 (Dice coefficient = 0.9609) with a Binary Cross Entropy loss of 0.0692 was achieved for segmenting out abdomen, feet, and the background. The mode intensities of the segmented areas were then used to find out the Central-to-Peripheral Difference and hence build the longitudinal models from continuous long-duration videos. The results are showcased in Supplementary Table S1.</p>
+</sec>
+<sec id="s2c">
+<title>The LSTM model was found to be the best performing</title>
+<p>We compared three models to finally arrive at the best performing one. Linear-Mixed Effects[<xref ref-type="bibr" rid="c18">18</xref>], Random Forest[<xref ref-type="bibr" rid="c19">19</xref>], and LSTM[<xref ref-type="bibr" rid="c17">17</xref>] were tested at various time points from the observation taken. Based on various metric evaluations, LSTM was found out to be the best performing on our given time series data, and hence was chosen as the primary choice for our study. The F1 score comparison of the three models is shown in <xref rid="fig2" ref-type="fig">Figure 2</xref>, and the rest of the evaluations are shown in the Supplementary Fig. 1.</p>
+<fig id="fig2" position="float" fig-type="figure">
+<label>Figure 2:</label>
+<caption><title>Quality Assessment of Models.</title>
+<p>The F1 score comparison for the three models (i.e. Linear Mixed-Effects model, Random Forest, and LSTM) tested on (a) CPD &#x0026; heart rate, and (b) CPD parameter only. It can be observed that the LSTM model outperforms the other two models in both cases, making it the primary choice of this research. The rest of the comparison plots are depicted in the Supplementary Fig. 1.</p></caption>
+<graphic xlink:href="20230441v4_fig2.tif"/>
+</fig>
+</sec>
+<sec id="s2d">
+<title>Evaluation of the LSTM model at different lead time reveals that CPD increases the model performance</title>
+<p>The SAFE-ICU resources allowed us to match the time sequences with their corresponding states of shock/non-shock for the next 6 hours since the observation was taken. We tested the LSTM model performance for 1 to 6 hours of lead time on CPD and heart rate as shown in <xref rid="tbl2" ref-type="table">Table 2</xref>. As shown in <xref rid="fig3" ref-type="fig">Figure 3</xref>, we got the best performance at AUROC 0.81 &#x00B1; 0.06 and AUPRC of 0.78 &#x00B1; 0.05 at 5 hours. This gives a good time window to alert the medical practitioners to start the therapy for preventing the advent of shock.</p>
+<table-wrap id="tbl2" orientation="portrait" position="float">
+<label>Table 2.</label>
+<caption><p>Performance of the proposed model predicting the presence of Shock/Non-shock using automated CPD and HR. The Time Pt. column depicts the subsequent hours from the time of taking the observation, at which the results were recorded. The unequal number of shock and non-shock sequences is due to the absence of patient data with the increasing number of hours. (S/NS - Number of Shock/Non-Shock sequences present, AUPRC - Area Under Precision Recall Curve, AUROC - Area Under Receiver Operating Characteristics, PPV - Positive predictive value, NPV - Negative predictive value, D - Detection, P - Prediction)</p></caption>
+<graphic xlink:href="20230441v4_tbl2.tif"/>
+</table-wrap>
+<fig id="fig3" position="float" fig-type="figure">
+<label>Figure 3:</label>
+<caption><title>Quality Evaluation on LSTM model.</title>
+<p>(a) Quality evaluation of the LSTM time series classification models at lead points of up to 6 hours. The best performance of (b) AUPRC and (c) AUROC was obtained at a 5-hour prediction. The rest of the performance metric results are demonstrated in the Supplementary Fig. 2. The results of all are shown in <xref rid="tbl2" ref-type="table">Table 2</xref>. The Standard Error (SE) for each is calculated from cross-validation, by taking k=10.</p></caption>
+<graphic xlink:href="20230441v4_fig3.tif"/>
+</fig>
+</sec>
+</sec>
+<sec id="s3">
+<title>Discussion</title>
+<p>The study presents a computer vision and deep learning based continuous and non-contact shock detection and prediction model which leverages Center-to-Peripheral Difference (CPD) as one of its main parameters. Since hemodynamic shock can lead to organ failure and eventually to death in the ICU, its prediction on time can save lives. Care needs to be taken to evaluate the parameters in a non-invasive way such as not to cause the infections by the contact. Since the field of thermal image inspection has only started to be explored, it can thus be leveraged, along with some non-invasively monitored vital parameters, for a prediction of shock. The use of deep learning methods proves to be really beneficial in reducing manual preprocessing and increasing the accuracy of the methods.</p>
+<p>In this study, we have extended our previous work on hemodynamic shock prediction with longitudinal continuous monitoring of body thermal patterns which are previously found to be predictive for future shock prediction[<xref ref-type="bibr" rid="c15">15</xref>]. The longitudinal monitoring of temperature gradient opens up a rich source of information about patients&#x2019; physiology. The underlying stochastic patterns can have a discriminative value for future hemodynamic shock risk. We leveraged these reasonings to extract the center to peripheral intensity difference from the thermal images in a time-series fashion. We do so by applying our data-specific trained screening filters for covered and uncovered patient detection models, multiple person detection models, which are followed by segmenting the body parts into abdomen and foot using artificial intelligence based models called Res-UNet. The extracted CPD (see <xref rid="fig4" ref-type="fig">Figure 4</xref>) time-series along with vitals time-series were used to predict the future (1-6 hr) hemodynamic shock using sequence models called Long-Short Term Memory (LSTM). This model was also compared with Random Forest and Linear Mixed-Effects models, known for working with longitudinal data. It was observed that the LSTM model outperformed the other two. We also trained and checked the performance of models that can classify the length of video and images for future risk of hemodynamic shock. The class of algorithms in deep learning called convolutional neural networks (CNNs) which have shown state-of-the-art performance for image classification was used for the task. However, we found the domain features such as CPD, performed better than the classification based direct image and video classification for future risk of shock. Even after many experiments performed for a direct classification of images using the concepts of TV Chambolle[<xref ref-type="bibr" rid="c20">20</xref>] denoising, data augmentation, and undersampling/ oversampling, we were able to get the best AUROC of only 0.60 for shock detection using ResNet-50[<xref ref-type="bibr" rid="c21">21</xref>]. This can be because of the cluttered background with diapers and tubes, and an increased region of interest for the information extraction from a limited variety of images. This also tells the importance of the domain-specific features over automated CNN based approaches. We built the models for multiple time-points till 6 hours which showed the best performance at a lead time of 5 hours. The metric AUPRC and F1 score are the most significant for an imbalanced dataset such as ours as it doesn&#x2019;t get biased by the presence of true negatives and thus gives a clearer perspective of a classifier&#x2019;s utility. The results till 6 hours show a promising window with a good prediction rate which can prove to be helpful for the doctors to help find a buffer time prior to the shock event and therefore start the treatment.</p>
+<fig id="fig4" position="float" fig-type="figure">
+<label>Figure 4:</label>
+<caption><title>Shock Prediction Pipeline.</title>
+<p>Illustration of the pipeline followed for the detection and prediction of shock and no-shock. Each frame of the video was examined for uncovered/covered. The uncovered frames were then filtered off the presence of people other than the patient present in the frame. The frame was finally passed from the segmentation and CPD extraction model, further collecting the sequences used for LSTM time series classification. The time sequences had CPD and heart rate as features and an appropriate window length of 256s was chosen. Since the data was highly imbalanced, SMOTE upsampling method was used in training the LSTM model. The detection and prediction of shock were done at 0 hour and for the next 6 hours respectively.</p></caption>
+<graphic xlink:href="20230441v4_fig4.tif"/>
+</fig>
+<p>The limitations of our method arise during the quality data procurement. Monitoring thermal patterns could be hard at times when the patient is being covered or being operated on; caregivers can also block the recordings. But, these issues can be resolved by keeping &#x223C;4.3 minutes of uncovered slots for monitoring. Nevertheless, we have built an AI system that is efficient enough to identify the covered and uncovered images, and can remove the caregiver or person other than the patient. Thus, our system is able to extract the thermal patterns efficiently. Even though using CPD as a co-acting parameter eliminates the use of invasive arterial monitoring and cuff-based blood pressure monitors which can cause infections due to the repeated use on multiple patients. Our models only require as minimal as &#x223C;4.3 minutes of thermal recordings which do not recognise or identify an individual&#x2019;s identity, hence is safe for patient privacy and does not take much time away from the time assigned for care. Our methods can be extended beyond the intensive care settings, i.e. to help in the community based monitoring by the developing countries&#x2019; rural healthcare workers, such as the Accredited Social Health Activist (ASHA), run by the women promoting accessible healthcare in rural Indian settings. This can be made possible by training them to use a specifically designed frugal mobile app for thermal shock detection and prediction, which can work with readily available Android/iOS smartphones, with only model weights preinstalled. The results can be made more robust by expanding the dataset by including more number of patients in the study. Also the dataset can be made varied and generalised by including observations from multiple other clinical sites. Nevertheless, the study performed illustrates a great non-invasive and minimal feature architecture that promises to be a life-saver by informing the clinicians about shock well in advance.</p>
+</sec>
+<sec id="s4">
+<title>Methods</title>
+<sec id="s4a">
+<title>Data collection and study design</title>
+<list list-type="bullet">
+<list-item><p><bold>SafeICU Framework:</bold> All the data reported in this research was collected from the Paediatric ICU of AIIMS, New Delhi, a tertiary care hospital in India. There were 8 beds including neonatal beds in the Paediatric ICU. We set up our servers to collect the real-time physiological vitals periodic data. We also warehoused laboratory investigations, daily doctors&#x2019;, nurses&#x2019; notes, treatment charts, and thermal imaging.</p></list-item>
+<list-item><p><bold>Ethical Approval and Patient Consent:</bold> The study was carried out with the approval of the Pediatric Intensive Care Unit of All India Institute of Medical Sciences, New Delhi, India. Since thermal images only capture infrared radiation, these don&#x2019;t reveal patient identity and the study did not involve any contact or change in routine patient care. Hence a waiver of consent was sought and granted by the Institute Ethics Committee (Ref. No. IEC/NP-211/08.05.2015, AA-2/09.02.2017). All experiments were performed in accordance with relevant guidelines and regulations as approved by the ethics committee.</p></list-item>
+<list-item><p><bold>Vital records from multi-parameter monitoring:</bold> For monitoring the patients, Paediatric ICUs are equipped with Mindray TM monitors. We installed a dedicated server for querying and storing the vitals streaming data from Central Monitoring Station (CMS). Client socket programming with respect to the device protocols was used. In-house software was written for Health Level 7 (HL7) Standards[<xref ref-type="bibr" rid="c22">22</xref>] based querying of the CMS. These vital data were received at the resolution of 15 seconds for unsolicited data and 1 second for the real-time data. To receive streaming data, 64&#x002A;1024 bytes of character array was used as a buffer. Pipe delimited text file was generated every day at 00:00 hour. Software code was written in such a way that it automatically logs the data into a text file on a daily basis. These high-resolution vital data have been warehoused for all the ICU patients starting from February 2016 to May 2020.</p></list-item>
+<list-item><p><bold>Cohort based on Binary shock index:</bold> The SAFE-ICU described earlier has warehoused over 1.5 million patient-hours of monitoring data from the PICU. It is used to extract time-stamped vital data for the patients at 0-6 hour heart rate and blood pressure recordings. Shock index was calculated as the ratio of median heart rate and median non-invasive blood pressure or the arterial systolic blood pressure. This was calculated over the median of moving sequential windows of 30 data points at a resolution of 15s. Shock-Index Paediatric Age-Adjusted (SIPA) is used to compute shock/no-shock age-specific binarized outcome for each patient [<xref ref-type="bibr" rid="c16">16</xref>].</p></list-item>
+<list-item><p><bold>Thermal Imaging:</bold> Standard thermal video capturing and operating procedures were followed, in order to ensure minimal disturbances by the extraneous factors, say, patient positioning, device handling etc. (Supplementary Methods S1). Thermal cameras only capture infrared radiation, so as to make sure that study does not reveal the patient&#x2019;s identity. The camera was placed properly and at a good distance from the patient so that there was no direct contact involved nor any change in patient routine care. The thermal videos were captured in a standard color-scale guaranteeing that the full body of infants was visible. Thermal videos of every single patient were collected through an Android Smartphone attached Seek Thermal&#x00AE; camera at different time points on different days. Thus each patient possibly has different values for shock-status, which in turn eliminates bias due to the patient&#x2019;s propensity characteristics, say gender, age, etc. Vital data with respect to the time-stamp of the videos were extracted from the data warehouse at 15s intervals (SAFE ICU)[<xref ref-type="bibr" rid="c9">9</xref>]. A comparison was made between the shock and non-shock groups using either Wilcoxon rank-sum test or two-tailed Student&#x2019;s t-test, after testing for normality by D&#x2019;Agostino-Pearson normality test using GraphPad Prism version 6.00, GraphPad Software, La Jolla California USA, <ext-link ext-link-type="uri" xlink:href="http://www.graphpad.com">www.graphpad.com</ext-link>.</p></list-item>
+</list>
+</sec>
+<sec id="s4b">
+<title>Classification into Covered and Uncovered</title>
+<p>The patients in ICU are kept under observation for a long duration. Since it is a very critical area, the patients are kept covered by a blanket most of the time. The blankets are removed for a short period of time generally only when a nurse or a doctor comes to provide the care. To train the data, images were augmented and normalized by their mean and variance especially extracted out to suit the thermal data. A ResNet-152 architecture was trained using PyTorch[<xref ref-type="bibr" rid="c23">23</xref>] framework in Python3[<xref ref-type="bibr" rid="c24">24</xref>] to classify each frame into covered and uncovered, i.e. abdomen and feet are visible. The model was finally implemented on videos sampled at 1fps.</p>
+</sec>
+<sec id="s4c">
+<title>Multiple Person Detection</title>
+<p>In the intensive care unit, caregivers tend to provide care to the patient. The caregiver might come into the field of the camera mounted over the bed. For the CPD extraction task, there is a need to filter out the presence of this additional person, so as not to confuse the algorithm between the caregiver and the patient. A variety of images of the patient alone and along with the person/caretaker was taken and augmented. The frames could just have been discarded but a few videos in the dataset contained the presence of the caretaker throughout the duration for which they were captured. The now visible area could be further used for CPD extraction. The thermal images were manually annotated for which they were captured. The now visible area could be further used for CPD extraction. The thermal images were training the multiple person detector.</p>
+<p>We used YOLOv3[<xref ref-type="bibr" rid="c25">25</xref>] in PyTorch having DarkNet53 as its base architecture. Finally, the trained detector was evaluated for the IoU(Intersection over Union) area; the best performing detector model was used for detecting and masking the caregiver.</p>
+</sec>
+<sec id="s4d">
+<title>Segmentation and CPD Extraction from Abdomen and Feet</title>
+<p>Nagori A. et al.[<xref ref-type="bibr" rid="c15">15</xref>] proved that the probability of shock depends directly on Center-to-Peripheral Difference (CPD). For this study, the abdomen has been taken as the center and the peripheral is taken to be the foot. The images were annotated manually and pixel-wise using js-annotator-tool. The target maps contained 3 one-hot encoded layers corresponding to the abdomen, feet, and background. The input images were normalized with the mean and variance especially extracted from the distribution of the dataset in use. Appropriate image padding was done to ensure the aspect ratio of the images remains the same in case of any change in the input dimension. To account for a low dataset of pixel-wise segmented images for training, a ResUNet with ResNet-18, pre-trained on ImageNet, was used as an encoder. UNet[<xref ref-type="bibr" rid="c26">26</xref>], being specifically introduced to segment the less abundantly found medical data, helps to gather more local and global information even in the dearth of data, and thus efficiently segmenting out the images. The skip connections from the encoder to the decoder helps the model to keep the original pixels at that particular scale in consideration while recreating at the decoder and thus learning finer details efficiently. Smaller skip connections in ResNet-18 encoder helps to deal with the problem of vanishing gradients and thus make the learning more efficient[<xref ref-type="bibr" rid="c23">23</xref>]. A cutoff threshold was set on the predicted outputs to remove any weakly predicted pixels. The area detected was used as a region of interest in the original image and the mode of the detected probabilities was taken as the point of temperature extraction from the segmented out abdomen and feet. The difference was divided by the abdomen value to keep CPD robust from the thermal noise.
+<disp-formula id="ueqn1">
+<alternatives><graphic xlink:href="20230441v4_ueqn1.gif"/></alternatives>
+</disp-formula></p>
+</sec>
+<sec id="s4e">
+<title>LSTM Time Series Sequence Classification</title>
+<p>The videos were sampled at 1 fps to extract the CPD data from every uncovered window possible. Windows of 256 data points corresponding to 256s (4.26 min, padded, if necessary) were taken as an input to the LSTM based classifier. The windows less than 256 are padded with 0s and the windows greater than 256 are split in an overlapping fashion, when necessary. Each CPD, along with the heart rate at its corresponding time point was taken to finally label it with the shock index, and hence the presence of shock/non-shock. The missing heart rate data at certain points was imputed with linear interpolation if the missing data was less than 10&#x0025; of the time series length. Since the data is highly imbalanced with more non-shock sequences, the training data is augmented with the SMOTE[<xref ref-type="bibr" rid="c27">27</xref>] oversampling method. The LSTM sequence classifier was followed by a series of dense layers with a dropout of 0.2, which then passed through a sigmoid layer to output the binary shock index, and hence, the occurrence of shock/no-shock.</p>
+</sec>
+<sec id="s4f">
+<title>Linear Mixed-Effects and Random Forest sequence classification on tsfresh features</title>
+<p>The tsfresh[<xref ref-type="bibr" rid="c28">28</xref>] features were extracted from 256-length sequences and trained on the same train and validation distributions as the previous LSTM model. &#x2018;Boruta&#x2019;[<xref ref-type="bibr" rid="c29">29</xref>] package from R-language was used for this purpose. Variation Inflation Factor (VIF) is used to reduce multicollinearity in data. If the VIF value exceeds 10, then the collinearity is considered problematic and hence that particular variable causing it should be removed. The remaining features were used to train the linear mixed-effects and random forest models.</p>
+</sec>
+<sec id="s4g">
+<title>Direct Classification of thermal images/videos for future risk of shock</title>
+<p>Apart from CPD extraction, an attempt was made to classify into shock/no-shock by directly giving the whole images/videos as the input. In one direction, we tried to classify each video frame read at a time and conducted experiments with several modern architectures based on convolutional neural networks (CNN). The concepts of TV Chambolle denoising, data augmentation and undersampling/oversampling, were used to get the best shock detection AUROC of 0.60 using ResNet-50. Also, the information extracted from a single image frame can be very limited. So instead, we tried to use direct and continuous video samples of length 256s as an input to a conjunction of various CNN and LSTM models, trained in a time distributed manner. Being a fundamental extension of the direct image classification problem, it suffered from similar limitations.</p>
+</sec>
+<sec id="s4h">
+<title>Outcome variable - Binary shock index</title>
+<p>The SAFE-ICU initiative has enabled this research to gather the PICU data and extract the vitals and the corresponding time stamps at the 0th hour (time of video capturing) and at the next 6 hours. Shock index was taken as the median heart rate and median non-invasive blood pressure or the arterial systolic blood pressure, for moving sequential windows of 30 data points at a resolution of 15s. Shock-index Paediatric Age-Adjusted (SIPA) was then used to compute the age-specific binary outcome for each patient.</p>
+</sec>
+<sec id="s4i">
+<title>Time Points</title>
+<p>The time at which the video was captured was taken as the 0th hour, and the predictions of shock/no-shock were performed for the next 6 hours.</p>
+</sec>
+<sec id="s4j">
+<title>Model Evaluation</title>
+<p>The video data was first partitioned patient-wise such as to keep train, validation, and test sets unseen from each other. For the 10-fold cross-validation, the data was partitioned with the ratio of 60:20:20 into these three sets in a stratified manner, i.e. keeping the distribution of low-percentage shock class comparable in all three sets. The training data was augmented for the low-found shock class using SMOTE oversampling method; the validation and test sets remain unchanged in their size in each respective fold. The model analysis was mostly done on the Area Under Precision-Recall Curve (AUPRC) and Area under Receiver Operating Characteristic (AUROC) curve. Other standard metrics like F1-score, PPV, NPV, Specificity, and Sensitivity, were evaluated at the Youden&#x2019;s Index (J)[<xref ref-type="bibr" rid="c30">30</xref>]. Since there is a high significance of prevalence in the medical domain, calculating the metrics at Youden&#x2019;s Index becomes important.</p>
+</sec>
+</sec>
+<sec sec-type="supplementary-material">
+<title>Supporting information</title>
+<supplementary-material>
+<label>Supplementary Material</label>
+<media xlink:href="supplements/230441_file02.pdf" />
+</supplementary-material>
+</sec>
+</body>
+<back>
+<sec sec-type="data-availability">
+<title>Data Availability</title>
+<p>Data-sets used in the study are available from the corresponding author on reasonable requests.</p>
+</sec>
+<sec id="s5">
+<title>Data Availability</title>
+<p>The data is available on a reasonable request from the corresponding author.</p>
+</sec>
+<sec id="s6">
+<title>Conflicts of interest</title>
+<p>The authors declare that they have no competing interests.</p>
+</sec>
+<ack>
+<title>Acknowledgements</title>
+<p>This work was supported by the Wellcome Trust/DBT India Alliance Fellowship IA/CPHE/14/1/501504 awarded to Tavpritesh Sethi. Tavpritesh Sethi and Pradeep Singh also acknowledge the support received from the Department of Science and Technology vide project DST/INT/ISR/P-21/2017. We also thank Mr. Varun Prakash and Mr. Anil Sharma for the technical support provided at PICU, AIIMS, New Delhi.</p>
+</ack>
+<sec id="s7">
+<title>Author contributions</title>
+<p>Concept &#x0026; Design: TS, RL, AN, PS. Standard thermal video data acquisition: PS, TS, RL. Vital data acquisition: AN, PS, TS, RL. Cohort construction using vital data and thermal videos: PS AN. Segmentation Models &#x0026; Extraction of CPD: VV. Multiple person detection &#x0026; covered-uncovered detection: VV. LSTM, Models &#x0026; Evaluation: VV, AN, HB. Mixed-effects and Random forest models &#x0026; Evaluation: PS, AN, VV. Statistical analysis: VV AN. Direct classification models: RD, HB, MW. Interpretation of Results: VV, AN, PS, TS. Manuscript &#x0026; Revision: VV, AN, PS, RL, TS. The final version of the manuscript was approved by all the authors involved in this research.</p>
+</sec>
+<ref-list>
+<title>References</title>
+<ref id="c1"><label>1.</label><mixed-citation publication-type="journal"><string-name><surname>Herget-Rosenthal</surname>, <given-names>S.</given-names></string-name>, <string-name><surname>Saner</surname>, <given-names>F.</given-names></string-name>, &#x0026; <string-name><surname>Chawla</surname>, <given-names>L. S.</given-names></string-name> <article-title>Approach to hemodynamic shock and vasopressors</article-title>. <source>Clinical journal of the American Society of Nephrology</source> <volume>3</volume>(<issue>2</issue>), <fpage>546</fpage>&#x2013;<lpage>553</lpage> (<year>2008</year>).</mixed-citation></ref>
+<ref id="c2"><label>2.</label><mixed-citation publication-type="journal"><string-name><surname>Divatia</surname>, <given-names>J. V.</given-names></string-name> <etal>et al.</etal> <article-title>Intensive Care in India: The Indian Intensive Care Case Mix and Practice Patterns Study</article-title>. <source>Indian Journal of Critical Care Medicine</source> <volume>20</volume>, <fpage>216</fpage>&#x2013;<lpage>25</lpage> (<year>2016</year>).</mixed-citation></ref>
+<ref id="c3"><label>3.</label><mixed-citation publication-type="journal"><string-name><surname>Vincent</surname>, <given-names>J.-L.</given-names></string-name> &#x0026; <string-name><surname>De Backer</surname>, <given-names>D.</given-names></string-name> <article-title>Circulatory shock</article-title>. <source>The New England Journal of Medicine</source> <volume>369</volume>, <fpage>1726</fpage>&#x2013;<lpage>34</lpage> (<year>2013</year>).</mixed-citation></ref>
+<ref id="c4"><label>4.</label><mixed-citation publication-type="journal"><string-name><surname>Rivers</surname>, <given-names>E.</given-names></string-name> <etal>et al.</etal> <article-title>Early goal-directed therapy in the treatment of severe sepsis and septic shock</article-title>. <source>The New England Journal of Medicine</source> <volume>345</volume>, <fpage>1368</fpage>&#x2013;<lpage>1377</lpage> (<year>2001</year>).</mixed-citation></ref>
+<ref id="c5"><label>5.</label><mixed-citation publication-type="journal"><collab>Early Goal-Directed Therapy Collaborative Group of Zhejiang Province et al</collab>. <article-title>The effect of early goal-directed therapy on treatment of critical patients with severe sepsis/septic shock: a multi-center, prospective, randomized, controlled study</article-title>. <source>Zhongguo wei zhong bing ji jiu yi xue</source> <volume>22</volume>, <fpage>331</fpage> (<year>2010</year>).</mixed-citation></ref>
+<ref id="c6"><label>6.</label><mixed-citation publication-type="journal"><string-name><surname>Rotenstein</surname>, <given-names>L.S.</given-names></string-name> <etal>et al.</etal> <article-title>Prevalence of Burnout Among Physicians: A Systematic Review</article-title>. <source>JAMA</source> <volume>320</volume>(<issue>11</issue>), <fpage>1131</fpage>&#x2013;<lpage>1150</lpage> (<year>2018</year>).</mixed-citation></ref>
+<ref id="c7"><label>7.</label><mixed-citation publication-type="journal"><string-name><surname>Bagcchi</surname>, <given-names>S.</given-names></string-name> <article-title>India has low doctor to patient ratio, study finds</article-title>. <source>BMJ</source>, <volume>351</volume> (<year>2015</year>)</mixed-citation></ref>
+<ref id="c8"><label>8.</label><mixed-citation publication-type="journal"><string-name><surname>Oranges</surname>, <given-names>T.</given-names></string-name>, <string-name><surname>Dini</surname>, <given-names>V.</given-names></string-name> &#x0026; <string-name><surname>Romanelli</surname>, <given-names>M.</given-names></string-name> <article-title>Skin Physiology of the Neonate and Infant: Clinical Implications</article-title>. <source>Advances in Wound Care</source> <volume>4</volume>, <fpage>587</fpage>&#x2013;<lpage>595</lpage> (<year>2015</year>).</mixed-citation></ref>
+<ref id="c9"><label>9.</label><mixed-citation publication-type="other"><string-name><surname>Sethi</surname>, <given-names>T.</given-names></string-name> <etal>et al.</etal> <article-title>Validating the Tele-diagnostic Potential of Affordable Thermography in a Big-data Data-enabled ICU</article-title>. <source>In Proceedings of the Special Collection on eGovernment Innovations in India</source>, <fpage>64</fpage>&#x2013;<lpage>69</lpage> (ACM, <year>2017</year>).</mixed-citation></ref>
+<ref id="c10"><label>10.</label><mixed-citation publication-type="journal"><string-name><surname>Mambou</surname>, <given-names>S. J.</given-names></string-name>, <string-name><surname>Maresova</surname>, <given-names>P.</given-names></string-name>, <string-name><surname>Krejcar</surname>, <given-names>O.</given-names></string-name>, <string-name><surname>Selamat</surname>, <given-names>A.</given-names></string-name>, &#x0026; <string-name><surname>Kuca</surname>, <given-names>K.</given-names></string-name> <article-title>Breast Cancer Detection Using Infrared Thermal Imaging and a Deep Learning Model</article-title>. <source>Sensors</source> <volume>18</volume>(<issue>9</issue>), <fpage>2799</fpage> (<year>2018</year>).</mixed-citation></ref>
+<ref id="c11"><label>11.</label><mixed-citation publication-type="journal"><string-name><surname>Selvarani</surname>, <given-names>A.</given-names></string-name>, <string-name><surname>Suresh</surname>, <given-names>G.R.</given-names></string-name>. <article-title>Infrared Thermal Imaging for Diabetes Detection and Measurement</article-title>. <source>J Med Syst</source>. <volume>43</volume>(<issue>2</issue>), (<year>2019</year>).</mixed-citation></ref>
+<ref id="c12"><label>12.</label><mixed-citation publication-type="journal"><string-name><surname>Thiruvengadam</surname>, <given-names>J.</given-names></string-name>, <string-name><surname>Mariamichael</surname>, <given-names>A.</given-names></string-name> <article-title>A preliminary study for the assessment of hypertension using static and dynamic IR thermograms</article-title>. <source>Biomed Tech</source> <volume>63</volume>(<issue>2</issue>),<fpage>197</fpage>&#x2013;<lpage>206</lpage> (<year>2018</year>).</mixed-citation></ref>
+<ref id="c13"><label>13.</label><mixed-citation publication-type="journal"><string-name><surname>Houwink</surname>, <given-names>A. P. I.</given-names></string-name>, <string-name><surname>Rijkenberg</surname>, <given-names>S.</given-names></string-name>, <string-name><surname>Bosman</surname>, <given-names>R. J.</given-names></string-name> &#x0026; <string-name><surname>van der Voort</surname>, <given-names>P. H. J.</given-names></string-name> <article-title>The association between lactate, mean arterial pressure, central venous oxygen saturation and peripheral temperature and mortality in severe sepsis: a retrospective cohort analysis</article-title>. <source>Critical care (London, England)</source> <volume>20</volume>, <fpage>56</fpage> (<year>2016</year>).</mixed-citation></ref>
+<ref id="c14"><label>14.</label><mixed-citation publication-type="journal"><string-name><surname>Bourcier</surname>, <given-names>S.</given-names></string-name> <etal>et al.</etal> <article-title>Toe-to-room temperature gradient correlates with tissue perfusion and predicts outcome in selected critically ill patients with severe infections</article-title>. <source>Annals of Intensive Care</source> <volume>6</volume> (<year>2016</year>).</mixed-citation></ref>
+<ref id="c15"><label>15.</label><mixed-citation publication-type="journal"><string-name><surname>Nagori</surname>, <given-names>A.</given-names></string-name> <etal>et al.</etal> <article-title>Predicting Hemodynamic Shock from Thermal Images using Machine Learning</article-title>. <source>Sci Rep</source> <volume>9</volume>, <fpage>91</fpage> (<year>2019</year>). <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1038/s41598-018-36586-8">https://doi.org/10.1038/s41598-018-36586-8</ext-link></mixed-citation></ref>
+<ref id="c16"><label>16.</label><mixed-citation publication-type="journal"><string-name><surname>Acker</surname>, <given-names>S. N.</given-names></string-name> <etal>et al.</etal> <article-title>Shock index, pediatric age-adjusted (SIPA) is more accurate than age-adjusted hypotension for trauma team activation</article-title>. <source>In Surgery (United States)</source> <volume>161</volume>, <fpage>803</fpage>&#x2013;<lpage>807</lpage> (<year>2017</year>).</mixed-citation></ref>
+<ref id="c17"><label>17.</label><mixed-citation publication-type="journal"><string-name><surname>Hochreiter</surname>, <given-names>S.</given-names></string-name>, and <string-name><surname>Schmidhuber</surname>, <given-names>J.</given-names></string-name> <article-title>Long short-term memory</article-title>. <source>Neural Computation</source> <volume>9</volume>, <fpage>1735</fpage>&#x2013;<lpage>1780</lpage> (<year>1997</year>).</mixed-citation></ref>
+<ref id="c18"><label>18.</label><mixed-citation publication-type="website"><string-name><surname>Bates</surname>, <given-names>D. M.</given-names></string-name>, <string-name><surname>M&#x00E4;chler</surname>, <given-names>M.</given-names></string-name>, <string-name><surname>Bolker</surname>, <given-names>B. M.</given-names></string-name>, and <string-name><surname>Walker</surname>, <given-names>S. C.</given-names></string-name> <source>lme4: Linear Mixed-Effects Models Using Eigen and S4. R Package Version 1</source>.<fpage>1</fpage>&#x2013;<lpage>7</lpage>. (<year>2014a</year>) Available online at: <ext-link ext-link-type="uri" xlink:href="http://CRAN.R-project.org/package=lme4">http://CRAN.R-project.org/package=lme4</ext-link>.</mixed-citation></ref>
+<ref id="c19"><label>19.</label><mixed-citation publication-type="other"><string-name><surname>Cutler</surname>, <given-names>A.</given-names></string-name>, &#x0026; <string-name><surname>Cutler</surname>, <given-names>D.</given-names></string-name>, &#x0026; <string-name><surname>Stevens</surname>, <given-names>J.</given-names></string-name>, <source>Random Forests</source>. <pub-id pub-id-type="doi">10.1007/978-1-4419-9326-7_5</pub-id> (<year>2011</year>).</mixed-citation></ref>
+<ref id="c20"><label>20.</label><mixed-citation publication-type="journal"><string-name><given-names>L.</given-names> <surname>Condat</surname></string-name> <article-title>A Direct Algorithm for 1-D Total Variation Denoising</article-title>. <source>In IEEE Signal Processing Letters</source> <volume>20</volume>, <fpage>1054</fpage>&#x2013;<lpage>1057</lpage> (<year>2013</year>), doi: <pub-id pub-id-type="doi">10.1109/LSP.2013.2278339</pub-id>.</mixed-citation></ref>
+<ref id="c21"><label>21.</label><mixed-citation publication-type="other"><string-name><surname>He</surname>, <given-names>K.</given-names></string-name>, <string-name><surname>Zhang</surname>, <given-names>X.</given-names></string-name>, <string-name><surname>Ren</surname>, <given-names>S.</given-names></string-name>, and <string-name><surname>Sun</surname>, <given-names>J.</given-names></string-name> <article-title>Deep Residual Learning for Image Recognition</article-title>. <source>2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR), Las Vegas, NV</source> (<year>2016</year>), <fpage>770</fpage>&#x2013;<lpage>778</lpage>, doi: <pub-id pub-id-type="doi">10.1109/CVPR.2016.90</pub-id></mixed-citation></ref>
+<ref id="c22"><label>22.</label><mixed-citation publication-type="other"><string-name><surname>Benson</surname>, <given-names>T.</given-names></string-name> and <string-name><surname>Grieve</surname>, <given-names>G.</given-names></string-name> <source>Principles of health interoperability: SNOMED CT, HL7 and FHIR</source> (<year>2016</year>) <pub-id pub-id-type="doi">10.1007/978-3-319-30370-3</pub-id>.</mixed-citation></ref>
+<ref id="c23"><label>23.</label><mixed-citation publication-type="book"><string-name><surname>Paszke</surname>, <given-names>A.</given-names></string-name> <etal>et al.</etal> <chapter-title>Pytorch: An imperative style, high-performance deep learning library</chapter-title>. <source>In Advances in Neural Information Processing Systems</source> <volume>32</volume>, <fpage>8024</fpage>&#x2013;<lpage>8035</lpage>, (<publisher-name>Curran Associates, Inc</publisher-name>. <year>2019</year>).</mixed-citation></ref>
+<ref id="c24"><label>24.</label><mixed-citation publication-type="other"><collab>Python Software Foundation</collab>. <source>Python Programming Language-Official Website</source>. <ext-link ext-link-type="uri" xlink:href="http://www.python.org/">http://www.python.org/</ext-link> (<year>2018</year>).</mixed-citation></ref>
+<ref id="c25"><label>25.</label><mixed-citation publication-type="other"><string-name><surname>Redmon</surname>, <given-names>J.</given-names></string-name>, and <string-name><surname>Farhadi</surname>, <given-names>A.</given-names></string-name> <article-title>YOLOv3: An Incremental Improvement</article-title>. <source>CoRR</source> (<year>2018</year>)</mixed-citation></ref>
+<ref id="c26"><label>26.</label><mixed-citation publication-type="other"><string-name><surname>Ronneberger</surname>, <given-names>O.</given-names></string-name>, <string-name><surname>Fischer</surname>, <given-names>P.</given-names></string-name>, and <string-name><surname>Brox</surname>, <given-names>T.</given-names></string-name> <article-title>U-Net: Convolutional Networks for Biomedical Image Segmentation</article-title>. <source>CoRR</source> (<year>2015</year>).</mixed-citation></ref>
+<ref id="c27"><label>27.</label><mixed-citation publication-type="journal"><string-name><surname>Chawla</surname>, <given-names>N. V.</given-names></string-name>, <string-name><surname>Bowyer</surname>, <given-names>K. W.</given-names></string-name>, <string-name><surname>Hall</surname>, <given-names>L. O.</given-names></string-name>, and <string-name><surname>Kegelmeyer</surname>, <given-names>W. P.</given-names></string-name> <article-title>Smote: Synthetic minority over-sampling technique</article-title>. <source>J. Artif. Int. Res</source>. <volume>16</volume>, <fpage>321</fpage>&#x2013;<lpage>357</lpage> (<year>2002</year>).</mixed-citation></ref>
+<ref id="c28"><label>28.</label><mixed-citation publication-type="other"><string-name><surname>Christ</surname>, <given-names>M.</given-names></string-name>, <string-name><surname>Kempa-Liehr</surname>, <given-names>A.W.</given-names></string-name> and <string-name><surname>Feindt</surname>, <given-names>M.</given-names></string-name> <article-title>Distributed and parallel time series feature extraction for industrial big data applications</article-title>. <source>ArXiv e-prints</source>: 1610.07717 (<year>2016</year>).</mixed-citation></ref>
+<ref id="c29"><label>29.</label><mixed-citation publication-type="journal"><string-name><surname>Kursa</surname>, <given-names>M</given-names></string-name> &#x0026; <string-name><surname>Rudnicki</surname>, <given-names>W.</given-names></string-name> <article-title>Feature Selection with Boruta Package</article-title>. <source>Journal of Statistical Software</source> <volume>36</volume>. <fpage>1</fpage>&#x2013;<lpage>13</lpage>. <pub-id pub-id-type="doi">10.18637/jss.v036.i11</pub-id> (<year>2010</year>).</mixed-citation></ref>
+<ref id="c30"><label>30.</label><mixed-citation publication-type="journal"><string-name><surname>Ruopp</surname>, <given-names>M. D.</given-names></string-name>, <string-name><surname>Perkins</surname>, <given-names>N. J.</given-names></string-name>, <string-name><surname>Whitcomb</surname>, <given-names>B. W.</given-names></string-name> &#x0026; <string-name><surname>Schisterman</surname>, <given-names>E. F.</given-names></string-name> <article-title>Youden Index and optimal cut-point estimated from observations affected by a lower limit of detection</article-title>. <source>Biometrical Journal</source> <volume>50</volume>, <fpage>419</fpage>&#x2013;<lpage>430</lpage> (<year>2008</year>).</mixed-citation></ref>
+</ref-list>
+</back>
+</article>

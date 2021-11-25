@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.2d1 20170631//EN" "JATS-archivearticle1.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" article-type="article" dtd-version="1.2d1" specific-use="production" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="publisher-id">MEDRXIV</journal-id>
+<journal-title-group>
+<journal-title>medRxiv</journal-title>
+<abbrev-journal-title abbrev-type="publisher">medRxiv</abbrev-journal-title>
+</journal-title-group>
+<publisher>
+<publisher-name>Cold Spring Harbor Laboratory</publisher-name>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1101/2021.10.28.21265634</article-id>
+<article-version>1.1</article-version>
+<article-categories>
+<subj-group subj-group-type="hwp-journal-coll">
+<subject>Public and Global Health</subject>
+</subj-group>
+</article-categories>
+<title-group>
+<article-title>Investigating mobility-based fast food outlet visits as indicators of dietary intake and diet-related disease</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" corresp="yes">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-5916-841X</contrib-id>
+<name><surname>Horn</surname><given-names>Abigail L.</given-names></name>
+<degrees>PhD</degrees>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="corresp" rid="cor1">&#x002A;</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0001-8772-552X</contrib-id>
+<name><surname>Bell</surname><given-names>Brooke M.</given-names></name>
+<degrees>PhD</degrees>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Garcia Bulle Bueno</surname><given-names>Bernardo</given-names></name>
+<degrees>MA</degrees>
+<xref ref-type="aff" rid="a3">3</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-6665-3640</contrib-id>
+<name><surname>Bahrami</surname><given-names>Mohsen</given-names></name>
+<degrees>PhD</degrees>
+<xref ref-type="aff" rid="a3">3</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-3685-4791</contrib-id>
+<name><surname>Bozkaya</surname><given-names>Burcin</given-names></name>
+<degrees>PhD</degrees>
+<xref ref-type="aff" rid="a4">4</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Cui</surname><given-names>Yan</given-names></name>
+<degrees>MD, PhD</degrees>
+<xref ref-type="aff" rid="a5">5</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Wilson</surname><given-names>John P.</given-names></name>
+<degrees>PhD</degrees>
+<xref ref-type="aff" rid="a6">6</xref>
+<xref ref-type="aff" rid="a7">7</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-8053-9983</contrib-id>
+<name><surname>Pentland</surname><given-names>Alex</given-names></name>
+<degrees>PhD</degrees>
+<xref ref-type="aff" rid="a3">3</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-2894-1024</contrib-id>
+<name><surname>Moro</surname><given-names>Esteban</given-names></name>
+<degrees>PhD</degrees>
+<xref ref-type="aff" rid="a3">3</xref>
+<xref ref-type="aff" rid="a8">8</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-2536-7701</contrib-id>
+<name><surname>de la Haye</surname><given-names>Kayla</given-names></name>
+<degrees>PhD</degrees>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<aff id="a1"><label>1</label><institution>Department of Population and Public Health Sciences, Keck School of Medicine, University of Southern California</institution>, Los Angeles, California</aff>
+<aff id="a2"><label>2</label><institution>School of Public Health, Yale University</institution>, New Haven, Connecticut</aff>
+<aff id="a3"><label>3</label><institution>Institute for Data, Systems, and Society, Massachusetts Institute of Technology</institution>, Cambridge, Massachusetts</aff>
+<aff id="a4"><label>4</label><institution>New College of Florida</institution>, Sarasota, Florida</aff>
+<aff id="a5"><label>5</label><institution>Los Angeles County Department of Public Health</institution>, Los Angeles, California</aff>
+<aff id="a6"><label>6</label><institution>Spatial Sciences Institute, Dornsife College of Letters, Arts and Sciences, University of Southern California</institution>, Los Angeles, California</aff>
+<aff id="a7"><label>7</label><institution>Civil &#x0026; Environmental Engineering and Computer Science, Viterbi School of Engineering, University of Southern California</institution>, Los Angeles CA</aff>
+<aff id="a8"><label>8</label><institution>Departamento de Matem&#x00E1;ticas &#x0026; GISC, Universidad Carlos III de Madrid</institution>, Legan&#x00E9;s, <country>Spain</country></aff>
+</contrib-group>
+<author-notes>
+<corresp id="cor1"><label>&#x002A;</label><bold>Corresponding Author:</bold> Abigail L. Horn, PhD, Department of Population and Public Health Sciences, Keck School of Medicine, University of Southern California, 2001 N. Soto Street, Suite 202S, Los Angeles, California 90089-9234, Tel: 323-442-3140 (<email>abigail.horn@usc.edu</email>).</corresp>
+</author-notes>
+<pub-date pub-type="epub">
+<year>2021</year>
+</pub-date>
+<elocation-id>2021.10.28.21265634</elocation-id>
+<history>
+<date date-type="received">
+<day>28</day>
+<month>10</month>
+<year>2021</year>
+</date>
+<date date-type="rev-recd">
+<day>28</day>
+<month>10</month>
+<year>2021</year>
+</date>
+<date date-type="accepted">
+<day>30</day>
+<month>10</month>
+<year>2021</year>
+</date>
+</history>
+<permissions>
+<copyright-statement>&#x00A9; 2021, Posted by Cold Spring Harbor Laboratory</copyright-statement>
+<copyright-year>2021</copyright-year>
+<license license-type="creative-commons" xlink:href="http://creativecommons.org/licenses/by/4.0/"><license-p>This pre-print is available under a Creative Commons License (Attribution 4.0 International), CC BY 4.0, as described at <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</ext-link></license-p></license>
+</permissions>
+<self-uri xlink:href="21265634.pdf" content-type="pdf" xlink:role="full-text"/>
+<abstract>
+<title>Abstract</title>
+<sec>
+<title>Importance</title>
+<p>Excessive consumption of fast food (FF) is associated with chronic disease. Population-level research on FF outlet visits is now possible with mobility data, however its usefulness as an indicator of FF intake and diet-related disease must be established.</p></sec>
+<sec>
+<title>Objective</title>
+<p>Investigate whether FF outlet visits from mobility data are indicators of self-reported FF intake, obesity, and diabetes, and compared with self-reported intake, equivalent or better indicators of obesity and diabetes.</p></sec>
+<sec>
+<title>Design, Setting, and Participants</title>
+<p>A secondary analysis of data from a representative sample of 8,036 adult residents of Los Angeles County (LAC) from the 2011 Los Angeles County Health Survey (LACHS), and mobility data representing all geolocations between October 2016 - March 2017 of 243,644 anonymous and opted-in smartphone users in LAC.</p></sec>
+<sec>
+<title>Main Outcomes and Measures</title>
+<p>Main outcomes were self-reported FF intake frequency (never, infrequent, moderate, frequent), obesity, and diabetes from LACHS. FF outlet visits were computed as the temporal frequency of FF visits (FF visits/time) and the ratio of visits to FF over all food outlets (FF visits/food), summarized over smartphone users in a neighborhood, scaled from 0-10, and linked to LACHS respondents by census tract.</p></sec>
+<sec>
+<title>Results</title>
+<p>The analytic sample included 5,447 LACHS respondents and 234,995 smartphone users with 14,498,850 visits to food outlets. FF outlet visits were significantly associated with self-reported FF intake (reference: never) for both FF visits/time (infrequent: odds ratio [OR], 1.13; 95&#x0025; CI, 1.06-1.20; frequent: OR, 1.35; 95&#x0025; CI, 1.28-1.42) and FF visits/food (infrequent: OR, 1.12; 95&#x0025; CI, 1.06-1.17; frequent: OR, 1.28; 95&#x0025; CI, 1.22-1.33). FF outlet visits were significantly associated with obesity (FF visits/time: adjusted OR [AOR], 1.16; 95&#x0025; CI, 1.12-1.21; FF visits/food: AOR, 1.13; 95&#x0025; CI, 1.10-1.17) and diabetes (FF visits/time: AOR, 1.15; 95&#x0025; CI, 1.09-1.21; FF visits/food: AOR, 1.11; 95&#x0025; CI, 1.07-1.16), adjusted for sociodemographic factors. Models of the association between FF outlet visits and obesity or diabetes had better fits than between self-reported FF intake and obesity or diabetes.</p></sec>
+<sec>
+<title>Conclusions and relevance</title>
+<p>This study illustrates that population-scale mobility data provide useful, passively-collected indicators of FF intake and diet-related disease within large, diverse urban populations that may be better than self-report intake.</p></sec>
+<sec>
+<title>Key Points</title>
+<sec>
+<title>Question</title>
+<p>Do visits to fast food outlets observed in mobility data provide meaningful measures of fast food intake, and when compared with self-reported intake, equivalent or better indicators of diet-related disease?</p></sec>
+<sec>
+<title>Findings</title>
+<p>In this cross-sectional Los Angeles County study from a survey of 8,036 adults and mobility data from 243,644 smartphone users with 14.5 million food outlet visits, neighborhood-level features representing visits to fast food outlets were significantly associated with self-reported fast food intake, significantly associated with obesity and diabetes, and were a better predictor of these diseases than self-reported fast food intake.</p></sec>
+<sec>
+<title>Meaning</title>
+<p>Measures of food behaviors observed in population-scale mobility data can provide meaningful indicators of food intake and diet-related diseases, and could complement existing dietary surveillance methods.</p></sec>
+</sec>
+</abstract>
+<counts>
+<page-count count="22"/>
+</counts>
+</article-meta>
+<notes>
+<notes notes-type="competing-interest-statement">
+<title>Competing Interest Statement</title><p>The authors have declared no competing interest.</p></notes>
+<notes notes-type="financial-disclosure">
+<title>Funding Statement</title><p>This work was supported with funding from the University of Southern California's Keck School of Medicine Dean's Pilot Funding Program (PI: de la Haye) and by MIT Connection Science (PIs: Pentland and Moro). Dr. Horn acknowledges support from an NIH Ruth L Kirschstein National 591 Research Service Award (NRSA) Institutional Training Grant (T32 5T32CA009492-35). Dr. Moro acknowledges funding from Agencia Estatal de Investigacion (Spain) (PID2019-106811GB-C32/AEI/10.13039/501100011033).</p></notes>
+<notes notes-type="disclosures">
+<title>Author Declarations</title><p>I confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.</p><p>Yes</p><p>The details of the IRB/oversight body that provided approval or exemption for the research described are given below:</p><p>All study protocols were approved by the Institutional Review Boards (IRBs) of (i) the Los Angeles County Department of Public Health, (ii) the University of Southern California, and (iii) the Massachusetts Institute of Technology.</p><p>I confirm that all necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived, and that any patient/participant/sample identifiers included were not known to anyone (e.g., hospital staff, patients or participants themselves) outside the research group so cannot be used to identify individuals.</p><p>Yes</p><p>I understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).</p><p>Yes</p><p>I have followed all appropriate research reporting guidelines and uploaded the relevant EQUATOR Network research reporting checklist(s) and other pertinent material as supplementary files, if applicable.</p><p>Yes</p></notes>
+</notes>
+</front>
+<body>
+<sec id="s1">
+<title>Introduction</title>
+<p>Food environments, where people acquire and consume food, impact diet and related diseases (i.e., nutritional health)<sup><xref ref-type="bibr" rid="c1">1</xref></sup>. To date, research has focused on predefined local and <italic>static</italic> food environments, largely of the home neighborhood<sup><xref ref-type="bibr" rid="c2">2</xref>,<xref ref-type="bibr" rid="c3">3</xref></sup>. Their features (e.g., the availability of fast food outlets) can predict nutritional health<sup><xref ref-type="bibr" rid="c1">1</xref></sup> although findings are mixed<sup><xref ref-type="bibr" rid="c4">4</xref>&#x2013;<xref ref-type="bibr" rid="c6">6</xref></sup>. A growing proportion of food acquisition occurs miles from our homes<sup><xref ref-type="bibr" rid="c7">7</xref></sup>, therefore the limited focus on static food environments may be one cause of these mixed results.</p>
+<p>A major gap in the literature is evidence of the <italic>dynamic</italic> food environments people are exposed to in their daily routines (i.e., their &#x201C;activity space&#x201D;<sup><xref ref-type="bibr" rid="c8">8</xref></sup>), the food outlets they visit, and how these mobile food environments impact dietary intake and health. With the availability of big data on human mobility (i.e., geolocations captured by people&#x2019;s smartphones), population-level research on the food outlets that people have access to and visit given their daily movements is now possible. Some studies (often <italic>n</italic>&#x003C;100) have begun to use GPS tracking technologies to continuously observe how people navigate their environment to acquire food over relatively brief time periods (i.e., 1 week)<sup><xref ref-type="bibr" rid="c9">9</xref>,<xref ref-type="bibr" rid="c10">10</xref></sup>. However, to our knowledge, <italic>large-scale</italic> mobility data has not been used to study food environments and their connection with nutritional health.</p>
+<p>This study undertakes a critical first step in this line of research: investigating whether visits to food outlets observed in population-level mobility data provide meaningful indicators of dietary intake and diet-related disease. We focus these analyses on <italic>fast food</italic> (FF) outlets specifically because FF intake is linked to disease risk<sup><xref ref-type="bibr" rid="c11">11</xref></sup>, makes up 16&#x0025; of Americans&#x2019; caloric intake<sup><xref ref-type="bibr" rid="c7">7</xref></sup>, and because FF outlets are well-distributed across food environments.</p>
+<p>We utilize a large mobility data set from Los Angeles County (LAC), U.S.A., to generate neighborhood-level measures of visits to FF outlets. The first objective was to determine whether visits to FF outlets from population mobility data are a meaningful indicator of individuals&#x2019; self-reported FF intake. The second objective was to determine whether visits to FF outlets (mobility data) are a meaningful predictor of individuals&#x2019; obesity and diabetes, and a comparable or better predictor than self-reported FF intake.</p>
+</sec>
+<sec id="s2">
+<title>Methods</title>
+<sec id="s2a">
+<title>Individual Health and Demographic Data Source and Measures</title>
+<p>Individual-level measures of FF intake and diet-related disease come from the 2011 Los Angeles County Health Survey (LACHS). LACHS is a population-based dual frame (landline and cellular) telephone survey conducted by Los Angeles County Department of Public Health (LACDPH). It collects data from representative samples of adults and children living within LAC, on topics such as health conditions and behaviors, sociodemographics, and home residence. Our study uses data from the Adult Survey module, which includes 8,036 randomly selected LAC residents who are 18 years and over. Detailed study protocols are available from LACHS<sup><xref ref-type="bibr" rid="c12">12</xref></sup>.</p>
+<p>For this study, we excluded participants who: were missing residential census tract information, lived in a rural census tract<sup><xref ref-type="bibr" rid="c13">13</xref></sup>, or had missing data for all outcome variables. The final analytic sample was 5,447 participants residing in 1,941 census tracts.</p>
+<p>All variables analyzed in this study were self-reported, and some were recoded from the original measures (eMethods the <bold>Supplement</bold>) for ease of interpretability. <bold>FF intake frequency</bold> was coded as a four-category variable: never, infrequent (&#x003C; once per month), moderate (&#x2265; once per month to &#x003C; once per week), and frequent (&#x2265; once per week). <bold>Obesity</bold> (having a Body Mass Index, BMI &#x2265;30) and <bold>diabetes</bold> (having a diagnosis) were coded as binary variables (yes/no). <bold>Sociodemographic factors</bold> included age group, gender, race/ethnicity, educational level, and household income level. Respondents&#x2019; census tract of residence was derived from their home address.</p>
+</sec>
+<sec id="s2b">
+<title>Geolocation (Mobility) Data Source and Measures</title>
+<p>Geolocation (i.e., mobility) data were collected by Cuebiq<sup><xref ref-type="bibr" rid="c14">14</xref></sup>, a location-based services company that maintains anonymized geospatial datasets on human mobility by aggregating data across smartphone applications from mobile phone devices. The dataset consists of anonymized records of GPS locations from individual adult (&#x2265;18) smartphone users who have opted in to provide access to their GPS location data anonymously through a General Data Protection Regulation and California Consumer Privacy Act compliant framework. Users across all major smartphone device operating systems (e.g., iOS, Android, Windows) are represented. The dataset includes 243,644 users with estimated residential census tracts (explained below) in LAC between October 2016 - March 2017 (6 months), representing 3.1&#x0025; of the LAC adult population<sup><xref ref-type="bibr" rid="c15">15</xref></sup>.</p>
+<p>The data consist of geolocation &#x201C;pings&#x201D; identifying the location of a given smartphone, typically recorded every 5-15 minutes (eFigure 1 in the <bold>Supplement</bold>). Each ping contains the GPS location of the phone (latitude and longitude), timestamp, and anonymous (encrypted and hashed) identifier which is unique for all smartphone users. No other individual information (e.g., demographic characteristics) was available on users. From the trajectories of pings for each user, we used a detection algorithm<sup><xref ref-type="bibr" rid="c16">16</xref></sup> to filter out transient locations and extract meaningful &#x201C;stays&#x201D; (or stops) at particular locations of at least 5 minutes duration. We excluded users if they had fewer than two stays at any location over the 6 months, resulting in an analytic sample of 234,995 users with over 63 million observed stays (eTable 1 in the <bold>Supplement</bold>).</p>
+<p>Visits to food and FF outlets were identified by linking geolocated stays with a points of interest (POI) database obtained from the public Foursquare API<sup><xref ref-type="bibr" rid="c17">17</xref></sup> in 2017, which provides the names and geolocations of 239,509 POI in LAC. Food outlets were defined as any location where food might be sold (including restaurants, food retailers, and other locations) and FF outlets were defined as limited-service restaurants serving menus of predominantly ultra-processed and/or low-nutrient, energy dense foods (e.g., McDonald&#x2019;s, Taco Bell, Pizza Hut). We identified food and FF outlets using a combination of Foursquare&#x2019;s existing categorization taxonomy, and a bottom-up search of known chain FF outlet names validated in previous research (eMethods and eTables 2-3 in the <bold>Supplement</bold>)<sup><xref ref-type="bibr" rid="c18">18</xref>,<xref ref-type="bibr" rid="c19">19</xref></sup>. After recoding, there were 53,588 food outlets and 4,151 FF outlets. A total of 14,498,850 visits to food outlets were detected across the analytic sample.</p>
+<p>We estimated the home residential census tract for each user as the tract in which the majority of their activity between 10pm-6am occurred. Using the preprocessed mobility data, FF outlet visits were defined first at the level of an individual user, and then aggregated and averaged across users living within 247 LAC neighborhoods<sup><xref ref-type="bibr" rid="c20">20</xref></sup> to represent the &#x201C;typical&#x201D; FF visit behavior of residents in that spatial area. The neighborhood level was the smallest administrative area we could demonstrate that our mobility user sample achieved broad geographic representation of the underlying population (eMethods and eFigures 4-6 in the <bold>Supplement</bold>).</p>
+<p>The first FF outlet visit variable, the <bold>temporal frequency of FF outlet visits (FF visits/time)</bold>, was defined as the percentage of observed periods (out of three possible daily periods: before 11am, 11am-4pm, after 4pm) in which a user visits at least one FF outlet, out of the total number of observed periods for that user. The second variable, <bold>relative frequency of FF to all food outlet visits (FF visits/food)</bold>, was defined as the percentage of the total number of visits to FF outlets for a user out of the total number of visits to any food outlet for that user. We also defined a covariate representing <bold>average mobility behavior</bold>, as the average number of trips, measured as &#x201C;stays&#x201D; (defined above) per user per day (<bold>trips/day</bold>). These three variables were averaged over all users with an estimated home residence within a neighborhood, rescaled from 0-10 to enable comparison of effect sizes in regression analyses, and linked as contextual variables to individual respondents from the LACHS survey based on their home census tract of residence. A geographic visualization of the unscaled mobility variables is provided in the <bold>Figure</bold>.</p>
+<p>We used sample post-stratification techniques, comparison with census data, and sensitivity tests on the mobility data to establish (i) its measurement accuracy, (ii) the validity of approaches taken to attribute stays to POI, and (iii) its population representativeness at the neighborhood level; see eMethods, eTables 4-5, and eFigures 3-6 in the <bold>Supplement</bold>.</p>
+<p>All study protocols were approved by the Institutional Review Boards (IRBs) of the LACDPH, University of Southern California, and Massachusetts Institute of Technology. Where applicable, this study followed the Strengthening the Reporting of Observational Studies in Epidemiology (STROBE) reporting guidelines.</p>
+</sec>
+<sec id="s2c">
+<title>Statistical Analysis</title>
+<p>Logistic regression models at the LACHS respondent-level with linked mobility variables were generated to test the study objectives. For the first objective, unadjusted (univariable) and adjusted (multivariable) multinomial logistic regression models were used to estimate the odds ratios (ORs) for the association between the two FF outlet visit variables (IV), and self-reported FF intake frequency as the dependent variable (DV). The multivariable models adjusted for sociodemographic factors. <italic>P-</italic>values for the statistical significance of differences between adjusted and unadjusted ORs were tested using a &#x03C7;<sup>2</sup> test.</p>
+<p>For the second objective, multivariable logistic regression models tested whether (i) FF visits/time (IV), (ii) FF visits/food (IV), and (iii) self-reported FF intake (IV) were associated with obesity (DV), and in separate models, with diabetes (DV). All models adjusted for sociodemographic factors. ORs for the categorical variable (FF intake frequency) and continuous variables (FF visits/time and FF visits/food) cannot be directly compared. Therefore, model fits were compared on the basis of their Akaike weights, which are transformations from raw Akaike information criterion (AIC) values to facilitate interpretation of AIC model comparisons<sup><xref ref-type="bibr" rid="c21">21</xref></sup>. A model&#x2019;s Akaike weight is interpreted as its probability of being the best out of a set of candidate models.</p>
+<p>The LACHS and mobility datasets are from different years because FF intake was not assessed by the LACHS survey after 2011, while geolocation-based mobility data was not available before 2016. We conducted sensitivity analyses to examine whether regression model results were impacted by this time gap. Sensitivity analyses were also conducted to examine whether results were impacted by controlling for users&#x2019; general mobility behavior (Trips/day). Mobility data were analyzed in Python. LACHS data and statistical analyses were conducted using R software, version 3.6.3. A 2-sided <italic>P</italic> &#x003C; .05 was considered statistically significant. Additional data and analysis details are available in eMethods in the <bold>Supplement</bold>.</p>
+</sec>
+</sec>
+<sec id="s3">
+<title>Results</title>
+<sec id="s3a">
+<title>Descriptive Results</title>
+<p>When comparing the full (n=8,036) and analytic (n=5,447) samples of LACHS respondents, we found small (1-3&#x0025;) but statistically significant differences in age group, gender, race/ethnicity, household income level, and self-reported FF intake frequency (eTable 6 in the <bold>Supplement</bold>). The analytic sample had representation across all age groups, race/ethnicity groups, and education levels; and had higher proportions of female vs. male (<bold><xref rid="tbl1" ref-type="table">Table 1</xref></bold>). Of the analytic sample, 17.3&#x0025; reported never eating FF, 19.1&#x0025; reported infrequent intake, 26.9&#x0025; reported moderate intake, and 36.7&#x0025; reported frequent intake; 24.8&#x0025; had obesity; and 11.1&#x0025; had diabetes.</p>
+<table-wrap id="tbl1" orientation="portrait" position="float">
+<label>Table 1.</label>
+<caption><title>Demographic, Diet, and Diet-related Disease Characteristics For Analytic Sample of LACHS Participants</title></caption>
+<graphic xlink:href="21265634v1_tbl1.tif"/>
+<graphic xlink:href="21265634v1_tbl1a.tif"/>
+</table-wrap>
+<p>Across the mobility variables linked to LACHS respondents, the median percentage of observed daily periods in which users visited FF outlets (FF visits/time unscaled) was 4.3&#x0025; (range, 1.0-13.0&#x0025;); the median percentage of visits to all food outlets that were FF (FF visits/food unscaled) was 10.6&#x0025; (range, 2.8-22.4&#x0025;); and the median number of trips per day (trips/day unscaled) was 4.0 (range, 2.2-8.0) (see eFigure 7 in the <bold>Supplement</bold> for histograms of these distributions).</p>
+</sec>
+<sec id="s3b">
+<title>Association Between Visits to FF Outlets and FF Intake Frequency</title>
+<p>In the unadjusted models, higher frequencies of FF outlet visits were significantly associated with higher levels of FF intake for both variables (<bold><xref rid="tbl2" ref-type="table">Table 2</xref></bold>). For a 10&#x0025; increase in FF visits/time (i.e., a 1-unit increase in the scaled variable), relative to no FF intake, the odds of high FF intake increased by 35&#x0025; (OR, 1.35; 95&#x0025; CI, 1.28-1.42), of moderate FF intake increased by 26&#x0025; (OR, 1.26; 95&#x0025; CI, 1.19-1.33), and of low FF intake increased by 13&#x0025; (OR, 1.13; 95&#x0025; CI, 1.06-1.2). For a 10&#x0025; increase in the frequency of FF visits/food, relative to no FF intake, the odds of high FF intake increased by 28&#x0025; (OR, 1.28; 95&#x0025; CI, 1.22-1.33), of moderate FF intake increased by 22&#x0025; (OR, 1.22; 95&#x0025; CI, 1.16-1.27), and of infrequent FF intake increased by 12&#x0025; (OR, 1.12; 95&#x0025; CI, 1.06-1.17).</p>
+<table-wrap id="tbl2" orientation="portrait" position="float">
+<label>Table 2.</label>
+<caption><title>Odds Ratios for Unadjusted and Adjusted Multinomial Logistic Regression Analyses of the Association Between Visits to Fast Food Outlets Observed in Mobility Data and Self-Reported Fast Food Intake<sup>a</sup></title></caption>
+<graphic xlink:href="21265634v1_tbl2.tif"/>
+</table-wrap>
+<p>In the adjusted models, all three measures of FF outlet visits remained strong and significant predictors of FF intake (<bold><xref rid="tbl2" ref-type="table">Table 2</xref></bold>), and the estimates were essentially unchanged; the CIs of the adjusted vs. unadjusted ORs are overlapping and there were no significant differences between <italic>P</italic> values (eTable 7 in the <bold>Supplement</bold>).</p>
+</sec>
+<sec id="s3c">
+<title>Association Between Visits to FF Outlets and Diet-Related Disease</title>
+<p>A 10&#x0025; increase in FF visits/time was significantly associated with a 16&#x0025; greater odds of obesity (AOR, 1.16; 95&#x0025; CI, 1.12-1.21) and a 15&#x0025; greater odds of diabetes (AOR, 1.15; 95&#x0025; CI, 1.09-1.21) (<bold><xref rid="tbl3" ref-type="table">Table 3</xref></bold>). A 10&#x0025; increase in FF visits/food was significantly associated with a 13&#x0025; greater odds of obesity (AOR, 1.13; 95&#x0025; CI, 1.10-1.17) and an 11&#x0025; greater odds of diabetes (AOR, 1.11; 95&#x0025; CI, 1.07-1.16). Self-reported infrequent FF intake frequencies were not significantly associated with obesity or diabetes, while moderate FF intake was significantly associated with obesity (AOR, 1.26; 95&#x0025; CI, 1.03-1.55), and frequent FF intake was significantly associated with obesity (AOR, 1.63; 95&#x0025; CI, 1.34-1.99) and diabetes (AOR, 1.39; 95&#x0025; CI, 1.08-1.81).</p>
+<table-wrap id="tbl3" orientation="portrait" position="float">
+<label>Table 3.</label>
+<caption><title>Odds Ratios for Multivariable Binary Logistic Regression Analyses of the Association Between Visits to Fast Food Outlets and Diet-Related Disease<sup>a</sup></title></caption>
+<graphic xlink:href="21265634v1_tbl3.tif"/>
+</table-wrap>
+<p>Comparing Akaike weights across the models of obesity, the probability that the model including FF visits/time was the best-fitting model was 0.10, including FF visits/food was 0.90, and including FF intake frequency was 3.6e-7 (<bold><xref rid="tbl4" ref-type="table">Table 4</xref></bold>). Comparing Akaike weights across the three models of diabetes, the probability that the model including FF visits/time was the best-fitting model was 0.69, including FF visits/food was 0.31, and including self-reported FF intake frequency was 2.3e-5.</p>
+<table-wrap id="tbl4" orientation="portrait" position="float">
+<label>Table 4.</label>
+<caption><title>Values of the Akaike Information Criterion (AIC) and Akaike Weights Calculated From Models of the Association Between Visits to Fast Food Outlets, Self-Report Fast Food Intake Frequency, and Diet-Related Disease<sup>a</sup></title></caption>
+<graphic xlink:href="21265634v1_tbl4.tif"/>
+</table-wrap>
+<p>Regression results were not significantly impacted by (i) controlling for general mobility behavior (Trips/day) (eTable 8 in the <bold>Supplement</bold>), and (ii) the time gap between data collection for the LACHS (2011) and mobility data (2016-17) (eMethods, eTables 9-14, and eFigure 8 in the <bold>Supplement</bold>).</p>
+</sec>
+</sec>
+<sec id="s4">
+<title>Discussion</title>
+<p>Using large-scale mobility data from LAC, this study finds strong and consistent evidence that visits to FF outlets, aggregated at the neighborhood level, strongly and significantly correspond to individuals&#x2019; consumption of FF. Thus, passively observed visits to FF outlets appear to be a good indicator of FF intake in a diverse, urban population.</p>
+<p>FF behaviors observed in the mobility data also predicted diet-related disease. Moreover, models of the association between FF outlet visits and obesity or diabetes had substantially <italic>better</italic> fits than between self-reported FF intake, the standard measure in population nutrition research, and obesity or diabetes. Findings held after controlling for individual sociodemographic factors and general mobility behavior, suggesting these indicators are uniquely representing visits to FF outlets rather than mobility alone. Several factors may explain the strength of this result, despite aggregation at the neighborhood level. First, measures of food behaviors observed directly from smartphone-captured mobility data may be less prone to measurement error compared with self-reported food intake. This may be related to mobility data capturing behavior continuously, over months (or potentially longer), recording more detail of behavioral patterns than can be reliably assessed by self-reported recall<sup><xref ref-type="bibr" rid="c22">22</xref>,<xref ref-type="bibr" rid="c23">23</xref></sup>. Second, the neighborhood-aggregated measures of visits to FF outlets may be capturing an indicator of social behaviors of a larger group. Because eating is strongly influenced by social and cultural factors<sup><xref ref-type="bibr" rid="c24">24</xref></sup>, the &#x2018;social signal&#x2019;<sup><xref ref-type="bibr" rid="c25">25</xref></sup> captured by the aggregated measure may be additionally predictive of disease risk. Third, the indicators may be picking up other neighborhood-level risk factors for these diseases.</p>
+<p>This study advances research methods that are used to understand how food environments are related to health. It establishes that features extracted from large-scale mobility data provide a strong signal of FF consumption, suggesting that this data source may represent a valid population surveillance tool for this and possibly other eating and health behaviors. Mobility data is objective, and captured passively and continuously over long periods of time, making it a convenient and information-rich means of gathering population-level food behaviors that are notoriously hard to measure.</p>
+<p>More broadly, this study introduces human mobility data as an untapped resource for future investigations into links between food environment use and nutritional health across large, diverse populations. Studies involving mobility data might include: re-defining notions of &#x201C;food deserts&#x201D; and &#x201C;food swamps&#x201D; to account for lived environments beyond the home neighborhood; investigating routine behaviors that determine spatio-temporal accessibility to different types of food environments; using &#x201C;natural experiments&#x201D; (e.g., users who change home or food environments) to identify causal mechanisms linking features of food environments and eating behaviors; and developing more effective policies and interventions on food environments that take routine behaviors beyond the home neighborhood into consideration.</p>
+<sec id="s4a">
+<title>Limitations</title>
+<p>The results of this study are prone to ecological fallacy, since measures of FF outlet visits averaged across the aggregate of individuals within a neighborhood group are assumed to apply to all individuals within that group. Summarizing mobility features at the neighborhood (or other spatial) level will obscure group differences, for example, differential visits to FF outlets based on gender or other demographics<sup><xref ref-type="bibr" rid="c26">26</xref></sup>. Additionally, the mobility measures represent sample means over a convenience sample of mobility users living in a neighborhood, which may not reflect the true mean within that neighborhood.</p>
+<p>Smartphone users, although constituting 83&#x0025; of the U.S. adult population in 2017<sup><xref ref-type="bibr" rid="c27">27</xref></sup>, represent a subset of the population that has some uneven representation across socio-demographic groups (e.g., low income<sup><xref ref-type="bibr" rid="c27">27</xref></sup>, older and non-white<sup><xref ref-type="bibr" rid="c28">28</xref></sup>), leading to potential biases. Quantifying these biases in mobility data is challenging since demographic information is not available on individual smartphone users, however we use post-stratification sampling on the mobility data to achieve population representativeness at the level of the neighborhoods, which may alleviate some of the potential biases (eMethods in the <bold>Supplement</bold>). Additionally, our previous work on this dataset demonstrated low bias across income classes by imputing this characteristic for each user<sup><xref ref-type="bibr" rid="c29">29</xref></sup>. Different study designs will be necessary to investigate whether inferences derived from smartphone users are fully generalizable to these populations.</p>
+<p>We have linked two different study populations and timeframes, which leads to potential sources of incompatibility. There may have been changes in food environments between 2011 and 2016-17 that could affect population visits to food outlets. However, we found that there has been very little change in population demographics in the LAC study areas between 2011 and 2017, and that regression model results were robust to removing the census tracts with the greatest change (eMethods and eTables 9-14 in the <bold>Supplement</bold>).</p>
+<p>Limitations of the mobility data include under-sampled visits to FF outlets due to the gaps in measurement of each smartphone user (e.g., when phones are out of service). We address this by defining percentage-based variables in which observations of FF outlet visits are relativized to other observables (e.g., all food outlet visits), but there may be measurement error that cannot be quantified. Separately, the FF intake measures may be subject to biases common to self-report food frequency measures.</p>
+<p>While we have taken several approaches to validate the measurement accuracy of the mobility data and robustness of findings to our methods for attributing geolocations to places, there may be limitations to our ability to detect visits to certain food outlets (eMethods in the <bold>Supplement</bold>).</p>
+</sec>
+</sec>
+<sec id="s5">
+<title>Conclusions</title>
+<p>Population-scale mobility data provide rich information about population use of fast food (FF) outlets. While there are sources of bias in mobility data, this study demonstrates that it provides (i) useful indicators of FF intake within large and diverse urban populations and (ii) meaningful predictors of diet-related disease (i.e., obesity and diabetes), and may have advantages over existing dietary assessment methods. Mobility data are likely to facilitate future research investigating how people of diverse backgrounds move around to dynamically use food environments, including and beyond the home neighborhood, and the links to their diet and health.</p>
+</sec>
+<sec sec-type="supplementary-material">
+<title>Supporting information</title>
+<supplementary-material>
+<label>Supplementary Online Content</label>
+<media xlink:href="supplements/265634_file02.pdf" />
+</supplementary-material>
+</sec>
+</body>
+<back>
+<sec sec-type="data-availability">
+<title>Data Availability</title>
+<p>Two datasets were analyzed in this manuscript. Individual-level measures of FF intake and diet-related disease analyzed in this study came from the 2011 Los Angeles County Health Survey (LACHS). This data was shared privately under an IRB-approved Data Use Agreement with the University of Southern California. These data cannot be shared.
+Geolocation (i.e., mobility) data were collected by Cuebiq Inc., consisting of anonymized records of GPS locations from individual adult (&#8805;18) smartphone users who have opted in to provide access to their GPS location data anonymously through a General Data Protection Regulation and California Consumer Privacy Act compliant framework, were collected by Cuebiq Inc. and shared with the Massachusetts Institute of Technology through an IRB-approved Data License Agreement via their Data for Good Program. These data cannot be shared.</p>
+</sec>
+<ack>
+<title>Acknowledgment Section</title>
+</ack>
+<sec id="s6">
+<title>Author Contributions</title>
+<p>Dr. Horn had full access to all the data in the study and takes responsibility for the integrity of the data and the accuracy of the data analysis.</p>
+<p><italic>Concept and design</italic>: Horn, Bozkaya, Moro, de la Haye.</p>
+<p><italic>Acquisition, analysis, or interpretation of data</italic>: Horn, Bell, Bulle Bueno, Bahrami, Cui, Wilson, Pentland, Moro, de la Haye.</p>
+<p><italic>Drafting of the manuscript:</italic> Horn, Bell, de la Haye.</p>
+<p><italic>Critical revision of the manuscript for important intellectual content</italic>: All authors.</p>
+<p><italic>Statistical analysis</italic>: Horn, Bell, Bulle Bueno.</p>
+<p><italic>Obtained funding</italic>: Horn, Moro, de la Haye.</p>
+<p><italic>Supervision</italic>: Moro, de la Haye.</p>
+</sec>
+<sec id="s7">
+<title>Conflict of Interest Disclosures</title>
+<p>None reported.</p>
+</sec>
+<sec id="s8">
+<title>Funding/Support</title>
+<p>This work was supported with funding from the University of Southern California&#x2019;s Keck School of Medicine Dean&#x2019;s Pilot Funding Program (PI: de la Haye) and by MIT Connection Science (PIs: Pentland and Moro). Dr. Horn acknowledges support from an NIH Ruth L Kirschstein National 591 Research Service Award (NRSA) Institutional Training Grant (T32 5T32CA009492-35). Dr. Moro acknowledges funding from Agencia Estatal de Investigaci&#x00F3;n (Spain) (PID2019-106811GB-C32/AEI/10.13039/501100011033)</p>
+</sec>
+<sec id="s9">
+<title>Role of the Funder/Sponsor</title>
+<p>The funder/sponsor had no role in the design and conduct of the study; collection, management, analysis, and interpretation of the data; preparation, review, or approval of the manuscript; and decision to submit the manuscript for publication.</p>
+</sec>
+<sec id="s10">
+<title>Additional Contributions</title>
+<p>Cuebiq Inc. shared the data through an IRB-approved Data License Agreement via their Data for Good Program and approved the final version of the manuscript. Ashlesha Datar, PhD, shared a list of fast food outlet brands. None were compensated for their work.</p>
+</sec>
+<ref-list>
+<title>References</title>
+<ref id="c1"><label>1.</label><mixed-citation publication-type="journal"><string-name><surname>Story</surname> <given-names>M</given-names></string-name>, <string-name><surname>Kaphingst</surname> <given-names>KM</given-names></string-name>, <string-name><surname>Robinson-O&#x2019;Brien</surname> <given-names>R</given-names></string-name>, <string-name><surname>Glanz</surname> <given-names>K.</given-names></string-name> <article-title>Creating Healthy Food and Eating Environments: Policy and Environmental Approaches</article-title>. <source>Annu Rev Public Health</source>. <year>2008</year>;<volume>29</volume>(<issue>1</issue>):<fpage>253</fpage>&#x2013;<lpage>272</lpage>. doi:<pub-id pub-id-type="doi">10.1146/annurev.publhealth.29.020907.090926</pub-id></mixed-citation></ref>
+<ref id="c2"><label>2.</label><mixed-citation publication-type="journal"><string-name><surname>Feng</surname> <given-names>J</given-names></string-name>, <string-name><surname>Glass</surname> <given-names>T</given-names></string-name>, <string-name><surname>Curriero</surname> <given-names>F</given-names></string-name>, <string-name><surname>Stewart</surname> <given-names>W</given-names></string-name>, <string-name><surname>Schwartz</surname> <given-names>B.</given-names></string-name> <article-title>The built environment and obesity: a systematic review of the epidemiologic evidence</article-title>. <source>Health Place</source>. <year>2010</year>;<volume>16</volume>(<issue>2</issue>):<fpage>175</fpage>&#x2013;<lpage>190</lpage>. doi:<pub-id pub-id-type="doi">10.1016/J.HEALTHPLACE.2009.09.008</pub-id></mixed-citation></ref>
+<ref id="c3"><label>3.</label><mixed-citation publication-type="journal"><string-name><surname>Leal</surname> <given-names>C</given-names></string-name>, <string-name><surname>Chaix</surname> <given-names>B.</given-names></string-name> <article-title>The influence of geographic life environments on cardiometabolic risk factors: a systematic review, a methodological assessment and a research agenda</article-title>. <source>Obes Rev</source>. <year>2011</year>;<volume>12</volume>(<issue>3</issue>):<fpage>217</fpage>&#x2013;<lpage>230</lpage>. doi:<pub-id pub-id-type="doi">10.1111/J.1467-789X.2010.00726.X</pub-id></mixed-citation></ref>
+<ref id="c4"><label>4.</label><mixed-citation publication-type="other"><string-name><surname>Dubowitz</surname> <given-names>T</given-names></string-name>, <string-name><surname>Zenk</surname> <given-names>SN</given-names></string-name>, <string-name><surname>Ghosh-Dastidar</surname> <given-names>B</given-names></string-name>, <etal>et al.</etal> <source>Healthy food access for urban food desert residents: examination of the food environment, food purchasing practices, diet and BMI</source>. Published online 2014. doi:<pub-id pub-id-type="doi">10.1017/S1368980014002742</pub-id></mixed-citation></ref>
+<ref id="c5"><label>5.</label><mixed-citation publication-type="journal"><string-name><surname>Cobb</surname> <given-names>L</given-names></string-name>, <string-name><surname>Appel</surname> <given-names>L</given-names></string-name>, <string-name><surname>Franco</surname> <given-names>M</given-names></string-name>, <string-name><surname>Jones-Smith</surname> <given-names>J</given-names></string-name>, <string-name><surname>Nur</surname> <given-names>A</given-names></string-name>, <string-name><surname>Anderson</surname> <given-names>C.</given-names></string-name> <article-title>The relationship of the local food environment with obesity: A systematic review of methods, study quality, and results</article-title>. <source>Obesity (Silver Spring)</source>. <year>2015</year>;<volume>23</volume>(<issue>7</issue>):<fpage>1331</fpage>&#x2013;<lpage>1344</lpage>. doi:<pub-id pub-id-type="doi">10.1002/OBY.21118</pub-id></mixed-citation></ref>
+<ref id="c6"><label>6.</label><mixed-citation publication-type="journal"><string-name><surname>Chen</surname> <given-names>X</given-names></string-name>, <string-name><surname>Kwan</surname> <given-names>MP</given-names></string-name>. <article-title>Contextual uncertainties, human mobility, and perceived food environment: The uncertain geographic context problem in food access research</article-title>. <source>Am J Public Health</source>. <year>2015</year>;<volume>105</volume>(<issue>9</issue>). doi:<pub-id pub-id-type="doi">10.2105/AJPH.2015.302792</pub-id></mixed-citation></ref>
+<ref id="c7"><label>7.</label><mixed-citation publication-type="other"><string-name><surname>Saksena</surname> <given-names>MJ</given-names></string-name>, <string-name><surname>Okrent</surname> <given-names>AM</given-names></string-name>, <string-name><surname>Anekwe</surname> <given-names>TD</given-names></string-name>, <etal>et al.</etal> <source>America&#x2019;s Eating Habits: Food Away From Home</source>. Published online 2018:EIB-196.</mixed-citation></ref>
+<ref id="c8"><label>8.</label><mixed-citation publication-type="journal"><string-name><surname>James</surname> <given-names>P</given-names></string-name>, <string-name><surname>Jankowska</surname> <given-names>M</given-names></string-name>, <string-name><surname>Marx</surname> <given-names>C</given-names></string-name>, <etal>et al.</etal> <article-title>Spatial Energetics: Integrating Data From GPS, Accelerometry, and GIS to Address Obesity and Inactivity</article-title>. <source>Am J Prev Med</source>. <year>2016</year>;<volume>51</volume>(<issue>5</issue>):<fpage>792</fpage>&#x2013;<lpage>800</lpage>. doi:<pub-id pub-id-type="doi">10.1016/j.amepre.2016.06.006</pub-id></mixed-citation></ref>
+<ref id="c9"><label>9.</label><mixed-citation publication-type="journal"><string-name><surname>Chaix</surname> <given-names>B.</given-names></string-name> <article-title>Mobile Sensing in Environmental Health and Neighborhood Research</article-title>. <source>Annu Rev Public Heal</source>. <year>2018</year>;<volume>39</volume>:<fpage>367</fpage>&#x2013;<lpage>384</lpage>. doi:<pub-id pub-id-type="doi">10.1146/annurev-publhealth</pub-id></mixed-citation></ref>
+<ref id="c10"><label>10.</label><mixed-citation publication-type="journal"><string-name><surname>Scully</surname> <given-names>JY</given-names></string-name>, <string-name><surname>Moudon</surname> <given-names>AV</given-names></string-name>, <string-name><surname>Hurvitz</surname> <given-names>PM</given-names></string-name>, <string-name><surname>Aggarwal</surname> <given-names>A</given-names></string-name>, <string-name><surname>Drewnowski</surname> <given-names>A.</given-names></string-name> <article-title>A Time-Based Objective Measure of Exposure to the Food Environment</article-title>. <source>Int J Environ Res Public Heal</source> 2019, Vol 16, Page 1180. <year>2019</year>;<volume>16</volume>(<issue>7</issue>):<fpage>1180</fpage>. doi:<pub-id pub-id-type="doi">10.3390/IJERPH16071180</pub-id></mixed-citation></ref>
+<ref id="c11"><label>11.</label><mixed-citation publication-type="journal"><string-name><surname>Bahadoran</surname> <given-names>Z</given-names></string-name>, <string-name><surname>Mirmiran</surname> <given-names>P</given-names></string-name>, <string-name><surname>Azizi</surname> <given-names>F.</given-names></string-name> <article-title>Fast Food Pattern and Cardiometabolic Disorders: A Review of Current Studies</article-title>. <source>Heal Promot Perspect</source>. <year>2015</year>;<volume>5</volume>(<issue>4</issue>):<fpage>231</fpage>. doi:<pub-id pub-id-type="doi">10.15171/HPP.2015.028</pub-id></mixed-citation></ref>
+<ref id="c12"><label>12.</label><mixed-citation publication-type="website"><collab>Los Angeles County Department of Public Health</collab>. <source>Los Angeles County Health Survey</source>. Accessed <date-in-citation content-type="access-date">October 20, 2021</date-in-citation>. <ext-link ext-link-type="uri" xlink:href="http://www.publichealth.lacounty.gov/ha/hasurveyintro.htm">http://www.publichealth.lacounty.gov/ha/hasurveyintro.htm</ext-link></mixed-citation></ref>
+<ref id="c13"><label>13.</label><mixed-citation publication-type="website"><collab>United States Department of Agriculture Economic Research Service</collab>. <source>Rural-Urban Commuting Area Codes (Updated 7/3/2019)</source>. Published 2014. Accessed <date-in-citation content-type="access-date">October 20, 2021</date-in-citation>. <ext-link ext-link-type="uri" xlink:href="https://www.ers.usda.gov/data-products/rural-urban-commuting-area-codes.aspx">https://www.ers.usda.gov/data-products/rural-urban-commuting-area-codes.aspx</ext-link></mixed-citation></ref>
+<ref id="c14"><label>14.</label><mixed-citation publication-type="website"><source>Cuebiq Data for Good Program</source>. Accessed <date-in-citation content-type="access-date">October 20, 2021</date-in-citation>. <ext-link ext-link-type="uri" xlink:href="https://www.cuebiq.com/about/data-for-good/">https://www.cuebiq.com/about/data-for-good/</ext-link></mixed-citation></ref>
+<ref id="c15"><label>15.</label><mixed-citation publication-type="website"><collab>United States Census Bureau</collab>. <year>2017</year> <source>American Community Survey 5-Year Data</source>. Accessed <date-in-citation content-type="access-date">October 20, 2021</date-in-citation>. <ext-link ext-link-type="uri" xlink:href="https://www.census.gov/programs-surveys/acs">https://www.census.gov/programs-surveys/acs</ext-link></mixed-citation></ref>
+<ref id="c16"><label>16.</label><mixed-citation publication-type="book"><string-name><surname>Hariharan</surname> <given-names>R</given-names></string-name>, <string-name><surname>Toyama</surname> <given-names>K.</given-names></string-name> <source>Project Lachesis: Parsing and Modeling Location Histories. In</source>: <publisher-name>Springer</publisher-name>, <publisher-loc>Berlin, Heidelberg</publisher-loc>; <year>2004</year>:<fpage>106</fpage>&#x2013;<lpage>124</lpage>. doi:<pub-id pub-id-type="doi">10.1007/978-3-540-30231-5_8</pub-id></mixed-citation></ref>
+<ref id="c17"><label>17.</label><mixed-citation publication-type="website"><source>Foursquare API</source>. Accessed <date-in-citation content-type="access-date">October 20, 2021</date-in-citation>. <ext-link ext-link-type="uri" xlink:href="https://developer.foursquare.com/">https://developer.foursquare.com/</ext-link></mixed-citation></ref>
+<ref id="c18"><label>18.</label><mixed-citation publication-type="journal"><string-name><surname>Datar</surname> <given-names>A</given-names></string-name>, <string-name><surname>Nicosia</surname> <given-names>N.</given-names></string-name> <article-title>Assessing social contagion in body mass index, overweight, and obesity using a natural experiment</article-title>. <source>JAMA Pediatr</source>. <year>2018</year>;<volume>172</volume>(<issue>3</issue>). doi:<pub-id pub-id-type="doi">10.1001/jamapediatrics.2017.4882</pub-id></mixed-citation></ref>
+<ref id="c19"><label>19.</label><mixed-citation publication-type="journal"><string-name><surname>Datar</surname> <given-names>A</given-names></string-name>, <string-name><surname>Mahler</surname> <given-names>A</given-names></string-name>, <string-name><surname>Nicosia</surname> <given-names>N.</given-names></string-name> <article-title>Association of Exposure to Communities With High Obesity With Body Type Norms and Obesity Risk Among Teenagers</article-title>. <source>JAMA Netw open</source>. <year>2020</year>;<volume>3</volume>(<issue>3</issue>). doi:<pub-id pub-id-type="doi">10.1001/jamanetworkopen.2020.0846</pub-id></mixed-citation></ref>
+<ref id="c20"><label>20.</label><mixed-citation publication-type="website"><collab>The Los Angeles Times Datadesk</collab>. <source>Mapping L.A. Neighborhoods</source>. Accessed <date-in-citation content-type="access-date">October 20, 2021</date-in-citation>. <ext-link ext-link-type="uri" xlink:href="http://maps.latimes.com/neighborhoods/">http://maps.latimes.com/neighborhoods/</ext-link></mixed-citation></ref>
+<ref id="c21"><label>21.</label><mixed-citation publication-type="journal"><string-name><surname>Wagenmakers</surname> <given-names>EJ</given-names></string-name>, <string-name><surname>Farrell</surname> <given-names>S.</given-names></string-name> <article-title>AIC model selection using Akaike weights</article-title>. <source>Psychon Bull Rev</source>. <year>2004</year>;<volume>11</volume>(<issue>1</issue>). doi:<pub-id pub-id-type="doi">10.3758/BF03206482</pub-id></mixed-citation></ref>
+<ref id="c22"><label>22.</label><mixed-citation publication-type="journal"><string-name><surname>Riley</surname> <given-names>WT</given-names></string-name>, <string-name><surname>Rivera</surname> <given-names>DE</given-names></string-name>, <string-name><surname>Atienza</surname> <given-names>AA</given-names></string-name>, <string-name><surname>Nilsen</surname> <given-names>W</given-names></string-name>, <string-name><surname>Allison</surname> <given-names>SM</given-names></string-name>, <string-name><surname>Mermelstein</surname> <given-names>R.</given-names></string-name> <article-title>Health behavior models in the age of mobile interventions: Are our theories up to the task?</article-title> <source>Transl Behav Med</source>. <year>2011</year>;<volume>1</volume>(<issue>1</issue>). doi:<pub-id pub-id-type="doi">10.1007/s13142-011-0021-7</pub-id></mixed-citation></ref>
+<ref id="c23"><label>23.</label><mixed-citation publication-type="journal"><string-name><surname>Spruijt-Metz</surname> <given-names>D</given-names></string-name>, <string-name><surname>Hekler</surname> <given-names>E</given-names></string-name>, <string-name><surname>Saranummi</surname> <given-names>N</given-names></string-name>, <etal>et al.</etal> <article-title>Building new computational models to support health behavior change and maintenance: new opportunities in behavioral research</article-title>. <source>Transl Behav Med</source>. <year>2015</year>;<volume>5</volume>(<issue>3</issue>). doi:<pub-id pub-id-type="doi">10.1007/s13142-015-0324-1</pub-id></mixed-citation></ref>
+<ref id="c24"><label>24.</label><mixed-citation publication-type="other"><string-name><surname>Herman</surname> <given-names>CP</given-names></string-name>, <string-name><surname>Polivy</surname> <given-names>J</given-names></string-name>, <string-name><surname>Pliner</surname> <given-names>P</given-names></string-name>, <string-name><surname>Vartanian</surname> <given-names>LR</given-names></string-name>. <source>Social Influences on Eating</source>.; <year>2019</year>. doi:<pub-id pub-id-type="doi">10.1007/978-3-030-28817-4</pub-id></mixed-citation></ref>
+<ref id="c25"><label>25.</label><mixed-citation publication-type="journal"><string-name><surname>Galesic</surname> <given-names>M</given-names></string-name>, <string-name><surname>Bruine de Bruin</surname> <given-names>W</given-names></string-name>, <string-name><surname>Dalege</surname> <given-names>J</given-names></string-name>, <etal>et al.</etal> <article-title>Human social sensing is an untapped resource for computational social science</article-title>. <source>Nature</source>. <year>2021</year>;<volume>595</volume>(<issue>7866</issue>). doi:<pub-id pub-id-type="doi">10.1038/s41586-021-03649-2</pub-id></mixed-citation></ref>
+<ref id="c26"><label>26.</label><mixed-citation publication-type="other"><string-name><surname>Smith</surname> <given-names>LG</given-names></string-name>, <string-name><surname>Widener</surname> <given-names>MJ</given-names></string-name>, <string-name><surname>Liu</surname> <given-names>B</given-names></string-name>, <etal>et al.</etal> <article-title>Comparing Household and Individual Measures of Access through a Food Environment Lens: What Household Food Opportunities Are Missed When Measuring Access to Food Retail at the Individual Level?</article-title> <source>Ann Am Assoc Geogr</source>. Published online 2021. doi:<pub-id pub-id-type="doi">10.1080/24694452.2021.1930513</pub-id></mixed-citation></ref>
+<ref id="c27"><label>27.</label><mixed-citation publication-type="website"><collab>Pew Research Center</collab>. <article-title>Share of adults in the United States who owned a smartphone from 2011 to 2017, by location</article-title>. <source>In Statista - The Statistics Portal</source>. Accessed <date-in-citation content-type="access-date">June 22, 2018</date-in-citation>. <ext-link ext-link-type="uri" xlink:href="https://www.statista.com/statistics/195003/percentage-of-us-smartphone-owners-by-geographic-location">https://www.statista.com/statistics/195003/percentage-of-us-smartphone-owners-by-geographic-location</ext-link></mixed-citation></ref>
+<ref id="c28"><label>28.</label><mixed-citation publication-type="other"><string-name><surname>Coston</surname> <given-names>A</given-names></string-name>, <string-name><surname>Guha</surname> <given-names>N</given-names></string-name>, <string-name><surname>Ouyang</surname> <given-names>D</given-names></string-name>, <string-name><surname>Lu</surname> <given-names>L</given-names></string-name>, <string-name><surname>Chouldechova</surname> <given-names>A</given-names></string-name>, <string-name><surname>Ho</surname> <given-names>DE</given-names></string-name>. <article-title>Leveraging administrative data for bias audits: Assessing disparate coverage with mobility data for COVID-19 Policy</article-title>. <source>In: FAccT 2021 - Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency</source>. ; <year>2021</year>. doi:<pub-id pub-id-type="doi">10.1145/3442188.3445881</pub-id></mixed-citation></ref>
+<ref id="c29"><label>29.</label><mixed-citation publication-type="journal"><string-name><surname>Moro</surname> <given-names>E</given-names></string-name>, <string-name><surname>Calacci</surname> <given-names>D</given-names></string-name>, <string-name><surname>Dong</surname> <given-names>X</given-names></string-name>, <string-name><surname>Pentland</surname> <given-names>A.</given-names></string-name> <article-title>Mobility patterns are associated with experienced income segregation in large US cities</article-title>. <source>Nat Commun</source>. <year>2021</year>;<volume>12</volume>(<issue>1</issue>). doi:<pub-id pub-id-type="doi">10.1038/s41467-021-24899-8</pub-id></mixed-citation></ref>
+</ref-list>
+<sec>
+<fig id="fig1" position="float" fig-type="figure">
+<label>Figure 1.</label>
+<caption><title>Geographic Distribution of the Unscaled Mobility Variables Across Los Angeles County Neighborhoods</title>
+<p>Abbreviations: LACHS, Los Angeles County Health Survey; FF, fast food.</p>
+<p>Figure represents the geographical distribution of the unscaled mobility variables across the 247 neighborhoods with mobility users having an estimated home address in the neighborhood, before linkage to LACHS respondents. Areas with gray shading represent neighborhoods not included in the study because of either no residing mobility users, or because they contained predominantly rural census tracts<sup><xref ref-type="bibr" rid="c13">13</xref></sup>. FF visits/time unscaled (A) represents the percentage of observed daily periods in which users visited FF outlets. FF visits/food unscaled (B) represents the percentage of visits to all food outlets that were FF. Trips / day unscaled (C) represents the number of trips per day across all users within a neighborhood. Mobility variables are averaged over all users with an estimated home residence within a neighborhood.</p></caption>
+<graphic xlink:href="21265634v1_fig1.tif"/>
+</fig>
+</sec>
+</back>
+</article>

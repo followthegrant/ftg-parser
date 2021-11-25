@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.2d1 20170631//EN" "JATS-archivearticle1.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" article-type="article" dtd-version="1.2d1" specific-use="production" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="publisher-id">MEDRXIV</journal-id>
+<journal-title-group>
+<journal-title>medRxiv</journal-title>
+<abbrev-journal-title abbrev-type="publisher">medRxiv</abbrev-journal-title>
+</journal-title-group>
+<publisher>
+<publisher-name>Cold Spring Harbor Laboratory</publisher-name>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1101/2020.12.18.20245068</article-id>
+<article-version>1.2</article-version>
+<article-categories>
+<subj-group subj-group-type="hwp-journal-coll">
+<subject>Health Systems and Quality Improvement</subject>
+</subj-group>
+</article-categories>
+<title-group>
+<article-title>Bayesian modeling for the detection of adverse events underreporting in clinical trials</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-1600-9010</contrib-id>
+<name><surname>Barmaz</surname><given-names>Yves</given-names></name>
+<degrees>PhD</degrees>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author" corresp="yes">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-4545-6944</contrib-id>
+<name><surname>M&#x00E9;nard</surname><given-names>Timoth&#x00E9;</given-names></name>
+<degrees>PharmD</degrees>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="corresp" rid="cor1">&#x002A;</xref>
+</contrib>
+<aff id="a1"><label>1</label><institution>F. Hoffmann-La Roche AG - CH-4070</institution>, Basel, <country>Switzerland</country></aff>
+</contrib-group>
+<author-notes>
+<corresp id="cor1"><label>&#x002A;</label>corresponding author: <email>timothe.menard@roche.com</email></corresp>
+</author-notes>
+<pub-date pub-type="epub">
+<year>2021</year>
+</pub-date>
+<elocation-id>2020.12.18.20245068</elocation-id>
+<history>
+<date date-type="received">
+<day>18</day>
+<month>12</month>
+<year>2020</year>
+</date>
+<date date-type="rev-recd">
+<day>11</day>
+<month>5</month>
+<year>2021</year>
+</date>
+<date date-type="accepted">
+<day>12</day>
+<month>5</month>
+<year>2021</year>
+</date>
+</history>
+<permissions>
+<copyright-statement>&#x00A9; 2021, Posted by Cold Spring Harbor Laboratory</copyright-statement>
+<copyright-year>2021</copyright-year>
+<license license-type="creative-commons" xlink:href="http://creativecommons.org/licenses/by/4.0/"><license-p>This pre-print is available under a Creative Commons License (Attribution 4.0 International), CC BY 4.0, as described at <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</ext-link></license-p></license>
+</permissions>
+<self-uri xlink:href="20245068.pdf" content-type="pdf" xlink:role="full-text"/>
+<abstract>
+<title>Abstract</title>
+<sec>
+<title>Introduction</title>
+<p>Safety underreporting is a recurrent issue in clinical trials that can impact patient safety and data integrity. Clinical Quality Assurance (QA) practices used to detect underreporting rely on on-site audits, however adverse events underreporting remains a recurrent issue. In a recent project, we developed a predictive model that enables oversight of Adverse Event (AE) reporting for clinical Quality Program Leads (QPL). However, there were limitations to using solely a machine learning model.</p></sec>
+<sec>
+<title>Objective</title>
+<p>Our primary objective was to propose a robust method to compute the probability of AE underreporting that could complement our machine learning model. Our model was developed to enhance patients safety while reducing the need for on-site and manual QA activities in clinical trials.</p></sec>
+<sec>
+<title>Methods</title>
+<p>We used a Bayesian hierarchical model to estimate the site reporting rates and assess the risk of underreporting. We designed the model with Project Data Sphere clinical trial data that is public and anonymized.</p></sec>
+<sec>
+<title>Results</title>
+<p>We built a model that infers the site reporting behavior from patient-level observations and compares them across a study to enable a robust detection of outliers between clinical sites.</p></sec>
+<sec>
+<title>Conclusion</title>
+<p>The new model will be integrated into the current dashboard designed for clinical Quality Program Leads. This approach reduces the need for on-site audits, shifting focus from source data verification (SDV) to pre-identified, higher risk areas. It will enhance further quality assurance activities for safety reporting from clinical trials and generate quality evidence during pre-approval inspections.</p>
+<p>The preprint version of this work is available on MedRxiv: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1101/2020.12.18.20245068">https://doi.org/10.1101/2020.12.18.20245068</ext-link></p></sec>
+<sec>
+<title>Key points</title>
+<list list-type="bullet">
+<list-item><p>Safety underreporting is a recurrent issue in clinical trials that can impact patient safety and data integrity</p></list-item>
+<list-item><p>We used a Bayesian hierarchical model to estimate the site reporting rates and assess the risk of underreporting.</p></list-item>
+<list-item><p>This model complements our previously published machine learning approach and is used by clinical quality professionals to better detect safety underreporting.</p></list-item>
+</list>
+</sec>
+</abstract>
+<counts>
+<page-count count="20"/>
+</counts>
+</article-meta>
+<notes>
+<notes notes-type="competing-interest-statement">
+<title>Competing Interest Statement</title><p>Yves Barmaz and Timoth&#x00E9; M&#x00E9;nard were employed by Roche at the time this research was completed.</p></notes>
+<notes notes-type="financial-disclosure">
+<title>Funding Statement</title><p>Funding for development and testing of the safety reporting model was supplied by Roche.</p></notes>
+<notes notes-type="disclosures">
+<title>Author Declarations</title><p>I confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.</p><p>Yes</p><p>The details of the IRB/oversight body that provided approval or exemption for the research described are given below:</p><p>Not applicable for this research</p><p>All necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived.</p><p>Yes</p><p>I understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).</p><p>Yes</p><p>I have followed all appropriate research reporting guidelines and uploaded the relevant EQUATOR Network research reporting checklist(s) and other pertinent material as supplementary files, if applicable.</p><p>Yes</p></notes>
+</notes>
+</front>
+<body>
+<sec id="s1">
+<label>1.</label>
+<title>Introduction</title>
+<p>Adverse event (AE) underreporting has been a recurrent issue raised during Health Authorities (HA) Good Clinical Practices (GCP) inspections and audits [<xref ref-type="bibr" rid="c1">1</xref>]. Moreover, safety underreporting poses a risk to patient safety and data integrity [<xref ref-type="bibr" rid="c2">2</xref>]. The previous clinical Quality Assurance (QA) practices used to detect AE underreporting rely heavily on investigator site and study audits. Yet several sponsors and institutions have had repeated findings related to safety reporting, leading to delays in regulatory submissions.</p>
+<p>In a previous project [<xref ref-type="bibr" rid="c3">3</xref>], we developed a predictive model that enables pharmaceutical sponsors oversight of AE reporting at the program, study, site and patient level. We validated and reproduced our model using a combination of internal data and an external dataset [<xref ref-type="bibr" rid="c4">4</xref>].</p>
+<p>While the machine learning model has been successfully implemented since May 2019, there was a need to address calibration robustness. The first model relied on point predictions at the visit level and assumed Poisson distributed residuals. The decision to flag underreporting sites depended on the way these residuals were aggregated and we have been observing instabilities in longer running studies. This motivated us to tackle the problem by the other end and find a model for the distribution of adverse events reported by sites. The biggest value of point estimates from our initial machine learning model is for our stakeholders to direct their investigations, for instance which patient to target during an investigator site audit. On the other hand, an automated underreporting alert relies on well-calibrated probabilities for risk estimate. This was the main motivation for this project. These two solutions will be offered in parallel to quality professionals at our organization, the probabilistic one to quantify the risk of underreporting, and the machine learning based model to provide a basis for in-depth investigations and audits.</p>
+<p>The project has been conducted by a team of data scientists, in collaboration with clinical and QA subject matter experts (SMEs). This project was part of a broader initiative of building data-driven solutions for clinical QA to complement and augment traditional QA approaches and to improve the quality and oversight of GCP - and Good Pharmacovigilance Practices (GVP) - regulated activities.</p>
+</sec>
+<sec id="s2">
+<label>2.</label>
+<title>Methods</title>
+<sec id="s2a">
+<label>2.1.</label>
+<title>Outline</title>
+<p>The primary objective was to develop a robust methodology to assess the risk of adverse events underreporting from investigator sites. The scope remained focused on adverse events - not adverse drug reactions-that should occur in clinical trials. Good clinical practice requires all AEs, regardless of a causal relationship between the drug and events, to be reported timely to the sponsor [<xref ref-type="bibr" rid="c2">2</xref>]. Underreporting of safety events is a frequent and repetitive issue in clinical trials [<xref rid="c1" ref-type="bibr">1</xref>,<xref rid="c5" ref-type="bibr">5</xref>] with many consequences, e.g. delayed approval of new drugs [<xref ref-type="bibr" rid="c6">6</xref>&#x2013;<xref ref-type="bibr" rid="c7">7</xref>] or amplifying shortcomings of safety data collection in randomized controlled trials [<xref ref-type="bibr" rid="c8">8</xref>].</p>
+<p>The traditional way to detect AE underreporting in clinical trials is to conduct thorough site audits [<xref ref-type="bibr" rid="c9">9</xref>], on top of monitoring activities and through manual SDV. For sponsors with thousands of sites to audit, this is not manually scalable, hence the strong need for a data-driven approach.</p>
+<p>Unfortunately, we will never know how many AEs should have been reported, it is something we have to infer from the data. In other words, we are dealing with an unsupervised anomaly detection problem where we do not observe the true labels. The typical way to solve this type of problem is to fit a probability distribution to the data and compare individual data points to that distribution. To do so, one can compute the likelihood of data points under the distribution and flag values below a certain threshold. If the distribution is normal, this is equivalent to flagging points beyond a certain number of standard deviations from the mean. In more general cases, the likelihood is less interpretable, and one might prefer to compute a tail area under the distribution, namely the probability to make an observation at least as extreme as a given data point. The definition of &#x201C;extreme&#x201D; will depend on the context and can be adapted to a specific problem. In our case, we can compute the probability that a random site from a given study would have a lower reporting rate than the one under consideration.</p>
+<p>In a previous work [<xref ref-type="bibr" rid="c3">3</xref>], to infer the distribution of adverse events, we exploited the variety of covariates available at the patient and visit levels to estimate a conditional density <italic>p</italic>(<italic>y</italic><sub><italic>visit</italic></sub> &#x007C; <italic>x</italic><sub><italic>visit</italic></sub>;&#x03B8;) via machine learning. For site-level estimates, we aggregated the visit-level distributions to patient-level and then site-level via successive summations. While this method tracks adverse event data generation at various resolutions, the aggregation introduced biases in the form of systematic over- or underestimation for certain sites, in particular in longer-running trials, probably due to the addition of non-independent errors. As a result, the risk assessment of safety underreporting from investigator sites was not well calibrated. This motivated the top-down approach presented here, as we were ultimately interested in the selection of sites for audits.</p>
+<p>To further increase the robustness of the risk assessment, we adopted a Bayesian approach to quantify uncertainties through posterior probability distributions. This is a very appealing property in sectors where risk management is essential such as healthcare or finance. In our case, a clear estimate of the probability of underreporting from the different sites enables targeting of the riskiest sites to audit, and, on the positive side, to gain confidence in the completeness of the collected safety data.</p>
+<p>The general methodology of Bayesian data analysis is well described in the literature [<xref ref-type="bibr" rid="c10">10</xref>]. The main idea is to build a probabilistic model for the observed data, denoted by <italic>X</italic>, that contains unobserved parameters, collectively denoted by &#x03B8;. This model relies on a subjective assessment of the distribution of the parameters in the form of a prior distribution <italic>p</italic>(&#x03B8;), which is more or less sharp depending on the degree of certainty of the prior knowledge. The relation between the parameters and the observed data is expressed by the likelihood function <italic>p</italic>(<italic>X</italic> &#x007C; &#x03B8;). The goal of Bayesian inference is to refine the prior distribution, once the data is observed via the application of Bayes&#x2019; theorem, and obtain the posterior distribution <italic>p</italic>(&#x03B8; &#x007C; <italic>X</italic>) = <italic>p</italic>(<italic>X</italic> &#x007C; &#x03B8;)<italic>p</italic>(&#x03B8;)/<italic>p</italic>(<italic>X</italic>)used to make decisions, estimate parameters, or assess risks. If the observed data is compatible with the prior distribution, the posterior distribution will typically have a smaller spread than the prior. If it is less compatible, then the likelihood and the prior will compete and the posterior distribution will represent a compromise.</p>
+<p>In our problem, the observed data is numbers of AEs reported by the sites, grouped by patients, and parameters could be unobserved adverse event reporting rates from the individual sites. We emphasize that there can be several competing models for the observed data, and the goal is to find one that is complex enough to capture the structures of interest, namely safety underreporting in our case, but as simple as possible to speed up computations and convey the clearest insights to stakeholders.</p>
+</sec>
+<sec id="s2b">
+<label>2.2.</label>
+<title>Data</title>
+<p>We developed this project on our sponsored clinical trials, but this methodology is applicable to any trial. For illustration, we used public data from the project Data Sphere (PDS), &#x201C;<italic>an independent, not-for-profit initiative of the CEO Roundtable on Cancer&#x2019;s Life Sciences Consortium (LSC), operates the Project Data Sphere platform, a free digital library-laboratory that provides one place where the research community can broadly share, integrate and analyze historical, patient-level data from academic and industry phase III cancer clinical trials</italic>&#x201D; [<xref ref-type="bibr" rid="c11">11</xref>]. PDS data was fit for purpose to demonstrate the approach presented in this paper and are publicly available (lifting any concerns for data privacy and security). Specifically, we used the control arm of the registered clinical trial NCT 00617669 [<xref ref-type="bibr" rid="c12">12</xref>]. Of note, the data had been further curated to remove duplicate adverse events. The dataset included 468 patients from 125 clinical sites.</p>
+<p>From the clinical trial data, we extracted for our analysis the count of adverse events reported by patient, grouped by investigator site (see <xref rid="tbl1" ref-type="table">Table 1</xref>).</p>
+<table-wrap id="tbl1" orientation="portrait" position="float">
+<label>Table 1.</label>
+<caption><p>Sample of input data (the whole set includes 125 sites and 468 patients)</p></caption>
+<graphic xlink:href="20245068v2_tbl1.tif"/>
+</table-wrap>
+</sec>
+<sec id="s2c">
+<label>2.3.</label>
+<title>Model</title>
+<p>We had access to patient level observations, but we needed to make decisions at the site level based on comparisons across the whole study, so a hierarchical model was well indicated as it would capture this three levels structure. Concretely, we assumed that adverse event reporting by a given site could be modelled by a Poisson process. The observed numbers of adverse events for each of the <italic>n</italic><sub><italic>i</italic></sub> patients reported by the <italic>i</italic>-th site would then be realizations of the corresponding Poisson process,
+<disp-formula id="ueqn1">
+<alternatives><graphic xlink:href="20245068v2_ueqn1.gif"/></alternatives>
+</disp-formula>
+We further assumed that the reporting rates &#x03BB; <sub><italic>i</italic></sub>, <italic>i</italic> = 1, 2, &#x2026;, <italic>N</italic><sub><italic>sites</italic></sub> of sites were drawn from a single study-level Gamma distribution &#x0393;(&#x03BC;<sub><italic>study</italic></sub>, &#x03C3;<sub><italic>study</italic></sub>)to model the variability of reporting behaviours among the sites, and we picked vague hyperpriors for the study parameters &#x03BC;<sub><italic>study</italic></sub>&#x007E;<italic>Exp</italic>(0. 1) and &#x03C3;<sub><italic>study</italic></sub>&#x007E;<italic>Exp</italic>(0. 1) to account for uncertainty. The parameterization of the Gamma distribution by the mean and standard deviation rather than the more usual shape and rate parameters was intended to make the posterior distribution more interpretable. All these relations are summarized in a graphical representation (<xref rid="fig1" ref-type="fig">Fig. 1</xref>). The circles represent random variables, shaded when they correspond to observed data. Arrows indicate conditional dependencies, and plates represent repeated elements, with their labels indicating how many times. The parameters of the hyperprior distributions were chosen so that data simulated by sampling the prior distribution had a similar range as the observed adverse events. We also ran the analysis with wide uniform hyperpriors to check the sensitivity of the inference to the choice of hyperpriors and obtained essentially the same posterior distributions (see the code and the analysis in the Supplementary Material #2).</p>
+<fig id="fig1" position="float" fig-type="figure">
+<label>Figure 1</label>
+<caption><p>Graphical representation of the adverse event reporting model</p></caption>
+<graphic xlink:href="20245068v2_fig1.tif"/>
+</fig>
+<p>In this hierarchical model, the posterior distribution of the site reporting rates &#x03BB;<sub><italic>i</italic></sub> given the observed numbers of AEs per patient reflects how many AEs per patient we expect to see at the individual sites, and the distribution width indicates the degree of certainty in these estimates. This width typically depends on the number of observations and their spread. Even for sites with less patients, the mechanism of information borrowing enabled by the hierarchical structure leads to more robust estimates of the reporting rates.</p>
+<p>The joint posterior distribution of the study level parameters &#x03BC;<sub><italic>study</italic></sub> and &#x03C3;<sub><italic>study</italic></sub> characterizes safety reporting patterns of a study and depends on the nature of the disease (e.g. cancers vs. cardiovascular diseases, etc.), the drug mechanism of action, the drug mode of administration, the design and execution of the clinical trial, and so on. The posterior expectation value of &#x03BC;<sub><italic>study</italic></sub> immediately gives the posterior expectation value of the reporting rate of a site taken at random from that study, and in turn the expected number of adverse events reported by a patient taken at random from that site. The posterior distribution of &#x03C3;<sub><italic>study</italic></sub> characterizes the variability among the sites of that study. If this analysis is repeated on different studies, the posterior distributions of the parameters &#x03BC;<sub><italic>study</italic></sub> and &#x03C3;<sub><italic>study</italic></sub> allow us to compare the reporting patterns of the different studies.</p>
+</sec>
+<sec id="s2d">
+<label>2.4</label>
+<title>Inference and underreporting detection</title>
+<p>Efficient sampling of the posterior distribution of hierarchical models requires specialized methods [<xref ref-type="bibr" rid="c13">13</xref>] such as the Hamiltonian Monte Carlo algorithm [<xref ref-type="bibr" rid="c14">14</xref>], which is readily implemented in modern probabilistic programming libraries. We used the PyMC3 library [<xref ref-type="bibr" rid="c15">15</xref>], and our code is available as a Jupyter notebook [<xref ref-type="bibr" rid="c16">16</xref>].</p>
+<p>Algorithms of the Markov Chain Monte Carlo family return a sequence of samples of the posterior distribution, in our case a collection of <inline-formula><alternatives><inline-graphic xlink:href="20245068v2_inline1.gif"/></alternatives></inline-formula> and <inline-formula><alternatives><inline-graphic xlink:href="20245068v2_inline2.gif"/></alternatives></inline-formula>. These samples are typically used to compute expectation values with respect to the posterior. We started with the means <inline-formula><alternatives><inline-graphic xlink:href="20245068v2_inline3.gif"/></alternatives></inline-formula> and standard deviations <inline-formula><alternatives><inline-graphic xlink:href="20245068v2_inline4.gif"/></alternatives></inline-formula> of the site reporting rate samples <inline-formula><alternatives><inline-graphic xlink:href="20245068v2_inline5.gif"/></alternatives></inline-formula> to summarize their distributions, but we were ultimately interested in measuring the risk of underreporting. One natural way to do it is to compute the expected left tail area of the inferred site rates under the posterior (study-level) distribution of reporting rates. This corresponds to the probability that a yet unseen reporting rate drawn randomly from the posterior distribution falls below the inferred site reporting rates. To estimate this posterior probability, for each pair of <inline-formula><alternatives><inline-graphic xlink:href="20245068v2_inline6.gif"/></alternatives></inline-formula> and <inline-formula><alternatives><inline-graphic xlink:href="20245068v2_inline7.gif"/></alternatives></inline-formula> returned in the sample of the Markov chain, we sampled a reference rate <inline-formula><alternatives><inline-graphic xlink:href="20245068v2_inline8.gif"/></alternatives></inline-formula> and for each site computed the proportion of samples of the Markov chain such that <inline-formula><alternatives><inline-graphic xlink:href="20245068v2_inline9.gif"/></alternatives></inline-formula> to estimate the rate tail area, <inline-formula><alternatives><inline-graphic xlink:href="20245068v2_inline10.gif"/></alternatives></inline-formula>.</p>
+<p>The output is available in the code repository [<xref ref-type="bibr" rid="c16">16</xref>] and a sample of the sites with the top and bottom tail areas is presented in <xref rid="tbl2" ref-type="table">table 2</xref>. The inferred values of site 3046 illustrate interesting features of this model. Despite having a single observation of zero reported AEs, the inferred rate is still quite high, driven by information borrowed from the other sites, but with a certain uncertainty, characterized by a higher standard deviation than other sites with low numbers of reported AEs.</p>
+<table-wrap id="tbl2" orientation="portrait" position="float">
+<label>Table 2</label>
+<caption><p>This table displays a sample of the model output with the lowest rate tails areas, together with summary statistics of the inferred AE reporting rates (out of 468 patients in 125 clinical investigator sites). The lowest rate tail areas indicate sites with suspiciously low numbers of reported AEs, and QA activities should be focused on them.</p></caption>
+<graphic xlink:href="20245068v2_tbl2.tif"/>
+</table-wrap>
+<p>When it comes to deciding which sites to flag for under-reporting, a threshold has to be set by quality leads, as the values of the risk metrics cover a wide spectrum displayed in <xref rid="fig2" ref-type="fig">Figure 2</xref>.</p>
+<fig id="fig2" position="float" fig-type="figure">
+<label>Fig. 2</label>
+<caption><p>The rate tail area risk metric as a function of the posterior mean site rate.</p></caption>
+<graphic xlink:href="20245068v2_fig2.tif"/>
+</fig>
+<p>The relationship between the posterior mean site rates <inline-formula><alternatives><inline-graphic xlink:href="20245068v2_inline11.gif"/></alternatives></inline-formula> and the corresponding posterior rate tail areas <italic>RTA</italic><sub><italic>i</italic></sub> follows the cumulative distribution function of the posterior predictive distribution of the reporting rates (<xref rid="fig2" ref-type="fig">Fig. 2</xref>). There is no definitive rule to determine how low rate tail areas indicate underreporting. Low values might be due to the inherent variability of safety reporting. Nevertheless, auditing efforts should focus on the lowest values, for instance according to different alert levels at prespecified thresholds, e.g. 0.05 and 0.15, or up to a gap in the distribution of tail areas for more homogeneity in the QA process.</p>
+</sec>
+</sec>
+<sec id="s3">
+<label>3.</label>
+<title>Discussion</title>
+<p>The method presented here is applicable to completed studies to assess which sites might pose a risk of underreporting. In particular, it can demonstrate a degree of certainty in the completeness of collected safety data. In ongoing studies, patients do not enroll all at the same time which introduces more variability in the numbers of reported AEs. The longer a patient has been enrolled, the more AEs have been reported. We can still apply the same method, provided we select as observations the accrued number of adverse events for each patient up to the <italic>n</italic>-th visit and exclude patients who have not reached that milestone. This analysis can be repeated for different values of <italic>n</italic>. In particular, when a study is close to a data-base lock (e.g. before performing an interim analysis), the model could be used to guide quality leads and/or clinical operations staff to detect underreporting sites and trigger queries and AE reconciliation. Hence, this gives reassurance to health authorities inspectors that AE underreporting had been detected, corrective actions had been implemented and integrity of the data had not been compromised [<xref ref-type="bibr" rid="c2">2</xref>].</p>
+<p>An added benefit of the proposed Bayesian approach and the selected risk metrics is that the outputs are calibrated probabilities. The results of this underreporting risk assessment conducted on different studies and at different milestones are immediately comparable. A sponsor overseeing several studies can thus keep an overview of all of them, and monitor the evolution of the risk of underreporting over time.</p>
+<p>Yet this simple Bayesian model ignores the granularity of the available data that goes down to the visit level, the associated time series structure, and a whole collection of covariates that can predict the occurrence of AEs. As mentioned in the methods section, we used this information in our previous work to estimate the number of AEs reported at a single visit, <italic>p</italic>(<italic>y</italic> <sub><italic>visit</italic></sub> &#x007C; <italic>x</italic><sub><italic>visit</italic></sub>;&#x03B8;), with machine learning algorithms, but the estimated risks were not well calibrated. Now that we have established that Bayesian methods can address this issue, we plan to explore a middle ground between classical machine learning and probabilistic modeling, namely in the space of Bayesian neural networks, where we can find models that use all covariates but still output calibrated risks of underreporting. This approach will obviously require access to a certain amount of clinical data, which is possible only for a few selected entities such as big clinical trial sponsors, so we still think there is value in the simple approach presented here when it comes to assess individual trials.</p>
+<p>In parallel to developing a new model for detection of AE underreporting, we have been piloting a machine learning model with Quality Assurance (QA) staff since May 2019. The outputs of the Bayesian approach will be integrated in the current QA dashboard, together with the outputs of the ML model [<xref ref-type="bibr" rid="c3">3</xref>] that are already available to Quality Program Leads. For example, low values of the rate tail areas would indicate sites with suspiciously low numbers of reported AEs, and QA activities should be primarily directed on them. The advantage of combining both approaches is to have AE patient level predictions (from the ML model) and detection of AE underreporting at the site level (using the Bayesian approach). This will enhance further the quality assurance activities for safety reporting from clinical trials.</p>
+<p>This model was developed during the Covid-19 pandemic where on-site audits could not be performed [<xref ref-type="bibr" rid="c17">17</xref>]. Having a data product enabling remote monitoring of safety reporting from investigator sites was essential to ensure business continuity for clinical quality assurance activities [<xref ref-type="bibr" rid="c18">18</xref>]. Our approach has the potential to reduce the need for on-site audits and thereby shift the focus away from source data validation and verification towards pre-identified, higher risk areas. It can contribute to a major shift for QA, where advanced analytics can detect and mitigate issues faster, and ultimately accelerate approval and patient access of innovative drugs.</p>
+<p>Jianing Di <italic>et al</italic>. [<xref ref-type="bibr" rid="c19">19</xref>] also proposed the use of Bayesian methods for adverse events monitoring with a more clinical purpose. Their approach focused on the continuous monitoring of safety events to address the lack of knowledge of the full safety profile of drugs under clinical investigation. Their model could be applied for signal detection in early-phase trials and could also give further evidence to independent data monitoring committees for late stage studies. We developed a different model as our focus was on sites rather than patients. This illustrates one of the strengths of Bayesian data analysis, where different models of the same data can be optimized to answer different questions about the underlying process.</p>
+<p>Clinical trials generate large amounts of data traditionally analysed with frequentist methods, including statistical tests and population parameter estimations, aimed at clinical questions related to efficacy and safety. There has been a push in recent years for Bayesian adaptive designs that have the potential to accelerate and optimize clinical trial execution. Examples include Bayesian sequential design, adaptive randomization, and information borrowing from past trials. For example, in a study redesigning a phase III clinical trial, a Bayesian sequential design could shorten the trial duration by 15 to 40 weeks and recruited 231 to 336 fewer patients [<xref ref-type="bibr" rid="c20">20</xref>]. Our approach for the detection of safety underreporting demonstrates the potential of Bayesian data analysis to address secondary questions arising from clinical trials such as quality assurance or trial monitoring. In clinical QA, where the majority of business problems are anomaly detection or risk assessment, there is a good rationale for exploring further applications of Bayesian approaches, for example for identification of laboratory data anomalies in clinical trials or in identifying issues with the number of unreported/reported protocol deviations by clinical study sites.</p>
+<p>While the presented method (used together with our machine learning approach [<xref ref-type="bibr" rid="c3">3</xref>]) provides a robust strategy to identify AE underreporting, we acknowledge that in rare situations issues could remain hidden. As the majority of activities for clinical trial safety quality oversight have transitioned to be analytics-driven, ad-hoc and on-site quality activities (e.g. clinical investigator site audits) should remain a back-up option for clinical quality assurance organizations.</p>
+</sec>
+<sec id="s4">
+<label>4.</label>
+<title>Conclusion</title>
+<p>In this paper, we presented our approach to quantify the risk of AE underreporting from clinical trial investigator sites. We addressed a shortcoming of the model developed in our previous work that was good at predicting the evolution of safety reporting in clinical studies but failed to properly quantify the probabilities of quality issues.</p>
+<p>The new model will be integrated into the current dashboard designed for quality leads. This is part of a broader effort at our Research and Development Quality organization. Similar approaches using statistical modeling and applied to other key risk areas (e.g. informed consent, data integrity) are being developed in order to provide a full set of advanced analytics solutions for clinical quality [<xref ref-type="bibr" rid="c3">3</xref>, <xref ref-type="bibr" rid="c4">4</xref>, <xref ref-type="bibr" rid="c17">17</xref>, <xref ref-type="bibr" rid="c21">21</xref>]. We will also continue to explore the application of Bayesian methods to other datasets generated during the conduct of clinical study for QA purposes (e.g. protocol deviations).</p>
+<p>However, in order to implement routine, remote, and analytics-driven QA operations, sponsors and agencies will have to continue to collaborate and address challenges such as fit-for-purpose IT infrastructures, automation, cross-company QA data sharing, QA staff data literacy and model validation [<xref ref-type="bibr" rid="c17">17</xref>, <xref ref-type="bibr" rid="c21">21</xref>, <xref ref-type="bibr" rid="c22">22</xref>]. While the Covid-19 pandemic accelerated the adoption of new ways of working and pushed innovation further, it also brought new rationales for a change in the QA paradigm, i.e. where advanced analytics can help conducting QA activities remotely, detecting and mitigating issues faster, and ultimately accelerating approval and patient access of innovative drugs.</p>
+</sec>
+<sec sec-type="supplementary-material">
+<title>Supporting information</title>
+<supplementary-material>
+<label>Supplementary Material #2</label>
+<media xlink:href="supplements/245068_file05.pdf" />
+</supplementary-material>
+<supplementary-material>
+<label>Supplementary Material #1</label>
+<media xlink:href="supplements/245068_file06.xls" />
+</supplementary-material>
+</sec>
+</body>
+<back>
+<sec sec-type="data-availability">
+<title>Data Availability</title>
+<p>The data can be accessed on the Project Data Sphere website.</p>
+<p>
+<ext-link ext-link-type="uri" xlink:href="https://github.com/ybarmaz/bayesian-ae-reporting/blob/main/data.csv">https://github.com/ybarmaz/bayesian-ae-reporting/blob/main/data.csv</ext-link>
+</p>
+<p>
+<ext-link ext-link-type="uri" xlink:href="https://data.projectdatasphere.org/projectdatasphere/html/content/104">https://data.projectdatasphere.org/projectdatasphere/html/content/104</ext-link>
+</p>
+</sec>
+<ref-list>
+<title>References</title>
+<ref id="c1"><label>1.</label><mixed-citation publication-type="website"><collab>Medicine And Healthcare Products Regulatory Agency</collab>. <source>Gcp Inspection Metrics Report</source>. <year>2018</year>. <ext-link ext-link-type="uri" xlink:href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/706356/GCP_INSPECTIONS_METRICS_2016-2017final_11-05-18_.pdf">https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/706356/GCP_INSPECTIONS_METRICS_2016-2017final_11-05-18_.pdf</ext-link>. Accessed <date-in-citation content-type="access-date">18 Dec 2020</date-in-citation>.</mixed-citation></ref>
+<ref id="c2"><label>2.</label><mixed-citation publication-type="website"><collab>International Conference on Harmonisation of Technical Requirements for Registration of Pharmaceuticals for Human Use</collab>. <source>E26(R2) Guideline for Good Clinical Practices</source>. <year>2016</year>. <ext-link ext-link-type="uri" xlink:href="https://database.ich.org/sites/default/files/E6_R2_Addendum.pdf">https://database.ich.org/sites/default/files/E6_R2_Addendum.pdf</ext-link> Accessed on <date-in-citation content-type="access-date">18 Dec 2020</date-in-citation>.</mixed-citation></ref>
+<ref id="c3"><label>3.</label><mixed-citation publication-type="journal"><string-name><surname>M&#x00E9;nard</surname> <given-names>T.</given-names></string-name>, <string-name><surname>Barmaz</surname> <given-names>Y.</given-names></string-name>, <string-name><surname>Koneswarakantha</surname> <given-names>B.</given-names></string-name>, <string-name><surname>Bowling</surname> <given-names>R.</given-names></string-name>, <string-name><surname>Popko</surname> <given-names>L.</given-names></string-name> <article-title>Enabling Data-driven Clinical Quality Assurance: Predicting Adverse Event Reporting In Clinical Trials Using Machine Learning</article-title>. <source>Drug Saf</source>. <year>2019</year>;<volume>42</volume>(<issue>9</issue>):<fpage>1045</fpage>&#x2013;<lpage>53</lpage>.</mixed-citation></ref>
+<ref id="c4"><label>4.</label><mixed-citation publication-type="journal"><string-name><surname>M&#x00E9;nard</surname> <given-names>T.</given-names></string-name>, <string-name><surname>Koneswarakantha</surname> <given-names>B.</given-names></string-name>, <string-name><surname>Rolo</surname> <given-names>D.</given-names></string-name>, <string-name><surname>Barmaz</surname> <given-names>Y.</given-names></string-name>, <string-name><surname>Bowling</surname> <given-names>R.</given-names></string-name>, <string-name><surname>Popko</surname> <given-names>L.</given-names></string-name> <article-title>Follow-up On The Use Of Machine Learning In Clinical Quality Assurance: Can We Detect Adverse Event under-reporting In Oncology Trials?</article-title> <source>Drug Saf</source>. <year>2020</year>;<volume>43</volume>(<issue>3</issue>):<fpage>295</fpage>&#x2013;<lpage>296</lpage>.</mixed-citation></ref>
+<ref id="c5"><label>5.</label><mixed-citation publication-type="website"><collab>Food and Drug Administration</collab>. <source>Clinical Investigator Inspection List (CLIIL)</source>. <ext-link ext-link-type="uri" xlink:href="https://www.fda.gov/drugs/drug-approvals-and-databases/clinical-investigator-inspection-list-cliil">https://www.fda.gov/drugs/drug-approvals-and-databases/clinical-investigator-inspection-list-cliil</ext-link>. Accessed and searched on <date-in-citation content-type="access-date">18 Dec 2020</date-in-citation></mixed-citation></ref>
+<ref id="c6"><label>6.</label><mixed-citation publication-type="website"><collab>Food and Drug Administration</collab>. <source>Warning letter to AB Science 6/16/15</source> <ext-link ext-link-type="uri" xlink:href="https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/ab-science-06162015">https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/ab-science-06162015</ext-link>. Accessed on <date-in-citation content-type="access-date">18 Dec 2020</date-in-citation>.</mixed-citation></ref>
+<ref id="c7"><label>7.</label><mixed-citation publication-type="journal"><string-name><surname>Sacks</surname> <given-names>L.</given-names></string-name>, <string-name><surname>Shamsuddin</surname> <given-names>H.</given-names></string-name>, <string-name><surname>Yasinskaya</surname> <given-names>Y.</given-names></string-name>, <string-name><surname>Bouri</surname> <given-names>K.</given-names></string-name>, <string-name><surname>Lanthier</surname> <given-names>M.</given-names></string-name>, <string-name><surname>Sherman</surname> <given-names>R.</given-names></string-name> <article-title>Scientific and regulatory reasons for delay and denial of fda approval of initial applications for new drugs, 2000&#x2013;2012</article-title>. <source>JAMA</source>. <year>2014</year>;<volume>311</volume>(<issue>4</issue>):<fpage>378</fpage>&#x2013;<lpage>84</lpage>.</mixed-citation></ref>
+<ref id="c8"><label>8.</label><mixed-citation publication-type="journal"><string-name><surname>Pitrou</surname> <given-names>I.</given-names></string-name>, <string-name><surname>Boutron</surname> <given-names>I.</given-names></string-name>, <string-name><surname>Ahmad</surname> <given-names>N.</given-names></string-name>, <string-name><surname>Ravaud</surname> <given-names>P.</given-names></string-name> <article-title>Reporting of safety results in published reports of randomized controlled trials</article-title>. <source>Arch Intern Med</source>. <year>2009</year>;<volume>169</volume>(<issue>19</issue>):<fpage>1756</fpage>&#x2013;<lpage>61</lpage>.</mixed-citation></ref>
+<ref id="c9"><label>9.</label><mixed-citation publication-type="journal"><string-name><surname>Li</surname> <given-names>H.</given-names></string-name>, <string-name><surname>Hawlk</surname> <given-names>S.</given-names></string-name>, <string-name><surname>Hanna</surname> <given-names>K.</given-names></string-name>, <string-name><surname>Klein</surname> <given-names>G.</given-names></string-name>, <string-name><surname>Petteway</surname> <given-names>S.</given-names></string-name> <article-title>Developing and implementing a comprehensive clinical QA audit program</article-title>. <source>Qual Assur J</source>. <year>2007</year>;<volume>11</volume>:<fpage>128</fpage>&#x2013;<lpage>37</lpage>.</mixed-citation></ref>
+<ref id="c10"><label>10.</label><mixed-citation publication-type="book"><string-name><surname>Gelman</surname> <given-names>A.</given-names></string-name>, <string-name><surname>Carlin</surname> <given-names>JB.</given-names></string-name>, <string-name><surname>Stern</surname> <given-names>HS.</given-names></string-name>, <string-name><surname>Rubin</surname> <given-names>DB</given-names></string-name>. (<year>2004</year>). <source>Bayesian Data Analysis</source>, Second Edition. <publisher-name>Chapman &#x0026; Hall/CRC Texts in Statistical Science. 2004</publisher-name>.</mixed-citation></ref>
+<ref id="c11"><label>11.</label><mixed-citation publication-type="website"><collab>Project Data Sphere</collab>. <ext-link ext-link-type="uri" xlink:href="https://www.projectdatasphere.org/projectdatasphere/html/home">https://www.projectdatasphere.org/projectdatasphere/html/home</ext-link>. Accessed on <date-in-citation content-type="access-date">18 Dec 2020</date-in-citation>.</mixed-citation></ref>
+<ref id="c12"><label>12.</label><mixed-citation publication-type="website"><collab>Data For Clinical Trial Registered NCT00617669</collab>. <source>Project Data Sphere</source>. <ext-link ext-link-type="uri" xlink:href="https://data.projectdatasphere.org/projectdatasphere/html/content/104">https://data.projectdatasphere.org/projectdatasphere/html/content/104</ext-link>. Accessed on <date-in-citation content-type="access-date">18 Dec 2020</date-in-citation>.</mixed-citation></ref>
+<ref id="c13"><label>13.</label><mixed-citation publication-type="website"><string-name><surname>Betancourt</surname> <given-names>M.</given-names></string-name>, <string-name><surname>Girolami</surname> <given-names>M.</given-names></string-name> <source>Hamiltonian Monte Carlo for Hierarchical Models</source>. <year>2013</year>, arXiv <pub-id pub-id-type="arxiv">1312.0906</pub-id>. <ext-link ext-link-type="uri" xlink:href="http://arxiv.org/abs/1312.0906">http://arxiv.org/abs/1312.0906</ext-link>.</mixed-citation></ref>
+<ref id="c14"><label>14.</label><mixed-citation publication-type="journal"><string-name><surname>Duane</surname> <given-names>S.</given-names></string-name>, <string-name><surname>Kennedy</surname> <given-names>AD.</given-names></string-name>, <string-name><surname>Pendleton</surname> <given-names>BJ.</given-names></string-name>, <string-name><surname>Roweth</surname> <given-names>D.</given-names></string-name> <source>Hybrid Monte Carlo. Physics Letters B</source>. <year>1987</year>, <volume>195</volume> (<issue>2</issue>): <fpage>216</fpage>&#x2013;<lpage>222</lpage>.</mixed-citation></ref>
+<ref id="c15"><label>15.</label><mixed-citation publication-type="journal"><string-name><surname>Salvatier</surname> <given-names>J</given-names></string-name>, <string-name><surname>Wiecki</surname> <given-names>TV</given-names></string-name>, <string-name><surname>Fonnesbeck</surname> <given-names>C.</given-names></string-name> <year>2016</year>. <article-title>Probabilistic programming in Python using PyMC3</article-title>. <source>PeerJ Computer Science</source> <volume>2</volume>:<fpage>e55</fpage></mixed-citation></ref>
+<ref id="c16"><label>16.</label><mixed-citation publication-type="website"><string-name><surname>Barmaz</surname> <given-names>Y.</given-names></string-name> <source>Code repository and Jupyter Notebook for the model</source>. <ext-link ext-link-type="uri" xlink:href="https://github.com/ybarmaz/bayesian-ae-reporting/">https://github.com/ybarmaz/bayesian-ae-reporting/</ext-link>. Accessed on <date-in-citation content-type="access-date">18 Dec 2020</date-in-citation>.</mixed-citation></ref>
+<ref id="c17"><label>17.</label><mixed-citation publication-type="website"><collab>Food and Drug Administration</collab>. <source>Guidance on Conduct of Clinical Trials of Medical Products during COVID-19 Public Health Emergency</source>. <ext-link ext-link-type="uri" xlink:href="https://www.fda.gov/regulatory-information/search-fda-guidance-documents/fda-guidance-conduct-clinical-trials-medical-products-during-covid-19-public-health-emergency">https://www.fda.gov/regulatory-information/search-fda-guidance-documents/fda-guidance-conduct-clinical-trials-medical-products-during-covid-19-public-health-emergency</ext-link>. Accessed on <date-in-citation content-type="access-date">18 Dec 2020</date-in-citation>.</mixed-citation></ref>
+<ref id="c18"><label>18.</label><mixed-citation publication-type="journal"><string-name><surname>M&#x00E9;nard</surname>, <given-names>T.</given-names></string-name>, <string-name><surname>Bowling</surname> <given-names>R.</given-names></string-name>, <string-name><surname>Mehta</surname> <given-names>P.</given-names></string-name> <etal>et al.</etal> <article-title>Leveraging analytics to assure quality during the Covid-19 pandemic - The COVACTA clinical study example</article-title>. <source>Contemporary Clin Trials Comm</source>. <year>2020</year>; <volume>20</volume>:<fpage>100662</fpage>.</mixed-citation></ref>
+<ref id="c19"><label>19.</label><mixed-citation publication-type="journal"><string-name><surname>Di</surname> <given-names>J.</given-names></string-name>, <string-name><surname>Wang</surname> <given-names>D.</given-names></string-name>, <string-name><surname>Brashear</surname> <given-names>HR.</given-names></string-name>, <string-name><surname>Dragalin</surname> <given-names>V.</given-names></string-name>, <string-name><surname>Krams</surname> <given-names>M.</given-names></string-name> <article-title>Continuous Event Monitoring Via A Bayesian Predictive Approach</article-title>. <source>Pharmaceut. Statist</source>. <year>2015</year>, <volume>15</volume>(<issue>2</issue>):<fpage>109</fpage>&#x2013;<lpage>122</lpage></mixed-citation></ref>
+<ref id="c20"><label>20.</label><mixed-citation publication-type="journal"><string-name><surname>Ryan</surname>, <given-names>E.G.</given-names></string-name>, <string-name><surname>Bruce</surname>, <given-names>J.</given-names></string-name>, <string-name><surname>Metcalfe</surname>, <given-names>A.J.</given-names></string-name> <etal>et al.</etal> <article-title>Using Bayesian adaptive designs to improve phase III trials: a respiratory care example</article-title>. <source>BMC Med Res Methodol</source> <year>2019, 19:99</year></mixed-citation></ref>
+<ref id="c21"><label>21.</label><mixed-citation publication-type="journal"><string-name><surname>Koneswarakantha</surname>, <given-names>B.</given-names></string-name>, <string-name><surname>M&#x00E9;nard</surname> <given-names>T.</given-names></string-name>, <string-name><surname>Barmaz</surname> <given-names>Y.</given-names></string-name>, <etal>et al.</etal> <article-title>Harnessing the Power of Quality Assurance Data: Can We Use Statistical Modeling for Quality Risk Assessment of Clinical Trials?</article-title>. <source>Ther Innov Regul Sci</source> <year>2020</year>; <volume>54</volume>:<fpage>1227</fpage>&#x2013;<lpage>1235</lpage></mixed-citation></ref>
+<ref id="c22"><label>22.</label><mixed-citation publication-type="journal"><string-name><surname>M&#x00E9;nard</surname>, <given-names>T.</given-names></string-name> <article-title>Letter to the Editor: New Approaches to Regulatory Innovation Emerging During the Crucible of COVID-19</article-title>. <source>Ther Innov Regul Sci</source> <volume>55</volume>, <fpage>631</fpage>&#x2013;<lpage>632</lpage> (<year>2021</year>)</mixed-citation></ref>
+</ref-list>
+<sec id="s5">
+<title>Notes</title>
+<sec id="s5a">
+<title>Author&#x2019;s contributions</title>
+<p>YB developed the model, wrote the code and produced the figures. YB and TM wrote the manuscript. TM quality checked the manuscript. All authors read and approved the final version of the manuscript.</p>
+</sec>
+</sec>
+<ack>
+<title>Acknowledgements</title>
+<p>Content review was provided by Kelly Kwon who was employed by Roche/Genentech at the time this research was completed. Project Data Sphere data was curated by Donato Rolo and Bj&#x00F6;rn Koneswarakantha (who were employed by Roche/Genentech at the time this research was completed).</p>
+</ack>
+<sec id="s6">
+<title>Compliance with Ethical Standards</title>
+<sec id="s6a">
+<title>Funding</title>
+<p>Funding for development and testing of the safety reporting model was supplied by Roche.</p>
+</sec>
+<sec id="s6b">
+<title>Conflict of Interest</title>
+<p>Yves Barmaz and Timoth&#x00E9; M&#x00E9;nard were employed by Roche at the time this research was completed.</p>
+</sec>
+<sec id="s6c">
+<title>Ethics Statement</title>
+<p>All human subject data used in this analysis were used in a fully de-identified format (see also the link to Project Data Sphere below)</p>
+</sec>
+<sec id="s6d">
+<title>Data and Code availability</title>
+<p>The data can be accessed on Project Data Sphere and through the Supplementary Material #1 <ext-link ext-link-type="uri" xlink:href="https://data.projectdatasphere.org/projectdatasphere/html/content/104">https://data.projectdatasphere.org/projectdatasphere/html/content/104</ext-link></p>
+<p>The code and the curated data are available on <ext-link ext-link-type="uri" xlink:href="https://github.com/ybarmaz/bayesian-ae-reporting/">https://github.com/ybarmaz/bayesian-ae-reporting/</ext-link></p>
+</sec>
+</sec>
+</back>
+</article>

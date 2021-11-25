@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.2d1 20170631//EN" "JATS-archivearticle1.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" article-type="article" dtd-version="1.2d1" specific-use="production" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="publisher-id">MEDRXIV</journal-id>
+<journal-title-group>
+<journal-title>medRxiv</journal-title>
+<abbrev-journal-title abbrev-type="publisher">medRxiv</abbrev-journal-title>
+</journal-title-group>
+<publisher>
+<publisher-name>Cold Spring Harbor Laboratory</publisher-name>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1101/2020.10.22.20216028</article-id>
+<article-version>1.1</article-version>
+<article-categories>
+<subj-group subj-group-type="hwp-journal-coll">
+<subject>Oncology</subject>
+</subj-group>
+</article-categories>
+<title-group>
+<article-title>Personalized Single-Cell Proteogenomics to Distinguish Acute Myeloid Leukemia from Non-Malignant Clonal Hematopoiesis</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-4877-9354</contrib-id>
+<name><surname>Dillon</surname><given-names>Laura W.</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="author-notes" rid="n1">&#x002A;</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Ghannam</surname><given-names>Jack</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="author-notes" rid="n1">&#x002A;</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Nosiri</surname><given-names>Chidera</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="author-notes" rid="n1">&#x002A;</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Gui</surname><given-names>Gege</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Goswami</surname><given-names>Meghali</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Calvo</surname><given-names>Katherine R.</given-names></name>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Lindblad</surname><given-names>Katherine E.</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Oetjen</surname><given-names>Karolyn A.</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Wilkerson</surname><given-names>Matthew</given-names></name>
+<xref ref-type="aff" rid="a3">3</xref>
+<xref ref-type="aff" rid="a4">4</xref>
+<xref ref-type="aff" rid="a5">5</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Soltis</surname><given-names>Anthony R.</given-names></name>
+<xref ref-type="aff" rid="a3">3</xref>
+<xref ref-type="aff" rid="a4">4</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Sukumar</surname><given-names>Gauthaman</given-names></name>
+<xref ref-type="aff" rid="a4">4</xref>
+<xref ref-type="aff" rid="a6">6</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Dalgard</surname><given-names>Clifton L.</given-names></name>
+<xref ref-type="aff" rid="a5">5</xref>
+<xref ref-type="aff" rid="a6">6</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Thompson</surname><given-names>Julie</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Valdez</surname><given-names>Janet</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>DeStefano</surname><given-names>Christin B.</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Lai</surname><given-names>Catherine</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Sciambi</surname><given-names>Adam</given-names></name>
+<xref ref-type="aff" rid="a7">7</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Durruthy-Durruthy</surname><given-names>Robert</given-names></name>
+<xref ref-type="aff" rid="a7">7</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Llanso</surname><given-names>Aaron</given-names></name>
+<xref ref-type="aff" rid="a7">7</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Gulati</surname><given-names>Saurabh</given-names></name>
+<xref ref-type="aff" rid="a7">7</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Wang</surname><given-names>Shu</given-names></name>
+<xref ref-type="aff" rid="a7">7</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Ooi</surname><given-names>Aik</given-names></name>
+<xref ref-type="aff" rid="a7">7</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Dagur</surname><given-names>Pradeep K.</given-names></name>
+<xref ref-type="aff" rid="a8">8</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>McCoy</surname><given-names>J. Philip</given-names></name>
+<xref ref-type="aff" rid="a8">8</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Burr</surname><given-names>Patrick</given-names></name>
+<xref ref-type="aff" rid="a9">9</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Li</surname><given-names>Yuesheng</given-names></name>
+<xref ref-type="aff" rid="a9">9</xref>
+</contrib>
+<contrib contrib-type="author" corresp="yes">
+<name><surname>Hourigan</surname><given-names>Christopher S.</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="corresp" rid="cor1">&#x2020;</xref>
+</contrib>
+<aff id="a1"><label>1</label><institution>Laboratory of Myeloid Malignancies, Hematology Branch, National Heart, Lung, and Blood Institute, National Institutes of Health</institution>, Bethesda, MD 20892 <country>United States</country></aff>
+<aff id="a2"><label>2</label><institution>Department of Laboratory Medicine, Clinical Center, National Institutes of Health</institution>, Bethesda, MD 20892 <country>United States</country></aff>
+<aff id="a3"><label>3</label><institution>Precision Medicine Initiative for Military Medical Research and Education, Uniformed Services University of the Health Sciences</institution>, Bethesda, MD 20814</aff>
+<aff id="a4"><label>4</label><institution>Henry M. Jackson Foundation for the Advancement of Military Medicine</institution>, Rockville, MD 20817</aff>
+<aff id="a5"><label>5</label><institution>Department of Anatomy, Physiology and Genetics, Uniformed Services University of the Health Sciences</institution>, Bethesda, MD 20814</aff>
+<aff id="a6"><label>6</label><institution>The American Genome Center, Uniformed Services University of the Health Sciences</institution>, Bethesda, MD 20814</aff>
+<aff id="a7"><label>7</label><institution>Mission Bio, Inc., South San Francisco</institution>, CA, 94080, <country>USA</country></aff>
+<aff id="a8"><label>8</label><institution>Flow Cytometry Core, National Heart, Lung, and Blood Institute, National Institutes of Health</institution>, Bethesda, MD 20892 <country>United States</country></aff>
+<aff id="a9"><label>9</label><institution>DNA Sequencing and Genomics Core, National Heart, Lung, and Blood Institute, National Institutes of Health</institution>, Bethesda, MD 20892 <country>United States</country></aff>
+</contrib-group>
+<author-notes>
+<corresp id="cor1"><label>&#x2020;</label><bold>Corresponding author:</bold> Christopher S. Hourigan, DM, DPhil, Laboratory of Myeloid Malignancies, National Heart, Lung, and Blood Institute, National Institutes of Health, Room 10CRC 5-5130, 10 Center Drive, Bethesda, Maryland 20814-1476; email: <email>hourigan@nih.gov</email></corresp>
+<fn id="n1" fn-type="equal"><label>&#x002A;</label><p>These authors contributed equally</p></fn>
+</author-notes>
+<pub-date pub-type="epub">
+<year>2020</year>
+</pub-date>
+<elocation-id>2020.10.22.20216028</elocation-id>
+<history>
+<date date-type="received">
+<day>22</day>
+<month>10</month>
+<year>2020</year>
+</date>
+<date date-type="rev-recd">
+<day>22</day>
+<month>10</month>
+<year>2020</year>
+</date>
+<date date-type="accepted">
+<day>26</day>
+<month>10</month>
+<year>2020</year>
+</date>
+</history>
+<permissions>
+<copyright-statement>&#x00A9; 2020, Posted by Cold Spring Harbor Laboratory</copyright-statement>
+<copyright-year>2020</copyright-year>
+<license license-type="creative-commons" xlink:href="https://creativecommons.org/publicdomain/zero/1.0/"><license-p>This article is a US Government work. It is not subject to copyright under 17 USC 105 and is also made available for use under a CC0 license</license-p></license>
+</permissions>
+<self-uri xlink:href="20216028.pdf" content-type="pdf" xlink:role="full-text"/>
+<abstract>
+<title>Abstract</title>
+<p>Genetic mutations associated with acute myeloid leukemia can also be detected in age-related clonal hematopoiesis, making confident assignment of detected variants to malignancy challenging particularly in the post-treatment setting. This has implications for measurable residual disease monitoring, where the relationship between sequencing and flow cytometry is also imperfect. We show, using whole-genome-sequencing informed patient-personalized single-cell DNA and antibody-oligonucleotide sequencing, that it is possible to resolve immunophenotypic identity of clonal architecture.</p>
+</abstract>
+<counts>
+<page-count count="16"/>
+</counts>
+</article-meta>
+<notes>
+<notes notes-type="competing-interest-statement">
+<title>Competing Interest Statement</title><p>CSH: Research support from Merck and Sellas.
+AS, RDD, AL, SG, SW, and AO: Employed by and own equity in Mission Bio, Inc.
+CL: Speakers' Bureau: Astellas, Jazz Pharma; Consulting or Advisory Role: Daiichi, Jazz Pharma, Amgen, Abbvie, Macrogenics, Agios.</p></notes>
+<notes notes-type="financial-disclosure">
+<title>Funding Statement</title><p>This work was supported by the Intramural Research Program of the National Heart, Lung, and Blood Institute (NHLBI) of the National Institutes of Health (NIH) and by the Department of Defense award: HU0001-18-2-0038 to CLD.
+This work utilized the NHLBI Flow Cytometry Core, the NHLBI Sequencing and Genomics Core and the computational resources of the NIH HPC Biowulf cluster (http://hpc.nih.gov).</p></notes>
+<notes notes-type="disclosures">
+<title>Author Declarations</title><p>I confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.</p><p>Yes</p><p>The details of the IRB/oversight body that provided approval or exemption for the research described are given below:</p><p>Samples were collected from patients with relapsed or refractory AML after receipt of written informed consent on a National Heart, Lung, and Blood Institute institutional review board-approved protocol in accordance with the Declaration of Helsinki.</p><p>All necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived.</p><p>Yes</p><p>I understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).</p><p>Yes</p><p>I have followed all appropriate research reporting guidelines and uploaded the relevant EQUATOR Network research reporting checklist(s) and other pertinent material as supplementary files, if applicable.</p><p>Yes</p></notes>
+</notes>
+</front>
+<body>
+<sec id="s1">
+<title>Main text</title>
+<p>Age-related clonal hematopoiesis (also known as clonal hematopoiesis of indeterminate potential) is seen in those without hematological malignancy and with a somatic mutation detectable in a clonal population of mature blood cells<sup><xref ref-type="bibr" rid="c1">1</xref>-<xref ref-type="bibr" rid="c3">3</xref></sup>. These mutations, most commonly in epigenetic regulators <italic>DNMT3A</italic> and <italic>TET2</italic>, typically are found in older individuals and appear to be associated with an increased risk for death, predominately from inflammation-associated vascular events<sup><xref ref-type="bibr" rid="c4">4</xref></sup>. These mutations are also common in patients with Acute Myeloid Leukemia (AML)<sup><xref ref-type="bibr" rid="c5">5</xref></sup> and can make genomic measurement of residual disease challenging<sup><xref ref-type="bibr" rid="c6">6</xref>,<xref ref-type="bibr" rid="c7">7</xref></sup>. Single-cell DNA-sequencing (scDNA-seq) for AML has recently been described<sup><xref ref-type="bibr" rid="c8">8</xref>,<xref ref-type="bibr" rid="c9">9</xref></sup> but has been unable to detect novel chromosomal fusions that are the key, and often only, defining feature for multiple subtypes of this disease. We performed deep laboratory interrogation of samples, using whole-genome and targeted error-corrected sequencing, scDNA-seq with antibody-oligonucleotide conjugates and multiparameter flow cytometry, from three adult patients with relapsed AML who harbored mutations detected potentially attributable to either leukemia or clonal hematopoiesis (<xref rid="fig1" ref-type="fig">Figure 1A</xref>).</p>
+<fig id="fig1" position="float" fig-type="figure">
+<label>Figure 1.</label>
+<caption><title>Clinical and genetic characterization.</title>
+<p>(A) Patient characteristics and AML genetics (B) Whole genome sequencing identified structural aberrations consistent with cytogenetic studies (chromosomal locations displayed on the x-axis). Top: structural changes identified by the structural variant caller. Middle: Total normalized somatic copy number estimates. Bottom: B-allele frequency at binned regions across the genome. Additional genetic material from chromosome 8 along with allelic imbalance was observed in patient 1, consistent with trisomy 8. Data visualized using Illumina Analysis Software.</p></caption>
+<graphic xlink:href="20216028v1_fig1.tif"/>
+</fig>
+<p>Patient 1 was a man in his mid 70s with a second relapse of AML. Comorbidities included type 2 diabetes with neuropathy, retinopathy and peripheral vascular disease, hypertension, hyperlipidemia, coronary arterial disease, congestive heart failure, active tobacco use with chronic obstructive pulmonary disease and obstructive sleep apnea. Prior chemotherapy included clofarabine and cytarabine. Clinical flow cytometry identified a 1&#x0025; CD34 positive population of abnormal blasts in blood. Blood marrow metaphase cytogenetics revealed a 47,XY karyotype with inversion of chromosome 16 and trisomy of chromosome 8 in four metaphases. A mutation in <italic>DNMT3A</italic> was noted by clinical DNA-sequencing, with additional mutations in <italic>DNMT3A</italic> and <italic>TET2</italic> also noted in error-corrected research DNA-sequencing.</p>
+<p>Patient 2 was a woman in her mid 60s with a second relapse of AML. No vascular, diabetic, or other comorbidities were noted. Prior chemotherapy had included three rounds of intensive chemotherapy (idarubicin and cytarabine followed by cytarabine consolidation, then salvage therapy with cytarabine, etoposide and mitoxantrone). Clinical flow cytometry identified a 9&#x0025; CD117 positive population of abnormal blasts in bone marrow. CD117 immunohistochemistry was positive for 10&#x0025; of cells. Translocation t(6;14)(q25;q22) was observed in nine of twenty metaphases examined. Clinical DNA-sequencing noted mutations in <italic>DNMT3A, U2AF1, NPM1</italic> and <italic>CUX1</italic>.</p>
+<p>Patient 3 was a man in his early 70s with a first relapse of AML. Concurrent comorbidities included hypertension and hyperlipidemia. He had previously received intensive chemotherapy with idarubicin and cytarabine induction followed by cytarabine consolidation. Clinical flow cytometry identified a 4.4&#x0025; CD117 positive population of abnormal blasts in bone marrow. Clinical DNA-sequencing noted mutations in both <italic>DMNT3A</italic> and <italic>TET2</italic> and research sequencing confirmed these and also identified mutations in <italic>GATA2</italic> and <italic>CEBPA</italic>.</p>
+<p>In all three patients the relationship between mutations discovered by targeted DNA-sequencing, leukemia-associated chromosomal abnormalities, and aberrant immunophenotype was unclear based on clinical evaluation.</p>
+<p>In the first two patients, with known chromosomal structural abnormality from clinical metaphase cytogenetics, whole genome sequencing was performed for exact DNA breakpoint determination using bone marrow aspirate sorted for either CD34 or CD117 positivity based on clinical immunophenotype (<xref rid="fig1" ref-type="fig">Figure 1B</xref>, Supplementary Figure 1). Patient specific primers for scDNA-seq (Mission Bio, Inc.) were then designed to detect these breakpoints and also mutations identified by clinical and research targeted DNA-sequencing (Supplementary Table 1). Both chromosomal breakpoints and mutations found by bulk targeted DNA-sequencing were detected by scDNA-seq (Supplementary Figure 2).</p>
+<p>Profiling cell surface protein expression using antibody-oligo conjugates together with scDNA-seq has recently been described<sup><xref ref-type="bibr" rid="c10">10</xref></sup>. The use of antibody-oligo conjugates in these scDNA-seq experiments could approximate the cell-surface immunophenotypic expression distributions as benchmarked by multiparameter flow cytometry (Supplementary Figure 3). This ability to pair cell surface immunophenotype with scDNA-seq genotyping for both chromosomal aberrations and sequence mutations allowed us to fully resolve the relationship between clonal hematopoiesis and AML in all three patients.</p>
+<p>Five independent genetically-defined clones were found in peripheral blood mononuclear cells (PBMCs) of Patient 1 (<xref rid="fig2" ref-type="fig">Figure 2A</xref>). The pathognomonic inversion 16 breakpoint was detected in 13&#x0025; of cells examined and was mutually exclusive from clones containing <italic>DNMT3A</italic> and <italic>TET2</italic> mutations. Trisomy of chromosome 8 was found in cells containing inversion 16 but not in other clones. While clinical flow cytometry described a 1&#x0025; abnormal blast population positive for CD13, CD34 and CD117, this particular immunophenotype represented only half of the cells genotyped as containing inversion 16 and trisomy 8. The leukemic genotype was also found in cells with an immunophenotype consistent with more mature myeloid cell types (CD11b, CD33 and CD123 positive) but notably not in T (CD3) or B (CD19) lymphocytes. In contrast, the three subclones each containing one mutation in either <italic>DNMT3A</italic> or <italic>TET2</italic> did not have any restriction to myeloid or lymphoid lineages.</p>
+<fig id="fig2" position="float" fig-type="figure">
+<label>Figure 2.</label>
+<caption><title>Independent and sequential development of leukemia from clonal hematopoiesis.</title>
+<p>Clonal architecture as determined by single-cell DNA and antibody-oligonucleotide sequencing. Left: Genomic subclones with wild type (WT), heterozygous (HET), present (Gain/&#x002B;) or absent (-) features. Center: Immunophenotype as a percentage of each subclone. Right: Cell surface protein expression for each subclone. For patient 1, cells clustered by cell surface protein expression (2A lower), UMAP shown colored by immunophenotype (left) and genotype, with both leukemic subclone (middle) and one clonal hematopoiesis subclone (right) depicted.</p></caption>
+<graphic xlink:href="20216028v1_fig2.tif"/>
+</fig>
+<p>Unlike this first case, patients 2 and 3 both had AML that likely arose from a preceding clonal hematopoiesis cell population. ScDNA-seq of bone marrow mononuclear cells (BMMCs) from patient 2 demonstrated that 20&#x0025; of cells contained the leukemia defining features of t(6;14) translocation and mutated <italic>U2AF1</italic>, in addition to the <italic>DNMT3A</italic> and <italic>CUX1</italic> mutations which were within but not specific to this clone (<xref rid="fig2" ref-type="fig">Figure 2B</xref>). The <italic>NPM1</italic> mutation was incompletely genotyped. This malignant clone had a diverse range of immunophenotypes including both CD117 positive and negative populations. Cells containing mutations in <italic>DNMT3A</italic> and <italic>CUX1</italic> but not the t(6;14) translocation and <italic>U2AF1</italic> mutation represented just 5&#x0025; of cells.</p>
+<p>ScDNA-seq of BMMCs from patient 3 identified a clone representing 16&#x0025; of cells which contained <italic>DNMT3A, TET2, CEBPA</italic> and <italic>GATA2</italic> mutations and was markedly enriched for CD117 cell surface protein expression (<xref rid="fig2" ref-type="fig">Figure 2C</xref>). <italic>CEBPA</italic> was incompletely genotyped but only found within cells with mutated <italic>GATA2</italic>. Cells containing mutations in <italic>DNMT3A</italic> and <italic>TET2</italic> but not <italic>GATA2</italic> or <italic>CEBPA</italic>, presumably representing the founder population of non-malignant clonal hematopoiesis, represented 26&#x0025; of all bone marrow cells sequenced and had a diverse spectrum of immunophenotypes ranging across both myeloid and lymphoid lineages.</p>
+<p>This is the first description of whole-genome sequencing informed patient-personalized scDNA-seq to accurately distinguish leukemic cells from clonal hematopoiesis. This is also the first direct comparison of antibody-oligonucleotide and scDNA-seq with concurrent multiparameter flow cytometry. The ability to determine the optimum combinations of immunophenotypic markers necessary to identify malignant subclones may have utility in flow cytometric approaches for measurement of residual AML, which currently underrepresent total genetically-defined leukemic burden. While targeted DNA-sequencing cannot determine if mutations associated with clonal hematopoiesis are also represented within the malignant clone, detection of pathognomonic fusion genes by single-cell DNA and antibody-oligonucleotide sequencing can resolve, and determine the immunophenotype of, the relevant leukemic clonal architecture allowing comprehensive and personalized assessment of AML. This integrated multimodal approach has implications for precision medicine in AML and other diseases.</p>
+</sec>
+<sec id="s2">
+<title>Methods</title>
+<sec id="s2a">
+<title>Clinical samples</title>
+<p>Bone marrow (BM) aspirate and peripheral blood (PB) samples were collected from patients with relapsed or refractory AML after receipt of written informed consent on a National Heart, Lung and Blood Institute institutional review board&#x2013;approved protocol in accordance with the Declaration of Helsinki. BM mononuclear cells (BMMCs) were purified from BM aspirate and peripheral blood mononuclear cells (PBMCs) from PB using density centrifugation, cryopreserved, and stored in liquid nitrogen. Genomic DNA (gDNA) was isolated either from fresh heparinized BM aspirate using the QIAamp DNA Blood Midi kit or from thawed PBMCs or BMMCs using the QIAamp DNA Micro kit (Qiagen).</p>
+</sec>
+<sec id="s2b">
+<title>Targeted DNA sequencing</title>
+<p>Mutations were identified in each patient by error-corrected DNA-sequencing of 50ng of gDNA using a panel covering 75 genes commonly mutated in myeloid malignancies (Myeloid VariantPlex, ArcherDx). The resulting libraries were subjected to paired-end 150-bp sequencing on a Miseq (Illumina). Raw sequencing FASTQ files were analyzed using the Archer Analysis software version 6.0.2.3. AML-associated variants (<xref rid="fig1" ref-type="fig">Figure 1A</xref>), with a minimum variant allele frequency (VAF) of 0.01 were identified using information regarding UMI read families, background error rate models, unique start sites, strand-specific priming, homopolymer runs, and predicted variant consequence.</p>
+</sec>
+<sec id="s2c">
+<title>Whole genome sequencing</title>
+<p>For patients with known cytogenetic rearrangements (Patients 1 and 2), whole genome sequencing (WGS) was performed to determine the DNA breakpoint locations. gDNA isolated from buccal swabs and microbead (Miltenyi Biotech)-positively enriched CD34 or CD117 positive cells from BMMCs was used for WGS library preparation using the TruSeq DNA PCR-Free kit with ligation of IDT for Illumina TruSeq DNA UD Indexes. Libraries were clustered in a single library per lane topography with (5 lanes per AML library, 1 lane per germline library) on a cBot2 (Illumina) before sequencing on a HiSeq X platform (Illumina) to generate paired-end 150bp reads. Whole genome sequencing raw data was converted from BCL to FASTQ format using Illumina&#x2019;s bcl2fastq2 v2.20. Samples were processed by the HAS2.2 (Illumina) resequencing analysis workflow. Reads were aligned to the hg38 reference genome plus decoy sequences using isaac (version Isaac-04.17.06.15). Then, matched tumor and normal results were analyzed by Illumina&#x2019;s tumor normal workflow, which included somatic variant detection by strelka2 (version 2.80) and somatic structural variant detection by manta (version 1.1.1) and somatic copy number detection by canvas (version 1.28.0.272). Breakpoint locations for fusion partners was chosen for further analysis (<xref rid="fig1" ref-type="fig">Figure 1AB</xref>, Supplementary Figure 1).</p>
+</sec>
+<sec id="s2d">
+<title>Single-cell DNA and Protein sequencing</title>
+<p>Single-cell DNA sequencing with antibody-oligonucleotide staining was performed using the MissionBio Tapestri single-cell DNA sequencing V2 platform, per manufacturer&#x2019;s instructions. In short, custom single-cell DNA sequencing panels targeting the patient-specific mutations and chromosomal structural abnormalities (<xref rid="fig1" ref-type="fig">Figure 1A</xref>, Supplementary Table 1) and oligonucleotide-conjugated antibodies (AOC) targeting cell surface proteins of interest (Supplementary Table 2) were designed and manufactured by MissionBio. Approximately 815,000 thawed BMMCs or PBMCs were stained for 30 min at room temperature with the AOC pool followed by four rounds of washing with DPBS containing 7&#x0025; FBS. Stained cells were resuspended in cell buffer and subjected to microfluidic encapsulation, lysis, and cell barcoding on the Tapestri instrument. Amplification of the targeted DNA regions and antibody oligonucleotide tags was performed by incubating the barcoded DNA emulsions in a thermocycler as follows: 98&#x00B0;C for 6 min (4&#x00B0;C/sec); 11 cycles of 95&#x00B0;C for 30 sec, 72&#x00B0;C for 10 sec, 61&#x00B0;C for 3 min, 72&#x00B0;C for 20 sec (1&#x00B0;C/sec); 13 cycles of 95&#x00B0;C for 30 sec, 72&#x00B0;C for 10 sec, 48&#x00B0;C for 3 min, 72&#x00B0;C for 20 sec (1&#x00B0;C/sec); and 72&#x00B0;C for 6 min (4&#x00B0;C/sec). Emulsions were broken and DNA digested and purified with 0.7X SPRISelect reagent (Beckman Coulter). The beads were pelleted, and the supernatant retained for antibody library preparation, while the remaining beads were washed with 80&#x0025; ethanol and the DNA targets eluted in nuclease-free water. The supernatant containing the antibody tags was incubated with a biotinylated capture oligo (/5Biosg/CGAGATGACTACGCTACTCATGG/3C6/, Integrated DNA Technologies) at 96&#x00B0;C for 5 min, followed by ice for 5 min, and recovered with streptavidin beads (Dynabead MyOne Streptavidin C1, Thermo Fisher). Indexed Illumina libraries were generated by amplifying DNA libraries with MissionBio V2 Index Primers and protein libraries bound to streptavidin beads with i5 and i7 index primers (Integrated DNA Technologies) in the thermocycler using the following program: 95&#x00B0;C for 3 min; 10 cycles (DNA library) or 20 cycles (protein library) of 98&#x00B0;C for 20 sec, 62&#x00B0;C for 20 sec, 72&#x00B0;C for 45 sec; 72&#x00B0;C for 2 min. Final libraries were purified with 0.69X (DNA) or 0.9X (protein) SPRISelect reagent. Libraries were pooled and subjected to paired-end 150-bp sequencing on a Novaseq 6000 (Illumina).</p>
+<p>Raw FASTQ files were analyzed using the Tapestri pipeline (MissionBio) and custom python scripts. An average of 1,797 cells were sequenced per patient (Supplementary Table 3). SNVs and indels identified via GATK were filtered for quality score, read depth, and minimum frequency, after which UMAP dimension reduction and clustering were applied to identify subclone populations. The presence of inversions or translocations in those subclones were noted by counting amplicons spanning the splice junctions. Copy number variation was calculated by normalizing read counts for each DNA panel target to the wild type subpopulation and then observing a relative gain or loss of reads. Protein expression was calculated with a centered-log ratio transformation on the raw antibody counts to normalize for read depth variation between cells. From that, immunophenotypes were identified via UMAP dimension reduction and k-means clustering; the protein signature of each cluster was calculated by observing when the median expression for each target surpassed a fixed threshold across proteins.</p>
+</sec>
+<sec id="s2e">
+<title>Flow Cytometry</title>
+<p>Thawed PBMCs or BMMCs were resuspended in Cell Staining Buffer (BioLegend) and blocked with Human TruStain FcX Fc receptor blocking solution (BioLegend) for 10 min. Cells were stained with a 1:100 dilution of Zombie UV&#x2122; Fixable Viability dye (BioLegend) for 10 min and then incubated with 5&#x03BC;L of each antibody listed in Supplementary Table 4 for 20 min. All steps were performed at ambient temperatures. At least 100,000 events were acquired with a BD FACSymphony; data were analyzed with FlowJo Software version 10 (BD).</p>
+</sec>
+</sec>
+<sec sec-type="supplementary-material">
+<title>Supporting information</title>
+<supplementary-material>
+<label>Supplementary Appendix</label>
+<media xlink:href="supplements/216028_file02.pdf" />
+</supplementary-material>
+</sec>
+</body>
+<back>
+<sec sec-type="data-availability">
+<title>Data Availability</title>
+<p>Raw data is available upon request and will be submitted to dbGaP prior to formal publication.</p>
+</sec>
+<ack>
+<title>Acknowledgements</title>
+<p>This work was supported by the Intramural Research Program of the National Heart, Lung, and Blood Institute (NHLBI) of the National Institutes of Health (NIH) and by the Department of Defense award: HU0001-18-2-0038 to CLD.</p>
+<p>This work utilized the NHLBI Flow Cytometry Core, the NHLBI Sequencing and Genomics Core and the computational resources of the NIH HPC Biowulf cluster (<ext-link ext-link-type="uri" xlink:href="http://hpc.nih.gov">http://hpc.nih.gov</ext-link>).</p>
+<p>The opinions and assertions expressed herein are those of the author(s) and do not necessarily reflect the official policy or position of the Uniformed Services University or the Department of Defense, or the Henry M. Jackson Foundation for the Advancement of Military Medicine, Inc.</p>
+</ack>
+<sec id="s3">
+<title>Conflicts of Interest</title>
+<p><bold>CSH:</bold> Research support from Merck and Sellas.</p>
+<p><bold>AS, RDD, AL, SG, SW, and AO:</bold> Employed by and own equity in Mission Bio, Inc.</p>
+<p><bold>CL:</bold> Speakers&#x2019; Bureau: Astellas, Jazz Pharma; Consulting or Advisory Role: Daiichi, Jazz Pharma, Amgen, Abbvie, Macrogenics, Agios</p>
+</sec>
+<ref-list>
+<title>References</title>
+<ref id="c1"><label>1.</label><mixed-citation publication-type="journal"><string-name><surname>Xie</surname>, <given-names>M.</given-names></string-name>, <etal>et al.</etal> <article-title>Age-related mutations associated with clonal hematopoietic expansion and malignancies</article-title>. <source>Nat Med</source> <volume>20</volume>, <fpage>1472</fpage>&#x2013;<lpage>1478</lpage> (<year>2014</year>).</mixed-citation></ref>
+<ref id="c2"><label>2.</label><mixed-citation publication-type="journal"><string-name><surname>Busque</surname>, <given-names>L.</given-names></string-name>, <etal>et al.</etal> <article-title>Recurrent somatic TET2 mutations in normal elderly individuals with clonal hematopoiesis</article-title>. <source>Nat Genet</source> <volume>44</volume>, <fpage>1179</fpage>&#x2013;<lpage>1181</lpage> (<year>2012</year>).</mixed-citation></ref>
+<ref id="c3"><label>3.</label><mixed-citation publication-type="journal"><string-name><surname>Young</surname>, <given-names>A.L.</given-names></string-name>, <string-name><surname>Challen</surname>, <given-names>G.A.</given-names></string-name>, <string-name><surname>Birmann</surname>, <given-names>B.M.</given-names></string-name> &#x0026; <string-name><surname>Druley</surname>, <given-names>T.E.</given-names></string-name> <article-title>Clonal haematopoiesis harbouring AML-associated mutations is ubiquitous in healthy adults</article-title>. <source>Nat Commun</source> <volume>7</volume>, <fpage>12484</fpage> (<year>2016</year>).</mixed-citation></ref>
+<ref id="c4"><label>4.</label><mixed-citation publication-type="journal"><string-name><surname>Jaiswal</surname>, <given-names>S.</given-names></string-name>, <etal>et al.</etal> <article-title>Clonal Hematopoiesis and Risk of Atherosclerotic Cardiovascular Disease</article-title>. <source>N Engl J Med</source> <volume>377</volume>, <fpage>111</fpage>&#x2013;<lpage>121</lpage> (<year>2017</year>).</mixed-citation></ref>
+<ref id="c5"><label>5.</label><mixed-citation publication-type="journal"><string-name><surname>Tyner</surname>, <given-names>J.W.</given-names></string-name>, <etal>et al.</etal> <article-title>Functional genomic landscape of acute myeloid leukaemia</article-title>. <source>Nature</source> <volume>562</volume>, <fpage>526</fpage>&#x2013;<lpage>531</lpage> (<year>2018</year>).</mixed-citation></ref>
+<ref id="c6"><label>6.</label><mixed-citation publication-type="journal"><string-name><surname>Jongen-Lavrencic</surname>, <given-names>M.</given-names></string-name>, <etal>et al.</etal> <article-title>Molecular Minimal Residual Disease in Acute Myeloid Leukemia</article-title>. <source>N Engl J Med</source> <volume>378</volume>, <fpage>1189</fpage>&#x2013;<lpage>1199</lpage> (<year>2018</year>).</mixed-citation></ref>
+<ref id="c7"><label>7.</label><mixed-citation publication-type="journal"><string-name><surname>Hourigan</surname>, <given-names>C.S.</given-names></string-name>, <etal>et al.</etal> <article-title>Impact of Conditioning Intensity of Allogeneic Transplantation for Acute Myeloid Leukemia With Genomic Evidence of Residual Disease</article-title>. <source>J Clin Oncol</source> <volume>38</volume>, <fpage>1273</fpage>&#x2013;<lpage>1283</lpage> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c8"><label>8.</label><mixed-citation publication-type="other"><string-name><surname>Miles</surname>, <given-names>L.A.</given-names></string-name>, <etal>et al.</etal> <article-title>Single cell mutational profiling delineates clonal trajectories in myeloid malignancies</article-title>. <source>bioRxiv</source> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c9"><label>9.</label><mixed-citation publication-type="other"><string-name><surname>Morita</surname>, <given-names>K.</given-names></string-name>, <etal>et al.</etal> <article-title>Clonal Evolution of Acute Myeloid Leukemia Revealed by High-Throughput Single-Cell Genomics</article-title>. <source>bioRxiv</source> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c10"><label>10.</label><mixed-citation publication-type="other"><string-name><surname>Demaree</surname>, <given-names>B.</given-names></string-name>, <etal>et al.</etal> <article-title>Joint profiling of proteins and DNA in single cells reveals extensive proteogenomic decoupling in leukemia</article-title>. <source>bioRxiv</source> (<year>2020</year>).</mixed-citation></ref>
+</ref-list>
+</back>
+</article>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.2d1 20170631//EN" "JATS-archivearticle1.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" article-type="article" dtd-version="1.2d1" specific-use="production" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="publisher-id">MEDRXIV</journal-id>
+<journal-title-group>
+<journal-title>medRxiv</journal-title>
+<abbrev-journal-title abbrev-type="publisher">medRxiv</abbrev-journal-title>
+</journal-title-group>
+<publisher>
+<publisher-name>Cold Spring Harbor Laboratory</publisher-name>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1101/2020.12.14.20248190</article-id>
+<article-version>1.1</article-version>
+<article-categories>
+<subj-group subj-group-type="hwp-journal-coll">
+<subject>Health Policy</subject>
+</subj-group>
+</article-categories>
+<title-group>
+<article-title>Utility of COVID-19 Decision Rules Related to Consecutive Decline in Positivity or Hospitalizations: A Data-driven Simulation Study</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-1185-3987</contrib-id>
+<name><surname>Ejima</surname><given-names>Keisuke</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Maki</surname><given-names>Kevin C.</given-names></name>
+<xref ref-type="aff" rid="a2">2</xref>
+<xref ref-type="aff" rid="a3">3</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Golzarri-Arroyo</surname><given-names>Lilian</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author" corresp="yes">
+<name><surname>Allison</surname><given-names>David B.</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="corresp" rid="cor1">&#x002A;</xref>
+</contrib>
+<aff id="a1"><label>1</label><institution>Department of Epidemiology and Biostatistics, Indiana University School of Public Health- Bloomington</institution>, Bloomington, IN, <country>USA</country></aff>
+<aff id="a2"><label>2</label><institution>Department of Applied Health Science, Indiana University School of Public Health- Bloomington</institution>, Bloomington, IN, <country>USA</country></aff>
+<aff id="a3"><label>3</label><institution>Midwest Biomedical Research</institution>, Addison, IL, <country>USA</country></aff>
+</contrib-group>
+<author-notes>
+<corresp id="cor1"><label>&#x002A;</label>Corresponding author; email: <email>kejima@iu.edu</email></corresp>
+</author-notes>
+<pub-date pub-type="epub">
+<year>2020</year>
+</pub-date>
+<elocation-id>2020.12.14.20248190</elocation-id>
+<history>
+<date date-type="received">
+<day>14</day>
+<month>12</month>
+<year>2020</year>
+</date>
+<date date-type="rev-recd">
+<day>14</day>
+<month>12</month>
+<year>2020</year>
+</date>
+<date date-type="accepted">
+<day>16</day>
+<month>12</month>
+<year>2020</year>
+</date>
+</history>
+<permissions>
+<copyright-statement>&#x00A9; 2020, Posted by Cold Spring Harbor Laboratory</copyright-statement>
+<copyright-year>2020</copyright-year>
+<license license-type="creative-commons" xlink:href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><license-p>This pre-print is available under a Creative Commons License (Attribution-NonCommercial-NoDerivs 4.0 International), CC BY-NC-ND 4.0, as described at <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by-nc-nd/4.0/">http://creativecommons.org/licenses/by-nc-nd/4.0/</ext-link></license-p></license>
+</permissions>
+<self-uri xlink:href="20248190.pdf" content-type="pdf" xlink:role="full-text"/>
+<abstract>
+<title>Abstract</title>
+<p>The White House issued Guidelines for Opening Up America Again to help state and local officials when reopening their economies. These included a &#x201C;downward trajectory of positive tests as a percent of total tests within a 14-day period.&#x201D; To examine this rule, we computed the probability of observing continuous decline in positivity when true positivity is in decline using data-driven simulation. Data for COVID-19 positivity reported in New York state from April 14 to May 5, 2020, where a clear reduction was observed, were used. First, a logistic regression model was fitted to the data, considering the fitted values as true positivity. Second, we created observed positivity by randomly selecting 25,000 people per day from a population with those true positivity for 14 days. The simulation was repeated 1,000 times to compute the probability of observing a consecutive decline. As sensitivity analyses, we performed the simulation with different daily numbers of tests (10 to 30,000) and length of observation (7 and 21 days). We further used daily hospitalizations as another metric, using data from the state of Indiana. With 25,000 daily tests, the probability of a consecutive decline in positivity for 14 days was 99.9&#x0025; (95&#x0025; CI: 99.7&#x0025; to 100&#x0025;). The probability dropped with smaller numbers of tests and longer lengths of consecutive observation, because there is more chance of observing an increase in positivity with smaller numbers of tests and longer observation. The probability of consecutive decline in hospitalizations was &#x223C;0.0&#x0025; regardless of the length of consecutive observation due to large variance. These results suggest that continuous declines in sample COVID-19 test positivity and hospitalizations may not be observed with sufficient probability, even when population probabilities truly decline. Criteria based on consecutive declines in metrics are unlikely to be useful for making decisions about relaxing COVID-19 mitigation efforts.</p>
+</abstract>
+<counts>
+<page-count count="16"/>
+</counts>
+</article-meta>
+<notes>
+<notes notes-type="competing-interest-statement">
+<title>Competing Interest Statement</title><p>The authors have declared no competing interest.</p></notes>
+<notes notes-type="financial-disclosure">
+<title>Funding Statement</title><p>This study is not supported by any specific funding sources.</p></notes>
+<notes notes-type="disclosures">
+<title>Author Declarations</title><p>I confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.</p><p>Yes</p><p>The details of the IRB/oversight body that provided approval or exemption for the research described are given below:</p><p>Approval by the IRB was exempted because we used only secondary published data.</p><p>All necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived.</p><p>Yes</p><p>I understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).</p><p>Yes</p><p>I have followed all appropriate research reporting guidelines and uploaded the relevant EQUATOR Network research reporting checklist(s) and other pertinent material as supplementary files, if applicable.</p><p>Yes</p></notes>
+</notes>
+</front>
+<body>
+<sec id="s1">
+<title>Introduction</title>
+<p>As a reaction to the COVID-19 pandemic in the US, lockdown orders restricting people&#x2019;s movement were issued by state governments to mitigate the transmission risk in March 2020. After the lockdown orders continued over several months, federal and state governments started seeking an exit strategy to reopen educational and economic activities suspended during the lockdown orders. The White House issued a guideline for reopening of economies, &#x201C;Opening up America Again&#x201D;(<xref rid="c1" ref-type="bibr">1</xref>), which included several numerical criteria. One of them was a &#x201C;downward trajectory of positive tests as a percent of total tests within a 14-day period.&#x201D; They also proposed criteria based on consecutive decline in metrics related to COVID-19, such as COVID-like syndromic cases. State guidelines were devised that were based on the White House recommendations. For example, the state of Indiana proposed that a decision to reopen will be made when &#x201C;the number of hospitalized COVID-19 patients statewide has decreased for 14 days.&#x201D;(<xref rid="c2" ref-type="bibr">2</xref>) and in Wisconsin, &#x201C;the three phases by the state would begin when there are 14 consecutive days of decreasing COVID-19 cases.&#x201D;(<xref rid="c3" ref-type="bibr">3</xref>) However, these criteria were proposed without solid scientific evidence.</p>
+<p>Beyond the above criteria, another metric used in policymaking has been the effective reproduction number, i.e., the average number of secondary cases produced by a single primary case (<xref rid="c4" ref-type="bibr">4</xref>). The effective reproduction number is used in assessing whether the epidemic is under control and supported policy-making for COVID-19 and other infectious diseases (<xref rid="c5" ref-type="bibr">5</xref>). There are quite a number of approaches in estimating the effective reproduction number proposed with different assumptions (<xref rid="c4" ref-type="bibr">4</xref>, <xref rid="c6" ref-type="bibr">6</xref>, <xref rid="c7" ref-type="bibr">7</xref>) and different types of data (<xref rid="c8" ref-type="bibr">8</xref>, <xref rid="c9" ref-type="bibr">9</xref>). If the effective reproduction number is below 1, this suggests the epidemic is shrinking. However, the number itself cannot tell us why the number is below 1. For example, the effective reproduction number could be reduced because the disease spread substantially and the remaining susceptible population is insufficient to maintain transmission, or because herd immunity has been achieved by mass vaccination. If so, the risk of resurgence of epidemic is minimal at least for a while until (if) people lose immunity (obtained through either infection or vaccination) or susceptible children accumulate, which has been observed for measles outbreaks (<xref rid="c10" ref-type="bibr">10</xref>). However, there is another possibility that individual and societal protective behaviors, including lockdown orders, temporally reduced the effective reproduction number. For example, the mitigated mobility was associated with the growth of the COVID-19 epidemic in many counties in the US (<xref rid="c11" ref-type="bibr">11</xref>). Given that the effective reproduction number does not tell us the mechanism, we do not know if the epidemic is ending or if resurgence is likely. Indeed, many of the countries that experienced a first wave have experienced one or more additional waves, although the effective reproduction number declined below one after the epidemic peak of the first wave. Given the foregoing, the effective reproduction number solely is not likely to serve as a universal criterion for relaxing lockdown orders, although it surely informs judicious decision-making by leaders.</p>
+<p>Similar to the reproduction number, consecutive decline in the metrics related to COVID-19 could be influenced by the above mechanisms related to epidemiological dynamics. However, the consecutive decline is specifically influenced by the observational process which is usually accounted for in the estimation of the effective reproduction number. For instance, observed positivity (i.e., daily number of reported cases/daily number of persons tested) is dependent on both the true (population) positivity and number of tests performed every day. If the number of tests is low, the observed positivity might be far from the true positivity, which yields fluctuation in observed positivity over time, and the consecutive decline for long period would likely not be realized even if true positivity declines during the period. Thus, we hypothesize that consecutive decline in COVID-19 related metrics is not a realistically achievable criterion.</p>
+<p>Herein, we examine this hypothesis by the use of simple simulations that preserve the properties of the empirically observed data (i.e., data-driven simulation). To provide some context to inform the potential utility of rules involving consecutive runs of a decreasing outcome metric, we computed (<xref rid="c1" ref-type="bibr">1</xref>) the probability of observing a continuous decline for 14 days in the percent of individuals tested positive for SARS-CoV-2 infection (i.e., positivity) and (<xref rid="c2" ref-type="bibr">2</xref>) the probability of observing a continuous decline for 14 days in the number of patients hospitalized due to SARS-CoV-2 infection.</p>
+</sec>
+<sec id="s2">
+<title>Materials and Methods</title>
+<sec id="s2a">
+<title>Data and fitting</title>
+<sec id="s2a1">
+<label>1.</label>
+<title>Positivity data from New York state</title>
+<p>The daily number of tests (note: &#x2018;test&#x2019; means real time polymerase chain reaction test hereafter) and daily number of positive cases in New York state have been reported by New York State Department of Health (<xref rid="c12" ref-type="bibr">12</xref>). We extracted the data from April 14 to May 5, 2020. Daily positivity is defined as the proportion of positive cases among all tests performed. The data are depicted in <bold><xref rid="fig1" ref-type="fig">Figure 1A-C</xref></bold>. The number of tests fluctuates, especially dropping during weekends, but is relatively stable over the period. The average number of daily tests was 25,313. Meanwhile, both the number of reported cases and positivity dropped over time, although the number of reported cases also fluctuated and dropped over weekends. We fit a logistic model to daily positivity and denoted the fitted positivity on day <italic>t</italic> as <italic>p</italic>(<italic>t</italic>) (the line in <bold><xref ref-type="fig" rid="fig1">Figure1C</xref></bold>). During this period, <italic>p</italic>(<italic>t</italic>) is clearly on a monotonic downward trend: it was 37.8&#x0025; on day 1, and declined to 17.9&#x0025; and 11.1&#x0025; on days 14 and 21. We assume <italic>p</italic>(<italic>t</italic>) is true positivity used in the simulation.</p>
+<fig id="fig1" position="float" fig-type="figure">
+<label>Figure 1.</label>
+<caption><title>Positivity of COVID-19 in New York and hospitalizations of COVID-19 in Indiana.</title>
+<p>The open circles are (<bold>A</bold>) the daily number of tests and (<bold>B</bold>) daily number of reported cases from April 14 to May 5, 2020 in New York state, respectively. <bold>C</bold>. The open circles and the line are the positivity (proportion of persons tested who are positive) and fitted positivity computed as the proportion of daily number of reported cases in the daily number of tests. <bold>D</bold>. The open circles and the line are the number of newly hospitalized patients reported in Indiana from April 6 to May 9.</p></caption>
+<graphic xlink:href="20248190v1_fig1.tif"/>
+</fig>
+</sec>
+<sec id="s2a2">
+<label>2.</label>
+<title>Hospitalization data from Indiana state</title>
+<p>The data for daily number of new hospitalizations (both ICU and non-ICU) in Indiana has been summarized by the Regenstrief Institute (<xref rid="c13" ref-type="bibr">13</xref>). We extracted the daily data from April 7 to May 9, 2020. The data are depicted in <bold><xref rid="fig1" ref-type="fig">Figure 1D</xref></bold>. The number of hospitalizations fluctuate and dropped during weekends. We fitted a linear model to the data. We denoted the observed number of hospitalizations on day <italic>t</italic> as <italic>H</italic><sub><italic>r</italic></sub>(<italic>t</italic>), and the corresponding conditional expected value estimated by the regression model on day <italic>t</italic> as <italic>H</italic><sub><italic>m</italic></sub>(<italic>t</italic>) (<bold><xref rid="fig1" ref-type="fig">Figure 1D</xref></bold>), both of which are used in the simulation. During the period of observation, <italic>H</italic><sub><italic>m</italic></sub>(<italic>t</italic>) was clearly on a downward trend: it was 160.8 on day 1 and declined to 135.5 on day 14 and 121.9 on day 21, respectively.</p>
+</sec>
+</sec>
+<sec id="s2b">
+<title>Simulations of probability of consecutive descending runs given estimated model</title>
+<p>Assuming that 25,000 independent persons (we set the number close to the average number of tests in New York state from April 14 to May 5, 2020) are tested every day, that there is no autocorrelation, daily positive case counts on day <italic>t</italic> (from April 14), <italic>C</italic>(<italic>t</italic>), was determined following binominal distribution with probability <italic>p</italic>(<italic>t</italic>) obtained by fitting a logistic model to the data from New York state (note: true positivity, not the raw data). If <italic>C</italic>(<italic>t</italic>) or positivity (i.e..<inline-formula><alternatives><inline-graphic xlink:href="20248190v1_inline1.gif"/></alternatives></inline-formula>) continuously declines for 14 days from April 14, we can conclude that the criteria (i.e., consecutive decline in positivity) can capture the actual downward trend. We repeated the process of creating C(t) 1000 times and computed the probability that we would observe a decline in observed positivity continuously for 14 days from April 14: <inline-formula><alternatives><inline-graphic xlink:href="20248190v1_inline2.gif"/></alternatives></inline-formula> As sensitivity analyses, we performed the same simulation with different length of observation (<xref rid="c7" ref-type="bibr">7</xref> and 21 days) and different number of tests (10, 100, 1,000, 10,000, 50,000 tests per day).</p>
+<p>Similarly, we computed the probability of a consecutive decline in the daily number of hospitalizations, <italic>H</italic>(<italic>t</italic>), using the daily hospitalization data from Indiana state and fitted values. We assumed the number was drawn from a normal distribution (a reasonable approximation by the central limit theorem), where the mean is <italic>H</italic><sub><italic>m</italic></sub>(<italic>t</italic>) and the variance is <italic>S&#x002A;H</italic><sub><italic>r</italic></sub>(<italic>t</italic>)/<italic>H</italic><sub><italic>m</italic></sub>(<italic>t</italic>). <italic>S</italic> is the residual variance obtained in the regression. If hospitalizations, <italic>H</italic>(<italic>t</italic>), continuously decline for 14 days from April 7, we can conclude that the criteria (i.e., consecutive decline in hospitalization) can capture the actual downward trend. We repeated the process of creating H(t) 1000 times and computed the probability that we would observe a decline in daily hospitalizations continuously for 14 days from April 7 (i.e., <italic>Prob(H(1) &#x003E; H(2) &#x003E; &#x00B7; &#x003E; H(7)</italic>)). As a sensitivity analysis, we performed the same simulation with different length of observation (7 days and 21 days).</p>
+<p>The 95&#x0025; confidence intervals (CIs) of the probabilities were computed assuming a binomial distribution: denoting the probability as p, the 95&#x0025;CIs are computed as <inline-formula><alternatives><inline-graphic xlink:href="20248190v1_inline3.gif"/></alternatives></inline-formula>.All simulations were performed using the statistical computing software R 4.0.1 (R Development Core Team). The codes used in this study will be available online (doi: 10.5281/zenodo.3899680).</p>
+</sec>
+</sec>
+<sec id="s3">
+<title>Results</title>
+<p><bold><xref rid="fig2" ref-type="fig">Figure 2</xref></bold> depicts 10 simulation runs of positivity and hospitalizations. Both metrics tended to decline over time. Positivity does not have a large heterogeneity among simulation runs, because of the large number of tests, however, the hospitalizations has large heterogeneity among simulation runs. Further, the hospitalizations sometimes increased compared with the previous day in the same simulation run.</p>
+<fig id="fig2" position="float" fig-type="figure">
+<label>Figure 2.</label>
+<caption><title>Simulation runs of positivity and hospitalizations.</title>
+<p>Simulation was performed using the positivity and hospitalization data. <bold>A</bold>. Gray lines are the observed positivity of 10 simulation runs with 25,000 daily tests. <bold>B</bold>. Gray lines are the observed number of hospitalized cases of 10 simulation runs.</p></caption>
+<graphic xlink:href="20248190v1_fig2.tif"/>
+</fig>
+<p><bold><xref rid="tbl1" ref-type="table">Table 1</xref></bold> summarizes the probability of a consecutive decline in observed positivity with different numbers of tests and length of observation. The probability was 99.9&#x0025; (95&#x0025;CI: 99.7-100.0) with 25,000 daily tests with 14 days observation. The probability dropped with small number of tests. With 1,000 daily tests, the probability was only 1&#x0025;. As we expected, the probability was smaller with longer observation. For simulation with hospitalization data, the probability of consecutive decline in newly observed hospitalizations was &#x223C;0.0&#x0025; for 14 days of observation. The probability was &#x223C;0.0&#x0025; for 7- and 21-days observation.</p>
+<table-wrap id="tbl1" orientation="portrait" position="float">
+<label>Table 1.</label>
+<caption><title>Probability (&#x0025;) of observing consecutive decline in positivity</title></caption>
+<graphic xlink:href="20248190v1_tbl1.tif"/>
+</table-wrap>
+</sec>
+<sec id="s4">
+<title>Discussion</title>
+<p>We examined the rule for relaxing the lockdown orders proposed by the White House and adopted by some state governments, specifically focusing on the continuous decline in epidemiological metrics. We used the daily positivity and daily new hospitalization as examples of such metrics. Using the daily positivity data from New York state and daily hospitalizations in the state of Indiana, where the data showed clear descending trends, we simulated the observed daily positivity and daily new hospitalizations over 14 days. From 1,000 repeated simulations, we estimated the probability of consecutive decline in each metric. With a large number of tests (i.e., 25,000 per day), the probability of consecutive declines in positivity was sufficiently high (99.9&#x0025;), however, it dropped with smaller numbers of tests and longer periods of observation.</p>
+<p>The number of tests performed in New York state (about 25,000 per day) is markedly higher compared with the other states. Most of the states performed less than 10,000 tests per day and the average is about 5,000 in the same period (late April to early May)(<xref rid="c14" ref-type="bibr">14</xref>). Given our simulation results (<bold><xref rid="tbl1" ref-type="table">Table 1</xref></bold>), observing consecutive decline in positivity for 14 days with 5,000 daily tests is less than 60&#x0025;, suggesting the criterion may not be able to capture the actual decline in positivity with this number of tests. Further, in small or rural counties or locales, the number of testing should be much smaller, and the probability of consecutive declines becomes very low, despite the presence of a true downward trend. The same probability (i.e., consecutive decline) using the daily hospitalization data from Indiana state was extremely low (zero for practical purposes) regardless of the length of observation. This is due to the large variance in hospitalizations. Overall, our computations suggest that criteria for decision-making based on lengthy consecutive runs of monotonic changes are unlikely to be useful, or at least need to be carefully examined on a case-by-case basis considering realistic settings and factors that influence the magnitude of observational error, such as number of tests.</p>
+<p>The novelty and strength of this study is that we used real data from New York and Indiana states from the current pandemic to realistically assess the criteria used for decision-making. Because the results are dependent on the data and the criteria used, we suggest using the same framework for each case needing to be assessed. That said, the criterion (consecutive decline) did not seem realistically achievable based on our study, partially because positivity and hospitalizations did not decrease fast enough and the variance of observational error of hospitalization was large. The criterion might work for other metrics or other diseases.</p>
+<p>A limitation of this study is that we assumed logistic or linear models for the outcome metrics. Numerous mathematical models have been proposed to describe COVID-19 infection dynamics (<xref ref-type="bibr" rid="c15">15</xref>-<xref ref-type="bibr" rid="c17">17</xref>), some of which might better explain the COVID-19 dynamics from the beginning to the end. However, we did not employ those models because we focused only on the declining phase of the epidemic, which can be described by those simple logistic and linear models without losing generalizability. If the actual disease dynamics fluctuate when the epidemic is moving toward the containment phase, the probability of consecutive decline in observed outcomes might decrease further than what we observed in our simulation.</p>
+<p>Compared with the criterion based on consecutive decline metrics, the effective reproduction number is more robust against such measurement error because its computation is dependent on the longitudinal case reports weighted by an infectivity function, rather than the number of cases reported on a single time point. Further, the fluctuation of the effective reproduction number has been observed and acknowledged (<xref rid="c7" ref-type="bibr">7</xref>, <xref rid="c18" ref-type="bibr">18</xref>). Therefore, researchers are advised to assume the effective reproduction number is constant for a short period to simplify interpretation. There is a long history for conceptualization and computation of the effective reproduction number, whereas consecutive decline has not been examined until our study, as far as we know.</p>
+</sec>
+<sec id="s5">
+<title>Conclusions</title>
+<p>Some government officials and public health sectors in the US have argued to use consecutive decline in metrics such as positivity and number of hospitalizations, to make decisions about relaxing lockdown measures and restarting economic activities. However, these decision rules were not supported by scientific evidence. We believe our data-driven simulation approach, which had not yet been applied to this question, has added scientific insight in assessing whether such decision rules are realistically useful to accomplish their purpose. As we demonstrated here, such criteria might not be useful because those metrics are severely influenced by not only epidemiologic dynamics, but also measurement (i.e., sampling) error. Robust criteria for decision-making regarding relaxing social distancing measures are warranted.</p>
+</sec>
+<sec id="s6">
+<title>Sources of Support</title>
+<p>This study is not supported by any specific funding sources.</p>
+</sec>
+<sec id="s7">
+<title>Conflict of Interest (COI) Statement</title>
+<p>All authors have no conflicts of interest with respect to this paper. Indiana University and the Indiana University Foundation have received funding from Eli Lilly and Company and from private philanthropists to support other research projects pertaining to COVID-19 in which the authors participate.</p>
+</sec>
+</body>
+<back>
+<sec sec-type="data-availability">
+<title>Data Availability</title>
+<p>All data used in this study are publicly available from following data sources:
+1. New York State Department of Health. NYSDOH COVID-19 Tracker [Available from: <ext-link ext-link-type="uri" xlink:href="https://covid19tracker.health.ny.gov/views/NYS-COVID19-Tracker/NYSDOHCOVID-19Tracker-Map?%3Aembed=yes&amp;%3Atoolbar=no&amp;%3Atabs=n">https://covid19tracker.health.ny.gov/views/NYS-COVID19-Tracker/NYSDOHCOVID-19Tracker-Map?%3Aembed=yes&amp;%3Atoolbar=no&amp;%3Atabs=n</ext-link>.
+2. Regenstrief Institute. Regenstrief COVID-19 Dashboard [Available from: <ext-link ext-link-type="uri" xlink:href="https://www.regenstrief.org/covid-dashboard/">https://www.regenstrief.org/covid-dashboard/</ext-link>.</p>
+</sec>
+<ack>
+<title>Acknowledgement</title>
+<p>DBA designed research; DBA, KE, KCM, and LGA conducted research; DBA, KE, KCM, and LGA analyzed data and performed statistical analysis; all authors were involved in writing the paper; DBA had primary responsibility for final content. All authors read and approved the final manuscript. The opinions expressed are those of the authors and do not necessarily represent those of any organization.</p>
+</ack>
+<ref-list>
+<title>References</title>
+<ref id="c1"><label>1.</label><mixed-citation publication-type="website"><collab>The White House</collab>. <source>Guidelines for Opening Up America Again</source> [Available from: <ext-link ext-link-type="uri" xlink:href="https://www.whitehouse.gov/openingamerica/">https://www.whitehouse.gov/openingamerica/</ext-link>.</mixed-citation></ref>
+<ref id="c2"><label>2.</label><mixed-citation publication-type="website"><collab>The state of Indiana</collab>. <source>Our Principles To Get Back On Track</source> [Available from: <ext-link ext-link-type="uri" xlink:href="https://backontrack.in.gov/files/BackOnTrack-IN_ReOpenPrinciples.pdf">https://backontrack.in.gov/files/BackOnTrack-IN_ReOpenPrinciples.pdf</ext-link>.</mixed-citation></ref>
+<ref id="c3"><label>3.</label><mixed-citation publication-type="website"><collab>DoorCountyDailyNews.com</collab>. <source>Governor reveals reopen plan; no new COVID-19 cases in Door County</source> [Available from: <ext-link ext-link-type="uri" xlink:href="https://doorcountydailynews.com/news/504009">https://doorcountydailynews.com/news/504009</ext-link>.</mixed-citation></ref>
+<ref id="c4"><label>4.</label><mixed-citation publication-type="journal"><string-name><surname>Cauchemez</surname> <given-names>S</given-names></string-name>, <string-name><surname>Bo&#x00EB;lle</surname> <given-names>PY</given-names></string-name>, <string-name><surname>Thomas</surname> <given-names>G</given-names></string-name>, <string-name><surname>Valleron</surname> <given-names>AJ</given-names></string-name>. <article-title>Estimating in real time the efficacy of measures to control emerging communicable diseases</article-title>. <source>Am J Epidemiol</source>. <year>2006</year>;<volume>164</volume>(<issue>6</issue>):<fpage>591</fpage>&#x2013;<lpage>7</lpage>.</mixed-citation></ref>
+<ref id="c5"><label>5.</label><mixed-citation publication-type="journal"><string-name><surname>Thompson</surname> <given-names>RN</given-names></string-name>, <string-name><surname>Hollingsworth</surname> <given-names>TD</given-names></string-name>, <string-name><surname>Isham</surname> <given-names>V</given-names></string-name>, <string-name><surname>Arribas-Bel</surname> <given-names>D</given-names></string-name>, <string-name><surname>Ashby</surname> <given-names>B</given-names></string-name>, <string-name><surname>Britton</surname> <given-names>T</given-names></string-name>, <etal>et al.</etal> <source>Key questions for modelling COVID-19 exit strategies</source>. <year>2020</year>;<volume>287</volume>(<issue>1932</issue>):<fpage>20201405</fpage>.</mixed-citation></ref>
+<ref id="c6"><label>6.</label><mixed-citation publication-type="journal"><string-name><surname>Wallinga</surname> <given-names>J</given-names></string-name>, <string-name><surname>Teunis</surname> <given-names>P.</given-names></string-name> <article-title>Different Epidemic Curves for Severe Acute Respiratory Syndrome Reveal Similar Impacts of Control Measures</article-title>. <source>American Journal of Epidemiology</source>. <year>2004</year>;<volume>160</volume>(<issue>6</issue>):<fpage>509</fpage>&#x2013;<lpage>16</lpage>.</mixed-citation></ref>
+<ref id="c7"><label>7.</label><mixed-citation publication-type="journal"><string-name><surname>Cori</surname> <given-names>A</given-names></string-name>, <string-name><surname>Ferguson</surname> <given-names>NM</given-names></string-name>, <string-name><surname>Fraser</surname> <given-names>C</given-names></string-name>, <string-name><surname>Cauchemez</surname> <given-names>S.</given-names></string-name> <article-title>A New Framework and Software to Estimate Time-Varying Reproduction Numbers During Epidemics</article-title>. <source>American Journal of Epidemiology</source>. <year>2013</year>;<volume>178</volume>(<issue>9</issue>):<fpage>1505</fpage>&#x2013;<lpage>12</lpage>.</mixed-citation></ref>
+<ref id="c8"><label>8.</label><mixed-citation publication-type="book"><string-name><surname>Nishiura</surname> <given-names>H</given-names></string-name>, <string-name><surname>Chowell</surname> <given-names>G.</given-names></string-name> <chapter-title>The Effective Reproduction Number as a Prelude to Statistical Estimation of Time-Dependent Epidemic Trends</chapter-title>. In: <person-group person-group-type="editor"><string-name><surname>Chowell</surname> <given-names>G</given-names></string-name>, <string-name><surname>Hyman</surname> <given-names>JM</given-names></string-name>, <string-name><surname>Bettencourt</surname> <given-names>LMA</given-names></string-name>, <string-name><surname>Castillo-Chavez</surname> <given-names>C</given-names></string-name></person-group>, editors. <source>Mathematical and Statistical Estimation Approaches in Epidemiology. Dordrecht</source>: <publisher-name>Springer</publisher-name> <publisher-loc>Netherlands</publisher-loc>; <year>2009</year>. p. <fpage>103</fpage>&#x2013;<lpage>21</lpage>.</mixed-citation></ref>
+<ref id="c9"><label>9.</label><mixed-citation publication-type="journal"><string-name><surname>Stadler</surname> <given-names>T</given-names></string-name>, <string-name><surname>K&#x00FC;hnert</surname> <given-names>D</given-names></string-name>, <string-name><surname>Bonhoeffer</surname> <given-names>S</given-names></string-name>, <string-name><surname>Drummond</surname> <given-names>AJ</given-names></string-name>. <source>Birth&#x2013;death skyline plot reveals temporal changes of epidemic spread in HIV and hepatitis C virus (HCV)</source>. <year>2013</year>;<volume>110</volume>(<issue>1</issue>):<fpage>228</fpage>&#x2013;<lpage>33</lpage>.</mixed-citation></ref>
+<ref id="c10"><label>10.</label><mixed-citation publication-type="journal"><string-name><surname>Grenfell</surname> <given-names>BT</given-names></string-name>, <string-name><surname>Bj&#x00F8;rnstad</surname> <given-names>ON</given-names></string-name>, <string-name><surname>Kappey</surname> <given-names>J.</given-names></string-name> <article-title>Travelling waves and spatial hierarchies in measles epidemics</article-title>. <source>Nature</source>. <year>2001</year>;<volume>414</volume>(<issue>6865</issue>):<fpage>716</fpage>&#x2013;<lpage>23</lpage>.</mixed-citation></ref>
+<ref id="c11"><label>11.</label><mixed-citation publication-type="other"><string-name><surname>Badr HS</surname>, <given-names>D.H</given-names></string-name>, <string-name><surname>Marshall</surname> <given-names>M</given-names></string-name>, <string-name><surname>Dong</surname> <given-names>E</given-names></string-name>, <string-name><surname>Squire</surname> <given-names>MM</given-names></string-name>, <string-name><surname>Gardner</surname> <given-names>LM</given-names></string-name>. <article-title>Association between mobility patterns and COVID-19 transmission in the USA: a mathematical modelling study</article-title>. <source>The Lancet Infectious Diseases</source>.</mixed-citation></ref>
+<ref id="c12"><label>12.</label><mixed-citation publication-type="website"><collab>New York State Department of Health</collab>. <source>NYSDOH COVID-19 Tracker</source> [Available from: <ext-link ext-link-type="uri" xlink:href="https://covid19tracker.health.ny.gov/views/NYS-COVID19-Tracker/NYSDOHCOVID-19Tracker-Map?%3Aembed=yes&amp;%3Atoolbar=no&amp;%3Atabs=n">https://covid19tracker.health.ny.gov/views/NYS-COVID19-Tracker/NYSDOHCOVID-19Tracker-Map?%3Aembed=yes&amp;%3Atoolbar=no&amp;%3Atabs=n</ext-link>.</mixed-citation></ref>
+<ref id="c13"><label>13.</label><mixed-citation publication-type="website"><collab>Regenstrief Institute</collab>. <source>Regenstrief COVID-19 Dashboard</source> [Available from: <ext-link ext-link-type="uri" xlink:href="https://www.regenstrief.org/covid-dashboard/">https://www.regenstrief.org/covid-dashboard/</ext-link>.</mixed-citation></ref>
+<ref id="c14"><label>14.</label><mixed-citation publication-type="website"><collab>The COVID Trackign Project [</collab>Available from: <ext-link ext-link-type="uri" xlink:href="https://covidtracking.com/">https://covidtracking.com/</ext-link>.</mixed-citation></ref>
+<ref id="c15"><label>15.</label><mixed-citation publication-type="journal"><string-name><surname>Kucharski</surname> <given-names>AJ</given-names></string-name>, <string-name><surname>Russell</surname> <given-names>TW</given-names></string-name>, <string-name><surname>Diamond</surname> <given-names>C</given-names></string-name>, <string-name><surname>Liu</surname> <given-names>Y</given-names></string-name>, <string-name><surname>Edmunds</surname> <given-names>J</given-names></string-name>, <string-name><surname>Funk</surname> <given-names>S</given-names></string-name>, <etal>et al.</etal> <article-title>Early dynamics of transmission and control of COVID-19: a mathematical modelling study</article-title>. <source>The Lancet Infectious Diseases</source>. <year>2020</year>;<volume>20</volume>(<issue>5</issue>):<fpage>553</fpage>&#x2013;<lpage>8</lpage>.</mixed-citation></ref>
+<ref id="c16"><label>16.</label><mixed-citation publication-type="journal"><string-name><surname>Prem</surname> <given-names>K</given-names></string-name>, <string-name><surname>Liu</surname> <given-names>Y</given-names></string-name>, <string-name><surname>Russell</surname> <given-names>TW</given-names></string-name>, <string-name><surname>Kucharski</surname> <given-names>AJ</given-names></string-name>, <string-name><surname>Eggo</surname> <given-names>RM</given-names></string-name>, <string-name><surname>Davies</surname> <given-names>N</given-names></string-name>, <etal>et al.</etal> <article-title>The effect of control strategies to reduce social mixing on outcomes of the COVID-19 epidemic in Wuhan, China: a modelling study</article-title>. <source>The Lancet Public Health</source>. <year>2020</year>;<volume>5</volume>(<issue>5</issue>):<fpage>e261</fpage>&#x2013;<lpage>e70</lpage>.</mixed-citation></ref>
+<ref id="c17"><label>17.</label><mixed-citation publication-type="journal"><string-name><surname>Britton</surname> <given-names>T</given-names></string-name>, <string-name><surname>Ball</surname> <given-names>F</given-names></string-name>, <string-name><surname>Trapman</surname> <given-names>P.</given-names></string-name> <source>A mathematical model reveals the influence of population heterogeneity on herd immunity to SARS-CoV-2</source>. <year>2020</year>;<volume>369</volume>(<issue>6505</issue>):<fpage>846</fpage>&#x2013;<lpage>9</lpage>.</mixed-citation></ref>
+<ref id="c18"><label>18.</label><mixed-citation publication-type="journal"><string-name><surname>Fraser</surname> <given-names>C</given-names></string-name>, <string-name><surname>Cummings</surname> <given-names>DAT</given-names></string-name>, <string-name><surname>Klinkenberg</surname> <given-names>D</given-names></string-name>, <string-name><surname>Burke</surname> <given-names>DS</given-names></string-name>, <string-name><surname>Ferguson</surname> <given-names>NM</given-names></string-name>. <article-title>Influenza Transmission in Households During the 1918 Pandemic</article-title>. <source>American Journal of Epidemiology</source>. <year>2011</year>;<volume>174</volume>(<issue>5</issue>):<fpage>505</fpage>&#x2013;<lpage>14</lpage>.</mixed-citation></ref>
+</ref-list>
+</back>
+</article>

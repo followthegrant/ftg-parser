@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.2d1 20170631//EN" "JATS-archivearticle1.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" article-type="article" dtd-version="1.2d1" specific-use="production" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="publisher-id">MEDRXIV</journal-id>
+<journal-title-group>
+<journal-title>medRxiv</journal-title>
+<abbrev-journal-title abbrev-type="publisher">medRxiv</abbrev-journal-title>
+</journal-title-group>
+<publisher>
+<publisher-name>Cold Spring Harbor Laboratory</publisher-name>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1101/2021.05.25.21257630</article-id>
+<article-version>1.1</article-version>
+<article-categories>
+<subj-group subj-group-type="hwp-journal-coll">
+<subject>Genetic and Genomic Medicine</subject>
+</subj-group>
+</article-categories>
+<title-group>
+<article-title>Description and clinical validation of a real-time AI diagnostic companion for fetal ultrasound examination</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" corresp="yes">
+<name><surname>Stirnemann</surname><given-names>Julien J.</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="corresp" rid="cor1">&#x002A;</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Besson</surname><given-names>Remi</given-names></name>
+<xref ref-type="aff" rid="a5">5</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Spaggiari</surname><given-names>Emmanuel</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Rojo</surname><given-names>Sandra</given-names></name>
+<xref ref-type="aff" rid="a5">5</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Loge</surname><given-names>Frederic</given-names></name>
+<xref ref-type="aff" rid="a5">5</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Peyro-Saint-Paul</surname><given-names>Helene</given-names></name>
+<xref ref-type="aff" rid="a5">5</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Allassonniere</surname><given-names>Stephanie</given-names></name>
+<xref ref-type="aff" rid="a2">2</xref>
+<xref ref-type="aff" rid="a3">3</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Le Pennec</surname><given-names>Erwan</given-names></name>
+<xref ref-type="aff" rid="a3">3</xref>
+<xref ref-type="aff" rid="a6">6</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Attie-Bitach</surname><given-names>Tania</given-names></name>
+<xref ref-type="aff" rid="a4">4</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Ville</surname><given-names>Yves</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<aff id="a1"><label>1</label><institution>Obstetrics and maternal-fetal medicine, Necker - Enfants Malades Hospital, AP-HP and EA7328 universit&#x00E9; de Paris</institution>, IMAGINE Institute</aff>
+<aff id="a2"><label>2</label><institution>School of Medicine, universit&#x00E9; de Paris, INRIA EPI HEKA, INSERM UMR1138, Sorbonne universit&#x00E9;</institution></aff>
+<aff id="a3"><label>3</label><institution>Center for Applied Mathematics, Ecole Polytechnique. Institut Polytechnique de Paris</institution></aff>
+<aff id="a4"><label>4</label><institution>Department of Histology-Embryology and Cytogenetics, Unit of Embryo &#x0026; Fetal Pathology, Necker-Enfants Malades Hospital, AP-HP and Paris Descartes University; INSERM UMR 1163, IMAGINE Institute</institution></aff>
+<aff id="a5"><label>5</label><institution>SONIO SAS, 24 rue du Faubourg Saint-Jacques</institution>, 75014 Paris</aff>
+<aff id="a6"><label>6</label><institution>Xpop, INRIA Saclay</institution></aff>
+</contrib-group>
+<author-notes>
+<corresp id="cor1"><label>&#x002A;</label><bold>Correspondence</bold>: Pr Julien STIRNEMANN, Maternit&#x00E9;, H&#x00F4;pital Necker Enfants Malades, 149 rue de Sevres 75015 Paris, email: <email>julien.stirnemann@aphp.fr</email>, phone: &#x002B;33171196218</corresp>
+<fn fn-type="conflict"><p><bold>Conflict of interest</bold>: JS, RB, ES, SA, ELP and YV are co-founders of the SONIO company. SR, FL and HPSP are employed by the SONIO company.</p></fn>
+<fn fn-type="others"><p><bold>Funding</bold>: None</p></fn>
+<fn fn-type="others"><p><bold>IRB</bold> : CERAPHP.5 #00011928</p></fn>
+</author-notes>
+<pub-date pub-type="epub">
+<year>2021</year>
+</pub-date>
+<elocation-id>2021.05.25.21257630</elocation-id>
+<history>
+<date date-type="received">
+<day>25</day>
+<month>5</month>
+<year>2021</year>
+</date>
+<date date-type="rev-recd">
+<day>25</day>
+<month>5</month>
+<year>2021</year>
+</date>
+<date date-type="accepted">
+<day>25</day>
+<month>5</month>
+<year>2021</year>
+</date>
+</history>
+<permissions>
+<copyright-statement>&#x00A9; 2021, Posted by Cold Spring Harbor Laboratory</copyright-statement>
+<copyright-year>2021</copyright-year>
+<license><license-p>The copyright holder for this pre-print is the author. All rights reserved. The material may not be redistributed, re-used or adapted without the author's permission.</license-p></license>
+</permissions>
+<self-uri xlink:href="21257630.pdf" content-type="pdf" xlink:role="full-text"/>
+<abstract>
+<title>ABSTRACT</title>
+<sec>
+<title>Objective</title>
+<p>To describe a real-time decision support system (DSS), named SONIO, to assist ultrasound-based prenatal diagnosis and to assess its performance using a clinical database of precisely phenotyped postmortem examinations.</p></sec>
+<sec>
+<title>Population and Methods</title>
+<p>This DSS is knowledge-based and comprises a dedicated thesaurus of 294 syndromes and diseases. It operates by suggesting, at each step of the ultrasound examination, the best next symptom to check for in order to optimize the diagnostic pathway to the smallest number of possible diagnoses. This assistant was tested on a single-center database of 251 cases of postmortem phenotypes with a definite diagnosis. Adjudication of discordant diagnoses was made by a panel of external experts. The primary outcome was a target concordance rate &#x003E;90&#x0025; between the postmortem diagnosis and the top-7 diagnoses given by SONIO when providing the full phenotype as input. Secondary outcomes included concordance for the top-5 and top-3 diagnoses; We also assessed a &#x201C;1-by-1&#x201D; model, providing only the anomalies sequentially prompted by the system, mimicking the use of the software in a real-life clinical setting.</p></sec>
+<sec>
+<title>Results</title>
+<p>The validation database covered 96 of the 294 (32.65&#x0025;) syndromes and 79&#x0025; of their overall prevalence in the SONIO thesaurus. The adjudicators discarded 42/251 cases as they were not amenable to ultrasound based diagnosis. SONIO failed to make the diagnosis on 7/209 cases. On average, each case displayed 6 anomalies, 3 of which were considered atypical for the condition. Using the &#x2018;full-phenotype&#x2019; model, the success rate of the top-7 output of Sonio was 96.7&#x0025; (202/209). This was 91.9&#x0025; and 87.1&#x0025; for the top-5 and top-3 outputs respectively. Using the &#x201C;1-by-1&#x201D; model, the correct diagnosis was within the top-7, top-5 and top-3 of SONIO&#x2019;s output in 72.4&#x0025;, 69.3&#x0025; and 63.1&#x0025;.</p></sec>
+<sec>
+<title>Conclusion</title>
+<p>Sonio is a robust DSS with a success-rate &#x003E;95&#x0025; for top-7 ranking diagnoses when the full phenotype is provided, using a large database of noisy real data. The success rate over 70&#x0025; using the &#x2018;1-by-1&#x2019; model was understandably lower, given that SONIO&#x2019;s sequential queries may not systematically cover the full phenotype.</p></sec>
+</abstract>
+<counts>
+<page-count count="22"/>
+</counts>
+</article-meta>
+<notes>
+<notes notes-type="competing-interest-statement">
+<title>Competing Interest Statement</title><p>JS, RB, ES, SA, ELP and YV are co-founders of the SONIO company. SR, FLM and HPSP are employed by the SONIO company.</p></notes>
+<notes notes-type="clinical-trial-statement">
+<title>Clinical Trial</title><p>This was a retrospective observational study from clinical records</p></notes>
+<notes notes-type="financial-disclosure">
+<title>Funding Statement</title><p>No funding</p></notes>
+<notes notes-type="disclosures">
+<title>Author Declarations</title><p>I confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.</p><p>Yes</p><p>The details of the IRB/oversight body that provided approval or exemption for the research described are given below:</p><p>This study was approved by the local ethics committee of the Necker hospital (IRB registration : CERPAHP.5 #00011928)</p><p>All necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived.</p><p>Yes</p><p>I understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).</p><p>Yes</p><p>I have followed all appropriate research reporting guidelines and uploaded the relevant EQUATOR Network research reporting checklist(s) and other pertinent material as supplementary files, if applicable.</p><p>Yes</p></notes>
+</notes>
+</front>
+<body>
+<sec id="s1">
+<title>INTRODUCTION</title>
+<p>The discovery of a fetal malformation or anomaly during prenatal ultrasound examination occurs in around 2-3&#x0025; of all pregnancies (<xref ref-type="bibr" rid="c1">1</xref>). Irrespective of its own severity, the diagnosis of one anomaly raises the question of whether this is an isolated finding or else it is associated with other anomalies within chromosomal or genetic syndromes that weigh negatively on its prognosis. There are over 9,000 rare diseases in the ORPHANET database (<xref ref-type="bibr" rid="c2">2</xref>), of which a few hundred express a consistent phenotype identifiable on prenatal ultrasound. However, the diversity of those syndromes and of many of their constitutive, often non-specific, features escape the knowledge of most specialists in prenatal diagnosis. Concurrently, ultrasound technology and technicity, driven by a growing demand, has reached a high level of details, raising the expectations of pregnant women for the assessment of the fetal development. There is therefore a discrepancy between the intractable complexity of rare diseases and the universal availability of powerful prenatal imaging technologies such as ultrasound. The medical uncertainty generated by this discrepancy, fueled by growing legal pressure, leads to an increasing number of ultrasound examinations per woman, without improving the diagnostic performance (<xref ref-type="bibr" rid="c3">3</xref>). This medical uncertainty is likely to affect the cost of prenatal screening for fetal anomalies and to generate unnecessary parental anxiety. The impact of the suspicion of a fetal anomaly is known to undermine the attachment of the pregnant woman to her pregnancy with a significant and prolonged impact even when reaching a favorable prognosis (<xref ref-type="bibr" rid="c4">4</xref>).</p>
+<p>Given the growing complexity of medical knowledge and the increasing availability of data sources, decision support systems (DSS) have been developed to assist clinicians in their decision-making, particularly for rare diseases diagnosis (<xref ref-type="bibr" rid="c5">5</xref>,<xref ref-type="bibr" rid="c6">6</xref>). However, to our knowledge, such systems have not been developed for the specific needs of fetal ultrasound. Online search engines that link given fetal ultrasound phenotypes to specific diseases do exist (<xref ref-type="bibr" rid="c7">7</xref>), but such solutions implicitly assume that all possible fetal symptoms have been checked for and that the phenotype is therefore &#x201C;complete&#x201D; - which is usually not the case. Furthermore, such systems do not offer real-time assistance during ultrasound examination. Similar engines exist for postnatal clinical phenotypes, such as &#x2018;Phenomizer&#x2019; developed with HPO and Orphanet (<xref ref-type="bibr" rid="c8">8</xref>).</p>
+<p>We present the performance of a real-time DSS, named SONIO (<xref ref-type="bibr" rid="c9">9</xref>), that operates by suggesting, at each step of the ultrasound examination, the best next symptom to check for, in order to optimize the diagnostic pathway to the smallest number of possible diagnoses. This DSS is knowledge-based (<xref ref-type="bibr" rid="c10">10</xref>) and comprises a dedicated thesaurus constructed from several sources and two dedicated algorithms. This assistant was tested on a single-center database of postmortem phenotypes for which the rare disease diagnosis is certain.</p>
+</sec>
+<sec id="s2">
+<title>METHODS</title>
+<sec id="s2a">
+<label>1.</label>
+<title>Description of the Sonio DSS</title>
+<sec id="s2a1">
+<title>Thesaurus of anomalies and syndromes</title>
+<p>The sources of the Sonio thesaurus are Orphanet (<xref ref-type="bibr" rid="c2">2</xref>) and CRAT (<xref ref-type="bibr" rid="c11">11</xref>). Orphanet is an open source database of over 9,000 rare congenital disorders, produced by a consortium of 40 countries. In Orphanet, rare diseases are defined according to the European Union Regulation on Orphan Medicinal Products criteria, i.e. a disease that affects less than 1/2000 persons in the European population. A disorder in the database can be a disease, a syndrome, a morphological or a biological anomaly or a clinical condition. Each disorder or disease can be accessed using its name, ORPHAcode, gene symbol/name, OMIM number and classification (Online Mendelian Inheritance in Man<bold>)</bold>, or ICD-10 (10th edition of WHO&#x2019;s International Classification of Disease<bold>)</bold>. The CRAT (&#x2018;Centre de r&#x00E9;f&#x00E9;rence des agents t&#x00E9;ratog&#x00E8;nes&#x2019;) is the French teratogenicity reference centre covering drugs, chemicals, radiations, and pathogens. It is maintained and updated by the Department of Pharmacology at Trousseau Hospital in Paris.</p>
+<p>These 2 databases were screened according to the following criteria:</p>
+<list list-type="simple">
+<list-item><p>&#x2013; conditions with a prevalence &#x003E; 1 in a million births</p></list-item>
+<list-item><p>&#x2013; with a prenatal onset</p></list-item>
+<list-item><p>&#x2013; with visible anomalies on fetal ultrasound</p></list-item>
+</list>
+<p>The results were reviewed by a panel of experts from the Fetal medicine unit at Necker Hospital in Paris. This selection yielded 294 conditions extracted from the &#x003E;9000 diseases listed in ORPHANET.</p>
+<p>The SONIO&#x2019;s thesaurus of phenotypic anomalies was built using the Human Phenotype Ontology (HPO) that provides a standardized vocabulary of phenotypic abnormalities encountered in human disease (<xref ref-type="bibr" rid="c12">12</xref>,<xref ref-type="bibr" rid="c13">13</xref>). Each term in the HPO describes a phenotypic abnormality, such as &#x201C;Atrial septal defect&#x201D;. The description of prenatal ultrasound features comprises all commonly accepted synonym terms used to name and characterize each anomaly.</p>
+<p>Each disorder was also related to its possible identification by either standard prenatal karyotype or by prenatal comparative genomic hybridization (array-CGH)</p>
+<p>The final Sonio&#x2019;s thesaurus comprised 294 syndromes and disorders (<xref rid="tbl4" ref-type="table">Table 4</xref>) with a prevalence of between 1/400 (Down syndrome) and very rare (i.e. for which the prevalence is unknown but for which only case reports exist). Each of these disorders was linked to a total 668 possible ultrasound anomalies.</p>
+</sec>
+<sec id="s2a2">
+<title>Description of the software algorithm</title>
+<p>The workflow of the SONIO DSS is to start from a call anomaly or a risk factor, and displays at each iteration:</p>
+<list list-type="simple">
+<list-item><p>&#x2370; a number of visible abnormalities in the anatomical area being explored that could quickly guide the diagnosis</p></list-item>
+<list-item><p>&#x2370; the next anatomical areas to verify for any associated anomalies</p></list-item>
+<list-item><p>&#x2370; contextual questions (if necessary) about possible risk factors</p></list-item>
+<list-item><p>&#x2370; the serial probability of the different diagnoses</p></list-item>
+</list>
+<p>The SONIO main software is built on a combination of two algorithms: one for the diagnosis of a syndrome given the phenotype and the second to suggest the next ultrasonographic anomaly to look for (<xref ref-type="bibr" rid="c14">14</xref>).</p>
+<p>The diagnosis algorithm consists of performing a Bayes formula commonly used for building probabilistic reasoning systems (<xref ref-type="bibr" rid="c15">15</xref>) particularly in medical applications (<xref ref-type="bibr" rid="c16">16</xref>) with several algorithmic refinements. It is fitted to work with medical ontologies (<xref ref-type="bibr" rid="c12">12</xref>,<xref ref-type="bibr" rid="c17">17</xref>), since the anomalies are related to each other by the tree structure of HPO. This means that some anomalies are &#x201C;ascendants&#x201D; of others, i.e. they describe a more general concept. In such a case, it is necessary to direct the information through the ontology graph to estimate more precisely the probabilities of the anomalies given the corresponding syndrome. The algorithm is also able to process contextual information, such as fetal gender, gestational age, etc. that change the probability of the syndromes or of the anomalies. Then, the algorithm can deal with the causal links between the anomalies. Indeed, some anomalies, for example Pierre-Robin sequence, are more complex entities which include other anomalies such as cleft palate or micro retrognatia. For such cases we need an AND gate logic with rule-based methods that is not encapsulated in the HPO ontology and which is one of the legacies of the expert systems of the 1980s (<xref ref-type="bibr" rid="c18">18</xref>). The second main algorithm directly uses this diagnosis algorithm to suggest the next anomalies to look for. This algorithm mainly consists of a decision tree algorithm based on average information gain (<xref ref-type="bibr" rid="c19">19</xref>,<xref ref-type="bibr" rid="c20">20</xref>). Nevertheless, several refinements have been necessary to produce acceptable diagnostic pathways for the users. First, we accounted for the ergonomics of the ultrasound examination with, for example, no back and forth between anatomical zones. The software&#x2019;s line of reasoning must also appear logical to the user in order to be adopted. This is why the software is designed to first perform causal reasoning, i.e starts from the input sign and looks for a mechanical cause, before starting to reason by association of malformations to diagnose a syndrome.</p>
+</sec>
+</sec>
+<sec id="s2b">
+<label>2.</label>
+<title>Design and setting of the validation study</title>
+<p>This was a prospectively designed study performed on a cohort of 251 cases extracted from the Necker database of fetal post mortem pathology, with at least one sonographic anomaly and a definite diagnosis. A formal protocol was established for each of the key steps of the study prior to its implementation:</p>
+<list list-type="bullet">
+<list-item><p>Curation and annotation of the postmortem phenotypes and diagnoses that define the validation database</p></list-item>
+<list-item><p>Running SONIO on the postmortem phenotypes of the validation database</p></list-item>
+<list-item><p>Definition of success criteria</p></list-item>
+<list-item><p>Adjudication using a panel of external experts for cases on which Sonio and the post mortem diagnosis were discordant: was this a true failure of Sonio DSS or was the diagnosis altogether impossible because of a truly atypical phenotype based upon the aforementioned Orphanet (i.e. the postmortem diagnosis was fortuitously made only by using wide genetic testing)&#x003F;</p></list-item>
+</list>
+<sec id="s2b1">
+<title>Curation and annotation of the validation database of postmortem phenotypes</title>
+<p>The validation database was extracted from the Necker database of fetal pathology using the following criteria: the syndrome is present in the SONIO thesaurus; from the pathology report, ultrasound detectable abnormalities can be identified (i.e. symptoms found in the SONIO thesaurus); the diagnosis is certain, confirmed by genetic testing or clinically by a geneticist and identified by an ORPHA ID (<xref rid="fig1" ref-type="fig">Figure 1</xref>). Additional data was collected, including gestational age at the time of diagnosis and a set of known risk factors (e.g. gender, recent Zika Infection etc.)</p>
+<fig id="fig1" position="float" fig-type="figure">
+<label>Figure 1:</label>
+<caption><p>Example of an annotated postmortem phenotype</p></caption>
+<graphic xlink:href="21257630v1_fig1.tif"/>
+</fig>
+<p>This search yielded 251 cases (comprising 1689 ultrasound anomalies). The validation database covered 96 syndromes of the 294 (32.65&#x0025;) contained in the Sonio thesaurus. In terms of prevalence these 96 syndromes represent 79&#x0025; of the 294 syndromes of the Sonio thesaurus. The postmortem diagnoses cover genetic single-gene, chromosomal, infectious and toxic/teratogenic etiologies.</p>
+<p>This study was approved by the local ethics committee of the Necker hospital (IRB registration : CERPAHP.5 #00011928).</p>
+</sec>
+<sec id="s2b2">
+<title>Emulating tools to run SONIO on postmortem phenotypes</title>
+<p>To mimic the use of Sonio in real-life clinical ultrasound, the software was applied to the postmortem phenotypes using two emulating models. We call &#x2018;emulation&#x2019;, a scenario of application. The 2 models were defined as follows :</p>
+<list list-type="simple">
+<list-item><p>&#x2370; &#x201C;full phenotype&#x201D;: in this model, for each case, all risk factors and observed anomalies are provided to SONIO as a single input. This model provides an estimate of the crude performance of the system. Several scenarios were emulated in each case using different assumptions for gestational age (when not filled in the case), or previous CGH array testing whenever this data was missing.</p></list-item>
+<list-item><p>&#x2370; &#x201C;1-by-1&#x201D;: in this model, the system is primed with a randomly selected anomaly as an input and sequentially questions the presence or absence of specific anomalies, until all the anatomical regions of the fetus have been checked. A region is declared valid as soon as all the anomalies recommended by SONIO on this particular region have been checked for as present or absent respectively. However, the 1<sup>st</sup> anomaly could not be an atypical sign, i.e. a sign with &#x003C;5&#x0025; probability of association with the disease.</p></list-item>
+</list>
+</sec>
+<sec id="s2b3">
+<title>Definition of success criteria</title>
+<p>The primary outcome was based upon the use of the &#x201C;full-phenotype&#x201D; emulation, with a target concordance rate &#x003E; 90&#x0025; between the postmortem diagnosis and the top-7 diagnoses given by SONIO (i.e. the postmortem diagnosis was within the 7 most likely diagnoses suggested by SONIO). Secondary outcomes included concordance for the top-5 and top-3 diagnoses; concordance using the &#x201C;1-by-1&#x201D; model; number of steps to reach the final list of diagnoses; number of discordant cases.</p>
+</sec>
+<sec id="s2b4">
+<title>Management of discordances between Sonio output and postmortem diagnosis</title>
+<p>An adjudication protocol was designed for discordances between SONIO and postmortem diagnosis. Each case was adjudicated by 2 of 3 independent external fetal medicine experts (FA, AG, TS). A third expert was asked to referee disagreements between two experts. For each case to be adjudicated, each one of the experts was given the complete phenotype and was asked for the most likely diagnosis, blinded to the postmortem diagnosis as well as to the Sonio output. The expert diagnosis was then compared to the SONIO and postmortem diagnosis with the following 4 possible decisions : i. SONIO and postmortem agree, which happened when the initial discordance was based on synonym terms or two subtypes of the same disease; ii. The diagnosis was achievable given the phenotype but SONIO failed; iii. the diagnosis was impossible given the ultrasound phenotype (unspecific/atypical phenotype); iv. The postmortem diagnosis was incorrect.</p>
+</sec>
+</sec>
+</sec>
+<sec id="s3">
+<title>RESULTS</title>
+<p>The thesaurus of the DSS comprises 294 syndromes and diseases with a prevalence of 1/400 to 1 in a million and 668 prenatal ultrasound anomalies. The validation database of 251 postmortem phenotypes, ranging from 12 weeks to 40 weeks, covered 96 syndromes or diseases (73 single-gene, 17 chromosomal, 2 infectious, 4 toxic/teratogenic). Each case displayed 6 anomalies on average (min=2, max=21), 3 of which being considered atypical of the disease (<xref rid="tbl1" ref-type="table">Table 1</xref>). The validation database covered 32.65&#x0025; (96/294) of the syndromes of SONIO&#x2019;s thesaurus but 79&#x0025; of their overall cumulative prevalence. The array-CGH, karyotype, FISH or gene-sequencing was abnormal in only 107/251 (42&#x0025;) of the cases. The other postmortem diagnoses were based solely on clinical assessment.</p>
+<table-wrap id="tbl1" orientation="portrait" position="float">
+<label>Table 1</label>
+<caption><p>Baseline description of the validation dataset and SONIO emulations</p></caption>
+<graphic xlink:href="21257630v1_tbl1.tif"/>
+</table-wrap>
+<p>A total of 464 scenarios were emulated on SONIO with the &#x2018;full phenotype&#x2019; model. With the &#x201C;1-by-1&#x201D; model 1,210 emulations were run, requiring 9 steps on average (i.e. 9 questions asked by SONIO) before reaching a final list of potential diagnoses. Concordance between the top-7 SONIO diagnoses and postmortem was achieved in 199 cases for the full-phenotype mode, and 52 cases required adjudication by the external panel of experts (<xref rid="fig2" ref-type="fig">Figure 2</xref>). The adjudication excluded 42 diagnoses that were considered to be unachievable with the available information, leaving 209 cases for which the diagnosis is achievable using the postmortem phenotype alone. Three cases were considered concordant after adjudication, essentially because of synonym names. In 7/209 SONIO failed to achieve the diagnosis within the top-7. Using the &#x2018;full-phenotype&#x2019; model, the success rate of the top-7 output of SONIO was 96.7&#x0025; (202/209) with a confidence interval of [93.8; 99.6]. This was 91.9&#x0025; and 87.1&#x0025; for the top-5 and top-3 outputs respectively (<xref rid="tbl2" ref-type="table">Table 2</xref>). Using the &#x201C;1-by-1&#x201D; model without the CGH array results, the correct diagnosis was within the top-7, top-5 and top-3 of SONIO&#x2019;s output in 72.4&#x0025;, 69.3&#x0025; and 63.1&#x0025; of the case respectively. Adding the information of a normal CGH array in non-chromosomal syndromes yielded success rates of 74&#x0025;, 71&#x0025; and 65&#x0025; within the top-7, top-5 and top-3 respectively (<xref rid="tbl3" ref-type="table">Table 3</xref>).</p>
+<table-wrap id="tbl2" orientation="portrait" position="float">
+<label>Table 2</label>
+<caption><p>Concordance table for validation cases with the &#x2018;full phenotype&#x2019; model.</p></caption>
+<graphic xlink:href="21257630v1_tbl2.tif"/>
+</table-wrap>
+<table-wrap id="tbl3" orientation="portrait" position="float">
+<label>Table 3</label>
+<caption><p>Concordance table for validation cases with the &#x2018;1-by-1&#x2019; model.</p></caption>
+<graphic xlink:href="21257630v1_tbl3.tif"/>
+</table-wrap>
+<table-wrap id="tbl4" orientation="portrait" position="float">
+<label>Table 4</label>
+<caption><p>List of the diseases affecting the 42 cases labelled by adjudicators as &#x201C;Unlikely to be diagnosed based on available phenotype&#x201D;</p></caption>
+<graphic xlink:href="21257630v1_tbl4.tif"/>
+</table-wrap>
+<fig id="fig2" position="float" fig-type="figure">
+<label>Figure 2.</label>
+<caption><p>Flow chart of the study population</p></caption>
+<graphic xlink:href="21257630v1_fig2.tif"/>
+</fig>
+<p>The details of the 7 cases considered as a SONIO failure by adjudication can be found in <xref rid="tbl4" ref-type="table">Table 4</xref>. The details of the 42 cases that were excluded by the adjudicators can be found in Supplementary Table S1, highlighting rare chromosomal anomalies detectable by CGH or mosaics and the importance of careful abnormality description and coding while analyzing clinical cases. More details and explanations on these cases can be found in supplementary material.</p>
+<p><xref rid="fig3" ref-type="fig">Figures 3</xref>, <xref rid="fig4" ref-type="fig">4</xref> and <xref rid="fig5" ref-type="fig">5</xref> provide visual representations of these results. Concerning the <xref rid="fig3" ref-type="fig">figure 3</xref>, the y-axis gives the name of the anomalies that were used as an entry point in the emulation of the software, on the x-axis are the names of the syndromes to be found as diagnostic. One square can refer to several scenarios emulated on Sonio for the same syndrome and entry point, since there may be several clinical cases with the same diagnosis. For that reason we represent the average results, the closer this square is to yellow, the closer the software is to having systematically found the right diagnosis starting from the considered entry point. The lowest line shows the results of the full-phenotype (all the file) option. Thus this figure shows the correspondence between the cases failing on all the file (in the right end of the axis) with the cases failing on the &#x201C;1-by-1&#x201D; mode (upper right frame of the graph).</p>
+<fig id="fig3" position="float" fig-type="figure">
+<label>Figure 3</label>
+<caption><p>Percentage of scenarios emulated in sonio (blue - green - yellow scale, yellow being the best) indicating the correct diagnosis within top-7 suggestions, by Syndrome (x axis) and anomaly of entry (y axis). In y axis were added two categories, identified on the bottom left of the graph: starting with the whole file (&#x201C;All the file&#x201D;) and starting from a specific anomaly (&#x201C;One anomaly&#x201D;). E.g. the Holt-Oram syndrome cases were not found giving the whole life whilst always found starting from single anomalies. Note that syndromes were sorted first by performance on the whole file and second on performance starting from a single anomaly, hence syndromes close to the left are the ones which were most often correctly found. Note also that anomalies (aside the grouping categories) were sorted by their average performance as well. Gray cells have no data support i.e. no simulation for the given syndrome and anomaly of entry at their coordinates.</p></caption>
+<graphic xlink:href="21257630v1_fig3.tif"/>
+</fig>
+<fig id="fig4" position="float" fig-type="figure">
+<label>Figure 4</label>
+<caption><p>Percentage of scenarios emulated in sonio indicating the correct diagnosis within the top-7 starting from one anomaly (in x axis) versus giving the whole file (in y axis) by syndrome (regrouping several cases). BOR and Joubert Syndromes are in coordinate (<xref ref-type="bibr" rid="c1">1</xref>,<xref ref-type="bibr" rid="c1">1</xref>), indicating that we managed to find those syndromes in our top-7 suggestions whether starting with a single anomaly or the whole file. The majority of our cases perform very well when using the whole life as we have seen previously (see the concentration of points around y = 1). A few files have overall poor performance.</p></caption>
+<graphic xlink:href="21257630v1_fig4.tif"/>
+</fig>
+<fig id="fig5" position="float" fig-type="figure">
+<label>Figure 5</label>
+<caption><p>Percentage of scenarios emulated in sonio indicating the correct diagnosis within the top-7 starting from one anomaly (right boxplot) versus giving the whole file (left boxplot) by syndrome (each facet). Achondroplasia cases perform well when all the file is given, whilst starting with an anomaly gives a very volatile performance i.e. depending on the anomaly of entry, performance ranges 10&#x0025; to 60&#x0025; chances of finding the right diagnoses in top-7. This graph is an alternative and slightly more detailed view of the preceding figure.</p></caption>
+<graphic xlink:href="21257630v1_fig5.tif"/>
+</fig>
+<p><xref rid="fig4" ref-type="fig">Figure 4</xref> represents another visualization of the performance of the &#x201C;all the file&#x201D; on the y-axis and the performance of the &#x201C;1-by-1&#x201D; mode on the x-axis. The group of syndromes in the upper right-hand frame of the graph are systematically diagnosed by the software whether one gives the whole phenotype at once or follows the decision tree. The cases at the lower part of the graph are those that went to adjudication. Finally, the cases at the upper left-hand box of the graph were correctly diagnosed by Sonio when the whole phenotype is provided but are not when the decision tree is followed. The intervariability of the performance <italic>per</italic> diagnostic can be analyzed in more detail at <xref rid="fig5" ref-type="fig">Figure 5</xref></p>
+</sec>
+<sec id="s4">
+<title>DISCUSSION</title>
+<sec id="s4a">
+<title>Main results</title>
+<p>In this study, we present the description and clinical validation of a diagnostic support system for fetal ultrasound on real data, using a database of postmortem phenotypes with a certain diagnosis. This study showed that SONIO identified the post-mortem diagnosis within the 7 most probable diagnoses in &#x003E;95&#x0025; of cases when the full phenotype is provided. These results, together with the &#x003E;91&#x0025; concordance rate for top-5 list, show that SONIO was remarkably robust to noise, given that, on average, half of the anomalies were considered atypical for the diagnosis. In addition, although it did slightly improve the results, providing information that array-CGH was normal in non-chromosomal syndromes was of little help. The performance of SONIO was expectedly lower when using the &#x2018;1-by-1&#x2019; model, although successful in over 70&#x0025; of the cases: indeed, under this model, the complete phenotype may not have been provided to SONIO in the end, since only the symptoms that SONIO has asked to be checked are accounted in the diagnostic pathway. This model is closer to what one can expect in real-life than the &#x2018;full phenotype&#x2019; model.</p>
+</sec>
+<sec id="s4b">
+<title>Interpretation</title>
+<p>Faviez et al. recently reviewed the performance of diagnostic DSSs for rare diseases (<xref ref-type="bibr" rid="c6">6</xref>). The systems presented in this review rely on post-hoc postnatal phenotyping and do not provide real-time assistance. In the 9 systems for which performance was reported, the success-rate of the top-10 diagnoses were uniformly spread from 32&#x0025; to 99&#x0025; (<xref ref-type="bibr" rid="c22">22</xref>). SONIO, which incorporates the additional complexity of real-time processing, therefore appears as an effective tool with a success rate in the highest performance range of the available rare disease DSS tools, while using the top-7 diagnoses, a more stringent criterion than the top-10 used by others. This is particularly relevant, given that reported performances rely rarely on real data for validation, but generally use simulated / in silico validation.</p>
+</sec>
+<sec id="s4c">
+<title>Strengths and limitations</title>
+<p>The strengths of this study are:</p>
+<list list-type="simple">
+<list-item><p>&#x2013; A unique database: the database contains 251 cases (96 diseases). However, this is likely to approximate 79&#x0025; of the combined prevalence of diseases encountered by sonographers during prenatal foetal US examination by summing-up individual prevalences reported by ORPHANET. This makes it therefore suitable for use in clinical practice. Furthermore, compared to real-life prenatal diagnosis, this database is enriched with the most challenging rare, non-chromosomal diagnoses since chromosomal defects, generally confirmed prenatally with array-CGH generally do not require a postmortem examination</p></list-item>
+<list-item><p>&#x2013; The emulation models describe two different aspects of the performance of SONIO: the &#x2018;full phenotype&#x2019; model describes the performance of the database and diagnostic search engine, while the &#x2018;1-by-1&#x2019; emulates the real-life use</p></list-item>
+<list-item><p>&#x2013; The external independent adjudication of discordant cases</p></list-item>
+</list>
+<p>The limitations of this study are:</p>
+<list list-type="simple">
+<list-item><p>&#x2013; The validation dataset is based on the postmortem data of a single center: despite the high coverage of possible diagnoses, it is incomplete. It may also be biased; through preferential selection of a subset of conditions for post-mortem examination; it may also originate from a center-specific postmortem phenotype assessment.</p></list-item>
+<list-item><p>&#x2013; When using SONIO during real-life fetal ultrasound examination, the software sequentially suggests anomalies to look for, but the interpretation of the presence or absence of an anomaly on the ultrasound image is made by the clinician. In our validation setting, we provided an accurate phenotype established by the postmortem examination, which therefore did not incorporate potential human error in the interpretation of ultrasound imaging and risk factors (<xref ref-type="bibr" rid="c23">23</xref>).</p></list-item>
+<list-item><p>&#x2013; In the &#x201C;1-by-1&#x201D; model, the first input is always a characteristic symptom of the disease (i.e. that is present in at least 5&#x0025; of patients affected with the syndrome). We therefore did not assess the software when the first symptom is an atypical sign.</p></list-item>
+</list>
+</sec>
+<sec id="s4d">
+<title>Clinical impact of this study</title>
+<p>The knowledge by one individual of the precise prenatal phenotype of over 300 congenital disorders or syndromes as well the respective prevalence and specificity of each one of their constitutive anomalies is unlikely. On average, around 50&#x0025; of those undergo a complete diagnosis before birth. We therefore believe that the results of this validation process strongly support that SONIO&#x2019;s algorithm is a significant augmentation to the diagnostic capability of ultrasound-based prenatal diagnosis.</p>
+<p>Artificial intelligence in this field of fetal medicine is developing in two main directions, the recognition of standardized ultrasound images for assessment of normality or biometrics (<xref ref-type="bibr" rid="c24">24</xref>) and that of diagnostic DSSs (<xref ref-type="bibr" rid="c6">6</xref>). SONIO belongs to the latter. The clinical strengths of SONIO lie in: i) the quality of its constitutive thesaurus which is a prenatal adaptation of Orphanet, the most recognized and up-to-date registry of rare congenital disorders; ii) the incorporation of context information and risk factors (e.g. previous genetic testing, gestational age, sex etc.) in the algorithms; iii) Its ability to work in real-time at the patient&#x2019; side in the presence of a call anomaly or a risk factor by prompting the practitioner to look for anomalies that would possibly have been overlooked otherwise; iv) maintaining the diagnostic process within acceptable duration and number of steps.</p>
+<p>This study adds convincing external validation results on real data to this list. We acknowledge such a validation, based on postmortem phenotypes, while providing the best possible reference diagnosis quality, does not provide the same information as a prospective controlled, possibly randomized, validation trial. However, such a trial is unlikely to ever be implemented as the prevalence of diseases covered by SONIO would require either an unrealistic number of pregnancies to examine or an unrealistic study length. This limitation, as well as the possible false-positive diagnoses that SONIO may generate in the absence of congenital disease, will be addressed in further studies.</p>
+</sec>
+<sec id="s4e">
+<title>Conclusion</title>
+<p>In conclusion, SONIO has developed an effective real-time diagnostic DSS for specialists involved in prenatal diagnosis that is likely to improve the quality of their work as well as provide continuous medical education. We believe that the confidence gained by the physician could also improve the patient-physician interaction.</p>
+</sec>
+</sec>
+<sec sec-type="supplementary-material">
+<title>Supporting information</title>
+<supplementary-material>
+<label>table S1</label>
+<media xlink:href="supplements/257630_file07.docx" />
+</supplementary-material>
+</sec>
+</body>
+<back>
+<sec sec-type="data-availability">
+<title>Data Availability</title>
+<p>The validation data will be made partly available, upon request.
+The algorithms and thesaurus of the SONIO DSS are the property of the SONIO company
+</p>
+</sec>
+<ack>
+<title>ACKNOWLEDGMENTS</title>
+<p>We thank Fran&#x00E7;ois Audibert, Annegret Geipel, Thomas Schramm for their implication in the adjudication process.</p>
+</ack>
+<sec id="s5">
+<title>FUNDING</title>
+<p>None</p>
+</sec>
+<ref-list>
+<title>REFERENCES</title>
+<ref id="c1"><label>1.</label><mixed-citation publication-type="website"><collab>EUROCAT [Internet]. [cited 2010 Sep 28]</collab>. Available from: <ext-link ext-link-type="uri" xlink:href="http://www.eurocat-network.eu/">http://www.eurocat-network.eu/</ext-link></mixed-citation></ref>
+<ref id="c2"><label>2.</label><mixed-citation publication-type="website"><collab>Orphanet</collab>, <source>The portal for rare diseases and orphan drugs</source> [Internet]. [cited 2021 May 18]. Available from: <ext-link ext-link-type="uri" xlink:href="http://www.orpha.net/consor/www/cgi-bin/index.php?lng=EN">http://www.orpha.net/consor/www/cgi-bin/index.php?lng=EN</ext-link></mixed-citation></ref>
+<ref id="c3"><label>3.</label><mixed-citation publication-type="journal"><string-name><surname>Ferrier</surname> <given-names>C</given-names></string-name>, <string-name><surname>Dhombres</surname> <given-names>F</given-names></string-name>, <string-name><surname>Khoshnood</surname> <given-names>B</given-names></string-name>, <string-name><surname>Randrianaivo</surname> <given-names>H</given-names></string-name>, <string-name><surname>Perthus</surname> <given-names>I</given-names></string-name>, <string-name><surname>Guilbaut</surname> <given-names>L</given-names></string-name>, <etal>et al.</etal> <article-title>Trends in resource use and effectiveness of ultrasound detection of fetal structural anomalies in France: a multiple registry-based study</article-title>. <source>BMJ Open</source>. <year>2019 Feb</year>;<volume>9</volume>(<issue>2</issue>):<fpage>e025482</fpage>.</mixed-citation></ref>
+<ref id="c4"><label>4.</label><mixed-citation publication-type="journal"><string-name><surname>Api</surname> <given-names>O</given-names></string-name>, <string-name><surname>Demir</surname> <given-names>HN</given-names></string-name>, <string-name><surname>Api</surname> <given-names>M</given-names></string-name>, <string-name><surname>Tamer</surname> <given-names>I</given-names></string-name>, <string-name><surname>Orbay</surname> <given-names>E</given-names></string-name>, <string-name><surname>Unal</surname> <given-names>O.</given-names></string-name> <article-title>Anxiety scores before and after genetic sonogram</article-title>. <source>Arch Gynecol Obstet</source>. <year>2009</year> Oct;<volume>280</volume>(<issue>4</issue>):<fpage>553</fpage>&#x2013;<lpage>8</lpage>.</mixed-citation></ref>
+<ref id="c5"><label>5.</label><mixed-citation publication-type="journal"><string-name><surname>Gambhir</surname> <given-names>S</given-names></string-name>, <string-name><surname>Malik</surname> <given-names>SK</given-names></string-name>, <string-name><surname>Kumar</surname> <given-names>Y.</given-names></string-name> <article-title>Role of Soft Computing Approaches in HealthCare Domain: A Mini Review</article-title>. <source>J Med Syst</source>. <year>2016</year> Dec;<volume>40</volume>(<issue>12</issue>):<fpage>287</fpage>.</mixed-citation></ref>
+<ref id="c6"><label>6.</label><mixed-citation publication-type="journal"><string-name><surname>Faviez</surname> <given-names>C</given-names></string-name>, <string-name><surname>Chen</surname> <given-names>X</given-names></string-name>, <string-name><surname>Garcelon</surname> <given-names>N</given-names></string-name>, <string-name><surname>Neuraz</surname> <given-names>A</given-names></string-name>, <string-name><surname>Knebelmann</surname> <given-names>B</given-names></string-name>, <string-name><surname>Salomon</surname> <given-names>R</given-names></string-name>, <etal>et al.</etal> <article-title>Diagnosis support systems for rare diseases: a scoping review</article-title>. <source>Orphanet J Rare Dis</source>. <year>2020</year> Apr 16;<volume>15</volume>(<issue>1</issue>):<fpage>94</fpage>.</mixed-citation></ref>
+<ref id="c7"><label>7.</label><mixed-citation publication-type="website"><string-name><surname>Porat</surname> <given-names>S</given-names></string-name>, <string-name><surname>de Rham</surname> <given-names>M</given-names></string-name>, <string-name><surname>Giamboni</surname> <given-names>D</given-names></string-name>, <string-name><surname>Van Mieghem</surname> <given-names>T</given-names></string-name>, <string-name><surname>Baud</surname> <given-names>D.</given-names></string-name> <article-title>Phenotip - a web-based instrument to help diagnosing fetal syndromes antenatally</article-title>. <source>Orphanet J Rare Dis [Internet]</source>. <year>2014</year> Dec 10 [cited 2021 May 14];9. Available from: <ext-link ext-link-type="uri" xlink:href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4268872/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4268872/</ext-link></mixed-citation></ref>
+<ref id="c8"><label>8.</label><mixed-citation publication-type="website"><collab>The Phenomizer (Orphanet) - Clinical Diagnostics with Similarity Searches in Ontologies [Internet]. [cited 2021 May 20]</collab>. Available from: <ext-link ext-link-type="uri" xlink:href="http://compbio.charite.de/phenomizer_orphanet/">http://compbio.charite.de/phenomizer_orphanet/</ext-link></mixed-citation></ref>
+<ref id="c9"><label>9.</label><mixed-citation publication-type="website"><collab>Guided screening and diagnosis of congenital malformations - sonio sonio [Internet]. [cited 2021 May 20]</collab>. Available from: <ext-link ext-link-type="uri" xlink:href="https://www.sonio.ai/">https://www.sonio.ai/</ext-link></mixed-citation></ref>
+<ref id="c10"><label>10.</label><mixed-citation publication-type="journal"><string-name><surname>Montani</surname> <given-names>S</given-names></string-name>, <string-name><surname>Striani</surname> <given-names>M.</given-names></string-name> <article-title>Artificial Intelligence in Clinical Decision Support: a Focused Literature Survey</article-title>. <source>Yearb Med Inform</source>. <year>2019</year> Aug;<volume>28</volume>(<issue>1</issue>):<fpage>120</fpage>&#x2013;<lpage>7</lpage>.</mixed-citation></ref>
+<ref id="c11"><label>11.</label><mixed-citation publication-type="website"><collab>CRAT - Centre de r&#x00E9;f&#x00E9;rence sur les agents t&#x00E9;ratog&#x00E8;nes chez la femme enceinte [Internet]. [cited 2021 May 19]</collab>. Available from: <ext-link ext-link-type="uri" xlink:href="https://www.lecrat.fr/">https://www.lecrat.fr/</ext-link></mixed-citation></ref>
+<ref id="c12"><label>12.</label><mixed-citation publication-type="journal"><string-name><surname>K&#x00F6;hler</surname> <given-names>S</given-names></string-name>, <string-name><surname>Gargano</surname> <given-names>M</given-names></string-name>, <string-name><surname>Matentzoglu</surname> <given-names>N</given-names></string-name>, <string-name><surname>Carmody</surname> <given-names>LC</given-names></string-name>, <string-name><surname>Lewis-Smith</surname> <given-names>D</given-names></string-name>, <string-name><surname>Vasilevsky</surname> <given-names>NA</given-names></string-name>, <etal>et al.</etal> <article-title>The Human Phenotype Ontology in 2021</article-title>. <source>Nucleic Acids Res</source>. <year>2021</year> Jan 8;<volume>49</volume>(<issue>D1</issue>):<fpage>D1207</fpage>&#x2013;<lpage>17</lpage>.</mixed-citation></ref>
+<ref id="c13"><label>13.</label><mixed-citation publication-type="website"><collab>Human Phenotype Ontology [Internet]. [cited 2021 May 19]</collab>. Available from: <ext-link ext-link-type="uri" xlink:href="https://hpo.jax.org/app/">https://hpo.jax.org/app/</ext-link></mixed-citation></ref>
+<ref id="c14"><label>14.</label><mixed-citation publication-type="website"><string-name><surname>Besson</surname> <given-names>R.</given-names></string-name> <article-title>Decision making strategy for antenatal echographic screening of foetal abnormalities using statistical learning [Internet] [These de doctorat]</article-title>. <source>Universit&#x00E9; Paris-Saclay (ComUE)</source>; <year>2019</year> [cited 2021 May 19]. Available from: <ext-link ext-link-type="uri" xlink:href="http://www.theses.fr/2019SACLX037">http://www.theses.fr/2019SACLX037</ext-link></mixed-citation></ref>
+<ref id="c15"><label>15.</label><mixed-citation publication-type="website"><collab>Probabilistic Reasoning in Intelligent Systems [Internet]</collab>. <source>Elsevier</source>; <year>1988</year> [cited 2021 May 19]. Available from: <ext-link ext-link-type="uri" xlink:href="https://linkinghub.elsevier.com/retrieve/pii/C20090276094">https://linkinghub.elsevier.com/retrieve/pii/C20090276094</ext-link></mixed-citation></ref>
+<ref id="c16"><label>16.</label><mixed-citation publication-type="other"><string-name><surname>Charniak</surname> <given-names>E.</given-names></string-name> <article-title>The Bayesian Basis of Common Sense Medical Diagnosis</article-title>. <source>In: AAAI</source>. <year>1983</year>.</mixed-citation></ref>
+<ref id="c17"><label>17.</label><mixed-citation publication-type="journal"><string-name><surname>Dhombres</surname> <given-names>F</given-names></string-name>, <string-name><surname>Jouannic</surname> <given-names>J-M</given-names></string-name>, <string-name><surname>Jaulent</surname> <given-names>M-C</given-names></string-name>, <string-name><surname>Charlet</surname> <given-names>J.</given-names></string-name> <source>Choix m&#x00E9;thodologiques pour la construction d&#x2019;une ontologie de domaine en m&#x00E9;decine pr&#x00E9;natale</source>. <year>2010</year>;<volume>13</volume>.</mixed-citation></ref>
+<ref id="c18"><label>18.</label><mixed-citation publication-type="website"><string-name><surname>Jackson</surname> <given-names>P.</given-names></string-name> <article-title>Introduction to expert systems [Internet]</article-title>. <source>undefined</source>. <year>1986</year> [cited 2021 May 19]. Available from: <ext-link ext-link-type="uri" xlink:href="https://www.semanticscholar.org/paper/Introduction-to-expert-systems-Jackson/719e4e1328be9487b33a13dc38b6120993999ed5">https://www.semanticscholar.org/paper/Introduction-to-expert-systems-Jackson/719e4e1328be9487b33a13dc38b6120993999ed5</ext-link></mixed-citation></ref>
+<ref id="c19"><label>19.</label><mixed-citation publication-type="journal"><string-name><surname>Quinlan</surname> <given-names>JR</given-names></string-name>. <article-title>Induction of decision trees</article-title>. <source>Mach Learn</source>. <year>1986 Mar 1</year>;<volume>1</volume>(<issue>1</issue>):<fpage>81</fpage>&#x2013;<lpage>106</lpage>.</mixed-citation></ref>
+<ref id="c20"><label>20.</label><mixed-citation publication-type="journal"><string-name><surname>Breiman</surname> <given-names>L</given-names></string-name>, <string-name><surname>Friedman</surname> <given-names>J</given-names></string-name>, <string-name><surname>Stone</surname> <given-names>CJ</given-names></string-name>, <string-name><surname>Olshen</surname> <given-names>RA</given-names></string-name>. <article-title>Classification and Regression Trees</article-title>. <source>Taylor &#x0026; Francis</source>; <year>1984</year>. <volume>372 p</volume>.</mixed-citation></ref>
+<ref id="c21"><label>21.</label><mixed-citation publication-type="journal"><string-name><surname>Chen</surname> <given-names>J</given-names></string-name>, <string-name><surname>Xu</surname> <given-names>H</given-names></string-name>, <string-name><surname>Jegga</surname> <given-names>A</given-names></string-name>, <string-name><surname>Zhang</surname> <given-names>K</given-names></string-name>, <string-name><surname>White</surname> <given-names>PS</given-names></string-name>, <string-name><surname>Zhang</surname> <given-names>G.</given-names></string-name> <article-title>Novel phenotype-disease matching tool for rare genetic diseases</article-title>. <source>Genet Med Off J Am Coll Med Genet</source>. <year>2019</year> Feb;<volume>21</volume>(<issue>2</issue>):<fpage>339</fpage>&#x2013;<lpage>46</lpage>.</mixed-citation></ref>
+<ref id="c22"><label>22.</label><mixed-citation publication-type="journal"><string-name><surname>Zemojtel</surname> <given-names>T</given-names></string-name>, <string-name><surname>K&#x00F6;hler</surname> <given-names>S</given-names></string-name>, <string-name><surname>Mackenroth</surname> <given-names>L</given-names></string-name>, <string-name><surname>J&#x00E4;ger</surname> <given-names>M</given-names></string-name>, <string-name><surname>Hecht</surname> <given-names>J</given-names></string-name>, <string-name><surname>Krawitz</surname> <given-names>P</given-names></string-name>, <etal>et al.</etal> <article-title>Effective diagnosis of genetic disease by computational phenotype analysis of the disease-associated genome</article-title>. <source>Sci Transl Med</source>. <year>2014</year> Sep 3;<volume>6</volume>(<issue>252</issue>):<fpage>252ra123</fpage>.</mixed-citation></ref>
+<ref id="c23"><label>23.</label><mixed-citation publication-type="journal"><string-name><surname>Smith-Bindman</surname> <given-names>R</given-names></string-name>, <string-name><surname>Hosmer</surname> <given-names>WD</given-names></string-name>, <string-name><surname>Caponigro</surname> <given-names>M</given-names></string-name>, <string-name><surname>Cunningham</surname> <given-names>G.</given-names></string-name> <article-title>The variability in the interpretation of prenatal diagnostic ultrasound: Interpretation of prenatal diagnostic ultrasound</article-title>. <source>Ultrasound Obstet Gynecol</source>. <year>2001 Apr</year>;<volume>17</volume>(<issue>4</issue>):<fpage>326</fpage>&#x2013;<lpage>32</lpage>.</mixed-citation></ref>
+<ref id="c24"><label>24.</label><mixed-citation publication-type="journal"><string-name><surname>Drukker</surname> <given-names>L</given-names></string-name>, <string-name><surname>Noble</surname> <given-names>JA</given-names></string-name>, <string-name><surname>Papageorghiou</surname> <given-names>AT</given-names></string-name>. <article-title>Introduction to artificial intelligence in ultrasound imaging in obstetrics and gynecology</article-title>. <source>Ultrasound Obstet Gynecol Off J Int Soc Ultrasound Obstet Gynecol</source>. <year>2020</year> Oct;<volume>56</volume>(<issue>4</issue>):<fpage>498</fpage>&#x2013;<lpage>505</lpage>.</mixed-citation></ref>
+</ref-list>
+</back>
+</article>

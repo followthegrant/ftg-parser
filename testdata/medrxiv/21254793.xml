@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.2d1 20170631//EN" "JATS-archivearticle1.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" article-type="article" dtd-version="1.2d1" specific-use="production" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="publisher-id">MEDRXIV</journal-id>
+<journal-title-group>
+<journal-title>medRxiv</journal-title>
+<abbrev-journal-title abbrev-type="publisher">medRxiv</abbrev-journal-title>
+</journal-title-group>
+<publisher>
+<publisher-name>Cold Spring Harbor Laboratory</publisher-name>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1101/2021.04.07.21254793</article-id>
+<article-version>1.1</article-version>
+<article-categories>
+<subj-group subj-group-type="hwp-journal-coll">
+<subject>Health Informatics</subject>
+</subj-group>
+</article-categories>
+<title-group>
+<article-title>Covid-19 and Excess Mortality in Medicare Beneficiaries</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" corresp="yes">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0001-6067-2907</contrib-id>
+<name><surname>Greenwald</surname><given-names>Scott</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="author-notes" rid="n1">&#x00B6;</xref>
+<xref ref-type="corresp" rid="cor1">&#x002A;</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0001-6449-5194</contrib-id>
+<name><surname>Chamoun</surname><given-names>Nassib G</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="author-notes" rid="n1">&#x00B6;</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0001-6826-9696</contrib-id>
+<name><surname>Manberg</surname><given-names>Paul J</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="author-notes" rid="n1">&#x00B6;</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Gray</surname><given-names>Josh</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="author-notes" rid="n1">&#x00B6;</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0001-9935-5693</contrib-id>
+<name><surname>Clain</surname><given-names>David</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="author-notes" rid="n1">&#x00B6;</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-1961-5577</contrib-id>
+<name><surname>Maheshwari</surname><given-names>Kamal</given-names></name>
+<xref ref-type="aff" rid="a2">2</xref>
+<xref ref-type="aff" rid="a3">3</xref>
+<xref ref-type="author-notes" rid="n1">&#x00B6;</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0001-9932-3077</contrib-id>
+<name><surname>Sessler</surname><given-names>Daniel I.</given-names></name>
+<xref ref-type="aff" rid="a2">2</xref>
+<xref ref-type="author-notes" rid="n1">&#x00B6;</xref>
+</contrib>
+<aff id="a1"><label>1</label><institution>Health Data Analytics Institute</institution>, Dedham MA</aff>
+<aff id="a2"><label>2</label><institution>Department of O<sc>utcomes</sc> R<sc>esearch</sc>, Anesthesiology Institute</institution>, Cleveland Clinic, Cleveland, OH</aff>
+<aff id="a3"><label>3</label><institution>Department of General Anesthesiology, Anesthesiology Institute</institution>, Cleveland Clinic, Cleveland, OH</aff>
+</contrib-group>
+<author-notes>
+<corresp id="cor1"><label>&#x002A;</label><bold>Corresponding Author</bold>: Email: <email>Scott.Greenwald@hda-institute.com</email> (SG)</corresp>
+<fn id="n1" fn-type="equal"><label>&#x00B6;</label><p>These authors contributed equally to this work.</p></fn>
+</author-notes>
+<pub-date pub-type="epub">
+<year>2021</year>
+</pub-date>
+<elocation-id>2021.04.07.21254793</elocation-id>
+<history>
+<date date-type="received">
+<day>07</day>
+<month>4</month>
+<year>2021</year>
+</date>
+<date date-type="rev-recd">
+<day>07</day>
+<month>4</month>
+<year>2021</year>
+</date>
+<date date-type="accepted">
+<day>10</day>
+<month>4</month>
+<year>2021</year>
+</date>
+</history>
+<permissions>
+<copyright-statement>&#x00A9; 2021, Posted by Cold Spring Harbor Laboratory</copyright-statement>
+<copyright-year>2021</copyright-year>
+<license license-type="creative-commons" xlink:href="http://creativecommons.org/licenses/by-nc/4.0/"><license-p>This pre-print is available under a Creative Commons License (Attribution-NonCommercial 4.0 International), CC BY-NC 4.0, as described at <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by-nc/4.0/">http://creativecommons.org/licenses/by-nc/4.0/</ext-link></license-p></license>
+</permissions>
+<self-uri xlink:href="21254793.pdf" content-type="pdf" xlink:role="full-text"/>
+<abstract>
+<title>Abstract</title>
+<p>We estimated excess mortality in Medicare recipients with probable and confirmed Covid-19 infections in the general community and amongst residents of long-term care (LTC) facilities. We considered 28,389,098 Medicare and dual-eligible recipients from one year before February 29, 2020 through September 30, 2020, with mortality followed through November 30<sup>th</sup>, 2020. Probable and confirmed Covid-19 diagnoses, presumably mostly symptomatic, were determined from ICD-10 codes. We developed a Risk Stratification Index (RSI) mortality model which was applied prospectively to establish baseline mortality risk. Excess deaths attributable to Covid-19 were estimated by comparing actual-to-expected deaths based on historical comparisons and in closely matched cohorts with and without Covid-19. 677,100 (2.4&#x0025;) beneficiaries had confirmed Covid-19 and 2,917,604 (10.3&#x0025;) had probable Covid-19. 472,329 confirmed cases were community living and 204,771 were in LTC. Mortality following a probable or confirmed diagnosis in the community increased from an expected incidence of about 4&#x0025; to actual incidence of 7.5&#x0025;. In long-term care facilities, the corresponding increase was from 20.3&#x0025; to 24.6&#x0025;. The absolute increase was therefore similar at 3-4&#x0025; in the community and in LTC residents. The percentage increase was far greater in the community (89&#x0025;) than among patients in chronic care facilities (21&#x0025;) who had higher baseline risk. The LTC population without probable or confirmed Covid-19 diagnoses experienced 38,932 excess deaths (35&#x0025;) compared to historical estimates. Limitations in access to Covid-19 testing and disease under-reporting in LTC patients probably were important factors, although social isolation and disruption in usual care presumably also contributed. Remarkably, there were 31,360 fewer deaths than expected in community dwellers without probable or confirmed Covid-19 diagnoses, representing a 6&#x0025; reduction. Disruptions to the healthcare system and avoided medical care were thus apparently offset by other factors, representing overall benefit. The Covid-19 pandemic had marked effects on mortality, but the effects were highly context-dependent.</p>
+</abstract>
+<counts>
+<page-count count="47"/>
+</counts>
+</article-meta>
+<notes>
+<notes notes-type="competing-interest-statement">
+<title>Competing Interest Statement</title><p>Conflict of Interest Disclosures: Greenwald, Chamoun, Manberg, Clain and Gray are employees of and hold equity interest in Health Data Analytics Institute. Dr. Sessler is a paid consultant of and holds equity interest in Health Data Analytics Institute. Dr. Maheshwari received no compensation from Health Data Analytics Institute.</p></notes>
+<notes notes-type="clinical-trial-statement">
+<title>Clinical Trial</title><p>This manuscript reports outcomes of a retrospective study on previously collected data by the Centers of Medicare and Medicaid.</p></notes>
+<notes notes-type="financial-disclosure">
+<title>Funding Statement</title><p>The study was funded by Health Data Analytics Institute. The Robert Wood Johnson Foundation provides support for providing access to the Covid-19 RSI365 risk prediction models by academic researchers for non-commercial purposes via the HDAI API (https://www.hda-institute.com/api/). Conflict of Interest Disclosures: Greenwald, Chamoun, Manberg, Clain and Gray are employees of and hold equity interest in Health Data Analytics Institute. Dr. Sessler is a paid consultant of and holds equity interest in Health Data Analytics Institute. Dr. Maheshwari received no compensation from Health Data Analytics Institute.</p></notes>
+<notes notes-type="disclosures">
+<title>Author Declarations</title><p>I confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.</p><p>Yes</p><p>The details of the IRB/oversight body that provided approval or exemption for the research described are given below:</p><p>This project was determined to be exempt from informed consent requirements by the New England Institutional Review Board (https://www.wcgirb.com/). This research qualifies under the approved exempt category: "Research involving the collection or study of existing data, documents, records, pathological specimens, or diagnostic specimens, if the investigator records the information in such a manner that subjects cannot be identified, directly or through identifiers linked to the subjects."</p><p>All necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived.</p><p>Yes</p><p>I understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).</p><p>Yes</p><p>I have followed all appropriate research reporting guidelines and uploaded the relevant EQUATOR Network research reporting checklist(s) and other pertinent material as supplementary files, if applicable.</p><p>Yes</p></notes>
+</notes>
+</front>
+<body>
+<sec id="s1">
+<title>Introduction</title>
+<p>The Covid-19 pandemic has profoundly influenced US healthcare, especially among Medicare recipients who are mostly at least 65 years old. By March 1, 2021, SARS-CoV-2, the virus responsible for Covid-19, had already infected more than 29 million Americans and more than 500,000 died following infection.(<xref ref-type="bibr" rid="c1">1</xref>) However, many people infected with Covid-19 are never tested or have false-negative test results; consequently, the true toll of Covid-19 remains uncertain. Furthermore, while the clinical course is sometimes apparent, Covid-19 also kills people by worsening chronic conditions, with those deaths often being attributed to other causes. Especially early in the pandemic, due to limited testing availability, it was difficult to differentiate deaths caused by Covid-19 from those that may have occurred naturally due to underlying health conditions. It is thus apparent that many people who died consequent to Covid-19 infections may not have been diagnosed with the condition or may have died due to underlying causes.</p>
+<p>Several teams have estimated &#x201C;excess&#x201D; mortality due to Covid-19 by comparing weekly observed death totals with those that occurred in a prior year. For example, Chen et al estimated that from March 1 through August 22, 2020, 146,557 deaths were recorded in California, with an estimated 19,806 (95&#x0025; CI: 16,364, 23,210) deaths in excess of those predicted by historical trends.(<xref ref-type="bibr" rid="c2">2</xref>) Similarly, Faust et al estimated that from March 1, 2020, to July 31, 2020, a total of 76,088 all-cause deaths occurred among US adults aged 25 to 44 years, which was 11,899 more than the expected 64,189 deaths based on a previous year (incident rate ratio, 1.19 [95&#x0025; CI, 1.14-1.23]).(<xref ref-type="bibr" rid="c3">3</xref>) Rossen et al estimated excess mortality from January 26 through October 3 to have <italic>decreased</italic> 2&#x0025; for the youngest subjects (aged &#x003C;25 years) but increased 14.4&#x0025; for those 45-64 years, 21.1&#x0025; for those 65-74 years, 21.5&#x0025; for those 75-84 years, and 14.7&#x0025; in subjects &#x2265;85 years old.(<xref ref-type="bibr" rid="c4">4</xref>) These reports suggest that all-cause mortality in the first six months of the pandemic increased by about 15-20&#x0025;.. However, historical comparisons do not account for risk at an individual level which may be useful to determine true excess mortality.</p>
+<p>On a broad population basis, many risk factors for Covid-19 are now well recognized. For example, the CDC identifies eleven conditions that augment risk for severe forms of Covid-19.(<xref ref-type="bibr" rid="c5">5</xref>) Chronic conditions such as cancer and dementia are reported to be among the most important contributors.(<xref ref-type="bibr" rid="c6">6</xref>-<xref ref-type="bibr" rid="c8">8</xref>) It is clear that older members of the population are at special risk, although to some extent age may be a surrogate for accumulated comorbidities. However, it is difficult to extrapolate from population risk to individual risk since many people exhibit various combinations of risk factors for Covid-19 mortality, and individual risks attributable to each condition are not necessarily additive. A robust model that considers relevant individual conditions and predicts mortality risk from Covid-19 infections would therefore be valuable.</p>
+<p>Numerous groups have proposed individual risk models based on clinical outcomes in various populations studied early in the pandemic, but a consensus model has yet to emerge.(<xref ref-type="bibr" rid="c9">9</xref>-<xref ref-type="bibr" rid="c11">11</xref>) From a practical perspective, prediction models based on readily available administrative data (e.g., ICD-10 codes) will be most useful since more granular information extracted from clinical health records are neither universally available nor easy to obtain. Our primary goal was therefore to estimate excess risk-specific mortality in people with probable and confirmed Covid-19 infections.</p>
+<p>An additional consequence of the Covid-19 pandemic has been public health quarantines that have severely disrupted healthcare delivery. The virus may therefore also have caused indirect mortality because patients with chronic diseases and acute exacerbations avoided seekin care due to fear of infection or because health services were overwhelmed or otherwise limiting access. Furthermore, stress related to isolation could increase medical morbidity and provoke suicide and substance abuse. In contrast, some causes of death such as accidents and homicides may have diminished. The extent to which delayed and disrupted healthcare for non-Covid-related conditions, along with pandemic-related behavioral changes, contribute to mortality remains unclear. Our secondary goal was therefore to estimate whether changes in mortality occurred in people without probable or confirmed Covid-19 infections.</p>
+<p>Because Covid-19 is especially lethal in older people, we considered stratification by various age ranges for both our primary and secondary analyses. We also separately considered people residing in the community from those in long term care facilities, who are expected to have a higher baseline mortality risk and thus may be especially susceptible to Covid-19 infections.</p>
+</sec>
+<sec id="s2">
+<title>Methods</title>
+<p>Data analysis was conducted on the Center for Medicare and Medicaid Services (CMS) Research Identifiable File (RIF) data using SAS Enterprise Guide (Version 7.15) under a special Data Use Agreement (DUA). This project was determined to be exempt from informed consent requirements by the New England Institutional Review Board. Final data analysis of the full cohort was conducted from January 10 to March 11, 2021. This study followed the Strengthening the Reporting of Observational Studies in Epidemiology (<underline>STROBE</underline>) reporting guideline for cohort studies.(<xref ref-type="bibr" rid="c12">12</xref>)</p>
+<p>Individual subject data used for our analysis are available to certain stakeholders as allowed by federal regulations and CMS policy. Requests for access to data to replicate these findings require an approved research protocol and DUA with CMS. For more information, contact the Research Data Assistance Center (ResDAC, <ext-link ext-link-type="uri" xlink:href="http://www.resdac.org">http://www.resdac.org</ext-link>).</p>
+<p>Mortality predictions and outcomes were referenced to an anchor date of Feb 29, 2020, just before the initial wave of documented Covid-19 cases and the week when the first case of potential community spread Covid-19 was reported by CDC. We recognize that undiagnosed cases may have occurred previously, but it is unlikely that there were many.</p>
+<p>We used full Medicare fee-for-service and dual eligible (Medicaid and Medicare) files one year before the anchor date through September 30, 2020, with mortality outcomes reported through November 30<sup>th</sup>, 2020 for the primary analysis of Covid-19 outcomes. We identified beneficiaries with confirmed Covid-19 diagnoses consistent with CMS guidance using ICD-10-CM codes for Covid-19 (B97.29 before April 1, 2020 and U07.1 thereafter) as a primary or secondary diagnosis between March 1, 2020 and September 30, 2020.(<xref ref-type="bibr" rid="c13">13</xref>) Probable Covid-19 infection cases were identified using ICD-10-CM codes consistent with the CDC guidance (Z20.828) and WHO recommendations (U07.2).(<xref ref-type="bibr" rid="c14">14</xref>, <xref ref-type="bibr" rid="c15">15</xref>) Presumably most subjects with Covid-19 diagnoses were symptomatic, although some may have been tested because of risk or exposure.</p>
+<p>Demographic characteristics (age, sex, ethnicity, location of care, zip code derived measures) and Medicare coverage information (dates of coverage, enrollment history) were extracted for each subject. Beneficiaries were classified as belonging to the long-term care/skilled nursing facility (LTC/SNF) cohort if their claims history indicated that they had received services in a LTC/SNF setting at any time in February 2020. The remaining beneficiaries were designated as community dwelling.</p>
+<p>We included all Medicaid and Medicare participants alive as of the study anchor date (N=65,310,173). We excluded beneficiaries who had: 1) ages outside 18-99 years (214,767); 2) non-continuous coverage of Medicare Part A or B (12,445,567) or any Medicare Part C coverage (23,633,391) in the year before the Feb 29, 2020 anchor date; 3) missing data for any variable used in the analysis (509,932); and, inconsistent data (117,418). The resulting 28,389,098 beneficiaries included 677,100 with confirmed and 2,917,604 with probable diagnosis of Covid-19 (<bold>S1 Fig</bold>). Mortality was assumed to have occurred on the date-of-death listed in the CMS Common Medicare Environment which is continuously updated from various sources including the Social Security Administration.</p>
+<sec id="s2a">
+<title>Risk Stratification</title>
+<p>We used an adaptation of the Risk Stratification Index (RSI) to predict nine-month mortality using the prior year&#x2019;s administrative claims. A model was developed using the full fee-for-service 2018 population for training, with prospective validation of performance on the 2019 dataset as previously described.(<xref ref-type="bibr" rid="c16">16</xref>) More detailed descriptions of the model and prospective testing performance results are provided in <bold>S1 File</bold> and <bold>S2 Fig</bold>, respectively. The resulting RSI model was then prospectively applied to all eligible Medicare or dual-eligible beneficiaries as of February 29, 2020 to derive individual RSI scores as of that date &#x2014; that is, before Covid-19 infections were confirmed in the United States.</p>
+<p>For comparative purposes, a second model was similarly developed to predict nine-month mortality from the presence of 27 individual chronic conditions as defined by CMS.(<xref ref-type="bibr" rid="c17">17</xref>) Specifically, logistic regression (stepwise selection using p-in of 10<sup>&#x2212;3</sup>, p-out of 10<sup>&#x2212;2</sup>) was used to select significant predictors from a pool of candidate features (i.e., 27 chronic conditions, age, sex and dual-enrollment status) to create a predictive model using the same training and prospective testing populations described in the previous paragraph. Performance using baseline RSI values or the individual chronic conditions model as predictors of outcomes in 2020 were then tested prospectively (<bold>S3 Fig)</bold>.</p>
+</sec>
+<sec id="s2b">
+<title>Analysis and Selection of Study Cohorts</title>
+<p>We conducted a progression of complementary inquiries. To test our primary hypothesis, we first identified the main study cohorts of beneficiaries with diagnoses of probable or confirmed Covid-19, and then subdivided them based on location of service (community or LTC/SNF) as of February 29, 2020. Within each cohort, we determined 9-month mortality between the anchor date and November 30, 2020.</p>
+<p>Our goal was to first define associations between baseline demographic characteristics and health status as characterized by RSI with the risk of mortality following a Covid-19 diagnosis in the overall at-risk population and in pre-defined subpopulations. We initially compared differences in mean baseline RSI scores between survivors and non-survivors, then used univariable and multivariable regression modeling to estimate the relative importance of baseline demographic factors, chronic conditions, and RSI scores as independent predictors of mortality. A similar analysis was conducted to identify risk factors associated with a confirmed diagnosis of Covid-19. We also determined the association between RSI and observed mortality by beneficiary age group and location.</p>
+</sec>
+<sec id="s2c">
+<title>Estimation of Expected Mortality</title>
+<p>Two independent methods were used to estimate expected 2020 mortality in our study population. A historical comparison allowed us to compare year-over-year changes in mortality in Medicare recipients and thus characterize overall effects of Covid-19 and quarantine-induced restrictions in healthcare access on mortality. A case-matched analysis provided an alternate estimate of Covid-19-related excess mortality within the 9 months of 2020 that we considered.</p>
+</sec>
+<sec id="s2d">
+<title>Historical Comparison</title>
+<p>As in previous studies,(<xref ref-type="bibr" rid="c3">3</xref>, <xref ref-type="bibr" rid="c4">4</xref>) the first approach estimated expected 2020 mortality figures from historical records. The daily observed mortality for the Medicare population from 2017-2019 was used to prepare a model with optimal fit to capture seasonality and account for annual trends using a three-year moving average adjustment (<bold>S2 Fig</bold>). This approach better estimates expected mortality than relying on a single year-over-year comparison because the model better captures year-to-year fluctuations consequent to severity of yearly influenza outbreaks and other factors. We calculated predicted mortality for each individual and designated the sum as the historically expected mortality in each subpopulation. Excess deaths thus equaled the difference between observed 2020 deaths and the historical projection of expected deaths (actual minus expected).</p>
+</sec>
+<sec id="s2e">
+<title>Case Matching, Digital Twins</title>
+<p>A second method used case matching or &#x201C;digital twinning&#x201D; to estimate excess mortality in exposed subjects compared to concurrent controls who had closely matched health profiles. Beneficiaries receiving a diagnosis of probable or confirmed Covid-19 were pairwise exactly matched 1:1 on Feb 29, 2020 with beneficiaries without a Covid-19 diagnosis based on sex, age (within 1-year), ethnicity, location of services in Feb 2020 (community or LTC/SNF), along with RSI as a propensity matching factor (within 0.1&#x0025;). Because the eligible Medicare population is large, we successfully matched almost the entire infected population. Excess deaths were estimated as the difference between the observed number of deaths in probable or confirmed Covid-19 subjects and their matched non-Covid-19 digital twins over the concurrent period. Matching may be more reliable than the historical comparison for estimating true excess mortality because it better accounts for population variation over time and accounts for the impact of substantial disruptions in public health and everyday life caused by the pandemic restrictions in 2020.</p>
+</sec>
+<sec id="s2f">
+<title>Statistical Analysis</title>
+<p>We used SAS Enterprise Guide (Version 7.15) to build models and conduct analyzes. We excluded patients who lacked any variable used in our analyses including birth date, sex, race, Medicaid enrollment status, zip code, and baseline RSI. Additionally, we excluded subjects whose records had inconsistent values among source files containing similar variables such as birth date and sex.</p>
+<p>Patient demographic and clinical characteristics are summarized descriptively. Baseline characteristics were compared using <italic>t</italic> or &#x03C7;<sup>2</sup> tests, as appropriate. Mortality rates within the study period post-Covid-19 diagnosis are reported as odds ratios with 95&#x0025; confidence intervals. P values &#x003C;0.05 defined statistical significance for both the primary and secondary outcomes. No adjustments were made for multiple comparisons. Sample size requirements were not estimated <italic>a priori</italic> because the intention was to include all qualifying 2020 beneficiaries available in the 100&#x0025; nationwide Medicare files.</p>
+</sec>
+</sec>
+<sec id="s3">
+<title>Results</title>
+<sec id="s3a">
+<title>Patient characteristics and outcomes</title>
+<p>As of Feb 29, 2020, a total of 28,389,098 Medicare or dual eligible beneficiaries met inclusion criteria for this study. Among them, 677,100 (2.4&#x0025;) beneficiaries had a diagnosis of confirmed Covid-19 and 2,917,604 (10.3&#x0025;) had a diagnosis of probable Covid-19 during the study period (<bold>S1 Fig</bold>). Among the confirmed cases, 472,329 were in the Community group while 204,771 received care in a long-term care setting.</p>
+<p><bold><xref rid="tbl1" ref-type="table">Table1</xref></bold> and <bold><xref rid="tbl2" ref-type="table">Table 2</xref></bold> compare demographic and clinical profiles for various subgroups. Compared to survivors, patients who died after a Covid-19 diagnosis were older, more often male, not white, received Medicaid, lived in zip-codes associated with lower median income, received services in February 2020 in a long-term care facility, and had higher baseline risk of mortality as defined by RSI. Age and baseline RSI scores were both strongly related to risk of infection and adverse Covid-19 outcomes. Residence in a LTC/SNF location and presence of end-stage renal disease were strong risk factors for acquiring a confirmed diagnosis of Covid-19 (<bold>S4 Fig</bold>). As shown in <bold>S5 Fig</bold>, RSI scores were associated with increasing mortality in a consistent rank ordered manner across each age group, thereby suggesting that RSI provides a significant and sensitive measure of co-morbidities and mortality risk that is independent of age.</p>
+<table-wrap id="tbl1" orientation="portrait" position="float">
+<label>Table 1.</label>
+<caption><title>Comparison of baseline demographic characteristics of all study populations.</title></caption>
+<graphic xlink:href="21254793v1_tbl1.tif"/>
+<graphic xlink:href="21254793v1_tbl1a.tif"/>
+<graphic xlink:href="21254793v1_tbl1b.tif"/>
+</table-wrap>
+<table-wrap id="tbl2" orientation="portrait" position="float">
+<label>Table 2.</label>
+<caption><title>Comparison of baseline demographic characteristics for No Covid-19, Confirmed Covid-19 and Probable Covid-19 populations in the Community and LTC/SNF subgroups.</title></caption>
+<graphic xlink:href="21254793v1_tbl2.tif"/>
+<graphic xlink:href="21254793v1_tbl2a.tif"/>
+<graphic xlink:href="21254793v1_tbl2b.tif"/>
+<graphic xlink:href="21254793v1_tbl2c.tif"/>
+</table-wrap>
+</sec>
+<sec id="s3b">
+<title>Mortality Risk Prediction</title>
+<p><bold><xref rid="fig1" ref-type="fig">Fig 1</xref></bold> presents the relative importance of factors that contributed to mortality in both univariable and multivariable models. Quintiles of RSI, age, LTC/SNF services status, sex, and race were the factors most associated with relative risk of mortality. Status of lung cancer and end-stage renal disease appear to carry meaningful incremental risk after adjustment. Mortality prediction models based primarily on baseline RSI levels performed better than models based on the presence of individual chronic conditions for predicting mortality risk (<bold>S3 Fig</bold>). Case matching identified a cohort of beneficiaries from the general population who were closely matched with subjects who had a diagnosis of probable or confirmed Covid-19 based on their RSI scores as of Feb 29, 2020 (<bold><xref rid="tbl3" ref-type="table">Table 3</xref></bold>).</p>
+<table-wrap id="tbl3" orientation="portrait" position="float">
+<label>Table 3.</label>
+<caption><title>Comparison of matching characteristics for Covid-19 subjects versus non-Covid-19 controls in the Community and LTC/SNF subgroups.</title></caption>
+<graphic xlink:href="21254793v1_tbl3.tif"/>
+<graphic xlink:href="21254793v1_tbl3a.tif"/>
+<graphic xlink:href="21254793v1_tbl3b.tif"/>
+</table-wrap>
+<fig id="fig1" position="float" fig-type="figure">
+<label>Fig 1.</label>
+<caption><title>Forest plot showing the relative risk and 95&#x0025; CI of significant predictors of mortality of subjects with confirmed Covid-19.</title>
+<p>Confirmed Covid-19 cases were identified consistent with CMS guidance using ICD-10-CM codes for Covid-19 (B97.29 before April 1, 2020 and U07.1 thereafter) as a primary or secondary diagnosis between March 1, 2020 and September 30, 2020.<sup>12</sup> Subjects were categorized as &#x201C;LTC/SNF&#x201D; if they received services in either a Long Term Care (LTC) or Skilled Nursing Facility (SNF) in February 2020, otherwise they were categorized as receiving services in the &#x201C;Community.&#x201D; Predictors were assessed at baseline (February 29, 2020) and include quintiles of Risk Stratification Index (RSI), presence of chronic conditions, location of services (LTC/SNF vs Community), and demographic variables (i.e., age, sex, race, and quintiles of median household income imputed by zip code according to 2015 Census data.) Variables not remaining in the adjusted model are indicated by the presence of empty parenthesis under the adjusted odds ratio. RSI, age, and location of services were the strongest (unadjusted) predictors of mortality. RSI and age remain strong predictors following adjustment; however, risks associated with having chronic conditions were typically reduced when adjusted by the presence of RSI and other factors. Status of Lung cancer and end-stage renal disease appear to carry meaningful incremental risk after adjustment.</p></caption>
+<graphic xlink:href="21254793v1_fig1.tif"/>
+</fig>
+</sec>
+<sec id="s3c">
+<title>Excess Mortality Estimates</title>
+<p>The distribution of observed and expected mortality by diagnosis, category, and location of care is presented in <bold><xref rid="fig2" ref-type="fig">Fig 2</xref></bold>. As expected, subjects with high baseline mortality risk in the LTC/SNF cohort had actual mortality that exceeded all other groups. Those with confirmed Covid-19 showed similarly increased mortality above expected levels in both the LTC/SNF and community setting. Among community dwelling subjects, mortality also exceeded expected risk in subjects with possible Covid-19.</p>
+<fig id="fig2" position="float" fig-type="figure">
+<label>Fig 2.</label>
+<caption><title>Actual/Expected mortality plot for No Covid-19, Probable Covid-19, and Confirmed Covid &#x2212;19 cohorts in community, LTC/SNF, and combined analysis.</title>
+<p>Panels A and B display actual and expected mortality (per 100,000 people) calculated using different methods for Medicare subjects grouped by infection status and location of services. Confirmed Covid-19 cases were identified consistent with CMS guidance using ICD-10-CM codes for Covid-19 (B97.29 before April 1, 2020 and U07.1 thereafter) as a primary or secondary diagnosis between March 1, 2020 and September 30, 2020.<sup>12</sup> Probable Covid-19 infection cases were identified using ICD-10-CM codes consistent with the CDC guidance (Z20.828) and WHO recommendations (U07.2).<sup>13,14</sup> Subjects were categorized as &#x201C;LTC/SNF&#x201D; if they received services in either a Long Term Care (LTC) or Skilled Nursing Facility (SNF) in February 2020, otherwise they were categorized as receiving services in the &#x201C;Community.&#x201D; Estimated mortality using RSI (A) provides estimates consistent with actual mortality of historical controls (B).</p></caption>
+<graphic xlink:href="21254793v1_fig2.tif"/>
+</fig>
+<p>There was an estimated excess of 130,702 (historical comparison method) or 101,482 (case matching method) deaths attributable to probable or confirmed Covid-19 across the full population in the 9 months of 2020 that we considered. In the matched analysis, half the deaths (50,793) occurred in patients with a confirmed diagnosis of Covid-19 and half (50,689) occurred in those with a probable Covid-19 diagnosis. In contrast, 31,360 fewer subjects without a Covid-19 diagnosis died than expected, representing a 6&#x0025; mortality reduction (<bold><xref rid="tbl4" ref-type="table">Table 4</xref></bold>).</p>
+<table-wrap id="tbl4" orientation="portrait" position="float">
+<label>Table 4.</label>
+<caption><title>Number of excess deaths by location, diagnosis, and method of calculation.</title></caption>
+<graphic xlink:href="21254793v1_tbl4.tif"/>
+<graphic xlink:href="21254793v1_tbl4a.tif"/>
+<graphic xlink:href="21254793v1_tbl4b.tif"/>
+</table-wrap>
+</sec>
+<sec id="s3d">
+<title>Public access</title>
+<p>Our model is highly predictive for mortality in Medicare beneficiaries with documented Covid-19 infections. Because baseline RSI scores can help to identify Medicare beneficiaries at highest risk for mortality due to Covid-19, we make the models publicly available in the following formats:</p>
+<list list-type="order">
+<list-item><p>Access to RSI risk calculators will be provided free of charge for authorized non-commercial uses via the HDAI API website (<ext-link ext-link-type="uri" xlink:href="https://www.hda-institute.com/api/">https://www.hda-institute.com/api/</ext-link>).</p></list-item>
+<list-item><p>Medicare beneficiaries or their health advocates may access their personalized health history and risk assessment by signing into Health Picture (<ext-link ext-link-type="uri" xlink:href="https://my.healthhpicture.com">https://my.healthhpicture.com</ext-link>). Health picture is an easy-to-use tool that allows Medicare beneficiaries and their family members a way to access their health histories and understand their Covid-19 risks.</p></list-item>
+<list-item><p>Coefficients for a public version of a one-year RSI mortality model are provided at &#x2013; (Risk Stratification Index &#x007C; Cleveland Clinic).</p></list-item>
+</list>
+</sec>
+</sec>
+<sec id="s4">
+<title>Discussion</title>
+<p>Age, sex, care location, and comorbidities were significant predictors of mortality. The strongest individual predictor following a diagnosis of Covid-19 across all age categories, and in both community and long-term care settings was the integrated measure of patient co-morbidities, RSI. Although many individual chronic conditions were also significant risk factors in our unadjusted univariable analysis, the strength of these associations were substantially diminished after adjustment for the primary covariates of age, sex, race, location of services, and RSI. Our analysis is consistent with previous work showing that older, non-white men, and patients receiving services in long term care facilities are at special risk of dying from Covid-19 infections.</p>
+<p>Using RSI as a composite measure of baseline mortality risk permitted precise case-control matching, thereby allowing us to estimate excess deaths attributable Covid-19 by two complementary methods in Medicare recipients with probable or confirmed Covid-19 diagnoses. Using the historical comparison, there was an increase from 215,359 expected to 346,062 actual deaths, representing 130,702 excess deaths and a 61&#x0025; increase. Using matching, mortality increased from 236,119 expected to 337,601 observed deaths, representing 101,482 excess deaths and a 43&#x0025; increase. Both estimates far exceed the 15-20&#x0025; excess mortality estimate reported in previous analyses that included younger populations. Our results are therefore consistent with the belief that older people are at much higher risk for developing severe Covid-19 illness &#x2014; and of dying from it.</p>
+<p>Overall, our historical model indicated that mortality following a probable or confirmed diagnosis in the community increased from an expected incidence of about 4&#x0025; to actual incidence of 7.5&#x0025;. In LTC/SNF&#x2019;s, the corresponding increase was from 20.3&#x0025; to 24.6&#x0025;. Therefore, the absolute increase in mortality was similar at 3-4&#x0025; in the community and in long-term care residents. However, baseline risk (RSI) associated with all individuals in a care setting varied greatly, being only about 2.6&#x0025; in the community versus 20.5&#x0025; in long-term care facilities. As a percentage, the relative increase in mortality was thus far greater in the community (89&#x0025;) than among patients in long term care facilities (21.0&#x0025;).</p>
+<p>Somewhat remarkably, overall mortality <italic>decreased</italic> in Medicare participants without probable or confirmed Covid-19 diagnoses. In fact, among community dwellers, there were 31,360 fewer deaths than expected, representing about a 6&#x0025; reduction. Disruptions to the healthcare system and avoided medical care were thus apparently offset by other factors, representing overall benefit. Obvious health benefits of pandemic isolation include reduced exposure to other airborne illnesses such as influenza, fewer driving accidents and fewer homicides. However, none seems sufficient to explain the reduction. More subtle effects including reduced work or stress-related illness might contribute more, although there is no obvious reason to believe that the pandemic would reduce stress &#x2014; especially in an over-65-year-old population.</p>
+<p>The causes of reduced mortality in community dwelling Medicare participants remains unclear. However, our results suggest that inadequate care for chronic conditions and delayed care of acute events did not produce the feared outcome of higher short-term mortality in the general population without Covid-19. But due to limited follow-up, we caution that disruptions in healthcare delivery may yet result in adverse longer-term outcomes due to delays in the diagnosis and treatment of new and existing chronic conditions. An additional consideration is that prolonged sequela after severe Covid-19 infections (Long Covid syndrome) appear substantial and is an area requiring urgent further study.(<xref ref-type="bibr" rid="c18">18</xref>)</p>
+<p>There was a distinct disparity between community dwellers and those in long-term care facilities with respect to historical mortality comparisons. In contrast to community Medicare participants, the long-term care population without probable or confirmed Covid-19 diagnoses experienced 38,932 excess deaths (35&#x0025;) compared to historical estimates. We believe that limitations in access to Covid-19 testing and disease under-reporting in long-term care patients probably were responsible for this finding. It seems likely that many of the excess deaths in this vulnerable population were consequent to undiagnosed Covid-19 infections. But it is also probable that social isolation and disruption in usual care may have contributed as well. The higher-than-expected level of excess deaths observed in this cohort (subjects without a probable or confirmed Covid diagnosis) is reflected in our case matching results, which indicate a modest relative reduction in deaths in subjects with a Covid related diagnosis. This is most likely due to undiagnosed Covid cases included in the control population, but we cannot rule out the possibility that the focus on care for the Covid patients had an unintended adverse impact on the remaining population.</p>
+</sec>
+<sec id="s5">
+<title>Limitations</title>
+<p>We excluded less than 2.2&#x0025; of the available population because of missing and inconsistent values. Because data were missing non-systematically, exclusion of these subjects was unlikely to introduce meaningful bias. We relied on administrative diagnostic claims for Covid-19 to assign exposure. Surely these are inexact, especially during our study period early in the pandemic. Furthermore, a new diagnostic code for confirmed Covid-19 (U07.1) was introduced on April 1, 2020, and we assume that there was some uncertainty regarding its proper application. However, Kadri et al recently reported that this Covid-19 specific code showed high sensitivity and specificity compared with the PCR test results.(<xref ref-type="bibr" rid="c19">19</xref>) A second limitation is that we did not account for temporal changes in risk of exposure to Covid-19 in either setting, nor for improvements in treatment of infected individuals over time.(<xref ref-type="bibr" rid="c20">20</xref>, <xref ref-type="bibr" rid="c21">21</xref>)</p>
+<p>We assigned individuals to either community dwelling or long-term care subgroups based on coding in February 2020. Some participants undoubtedly changed their care settings during the analysis period. Skilled nursing facilities, for example, include patients who remain semi-permanently along with others who stay for short periods such during rehabilitation from major orthopedic procedures before resuming community life. But among patients who died, 79&#x0025; of those who were in a long-term care facility on the anchor date of Feb 29, 2020 had long term care charges within two months of death.</p>
+<p>Our analysis was based on 28,389,098 adults enrolled in the US fee-for-service and Medicare/Medicaid program. The results are therefore broadly applicable to Medicare eligible adults. Although our sample included a fair number of dual eligible subjects below age 65, our results should only be cautiously generalized to younger and healthier populations.</p>
+</sec>
+<sec id="s6">
+<title>Summary</title>
+<p>Mortality following a probable or confirmed Covid-19 diagnosis in the community increased from an expected incidence of about 4&#x0025; to actual incidence of 7.5&#x0025;. In long-term care facilities, the corresponding increase was from 20.3&#x0025; to 24.6&#x0025;. The absolute increase was therefore similar at 3-4&#x0025; in the community and in long-term care residents. But the percentage increase was far greater in the community (89&#x0025;) than among patients in chronic care facilities (21&#x0025;) who had high baseline risk.</p>
+<p>The long-term care population without probable or confirmed Covid-19 diagnoses experienced 38,932 excess deaths (35&#x0025;) compared to historical estimates. Limitations in access to Covid-19 testing and disease under-reporting in long-term care patients probably contributed, although social isolation and disruption in usual care presumably contributed. Remarkably, there were 31,360 fewer deaths than expected in community dwellers without probable or confirmed Covid-19 diagnoses, representing about a 6&#x0025; reduction. Disruptions to the healthcare system and avoided medical care were thus apparently offset by other factors, representing overall benefit.</p>
+<p>The Covid-19 pandemic had marked effects on mortality, but the effects were highly context-dependent. Among community dwelling Medicare participants with suspected or confirmed Covid-19 diagnoses, mortality nearly doubled, but from a relatively low baseline. Patients in long-term care facilities had a similar absolute increase in mortality, but because their baseline mortality was 20.5&#x0025;, the relative increase was smaller. In contrast, community dwelling Medicare participants without COVID had about 6&#x0025; lower-than-expected mortality.</p>
+</sec>
+<sec sec-type="supplementary-material">
+<title>Supporting information</title>
+<supplementary-material>
+<label>S1 Fig</label>
+<media xlink:href="supplements/254793_file04.tif" />
+</supplementary-material>
+<supplementary-material>
+<label>S2 Fig</label>
+<media xlink:href="supplements/254793_file05.tif" />
+</supplementary-material>
+<supplementary-material>
+<label>S3 Fig</label>
+<media xlink:href="supplements/254793_file06.tif" />
+</supplementary-material>
+<supplementary-material>
+<label>S4 Fig</label>
+<media xlink:href="supplements/254793_file07.tif" />
+</supplementary-material>
+<supplementary-material>
+<label>S5 Fig</label>
+<media xlink:href="supplements/254793_file08.tif" />
+</supplementary-material>
+<supplementary-material>
+<label>S1 File</label>
+<media xlink:href="supplements/254793_file09.pdf" />
+</supplementary-material>
+</sec>
+</body>
+<back>
+<sec sec-type="data-availability">
+<title>Data Availability</title>
+<p>Individual subject data used for our analysis are available to certain stakeholders as allowed by federal regulations and CMS policy. Requests for access to data to replicate these findings require an approved research protocol and DUA with CMS. For more information, contact the Research Data Assistance Center (ResDAC, http://www.resdac.org).</p>
+<p>
+<ext-link ext-link-type="uri" xlink:href="http://www.resdac.org">http://www.resdac.org</ext-link>
+</p>
+</sec>
+<ack>
+<title>Acknowledgements</title>
+</ack>
+<sec id="s7">
+<title>Author Contributions</title>
+<p>Greenwald and Chamoun had full access to all the data in the study and take responsibility for the integrity of the data and the accuracy of the data analysis.</p>
+<p>Data Curation: Chamoun, Greenwald</p>
+<p>Formal Analysis: Greenwald, Chamoun</p>
+<p>Funding Acquisition: Chamoun, Gray</p>
+<p>Investigation: Chamoun, Greenwald</p>
+<p>Methodology: Manberg, Sessler, Chamoun</p>
+<p>Project Administration: Greenwald, Clain</p>
+<p>Resources: Chamoun</p>
+<p>Software: Chamoun, Greenwald</p>
+<p>Supervision: Manberg, Greenwald, Chamoun</p>
+<p>Validation: Sessler, Maheshwari, Manberg, Gray, Clain</p>
+<p>Visualization: Clain, Greenwald</p>
+<p>Writing &#x2013; Original Draft Preparation: Manberg, Greenwald, Sessler</p>
+<p>Writing &#x2013; Review and Editing: Sessler, Maheshwari, Gray, Clain, Manberg, Chamoun, Greenwald</p>
+</sec>
+<sec id="s8">
+<title>Conflict of Interest Disclosures</title>
+<p>Greenwald, Chamoun, Manberg, Clain and Gray are employees of and hold equity interest in Health Data Analytics Institute. Dr. Sessler is a paid consultant of and holds equity interest in Health Data Analytics Institute. Dr. Maheshwari received no compensation from Health Data Analytics Institute.</p>
+</sec>
+<sec id="s9">
+<title>Funding/Support</title>
+<p>The study was funded by Health Data Analytics Institute. The Robert Wood Johnson Foundation provides support for providing access to the Covid-19 RSI<sub>365</sub> risk prediction models by academic researchers for non-commercial purposes via the HDAI API (<ext-link ext-link-type="uri" xlink:href="https://www.hda-institute.com/api/">https://www.hda-institute.com/api/</ext-link>).</p>
+</sec>
+<sec id="s10">
+<title>Role of Funder/Sponsor</title>
+<p>Other than the authors and Data Analyst Douceur Tengu, no additional members of Health Data Analytics had a role in the design and conduct of the study; collection, management, analysis, and interpretation of the data; preparation, review, or approval of the manuscript; or decision to submit the manuscript for publication.</p>
+<p>We thank John Parks, Zhenyu Hong and Douceur Tengu (Data Analysts, Health Data Analytics Institute) for their assistance in developing models and preparing figures and tables.</p>
+</sec>
+<ref-list>
+<title>References</title>
+<ref id="c1"><label>1.</label><mixed-citation publication-type="website"><collab>CDC</collab>. <source>CDC COVID Data Tracker: Centers for Disease Control and Prevention</source>; <year>2021</year> [Available from: <ext-link ext-link-type="uri" xlink:href="https://covid.cdc.gov/covid-data-tracker/#cases_casesper100klast7days">https://covid.cdc.gov/covid-data-tracker/#cases_casesper100klast7days</ext-link>.</mixed-citation></ref>
+<ref id="c2"><label>2.</label><mixed-citation publication-type="other"><string-name><surname>Chen</surname> <given-names>YH</given-names></string-name>, <string-name><surname>Glymour</surname> <given-names>MM</given-names></string-name>, <string-name><surname>Catalano</surname> <given-names>R</given-names></string-name>, <string-name><surname>Fernandez</surname> <given-names>A</given-names></string-name>, <string-name><surname>Nguyen</surname> <given-names>T</given-names></string-name>, <string-name><surname>Kushel</surname> <given-names>M</given-names></string-name>, <etal>et al.</etal> <article-title>Excess Mortality in California During the Coronavirus Disease 2019 Pandemic, March to August 2020</article-title>. <source>JAMA Intern Med</source>. <year>2020</year>.</mixed-citation></ref>
+<ref id="c3"><label>3.</label><mixed-citation publication-type="other"><string-name><surname>Faust</surname> <given-names>JS</given-names></string-name>, <string-name><surname>Krumholz HM</surname>, <given-names>D. C</given-names></string-name>, <string-name><surname>Mayes</surname> <given-names>KD</given-names></string-name>, <string-name><surname>Lin</surname> <given-names>Z</given-names></string-name>, <string-name><surname>Gilman</surname> <given-names>C</given-names></string-name>, <etal>et al.</etal> <article-title>All-Cause Excess Mortality and COVID-19&#x2013;Related Mortality Among US Adults Aged 25-44 Years, March-July 2020</article-title>. <source>JAMA</source>. <year>2020</year>.</mixed-citation></ref>
+<ref id="c4"><label>4.</label><mixed-citation publication-type="website"><string-name><surname>Lauren M. Rossen</surname> <given-names>AMB</given-names></string-name>, <string-name><given-names>Farida B.</given-names> <surname>Ahmad</surname></string-name>, <string-name><given-names>Paul</given-names> <surname>Sutton</surname></string-name>, <string-name><surname>Robert</surname> <given-names>N.</given-names></string-name> <source>Anderson. Excess Deaths Associated with COVID-19, by Age and Race and Ethnicity &#x2014; United States, January 26&#x2013;October 3, 2020</source> <year>2021 [Available from</year>: <ext-link ext-link-type="uri" xlink:href="https://www.cdc.gov/mmwr/volumes/69/wr/mm6942e2.htm">https://www.cdc.gov/mmwr/volumes/69/wr/mm6942e2.htm</ext-link>.</mixed-citation></ref>
+<ref id="c5"><label>5.</label><mixed-citation publication-type="website"><collab>CDC</collab>. <source>Medical Conditions and Risk of for Severe COVID-19 Illness: Centers for Disease Control and Prevention</source>; <year>2021 [Available from</year>: <ext-link ext-link-type="uri" xlink:href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-medical-conditions.html">https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-medical-conditions.html</ext-link>.</mixed-citation></ref>
+<ref id="c6"><label>6.</label><mixed-citation publication-type="other"><string-name><surname>Wang</surname> <given-names>Q</given-names></string-name>, <string-name><surname>Davis</surname> <given-names>PB</given-names></string-name>, <string-name><surname>Gurney</surname> <given-names>ME</given-names></string-name>, <string-name><surname>Xu</surname> <given-names>R.</given-names></string-name> <article-title>COVID-19 and dementia: Analyses of risk, disparity, and outcomes from electronic health records in the US</article-title>. <source>Alzheimers Dement</source>. <year>2021</year>.</mixed-citation></ref>
+<ref id="c7"><label>7.</label><mixed-citation publication-type="journal"><string-name><surname>Harrison</surname> <given-names>SL</given-names></string-name>, <string-name><surname>Fazio-Eynullayeva</surname> <given-names>E</given-names></string-name>, <string-name><surname>Lane</surname> <given-names>DA</given-names></string-name>, <string-name><surname>Underhill</surname> <given-names>P</given-names></string-name>, <string-name><surname>Lip</surname> <given-names>GYH</given-names></string-name>. <article-title>Comorbidities associated with mortality in 31,461 adults with COVID-19 in the United States: A federated electronic medical record analysis</article-title>. <source>PLoS Med</source>. <year>2020</year>;<volume>17</volume>(<issue>9</issue>):<fpage>e1003321</fpage>.</mixed-citation></ref>
+<ref id="c8"><label>8.</label><mixed-citation publication-type="journal"><string-name><surname>Wang</surname> <given-names>Q</given-names></string-name>, <string-name><surname>Berger</surname> <given-names>NA</given-names></string-name>, <string-name><surname>Xu</surname> <given-names>R.</given-names></string-name> <article-title>Analyses of Risk, Racial Disparity, and Outcomes Among US Patients With Cancer and COVID-19 Infection</article-title>. <source>JAMA Oncol</source>. <year>2021</year>;<volume>7</volume>(<issue>2</issue>):<fpage>220</fpage>&#x2013;<lpage>7</lpage>.</mixed-citation></ref>
+<ref id="c9"><label>9.</label><mixed-citation publication-type="journal"><string-name><surname>Wynants</surname> <given-names>L</given-names></string-name>, <string-name><surname>Van Calster</surname> <given-names>B</given-names></string-name>, <string-name><surname>Collins</surname> <given-names>GS</given-names></string-name>, <string-name><surname>Riley</surname> <given-names>RD</given-names></string-name>, <string-name><surname>Heinze</surname> <given-names>G</given-names></string-name>, <string-name><surname>Schuit</surname> <given-names>E</given-names></string-name>, <etal>et al.</etal> <article-title>Prediction models for diagnosis and prognosis of covid-19 infection: systematic review and critical appraisal</article-title>. <source>BMJ</source>. <year>2020</year>;<volume>369</volume>:<fpage>m1328</fpage>.</mixed-citation></ref>
+<ref id="c10"><label>10.</label><mixed-citation publication-type="other"><string-name><surname>Experton</surname> <given-names>B</given-names></string-name>, <string-name><surname>Tetteh</surname> <given-names>HA</given-names></string-name>, <string-name><surname>Lurie</surname> <given-names>N</given-names></string-name>, <string-name><surname>Walker</surname> <given-names>P</given-names></string-name>, <string-name><surname>Carroll</surname> <given-names>CJ</given-names></string-name>, <string-name><surname>Elena</surname> <given-names>A</given-names></string-name>, <etal>et al.</etal> <article-title>A Predictive Model for Severe Covid-19 in the Medicare Population: A Tool for Prioritizing Scarce Vaccine Supply</article-title>. <source>medRxiv. 2020:2020.10.28.20219816</source>.</mixed-citation></ref>
+<ref id="c11"><label>11.</label><mixed-citation publication-type="other"><string-name><surname>Dun</surname> <given-names>C</given-names></string-name>, <string-name><surname>Walsh</surname> <given-names>CM</given-names></string-name>, <string-name><surname>Bae</surname> <given-names>S</given-names></string-name>, <string-name><surname>Adalja</surname> <given-names>A</given-names></string-name>, <string-name><surname>Toner</surname> <given-names>E</given-names></string-name>, <string-name><surname>Lash</surname> <given-names>TA</given-names></string-name>, <etal>et al.</etal> <article-title>A Machine Learning Study of 534,023 Medicare Beneficiaries with COVID-19: Implications for Personalized Risk Prediction</article-title>. <source>medRxiv. 2020:2020.10.27.20220970</source>.</mixed-citation></ref>
+<ref id="c12"><label>12.</label><mixed-citation publication-type="journal"><string-name><surname>von Elm</surname> <given-names>E</given-names></string-name>, <string-name><surname>Altman</surname> <given-names>DG</given-names></string-name>, <string-name><surname>Egger</surname> <given-names>M</given-names></string-name>, <string-name><surname>Pocock</surname> <given-names>SJ</given-names></string-name>, <string-name><surname>Gotzsche</surname> <given-names>PC</given-names></string-name>, <string-name><surname>Vandenbroucke</surname> <given-names>JP</given-names></string-name>, <etal>et al.</etal> <article-title>The Strengthening the Reporting of Observational Studies in Epidemiology (STROBE) statement: guidelines for reporting observational studies</article-title>. <source>Lancet</source>. <year>2007</year>;<volume>370</volume>(<issue>9596</issue>):<fpage>1453</fpage>&#x2013;<lpage>7</lpage>.</mixed-citation></ref>
+<ref id="c13"><label>13.</label><mixed-citation publication-type="website"><collab>CMS</collab>. <source>Preliminary Medicare COVID-19 Data Snapshot</source> CMS: Centers for Medicare &#x0026; Medicaid Services; <year>2021 [Available from</year>: <ext-link ext-link-type="uri" xlink:href="https://www.cms.gov/research-statistics-data-systems/preliminary-medicare-covid-19-data-snapshot">https://www.cms.gov/research-statistics-data-systems/preliminary-medicare-covid-19-data-snapshot</ext-link>.</mixed-citation></ref>
+<ref id="c14"><label>14.</label><mixed-citation publication-type="other"><collab>CDC</collab>. <source>ICD-10-CM Official Coding and Reporting Guidelines April 1, 2020 through September 30, 2020. Centers for Disease Control and Prevention</source>; <year>2020</year>.</mixed-citation></ref>
+<ref id="c15"><label>15.</label><mixed-citation publication-type="website"><collab>WHO</collab>. <source>COVID-19 coding in ICD-10: World Health Organization; 2020 [cited World Health Organization. Available from</source>: <ext-link ext-link-type="uri" xlink:href="https://www.who.int/classifications/icd/COVID-19-coding-icd10.pdf">https://www.who.int/classifications/icd/COVID-19-coding-icd10.pdf</ext-link>.</mixed-citation></ref>
+<ref id="c16"><label>16.</label><mixed-citation publication-type="journal"><string-name><surname>Chamoun</surname> <given-names>GF</given-names></string-name>, <string-name><surname>Li</surname> <given-names>L</given-names></string-name>, <string-name><surname>Chamoun</surname> <given-names>NG</given-names></string-name>, <string-name><surname>Saini</surname> <given-names>V</given-names></string-name>, <string-name><surname>Sessler</surname> <given-names>DI</given-names></string-name>. <article-title>Validation and Calibration of the Risk Stratification Index</article-title>. <source>Anesthesiology</source>. <year>2017</year>;<volume>126</volume>(<issue>4</issue>):<fpage>623</fpage>&#x2013;<lpage>30</lpage>.</mixed-citation></ref>
+<ref id="c17"><label>17.</label><mixed-citation publication-type="website"><collab>CMS</collab>. <source>Condition Categories - Chronic Conditions Data Warehouse: Centers for Medicare &#x0026; Medicaid Services</source>; <year>2021 [Available from</year>: <ext-link ext-link-type="uri" xlink:href="https://www2.ccwdata.org/web/guest/condition-categories">https://www2.ccwdata.org/web/guest/condition-categories</ext-link>.</mixed-citation></ref>
+<ref id="c18"><label>18.</label><mixed-citation publication-type="other"><string-name><surname>Lopez-Leon</surname> <given-names>S</given-names></string-name>, <string-name><surname>Wegman-Ostrosky</surname> <given-names>T</given-names></string-name>, <string-name><surname>Perelman</surname> <given-names>C</given-names></string-name>, <string-name><surname>Sepulveda</surname> <given-names>R</given-names></string-name>, <string-name><surname>Rebolledo</surname> <given-names>PA</given-names></string-name>, <string-name><surname>Cuapio</surname> <given-names>A</given-names></string-name>, <etal>et al.</etal> <article-title>More than 50 Long-term effects of Covid-19: a systematic review and meta-analysis</article-title>. <source>medRxiv preprint</source>. <year>2021</year>.</mixed-citation></ref>
+<ref id="c19"><label>19.</label><mixed-citation publication-type="journal"><string-name><surname>Kadri</surname> <given-names>SS</given-names></string-name>, <string-name><surname>Gundrum</surname> <given-names>J</given-names></string-name>, <string-name><surname>Warner</surname> <given-names>S</given-names></string-name>, <string-name><surname>Cao</surname> <given-names>Z</given-names></string-name>, <string-name><surname>Babiker</surname> <given-names>A</given-names></string-name>, <string-name><surname>Klompas</surname> <given-names>M</given-names></string-name>, <etal>et al.</etal> <article-title>Uptake and Accuracy of the Diagnosis Code for COVID-19 Among US Hospitalizations</article-title>. <source>JAMA</source>. <year>2020</year>;<volume>324</volume>(<issue>24</issue>):<fpage>2553</fpage>&#x2013;<lpage>4</lpage>.</mixed-citation></ref>
+<ref id="c20"><label>20.</label><mixed-citation publication-type="journal"><string-name><surname>Nguyen</surname> <given-names>NT</given-names></string-name>, <string-name><surname>Chinn</surname> <given-names>J</given-names></string-name>, <string-name><surname>Nahmias</surname> <given-names>J</given-names></string-name>, <string-name><surname>Yuen</surname> <given-names>S</given-names></string-name>, <string-name><surname>Kirby</surname> <given-names>KA</given-names></string-name>, <string-name><surname>Hohmann</surname> <given-names>S</given-names></string-name>, <etal>et al.</etal> <article-title>Outcomes and Mortality Among Adults Hospitalized With COVID-19 at US Medical Centers</article-title>. <source>JAMA Netw Open</source>. <year>2021</year>;<volume>4</volume>(<issue>3</issue>):<fpage>e210417</fpage>.</mixed-citation></ref>
+<ref id="c21"><label>21.</label><mixed-citation publication-type="other"><string-name><surname>Tenforde</surname> <given-names>MW</given-names></string-name>, <string-name><surname>Fisher</surname> <given-names>KA</given-names></string-name>, <string-name><surname>Patel</surname> <given-names>MM</given-names></string-name>. <article-title>Identifying COVID-19 Risk Through Observational Studies to Inform Control Measures</article-title>. <source>JAMA</source>. <year>2021</year>.</mixed-citation></ref>
+</ref-list>
+<sec id="s11">
+<title>Supporting Information</title>
+<p><bold>S1 Fig. Consort style waterfall flowchart detailing population selection methodology</bold>. Confirmed Covid-19 cases were identified consistent with CMS guidance using ICD-10-CM codes for Covid-19 (B97.29 before April 1, 2020 and U07.1 thereafter) as a primary or secondary diagnosis between March 1, 2020 and September 30, 2020.<sup>12</sup> Probable Covid-19 infection cases were identified using ICD-10-CM codes consistent with the CDC guidance (Z20.828) and WHO recommendations (U07.2).<sup>13,14</sup> Subjects were excluded for missing data if values for any baseline characteristic used in the study were missing (i.e., age, sex, ethnicity, location of care, zip code derived measures, dates of coverage, or baseline risk of 9 month mortality assessed with the Risk Stratification Index (RSI).) Additionally, we excluded subjects whose records had inconsistent values among source files containing similar variables such as birth date and sex.</p>
+<p><bold>S2 Fig. Performance characteristics of RSI model. Panel A: ROC curve, Panel B Calibration plot, Panel C Sensitivity and Positive Predicted Value vs probability of mortality</bold>. (A) Area Under the Receiver Operating Curve (AuROC) for the development Learn Set (80&#x0025; of 2018 Set) was 0.88 (95&#x0025; Confidence Interval of [0.88-0.88]). AuROC for the prospective Test Set (20&#x0025; of 2018 Set) was 0.88 (95&#x0025; Confidence Interval of [0.88-0.88]. Similar performance in the Test Set compared to the Learn Set supports a lack of overfitting in the development of the predictor. (B) The calibration plot displays the mean actual vs predicted 1 year mortality for populations clustered in increments of 1&#x0025; probability of mortality. Dark green, light green, and red dots are populations of the lowest 95&#x0025;, 95&#x0025;-99&#x0025;, and top 1&#x0025; risk of mortality. The diagonal line identifies the domain of ideal performance where actual and expected mortality rates are equal for a population. The performance of this index is very close to ideal performance for approximately 99&#x0025; of the population. Tabulated metrics: The sample size in this test set (N) was 11,923,144 with an incidence of 1yr mortality (Event_Test) of 4.5&#x0025;. The Slope and Intercept (INT) fit of the data are 0.94 and 0.01, respectively. The area under the Receiver Operating Curve was 0.88. The Mean Average Error (MEA) from cluster coordinates (i.e., (expected, actual) couplets) to the identity line was calculated for the database divided into populations grouped from the riskiest to least risky subjects using cluster sizes ranging from 1 (i.e., each individual as a cluster) to 1000 neighboring subjects (e.g., MAE to MAE_1000). The 95&#x0025; Confidence Interval (CI) for the fits of these populations to the identify line is tabulated (i.e., AE_CI to AE_CI_1000). Rsq_unit is a goodness of fit measure of individual results to the ideal line.</p>
+<p>(C) Positive Predictive Accuracy (blue dots) and Sensitivity (purple dots) versus the fraction of population, sorted by the risk of 1 year mortality. The vertical red line indicates where the number of patients above the risk threshold equals the incidence of mortality in the population. There are several metrics tabulated in the figure: The area under the Receiver Operating Characteristic (ROC) is 0.88. The incidence of mortality (IR) in the population of 11,891,922 was 4.4&#x0025;. Vertical bars help identify the PPA and sensitivity performance for detectors operating to identify the riskiest 5&#x0025;, 10&#x0025;, and 20&#x0025; patients. The PPV, sensitivity and relative risk (RR) are tabulated for these detector operating points.</p>
+<p><bold>S3 Fig. Comparison of RSI (Panel A) and Chronic Condition based models (Panel B) on 2020 population. ROC curves for all subjects, No Covid-19, Probable Covid-19 and Confirmed Covid-19 populations</bold>. Confirmed Covid-19 cases were identified consistent with CMS guidance using ICD-10-CM codes for Covid-19 (B97.29 before April 1, 2020 and U07.1 thereafter) as a primary or secondary diagnosis between March 1, 2020 and September 30, 2020.<sup>12</sup> Probable Covid-19 infection cases were identified using ICD-10-CM codes consistent with the CDC guidance (Z20.828) and WHO recommendations (U07.2).<sup>13,14</sup> (A,B) ROCs display the sensitivity vs. 1 &#x2013; specificity in detecting patients who died within 9 months after prediction from February 29,2020 (baseline). The areas under each ROC, with their corresponding 95&#x0025; confidence intervals, are tabulated in the lower right of each figure. Predictions using RSI yielded better performance (A) than those using a model based on age, sex and chronic conditions (B).</p>
+<p><bold>S4 Fig. Forest plot showing the relative risk and 95&#x0025; CI of significant predictors of confirmed Covid-19 infection</bold>. Confirmed Covid-19 cases were identified consistent with CMS guidance using ICD-10-CM codes for Covid-19 (B97.29 before April 1, 2020 and U07.1 thereafter) as a primary or secondary diagnosis between March 1, 2020 and September 30, 2020.<sup>12</sup> Subjects were categorized as &#x201C;LTC/SNF&#x201D; if they received services in either a Long Term Care (LTC) or Skilled Nursing Facility (SNF) in February 2020, otherwise they were categorized as receiving services in the &#x201C;Community.&#x201D; Predictors were assessed at baseline (February 29, 2020) and include quintiles of Risk Stratification Index (RSI), presence of chronic conditions, location of services (LTC/SNF vs Community), and demographic variables (i.e., age, sex, race, and quintiles of median household income imputed by zip code according to 2015 Census data.) Variables not remaining in the adjusted model are indicated by the presence of empty parenthesis under the adjusted odds ratio. Location of services, age, status of end-stage renal disease (ESRD) and RSI were the strongest (unadjusted) predictors of infection. Location of services and ESRD remained strong predictors following adjustment; however, risks associated with having chronic conditions were typically reduced when adjusted by the presence of other factors.</p>
+<p><bold>S5 Fig. Observed mortality rates by age and RSI quintiles</bold>. Rates of mortality within 9 months following baseline (February 29, 2020) in Medicare subpopulations categorized by age, location of services, infection status, and quintiles of the baseline risk of mortality assessed using the Risk Stratification Index (RSI). Confirmed Covid-19 cases were identified consistent with CMS guidance using ICD-10-CM codes for Covid-19 (B97.29 before April 1, 2020 and U07.1 thereafter) as a primary or secondary diagnosis between March 1, 2020 and September 30, 2020.<sup>12</sup> Probable Covid-19 infection cases were identified using ICD-10-CM codes consistent with the CDC guidance (Z20.828) and WHO recommendations (U07.2).<sup>13,14</sup> Subjects were categorized as &#x201C;LTC/SNF&#x201D; if they received services in either a Long-Term Care (LTC) or Skilled Nursing Facility (SNF) in February 2020, otherwise they were categorized as receiving services in the &#x201C;Community.&#x201D; As expected, subjects in quintiles with higher baseline risk of mortality had higher rates of observed mortality. For subjects without a Covid diagnosis, mortality rates were lower in the community setting compared to those in the LTC/SNF; however, for subjects with confirmed or probable Covid infection, mortality rates were typically higher in the community setting than in the LTC/SNF.</p>
+<p><bold>S1 File. RSI Development Method for 9-month predictions</bold>.</p>
+</sec>
+</back>
+</article>

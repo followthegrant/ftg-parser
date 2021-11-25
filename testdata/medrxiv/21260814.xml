@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.2d1 20170631//EN" "JATS-archivearticle1.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" article-type="article" dtd-version="1.2d1" specific-use="production" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="publisher-id">MEDRXIV</journal-id>
+<journal-title-group>
+<journal-title>medRxiv</journal-title>
+<abbrev-journal-title abbrev-type="publisher">medRxiv</abbrev-journal-title>
+</journal-title-group>
+<publisher>
+<publisher-name>Cold Spring Harbor Laboratory</publisher-name>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1101/2021.07.28.21260814</article-id>
+<article-version>1.1</article-version>
+<article-categories>
+<subj-group subj-group-type="hwp-journal-coll">
+<subject>Health Informatics</subject>
+</subj-group>
+</article-categories>
+<title-group>
+<article-title>Influence of social determinants of health and county vaccination rates on machine learning models to predict COVID-19 case growth in Tennessee</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author">
+<name><surname>Wylezinski</surname><given-names>Lukasz S.</given-names></name>
+<degrees>PhD</degrees>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a2">2</xref>
+<xref ref-type="aff" rid="a5">5</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Harris</surname><given-names>Coleman R.</given-names></name>
+<degrees>BS</degrees>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a2">2</xref>
+<xref ref-type="aff" rid="a3">3</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Heiser</surname><given-names>Cody N.</given-names></name>
+<degrees>BS</degrees>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a2">2</xref>
+<xref ref-type="aff" rid="a4">4</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Gray</surname><given-names>Jamieson D.</given-names></name>
+<degrees>BS</degrees>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author" corresp="yes">
+<name><surname>Spurlock</surname><given-names>Charles F.</given-names>
+<suffix>III</suffix></name>
+<degrees>PhD</degrees>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a2">2</xref>
+<xref ref-type="aff" rid="a5">5</xref>
+<xref ref-type="aff" rid="a6">6</xref>
+<xref ref-type="corresp" rid="cor1">&#x2020;</xref>
+</contrib>
+<aff id="a1"><label>1</label><institution>Decode Health, Inc.</institution>, Nashville, TN, 37203</aff>
+<aff id="a2"><label>2</label><institution>IQuity Labs, Inc.</institution>, Nashville, TN 37203</aff>
+<aff id="a3"><label>3</label><institution>Department of Biostatistics, Vanderbilt University School of Medicine</institution>, Nashville, TN, 37232</aff>
+<aff id="a4"><label>4</label><institution>Program in Chemical and Physical Biology, Vanderbilt University School of Medicine</institution>, Nashville, TN, 37232</aff>
+<aff id="a5"><label>5</label><institution>Department of Medicine, Vanderbilt University School of Medicine</institution>, Nashville, TN, 37232</aff>
+<aff id="a6"><label>6</label><institution>Wagner School of Public Health, New York University</institution>, New York, NY, 10012</aff>
+</contrib-group>
+<author-notes>
+<corresp id="cor1"><label>&#x2020;</label>Address correspondence to CFS: Charles F. Spurlock, III, PhD, 111 10th Ave South, Suite 102, Nashville, TN, USA, <email>chase@decodehealth.ai</email></corresp>
+</author-notes>
+<pub-date pub-type="epub">
+<year>2021</year>
+</pub-date>
+<elocation-id>2021.07.28.21260814</elocation-id>
+<history>
+<date date-type="received">
+<day>28</day>
+<month>7</month>
+<year>2021</year>
+</date>
+<date date-type="rev-recd">
+<day>28</day>
+<month>7</month>
+<year>2021</year>
+</date>
+<date date-type="accepted">
+<day>30</day>
+<month>7</month>
+<year>2021</year>
+</date>
+</history>
+<permissions>
+<copyright-statement>&#x00A9; 2021, Posted by Cold Spring Harbor Laboratory</copyright-statement>
+<copyright-year>2021</copyright-year>
+<license license-type="creative-commons" xlink:href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><license-p>This pre-print is available under a Creative Commons License (Attribution-NonCommercial-NoDerivs 4.0 International), CC BY-NC-ND 4.0, as described at <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by-nc-nd/4.0/">http://creativecommons.org/licenses/by-nc-nd/4.0/</ext-link></license-p></license>
+</permissions>
+<self-uri xlink:href="21260814.pdf" content-type="pdf" xlink:role="full-text"/>
+<abstract>
+<title>Abstract</title>
+<p>The SARS-CoV-2 (COVID-19) pandemic has exposed health disparities throughout the United States, particularly among racial and ethnic minorities. As a result, there is a need for data-driven approaches to pinpoint the unique constellation of clinical and social determinants of health (SDOH) risk factors that give rise to poor patient outcomes following infection in US communities.</p>
+<p>We combined county-level COVID-19 testing data, COVID-19 vaccination rates, and SDOH information in Tennessee. Between February-May 2021, we trained machine learning models on a semi-monthly basis using these datasets to predict COVID-19 incidence in Tennessee counties. We then analyzed SDOH data features at each time point to rank the impact of each feature on model performance.</p>
+<p>Our results indicate that COVID-19 vaccination rates play a crucial role in determining future COVID-19 disease risk. Beginning in mid-March 2021, higher vaccination rates significantly correlated with lower COVID-19 case growth predictions. Further, as the relative importance of COVID-19 vaccination data features grew, demographic SDOH features such as age, race, and ethnicity decreased while the impact of socioeconomic and environmental factors, including access to healthcare and transportation, increased.</p>
+<p>Incorporating a data framework to track the evolving patterns of community-level SDOH risk factors could provide policymakers with additional data resources to improve health equity and resilience to future public health emergencies.</p>
+</abstract>
+<kwd-group kwd-group-type="author">
+<title>Keywords</title>
+<kwd>SARS-CoV-2</kwd>
+<kwd>health equity</kwd>
+<kwd>vaccines</kwd>
+<kwd>social determinants of health</kwd>
+<kwd>machine learning</kwd>
+<kwd>demographics</kwd>
+</kwd-group>
+<counts>
+<page-count count="9"/>
+</counts>
+</article-meta>
+<notes>
+<notes notes-type="competing-interest-statement">
+<title>Competing Interest Statement</title><p>Authors Wylezinski, Gray and Spurlock are shareholders in IQuity Labs, Inc. (Nashville, TN) and Decode Health, Inc. (Nashville, TN). IQuity Labs develops blood-based tools using RNA to aid in the diagnosis and treatment of human disease. Decode Health develops artificial intelligence approaches to predict chronic and infectious disease risk in patient populations.</p></notes>
+<notes notes-type="financial-disclosure">
+<title>Funding Statement</title><p>This work was supported by Decode Health, Inc., IQuity Labs, Inc., and grants from the National Institutes of Health (AI124766, AI129147 and AI145505).</p></notes>
+<notes notes-type="disclosures">
+<title>Author Declarations</title><p>I confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.</p><p>Yes</p><p>The details of the IRB/oversight body that provided approval or exemption for the research described are given below:</p><p>IRB approval was not necessary. Data to support the study were available from publicly available sources as outlined in the materials and methods.</p><p>All necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived.</p><p>Yes</p><p>I understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).</p><p>Yes</p><p>I have followed all appropriate research reporting guidelines and uploaded the relevant EQUATOR Network research reporting checklist(s) and other pertinent material as supplementary files, if applicable.</p><p>Yes</p></notes>
+</notes>
+</front>
+<body>
+<sec id="s1">
+<title>Introduction</title>
+<p>The SARS-CoV-2 (COVID-19) pandemic exacerbated health inequities throughout the United States disproportionately affecting at-risk populations.<sup><xref ref-type="bibr" rid="c1">1</xref></sup> Identifying social determinants of health (SDOH) risk factors within US communities that contribute to poor outcomes following infection can improve health equity and strengthen community readiness for future public health emergencies.<sup><xref ref-type="bibr" rid="c2">2</xref>, <xref ref-type="bibr" rid="c3">3</xref></sup> Following vaccine rollouts in 2021, we predicted Tennessee COVID-19 case growth using machine learning models and investigated the influence of SDOH factors on COVID-19 incidence to quantify and track opportunities to improve health equity.</p>
+</sec>
+<sec id="s2">
+<title>Methods</title>
+<p>Our approach combined publicly available COVID-19 testing, vaccination, hospitalization, and death metrics with county-specific SDOH and demographic data.<sup><xref ref-type="bibr" rid="c4">4</xref>, <xref ref-type="bibr" rid="c5">5</xref></sup> We employed feature engineering and selection to identify novel county-level predictors such as offset case counts, summed and averaged case growth statistics, and days since the k<sup>th</sup> COVID-19 case to best capture trends in Tennessee county COVID-19 incidence between February and May 2021. We aggregated data from multiple sources, including the Tennessee Department of Health, John&#x2019;s Hopkins Coronavirus Research Center, and the U.S. Census database to minimize any implicit bias, and removed or ignored missing values depending on the model type. We trained and tested multiple machine learning models using a grid search approach, including neural networks and tree-based methods, with four to six weeks of historical COVID-19 case data to generate COVID-19 case predictions at thirteen timepoints. We selected optimal models using cross-validation and holdout metrics (e.g., Tweedie deviance, mean absolute error, R<sup>2</sup>).<sup><xref ref-type="bibr" rid="c6">6</xref></sup> We analyzed the impact of all features using permutation importance to quantify and rank particular SDOH by their relative influence on COVID-19 case growth predictions.<sup><xref ref-type="bibr" rid="c7">7</xref></sup> Finally, we generated linear regression models of county COVID-19 case growth using vaccination rates as regressors to calculate correlation coefficients that quantify the association between local vaccination rates and COVID-19 incidence.</p>
+</sec>
+<sec id="s3">
+<title>Results</title>
+<p>Machine learning models across all timepoints were more than 90&#x0025; accurate when comparing model predictions to actual cases (Supplementary Figure 1A &#x0026; C). The top models demonstrated an average R<sup>2</sup> value of 0.99, mean absolute error of 0.21, and 0.001 mean Tweedie deviance (Supplementary Figure 1B).</p>
+<p>Highly predictive SDOH features changed in importance over time. Categorically, demographic SDOH were most important in February 2021, but socioeconomic and environmental SDOH became increasingly more influential towards May. Health outcome SDOH features remained largely consistent during the study period. Individually, the female and under-18 age demographic features ranked highest in February and then declined while African American poverty and health infrastructure features, such as the number of hospital beds and community provider access statistics, increased in importance by mid-April. Lastly, COVID-19 vaccination data features grew in relative importance by May compared to the other SDOH factors (<xref rid="fig1" ref-type="fig">Figure 1</xref>).</p>
+<fig id="fig1" position="float" fig-type="figure">
+<label>Figure 1.</label>
+<caption><title>Social determinants of health (SDOH) linked to COVID-19 case growth in Tennessee dynamically shift in importance over time.</title>
+<p>SDOH include social, physical and environmental factors that impact community health such as age, race, gender, access to transportation, access to primary care and community vaccination rates. Twelve of these SDOH features demonstrated the highest feature importance across all predictive models during the study period. Size and color are used to emphasize SDOH feature importance at each timepoint. Large, red <inline-formula><alternatives><inline-graphic xlink:href="21260814v1_inline1.gif"/></alternatives></inline-formula> bubbles connote the top ranked SDOH feature while small dark blue <inline-formula><alternatives><inline-graphic xlink:href="21260814v1_inline2.gif"/></alternatives></inline-formula> bubbles signify least importance of a given feature at each timepoint. Black bubbles <inline-formula><alternatives><inline-graphic xlink:href="21260814v1_inline3.gif"/></alternatives></inline-formula> represent the least important feature at each time point compared to the other top ranked SDOH data elements.</p></caption>
+<graphic xlink:href="21260814v1_fig1.tif"/>
+</fig>
+<p>As Tennessee vaccination rates increased, counties with the lowest vaccination rates exhibited the highest COVID-19 case growth (Supplemental Figure 2A). Initially, vaccination rates were not correlated with COVID-19 risk, but by mid-March, a statistically significant correlation with low risk of COVID-19 case growth emerged (Supplemental Figure 2B).</p>
+</sec>
+<sec id="s4">
+<title>Discussion</title>
+<p>Efforts to curtail the health and economic impact of the SARS-CoV-2 pandemic illuminate the need to define specific risk factors that catalyze future case growth, worsen health disparities, and adversely impact the public health response across US communities. Addressing these challenges, we constructed a real-time predictive framework to discover and rank county-level SDOH risk factors that drive machine learning predictions of future COVID-19 case growth (<xref rid="fig1" ref-type="fig">Figure 1</xref>).</p>
+<p>In Tennessee, we found that communities with rapid vaccine rollout were at lower risk for case growth (Supplemental Figure 2). As vaccination levels began to rise, demographic SDOH features such as age, race and ethnicity declined in relative importance while socioeconomic and environmental risk factors such as poverty, access to transportation and healthcare infrastructure increased significantly. Measures promoting health equity rely on constant assessment of risk mitigation effectiveness. Real-time knowledge of community specific SDOH risk factors empowers healthcare organizations and local governments to improve policy and resource allocation to mitigate outbreaks and enhance resilience to future public health threats.</p>
+</sec>
+<sec sec-type="supplementary-material">
+<title>Supporting information</title>
+<supplementary-material>
+<label>Supplemental Figure 1</label>
+<media xlink:href="supplements/260814_file04.pdf" />
+</supplementary-material>
+<supplementary-material>
+<label>Supplemental Figure 2</label>
+<media xlink:href="supplements/260814_file05.pdf" />
+</supplementary-material>
+</sec>
+</body>
+<back>
+<sec sec-type="data-availability">
+<title>Data Availability</title>
+<p>The data that support the findings of this study are available from the corresponding author upon reasonable request.</p>
+</sec>
+<ack>
+<title>Acknowledgements</title>
+<p>This work was supported by Decode Health, Inc., IQuity Labs, Inc., and grants from the National Institutes of Health (AI124766, AI129147 and AI145505). Dr. Spurlock had full access to all of the data in the study and takes responsibility for the integrity of the data and the accuracy of the data analysis. Dr. Spurlock devised the concept and study design. All authors took part in acquisition, analysis and interpretation of the data along with drafting and revising the manuscript.</p>
+</ack>
+<sec id="s5">
+<title>Conflict of interest statement</title>
+<p>Authors Wylezinski, Gray and Spurlock are shareholders in IQuity Labs, Inc. (Nashville, TN) and Decode Health, Inc. (Nashville, TN). IQuity Labs develops blood-based tools using RNA to aid in the diagnosis and treatment of human disease. Decode Health develops artificial intelligence approaches to predict chronic and infectious disease risk in patient populations.</p>
+</sec>
+<ref-list>
+<title>References</title>
+<ref id="c1"><label>1.</label><mixed-citation publication-type="journal"><string-name><surname>Alberti</surname> <given-names>PM</given-names></string-name>, <string-name><surname>Lantz</surname> <given-names>PM</given-names></string-name>, <string-name><surname>Wilkins</surname> <given-names>CH</given-names></string-name>. <article-title>Equitable Pandemic Preparedness and Rapid Response: Lessons from COVID-19 for Pandemic Health Equity</article-title>. <source>J Health Polit Policy Law. 12</source> <year>2020</year>;<volume>45</volume>(<issue>6</issue>):<fpage>921</fpage>&#x2013;<lpage>935</lpage>. doi:<pub-id pub-id-type="doi">10.1215/03616878-8641469</pub-id></mixed-citation></ref>
+<ref id="c2"><label>2.</label><mixed-citation publication-type="journal"><string-name><surname>Paremoer</surname> <given-names>L</given-names></string-name>, <string-name><surname>Nandi</surname> <given-names>S</given-names></string-name>, <string-name><surname>Serag</surname> <given-names>H</given-names></string-name>, <string-name><surname>Baum</surname> <given-names>F.</given-names></string-name> <article-title>Covid-19 pandemic and the social determinants of health</article-title>. <source>BMJ</source>. 01 <year>2021</year>;<volume>372</volume>:129. doi:<pub-id pub-id-type="doi">10.1136/bmj.n129</pub-id></mixed-citation></ref>
+<ref id="c3"><label>3.</label><mixed-citation publication-type="journal"><string-name><surname>Seligman</surname> <given-names>B</given-names></string-name>, <string-name><surname>Ferranna</surname> <given-names>M</given-names></string-name>, <string-name><surname>Bloom</surname> <given-names>DE</given-names></string-name>. <article-title>Social determinants of mortality from COVID-19: A simulation study using NHANES</article-title>. <source>PLoS Med</source>. 01 <year>2021</year>;<volume>18</volume>(<issue>1</issue>):<fpage>e1003490</fpage>. doi:<pub-id pub-id-type="doi">10.1371/journal.pmed.1003490</pub-id></mixed-citation></ref>
+<ref id="c4"><label>4.</label><mixed-citation publication-type="website"><collab>Johns Hopkins University Coronavirus Resource Center</collab>. <source>COVID-19 United States Cases by County</source>. <ext-link ext-link-type="uri" xlink:href="https://coronavirus.jhu.edu/us-map">https://coronavirus.jhu.edu/us-map</ext-link>. Accessed <date-in-citation content-type="access-date">February 1, 2021</date-in-citation>,</mixed-citation></ref>
+<ref id="c5"><label>5.</label><mixed-citation publication-type="journal"><string-name><surname>Vest</surname> <given-names>JR</given-names></string-name>, <string-name><surname>Ben-Assuli</surname> <given-names>O.</given-names></string-name> <article-title>Prediction of emergency department revisits using area-level social determinants of health measures and health information exchange information</article-title>. <source>Int J Med Inform</source>. 09 <year>2019</year>;<volume>129</volume>:<fpage>205</fpage>&#x2013;<lpage>210</lpage>. doi:<pub-id pub-id-type="doi">10.1016/j.ijmedinf.2019.06.013</pub-id></mixed-citation></ref>
+<ref id="c6"><label>6.</label><mixed-citation publication-type="journal"><string-name><surname>Muhlestein</surname> <given-names>WE</given-names></string-name>, <string-name><surname>Akagi</surname> <given-names>DS</given-names></string-name>, <string-name><surname>Chotai</surname> <given-names>S</given-names></string-name>, <string-name><surname>Chambless</surname> <given-names>LB</given-names></string-name>. <article-title>The impact of presurgical comorbidities on discharge disposition and length of hospitalization following craniotomy for brain tumor</article-title>. <source>Surg Neurol Int</source>. <year>2017</year>;<volume>8</volume>:<fpage>220</fpage>. doi:<pub-id pub-id-type="doi">10.4103/sni.sni_54_17</pub-id></mixed-citation></ref>
+<ref id="c7"><label>7.</label><mixed-citation publication-type="book"><string-name><surname>Breiman</surname> <given-names>L.</given-names></string-name> <chapter-title>Random Forests</chapter-title>. vol <volume>45</volume>. <source>Machine Learning</source>. <publisher-name>Kluwer Academic Publishers</publisher-name>; <year>2001</year>.</mixed-citation></ref>
+</ref-list>
+</back>
+</article>

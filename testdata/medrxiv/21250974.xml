@@ -1,0 +1,1616 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.2d1 20170631//EN" "JATS-archivearticle1.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" article-type="article" dtd-version="1.2d1" specific-use="production" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="publisher-id">MEDRXIV</journal-id>
+<journal-title-group>
+<journal-title>medRxiv</journal-title>
+<abbrev-journal-title abbrev-type="publisher">medRxiv</abbrev-journal-title>
+</journal-title-group>
+<publisher>
+<publisher-name>Cold Spring Harbor Laboratory</publisher-name>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1101/2021.02.03.21250974</article-id>
+<article-version>1.1</article-version>
+<article-categories>
+<subj-group subj-group-type="hwp-journal-coll">
+<subject>Epidemiology</subject>
+</subj-group>
+</article-categories>
+<title-group>
+<article-title>Evaluation of individual and ensemble probabilistic forecasts of COVID-19 mortality in the US</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-1373-3177</contrib-id>
+<name><surname>Cramer</surname><given-names>Estee Y</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Ray</surname><given-names>Evan L</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-2926-4010</contrib-id>
+<name><surname>Lopez</surname><given-names>Velma K</given-names></name>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-3777-1410</contrib-id>
+<name><surname>Bracher</surname><given-names>Johannes</given-names></name>
+<xref ref-type="aff" rid="a3">3</xref>
+<xref ref-type="aff" rid="a4">4</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Brennen</surname><given-names>Andrea</given-names></name>
+<xref ref-type="aff" rid="a5">5</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Rivadeneira</surname><given-names>Alvaro J Castro</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Gerding</surname><given-names>Aaron</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Gneiting</surname><given-names>Tilmann</given-names></name>
+<xref ref-type="aff" rid="a4">4</xref>
+<xref ref-type="aff" rid="a6">6</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>House</surname><given-names>Katie H</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Huang</surname><given-names>Yuxin</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Jayawardena</surname><given-names>Dasuni</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Kanji</surname><given-names>Abdul H</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Khandelwal</surname><given-names>Ayush</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Le</surname><given-names>Khoa</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>M&#x00FC;hlemann</surname><given-names>Anja</given-names></name>
+<xref ref-type="aff" rid="a7">7</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-5079-158X</contrib-id>
+<name><surname>Niemi</surname><given-names>Jarad</given-names></name>
+<xref ref-type="aff" rid="a8">8</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Shah</surname><given-names>Apurv</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Stark</surname><given-names>Ariane</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Wang</surname><given-names>Yijin</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Wattanachit</surname><given-names>Nutcha</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Zorn</surname><given-names>Martha W</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Gu</surname><given-names>Youyang</given-names></name>
+<xref ref-type="aff" rid="a9">9</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Jain</surname><given-names>Sansiddh</given-names></name>
+<xref ref-type="aff" rid="a10">10</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Bannur</surname><given-names>Nayana</given-names></name>
+<xref ref-type="aff" rid="a10">10</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Deva</surname><given-names>Ayush</given-names></name>
+<xref ref-type="aff" rid="a10">10</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Kulkarni</surname><given-names>Mihir</given-names></name>
+<xref ref-type="aff" rid="a10">10</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0001-7849-9743</contrib-id>
+<name><surname>Merugu</surname><given-names>Srujana</given-names></name>
+<xref ref-type="aff" rid="a10">10</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Raval</surname><given-names>Alpan</given-names></name>
+<xref ref-type="aff" rid="a10">10</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Shingi</surname><given-names>Siddhant</given-names></name>
+<xref ref-type="aff" rid="a10">10</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Tiwari</surname><given-names>Avtansh</given-names></name>
+<xref ref-type="aff" rid="a10">10</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-4148-8834</contrib-id>
+<name><surname>White</surname><given-names>Jerome</given-names></name>
+<xref ref-type="aff" rid="a10">10</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-2882-3450</contrib-id>
+<name><surname>Woody</surname><given-names>Spencer</given-names></name>
+<xref ref-type="aff" rid="a11">11</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Dahan</surname><given-names>Maytal</given-names></name>
+<xref ref-type="aff" rid="a12">12</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Fox</surname><given-names>Spencer</given-names></name>
+<xref ref-type="aff" rid="a11">11</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Gaither</surname><given-names>Kelly</given-names></name>
+<xref ref-type="aff" rid="a12">12</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Lachmann</surname><given-names>Michael</given-names></name>
+<xref ref-type="aff" rid="a13">13</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-5828-8874</contrib-id>
+<name><surname>Meyers</surname><given-names>Lauren Ancel</given-names></name>
+<xref ref-type="aff" rid="a11">11</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Scott</surname><given-names>James G</given-names></name>
+<xref ref-type="aff" rid="a11">11</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Tec</surname><given-names>Mauricio</given-names></name>
+<xref ref-type="aff" rid="a11">11</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-8706-5717</contrib-id>
+<name><surname>Srivastava</surname><given-names>Ajitesh</given-names></name>
+<xref ref-type="aff" rid="a14">14</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-4779-8702</contrib-id>
+<name><surname>George</surname><given-names>Glover E</given-names></name>
+<xref ref-type="aff" rid="a15">15</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-3065-3403</contrib-id>
+<name><surname>Cegan</surname><given-names>Jeffrey C</given-names></name>
+<xref ref-type="aff" rid="a15">15</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Dettwiller</surname><given-names>Ian D</given-names></name>
+<xref ref-type="aff" rid="a15">15</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>England</surname><given-names>William P</given-names></name>
+<xref ref-type="aff" rid="a15">15</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-7301-6359</contrib-id>
+<name><surname>Farthing</surname><given-names>Matthew W</given-names></name>
+<xref ref-type="aff" rid="a15">15</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-2382-7938</contrib-id>
+<name><surname>Hunter</surname><given-names>Robert H</given-names></name>
+<xref ref-type="aff" rid="a15">15</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Lafferty</surname><given-names>Brandon</given-names></name>
+<xref ref-type="aff" rid="a15">15</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Linkov</surname><given-names>Igor</given-names></name>
+<xref ref-type="aff" rid="a15">15</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0001-9014-1859</contrib-id>
+<name><surname>Mayo</surname><given-names>Michael L</given-names></name>
+<xref ref-type="aff" rid="a15">15</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-9419-2693</contrib-id>
+<name><surname>Parno</surname><given-names>Matthew D</given-names></name>
+<xref ref-type="aff" rid="a15">15</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-6759-8225</contrib-id>
+<name><surname>Rowland</surname><given-names>Michael A</given-names></name>
+<xref ref-type="aff" rid="a15">15</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-4097-733X</contrib-id>
+<name><surname>Trump</surname><given-names>Benjamin D</given-names></name>
+<xref ref-type="aff" rid="a15">15</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-2216-2492</contrib-id>
+<name><surname>Corsetti</surname><given-names>Sabrina M</given-names></name>
+<xref ref-type="aff" rid="a16">16</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-2469-513X</contrib-id>
+<name><surname>Baer</surname><given-names>Thomas M</given-names></name>
+<xref ref-type="aff" rid="a17">17</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-4221-830X</contrib-id>
+<name><surname>Eisenberg</surname><given-names>Marisa C</given-names></name>
+<xref ref-type="aff" rid="a16">16</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Falb</surname><given-names>Karl</given-names></name>
+<xref ref-type="aff" rid="a16">16</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Huang</surname><given-names>Yitao</given-names></name>
+<xref ref-type="aff" rid="a16">16</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-5771-8895</contrib-id>
+<name><surname>Martin</surname><given-names>Emily T</given-names></name>
+<xref ref-type="aff" rid="a16">16</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>McCauley</surname><given-names>Ella</given-names></name>
+<xref ref-type="aff" rid="a16">16</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Myers</surname><given-names>Robert L</given-names></name>
+<xref ref-type="aff" rid="a16">16</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0001-5660-2690</contrib-id>
+<name><surname>Schwarz</surname><given-names>Tom</given-names></name>
+<xref ref-type="aff" rid="a16">16</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-4257-2432</contrib-id>
+<name><surname>Sheldon</surname><given-names>Daniel</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-0370-9846</contrib-id>
+<name><surname>Gibson</surname><given-names>Graham Casey</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Yu</surname><given-names>Rose</given-names></name>
+<xref ref-type="aff" rid="a18">18</xref>
+<xref ref-type="aff" rid="a19">19</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Gao</surname><given-names>Liyao</given-names></name>
+<xref ref-type="aff" rid="a20">20</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0001-6074-6638</contrib-id>
+<name><surname>Ma</surname><given-names>Yian</given-names></name>
+<xref ref-type="aff" rid="a18">18</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-2412-6049</contrib-id>
+<name><surname>Wu</surname><given-names>Dongxia</given-names></name>
+<xref ref-type="aff" rid="a18">18</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Yan</surname><given-names>Xifeng</given-names></name>
+<xref ref-type="aff" rid="a21">21</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Jin</surname><given-names>Xiaoyong</given-names></name>
+<xref ref-type="aff" rid="a21">21</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Wang</surname><given-names>Yu-Xiang</given-names></name>
+<xref ref-type="aff" rid="a21">21</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Chen</surname><given-names>YangQuan</given-names></name>
+<xref ref-type="aff" rid="a22">22</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-4804-4005</contrib-id>
+<name><surname>Guo</surname><given-names>Lihong</given-names></name>
+<xref ref-type="aff" rid="a23">23</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0001-5273-694X</contrib-id>
+<name><surname>Zhao</surname><given-names>Yanting</given-names></name>
+<xref ref-type="aff" rid="a24">24</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Gu</surname><given-names>Quanquan</given-names></name>
+<xref ref-type="aff" rid="a25">25</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-1486-4526</contrib-id>
+<name><surname>Chen</surname><given-names>Jinghui</given-names></name>
+<xref ref-type="aff" rid="a25">25</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Wang</surname><given-names>Lingxiao</given-names></name>
+<xref ref-type="aff" rid="a25">25</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-2559-8622</contrib-id>
+<name><surname>Xu</surname><given-names>Pan</given-names></name>
+<xref ref-type="aff" rid="a25">25</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Zhang</surname><given-names>Weitong</given-names></name>
+<xref ref-type="aff" rid="a25">25</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-6544-2593</contrib-id>
+<name><surname>Zou</surname><given-names>Difan</given-names></name>
+<xref ref-type="aff" rid="a25">25</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Biegel</surname><given-names>Hannah</given-names></name>
+<xref ref-type="aff" rid="a26">26</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-2064-229X</contrib-id>
+<name><surname>Lega</surname><given-names>Joceline</given-names></name>
+<xref ref-type="aff" rid="a26">26</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-4547-5870</contrib-id>
+<name><surname>Snyder</surname><given-names>Timothy L</given-names></name>
+<xref ref-type="aff" rid="a27">27</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Wilson</surname><given-names>Davison D</given-names></name>
+<xref ref-type="aff" rid="a27">27</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>McConnell</surname><given-names>Steve</given-names></name>
+<xref ref-type="aff" rid="a28">28</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Walraven</surname><given-names>Robert</given-names></name>
+<xref ref-type="aff" rid="a9">9</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Shi</surname><given-names>Yunfeng</given-names></name>
+<xref ref-type="aff" rid="a29">29</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Ban</surname><given-names>Xuegang</given-names></name>
+<xref ref-type="aff" rid="a20">20</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-5970-0605</contrib-id>
+<name><surname>Hong</surname><given-names>Qi-Jun</given-names></name>
+<xref ref-type="aff" rid="a30">30</xref>
+<xref ref-type="aff" rid="a31">31</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Kong</surname><given-names>Stanley</given-names></name>
+<xref ref-type="aff" rid="a32">32</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-0735-7769</contrib-id>
+<name><surname>Turtle</surname><given-names>James A</given-names></name>
+<xref ref-type="aff" rid="a33">33</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-9164-0008</contrib-id>
+<name><surname>Ben-Nun</surname><given-names>Michal</given-names></name>
+<xref ref-type="aff" rid="a33">33</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Riley</surname><given-names>Pete</given-names></name>
+<xref ref-type="aff" rid="a33">33</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0001-7904-4804</contrib-id>
+<name><surname>Riley</surname><given-names>Steven</given-names></name>
+<xref ref-type="aff" rid="a34">34</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-6286-351X</contrib-id>
+<name><surname>Koyluoglu</surname><given-names>Ugur</given-names></name>
+<xref ref-type="aff" rid="a35">35</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>DesRoches</surname><given-names>David</given-names></name>
+<xref ref-type="aff" rid="a35">35</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Hamory</surname><given-names>Bruce</given-names></name>
+<xref ref-type="aff" rid="a35">35</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Kyriakides</surname><given-names>Christina</given-names></name>
+<xref ref-type="aff" rid="a35">35</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Leis</surname><given-names>Helen</given-names></name>
+<xref ref-type="aff" rid="a35">35</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Milliken</surname><given-names>John</given-names></name>
+<xref ref-type="aff" rid="a35">35</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Moloney</surname><given-names>Michael</given-names></name>
+<xref ref-type="aff" rid="a35">35</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Morgan</surname><given-names>James</given-names></name>
+<xref ref-type="aff" rid="a35">35</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Ozcan</surname><given-names>Gokce</given-names></name>
+<xref ref-type="aff" rid="a35">35</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Schrader</surname><given-names>Chris</given-names></name>
+<xref ref-type="aff" rid="a35">35</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Shakhnovich</surname><given-names>Elizabeth</given-names></name>
+<xref ref-type="aff" rid="a35">35</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Siegel</surname><given-names>Daniel</given-names></name>
+<xref ref-type="aff" rid="a35">35</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Spatz</surname><given-names>Ryan</given-names></name>
+<xref ref-type="aff" rid="a35">35</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Stiefeling</surname><given-names>Chris</given-names></name>
+<xref ref-type="aff" rid="a35">35</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Wilkinson</surname><given-names>Barrie</given-names></name>
+<xref ref-type="aff" rid="a35">35</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Wong</surname><given-names>Alexander</given-names></name>
+<xref ref-type="aff" rid="a35">35</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Gao</surname><given-names>Zhifeng</given-names></name>
+<xref ref-type="aff" rid="a36">36</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Bian</surname><given-names>Jiang</given-names></name>
+<xref ref-type="aff" rid="a36">36</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Cao</surname><given-names>Wei</given-names></name>
+<xref ref-type="aff" rid="a36">36</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Ferres</surname><given-names>Juan Lavista</given-names></name>
+<xref ref-type="aff" rid="a36">36</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Li</surname><given-names>Chaozhuo</given-names></name>
+<xref ref-type="aff" rid="a36">36</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Liu</surname><given-names>Tie-Yan</given-names></name>
+<xref ref-type="aff" rid="a36">36</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Xie</surname><given-names>Xing</given-names></name>
+<xref ref-type="aff" rid="a36">36</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Zhang</surname><given-names>Shun</given-names></name>
+<xref ref-type="aff" rid="a36">36</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Zheng</surname><given-names>Shun</given-names></name>
+<xref ref-type="aff" rid="a36">36</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-3419-4205</contrib-id>
+<name><surname>Vespignani</surname><given-names>Alessandro</given-names></name>
+<xref ref-type="aff" rid="a37">37</xref>
+<xref ref-type="aff" rid="a38">38</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-5955-1929</contrib-id>
+<name><surname>Chinazzi</surname><given-names>Matteo</given-names></name>
+<xref ref-type="aff" rid="a37">37</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-0726-1855</contrib-id>
+<name><surname>Davis</surname><given-names>Jessica T</given-names></name>
+<xref ref-type="aff" rid="a37">37</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-8150-5363</contrib-id>
+<name><surname>Mu</surname><given-names>Kunpeng</given-names></name>
+<xref ref-type="aff" rid="a37">37</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-2894-0489</contrib-id>
+<name><surname>Piontti</surname><given-names>Ana Pastore y</given-names></name>
+<xref ref-type="aff" rid="a37">37</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-4988-1075</contrib-id>
+<name><surname>Xiong</surname><given-names>Xinyue</given-names></name>
+<xref ref-type="aff" rid="a37">37</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0001-6711-553X</contrib-id>
+<name><surname>Zheng</surname><given-names>Andrew</given-names></name>
+<xref ref-type="aff" rid="a39">39</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0001-5538-509X</contrib-id>
+<name><surname>Baek</surname><given-names>Jackie</given-names></name>
+<xref ref-type="aff" rid="a39">39</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-5856-9246</contrib-id>
+<name><surname>Farias</surname><given-names>Vivek</given-names></name>
+<xref ref-type="aff" rid="a40">40</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-0936-2783</contrib-id>
+<name><surname>Georgescu</surname><given-names>Andreea</given-names></name>
+<xref ref-type="aff" rid="a39">39</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-1994-4875</contrib-id>
+<name><surname>Levi</surname><given-names>Retsef</given-names></name>
+<xref ref-type="aff" rid="a40">40</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-5995-7427</contrib-id>
+<name><surname>Sinha</surname><given-names>Deeksha</given-names></name>
+<xref ref-type="aff" rid="a39">39</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-3251-0211</contrib-id>
+<name><surname>Wilde</surname><given-names>Joshua</given-names></name>
+<xref ref-type="aff" rid="a39">39</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-9545-5731</contrib-id>
+<name><surname>Penna</surname><given-names>Nicolas D</given-names></name>
+<xref ref-type="aff" rid="a41">41</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0001-6712-6626</contrib-id>
+<name><surname>Celi</surname><given-names>Leo A</given-names></name>
+<xref ref-type="aff" rid="a41">41</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Sundar</surname><given-names>Saketh</given-names></name>
+<xref ref-type="aff" rid="a42">42</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-2559-797X</contrib-id>
+<name><surname>Cavany</surname><given-names>Sean</given-names></name>
+<xref ref-type="aff" rid="a43">43</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-9915-8056</contrib-id>
+<name><surname>Espa&#x00F1;a</surname><given-names>Guido</given-names></name>
+<xref ref-type="aff" rid="a43">43</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Moore</surname><given-names>Sean</given-names></name>
+<xref ref-type="aff" rid="a43">43</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-1773-9533</contrib-id>
+<name><surname>Oidtman</surname><given-names>Rachel</given-names></name>
+<xref ref-type="aff" rid="a43">43</xref>
+<xref ref-type="aff" rid="a44">44</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-7518-4014</contrib-id>
+<name><surname>Perkins</surname><given-names>Alex</given-names></name>
+<xref ref-type="aff" rid="a43">43</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-4681-091X</contrib-id>
+<name><surname>Osthus</surname><given-names>Dave</given-names></name>
+<xref ref-type="aff" rid="a45">45</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-9778-570X</contrib-id>
+<name><surname>Castro</surname><given-names>Lauren</given-names></name>
+<xref ref-type="aff" rid="a45">45</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0001-5500-8120</contrib-id>
+<name><surname>Fairchild</surname><given-names>Geoffrey</given-names></name>
+<xref ref-type="aff" rid="a45">45</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Michaud</surname><given-names>Isaac</given-names></name>
+<xref ref-type="aff" rid="a45">45</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-4902-1756</contrib-id>
+<name><surname>Karlen</surname><given-names>Dean</given-names></name>
+<xref ref-type="aff" rid="a46">46</xref>
+<xref ref-type="aff" rid="a47">47</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-4156-9637</contrib-id>
+<name><surname>Lee</surname><given-names>Elizabeth C</given-names></name>
+<xref ref-type="aff" rid="a48">48</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Dent</surname><given-names>Juan</given-names></name>
+<xref ref-type="aff" rid="a48">48</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-2319-5010</contrib-id>
+<name><surname>Grantz</surname><given-names>Kyra H</given-names></name>
+<xref ref-type="aff" rid="a48">48</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Kaminsky</surname><given-names>Joshua</given-names></name>
+<xref ref-type="aff" rid="a48">48</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Kaminsky</surname><given-names>Kathryn</given-names></name>
+<xref ref-type="aff" rid="a9">9</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-8526-3007</contrib-id>
+<name><surname>Keegan</surname><given-names>Lindsay T</given-names></name>
+<xref ref-type="aff" rid="a49">49</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-2948-630X</contrib-id>
+<name><surname>Lauer</surname><given-names>Stephen A</given-names></name>
+<xref ref-type="aff" rid="a48">48</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-2677-6574</contrib-id>
+<name><surname>Lemaitre</surname><given-names>Joseph C</given-names></name>
+<xref ref-type="aff" rid="a50">50</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-9741-8109</contrib-id>
+<name><surname>Lessler</surname><given-names>Justin</given-names></name>
+<xref ref-type="aff" rid="a48">48</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-5315-7568</contrib-id>
+<name><surname>Meredith</surname><given-names>Hannah R</given-names></name>
+<xref ref-type="aff" rid="a48">48</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-3909-2048</contrib-id>
+<name><surname>Perez-Saez</surname><given-names>Javier</given-names></name>
+<xref ref-type="aff" rid="a48">48</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Shah</surname><given-names>Sam</given-names></name>
+<xref ref-type="aff" rid="a9">9</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Smith</surname><given-names>Claire P</given-names></name>
+<xref ref-type="aff" rid="a48">48</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-0538-0607</contrib-id>
+<name><surname>Truelove</surname><given-names>Shaun A</given-names></name>
+<xref ref-type="aff" rid="a48">48</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Wills</surname><given-names>Josh</given-names></name>
+<xref ref-type="aff" rid="a9">9</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Kinsey</surname><given-names>Matt</given-names></name>
+<xref ref-type="aff" rid="a51">51</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Obrecht</surname><given-names>RF</given-names></name>
+<xref ref-type="aff" rid="a51">51</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Tallaksen</surname><given-names>Katharine</given-names></name>
+<xref ref-type="aff" rid="a51">51</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Burant</surname><given-names>John C</given-names></name>
+<xref ref-type="aff" rid="a9">9</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0001-8432-9986</contrib-id>
+<name><surname>Wang</surname><given-names>Lily</given-names></name>
+<xref ref-type="aff" rid="a8">8</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-4707-0933</contrib-id>
+<name><surname>Gao</surname><given-names>Lei</given-names></name>
+<xref ref-type="aff" rid="a8">8</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-8052-7608</contrib-id>
+<name><surname>Gu</surname><given-names>Zhiling</given-names></name>
+<xref ref-type="aff" rid="a8">8</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0001-7784-0516</contrib-id>
+<name><surname>Kim</surname><given-names>Myungjin</given-names></name>
+<xref ref-type="aff" rid="a8">8</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Li</surname><given-names>Xinyi</given-names></name>
+<xref ref-type="aff" rid="a52">52</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Wang</surname><given-names>Guannan</given-names></name>
+<xref ref-type="aff" rid="a53">53</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-4861-2658</contrib-id>
+<name><surname>Wang</surname><given-names>Yueying</given-names></name>
+<xref ref-type="aff" rid="a8">8</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-0271-5726</contrib-id>
+<name><surname>Yu</surname><given-names>Shan</given-names></name>
+<xref ref-type="aff" rid="a54">54</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Reiner</surname><given-names>Robert C</given-names></name>
+<xref ref-type="aff" rid="a20">20</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Barber</surname><given-names>Ryan</given-names></name>
+<xref ref-type="aff" rid="a20">20</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Gaikedu</surname><given-names>Emmanuela</given-names></name>
+<xref ref-type="aff" rid="a20">20</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Hay</surname><given-names>Simon</given-names></name>
+<xref ref-type="aff" rid="a20">20</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Lim</surname><given-names>Steve</given-names></name>
+<xref ref-type="aff" rid="a20">20</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Murray</surname><given-names>Chris</given-names></name>
+<xref ref-type="aff" rid="a20">20</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Pigott</surname><given-names>David</given-names></name>
+<xref ref-type="aff" rid="a20">20</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-3252-455X</contrib-id>
+<name><surname>Prakash</surname><given-names>B Aditya</given-names></name>
+<xref ref-type="aff" rid="a55">55</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0001-8409-8073</contrib-id>
+<name><surname>Adhikari</surname><given-names>Bijaya</given-names></name>
+<xref ref-type="aff" rid="a55">55</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Cui</surname><given-names>Jiaming</given-names></name>
+<xref ref-type="aff" rid="a55">55</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-4313-9913</contrib-id>
+<name><surname>Rodr&#x00ED;guez</surname><given-names>Alexander</given-names></name>
+<xref ref-type="aff" rid="a55">55</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-5460-0955</contrib-id>
+<name><surname>Tabassum</surname><given-names>Anika</given-names></name>
+<xref ref-type="aff" rid="a55">55</xref>
+<xref ref-type="aff" rid="a56">56</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Xie</surname><given-names>Jiajia</given-names></name>
+<xref ref-type="aff" rid="a55">55</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-2686-546X</contrib-id>
+<name><surname>Keskinocak</surname><given-names>Pinar</given-names></name>
+<xref ref-type="aff" rid="a55">55</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Asplund</surname><given-names>John</given-names></name>
+<xref ref-type="aff" rid="a57">57</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-6345-2229</contrib-id>
+<name><surname>Baxter</surname><given-names>Arden</given-names></name>
+<xref ref-type="aff" rid="a55">55</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-2431-3864</contrib-id>
+<name><surname>Oruc</surname><given-names>Buse Eylul</given-names></name>
+<xref ref-type="aff" rid="a55">55</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Serban</surname><given-names>Nicoleta</given-names></name>
+<xref ref-type="aff" rid="a55">55</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Arik</surname><given-names>Sercan O</given-names></name>
+<xref ref-type="aff" rid="a58">58</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Dusenberry</surname><given-names>Mike</given-names></name>
+<xref ref-type="aff" rid="a58">58</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Epshteyn</surname><given-names>Arkady</given-names></name>
+<xref ref-type="aff" rid="a58">58</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Kanal</surname><given-names>Elli</given-names></name>
+<xref ref-type="aff" rid="a58">58</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Le</surname><given-names>Long T</given-names></name>
+<xref ref-type="aff" rid="a58">58</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Li</surname><given-names>Chun-Liang</given-names></name>
+<xref ref-type="aff" rid="a58">58</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Pfister</surname><given-names>Tomas</given-names></name>
+<xref ref-type="aff" rid="a58">58</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Sava</surname><given-names>Dario</given-names></name>
+<xref ref-type="aff" rid="a58">58</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Sinha</surname><given-names>Rajarishi</given-names></name>
+<xref ref-type="aff" rid="a58">58</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Tsai</surname><given-names>Thomas</given-names></name>
+<xref ref-type="aff" rid="a59">59</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Yoder</surname><given-names>Nate</given-names></name>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Yoon</surname><given-names>Jinsung</given-names></name>
+<xref ref-type="aff" rid="a58">58</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Zhang</surname><given-names>Leyou</given-names></name>
+<xref ref-type="aff" rid="a58">58</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Abbott</surname><given-names>Sam</given-names></name>
+<xref ref-type="aff" rid="a60">60</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Bosse</surname><given-names>Nikos I</given-names></name>
+<xref ref-type="aff" rid="a60">60</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Funk</surname><given-names>Sebastian</given-names></name>
+<xref ref-type="aff" rid="a60">60</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Hellewel</surname><given-names>Joel</given-names></name>
+<xref ref-type="aff" rid="a60">60</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Meakin</surname><given-names>Sophie R</given-names></name>
+<xref ref-type="aff" rid="a60">60</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Munday</surname><given-names>James D</given-names></name>
+<xref ref-type="aff" rid="a60">60</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Sherratt</surname><given-names>Katherine</given-names></name>
+<xref ref-type="aff" rid="a60">60</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Zhou</surname><given-names>Mingyuan</given-names></name>
+<xref ref-type="aff" rid="a11">11</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Kalantari</surname><given-names>Rahi</given-names></name>
+<xref ref-type="aff" rid="a11">11</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0001-8349-3151</contrib-id>
+<name><surname>Yamana</surname><given-names>Teresa K</given-names></name>
+<xref ref-type="aff" rid="a61">61</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-7072-2995</contrib-id>
+<name><surname>Pei</surname><given-names>Sen</given-names></name>
+<xref ref-type="aff" rid="a61">61</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Shaman</surname><given-names>Jeffrey</given-names></name>
+<xref ref-type="aff" rid="a61">61</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Ayer</surname><given-names>Turgay</given-names></name>
+<xref ref-type="aff" rid="a55">55</xref>
+<xref ref-type="aff" rid="a62">62</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Adee</surname><given-names>Madeline</given-names></name>
+<xref ref-type="aff" rid="a63">63</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Chhatwal</surname><given-names>Jagpreet</given-names></name>
+<xref ref-type="aff" rid="a63">63</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Dalgic</surname><given-names>Ozden O</given-names></name>
+<xref ref-type="aff" rid="a64">64</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Ladd</surname><given-names>Mary A</given-names></name>
+<xref ref-type="aff" rid="a63">63</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Linas</surname><given-names>Benjamin P</given-names></name>
+<xref ref-type="aff" rid="a65">65</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Mueller</surname><given-names>Peter</given-names></name>
+<xref ref-type="aff" rid="a63">63</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Xiao</surname><given-names>Jade</given-names></name>
+<xref ref-type="aff" rid="a55">55</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-2456-4834</contrib-id>
+<name><surname>Li</surname><given-names>Michael L</given-names></name>
+<xref ref-type="aff" rid="a39">39</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Bertsimas</surname><given-names>Dimitris</given-names></name>
+<xref ref-type="aff" rid="a40">40</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-8208-3035</contrib-id>
+<name><surname>Lami</surname><given-names>Omar Skali</given-names></name>
+<xref ref-type="aff" rid="a39">39</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Soni</surname><given-names>Saksham</given-names></name>
+<xref ref-type="aff" rid="a39">39</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-7871-325X</contrib-id>
+<name><surname>Bouardi</surname><given-names>Hamza Tazi</given-names></name>
+<xref ref-type="aff" rid="a39">39</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Wang</surname><given-names>Yuanjia</given-names></name>
+<xref ref-type="aff" rid="a61">61</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Wang</surname><given-names>Qinxia</given-names></name>
+<xref ref-type="aff" rid="a61">61</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Xie</surname><given-names>Shanghong</given-names></name>
+<xref ref-type="aff" rid="a61">61</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Zeng</surname><given-names>Donglin</given-names></name>
+<xref ref-type="aff" rid="a66">66</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Green</surname><given-names>Alden</given-names></name>
+<xref ref-type="aff" rid="a67">67</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Bien</surname><given-names>Jacob</given-names></name>
+<xref ref-type="aff" rid="a14">14</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Hu</surname><given-names>Addison J</given-names></name>
+<xref ref-type="aff" rid="a67">67</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Jahja</surname><given-names>Maria</given-names></name>
+<xref ref-type="aff" rid="a67">67</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Narasimhan</surname><given-names>Balasubramanian</given-names></name>
+<xref ref-type="aff" rid="a68">68</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Rajanala</surname><given-names>Samyak</given-names></name>
+<xref ref-type="aff" rid="a68">68</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Rumack</surname><given-names>Aaron</given-names></name>
+<xref ref-type="aff" rid="a67">67</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Simon</surname><given-names>Noah</given-names></name>
+<xref ref-type="aff" rid="a20">20</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Tibshirani</surname><given-names>Ryan</given-names></name>
+<xref ref-type="aff" rid="a67">67</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Tibshirani</surname><given-names>Rob</given-names></name>
+<xref ref-type="aff" rid="a68">68</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Ventura</surname><given-names>Valerie</given-names></name>
+<xref ref-type="aff" rid="a63">63</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Wasserman</surname><given-names>Larry</given-names></name>
+<xref ref-type="aff" rid="a63">63</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-4748-683X</contrib-id>
+<name><surname>O&#x2019;Dea</surname><given-names>Eamon B</given-names></name>
+<xref ref-type="aff" rid="a69">69</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-4646-1235</contrib-id>
+<name><surname>Drake</surname><given-names>John M</given-names></name>
+<xref ref-type="aff" rid="a69">69</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Pagano</surname><given-names>Robert</given-names></name>
+<xref ref-type="aff" rid="a9">9</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0001-6130-8189</contrib-id>
+<name><surname>Walker</surname><given-names>Jo W</given-names></name>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-4699-8040</contrib-id>
+<name><surname>Slayton</surname><given-names>Rachel B</given-names></name>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-5090-7722</contrib-id>
+<name><surname>Johansson</surname><given-names>Michael</given-names></name>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0001-5108-8311</contrib-id>
+<name><surname>Biggerstaff</surname><given-names>Matthew</given-names></name>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author" corresp="yes">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-3503-9899</contrib-id>
+<name><surname>Reich</surname><given-names>Nicholas G</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="corresp" rid="cor1">&#x002A;</xref>
+</contrib>
+<aff id="a1"><label>1</label><institution>University of Massachusetts</institution>, Amherst</aff>
+<aff id="a2"><label>2</label><institution>Centers for Disease Control and Prevention</institution></aff>
+<aff id="a3"><label>3</label><institution>Chair of Econometrics and Statistics, Karlsruhe Institute of Technology</institution></aff>
+<aff id="a4"><label>4</label><institution>Computational Statistics Group, Heidelberg Institute for Theoretical Studies</institution></aff>
+<aff id="a5"><label>5</label><institution>In-Q-Tel</institution></aff>
+<aff id="a6"><label>6</label><institution>Karlsruhe Institute of Technology (KIT), Institute for Stochastics</institution></aff>
+<aff id="a7"><label>7</label><institution>Institute of Mathematical Statistics and Actuarial Science, University of Bern</institution></aff>
+<aff id="a8"><label>8</label><institution>Iowa State University</institution></aff>
+<aff id="a9"><label>9</label><institution>No affiliation</institution></aff>
+<aff id="a10"><label>10</label><institution>Wadhwani Institute of Artificial Intelligence</institution></aff>
+<aff id="a11"><label>11</label><institution>The University of Texas at Austin</institution></aff>
+<aff id="a12"><label>12</label><institution>Texas Advanced Computing Center</institution></aff>
+<aff id="a13"><label>13</label><institution>Santa Fe Institute</institution></aff>
+<aff id="a14"><label>14</label><institution>University of Southern</institution> California</aff>
+<aff id="a15"><label>15</label><institution>US Army Engineer Research and Development Center</institution></aff>
+<aff id="a16"><label>16</label><institution>University of Michigan - Ann Arbor</institution></aff>
+<aff id="a17"><label>17</label><institution>Trinity University</institution>, San Antonio</aff>
+<aff id="a18"><label>18</label><institution>University of California</institution>, San Diego</aff>
+<aff id="a19"><label>19</label><institution>Northeastern University</institution></aff>
+<aff id="a20"><label>20</label><institution>University of Washington</institution></aff>
+<aff id="a21"><label>21</label><institution>University of California at Santa Barbara</institution></aff>
+<aff id="a22"><label>22</label><institution>University of California, Merced</institution></aff>
+<aff id="a23"><label>23</label><institution>Jilin University</institution></aff>
+<aff id="a24"><label>24</label><institution>University of Science and Technology of China</institution></aff>
+<aff id="a25"><label>25</label><institution>University of California, Los Angeles</institution></aff>
+<aff id="a26"><label>26</label><institution>University of Arizona</institution></aff>
+<aff id="a27"><label>27</label><institution>Snyder Wilson Consulting, Inc.</institution></aff>
+<aff id="a28"><label>28</label><institution>Construx</institution></aff>
+<aff id="a29"><label>29</label><institution>Rensselaer Polytechnic Institute</institution></aff>
+<aff id="a30"><label>30</label><institution>Brown University</institution></aff>
+<aff id="a31"><label>31</label><institution>Amazon.com Inc</institution></aff>
+<aff id="a32"><label>32</label><institution>Manhasset Secondary School</institution></aff>
+<aff id="a33"><label>33</label><institution>Predictive Science, Inc</institution></aff>
+<aff id="a34"><label>34</label><institution>Imperial College</institution>, London</aff>
+<aff id="a35"><label>35</label><institution>Oliver Wyman</institution></aff>
+<aff id="a36"><label>36</label><institution>Microsoft</institution></aff>
+<aff id="a37"><label>37</label><institution>Laboratory for the Modeling of Biological and Socio-technical Systems, Northeastern University</institution></aff>
+<aff id="a38"><label>38</label><institution>Institute for Scientific Interchange Foundation</institution></aff>
+<aff id="a39"><label>39</label><institution>Operations Research Center, Massachusetts Institute of Technology</institution></aff>
+<aff id="a40"><label>40</label><institution>Sloan School of Management, Massachusetts Institute of Technology</institution></aff>
+<aff id="a41"><label>41</label><institution>Laboratory for Computational Physiology, Massachusetts Institute of Technology</institution></aff>
+<aff id="a42"><label>42</label><institution>River Hill High School</institution></aff>
+<aff id="a43"><label>43</label><institution>University of Notre Dame</institution></aff>
+<aff id="a44"><label>44</label><institution>University of Chicago</institution></aff>
+<aff id="a45"><label>45</label><institution>Los Alamos National Laboratory</institution></aff>
+<aff id="a46"><label>46</label><institution>University of Victoria</institution></aff>
+<aff id="a47"><label>47</label><institution>TRIUMF</institution></aff>
+<aff id="a48"><label>48</label><institution>Johns Hopkins Bloomberg School of Public Health</institution></aff>
+<aff id="a49"><label>49</label><institution>University of Utah</institution></aff>
+<aff id="a50"><label>50</label><institution>&#x00C9;cole Polytechnique F&#x00E9;d&#x00E9;rale de Lausanne</institution></aff>
+<aff id="a51"><label>51</label><institution>Johns Hopkins University Applied Physics Lab</institution></aff>
+<aff id="a52"><label>52</label><institution>Clemson University</institution></aff>
+<aff id="a53"><label>53</label><institution>College of William &#x0026; Mary</institution></aff>
+<aff id="a54"><label>54</label><institution>University of Virginia</institution></aff>
+<aff id="a55"><label>55</label><institution>Georgia Institute of Technology</institution></aff>
+<aff id="a56"><label>56</label><institution>Virginia Tech</institution></aff>
+<aff id="a57"><label>57</label><institution>Metron, Inc</institution></aff>
+<aff id="a58"><label>58</label><institution>Google Cloud</institution></aff>
+<aff id="a59"><label>59</label><institution>Harvard University</institution></aff>
+<aff id="a60"><label>60</label><institution>London School of Hygiene &#x0026; Tropical Medicine</institution></aff>
+<aff id="a61"><label>61</label><institution>Columbia University</institution></aff>
+<aff id="a62"><label>62</label><institution>Emory University Medical School</institution></aff>
+<aff id="a63"><label>63</label><institution>Massachusetts General Hospital</institution></aff>
+<aff id="a64"><label>64</label><institution>Value Analytics Labs</institution></aff>
+<aff id="a65"><label>65</label><institution>Boston University School of Medicine</institution></aff>
+<aff id="a66"><label>66</label><institution>University of North Carolina Chapel Hill</institution></aff>
+<aff id="a67"><label>67</label><institution>Carnegie Mellon University</institution></aff>
+<aff id="a68"><label>68</label><institution>Stanford University</institution></aff>
+<aff id="a69"><label>69</label><institution>University of Georgia</institution></aff>
+</contrib-group>
+<author-notes>
+<corresp id="cor1"><label>&#x002A;</label> Corresponding author; email: <email>nick@umass.edu</email></corresp>
+<fn id="n1"><label>&#x002A;&#x002A;&#x002A;</label><p>The findings and conclusions in this report are those of the authors and do not necessarily represent the views of the Centers for Disease Control and Prevention.</p></fn>
+</author-notes>
+<pub-date pub-type="epub">
+<year>2021</year>
+</pub-date>
+<elocation-id>2021.02.03.21250974</elocation-id>
+<history>
+<date date-type="received">
+<day>03</day>
+<month>2</month>
+<year>2021</year>
+</date>
+<date date-type="rev-recd">
+<day>03</day>
+<month>2</month>
+<year>2021</year>
+</date>
+<date date-type="accepted">
+<day>05</day>
+<month>2</month>
+<year>2021</year>
+</date>
+</history>
+<permissions>
+<copyright-statement>&#x00A9; 2021, Posted by Cold Spring Harbor Laboratory</copyright-statement>
+<copyright-year>2021</copyright-year>
+<license license-type="creative-commons" xlink:href="https://creativecommons.org/publicdomain/zero/1.0/"><license-p>This article is a US Government work. It is not subject to copyright under 17 USC 105 and is also made available for use under a CC0 license</license-p></license>
+</permissions>
+<self-uri xlink:href="21250974.pdf" content-type="pdf" xlink:role="full-text"/>
+<abstract>
+<title>Abstract</title>
+<p>Short-term probabilistic forecasts of the trajectory of the COVID-19 pandemic in the United States have served as a visible and important communication channel between the scientific modeling community and both the general public and decision-makers. Forecasting models provide specific, quantitative, and evaluable predictions that inform short-term decisions such as healthcare staffing needs, school closures, and allocation of medical supplies. In 2020, the COVID-19 Forecast Hub (<ext-link ext-link-type="uri" xlink:href="https://covid19forecasthub.org/">https://covid19forecasthub.org/</ext-link>) collected, disseminated, and synthesized hundreds of thousands of specific predictions from more than 50 different academic, industry, and independent research groups. This manuscript systematically evaluates 23 models that regularly submitted forecasts of reported weekly incident COVID-19 mortality counts in the US at the state and national level. One of these models was a multi-model ensemble that combined all available forecasts each week. The performance of individual models showed high variability across time, geospatial units, and forecast horizons. Half of the models evaluated showed better accuracy than a na&#x00EF;ve baseline model. In combining the forecasts from all teams, the ensemble showed the best overall probabilistic accuracy of any model. Forecast accuracy degraded as models made predictions farther into the future, with probabilistic accuracy at a 20-week horizon more than 5 times worse than when predicting at a 1-week horizon. This project underscores the role that collaboration and active coordination between governmental public health agencies, academic modeling teams, and industry partners can play in developing modern modeling capabilities to support local, state, and federal response to outbreaks.</p>
+</abstract>
+<counts>
+<page-count count="43"/>
+</counts>
+</article-meta>
+<notes>
+<notes notes-type="competing-interest-statement">
+<title>Competing Interest Statement</title><p>AV, MC, and APP report grants from Metabiota Inc outside the submitted work.</p></notes>
+<notes notes-type="financial-disclosure">
+<title>Funding Statement</title><p>For teams that reported receiving funding for their work, we report the sources and disclosures below.
+CMU-TimeSeries: CDC Center of Excellence, gifts from Google and Facebook.
+CU-select: NSF DMS-2027369 and a gift from the Morris-Singer Foundation.
+COVIDhub: This work has been supported by the US Centers for Disease Control and Prevention (1U01IP001122) and the National Institutes of General Medical Sciences (R35GM119582). The content is solely the responsibility of the authors and does not necessarily represent the official views of CDC, NIGMS or the National Institutes of Health. Johannes Bracher was supported by the Helmholtz Foundation via the SIMCARD Information&amp; Data Science Pilot Project. Tilmann Gneiting gratefully acknowledges support by the Klaus Tschira Foundation.
+DDS-NBDS: NSF III-1812699.
+EPIFORECASTS-ENSEMBLE1: Wellcome Trust (210758/Z/18/Z)
+GT_CHHS-COVID19: William W. George Endowment, Virginia C. and Joseph C. Mello Endowments, NSF DGE-1650044, NSF MRI 1828187, research cyberinfrastructure resources and services provided by the Partnership for an Advanced Computing Environment (PACE) at Georgia Tech, and the following benefactors at Georgia Tech: Andrea Laliberte, Joseph C. Mello, Richard Rick E. &amp; Charlene Zalesky, and Claudia &amp; Paul Raines
+GT-DeepCOVID: CDC MInD-Healthcare U01CK000531-Supplement. NSF (Expeditions CCF-1918770, CAREER IIS-2028586, RAPID IIS-2027862, Medium IIS-1955883, NRT DGE-1545362), CDC MInD program, ORNL and funds/computing resources from Georgia Tech and GTRI.
+IHME: This work was supported by the Bill &amp; Melinda Gates Foundation, as well as funding from the state of Washington and the National Science Foundation (award no. FAIN: 2031096).
+IowaStateLW-STEM: Iowa State University Plant Sciences Institute Scholars Program, NSF DMS-1916204, NSF CCF-1934884, Laurence H. Baker Center for Bioinformatics and Biological Statistics.
+JHU_IDD-CovidSP: State of California, US Dept of Health and Human Services, US Dept of Homeland Security, US Office of Foreign Disaster Assistance, Johns Hopkins Health System, Office of the Dean at Johns Hopkins Bloomberg School of Public Health, Johns Hopkins University Modeling and Policy Hub, Centers for Disease Control and Prevention (5U01CK000538-03), University of Utah Immunology, Inflammation, &amp; Infectious Disease Initiative (26798 Seed Grant).
+LANL-GrowthRate: LANL LDRD 20200700ER.
+MOBS-GLEAM_COVID: COVID Supplement CDC-HHS-6U01IP001137-01.
+NotreDame-mobility and NotreDame-FRED: NSF RAPID DEB 2027718
+UA-EpiCovDA: NSF RAPID Grant # 2028401.
+UCSB-ACTS: NSF RAPID IIS 2029626.
+UCSD-NEU: Google Faculty Award, DARPA W31P4Q-21-C-0014, COVID Supplement CDC-HHS-6U01IP001137-01.
+UMass-MechBayes: NIGMS R35GM119582, NSF 1749854.
+UMich-RidgeTfReg: The University of Michigan Physics Department and the University of Michigan Office of Research.</p></notes>
+<notes notes-type="disclosures">
+<title>Author Declarations</title><p>I confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.</p><p>Yes</p><p>The details of the IRB/oversight body that provided approval or exemption for the research described are given below:</p><p>UMass-Amherst IRB</p><p>All necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived.</p><p>Yes</p><p>I understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).</p><p>Yes</p><p>I have followed all appropriate research reporting guidelines and uploaded the relevant EQUATOR Network research reporting checklist(s) and other pertinent material as supplementary files, if applicable.</p><p>Yes</p></notes>
+</notes>
+</front>
+<body>
+<sec id="s1">
+<title>Introduction</title>
+<p>Effective responses to infectious disease pandemics require federal, state, and local leaders to make timely decisions in order to reduce disease transmission. During the 2020 SARS-CoV-2 pandemic, surveillance data on the number of cases, hospitalizations, and disease-associated deaths were used to inform response policies.<sup><xref ref-type="bibr" rid="c1">1</xref>,<xref ref-type="bibr" rid="c2">2</xref></sup> While these data provide insight into recent changes in the outbreak, they only present a partial, time-lagged picture of transmission and do not show if and when changes may occur in the future.</p>
+<p>Anticipating outbreak change is critical for effective resource allocation and response. Forecasting models provide specific, quantitative, evaluable, and often probabilistic predictions about the epidemic trajectory for the near-term future. Typically provided for a horizon of up to 1 or 2 months, forecasts can inform operational decisions about allocation of healthcare supplies (e.g., personal protective equipment, therapeutics, and vaccines), staffing needs, or school closures.<sup><xref ref-type="bibr" rid="c3">3</xref></sup> Providing prediction uncertainty is critical for such decisions, as it allows policy makers to assess the most likely and plausible worst-case scenarios.<sup><xref ref-type="bibr" rid="c3">3</xref></sup> Other modeling approaches that focus on the recent past or distant future also support epidemic decision-making in real-time.<sup><xref ref-type="bibr" rid="c4">4</xref>&#x2013;<xref ref-type="bibr" rid="c6">6</xref></sup> Some &#x201C;nowcasting&#x201D; models estimate current trends of an outbreak (e.g., values of the effective reproduction number) and can provide situational awareness about recent trends and changes in transmission, especially in the context of data that are incomplete from recent weeks.<sup><xref ref-type="bibr" rid="c7">7</xref>&#x2013;<xref ref-type="bibr" rid="c9">9</xref></sup> Additionally, models that consider counterfactual scenarios provide quantitative information about hypothetical futures that might arise under different actionable options, sometimes at much longer horizons (e.g., months to years).<sup><xref ref-type="bibr" rid="c10">10</xref>&#x2013;<xref ref-type="bibr" rid="c12">12</xref></sup> These projections typically are not evaluable against actual observed data in the same way that forecasts are due to a lack of &#x201C;ground truth&#x201D; data from counterfactual futures. However, projections can provide valuable information about what outcomes might occur under different interventions or treatment regimes, and they can help inform long-term resource planning. Forecasts, therefore, occupy a unique niche in infectious disease modeling, as they provide opportunities to concretely evaluate the accuracy of different approaches, often in real-time.</p>
+<p>With a great need to understand how the COVID-19 epidemic would progress over time in the United States, academic research groups, government agencies, industry groups, and individuals produced COVID-19 forecasts at an unprecedented scale in 2020. Publicly accessible forecasts reflected varied approaches, data sources, and assumptions. For example, forecasts were created from statistical or machine learning models, mechanistic models that incorporated disease transmission dynamics, and combinations of approaches. Some models had mechanisms that allowed them to incorporate an estimated impact of current or potential future policies on human behavior and COVID-19 transmission. Other models assumed that currently observed trends would continue into the future without considering external data on policies in different jurisdictions.</p>
+<p>To leverage these forecasts for the COVID-19 response, the United States Centers for Disease Control and Prevention (CDC) partnered with an academic research lab at the University of Massachusetts Amherst to create the COVID-19 Forecast Hub (<ext-link ext-link-type="uri" xlink:href="https://covid19forecasthub.org/">https://covid19forecasthub.org/</ext-link>).<sup><xref ref-type="bibr" rid="c13">13</xref></sup> Launched in April 2020, the Forecast Hub collected and archived forecasts. From these, a multi-model ensemble was developed, published weekly in real-time, and used by CDC in official public communications about the pandemic (<ext-link ext-link-type="uri" xlink:href="https://www.cdc.gov/coronavirus/2019-ncov/covid-data/mathematical-modeling.html">https://www.cdc.gov/coronavirus/2019-ncov/covid-data/mathematical-modeling.html</ext-link>).</p>
+<p>Ensemble approaches have previously demonstrated superior performance compared with single models in forecasting influenza,<sup><xref ref-type="bibr" rid="c10">10</xref>,<xref ref-type="bibr" rid="c14">14</xref>,<xref ref-type="bibr" rid="c15">15</xref></sup> Ebola,<sup><xref ref-type="bibr" rid="c16">16</xref></sup> and dengue fever outbreaks.<sup><xref ref-type="bibr" rid="c17">17</xref></sup> Preliminary research suggested that COVID-19 ensemble forecasts were also more accurate and precise than individual models in the early phases of the pandemic.<sup><xref ref-type="bibr" rid="c18">18</xref>,<xref ref-type="bibr" rid="c19">19</xref></sup> As has been seen in research across disciplines, ensemble approaches are able to draw from and incorporate the information from multiple forecasts, each with their own strengths and limitations, to create highly accurate predictions with well-calibrated uncertainty.<sup><xref ref-type="bibr" rid="c20">20</xref>&#x2013;<xref ref-type="bibr" rid="c25">25</xref></sup> Additionally, synthesizing multiple models removes the risk of over-reliance on any single approach for accuracy or stability. Individual models often rely on a small number of modelers (sometimes only one) and may be subject to unplanned delays. Collaborative efforts with multiple models as inputs are less susceptible to unanticipated interruptions.</p>
+<p>While forecasts provide important information to policy makers for the COVID-19 response, predicting the trajectory of a novel pathogen outbreak is subject to many challenges. First, due to the role of human behavior and decision-making in outbreak trajectories, epidemic forecasts must account for both biological and societal trends. Furthermore, epidemic forecasts may play a role in a &#x201C;feedback loop&#x201D; when and if the forecasts themselves have the ability to impact future societal or individual decision-making.<sup><xref ref-type="bibr" rid="c26">26</xref></sup> Moreover, there is inherent uncertainty in many critical parameters needed to model future trends in transmission, and this uncertainty grows quickly as models try to look further into the future. There are also a host of data irregularities, especially in the early stages of the pandemic. Models trained using historical data may lack sufficient characterization of all underlying uncertainties.<sup><xref ref-type="bibr" rid="c27">27</xref></sup></p>
+<p>Hence, it is important to systematically and rigorously evaluate COVID-19 forecasts designed to predict real-time changes to the outbreak in order to identify strengths and weaknesses of different approaches.</p>
+<p>In this analysis, we sought to evaluate the accuracy and precision of individual and ensemble probabilistic forecasts submitted to the Forecast Hub from mid-May through late December 2020, focusing on forecasts of weekly incident deaths. Understanding what leads to more or less accurate and well-calibrated forecasts can inform their development and their use within outbreak science and public policy.</p>
+</sec>
+<sec id="s2">
+<title>Methods</title>
+<sec id="s2a">
+<title>Surveillance Data</title>
+<p>During the COVID-19 pandemic in the US, data on cases and deaths were collected by state and local governmental health agencies and aggregated into standardized, sharable formats by third-party data tracking systems. Early in the pandemic, the Johns Hopkins Center for Systems Science and Engineering (CSSE) developed a publicly available data tracking system and dashboard that was widely used.<sup><xref ref-type="bibr" rid="c28">28</xref></sup> CSSE collected daily data on cumulative reported deaths due to COVID-19 at the county, state, territorial, and national levels and made these data available in a standardized format beginning in March 2020. Incident deaths were inferred from this time-series as the difference in successive reports of cumulative deaths. Throughout the real-time forecasting exercise described in this paper, the Forecast Hub encouraged teams to train their models on CSSE data.</p>
+<p>Like data from other public health systems, the CSSE data occasionally exhibited irregularities due to reporting anomalies. For instance, if a public health agency changed the criteria used to classify COVID-19 cases or deaths, it could have resulted in a large number of cases entered in a single day, a negative difference in cumulative counts, or a revision upward or downward in previously reported values. CSSE made attempts to redistribute large &#x201C;backlogs&#x201D; of data to previous dates, but in some cases, these anomalous observations were left in the final dataset (Supplemental Figure 1). In settings where the true dates of deaths were known, these observations could be re-distributed over previous time points, thus adjusting the previous data. In settings where the true dates were not known, the data reflect dramatically inflated observations from the week in which the backlogs were reported. These updates were made available in a public GitHub repository (<ext-link ext-link-type="uri" xlink:href="https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data#data-modification-records">https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data#data-modification-records</ext-link>).</p>
+<fig id="fig1" position="float" fig-type="figure">
+<label>Figure 1:</label>
+<caption><p>Overview of the evaluation period included in the paper. (A) The reported number of incident weekly COVID-19 deaths by state or territory, per JHU CSSE reports. Locations are sorted by the maximum value of incident deaths in one week. (B) The time-series of weekly incident deaths at the national level overlaid with one example forecast from the COVIDhub-ensemble model. Submitted forecasts provide quantiles that specify prediction intervals at different levels of uncertainty. (C) The number of models submitting forecasts for incident deaths each week. Weeks in which the COVIDhub-ensemble was submitted are shown with a red asterisk.</p></caption>
+<graphic xlink:href="21250974v1_fig1.tif"/>
+</fig>
+</sec>
+<sec id="s2b">
+<title>Forecast Format</title>
+<p>Research teams from around the world developed forecasting models and submitted their predictions to the COVID-19 Forecast Hub, a central repository that collected forecasts of the COVID-19 pandemic in the US beginning in April 2020.<sup><xref ref-type="bibr" rid="c29">29</xref></sup> Any team was permitted to submit a model as long as they provided data in the specified format and included a description of the methods used to generate the forecasts. The descriptions could be updated at any time if a team adopted new methods. The deadline for weekly forecast submission was 6:00 PM ET each Monday.</p>
+<p>Submitted forecasts could include predictions for any of the following targets: COVID-19 weekly cumulative deaths, weekly incident deaths, weekly incident cases, and daily incident hospitalizations. Incident death forecasts, the focus of this evaluation, could include predictions for the national level, for any of the 50 states and for American Samoa, the District of Columbia, Guam, the Northern Mariana Islands, Puerto Rico, and the US Virgin Islands. Incident death forecasts could be submitted with predictions for time periods that were during 1-20 weeks after the week in which a forecast was submitted.</p>
+<p>Weekly values were defined and aggregated based on daily totals from Sunday through Saturday, according to the standard definition of epidemiological weeks (EW) used by the CDC.<sup><xref ref-type="bibr" rid="c30">30</xref></sup> As an example of a forecast and the corresponding observation, forecasts submitted during Tuesday, October 6 (day 3 of EW41) and Monday, October 12 (day 2 of EW42) contained a &#x201C;1-week ahead&#x201D; forecast of incident deaths that corresponded to the total number of deaths observed in EW42, a 2-week ahead forecast corresponded to the total number of deaths in week EW43, etc&#x2026; In this paper, we refer to the &#x201C;forecast week&#x201D; of a submitted forecast as the week corresponding to a &#x201C;0-week ahead&#x201D; target. In the example above, the forecast week would be EW41.</p>
+<p>A prediction for a given target (e.g., &#x201C;1-week ahead incident deaths&#x201D;) and location (e.g., &#x201C;California&#x201D;) was specified by one or both of a point forecast (a single number representing the prediction of the eventual outcome) and a probabilistic forecast. Probabilistic forecasts were represented by a set of 23 quantiles at levels 0.01, 0.025, 0.05, 0.10, 0.15, &#x2026;, 0.95, 0.975, 0.99.</p>
+</sec>
+<sec id="s2c">
+<title>Forecast model eligibility</title>
+<p>Because forecasts were made for non-stationary processes in locations with different population sizes and scales of observed deaths, forecast accuracy measures that depend on the scale of the observed data are not comparable across time without appropriate normalization. To create a set of standardized comparisons between forecasts, we only included models in our analyses that met specific inclusion criteria. For the 28 weeks beginning in EW20 and ending with EW47, a model&#x2019;s weekly submission was determined to be &#x201C;eligible&#x201D; for evaluation if the forecast</p>
+<list list-type="order">
+<list-item><p>was designated as the &#x201C;primary&#x201D; forecast model from a team (groups who submitted multiple parameterizations of similar models were asked to designate prospectively a single model as their scored forecast);</p></list-item>
+<list-item><p>contained predictions for at least 25 out of 51 focal locations (national level and states);</p></list-item>
+<list-item><p>contained predictions for each of the 1-through 4-week ahead targets for incident deaths; and</p></list-item>
+<list-item><p>contained a complete set of quantiles for all predictions.</p></list-item>
+</list>
+<p>Based on the eligibility criteria, we compared 23 models that had at least 19 eligible weeks during this time period (<xref rid="fig1" ref-type="fig">Figure 1c</xref>).</p>
+</sec>
+<sec id="s2d">
+<title>Forecast evaluation period</title>
+<p>Forecasts were evaluated based on submissions in a continuous 31-week period starting in mid-May and ending in mid-December (EW20 &#x2013; EW50, <xref rid="fig1" ref-type="fig">Figure 1</xref>). Forecasts were scored using CSSE data available as of January 3, 2021. We did not evaluate forecasts on data first published in the 2 weeks prior to this date due to possible revisions to the data. During the last 3 weeks of this evaluation period (EW48 &#x2013; EW50), all 1-through 4-week ahead forecasts could not be evaluated based on recent data, therefore, these weeks were not included in determining eligibility criteria (<xref ref-type="fig" rid="figS2">Supplemental Figure 2</xref>).</p>
+<fig id="fig2" position="float" fig-type="figure">
+<label>Figure 2:</label>
+<caption><p>A comparison of each models&#x2019; distribution of standardized rank of weighted interval scores (WIS) for each location-target-week observation. A standardized rank of 1 indicates that the model had the best WIS for that particular location, target, and week and a value of 0 indicates it had the worst WIS. Intermediate values indicate rankings relative to the best and worst model. The density plots show smoothly interpolated distributions of the standardized ranks achieved by each model for every observation that model forecasted. The quartiles of each models&#x2019; distribution of standardized ranks are shown in different colors: yellow indicates the top quarter of the distribution and purple indicates the region containing the bottom quarter of the distribution. The models are ordered by the first quartile of the distribution, with models that rarely had a low rank near the top. The COVIDhub-ensemble was the only model that ranked in the top half of all models (standardized rank &#x003E; 0.5) for over 75&#x0025; of the observations it forecasted. Some models show a bimodal distribution, with one mode in the yellow region and another in the purple region. In these cases, the models frequently made overconfident predictions (<xref rid="tbl2" ref-type="table">Table 2</xref>, <xref ref-type="fig" rid="figS3">Supplemental Figure 3</xref>) resulting in either strong scores for being very close to the truth or harsh penalties for being far from the truth. Observations in this figure included predictions for the national level, all 50 states, and 5 US territories. If models were equally accurate, all distributions would be approximately uniform.</p></caption>
+<graphic xlink:href="21250974v1_fig2.tif"/>
+</fig>
+</sec>
+<sec id="s2e">
+<title>Forecast locations</title>
+<p>Forecasts were submitted for 57 locations including all 50 states, 6 jurisdictions and territories (American Samoa, Guam, the Northern Mariana Islands, US Virgin Islands, Puerto Rico, and the District of Columbia), and a US national level forecast. Because American Samoa and the Northern Mariana Islands had no reported COVID-19 deaths during the evaluation period, we excluded these locations from our analysis.</p>
+<table-wrap id="tbl1" orientation="portrait" position="float">
+<label>Table 1:</label>
+<caption><p>List of models evaluated, including sources for case, hospitalization, death, demographic and mobility data when used as inputs for the given model. There were 23 models from 22 teams whose models were evaluated. The COVIDhub team submitted two models including the baseline model and the ensemble model. A brief description is included for each model, with a reference where available. The last column indicates whether the model made assumptions about how and whether social distancing measures were assumed to change during the period for which forecasts were made.</p></caption>
+<graphic xlink:href="21250974v1_tbl1.tif"/>
+<graphic xlink:href="21250974v1_tbl1a.tif"/>
+<graphic xlink:href="21250974v1_tbl1b.tif"/>
+</table-wrap>
+<table-wrap id="tbl2" orientation="portrait" position="float">
+<label>Table 2:</label>
+<caption><p>Summary accuracy metrics for all submitted forecasts, aggregated across locations (50 states only), submission week, and 1-through 4-week forecast horizons. The &#x2018;# forecasts&#x2019; column refers to the number of individual location-target-week combinations (largest number in bold). Empirical prediction interval (PI) coverage rates calculate the fraction of times the 50&#x0025; or 95&#x0025; PIs covered the eventually observed value. If the model is approximately well calibrated, the values in these columns should be close to 0.50 and 0.95, respectively (values within 5&#x0025; coverage of the nominal rates are highlighted in boldface text). The &#x201C;relative WIS&#x201D; and &#x201C;relative MAE&#x201D; columns show the relative mean weighted interval score (WIS) and relative mean absolute error (MAE), which compare each model to the baseline model while adjusting for the difficulty of the forecasts the given model made for state-level forecasts (see Methods). The baseline model is defined to have a relative score of 1. Models with relative WIS or MAE values lower than 1 had &#x201C;better&#x201D; accuracy relative to the baseline model (best score in bold).</p></caption>
+<graphic xlink:href="21250974v1_tbl2.tif"/>
+</table-wrap>
+<p>In analyses where measures of forecast skill were aggregated across locations, we typically only included the 50 states in the analysis. Other territories and jurisdictions were not included in aggregations because they had relatively few deaths, and very few teams made forecasts for some of these locations (for example, only 8 models submitted forecasts for the Virgin Islands). Including these territories in raw score aggregations would favor models that had forecasted for these regions because models were often accurate in predicting low or zero deaths each week, thereby reducing their average error. The national level forecasts were not included in the aggregated scores because the large magnitude of scores at the national level strongly influences the averages. However, in analyses where scores were stratified by location, we included forecasts for all US states, included territories, and the national level.</p>
+<p>Our evaluation used the CSSE COVID-19 surveillance data as ground truth when assessing forecast performance. Because of the potential impact COVID-19 surveillance data reporting anomalies could have on forecast evaluation, we did not score observations when ground-truth data showed negative values for weekly incident deaths (due to changes in reporting practices from state/local health agencies, e.g., removing &#x201C;probable&#x201D; COVID-19 deaths from cumulative counts). This occurred one time, in New Jersey during EW35.</p>
+<p>Occasionally, large retrospectively identified &#x201C;backlogs&#x201D; of deaths were reported by CSSE on a single day for a given state. Examination of data before and after revision showed that most revisions to weekly observations were small. For this reason, locations and dates affected by such backlog reporting were not removed from evaluation (Supplemental Figure 1).</p>
+</sec>
+<sec id="s2f">
+<title>Forecast models</title>
+<p>We compared 23 models that submitted eligible forecasts for at least 19 of the 28 weeks considered in the model eligibility period (<xref rid="fig1" ref-type="fig">Figure 1</xref>). Teams that submitted to the COVID-19 Forecast Hub used a wide variety of modeling approaches and input data (<xref rid="tbl1" ref-type="table">Table 1</xref>, <xref ref-type="table" rid="tblS1">Supplemental Table 1</xref>). Two of the evaluated models are from the COVID-19 Forecast Hub itself: a baseline model and an ensemble model.</p>
+<p>The COVIDhub-baseline model was designed to be a neutral model to provide a simple reference point or comparison for all models. This baseline model forecasted a predictive median incidence equal to the number of reported deaths in the most recent week, with uncertainty around the median based on changes in weekly incidence that were observed in the past of the time series. This predictive distribution was created by collecting, for a particular location, the first differences and their negatives from the previously observed time series (i.e., <italic>y</italic><sub><italic>t</italic></sub> &#x2212; <italic>y</italic><sub><italic>t</italic>&#x2212;1</sub> and &#x2212; (<italic>y</italic><sub><italic>t</italic></sub> &#x2212; <italic>y</italic><sub><italic>t</italic>&#x2212;1</sub>) for all past times <italic>t</italic>). To obtain a smoother distribution of values to sample, we formed a distribution of possible differences based on a piecewise linear approximation to the empirical cumulative distribution function of the observed differences. We then obtained a Monte Carlo approximation of the distribution for incident deaths at forecast horizon <italic>h</italic> by independently sampling 100,000 changes in incidence at each week 1, 2, &#x2026;, <italic>h</italic>, and adding sequences of <italic>h</italic> differences to the most recent observed incident deaths. Quantiles are reported for each horizon, with the median forced to be equal to the last observed value (to adjust for any noise introduced from the sampling process) and the distribution truncated so that it has no negative values.</p>
+<p>The COVIDhub-ensemble model combined forecasts from all models that submitted a full set of 23 quantiles for 1-through 4-week ahead forecasts for incident deaths. The ensemble for incident weekly deaths was first submitted in the week ending June 06, 2020 (EW23). For submission from EW23 through EW29 (week ending July 18, 2020), the ensemble took an equally weighted average of forecasts from all models at each quantile level. For submissions starting in EW30 (week ending July 25, 2020), the ensemble computed the median across forecasts from all models at each quantile level.<sup><xref ref-type="bibr" rid="c29">29</xref></sup> We evaluated more complex ensemble methods, but they did not show consistent improvements in accuracy.<sup><xref ref-type="bibr" rid="c31">31</xref></sup></p>
+</sec>
+<sec id="s2g">
+<title>Forecast Submission Timing</title>
+<p>Because this was a real-time forecasting project, forecasts were occasionally submitted late and/or resubmitted. Fifty-five of the 598 (9&#x0025;) forecast submissions we included in the evaluation were either originally submitted or updated more than 24 hours after the submission deadline. In all of these situations, modeling teams attested publicly (via annotation on the public data repository) to the fact that they were correcting inadvertent errors in the code that produced the forecast. In these limited instances, we evaluated the most recently submitted forecasts.</p>
+</sec>
+<sec id="s2h">
+<title>Evaluation methodology</title>
+<p>We evaluated aggregate forecast skill using a range of metrics that assessed both point and probabilistic accuracy. Metrics were aggregated over time and locations for near-term forecasts (i.e., 4 weeks or less into the future) and, in a single analysis, for longer-term projections (i.e., 5-20 weeks into the future).</p>
+<p>Point forecast error was assessed using the mean absolute error (MAE), defined for a set of observations <italic>y</italic><sub>1:<italic>N</italic></sub> and point predictions <italic>&#x0177;</italic><sub>1:<italic>N</italic></sub> as <inline-formula><alternatives><inline-graphic xlink:href="21250974v1_inline1.gif"/></alternatives></inline-formula>.</p>
+<p>To assess probabilistic forecast accuracy, we used two metrics that are easily computable from the quantile-format for forecasts described above. The weighted interval score (WIS) is a proper score that combines a set of interval scores for probabilistic forecasts that provide quantiles of the predictive forecast distribution. Proper scores promote &#x201C;honest&#x201D; forecasting by not providing forecasters with incentives to report forecasts that differ from their true beliefs about the future.<sup><xref ref-type="bibr" rid="c32">32</xref></sup></p>
+<p>Given quantiles of a forecast distribution <italic>F</italic>, an observation <italic>y</italic> and an uncertainty level &#x03B1;, a single interval score is defined as
+<disp-formula id="ueqn1">
+<alternatives><graphic xlink:href="21250974v1_ueqn1.gif"/></alternatives>
+</disp-formula>
+where 1(&#x00B7;) is the indicator function and <italic>l</italic> and <italic>u</italic> are the <inline-formula><alternatives><inline-graphic xlink:href="21250974v1_inline2.gif"/></alternatives></inline-formula> and <inline-formula><alternatives><inline-graphic xlink:href="21250974v1_inline3.gif"/></alternatives></inline-formula> quantiles of <italic>F</italic> (i.e., the lower and upper end of a central 1 -&#x03B1; prediction interval). Given a set of central prediction intervals, a weighted sum of interval scores can be computed to summarize accuracy across the entire predictive distribution. We define the WIS as a particular linear combination of <italic>K</italic> scores, as
+<disp-formula id="ueqn2">
+<alternatives><graphic xlink:href="21250974v1_ueqn2.gif"/></alternatives>
+</disp-formula>
+where <inline-formula><alternatives><inline-graphic xlink:href="21250974v1_inline4.gif"/></alternatives></inline-formula> for <italic>k</italic> = 1, &#x2026;, <italic>K</italic> and <italic>w</italic><sub>0</sub> = 1/2. In our setting, we used data on <italic>K</italic> = 11 interval scores, for &#x03B1; = 0.02, 0.05, 0.1, 0.2, &#x2026;, 0.9.</p>
+<p>This particular choice of weights for WIS has been shown to be equivalent to the quantile loss function and to approximate the commonly used continuous ranked probability score (CRPS).<sup><xref ref-type="bibr" rid="c33">33</xref></sup> As such, it can be viewed as a distributional generalization of the absolute error, with smaller values of WIS corresponding to forecasts that are more consistent with the observed data.<sup><xref ref-type="bibr" rid="c32">32</xref>,<xref ref-type="bibr" rid="c33">33</xref></sup> WIS can be interpreted as a measure of how close the entire distribution is to the observation, in units on the scale of the observed data. We note that some alternative scores that are commonly used such as CRPS and the logarithmic score cannot be directly calculated if only a set of quantiles of the predictive distribution are available.</p>
+<p>We also used prediction interval coverage, the proportion of times a prediction interval of a certain level covered the true value, to assess the degree to which forecasts accurately characterized uncertainty about future observations. While prediction interval coverage is not a proper score and only assesses one feature of a full predictive distribution, it does provide a clear and interpretable measure with which to assess the calibration of the forecasts. We compute prediction interval coverage for a set of observations (<italic>y</italic><sub>1:<italic>N</italic></sub>) and prediction interval bounds with an uncertainty level 1 &#x2212; &#x03B1;, (<italic>l</italic><sub>&#x03B1;,1:<italic>N</italic></sub>, <italic>u</italic><sub>&#x03B1;,1:<italic>N</italic></sub>) as
+<disp-formula id="ueqn3">
+<alternatives><graphic xlink:href="21250974v1_ueqn3.gif"/></alternatives>
+</disp-formula>
+</p>
+</sec>
+<sec id="s2i">
+<title>Forecast comparisons</title>
+<p>Comparative evaluation of the considered models 1, &#x2026;, <italic>M</italic> is hampered by the fact that not all of them provide forecasts for the same set of locations and time points. To adjust for the level of difficulty of each model&#x2019;s set of forecasts, we computed (a) a standardized rank between 0 and 1 for every forecasted observation relative to other models that made the same forecast, and (b) an adjusted relative WIS and MAE.</p>
+<p>To compute the WIS standardized rank score for model <italic>m</italic> and observation <italic>i</italic> (<italic>sr</italic><sub><italic>m,i</italic></sub>), we computed the number of models that forecasted that observation (<italic>n</italic><sub><italic>i</italic></sub>) and the rank of model <italic>m</italic> among those <italic>n</italic><sub><italic>i</italic></sub> models (<italic>r</italic><sub><italic>m,i</italic></sub>). The model with the best (i.e., lowest) WIS received a rank of 1 and the worst received a rank of <italic>n</italic><sub><italic>i</italic></sub>. The standardized rank then rescaled the ranks to between 0 and 1, where 0 corresponded to the worst rank and 1 to the best,<sup><xref ref-type="bibr" rid="c34">34</xref>&#x2013;<xref ref-type="bibr" rid="c36">36</xref></sup> as follows
+<disp-formula id="ueqn4">
+<alternatives><graphic xlink:href="21250974v1_ueqn4.gif"/></alternatives>
+</disp-formula>
+Evaluating a model&#x2019;s standardized ranks across many observations provides a way to evaluate the relative long-run performance of a given model that is not dependent on the scale of the observed data.</p>
+<p>The following describes a procedure to compute a measure of relative WIS, which evaluates the aggregate performance of one model against the baseline model. To adjust for the relative difficulty of beating the baseline model on the covered set of forecast targets, the chosen measure also takes into account the performance of all other available models. The procedure described below was also used to compute a relative MAE.</p>
+<p>For each pair of models <italic>m</italic> and <italic>m</italic>&#x2032;, we computed the pairwise relative WIS skill
+<disp-formula id="ueqn5">
+<alternatives><graphic xlink:href="21250974v1_ueqn5.gif"/></alternatives>
+</disp-formula>
+based on the available overlap of forecast targets. Subsequently, we computed for each model the geometric mean of the results achieved in the different pairwise comparisons, denoted by
+<disp-formula id="ueqn6">
+<alternatives><graphic xlink:href="21250974v1_ueqn6.gif"/></alternatives>
+</disp-formula>
+Then, &#x03B8;<sub><italic>m</italic></sub> is a measure of the relative skill of model <italic>m</italic> with respect to the set of all other models</p>
+<p>1, &#x2026;, <italic>M</italic>. The central assumption here is that performing well relative to individual models 1, &#x2026;, <italic>M</italic> (not including the baseline) is similarly difficult for each week and location so that no model can gain an advantage by focusing on just some of them. We note that the baseline model is not included in these pairwise comparisons, because the difficulty of beating the baseline model can vary considerably over time and space. As is, &#x03B8;<sub><italic>m</italic></sub> is a comparison to a hypothetical &#x201C;average&#x201D; model. Because we consider a comparison to the baseline model more straightforward to interpret, we rescaled &#x03B8;<sub><italic>m</italic></sub> and reported
+<disp-formula id="ueqn7">
+<alternatives><graphic xlink:href="21250974v1_ueqn7.gif"/></alternatives>
+</disp-formula>
+where &#x03B8;<sub><italic>B</italic></sub> is the geometric mean of the results achieved by the baseline model in pairwise comparisons to all other models. The quantity <inline-formula><alternatives><inline-graphic xlink:href="21250974v1_inline5.gif"/></alternatives></inline-formula> then describes the relative performance of model <italic>m</italic>, adjusted for the difficulty of the forecasts model <italic>m</italic> made, and scaled so the baseline model has a relative performance of 1. For simplicity, we refer to <inline-formula><alternatives><inline-graphic xlink:href="21250974v1_inline6.gif"/></alternatives></inline-formula> as the &#x201C;relative WIS&#x201D; or &#x201C;relative MAE&#x201D; throughout the manuscript. A value of <inline-formula><alternatives><inline-graphic xlink:href="21250974v1_inline7.gif"/></alternatives></inline-formula> means that model <italic>m</italic> is better than the baseline, a value of <inline-formula><alternatives><inline-graphic xlink:href="21250974v1_inline8.gif"/></alternatives></inline-formula> means that the baseline is better.</p>
+</sec>
+<sec id="s2j">
+<title>Data and code availability</title>
+<p>The forecasts from models used in this paper are available from the COVID-19 Forecast Hub GitHub repository (<ext-link ext-link-type="uri" xlink:href="https://github.com/reichlab/covid19-forecast-hub">https://github.com/reichlab/covid19-forecast-hub</ext-link>) <sup><xref ref-type="bibr" rid="c13">13</xref></sup> and the Zoltar forecast archive (<ext-link ext-link-type="uri" xlink:href="https://zoltardata.com/project/44">https://zoltardata.com/project/44</ext-link>). The code used to generate all figures and tables in the manuscript is available in a public repository (<ext-link ext-link-type="uri" xlink:href="https://github.com/reichlab/covid19-forecast-evals">https://github.com/reichlab/covid19-forecast-evals</ext-link>). All analyses were conducted using the R software language (v 4.0.2).<sup><xref ref-type="bibr" rid="c37">37</xref></sup></p>
+</sec>
+</sec>
+<sec id="s3">
+<title>Results</title>
+<sec id="s3a">
+<title>Summary of models</title>
+<p>During the evaluation period, New York, California, New Jersey, Texas, and Pennsylvania had the highest numbers of incident deaths seen in a given week (in descending order, <xref rid="fig1" ref-type="fig">Figure 1A</xref>). This timeframe captured a late summer increase in several locations, but missed the first national increase in early May (<xref rid="fig1" ref-type="fig">Figure 1B</xref>).</p>
+<p>The number of models that submitted forecasts of incident deaths and were screened for eligibility increased from 13 models at the beginning of the evaluation period to as many as 49 in early December (<xref rid="fig1" ref-type="fig">Figure 1C</xref>). Not all models submitted every week, and some models submitted forecasts for varying numbers of locations each week (<xref ref-type="fig" rid="figS2">Supplemental Figure 2</xref>). Twenty-three models met our inclusion criteria (see Methods), yielding 598 submission files with 191,013 specific predictions for unique combinations of targets and locations. Five of these models submitted forecasts for each of the 31 evaluated weeks and seven models submitted forecasts for all 55 locations.</p>
+<p>The submitted forecasts used different data sources and made varying assumptions about future transmission patterns (<xref rid="tbl1" ref-type="table">Table 1</xref>). Twenty-two models incorporated data on prior deaths to create forecasts. This included all models except the COVIDhub-ensemble, which did not directly use surveillance data to create forecasts. Additionally, all models other than the ensemble, the baseline model, PSI-Draft, UT-Mobility, and YYG-ParamSearch used case data as inputs to their forecast models. Eight models included data on COVID-19 hospitalizations, seven models incorporated demographic data, and nine models used mobility data. Of the 23 models evaluated, five assumed that social distancing and other behavioral patterns would change over the 4-week prediction period and 19 assumed that social distancing measures would remain unchanged in the forecasted weeks.</p>
+</sec>
+<sec id="s3b">
+<title>Overall model accuracy</title>
+<p>Led by the ensemble model, which showed the best average probabilistic accuracy of all models across the evaluation period, half of the evaluated models achieved better accuracy than the baseline in forecasting incident deaths (<xref rid="tbl2" ref-type="table">Table 2</xref>). The COVIDhub-ensemble model achieved a relative weighted interval score (relative WIS,<inline-formula><alternatives><inline-graphic xlink:href="21250974v1_inline9.gif"/></alternatives></inline-formula>) of 0.63, which can be interpreted as it achieving, on average, 37&#x0025; less probabilistic error than the baseline forecast in the evaluation period. An additional three models achieved a relative WIS of less than 0.75. In total, 11 models had a relative WIS of less than 1, indicating lower probabilistic forecast error than the baseline model, and 11 had a relative WIS of 1 or greater. Values of relative WIS and rankings of models were robust to different sets of models being included or excluded (<xref ref-type="table" rid="tblS2">Supplemental Table 2</xref>).</p>
+<p>While forecasts from 11 models showed lower average error than the baseline, absolute measures of calibration (empirical coverage rates of prediction intervals) varied among the models (<xref rid="tbl2" ref-type="table">Table 2</xref>). When all forecast horizons, weeks, and locations are considered, several models achieved near nominal coverage rates for both the 50&#x0025; and 95&#x0025; prediction intervals. Four models achieved coverage rates within 5&#x0025; for the 50&#x0025; prediction interval and two other models achieved near nominal coverage for 95&#x0025; prediction intervals. Eight models had very low coverage rates (less than 50&#x0025; for the 95&#x0025; prediction intervals or less than 15&#x0025; for the 50&#x0025; prediction intervals).</p>
+<p>Models with simple data inputs were some of the most accurate stand-alone models. Of the top five individual models based on relative WIS (YYG-ParamSearch, UMass-MechBayes, OliverWyman-Navigator, CMU-TimeSeries, and GT-DeepCOVID) only two used data beyond the epidemiological case and death surveillance data from CSSE (<xref rid="tbl1" ref-type="table">Table 1</xref>). However, other models that use the same data inputs were not as accurate, so merely including only these inputs was not a sufficient condition for high accuracy. The top five consisted of both models with mechanistic components (YYG-ParamSearch, UMass-MechBayes, OliverWyman-Navigator) and purely statistical ones (CMU-TimeSeries and GT-DeepCOVID). Three of the 10 individual models that performed better than the baseline (OliverWyman-Navigator, GT-DeepCOVID, and IHME-SEIR) used data other than epidemiological surveillance data (e.g., demographics or mobility) in their model.</p>
+</sec>
+<sec id="s3c">
+<title>Model accuracy rankings are highly variable</title>
+<p>We ranked models based on WIS for each combination of location, target, and time across all 6,486 possible predicted observations (<xref rid="fig2" ref-type="fig">Figure 2</xref>). All models showed large variability in skill relative to other models, with each model having observations for which it had the lowest WIS and thereby a standardized rank of 1. The COVIDhub-ensemble was the only model that ranked in the top half of all models (standardized rank &#x003E; 0.5) for more than 75&#x0025; of the observations it forecasted, although it made the single best forecast less frequently than some of the other models. Some models show a bimodal distribution of standardized rank, with one mode in the top quartile of models and another in the bottom quartile. In these cases, the models frequently made overconfident predictions (i.e., too narrow prediction intervals, see <xref rid="tbl2" ref-type="table">Table 2</xref>, <xref ref-type="fig" rid="figS3">Supplemental Figure 3</xref>) resulting in either strong scores for being very close to the truth or harsh penalties for being far from the truth. If models were equally accurate, distributions of standardized ranks would be approximately uniform.</p>
+<fig id="fig3" position="float" fig-type="figure">
+<label>Figure 3:</label>
+<caption><p>Average weighted interval score (WIS) by evaluation week for each model across all 50 states. The four panels represent each of the 1 through 4 week ahead forecast horizons. Each point represents an average WIS calculated from available states for a particular week. Points colored purple indicate weeks for which the corresponding model did not make forecasts for all 50 states. The &#x201C;x&#x201D; marks indicate the average WIS for each model. Models are ordered along the x-axis by their relative WIS (<xref rid="tbl2" ref-type="table">Table 2</xref>). The horizontal dashed lines indicate the overall average of the baseline model for each horizon. With longer horizons, there is larger variation across the overall average WIS values (shown by the differences across the orange &#x201C;x&#x201D; marks), and larger variation within each model&#x2019;s weekly average WIS (shown by a wider range in average WIS points for each model). For a horizon of 1 week, the baseline model performs approximately as well as most models, with only 5 models outperforming the baseline. At a horizon of 4 weeks, there is more variability in average WIS values and 10 models outperform the baseline model. Models missing more than 4 weeks of forecast submissions are highlighted in red text.</p></caption>
+<graphic xlink:href="21250974v1_fig3.tif"/>
+</fig>
+</sec>
+<sec id="s3d">
+<title>Forecast accuracy declines in absolute terms as short-term horizons increase</title>
+<p>Averaging across all states and weeks in the evaluation period, forecasts from all models showed lower accuracy and higher variance as the forecast horizon moved from 1 to 4 weeks ahead (<xref rid="fig3" ref-type="fig">Figure 3</xref>). At a 1-week horizon, the baseline forecasts had an average WIS of 26.8 and the ensemble had an average WIS of 18.6. Eight models showed lower average WIS than baseline at a 1-week horizon, although three of those models (YYG-ParamSearch, Karlen-pypm, and CMU-TimeSeries) had 9or 10 missing weeks out of the 31 evaluated. The COVIDhub-ensemble model consistently outperformed the COVIDhub-baseline model, with similar error at a 3-week horizon (average WIS 28.5) as the COVIDhub-baseline model had at a 1-week horizon (average WIS 26.8). At a 4-week horizon, the baseline forecasts showed an average WIS of 56.8. Thirteen models showed lower average WIS than the baseline at a 4-week horizon.</p>
+<p>In contrast to average WIS, prediction interval coverage rates did not change substantially across the 1-to 4-week horizons for most models (<xref ref-type="fig" rid="figS3">Supplemental Figure 3</xref>).</p>
+</sec>
+<sec id="s3e">
+<title>Observations on accuracy in specific weeks</title>
+<p>Forecasts from individual models showed variation in accuracy by forecast week and horizon (<xref rid="fig4" ref-type="fig">Figure 4</xref>). The COVIDhub-ensemble model showed better average probabilistic error than both the baseline model and the average error of all models across the entire evaluation period. In weeks where the COVIDhub-ensemble forecast showed the worst probabilistic accuracy, other models also showed lower predictive performance. As an example, the COVIDhub-ensemble 1-week ahead forecast for EW49 (ending December 5) yielded its highest average WIS across all weeks (mean WIS = 43.7), and three out of 17 other models that submitted for the same locations outperformed it. The 4-week ahead COVIDhub-ensemble forecasts were also worse in EW49 than in any other week during the evaluation period (mean WIS = 98.9), and nine out of the 17 models outperformed the ensemble that week at a forecast horizon of 4 weeks.</p>
+<fig id="fig4" position="float" fig-type="figure">
+<label>Figure 4:</label>
+<caption><p>Average weighted interval score (WIS) by the target forecasted week for each model across all 50 states. Panel A shows the observed weekly COVID-19 deaths based on the CSSE reported data as of December 13, 2020. Panel B shows the average 1-week ahead WIS values per model (in grey). For all 21 weeks in which the ensemble model (red) is present, this model has lower WIS values than the baseline model (green) and the average score of all models (blue). Across submission weeks, there is variation in the WIS for each model. The WIS for each model is lowest in weeks where there is stability in the number of incident deaths. In submission weeks where there were large increases in incident deaths such as EW 27 and EW 31, there were also increases in the WIS values for a 1 week ahead horizon. Panel C shows the average 4-week ahead WIS by model. Similar to the 1 week ahead horizon, the ensemble model consistently has a lower WIS than the baseline model and the average across all models. For the 4-week ahead target, the variation in WIS across models is larger.</p></caption>
+<graphic xlink:href="21250974v1_fig4.tif"/>
+</fig>
+<p>There was high variation among the individual models in their forecast accuracy during periods of increasing deaths and near peaks (i.e., forecast dates in July through early August and November through December, <xref rid="fig4" ref-type="fig">Figure 4</xref>). In forecasts submitted during the first week of July (EW27), the baseline model had a high 1-week ahead error due to a large number of new deaths reported in the prior week in New Jersey. In general, other models did not show unusual errors in their forecasts originating from these data, suggesting that their approaches (either via hard-coded model robustness or manual adjustments) were robust to changes in reporting.</p>
+</sec>
+<sec id="s3f">
+<title>Individual model forecast performance varies substantially by location</title>
+<p>Forecasts from individual models also showed large variation in accuracy by location, when aggregated across all weeks and targets (<xref rid="fig5" ref-type="fig">Figure 5</xref>). Of the models that submitted for all locations, the ensemble model had the highest fraction of the 55 locations with improved accuracy over baseline, with equivalent or improved performance in all locations. Ensemble forecasts of incident deaths showed the largest relative accuracy improvements in New York (relative WIS = 0.3), New Jersey (relative WIS = 0.3), and Massachusetts (relative WIS = 0.4) and the lowest relative accuracy in Guam (relative WIS = 1.0). Improved relative accuracy over the baseline by a large number of models may be associated with large data revisions (in New York and New Jersey) or outbreaks during the evaluation period that showed a fast rise and fall (as in, e.g., Connecticut and Massachusetts) where the baseline model may not have performed as well (Supplemental Figure 1).</p>
+<fig id="fig5" position="float" fig-type="figure">
+<label>Figure 5:</label>
+<caption><p>Relative weighted interval score (WIS) by location for each model across all horizons and submission weeks. The value in each box represents the relative WIS calculated from 1-to 4-week ahead targets available for a model at each location. Points are colored based on the relative WIS compared to the baseline model (<inline-formula><alternatives><inline-graphic xlink:href="21250974v1_inline10.gif"/></alternatives></inline-formula>, see Methods). Blue boxes represent teams that outperformed the baseline and red boxes represent teams that performed worse than the baseline, with darker hues representing performance further away from the baseline. Locations are sorted by maximum value of incident deaths. Teams on the x-axis are listed from their highest to lowest relative WIS values (<xref rid="tbl2" ref-type="table">Table 2</xref>). The COVIDhub-ensemble achieved the lowest average WIS overall and performed at least as well as the baseline in every location. Models missing more than 4 weeks of forecast submissions are highlighted in red text.</p></caption>
+<graphic xlink:href="21250974v1_fig5.tif"/>
+</fig>
+</sec>
+<sec id="s3g">
+<title>Forecast performance at long horizons</title>
+<p>While many teams submitted only short-term (1-to 4-week horizon) forecasts, a smaller number of teams consistently submitted longer-term predictions with up to a 20-week horizon for all 50 states (<xref rid="fig6" ref-type="fig">Figure 6</xref>). The trends in average WIS from all teams submitting showed that 4-week ahead forecasts had roughly twice the error of 1-week ahead forecasts, a relationship that was consistent across all weeks. All longer-term forecasts showed less accuracy than 1- and 4-week ahead forecasts. There was not a clear trend in probabilistic model accuracy between 8- and 20-week horizons, potentially due to the small number of weeks and models evaluated For the 2 teams who made 20-week ahead forecasts for all 50 states, average WIS was 5-6 times higher at a 20-week horizon than it was at a 1-week horizon. No model made forecasts for horizons of 8 or greater that were calibrated at the 95&#x0025; level, with coverage ranging from 5&#x0025; to 80&#x0025; depending on the model and horizon. Average coverage across all models for horizons of 8 or more was always less than 50&#x0025;, with no clear trend in changing coverage as the horizon increased.</p>
+<fig id="fig6" position="float" fig-type="figure">
+<label>Figure 6:</label>
+<caption><p>Evaluation of long-range forecast performance. (A) Two 20-week-ahead probabilistic forecasts submitted in early June (EW23). (B) Points show values of mean weighted interval score (WIS) for specific models and target forecast week across all states. The solid line shows the smooth trend in mean WIS across all non-baseline models, and the dashed line shows the trend for the baseline model. Lines are colored by horizon, with darker lines indicating forecasts targeting weeks further in the future. Across all weeks, mean WIS tends to be about twice as high for 4-week ahead as it is for 1-week ahead forecasts. For later weeks, when forecasts at all horizons are able to be evaluated, forecasts for horizons above 8 weeks tend to have about double the mean WIS as was achieved at a 4-week ahead horizon. (C) 95&#x0025; prediction interval coverage rates stratified by color as in panel B. Coverage rates for 8-through 20-week ahead horizons were all on average below 50&#x0025;. The horizontal dashed line shown at 0.95 indicates the expected coverage rate. (D) The number of models evaluated at each horizon in each week.</p></caption>
+<graphic xlink:href="21250974v1_fig6.tif"/>
+</fig>
+</sec>
+</sec>
+<sec id="s4">
+<title>Discussion</title>
+<p>Given the highly visible role that forecasting has played in the response to the COVID-19 pandemic, it is critical that consumers of models, such as decision-makers, the general public, and modelers themselves, understand how reliable models are. Using a rich dataset of outputs from dozens of COVID-19 models, we have quantified the relative probabilistic accuracy of 23 models including an ensemble and a baseline model.</p>
+<p>This paper provides a comparative look at the probabilistic accuracy of different modeling approaches during the COVID-19 pandemic in the US during May &#x2013; December 2020. These evaluations were adjusted for regions and time periods, and three evaluation metrics were analyzed. We treated the relative WIS as our primary evaluation metric to assess the accuracy of the entire predictive distributions submitted. We used 95&#x0025; PI coverage and 50&#x0025; PI coverage, which only assess specific features of a predictive distribution, as our secondary evaluation metrics. The results presented in this manuscript will be updated as additional periods are analyzed.</p>
+<p>A key achievement of the COVID-19 Forecast Hub has been providing an ensemble forecast to the US Centers for Disease Control and Prevention in real-time since April 2020. Updated forecasts were featured on the CDC website, an interactive feature on the FiveThirtyEight data-journalism website, and in numerous mass media articles.<sup><xref ref-type="bibr" rid="c38">38</xref>,<xref ref-type="bibr" rid="c39">39</xref></sup> The Forecast Hub website, on average, received more than 40,000 views per month during May &#x2013; December 2020.</p>
+<p>The number of teams and forecasts contributing to the COVID-19 ensemble forecast model has exceeded forecasting activity for any prior pandemic. Additionally, The open-science orientation of this project ensures that these data generated in real-time can and will be reused by researchers for many years to come.</p>
+<p>As has been shown in prior epidemic forecasting projects, ensemble forecasts streamline and simplify the information provided to model consumers, and can provide a stable, accurate, and low-variance forecast.<sup><xref ref-type="bibr" rid="c3">3</xref>,<xref ref-type="bibr" rid="c15">15</xref>&#x2013;<xref ref-type="bibr" rid="c17">17</xref></sup> The results presented here, which show high variation in accuracy between and within stand-alone models but consistent accuracy from an ensemble forecast, support these prior results and confirm that an ensemble model can provide a reliable and comparatively accurate means of forecasting that exceeds the performance of most if not all of the models that contribute to it.</p>
+<p>We summarize the key findings of the work as follows.</p>
+<list list-type="bullet">
+<list-item><p>The performance of all individual models forecasting COVID-19 mortality was highly variable, even for short-term targets (<xref rid="fig2" ref-type="fig">Figures 2</xref> and <xref rid="fig3" ref-type="fig">3</xref>). However, some consistent patterns of which models were more accurate on average do emerge. Stand-alone models with few data inputs were among the most accurate (<xref rid="tbl1" ref-type="table">Tables 1</xref> and <xref rid="tbl2" ref-type="table">2</xref>). This is consistent with findings from earlier infectious disease forecasting challenges.<sup><xref ref-type="bibr" rid="c10">10</xref>,<xref ref-type="bibr" rid="c17">17</xref>,<xref ref-type="bibr" rid="c40">40</xref></sup> Further investigation is needed to determine in what settings additional data can yield measurable improvements in forecast accuracy or add valuable diversity to a collection of models that are being combined together.</p></list-item>
+<list-item><p>A simple ensemble forecast that combined all submitted models each week was consistently the most accurate model when performance was aggregated by forecast target (<xref rid="fig3" ref-type="fig">Figure 3</xref>), weeks (<xref rid="fig4" ref-type="fig">Figure 4</xref>), or locations (<xref rid="fig5" ref-type="fig">Figure 5</xref>). Although it was rarely the &#x201C;most accurate&#x201D; model for individual predictions, the ensemble was consistently one of the top few models for any single prediction (<xref rid="fig2" ref-type="fig">Figure 2</xref>). For public health agencies concerned with using a model that shows dependably accurate performance, this is a desirable feature of a model.</p></list-item>
+<list-item><p>No model performed best on all three focal metrics (<xref rid="tbl2" ref-type="table">Table 2</xref>). The ensemble model and three of the individual models (OliverWyman-Navigator, UMass-MechBayes, and YYG-ParamSearch) performed well on the relative WIS metric and one of the prediction interval coverage metrics. One additional model (LANL-GrowthRate) performed close to the best on 95&#x0025; PI coverage.</p></list-item>
+<list-item><p>The high variation in ranks of models for each location-target-week suggests that all models, even those that are not as accurate on average, have observations for which they are the most accurate (<xref rid="fig2" ref-type="fig">Figure 2</xref>). In part because of this variability, retrospective experiments that cover most of the evaluation period have shown it to be very hard to improve on the median ensemble approach by using &#x201C;trained&#x201D; ensembles that estimate weights for component models.<sup><xref ref-type="bibr" rid="c31">31</xref></sup></p></list-item>
+<list-item><p>Forecast accuracy and calibration degraded as the horizon projected farther away from the current observations (<xref rid="fig6" ref-type="fig">Figure 6</xref>).</p></list-item>
+</list>
+<p>Rigorous evaluation of forecast accuracy faces many challenges in practice. The large variation in forecast errors across targets, submission weeks, and locations (<xref ref-type="fig" rid="figS4">Supplemental Figure 4</xref>) makes it difficult to create simple and clean comparisons of models. Additionally, forecast comparison is challenging because teams have submitted forecasts for different lengths of time, different locations, and for different numbers of horizons (<xref rid="fig6" ref-type="fig">Figure 6</xref>, <xref ref-type="fig" rid="figS2">Supplemental Figure 2</xref>). Some teams have also changed their models over time (<xref rid="tbl1" ref-type="table">Table 1</xref>, <xref ref-type="table" rid="tblS1">Supplemental Table 1</xref>). To account for some of this variability, we implemented specific inclusion criteria. However, those criteria may exclude valuable approaches that were not applied to a large fraction of locations or weeks. Finally, ground truth data are not static. They can be later revised as more data become available (Supplemental Figure 1). Different sources for ground truth data can also have substantial differences that impact model performance.</p>
+<p>Short-term forecasts of COVID-19 mortality have informed public health response and risk communication for the pandemic. However, these forecasts are only one component of a comprehensive public health data and modeling system needed to help inform outbreak response. This project underscores the role that collaboration and active coordination between governmental public health agencies, academic modeling teams, and industry partners can play in developing modern modeling capabilities to support local, state, and federal response to outbreaks.</p>
+<p>uhh</p>
+</sec>
+<sec sec-type="supplementary-material">
+<title>Supporting information</title>
+<supplementary-material>
+<label>Supplemental Figure 1</label>
+<media xlink:href="supplements/250974_file02.pdf" />
+</supplementary-material>
+</sec>
+</body>
+<back>
+<sec sec-type="data-availability">
+<title>Data Availability</title>
+<p>All data and code referred to in the manuscript are publicly available.
+</p>
+<p>
+<ext-link ext-link-type="uri" xlink:href="https://github.com/reichlab/covid19-forecast-hub/">https://github.com/reichlab/covid19-forecast-hub/</ext-link>
+</p>
+<p>
+<ext-link ext-link-type="uri" xlink:href="https://github.com/reichlab/covidEnsembles">https://github.com/reichlab/covidEnsembles</ext-link>
+</p>
+<p>
+<ext-link ext-link-type="uri" xlink:href="https://zoltardata.com/project/44">https://zoltardata.com/project/44</ext-link>
+</p>
+</sec>
+<ref-list>
+<title>Citations</title>
+<ref id="c1"><label>1.</label><mixed-citation publication-type="book"><string-name><surname>Davies</surname>, <given-names>S. E.</given-names></string-name> &#x0026; <string-name><surname>Youde</surname>, <given-names>J. R.</given-names></string-name> <chapter-title>The Politics of Surveillance and Response to Disease Outbreaks</chapter-title>: <source>The New Frontier for States and Non-state Actors</source>. (<publisher-name>Routledge</publisher-name>, <year>2016</year>).</mixed-citation></ref>
+<ref id="c2"><label>2.</label><mixed-citation publication-type="journal"><string-name><surname>Polonsky</surname>, <given-names>J. A.</given-names></string-name> <etal>et al.</etal> <article-title>Outbreak analytics: a developing data science for informing the response to emerging pathogens</article-title>. <source>Philos. Trans. R. Soc. Lond. B Biol. Sci</source>. <volume>374</volume>, <fpage>20180276</fpage> (<year>2019</year>).</mixed-citation></ref>
+<ref id="c3"><label>3.</label><mixed-citation publication-type="journal"><string-name><surname>Lutz</surname>, <given-names>C. S.</given-names></string-name> <etal>et al.</etal> <article-title>Applying infectious disease forecasting to public health: a path forward using influenza forecasting examples</article-title>. <source>BMC Public Health</source> <volume>19</volume>, <fpage>1659</fpage> (<year>2019</year>).</mixed-citation></ref>
+<ref id="c4"><label>4.</label><mixed-citation publication-type="journal"><string-name><surname>Bausch</surname>, <given-names>D. G.</given-names></string-name> &#x0026; <string-name><surname>Edmunds</surname>, <given-names>J.</given-names></string-name> <article-title>Real-Time Modeling Should Be Routinely Integrated into Outbreak Response</article-title>. <source>Am. J. Trop. Med. Hyg</source>. <volume>98</volume>, <fpage>1214</fpage>&#x2013;<lpage>1215</lpage> (<year>2018</year>).</mixed-citation></ref>
+<ref id="c5"><label>5.</label><mixed-citation publication-type="journal"><string-name><surname>Houlihan</surname>, <given-names>C. F.</given-names></string-name> &#x0026; <string-name><surname>Whitworth</surname>, <given-names>J. A. G.</given-names></string-name> <article-title>Outbreak science: recent progress in the detection and response to outbreaks of infectious diseases</article-title>. <source>Clin. Med</source>. <volume>19</volume>, <fpage>140</fpage> (<year>2019</year>).</mixed-citation></ref>
+<ref id="c6"><label>6.</label><mixed-citation publication-type="journal"><string-name><surname>Heesterbeek</surname>, <given-names>H.</given-names></string-name> <etal>et al.</etal> <article-title>Modeling infectious disease dynamics in the complex landscape of global health</article-title>. <source>Science</source> <volume>347</volume>, <fpage>aaa4339</fpage> (<year>2015</year>).</mixed-citation></ref>
+<ref id="c7"><label>7.</label><mixed-citation publication-type="journal"><string-name><surname>Osthus</surname>, <given-names>D.</given-names></string-name>, <string-name><surname>Daughton</surname>, <given-names>A. R.</given-names></string-name> &#x0026; <string-name><surname>Priedhorsky</surname>, <given-names>R.</given-names></string-name> <article-title>Even a good influenza forecasting model can benefit from internet-based nowcasts, but those benefits are limited</article-title>. <source>PLoS Comput. Biol</source>. <volume>15</volume>, <fpage>e1006599</fpage> (<year>2019</year>).</mixed-citation></ref>
+<ref id="c8"><label>8.</label><mixed-citation publication-type="journal"><string-name><surname>McGough</surname>, <given-names>S. F.</given-names></string-name>, <string-name><surname>Johansson</surname>, <given-names>M. A.</given-names></string-name>, <string-name><surname>Lipsitch</surname>, <given-names>M.</given-names></string-name> &#x0026; <string-name><surname>Menzies</surname>, <given-names>N. A.</given-names></string-name> <article-title>Nowcasting by Bayesian Smoothing: A flexible, generalizable model for real-time epidemic tracking</article-title>. <source>PLoS Comput. Biol</source>. <volume>16</volume>, <fpage>e1007735</fpage> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c9"><label>9.</label><mixed-citation publication-type="journal"><string-name><surname>Brooks</surname>, <given-names>L. C.</given-names></string-name>, <string-name><surname>Farrow</surname>, <given-names>D. C.</given-names></string-name>, <string-name><surname>Hyun</surname>, <given-names>S.</given-names></string-name>, <string-name><surname>Tibshirani</surname>, <given-names>R. J.</given-names></string-name> &#x0026; <string-name><surname>Rosenfeld</surname>, <given-names>R.</given-names></string-name> <article-title>Nonmechanistic forecasts of seasonal influenza with iterative one-week-ahead distributions</article-title>. <source>PLoS Comput. Biol</source>. <volume>14</volume>, <fpage>e1006134</fpage> (<year>2018</year>).</mixed-citation></ref>
+<ref id="c10"><label>10.</label><mixed-citation publication-type="journal"><string-name><surname>McGowan</surname>, <given-names>C. J.</given-names></string-name> <etal>et al.</etal> <article-title>Collaborative efforts to forecast seasonal influenza in the United States, 2015&#x2013;2016</article-title>. <source>Sci. Rep</source>. <volume>9</volume>, <fpage>683</fpage> (<year>2019</year>).</mixed-citation></ref>
+<ref id="c11"><label>11.</label><mixed-citation publication-type="journal"><string-name><surname>Shea</surname>, <given-names>K.</given-names></string-name> <etal>et al.</etal> <article-title>Harnessing multiple models for outbreak management</article-title>. <source>Science</source> <volume>368</volume>, <fpage>577</fpage>&#x2013;<lpage>579</lpage> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c12"><label>12.</label><mixed-citation publication-type="other"><string-name><surname>Shea</surname>, <given-names>K.</given-names></string-name> <etal>et al.</etal> <article-title>COVID-19 reopening strategies at the county level in the face of uncertainty: Multiple Models for Outbreak Decision Support</article-title>. <source>medRxiv</source> 2020.11.03.20225409 (<year>2020</year>) doi:<pub-id pub-id-type="doi">10.1101/2020.11.03.20225409</pub-id>.</mixed-citation></ref>
+<ref id="c13"><label>13.</label><mixed-citation publication-type="other"><string-name><surname>Cramer</surname>, <given-names>E.</given-names></string-name> <etal>et al.</etal> <source>COVID-19 Forecast Hub: 4 December 2020 snapshot</source>. (<year>2020</year>). doi:<pub-id pub-id-type="doi">10.5281/zenodo.4305938</pub-id>.</mixed-citation></ref>
+<ref id="c14"><label>14.</label><mixed-citation publication-type="journal"><string-name><surname>Reich</surname>, <given-names>N. G.</given-names></string-name> <etal>et al.</etal> <article-title>From the Cover: PNAS Plus: A collaborative multiyear, multimodel assessment of seasonal influenza forecasting in the United States</article-title>. <source>Proc. Natl. Acad. Sci. U. S. A</source>. <volume>116</volume>, <fpage>3146</fpage> (<year>2019</year>).</mixed-citation></ref>
+<ref id="c15"><label>15.</label><mixed-citation publication-type="journal"><string-name><surname>Reich</surname>, <given-names>N. G.</given-names></string-name> <etal>et al.</etal> <article-title>Accuracy of real-time multi-model ensemble forecasts for seasonal influenza in the U.S</article-title>. <source>PLoS Comput. Biol</source>. <volume>15</volume>, <fpage>e1007486</fpage> (<year>2019</year>).</mixed-citation></ref>
+<ref id="c16"><label>16.</label><mixed-citation publication-type="journal"><string-name><surname>Viboud</surname>, <given-names>C.</given-names></string-name> <etal>et al.</etal> <article-title>The RAPIDD ebola forecasting challenge: Synthesis and lessons learnt</article-title>. <source>Epidemics</source> <volume>22</volume>, <fpage>13</fpage>&#x2013;<lpage>21</lpage> (<year>2018</year>).</mixed-citation></ref>
+<ref id="c17"><label>17.</label><mixed-citation publication-type="journal"><string-name><surname>Johansson</surname>, <given-names>M. A.</given-names></string-name> <etal>et al.</etal> <article-title>An open challenge to advance probabilistic forecasting for dengue epidemics</article-title>. <source>Proc. Natl. Acad. Sci. U. S. A</source>. <volume>116</volume>, <fpage>24268</fpage>&#x2013;<lpage>24274</lpage> (<year>2019</year>).</mixed-citation></ref>
+<ref id="c18"><label>18.</label><mixed-citation publication-type="other"><string-name><surname>Funk</surname>, <given-names>S.</given-names></string-name> <etal>et al.</etal> <article-title>Short-term forecasts to inform the response to the Covid-19 epidemic in the UK</article-title>. <source>medRxiv</source> 2020.11.11.20220962 (<year>2020</year>) doi:<pub-id pub-id-type="doi">10.1101/2020.11.11.20220962</pub-id>.</mixed-citation></ref>
+<ref id="c19"><label>19.</label><mixed-citation publication-type="other"><string-name><surname>Taylor</surname>, <given-names>K. S.</given-names></string-name> &#x0026; <string-name><surname>Taylor</surname>, <given-names>J. W.</given-names></string-name> <source>A Comparison of Aggregation Methods for Probabilistic Forecasts of COVID-19 Mortality in the United States</source>. arXiv:<pub-id pub-id-type="arxiv">2007.11103</pub-id> [stat] (<year>2020</year>).</mixed-citation></ref>
+<ref id="c20"><label>20.</label><mixed-citation publication-type="other"><string-name><surname>Bates</surname>, <given-names>J. M.</given-names></string-name> &#x0026; <string-name><surname>Granger</surname>, <given-names>C. W. J.</given-names></string-name> <article-title>The Combination of Forecasts</article-title>. <source>J. Oper. Res. Soc</source>. (<year>2017</year>) doi:<pub-id pub-id-type="doi">10.1057/jors.1969.103</pub-id>.</mixed-citation></ref>
+<ref id="c21"><label>21.</label><mixed-citation publication-type="journal"><string-name><surname>Krishnamurti</surname>, <given-names>T. N.</given-names></string-name> <etal>et al.</etal> <article-title>Improved Weather and Seasonal Climate Forecasts from Multimodel Superensemble</article-title>. <source>Science</source> <volume>285</volume>, <fpage>1548</fpage>&#x2013;<lpage>1550</lpage> (<year>1999</year>).</mixed-citation></ref>
+<ref id="c22"><label>22.</label><mixed-citation publication-type="journal"><string-name><surname>Gneiting</surname>, <given-names>T.</given-names></string-name> &#x0026; <string-name><surname>Raftery</surname>, <given-names>A. E.</given-names></string-name> <article-title>Weather Forecasting with Ensemble Methods</article-title>. <source>Science</source> <volume>310</volume>, <fpage>248</fpage>&#x2013;<lpage>249</lpage> (<year>2005</year>).</mixed-citation></ref>
+<ref id="c23"><label>23.</label><mixed-citation publication-type="journal"><string-name><surname>Leutbecher</surname>, <given-names>M.</given-names></string-name> &#x0026; <string-name><surname>Palmer</surname>, <given-names>T. N.</given-names></string-name> <article-title>Ensemble forecasting</article-title>. <source>J. Comput. Phys</source>. <volume>227</volume>, <fpage>3515</fpage>&#x2013;<lpage>3539</lpage> (<year>2008</year>).</mixed-citation></ref>
+<ref id="c24"><label>24.</label><mixed-citation publication-type="journal"><string-name><surname>Polikar</surname>, <given-names>R.</given-names></string-name> <article-title>Ensemble based systems in decision making</article-title>. <source>IEEE Circuits and Systems Magazine</source> <volume>6</volume>, <fpage>21</fpage>&#x2013;<lpage>45</lpage> (Third <year>2006</year>).</mixed-citation></ref>
+<ref id="c25"><label>25.</label><mixed-citation publication-type="other"><string-name><surname>Lakshminarayanan</surname>, <given-names>B.</given-names></string-name>, <string-name><surname>Pritzel</surname>, <given-names>A.</given-names></string-name> &#x0026; <string-name><surname>Blundell</surname>, <given-names>C.</given-names></string-name> <source>Simple and Scalable Predictive Uncertainty Estimation using Deep Ensembles</source>. arXiv:<pub-id pub-id-type="arxiv">1612.01474</pub-id> [cs, stat] (<year>2017</year>).</mixed-citation></ref>
+<ref id="c26"><label>26.</label><mixed-citation publication-type="journal"><string-name><surname>Moran</surname>, <given-names>K. R.</given-names></string-name> <etal>et al.</etal> <article-title>Epidemic Forecasting is Messier Than Weather Forecasting: The Role of Human Behavior and Internet Data Streams in Epidemic Forecast</article-title>. <source>J. Infect. Dis</source>. <volume>214</volume>, <fpage>S404</fpage>&#x2013;<lpage>S408</lpage> (<year>2016</year>).</mixed-citation></ref>
+<ref id="c27"><label>27.</label><mixed-citation publication-type="other"><string-name><surname>Friedman</surname>, <given-names>J.</given-names></string-name> <etal>et al.</etal> <article-title>Predictive performance of international COVID-19 mortality forecasting models</article-title>. <source>medRxiv</source> 2020.07.13.20151233 (<year>2020</year>) doi:<pub-id pub-id-type="doi">10.1101/2020.07.13.20151233</pub-id>.</mixed-citation></ref>
+<ref id="c28"><label>28.</label><mixed-citation publication-type="journal"><string-name><surname>Dong</surname>, <given-names>E.</given-names></string-name>, <string-name><surname>Du</surname>, <given-names>H.</given-names></string-name> &#x0026; <string-name><surname>Gardner</surname>, <given-names>L.</given-names></string-name> <article-title>An interactive web-based dashboard to track COVID-19 in real time</article-title>. <source>Lancet Infect. Dis</source>. <volume>20</volume>, <fpage>533</fpage>&#x2013;<lpage>534</lpage> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c29"><label>29.</label><mixed-citation publication-type="other"><string-name><surname>Ray</surname>, <given-names>E. L.</given-names></string-name> <etal>et al.</etal> <article-title>Ensemble Forecasts of Coronavirus Disease 2019 (COVID-19) in the U.S</article-title>. <source>medRxiv</source> 2020.08.19.20177493 (<year>2020</year>) doi:<pub-id pub-id-type="doi">10.1101/2020.08.19.20177493</pub-id>.</mixed-citation></ref>
+<ref id="c30"><label>30.</label><mixed-citation publication-type="website"><collab>MMWR Weeks</collab>. <source>CDC</source> <ext-link ext-link-type="uri" xlink:href="https://www.n.cdc.gov/nndss/document/MMWR_Week_overview.pdf">https://www.n.cdc.gov/nndss/document/MMWR_Week_overview.pdf</ext-link>.</mixed-citation></ref>
+<ref id="c31"><label>31.</label><mixed-citation publication-type="other"><string-name><surname>Brooks</surname>, <given-names>L. C.</given-names></string-name> <etal>et al.</etal> <article-title>Comparing ensemble approaches for short-term probabilistic COVID-19 forecasts in the U.S</article-title>. <source>International Institute of Forecasters</source> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c32"><label>32.</label><mixed-citation publication-type="journal"><string-name><surname>Gneiting</surname>, <given-names>T.</given-names></string-name> &#x0026; <string-name><surname>Raftery</surname>, <given-names>A. E.</given-names></string-name> <article-title>Strictly Proper Scoring Rules, Prediction, and Estimation</article-title>. <source>J. Am. Stat. Assoc</source>. <volume>102</volume>, <fpage>359</fpage>&#x2013;<lpage>378</lpage> (03/<year>2007</year>).</mixed-citation></ref>
+<ref id="c33"><label>33.</label><mixed-citation publication-type="other"><string-name><surname>Bracher</surname>, <given-names>J.</given-names></string-name>, <string-name><surname>Ray</surname>, <given-names>E. L.</given-names></string-name>, <string-name><surname>Gneiting</surname>, <given-names>T.</given-names></string-name> &#x0026; <string-name><surname>Reich</surname>, <given-names>N. G.</given-names></string-name> <source>Evaluating epidemic forecasts in an interval format</source>. arXiv:<pub-id pub-id-type="arxiv">2005.12881</pub-id> [q-bio, stat] (<year>2020</year>).</mixed-citation></ref>
+<ref id="c34"><label>34.</label><mixed-citation publication-type="journal"><string-name><surname>Soloman</surname>, <given-names>S. R.</given-names></string-name> &#x0026; <string-name><surname>Sawilowsky</surname>, <given-names>S. S.</given-names></string-name> <article-title>Impact of Rank-Based Normalizing Transformations on the Accuracy of Test Scores</article-title>. <source>J. Mod. Appl. Stat. Methods</source> <volume>8</volume>, <fpage>448</fpage>&#x2013;<lpage>462</lpage> (<year>2009</year>).</mixed-citation></ref>
+<ref id="c35"><label>35.</label><mixed-citation publication-type="journal"><string-name><surname>Wu</surname>, <given-names>S.</given-names></string-name>, <string-name><surname>Crestani</surname>, <given-names>F.</given-names></string-name> &#x0026; <string-name><surname>Bi</surname>, <given-names>Y.</given-names></string-name> <source>Evaluating Score Normalization Methods in Data Fusion</source>. vol. <volume>4182</volume> (<year>2006</year>).</mixed-citation></ref>
+<ref id="c36"><label>36.</label><mixed-citation publication-type="book"><string-name><surname>Renda</surname>, <given-names>M. E.</given-names></string-name> &#x0026; <string-name><surname>Straccia</surname>, <given-names>U.</given-names></string-name> <chapter-title>Web metasearch: rank vs. score based rank aggregation methods</chapter-title>. <source>in Proceedings of the 2003 ACM symposium on Applied computing</source> <fpage>841</fpage>&#x2013;<lpage>846</lpage> (<publisher-name>Association for Computing Machinery</publisher-name>, <year>2003</year>). doi:<pub-id pub-id-type="doi">10.1145/952532.952698</pub-id>.</mixed-citation></ref>
+<ref id="c37"><label>37.</label><mixed-citation publication-type="other"><collab>R Core Team</collab>. <source>R: A Language and Environment for Statistical Computing</source>. (<year>2020</year>).</mixed-citation></ref>
+<ref id="c38"><label>38.</label><mixed-citation publication-type="website"><string-name><surname>Boice</surname>, <given-names>R. B. J.</given-names></string-name> <article-title>Where The Latest COVID-19 Models Think We&#x2019;re Headed &#x2014; And Why They Disagree</article-title>. <source>FiveThirtyEight</source> <ext-link ext-link-type="uri" xlink:href="https://projects.fivethirtyeight.com/covid-forecasts/">https://projects.fivethirtyeight.com/covid-forecasts/</ext-link> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c39"><label>39.</label><mixed-citation publication-type="website"><collab>CDC</collab>. <source>COVID-19 Forecasts: Deaths</source>. <ext-link ext-link-type="uri" xlink:href="https://www.cdc.gov/coronavirus/2019-ncov/covid-data/forecasting-us.html">https://www.cdc.gov/coronavirus/2019-ncov/covid-data/forecasting-us.html</ext-link> (<year>2021</year>).</mixed-citation></ref>
+<ref id="c40"><label>40.</label><mixed-citation publication-type="journal"><string-name><surname>Del Valle</surname>, <given-names>S. Y.</given-names></string-name> <etal>et al.</etal> <article-title>Summary results of the 2014-2015 DARPA Chikungunya challenge</article-title>. <source>BMC Infect. Dis</source>. <volume>18</volume>, <fpage>245</fpage> (<year>2018</year>).</mixed-citation></ref>
+<ref id="c41"><label>41.</label><mixed-citation publication-type="website"><collab>COVID-19 Findings, Simulations &#x007C; Shaman Group</collab>. <ext-link ext-link-type="uri" xlink:href="https://blogs.cuit.columbia.edu/jls106/publications/covid-19-findings-simulations/">https://blogs.cuit.columbia.edu/jls106/publications/covid-19-findings-simulations/</ext-link>.</mixed-citation></ref>
+<ref id="c42"><label>42.</label><mixed-citation publication-type="website"><string-name><surname>Pei</surname>, <given-names>S.</given-names></string-name> &#x0026; <string-name><surname>Shaman</surname>, <given-names>J.</given-names></string-name> <source>Initial Simulation of SARS-CoV2 Spread and Intervention Effects in the Continental US</source>. <ext-link ext-link-type="uri" xlink:href="http://medrxiv.org/lookup/doi/10.1101/2020.03.21.20040303">http://medrxiv.org/lookup/doi/10.1101/2020.03.21.20040303</ext-link> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c43"><label>43.</label><mixed-citation publication-type="journal"><string-name><surname>Pei</surname>, <given-names>S.</given-names></string-name>, <string-name><surname>Kandula</surname>, <given-names>S.</given-names></string-name> &#x0026; <string-name><surname>Shaman</surname>, <given-names>J.</given-names></string-name> <article-title>Differential effects of intervention timing on COVID-19 spread in the United States</article-title>. <source>Science Advances</source> <volume>6</volume>, <fpage>eabd6370</fpage> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c44"><label>44.</label><mixed-citation publication-type="other"><string-name><surname>Rodr&#x00ED;guez</surname>, <given-names>A.</given-names></string-name> <etal>et al.</etal> <article-title>DeepCOVID: An Operational Deep Learning-driven Framework for Explainable Real-time COVID-19 Forecasting</article-title>. <source>in Proceedings of the 35th AAAI Conference on Artificial Intelligence</source> vol. <volume>35</volume> Forthcoming (<year>2021</year>).</mixed-citation></ref>
+<ref id="c45"><label>45.</label><mixed-citation publication-type="other"><string-name><surname>Wang</surname>, <given-names>L.</given-names></string-name> <etal>et al.</etal> <source>Spatiotemporal Dynamics, Nowcasting and Forecasting of COVID-19 in the United States</source>. arXiv:<pub-id pub-id-type="arxiv">2004.14103</pub-id> [stat] (<year>2020</year>).</mixed-citation></ref>
+<ref id="c46"><label>46.</label><mixed-citation publication-type="other"><string-name><surname>Lemaitre</surname>, <given-names>J. C.</given-names></string-name> <etal>et al.</etal> <article-title>A scenario modeling pipeline for COVID-19 emergency planning</article-title>. <source>medRxiv</source> 2020.06.11.20127894 (<year>2020</year>) doi:<pub-id pub-id-type="doi">10.1101/2020.06.11.20127894</pub-id>.</mixed-citation></ref>
+<ref id="c47"><label>47.</label><mixed-citation publication-type="website"><collab>Case studies and reports</collab>. <ext-link ext-link-type="uri" xlink:href="https://pypm.github.io/home/">https://pypm.github.io/home/</ext-link>.</mixed-citation></ref>
+<ref id="c48"><label>48.</label><mixed-citation publication-type="other"><string-name><surname>Karlen</surname>, <given-names>D.</given-names></string-name> <source>Characterizing the spread of CoViD-19</source>. arXiv:<pub-id pub-id-type="arxiv">2007.07156</pub-id> [physics, q-bio, stat] (<year>2020</year>).</mixed-citation></ref>
+<ref id="c49"><label>49.</label><mixed-citation publication-type="website"><collab>LANL COVID-19 Cases and Deaths Forecasts</collab>. <ext-link ext-link-type="uri" xlink:href="https://covid-19.bsvgateway.org/">https://covid-19.bsvgateway.org/</ext-link>.</mixed-citation></ref>
+<ref id="c50"><label>50.</label><mixed-citation publication-type="journal"><string-name><surname>Chinazzi</surname>, <given-names>M.</given-names></string-name> <etal>et al.</etal> <article-title>The effect of travel restrictions on the spread of the 2019 novel coronavirus (COVID-19) outbreak</article-title>. <source>Science</source> <volume>368</volume>, <fpage>395</fpage>&#x2013;<lpage>400</lpage> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c51"><label>51.</label><mixed-citation publication-type="website"><collab>EpiGro &#x0026; EpiCovDA</collab>. <ext-link ext-link-type="uri" xlink:href="https://jocelinelega.github.io/EpiGro/">https://jocelinelega.github.io/EpiGro/</ext-link>.</mixed-citation></ref>
+<ref id="c52"><label>52.</label><mixed-citation publication-type="other"><string-name><surname>Gibson</surname>, <given-names>G. C.</given-names></string-name>, <string-name><surname>Reich</surname>, <given-names>N. G.</given-names></string-name> &#x0026; <string-name><surname>Sheldon</surname>, <given-names>D.</given-names></string-name> <article-title>REAL-TIME MECHANISTIC BAYESIAN FORECASTS OF COVID-19 MORTALITY</article-title>. <source>medRxiv</source> 2020.12.22.20248736 (<year>2020</year>) doi:<pub-id pub-id-type="doi">10.1101/2020.12.22.20248736</pub-id>.</mixed-citation></ref>
+<ref id="c53"><label>53.</label><mixed-citation publication-type="website"><string-name><surname>Rowland</surname>, <given-names>M. A.</given-names></string-name> <etal>et al.</etal> <source>COVID-19 infection data encode a dynamic reproduction number in response to policy decisions with secondary wave implications</source>. <ext-link ext-link-type="uri" xlink:href="https://www.researchsquare.com/article/rs-75665/v1">https://www.researchsquare.com/article/rs-75665/v1</ext-link> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c54"><label>54.</label><mixed-citation publication-type="website"><collab>COVID-19 Projections Using Machine Learning</collab>. <ext-link ext-link-type="uri" xlink:href="https://covid19-projections.com/">https://covid19-projections.com/</ext-link>.</mixed-citation></ref>
+<ref id="c55"><label>55.</label><mixed-citation publication-type="other"><string-name><surname>O&#x2019;Dea</surname>, <given-names>E.</given-names></string-name> <source>e3bo/random-walks</source>. (<year>2021</year>).</mixed-citation></ref>
+<ref id="c56"><label>56.</label><mixed-citation publication-type="other"><string-name><surname>Baek</surname>, <given-names>J.</given-names></string-name> <etal>et al.</etal> <article-title>The Limits to Learning an SIR Process</article-title>: <source>Granular Forecasting for Covid-19</source>. arXiv:<pub-id pub-id-type="arxiv">2006.06373</pub-id> [cs, stat] (<year>2020</year>).</mixed-citation></ref>
+<ref id="c57"><label>57.</label><mixed-citation publication-type="other"><string-name><surname>Wang</surname>, <given-names>R.</given-names></string-name>, <string-name><surname>Maddix</surname>, <given-names>D.</given-names></string-name>, <string-name><surname>Faloutsos</surname>, <given-names>C.</given-names></string-name>, <string-name><surname>Wang</surname>, <given-names>Y.</given-names></string-name> &#x0026; <string-name><surname>Yu</surname>, <given-names>R.</given-names></string-name> <source>AutoODE: Bridging Physics-based and Data-driven modeling for COVID-19 Forecasting</source>.</mixed-citation></ref>
+<ref id="c58"><label>58.</label><mixed-citation publication-type="other"><string-name><surname>Srivastava</surname>, <given-names>A.</given-names></string-name>, <string-name><surname>Xu</surname>, <given-names>T.</given-names></string-name> &#x0026; <string-name><surname>Prasanna</surname>, <given-names>V. K.</given-names></string-name> <source>Fast and Accurate Forecasting of COVID-19 Deaths Using the SIkJ&#x03B1; Model</source>. arXiv:<pub-id pub-id-type="arxiv">2007.05180</pub-id> [physics, q-bio] (<year>2020</year>).</mixed-citation></ref>
+<ref id="c59"><label>59.</label><mixed-citation publication-type="other"><string-name><surname>Srivastava</surname>, <given-names>A.</given-names></string-name> &#x0026; <string-name><surname>Prasanna</surname>, <given-names>V. K.</given-names></string-name> <article-title>Data-driven Identification of Number of Unreported Cases for COVID-19</article-title>: <source>Bounds and Limitations</source>. arXiv:<pub-id pub-id-type="arxiv">2006.02127</pub-id> [cs, q-bio] (<year>2020</year>).</mixed-citation></ref>
+</ref-list>
+<sec id="s5">
+<title>Funding</title>
+<p>For teams that reported receiving funding for their work, we report the sources and disclosures below.</p>
+<p><italic><underline>CMU-TimeSeries</underline></italic>: CDC Center of Excellence, gifts from Google and Facebook.</p>
+<p><italic><underline>CU-select</underline></italic>: NSF DMS-2027369 and a gift from the Morris-Singer Foundation.</p>
+<p><italic><underline>COVIDhub</underline></italic>: This work has been supported by the US Centers for Disease Control and Prevention (1U01IP001122) and the National Institutes of General Medical Sciences (R35GM119582). The content is solely the responsibility of the authors and does not necessarily represent the official views of CDC, NIGMS or the National Institutes of Health. Johannes Bracher was supported by the Helmholtz Foundation via the SIMCARD Information&#x0026; Data Science Pilot Project. Tilmann Gneiting gratefully acknowledges support by the Klaus Tschira Foundation.</p>
+<p><italic><underline>DDS-NBDS</underline></italic>: NSF III-1812699.</p>
+<p><italic><underline>EPIFORECASTS-ENSEMBLE1</underline></italic>: Wellcome Trust (210758/Z/18/Z)</p>
+<p><italic><underline>GT_CHHS-COVID19</underline></italic>: William W. George Endowment, Virginia C. and Joseph C. Mello Endowments, NSF DGE-1650044, NSF MRI 1828187, research cyberinfrastructure resources and services provided by the Partnership for an Advanced Computing Environment (PACE) at Georgia Tech, and the following benefactors at Georgia Tech: Andrea Laliberte, Joseph C. Mello, Richard &#x201C;Rick&#x201D; E. &#x0026; Charlene Zalesky, and Claudia &#x0026; Paul Raines</p>
+<p><italic><underline>GT-DeepCOVID</underline></italic>: CDC MInD-Healthcare U01CK000531-Supplement. NSF (Expeditions CCF-1918770, CAREER IIS-2028586, RAPID IIS-2027862, Medium IIS-1955883, NRT DGE-1545362), CDC MInD program, ORNL and funds/computing resources from Georgia Tech and GTRI.</p>
+<p><italic><underline>IHME</underline></italic>: This work was supported by the Bill &#x0026; Melinda Gates Foundation, as well as funding from the state of Washington and the National Science Foundation (award no. FAIN: 2031096).</p>
+<p><italic><underline>IowaStateLW-STEM</underline></italic>: Iowa State University Plant Sciences Institute Scholars Program, NSF DMS-1916204, NSF CCF-1934884, Laurence H. Baker Center for Bioinformatics and Biological Statistics.</p>
+<p><italic><underline>JHU_IDD-CovidSP</underline></italic>: State of California, US Dept of Health and Human Services, US Dept of Homeland Security, US Office of Foreign Disaster Assistance, Johns Hopkins Health System, Office of the Dean at Johns Hopkins Bloomberg School of Public Health, Johns Hopkins University Modeling and Policy Hub, Centers for Disease Control and Prevention (5U01CK000538-03), University of Utah Immunology, Inflammation, &#x0026; Infectious Disease Initiative (26798 Seed Grant).</p>
+<p><italic><underline>LANL-GrowthRate</underline></italic>: LANL LDRD 20200700ER.</p>
+<p><italic><underline>MOBS-GLEAM_COVID</underline></italic>: COVID Supplement CDC-HHS-6U01IP001137-01.</p>
+<p><italic><underline>NotreDame-mobility</underline></italic> <underline>and</underline> <italic><underline>NotreDame-FRED</underline></italic>: NSF RAPID DEB 2027718</p>
+<p><italic><underline>UA-EpiCovDA</underline></italic>: NSF RAPID Grant # 2028401.</p>
+<p><italic><underline>UCSB-ACTS</underline></italic>: NSF RAPID IIS 2029626.</p>
+<p><italic><underline>UCSD-NEU</underline></italic>: Google Faculty Award, DARPA W31P4Q-21-C-0014, COVID Supplement CDC-HHS-6U01IP001137-01.</p>
+<p><italic><underline>UMass-MechBayes</underline></italic>: NIGMS R35GM119582, NSF 1749854.</p>
+<p><italic><underline>UMich-RidgeTfReg</underline></italic>: The University of Michigan Physics Department and the University of Michigan Office of Research.</p>
+</sec>
+<sec>
+<title>Supplemental Tables and Figures</title>
+<p><bold>Supplemental Figure S1:</bold></p>
+<p>Observed incident deaths in US states and territories over multiple revision dates. Weekly incident deaths are shown for each Monday from June 1, 2020 through November 30, 2020. The latest data revision is shown in pink. If there have been no data revisions in a location, there is a single pink line. If there have been data revisions, additional lines will show on the graph, indicating the last week prior to the data revision. Out of all states and territories evaluated, twelve report data revisions. In some instances, the change is minor, such as in Washington DC and South Carolina where there is a back-distribution of fewer than 5 deaths occurred in a single week. In other locations, such as New Jersey, a large number of retrospective deaths were initially added to EW 26, then later back-distributed over a series of weeks in which the deaths actually occurred. Similarly, Rhode Island had a large number of delayed deaths that were backfilled leading to a discrepancy between the reported incident cases over revision dates from EW15 to EW 35. In locations where it was unknown when the deaths occurred, the spikes in data were not revised. This occured in Delaware during EW 26 and EW 35. Additional information on the causes of the anomalous data reporting and modification dates can be found in the CSSE GitHub repository (<ext-link ext-link-type="uri" xlink:href="https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data">https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data</ext-link>).</p>
+<fig id="figS2" position="float" fig-type="figure">
+<label>Supplemental Figure 2:</label>
+<caption><p>Eligibility of weekly submissions from primary models that contributed incident mortality forecasts to the Forecast Hub. Text in each cell indicates the number of locations (out of the 55 evaluated) for which the model submitted incident death forecasts with all 23 quantiles. Cells that were determined to be an eligible submission are highlighted in green. The weeks used to determine overall model eligibility are outlined by a pink border, including submission weeks from 2020-05-16 through 2020-11-21. The few weeks at the end of the eligibility period that were evaluated at 1-through 3-week horizons but not included in eligibility determinations are highlighted in blue.</p></caption>
+<graphic xlink:href="21250974v1_figS2.tif"/>
+</fig>
+<fig id="figS3" position="float" fig-type="figure">
+<label>Supplemental Figure 3:</label>
+<caption><p>Summary accuracy metrics for all submitted forecasts for forecast horizons of 1 and 4 weeks, aggregated across location, and week. Forecasts for any available forecasted location (nation, state, or territory) were included in this analysis. The two panels represent the prediction interval (PI) coverage rates of 50&#x0025; and 95&#x0025; PIs. If the model is well calibrated, the values in the top panel should be close to 0.50 and the values in the bottom panel should be close to 0.95. The values on the horizontal axis represent the 1-to 4-week horizons forecasted each week. The value on the vertical axis represents the PI coverage.</p></caption>
+<graphic xlink:href="21250974v1_figS3.tif"/>
+</fig>
+<fig id="figS4" position="float" fig-type="figure">
+<label>Supplemental Figure 4:</label>
+<caption><p>Boxplots of all observed WIS, by model and forecast horizon across all 50 states. The four panels represent each of the 1 through 4 week ahead forecast horizons. The boxplots represent the median and interquartile range of the model&#x2019;s average WIS aggregated by submission week and location. Based on this aggregation, the ensemble model has the lowest WIS and 10 models outperform the baseline for each horizon. Models missing more than 4 weeks of forecast submissions are highlighted in red text.</p></caption>
+<graphic xlink:href="21250974v1_figS4.tif"/>
+</fig>
+<table-wrap id="tblS1" orientation="portrait" position="float">
+<label>Supplemental Table 1:</label>
+<caption><p>Summary of 25 models that contributed to the ensemble forecast but were not individually evaluated due to not having enough eligible submissions during the evaluation period.</p></caption>
+<graphic xlink:href="21250974v1_tblS1.tif"/>
+<graphic xlink:href="21250974v1_tblS1a.tif"/>
+<graphic xlink:href="21250974v1_tblS1b.tif"/>
+</table-wrap>
+<table-wrap id="tblS2" orientation="portrait" position="float">
+<label>Supplemental Table 2:</label>
+<caption><p>Sensitivity analysis of relative WIS calculations. We computed the relative weighted interval score (rel WIS,<inline-formula><alternatives><inline-graphic xlink:href="21250974v1_inline11.gif"/></alternatives></inline-formula>) across two different time periods and using two different inclusion criteria, to assess the robustness of the original analysis shown in <xref ref-type="table" rid="tbl2">Table 2</xref>. The results show that the values of relative WIS and the ordering of models according to this metric were not strongly sensitive to whether models with smaller numbers of available forecasts were included in the computation of relative WIS. (The &#x201C;&#x0025; max obs&#x201D; column shows the percentage of the maximum possible scores that a given model made.) Some models showed differences in relative WIS when different weeks were included, which is to be expected if models performed better during different phases of the pandemic. For example, CU-select had a relative WIS of 1.00 in <xref ref-type="table" rid="tbl2">Table 2</xref> and a relative WIS of 0.94 when earlier weeks were omitted.</p></caption>
+<graphic xlink:href="21250974v1_tblS2.tif"/>
+</table-wrap></sec>
+</back>
+</article>

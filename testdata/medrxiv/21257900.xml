@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.2d1 20170631//EN" "JATS-archivearticle1.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" article-type="article" dtd-version="1.2d1" specific-use="production" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="publisher-id">MEDRXIV</journal-id>
+<journal-title-group>
+<journal-title>medRxiv</journal-title>
+<abbrev-journal-title abbrev-type="publisher">medRxiv</abbrev-journal-title>
+</journal-title-group>
+<publisher>
+<publisher-name>Cold Spring Harbor Laboratory</publisher-name>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1101/2021.05.27.21257900</article-id>
+<article-version>1.1</article-version>
+<article-categories>
+<subj-group subj-group-type="hwp-journal-coll">
+<subject>Epidemiology</subject>
+</subj-group>
+</article-categories>
+<title-group>
+<article-title>Estimating the SARS-CoV-2 infected population fraction and the infection-to-fatality ratio: A data-driven case study based on Swedish time series data</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-1758-6274</contrib-id>
+<name><surname>Wacker</surname><given-names>Andreas</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0001-7192-4911</contrib-id>
+<name><surname>J&#x00F6;ud</surname><given-names>Anna</given-names></name>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-6629-1889</contrib-id>
+<name><surname>Bernhardsson</surname><given-names>Bo</given-names></name>
+<xref ref-type="aff" rid="a3">3</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0001-8503-0177</contrib-id>
+<name><surname>Gerlee</surname><given-names>Philip</given-names></name>
+<xref ref-type="aff" rid="a4">4</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-3270-171X</contrib-id>
+<name><surname>Gustafsson</surname><given-names>Fredrik</given-names></name>
+<xref ref-type="aff" rid="a5">5</xref>
+</contrib>
+<contrib contrib-type="author" corresp="yes">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0001-6378-7646</contrib-id>
+<name><surname>Soltesz</surname><given-names>Kristian</given-names></name>
+<xref ref-type="aff" rid="a3">3</xref>
+<xref ref-type="corresp" rid="cor1">&#x002A;</xref>
+</contrib>
+<aff id="a1"><label>1</label><institution>Mathematical Physics, Lund University</institution>, <country>Sweden</country>, E-mail: <email>Andreas.Wacker@fysik.lu.se</email></aff>
+<aff id="a2"><label>2</label><institution>Occupational and environmental medicine, Department of Laboratory Medicine, Lund University</institution>, <country>Sweden</country></aff>
+<aff id="a3"><label>3</label><institution>Automatic Control, Lund University</institution>, <country>Sweden</country></aff>
+<aff id="a4"><label>4</label><institution>Mathematical Sciences, Chalmers University of Technology and University of Gothenburg</institution>, <country>Sweden</country></aff>
+<aff id="a5"><label>5</label><institution>Electrical Engineering, Link&#x00F6;ping University</institution>, <country>Sweden</country></aff>
+</contrib-group>
+<author-notes>
+<corresp id="cor1"><label>&#x002A;</label>Corresponding author; email: <email>kristian@control.lth.se</email></corresp>
+</author-notes>
+<pub-date pub-type="epub">
+<year>2021</year>
+</pub-date>
+<elocation-id>2021.05.27.21257900</elocation-id>
+<history>
+<date date-type="received">
+<day>27</day>
+<month>5</month>
+<year>2021</year>
+</date>
+<date date-type="rev-recd">
+<day>27</day>
+<month>5</month>
+<year>2021</year>
+</date>
+<date date-type="accepted">
+<day>31</day>
+<month>5</month>
+<year>2021</year>
+</date>
+</history>
+<permissions>
+<copyright-statement>&#x00A9; 2021, Posted by Cold Spring Harbor Laboratory</copyright-statement>
+<copyright-year>2021</copyright-year>
+<license license-type="creative-commons" xlink:href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><license-p>This pre-print is available under a Creative Commons License (Attribution-NonCommercial-NoDerivs 4.0 International), CC BY-NC-ND 4.0, as described at <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by-nc-nd/4.0/">http://creativecommons.org/licenses/by-nc-nd/4.0/</ext-link></license-p></license>
+</permissions>
+<self-uri xlink:href="21257900.pdf" content-type="pdf" xlink:role="full-text"/>
+<abstract>
+<title>Abstract</title>
+<sec>
+<title>Aim</title>
+<p>To estimate the COVID-19 infection-to-fatality ratio (IFR), infection-to-case ratio (ICR), and infection-to-ICU admission ratio (IIAR) in Sweden; to suggest methods for time series reconstruction and prediction.</p></sec>
+<sec>
+<title>Methods</title>
+<p>We optimize a set of simple finite impulse response (FIR) models comprising of a scaling factor and time-delay between officially reported cases, ICU admissions and deaths time series using the least squares method. Combined with randomized PCR study results, we utilize this simple model to estimate the total number of infections in Sweden, and the corresponding IFR.</p></sec>
+<sec>
+<title>Results</title>
+<p>The model class provides a good fit between ICU admissions and deaths throughout 2020. Cases fit consistently from July 2020, by when PCR tests had become broadly available. We observe a diminished IFR in late summer as well as a strong decline during 2021, following the launch of a nation-wide vaccination program. The total number of infections during 2020 is estimated to 1.3 million.</p></sec>
+<sec>
+<title>Conclusions</title>
+<p>A FIR model with a delta filter function describes the evolution of epidemiological data in Sweden well. The fact that we found IFR, ICR and IIAR constant over large parts of 2020 is in contrast with claims of healthcare adaptation or mutated virus variants importantly affecting these ratios. The model allows us to retrospectively estimate the COVID-19 epidemiological trajectory, and conclude that Sweden was far from herd immunity by the end of 2020.</p></sec>
+</abstract>
+<kwd-group kwd-group-type="author">
+<title>Keywords</title>
+<kwd>SARS-CoV-2</kwd>
+<kwd>COVID-19</kwd>
+<kwd>Sweden</kwd>
+<kwd>Herd immunity</kwd>
+<kwd>Healthcare demand prediction</kwd>
+<kwd>Data-driven modelling</kwd>
+</kwd-group>
+<counts>
+<page-count count="9"/>
+</counts>
+</article-meta>
+<notes>
+<notes notes-type="competing-interest-statement">
+<title>Competing Interest Statement</title><p>The authors have declared no competing interest.</p></notes>
+<notes notes-type="financial-disclosure">
+<title>Funding Statement</title><p>This work was partially funded by the ELLIIT Strategic Research Area.</p></notes>
+<notes notes-type="disclosures">
+<title>Author Declarations</title><p>I confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.</p><p>Yes</p><p>The details of the IRB/oversight body that provided approval or exemption for the research described are given below:</p><p>N/A</p><p>All necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived.</p><p>Yes</p><p>I understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).</p><p>Yes</p><p>I have followed all appropriate research reporting guidelines and uploaded the relevant EQUATOR Network research reporting checklist(s) and other pertinent material as supplementary files, if applicable.</p><p>Yes</p></notes>
+</notes>
+</front>
+<body>
+<sec id="s1">
+<label>1</label>
+<title>Introduction</title>
+<p>The COVID-19 pandemic has posed enormous global challenges to the healthcare sector. To estimate the future need of personnel, equipment and hospital beds, reliable statistical analysis tools are required. Historic data is an important asset in figuring out how to best combine available time series data to gain predictive capability while reducing the influence of bias and other sources of prediction error and uncertainty. At the same time, statistical analysis of the historical epidemic evolution can provide indications for the success of medical treatments and vaccination programs. It also allows estimation of the accumulated number of infections. This number essentially determines the level of herd immunity, and thus received much attention in Sweden during the spring of 2020.</p>
+<p>It is a difficult task to predict healthcare, and&#x2014;of particular interest in the COVID-19 context&#x2014;ICU demand. This is especially true in an early phase of an epidemic caused by a previously unknown pathogen, such as the SARS-CoV-2 virus that causes COVID-19. While it was possible to falsify several early prediction models based on high sensitivity, <italic>e</italic>.<italic>g</italic>. [<xref ref-type="bibr" rid="c1">1</xref>], it remains a largely open question how time series data could be analyzed to arrive at accurate and precise predictions, with practical use to healthcare planners.</p>
+<p>We investigate if a particular simple class of time-invariant finite impulse response (FIR) models [<xref ref-type="bibr" rid="c2">2</xref>]&#x2014;those with a delayed delta impulse response&#x2014;is sufficient to model the relation between time series data. Particularly, our aim is to investigate whether the simple FIR model is sufficient for relating COVID-19 cases (detected infections), ICU admissions, and registered deaths in Sweden. We then demonstrate how such simple models can be used for reconstructing the epidemiological evolution during times of measurement uncertainty caused by limited test capacity, as well as prediction of ICU demand based on case data.</p>
+</sec>
+<sec id="s2">
+<label>2</label>
+<title>Methods</title>
+<sec id="s2a">
+<label>2.1</label>
+<title>Data used</title>
+<p>In this paper, the evolution of the pandemic is based on the following official and openly accessible time series reported by the Swedish Public Health Agency:</p>
+<list list-type="simple">
+<list-item><label>-</label><p><italic>Cases</italic> Daily PCR-confirmed SARS-CoV-2 cases in Sweden. The date refers to the registration.</p></list-item>
+<list-item><label>-</label><p><italic>ICU admissions</italic> Daily number of ICU admissions in Sweden for patients with COVID-19 at the given day.</p></list-item>
+<list-item><label>-</label><p><italic>Deaths</italic> Daily number of deaths in Sweden for persons with a SARS-CoV-2 infection at the given day.</p></list-item>
+</list>
+<p>The data was extracted from [<xref ref-type="bibr" rid="c3">3</xref>] on 14 May 2021 and covers dates until 13 May..</p>
+<p>Due to delays in reporting, the last 3 weeks for death data and the last 3 days for ICU and case data are disregarded from statistical analysis and displayed by dotted lines in this work. Due to insufficient testing we also omit case data before 18 June 2020 in the model fitting. During the first wave in March&#x2013;May 2020, PCR-testing was essentially focused to persons admitted to hospital and elderly care in Sweden due to limited testing capacity. In the first half of June, the Swedish government strongly advocated the testing of all persons with symptoms of COVID-19 and supplied financial assistance to the regions as of 11 June 2020. We assume that this had full effect on testing after a further week, which justifies the date given above.</p>
+<p>In addition to the <italic>ordinary</italic> testing of persons with suspected COVID-19 infection, results for six <italic>randomized</italic> studies in 2020 and 2021 have been published by the Swedish Public Health Agency [<xref ref-type="bibr" rid="c4">4</xref>]. They can be used to estimate the prevalence of COVID-19 in the population at the corresponding times. The studies conducted 24&#x2013;28 August 2020 and 21&#x2013;25 September 2020 did not provide any positive samples, while 23, 9, 24, and 43 positive cases where detected for 21&#x2013;24 April 2020, 25-&#x2013;28 May 2020, 30 November&#x2013;4 December 2020, and 12&#x2013;16 April 2021, respectively. Test results were available for slightly less than 3 000 persons in the studies of 2020 and 4758 persons for the study in 2021. The limited sample size results in statistical uncertainty, indicated by the 68 &#x0025; confidence limits for the average assuming a Poisson distribution for the number of positively tested. Sampling bias might provide a reduced prevalence for the two latest studies according to the statistical analysis performed in the studies [<xref ref-type="bibr" rid="c4">4</xref>]. Here, we use the bare results based on the number of positive cases. For comparison, we also provide an estimate for the ICR based on sampling-bias corrected data.</p>
+<p>While deaths and ICU admissions related to COVID-19 naturally also appear in the case data, their total number until mid-May 2021 sums up to only 1.4 &#x0025; and 0.7 &#x0025; of the total cases, respectively. Regarding ICU and death data, one has to take into account that approximately 75 &#x0025; of ICU patients survive [<xref ref-type="bibr" rid="c5">5</xref>], and former ICU patients contribute to the death toll with only 13 &#x0025;, as there are approximately twice as many deaths as ICU admissions. Furthermore, ICU admission data and death data relate to different age groups: While 69 &#x0025; of the ICU patients are younger than 70 years old, 68 &#x0025; of the deceased have reached at least the age of 80. (All data from [<xref ref-type="bibr" rid="c3">3</xref>] extracted on 14 May 2021.) The small overlap between the groups generating the cases, ICU and deaths time series suggests that statistical correlations between the time series can be expected to reflect the links to their common cause: antecedent SARS-CoV-2 infection in the Swedish society. This motivates the FIR model discussed in <xref ref-type="sec" rid="s2c">Sec. 2.3</xref> with three independent filter functions for cases, ICU admission, and deaths.</p>
+<p>Furthermore, data on antibody prevalence from blood donors and health center samples (unrelated to COVID-19-specific testing) have been aggregated and published [<xref ref-type="bibr" rid="c6">6</xref>]. Here we provide 95 &#x0025; confidence intervals for COVID-prevalence based on these data sources.</p>
+</sec>
+<sec id="s2b">
+<label>2.2</label>
+<title>Parameters used</title>
+<p>In addition to the data on the COVID-19 evolution and prevalences provided by the Swedish Public Health Agency addressed in <xref ref-type="sec" rid="s2a">Sec. 2.1</xref>, we apply three further parameters within this study:</p>
+<list list-type="simple">
+<list-item><label>-</label><p>The time interval <italic>T</italic><sub>interval</sub> &#x003D; 10 &#x00B1; 1 days, during which an infected person shows a positive PCR result. See <xref ref-type="sec" rid="s2e">Sec. 2.5</xref> for details.</p></list-item>
+<list-item><label>-</label><p>The probability <italic>p</italic><sub>antibody</sub> &#x003D; 0.95 &#x00B1; 0.05, that a previous SARS-CoV-2 infection is detected by an antibody test. See <xref ref-type="sec" rid="s3b">Sec. 3.2</xref> for details.</p></list-item>
+<list-item><label>-</label><p>The average duration <italic>&#x03C4;</italic><sub><italic>a</italic></sub> &#x003D; 17 between infection and the admission to ICU. See <xref ref-type="sec" rid="s3c">Sec. 3.3</xref> for details.</p></list-item>
+</list>
+<p>Note that <italic>T</italic><sub>interval</sub> and <italic>p</italic><sub>antibody</sub> are used independently of each other in two different determinations of the ICR. Both ways provide essentially the same result, which stabilizes our results against systematic errors in these parameters. <italic>&#x03C4;</italic><sub><italic>a</italic></sub> only enters (22) and the time axis in <xref rid="fig3" ref-type="fig">Fig. 3</xref>.</p>
+</sec>
+<sec id="s2c">
+<label>2.3</label>
+<title>Finite impulse response models</title>
+<p>Finite impulse response (FIR) models are a class of linear filters. (The interested reader is referred to [<xref ref-type="bibr" rid="c2">2</xref>] for a thorough mathematical introduction to FIR and related linear model structures.) They describe the outcome of a time-dependent observable (such as a death rate) by a sum of preceding data (here number of infections at earlier dates), which are weighted by a filter function. They are commonly used for analysing epidemiological problems, where the filter function could represent for example the serial interval distribution. For practical applications, the filter function is often not easy to obtain. Here we show that the assumption of a Dirac delta response, where the filter function has only two free parameters (delay and amplitude), allows for a consistent analysis of the COVID-19 evolution in Sweden.</p>
+<p>A central entity for the evolution of an epidemic is the number of new infections <inline-formula><alternatives><inline-graphic xlink:href="21257900v1_inline1.gif"/></alternatives></inline-formula>, occurring on day <italic>t</italic>. Let <inline-formula><alternatives><inline-graphic xlink:href="21257900v1_inline2.gif"/></alternatives></inline-formula>, be the probability for an infection starting on day <italic>t</italic> to generate a reported positive PCR test <italic>&#x03C4;</italic> days later. This results in the observation model
+<disp-formula id="eqn1">
+<alternatives><graphic xlink:href="21257900v1_eqn1.gif"/></alternatives>
+</disp-formula>
+where <inline-formula><alternatives><inline-graphic xlink:href="21257900v1_inline3.gif"/></alternatives></inline-formula> denotes new cases on day <italic>t</italic>, and <inline-formula><alternatives><inline-graphic xlink:href="21257900v1_inline4.gif"/></alternatives></inline-formula> is a zero-mean uncorrelated noise process representing statistical fluctuations associated with the probability <inline-formula><alternatives><inline-graphic xlink:href="21257900v1_inline5.gif"/></alternatives></inline-formula>. The model has finite impulse since <italic>p</italic><sub><italic>c</italic></sub> is identically zero for sufficiently large <italic>&#x03C4;</italic> (<italic>e</italic>.<italic>g</italic>. a human lifetime), and can be regarded practically as zero for <italic>&#x03C4;</italic> &#x226B; 1 week. The time index <italic>t</italic> has the unit of days. In (1) it represents that the detection probability distribution, defined through the dependence of the second time index <italic>&#x03C4;</italic>, may itself vary over time.</p>
+<p>The use of the tilde &#x223C; in <xref ref-type="disp-formula" rid="eqn1">(1)</xref> is to distinguish unfiltered measurements. Historic observations <inline-formula><alternatives><inline-graphic xlink:href="21257900v1_inline6.gif"/></alternatives></inline-formula> exhibit a clear weekday pattern. For retrospective analysis it is therefore customary to apply a centered 7-day moving average filter,
+<disp-formula id="eqn2">
+<alternatives><graphic xlink:href="21257900v1_eqn2.gif"/></alternatives>
+</disp-formula>
+to compensate for such effects. Throughout the paper we will work with time series that have been subjected to filtering according to <xref ref-type="disp-formula" rid="eqn2">(2)</xref>. We will drop the &#x223C; notation but still write <italic>e</italic>.<italic>g</italic>. &#x201C;cases&#x201D; instead of &#x201C;filtered cases&#x201D; in favor of readability.</p>
+<p>Within linear system theory, a model with the structure of <xref ref-type="disp-formula" rid="eqn1">(1)</xref> is referred to as a (stochastic) finite impulse response (FIR) model, implying (combined with <xref ref-type="disp-formula" rid="eqn2">(2)</xref>) that a <italic>y</italic><sub><italic>c</italic></sub> (<italic>t</italic>) can be described by a finite record of <italic>x</italic> (<italic>t</italic>).</p>
+<p>Summation of <italic>p</italic><sub><italic>c</italic></sub> (<italic>t, &#x03C4;</italic>) over <italic>&#x03C4;</italic>, yields the expected infection-to-case ratio (ICR):
+<disp-formula id="eqn3">
+<alternatives><graphic xlink:href="21257900v1_eqn3.gif"/></alternatives>
+</disp-formula>
+defined as the probability that a person infected on day <italic>t</italic> will eventually become detected and registered as a case.</p>
+<p>The central point of the manuscript is that we investigate the hypothesis that <italic>p</italic><sub><italic>c</italic></sub> (<italic>t, &#x03C4;</italic>) can be adequately modeled using the delta FIR model
+<disp-formula id="eqn4">
+<alternatives><graphic xlink:href="21257900v1_eqn4.gif"/></alternatives>
+</disp-formula>
+where the discrete delta filter function given by
+<disp-formula id="eqn5">
+<alternatives><graphic xlink:href="21257900v1_eqn5.gif"/></alternatives>
+</disp-formula>
+where <italic>&#x03C4;</italic><sub><italic>c</italic></sub> is the average delay between infection and case registration. Note that the model <xref ref-type="disp-formula" rid="eqn4">(4)</xref> is defined for the averaged quantities <xref ref-type="disp-formula" rid="eqn2">(2)</xref>, where <italic>p</italic><sub><italic>c</italic></sub> (<italic>t, &#x03C4;</italic>) does not display the weekday fluctuations in <italic>t</italic>, that are likely in <inline-formula><alternatives><inline-graphic xlink:href="21257900v1_inline7.gif"/></alternatives></inline-formula>. Assuming that the <italic>&#x03C4;</italic>-dependence of <italic>p</italic><sub><italic>c</italic></sub>(<italic>t, &#x03C4;</italic>) is reasonably well reproduced by its average <italic>&#x03C4;</italic><sub><italic>c</italic></sub> and standard deviation <italic>&#x03C3;</italic>, the simplified model <xref ref-type="disp-formula" rid="eqn4">(4)</xref> is justified in App. A. This relies on the assumption that <italic>p</italic><sub><italic>c</italic></sub> (<italic>t, &#x03C4;</italic>) does not change on the scale <italic>&#x03C3;</italic> in <italic>t</italic> and that the second derivative of <italic>x</italic>(<italic>t</italic>) is much smaller than <italic>x</italic> (<italic>t</italic>) / <italic>&#x03C3;</italic><sup>2</sup>. For the special case of an exponential evolution for <italic>x</italic> (<italic>t</italic>), this provides an accuracy of better than 5 &#x0025; if <italic>&#x03C3;</italic> is less than 46 &#x0025; of the doubling time, as already stated in [<xref ref-type="bibr" rid="c7">7</xref>].</p>
+<p>Employing <xref ref-type="disp-formula" rid="eqn4">(4)</xref>, the observation model <xref ref-type="disp-formula" rid="eqn1">(1)</xref> becomes
+<disp-formula id="eqn6">
+<alternatives><graphic xlink:href="21257900v1_eqn6.gif"/></alternatives>
+</disp-formula></p>
+<p>The model <xref ref-type="disp-formula" rid="eqn6">(6)</xref> asserts that the number of cases <italic>y</italic><sub><italic>c</italic></sub> (<italic>t</italic>), detected through PCR testing on day <italic>t</italic>, only depends on the number of new infections <italic>x</italic>(<italic>t</italic> &#x2212;<italic>&#x03C4;</italic><sub><italic>c</italic></sub>) that occurred <italic>&#x03C4;</italic><sub><italic>c</italic></sub> days earlier. Furthermore, the expected dependence is through a linear scaling factor, the ICR.</p>
+</sec>
+<sec id="s2d">
+<label>2.4</label>
+<title>Relating the time series</title>
+<p>We introduce analogous observation models for ICU admissions <italic>y</italic><sub><italic>a</italic></sub> and deaths <italic>y</italic><sub><italic>d</italic></sub>:
+<disp-formula id="eqn7">
+<alternatives><graphic xlink:href="21257900v1_eqn7.gif"/></alternatives>
+</disp-formula>
+<disp-formula id="eqn8">
+<alternatives><graphic xlink:href="21257900v1_eqn8.gif"/></alternatives>
+</disp-formula>
+where <italic>b</italic><sub><italic>a</italic></sub> (<italic>t</italic>) is the Infection ICU admission Ratio (IIAR) and <italic>b</italic><sub><italic>d</italic></sub> (<italic>t</italic>) the Infection Fatality Ratio (IFR), where the time dependence denotes the infection date.</p>
+<p>The underlying infections <italic>x</italic> (<italic>t</italic>) are unknown, and cannot be estimated solely from the measurements <italic>y</italic><sub><italic>c</italic></sub>, <italic>y</italic><sub><italic>a</italic></sub>, <italic>y</italic><sub><italic>d</italic></sub>, since an absolute reference frame against which to estimate the individual time-shifts and gain factors is not available. However, if we disregard the noise terms, we can relate the cases and ICU admissions time series through
+<disp-formula id="eqn9">
+<alternatives><graphic xlink:href="21257900v1_eqn9.gif"/></alternatives>
+</disp-formula>
+where <italic>&#x03C4;</italic><sub><italic>ac</italic></sub> &#x003D; <italic>&#x03C4;</italic><sub><italic>a</italic></sub> &#x2212; <italic>&#x03C4;</italic><sub><italic>c</italic></sub> is the average delay between the registration as a case and the admission to ICU (not necessarily for the same person). Analogously, we have
+<disp-formula id="eqn10">
+<alternatives><graphic xlink:href="21257900v1_eqn10.gif"/></alternatives>
+</disp-formula>
+with <italic>&#x03C4;</italic><sub><italic>dc</italic></sub> &#x003D; <italic>&#x03C4;</italic><sub><italic>d</italic></sub> &#x2212;<italic>&#x03C4;</italic><sub><italic>c</italic></sub> and
+<disp-formula id="eqn11">
+<alternatives><graphic xlink:href="21257900v1_eqn11.gif"/></alternatives>
+</disp-formula>
+with <italic>&#x03C4;</italic><sub><italic>da</italic></sub> &#x003D; <italic>&#x03C4;</italic><sub><italic>d</italic></sub> &#x2212; <italic>&#x03C4;</italic><sub><italic>a</italic></sub>.</p>
+<p><xref ref-type="disp-formula" rid="eqn9">Eqs. (9</xref>&#x2013;<xref ref-type="disp-formula" rid="eqn11">11</xref>) can be conveniently fitted to data. If the time-dependence of the <italic>b</italic>-coefficients is negligible, we can fit the ratio <italic>&#x03BB;</italic> &#x003D; <italic>b</italic><sub><italic>a</italic></sub> / <italic>b</italic><sub><italic>c</italic></sub> and <italic>&#x03C4;</italic><sub><italic>ac</italic></sub> from <xref ref-type="disp-formula" rid="eqn9">(9)</xref> by minimising the sum of squares
+<disp-formula id="eqn12">
+<alternatives><graphic xlink:href="21257900v1_eqn12.gif"/></alternatives>
+</disp-formula>
+which results in the two fitting parameters <italic>&#x03BB;, &#x03C4;</italic><sub><italic>ac</italic></sub>. In order to obtain robust estimates we alternatively minimise the modified sum of squares
+<disp-formula id="eqn13">
+<alternatives><graphic xlink:href="21257900v1_eqn13.gif"/></alternatives>
+</disp-formula></p>
+<p>As a third option, we maximize the correlation coefficient
+<disp-formula id="eqn14">
+<alternatives><graphic xlink:href="21257900v1_eqn14.gif"/></alternatives>
+</disp-formula>
+to obtain <italic>&#x03C4;</italic><sub><italic>ac</italic></sub> and use <inline-formula><alternatives><inline-graphic xlink:href="21257900v1_inline8.gif"/></alternatives></inline-formula>. In all three approaches, the times <italic>t</italic> are chosen such that reliable data for both <italic>y</italic><sub><italic>c</italic></sub>(<italic>t</italic> &#x2212; <italic>&#x03C4;</italic><sub><italic>ac</italic></sub>)and <italic>y</italic><sub><italic>a</italic></sub> (<italic>t</italic>) are available. <xref ref-type="disp-formula" rid="eqn10">Eqs. (10</xref>,<xref ref-type="disp-formula" rid="eqn11">11</xref>) are treated in the same way, where the indices <italic>a, c</italic> are replaced by <italic>d, c</italic> and <italic>d, a</italic>, respectively, in the formulae above. Note, that each combination of indices applies a different time interval due to the reliability condition.</p>
+</sec>
+<sec id="s2e">
+<label>2.5</label>
+<title>Calibrating against randomized PCR test data</title>
+<p>While (9&#x2013;11) establish relative relations between the time series <italic>y</italic><sub><italic>c</italic></sub>, <italic>y</italic><sub><italic>a</italic></sub>, <italic>y</italic><sub><italic>d</italic></sub>, a &#x201C;grounding point&#x201D; is needed to obtain absolute values of the time shift and scaling parameters of the observation models (6&#x2013;8). Randomized PCR studies provide such a grounding point, where we use the data discussed in <xref ref-type="sec" rid="s2a">Sec. 2.1</xref>. From the number of positive PCR test results in each study, we can estimate the prevalence <italic>N</italic><sub>positive</sub> (<italic>t</italic>) by multiplying with the population of Sweden and dividing by the number of tested persons.</p>
+<p>The prevalence <italic>N</italic><sub>positive</sub> (<italic>t</italic>) depends on the probability <italic>p</italic><sub>positive</sub> (<italic>&#x03C4;</italic>) to have a positive test result <italic>T</italic> days after becoming infected:
+<disp-formula id="eqn15">
+<alternatives><graphic xlink:href="21257900v1_eqn15.gif"/></alternatives>
+</disp-formula></p>
+<p>After time-averaging and using again the impulse FIR model this provides
+<disp-formula id="eqn16">
+<alternatives><graphic xlink:href="21257900v1_eqn16.gif"/></alternatives>
+</disp-formula>
+where
+<disp-formula id="eqn17">
+<alternatives><graphic xlink:href="21257900v1_eqn17.gif"/></alternatives>
+</disp-formula>
+is the average time-interval over which a positive test result is expected and
+<disp-formula id="eqn18">
+<alternatives><graphic xlink:href="21257900v1_eqn18.gif"/></alternatives>
+</disp-formula>
+is the average delay after the time of infection. From the data of <xref rid="fig2" ref-type="fig">Fig. 2</xref> of [<xref ref-type="bibr" rid="c8">8</xref>], we extract <italic>T</italic><sub>Interval</sub> &#x003D; 10.8 days and <italic>&#x03C4;</italic><sub>positive</sub> &#x003D; 12 days. Another study [<xref ref-type="bibr" rid="c9">9</xref>] found <italic>T</italic><sub>Interval</sub> &#x003D; 9.5 days. Motivated by these numbers we use <italic>T</italic><sub>Interval</sub> &#x003D; 10 &#x00B1; 1 days and make the simplifying assumption <italic>&#x03C4;</italic><sub>positive</sub> &#x003D; <italic>&#x03C4;</italic><sub><italic>c</italic></sub>. The resulting value for <italic>&#x03C4;</italic><sub><italic>c</italic></sub> from <xref ref-type="disp-formula" rid="eqn22">(22)</xref> agrees well with <italic>&#x03C4;</italic><sub>positive</sub> &#x003D; 12 days, extracted from [<xref ref-type="bibr" rid="c8">8</xref>]). Analogously to <xref ref-type="disp-formula" rid="eqn9">(9)</xref> we fit the relation
+<disp-formula id="eqn19">
+<alternatives><graphic xlink:href="21257900v1_eqn19.gif"/></alternatives>
+</disp-formula>
+where <italic>j</italic> &#x003D; <italic>a, d</italic> refers to the data sets for ICU and deaths. We apply all three fitting routines, again neglecting the time-dependence of <italic>b</italic> <sub><italic>j</italic></sub> (<italic>t</italic>) &#x2014;however, <italic>&#x03C4;</italic><sub>positive</sub> &#x003D; <italic>&#x03C4;</italic><sub><italic>c</italic></sub> is kept fixed. (As we only have 4 non-vanishing data points for <italic>N</italic><sub>positive</sub>, the use of a second fit-parameter next to <italic>b</italic> <sub><italic>j</italic></sub> could provide spurious results)</p>
+</sec>
+</sec>
+<sec id="s3">
+<label>3</label>
+<title>Results</title>
+<sec id="s3a">
+<label>3.1</label>
+<title>Scaling of data</title>
+<p>The symbols on the upper panel of <xref rid="fig1" ref-type="fig">Fig. 1</xref> show the daily Swedish numbers of positively tested persons (named cases), persons admitted to intensive care units (named ICU), and deaths, see <xref ref-type="sec" rid="s2a">Sec. 2.1</xref> for details. These data were averaged over a seven day period (lines) in order to avoid weekday fluctuations, resulting in the functions <italic>y</italic><sub><italic>c</italic></sub> (<italic>t</italic>) (Cases), <italic>y</italic><sub><italic>a</italic></sub> (<italic>t</italic>) (ICU admission), and <italic>y</italic><sub><italic>d</italic></sub> (<italic>t</italic>) (deaths), which are the main data-sets used throughout this article. Here the time <italic>t</italic> is chosen as the central day of the averaging period.</p>
+<fig id="fig1" position="float" fig-type="figure">
+<label>Fig. 1.</label>
+<caption><p><bold>Upper panel:</bold> Raw data (symbols) used in this study. (The numbers of ICU admissions and deaths have been multiplied by 100 to provide comparable numbers.) The lines show the respective averages over a 7 day period, where the central day of the interval was used in the abscissa. <bold>Lower panel:</bold> 7 day averaged data from upper panel scaled by different factors as given in the legend. The ICU-data are shifted by 5 days to the left and the death-data are shifted by 13 days to the left, so that they essentially fall on one curve. Dotted lines indicate sections of data that are considered as incomplete. The orange error bars provide scaled 68 &#x0025; (one normal standard deviation) confidence levels of randomized PCR study data. All scaling factors and delays are taken from the LS values in <xref ref-type="table" rid="tbl1">Tab. 1</xref>.</p></caption>
+<graphic xlink:href="21257900v1_fig1.tif"/>
+</fig>
+<p>As described in <xref ref-type="sec" rid="s2d">Sec. 2.4</xref>, we determined the ratios <italic>b</italic><sub><italic>a</italic></sub> / <italic>b</italic><sub><italic>c</italic></sub>, <italic>b</italic><sub><italic>d</italic></sub> / <italic>b</italic><sub><italic>c</italic></sub>, and <italic>b</italic><sub><italic>d</italic></sub> / <italic>b</italic><sub><italic>a</italic></sub> as well as the corresponding delays by the following procedure. For the fitting, we disregarded the death data after 1 February 2021, as they are affected by the vaccination program and thus a time-dependence for <italic>b</italic><sub><italic>d</italic></sub> (<italic>t</italic>) is expected here. We also disregard the case data before 18 June 2020, when testing became available to all persons with symptoms in Sweden, see <xref ref-type="sec" rid="s2a">Sec. 2.1</xref>. Finally, we consider the data for cases and ICU admission from the last three days and the death data from the last three weeks as unreliable, as late reports are common over these periods. The results are given in <xref ref-type="table" rid="tbl1">Tab. 1</xref>. We find that all three approaches provide identical time delays, which we regard as particularly reliable. Also the fractions between the ratios agree fairly well with deviations far below 10 &#x0025;. In the following we apply the values from the least squares method LS, see <xref ref-type="sec" rid="s2d">Sec. 2.4</xref>, but we note, that none of our results depends on this choice. The relations <italic>b</italic><sub><italic>a</italic></sub> / <italic>b</italic><sub><italic>c</italic></sub> &#x00B7; <italic>b</italic><sub><italic>d</italic></sub> / <italic>b</italic><sub><italic>a</italic></sub> &#x003D; <italic>b</italic><sub><italic>d</italic></sub> / <italic>b</italic><sub><italic>c</italic></sub> and <italic>&#x03C4;</italic><sub><italic>ac</italic></sub> &#x002B; <italic>&#x03C4;</italic><sub><italic>da</italic></sub> &#x003D; <italic>&#x03C4;</italic><sub><italic>dc</italic></sub> hold only approximately as different time intervals are used in the fitting due to the exclusion of death data after 1 February 2021 and case data before 18 June 2020 addressed above.</p>
+<table-wrap id="tbl1" orientation="portrait" position="float">
+<label>Table 1.</label>
+<caption><p>Results for different fitting procedures detailed in <xref ref-type="sec" rid="s2d">Sec. 2.4</xref> for ratios and time delays. In the last two rows the fitted values for <italic>T</italic><sub>Interval</sub>/<italic>b</italic><sub><italic>a</italic></sub> and <italic>T</italic><sub>Interval</sub>/<italic>b</italic><sub><italic>d</italic></sub> were multiplied with the factors from row 1 and 3 respectively to obtain estimates for <italic>T</italic><sub>Interval</sub>/<italic>b</italic><sub><italic>c</italic></sub>.</p></caption>
+<graphic xlink:href="21257900v1_tbl1.tif"/>
+</table-wrap>
+<p>Using these scaling factors <italic>b</italic><sub><italic>a</italic></sub>/<italic>b</italic><sub><italic>c</italic></sub> &#x003D; 1/193 and <italic>b</italic><sub><italic>d</italic></sub>/<italic>b</italic><sub><italic>c</italic></sub> &#x003D; 1 / 68 as well as the respective time delays, the lower panel of <xref rid="fig1" ref-type="fig">Fig. 1</xref> shows that all three curves agree very well over the second wave of November 2020&#x2013;January 2021. The ICU and death curve also show a similar behavior at the first wave March&#x2013;May 2020, albeit the ratio between ICU admission and deaths appears to be slightly higher here. The case numbers are much lower due to the limited testing before mid-July. For the third wave March&#x2013;May 2021, the ICU and case curve agree very well (the dip in cases around 1 April may be attributed to decreased testing around Easter). We also see that the death curve shows much lower values from around mid-January 2021, which coincides with the start of the vaccination program in Sweden at the end of 2020.</p>
+</sec>
+<sec id="s3b">
+<label>3.2</label>
+<title>Comparing with randomized PCR and antibody studies</title>
+<p>We also fitted the data from the 6 randomized PCR studies to the ICU and death data (here we omitted the sixth study, as the fatality was significantly reduced in 2021, most likely due to the vaccination program) and found almost identical results in both cases, see <xref ref-type="table" rid="tbl1">Tab. 1</xref>. Thus, the prevalence of PCR-detectable SARS-CoV2 infections is about 16 times higher than the number of cases (as reconstructed by shifting and scaling the death and ICU data), see the lower panel of <xref rid="fig1" ref-type="fig">Fig. 1</xref>. As an infected person can be detected over an average time interval <italic>T</italic><sub>interval</sub>, but is only registered once as a case with probability <italic>b</italic><sub><italic>c</italic></sub>, this implies <italic>T</italic><sub>Interval</sub> / <italic>b</italic><sub><italic>c</italic></sub> &#x2248; 15.6 &#x00B1; 0.9.See <xref ref-type="sec" rid="s2e">Sec. 2.5</xref> for details. Here we used the average of all values provided in the two lowest rows of <xref ref-type="table" rid="tbl1">Tab. 1</xref> and used the maximal deviation as an estimate for the error. The time interval, an infected person is tested positive seems to be less well known. Using <italic>T</italic><sub>Interval</sub> &#x003D; 10 &#x00B1; 1 days, see <xref ref-type="sec" rid="s2e">Sec. 2.5</xref>, this provides the ICR based on the prevalence studies
+<disp-formula id="eqn20">
+<alternatives><graphic xlink:href="21257900v1_eqn20.gif"/></alternatives>
+</disp-formula></p>
+<p>We note that the sampling-bias corrected data for the prevalence results in a slightly larger value <inline-formula><alternatives><inline-graphic xlink:href="21257900v1_inline9.gif"/></alternatives></inline-formula> with overlapping error marginal.</p>
+<p>The lower panel of <xref rid="fig1" ref-type="fig">Fig. 1</xref> shows, that the case data agree with the prevalences divided by 16 after testing become widely accessible around mid of June 2020. As both the scaled ICU and death data agree well with the prevalences at all times, we can take these curves for estimating the number of cases before mid-July, where the case data are not reliable due to limited testing.</p>
+<p>We find a clear plateau of total cases in July&#x2013;November 2020, as there were few new cases in this period. The average plateau value (at 1. Sept) was 450 000 (reconstructed) cases, with an uncertainty (based on the ICU and death data) of about 55 000. Antibody tests for different groups provide estimates of 700 000 positive persons is Sweden both at the beginning and the end of the plateau, see <xref rid="fig2" ref-type="fig">Fig. 2</xref>. This results in <italic>b</italic><sub><italic>c</italic></sub> / <italic>p</italic><sub>antibody</sub> &#x003D; 0.64 &#x00B1; 0.08. The probability <italic>p</italic><sub>antibody</sub> to develop detectable antibodies has been found to be above 90 &#x0025; [<xref ref-type="bibr" rid="c10">10</xref>], [<xref ref-type="bibr" rid="c11">11</xref>]. As it should not exceed 100 &#x0025;, we assume <italic>p</italic><sub>antibody</sub> &#x003D; 0.95 &#x00B1; 0.05, and find</p>
+<fig id="fig2" position="float" fig-type="figure">
+<label>Fig. 2.</label>
+<caption><p>Accumulated number of cases at a given date, where we added the estimates based on scaling the death and ICU data. The dashed blue line provides the case data where we added an estimate for number of cases missed due to limited testing before mid-June. The symbols with error bars show the results of antibody tests performed for blood donors and blood samples from health centers [<xref ref-type="bibr" rid="c6">6</xref>], where the fraction of positive tests was multiplied by Sweden&#x2019;s population. Note that the number of persons with antibodies in March 2021 include detected results from vaccinations.</p></caption>
+<graphic xlink:href="21257900v1_fig2.tif"/>
+</fig>
+<p>
+<disp-formula id="eqn21">
+<alternatives><graphic xlink:href="21257900v1_eqn21.gif"/></alternatives>
+</disp-formula></p>
+<p>This agrees very well with the different estimate <xref ref-type="disp-formula" rid="eqn20">(20)</xref>, albeit different statistical and systematic errors (in particular the values of <italic>T</italic><sub>Interval</sub> and <italic>p</italic><sub>antibody</sub>) enter both ways to calculate <italic>b</italic><sub><italic>c</italic></sub>. Thus we consider <italic>b</italic><sub><italic>c</italic></sub> &#x003D; 0.63 as a good estimate for the ICR with the awareness that a 10 &#x0025; error is not unlikely.</p>
+<p>We note, that a relatively large number of persons with antibodies was found in the study at the beginning of March 2021. Here, one has to take into account that a part of the antibodies detected results from vaccinations. At this time about 700 000 persons had been vaccinated in Sweden and a majority of them should have developed antibodies, when the data was collected.</p>
+</sec>
+<sec id="s3c">
+<label>3.3</label>
+<title>Reconstructing the IFR and the IIAR</title>
+<p>Assuming the ICR <italic>b</italic><sub><italic>c</italic></sub> &#x003D; 0.63 for the time after June 18<sup>th</sup>, 2020, we can estimate the variables <italic>b</italic><sub><italic>a</italic></sub> (<italic>t</italic>) and <italic>b</italic><sub><italic>d</italic></sub> (<italic>t</italic>) from (9,10). At first we need the absolute delays. Here we rely on the data for ICU admission, which in average occurs about 11 days after the onset of symptoms according to the Swedish Intensive Care Registry [<xref ref-type="bibr" rid="c12">12</xref>]. Furthermore, it is known, that it takes about 6 days from the times of infection to develop symptoms [<xref ref-type="bibr" rid="c13">13</xref>]&#x2013;[<xref ref-type="bibr" rid="c15">15</xref>]. Thus we use <italic>&#x03C4;</italic><sub><italic>a</italic></sub> &#x003D; 17 days in the following. Based on the values on <xref ref-type="table" rid="tbl1">Tab. 1</xref> we get
+<disp-formula id="eqn22">
+<alternatives><graphic xlink:href="21257900v1_eqn22.gif"/></alternatives>
+</disp-formula></p>
+<p>In <xref rid="fig3" ref-type="fig">Fig. 3</xref> we plot the time-dependence of the infection-to-ICU admission ratio (IIAR) <italic>b</italic><sub><italic>a</italic></sub> (<italic>t</italic>) by a green line on the basis of <xref ref-type="disp-formula" rid="eqn9">(9)</xref>. Here we used 21 day averages to restrict fluctuations. We find that <italic>b</italic><sub><italic>a</italic></sub> (<italic>t</italic>) &#x2248; 0.34 &#x0025; is close to its average, which confirms the quality of the scaling. The larger bump around late July occurs within a range with small numbers of ICU admissions (average of 1.6 in August 2020), so that statistical fluctuations cannot be excluded here.</p>
+<fig id="fig3" position="float" fig-type="figure">
+<label>Fig. 3.</label>
+<caption><p>Estimated values for the IIAR <italic>b</italic><sub><italic>a</italic></sub> (<italic>t</italic>) (green) and the IFR <italic>b</italic><sub><italic>d</italic></sub> (<italic>t</italic>) (red, magenta) based on (9,10,11). We assume a constant ICR <italic>b</italic><sub><italic>c</italic></sub> &#x003D; 0.63, which appears reliable for cases after 18 June (dotted curves indicate that earlier cases data are applied). The horizontal dashed lines provide the average values.</p></caption>
+<graphic xlink:href="21257900v1_fig3.tif"/>
+</fig>
+<p>Similarly, we obtain the IFR <italic>b</italic><sub><italic>d</italic></sub> (<italic>t</italic>) from <xref ref-type="disp-formula" rid="eqn10">(10)</xref> as shown by the red line in <xref rid="fig3" ref-type="fig">Fig. 3</xref>. On average, we have 0.74 &#x0025; until end of 2020 (before vaccinations started to show effects), but there are pronounced changes over time. For infections in August and September, the IFR is much lower. For infections after 1 January 2021, we see a distinct decline in the IFR reaching values of 0.2 &#x0025; for infections around 1 April 2021. The same behavior for the IFR can be obtained from from <xref ref-type="disp-formula" rid="eqn11">(11)</xref> as shown by the magenta line in <xref rid="fig3" ref-type="fig">Fig. 3</xref>, which now extrapolates to times before mid-June under the assumption, that the IIAR remained essentially constant in this period as well.</p>
+</sec>
+</sec>
+<sec id="s4">
+<label>4</label>
+<title>Discussion</title>
+<p>Using openly accessible data from the Swedish Public Health Agency and the Swedish Intensive Care Registry, our approach provides estimates for the infection-to-fatality ratio (IFR), infection-to-case ratio (ICR), and infection-to-ICU admission ratio (IIAR). We find that data for daily cases, daily ICU admission, and daily deaths of individuals with confirmed infection fall on essentially a single curve based on a FIR model with a delta filter function and time-invariant fit parameters, see the lower panel of <xref rid="fig1" ref-type="fig">Fig. 1</xref>. There are only two major well-understood exceptions: (I) Cases exhibit a poor match before mid-June 2020, when free PCR testing became broadly available in Sweden for all persons with symptoms. (II) There is a sharp relative decrease in deaths coinciding with the start of the national vaccination program around the turn of the year 2020&#x2013;2021.</p>
+<p>Based on these findings we demonstrate that the approach can be used to retrospectively estimate the cases time series prior to July 2020, that would have been observable with a broad PCR testing program in place. Furthermore, by incorporating data from six randomized PCR studies conducted by the Swedish Public Health Agency and data for the prevalence of antibodies, we obtain an absolute value for the infection-to-case ratio ICR of 0.63 &#x00B1; 0.07 for the time when testing is easily available to persons with symptoms in Sweden. This value is larger (but compatible within its error) than the value 0.56 obtained in a study for Iceland [<xref ref-type="bibr" rid="c10">10</xref>]. It means that approximately 37 &#x0025; of all infected remained undetected as cases. Regarding systematic errors, the ICR value obtained from our study is reduced if both the time interval for positive testing, <italic>T</italic><sub>Interval</sub>, and probability to develop measurable antibodies after an infection, <italic>p</italic><sub>antibody</sub>, turn out to be much less than 10 days and 0.95, respectively. On the other hand, larger values are less likely as <italic>p</italic><sub>antibody</sub> &#x003D; 0.95 was chosen close to its absolute maximum value 1 in the analysis. However, a sampling bias or false-positive tests may allow for deviations, which we cannot judge here.</p>
+<p><xref rid="fig2" ref-type="fig">Fig. 2</xref> indicates that the total number of cases would have been around 820 000 at the end of 2020, if testing in the first half of 2020 had been as available as in the second half. With an ICR of 0.63, this provides about 1.3 million infected persons in Sweden in 2020. This corresponds to 13&#x0025; of the population and is far below values required to reach herd immunity.</p>
+<p>Based on the ICR of 0.63, we obtain the infection to ICU admission ratio IIAR of 0.34&#x0025; and an average infection to fatality ratio IFR of 0.74 &#x0025; (before the start of the vaccinations), see <xref rid="fig3" ref-type="fig">Fig. 3</xref>. Our value for the IFR is comparable to earlier studies[<xref ref-type="bibr" rid="c16">16</xref>]&#x2013;[<xref ref-type="bibr" rid="c18">18</xref>]. Note that possible systematic errors in ICR, as addressed above, affect the IIAR and IFR proportionally. Our analysis shows that the IIAR is rather constant in time, at least for the time after august 2020. In contrast, the IFR varies much stronger over time. We attribute its decline starting for infections around 1 January 2021 to successful vaccination of elderly persons. They dominate the mortality in COVID-19, but are less relevant for ICU admission. However, we lack explanation for the reduced IFR for infections from mid-July to mid-September of 2020.</p>
+<p>The close correlation between cases, ICU admissions, and deaths&#x2014;down to a linear scaling and time-shift once self-test had been made broadly available&#x2014;warrants further investigation. It could be explained through (I) time-invariance of the ICR, the IIAR, the IFR, (the dip in IFR in summer is not visible in <xref rid="fig1" ref-type="fig">Fig. 1(b)</xref> due to the small numbers) and the temporal distributions describing the associated flows; (II) variations in the mentioned entities that have essentially cancelled each other throughout 2020; (III) external confounders providing this canceling effect. Case (I) would imply that the healthcare system&#x2019;s ability to save COVID-19 patients and the impact from different virus mutations has not changed markedly. Case (II) would be surprising for the time from August 2020, where the ratio between cases and ICU admission is largely constant in time, see <xref rid="fig3" ref-type="fig">Fig. 3</xref>. Thus it is most likely that <italic>b</italic><sub><italic>c</italic></sub> (<italic>t</italic>) and <italic>b</italic><sub><italic>a</italic></sub> (<italic>t</italic>) are both constant in this range. However, for the first half of 2020, things are less obvious. The variations observed in the magenta curve may result from reductions in <italic>b</italic><sub><italic>a</italic></sub>(<italic>t</italic>) and <italic>b</italic><sub><italic>d</italic></sub>(<italic>t</italic>) (<italic>i</italic>.<italic>e</italic>. improvement in healthcare) occurring at different times. Case (III) would also be noteworthy since the groups of deceased and persons admitted to ICU care have marginal overlap with each other.</p>
+<p>The studied time series alone are not sufficient to map out the causation of the observed correlations, thus distinguishing between (I) and combinations of (II) and (III). However, an understanding of the underlying mechanism could be obtained by retrospectively tracking individual traces connecting the considered time series (<italic>e</italic>.<italic>g</italic>. persons who have tested positive, been admitted to an ICU or died with COVID-19). Importantly, if the correlation can be understood and shown not to be coincidental, it could constitute the basis for an accurate 1&#x2013;2 week predictor of the ICU demand.</p>
+</sec>
+<sec id="s5">
+<label>5</label>
+<title>Conclusion</title>
+<p>The summarizing conclusion from our observations is that important insight into numerous aspects of an ongoing epidemic can be obtained by considering the scaling between different time series, where time shifts are crucial. This is based on an FIR model with a delta filter function, which is shown to work well. We demonstrated this by reconstructing the daily number of cases for the first half year of 2020 periods, where testing was limited in Sweden, and extracting time variations in the infection fatality ratio.</p>
+</sec>
+</body>
+<back>
+<sec sec-type="data-availability">
+<title>Data Availability</title>
+<p>Only publicly available data sets have been used. They are referenced in the manuscript.</p>
+</sec>
+<ack>
+<title>Acknowledgements</title>
+<p>This work was partially funded by the ELLIIT Strategic Research Area.</p>
+</ack>
+<sec id="s6">
+<title>Conflict of interest</title>
+<p>The authors declare no conflict of interest.</p>
+</sec>
+<sec id="s7">
+<title>A Quality of the delta-impulse model</title>
+<p>After averaging to remove weekly fluctuations and neglecting fluctuations <italic>e</italic><sub><italic>c</italic></sub> (<italic>t</italic>), <xref ref-type="disp-formula" rid="eqn1">(1)</xref> provides
+<disp-formula id="eqn23">
+<alternatives><graphic xlink:href="21257900v1_eqn23.gif"/></alternatives>
+</disp-formula></p>
+<p>While we do not know much about <italic>p</italic><sub><italic>c</italic></sub> (<italic>t, &#x03C4;</italic>), we make the reasonable assumption that it has a single peak and does decay rather quick for large delays <italic>&#x03C4;</italic>. In this case it is reasonably represented by its average <inline-formula><alternatives><inline-graphic xlink:href="21257900v1_inline10.gif"/></alternatives></inline-formula> and standard deviation <italic>&#x03C3;</italic> defined as
+<disp-formula id="eqn24">
+<alternatives><graphic xlink:href="21257900v1_eqn24.gif"/></alternatives>
+</disp-formula>
+<disp-formula id="eqn25">
+<alternatives><graphic xlink:href="21257900v1_eqn25.gif"/></alternatives>
+</disp-formula>
+where we used the normalisation from <xref ref-type="disp-formula" rid="eqn3">(3)</xref>. Assuming, that <italic>x</italic> (<italic>t</italic>) is a smooth function, which appears reasonable after 7-days averaging, we may approximate by a second order Taylor expansion
+<disp-formula id="eqn26">
+<alternatives><graphic xlink:href="21257900v1_eqn26.gif"/></alternatives>
+</disp-formula>
+where, for given <italic>t</italic>, the average delay <italic>&#x03C4;</italic><sub><italic>c</italic></sub> satisfies <inline-formula><alternatives><inline-graphic xlink:href="21257900v1_inline11.gif"/></alternatives></inline-formula> Then we obtain from <xref ref-type="disp-formula" rid="eqn23">(23)</xref> that
+<disp-formula id="ueqn1">
+<alternatives><graphic xlink:href="21257900v1_ueqn1.gif"/></alternatives>
+</disp-formula></p>
+<p>Assuming <italic>p</italic><sub><italic>c</italic></sub> (<italic>t</italic> &#x2212; <italic>&#x03C4;, &#x03C4;</italic>) &#x2248; <italic>p</italic><sub><italic>C</italic></sub> (<italic>t</italic> &#x2212; <italic>&#x03C4;</italic><sub><italic>C</italic></sub>, <italic>&#x03C4;</italic>) as the detection probability should not change within a time-scale of <italic>&#x03C3;</italic> for constant delay <italic>&#x03C4;</italic>, we find
+<disp-formula id="eqn27">
+<alternatives><graphic xlink:href="21257900v1_eqn27.gif"/></alternatives>
+</disp-formula></p>
+<p>The first term is just our delta-impulse model, see <xref ref-type="disp-formula" rid="eqn4">(4)</xref>, while the second term provides a correction less than 5 &#x0025; if
+<disp-formula id="eqn28">
+<alternatives><graphic xlink:href="21257900v1_eqn28.gif"/></alternatives>
+</disp-formula></p>
+<p>If the infections show an exponential behavior <italic>x</italic>(<italic>t</italic>) &#x003D; <italic>x</italic><sub>0</sub><italic>e</italic><sup><italic>rt</italic></sup>, this provides <italic>&#x03C3; r &#x003C;</italic> 0.316 or <italic>&#x03C3; &#x003C;</italic> 0.46<italic>t</italic><sub>doubling</sub> with the doubling time <italic>t</italic><sub>doubling</sub> &#x003D; ln 2/<italic>r</italic>. The last relation was stated in Ref. [<xref ref-type="bibr" rid="c7">7</xref>] for the applicability of the delta-response for exponential evolutions. Here we generalised this to arbitrary evolutions <italic>x</italic>(<italic>t</italic>), where <italic>t</italic><sub>doubling</sub> / ln 2 is replaced by the square root of the inverse relative second derivative.</p>
+</sec>
+<glossary>
+<title>Nomenclature</title>
+<def-list>
+<title>Acronyms</title>
+<def-item>
+<term>FIR</term>
+<def><p>Finite impulse response [model]</p></def>
+</def-item>
+<def-item>
+<term>ICR</term>
+<def><p>Infection-to-case ratio</p></def>
+</def-item>
+<def-item>
+<term>ICU</term>
+<def><p>Intensive care unit</p></def>
+</def-item>
+<def-item>
+<term>IFR</term>
+<def><p>Infection-to-fatality ratio</p></def>
+</def-item>
+<def-item>
+<term>IIAR</term>
+<def><p>Infection-to-ICU admission ratio</p></def>
+</def-item>
+<def-item>
+<term>LS</term>
+<def><p>Least-squares [method]</p></def>
+</def-item>
+<def-item>
+<term>PCR</term>
+<def><p>Polymerace chain reaction</p></def>
+</def-item>
+</def-list>
+</glossary>
+<glossary>
+<def-list>
+<title>Subscripts and modifiers</title>
+<def-item>
+<term><italic>a</italic></term>
+<def><p>Infection-to-ICU admission</p></def>
+</def-item>
+<def-item>
+<term><italic>c</italic></term>
+<def><p>Case (detected infection)</p></def>
+</def-item>
+<def-item>
+<term><italic>d</italic></term>
+<def><p>Infection-to-fatality (death)</p></def>
+</def-item>
+<def-item>
+<term>&#x223C;</term>
+<def><p>Weekly central moving average</p></def>
+</def-item>
+</def-list>
+</glossary>
+<glossary>
+<def-list>
+<title>Variables and symbols</title>
+<def-item>
+<term><italic>&#x03B4;</italic></term>
+<def><p>Dirac&#x2019;s delta distribution</p></def>
+</def-item>
+<def-item>
+<term><italic>&#x03B3;</italic></term>
+<def><p>IIAR/ICR</p></def>
+</def-item>
+<def-item>
+<term><italic>&#x03C3;</italic></term>
+<def><p>Standard deviation</p></def>
+</def-item>
+<def-item>
+<term><italic>&#x03C4;</italic></term>
+<def><p>Time delay (unit:days)</p></def>
+</def-item>
+<def-item>
+<term><italic>b</italic></term>
+<def><p>Gain parameter</p></def>
+</def-item>
+<def-item>
+<term><italic>e</italic></term>
+<def><p>Error or residual time series</p></def>
+</def-item>
+<def-item>
+<term><italic>N</italic></term>
+<def><p>Number of individuals</p></def>
+</def-item>
+<def-item>
+<term><italic>p</italic></term>
+<def><p>Probability</p></def>
+</def-item>
+<def-item>
+<term><italic>t</italic></term>
+<def><p>Time index (unit:days)</p></def>
+</def-item>
+<def-item>
+<term><italic>x</italic></term>
+<def><p>New infection time series (not directly observable)</p></def>
+</def-item>
+<def-item>
+<term><italic>y</italic></term>
+<def><p>Daily time series (observation)</p></def>
+</def-item>
+</def-list>
+</glossary>
+<ref-list>
+<title>References</title>
+<ref id="c1"><label>[1]</label><mixed-citation publication-type="journal"><string-name><given-names>K.</given-names> <surname>Soltesz</surname></string-name>, <string-name><given-names>F.</given-names> <surname>Gustafsson</surname></string-name>, <string-name><given-names>T.</given-names> <surname>Timpka</surname></string-name>, <etal>et al.</etal>, &#x201C;<article-title>The effect of interventions on COVID-19</article-title>,&#x201D; <source>Nature</source>, vol. <volume>588</volume>, <fpage>E26</fpage>&#x2013;<lpage>E28</lpage>, <year>2020</year>. DOI: <pub-id pub-id-type="doi">10.1038/s41586-020-2405-7</pub-id>.</mixed-citation></ref>
+<ref id="c2"><label>[2]</label><mixed-citation publication-type="book"><string-name><given-names>P.</given-names> <surname>Antsaklis</surname></string-name> and <string-name><given-names>A.</given-names> <surname>Michel</surname></string-name>, <source>Linear Systems</source>. <publisher-loc>Boston, MA</publisher-loc>: <publisher-name>Birkhauser</publisher-name>, <year>2005</year>.</mixed-citation></ref>
+<ref id="c3"><label>[3]</label><mixed-citation publication-type="website"><collab>Swedish Public Health Agency</collab>, <source>Bekr&#x00E4;ftade fall i sverige &#x2013; daglig uppdatering</source>, <year>2021</year>. [Online]. Available: <ext-link ext-link-type="uri" xlink:href="https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/statistik-och-analyser/bekraftade-fall-i-sverige/">https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/statistik-och-analyser/bekraftade-fall-i-sverige/</ext-link> (visited on May 14, 2021).</mixed-citation></ref>
+<ref id="c4"><label>[4]</label><mixed-citation publication-type="website"><collab>Swedish Public Health Agency</collab>, <source>Unders&#x00F6;kningar avseende f&#x00F6;rekomst av sjukdom</source>, <year>2021</year>. [Online]. Available: <ext-link ext-link-type="uri" xlink:href="https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/statistik-och-analyser/undersokningar-och-datainsamlingar/forekomst-av-sjukdom/">https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/statistik-och-analyser/undersokningar-och-datainsamlingar/forekomst-av-sjukdom/</ext-link> (visited on May 14, 2021).</mixed-citation></ref>
+<ref id="c5"><label>[5]</label><mixed-citation publication-type="journal"><string-name><given-names>K.</given-names> <surname>Str&#x00E5;lin</surname></string-name>, <string-name><given-names>E.</given-names> <surname>Wahlstr&#x00F6;m</surname></string-name>, <string-name><given-names>S.</given-names> <surname>Walther</surname></string-name>, <etal>et al.</etal>, &#x201C;<article-title>Mortality trends among hospitalised COVID-19 patients in Sweden: A nation-wide observational cohort study</article-title>,&#x201D; <source>The Lancet Regional Health - Europe</source>, vol. <volume>4</volume>, p. <fpage>100</fpage> 054, <year>2021</year>. DOI: <pub-id pub-id-type="doi">10.1016/j.lanepe.2021.100054</pub-id>.</mixed-citation></ref>
+<ref id="c6"><label>[6]</label><mixed-citation publication-type="website"><collab>Swedish Public Health Agency, Unders&#x00F6;kningar avseende genomg&#x00E5;ngen infektion</collab>, <year>2021</year>. [Online]. Available: <ext-link ext-link-type="uri" xlink:href="https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/statistik-och-analyser/undersokningar-och-datainsamlingar/genomgangen-infektion/">https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/statistik-och-analyser/undersokningar-och-datainsamlingar/genomgangen-infektion/</ext-link> (visited on May 14, 2021).</mixed-citation></ref>
+<ref id="c7"><label>[7]</label><mixed-citation publication-type="journal"><string-name><given-names>J.</given-names> <surname>Wallinga</surname></string-name> and <string-name><given-names>M.</given-names> <surname>Lipsitch</surname></string-name>, &#x201C;<article-title>How generation intervals shape the relationship between growth rates and reproductive numbers</article-title>,&#x201D; <source>Proceedings of the Royal Society B: Biological Sciences</source>, vol. <volume>274</volume>, no. <issue>1609</issue>, pp. <fpage>599</fpage>&#x2013;<lpage>604</lpage>, <year>2007</year>. DOI: <pub-id pub-id-type="doi">10.1098/rspb.2006.3754</pub-id>.</mixed-citation></ref>
+<ref id="c8"><label>[8]</label><mixed-citation publication-type="journal"><string-name><given-names>L.</given-names> <surname>Kucirka</surname></string-name>, <string-name><given-names>S.</given-names> <surname>Lauer</surname></string-name>, <string-name><given-names>O.</given-names> <surname>Laeyendecker</surname></string-name>, <etal>et al.</etal>, &#x201C;<article-title>Variation in false-negative rate of reverse transcriptase polymerase chain reaction&#x2013;based SARS-CoV-2 tests by time since exposure</article-title>,&#x201D; <source>Annals of Internal Medicine</source>, vol. <volume>173</volume>, no. <issue>4</issue>, pp. <fpage>262</fpage>&#x2013;<lpage>267</lpage>, <year>2020</year>. DOI: <pub-id pub-id-type="doi">10.7326/M20-1495</pub-id>.</mixed-citation></ref>
+<ref id="c9"><label>[9]</label><mixed-citation publication-type="journal"><string-name><given-names>Z.</given-names> <surname>Hu</surname></string-name>, <string-name><given-names>C.</given-names> <surname>Song</surname></string-name>, <string-name><given-names>C.</given-names> <surname>Xu</surname></string-name>, <etal>et al.</etal>, &#x201C;<article-title>Clinical characteristics of 24 asymptomatic infections with COVID-19 screened among close contacts in Nanjing, China</article-title>,&#x201D; <source>Science China Life Sciences</source>, vol. <volume>63</volume>, pp. <fpage>706</fpage>&#x2013;<lpage>711</lpage>, <year>2020</year>. DOI: <pub-id pub-id-type="doi">10.1007/s11427-020-1661-4</pub-id>.</mixed-citation></ref>
+<ref id="c10"><label>[10]</label><mixed-citation publication-type="journal"><string-name><given-names>D.</given-names> <surname>Gudbjartsson</surname></string-name>, <string-name><given-names>G.</given-names> <surname>Norddahl</surname></string-name>, <string-name><given-names>P.</given-names> <surname>Melsted</surname></string-name>, <etal>et al.</etal>, &#x201C;<article-title>Humoral immune response to SARS-CoV-2 in Iceland</article-title>,&#x201D; <source>New England Journal of Medicine</source>, vol. <volume>383</volume>, no. <issue>18</issue>, pp. <fpage>1724</fpage>&#x2013;<lpage>1734</lpage>, <year>2020</year>. DOI: <pub-id pub-id-type="doi">10.1056/NEJMoa2026116</pub-id>.</mixed-citation></ref>
+<ref id="c11"><label>[11]</label><mixed-citation publication-type="journal"><string-name><given-names>J.</given-names> <surname>Dan</surname></string-name>, <string-name><given-names>J.</given-names> <surname>Mateus</surname></string-name>, <string-name><given-names>Y.</given-names> <surname>Kato</surname></string-name>, <etal>et al.</etal>, &#x201C;<article-title>Immunological memory to SARS-CoV-2 assessed for up to 8 months after infection</article-title>,&#x201D; <source>Science</source>, vol. <volume>371</volume>, no. <fpage>6529</fpage>, <year>2021</year>. DOI: <pub-id pub-id-type="doi">10.1126/science.abf4063</pub-id>.</mixed-citation></ref>
+<ref id="c12"><label>[12]</label><mixed-citation publication-type="website"><collab>The Swedish Intensive Care Registry</collab>, <year>2021</year>. [Online]. Available: <ext-link ext-link-type="uri" xlink:href="https://www.icuregswe.org/data--resultat/COVID-19-i-svensk-intensivvard">https://www.icuregswe.org/data--resultat/COVID-19-i-svensk-intensivvard</ext-link> (visited on May 13, 2021).</mixed-citation></ref>
+<ref id="c13"><label>[13]</label><mixed-citation publication-type="journal"><string-name><given-names>C.</given-names> <surname>McAloon</surname></string-name>, <string-name><given-names>A.</given-names> <surname>Collins</surname></string-name>, <string-name><given-names>K.</given-names> <surname>Hunt</surname></string-name>, <etal>et al.</etal>, &#x201C;<article-title>Incubation period of COVID-19: A rapid systematic review and meta-analysis of observational research</article-title>,&#x201D; <source>BMJ Open</source>, vol. <volume>10</volume>, no. <issue>8</issue>, <year>2020</year>. DOI: <pub-id pub-id-type="doi">10.1136/bmjopen-2020-039652</pub-id>.</mixed-citation></ref>
+<ref id="c14"><label>[14]</label><mixed-citation publication-type="journal"><string-name><given-names>S.</given-names> <surname>Lauer</surname></string-name>, <string-name><given-names>K.</given-names> <surname>Grantz</surname></string-name>, <string-name><given-names>Q.</given-names> <surname>Bi</surname></string-name>, <etal>et al.</etal>, &#x201C;<article-title>The incubation period of coronavirus disease 2019 (COVID-19) from publicly reported confirmed cases: Estimation and application</article-title>,&#x201D; <source>Annals of Internal Medicine</source>, vol. <volume>172</volume>, no. <issue>9</issue>, pp. <fpage>577</fpage>&#x2013;<lpage>582</lpage>, <year>2020</year>. DOI: <pub-id pub-id-type="doi">10.7326/M20-0504</pub-id>.</mixed-citation></ref>
+<ref id="c15"><label>[15]</label><mixed-citation publication-type="journal"><string-name><given-names>J.</given-names> <surname>Qin</surname></string-name>, <string-name><given-names>C.</given-names> <surname>You</surname></string-name>, <string-name><given-names>Q.</given-names> <surname>Lin</surname></string-name>, <etal>et al.</etal>, &#x201C;<article-title>Estimation of incubation period distribution of COVID-19 using disease onset forward time: A novel cross-sectional and forward follow-up study</article-title>,&#x201D; <source>Science Advances</source>, vol. <volume>6</volume>, no. <issue>33</issue>, <year>2020</year>. DOI: <pub-id pub-id-type="doi">10.1126/sciadv.abc1202</pub-id>.</mixed-citation></ref>
+<ref id="c16"><label>[16]</label><mixed-citation publication-type="journal"><string-name><given-names>R.</given-names> <surname>Verity</surname></string-name>, <string-name><given-names>L.</given-names> <surname>Okell</surname></string-name>, <string-name><given-names>I.</given-names> <surname>Dorigatti</surname></string-name>, <etal>et al.</etal>, &#x201C;<article-title>Estimates of the severity of coronavirus disease 2019: A model-based analysis</article-title>,&#x201D; <source>The Lancet Infectious Diseases</source>, vol. <volume>20</volume>, pp. <fpage>669</fpage>&#x2013;<lpage>677</lpage>, <year>2020</year>. DOI: <pub-id pub-id-type="doi">10.1016/S1473-3099(20)30243-7</pub-id>.</mixed-citation></ref>
+<ref id="c17"><label>[17]</label><mixed-citation publication-type="journal"><string-name><given-names>A.</given-names> <surname>Levin</surname></string-name>, <string-name><given-names>W.</given-names> <surname>Hanag</surname></string-name>, <string-name><given-names>N.</given-names> <surname>Owusu-Boaitey</surname></string-name>, <etal>et al.</etal>, &#x201C;<article-title>Assessing the age specificity of infection fatality rates for COVID-19: Systematic review, meta-analysis, and public policy implications</article-title>,&#x201D; <source>European Journal of Epidemiology</source>, vol. <volume>35</volume>, pp. <fpage>1123</fpage>&#x2013;<lpage>1138</lpage>, <year>2020</year>. DOI: <pub-id pub-id-type="doi">10.1007/s10654-020-00698-1</pub-id>.</mixed-citation></ref>
+<ref id="c18"><label>[18]</label><mixed-citation publication-type="website"><collab>Swedish Public Health Agency</collab>, <source>The infection fatality rate of COVID-19 in Stockholm</source>, <year>2020</year>. [Online]. Available: <ext-link ext-link-type="uri" xlink:href="https://www.folkhalsomyndigheten.se/contentassets/53c0dc391be54f5d959ead9131edb771/infection-fatality-rate-covid-19-stockholm-technical-report.pdf">https://www.folkhalsomyndigheten.se/contentassets/53c0dc391be54f5d959ead9131edb771/infection-fatality-rate-covid-19-stockholm-technical-report.pdf</ext-link> (visited on May 14, 2021).</mixed-citation></ref>
+</ref-list>
+</back>
+</article>

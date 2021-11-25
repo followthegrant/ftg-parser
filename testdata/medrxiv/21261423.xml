@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.2d1 20170631//EN" "JATS-archivearticle1.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" article-type="article" dtd-version="1.2d1" specific-use="production" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="publisher-id">MEDRXIV</journal-id>
+<journal-title-group>
+<journal-title>medRxiv</journal-title>
+<abbrev-journal-title abbrev-type="publisher">medRxiv</abbrev-journal-title>
+</journal-title-group>
+<publisher>
+<publisher-name>Cold Spring Harbor Laboratory</publisher-name>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1101/2021.07.31.21261423</article-id>
+<article-version>1.2</article-version>
+<article-categories>
+<subj-group subj-group-type="hwp-journal-coll">
+<subject>Health Informatics</subject>
+</subj-group>
+</article-categories>
+<title-group>
+<article-title>Data-driven Testing Program Improves Detection of COVID-19 Cases and Reduces Community Transmission</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author">
+<name><surname>Krieg</surname><given-names>Steven J.</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Avendano</surname><given-names>Carolina</given-names></name>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Grantham-Brown</surname><given-names>Evan</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Asbun</surname><given-names>Aaron Lilienfeld</given-names></name>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Schnur</surname><given-names>Jennifer J.</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Miranda</surname><given-names>Marie Lynn</given-names></name>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author" corresp="yes">
+<name><surname>Chawla</surname><given-names>Nitesh V.</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="corresp" rid="cor1">&#x002A;</xref>
+</contrib>
+<aff id="a1"><label>1</label><institution>Lucy Family Institute for Data and Society, University of Notre Dame</institution>, Notre Dame, IN 46556, <country>USA</country></aff>
+<aff id="a2"><label>2</label><institution>Children&#x2019;s Environmental Health Initiative, University of Notre Dame</institution>, Notre Dame, IN 46556, <country>USA</country></aff>
+<aff id="a3"><label>3</label><institution>Children&#x2019;s Environmental Health Initiative, Lucy Family Institute for Data and Society, University of Notre Dame Notre Dame</institution>, IN 46556, <country>USA</country></aff>
+</contrib-group>
+<author-notes>
+<corresp id="cor1"><label>&#x002A;</label>To whom correspondence should be addressed. E-mail: <email>nchawla@nd.edu</email></corresp>
+</author-notes>
+<pub-date pub-type="epub">
+<year>2021</year>
+</pub-date>
+<elocation-id>2021.07.31.21261423</elocation-id>
+<history>
+<date date-type="received">
+<day>31</day>
+<month>7</month>
+<year>2021</year>
+</date>
+<date date-type="rev-recd">
+<day>06</day>
+<month>8</month>
+<year>2021</year>
+</date>
+<date date-type="accepted">
+<day>06</day>
+<month>8</month>
+<year>2021</year>
+</date>
+</history>
+<permissions>
+<copyright-statement>&#x00A9; 2021, Posted by Cold Spring Harbor Laboratory</copyright-statement>
+<copyright-year>2021</copyright-year>
+<license license-type="creative-commons" xlink:href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><license-p>This pre-print is available under a Creative Commons License (Attribution-NonCommercial-NoDerivs 4.0 International), CC BY-NC-ND 4.0, as described at <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by-nc-nd/4.0/">http://creativecommons.org/licenses/by-nc-nd/4.0/</ext-link></license-p></license>
+</permissions>
+<self-uri xlink:href="21261423.pdf" content-type="pdf" xlink:role="full-text"/>
+<abstract>
+<title>A<sc>bstract</sc></title>
+<p>COVID-19 remains a global threat in the face of emerging SARS-CoV-2 variants and gaps in vaccine administration and availability, and organizations must be prepared to detect and mitigate its risk to their people and activities. In this report we share key lessons learned from an adaptive COVID-19 testing program implemented at a mid-sized university in the Midwest. The program utilized two simple, diverse, and easily interpretable machine learning models to quickly and accurately predict which students were at elevated risk for contracting COVID-19 and should be called proactively for testing. Our adaptive testing cohorts produced positivity rates that were 26&#x0025; higher than the random cohort: 0.58&#x0025; positivity (95&#x0025; CI 0.47&#x0025; to 0.68&#x0025;) from 19,171 tests, and 0.46&#x0025; positivity (95&#x0025; CI 0.41&#x0025; to 0.51&#x0025;) from 64,003 tests, respectively. Within 14 days of their selection, 2.94&#x0025; of the adaptive cohort tested positive, compared to 1.27&#x0025; of the random cohort. Close contacts who were predicted by the adaptive testing models received a COVID-19 test within an average of 0.94 days (95&#x0025; CI 0.78 to 1.11) of the source testing positive, while those who were manually contact traced were tested in an average of 1.92 days (95&#x0025; CI 1.81 to 2.02). These results suggest that machine learning strategies can improve surveillance testing effectiveness, especially in a university setting, by effectively distributing testing resources and potentially reducing community transmission.</p>
+</abstract>
+<counts>
+<page-count count="7"/>
+</counts>
+</article-meta>
+<notes>
+<notes notes-type="competing-interest-statement">
+<title>Competing Interest Statement</title><p>The authors have declared no competing interest.</p></notes>
+<notes notes-type="financial-disclosure">
+<title>Funding Statement</title><p>This work was supported by the Lucy Family Institute for Data and Society and the Children's Health Initiative at the University of Notre Dame.</p></notes>
+<notes notes-type="disclosures">
+<title>Author Declarations</title><p>I confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.</p><p>Yes</p><p>The details of the IRB/oversight body that provided approval or exemption for the research described are given below:</p><p>University of Notre Dame Human Subjects Institutional Review Board</p><p>All necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived.</p><p>Yes</p><p>I understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).</p><p>Yes</p><p>I have followed all appropriate research reporting guidelines and uploaded the relevant EQUATOR Network research reporting checklist(s) and other pertinent material as supplementary files, if applicable.</p><p>Yes</p></notes>
+<fn-group content-type="summary-of-updates">
+<title>Summary of Updates:</title>
+<fn fn-type="update"><p>Fixed typo in author names (Marie Lynn Miranda) and affiliations (Lucy Family Institute for Data and Society)</p></fn>
+</fn-group>
+</notes>
+</front>
+<body>
+<sec id="s1">
+<label>1</label>
+<title>Introduction</title>
+<p>While schools, business, and other institutions seek to resume normal operations, the risk of SARS-CoV-2 and its emerging variants remains a global threat, especially as global vaccine rollouts remain in progress [<xref ref-type="bibr" rid="c6">6</xref>, <xref ref-type="bibr" rid="c10">10</xref>]. These organizations must therefore be prepared to detect and mitigate its risk to their people and activities. In this report we share key lessons learned from an adaptive COVID-19 testing program implemented at a mid-sized university in the Midwest. The adaptive testing program utilized two different, data-driven network models to quickly and accurately predict which students had an elevated risk of contracting COVID-19 and should be called proactively for testing. Both models utilized a social network representation of the university community in which each node represented a person (our analysis focuses exclusively on students) and each edge represented a connection between two people (e.g., roommates, enrolled in the same course, active on the same sports team). The first model used this network to predict individual student risk via node risk propagation, and the second model predicted contact tracing relationships via multi-relational link prediction. The key difference between the two lies in the problem formulation: the first model was trained for a node-level task (classifying students as high-risk or low-risk), while the second was trained for an edge-level task (predicting contact tracing relationships between students). This difference resulted in models that were diverse and complementary, able to identify high-risk individuals and communities within the campus network while reducing the overhead of manual contact tracing. The success of this program suggests that machine learning strategies can improve the effectiveness of surveillance testing, especially in a university setting. Such approaches may help to more effectively distribute testing resources and reduce community transmission.</p>
+<sec id="s1a">
+<label>1.1</label>
+<title>Adaptive Testing Overview</title>
+<p>The adaptive testing program was one of many COVID-19 mitigation strategies implemented throughout the 2020-21 academic year at the university [<xref ref-type="bibr" rid="c1">1</xref>]. During the fall of 2020, 1,556 students (12.0&#x0025;) and 200 faculty and staff tested positive from a total of 88,283 tests. In just the first four weeks of the spring 2021 semester (Feb. 3 through Mar. 2, 2021), another 734 students (5.7&#x0025;) and 34 faculty and staff tested positive from a total of 57,661 tests. This provided a rich set of test results, contact tracing interviews, and symptom reporting to use as training data. The situation also necessitated urgent intervention&#x2014;especially with respect to asymptomatic and presymptomatic cases, which contributed significantly to community transmission [<xref ref-type="bibr" rid="c5">5</xref>]. Thus a targeted and data-driven adaptive testing program was initiated on March 3, 2021 to <italic>supplement</italic> general surveillance testing, manual contact tracing, quarantine/isolation protocols, and self-reported health checks with more targeted and data-driven testing. While the program also included faculty and staff, our analysis focuses exclusively on students (undergraduate, graduate, and professional) as they constituted the majority of cases and testing appointments.</p>
+<p>During each day of the program, two cohorts of students were sampled for surveillance testing. The first, which we call the general surveillance cohort, was determined by the students selecting a day of the week to be tested to ensure each student was tested once every week. The second, which we call the adaptive cohort, was selected via two distinct machine learning models&#x2014;one trained on streaming data to predict SARS-CoV-2 transmission directly and one trained using data from the fall semester to predict contact tracing relationships. Using the set of active COVID-19 cases as input, both models generated a risk score for all other active students based on their connections to the active cases within the network representation of the university. Depending on the available testing resources (which increased substantially from fall to spring), the adaptive testing team chose the <italic>n</italic> students with the highest predicted risk from each model, with additional weight being given to students identified as high risk by both models, and added them to the adaptive cohort. Students who were already being tested for another reason such as reporting symptoms, living at the same address as a new positive case, having been contact traced, or having been tested twice already during the week (defined as a 7-day period from Monday to Sunday) were excluded from the adaptive sampling. Students in both the general surveillance and adaptive cohorts were notified of their selection for testing via email and text and administered either a saliva or nasal reverse transcription&#x2013;polymerase chain reaction (PCR) test at the university testing center within 24 hours of notification.</p>
+</sec>
+</sec>
+<sec id="s2">
+<label>2</label>
+<title>Results</title>
+<p>The adaptive testing program began on March 3 and concluded on April 30. Cohorts were tested daily with only a few exceptions (e.g., no adaptive tests were administered from April 17-19 to provide testing staff with time off during Easter weekend). During this period 97,604 total tests were administered to students: 64,003 (65.6&#x0025;) to the general surveillance cohort, 19,171 (19.6&#x0025;) to the adaptive cohort, and the remaining 14,430 (14.8&#x0025;) to other cases such as students who reported symptoms or were contact traced. A total of 641 students tested positive: 297 (46.3&#x0025;) during a general surveillance appointment, 111 (17.3&#x0025;) during an adaptive testing appointment, and the remaining 235 (36.3&#x0025;) during symptomatic appointments. The adaptive cohort thus produced a positivity rate of 0.58&#x0025; (95&#x0025; CI 0.47&#x0025; to 0.68&#x0025;), about 26&#x0025; higher than the random cohort&#x2019;s 0.46&#x0025; positivity rate (95&#x0025; CI 0.41&#x0025; to 0.51&#x0025;).</p>
+<p>Many students returned for a follow-up test within several days of being selected for the adaptive cohort. When we look beyond the same-day test results, students selected for adaptive cohorts were even more likely to test positive. Within five days of being called for testing, 0.57&#x0025; and 1.47&#x0025; of the general surveillance and adaptive cohorts tested positive, respectively. As <xref rid="fig1" ref-type="fig">Figure 1</xref> demonstrates, this gap in positivity rate between the two cohorts widens with the length of the follow-up window for at least 14 days after selection to the adaptive cohort.</p>
+<fig id="fig1" position="float" fig-type="figure">
+<label>Figure 1:</label>
+<caption><p>The percentage of students who tested positive from a follow-up test after being selected for one of the testing cohorts. Day 0 is the day they were selected for the cohort.</p></caption>
+<graphic xlink:href="21261423v2_fig1.tif"/>
+</fig>
+<p>We also note that the adaptive cohort is essentially comprised of three groups of students: 10,251 who were selected by only the node risk (NR) model, 8,089 who were selected only by the link prediction (LP) model, and 2,608 who were selected by both models. As <xref rid="fig2" ref-type="fig">Figure 2</xref> shows, students selected by both models were by far the most likely to test positive, producing a 0.8&#x0025; positivity rate on the initial test, and with a total of 2.72&#x0025; testing positive within five days. The students selected by both models tended to have the highest predicted risk from each model individually via connections like living on the same dorm floor or being in multiple courses with a student who had tested positive. Beyond these high-risk connections, we did not observe significant differences between the models with respect to the types of connections that produced high-risk predictions.</p>
+<fig id="fig2" position="float" fig-type="figure">
+<label>Figure 2:</label>
+<caption><p>The percentage of students from the adaptive cohort who tested positive as predicted by the node risk (NR) and/or link prediction (LP) models. Day 0 is the day they were selected for the adaptive cohort.</p></caption>
+<graphic xlink:href="21261423v2_fig2.tif"/>
+</fig>
+<p>Another key finding is that the adaptive testing program resulted in a significantly shorter average time to test for close contacts. Of 1,907 contacts that were traced to the 641 positive cases, 1,483 were administered a test on campus within seven days. 188 were administered a test via selection to the adaptive cohort within an average of 0.94 days (95&#x0025; CI 0.78 to 1.11), while the remaining 1,295&#x2014;who were tested only after being notified of their exposure by contact tracers or the student who exposed them&#x2014;were administered a test within an average of 1.92 days (95&#x0025; CI 1.81 to 2.02). <xref rid="fig3" ref-type="fig">Figure 3</xref> shows the full distribution of test timings for confirmed contacts.</p>
+<fig id="fig3" position="float" fig-type="figure">
+<label>Figure 3:</label>
+<caption><p>The distribution of average time to receive a test for students who were exposed to COVID-19 via close contact with another student. Day 0 is the day the exposing student tested positive.</p></caption>
+<graphic xlink:href="21261423v2_fig3.tif"/>
+</fig>
+<p>We additionally found that the average same-day response rates were 78.1&#x0025; and 95.0&#x0025; for the general surveillance and adaptive cohorts, respectively. While the general surveillance cohort was least likely to respond on Saturdays and Sundays (61.2&#x0025;), only 8.3&#x0025; of these appointments were scheduled on these days, and the response rate for weekday appointments was only 79.6&#x0025;. The daily distribution of appointments for the adaptive cohort, on the other hand, was relatively uniform: 23.8&#x0025; were scheduled on a Saturday or Sunday with a 95.8&#x0025; response rate. While undergraduate students produced higher response rates than graduate and professional students, the differences were marginal (79.4&#x0025;, 78.1&#x0025;, and 82.1&#x0025;, respectively) for the general surveillance cohort. For the adaptive cohort the differences between means were more significant (96.8&#x0025;, 85.6&#x0025;, and 92.7&#x0025;, respectively); however, the number of adaptive tests administered to graduate and professional students was only 442 (2.3&#x0025;) and 631 (3.3&#x0025;), respectively. In any case, the response rates for adaptive testing were consistently higher than for general surveillance.</p>
+</sec>
+<sec id="s3">
+<label>3</label>
+<title>Discussion</title>
+<p>Rapidly identifying COVID-19 cases is of paramount importance to reducing community transmission [<xref ref-type="bibr" rid="c7">7</xref>]. While the adaptive program did produce higher same-day positivity rates, the model predictions gained value over time (<xref rid="fig1" ref-type="fig">Figure 1</xref>). We suggest that this is explained largely by the following two factors. First, the incubation period of SARS-CoV-2 means that students who are called for adaptive testing immediately (the next day) after a close contact tests positive may not have built enough of a viral load to be detected by the PCR test [<xref ref-type="bibr" rid="c11">11</xref>]. Second, networks excel at modeling transmission dynamics in local communities, i.e. transmission in a dorm floor. High-risk individuals should therefore be tested as soon as possible, but a single negative test does not allay the risk of further transmission through a third party. An ideal follow-up protocol should include cadenced re-testing for at least 14 days.</p>
+<p>Prior to March 3, students were informed of the adaptive testing program and its data-driven approach to identifying individuals who were at high-risk. Therefore, some of the differences in response rates could be due to students&#x2019; perceiving an adaptive testing call as more important than a general surveillance one. However, it is also possible that adaptive testing appointments were correlated with individuals&#x2019; knowledge that they had been potentially exposed. It seems likely that both of these factors contributed to the increased response rate.</p>
+<p>The shortcomings of contact tracing have been well-documented, including that the process requires a high amount of manual effort [<xref ref-type="bibr" rid="c4">4</xref>] and that individuals can be reluctant to disclose their social activity [<xref ref-type="bibr" rid="c2">2</xref>]. The ability of an adaptive testing program to identify high-risk individuals and produce shorter times to test for close contacts can mitigate both of these problems. However, while our models are an effective supplement to manual contact tracing, they are not a replacement for it. There are many close contacts that were not predicted by our models, and many student behaviors that are not captured in a social network.</p>
+<p>The simplicity of the adaptive testing models lends itself well to implementation by others. Universities can easily construct a social network representation using similar data. Other organizations could likewise create a social network from reporting and departmental relationships, meeting attendees, or office layouts. We experimented with other approaches and data, most notably using the network to model the spread of symptoms rather than just positive cases; however, we found that student symptom profiles were too inconsistent to effectively predict viral transmission [<xref ref-type="bibr" rid="c5">5</xref>]. The fact that the link prediction model performed similarly to the node risk model (<xref rid="fig2" ref-type="fig">Figure 2</xref>) suggests that predicting contact tracing relationships is an effective proxy for predicting viral transmission. This observation can be utilized to encourage diversity by training models for different tasks. Specifically, COVID-19 testing produces node-level data and therefore support node-level tasks; likewise, contact tracing produces edge-level data and thus supports edge-level tasks. As our results demonstrate, training models for both tasks can make predictions that are diverse and complementary. However, even in the absence of data on positive tests, organizations could still collect and use data on known close contacts to train a predictive model. Such approaches may prove to be necessary to rapidly detect positive cases and drive down community transmission.</p>
+</sec>
+<sec id="s4">
+<label>4</label>
+<title>Materials and Methods</title>
+<p>Foundational to the adaptive testing program was the modeling of the university as a heterogeneous network, a widely-used formalism in graph theory and network analysis [<xref ref-type="bibr" rid="c9">9</xref>]. Formally, we define a network <italic>G</italic> = (<italic>V, E</italic>), where <italic>V</italic> is a set of <italic>n</italic> nodes and <italic>E</italic> is a set of <italic>m</italic> edges. Each <italic>u</italic> &#x2208; <italic>V</italic> represents one student, and each <italic>e</italic> &#x2208; <italic>E</italic> is a tuple (<italic>u, v, t</italic>) that represents a relation between two nodes <italic>u</italic> and <italic>v</italic> of type <italic>t</italic>. Possible relation types included two nodes sharing the same home or dorm address, being enrolled in the same course, playing the same team sport, sharing a dorm floor or building, and being confirmed as close contacts by a contact tracer. We additionally consider a weight function <italic>w</italic> : <italic>E</italic> &#x2192; &#x211D; that maps each edge to a real-valued weight, or 0 if the edge does not exist. In our context, all edges have a weight of 1 except for students who were enrolled in the same course(s), in which case the edge weight was the number of courses they shared. This representation is thus a flexible and expressive means of modeling interactions among students in the context of a large community, and served as the input to the predictive models.</p>
+<sec id="s4a">
+<label>4.1</label>
+<title>Predictive Modeling</title>
+<p>In designing the the predictive models we prioritized the following principles:</p>
+<list list-type="order">
+<list-item><p>Simplicity. The operational needs of the program were urgent, so we designed models that were relatively simple to develop, test, and deploy. This is true of both the learning algorithms and the underlying data.</p></list-item>
+<list-item><p>Diversity. The combination of diverse models is the cornerstone of the success of ensemble methods in machine learning [<xref ref-type="bibr" rid="c14">14</xref>]. In our case, we encouraged diversity by optimizing each model for a different task within the campus social network: one model for a node-level task, and the other for an edge-level task. Taken together, the strengths and limitations of both models proved to be complementary in solving the operational problem.</p></list-item>
+<list-item><p>Interpretability. The outputs of the predictive models were monitored by the adaptive testing team and subject to further operational constraints. For example, roommates of students who tested positive were already being called for testing, and so were excluded from adaptive testing selection. However, roommate connections contribute significantly to the campus social network structure. By designing models with interpretable outputs, we simultaneously enabled the models to make full use of the information provided by roommate connections and the adaptive testing team to make informed decisions with the aid of model outputs.</p></list-item>
+</list>
+<sec id="s4a1">
+<label>4.1.1</label>
+<title>Node Risk Prediction</title>
+<p>The first model predicted risk at the node level by first assigning each node <italic>u</italic> &#x2208; <italic>V</italic> a base risk score <italic>P</italic><sub>0</sub> based on whether the student had recently tested positive, been assigned to quarantine/isolation, or reported COVID-19 symptoms. Next, each node sent a portion of its risk to its neighbors. This risk propagation approach, known more generally as message passing, is foundational to many network inference tasks [<xref ref-type="bibr" rid="c8">8</xref>]. For a given node <italic>u</italic> we iteratively computed its final risk <italic>P</italic><sub><italic>i</italic></sub>(<italic>u</italic>) according to the following:
+<disp-formula id="eqn1">
+<alternatives><graphic xlink:href="21261423v2_eqn1.gif"/></alternatives>
+</disp-formula>
+where <italic>i</italic> is a parameter defining the number of message passing iterations, <italic>&#x1D4AF;</italic> is the set of edge types, &#x1D4A9;<sub><italic>t</italic></sub>(<italic>u</italic>) is the set of <italic>u</italic>&#x2019;s neighbors via edge type <italic>t</italic> (i.e., (<italic>u, v, t</italic>) &#x2208; <italic>E</italic> for all <italic>v</italic> &#x2208; &#x1D4A9;<sub><italic>t</italic></sub>(<italic>u</italic>)), and <italic>&#x03C9;</italic><sub><italic>t,i</italic></sub> is a learned weight parameter associated with edge type <italic>t</italic> at hop <italic>i</italic>. Intuitively, this means that during each iteration each node&#x2019;s risk is updated with the weighted sum of the risk of its neighbors, where the weights are fixed for each combination of edge type and hop number. We set <italic>i</italic> = 2 such that each node&#x2019;s final risk is influenced by nodes up to two hops away in the network.</p>
+<p>To learn the set of all weights <italic>&#x03C9;</italic><sub><italic>t,i</italic></sub>, we utilized the following evolutionary strategy:</p>
+<list list-type="order">
+<list-item><p>Given an initialized set of weights, target a random previous day in the semester, denoted as <italic>d</italic>.</p></list-item>
+<list-item><p>Create a copy of the weights and make several small and random adjustments to them.</p></list-item>
+<list-item><p>Simulate the testing results for day <italic>d</italic> via <xref ref-type="disp-formula" rid="eqn1">Equation 1</xref>, and evaluate the predictions for both sets of weights.</p></list-item>
+<list-item><p>Keep the weight set that more accurately predicted which nodes tested positive on day <italic>d</italic>.</p></list-item>
+<list-item><p>Repeat steps 1-4 until convergence.</p></list-item>
+</list>
+<p>This approach was simple and interpretable (as compared to state-of-the-art models like graph neural networks [<xref ref-type="bibr" rid="c12">12</xref>]), and allowed us to easily include new testing results as they became available during the semester (however, in order to minimize bias we utilized general surveillance and symptomatic test results, not adaptive testing results). To choose students for the adaptive cohort, we simply selected the nodes with the highest values of <italic>P</italic><sub><italic>i</italic></sub> that were susceptible (i.e., had not yet tested positive).</p>
+</sec>
+<sec id="s4a2">
+<label>4.1.2</label>
+<title>Link Prediction</title>
+<p>The second model predicted risk at the edge (link) level by utilizing correlations between edge types to predict unobserved contact tracing relationships. Our approach to this problem, known as multi-relational link prediction, is adapted from the work of Yang <italic>et al</italic>. [<xref ref-type="bibr" rid="c13">13</xref>]. For each pair of nodes <italic>u, v</italic> &#x2208; <italic>V</italic> we compute the probability of a contact tracing relationship <italic>P</italic> (<italic>u, v</italic>) according to:
+<disp-formula id="eqn2">
+<alternatives><graphic xlink:href="21261423v2_eqn2.gif"/></alternatives>
+</disp-formula>
+where <italic>C</italic><sub><italic>katz</italic></sub>(<italic>u</italic>) is the Katz centrality of node <italic>u</italic> [<xref ref-type="bibr" rid="c3">3</xref>], and <italic>f</italic><sub>1</sub> and <italic>f</italic><sub>2</sub> represent the one-hop and two-hop information flow, respectively, from <italic>u</italic> to <italic>v</italic>. We define <italic>f</italic><sub>1</sub> as follows:
+<disp-formula id="eqn3">
+<alternatives><graphic xlink:href="21261423v2_eqn3.gif"/></alternatives>
+</disp-formula>
+where <italic>&#x03C3;</italic>(<italic>t</italic>) is a learned conditional probability that two nodes <italic>u</italic> and <italic>v</italic> will be contact traced given that they are connected by an edge of type <italic>t</italic>. We compute <italic>f</italic><sub>2</sub> in the same manner as <italic>f</italic><sub>1</sub>, but with respect to a two-hop neighbor graph of <italic>G</italic>. The 2-hop neighbor graph is constructed by adding an edge of type <italic>t</italic> between any two nodes <italic>u</italic> and <italic>v</italic> if they are both neighbors to a common node <italic>x</italic> via edge type <italic>t</italic>. To compute the conditional probabilities for <italic>&#x03C3;</italic>, we utilized a training network built from student and contact tracing data from the (previous) fall 2020 semester. This approach assumes that although student information (dorm address, course schedule, etc.) may change between semesters, the conditional probability distribution of contact tracing relationships do not.</p>
+<p>To choose students for the adaptive cohort, we first computed <italic>P</italic> (<italic>u, v</italic>) for each node <italic>u</italic> that had tested positive within the previous four days with respect to each other node <italic>v &#x2260; u</italic>. Then we chose the nodes that were most likely to be contact traced to a positive node <italic>u</italic> that were also susceptible (i.e., had not yet tested positive).</p>
+</sec>
+</sec>
+</sec>
+</body>
+<back>
+<sec sec-type="data-availability">
+<title>Data Availability</title>
+<p>The data and code for this study are available from the corresponding author upon reasonable request.</p>
+</sec>
+<ref-list>
+<title>References</title>
+<ref id="c1"><label>[1]</label><mixed-citation publication-type="journal"><string-name><given-names>Mark D</given-names> <surname>Fox</surname></string-name>, <string-name><given-names>David C</given-names> <surname>Bailey</surname></string-name>, <string-name><given-names>Michael D</given-names> <surname>Seamon</surname></string-name>, and <string-name><given-names>Marie Lynn</given-names> <surname>Miranda</surname></string-name>. <article-title>Response to a covid-19 outbreak on a university campus&#x2014;indiana, august 2020</article-title>. <source>Morbidity and Mortality Weekly Report</source>, <volume>70</volume>(<issue>4</issue>):<fpage>118</fpage>, <year>2021</year>.</mixed-citation></ref>
+<ref id="c2"><label>[2]</label><mixed-citation publication-type="journal"><string-name><given-names>Davidson H</given-names> <surname>Hamer</surname></string-name>, <string-name><given-names>Laura F</given-names> <surname>White</surname></string-name>, <string-name><given-names>Helen E</given-names> <surname>Jenkins</surname></string-name>, <string-name><given-names>Christopher J</given-names> <surname>Gill</surname></string-name>, <string-name><given-names>Hannah E</given-names> <surname>Landsberg</surname></string-name>, <string-name><given-names>Catherine</given-names> <surname>Klapperich</surname></string-name>, <string-name><given-names>Katia</given-names> <surname>Bulekova</surname></string-name>, <string-name><given-names>Judy</given-names> <surname>Platt</surname></string-name>, <string-name><given-names>Linette</given-names> <surname>Decarie</surname></string-name>, <string-name><given-names>Wayne</given-names> <surname>Gilmore</surname></string-name>, <etal>et al.</etal> <article-title>Assessment of a covid-19 control plan on an urban university campus during a second wave of the pandemic</article-title>. <source>JAMA Network Open</source>, <volume>4</volume>(<issue>6</issue>):<fpage>e2116425</fpage>&#x2013;<lpage>e2116425</lpage>, <year>2021</year>.</mixed-citation></ref>
+<ref id="c3"><label>[3]</label><mixed-citation publication-type="journal"><string-name><given-names>Leo</given-names> <surname>Katz</surname></string-name>. <article-title>A new status index derived from sociometric analysis</article-title>. <source>Psychometrika</source>, <volume>18</volume>(<issue>1</issue>):<fpage>39</fpage>&#x2013;<lpage>43</lpage>, <year>1953</year>.</mixed-citation></ref>
+<ref id="c4"><label>[4]</label><mixed-citation publication-type="journal"><string-name><given-names>Matt J</given-names> <surname>Keeling</surname></string-name>, <string-name><given-names>T Deirdre</given-names> <surname>Hollingsworth</surname></string-name>, and <string-name><given-names>Jonathan M</given-names> <surname>Read</surname></string-name>. <article-title>Efficacy of contact tracing for the containment of the 2019 novel coronavirus (covid-19)</article-title>. <source>J Epidemiol Community Health</source>, <volume>74</volume>(<issue>10</issue>):<fpage>861</fpage>&#x2013;<lpage>866</lpage>, <year>2020</year>.</mixed-citation></ref>
+<ref id="c5"><label>[5]</label><mixed-citation publication-type="other"><string-name><given-names>Steven J</given-names> <surname>Krieg</surname></string-name>, <string-name><given-names>Jennifer J</given-names> <surname>Schnur</surname></string-name>, <string-name><given-names>Marie L</given-names> <surname>Miranda</surname></string-name>, <string-name><given-names>Michael E</given-names> <surname>Pfrender</surname></string-name>, and <string-name><given-names>Nitesh V</given-names> <surname>Chawla.</surname></string-name> <article-title>Symptomatic, presymptomatic, and asymptomatic transmission of sars-cov-2</article-title>. <source>medRxiv</source>, &#x2014;, <year>2021</year>. doi:<pub-id pub-id-type="doi">10.1101/2021.07.08.21259871</pub-id></mixed-citation></ref>
+<ref id="c6"><label>[6]</label><mixed-citation publication-type="other"><string-name><given-names>Kai</given-names> <surname>Kupferschmidt</surname></string-name> and <string-name><given-names>Meredith</given-names> <surname>Wadman</surname></string-name>. <source>Delta variant triggers new phase in the pandemic</source>, <year>2021</year>.</mixed-citation></ref>
+<ref id="c7"><label>[7]</label><mixed-citation publication-type="journal"><string-name><given-names>Daniel B</given-names> <surname>Larremore</surname></string-name>, <string-name><given-names>Bryan</given-names> <surname>Wilder</surname></string-name>, <string-name><given-names>Evan</given-names> <surname>Lester</surname></string-name>, <string-name><given-names>Soraya</given-names> <surname>Shehata</surname></string-name>, <string-name><given-names>James M</given-names> <surname>Burke</surname></string-name>, <string-name><given-names>James A</given-names> <surname>Hay</surname></string-name>, <string-name><given-names>Milind</given-names> <surname>Tambe</surname></string-name>, <string-name><given-names>Michael J</given-names> <surname>Mina</surname></string-name>, and <string-name><given-names>Roy</given-names> <surname>Parker</surname></string-name>. <article-title>Test sensitivity is secondary to frequency and turnaround time for covid-19 screening</article-title>. <source>Science advances</source>, <volume>7</volume>(<issue>1</issue>):<fpage>eabd5393</fpage>, <year>2021</year>.</mixed-citation></ref>
+<ref id="c8"><label>[8]</label><mixed-citation publication-type="book"><string-name><given-names>Judea</given-names> <surname>Pearl</surname></string-name>. <source>Probabilistic reasoning in intelligent systems: networks of plausible inference</source>. <publisher-name>Elsevier</publisher-name>, <year>2014</year>.</mixed-citation></ref>
+<ref id="c9"><label>[9]</label><mixed-citation publication-type="journal"><string-name><given-names>Yizhou</given-names> <surname>Sun</surname></string-name> and <string-name><given-names>Jiawei</given-names> <surname>Han</surname></string-name>. <article-title>Mining heterogeneous information networks: a structural analysis approach</article-title>. <source>Acm Sigkdd Explorations Newsletter</source>, <volume>14</volume>(<issue>2</issue>):<fpage>20</fpage>&#x2013;<lpage>28</lpage>, <year>2013</year>.</mixed-citation></ref>
+<ref id="c10"><label>[10]</label><mixed-citation publication-type="other"><string-name><given-names>Janice Hopkins</given-names> <surname>Tanne</surname></string-name>. <source>Covid-19: Biden renews vaccines push as cases and deaths rise among unvaccinated people</source>, <year>2021</year>.</mixed-citation></ref>
+<ref id="c11"><label>[11]</label><mixed-citation publication-type="journal"><string-name><given-names>Kieran A</given-names> <surname>Walsh</surname></string-name>, <string-name><given-names>Karen</given-names> <surname>Jordan</surname></string-name>, <string-name><given-names>Barbara</given-names> <surname>Clyne</surname></string-name>, <string-name><given-names>Daniela</given-names> <surname>Rohde</surname></string-name>, <string-name><given-names>Linda</given-names> <surname>Drummond</surname></string-name>, <string-name><given-names>Paula</given-names> <surname>Byrne</surname></string-name>, <string-name><given-names>Susan</given-names> <surname>Ahern</surname></string-name>, <string-name><given-names>Paul G</given-names> <surname>Carty</surname></string-name>, <string-name><given-names>Kirsty K</given-names> <surname>O&#x2019;Brien</surname></string-name>, <string-name><given-names>Eamon</given-names> <surname>O&#x2019;Murchu</surname></string-name>, <etal>et al.</etal> <article-title>Sars-cov-2 detection, viral load and infectivity over the course of an infection: Sars-cov-2 detection, viral load and infectivity</article-title>. <source>Journal of Infection</source>, <volume>81</volume>(<issue>3</issue>), <year>2020</year>.</mixed-citation></ref>
+<ref id="c12"><label>[12]</label><mixed-citation publication-type="journal"><string-name><given-names>Zonghan</given-names> <surname>Wu</surname></string-name>, <string-name><given-names>Shirui</given-names> <surname>Pan</surname></string-name>, <string-name><given-names>Fengwen</given-names> <surname>Chen</surname></string-name>, <string-name><given-names>Guodong</given-names> <surname>Long</surname></string-name>, <string-name><given-names>Chengqi</given-names> <surname>Zhang</surname></string-name>, and <string-name><given-names>S Yu</given-names> <surname>Philip</surname></string-name>. <article-title>A comprehensive survey on graph neural networks</article-title>. <source>IEEE transactions on neural networks and learning systems</source>, <volume>32</volume>(<issue>1</issue>):<fpage>4</fpage>&#x2013;<lpage>24</lpage>, <year>2020</year>.</mixed-citation></ref>
+<ref id="c13"><label>[13]</label><mixed-citation publication-type="other"><string-name><given-names>Yang</given-names> <surname>Yang</surname></string-name>, <string-name><given-names>Nitesh</given-names> <surname>Chawla</surname></string-name>, <string-name><given-names>Yizhou</given-names> <surname>Sun</surname></string-name>, and <string-name><given-names>Jiawei</given-names> <surname>Hani</surname></string-name>. <article-title>Predicting links in multi-relational and heterogeneous networks</article-title>. <source>In 2012 IEEE 12th international conference on data mining</source>, pages <fpage>755</fpage>&#x2013;<lpage>764</lpage>. IEEE, <year>2012</year>.</mixed-citation></ref>
+<ref id="c14"><label>[14]</label><mixed-citation publication-type="book"><string-name><given-names>Cha</given-names> <surname>Zhang</surname></string-name> and <string-name><given-names>Yunqian</given-names> <surname>Ma</surname></string-name>. <source>Ensemble machine learning: methods and applications</source>. <publisher-name>Springer</publisher-name>, <year>2012</year>.</mixed-citation></ref>
+</ref-list>
+</back>
+</article>

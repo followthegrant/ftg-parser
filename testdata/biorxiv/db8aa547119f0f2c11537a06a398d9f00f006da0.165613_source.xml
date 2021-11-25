@@ -1,0 +1,894 @@
+<article article-type="article" specific-use="production" xml:lang="en" xmlns:hw="org.highwire.hpp" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ali="http://www.niso.org/schemas/ali/1.0/" xmlns:ref="http://schema.highwire.org/Reference" xmlns:hwp="http://schema.highwire.org/Journal" xmlns:l="http://schema.highwire.org/Linking" xmlns:r="http://schema.highwire.org/Revision" xmlns:x="http://www.w3.org/1999/xhtml" xmlns:app="http://www.w3.org/2007/app" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:nlm="http://schema.highwire.org/NLM/Journal" xmlns:a="http://www.w3.org/2005/Atom" xmlns:c="http://schema.highwire.org/Compound" xmlns:hpp="http://schema.highwire.org/Publishing"><front><journal-meta><journal-id journal-id-type="hwp">biorxiv</journal-id><journal-id journal-id-type="publisher-id">BIORXIV</journal-id><journal-title>bioRxiv</journal-title><abbrev-journal-title abbrev-type="publisher">bioRxiv</abbrev-journal-title><publisher><publisher-name>Cold Spring Harbor Laboratory</publisher-name></publisher></journal-meta><article-meta><article-id pub-id-type="doi">10.1101/165613</article-id><article-id pub-id-type="other" hwp:sub-type="pisa">biorxiv;165613v1</article-id><article-id pub-id-type="other" hwp:sub-type="pisa-master">biorxiv;165613</article-id><article-id pub-id-type="other" hwp:sub-type="slug">165613</article-id><article-id pub-id-type="other" hwp:sub-type="tag">165613</article-id><article-version>1.1</article-version><article-categories><subj-group subj-group-type="author-type"><subject>Regular Article</subject></subj-group><subj-group subj-group-type="heading"><subject>New Results</subject></subj-group><subj-group subj-group-type="hwp-journal-coll" hwp:journal-coll-id="Neuroscience" hwp:journal="biorxiv"><subject>Neuroscience</subject></subj-group></article-categories><title-group><article-title hwp:id="article-title-1">Dendritic processing of spontaneous neuronal sequences for one-shot learning</article-title></title-group><author-notes hwp:id="author-notes-1"><corresp hwp:id="corresp-1">For correspondence: <email hwp:id="email-1">tatsuya.haga@riken.jp</email> (TH), <email hwp:id="email-2">tfukai@riken.jp</email> (TF)</corresp></author-notes><contrib-group hwp:id="contrib-group-1"><contrib contrib-type="author" corresp="yes" hwp:id="contrib-1"><name name-style="western" hwp:sortable="Haga Tatsuya"><surname>Haga</surname><given-names>Tatsuya</given-names></name></contrib><contrib contrib-type="author" corresp="yes" hwp:id="contrib-2"><name name-style="western" hwp:sortable="Fukai Tomoki"><surname>Fukai</surname><given-names>Tomoki</given-names></name></contrib><aff hwp:id="aff-1">
+<institution hwp:id="institution-1">RIKEN Brain Science Institute</institution>, Hirosawa 2-1, Wako, Saitama 351-0198, <country>Japan</country>
+</aff></contrib-group><pub-date pub-type="epub-original" hwp:start="2017"><year>2017</year></pub-date><pub-date pub-type="hwp-created" hwp:start="2017-07-19T15:18:35-07:00">
+    <day>19</day><month>7</month><year>2017</year>
+  </pub-date><pub-date pub-type="hwp-received" hwp:start="2017-07-19T15:18:35-07:00">
+    <day>19</day><month>7</month><year>2017</year>
+  </pub-date><pub-date pub-type="epub" hwp:start="2017-07-19T15:43:37-07:00">
+    <day>19</day><month>7</month><year>2017</year>
+  </pub-date><pub-date pub-type="epub-version" hwp:start="2017-07-19T15:43:37-07:00">
+    <day>19</day><month>7</month><year>2017</year>
+  </pub-date><elocation-id>165613</elocation-id><history hwp:id="history-1">
+<date date-type="received" hwp:start="2017-07-19"><day>19</day><month>7</month><year>2017</year></date>
+<date date-type="rev-recd" hwp:start="2017-07-19"><day>19</day><month>7</month><year>2017</year></date>
+<date date-type="accepted" hwp:start="2017-07-19"><day>19</day><month>7</month><year>2017</year></date>
+</history><permissions><copyright-statement hwp:id="copyright-statement-1">© 2017, Posted by Cold Spring Harbor Laboratory</copyright-statement><copyright-year>2017</copyright-year><license license-type="creative-commons" xlink:href="http://creativecommons.org/licenses/by-nc-nd/4.0/" hwp:id="license-1"><p hwp:id="p-1">This pre-print is available under a Creative Commons License (Attribution-NonCommercial-NoDerivs 4.0 International), CC BY-NC-ND 4.0, as described at <ext-link l:rel="related" l:ref-type="uri" l:ref="http://creativecommons.org/licenses/by-nc-nd/4.0/" ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by-nc-nd/4.0/" hwp:id="ext-link-1">http://creativecommons.org/licenses/by-nc-nd/4.0/</ext-link></p></license></permissions><self-uri xlink:href="165613.pdf" content-type="pdf" xlink:role="full-text"/><self-uri l:ref="forthcoming:yes" c:role="http://schema.highwire.org/variant/abstract" xlink:role="abstract" content-type="xhtml+xml" hwp:variant="yes"/><self-uri l:ref="forthcoming:yes" c:role="http://schema.highwire.org/variant/full-text" xlink:href="file:/content/biorxiv/vol0/issue2019/pdf/165613v1.pdf" hwp:variant="yes" content-type="pdf" xlink:role="full-text"/><self-uri l:ref="forthcoming:yes" c:role="http://schema.highwire.org/variant/full-text" xlink:role="full-text" content-type="xhtml+xml" hwp:variant="yes"/><self-uri l:ref="forthcoming:yes" c:role="http://schema.highwire.org/variant/source" xlink:role="source" content-type="xml" xlink:show="none" hwp:variant="yes"/><self-uri l:ref="forthcoming:yes" c:role="http://schema.highwire.org/variant/original" xlink:role="original" content-type="xml" xlink:show="none" hwp:variant="yes" xlink:href="165613.xml"/><self-uri content-type="abstract" xlink:href="file:/content/biorxiv/vol0/issue2019/abstracts/165613v1/165613v1.htslp"/><self-uri content-type="fulltext" xlink:href="file:/content/biorxiv/vol0/issue2019/fulltext/165613v1/165613v1.htslp"/><abstract hwp:id="abstract-1"><title hwp:id="title-1">Abstract</title><p hwp:id="p-2">Spontaneous firing sequences colloquially called “preplay” are fundamental features of hippocampal network physiology. Preplay sequences have been hypothesized to participate in hippocampal learning and memory, but such functional roles and their potential cellular mechanisms remain unexplored. Here, we report a computational model based on the functional propagation of preplay sequences in the CA3 neuronal network. The model instantiates two synaptic pathways in CA3 neurons, one for proximal dendrite-somatic interactions to generate intrinsic preplay sequences and the other for distal dendritic processing of extrinsic sensory signals. The core dendritic computation is the maximization of matching between patterned activities in the two compartments through nonlinear spike generation. The model performs robust one-shot learning with long-term stability and independence that are modulated by the plasticity of dendrite-targeted inhibition. This model demonstrates that learning models combined with dendritic computations can enable preplay sequences to act as templates for rapid and stable memory formation.</p></abstract><counts><page-count count="34"/></counts><custom-meta-wrap>
+    <custom-meta hwp:id="custom-meta-1">
+      <meta-name>has-earlier-version</meta-name>
+      <meta-value>yes</meta-value>
+    </custom-meta>
+  </custom-meta-wrap></article-meta></front><body><sec id="S1" hwp:id="sec-1"><title hwp:id="title-2">Introduction</title><p hwp:id="p-3">Fast and robust memory encoding is a fundamental ability of the brain and has been extensively explored in the hippocampus. During spatial navigation, hippocampal place cells rapidly acquire their spatial receptive fields during the first exposure to the spatial environment<xref ref-type="bibr" rid="c1" hwp:id="xref-ref-1-1" hwp:rel-id="ref-1">
+<sup>1</sup>
+</xref>. In addition to this learning speed, hippocampus can form distinct spatial representations for multiple spatial experiences without interference<sup>
+<xref ref-type="bibr" rid="c2" hwp:id="xref-ref-2-1" hwp:rel-id="ref-2">2</xref>,<xref ref-type="bibr" rid="c3" hwp:id="xref-ref-3-1" hwp:rel-id="ref-3">3</xref>
+</sup>, avoiding overwriting of previous memories. Firing sequences exhibited by hippocampal place cells during locomotion<sup>
+<xref ref-type="bibr" rid="c4" hwp:id="xref-ref-4-1" hwp:rel-id="ref-4">4</xref>,<xref ref-type="bibr" rid="c5" hwp:id="xref-ref-5-1" hwp:rel-id="ref-5">5</xref>
+</sup> are replayed in spontaneous activity<sup>
+<xref ref-type="bibr" rid="c6" hwp:id="xref-ref-6-1" hwp:rel-id="ref-6">6</xref>,<xref ref-type="bibr" rid="c7" hwp:id="xref-ref-7-1" hwp:rel-id="ref-7">7</xref>
+</sup>, and several studies have suggested the functional link between these firing sequences and the memory encoding process<sup>
+<xref ref-type="bibr" rid="c5" hwp:id="xref-ref-5-2" hwp:rel-id="ref-5">5</xref>,<xref ref-type="bibr" rid="c7" hwp:id="xref-ref-7-2" hwp:rel-id="ref-7">7</xref>
+</sup>. Disrupting sharp wave ripples<xref ref-type="bibr" rid="c8" hwp:id="xref-ref-8-1" hwp:rel-id="ref-8">
+<sup>8</sup>
+</xref>, which coincide with the replayed firing sequences, impairs memory consolidation, suggesting the importance of these sequences in memory formation.</p><p hwp:id="p-4">Recent evidence has shown that a significant fraction of place-cell sequences emerge from firing sequences that are ‘pre-played’ in spontaneous activity prior to spatial experience<sup>
+<xref ref-type="bibr" rid="c9" hwp:id="xref-ref-9-1" hwp:rel-id="ref-9">9</xref>–<xref ref-type="bibr" rid="c11" hwp:id="xref-ref-11-1" hwp:rel-id="ref-11">11</xref>
+</sup>. Although preplay sequences remain controversial<xref ref-type="bibr" rid="c12" hwp:id="xref-ref-12-1" hwp:rel-id="ref-12">
+<sup>12</sup>
+</xref>, these results suggest that hippocampal networks may have an innate structure to utilize spontaneous firing patterns for sequence learning. Area CA3 is the likely source of prepay firing sequences in the hippocampus<sup>
+<xref ref-type="bibr" rid="c13" hwp:id="xref-ref-13-1" hwp:rel-id="ref-13">13</xref>,<xref ref-type="bibr" rid="c14" hwp:id="xref-ref-14-1" hwp:rel-id="ref-14">14</xref>
+</sup>, and CA3-based computational models have been proposed for sequence learning<sup>
+<xref ref-type="bibr" rid="c15" hwp:id="xref-ref-15-1" hwp:rel-id="ref-15">15</xref>,<xref ref-type="bibr" rid="c16" hwp:id="xref-ref-16-1" hwp:rel-id="ref-16">16</xref>
+</sup>. However, these previous models studied simplified conditions in which the place fields of individual neurons were already configured prior to spatial exploration, and recurrent synapses learn sequential firing in an a posteriori manner without the involvement of spontaneous sequences. Therefore, while the functional role of replay sequences in hippocampal memory processing is relatively well understood<sup>
+<xref ref-type="bibr" rid="c7" hwp:id="xref-ref-7-3" hwp:rel-id="ref-7">7</xref>,<xref ref-type="bibr" rid="c8" hwp:id="xref-ref-8-2" hwp:rel-id="ref-8">8</xref>
+</sup>, that of preplay sequences remains unknown. Indeed, the cellular mechanisms that would enable preplay-based memory processing has never been investigated.</p><p hwp:id="p-5">In this study, we propose a computational model where hippocampal networks utilize preplay sequences for robust one-shot learning of spatial memory. Unlike previous models, our model does not assume that the place fields are preconfigured, but rather we hypothesize that spontaneous firing sequences exist prior to sequence learning, and the role of sequence learning is to associate sequences of sensory input patterns with specific preplay sequences. An unexpected finding of our framework is that dendritic computation between two segregated synaptic pathways to CA3 pyramidal cells is required to perform this pattern association. The perforant path from the entorhinal cortex conveys external sensory information to CA3 distal dendrites, while recurrent synapses primarily contact the CA3 proximal dendrites<xref ref-type="bibr" rid="c17" hwp:id="xref-ref-17-1" hwp:rel-id="ref-17">
+<sup>17</sup>
+</xref>. This bipartite network architecture allows CA3 pyramidal cells to amplify and potentiate coincidence between two input streams, if CA3 pyramidal cells perform dendritic computation like calcium spikes in neocortical pyramidal cells<sup>
+<xref ref-type="bibr" rid="c18" hwp:id="xref-ref-18-1" hwp:rel-id="ref-18">18</xref>,<xref ref-type="bibr" rid="c19" hwp:id="xref-ref-19-1" hwp:rel-id="ref-19">19</xref>
+</sup> and dendritic plateau potentials in hippocampal CA1<sup>
+<xref ref-type="bibr" rid="c20" hwp:id="xref-ref-20-1" hwp:rel-id="ref-20">20</xref>,<xref ref-type="bibr" rid="c21" hwp:id="xref-ref-21-1" hwp:rel-id="ref-21">21</xref>
+</sup>. We construct a mathematically tractable and biologically plausible two-compartment neuron model by including Hebbian plasticity in each compartment<sup>
+<xref ref-type="bibr" rid="c22" hwp:id="xref-ref-22-1" hwp:rel-id="ref-22">22</xref>
+</sup> and implement canonical correlation analysis (CCA)<sup>
+<xref ref-type="bibr" rid="c23" hwp:id="xref-ref-23-1" hwp:rel-id="ref-23">23</xref>
+</sup> between the compartments, which emerges naturally from the effect of dendritic coincidence detection. The CCA-like learning maximizes matching between somatic spontaneous sequences and dendritic sensory inputs to rapidly form spatial memories, and increases the frequency of replay of the firing sequence associated with a particular experience. Dendritic inhibition stabilizes the place fields and protects distinct memory experiences from interferences. The model shows for the first time that a pivotal combination of dendritic computation and spontaneous firing sequences enable the rapid formation of stable place fields and place-cell sequences.</p></sec><sec id="S2" hwp:id="sec-2"><title hwp:id="title-3">Results</title><sec id="S2a" hwp:id="sec-3"><title hwp:id="title-4">Two-compartment neuron model with nonlinear dendritic computation</title><p hwp:id="p-6">Dendritic coincidence detection and consequent synaptic plasticity play a pivotal role in the spatial memory encoding modeled below. Based on this principle, we constructed a mathematically tractable neuron model keeping its biological plausibility. We considered a two-compartment neuron model with a somatic compartment describing, in reality, the combination of a soma, basal and proximal dendrites, and a distal dendritic compartment representing the apical tuft dendrite. Assuming that the conductance between two compartments is small<xref ref-type="bibr" rid="c18" hwp:id="xref-ref-18-2" hwp:rel-id="ref-18">
+<sup>18</sup>
+</xref>, we modeled the activation of each compartment independently as<disp-formula id="eqn1" hwp:id="disp-formula-1">
+<alternatives hwp:id="alternatives-1"><graphic xlink:href="165613_eqn1.gif" position="float" orientation="portrait" hwp:id="graphic-1"/></alternatives>
+</disp-formula>
+<disp-formula id="eqn2" hwp:id="disp-formula-2">
+<alternatives hwp:id="alternatives-2"><graphic xlink:href="165613_eqn2.gif" position="float" orientation="portrait" hwp:id="graphic-2"/></alternatives>
+</disp-formula>where <italic toggle="yes">x</italic>(<italic toggle="yes">t</italic>) determines the firing rate of sodium spikes in the somatic compartment, <italic toggle="yes">y</italic>(<italic toggle="yes">t</italic>) is the local activity in the distal dendritic compartment, <inline-formula hwp:id="inline-formula-1">
+<alternatives hwp:id="alternatives-3"><inline-graphic xlink:href="165613_inline1.gif" hwp:id="inline-graphic-1"/></alternatives>
+</inline-formula> and <inline-formula hwp:id="inline-formula-2">
+<alternatives hwp:id="alternatives-4"><inline-graphic xlink:href="165613_inline2.gif" hwp:id="inline-graphic-2"/></alternatives>
+</inline-formula> are synaptic weights on the somatic and dendritic compartments, respectively, and <italic toggle="yes">βy</italic>(<italic toggle="yes">t</italic>) is the threshold modification of somatic spikes by dendritic inputs<xref ref-type="bibr" rid="c19" hwp:id="xref-ref-19-2" hwp:rel-id="ref-19">
+<sup>19</sup>
+</xref>. Unweighted postsynaptic currents <inline-formula hwp:id="inline-formula-3">
+<alternatives hwp:id="alternatives-5"><inline-graphic xlink:href="165613_inline3.gif" hwp:id="inline-graphic-3"/></alternatives>
+</inline-formula> and <inline-formula hwp:id="inline-formula-4">
+<alternatives hwp:id="alternatives-6"><inline-graphic xlink:href="165613_inline4.gif" hwp:id="inline-graphic-4"/></alternatives>
+</inline-formula> generated by each synapse are calculated by</p><disp-formula id="eqn3" hwp:id="disp-formula-3">
+<alternatives hwp:id="alternatives-7"><graphic xlink:href="165613_eqn3.gif" position="float" orientation="portrait" hwp:id="graphic-3"/></alternatives>
+</disp-formula><p hwp:id="p-7">Where τ<sub>L</sub> = 10 ms is the decay constant of postsynaptic currents. Each neuron has a sigmoidal nonlinear response function f(<italic toggle="yes">I</italic>) = 1/(1 + exp(−(<italic toggle="yes">I</italic> − <italic toggle="yes">θ</italic>
+<sub>f</sub>))) with <italic toggle="yes">θ</italic>
+<sub>f</sub> being a constant threshold.</p><p hwp:id="p-8">Synchronous activation of the two compartments represented by the product <italic toggle="yes">x</italic>(<italic toggle="yes">t</italic>)<italic toggle="yes">y</italic>(<italic toggle="yes">t</italic>) generates calcium spikes (or other similar dendritic mechanism for coincidence detection), which in turn enhance neuronal firing. Thus, the net output firing rate of the two-compartment neuron is expressed as<disp-formula id="eqn4" hwp:id="disp-formula-4" hwp:rev-id="xref-disp-formula-4-1">
+<alternatives hwp:id="alternatives-8"><graphic xlink:href="165613_eqn4.gif" position="float" orientation="portrait" hwp:id="graphic-4"/></alternatives>
+</disp-formula>where <italic toggle="yes">ϕ</italic> is the maximum firing rate elicitable by local somatic inputs, and <italic toggle="yes">γ</italic> is the amplification factor of calcium spikes, and <italic toggle="yes">z</italic>(<italic toggle="yes">t</italic>) gives the output firing rate of the two-compartment neuron. We note that the above equation takes into account the experimental results that activation of distal dendrites increases the gain of the somatic firing rate<sup>
+<xref ref-type="bibr" rid="c18" hwp:id="xref-ref-18-3" hwp:rel-id="ref-18">18</xref>,<xref ref-type="bibr" rid="c19" hwp:id="xref-ref-19-3" hwp:rel-id="ref-19">19</xref>
+</sup>.</p><p hwp:id="p-9">We express the learning rule for the two-compartment neuron as<disp-formula id="eqn5" hwp:id="disp-formula-5">
+<alternatives hwp:id="alternatives-9"><graphic xlink:href="165613_eqn5.gif" position="float" orientation="portrait" hwp:id="graphic-5"/></alternatives>
+</disp-formula>
+<disp-formula id="eqn6" hwp:id="disp-formula-6">
+<alternatives hwp:id="alternatives-10"><graphic xlink:href="165613_eqn6.gif" position="float" orientation="portrait" hwp:id="graphic-6"/></alternatives>
+</disp-formula>where <italic toggle="yes">α</italic> is a constant that determines the relative magnitude of the potentiation caused by calcium spikes. In both equations, the first terms in brackets represent Hebbian synaptic plasticity induced by local activities <italic toggle="yes">x</italic>(<italic toggle="yes">t</italic>) and <italic toggle="yes">y</italic>(<italic toggle="yes">t</italic>) by BCM theory<xref ref-type="bibr" rid="c24" hwp:id="xref-ref-24-1" hwp:rel-id="ref-24">
+<sup>24</sup>
+</xref>. Although BCM theory was originally introduced to describe the relationship between somatic firing rate and weight changes, calcium-based plasticity also gives a similar rule to BCM theory for dendritic activity<xref ref-type="bibr" rid="c25" hwp:id="xref-ref-25-1" hwp:rel-id="ref-25">
+<sup>25</sup>
+</xref>. The second terms in brackets express the long-term potentiation (LTP) effect induced by calcium spikes generated by coincident inputs and successive high calcium ion influx into the dendrites. In hippocampal CA1 pyramidal neurons, the coincident activation of the perforant path projecting to apical tuft dendrites and the Schaffer collateral projecting to proximal dendrites induces LTP<xref ref-type="bibr" rid="c20" hwp:id="xref-ref-20-2" hwp:rel-id="ref-20">
+<sup>20</sup>
+</xref>. Similar phenomenon was also observed in cortical neurons<xref ref-type="bibr" rid="c26" hwp:id="xref-ref-26-1" hwp:rel-id="ref-26">
+<sup>26</sup>
+</xref>.</p><p hwp:id="p-10">Overall factors (1 − <italic toggle="yes">x</italic>(<italic toggle="yes">t</italic>)) and (1 − <italic toggle="yes">y</italic>(<italic toggle="yes">t</italic>)), which do not change the direction of weight changes, were multiplied to match to the objective function we present later. As in the original BCM theory, moving thresholds <italic toggle="yes">θ</italic>
+<sup>som</sup>(<italic toggle="yes">t</italic>) = <italic toggle="yes">c</italic>
+<sub>0</sub>E[<italic toggle="yes">x</italic>(<italic toggle="yes">t</italic>)]<xref ref-type="bibr" rid="c2" hwp:id="xref-ref-2-2" hwp:rel-id="ref-2">
+<sup>2</sup>
+</xref>, <italic toggle="yes">θ</italic>
+<sup>dnd</sup>(<italic toggle="yes">t</italic>) = <italic toggle="yes">c</italic>
+<sub>0</sub>E[<italic toggle="yes">y</italic>(<italic toggle="yes">t</italic>)]<sup>
+<xref ref-type="bibr" rid="c2" hwp:id="xref-ref-2-3" hwp:rel-id="ref-2">2</xref>
+</sup> prevent run-away evolution of synaptic strength. We defined <inline-formula hwp:id="inline-formula-5">
+<alternatives hwp:id="alternatives-11"><inline-graphic xlink:href="165613_inline5.gif" hwp:id="inline-graphic-5"/></alternatives>
+</inline-formula>, by which the mean activity in each compartment approximately converges to <italic toggle="yes">r</italic>
+<sub>0</sub> in the absence of coincidence detection, i.e., when <italic toggle="yes">α</italic> = 0 (see Methods). Homeostasis is also preserved for <italic toggle="yes">α</italic> &gt; 0, although the mean activity becomes higher.</p></sec><sec id="S2b" hwp:id="sec-4"><title hwp:id="title-5">PCA-like and CCA-like learning in the two-compartment neuron model</title><p hwp:id="p-11">It is worth noting that the present learning rule for two-compartment neurons (<italic toggle="yes">β</italic> = 0) is derived from the following objective function:<disp-formula id="eqn7" hwp:id="disp-formula-7">
+<alternatives hwp:id="alternatives-12"><graphic xlink:href="165613_eqn7.gif" position="float" orientation="portrait" hwp:id="graphic-7"/></alternatives>
+</disp-formula>by gradient ascent</p><disp-formula id="eqn8" hwp:id="disp-formula-8">
+<alternatives hwp:id="alternatives-13"><graphic xlink:href="165613_eqn8.gif" position="float" orientation="portrait" hwp:id="graphic-8"/></alternatives>
+</disp-formula><p hwp:id="p-12">This objective function implies the maximization of second-order moments E[<italic toggle="yes">x</italic>(<italic toggle="yes">t</italic>)<xref ref-type="bibr" rid="c2" hwp:id="xref-ref-2-4" hwp:rel-id="ref-2">
+<sup>2</sup>
+</xref>], E[<italic toggle="yes">y</italic>(<italic toggle="yes">t</italic>)<xref ref-type="bibr" rid="c2" hwp:id="xref-ref-2-5" hwp:rel-id="ref-2">
+<sup>2</sup>
+</xref>] and correlation E[<italic toggle="yes">x</italic>(<italic toggle="yes">t</italic>)<italic toggle="yes">y</italic>(<italic toggle="yes">t</italic>)] in conjunction with the minimization of means E[<italic toggle="yes">x</italic>(<italic toggle="yes">t</italic>)]<sup>
+<xref ref-type="bibr" rid="c3" hwp:id="xref-ref-3-2" hwp:rel-id="ref-3">3</xref>
+</sup> and E[<italic toggle="yes">y</italic>(<italic toggle="yes">t</italic>)]<xref ref-type="bibr" rid="c3" hwp:id="xref-ref-3-3" hwp:rel-id="ref-3">
+<sup>3</sup>
+</xref>. Therefore, the learning rule achieves the combination of PCA-like<sup>
+<xref ref-type="bibr" rid="c22" hwp:id="xref-ref-22-2" hwp:rel-id="ref-22">22</xref>
+</sup> and CCA-like<sup>
+<xref ref-type="bibr" rid="c23" hwp:id="xref-ref-23-2" hwp:rel-id="ref-23">23</xref>
+</sup> learning of input vectors <inline-formula hwp:id="inline-formula-6">
+<alternatives hwp:id="alternatives-14"><inline-graphic xlink:href="165613_inline5a.gif" hwp:id="inline-graphic-6"/></alternatives></inline-formula> (<italic toggle="yes">X</italic> = som,dnd) under a homeostatic constraint, where <italic toggle="yes">α</italic> determines the relative weight of CCA. In this paper, single-compartment neurons have only somatic compartment and hence perform only PCA-like learning supposed by BCM theory. In contrast, two-compartment neurons perform dual learning, that is, PCA-like learning within each compartment and CCA-like learning between the two compartments.</p><p hwp:id="p-13">The learning behavior of the two-compartment neuron significantly varied depending on the correlation pattern of inputs. In <xref ref-type="fig" rid="fig1" hwp:id="xref-fig-1-1" hwp:rel-id="F1">Fig. 1a</xref>, the somatic and dendritic compartments received synaptic inputs from minority groups (A and A’) and majority groups (B and B’) of input neurons. Activities of these neurons were strongly correlated within each group but were uncorrelated between pairs of groups A-B’, B-A’ and A’-A’. We conducted simulations when A and A’ were either correlated or uncorrelated (<xref ref-type="fig" rid="fig1" hwp:id="xref-fig-1-2" hwp:rel-id="F1">Fig. 1b</xref>). When groups A and A’ were uncorrelated, synapses from groups B and B’ were strongly potentiated, but those from A and A’ were not (<xref ref-type="fig" rid="fig1" hwp:id="xref-fig-1-3" hwp:rel-id="F1">Fig. 1c</xref>, center). Accordingly, the activities of the two compartments were governed by inputs from groups B and B’, and hence were mutually uncorrelated (<xref ref-type="fig" rid="fig1" hwp:id="xref-fig-1-4" hwp:rel-id="F1">Fig. 1d</xref>, center). In this case, the learning performance was essentially the same as that of the single-compartment model (<xref ref-type="fig" rid="fig1" hwp:id="xref-fig-1-5" hwp:rel-id="F1">Fig. 1c</xref>, left: <italic toggle="yes">α</italic> = 0, no inter-compartment interaction). By contrast, when the activities of groups A and A’ were correlated, synapses from A and A’ were selectively potentiated whereas those from B and B’ were depressed (<xref ref-type="fig" rid="fig1" hwp:id="xref-fig-1-6" hwp:rel-id="F1">Fig. 1c</xref>, right). Accordingly, the two compartments exhibited correlated activities after learning (<xref ref-type="fig" rid="fig1" hwp:id="xref-fig-1-7" hwp:rel-id="F1">Fig. 1d</xref>, right). Note that in the two-compartment model output firing rate was approximately proportional to somatic activity.</p><fig id="fig1" position="float" fig-type="figure" orientation="portrait" hwp:id="F1" hwp:rev-id="xref-fig-1-1 xref-fig-1-2 xref-fig-1-3 xref-fig-1-4 xref-fig-1-5 xref-fig-1-6 xref-fig-1-7 xref-fig-1-8 xref-fig-1-9 xref-fig-1-10 xref-fig-1-11"><object-id pub-id-type="other" hwp:sub-type="pisa">biorxiv;165613v1/FIG1</object-id><object-id pub-id-type="other" hwp:sub-type="slug">F1</object-id><object-id pub-id-type="publisher-id">fig1</object-id><label>Figure 1.</label><caption hwp:id="caption-1"><title hwp:id="title-6">PCA- and CCA-like learning in the two-compartment neuron model.</title><p hwp:id="p-14">(a) Simulation settings. Each compartment receives inputs from 50 neurons. Each group A or A’ consists of 10 input neurons, and each group B or B’ of 40 neurons. (b) An example of input neuron activities when the groups A and A’ were correlated or uncorrelated. (c) Time evolution of synaptic weights are shown for the single-compartment model (left) and the two-compartmental model receiving uncorrelated (center) or correlated (right) inputs from A and A’. The single compartment neuron only received inputs from A and B. The means (lines) and standard deviations (shaded areas) are shown. (d) The activities of the neuron models were shown for the same simulation settings as in c. (e) PCA were applied to signals simulated in the same setting as in c when A and A’ were correlated. The eigenvectors (left) and the scores of the first PCs (right) are shown. (f) CCA were applied to signals simulated in the same setting as in c when A and A’ were correlated.</p></caption><graphic xlink:href="165613_fig1" position="float" orientation="portrait" hwp:id="graphic-9"/></fig><p hwp:id="p-15">For comparison, we calculated the principal components of input vectors <bold>I</bold>
+<sup>som</sup>(<italic toggle="yes">t</italic>) and <bold>I</bold>
+<sup>dnd</sup>(<italic toggle="yes">t</italic>) when groups A and A’ were correlated. As expected, the first principal components extracted by PCA in the soma and dendrite were uncorrelated inputs from groups B and B’, respectively, and the scores (signals projected onto PC1 eigenvectors) were also uncorrelated between the two compartments (<xref ref-type="fig" rid="fig1" hwp:id="xref-fig-1-8" hwp:rel-id="F1">Fig. 1e</xref>). Then the pair of input vectors was analyzed by CCA, which extracted correlated inputs from groups A and A’ and also yielded highly correlated scores (<xref ref-type="fig" rid="fig1" hwp:id="xref-fig-1-9" hwp:rel-id="F1">Fig. 1f</xref>). Thus, CCA and the two-compartment neuron model operate similarly on correlated somatic and dendritic inputs.</p><p hwp:id="p-16">These results imply that CCA-like learning of the two-compartment neuron model can extract a minor input component to one compartment if a coincident input is given to the other. The extraction of weak inputs based on correlation across compartments is a critical difference between our learning rule and conventional Hebbian learning, which basically extracts only major input components. However, if there is no coincident activity between the compartments, each compartment implements independent Hebbian learning and acts like an independent neural unit.</p></sec><sec id="S2c" hwp:id="sec-5"><title hwp:id="title-7">The role of inhibitory feedback in the two-compartment neuron model</title><p hwp:id="p-17">Hippocampus has interneurons serving perisomatic and dendritic inhibitory feedback projections<xref ref-type="bibr" rid="c27" hwp:id="xref-ref-27-1" hwp:rel-id="ref-27">
+<sup>27</sup>
+</xref>. We modeled these inhibitory feedback mechanisms in the two-compartmental neuron model (<xref ref-type="fig" rid="fig2" hwp:id="xref-fig-2-1" hwp:rel-id="F2">Fig. 2a</xref>) to realize the stability and functional specialization of dendritic synapses. In reality, interneurons targeting the soma and dendrites of pyramidal neurons belong to different cell types. For simplicity, however, we only consider a single population of inhibitory neurons in our network model. We approximated the net output from this population <italic toggle="yes">I</italic>
+<sup>inh</sup>(<italic toggle="yes">t</italic>) by the sum of the output from all pyramidal neurons. Pyramidal neuron <italic toggle="yes">i</italic> was modeled as a two-compartment model with inhibitory feedback:<fig id="fig2" position="float" fig-type="figure" orientation="portrait" hwp:id="F2" hwp:rev-id="xref-fig-2-1 xref-fig-2-2 xref-fig-2-3 xref-fig-2-4 xref-fig-2-5 xref-fig-2-6 xref-fig-2-7 xref-fig-2-8 xref-fig-2-9 xref-fig-2-10 xref-fig-2-11 xref-fig-2-12"><object-id pub-id-type="other" hwp:sub-type="pisa">biorxiv;165613v1/FIG2</object-id><object-id pub-id-type="other" hwp:sub-type="slug">F2</object-id><object-id pub-id-type="publisher-id">fig2</object-id><label>Figure 2.</label><caption hwp:id="caption-2"><title hwp:id="title-8">Roles of plastic inhibitory feedback to distal dendritic compartment.</title><p hwp:id="p-18">(a) Inhibitory feedback model is schematically illustrated. Inhibitory interneurons project to both somatic and dendritic compartments. (b) In this simulation setting, two pyramidal neurons projected to an inhibitory neuron and received inhibitory feedback at the somatic and dendritic compartments. In addition, pyramidal neurons received common somatic inputs from excitatory cell group C and mixed dendritic inputs from two mutually-uncorrelated excitatory cell groups A and B. The activity of cell group C was correlated with the activities of cell groups A and B with equal magnitudes. (c, d) Time evolution of synaptic weights on the dendritic compartments of the two cells with (c) or without (d) dendritic inhibition. The means (lines) and standard deviations (shaded areas) of synaptic weights are shown. (e) A single pyramidal neuron with inhibition fed back onto its dendrite received somatic inputs from a cell group C and dendritic inputs from two cell groups A and B. Activities of input neurons in groups A and B were initially uncorrelated within each group and with other groups. At time 300 sec, correlations were introduced within group A and between groups A and C. At time 600 sec, neurons in group A returned to an uncorrelated state, but neurons in group B became correlated within the group and with group C. (f, g) Time evolution of excitatory synaptic weights on the dendritic compartment with (f) or without (g) dendritic inhibition. (h) Time evolution of inhibitory synaptic weights on the dendritic compartments is displayed.</p></caption><graphic xlink:href="165613_fig2" position="float" orientation="portrait" hwp:id="graphic-10"/></fig>
+<disp-formula id="eqn9" hwp:id="disp-formula-9">
+<alternatives hwp:id="alternatives-15"><graphic xlink:href="165613_eqn9.gif" position="float" orientation="portrait" hwp:id="graphic-11"/></alternatives>
+</disp-formula>
+<disp-formula id="eqn10" hwp:id="disp-formula-10">
+<alternatives hwp:id="alternatives-16"><graphic xlink:href="165613_eqn10.gif" position="float" orientation="portrait" hwp:id="graphic-12"/></alternatives>
+</disp-formula>
+<disp-formula id="eqn11" hwp:id="disp-formula-11">
+<alternatives hwp:id="alternatives-17"><graphic xlink:href="165613_eqn11.gif" position="float" orientation="portrait" hwp:id="graphic-13"/></alternatives>
+</disp-formula>where <inline-formula hwp:id="inline-formula-7">
+<alternatives hwp:id="alternatives-18"><inline-graphic xlink:href="165613_inline6.gif" hwp:id="inline-graphic-7"/></alternatives>
+</inline-formula> and <inline-formula hwp:id="inline-formula-8">
+<alternatives hwp:id="alternatives-19"><inline-graphic xlink:href="165613_inline7.gif" hwp:id="inline-graphic-8"/></alternatives>
+</inline-formula> are inhibitory synaptic weights.</p><p hwp:id="p-19">It has been observed experimentally that not only excitatory but also inhibitory synapses exhibit activity-dependent plasticity<xref ref-type="bibr" rid="c28" hwp:id="xref-ref-28-1" hwp:rel-id="ref-28">
+<sup>28</sup>
+</xref>. Although the property of inhibitory synaptic plasticity has not been fully understood, here we assumed that inhibitory weights for the distal dendritic compartment are modified by a similar learning rule to excitatory synapses:</p><disp-formula id="eqn12" hwp:id="disp-formula-12">
+<alternatives hwp:id="alternatives-20"><graphic xlink:href="165613_eqn12.gif" position="float" orientation="portrait" hwp:id="graphic-14"/></alternatives>
+</disp-formula><p hwp:id="p-20">In this expression, <italic toggle="yes">θ</italic>
+<sup>inh</sup> is a constant threshold and was fixed at 0.5 throughout this research (we note that the choice of this parameter value is not crucial for the performance of this model). We did not implement the plasticity for perisomatic inhibitory synapses to avoid the instability of network’s learning behavior.</p><p hwp:id="p-21">To clarify the role of the plastic dendritic inhibition in CCA-like learning, we tested the behavior of the neuron model in two conditions. First, we simulated a coupled network of two pyramidal neurons and a population of inhibitory neurons (<xref ref-type="fig" rid="fig2" hwp:id="xref-fig-2-2" hwp:rel-id="F2">Fig. 2b</xref>). When the somatic input was correlated with both dendritic inputs with equal magnitudes, these neurons selectively learned different dendritic inputs in the presence of dendritic inhibition (<xref ref-type="fig" rid="fig2" hwp:id="xref-fig-2-3" hwp:rel-id="F2">Fig. 2c</xref>), but not in its absence (<xref ref-type="fig" rid="fig2" hwp:id="xref-fig-2-4" hwp:rel-id="F2">Fig. 2d</xref>). At a first glance, the result is a mere extension of feature extraction by lateral inhibition in competitive networks of single-compartment neurons. Actually, the present model had lateral inhibition between the soma and between the dendrites, and somatic activity was amplified by the activation of dendrites (<xref ref-type="disp-formula" rid="eqn4" hwp:id="xref-disp-formula-4-1" hwp:rel-id="disp-formula-4">Eq. 4</xref>). Nevertheless, here the intersomatic lateral inhibition alone was unable to separate the dendritic inputs in CCA-like learning. Thus, dendritic inhibition is required for the functional specialization of dendrites.</p><p hwp:id="p-22">In the second case, we examined the robustness of dendritic excitatory synapses against changes in correlation structure of synaptic inputs (<xref ref-type="fig" rid="fig2" hwp:id="xref-fig-2-5" hwp:rel-id="F2">Fig. 2e</xref>). Without dendritic inhibition, an abrupt change in correlations between somatic and dendritic inputs triggered a significant reorganization of dendritic excitatory synapses (<xref ref-type="fig" rid="fig2" hwp:id="xref-fig-2-6" hwp:rel-id="F2">Fig. 2g</xref>). By contrast, such a reorganization did not occur in the presence of dendritic inhibition (<xref ref-type="fig" rid="fig2" hwp:id="xref-fig-2-7" hwp:rel-id="F2">Fig. 2f</xref>). This stability was due to the potentiation of dendritic inhibitory synapses during the learning of the initial correlation structure between groups A and C (<xref ref-type="fig" rid="fig2" hwp:id="xref-fig-2-8" hwp:rel-id="F2">Fig. 2h</xref>). The potentiated dendritic inhibition changed the excitation-inhibition balance of the dendritic compartment such that its responses to a learned input pattern were enhanced whereas those to other input patterns were suppressed.</p><p hwp:id="p-23">Thus, in our model the potentiation of dendritic inhibition separates and stabilizes receptive fields on the dendrites acquired by CCA-like learning. We will show later that these properties play crucial roles in the robust memory encoding in a recurrent network model of the two-compartment neurons.</p></sec><sec id="S2d" hwp:id="sec-6"><title hwp:id="title-9">Robust one-shot learning of place fields by two-compartment neural network</title><p hwp:id="p-24">Using the neuron model and the inhibitory feedback model described above, we constructed a CA3 recurrent network model to investigate the role of our two-compartment model in sequence memory (<xref ref-type="fig" rid="fig3" hwp:id="xref-fig-3-1" hwp:rel-id="F3">Fig. 3a</xref>). In this model, the somatic compartments of pyramidal neurons receive excitatory recurrent connections, input from the dentate gyrus (DG), theta-band (7 Hz) oscillatory input from the medium septum<sup>
+<xref ref-type="bibr" rid="c5" hwp:id="xref-ref-5-3" hwp:rel-id="ref-5">5</xref>
+</sup> and random noise, while the dendritic compartments receive input from the entorhinal cortex (EC). Excitatory connections are reciprocally wired such that the recurrent network can propagate firing sequences<sup>
+<xref ref-type="bibr" rid="c5" hwp:id="xref-ref-5-4" hwp:rel-id="ref-5">5</xref>,<xref ref-type="bibr" rid="c29" hwp:id="xref-ref-29-1" hwp:rel-id="ref-29">29</xref>
+</sup>. In the presence of noise, Poisson firing of DG activates a small portion of CA3 neurons, which triggers preexisting firing sequences without EC input (<xref ref-type="fig" rid="fig3" hwp:id="xref-fig-3-2" hwp:rel-id="F3">Fig. 3b</xref>). During locomotion, DG input conveys contextual-dependent information in the sense that DG is only activated at particular spatial positions (see below). Firing sequences are modulated by theta-band oscillations due to the medial septal input. During the propagation, we decreased the release probability of neurotransmitters at recurrent connections to suppress the decay speed of synaptic weights. In the hippocampus, acetylcholine is known to modulate glutamatergic neurotransmitter release<xref ref-type="bibr" rid="c15" hwp:id="xref-ref-15-2" hwp:rel-id="ref-15">
+<sup>15</sup>
+</xref>.</p><fig id="fig3" position="float" fig-type="figure" orientation="portrait" hwp:id="F3" hwp:rev-id="xref-fig-3-1 xref-fig-3-2 xref-fig-3-3 xref-fig-3-4 xref-fig-3-5 xref-fig-3-6 xref-fig-3-7 xref-fig-3-8 xref-fig-3-9 xref-fig-3-10 xref-fig-3-11 xref-fig-3-12 xref-fig-3-13 xref-fig-3-14 xref-fig-3-15 xref-fig-3-16 xref-fig-3-17 xref-fig-3-18"><object-id pub-id-type="other" hwp:sub-type="pisa">biorxiv;165613v1/FIG3</object-id><object-id pub-id-type="other" hwp:sub-type="slug">F3</object-id><object-id pub-id-type="publisher-id">fig3</object-id><label>Figure 3.</label><caption hwp:id="caption-3"><title hwp:id="title-10">One-shot learning of place fields on one-dimensional track.</title><p hwp:id="p-25">(a) Our CA3 network model consists of 500 EC neurons projecting to the distal compartments of 300 two-compartment CA3 neurons, which have inhibitory feedback to both distal dendritic and somatic compartments. DG input activates neuron 1 to neuron 10 of CA3 in a probabilistic manner. (b) DG-evoked preexisting activity patterns in CA3 were simulated without EC input. The animal was immobile from 0 to 5 sec and ran from 5 to 10 sec. (c) The behavioral paradigm and activities of EC neurons in the present simulations. Position-dependent sensory features are encoded by 300 EC neurons, whereas other 200 EC neurons (neuron ID 300 to 500) show position-independent distractor activity. (d,e) Activities of the two-compartment network model (d) and single-compartment network model (e) for animal’s movements shown in the top panels. The single-compartment network model was simulated with <italic toggle="yes">η</italic> = 0.5. The inset in (d) shows the expanded plot of the output firing rate from 0 s to 10 s. (f) Time evolution during learning is shown for the dynamical variables of the two-compartment neuron. The examples were from CA3 neuron #100. (g) Average information per spike was calculated in various conditions. Three simulation trials were performed in each condition with different initial conditions. The strength of recurrent connections was measured relative to the connection strength used in c and d. In simulating familiar tracks, we used the initial weights of EC-to-CA3 synapses optimized to generate place-dependent firing. In the simulations of unfamiliar tracks, these initial weights were randomly shuffled.</p></caption><graphic xlink:href="165613_fig3" position="float" orientation="portrait" hwp:id="graphic-15"/></fig><p hwp:id="p-26">We considered an animal running back and forth on a one-dimensional (1D) track. During a run, some EC neurons are sequentially activated by position-dependent sensory features on the track, while others (distractors) are activated randomly (<xref ref-type="fig" rid="fig3" hwp:id="xref-fig-3-3" hwp:rel-id="F3">Fig. 3c</xref>). Prior to the first run, there is no way for the animal to know the sensory features and their order of appearance along an unfamiliar track. Therefore, the initial weights of EC-to-CA3 projections were chosen randomly, and accordingly dendritic activity showed no place-dependence initially. The position-dependent EC activity may correspond to the representation of local landmarks in the lateral entorhinal cortex or the firing fields of grid cells in the medial entorhinal cortex<xref ref-type="bibr" rid="c30" hwp:id="xref-ref-30-1" hwp:rel-id="ref-30">
+<sup>30</sup>
+</xref>.</p><p hwp:id="p-27">Initially, the animal was immobile at an endpoint of an unfamiliar track, where DG exhibited a brief and repeated activity (<xref ref-type="fig" rid="fig3" hwp:id="xref-fig-3-4" hwp:rel-id="F3">Fig. 3d</xref>, top), which in turn activated the preexisting sequences in spontaneous CA3 activity (<xref ref-type="fig" rid="fig3" hwp:id="xref-fig-3-5" hwp:rel-id="F3">Fig. 3d</xref>, bottom). These sequences were initially not associated to any sensory information (hence any spatial information) represented in EC. However, during the first traversal the dendritic compartments learned to associate sequential sensory inputs from EC with the firing sequence triggered by DG (<xref ref-type="fig" rid="fig3" hwp:id="xref-fig-3-6" hwp:rel-id="F3">Fig. 3d</xref>, middle). During subsequent runs, the activity of distal dendrites established control of somatic activity, and hence of sequence propagation, by modulating the gain and threshold of somatic firing rates (<xref ref-type="fig" rid="fig3" hwp:id="xref-fig-3-7" hwp:rel-id="F3">Fig. 3f</xref>). Consequently, CA3 neurons showed clear place-dependent firing in the second and third traversals even though this was the first exposure to an unfamiliar track and synapses from EC were initially random and not pre-configured to any convenient spatial pattern. We note that the reorganization of EC-to-CA3 projections enabled firing sequences to follow abrupt changes in running speed and directions in the second and third traversal.</p><p hwp:id="p-28">For comparison, we constructed a single-compartment network model and trained it on the same spatial navigation task. In this model, both recurrent synapses and EC inputs were connected to the somatic compartments (thus, the dendritic compartments were passively driven by the somatic compartments and did not play any active role). This model failed to form place fields in the present simulations (<xref ref-type="fig" rid="fig3" hwp:id="xref-fig-3-8" hwp:rel-id="F3">Fig. 3e</xref>). For the relatively large value of the learning coefficient used in the simulations, the formation of place fields was easily disturbed by noise (from the distractor EC neurons) before they became robust. On the other hand, if the learning coefficient was small, firing sequences could not follow changes in the movement directions of the animal at both ends of the maze.</p><p hwp:id="p-29">We assessed the quality of the place fields formed in various simulation conditions by means of “information per spike”<xref ref-type="bibr" rid="c31" hwp:id="xref-ref-31-1" hwp:rel-id="ref-31">
+<sup>31</sup>
+</xref>, a measure based on the mutual information between neural activity of each cell and animal’s position (see Methods). As shown in <xref ref-type="fig" rid="fig3" hwp:id="xref-fig-3-9" hwp:rel-id="F3">Fig. 3g</xref>, in both models the average mutual information was high in a familiar track, which we simulate the CA3 activity with optimized initial synaptic weights of EC-to-CA3 projections. In an unfamiliar track, however, only the two-compartment model acquired highly place-dependent neural activity as in the familiar track, whereas the single-compartment model exhibited low mutual information for all three values of the learning coefficient. Learning of the unfamiliar track was required for the place dependence as the performance of the two-compartment model was impaired by eliminating the plasticity effect (<italic toggle="yes">η</italic> = 0). Importantly, when we decreased the initial weights of recurrent synapses from the original setting (by a multiplicative factor of 0.75, 0.5 or 0), the two-compartment model also failed to acquire place-dependent activity on the unfamiliar track. On the other hand, increasing the weights (1.25 times) did not degrade the performance in learning. These results imply that the activity patterns preexisting in the recurrent network are crucial for the place field formation in the two-compartment model. Conversely, dendritic computation is necessary for the efficient use of preexisting sequences for memory formation.</p></sec><sec id="S2e" hwp:id="sec-7"><title hwp:id="title-11">Long-term stability of memory in remote replay events</title><p hwp:id="p-30">At a first glance, one-shot learning looks easily achievable by sufficiently fast synaptic modifications. However, this was not the case as there was a trade-off between learning speed and the long-term stability of memory. In the case of spatial memory, the place fields formed in a previous awake state have to be preserved during spontaneous replays in sleep states<sup>
+<xref ref-type="bibr" rid="c6" hwp:id="xref-ref-6-2" hwp:rel-id="ref-6">6</xref>
+</sup> and awake replays of remote experiences<xref ref-type="bibr" rid="c7" hwp:id="xref-ref-7-4" hwp:rel-id="ref-7">
+<sup>7</sup>
+</xref>. In this section, we examine the stability of spatial memory against such replay events. To this end, we trained the network model on one-shot encoding of an unfamiliar track (<xref ref-type="fig" rid="fig4" hwp:id="xref-fig-4-1" hwp:rel-id="F4">Fig. 4a</xref>). We then introduced random noise in EC neurons and the CA3 network to generate irregular activity in EC and spontaneous firing sequences in CA3 (<xref ref-type="fig" rid="fig4" hwp:id="xref-fig-4-2" hwp:rel-id="F4">Fig. 4b</xref>). After exposing the network to random inputs and spontaneous replay events for 600 sec, we tested it for the exploration of the learned track.</p><fig id="fig4" position="float" fig-type="figure" orientation="portrait" hwp:id="F4" hwp:rev-id="xref-fig-4-1 xref-fig-4-2 xref-fig-4-3 xref-fig-4-4 xref-fig-4-5 xref-fig-4-6 xref-fig-4-7 xref-fig-4-8 xref-fig-4-9"><object-id pub-id-type="other" hwp:sub-type="pisa">biorxiv;165613v1/FIG4</object-id><object-id pub-id-type="other" hwp:sub-type="slug">F4</object-id><object-id pub-id-type="publisher-id">fig4</object-id><label>Figure 4.</label><caption hwp:id="caption-4"><title hwp:id="title-12">Long-term stability of memory against spontaneous activation.</title><p hwp:id="p-31">(a) Dendritic and somatic activities of the two-compartment CA3 neurons are shown before and during the first traversal on a one-dimensional track. (b) Dendritic activity and firing sequences during spontaneous activity are shown together with inhibitory inputs to the dendritic compartments. (c) Activity of the two-compartment network model during traversals on the one-dimensional track is shown after exposure to spontaneous activity. (d) Similarly, such network activity is shown in the case that the dendritic inhibition was removed during the exposure to spontaneous activity.</p></caption><graphic xlink:href="165613_fig4" position="float" orientation="portrait" hwp:id="graphic-16"/></fig><p hwp:id="p-32">In spite of the repetitive coupling of random inputs and replay events, the two-compartment neurons still preserved their place fields after exposure to random noise (<xref ref-type="fig" rid="fig4" hwp:id="xref-fig-4-3" hwp:rel-id="F4">Fig. 4c</xref>). This was achieved by the suppression of dendritic activity during replay events by lateral inhibition between the dendritic compartments (<xref ref-type="fig" rid="fig4" hwp:id="xref-fig-4-4" hwp:rel-id="F4">Fig. 4b</xref>, bottom), as we showed in <xref ref-type="fig" rid="fig2" hwp:id="xref-fig-2-9" hwp:rel-id="F2">Fig. 2</xref>. The inhibitory effect prevented an undesirable association of random EC inputs and spontaneous replays in CA3. Actually, the place fields were completely eliminated when all inhibitory weights were set equal to zero during replay events (<xref ref-type="fig" rid="fig4" hwp:id="xref-fig-4-5" hwp:rel-id="F4">Fig. 4d</xref>). Thus, the results of this and previous sections demonstrate that our two-compartment network model reconciles conflicting demands on the brain’s memory systems, i.e., one-shot learning and the long-term stability of memory, without an ad hoc tuning of model parameters.</p></sec><sec id="S2f" hwp:id="sec-8"><title hwp:id="title-13">Plasticity in dendritic inhibition prevents overwriting of multiple episodes</title><p hwp:id="p-33">So far, we have studied the one-to-one association of a linear track and a firing sequence. However, in many real-world tasks, the hippocampus has to separately store multiple memories. In spatial navigation experiments, CA3 has been shown to develop sparse and orthogonal spatial representations<sup>
+<xref ref-type="bibr" rid="c2" hwp:id="xref-ref-2-6" hwp:rel-id="ref-2">2</xref>,<xref ref-type="bibr" rid="c3" hwp:id="xref-ref-3-4" hwp:rel-id="ref-3">3</xref>
+</sup>. To see whether our two-compartment neuronal network is capable of learning such representation in complex spatial environments, we tested the formation of spatial memory in the case where the animal visits three arms on a Y-maze in turn and repeatedly (<xref ref-type="fig" rid="fig5" hwp:id="xref-fig-5-1" hwp:rel-id="F5">Fig. 5a</xref>). We configured initial recurrent connections such that CA3 network had three preexisting firing sequences (<xref ref-type="fig" rid="fig5" hwp:id="xref-fig-5-2" hwp:rel-id="F5">Fig. 5b</xref>), which is a minimal requirement for learning the branching spatial structure. DG was assumed to fire at the junction of the Y-maze, and DG input at the center could trigger all these firing sequences simultaneously. The preexisting sequences were spontaneously generated by noise and DG inputs in the resting state (<xref ref-type="fig" rid="fig5" hwp:id="xref-fig-5-3" hwp:rel-id="F5">Fig. 5c</xref>), and the firing sequences were accompanied by theta oscillation during running back and forth on each arm (<xref ref-type="fig" rid="fig5" hwp:id="xref-fig-5-4" hwp:rel-id="F5">Fig. 5d-f</xref>), as in the previous simulations of 1D maze. We note that intersomatic lateral inhibition prevented the co-activation of all three preexisting sequences by input from DG, and the choice from three sequences was initially determined by random noise.</p><fig id="fig5" position="float" fig-type="figure" orientation="portrait" hwp:id="F5" hwp:rev-id="xref-fig-5-1 xref-fig-5-2 xref-fig-5-3 xref-fig-5-4 xref-fig-5-5 xref-fig-5-6 xref-fig-5-7 xref-fig-5-8 xref-fig-5-9 xref-fig-5-10 xref-fig-5-11 xref-fig-5-12"><object-id pub-id-type="other" hwp:sub-type="pisa">biorxiv;165613v1/FIG5</object-id><object-id pub-id-type="other" hwp:sub-type="slug">F5</object-id><object-id pub-id-type="publisher-id">fig5</object-id><label>Figure 5.</label><caption hwp:id="caption-5"><title hwp:id="title-14">Orthogonal memory formation on a Y-maze.</title><p hwp:id="p-34">(a) Behavioral paradigm is schematically illustrated. The animal starting from the junction successively visits three arms on a Y-maze. (b) In the initial setting of the recurrent network, a DG input triggers three firing sequences when the animal is at the junction of the Y-maze. Each branch of sequence consists of 150 neurons. (c) Spontaneous activity is shown for the three branches of the two-compartment network model before the exploration. (d) The dendritic and somatic activities of the two-compartment network model during the first run on the Y-maze. Time evolution of inhibitory inputs to the dendritic compartments is also shown. (e) Activity of the two-compartment network model during the second run is shown. (f) Activity of two-compartment model without dendritic inhibition during the first run on the Y-maze. (g) Information per spike was calculated over five simulation trials with and without dendritic inhibition.</p></caption><graphic xlink:href="165613_fig5" position="float" orientation="portrait" hwp:id="graphic-17"/></fig><p hwp:id="p-35">The two-compartment network model robustly assigned the individual firing sequences to representing different arms (<xref ref-type="fig" rid="fig5" hwp:id="xref-fig-5-5" hwp:rel-id="F5">Fig. 5d</xref> and <xref ref-type="fig" rid="fig5" hwp:id="xref-fig-5-6" hwp:rel-id="F5">5e</xref>). Inhibitory plasticity played a crucial role in the learning procedure. After the first traversal on an arm, a firing sequence or an ensemble of neurons is assigned to the arm. Then, dendritic inhibition decreases the response gain of these neurons in other arms (<xref ref-type="fig" rid="fig5" hwp:id="xref-fig-5-7" hwp:rel-id="F5">Fig. 5d</xref>, bottom) and selects such firing sequences that have not been associated with any spatial experience for learning the second arm. Because the trigger from DG to the soma is shared, separate learning of dendritic input patterns to different neurons requires dendritic inhibition, as we showed in <xref ref-type="fig" rid="fig2" hwp:id="xref-fig-2-10" hwp:rel-id="F2">Fig. 2</xref>. Thus, as shown in <xref ref-type="fig" rid="fig5" hwp:id="xref-fig-5-8" hwp:rel-id="F5">Fig. 5f</xref>, the formation of independent memory representations (firing sequences) for different spatial experiences is not guaranteed without dendritic inhibition. We performed five simulations with and without dendritic inhibition using different random seeds and always obtained qualitatively the same results (in <xref ref-type="fig" rid="fig5" hwp:id="xref-fig-5-9" hwp:rel-id="F5">Fig. 5g</xref>, the learning performance was assessed by information per spike). By this mechanism, every time the animal encounters a novel spatial experience, this network model exhaustively encodes it into a yet unassigned firing sequence, avoiding to overwrite old episodes with a novel episode.</p></sec><sec id="S2g" hwp:id="sec-9"><title hwp:id="title-15">Replay of firing sequences is biased by recent experiences</title><p hwp:id="p-36">Does our network model change spontaneous activity patterns in an experience-dependent fashion consistent with experiment? The structure of correlations in spontaneous hippocampal activity is different before and after experiences<xref ref-type="bibr" rid="c32" hwp:id="xref-ref-32-1" hwp:rel-id="ref-32">
+<sup>32</sup>
+</xref>. In particular, replay sequences become statistically significant only after experiences<xref ref-type="bibr" rid="c12" hwp:id="xref-ref-12-2" hwp:rel-id="ref-12">
+<sup>12</sup>
+</xref>. Because the memory encoding of our model strongly relies on preexisting firing sequences, we examined whether our model is consistent with these findings in the case that that the CA3 recurrent network has somewhat complex structure. To be more specific, we considered a two-compartment network model with bifurcating firing sequences (<xref ref-type="fig" rid="fig6" hwp:id="xref-fig-6-1" hwp:rel-id="F6">Fig. 6a</xref>). A neuron at the junction was initially connected to both bifurcating pathways with equal strength, propagating firing sequences into one of the branches with approximately equal probabilities (<xref ref-type="fig" rid="fig6" hwp:id="xref-fig-6-2" hwp:rel-id="F6">Fig. 6b</xref>). After the animal explored the 1D track, the model associated one of the branching sequences with this experience (<xref ref-type="fig" rid="fig6" hwp:id="xref-fig-6-3" hwp:rel-id="F6">Fig. 6c</xref>, input pattern 1). Spontaneous activity selectively replayed this firing sequence after this experience (<xref ref-type="fig" rid="fig6" hwp:id="xref-fig-6-4" hwp:rel-id="F6">Fig. 6d</xref>), implying that the recurrent connections responsible for this sequence were selectively potentiated during the episode. We simulated the network model for five different sets of firing sequences, and observed strongly selective replay of the associated sequences (<xref ref-type="fig" rid="fig6" hwp:id="xref-fig-6-5" hwp:rel-id="F6">Fig. 6f</xref>). The maximum weight change in recurrent connections was 10 to 20 % of the maximum initial weight (data not shown), which was not large enough to create novel firing sequences but was large enough to modulate the probability of sequence propagation into different branches.</p><fig id="fig6" position="float" fig-type="figure" orientation="portrait" hwp:id="F6" hwp:rev-id="xref-fig-6-1 xref-fig-6-2 xref-fig-6-3 xref-fig-6-4 xref-fig-6-5 xref-fig-6-6 xref-fig-6-7 xref-fig-6-8 xref-fig-6-9 xref-fig-6-10 xref-fig-6-11"><object-id pub-id-type="other" hwp:sub-type="pisa">biorxiv;165613v1/FIG6</object-id><object-id pub-id-type="other" hwp:sub-type="slug">F6</object-id><object-id pub-id-type="publisher-id">fig6</object-id><label>Figure 6.</label><caption hwp:id="caption-6"><title hwp:id="title-16">Memory encoding on branching firing sequences.</title><p hwp:id="p-37">The somatic recurrent network of the two-compartment neuron model that has a bifurcating point. Neurons 1 to 100 constitute the trunk, 101 to 250 the left-side branch, and 251 to 400 the right-side branch. Spontaneous branching firing sequences before spatial exploration are shown. (c) The two-compartment network model associated a sequence of sensory events (input pattern 1) is shown with the left-side branch of synaptic pathways. (d) After this encoding, spontaneous replay was biased to the firing sequence associated with input pattern 1. (e) The network model encoded a novel sensory sequence (input pattern 2) into the right-side branch of synaptic pathways. (f) The relative frequency of replay of the spontaneous firing sequence encoding input pattern 1 was calculated before and after the first experience for five simulation trials using different random seeds. The numbers of sequences propagating into either branch were counted for 60 sec in spontaneous activity. (g) The proposed memory encoding model utilizes a rich repertoire of branching firing sequences in the CA3 network. (h) Sequential sensory events are associated to a branching of firing sequences. (i) Novel sensory events are encoded into a different branch of sequences.</p></caption><graphic xlink:href="165613_fig6" position="float" orientation="portrait" hwp:id="graphic-18"/></fig><p hwp:id="p-38">Next, we investigated how the model trained on input pattern 1 represents novel changes in the environment. To this end, we randomly shuffled the temporal order of sensory objects appearing along the 1D track (equivalently, the temporal order of firing in EC neurons). Our model encoded the novel sensory sequence (input pattern 2) into another branch that had not been previously used (<xref ref-type="fig" rid="fig6" hwp:id="xref-fig-6-6" hwp:rel-id="F6">Fig. 6e</xref>).</p><p hwp:id="p-39">Assuming that the innate recurrent network of CA3 is capable of generating a rich repertoire of firing sequences (<xref ref-type="fig" rid="fig6" hwp:id="xref-fig-6-7" hwp:rel-id="F6">Fig. 6g</xref>: see the discussion on this point), we propose the following memory encoding mechanism for hippocampal circuits. When an animal experiences sequential sensory events (for instance, from the nest to a pond through a forest), these events are rapidly associated with a branching firing sequence that happens to be most strongly correlated with the events (<xref ref-type="fig" rid="fig6" hwp:id="xref-fig-6-8" hwp:rel-id="F6">Fig. 6h</xref>). After this rapid encoding, plasticity at recurrent connections reorganizes the network structure to spontaneously replay this sequence more often than others, which further increases the robustness of the sequence, keeping receptive fields by dendritic inhibition. Whenever the animal experiences the same sensory sequence, the particular firing sequence associated with this sensory experience is reactivated. Now, consider the case where the animal chooses another path at some spatial position (for instance, from the nest to a cave through the forest). Our model suggests that sensory events on the novel path are assigned to a different branch of firing sequences (<xref ref-type="fig" rid="fig6" hwp:id="xref-fig-6-9" hwp:rel-id="F6">Fig. 6i</xref>). This model has several merits. First, memory encoding is fast and robust, as demonstrated in this study. Second, no additional neural resources are required for encoding the experienced part of novel experiences (i.e., from the forest to the cave). Third, during the update of spatial map, the spatial relationships between old and novel sensory objects are naturally preserved in the existing branching structure of neural networks. Thus, the concept of “preplay” reconciles with “experience-dependent replay” in the proposed mechanism.</p></sec></sec><sec id="S3" hwp:id="sec-10"><title hwp:id="title-17">Discussion</title><p hwp:id="p-40">In this study, we propose a novel framework of hippocampal memory processing based on a two-compartment neuron model that incorporates the effects of dendritic spikes into Hebbian learning. Our model of dendritic computation gives a plasticity rule that combines canonical correlation analysis of correlated somatic and dendritic inputs with the conventional Hebbian plasticity rule for PCA of uncorrelated inputs. A recurrent network model of the two-compartment neurons demonstrates robust one-shot learning of sequential sensory events by utilizing spontaneous firing sequences (i.e., preplay events). The model predicts that inhibitory plasticity at the dendrites of pyramidal cells plays pivotal roles for the stability and functional specialization of dendritic activity during learning. Our results indicate that dendritic computation is a crucial element of fast and robust memory encoding into preexisting hippocampal circuits.</p><sec id="S3a" hwp:id="sec-11"><title hwp:id="title-18">Mechanisms and functional implications of CCA-like learning</title><p hwp:id="p-41">In the two-compartment neuron, CCA-like learning extracts a minor input component at one compartment when correlated input is given to the other compartment. We built this model based on experimental studies in neocortex<sup>
+<xref ref-type="bibr" rid="c18" hwp:id="xref-ref-18-4" hwp:rel-id="ref-18">18</xref>,<xref ref-type="bibr" rid="c19" hwp:id="xref-ref-19-4" hwp:rel-id="ref-19">19</xref>,<xref ref-type="bibr" rid="c26" hwp:id="xref-ref-26-2" hwp:rel-id="ref-26">26</xref>
+</sup> and hippocampal CA1<sup>
+<xref ref-type="bibr" rid="c20" hwp:id="xref-ref-20-3" hwp:rel-id="ref-20">20</xref>,<xref ref-type="bibr" rid="c21" hwp:id="xref-ref-21-2" hwp:rel-id="ref-21">21</xref>
+</sup>. In cortical pyramidal neurons, weak synaptic inputs to the apical tuft are strongly attenuated in the apical shaft and usually cannot generate somatic sodium spikes. However, calcium spikes initiated in a “hot spot” in the apical trunk reliably propagate to the soma to generate a burst of sodium spikes<xref ref-type="bibr" rid="c18" hwp:id="xref-ref-18-5" hwp:rel-id="ref-18">
+<sup>18</sup>
+</xref>. Although the generation of calcium spikes usually requires a strong activation in the apical tuft, the threshold of calcium spikes decreases during the 30-ms time window around somatic sodium spikes, allowing weak inputs onto apical tuft to initiate calcium spikes<xref ref-type="bibr" rid="c18" hwp:id="xref-ref-18-6" hwp:rel-id="ref-18">
+<sup>18</sup>
+</xref>. In hippocampal CA1, coincident inputs from CA3 and EC initiates dendritic plateau potentials which also drive burst firing<xref ref-type="bibr" rid="c21" hwp:id="xref-ref-21-3" hwp:rel-id="ref-21">
+<sup>21</sup>
+</xref>. These dendritic computation can detect and amplify coincident activation of soma and distal dendrites. Furthermore, dendritic coincidence detection induces LTP in both cortex<sup>
+<xref ref-type="bibr" rid="c26" hwp:id="xref-ref-26-3" hwp:rel-id="ref-26">26</xref>
+</sup> and hippocampus<xref ref-type="bibr" rid="c20" hwp:id="xref-ref-20-4" hwp:rel-id="ref-20">
+<sup>20</sup>
+</xref>. Such dendritic mechanism for coincidence detection is also essential for the rapid formation of place fields in our CA3 network model. The proposed role of dendritic computation in the rapid formation of place fields was recently supported in CA1, where artificially induced dendritic spikes generated arbitrary place fields in pyramidal neurons<xref ref-type="bibr" rid="c21" hwp:id="xref-ref-21-4" hwp:rel-id="ref-21">
+<sup>21</sup>
+</xref>.</p><p hwp:id="p-42">Similar learning schemes are also expected to work in the neocortex. Calcium spikes presumably contribute to the integration of functionally distinct inputs to the basal dendrites and apical tufts<xref ref-type="bibr" rid="c18" hwp:id="xref-ref-18-7" hwp:rel-id="ref-18">
+<sup>18</sup>
+</xref>. In engineering, CCA is a well-established multivariate analysis method used in variety of applications such as the integration of multi-modal sensory inputs in video streams<xref ref-type="bibr" rid="c23" hwp:id="xref-ref-23-3" hwp:rel-id="ref-23">
+<sup>23</sup>
+</xref>. Our two-compartment model suggests that CCA is also important in the brain and proposes a cellular mechanism of CCA based on the physiology of pyramidal-cell dendrites.</p></sec><sec id="S3b" hwp:id="sec-12"><title hwp:id="title-19">Crucial roles of CA3 dendritic inhibition in sequence memory encoding</title><p hwp:id="p-43">We suggest that activity-dependent inhibitory plasticity at the distal dendrites of pyramidal cells prevents the overwriting of memories, which is a long-standing issue in memory processing<xref ref-type="bibr" rid="c33" hwp:id="xref-ref-33-1" hwp:rel-id="ref-33">
+<sup>33</sup>
+</xref>. In our model, the plasticity of dendritic inhibition is crucial for the stability of memory traces (<xref ref-type="fig" rid="fig4" hwp:id="xref-fig-4-6" hwp:rel-id="F4">Fig. 4</xref>). Moreover, dendritic inhibition is important to robustly associate multiple sequential experiences with multiple firing sequences of different neuron ensembles without interferences or overwriting (<xref ref-type="fig" rid="fig5" hwp:id="xref-fig-5-10" hwp:rel-id="F5">Fig. 5</xref>). Somatostatin-positive (SOM+) interneurons target the apical dendrites of pyramidal cells in the hippocampus<xref ref-type="bibr" rid="c27" hwp:id="xref-ref-27-2" hwp:rel-id="ref-27">
+<sup>27</sup>
+</xref>. This interneuron subtype is likely to provide the dendritic inhibition.</p><p hwp:id="p-44">The dendritic computation modeled here may revise the conventional view of hippocampal microcircuit function. Area CA3, with rich recurrent connections, is generally referred to as a pattern completion system<sup>
+<xref ref-type="bibr" rid="c34" hwp:id="xref-ref-34-1" hwp:rel-id="ref-34">34</xref>,<xref ref-type="bibr" rid="c35" hwp:id="xref-ref-35-1" hwp:rel-id="ref-35">35</xref>
+</sup> in contrast to the DG, which is thought to be a pattern separation system<xref ref-type="bibr" rid="c36" hwp:id="xref-ref-36-1" hwp:rel-id="ref-36">
+<sup>36</sup>
+</xref>. However, our model suggests that the CA3 network can also perform pattern separation because, with the plasticity of dendritic inhibition, different memory items can be allocated to different CA3 neurons in spite of the same trigger input from DG. In our model, DG contributes to context-dependent separation and offers a trigger to CA3, where sensory inputs from the EC are further separated within the same context by dendritic computation. Thus, pattern separation is performed at multiple stages of hippocampal memory processing. Joint contributions of DG and CA3 to pattern separation was also suggested in a recent experiment<xref ref-type="bibr" rid="c37" hwp:id="xref-ref-37-1" hwp:rel-id="ref-37">
+<sup>37</sup>
+</xref>.</p></sec><sec id="S3c" hwp:id="sec-13"><title hwp:id="title-20">The network mechanism for preplay sequences</title><p hwp:id="p-45">Although the relation between firing patterns of place cells during run and preexisting firing sequences has been shown<sup>
+<xref ref-type="bibr" rid="c9" hwp:id="xref-ref-9-2" hwp:rel-id="ref-9">9</xref>–<xref ref-type="bibr" rid="c11" hwp:id="xref-ref-11-2" hwp:rel-id="ref-11">11</xref>
+</sup>, some other studies suggest firing patterns are organized through spatial experiences<sup>
+<xref ref-type="bibr" rid="c12" hwp:id="xref-ref-12-3" hwp:rel-id="ref-12">12</xref>,<xref ref-type="bibr" rid="c32" hwp:id="xref-ref-32-2" hwp:rel-id="ref-32">32</xref>
+</sup>. In modeling studies, the CA3 recurrent network with log-normal synaptic weight distributions can generate tremendously many spontaneous firing sequences with various branching patterns<sup>
+<xref ref-type="bibr" rid="c13" hwp:id="xref-ref-13-2" hwp:rel-id="ref-13">13</xref>,<xref ref-type="bibr" rid="c38" hwp:id="xref-ref-38-1" hwp:rel-id="ref-38">38</xref>
+</sup>, and experimental evidence suggests such a distribution in CA3<xref ref-type="bibr" rid="c38" hwp:id="xref-ref-38-2" hwp:rel-id="ref-38">
+<sup>38</sup>
+</xref>. Therefore, the innate structure of the CA3 recurrent network is expected to generate spontaneous firing sequences prior to learning, and our model suggest that encoding of sequential experiences into these preplay sequences naturally occur under the assumption of dendritic coincidence detection. Furthermore, we demonstrated that even the one-time experience can change the bias in branching firing sequences without major rewiring of the network structure. If spontaneous activity of naïve CA3 has the complex branching structure, this bias towards the branch used for memory may explain the change of correlation structure between hippocampal neurons. Although temporal coding in CA1 depends on inputs from CA3<xref ref-type="bibr" rid="c14" hwp:id="xref-ref-14-2" hwp:rel-id="ref-14">
+<sup>14</sup>
+</xref>, it is also possible that plasticity of CA1 synapses modulates the firing patterns.</p><p hwp:id="p-46">It will be intriguing to study whether realistic log-normal networks with enriched disynaptic motifs<sup>
+<xref ref-type="bibr" rid="c35" hwp:id="xref-ref-35-2" hwp:rel-id="ref-35">35</xref>
+</sup> can provide a repertoire of firing sequences that is sufficient for memorizing complex sensory experiences. Such recurrent network will also allow us to test whether our model generates place fields in 2D environments. Previous models<sup>
+<xref ref-type="bibr" rid="c39" hwp:id="xref-ref-39-1" hwp:rel-id="ref-39">39</xref>,<xref ref-type="bibr" rid="c40" hwp:id="xref-ref-40-1" hwp:rel-id="ref-40">40</xref>
+</sup> have shown that Hebbian plasticity reorganize somatic recurrent connections to generate omnidirectional 2D place fields from multiple 1D place fields passing through a particular position from different angles. The same mechanism is expected to work in our model if recurrent network has a rich repertoire of firing sequences to learn pathways in different angles, although the formation of stable place fields will be much slower than learning 1D tracks. This reorganization may result in recruitment of new cells to firing sequences through learning<xref ref-type="bibr" rid="c11" hwp:id="xref-ref-11-3" hwp:rel-id="ref-11">
+<sup>11</sup>
+</xref>. Simulations of such network models, however, require a spiking version of the two-compartment model and an efficient platform for large-scale network simulations.</p></sec><sec id="S3d" hwp:id="sec-14"><title hwp:id="title-21">Testable assumptions and predictions</title><p hwp:id="p-47">The most important assumption of our model is the dendritic mechanism for correlation maximization (CCA), which was modeled based on findings in neocortex and CA1. Although there are some related experimental studies in CA3<sup>
+<xref ref-type="bibr" rid="c41" hwp:id="xref-ref-41-1" hwp:rel-id="ref-41">41</xref>,<xref ref-type="bibr" rid="c42" hwp:id="xref-ref-42-1" hwp:rel-id="ref-42">42</xref>
+</sup>, whether dendritic computation in CA3 pyramidal cells is analogous to that in CA1 and neocortical pyramidal cells should be clarified by future experiments.</p><p hwp:id="p-48">Our model also assumes the potentiation of both excitatory and inhibitory synapses by coincident somatic and dendritic activation. While inhibitory plasticity depends on calcium signals<xref ref-type="bibr" rid="c28" hwp:id="xref-ref-28-2" hwp:rel-id="ref-28">
+<sup>28</sup>
+</xref>, whether it depends on dendritic spikes has yet to be examined in the hippocampus. Our results predict that the loss of dendritic inhibition disrupts the stability and orthogonality of CA3 place fields. Whether the removal of dendritic inhibition in CA3 triggers forgetting or remapping of spatial memory before consolidation is an interesting open question. Selective deletion<xref ref-type="bibr" rid="c43" hwp:id="xref-ref-43-1" hwp:rel-id="ref-43">
+<sup>43</sup>
+</xref> or optogenetic inactivation<xref ref-type="bibr" rid="c27" hwp:id="xref-ref-27-3" hwp:rel-id="ref-27">
+<sup>27</sup>
+</xref> of SOM+ interneurons may remove dendritic inhibition. Alternatively, activation of vasoactive intestinal polypeptide-positive (VIP) interneurons which disinhibit distal dendrites<sup>
+<xref ref-type="bibr" rid="c25" hwp:id="xref-ref-25-2" hwp:rel-id="ref-25">25</xref>
+</sup> may lead to similar results.</p><p hwp:id="p-49">Our model suggests that plasticity of EC-to-CA3 synapses is more important than that of recurrent synapses in CA3 for one-shot learning of place fields. Though the ablation of NMDA receptors in CA3 are known to result in the disruption of pattern completion and one-shot learning<sup>
+<xref ref-type="bibr" rid="c1" hwp:id="xref-ref-1-2" hwp:rel-id="ref-1">1</xref>,<xref ref-type="bibr" rid="c34" hwp:id="xref-ref-34-2" hwp:rel-id="ref-34">34</xref>
+</sup>, which connections are more responsible, recurrent synapses or EC-to-CA3 synapses, for one-shot learning has to be yet clarified.</p></sec><sec id="S3e" hwp:id="sec-15"><title hwp:id="title-22">Relationship to other models of CA3 and dendritic computation</title><p hwp:id="p-50">Previous models learn sequences under the assumption that place fields are configured prior to learning<sup>
+<xref ref-type="bibr" rid="c15" hwp:id="xref-ref-15-3" hwp:rel-id="ref-15">15</xref>,<xref ref-type="bibr" rid="c16" hwp:id="xref-ref-16-2" hwp:rel-id="ref-16">16</xref>
+</sup>. In unfamiliar environments, this assumption is valid after grid cells, which estimate the self-position by path integration<xref ref-type="bibr" rid="c30" hwp:id="xref-ref-30-2" hwp:rel-id="ref-30">
+<sup>30</sup>
+</xref>, are formed in the medial EC. However, grid cells mature slower than place cells<sup>
+<xref ref-type="bibr" rid="c44" hwp:id="xref-ref-44-1" hwp:rel-id="ref-44">44</xref>,<xref ref-type="bibr" rid="c45" hwp:id="xref-ref-45-1" hwp:rel-id="ref-45">45</xref>
+</sup> and grid firing patterns requires an excitatory drive from place cells<xref ref-type="bibr" rid="c46" hwp:id="xref-ref-46-1" hwp:rel-id="ref-46">
+<sup>46</sup>
+</xref>. Our model demonstrated that place cells are rapidly formed without inputs from grid cells.</p><p hwp:id="p-51">Samsonovich and McNaughton<sup>
+<xref ref-type="bibr" rid="c47" hwp:id="xref-ref-47-1" hwp:rel-id="ref-47">47</xref>
+</sup> proposed a “map-based path integration” model, which associates sensory inputs with a preexisting hippocampal “chart” (a two-dimensional attractor map). Although this model and ours share a similar concept, we also provide the biologically plausible mechanism of dendritic computation and inhibition that can enable fast and robust association. Moreover, the chart model has no plastic recurrent connections and hence does not account for replay events. Káli and Dayan<sup>
+<xref ref-type="bibr" rid="c40" hwp:id="xref-ref-40-2" hwp:rel-id="ref-40">40</xref>
+</sup> proposed to train recurrent weights through correlations among DG-to-CA3 inputs, and EC-to-CA3 weights through correlations between DG inputs and EC inputs. Thus, their learning rule also results in correlating EC-to-CA3 inputs with recurrent inputs. However, our learning rule, but not theirs, explains the extremely sparse activity of DG granule cells in spatial exploration<xref ref-type="bibr" rid="c48" hwp:id="xref-ref-48-1" hwp:rel-id="ref-48">
+<sup>48</sup>
+</xref>. In our model, DG neurons only occasionally fire to trigger specific firing sequences. This is consistent with the recent finding that a granule cell in DG has at most a single place field<xref ref-type="bibr" rid="c37" hwp:id="xref-ref-37-2" hwp:rel-id="ref-37">
+<sup>37</sup>
+</xref>. In addition, our model uses strong recurrent synapses for rapid learning, while their model requires weak recurrent inputs during the early phase of learning.</p><p hwp:id="p-52">Several models explain the generation of dendritic calcium spikes<sup>
+<xref ref-type="bibr" rid="c18" hwp:id="xref-ref-18-8" hwp:rel-id="ref-18">18</xref>,<xref ref-type="bibr" rid="c19" hwp:id="xref-ref-19-5" hwp:rel-id="ref-19">19</xref>
+</sup>, but the functional implications of calcium spikes were rarely explored. Urbanczik and Senn<sup>
+<xref ref-type="bibr" rid="c49" hwp:id="xref-ref-49-1" hwp:rel-id="ref-49">49</xref>
+</sup> proposed a two-compartment model in which dendritic synapses learn to predict somatic activity through unidirectional soma-dendrite interactions. In contrast, our neuron model enables simultaneous learning of somatic and dendritic synapses through bidirectional soma-dendrite interactions. This raises a conceptual difference between the two models: our model performs unsupervised learning of the two input streams, while their model obeys supervised learning of dendritic input using somatic input as a teacher signal. On the other hand, dendritic computation and recurrent networks were combined to improve the capacity of pattern completion<xref ref-type="bibr" rid="c50" hwp:id="xref-ref-50-1" hwp:rel-id="ref-50">
+<sup>50</sup>
+</xref>. However, to our knowledge, the role of dendritic computation in sequence learning was unexplored.</p><p hwp:id="p-53">In sum, our multi-compartment learning rule extends the computational ability of neurons to a conjunctive analysis of synaptic inputs targeting different dendritic sites. Because the proximal (somatic) and distal dendrites in pyramidal neurons are targeted by outputs of distinct brain regions, our learning rule has implications for the mechanisms of integrating parallel distributed processes across the brain.</p></sec></sec></body><back><ack hwp:id="ack-1"><title hwp:id="title-23">Acknowledgements</title><p hwp:id="p-54">We are grateful to K. Inokuchi for fruitful discussions, and C. Yokoyama for helpful comments on the manuscript. This work was partly supported by CREST, JST (JPMJCR13W1) and Grants-in-Aid for Scientific Research (KAKENHI) from MEXT (no 15H04265 and 16H01289).</p></ack><sec id="S4" hwp:id="sec-16"><title hwp:id="title-24">Competing interests statement</title><p hwp:id="p-55">Authors declare no competing interests.</p></sec><sec id="S5" hwp:id="sec-17"><title hwp:id="title-25">Author contributions</title><p hwp:id="p-56">T. H. and T. F. equally contributed to the conception and design of the model and the preparation of the manuscript. T. H. performed mathematical calculations, numerical simulations and data analysis.</p></sec><ref-list hwp:id="ref-list-1"><title hwp:id="title-26">References</title><ref id="c1" hwp:id="ref-1" hwp:rev-id="xref-ref-1-1 xref-ref-1-2"><label>1.</label><citation publication-type="journal" citation-type="journal" ref:id="165613v1.1" ref:linkable="yes" ref:use-reference-as-is="yes" hwp:id="citation-1">
+<string-name name-style="western" hwp:sortable="Nakazawa K.">
+<surname>Nakazawa</surname>, <given-names>K.</given-names>
+</string-name> <etal>et al.</etal> <article-title hwp:id="article-title-2">Hippocampal CA3 NMDA receptors are crucial for memory acquisition of one-time experience</article-title>. <source hwp:id="source-1">Neuron</source> <volume>38</volume>, <fpage>305</fpage>–<lpage>315</lpage> (<year>2003</year>).</citation></ref><ref id="c2" hwp:id="ref-2" hwp:rev-id="xref-ref-2-1 xref-ref-2-2 xref-ref-2-3 xref-ref-2-4 xref-ref-2-5 xref-ref-2-6 xref-ref-2-7 xref-ref-2-8"><label>2.</label><citation publication-type="journal" citation-type="journal" ref:id="165613v1.2" ref:linkable="yes" ref:use-reference-as-is="yes" hwp:id="citation-2">
+<string-name name-style="western" hwp:sortable="Mizuseki K.">
+<surname>Mizuseki</surname>, <given-names>K.</given-names>
+</string-name>, <string-name name-style="western" hwp:sortable="Royer S.">
+<surname>Royer</surname>, <given-names>S.</given-names>
+</string-name>, <string-name name-style="western" hwp:sortable="Diba K.">
+<surname>Diba</surname>, <given-names>K.</given-names>
+</string-name> &amp; <string-name name-style="western" hwp:sortable="Buzsáki G.">
+<surname>Buzsáki</surname>, <given-names>G.</given-names>
+</string-name> <article-title hwp:id="article-title-3">Activity dynamics and behavioral correlates of CA3 and CA1 hippocampal pyramidal neurons</article-title>. <source hwp:id="source-2">Hippocampus</source> <volume>22</volume>, <fpage>1659</fpage>–<lpage>1680</lpage> (<year>2012</year>).</citation></ref><ref id="c3" hwp:id="ref-3" hwp:rev-id="xref-ref-3-1 xref-ref-3-2 xref-ref-3-3 xref-ref-3-4"><label>3.</label><citation publication-type="journal" citation-type="journal" ref:id="165613v1.3" ref:linkable="yes" ref:use-reference-as-is="yes" hwp:id="citation-3">
+<string-name name-style="western" hwp:sortable="Alme C. B.">
+<surname>Alme</surname>, <given-names>C. B.</given-names>
+</string-name> <etal>et al.</etal> <article-title hwp:id="article-title-4">Place cells in the hippocampus: Eleven maps for eleven rooms</article-title>. <source hwp:id="source-3">Proc. Natl. Acad. Sci.</source> <volume>111</volume>, <fpage>18428</fpage>–<lpage>18435</lpage> (<year>2014</year>).</citation></ref><ref id="c4" hwp:id="ref-4" hwp:rev-id="xref-ref-4-1"><label>4.</label><citation publication-type="journal" citation-type="journal" ref:id="165613v1.4" ref:linkable="yes" ref:use-reference-as-is="yes" hwp:id="citation-4">
+<string-name name-style="western" hwp:sortable="Foster D. J.">
+<surname>Foster</surname>, <given-names>D. J.</given-names>
+</string-name> &amp; <string-name name-style="western" hwp:sortable="Wilson M. A.">
+<surname>Wilson</surname>, <given-names>M. A.</given-names>
+</string-name> <article-title hwp:id="article-title-5">Hippocampal Theta Sequences</article-title>. <source hwp:id="source-4">Hippocampus</source> <volume>17</volume>, <fpage>1093</fpage>–<lpage>1099</lpage> (<year>2007</year>).</citation></ref><ref id="c5" hwp:id="ref-5" hwp:rev-id="xref-ref-5-1 xref-ref-5-2 xref-ref-5-3 xref-ref-5-4"><label>5.</label><citation publication-type="journal" citation-type="journal" ref:id="165613v1.5" ref:linkable="yes" ref:use-reference-as-is="yes" hwp:id="citation-5">
+<string-name name-style="western" hwp:sortable="Wang Y.">
+<surname>Wang</surname>, <given-names>Y.</given-names>
+</string-name>, <string-name name-style="western" hwp:sortable="Romani S.">
+<surname>Romani</surname>, <given-names>S.</given-names>
+</string-name>, <string-name name-style="western" hwp:sortable="Lustig B.">
+<surname>Lustig</surname>, <given-names>B.</given-names>
+</string-name>, <string-name name-style="western" hwp:sortable="Leonardo A.">
+<surname>Leonardo</surname>, <given-names>A.</given-names>
+</string-name> &amp; <string-name name-style="western" hwp:sortable="Pastalkova E.">
+<surname>Pastalkova</surname>, <given-names>E.</given-names>
+</string-name> <article-title hwp:id="article-title-6">Theta sequences are essential for internally generated hippocampal firing fields</article-title>. <source hwp:id="source-5">Nat. Neurosci.</source> <volume>18</volume>, <fpage>282</fpage>–<lpage>288</lpage> (<year>2014</year>).</citation></ref><ref id="c6" hwp:id="ref-6" hwp:rev-id="xref-ref-6-1 xref-ref-6-2"><label>6.</label><citation publication-type="journal" citation-type="journal" ref:id="165613v1.6" ref:linkable="yes" ref:use-reference-as-is="yes" hwp:id="citation-6">
+<string-name name-style="western" hwp:sortable="Lee A. K.">
+<surname>Lee</surname>, <given-names>A. K.</given-names>
+</string-name> &amp; <string-name name-style="western" hwp:sortable="Wilson M. A.">
+<surname>Wilson</surname>, <given-names>M. A.</given-names>
+</string-name> <article-title hwp:id="article-title-7">Memory of sequential experience in the hippocampus during slow wave sleep</article-title>. <source hwp:id="source-6">Neuron</source> <volume>36</volume>, <fpage>1183</fpage>–<lpage>1194</lpage> (<year>2002</year>).</citation></ref><ref id="c7" hwp:id="ref-7" hwp:rev-id="xref-ref-7-1 xref-ref-7-2 xref-ref-7-3 xref-ref-7-4"><label>7.</label><citation publication-type="journal" citation-type="journal" ref:id="165613v1.7" ref:linkable="yes" ref:use-reference-as-is="yes" hwp:id="citation-7">
+<string-name name-style="western" hwp:sortable="Carr M. F.">
+<surname>Carr</surname>, <given-names>M. F.</given-names>
+</string-name>, <string-name name-style="western" hwp:sortable="Jadhav S. P.">
+<surname>Jadhav</surname>, <given-names>S. P.</given-names>
+</string-name> &amp; <string-name name-style="western" hwp:sortable="Frank L. M.">
+<surname>Frank</surname>, <given-names>L. M.</given-names>
+</string-name> <article-title hwp:id="article-title-8">Hippocampal replay in the awake state: a potential substrate for memory consolidation and retrieval</article-title>. <source hwp:id="source-7">Nat. Neurosci.</source> <volume>14</volume>, <fpage>147</fpage>–<lpage>153</lpage> (<year>2011</year>).</citation></ref><ref id="c8" hwp:id="ref-8" hwp:rev-id="xref-ref-8-1 xref-ref-8-2"><label>8.</label><citation publication-type="journal" citation-type="journal" ref:id="165613v1.8" ref:linkable="yes" ref:use-reference-as-is="yes" hwp:id="citation-8">
+<string-name name-style="western" hwp:sortable="Girardeau G.">
+<surname>Girardeau</surname>, <given-names>G.</given-names>
+</string-name>, <string-name name-style="western" hwp:sortable="Benchenane K.">
+<surname>Benchenane</surname>, <given-names>K.</given-names>
+</string-name>, <string-name name-style="western" hwp:sortable="Wiener S. I.">
+<surname>Wiener</surname>, <given-names>S. I.</given-names>
+</string-name>, <string-name name-style="western" hwp:sortable="Buzsáki G.">
+<surname>Buzsáki</surname>, <given-names>G.</given-names>
+</string-name> &amp; <string-name name-style="western" hwp:sortable="Zugaro M. B.">
+<surname>Zugaro</surname>, <given-names>M. B.</given-names>
+</string-name> <article-title hwp:id="article-title-9">Selective suppression of hippocampal ripples impairs spatial memory</article-title>. <source hwp:id="source-8">Nat. Neurosci.</source> <volume>12</volume>, <fpage>1222</fpage>–<lpage>1223</lpage> (<year>2009</year>).</citation></ref><ref id="c9" hwp:id="ref-9" hwp:rev-id="xref-ref-9-1 xref-ref-9-2"><label>9.</label><citation publication-type="journal" citation-type="journal" ref:id="165613v1.9" ref:linkable="yes" ref:use-reference-as-is="yes" hwp:id="citation-9">
+<string-name name-style="western" hwp:sortable="Dragoi G.">
+<surname>Dragoi</surname>, <given-names>G.</given-names>
+</string-name> &amp; <string-name name-style="western" hwp:sortable="Tonegawa S.">
+<surname>Tonegawa</surname>, <given-names>S.</given-names>
+</string-name> <article-title hwp:id="article-title-10">Preplay of future place cell sequences by hippocampal cellular assemblies</article-title>. <source hwp:id="source-9">Nature</source> <volume>469</volume>, <fpage>397</fpage>–<lpage>401</lpage> (<year>2011</year>).</citation></ref><ref id="c10" hwp:id="ref-10"><label>10.</label><citation publication-type="journal" citation-type="journal" ref:id="165613v1.10" ref:linkable="yes" ref:use-reference-as-is="yes" hwp:id="citation-10">
+<string-name name-style="western" hwp:sortable="Ólafsdóttir H. F.">
+<surname>Ólafsdóttir</surname>, <given-names>H. F.</given-names>
+</string-name>, <string-name name-style="western" hwp:sortable="Barry C.">
+<surname>Barry</surname>, <given-names>C.</given-names>
+</string-name>, <string-name name-style="western" hwp:sortable="Saleem A. B.">
+<surname>Saleem</surname>, <given-names>A. B.</given-names>
+</string-name>, <string-name name-style="western" hwp:sortable="Hassabis D.">
+<surname>Hassabis</surname>, <given-names>D.</given-names>
+</string-name> &amp; <string-name name-style="western" hwp:sortable="Spiers H. J.">
+<surname>Spiers</surname>, <given-names>H. J.</given-names>
+</string-name> <article-title hwp:id="article-title-11">Hippocampal place cells construct reward related sequences through unexplored space</article-title>. <source hwp:id="source-10">Elife</source> <volume>4</volume>, <fpage>e06063</fpage> (<year>2015</year>).</citation></ref><ref id="c11" hwp:id="ref-11" hwp:rev-id="xref-ref-11-1 xref-ref-11-2 xref-ref-11-3"><label>11.</label><citation publication-type="journal" citation-type="journal" ref:id="165613v1.11" ref:linkable="yes" ref:use-reference-as-is="yes" hwp:id="citation-11">
+<string-name name-style="western" hwp:sortable="Grosmark A. D.">
+<surname>Grosmark</surname>, <given-names>A. D.</given-names>
+</string-name> &amp; <string-name name-style="western" hwp:sortable="Buzsáki G.">
+<surname>Buzsáki</surname>, <given-names>G.</given-names>
+</string-name> <article-title hwp:id="article-title-12">Diversity in neural firing dynamics supports both rigid and learned hippocampal sequences</article-title>. <source hwp:id="source-11">Science</source> <volume>351</volume>, <fpage>1440</fpage>–<lpage>1443</lpage> (<year>2016</year>).</citation></ref><ref id="c12" hwp:id="ref-12" hwp:rev-id="xref-ref-12-1 xref-ref-12-2 xref-ref-12-3"><label>12.</label><citation publication-type="journal" citation-type="journal" ref:id="165613v1.12" ref:linkable="yes" ref:use-reference-as-is="yes" hwp:id="citation-12">
+<string-name name-style="western" hwp:sortable="Silva D.">
+<surname>Silva</surname>, <given-names>D.</given-names>
+</string-name>, <string-name name-style="western" hwp:sortable="Feng T.">
+<surname>Feng</surname>, <given-names>T.</given-names>
+</string-name> &amp; <string-name name-style="western" hwp:sortable="Foster D. J.">
+<surname>Foster</surname>, <given-names>D. J.</given-names>
+</string-name> <article-title hwp:id="article-title-13">Trajectory events across hippocampal place cells require previous experience</article-title>. <source hwp:id="source-12">Nat. Neurosci.</source> <volume>18</volume>, <fpage>1</fpage>–<lpage>10</lpage> (<year>2015</year>).</citation></ref><ref id="c13" hwp:id="ref-13" hwp:rev-id="xref-ref-13-1 xref-ref-13-2"><label>13.</label><citation publication-type="journal" citation-type="journal" ref:id="165613v1.13" ref:linkable="yes" ref:use-reference-as-is="yes" hwp:id="citation-13">
+<string-name name-style="western" hwp:sortable="Omura Y.">
+<surname>Omura</surname>, <given-names>Y.</given-names>
+</string-name>, <string-name name-style="western" hwp:sortable="Carvalho M. M.">
+<surname>Carvalho</surname>, <given-names>M. M.</given-names>
+</string-name>, <string-name name-style="western" hwp:sortable="Inokuchi K.">
+<surname>Inokuchi</surname>, <given-names>K.</given-names>
+</string-name> &amp; <string-name name-style="western" hwp:sortable="Fukai T.">
+<surname>Fukai</surname>, <given-names>T.</given-names>
+</string-name> <article-title hwp:id="article-title-14">A Lognormal Recurrent Network Model for Burst Generation during Hippocampal Sharp Waves</article-title>. <source hwp:id="source-13">J. Neurosci.</source> <volume>35</volume>, <fpage>14585</fpage>–<lpage>14601</lpage> (<year>2015</year>).</citation></ref><ref id="c14" hwp:id="ref-14" hwp:rev-id="xref-ref-14-1 xref-ref-14-2"><label>14.</label><citation publication-type="journal" citation-type="journal" ref:id="165613v1.14" ref:linkable="yes" ref:use-reference-as-is="yes" hwp:id="citation-14">
+<string-name name-style="western" hwp:sortable="Middleton S. J.">
+<surname>Middleton</surname>, <given-names>S. J.</given-names>
+</string-name> &amp; <string-name name-style="western" hwp:sortable="McHugh T. J.">
+<surname>McHugh</surname>, <given-names>T. J.</given-names>
+</string-name> <article-title hwp:id="article-title-15">Silencing CA3 disrupts temporal coding in the CA1 ensemble</article-title>. <source hwp:id="source-14">Nat. Neurosci.</source> <volume>19</volume>, <fpage>945</fpage>–<lpage>51</lpage> (<year>2016</year>).</citation></ref><ref id="c15" hwp:id="ref-15" hwp:rev-id="xref-ref-15-1 xref-ref-15-2 xref-ref-15-3"><label>15.</label><citation publication-type="journal" citation-type="journal" ref:id="165613v1.15" ref:linkable="no" ref:use-reference-as-is="yes" hwp:id="citation-15">
+<string-name name-style="western" hwp:sortable="Bush D.">
+<surname>Bush</surname>, <given-names>D.</given-names>
+</string-name>, <string-name name-style="western" hwp:sortable="Philippides A.">
+<surname>Philippides</surname>, <given-names>A.</given-names>
+</string-name>, <string-name name-style="western" hwp:sortable="Husbands P.">
+<surname>Husbands</surname>, <given-names>P.</given-names>
+</string-name> &amp; <string-name name-style="western" hwp:sortable="O’Shea M.">
+<surname>O’Shea</surname>, <given-names>M.</given-names>
+</string-name> <article-title hwp:id="article-title-16">Dual coding with STDP in a spiking recurrent neural network model of the hippocampus</article-title>. <source hwp:id="source-15">PLoS Comput. Biol.</source> <volume>6</volume>, <issue>34</issue> (<year>2010</year>).</citation></ref><ref id="c16" hwp:id="ref-16" hwp:rev-id="xref-ref-16-1 xref-ref-16-2"><label>16.</label><citation publication-type="journal" citation-type="journal" ref:id="165613v1.16" ref:linkable="yes" ref:use-reference-as-is="yes" hwp:id="citation-16">
+<string-name name-style="western" hwp:sortable="Jahnke S.">
+<surname>Jahnke</surname>, <given-names>S.</given-names>
+</string-name>, <string-name name-style="western" hwp:sortable="Timme M.">
+<surname>Timme</surname>, <given-names>M.</given-names>
+</string-name> &amp; <string-name name-style="western" hwp:sortable="Memmesheimer R.-M.">
+<surname>Memmesheimer</surname>, <given-names>R.-M.</given-names>
+</string-name> <article-title hwp:id="article-title-17">A Unified Dynamic Model for Learning, Replay, and Sharp-Wave/Ripples</article-title>. <source hwp:id="source-16">J. Neurosci.</source> <volume>35</volume>, <fpage>16236</fpage>–<lpage>16258</lpage> (<year>2015</year>).</citation></ref><ref id="c17" hwp:id="ref-17" hwp:rev-id="xref-ref-17-1"><label>17.</label><citation publication-type="journal" citation-type="journal" ref:id="165613v1.17" ref:linkable="yes" ref:use-reference-as-is="yes" hwp:id="citation-17">
+<string-name name-style="western" hwp:sortable="Witter M. P.">
+<surname>Witter</surname>, <given-names>M. P.</given-names>
+</string-name> <article-title hwp:id="article-title-18">Intrinsic and extrinsic wiring of CA3: Indications for connectional heterogeneity</article-title>. <source hwp:id="source-17">Learn. Mem.</source> <volume>14</volume>, <fpage>705</fpage>–<lpage>713</lpage> (<year>2007</year>).</citation></ref><ref id="c18" hwp:id="ref-18" hwp:rev-id="xref-ref-18-1 xref-ref-18-2 xref-ref-18-3 xref-ref-18-4 xref-ref-18-5 xref-ref-18-6 xref-ref-18-7 xref-ref-18-8"><label>18.</label><citation publication-type="journal" citation-type="journal" ref:id="165613v1.18" ref:linkable="yes" ref:use-reference-as-is="yes" hwp:id="citation-18">
+<string-name name-style="western" hwp:sortable="Larkum M.">
+<surname>Larkum</surname>, <given-names>M.</given-names>
+</string-name> <article-title hwp:id="article-title-19">A cellular mechanism for cortical associations: An organizing principle for the cerebral cortex</article-title>. <source hwp:id="source-18">Trends Neurosci.</source> <volume>36</volume>, <fpage>141</fpage>–<lpage>151</lpage> (<year>2013</year>).</citation></ref><ref id="c19" hwp:id="ref-19" hwp:rev-id="xref-ref-19-1 xref-ref-19-2 xref-ref-19-3 xref-ref-19-4 xref-ref-19-5"><label>19.</label><citation publication-type="journal" citation-type="journal" ref:id="165613v1.19" ref:linkable="yes" ref:use-reference-as-is="yes" hwp:id="citation-19">
+<string-name name-style="western" hwp:sortable="Shai A. S.">
+<surname>Shai</surname>, <given-names>A. S.</given-names>
+</string-name>, <string-name name-style="western" hwp:sortable="Anastassiou C. A.">
+<surname>Anastassiou</surname>, <given-names>C. A.</given-names>
+</string-name>, <string-name name-style="western" hwp:sortable="Larkum M. E.">
+<surname>Larkum</surname>, <given-names>M. E.</given-names>
+</string-name> &amp; <string-name name-style="western" hwp:sortable="Koch C.">
+<surname>Koch</surname>, <given-names>C.</given-names>
+</string-name> <article-title hwp:id="article-title-20">Physiology of Layer 5 Pyramidal Neurons in Mouse Primary Visual Cortex: Coincidence Detection through Bursting</article-title>. <source hwp:id="source-19">PLoS Comput. Biol.</source> <volume>11</volume>, <fpage>1</fpage>–<lpage>18</lpage> (<year>2015</year>).</citation></ref><ref id="c20" hwp:id="ref-20" hwp:rev-id="xref-ref-20-1 xref-ref-20-2 xref-ref-20-3 xref-ref-20-4"><label>20.</label><citation publication-type="journal" citation-type="journal" ref:id="165613v1.20" ref:linkable="yes" ref:use-reference-as-is="yes" hwp:id="citation-20">
+<string-name name-style="western" hwp:sortable="Takahashi H.">
+<surname>Takahashi</surname>, <given-names>H.</given-names>
+</string-name> &amp; <string-name name-style="western" hwp:sortable="Magee J. C.">
+<surname>Magee</surname>, <given-names>J. C.</given-names>
+</string-name> <article-title hwp:id="article-title-21">Pathway Interactions and Synaptic Plasticity in the Dendritic Tuft Regions of CA1 Pyramidal Neurons</article-title>. <source hwp:id="source-20">Neuron</source> <volume>62</volume>, <fpage>102</fpage>–<lpage>111</lpage> (<year>2009</year>).</citation></ref><ref id="c21" hwp:id="ref-21" hwp:rev-id="xref-ref-21-1 xref-ref-21-2 xref-ref-21-3 xref-ref-21-4"><label>21.</label><citation publication-type="journal" citation-type="journal" ref:id="165613v1.21" ref:linkable="yes" ref:use-reference-as-is="yes" hwp:id="citation-21">
+<string-name name-style="western" hwp:sortable="Bittner K. C.">
+<surname>Bittner</surname>, <given-names>K. C.</given-names>
+</string-name> <etal>et al.</etal> <article-title hwp:id="article-title-22">Conjunctive input processing drives feature selectivity in hippocampal CA1 neurons</article-title>. <source hwp:id="source-21">Nat. Neurosci.</source> <volume>18</volume>, <fpage>1133</fpage>–<lpage>1142</lpage> (<year>2015</year>).</citation></ref><ref id="c22" hwp:id="ref-22" hwp:rev-id="xref-ref-22-1 xref-ref-22-2"><label>22.</label><citation publication-type="journal" citation-type="journal" ref:id="165613v1.22" ref:linkable="yes" ref:use-reference-as-is="yes" hwp:id="citation-22">
+<string-name name-style="western" hwp:sortable="Oja E.">
+<surname>Oja</surname>, <given-names>E.</given-names>
+</string-name> <article-title hwp:id="article-title-23">A simplified neuron model as a principal component analyzer</article-title>. <source hwp:id="source-22">J. Math. Biol.</source> <volume>15</volume>, <fpage>267</fpage>–<lpage>273</lpage> (<year>1982</year>).</citation></ref><ref id="c23" hwp:id="ref-23" hwp:rev-id="xref-ref-23-1 xref-ref-23-2 xref-ref-23-3"><label>23.</label><citation publication-type="journal" citation-type="journal" ref:id="165613v1.23" ref:linkable="yes" ref:use-reference-as-is="yes" hwp:id="citation-23">
+<string-name name-style="western" hwp:sortable="Izadinia H.">
+<surname>Izadinia</surname>, <given-names>H.</given-names>
+</string-name>, <string-name name-style="western" hwp:sortable="Saleemi I.">
+<surname>Saleemi</surname>, <given-names>I.</given-names>
+</string-name> &amp; <string-name name-style="western" hwp:sortable="Shah M.">
+<surname>Shah</surname>, <given-names>M.</given-names>
+</string-name> <article-title hwp:id="article-title-24">Multimodal Analysis for Identification and Segmentation of Moving-Sounding Objects</article-title>. <source hwp:id="source-23">IEEE Trans. Multimed.</source> <volume>15</volume>, <fpage>1</fpage>–<lpage>13</lpage> (<year>2012</year>).</citation></ref><ref id="c24" hwp:id="ref-24" hwp:rev-id="xref-ref-24-1"><label>24.</label><citation publication-type="journal" citation-type="journal" ref:id="165613v1.24" ref:linkable="yes" ref:use-reference-as-is="yes" hwp:id="citation-24">
+<string-name name-style="western" hwp:sortable="Bienenstock E. L.">
+<surname>Bienenstock</surname>, <given-names>E. L.</given-names>
+</string-name>, <string-name name-style="western" hwp:sortable="Cooper L. N.">
+<surname>Cooper</surname>, <given-names>L. N.</given-names>
+</string-name> &amp; <string-name name-style="western" hwp:sortable="Munro P. W.">
+<surname>Munro</surname>, <given-names>P. W.</given-names>
+</string-name> <article-title hwp:id="article-title-25">Theory for the development of neuron selectivity: orientation specificity and binocular interaction in visual cortex</article-title>. <source hwp:id="source-24">J. Neurosci.</source> <volume>2</volume>, <fpage>32</fpage>–<lpage>48</lpage> (<year>1982</year>).</citation></ref><ref id="c25" hwp:id="ref-25" hwp:rev-id="xref-ref-25-1 xref-ref-25-2"><label>25.</label><citation publication-type="journal" citation-type="journal" ref:id="165613v1.25" ref:linkable="yes" ref:use-reference-as-is="yes" hwp:id="citation-25">
+<string-name name-style="western" hwp:sortable="Yang G. R.">
+<surname>Yang</surname>, <given-names>G. R.</given-names>
+</string-name>, <string-name name-style="western" hwp:sortable="Murray J. D.">
+<surname>Murray</surname>, <given-names>J. D.</given-names>
+</string-name> &amp; <string-name name-style="western" hwp:sortable="Wang X.-J.">
+<surname>Wang</surname>, <given-names>X.-J.</given-names>
+</string-name> <article-title hwp:id="article-title-26">A dendritic disinhibitory circuit mechanism for pathway-specific gating</article-title>. <source hwp:id="source-25">Nat. Commun.</source> <volume>7</volume>, <fpage>12815</fpage> (<year>2016</year>).</citation></ref><ref id="c26" hwp:id="ref-26" hwp:rev-id="xref-ref-26-1 xref-ref-26-2 xref-ref-26-3"><label>26.</label><citation publication-type="journal" citation-type="journal" ref:id="165613v1.26" ref:linkable="yes" ref:use-reference-as-is="yes" hwp:id="citation-26">
+<string-name name-style="western" hwp:sortable="Sjöström P. J.">
+<surname>Sjöström</surname>, <given-names>P. J.</given-names>
+</string-name> &amp; <string-name name-style="western" hwp:sortable="Häusser M.">
+<surname>Häusser</surname>, <given-names>M.</given-names>
+</string-name> <article-title hwp:id="article-title-27">A Cooperative Switch Determines the Sign of Synaptic Plasticity in Distal Dendrites of Neocortical Pyramidal Neurons</article-title>. <source hwp:id="source-26">Neuron</source> <volume>51</volume>, <fpage>227</fpage>–<lpage>238</lpage> (<year>2006</year>).</citation></ref><ref id="c27" hwp:id="ref-27" hwp:rev-id="xref-ref-27-1 xref-ref-27-2 xref-ref-27-3"><label>27.</label><citation publication-type="journal" citation-type="journal" ref:id="165613v1.27" ref:linkable="yes" ref:use-reference-as-is="yes" hwp:id="citation-27">
+<string-name name-style="western" hwp:sortable="Royer S.">
+<surname>Royer</surname>, <given-names>S.</given-names>
+</string-name> <etal>et al.</etal> <article-title hwp:id="article-title-28">Control of timing, rate and bursts of hippocampal place cells by dendritic and somatic inhibition</article-title>. <source hwp:id="source-27">Nat. Neurosci.</source> <volume>15</volume>, <fpage>769</fpage>–<lpage>775</lpage> (<year>2012</year>).</citation></ref><ref id="c28" hwp:id="ref-28" hwp:rev-id="xref-ref-28-1 xref-ref-28-2"><label>28.</label><citation publication-type="journal" citation-type="journal" ref:id="165613v1.28" ref:linkable="yes" ref:use-reference-as-is="yes" hwp:id="citation-28">
+<string-name name-style="western" hwp:sortable="Vogels T. P.">
+<surname>Vogels</surname>, <given-names>T. P.</given-names>
+</string-name> <etal>et al.</etal> <article-title hwp:id="article-title-29">Inhibitory synaptic plasticity: spike timing-dependence and putative network function</article-title>. <source hwp:id="source-28">Front. Neural Circuits</source> <volume>7</volume>, <fpage>1</fpage>–<lpage>11</lpage> (<year>2013</year>).</citation></ref><ref id="c29" hwp:id="ref-29" hwp:rev-id="xref-ref-29-1"><label>29.</label><citation publication-type="journal" citation-type="journal" ref:id="165613v1.29" ref:linkable="yes" ref:use-reference-as-is="yes" hwp:id="citation-29">
+<string-name name-style="western" hwp:sortable="Romani S.">
+<surname>Romani</surname>, <given-names>S.</given-names>
+</string-name> &amp; <string-name name-style="western" hwp:sortable="Tsodyks M.">
+<surname>Tsodyks</surname>, <given-names>M.</given-names>
+</string-name> <article-title hwp:id="article-title-30">Short-term plasticity based network model of place cells dynamics</article-title>. <source hwp:id="source-29">Hippocampus</source> <volume>25</volume>, <fpage>94</fpage>–<lpage>105</lpage> (<year>2015</year>).</citation></ref><ref id="c30" hwp:id="ref-30" hwp:rev-id="xref-ref-30-1 xref-ref-30-2"><label>30.</label><citation publication-type="journal" citation-type="journal" ref:id="165613v1.30" ref:linkable="no" ref:use-reference-as-is="yes" hwp:id="citation-30">
+<string-name name-style="western" hwp:sortable="Knierim J. J.">
+<surname>Knierim</surname>, <given-names>J. J.</given-names>
+</string-name>, <string-name name-style="western" hwp:sortable="Neunuebel J. P.">
+<surname>Neunuebel</surname>, <given-names>J. P.</given-names>
+</string-name> &amp; <string-name name-style="western" hwp:sortable="Deshmukh S. S.">
+<surname>Deshmukh</surname>, <given-names>S. S.</given-names>
+</string-name> <article-title hwp:id="article-title-31">Functional correlates of the lateral and medial entorhinal cortex: objects, path integration and local – global reference frames</article-title>. <source hwp:id="source-30">Philos. Trans. R. Soc.</source> <volume>369</volume>, (<year>2014</year>).</citation></ref><ref id="c31" hwp:id="ref-31" hwp:rev-id="xref-ref-31-1"><label>31.</label><citation publication-type="journal" citation-type="journal" ref:id="165613v1.31" ref:linkable="no" ref:use-reference-as-is="yes" hwp:id="citation-31">
+<string-name name-style="western" hwp:sortable="Skaggs W. E.">
+<surname>Skaggs</surname>, <given-names>W. E.</given-names>
+</string-name>, <string-name name-style="western" hwp:sortable="McNaughton B. L.">
+<surname>McNaughton</surname>, <given-names>B. L.</given-names>
+</string-name>, <string-name name-style="western" hwp:sortable="Gothard K. M.">
+<surname>Gothard</surname>, <given-names>K. M.</given-names>
+</string-name> &amp; <string-name name-style="western" hwp:sortable="Markus E. J.">
+<surname>Markus</surname>, <given-names>E. J.</given-names>
+</string-name> <article-title hwp:id="article-title-32">An information-theoretic approach to deciphering the hippocampal code</article-title>. <source hwp:id="source-31">Adv. Neural Inf. Process. Syst.</source> <volume>1030–1037</volume> (<year>1993</year>).</citation></ref><ref id="c32" hwp:id="ref-32" hwp:rev-id="xref-ref-32-1 xref-ref-32-2"><label>32.</label><citation publication-type="journal" citation-type="journal" ref:id="165613v1.32" ref:linkable="yes" ref:use-reference-as-is="yes" hwp:id="citation-32">
+<string-name name-style="western" hwp:sortable="Wilson M.">
+<surname>Wilson</surname>, <given-names>M.</given-names>
+</string-name> &amp; <string-name name-style="western" hwp:sortable="McNaughton B.">
+<surname>McNaughton</surname>, <given-names>B.</given-names>
+</string-name> <article-title hwp:id="article-title-33">Reactivation of hippocampal ensemble memories during sleep</article-title>. <source hwp:id="source-32">Science</source> <volume>265</volume>, <fpage>676</fpage>–<lpage>679</lpage> (<year>1994</year>).</citation></ref><ref id="c33" hwp:id="ref-33" hwp:rev-id="xref-ref-33-1"><label>33.</label><citation publication-type="journal" citation-type="journal" ref:id="165613v1.33" ref:linkable="yes" ref:use-reference-as-is="yes" hwp:id="citation-33">
+<string-name name-style="western" hwp:sortable="Benna M. K.">
+<surname>Benna</surname>, <given-names>M. K.</given-names>
+</string-name> &amp; <string-name name-style="western" hwp:sortable="Fusi S.">
+<surname>Fusi</surname>, <given-names>S.</given-names>
+</string-name> <article-title hwp:id="article-title-34">Computational principles of synaptic memory consolidation</article-title>. <source hwp:id="source-33">Nat. Neurosci.</source> <volume>19</volume>, <fpage>1697</fpage>–<lpage>1706</lpage> (<year>2016</year>).</citation></ref><ref id="c34" hwp:id="ref-34" hwp:rev-id="xref-ref-34-1 xref-ref-34-2"><label>34.</label><citation publication-type="journal" citation-type="journal" ref:id="165613v1.34" ref:linkable="yes" ref:use-reference-as-is="yes" hwp:id="citation-34">
+<string-name name-style="western" hwp:sortable="Nakazawa K.">
+<surname>Nakazawa</surname>, <given-names>K.</given-names>
+</string-name> <etal>et al.</etal> <source hwp:id="source-34">Requirement for Hippocampal CA3 NMDA Receptors in Associative Memory Recall</source>. <volume>297</volume>, <fpage>211218</fpage> (<year>2002</year>).</citation></ref><ref id="c35" hwp:id="ref-35" hwp:rev-id="xref-ref-35-1 xref-ref-35-2"><label>35.</label><citation publication-type="journal" citation-type="journal" ref:id="165613v1.35" ref:linkable="yes" ref:use-reference-as-is="yes" hwp:id="citation-35">
+<string-name name-style="western" hwp:sortable="Guzman S. J.">
+<surname>Guzman</surname>, <given-names>S. J.</given-names>
+</string-name> <etal>et al.</etal> <article-title hwp:id="article-title-35">Synaptic mechanisms of pattern completion in the hippocampal CA3 network</article-title>. <source hwp:id="source-35">Science</source> <volume>353</volume>, <fpage>109</fpage>–<lpage>120</lpage> (<year>2016</year>).</citation></ref><ref id="c36" hwp:id="ref-36" hwp:rev-id="xref-ref-36-1"><label>36.</label><citation publication-type="journal" citation-type="journal" ref:id="165613v1.36" ref:linkable="yes" ref:use-reference-as-is="yes" hwp:id="citation-36">
+<string-name name-style="western" hwp:sortable="McHugh T. J.">
+<surname>McHugh</surname>, <given-names>T. J.</given-names>
+</string-name> <etal>et al.</etal> <article-title hwp:id="article-title-36">Dentate Gyrus NMDA Receptors Mediate Rapid Pattern Separation in the Hippocampal Network</article-title>. <source hwp:id="source-36">Science</source> <volume>317</volume>, <fpage>94</fpage>–<lpage>99</lpage> (<year>2007</year>).</citation></ref><ref id="c37" hwp:id="ref-37" hwp:rev-id="xref-ref-37-1 xref-ref-37-2"><label>37.</label><citation publication-type="journal" citation-type="journal" ref:id="165613v1.37" ref:linkable="yes" ref:use-reference-as-is="yes" hwp:id="citation-37">
+<string-name name-style="western" hwp:sortable="Senzai Y.">
+<surname>Senzai</surname>, <given-names>Y.</given-names>
+</string-name> &amp; <string-name name-style="western" hwp:sortable="Buzsáki G.">
+<surname>Buzsáki</surname>, <given-names>G.</given-names>
+</string-name> <article-title hwp:id="article-title-37">Physiological Properties and Behavioral Correlates of Hippocampal Granule Cells and Mossy Cells</article-title>. <source hwp:id="source-37">Neuron</source> <volume>93</volume>, <fpage>691</fpage>–<lpage>704</lpage> (<year>2017</year>).</citation></ref><ref id="c38" hwp:id="ref-38" hwp:rev-id="xref-ref-38-1 xref-ref-38-2"><label>38.</label><citation publication-type="journal" citation-type="journal" ref:id="165613v1.38" ref:linkable="yes" ref:use-reference-as-is="yes" hwp:id="citation-38">
+<string-name name-style="western" hwp:sortable="Ikegaya Y.">
+<surname>Ikegaya</surname>, <given-names>Y.</given-names>
+</string-name> <etal>et al.</etal> <article-title hwp:id="article-title-38">Interpyramid spike transmission stabilizes the sparseness of recurrent network activity</article-title>. <source hwp:id="source-38">Cereb. Cortex</source> <volume>23</volume>, <fpage>293</fpage>–<lpage>304</lpage> (<year>2013</year>).</citation></ref><ref id="c39" hwp:id="ref-39" hwp:rev-id="xref-ref-39-1"><label>39.</label><citation publication-type="journal" citation-type="journal" ref:id="165613v1.39" ref:linkable="yes" ref:use-reference-as-is="yes" hwp:id="citation-39">
+<string-name name-style="western" hwp:sortable="Brunel N.">
+<surname>Brunel</surname>, <given-names>N.</given-names>
+</string-name> &amp; <string-name name-style="western" hwp:sortable="Trullier O.">
+<surname>Trullier</surname>, <given-names>O.</given-names>
+</string-name> <article-title hwp:id="article-title-39">Plasticity of directional place fields in a model of rodent CA3</article-title>. <source hwp:id="source-39">Hippocampus</source> <volume>8</volume>, <fpage>651</fpage>–<lpage>665</lpage> (<year>1998</year>).</citation></ref><ref id="c40" hwp:id="ref-40" hwp:rev-id="xref-ref-40-1 xref-ref-40-2"><label>40.</label><citation publication-type="journal" citation-type="journal" ref:id="165613v1.40" ref:linkable="yes" ref:use-reference-as-is="yes" hwp:id="citation-40">
+<string-name name-style="western" hwp:sortable="Káli S.">
+<surname>Káli</surname>, <given-names>S.</given-names>
+</string-name> &amp; <string-name name-style="western" hwp:sortable="Dayan P.">
+<surname>Dayan</surname>, <given-names>P.</given-names>
+</string-name> <article-title hwp:id="article-title-40">The involvement of recurrent connections in area CA3 in establishing the properties of place fields: a model</article-title>. <source hwp:id="source-40">J. Neurosci.</source> <volume>20</volume>, <fpage>7463</fpage>–<lpage>7477</lpage> (<year>2000</year>).</citation></ref><ref id="c41" hwp:id="ref-41" hwp:rev-id="xref-ref-41-1"><label>41.</label><citation publication-type="journal" citation-type="journal" ref:id="165613v1.41" ref:linkable="yes" ref:use-reference-as-is="yes" hwp:id="citation-41">
+<string-name name-style="western" hwp:sortable="Kim S.">
+<surname>Kim</surname>, <given-names>S.</given-names>
+</string-name>, <string-name name-style="western" hwp:sortable="Guzman S. J.">
+<surname>Guzman</surname>, <given-names>S. J.</given-names>
+</string-name>, <string-name name-style="western" hwp:sortable="Hu H.">
+<surname>Hu</surname>, <given-names>H.</given-names>
+</string-name> &amp; <string-name name-style="western" hwp:sortable="Jonas P.">
+<surname>Jonas</surname>, <given-names>P.</given-names>
+</string-name> <article-title hwp:id="article-title-41">Active dendrites support efficient initiation of dendritic spikes in hippocampal CA3 pyramidal neurons</article-title>. <source hwp:id="source-41">Nat. Neurosci.</source> <volume>15</volume>, <fpage>600</fpage>–<lpage>606</lpage> (<year>2012</year>).</citation></ref><ref id="c42" hwp:id="ref-42" hwp:rev-id="xref-ref-42-1"><label>42.</label><citation publication-type="journal" citation-type="journal" ref:id="165613v1.42" ref:linkable="yes" ref:use-reference-as-is="yes" hwp:id="citation-42">
+<string-name name-style="western" hwp:sortable="Makara J. K.">
+<surname>Makara</surname>, <given-names>J. K.</given-names>
+</string-name> &amp; <string-name name-style="western" hwp:sortable="Magee J. C.">
+<surname>Magee</surname>, <given-names>J. C.</given-names>
+</string-name> <article-title hwp:id="article-title-42">Variable dendritic integration in hippocampal CA3 pyramidal neurons</article-title>. <source hwp:id="source-42">Neuron</source> <volume>80</volume>, <fpage>1438</fpage>–<lpage>1450</lpage> (<year>2013</year>).</citation></ref><ref id="c43" hwp:id="ref-43" hwp:rev-id="xref-ref-43-1"><label>43.</label><citation publication-type="journal" citation-type="journal" ref:id="165613v1.43" ref:linkable="yes" ref:use-reference-as-is="yes" hwp:id="citation-43">
+<string-name name-style="western" hwp:sortable="Cichon J.">
+<surname>Cichon</surname>, <given-names>J.</given-names>
+</string-name> &amp; <string-name name-style="western" hwp:sortable="Gan W.-B.">
+<surname>Gan</surname>, <given-names>W.-B.</given-names>
+</string-name> <article-title hwp:id="article-title-43">Branch-specific dendritic Ca2+ spikes cause persistent synaptic plasticity</article-title>. <source hwp:id="source-43">Nature</source> <volume>520</volume>, <fpage>180</fpage>–<lpage>185</lpage> (<year>2015</year>).</citation></ref><ref id="c44" hwp:id="ref-44" hwp:rev-id="xref-ref-44-1"><label>44.</label><citation publication-type="journal" citation-type="journal" ref:id="165613v1.44" ref:linkable="yes" ref:use-reference-as-is="yes" hwp:id="citation-44">
+<string-name name-style="western" hwp:sortable="Langston R. F.">
+<surname>Langston</surname>, <given-names>R. F.</given-names>
+</string-name> <etal>et al.</etal> <article-title hwp:id="article-title-44">Development of the Spatial Representation System in the Rat</article-title>. <source hwp:id="source-44">Science</source> <volume>328</volume>, <fpage>1576</fpage>–<lpage>1580</lpage> (<year>2010</year>).</citation></ref><ref id="c45" hwp:id="ref-45" hwp:rev-id="xref-ref-45-1"><label>45.</label><citation publication-type="journal" citation-type="journal" ref:id="165613v1.45" ref:linkable="yes" ref:use-reference-as-is="yes" hwp:id="citation-45">
+<string-name name-style="western" hwp:sortable="Wills T. J.">
+<surname>Wills</surname>, <given-names>T. J.</given-names>
+</string-name>, <string-name name-style="western" hwp:sortable="Cacucci F.">
+<surname>Cacucci</surname>, <given-names>F.</given-names>
+</string-name>, <string-name name-style="western" hwp:sortable="Burgess N.">
+<surname>Burgess</surname>, <given-names>N.</given-names>
+</string-name> &amp; <string-name name-style="western" hwp:sortable="O’Keefe J.">
+<surname>O’Keefe</surname>, <given-names>J.</given-names>
+</string-name> <article-title hwp:id="article-title-45">Development of the Hippocampal Cognitive Map in Preweanling Rats</article-title>. <source hwp:id="source-45">Science</source> <volume>328</volume>, <fpage>1573</fpage>–<lpage>1576</lpage> (<year>2010</year>).</citation></ref><ref id="c46" hwp:id="ref-46" hwp:rev-id="xref-ref-46-1"><label>46.</label><citation publication-type="journal" citation-type="journal" ref:id="165613v1.46" ref:linkable="yes" ref:use-reference-as-is="yes" hwp:id="citation-46">
+<string-name name-style="western" hwp:sortable="Bonnevie T.">
+<surname>Bonnevie</surname>, <given-names>T.</given-names>
+</string-name> <etal>et al.</etal> <article-title hwp:id="article-title-46">Grid cells require excitatory drive from the hippocampus</article-title>. <source hwp:id="source-46">Nat. Neurosci.</source> <volume>16</volume>, <fpage>309</fpage>–<lpage>317</lpage> (<year>2013</year>).</citation></ref><ref id="c47" hwp:id="ref-47" hwp:rev-id="xref-ref-47-1"><label>47.</label><citation publication-type="journal" citation-type="journal" ref:id="165613v1.47" ref:linkable="yes" ref:use-reference-as-is="yes" hwp:id="citation-47">
+<string-name name-style="western" hwp:sortable="Samsonovich A.">
+<surname>Samsonovich</surname>, <given-names>A.</given-names>
+</string-name> &amp; <string-name name-style="western" hwp:sortable="McNaughton B. L.">
+<surname>McNaughton</surname>, <given-names>B. L.</given-names>
+</string-name> <article-title hwp:id="article-title-47">Path integration and cognitive mapping in a continuous attractor neural network model</article-title>. <source hwp:id="source-47">J. Neurosci.</source> <volume>17</volume>, <fpage>5900</fpage>–<lpage>5920</lpage> (<year>1997</year>).</citation></ref><ref id="c48" hwp:id="ref-48" hwp:rev-id="xref-ref-48-1"><label>48.</label><citation publication-type="journal" citation-type="journal" ref:id="165613v1.48" ref:linkable="yes" ref:use-reference-as-is="yes" hwp:id="citation-48">
+<string-name name-style="western" hwp:sortable="Diamantaki M.">
+<surname>Diamantaki</surname>, <given-names>M.</given-names>
+</string-name>, <string-name name-style="western" hwp:sortable="Frey M.">
+<surname>Frey</surname>, <given-names>M.</given-names>
+</string-name>, <string-name name-style="western" hwp:sortable="Berens P.">
+<surname>Berens</surname>, <given-names>P.</given-names>
+</string-name>, <string-name name-style="western" hwp:sortable="Preston-Ferrer P.">
+<surname>Preston-Ferrer</surname>, <given-names>P.</given-names>
+</string-name> &amp; <string-name name-style="western" hwp:sortable="Burgalossi A.">
+<surname>Burgalossi</surname>, <given-names>A.</given-names>
+</string-name> <article-title hwp:id="article-title-48">Sparse activity of identified dentate granule cells during spatial exploration</article-title>. <source hwp:id="source-48">Elife</source> <volume>5</volume>, <fpage>1</fpage>–<lpage>17</lpage> (<year>2016</year>).</citation></ref><ref id="c49" hwp:id="ref-49" hwp:rev-id="xref-ref-49-1"><label>49.</label><citation publication-type="journal" citation-type="journal" ref:id="165613v1.49" ref:linkable="yes" ref:use-reference-as-is="yes" hwp:id="citation-49">
+<string-name name-style="western" hwp:sortable="Urbanczik R.">
+<surname>Urbanczik</surname>, <given-names>R.</given-names>
+</string-name> &amp; <string-name name-style="western" hwp:sortable="Senn W.">
+<surname>Senn</surname>, <given-names>W.</given-names>
+</string-name> <article-title hwp:id="article-title-49">Learning by the Dendritic Prediction of Somatic Spiking</article-title>. <source hwp:id="source-49">Neuron</source> <volume>81</volume>, <fpage>521</fpage>–<lpage>528</lpage> (<year>2014</year>).</citation></ref><ref id="c50" hwp:id="ref-50" hwp:rev-id="xref-ref-50-1"><label>50.</label><citation publication-type="journal" citation-type="journal" ref:id="165613v1.50" ref:linkable="yes" ref:use-reference-as-is="yes" hwp:id="citation-50">
+<string-name name-style="western" hwp:sortable="Kaifosh P.">
+<surname>Kaifosh</surname>, <given-names>P.</given-names>
+</string-name> &amp; <string-name name-style="western" hwp:sortable="Losonczy A.">
+<surname>Losonczy</surname>, <given-names>A.</given-names>
+</string-name> <article-title hwp:id="article-title-50">Mnemonic Functions for Nonlinear Dendritic Integration in Hippocampal Pyramidal Circuits</article-title>. <source hwp:id="source-50">Neuron</source> <volume>90</volume>, <fpage>622</fpage>–<lpage>634</lpage> (<year>2016</year>).</citation></ref></ref-list><sec id="S6" hwp:id="sec-18"><title hwp:id="title-27">Methods</title><sec id="S6a" hwp:id="sec-19"><title hwp:id="title-28">Weight changes and moving thresholds</title><p hwp:id="p-57">In all numerical simulations, we modified excitatory synapses in the somatic and dendritic components according to the following second-order stochastic dynamics incorporating delays, weight decays and spontaneous fluctuations:<disp-formula id="eqnv1" hwp:id="disp-formula-13">
+<alternatives hwp:id="alternatives-21"><graphic xlink:href="165613_eqnV1.gif" position="float" orientation="portrait" hwp:id="graphic-19"/></alternatives>
+</disp-formula>
+<disp-formula id="eqnv2" hwp:id="disp-formula-14">
+<alternatives hwp:id="alternatives-22"><graphic xlink:href="165613_eqnV2.gif" position="float" orientation="portrait" hwp:id="graphic-20"/></alternatives>
+</disp-formula>
+<disp-formula id="eqnv3" hwp:id="disp-formula-15">
+<alternatives hwp:id="alternatives-23"><graphic xlink:href="165613_eqnV3.gif" position="float" orientation="portrait" hwp:id="graphic-21"/></alternatives>
+</disp-formula>where <italic toggle="yes">τ</italic>
+<sub>w</sub> is the time constant for delays of synaptic changes, <italic toggle="yes">η</italic>
+<sub>decay</sub> is the speed of weight decay, <italic toggle="yes">∈</italic>(<italic toggle="yes">t</italic>) is normal Gaussian noise and <italic toggle="yes">σ</italic>
+<sub>s</sub> is the standard deviation of spontaneous fluctuation. The weights were constrained in non-negative values during simulations.</p><p hwp:id="p-58">Long-term plasticity of dendritic inhibitory weights <inline-formula hwp:id="inline-formula-9">
+<alternatives hwp:id="alternatives-24"><inline-graphic xlink:href="165613_inline8.gif" hwp:id="inline-graphic-9"/></alternatives>
+</inline-formula> was implemented as</p><disp-formula id="eqnv4" hwp:id="disp-formula-16">
+<alternatives hwp:id="alternatives-25"><graphic xlink:href="165613_eqnV4.gif" position="float" orientation="portrait" hwp:id="graphic-22"/></alternatives>
+</disp-formula><disp-formula id="eqnv5" hwp:id="disp-formula-17">
+<alternatives hwp:id="alternatives-26"><graphic xlink:href="165613_eqnV5.gif" position="float" orientation="portrait" hwp:id="graphic-23"/></alternatives>
+</disp-formula><p hwp:id="p-59">Somatic inhibitory weights <inline-formula hwp:id="inline-formula-10">
+<alternatives hwp:id="alternatives-27"><inline-graphic xlink:href="165613_inline9.gif" hwp:id="inline-graphic-10"/></alternatives>
+</inline-formula> were fixed.</p><p hwp:id="p-60">For single-compartment neuron, plasticity follows BCM rule:</p><disp-formula id="eqnv6" hwp:id="disp-formula-18">
+<alternatives hwp:id="alternatives-28"><graphic xlink:href="165613_eqnV6.gif" position="float" orientation="portrait" hwp:id="graphic-24"/></alternatives>
+</disp-formula><disp-formula id="eqnv7" hwp:id="disp-formula-19">
+<alternatives hwp:id="alternatives-29"><graphic xlink:href="165613_eqnV7.gif" position="float" orientation="portrait" hwp:id="graphic-25"/></alternatives>
+</disp-formula><p hwp:id="p-61">Moving thresholds for BCM theory were defined as <inline-formula hwp:id="inline-formula-11">
+<alternatives hwp:id="alternatives-30"><inline-graphic xlink:href="165613_inline10.gif" hwp:id="inline-graphic-11"/></alternatives>
+</inline-formula>, <inline-formula hwp:id="inline-formula-12">
+<alternatives hwp:id="alternatives-31"><inline-graphic xlink:href="165613_inline11.gif" hwp:id="inline-graphic-12"/></alternatives>
+</inline-formula>. We updated the mean activities <inline-formula hwp:id="inline-formula-13">
+<alternatives hwp:id="alternatives-32"><inline-graphic xlink:href="165613_inline12.gif" hwp:id="inline-graphic-13"/></alternatives>
+</inline-formula>, <inline-formula hwp:id="inline-formula-14">
+<alternatives hwp:id="alternatives-33"><inline-graphic xlink:href="165613_inline13.gif" hwp:id="inline-graphic-14"/></alternatives>
+</inline-formula> by solving<disp-formula id="eqnv8" hwp:id="disp-formula-20">
+<alternatives hwp:id="alternatives-34"><graphic xlink:href="165613_eqnV8.gif" position="float" orientation="portrait" hwp:id="graphic-26"/></alternatives>
+</disp-formula>
+<disp-formula id="eqnv9" hwp:id="disp-formula-21">
+<alternatives hwp:id="alternatives-35"><graphic xlink:href="165613_eqnV9.gif" position="float" orientation="portrait" hwp:id="graphic-27"/></alternatives>
+</disp-formula>where <italic toggle="yes">τ</italic>
+<sub>mean</sub> determines the typical time scale of the averaging.</p></sec><sec id="S6b" hwp:id="sec-20"><title hwp:id="title-29">Two-compartment recurrent neural network model</title><p hwp:id="p-62">Here we define the two-compartment neural network used in <xref ref-type="fig" rid="fig3" hwp:id="xref-fig-3-10" hwp:rel-id="F3">Figures 3</xref> to <xref ref-type="fig" rid="fig6" hwp:id="xref-fig-6-10" hwp:rel-id="F6">6</xref>. In <xref ref-type="fig" rid="fig1" hwp:id="xref-fig-1-10" hwp:rel-id="F1">Figure 1</xref> and <xref ref-type="fig" rid="fig2" hwp:id="xref-fig-2-11" hwp:rel-id="F2">Figure 2</xref>, we used the model described in the main text without short-term plasticity, NMDA synapses and GABA-B synapses. The activity of neuron <italic toggle="yes">i</italic> in two-compartment recurrent neural networks was described as<disp-formula id="eqnv10" hwp:id="disp-formula-22">
+<alternatives hwp:id="alternatives-36"><graphic xlink:href="165613_eqnV10.gif" position="float" orientation="portrait" hwp:id="graphic-28"/></alternatives>
+</disp-formula>
+<disp-formula id="eqnv11" hwp:id="disp-formula-23">
+<alternatives hwp:id="alternatives-37"><graphic xlink:href="165613_eqnV11.gif" position="float" orientation="portrait" hwp:id="graphic-29"/></alternatives>
+</disp-formula>
+<disp-formula id="eqnv12" hwp:id="disp-formula-24">
+<alternatives hwp:id="alternatives-38"><graphic xlink:href="165613_eqnV12.gif" position="float" orientation="portrait" hwp:id="graphic-30"/></alternatives>
+</disp-formula>where parameters were set as <italic toggle="yes">ϕ</italic> = 0.08 kHz, <italic toggle="yes">θ</italic>
+<sub>
+<italic toggle="yes">f</italic>
+</sub> = 5, <italic toggle="yes">β</italic> = 2.5, γ = 1. <inline-formula hwp:id="inline-formula-15">
+<alternatives hwp:id="alternatives-39"><inline-graphic xlink:href="165613_inline14.gif" hwp:id="inline-graphic-15"/></alternatives>
+</inline-formula> is external input, which varied depending on the simulation settings. Synaptic inputs <inline-formula hwp:id="inline-formula-16">
+<alternatives hwp:id="alternatives-40"><inline-graphic xlink:href="165613_inline15.gif" hwp:id="inline-graphic-16"/></alternatives>
+</inline-formula> were calculated from recurrent inputs <inline-formula hwp:id="inline-formula-17">
+<alternatives hwp:id="alternatives-41"><inline-graphic xlink:href="165613_inline16.gif" hwp:id="inline-graphic-17"/></alternatives>
+</inline-formula> and firing rates of EC neurons <inline-formula hwp:id="inline-formula-18">
+<alternatives hwp:id="alternatives-42"><inline-graphic xlink:href="165613_inline17.gif" hwp:id="inline-graphic-18"/></alternatives>
+</inline-formula> as<disp-formula id="eqnv13" hwp:id="disp-formula-25">
+<alternatives hwp:id="alternatives-43"><graphic xlink:href="165613_eqnV13.gif" position="float" orientation="portrait" hwp:id="graphic-31"/></alternatives>
+</disp-formula>where <inline-formula hwp:id="inline-formula-19">
+<alternatives hwp:id="alternatives-44"><inline-graphic xlink:href="165613_inline18.gif" hwp:id="inline-graphic-19"/></alternatives>
+</inline-formula> and <inline-formula hwp:id="inline-formula-20">
+<alternatives hwp:id="alternatives-45"><inline-graphic xlink:href="165613_inline19.gif" hwp:id="inline-graphic-20"/></alternatives>
+</inline-formula> are variables for short-term synaptic plasticity:</p><disp-formula id="eqnv14" hwp:id="disp-formula-26">
+<alternatives hwp:id="alternatives-46"><graphic xlink:href="165613_eqnV14.gif" position="float" orientation="portrait" hwp:id="graphic-32"/></alternatives>
+</disp-formula><disp-formula id="eqnv15" hwp:id="disp-formula-27">
+<alternatives hwp:id="alternatives-47"><graphic xlink:href="165613_eqnV15.gif" position="float" orientation="portrait" hwp:id="graphic-33"/></alternatives>
+</disp-formula><p hwp:id="p-63">The values of parameters were set as <italic toggle="yes">τ</italic>
+<sub>STD</sub> = 500 ms, <italic toggle="yes">τ</italic>
+<sub>STF</sub> = 150 ms and <italic toggle="yes">τ</italic>
+<sub>L</sub> = 10 ms. The value of initial release probability <italic toggle="yes">U</italic>
+<sub>STF</sub> was 0.5 for all excitatory synapses in the immobile state of animal, and was changed to 0.03 for recurrent synapses during animal’s movement. At the moment that the animal started a movement from immobile state, <inline-formula hwp:id="inline-formula-21">
+<alternatives hwp:id="alternatives-48"><inline-graphic xlink:href="165613_inline20.gif" hwp:id="inline-graphic-21"/></alternatives>
+</inline-formula> was immediately changed to 0.03. We note that the long-term plasticity rules also depend on short-term plasticity through <inline-formula hwp:id="inline-formula-22">
+<alternatives hwp:id="alternatives-49"><inline-graphic xlink:href="165613_inline21.gif" hwp:id="inline-graphic-22"/></alternatives>
+</inline-formula>.</p><p hwp:id="p-64">NMDA currents <inline-formula hwp:id="inline-formula-23">
+<alternatives hwp:id="alternatives-50"><inline-graphic xlink:href="165613_inline22.gif" hwp:id="inline-graphic-23"/></alternatives>
+</inline-formula> and <inline-formula hwp:id="inline-formula-24">
+<alternatives hwp:id="alternatives-51"><inline-graphic xlink:href="165613_inline23.gif" hwp:id="inline-graphic-24"/></alternatives>
+</inline-formula> were calculated in a similar way to <inline-formula hwp:id="inline-formula-25">
+<alternatives hwp:id="alternatives-52"><inline-graphic xlink:href="165613_inline24.gif" hwp:id="inline-graphic-25"/></alternatives>
+</inline-formula> by using a longer time constant <inline-formula hwp:id="inline-formula-26">
+<alternatives hwp:id="alternatives-53"><inline-graphic xlink:href="165613_inline25.gif" hwp:id="inline-graphic-26"/></alternatives>
+</inline-formula>. Their weights <inline-formula hwp:id="inline-formula-27">
+<alternatives hwp:id="alternatives-54"><inline-graphic xlink:href="165613_inline26.gif" hwp:id="inline-graphic-27"/></alternatives>
+</inline-formula> and <inline-formula hwp:id="inline-formula-28">
+<alternatives hwp:id="alternatives-55"><inline-graphic xlink:href="165613_inline27.gif" hwp:id="inline-graphic-28"/></alternatives>
+</inline-formula> were determined from initial synaptic weights and fixed during all simulations.</p><p hwp:id="p-65">Inhibitory feedback <italic toggle="yes">I</italic>
+<sup>inh</sup>(<italic toggle="yes">t</italic>) (GABA-A) and <italic toggle="yes">I</italic>
+<sup>inhB</sup>(<italic toggle="yes">t</italic>) (GABA-B), were represented by the summation of outputs from the recurrent network as</p><disp-formula id="eqnv16" hwp:id="disp-formula-28">
+<alternatives hwp:id="alternatives-56"><graphic xlink:href="165613_eqnV16.gif" position="float" orientation="portrait" hwp:id="graphic-34"/></alternatives>
+</disp-formula><disp-formula id="eqnv17" hwp:id="disp-formula-29">
+<alternatives hwp:id="alternatives-57"><graphic xlink:href="165613_eqnV17.gif" position="float" orientation="portrait" hwp:id="graphic-35"/></alternatives>
+</disp-formula><p hwp:id="p-66">Initial values for <inline-formula hwp:id="inline-formula-29">
+<alternatives hwp:id="alternatives-58"><inline-graphic xlink:href="165613_inline28.gif" hwp:id="inline-graphic-29"/></alternatives>
+</inline-formula> and <inline-formula hwp:id="inline-formula-30">
+<alternatives hwp:id="alternatives-59"><inline-graphic xlink:href="165613_inline29.gif" hwp:id="inline-graphic-30"/></alternatives>
+</inline-formula> were 4 and 0, respectively, in all simulations. Weights for GABA-B <inline-formula hwp:id="inline-formula-31">
+<alternatives hwp:id="alternatives-60"><inline-graphic xlink:href="165613_inline30.gif" hwp:id="inline-graphic-31"/></alternatives>
+</inline-formula> and <inline-formula hwp:id="inline-formula-32">
+<alternatives hwp:id="alternatives-61"><inline-graphic xlink:href="165613_inline31.gif" hwp:id="inline-graphic-32"/></alternatives>
+</inline-formula> were determined from initial synaptic weights and fixed during all simulations.</p><p hwp:id="p-67">The firing rate of EC neurons <inline-formula hwp:id="inline-formula-33">
+<alternatives hwp:id="alternatives-62"><inline-graphic xlink:href="165613_inline32.gif" hwp:id="inline-graphic-33"/></alternatives>
+</inline-formula> were calculated as<disp-formula id="eqnv18" hwp:id="disp-formula-30">
+<alternatives hwp:id="alternatives-63"><graphic xlink:href="165613_eqnV18.gif" position="float" orientation="portrait" hwp:id="graphic-36"/></alternatives>
+</disp-formula>
+<disp-formula id="eqnv19" hwp:id="disp-formula-31">
+<alternatives hwp:id="alternatives-64"><graphic xlink:href="165613_eqnV19.gif" position="float" orientation="portrait" hwp:id="graphic-37"/></alternatives>
+</disp-formula>where <italic toggle="yes">ϕ</italic>
+<sub>input</sub>= 0.08 kHz. <inline-formula hwp:id="inline-formula-34">
+<alternatives hwp:id="alternatives-65"><inline-graphic xlink:href="165613_inline33.gif" hwp:id="inline-graphic-34"/></alternatives>
+</inline-formula> depends on simulation settings.</p><p hwp:id="p-68">The values of parameters for plasticity were <italic toggle="yes">α</italic> = 0.9, <italic toggle="yes">r</italic>
+<sub>0</sub> = 0.05, <italic toggle="yes">τ</italic>
+<sub>w</sub> = 1000 ms, <italic toggle="yes">σ</italic>
+<sub>w</sub> = 0.001, <italic toggle="yes">η</italic>
+<sub>decay</sub> = 10<sup>−7</sup>, <italic toggle="yes">θ</italic>
+<sup>inh</sup> = 0.5, <italic toggle="yes">η</italic>
+<sup>inh</sup> = 0.01<italic toggle="yes">η</italic> and <italic toggle="yes">τ</italic>
+<sub>mean</sub> = 60000 ms. Self-connections <inline-formula hwp:id="inline-formula-35">
+<alternatives hwp:id="alternatives-66"><inline-graphic xlink:href="165613_inline34.gif" hwp:id="inline-graphic-35"/></alternatives>
+</inline-formula> were fixed at zero. Simulation without dendritic inhibition was performed with <italic toggle="yes">η</italic>
+<sup>inh</sup> = 0.</p></sec><sec id="S6c" hwp:id="sec-21"><title hwp:id="title-30">Single-compartment recurrent neural network model</title><p hwp:id="p-69">In single-compartment recurrent neural networks, all somatic and dendritic inputs were connected to a single compartment (soma). Accordingly, the activity of neuron <italic toggle="yes">i</italic> was described as</p><disp-formula id="eqnv20" hwp:id="disp-formula-32">
+<alternatives hwp:id="alternatives-67"><graphic xlink:href="165613_eqnV20.gif" position="float" orientation="portrait" hwp:id="graphic-38"/></alternatives>
+</disp-formula><disp-formula id="eqnv21" hwp:id="disp-formula-33">
+<alternatives hwp:id="alternatives-68"><graphic xlink:href="165613_eqnV21.gif" position="float" orientation="portrait" hwp:id="graphic-39"/></alternatives>
+</disp-formula><p hwp:id="p-70">Variables in this model were calculated in the same way to those in the two-compartment model. We updated both somatic and dendritic excitatory weights <inline-formula hwp:id="inline-formula-36">
+<alternatives hwp:id="alternatives-69"><inline-graphic xlink:href="165613_inline34a.gif" hwp:id="inline-graphic-36"/></alternatives>
+</inline-formula> and <inline-formula hwp:id="inline-formula-37">
+<alternatives hwp:id="alternatives-70"><inline-graphic xlink:href="165613_inline35.gif" hwp:id="inline-graphic-37"/></alternatives>
+</inline-formula> by BCM theory with somatic activity. The values of parameters for the single-compartment model was basically the same as those of the two-compartment model, except <italic toggle="yes">ϕ</italic> = 0.09 kHz. Learning speed was set as <italic toggle="yes">η</italic> = 0.5 in <xref ref-type="fig" rid="fig3" hwp:id="xref-fig-3-11" hwp:rel-id="F3">Fig. 3D</xref>, though different values <italic toggle="yes">η</italic> = 0.1, 1.0 were also used in a quantitative assessment.</p></sec><sec id="S6d" hwp:id="sec-22"><title hwp:id="title-31">Details of the single-cell simulations (<xref ref-type="fig" rid="fig1" hwp:id="xref-fig-1-11" hwp:rel-id="F1">Figure 1</xref>)</title><p hwp:id="p-71">Four independent source signals <italic toggle="yes">s</italic>
+<sub>
+<italic toggle="yes">i</italic>
+</sub>(<italic toggle="yes">t</italic>)(<italic toggle="yes">i</italic> = 1,2,3,4) were generated from Ornstein-Uhlenbeck process<disp-formula id="eqnv22" hwp:id="disp-formula-34">
+<alternatives hwp:id="alternatives-71"><graphic xlink:href="165613_eqnV22.gif" position="float" orientation="portrait" hwp:id="graphic-40"/></alternatives>
+</disp-formula>where <italic toggle="yes">τ</italic>
+<sub>s</sub> = 10 ms, <italic toggle="yes">σ</italic>
+<sub>s</sub> = 0.1 and <italic toggle="yes">∈</italic>(<italic toggle="yes">t</italic>) is normal Gaussian noise. Input currents to somatic input neurons <inline-formula hwp:id="inline-formula-38">
+<alternatives hwp:id="alternatives-72"><inline-graphic xlink:href="165613_inline36.gif" hwp:id="inline-graphic-38"/></alternatives>
+</inline-formula> were determined as<disp-formula id="eqnv23" hwp:id="disp-formula-35">
+<alternatives hwp:id="alternatives-73"><graphic xlink:href="165613_eqnV23.gif" position="float" orientation="portrait" hwp:id="graphic-41"/></alternatives>
+</disp-formula>
+<disp-formula id="eqnv24" hwp:id="disp-formula-36">
+<alternatives hwp:id="alternatives-74"><graphic xlink:href="165613_eqnV24.gif" position="float" orientation="portrait" hwp:id="graphic-42"/></alternatives>
+</disp-formula>where <italic toggle="yes">σ</italic>
+<sub>n</sub>= 0.1. Input currents to dendritic input neurons <inline-formula hwp:id="inline-formula-39">
+<alternatives hwp:id="alternatives-75"><inline-graphic xlink:href="165613_inline37.gif" hwp:id="inline-graphic-39"/></alternatives>
+</inline-formula> were was determined as</p><disp-formula id="eqnv25" hwp:id="disp-formula-37">
+<alternatives hwp:id="alternatives-76"><graphic xlink:href="165613_eqnV25.gif" position="float" orientation="portrait" hwp:id="graphic-43"/></alternatives>
+</disp-formula><disp-formula id="eqnv26" hwp:id="disp-formula-38">
+<alternatives hwp:id="alternatives-77"><graphic xlink:href="165613_eqnV26.gif" position="float" orientation="portrait" hwp:id="graphic-44"/></alternatives>
+</disp-formula><p hwp:id="p-72">In the case of uncorrelated A and A’, <italic toggle="yes">s</italic>
+<sub>A</sub>′ (<italic toggle="yes">t</italic>) = <italic toggle="yes">s</italic>
+<sub>1</sub>(<italic toggle="yes">t</italic>) while in the case of correlated A and A’, <italic toggle="yes">s</italic>
+<sub>A</sub>′ (<italic toggle="yes">t</italic>) = <italic toggle="yes">s</italic>
+<sub>2</sub>(<italic toggle="yes">t</italic>). Output firing rates of input neurons <inline-formula hwp:id="inline-formula-40">
+<alternatives hwp:id="alternatives-78"><inline-graphic xlink:href="165613_inline38.gif" hwp:id="inline-graphic-40"/></alternatives>
+</inline-formula>, <inline-formula hwp:id="inline-formula-41">
+<alternatives hwp:id="alternatives-79"><inline-graphic xlink:href="165613_inline39.gif" hwp:id="inline-graphic-41"/></alternatives>
+</inline-formula> were calculated by the same sigmoidal function f(<italic toggle="yes">I</italic>) as that of the two-compartment neuron model:</p><disp-formula id="eqnv27" hwp:id="disp-formula-39">
+<alternatives hwp:id="alternatives-80"><graphic xlink:href="165613_eqnV27.gif" position="float" orientation="portrait" hwp:id="graphic-45"/></alternatives>
+</disp-formula><disp-formula id="eqnv28" hwp:id="disp-formula-40">
+<alternatives hwp:id="alternatives-81"><graphic xlink:href="165613_eqnV28.gif" position="float" orientation="portrait" hwp:id="graphic-46"/></alternatives>
+</disp-formula><p hwp:id="p-73">The values of parameters for the two-compartment neuron model were given as <italic toggle="yes">τ</italic>
+<sub>L</sub> = 10 ms, <italic toggle="yes">ϕ</italic> = 0.08 kHz, <italic toggle="yes">ϕ</italic>
+<sub>input</sub> = 0.08 kHz, <italic toggle="yes">θ</italic>
+<sub>f</sub> = 5, <italic toggle="yes">η</italic> = 0.2, <italic toggle="yes">γ</italic> = 1, <italic toggle="yes">β</italic> = 0, <italic toggle="yes">α</italic> = 0.5, <italic toggle="yes">r</italic>
+<sub>0</sub> = 0.05, <italic toggle="yes">τ</italic>
+<sub>w</sub> = 1000 ms, <italic toggle="yes">σ</italic>
+<sub>w</sub> = 0.005, <italic toggle="yes">η</italic>
+<sub>decay</sub> = 10<sup>−7</sup>, and <italic toggle="yes">τ</italic>
+<sub>mean</sub> = 60000 ms. Simulations of the single-compartment neuron were performed for <italic toggle="yes">α</italic> = <italic toggle="yes">γ</italic> = 0 without changing the values of the other parameters. Initial weights were uniformly sampled from [0, 5].</p></sec><sec id="S6e" hwp:id="sec-23"><title hwp:id="title-32">Details of simulations of inhibitory feedback model (<xref ref-type="fig" rid="fig2" hwp:id="xref-fig-2-12" hwp:rel-id="F2">Figure 2</xref>)</title><p hwp:id="p-74">We calculated source signals <italic toggle="yes">s</italic>
+<sub>
+<italic toggle="yes">i</italic>
+</sub>(<italic toggle="yes">t</italic>) in the same way with previous section. In the two-cell simulation for separation, we prepared two source signals. We calculated <inline-formula hwp:id="inline-formula-42">
+<alternatives hwp:id="alternatives-82"><inline-graphic xlink:href="165613_inline40.gif" hwp:id="inline-graphic-42"/></alternatives>
+</inline-formula> and <inline-formula hwp:id="inline-formula-43">
+<alternatives hwp:id="alternatives-83"><inline-graphic xlink:href="165613_inline41.gif" hwp:id="inline-graphic-43"/></alternatives>
+</inline-formula> by</p><disp-formula id="eqnv29" hwp:id="disp-formula-41">
+<alternatives hwp:id="alternatives-84"><graphic xlink:href="165613_eqnV29.gif" position="float" orientation="portrait" hwp:id="graphic-47"/></alternatives>
+</disp-formula><disp-formula id="eqnv30" hwp:id="disp-formula-42">
+<alternatives hwp:id="alternatives-85"><graphic xlink:href="165613_eqnV30.gif" position="float" orientation="portrait" hwp:id="graphic-48"/></alternatives>
+</disp-formula><disp-formula id="eqnv31" hwp:id="disp-formula-43">
+<alternatives hwp:id="alternatives-86"><graphic xlink:href="165613_eqnV31.gif" position="float" orientation="portrait" hwp:id="graphic-49"/></alternatives>
+</disp-formula><p hwp:id="p-75">In the single-cell simulation for stabilization, we prepared 21 source signals. Throughout the simulation, we calculated <inline-formula hwp:id="inline-formula-44">
+<alternatives hwp:id="alternatives-87"><inline-graphic xlink:href="165613_inline42.gif" hwp:id="inline-graphic-44"/></alternatives>
+</inline-formula> and <inline-formula hwp:id="inline-formula-45">
+<alternatives hwp:id="alternatives-88"><inline-graphic xlink:href="165613_inline43.gif" hwp:id="inline-graphic-45"/></alternatives>
+</inline-formula> by<disp-formula id="eqnv32" hwp:id="disp-formula-44">
+<alternatives hwp:id="alternatives-89"><graphic xlink:href="165613_eqnV32.gif" position="float" orientation="portrait" hwp:id="graphic-50"/></alternatives>
+</disp-formula>
+<disp-formula id="eqnv33" hwp:id="disp-formula-45">
+<alternatives hwp:id="alternatives-90"><graphic xlink:href="165613_eqnV33.gif" position="float" orientation="portrait" hwp:id="graphic-51"/></alternatives>
+</disp-formula>from 0 s to 300 s,<disp-formula id="eqnv34" hwp:id="disp-formula-46">
+<alternatives hwp:id="alternatives-91"><graphic xlink:href="165613_eqnV34.gif" position="float" orientation="portrait" hwp:id="graphic-52"/></alternatives>
+</disp-formula>
+<disp-formula id="eqnv35" hwp:id="disp-formula-47">
+<alternatives hwp:id="alternatives-92"><graphic xlink:href="165613_eqnV35.gif" position="float" orientation="portrait" hwp:id="graphic-53"/></alternatives>
+</disp-formula>from 300 s to 600 s, and<disp-formula id="eqnv36" hwp:id="disp-formula-48">
+<alternatives hwp:id="alternatives-93"><graphic xlink:href="165613_eqnV36.gif" position="float" orientation="portrait" hwp:id="graphic-54"/></alternatives>
+</disp-formula>
+<disp-formula id="eqnv37" hwp:id="disp-formula-49">
+<alternatives hwp:id="alternatives-94"><graphic xlink:href="165613_eqnV37.gif" position="float" orientation="portrait" hwp:id="graphic-55"/></alternatives>
+</disp-formula>from 600 s to 1200 s. We determined output firing rates of input neurons <inline-formula hwp:id="inline-formula-46">
+<alternatives hwp:id="alternatives-95"><inline-graphic xlink:href="165613_inline44.gif" hwp:id="inline-graphic-46"/></alternatives>
+</inline-formula>, <inline-formula hwp:id="inline-formula-47">
+<alternatives hwp:id="alternatives-96"><inline-graphic xlink:href="165613_inline45.gif" hwp:id="inline-graphic-47"/></alternatives>
+</inline-formula> by Eq. (27) (28).</p><p hwp:id="p-76">The values of parameters for the two-compartment neuron model were given as <italic toggle="yes">τ</italic>
+<sub>L</sub> = 10 ms, <italic toggle="yes">ϕ</italic> = 0.08 kHz, <italic toggle="yes">ϕ</italic>
+<sub>input</sub> = 0.08 kHz, <italic toggle="yes">θ</italic>
+<sub>f</sub> = 5, <italic toggle="yes">η</italic> = 0.2, <italic toggle="yes">γ</italic> = 1, <italic toggle="yes">β</italic> = 2.5, <italic toggle="yes">α</italic> = 0.9, <italic toggle="yes">r</italic>
+<sub>0</sub> = 0.05, <italic toggle="yes">τ</italic>
+<sub>w</sub> = 1000 ms, <italic toggle="yes">σ</italic>
+<sub>w</sub> = 0.001, <italic toggle="yes">η</italic>
+<sub>decay</sub> = 10<sup>−7</sup>, <italic toggle="yes">θ</italic>
+<sup>inh</sup> = 0.5, <italic toggle="yes">η</italic>
+<sup>inh</sup> = 0.2 and <italic toggle="yes">τ</italic>
+<sub>mean</sub> = 60000 ms. Initial excitatory weights were uniformly sampled from [0, 5] and initial dendritic inhibitory weights <inline-formula hwp:id="inline-formula-48">
+<alternatives hwp:id="alternatives-97"><inline-graphic xlink:href="165613_inline46.gif" hwp:id="inline-graphic-48"/></alternatives>
+</inline-formula> were zero. Somatic inhibitory weights <inline-formula hwp:id="inline-formula-49">
+<alternatives hwp:id="alternatives-98"><inline-graphic xlink:href="165613_inline47.gif" hwp:id="inline-graphic-49"/></alternatives>
+</inline-formula> were fixed to 20. Simulation without dendritic inhibition was performed with <italic toggle="yes">η</italic>
+<sup>inh</sup> = 0.</p></sec><sec id="S6f" hwp:id="sec-24"><title hwp:id="title-33">Simulation settings for the one-dimensional track (<xref ref-type="fig" rid="fig3" hwp:id="xref-fig-3-12" hwp:rel-id="F3">Figure 3</xref>)</title><p hwp:id="p-77">We used 300 CA3 neurons and 500 EC neurons. Initial recurrent synaptic weights from neuron <italic toggle="yes">j</italic> to neuron <italic toggle="yes">i</italic> (<italic toggle="yes">i</italic> ≠ <italic toggle="yes">j</italic>) in CA3 were given as<disp-formula id="eqnv38" hwp:id="disp-formula-50">
+<alternatives hwp:id="alternatives-99"><graphic xlink:href="165613_eqnV38.gif" position="float" orientation="portrait" hwp:id="graphic-56"/></alternatives>
+</disp-formula>where <italic toggle="yes">w</italic>
+<sub>max</sub> = 18, <italic toggle="yes">w</italic>
+<sub>width</sub> = 5 and <italic toggle="yes">σ</italic>
+<sub>init</sub> = 0.05. Here we included random fluctuation of weights sampled from normal Gaussian distribution <italic toggle="yes">∈</italic>(<italic toggle="yes">t</italic>), and negative weights were set to zero. Self-connections <inline-formula hwp:id="inline-formula-50">
+<alternatives hwp:id="alternatives-100"><inline-graphic xlink:href="165613_inline48.gif" hwp:id="inline-graphic-50"/></alternatives>
+</inline-formula> were always zero. In qualitative assessment, we multiplied 0, 0.5, 0.75, or 1.25 to <italic toggle="yes">w</italic>
+<sub>max</sub> in each simulation.</p><p hwp:id="p-78">Initial synaptic weights from EC <inline-formula hwp:id="inline-formula-51">
+<alternatives hwp:id="alternatives-101"><inline-graphic xlink:href="165613_inline49.gif" hwp:id="inline-graphic-51"/></alternatives>
+</inline-formula> were firstly determined as</p><disp-formula id="eqnv39" hwp:id="disp-formula-51">
+<alternatives hwp:id="alternatives-102"><graphic xlink:href="165613_eqnV39.gif" position="float" orientation="portrait" hwp:id="graphic-57"/></alternatives>
+</disp-formula><p hwp:id="p-79">We used this setting to simulate the “familiar track”. In the simulation of “unfamiliar track”, we randomly shuffled values of these weights in each postsynaptic neuron <italic toggle="yes">i</italic>. Namely, shuffling was performed for index <italic toggle="yes">j</italic>.</p><p hwp:id="p-80">A function satisfying 0 ≤ <italic toggle="yes">pos</italic>(<italic toggle="yes">t</italic>) ≤ 1 designated the animal’s position on the one-dimensional track. The animal stopped at <italic toggle="yes">pos</italic>(<italic toggle="yes">t</italic>) = 0 from 0 s to 5 s. From 10s to 25 s, the position in first run is expressed as</p><disp-formula id="eqnv40" hwp:id="disp-formula-52">
+<alternatives hwp:id="alternatives-103"><graphic xlink:href="165613_eqnV40.gif" position="float" orientation="portrait" hwp:id="graphic-58"/></alternatives>
+</disp-formula><p hwp:id="p-81">From 25s to 40 s, the position in second run is expressed as</p><disp-formula id="eqnv41" hwp:id="disp-formula-53">
+<alternatives hwp:id="alternatives-104"><graphic xlink:href="165613_eqnV41.gif" position="float" orientation="portrait" hwp:id="graphic-59"/></alternatives>
+</disp-formula><p hwp:id="p-82">From 40s to 50 s, the position in third run is expressed as</p><disp-formula id="eqnv42" hwp:id="disp-formula-54">
+<alternatives hwp:id="alternatives-105"><graphic xlink:href="165613_eqnV42.gif" position="float" orientation="portrait" hwp:id="graphic-60"/></alternatives>
+</disp-formula><p hwp:id="p-83">External inputs to somatic compartments <inline-formula hwp:id="inline-formula-52">
+<alternatives hwp:id="alternatives-106"><inline-graphic xlink:href="165613_inline50.gif" hwp:id="inline-graphic-52"/></alternatives>
+</inline-formula> were</p><disp-formula id="eqnv43" hwp:id="disp-formula-55">
+<alternatives hwp:id="alternatives-107"><graphic xlink:href="165613_eqnV43.gif" position="float" orientation="portrait" hwp:id="graphic-61"/></alternatives>
+</disp-formula><p hwp:id="p-84">
+<italic toggle="yes">I</italic>
+<sup>DG</sup>(<italic toggle="yes">t</italic>) is input from dentate gyrus (DG), which takes 0.5 when DG is active and 0 otherwise. When the animal was running in the portion <italic toggle="yes">pos</italic>(<italic toggle="yes">t</italic>) &lt; 0.05, DG was continuously activated. When the animal was stopping in <italic toggle="yes">pos</italic>(<italic toggle="yes">t</italic>) &lt; 0.05, the activation of DG follows a Poisson process at 1 Hz, and the duration of each activation was 10ms.</p><p hwp:id="p-85">
+<italic toggle="yes">I</italic>
+<sup>theta</sup>(<italic toggle="yes">t</italic>) stands for theta oscillatory input from medial septum<disp-formula id="eqnv44" hwp:id="disp-formula-56">
+<alternatives hwp:id="alternatives-108"><graphic xlink:href="165613_eqnV44.gif" position="float" orientation="portrait" hwp:id="graphic-62"/></alternatives>
+</disp-formula>during run and <italic toggle="yes">I</italic>
+<sup>theta</sup>(<italic toggle="yes">t</italic>) = 0 during immobility.</p><p hwp:id="p-86">Inputs to EC neurons <inline-formula hwp:id="inline-formula-53">
+<alternatives hwp:id="alternatives-109"><inline-graphic xlink:href="165613_inline51.gif" hwp:id="inline-graphic-53"/></alternatives>
+</inline-formula> were given as<disp-formula id="eqnv45" hwp:id="disp-formula-57">
+<alternatives hwp:id="alternatives-110"><graphic xlink:href="165613_eqnV45.gif" position="float" orientation="portrait" hwp:id="graphic-63"/></alternatives>
+</disp-formula>during immobility. During run, Inputs to position-dependent EC neurons <inline-formula hwp:id="inline-formula-54">
+<alternatives hwp:id="alternatives-111"><inline-graphic xlink:href="165613_inline52.gif" hwp:id="inline-graphic-54"/></alternatives>
+</inline-formula> were given as<disp-formula id="eqnv46" hwp:id="disp-formula-58">
+<alternatives hwp:id="alternatives-112"><graphic xlink:href="165613_eqnV46.gif" position="float" orientation="portrait" hwp:id="graphic-64"/></alternatives>
+</disp-formula>where <italic toggle="yes">∈</italic>(<italic toggle="yes">t</italic>) is normal Gaussian noise and <inline-formula hwp:id="inline-formula-55">
+<alternatives hwp:id="alternatives-113"><inline-graphic xlink:href="165613_inline53.gif" hwp:id="inline-graphic-55"/></alternatives>
+</inline-formula>. inputs to distractor EC neurons (301≤<italic toggle="yes">i</italic>≤500) during run were given as</p><disp-formula id="eqnv47" hwp:id="disp-formula-59">
+<alternatives hwp:id="alternatives-114"><graphic xlink:href="165613_eqnV47.gif" position="float" orientation="portrait" hwp:id="graphic-65"/></alternatives>
+</disp-formula><p hwp:id="p-87">Sources for spontaneous activity <inline-formula hwp:id="inline-formula-56">
+<alternatives hwp:id="alternatives-115"><inline-graphic xlink:href="165613_inline54.gif" hwp:id="inline-graphic-56"/></alternatives>
+</inline-formula> and distractors <inline-formula hwp:id="inline-formula-57">
+<alternatives hwp:id="alternatives-116"><inline-graphic xlink:href="165613_inline55.gif" hwp:id="inline-graphic-57"/></alternatives>
+</inline-formula> were generated from independent Ornstein-Uhlenbeck processes</p><disp-formula id="eqnv48" hwp:id="disp-formula-60">
+<alternatives hwp:id="alternatives-117"><graphic xlink:href="165613_eqnV48.gif" position="float" orientation="portrait" hwp:id="graphic-66"/></alternatives>
+</disp-formula><disp-formula id="eqnv49" hwp:id="disp-formula-61">
+<alternatives hwp:id="alternatives-118"><graphic xlink:href="165613_eqnV49.gif" position="float" orientation="portrait" hwp:id="graphic-67"/></alternatives>
+</disp-formula><p hwp:id="p-88">Parameters were <italic toggle="yes">A</italic>
+<sub>theta</sub>=1, <inline-formula hwp:id="inline-formula-58">
+<alternatives hwp:id="alternatives-119"><inline-graphic xlink:href="165613_inline56.gif" hwp:id="inline-graphic-58"/></alternatives>
+</inline-formula>, <italic toggle="yes">σ</italic>
+<sub>n</sub>=0.1 <italic toggle="yes">A</italic>
+<sub>F</sub>=0.5, <italic toggle="yes">σ</italic>
+<sub>F</sub>=0.1, σ<sub>spont</sub>=0.05, <italic toggle="yes">τ</italic>
+<sub>spont</sub>=10 ms, <italic toggle="yes">σ</italic>
+<sub>dist</sub>=0.02, and τ<sub>dist</sub>=500 ms.</p></sec><sec id="S6g" hwp:id="sec-25"><title hwp:id="title-34">Simulation settings for spontaneous replay (<xref ref-type="fig" rid="fig4" hwp:id="xref-fig-4-7" hwp:rel-id="F4">Figure 4</xref>)</title><p hwp:id="p-89">Initial setting was the same as in <xref ref-type="fig" rid="fig3" hwp:id="xref-fig-3-13" hwp:rel-id="F3">Fig. 3</xref>. In <xref ref-type="fig" rid="fig4" hwp:id="xref-fig-4-8" hwp:rel-id="F4">Fig. 4</xref>, run was finished after the first run on the one-dimensional track, and spontaneous activity was simulated for the next 600 s. After that, simulation of the “third run” in <xref ref-type="fig" rid="fig3" hwp:id="xref-fig-3-14" hwp:rel-id="F3">Fig. 3</xref> was conducted. During spontaneous activity, simulation setting was basically the same as that of immobility periods in <xref ref-type="fig" rid="fig3" hwp:id="xref-fig-3-15" hwp:rel-id="F3">Fig. 3</xref>. However, we added population bursts in EC, which were simulated by transiently changing σ<sub>spont</sub> from 0.05 to 0.1. The occurrence of population bursts followed a Poisson process at 1 Hz, and each burst lasted for 200 ms. For the results shown in <xref ref-type="fig" rid="fig4" hwp:id="xref-fig-4-9" hwp:rel-id="F4">Fig. 4D</xref>, all weights of the dendritic inhibition and <italic toggle="yes">η</italic>
+<sup>inh</sup> was set to zero when 60 s elapsed after the beginning of spontaneous activity, and simulation of the “third run” in <xref ref-type="fig" rid="fig3" hwp:id="xref-fig-3-16" hwp:rel-id="F3">Fig. 3</xref> was conducted afer that.</p></sec><sec id="S6h" hwp:id="sec-26"><title hwp:id="title-35">Simulation settings for the Y-shape track (<xref ref-type="fig" rid="fig5" hwp:id="xref-fig-5-11" hwp:rel-id="F5">Figure 5</xref>)</title><p hwp:id="p-90">We used 450 CA3 neurons. We divided these neurons into three groups, 1 ≤ <italic toggle="yes">i</italic> ≤ 150,151 ≤ <italic toggle="yes">i</italic> ≤ 300, 301 ≤ <italic toggle="yes">i</italic> ≤ 450, and recurrent synaptic weights within each group were determined in the same way as in the one-dimensional track, using <italic toggle="yes">w</italic>
+<sub>max</sub> = 18, <italic toggle="yes">w</italic>
+<sub>width</sub> = 5 and <italic toggle="yes">σ</italic>
+<sub>init</sub> = 0. Recurrent synaptic weights across groups were initially zero. Initial synaptic weights from EC <inline-formula hwp:id="inline-formula-59">
+<alternatives hwp:id="alternatives-120"><inline-graphic xlink:href="165613_inline57.gif" hwp:id="inline-graphic-59"/></alternatives>
+</inline-formula> were uniformly sampled from the interval [0, 2].</p><p hwp:id="p-91">The current position of the animal on the Y-shape track was specified by the arm number (<italic toggle="yes">arm</italic>(<italic toggle="yes">t</italic>) = 1,2,3) and the position on the current arm, 0 ≤ <italic toggle="yes">pos</italic>(<italic toggle="yes">t</italic>) ≤ 0.5. During the first 10 s, the animal stopped at the center of the Y-shape arm. After that, the animal repeated the following movement on different arms every 10 s:</p><disp-formula id="eqnv50" hwp:id="disp-formula-62">
+<alternatives hwp:id="alternatives-121"><graphic xlink:href="165613_eqnV50.gif" position="float" orientation="portrait" hwp:id="graphic-68"/></alternatives>
+</disp-formula><p hwp:id="p-92">External inputs to the somatic compartments <inline-formula hwp:id="inline-formula-60">
+<alternatives hwp:id="alternatives-122"><inline-graphic xlink:href="165613_inline58.gif" hwp:id="inline-graphic-60"/></alternatives>
+</inline-formula> were basically the same as the ones used for the one-dimensional track except that DG inputs with strength 1 were induced to 10 neurons per group, 1 ≤ <italic toggle="yes">i</italic> ≤ 10, 151 ≤ <italic toggle="yes">i</italic> ≤ 160, 301 ≤ <italic toggle="yes">i</italic> ≤ 310 in the region 0 ≤ <italic toggle="yes">pos</italic>(<italic toggle="yes">t</italic>) ≤ 0.05 on all arms.</p><p hwp:id="p-93">We used 450 position-dependent EC neurons, and inputs to these EC neurons <inline-formula hwp:id="inline-formula-61">
+<alternatives hwp:id="alternatives-123"><inline-graphic xlink:href="165613_inline59.gif" hwp:id="inline-graphic-61"/></alternatives>
+</inline-formula> during immobility were the same as those in the one-dimensional track, whereas the inputs during the run depended on animal’s position as<disp-formula id="eqnv51" hwp:id="disp-formula-63">
+<alternatives hwp:id="alternatives-124"><graphic xlink:href="165613_eqnV51.gif" position="float" orientation="portrait" hwp:id="graphic-69"/></alternatives>
+</disp-formula>
+<disp-formula id="eqnv52" hwp:id="disp-formula-64">
+<alternatives hwp:id="alternatives-125"><graphic xlink:href="165613_eqnV52.gif" position="float" orientation="portrait" hwp:id="graphic-70"/></alternatives>
+</disp-formula>where the receptive field center <italic toggle="yes">center</italic>(<italic toggle="yes">i</italic>) of neuron <italic toggle="yes">i</italic> was uniformly sampled from [0, 0.5] and 150 neurons were assigned to each arm: <italic toggle="yes">center</italic>_<italic toggle="yes">arm</italic>(<italic toggle="yes">i</italic>) = 1, 2 and 3 for 1 ≤ <italic toggle="yes">i</italic> ≤ 150, 151 ≤ <italic toggle="yes">i</italic> ≤ 300, and 301 ≤ <italic toggle="yes">i</italic> ≤ 450, respectively.</p></sec><sec id="S6i" hwp:id="sec-27"><title hwp:id="title-36">Simulation settings for branching firing sequences (<xref ref-type="fig" rid="fig6" hwp:id="xref-fig-6-11" hwp:rel-id="F6">Figure 6</xref>)</title><p hwp:id="p-94">We used 400 CA3 neurons and 300 EC neurons. We divided neurons into three groups, 1 ≤ <italic toggle="yes">i</italic> ≤ 100 (root), 101 ≤ <italic toggle="yes">i</italic> ≤ 250 (branch A), 251 ≤ <italic toggle="yes">i</italic> ≤ 400 (branch B), and recurrent synaptic weights within each group were determined in the same way with the one-dimensional track, using <italic toggle="yes">w</italic>
+<sub>max</sub> = 20, <italic toggle="yes">w</italic>
+<sub>width</sub> = 5 and <italic toggle="yes">σ</italic>
+<sub>init</sub> = 0. Weights were set to zero between branch A and branch B, and<disp-formula id="eqnv53" hwp:id="disp-formula-65">
+<alternatives hwp:id="alternatives-126"><graphic xlink:href="165613_eqnV53.gif" position="float" orientation="portrait" hwp:id="graphic-71"/></alternatives>
+</disp-formula>
+<disp-formula id="eqnv54" hwp:id="disp-formula-66">
+<alternatives hwp:id="alternatives-127"><graphic xlink:href="165613_eqnV54.gif" position="float" orientation="portrait" hwp:id="graphic-72"/></alternatives>
+</disp-formula>for other weights. The value of <inline-formula hwp:id="inline-formula-62">
+<alternatives hwp:id="alternatives-128"><inline-graphic xlink:href="165613_inline60.gif" hwp:id="inline-graphic-62"/></alternatives>
+</inline-formula> was 18. Initial synaptic weights from EC <inline-formula hwp:id="inline-formula-63">
+<alternatives hwp:id="alternatives-129"><inline-graphic xlink:href="165613_inline61.gif" hwp:id="inline-graphic-63"/></alternatives>
+</inline-formula> (were uniformly sampled from the interval [0, 2].</p><p hwp:id="p-95">The animal was immobile from 0 s to 60 s, and from 75 s to 135 s. In these periods, the number of firing sequences in each branch was counted to compare the propagation of firing sequences before and after an experience. During 60 s – 75 s (first experience) and 135 s – 150 s (second experience), <italic toggle="yes">pos</italic>(<italic toggle="yes">t</italic>) was changed in a same way with “first run” on the one-dimensional track (<xref ref-type="fig" rid="fig3" hwp:id="xref-fig-3-17" hwp:rel-id="F3">Fig. 3</xref>). <italic toggle="yes">center</italic>(<italic toggle="yes">i</italic>) for each neuron <italic toggle="yes">i</italic> was uniformly sampled from [0, 1] for the first experience, and resampled in a similar way for the second experience. Other simulation settings were basically the same as in simulations of the one-dimensional track.</p></sec><sec id="S6j" hwp:id="sec-28"><title hwp:id="title-37">Information per spike</title><p hwp:id="p-96">We evaluated the accuracy of place fields by using information per spike given as follows:<disp-formula id="eqnv55" hwp:id="disp-formula-67">
+<alternatives hwp:id="alternatives-130"><graphic xlink:href="165613_eqnV55.gif" position="float" orientation="portrait" hwp:id="graphic-73"/></alternatives>
+</disp-formula>where <italic toggle="yes">pos</italic>
+<sub>
+<italic toggle="yes">i</italic>
+</sub> is the binned position of the animal (<italic toggle="yes">i</italic> = 1, …, <italic toggle="yes">N</italic>
+<sub>bin</sub>), <italic toggle="yes">p</italic>(<italic toggle="yes">pos</italic>
+<sub>
+<italic toggle="yes">i</italic>
+</sub>) is the probability that the animal is found at given position <italic toggle="yes">i</italic>, <italic toggle="yes">λ</italic> is the mean firing rate of the cell, <italic toggle="yes">λ</italic>(<italic toggle="yes">pos</italic>
+<sub>
+<italic toggle="yes">i</italic>
+</sub>) is the mean firing rate when the animal is in <italic toggle="yes">pos</italic>
+<sub>
+<italic toggle="yes">i</italic>
+</sub>. After removing immobile periods, we computed information per spike for all CA3 neurons having the mean firing rate higher than 1 Hz and averaged this quantity over these neurons. The number of bins <italic toggle="yes">N</italic>
+<sub>bin</sub> was 50 in <xref ref-type="fig" rid="fig3" hwp:id="xref-fig-3-18" hwp:rel-id="F3">Figure 3</xref> and 75 (25 for one arm) in <xref ref-type="fig" rid="fig5" hwp:id="xref-fig-5-12" hwp:rel-id="F5">Figure 5</xref>.</p></sec><sec id="S6k" hwp:id="sec-29"><title hwp:id="title-38">Homeostasis in BCM theory</title><p hwp:id="p-97">BCM theory used in this study is slightly different from the conventional one. Therefore, we analyze the homeostasis of our BCM theory:<disp-formula id="eqnv56" hwp:id="disp-formula-68">
+<alternatives hwp:id="alternatives-131"><graphic xlink:href="165613_eqnV56.gif" position="float" orientation="portrait" hwp:id="graphic-74"/></alternatives>
+</disp-formula>
+<disp-formula id="eqnv57" hwp:id="disp-formula-69">
+<alternatives hwp:id="alternatives-132"><graphic xlink:href="165613_eqnV57.gif" position="float" orientation="portrait" hwp:id="graphic-75"/></alternatives>
+</disp-formula>where <italic toggle="yes">x</italic> is postsynaptic activity and <italic toggle="yes">u</italic> is presynaptic input.</p><p hwp:id="p-98">As shown in Results, this learning rule is given as a gradient ascent of the objective function:</p><disp-formula id="eqnv58" hwp:id="disp-formula-70">
+<alternatives hwp:id="alternatives-133"><graphic xlink:href="165613_eqnV58.gif" position="float" orientation="portrait" hwp:id="graphic-76"/></alternatives>
+</disp-formula><p hwp:id="p-99">Because 0 ≤ <italic toggle="yes">x</italic> ≤ 1 in this paper (<italic toggle="yes">x</italic> is given by a sigmoidal function), we use an approximation E[<italic toggle="yes">x</italic>
+<xref ref-type="bibr" rid="c2" hwp:id="xref-ref-2-7" hwp:rel-id="ref-2">
+<sup>2</sup>
+</xref>] ≈ E[<italic toggle="yes">x</italic>] in the above equation. With this approximation, the objective function becomes<disp-formula id="eqnv59" hwp:id="disp-formula-71">
+<alternatives hwp:id="alternatives-134"><graphic xlink:href="165613_eqnV59.gif" position="float" orientation="portrait" hwp:id="graphic-77"/></alternatives>
+</disp-formula>defining <italic toggle="yes">E</italic> = E[<italic toggle="yes">x</italic>]. The fixed point of this objective function is derived as</p><disp-formula id="eqnv60" hwp:id="disp-formula-72">
+<alternatives hwp:id="alternatives-135"><graphic xlink:href="165613_eqnV60.gif" position="float" orientation="portrait" hwp:id="graphic-78"/></alternatives>
+</disp-formula><p hwp:id="p-100">Therefore, we should set <inline-formula hwp:id="inline-formula-64">
+<alternatives hwp:id="alternatives-136"><inline-graphic xlink:href="165613_inline62.gif" hwp:id="inline-graphic-64"/></alternatives>
+</inline-formula> to make the mean firing rate converge to <italic toggle="yes">r</italic>
+<sub>0</sub>.</p><p hwp:id="p-101">If we include the CCA term, the objective function is</p><disp-formula id="eqnv61" hwp:id="disp-formula-73">
+<alternatives hwp:id="alternatives-137"><graphic xlink:href="165613_eqnV61.gif" position="float" orientation="portrait" hwp:id="graphic-79"/></alternatives>
+</disp-formula><p hwp:id="p-102">If <italic toggle="yes">x</italic> and <italic toggle="yes">y</italic> are independent, E[<italic toggle="yes">xy</italic>] = <italic toggle="yes">E</italic>[<italic toggle="yes">x</italic>]<italic toggle="yes">E</italic>[<italic toggle="yes">y</italic>] holds. Assuming a similar learning rule for <italic toggle="yes">y</italic>, we can approximate this term with <italic toggle="yes">E</italic>[<italic toggle="yes">x</italic>]<xref ref-type="bibr" rid="c2" hwp:id="xref-ref-2-8" hwp:rel-id="ref-2">
+<sup>2</sup>
+</xref>, and in this case the objective function becomes</p><disp-formula id="eqnv62" hwp:id="disp-formula-74">
+<alternatives hwp:id="alternatives-138"><graphic xlink:href="165613_eqnV62.gif" position="float" orientation="portrait" hwp:id="graphic-80"/></alternatives>
+</disp-formula><p hwp:id="p-103">By solving<disp-formula id="eqnv63" hwp:id="disp-formula-75">
+<alternatives hwp:id="alternatives-139"><graphic xlink:href="165613_eqnV63.gif" position="float" orientation="portrait" hwp:id="graphic-81"/></alternatives>
+</disp-formula>we obtain</p><disp-formula id="eqnv64" hwp:id="disp-formula-76">
+<alternatives hwp:id="alternatives-140"><graphic xlink:href="165613_eqnV64.gif" position="float" orientation="portrait" hwp:id="graphic-82"/></alternatives>
+</disp-formula><p hwp:id="p-104">The value of <italic toggle="yes">E</italic> is always larger than <italic toggle="yes">r</italic>
+<sub>0</sub>, but the difference is moderate if <italic toggle="yes">r</italic>
+<sub>0</sub> ≪ 1. For instance, when <italic toggle="yes">r</italic>
+<sub>0</sub> =0.05 and <italic toggle="yes">α</italic> = 0.9 (these values were used in this study unless otherwise stated), this value is about 0.11.</p><p hwp:id="p-105">If <italic toggle="yes">x</italic> and <italic toggle="yes">y</italic> are perfectly correlated and <italic toggle="yes">x</italic> ≈ <italic toggle="yes">y</italic>, we can use an approximation, E[<italic toggle="yes">xy</italic>] ≈ <italic toggle="yes">E</italic>[<italic toggle="yes">x</italic>
+<sup>2</sup>]. Then, the analysis is similar to the previous case without the CCA term if we change the coefficient of E[<italic toggle="yes">x</italic>
+<sup>2</sup>] in <italic toggle="yes">J</italic>
+<sub>BCM</sub> from <inline-formula hwp:id="inline-formula-65">
+<alternatives hwp:id="alternatives-141"><inline-graphic xlink:href="165613_inline63.gif" hwp:id="inline-graphic-65"/></alternatives>
+</inline-formula> to <inline-formula hwp:id="inline-formula-66">
+<alternatives hwp:id="alternatives-142"><inline-graphic xlink:href="165613_inline64.gif" hwp:id="inline-graphic-66"/></alternatives>
+</inline-formula>. Then, the approximate fixed point changes to <inline-formula hwp:id="inline-formula-67">
+<alternatives hwp:id="alternatives-143"><inline-graphic xlink:href="165613_inline65.gif" hwp:id="inline-graphic-67"/></alternatives>
+</inline-formula>. As <inline-formula hwp:id="inline-formula-68">
+<alternatives hwp:id="alternatives-144"><inline-graphic xlink:href="165613_inline66.gif" hwp:id="inline-graphic-68"/></alternatives>
+</inline-formula> for <italic toggle="yes">α</italic> = 0.9, the equation <italic toggle="yes">E</italic>[<italic toggle="yes">x</italic>] ≈ 4.4<italic toggle="yes">r</italic>
+<sub>0</sub> has a solution only when 4.4<italic toggle="yes">r</italic>
+<sub>0</sub> &lt; 1.</p><p hwp:id="p-106">Because the above derivation holds only approximately, the convergence to a stable solution is not really ensured. However, the homeostasis was preserved in the present simulations, and the mean firing rate always converged to a value slightly higher than the theoretical estimation. Note that plasticity of inhibitory synapses is not taken into account in this analysis, and inhibitory plasticity sometimes caused instability for some parameter values.</p></sec><sec id="S6l" hwp:id="sec-30"><title hwp:id="title-39">Code availability</title><p hwp:id="p-107">All codes for simulations and visualization were written in Python 3 and available at <ext-link l:rel="related" l:ref-type="uri" l:ref="https://github.com/TatsuyaHaga/preplaymodel_codes" ext-link-type="uri" xlink:href="https://github.com/TatsuyaHaga/preplaymodel_codes" hwp:id="ext-link-2">https://github.com/TatsuyaHaga/preplaymodel_codes</ext-link>.</p></sec></sec></back></article>

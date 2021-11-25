@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.2d1 20170631//EN" "JATS-archivearticle1.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" article-type="article" dtd-version="1.2d1" specific-use="production" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="publisher-id">MEDRXIV</journal-id>
+<journal-title-group>
+<journal-title>medRxiv</journal-title>
+<abbrev-journal-title abbrev-type="publisher">medRxiv</abbrev-journal-title>
+</journal-title-group>
+<publisher>
+<publisher-name>Cold Spring Harbor Laboratory</publisher-name>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1101/2021.02.02.21250980</article-id>
+<article-version>1.1</article-version>
+<article-categories>
+<subj-group subj-group-type="hwp-journal-coll">
+<subject>Respiratory Medicine</subject>
+</subj-group>
+</article-categories>
+<title-group>
+<article-title>Performance of a Computational Phenotyping Algorithm for Sarcoidosis Using Diagnostic Codes in Electronic Medical Records: A Pilot Study from Two Veterans Affairs Medical Centers</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" corresp="yes">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-7446-7346</contrib-id>
+<name><surname>Seedahmed</surname><given-names>Mohamed I</given-names></name>
+<degrees>MD, MPH</degrees>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a2">2</xref>
+<xref ref-type="author-notes" rid="n1">&#x002A;</xref>
+<xref ref-type="corresp" rid="cor1">&#x2020;</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-5735-8375</contrib-id>
+<name><surname>Mogilnicka</surname><given-names>Izabella</given-names></name>
+<degrees>MD</degrees>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a5">5</xref>
+<xref ref-type="author-notes" rid="n1">&#x002A;</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0001-9346-301X</contrib-id>
+<name><surname>Zeng</surname><given-names>Siyang</given-names></name>
+<degrees>MS</degrees>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a4">4</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0001-7217-4008</contrib-id>
+<name><surname>Luo</surname><given-names>Gang</given-names></name>
+<degrees>PhD</degrees>
+<xref ref-type="aff" rid="a4">4</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-1279-6179</contrib-id>
+<name><surname>McCulloch</surname><given-names>Charles</given-names></name>
+<degrees>PhD</degrees>
+<xref ref-type="aff" rid="a3">3</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0001-9541-3622</contrib-id>
+<name><surname>Koth</surname><given-names>Laura</given-names></name>
+<degrees>MD</degrees>
+<xref ref-type="aff" rid="a2">2</xref>
+<xref ref-type="author-notes" rid="n2">&#x03B3;</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-0116-9217</contrib-id>
+<name><surname>Arjomandi</surname><given-names>Mehrdad</given-names></name>
+<degrees>MD</degrees>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a2">2</xref>
+<xref ref-type="author-notes" rid="n2">&#x03B3;</xref>
+</contrib>
+<aff id="a1"><label>1</label><institution>San Francisco Veterans Affairs Medical Center</institution>, San Francisco, California, <country>USA</country></aff>
+<aff id="a2"><label>2</label><institution>Division of Pulmonary, Allergy, Critical Care and Sleep Medicine, Department of Medicine, University of California San Francisco</institution>, California, <country>USA</country></aff>
+<aff id="a3"><label>3</label><institution>Department of Epidemiology &#x0026; Biostatistics, University of California San Francisco</institution>, California, <country>USA</country></aff>
+<aff id="a4"><label>4</label><institution>Department of Biomedical Informatics and Medical Education, School of Medicine, University of Washington</institution>, Seattle, Washington, <country>USA</country></aff>
+<aff id="a5"><label>5</label><institution>Department of Experimental Physiology and Pathophysiology, Laboratory of the Centre for Preclinical Research, Medical University of Warsaw</institution>, Warsaw, <country>Poland</country></aff>
+</contrib-group>
+<author-notes>
+<fn id="n1" fn-type="equal"><label>&#x002A;</label><p>MIS and IM: These authors contributed equally to this work.</p></fn>
+<fn id="n2"><label>&#x03B3;</label><p>MA and LK: These authors share senior authorship.</p></fn>
+<fn id="n3"><p><bold>Email Addresses &#x007C; ORCID iDs: MIS:</bold> <email>mohamed.seedahmed@ucsf.edu</email></p>
+<p>IM: <email>izabella.mogilnicka@gmail.com</email></p>
+<p>SZ: <email>siyang.zeng@ucsf.edu</email></p>
+<p>GL: <email>luogang@uw.edu</email></p>
+<p>CM: <email>charles.mcculloch@ucsf.edu</email></p>
+<p>LK: <email>laura.koth@ucsf.edu</email></p>
+<p>MA: <email>mehrdad.arjomandi@ucsf.edu</email></p></fn>
+<corresp id="cor1"><label>&#x2020;</label><bold>Corresponding Author: Mohamed I Seedahmed, MD, MPH</bold>, Division of Pulmonary, Critical care, allergy and Immunology, and Sleep., Department of Medicine, University of California, San Francisco, University of California San Francisco Helen Diller Medical Center, 513 Parnassus Ave., HSE 1314, Box 0111, San Francisco, CA 94143, Office: (415) 476-0735, Fax: (415) 502-2605, EMAIL: <email>mohamed.seedahmed@ucsf.edu</email></corresp>
+<fn id="n4"><p><bold>Authors&#x2019; Contributions:</bold> All authors read and approved the final manuscript.</p>
+<p>Conceived and designed the study research: MIS, LK, MA</p>
+<p>Developed study protocol: MIS, LK, MA</p>
+<p>Worked on the methods: MIS, IM, SZ, CM, LK, MA</p>
+<p>Analyzed and Interpreted data: MIS, IM, SZ, CM, LK, MA</p>
+<p>Prepared and/or edit the manuscript: MIS, IM, GL, CM, LK, MA</p></fn>
+</author-notes>
+<pub-date pub-type="epub">
+<year>2021</year>
+</pub-date>
+<elocation-id>2021.02.02.21250980</elocation-id>
+<history>
+<date date-type="received">
+<day>02</day>
+<month>2</month>
+<year>2021</year>
+</date>
+<date date-type="rev-recd">
+<day>02</day>
+<month>2</month>
+<year>2021</year>
+</date>
+<date date-type="accepted">
+<day>04</day>
+<month>2</month>
+<year>2021</year>
+</date>
+</history>
+<permissions>
+<copyright-statement>&#x00A9; 2021, Posted by Cold Spring Harbor Laboratory</copyright-statement>
+<copyright-year>2021</copyright-year>
+<license license-type="creative-commons" xlink:href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><license-p>This pre-print is available under a Creative Commons License (Attribution-NonCommercial-NoDerivs 4.0 International), CC BY-NC-ND 4.0, as described at <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by-nc-nd/4.0/">http://creativecommons.org/licenses/by-nc-nd/4.0/</ext-link></license-p></license>
+</permissions>
+<self-uri xlink:href="21250980.pdf" content-type="pdf" xlink:role="full-text"/>
+<abstract>
+<title>ABSTRACT</title>
+<sec>
+<title>Background</title>
+<p>The accuracy of identifying sarcoidosis cases in electronic medical records (EMR) using diagnostic codes is unknown.</p></sec>
+<sec>
+<title>Methods</title>
+<p>To estimate the statistical performance of using diagnostic codes, ICD-9 and ICD-10, to identify sarcoidosis cases in EMR, we searched the San Francisco and Palo Alto Veterans Affairs (VA) medical centers EMR and randomly selected 200 patients coded as sarcoidosis. To further improve diagnostic accuracy, we developed an &#x201C;index of suspicion&#x201D; algorithm to identify probable sarcoidosis cases based on clinical and radiographic features. We then determined the positive predictive value (PPV) of diagnosing sarcoidosis by two computational methods using ICD only and ICD plus the &#x201C;index of suspicion&#x201D; against the gold standard developed through manual chart review based on the American Thoracic Society (ATS) practice guideline. Finally, we determined healthcare providers&#x2019; adherence to the guidelines using a new scoring system.</p></sec>
+<sec>
+<title>Results</title>
+<p>The PPV of identifying sarcoidosis cases in VA EMR using ICD codes only was 71&#x0025; (95&#x0025;CI=64.7&#x0025;-77.3&#x0025;). The inclusion of our construct of &#x201C;index of suspicion&#x201D; along with the ICD codes significantly increased the PPV to 90&#x0025; (95&#x0025;CI=85.2&#x0025;-94.6&#x0025;). The care of sarcoidosis patients was more likely to be classified as &#x201C;Fully&#x201D; or &#x201C;Substantially&#x201D; adherent with the ATS practice guideline if their managing provider was a specialist (45&#x0025; of primary care providers vs. 74&#x0025; of specialists; P=0.008).</p></sec>
+<sec>
+<title>Conclusions</title>
+<p>Although ICD codes can be used as reasonable classifiers to identify sarcoidosis cases within EMR, using computational algorithms to extract clinical and radiographic information (&#x201C;index of suspicion&#x201D;) from unstructured data could significantly improve case identification accuracy.</p></sec>
+<sec>
+<title>Highlights</title>
+<list list-type="bullet">
+<list-item><p>Identifying sarcoidosis cases using diagnostic codes in EMR has low accuracy.</p></list-item>
+<list-item><p>&#x201C;Unstructured data&#x201D; contain information useful in identifying cases of sarcoidosis.</p></list-item>
+<list-item><p>Computational algorithms could improve the accuracy and efficiency of case identification in EMR.</p></list-item>
+<list-item><p>We introduce a new scoring system for assessing healthcare providers&#x2019; compliance with the American Thoracic Society (ATS) practice guideline.</p></list-item>
+<list-item><p>Compliance scoring could help automatically assess sarcoidosis patients&#x2019; care delivery.</p></list-item>
+</list>
+</sec>
+</abstract>
+<kwd-group kwd-group-type="author">
+<title>Keywords</title>
+<kwd>Sarcoidosis</kwd>
+<kwd>Electronic Medical Records (EMR)</kwd>
+<kwd>Computational Phenotyping</kwd>
+<kwd>Diagnostic Codes</kwd>
+<kwd>Veterans Affairs (VA)</kwd>
+<kwd>ATS Practice Guidelines</kwd>
+</kwd-group>
+<counts>
+<page-count count="39"/>
+</counts>
+</article-meta>
+<notes>
+<notes notes-type="competing-interest-statement">
+<title>Competing Interest Statement</title><p>The authors have declared no competing interest.</p></notes>
+<notes notes-type="clinical-trial-statement">
+<title>Clinical Trial</title><p>n/a</p></notes>
+<notes notes-type="financial-disclosure">
+<title>Funding Statement</title><p>This work was supported by funds from the Department of Veterans Affairs Fellowship Award to MIS; the Flight Attendants Medical Research Institute (FAMRI) (CIA190001 to MA); Department of Veterans Affairs Clinical Sciences Research and Development (CSRD) (CXV-00125 to MA); the Tobacco-related Disease Research Program of the University of California (T29IR0715 to MA).</p></notes>
+<notes notes-type="disclosures">
+<title>Author Declarations</title><p>I confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.</p><p>Yes</p><p>The details of the IRB/oversight body that provided approval or exemption for the research described are given below:</p><p>The University of California San Francisco Institutional Review Board and the Veterans Health Administration Research and Development Committee approved this study. [IRB Protocol #15-16660].</p><p>All necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived.</p><p>Yes</p><p>I understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).</p><p>Yes</p><p>I have followed all appropriate research reporting guidelines and uploaded the relevant EQUATOR Network research reporting checklist(s) and other pertinent material as supplementary files, if applicable.</p><p>Yes</p></notes>
+</notes>
+</front>
+<body>
+<sec id="s1">
+<title>INTRODUCTION</title>
+<p>Sarcoidosis is a complex disease of unknown etiology that can involve multiple organs, with no universal and standardized measures that fully secure the final diagnosis.[<xref ref-type="bibr" rid="c1">1</xref>&#x2013;<xref ref-type="bibr" rid="c3">3</xref>] In fact, only recently the American Thoracic Society (ATS) published its first practice guideline to provide recommendations for diagnosing sarcoidosis and the necessary screening tests.[<xref ref-type="bibr" rid="c3">3</xref>] The ATS practice guideline for diagnosis requires the presence of specific clinical and radiographic features, tissue biopsy revealing non-necrotizing granulomas, and exclusion of alternative conditions that can mimic sarcoidosis.[<xref ref-type="bibr" rid="c1">1</xref>,<xref ref-type="bibr" rid="c3">3</xref>,<xref ref-type="bibr" rid="c4">4</xref>]</p>
+<p>Electronic medical record (EMR) data are commonly used in research and by healthcare systems, including the Department of Veterans Affairs, to predict outcomes or assess care quality.[<xref ref-type="bibr" rid="c5">5</xref>] EMR data are generally captured in two forms: 1) <italic>structured data</italic> such as billing codes like International Classification of Disease (ICD) codes, laboratory test results, procedural codes, and 2) <italic>narrative or unstructured data</italic> such as progress notes, pathology reports, and imaging reports. Unstructured data contain many more details of the clinical conditions, but extracting these details is challenging and time-consuming. In contrast, structured data are easier to search and offer the promise to identify cases computationally using diagnostic codes. But, diagnostic codes can be inaccurate and not easily verifiable, particularly for the case definition of complex diseases such as sarcoidosis.[<xref ref-type="bibr" rid="c6">6</xref>&#x2013;<xref ref-type="bibr" rid="c8">8</xref>] Thus, there is a need to develop automated algorithms to verify the final diagnosis of sarcoidosis using unstructured data by incorporating the ATS diagnostic criteria.</p>
+<p>The goals of this study are twofold. First, we sought to estimate the statistical performance of using diagnostic codes (ICD-9 and 10) to identify patients with sarcoidosis in the United States Veterans Affairs (VA) EMR through the VA Informatics and Computational Infrastructure (VINCI) via applying a recently published ATS practice guideline. Second, we investigate healthcare providers&#x2019; practice patterns and determine how adherent these patterns are with the new practice guideline issued by the ATS. This study will help researchers and healthcare systems understand the healthcare providers&#x2019; compliance with these new recommendations and conduct research using administrative databases.</p>
+</sec>
+<sec id="s2">
+<title>METHODS</title>
+<sec id="s2a">
+<title>Study Design</title>
+<p>We determined the statistical performance of using diagnostic codes (the International Classification of Diseases, Ninth and Tenth Revisions codes; ICD-9 and ICD-10) to identify patients with sarcoidosis from the EMR. First, by identifying patients with ICD diagnosis code of sarcoidosis, and then performing a comprehensive chart review of the entire unstructured data to ascertain the true diagnosis of sarcoidosis. Furthermore, to improve the diagnostic accuracy using ICD code alone, we generated an &#x201C;index of suspicion&#x201D; criteria from unstructured clinical and radiographic data, but not histopathologic data, as a second decision point along with ICD code. We then determined the positive predictive value of both the use of ICD code and ICD code plus &#x201C;index of suspicion&#x201D; to determine whether the use of &#x201C;index of suspicion&#x201D; could improve the accuracy of identifying sarcoidosis cases in EMR regardless of tissue biopsy availability. Finally, we investigated the relevant healthcare utilization among the identified patients to determine healthcare providers&#x2019; adherence to the ATS practice guideline.</p>
+</sec>
+<sec id="s2b">
+<title>Data Source</title>
+<p>This is a retrospective cohort study of electronic medical records (EMR) available from the Veterans Affairs Informatics and Computational Infrastructure (VINCI). Developed by the VA Health Services Research &#x0026; Development (HSR&#x0026;D) to improve veterans&#x2019; healthcare, VINCI provides access to comprehensive and integrated veterans&#x2019; national datasets that are de-identified and the necessary computational and analytical tools in a secure, high-performance computing environment [<xref ref-type="bibr" rid="c9">9</xref>]. The University of California San Francisco Institutional Review Board and the Veterans Health Administration Research and Development Committee approved this study.</p>
+</sec>
+<sec id="s2c">
+<title>Data Collection</title>
+<p>We searched the EMR data in VINCI from 1989 to 2019 and identified all patients coded as sarcoidosis cases in the VA healthcare system, as defined by documentation of the ICD-9 and 10 codes of 135 and D.86 (including all subcodes), respectively. Data were extracted through executing Structured Query Language (SQL) queries in a SQL Server 2017 database.</p>
+<p>We then performed a comprehensive and thorough manual chart review of the unstructured data (available clinical notes, pathology reports, radiology reports, and laboratory test results) to determine the accuracy of the ICD-9 or 10 code-based diagnosis of sarcoidosis among cases. To limit the required chart review to a manageable level, we reviewed a total of 200 cases out of the 14,833 identified. Because our access to the detailed medical records was limited to two VA medical centers (San Francisco VA [SFVA] and Palo Alto Medical Centers [PAVA]), the 200 patients coded as sarcoidosis were selected from those two centers. We stratified the list of sarcoidosis cases from the two centers by site and used the &#x201C;lottery&#x201D; method to select 100 patients from each site randomly.[<xref ref-type="bibr" rid="c10">10</xref>]</p>
+<p>Two independent reviewers (MIS, IM) confirmed the diagnoses of sarcoidosis by performing a manual chart review of the 200 cases in the VA EMR, Computerized Patient Record System (CPRS), and based on the ATS diagnostic criteria (clinical, radiographic, pathological findings, and exclusion of other causes).[<xref ref-type="bibr" rid="c3">3</xref>] This approach was considered the &#x201C;gold standard&#x201D; methodology for diagnostic accuracy.</p>
+<p>Given that in clinical practice, not all suspected patients will have a tissue biopsy, we generated an &#x201C;index of suspicion&#x201D; for sarcoidosis to identify patients with probable sarcoidosis based on clinical and radiographic information and regardless of the availability of biopsy data. The &#x201C;index of suspicion&#x201D; was defined based on the interpretation of available unstructured data from both clinical and radiographic findings without the inclusion of tissue biopsy results if available and was used to determine the likelihood of an individual having sarcoidosis. Upon completing the chart review, each patient was assigned to one of two groups of &#x201C;high index of suspicion&#x201D; if the clinical and radiological presentations were supportive of sarcoidosis, or &#x201C;low index of suspicion&#x201D; if clinical and radiological findings were not consistent with sarcoidosis. We then classified the patients into three groups: (1) Patients with a high index of suspicion and documented histopathological evidence of non-necrotizing granulomas were categorized as &#x201C;probable sarcoidosis with confirmed biopsy&#x201D;; (2) Those with a high index of suspicion and either no documented biopsy in the EMR or a biopsy showing no histopathological evidence of non-necrotizing granulomas were categorized as &#x201C;probable sarcoidosis without confirmed biopsy&#x201D;; and (3) those with a low index of suspicion were classified as &#x201C;unlikely sarcoidosis.&#x201D;</p>
+<p>This approach was used to compare the statistical performance of the two methods (ICD code alone versus ICD code with &#x201C;index of suspicion&#x201D;) in identifying sarcoidosis patients from the EMR. As we started with a random sample of those with sarcoidosis diagnostic codes (ICD codes 135 or D86), the further restriction of the sample to those with &#x201C;high index of suspicion&#x201D; is still a random sample of the combination of both ICD codes and &#x201C;index of suspicion.&#x201D;</p>
+</sec>
+<sec id="s2d">
+<title>Disease-related Variables</title>
+<p>Organ involvement was assessed based on the clinical history obtained from physicians&#x2019; notes and imaging and biopsy reports available in CPRS. For this assessment, to adjust for the variability in providers&#x2019; documentation, we adapted a set of criteria previously introduced in the NIH-sponsored Genomic Research in Alpha-1 Antitrypsin Deficiency and Sarcoidosis (GRADS) Study.[<xref ref-type="bibr" rid="c11">11</xref>]</p>
+<p>We collected the following data from chart review: clinical site (SFVA or PAVA), gender, race, ICD-9 and 10 code for sarcoidosis (135 and D86), index date of ICD code (entry date of the ICD code), specialty visits (specialty notes available), the pathological diagnosis from any available biopsy, organ involvement (as described in <bold><xref rid="fig2" ref-type="fig">Figure 2</xref></bold>), Scadding staging of chest x-ray (as described in radiology reports), history of bilateral hilar lymphadenopathy (based on radiology reports and clinical notes), pulmonary function test (<bold>PFT</bold>) pattern (as reported in PFT reports), vitamin D levels (25 [OH]D and 1,25[OH]D), and finally the treatment status of sarcoidosis. Besides, we checked whether other imaging and laboratory reports were performed and available in EMR as part of diagnostic workup and sarcoidosis management; including echocardiography, 12-lead electrocardiogram (<bold>ECG</bold>), chest x-ray, chest computed tomography (<bold>CT</bold>), cardiac magnetic resonance imaging (<bold>MRI</bold>) or positron emission tomography (<bold>PET</bold>)/ CT, or abdominal CT scan or ultrasound.</p>
+<p>Pathological diagnoses were categorized into &#x201C;primary&#x201D; histopathological if it was available in the pathology report domains, or &#x201C;secondary&#x201D; if the data was only available in clinical note domains due to either a remote history of biopsy or the biopsy being performed outside of the VA. The PFT reports at SFVA and PAVA used Crapo reference equations to calculate the Lower Limit of Normal (<bold>LLN</bold>) values for spirometry and lung volume measurements.</p>
+<p>Using the clinical data from chart abstraction, we classified the patients into the clinical phenotypes proposed by the GRADS study with some modifications.[<xref ref-type="bibr" rid="c11">11</xref>] Because of the variability of available data needed to confirm multiple organ involvement from EMR chart review, we considered three or more organ involvement (instead of five or more as defined in the GRADS study) to categorize &#x201C;multiorgan phenotype.&#x201D;</p>
+<p>Finally, we created a scoring system to estimate the physicians&#x2019; compliance with the recently published ATS clinical practice guideline.[<xref ref-type="bibr" rid="c3">3</xref>] For this analysis, four variables were used in the scoring system: (1) having an ophthalmology visit, (2) 12-lead EKG, (3) chest X-ray, and (4) vitamin D measurements (25-(OH) D and 1,25(OH) D) within one year after the index date of ICD code. Each variable was given a score of three, and each patient could have a total score of 12. We classified the physicians&#x2019; compliance into four categories based on the score: &#x201C;Fully,&#x201D; &#x201C;Substantially,&#x201D; &#x201C;Partially,&#x201D; or &#x201C;Non-compliant&#x201D; for scores of 12, 9-11, 5-8, or &#x003C;5 points, respectively. This scoring system was applied to all probable sarcoidosis patients with or without histopathology confirmation. Furthermore, the role of primary versus specialty care evaluation and management was examined by comparing the healthcare providers&#x2019; compliance score.</p>
+</sec>
+<sec id="s2e">
+<title>Statistical Analyses</title>
+<p>All statistical analyses were performed with R software (RStudio, version 1.2.5, Foundation for Statistical Computing, Vienna, Austria). Descriptive statistics were computed to summarize the data. Categorical variables were presented as the frequency in percentages and continuous data as means and standard deviations. We estimated the positive predictive value (PPV) of the two computational diagnostic criteria for sarcoidosis described above (ICD codes only and ICD codes along with &#x201C;index of suspicion&#x201D;). The PPV of the criterion of using ICD code only was calculated as the number of patients verified to have sarcoidosis by chart review (&#x201C;gold standard&#x201D; or true positives) divided by the total number of patients with an ICD-9 or 10 diagnostic code of sarcoidosis. The PPV of the criterion of using ICD codes and &#x201C;index of suspicion&#x201D; use was calculated as the number of patients verified to have sarcoidosis (&#x201C;gold standard&#x201D; or true positives) divided by the total number of patients with a high index of suspicion. We computed the 95&#x0025; confidence intervals (CI) using the exact binomial method. For our estimates, the significance was defined as P &#x003C; 0.05.</p>
+<p>To determine whether it is worth interpreting the developed contingency table that compares the healthcare providers&#x2019; compliance score by primary versus specialty care, we computed the chi-squared test of significance.</p>
+</sec>
+</sec>
+<sec id="s3">
+<title>RESULTS</title>
+<sec id="s3a">
+<title>Patients&#x2019; Characteristics</title>
+<p>A total of 14,833 patients with at least one ICD-9 or 10 diagnostic code of sarcoidosis were identified (<bold><xref rid="fig1" ref-type="fig">Figure 1</xref></bold>). The study cohort included 200 patients identified by ICD codes of sarcoidosis: 169 with ICD-9 code of 135 and 39 with ICD-10 code of D.86 (<bold><xref rid="tbl1" ref-type="table">Table 1</xref></bold>). Of the 200 patients, 158 had a &#x201C;high index of suspicion&#x201D; for sarcoidosis based on clinical and radiographic findings. Of those, 142 had confirmed sarcoidosis based on histopathological evidence of non-necrotizing granuloma and were classified as &#x201C;probable sarcoidosis with confirmed biopsy.&#x201D; The remaining 16 patients with a &#x201C;high index of suspicion&#x201D; did not undergo a biopsy and were classified as &#x201C;probable sarcoidosis without confirmed biopsy&#x201D; (<bold><xref rid="fig2" ref-type="fig">Figure 2</xref></bold>). No patient had nondiagnostic biopsy results for sarcoidosis.</p>
+<table-wrap id="tbl1" orientation="portrait" position="float">
+<label>Table 1.</label>
+<caption><p>Distribution of characteristics and clinical phenotype groups of patients with probable sarcoidosis <sup>a</sup> (with and without confirmed biopsy)</p></caption>
+<graphic xlink:href="21250980v1_tbl1.tif"/>
+<graphic xlink:href="21250980v1_tbl1a.tif"/>
+<graphic xlink:href="21250980v1_tbl1b.tif"/>
+<graphic xlink:href="21250980v1_tbl1c.tif"/>
+</table-wrap>
+<fig id="fig1" position="float" fig-type="figure">
+<label>Figure 1.</label>
+<caption><title>STROBE flow chart. Selection criteria for probable sarcoidosis cases.</title>
+<p><underline>Abbreviations:</underline> ATS, American Thoracic Society; ICD, International Classification of Diseases; PA, Palo Alto; SF, San Francisco; VA, Veterans Affairs</p></caption>
+<graphic xlink:href="21250980v1_fig1.tif"/>
+</fig>
+<fig id="fig2" position="float" fig-type="figure">
+<label>Figure 2.</label>
+<caption><title>Organ involvement assessment for probable sarcoidosis with and without confirmed biopsy <sup>a</sup>.</title>
+<p><underline>Abbreviations:</underline> AV, atrioventricular; CNS, central nervous system; CT, computed tomography; CXR, chest radiograph; DLCO, diffusing capacity for carbon monoxide; EKG, electrocardiogram; ENT, ears, nose and throat; MRI, magnetic resonance imaging; PET, positron emission tomography; PFT, pulmonary function test.</p>
+<p><sup>a</sup> No biopsy is needed for acute skin sarcoidosis.</p></caption>
+<graphic xlink:href="21250980v1_fig2.tif"/>
+</fig>
+<p>Among those patients with probable sarcoidosis (with and without confirmed biopsy), 90&#x0025; (142/158) were males (<bold><xref rid="tbl1" ref-type="table">Table 1</xref></bold>), and there was a higher representation of African Americans than non-Hispanic Whites (54&#x0025; (85/158) vs. 33&#x0025; (52/158), respectively). Overall, 90&#x0025; (143/158) had a predominant pulmonary phenotype, and 29&#x0025; (45/158) had a multi-organ disease that included pulmonary. Among those with pulmonary phenotype, 28&#x0025; (36/129), 22&#x0025; (28/129), and 19&#x0025; (25/129) had restrictive, obstructive, and mixed lung function patterns, respectively. The majority were in Scadding stage II (32&#x0025;, 47/145), followed by Stage 0 and Stage 1 (20&#x0025; (29/145) and 18&#x0025; (26/145), respectively). There was no significant difference in age between those who did and those who did not have a biopsy performed to diagnose sarcoidosis (mean age= 65.5 vs. 69.3, P= 0.18, respectively). In terms of clinical phenotypes, the most common phenotype was multiorgan (33&#x0025;, 52/158), followed by stage II or III treated (29&#x0025;, 45/158). Our study cohort did not include any individuals with acute presentation (acute, untreated). Some patients with remitting phenotype overlapped with Groups 2 and 4 (<bold><xref rid="tbl1" ref-type="table">Table 1</xref></bold>) (<bold><xref rid="fig3" ref-type="fig">Figure 3</xref></bold>).</p>
+<fig id="fig3" position="float" fig-type="figure">
+<label>Figure 3.</label>
+<caption><title>Distribution of characteristics among patients with probable sarcoidosis with and without confirmed biopsy.</title>
+<p><underline>Abbreviations:</underline> PFT, pulmonary function test; ICD, International Classification of Diseases</p></caption>
+<graphic xlink:href="21250980v1_fig3.tif"/>
+<graphic xlink:href="21250980v1_fig3a.tif"/>
+<graphic xlink:href="21250980v1_fig3b.tif"/>
+<graphic xlink:href="21250980v1_fig3c.tif"/>
+<graphic xlink:href="21250980v1_fig3d.tif"/>
+</fig>
+</sec>
+<sec id="s3b">
+<title>Diagnostic Accuracy of ICD Codes</title>
+<p>We then calculated the positive predictive value (PPV) of using ICD codes to identify VA patients that met the ATS definition of sarcoidosis from the VINCI database. For this calculation, we used the curated dataset of 200 patients. The estimated PPV of using only ICD codes was 71&#x0025; (95&#x0025;CI= 64.7&#x0025;-77.3&#x0025;). The inclusion of our construct of &#x201C;index of suspicion&#x201D; along with the ICD codes into the identification of sarcoidosis increased the PPV estimate significantly to 90&#x0025; (95&#x0025;CI= 85.2&#x0025;-94.6&#x0025;) (<bold><xref rid="tbl2" ref-type="table">Table 2</xref></bold>), as the initial sarcoidosis cohort was restricted to the patients with &#x201C;high index of suspicion.&#x201D;</p>
+<table-wrap id="tbl2" orientation="portrait" position="float">
+<label>Table 2.</label>
+<caption><p>Contingency 2&#x00D7;2 table of using ICD and index of suspicion for sarcoidosis cases identification.</p></caption>
+<graphic xlink:href="21250980v1_tbl2.tif"/>
+</table-wrap>
+</sec>
+<sec id="s3c">
+<title>Providers&#x2019; Compliance with the ATS Clinical Practice Guideline</title>
+<p>Among those with probable sarcoidosis (with and without biopsy), 13&#x0025; were managed by primary care providers only, 51&#x0025; (81/158) were managed by pulmonary physicians only, and pulmonary physicians managed 36&#x0025; (57/158) along with other specialties such as ophthalmology or cardiology. The specialty care visits occurred in the context of diagnosis or management of the disease.</p>
+<p>Within one year of the entry date of the ICD code of sarcoidosis, 91&#x0025; (143/158) of patients had at least one chest x-ray, 83&#x0025; (131/158) had at least one EKG, and 84&#x0025; (133/158) had at least one visit to an ophthalmologist. In addition, 53&#x0025; (82/158) had 25(OH)D, and 23&#x0025; (36/158) had 1, 25(OH)D, including 20&#x0025; (32/158) who had both measurements (<bold><xref rid="tbl1" ref-type="table">Table 1</xref></bold>).</p>
+<p>Among the patients with probable sarcoidosis (with and without biopsy), 70&#x0025; (111/158) had managing providers who were &#x201C;Fully&#x201D; or &#x201C;Substantially&#x201D; compliant with the ATS practice guideline based on our scoring system (<bold><xref rid="tbl3" ref-type="table">Table 3</xref></bold>). The majority of those patients, 92&#x0025; (102/111), were managed by specialists, including pulmonary physicians, while primary care providers managed 8&#x0025; (9/111). Among the 30&#x0025; (47/158) patients whose care only met the &#x201C;Partially compliant&#x201D; or &#x201C;Non-compliant&#x201D; definition based on our scoring system, 23&#x0025; (11/47) were managed by primary care providers (<bold><xref rid="fig4" ref-type="fig">Figure 4</xref></bold>). This result indicates that the care of sarcoidosis patients was more likely to be classified as &#x201C;Fully&#x201D; or &#x201C;Substantially&#x201D; adherent with the ATS practice guideline if their managing provider was a specialist (45&#x0025; [9/20] of primary care providers vs. 74&#x0025; [102/138] of specialists, P= .008) (<bold><xref rid="tbl4" ref-type="table">Table 4</xref></bold>).</p>
+<table-wrap id="tbl3" orientation="portrait" position="float">
+<label>Table 3.</label>
+<caption><p>Healthcare providers&#x2019; compliance with the ATS clinical practice guideline.</p></caption>
+<graphic xlink:href="21250980v1_tbl3.tif"/>
+</table-wrap>
+<table-wrap id="tbl4" orientation="portrait" position="float">
+<label>Table 4.</label>
+<caption><p>Contingency 2&#x00D7;2 table of the healthcare providers&#x2019; compliance score by primary versus specialty care <sup>a</sup>.</p></caption>
+<graphic xlink:href="21250980v1_tbl4.tif"/>
+</table-wrap>
+<fig id="fig4" position="float" fig-type="figure">
+<label>Figure 4.</label>
+<caption><p>Comparison of specialty visits across cases with probable sarcoidosis (with and without confirmed biopsy) and with healthcare providers classified as &#x201C;Fully&#x201D; or &#x201C;Substantially&#x201D; compliant vs. &#x201C;Partially&#x201D; or &#x201C;Non-&#x201D; compliant using our compliance scoring system.</p></caption>
+<graphic xlink:href="21250980v1_fig4.tif"/>
+</fig>
+</sec>
+</sec>
+<sec id="s4">
+<title>DISCUSSION</title>
+<p>In this retrospective cohort study of Department of Veterans Affairs EMR, we evaluated 200 randomly selected patients diagnosed with sarcoidosis from the San Francisco and Palo Alto Veterans Affairs Medical Centers. We found that using ICD-9 and 10 codes to identify sarcoidosis patients within EMR has a relatively low accuracy (PPV of 71&#x0025; [95&#x0025;CI= 64.7&#x0025;-77.3&#x0025;]) of detecting patients with &#x201C;probable sarcoidosis&#x201D; as defined by the ATS clinical practice guideline. We also demonstrated that including an &#x201C;index of suspicion&#x201D; that incorporates only the clinical and radiographical data allows for a significant increase in diagnostic accuracy (PPV of 90&#x0025; [85.2&#x0025;-94.6&#x0025;]), as the initial sarcoidosis cohort was restricted to the patients with &#x201C;high index of suspicion.&#x201D; This &#x201C;index of suspicion,&#x201D; which was developed based on the ATS clinical practice guideline [<xref ref-type="bibr" rid="c3">3</xref>], could be executed by manual chart review of the available clinical and radiographic data and could potentially be adapted for automated chart review algorithms using natural language processing and machine learning in EMR. Furthermore, we found that the care provided by specialists was more likely to be &#x201C;Fully&#x201D; or &#x201C;Substantially&#x201D; compliant with the ATS practice guideline compared to primary care providers.</p>
+<p>This randomly selected cohort of 200 Veterans with sarcoidosis diagnosis consisted of 90&#x0025; men and 10&#x0025; women. While the sex distribution in our study was different from the ACCESS study[<xref ref-type="bibr" rid="c12">12</xref>], it is closely reflective of the veterans&#x2019; population demographics.[<xref ref-type="bibr" rid="c13">13</xref>] This study further confirmed the higher prevalence of sarcoidosis in African-Americans (54&#x0025;) compared to Caucasians (33&#x0025;), which has been previously reported by many other sarcoidosis epidemiology studies [<xref ref-type="bibr" rid="c14">14</xref>&#x2013;<xref ref-type="bibr" rid="c18">18</xref>]. At the same time, the study population was racially diverse, highlighting the potential utility of the VA EMR for studying sarcoidosis in populations of people of color.[<xref ref-type="bibr" rid="c19">19</xref>]</p>
+<p>The novelty of this study is the development of a scoring system to objectively measure physicians&#x2019; compliance with the latest ATS practice guideline. Adherence to recommendations might allow for earlier interventions in sarcoidosis management and ultimately improve outcomes by delaying or preventing the development of morbid phenotypes. Variables used in this scoring system included ophthalmology visit, 12-lead EKG, chest x-ray, and vitamin D levels measurements within one year of the entry date of the ICD code. These variables were chosen based on their utility and importance.[<xref ref-type="bibr" rid="c3">3</xref>] Not all tests and measurements discussed in the guidelines have been included in our scoring system. Yet, we believe it can be easily modified to include other clinical variables. Notably, a longitudinal analysis of the association between physicians&#x2019; compliance with the recommendations and clinical outcomes in sarcoidosis could provide direction for future investigations and ultimately help better guide clinical practice to be used as a metric to assess the improvement of the care delivery for sarcoidosis patients.</p>
+<p>Using ICD codes alone to extract health information is far more convenient than the time-consuming manual review process of narrative datasets in unstructured data.[<xref ref-type="bibr" rid="c8">8</xref>] However, using ICD codes to identify sarcoidosis cases in large datasets with thousands of patients poses several practical challenges. First, given the heterogeneity of sarcoidosis, it is challenging to confirm the disease&#x2019;s presence efficiently. The verification process requires careful analysis of the available narrative data such as progress notes, imaging reports, and pathology reports to establish the case definition based on the sarcoidosis diagnostic criteria.[<xref ref-type="bibr" rid="c3">3</xref>] Second, the precise identification of the type of organ involvement through EMR is a complex process and requires a thorough review of unstructured data. Although there are sub-codes for ICD diagnostic codes that aim to capture various organ involvement, healthcare providers may or may not be familiar with those sub-codes and may or may not use them correctly. Moreover, there are no specific ICD codes for classifying some of the various organ involvement in sarcoidosis (such as central nervous system or GI tract).[<xref ref-type="bibr" rid="c20">20</xref>] Third, ICD codes do not determine the extent of disease, such as that described by chest x-ray stages [<xref ref-type="bibr" rid="c21">21</xref>], due to a lack of ICD codes for different stages of pulmonary sarcoidosis.[<xref ref-type="bibr" rid="c20">20</xref>] Analysis of pulmonary features requires a manual review of every patient&#x2019;s radiology reports and cannot be performed using only ICD codes alone. Finally, ICD codes do not specify the various sarcoidosis presentations such as acute, remitting, or chronic disease.[<xref ref-type="bibr" rid="c11">11</xref>,<xref ref-type="bibr" rid="c20">20</xref>] Thus, they cannot be used to classify patients into previously described phenotype groups.</p>
+<p>The definition of clinical phenotypes has become an essential goal for the sarcoidosis scientific community, as genetic studies have identified different patterns of gene expression associated with disease severity and disease course.[<xref ref-type="bibr" rid="c22">22</xref>,<xref ref-type="bibr" rid="c23">23</xref>] In 2015, the National Heart, Lung, and Blood Institute (NHLBI) held a workshop to leverage current scientific knowledge and defining platforms to address disease disparities, identify high-risk phenotypes, and improve sarcoidosis outcomes [<xref ref-type="bibr" rid="c24">24</xref>]. Nine different steps and research strategies were recommended to expand the scope of sarcoidosis research, including EMR-based research to provide a unified, multidisciplinary approach to bring together stakeholders interested in reducing the burden and severity of sarcoidosis. However, the major barrier in the efficient use of EMR data is the accurate extraction of research-quality variables, case definitions, and outcomes.[<xref ref-type="bibr" rid="c25">25</xref>] Thus, the rapid identification of cases and extraction of relevant clinical variables from EMR using computable phenotype algorithms have emerged as an important next step in EMR-based research. Computable phenotype definitions are also essential to conducting pragmatic clinical trials and comparative effectiveness research, increasing the healthcare system&#x2019;s capacity to deliver Precision Medicine effectively.[<xref ref-type="bibr" rid="c26">26</xref>]</p>
+<p>The two most commonly applied approaches to defining computable phenotypes are: (1) a &#x201C;<italic>high-throughput&#x201D;</italic> phenotype algorithm using only structured data (traditionally, the ICD diagnosis codes). (2) a <italic>&#x201C;low-throughput&#x201D;</italic> phenotype algorithm that accesses structured and unstructured data to develop a sequential flow chart that should end with a case definition. Such a low-throughput approach employs high-performance computational tools (such as natural language processing [<bold>NLP</bold>]) to process text and extract information utilizing linguistic rules instead of labor-intensive manual review by researchers.[<xref ref-type="bibr" rid="c6">6</xref>] This approach should streamline the development of registries and help enrich EMR-based research studies.[<xref ref-type="bibr" rid="c27">27</xref>] Our study highlights the need for the development of such automated methods to improve the computational case-definition of sarcoidosis and other high-quality sarcoidosis-related research variables, such as determining the date of the diagnosis, organ involvements, Scadding stages, and the clinical status (acute, chronic, acute on the chronic or remitting disease).</p>
+<p>Our study has several limitations. First, we used the ICD diagnosis code&#x2019;s entered date as the surrogate time point to establish the patients&#x2019; care with active sarcoidosis or re-establish the care for those with remitting disease. This approach is different from what sarcoidosis researchers traditionally use as a surrogate to determine the date of diagnosis, which is the date of performing the biopsy. However, because the ICD diagnosis code&#x2019;s date is more relevant for assessing the managing healthcare providers&#x2019; compliance, we chose to take the above approach. Second, in the cases where the biopsy report was unavailable (either due to a remote history of biopsy or biopsy performed outside the VA), we relied on the &#x201C;secondary&#x201D; histopathological reports documented in the providers&#x2019; narrative within the clinical notes. This approach made the diagnosis of sarcoidosis less robust because confirmatory biopsy reports in those patients were not directly verifiable. However, we used the index of suspicion approach to define probable sarcoidosis cases regardless of whether there was a confirmatory biopsy report available, which is consistent with the diagnostic algorithm recommended by the ATS practice guideline.[<xref ref-type="bibr" rid="c3">3</xref>] Last, the generalizability of our findings in VA EMR to other populations could be limited because the Veterans form a special population with different demographics and exposures from the general population. However, the US Veterans Affairs Healthcare System EMR data cover over 22 million Veterans across the US and over 14,000 patients with sarcoidosis ICD diagnosis codes, providing an enormous number of patients to study a rare disease.</p>
+</sec>
+<sec id="s5">
+<title>Conclusion</title>
+<p>Although ICD codes can be used as reasonable classifiers to identify sarcoidosis cases within EMR, using computational algorithms to extract clinical and radiographic information (&#x201C;index of suspicion&#x201D;) from unstructured data could significantly improve case identification accuracy. Using automated emerging methods (such as NLP) to develop a novel sarcoidosis-specific computational phenotype algorithm could increase the efficiency of identifying these cases from large healthcare databases. Furthermore, we found that specialists are more likely than primary care providers to be &#x201C;Fully&#x201D; or &#x201C;Substantially&#x201D; compliant with the ATS clinical practice guideline. This finding calls attention to the importance of examining the association between physicians&#x2019; compliance with the recommendations and clinical outcomes longitudinally.</p>
+</sec>
+</body>
+<back>
+<sec sec-type="data-availability">
+<title>Data Availability</title>
+<p>Due to the sensitive nature of health data analyzed in the current study, data will remain confidential and are not publicly available.</p>
+</sec>
+<sec id="s6">
+<title>Ethics approval and consent to participate</title>
+<p>The University of California San Francisco Institutional Review Board and the Veterans Health Administration Research and Development Committee approved this study. [IRB Protocol #15-16660].</p>
+</sec>
+<sec id="s7">
+<title>Availability of data and material</title>
+<p>Due to the sensitive nature of health data analyzed in the current study, data will remain confidential and are not publicly available.</p>
+</sec>
+<sec id="s8">
+<title>Competing interests</title>
+<p>The authors have no conflicts of interest to disclose relevant to the present work.</p>
+</sec>
+<sec id="s9">
+<title>Funding</title>
+<p>This work was supported by funds from the Department of Veterans Affairs Fellowship Award to MIS; the Flight Attendants Medical Research Institute (FAMRI) (CIA190001 to MA); Department of Veterans Affairs Clinical Sciences Research and Development (CSRD) (CXV-00125 to MA); the Tobacco-related Disease Research Program of the University of California (T29IR0715 to MA).</p>
+</sec>
+<ref-list>
+<title>Bibliography</title>
+<ref id="c1"><label>[1]</label><mixed-citation publication-type="journal"><string-name><surname>Judson</surname> <given-names>MA</given-names></string-name>. <article-title>Advances in the diagnosis and treatment of sarcoidosis</article-title>. <source>F1000Prime Rep</source> <year>2014</year>;<volume>6</volume>:<fpage>89</fpage>. doi:<pub-id pub-id-type="doi">10.12703/P6-89</pub-id>.</mixed-citation></ref>
+<ref id="c2"><label>[2]</label><mixed-citation publication-type="journal"><string-name><surname>Keller</surname> <given-names>AZ</given-names></string-name>. <article-title>Anatomic sites, age attributes, and rates of sarcoidosis in U. S. veterans</article-title>. <source>Am Rev Respir Dis</source> <year>1973</year>;<volume>107</volume>:<fpage>615</fpage>&#x2013;<lpage>20</lpage>. doi:<pub-id pub-id-type="doi">10.1164/arrd.1973.107.4.615</pub-id>.</mixed-citation></ref>
+<ref id="c3"><label>[3]</label><mixed-citation publication-type="journal"><string-name><surname>Crouser</surname> <given-names>ED</given-names></string-name>, <string-name><surname>Maier</surname> <given-names>LA</given-names></string-name>, <string-name><surname>Wilson</surname> <given-names>KC</given-names></string-name>, <string-name><surname>Bonham</surname> <given-names>CA</given-names></string-name>, <string-name><surname>Morgenthau</surname> <given-names>AS</given-names></string-name>, <string-name><surname>Patterson</surname> <given-names>KC</given-names></string-name>, <etal>et al.</etal> <article-title>Diagnosis and detection of sarcoidosis. an official american thoracic society clinical practice guideline</article-title>. <source>Am J Respir Crit Care Med</source> <year>2020</year>;<volume>201</volume>:<fpage>e26</fpage>&#x2013;<lpage>51</lpage>. doi:<pub-id pub-id-type="doi">10.1164/rccm.202002-0251ST</pub-id>.</mixed-citation></ref>
+<ref id="c4"><label>[4]</label><mixed-citation publication-type="journal"><string-name><surname>Judson</surname> <given-names>MA</given-names></string-name>. <article-title>The diagnosis of sarcoidosis</article-title>. <source>Curr Opin Pulm Med</source> <year>2019</year>;<volume>25</volume>:<fpage>484</fpage>&#x2013;<lpage>96</lpage>. doi:<pub-id pub-id-type="doi">10.1097/MCP.0000000000000596</pub-id>.</mixed-citation></ref>
+<ref id="c5"><label>[5]</label><mixed-citation publication-type="journal"><string-name><surname>Szeto</surname> <given-names>HC</given-names></string-name>, <string-name><surname>Coleman</surname> <given-names>RK</given-names></string-name>, <string-name><surname>Gholami</surname> <given-names>P</given-names></string-name>, <string-name><surname>Hoffman</surname> <given-names>BB</given-names></string-name>, <string-name><surname>Goldstein</surname> <given-names>MK</given-names></string-name>. <article-title>Accuracy of computerized outpatient diagnoses in a Veterans Affairs general medicine clinic</article-title>. <source>Am J Manag Care</source> <year>2002</year>;<volume>8</volume>:<fpage>37</fpage>&#x2013;<lpage>43</lpage>.</mixed-citation></ref>
+<ref id="c6"><label>[6]</label><mixed-citation publication-type="journal"><string-name><surname>Pendergrass</surname> <given-names>SA</given-names></string-name>, <string-name><surname>Crawford</surname> <given-names>DC</given-names></string-name>. <article-title>Using electronic health records to generate phenotypes for research</article-title>. <source>Curr Protoc Hum Genet</source> <year>2019</year>;<volume>100</volume>:<fpage>e80</fpage>. doi:<pub-id pub-id-type="doi">10.1002/cphg.80</pub-id>.</mixed-citation></ref>
+<ref id="c7"><label>[7]</label><mixed-citation publication-type="journal"><string-name><surname>Horsky</surname> <given-names>J</given-names></string-name>, <string-name><surname>Drucker</surname> <given-names>EA</given-names></string-name>, <string-name><surname>Ramelson</surname> <given-names>HZ</given-names></string-name>. <article-title>Accuracy and Completeness of Clinical Coding Using ICD-10 for Ambulatory Visits</article-title>. <source>AMIA Annu Symp Proc</source> <year>2017</year>;<volume>2017</volume>:<fpage>912</fpage>&#x2013;<lpage>20</lpage>.</mixed-citation></ref>
+<ref id="c8"><label>[8]</label><mixed-citation publication-type="journal"><string-name><surname>Ungprasert</surname> <given-names>P</given-names></string-name>, <string-name><surname>Matteson</surname> <given-names>EL</given-names></string-name>, <string-name><surname>Crowson</surname> <given-names>CS</given-names></string-name>. <article-title>Accuracy of Diagnostic Coding for Sarcoidosis in Electronic Databases: A Population-Based Study</article-title>. <source>Lung</source> <year>2017</year>;<volume>195</volume>:<fpage>713</fpage>&#x2013;<lpage>5</lpage>. doi:<pub-id pub-id-type="doi">10.1007/s00408-017-0054-x</pub-id>.</mixed-citation></ref>
+<ref id="c9"><label>[9]</label><mixed-citation publication-type="journal"><string-name><surname>Velarde</surname> <given-names>KE</given-names></string-name>, <string-name><surname>Romesser</surname> <given-names>JM</given-names></string-name>, <string-name><surname>Johnson</surname> <given-names>MR</given-names></string-name>, <string-name><surname>Clegg</surname> <given-names>DO</given-names></string-name>, <string-name><surname>Efimova</surname> <given-names>O</given-names></string-name>, <string-name><surname>Oostema</surname> <given-names>SJ</given-names></string-name>, <etal>et al.</etal> <article-title>An initiative using informatics to facilitate clinical research planning and recruitment in the VA health care system</article-title>. <source>Contemp Clin Trials Commun</source> <year>2018</year>;<volume>11</volume>:<fpage>107</fpage>&#x2013;<lpage>12</lpage>. doi:<pub-id pub-id-type="doi">10.1016/j.conctc.2018.07.001</pub-id>.</mixed-citation></ref>
+<ref id="c10"><label>[10]</label><mixed-citation publication-type="website"><collab>Sampling Essentials: Practical Guidelines for Making Sampling Choices - SAGE Research Methods n.d</collab>. <ext-link ext-link-type="uri" xlink:href="https://dx.doi.org/10.4135/9781452272047">https://dx.doi.org/10.4135/9781452272047</ext-link> (accessed <date-in-citation content-type="access-date">December 23, 2020</date-in-citation>).</mixed-citation></ref>
+<ref id="c11"><label>[11]</label><mixed-citation publication-type="journal"><string-name><surname>Moller</surname> <given-names>DR</given-names></string-name>, <string-name><surname>Koth</surname> <given-names>LL</given-names></string-name>, <string-name><surname>Maier</surname> <given-names>LA</given-names></string-name>, <string-name><surname>Morris</surname> <given-names>A</given-names></string-name>, <string-name><surname>Drake</surname> <given-names>W</given-names></string-name>, <string-name><surname>Rossman</surname> <given-names>M</given-names></string-name>, <etal>et al.</etal> <article-title>Rationale and Design of the Genomic Research in Alpha-1 Antitrypsin Deficiency and Sarcoidosis (GRADS) Study. Sarcoidosis Protocol</article-title>. <source>Annals of the American Thoracic Society</source> <year>2015</year>;<volume>12</volume>:<fpage>1561</fpage>&#x2013;<lpage>71</lpage>. doi:<pub-id pub-id-type="doi">10.1513/AnnalsATS.201503-172OT</pub-id>.</mixed-citation></ref>
+<ref id="c12"><label>[12]</label><mixed-citation publication-type="journal"><string-name><surname>Baughman</surname> <given-names>RP</given-names></string-name>, <string-name><surname>Teirstein</surname> <given-names>AS</given-names></string-name>, <string-name><surname>Judson</surname> <given-names>MA</given-names></string-name>, <string-name><surname>Rossman</surname> <given-names>MD</given-names></string-name>, <string-name><surname>Yeager</surname> <given-names>H</given-names></string-name>, <string-name><surname>Bresnitz</surname> <given-names>EA</given-names></string-name>, <etal>et al.</etal> <article-title>Clinical characteristics of patients in a case control study of sarcoidosis</article-title>. <source>Am J Respir Crit Care Med</source> <year>2001</year>;<volume>164</volume>:<fpage>1885</fpage>&#x2013;<lpage>9</lpage>. doi:<pub-id pub-id-type="doi">10.1164/ajrccm.164.10.2104046</pub-id>.</mixed-citation></ref>
+<ref id="c13"><label>[13]</label><mixed-citation publication-type="website"><collab>National Center for Veteran Analysis and Statistics</collab>. <source>Department of Veterans Affairs Statistics at A Glance (Updated 12/31/2019)</source>. <month>February</month> <year>2020. n.d</year>. <ext-link ext-link-type="uri" xlink:href="https://www.va.gov/vetdata/docs/Quickfacts/Stats_at_a_glance_4_6_20.PDF">https://www.va.gov/vetdata/docs/Quickfacts/Stats_at_a_glance_4_6_20.PDF</ext-link> (accessed <date-in-citation content-type="access-date">January 1, 2021</date-in-citation>).</mixed-citation></ref>
+<ref id="c14"><label>[14]</label><mixed-citation publication-type="journal"><string-name><surname>Mirsaeidi</surname> <given-names>M</given-names></string-name>, <string-name><surname>Machado</surname> <given-names>RF</given-names></string-name>, <string-name><surname>Schraufnagel</surname> <given-names>D</given-names></string-name>, <string-name><surname>Sweiss</surname> <given-names>NJ</given-names></string-name>, <string-name><surname>Baughman</surname> <given-names>RP</given-names></string-name>. <article-title>Racial difference in sarcoidosis mortality in the United States</article-title>. <source>Chest</source> <year>2015</year>;<volume>147</volume>:<fpage>438</fpage>&#x2013;<lpage>49</lpage>. doi:<pub-id pub-id-type="doi">10.1378/chest.14-1120</pub-id>.</mixed-citation></ref>
+<ref id="c15"><label>[15]</label><mixed-citation publication-type="journal"><string-name><surname>Cozier</surname> <given-names>YC</given-names></string-name>, <string-name><surname>Berman</surname> <given-names>JS</given-names></string-name>, <string-name><surname>Palmer</surname> <given-names>JR</given-names></string-name>, <string-name><surname>Boggs</surname> <given-names>DA</given-names></string-name>, <string-name><surname>Serlin</surname> <given-names>DM</given-names></string-name>, <string-name><surname>Rosenberg</surname> <given-names>L.</given-names></string-name> <article-title>Sarcoidosis in black women in the United States: data from the Black Women&#x2019;s Health Study</article-title>. <source>Chest</source> <year>2011</year>;<volume>139</volume>:<fpage>144</fpage>&#x2013;<lpage>50</lpage>. doi:<pub-id pub-id-type="doi">10.1378/chest.10-0413</pub-id>.</mixed-citation></ref>
+<ref id="c16"><label>[16]</label><mixed-citation publication-type="journal"><string-name><surname>Rybicki</surname> <given-names>BA</given-names></string-name>, <string-name><surname>Major</surname> <given-names>M</given-names></string-name>, <string-name><surname>Popovich</surname> <given-names>J</given-names></string-name>, <string-name><surname>Maliarik</surname> <given-names>MJ</given-names></string-name>, <string-name><surname>Iannuzzi</surname> <given-names>MC</given-names></string-name>. <article-title>Racial differences in sarcoidosis incidence: a 5-year study in a health maintenance organization</article-title>. <source>Am J Epidemiol</source> <year>1997</year>;<volume>145</volume>:<fpage>234</fpage>&#x2013;<lpage>41</lpage>. doi:<pub-id pub-id-type="doi">10.1093/oxfordjournals.aje.a009096</pub-id>.</mixed-citation></ref>
+<ref id="c17"><label>[17]</label><mixed-citation publication-type="journal"><string-name><surname>Brito-Zer&#x00F3;n</surname> <given-names>P</given-names></string-name>, <string-name><surname>Kostov</surname> <given-names>B</given-names></string-name>, <string-name><surname>Superville</surname> <given-names>D</given-names></string-name>, <string-name><surname>Baughman</surname> <given-names>RP</given-names></string-name>, <string-name><surname>Ramos-Casals</surname> <given-names>M</given-names></string-name>, <article-title>Autoimmune Big Data Study Group. Geoepidemiological big data approach to sarcoidosis: geographical and ethnic determinants</article-title>. <source>Clin Exp Rheumatol</source> <year>2019</year>;<volume>37</volume>:<fpage>1052</fpage>&#x2013;<lpage>64</lpage>.</mixed-citation></ref>
+<ref id="c18"><label>[18]</label><mixed-citation publication-type="journal"><string-name><surname>Arkema</surname> <given-names>EV</given-names></string-name>, <string-name><surname>Cozier</surname> <given-names>YC</given-names></string-name>. <article-title>Sarcoidosis epidemiology: recent estimates of incidence, prevalence and risk factors</article-title>. <source>Curr Opin Pulm Med</source> <year>2020</year>;<volume>26</volume>:<fpage>527</fpage>&#x2013;<lpage>34</lpage>. doi:<pub-id pub-id-type="doi">10.1097/MCP.0000000000000715</pub-id>.</mixed-citation></ref>
+<ref id="c19"><label>[19]</label><mixed-citation publication-type="website"><collab>Minority Veteran Statistics n.d</collab>. <ext-link ext-link-type="uri" xlink:href="https://www.va.gov/HEALTHEQUITY/Race_Ethnicity.asp?utm_content&#x0026;utm_medium=email&#x0026;utm_name&#x0026;utm_source=govdelivery&#x0026;utm_term">https://www.va.gov/HEALTHEQUITY/Race_Ethnicity.asp?utm_content&#x0026;utm_medium=email&#x0026;utm_name&#x0026;utm_source=govdelivery&#x0026;utm_term</ext-link> (accessed <date-in-citation content-type="access-date">January 1, 2021</date-in-citation>).</mixed-citation></ref>
+<ref id="c20"><label>[20]</label><mixed-citation publication-type="book"><collab>Organization WH</collab>. <source>The ICD-10 Classification of Mental and Behavioural Disorders: Diagnostic Criteria for Research</source>. <publisher-loc>New Edition</publisher-loc>. <publisher-name>Geneva: World Health Organization</publisher-name>; <year>1993</year>.</mixed-citation></ref>
+<ref id="c21"><label>[21]</label><mixed-citation publication-type="journal"><string-name><surname>Scadding</surname> <given-names>JG</given-names></string-name>. <article-title>Prognosis of intrathoracic sarcoidosis in england</article-title>. <source>BMJ</source> <year>1961</year>;<volume>2</volume>:<fpage>1165</fpage>&#x2013;<lpage>72</lpage>. doi:<pub-id pub-id-type="doi">10.1136/bmj.2.5261.1165</pub-id>.</mixed-citation></ref>
+<ref id="c22"><label>[22]</label><mixed-citation publication-type="journal"><string-name><surname>Su</surname> <given-names>R</given-names></string-name>, <string-name><surname>Li</surname> <given-names>MM</given-names></string-name>, <string-name><surname>Bhakta</surname> <given-names>NR</given-names></string-name>, <string-name><surname>Solberg</surname> <given-names>OD</given-names></string-name>, <string-name><surname>Darnell</surname> <given-names>EPB</given-names></string-name>, <string-name><surname>Ramstein</surname> <given-names>J</given-names></string-name>, <etal>et al.</etal> <article-title>Longitudinal analysis of sarcoidosis blood transcriptomic signatures and disease outcomes</article-title>. <source>Eur Respir J</source> <year>2014</year>;<volume>44</volume>:<fpage>985</fpage>&#x2013;<lpage>93</lpage>. doi:<pub-id pub-id-type="doi">10.1183/09031936.00039714</pub-id>.</mixed-citation></ref>
+<ref id="c23"><label>[23]</label><mixed-citation publication-type="journal"><string-name><surname>Zhou</surname> <given-names>T</given-names></string-name>, <string-name><surname>Zhang</surname> <given-names>W</given-names></string-name>, <string-name><surname>Sweiss</surname> <given-names>NJ</given-names></string-name>, <string-name><surname>Chen</surname> <given-names>ES</given-names></string-name>, <string-name><surname>Moller</surname> <given-names>DR</given-names></string-name>, <string-name><surname>Knox</surname> <given-names>KS</given-names></string-name>, <etal>et al.</etal> <article-title>Peripheral blood gene expression as a novel genomic biomarker in complicated sarcoidosis</article-title>. <source>PLoS One</source> <year>2012</year>;<volume>7</volume>:<fpage>e44818</fpage>. doi:<pub-id pub-id-type="doi">10.1371/journal.pone.0044818</pub-id>.</mixed-citation></ref>
+<ref id="c24"><label>[24]</label><mixed-citation publication-type="journal"><string-name><surname>Maier</surname> <given-names>LA</given-names></string-name>, <string-name><surname>Crouser</surname> <given-names>ED</given-names></string-name>, <string-name><surname>Martin</surname> <given-names>WJ</given-names></string-name>, <string-name><surname>Eu</surname> <given-names>J.</given-names></string-name> <article-title>Executive summary of the NHLBI workshop report: leveraging current scientific advancements to understand sarcoidosis variability and improve outcomes</article-title>. <source>Annals of the American Thoracic Society</source> <year>2017</year>;<volume>14</volume>:<fpage>S415</fpage>&#x2013;<lpage>20</lpage>. doi:<pub-id pub-id-type="doi">10.1513/AnnalsATS.201707-563OT</pub-id>.</mixed-citation></ref>
+<ref id="c25"><label>[25]</label><mixed-citation publication-type="journal"><string-name><surname>Sharma</surname> <given-names>H</given-names></string-name>, <string-name><surname>Mao</surname> <given-names>C</given-names></string-name>, <string-name><surname>Zhang</surname> <given-names>Y</given-names></string-name>, <string-name><surname>Vatani</surname> <given-names>H</given-names></string-name>, <string-name><surname>Yao</surname> <given-names>L</given-names></string-name>, <string-name><surname>Zhong</surname> <given-names>Y</given-names></string-name>, <etal>et al.</etal> <article-title>Developing a portable natural language processing based phenotyping system</article-title>. <source>BMC Med Inform Decis Mak</source> <year>2019</year>;<volume>19</volume>:<fpage>78</fpage>. doi:<pub-id pub-id-type="doi">10.1186/s12911-019-0786-z</pub-id>.</mixed-citation></ref>
+<ref id="c26"><label>[26]</label><mixed-citation publication-type="other"><string-name><surname>Richesson</surname> <given-names>R.</given-names></string-name> <collab>Electronic Health Records-Based Phenotyping n.d.</collab></mixed-citation></ref>
+<ref id="c27"><label>[27]</label><mixed-citation publication-type="journal"><string-name><surname>Paul</surname> <given-names>DW</given-names></string-name>, <string-name><surname>Neely</surname> <given-names>NB</given-names></string-name>, <string-name><surname>Clement</surname> <given-names>M</given-names></string-name>, <string-name><surname>Riley</surname> <given-names>I</given-names></string-name>, <string-name><surname>Al-Hegelan</surname> <given-names>M</given-names></string-name>, <string-name><surname>Phelan</surname> <given-names>M</given-names></string-name>, <etal>et al.</etal> <article-title>Development and validation of an electronic medical record (EMR)-based computed phenotype of HIV-1 infection</article-title>. <source>J Am Med Inform Assoc</source> <year>2018</year>;<volume>25</volume>:<fpage>150</fpage>&#x2013;<lpage>7</lpage>. doi:<pub-id pub-id-type="doi">10.1093/jamia/ocx061</pub-id>.</mixed-citation></ref>
+</ref-list>
+<ack>
+<title>Acknowledgment</title>
+<p>The Author(s) confirmed no figures or tables included from another publication.</p>
+</ack>
+</back>
+</article>

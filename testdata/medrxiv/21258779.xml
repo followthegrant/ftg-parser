@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.2d1 20170631//EN" "JATS-archivearticle1.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" article-type="article" dtd-version="1.2d1" specific-use="production" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="publisher-id">MEDRXIV</journal-id>
+<journal-title-group>
+<journal-title>medRxiv</journal-title>
+<abbrev-journal-title abbrev-type="publisher">medRxiv</abbrev-journal-title>
+</journal-title-group>
+<publisher>
+<publisher-name>Cold Spring Harbor Laboratory</publisher-name>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1101/2021.06.19.21258779</article-id>
+<article-version>1.1</article-version>
+<article-categories>
+<subj-group subj-group-type="hwp-journal-coll">
+<subject>Epidemiology</subject>
+</subj-group>
+</article-categories>
+<title-group>
+<article-title>A physically plausible incidence rate for compartmental epidemiological models</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" corresp="yes">
+<name><surname>Pitschel</surname><given-names>Thomas</given-names></name>
+<xref ref-type="corresp" rid="cor1">1</xref>
+</contrib>
+<aff><institution>Goethe University Frankfurt</institution></aff>
+</contrib-group>
+<author-notes>
+<corresp id="cor1"><label>1</label>Correspondence address: <email>th.pitschel@uni.de</email></corresp>
+</author-notes>
+<pub-date pub-type="epub">
+<year>2021</year>
+</pub-date>
+<elocation-id>2021.06.19.21258779</elocation-id>
+<history>
+<date date-type="received">
+<day>19</day>
+<month>6</month>
+<year>2021</year>
+</date>
+<date date-type="rev-recd">
+<day>19</day>
+<month>6</month>
+<year>2021</year>
+</date>
+<date date-type="accepted">
+<day>22</day>
+<month>6</month>
+<year>2021</year>
+</date>
+</history>
+<permissions>
+<copyright-statement>&#x00A9; 2021, Posted by Cold Spring Harbor Laboratory</copyright-statement>
+<copyright-year>2021</copyright-year>
+<license><license-p>The copyright holder for this pre-print is the author. All rights reserved. The material may not be redistributed, re-used or adapted without the author's permission.</license-p></license>
+</permissions>
+<self-uri xlink:href="21258779.pdf" content-type="pdf" xlink:role="full-text"/>
+<abstract>
+<title>Abstract</title>
+<p>Motivated by the recent trajectory of SARS-Cov-2 new infection incidences in Germany and other European countries, this note reconsiders the need to use a <italic>non-linear</italic> incidence rate function in deterministic compartmental models for current SARS-Cov-2 epidemic modelling. Employing a homogenous contact model, it derives such function systematically using stochastic arguments. The presented result, which is relevant to modelling of proliferation of arbitrary infectious diseases, integrates well with previous analyses, in particular closes an analytical &#x201C;gap&#x201D; mentioned in London and Yorke (1973) and complements the stability related work on incidence rate functions of the form <italic>&#x03B2;I</italic><sup><italic>p</italic></sup><italic>S</italic><sup><italic>q</italic></sup> seen for example in Liu, Hethcote and Levin (1987).</p>
+</abstract>
+<kwd-group kwd-group-type="author">
+<title>Keywords</title>
+<kwd>compartmental model</kwd>
+<kwd>SIR-model</kwd>
+<kwd>non-linear incidence rate function</kwd>
+<kwd>non-linear force of infection</kwd>
+</kwd-group>
+<counts>
+<page-count count="5"/>
+</counts>
+</article-meta>
+<notes>
+<notes notes-type="competing-interest-statement">
+<title>Competing Interest Statement</title><p>The authors have declared no competing interest.</p></notes>
+<notes notes-type="financial-disclosure">
+<title>Funding Statement</title><p>Personally funded.</p></notes>
+<notes notes-type="disclosures">
+<title>Author Declarations</title><p>I confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.</p><p>Yes</p><p>The details of the IRB/oversight body that provided approval or exemption for the research described are given below:</p><p>No human data involved; no approval required.</p><p>All necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived.</p><p>Yes</p><p>I understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).</p><p>Yes</p><p>I have followed all appropriate research reporting guidelines and uploaded the relevant EQUATOR Network research reporting checklist(s) and other pertinent material as supplementary files, if applicable.</p><p>Yes</p></notes>
+</notes>
+</front>
+<body>
+<sec id="s1">
+<label>1</label>
+<title>Introduction</title>
+<p>The massive vaccination campaigns currently underway in the European countries, and nearly completed in some non-European countries such as Canada, the Unites States, United Kingdom and Israel, have coincided with a rapid decline in new SARS-Cov-2-infection incidences in those countries which is remarkable both in degree and consistency. Given the virus- and contact specific parameter estimates of epidemic models derived just a few months ago, and given the vaccine effectiveness parameters, one may wonder how the currently observed incidence decline could possibly be explained with previously used models.</p>
+<p>In Germany, based on data from [<xref ref-type="bibr" rid="c1">1</xref>]-[<xref ref-type="bibr" rid="c5">5</xref>], the expected overall reduction in infection probability achieved with the current state of vaccination is by a factor of about 0.6391866.<sup><xref ref-type="fn" rid="fn2">2</xref></sup> Given that the &#x201C;unconstrained&#x201D; (i.e. preventive measures-free) <italic>R</italic><sub>0</sub> was estimated at about 3, and the infection probability enters linearly into <italic>R</italic><sub>0</sub> in the proliferation models employing a bilinear incidence rate function <sup><xref ref-type="fn" rid="fn4">4</xref></sup>, it is unreasonable that the current vaccination state should suffice to effect an incidence decline robust even under lifting of strong preventive measures such as contact restrictions and mask-wearing.</p>
+<p>It is therefore hypothesized that the better-than-predicted effect of vaccination is due to an-other mechanism. The mechanism here supposed is that single-shot (&#x201C;1s&#x201D;) vaccinations <italic>raise the tolerance level</italic> for virus exposure in these 1s-vaccinated susceptibles with the effect that <italic>multiple</italic> exposures with virus particles would be required to trigger an infection. (One may regard as suitable criterion the total virus dose an individual is being exposed to over one day, say, and a threshold on this value.) This in turn is deemed to have the consequence that instead of mere reduction of infection probability, an infection is assuredly prevented in specific contact instances in which virus density remains below a certain threshold level (&#x201C;threshold effect&#x201D;). As will be seen in the proposed quantitative analysis, the mathematical description of this mechanism leads to a non-linear incidence function in the on-average (&#x003D;&#x201C;deterministic&#x201D;) epidemic modelling. The resulting trajectories then display the larger-than-predicted decline in incidences. As a secondary cause, besides the direct effect of vaccination, the consequential shift of the majority of proliferation events into younger population segments can be stated, which has the same effect of raising the average tolerance level.</p>
+<p>The here suggested mechanism has been mentioned as possibly relevant in epidemic modelling, and analytically (nearly) been provisioned for, in much earlier work: In [<xref ref-type="bibr" rid="c5">5</xref>], the accounting for multiple exposures is named as a reason to use non-linear incidence functions, and consequently incidence rate functions of form &#x223C; <italic>I</italic><sup><italic>p</italic></sup><italic>S</italic><sup><italic>q</italic></sup> are examined. In [<xref ref-type="bibr" rid="c6">6</xref>] the saturation effect, namely that the new infections cannot scale unboundedly linearly with existing number of infectives, is stated to motivate analysis involving non-linear incidence functions, concretely of form <italic>g</italic>(<italic>I</italic>) &#x00B7; <italic>S</italic>, with non-negative bounded differentiable <italic>g</italic> with additional conditions. Most of this previous work however does not focus on a precise translation from physical mechanism of the transmission to a corresponding appropriate mathematical representation of the incidence rate, but often appears to use functional forms guided by tractability or data-matching. What is new in this present note is to give a <italic>systematic</italic> derivation of the non-linearity based on stochastic arguments which properly account for both the saturation and threshold effect. The arguments assume a stylized (in particular: homogenous) contact setting which can be realistic for a substantial part of the contacts occuring in an urbanly situated population (<italic>N</italic> &#x2248; 100000&#x2026;1000000). <sup><xref ref-type="fn" rid="fn5">5</xref></sup> Focus is on the overall effect in quantitative terms <italic>under assumption</italic> that the stated mechanism is present.</p>
+</sec>
+<sec id="s2">
+<label>2</label>
+<title>Framework epidemic model and derivation of non-linearity <italic>g</italic></title>
+<p>The result to be derived below is supposed to be a building block in the well-known compart-mental epidemic models describing the proliferation in terms of the number of susceptible (S), of &#x201C;exposed&#x201D;<sup><xref ref-type="fn" rid="fn6">6</xref></sup> (E), infectious (I) and removed (R) individuals, for example the one stated as eqn. (2.2) in [<xref ref-type="bibr" rid="c11">11</xref>]:
+<disp-formula id="eqn1">
+<alternatives><graphic xlink:href="21258779v1_eqn1.gif"/></alternatives>
+</disp-formula>
+with <italic>S</italic>(<italic>t</italic>) &#x002B; <italic>E</italic>(<italic>t</italic>) &#x002B; <italic>I</italic>(<italic>t</italic>) &#x002B; <italic>R</italic>(<italic>t</italic>) &#x003D; 1. The time-dependent quantities are understood as <italic>shares</italic> of the respective compartment size relative to the (constant) total population size, and are deemed expected values. The <italic>&#x03B2;</italic> above is a transmission probability and contact mechanism related coef ficient, but for the analysis below it will be assumed equal to one. With <italic>S</italic>(<italic>t</italic>) being the share of susceptibles, the <italic>g</italic>(<italic>I</italic>) &#x00B7; <italic>S</italic>(<italic>t</italic>) then takes the meaning of the number of new infections triggered by all infectious among the total population in a unit time interval, divided by <italic>N</italic>.</p>
+<p>Historically, the analysis began with the incidence function <italic>g</italic> chosen as linear in <italic>I</italic>, based on the idea that infections caused by an infective are occuring stochastically independently of the other infections (which is approx. true as long as the infectives density is low) and a single contact suffices for infection. At low infectives counts, i.e. <italic>I</italic> &#x226A; 1, the other members of the population encountered by a specific infective will be nearly disjoint from the ones encountered by any other infective. (I.e. there is no coverage overlap.) Then E(&#x0023; {&#x201C;exposed&#x201D; individuals by any infective)} &#x2248; <inline-formula><alternatives><inline-graphic xlink:href="21258779v1_inline1.gif"/></alternatives></inline-formula> (&#x0023;{&#x201C;exposed&#x201D; individuals by infective <italic>i</italic>}) &#x003D; <italic>I</italic>(<italic>t</italic>) &#x00B7; const. For larger <italic>I</italic> however, the left-hand side expectation must be bounded by <italic>N</italic>, and the linearity in <italic>I</italic> disappears.</p>
+<p>To derive <italic>g</italic>(<italic>I</italic>) systematically for any value of <italic>I</italic>, regard the observation time interval be divided into multiple time slots, and allow any infective to make multiple contacts over the observation interval to other members of the population. Concretely, let <italic>N</italic> &#x00B7; <italic>I</italic>(<italic>t</italic>) be the number of infectives being active at the beginning <italic>t</italic> of the observation time interval, and let each of them make on average <italic>d</italic> contacts with other members during that interval. The contacts are deemed to uniformly randomly covering the population of <italic>N</italic> members, one at a time slot. This is analogous to dialing out a deck of <italic>d</italic> &#x00B7; <italic>N</italic> &#x00B7; <italic>I</italic> cards onto <italic>N</italic> places, for each card choosing one of the places according to the uniform distribution, such that each place may receive multiple cards. We want to compute the expectation of the number of places <italic>K</italic><sub><italic>T</italic></sub> &#x003D; <italic>K</italic><sub><italic>T</italic></sub> (<italic>d</italic> &#x00B7; <italic>N</italic> &#x00B7; <italic>I, N, &#x03BA;</italic>) among the <italic>N</italic> potential receivers that receive equal or more than <italic>&#x03BA;</italic> &#x2208; &#x2115; cards, corresponding to the number of individuals exposed to an infective at least <italic>&#x03BA;</italic> times during the observation interval, which is to constitute the condition upon which infection is triggered. (It is assumed here that any contact constitutes an exposure in the sense of contributing to the triggering of an infection; any transmission probability that may exist to describe events of non-exposure inspite of contact is assumed to be absorbed into the value of <italic>d</italic>. Part of the original numerical value of <italic>&#x03B2;</italic> is to appear here.) Since the susceptibles are in turn independently distributed among the members of the population, it then follows the expected number of infections triggered in the interval is E(<italic>K</italic><sub><italic>I</italic></sub>) &#x003D; E(<italic>K</italic><sub><italic>T</italic></sub>) &#x00B7; <italic>S</italic>(<italic>t</italic>).</p>
+<p>The probability <italic>p</italic><sub>0</sub> of a specific member of the population being &#x201C;hit&#x201D; by zero infectives is given by ((<italic>N</italic> &#x2212; 1) = <italic>N</italic>) <sup><italic>dNI</italic></sup> We will write <italic>d</italic> &#x00B7; <italic>I</italic> = <italic>&#x0128;</italic> and focus on large <italic>N</italic>. Then <italic>p</italic><sub>0</sub> &#x2248; exp(&#x2212;<italic>&#x0128;</italic>). The probability <italic>p</italic><sub>1</sub> of a specific member being hit once by an infective is
+<disp-formula id="eqn2">
+<alternatives><graphic xlink:href="21258779v1_eqn2.gif"/></alternatives>
+</disp-formula>
+</p>
+<p>Generally, the probability <italic>p</italic><sub><italic>k</italic></sub> of a population member being exposed exactly <italic>k</italic> times is found to be
+<disp-formula id="eqn3">
+<alternatives><graphic xlink:href="21258779v1_eqn3.gif"/></alternatives>
+</disp-formula>
+</p>
+<p>For <italic>k</italic> small compared to <italic>N</italic> and compared to <italic>&#x0128;</italic> &#x00B7; <italic>N</italic>, it is <inline-formula><alternatives><inline-graphic xlink:href="21258779v1_inline2.gif"/></alternatives></inline-formula>. (The random variable counting the exposures at a specific population member approximately is found to be Poisson distributed with intensity <italic>&#x0128;</italic>.) The approximate values are normalization-consistent. The probability of a specific member being exposed at least once consequently is (1 &#x2212; <italic>p</italic><sub>0</sub>) &#x2248; 1 &#x2212;exp(&#x2212;<italic>&#x0128;</italic>); of being exposed at least <italic>&#x03BA;</italic> times it is <inline-formula><alternatives><inline-graphic xlink:href="21258779v1_inline3.gif"/></alternatives></inline-formula>.</p>
+<p>Based on these elementary arguments, one derives the expected values as follows: Since all members of the population are here deemed equal in their role as potential virus receivers, it is
+<disp-formula id="eqn4">
+<alternatives><graphic xlink:href="21258779v1_eqn4.gif"/></alternatives>
+</disp-formula>
+</p>
+<p>As argued before, E(<italic>K</italic><sub><italic>I</italic></sub>) &#x003D; E(<italic>K</italic><sub><italic>T</italic></sub>) &#x00B7; <italic>S</italic>(<italic>t</italic>). The incidence function <italic>g</italic> derived by above arguments thus is
+<disp-formula id="eqn5">
+<alternatives><graphic xlink:href="21258779v1_eqn5.gif"/></alternatives>
+</disp-formula>
+</p>
+<sec id="s2a">
+<label>2.1</label>
+<title>Discussion</title>
+<p>As intended, the incidence rate function here is bounded by 1 even as <italic>d</italic> &#x00B7; <italic>I</italic> increases to infinity. Further, the historical bilinear form <italic>&#x03B2;IS</italic> is recovered as special case by observing that for <italic>&#x03BA;</italic> &#x003D; 1, i.e. a single exposure is deemed sufficient for triggering an infection, the first order approximation of the exponential at <italic>&#x0128;</italic> small yields
+<disp-formula id="eqn6">
+<alternatives><graphic xlink:href="21258779v1_eqn6.gif"/></alternatives>
+</disp-formula>
+<disp-formula id="eqn7">
+<alternatives><graphic xlink:href="21258779v1_eqn7.gif"/></alternatives>
+</disp-formula>
+<disp-formula id="eqn8">
+<alternatives><graphic xlink:href="21258779v1_eqn8.gif"/></alternatives>
+</disp-formula>
+</p>
+<p>The next higher order approximation can be verified to equal E(<italic>K</italic><sub><italic>T</italic></sub>) = <italic>N</italic> &#x00B7; (<italic>&#x0128;</italic> &#x2212; <italic>&#x0128;</italic><sup>2</sup>/2 = <italic>N</italic> &#x00B7; <italic>d</italic> &#x00B7; <italic>I</italic>(1 &#x2212; <italic>dI</italic>/2), yielding the first component accounting for coverage overlap leading to the saturation phenomenon. The stochastic analysis of the here employed homogenous contact mechanism is found to motivate well the non-linear modification of the historical form introduced in [<xref ref-type="bibr" rid="c12">12</xref>] (pg 471) based on empirical grounds (&#x201C;to eliminate systematic differences [to observed data]&#x201D;), with additional benefit of attaching a meaning to the arising coefficient.</p>
+<sec id="s2a1">
+<title><italic>The case of multiple required exposures (&#x03BA;</italic> &#x003E; 1<italic>)</italic></title>
+<p>It is easy to see that the leading monomial in <italic>g</italic>, for small values of <italic>&#x0128;</italic>, will always have degree <italic>&#x03BA;</italic>. Exemplarily, one has as approximations for small <italic>&#x0128;</italic>:
+<disp-formula id="ueqn1">
+<alternatives><graphic xlink:href="21258779v1_ueqn1.gif"/></alternatives>
+</disp-formula>
+for <italic>&#x03BA;</italic> &#x003D; 3. This leads, at small <italic>&#x0128;</italic>, to a polynomial behaviour of the incidence function, namely <italic>g</italic>(<italic>I</italic>)&#x00B7; <italic>S</italic> &#x223C; <italic>I</italic><sup><italic>&#x03BA;</italic></sup> &#x00B7; <italic>S</italic>, in line with the form previously analysed in [<xref ref-type="bibr" rid="c5">5</xref>] and subsequent work. Based on the host response characteristics determined for COVID-19 in medical literature and shortly described in footnote 5, one concludes that for COVID-19 such super-linear incidence rate behaviour will be relevant rather in younger population segments. These are exactly the segments that constitute the currently remaining &#x201C;theatre of proliferation&#x201D; after the advancement of the vaccination campaigns.</p>
+</sec>
+</sec>
+</sec>
+</body>
+<back>
+<sec sec-type="data-availability">
+<title>Data Availability</title>
+<p>Only already publicly available data was used.</p>
+<p>
+<ext-link ext-link-type="uri" xlink:href="https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Daten/Impfquotenmonitoring.html">https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Daten/Impfquotenmonitoring.html</ext-link>
+</p>
+<p>
+<ext-link ext-link-type="uri" xlink:href="https://impfdashboard.de/">https://impfdashboard.de/</ext-link>
+</p>
+</sec>
+<ref-list>
+<title>References</title>
+<ref id="c1"><label>[1]</label><mixed-citation publication-type="website"><collab>Impfquotenmonitoring</collab>. <ext-link ext-link-type="uri" xlink:href="https://www.rki.de/DE/Content/InfAZ/N/NeuartigesCoronavirus/Daten/Impfquotenmonitoring.html">https://www.rki.de/DE/Content/InfAZ/N/NeuartigesCoronavirus/Daten/Impfquotenmonitoring.html</ext-link> (retrieved 2021-05-30).</mixed-citation></ref>
+<ref id="c2"><label>[2]</label><mixed-citation publication-type="website"><collab>Impfdashboard</collab>. <ext-link ext-link-type="uri" xlink:href="https://impfdashboard.de/">https://impfdashboard.de/</ext-link> (retrieved 2021-05-30).</mixed-citation></ref>
+<ref id="c3"><label>[3]</label><mixed-citation publication-type="website"><collab>Vaccines and related biological products advisory committee december 10, 2020 meeting briefing document - FDA</collab>, <month>Dec</month> <year>2020</year>. <ext-link ext-link-type="uri" xlink:href="https://www.fda.gov/advisory-committees/advisory-committee-calendar/vaccines-and-related-biological-products-advisory-committee-december-10-2020-meeting-announcement">https://www.fda.gov/advisory-committees/advisory-committee-calendar/vaccines-and-related-biological-products-advisory-committee-december-10-2020-meeting-announcement</ext-link>.</mixed-citation></ref>
+<ref id="c4"><label>[4]</label><mixed-citation publication-type="journal"><string-name><surname>Voysey</surname> <given-names>M</given-names></string-name>, <string-name><surname>Costa Clemens</surname> <given-names>SA</given-names></string-name>, <string-name><surname>Madhi</surname> <given-names>SA</given-names></string-name>, <string-name><surname>Weckx</surname> <given-names>LY</given-names></string-name>, <string-name><surname>Folegatti</surname> <given-names>PM</given-names></string-name>, <string-name><surname>Aley</surname> <given-names>PK</given-names></string-name>, and <etal>et al.</etal> <article-title>Single-dose administration and the influence of the timing of the booster dose on immunogenicity and efficacy of ChAdOx1 nCoV-19 (AZD1222) vaccine: a pooled analysis of four randomised trials</article-title>. <source>Lancet</source>, <volume>397</volume>(<issue>10277</issue>):<fpage>881</fpage>&#x2013;<lpage>891</lpage>, <month>Feb</month> <year>2021</year>.</mixed-citation></ref>
+<ref id="c5"><label>[5]</label><mixed-citation publication-type="journal"><string-name><given-names>Wei-min</given-names> <surname>Liu</surname></string-name>, <string-name><given-names>H.W.</given-names> <surname>Hethcote</surname></string-name>, and <string-name><given-names>S.A.</given-names> <surname>Levin</surname></string-name>. <article-title>Dynamical behavior of epidemiological models with nonlinear incidence rates</article-title>. <source>J. Math. Biol</source>., <volume>25</volume>:<fpage>359</fpage>&#x2013;<lpage>380</lpage>, <year>1987</year>.</mixed-citation></ref>
+<ref id="c6"><label>[6]</label><mixed-citation publication-type="journal"><string-name><given-names>Vincenzo</given-names> <surname>Capasso</surname></string-name> and <string-name><given-names>Gabriella</given-names> <surname>Serio</surname></string-name>. <article-title>A generalization of the Kermack-McKendrick deter-ministic epidemic model</article-title>. <source>Mathematical Biosciences</source>, <volume>42</volume>(<issue>1</issue>):<fpage>43</fpage>&#x2013;<lpage>61</lpage>, <year>1978</year>.</mixed-citation></ref>
+<ref id="c7"><label>[7]</label><mixed-citation publication-type="journal"><string-name><given-names>Andrei</given-names> <surname>Korobeinikov</surname></string-name> and <string-name><given-names>Philip K.</given-names> <surname>Maini</surname></string-name>. <article-title>Non-linear incidence and stability of infectious disease models</article-title>. <source>Mathematical Medicine and Biology</source>, <volume>22</volume>:<fpage>113</fpage>&#x2013;<lpage>128</lpage>, <year>2005</year>.</mixed-citation></ref>
+<ref id="c8"><label>[8]</label><mixed-citation publication-type="journal"><string-name><given-names>Monica</given-names> <surname>Gandhi</surname></string-name>, <string-name><given-names>Chris</given-names> <surname>Beyrer</surname></string-name>, and <string-name><given-names>Eric</given-names> <surname>Goosby</surname></string-name>. <article-title>Masks do more than protect others during COVID-19: Reducing the inoculum of SARS-CoV-2 to protect the wearer</article-title>. <source>Journal of General Internal Medicine</source>, <volume>35</volume>(<issue>10</issue>):<fpage>3063</fpage>&#x2013;<lpage>3066</lpage>, <month>Oct</month> <year>2020</year>. PMC <pub-id pub-id-type="pmcid">7393808</pub-id>.</mixed-citation></ref>
+<ref id="c9"><label>[9]</label><mixed-citation publication-type="journal"><string-name><given-names>Alok</given-names> <surname>Bhargava</surname></string-name>. <article-title>Masks reduce viral inoculum of SARS-CoV-2</article-title>. <source>Journal of General Internal Medicine</source>, <volume>36</volume>(<issue>4</issue>):<fpage>1123</fpage>, <month>April</month> <year>2021</year>. PMC <pub-id pub-id-type="pmcid">7799398</pub-id>.</mixed-citation></ref>
+<ref id="c10"><label>[10]</label><mixed-citation publication-type="journal"><string-name><given-names>Daniel</given-names> <surname>Blanco-Melo</surname></string-name>, <string-name><given-names>Benjamin E.</given-names> <surname>Nilsson-Payant</surname></string-name>, <string-name><given-names>Wen-Chun</given-names> <surname>Liu</surname></string-name>, and <etal>et al.</etal> <article-title>Imbalanced host response to SARS-CoV-2 drives development of COVID-19</article-title>. <source>Cell</source>, <volume>181</volume>(<issue>5</issue>):<fpage>1036</fpage>&#x2013;<lpage>1045</lpage>, <month>May</month> <year>2020</year>. PMC <pub-id pub-id-type="pmcid">7227586</pub-id>.</mixed-citation></ref>
+<ref id="c11"><label>[11]</label><mixed-citation publication-type="journal"><string-name><given-names>H. W.</given-names> <surname>Hethcote</surname></string-name> and <string-name><given-names>P.</given-names> <surname>van den Driessche</surname></string-name>. <article-title>Some epidemiological models with nonlinear incidence</article-title>. <source>J. Math. Biology</source>, <volume>29</volume>(<issue>3</issue>):<fpage>271</fpage>&#x2013;<lpage>287</lpage>, <year>1991</year>.</mixed-citation></ref>
+<ref id="c12"><label>[12]</label><mixed-citation publication-type="journal"><string-name><given-names>James A.</given-names> <surname>Yorke</surname></string-name> and <string-name><given-names>Wayne P.</given-names> <surname>London</surname></string-name>. <article-title>Recurrent outbreaks of measles, chickenpox and mumps, II. systematic differences in contact rates and stochastic effects</article-title>. <source>Am. J. of Epidemiology</source>, <volume>98</volume>(<issue>6</issue>):<fpage>469</fpage>&#x2013;<lpage>482</lpage>, <year>1973</year>.</mixed-citation></ref>
+</ref-list>
+<fn-group>
+<fn id="fn2">
+<label><sup>2</sup></label>
+<p>In Germany, according to [<xref ref-type="bibr" rid="c1">1</xref>], as of 29th May 2021 there had been administered about 45.3 mio anti-SARS-Cov-2 vaccine doses, and about 14.20 mio persons (17.1% of the population) had been completely vaccinated. In about 42.2% of the population at least one vaccine shot had been administered. According to [<xref ref-type="bibr" rid="c2">2</xref>], about 50.5 mio doses had been delivered until 23th May, and of those 97.5% had been administered until 28th May; The distribution of vaccine types among those delivered doses are [<xref ref-type="bibr" rid="c2">2</xref>]: 70.5% of BioNTech/Pfizer (BNT162b2), 19.2% of AstraZeneca (AZD1222), 9.4% of Moderna (mRNA-1273), 0.9% of Johnson&#x0026;Johnson (JNJ-78436735). Except from the JNJ-78436735, which requires one shot to be administered to completion, the three other vaccines require two shots. The reported effectiveness of the vaccines in preventing (symptomatic<sup>3</sup>) infection was stated as: 82%/95% after first/second shot of BNT162b2 [<xref ref-type="bibr" rid="c3">3</xref>], and 76%/81.3% after first/second shot of AZD1222 [<xref ref-type="bibr" rid="c4">4</xref>]. For Moderna&#x2019;s mRNA-1273 we assume the same effectiveness numbers as for BNT162b2. If we regard the effectiveness denoting an equivalent reduction of <italic>probability</italic> of infection, and assume vaccine type distribution in the administered doses equals those in the delivered doses, and assume equal vaccination progress in each vaccine type, and neglect J&#x0026;J vaccines from the calculation, then one must tend to conclude that the overall reduction of infection probability achieved by the current state of vaccination, in Germany, is by an aggregate factor of
+<disp-formula id="ueqn2">
+<alternatives><graphic xlink:href="21258779v1_ueqn2.gif"/></alternatives>
+</disp-formula>
+Here, the 0.578 represents the share of the not-yet-vaccinated population in which no reduction takes place. The 0.991 adjusts for Johnson&#x0026;Johnson numbers being omitted.</p></fn>
+<fn id="fn4">
+<label><sup>4</sup></label>
+<p>Have <italic>R</italic><sub>0</sub> &#x003D; <italic>&#x00B5; &#x00B7; T</italic><sub><italic>I</italic></sub> &#x003D; <italic>d &#x00B7; p &#x00B7; T</italic><sub><italic>I</italic></sub>, where <italic>&#x00B5;</italic> is a transmission coefficient per time unit, <italic>T</italic><sub><italic>I</italic></sub> is the average infectiousness period, <italic>d</italic> is a contact degree and <italic>p</italic> is an aggregate transmission and reception probability.</p></fn>
+<fn id="fn5">
+<label><sup>5</sup></label>
+<p>In the author&#x2019;s opinion the arguments stated in [<xref ref-type="bibr" rid="c7">7</xref>] for focussing merely on concave incidence rates (on biological grounds) are not plausible: The threshold effect will be relevant for any communicable disease in which the counts of transmitted disease carriers can be reduced, say by physical preventive measures (e.g. using masks), or the tolerance level can be raised, as long as a dose-response relationship is at work which has sufficient smoothness. This dose-dependency of the response (and ultimately: of secondary infectiousness) is present e.g. for COVID-19 at least in the younger (i.e. usually more healthy) population ([<xref ref-type="bibr" rid="c8">8</xref>, <xref ref-type="bibr" rid="c9">9</xref>] with [<xref ref-type="bibr" rid="c10">10</xref>] (pg 1043)).</p></fn>
+<fn id="fn6">
+<label><sup>6</sup></label>
+<p>As will become clear later, this group in the present text would rather be called &#x201C;the individuals in which infection is triggered but who are not yet infectious&#x201D;.</p></fn>
+</fn-group>
+</back>
+</article>

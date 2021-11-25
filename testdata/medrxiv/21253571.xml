@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.2d1 20170631//EN" "JATS-archivearticle1.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" article-type="article" dtd-version="1.2d1" specific-use="production" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="publisher-id">MEDRXIV</journal-id>
+<journal-title-group>
+<journal-title>medRxiv</journal-title>
+<abbrev-journal-title abbrev-type="publisher">medRxiv</abbrev-journal-title>
+</journal-title-group>
+<publisher>
+<publisher-name>Cold Spring Harbor Laboratory</publisher-name>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1101/2021.03.15.21253571</article-id>
+<article-version>1.1</article-version>
+<article-categories>
+<subj-group subj-group-type="hwp-journal-coll">
+<subject>Epidemiology</subject>
+</subj-group>
+</article-categories>
+<title-group>
+<article-title>Using Machine Learning along with Data Science algorithms to pre-process and forecast COVID-19 Cases and Deaths</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" corresp="yes">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0001-8937-2692</contrib-id>
+<name><surname>Choudhary</surname><given-names>Avi</given-names></name>
+</contrib>
+<aff id="a1"><institution>Basis Independent Silicon Valley</institution></aff>
+</contrib-group>
+<author-notes>
+<corresp id="cor1"><label>&#x002A;</label> Corresponding author; email: <email>avi30ch@gmail.com</email></corresp>
+</author-notes>
+<pub-date pub-type="epub">
+<year>2021</year>
+</pub-date>
+<elocation-id>2021.03.15.21253571</elocation-id>
+<history>
+<date date-type="received">
+<day>15</day>
+<month>3</month>
+<year>2021</year>
+</date>
+<date date-type="rev-recd">
+<day>15</day>
+<month>3</month>
+<year>2021</year>
+</date>
+<date date-type="accepted">
+<day>17</day>
+<month>3</month>
+<year>2021</year>
+</date>
+</history>
+<permissions>
+<copyright-statement>&#x00A9; 2021, Posted by Cold Spring Harbor Laboratory</copyright-statement>
+<copyright-year>2021</copyright-year>
+<license license-type="creative-commons" xlink:href="http://creativecommons.org/licenses/by-nd/4.0/"><license-p>This pre-print is available under a Creative Commons License (Attribution-NoDerivs 4.0 International), CC BY-ND 4.0, as described at <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by-nd/4.0/">http://creativecommons.org/licenses/by-nd/4.0/</ext-link></license-p></license>
+</permissions>
+<self-uri xlink:href="21253571.pdf" content-type="pdf" xlink:role="full-text"/>
+<abstract>
+<title>Abstract</title>
+<p>The Covid-19 pandemic has taken a major toll on the health and state of our global population. With tough decisions for allocating resources(i.e. vaccines)[<xref ref-type="bibr" rid="c1">1</xref>] are being made, forecasting through machine learning has become more important than ever. Moreover, as vaccines are being brought to the public and cases are going down, it is time that we reflect on where the pandemic has taken the most toll:for the purpose of future reform. This research illustrates two different models and algorithms for COVID-19 forecasting: Auto Regressive models and Recurrent Neural Networks(RNNs). The results show the true potential of RNNs to work with sequential and time-series data to forecast future cases and deaths in different states. As the paper utilizes the tanh activation function and multiple LSTM layers, the research will show the importance of machine learning and its ability to help politicians make decisions when it comes to helping states during the pandemic and future reform. The data will also pre-process the time-series data, using rolling statistics and will clean the data for the auto-regressive model and RNN layers. Thus, we show that along with Recurrent Neural Network layers, activation functions also play a crucial role in the accuracy of the forecast.</p>
+</abstract>
+<kwd-group kwd-group-type="author">
+<kwd>Machine Learning</kwd>
+<kwd>Data Science</kwd>
+<kwd>COVID-19</kwd>
+<kwd>Forecasting</kwd>
+<kwd>Health</kwd>
+</kwd-group>
+<counts>
+<page-count count="8"/>
+</counts>
+</article-meta>
+<notes>
+<notes notes-type="competing-interest-statement">
+<title>Competing Interest Statement</title><p>The authors have declared no competing interest.</p></notes>
+<notes notes-type="financial-disclosure">
+<title>Funding Statement</title><p>No external funding was received</p></notes>
+<notes notes-type="disclosures">
+<title>Author Declarations</title><p>I confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.</p><p>Yes</p><p>The details of the IRB/oversight body that provided approval or exemption for the research described are given below:</p><p>no IRB</p><p>All necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived.</p><p>Yes</p><p>I understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).</p><p>Yes</p><p>I have followed all appropriate research reporting guidelines and uploaded the relevant EQUATOR Network research reporting checklist(s) and other pertinent material as supplementary files, if applicable.</p><p>Yes</p></notes>
+</notes>
+</front>
+<body>
+<sec id="s1">
+<title>Introduction</title>
+<p>The pandemic has taken its toll on the global population, taking the lives of many loved ones, while placing many people in poverty. With the United States having one of the largest populations in the world, the virus displayed its influence drastically in the country. Around 30 million people suffered at the hands of the virus, and over 500,000 people have died from the disease[<xref ref-type="bibr" rid="c2">2</xref>]. As this trend was previously increasing at a drastic rate, prediction and forecasting models are as important and crucial to our society as ever. The public needs to understand which states have suffered the most at the hands of the virus in order to prevent this catastrophe in the future[<xref ref-type="bibr" rid="c3">3</xref>]. Through forecasting the cases and deaths, it is extremely crucial that we are not able to just forecast the future cases and deaths, but are able to do so accurately.</p>
+<p>As auto-regressive models and deep learning Recurrent Neural networks can help us in predicting future cases and deaths, its accuracy will require an activation function of somesort. Thus, it is crucial that we use activation functions to help the model adjust greatly towards the time-series data. A medRxiv paper shows using Recurrent Neural Networks using the sigmoid activation function; however, their research can also be expanded by using the tanh function, which is better used for Recurrent Neural Networks[<xref ref-type="bibr" rid="c4">4</xref>]. Given the vast amount of COVID-19 data provided, data collection is not the problem. However, the COVID-19 data does have a lot of null values and inaccurate data, so pre-processing the data is also crucial. Furthermore, the auto-regressive model needs to have data that is stationary for the model to produce better results, thus weighted moving averages will be needed for the model.</p>
+<p>The goal of this research is to illustrate how vital activation functions and forecast algorithms are important in our society. As the data will be thoroughly pre-processed and applied to the network, the results will show how the virus has exponentially increased the number of cases and deaths.</p>
+</sec>
+<sec id="s2">
+<title>Methods</title>
+<p>This research focuses on forecasting future COVID-19 data using auto-regressive models and Recurrent Neural Networks: using a Kaggle dataset from the New York Times that initially had 6 columns&#x2014;date, county, state, fips, cases, deaths&#x2014; with around 100,000&#x002B; rows[<xref ref-type="bibr" rid="c5">5</xref>]. The data reaches till December 2020, so we can predict that the cases and deaths should still be increasing. To clean the data, the county and fips column had to be dropped. The dataset was then combined by state, rather than county. Furthermore, the null values were dropped and the final results were graphed.</p>
+<fig id="fig1" position="float" fig-type="figure">
+<label>Figure1:</label>
+<caption><title>Visualization of the clean data&#x2019;s cases and deaths.</title></caption>
+<graphic xlink:href="21253571v1_fig1.tif"/>
+</fig>
+<p>For the auto-regressive model, the data had to be made stationary to produce more accurate results. To make sure that the data was stationary, the research implemented rolling statistics which used the rolling mean to make the data more stationary. We used the weighted moving average to give unique weights to different data points.
+<disp-formula id="ueqn1">
+<alternatives><graphic xlink:href="21253571v1_ueqn1.gif"/></alternatives>
+</disp-formula>
+</p>
+<p>The numerator represents the points being multiplied by certain weights(increasing as the time/points goes by). The research had used the weighted moving average, as we wanted to place more of an importance on the new data points rather than the old data points. This will clearly tell the auto-regressive model what the trend clearly is as this will smooth the data more.</p>
+<p>As we are taking advantage of the time-series data, our goal is to predict the future cases and deaths i &#x002B; 7th days ahead. Implementing the auto-regressive model is fairly simple, however, adjusting to the shape of the data and shifting the data is quite intricate. As the data requires manipulation of the data shape to fit in the model, the process can get extremely intricate and complex. The equation for the auto-regressive model is as follows:
+<disp-formula id="ueqn2">
+<alternatives><graphic xlink:href="21253571v1_ueqn2.gif"/></alternatives>
+</disp-formula>
+</p>
+<p>Later, Recurrent Neural Network layers were applied to the pre-processed data and the LSTM layers were set to the current hyperparameters. The LSTM layers are essential as they use the past sequence memory needed to predict the future sequence. The mathematical equations in the LSTM network is:
+<disp-formula id="ueqn3">
+<alternatives><graphic xlink:href="21253571v1_ueqn3.gif"/></alternatives>
+</disp-formula>
+</p>
+<p>The <italic>i</italic> is the input gate; the <italic>f</italic> represents the forget gate; the <italic>c</italic> is the memory cell, and the <italic>o</italic> is the output gate. As implementing multiple LSTM layers would be too convoluted a single LSTM layer was used. We used the stacked LSTM layer, whiched called for two LSTM layers and one dense layer. We used two activation functions: the sigmoid(&#x03C3;) and the tanh function in order to see how the RNN layers react to the functions.
+<disp-formula id="ueqn4">
+<alternatives><graphic xlink:href="21253571v1_ueqn4.gif"/></alternatives>
+</disp-formula>
+</p>
+<p>The train and test data split was 80-20, which allowed us sufficient data for us to train the model. The 20&#x0025; of the dataset would be used to test how well the model did with new data. We can check how well the data adjusts to the model through a loss function. Below is the equation of the cross entropy loss function implemented.
+<disp-formula id="ueqn5">
+<alternatives><graphic xlink:href="21253571v1_ueqn5.gif"/></alternatives>
+</disp-formula>
+</p>
+</sec>
+<sec id="s3">
+<title>Results</title>
+<p>As we mentioned before, the model&#x2019;s error can be measured through different loss functions. In our research, we used the Root Mean Square error to determine the loss.
+<disp-formula id="ueqn6">
+<alternatives><graphic xlink:href="21253571v1_ueqn6.gif"/></alternatives>
+</disp-formula>
+</p>
+<p>For this paper, we will only include one state: California. The RMSE for the auto-regressive model in forecasting the future US COVID-19 deaths is 999.1466 and the cases is 7629.379. The RMSE for the recurrent neural networks implementation, along with the activation function for the deaths is 612.3913 and the cases is 5491.7842. The auto-regressive value predictor is 0.765 and the predictor for the recurrent-neural network model is 0.883. The figure below shows the cases and deaths prediction for the state of California using the Recurrent Neural Network model, along with its activation functions.</p>
+<fig id="fig2" position="float" fig-type="figure">
+<label>Figure 2:</label>
+<caption><title>Here the cases&#x2019; true labels and the RNNs model&#x2019;s predictions are graphed.</title></caption>
+<graphic xlink:href="21253571v1_fig2.tif"/>
+</fig>
+<fig id="fig3" position="float" fig-type="figure">
+<label>Figure 3:</label>
+<caption><title>A visualization that represents the number of deaths&#x2019; true labels vs the RNN model&#x2019;s predictions.</title></caption>
+<graphic xlink:href="21253571v1_fig3.tif"/>
+</fig>
+</sec>
+<sec id="s4">
+<title>Discussion</title>
+<p>The figures clearly represent the accurate predictions that the RNNs forecast regarding the future COVID-19 Cases and Deaths.</p>
+<p>We can see that compared to the auto-regressive model, the RNNs have a much better RMSE error as the deep learning algorithm uses Long Short Term layers and activation functions for the model to better adjust to the time-series data. The research did not just implement a sigmoid function, but also imported a tanh function to better help the RNN model adjust to the data. Furthermore, adding the weights to average out the data significantly helped to adjust to the model. While the data did not need to be averaged for the RNNs, as it has the ability to adjust to the data, it was well needed for the auto-regressive model.</p>
+<p>While there is still improvement needing to be made in the RNNs implementation, as the forecast accuracy should be around &#x003E; 0.995 for the model to be beneficial, the results still show that the model is more useful and beneficial towards forecasting rather than the auto-regressive model. We can also see that the RMSE error differs between the cases and deaths as the deaths error is lower. However, the number of deaths have different training data and numbers compared to the number of deaths, so we cannot compare the two RMSE errors. The dataset was till December 2020, and so we can still see that the cases and deaths are rising and the model as well shows the similar trend.</p>
+<p>Even looking at a simple average model from other papers, we can see that the RNN application has produced much better results, indicating that neural networks produce the depth needed to produce accurate results[<xref ref-type="bibr" rid="c6">6</xref>].</p>
+<p>As the graphs show an increase in the cases and deaths in California that reach statistically high numbers, the government should take into account that because California has a large population, they should have the right to more resources and vaccines. Even in the future, better precautions should be taken to prevent California from becoming one of the deadliest states in the country.</p>
+</sec>
+<sec id="s5">
+<title>Conclusion</title>
+<p>The US has shown the world how easily it is susceptible to the virus, and how deadly the virus is. This paper focuses on the huge benefits of using deep learning algorithms and activation functions rather than simple auto-regressiv models. While this research does focus on auto-regressive models, the dataset can also be applied to Auto-regressive integrated moving average models as well; we can check what the difference in the results are when compared to the RNNs. There is still improvement for the RNN models as the layers&#x2019; parameters could be better classified and implemented. We can also use convolutional neural networks to better improve the accuracy of the model by using 2D convolutional layers. Furthermore, we can go even more in depth and explore by county. By doing this, the public will know which area of the state is contributing to the spread of the virus(i.e Los Angeles county in California).</p>
+</sec>
+</body>
+<back>
+<sec sec-type="data-availability">
+<title>Data Availability</title>
+<p>The availability of all the data referred to in the manuscript and note links below.</p>
+<p>
+<ext-link ext-link-type="uri" xlink:href="https://www.kaggle.com/fireballbyedimyrnmom/us-counties-covid-19-dataset">https://www.kaggle.com/fireballbyedimyrnmom/us-counties-covid-19-dataset</ext-link>
+</p>
+</sec>
+<sec id="s6">
+<title>Data Availability</title>
+<p>The raw COVID-19 Time-series data, created by the New York Times, is currently available in the Kaggle repository.</p>
+<p><ext-link ext-link-type="uri" xlink:href="https://www.kaggle.com/fireballbyedimyrnmom/us-counties-covid-19-dataset">https://www.kaggle.com/fireballbyedimyrnmom/us-counties-covid-19-dataset</ext-link></p>
+</sec>
+<sec id="s7">
+<title>Declaration of Competing Interests</title>
+<p>The author declares that she has no support from any organization for the submitted work; no financial relationships with any organizations that might have an interest in the submitted work; no other relationships or activities that could appear to have influenced the submitted work.</p>
+</sec>
+<ref-list>
+<title>References</title>
+<ref id="c1"><label>1.</label><mixed-citation publication-type="other"><string-name><surname>Emanuel</surname>, <given-names>Ezekiel J.</given-names></string-name>, <etal>et al.</etal> &#x201C;<article-title>Fair Allocation of Scarce Medical Resources in the Time of Covid-19: NEJM</article-title>.&#x201D; <source>New England Journal of Medicine, New England Journal of Medicine, 21</source> <month>May</month> <year>2020</year>, <ext-link ext-link-type="uri" xlink:href="http://www.nejm.org/doi/full/10.1056/nejmsb2005114">www.nejm.org/doi/full/10.1056/nejmsb2005114</ext-link>.</mixed-citation></ref>
+<ref id="c2"><label>2.</label><mixed-citation publication-type="other"><string-name><surname>Re</surname>, <given-names>John Hopkins</given-names></string-name>. &#x201C;<article-title>COVID-19 Map</article-title>.&#x201D; <source>Johns Hopkins Coronavirus Resource Center, Johns Hopkins</source>, <year>2021</year>, <ext-link ext-link-type="uri" xlink:href="http://coronavirus.jhu.edu/map.html">coronavirus.jhu.edu/map.html</ext-link>.</mixed-citation></ref>
+<ref id="c3"><label>3.</label><mixed-citation publication-type="other"><string-name><given-names>Stuart M.</given-names> <surname>Butler</surname></string-name>, PhD. &#x201C;<article-title>After COVID-19: Thinking Differently About Running the Health Care System</article-title>.&#x201D; <source>JAMA, JAMA Network, 23</source> <month>June</month> <year>2020</year>, <ext-link ext-link-type="uri" xlink:href="http://jamanetwork.com/journals/jama/fullarticle/2767311">jamanetwork.com/journals/jama/fullarticle/2767311</ext-link>.</mixed-citation></ref>
+<ref id="c4"><label>4.</label><mixed-citation publication-type="book"><string-name><surname>Villegas</surname>, <given-names>Marta</given-names></string-name>, <etal>et al.</etal> &#x201C;<chapter-title>Predicting the Evolution of COVID-19 Mortality Risk: a Recurrent Neural Network Approach</chapter-title>.&#x201D; <source>MedRxiv</source>, <publisher-name>Cold Spring Harbor Laboratory Press, 1</publisher-name> <month>Jan</month>. <year>2020</year>, <ext-link ext-link-type="uri" xlink:href="http://www.medrxiv.org/content/10.1101/2020.12.22.20244061v1">www.medrxiv.org/content/10.1101/2020.12.22.20244061v1</ext-link>.</mixed-citation></ref>
+<ref id="c5"><label>5.</label><mixed-citation publication-type="other"><collab>MyrnaMFL</collab>. <source>&#x201C;US Counties COVID 19 Dataset.&#x201D; Kaggle, New York Times, 14</source> <month>Mar</month>. <year>2021</year>, <ext-link ext-link-type="uri" xlink:href="http://www.kaggle.com/fireballbyedimyrnmom/us-counties-covid-19-dataset">www.kaggle.com/fireballbyedimyrnmom/us-counties-covid-19-dataset</ext-link>.</mixed-citation></ref>
+<ref id="c6"><label>6.</label><mixed-citation publication-type="book"><string-name><given-names>SI.</given-names> <surname>Alzahrani</surname></string-name>, <string-name><given-names>IA.</given-names> <surname>Aljamaan</surname></string-name>, <etal>et al.</etal> &#x201C;<chapter-title>Application of Machine Learning Time Series Analysis for Prediction COVID-19 Pandemic</chapter-title>.&#x201D; <source>Research on Biomedical Engineering</source>, <publisher-name>Springer International Publishing, 1</publisher-name> <month>Jan</month>. <year>1970</year>, <ext-link ext-link-type="uri" xlink:href="http://link.springer.com/article/10.1007/s42600-020-00105-4">link.springer.com/article/10.1007/s42600-020-00105-4</ext-link>.</mixed-citation></ref>
+</ref-list>
+</back>
+</article>

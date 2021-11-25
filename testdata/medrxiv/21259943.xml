@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.2d1 20170631//EN" "JATS-archivearticle1.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" article-type="article" dtd-version="1.2d1" specific-use="production" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="publisher-id">MEDRXIV</journal-id>
+<journal-title-group>
+<journal-title>medRxiv</journal-title>
+<abbrev-journal-title abbrev-type="publisher">medRxiv</abbrev-journal-title>
+</journal-title-group>
+<publisher>
+<publisher-name>Cold Spring Harbor Laboratory</publisher-name>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1101/2021.07.03.21259943</article-id>
+<article-version>1.1</article-version>
+<article-categories>
+<subj-group subj-group-type="hwp-journal-coll">
+<subject>Epidemiology</subject>
+</subj-group>
+</article-categories>
+<title-group>
+<article-title>Masks in a Post COVID-19 World: A Better Alternative to Curtailing Influenza?</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-8195-7490</contrib-id>
+<name><surname>Froese</surname><given-names>Henri</given-names></name>
+</contrib>
+<contrib contrib-type="author" corresp="yes">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-8032-611X</contrib-id>
+<name><surname>Prempeh</surname><given-names>Angel G. A.</given-names></name>
+<xref ref-type="corresp" rid="cor1">&#x002A;</xref>
+</contrib>
+<aff><institution>Goethe-University Frankfurt am Main, Saginaw Valley State University</institution></aff>
+</contrib-group>
+<author-notes>
+<corresp id="cor1"><label>&#x002A;</label> Corresponding author; email: <email>prempehresearch@gmail.com</email></corresp>
+</author-notes>
+<pub-date pub-type="epub">
+<year>2021</year>
+</pub-date>
+<elocation-id>2021.07.03.21259943</elocation-id>
+<history>
+<date date-type="received">
+<day>03</day>
+<month>7</month>
+<year>2021</year>
+</date>
+<date date-type="rev-recd">
+<day>03</day>
+<month>7</month>
+<year>2021</year>
+</date>
+<date date-type="accepted">
+<day>07</day>
+<month>7</month>
+<year>2021</year>
+</date>
+</history>
+<permissions>
+<copyright-statement>&#x00A9; 2021, Posted by Cold Spring Harbor Laboratory</copyright-statement>
+<copyright-year>2021</copyright-year>
+<license license-type="creative-commons" xlink:href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><license-p>This pre-print is available under a Creative Commons License (Attribution-NonCommercial-NoDerivs 4.0 International), CC BY-NC-ND 4.0, as described at <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by-nc-nd/4.0/">http://creativecommons.org/licenses/by-nc-nd/4.0/</ext-link></license-p></license>
+</permissions>
+<self-uri xlink:href="21259943.pdf" content-type="pdf" xlink:role="full-text"/>
+<abstract>
+<title>Abstract</title>
+<p>Over the course of the coronavirus pandemic, it has become apparent that non-pharmaceutical interventions such as masks and social distancing are of great help in mitigating the transmission of airborne infectious diseases. Additionally, data from respiratory specimen analysis from the past year show that current mask mandates established for COVID-19 have inadvertently reduced the rates of other respiratory diseases, including influenza. Thus, the question arises as to whether comparatively mild measures should be kept in place after the pandemic to reduce the impact of influenza. In this study, we employed a series of differential equations to simulate past influenza seasons, assuming people wore face masks. This was achieved by introducing a variable to account for the efficacy and prevalence of masks and then analyzing its impact on influenza transmission rate in an SEIR model fit to the actual past seasons. We then compared influenza rates in this hypothetical scenario with the actual rates over the seasons. Our results show that several combinations of mask efficacy and prevalence can significantly reduce the burden of seasonal influenza. Particularly, our simulations suggest that a minority of individuals wearing masks greatly reduce the number of influenza infections. Considering the efficacy rates of masks and the relatively insignificant monetary cost, we highlight that it may be a viable alternative or complement to influenza vaccinations. We conclude with a brief discussion of our results and other practical aspects</p>
+</abstract>
+<counts>
+<page-count count="10"/>
+</counts>
+</article-meta>
+<notes>
+<notes notes-type="competing-interest-statement">
+<title>Competing Interest Statement</title><p>The authors have declared no competing interest.</p></notes>
+<notes notes-type="financial-disclosure">
+<title>Funding Statement</title><p>This research received no funding or grant from any funding agency in the public, commercial, or not-for-profit sectors.</p></notes>
+<notes notes-type="disclosures">
+<title>Author Declarations</title><p>I confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.</p><p>Yes</p><p>The details of the IRB/oversight body that provided approval or exemption for the research described are given below:</p><p>Research does not involve human subjects and are not subjected to IRB approval or exemption</p><p>All necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived.</p><p>Yes</p><p>I understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).</p><p>Yes</p><p>I have followed all appropriate research reporting guidelines and uploaded the relevant EQUATOR Network research reporting checklist(s) and other pertinent material as supplementary files, if applicable.</p><p>Yes</p></notes>
+</notes>
+</front>
+<body>
+<sec id="s1">
+<label>1</label>
+<title>Introduction</title>
+<p>In March 2020, the WHO officially declared COVID-19 a global pandemic as it extended beyond borders and reached out to various parts of the world([<xref ref-type="bibr" rid="c1">1</xref>]). The spread of the virus has halted several activities and has placed uncertainty on future events. Scientists and researchers have recommended safety measures like social distancing, wearing of masks and quarantines to reduce infection rates, or &#x201C;flatten the curve&#x201D; ([<xref ref-type="bibr" rid="c2">2</xref>]). In the advent of this new reality, current analysis of respiratory specimens from 2018-20 in Hong Kong indicate that rates of other respiratory pathogens such as Respiratory Syncytial Virus and influenza are decreasing with increased mask-wearing([<xref ref-type="bibr" rid="c3">3</xref>]). This is not unique to Hong Kong,([<xref ref-type="bibr" rid="c4">4</xref>]) presents data from the United States, Australia, Chile, and South Africa also showing significantly reduced rates of influenza following the widespread adoption of non-pharmaceutical interventions such as masks. To gain an in-depth and quantitative understanding of the impact of face masks on the reduction in influenza activity, we simulate how past influenza seasons 2010/11 to 2018/19 would have played out <italic>had people worn masks</italic>.</p>
+<p>The simulations were developed using deterministic compartmental models with the incorporation of variables to account for the impact of masks. Using publicly available influenza infection data for the past seasons from the CDC, the model for each season (2010/11 to 2018/19) was calibrated. We then simulate the seasons factoring in different scenarios of mask prevalence as well as inward-outward efficacy. The results of these counterfactual simulations are described and compared in <xref ref-type="sec" rid="s3">section 3</xref> and discussed in <xref ref-type="sec" rid="s4">section 4</xref>.</p>
+</sec>
+<sec id="s2">
+<label>2</label>
+<title>Methods</title>
+<p>In this section, parameters involved in the deterministic Susceptible-Exposed-Infected-Recovered model(SEIR) was described. Then, the mathematical underlinings of the mask parameter were evaluated.</p>
+<sec id="s2a">
+<label>2.1</label>
+<title>SEIR model and parameters</title>
+<p>The SEIR-model with time-dependent transmission rate is described by the following equations:
+<disp-formula id="eqn1">
+<alternatives><graphic xlink:href="21259943v1_eqn1.gif"/></alternatives>
+</disp-formula>
+Where <italic>S</italic>(<italic>t</italic>), <italic>E</italic>(<italic>t</italic>), <italic>I</italic>(<italic>t</italic>), <italic>R</italic>(<italic>t</italic>) are the number of susceptible, exposed (infected, not infectious yet), infected, and recovered individuals at a given time <italic>t</italic>. Since the flu fatality rates are insignificant in relation to the total population([<xref ref-type="bibr" rid="c5">5</xref>]),deaths from the flu, and unrelated births and deaths were disregarded. The parameter <italic>&#x03B4;</italic> describes the rate of progression from exposed to infected, that is, the inverse of the incubation period. The parameter <italic>&#x03B3;</italic> is the rate of progression from infected to recovered or the inverse of the generation time.</p>
+<p>Transmission rate <italic>&#x03B2;</italic>(<italic>t</italic>) is described as the number of contacts an infected individual has per timestep, multiplied by the probability of disease transmission in a contact. Thus, as only the fraction <inline-formula><alternatives><inline-graphic xlink:href="21259943v1_inline1.gif"/></alternatives></inline-formula> of the population can be infected, every infected infects <inline-formula><alternatives><inline-graphic xlink:href="21259943v1_inline2.gif"/></alternatives></inline-formula> individuals per timestep. In regards to influenza, all parameters of the SEIR-model except the time-dependent transmission rate <italic>&#x03B2;</italic>(<italic>t</italic>) are publicly available via CDC data <sup><xref ref-type="fn" rid="fn1">1</xref></sup>. Hence, we estimate <italic>&#x03B2;</italic>(<italic>t</italic>) by fitting the model to the scaled past infection data.</p>
+<p>To account for mask usage, a simplified version of the model used in [<xref ref-type="bibr" rid="c6">6</xref>] was adopted.</p>
+<list list-type="bullet">
+<list-item><p><italic>m</italic><sub>pre</sub> &#x2208; [0, 1] is the mask prevalence, taken as the proportion of contacts in which an individual wears a mask. We assume that infection status does not affect mask-wearing behavior.</p></list-item>
+<list-item><p><inline-formula><alternatives><inline-graphic xlink:href="21259943v1_inline2a.gif"/></alternatives></inline-formula> is the efficacy of mask usage by the infected individual, i.e. the reduction of the chance of infection when only the infected wears a mask.</p></list-item>
+<list-item><p><inline-formula><alternatives><inline-graphic xlink:href="21259943v1_inline2b.gif"/></alternatives></inline-formula> is the efficacy of mask usage by the susceptible individual, i.e. the reduction of the chance of infection when only the susceptible wears a mask.</p></list-item>
+</list>
+<p>Consequently, we assume that the reduction of the chance of infection when both individuals in a contact wear a mask is <inline-formula><alternatives><inline-graphic xlink:href="21259943v1_inline2c.gif"/></alternatives></inline-formula>. For example, if the outward efficacy is 0.7 and the inward efficacy is 0.9, then the infection only happens in 3&#x0025; of contacts where both individuals wear a mask. We combine the parameters to define the <italic>mask impact m</italic> &#x2208; [0, 1], the <italic>proportion of contacts in which masks prevent an infection</italic> given the three parameters listed above. That is the sum of the proportions of contacts prevented if both individuals wear masks, only the infectious individual wears a mask, only the susceptible individual wears a mask, or no one wears a mask, leading to the following formula that sums these four cases up:
+<disp-formula id="ueqn1">
+<alternatives><graphic xlink:href="21259943v1_ueqn1.gif"/></alternatives>
+</disp-formula>
+To incorporate <italic>m</italic> (the proportion of contacts prevented through mask usage) into the model, note that without masks, every infected infects <inline-formula><alternatives><inline-graphic xlink:href="21259943v1_inline3.gif"/></alternatives></inline-formula> individuals per timestep &#x2013; thus, with masks, this changes to <inline-formula><alternatives><inline-graphic xlink:href="21259943v1_inline4.gif"/></alternatives></inline-formula>. We get the following model:
+<disp-formula id="eqn2">
+<alternatives><graphic xlink:href="21259943v1_eqn2.gif"/></alternatives>
+</disp-formula>
+We will now look at the data used to fit <italic>&#x03B2;</italic>(<italic>t</italic>) for this model to past flu seasons (without masks, i.e. with <italic>m</italic> = 0).</p>
+</sec>
+<sec id="s2b">
+<label>2.2</label>
+<title>Infection data</title>
+<p>The CDC FluView application<sup><xref ref-type="fn" rid="fn2">2</xref></sup> provides weekly number of positive flu tests (we do not separate between different strains) in public health and clinical laboratories for seasons 2010/11 to 2018/19. To extrapolate from the weekly number of positive flu tests to the weekly number of infected individuals, we additionally use the CDC&#x2019;s estimated total number of infections per season<sup><xref ref-type="fn" rid="fn3">3</xref></sup>.</p>
+<p>For any season, let <italic>P</italic><sub><italic>i</italic></sub> be the number of positive flu tests in week <italic>i</italic>. Let <italic>T</italic> be the total number of infections for the season. We assume that the number of positive tests is proportional to the actual number of infected <italic>I</italic><sub><italic>i</italic></sub> that we are interested in, that is, <italic>I</italic><sub><italic>i</italic></sub> = <italic>&#x03BB;P</italic><sub><italic>i</italic></sub>, for all weeks <italic>i</italic>, for some fixed (per season) scaling factor <italic>&#x03BB; &#x003E;</italic> 0. As infections persist on average for one week (see the description of known parameters in 2.3), we get that the sum of infected per week over all weeks is (approximately) the total number of infections for the season: &#x2211;<sub><italic>i</italic></sub> <italic>I</italic><sub><italic>i</italic></sub> = <italic>T</italic>. We thus have &#x2211;<sub><italic>i</italic></sub> <italic>&#x03BB;P</italic><sub><italic>i</italic></sub> = &#x2211;<sub><italic>i</italic></sub> <italic>I</italic><sub><italic>i</italic></sub> = <italic>T</italic>, and can solve for the season&#x2019;s scaling factor with</p>
+<p>For each season, we calculate the scaling factor <italic>&#x03BB;</italic> and use it to scale the CDC data.</p>
+</sec>
+<sec id="s2c">
+<label>2.3</label>
+<title>Beta estimation from infection data</title>
+<p>To estimate the time-dependent transmission rate, we fit a seasonal function of the form
+<disp-formula id="ueqn2">
+<alternatives><graphic xlink:href="21259943v1_ueqn2.gif"/></alternatives>
+</disp-formula>
+to the scaled data for each season, similar to approaches in e.g. [<xref ref-type="bibr" rid="c7">7</xref>], [<xref ref-type="bibr" rid="c8">8</xref>].</p>
+<p>Timesteps <italic>t</italic> are in weeks. The incubation period and generation time are adapted from [<xref ref-type="bibr" rid="c9">9</xref>], yielding <italic>&#x03B3;</italic> = 1.0 (infections last one week) and <inline-formula><alternatives><inline-graphic xlink:href="21259943v1_inline5.gif"/></alternatives></inline-formula> (incubation period of two days).</p>
+<p>Least-Squares fitting using the LMFIT Python library ([<xref ref-type="bibr" rid="c10">10</xref>]) yields good fits on all seasons. See <xref rid="fig1" ref-type="fig">figure 1</xref> for a visualization of the data and the achieved fit.</p>
+<fig id="fig1" position="float" fig-type="figure">
+<label>Figure 1:</label>
+<caption><p>Results of transmission rate fitting to data of past flu seasons: Actual infection data (scaled as outlined in 2.2) and prediction for influenza seasons 2010/11 to 2018/19.</p></caption>
+<graphic xlink:href="21259943v1_fig1.tif"/>
+</fig>
+<fig id="fig2" position="float" fig-type="figure">
+<label>Figure 2:</label>
+<caption><p>(Reduction of) total infections with mask usage for different choices of mask prevalence <italic>m</italic><sub>pre</sub>, reduction in chance of infection when the infectious individual wears a mask <inline-formula><alternatives><inline-graphic xlink:href="21259943v1_inline6.gif"/></alternatives></inline-formula>, and reduction in chance of infection when the susceptible individual wears a mask <inline-formula><alternatives><inline-graphic xlink:href="21259943v1_inline7.gif"/></alternatives></inline-formula>.</p></caption>
+<graphic xlink:href="21259943v1_fig2.tif"/>
+</fig>
+</sec>
+</sec>
+<sec id="s3">
+<label>3</label>
+<title>Results</title>
+<p>We simulate the past influenza seasons with the estimated transmission rate <italic>&#x03B2;</italic>(<italic>t</italic>) and compare the outcome with and without masks. As evidenced in [<xref ref-type="bibr" rid="c11">11</xref>] and [<xref ref-type="bibr" rid="c12">12</xref>], mask efficacy is highly uncertain. Therefore, different combinations of mask prevalence and outward and inward efficacy are implemented.</p>
+<p>Findings show that when mask prevalence is high, say over 0.6, low efficacies (for example caused by masks worn too long, loose-fitting, etc.) are sufficient to fully contain the flu. And even with low prevalence, inward and outward efficacies of around 0.5 prevent over 70&#x0025; of infections. As such efficacies might be likely as described in [<xref ref-type="bibr" rid="c6">6</xref>], it seems as though a minority of disciplined mask-wearers is sufficient to prevent most infections.</p>
+<p>Mask use during the Coronavirus pandemic in the US ranged from 50&#x0025; to 70&#x0025; from May to December 2020<sup><xref ref-type="fn" rid="fn4">4</xref></sup>. We believe it is unlikely that similar acceptance rates can be achieved after the Coronavirus pandemic without a mask mandate. As evidenced by the significant reduction in infections for even low efficacies when prevalence is high, a mask mandate would certainly be highly effective in containing the flu. <xref rid="fig3" ref-type="fig">Figure 3</xref> shows detailed results for all seasons for two scenarios we deem the most relevant: the &#x2018;mask mandate&#x2019; scenario with a prevalence of 0.5 and outward and inward efficacies of 0.35, and the &#x2018;masks suggested&#x2019; scenario with a prevalence of 0.2, with outward and inward efficacies of 0.45. We thus err on the lower range of efficacy estimates. Behind the assumed higher efficacy in the second scenario lies the assumption that individuals wearing masks without a mandate are more likely to wear high-quality, well-fitting masks.</p>
+<fig id="fig3" position="float" fig-type="figure">
+<label>Figure 3:</label>
+<caption><p>Weekly and total infections with mask usage by season, simulated for the &#x2018;masks suggested&#x2019; scenario (left) and the &#x2018;mask mandate&#x2019; scenario (right).</p>
+<p>The simulations how that in both scenarios, most infections are prevented in each season. The &#x2018;mask mandate&#x2019; scenario succeeds in fully containing the flu in most seasons.</p></caption>
+<graphic xlink:href="21259943v1_fig3.tif"/>
+</fig>
+</sec>
+<sec id="s4">
+<label>4</label>
+<title>Discussion</title>
+<p>Our simulations show that a relatively low mask prevalence of around 0.2 and assumed moderate inward and outward efficacy of 0.45 would have greatly reduced influenza infections by <italic>&#x003E;</italic> 90&#x0025; over several past seasons. Additionally, 0.5 mask prevalence combined with lower efficacies leads to <italic>&#x003E;</italic> 95&#x0025; reduction in influenza illnesses. Limitations of our approach include no stratification by age or contact scenario, significant uncertainties in mask use and efficacy, and disregard of other non-pharmaceutical interventions.</p>
+<p>Currently, vaccinations are the prominent way to protect against influenza, having been available on a large scale since 1945 ([<xref ref-type="bibr" rid="c13">13</xref>]). Current influenza vaccination rates in the US are not high enough to provide herd immunity ([<xref ref-type="bibr" rid="c14">14</xref>]), and have averted around 15-20&#x0025; of influenza illnesses over the seasons from 2011-12 to 2018-19 <sup><xref ref-type="fn" rid="fn5">5</xref></sup>. While, vaccines have to be newly manufactured each season with significant R&#x0026;D investments, the vaccines of course only have to be administered once while face masks would need to be worn continuously, which might be seen as more burdensome by the general population.</p>
+<p>[<xref ref-type="bibr" rid="c15">15</xref>] estimates the economic burden of seasonal influenza in the United States at &#x0024;6.3 -&#x0024;25.3 billion. Assuming the economic cost scales linearly with the number of infections, a scenario in which at least 95&#x0025; of infections are reduced (which includes both the &#x2018;mask mandate&#x2019; and &#x2018;masks suggested&#x2019; scenarios) saves &#x0024;6.0 &#x2013; &#x0024;24.0 billion per season, at negligible cost. Similar to public opinion regarding potential health hazards such as smoking and driving without seatbelts shifting over time, and legislation being introduced, we can imagine the Coronavirus pandemic changing public (and expert) opinion towards everyday mask usage; then again, large parts of the population might be tired of wearing masks after the Coronavirus pandemic. If public opinion shifts and (at least) a minority of individuals wears masks, our simulations show that this would greatly reduce the significant burden of seasonal influenza, at a little monetary cost.</p>
+</sec>
+</body>
+<back>
+<sec sec-type="data-availability">
+<title>Data Availability</title>
+<p>The authors confirm that the data supporting the findings of this study are available within the article and its supplementary materials.</p>
+</sec>
+<ref-list>
+<title>References</title>
+<ref id="c1"><label>[1]</label><mixed-citation publication-type="journal"><collab>Domenico Cucinotta and Maurizio Vanelli</collab>. <article-title>Who declares covid-19 a pandemic</article-title>. <source>Acta bio-medica : Atenei Parmensis</source>, <volume>91</volume>(<issue>1</issue>), <month>March</month> <year>2020</year>.</mixed-citation></ref>
+<ref id="c2"><label>[2]</label><mixed-citation publication-type="other"><collab>Thomas Wieland</collab>. <source>Flatten the curve! modeling sars-cov-2/covid-19 growth in germany at the county level</source>. <year>2020</year>.</mixed-citation></ref>
+<ref id="c3"><label>[3]</label><mixed-citation publication-type="journal"><string-name><given-names>Ka Hung</given-names> <surname>Chan</surname></string-name>, <string-name><given-names>Pak-wing</given-names> <surname>Lee</surname></string-name>, <string-name><given-names>Crystal Ying</given-names> <surname>Chan</surname></string-name>, <string-name><given-names>Kin Bong Hubert</given-names> <surname>Lam</surname></string-name>, and <string-name><given-names>Pak-leung</given-names> <surname>Ho</surname></string-name>. <article-title>Monitoring respiratory infections in covid-19 epidemics</article-title>. <source>BMJ</source>, <volume>369</volume>, <year>2020</year>.</mixed-citation></ref>
+<ref id="c4"><label>[4]</label><mixed-citation publication-type="journal"><string-name><given-names>Sonja J</given-names> <surname>Olsen</surname></string-name>, <string-name><given-names>Eduardo</given-names> <surname>Azziz-Baumgartner</surname></string-name>, <string-name><given-names>Alicia P</given-names> <surname>Budd</surname></string-name>, <string-name><given-names>Lynnette</given-names> <surname>Brammer</surname></string-name>, <string-name><given-names>Sheena</given-names> <surname>Sullivan</surname></string-name>, <string-name><given-names>Rodrigo F</given-names> <surname>Pineda</surname></string-name>, <string-name><given-names>Cheryl</given-names> <surname>Cohen</surname></string-name>, and <string-name><given-names>Alicia M</given-names> <surname>Fry</surname></string-name>. <article-title>Decreased influenza activity during the covid-19 pandemic&#x2014;united states, australia, chile, and south africa, 2020</article-title>. <source>American Journal of Transplantation</source>, <volume>20</volume>(<issue>12</issue>):<fpage>3681</fpage>&#x2013;<lpage>3685</lpage>, <year>2020</year>.</mixed-citation></ref>
+<ref id="c5"><label>[5]</label><mixed-citation publication-type="journal"><string-name><given-names>Jonathan</given-names> <surname>Dushoff</surname></string-name>, <string-name><given-names>Joshua B.</given-names> <surname>Plotkin</surname></string-name>, <string-name><given-names>Cecile</given-names> <surname>Viboud</surname></string-name>, <string-name><given-names>David J. D.</given-names> <surname>Earn</surname></string-name>, and <string-name><given-names>Lone</given-names> <surname>Simonsen</surname></string-name>. <article-title>Mortality due to Influenza in the United States&#x00E2;&#x20AC;&#x201D; An Annualized Regression Approach Using Multiple-Cause Mortality Data</article-title>. <source>American Journal of Epidemiology</source>, <volume>163</volume>(<issue>2</issue>):<fpage>181</fpage>&#x2013;<lpage>187</lpage>, 11 <year>2005</year>.</mixed-citation></ref>
+<ref id="c6"><label>[6]</label><mixed-citation publication-type="other"><string-name><given-names>Steffen E</given-names> <surname>Eikenberry</surname></string-name>, <string-name><given-names>Marina</given-names> <surname>Mancuso</surname></string-name>, <string-name><given-names>Enahoro</given-names> <surname>Iboi</surname></string-name>, <string-name><given-names>Tin</given-names> <surname>Phan</surname></string-name>, <string-name><given-names>Keenan</given-names> <surname>Eikenberry</surname></string-name>, <string-name><given-names>Yang</given-names> <surname>Kuang</surname></string-name>, <string-name><given-names>Eric</given-names> <surname>Kostelich</surname></string-name>, and <string-name><given-names>Abba B</given-names> <surname>Gumel</surname></string-name>. <article-title>To mask or not to mask: Modeling the potential for face mask use by the general public to curtail the covid-19 pandemic</article-title>. <source>Infectious Disease Modelling</source>, <year>2020</year>.</mixed-citation></ref>
+<ref id="c7"><label>[7]</label><mixed-citation publication-type="journal"><string-name><given-names>Sherry</given-names> <surname>Towers</surname></string-name> and <string-name><given-names>Zhilan</given-names> <surname>Feng</surname></string-name>. <article-title>Pandemic h1n1 influenza: predicting the course of a pandemic and assessing the efficacy of the planned vaccination programme in the united states</article-title>. <source>Eurosurveillance</source>, <volume>14</volume>(<issue>41</issue>):<fpage>19358</fpage>, <year>2009</year>.</mixed-citation></ref>
+<ref id="c8"><label>[8]</label><mixed-citation publication-type="journal"><string-name><given-names>S</given-names> <surname>Towers</surname></string-name>, <string-name><given-names>K</given-names> <surname>Vogt Geisse</surname></string-name>, <string-name><given-names>Y</given-names> <surname>Zheng</surname></string-name>, and <string-name><given-names>Z</given-names> <surname>Feng</surname></string-name>. <article-title>Antiviral treatment for pandemic influenza: Assessing potential repercussions using a seasonally forced sir model</article-title>. <source>Journal of theoretical biology</source>, <volume>289</volume>:<fpage>259</fpage>&#x2013;<lpage>268</lpage>, <year>2011</year>.</mixed-citation></ref>
+<ref id="c9"><label>[9]</label><mixed-citation publication-type="journal"><string-name><given-names>Anna</given-names> <surname>Mummert</surname></string-name> and <string-name><given-names>Olusegun M</given-names> <surname>Otunuga</surname></string-name>. <article-title>Parameter identification for a stochastic seirs epidemic model: case study influenza</article-title>. <source>Journal of mathematical biology</source>, <volume>79</volume>(<issue>2</issue>):<fpage>705</fpage>&#x2013;<lpage>729</lpage>, <year>2019</year>.</mixed-citation></ref>
+<ref id="c10"><label>[10]</label><mixed-citation publication-type="other"><string-name><given-names>Matthew</given-names> <surname>Newville</surname></string-name>, <string-name><given-names>Till</given-names> <surname>Stensitzki</surname></string-name>, <string-name><given-names>Daniel B</given-names> <surname>Allen</surname></string-name>, <string-name><given-names>Michal</given-names> <surname>Rawlik</surname></string-name>, <string-name><given-names>Antonino</given-names> <surname>Ingargiola</surname></string-name>, and <string-name><given-names>Andrew</given-names> <surname>Nelson</surname></string-name>. <article-title>Lmfit: Non-linear least-square minimization and curve-fitting for python</article-title>. <source>ascl</source>, pages ascl&#x2013;1606, <year>2016</year>.</mixed-citation></ref>
+<ref id="c11"><label>[11]</label><mixed-citation publication-type="journal"><string-name><given-names>C</given-names> <surname>Raina MacIntyre</surname></string-name> and <string-name><given-names>Abrar Ahmad</given-names> <surname>Chughtai</surname></string-name>. <article-title>Facemasks for the prevention of infection in healthcare and community settings</article-title>. <source>Bmj</source>, <volume>350</volume>:<fpage>h694</fpage>, <year>2015</year>.</mixed-citation></ref>
+<ref id="c12"><label>[12]</label><mixed-citation publication-type="journal"><string-name><given-names>Nicole CJ</given-names> <surname>Brienen</surname></string-name>, <string-name><given-names>Aura</given-names> <surname>Timen</surname></string-name>, <string-name><given-names>Jacco</given-names> <surname>Wallinga</surname></string-name>, <string-name><given-names>Jim E</given-names> <surname>Van Steenbergen</surname></string-name>, and <string-name><given-names>Peter FM</given-names> <surname>Teu-nis</surname></string-name>. <article-title>The effect of mask use on the spread of influenza during a pandemic</article-title>. <source>Risk Analysis: An International Journal</source>, <volume>30</volume>(<issue>8</issue>):<fpage>1210</fpage>&#x2013;<lpage>1218</lpage>, <year>2010</year>.</mixed-citation></ref>
+<ref id="c13"><label>[13]</label><mixed-citation publication-type="book"><string-name><given-names>Richard W</given-names> <surname>Compans</surname></string-name> and <string-name><given-names>Walter A</given-names> <surname>Orenstein</surname></string-name>. <source>Vaccines for pandemic influenza</source>, volume <volume>333</volume>. <publisher-name>Springer</publisher-name>, <year>2009</year>.</mixed-citation></ref>
+<ref id="c14"><label>[14]</label><mixed-citation publication-type="journal"><string-name><given-names>Brandon W</given-names> <surname>Yan</surname></string-name>, <string-name><given-names>Frank A</given-names> <surname>Sloan</surname></string-name>, and <string-name><given-names>R</given-names> <surname>Adams Dudley</surname></string-name>. <article-title>How influenza vaccination rate variation could inform pandemic-era vaccination efforts</article-title>. <source>Journal of general internal medicine</source>, <volume>35</volume>(<issue>11</issue>):<fpage>3401</fpage>&#x2013; <lpage>3403</lpage>, <year>2020</year>.</mixed-citation></ref>
+<ref id="c15"><label>[15]</label><mixed-citation publication-type="journal"><string-name><given-names>Wayan CWS</given-names> <surname>Putri</surname></string-name>, <string-name><given-names>David J</given-names> <surname>Muscatello</surname></string-name>, <string-name><given-names>Melissa S</given-names> <surname>Stockwell</surname></string-name>, and <string-name><given-names>Anthony T</given-names> <surname>Newall</surname></string-name>. <article-title>Economic burden of seasonal influenza in the united states</article-title>. <source>Vaccine</source>, <volume>36</volume>(<issue>27</issue>):<fpage>3960</fpage>&#x2013;<lpage>3966</lpage>, <year>2018</year>.</mixed-citation></ref>
+</ref-list>
+<fn-group>
+<fn id="fn1">
+<label><sup>1</sup></label>
+<p><ext-link ext-link-type="uri" xlink:href="https://www.cdc.gov/flu/about/burden/past-seasons.html">https://www.cdc.gov/flu/about/burden/past-seasons.html</ext-link></p></fn>
+<fn id="fn2">
+<label><sup>2</sup></label>
+<p><ext-link ext-link-type="uri" xlink:href="https://www.cdc.gov/flu/weekly/fluviewinteractive.htm">https://www.cdc.gov/flu/weekly/fluviewinteractive.htm</ext-link></p></fn>
+<fn id="fn3">
+<label><sup>3</sup></label>
+<p><ext-link ext-link-type="uri" xlink:href="https://www.cdc.gov/flu/about/burden/past-seasons.html">https://www.cdc.gov/flu/about/burden/past-seasons.html</ext-link></p></fn>
+<fn id="fn4">
+<label><sup>4</sup></label>
+<p><ext-link ext-link-type="uri" xlink:href="https://covid19.healthdata.org/united-states-of-america?view=mask-usetab=trend">https://covid19.healthdata.org/united-states-of-america?view=mask-usetab=trend</ext-link></p></fn>
+<fn id="fn5">
+<label><sup>5</sup></label>
+<p><ext-link ext-link-type="uri" xlink:href="https://www.cdc.gov/flu/vaccines-work/past-burden-averted-est.html">https://www.cdc.gov/flu/vaccines-work/past-burden-averted-est.html</ext-link></p></fn>
+</fn-group>
+</back>
+</article>

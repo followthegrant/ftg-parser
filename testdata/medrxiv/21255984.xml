@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.2d1 20170631//EN" "JATS-archivearticle1.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" article-type="article" dtd-version="1.2d1" specific-use="production" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="publisher-id">MEDRXIV</journal-id>
+<journal-title-group>
+<journal-title>medRxiv</journal-title>
+<abbrev-journal-title abbrev-type="publisher">medRxiv</abbrev-journal-title>
+</journal-title-group>
+<publisher>
+<publisher-name>Cold Spring Harbor Laboratory</publisher-name>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1101/2021.04.23.21255984</article-id>
+<article-version>1.2</article-version>
+<article-categories>
+<subj-group subj-group-type="hwp-journal-coll">
+<subject>Public and Global Health</subject>
+</subj-group>
+</article-categories>
+<title-group>
+<article-title>Bayesian, Universal COVID Testing</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" corresp="yes">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-8719-6522</contrib-id>
+<name><surname>Meyer</surname><given-names>Christian T.</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="corresp" rid="cor1">&#x002A;</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0001-9370-2324</contrib-id>
+<name><surname>Kralj</surname><given-names>Joel M.</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<aff id="a1"><label>1</label><institution>BioFrontiers Institute, University of Colorado Boulder</institution>, Boulder, Colorado, 80303, <country>USA</country></aff>
+</contrib-group>
+<author-notes>
+<corresp id="cor1"><label>&#x002A;</label>Correspondence should be directed to C.T.M. (<email>chme4702@colorado.edu</email>)</corresp>
+</author-notes>
+<pub-date pub-type="epub">
+<year>2021</year>
+</pub-date>
+<elocation-id>2021.04.23.21255984</elocation-id>
+<history>
+<date date-type="received">
+<day>23</day>
+<month>4</month>
+<year>2021</year>
+</date>
+<date date-type="rev-recd">
+<day>10</day>
+<month>5</month>
+<year>2021</year>
+</date>
+<date date-type="accepted">
+<day>14</day>
+<month>5</month>
+<year>2021</year>
+</date>
+</history>
+<permissions>
+<copyright-statement>&#x00A9; 2021, Posted by Cold Spring Harbor Laboratory</copyright-statement>
+<copyright-year>2021</copyright-year>
+<license><license-p>The copyright holder for this pre-print is the author. All rights reserved. The material may not be redistributed, re-used or adapted without the author's permission.</license-p></license>
+</permissions>
+<self-uri xlink:href="21255984.pdf" content-type="pdf" xlink:role="full-text"/>
+<abstract>
+<title>Abstract</title>
+<p>During the SARS-COV2 pandemic, there has been a persistent call for universal testing to better inform policy decisions. However, a little considered aspect of this call is the relationship between a test&#x2019;s accuracy and the tested demographic. What are the implications of frequent, universal testing in otherwise asymptomatic demographics? By applying Bayesian statistics, it becomes clear that as the odds of having COVID decreases, there is a non-linear increase in the odds that each positive test is, in fact, a false positive. This phenomenon has precedence in the historical narrative surrounding universal mammogram screening which is no longer recommended due to the unacceptably high rate of false positives. The solution to combat the inflation of false positives is also suggested by Bayesian statistics: intelligently integrating multiple COVID diagnostic tests and symptoms via Bayes&#x2019; Theorem, an approach conceptually similar to pre-screening for mammograms. This extra information is readily available (<italic>e</italic>.<italic>g</italic>. olfactory function and fever) and will minimize the economic and emotional costs incurred by false positives while simultaneously improving the information available for policy-makers. In summary, along with the push for universal testing should be an equally rigorous approach to interpreting the test results.</p>
+</abstract>
+<counts>
+<page-count count="4"/>
+</counts>
+</article-meta>
+<notes>
+<notes notes-type="competing-interest-statement">
+<title>Competing Interest Statement</title><p>The authors have declared no competing interest.</p></notes>
+<notes notes-type="financial-disclosure">
+<title>Funding Statement</title><p>This study was funded by the Searle Scholars Program and NIH New Innovator award
+(1DP2GM123458) to JMK. The funders had no role in data collection, analysis, or interpretation.
+This article was not paid for by a pharmaceutical company or other agency. The corresponding author (CTM) assumes full responsibility for submission.
+</p></notes>
+<notes notes-type="disclosures">
+<title>Author Declarations</title><p>I confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.</p><p>Yes</p><p>The details of the IRB/oversight body that provided approval or exemption for the research described are given below:</p><p>IRB of the University of Colorado Boulder exempted this research as no human participants were involved.</p><p>All necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived.</p><p>Yes</p><p>I understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).</p><p>Yes</p><p>I have followed all appropriate research reporting guidelines and uploaded the relevant EQUATOR Network research reporting checklist(s) and other pertinent material as supplementary files, if applicable.</p><p>Yes</p></notes>
+<fn-group content-type="summary-of-updates">
+<title>Summary of Updates:</title>
+<fn fn-type="update"><p>Updated the false positive rate of the olfactory test with 96% sensitivity and 70% specificity from 82% to 85%.</p></fn>
+</fn-group>
+</notes>
+</front>
+<body>
+<sec id="s1">
+<title>Potential Risks of Universal Testing</title>
+<p>Despite the extensive discussion surrounding various testing modalities for detecting the SARS-COV2 virus, there is comparatively little discourse on mitigating the impact of false positives [<xref ref-type="bibr" rid="c1">1</xref>] which exist for every test, regardless of the quality. The emotional and economic cost of false positives for universal testing has already been extensively discussed for universal mammogram screening, where it was realized that pre-screening significantly improved the diagnostic value of the test while minimizing the emotional burden of false positives [<xref ref-type="bibr" rid="c2">2</xref>]. In the case of mammograms, even though the nominal false-positive rate for a mammogram is less than 3% [<xref ref-type="bibr" rid="c3">3</xref>], universal screening resulted in approximately 38,057 false-positive mammograms out of 405,191 total tests [<xref ref-type="bibr" rid="c4">4</xref>], nearly four times the expected number of false positives. Just as for mammograms, the economic and human cost of every false positive in COVID tests is significant [<xref ref-type="bibr" rid="c1">1</xref>]. Children, extended families, and teachers are quarantined. Colleagues are forced to take unpaid time off and businesses are left with minimal staff. Entire buildings shut down for cleaning. Beyond the economic burden, a false positive promotes risky behavior by actors assuming immunity, thereby undermining the herd immunity [<xref ref-type="bibr" rid="c5">5</xref>].</p>
+<p>The mammogram narrative suggests false positives are particularly problematic when historically diagnostic tests are being used for surveillance [<xref ref-type="bibr" rid="c6">6</xref>]. This is because the accuracy of the test decreases proportionally to the prior odds of the tested individual having the disease. This can be intuited from the following thought experiment. If you apply a test with a false positive rate of 1%, to a population of 100 people who do not have COVID, by definition you would have 1 false-positive and 0 false negatives. That means that 100% of the positives are false. Therefore, as you decrease the probability that your tested population has COVID by expanding the testing pool, you increase the proportion of positives which are false positives. Many doctors intuit this trade-off and understand that ordering a test is predicated on having a rationale for doing so (<italic>i</italic>.<italic>e</italic>. the patient is symptomatic).</p>
+</sec>
+<sec id="s2">
+<title>Bayesian Statistics Applied to COVID testing</title>
+<p>This relationship between test performance and tested demographic can be formalized using Bayesian statistics, a branch of statistics dealing probability of an outcome given prior odds of an event. Formally, the probability of a false positive (<italic>P</italic> (<italic>false</italic>&#x002B;))is equal to
+<disp-formula id="ueqn1">
+<alternatives><graphic xlink:href="21255984v2_ueqn1.gif"/></alternatives>
+</disp-formula>
+where specificity is the rate of true negatives (<italic>p</italic>(<italic>test</italic> &#x2212;&#x007C;<italic>COVID</italic> &#x2212;)), sensitivity is the rate of true positives (<italic>p</italic>(<italic>test</italic> &#x002B;&#x007C; <italic>COV ID</italic>&#x002B;)), and <italic>p</italic>(<italic>COVID</italic>&#x002B;) is the probability of having COVID before the test (See Supplement for derivation). It is important to note that generally the sensitivity and specificity are not equal for any given test.</p>
+<p>Examining the relationship between the percentage of positive tests which are false positives and the prior odds of having COVID reveals that as the prior odds of having COVID decreases, the proportion of false positives increases (<xref rid="fig1" ref-type="fig">Figure 1A</xref>) matching our expectation from the thought experiment. The proportion of false positives should not be confused with the <italic>rate</italic> of positives which decreases as the prior odds decrease. Increasing the specificity and sensitivity are not the solution as this trend is true of all tests to varying degrees (<xref rid="fig1" ref-type="fig">Figure 1A, B</xref>). This is not merely a curious phenomenon at some extreme, but plays an escalating role as the testing pool is continuously expanded. For example, taking the specifications of the gold standard PCR-based test which has 70-90% sensitivity and a remarkable 99% specificity, applied to a population with 1% prior odds of having COVID (estimated based on active caseload in a given area), false positives account for 52% of all positive tests.</p>
+<fig id="fig1" position="float" fig-type="figure">
+<label>Figure 1:</label>
+<caption><title>Diagnostic test performance depends on the prior odds of infection in the tested demographic.</title>
+<p>A,B) The probability of a false positive (<italic>P</italic> (<italic>false</italic>&#x002B;)) depends on the prior odds of having COVID (<italic>p</italic>(<italic>COV ID</italic>&#x002B;)) before the test. These odds necessarily decrease as the tested pool is expanded to more asymptomatic people. This is true even as sensitivity (A) or specificity (B) of a test increases, though test specificity is more important for false positives than sensitivity. C) Combining two tests (dark red and gold) of different sensitivity and specificity using a Bayesian approach, reduces the proportion of false positives (green). This is because the prior (<italic>p</italic>(<italic>COV ID</italic>&#x002B;)) of the second test is updated with the posterior odds from the first test.</p></caption>
+<graphic xlink:href="21255984v2_fig1.tif"/>
+</fig>
+</sec>
+<sec id="s3">
+<title>Intelligently integrating multiple tests reduces the proportion of false positives</title>
+<p>What is a solution to this tension? The shape of the curves in <xref rid="fig1" ref-type="fig">Figure 1A</xref> suggests even incremental increases in the prior odds dramatically reduce the probability of a false positive. When a test is being applied universally, the only approach to increasing the prior odds is to chain multiple tests together. This is because the outcome of each test becomes the prior odds for the subsequent test. Bayesian statistics, therefore, provides a simple solution to integrate multiple tests and reduce the economic burden of false positives.</p>
+<p>For example, pairing an olfactory performance test [<xref ref-type="bibr" rid="c7">7</xref>] with PCR test has the following impact. If the olfactory test has specificity and sensitivity of 96% and 70% respectively [<xref ref-type="bibr" rid="c7">7</xref>], administered in a population with 1% prior odds of COVID&#x002B; results in false positives comprising 85% of the positives. If however, the positives are subsequently tested using the PCR test, the increase in prior odds from 1% to 18% based on the olfactory test decreases the proportion of false positives from 52% to 6% in the PCR test (<xref rid="fig1" ref-type="fig">Figure 1C</xref>, gold to green line). Because the order of the test does not matter, chaining together tests in order of the speed of turn around can improve the quality of each subsequent test while reducing the quarantine time for false positives thereby mitigating their economic and emotional impacts. Additionally, the posterior odds measured by each test decay back to the basal <italic>p</italic>(<italic>COVID</italic>&#x002B;) level, as defined by the active caseload, over time. Therefore, reducing the spacing between subsequent tests is critical to maximizing information transfer between tests.</p>
+<p>One could easily imagine extending this framework to include multiple COVID symptoms (<italic>e</italic>.<italic>g</italic>. fever, shortness of breath, etc.) in such a way that no information is wasted in identifying true positive cases. Indeed this is being done using Bayesian networks [<xref ref-type="bibr" rid="c8">8</xref>], though dealing with temporally sequenced and sparse information is critical for continuously updating diagnosis in real-time in a large population.</p>
+<p>In summary, holistic assessment of the patient, rather than depending on a single test will always necessary in medicine, whether for breast cancer screening or COVID testing. That the quality of routine PCR tests could be greatly improved by simply appending 2-3 readily measurable symptoms to each test should be sufficient motivation to do so. Intelligent universal testing increases the value of the test while decreasing the economic and human costs of every false positive.</p>
+</sec>
+<sec id="s4">
+<title>Supplementary Information</title>
+<sec id="s4a">
+<title>Bayes Derivation</title>
+<p>Bayes&#x2019; equation for a the probability of being COVID&#x002B; given a positive test (<italic>p</italic>(<italic>COVID</italic> &#x002B;&#x007C; <italic>test</italic>&#x002B;)), also called the positive predictive value, is
+<disp-formula id="ueqn2">
+<alternatives><graphic xlink:href="21255984v2_ueqn2.gif"/></alternatives>
+</disp-formula>
+where <italic>p</italic>(<italic>test</italic> &#x002B;&#x007C;<italic>COVID</italic>&#x002B;) is the probability of a positive test if COVID&#x002B; (commonly called a test&#x2019;s <bold>sensitivity</bold>), <italic>p</italic>(<italic>COVID</italic>&#x002B;) is the prior probability of having COVID before the test, and <italic>p</italic>(<italic>test</italic>&#x002B;) is the probability of a positive test. The probability of a positive test is equal to
+<disp-formula id="ueqn3">
+<alternatives><graphic xlink:href="21255984v2_ueqn3.gif"/></alternatives>
+</disp-formula>
+where <italic>p</italic>(<italic>test</italic> &#x002B;&#x007C;<italic>COVID</italic>&#x2212;) is the probability of a positive test if one does not have COVID, commonly called the false positive rate. The <bold>specificity</bold> of a test is one minus the false positive rate (1 &#x2212;<italic>p</italic>(<italic>test</italic> &#x002B;&#x007C;<italic>COVID</italic>&#x2212;)). So rewriting the first equation to calculate the probability of false positive (<italic>P</italic> (<italic>false</italic>&#x002B;) or <italic>p</italic>(<italic>COVID-test</italic>&#x002B;) which is equal to 1 <italic>-p</italic>(<italic>COVID</italic> &#x002B;&#x007C;<italic>test</italic>&#x002B;)) in terms of a test&#x2019;s specificity and sensitivity results in the following equation
+<disp-formula id="ueqn4">
+<alternatives><graphic xlink:href="21255984v2_ueqn4.gif"/></alternatives>
+</disp-formula>
+</p>
+</sec>
+</sec>
+</body>
+<back>
+<sec sec-type="data-availability">
+<title>Data Availability</title>
+<p>Code required to recreate the analysis is available on request from lead author.</p>
+</sec>
+<sec sec-type="data-availability">
+<title>Data Availability</title>
+<p>Code required to recreate the analysis is available on request from lead author.</p>
+</sec>
+<ref-list>
+<title>References</title>
+<ref id="c1"><label>[1]</label><mixed-citation publication-type="book"><string-name><given-names>Katherine J.</given-names> <surname>Wu</surname></string-name>. <source>Why False Positives Merit Concern, Too</source>. <publisher-name>New York Times</publisher-name>, <volume>10</volume> <year>2020</year>.</mixed-citation></ref>
+<ref id="c2"><label>[2]</label><mixed-citation publication-type="journal"><string-name><given-names>Amir</given-names> <surname>Qaseem</surname></string-name>, <string-name><given-names>Vincenza</given-names> <surname>Snow</surname></string-name>, <string-name><given-names>Katherine</given-names> <surname>Sherif</surname></string-name>, <string-name><given-names>Mark</given-names> <surname>Aronson</surname></string-name>, <string-name><given-names>Kevin B.</given-names> <surname>Weiss</surname></string-name>, and <string-name><given-names>Douglas K.</given-names> <surname>Owens</surname></string-name>. <article-title>Screening Mammography for Women 40 to 49 Years of Age: A Clinical Practice Guideline from the American College of Physicians</article-title>. <source>Annals of Internal Medicine</source>, <volume>146</volume>(<issue>7</issue>), <fpage>4</fpage> <year>2007</year>.</mixed-citation></ref>
+<ref id="c3"><label>[3]</label><mixed-citation publication-type="journal"><string-name><given-names>Rodrigo Rosa</given-names> <surname>Giampietro</surname></string-name>, <string-name><given-names>Marcos Vinicius Gama</given-names> <surname>Cabral</surname></string-name>, <string-name><given-names>Silvana Andrea Molina</given-names> <surname>Lima</surname></string-name>, <string-name><given-names>Silke Anna Theresa</given-names> <surname>Weber</surname></string-name>, and <string-name><given-names>Vania Dos Santos</given-names> <surname>Nunes-Nogueira</surname></string-name>. <article-title>Accuracy and Effectiveness of Mammography versus Mammography and Tomosynthesis for Population-Based Breast Cancer Screening: A Systematic Review and Meta-Analysis</article-title>. <source>Scientific reports</source>, <volume>10</volume>(<issue>1</issue>), <year>2020</year>.</mixed-citation></ref>
+<ref id="c4"><label>[4]</label><mixed-citation publication-type="journal"><collab>USPSTF</collab>. <article-title>Evidence Summary: False-Positive and False-Negative Rates of Digital Mammography Screening</article-title>. <source>Technical report</source>, <volume>1</volume> <year>2016</year>.</mixed-citation></ref>
+<ref id="c5"><label>[5]</label><mixed-citation publication-type="journal"><string-name><given-names>Daniel B</given-names> <surname>Larremore</surname></string-name>, <string-name><given-names>Kate M</given-names> <surname>Bubar</surname></string-name>, and <string-name><given-names>Yonatan H</given-names> <surname>Grad</surname></string-name>. <article-title>Implications of Test Characteristics and Population Seroprevalence on &#x201C;Immune Passport&#x201D; Strategies</article-title>. <source>Clinical Infectious Diseases</source>, <year>2020</year>.</mixed-citation></ref>
+<ref id="c6"><label>[6]</label><mixed-citation publication-type="journal"><string-name><given-names>Michael J.</given-names> <surname>Mina</surname></string-name>, <string-name><given-names>Roy</given-names> <surname>Parker</surname></string-name>, and <string-name><given-names>Daniel B.</given-names> <surname>Larremore</surname></string-name>. <article-title>Rethinking Covid-19 Test Sensitivity &#x2014; A Strategy for Containment</article-title>. <source>New England Journal of Medicine</source>, <volume>383</volume>(<issue>22</issue>), <year>2020</year>.</mixed-citation></ref>
+<ref id="c7"><label>[7]</label><mixed-citation publication-type="journal"><string-name><given-names>Daniel B</given-names> <surname>Larremore</surname></string-name>, <string-name><given-names>Derek</given-names> <surname>Toomre</surname></string-name>, and <string-name><given-names>Roy</given-names> <surname>Parker</surname></string-name>. <article-title>Modeling the effectiveness of olfactory testing to limit SARS-2-CoV transmission</article-title>. <source>medRxiv</source>, <year>2020</year>.</mixed-citation></ref>
+<ref id="c8"><label>[8]</label><mixed-citation publication-type="journal"><string-name><given-names>Rachel</given-names> <surname>Butcher</surname></string-name> and <string-name><given-names>Norman</given-names> <surname>Fenton</surname></string-name>. <article-title>Extending the range of symptoms in a Bayesian Network for the Predictive Diagnosis of COVID-19</article-title>. <source>medRxiv</source>, <year>2020</year>.</mixed-citation></ref>
+</ref-list>
+</back>
+</article>

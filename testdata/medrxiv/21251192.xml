@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.2d1 20170631//EN" "JATS-archivearticle1.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" article-type="article" dtd-version="1.2d1" specific-use="production" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="publisher-id">MEDRXIV</journal-id>
+<journal-title-group>
+<journal-title>medRxiv</journal-title>
+<abbrev-journal-title abbrev-type="publisher">medRxiv</abbrev-journal-title>
+</journal-title-group>
+<publisher>
+<publisher-name>Cold Spring Harbor Laboratory</publisher-name>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1101/2021.02.05.21251192</article-id>
+<article-version>1.1</article-version>
+<article-categories>
+<subj-group subj-group-type="hwp-journal-coll">
+<subject>Dentistry and Oral Medicine</subject>
+</subj-group>
+</article-categories>
+<title-group>
+<article-title>Mendelian randomization analysis identified genes potentially pleiotropically associated with periodontitis</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author">
+<name><surname>Wang</surname><given-names>Feng</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Liu</surname><given-names>Di</given-names></name>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Zhuang</surname><given-names>Yong</given-names></name>
+<xref ref-type="aff" rid="a3">3</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Feng</surname><given-names>Bowen</given-names></name>
+<xref ref-type="aff" rid="a4">4</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Lu</surname><given-names>Wenjin</given-names></name>
+<xref ref-type="aff" rid="a5">5</xref>
+</contrib>
+<contrib contrib-type="author" corresp="yes">
+<name><surname>Yang</surname><given-names>Jingyun</given-names></name>
+<xref ref-type="aff" rid="a6">6</xref>
+<xref ref-type="aff" rid="a7">7</xref>
+<xref ref-type="corresp" rid="cor1">&#x002A;</xref>
+</contrib>
+<contrib contrib-type="author" corresp="yes">
+<name><surname>Zhuang</surname><given-names>Guanghui</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="corresp" rid="cor1">&#x002A;</xref>
+</contrib>
+<aff id="a1"><label>1</label><institution>Department of Stomatology, The First Affiliated Hospital of Dalian Medical University</institution>, Dalian, Liaoning, <country>China</country></aff>
+<aff id="a2"><label>2</label><institution>Beijing Key Laboratory of Clinical Epidemiology, School of Public Health, Capital Medical University</institution>, Beijing, <country>China</country></aff>
+<aff id="a3"><label>3</label><institution>Department of Stomatology, Dalian Medical University</institution>, Dalian, Liaoning, <country>China</country></aff>
+<aff id="a4"><label>4</label><institution>Odette School of Business, University of Windsor</institution>, Windsor, ON, <country>Canada</country></aff>
+<aff id="a5"><label>5</label><institution>Department of Mathematics, University College London</institution>, London, <country>United Kingdom</country></aff>
+<aff id="a6"><label>6</label><institution>Rush Alzheimer&#x2019;s Disease Center, Rush University Medical Center</institution>, Chicago, IL, <country>USA</country></aff>
+<aff id="a7"><label>7</label><institution>Department of Neurological Sciences, Rush University Medical Center</institution>, Chicago, IL, <country>USA</country></aff>
+</contrib-group>
+<author-notes>
+<corresp id="cor1"><label>&#x002A;</label>Correspondence to Guanghui Zhuang, Department of Stomatology, The First Affiliated Hospital of Dalian Medical University, 222 Zhongshan Rd, Xigang District, Dalian, Liaoning 116011, China, Tel: 86-18098876609, E-mail: <email>zgh20062009@163.com</email> or Jingyun Yang, Rush Alzheimer&#x2019;s Disease Center, Rush University Medical Center, 1750 West Harrison Street, Suite 1000, Chicago, IL 60612, USA, Tel: 1-312-563-9035, E-mail: <email>jingyun_yang@rush.edu</email></corresp>
+</author-notes>
+<pub-date pub-type="epub">
+<year>2021</year>
+</pub-date>
+<elocation-id>2021.02.05.21251192</elocation-id>
+<history>
+<date date-type="received">
+<day>05</day>
+<month>2</month>
+<year>2021</year>
+</date>
+<date date-type="rev-recd">
+<day>05</day>
+<month>2</month>
+<year>2021</year>
+</date>
+<date date-type="accepted">
+<day>08</day>
+<month>2</month>
+<year>2021</year>
+</date>
+</history>
+<permissions>
+<copyright-statement>&#x00A9; 2021, Posted by Cold Spring Harbor Laboratory</copyright-statement>
+<copyright-year>2021</copyright-year>
+<license><license-p>The copyright holder for this pre-print is the author. All rights reserved. The material may not be redistributed, re-used or adapted without the author's permission.</license-p></license>
+</permissions>
+<self-uri xlink:href="21251192.pdf" content-type="pdf" xlink:role="full-text"/>
+<abstract>
+<title>Abstract</title>
+<sec>
+<title>Objective</title>
+<p>To prioritize genes that were pleiotropically or potentially causally associated with periodontitis.</p></sec>
+<sec>
+<title>Methods</title>
+<p>We applied the summary data-based Mendelian randomization (SMR) method integrating genome-wide association study (GWAS) for periodontitis and expression quantitative trait loci (eQTL) data to identify genes that were pleiotropically associated with periodontitis. We performed separate SMR analysis using CAGE eQTL data and GTEx eQTL data. SMR analysis were done for participants of European and East Asian ancestries, separately.</p></sec>
+<sec>
+<title>Results</title>
+<p>We identified multiple genes showing pleiotropic association with periodontitis in participants of European ancestry and participants of East Asian ancestry. <italic>PDCD2</italic> (corresponding probe: ILMN_1758915) was the top hit showing pleotropic association with periodontitis in participants of European ancestry, and <italic>BX093763</italic> (corresponding probe: ILMN_1899903) and AC104135.3 (corresponding probe: ENSG00000204792.2) were the top hits in participants of East Asian ancestry using CAGE eQTL data and GTEx eQTL data, respectively.</p></sec>
+<sec>
+<title>Conclusion</title>
+<p>We identified multiple genes that may be involved in the pathogenesis of periodontitis in participants of European ancestry and participants of East Asian ancestry. Our findings provided important leads to a better understanding of the mechanisms underlying periodontitis and revealed potential therapeutic targets for the effective treatment of periodontitis.</p></sec>
+</abstract>
+<kwd-group kwd-group-type="author">
+<title>Keywords</title>
+<kwd>periodontitis</kwd>
+<kwd>pleotropic association</kwd>
+<kwd>gene expression quantitative trait loci</kwd>
+<kwd>summary Mendelian randomization</kwd>
+</kwd-group>
+<counts>
+<page-count count="29"/>
+</counts>
+</article-meta>
+<notes>
+<notes notes-type="competing-interest-statement">
+<title>Competing Interest Statement</title><p>The authors have declared no competing interest.</p></notes>
+<notes notes-type="financial-disclosure">
+<title>Funding Statement</title><p>The study was supported by NIH/NIA grants P30AG10161, R01AG15819, R01AG17917, R01AG36042, U01AG61356 and 1RF1AG064312-01. Di Liu was supported by China Scholarship Council (CSC 201908110339).
+The authors confirmed that all authors have reviewed the contents of the article being submitted, approved its contents, and validated the accuracy of the data.
+</p></notes>
+<notes notes-type="disclosures">
+<title>Author Declarations</title><p>I confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.</p><p>Yes</p><p>The details of the IRB/oversight body that provided approval or exemption for the research described are given below:</p><p>Not applicable.
+</p><p>All necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived.</p><p>Yes</p><p>I understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).</p><p>Yes</p><p>I have followed all appropriate research reporting guidelines and uploaded the relevant EQUATOR Network research reporting checklist(s) and other pertinent material as supplementary files, if applicable.</p><p>Yes</p></notes>
+</notes>
+</front>
+<body>
+<sec id="s1">
+<title>Introduction</title>
+<p>Periodontitis is a common disease characterized by an inflammatory response to commensal and pathogenic oral bacteria<sup><xref ref-type="bibr" rid="c1">1</xref></sup>. The primary clinical features of periodontitis include periodontal pocketing, alveolar bone loss (BL), clinical attachment loss (CAL), and gingival inflammation<sup><xref ref-type="bibr" rid="c2">2</xref></sup>. Based on the 2009lJ2014 National Health and Nutrition Examination Surveys data, it was estimated that periodontitis affected about 42&#x0025; of US adults aged 30 to 79 years<sup><xref ref-type="bibr" rid="c3">3</xref></sup>. Periodontitis is considered as the main cause of tooth loss in adults. Moreover, it is also associated with various systemic conditions such as coronary heart disease<sup><xref ref-type="bibr" rid="c4">4</xref></sup>, diabetes<sup><xref ref-type="bibr" rid="c5">5</xref></sup> and pre-term birth<sup><xref ref-type="bibr" rid="c6">6</xref></sup>. Periodontitis not only affects a patient&#x2019;s life, it also brings tremendous economic burden to the society, with an estimated global productivity loss due to untreated severe periodontitis being around &#x0024;38.85 billion in 2015<sup><xref ref-type="bibr" rid="c7">7</xref></sup>.</p>
+<p>Periodontitis is a complex, multi-factorial infectious disease with possible contributions from multiple factors, including immunological response<sup><xref ref-type="bibr" rid="c8">8</xref></sup>, oral bacterial infections<sup><xref ref-type="bibr" rid="c9">9</xref></sup>, lifestyle factors such as smoking<sup><xref ref-type="bibr" rid="c10">10</xref></sup> and alcohol consumption<sup><xref ref-type="bibr" rid="c11">11</xref></sup>, psychological factors such as stress<sup><xref ref-type="bibr" rid="c12">12</xref></sup> and depression<sup><xref ref-type="bibr" rid="c13">13</xref></sup>, and systematic diseases such as diabetes<sup><xref ref-type="bibr" rid="c14">14</xref></sup>. Previous studies also suggested that genetics plays an important role in the pathogenesis of periodontitis. For example, genetically identical monozygotic twins have more than a twofold increased risk of early onset periodontitis, compared with dizygotic twins<sup><xref ref-type="bibr" rid="c15">15</xref></sup>. Another population-based twin study estimated that the heritability of periodontitis was approximately 50&#x0025;<sup><xref ref-type="bibr" rid="c16">16</xref></sup>. Moreover, many GWAS and candidate gene studies have identified a number of genetic loci associated with the susceptibility of periodontitis<sup><xref ref-type="bibr" rid="c17">17</xref>-<xref ref-type="bibr" rid="c22">22</xref></sup>. However, the biological mechanisms of these findings remain largely unclear, and more studies are needed to explore genes that are potentially causally associated with periodontitis to better understand the pathogenesis of periodontitis.</p>
+<p>Mendelian randomization (MR) uses genetic variants as the proxy to randomization and is a promising tool to search for pleotropic/potentially causal effect of an exposure (e.g., gene expression) on the outcome (e.g., periodontitis) without the need of conducting conventional randomized clinical trials (RCTs)<sup><xref ref-type="bibr" rid="c23">23</xref></sup>. Confounding and reverse causation, which are commonly encountered in traditional association studies, can be greatly reduced by using MR. MR has been successful in identifying gene expression probes or DNA methylation loci that are pleiotropically/potentially causally associated with various phenotypes, such as neuropathologies of Alzheimer&#x2019;s disease and severity of COVID-19<sup><xref ref-type="bibr" rid="c24">24</xref>,<xref ref-type="bibr" rid="c25">25</xref></sup>.</p>
+<p>In this study, we applied the summary data-based MR (SMR) method integrating summarized GWAS data for periodontitis and cis-eQTL (expression quantitative trait loci) data to prioritize genes that are pleiotropically/potentially causally associated with periodontitis.</p>
+</sec>
+<sec id="s2">
+<title>Methods</title>
+<sec id="s2a">
+<title>Data sources</title>
+<sec id="s2a1">
+<title>eQTL data</title>
+<p>In the SMR analysis, cis-eQTL genetic variants were used as the instrumental variables (IVs) for gene expression. We performed SMR analysis using gene expression data in blood due to the unavailability of eQTL data in the eye. Specifically, we used the CAGE eQTL summarized data<sup><xref ref-type="bibr" rid="c26">26</xref></sup>, which included 2,765 participants, and the V7 release of the GTEx eQTL summarized data<sup><xref ref-type="bibr" rid="c27">27</xref></sup>, which included 338 participants. The eQTL data can be downloaded at <ext-link ext-link-type="uri" xlink:href="https://cnsgenomics.com/data/SMR/#eQTLsummarydata">https://cnsgenomics.com/data/SMR/#eQTLsummarydata</ext-link>.</p>
+</sec>
+<sec id="s2a2">
+<title>GWAS data for periodontitis</title>
+<p>The GWAS summarized data were provided by a recent genome-wide association meta-analysis of periodontitis<sup><xref ref-type="bibr" rid="c28">28</xref></sup>. The results were based on meta-analyses of 1000 genomes phase 1 version 2/3 imputed GWASs on periodontitis, with a total of nine cohorts from the Gene-Lifestyle Interactions in Dental Endpoints (GLIDE) consortium<sup><xref ref-type="bibr" rid="c29">29</xref></sup>. Specifically, the meta-analysis for participants of European ancestry included seven cohorts with a total sample size of 45,563 (17,353 cases and 28,210 controls), and the meta-analysis for participants of East Asian ancestry included two cohorts with a total sample size of 17,350 (1,680 cases and 15,670 controls). All participating studies assumed an additive genetic model, adjusting for age, age-squared and other study-specific covariates. The GWAS summarized data can be downloaded at <ext-link ext-link-type="uri" xlink:href="https://data.bris.ac.uk/data/dataset/2j2rqgzedxlq02oqbb4vmycnc2">https://data.bris.ac.uk/data/dataset/2j2rqgzedxlq02oqbb4vmycnc2</ext-link>.</p>
+</sec>
+<sec id="s2a3">
+<title>SMR analysis</title>
+<p>We conducted the SMR analysis with cis-eQTL as the IV, gene expression as the exposure, and periodontitis as the outcome. The analysis was done using the method as implemented in the software SMR. Detailed information regarding the SMR method was reported in a previous publication<sup><xref ref-type="bibr" rid="c30">30</xref></sup>. In brief, SMR applies the principles of MR to jointly analyze GWAS and eQTL summary statistics in order to test for pleotropic association between gene expression and a trait due to a shared and potentially causal variant at a locus. We also conducted the heterogeneity in dependent instruments (HEIDI) test to evaluate the existence of linkage in the observed association. A P<sub>HEIDI</sub> of less than 0.05 indicates that the observed association could be due to two distinct genetic variants in high linkage disequilibrium with each other. We adopted the default settings in SMR (e.g., minor allele frequency [MAF] &#x003E; 0.01, removing SNPs in very strong linkage disequilibrium [LD, r<sup>2</sup> &#x003E; 0.9] with the top associated eQTL, and removing SNPs in low LD or not in LD [r<sup>2</sup> &#x003C;0.05] with the top associated eQTL) except relaxing the threshold of eQTL P-value (P<sub>eQTL</sub> &#x003C;10<sup>&#x2212;4</sup>) due to the exploratory nature of this study, and used false discovery rate (FDR) to adjust for multiple testing. We performed SMR analysis for participants of European and East Asian ancestries, separately, using CAGE and GTEx eQTL data, respectively, comprising a total of four SMR analyses.</p>
+<p>We used Affymetrix exon array S1.0 platforms to annotate the transcripts. We conducted functional enrichment analysis using the functional annotation tool &#x201C;Metascape&#x201D; for the top tagged genes to functionally annotate putative transcripts<sup><xref ref-type="bibr" rid="c31">31</xref></sup>. Gene symbols corresponding to the ten top hit genes were used as the input of the gene ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) enrichment analysis.</p>
+<p>Data cleaning and statistical/bioinformatical analysis was performed using R version 4.0.3 (<ext-link ext-link-type="uri" xlink:href="https://www.r-project.org/">https://www.r-project.org/</ext-link>), PLINK 1.9 (<ext-link ext-link-type="uri" xlink:href="https://www.cog-genomics.org/plink/1.9/">https://www.cog-genomics.org/plink/1.9/</ext-link>) and SMR (<ext-link ext-link-type="uri" xlink:href="https://cnsgenomics.com/software/smr/">https://cnsgenomics.com/software/smr/</ext-link>).</p>
+</sec>
+</sec>
+</sec>
+<sec id="s3">
+<title>Results</title>
+<sec id="s3a">
+<title>Basic information of the summarized data</title>
+<p>The number of participants of the CAGE eQTL data is much larger than that of the GTEx eQTL data, so is the number of eligible probes. The sample size of the GWAS data for the European ancestry is much large than that for the East Asian ancestry, so is the number of eligible genetic variants. The detailed information was shown in <bold><xref rid="tbl1" ref-type="table">Table 1</xref></bold>.</p>
+<table-wrap id="tbl1" orientation="portrait" position="float">
+<label>Table 1.</label>
+<caption><title>Basic information of the GWAS and eQTL data.</title></caption>
+<graphic xlink:href="21251192v1_tbl1.tif"/>
+</table-wrap>
+</sec>
+<sec id="s3b">
+<title>SMR analysis in participants of European ancestry</title>
+<p>In participants of European ancestry, we identified two genes showing pleiotropic association with periodontitis after correction for multiple testing using FDR (<bold><xref rid="tbl2" ref-type="table">Table 2</xref></bold>). Specifically, using the CAGE eQTL data, our SMR analysis identified two genes that were pleiotropically/potentially causally associated with periodontitis, including <italic>PDCD2</italic> (ILMN_1758915; P<sub>SMR</sub>=3.77&#x00D7;10<sup>&#x2212;5</sup>; <bold><xref rid="fig1" ref-type="fig">Figure 1</xref></bold>) and <italic>D4S234E</italic> (i.e., <italic>NSG1</italic>, ILMN_1772627; P<sub>SMR</sub>=9.08&#x00D7;10<sup>&#x2212;4</sup>; <bold><xref rid="fig2" ref-type="fig">Figure 2</xref></bold>). GO enrichment analysis of biological process and molecular function showed that the significant genes were involved in two GO terms, including positive regulation of cysteine-type endopeptidase activity (GO:2001056) and positive regulation of defense response (GO:0031349; <bold><xref rid="figS1" ref-type="fig">Figure S1A</xref></bold>). Concept network analysis of the ten top hit genes also revealed multiple domains related with endopeptidase activity (<bold><xref rid="figS1" ref-type="fig">Figure S1B</xref></bold>). More information could be found in <bold>Table S1</bold>.</p>
+<table-wrap id="tbl2" orientation="portrait" position="float">
+<label>Table 2.</label>
+<caption><title>The top ten probes identified in the SMR analysis in participants of European ancestry.</title></caption>
+<graphic xlink:href="21251192v1_tbl2.tif"/>
+<graphic xlink:href="21251192v1_tbl2a.tif"/>
+</table-wrap>
+<fig id="fig1" position="float" fig-type="figure">
+<label>Figure 1.</label>
+<caption><title>Prioritizing gene around <italic>PDCD2</italic> in association with periodontitis in participants of European ancestry.</title>
+<p>Top plot, grey dots represent the -log<sub>10</sub>(<italic>P</italic> values) for SNPs from the GWAS of periodontitis, and rhombuses represent the -log<sub>10</sub>(<italic>P</italic> values) for probes from the SMR test with solid rhombuses indicating that the probes pass HEIDI test and hollow rhombuses indicating that the probes do not pass the HEIDI test. Middle plot, eQTL results for ILMN_1758915 probe, tagging <italic>PDCD2</italic>. Bottom plot, location of genes tagged by the probes.</p>
+<p>GWAS, genome-wide association studies; SMR, summary data-based Mendelian randomization; HEIDI, heterogeneity in dependent instruments; eQTL, expression quantitative trait loci</p></caption>
+<graphic xlink:href="21251192v1_fig1.tif"/>
+</fig>
+<fig id="fig2" position="float" fig-type="figure">
+<label>Figure 2.</label>
+<caption><title>Prioritizing gene around <italic>D4S234E</italic> (i.e., <italic>NSG1</italic>) in association with periodontitis in participants of European ancestry.</title>
+<p>Top plot, grey dots represent the -log<sub>10</sub>(<italic>P</italic> values) for SNPs from the GWAS of periodontitis, and rhombuses represent the -log<sub>10</sub>(<italic>P</italic> values) for probes from the SMR test with solid rhombuses indicating that the probes pass HEIDI test and hollow rhombuses indicating that the probes do not pass the HEIDI test. Middle plot, eQTL results for ILMN_1772627 probe, tagging <italic>D4S234E</italic> (i.e., <italic>NSG1</italic>). Bottom plot, location of genes tagged by the probes.</p>
+<p>GWAS, genome-wide association studies; SMR, summary data-based Mendelian randomization; HEIDI, heterogeneity in dependent instruments; eQTL, expression quantitative trait loci</p></caption>
+<graphic xlink:href="21251192v1_fig2.tif"/>
+</fig>
+<p>Using the GTEx eQTL data, we did not identify any genes that were pleiotropically/potentially causally associated with periodontitis, after correction for multiple testing using FDR (<bold><xref rid="tbl2" ref-type="table">Table 2</xref></bold>). However, we found that two genes, <italic>NSG1</italic> (CAGE eQTL: ILMN_1772627, P<sub>SMR</sub>=9.08&#x00D7;10<sup>&#x2212;4</sup>; GETx eQTL: ENSG00000168824.10, P<sub>SMR</sub>=1.35&#x00D7;10<sup>&#x2212;3</sup>) and <italic>S100A12</italic> (CAGE eQTL: ILMN_1748915, P<sub>SMR</sub>=1.58&#x00D7;10<sup>&#x2212;3</sup>; GETxeQTL: ENSG00000163221.7, P<sub>SMR</sub>=1.90&#x00D7;10<sup>&#x2212;3</sup>) were among the top hits in both SMR analyses. GO enrichment analysis of biological process and molecular function showed that the ten top hit genes were involved in two MAP kinase-related GO terms (GO:0043405 and GO:0043406; <bold><xref rid="figS1" ref-type="fig">Figure S1C</xref></bold>). Concept network analysis of the genes revealed multiple domains related with MAP kinase activity and inflammation (<bold><xref rid="figS1" ref-type="fig">Figure S1D</xref></bold>). More information could be found in <bold>Table S2</bold>.</p>
+</sec>
+<sec id="s3c">
+<title>SMR analysis in participants of East Asian ancestry</title>
+<p>In participants of East Asian ancestry, we identified two genes showing significant pleiotropic association with periodontitis after correction for multiple testing using FDR (<bold><xref rid="tbl3" ref-type="table">Table 3</xref></bold>). Specifically, using the CAGE eQTL data, our SMR analysis identified one gene, <italic>BX093763</italic> (ILMN_1899903, P<sub>SMR</sub>=2.33&#x00D7;10<sup>&#x2212;4</sup>). GO enrichment analysis of biological process and molecular function showed that the ten top hit genes were involved in one GO terms, axon development (GO:0061564; <bold><xref rid="figS2" ref-type="fig">Figure S2A</xref></bold>). Concept network analysis of the genes revealed multiple domains related with inflammation (<bold><xref rid="figS2" ref-type="fig">Figure S2B</xref></bold>). More information could be found in <bold>Table S3</bold>. Using the GTEx eQTL data, our SMR analysis identified one gene, <italic>AC104135</italic>.<italic>3</italic>, that was pleiotropically/potentially causally associated with periodontitis, after correction for multiple testing using FDR (ENSG00000204792.2, P<sub>SMR</sub>=7.46&#x00D7;10<sup>&#x2212;4</sup>; <bold><xref rid="fig3" ref-type="fig">Figure 3</xref></bold>). GO enrichment analysis of biological process and molecular function did not find any significant GO terms. Concept network analysis of the genes revealed multiple domains related with endogenous peptide antigen (<bold><xref rid="figS2" ref-type="fig">Figure S2C</xref></bold>). More information could be found in <bold>Table S4</bold>.</p>
+<table-wrap id="tbl3" orientation="portrait" position="float">
+<label>Table 3.</label>
+<caption><title>The top ten probes identified in the SMR analysis in participants of East Asian ancestry.</title></caption>
+<graphic xlink:href="21251192v1_tbl3.tif"/>
+<graphic xlink:href="21251192v1_tbl3a.tif"/>
+</table-wrap>
+<fig id="fig3" position="float" fig-type="figure">
+<label>Figure 3.</label>
+<caption><title>Prioritizing gene around <italic>AC104135.3</italic> in association with periodontitis in participants of East Asian ancestry.</title>
+<p>Top plot, grey dots represent the -log<sub>10</sub>(<italic>P</italic> values) for SNPs from the GWAS of periodontitis, and rhombuses represent the -log<sub>10</sub>(<italic>P</italic> values) for probes from the SMR test with solid rhombuses indicating that the probes pass HEIDI test and hollow rhombuses indicating that the probes do not pass the HEIDI test. Middle plot, eQTL results for ENSG00000204792.2 probe, tagging <italic>AC104135.3</italic>. Bottom plot, location of genes tagged by the probes.</p>
+<p>GWAS, genome-wide association studies; SMR, summary data-based Mendelian randomization; HEIDI, heterogeneity in dependent instruments; eQTL, expression quantitative trait loci</p></caption>
+<graphic xlink:href="21251192v1_fig3.tif"/>
+</fig>
+<p>We found that two genes were among the top hits in both SMR analyses, including <italic>PSD4</italic> (CAGE eQTL: ILMN_2154115, P<sub>SMR</sub>=1.79&#x00D7;10<sup>&#x2212;3</sup>; GTEx: ENSG00000125637.11, P<sub>SMR</sub>=1.84&#x00D7;10<sup>&#x2212;3</sup>) and <italic>GFRA2</italic> (CAGE eQTL: ILMN_1656300, P<sub>SMR</sub>=3.55&#x00D7;10<sup>&#x2212;3</sup>; GTEx: ENSG00000168546.6, P<sub>SMR</sub>=7.07&#x00D7;10<sup>&#x2212;3</sup>). More information could be found in <bold>Table S3-4</bold>.</p>
+</sec>
+</sec>
+<sec id="s4">
+<title>Discussion</title>
+<p>In the present study, we explored putative genes that showed pleiotropic/potentially causal association with periodontitis by integrating GWAS and eQTL data in the SMR analysis. We identified multiple genes, some of which represented novel genes, that might be involved in the pathogenesis of periodontitis in participants of European ancestry and participants of East Asian ancestry. Our findings provided helpful leads to a better understanding of the mechanisms underlying periodontitis and suggested potential therapeutic targets for the treatment of periodontitis.</p>
+<p>A recent study investigated molecular biomarker candidates and biological pathways of chronic periodontitis using pooled datasets in the Gene Expression Omnibus (GEO) database, and identified 123 common differently expressed genes (DEGs), including 81 upregulated genes and 42 downregulated genes<sup><xref ref-type="bibr" rid="c32">32</xref></sup>. Several of the identified genes were also among the top hits in our SMR analysis. For example, the gene <italic>NSG1</italic> (Neuronal Vesicle Trafficking Associated 1) was found to be downregulated in persons with chronic periodontitis. It also showed significant pleiotropic association with periodontitis in our study of participants of European ancestry (<bold><xref rid="tbl2" ref-type="table">Table 2</xref></bold>). <italic>NSG1</italic>, also known as <italic>D4S234E</italic> or <italic>NEEP21</italic>, is located on 4p16.3 in human and is a member of the neuron-specific gene family. It is the most important in regulating receptor recycling and synaptic transmission<sup><xref ref-type="bibr" rid="c33">33</xref></sup>. p53, an important tumor suppressor gene, binds to the promoter region of <italic>NSG1</italic> and regulates its expression in response to DNA damage. Inhibition of <italic>NSG1</italic> expression suppressed apoptosis<sup><xref ref-type="bibr" rid="c34">34</xref></sup>. The exact role of <italic>NSG1</italic> in the pathogenesis of periodontitis is unclear and warrants further research.</p>
+<p>Another research integrating GWAS and eQTL data identified 10 genes whose expression might influence periodontitis<sup><xref ref-type="bibr" rid="c35">35</xref></sup>. Of them, the gene <italic>S100A12</italic> (S calcium-binding protein A12) also appeared among the top hits in participants of European ancestry in the SMR analysis using CAGE and GTEx eQTL data (<bold><xref rid="tbl2" ref-type="table">Table 2</xref></bold>). <italic>S100A12</italic>, located on 1q21.3, is a member of the S100 family of EF-hand calcium-binding proteins<sup><xref ref-type="bibr" rid="c36">36</xref></sup>. Previous studies indicated that it played a prominent role in the regulation of inflammatory processes and immune response<sup><xref ref-type="bibr" rid="c37">37</xref></sup>. It was reported that the levels of <italic>S100A12</italic> were higher in participants with high periodontal inflammatory burden and were associated with the percentage of bleeding on probing<sup><xref ref-type="bibr" rid="c38">38</xref></sup>. In gingival crevicular fluid and serum, the levels of <italic>S100A12</italic> increased with the inflammation of periodontium<sup><xref ref-type="bibr" rid="c39">39</xref></sup>. These findings, together with ours, demonstrated the important role of <italic>S100A12</italic> in influencing periodontitis and highlighted the potential of this gene as a promising target for the prevention and treatment of periodontitis.</p>
+<p>Our study was different from the previous study integrating GWAS and eQTL data<sup><xref ref-type="bibr" rid="c35">35</xref></sup>. We used the GWAS summarized data for both European and East Asian ancestries, while the previous research only analyzed GWAS data of European ancestry. Similarly, we used both CAGE and GTEx eQTL data, while the previous research used only GTEx data. Moreover, we undertook a SMR analytic framework which focused on exploring genes showing pleiotropic association/potentially causal association with periodontitis while the previous research adopted a Sherlock approach which is a Bayesian statistical framework aiming to identify genes whose expression was associated with periodontitis susceptibility<sup><xref ref-type="bibr" rid="c40">40</xref></sup>.</p>
+<p>Our study was also very different from another MR research on periodontitis<sup><xref ref-type="bibr" rid="c29">29</xref></sup>. Although both studies aimed to explore potentially causal factors for periodontitis, the previous research focused examining the causal role of total adiposity in the pathogenesis of periodontitis, while our study attempted to identify genes that were pleiotropically/potentially causally associated with periodontitis. The analytic approaches were also different: the previous research used genetic risk scores as the instrumental variables calculated from three genes (<italic>FTO, MC4R</italic> and <italic>TMEM18</italic>) by summing the number of BMI increasing alleles, while in our study, we used all the genetic variants from GWAS summarized data as the potential instrumental variables.</p>
+<p>Our study has some limitations. The number of probes used in our SMR analysis was limited, especially in the SMR analysis of participants of East Asian ancestry. As a result, we may have missed some genes which played important roles in the pathogenesis of periodontitis. The HEIDI test was significant for some of the identified genes (<bold><xref rid="tbl2" ref-type="table">Table 2</xref>-<xref ref-type="table" rid="tbl3">3</xref></bold>). Therefore, we could not rule out the possibility of horizontal pleiotropy, i.e., the identified association might be due to two distinct genetic variants in high linkage disequilibrium with each other. In addition, we only performed SMR analysis for participants of European and East Asian ancestries, and our findings might not be generalized to other populations. More studies are needed to validate our findings in independent populations. Due to the exploratory nature of study, we adopted correction for multiple testing to reduce false positive rate; however, we may have missed important SNPs or genes. Finally, we could not quantify the changes in gene expression in subjects with periodontitis in comparison with the control due to the unavailability of individual eQTL data.</p>
+</sec>
+<sec id="s5">
+<title>Conclusions</title>
+<p>In conclusion, our SMR analysis revealed multiple genes that were potentially pleiotropically associated with periodontitis. More studies are needed to explore the underlying physiological mechanisms in the etiology of periodontitis.</p>
+</sec>
+</body>
+<back>
+<sec sec-type="data-availability">
+<title>Data Availability</title>
+<p>All data generated or analyzed during this study are included in this published article and its supplementary information files.</p>
+</sec>
+<ack>
+<title>Acknowledgements</title>
+<p>The study was supported by NIH/NIA grants P30AG10161, R01AG15819, R01AG17917, R01AG36042, U01AG61356 and 1RF1AG064312-01. Di Liu was supported by China Scholarship Council (CSC 201908110339). The authors confirmed that all authors have reviewed the contents of the article being submitted, approved its contents, and validated the accuracy of the data.</p>
+</ack>
+<sec id="s6">
+<title>Author contribution</title>
+<p>DL, JY and GZ designed the study. FW, DL, BF and WL analyzed data and performed data interpretation. FW, DL, YZ and JY wrote the initial draft and BF, WL, and GZ contributed to writing subsequent versions of the manuscript. All authors reviewed the study findings and read and approved the final version before submission.</p>
+</sec>
+<sec id="s7">
+<title>Availability of data and materials</title>
+<p>All data generated or analyzed during this study are included in this published article and its supplementary information files.</p>
+</sec>
+<sec id="s8">
+<title>Disclosure of Potential Conflicts of Interest</title>
+<p>No potential conflicts of interest were disclosed by the authors.</p>
+</sec>
+<ref-list>
+<title>References</title>
+<ref id="c1"><label>1.</label><mixed-citation publication-type="journal"><string-name><surname>Berezow</surname> <given-names>AB</given-names></string-name>, <string-name><surname>Darveau</surname> <given-names>RP</given-names></string-name>. <article-title>Microbial shift and periodontitis</article-title>. <source>Periodontol 2000</source> <year>2011</year>;<volume>55</volume>:<fpage>36</fpage>&#x2013;<lpage>47</lpage>.</mixed-citation></ref>
+<ref id="c2"><label>2.</label><mixed-citation publication-type="journal"><string-name><surname>Flemmig</surname> <given-names>TF</given-names></string-name>. <article-title>Periodontitis</article-title>. <source>Ann Periodontol</source> <year>1999</year>;<volume>4</volume>:<fpage>32</fpage>&#x2013;<lpage>8</lpage>.</mixed-citation></ref>
+<ref id="c3"><label>3.</label><mixed-citation publication-type="journal"><string-name><surname>Eke</surname> <given-names>PI</given-names></string-name>, <string-name><surname>Borgnakke</surname> <given-names>WS</given-names></string-name>, <string-name><surname>Genco</surname> <given-names>RJ</given-names></string-name>. <article-title>Recent epidemiologic trends in periodontitis in the USA</article-title>. <source>Periodontol 2000</source> <year>2020</year>;<volume>82</volume>:<fpage>257</fpage>&#x2013;<lpage>67</lpage>.</mixed-citation></ref>
+<ref id="c4"><label>4.</label><mixed-citation publication-type="journal"><string-name><surname>Humphrey</surname> <given-names>LL</given-names></string-name>, <string-name><surname>Fu</surname> <given-names>R</given-names></string-name>, <string-name><surname>Buckley</surname> <given-names>DI</given-names></string-name>, <string-name><surname>Freeman</surname> <given-names>M</given-names></string-name>, <string-name><surname>Helfand</surname> <given-names>M.</given-names></string-name> <article-title>Periodontal disease and coronary heart disease incidence: a systematic review and meta-analysis</article-title>. <source>J Gen Intern Med</source> <year>2008</year>;<volume>23</volume>:<fpage>2079</fpage>&#x2013;<lpage>86</lpage>.</mixed-citation></ref>
+<ref id="c5"><label>5.</label><mixed-citation publication-type="journal"><string-name><surname>Nascimento</surname> <given-names>GG</given-names></string-name>, <string-name><surname>Leite</surname> <given-names>FRM</given-names></string-name>, <string-name><surname>Vestergaard</surname> <given-names>P</given-names></string-name>, <string-name><surname>Scheutz</surname> <given-names>F</given-names></string-name>, <string-name><surname>Lopez</surname> <given-names>R.</given-names></string-name> <article-title>Does diabetes increase the risk of periodontitis? A systematic review and meta-regression analysis of longitudinal prospective studies</article-title>. <source>Acta Diabetol</source> <year>2018</year>;<volume>55</volume>:<fpage>653</fpage>&#x2013;<lpage>67</lpage>.</mixed-citation></ref>
+<ref id="c6"><label>6.</label><mixed-citation publication-type="journal"><string-name><surname>Walia</surname> <given-names>M</given-names></string-name>, <string-name><surname>Saini</surname> <given-names>N.</given-names></string-name> <article-title>Relationship between periodontal diseases and preterm birth: Recent epidemiological and biological data</article-title>. <source>Int J Appl Basic Med Res</source> <year>2015</year>;<volume>5</volume>:<fpage>2</fpage>&#x2013;<lpage>6</lpage>.</mixed-citation></ref>
+<ref id="c7"><label>7.</label><mixed-citation publication-type="journal"><string-name><surname>Righolt</surname> <given-names>AJ</given-names></string-name>, <string-name><surname>Jevdjevic</surname> <given-names>M</given-names></string-name>, <string-name><surname>Marcenes</surname> <given-names>W</given-names></string-name>, <string-name><surname>Listl</surname> <given-names>S.</given-names></string-name> <article-title>Global-, Regional-, and Country-Level Economic Impacts of Dental Diseases in 2015</article-title>. <source>J Dent Res</source> <year>2018</year>;<volume>97</volume>:<fpage>501</fpage>&#x2013;<lpage>7</lpage>.</mixed-citation></ref>
+<ref id="c8"><label>8.</label><mixed-citation publication-type="journal"><string-name><surname>Cekici</surname> <given-names>A</given-names></string-name>, <string-name><surname>Kantarci</surname> <given-names>A</given-names></string-name>, <string-name><surname>Hasturk</surname> <given-names>H</given-names></string-name>, <string-name><surname>Van Dyke</surname> <given-names>TE</given-names></string-name>. <article-title>Inflammatory and immune pathways in the pathogenesis of periodontal disease</article-title>. <source>Periodontol 2000</source> <year>2014</year>;<volume>64</volume>:<fpage>57</fpage>&#x2013;<lpage>80</lpage>.</mixed-citation></ref>
+<ref id="c9"><label>9.</label><mixed-citation publication-type="journal"><string-name><surname>Slots</surname> <given-names>J.</given-names></string-name> <article-title>Periodontitis: facts, fallacies and the future</article-title>. <source>Periodontol 2000</source> <year>2017</year>;<volume>75</volume>:<fpage>7</fpage>&#x2013;<lpage>23</lpage>.</mixed-citation></ref>
+<ref id="c10"><label>10.</label><mixed-citation publication-type="journal"><string-name><surname>Leite</surname> <given-names>FRM</given-names></string-name>, <string-name><surname>Nascimento</surname> <given-names>GG</given-names></string-name>, <string-name><surname>Scheutz</surname> <given-names>F</given-names></string-name>, <string-name><surname>Lopez</surname> <given-names>R.</given-names></string-name> <article-title>Effect of Smoking on Periodontitis: A Systematic Review and Meta-regression</article-title>. <source>Am J Prev Med</source> <year>2018</year>;<volume>54</volume>:<fpage>831</fpage>&#x2013;<lpage>41</lpage>.</mixed-citation></ref>
+<ref id="c11"><label>11.</label><mixed-citation publication-type="journal"><string-name><surname>Wang</surname> <given-names>J</given-names></string-name>, <string-name><surname>Lv</surname> <given-names>J</given-names></string-name>, <string-name><surname>Wang</surname> <given-names>W</given-names></string-name>, <string-name><surname>Jiang</surname> <given-names>X.</given-names></string-name> <article-title>Alcohol consumption and risk of periodontitis: a meta-analysis</article-title>. <source>J Clin Periodontol</source> <year>2016</year>;<volume>43</volume>:<fpage>572</fpage>&#x2013;<lpage>83</lpage>.</mixed-citation></ref>
+<ref id="c12"><label>12.</label><mixed-citation publication-type="journal"><string-name><surname>Hilgert</surname> <given-names>JB</given-names></string-name>, <string-name><surname>Hugo</surname> <given-names>FN</given-names></string-name>, <string-name><surname>Bandeira</surname> <given-names>DR</given-names></string-name>, <string-name><surname>Bozzetti</surname> <given-names>MC</given-names></string-name>. <article-title>Stress, cortisol, and periodontitis in a population aged 50 years and over</article-title>. <source>J Dent Res</source> <year>2006</year>;<volume>85</volume>:<fpage>324</fpage>&#x2013;<lpage>8</lpage>.</mixed-citation></ref>
+<ref id="c13"><label>13.</label><mixed-citation publication-type="journal"><string-name><surname>Nascimento</surname> <given-names>GG</given-names></string-name>, <string-name><surname>Gastal</surname> <given-names>MT</given-names></string-name>, <string-name><surname>Leite</surname> <given-names>FRM</given-names></string-name>, <etal>et al.</etal> <article-title>Is there an association between depression and periodontitis? A birth cohort study</article-title>. <source>J Clin Periodontol</source> <year>2019</year>;<volume>46</volume>:<fpage>31</fpage>&#x2013;<lpage>9</lpage>.</mixed-citation></ref>
+<ref id="c14"><label>14.</label><mixed-citation publication-type="journal"><string-name><surname>Preshaw</surname> <given-names>PM</given-names></string-name>, <string-name><surname>Bissett</surname> <given-names>SM</given-names></string-name>. <article-title>Periodontitis and diabetes</article-title>. <source>Br Dent J</source> <year>2019</year>;<volume>227</volume>:<fpage>577</fpage>&#x2013;<lpage>84</lpage>.</mixed-citation></ref>
+<ref id="c15"><label>15.</label><mixed-citation publication-type="journal"><string-name><surname>Corey</surname> <given-names>LA</given-names></string-name>, <string-name><surname>Nance</surname> <given-names>WE</given-names></string-name>, <string-name><surname>Hofstede</surname> <given-names>P</given-names></string-name>, <string-name><surname>Schenkein</surname> <given-names>HA</given-names></string-name>. <article-title>Self-reported periodontal disease in a Virginia twin population</article-title>. <source>J Periodontol</source> <year>1993</year>;<volume>64</volume>:<fpage>1205</fpage>&#x2013;<lpage>8</lpage>.</mixed-citation></ref>
+<ref id="c16"><label>16.</label><mixed-citation publication-type="journal"><string-name><surname>Michalowicz</surname> <given-names>BS</given-names></string-name>, <string-name><surname>Diehl</surname> <given-names>SR</given-names></string-name>, <string-name><surname>Gunsolley</surname> <given-names>JC</given-names></string-name>, <etal>et al.</etal> <article-title>Evidence of a substantial genetic basis for risk of adult periodontitis</article-title>. <source>J Periodontol</source> <year>2000</year>;<volume>71</volume>:<fpage>1699</fpage>&#x2013;<lpage>707</lpage>.</mixed-citation></ref>
+<ref id="c17"><label>17.</label><mixed-citation publication-type="journal"><string-name><surname>Schaefer</surname> <given-names>AS</given-names></string-name>, <string-name><surname>Richter</surname> <given-names>GM</given-names></string-name>, <string-name><surname>Nothnagel</surname> <given-names>M</given-names></string-name>, <etal>et al.</etal> <article-title>A genome-wide association study identifies GLT6D1 as a susceptibility locus for periodontitis</article-title>. <source>Hum Mol Genet</source> <year>2010</year>;<volume>19</volume>:<fpage>553</fpage>&#x2013;<lpage>62</lpage>.</mixed-citation></ref>
+<ref id="c18"><label>18.</label><mixed-citation publication-type="journal"><string-name><surname>Munz</surname> <given-names>M</given-names></string-name>, <string-name><surname>Willenborg</surname> <given-names>C</given-names></string-name>, <string-name><surname>Richter</surname> <given-names>GM</given-names></string-name>, <etal>et al.</etal> <article-title>A genome-wide association study identifies nucleotide variants at SIGLEC5 and DEFA1A3 as risk loci for periodontitis</article-title>. <source>Hum Mol Genet</source> <year>2017</year>;<volume>26</volume>:<fpage>2577</fpage>&#x2013;<lpage>88</lpage>.</mixed-citation></ref>
+<ref id="c19"><label>19.</label><mixed-citation publication-type="journal"><string-name><surname>Teumer</surname> <given-names>A</given-names></string-name>, <string-name><surname>Holtfreter</surname> <given-names>B</given-names></string-name>, <string-name><surname>Volker</surname> <given-names>U</given-names></string-name>, <etal>et al.</etal> <article-title>Genome-wide association study of chronic periodontitis in a general German population</article-title>. <source>J Clin Periodontol</source> <year>2013</year>;<volume>40</volume>:<fpage>977</fpage>&#x2013;<lpage>85</lpage>.</mixed-citation></ref>
+<ref id="c20"><label>20.</label><mixed-citation publication-type="journal"><string-name><surname>Divaris</surname> <given-names>K</given-names></string-name>, <string-name><surname>Monda</surname> <given-names>KL</given-names></string-name>, <string-name><surname>North</surname> <given-names>KE</given-names></string-name>, <etal>et al.</etal> <article-title>Exploring the genetic basis of chronic periodontitis: a genome-wide association study</article-title>. <source>Hum Mol Genet</source> <year>2013</year>;<volume>22</volume>:<fpage>2312</fpage>&#x2013;<lpage>24</lpage>.</mixed-citation></ref>
+<ref id="c21"><label>21.</label><mixed-citation publication-type="journal"><string-name><surname>Freitag-Wolf</surname> <given-names>S</given-names></string-name>, <string-name><surname>Dommisch</surname> <given-names>H</given-names></string-name>, <string-name><surname>Graetz</surname> <given-names>C</given-names></string-name>, <etal>et al.</etal> <article-title>Genome-wide exploration identifies sex-specific genetic effects of alleles upstream NPY to increase the risk of severe periodontitis in men</article-title>. <source>J Clin Periodontol</source> <year>2014</year>;<volume>41</volume>:<fpage>1115</fpage>&#x2013;<lpage>21</lpage>.</mixed-citation></ref>
+<ref id="c22"><label>22.</label><mixed-citation publication-type="journal"><string-name><surname>Laine</surname> <given-names>ML</given-names></string-name>, <string-name><surname>Loos</surname> <given-names>BG</given-names></string-name>, <string-name><surname>Crielaard</surname> <given-names>W.</given-names></string-name> <article-title>Gene polymorphisms in chronic periodontitis</article-title>. <source>Int J Dent</source> <year>2010</year>;<volume>2010</volume>:<fpage>324719</fpage>.</mixed-citation></ref>
+<ref id="c23"><label>23.</label><mixed-citation publication-type="journal"><string-name><surname>Davey Smith</surname> <given-names>G</given-names></string-name>, <string-name><surname>Hemani</surname> <given-names>G.</given-names></string-name> <article-title>Mendelian randomization: genetic anchors for causal inference in epidemiological studies</article-title>. <source>Hum Mol Genet</source> <year>2014</year>;<volume>23</volume>:<fpage>R89</fpage>&#x2013;<lpage>98</lpage>.</mixed-citation></ref>
+<ref id="c24"><label>24.</label><mixed-citation publication-type="journal"><string-name><surname>Liu</surname> <given-names>D</given-names></string-name>, <string-name><surname>Wang</surname> <given-names>Y</given-names></string-name>, <string-name><surname>Jing</surname> <given-names>H</given-names></string-name>, <string-name><surname>Meng</surname> <given-names>Q</given-names></string-name>, <string-name><surname>Yang</surname> <given-names>J.</given-names></string-name> <article-title>Mendelian randomization integrating GWAS and mQTL data identified novel pleiotropic DNA methylation loci for neuropathology of Alzheimer&#x2019;s disease</article-title>. <source>Neurobiol Aging</source> <year>2021</year>;<volume>97</volume>:<fpage>18</fpage>&#x2013;<lpage>27</lpage>.</mixed-citation></ref>
+<ref id="c25"><label>25.</label><mixed-citation publication-type="other"><string-name><surname>Liu</surname> <given-names>D</given-names></string-name>, <string-name><surname>Yang</surname> <given-names>J</given-names></string-name>, <string-name><surname>Feng</surname> <given-names>B</given-names></string-name>, <string-name><surname>Lu</surname> <given-names>W</given-names></string-name>, <string-name><surname>Zhao</surname> <given-names>C</given-names></string-name>, <string-name><surname>Li</surname> <given-names>L.</given-names></string-name> <article-title>Mendelian randomization analysis identified genes pleiotropically associated with the risk and prognosis of COVID-19</article-title>. <source>J Infect</source> <year>2020</year>.</mixed-citation></ref>
+<ref id="c26"><label>26.</label><mixed-citation publication-type="journal"><string-name><surname>Lloyd-Jones</surname> <given-names>LR</given-names></string-name>, <string-name><surname>Holloway</surname> <given-names>A</given-names></string-name>, <string-name><surname>McRae</surname> <given-names>A</given-names></string-name>, <etal>et al.</etal> <article-title>The Genetic Architecture of Gene Expression in Peripheral Blood</article-title>. <source>Am J Hum Genet</source> <year>2017</year>;<volume>100</volume>:<fpage>371</fpage>.</mixed-citation></ref>
+<ref id="c27"><label>27.</label><mixed-citation publication-type="journal"><string-name><surname>Consortium</surname> <given-names>GT</given-names></string-name>, <string-name><surname>Laboratory</surname> <given-names>DA</given-names></string-name>, <collab>Coordinating Center -Analysis Working G</collab>, <etal>et al.</etal> <article-title>Genetic effects on gene expression across human tissues</article-title>. <source>Nature</source> <year>2017</year>;<volume>550</volume>:<fpage>204</fpage>&#x2013;<lpage>13</lpage>.</mixed-citation></ref>
+<ref id="c28"><label>28.</label><mixed-citation publication-type="journal"><string-name><surname>Shungin</surname> <given-names>D</given-names></string-name>, <string-name><surname>Haworth</surname> <given-names>S</given-names></string-name>, <string-name><surname>Divaris</surname> <given-names>K</given-names></string-name>, <etal>et al.</etal> <article-title>Genome-wide analysis of dental caries and periodontitis combining clinical and self-reported data</article-title>. <source>Nat Commun</source> <year>2019</year>;<volume>10</volume>:<fpage>2773</fpage>.</mixed-citation></ref>
+<ref id="c29"><label>29.</label><mixed-citation publication-type="journal"><string-name><surname>Shungin</surname> <given-names>D</given-names></string-name>, <string-name><surname>Cornelis</surname> <given-names>MC</given-names></string-name>, <string-name><surname>Divaris</surname> <given-names>K</given-names></string-name>, <etal>et al.</etal> <article-title>Using genetics to test the causal relationship of total adiposity and periodontitis: Mendelian randomization analyses in the Gene-Lifestyle Interactions and Dental Endpoints (GLIDE) Consortium</article-title>. <source>Int J Epidemiol</source> <year>2015</year>;<volume>44</volume>:<fpage>638</fpage>&#x2013;<lpage>50</lpage>.</mixed-citation></ref>
+<ref id="c30"><label>30.</label><mixed-citation publication-type="journal"><string-name><surname>Zhu</surname> <given-names>Z</given-names></string-name>, <string-name><surname>Zhang</surname> <given-names>F</given-names></string-name>, <string-name><surname>Hu</surname> <given-names>H</given-names></string-name>, <etal>et al.</etal> <article-title>Integration of summary data from GWAS and eQTL studies predicts complex trait gene targets</article-title>. <source>Nat Genet</source> <year>2016</year>;<volume>48</volume>:<fpage>481</fpage>&#x2013;<lpage>7</lpage>.</mixed-citation></ref>
+<ref id="c31"><label>31.</label><mixed-citation publication-type="journal"><string-name><surname>Zhou</surname> <given-names>Y</given-names></string-name>, <string-name><surname>Zhou</surname> <given-names>B</given-names></string-name>, <string-name><surname>Pache</surname> <given-names>L</given-names></string-name>, <etal>et al.</etal> <article-title>Metascape provides a biologist-oriented resource for the analysis of systems-level datasets</article-title>. <source>Nat Commun</source> <year>2019</year>;<volume>10</volume>:<fpage>1523</fpage>.</mixed-citation></ref>
+<ref id="c32"><label>32.</label><mixed-citation publication-type="journal"><string-name><surname>Suzuki</surname> <given-names>A</given-names></string-name>, <string-name><surname>Horie</surname> <given-names>T</given-names></string-name>, <string-name><surname>Numabe</surname> <given-names>Y.</given-names></string-name> <article-title>Investigation of molecular biomarker candidates for diagnosis and prognosis of chronic periodontitis by bioinformatics analysis of pooled microarray gene expression datasets in Gene Expression Omnibus (GEO)</article-title>. <source>BMC Oral Health</source> <year>2019</year>;<volume>19</volume>:<fpage>52</fpage>.</mixed-citation></ref>
+<ref id="c33"><label>33.</label><mixed-citation publication-type="journal"><string-name><surname>Rengaraj</surname> <given-names>D</given-names></string-name>, <string-name><surname>Lee</surname> <given-names>BR</given-names></string-name>, <string-name><surname>Park</surname> <given-names>KJ</given-names></string-name>, <etal>et al.</etal> <article-title>The distribution of neuron-specific gene family member 1 in brain and germ cells: Implications for the regulation of germ-line development by brain</article-title>. <source>Dev Dyn</source> <year>2011</year>;<volume>240</volume>:<fpage>850</fpage>&#x2013;<lpage>61</lpage>.</mixed-citation></ref>
+<ref id="c34"><label>34.</label><mixed-citation publication-type="journal"><string-name><surname>Kudoh</surname> <given-names>T</given-names></string-name>, <string-name><surname>Kimura</surname> <given-names>J</given-names></string-name>, <string-name><surname>Lu</surname> <given-names>ZG</given-names></string-name>, <string-name><surname>Miki</surname> <given-names>Y</given-names></string-name>, <string-name><surname>Yoshida</surname> <given-names>K.</given-names></string-name> <article-title>D4S234E, a novel p53-responsive gene, induces apoptosis in response to DNA damage</article-title>. <source>Exp Cell Res</source> <year>2010</year>;<volume>316</volume>:<fpage>2849</fpage>&#x2013;<lpage>58</lpage>.</mixed-citation></ref>
+<ref id="c35"><label>35.</label><mixed-citation publication-type="journal"><string-name><surname>Li</surname> <given-names>W</given-names></string-name>, <string-name><surname>Zheng</surname> <given-names>Q</given-names></string-name>, <string-name><surname>Meng</surname> <given-names>H</given-names></string-name>, <string-name><surname>Chen</surname> <given-names>D.</given-names></string-name> <article-title>Integration of genome-wide association study and expression quantitative trait loci data identifies AIM2 as a risk gene of periodontitis</article-title>. <source>J Clin Periodontol</source> <year>2020</year>;<volume>47</volume>:<fpage>583</fpage>&#x2013;<lpage>93</lpage>.</mixed-citation></ref>
+<ref id="c36"><label>36.</label><mixed-citation publication-type="journal"><string-name><surname>Guignard</surname> <given-names>F</given-names></string-name>, <string-name><surname>Mauel</surname> <given-names>J</given-names></string-name>, <string-name><surname>Markert</surname> <given-names>M.</given-names></string-name> <article-title>Identification and characterization of a novel human neutrophil protein related to the S100 family</article-title>. <source>Biochem J</source> <year>1995</year>;<volume>309</volume> (<issue>Pt 2</issue>):<fpage>395</fpage>&#x2013;<lpage>401</lpage>.</mixed-citation></ref>
+<ref id="c37"><label>37.</label><mixed-citation publication-type="journal"><string-name><surname>Pietzsch</surname> <given-names>J</given-names></string-name>, <string-name><surname>Hoppmann</surname> <given-names>S.</given-names></string-name> <article-title>Human S100A12: a novel key player in inflammation?</article-title> <source>Amino Acids</source> <year>2009</year>;<volume>36</volume>:<fpage>381</fpage>&#x2013;<lpage>9</lpage>.</mixed-citation></ref>
+<ref id="c38"><label>38.</label><mixed-citation publication-type="journal"><string-name><surname>Holmstrom</surname> <given-names>SB</given-names></string-name>, <string-name><surname>Lira-Junior</surname> <given-names>R</given-names></string-name>, <string-name><surname>Zwicker</surname> <given-names>S</given-names></string-name>, <etal>et al.</etal> <article-title>MMP-12 and S100s in saliva reflect different aspects of periodontal inflammation</article-title>. <source>Cytokine</source> <year>2019</year>;<volume>113</volume>:<fpage>155</fpage>&#x2013;<lpage>61</lpage>.</mixed-citation></ref>
+<ref id="c39"><label>39.</label><mixed-citation publication-type="journal"><string-name><surname>Pradeep</surname> <given-names>AR</given-names></string-name>, <string-name><surname>Martande</surname> <given-names>SS</given-names></string-name>, <string-name><surname>Singh</surname> <given-names>SP</given-names></string-name>, <string-name><surname>Suke</surname> <given-names>DK</given-names></string-name>, <string-name><surname>Raju</surname> <given-names>AP</given-names></string-name>, <string-name><surname>Naik</surname> <given-names>SB</given-names></string-name>. <article-title>Correlation of human S100A12 (EN-RAGE) and high-sensitivity C-reactive protein as gingival crevicular fluid and serum markers of inflammation in chronic periodontitis and type 2 diabetes</article-title>. <source>Inflamm Res</source> <year>2014</year>;<volume>63</volume>:<fpage>317</fpage>&#x2013;<lpage>23</lpage>.</mixed-citation></ref>
+<ref id="c40"><label>40.</label><mixed-citation publication-type="journal"><string-name><surname>He</surname> <given-names>X</given-names></string-name>, <string-name><surname>Fuller</surname> <given-names>CK</given-names></string-name>, <string-name><surname>Song</surname> <given-names>Y</given-names></string-name>, <etal>et al.</etal> <article-title>Sherlock: detecting gene-disease associations by matching patterns of expression QTL and GWAS</article-title>. <source>Am J Hum Genet</source> <year>2013</year>;<volume>92</volume>:<fpage>667</fpage>&#x2013;<lpage>80</lpage>.</mixed-citation></ref>
+</ref-list>
+<sec id="s9">
+<title>Figure legends</title>
+<fig id="figS1" position="float" fig-type="figure">
+<label>Figure S1.</label>
+<caption><title>Functional enrichment and gene concept network analysis in participants of European ancestry.</title>
+<p>A) Enriched GO terms based on genes identified using CAGE eQTL data; B) Concept network analysis of the genes identified using CAGE eQTL data; C) Enriched GO terms based on genes identified using GTEx eQTL data; and D) Concept network analysis of the genes identified using GTEx eQTL data.</p>
+<p>GO, gene ontology; eQTL, expression quantitative trait loci</p></caption>
+<graphic xlink:href="21251192v1_figS1.tif"/>
+</fig>
+<fig id="figS2" position="float" fig-type="figure">
+<label>Figure S2.</label>
+<caption><title>Functional enrichment and gene concept network analysis in participants of East Asian ancestry.</title>
+<p>A) Enriched GO terms based on genes identified using CAGE eQTL data; B) Enriched GO terms based on genes identified using GTEx eQTL data; and C) Concept network analysis of the genes identified using GTEx eQTL data.</p>
+<p>GO, gene ontology; eQTL, expression quantitative trait loci</p></caption>
+<graphic xlink:href="21251192v1_figS2.tif"/>
+</fig>
+</sec>
+</back>
+</article>

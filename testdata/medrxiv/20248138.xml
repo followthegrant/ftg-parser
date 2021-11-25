@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.2d1 20170631//EN" "JATS-archivearticle1.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" article-type="article" dtd-version="1.2d1" specific-use="production" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="publisher-id">MEDRXIV</journal-id>
+<journal-title-group>
+<journal-title>medRxiv</journal-title>
+<abbrev-journal-title abbrev-type="publisher">medRxiv</abbrev-journal-title>
+</journal-title-group>
+<publisher>
+<publisher-name>Cold Spring Harbor Laboratory</publisher-name>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1101/2020.12.13.20248138</article-id>
+<article-version>1.1</article-version>
+<article-categories>
+<subj-group subj-group-type="hwp-journal-coll">
+<subject>Health Informatics</subject>
+</subj-group>
+</article-categories>
+<title-group>
+<article-title>Clinical Decision Support Using a Partially Instantiated Probabilistic Graphical Model Optimized through Quantum Annealing: Proof-of-Concept of a Computational Method Using a Clinical Data Set</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" corresp="yes">
+<name><surname>Sahner</surname><given-names>David</given-names></name>
+<degrees>MD</degrees>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="corresp" rid="cor1">&#x002A;</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Williams</surname><given-names>Richard</given-names></name>
+<degrees>PhD</degrees>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<aff id="a1"><label>1</label><institution>Former Chief Scientific Officer and Chief Medical Officer, EigenMed, Inc</institution></aff>
+<aff id="a2"><label>2</label><institution>Former Senior Vice President, Data Science, EigenMed, Inc</institution></aff>
+</contrib-group>
+<author-notes>
+<corresp id="cor1"><label>&#x002A;</label>Corresponding author; email: <email>sahnerdavid@gmail.com</email></corresp>
+</author-notes>
+<pub-date pub-type="epub">
+<year>2020</year>
+</pub-date>
+<elocation-id>2020.12.13.20248138</elocation-id>
+<history>
+<date date-type="received">
+<day>13</day>
+<month>12</month>
+<year>2020</year>
+</date>
+<date date-type="rev-recd">
+<day>13</day>
+<month>12</month>
+<year>2020</year>
+</date>
+<date date-type="accepted">
+<day>14</day>
+<month>12</month>
+<year>2020</year>
+</date>
+</history>
+<permissions>
+<copyright-statement>&#x00A9; 2020, Posted by Cold Spring Harbor Laboratory</copyright-statement>
+<copyright-year>2020</copyright-year>
+<license license-type="creative-commons" xlink:href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><license-p>This pre-print is available under a Creative Commons License (Attribution-NonCommercial-NoDerivs 4.0 International), CC BY-NC-ND 4.0, as described at <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by-nc-nd/4.0/">http://creativecommons.org/licenses/by-nc-nd/4.0/</ext-link></license-p></license>
+</permissions>
+<self-uri xlink:href="20248138.pdf" content-type="pdf" xlink:role="full-text"/>
+<abstract>
+<title>Abstract</title>
+<p>An approach is described to building a clinical decision support tool which leverages a partially instantiated graphical model optimized through quantum annealing. Potential advantages of such a strategy include the practical, and potentially real-time, use of multidimensional patient data to make a host of intuitively understandable predictions and recommendations in complex cases which are informed by a data-driven probabilistic model. Preliminary proof-of-concept of the general approach is demonstrated using a large well-established anonymized patient data set, revealing the predictive capability of a specific model. Ideas for future research are discussed.</p>
+</abstract>
+<counts>
+<page-count count="11"/>
+</counts>
+</article-meta>
+<notes>
+<notes notes-type="competing-interest-statement">
+<title>Competing Interest Statement</title><p>The authors have declared no competing interest.</p></notes>
+<notes notes-type="financial-disclosure">
+<title>Funding Statement</title><p>This preliminary proof-of-concept evaluation of a predictive modeling approach was funded by EigenMed, Inc, an early-stage start-up company that has since been dissolved. Compensation previously received by the authors was minimal.</p></notes>
+<notes notes-type="disclosures">
+<title>Author Declarations</title><p>I confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.</p><p>Yes</p><p>The details of the IRB/oversight body that provided approval or exemption for the research described are given below:</p><p>A previously existing well-established and fully anonymized publicly available patient data set was used (MIMIC-III). IRB approval was not necessary or appropriate.</p><p>All necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived.</p><p>Yes</p><p>I understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).</p><p>Yes</p><p>I have followed all appropriate research reporting guidelines and uploaded the relevant EQUATOR Network research reporting checklist(s) and other pertinent material as supplementary files, if applicable.</p><p>Yes</p></notes>
+</notes>
+</front>
+<body>
+<sec id="s1">
+<label>I.</label>
+<title>Introduction</title>
+<p>Although astonishing scientific and medical advances have transformed both our understanding of human physiology and the potential to help patients, the complexity of medicine and biology has also begun to outstrip the capacity of any single human intellect. Primary care physicians, overburdened and awash in data and exploding medical information, are faced daily with the daunting challenge of caring for complex patients with multiple conditions. Current medical decision support tools based on classical machine learning often provide focused predictions for a specific condition. What may be more useful is a support system that provides wide-ranging insights into a host of risks and likely therapeutic outcomes in specific patients, enabling more timely diagnosis and intervention, more precise and customized treatment selection, and, by extension, improved patient outcomes in a broad capacity. With the increasing number of aging patients with multiple co-morbidities who are treated with complicated polypharmacy, the progressive increase in medical expenditures, and an increasing focus of quality, such an innovation may be especially helpful in clinical practice.</p>
+<p>Probabilistic graphical models may be useful as clinical decision aids, but maximum a posteriori estimation (MAP inference) techniques to &#x201C;fill in the blanks&#x201D; in probabilistic models, assigning the most likely value of a clinical variable in a specific case (e.g., diagnosis, therapeutic outcome, etc.) are hamstrung by the potentially large number of nodes in a model and the NP hard nature of MAP inference. Although various techniques have been employed to render these problems more tractable, large densely connected graphs with many hundreds or thousands of nodes, including large clique sizes, may remain resistant to classical inference techniques. It is hypothesized that quantum annealing, which is useful in optimization, may offer a solution to this problem. One of the major advantages of this graphical approach, apart from the potential improved feasibility related to quantum efficiencies, is the ability to leverage a large body of existing population-based data, as well as available individual patient-specific data, to make a number of inferences in a given case that are based on a holistic representation of the relationships among numerous variables. In contrast to a black-box deep neural net which is characterized by hidden data representations (abstractions) that may defy human understanding, the outputs of probabilistic graphical models are also explainable. For example, a physician can simply scan the known and inferred values of the nodes in a Markov blanket investing a node whose value has been predicted in order to understand the most proximal sources of relevant information in the model that had direct bearing on that prediction.</p>
+<p>This paper envisions a clinical decision support tool based on partially instantiated undirected graphical models in which hundreds or potentially thousands of nodes represent signs, symptoms, diagnoses, laboratory and imaging results, known co-morbidities, demographics, concomitant medications, outcomes and selected genomic, epigenetic, transcriptomic, metabolomic, and proteomic biomarkers, as well as other variables. The weights or potential functions between nodes are informed by large scale data derived from electronic health records, insurance claim data, clinical studies, and, potentially, other sources. In a given case (i.e., for a single patient), the values of some of the nodes in the graph, essentially a Markov Random Field, are known, whereas others (e.g., diagnosis, likelihood of a favorable response to a specific intervention, etc.) are not. The system solves for the most likely values of these unknown nodes in an efficient fashion, given the totality of the data, the graph structure and graph parameters, yielding clinically actionable information in (close to) real-time by exploiting a novel quantum annealing algorithm. In theory, the system could be seamlessly integrated with the electronic health record and accessed through an intuitive user interface with physician and patient portals.</p>
+<p>This paper is organized as follows. In section II, the general methods underlying our approach are described, including the manner in which the Markov Random Field is constructed and parameterized, the objective function, and expression of the latter in a form amenable to optimization using the D-Wave quantum annealing machine. This section also reviews basic elements of the D-wave machine and quantum annealing at a high level. Section III provides details on the objectives of the proof-of-concept (POC) study and methods specific to that evaluation, which relied upon data from patients whose ICU courses at Beth Israel Hospital were captured in the MIMIC III database. Section IV furnishes results of the POC study and Section V includes a discussion and conclusions, with ideas for further research.</p>
+</sec>
+<sec id="s2">
+<label>II.</label>
+<title>General Methods</title>
+<sec id="s2a">
+<title>Overview of Methods</title>
+<p>A stepwise overview of the methodology is presented first, to provide a framework for a discussion of some of the methodologic details.</p>
+<list list-type="order">
+<list-item><p>An undirected graphical model (Markov Random Field) is built with nodes and edges that capture probabilistic relationships among variables in patients. This is accomplished in two substeps:</p>
+<list list-type="alpha-lower">
+<list-item><p>First, the topology of the model (i.e., nodes and edges) is constructed (<xref rid="fig1" ref-type="fig">Figure 1</xref>). Each node corresponds to a variable and edges (links) are drawn between those nodes that, based on existing medical expertise and scientific knowledge, are thought to be related. By related, we mean the likelihood that variable A is true is influenced by the truth value of variable B, or vice-versa.
+<fig id="fig1" position="float" fig-type="figure">
+<label>Figure 1:</label>
+<caption><p>Hypothetical section of the topology of a Markov Random Field used in a model</p></caption>
+<graphic xlink:href="20248138v1_fig1.tif"/>
+</fig></p></list-item>
+<list-item><p>Next, the model is parameterized and order-reduced. The potential functions (or weights) that serve as the critical parameters of the model, were chosen either (a) arbitrarily (i.e., for the proof-of-principle [POP] using mock data and nodes, which is not summarized in this paper but which has been presented previously) or (b) selected using the pseudo-likelihood approach based on actual clinical data from a training set, reserving a proportion of the data as a test set (i.e., for the clinical proof-of-concept [POC] described in this paper). These potential functions therefore capture empirically determined probabilistic relationships among connected variables in the clinical POC model, which was based on the MIMIC III data set described below. Order reduction produces acceptable clique sizes for the following (computational) step.</p></list-item></list></list-item>
+<list-item><p>After the model is built and parameterized, individual predictions of the values of &#x201C;unknown&#x201D; variables can be made for a given case given what is known about the patient. This, too, proceeds in two sub-steps:</p>
+<list list-type="alpha-lower">
+<list-item><p>Where data are available, nodes in the model are set to a specific truth value given what is known about a given patient (e.g., signs, symptoms, demographics, laboratory and imaging studies, co-morbidities, concomitant medications, etc.).</p></list-item>
+<list-item><p>A quantum annealing-based algorithm, to be described, which relies upon a specific objective function, is then used to infer the values of the unknown values for a specific patient (e.g., likely diagnosis, reasonable likelihood of response to a specific intervention, progression-free survival of greater than 18 months, etc.).</p></list-item></list></list-item>
+<list-item><p>Although not discussed at length in this paper, the output of the algorithm can be translated into ranked clinically actionable insights for a physician&#x2019;s consideration and discussion with the patient.</p></list-item>
+</list>
+<p>The use of &#x201C;Bayesian islands&#x201D; within a Markov Random Field, an example of which is provided later in Section III, allows the system to classically infer variable values in the context of missing data before the &#x201C;blanks&#x201D; in the Markov Random Field are filled in by the quantum annealing algorithm.</p>
+</sec>
+<sec id="s2b">
+<title>Objective Function for Optimization</title>
+<p>The optimization algorithm, which basically infers the values of the &#x201C;blanks&#x201D; in the graphic model for a given patient, is driven by quantum annealing. The objective function to be optimized during quantum annealing will first be described, and this will be followed by a brief description of the manner in which quantum annealing optimizes this function. <xref rid="fig2" ref-type="fig">Figure 2</xref> below explains how the objective function is constructed at a high level.</p>
+<fig id="fig2" position="float" fig-type="figure">
+<label>Figure 2:</label>
+<caption><p>Determining the objective function</p></caption>
+<graphic xlink:href="20248138v1_fig2.tif"/>
+</fig>
+<p>Given the connectivity of the D-wave machine, it is necessary to express the potential function (i.e., phi values) between nodes as a function of the truth values of the nodes they join. Each edge in the Markov Random Field is associated with a potential function. This is explained in <xref rid="fig3" ref-type="fig">Figure 3</xref> below.</p>
+<fig id="fig3" position="float" fig-type="figure">
+<label>Figure 3a and 3b:</label>
+<caption><p>Express phi values between nodes as a function of the truth values of the nodes its corresponding edge joins</p></caption>
+<graphic xlink:href="20248138v1_fig3.tif"/>
+</fig>
+<p>If phi values are expressed in this way, then the objective function to be optimized takes the following form:
+<disp-formula id="eqn1">
+<alternatives><graphic xlink:href="20248138v1_eqn1.gif"/></alternatives>
+</disp-formula>
+</p>
+</sec>
+<sec id="s2c">
+<title>D-Wave Machine and Adaptation of Objective Function to Quantum Annealing</title>
+<p>The D-Wave machine used in our experiments housed 2000 qubits in a shielded environment, the vast majority of which were functional. Each qubit consists of a cooled niobium ring that acts as a superconductor which can magnetically encode one of two states or both in superposition. This is analogous to the spin of an electron along the z axis, which, prior to its measurement, may be in a state of quantum superposition (<xref rid="fig4" ref-type="fig">Figure 4</xref>).</p>
+<fig id="fig4" position="float" fig-type="figure">
+<label>Figure 4:</label>
+<caption><p>Superposition of spin states</p></caption>
+<graphic xlink:href="20248138v1_fig4.tif"/>
+</fig>
+<p>The qubits in the D-wave machine are coupled and arranged in what is known as a chimera architecture. Programmability of the device is enabled by the ability to adjust local magnetic field strengths. To solve a graphical problem of the type outlined in this paper, the graph first must be &#x201C;embedded&#x201D; within the architecture of the D-wave machine. If a node in a graphical model has fewer than &#x223C;6 adjacencies (that is, if the order of the node is &#x223C;6 or less), one qubit can be assigned to a single node, but, for nodes with denser connectivity, multiple qubits are required for one logical bit.</p>
+<p>At a superficial level, the process of annealing may be thought of as the controlled &#x201C;ushering&#x201D; or nudging of an initial Hamiltonian toward a final problem Hamiltonian in or near the ground state. This low energy state encodes the solution to the inference problem in the spins of the qubits. In essence, the measured eigenvalues of those spins (either 0 or 1), obtained after the annealing run is complete, are used to compute the likely truth values of the nodes. Runs are repeated multiple times and the low energy solutions are collected. Typically, annealing starts with qubits in superposition, but ends in or close to a ground state of the problem Hamiltonian.</p>
+<p>Since the D-Wave machine relies upon the Ising/Hamiltonian model used in quantum annealing, the quadratic <xref ref-type="disp-formula" rid="eqn1">equation (1)</xref> above must be converted to the Ising/Hamiltonian formulation. This is readily accomplished using quadratic unconstrained binary optimization to express the four phi values (<xref rid="fig5" ref-type="fig">Figure 5</xref>) which are used instead of the four summed terms in red font in <xref ref-type="disp-formula" rid="eqn1">equation (1)</xref>. Note that n1 and n2 in <xref rid="fig5" ref-type="fig">Figure 5</xref> are analogous to x<sub>1</sub> and x<sub>2</sub> in <xref ref-type="disp-formula" rid="eqn1">Equation (1)</xref>. The principle is exactly the same in the sense that we express the potential/weight functions in terms of the four permutations of the truth values of the flanking nodes.</p>
+<fig id="fig5" position="float" fig-type="figure">
+<label>Figure 5:</label>
+<caption><p>Expression of phi values using quadratic unconstrained binary optimization (QUBO)</p></caption>
+<graphic xlink:href="20248138v1_fig5.tif"/>
+</fig>
+</sec>
+</sec>
+<sec id="s3">
+<label>III.</label>
+<title>Proof-of Concept (POC) Objectives, Data Source, and Specific Methods</title>
+<p>The objectives of our POC study were as follows:</p>
+<list list-type="order">
+<list-item><p>Assess the accuracy of a small-sized hybrid Markov Random Field-Bayesian graphical model in making multiple simultaneous clinical predictions:</p>
+<list list-type="alpha-lower">
+<list-item><p>Development of bacteriuria in ICU (primary)</p></list-item>
+<list-item><p>Prediction of length of stay and other variables (secondary)</p></list-item></list></list-item>
+<list-item><p>Evaluate correspondence between the predicted values in the most likely solution using classical inference (i.e., the most probable instantiation of all node values in the graph) versus quantum annealing (i.e., the lowest energy state)</p></list-item>
+<list-item><p>Assess accuracy of quantum annealing-based predictions versus machine learning benchmarks</p></list-item>
+</list>
+<p>We constructed a graphical model based on MIMIC-III ICU database, which includes de-identified data for over 38,000 adult patients treated in intensive care units at Beth Israel Hospital in Boston between 2001 and 2012. This database includes ICD9 codes, past medical history, demographics, medications, laboratory results and other data.</p>
+<p>Edges were placed between nodes that were linked probabilistically based on infectious diseases domain expertise. To accommodate data that were not available for certain variables, imputations were made using &#x201C;Bayesian Islands&#x201D; (see left side of <xref rid="fig6" ref-type="fig">Figure 6</xref> below), which were parameterized using conditional probabilities from published literature and pre-solved (classically) prior to quantum annealing. The Markov Random Field (MRF) section of the graph (see right side of <xref rid="fig6" ref-type="fig">Figure 6</xref>) was order-reduced to pairwise connections and parameters (phi values informed by constants described in <xref rid="fig5" ref-type="fig">Figure 5</xref>) were learned using the pseudo-likelihood method based on data from a training set consisting of &#x223C;95&#x0025; of the evaluable data set (we also explored the use of a balanced training set). The remainder of the data were reserved as a validation/test set. In essence, once the Bayesian islands were solved, we were left with a pure MRF. The graph was embedded within the architecture of the D-Wave machine and, for each patient in the test set, the nodal truth value assignments (T/F) in the MRF portion of the graph were partially populated, withholding one or several (up to four) variables whose values were to be inferred using quantum annealing.</p>
+<fig id="fig6" position="float" fig-type="figure">
+<label>Figure 6:</label>
+<caption><p>Topology of final model. Bayesian islands (pre-solved classically) indicated by directed (red) edges on left. Undirected edges of Markov Random Field portion of model in blue. The primary node to be predicted was node 33 (bacteriuria, or the development of a positive urine culture). During annealing runs, the truth values of up to four nodes were withheld for test patients and inferred results were compared with ground truth values for that patient in the database. Gates functioned as nodes with truth values imputed as described in the box in the lower left. Dummy variables were always set to true to subsume miscellaneous risk factors (e.g., for diarrhea in the ICU) not captured by other nodes. The age-determined random number generated truth values for Node 15 was based on a probability distribution, because, by definition, occult vitamin B<sub>12</sub> deficiency was unknown [age &#x003C;40: 1 = T in 2&#x0025;, 40-59 (4&#x0025;), 60-69 (5&#x0025;), 70&#x002B; (6&#x0025;)]. The &#x201C;rectal tube AND fecal incontinence&#x201D; node was populated using another random number generator (0=F vs. 1=T) based on a Bernoulli distribution informed by nursing note documentation indicating that 7.7&#x0025; of patients with fecal incontinence had rectal tubes. Abbreviations: CVA (cerebrovascular accident), HBP (hypertension), SBP (systolic blood pressure), ARF/AKI (acute renal failure, acute kidney injury), ANC (absolute neutrophil count), COPD (chronic obstructive pulmonary disease), IBD (inflammatory bowel disease), SLE (systemic lupus erythematosus), PMR/TA (polymyalgia rheumatic/temporal arteritis), AHA (autoimmune hemolytic anemia), ITP (immune thrombocytopenia), CGVHD (chronic graft versus host disease). Several versions of the model were explored.</p></caption>
+<graphic xlink:href="20248138v1_fig6.tif"/>
+</fig>
+<p>The objective function to be optimized incorporated phi values expressed in the &#x201C;QUBO&#x201D; form as outlined in Section II, and consisted of the negative value of the sum of the potential functions (phi values) for the pairwise cliques. The phi values in the objective function to be minimized were therefore based upon three quadratic edge coefficients and a constant (<xref rid="fig5" ref-type="fig">Figure 5</xref>) and the truth values of the adjoining nodes of the pair. Log transformation was accounted for in generating the values, enabling the use of a sum for the objective function. Quantum annealing runs were repeated up to 10,000 times to sample the solution space. Predictions informed by the lowest energy solution were compared with the known (i.e., withheld) values of these same variables in the MIMIC-III data set, enabling calculation of sensitivity, specificity and accuracy. We compared our results with those obtained using (classical) computation performed on a non-order reduced model (i.e., the &#x201C;exact solution,&#x201D; which was practical given the size of our graph), as well as several machine learning algorithms, including logistic regression and a feed-forward neural net.</p>
+</sec>
+<sec id="s4">
+<label>IV.</label>
+<title>Results of Proof-of-Concept</title>
+<p>We compared the accuracy of predictions using quantum annealing versus those generated by classical exact inference in the subset of patients with confirmed Foley catheter placement for bladder drainage, a known risk factor for urinary tract infection. Data from a total of 18,977 patients was available, of whom 1000 patients were reserved for a validation/test set. Therefore, parameters (potential functions) for the MRF portion of the model were computed using data from approximately 17,977 patients.</p>
+<p><xref rid="fig7" ref-type="fig">Figure 7</xref> below depicts accuracy, sensitivity, and specificity for classical inference (left panel) versus quantum annealing (right panel) when one, two, three, or four node values were withheld for test subjects.</p>
+<fig id="fig7" position="float" fig-type="figure">
+<label>Figure 7:</label>
+<caption><p>Summary of data for proof-of-concept study</p></caption>
+<graphic xlink:href="20248138v1_fig7.tif"/>
+</fig>
+<p>In the primary analysis (prediction of bacteriuria alone), the results above demonstrate that the overall accuracy of quantum annealing (approximately 70&#x0025;) is essentially identical to that of the gold standard of classical probabilistic inference (i.e., the exact solution based on the graphical model). Sensitivity was slightly higher than specificity. The moderate degree of predictive power was presumably related to the limitations of the data set, biological variability, and/or the topology of the graphical model, since these data show that performance was not compromised by application of a quantum annealing technique (at least in the primary analysis). Concordance of results (quantum annealing versus classical exact inference solution) was achieved in 99.7&#x0025; of cases. Furthermore, performance of quantum annealing was comparable to that of machine learning benchmarks (feedforward neural net and logistic regression; data not shown).</p>
+<p>Notably, as more nodes were withheld, quantum annealing sensitivity declined relative to that of classical probabilistic inference (that is, the exact solution). The reason for this behavior is not yet clear, although we found that this phenomenon was ameliorated when the solution space was more broadly sampled (evaluation of the 3 or 6 lowest energy solutions rather than a single presumed ground state solution; data not shown).</p>
+<sec id="s4a">
+<label>V.</label>
+<title>Discussion and Ideas for Further Research</title>
+<p>We have shown in a proof-of-concept study drawing upon data from approximately 19,000 patients that quantum annealing may serve as a predictive tool by enabling interrogation of a graphical model based on expert clinical knowledge and parameterized by population-based data. To our knowledge, this is the first time quantum annealing has been successfully deployed in this manner. In essence, optimization through annealing allowed us to solve for the most likely truth value of a withheld clinical variable (development of catheter-associated bacteriuria in the ICU). The modest predictive value of the model was not limited by the quantum technique when one variable was withheld, achieving, as it did, nearly complete concordance the classical inference solution. Preliminary data suggest, however, that in order to preserve sensitivity when multiple simultaneous predictions are made using this technique, it may be necessary to leverage additional data in the solution space rather than merely the lowest energy solution. This is an area for future research.</p>
+<p>If this innovation scales to larger models, one can easily envision boarder applications, for example in a primary care capacity where practitioners must often care for complex patients with multiple co-morbidities who may have several issues that must be simultaneously addressed (i.e., more than one node for which it would be clinically useful to know the most likely truth value). In some cases &#x2013; for example, the rank-ordering of personalized risk-benefit ratios for various treatment options &#x2013; the approach may be modified, tapping into both classical and quantum computing in a series of orchestrated steps that involve repeated application of the model under various treatment scenarios followed by ranking (<xref rid="fig8" ref-type="fig">Fig 8</xref>).</p>
+<fig id="fig8" position="float" fig-type="figure">
+<label>Figure 8:</label>
+<caption><p>Hybrid approach</p></caption>
+<graphic xlink:href="20248138v1_fig8.tif"/>
+</fig>
+<p>The D-wave service is cloud based, so the bulk of the &#x201C;heavy lifting&#x201D; is performed remotely. If appropriate interoperability is achieved with an electronic health record and other sources of data, the output of this system might funnel close-to-real time clinical decision support to busy primary care practitioners, struggling under a heavy caseload, on a hand-held device. In principle, the model should be updated and reparameterized on a regular basis with the accretion of more population-based data, especially given the pace of medical innovation. As currently envisioned, the system produces binary (dichotomous) outputs which represent the most likely truth values for unknown nodes based on the totality of the patient&#x2019;s data and the existing parameterized model but more quantitative predictions may be possible through binning and adjunctive Bayesian methods. This, too, is an area rife for exploration.</p>
+</sec>
+</sec>
+</body>
+<back>
+<sec sec-type="data-availability">
+<title>Data Availability</title>
+<p>The MIMIC-III database that we used is publicly available.</p>
+</sec>
+<sec id="s5">
+<title>Author affiliations and conflict of interests</title>
+<p>Neither author has a conflict of interest. David Sahner is the former Chief Scientific Officer and Chief Medical Officer of EigenMed, Inc., and now serves as a senior consultant to several biotechnology companies, providing support in clinical translation and machine learning. Richard Williams is the former Senior Vice President of Data Science at EigenMed, Inc.</p>
+</sec>
+<ack>
+<title>Acknowledgements</title>
+<p>The authors would like to acknowledge Steve Reinhardt and Michael Booth (formerly of D-Wave) for their help in testing the algorithm, the late Peter Wittek of the Creative Destruction Lab affiliated with the University of Toronto for his encouragement, Eleanor Rieffel (NASA) for her helpful comments early in the program, and all of the former members of EigenMed, Inc., where this technology was refined, including Jon Mallon.</p>
+</ack>
+</back>
+</article>

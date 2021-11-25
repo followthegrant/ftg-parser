@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.2d1 20170631//EN" "JATS-archivearticle1.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" article-type="article" dtd-version="1.2d1" specific-use="production" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="publisher-id">MEDRXIV</journal-id>
+<journal-title-group>
+<journal-title>medRxiv</journal-title>
+<abbrev-journal-title abbrev-type="publisher">medRxiv</abbrev-journal-title>
+</journal-title-group>
+<publisher>
+<publisher-name>Cold Spring Harbor Laboratory</publisher-name>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1101/2021.05.06.21256781</article-id>
+<article-version>1.1</article-version>
+<article-categories>
+<subj-group subj-group-type="hwp-journal-coll">
+<subject>Infectious Diseases (except HIV/AIDS)</subject>
+</subj-group>
+</article-categories>
+<title-group>
+<article-title>Characterizing cellular and molecular variabilities of peripheral immune cells in healthy inactivated SARS-CoV-2 vaccine recipients by single-cell RNA sequencing</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author">
+<name><surname>Tong</surname><given-names>Renyang</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="author-notes" rid="n1">&#x0023;</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Zhong</surname><given-names>Jianmei</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="author-notes" rid="n1">&#x0023;</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Li</surname><given-names>Ronghong</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Chen</surname><given-names>Yifan</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Hu</surname><given-names>Liuhua</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Li</surname><given-names>Zheng</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Shi</surname><given-names>Jianfeng</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Lin</surname><given-names>Guanqiao</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Lyu</surname><given-names>Yuyan</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Hu</surname><given-names>Li</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Guo</surname><given-names>Xiao</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Liu</surname><given-names>Qi</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Shuang</surname><given-names>Tian</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Zhang</surname><given-names>Chenjie</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Yuan</surname><given-names>Ancai</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Zhang</surname><given-names>Minchao</given-names></name>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author" corresp="yes">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-7506-3466</contrib-id>
+<name><surname>Lin</surname><given-names>Wei</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="corresp" rid="cor1">&#x002A;</xref>
+</contrib>
+<contrib contrib-type="author" corresp="yes">
+<name><surname>Pu</surname><given-names>Jun</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="corresp" rid="cor1">&#x002A;</xref>
+</contrib>
+<aff id="a1"><label>1</label><institution>State Key Laboratory for Oncogenes and Related Genes, Division of Cardiology, School of Medicine, Renji Hospital, Shanghai Cancer Institute, Shanghai Jiao Tong University</institution>, Shanghai, <country>China</country></aff>
+<aff id="a2"><label>2</label><institution>Colortech (Suzhou) Biotechnology</institution>, Suzhou, <country>China</country></aff>
+</contrib-group>
+<author-notes>
+<corresp id="cor1"><label>&#x002A;</label>To whom correspondence should be addressed: Jun Pu, MD, Ph.D.; State Key Laboratory for Oncogenes and Related Genes, Division of Cardiology, School of Medicine, Renji Hospital, Shanghai Cancer Institute, Shanghai Jiao Tong University, Shanghai, China. E-mail: <email>pujun310@hotmail.com</email>., Wei Lin, Ph.D.; State Key Laboratory for Oncogenes and Related Genes, Division of Cardiology, School of Medicine, Renji Hospital, Shanghai Cancer Institute, Shanghai Jiao Tong University, Shanghai, China. E-mail: <email>weilin.baylor@gmail.com</email>.</corresp>
+<fn id="n1" fn-type="equal"><label>&#x0023;</label><p>These authors contributed equally to this work</p></fn>
+</author-notes>
+<pub-date pub-type="epub">
+<year>2021</year>
+</pub-date>
+<elocation-id>2021.05.06.21256781</elocation-id>
+<history>
+<date date-type="received">
+<day>06</day>
+<month>5</month>
+<year>2021</year>
+</date>
+<date date-type="rev-recd">
+<day>06</day>
+<month>5</month>
+<year>2021</year>
+</date>
+<date date-type="accepted">
+<day>10</day>
+<month>5</month>
+<year>2021</year>
+</date>
+</history>
+<permissions>
+<copyright-statement>&#x00A9; 2021, Posted by Cold Spring Harbor Laboratory</copyright-statement>
+<copyright-year>2021</copyright-year>
+<license><license-p>The copyright holder for this pre-print is the author. All rights reserved. The material may not be redistributed, re-used or adapted without the author's permission.</license-p></license>
+</permissions>
+<self-uri xlink:href="21256781.pdf" content-type="pdf" xlink:role="full-text"/>
+<abstract>
+<title>Abstract</title>
+<p>We systematically investigated the transcriptomes of the peripheral immune cells from 6 inactivated vaccine, BBIBP-CorV recipients at 4 pivotal time points using single-cell RNA-seq technique. First, the significant variation of the canonical immune-responsive signals of both humoral and cellular immunity, as well as other possible symptom-driver signals were evaluated in the specific cell types. Second, we described and compared the common and distinct variation trends across COVID-19 vaccination, disease progression, and flu vaccination to achieve in-depth understandings of the manifestation of immune response in peripheral blood under different stimuli. Third, the expanded T cell and B cell clones were correlated to the specific phenotypes which allowed us to characterize the antigen-specific ones much easier in the future. At last, other than the coagulopathy, the immunogenicity of megakaryocytes in vaccination were highlighted in this study. In brief, our study provided a rich data resource and the related methodology to explore the details of the classical immunity scenarios.</p>
+</abstract>
+<kwd-group kwd-group-type="author">
+<title>Keywords</title>
+<kwd>COVID-19</kwd>
+<kwd>Inactivated SARS-CoV-2 Vaccines</kwd>
+<kwd>Peripheral Immune Cells</kwd>
+<kwd>Single Cell Sequencing</kwd>
+</kwd-group>
+<counts>
+<page-count count="27"/>
+</counts>
+</article-meta>
+<notes>
+<notes notes-type="competing-interest-statement">
+<title>Competing Interest Statement</title><p>The authors have declared no competing interest.</p></notes>
+<notes notes-type="clinical-trial-statement">
+<title>Clinical Trial</title><p>NCT04871932</p></notes>
+<notes notes-type="financial-disclosure">
+<title>Funding Statement</title><p>This work was supported by grants from the National Science Fund for Distinguished Young Scholars (81625002), the National Natural Science Foundation of China (81930007, 81470389, 81500221 and 81800307), the Shanghai Outstanding Academic Leaders Program (18XD1402400), Innovative research team of high-level local universities in Shanghai (SSMU-ZDCX20180200) and Shanghai Municipal Education Commission Gaofeng Clinical Medicine Grant Support (20152209)</p></notes>
+<notes notes-type="disclosures">
+<title>Author Declarations</title><p>I confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.</p><p>Yes</p><p>The details of the IRB/oversight body that provided approval or exemption for the research described are given below:</p><p>The Ethics Committee of Ren Ji Hospital (KY2021-046), School of Medicine, Shanghai Jiao Tong University</p><p>All necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived.</p><p>Yes</p><p>I understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).</p><p>Yes</p><p>I have followed all appropriate research reporting guidelines and uploaded the relevant EQUATOR Network research reporting checklist(s) and other pertinent material as supplementary files, if applicable.</p><p>Yes</p></notes>
+</notes>
+</front>
+<body>
+<sec id="s1">
+<title>Introduction</title>
+<p>As of May 2021, World Health Organization (WHO) has reported 148 million Coronavirus disease 2019 (COVID-19) infections and 3.1 million deaths worldwide (<ext-link ext-link-type="uri" xlink:href="https://covid19.who.int/">https://covid19.who.int/</ext-link>). Promotion and popularization of vaccine is vital to disease control, with its safety and efficacy of the top priority. There are multiple SARS-CoV-2 vaccines available and several vaccines under development, including the inactivated, genetically engineered subunit, adenovirus and nucleic acid vaccine types. So far, a number of institutions of different countries and regions have reported the results of safety and immunogenicity of SARS-CoV-2 vaccine on phase III clinical trials or phase III interim analysis, such as, vaccines BNT162b2<sup><xref ref-type="bibr" rid="c1">1</xref></sup> and mRNA-1273<sup><xref ref-type="bibr" rid="c2">2</xref></sup>, adenovirus vaccines AZD1222<sup><xref ref-type="bibr" rid="c3">3</xref></sup>, Ad5-nCoV<sup><xref ref-type="bibr" rid="c4">4</xref></sup> and inactivated vaccines BBIBP-CorV<sup><xref ref-type="bibr" rid="c5">5</xref></sup> and CoronaVac<sup><xref ref-type="bibr" rid="c6">6</xref>, <xref ref-type="bibr" rid="c7">7</xref></sup>, and protein subunit vaccine NVX-2373<sup><xref ref-type="bibr" rid="c8">8</xref></sup>. For example, Ugur Sahin <italic>et al</italic>.<sup><xref ref-type="bibr" rid="c9">9</xref></sup> demonstrated that RNA vaccine (BNT162b2) not only elicited adaptive humoral, but also stimulated the cellular immune response even at the low-dose vaccine. The new vaccine types such as adenovirus-vectored vaccines and RNA vaccines have emerged and fast developed with good efficacy in recent years, though severalserious adverse events have been reported<sup><xref ref-type="bibr" rid="c10">10</xref>, <xref ref-type="bibr" rid="c11">11</xref></sup> <sup><xref ref-type="bibr" rid="c12">12</xref>, <xref ref-type="bibr" rid="c13">13</xref></sup>. Their efficacy and long-term safety were yet to be reviewed by a follow-up study. With the support of long clinical practice, traditional inactivated vaccines play an irreplaceable role in the prevention and control of infectious disease. As a pattern of inactivated SARS-CoV-2 vaccines, BBIBP-CorV, was manufactured by Sinopharm China National Biotec Group (CNBG) and contained a SARS-CoV-2 strain inactivated inside Vero Cells<sup><xref ref-type="bibr" rid="c14">14</xref></sup>, which was confirmed for its safety, tolerability, and immunogenicity in clinical trials of healthy people in China<sup><xref ref-type="bibr" rid="c5">5</xref></sup> and UAE, Bahrain, Egypt and Jordan (<ext-link ext-link-type="uri" xlink:href="https://cdn.who.int/">https://cdn.who.int/</ext-link>).</p>
+<p>Single-cell RNA-seq (scRNA-seq) technique has demonstrated its power in the research of cell biology by deconvoluting the transcriptional signals in the multi-cellular samples of heterogenous cellular compositions<sup><xref ref-type="bibr" rid="c15">15</xref>,<xref ref-type="bibr" rid="c16">16</xref></sup>. Other than characterizing the cell types in a heterogeneous tissue, it enables us to detect the variabilities within a cell lineage. The recent pandemic of COVID-19 has prompted the demand of single-cell studies in order to uncover the characteristics immune responses of different immune cell types during the symptom development of COVID-19<sup><xref ref-type="bibr" rid="c17">17</xref>, <xref ref-type="bibr" rid="c18">18</xref>, <xref ref-type="bibr" rid="c19">19</xref>, <xref ref-type="bibr" rid="c20">20</xref></sup>. These published scRNA-seq datasets provide abundant and detailed reference information of this disease, though, no results have been reported for any COVID-19 vaccines yet. Moreover, a comprehensive comparison of the human immune responsive signals across the transcriptome at single-cell resolution over the time becomes practical and necessary. With no doubt, such detailed comparison facilitates the in-depth understanding of the pathogenesis, symptom development and immunization of COVID-19 which guides us to the better vaccination strategy. Therefore, we aimed to look through a &#x2018;sight glass&#x2019; of the human immunity system, a.k.a., peripheral blood mononuclear cells (PBMCs) to monitor the manifestation of vaccine response of the canonical immune cells. In the meantime, we could take the advantage of the recent published scRNA-seq datasets of COVID-19 patient samples<sup><xref ref-type="bibr" rid="c21">21</xref></sup> and Flu vaccination samples<sup><xref ref-type="bibr" rid="c22">22</xref></sup> to achieve such a goal. Besides, the roles of megakaryocytes/platelets in COVID-19 recently have attracted some attentions due to recent reports of blood-clot side effect by AZD1222<sup><xref ref-type="bibr" rid="c12">12</xref>, <xref ref-type="bibr" rid="c23">23</xref></sup>. Megakaryocytes were also found to contribute to the complication of COVID-19 patients and be correlated to the organ failure and mortality<sup><xref ref-type="bibr" rid="c24">24</xref>, <xref ref-type="bibr" rid="c25">25</xref>, <xref ref-type="bibr" rid="c26">26</xref></sup>. We were therefore also interested in looking into the signals related to immune-responsive and coagulopathy in this non-canonical immune cell type using the scRNA-seq dataset.</p>
+<p>In this study, we extensively investigated the PBMC samples of BBIBP-CorV vaccine recipients. Our scRNA-seq data delineated a high-resolution transcriptomic landscape of peripheral immune cells during the vaccination of a classical vaccine type. Meanwhile, we integrated the PBMC scRNA-seq datasets of COVID-19 patients and flu vaccination in order to identify the common and distinct variation trends among our data set and the two other data sets. All these efforts could provide a rich data resource and demonstrate a methodology to explore the human immunity in disease development and vaccination at great details. Moreover, this work could facilitate the in-depth understandings of the manifestation of immune response in peripheral blood under different stimuli and provide many clues to design the new assay for the assessment of the immune protection and adverse effects after the vaccination or infection recovery.</p>
+</sec>
+<sec id="s2">
+<title>Results</title>
+<sec id="s2a">
+<title>Overview of immune responses and peripheral immune cells variations by scRNA-seq</title>
+<p>To assess the immune cells content and the phenotypic alterations following the vaccination with inactivated SARS-CoV-2 vaccine (BBIBP-CorV), six healthy young adults with 4 males and 2 females from Pu Dong Cohort, China, were enrolled in this 2019-nCoV vaccine observational study [NCT04871932] according to inclusion and exclusion criteria (<xref ref-type="fig" rid="fig1">Fig.1A</xref>). All six volunteers received 2 doses of inactivated SARS-CoV-2 vaccine (BBIBP-CorV). Blood samples were collected at 4 time points including the day before vaccination (BV), 7 days after first dose (1V7), 7 days after second dose (2V7) and 14 days after second dose (2V14) (<xref rid="fig1" ref-type="fig">Fig. 1A</xref>). Then, serum and PBMCs were separated from all time points of samples within 2-hour of collection. The 2019-nCoV Spike RBD antibodies and cytokines were measured in serum. After isolating the PBMCs, we profiled V(D)J repertoires of T and B cells integrated with 5&#x2019; Gene Expression using droplet based single-cell sequencing method (10&#x00D7; Genomics) (<xref ref-type="fig" rid="fig1">Fig.1A</xref>).</p>
+<fig id="fig1" position="float" fig-type="figure">
+<label>Figure 1.</label>
+<caption><title>Overview of vaccination efficacy, scRNA-seq data quality, cell compositions.</title>
+<p><bold>A</bold>. Workflow of vaccination, sampling and scRNA-seq; <bold>B</bold>. tSNE charts of &#x223C;120 k single cells by color coded by putative cell types and time points; <bold>C</bold>. Markers for the putative cell types using violin plots in scRNA-seq data; <bold>D</bold>. Box charts showing variabilities of the contents of each cell type by time point. All differences with p &#x003C; 0.05 and analyzed by two-sided Student&#x2019;s t-test; <bold>E</bold>. Serological responses of 6 healthy recipients to recombinant S-RBD at 4 time-points. Dilution of 1:55 for IgG.</p></caption>
+<graphic xlink:href="21256781v1_fig1.tif"/>
+</fig>
+<p>Based on the integrated single-cell gene expression profiles, we recovered the transcriptomes of &#x223C;120k high-quality cells in total from 24 samples and the total cells were combined and projected in a 2-D space using the t-distributed stochastic neighbor embedding (t-SNE). Unsupervised clustering analyses and marker mapping enabled us to uncover 11 major types (<xref ref-type="fig" rid="fig1">Fig.1B</xref>). The markers for the 11 major immune cell lineages were shown on <xref ref-type="fig" rid="fig1">Fig.1C</xref>. As the shown in <xref ref-type="fig" rid="fig1">Fig.1D</xref>, summary statistics of the 11 cell-type fractions showed plasma cells increase significantly after the second dose, whereas the other 10 cell types pretty much remained the same level.</p>
+<p>Previously, Wang <italic>et al</italic>.<sup><xref ref-type="bibr" rid="c14">14</xref></sup>, Xia <italic>et al</italic>.<sup><xref ref-type="bibr" rid="c5">5</xref></sup> have already demonstrated the satisfactory efficacy by increasing seroprotective antibody titers in the animal experiments and human clinical trials by this vaccine type. To further validate the efficacy in our participants, we measured 2019-nCoV Spike RBD antibodies using indirect enzyme-linked immunosorbent assay (ELISA) kits. Anti-S-RBD-specific IgG antibody level significantly increased after the second dose for total 6 participants (<xref ref-type="fig" rid="fig1">Fig.1E</xref>). The growth of plasma cells content and the observable production neutralizing antibody by second dose suggests the robust humoral immune response. The cellular immunity was also assessed. 10-cytokine serum assays were first performed on the total 24 samples on bead-based flow-cytometric assays on the BD LSRFortessa X-20 platform, though, no obvious post-vaccination increase was observed (Fig.S1A). We then used an ultra-sensitive bead-array-based immunoassay (single-molecule array technique) to validate the IL-4 signal and found that the quantification was consistently lower (one order of magnitude) than the readings of BD LSRFortessa X-20 platform (Fig.S1B), which suggested, 1. most of the cytokines remained low level at these time points. 2. limit of quantification of bead-based flow-cytometric assays likely above the real concentrations of these cytokines in these samples (Fig. S1B).</p>
+</sec>
+<sec id="s2b">
+<title>Classical immune responsive signals of major immune cell types in vaccination</title>
+<p>After the successful characterization of the major cell types, we were interested in investigating the gene expression patterns in the major immune cell types. The differentially expressed genes (DEGs) were first identified in 11 cell types by the comparisons between the post-vaccination samples vs. the pre-vaccination samples (BV). The DEGs list was shown in Supplementary table 1. The unsupervised clustering of these DEGs exhibited a pattern of 3 dominant clusters for the 24 samples in most of the cell types. We used the heatmap of B cells as an example to demonstrate the sample clusters (<xref ref-type="fig" rid="fig2">Fig.2A</xref>). The red cluster included the samples mostly in the 2V7 or 2V14 time points, which reflected an active immune responsive state (R-state). The green cluster included the samples mostly in early BV or 1V7 time points, which likely reflected the baseline or minor-responsive state (B-state). The blue cluster covered broader time points, which likely reflected a post-vaccination protection state (P-state) or recovery state. The identical clustering patterns were observed when the regulons heatmap were calculated and plotted using SCENIC<sup><xref ref-type="bibr" rid="c27">27</xref></sup> (<xref ref-type="fig" rid="fig2">Fig.2B</xref>). Such unsupervised clustering provided an unbiased sample grouping. More details of the signal variabilities by heatmaps for the major 6 cell types were shown in Fig.S2A-2J.</p>
+<fig id="fig2" position="float" fig-type="figure">
+<label>Figure 2.</label>
+<caption><title>Classical immune responsive signals of major immune cell types in vaccination.</title>
+<p><bold>A</bold>. Heatmap of DEGs detected in B cells; <bold>B</bold>. Heatmap of regulons in B cells; <bold>C</bold>. Modular scores of type I interferon production related signals; <bold>D</bold>. Tfh signal of CD4<sup>&#x002B;</sup> T cells; <bold>E</bold>. B cell activation signal of B cells; <bold>F</bold>. Relative UMI percentages of different classes of antibody genes; <bold>G</bold>. TCR signal of CD4<sup>&#x002B;</sup> T cells; <bold>H</bold>. Cytotoxicity signal of CD8<sup>&#x002B;</sup> T cells; <bold>I</bold>. Exhaustion signal of CD8<sup>&#x002B;</sup> T cells; <bold>J</bold>. TGF-&#x03B2; signal of CD8<sup>&#x002B;</sup> T cells; <bold>K</bold>. Type II MHC signal of Monocytes; <bold>L</bold>. Type I MHC signal of Monocytes. All differences with p &#x003C; 0.05 and analyzed by two-sided wilcox test.</p></caption>
+<graphic xlink:href="21256781v1_fig2.tif"/>
+</fig>
+<p>The DEGs were re-calculated based on the updated sample clusters (B-R-P) and the following 15 variable signaling keywords were identified based on these DEGs. The updated DEGs list for this comparison was shown in Supplementary table 2 and showed very little change. The coordinated gene expressions of a certain functional group or signaling pathway suggested their involvement in the response to BBIBP-Corv vaccination. We used simple schematic diagrams to illustrate the 5 dominant patterns of signal variation observed in the heatmaps to delineate the variability of immune-responsive signals in B-R-P state as Fig.S2K.</p>
+<p>As expected, we observed the elevation of the monocytes&#x2019; type I interferon production signal (<xref ref-type="fig" rid="fig2">Fig.2C</xref>, pattern 2), which was an essential signal of innate immunity for viral suppression. We also observed significant elevation of the antigen-specific follicular T helper cell (Tfh) activation (<italic>CD40LG, ICOS, SLAMF1</italic>, etc.) (<xref ref-type="fig" rid="fig2">Fig.2D</xref>, pattern 2) and the B cell activation signal (<italic>TLR7, CD80/CD86, BCL6</italic>) (<xref ref-type="fig" rid="fig2">Fig.2E</xref>, pattern 2), that were associated with neutralizing antibody production. In the meantime, we evaluated the expression of different classes of constant gene of Immunoglobulin heavy chain. The IGHG went up and IGHM went down in protection state (P-state), suggesting the occurrence of class switching of neutralizing antibody molecules (<xref ref-type="fig" rid="fig2">Fig.2F</xref>).</p>
+<p>TCR responsive signals (<italic>VAV3, AKT3, MALT1, MAPK1</italic>, etc.) (<xref ref-type="fig" rid="fig2">Fig.2G</xref>, pattern 1), as well as cytotoxic signal were also enhanced (<xref ref-type="fig" rid="fig2">Fig.2H</xref>, pattern 3). These lymphocyte-related signals contributed to antigen-specific immunity, a.k.a., adaptive immunity.</p>
+<p>The immune regulatory signals such as TGF-&#x03B2; pathway (<italic>TGFB1, TGFBR1/2, SMAD2/3/4</italic>, etc.) (<xref ref-type="fig" rid="fig2">Fig.2J</xref> pattern 5), and T cell exhaustion (<italic>LAG3, PDCD1</italic>) (<xref ref-type="fig" rid="fig2">Fig.2I</xref> pattern 4) were suppressed in the high immune-responsive samples (R-state) until they went up to play their roles in the protection state (P-state).</p>
+<p>We also identified some changes contradictory to the expectation. For example, NF-&#x03BA;B signal was expected to be upregulated in the most of the immunity situation (Fig.S2L). However, NF-&#x03BA;B signal actually went down (pattern 4). Second, instead of enhancing the antigen presenting, MHC I signal significantly dropped in most of the peripheral immune cell types in R group (<xref ref-type="fig" rid="fig2">Fig.2L</xref>, pattern 4). Though, type II MHC genes mostly went up as expected (<xref ref-type="fig" rid="fig2">Fig.2K</xref>, pattern 2). Later, when we examined COVID-19 dataset<sup><xref ref-type="bibr" rid="c21">21</xref></sup>, we didn&#x2019;t observe such changes in COVID-19 patients. Why this change occurs and what outcomes will this change brings are elusive.</p>
+<p>Other variabilities of the classical immune-responsive signals including cell-cycles and apoptosis (Fig.S2M-2N) were summarized in Supplementary table 3. High cell-cycle signal (<italic>ORC2, CCNH, CDC7, CDK7</italic>, etc.) and low apoptosis signal (<italic>BAX, BAD, TP53</italic>, etc.) indicated the high proliferative potential of the cells in R-state samples.</p>
+</sec>
+<sec id="s2c">
+<title>Characteristic transcriptions of the top TCR and BCR clones</title>
+<p>As our scRNA-seq study also included TCR and BCR V(D)J sequencing results, it allowed us to track down the TCR/ BCR clonal expansion in these samples. The results showed the diversities of the T cell and B cell clones wend down after vaccination due to the expansion of the antigen-specific clones (<xref ref-type="fig" rid="fig3">Fig.3A, 3D</xref> and <xref ref-type="fig" rid="fig3">3G</xref>). The top 20 abundant clones of both T cells and B cells were pulled out to investigate their characteristics in comparison with the low abundance clones as the counterpart.</p>
+<fig id="fig3" position="float" fig-type="figure">
+<label>Figure 3.</label>
+<caption><title>Characteristic transcriptions of top TCR and BCR clones.</title>
+<p><bold>A</bold>. Diversity of BCR repertoire at different vaccination time points; <bold>B</bold> and <bold>C</bold>. variable immune-responsive signals in top BCR clones; <bold>D</bold> and <bold>G</bold>. Diversity of TCR repertoires of CD4<sup>&#x002B;</sup> T and CD8<sup>&#x002B;</sup>T cells at different vaccination time points; <bold>E</bold> and <bold>F</bold>. Variable immune-responsive signals in top CD4<sup>&#x002B;</sup> T cells TCR clones; <bold>H</bold> and <bold>I</bold>. Variable immune-responsive signals in top CD8<sup>&#x002B;</sup> T cells TCR clones. All differences with p &#x003C; 0.05 and analyzed by two-sided Student&#x2019;s t-test.</p></caption>
+<graphic xlink:href="21256781v1_fig3.tif"/>
+</fig>
+<p>First of all, it was found that top BCR clones were enriched in the samples after second dose, indicating the observable clone expansion occurred after the second dose. Second, it was found that the top 20 clones were highly correlated to low MHC II signal and high B cell activation signal (<xref ref-type="fig" rid="fig3">Fig.3B</xref> and <xref ref-type="fig" rid="fig3">3C</xref>). This was expected, though, it was still encouraging to confirm that the possible antigen-specific B cells could display transcriptional signature in the peripheral blood, which made it more specific to access the antigen-specific BCR sequence using single-cell sequencing technique.</p>
+<p>Top TCR clones didn&#x2019;t necessarily occur in the post-vaccination time, which made it less straightforward to confirm their vaccine-specificity. We were still able to find the correlation between the top T cell clones and the immune-responsive signals. In CD4<sup>&#x002B;</sup> T cells, it was found that the top clones were associated with high follicular T helper (Tfh) and low NF-&#x03BA;B signal (<xref rid="fig3" ref-type="fig">Fig. 3E</xref> and <xref ref-type="fig" rid="fig3">3F</xref>). In CD8<sup>&#x002B;</sup> T cells, it was found that the top clones were associated with high cytotoxic but low NF-&#x03BA;B signal (<xref ref-type="fig" rid="fig3">Fig.3H</xref> and <xref ref-type="fig" rid="fig3">3I</xref>).</p>
+</sec>
+<sec id="s2d">
+<title>Non-trivial roles of megakaryocytes in vaccine immunity</title>
+<p>Megakaryocytes were mostly recognized for its role in the hemostasis and wound healing. Little has been discussed for its contribution in the disease or vaccine immunity. After examining this atypical immune cell type, we observed the gene expression variation of megakaryocytes in vaccine immunity.</p>
+<p>First, the variation of platelet aggregation signal (<italic>GP9, ITGB3, TBXA2R, FLNA, VASP</italic>, etc.) in megakaryocytes (<xref ref-type="fig" rid="fig4">Fig.4A</xref> and <xref ref-type="fig" rid="fig4">4B</xref>, pattern 4) were identified. These genes were significantly down-regulated in the immune-responsive samples (R-state), which suggested low risk of thrombosis during the period of BBIBP-CorV vaccination. Later, when we inspected the same set of genes in the COVID-19 patients<sup><xref ref-type="bibr" rid="c21">21</xref></sup> and influenza vaccination<sup><xref ref-type="bibr" rid="c22">22</xref></sup> samples at the corresponding immune-responsive time point, instead of getting down-regulated, we found the platelet aggregation signal significantly went up (dashed red box in <xref ref-type="fig" rid="fig4">Fig.4E</xref> and Fig.S3D). That means, the variation of platelet aggregation signal could be distinct by different vaccines.</p>
+<p>As a myeloid-lineage cell type, it was found that megakaryocytes actually contributed more inflammatory signal than we thought, such as interleukin-1 beta (IL-1&#x03B2;) production (<italic>TLR4, IFI16, CASP1, CASP8, NLRP1, NLRP2</italic>, etc.) and neutrophil activation (<italic>SA0018, S100A12, FCER1G, VNN1</italic>, etc.) (<xref ref-type="fig" rid="fig4">Fig.4A, 4C</xref> and <xref ref-type="fig" rid="fig4">4D</xref>). The expression levels of the related genes were actually as high as the monocyte population (Fig. S2O and S2P), which was considered the dominant cell type of innate immunity in PBMCs. In flu vaccination, we observed the elevation of IL-1&#x03B2; production and neutrophil activation signal as well at 28-day sample, the putative high response time point (<xref rid="fig4" ref-type="fig">Fig. 4F</xref> and <xref ref-type="fig" rid="fig4">4G</xref>). All these results suggested the roles of megakaryocytes in pathogenesis and vaccination should not be overlooked.</p>
+<fig id="fig4" position="float" fig-type="figure">
+<label>Figure 4.</label>
+<caption><title>Non-trivial roles of megakaryocytes in vaccine immunity.</title>
+<p><bold>A</bold>. Heatmap of DEGs detected in megakaryocyte<bold>s; B</bold>. Platelet aggregation signal of megakaryocytes; <bold>C</bold>. IL-1&#x03B2; production signal of megakaryocytes; <bold>D</bold>. Neutrophil activation signal of megakaryocytes; <bold>E-G</bold>. Platelet aggregation signal, IL-1&#x03B2; production signal and Neutrophil activation signal of megakaryocytes at 28-day of flu vaccination. All differences with p &#x003C; 0.05 and analyzed by two-sided wilcox test.</p></caption>
+<graphic xlink:href="21256781v1_fig4.tif"/>
+</fig>
+</sec>
+<sec id="s2e">
+<title>Transcriptomic similarity and distinction of COVID-19 and vaccination immunity in PBMC</title>
+<p>It was postulated that the dysregulated immune response could be reflected in differential signals between the COVID-19 infection patients and the vaccine recipients. We were particularly interested in looking for the signatures that were associated to the symptom development and the later immune protection. By examining the similarity and the distinction of the developmental trend of these signals, we aimed to gain more insights of both disease development and vaccine protection.</p>
+<p>We used the keywords in Supplementary table 3 to assess the COVID-19 samples. There were three natural sample groups in previous COVID-19 study, i.e., healthy control, progression samples of mild and severe symptoms and the convalescent samples of both patient types<sup><xref ref-type="bibr" rid="c21">21</xref></sup>. Other than the resemblance between COVID-healthy samples and the vaccine-baseline samples, it was intuitively believed that the COVID-convalescence samples were similar to the vaccine-protection samples (P-state). What do these immune signals vary in the progression samples are of our interest.</p>
+<p>Many of the abovementioned signals only showed an obvious turning point at convalescence group, including type I interferon productions, Tfh and B cell activation, TGF-&#x03B2;, cell-cycle, apoptosis and so forth (<xref ref-type="fig" rid="fig5">Fig.5A</xref>. and Fig.S3A-S3B). We were able to observe obvious signal boundary line between healthy/progression samples and convalescence samples. That means, unlike what happened in vaccination, some of the critical signals of immunity were not initiated but suppressed until the recovery.</p>
+<fig id="fig5" position="float" fig-type="figure">
+<label>Figure 5.</label>
+<caption><title>The immune-responsive signals in COVID-19 patients and Flu vaccination.</title>
+<p><bold>A</bold>. Turning point of immune-responsive signals at convalescence; <bold>B</bold>. Variability of type I and type II MHC signals at COVID-19 patients. <bold>C-E</bold>. Variable immune-responsive signals at 28-day of flu vaccination.</p></caption>
+<graphic xlink:href="21256781v1_fig5.tif"/>
+</fig>
+<p>In general, there were many immune responsive signals in certain cell types in the progression samples whose trends were similar to those in R-state of vaccination. For examples, cytotoxic signal in T cells and NK cells significantly increased in the patients&#x2019; progression samples consistent with Zhang <italic>et al</italic>. and Wilk <italic>et al</italic>. study<sup><xref ref-type="bibr" rid="c17">17</xref>, <xref ref-type="bibr" rid="c28">28</xref></sup> (Fig.S3C).</p>
+<p>We also revealed the distinctions between disease immunity and vaccination immunity using both datasets, especially for type I and type II MHC. In those antigen presenting cells like B cells and monocytes, type I MHC signal significantly decreased in vaccine response group (R group) whereas it tended to increase in the progression patients (<xref ref-type="fig" rid="fig5">Fig.5B</xref>). Type II MHC signal was suppressed in progression in both mild or severe patients (<xref ref-type="fig" rid="fig5">Fig.5B</xref>), whereas it was up-regulated during the vaccination. Another distinction was that T cells exhaustion signal went down in vaccination but went up in progression patients (Fig.S3C).</p>
+<p>In summary, we identified the distinct signal variation patterns between the COVID-19 progression and vaccination samples, such as 1. type I and II MHC signals 2. T cells exhaustion signal.</p>
+</sec>
+<sec id="s2f">
+<title>Potential effects of the identified variable classical immune signals in flu vaccination</title>
+<p>To further evaluate the responsive role of the variable classical immune signals we had identified in inactivated SARS-CoV-2 vaccination, a specific comparison was adopted with a public scRNA-seq data set on the lymph nodes and PBMC samples of the quadrivalent influenza vaccination<sup><xref ref-type="bibr" rid="c22">22</xref></sup>. This data set was designed for a single-dose vaccine and included 5 time points of PBMC samples with a long post-vaccination follow-up time (2 months).</p>
+<p>Using the 15 variable signaling keywords identified in BBIBP-Corv vaccination and the involved differential genes, we calculated their modular scores for each cell in flu dataset. The signal curves showed that 28-day sample gave the most obvious variation in response to the flu vaccine compared to other time points. We were able to detect high B cell activation signal in B cells (<xref ref-type="fig" rid="fig5">Fig.5C</xref>), high cytotoxic signal in CD8<sup>&#x002B;</sup>T cells (<xref ref-type="fig" rid="fig5">Fig.5D</xref>), and low TGF-&#x03B2; signal (<xref ref-type="fig" rid="fig5">Fig.5E</xref>) in most of the immune cells at 28-day time point.</p>
+<p>Elevated B cell activation, elevated cytotoxic signals and suppressed TGF-&#x03B2; signal at 28 days suggested this sample was mostly corresponding to the COVID-19-vaccine samples at immune R-state. We were not able to detect the variation of other signature signals, possibly because their sampling missed the pivotal time point on this volunteer. The megakaryocytes also had shown the significant variation at the same time point, which was mentioned earlier (<xref ref-type="fig" rid="fig4">Fig.4E</xref>).</p>
+</sec>
+</sec>
+<sec id="s3">
+<title>Discussion</title>
+<p>In this study, we extensively investigated the variability of the single-cell transcriptomes of the peripheral immune cells in the process of vaccination by a classical inactivated viral vaccine. Single-cell sequencing technology enabled us to deconvolute the immune-responsive signals into specific cell types.</p>
+<p>Unsupervised clustering on the cell types from these samples defined three dominant clusters of the immune cells that were putatively corresponding to different immune-responsive states. Such an unbiased method overcame the challenge of sample grouping by the distinct immune-background, vaccine susceptibility or variable pace of immune responses by different participants.</p>
+<p>The coordinated up-/down- regulation of the gene expressions of a certain signaling pathway suggested their involvement of the immune response during the vaccination. Tracking down the variation of these signals in a typical vaccination process allowed us to uncover their possible roles in the immune protection. Using this method, we observed the activation of both humoral immunity and cellular immunity by BBIBP-CorV, including cytotoxicity, follicular helper T mediated immunity as well as B cell activation <italic>et al</italic>. Meanwhile, our results provided a good reference for the future study of other vaccine types.</p>
+<p>Surprisingly, we observed the down-regulation of NF-&#x03BA;B signal in the post-BBIBP-CorV vaccination PBMC samples. Previous study suggested that the suppression of NF-&#x03BA;B signal likely alleviated the vaccine adverse reaction<sup><xref ref-type="bibr" rid="c29">29</xref>, <xref ref-type="bibr" rid="c30">30</xref></sup>, which might partially explain much less adverse reaction cases was reported by the vaccine recipients of BBIBP-CorV. Even though, the antibody productions of our participants were satisfactory.</p>
+<p>The correlation between the top TCR/BCR clones and the modular scores of the keywords reveals what phenotypes have been associated with the clones of expansion. Some of the signature transcriptions identified in this work enabled us to capture the target B cells for full-length sequencing and molecular cloning of the antigen-specific antibodies.</p>
+<p>The platelet aggregation signal and inflammatory signals were also inspected in the megakaryocytes due to the rising concern on the blood-clot side-effects reported on several vaccine types<sup><xref ref-type="bibr" rid="c10">10</xref>, <xref ref-type="bibr" rid="c11">11</xref>, <xref ref-type="bibr" rid="c12">12</xref></sup>. This cell type was usually overlooked in immunity, though, in response to vaccine, the inflammatory gene expressions in megakaryocytes not only commensurate with the monocytes but also in a coordinated fashion. In addition, unlike severe COVID-19 samples and influenza vaccine samples, our result showed a down-regulation of blood-clot-related gene expression in our samples under active response (R-state), which likely explained the much fewer reports of thrombus-related adverse events by BBIBP-CorV vaccine<sup><xref ref-type="bibr" rid="c5">5</xref></sup>.These findings necessitate a more extensive investigation on the roles of the megakaryocytes in the human immunity in the future.</p>
+<p>The comparison of the immune-responsive signals between the COVID-19-progression and the vaccination allowed us to identify the discrepancy of immune responsive signals and made it possible to locate the missing puzzle pieces of the unsuccessful or incomplete immunity that contributed the symptoms in patients. These signaling pathways could be used to assess the immunity or as the target of the intervention for the control of COVID-19 symptoms or the vaccine adverse reaction. Though, more validation experiments will need to be done in the future.</p>
+<p>We also inspected these signals using the dataset generated from a single-dose flu vaccine recipient<sup><xref ref-type="bibr" rid="c22">22</xref></sup>. The results showed a significant fluctuation, especially, the B cell activation signal displayed a peak at 28-day. This was concordant to the detection of high content of CD20<sup>hi</sup>CD38<sup>int</sup> B cells from lymph nodes at 28-day in the original paper, though, a single case study might limit the power of this study.</p>
+<p>Our study has some limitations. Due to the currently high cost of single-cell sequencing and inaccessibility of other vaccine type at the moment, the coverage and the size of sampling of this study are relatively limited, which limits the power of this study. Due to the urgent need of COVID-19 related research, the follow-up time couldn&#x2019;t be long enough, either.</p>
+<p>Despite of these limitations, we were able to observe the protective immunity induced by BBIBP-CorV at the single-cell level and identified a set of genes that not only featured the immune-responsive variation of the peripheral immune cells but also exhibited many interpretable signaling pathways. The signature expression described in here might facilitate to design a new assay to assess the immune protection and adverse effects after the vaccination or infection recovery.</p>
+</sec>
+<sec id="s4">
+<title>Materials and Methods</title>
+<sec id="s4a">
+<title>Participants and ethics</title>
+<p>All human samples used in this study were processed under Institutional Review Board approved protocols at Shanghai Jiao Tong University. All study participants were recruited after providing informed consent and with approval by the Ethics Committee of Ren Ji Hospital (KY2021-046), School of Medicine, Shanghai Jiao Tong University, and the study was conducted according to the criteria set by the Declaration of Helsinki<sup><xref ref-type="bibr" rid="c31">31</xref></sup> (2013). This study was registered with ClinicalTrials.gov (NCT04871932). A written informed consent letters were routinely obtained from all participants in the study and all relevant ethical regulations regarding human research participants were complied with by the investigators. Six healthy non-frail individuals who had not received any vaccine in the past one year were recruited in the Pu Dong Cohort, China, including 4 males and 2 females, aged 30-40 years old. All participants were confirmed negative result of SARS-CoV-2 infection by RT-qPCR tests and negative result for serum SARS-CoV-2-specific IgM/IgG-antibody ELISA tests. The participants had no history of epidemiological contact of COVID-19 patients. They were free of clinical symptoms including fever, cough, headache, sore throat, malaise, loss of smell, runny nose, abdominal pain, diarrhea, joint pain, wheezing or dyspnea within 28 days before vaccination; They were also free of any steroid usage, chronic diseases, pregnancy, lactation, and obvious allergy to any known ingredients contained in the inactivated vaccine.</p>
+</sec>
+<sec id="s4b">
+<title>Vaccine and Vaccination protocol</title>
+<p>The inactivated SARS-CoV-2 vaccine (Vero cells), a single-dose schedule of 4&#x03BC;g/0.5ml, were supported by the Beijing Institute of Biological Products (Beijing, China). Vaccine recipients received BBIBP-CorV twice according to drug instruction via intra muscular with 2 to 4 weeks between each injection.</p>
+</sec>
+<sec id="s4c">
+<title>Sample collection, preparation and storage</title>
+<p>Peripheral venous blood samples were collected at 4 time points including the day before vaccination (BV), 7 days after first dose (1V7), 7 days after second dose (2V7) and 14 days after second dose. The blood samples were processed within 2 hours of collection. The peripheral blood mononuclear cells (PBMCs) were isolated using Vacutainer CPT tubes (BD) according to the manufacture protocols<sup><xref ref-type="bibr" rid="c32">32</xref></sup>, and cells were immediately used 10&#x00D7; single-cell RNA-seq or cryopreserved in 10&#x0025; dimethylsulfoxide in FBS and stored at &#x2212;80&#x00B0;C freezer. The viability and quantity of PBMCs in single-cell suspensions were determined using Trypan Blue. The cell viability of total samples is &#x003E; 90&#x0025;. Blood samples in the coagulation promoting tubes were set upright on the tube stand for 20 minutes at 4 &#x00B0;C and were centrifuged at 1000g for 10 minutes at 4 &#x00B0;C. The supernatant serum samples were extracted and stored at &#x2212;80 &#x00B0;C for future assays.</p>
+</sec>
+<sec id="s4d">
+<title>Antibody and Serum cytokine detection</title>
+<p>The levels of anti-SARS-CoV-2 (2019-nCoV) Spike RBD IgG in serum were tested using Sino Biological&#x00AE; SARS-CoV-2 (2019-nCoV) Spike RBD Antibody Titer Assay Kit (Catalog Number: KIT002) following the manufacturer&#x2019;s instructions. Absorbance was read at 450 nm with a subtraction at 570 nm by MultiSkan FC reader (51119000, Thermo Fisher Scientific Inc., Waltham, MA, USA).</p>
+<p>The protein levels of IFN-&#x03B3;, IFN-&#x03B1;, interleukin (IL)-1&#x03B2;, IL-2, IL-4, IL-5, IL-6, IL-10, IL-17A and Tumor necrosis factor (TNF) -&#x03B1; in serum were tested using Aimplex kit (Hang zhou CEGER P010041), a multiplex beads-based flow cytometric assay, following the manufacturer&#x2019;s instructions. The concentrations of IL-4 in the serum samples were further assayed using the ultra-sensitive single molecule array immunoassay on Medivh SX-L platform (ColorTech Biotechnology, Suzhou, China). Samples were incubated with anti-IL-4 capture antibody coated magnetic beads and biotinylated detection antibody to form the immuno-complex. Then beads were loaded into femto-sized array for detection.</p>
+</sec>
+<sec id="s4e">
+<title>Single-Cell RNA-seq library construction and sequencing</title>
+<p>Using a Single Cell 5&#x2019; Library and Gel Bead kit (10&#x00D7; Genomics, 1000006) and Chromium Single Cell A Chip kit (10&#x00D7; Genomics, 120236), the cell suspensions (600&#x2013;1000 living cells per ul as determined by Count Star) were loaded onto a Chromium single cell controller (10&#x00D7; Genomics) to generate single-cell gel beads in the emulsion (GEMs) following the manufacturer&#x2019;s protocol. Approximately 12,000 cells were added to each channel and approximately 7,000 target cells were recovered. Single-cell RNA libraries were prepared using the Chromium Single Cell 5&#x2019; v2Reagent (10&#x00D7; Genomics, PN-1000263) was used to prepare single-cell RNA libraries according to the manufacturer&#x2019;s instructions. Each sequencing library was generated with a unique sample index. The libraries were sequenced using Illumina platform with a sequencing depth of at least 100,000 reads per cell and 150 bp (PE150) paired-end reads (performed by GENE SHINE, Shanghai).</p>
+</sec>
+<sec id="s4f">
+<title>Single-Cell Data Processing</title>
+<p>The matrices of unique molecular identifier (UMI) were generated for each sample by the Cell Ranger (10&#x00D7; Genomics, Version 4.0.0) Pipeline coupled with human reference version GRCh38 (10&#x00D7; Genomics, Version 3.0.0.) using STAR (version 2.5.1b). Then the expression matrix was analyzed by R software (v.3.6.0) with the Seurat package (v.3.0.0) and DoubletFinder (version 2.0.2) for filtering, data normalization, dimensionality reduction, clustering (Butler <italic>et al</italic>., 2018). The filtered scRNA-seq data were analyzed with the following steps: 1. To remove the cells with low quality, cells with fewer than 500 genes detected and a mitochondrial gene ratio of greater than 10&#x0025; were excluded. And genes with at least one feature count in more than three cells were used for the following analysis. 2. To remove potential doublets, cells with UMI counts above mean &#x00B1; 2SD are filtered out. Additionally, we applied DoubletFinder package (version 2.0.2) to identify potential doublets. 3. For each cell, we normalized the gene expression profiles with SCT-transform in Seurat package. 4. Variable genes were selected using the &#x2018;FindVariableFeatures&#x2019; function with the default parameters. 5. Variable genes were projected onto a low-dimensional subspace using canonical correlation analysis (CCA) across samples to correct batch effects by using the &#x2018;RunMultiCCA&#x2019; functions. 6. A shared nearest neighbor graph was constructed based on the Euclidean distance in the low-dimensional subspace spanned by the selected significant principal components. Cells were clustered using the &#x2018;FindClusters&#x2019; function at an appropriate resolution. 7. Cells were visualized using a 2-dimensional t-distributed stochastic Neighbor Embedding (tSNE) algorithm with the &#x2018;RunTSNE&#x2019; function. Using the above pipeline, we processed the scRNA-seq data of &#x223C;120k high-quality cells from 24 samples.</p>
+</sec>
+<sec id="s4g">
+<title>Reference Single-Cell Datasets in comparison</title>
+<p>Other than the scRNA-seq dataset generated in this study on the participants of BBIBP-CorV vaccination, we also used the published PBMC scRNA-seq dataset to make meaningful comparison over the immune-responsive signals. The dataset on COVID-19 patients came from GEO accession GSE158055<sup><xref ref-type="bibr" rid="c21">21</xref></sup> and the dataset on flu vaccine came from GEO accession GSE148633<sup><xref ref-type="bibr" rid="c22">22</xref></sup>.</p>
+</sec>
+<sec id="s4h">
+<title>Cell-type annotation and cluster marker identification</title>
+<p>After nonlinear dimensional reduction and projection of all cells into two-dimensional space by tSNE, cells were clustered together according to the similar features. &#x2018;FindClusters&#x2019; function was used to define the unsupervised clusters. &#x201C;FindAllMarkers&#x201D; function in Seurat was used to find markers for each cluster. Clusters were then preliminarily classified and annotated based on expressions of canonical markers and signature genes of particular cell types. In total, we identified 11 major cell types including CD4<sup>&#x002B;</sup> T and CD8<sup>&#x002B;</sup> T cells (<italic>CD3D, CD3E, CD3G, CD40LG, CD4, CD8A, CD8B</italic>), &#x03B3;&#x03B4; T cells (<italic>TRDV2, TRGV9</italic>), B cells (<italic>MS4A1, CD79A, CD79B</italic>), plasma cells (<italic>JCHAIN, MZB1</italic>), NK cells (<italic>NCAM1, GNLY, NKG7</italic>), Monocyte and Dendritic cells (<italic>CD14, FCGR3A, CST3, LYZ, FCER1A, CD1D, LILRA4</italic>) and Megakaryocytes (Mega) (<italic>PPBP, PF4</italic>). We also used SuperCT<sup><xref ref-type="bibr" rid="c33">33</xref></sup> and 31 reference cell types [<ext-link ext-link-type="uri" xlink:href="https://github.com/weilin-genomics/rSuperCT_models">https://github.com/weilin-genomics/rSuperCT_models</ext-link>] to predict the cell types of the total 120k cells. SuperCT predictions were used to for cross-validation. We assigned the final cell types based on the entire cluster rather than single cells. The dominant prediction for the cluster will correct the discrepancy in the same cluster. Additional details of prediction on top of SuperCT 31-type, such as &#x03B3;&#x03B4;T cells, mDC, pDC were assigned by the enriched markers and detailed cell-type boundaries were determined by the Seurat &#x2018;FindClusters&#x2019; function with default parameters.</p>
+</sec>
+<sec id="s4i">
+<title>Identification of differentially expressed genes (DEGs) and function enrichment</title>
+<p>The gene expression signals of a certain cell group (by cell type and by sample) were represented by copy number per million UMIs (CPM). See details in the following equation.
+<disp-formula id="ueqn1">
+<alternatives>
+<graphic xlink:href="21256781v1_ueqn1.gif"/>
+</alternatives>
+</disp-formula>
+Let <italic>e</italic> be number of unique molecular identifiers (UMIs) of i gene determined by unique molecular barcode in a certain cell j in group k.</p>
+<p>The CPMs of each gene were compared using student tests by pairwise or non-pairwise groups. P value &#x003C; 0.01 was used as a threshold to define the significant differential expression genes (DEGs).</p>
+<p>When we compared the differential genes between the post-vaccination time points and the base line samples, we could use pairwise t-test by each individual. When we compare the differential genes across B-R-P sample groups, we could only use independent t-test.</p>
+<p>GO and KEGG pathway enrichment analyses on these DEGs identify the biological keywords, that allowed us to summarize the keywords of classical immune responsive signal.</p>
+</sec>
+<sec id="s4j">
+<title>Transcriptional factor analysis</title>
+<p>To identify the potential regulatory transcription factors that dictate the vaccine response, the regulons in major cell types were assessed using SCENIC<sup><xref ref-type="bibr" rid="c27">27</xref></sup> with scaled expression matrix as input. The regulons expression profile cluster plots were visualized using the ComplexHeatmap package of R.</p>
+</sec>
+<sec id="s4k">
+<title>Assessment of the overall signal score of the keywords of immunity</title>
+<p>We used cellular modular scores to assess the immune state after infection or vaccination. We selected differentially expressed genes enriched in MSigDB <sup><xref ref-type="bibr" rid="c34">34</xref></sup> to calculate the modular scores. The involved genes for 12 immune-responsive signals were shown in supplemental table3. The modular score of a certain keyword was calculated with &#x2018;AddModuleScore&#x2019; function in Seurat with default settings. The keywords signal score of different immune state were analyzed by two-sided wilcox test and all differences with p &#x003C; 0.05.</p>
+</sec>
+<sec id="s4l">
+<title>TCR and BCR V(D)J sequencing and analysis</title>
+<p>TCR and BCR clonal types were determined using CellRanger V(D)J pipeline(10&#x00D7; Genomics, Version 4.0.0). TCR/BCR diversity was measured as Shannon&#x2019;s entropy using &#x2018;H&#x2019; function in philentropy package:
+<disp-formula id="ueqn2">
+<alternatives>
+<graphic xlink:href="21256781v1_ueqn2.gif"/>
+</alternatives>
+</disp-formula>
+in which the p(x) represents the frequency of a given TCR/BCR clone among all T/B cells with TCR/BCR identified. The TCR/BCR diversity among different times was analyzed by two-sided Student&#x2019;s t-test and all differences with p &#x003C; 0.05. We loaded the clonal type information from the CellRanger V(D)J output to the meta data of the seurat objects based on the barcode mapping. The cells belonging to the top 20 TCR and BCR clones were labeled as &#x2018;top-clones&#x2019;. The gene expression signal and the immune responsive signals were compared between the top-clones and their counterparts using Seurat &#x2018;VlnPlot&#x2019; function.</p>
+</sec>
+</sec>
+<sec sec-type="supplementary-material">
+<title>Supporting information</title>
+<supplementary-material>
+<label>Supplemental files</label>
+<media xlink:href="supplements/256781_file02.zip" />
+</supplementary-material>
+</sec>
+</body>
+<back>
+<sec sec-type="data-availability">
+<title>Data Availability</title>
+<p>The data will be online published upon the acceptence of the manuscript by a journal and the agreement by the all authors.</p>
+</sec>
+<ack>
+<title>Acknowledgements</title>
+<p>We thank the volunteers from Pu Dong Cohort and Professor Ling Ni at Tsinghua University for their contribution to the study. This work was supported by grants from the National Science Fund for Distinguished Young Scholars (81625002), the National Natural Science Foundation of China (81930007, 81470389, 81500221 and 81800307), the Shanghai Outstanding Academic Leaders Program (18XD1402400), Innovative research team of high-level local universities in Shanghai (SSMU-ZDCX20180200) and Shanghai Municipal Education Commission Gaofeng Clinical Medicine Grant Support (20152209).</p>
+</ack>
+<sec id="s5">
+<title>Author contributions</title>
+<p>P.J and L.W conceived the need for the article. L.Z, L.Y.Y, H.L, G.X, L.Q, S.T, Z.C.J and Y.A.C recruited volunteers. T.R.Y, C.Y.F, S.J.F, and L.G.Q collected the samples from donors. T.R.Y, H.L.H, C.Y.F, Y.A.C and Z.M.C completed the experiments. L.W, T.R.Y, Z.J.M and L.R.H finished the data analysis. L.W, T.R.Y and C.Y.F drafted the initial version. C.Y.F and T.R.Y provided the production of the flowchart. P.J and L.W put forward many constructive comments for the final version. All the authors read and approved the manuscript.</p>
+</sec>
+<sec id="s6">
+<title>Competing interests</title>
+<p>The authors declare no competing interests.</p>
+</sec>
+<ref-list>
+<title>References</title>
+<ref id="c1"><label>1.</label><mixed-citation publication-type="journal"><string-name><surname>Polack</surname> <given-names>FP</given-names></string-name>, <etal>et al.</etal> <article-title>Safety and Efficacy of the BNT162b2 mRNA Covid-19 Vaccine</article-title>. <source>The New England journal of medicine</source> <volume>383</volume>, <fpage>2603</fpage>&#x2013;<lpage>2615</lpage> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c2"><label>2.</label><mixed-citation publication-type="journal"><string-name><surname>Baden</surname> <given-names>LR</given-names></string-name>, <etal>et al.</etal> <article-title>Efficacy and Safety of the mRNA-1273 SARS-CoV-2 Vaccine</article-title>. <source>The New England journal of medicine</source> <volume>384</volume>, <fpage>403</fpage>&#x2013;<lpage>416</lpage> (<year>2021</year>).</mixed-citation></ref>
+<ref id="c3"><label>3.</label><mixed-citation publication-type="journal"><string-name><surname>Voysey</surname> <given-names>M</given-names></string-name>, <etal>et al.</etal> <article-title>Safety and efficacy of the ChAdOx1 nCoV-19 vaccine (AZD1222) against SARS-CoV-2: an interim analysis of four randomised controlled trials in Brazil, South Africa, and the UK</article-title>. <source>Lancet (London, England)</source> <volume>397</volume>, <fpage>99</fpage>&#x2013;<lpage>111</lpage> (<year>2021</year>).</mixed-citation></ref>
+<ref id="c4"><label>4.</label><mixed-citation publication-type="journal"><string-name><surname>Logunov</surname> <given-names>DY</given-names></string-name>, <etal>et al.</etal> <article-title>Safety and efficacy of an rAd26 and rAd5 vector-based heterologous prime-boost COVID-19 vaccine: an interim analysis of a randomised controlled phase 3 trial in Russia</article-title>. <source>Lancet (London, England)</source> <volume>397</volume>, <fpage>671</fpage>&#x2013;<lpage>681</lpage> (<year>2021</year>).</mixed-citation></ref>
+<ref id="c5"><label>5.</label><mixed-citation publication-type="journal"><string-name><surname>Xia</surname> <given-names>S</given-names></string-name>, <etal>et al.</etal> <article-title>Safety and immunogenicity of an inactivated SARS-CoV-2 vaccine, BBIBP-CorV: a randomised, double-blind, placebo-controlled, phase 1/2 trial</article-title>. <source>Lancet Infect Dis</source> <volume>21</volume>, <fpage>39</fpage>&#x2013;<lpage>51</lpage> (<year>2021</year>).</mixed-citation></ref>
+<ref id="c6"><label>6.</label><mixed-citation publication-type="other"><string-name><surname>Wu</surname> <given-names>Z</given-names></string-name>, <etal>et al.</etal> <article-title>Safety, tolerability, and immunogenicity of an inactivated SARS-CoV-2 vaccine (CoronaVac) in healthy adults aged 60 years and older: a randomised, double-blind, placebo-controlled, phase 1/2 clinical trial</article-title>. <source>Lancet Infect Dis</source>, (<year>2021</year>).</mixed-citation></ref>
+<ref id="c7"><label>7.</label><mixed-citation publication-type="journal"><string-name><surname>Zhang</surname> <given-names>Y</given-names></string-name>, <etal>et al.</etal> <article-title>Safety, tolerability, and immunogenicity of an inactivated SARS-CoV-2 vaccine in healthy adults aged 18-59 years: a randomised, double-blind, placebo-controlled, phase 1/2 clinical trial</article-title>. <source>Lancet Infect Dis</source> <volume>21</volume>, <fpage>181</fpage>&#x2013;<lpage>192</lpage> (<year>2021</year>).</mixed-citation></ref>
+<ref id="c8"><label>8.</label><mixed-citation publication-type="journal"><string-name><surname>Keech</surname> <given-names>C</given-names></string-name>, <etal>et al.</etal> <article-title>Phase 1-2 Trial of a SARS-CoV-2 Recombinant Spike Protein Nanoparticle Vaccine</article-title>. <source>The New England journal of medicine</source> <volume>383</volume>, <fpage>2320</fpage>&#x2013;<lpage>2332</lpage> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c9"><label>9.</label><mixed-citation publication-type="journal"><string-name><surname>Sahin</surname> <given-names>U</given-names></string-name>, <etal>et al.</etal> <article-title>COVID-19 vaccine BNT162b1 elicits human antibody and TH1 T cell responses</article-title>. <source>Nature</source> <volume>586</volume>, <fpage>594</fpage>&#x2013;<lpage>599</lpage> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c10"><label>10.</label><mixed-citation publication-type="journal"><string-name><surname>Wise</surname> <given-names>J.</given-names></string-name> <article-title>Covid-19: European countries suspend use of Oxford-AstraZeneca vaccine after reports of blood clots</article-title>. <source>BMJ</source> <volume>372</volume>, <issue>699</issue> (<year>2021</year>).</mixed-citation></ref>
+<ref id="c11"><label>11.</label><mixed-citation publication-type="other"><string-name><surname>Schultz</surname> <given-names>NH</given-names></string-name>, <etal>et al.</etal> <article-title>Thrombosis and Thrombocytopenia after ChAdOx1 nCoV-19 Vaccination</article-title>. <source>The New England journal of medicine</source>, (<year>2021</year>).</mixed-citation></ref>
+<ref id="c12"><label>12.</label><mixed-citation publication-type="other"><string-name><surname>Greinacher</surname> <given-names>A</given-names></string-name>, <string-name><surname>Thiele</surname> <given-names>T</given-names></string-name>, <string-name><surname>Warkentin</surname> <given-names>TE</given-names></string-name>, <string-name><surname>Weisser</surname> <given-names>K</given-names></string-name>, <string-name><surname>Kyrle</surname> <given-names>PA</given-names></string-name>, <string-name><surname>Eichinger</surname> <given-names>S.</given-names></string-name> <article-title>Thrombotic Thrombocytopenia after ChAdOx1 nCov-19 Vaccination</article-title>. <source>The New England journal of medicine</source>, (<year>2021</year>).</mixed-citation></ref>
+<ref id="c13"><label>13.</label><mixed-citation publication-type="journal"><string-name><surname>Blumenthal</surname> <given-names>KG</given-names></string-name>, <etal>et al.</etal> <article-title>Acute Allergic Reactions to mRNA COVID-19 Vaccines</article-title>. <source>Jama</source> <volume>325</volume>, <fpage>1562</fpage>&#x2013;<lpage>1565</lpage> (<year>2021</year>).</mixed-citation></ref>
+<ref id="c14"><label>14.</label><mixed-citation publication-type="journal"><string-name><surname>Wang</surname> <given-names>H</given-names></string-name>, <etal>et al.</etal> <article-title>Development of an Inactivated Vaccine Candidate, BBIBP-CorV, with Potent Protection against SARS-CoV-2</article-title>. <source>Cell</source> <volume>182</volume>, <fpage>713</fpage>&#x2013;<lpage>721</lpage> e719 (<year>2020</year>).</mixed-citation></ref>
+<ref id="c15"><label>15.</label><mixed-citation publication-type="journal"><string-name><surname>Stuart</surname> <given-names>T</given-names></string-name>, <string-name><surname>Satija</surname> <given-names>R.</given-names></string-name> <article-title>Integrative single-cell analysis</article-title>. <source>Nature reviews Genetics</source> <volume>20</volume>, <fpage>257</fpage>&#x2013;<lpage>272</lpage> (<year>2019</year>).</mixed-citation></ref>
+<ref id="c16"><label>16.</label><mixed-citation publication-type="journal"><string-name><surname>Yifan</surname> <given-names>C</given-names></string-name>, <string-name><surname>Fan</surname> <given-names>Y</given-names></string-name>, <string-name><surname>Jun</surname> <given-names>P.</given-names></string-name> <article-title>Visualization of cardiovascular development, physiology and disease at the single-cell level: Opportunities and future challenges</article-title>. <source>Journal of molecular and cellular cardiology</source> <volume>142</volume>, <fpage>80</fpage>&#x2013;<lpage>92</lpage> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c17"><label>17.</label><mixed-citation publication-type="journal"><string-name><surname>Wilk</surname> <given-names>AJ</given-names></string-name>, <etal>et al.</etal> <article-title>A single-cell atlas of the peripheral immune response in patients with severe COVID-19</article-title>. <source>Nature medicine</source> <volume>26</volume>, <fpage>1070</fpage>&#x2013;<lpage>1076</lpage> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c18"><label>18.</label><mixed-citation publication-type="journal"><string-name><surname>Liao</surname> <given-names>M</given-names></string-name>, <etal>et al.</etal> <article-title>Single-cell landscape of bronchoalveolar immune cells in patients with COVID-19</article-title>. <source>Nature medicine</source> <volume>26</volume>, <fpage>842</fpage>&#x2013;<lpage>844</lpage> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c19"><label>19.</label><mixed-citation publication-type="journal"><string-name><surname>Zhu</surname> <given-names>L</given-names></string-name>, <etal>et al.</etal> <article-title>Single-Cell Sequencing of Peripheral Mononuclear Cells Reveals Distinct Immune Response Landscapes of COVID-19 and Influenza Patients</article-title>. <source>Immunity</source> <volume>53</volume>, <fpage>685</fpage>&#x2013;<lpage>696</lpage> e683 (<year>2020</year>).</mixed-citation></ref>
+<ref id="c20"><label>20.</label><mixed-citation publication-type="journal"><string-name><surname>Shaath</surname> <given-names>H</given-names></string-name>, <string-name><surname>Vishnubalaji</surname> <given-names>R</given-names></string-name>, <string-name><surname>Elkord</surname> <given-names>E</given-names></string-name>, <string-name><surname>Alajez</surname> <given-names>NM</given-names></string-name>. <article-title>Single-Cell Transcriptome Analysis Highlights a Role for Neutrophils and Inflammatory Macrophages in the Pathogenesis of Severe COVID-19</article-title>. <source>Cells</source> <volume>9</volume>, (<year>2020</year>).</mixed-citation></ref>
+<ref id="c21"><label>21.</label><mixed-citation publication-type="journal"><string-name><surname>Ren</surname> <given-names>X</given-names></string-name>, <etal>et al.</etal> <article-title>COVID-19 immune features revealed by a large-scale single-cell transcriptome atlas</article-title>. <source>Cell</source> <volume>184</volume>, <fpage>1895</fpage>&#x2013;<lpage>1913</lpage> e1819 (<year>2021</year>).</mixed-citation></ref>
+<ref id="c22"><label>22.</label><mixed-citation publication-type="journal"><string-name><surname>Turner</surname> <given-names>JS</given-names></string-name>, <etal>et al.</etal> <article-title>Human germinal centres engage memory and naive B cells after influenza vaccination</article-title>. <source>Nature</source> <volume>586</volume>, <fpage>127</fpage>&#x2013;<lpage>132</lpage> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c23"><label>23.</label><mixed-citation publication-type="other"><string-name><surname>S&#x00F8;rvoll</surname> <given-names>IH</given-names></string-name>, <etal>et al.</etal> <article-title>An observational study to identify the prevalence of thrombocytopenia and anti-PF4/polyanion antibodies in Norwegian health care workers after COVID-19 vaccination</article-title>. <source>Journal of thrombosis and haemostasis : JTH</source>, (<year>2021</year>).</mixed-citation></ref>
+<ref id="c24"><label>24.</label><mixed-citation publication-type="journal"><string-name><surname>Goshua</surname> <given-names>G</given-names></string-name>, <etal>et al.</etal> <article-title>Endotheliopathy in COVID-19-associated coagulopathy: evidence from a singlecentre, cross-sectional study</article-title>. <source>The Lancet Haematology</source> <volume>7</volume>, <fpage>e575</fpage>&#x2013;<lpage>e582</lpage> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c25"><label>25.</label><mixed-citation publication-type="journal"><string-name><surname>Hottz</surname> <given-names>ED</given-names></string-name>, <etal>et al.</etal> <article-title>Platelet activation and platelet-monocyte aggregate formation trigger tissue factor expression in patients with severe COVID-19</article-title>. <source>Blood</source> <volume>136</volume>, <fpage>1330</fpage>&#x2013;<lpage>1341</lpage> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c26"><label>26.</label><mixed-citation publication-type="journal"><string-name><surname>Manne</surname> <given-names>BK</given-names></string-name>, <etal>et al.</etal> <article-title>Platelet gene expression and function in patients with COVID-19</article-title>. <source>Blood</source> <volume>136</volume>, <fpage>1317</fpage>&#x2013;<lpage>1329</lpage> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c27"><label>27.</label><mixed-citation publication-type="journal"><string-name><surname>Aibar</surname> <given-names>S</given-names></string-name>, <etal>et al.</etal> <article-title>SCENIC: single-cell regulatory network inference and clustering</article-title>. <source>Nature methods</source> <volume>14</volume>, <fpage>1083</fpage>&#x2013;<lpage>1086</lpage> (<year>2017</year>).</mixed-citation></ref>
+<ref id="c28"><label>28.</label><mixed-citation publication-type="journal"><string-name><surname>Zhang</surname> <given-names>JY</given-names></string-name>, <etal>et al.</etal> <article-title>Single-cell landscape of immunological responses in patients with COVID-19</article-title>. <source>Nature immunology</source> <volume>21</volume>, <fpage>1107</fpage>&#x2013;<lpage>1118</lpage> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c29"><label>29.</label><mixed-citation publication-type="journal"><string-name><surname>Moser</surname> <given-names>BA</given-names></string-name>, <etal>et al.</etal> <article-title>Increased vaccine tolerability and protection via NF-&#x03BA;B modulation</article-title>. <source>Sci Adv</source> <volume>6</volume>, (<year>2020</year>).</mixed-citation></ref>
+<ref id="c30"><label>30.</label><mixed-citation publication-type="journal"><string-name><surname>Moser</surname> <given-names>BA</given-names></string-name>, <etal>et al.</etal> <article-title>Small Molecule NF-&#x03BA;B Inhibitors as Immune Potentiators for Enhancement of Vaccine Adjuvants</article-title>. <source>Front Immunol</source> <volume>11</volume>, <fpage>511513</fpage> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c31"><label>31.</label><mixed-citation publication-type="journal"><collab>World Medical A</collab>. <source>World Medical Association Declaration of Helsinki: ethical principles for medical research involving human subjects. Jama</source> <volume>310</volume>, <fpage>2191</fpage>&#x2013;<lpage>2194</lpage> (<year>2013</year>).</mixed-citation></ref>
+<ref id="c32"><label>32.</label><mixed-citation publication-type="journal"><string-name><surname>Corkum</surname> <given-names>CP</given-names></string-name>, <string-name><surname>Ings</surname> <given-names>DP</given-names></string-name>, <string-name><surname>Burgess</surname> <given-names>C</given-names></string-name>, <string-name><surname>Karwowska</surname> <given-names>S</given-names></string-name>, <string-name><surname>Kroll</surname> <given-names>W</given-names></string-name>, <string-name><surname>Michalak</surname> <given-names>TI</given-names></string-name>. <article-title>Immune cell subsets and their gene expression profiles from human PBMC isolated by Vacutainer Cell Preparation Tube (CPT) and standard density gradient</article-title>. <source>BMC Immunol</source> <volume>16</volume>, <fpage>48</fpage> (<year>2015</year>).</mixed-citation></ref>
+<ref id="c33"><label>33.</label><mixed-citation publication-type="journal"><string-name><surname>Xie</surname> <given-names>P</given-names></string-name>, <etal>et al.</etal> <article-title>SuperCT: a supervised-learning framework for enhanced characterization of single-cell transcriptomic profiles</article-title>. <source>Nucleic acids research</source> <volume>47</volume>, <fpage>e48</fpage> (<year>2019</year>).</mixed-citation></ref>
+<ref id="c34"><label>34.</label><mixed-citation publication-type="journal"><string-name><surname>Liberzon</surname> <given-names>A</given-names></string-name>, <string-name><surname>Birger</surname> <given-names>C</given-names></string-name>, <string-name><surname>Thorvaldsdottir</surname> <given-names>H</given-names></string-name>, <string-name><surname>Ghandi</surname> <given-names>M</given-names></string-name>, <string-name><surname>Mesirov</surname> <given-names>JP</given-names></string-name>, <string-name><surname>Tamayo</surname> <given-names>P.</given-names></string-name> <article-title>The Molecular Signatures Database (MSigDB) hallmark gene set collection</article-title>. <source>Cell Syst</source> <volume>1</volume>, <fpage>417</fpage>&#x2013;<lpage>425</lpage> (<year>2015</year>).</mixed-citation></ref>
+</ref-list>
+</back>
+</article>

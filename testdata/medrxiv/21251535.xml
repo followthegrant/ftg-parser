@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.2d1 20170631//EN" "JATS-archivearticle1.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" article-type="article" dtd-version="1.2d1" specific-use="production" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="publisher-id">MEDRXIV</journal-id>
+<journal-title-group>
+<journal-title>medRxiv</journal-title>
+<abbrev-journal-title abbrev-type="publisher">medRxiv</abbrev-journal-title>
+</journal-title-group>
+<publisher>
+<publisher-name>Cold Spring Harbor Laboratory</publisher-name>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1101/2021.02.16.21251535</article-id>
+<article-version>1.2</article-version>
+<article-categories>
+<subj-group subj-group-type="hwp-journal-coll">
+<subject>Epidemiology</subject>
+</subj-group>
+</article-categories>
+<title-group>
+<article-title>Densely sampled viral trajectories for SARS-CoV-2 variants alpha (B.1.1.7) and epsilon (B.1.429)</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author">
+<name><surname>Kissler</surname><given-names>Stephen M.</given-names></name>
+<xref ref-type="author-notes" rid="n1">&#x002A;</xref>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Fauver</surname><given-names>Joseph R.</given-names></name>
+<xref ref-type="author-notes" rid="n1">&#x002A;</xref>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Mack</surname><given-names>Christina</given-names></name>
+<xref ref-type="author-notes" rid="n1">&#x002A;</xref>
+<xref ref-type="aff" rid="a3">3</xref>
+<xref ref-type="aff" rid="a4">4</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Tai</surname><given-names>Caroline G.</given-names></name>
+<xref ref-type="aff" rid="a3">3</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Breban</surname><given-names>Mallery I.</given-names></name>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Watkins</surname><given-names>Anne E.</given-names></name>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Samant</surname><given-names>Radhika M.</given-names></name>
+<xref ref-type="aff" rid="a3">3</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Anderson</surname><given-names>Deverick J.</given-names></name>
+<xref ref-type="aff" rid="a5">5</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Ho</surname><given-names>David D.</given-names></name>
+<xref ref-type="aff" rid="a6">6</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Metti</surname><given-names>Jessica</given-names></name>
+<xref ref-type="aff" rid="a7">7</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Khullar</surname><given-names>Gaurav</given-names></name>
+<xref ref-type="aff" rid="a7">7</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Baits</surname><given-names>Rachel</given-names></name>
+<xref ref-type="aff" rid="a7">7</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>MacKay</surname><given-names>Matthew</given-names></name>
+<xref ref-type="aff" rid="a7">7</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Salgado</surname><given-names>Daisy</given-names></name>
+<xref ref-type="aff" rid="a7">7</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Baker</surname><given-names>Tim</given-names></name>
+<xref ref-type="aff" rid="a7">7</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Dudley</surname><given-names>Joel T.</given-names></name>
+<xref ref-type="aff" rid="a7">7</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Mason</surname><given-names>Christopher E.</given-names></name>
+<xref ref-type="aff" rid="a7">7</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Grubaugh</surname><given-names>Nathan D.</given-names></name>
+<xref ref-type="author-notes" rid="n2">&#x2020;</xref>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author" corresp="yes">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0001-5646-1314</contrib-id>
+<name><surname>Grad</surname><given-names>Yonatan H.</given-names></name>
+<xref ref-type="author-notes" rid="n2">&#x2020;</xref>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="corresp" rid="cor1">&#x0026;</xref>
+</contrib>
+<aff id="a1"><label>1</label><institution>Department of Immunology and Infectious Diseases, Harvard T.H. Chan School of Public Health</institution>, Boston, MA</aff>
+<aff id="a2"><label>2</label><institution>Department of Epidemiology of Microbial Diseases, Yale School of Public Health</institution>, New Haven, CT</aff>
+<aff id="a3"><label>3</label><institution>IQVIA, Real World Solutions</institution>, Durham, NC</aff>
+<aff id="a4"><label>4</label><institution>Department of Epidemiology, University of North Carolina-Chapel Hill</institution>, Chapel Hill, NC</aff>
+<aff id="a5"><label>5</label><institution>Duke Center for Antimicrobial Stewardship and Infection Prevention</institution>, Durham, NC</aff>
+<aff id="a6"><label>6</label><institution>Aaron Diamond AIDS Research Center, Columbia University Vagelos College of Physicians and Surgeons</institution>, New York, NY</aff>
+<aff id="a7"><label>7</label><institution>TEMPUS</institution>, Chicago, IL</aff>
+</contrib-group>
+<author-notes>
+<fn id="n1" fn-type="equal"><label>&#x002A;</label><p>denotes equal contribution</p></fn>
+<fn id="n2" fn-type="others"><label>&#x2020;</label><p>denotes co-senior authorship</p></fn>
+<corresp id="cor1"><label>&#x0026;</label>Correspondence and requests for materials should be addressed to: Email: <email>ygrad@hsph.harvard.edu</email>, Telephone: 617.432.2275</corresp>
+</author-notes>
+<pub-date pub-type="epub">
+<year>2021</year>
+</pub-date>
+<elocation-id>2021.02.16.21251535</elocation-id>
+<history>
+<date date-type="received">
+<day>16</day>
+<month>2</month>
+<year>2021</year>
+</date>
+<date date-type="rev-recd">
+<day>22</day>
+<month>6</month>
+<year>2021</year>
+</date>
+<date date-type="accepted">
+<day>01</day>
+<month>7</month>
+<year>2021</year>
+</date>
+</history>
+<permissions>
+<copyright-statement>&#x00A9; 2021, Posted by Cold Spring Harbor Laboratory</copyright-statement>
+<copyright-year>2021</copyright-year>
+<license license-type="creative-commons" xlink:href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><license-p>This pre-print is available under a Creative Commons License (Attribution-NonCommercial-NoDerivs 4.0 International), CC BY-NC-ND 4.0, as described at <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by-nc-nd/4.0/">http://creativecommons.org/licenses/by-nc-nd/4.0/</ext-link></license-p></license>
+</permissions>
+<self-uri xlink:href="21251535.pdf" content-type="pdf" xlink:role="full-text"/>
+<abstract>
+<title>Abstract</title>
+<p>We estimated (1) the time from first detectable virus to peak viral concentration (proliferation time), (2) the time from peak viral concentration to initial return to the limit of detection (clearance time), and (3) the peak viral concentration separately for 69 individuals infected with SARS-CoV-2 variants alpha (n=14), epsilon (n=10), and non-variants of interest/variants of concern (VOI/VOCs) (n=45). For individuals infected with alpha, the mean duration of the proliferation phase was 4.3 days (95&#x0025; credible interval [3.0, 6.0]), the mean duration of the clearance phase was 7.4 days [6.0, 9.0], and the mean overall duration of infection (proliferation plus clearance) was 11.7 days [9.8, 13.8]. For individuals infected with epsilon, the mean duration of the proliferation phase was 5.6 days [4.0, 7.4], the mean duration of the clearance phase was 8.6 days [6.7, 10.6], and the mean overall duration of infection was 14.2 days [11.8, 16.7]. These compare to a mean proliferation phase of 4.3 days [3.4, 5.4], a mean clearance phase of 6.9 days [6.0, 7.9], and a mean duration of infection of 11.3 days [10.1, 12.5] for non-VOI/VOC infections. The peak viral concentration was 20.9 Ct [18.3, 23.5] for alpha, 20.6 Ct [17.8, 23.5] for epsilon, and 20.8 Ct [19.1, 22.4] for VOI/VOCs. This converts to 7.9 log10 RNA copies/ml [7.2, 8.7] for alpha, 8.0 log10 RNA copies/ml [7.2, 8.8] for epsilon, and 8.0 log10 RNA copies/ml [7.5, 8.4] for non-VOI/VOCs. The distributions of individual-level means are suggestive of longer clearance times for the VOCs. The overall durations of acute infection varied widely across individuals, with individual posterior mean acute infection durations ranging from 5.5 - 16.1 days for alpha, 9.4 - 20.3 days for epsilon, and 4.8 - 17.6 days for non-VOI/VOCs. These data offer evidence that infections with SARS-CoV-2 variants alpha and epsilon feature broadly similar viral trajectories as infections with non-VOI/VOCs.</p>
+</abstract>
+<counts>
+<page-count count="22"/>
+</counts>
+</article-meta>
+<notes>
+<notes notes-type="competing-interest-statement">
+<title>Competing Interest Statement</title><p>The authors have declared no competing interest.</p></notes>
+<notes notes-type="financial-disclosure">
+<title>Funding Statement</title><p>Huffman Family Donor Advised Fund (NDG); Fast Grant funding from the Emergent Ventures at
+85 the Mercatus Center; George Mason University (NDG); the Morris-Singer Fund for the Center for
+86 Communicable Disease Dynamics at the Harvard T.H. Chan School of Public Health (YHG).</p></notes>
+<notes notes-type="disclosures">
+<title>Author Declarations</title><p>I confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.</p><p>Yes</p><p>The details of the IRB/oversight body that provided approval or exemption for the research described are given below:</p><p>Residual de-identified viral transport media from anterior nares and oropharyngeal swabs collected from players, staff, vendors, and associated household members from a professional sports league were obtained from BioReference Laboratories. In accordance with the guidelines of the Yale Human Investigations Committee, this work with de-identified samples was approved for research not involving human subjects by the Yale Internal Review Board (HIC protocol # 2000028599). This project was designated exempt by the Harvard IRB (IRB20-1407).</p><p>All necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived.</p><p>Yes</p><p>I understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).</p><p>Yes</p><p>I have followed all appropriate research reporting guidelines and uploaded the relevant EQUATOR Network research reporting checklist(s) and other pertinent material as supplementary files, if applicable.</p><p>Yes</p></notes>
+<fn-group content-type="summary-of-updates">
+<title>Summary of Updates:</title>
+<fn fn-type="update"><p>Larger sample size, inclusion of additional SARS-CoV-2 variant, addition of coauthors who assisted with sequencing.</p></fn>
+</fn-group>
+</notes>
+</front>
+<body>
+<sec id="s1">
+<title>Main text</title>
+<p>The reasons for the enhanced transmissibility of SARS-CoV-2 variants of concern (VOCs)<sup><xref ref-type="bibr" rid="c1">1</xref></sup> are unclear. Of special interest are the VOCs B.1.1.7 (alpha) and B.1.429 (epsilon), which until April 2021 were the most prevalent VOCs in the United States.<sup><xref ref-type="bibr" rid="c1">1</xref></sup> Variant alpha features multiple mutations in the spike protein receptor binding domain<sup><xref ref-type="bibr" rid="c2">2</xref></sup> that may enhance ACE-2 binding,<sup><xref ref-type="bibr" rid="c3">3</xref></sup> thus increasing the efficiency of virus transmission. Variant epsilon partially evades neutralization by sera from convalescent patients and vaccine recipients.<sup><xref ref-type="bibr" rid="c4">4</xref></sup> In addition to, and perhaps due to, these attributes, the viral trajectories for infections with alpha or epsilon could feature a higher peak viral load or longer duration of carriage, both of which could increase transmissibility. To test whether acute infections with SARS-CoV-2 VOCs alpha or epsilon are associated with higher or more sustained nasopharyngeal viral concentrations relative to non-variants of interest and non-variants of concern (non-VOI/VOCs), we assessed longitudinal densely sampled PCR tests performed in a cohort of 69 individuals (<bold><xref rid="tblS1" ref-type="table">Supplementary Table 1</xref></bold>) infected with SARS-CoV-2 undergoing daily surveillance testing, including 14 infected with alpha and 10 infected with epsilon, with lineage assignments confirmed by whole genome sequencing.</p>
+<p>We estimated (1) the time from first detectable virus to peak viral concentration (proliferation time), (2) the time from peak viral concentration to initial return to the limit of detection (clearance time), and (3) the peak viral concentration for each individual (<bold>Supplementary Appendix</bold>).<sup><xref ref-type="bibr" rid="c5">5</xref></sup> We estimated the means of these quantities separately for individuals infected with alpha, epsilon, and non-VOI/VOCs (<bold><xref rid="fig1" ref-type="fig">Figure 1</xref>; <xref rid="tblS2" ref-type="table">Supplementary Table 2</xref></bold>). For individuals infected with alpha, the mean duration of the proliferation phase was 4.3 days (95&#x0025; credible interval [3.0, 6.0]), the mean duration of the clearance phase was 7.4 days [6.0, 9.0], and the mean overall duration of infection (proliferation plus clearance) was 11.7 days [9.8, 13.8]. For individuals infected with epsilon, the mean duration of the proliferation phase was 5.6 days [4.0, 7.4], the mean duration of the clearance phase was 8.6 days [6.7, 10.6], and the mean overall duration of infection was 14.2 days [11.8, 16.7]. These compare to a mean proliferation phase of 4.3 days [3.4, 5.4], a mean clearance phase of 6.9 days [6.0, 7.9], and a mean duration of infection of 11.3 days [10.1, 12.5] for non-VOI/VOC infections. The peak viral concentration was 20.9 Ct [18.3, 23.5] for alpha, 20.6 Ct [17.8, 23.5] for epsilon, and 20.8 Ct [19.1, 22.4] for VOI/VOCs. This converts to 7.9 log<sub>10</sub> RNA copies/ml [7.2, 8.7] for alpha, 8.0 log10 RNA copies/ml [7.2, 8.8] for epsilon, and 8.0 log<sub>10</sub> RNA copies/ml [7.5, 8.4] for non-VOI/VOCs. We found no evidence of variant-specific differences in the population means for these parameters, as assessed by overlapping 95&#x0025; credible intervals, and no differences in empirical distribution, as assessed by a Kolmogorov-Smirnov test<sup><xref ref-type="bibr" rid="c6">6</xref></sup> with significance threshold <italic>&#x03B1;</italic> = 0.05. However, the distributions of individual-level means are suggestive of longer clearance times for the VOCs (<bold><xref rid="fig1" ref-type="fig">Figure 1C</xref></bold>). The overall durations of acute infection varied widely across individuals, with individual posterior mean acute infection durations ranging from 5.5 &#x2013; 16.1 days for alpha, 9.4 &#x2013; 20.3 days for epsilon, and 4.8 &#x2013; 17.6 days for non-VOI/VOCs (<bold><xref rid="tblS3" ref-type="table">Supplementary Table 3</xref></bold>). Data and code are available online.<sup><xref ref-type="bibr" rid="c7">7</xref></sup></p>
+<fig id="fig1" position="float" fig-type="figure">
+<label>Figure 1.</label>
+<caption><title>Estimated viral trajectory parameters for SARS-CoV-2 infections with alpha, epsilon, and non-variants of interest/non-variants of concern.</title>
+<p>Individual posterior means (points) with population means and 95&#x0025; credible intervals (hatched lines) for (A) the mean peak viral concentration, (B) the mean proliferation duration, (C) the mean clearance duration, and (D) the mean total duration of acute infection. The points are jittered horizontally to avoid overlap. Solid lines in panels (E)-(F) depict the mean posterior viral trajectories for alpha infections (red) and epsilon infections (green) respectively, relative to non-VOI/VOC infections (blue), as specified by the population means and credible intervals in (A)-(D). The shaded regions represent 95&#x0025; credible areas for the mean population trajectories.</p></caption>
+<graphic xlink:href="21251535v2_fig1.tif"/>
+</fig>
+<p>These data offer evidence that infections with SARS-CoV-2 variants alpha and epsilon feature broadly similar viral trajectories as infections with non-VOI/VOCs. Our ability to detect differences in the trajectories was limited by small sample sizes and a high degree of interpersonal variation. The findings should be seen as preliminary, as they are based on fourteen alpha cases and ten epsilon cases. The possibility of an extended clearance time for SARS-CoV-2 VOCs merits further investigation; if borne out by additional data, a longer isolation period than the currently recommended 10 days after symptom onset<sup><xref ref-type="bibr" rid="c8">8</xref></sup> may be needed to effectively interrupt secondary infections by some VOCs. Collection of longitudinal PCR and test positivity data in larger and more diverse cohorts is urgently needed.</p>
+</sec>
+</body>
+<back>
+<sec sec-type="data-availability">
+<title>Data Availability</title>
+<p>Data and code are available online at https://github.com/gradlab/CtTrajectories_AllVariants</p>
+<p>
+<ext-link ext-link-type="uri" xlink:href="https://github.com/gradlab/CtTrajectories_AllVariants">https://github.com/gradlab/CtTrajectories_AllVariants</ext-link>
+</p>
+</sec>
+<ref-list>
+<title>References</title>
+<ref id="c1"><label>1.</label><mixed-citation publication-type="website"><collab>Centers for Disease Control and Prevention</collab>. <source>COVID Data Tracker. Published</source> <year>2021</year>. Accessed <date-in-citation content-type="access-date">May 20, 2021</date-in-citation>. <ext-link ext-link-type="uri" xlink:href="https://covid.cdc.gov/covid-data-tracker/">https://covid.cdc.gov/covid-data-tracker/</ext-link></mixed-citation></ref>
+<ref id="c2"><label>2.</label><mixed-citation publication-type="journal"><string-name><surname>Galloway</surname> <given-names>SE</given-names></string-name>, <string-name><surname>Paul</surname> <given-names>P</given-names></string-name>, <string-name><surname>MacCannell</surname> <given-names>DR</given-names></string-name>, <string-name><surname>Johansson</surname> <given-names>MA</given-names></string-name>, <string-name><surname>Brooks</surname> <given-names>JT</given-names></string-name>, <string-name><surname>MacNeil</surname> <given-names>A</given-names></string-name>, <etal>et al.</etal> <article-title>Emergence of SARS-CoV-2 B.1.1.7 Lineage &#x2014; United States, December 29, 2020&#x2013; January 12, 2021</article-title>. <source>MMWR Morb Mortal Wkly Rep</source>. <year>2021</year>;<volume>70</volume>(<issue>3</issue>):<fpage>95</fpage>&#x2013;<lpage>99</lpage>. doi:<pub-id pub-id-type="doi">10.15585/mmwr.mm7003e2</pub-id></mixed-citation></ref>
+<ref id="c3"><label>3.</label><mixed-citation publication-type="journal"><string-name><surname>Yi</surname> <given-names>C</given-names></string-name>, <string-name><surname>Sun</surname> <given-names>X</given-names></string-name>, <string-name><surname>Ye</surname> <given-names>J</given-names></string-name>, <string-name><surname>Ding</surname> <given-names>L</given-names></string-name>, <string-name><surname>Liu</surname> <given-names>M</given-names></string-name>, <string-name><surname>Yang</surname> <given-names>Z</given-names></string-name>, <etal>et al.</etal> <article-title>Key residues of the receptor binding motif in the spike protein of SARS-CoV-2 that interact with ACE2 and neutralizing antibodies</article-title>. <source>Cell Mol Immunol</source>. <year>2020</year>;<volume>17</volume>(<issue>6</issue>):<fpage>621</fpage>&#x2013;<lpage>630</lpage>. doi:<pub-id pub-id-type="doi">10.1038/s41423-020-0458-z</pub-id></mixed-citation></ref>
+<ref id="c4"><label>4.</label><mixed-citation publication-type="other"><string-name><surname>Deng</surname> <given-names>X</given-names></string-name>, <string-name><surname>Garcia-Knight</surname> <given-names>MA</given-names></string-name>, <string-name><surname>Khalid</surname> <given-names>MM</given-names></string-name>, <string-name><surname>Servellita</surname> <given-names>V</given-names></string-name>, <string-name><surname>Wang</surname> <given-names>C</given-names></string-name>, <string-name><surname>Morris</surname> <given-names>MK</given-names></string-name>, <etal>et al.</etal> <article-title>Transmission, infectivity, and antibody neutralization of an emerging SARS-CoV-2 variant in California carrying a L452R spike protein mutation</article-title>. <source>medRxiv. Published online</source> <year>2021</year>.</mixed-citation></ref>
+<ref id="c5"><label>5.</label><mixed-citation publication-type="other"><string-name><surname>Kissler</surname> <given-names>SM</given-names></string-name>, <string-name><surname>Fauver</surname> <given-names>JR</given-names></string-name>, <string-name><surname>Mack</surname> <given-names>C</given-names></string-name>, <string-name><surname>Olesen</surname> <given-names>SW</given-names></string-name>, <string-name><surname>Tai</surname> <given-names>C</given-names></string-name>, <string-name><surname>Shiue</surname> <given-names>KY</given-names></string-name>, <etal>et al.</etal> <article-title>SARS-CoV-2 viral dynamics in acute infections</article-title>. <source>medRxiv. Published online</source> <year>2020</year>:<fpage>1</fpage>&#x2013;<lpage>13</lpage>. doi:<pub-id pub-id-type="doi">10.1101/2020.10.21.20217042</pub-id></mixed-citation></ref>
+<ref id="c6"><label>6.</label><mixed-citation publication-type="book"><string-name><surname>Conover</surname> <given-names>WJ</given-names></string-name>. <source>Practical Nonparametric Statistics</source>. <publisher-name>John Wiley &#x0026; Sons</publisher-name>; <year>1971</year>.</mixed-citation></ref>
+<ref id="c7"><label>7.</label><mixed-citation publication-type="website"><string-name><surname>Kissler</surname> <given-names>SM</given-names></string-name>. <source>Github Repository: CtTrajectories_B117. Published</source> <year>2021</year>. Accessed <date-in-citation content-type="access-date">June 14, 2021</date-in-citation>. <ext-link ext-link-type="uri" xlink:href="https://github.com/gradlab/CtTrajectories_AllVariants">https://github.com/gradlab/CtTrajectories_AllVariants</ext-link></mixed-citation></ref>
+<ref id="c8"><label>8.</label><mixed-citation publication-type="website"><collab>Centers for Disease Control and Prevention</collab>. <source>Duration of Isolation and Precautions for Adults with COVID-19. COVID-19</source>. Published <year>2020</year>. Accessed <date-in-citation content-type="access-date">February 8, 2020</date-in-citation>. <ext-link ext-link-type="uri" xlink:href="https://www.cdc.gov/coronavirus/2019-ncov/hcp/duration-isolation.html">https://www.cdc.gov/coronavirus/2019-ncov/hcp/duration-isolation.html</ext-link></mixed-citation></ref>
+<ref id="c9"><label>9.</label><mixed-citation publication-type="website"><collab>United States Food and Drug Administration</collab>. <source>Emergency Use Authorization for TaqPath COVID-19 Combo Kit</source>.; <year>2020</year>. <ext-link ext-link-type="uri" xlink:href="https://www.fda.gov/media/136113/download">https://www.fda.gov/media/136113/download</ext-link></mixed-citation></ref>
+<ref id="c10"><label>10.</label><mixed-citation publication-type="other"><string-name><surname>Loman</surname> <given-names>N</given-names></string-name>, <string-name><surname>Rowe</surname> <given-names>W</given-names></string-name>, <string-name><surname>Rambaut</surname> <given-names>A.</given-names></string-name> <source>nCoV-2019 novel coronavirus bioinformatics protocol</source>.</mixed-citation></ref>
+<ref id="c11"><label>11.</label><mixed-citation publication-type="website"><collab>Illumina</collab>. <source>Illumina COVIDSeq Test Instructions for Use</source>.; <year>2021</year>. <ext-link ext-link-type="uri" xlink:href="https://www.fda.gov/media/138776/download">https://www.fda.gov/media/138776/download</ext-link></mixed-citation></ref>
+<ref id="c12"><label>12.</label><mixed-citation publication-type="website"><collab>Illumina</collab>. <source>NextSeq 550 System Documentation</source>. Published <year>2021</year>. Accessed <date-in-citation content-type="access-date">June 10, 2021</date-in-citation>. <ext-link ext-link-type="uri" xlink:href="https://support.illumina.com/sequencing/sequencing_instruments/nextseq-550/documentation.html">https://support.illumina.com/sequencing/sequencing_instruments/nextseq-550/documentation.html</ext-link></mixed-citation></ref>
+<ref id="c13"><label>13.</label><mixed-citation publication-type="other"><collab>BaseSpace Labs</collab>. <source>DRAGEN COVID Lineage. Published online</source> <year>2021</year>.</mixed-citation></ref>
+<ref id="c14"><label>14.</label><mixed-citation publication-type="journal"><string-name><surname>Rambaut</surname> <given-names>A</given-names></string-name>, <string-name><surname>Holmes</surname> <given-names>EC</given-names></string-name>, <string-name><surname>O&#x2019;Toole</surname> <given-names>&#x00C1;</given-names></string-name>, <string-name><surname>Hill</surname> <given-names>V</given-names></string-name>, <string-name><surname>McCrone</surname> <given-names>JT</given-names></string-name>, <string-name><surname>Ruis</surname> <given-names>C</given-names></string-name>, <etal>et al.</etal> <article-title>A dynamic nomenclature proposal for SARS-CoV-2 lineages to assist genomic epidemiology</article-title>. <source>Nat Microbiol</source>. <year>2020</year>;<volume>5</volume>(<issue>11</issue>):<fpage>1403</fpage>&#x2013;<lpage>1407</lpage>. doi:<pub-id pub-id-type="doi">10.1038/s41564-020-0770-5</pub-id></mixed-citation></ref>
+<ref id="c15"><label>15.</label><mixed-citation publication-type="website"><string-name><surname>Aksamentov</surname> <given-names>I</given-names></string-name>, <string-name><surname>Neher</surname> <given-names>R.</given-names></string-name> <source>NextClade</source>. Published <year>2021</year>. Accessed <date-in-citation content-type="access-date">June 10, 2021</date-in-citation>. <ext-link ext-link-type="uri" xlink:href="https://clades.nextstrain.org/">https://clades.nextstrain.org/</ext-link></mixed-citation></ref>
+<ref id="c16"><label>16.</label><mixed-citation publication-type="journal"><string-name><surname>Kudo</surname> <given-names>E</given-names></string-name>, <string-name><surname>Israelow</surname> <given-names>B</given-names></string-name>, <string-name><surname>Vogels</surname> <given-names>CBF</given-names></string-name>, <string-name><surname>Lu</surname> <given-names>P</given-names></string-name>, <string-name><surname>Wyllie</surname> <given-names>AL</given-names></string-name>, <string-name><surname>Tokuyama</surname> <given-names>M</given-names></string-name>, <etal>et al.</etal> <article-title>Detection of SARS-CoV-2 RNA by multiplex RT-qPCR. Sugden B</article-title>, ed. <source>PLOS Biol</source>. <year>2020</year>;<volume>18</volume>(<issue>10</issue>):<fpage>e3000867</fpage>. doi:<pub-id pub-id-type="doi">10.1371/journal.pbio.3000867</pub-id></mixed-citation></ref>
+<ref id="c17"><label>17.</label><mixed-citation publication-type="other"><string-name><surname>Vogels</surname> <given-names>C</given-names></string-name>, <string-name><surname>Fauver</surname> <given-names>J</given-names></string-name>, <string-name><surname>Ott</surname> <given-names>IM</given-names></string-name>, <string-name><surname>Grubaugh</surname> <given-names>N.</given-names></string-name> <source>Generation of SARS-COV-2 RNA Transcript Standards for QRT-PCR Detection Assays</source>.; <year>2020</year>. doi:<pub-id pub-id-type="doi">10.17504/protocols.io.bdv6i69e</pub-id></mixed-citation></ref>
+<ref id="c18"><label>18.</label><mixed-citation publication-type="other"><string-name><surname>Cleary</surname> <given-names>B</given-names></string-name>, <string-name><surname>Hay</surname> <given-names>JA</given-names></string-name>, <string-name><surname>Blumenstiel</surname> <given-names>B</given-names></string-name>, <string-name><surname>Gabriel</surname> <given-names>S</given-names></string-name>, <string-name><surname>Regev</surname> <given-names>A</given-names></string-name>, <string-name><surname>Mina</surname> <given-names>MJ</given-names></string-name>. <article-title>Efficient prevalence estimation and infected sample identification with group testing for SARS-CoV-2</article-title>. <source>medRxiv. Published online</source> <year>2020</year>.</mixed-citation></ref>
+<ref id="c19"><label>19.</label><mixed-citation publication-type="journal"><string-name><surname>Tom</surname> <given-names>MR</given-names></string-name>, <string-name><surname>Mina</surname> <given-names>MJ</given-names></string-name>. <article-title>To Interpret the SARS-CoV-2 Test, Consider the Cycle Threshold Value</article-title>. <source>Clin Infect Dis</source>. <year>2020</year>;<volume>02115</volume>(Xx):<fpage>1</fpage>&#x2013;<lpage>3</lpage>. doi:<pub-id pub-id-type="doi">10.1093/cid/ciaa619</pub-id></mixed-citation></ref>
+<ref id="c20"><label>20.</label><mixed-citation publication-type="journal"><string-name><surname>Carpenter</surname> <given-names>B</given-names></string-name>, <string-name><surname>Gelman</surname> <given-names>A</given-names></string-name>, <string-name><surname>Hoffman</surname> <given-names>MD</given-names></string-name>, <string-name><surname>Lee</surname> <given-names>D</given-names></string-name>, <string-name><surname>Goodrich</surname> <given-names>B</given-names></string-name>, <string-name><surname>Betancourt</surname> <given-names>M</given-names></string-name>, <etal>et al.</etal> <article-title>Stan : A Probabilistic Programming Language</article-title>. <source>J Stat Softw</source>. <year>2017</year>;<volume>76</volume>(<issue>1</issue>). doi:<pub-id pub-id-type="doi">10.18637/jss.v076.i01</pub-id></mixed-citation></ref>
+<ref id="c21"><label>21.</label><mixed-citation publication-type="journal"><collab>R Development Core Team R</collab>. <source>R: A Language and Environment for Statistical Computing. Team RDC, ed. R Found Stat Comput</source>. <year>2011</year>;<volume>1</volume>(2.11.1):<fpage>409</fpage>. doi:<pub-id pub-id-type="doi">10.1007/978-3-540-74686-7</pub-id></mixed-citation></ref>
+</ref-list>
+<sec id="s2">
+<title>Supplementary Appendix</title>
+<sec id="s2a">
+<title>Ethics</title>
+<p>Residual de-identified viral transport media from anterior nares and oropharyngeal swabs collected from players, staff, vendors, and associated household members from a professional sports league were obtained from BioReference Laboratories. In accordance with the guidelines of the Yale Human Investigations Committee, this work with de-identified samples was approved for research not involving human subjects by the Yale Internal Review Board (HIC protocol # 2000028599). This project was designated exempt by the Harvard IRB (IRB20-1407).</p>
+</sec>
+<sec id="s2b">
+<title>Study population</title>
+<p>The data reported here represent a convenience sample including team staff, players, arena staff, and other vendors (e.g., transportation, facilities maintenance, and food preparation) affiliated with a professional sports league. Clinical samples were obtained by combined swabs of the anterior nares and oropharynx administered by a trained provider. Viral concentration was measured using the cycle threshold (Ct) according to the Roche cobas target 1 assay. For an initial pool of 589 participants who first tested positive for SARS-CoV-2 infection during the study period (between November 28<sup>th</sup>, 2020 and May 4<sup>th</sup>, 2021), a diagnosis of &#x201C;novel&#x201D; or &#x201C;persistent&#x201D; infection was recorded. &#x201C;Novel&#x201D; denoted a likely new infection while &#x201C;persistent&#x201D; indicated the presence of virus in a clinically recovered individual. A total of 69 individuals (90&#x0025; male) had novel infections that met our inclusion criteria: at least five positive PCR tests (Ct &#x003C; 40), at least one negative PCR test (Ct = 40), at least one test with Ct &#x003C; 32, and a genetic lineage of either B.1.1.7, B.1.429, or non-variant of interest/non-variant of concern (that is, we excluded lineages B.1.427, P.1, B.1.351, B.1.526, B.1.526.1, B.1.526.2, and P.2, of which there were 8 infections in total) as confirmed by whole genome sequencing. Fourteen of the individuals who met the inclusion criteria were infected with B.1.1.7 (alpha) and ten were infected with B.1.429 (epsilon).</p>
+</sec>
+<sec id="s2c">
+<title>Genome sequencing and lineage assignments</title>
+<p>RNA was extracted and confirmed as SARS-CoV-2 positive by RT-qPCR with the Thermo Fisher TaqPath SARS-CoV-2 assay.<sup><xref ref-type="bibr" rid="c9">9</xref></sup> Next Generation Sequencing with the Illumina COVIDSeq ARTIC primer set<sup><xref ref-type="bibr" rid="c10">10</xref></sup> was used for viral amplification. Library preparation was performed using the amplicon-based Illumina COVIDseq Test v03<sup><xref ref-type="bibr" rid="c11">11</xref></sup> and sequenced 2&#x00D7;74 on Illumina NextSeq 550 following the protocol as described in Illumina&#x2019;s documentation.<sup><xref ref-type="bibr" rid="c12">12</xref></sup> The resulting FASTQs were processed and analyzed on Illumina BaseSpace Labs using the Illumina DRAGEN COVID Lineage Application;<sup><xref ref-type="bibr" rid="c13">13</xref></sup> versions included are 3.5.0, 3.5.1, 3.5.2, and 3.5.3. The DRAGEN COVID Lineage pipeline was run with default parameters recommended by Illumina. Samples were considered SARS-COV-2 positive if at least 5 viral amplicon targets were detected at 20x coverage. Each SARS-COV-2 positive sample underwent lineage assignment and phylogenetics analysis using the most updated version of Pangolin<sup><xref ref-type="bibr" rid="c14">14</xref></sup> and NextClade,<sup><xref ref-type="bibr" rid="c15">15</xref></sup> respectively.</p>
+</sec>
+<sec id="s2d">
+<title>Converting Ct values to viral genome equivalents</title>
+<p>To convert Ct values to viral genome equivalents, we first converted the Roche cobas target 1 Ct values to equivalent Ct values on a multiplexed version of the RT-qPCR assay from the US Centers for Disease Control and Prevention.<sup><xref ref-type="bibr" rid="c16">16</xref></sup> We did this following our previously described methods.<sup><xref ref-type="bibr" rid="c5">5</xref></sup> Briefly, we adjusted the Ct values using the best-fit linear regression between previously collected Roche cobas target 1 Ct values and CDC multiplex Ct values using the following regression equation:
+<disp-formula id="eqnS1">
+<alternatives><graphic xlink:href="21251535v2_eqnS1.gif"/></alternatives>
+</disp-formula>
+Here, <italic>y</italic><sub><italic>i</italic></sub> denotes the <italic>i</italic><sup><italic>th</italic></sup> Ct value from the CDC multiplex assay, <italic>x</italic><sub><italic>i</italic></sub> denotes the <italic>i</italic><sup><italic>th</italic></sup> Ct value from the Roche cobas target 1 test, and <italic>&#x03B5;</italic><sub><italic>i</italic></sub> is an error term with mean 0 and constant variance across all samples. The coefficient values are <italic>&#x03B2;</italic><sub><italic>0</italic></sub> = &#x2013;6.25 and <italic>&#x03B2;</italic><sub><italic>1</italic></sub> = 1.34.</p>
+<p>Ct values were fitted to a standard curve in order to convert Ct value data to RNA copies. Synthetic T7 RNA transcripts corresponding to a 1,363 b.p. segment of the SARS-CoV-2 nucleocapsid gene were serially diluted from 10<sup>6</sup>-10<sup>0</sup> RNA copies/&#x03BC;l in duplicate to generate a standard curve<sup><xref ref-type="bibr" rid="c17">17</xref></sup> <bold>(<xref rid="tblS4" ref-type="table">Supplementary Table 4</xref>)</bold>. The average Ct value for each dilution was used to calculate the slope (&#x2212;3.60971) and intercept (40.93733) of the linear regression of Ct on log-10 transformed standard RNA concentration, and Ct values from subsequent RT-qPCR runs were converted to RNA copies using the following equation:
+<disp-formula id="eqnS2">
+<alternatives><graphic xlink:href="21251535v2_eqnS2.gif"/></alternatives>
+</disp-formula>
+Here, [RNA] represents the RNA copies /ml. The log<sub>10</sub>(250) term accounts for the extraction (300 &#x03BC;l) and elution (75 &#x03BC;l) volumes associated with processing the clinical samples as well as the 1,000 &#x03BC;l/ml unit conversion.</p>
+</sec>
+<sec id="s2e">
+<title>Model fitting</title>
+<p>For the statistical analysis, we removed any sequences of 3 or more consecutive negative tests to avoid overfitting to these trivial values. Following our previously described methods,<sup><xref ref-type="bibr" rid="c5">5</xref></sup> we assumed that the viral concentration trajectories consisted of a proliferation phase, with exponential growth in viral RNA concentration, followed by a clearance phase characterized by exponential decay in viral RNA concentration.<sup><xref ref-type="bibr" rid="c18">18</xref></sup> Since Ct values are roughly proportional to the negative logarithm of viral concentration<sup><xref ref-type="bibr" rid="c19">19</xref></sup>, this corresponds to a linear decrease in Ct followed by a linear increase. We therefore constructed a piecewise-linear regression model to estimate the peak Ct value, the time from infection onset to peak (<italic>i</italic>.<italic>e</italic>. the duration of the proliferation stage), and the time from peak to infection resolution (<italic>i</italic>.<italic>e</italic>. the duration of the clearance stage). The trajectory may be represented by the equation
+<disp-formula id="eqnS3">
+<alternatives><graphic xlink:href="21251535v2_eqnS3.gif"/></alternatives>
+</disp-formula>
+Here, E[<italic>Ct(t)</italic>] represents the expected value of the Ct at time <italic>t</italic>, &#x201C;l.o.d&#x201D; represents the RT-qPCR limit of detection, <italic>&#x03B4;</italic> is the absolute difference in Ct between the limit of detection and the peak (lowest) Ct, and <italic>t</italic><sub><italic>o</italic></sub>, <italic>t</italic><sub><italic>p</italic></sub>, and <italic>t</italic><sub><italic>r</italic></sub> are the onset, peak, and recovery times, respectively.</p>
+<p>Before fitting, we re-parametrized the model using the following definitions:</p>
+<list list-type="bullet">
+<list-item><p>&#x0394;<italic>Ct(t)</italic> = l.o.d. &#x2013; <italic>Ct(t)</italic> is the difference between the limit of detection and the observed Ct value at time <italic>t</italic>.</p></list-item>
+<list-item><p><italic>&#x03C9;</italic><sub><italic>p</italic></sub> <italic>= t</italic><sub><italic>p</italic></sub> <italic>-t</italic><sub><italic>o</italic></sub> is the duration of the proliferation stage.</p></list-item>
+<list-item><p><italic>&#x03C9;</italic><sub><italic>r</italic></sub> <italic>= t</italic><sub><italic>r</italic></sub> <italic>-t</italic><sub><italic>p</italic></sub> is the duration of the clearance stage.</p></list-item>
+</list>
+<p>We constrained 0.25 &#x2264; <italic>&#x03C9;</italic><sub><italic>p</italic></sub> <italic>&#x2264;</italic> 14 days and 2 &#x2264; <italic>&#x03C9;</italic><sub><italic>r</italic></sub> <italic>&#x2264;</italic> 30 days to prevent inferring unrealistically small or large values for these parameters for trajectories that were missing data prior to the peak and after the peak, respectively. We also constrained 0 &#x2264; <italic>&#x03B4; &#x2264;</italic> 40 as Ct values can only take values between 0 and the limit of detection (40).</p>
+<p>We next assumed that the observed &#x0394;<italic>Ct(t)</italic> could be described the following mixture model:
+<disp-formula id="eqnS4">
+<alternatives><graphic xlink:href="21251535v2_eqnS4.gif"/></alternatives>
+</disp-formula>
+where E[&#x0394;<italic>Ct(t)</italic>] = l.o.d. - E[<italic>Ct(t)</italic>] and <italic>&#x03BB;</italic> is the sensitivity of the q-PCR test, which we fixed at 0.99. The bracket term on the right-hand side of the equation denotes that the distribution was truncated to ensure Ct values between 0 and the limit of detection. This model captures the scenario where most observed Ct values are normally distributed around the expected trajectory with standard deviation <italic>&#x03C3;(t)</italic>, yet there is a small (1&#x0025;) probability of an exponentially distributed false negative near the limit of detection. The log(10) rate of the exponential distribution was chosen so that 90&#x0025; of the mass of the distribution sat below 1 Ct unit and 99&#x0025; of the distribution sat below 2 Ct units, ensuring that the distribution captures values distributed at or near the limit of detection. We did not estimate values for <italic>&#x03BB;</italic> or the exponential rate because they were not of interest in this study; we simply needed to include them to account for some small probability mass that persisted near the limit of detection to allow for the possibility of false negatives.</p>
+<p>We used a hierarchical structure to describe the distributions of <italic>&#x03C9;</italic><sub><italic>p</italic></sub>, <italic>&#x03C9;</italic><sub><italic>r</italic></sub>, and <italic>&#x03B4;</italic> for each individual based on their respective population means <italic>&#x03BC;</italic><sub><italic>&#x03C9;p</italic></sub>, <italic>&#x03BC;</italic><sub><italic>&#x03C9;r</italic></sub>, and <italic>&#x03BC;</italic><sub><italic>&#x03B4;</italic></sub> and population standard deviations &#x03C3;<sub>&#x03C9;p</sub>, &#x03C3;<sub>&#x03C9;r</sub>, and &#x03C3;<sub>&#x03B4;</sub> such that
+<disp-formula id="eqnS5">
+<alternatives><graphic xlink:href="21251535v2_eqnS5.gif"/></alternatives>
+</disp-formula>
+We inferred population means (<italic>&#x03BC;</italic><sub><bold><italic>&#x2022;</italic></bold></sub>) separately for individuals infected with alpha, epsilon, and non-VOI/VOCs. We used a Hamiltonian Monte Carlo fitting procedure implemented in Stan (version 2.24)<sup><xref ref-type="bibr" rid="c20">20</xref></sup> and R (version 3.6.2)<sup><xref ref-type="bibr" rid="c21">21</xref></sup> to estimate the individual-level parameters <italic>&#x03C9;</italic><sub><italic>p</italic></sub>, <italic>&#x03C9;</italic><sub><italic>r</italic></sub>, <italic>&#x03B4;</italic>, and <italic>t</italic><sub><italic>p</italic></sub> as well as the population-level parameters <italic>&#x03C3;&#x002A;, &#x03BC;</italic><sub><italic>&#x03C9;p</italic></sub>, <italic>&#x03BC;</italic><sub><italic>&#x03C9;r</italic></sub>, <italic>&#x03BC;</italic><sub><italic>&#x03B4;</italic></sub>, <italic>&#x03C3;</italic><sub><italic>&#x03C9;p</italic></sub>, <italic>&#x03C3;</italic><sub><italic>&#x03C9;r</italic></sub>, and <italic>&#x03C3;</italic><sub><italic>&#x03B4;</italic></sub>. We used the following priors:</p>
+</sec>
+<sec id="s2f">
+<title>Hyperparameters</title>
+<p>
+<disp-formula id="eqnS6">
+<alternatives><graphic xlink:href="21251535v2_eqnS6.gif"/></alternatives>
+</disp-formula>
+<disp-formula id="eqnS7">
+<alternatives><graphic xlink:href="21251535v2_eqnS7.gif"/></alternatives>
+</disp-formula>
+<disp-formula id="eqnS8">
+<alternatives><graphic xlink:href="21251535v2_eqnS8.gif"/></alternatives>
+</disp-formula>
+<disp-formula id="eqnS9">
+<alternatives><graphic xlink:href="21251535v2_eqnS9.gif"/></alternatives>
+</disp-formula>
+The values in square brackets denote truncation bounds for the distributions. We chose a vague half-Cauchy prior with scale 5 for the observation variance <italic>&#x03C3;&#x002A;</italic>. The priors for the population mean values (<italic>&#x03BC;</italic><sub><bold><italic>&#x2022;</italic></bold></sub>) are normally distributed priors spanning the range of allowable values for that parameter; this prior is vague but expresses a mild preference for values near the center of the allowable range. The priors for the population standard deviations (<italic>&#x03C3;</italic><sub><bold><italic>&#x2022;</italic></bold></sub>) are half Cauchy-distributed with scale chosen so that 90&#x0025; of the distribution sits below the maximum value for that parameter; this prior is vague but expresses a mild preference for standard deviations close to 0.</p>
+<p>We ran four MCMC chains for 1,000 iterations each with a target average proposal acceptance probability of 0.8. The first half of each chain was discarded as the warm-up. The Gelman R-hat statistic was less than 1.1 for all parameters. This indicates good overall mixing of the chains. There were no divergent iterations, indicating good exploration of the parameter space. The posterior distributions for <italic>&#x03BC;</italic><sub><italic>&#x03B4;</italic></sub>, <italic>&#x03BC;</italic><sub><italic>&#x03C9;p</italic></sub>, and <italic>&#x03BC;</italic><sub><italic>&#x03C9;r</italic></sub>, were estimated separately for individuals infected with alpha, epsilon, and non-VOI/VOCs. These are depicted in <bold><xref rid="fig1" ref-type="fig">Figure 1</xref></bold> (main text). Draws from the individual posterior viral trajectory distributions are depicted in <bold><xref rid="figS1" ref-type="fig">Supplementary Figures 1</xref>-<xref ref-type="fig" rid="figS2">2</xref></bold>. The mean posterior viral trajectories for each individual are depicted in <bold><xref rid="figS3" ref-type="fig">Supplementary Figure 3</xref></bold>.</p>
+</sec>
+<sec id="s2g">
+<title>Assessing sensitivity to different priors</title>
+<p>To ensure that our findings were not overly influenced by the prior distributions, we re-fit the model using two different sets of priors. The first set used the posterior population means from a previous study in a similar population as the prior values for <italic>&#x03BC;</italic><sub><italic>&#x03C9;p</italic></sub>, <italic>&#x03BC;</italic><sub><italic>&#x03C9;r</italic></sub>, and <italic>&#x03BC;</italic><sub><italic>&#x03B4;</italic></sub>., These priors were defined by
+<disp-formula id="eqnS10">
+<alternatives><graphic xlink:href="21251535v2_eqnS10.gif"/></alternatives>
+</disp-formula>
+The second set used unrealistically low prior means for <italic>&#x03BC;</italic><sub><italic>&#x03C9;p</italic></sub>, <italic>&#x03BC;</italic><sub><italic>&#x03C9;r</italic></sub>, and <italic>&#x03BC;</italic><sub><italic>&#x03B4;</italic></sub> to verify that the suggestion of longer clearance times for alpha and epsilon infections was informed by the data and not solely by a biased prior distribution. These priors were defined by
+<disp-formula id="eqnS11">
+<alternatives><graphic xlink:href="21251535v2_eqnS11.gif"/></alternatives>
+</disp-formula>
+Note that we updated the prior means but kept the prior variances at their original wide values to avoid encoding over-confidence in the priors into the model. The posterior population means for these new sets of priors are depicted in <bold><xref rid="figS4" ref-type="fig">Supplementary Figures 4</xref>-5</bold> (compare to <bold><xref rid="fig1" ref-type="fig">Figure 1</xref></bold>). Overall, the findings were consistent across choices of prior.</p>
+<table-wrap id="tblS1" orientation="portrait" position="float">
+<label>Supplementary Table 1.</label>
+<caption><title>Characteristics of the study population.</title>
+<p>Number and percent (in parentheses) of individuals in the study population by age group and reported symptoms, stratified by variant.</p></caption>
+<graphic xlink:href="21251535v2_tblS1.tif"/>
+</table-wrap>
+<table-wrap id="tblS2" orientation="portrait" position="float">
+<label>Supplementary Table 2.</label>
+<caption><title>Posterior population viral trajectory parameters for SARS-CoV-2 infections with alpha, epsilon, and non-variants of interest/variants of concern.</title>
+<p>Reported values represent the posterior mean and 95&#x0025; credible intervals (brackets) for each parameter.</p></caption>
+<graphic xlink:href="21251535v2_tblS2.tif"/>
+</table-wrap>
+<table-wrap id="tblS3" orientation="portrait" position="float">
+<label>Supplementary Table 3.</label>
+<caption><title>Summary of individual-level viral trajectory parameter means for SARS-CoV-2 infections with alpha, epsilon, and non-variants of interest/variants of concern.</title>
+<p>Reported values represent the median, inner quartile range, and full range of individual-level posterior means for each parameter.</p></caption>
+<graphic xlink:href="21251535v2_tblS3.tif"/>
+</table-wrap>
+<table-wrap id="tblS4" orientation="portrait" position="float">
+<label>Supplementary Table 4.</label>
+<caption><title>Standard curve relationship between virus RNA copies and Ct values.</title>
+<p>Synthetic T7 RNA transcripts corresponding to a 1,363 base pair segment of the SARS-CoV-2 nucleocapsid gene were serially diluted from 10<sup>6</sup>-10<sup>0</sup> and evaluated in duplicate with RT-qPCR. The best-fit linear regression of the average Ct on the log10-transformed standard values had slope -3.60971 and intercept 40.93733 (R<sup>2</sup> = 0.99).</p></caption>
+<graphic xlink:href="21251535v2_tblS4.tif"/>
+</table-wrap>
+<fig id="figS1" position="float" fig-type="figure">
+<label>Supplementary Figure 1.</label>
+<caption><title>Ct values and estimated trajectories for alpha variant and non-VOI/VOC SARS-CoV-2 infections.</title>
+<p>Each pane depicts the recorded Ct values (points) and derived log-10 genome equivalents per ml (log(ge/ml)) for a single person during the study period. Points along the horizontal axis represent negative tests. Time is indexed in days since the minimum recorded Ct value (maximum viral concentration). Individuals with confirmed alpha infections are depicted in red. Non-VOI/VOC infections are depicted in blue. Lines depict 100 draws from the posterior distribution for each person&#x2019;s viral trajectory.</p></caption>
+<graphic xlink:href="21251535v2_figS1.tif"/>
+</fig>
+<fig id="figS2" position="float" fig-type="figure">
+<label>Supplementary Figure 2.</label>
+<caption><title>Ct values and estimated trajectories for epsilon variant and non-VOI/VOC SARS-CoV-2 infections.</title>
+<p>Each pane depicts the recorded Ct values (points) and derived log-10 genome equivalents per ml (log(ge/ml)) for a single person during the study period. Points along the horizontal axis represent negative tests. Time is indexed in days since the minimum recorded Ct value (maximum viral concentration). Individuals with confirmed epsilon infections are depicted in red. Non-VOI/VOC infections are depicted in blue. Lines depict 100 draws from the posterior distribution for each person&#x2019;s viral trajectory.</p></caption>
+<graphic xlink:href="21251535v2_figS2.tif"/>
+</fig>
+<fig id="figS3" position="float" fig-type="figure">
+<label>Supplementary Figure 3.</label>
+<caption><title>Mean posterior viral trajectories for each individual.</title>
+<p>Panel (A) depicts alpha infections (red) against non-VOI/VOC infections (blue). Panel (B) depicts epsilon infections (green) against non-VOI/VOC infec-tions (blue). Trajectories are aligned temporally to have the same peak time.</p></caption>
+<graphic xlink:href="21251535v2_figS3.tif"/>
+</fig>
+<fig id="figS4" position="float" fig-type="figure">
+<label>Supplementary Figure 4.</label>
+<caption><title>Estimated viral trajectory parameters for SARS-CoV-2 infections with alpha, epsilon, and non-variants of interest/non-variants of concern using informative priors.</title>
+<p>Individual posterior means (points) with population means and 95&#x0025; credible intervals (hatched lines) for (A) the mean peak viral concentration, (B) the mean proliferation duration, (C) the mean clearance duration, and (D) the mean total duration of acute infection. Points are jittered horizontally to avoid overlap. Solid lines in panels (E)-(F) depict the mean posterior viral trajectories for alpha infections (red) and epsilon infections (green) respectively, relative to non-VOI/VOC infections (blue), as specified by the population means and credible intervals in (A)-(D). The shaded regions represent 95&#x0025; credible areas for the mean population trajectories. Priors were informed by a previous analysis and are defined in Eq. (S10).</p></caption>
+<graphic xlink:href="21251535v2_figS4.tif"/>
+</fig>
+<fig id="figS5" position="float" fig-type="figure">
+<label>Supplementary Figure 5.</label>
+<caption><title>Estimated viral trajectory parameters for SARS-CoV-2 infections with alpha, epsilon, and non-variants of interest/non-variants of concern using low priors.</title>
+<p>Individual posterior means (points) with population means and 95&#x0025; credible intervals (hatched lines) for (A) the mean peak viral concentration, (B) the mean proliferation duration, (C) the mean clearance duration, and (D) the mean total duration of acute infection. Points are jittered horizontally to avoid overlap. Solid lines in panels (E)-(F) depict the mean posterior viral trajectories for alpha infections (red) and epsilon infections (green) respectively, relative to non-VOI/VOC infections (blue), as specified by the population means and credible intervals in (A)-(D). The shaded regions represent 95&#x0025; credible areas for the mean population trajectories. Priors were chosen to be unrealistically low and are defined in Eq. (S11).</p></caption>
+<graphic xlink:href="21251535v2_figS5.tif"/>
+</fig>
+</sec>
+</sec>
+</back>
+</article>

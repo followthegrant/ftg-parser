@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.2d1 20170631//EN" "JATS-archivearticle1.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" article-type="article" dtd-version="1.2d1" specific-use="production" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="publisher-id">MEDRXIV</journal-id>
+<journal-title-group>
+<journal-title>medRxiv</journal-title>
+<abbrev-journal-title abbrev-type="publisher">medRxiv</abbrev-journal-title>
+</journal-title-group>
+<publisher>
+<publisher-name>Cold Spring Harbor Laboratory</publisher-name>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1101/2021.01.04.20248473</article-id>
+<article-version>1.1</article-version>
+<article-categories>
+<subj-group subj-group-type="hwp-journal-coll">
+<subject>Transplantation</subject>
+</subj-group>
+</article-categories>
+<title-group>
+<article-title>Early prediction of renal graft function: Analysis of a multi-centre, multi-level data set</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author">
+<name><surname>Blazquez-Navarro</surname><given-names>Arturo</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a2">2</xref>
+<xref ref-type="aff" rid="a3">3</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Bauer</surname><given-names>Chris</given-names></name>
+<xref ref-type="aff" rid="a4">4</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Wittenbrink</surname><given-names>Nicole</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Wolk</surname><given-names>Kerstin</given-names></name>
+<xref ref-type="aff" rid="a2">2</xref>
+<xref ref-type="aff" rid="a5">5</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Sabat</surname><given-names>Robert</given-names></name>
+<xref ref-type="aff" rid="a5">5</xref>
+<xref ref-type="aff" rid="a6">6</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Dang-Heine</surname><given-names>Chantip</given-names></name>
+<xref ref-type="aff" rid="a2">2</xref>
+<xref ref-type="aff" rid="a7">7</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Neumann</surname><given-names>Sindy</given-names></name>
+<xref ref-type="aff" rid="a8">8</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Roch</surname><given-names>Toralf</given-names></name>
+<xref ref-type="aff" rid="a2">2</xref>
+<xref ref-type="aff" rid="a3">3</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Wehler</surname><given-names>Patrizia</given-names></name>
+<xref ref-type="aff" rid="a2">2</xref>
+<xref ref-type="aff" rid="a3">3</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Blazquez-Navarro</surname><given-names>Rodrigo</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Olek</surname><given-names>Sven</given-names></name>
+<xref ref-type="aff" rid="a9">9</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Thomusch</surname><given-names>Oliver</given-names></name>
+<xref ref-type="aff" rid="a10">10</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Seitz</surname><given-names>Harald</given-names></name>
+<xref ref-type="aff" rid="a11">11</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Reinke</surname><given-names>Petra</given-names></name>
+<xref ref-type="aff" rid="a2">2</xref>
+<xref ref-type="aff" rid="a12">12</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Hugo</surname><given-names>Christian</given-names></name>
+<xref ref-type="aff" rid="a13">13</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Sawitzki</surname><given-names>Birgit</given-names></name>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author" corresp="yes">
+<name><surname>Babel</surname><given-names>Nina</given-names></name>
+<xref ref-type="aff" rid="a2">2</xref>
+<xref ref-type="aff" rid="a3">3</xref>
+<xref ref-type="author-notes" rid="n1">&#x002A;</xref>
+<xref ref-type="corresp" rid="cor1">&#x2020;</xref>
+</contrib>
+<contrib contrib-type="author" corresp="yes">
+<name><surname>Or-Guil</surname><given-names>Michal</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a14">14</xref>
+<xref ref-type="author-notes" rid="n1">&#x002A;</xref>
+<xref ref-type="corresp" rid="cor1">&#x2020;</xref>
+</contrib>
+<aff id="a1"><label>1</label><institution>Systems Immunology Lab, Department of Biology, Humboldt-Universit&#x00E4;t zu Berlin: Philippstr. 13</institution>, 10115 Berlin, <country>Germany</country></aff>
+<aff id="a2"><label>2</label><institution>Berlin Institute of Health Center for Regenerative Therapies (BCRT): Berlin-Brandenburger Centrum f&#x00FC;r Regenerative Therapien, Charit&#x00E9; &#x2013; Universit&#x00E4;tsmedizin Berlin</institution>, Augustenburger Platz 1, 13353 Berlin, <country>Germany</country></aff>
+<aff id="a3"><label>3</label><institution>Center for Translational Medicine, Universit&#x00E4;tsklinikum der Ruhr-Universit&#x00E4;t Bochum, Medizinische Klinik I: H&#x00F6;lkeskampring 40</institution>, 44625 Herne, <country>Germany</country></aff>
+<aff id="a4"><label>4</label><institution>MicroDiscovery GmbH: Marienburger Str. 1</institution>, 10405 Berlin <country>Germany</country></aff>
+<aff id="a5"><label>5</label><institution>Psoriasis Research and Treatment Center, Institute of Medical Immunology/Department of Dermatology and Allergy, Charit&#x00E9; &#x2013; Universit&#x00E4;tsmedizin Berlin: Charit&#x00E9;platz</institution> 1, 10117 Berlin, <country>Germany</country></aff>
+<aff id="a6"><label>6</label><institution>Interdisciplinary Group of Molecular Immunopathology, Institute of Medical Immunology/Department of Dermatology and Allergy, Charit&#x00E9; &#x2013; Universit&#x00E4;tsmedizin Berlin: Charit&#x00E9;platz 1</institution>, 10117 Berlin, <country>Germany</country></aff>
+<aff id="a7"><label>7</label><institution>Clinical Study Center (CSC), Berlin Institute of Health, and Charit&#x00E9; - Universit&#x00E4;tsmedizin Berlin, Corporate Member of Freie Universit&#x00E4;t Berlin, Humboldt-Universit&#x00E4;t Zu Berlin</institution>, Campus Charit&#x00E9; Mitte, Berlin, <country>Germany</country></aff>
+<aff id="a8"><label>8</label><institution>numares AG: Am Biopark 9</institution>, 93053 Regensburg, <country>Germany</country></aff>
+<aff id="a9"><label>9</label><institution>Ivana T&#x00FC;rbachova Laboratory for Epigenetics, Epiontis GmbH, Precision for Medicine Group: Barbara-McClintock-Stra&#x00DF;e 6</institution>, 12489 Berlin, <country>Germany</country></aff>
+<aff id="a10"><label>10</label><institution>Klinik f&#x00FC;r Allgemein- und Viszeralchirurgie, Universit&#x00E4;tsklinikum Freiburg: Hugstetter Stra&#x00DF;e 55</institution>, 79106 Freiburg, <country>Germany</country></aff>
+<aff id="a11"><label>11</label><institution>Fraunhofer Institute for Cell Therapy and Immunology, Bioanalytics und Bioprocesses: Am M&#x00FC;hlenberg 13 14476 Potsdam-Golm</institution>, <country>Germany</country></aff>
+<aff id="a12"><label>12</label><institution>Berlin Center for Advanced Therapies (BeCAT), Charit&#x00E9; &#x2013; Universit&#x00E4;tsmedizin Berlin: Augustenburger Platz 1</institution>, 13353 Berlin, <country>Germany</country></aff>
+<aff id="a13"><label>13</label><institution>Universit&#x00E4;tsklinikum Carl Gustav Carus, Medizinische Klinik III - Bereich Nephrologie: Fetscherstra&#x00DF;e 74</institution>, 01307 Dresden, <country>Germany</country></aff>
+<aff id="a14"><label>14</label><institution>Institute of Medical Immunology, Charit&#x00E9; &#x2013; Universit&#x00E4;tsmedizin Berlin: Charit&#x00E9;platz 1</institution>, 10117 Berlin, <country>Germany</country></aff>
+</contrib-group>
+<author-notes>
+<corresp id="cor1"><label>&#x2020;</label>Corresponding authors; email: <email>michal.or-guil@charite.de</email></corresp>
+<fn id="n1" fn-type="equal"><label>&#x002A;</label><p>Equal contribution</p></fn>
+</author-notes>
+<pub-date pub-type="epub">
+<year>2021</year>
+</pub-date>
+<elocation-id>2021.01.04.20248473</elocation-id>
+<history>
+<date date-type="received">
+<day>04</day>
+<month>1</month>
+<year>2021</year>
+</date>
+<date date-type="rev-recd">
+<day>04</day>
+<month>1</month>
+<year>2021</year>
+</date>
+<date date-type="accepted">
+<day>05</day>
+<month>1</month>
+<year>2021</year>
+</date>
+</history>
+<permissions>
+<copyright-statement>&#x00A9; 2021, Posted by Cold Spring Harbor Laboratory</copyright-statement>
+<copyright-year>2021</copyright-year>
+<license><license-p>The copyright holder for this pre-print is the author. All rights reserved. The material may not be redistributed, re-used or adapted without the author's permission.</license-p></license>
+</permissions>
+<self-uri xlink:href="20248473.pdf" content-type="pdf" xlink:role="full-text"/>
+<abstract>
+<title>ABSTRACT</title>
+<sec>
+<title>Introduction</title>
+<p>Long-term graft survival rates after renal transplantation are still moderate. We aimed to build an early predictor of an established long-term outcomes marker, the glomerular filtration rate (eGFR) one year post-transplant (eGFR-1y).</p></sec>
+<sec>
+<title>Materials and Methods</title>
+<p>A large cohort of 376 patients was characterized for a multi-level bio-marker panel including gene expression, cytokines, metabolomics and antibody reactivity profiles. Almost one thousand samples from the pre-transplant and early post-transplant period were analysed. Machine learning-based predictors were built employing stacked generalization.</p></sec>
+<sec>
+<title>Results</title>
+<p>Pre-transplant data led to a prediction achieving a Pearson&#x2019;s correlation coefficient of r=0.39 between measured and predicted eGFR-1y. Two weeks post-transplant, the correlation was improved to r=0.63, and at the third month, to r=0.76. eGFR values were remarkably stable throughout the first year post-transplant and were the best estimators of eGFR-1y already two weeks post-transplant. Several markers were associated with eGFR: The cytokine stem cell factor demonstrated a strong negative correlation; and a subset of 19 NMR bins of the urine metabolome data was shown to have potential applications in non-invasive eGFR monitoring. Importantly, we identified the expression of the genes TMEM176B and HMMR as potential prognostic markers for changes in the eGFR.</p></sec>
+<sec>
+<title>Discussion</title>
+<p>Our multi-centre, multi-level data set represents a milestone in the efforts to predict transplant outcome. While an acceptable predictive capacity was achieved, we are still very far from predicting changes in the eGFR precisely. Further studies employing further marker panels are needed in order to establish predictors of eGFR-1y for clinical application; herein, gene expression markers seem to hold the most promise.</p></sec>
+</abstract>
+<counts>
+<page-count count="35"/>
+</counts>
+</article-meta>
+<notes>
+<notes notes-type="competing-interest-statement">
+<title>Competing Interest Statement</title><p>The authors have declared no competing interest.</p></notes>
+<notes notes-type="clinical-trial-statement">
+<title>Clinical Trial</title><p>NCT 00724022</p></notes>
+<notes notes-type="financial-disclosure">
+<title>Funding Statement</title><p>This work was funded by the German Federal Ministry of Education and Research (BMBF), project e:KID (01ZX1312). The funders had no role in data collection, data analysis, data interpretation, writing of the manuscript, or manuscript submission.</p></notes>
+<notes notes-type="disclosures">
+<title>Author Declarations</title><p>I confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.</p><p>Yes</p><p>The details of the IRB/oversight body that provided approval or exemption for the research described are given below:</p><p>We characterized the patient cohort of the randomized, multi-centre Harmony trial (NCT 00724022). The study was carried out in compliance with the Declaration of Helsinki and Good Clinical Practice. The trial was approved by the Ethics Committee of the Gustav Carus Technical University Dresden.</p><p>All necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived.</p><p>Yes</p><p>I understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).</p><p>Yes</p><p>I have followed all appropriate research reporting guidelines and uploaded the relevant EQUATOR Network research reporting checklist(s) and other pertinent material as supplementary files, if applicable.</p><p>Yes</p></notes>
+</notes>
+</front>
+<body>
+<sec id="s1">
+<title>INTRODUCTION</title>
+<p>Long-term outcomes of renal transplantation are still disappointing, with a median graft survival time of around ten years.[<xref ref-type="bibr" rid="c1">1</xref>,<xref ref-type="bibr" rid="c2">2</xref>] Currently, a large effort is being undertaken to determine new risk factors for the outcome of renal transplantation in order to improve therapy and organ allocation.[<xref ref-type="bibr" rid="c3">3</xref>&#x2013;<xref ref-type="bibr" rid="c6">6</xref>] While a number of risk factors have been identified (including HLA mismatch, age of donor or cold ischemia time), they are still not sufficient for a precise prediction of transplant outcome.[3,4,6&#x2013;8] Therefore, machine learning-based risk assessment models are envisaged to assist medical decision-making in patient therapy and eventually improve patient care.[<xref ref-type="bibr" rid="c9">9</xref>]</p>
+<p>The most commonly used end-point for risk assessment models is the incidence of acute rejection.[<xref ref-type="bibr" rid="c10">10</xref>&#x2013;<xref ref-type="bibr" rid="c14">14</xref>] However, acute rejection occurs rather infrequently in renal transplantation and treatments against acute rejection are reasonably effective.[<xref ref-type="bibr" rid="c1">1</xref>,<xref ref-type="bibr" rid="c15">15</xref>&#x2013;<xref ref-type="bibr" rid="c17">17</xref>] The estimated Glomerular Filtration Rate (eGFR) could therefore offer a more appropriate end-point.[<xref ref-type="bibr" rid="c6">6</xref>] In fact, the eGFR one year post-transplant (eGFR-1y) is an accepted marker of long-term transplant outcome.[<xref ref-type="bibr" rid="c18">18</xref>&#x2013;<xref ref-type="bibr" rid="c20">20</xref>] eGFR is an estimate of renal function calculated based on the concentration of serum creatinine and demographic characteristics of the patient; it results from the combined influence of all individual risk factors.[<xref ref-type="bibr" rid="c8">8</xref>,<xref ref-type="bibr" rid="c21">21</xref>] This is the reason why complex predictive markers are needed &#x2013; we cannot expect that only one marker will predict eGFR-1y. However, to our knowledge there exists still no predictive model of eGFR with a sufficient predictive performance for the clinic.</p>
+<p>The goal of this work is to develop a predictive model for the eGFR-1y employing data collected in the pre-transplant and early post-transplant period. Furthermore, we aimed to identify and characterize potential novel markers of the renal function. For this, we have acquired a multi-level biomarker panel with an eminent immunological focus. Importantly, the choice of markers was not based on an explorative multi-omics approach but rather on data known for their mechanistic connection to transplant outcome. The markers used here were already identified as useful in previous studies addressing immunological risk factors of acute transplant rejection.[<xref ref-type="bibr" rid="c22">22</xref>&#x2013;<xref ref-type="bibr" rid="c28">28</xref>]</p>
+<p>The analysis was performed according to the following strategy: First, predictive models of eGFR-1y were calculated for each marker subset and visit. Second, predictive models were combined to provide a final prediction of eGFR-1y. Third, the individual markers of the best predictors were investigated in detail, especially to find out whether these markers were diagnostic (reflecting the renal function at the time of sampling), or prognostic (predicting future changes of the renal function). Finally, a second predictive model was built, using exclusively prognostic markers.</p>
+</sec>
+<sec id="s2">
+<title>MATERIALS AND METHODS</title>
+<sec id="s2a">
+<title>Patient population and monitoring</title>
+<p>We characterized the patient cohort of the randomized, multi-centre Harmony trial (NCT 00724022) for a biomarker panel as part of the e:KID study.[<xref ref-type="bibr" rid="c17">17</xref>] Inclusion criteria were the availability of follow-up data for eGFR-1y, and for at least one of the three study visits. The study was carried out in compliance with the Declaration of Helsinki and Good Clinical Practice. The trial was approved by the Ethics Committee of the Gustav Carus Technical University Dresden.</p>
+<p>As published before, the patients of the patient cohort were treated with a quadruple (arm A) or triple (arms B and C) immunosuppressive therapy.[<xref ref-type="bibr" rid="c17">17</xref>] Shortly, arm A received a basiliximab induction therapy and maintenance therapy consisting of tacrolimus (Advagraf&#x00AE;, Astellas), mycophenolate mofetil (MMF) and corticosteroids. Arm B received the same induction and maintenance therapy, with corticosteroids withdrawn at day 8 post-transplant. Finally, induction therapy for arm C consisted of rabbit anti-thymocyte globulin (ATG), with the same maintenance therapy as arm B. Furthermore, based on their risk constellation patients received an anti-cytomegalovirus prophylaxis consisting of valganciclovir.[<xref ref-type="bibr" rid="c29">29</xref>]</p>
+<p>Patients were monitored for eGFR during the first post-transplant year, calculated using the CKD-EPI formula and measured in mL&#x00B7;min<sup>-1</sup>&#x00B7;1.73 m<sup>-2</sup>.[<xref ref-type="bibr" rid="c21">21</xref>] eGFR was assessed at regular intervals: 2nd week, 1st month, 2nd month, 3rd month, 6th month, 9th month, and 12th month post-transplant.</p>
+</sec>
+<sec id="s2b">
+<title>Characterization of the patient cohort by a biomarker panel</title>
+<p>The patients were characterized by a biomarker panel consisting of five marker subsets (<xref rid="tbl1" ref-type="table">Table 1</xref>) at three visits: pre-transplant (pre-Tx), two weeks post-transplant (2w) and three months post-transplant (3m). For a detailed description of the methods employed in the characterization, see the Supplementary Methods.</p>
+<table-wrap id="tbl1" orientation="portrait" position="float">
+<label>Table 1.</label>
+<caption><p>Description of the five subsets of the biomarker panel of the e:KID study. The number and list of the markers corresponds to those with a data availability such that they could be employed for prediction for at least one visit (for more details see Statistical analysis: Prediction of eGFR). For the definition of the gene expression subset abbreviations, see the Supplementary Methods.</p></caption>
+<graphic xlink:href="20248473v1_tbl1.tif"/>
+<graphic xlink:href="20248473v1_tbl1a.tif"/>
+</table-wrap>
+<p>Shortly, the cytokine concentration levels were measured by ELISA. Gene expression markers were selected based on their role in operational tolerance or rejection and measured employing TaqMan Gene Expression Assays (Thermo Fisher Scientific).[<xref ref-type="bibr" rid="c25">25</xref>&#x2013;<xref ref-type="bibr" rid="c28">28</xref>] Serum antibodies (SAB) were screened employing HLA-1 mixed antigen bead assay; the raw mean fluorescence intensity for each bead was employed for prediction.[<xref ref-type="bibr" rid="c10">10</xref>] The urinary metabolomics spectrum was determined employing nuclear magnetic resonance (NMR), which was binned and normalized to facilitate the analysis. Finally, while viral loads were monitored by qPCR as described before, other clinical data were measured de-centrally and provided by the transplantation centres.[<xref ref-type="bibr" rid="c30">30</xref>]</p>
+</sec>
+<sec id="s2c">
+<title>Statistical analysis: Descriptive statistics</title>
+<p>Categorical variables are summarised here as numbers and frequencies; quantitative variables are reported as median and interquartile range (IQR). Box plots depict the median, first and third quartile of a variable; the maximum length of the whiskers corresponds to 1.5 times the IQR. Correlations of two continuous variables were calculated employing Pearson&#x2019;s correlation coefficient r. For the visual representation of linear relationships between variables, the regression line and the confidence interval were calculated employing Deming regression; the 95&#x0025; confidence interval is shown as a shaded grey area.</p>
+<p>All statistical and modelling analyses were performed employing R (Version 3.6.1).[<xref ref-type="bibr" rid="c31">31</xref>]</p>
+</sec>
+<sec id="s2d">
+<title>Statistical analysis: Prediction of eGFR</title>
+<p>Prediction of eGFR-1y was performed employing the method of stacked generalization, which aims to combine several weak predictors to produce a precise final predictive model.[<xref ref-type="bibr" rid="c32">32</xref>] Reason for this was the differences in data availability patterns between the single subsets, as few patients had available data for all subsets for a given time point. Thus, a predictor was created for each visit and each one of the five marker subsets.</p>
+<p>The marker subsets were employed for the prediction as follows: For each visit and marker subset, only markers with &#x003C;20&#x0025; missing values were taken into account. This percentage was calculated considering only the patients (partially) characterized for the marker subset at hand, not the entire cohort. Missing values were imputed employing the R package mice (Version 3.8.0) with the method &#x201C;classification and regression trees&#x201D; for multiple imputation with 5 multiple imputations and 50 iterations.[<xref ref-type="bibr" rid="c33">33</xref>]</p>
+<p>Prediction of eGFR-1y was performed employing elastic net regression (R package glmnet, Version 3.0-2) with cross-validation.[<xref ref-type="bibr" rid="c34">34</xref>] The elastic net regression was performed with eGFR-1y as the dependent variable and the marker subset (as defined above) as independent variables. Importantly, elastic net regression performs variable based on its parameters alpha and lambda, so that only part of the measured markers are employed for prediction. To avoid overfitting, the elastic net regression was nested in a leave-p-out cross validation (p=5); thus, each iteration of the elastic net regression was optimized on a training set of n-5 patients (where n is the number of the patients in the subset) and calculated for 5 patients. The values of the elastic net parameters alpha and lambda were optimized for each training set employing the function cva.glmnet (R package glmnetUtils, Version 1.1.5), with 10 cross-validation folds.[<xref ref-type="bibr" rid="c35">35</xref>] The vector of possible values for alpha was defined as the cubic potency of an arithmetic progression between 0 and 1, with a common difference of 0.1. The value of the parameters for each training set was set to the combination of alpha and lambda achieving the minimum cross-validated mean error in the training set (alpha.min and lambda.min). The resulting model for each training set was employed for the prediction of eGFR-1y of the corresponding test set. The performance of the predictor was assessed employing the Pearson&#x2019;s r of the correlation between measured and predicted eGFR-1y.</p>
+<p>The final prediction of eGFR-1y for each visit was estimated considering all predictors that achieved r&#x003E;0.15. This final prediction was calculated for each individual patient as a weighted mean of all the available predictions; the weighs were defined as the estimated Pearson&#x2019;s correlation coefficient r for each predictor. Importantly, no imputation was performed in this step, so that for each single patient only available predictors were employed. The quality of the final prediction for each of the visits was likewise assessed employing Pearson&#x2019;s correlation coefficient r.</p>
+</sec>
+<sec id="s2e">
+<title>Statistical analysis: Selection of important markers and identification of prognostic markers</title>
+<p>The selection of markers important for the eGFR-1y prediction from each marker subset was based on the internal variable selection of elastic net regression. In the case of the metabolome prediction, due to the high number of markers, variable selection was performed with a different optimization of lambda. Thus, the value of lambda leading to the most regularized model within one standard error of the minimum cross-validated mean error (lambda.1se) was employed for variable selection of the metabolome predictor (but not for calculation of eGFR-1y). The importance of a marker was defined as the percentage of cross-validation iterations for which the marker was selected in the regression. A predictor achieving an importance of 100&#x0025; was considered to be important for the prediction.</p>
+<p>To compare the performance of two different predictors of eGFR, the differences in the absolute error of each prediction were tested employing the paired samples Wilcoxon signed rank test.</p>
+<p>To determine whether a set of markers was prognostic &#x2013; i.e. associated with eGFR-1y independently of the eGFR at the time of sampling &#x2013; a multiple linear regression analysis was employed. Thus, the regression model incorporated eGFR-1y as dependent variable and the variable(s) of interest and the eGFR at the time of sampling (eGFR-2w or eGFR-3m) as independent variables. The P values for the independent variables of the regression model were calculated employing the <italic>t</italic> test. Variables achieving a P value below 0.050 were considered to be prognostic for eGFR-1y independently from eGFR at the time of sampling, therefore providing an added value for the prediction of eGFR-1y.</p>
+</sec>
+</sec>
+<sec id="s3">
+<title>RESULTS</title>
+<sec id="s3a">
+<title>Characteristics of the patient cohort</title>
+<p>Out of 540 patients, a total of 376 (69.6&#x0025;) patients from 14 transplant centres were characterized. A total of 958 samples were measured. The characteristics of the patient cohort are presented in <xref rid="tbl2" ref-type="table">Table 2</xref>; eGFR dynamics during the follow-up are depicted in <xref rid="fig1" ref-type="fig">Figure 1</xref>. An overview of the samples characterized for each marker subset is provided in <xref rid="tbl3" ref-type="table">Table 3</xref>. Importantly, the patient cohort (N=376) had significantly higher eGFR at 2w than the Harmony patients lost to follow-up (N=164) (35.5 [19.9-47.6] vs. 25.6 [12.2-39.8] mL&#x00B7;min<sup>-1</sup>&#x00B7;1.73m<sup>-2</sup>; P&#x003C;0.001).</p>
+<table-wrap id="tbl2" orientation="portrait" position="float">
+<label>Table 2.</label>
+<caption><p>Characteristics of the patient cohort, including demographics, treatment and transplant outcome. Categorical variables are shown as count (&#x0025; frequency), continuous variables as median [IQR]. &#x002A;The expanded criteria comprise a donor age greater than 60 years, or an age greater than 50 years combined with at least two of the following factors: cerebrovascular accident as the cause of death, hypertension, or a serum creatinine level of more than 1.5 mg&#x00B7;dL<sup>-1</sup>.[<xref ref-type="bibr" rid="c17">17</xref>]</p></caption>
+<graphic xlink:href="20248473v1_tbl2.tif"/>
+<graphic xlink:href="20248473v1_tbl2a.tif"/>
+<graphic xlink:href="20248473v1_tbl2b.tif"/>
+</table-wrap>
+<table-wrap id="tbl3" orientation="portrait" position="float">
+<label>Table 3.</label>
+<caption><p>Number of samples employed for the prediction of eGFR-1y for every visit and marker subset, including the final prediction. For the size and composition of the marker subsets, see Table 1.The low number of pre-Tx metabolome samples is due to the low availability of pre-Tx urine samples.</p></caption>
+<graphic xlink:href="20248473v1_tbl3.tif"/>
+</table-wrap>
+<fig id="fig1" position="float" fig-type="figure">
+<label>Figure 1.</label>
+<caption><p>eGFR dynamics in the patient cohort.</p></caption>
+<graphic xlink:href="20248473v1_fig1.tif"/>
+</fig>
+</sec>
+<sec id="s3b">
+<title>Prediction of eGFR-1y with pre-transplant markers was poor, while post-transplant panels achieved an acceptable performance</title>
+<p>Due to different data availability patterns, a predictor was generated for each of the five marker subsets (<xref rid="tbl1" ref-type="table">Table 1</xref>); the final prediction was generated through stacked generalization without imputation, using all predictors achieving a Pearson&#x2019;s correlation coefficient of r &#x003E; 0.15 between measured and predicted eGFR-1y. The predicted values of the final model at pre-Tx, 2w and 3m are shown in <xref rid="fig2" ref-type="fig">Figure 2A</xref>. <xref rid="fig2" ref-type="fig">Figure 2B</xref> summarizes the results achieved for each marker subset. A detailed representation of the results for each individual marker subset is shown in Figure S1. Importantly, accuracy of prediction increases with time: While the correlation of measured eGFR-1y and predicted eGFR-1y employing pre-Tx markers was poor (r=0.39), already at 2w r was 0.63 and at 3m, r=0.76. The improvement in the prediction associated with time was important, achieving a significantly lower absolute error of the prediction (pre-Tx vs. 2w: P=0.004; 2w vs. 3m: P&#x003C;0.001).</p>
+<fig id="fig2" position="float" fig-type="figure">
+<label>Figure 2.</label>
+<caption><p>Summary of the prediction of eGFR-1y. (A) Predicted values of the pre-Tx, 2w and 3m stacked models against the experimental eGFR-1y values. (B) Summary of the correlation achieved between the predicted and measure eGFR-1y by each predictor at the three visits. The numeric value indicates the value of the Pearson correlation coefficient r between the predicted and the measured eGFR-1y. Predictors achieving an r&#x003E;0.15 were employed for the final prediction; these are highlighted with a dashed line. Note that no prediction was performed based on metabolome data pre-Tx due to the low data availability.</p></caption>
+<graphic xlink:href="20248473v1_fig2.tif"/>
+</fig>
+<p>For most marker subsets, no accurate prediction could be achieved. While the clinical subset had the highest performance of all predictors, only gene expression at pre-Tx, cytokines at 2w and metabolome at 3m achieved a sufficient quality of prediction to be considered in the final model (see dashed boxes in <xref rid="fig2" ref-type="fig">Figure 2B</xref>). To better understand which individual markers are most important for prediction of eGFR-1y, we performed elastic net-based variable selection for these best-performing six predictors. The results are shown in Table S1.</p>
+</sec>
+<sec id="s3c">
+<title>The pre-transplant immunological state was prognostic of eGFR-1y</title>
+<p>We first investigated the two predictors employing pre-transplant (pre-Tx) data: the clinical and the gene expression subsets (see Table S1). For the latter, we identified a complex signature of nine genes as important markers for prediction: CD200, MAN1A1, HS3ST1, NAV3, Foxp3, TCL1A, HMMR, PNOC, and TMEM176B. For the first, we identified eight important clinical markers, comprising: age of donor and recipient, body mass index of recipient, HLA (A, B and DR) donor-recipient-mismatch, cytomegalovirus (CMV) risk constellation and, remarkably, the use of anti-CMV prophylactic strategy.</p>
+</sec>
+<sec id="s3d">
+<title>Already at the second post-transplant week, eGFR was a highly precise marker for eGFR-1y</title>
+<p>We further investigated the prediction of eGFR based on 2w and 3m data. For both visits, eGFR was an important marker for eGFR-1y (<xref rid="fig3" ref-type="fig">Figure 3</xref>).</p>
+<fig id="fig3" position="float" fig-type="figure">
+<label>Figure 3.</label>
+<caption><p>Correlation of eGFR-2w and eGFR-3m with eGFR-1y. The strong correlation of eGFR-2w and eGFR-3m with eGFR-1y demonstrates a high degree of stability of eGFR.</p></caption>
+<graphic xlink:href="20248473v1_fig3.tif"/>
+</fig>
+<p>At 2w, we also identified the recipient age, donor age and donor CMV serostatus as important markers, while for 3m, BMI and donor age were identified.</p>
+<p>eGFR demonstrated a remarkable stability, achieving alone similar results as the complete clinical marker subset. We thus investigated whether the demographic factors provide an added value for the prediction of eGFR-1y, compared to eGFR alone. Indeed, a multi-parameter regression revealed that recipient age, donor age and donor CMV serostatus at 2w were independently associated with eGFR-1y (recipient age: P=0.045; donor age: P&#x003C;0.001; donor CMV serostatus: P=0.004; eGFR-2w: P&#x003C;0.001). Likewise, the association of donor age and BMI at 3m with eGFR-1y was independent from eGFR-3m (donor age: P&#x003C;0.001; BMI: P=0.008; eGFR-3m: P&#x003C;0.001). We therefore considered these factors to be prognostic.</p>
+</sec>
+<sec id="s3e">
+<title>Serum concentration of the stem cell factor (SCF) was negatively correlated with renal function</title>
+<p>We examined the cytokine predictor at 2w. Only one cytokine was detected as an important marker by variable selection, the stem cell factor (SCF). SCF at 2w had a negative correlation with eGFR-1y (r=-0.33, P&#x003C;0.001; <xref rid="fig4" ref-type="fig">Figure 4</xref>).</p>
+<fig id="fig4" position="float" fig-type="figure">
+<label>Figure 4.</label>
+<caption><p>Correlation of eGFR with SCF-2w. Importantly, the correlation with eGFR-2w was stronger than with eGFR-1y.</p></caption>
+<graphic xlink:href="20248473v1_fig4.tif"/>
+</fig>
+<p>We further evaluated whether SCF is prognostic for eGFR. As SCF-2w correlated with eGFR-2w stronger than with eGFR-1y (r=-0.62, P&#x003C;0.001; <xref rid="fig4" ref-type="fig">Figure 4</xref>), a prognostic quality of this marker seems unlikely. Furthermore, a bivariate linear regression analysis did not reveal a contribution of the cytokine on the prediction of eGFR-1y (SCF-2w: P=0.612; eGFR-2w: P&#x003C;0.001). Interestingly, a correlation between SCF and eGFR was observed also at 3m (r=-0.49, P&#x003C;0.001), suggesting a stable diagnostic accuracy for eGFR.</p>
+</sec>
+<sec id="s3f">
+<title>eGFR was associated with a urine metabolome signature</title>
+<p>Regarding the prediction of eGFR-1y based on the metabolome subset, a complex signature of 19 NMR bins was identified (Table S1). These NMR bins represent up to 35 metabolites, with a median of 2 [1.5-5] candidate metabolites per bin (Table S2). Interestingly, among these candidates, products of amino acid metabolism and creatinine could be found (Table S2).</p>
+<p>The presence of creatinine suggests that the urine signature was diagnostic for eGFR-3m, rather than prognostic for eGFR-1y. As expected, a significantly improved prediction (P&#x003C;0.001) was achieved for eGFR-3m (see <xref rid="fig5" ref-type="fig">Figure 5</xref>), compared to the eGFR-1y prediction.</p>
+<fig id="fig5" position="float" fig-type="figure">
+<label>Figure 5.</label>
+<caption><p>Prediction of eGFR employing the metabolome at 3m. As it can be seen, the quality of prediction achieved for eGFR-3m was higher than for eGFR-1y.</p></caption>
+<graphic xlink:href="20248473v1_fig5.tif"/>
+</fig>
+<p>We furthermore analysed whether a predictive advantage for eGFR-1y could be achieved employing together eGFR-3m and metabolome markers at 3m. However, a bivariate linear regression analysis revealed no clear added value of the metabolome predictor, while the effect of eGFR-3m remained highly significant (Metabolome signature: P=0.097; eGFR-3m: P&#x003C;0.001).</p>
+</sec>
+<sec id="s3g">
+<title>TMEM176B and HMMR expression at the second post-transplant week was prognostic for changes in eGFR</title>
+<p>We further investigated whether any additional prognostic markers can be found in our biomarker panel. With this goal, we repeated the analysis incorporating the eGFR at the sampling point as a variable to the cytokines, gene expression, metabolome and SAB subsets (<xref rid="fig6" ref-type="fig">Figure 6</xref>). While no clear improvement of the prediction capacity was achieved in comparison to the main analysis &#x2013; except perhaps for the gene expression predictor &#x2013; we identified two potential prognostic markers for eGFR-1y: the expression of the genes HMMR and TMEM176B.</p>
+<fig id="fig6" position="float" fig-type="figure">
+<label>Figure 6.</label>
+<caption><p>Summary of the analysis for prognostic eGFR-1y models. The figure depicts the correlation achieved between the predicted and measure eGFR-1y by each predictor at the three visits. Each predictor incorporates the eGFR at the time of screening as a factor; all predictors were employed for the final prediction.</p></caption>
+<graphic xlink:href="20248473v1_fig6.tif"/>
+</fig>
+<p>High levels of HMMR and TMEM176B were associated with eGFR-1y, independently from eGFR-2w (HMMR: P=0.048; TMEM176B: P&#x003C;0.001; eGFR-2w: P&#x003C;0.001; <xref rid="fig7" ref-type="fig">Figure 7</xref>). This means that the expression of HMMR and TMEM176B is associated with changes of eGFR between 2w and 1y (see <xref rid="fig7" ref-type="fig">Figure 7</xref>). The observed association was not due to a potential correlation with eGFR-2w: None of the two genes showed a significant association with eGFR-2w employing multivariate regression analysis (HMMR: P=0.825; TMEM176B: P=0.057).</p>
+<fig id="fig7" position="float" fig-type="figure">
+<label>Figure 7.</label>
+<caption><p>HMMR and TME176B as potential prognostic markers of eGFR. The left panel shows the prediction of eGFR-1y employing eGFR-2w, HMMR and TMEM176B. Note that the achieved correlation is higher than employing eGFR-2w alone (r=0.55, see Figure 5). The right panel shows the prediction of eGFR change between 1y and 2w (eGFR-1y &#x2013; eGFR-2w) employing only the expression of HMMR and TMEM176B. The prediction shown in this figure was calculated by linear regression without cross-validation, due to the low number of predictors.</p></caption>
+<graphic xlink:href="20248473v1_fig7.tif"/>
+</fig>
+</sec>
+</sec>
+<sec id="s4">
+<title>DISCUSSION</title>
+<p>In this work, we have performed an in-depth characterization of a large renal transplant cohort in the pre- and early post-transplant period, with the goal of predicting transplant outcome. We have analysed the cohort of the multi-centre Harmony study at three time points using a multi-level biomarker panel, ranging from gene expression to the urine metabolome.[<xref ref-type="bibr" rid="c17">17</xref>] Employing these data, we have determined predictive models for the eGFR-1y, identifying potential prognostic and diagnostic markers of the renal function:</p>
+<list list-type="bullet">
+<list-item><p>Employing pre-transplant data, the predicted value of eGFR-1y had a correlation of r=0.39 with the measured eGFR-1y. In the post-transplant period, the quality of prediction increased to r=0.63 (two weeks post-transplant) and r=0.76 (three months).</p></list-item>
+<list-item><p>eGFR demonstrated a remarkable stability in the first post-transplant year: Post-transplant prediction was highly dependent on the value of eGFR at the corresponding time points.</p></list-item>
+<list-item><p>The gene expression marker subset holds eGFR-1y prognostic value. Especially the genes HMMR and TMEM176B anticipated changes in eGFR after the second post-transplant week.</p></list-item>
+<list-item><p>Age of donor and recipient, body mass index of recipient, donor-recipient HLA mismatch, CMV mismatch and the use of anti-CMV prophylactic strategy also demonstrated a prognostic character for eGFR-1y.</p></list-item>
+<list-item><p>The serum concentration of the cytokine SCF had a strong correlation with eGFR at all measured time points, but no prognostic value.</p></list-item>
+<list-item><p>A complex signature of the urine metabolome with potential applications for the monitoring of eGFR but no prognostic value was identified.</p></list-item>
+</list>
+<p>The data of our bio-marker panel represent a milestone in the literature of early assessment of transplant outcomes, as there exists to our knowledge no other study with a comparably profound characterization in a large patient cohort. We have achieved an acceptable predictive capacity employing data from the early post-transplant period. Our results highlight, however, the major challenge of anticipating changes in the renal function: In spite of the large number of markers and samples characterized, we are still far from being able to predict eGFR-1y with an accuracy sufficient for clinical care.</p>
+<p>In our results, the eGFR in the early post-transplant period was by far the most precise marker for eGFR-1y. Part of this stability of eGFR can be explained by the nature of our transplant cohort, with low immunological risk and reduced adverse events.[<xref ref-type="bibr" rid="c17">17</xref>] This stability is in line with the literature from the last two decades, highlighting that the challenge of post-transplant risk assessment is to anticipate the rare negative changes in eGFR.[<xref ref-type="bibr" rid="c36">36</xref>&#x2013;<xref ref-type="bibr" rid="c38">38</xref>]</p>
+<p>Here, the most promising markers for eGFR changes belong to the gene expression panel. In the second post-transplant week, the expression of the genes HMMR and TMEM176B anticipated significantly eGFR drops. This observation is coherent with the literature: HMMR is upregulated in lymphocytes during acute rejection in rat.[<xref ref-type="bibr" rid="c26">26</xref>] In humans, a study on psoriasis has found a significant association between HMMR and response to immunosuppression.[<xref ref-type="bibr" rid="c24">24</xref>] On the other hand, the expression of TMEM176B in peripheral blood is known to be associated with acute rejection in humans.[<xref ref-type="bibr" rid="c27">27</xref>] Based on this evidence, we hypothesize that increased expression levels of the genes are a symptom of insufficient immunosuppression, leading to graft inflammation and decrease of eGFR.</p>
+<p>Regarding further prognostic markers, the results of our pre-transplant clinical predictor are in basic agreement with the previous work by Lasserre et al.[<xref ref-type="bibr" rid="c6">6</xref>] Their work supports the generalizability of our results, as all of the markers identified as important for our predictor were employed in their work for prediction.[<xref ref-type="bibr" rid="c6">6</xref>]</p>
+<p>We found evidence of an association of eGFR with the cytokine SCF and the urine metabolomic profile. While these associations did not have a prognostic character, i.e. they are markers of eGFR at the time of monitoring, they might still be of interest for achieving a more profound understanding and improved monitoring of eGFR. Thus, there was a strong negative correlation of SCF serum levels with eGFR. An association between SCF and renal function has been observed repeatedly in other contexts.[<xref ref-type="bibr" rid="c39">39</xref>&#x2013;<xref ref-type="bibr" rid="c42">42</xref>] Experiments in rat offer a potential cause, suggesting an association of SCF expression with renal fibrosis.[<xref ref-type="bibr" rid="c43">43</xref>] Regarding the urine metabolomic profile, our study is a step within current efforts towards a non-invasive monitoring of renal function.[<xref ref-type="bibr" rid="c22">22</xref>,<xref ref-type="bibr" rid="c44">44</xref>&#x2013;<xref ref-type="bibr" rid="c46">46</xref>] Our preliminary analysis suggests a role of urinary creatinine and amino acid metabolism in the prediction. This is in agreement with the results of Posada-Ayala <italic>et al</italic>. on markers for chronic kidney disease.[<xref ref-type="bibr" rid="c46">46</xref>] Importantly, further research is needed for a reduction of the number of candidate metabolites of our signature, to develop a non-invasive renal function monitoring assay.</p>
+<p>Our study has some limitations. Firstly, eGFR is only an approximation of the renal function.[<xref ref-type="bibr" rid="c21">21</xref>] Ideally, the end-point of a predictive model should be measured directly, employing a gold standard method.[<xref ref-type="bibr" rid="c47">47</xref>] Secondly, the composition of the cohort is not representative for the clinical reality, as only patients with low immunological risk were admitted into the study.[<xref ref-type="bibr" rid="c17">17</xref>] Thirdly, the study design makes it especially sensitive to survivor bias, as only patients with a (at least partially) functional graft one year post-transplant are evaluated. This is important, since the characterized patients had significantly higher renal function two weeks post-transplant than those lost to follow-up. Finally, not all patients could be characterized for each marker subset, due to issues of sample availability. While the employed modelling approach works well with the different data availabilities for each marker subset, an increased data availability could have allowed for a more accurate modelling of eGFR-1y and identification of potential markers.</p>
+<p>In summary, we present the results of an unprecedented characterization of a large renal transplant cohort during the pre-transplant and early post-transplant period, with the goal of predicting the outcome eGFR-1y. Our results highlight the stability of renal function and the difficulty of predicting abrupt changes. They provide two novel candidates for prognostic markers &#x2013; the expression of the genes HMMR and TMEM176B. Furthermore, we have provided new evidence on the association between renal function and the cytokine SCF and identified a metabolomic signature in urine with potential applications in non-invasive monitoring. Finally, we have achieved an acceptable accuracy in the prediction of transplant outcome, although our capacity to predict abrupt changes in the eGFR still insufficient for a direct application in the clinical context.</p>
+</sec>
+<sec sec-type="supplementary-material">
+<title>Supporting information</title>
+<supplementary-material>
+<label>Supplementary Methods</label>
+<media xlink:href="supplements/248473_file02.docx" />
+</supplementary-material>
+<supplementary-material>
+<label>Figure S1</label>
+<media xlink:href="supplements/248473_file03.pdf" />
+</supplementary-material>
+<supplementary-material>
+<label>Table S1</label>
+<media xlink:href="supplements/248473_file04.xlsx" />
+</supplementary-material>
+<supplementary-material>
+<label>Table S2</label>
+<media xlink:href="supplements/248473_file05.xlsx" />
+</supplementary-material>
+</sec>
+</body>
+<back>
+<sec sec-type="data-availability">
+<title>Data Availability</title>
+<p>The datasets for this article are not publicly available because the patients have not consented to the publication of their data. Requests for limited access to the data should be directed to Nina Babel, (<email>nina.babel@charite.de</email>).</p>
+</sec>
+<sec id="s5">
+<title>CONFLICT OF INTEREST STATEMENT</title>
+<p>The authors have no conflicts of interest to disclose</p>
+</sec>
+<sec id="s6">
+<title>FUNDING AND ACKNOWLEDGEMENTS</title>
+<p>This work was funded by the German Federal Ministry of Education and Research (BMBF), project e:KID (01ZX1312). The funders had no role in data collection, data analysis, data interpretation, writing of the manuscript, or manuscript submission.</p>
+</sec>
+<ref-list>
+<title>REFERENCES</title>
+<ref id="c1"><label>1.</label><mixed-citation publication-type="other"><string-name><surname>Hart</surname> <given-names>A</given-names></string-name>, <string-name><surname>Smith</surname> <given-names>JM</given-names></string-name>, <string-name><surname>Skeans</surname> <given-names>MA</given-names></string-name>, <etal>et al.</etal> <article-title>OPTN / SRTR 2016 Annual Data Report Kidney</article-title>. <source>Am J Transplant</source>. <year>2018</year>;(<issue>Suppl 1</issue>):<fpage>18</fpage>-<lpage>113</lpage>. doi:<pub-id pub-id-type="doi">10.1111/ajt.14557</pub-id></mixed-citation></ref>
+<ref id="c2"><label>2.</label><mixed-citation publication-type="journal"><string-name><surname>Wekerle</surname> <given-names>T</given-names></string-name>, <string-name><surname>Segev</surname> <given-names>D</given-names></string-name>, <string-name><surname>Lechler</surname> <given-names>R</given-names></string-name>, <string-name><surname>Oberbauer</surname> <given-names>R.</given-names></string-name> <article-title>Strategies for long-term preservation of kidney graft function</article-title>. <source>Lancet</source>. <year>2017</year>;<volume>389</volume>:<fpage>2152</fpage>-<lpage>2162</lpage>. doi:<pub-id pub-id-type="doi">10.1016/S0140-6736(17)31283-7</pub-id></mixed-citation></ref>
+<ref id="c3"><label>3.</label><mixed-citation publication-type="journal"><string-name><surname>Dunn</surname> <given-names>TB</given-names></string-name>, <string-name><surname>Noreen</surname> <given-names>H</given-names></string-name>, <string-name><surname>Gillingham</surname> <given-names>K</given-names></string-name>, <etal>et al.</etal> <article-title>Revisiting traditional risk factors for rejection and graft loss after kidney transplantation</article-title>. <source>Am J Transplant</source>. <year>2011</year>;<volume>11</volume>:<fpage>2132</fpage>-<lpage>2143</lpage>. doi:<pub-id pub-id-type="doi">10.1111/j.1600-6143.2011.03640.x</pub-id></mixed-citation></ref>
+<ref id="c4"><label>4.</label><mixed-citation publication-type="journal"><string-name><surname>Moore</surname> <given-names>J</given-names></string-name>, <string-name><surname>He</surname> <given-names>X</given-names></string-name>, <string-name><surname>Shabir</surname> <given-names>S</given-names></string-name>, <etal>et al.</etal> <article-title>Development and evaluation of a composite risk score to predict kidney transplant failure</article-title>. <source>Am J Kidney Dis</source>. <year>2011</year>;<volume>57</volume>(<issue>5</issue>):<fpage>744</fpage>-<lpage>751</lpage>. doi:<pub-id pub-id-type="doi">10.1053/j.ajkd.2010.12.017</pub-id></mixed-citation></ref>
+<ref id="c5"><label>5.</label><mixed-citation publication-type="journal"><string-name><surname>Elbadri</surname> <given-names>A</given-names></string-name>, <string-name><surname>Traynor</surname> <given-names>C</given-names></string-name>, <string-name><surname>Veitch</surname> <given-names>JT</given-names></string-name>, <etal>et al.</etal> <article-title>Factors affecting eGFR 5-year post-deceased donor renal transplant: Analysis and predictive model</article-title>. <source>Ren Fail</source>. <year>2015</year>;<volume>37</volume>(<issue>3</issue>):<fpage>417</fpage>-<lpage>423</lpage>. doi:<pub-id pub-id-type="doi">10.3109/0886022X.2014.1001304</pub-id></mixed-citation></ref>
+<ref id="c6"><label>6.</label><mixed-citation publication-type="journal"><string-name><surname>Lasserre</surname> <given-names>J</given-names></string-name>, <string-name><surname>Arnold</surname> <given-names>S</given-names></string-name>, <string-name><surname>Vingron</surname> <given-names>M</given-names></string-name>, <string-name><surname>Reinke</surname> <given-names>P</given-names></string-name>, <string-name><surname>Hinrichs</surname> <given-names>C.</given-names></string-name> <article-title>Predicting the outcome of renal transplantation</article-title>. <source>J Am Med Informatics Assoc</source>. <year>2012</year>;<volume>19</volume>(<issue>2</issue>):<fpage>255</fpage>-<lpage>262</lpage>. doi:<pub-id pub-id-type="doi">10.1136/amiajnl-2010-000004</pub-id></mixed-citation></ref>
+<ref id="c7"><label>7.</label><mixed-citation publication-type="journal"><string-name><surname>Ahmed</surname> <given-names>K</given-names></string-name>, <string-name><surname>Ahmad</surname> <given-names>N</given-names></string-name>, <string-name><surname>Khan</surname> <given-names>MS</given-names></string-name>, <etal>et al.</etal> <article-title>Influence of Number of Retransplants on Renal Graft Outcome</article-title>. <source>Transplant Proc</source>. <year>2008</year>;<volume>40</volume>(<issue>5</issue>):<fpage>1349</fpage>-<lpage>1352</lpage>. doi:<pub-id pub-id-type="doi">10.1016/j.transproceed.2008.03.144</pub-id></mixed-citation></ref>
+<ref id="c8"><label>8.</label><mixed-citation publication-type="journal"><string-name><surname>Legendre</surname> <given-names>C</given-names></string-name>, <string-name><surname>Canaud</surname> <given-names>G</given-names></string-name>, <string-name><surname>Martinez</surname> <given-names>F.</given-names></string-name> <article-title>Factors influencing long-term outcome after kidney transplantation</article-title>. <source>Transpl Int</source>. <year>2014</year>;<volume>27</volume>(<issue>1</issue>):<fpage>19</fpage>-<lpage>27</lpage>. doi:<pub-id pub-id-type="doi">10.1111/tri.12217</pub-id></mixed-citation></ref>
+<ref id="c9"><label>9.</label><mixed-citation publication-type="journal"><string-name><surname>Senanayake</surname> <given-names>S</given-names></string-name>, <string-name><surname>White</surname> <given-names>N</given-names></string-name>, <string-name><surname>Graves</surname> <given-names>N</given-names></string-name>, <string-name><surname>Healy</surname> <given-names>H</given-names></string-name>, <string-name><surname>Baboolal</surname> <given-names>K</given-names></string-name>, <string-name><surname>Kularatna</surname> <given-names>S.</given-names></string-name> <article-title>Machine learning in predicting graft failure following kidney transplantation: A systematic review of published predictive models</article-title>. <source>Int J Med Inform</source>. <year>2019</year>;<volume>130</volume>(<month>March</month>):<fpage>103957</fpage>. doi:<pub-id pub-id-type="doi">10.1016/j.ijmedinf.2019.103957</pub-id></mixed-citation></ref>
+<ref id="c10"><label>10.</label><mixed-citation publication-type="journal"><string-name><surname>Wittenbrink</surname> <given-names>N</given-names></string-name>, <string-name><surname>Herrmann</surname> <given-names>S</given-names></string-name>, <string-name><surname>Blazquez-Navarro</surname> <given-names>A</given-names></string-name>, <etal>et al.</etal> <article-title>A novel approach reveals that HLA class 1 single antigen bead-signatures provide a means of high-accuracy pretransplant risk assessment of acute cellular rejection</article-title>. <source>BMC Immunol</source>. <year>2019</year>;<volume>20</volume>:<fpage>11</fpage>. doi:<ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1186/s12865-019-0291-2">https://doi.org/10.1186/s12865-019-0291-2</ext-link></mixed-citation></ref>
+<ref id="c11"><label>11.</label><mixed-citation publication-type="journal"><string-name><surname>Mancebo</surname> <given-names>E</given-names></string-name>, <string-name><surname>Castro</surname> <given-names>MJ</given-names></string-name>, <string-name><surname>Allende</surname> <given-names>LM</given-names></string-name>, <etal>et al.</etal> <article-title>High proportion of CD95&#x002B; and CD38&#x002B; in cultured CD8&#x002B; T cells predicts acute rejection and infection, respectively, in kidney recipients</article-title>. <source>Transpl Immunol</source>. <year>2016</year>;<volume>34</volume>:<fpage>33</fpage>&#x2013;<lpage>41</lpage>. doi:<pub-id pub-id-type="doi">10.1016/j.trim.2016.01.001</pub-id></mixed-citation></ref>
+<ref id="c12"><label>12.</label><mixed-citation publication-type="journal"><string-name><surname>Malheiro</surname> <given-names>J</given-names></string-name>, <string-name><surname>Tafulo</surname> <given-names>S</given-names></string-name>, <string-name><surname>Dias</surname> <given-names>L</given-names></string-name>, <etal>et al.</etal> <article-title>Analysis of preformed donor-specific anti-HLA antibodies characteristics for prediction of antibody-mediated rejection in kidney transplantation</article-title>. <source>Transpl Immunol</source>. <year>2015</year>;<volume>32</volume>:<fpage>66</fpage>&#x2013;<lpage>71</lpage>. doi:<pub-id pub-id-type="doi">10.1016/j.trim.2015.01.002</pub-id></mixed-citation></ref>
+<ref id="c13"><label>13.</label><mixed-citation publication-type="journal"><string-name><surname>Salvad&#x00E9;</surname> <given-names>I</given-names></string-name>, <string-name><surname>Aubert</surname> <given-names>V</given-names></string-name>, <string-name><surname>Venetz</surname> <given-names>JP</given-names></string-name>, <etal>et al.</etal> <article-title>Clinically-relevant threshold of preformed donorspecific anti-HLA antibodies in kidney transplantation</article-title>. <source>Hum Immunol</source>. <year>2016</year>;<volume>77</volume>:<fpage>483</fpage>&#x2013;<lpage>489</lpage>. doi:<pub-id pub-id-type="doi">10.1016/j.humimm.2016.04.010</pub-id></mixed-citation></ref>
+<ref id="c14"><label>14.</label><mixed-citation publication-type="other"><string-name><surname>Shaikhina</surname> <given-names>T</given-names></string-name>, <string-name><surname>Lowe</surname> <given-names>D</given-names></string-name>, <string-name><surname>Daga</surname> <given-names>S</given-names></string-name>, <string-name><surname>Briggs</surname> <given-names>D</given-names></string-name>, <string-name><surname>Higgins</surname> <given-names>R</given-names></string-name>, <string-name><surname>Khovanova</surname> <given-names>N.</given-names></string-name> <article-title>Decision tree and random forest models for outcome prediction in antibody incompatible kidney transplantation</article-title>. <source>Biomed Signal Process Control</source>. <year>2017</year>. doi:<pub-id pub-id-type="doi">10.1016/j.bspc.2017.01.012</pub-id></mixed-citation></ref>
+<ref id="c15"><label>15.</label><mixed-citation publication-type="journal"><string-name><surname>Becker</surname> <given-names>LE</given-names></string-name>, <string-name><surname>Morath</surname> <given-names>C</given-names></string-name>, <string-name><surname>Suesal</surname> <given-names>C.</given-names></string-name> <article-title>Immune mechanisms of acute and chronic rejection</article-title>. <source>Clin Biochem</source>. <year>2016</year>;<volume>49</volume>:<fpage>320</fpage>&#x2013;<lpage>323</lpage>. doi:<pub-id pub-id-type="doi">10.1016/j.clinbiochem.2016.02.001</pub-id></mixed-citation></ref>
+<ref id="c16"><label>16.</label><mixed-citation publication-type="journal"><string-name><surname>Suthanthiran</surname> <given-names>M</given-names></string-name>, <string-name><surname>Schwartz</surname> <given-names>JE</given-names></string-name>, <string-name><surname>Ding</surname> <given-names>R</given-names></string-name>, <etal>et al.</etal> <article-title>Urinary-Cell mRNA Profile and Acute Cellular Rejection in Kidney Allografts</article-title>. <source>N Engl J Med</source>. <year>2013</year>;<volume>369</volume>(<issue>1</issue>):<fpage>20</fpage>&#x2013;<lpage>31</lpage>. doi:<pub-id pub-id-type="doi">10.1056/NEJMoa1215555</pub-id></mixed-citation></ref>
+<ref id="c17"><label>17.</label><mixed-citation publication-type="journal"><string-name><surname>Thomusch</surname> <given-names>O</given-names></string-name>, <string-name><surname>Wiesener</surname> <given-names>M</given-names></string-name>, <string-name><surname>Opgenoorth</surname> <given-names>M</given-names></string-name>, <etal>et al.</etal> <article-title>Rabbit-ATG or basiliximab induction for rapid steroid withdrawal after renal transplantation (Harmony): an open-label, multicentre, randomised controlled trial</article-title>. <source>Lancet</source>. <year>2016</year>;<volume>388</volume>:<fpage>3006</fpage>&#x2013;<lpage>3016</lpage>. doi:<pub-id pub-id-type="doi">10.1016/S0140-6736(16)32187-0</pub-id></mixed-citation></ref>
+<ref id="c18"><label>18.</label><mixed-citation publication-type="journal"><string-name><surname>Salvadori</surname> <given-names>M</given-names></string-name>, <string-name><surname>Rosati</surname> <given-names>A</given-names></string-name>, <string-name><surname>Bock</surname> <given-names>A</given-names></string-name>, <etal>et al.</etal> <article-title>Estimated one-year glomerular filtration rate is the best predictor of long-term graft function following renal transplant</article-title>. <source>Transplantation</source>. <year>2006</year>;<volume>81</volume>(<issue>2</issue>):<fpage>202</fpage>&#x2013;<lpage>206</lpage>. doi:<pub-id pub-id-type="doi">10.1097/01.tp.0000188135.04259.2e</pub-id></mixed-citation></ref>
+<ref id="c19"><label>19.</label><mixed-citation publication-type="journal"><string-name><surname>Faddoul</surname> <given-names>G</given-names></string-name>, <string-name><surname>Nadkarni</surname> <given-names>GN</given-names></string-name>, <string-name><surname>Bridges</surname> <given-names>ND</given-names></string-name>, <etal>et al.</etal> <article-title>Analysis of biomarkers within the initial 2 years posttransplant and 5-year kidney transplant outcomes: Results from clinical trials in organ transplantation-17</article-title>. <source>Transplantation</source>. <year>2018</year>;<volume>102</volume>(<issue>4</issue>):<fpage>673</fpage>&#x2013;<lpage>680</lpage>. doi:<pub-id pub-id-type="doi">10.1097/TP.0000000000002026</pub-id></mixed-citation></ref>
+<ref id="c20"><label>20.</label><mixed-citation publication-type="journal"><string-name><surname>Resende</surname> <given-names>L</given-names></string-name>, <string-name><surname>Guerra</surname> <given-names>J</given-names></string-name>, <string-name><surname>Santana</surname> <given-names>A</given-names></string-name>, <string-name><surname>Mil-Homens</surname> <given-names>C</given-names></string-name>, <string-name><surname>Abreu</surname> <given-names>F</given-names></string-name>, <string-name><surname>da Costa</surname> <given-names>AG</given-names></string-name>. <article-title>First Year Renal Function as a Predictor of Kidney Allograft Outcome</article-title>. <source>Transplant Proc</source>. <year>2009</year>;<volume>41</volume>(<issue>3</issue>):<fpage>846</fpage>&#x2013;<lpage>848</lpage>. doi:<pub-id pub-id-type="doi">10.1016/j.transproceed.2009.01.066</pub-id></mixed-citation></ref>
+<ref id="c21"><label>21.</label><mixed-citation publication-type="journal"><string-name><surname>Levey</surname> <given-names>AS</given-names></string-name>, <string-name><surname>Stevens</surname> <given-names>LA</given-names></string-name>, <string-name><surname>Schmid</surname> <given-names>CH</given-names></string-name>, <etal>et al.</etal> <article-title>A new equation to estimate glomerular filtration rate</article-title>. <source>Ann Intern Med</source>. <year>2009</year>;<volume>150</volume>(<issue>9</issue>):<fpage>604</fpage>&#x2013;<lpage>612</lpage>. doi:<pub-id pub-id-type="doi">10.7326/0003-4819-150-9-200905050-00006</pub-id></mixed-citation></ref>
+<ref id="c22"><label>22.</label><mixed-citation publication-type="journal"><string-name><surname>Banas</surname> <given-names>M</given-names></string-name>, <string-name><surname>Neumann</surname> <given-names>S</given-names></string-name>, <string-name><surname>Eiglsperger</surname> <given-names>J</given-names></string-name>, <etal>et al.</etal> <article-title>Identification of a urine metabolite constellation characteristic for kidney allograft rejection</article-title>. <source>Metabolomics</source>. <year>2018</year>;<volume>14</volume>:<fpage>116</fpage>. doi:<pub-id pub-id-type="doi">10.1007/s11306-018-1419-8</pub-id></mixed-citation></ref>
+<ref id="c23"><label>23.</label><mixed-citation publication-type="journal"><string-name><surname>Sawitzki</surname> <given-names>B</given-names></string-name>, <string-name><surname>Schlickeiser</surname> <given-names>S</given-names></string-name>, <string-name><surname>Reinke</surname> <given-names>P</given-names></string-name>, <string-name><surname>Volk</surname> <given-names>H-D.</given-names></string-name> <article-title>Monitoring tolerance and rejection in organ transplant recipients</article-title>. <source>Biomarkers</source>. <year>2011</year>;<volume>16</volume>(<issn>up1</issn>):<fpage>S42</fpage>&#x2013;<lpage>S50</lpage>. doi:<pub-id pub-id-type="doi">10.3109/1354750X.2011.578754</pub-id></mixed-citation></ref>
+<ref id="c24"><label>24.</label><mixed-citation publication-type="journal"><string-name><surname>Keeren</surname> <given-names>K</given-names></string-name>, <string-name><surname>Friedrich</surname> <given-names>M</given-names></string-name>, <string-name><surname>Gebuhr</surname> <given-names>I</given-names></string-name>, <etal>et al.</etal> <article-title>Expression of Tolerance Associated Gene-1, a Mitochondrial Protein Inhibiting T Cell Activation, Can Be Used to Predict Response to Immune Modulating Therapies</article-title>. <source>J Immunol</source>. <year>2009</year>;<volume>183</volume>(<issue>6</issue>):<fpage>4077</fpage>&#x2013;<lpage>4087</lpage>. doi:<pub-id pub-id-type="doi">10.4049/jimmunol.0804351</pub-id></mixed-citation></ref>
+<ref id="c25"><label>25.</label><mixed-citation publication-type="journal"><string-name><surname>Sagoo</surname> <given-names>P</given-names></string-name>, <string-name><surname>Perucha</surname> <given-names>E</given-names></string-name>, <string-name><surname>Sawitzki</surname> <given-names>B</given-names></string-name>, <etal>et al.</etal> <article-title>Development of a cross-platform biomarker signature to detect renal transplant tolerance in humans</article-title>. <source>J Clin Invest</source>. <year>2010</year>;<volume>120</volume>(<issue>6</issue>):<fpage>1848</fpage>&#x2013;<lpage>1861</lpage>. doi:<pub-id pub-id-type="doi">10.1172/JCI39922</pub-id></mixed-citation></ref>
+<ref id="c26"><label>26.</label><mixed-citation publication-type="journal"><string-name><surname>Sawitzki</surname> <given-names>B</given-names></string-name>, <string-name><surname>Bushell</surname> <given-names>A</given-names></string-name>, <string-name><surname>Steger</surname> <given-names>U</given-names></string-name>, <etal>et al.</etal> <article-title>Identification of gene markers for the prediction of allograft rejection or permanent acceptance</article-title>. <source>Am J Transplant</source>. <year>2007</year>;<volume>7</volume>(<issue>5</issue>):<fpage>1091</fpage>&#x2013;<lpage>1102</lpage>. doi:<pub-id pub-id-type="doi">10.1111/j.1600-6143.2007.01768.x</pub-id></mixed-citation></ref>
+<ref id="c27"><label>27.</label><mixed-citation publication-type="journal"><string-name><surname>Viklicky</surname> <given-names>O</given-names></string-name>, <string-name><surname>Krystufkova</surname> <given-names>E</given-names></string-name>, <string-name><surname>Brabcova</surname> <given-names>I</given-names></string-name>, <etal>et al.</etal> <article-title>B-cell-related biomarkers of tolerance are up-regulated in rejection-free kidney transplant recipients</article-title>. <source>Transplantation</source>. <year>2013</year>;<volume>95</volume>(<issue>1</issue>):<fpage>148</fpage>&#x2013;<lpage>154</lpage>. doi:<pub-id pub-id-type="doi">10.1097/TP.0b013e3182789a24</pub-id></mixed-citation></ref>
+<ref id="c28"><label>28.</label><mixed-citation publication-type="journal"><string-name><surname>Krepsova</surname> <given-names>E</given-names></string-name>, <string-name><surname>Tycova</surname> <given-names>I</given-names></string-name>, <string-name><surname>Sekerkova</surname> <given-names>A</given-names></string-name>, <etal>et al.</etal> <article-title>Effect of induction therapy on the expression of molecular markers associated with rejection and tolerance</article-title>. <source>BMC Nephrol</source>. <year>2015</year>;<volume>16</volume>(<issue>1</issue>):<fpage>1</fpage>&#x2013;<lpage>9</lpage>. doi:<pub-id pub-id-type="doi">10.1186/s12882-015-0141-2</pub-id></mixed-citation></ref>
+<ref id="c29"><label>29.</label><mixed-citation publication-type="other"><string-name><surname>Blazquez-Navarro</surname> <given-names>A</given-names></string-name>, <string-name><surname>Dang-Heine</surname> <given-names>C</given-names></string-name>, <string-name><surname>Bauer</surname> <given-names>C</given-names></string-name>, <etal>et al.</etal> <article-title>Sex-associated differences in cytomegalovirus prevention: Prophylactic strategy is potentially associated with a strong kidney function impairment in female renal transplant patients</article-title>. <source>Front Pharmacol</source>. <year>2020</year>. doi:<pub-id pub-id-type="doi">10.3389/fphar.2020.534681</pub-id></mixed-citation></ref>
+<ref id="c30"><label>30.</label><mixed-citation publication-type="journal"><string-name><surname>Blazquez-Navarro</surname> <given-names>A</given-names></string-name>, <string-name><surname>Dang-Heine</surname> <given-names>C</given-names></string-name>, <string-name><surname>Wittenbrink</surname> <given-names>N</given-names></string-name>, <etal>et al.</etal> <article-title>BKV, CMV, and EBV Interactions and their Effect on Graft Function One Year Post-Renal Transplantation: Results from a Large Multi-Centre Study</article-title>. <source>EBioMedicine</source>. <year>2018</year>;<volume>34</volume>:<fpage>113</fpage>&#x2013;<lpage>121</lpage>. doi:<pub-id pub-id-type="doi">10.1016/j.ebiom.2018.07.017</pub-id></mixed-citation></ref>
+<ref id="c31"><label>31.</label><mixed-citation publication-type="website"><collab>R Core Team, R Development Core Team. R</collab>: <source>A language and environment for statistical computing</source>. <year>2019</year>. <ext-link ext-link-type="uri" xlink:href="http://www.r-project.org/">http://www.r-project.org/</ext-link>.</mixed-citation></ref>
+<ref id="c32"><label>32.</label><mixed-citation publication-type="journal"><string-name><surname>Ghaemi</surname> <given-names>MS</given-names></string-name>, <string-name><surname>DiGiulio</surname> <given-names>DB</given-names></string-name>, <string-name><surname>Contrepois</surname> <given-names>K</given-names></string-name>, <etal>et al.</etal> <article-title>Multiomics modeling of the immunome, transcriptome, microbiome, proteome and metabolome adaptations during human pregnancy</article-title>. <source>Bioinformatics</source>. <year>2019</year>;<volume>35</volume>(<issue>1</issue>):<fpage>95</fpage>&#x2013;<lpage>103</lpage>. doi:<pub-id pub-id-type="doi">10.1093/bioinformatics/bty537</pub-id></mixed-citation></ref>
+<ref id="c33"><label>33.</label><mixed-citation publication-type="journal"><string-name><surname>van Buuren</surname> <given-names>S</given-names></string-name>, <string-name><surname>Groothuis-Oudshoorn</surname> <given-names>K.</given-names></string-name> <article-title>{mice}: Multivariate Imputation by Chained Equations in R</article-title>. <source>J Stat Softw</source>. <year>2011</year>;<volume>45</volume>(<issue>3</issue>):<fpage>1</fpage>&#x2013;<lpage>67</lpage>. <ext-link ext-link-type="uri" xlink:href="https://www.jstatsoft.org/v45/i03/">https://www.jstatsoft.org/v45/i03/</ext-link>.</mixed-citation></ref>
+<ref id="c34"><label>34.</label><mixed-citation publication-type="journal"><string-name><surname>Friedman</surname> <given-names>J</given-names></string-name>, <string-name><surname>Hastie</surname> <given-names>T</given-names></string-name>, <string-name><surname>Tibshirani</surname> <given-names>R.</given-names></string-name> <article-title>Regularization Paths for Generalized Linear Models via Coordinate Descent</article-title>. <source>J Stat Softw</source>. <year>2010</year>;<volume>33</volume>(<issue>1</issue>):<fpage>1</fpage>&#x2013;<lpage>22</lpage>. doi:<pub-id pub-id-type="doi">10.1016/j.expneurol.2008.01.011</pub-id></mixed-citation></ref>
+<ref id="c35"><label>35.</label><mixed-citation publication-type="website"><string-name><surname>Microsoft</surname>, <given-names>Ooi H.</given-names></string-name> <source>glmnetUtils: Utilities for &#x201C;Glmnet.&#x201D; 2020</source>. <ext-link ext-link-type="uri" xlink:href="https://cran.r-project.org/package=glmnetUtils">https://cran.r-project.org/package=glmnetUtils</ext-link>.</mixed-citation></ref>
+<ref id="c36"><label>36.</label><mixed-citation publication-type="journal"><string-name><surname>Gourishankar</surname> <given-names>S</given-names></string-name>, <string-name><surname>Hunsicker</surname> <given-names>LG</given-names></string-name>, <string-name><surname>Jhangri</surname> <given-names>GS</given-names></string-name>, <string-name><surname>Cockfield</surname> <given-names>SM</given-names></string-name>, <string-name><surname>Halloran</surname> <given-names>PF</given-names></string-name>. <article-title>The stability of the glomerular filtration rate after renal transplantation is improving</article-title>. <source>J Am Soc Nephrol</source>. <year>2003</year>;<volume>14</volume>(<issue>9</issue>):<fpage>2387</fpage>&#x2013;<lpage>2394</lpage>. doi:<pub-id pub-id-type="doi">10.1097/01.ASN.0000085019.95339.F0</pub-id></mixed-citation></ref>
+<ref id="c37"><label>37.</label><mixed-citation publication-type="journal"><string-name><surname>Clayton</surname> <given-names>PA</given-names></string-name>, <string-name><surname>Lim</surname> <given-names>WH</given-names></string-name>, <string-name><surname>Wong</surname> <given-names>G</given-names></string-name>, <string-name><surname>Chadban</surname> <given-names>SJ</given-names></string-name>. <article-title>Relationship between eGFR decline and hard outcomes after kidney transplants</article-title>. <source>J Am Soc Nephrol</source>. <year>2016</year>;<volume>27</volume>(<issue>11</issue>):<fpage>3440</fpage>&#x2013;<lpage>3446</lpage>. doi:<pub-id pub-id-type="doi">10.1681/ASN.2015050524</pub-id></mixed-citation></ref>
+<ref id="c38"><label>38.</label><mixed-citation publication-type="journal"><string-name><surname>Atay</surname> <given-names>FF</given-names></string-name>, <string-name><surname>Taskapan</surname> <given-names>H</given-names></string-name>, <string-name><surname>Berktas</surname> <given-names>B</given-names></string-name>, <string-name><surname>Yildirim</surname> <given-names>O</given-names></string-name>, <string-name><surname>Dogan</surname> <given-names>M</given-names></string-name>, <string-name><surname>Piskin</surname> <given-names>T.</given-names></string-name> <article-title>Factors Affecting eGFR Slope of Renal Transplant Patients During the First 2 Years</article-title>. <source>Transplant Proc</source>. <year>2019</year>;<volume>51</volume>(<issue>7</issue>):<fpage>2318</fpage>&#x2013;<lpage>2320</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/j.transproceed.2019.01.165">https://doi.org/10.1016/j.transproceed.2019.01.165</ext-link></mixed-citation></ref>
+<ref id="c39"><label>39.</label><mixed-citation publication-type="journal"><string-name><surname>Kitoh</surname> <given-names>T</given-names></string-name>, <string-name><surname>Ishikawa</surname> <given-names>H</given-names></string-name>, <string-name><surname>Ishii</surname> <given-names>T</given-names></string-name>, <string-name><surname>Nakagawa</surname> <given-names>S.</given-names></string-name> <article-title>Elevated SCF levels in the serum of patients with chronic renal failure</article-title>. <source>Br J Haematol</source>. <year>1998</year>;<volume>102</volume>(<issue>5</issue>):<fpage>1151</fpage>&#x2013;<lpage>1156</lpage>. doi:<pub-id pub-id-type="doi">10.1046/j.1365-2141.1998.00902.x</pub-id></mixed-citation></ref>
+<ref id="c40"><label>40.</label><mixed-citation publication-type="journal"><string-name><surname>Zhang</surname> <given-names>W</given-names></string-name>, <string-name><surname>Jia</surname> <given-names>L</given-names></string-name>, <string-name><surname>Liu</surname> <given-names>DLX</given-names></string-name>, <etal>et al.</etal> <article-title>Serum Stem Cell Factor Level Predicts Decline in Kidney Function in Healthy Aging Adults</article-title>. <source>J Nutr Heal Aging</source>. <year>2019</year>;<volume>23</volume>(<issue>9</issue>):<fpage>813</fpage>&#x2013;<lpage>820</lpage>. doi:<pub-id pub-id-type="doi">10.1007/s12603-019-1253-3</pub-id></mixed-citation></ref>
+<ref id="c41"><label>41.</label><mixed-citation publication-type="journal"><string-name><surname>Alachkar</surname> <given-names>N</given-names></string-name>, <string-name><surname>Ugarte</surname> <given-names>R</given-names></string-name>, <string-name><surname>Huang</surname> <given-names>E</given-names></string-name>, <etal>et al.</etal> <article-title>Stem cell factor, interleukin-16, and interleukin-2 receptor alpha are predictive biomarkers for delayed and slow graft function</article-title>. <source>Transplant Proc</source>. <year>2010</year>;<volume>42</volume>(<issue>9</issue>):<fpage>3399</fpage>&#x2013;<lpage>3405</lpage>. doi:<pub-id pub-id-type="doi">10.1016/j.transproceed.2010.06.013</pub-id></mixed-citation></ref>
+<ref id="c42"><label>42.</label><mixed-citation publication-type="journal"><string-name><surname>El Kossi</surname> <given-names>MMH</given-names></string-name>, <string-name><surname>El Nahas</surname> <given-names>AM</given-names></string-name>. <article-title>Stem cell factor and crescentic glomerulonephritis</article-title>. <source>Am J Kidney Dis</source>. <year>2003</year>;<volume>41</volume>(<issue>4</issue>):<fpage>785</fpage>&#x2013;<lpage>795</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/S0272-6386(03)00026-X">https://doi.org/10.1016/S0272-6386(03)00026-X</ext-link></mixed-citation></ref>
+<ref id="c43"><label>43.</label><mixed-citation publication-type="journal"><string-name><surname>Li</surname> <given-names>Y</given-names></string-name>, <string-name><surname>Zhou</surname> <given-names>L</given-names></string-name>, <string-name><surname>Liu</surname> <given-names>F</given-names></string-name>, <etal>et al.</etal> <article-title>Mast cell infiltration is involved in renal interstitial fibrosis in a rat model of protein-overload nephropathy</article-title>. <source>Kidney Blood Press Res</source>. <year>2010</year>;<volume>33</volume>(<issue>3</issue>):<fpage>240</fpage>&#x2013;<lpage>248</lpage>. doi:<pub-id pub-id-type="doi">10.1159/000317102</pub-id></mixed-citation></ref>
+<ref id="c44"><label>44.</label><mixed-citation publication-type="other"><string-name><surname>Nkuipou-Kenfack</surname> <given-names>E</given-names></string-name>, <string-name><surname>Duranton</surname> <given-names>F</given-names></string-name>, <string-name><surname>Gayrard</surname> <given-names>N</given-names></string-name>, <etal>et al.</etal> <article-title>Assessment of metabolomic and proteomic biomarkers in detection and prognosis of progression of renal function in chronic kidney disease</article-title>. <source>PLoS One</source>. <year>2014</year>;<volume>9</volume>(<issue>5</issue>). doi:<pub-id pub-id-type="doi">10.1371/journal.pone.0096955</pub-id></mixed-citation></ref>
+<ref id="c45"><label>45.</label><mixed-citation publication-type="journal"><string-name><surname>Ng</surname> <given-names>DPK</given-names></string-name>, <string-name><surname>Salim</surname> <given-names>A</given-names></string-name>, <string-name><surname>Liu</surname> <given-names>Y</given-names></string-name>, <etal>et al.</etal> <article-title>A metabolomic study of low estimated GFR in non-proteinuric type 2 diabetes mellitus</article-title>. <source>Diabetologia</source>. <year>2012</year>;<volume>55</volume>(<issue>2</issue>):<fpage>499</fpage>&#x2013;<lpage>508</lpage>. doi:<pub-id pub-id-type="doi">10.1007/s00125-011-2339-6</pub-id></mixed-citation></ref>
+<ref id="c46"><label>46.</label><mixed-citation publication-type="journal"><string-name><surname>Posada-Ayala</surname> <given-names>M</given-names></string-name>, <string-name><surname>Zubiri</surname> <given-names>I</given-names></string-name>, <string-name><surname>Martin-Lorenzo</surname> <given-names>M</given-names></string-name>, <etal>et al.</etal> <article-title>Identification of a urine metabolomic signature in patients with advanced-stage chronic kidney disease</article-title>. <source>Kidney Int</source>. <year>2014</year>;<volume>85</volume>(<issue>1</issue>):<fpage>103</fpage>&#x2013;<lpage>111</lpage>. doi:<pub-id pub-id-type="doi">10.1038/ki.2013.328</pub-id></mixed-citation></ref>
+<ref id="c47"><label>47.</label><mixed-citation publication-type="journal"><string-name><surname>Michels</surname> <given-names>WM</given-names></string-name>, <string-name><surname>Grootendorst</surname> <given-names>DC</given-names></string-name>, <string-name><surname>Verduijn</surname> <given-names>M</given-names></string-name>, <string-name><surname>Elliott</surname> <given-names>EG</given-names></string-name>, <string-name><surname>Dekker</surname> <given-names>FW</given-names></string-name>, <string-name><surname>Krediet</surname> <given-names>RT</given-names></string-name>. <article-title>Performance of the Cockcroft-Gault, MDRD, and new CKD-EPI formulas in relation to GFR, age, and body size</article-title>. <source>Clin J Am Soc Nephrol</source>. <year>2010</year>;<volume>5</volume>:<fpage>1003</fpage>&#x2013;<lpage>1009</lpage>. doi:<pub-id pub-id-type="doi">10.2215/CJN.06870909</pub-id></mixed-citation></ref>
+</ref-list>
+<sec id="s7">
+<title>SUPPLEMENTARY MATERIALS</title>
+<sec id="s7a">
+<title>Supplementary Methods</title>
+<p><bold>Table S1:</bold> Results of the variable selection for all subsets achieving a prediction with r&#x003E;0.15. The table shows the name of all markers selected through variable selection, as well as the subset and visit they belong to, their importance in the prediction and the nature of their association with eGFR-1y. The importance is calculated as the percentage of cross-validation iterations for which the marker was considered in the regression. Only markers achieving an importance over 20&#x0025; are listed here.</p>
+<p><bold>Table S2:</bold> Description of the bins (metabolome at 3m) important for the prediction of eGFR-1y and identification of the candidate molecules for these bins.</p>
+<p><bold>Figure S1:</bold> Detailed results of the prediction of eGFR-1y for every marker subset and visit. The correlation achieved between the predicted and measure eGFR-1y by each predictor is shown. The numeric value indicates the value of the Pearson correlation for the predicted and the measured eGFR-1y.</p>
+</sec>
+</sec>
+</back>
+</article>

@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.2d1 20170631//EN" "JATS-archivearticle1.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" article-type="article" dtd-version="1.2d1" specific-use="production" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="publisher-id">MEDRXIV</journal-id>
+<journal-title-group>
+<journal-title>medRxiv</journal-title>
+<abbrev-journal-title abbrev-type="publisher">medRxiv</abbrev-journal-title>
+</journal-title-group>
+<publisher>
+<publisher-name>Cold Spring Harbor Laboratory</publisher-name>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1101/2021.01.15.21249879</article-id>
+<article-version>1.1</article-version>
+<article-categories>
+<subj-group subj-group-type="hwp-journal-coll">
+<subject>Infectious Diseases (except HIV/AIDS)</subject>
+</subj-group>
+</article-categories>
+<title-group>
+<article-title>Anticipating the curve: can online symptom-based data reflect COVID-19 case activity in Ontario, Canada?</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-2155-7014</contrib-id>
+<name><surname>Maharaj</surname><given-names>Arjuna S.</given-names></name>
+<degrees>MSc</degrees>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Parker</surname><given-names>Jennifer</given-names></name>
+<degrees>BSc</degrees>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Hopkins</surname><given-names>Jessica P.</given-names></name>
+<degrees>MD, MHSc</degrees>
+<xref ref-type="aff" rid="a2">2</xref>
+<xref ref-type="aff" rid="a3">3</xref>
+<xref ref-type="aff" rid="a4">4</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Gournis</surname><given-names>Effie</given-names></name>
+<degrees>MSc, MPH</degrees>
+<xref ref-type="aff" rid="a4">4</xref>
+<xref ref-type="aff" rid="a5">5</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-1590-6748</contrib-id>
+<name><surname>Bogoch</surname><given-names>Isaac I.</given-names></name>
+<degrees>MD, MS</degrees>
+<xref ref-type="aff" rid="a6">6</xref>
+<xref ref-type="aff" rid="a7">7</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-6095-0193</contrib-id>
+<name><surname>Rader</surname><given-names>Benjamin</given-names></name>
+<degrees>MPH</degrees>
+<xref ref-type="aff" rid="a8">8</xref>
+<xref ref-type="aff" rid="a9">9</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Astley</surname><given-names>Christina M.</given-names></name>
+<degrees>MD, ScD</degrees>
+<xref ref-type="aff" rid="a8">8</xref>
+<xref ref-type="aff" rid="a10">10</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Ivers</surname><given-names>Noah</given-names></name>
+<degrees>MD, PhD</degrees>
+<xref ref-type="aff" rid="a11">11</xref>
+<xref ref-type="aff" rid="a12">12</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Hawkins</surname><given-names>Jared B.</given-names></name>
+<degrees>MMSc, PhD</degrees>
+<xref ref-type="aff" rid="a8">8</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Lee</surname><given-names>Liza</given-names></name>
+<degrees>MSc</degrees>
+<xref ref-type="aff" rid="a13">13</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-4373-9337</contrib-id>
+<name><surname>Tuite</surname><given-names>Ashleigh R.</given-names></name>
+<degrees>PhD, MPH</degrees>
+<xref ref-type="aff" rid="a4">4</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Fisman</surname><given-names>David N.</given-names></name>
+<degrees>MD, MPH</degrees>
+<xref ref-type="aff" rid="a4">4</xref>
+<xref ref-type="aff" rid="a6">6</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0001-8568-5317</contrib-id>
+<name><surname>Brownstein</surname><given-names>John S.</given-names></name>
+<xref ref-type="aff" rid="a8">8</xref>
+<xref ref-type="aff" rid="a14">14</xref>
+</contrib>
+<contrib contrib-type="author" corresp="yes">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-4485-6719</contrib-id>
+<name><surname>Lapointe-Shaw</surname><given-names>Lauren</given-names></name>
+<degrees>MDCM, PhD</degrees>
+<xref ref-type="corresp" rid="cor1">&#x002A;</xref>
+<xref ref-type="aff" rid="a6">6</xref>
+<xref ref-type="aff" rid="a7">7</xref>
+</contrib>
+<aff id="a1"><label>1</label><institution>Doctor of Medicine Program, Temerty Faculty of Medicine, University of Toronto</institution>, Toronto, <country>Canada</country></aff>
+<aff id="a2"><label>2</label><institution>Public Health Ontario</institution>, Toronto, <country>Canada</country></aff>
+<aff id="a3"><label>3</label><institution>Department of Health Research Methods, Evidence, and Impact, McMaster University</institution>, Hamilton, <country>Canada</country></aff>
+<aff id="a4"><label>4</label><institution>Dalla Lana School of Public Health, University of Toronto</institution>, Toronto, <country>Canada</country></aff>
+<aff id="a5"><label>5</label><institution>Toronto Public Health, City of Toronto</institution>, Toronto, <country>Canada</country></aff>
+<aff id="a6"><label>6</label><institution>Department of Medicine, University of Toronto</institution>, Toronto, <country>Canada</country></aff>
+<aff id="a7"><label>7</label><institution>Department of Medicine, University Health Network</institution>, Toronto, <country>Canada</country></aff>
+<aff id="a8"><label>8</label><institution>Computational Epidemiology Lab, Boston Children&#x2019;s Hospital</institution>, Boston, <country>USA</country></aff>
+<aff id="a9"><label>9</label><institution>Department of Epidemiology, Boston University</institution>, Boston, <country>USA</country></aff>
+<aff id="a10"><label>10</label><institution>Division of Endocrinology, Boston Children&#x2019;s Hospital, Harvard Medical School</institution>, Boston, <country>USA</country></aff>
+<aff id="a11"><label>11</label><institution>Women&#x2019;s College Research Institute</institution>, Toronto, <country>Canada</country></aff>
+<aff id="a12"><label>12</label><institution>Department of Family and Community Medicine, University of Toronto</institution>, Toronto, <country>Canada</country></aff>
+<aff id="a13"><label>13</label><institution>Centre for Immunization and Respiratory Infectious Diseases, Public Health Agency of Canada</institution></aff>
+<aff id="a14"><label>14</label><institution>Department of Pediatrics and Biomedical Informatics, Harvard Medical School</institution>, Boston, <country>USA</country></aff>
+</contrib-group>
+<author-notes>
+<corresp id="cor1"><label>&#x002A;</label>Lauren Lapointe-Shaw is the corresponding author,200 Elizabeth St, 13EN-226, Toronto, ON, M5G 2C4, Email: <email>lauren.lapointe.shaw@utoronto.ca</email>, Phone: 416-340-4800 ext. 7136</corresp>
+</author-notes>
+<pub-date pub-type="epub">
+<year>2021</year>
+</pub-date>
+<elocation-id>2021.01.15.21249879</elocation-id>
+<history>
+<date date-type="received">
+<day>15</day>
+<month>1</month>
+<year>2021</year>
+</date>
+<date date-type="rev-recd">
+<day>15</day>
+<month>1</month>
+<year>2021</year>
+</date>
+<date date-type="accepted">
+<day>15</day>
+<month>1</month>
+<year>2021</year>
+</date>
+</history>
+<permissions>
+<copyright-statement>&#x00A9; 2021, Posted by Cold Spring Harbor Laboratory</copyright-statement>
+<copyright-year>2021</copyright-year>
+<license license-type="creative-commons" xlink:href="http://creativecommons.org/licenses/by-nc/4.0/"><license-p>This pre-print is available under a Creative Commons License (Attribution-NonCommercial 4.0 International), CC BY-NC 4.0, as described at <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by-nc/4.0/">http://creativecommons.org/licenses/by-nc/4.0/</ext-link></license-p></license>
+</permissions>
+<self-uri xlink:href="21249879.pdf" content-type="pdf" xlink:role="full-text"/>
+<abstract>
+<title>ABSTRACT</title>
+<sec>
+<title>Background</title>
+<p>Limitations in laboratory diagnostic capacity and reporting delays have hampered efforts to mitigate and control the ongoing COVID-19 pandemic globally. Syndromic surveillance of COVID-19 is an important public health tool that can help detect outbreaks, mobilize a rapid response, and thereby reduce morbidity and mortality. The primary objective of this study was to determine whether syndromic surveillance through self-reported COVID-19 symptoms could be a timely proxy for laboratory-confirmed case trends in the Canadian province of Ontario.</p>
+</sec>
+<sec>
+<title>Methods</title>
+<p>We retrospectively analyzed self-reported symptoms data collected using an online tool &#x2013; Outbreaks Near Me (ONM) &#x2013; from April 20<sup>th</sup> to Oct 11<sup>th</sup>, 2020 in Ontario, Canada. We estimated the correlation coefficient between the weekly proportion of respondents reporting a COVID-like illness (CLI) to both the weekly number of PCR-confirmed COVID-19 cases and the percent positivity in the same period for the same week and with a one-week lag.</p>
+</sec>
+<sec>
+<title>Results</title>
+<p>There were 314,686 responses from 188,783 unique respondents to the ONM symptom survey. Respondents were more likely to be female and be in the 40-59 age demographic compared to the Ontario general population. There was a strong positive correlation between the weekly number of reported cases in Ontario and the percent of respondents reporting CLI each week (r = 0.89, p &#x003C;0.01) and with a one-week lag (r = 0.89, p &#x003C;0.01).</p>
+</sec>
+<sec>
+<title>Interpretation</title>
+<p>We demonstrate a strong positive and significant correlation (r = 0.89, <italic>p</italic> &#x003C;0.01) between percent of self-reported COVID-like illness and the subsequent week&#x2019;s COVID-19 cases reported, highlighting that a rise in CLI may precede official statistics by at least 1 week. This demonstrates the utility of syndromic surveillance in predicting near-future disease activity. Digital surveillance systems are low-cost tools that may help measure the burden of COVID-19 in a community if there is under-detection of cases through conventional laboratory diagnostic testing. This additional information can be used to guide a healthcare response and policy decisions.</p>
+</sec>
+</abstract>
+<counts>
+<page-count count="23"/>
+</counts>
+</article-meta>
+<notes>
+<notes notes-type="competing-interest-statement">
+<title>Competing Interest Statement</title><p>IIB has consulted to BlueDot, a social benefit corporation that tracks the spread of emerging infectious diseases. The authors have no other competing interests to declare</p></notes>
+<notes notes-type="financial-disclosure">
+<title>Funding Statement</title><p>This study is funded by the UofT COVID action initiative (LLS). Outbreaks Near Me is funded by the Center for Disease Control and Prevention, Ending Pandemics and Flu Lab. FluWatchers is funded by the Public Health Agency of Canada.</p></notes>
+<notes notes-type="disclosures">
+<title>Author Declarations</title><p>I confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.</p><p>Yes</p><p>The details of the IRB/oversight body that provided approval or exemption for the research described are given below:</p><p>This study was approved by the Ethics Review Board of University Health Network and the University of Toronto and a waiver of informed consent was granted because the data were collected for public health surveillance purposes. All methods were performed in accordance with institutional guidelines and regulations.</p><p>All necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived.</p><p>Yes</p><p>I understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).</p><p>Yes</p><p>I have followed all appropriate research reporting guidelines and uploaded the relevant EQUATOR Network research reporting checklist(s) and other pertinent material as supplementary files, if applicable.</p><p>Yes</p></notes>
+</notes>
+</front>
+<body>
+<sec id="s1">
+<title>INTRODUCTION</title>
+<p>Severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) and the associated disease, coronavirus disease 2019 (COVID-19), have spread rapidly since first documented in China in late 2019<sup><xref ref-type="bibr" rid="c1">1</xref></sup>. Viral surveillance is an important public health tool that can help detect outbreaks, mobilize a rapid response and thereby reduce morbidity and mortality<sup><xref ref-type="bibr" rid="c2">2</xref>,<xref ref-type="bibr" rid="c3">3</xref></sup>. However, there are limitations to relying solely on laboratory testing for COVID-19 surveillance. At an individual-level, delays between symptom onset and testing, and between testing and COVID-19 test results mean that reported cases typically reflect disease activity from 1-2 weeks prior<sup><xref ref-type="bibr" rid="c4">4</xref></sup>. When case counts are high, testing restrictions may be implemented to preserve capacity. Typically these have included prioritizing those with the highest pre-test probability for a positive result (e.g., symptomatic and/or exposure to a confirmed case) or those at risk of severe illness <sup><xref ref-type="bibr" rid="c5">5</xref></sup>. Changes in COVID-19 testing volumes over time make it difficult to interpret any trends in confirmed case counts. Surveys from the first wave of the pandemic estimated that only 2-9&#x0025; of Canadians with symptoms consistent with COVID-19 were tested<sup><xref ref-type="bibr" rid="c6">6</xref></sup>. When viral transmission and new case counts are high, further delays in testing and results may reduce the reliability of confirmed case data for identifying key epidemiological events such as exponential growth or curve flattening. These limitations highlight the need for more timely, comparable, and comprehensive methods of population disease surveillance to inform public health measures.</p>
+<p>Syndromic surveillance is a public health tool used extensively to identify the beginning of seasonal influenza outbreaks in the United States and Canada, and for the surveillance of other viral and bacterial diseases globally<sup><xref ref-type="bibr" rid="c7">7</xref>&#x2013;<xref ref-type="bibr" rid="c10">10</xref></sup>. Participatory surveillance, a subtype of syndromic surveillance, allows individuals to self-report symptoms through phone or internet-based applications<sup><xref ref-type="bibr" rid="c11">11</xref></sup>. Where testing is incomplete, crowd-sourced symptom data for COVID-19 can be used as a proxy for confirmed case counts, help to estimate the true burden of disease, and forecast future epidemiological trends with strong spatial and temporal resolution<sup><xref ref-type="bibr" rid="c12">12</xref>&#x2013;<xref ref-type="bibr" rid="c14">14</xref></sup>. There have not been any studies comparing trends in self-reported symptoms through participatory syndromic surveillance with laboratory-confirmed COVID-19 cases in Canada. The primary objective of this study was to determine whether self-reported COVID-19 symptoms could be used as a timely proxy for laboratory-confirmed case trends in the Canadian province of Ontario.</p>
+</sec>
+<sec id="s2">
+<title>METHODS</title>
+<sec id="s2a">
+<title>Overview and Setting</title>
+<p>We retrospectively analyzed self-reported participatory surveillance COVID-19 symptoms and test results, in addition to laboratory-confirmed COVID-19 case and testing data from Ontario, Canada. Ontario is Canada&#x2019;s largest province, with approximately 14.5 million residents. The first case of COVID-19 in Ontario was reported on Jan. 25<sup>th</sup>, 2020, and community transmission was estimated to have started on March 17<sup>th</sup>, 2020. To date, the province has experienced two waves of COVID-19 cases with the first wave peaking in mid-April at weekly average of approximately 600 daily cases and an 8&#x0025; test positivity rate. The second wave is ongoing at the time of writing this work. This study was approved by the Ethics Review Board of University Health Network and the University of Toronto and a waiver of informed consent was granted because the data were collected for public health surveillance purposes. All methods were performed in accordance with institutional guidelines and regulations.</p>
+</sec>
+<sec id="s2b">
+<title>Data Sources and Study Population</title>
+<p>The four data sources used for this study include: 1) participatory surveillance survey data from Outbreaks Near Me (ONM), 2) participatory surveillance survey data from FluWatchers, 3) regional COVID-19 case reports from the Ontario Case and Contact Management Plus (CCM Plus) and 4) regional laboratory testing data from the Ontario Laboratory Information System (OLIS). We created weekly tabulations of syndromic survey data, COVID-19 case counts and laboratory tests using the International Organization for Standardization (ISO) week date, a time standard that ordinally specifies each week of the year, starting on Monday and ending on Sunday<sup><xref ref-type="bibr" rid="c15">15</xref></sup>.</p>
+<p>Outbreaks Near Me (outbreaksnearme.org), formerly COVID Near You, is a web-based participatory health surveillance tool created by infectious disease epidemiologists at Boston Children&#x2019;s Hospital and launched in March 2020. This team also created Flu Near You (flunearyou.org), a similar tool for influenza symptoms, which has been validated against clinical data sources and applied to predict influenza trends<sup><xref ref-type="bibr" rid="c7">7</xref>&#x2013;<xref ref-type="bibr" rid="c9">9</xref></sup>. Participants are asked to report on present symptoms, date of symptom onset, demographic information, healthcare encounters, testing, and results. Respondents reported symptoms on the ONM website and could opt to leave their cell phone number to receive SMS reminders to complete the survey again every three days after their initial submission. The mean Canada-wide weekly response rate to the ONM SMS survey prompts was 65.2&#x0025; (SD: 14.5&#x0025;). Symptoms of possible COVID-19 were defined using the CDC Surveillance Case Definition for COVID-19 from the National Notifiable Diseases Surveillance System (NNDSS). The COVID-like illness (CLI) metric approved on August 5<sup>th</sup>, 2020 <sup><xref ref-type="bibr" rid="c16">16</xref></sup> is defined as the presence of at least two of: fever (measured or subjective), chills, rigors, myalgia, headache, sore throat, or at least one of: cough, shortness of breath, difficulty breathing, new olfactory disorder, or new taste disorder. This case definition had a reported sensitivity of 97-98&#x0025; and a specificity of 33-43&#x0025; in adults for detecting a COVID-19 diagnosis<sup><xref ref-type="bibr" rid="c17">17</xref></sup>. We identified repeat responses by age/sex/phone number and included only one response per person-week, prioritizing a CLI positive response and, if none occurred, the first response in each week. We included responses with a self-reported postal code originating from Ontario, Canada, between April 20<sup>th</sup>, 2020 (week 17) and October 11<sup>th</sup>, 2020 (week 41).</p>
+<p>FluWatchers is an internet-based participatory surveillance tool created by the Public Health Agency of Canada in November 2015 to track Influenza-like Illness (ILI). Defined as the presence of fever and cough, ILI has a reported sensitivity of 51-54&#x0025; and specificity of 86-90&#x0025; for a COVID-19 diagnosis in adults<sup><xref ref-type="bibr" rid="c17">17</xref></sup>. Participants can sign up to receive weekly email reminders to report symptoms through a link to an online platform. A total of 7,690 users reported symptoms at least once between April 20<sup>th</sup> and October 11<sup>th</sup>, 2020 in Ontario, and among these users, the average weekly response rate between weeks 17 and 40 was 71&#x0025; (range 60-88&#x0025;).</p>
+<p>CCM Plus data system has been implemented in Ontario to record COVID-19 case information. Each of Ontario&#x2019;s 34 public health units is responsible for local COVID-19 case investigation and entry of case information into CCM Plus. Ontario&#x2019;s case definition for a confirmed case of COVID-19 has evolved based on science and available testing methods, but generally requires a positive laboratory test using a validated nucleic acid amplification test, including real-time PCR and nucleic acid sequencing. We obtained confirmed COVID-19 case counts from the CCM Plus data system on October 13<sup>th</sup>, 2020 for the time period between January 25<sup>th</sup> (Ontario&#x2019;s first case) and October 11<sup>th</sup>, 2020. Extracted de-identified data included case reported date, accurate episode date (date of symptom onset, or if not present the date of specimen collection), age and gender. We used the accurate episode date to estimate the date of symptom onset. We extracted a separate dataset from Ontario Laboratory Information System of the total daily COVID-19 tests by age and gender, with data ranging from January 23<sup>rd</sup>, 2020 to October 11<sup>th</sup>, 2020. Weekly percent positivity in Ontario was calculated by dividing total positive cases reported each week by the total number of tests reported each week.</p>
+</sec>
+</sec>
+<sec id="s3">
+<title>Analysis</title>
+<sec id="s3a">
+<title>Demographics</title>
+<p>We compared ONM respondent characteristics to those of the general Ontario population, and those undergoing COVID-19 testing in Ontario. Provincial population estimates on July 1<sup>st</sup>, 2020, by age and sex, were obtained from Statistics Canada<sup><xref ref-type="bibr" rid="c18">18</xref></sup>. Testing for differences in proportions was done using Chi-square tests and Fisher exact tests (if small cells). The age distributions of those reporting CLI and positive COVID-19 cases were plotted by week. Plots were also constructed for the weekly proportion of all ONM respondents and those with CLI who reported being tested for COVID-19.</p>
+</sec>
+<sec id="s3b">
+<title>Syndromic trends</title>
+<p>We plotted the weekly proportion of ONM respondents with ILI and compared it to the weekly proportion of FluWatchers respondents with ILI. We also calculated the association between these two variables using Pearson&#x2019;s correlation coefficient and a t-test was used to determine its statistical significance.</p>
+<p>We compared both the weekly percent positivity in Ontario and the weekly number of new reported cases against the proportion of ONM respondents reporting CLI a) one week prior and b) the same week. We used both contemporaneous and one-week lagged indicators because of the potential for participatory surveillance to anticipate provincial COVID-19 case data, particularly in light of the known delays between symptom onset and positive case reporting. We also compared the proportion of ONM respondents reporting CLI based on the week of symptom onset to the number of cases in Ontario based on the accurate episode date (a proxy for symptom onset date). For each of these, we reported Pearson&#x2019;s correlation coefficient, and a determined statistical significance using a t-test. Clopper-Pearson confidence intervals were calculated and plotted as error bars for all proportions. The data were analyzed using R version 4.0.1 in the RStudio software environment, version 1.1.463 (RStudio Inc., Boston, MA). All testing for differences was done at a two-tailed <italic>p</italic> &#x003C;0.05 significance threshold.</p>
+</sec>
+</sec>
+<sec id="s4">
+<title>RESULTS</title>
+<sec id="s4a">
+<title>Outbreaks Near Me Respondents, April 20 - Oct 11<sup>th</sup>, 2020</title>
+<p>There were 314,686 responses from 188,783 unique respondents to the ONM survey between April 20<sup>th</sup>, 2020 and October 11<sup>th</sup>, 2020. The total number of responses per week ranged from 3,849 - 10,454 with a mean of 7,115 weekly responses. The median reported age of respondents was 47 years (IQR 36-58) and 61.6&#x0025; (n=32,417) were female. There was a significantly greater proportion of unique ONM respondents who identified as female (n = 32,417; 61.6&#x0025; female) compared to the proportion of all Ontarians who received a test (n = 828,752; 60.0&#x0025; female, <italic>p</italic> &#x003C; 0.01) and compared to the general Ontario population (n = 7,371,442; 50.6&#x0025; female, <italic>p</italic> &#x003C; 0.01) (<xref rid="tbl1" ref-type="table">Table 1</xref>). The proportion of ONM respondents aged 40-59 years (n=23,432; 44.6&#x0025;) was also significantly higher than that of the tested population (n = 410,229; 29.7&#x0025;, <italic>p</italic> &#x003C; 0.01) and the Ontario population overall (n = 3,915,662; 26.9&#x0025;, <italic>p</italic> &#x003C; 0.01). There was also a significantly smaller portion of respondents who were &#x003C;19 years old in ONM (n = 1,816; 3.5&#x0025;<bold>)</bold> compared to those who received a test (n = 9,4120; 6.8&#x0025;, <italic>p</italic> &#x003C; 0.01) and the Ontario general population (n = 3,141,693; 21.6&#x0025;, <italic>p</italic> &#x003C; 0.01). The age distribution of ONM respondents did not change over time. The &#x003C;19 years age demographic consistently made up the lowest proportion of respondents, while the 40-59 age demographic was consistently the most likely to respond each week (<xref rid="fig1" ref-type="fig">Figure 1</xref>).</p>
+<table-wrap id="tbl1" orientation="portrait" position="float">
+<label>Table 1.</label>
+<caption><p>Self-reported characteristics of respondents in data sources compared to the Ontario Population</p></caption>
+<graphic xlink:href="21249879v1_tbl1.tif"/>
+</table-wrap>
+<fig id="fig1" position="float" fig-type="figure">
+<label>Figure 1.</label>
+<caption><p>Age group of ONM respondents for ISO weeks 17 - 41</p></caption>
+<graphic xlink:href="21249879v1_fig1.tif"/>
+</fig>
+</sec>
+<sec id="s4b">
+<title>Outbreaks Near Me Symptom Reporting</title>
+<p>Overall, CLI was reported in 1.39&#x0025; (n = 4,374) of responses, while 1.74&#x0025; (n = 5,474) of all responses reported at least one symptom. The most commonly reported CLI symptom was fatigue (n = 1,382; 0.78&#x0025;) and the least reported CLI symptom was loss of smell or taste (n = 364; 0.11&#x0025;) (See Appendix <xref rid="fig1" ref-type="fig">Figure 1</xref>).</p>
+</sec>
+<sec id="s4c">
+<title>Demographic trends of those reporting a COVID-like Illness to positive COVID-19 cases</title>
+<p>The age groups of those reporting CLI changed over time. In the first five weeks of reporting (mid-April to mid-May) the 40-59 age group was the most likely to report CLI. Subsequently, the 20-39 year age group has consistently been the most likely to report CLI. Those in the &#x003C;20 years age group showed an increasing trend in CLI reporting since the beginning of survey collection (<xref rid="fig2" ref-type="fig">Figure 2</xref>). Similarly, provincial COVID-19 case trends also exhibited an increase in the proportion of individuals &#x003C;20 and 20-30 years of age from late April to September (<xref rid="fig3" ref-type="fig">Figure 3</xref>).</p>
+<fig id="fig2" position="float" fig-type="figure">
+<label>Figure 2.</label>
+<caption><p>Reported age of those with CLI from ONM (left) and age of reported COVID-19 cases in Ontario (right)</p></caption>
+<graphic xlink:href="21249879v1_fig2.tif"/>
+</fig>
+<fig id="fig3" position="float" fig-type="figure">
+<label>Figure 3</label>
+<caption><p>(A) Percent CLI and new COVID-19 Cases in Ontario each week. (B) Percent CLI and percent positivity for SARS-CoV2 in Ontario each week. (C) Weekly percent CLI and number o new COVID-19 cases based on the estimated date of symptom onset.</p></caption>
+<graphic xlink:href="21249879v1_fig3.tif"/>
+</fig>
+</sec>
+<sec id="s4d">
+<title>Outbreaks Near Me Self-Reporting of Testing</title>
+<p>Testing for COVID-19 was self-reported in 341 (0.2&#x0025;) ONM survey responses with the weekly proportion self-reporting testing ranged from a high of 0.66&#x0025; (n = 27) in ISO week 20 to a low of 0.04&#x0025; (n = 3) in ISO week 33 (Appendix <xref rid="fig2" ref-type="fig">Figure 2</xref>). This reported rate of testing was similar to that of the Ontario population which ranged from 0.04 &#x2013; 0.28&#x0025; of the population tested each week. Among those who met the CLI symptom criteria (1592 responses), 16.3&#x0025; (n = 260) reported receiving a COVID-19 test. Among those with CLI, the weekly proportion self-reporting testing ranged from a high of 28.9&#x0025; (n = 20) in week 20 to a low of with 7.3&#x0025; (n = 3) in week 36 (Appendix <xref rid="fig3" ref-type="fig">Figure 3</xref>).</p>
+</sec>
+<sec id="s4e">
+<title>Correlation Between Survey and SARS-CoV-2 Data</title>
+<sec id="s4e1">
+<title>Same Week</title>
+<p>Similar trends were seen in the proportion of individuals reporting CLI and both the number of weekly new COVID-19 cases in Ontario (<xref rid="fig3" ref-type="fig">Figure 3A</xref>) and the COVID-19 test percent positivity in Ontario (<xref rid="fig3" ref-type="fig">Figure 3B</xref>). There was a weak positive correlation between the test percent positivity in Ontario and the proportion of respondents reporting CLI (r = 0.35, 95&#x0025; CI [-0.05, 0.65], <italic>p</italic> = 0.08) and a strong positive correlation between the weekly number of reported cases in Ontario and the percent of respondents reporting CLI each week (r = 0.89, 95&#x0025; CI [0.77, 0.95], <italic>p</italic> &#x003C;0.01).</p>
+</sec>
+<sec id="s4e2">
+<title>One-week lag</title>
+<p>There was a strong positive correlation between the proportion of respondents reporting CLI and the number of new reported cases in Ontario the following week (r = 0.89, 95&#x0025; CI [0.75, 0.95], <italic>p</italic> &#x003C;0.01), and a moderate positive correlation between the proportion with CLI and the COVID-19 test percent positivity in Ontario the following week (r = 0.59, 95&#x0025; CI [0.24, 0.80], <italic>p</italic> &#x003C;0.01).</p>
+</sec>
+<sec id="s4e3">
+<title>Symptom Onset</title>
+<p>When used the estimated symptom onset date from both data sources, there was a strong positive correlation between the weekly proportion of respondents reporting CLI and the weekly number of new cases in Ontario (r = 0.87, 95&#x0025; CI [0.72, 0.93], <italic>p</italic> &#x003C;0.01) (<xref rid="fig3" ref-type="fig">Figure 3C</xref>).</p>
+</sec>
+</sec>
+<sec id="s4f">
+<title>Correlation with Flu Watchers Data</title>
+<p>The proportion of ONM respondents reporting ILI (fever and cough) each week ranged from a high of 0.21&#x0025; (n=13) in week 39 (Sept. 21<sup>st</sup> &#x2013; 27<sup>th</sup>) to a low of 0&#x0025; (n=0) in week 29 (July 13<sup>th</sup> &#x2013; July 19<sup>th</sup>. The proportion of respondents reporting ILI from ONM and from FluWatchers had similar ranges and trends over time (See <xref ref-type="fig" rid="figA4">Appendix Figure 4</xref>). There was a strong positive correlation in the weekly percentage of respondents reporting ILI between the ONM and FluWatchers survey (r = 0.73, 95&#x0025; CI [0.61 &#x2013; 0.85] <italic>p</italic> &#x003C; 0.01).</p>
+</sec>
+</sec>
+<sec id="s5">
+<title>DISCUSSION</title>
+<p>We found that there was a strong positive and significant correlation between self-reported COVID-like illness (CLI) and the subsequent week&#x2019;s number of new COVID-19 reported cases, highlighting that the rise in CLI may precede official statistics by at least one week. This demonstrates the utility of syndromic surveillance in predicting near-future disease activity. Furthermore, ONM trends in fever and cough correlated with FluWatchers, another Canadian participatory surveillance system. These findings suggest there is the potential for participatory surveillance data to be useful for understanding and even forecasting COVID-19 trends in Ontario.</p>
+<p>These findings build on previous reports of digital crowd-sourced surveillance techniques reported in the literature. Yoneoka et al. and Nomura et al. reported analyses of syndromic data collected through a large-scale (over 350,000 participants) digital surveillance system in Tokyo, Japan for one week. They observed a strong spatial correlation between symptoms and confirmed COVID-19 cases in Tokyo, Japan<sup><xref ref-type="bibr" rid="c12">12</xref>&#x2013;<xref ref-type="bibr" rid="c14">14</xref></sup>. Here we show similar findings of self-reported symptoms tracking with COVID-19 confirmed cases for long-term data collected over several months in an entire Canadian province.</p>
+<p>When comparing demographic characteristics between survey respondents and those who received COVID-19 testing, we found significant differences in age and gender. ONM respondents were more likely to be female and aged 40 &#x2013; 59 years than those being tested for SARS-CoV2 in Ontario. Others have similarly reported that middle-aged females were the group most engaged with influenza participatory surveillance tools<sup><xref ref-type="bibr" rid="c7">7</xref></sup>. The ability of this survey to collect symptom data from groups other than those being tested allows for more comprehensive population coverage. Early limitations on testing to only the most severe cases caused uncertainties in true reported case counts<sup><xref ref-type="bibr" rid="c6">6</xref></sup>. Eligibility criteria for testing have changed over the course of the pandemic - most recently, testing was again restricted to those with symptoms, and only available by pre-scheduled appointment, effectively restricting the number of tests available<sup><xref ref-type="bibr" rid="c19">19</xref></sup>. Survey data that differs in demographic characteristics from those that received a test can provide valuable insights and fill knowledge gaps about groups not receiving testing. The addition of symptom surveillance information ensures that the most representative and timely data is used to inform policy decisions.</p>
+<p>Participatory surveillance data also demonstrated that an increasing proportion of those reporting CLI, and of those testing positive for SARS-COV-2, were ages &#x003C;20 and 20-39 years. In April those &#x003C;40 years made up &#x223C;25&#x0025; of positive COVID-19 tests. As of October 2020, approximately 50&#x0025; of positive COVID-19 tests in Ontario were individuals &#x003C;40 years old. Similarly, approximately 50&#x0025; of those with a COVID-like illness were &#x003C;40 years of age at the end of our study observation period. These findings demonstrate the utility of ONM to detect the evolving demographic distribution of COVID-19.</p>
+<p>We found that 0.12&#x0025; &#x2013; 0.66&#x0025; of ONM respondents reported being tested for COVID-19. This was similar to the weekly Ontario population testing rate which ranged from 0.04&#x0025; - 0.28&#x0025; of the population. ONM respondents consistently reported a higher rate of COVID-19 testing than the Ontario general population. This may relate to ONM respondents taking a more active role in their health. We also found that a large proportion of respondents with COVID-like illness reported not being tested &#x2013; with a decreasing trend since week 25. Among those who reported CLI, 16.3&#x0025; reported being tested in the last 2 weeks, which dropped to 7.3&#x0025; in week 37. In the first wave of the pandemic, we estimated that only 2-9&#x0025; of those with symptoms had been tested<sup><xref ref-type="bibr" rid="c20">20</xref></sup>. Given growing awareness of the transmissibility and health impacts of COVID-19, one can only speculate as to why the testing rate among symptomatic people might be falling in the second wave. It is possible that due to a lack of paid sick leave, individuals may be less inclined to undergo testing due to the implications of a positive test on the inability to engage in employment.</p>
+<p>There are several limitations to this study. Rapidly rising COVID-19 case counts are often broadcasted in the media and this can influence both healthcare-seeking behaviour and symptom self-awareness<sup><xref ref-type="bibr" rid="c21">21</xref></sup>. In the United Kingdom, significant national and local media coverage of COVID-19 cases resulted in observed increases in syndromic signals (both nationally and locally), particularly those associated with the symptoms of COVID-19 reported in the news media<sup><xref ref-type="bibr" rid="c21">21</xref></sup>. However, some participatory surveillance systems are more sensitive to the impact of media reporting than others &#x2013; hence, a multi-source surveillance approach can be beneficial to reliably track population symptomatology. Next, the ONM participatory surveillance method relies on access to the internet, which may exclude individuals who are underhoused or experiencing homelessness, those with poor internet or computer access, or limited English literacy. These characteristics are more common among the racialized and marginalized groups who are disproportionately affected by COVID-19<sup><xref ref-type="bibr" rid="c22">22</xref></sup>. In addition, an estimated 17.9 &#x2013; 30.8&#x0025; of COVID-19 infected individuals are asymptomatic or minimally symptomatic<sup><xref ref-type="bibr" rid="c23">23</xref>,<xref ref-type="bibr" rid="c24">24</xref></sup>. The ability of syndromic surveillance methods to accurately predict case numbers will be confounded by changes in the rate of asymptomatic testing. This is because asymptomatic cases contribute to case counts but cannot be detected through syndromic surveillance methods. This study was also limited to Ontario. The generalizability of findings will depend on local uptake of syndromic surveillance tools, as well as on access to timely testing. In locations where testing is less accessible or characterized by long delays for test results, syndromic surveillance data may anticipate testing data by 1-2 weeks. Where testing is broadly accessible, with short delays, we expect present week symptom and case data to be more tightly correlated.</p>
+<p>There have been few previous reports of an association between participatory surveillance signals and confirmed case counts for COVID-19<sup><xref ref-type="bibr" rid="c13">13</xref>,<xref ref-type="bibr" rid="c14">14</xref></sup>. This is the first such study to be reported in Canada. We found that online volunteer symptom surveys signalled subsequent increases in COVID-19 case counts in Ontario, Canada. Digital surveillance systems such as ONM are low-cost tools that may be helpful in determining the burden of COVID-19 in a community, particularly if there is under-detection of cases through conventional laboratory diagnostic testing. This additional information can be used as a cost-effective resource to guide a healthcare response and guide policy decision-making.</p>
+</sec>
+</body>
+<back>
+<sec sec-type="data-availability">
+<title>Data Availability</title>
+<p>Data will be made available upon request to the corresponding author</p>
+</sec>
+<ref-list>
+<title>REFERENCES</title>
+<ref id="c1"><label>1.</label><mixed-citation publication-type="journal"><string-name><surname>Li</surname>, <given-names>Q.</given-names></string-name> <etal>et al.</etal> <article-title>Early Transmission Dynamics in Wuhan, China, of Novel Coronavirus&#x2013; Infected Pneumonia</article-title>. <source>New England Journal of Medicine</source> vol. <volume>382</volume> <fpage>1199</fpage>&#x2013;<lpage>1207</lpage> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c2"><label>2.</label><mixed-citation publication-type="journal"><string-name><surname>Sharfstein</surname>, <given-names>J. M.</given-names></string-name>, <string-name><surname>Becker</surname>, <given-names>S. J.</given-names></string-name> &#x0026; <string-name><surname>Mello</surname>, <given-names>M. M.</given-names></string-name> <article-title>Diagnostic Testing for the Novel Coronavirus</article-title>. <source>JAMA - Journal of the American Medical Association</source> vol. <volume>323</volume> <fpage>1437</fpage>&#x2013;<lpage>1438</lpage> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c3"><label>3.</label><mixed-citation publication-type="journal"><string-name><surname>Jernigan</surname>, <given-names>D. B.</given-names></string-name> <etal>et al.</etal> <article-title>Detecting 2009 pandemic influenza a (H1N1) virus infection: Availability of diagnostic testing led to rapid pandemic response</article-title>. <source>Clin. Infect. Dis</source>. <volume>52</volume>, (<year>2011</year>)</mixed-citation></ref>
+<ref id="c4"><label>4.</label><mixed-citation publication-type="journal"><string-name><surname>Babiker</surname>, <given-names>A.</given-names></string-name>, <string-name><surname>Myers</surname>, <given-names>C. W.</given-names></string-name>, <string-name><surname>Hill</surname>, <given-names>C. E.</given-names></string-name> &#x0026; <string-name><surname>Guarner</surname>, <given-names>J.</given-names></string-name> <article-title>SARS-CoV-2 Testing</article-title>. <source>Am. J. Clin. Pathol</source>. <volume>153</volume>, <fpage>706</fpage>&#x2013;<lpage>708</lpage> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c5"><label>5.</label><mixed-citation publication-type="journal"><string-name><surname>Rader</surname>, <given-names>B.</given-names></string-name> <etal>et al.</etal> <article-title>Geographic access to United States SARS-CoV-2 testing sites highlights healthcare disparities and may bias transmission estimates</article-title>. <source>J. Travel Med</source>. <volume>27</volume>, (<year>2020</year>).</mixed-citation></ref>
+<ref id="c6"><label>6.</label><mixed-citation publication-type="journal"><string-name><surname>Lapointe-Shaw</surname>, <given-names>L.</given-names></string-name> <etal>et al.</etal> <article-title>Web and phone-based COVID-19 syndromic surveillance in Canada: A cross-sectional study</article-title>. <source>PLoS One</source> <volume>15</volume>, (<year>2020</year>).</mixed-citation></ref>
+<ref id="c7"><label>7.</label><mixed-citation publication-type="journal"><string-name><surname>Baltrusaitis</surname>, <given-names>K.</given-names></string-name> <etal>et al.</etal> <article-title>Determinants of Participants&#x2019; Follow-Up and Characterization of Representativeness in Flu Near You, A Participatory Disease Surveillance System</article-title>. <source>JMIR Public Heal. Surveill</source>. <volume>3</volume>, <fpage>e18</fpage> (<year>2017</year>).</mixed-citation></ref>
+<ref id="c8"><label>8.</label><mixed-citation publication-type="journal"><string-name><surname>Baltrusaitis</surname>, <given-names>K.</given-names></string-name> <etal>et al.</etal> <article-title>Comparison of crowd-sourced, electronic health records based, and traditional health-care based influenza-tracking systems at multiple spatial resolutions in the United States of America</article-title>. <source>BMC Infect. Dis</source>. <volume>18</volume>, (<year>2018</year>).</mixed-citation></ref>
+<ref id="c9"><label>9.</label><mixed-citation publication-type="journal"><string-name><surname>Brownstein</surname>, <given-names>J. S.</given-names></string-name> <etal>et al.</etal> <article-title>Combining Participatory Influenza Surveillance with Modeling and Forecasting: Three Alternative Approaches</article-title>. <source>JMIR Public Heal. Surveill</source>. <volume>3</volume>, <fpage>e83</fpage> (<year>2017</year>).</mixed-citation></ref>
+<ref id="c10"><label>10.</label><mixed-citation publication-type="journal"><string-name><surname>Van Den Wijngaard</surname>, <given-names>C.</given-names></string-name> <etal>et al.</etal> <article-title>Validation of syndromic surveillance for respiratory pathogen activity</article-title>. <source>Emerg. Infect. Dis</source>. <volume>14</volume>, <fpage>917</fpage>&#x2013;<lpage>925</lpage> (<year>2008</year>).</mixed-citation></ref>
+<ref id="c11"><label>11.</label><mixed-citation publication-type="journal"><string-name><surname>Chan</surname>, <given-names>A. T.</given-names></string-name> &#x0026; <string-name><surname>Brownstein</surname>, <given-names>J. S.</given-names></string-name> <article-title>Putting the Public Back in Public Health &#x2014; Surveying Symptoms of Covid-19</article-title>. <source>N. Engl. J. Med</source>. <volume>383</volume>, <fpage>e45</fpage> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c12"><label>12.</label><mixed-citation publication-type="journal"><string-name><surname>Desjardins</surname>, <given-names>M. R.</given-names></string-name> <article-title>Syndromic surveillance of COVID-19 using crowdsourced data</article-title>. <source>Lancet Reg. Heal. - West. Pacific</source> <volume>4</volume>, <fpage>100024</fpage> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c13"><label>13.</label><mixed-citation publication-type="journal"><string-name><surname>Yoneoka</surname>, <given-names>D.</given-names></string-name> <etal>et al.</etal> <article-title>Large-scale epidemiological monitoring of the COVID-19 epidemic in Tokyo</article-title>. <source>Lancet Reg. Heal. - West. Pacific</source> <volume>3</volume>, <fpage>100016</fpage> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c14"><label>14.</label><mixed-citation publication-type="journal"><string-name><surname>Nomura</surname>, <given-names>S.</given-names></string-name> <etal>et al.</etal> <article-title>An assessment of self-reported COVID-19 related symptoms of 227,898 users of a social networking service in Japan: Has the regional risk changed after the declaration of the state of emergency?</article-title> <source>Lancet Reg. Heal. - West. Pacific</source> <volume>1</volume>, <fpage>100011</fpage> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c15"><label>15.</label><mixed-citation publication-type="other"><collab>ISO</collab> <article-title>8601111:2019. Date and time &#x2014; Representations for information interchange - Part 1: Basic rules</article-title>. <source>ISO - Int. Organ. Stand</source>. (<year>2019</year>).</mixed-citation></ref>
+<ref id="c16"><label>16.</label><mixed-citation publication-type="website"><collab>National Notifiable Diseases Surveillance System</collab>. <article-title>Coronavirus Disease 2019 (COVID-19) 2020 Interim Case Definition, Approved April 5, 2020</article-title>. <source>Centers for Disease Control and Prevention</source> vol. <volume>2019</volume> <fpage>2019</fpage>&#x2013;<lpage>2021</lpage> <ext-link ext-link-type="uri" xlink:href="https://wwwn.cdc.gov/nndss/conditions/coronavirus-disease-2019-covid-19/case-definition/2020/">https://wwwn.cdc.gov/nndss/conditions/coronavirus-disease-2019-covid-19/case-definition/2020/</ext-link> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c17"><label>17.</label><mixed-citation publication-type="other"><string-name><surname>Reses</surname>, <given-names>H. E.</given-names></string-name> <etal>et al.</etal> <article-title>Performance of Existing and Novel Surveillance Case Definitions for COVID-19 in the Community</article-title>. <source>medRxiv 2020.10.02.20195479</source> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c18"><label>18.</label><mixed-citation publication-type="website"><collab>Government of Canada. Population estimates on July 1st, by age and sex</collab> (Table 17-10-0005-01). <source>Statistics Canada, 2018&#x2013;2020</source> https://doi.org/10.25318/1710000501-eng&#x0025;0Ahttps://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1710000501 (<year>2019</year>) doi:<ext-link ext-link-type="uri" xlink:href="https://doi.org/10.25318/1710000501-eng">https://doi.org/10.25318/1710000501-eng</ext-link>.</mixed-citation></ref>
+<ref id="c19"><label>19.</label><mixed-citation publication-type="other"><string-name><surname>Draaisma</surname>, <given-names>M.</given-names></string-name> &#x0026; <string-name><surname>King</surname>, <given-names>A.</given-names></string-name> <article-title>COVID-19 case counts will drop artificially as testing moves to appointment only, experts warn</article-title>. <source>CBC</source> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c20"><label>20.</label><mixed-citation publication-type="other"><string-name><surname>Lapointe-Shaw</surname>, <given-names>L.</given-names></string-name> <etal>et al.</etal> <article-title>Syndromic Surveillance for COVID-19 in Canada</article-title>. <source>Medrxiv</source> (<year>2020</year>) doi:<pub-id pub-id-type="doi">10.1101/2020.05.19.20107391</pub-id>.</mixed-citation></ref>
+<ref id="c21"><label>21.</label><mixed-citation publication-type="other"><string-name><surname>Elliot</surname>, <given-names>A. J.</given-names></string-name> <etal>et al.</etal> <article-title>The COVID-19 pandemic: A new challenge for syndromic surveillance</article-title>. <source>Epidemiol. Infect</source>. (<year>2020</year>) doi:<pub-id pub-id-type="doi">10.1017/S0950268820001314</pub-id>.</mixed-citation></ref>
+<ref id="c22"><label>22.</label><mixed-citation publication-type="journal"><string-name><surname>Patel</surname>, <given-names>J. A.</given-names></string-name> <etal>et al.</etal> <article-title>Poverty, inequality and COVID-19: the forgotten vulnerable</article-title>. <source>Public Health</source> vol. <volume>183</volume> <fpage>110</fpage>&#x2013;<lpage>111</lpage> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c23"><label>23.</label><mixed-citation publication-type="journal"><string-name><surname>Nishiura</surname>, <given-names>H.</given-names></string-name> <etal>et al.</etal> <article-title>The Rate of Underascertainment of Novel Coronavirus (2019-nCoV) Infection: Estimation Using Japanese Passengers Data on Evacuation Flights</article-title>. <source>J. Clin. Med</source>. <volume>9</volume>, <fpage>419</fpage> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c24"><label>24.</label><mixed-citation publication-type="journal"><string-name><surname>Mizumoto</surname>, <given-names>K.</given-names></string-name>, <string-name><surname>Kagaya</surname>, <given-names>K.</given-names></string-name>, <string-name><surname>Zarebski</surname>, <given-names>A.</given-names></string-name> &#x0026; <string-name><surname>Chowell</surname>, <given-names>G.</given-names></string-name> <article-title>Estimating the asymptomatic proportion of coronavirus disease 2019 (COVID-19) cases on board the Diamond Princess cruise ship, Yokohama, Japan, 2020</article-title>. <source>Eurosurveillance</source> vol. <volume>25</volume> (<year>2020</year>).</mixed-citation></ref>
+</ref-list>
+<sec id="s6">
+<title>Author Contributions</title>
+<p>LLS, JSB, IIB, DNF, and ART led the conception and design of the work. BMR, ASM, and JP performed data extraction and analysis. LLS and ASM drafted the manuscript. ASM and ART prepared Figures and Tables. CMA, JP, JH, EG, LL, LLS, BMR, JBH, DNF, ART, IIB, JSB and NMI interpreted the data and provided critical review of the manuscript. All authors reviewed and approved the final manuscript.</p>
+</sec>
+<ack>
+<title>Acknowledgements</title>
+<p>This study is funded by the UofT COVID action initiative (LLS). Outbreaks Near Me is funded by the Center for Disease Control and Prevention, Ending Pandemics and Flu Lab. FluWatchers is funded by the Public Health Agency of Canada.</p>
+</ack>
+<sec id="s7">
+<title>Competing Interests</title>
+<p>IIB has consulted to BlueDot, a social benefit corporation that tracks the spread of emerging infectious diseases. The authors have no other competing interests to declare</p>
+</sec>
+<sec>
+<title>Appendix</title>
+<fig id="figA1" position="float" fig-type="figure">
+<label>Appendix Figure 1:</label>
+<caption><p>Percent of respondents reporting each symptom from the Outbreaks Near Me survey</p></caption>
+<graphic xlink:href="21249879v1_figA1.tif"/>
+</fig>
+<fig id="figA2" position="float" fig-type="figure">
+<label>Appendix Figure 2.</label>
+<caption><p>Percent of ONM responses reporting being tested, compared to the percent of the Ontario population tested for COVID-19, by week. Line indicates the two-week moving average.</p></caption>
+<graphic xlink:href="21249879v1_figA2.tif"/>
+</fig>
+<fig id="figA3" position="float" fig-type="figure">
+<label>Appendix Figure 3.</label>
+<caption><p>Percent of CLI-positive respondents reporting COVID-19 testing, by week. Line indicates the two-week moving average.</p></caption>
+<graphic xlink:href="21249879v1_figA3.tif"/>
+</fig>
+<fig id="figA4" position="float" fig-type="figure">
+<label>Appendix Figure 4.</label>
+<caption><p>Proportion of individuals reporting ILI (both fever and cough) from Outbreaks Near Me and FluWatchers</p></caption>
+<graphic xlink:href="21249879v1_figA4.tif"/>
+</fig>
+</sec>
+</back>
+</article>

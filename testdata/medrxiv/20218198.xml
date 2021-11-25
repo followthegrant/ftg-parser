@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.2d1 20170631//EN" "JATS-archivearticle1.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" article-type="article" dtd-version="1.2d1" specific-use="production" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="publisher-id">MEDRXIV</journal-id>
+<journal-title-group>
+<journal-title>medRxiv</journal-title>
+<abbrev-journal-title abbrev-type="publisher">medRxiv</abbrev-journal-title>
+</journal-title-group>
+<publisher>
+<publisher-name>Cold Spring Harbor Laboratory</publisher-name>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1101/2020.10.23.20218198</article-id>
+<article-version>1.1</article-version>
+<article-categories>
+<subj-group subj-group-type="hwp-journal-coll">
+<subject>Health Informatics</subject>
+</subj-group>
+</article-categories>
+<title-group>
+<article-title>Development and validation of multivariable machine learning algorithms to predict risk of cancer in symptomatic patients referred urgently from primary care</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" corresp="yes">
+<name><surname>Savage</surname><given-names>Richard S</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="author-notes" rid="n1">&#x002A;</xref>
+<xref ref-type="corresp" rid="cor1">&#x0023;</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Messenger</surname><given-names>Mike</given-names></name>
+<xref ref-type="aff" rid="a2">2</xref>
+<xref ref-type="aff" rid="a5">5</xref>
+<xref ref-type="author-notes" rid="n1">&#x002A;</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Neal</surname><given-names>Richard D</given-names></name>
+<xref ref-type="aff" rid="a2">2</xref>
+<xref ref-type="aff" rid="a5">5</xref>
+<xref ref-type="author-notes" rid="n1">&#x002A;</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Ferguson</surname><given-names>Rosie</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Johnston</surname><given-names>Colin</given-names></name>
+<xref ref-type="aff" rid="a3">3</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Lloyd</surname><given-names>Katherine L</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Neal</surname><given-names>Matthew D</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Sansom</surname><given-names>Nigel</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Selby</surname><given-names>Peter</given-names></name>
+<xref ref-type="aff" rid="a2">2</xref>
+<xref ref-type="aff" rid="a4">4</xref>
+<xref ref-type="aff" rid="a5">5</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Sharma</surname><given-names>Nisha</given-names></name>
+<xref ref-type="aff" rid="a3">3</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Shinkins</surname><given-names>Bethany</given-names></name>
+<xref ref-type="aff" rid="a2">2</xref>
+<xref ref-type="aff" rid="a5">5</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Skinner</surname><given-names>Jim R</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Tully</surname><given-names>Giles</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Duffy</surname><given-names>Sean</given-names></name>
+<xref ref-type="aff" rid="a3">3</xref>
+<xref ref-type="author-notes" rid="n2">&#x002A;&#x002A;</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Hall</surname><given-names>Geoff</given-names></name>
+<xref ref-type="aff" rid="a2">2</xref>
+<xref ref-type="aff" rid="a3">3</xref>
+<xref ref-type="aff" rid="a5">5</xref>
+<xref ref-type="author-notes" rid="n2">&#x002A;&#x002A;</xref>
+</contrib>
+<aff id="a1"><label>1</label><institution>PinPoint Data Science Ltd</institution></aff>
+<aff id="a2"><label>2</label><institution>University of Leeds</institution></aff>
+<aff id="a3"><label>3</label><institution>Leeds Teaching Hospitals Trust</institution></aff>
+<aff id="a4"><label>4</label><institution>Chair of the PinPoint Scientific Advisory Board</institution></aff>
+<aff id="a5"><label>5</label><institution>NIHR MedTech and In Vitro Diagnostic Co-Operative Leeds</institution></aff>
+</contrib-group>
+<author-notes>
+<corresp id="cor1"><label>&#x0023;</label>Corresponding author; email: <email>rich.savage@pinpointdatascience.com</email></corresp>
+<fn id="n1"><label>&#x002A;</label><p>Joint lead author</p></fn>
+<fn id="n2"><label>&#x002A;&#x002A;</label><p>Joint last author</p></fn>
+</author-notes>
+<pub-date pub-type="epub">
+<year>2020</year>
+</pub-date>
+<elocation-id>2020.10.23.20218198</elocation-id>
+<history>
+<date date-type="received">
+<day>23</day>
+<month>10</month>
+<year>2020</year>
+</date>
+<date date-type="rev-recd">
+<day>23</day>
+<month>10</month>
+<year>2020</year>
+</date>
+<date date-type="accepted">
+<day>27</day>
+<month>10</month>
+<year>2020</year>
+</date>
+</history>
+<permissions>
+<copyright-statement>&#x00A9; 2020, Posted by Cold Spring Harbor Laboratory</copyright-statement>
+<copyright-year>2020</copyright-year>
+<license license-type="creative-commons" xlink:href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><license-p>This pre-print is available under a Creative Commons License (Attribution-NonCommercial-NoDerivs 4.0 International), CC BY-NC-ND 4.0, as described at <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by-nc-nd/4.0/">http://creativecommons.org/licenses/by-nc-nd/4.0/</ext-link></license-p></license>
+</permissions>
+<self-uri xlink:href="20218198.pdf" content-type="pdf" xlink:role="full-text"/>
+<abstract>
+<title>Abstract</title>
+<sec>
+<title>Background</title>
+<p>Urgent Suspected Cancer (2WW) referrals have been successful in improving early cancer detection but are increasingly a major burden on NHS services. This has been exacerbated by the COVID-19 pandemic.</p></sec>
+<sec>
+<title>Method</title>
+<p>We developed and validated tests to assess the risk of any cancer for 2WW patients. The tests use routine blood measurements (FBC, U&#x0026;E, LFTs, tumour markers), combining them using machine learning and statistical modelling. Algorithms were developed and validated for nine 2WW pathways using retrospective data from 371,799 referrals to Leeds Teaching Hospitals Trust (development set 2011-16, validation set 2017-19). A minimum set of blood measurements were required for inclusion, and missing data were modelled internally by the algorithms.</p></sec>
+<sec>
+<title>Findings</title>
+<p>We present results for two clinical use-cases. In use-case 1, the algorithms correctly identify 20&#x0025; of patients who do not have cancer and may not need an urgent 2WW referral. In use-case 2, they identify 90&#x0025; of cancer cases with a high probability of cancer that could be prioritised for review.</p></sec>
+<sec>
+<title>Interpretation</title>
+<p>Combining a panel of widely available blood markers produces effective blood tests for cancer for NHS 2WW patients. The tests are cost-effective, can be deployed rapidly to any NHS pathology laboratory with no additional hardware requirements, and are of particular value during the COVID-19 pandemic.</p></sec>
+<sec>
+<title>Funding</title>
+<p>Aspects of this work were supported by Innovate UK, MRC, Leeds City Region Enterprise Partnership (LEP), NIHR Leeds In Vitro Diagnostic Co-operative, CRUK CanTest Collaborative, and PinPoint Data Science Ltd</p></sec>
+</abstract>
+<counts>
+<page-count count="14"/>
+</counts>
+</article-meta>
+<notes>
+<notes notes-type="competing-interest-statement">
+<title>Competing Interest Statement</title><p>RS, KL, MN, JS, NPS, GT are employed by and are shareholders in PinPoint Data Science Ltd.
+MM has been employed as a consultant to PinPoint Data Science Ltd in October to November 2020.
+Both the University of Leeds and Leeds Teaching Hospitals Trust have a royalty agreement with PinPoint Data Science Ltd, meaning that those institutions are likely to benefit financially in the event of PinPoint being commercially successful.
+</p></notes>
+<notes notes-type="financial-disclosure">
+<title>Funding Statement</title><p>Aspects of this work have been supported by awards from MRC Proximity to Discovery, Local Enterprise Partnership, and Innovate UK. Richard Neal, Bethany Shinkins, Geoff Hall and Michael Messenger are funded by the NIHR Leeds In Vitro Diagnostic Co-operative. PinPoint Data Science Ltd funded the data science work and time contributions of Richard Savage, Matt Neal, Kat Lloyd, Jim Skinner, Giles Tully, Nigel Sansom, and Rosie Ferguson. This research is linked to the CanTest Collaborative, which is funded by Cancer Research UK [C8640/A23385], of which RDN is an Associate Director, MM was a member of Senior Faculty, and BS was part-funded</p></notes>
+<notes notes-type="disclosures">
+<title>Author Declarations</title><p>I confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.</p><p>Yes</p><p>The details of the IRB/oversight body that provided approval or exemption for the research described are given below:</p><p>Data for the analysis are retrospective and fully de-identified before being released to the study team. The work was carried out under service evaluation with the formal approval of the Leeds Teaching Hospitals Trust R&#x0026;I and Data Governance Committee, and with the specific approval of the Trust Caldicott Guardian.</p><p>All necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived.</p><p>Yes</p><p>I understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).</p><p>Yes</p><p>I have followed all appropriate research reporting guidelines and uploaded the relevant EQUATOR Network research reporting checklist(s) and other pertinent material as supplementary files, if applicable.</p><p>Yes</p></notes>
+</notes>
+</front>
+<body>
+<sec id="s1">
+<title>Background</title>
+<p>A major NHS cancer policy to diagnose cancer earlier led to the introduction of Urgent Suspected Cancer referrals. These referrals are predicated on the risk of symptomatic patients having cancer.<sup><xref ref-type="bibr" rid="c1">1</xref></sup> Trusts assess patients within two weeks (&#x2018;two-week wait&#x2019; (2WW) referral). The 2WW pathways have contributed to improving outcomes; higher general practice use of referrals for suspected cancer is associated with lower mortality for the four most common types of cancer (prostate, breast, lung, and colorectal).<sup><xref ref-type="bibr" rid="c2">2</xref></sup></p>
+<p>This approach places a major strain on diagnostic services on NHS England, with over 2 million 2WW referrals annually, and a 10&#x0025; year-on-year increase in referrals over the past decade.<sup><xref ref-type="bibr" rid="c3">3</xref></sup> This highlights an unsustainable burden on existing services, workforce and financial resources. Whilst there is variation between cancer pathways, only 7&#x0025; overall of 2WW referral patients are diagnosed with cancer.<sup><xref ref-type="bibr" rid="c3">3</xref></sup> Many patients are therefore subject to unnecessary psychological distress, as well as being exposed to diagnostic tests which may inadvertently cause harm. Clearly there is a need to improve the efficiency of these pathways.</p>
+<p>These challenges are exacerbated by the current COVID-19 crisis. The NHS capacity to assess 2WW referrals is reduced, and a backlog of referrals continues to build.<sup><xref ref-type="bibr" rid="c3">3</xref>,<xref ref-type="bibr" rid="c4">4</xref></sup> These unprecedented challenges urgently require new solutions. COVID-19 has presented an opportunity for GPs to permanently change how they use emerging technologies.<sup><xref ref-type="bibr" rid="c5">5</xref></sup></p>
+<p>Many biomarkers have been evaluated for their use in cancer diagnosis; however only a few are currently used in either primary or secondary care settings. A systematic mapping review identified 94 ctDNA studies alone, highlighting how much more work is required prior to clinical use.<sup><xref ref-type="bibr" rid="c6">6</xref></sup> Companies like GRAIL and Freenome are pursuing this, with clinical trials ongoing.<sup><xref ref-type="bibr" rid="c7">7</xref>,<xref ref-type="bibr" rid="c8">8</xref></sup> There is also evidence that signals from a range of different analytes can be usefully combined via machine learning.<sup><xref ref-type="bibr" rid="c9">9</xref></sup></p>
+<p>Using such approaches to triage cancer referrals should bring benefits to patients, health-systems and the economy. For example, a <italic>rule-out</italic> test for symptomatic patients, like those referred to the NHS 2WW, could identify those with very low cancer risk, allowing many patients without cancer to avoid unnecessary procedures and freeing up diagnostic capacity for those at greater risk.</p>
+<p>The work presented in this paper addresses the top three priority areas identified by Badrick et al (2019), including: a simple, non-invasive, painless and convenient test to detect cancer early; a blood test to detect some or all cancers early that can be included into routine care; and a test that is easily accessible to General Practice.<sup><xref ref-type="bibr" rid="c10">10</xref></sup></p>
+<p>We report the development and validation of a set of machine learning algorithms to provide a calibrated risk probability of cancer (a score between zero and one, higher values indicating greater risk of cancer) for triaging symptomatic patients. A calibrated risk probability has a variety of clinical uses. This paper focuses on the two use-cases for the NHS 2WW:</p>
+<p>Use-Case 1 - a rule-out test when patient has a very low risk of cancer, allowing initial management in primary care.</p>
+<p>Use-Case 2 - a way of identifying patients at high risk of having cancer to fast-track them for further tests.</p>
+</sec>
+<sec id="s2">
+<title>Methods</title>
+<sec id="s2a">
+<title>Methodological Design and Source of Data</title>
+<p>This work is a single centre, retrospective diagnostic prediction study (classified as a Type 2b study by the TRIPOD statement.<sup><xref ref-type="bibr" rid="c11">11</xref></sup> The prediction algorithms were developed and validated on a large data set from a single geographic area, split chronologically into two independent cohorts.</p>
+<p>The data set contained 371,799 consecutive 2WW referrals in the Leeds region from 2011-2019. The development cohort was composed of 224,669 consecutive patients with an urgent suspected cancer referral in Leeds between January 2011 and December 2016. The diagnostic algorithms developed were then externally validated on a similar consecutive sample of 147,130 patients (between January 2017 and December 2019). Both development and validation sets were selected using the same inclusion and exclusion criteria and both received the same pre-processing, consisting of removing greater-than (&#x201C;&#x003E;&#x201C;) symbols and setting less-than (&#x201C;&#x003C;&#x201C;) values to zero. This is a simple imputation for the case where a pathology laboratory returns a result outside the reportable range. Because the chosen machine learning algorithms are not sensitive to scaling of individual variables, it was not necessary to normalise the inputs.</p>
+</sec>
+<sec id="s2b">
+<title>Participants</title>
+<p>Patients were selected because they received a 2WW referral to Leeds Teaching Hospitals NHS Trust during the above timeframe. Referrals were included for all 2WW pathways, and all patients over the age of 18 were included in the cohort. Patients were included if they had a minimum set of blood counts and biochemistry measurements available. Patients from all 2WW pathways were included in the development set; patients from the nine 2WW pathways at LTHT considered in this paper were included in the validation set. Patients not fulfilling these criteria were excluded from the analysis. All patients were followed up to 12 months after the conclusion of their referral, or until February 2020. Patients in the validation set (i.e. referred from January 2017 onwards) only required the outcome of the 2WW referral and therefore the possibility of censoring of outcomes up to 12 months did not affect the validation results.</p>
+</sec>
+<sec id="s2c">
+<title>Outcome</title>
+<p>The algorithms were trained to predict whether or not a patient would receive a cancer diagnosis. Outcome labels were derived from ICD10 diagnostic codes from the Leeds secondary care database. &#x2018;Cancer&#x2019; was defined as any patient diagnosed with a malignant (ICD10 &#x2018;C&#x2019; codes) or in situ (appropriate subset of ICD10 &#x2018;D&#x2019; codes) neoplasm as the result of their referral or within the subsequent 12-month period for the purposes of model development. Diagnoses as the result of an urgent referral were used as outcomes in the validation analyses, to match the intended clinical setting. Benign neoplasms were defined as &#x2018;Not Cancer&#x2019;. The full list of ICD10 codes designated as &#x2018;cancer&#x2019; are in the supplementary materials.</p>
+</sec>
+<sec id="s2d">
+<title>Predictors</title>
+<p>The variables for each patient include a full blood count, a range of biochemistry measurements, a panel of standard tumour markers, plus age and sex. All predictors were included on their natural scale (i.e. they were not normalised or dichotomised).</p>
+<p>As a retrospective cohort, blood measurements were used where they were available in the database up to 90 days prior to referral or up to 14 days post referral. This was done to seek a reasonable balance between missing data and possible bias (for example if blood measurements were made after a diagnosis had been established). In routine clinical use, all model predictors would be available at the time.</p>
+</sec>
+<sec id="s2e">
+<title>Sample Size</title>
+<p>The protocol stated the design as predicated on a goal of achieving a Negative Predictive Value (NPV) of 0.99 or greater. If we assume that we would like to determine the size of the distance from the 2.5&#x0025; centile of the NPV to the point estimate (i.e. the distance between the lower bound of the 95&#x0025; confidence interval (CI) and the point estimate), we can therefore determine the number of patients required in the denominator of the NPV calculation. For a 0.05 lower CI size, we require 100 patients in the denominator; for a 0.02 lower CI size we require 300 patients in the denominator. With a design goal of achieving 20&#x0025; rule-out rate, this would therefore require approximately (100)/(0.2) = 500 total cases per pathway for a 0.05 lower CI size, or (300)/(0.2) = 1500 total cases per pathway for a 0.02 lower CI size.</p>
+</sec>
+<sec id="s2f">
+<title>Management of Missing Data</title>
+<p>Missing data is a key issue for this cohort as many patients did not have bloods in this timeframe (see Tables S1, S2 in the supplementary materials). Patients were identified who had full blood counts and a minimum subset of biochemistry data, and this subset was used to train the algorithms. The core algorithms use a gradient boosting model including an inbuilt method for imputing missing data.</p>
+</sec>
+<sec id="s2g">
+<title>Statistical Analysis Methods</title>
+<p>The goal of the algorithms is to produce a well-calibrated prediction of the likelihood that a patient has cancer. The type of model required is a probabilistic classifier&#x2014;a model that predicts the probabilities of a given patient belonging to one of several distinct classes.</p>
+<p>The development set was used to identify appropriate models and calibration methods and to tune the hyperparameters for those models. Methods and hyperparameters were compared using 5-fold cross-validation. This was concluded and results locked down before validation.</p>
+<p>The model structure selected using the development set is a combination of a gradient boosting method, followed by polynomial logistic regression (i.e. a modified version of Platt scaling) to calibrate the resulting predictions. Prior to any analysis variables were selected based on: cost and relevance, availability in NHS pathology labs and prior knowledge from medical literature that they might reasonably be expected to contain some cancer-relevant information. Variable selection in the statistical sense (i.e. using the development data set) was not carried out and the gradient boosting algorithm used in this work is able to down weight any input variables which are of lesser importance.</p>
+<p>The validation set was used to validate the locked-down algorithms. After this no changes were made to the algorithms, results are presented below.</p>
+</sec>
+<sec id="s2h">
+<title>Role of the funding source</title>
+<p>Aspects of this work have been supported by awards from MRC &#x2018;Proximity to Discovery&#x2019;, Local Enterprise Partnership, and Innovate UK. Richard Neal, Bethany Shinkins, Geoff Hall and Michael Messenger are funded by the NIHR Leeds In Vitro Diagnostic Co-operative. PinPoint Data Science Ltd funded the data science work and time contributions of Richard Savage, Matt Neal, Kat Lloyd, Jim Skinner, Giles Tully, Nigel Sansom, and Rosie Ferguson. This research is linked to the CanTest Collaborative, which is funded by Cancer Research UK [C8640/A23385], of which RDN is an Associate Director, MM was a member of Senior Faculty, and BS was part-funded</p>
+</sec>
+</sec>
+<sec id="s3">
+<title>Findings</title>
+<p><xref rid="fig1" ref-type="fig">Figure 1</xref> shows a CONSORT flow diagram for this work.</p>
+<fig id="fig1" position="float" fig-type="figure">
+<label>Figure 1:</label>
+<caption><title>CONSORT flow diagram for this work.</title></caption>
+<graphic xlink:href="20218198v1_fig1.tif"/>
+</fig>
+<p><xref rid="tbl1" ref-type="table">Tables 1</xref> and <xref rid="tbl2" ref-type="table">2</xref> show the total number of cases per pathway, and the number of those cases meeting the inclusion criteria. <xref rid="tbl3" ref-type="table">Tables 3</xref> and <xref rid="tbl4" ref-type="table">4</xref> show the age and sex demographics of the included patients, by pathway and by development/validation set.</p>
+<table-wrap id="tbl1" orientation="portrait" position="float">
+<label>Table 1:</label>
+<caption><p>Total Number of Cases per Pathway (2011-2019)</p></caption>
+<graphic xlink:href="20218198v1_tbl1.tif"/>
+</table-wrap>
+<table-wrap id="tbl2" orientation="portrait" position="float">
+<label>Table 2:</label>
+<caption><p>Number of Cases Meeting Bloods Criteria</p></caption>
+<graphic xlink:href="20218198v1_tbl2.tif"/>
+<graphic xlink:href="20218198v1_tbl2a.tif"/>
+</table-wrap>
+<table-wrap id="tbl3" orientation="portrait" position="float">
+<label>Table 3:</label>
+<caption><p>Age Demographics</p></caption>
+<graphic xlink:href="20218198v1_tbl3.tif"/>
+</table-wrap>
+<table-wrap id="tbl4" orientation="portrait" position="float">
+<label>Table 4:</label>
+<caption><p>Sex Demographics</p></caption>
+<graphic xlink:href="20218198v1_tbl4.tif"/>
+<graphic xlink:href="20218198v1_tbl4a.tif"/>
+</table-wrap>
+<p><xref rid="tbl5" ref-type="table">Table 5</xref> shows test performance characteristics for nine urgent referral pathways for use-case 1 (rule-out). The goal here is to successfully identify 20&#x0025; of non-cancer patients (a specificity of 0.2) who are at very low risk of cancer, so that other possible causes of their symptoms can be considered rather than continuing with a 2WW referral.</p>
+<table-wrap id="tbl5" orientation="portrait" position="float">
+<label>Table 5:</label>
+<caption><p>20&#x0025; Rule-out</p></caption>
+<graphic xlink:href="20218198v1_tbl5.tif"/>
+</table-wrap>
+<p><xref rid="tbl6" ref-type="table">Table 6</xref> shows test performance characteristics for use-case 2 (triage), to identify patients at higher risk of cancer who would be considered for priority through the urgent referral pathway. The goal here is to successfully red-flag 90&#x0025; of cancer cases (a sensitivity of 0.9) for priority investigation.</p>
+<table-wrap id="tbl6" orientation="portrait" position="float">
+<label>Table 6:</label>
+<caption><p>90&#x0025; Cancer rule-in</p></caption>
+<graphic xlink:href="20218198v1_tbl6.tif"/>
+<graphic xlink:href="20218198v1_tbl6a.tif"/>
+</table-wrap>
+</sec>
+<sec id="s4">
+<title>Interpretation</title>
+<sec id="s4a">
+<title>Summary of main findings</title>
+<p>This paper reports the development and validation of a set of statistical machine learning algorithms based on routine laboratory blood measurements that can predict cancer outcomes for symptomatic patients referred urgently from primary care for possible cancer diagnosis.</p>
+<p>Each algorithm is trained and validated as a test to provide decision support for one of the nine NHS 2WW pathways. Each test produces a calibrated probability that the patient on that 2WW pathway has any type of cancer. These calibrated probabilities can be used in a range of clinical contexts; in this paper we consider two principal use-cases. In use-case 1, the tests are used to rule-out patients whose risk of cancer is very low, allowing clinicians to identify patients for whom investigations of possible non-cancer causes of their symptoms might be more appropriate. In use-case 2, higher-risk patients are red-flagged so that their onwards journey through the 2WW pathway can be expedited.</p>
+<p><xref rid="tbl5" ref-type="table">Table 5</xref> shows relevant test performance characteristics for use-case 1. With a goal of 20&#x0025; rule-out and corresponding Negative Predictive Values and Sensitivity, which respectively give the proportion of test-negative results which are correct (i.e. non-cancer cases) and the proportion of cancer cases that are correctly identified as cancer.</p>
+<p><xref rid="tbl6" ref-type="table">Table 6</xref> shows relevant test performance characteristics for use-case 2. Assuming a goal of correctly red-flagging 90&#x0025; of the cancer cases and presenting the proportion of non-cancer cases that are correctly not red-flagged.</p>
+<p>More test performance characteristics can be found in Supplementary Tables S1 and S2.</p>
+<p><xref rid="fig2" ref-type="fig">Figure 2</xref> shows an example of stratification via a test, compared with the existing standard care pathway. In this example, 500 patients present to the breast pathway, which is overloaded and only able to see 400 of these patients within two weeks of their referral. The standard care pathway is modelled as first-come first-served, and so the proportion of patients with cancer is the same in the patients seen and the patients not seen. Using the test for stratification, the patients are stratified into high, medium and low-risk groups. Patients are then seen in risk order - in this example, all of the high-risk patients are seen, and some of the medium-risk patients are seen. Under stratification, far more of the patients with cancer are seen, and of the patients not seen, a far smaller proportion have cancer. An interactive version of this is available at <ext-link ext-link-type="uri" xlink:href="https://www.pinpointdatascience.com/patient-test-stratification">https://www.pinpointdatascience.com/patient-test-stratification</ext-link></p>
+<fig id="fig2" position="float" fig-type="figure">
+<label>Figure 2:</label>
+<caption><p>shows stratification of patients on the 2WW breast pathway using the relevant algorithm presented in this work, compared to the standard care pathway. Given an urgent care pathway where the number of referrals exceeds the pathway capacity to see patients within two weeks, use of the test to stratify patients into risk categories (right) leads to a larger proportion of patients with cancer being seen when compared to the standard care pathway (left), in which patients are seen on a first-come, first-served basis.</p>
+<p>Patients highlighted in red are identified as being at high-risk for cancer (red-flagged), so can be expedited for further diagnostic testing. Patients highlighted in green are identified as being at very low risk for cancer (green-flagged), allowing for initial management in primary care rather than immediate referral to secondary care.</p>
+<p>The sliders on the left-hand side show the number of referrals, the number of patients that the pathway can handle in a given time-frame (the pathway capacity), the percentage of cancers which are green-flagged (i.e. setting a very low false negative rate), and the percentage of cancers that are red-flagged (i.e. identifying cases with high-risk, so that they can be expedited for further diagnostic testing). Collectively, this represents a possible approach to using the algorithms to improve the triage of patients referred to a 2WW pathway.</p>
+<p>An interactive version of this is available at <ext-link ext-link-type="uri" xlink:href="https://www.pinpointdatascience.com/patient-test-stratification">https://www.pinpointdatascience.com/patient-test-stratification</ext-link></p></caption>
+<graphic xlink:href="20218198v1_fig2.tif"/>
+</fig>
+</sec>
+<sec id="s4b">
+<title>Discussion of main findings within the context of the literature</title>
+<p>This work is novel, innovative, and potentially of huge importance for the management of patients referred urgently for suspected cancer. The tests are based upon a panel of routine blood measurements that: are already in common usage in NHS laboratories; work across a range of cancers; can easily be integrated with existing NHS systems. The tests have already been integrated with Mid-Yorkshire Hospitals NHS Trust Laboratory systems.</p>
+<p>The tests can both identify patients at higher risk of cancer, such that they can be prioritised for assessment and diagnostic investigations, while also identifying a significant proportion of patients at very low risk who may not need further investigation for suspected cancer. Patients in both groups stand to benefit, either from expedited testing, or from not being exposed to iatrogenic harm and unnecessary cancer worries. The tests can be set at different thresholds in different cancers and within different health settings, making them responsive to local needs, capacity and priorities.</p>
+<p>COVID has reduced diagnostic capacity and efficiency, this test could be an effective and rapid solution at this time of crisis.</p>
+<sec id="s4b1">
+<title>Strengths</title>
+<p>The principal strengths of this work are:</p>
+<list list-type="bullet">
+<list-item><p>It is based on well-validated, low-cost clinical assays already available at scale in NHS pathology laboratories.</p></list-item>
+<list-item><p>The tests could therefore be deployed across the UK very rapidly, with no additional hardware requirements.</p></list-item>
+<list-item><p>The tests are CE marked and are currently undergoing service evaluation in the West Yorkshire and Harrogate Cancer Alliance.</p></list-item>
+<list-item><p>The performance estimates are conservative due to missing data and the historical nature of the blood measurements; prospective evaluation will not suffer from these drawbacks</p></list-item>
+<list-item><p>Even biomarkers with limited individual performance are of value in this approach if they contribute complementary information</p></list-item>
+<list-item><p>The algorithms are designed to be flexible, allowing thresholds to be changed according to clinical need, for example Use-Case 2 during the COVID-19 pandemic</p></list-item>
+<list-item><p>The large numbers reported, the robust analysis and reporting in line with TRIPOD and PROBAST.<sup><xref ref-type="bibr" rid="c11">11</xref>,<xref ref-type="bibr" rid="c12">12</xref></sup></p></list-item>
+<list-item><p>There is the potential to improve performance using the pipeline of new biomarkers being developed for diagnostic, predictive or prognostic purposes.</p></list-item>
+</list>
+</sec>
+<sec id="s4b2">
+<title>Limitations</title>
+<p>The principal limitations of this work are:</p>
+<list list-type="bullet">
+<list-item><p>That the development and validation was done only in one centre.</p></list-item>
+<list-item><p>There is a possible source of bias, in that the subset of patients who had retrospective blood data may not be representative of the overall 2WW cohort.</p></list-item>
+<list-item><p>We have only reported the validation on a retrospective sample; a prospective evaluation is needed.</p></list-item>
+<list-item><p>The validation set meets the defined sample size criteria (1500 total cases) for 7 of the 9 2WW. 95&#x0025; CI are provided for all results to make clear the level of uncertainty present due to sample sizes.</p></list-item>
+<list-item><p>The remaining (smaller) 2WW pathways as recorded in the clinical data were also considered (Testicular, Brain/CNS, Sarcomas, Children&#x2019;s Cancer, Acute Leukaemia, HPB, Thyroid Cancer, Renal, other cancer), but we did not develop algorithms for these as the available sample sizes were judged too small to train and validate effective models.</p></list-item>
+</list>
+</sec>
+</sec>
+<sec id="s4c">
+<title>Implications for policy research and practice</title>
+<p>Until we have undertaken a prospective evaluation of the performance of the algorithms it is not possible to predict how this will be used. However, we do envisage use of the tool, as part of clinical triage, to both prioritise those at higher levels of risk and de-prioritise those at the very lowest levels of risk, in conjunction with appropriate safety netting. We also need to fully understand the views of patients, clinicians, and commissioners on the acceptability and utility of the tests.</p>
+</sec>
+</sec>
+<sec sec-type="supplementary-material">
+<title>Supporting information</title>
+<supplementary-material>
+<label>Supplementary Materials</label>
+<media xlink:href="supplements/218198_file02.pdf" />
+</supplementary-material>
+<supplementary-material>
+<label>TRIPOD checklist</label>
+<media xlink:href="supplements/218198_file03.docx" />
+</supplementary-material>
+</sec>
+</body>
+<back>
+<sec sec-type="data-availability">
+<title>Data Availability</title>
+<p>The data will not be made available to others, as it is de-identified NHS patient data.</p>
+</sec>
+<ack>
+<title>Acknowledgements</title>
+<p>We thank the following people and organisations for their contributions:</p>
+<list list-type="bullet">
+<list-item><p>Emmylou Laird and Claire Eckert for their help with numerous aspects of this work</p></list-item>
+<list-item><p>The Leeds Institute for Data Analytics, in particular Phil Chambers, for all their support in providing secure computing facilities.</p></list-item>
+<list-item><p>The pathology and health informatics staff of Leeds Teaching Hospitals Trust and Mid-Yorkshire Hospitals NHS Trust for their help.</p></list-item>
+<list-item><p>The X-Lab team for help with deployment into the NHS</p></list-item>
+<list-item><p>The board members and partner organisations of the Leeds Centre for Personalised Medicine and Health and the Leeds Academic Health Partnership.</p></list-item>
+<list-item><p>The NIHR Leeds MIC and CRUK CANTEST PPI groups, especially Pete Whetstone and Margaret Johnson.</p></list-item>
+<list-item><p>We thank HealthWatch Leeds and Healthwatch Kirklees for patient consultation forums</p></list-item>
+</list>
+</ack>
+<sec id="s5">
+<title>Ethics statement</title>
+<p>Data for the analysis are retrospective and fully de-identified before being released to the study team. The work was carried out under service evaluation with the formal approval of the Leeds Teaching Hospitals Trust R&#x0026;I and Data Governance Committee, and with the specific approval of the Trust Caldicott Guardian.</p>
+</sec>
+<sec id="s6">
+<title>Contribution of authors</title>
+<p>RS, MM, RN, GH, RF and SD conceptualised the study, and led on the initial protocol development. GT, RF, NPS, BS and PS contributed towards funding applications and protocol refinement. RS, MN, KL and JS developed the software and algorithms, performed the data analysis and completed the CE marking process, with clinical input from RN, SD, NS, GH and PS and methodological input from BS, CJ and MM. GH led on the provision of de-identified data, assisted by CJ and RF. RF oversaw project management. All authors contributed to the interpretation of the results, writing of the manuscript and approved the final version.</p>
+</sec>
+<sec id="s7" sec-type="COI-statement">
+<title>Declarations of interests</title>
+<p>RS, KL, MN, JS, NPS, GT are employed by and are shareholders in PinPoint Data Science Ltd. MM has been employed as a consultant to PinPoint Data Science Ltd in October to November 2020. Both the University of Leeds and Leeds Teaching Hospitals Trust have a royalty agreement with PinPoint Data Science Ltd, meaning that those institutions are likely to benefit financially in the event of PinPoint being commercially successful.</p>
+</sec>
+<sec id="s8">
+<title>Data sharing agreement</title>
+<p>The data will not be made available to others, as it is de-identified NHS patient data.</p>
+</sec>
+<sec id="s9">
+<title>TRIPOD</title>
+<p>This work is reported in accordance with the TRIPOD statement.</p>
+</sec>
+<ref-list>
+<title>Bibliography</title>
+<ref id="c1"><label>1.</label><mixed-citation publication-type="website"><collab>Suspected Cancer: Recognition and Referral. [Internet]</collab>. <source>National Institute for Health and Care Excellence; 2015 [cited 2020 Jul 30]</source>. Available from: <ext-link ext-link-type="uri" xlink:href="http://www.nice.org.uk/guidance/ng12">www.nice.org.uk/guidance/ng12</ext-link></mixed-citation></ref>
+<ref id="c2"><label>2.</label><mixed-citation publication-type="journal"><string-name><surname>Round</surname> <given-names>T</given-names></string-name>, <string-name><surname>Gildea</surname> <given-names>C</given-names></string-name>, <string-name><surname>Asworth</surname> <given-names>M</given-names></string-name>, <string-name><surname>Moller</surname> <given-names>H.</given-names></string-name> <article-title>Association between use of urgent suspected cancer referral and mortality and stage at diagnosis: a 5-year national cohort study</article-title>. <source>Br J Gen Pract</source>. <year>2020</year>;<volume>70</volume>:<fpage>e389</fpage>&#x2013;<lpage>98</lpage>.</mixed-citation></ref>
+<ref id="c3"><label>3.</label><mixed-citation publication-type="website"><collab>Cancer Waiting Time Statistics. [Internet]. NHS England</collab>; Available from: <ext-link ext-link-type="uri" xlink:href="http://www.england.nhs.uk/statistics/statistical-work-areas/cancer-waiting-times">www.england.nhs.uk/statistics/statistical-work-areas/cancer-waiting-times</ext-link></mixed-citation></ref>
+<ref id="c4"><label>4.</label><mixed-citation publication-type="website"><string-name><surname>Lai</surname> <given-names>AG</given-names></string-name>, <string-name><surname>Pasea</surname> <given-names>L</given-names></string-name>, <string-name><surname>Banerjee</surname> <given-names>A</given-names></string-name>, <string-name><surname>Denaxas</surname> <given-names>S</given-names></string-name>, <string-name><surname>Katsoulis</surname> <given-names>M</given-names></string-name>, <string-name><surname>Chang</surname> <given-names>WH</given-names></string-name>, <etal>et al.</etal> <article-title>Estimating excess mortality in people with cancer and multimorbidity in the COVID-19 emergency [Internet]</article-title>. <source>Oncology</source>; <year>2020</year> <month>Jun</month> [cited 2020 Sep 25]. Available from: <ext-link ext-link-type="uri" xlink:href="http://medrxiv.org/lookup/doi/10.1101/2020.05.27.20083287">http://medrxiv.org/lookup/doi/10.1101/2020.05.27.20083287</ext-link></mixed-citation></ref>
+<ref id="c5"><label>5.</label><mixed-citation publication-type="journal"><string-name><surname>Khan</surname> <given-names>N</given-names></string-name>, <string-name><surname>Jones</surname> <given-names>D</given-names></string-name>, <string-name><surname>Grice</surname> <given-names>A</given-names></string-name>, <string-name><surname>Alderson</surname> <given-names>S</given-names></string-name>, <string-name><surname>Bradley</surname> <given-names>S</given-names></string-name>, <string-name><surname>Carder</surname> <given-names>P</given-names></string-name>, <etal>et al.</etal> <article-title>A brave new world: the new normal for general practice after the COVID-19 pandemic</article-title>. <source>BJGP Open</source>. <year>2020</year> <month>Jun</month> <volume>2</volume>;bjgpopen20&#x00D7;101103.</mixed-citation></ref>
+<ref id="c6"><label>6.</label><mixed-citation publication-type="journal"><string-name><surname>Cree</surname> <given-names>IA</given-names></string-name>, <string-name><surname>Uttley</surname> <given-names>L</given-names></string-name>, <string-name><surname>Buckley Woods</surname> <given-names>H</given-names></string-name>, <string-name><surname>Kikuchi</surname> <given-names>H</given-names></string-name>, <string-name><surname>Reiman</surname> <given-names>A</given-names></string-name>, <etal>et al.</etal> <article-title>The evidence base for circulating tumour DNA blood-based biomarkers for the early detection of cancer: a systematic mapping review</article-title>. <source>BMC Cancer</source>. <year>2017</year> <month>Dec</month>;<volume>17</volume>(<issue>1</issue>):<fpage>697</fpage>.</mixed-citation></ref>
+<ref id="c7"><label>7.</label><mixed-citation publication-type="journal"><string-name><surname>Liu</surname> <given-names>MC</given-names></string-name>, <string-name><surname>Oxnard</surname> <given-names>GR</given-names></string-name>, <string-name><surname>Klein</surname> <given-names>EA</given-names></string-name>, <string-name><surname>Swanton</surname> <given-names>C</given-names></string-name>, <string-name><surname>Seiden</surname> <given-names>MV</given-names></string-name>, <string-name><surname>Cummings</surname> <given-names>SR</given-names></string-name>, <etal>et al.</etal> <article-title>Sensitive and specific multi-cancer detection and localization using methylation signatures in cell-free DNA</article-title>. <source>Ann Oncol</source>. <year>2020</year> <month>Jun</month>;<volume>31</volume>(<issue>6</issue>):<fpage>745</fpage>&#x2013;<lpage>59</lpage>.</mixed-citation></ref>
+<ref id="c8"><label>8.</label><mixed-citation publication-type="journal"><string-name><surname>Ulz</surname> <given-names>P</given-names></string-name>, <string-name><surname>Perakis</surname> <given-names>S</given-names></string-name>, <string-name><surname>Zhou</surname> <given-names>Q</given-names></string-name>, <string-name><surname>Moser</surname> <given-names>T</given-names></string-name>, <string-name><surname>Belic</surname> <given-names>J</given-names></string-name>, <string-name><surname>Lazzeri</surname> <given-names>I</given-names></string-name>, <etal>et al.</etal> <article-title>Inference of transcription factor binding from cell-free DNA enables tumor subtype prediction and early detection</article-title>. <source>Nat Commun</source>. <year>2019</year> <month>Dec</month>;<volume>10</volume>(<issue>1</issue>):<fpage>4666</fpage>.</mixed-citation></ref>
+<ref id="c9"><label>9.</label><mixed-citation publication-type="journal"><string-name><surname>Cohen</surname> <given-names>JD</given-names></string-name>, <string-name><surname>Li</surname> <given-names>L</given-names></string-name>, <string-name><surname>Wang</surname> <given-names>Y</given-names></string-name>, <string-name><surname>Thoburn</surname> <given-names>C</given-names></string-name>, <string-name><surname>Afsari</surname> <given-names>B</given-names></string-name>, <string-name><surname>Danilova</surname> <given-names>L</given-names></string-name>, <etal>et al.</etal> <article-title>Detection and localization of surgically resectable cancers with a multi-analyte blood test</article-title>. <source>Science</source>. <year>2018</year> <month>Feb</month> 23;<volume>359</volume>(<issue>6378</issue>):<fpage>926</fpage>&#x2013;<lpage>30</lpage>.</mixed-citation></ref>
+<ref id="c10"><label>10.</label><mixed-citation publication-type="journal"><string-name><surname>Badrick</surname> <given-names>E</given-names></string-name>, <string-name><surname>Cresswell</surname> <given-names>K</given-names></string-name>, <string-name><surname>Ellis</surname> <given-names>P</given-names></string-name>, <string-name><surname>Renehan</surname> <given-names>AG</given-names></string-name>, <string-name><surname>Crosbie</surname> <given-names>EJ</given-names></string-name>, <string-name><surname>Crosbie</surname> <given-names>P</given-names></string-name>, <etal>et al.</etal> <article-title>Top ten research priorities for detecting cancer early</article-title>. <source>Lancet Public Health</source>. <year>2019</year> <month>Nov</month>;<volume>4</volume>(<issue>11</issue>):<fpage>e551</fpage>.</mixed-citation></ref>
+<ref id="c11"><label>11.</label><mixed-citation publication-type="journal"><string-name><surname>Collins</surname> <given-names>GS</given-names></string-name>, <string-name><surname>Reitsma</surname> <given-names>JB</given-names></string-name>, <string-name><surname>Altman</surname> <given-names>DG</given-names></string-name>, <string-name><surname>Moons</surname> <given-names>KG</given-names></string-name>. <article-title>Transparent Reporting of a Multivariable Prediction Model for Individual Prognosis or Diagnosis (TRIPOD) The TRIPOD Statement</article-title>. <source>Circulation</source>. <year>2015</year> <month>Jan</month> 13;<volume>131</volume>(<issue>2</issue>):<fpage>211</fpage>&#x2013;<lpage>9</lpage>.</mixed-citation></ref>
+<ref id="c12"><label>12.</label><mixed-citation publication-type="journal"><string-name><surname>Wolff</surname> <given-names>RF</given-names></string-name>, <string-name><surname>Moons</surname> <given-names>KG</given-names></string-name>, <string-name><surname>Riley</surname> <given-names>RD</given-names></string-name>, <string-name><surname>Whiting</surname> <given-names>PF</given-names></string-name>, <string-name><surname>Westwood</surname> <given-names>M</given-names></string-name>, <string-name><surname>Collins</surname> <given-names>GS</given-names></string-name>, <string-name><surname>Reitsma</surname> <given-names>JB</given-names></string-name>, <string-name><surname>Kleijnen</surname> <given-names>J</given-names></string-name>, <string-name><surname>Mallett</surname> <given-names>S.</given-names></string-name> <article-title>PROBAST: a tool to assess the risk of bias and applicability of prediction model studies</article-title>. <source>Annals of internal medicine</source>. <year>2019</year> <month>Jan</month> 1;<volume>170</volume>(<issue>1</issue>):<fpage>51</fpage>&#x2013;<lpage>8</lpage>.</mixed-citation></ref>
+</ref-list>
+</back>
+</article>

@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.2d1 20170631//EN" "JATS-archivearticle1.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" article-type="article" dtd-version="1.2d1" specific-use="production" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="publisher-id">MEDRXIV</journal-id>
+<journal-title-group>
+<journal-title>medRxiv</journal-title>
+<abbrev-journal-title abbrev-type="publisher">medRxiv</abbrev-journal-title>
+</journal-title-group>
+<publisher>
+<publisher-name>Cold Spring Harbor Laboratory</publisher-name>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1101/2021.09.28.21264240</article-id>
+<article-version>1.1</article-version>
+<article-categories>
+<subj-group subj-group-type="hwp-journal-coll">
+<subject>Health Informatics</subject>
+</subj-group>
+</article-categories>
+<title-group>
+<article-title>Predicting hospital-onset COVID-19 infections using dynamic networks of patient contacts: an observational study</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0001-6202-0662</contrib-id>
+<name><surname>Myall</surname><given-names>Ashleigh</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-2541-8545</contrib-id>
+<name><surname>Price</surname><given-names>James R</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a3">3</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-8738-5825</contrib-id>
+<name><surname>Peach</surname><given-names>Robert L</given-names></name>
+<xref ref-type="aff" rid="a2">2</xref>
+<xref ref-type="aff" rid="a4">4</xref>
+<xref ref-type="aff" rid="a5">5</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-7265-1887</contrib-id>
+<name><surname>Abbas</surname><given-names>Mohamed</given-names></name>
+<xref ref-type="aff" rid="a6">6</xref>
+<xref ref-type="aff" rid="a7">7</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Mookerjee</surname><given-names>Siddharth</given-names></name>
+<xref ref-type="aff" rid="a3">3</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Zhu</surname><given-names>Nina</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Ahmad</surname><given-names>Isa</given-names></name>
+<xref ref-type="aff" rid="a3">3</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-3125-6378</contrib-id>
+<name><surname>Ming</surname><given-names>Damien</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-6861-2324</contrib-id>
+<name><surname>Ramzan</surname><given-names>Farzan</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Teixeira</surname><given-names>Daniel</given-names></name>
+<xref ref-type="aff" rid="a7">7</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-0235-5046</contrib-id>
+<name><surname>Graf</surname><given-names>Christophe</given-names></name>
+<xref ref-type="aff" rid="a8">8</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0001-7786-8252</contrib-id>
+<name><surname>Wei&#x00DF;e</surname><given-names>Andrea Y</given-names></name>
+<xref ref-type="aff" rid="a9">9</xref>
+<xref ref-type="aff" rid="a10">10</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-3551-1025</contrib-id>
+<name><surname>Harbarth</surname><given-names>Stephan</given-names></name>
+<xref ref-type="aff" rid="a7">7</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0001-5554-5743</contrib-id>
+<name><surname>Holmes</surname><given-names>Alison</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a3">3</xref>
+</contrib>
+<contrib contrib-type="author" corresp="yes">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-1089-5675</contrib-id>
+<name><surname>Barahona</surname><given-names>Mauricio</given-names></name>
+<xref ref-type="aff" rid="a2">2</xref>
+<xref ref-type="author-notes" rid="n1">&#x002A;</xref>
+<xref ref-type="corresp" rid="cor1">&#x0023;</xref>
+</contrib>
+<aff id="a1"><label>1</label><institution>Department of Infectious Disease, Imperial College London</institution>, London, <country>UK</country></aff>
+<aff id="a2"><label>2</label><institution>Department of Mathematics, Imperial College London</institution>, London, <country>UK</country></aff>
+<aff id="a3"><label>3</label><institution>Health Protection Research Unit for HCAI and AMR, Imperial College Healthcare NHS Trust</institution>, London, <country>UK</country></aff>
+<aff id="a4"><label>4</label><institution>Department of Brain Sciences, Imperial College Londo</institution>n, London, <country>UK</country></aff>
+<aff id="a5"><label>5</label><institution>Department of Neurology, University Hospital of W&#x00FC;rzburg</institution>, <country>Germany</country></aff>
+<aff id="a6"><label>6</label><institution>MRC Centre for Global Infectious Disease Analysis, Imperial College London</institution>, London, <country>UK</country></aff>
+<aff id="a7"><label>7</label><institution>Infection Control Programme, Geneva University Hospitals and Faculty of Medicine</institution>, Geneva, <country>Switzerland</country></aff>
+<aff id="a8"><label>8</label><institution>Department of Rehabilitation and Geriatrics, Geneva University Hospitals and Faculty of Medicine</institution>, Geneva, <country>Switzerland</country></aff>
+<aff id="a9"><label>9</label><institution>School of Biological Sciences, University of Edinburgh</institution>, Edinburgh, <country>UK</country></aff>
+<aff id="a10"><label>10</label><institution>School of Informatics, University of Edinburgh</institution>, Edinburgh, <country>UK</country></aff>
+</contrib-group>
+<author-notes>
+<corresp id="cor1"><label>&#x0023;</label>Corresponding author; email: <email>m.barahona@imperial.ac.uk</email></corresp>
+<fn id="n1" fn-type="others"><label>&#x002A;</label><p><email>m.barahona@imperial.ac.uk</email></p></fn>
+</author-notes>
+<pub-date pub-type="epub">
+<year>2021</year>
+</pub-date>
+<elocation-id>2021.09.28.21264240</elocation-id>
+<history>
+<date date-type="received">
+<day>28</day>
+<month>9</month>
+<year>2021</year>
+</date>
+<date date-type="rev-recd">
+<day>28</day>
+<month>9</month>
+<year>2021</year>
+</date>
+<date date-type="accepted">
+<day>29</day>
+<month>9</month>
+<year>2021</year>
+</date>
+</history>
+<permissions>
+<copyright-statement>&#x00A9; 2021, Posted by Cold Spring Harbor Laboratory</copyright-statement>
+<copyright-year>2021</copyright-year>
+<license><license-p>The copyright holder for this pre-print is the author. All rights reserved. The material may not be redistributed, re-used or adapted without the author's permission.</license-p></license>
+</permissions>
+<self-uri xlink:href="21264240.pdf" content-type="pdf" xlink:role="full-text"/>
+<abstract>
+<title>ABSTRACT</title>
+<sec>
+<title>Background</title>
+<p>Real-time prediction is key to prevention and control of healthcare-associated infections. Contacts between individuals drive infections, yet most prediction frameworks fail to capture the dynamics of contact. We develop a real-time machine learning framework that incorporates dynamic patient contact networks to predict patient-level hospital-onset COVID-19 infections (HOCIs), which we test and validate on international multi-site datasets spanning epidemic and endemic periods.</p></sec>
+<sec>
+<title>Methods</title>
+<p>Our framework extracts dynamic contact networks from routinely collected hospital data and combines them with patient clinical attributes and background contextual hospital data to forecast the infection status of individual patients. We train and test the HOCI prediction framework using 51,157 hospital patients admitted to a UK (London) National Health Service (NHS) Trust from 01 April 2020 to 01 April 2021, spanning UK COVID-19 surges 1 and 2. We then validate the framework by applying it to data from a non-UK (Geneva) hospital site during an epidemic surge (40,057 total inpatients) and to data from the same London Trust from a subsequent period post surge 2, when COVID-19 had become endemic (43,375 total inpatients).</p></sec>
+<sec>
+<title>Findings</title>
+<p>Based on the training data (London data spanning surges 1 and 2), the framework achieved high predictive performance using all variables (AUC-ROC 0&#x00B7;89 [0&#x00B7;88-0&#x00B7;90]) but was almost as predictive using only contact network variables (AUC-ROC 0&#x00B7;88 [0&#x00B7;86-0&#x00B7;90]), and more so than using only hospital contextual (AUC-ROC 0&#x00B7;82 [0&#x00B7;80-0&#x00B7;84]) or patient clinical (AUC-ROC 0&#x00B7;64 [0&#x00B7;62-0&#x00B7;66]) variables. The top three risk factors we identified consisted of one hospital contextual variable (background hospital COVID-19 prevalence) and two contact network variables (network closeness, and number of direct contacts to infectious patients), and together achieved AUC-ROC 0&#x00B7;85 [0&#x00B7;82-0&#x00B7;88]. Furthermore, the addition of contact network variables improved performance relative to hospital contextual variables on both the non-UK (AUC-ROC increased from 0&#x00B7;84 [0&#x00B7;82&#x2013;0&#x00B7;86] to 0&#x00B7;88 [0&#x00B7;86&#x2013;0&#x00B7;90]) and the UK validation datasets (AUC-ROC increased from 0&#x00B7;52 [0&#x00B7;49&#x2013;0&#x00B7;53] to 0&#x00B7;68 [0&#x00B7;64-0&#x00B7;70]).</p></sec>
+<sec>
+<title>Interpretation</title>
+<p>Our results suggest that dynamic patient contact networks can be a robust predictor of respiratory viral infections spreading in hospitals. Their integration in clinical care has the potential to enhance individualised infection prevention and early diagnosis.</p></sec>
+<sec>
+<title>Funding</title>
+<p>Medical Research Foundation, World Health Organisation, Engineering and Physical Sciences Research Council, National Institute for Health Research, Swiss National Science Foundation, German Research Foundation.</p>
+</sec>
+</abstract>
+<counts>
+<page-count count="16"/>
+</counts>
+</article-meta>
+<notes>
+<notes notes-type="competing-interest-statement">
+<title>Competing Interest Statement</title><p>The authors have declared no competing interest.</p></notes>
+<notes notes-type="financial-disclosure">
+<title>Funding Statement</title><p>AM was supported in part by a scholarship from the Medical Research Foundation National PhD Training Programme in Antimicrobial Resistance Research (MRF-145-0004-TPG-AVISO), as well as by the National Institute for Health Research Academy. RLP was funded by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) Project-ID 424778381-TRR 295. MO received funding from the Swiss National Science Foundation. AH is a National Institute for Health Research Senior Investigator. AH is also partly funded by the National Institute for Health Research Health Protection Research Unit (NIHR HPRU) in Healthcare Associated Infections and Antimicrobial Infections in partnership with Public Health England, in collaboration with, Imperial Healthcare Partners, University of Cambridge and University of Warwick (NIHR grant code: NIHR200876). AM, RLP, and MB acknowledge funding from EPSRC grant EP/N014529/1 to MB, supporting the EPSRC Centre for Mathematics of Precision Healthcare. The underlying investigation also received financial support from the World Health Organization (WHO). The research was also supported by the NIHR Imperial Biomedical Research Centre and by the iCARE environment and used the iCARE team and data resources.
+The views expressed in this publication are those of the author(s) and not necessarily those of the NHS, the National Institute for Health Research, the Department of Health and Social Care or Public Health England or those of the WHO.</p></notes>
+<notes notes-type="disclosures">
+<title>Author Declarations</title><p>I confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.</p><p>Yes</p><p>The details of the IRB/oversight body that provided approval or exemption for the research described are given below:</p><p>Patient data were extracted and de-identified from the business intelligence system (London), iCare (London), and from in-house electronic health records (Geneva). All analyses were approved by ethical committees (London: Imperial College London NHS Trust service evaluations [Ref:386,379,473] and ethics approval under 15\_LO\_0746; Geneva: Cantonal Ethics Committee [no. CCER 2020-00827]).</p><p>All necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived.</p><p>Yes</p><p>I understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).</p><p>Yes</p><p>I have followed all appropriate research reporting guidelines and uploaded the relevant EQUATOR Network research reporting checklist(s) and other pertinent material as supplementary files, if applicable.</p><p>Yes</p></notes>
+</notes>
+</front>
+<body>
+<sec id="s1">
+<title>Introduction</title>
+<p>Healthcare-related transmission of coronavirus disease 2019 (COVID-19) has been well documented throughout the pandemic<sup><xref ref-type="bibr" rid="c1">1</xref></sup>. Reports have cited hospital-onset COVID-19 infections (HOCIs) accounting for 12&#x2013;15&#x0025; of all COVID-19 cases identified in healthcare settings, and as high as 16 2&#x0025; at the peaks of the pandemic<sup><xref ref-type="bibr" rid="c2">2</xref></sup>. While their impact is yet to be fully quantified, HOCIs amplify the impact of the pandemic by seeding further outbreaks.</p>
+<p>The ability to predict healthcare-associated infection offers the possibility of preventing transmission, thus reducing both illness and the workload burden experienced during outbreaks. Traditionally, prediction has relied on the identification of patient risk factors of disease acquisition by fitting statistical models to a combination of patient clinical variables (e.g., age, gender identity, co-morbidities) and hospital contextual variables (e.g., colonisation pressure, patient length of stay)<sup><xref ref-type="bibr" rid="c3">3</xref></sup>. Although such risk factors can perform reasonably well, they ignore the fact that the spread of infectious diseases depends largely on patient contacts<sup><xref ref-type="bibr" rid="c4">4</xref></sup>, which are heterogeneous<sup><xref ref-type="bibr" rid="c5">5</xref></sup> and vary over time<sup><xref ref-type="bibr" rid="c6">6</xref></sup>.</p>
+<p>Isolation and cohorting of infected patients prevent onward spreading by interrupting transmission chains<sup><xref ref-type="bibr" rid="c7">7</xref></sup>. Investigating contacts to known infected patients has been an effective epidemiological tool to identify at-risk secondary cases and disease &#x2018;super-spreaders&#x2019;<sup><xref ref-type="bibr" rid="c8">8</xref></sup>, a strong driver of HOCIs<sup><xref ref-type="bibr" rid="c9">9</xref>,<xref ref-type="bibr" rid="c10">10</xref></sup>, and has played a pivotal role in national COVID-19 responses<sup><xref ref-type="bibr" rid="c11">11</xref>&#x2013;<xref ref-type="bibr" rid="c13">13</xref></sup>. However, exploiting the entire contact network (not just direct links to known infections) provides greater depth to characterise disease spreading<sup><xref ref-type="bibr" rid="c14">14</xref></sup>. Indeed, early in the COVID-19 pandemic, population mobility and interactions guided national policy to reduce transmission<sup><xref ref-type="bibr" rid="c15">15</xref></sup>. In healthcare settings, the overall number of direct contacts created by patient transfers has been found predictive of disease acquisition<sup><xref ref-type="bibr" rid="c16">16</xref>&#x2013;<xref ref-type="bibr" rid="c19">19</xref></sup>. Yet, these studies fail to take full advantage of the predictive power of dynamic contact networks to capture transmission routes<sup><xref ref-type="bibr" rid="c20">20</xref></sup>.</p>
+<p>In this work, we combine dynamic patient contact networks extracted from patient trajectories with routinely collected patient clinical attributes and hospital contextual data into a novel forecasting framework to predict HOCI in individual patients. As a proof-of-principle study, we retrospectively evaluate the utility of risk factors extracted from patient contact networks by testing and training different models on a large London hospital dataset spanning the COVID-19 epidemic, including UK surge 1 in 2020 and surge 2 in 2021. We then validate the gain in predictive power achieved via contact network risk factors by applying the framework to an external dataset from a university-affiliated geriatric hospital in Geneva during surge 1 in 2020, and to data from the same London hospital group post-UK surge 2, when COVID-19 had become endemic.</p>
+</sec>
+<sec id="s2">
+<title>Methods</title>
+<sec id="s2a">
+<title>Study design and population</title>
+<p>The study focuses on a large London hospital group with approximately 1,200 inpatient beds across five sites. We used data from 01 April 2020 to 01 April 2021, capturing the UK&#x2019;s first surge (23 March 2020-30 May 2020) and second surge (07 September 2020&#x2013;01 April 2021) (Methods S1.1). For validation, we applied the framework to external data from a hospital group in the Department of Rehabilitation of the Geneva University Hospitals (approximately 600 inpatient beds across three sites) during Switzerland&#x2019;s first surge (01 March 2020&#x2013;31 May 2020), and to data from the same London hospital group following UK surge 2 (01 April 2021&#x2013;13 August 2021).</p>
+<p>The infection prevention and control (IPC) measures employed by the London hospitals aligned with national recommendations (Methods S1.2), including: (1) a comprehensive COVID-19 screening strategy, which screened inpatients on days three to five, day seven, and weekly thereafter (daily for the first seven days following admission from 01 December 2021); and (2) a robust HOCI surveillance programme<sup><xref ref-type="bibr" rid="c21">21</xref></sup> with HOCIs triggering IPC investigations, contact isolation and screening. During the first surge in Geneva, syndromic surveillance of hospitalised patients was conducted, as well as ad-hoc screening of patients during outbreak management. In addition, patients were screened prior to transfer between hospital sites as of April 2020.</p>
+</sec>
+<sec id="s2b">
+<title>Data collection</title>
+<p>Patient data were extracted and de-identified from the business intelligence system (London), iCare (London), and from in-house electronic health records (Geneva). All analyses were approved by ethical committees (London: Imperial College London NHS Trust service evaluations [Ref:386,379,473] and ethics approval under 15_LO_0746; Geneva: Cantonal Ethics Committee [no. CCER 2020-00827]).</p>
+</sec>
+<sec id="s2c">
+<title>Definitions</title>
+<p>The consecutive days a patient has spent in hospital prior to testing positive for COVID-19 reflects the likelihood of healthcare acquisition due to the 2-14 days incubation period<sup><xref ref-type="bibr" rid="c22">22</xref></sup>. Hence we defined HOCIs in line with European and UK definitions using the date of the <italic>first SARS-CoV-2&#x2013;positive test</italic> and <italic>symptom onset</italic> synonymously<sup><xref ref-type="bibr" rid="c23">23</xref></sup>:</p>
+<list list-type="bullet">
+<list-item><p><italic>HOCI</italic>: patients with a SARS-CoV-2 positive test sample three or more days after admission. We use this as a single category for HOCIs, which includes: indeterminate (positive sample between 3-6 days), probable (positive sample between 7-13 days) and definite (positive sample after 14 or more days)<sup><xref ref-type="bibr" rid="c23">23</xref></sup>). This follows from recent genomic evidence<sup><xref ref-type="bibr" rid="c10">10</xref></sup> that a significant proportion of lower likelihood HOCIs (having spent less time in hospital) are still hospital-acquired, and the comprehensive admission screening policy in our data.</p></list-item>
+<list-item><p><italic>Community-onset COVID-19 infection</italic> (COCI): patients with a SARS-CoV-2 positive test sample up to two days after admission</p></list-item>
+<list-item><p><italic>Non-COVID</italic> (control): patients with a negative SARS-CoV-2&#x2013;positive sample test or who were not tested due to being SARS-CoV-2 positive in the last 90 days with no new symptoms or exposure to COVID-19.</p></list-item>
+</list>
+<p>Patient contacts were established using movement pathways from hospital electronic health records. We investigated three definitions of contact: patients coinciding on the same day in the same (1) room, (2) ward, and (3) building, regardless of COVID-19 prevention measures, including environmental ventilation (Methods S1.4). The infectious period for infected patients is defined as the 14-days before and 10-days after their first SARS-CoV-2&#x2013;positive test result<sup><xref ref-type="bibr" rid="c22">22</xref></sup>).</p>
+</sec>
+<sec id="s2d">
+<title>Dynamic forecasting framework</title>
+<p>We developed a framework to predict infections (see detailed description in Methods S1.3-1.9) that combines dynamic patterns of contact, exposure to infected cases, as well as standard risk factors (<xref rid="fig1" ref-type="fig">Figure 1</xref>, R package can be found at <ext-link ext-link-type="uri" xlink:href="https://github.com/barahona-research-group/Dynamic-contact-infection-forecast">barahona-research-group/Dynamic-contact-infection-forecast</ext-link>). Fixed patient variables (e.g., demographics) are collected, and dynamic, time-dependent variables (e.g., contact network graph-theoretical centrality for each patient, hospital contextual variables) are computed from a sliding time window to be used as model predictors over a forecasting horizon. In alignment with the maximum incubation period of COVID-19, we set the window length to 14-days<sup><xref ref-type="bibr" rid="c22">22</xref></sup> and the forecasting horizon to 7 days.</p>
+<fig id="fig1" position="float" fig-type="figure">
+<label>Figure 1.</label>
+<caption><title>Overview of forecasting framework.</title>
+<p>Patient pathways are extracted from electronic health records which specify the locations each patient has visited over the duration of their hospital stay. Pathways are overlaid with COVID-19 testing results, capturing the space-time positions of patients that tested positive for COVID-19. Forecasting is based on extracting individual patient clinical variables (fixed) and hospital contextual variables (dynamic) during a defined time window, as well as variables capturing the centrality of a patient within the different contact networks (dynamic). We iterate variable extraction over multiple time windows and use the cumulative information for model training and predictions.</p></caption>
+<graphic xlink:href="21264240v1_fig1.tif"/>
+</fig>
+</sec>
+<sec id="s2e">
+<title>Model variables</title>
+<p>For each time window, we extracted: (i) patient clinical variables (<xref rid="tbl1" ref-type="table">Table 1a</xref>); (ii) hospital contextual variables (relating to the hospital inpatient context; <xref rid="tbl1" ref-type="table">Table 1b</xref>); and (iii) contact network variables (centrality measures) extracted using network-theoretical analytics from each of the room/ward/building contact networks derived from the data (<xref rid="tbl1" ref-type="table">Table 1c</xref>, derivation in Methods S1.16-1.17).</p>
+<table-wrap id="tbl1" orientation="portrait" position="float">
+<label>Table 1.</label>
+<caption><title>Model variables.</title>
+<p>List and description of all variables for each variable type:patient (a) patient clinical variables; (b) hospital contextual variables; (c) network-derived variables.</p></caption>
+<graphic xlink:href="21264240v1_tbl1.tif"/>
+</table-wrap>
+</sec>
+<sec id="s2f">
+<title>Statistical significance and risk factors</title>
+<p>We carried out a univariate analysis of the model variables to identify <italic>risk factors</italic> by comparing their values in the HOCI and control groups. To establish significance, we used either Mann-Whitney or Chi-squared tests and report the corresponding adjusted p-values (see method in S1.11).</p>
+</sec>
+<sec id="s2g">
+<title>Evaluation of machine learning models</title>
+<p>We constructed and evaluated several models to predict HOCI using different types of variables (full list of models in Methods S1.12). Each model was trained on 70&#x0025; of the data and tested on the withheld 30&#x0025; of the data. We report the highest performing model (XGBoost). Performance was measured by prediction on the test set quantified by AUC-ROC, as well as Sensitivity, Specificity and Balanced Accuracy adjusted for multiple prediction bias (see Methods S1.13). To aid interpretation, we formed a ranked list of variables by assessing the predictive contribution of each variable through a recursive elimination strategy<sup><xref ref-type="bibr" rid="c24">24</xref></sup> (see Methods S1.16-1.17).</p>
+</sec>
+<sec id="s2h">
+<title>Validation on additional datasets</title>
+<p>Two validation datasets were obtained: one external from a non-UK hospital setting (three sites of the Department of Rehabilitation and Geriatrics, Geneva University Hospitals) collected during the first epidemic surge; one internal from the same London hospital group collected at a later date when COVID-19 was endemic. To carry out our validation, we used an XGBoost model with hyper parameters optimised on the training data, and then applied to the new data. Due to the smaller size of the validation datasets, we report performance averaged across a 5-fold cross validation split.</p>
+</sec>
+</sec>
+<sec id="s3">
+<title>Results</title>
+<sec id="s3a">
+<title>Training and testing population</title>
+<p>A total of 51,157 patients were admitted to the London hospital group during the study&#x2019;s training and testing period (01 April 2020&#x2013;01 April 2021). Of these, 2,261 (4&#x00B7;4&#x0025;) patients tested positive for SARS-CoV-2, including 1,796 (3&#x00B7;5&#x0025;) COCIs and 465 (0&#x00B7;9&#x0025;) HOCIs. <xref rid="fig2" ref-type="fig">Figure 2</xref> details the patient inclusion breakdown for forecasting and background variable datasets. Together, 21,818 (42&#x00B7;6&#x0025;) patients had stayed three or more days in hospital and were included in the forecasting data (465 HOCIs and 21,353 non-HOCIs).</p>
+<fig id="fig2" position="float" fig-type="figure">
+<label>Figure 2.</label>
+<caption><title>Patient dataset inclusion diagram.</title>
+<p>Patients in hospital two days or fewer only contributed to background variables, whereas patients in hospital three or more days are part of both the generation of background variables and the forecasting dataset.</p></caption>
+<graphic xlink:href="21264240v1_fig2.tif"/>
+</fig>
+</sec>
+<sec id="s3b">
+<title>Epidemiology</title>
+<p>The levels of in-hospital COVID-19 cases displayed two surges congruent with national UK case levels (<xref rid="fig3" ref-type="fig">Figure 3</xref>). Surge 1 peaked on 30 March 2020 at 59 new daily positive hospital cases (50 COCIs, 9 HOCIs); surge 2 peaked on 6 January 2021 at 64 new daily cases (50 COCIs, 14 HOCIs). The two surges differed when analysing the time series (see Results S2.1): surge 2 had higher proportion of HOCIs (17&#x00B7;8&#x0025; HOCI compared to 15 1&#x0025; in surge 1), as well as higher correlation between HOCI and COCI, both instantaneous correlation (Surge 2: R=0&#x00B7;79; p&#x003C;0&#x00B7;05, Surge 1: R=0&#x00B7;59; p&#x003C;0&#x00B7;05), and delayed correlation with a 5-day lag (Surge 2: R=0&#x00B7;74; p&#x003C;0&#x00B7;05, Surge 1: R=0&#x00B7;53; p&#x003C;0&#x00B7;05). To note, the background variant makeup varied between the UK surges: whilst the alpha (B.1.1.7) and delta (B.1.617.2) variants comprised, respectively, 59&#x00B7;3&#x0025;, and 1&#x00B7;1&#x0025; of all nationally sequenced COVID-19 cases during surge 2, they were absent during surge 1 (see Results S2.1).</p>
+<fig id="fig3" position="float" fig-type="figure">
+<label>Figure 3.</label>
+<caption><title>Background hospital infections and contact structure across the study period.</title>
+<p>Daily new COVID-19 positive patients within the hospital (COCI and HOCI) varied dramatically across the study period. Peaks of 59 and 64 cases were reached on March 30, 2020, and January 06, 2021 respectively, whilst dipping to zero new daily cases over days during July, August, September, and October. The patient contact network also varied across the study period, panels i-iii, with differences in connectivity and size of patient contact clusters between each of the infection surges and during the summer period.</p></caption>
+<graphic xlink:href="21264240v1_fig3.tif"/>
+</fig>
+<p>The patient contact network structure also varied throughout the pandemic (<xref rid="fig3" ref-type="fig">Figure 3i-iii</xref>). The median number of contacts (degree) over networks across time was 4/22/67 for room/ward/building, respectively, with an increasing trend over time (see Results S2.3). Surge 1 had lower median degrees (3/18/57 for room/ward/building) compared to surge 2 (4/23/70 for median room/ward/building degrees). Other network measures also varied over the study period (see Results S2.3), with network metrics reflecting a denser contact network in surge 2 (<xref rid="fig3" ref-type="fig">Figure 3iii</xref>).</p>
+</sec>
+<sec id="s3c">
+<title>Characteristics of HOCI versus control patients across time</title>
+<sec id="s3c1">
+<title>Clinical variables</title>
+<p>Univariate analysis identified 10 clinical variables differentially represented in HOCI versus control (<xref rid="tbl2" ref-type="table">Table 2</xref>). Both age and gender-identity were significantly different between HOCI and control, with HOCIs over-represented in older patients (aged 69&#x00B7;2 vs 50&#x00B7;4, p&#x003C;0&#x00B7;05), and those who identified as male (56&#x00B7;2&#x0025;, p&#x003C;0&#x00B7;05). Regarding specialities, HOCIs were found in a significantly higher proportion of patients in elderly care, general medicine, renal, and surgery compared to control (p&#x003C;0&#x00B7;05), and significantly lower proportions in patients from cardiology, gynaecology, obstetrics, and paediatrics (p&#x003C;0&#x00B7;05).</p>
+<table-wrap id="tbl2" orientation="portrait" position="float">
+<label>Table 2.</label>
+<caption><title>Univariate analysis of all variables for control versus HOCI.</title>
+<p>Patient clinical, hospital contextual, and network-derived variables were investigated for discriminatory power between HOCI (SARS-CoV-2 positive sample 3 or more days after admission) versus control (no SARS-CoV-2 positive sample test). Due to the sliding window, each patient can appear multiple times over the duration of their hospital stay. To reduce the over representation of patients with longer length of stay, patient variables are aggregated averaged across time (see Methods S1.11). For continuous variables, we report median (with interquartile range (IQR) in parenthesis); for categorical variables, we report percentages. Statistical analyses were performed using Mann-Whitney (continuous variables) or Chi-squared (categorical variables) tests with adjusted p-values corrected for the aggregation by patient across time (see Methods S1.11).</p></caption>
+<graphic xlink:href="21264240v1_tbl2.tif"/>
+<graphic xlink:href="21264240v1_tbl2a.tif"/>
+</table-wrap>
+</sec>
+<sec id="s3c2">
+<title>Hospital contextual variables</title>
+<p>Six of the ten hospital contextual variables were significantly different between HOCI and control (<xref rid="tbl2" ref-type="table">Table 2</xref>). Relative to controls, HOCI patients were associated with longer length of stays prior to testing positive (averaging 7&#x00B7;3 days vs. 5&#x00B7;3 days; p&#x003C;&#x00B7;05); were in hospital during times of higher hospital bed occupancy (averaging 15,645 patients vs. 13,587; p&#x003C;0&#x00B7;05) and during periods of increased background incidence of COVID-19 (averaging 372 cases vs. 127; p&#x003C;0&#x00B7;05). No significant difference between HOCIs and control was observed for variables related to movement rates (bed/room/ward/site).</p>
+</sec>
+<sec id="s3c3">
+<title>Network variables</title>
+<p>For network variables, 24/30 centrality measures (8/10 from each room-contact, ward-contact, and building-contact networks; <xref rid="tbl2" ref-type="table">Table 2</xref>) were significantly higher in HOCI patients. Network variables significantly higher in HOCIs across the three contact networks included measures accounting for infectious COVID-19 cases (infected degree, infected degree centrality, infected closeness centrality) as well as general network connectivity (degree, closeness centrality, clustering coefficient, K-core number).</p>
+</sec>
+</sec>
+<sec id="s3d">
+<title>Prediction performance across variable sets</title>
+<sec id="s3d1">
+<title>Full variable set models</title>
+<p>We trained different models on our London data using sets of variables of different types (<xref rid="tbl2" ref-type="table">Table 2</xref>). All models demonstrated high predictive power (<xref rid="tbl3" ref-type="table">Table 3a</xref>; <xref rid="fig4" ref-type="fig">Figure 4A-B</xref>). In particular, the model based solely on contact network variables (AUC-ROC 0&#x00B7;88 [95&#x0025; CI, 0&#x00B7;86-0&#x00B7;9]) performed comparably to the model using all variables of all types (AUR-ROC 0&#x00B7;89 [0&#x00B7;88-0&#x00B7;90]), and yielded more predictive power than models using solely hospital context variables (AUC-ROC 0&#x00B7;82 [0&#x00B7;80-0&#x00B7;84]) or clinical variables (AUC-ROC 0&#x00B7;64 [0&#x00B7;62-0&#x00B7;66]). To ascertain the prediction power of the different types of contacts, separate models were trained on variables from each of the three contact networks (room/ward/building). The model based on ward contact network variables had the highest predictive power (AUC-ROC 0&#x00B7;87 [0&#x00B7;85-0&#x00B7;89]); yet building (AUC-ROC 0&#x00B7;85 [0&#x00B7;83-0&#x00B7;87]) and room (AUC-ROC 0&#x00B7;82 [0&#x00B7;80-0&#x00B7;84]) contact network models also yielded high performance.</p>
+<table-wrap id="tbl3" orientation="portrait" position="float">
+<label>Table 3.</label>
+<caption><title>Test set performance of models based on different variable sets.</title>
+<p>Model performance is measured using AUC-ROC [95&#x0025; CI], as well as balanced accuracy, sensitivity, and specificity from a collapsed confusion matrix to reduce bias (see SI methods for derivation).</p></caption>
+<graphic xlink:href="21264240v1_tbl3.tif"/>
+</table-wrap>
+<fig id="fig4" position="float" fig-type="figure">
+<label>Figure 4.</label>
+<caption><title>Model performance by variable set.</title>
+<p>Panel A shows the AUC-ROC test set performance for models broken down by the major feature groups (All/Clinical/Hospital contextual/Network). Panel B shows a further network feature decomposition by network variables computing from the Room, Ward and Building patient contact networks. Panel C displays the risk factor model test set performance for the Contextual risk factor model, the Network (ward) risk factor model, and a combined model from both the contextual and network (ward) risk factors identified in <xref rid="tbl3" ref-type="table">Table 3</xref>.</p></caption>
+<graphic xlink:href="21264240v1_fig4.tif"/>
+</fig>
+</sec>
+<sec id="s3d2">
+<title>Reduced variable set models (risk factors)</title>
+<p>We then investigated models with fewer variables, by training only on the risk factors, variables identified as significant (p-value &#x003C; 0&#x00B7;05 in <xref rid="tbl2" ref-type="table">Table 2</xref>), among hospital contextual and ward contact network variables. (We dropped clinical patient variables, room-contact network, and building-contact network due to comparably low performance.) <xref rid="tbl3" ref-type="table">Table 3b</xref> shows that the models based only on risk factors have equal performance to models that include all the corersponding variables (AUC-ROC 0&#x00B7;82 [0&#x00B7;80-0&#x00B7;84] for the hospital contextual risk factors, AUC-ROC 0&#x00B7;87 [0&#x00B7;85-0&#x00B7;89] for the ward contact network risk factors, and AUC-ROC 0&#x00B7;89 [0&#x00B7;88-0&#x00B7;90] for the combined model). Hence the identified risk factors recapitulate the predictive power of the models.</p>
+</sec>
+<sec id="s3d3">
+<title>Reduced variable set ranking</title>
+<p>Using a stepwise variable elimination approach (Results S2.5), we then ranked by predictive contribution the combined set of risk factors (hospital-contextual plus ward-contact network). The hospital contextual variable &#x2018;background hospital COVID-19 prevalence&#x2019; was most predictive, followed by two ward-contact network variables that reflect proximity to recent positive COVID-19 cases: the infected closeness centrality, which measures the network distance to all cases, and the infected degree/degree-centrality, which measures the direct contacts to infectious cases. A parsimonious model based only on these top three variables achieved AUC-ROC 0&#x00B7;85 [0&#x00B7;82-0&#x00B7;88], representing 95 5&#x0025; of the combined model performance (Results S2.5). The same top three variables are also found when applying variable elimination to: (i) the entire variable set, and (ii) all the risk factors (see <xref rid="tbl2" ref-type="table">Table 2</xref> and S2.5).</p>
+</sec>
+</sec>
+<sec id="s3e">
+<title>Validating the predictive power of contact network variables on additional datasets</title>
+<sec id="s3e1">
+<title>Non-UK hospital (epidemic)</title>
+<p>To validate our framework, we first applied our risk factor models to data collected at a Geneva geriatric hospital group during epidemic surge 1 (01 March 2020&#x2013;31 May 2020). Over that period, 281 COVID-19 cases (138 COCIs, 143 HOCIs) were reported. Cases surged and peaked on 26 March 2020, with 15 newly identified cases (9 HOCIs, 6 COCIs), reflecting the height of the early epidemic in Switzerland (<xref rid="fig5" ref-type="fig">Figure 5A</xref>). In this dataset, ward-level and building-level data were unavailable; hence, we extracted patient contact networks from the available room-level data. We then applied our risk factor models without recalibrating the hyperparameters. The model based only on hospital contextual risk factors (significant contextual variables in <xref rid="tbl2" ref-type="table">Table 2</xref>) achieved a high degree of prediction accuracy (AUC-ROC 0 84 [0 82-0 86]), but the inclusion of room contact network risk factors (significant room network variables in <xref rid="tbl2" ref-type="table">Table 2</xref>) further increased performance to AUC-ROC 0&#x00B7;88 [0&#x00B7;86 &#x2013; 0&#x00B7;90] despite being limited to room-level data (<xref rid="tbl4" ref-type="table">Table 4a</xref>).</p>
+<table-wrap id="tbl4" orientation="portrait" position="float">
+<label>Table 4.</label>
+<caption><title>Summary of validation performance.</title>
+<p>Across each dataset, three models were computed based on risk factors identified in the univariate analysis: (i) one based on the hospital contextual risk factors, (ii) another based on contact network risk factors, and (iii) one combining hospital contextual with contact network risk factors. Performance is measured using AUC-ROC and balanced accuracy, sensitivity, and specificity, which operate on a collapsed confusion matrix to reduce bias (see Methods S1.13).</p></caption>
+<graphic xlink:href="21264240v1_tbl4.tif"/>
+</table-wrap>
+<fig id="fig5" position="float" fig-type="figure">
+<label>Figure 5.</label>
+<caption><title>Epidemiology curves of validation datasets.</title>
+<p>Newly identified COVID-19 cases are reported across time and are broken down by HOCI and COCI case types. Panel A shows the non-UK (Geneva) hospital case load during an epidemic surge of cases. Panel B shows the UK hospital group post pandemic surges 1 and 2, when COVID-19 became endemic and non-surging.</p></caption>
+<graphic xlink:href="21264240v1_fig5.tif"/>
+</fig>
+</sec>
+<sec id="s3e2">
+<title>UK hospital (endemic)</title>
+<p>For further validation, we applied our risk factor models to additional data from the same London hospital group collected during an endemic period following UK surge 2 (02 April 2021&#x2013;10 August 2021). During this time, only 9 daily cases were reported on average, with no surging behaviour (<xref rid="fig5" ref-type="fig">Figure 5B</xref>). Compared to UK surges 1 and 2, HOCIs constituted a lower percentage of all cases (7&#x00B7;7&#x0025; of COVID-19 cases were HOCI, compared to 17&#x00B7;8&#x0025; in UK surge 1, and 15&#x00B7;1&#x0025; in UK surge 2), averaging 1 daily HOCI for a total of 93 confirmed HOCIs (Results S2.1). Applying our risk factor models to this endemic setting, we found the hospital contextual risk factor model performed poorly (AUC-ROC 0&#x00B7;49 [0&#x00B7;46-0&#x00B7;52]) with low sensitivity (0&#x00B7;56) and specificity (0&#x00B7;68) (<xref rid="tbl4" ref-type="table">Table 4b</xref>). The ward-contact network risk factors increased the performance substantially to AUC-ROC 0&#x00B7;63 [0&#x00B7;60-0&#x00B7;66]), and the combined risk factor model reached AUC-ROC 0&#x00B7;68 [0&#x00B7;64-0&#x00B7;70]), with higher sensitivity (0&#x00B7;70) and specificity (0&#x00B7;78) (<xref rid="tbl4" ref-type="table">Table 4b</xref>).</p>
+</sec>
+</sec>
+</sec>
+<sec id="s4">
+<title>Discussion</title>
+<p>We used Machine Learning in combination with network analysis to develop a framework for HOCI prediction using routinely available electronic health data. To our knowledge, this is the first study to forecast individual patient HOCIs by integrating routinely collected patient and hospital data with dynamic contact networks. We trained and tested our method using retrospective data from a London hospital group collected across the UK&#x2019;s COVID-19 pandemic, spanning surges 1 to 2. We find that, together with some hospital contextual variables, centrality measures computed from patient contact networks constitute a significant HOCI risk factor, able to increase the performance of predictive models in both pandemic and endemic conditions.</p>
+<p>The training and testing period in our study covers two COVID surges experienced in the UK. The temporal correlation between HOCIs and COCIs was greater during surge 2, suggesting a stronger link between hospital COVID-19 admissions generating HOCI (see S2.1). Higher overall HOCI rates during surge 2 were likely exacerbated by several factors: (i) the presence of more transmissible Alpha and Delta variants (absent in surge 1) representing together 60 4&#x0025; of isolates in UK surge 2; (ii) higher average direct contacts and higher network connectivity properties facilitative of disease spreading in surge 2 (see S2.1); (iii) higher average patient length of stay across surge 2; and (iv) higher average hospital occupancy across surge 2, due to the London hospital group preemptively reducing its operational capacity during surge 1.</p>
+<p>Transmission of SARS-CoV-2 in healthcare settings has been associated with features such as limited isolation capacity, sub-optimal individual infection prevention practices (including patient and staff testing strategies<sup><xref ref-type="bibr" rid="c25">25</xref></sup>), failure to maintain physical distancing, presenteeism, poor environmental ventilation and contaminated fomites, which can all be linked to particular patient groups<sup><xref ref-type="bibr" rid="c26">26</xref></sup>. In our training and testing data, patients managed in elderly care, general medicine, renal, and surgical units were significantly over-represented in the HOCI group (<xref rid="tbl3" ref-type="table">Table 3</xref>). Staffing levels and stress in critical care, complex pathways and excess movements resulting in additional contacts amongst surgery patients, and the strong community links in renal wards may have each exacerbated transmission in those specialities. The fact that older patients and male gender-identity were significantly over represented in HOCIs reflects known features of the wider pandemic<sup><xref ref-type="bibr" rid="c27">27</xref></sup>. Whilst studies to date have focused primarily on individual demographic and clinical risk variables<sup><xref ref-type="bibr" rid="c28">28</xref>,<xref ref-type="bibr" rid="c29">29</xref></sup>, our results demonstrate that such fixed variables are the least predictive overall, and future studies may improve performance and generalisability by including contextual and dynamic variables.</p>
+<p>A large-scale analysis of SARS-CoV-2 transmission attributed variations in acquisition risk to differences in behavioural factors, contact density, and ventilation between locations<sup><xref ref-type="bibr" rid="c30">30</xref></sup>, consistent with the identified hospital-contextual risk factors. In particular, we found that background prevalence of COVID-19 within the hospital was the most predictive variable in our training and test data. Whilst a larger pool of COVID-19 cases increases potential sources of transmission, background prevalence may also be a proxy for staffing stress and density changes acting as potential exacerbators in response to higher hospital case load. Similarly, the higher HOCI risk from increased hospital bed occupancy could be due to higher patient loads, increased density and staffing pressures, making IPC more challenging. Length of stay was also found significantly longer for HOCIs (similar to other healthcare-acquired infections<sup><xref ref-type="bibr" rid="c3">3</xref></sup>) (<xref rid="tbl2" ref-type="table">Table 2</xref>). Moreover, the length of stay and the consecutive length of stay both being significantly longer for HOCIs supports a genomic analysis of HOCI by <italic>Lumley and colleagues</italic><sup><xref ref-type="bibr" rid="c10">10</xref></sup>, suggesting acquisition could be linked to previous hospital visits (i.e. patient admitted, discharged, followed by re-admission and a SARS-CoV-2&#x2013;positive test sample three or more days post re-admission). Increased movement rate (bed/room/ward/sites moves) is known to be associated with increased risk of acquisition of HCAI, and has been investigated locally<sup><xref ref-type="bibr" rid="c31">31</xref></sup>, but did not significantly differ between control and HOCI in our data (<xref rid="tbl2" ref-type="table">Table 2</xref>). This suggests that the risk from movement rates alone is likely too general for HOCI, lacking specificity on move types, and is better captured via contact related metrics. Altogether, models based on hospital-contextual variables demonstrated strong predictive performance in periods containing epidemic surges. Such models were improved further by the addition of contact network variables, and notably improved in the endemic London validation data when hospital-contextual risk factors lacked predictive power (<xref rid="tbl4" ref-type="table">Table 4</xref>).</p>
+<p>Most of the contact network variables (24 out of the 30 investigated, eight from each contact definition) were found at significantly higher levels in HOCIs (<xref rid="tbl2" ref-type="table">Table 2</xref>). Further, our model based only on contact network variables was found as predictive as a model including all other variables (<xref rid="tbl3" ref-type="table">Table 3</xref>; <xref rid="fig4" ref-type="fig">Figure 4</xref>). This indicates that the underlying network structure holds features that could be systematically exploited for HOCI prediction with network mining tools<sup><xref ref-type="bibr" rid="c32">32</xref></sup>. HOCIs were found to be highly central in contact networks with respect to both infected cases and overall patient connectivity. Few studies have used contact data to investigate healthcare-acquired infections, and most have only considered direct contacts (i.e., network degree<sup><xref ref-type="bibr" rid="c16">16</xref>&#x2013;<xref ref-type="bibr" rid="c19">19</xref>,<xref ref-type="bibr" rid="c28">28</xref></sup>). Similarly, COVID-19 transmission analysis outside hospital settings has been limited to direct contacts<sup><xref ref-type="bibr" rid="c12">12</xref>,<xref ref-type="bibr" rid="c33">33</xref></sup>. Our results are consistent with these studies, confirming direct contacts as an immediate risk predictive of disease. We find, however, that the infected closeness centrality from the ward-contact network, a measure of connectedness to all known infections, is more predictive than direct infectious contacts. This suggests the presence of longer transmission chains and potentially insufficient contact tracing strategies. Hospital IPC may thus benefit from more comprehensive contact tracing approaches, as seen in highly effective COVID-19 containment by governments outside healthcare settings<sup><xref ref-type="bibr" rid="c34">34</xref></sup>. Ward-level patient contact networks showed the highest performance, followed by building and then room, suggesting that epidemiological investigations should focus on ward links, which implicitly capture contacts with shared staff and patients in side-rooms<sup><xref ref-type="bibr" rid="c35">35</xref></sup>.</p>
+<p>Accurate disease prediction is essential to prevent onward transmission<sup><xref ref-type="bibr" rid="c12">12</xref>,<xref ref-type="bibr" rid="c13">13</xref></sup>. Frequently, however, prediction models are static and do not account explicitly for the dynamic contact-mediated nature of many diseases<sup><xref ref-type="bibr" rid="c4">4</xref></sup>. Our dynamic disease forecasting framework (R package (<ext-link ext-link-type="uri" xlink:href="https://github.com/barahona-research-group/Dynamic-contact-infection-forecast">barahona-research-group/Dynamic-contact-infection-forecast</ext-link>)) has been developed to be portable to a range of settings and variables. The framework provides daily patient-individualised predictions and can identify dynamic disease acquisition risk factors. To demonstrate its transferability, we applied it to data from a Geneva hospital group during surge 1 and demonstrated increased predictive power through the inclusion of contact network risk factors, despite only having access to room-level contacts, which were found to be less predictive in the London training data. We further showcased the applicability of the model by applying it to data from the same London hospital group at a later date under differing epidemiological (endemic) conditions (S2.1), changing hospital control measures, newly emerging variants, and increasing vaccination rates. Whilst the endemic validation achieved weaker performance, the inclusion of ward-level patient contact network risk factors substantially increased performance compared to the lack of predictivity of hospital-contextual risk factors alone (<xref rid="tbl4" ref-type="table">Table 4</xref>). With the continuing persistence of the COVID-19 pandemic, our framework and contact risk factors thus offer a tool to aid identification of potential HOCI cases across epidemic and endemic periods.</p>
+<p>Our study has several limitations. First, our definitions of contact may miss certain transmission routes, e.g., connections via healthcare workers<sup><xref ref-type="bibr" rid="c35">35</xref>,<xref ref-type="bibr" rid="c36">36</xref></sup>, indirect transmission over surfaces, undetected patient carriage<sup><xref ref-type="bibr" rid="c37">37</xref></sup>, or non-room/ward/building contact. Second, since our training and testing period occurred largely prior to the UK&#x2019;s vaccination rollout, we were unable to include vaccination status as a patient variable. However, the emergence of new variants and lack of complete vaccine coverage<sup><xref ref-type="bibr" rid="c38">38</xref></sup> means that the assumption of susceptibility is still relevant, as demonstrated by our post-surge endemic data. Third, we did not include recovered COVID-19 patients in the HOCI prediction dataset because of limited cases and uncertainty regarding future susceptibility. Fourth, our data did not include indoor ventilation and room volume, which are recognised as contributory risks to COVID-19 transmission<sup><xref ref-type="bibr" rid="c39">39</xref></sup>. However, even without explicitly accounting for ventilation, our models still proved highly predictive. Finally, in response to the pandemic, various aspects of hospital organisation were altered, including changes in screening practice, personal protective equipment, or placing of ward beds, which were not explicitly encoded as model variables.</p>
+<p>Our study highlights the predictive power that can be mined from networks of patient contacts to aid with personalised predictions of infectious disease in healthcare settings. The current study applies to respiratory virus transmission. Further work will be needed to extend this work to other healthcare-acquired infections by assessing how the inclusion of variables capturing a patient&#x2019;s environment within an underlying contact network could aid prediction with a view to inform infection prevention and control measures.</p>
+</sec>
+<sec sec-type="supplementary-material">
+<title>Supporting information</title>
+<supplementary-material>
+<label>Supplemental file</label>
+<media xlink:href="supplements/264240_file02.pdf" />
+</supplementary-material>
+</sec>
+</body>
+<back>
+<sec sec-type="data-availability">
+<title>Data Availability</title>
+<p>The processed anonymised training and testing dataset used in this study can be available upon reasonable request to the corresponding author. Patient pathways will not be provided as these are withheld by the corresponding author's organisation to preserve patient privacy. Data from the Imperial Clinical Analytics Research and Evaluation (iCARE) platform used in this study may be available to researchers at request. External validation data sources will not be provided as these are withheld by owners. Data regarding hospital COVID-19 admissions is freely available via the NHS website. The code of the method is freely available as an (R package with examplar data sets.</p>
+</sec>
+<sec id="s5">
+<title>Additional information</title>
+<sec id="s5a">
+<title>Contributors</title>
+<p>AM, JRP, RLP, SM, and MB contributed to study concept and design. JRP, MA, SM, NZ, and FR contributed to data acquisition. AM, JRP, MA, and SM contributed to data analysis and accessed and verified the underlying data. AM, JRP, RLP, MA, AH, and MB contributed to the initial manuscript drafting. All authors contributed to data interpretation, as well as final revisions of the manuscript. AH and MB contributed to study supervision. AM, JRP, RLP, MA, SM, SH, AH and MB, contributed to the discussion of the results and reviewed the data. All authors had full access to all the data in the study and had final responsibility for the decision to submit for publication.</p>
+</sec>
+<sec id="s5b">
+<title>Data sharing</title>
+<p>The processed anonymised training and testing dataset used in this study can be available upon reasonable request to the corresponding author. Patient pathways will not be provided as these are withheld by the corresponding author&#x2019;s organisation to preserve patient privacy. Data from the Imperial Clinical Analytics Research and Evaluation (iCARE) platform used in this study may be available to researchers at request through <ext-link ext-link-type="uri" xlink:href="https://imperialbrc.nihr.ac.uk/facilities/icare/">imperialbrc.nihr.ac.uk/facilities/icare/</ext-link>. External validation data sources will not be provided as these are withheld by owners. Data regarding hospital COVID-19 admissions is freely available via the NHS <ext-link ext-link-type="uri" xlink:href="https://www.england.nhs.uk/statistics/statistical-work-areas/covid-19-hospital-activity/">covid-19-hospital-activity</ext-link>. The code of the method is freely available as an (R package (<ext-link ext-link-type="uri" xlink:href="https://github.com/barahona-research-group/Dynamic-contact-infection-forecast">barahona-research-group/Dynamic-contact-infection-forecast</ext-link>)) with examplar data sets.</p>
+</sec>
+<sec id="s5c">
+<title>Declaration of interests</title>
+<p>We declare no competing interests.</p>
+</sec>
+</sec>
+<ack>
+<title>Acknowledgements</title>
+<p>We thank Imperial College London&#x2019;s NHS Infection Prevention and Control team, iCARE team, for supporting data access, cleaning and interpretation.</p>
+<p>AM was supported in part by a scholarship from the Medical Research Foundation National PhD Training Programme in Antimicrobial Resistance Research (MRF-145-0004-TPG-AVISO), as well as by the National Institute for Health Research Academy. RLP was funded by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) Project-ID 424778381-TRR 295. MO received funding from the Swiss National Science Foundation. AH is a National Institute for Health Research Senior Investigator. AH is also partly funded by the National Institute for Health Research Health Protection Research Unit (NIHR HPRU) in Healthcare Associated Infections and Antimicrobial Infections in partnership with Public Health England, in collaboration with, Imperial Healthcare Partners, University of Cambridge and University of Warwick (NIHR grant code: NIHR200876). AM, RLP, and MB acknowledge funding from EPSRC grant EP/N014529/1 to MB, supporting the EPSRC Centre for Mathematics of Precision Healthcare. The underlying investigation also received financial support from the World Health Organization (WHO). The research was also supported by the NIHR Imperial Biomedical Research Centre and by the iCARE environment and used the iCARE team and data resources.</p>
+<p>The views expressed in this publication are those of the author(s) and not necessarily those of the NHS, the National Institute for Health Research, the Department of Health and Social Care or Public Health England or those of the WHO.</p>
+</ack>
+<ref-list>
+<title>References</title>
+<ref id="c1"><label>1.</label><mixed-citation publication-type="journal"><string-name><surname>Harapan</surname>, <given-names>H.</given-names></string-name> <etal>et al.</etal> <article-title>Coronavirus disease 2019 (COVID-19): A literature review</article-title>. <source>J. Infect. Public Heal</source>. <volume>13</volume>, <fpage>667</fpage>&#x2013;<lpage>673</lpage>, DOI: <pub-id pub-id-type="doi">10.1016/j.jiph.2020.03.019</pub-id> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c2"><label>2.</label><mixed-citation publication-type="journal"><string-name><surname>Barranco</surname>, <given-names>R.</given-names></string-name>, <string-name><surname>Vallega Bernucci Du Tremoul</surname>, <given-names>L.</given-names></string-name> &#x0026; <string-name><surname>Ventura</surname>, <given-names>F.</given-names></string-name> <article-title>Hospital-Acquired SARS-Cov-2 Infections in Patients: Inevitable Conditions or Medical Malpractice?</article-title> <source>Int. J. Environ. Res. Public Heal</source>. <volume>18</volume>, <fpage>489</fpage>, DOI: <pub-id pub-id-type="doi">10.3390/ijerph18020489</pub-id> (<year>2021</year>).</mixed-citation></ref>
+<ref id="c3"><label>3.</label><mixed-citation publication-type="journal"><string-name><surname>Freeman</surname>, <given-names>J.</given-names></string-name> &#x0026; <string-name><surname>McGowan</surname>, <given-names>J.E.</given-names>, <suffix>Jr.</suffix></string-name> <article-title>Risk Factors for Nosocomial Infection</article-title>. <source>The J. Infect. Dis</source>. <volume>138</volume>, <fpage>811</fpage>&#x2013;<lpage>819</lpage>, DOI: <pub-id pub-id-type="doi">10.1093/infdis/138.6.811</pub-id> (<year>1978</year>).</mixed-citation></ref>
+<ref id="c4"><label>4.</label><mixed-citation publication-type="book"><string-name><surname>Anderson</surname>, <given-names>R. M.</given-names></string-name> &#x0026; <string-name><surname>May</surname>, <given-names>R. M.</given-names></string-name> <source>Infectious Diseases of Humans: Dynamics and Control</source> (<publisher-name>Oxford University Press</publisher-name>, <publisher-loc>Oxford, New York</publisher-loc>, <year>1992</year>).</mixed-citation></ref>
+<ref id="c5"><label>5.</label><mixed-citation publication-type="journal"><string-name><surname>Cevik</surname>, <given-names>M.</given-names></string-name> &#x0026; <string-name><surname>Baral</surname>, <given-names>S. D.</given-names></string-name> <article-title>Networks of SARS-CoV-2 transmission</article-title>. <source>Science</source> <volume>373</volume>, DOI: <pub-id pub-id-type="doi">10.1126/science.abg0842</pub-id> (<year>2021</year>).</mixed-citation></ref>
+<ref id="c6"><label>6.</label><mixed-citation publication-type="journal"><string-name><surname>Holme</surname>, <given-names>P.</given-names></string-name> &#x0026; <string-name><surname>Saram&#x00E4;ki</surname>, <given-names>J.</given-names></string-name> <article-title>Temporal networks</article-title>. <source>Phys. Reports</source> <volume>519</volume>, <fpage>97</fpage>&#x2013;<lpage>125</lpage>, DOI: <pub-id pub-id-type="doi">10.1016/j.physrep.2012.03.001</pub-id> (<year>2012</year>).</mixed-citation></ref>
+<ref id="c7"><label>7.</label><mixed-citation publication-type="journal"><string-name><surname>Meyers</surname>, <given-names>L. A.</given-names></string-name> <article-title>Contact network epidemiology: Bond percolation applied to infectiousdisease prediction and control</article-title>. <source>Bull. Am. Math. Soc</source>. <volume>44</volume>, <fpage>63</fpage>&#x2013;<lpage>87</lpage>, DOI: <pub-id pub-id-type="doi">10.1090/S0273-0979-06-01148-7</pub-id> (<year>2006</year>).</mixed-citation></ref>
+<ref id="c8"><label>8.</label><mixed-citation publication-type="journal"><string-name><surname>Lloyd-Smith</surname>, <given-names>J. O.</given-names></string-name>, <string-name><surname>Schreiber</surname>, <given-names>S. J.</given-names></string-name>, <string-name><surname>Kopp</surname>, <given-names>P. E.</given-names></string-name> &#x0026; <string-name><surname>Getz</surname>, <given-names>W. M.</given-names></string-name> <article-title>Superspreading and the effect of individual variation on disease emergence</article-title>. <source>Nature</source> <volume>438</volume>, DOI: <pub-id pub-id-type="doi">10.1038/nature04153</pub-id> (<year>2005</year>).</mixed-citation></ref>
+<ref id="c9"><label>9.</label><mixed-citation publication-type="journal"><string-name><surname>Illingworth</surname>, <given-names>C. J.</given-names></string-name> <etal>et al.</etal> <article-title>Superspreaders drive the largest outbreaks of hospital onset COVID-19 infections</article-title>. <source>eLife</source> <volume>10</volume>, DOI: <pub-id pub-id-type="doi">10.7554/eLife.67308</pub-id> (<year>2021</year>).</mixed-citation></ref>
+<ref id="c10"><label>10.</label><mixed-citation publication-type="journal"><string-name><surname>Lumley</surname>, <given-names>S. F.</given-names></string-name> <etal>et al.</etal> <article-title>Epidemiological data and genome sequencing reveals that nosocomial transmission of SARS-CoV-2 is underestimated and mostly mediated by a small number of highly infectious individuals</article-title>. <source>J. Infect</source>. <volume>83</volume>, <fpage>473</fpage>&#x2013;<lpage>482</lpage>, DOI: <pub-id pub-id-type="doi">10.1016/j.jinf.2021.07.034</pub-id> (<year>2021</year>).</mixed-citation></ref>
+<ref id="c11"><label>11.</label><mixed-citation publication-type="other"><string-name><surname>Ge</surname>, <given-names>Y.</given-names></string-name> <etal>et al.</etal> <article-title>COVID-19 Transmission Dynamics Among Close Contacts of Index Patients With COVID-19: A Population-Based Cohort Study in Zhejiang Province, China</article-title>. <source>JAMA Intern. Medicine</source> DOI: <pub-id pub-id-type="doi">10.1001/jamainternmed.2021.4686</pub-id> (<year>2021</year>).</mixed-citation></ref>
+<ref id="c12"><label>12.</label><mixed-citation publication-type="journal"><string-name><surname>Ferretti</surname>, <given-names>L.</given-names></string-name> <etal>et al.</etal> <article-title>Quantifying SARS-CoV-2 transmission suggests epidemic control with digital contact tracing</article-title>. <source>Science</source> <volume>368</volume>, DOI: <pub-id pub-id-type="doi">10.1126/science.abb6936</pub-id> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c13"><label>13.</label><mixed-citation publication-type="journal"><string-name><surname>Kendall</surname>, <given-names>M.</given-names></string-name> <etal>et al.</etal> <article-title>Epidemiological changes on the Isle of Wight after the launch of the NHS Test and Trace programme: a preliminary analysis</article-title>. <source>The Lancet Digit. Heal</source>. <volume>2</volume>, DOI: <pub-id pub-id-type="doi">10.1016/S2589-7500(20)30241-7</pub-id> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c14"><label>14.</label><mixed-citation publication-type="journal"><string-name><surname>Newman</surname>, <given-names>M. E. J.</given-names></string-name> <article-title>Spread of epidemic disease on networks</article-title>. <source>Phys. Rev. E</source> <volume>66</volume>, DOI: <pub-id pub-id-type="doi">10.1103/PhysRevE.66.016128</pub-id> (<year>2002</year>).</mixed-citation></ref>
+<ref id="c15"><label>15.</label><mixed-citation publication-type="journal"><string-name><surname>Liu</surname>, <given-names>Y.</given-names></string-name> <etal>et al.</etal> <article-title>Associations between changes in population mobility in response to the COVID-19 pandemic and socioeco-nomic factors at the city level in China and country level worldwide: a retrospective, observational study</article-title>. <source>The Lancet Digit. Heal</source>. <volume>3</volume>, DOI: <pub-id pub-id-type="doi">10.1016/S2589-7500(21)00059-5</pub-id> (<year>2021</year>).</mixed-citation></ref>
+<ref id="c16"><label>16.</label><mixed-citation publication-type="journal"><string-name><surname>Rewley</surname>, <given-names>J.</given-names></string-name>, <string-name><surname>Koehly</surname>, <given-names>L.</given-names></string-name>, <string-name><surname>Marcum</surname>, <given-names>C. S.</given-names></string-name> &#x0026; <string-name><surname>Reed-Tsochas</surname>, <given-names>F.</given-names></string-name> <article-title>A passive monitoring tool using hospital administrative data enables earlier specific detection of healthcare-acquired infections</article-title>. <source>J. Hosp. Infect</source>. <volume>106</volume>, DOI: <pub-id pub-id-type="doi">10.1016/j.jhin.2020.07.031</pub-id> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c17"><label>17.</label><mixed-citation publication-type="journal"><string-name><surname>Hamel</surname>, <given-names>M.</given-names></string-name>, <string-name><surname>Zoutman</surname>, <given-names>D.</given-names></string-name> &#x0026; <string-name><surname>O&#x2019;Callaghan</surname>, <given-names>C.</given-names></string-name> <article-title>Exposure to hospital roommates as a risk factor for health care&#x2013;associated infection</article-title>. <source>Am. J. Infect. Control</source>. <volume>38</volume>, <fpage>173</fpage>&#x2013;<lpage>181</lpage>, DOI: <pub-id pub-id-type="doi">10.1016/j.ajic.2009.08.016</pub-id> (<year>2010</year>).</mixed-citation></ref>
+<ref id="c18"><label>18.</label><mixed-citation publication-type="journal"><string-name><surname>Shaughnessy</surname>, <given-names>M. K.</given-names></string-name> <etal>et al.</etal> <article-title>Evaluation of Hospital Room Assignment and Acquisition of Clostridium difficile Infection</article-title>. <source>Infect. Control. &#x0026; Hosp. Epidemiol</source>. <volume>32</volume>, DOI: <pub-id pub-id-type="doi">10.1086/658669</pub-id> (<year>2011</year>).</mixed-citation></ref>
+<ref id="c19"><label>19.</label><mixed-citation publication-type="other"><string-name><surname>Karan</surname>, <given-names>A.</given-names></string-name> <etal>et al.</etal> <article-title>The Risk of SARS-CoV-2 Transmission from Patients with Undiagnosed Covid-19 to Roommates in a Large Academic Medical Center</article-title>. <source>Clin. Infect. Dis</source>. DOI: <pub-id pub-id-type="doi">10.1093/cid/ciab564</pub-id> (<year>2021</year>).</mixed-citation></ref>
+<ref id="c20"><label>20.</label><mixed-citation publication-type="journal"><string-name><surname>Pastor-Satorras</surname>, <given-names>R.</given-names></string-name> &#x0026; <string-name><surname>Vespignani</surname>, <given-names>A.</given-names></string-name> <article-title>Epidemic Spreading in Scale-Free Networks</article-title>. <source>Phys. Rev. Lett</source>. <volume>86</volume>, DOI: <pub-id pub-id-type="doi">10.1103/PhysRevLett.86.3200</pub-id> (<year>2001</year>).</mixed-citation></ref>
+<ref id="c21"><label>21.</label><mixed-citation publication-type="journal"><string-name><surname>Price</surname>, <given-names>J. R.</given-names></string-name> <etal>et al.</etal> <article-title>Development and Delivery of a Real-time Hospital-onset COVID-19 Surveillance System Using Network Analysis</article-title>. <source>Clin. Infect. Dis</source>. <volume>72</volume>, <fpage>82</fpage>&#x2013;<lpage>89</lpage>, DOI: <pub-id pub-id-type="doi">10.1093/cid/ciaa892</pub-id> (<year>2021</year>).</mixed-citation></ref>
+<ref id="c22"><label>22.</label><mixed-citation publication-type="journal"><string-name><surname>Lauer</surname>, <given-names>S. A.</given-names></string-name> <etal>et al.</etal> <article-title>The Incubation Period of Coronavirus Disease 2019 (COVID-19) From Publicly Reported Confirmed Cases: Estimation and Application</article-title>. <source>Annals Intern. Medicine</source> <volume>172</volume>, DOI: <pub-id pub-id-type="doi">10.7326/M20-0504</pub-id> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c23"><label>23.</label><mixed-citation publication-type="journal"><string-name><surname>Abbas</surname>, <given-names>M.</given-names></string-name> <etal>et al.</etal> <article-title>Hospital-onset COVID-19 infection surveillance systems: a systematic review</article-title>. <source>J. Hosp. Infect</source>. <volume>115</volume>, DOI: <pub-id pub-id-type="doi">10.1016/j.jhin.2021.05.016</pub-id> (<year>2021</year>).</mixed-citation></ref>
+<ref id="c24"><label>24.</label><mixed-citation publication-type="journal"><string-name><surname>Guyon</surname>, <given-names>I.</given-names></string-name>, <string-name><surname>Weston</surname>, <given-names>J.</given-names></string-name>, <string-name><surname>Barnhill</surname>, <given-names>S.</given-names></string-name> &#x0026; <string-name><surname>Vapnik</surname>, <given-names>V.</given-names></string-name> <article-title>Gene Selection for Cancer Classification using Support Vector Machines</article-title>. <source>Mach. Learn</source>. <volume>46</volume>, <fpage>389</fpage>&#x2013;<lpage>422</lpage>, DOI: <pub-id pub-id-type="doi">10.1023/A:1012487302797</pub-id> (<year>2002</year>).</mixed-citation></ref>
+<ref id="c25"><label>25.</label><mixed-citation publication-type="journal"><string-name><surname>Lani&#x00E8;ce Delaunay</surname>, <given-names>C.</given-names></string-name>, <string-name><surname>Saeed</surname>, <given-names>S.</given-names></string-name> &#x0026; <string-name><surname>Nguyen</surname>, <given-names>Q. D.</given-names></string-name> <article-title>Evaluation of Testing Frequency and Sampling for Severe Acute Respiratory Syndrome Coronavirus 2 Surveillance Strategies in Long-Term Care Facilities</article-title>. <source>J. Am. Med. Dir. Assoc</source>. <volume>21</volume>, <fpage>1574</fpage>&#x2013;<lpage>1576</lpage>.e2, DOI: <pub-id pub-id-type="doi">10.1016/j.jamda.2020.08.022</pub-id> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c26"><label>26.</label><mixed-citation publication-type="journal"><string-name><surname>Kampf</surname>, <given-names>G.</given-names></string-name> <etal>et al.</etal> <article-title>Potential sources, modes of transmission and effectiveness of prevention measures against SARS-CoV-2</article-title>. <source>The J. Hosp. Infect</source>. <volume>106</volume>, <fpage>678</fpage>&#x2013;<lpage>697</lpage>, DOI: <pub-id pub-id-type="doi">10.1016/j.jhin.2020.09.022</pub-id> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c27"><label>27.</label><mixed-citation publication-type="book"><string-name><surname>Wenham</surname>, <given-names>C.</given-names></string-name>, <string-name><surname>Smith</surname>, <given-names>J.</given-names></string-name> &#x0026; <string-name><surname>Morgan</surname>, <given-names>R.</given-names></string-name> <chapter-title>COVID-19: the gendered impacts of the outbreak</chapter-title>. <source>The Lancet</source> <volume>395</volume>, <fpage>846</fpage>&#x2013;<lpage>848</lpage>, DOI: <pub-id pub-id-type="doi">10.1016/S0140-6736(20)30526-2</pub-id> (<year>2020</year>). <publisher-name>Publisher: Elsevier</publisher-name>.</mixed-citation></ref>
+<ref id="c28"><label>28.</label><mixed-citation publication-type="journal"><string-name><surname>Sun</surname>, <given-names>Y.</given-names></string-name> <etal>et al.</etal> <article-title>Epidemiological and Clinical Predictors of COVID-19</article-title>. <source>Clin. Infect. Dis</source>. <volume>71</volume>, <fpage>786</fpage>&#x2013;<lpage>792</lpage>, DOI: <pub-id pub-id-type="doi">10.1093/cid/ciaa322</pub-id> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c29"><label>29.</label><mixed-citation publication-type="journal"><string-name><surname>Soltan</surname>, <given-names>A. A. S.</given-names></string-name> <etal>et al.</etal> <article-title>Rapid triage for COVID-19 using routine clinical data for patients attending hospital: development and prospective validation of an artificial intelligence screening test</article-title>. <source>The Lancet. Digit. Heal</source>. <volume>3</volume>, <fpage>e78</fpage>&#x2013;<lpage>e87</lpage>, DOI: <pub-id pub-id-type="doi">10.1016/S2589-7500(20)30274-0</pub-id> (<year>2021</year>).</mixed-citation></ref>
+<ref id="c30"><label>30.</label><mixed-citation publication-type="other"><string-name><surname>Chen</surname>, <given-names>C.</given-names></string-name> <etal>et al.</etal> <source>Using Genomic Concordance to Estimate COVID-19 Transmission Risk Across Different Community Settings in England 2020/21</source>, DOI: <pub-id pub-id-type="doi">10.2139/ssrn.3867682</pub-id> (<year>2021</year>).</mixed-citation></ref>
+<ref id="c31"><label>31.</label><mixed-citation publication-type="journal"><string-name><surname>Boncea</surname>, <given-names>E. E.</given-names></string-name> <etal>et al.</etal> <article-title>Association between intrahospital transfer and hospital-acquired infection in the elderly: a retrospective case&#x2013;control study in a UK hospital network</article-title>. <source>BMJ Qual. &#x0026; Saf</source>. <volume>30</volume>, DOI: <pub-id pub-id-type="doi">10.1136/bmjqs-2020-012124</pub-id> (<year>2021</year>).</mixed-citation></ref>
+<ref id="c32"><label>32.</label><mixed-citation publication-type="journal"><string-name><surname>Peach</surname>, <given-names>R. L.</given-names></string-name> <etal>et al.</etal> <article-title>Hcga: Highly comparative graph analysis for network phenotyping</article-title>. <source>Patterns</source> <volume>2</volume>, <fpage>100227</fpage>, DOI: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/j.patter.2021.100227">https://doi.org/10.1016/j.patter.2021.100227</ext-link> (<year>2021</year>).</mixed-citation></ref>
+<ref id="c33"><label>33.</label><mixed-citation publication-type="journal"><string-name><surname>Sun</surname>, <given-names>K.</given-names></string-name> <etal>et al.</etal> <article-title>Transmission heterogeneities, kinetics, and controllability of SARS-CoV-2</article-title>. <source>Science</source> <volume>371</volume>, DOI: <pub-id pub-id-type="doi">10.1126/science.abe2424</pub-id> (<year>2021</year>).</mixed-citation></ref>
+<ref id="c34"><label>34.</label><mixed-citation publication-type="journal"><string-name><surname>Lee</surname>, <given-names>V. J.</given-names></string-name>, <string-name><surname>Chiew</surname>, <given-names>C. J.</given-names></string-name> &#x0026; <string-name><surname>Khong</surname>, <given-names>W. X.</given-names></string-name> <article-title>Interrupting transmission of COVID-19: lessons from containment efforts in Singapore</article-title>. <source>J. Travel. Medicine</source> <volume>27</volume>, DOI: <pub-id pub-id-type="doi">10.1093/jtm/taaa039</pub-id> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c35"><label>35.</label><mixed-citation publication-type="journal"><string-name><surname>Abbas</surname>, <given-names>M.</given-names></string-name> <etal>et al.</etal> <article-title>Nosocomial transmission and outbreaks of coronavirus disease 2019: the need to protect both patients and healthcare workers</article-title>. <source>Antimicrob. Resist. &#x0026; Infect. Control</source>. <volume>10</volume>, <fpage>7</fpage>, DOI: <pub-id pub-id-type="doi">10.1186/s13756-020-00875-7</pub-id> (<year>2021</year>).</mixed-citation></ref>
+<ref id="c36"><label>36.</label><mixed-citation publication-type="journal"><string-name><surname>Abbas</surname>, <given-names>M.</given-names></string-name> <etal>et al.</etal> <article-title>Explosive nosocomial outbreak of SARS-CoV-2 in a rehabilitation clinic: the limits of genomics for outbreak reconstruction</article-title>. <source>J. Hosp. Infect</source>. S019567012100308X, DOI: <pub-id pub-id-type="doi">10.1016/j.jhin.2021.07.013</pub-id> (<year>2021</year>).</mixed-citation></ref>
+<ref id="c37"><label>37.</label><mixed-citation publication-type="other"><string-name><surname>Myall</surname>, <given-names>A.</given-names></string-name> <etal>et al.</etal> <source>Characterising contact in disease outbreaks via a network model of spatial-temporal proximity</source>. 2021.04.07.21254497, DOI: <pub-id pub-id-type="doi">10.1101/2021.04.07.21254497</pub-id> (<year>2021</year>).</mixed-citation></ref>
+<ref id="c38"><label>38.</label><mixed-citation publication-type="journal"><string-name><surname>Davies</surname>, <given-names>N. G.</given-names></string-name> <etal>et al.</etal> <article-title>Estimated transmissibility and impact of SARS-CoV-2 lineage B.1.1.7 in England</article-title>. <source>Science</source> <volume>372</volume>, DOI: <pub-id pub-id-type="doi">10.1126/science.abg3055</pub-id> (<year>2021</year>).</mixed-citation></ref>
+<ref id="c39"><label>39.</label><mixed-citation publication-type="journal"><string-name><surname>Lu</surname>, <given-names>J.</given-names></string-name> <etal>et al.</etal> <article-title>COVID-19 Outbreak Associated with Air Conditioning in Restaurant, Guangzhou, China</article-title>, <year>2020</year>- Volume <volume>26</volume>, Number 7&#x2014;July 2020 - <source>Emerging Infectious Diseases journal - CDC</source>. DOI: <pub-id pub-id-type="doi">10.3201/eid2607.200764</pub-id>.</mixed-citation></ref>
+</ref-list>
+</back>
+</article>

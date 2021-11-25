@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.2d1 20170631//EN" "JATS-archivearticle1.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" article-type="article" dtd-version="1.2d1" specific-use="production" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="publisher-id">MEDRXIV</journal-id>
+<journal-title-group>
+<journal-title>medRxiv</journal-title>
+<abbrev-journal-title abbrev-type="publisher">medRxiv</abbrev-journal-title>
+</journal-title-group>
+<publisher>
+<publisher-name>Cold Spring Harbor Laboratory</publisher-name>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1101/2021.11.04.21265886</article-id>
+<article-version>1.1</article-version>
+<article-categories>
+<subj-group subj-group-type="hwp-journal-coll">
+<subject>Epidemiology</subject>
+</subj-group>
+</article-categories>
+<title-group>
+<article-title>The United States COVID-19 Forecast Hub dataset</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-1373-3177</contrib-id>
+<name><surname>Cramer</surname><given-names>Estee Y</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="author-notes" rid="n1">&#x002A;</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Huang</surname><given-names>Yuxin</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="author-notes" rid="n1">&#x002A;</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Wang</surname><given-names>Yijin</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="author-notes" rid="n1">&#x002A;</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Ray</surname><given-names>Evan L</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Cornell</surname><given-names>Matthew</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-3777-1410</contrib-id>
+<name><surname>Bracher</surname><given-names>Johannes</given-names></name>
+<xref ref-type="aff" rid="a2">2</xref>
+<xref ref-type="aff" rid="a3">3</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Brennen</surname><given-names>Andrea</given-names></name>
+<xref ref-type="aff" rid="a4">4</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Castero Rivadeneira</surname><given-names>Alvaro J</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Gerding</surname><given-names>Aaron</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>House</surname><given-names>Katie</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Jayawardena</surname><given-names>Dasuni</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Kanji</surname><given-names>Abdul H</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Khandelwal</surname><given-names>Ayush</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Le</surname><given-names>Khoa</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-5079-158X</contrib-id>
+<name><surname>Niemi</surname><given-names>Jarad</given-names></name>
+<xref ref-type="aff" rid="a5">5</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Stark</surname><given-names>Ariane</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Shah</surname><given-names>Apurv</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Wattanchit</surname><given-names>Nutcha</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Zorn</surname><given-names>Martha W</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author" corresp="yes">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-3503-9899</contrib-id>
+<name><surname>Reich</surname><given-names>Nicholas G</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="corresp" rid="cor1">&#x2020;</xref>
+</contrib>
+<contrib contrib-type="author">
+<on-behalf-of>on behalf of the US COVID-19 Forecast Hub Consortium</on-behalf-of>
+<xref ref-type="author-notes" rid="n2">&#x002A;&#x002A;</xref>
+</contrib>
+<aff id="a1"><label>1</label><institution>University of Massachusetts Amherst</institution></aff>
+<aff id="a2"><label>2</label><institution>Chair of Econometrics and Statistics, Karlsruhe Institute of Technology</institution></aff>
+<aff id="a3"><label>3</label><institution>Computational Statistics Group, Heidelberg Institute for Theoretical Studies</institution></aff>
+<aff id="a4"><label>4</label><institution>IQT Labs</institution></aff>
+<aff id="a5"><label>5</label><institution>Iowa State University</institution></aff>
+</contrib-group>
+<author-notes>
+<corresp id="cor1"><label>&#x2020;</label>corresponding author: Nicholas G Reich (<email>nick@umass.edu</email>)</corresp>
+<fn id="n1" fn-type="equal"><label>&#x002A;</label><p>These three authors contributed equally</p></fn>
+<fn id="n2" fn-type="others"><label>&#x002A;&#x002A;</label><p>See group authorship list as appendix</p></fn>
+<fn fn-type="others"><p>Disclaimer: The findings and conclusions in this report are those of the authors and do not necessarily represent the official position of the Centers for Disease Control and Prevention.</p></fn>
+</author-notes>
+<pub-date pub-type="epub">
+<year>2021</year>
+</pub-date>
+<elocation-id>2021.11.04.21265886</elocation-id>
+<history>
+<date date-type="received">
+<day>04</day>
+<month>11</month>
+<year>2021</year>
+</date>
+<date date-type="rev-recd">
+<day>04</day>
+<month>11</month>
+<year>2021</year>
+</date>
+<date date-type="accepted">
+<day>04</day>
+<month>11</month>
+<year>2021</year>
+</date>
+</history>
+<permissions>
+<copyright-statement>&#x00A9; 2021, Posted by Cold Spring Harbor Laboratory</copyright-statement>
+<copyright-year>2021</copyright-year>
+<license license-type="creative-commons" xlink:href="https://creativecommons.org/publicdomain/zero/1.0/"><license-p>This article is a US Government work. It is not subject to copyright under 17 USC 105 and is also made available for use under a CC0 license</license-p></license>
+</permissions>
+<self-uri xlink:href="21265886.pdf" content-type="pdf" xlink:role="full-text"/>
+<abstract>
+<title>Abstract</title>
+<p>Academic researchers, government agencies, industry groups, and individuals have produced forecasts at an unprecedented scale during the COVID-19 pandemic. To leverage these forecasts, the United States Centers for Disease Control and Prevention (CDC) partnered with an academic research lab at the University of Massachusetts Amherst to create the US COVID-19 Forecast Hub. Launched in April 2020, the Forecast Hub is a dataset with point and probabilistic forecasts of incident hospitalizations, incident cases, incident deaths, and cumulative deaths due to COVID-19 at national, state, and county levels in the United States. Included forecasts represent a variety of modeling approaches, data sources, and assumptions regarding the spread of COVID-19. The goal of this dataset is to establish a standardized and comparable set of short-term forecasts from modeling teams. These data can be used to develop ensemble models, communicate forecasts to the public, create visualizations, compare models, and inform policies regarding COVID-19 mitigation. These open-source data are available via download from GitHub, through an online API, and through R packages.</p>
+</abstract>
+<counts>
+<page-count count="26"/>
+</counts>
+</article-meta>
+<notes>
+<notes notes-type="competing-interest-statement">
+<title>Competing Interest Statement</title><p>AV, MC, and APP report grants from Metabiota Inc outside the submitted work.
+</p></notes>
+<notes notes-type="financial-disclosure">
+<title>Funding Statement</title><p>For teams that reported receiving funding for their work, we report the sources and disclosures below:
+AIpert-pwllnod: Natural Sciences and Engineering Research Council of Canada; Caltech-CS156: Gary Clinard Innovation Fund;
+CEID-Walk: University of Georgia;
+CMU-TimeSeries: CDC Center of Excellence, gifts from Google and Facebook;
+COVIDhub: This work has been supported by the US Centers for Disease Control and Prevention (1U01IP001122) and the National Institutes of General Medical Sciences (R35GM119582). The content is solely the responsibility of the authors and does not necessarily represent the official views of CDC, NIGMS or the National Institutes of Health; Johannes Bracher was supported by the Helmholtz Foundation via the SIMCARD Information &#x0026; Data Science Pilot Project; Tilmann Gneiting gratefully acknowledges support by the Klaus Tschira Foundation;
+CU-select: NSF DMS-2027369 and a gift from the Morris-Singer Foundation;
+DDS-NBDS: NSF III-1812699;
+epiforecasts-ensemble1: Wellcome Trust (210758/Z/18/Z)
+FDANIHASU: supported by the Intramural Research Program of the NIH/NIDDK;
+GT_CHHS-COVID19: William W. George Endowment, Virginia C. and Joseph C. Mello Endowment, NSF DGE-1650044, NSF MRI 1828187, research cyberinfrastructure resources and services provided by the Partnership for an Advanced Computing Environment (PACE) at Georgia Tech, and the following benefactors at Georgia Tech: Andrea Laliberte, Joseph C. Mello, Richard Rick E. &#x0026; Charlene Zalesky, and Claudia &#x0026; Paul Raines, CDC MInD-Healthcare U01CK000531-Supplement;
+IHME: This work was supported by the Bill &#x0026; Melinda Gates Foundation, as well as funding from the state of Washington and the National Science Foundation (award no. FAIN: 2031096);
+Imperial-ensemble1: SB acknowledges funding from the Wellcome Trust (219415);
+Institute of Business Forecasting: IBF;
+IowaStateLW-STEM: NSF DMS-1916204, Iowa State University Plant Sciences Institute Scholars Program, NSF DMS-1934884, Laurence H. Baker Center for Bioinformatics and Biological Statistics;
+IUPUI CIS: NSF;
+JHU_CSSE-DECOM: JHU CSSE: National Science Foundation (NSF) RAPID Real-time Forecasting of COVID-19 risk in the USA. 2021-2022. Award ID: 2108526. National Science Foundation (NSF) RAPID Development of an interactive web-based dashboard to track COVID-19 in real-time. 2020. Award ID: 2028604;
+JHU_IDD-CovidSP: State of California, US Dept of Health and Human Services, US Dept of Homeland Security, Johns Hopkins Health System, Office of the Dean at Johns Hopkins Bloomberg School of Public Health, Johns Hopkins University Modeling and Policy Hub, Centers for Disease Control and Prevention
+(5U01CK000538-03), University of Utah Immunology, Inflammation, &#x0026; Infectious Disease Initiative (26798 Seed Grant);
+JHU_UNC_GAS-StatMechPool: NIH NIGMS: R01GM140564;
+JHUAPL-Bucky: US Dept of Health and Human Services;
+KITmetricslab-select_ensemble: Daniel Wolffram gratefully acknowledges support by the Klaus Tschira Foundation;
+LANL-GrowthRate: LANL LDRD 20200700ER;
+MIT-Cassandra: MIT Quest for Intelligence;
+MOBS-GLEAM_COVID: COVID Supplement CDC-HHS-6U01IP001137-01; CA NU38OT000297 from the Council of State and Territorial Epidemiologists (CSTE);
+NotreDame-FRED: NSF RAPID DEB 2027718;
+NotreDame-mobility: NSF RAPID DEB 2027718;
+PSI-DRAFT: NSF RAPID Grant # 2031536;
+QJHong-Encounter: NSF DMR-2001411 and DMR-1835939;
+SDSC_ISG-TrendModel: The development of the dashboard was partly funded by the Fondation Privee des Hopitaux Universitaires de Geneve;
+UA-EpiCovDA: NSF RAPID Grant # 2028401;
+UChicagoCHATTOPADHYAY-UnIT: Defense Advanced Research Projects Agency (DARPA) #HR00111890043/P00004 (I. Chattopadhyay, University of Chicago);
+UCSB-ACTS: NSF RAPID IIS 2029626;
+UCSD_NEU-DeepGLEAM: Google Faculty Award, W31P4Q-21-C-0014;
+UMass-MechBayes: NIGMS #R35GM119582, NSF #1749854, NIGMS #R35GM119582;
+UMich-RidgeTfReg: This project is funded by the University of Michigan Physics Department and the University of Michigan Office of Research;
+UVA-Ensemble: National Institutes of Health (NIH) Grant 1R01GM109718, NSF BIG DATA Grant IIS-1633028, NSF Grant No.: OAC-1916805, NSF Expeditions in Computing Grant CCF-1918656, CCF-1917819, NSF RAPID CNS-2028004, NSF RAPID OAC-2027541, US Centers for Disease Control and Prevention 75D30119C05935, a grant from Google, University of Virginia Strategic Investment Fund award number SIF160, Defense Threat Reduction Agency (DTRA) under Contract No. HDTRA1-19-D-0007, and Virginia Dept of Health Grant VDH-21-501-0141;
+Wadnwani_AI-BayesOpt: This study is made possible by the generous support of the American People through the United States Agency for International Development (USAID). The work described in this article was implemented under the TRACETB Project, managed by WIAI under the terms of Cooperative Agreement Number 72038620CA00006. The contents of this manuscript are the sole responsibility of the authors and do not necessarily reflect the views of USAID or the United States Government;
+WalmartLabsML-LogForecasting: Team acknowledges Walmart to support this study
+</p></notes>
+<notes notes-type="disclosures">
+<title>Author Declarations</title><p>I confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.</p><p>Yes</p><p>I confirm that all necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived, and that any patient/participant/sample identifiers included were not known to anyone (e.g., hospital staff, patients or participants themselves) outside the research group so cannot be used to identify individuals.</p><p>Yes</p><p>I understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).</p><p>Yes</p><p>I have followed all appropriate research reporting guidelines and uploaded the relevant EQUATOR Network research reporting checklist(s) and other pertinent material as supplementary files, if applicable.</p><p>Yes</p></notes>
+</notes>
+</front>
+<body>
+<sec id="s1">
+<title>Background &#x0026; Summary</title>
+<p>To understand how the COVID-19 pandemic would progress in the United States, dozens of academic research groups, government agencies, industry groups, and individuals produced probabilistic forecasts for COVID-19 outcomes starting in March 2020.<sup><xref ref-type="bibr" rid="c1">1</xref></sup> We have collected forecasts from over 82 modeling teams in a data repository, thus making forecasts easily accessible for COVID-19 response efforts and forecast evaluation. The data repository is called the United States (US) COVID-19 Forecast Hub (hereafter, Forecast Hub) and was created through a partnership between the US Centers for Disease Control and Prevention (CDC) and an academic research lab at the University of Massachusetts Amherst.</p>
+<p>The Forecast Hub was launched in early April 2020 and contains real-time forecasts of reported COVID-19 cases, hospitalizations, and deaths. As of September 8, 2021, the Forecast Hub had collected nearly 65 million individual point or quantile predictions contained within over 4,600 submitted forecast files from over 100 unique models. The forecasts submitted each week reflected a variety of forecasting approaches, data sources, and underlying assumptions. There were no restrictions in place regarding the underlying information or code used to generate real-time forecasts. Each week, the latest forecasts were combined into an ensemble forecast (<xref rid="fig1" ref-type="fig">Figure 1</xref>) and all recent forecast data were updated on an official COVID-19 Forecasting page hosted by the US CDC.<sup><xref ref-type="bibr" rid="c2">2</xref></sup> The ensemble models were also used in the weekly reports that are posted on the Forecast Hub website (<ext-link ext-link-type="uri" xlink:href="https://covid19forecasthub.org/doc/reports/">https://covid19forecasthub.org/doc/reports/</ext-link>).</p>
+<fig id="fig1" position="float" fig-type="figure">
+<label>Figure 1:</label>
+<caption><p>Time series of weekly incident deaths at the national level and forecasts from the COVID-19 Forecast Hub ensemble model for selected weeks in 2020 and 2021. Ensemble forecasts (blue) with 50&#x0025;, 80&#x0025; and 95&#x0025; prediction intervals shown in shaded regions, and the ground-truth data (black) for incident cases (A), incident hospitalizations (B), incident deaths (C) and cumulative deaths (D). The truth data come from JHU CSSE (panels A, C, D) and <ext-link ext-link-type="uri" xlink:href="http://HealthData.gov">HealthData.gov</ext-link> (panel B).</p></caption>
+<graphic xlink:href="21265886v1_fig1.tif"/>
+</fig>
+<p>Forecasts are quantitative predictions about future observations. Forecasts differ from scenario-based projections, which examine feasible outcomes conditional on a variety of future assumptions. Because forecasts are unconditional estimates of future observations, they can be evaluated. An important feature of the Forecast Hub is that submitted forecasts are time-stamped so that the exact time at which a forecast was made public can be verified. In this way, the Forecast Hub serves as a public, independent registration system for these forecast model outputs. Data from the Forecast Hub have served as the basis for research articles for forecast evaluation<sup><xref ref-type="bibr" rid="c3">3</xref></sup> and forecast combination.<sup><xref ref-type="bibr" rid="c4">4</xref>&#x2013;<xref ref-type="bibr" rid="c6">6</xref></sup> These studies can be used to determine how well models have performed at various points during the pandemic, which can, in turn, guide best practices for utilizing forecasts in practice and inform future forecasting efforts.<sup><xref ref-type="bibr" rid="c3">3</xref></sup></p>
+<p>Any modeling team was eligible to submit forecast data to the Forecast Hub, provided they submitted data in the correct format. Teams submitted predictions in a structured format to facilitate data validation, storage, and analysis. Teams also submitted a metadata file and license for their model&#x2019;s data. Forecast data, ground truth data from the Johns Hopkins University Center for Systems Science and Engineering (JHU CSSE),<sup><xref ref-type="bibr" rid="c7">7</xref></sup> New York Times (NYTimes),<sup><xref ref-type="bibr" rid="c8">8</xref></sup> and USA Facts,<sup><xref ref-type="bibr" rid="c9">9</xref></sup> as well as model metadata were stored in the public Forecast Hub GitHub repository.<sup><xref ref-type="bibr" rid="c10">10</xref></sup></p>
+<p>The forecasts were automatically synchronized with an online database called Zoltar via calls to a REpresentational State Transfer (REST) application programming interface (API)<sup><xref ref-type="bibr" rid="c11">11</xref></sup> every six hours (<xref rid="fig2" ref-type="fig">Figure 2</xref>). Forecast data may be downloaded directly from GitHub, via the <italic>covidHubUtils</italic> R package,<sup><xref ref-type="bibr" rid="c12">12</xref></sup> the zoltr R package<sup><xref ref-type="bibr" rid="c13">13</xref></sup> or zoltpy python library.<sup><xref ref-type="bibr" rid="c14">14</xref></sup></p>
+<fig id="fig2" position="float" fig-type="figure">
+<label>Figure 2:</label>
+<caption><p>Schematic of the data storage and related infrastructure surrounding the COVID-19 Forecast Hub. (A) Forecasts are submitted to the COVID-19 Forecast Hub GitHub repository and undergo data format validation before being accepted into the system. (B) A continuous integration service ensures that the GitHub repository and PostgreSQL database stay in sync with essentially mirrored versions of the data. (C) Truth data for visualization, evaluation, and ensemble building are retrieved once per week using both the <italic>covidHubUtils</italic> and the <italic>covidData</italic> R packages. Truth data are stored in both repositories. (D) Once per week, an ensemble forecast submission is made using the <italic>covidEnsembles</italic> R package. It is submitted to the GitHub repository and undergoes the same validation as other submissions. (E) Using the <italic>covidHubUtils</italic> R package, forecast and truth data may be extracted from either the GitHub or PostgreSQL database in a standard format for tasks such as scoring or plotting.</p></caption>
+<graphic xlink:href="21265886v1_fig2.tif"/>
+</fig>
+<p>This dataset of real-time forecasts created during the COVID-19 pandemic can provide insights into the shortcomings and successes of predictions and improve forecasting efforts in years to come. Though these data are restricted to forecasts for COVID-19 in the United States, the structure of this dataset has been used to create datasets of COVID-19 forecasts in the EU and the UK, and longer-term scenario projections in the US.<sup><xref ref-type="bibr" rid="c15">15</xref>&#x2013;<xref ref-type="bibr" rid="c18">18</xref></sup> The general structure of this data collection could be applied to additional diseases or forecasting outcome in the future.<sup><xref ref-type="bibr" rid="c11">11</xref></sup></p>
+<p>This large collaborative effort has provided data on short-term forecasts for over a year of forecasting efforts. These data were collected in real-time and therefore are not subject to retrospective biases. The data are also openly available to the public, thus fostering a transparent, open science approach to support public health efforts.</p>
+</sec>
+<sec id="s2">
+<title>Methods</title>
+<sec id="s2a">
+<title>Data Acquisition</title>
+<p>Beginning in April of 2020, the Reich Lab at the University of Massachusetts, Amherst, in partnership with the CDC, began collecting probabilistic forecasts of key COVID-19 outcomes in the United States (<xref rid="tbl1" ref-type="table">Table 1</xref>). The effort began by collecting forecasts of deaths and hospitalizations at the weekly and daily scale for the 50 US states, Washington DC, and 4 territories (Puerto Rico, US Virgin Islands, Guam, and the Northern Mariana Islands) as well as the aggregated US national level. In July 2020, the effort expanded to include forecasts of weekly incident cases at the county, state, and national levels. Forecasts may include a point prediction and/or quantiles of a predictive distribution.</p>
+<table-wrap id="tbl1" orientation="portrait" position="float">
+<label>Table 1:</label>
+<caption><p>Forecast characteristics for all four outcomes. The table shows the temporal scale, spatial scale of locations, horizons stored, number of quantiles, and the dates of the earliest forecast, earliest standardized truth data, and the earliest ensemble build.</p></caption>
+<graphic xlink:href="21265886v1_tbl1.tif"/>
+</table-wrap>
+<p>Any team was eligible to submit data to the Forecast Hub. Upon initial submission of forecast data, teams were required to upload a metadata file that briefly described the methods used to create the forecasts and specified a license under which their forecast data were released. No model code was stored by the Forecast Hub.</p>
+<p>During the first month of operation, members of the Forecast Hub team downloaded forecasts made available by teams publicly online, transformed these into the correct format, and pushed them into the Forecast Hub repository. Starting in May 2020, all teams were required to format and submit their own forecasts.</p>
+</sec>
+<sec id="s2b">
+<title>Repository structure</title>
+<p>The dataset is stored in two locations, and all data can be accessed through either source. The first is the COVID-19 Forecast Hub GitHub repository and the second is an online database, Zoltar, which can be accessed via a REST API.<sup><xref ref-type="bibr" rid="c11">11</xref></sup> Details about data format and access are documented in the subsequent sections.</p>
+</sec>
+<sec id="s2c">
+<title>Zoltar: data backend</title>
+<p>The data can be accessed through the Zoltar forecast repository REST API. Through the API, subsets of submitted forecasts can be queried directly from a PostgreSQL database. This eliminates the need to access individual CSV files and facilitates access to versions of forecasts in cases when they are updated.</p>
+</sec>
+<sec id="s2d">
+<title>Outcomes and locations</title>
+<p>The Forecast Hub dataset stores forecasts for four different outcomes: incident hospitalizations, incident cases, incident deaths, and cumulative deaths (<xref rid="tbl1" ref-type="table">Table 1</xref>). Incident hospitalizations can be submitted for a horizons of 1 - 130 days in the future, incident cases can be submitted for 1 - 8 weeks in the future, and incident and cumulative deaths can be submitted for 1 - 20 weeks into the future. For all outcomes, forecasts can be submitted on a national and state level. Incident case forecasts were first introduced as a forecast outcome several months after the Hub started and have several key differences with other predicted outcomes. They are the only outcome for which the Hub accepts county-level forecasts in addition to the state and national level. Because there are over 3,000 counties in the US, this required some compromises on the scale of data collected for these forecasts in other ways. Specifically, case forecasts are required to have fewer quantiles (seven quantiles) compared to other outcomes which can have up to twenty-three quantiles. This gives a coarser representation of the forecast (see the section on Forecast format below).</p>
+<p>Weekly targets follow the standard of epidemiological weeks (EW) used by the CDC, which defines a week to start on a Sunday and end on the following Saturday.<sup><xref ref-type="bibr" rid="c19">19</xref></sup> Forecasts of cumulative deaths target the number of cumulative deaths reported by the Saturday ending a given week. Forecasts of weekly incident cases or deaths target the difference between reported cumulative cases or deaths on consecutive Saturdays. As an example of a forecast and the corresponding observation, forecasts submitted between Tuesday, October 6, 2020 (day 3 of EW41) and Monday, October 12, 2020 (day 2 of EW42) contained a &#x201C;1 week ahead&#x201D; forecast of incident deaths that corresponded to the change in cumulative reported deaths observed in EW42 (i.e., the difference between the cumulative reported deaths on Saturday, October 17, 2020, and Saturday, October 10, 2020), a &#x201C;2 week ahead&#x201D; forecast that corresponded to the change in cumulative reported deaths in week EW43. In this paper, we refer to the &#x201C;forecast week&#x201D; of a submitted forecast as the week corresponding to a &#x201C;0-week ahead&#x201D; horizon. In the example above, the forecast week would be EW41. Daily incident hospitalization horizons are for the number of reported hospitalizations a specified number of days after the forecast was generated.</p>
+</sec>
+<sec id="s2e">
+<title>Forecast assumptions</title>
+<p>Forecasters used a variety of assumptions to build models and generate predictions. Forecasting approaches include statistical or machine learning models, mechanistic models incorporating disease transmission dynamics, and combinations of multiple approaches.<sup><xref ref-type="bibr" rid="c3">3</xref></sup> Teams have also included varying assumptions regarding future changes in policies and physical distancing measures, the transmissibility of COVID-19, vaccination rates, and the spread of new virus variants throughout the United States.</p>
+</sec>
+<sec id="s2f">
+<title>Weekly submissions</title>
+<p>A forecast submission consists of a single comma-separated value (CSV) file submitted via pull request to the GitHub repository. Forecast submissions are validated for technical accuracy and formatting (see exclusion criteriabelow) before being merged. To be included in the weekly ensemble model, teams were required to submit their forecast on Sunday or prior to a deadline on Monday. The majority of teams contributing to the dataset submitted forecasts to the Hub repository on Sunday or Monday, although some teams submitted at other times depending on their model production schedule.</p>
+</sec>
+<sec id="s2g">
+<title>Model designation</title>
+<p>Each model stored in the repository must have a classification of &#x201C;primary&#x201D;, &#x201C;secondary&#x201D; &#x201C;other&#x201D;. Each team must only have one &#x201C;primary&#x201D; model. Teams submitting multiple models with similar forecasting approaches can use the designations &#x201C;secondary&#x201D; or &#x201C;other&#x201D; for their models. Models with the designation &#x201C;primary&#x201D; are included in evaluations, the weekly ensemble, and the visualization. The &#x201C;secondary&#x201D; label is designed for models that have a substantive methodological difference than a team&#x2019;s &#x201C;primary&#x201D; model. Models with the designation &#x201C;secondary&#x201D; are included only in the weekly ensemble and the visualization. The &#x201C;other&#x201D; label is designed for models that are small variations on a team&#x2019;s &#x201C;primary&#x201D; model. Models with the designation &#x201C;other&#x201D; are not included in evaluations, the ensemble build, or the visualization.</p>
+</sec>
+<sec id="s2h">
+<title>Ensemble and baseline forecasts</title>
+<p>Several models have a special status, either as a baseline or as an ensemble that combines multiple models from the Hub to create a single forecast.</p>
+<p>The COVIDhub-baseline model was created by the Hub in May 2020 as a benchmarking model. Its point forecast is the most recent observed value as of the forecast creation date with a probability distribution around that based on weekly differences in previous observations.<sup><xref ref-type="bibr" rid="c3">3</xref></sup> The baseline model initially produced forecasts for case and death outcomes. Hospitalization baseline forecasts were added in September 2021.</p>
+<p>The COVIDhub-ensemble model creates a combination of submitted forecasts to the Hub. Other work details the methods used for determining the appropriate combination approach.<sup><xref ref-type="bibr" rid="c4">4</xref>,<xref ref-type="bibr" rid="c5">5</xref></sup> Starting in February 2021, GitHub tags were created to document the exact version of the repository used each week to create the COVIDhub-ensemble forecast. This creates an auditable trail in the repository so the correct version of the used forecasts could be recovered even in cases when some forecasts were subsequently updated.</p>
+<p>Several other models also are combinations of some or all models submitted to the Forecast Hub. As of August 1, 2021, these models are COVIDhub-trained_ensemble, FDANIHASU-Sweight, JHUAPL-SLPHospEns, and KITmetricslab-select_ensemble. These models are flagged in the metadata using the Boolean metadata field, &#x201C;ensemble_of_hub_models&#x201D;.</p>
+</sec>
+<sec id="s2i">
+<title>Exclusion criteria</title>
+<p>No forecasts were excluded from the dataset due to the forecast values or the background experience of the forecasters. Forecast files were only rejected if they did not meet the automatic formatting criteria implemented through automatic GitHub checks.<sup><xref ref-type="bibr" rid="c20">20</xref></sup> These included checks to ensure that, among other criteria:</p>
+<list list-type="bullet">
+<list-item><p>A forecast file is submitted no more than 2 days after it has been created (to ensure forecasts submitted were truly prospective). The creation date is based on the date in the filename created by the submitting team.</p></list-item>
+<list-item><p>The forecast dates in the content of the file are in the format YYYY-MM-DD and match the creation date.</p></list-item>
+<list-item><p>Quantile forecasts do not contain any quantiles at probability levels other than those required (see Forecast Format section below).</p></list-item>
+</list>
+</sec>
+<sec id="s2j">
+<title>Updates to files</title>
+<p>To ensure that forecasting is done in real-time, all forecasts are required to be submitted to the Hub within 2 days of the forecast date, which is listed in a column within each forecast file. Though occasional late submissions were accepted up through January of 2021, the policy was updated to not accept late forecasts due to missed deadlines, updated modeling methods, or other reasons.</p>
+<p>Exceptions to this policy were made if there were programing or data errors that affected the forecasts in the original submission or if a new team joined. If there was an error, teams were required to submit a comment with their updated submission affirming that there was a bug and that the forecast was only produced using data that were available at the time of the original submission. In the case of updates to forecast data, both the old and updated versions of the forecasts can be accessed either through the GitHub commit history or through time-stamped queries of the forecasts in the Zoltar database. Note that an updated forecast can include &#x201C;retracting&#x201D; a particular set of predictions in the case when an initial forecast was not able to be updated. When new teams join the Hub, they can submit late forecasts if they can provide publicly available evidence that the forecasts were made in real-time (e.g. GitHub commit history).</p>
+</sec>
+<sec id="s2k">
+<title>Ground truth data</title>
+<p>Data from the JHU CSSE dataset<sup><xref ref-type="bibr" rid="c21">21</xref></sup> are used as the ground truth data for reported cases and deaths. Data from the <ext-link ext-link-type="uri" xlink:href="http://HealthData.gov">HealthData.gov</ext-link> system for state-level hospitalizations are used for the hospitalization outcome. JHU CSSE obtained counts of cases and deaths by collecting and aggregating reports from state and local health departments. <ext-link ext-link-type="uri" xlink:href="http://HealthData.gov">HealthData.gov</ext-link> contains reports of hospitalizations assembled by the U.S. Department of Health and Human Services. Teams were encouraged to use these sources to build models. Although hospitalization forecasts were collected starting in March 2020, the hospitalizations data from <ext-link ext-link-type="uri" xlink:href="http://HealthData.gov">HealthData.gov</ext-link> were only available later, and we started encouraging teams to target these data in November 2020. Some teams used alternate data sources including the NYTimes, USAFacts, US Census data, and other signals.<sup><xref ref-type="bibr" rid="c3">3</xref></sup> Versions of truth data from JHU CSSE, USAFacts, and the NYTimes are stored in the GitHub repository.</p>
+<p>Previous reports of ground truth data for past time points were occasionally updated as new records became available, definitions of reportable cases, deaths, or hospitalizations changed, or errors in data collection were identified and corrected. These revisions to the data are sometimes quite substantial, and for some purposes such as retrospective ensemble construction, it is necessary to use the data that would have been available in real-time. The historically versioned data can be accessed either through GitHub commit records, data versions released on <ext-link ext-link-type="uri" xlink:href="http://HealthData.gov">HealthData.gov</ext-link>, or third-party tools such as the covidcast API provided by the Delphi group at Carnegie Mellon University or the <italic>covidData</italic> R package.<sup><xref ref-type="bibr" rid="c22">22</xref></sup></p>
+</sec>
+</sec>
+<sec id="s3">
+<title>Data Records</title>
+<sec id="s3a">
+<title>Summary of forecast data collected</title>
+<p>In the initial weeks of submission, there were fewer than 10 models providing forecasts. As the pandemic spread, the number of teams submitting forecasts increased to 82; as of July 2021, 82 primary, 4 secondary models and 15 models with the designation &#x201C;other&#x201D; had been submitted to the Forecast Hub. In the first six months of 2021, a median of 35.5 teams (range: 30 to 38) contributed incident case forecasts (<xref rid="fig3" ref-type="fig">Fig 3a</xref>), a median of 12 teams (range: 9 to 14) contributed incident hospitalizations (<xref rid="fig3" ref-type="fig">Fig 3b</xref>), a median of 43 teams (range 37 to 49) contributed incident death forecasts (<xref rid="fig3" ref-type="fig">Fig 3c</xref>), and a median of 44 teams (range 34 to 46) contributed cumulative death forecasts (<xref rid="fig3" ref-type="fig">Fig 3d</xref>). As of September 8 2021, the dataset contained 4,602 forecast files with 64,902,239 point or quantile predictions for unique combinations of targets and locations.</p>
+<fig id="fig3" position="float" fig-type="figure">
+<label>Figure 3:</label>
+<caption><p>Number of primary forecasts submitted for each outcome per week from April 27th 2020 through July 31st 2021. In the initial weeks of submission, fewer than 10 models provided forecasts. Over time, the number of teams submitting forecasts for each forecasted outcome increased into early 2021 and then saw a small decline through the summer of 2021.</p></caption>
+<graphic xlink:href="21265886v1_fig3.tif"/>
+</fig>
+</sec>
+<sec id="s3b">
+<title>GitHub repository data structure</title>
+<p>Forecasts in the GitHub repository are available in subfolders organized by model. Folders are named with a team name and model name, and each folder includes a metadata file and forecast files. Forecast CSV files are named using the format &#x201C;&#x003C;YYYY-MM-DD&#x003E;-&#x003C;team abbreviation&#x003E;-&#x003C;model abbreviation&#x003E;.csv&#x201D;. In these files, each row contains data for a single outcome, location, horizon, and point or quantile prediction as described above.</p>
+<p>The metadata file for each team, named using the format &#x201C;metadata-&#x003C;team abbreviation&#x003E;-&#x003C;model abbreviation&#x003E;.txt&#x201D;, contains relevant information about the team and the model that the team is using to generate forecasts.</p>
+</sec>
+<sec id="s3c">
+<title>Forecast format</title>
+<p>Forecasts were required to be submitted in the format of point predictions and/or quantile predictions. Point predictions represented single &#x201C;best&#x201D; predictions with no uncertainty, typically representing a mean or median prediction from the model. Quantile predictions are an efficient format for storing predictive distributions of a wide range of outcomes.</p>
+<p>Quantile representations of predictive distributions lend themselves to natural computations of, for example, pinball loss or a weighted interval score, both strictly proper scoring rules that can be used to evaluate forecasts<sup><xref ref-type="bibr" rid="c23">23</xref></sup> However, they do not capture the structure of the tails of the predictive distribution beyond the reported quantiles. Also, the quantile format does not preserve any information on correlation structures between different outcomes.</p>
+</sec>
+<sec id="s3d">
+<title>Variable descriptions</title>
+<p>The forecast data in this dataset are stored in seven columns:</p>
+<list list-type="order">
+<list-item><p><bold>forecast_date</bold> - the date the forecast was made in the format YYYY-MM-DD.</p></list-item>
+<list-item><p><bold>target</bold> - a character string giving the number of days/weeks ahead that are being forecasted (horizon) and the outcome. Horizons must be one of the following:</p>
+<list list-type="alpha-lower">
+<list-item><p>&#x201C;N wk ahead cum death&#x201D; where N is a number between 1 and 20</p></list-item>
+<list-item><p>&#x201C;N wk ahead inc death&#x201D; where N is a number between 1 and 20</p></list-item>
+<list-item><p>&#x201C;N wk ahead inc case&#x201D; where N is a number between 1 and 8</p></list-item>
+<list-item><p>&#x201C;N day ahead inc hosp&#x201D; where N is a number between 0 and 130</p></list-item></list></list-item>
+<list-item><p><bold>target_end_date</bold> - a character string representing the date for the forecast target in the format YYYY-MM-DD. For &#x201C;k day-ahead&#x201D; targets, target_end_date will be k days after forecast_date. For &#x201C;k week ahead&#x201D; targets, target_end_date will be the Saturday at the end of the specified epidemic week, as described above.</p></list-item>
+<list-item><p><bold>location</bold> - character string of Federal Information Processing Standard Publication (FIPS) codes identifying U.S. states, counties, territories, and districts as well as &#x201C;US&#x201D; for national forecasts. The values for the FIPS codes are available in a CSV file in the repository and as a data object in the <italic>covidHubUtils</italic> R package for convenience.</p></list-item>
+<list-item><p><bold>type</bold> - character value of &#x201C;point&#x201D; or &#x201C;quantile&#x201D; indicating whether the row corresponds to a point forecast or a quantile forecast.</p></list-item>
+<list-item><p><bold>quantile</bold> - the probability level for a quantile forecast. For death and hospitalization forecasts, forecasters can submit quantiles at 23 probability levels: 0.01, 0.025, 0.05, 0.10, 0.15, &#x2026;, 0.95, 0.975, 0.99. For cases, teams can submit up to 7 quantiles at levels .025, 0.100, 0.250, 0.5, 0.750, 0.900 and 0.975. If the forecast &#x201C;type&#x201D; is equal to &#x201C;point&#x201D;, the value in the quantile column is equal to &#x201C;NA&#x201D;.</p></list-item>
+<list-item><p><bold>value</bold> - non-negative numbers indicating the &#x201C;point&#x201D; or &#x201C;quantile&#x201D; prediction for the row. For a &#x201C;point&#x201D; prediction, value is simply the value of that point prediction for the target and location associated with that row. For a &#x201C;quantile&#x201D; prediction, the model predicts that the eventual observation will be less than this value with the probability given by the quantile probability level.</p></list-item></list>
+</sec>
+<sec id="s3e">
+<title>Metadata format</title>
+<p>Each team documents their model information in a metadata file which is required along with the first forecast submission. Each team is asked to record their model&#x2019;s design and assumptions, the model contributors, the team&#x2019;s website, information regarding the team&#x2019;s data sources, and a brief model description. Teams may update their metadata file periodically to keep track of minor changes to a model.</p>
+</sec>
+<sec id="s3f">
+<title>Variable descriptions</title>
+<p>A standard metadata file should be a YAML file with the following required fields in a specific order:</p>
+<list list-type="order">
+<list-item><p><bold>team_name</bold> - the name of the team (less than 50 characters).</p></list-item>
+<list-item><p><bold>model_name</bold> - the name of the model (less than 50 characters).</p></list-item>
+<list-item><p><bold>model_abbr</bold> - an abbreviated and uniquely identified name for the model that is less than 30 alphanumeric characters. The model abbreviation must be in the format of &#x2018;[team_abbr]-[model_abbr]&#x2019; where each of the &#x2018;[team_abbr]&#x2019; and &#x2018;[model_abbr]&#x2019; are text strings that are each less than 15 alphanumeric characters that do not include a hyphen or whitespace.</p></list-item>
+<list-item><p><bold>model_contributors</bold> - a list of all individuals involved in the forecasting effort, affiliations, and email addresses. At least one contributor needs to have a valid email address. The syntax of this field should be name1 (affiliation1) &#x003C;user@address&#x003E;, name2 (affiliation2) &#x003C;user2@address2&#x003E;</p></list-item>
+<list-item><p><bold>website_url&#x002A;</bold> - a URL to a website that has additional data about the model. We encourage teams to submit the most user-friendly version of the model, e.g. a dashboard, or similar, that displays the model forecasts. If there is an additional data repository where forecasts and other model code are stored, this can be included in the methods section. If only a more technical site, e.g. GitHub repo, exists that link should be included here.</p></list-item>
+<list-item><p><bold>license</bold> - one of the acceptable license types in the Forecast Hub. We encourage teams to submit as a &#x201C;cc-by-4.0&#x201D; to allow the broadest possible use, including private vaccine production (which would be excluded by the &#x201C;cc-by-nc-4.0&#x201D; license). If the value is &#x201C;LICENSE.txt&#x201D;, then a LICENSE.txt file must exist within the model folder and provide a license.</p></list-item>
+<list-item><p><bold>team_model_designation</bold> - upon initial submission this field should be one of &#x201C;primary&#x201D;, &#x201C;secondary&#x201D; or &#x201C;other&#x201D;.</p></list-item>
+<list-item><p><bold>methods</bold> - a brief description of the forecasting methodology that is less than 200 Characters.</p></list-item>
+<list-item><p><bold>ensemble_of_hub_models</bold> - a Boolean value (&#x2018;true&#x2019; or &#x2018;false&#x2019;) that indicates whether a model combines multiple hub models into an ensemble.</p></list-item></list>
+<p>&#x002A;previously named <bold>model_output</bold></p>
+<p>Teams are also encouraged to add model information with optional fields described in Supplement 1.</p>
+</sec>
+</sec>
+<sec id="s4">
+<title>Technical Validation</title>
+<p>Two similar but distinct validation processes were used to validate data on the GitHub repository and on Zoltar.</p>
+<sec id="s4a">
+<title>GitHub repository</title>
+<p>Validations were set up using GitHub Actions to manage continuous integration and automated data checking.<sup><xref ref-type="bibr" rid="c20">20</xref></sup> Teams submitted their metadata files and forecasts through pull requests on GitHub. Each time a new pull request was submitted, a validation script ran on all new or updated files in the pull request to test for their validity. Separate checks ran on metadata file changes and forecast data file changes.</p>
+<p>The metadata file for each team was required to be in valid YAML format, and a set of specific checks were required before a new metadata file could be merged into the repository. Checks included ensuring that the proposed team and model names do not conflict with existing names, that a valid license for data reuse is specified, and that a valid model designation was present. A list of specific validations for metadata may be found in Supplement 2.</p>
+<p>New or changed forecast data files for each team were required to pass a series of checks for data formatting and validity. These checks also ensured that the forecast data files did not meet any of the exclusion criteria (see the Methods section for specific rules). Furthermore, a list of specific validations for forecast data files is provided in Supplement 2.</p>
+</sec>
+<sec id="s4b">
+<title>Zoltar</title>
+<p>When a new forecast file is uploaded to Zoltar, unit tests are run on the file to make sure that forecast elements contain valid structure. (For a detailed specification of the structure of forecast elements, see <ext-link ext-link-type="uri" xlink:href="https://docs.zoltardata.com/validation/">https://docs.zoltardata.com/validation/</ext-link>.) If a forecast file does not pass all unit tests, the upload will fail and the forecast file will not be added to the database; only when all tests pass will the new forecast be added to Zoltar. The validations in place on GitHub ensure that only valid forecasts will be uploaded to Zoltar.</p>
+</sec>
+<sec id="s4c">
+<title>Observed data</title>
+<p>Raw observed data from multiple sources including JHU, NYTimes, USAFacts, and <ext-link ext-link-type="uri" xlink:href="http://Healthdata.gov">Healthdata.gov</ext-link> is downloaded and reformatted using the scripts in the R packages <italic>covidHubUtils</italic> (<ext-link ext-link-type="uri" xlink:href="https://github.com/reichlab/covidHubUtils">https://github.com/reichlab/covidHubUtils</ext-link>) and <italic>covidData</italic> (<ext-link ext-link-type="uri" xlink:href="https://github.com/reichlab/covidData">https://github.com/reichlab/covidData</ext-link>. This data generating process is automated by GitHub Actions every week and the results (called &#x201C;truth data&#x201D;) are directly uploaded to the Forecast Hub repository and Zoltar. In specific, case and death raw observed data are aggregated to a weekly level and all three outcomes (cases, deaths, and hospitalization) are reformatted for use within the Hub.</p>
+</sec>
+</sec>
+<sec id="s5">
+<title>Usage Notes</title>
+<p>We have developed the <italic>covidHubUtils</italic> R package (<ext-link ext-link-type="uri" xlink:href="https://github.com/reichlab/covidHubUtils">https://github.com/reichlab/covidHubUtils</ext-link>) to facilitate bulk retrieval of forecasts for analysis and evaluation. Examples of how to use the <italic>covidHubUtils</italic> package and its functions can be found at <ext-link ext-link-type="uri" xlink:href="https://reichlab.io/covidHubUtils/">https://reichlab.io/covidHubUtils/</ext-link>. The package supports loading forecasts from a local clone of the GitHub repository or by querying data from Zoltar. The package supports common actions for working with the data, such as loading in specific subsets of forecasts, plotting forecasts, scoring forecasts, retrieving ground truth data, and many other utility functions to simplify working with the data.</p>
+<sec id="s5a">
+<title>Communicating results from the COVID-19 Forecast Hub</title>
+<p>Communication of probabilistic forecasts to the public is challenging, <sup><xref ref-type="bibr" rid="c24">24</xref>,<xref ref-type="bibr" rid="c25">25</xref></sup> and the best practices regarding the communication of outbreaks are still developing.<sup><xref ref-type="bibr" rid="c26">26</xref></sup> Starting in April 2020, the CDC published weekly summaries of these forecasts on their public website<sup><xref ref-type="bibr" rid="c27">27</xref></sup>, and these forecasts were occasionally used in public briefings by the CDC director.<sup><xref ref-type="bibr" rid="c28">28</xref></sup> Additional examples of the communication of Forecast Hub data can be viewed through weekly reports generated by the Hub team for dissemination to the general public, including state and local departments of health.(<ext-link ext-link-type="uri" xlink:href="https://covid19forecasthub.org/doc/reports/">https://covid19forecasthub.org/doc/reports/</ext-link>)</p>
+</sec>
+</sec>
+</body>
+<back>
+<sec sec-type="data-availability">
+<title>Data Availability</title>
+<p>All data produced are available online at <ext-link ext-link-type="uri" xlink:href="https://github.com/reichlab/covid19-forecast-hub">https://github.com/reichlab/covid19-forecast-hub</ext-link></p>
+<p>
+<ext-link ext-link-type="uri" xlink:href="https://github.com/reichlab/covid19-forecast-hub">https://github.com/reichlab/covid19-forecast-hub</ext-link>
+</p>
+</sec>
+<ack>
+<title>Acknowledgements</title>
+<p>This work has been supported in part by the US Centers for Disease Control and Prevention (1U01IP001122) and the National Institutes of General Medical Sciences (R35GM119582). The content is solely the responsibility of the authors and does not necessarily represent the official views of CDC, FDA, NIGMS or the National Institutes of Health. Johannes Bracher was supported by the Helmholtz Foundation via the SIMCARD Information &#x0026; Data Science Pilot Project. Tilmann Gneiting gratefully acknowledges support by the Klaus Tschira Foundation.</p>
+</ack>
+<sec id="s6">
+<title>Funding</title>
+<p>For teams that reported receiving funding for their work, we report the sources and disclosures below.</p>
+<p><italic><underline>AIpert-pwllnod</underline></italic>:Natural Sciences and Engineering Research Council of Canada</p>
+<p><italic><underline>Caltech-CS156</underline></italic>: Gary Clinard Innovation Fund</p>
+<p><italic><underline>CEID-Walk</underline></italic>: University of Georgia</p>
+<p><italic><underline>CMU-TimeSeries</underline></italic>: CDC Center of Excellence, gifts from Google and Facebook</p>
+<p><italic><underline>COVIDhub</underline></italic>:This work has been supported by the US Centers for Disease Control and Prevention (1U01IP001122) and the National Institutes of General Medical Sciences (R35GM119582). The content is solely the responsibility of the authors and does not necessarily represent the official views of CDC, NIGMS or the National Institutes of Health. Johannes Bracher was supported by the Helmholtz Foundation via the SIMCARD Information &#x0026; Data Science Pilot Project. Tilmann Gneiting gratefully acknowledges support by the Klaus Tschira Foundation.</p>
+<p><italic><underline>CU-select:</underline></italic> NSF DMS-2027369 and a gift from the Morris-Singer Foundation.</p>
+<p><italic><underline>DDS-NBDS</underline></italic>:NSF III-1812699</p>
+<p><italic><underline>epiforecasts-ensemble1</underline></italic>: Wellcome Trust (210758/Z/18/Z)</p>
+<p><italic><underline>FDANIHASU</underline></italic>: supported by the Intramural Research Program of the NIH/NIDDK</p>
+<p><italic><underline>GT_CHHS-COVID19</underline></italic>: William W. George Endowment, Virginia C. and Joseph C. Mello Endowment, NSF DGE-1650044, NSF MRI 1828187, research cyberinfrastructure resources and services provided by the Partnership for an Advanced Computing Environment (PACE) at Georgia Tech, and the following benefactors at Georgia Tech: Andrea Laliberte, Joseph C. Mello, Richard &#x201C;Rick&#x201D; E. &#x0026; Charlene Zalesky, and Claudia &#x0026; Paul Raines, CDC MInD-Healthcare U01CK000531-Supplement.</p>
+<p><italic><underline>IHME</underline></italic>: This work was supported by the Bill &#x0026; Melinda Gates Foundation, as well as funding from the state of Washington and the National Science Foundation (award no. FAIN: 2031096)</p>
+<p><underline>Imperial-ensemble1:</underline>SB acknowledges funding from the Wellcome Trust (219415).</p>
+<p><italic><underline>Institute of Business Forecasting</underline></italic> : IBF</p>
+<p><italic><underline>IowaStateLW-STEM</underline></italic>: NSF DMS-1916204, Iowa State University Plant Sciences Institute Scholars Program, NSF DMS-1934884, Laurence H. Baker Center for Bioinformatics and Biological Statistics.</p>
+<p><italic><underline>IUPUI CIS :</underline></italic> NSF</p>
+<p><italic><underline>JHU_CSSE-DECOM</underline></italic>: JHU CSSE: National Science Foundation (NSF) RAPID &#x201C;Real-time Forecasting of COVID-19 risk in the USA&#x201D;. 2021-2022. Award ID: 2108526. National Science Foundation (NSF) RAPID &#x201C;Development of an interactive web-based dashboard to track COVID-19 in real-time&#x201D;. 2020. Award ID: 2028604</p>
+<p><italic><underline>JHU_IDD-CovidSP</underline></italic>: State of California, US Dept of Health and Human Services, US Dept of Homeland Security, Johns Hopkins Health System, Office of the Dean at Johns Hopkins Bloomberg School of Public Health, Johns Hopkins University Modeling and Policy Hub, Centers for Disease Control and Prevention (5U01CK000538-03), University of Utah Immunology, Inflammation, &#x0026; Infectious Disease Initiative (26798 Seed Grant).</p>
+<p><italic><underline>JHU_UNC_GAS-StatMechPool</underline></italic>: NIH NIGMS: R01GM140564</p>
+<p><italic><underline>JHUAPL-Bucky</underline></italic>: US Dept of Health and Human Services</p>
+<p><italic><underline>KITmetricslab-select_ensemble</underline></italic>: Daniel Wolffram gratefully acknowledges support by the Klaus Tschira Foundation.</p>
+<p><italic><underline>LANL-GrowthRate</underline></italic>: LANL LDRD 20200700ER</p>
+<p><italic><underline>MIT-Cassandra</underline></italic>: MIT Quest for Intelligence</p>
+<p><italic><underline>MOBS-GLEAM_COVID</underline></italic>: COVID Supplement CDC-HHS-6U01IP001137-01; CA</p>
+<p>NU38OT000297 from the Council of State and Territorial Epidemiologists (CSTE)</p>
+<p><italic><underline>NotreDame-FRED</underline></italic>: NSF RAPID DEB 2027718</p>
+<p><italic><underline>NotreDame-mobility</underline></italic>: NSF RAPID DEB 2027718</p>
+<p><italic><underline>PSI-DRAFT</underline></italic>: NSF RAPID Grant # 2031536</p>
+<p><italic><underline>QJHong-Encounter</underline></italic>: NSF DMR-2001411 and DMR-1835939</p>
+<p><italic><underline>SDSC_ISG-TrendModel</underline></italic>: The development of the dashboard was partly funded by the Fondation Priv&#x00E9;e des H&#x00F4;pitaux Universitaires de Gen&#x00E8;ve</p>
+<p><italic><underline>UA-EpiCovDA</underline></italic>: NSF RAPID Grant # 2028401</p>
+<p>UChicagoCHATTOPADHYAY-UnIT: Defense Advanced Research Projects Agency (DARPA) #HR00111890043/P00004 (I. Chattopadhyay, University of Chicago).</p>
+<p><italic><underline>UCSB-ACTS</underline></italic>: NSF RAPID IIS 2029626</p>
+<p><italic><underline>UCSD_NEU-DeepGLEAM</underline></italic>: Google Faculty Award, W31P4Q-21-C-0014</p>
+<p><italic><underline>UMass-MechBayes</underline></italic>: NIGMS #R35GM119582, NSF #1749854, NIGMS #R35GM119582</p>
+<p><italic><underline>UMich-RidgeTfReg</underline></italic>: This project is funded by the University of Michigan Physics Department and the University of Michigan Office of Research.</p>
+<p><italic><underline>UVA-Ensemble</underline></italic>: National Institutes of Health (NIH) Grant 1R01GM109718, NSF BIG DATA Grant IIS-1633028, NSF Grant No.: OAC-1916805, NSF Expeditions in Computing Grant CCF-1918656, CCF-1917819, NSF RAPID CNS-2028004, NSF RAPID OAC-2027541, US Centers for Disease Control and Prevention 75D30119C05935, a grant from Google, University of Virginia Strategic Investment Fund award number SIF160, Defense Threat Reduction Agency (DTRA) under Contract No. HDTRA1-19-D-0007, and Virginia Dept of Health Grant VDH-21-501-0141</p>
+<p><italic><underline>Wadnwani_AI-BayesOpt</underline></italic>: This study is made possible by the generous support of the American People through the United States Agency for International Development (USAID). The work described in this article was implemented under the TRACETB Project, managed by WIAI under the terms of Cooperative Agreement Number 72038620CA00006. The contents of this manuscript are the sole responsibility of the authors and do not necessarily reflect the views of USAID or the United States Government.</p>
+<p><italic><underline>WalmartLabsML-LogForecasting</underline></italic>: Team acknowledges Walmart to support this study</p>
+</sec>
+<sec id="s7">
+<title>Author Consortium</title>
+<p>Estee Y Cramer<sup>1</sup>, Yuxin Huang<sup>1</sup>, Yijin Wang<sup>1</sup>, Evan L Ray<sup>1</sup>, Matthew Cornell<sup>1</sup>, Johannes Bracher<sup>2,3</sup>, Andrea Brennen<sup>4</sup>, Alvaro J Castro Rivadeneira<sup>1</sup>, Aaron Gerding<sup>1</sup>, Katie House<sup>1</sup>, Dasuni Jayawardena<sup>1</sup>, Abdul H Kanji<sup>1</sup>, Ayush Khandelwal<sup>1</sup>, Khoa Le<sup>1</sup>, Jarad Niemi<sup>5</sup>, Ariane Stark<sup>1</sup>, Apurv Shah<sup>1</sup>, Nutcha Wattanachit<sup>1</sup>, Martha W Zorn<sup>1</sup>, Tilmann Gneiting<sup>2</sup>, Anja M&#x00FC;hlemann<sup>6</sup>, Youyang Gu<sup>7</sup>, Yixian Chen<sup>8</sup>, Krishna Chintanippu<sup>8</sup>, Viresh Jivane<sup>8</sup>, Ankita Khurana<sup>8</sup>, Ajay Kumar<sup>8</sup>, Anshul Lakhani<sup>8</sup>, Prakhar Mehrotra<sup>8</sup>, Sujitha Pasumarty<sup>8</sup>, Monika Shrivastav<sup>8</sup>, Jialu You<sup>8</sup>, Nayana Bannur<sup>9</sup>, Ayush Deva<sup>9</sup>, Sansiddh Jain<sup>9</sup>, Mihir Kulkarni<sup>9</sup>, Srujana Merugu<sup>9</sup>, Alpan Raval<sup>9</sup>, Siddhant Shingi<sup>9</sup>, Avtansh Tiwari<sup>9</sup>, Jerome White<sup>9</sup>, Aniruddha Adiga<sup>10</sup>, Benjamin Hurt<sup>10</sup>, Bryan Lewis<sup>10</sup>, Madhav Marathe<sup>10</sup>, Akhil Sai Peddireddy<sup>10</sup>, Przemyslaw Porebski<sup>10</sup>, Srinivasan Venkatramanan<sup>10</sup>, Lijing Wang<sup>10</sup>, Maytal Dahan<sup>11</sup>, Spencer Fox<sup>12</sup>, Kelly Gaither<sup>11</sup>, Michael Lachmann<sup>13</sup>, Lauren Ancel Meyers<sup>12</sup>, James G Scott<sup>12</sup>, Mauricio Tec<sup>12</sup>, Spencer Woody<sup>12</sup>, Ajitesh Srivastava<sup>14</sup>, Tianjian Xu<sup>14</sup>, Jeffrey C Cegan<sup>15</sup>, Ian D Dettwiller<sup>15</sup>, William P England<sup>15</sup>, Matthew W Farthing<sup>15</sup>, Glover E George<sup>15</sup>, Robert H Hunter<sup>15</sup>, Brandon Lafferty<sup>15</sup>, Igor Linkov<sup>15</sup>, Michael L Mayo<sup>15</sup>, Matthew D Parno<sup>15</sup>, Michael A Rowland<sup>15</sup>, Benjamin D Trump<sup>15</sup>, Samuel Chen<sup>16</sup>, Stephen V Faraone<sup>16</sup>, Jonathan Hess<sup>16</sup>, Christopher P Morley<sup>16</sup>, Asif Salekin<sup>17</sup>, Dongliang Wang<sup>16</sup>, Yanli Zhang-James<sup>16</sup>, Thomas M Baer<sup>18</sup>, Sabrina M Corsetti<sup>19</sup>, Marisa C Eisenberg<sup>19</sup>, Karl Falb<sup>19</sup>, Yitao Huang<sup>19</sup>, Emily T Martin<sup>19</sup>, Ella McCauley<sup>19</sup>, Robert L Myers<sup>19</sup>, Tom Schwarz<sup>19</sup>, Graham Casey Gibson<sup>1</sup>, Daniel Sheldon<sup>1</sup>, Liyao Gao<sup>20</sup>, Yian Ma<sup>21</sup>, Dongxia Wu<sup>21</sup>, Rose Yu<sup>22,21</sup>, Xiaoyong Jin<sup>23</sup>, Yu-Xiang Wang<sup>23</sup>, Xifeng Yan<sup>23</sup>, YangQuan Chen<sup>24</sup>, Lihong Guo<sup>25</sup>, Yanting Zhao<sup>26</sup>, Jinghui Chen<sup>27</sup>, Quanquan Gu<sup>27</sup>, Lingxiao Wang<sup>27</sup>, Pan Xu<sup>27</sup>, Weitong Zhang<sup>27</sup>, Difan Zou<sup>27</sup>, Ishanu Chattopadhyay<sup>28</sup>, Yi Huang<sup>28</sup>, Guoqing Lu<sup>29</sup>, Ruth Pfeiffer<sup>30</sup>, Timothy Sumner<sup>31</sup>, Liqiang Wang<sup>31</sup>, Dongdong Wang<sup>31</sup>, Shunpu Zhang<sup>31</sup>, Zihang Zou<sup>31</sup>, Hannah Biegel<sup>32</sup>, Joceline Lega<sup>32</sup>, Fazle Hussain<sup>33</sup>, Zeina Khan<sup>33</sup>, Frank Van Bussel<sup>33</sup>, Steve McConnell<sup>34</sup>, Stephanie L Guertin<sup>35</sup>, Christopher Hulme-Lowe<sup>35</sup>, VP Nagraj<sup>35</sup>, Stephen D Turner<sup>35</sup>, Benjam&#x00ED;n Bejar<sup>36</sup>, Christine Choirat<sup>36</sup>, Antoine Flahault<sup>37</sup>, Ekaterina Krymova<sup>36</sup>, Gavin Lee<sup>36</sup>, Elisa Manetti<sup>37</sup>, Kristen Namigai<sup>37</sup>, Guillaume Obozinski<sup>36</sup>, Tao Sun<sup>36</sup>, Dorina Thanou<sup>38</sup>, Xuegang Ban<sup>20</sup>, Yunfeng Shi<sup>39</sup>, Robert Walraven<sup>7</sup>, Qi-Jun Hong<sup>40,41</sup>, Axel van de Walle<sup>41</sup>, Michal Ben-Nun<sup>42</sup>, Steven Riley<sup>43</sup>, Pete Riley<sup>42</sup>, James A Turtle<sup>42</sup>, Duy Cao<sup>44</sup>, Joseph Galasso<sup>44</sup>, Jae H Cho<sup>7</sup>, Areum Jo<sup>7</sup>, David DesRoches<sup>45</sup>, Pedro Forli<sup>45</sup>, Bruce Hamory<sup>45</sup>, Ugur Koyluoglu<sup>45</sup>, Christina Kyriakides<sup>45</sup>, Helen Leis<sup>45</sup>, John Milliken<sup>45</sup>, Michael Moloney<sup>45</sup>, James Morgan<sup>45</sup>, Ninad Nirgudkar<sup>45</sup>, Gokce Ozcan<sup>45</sup>, Noah Piwonka<sup>45</sup>, Matt Ravi<sup>45</sup>, Chris Schrader<sup>45</sup>, Elizabeth Shakhnovich<sup>45</sup>, Daniel Siegel<sup>45</sup>, Ryan Spatz<sup>45</sup>, Chris Stiefeling<sup>45</sup>, Barrie Wilkinson<sup>45</sup>, Alexander Wong<sup>45</sup>, Sean Cavany<sup>46</sup>, Guido Espa&#x00F1;a<sup>46</sup>, Sean Moore<sup>46</sup>, Rachel Oidtman<sup>28,46</sup>, Alex Perkins<sup>46</sup>, Andrea Kraus<sup>47</sup>, David Kraus<sup>47</sup>, Jiang Bian<sup>48</sup>, Wei Cao<sup>48</sup>, Zhifeng Gao<sup>48</sup>, Juan Lavista Ferres<sup>48</sup>, Chaozhuo Li<sup>48</sup>, Tie-Yan Liu<sup>48</sup>, Xing Xie<sup>48</sup>, Shun Zhang<sup>48</sup>, Shun Zheng<sup>48</sup>, Matteo Chinazzi<sup>49</sup>, Alessandro Vespignani<sup>50,49</sup>, Xinyue Xiong<sup>49</sup>, Jessica T Davis<sup>49</sup>, Kunpeng Mu<sup>49</sup>, Ana Pastore y Piontti<sup>49</sup>, Jackie Baek<sup>51</sup>, Vivek Farias<sup>52</sup>, Andreea Georgescu<sup>51</sup>, Retsef Levi<sup>52</sup>, Deeksha Sinha<sup>51</sup>, Joshua Wilde<sup>51</sup>, Andrew Zheng<sup>51</sup>, Amine Bennouna<sup>51</sup>, David Nze Ndong<sup>52</sup>, Georgia Perakis<sup>53</sup>, Divya Singhvi<sup>54</sup>, Ioannis Spantidakis<sup>51</sup>, Leann Thayaparan<sup>51</sup>, Asterios Tsiourvas<sup>51</sup>, Shane Weisberg<sup>51</sup>, Ali Jadbabaie<sup>55</sup>, Arnab Sarker<sup>55</sup>, Devavrat Shah<sup>55</sup>, Leo A Celi<sup>56</sup>, Nicolas D Penna<sup>56</sup>, Saketh Sundar<sup>57</sup>, Russ Wolfinger<sup>58</sup>, Lauren Castro<sup>59</sup>, Geoffrey Fairchild<sup>59</sup>, Isaac Michaud<sup>59</sup>, Dave Osthus<sup>59</sup>, Daniel Wolffram<sup>2,3</sup>, Dean Karlen<sup>60,61</sup>, Mark J Panaggio<sup>62</sup>, Matt Kinsey<sup>62</sup>, Luke C. Mullany<sup>62</sup>, Kaitlin Rainwater-Lovett<sup>62</sup>, Lauren Shin<sup>62</sup>, Katharine Tallaksen<sup>62</sup>, Shelby Wilson<sup>62</sup>, Michael Brenner<sup>63,64</sup>, Marc Coram<sup>64</sup>, Jessie K Edwards<sup>65</sup>, Keya Joshi<sup>66</sup>, Ellen Klein<sup>64</sup>, Juan Dent Hulse<sup>67</sup>, Kyra H Grantz<sup>67</sup>, Alison L Hill<sup>68</sup>, Joshua Kaminsky<sup>67</sup>, Kathryn Kaminsky<sup>7</sup>, Lindsay T Keegan<sup>69</sup>, Stephen A Lauer<sup>67</sup>, Elizabeth C Lee<sup>67</sup>, Joseph C Lemaitre<sup>70</sup>, Justin Lessler<sup>71</sup>, Hannah R Meredith<sup>67</sup>, Javier Perez-Saez<sup>67</sup>, Sam Shah<sup>7</sup>, Claire P Smith<sup>67</sup>, Shaun A Truelove<sup>67</sup>, Josh Wills<sup>7</sup>, Lauren Gardner<sup>68</sup>, Maximilian Marshall<sup>68</sup>, Kristen Nixon<sup>68</sup>, John C. Burant<sup>7</sup>, Wen-Hao Chiang<sup>72</sup>, George Mohler<sup>72</sup>, Junyi Gao<sup>73</sup>, Lucas Glass<sup>74</sup>, Cheng Qian<sup>74</sup>, Justin Romberg<sup>75</sup>, Rakshith Sharma<sup>74</sup>, Jeffrey Spaeder<sup>76</sup>, Jimeng Sun<sup>73</sup>, Cao Xiao<sup>77</sup>, Lei Gao<sup>6</sup>, Zhiling Gu<sup>6</sup>, Myungjin Kim<sup>6</sup>, Xinyi Li<sup>78</sup>, Guannan Wang<sup>79</sup>, Lily Wang<sup>6</sup>, Yueying Wang<sup>6</sup>, Shan Yu<sup>10</sup>, Chaman Jain<sup>80</sup>, Sangeeta Bhatia<sup>81</sup>, Pierre Nouvellet<sup>81,82</sup>, Ryan Barber<sup>20</sup>, Emmanuela Gaikedu<sup>20</sup>, Simon Hay<sup>20</sup>, Steve Lim<sup>20</sup>, Chris Murray<sup>20</sup>, David Pigott<sup>20</sup>, Robert C Reiner<sup>20</sup>, Prasith Baccam<sup>83</sup>, Heidi L Gurung<sup>83</sup>, Steven A Stage<sup>83</sup>, Bradley T Suchoski<sup>83</sup>, Chung-Yan Fong<sup>84</sup>, Dit-Yan Yeung<sup>84</sup>, Bijaya Adhikari<sup>85</sup>, Jiaming Cui<sup>75</sup>, B. Aditya Prakash<sup>75</sup>, Alexander Rodr&#x00ED;guez<sup>75</sup>, Anika Tabassum<sup>75,86</sup>, Jiajia Xie<sup>75</sup>, John Asplund<sup>87</sup>, Arden Baxter<sup>88</sup>, Pinar Keskinocak<sup>88</sup>, Buse Eylul Oruc<sup>88</sup>, Nicoleta Serban<sup>88</sup>, Sercan O Arik<sup>89</sup>, Mike Dusenberry<sup>89</sup>, Arkady Epshteyn<sup>89</sup>, Elli Kanal<sup>89</sup>, Long T Le<sup>89</sup>, Chun-Liang Li<sup>89</sup>, Tomas Pfister<sup>89</sup>, Rajarishi Sinha<sup>89</sup>, Thomas Tsai<sup>90</sup>, Nate Yoder<sup>89</sup>, Jinsung Yoon<sup>89</sup>, Leyou Zhang<sup>89</sup>, Daniel Wilson<sup>91</sup>, Artur A Belov<sup>92</sup>, Carson C Chow<sup>93</sup>, Richard C Gerkin<sup>40</sup>, Osman N Yogurtcu<sup>92</sup>, Mark Ibrahim<sup>94</sup>, Timothee Lacroix<sup>94</sup>, Matthew Le<sup>94</sup>, Jason Liao<sup>95</sup>, Maximilian Nickel<sup>94</sup>, Levent Sagun<sup>94</sup>, Sam Abbott<sup>96</sup>, Nikos I Bosse<sup>96</sup>, Sebastian Funk<sup>96</sup>, Joel Hellewell<sup>96</sup>, Sophie R Meakin<sup>96</sup>, Katharine Sherratt<sup>96</sup>, Rahi Kalantari<sup>97</sup>, Mingyuan Zhou<sup>97</sup>, Sen Pei<sup>98</sup>, Jeffrey Shaman<sup>98</sup>, Teresa K Yamana<sup>98</sup>, Omar Skali Lami<sup>51</sup>, Dimitris Bertsimas<sup>52</sup>, Michael L Li<sup>51</sup>, Saksham Soni<sup>51</sup>, Hamza Tazi Bouardi<sup>51</sup>, Madeline Adee<sup>99</sup>, Turgay Ayer<sup>100,88</sup>, Jagpreet Chhatwal<sup>101</sup>, Ozden O Dalgic<sup>102</sup>, Mary A Ladd<sup>99</sup>, Benjamin P Linas<sup>103</sup>, Peter Mueller<sup>99</sup>, Jade Xiao<sup>88</sup>, Qinxia Wang<sup>98</sup>, Yuanjia Wang<sup>98</sup>, Shanghong Xie<sup>98</sup>, Donglin Zeng<sup>104</sup>, Jacob Bien<sup>14</sup>, Logan Brooks<sup>105</sup>, Alden Green<sup>105</sup>, Addison J Hu<sup>105</sup>, Maria Jahja<sup>105</sup>, Daniel McDonald<sup>106</sup>, Balasubramanian Narasimhan<sup>107</sup>, Collin Politsch<sup>105</sup>, Samyak Rajanala<sup>107</sup>, Aaron Rumack<sup>105</sup>, Noah Simon<sup>20</sup>, Ryan J Tibshirani<sup>105</sup>, Rob Tibshirani<sup>107</sup>, Valerie Ventura<sup>105</sup>, Larry Wasserman<sup>105</sup>, John M Drake<sup>108</sup>, Eamon B O&#x2019;Dea<sup>108</sup>, Yaser Abu-Mostafa<sup>109</sup>, Rahil Bathwal<sup>109</sup>, Nicholas A Chang<sup>109</sup>, Pavan Chitta<sup>109</sup>, Anne Erickson<sup>109</sup>, Sumit Goel<sup>109</sup>, Jethin Gowda<sup>109</sup>, Qixuan Jin<sup>109</sup>, HyeongChan Jo<sup>109</sup>, Juhyun Kim<sup>109</sup>, Pranav Kulkarni<sup>109</sup>, Samuel M Lushtak<sup>109</sup>, Ethan Mann<sup>109</sup>, Max Popken<sup>109</sup>, Connor Soohoo<sup>109</sup>, Kushal Tirumala<sup>109</sup>, Albert Tseng<sup>109</sup>, Vignesh Varadarajan<sup>109</sup>, Jagath Vytheeswaran<sup>109</sup>, Christopher Wang<sup>109</sup>, Akshay Yeluri<sup>109</sup>, Dominic Yurk<sup>109</sup>, Michael Zhang<sup>109</sup>, Alexander Zlokapa<sup>109</sup>, Robert Pagano<sup>110</sup>, Chandini Jain<sup>111</sup>, Vishal Tomar<sup>111</sup>, Lam Ho<sup>112</sup>, Huong Huynh<sup>113,114</sup>, Quoc Tran<sup>113,115</sup>, Velma K Lopez<sup>116</sup>, Jo W Walker<sup>116</sup>, Rachel B Slayton<sup>116</sup>, Michael A Johansson<sup>116</sup>, Matthew Biggerstaff<sup>116</sup>, Nicholas G Reich<sup>1</sup></p>
+<p><sup>1</sup>University of Massachusetts Amherst</p>
+<p><sup>2</sup>Chair of Econometrics and Statistics, Karlsruhe Institute of Technology</p>
+<p><sup>3</sup>Computational Statistics Group, Heidelberg Institute for Theoretical Studies</p>
+<p><sup>4</sup>IQT Labs</p>
+<p><sup>5</sup>Iowa State University</p>
+<p><sup>6</sup>Institute of Mathematical Statistics and Actuarial Science, University of Bern</p>
+<p><sup>7</sup>Unaffiliated</p>
+<p><sup>8</sup>Walmart</p>
+<p><sup>9</sup>Wadhwani Institute of Artificial Intelligence</p>
+<p><sup>10</sup>University of Virginia</p>
+<p><sup>11</sup>Texas Advanced Computing Center</p>
+<p><sup>12</sup>University of Texas at Austin</p>
+<p><sup>13</sup>Santa Fe Institute</p>
+<p><sup>14</sup>University of Southern California</p>
+<p><sup>15</sup>US Army Engineer Research and Development Center</p>
+<p><sup>16</sup>State University of New York Upstate Medical University</p>
+<p><sup>17</sup>Syracuse University</p>
+<p><sup>18</sup>Trinity University, San Antonio</p>
+<p><sup>19</sup>University of Michigan - Ann Arbor</p>
+<p><sup>20</sup>University of Washington</p>
+<p><sup>21</sup>University of California, San Diego</p>
+<p><sup>22</sup>Northeastern University</p>
+<p><sup>23</sup>University of California at Santa Barbara</p>
+<p><sup>24</sup>University of California, Merced</p>
+<p><sup>25</sup>Jilin University</p>
+<p><sup>26</sup>University of Science and Technology of China</p>
+<p><sup>27</sup>University of California, Los Angeles</p>
+<p><sup>28</sup>University of Chicago</p>
+<p><sup>29</sup>University of Nebraska Omaha</p>
+<p><sup>30</sup>National Cancer Institute (NCI), NIH</p>
+<p><sup>31</sup>University of Central Florida</p>
+<p><sup>32</sup>University of Arizona</p>
+<p><sup>33</sup>Texas Tech University</p>
+<p><sup>34</sup>Construx</p>
+<p><sup>35</sup>Signature Science, LLC</p>
+<p><sup>36</sup>Swiss Data Science Center, EPFL &#x0026; ETHZ</p>
+<p><sup>37</sup>Institute of Global Health, Faculty of Medicine, University of Geneva</p>
+<p><sup>38</sup>Center for Intelligent Systems, EPFL</p>
+<p><sup>39</sup>Rensselaer Polytechnic Institute</p>
+<p><sup>40</sup>Arizona State University</p>
+<p><sup>41</sup>Brown University</p>
+<p><sup>42</sup>Predictive Science, Inc</p>
+<p><sup>43</sup>Imperial College, London</p>
+<p><sup>44</sup>University of Dallas</p>
+<p><sup>45</sup>Oliver Wyman</p>
+<p><sup>46</sup>University of Notre Dame</p>
+<p><sup>47</sup>Masaryk University</p>
+<p><sup>48</sup>Microsoft</p>
+<p><sup>49</sup>Laboratory for the Modeling of Biological and Socio-technical Systems, Northeastern University</p>
+<p><sup>50</sup>ISI Foundation</p>
+<p><sup>51</sup>Operations Research Center, Massachusetts Institute of Technology</p>
+<p><sup>52</sup>Sloan School of Management, Massachusetts Institute of Technology</p>
+<p><sup>53</sup>Sloan School of Management and Operations Research Center, Massachusetts Institute of Technology</p>
+<p><sup>54</sup>Leonard N Stern School of Business, New York University</p>
+<p><sup>55</sup>Institute for Data, Systems, and Society, Massachusetts Institute of Technology</p>
+<p><sup>56</sup>Laboratory for Computational Physiology, Massachusetts Institute of Technology</p>
+<p><sup>57</sup>River Hill High School</p>
+<p><sup>58</sup>SAS Institute Inc</p>
+<p><sup>59</sup>Los Alamos National Laboratory</p>
+<p><sup>60</sup>TRIUMF</p>
+<p><sup>61</sup>University of Victoria</p>
+<p><sup>62</sup>Johns Hopkins University Applied Physics Lab</p>
+<p><sup>63</sup> School of Engineering and Applied Sciences, Harvard University</p>
+<p><sup>64</sup>Google Research</p>
+<p><sup>65</sup>Department of Epidemiology, UNC Gillings School of Public Health, University of North Carolina at Chapel Hill</p>
+<p><sup>66</sup>Harvard TH Chan School of Public Health</p>
+<p><sup>67</sup>Johns Hopkins Bloomberg School of Public Health</p>
+<p><sup>68</sup>Johns Hopkins University</p>
+<p><sup>69</sup>University of Utah</p>
+<p><sup>70</sup>&#x00C9;cole Polytechnique F&#x00E9;d&#x00E9;rale de Lausanne</p>
+<p><sup>71</sup>Department of Epidemiology, University of North Carolina Gillings School of Global Public Health</p>
+<p><sup>72</sup>Indiana University&#x2013;Purdue University Indianapolis</p>
+<p><sup>73</sup>University of Illinois at Urbana-Champaign</p>
+<p><sup>74</sup>Analytics Center of Excellence, IQVIA</p>
+<p><sup>75</sup>Georgia Institute of Technology</p>
+<p><sup>76</sup>IQVIA</p>
+<p><sup>77</sup>Amplitude</p>
+<p><sup>78</sup>Clemson University</p>
+<p><sup>79</sup>College of William &#x0026; Mary</p>
+<p><sup>80</sup>Institute of Business Forecasting</p>
+<p><sup>81</sup>Imperial College London</p>
+<p><sup>82</sup>School of Life Sciences, University of Sussex</p>
+<p><sup>83</sup>IEM, Inc.</p>
+<p><sup>84</sup>The Hong Kong University of Science and Technology</p>
+<p><sup>85</sup>University of Iowa</p>
+<p><sup>86</sup>Virginia Tech</p>
+<p><sup>87</sup>Metron, Inc.</p>
+<p><sup>88</sup>Georgia Insitute of Technology</p>
+<p><sup>89</sup>Google Cloud</p>
+<p><sup>90</sup>Harvard University</p>
+<p><sup>91</sup>Federal Reserve Bank of San Francisco</p>
+<p><sup>92</sup>Food and Drug Administration, Center for Biologics Evaluation and Research</p>
+<p><sup>93</sup>NIH</p>
+<p><sup>94</sup>Facebook AI Research</p>
+<p><sup>95</sup>Facebook</p>
+<p><sup>96</sup>London School of Hygiene &#x0026; Tropical Medicine</p>
+<p><sup>97</sup>The University of Texas at Austin</p>
+<p><sup>98</sup>Columbia University</p>
+<p><sup>99</sup>Massachusetts General Hospital</p>
+<p><sup>100</sup>Emory University Medical School</p>
+<p><sup>101</sup>Massachusetts General Hospital, Harvard Medical School</p>
+<p><sup>102</sup>Value Analytics Labs</p>
+<p><sup>103</sup>Boston University School of Medicine</p>
+<p><sup>104</sup>UNC Chapel Hill</p>
+<p><sup>105</sup>Carnegie Mellon University</p>
+<p><sup>106</sup>University of British Columbia</p>
+<p><sup>107</sup>Stanford University</p>
+<p><sup>108</sup>University of Georgia</p>
+<p><sup>109</sup>California Institute of Technology</p>
+<p><sup>110</sup>No affiliation</p>
+<p><sup>111</sup>Auquan</p>
+<p><sup>112</sup>Dalhousie University</p>
+<p><sup>113</sup>AIpert</p>
+<p><sup>114</sup>Virtual Power System</p>
+<p><sup>115</sup>Walmart Inc.</p>
+<p><sup>116</sup>Centers for Disease Control and Prevention</p>
+</sec>
+<ref-list>
+<title>References</title>
+<ref id="c1"><label>1.</label><mixed-citation publication-type="journal"><string-name><surname>Haghani</surname>, <given-names>M.</given-names></string-name> &#x0026; <string-name><surname>Bliemer</surname>, <given-names>M. C. J.</given-names></string-name> <article-title>Covid-19 pandemic and the unprecedented mobilisation of scholarly efforts prompted by a health crisis: Scientometric comparisons across SARS, MERS and 2019-nCoV literature</article-title>. <source>Scientometrics</source> <volume>125</volume>, <fpage>2695</fpage>&#x2013;<lpage>2726</lpage> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c2"><label>2.</label><mixed-citation publication-type="website"><collab>CDC</collab>. <source>COVID-19 Mathematical Modeling</source>. <ext-link ext-link-type="uri" xlink:href="https://www.cdc.gov/coronavirus/2019-ncov/covid-data/mathematical-modeling.html">https://www.cdc.gov/coronavirus/2019-ncov/covid-data/mathematical-modeling.html</ext-link> (<year>2021</year>).</mixed-citation></ref>
+<ref id="c3"><label>3.</label><mixed-citation publication-type="website"><string-name><surname>Cramer</surname>, <given-names>E. Y.</given-names></string-name> <etal>et al.</etal> <article-title>Evaluation of individual and ensemble probabilistic forecasts of COVID-19 mortality in the US</article-title>. <source>medRxiv</source> 2021.02.03.21250974 (<year>2021</year>) doi:<pub-id pub-id-type="doi">10.1101/2021.02.03.21250974</pub-id>.</mixed-citation></ref>
+<ref id="c4"><label>4.</label><mixed-citation publication-type="other"><string-name><surname>Brooks</surname>, <given-names>L. C.</given-names></string-name> <etal>et al.</etal> <article-title>Comparing ensemble approaches for short-term probabilistic COVID-19 forecasts in the U.S</article-title>. <source>International Institute of Forecasters</source> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c5"><label>5.</label><mixed-citation publication-type="other"><string-name><surname>Ray</surname>, <given-names>E. L.</given-names></string-name> <etal>et al.</etal> <article-title>Challenges in training ensembles to forecast COVID-19 cases and deaths in the United States</article-title>. <source>International Institute of Forecasters</source> (<year>2021</year>).</mixed-citation></ref>
+<ref id="c6"><label>6.</label><mixed-citation publication-type="other"><string-name><surname>Taylor</surname>, <given-names>J. W.</given-names></string-name> &#x0026; <string-name><surname>Taylor</surname>, <given-names>K.S.</given-names></string-name> <article-title>Combining Probabilistic Forecasts of COVID-19 Mortality in the United States</article-title>. <source>Eur. J. Oper. Res</source>. (<year>2021</year>) doi:<pub-id pub-id-type="doi">10.1016/j.ejor.2021.06.044</pub-id>.</mixed-citation></ref>
+<ref id="c7"><label>7.</label><mixed-citation publication-type="website"><collab>CSSEGISandData/COVID-19</collab>. <source>GitHub</source> <ext-link ext-link-type="uri" xlink:href="https://github.com/CSSEGISandData/COVID-19">https://github.com/CSSEGISandData/COVID-19</ext-link>.</mixed-citation></ref>
+<ref id="c8"><label>8.</label><mixed-citation publication-type="website"><collab>covid-19-data</collab>, <ext-link ext-link-type="uri" xlink:href="https://github.com/CSSEGISandData/COVID-19">https://github.com/CSSEGISandData/COVID-19</ext-link>. (Github).</mixed-citation></ref>
+<ref id="c9"><label>9.</label><mixed-citation publication-type="website"><collab>US COVID-19 cases and deaths by state</collab>. <ext-link ext-link-type="uri" xlink:href="https://usafacts.org/visualizations/coronavirus-covid-19-spread-map/">https://usafacts.org/visualizations/coronavirus-covid-19-spread-map/</ext-link> (<year>2021</year>).</mixed-citation></ref>
+<ref id="c10"><label>10.</label><mixed-citation publication-type="other"><string-name><surname>Cramer</surname>, <given-names>E.</given-names></string-name> <etal>et al.</etal> <source>reichlab/covid19-forecast-hub: release for Zenodo</source>, <fpage>20210816</fpage>. (<year>2021</year>). doi:<pub-id pub-id-type="doi">10.5281/zenodo.5208210</pub-id>.</mixed-citation></ref>
+<ref id="c11"><label>11.</label><mixed-citation publication-type="journal"><string-name><surname>Reich</surname>, <given-names>N. G.</given-names></string-name>, <string-name><surname>Cornell</surname>, <given-names>M.</given-names></string-name>, <string-name><surname>Ray</surname>, <given-names>E. L.</given-names></string-name>, <string-name><surname>House</surname>, <given-names>K.</given-names></string-name> &#x0026; <string-name><surname>Le</surname>, <given-names>K.</given-names></string-name> <article-title>The Zoltar forecast archive, a tool to standardize and store interdisciplinary prediction research</article-title>. <source>Sci Data</source> <volume>8</volume>, <fpage>59</fpage> (<year>2021</year>).</mixed-citation></ref>
+<ref id="c12"><label>12.</label><mixed-citation publication-type="other"><string-name><surname>Wang</surname>, <given-names>S. Y.</given-names></string-name> <etal>et al.</etal> <source>reichlab/covidHubUtils: repository release for Zenodo</source>. (<year>2021</year>). doi:<pub-id pub-id-type="doi">10.5281/zenodo.5207940</pub-id>.</mixed-citation></ref>
+<ref id="c13"><label>13.</label><mixed-citation publication-type="book"><string-name><surname>Cornell</surname>, <given-names>M.</given-names></string-name>, <string-name><surname>Gruson</surname>, <given-names>H.</given-names></string-name>, <string-name><surname>Wang</surname>, <given-names>S. Y.</given-names></string-name> &#x0026; <string-name><surname>Ray</surname>, <given-names>E.</given-names></string-name> <source>reichlab/zoltr: Release for</source> <publisher-loc>Zenodo</publisher-loc>, <fpage>20210816</fpage>. (<year>2021</year>). doi:<pub-id pub-id-type="doi">10.5281/zenodo.5207856</pub-id>.</mixed-citation></ref>
+<ref id="c14"><label>14.</label><mixed-citation publication-type="other"><string-name><surname>Cornell</surname>, <given-names>M.</given-names></string-name> <etal>et al.</etal> <source>reichlab/zoltpy: Release for Zenodo</source>, <fpage>20210816</fpage>. (<year>2021</year>). doi:<pub-id pub-id-type="doi">10.5281/zenodo.5207932</pub-id>.</mixed-citation></ref>
+<ref id="c15"><label>15.</label><mixed-citation publication-type="website"><collab>covid19-scenario-modeling-hub</collab>, <ext-link ext-link-type="uri" xlink:href="https://github.com/midas-network/covid19-scenario-modeling-hub">https://github.com/midas-network/covid19-scenario-modeling-hub</ext-link>. (Github).</mixed-citation></ref>
+<ref id="c16"><label>16.</label><mixed-citation publication-type="website"><collab>covid19-forecast-hub-europe: European Covid-19 Forecast Hub</collab>, <ext-link ext-link-type="uri" xlink:href="https://github.com/epiforecasts/covid19-forecast-hub-europe">https://github.com/epiforecasts/covid19-forecast-hub-europe</ext-link>. (Github).</mixed-citation></ref>
+<ref id="c17"><label>17.</label><mixed-citation publication-type="website"><collab>covid19-forecast-hub-de: German and Polish COVID-19 Forecast Hub</collab>, <ext-link ext-link-type="uri" xlink:href="https://github.com/KITmetricslab/covid19-forecast-hub-de">https://github.com/KITmetricslab/covid19-forecast-hub-de</ext-link>. (Github).</mixed-citation></ref>
+<ref id="c18"><label>18.</label><mixed-citation publication-type="journal"><string-name><surname>Borchering</surname>, <given-names>R. K.</given-names></string-name> <etal>et al.</etal> <article-title>Modeling of Future COVID-19 Cases, Hospitalizations, and Deaths, by Vaccination Rates and Nonpharmaceutical Intervention Scenarios -United States, April-September 2021</article-title>. <source>MMWR Morb. Mortal. Wkly. Rep</source>. <volume>70</volume>, <fpage>719</fpage>&#x2013;<lpage>724</lpage> (<year>2021</year>).</mixed-citation></ref>
+<ref id="c19"><label>19.</label><mixed-citation publication-type="website"><collab>MMWR Weeks</collab>. <source>CDC</source> <ext-link ext-link-type="uri" xlink:href="https://www.n.cdc.gov/nndss/document/MMWR_Week_overview.pdf">https://www.n.cdc.gov/nndss/document/MMWR_Week_overview.pdf</ext-link>.</mixed-citation></ref>
+<ref id="c20"><label>20.</label><mixed-citation publication-type="other"><string-name><surname>Hannan</surname>, <given-names>A.</given-names></string-name>, <string-name><surname>Huang</surname>, <given-names>Y. D.</given-names></string-name> &#x0026; <string-name><surname>Wang</surname>, <given-names>S. Y.</given-names></string-name> <source>reichlab/covid19-forecast-hub-validations: Release for Zenodo</source>, <fpage>20210816</fpage>. (<year>2021</year>). doi:<pub-id pub-id-type="doi">10.5281/zenodo.5207934</pub-id>.</mixed-citation></ref>
+<ref id="c21"><label>21.</label><mixed-citation publication-type="journal"><string-name><surname>Dong</surname>, <given-names>E.</given-names></string-name>, <string-name><surname>Du</surname>, <given-names>H.</given-names></string-name> &#x0026; <string-name><surname>Gardner</surname>, <given-names>L.</given-names></string-name> <article-title>An interactive web-based dashboard to track COVID-19 in real time</article-title>. <source>Lancet Infect. Dis</source>. <volume>20</volume>, <fpage>533</fpage>&#x2013;<lpage>534</lpage> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c22"><label>22.</label><mixed-citation publication-type="other"><string-name><surname>Ray</surname>, <given-names>E.</given-names></string-name> <etal>et al.</etal> <source>reichlab/covidData: repository release for Zenodo</source>. (<year>2021</year>). doi:<pub-id pub-id-type="doi">10.5281/zenodo.5208224</pub-id>.</mixed-citation></ref>
+<ref id="c23"><label>23.</label><mixed-citation publication-type="journal"><string-name><surname>Bracher</surname>, <given-names>J.</given-names></string-name>, <string-name><surname>Ray</surname>, <given-names>E. L.</given-names></string-name>, <string-name><surname>Gneiting</surname>, <given-names>T.</given-names></string-name> &#x0026; <string-name><surname>Reich</surname>, <given-names>N. G.</given-names></string-name> <article-title>Evaluating epidemic forecasts in an interval format</article-title>. <source>PLoS Comput. Biol</source>. <volume>17</volume>, <fpage>e1008618</fpage> (<year>2021</year>).</mixed-citation></ref>
+<ref id="c24"><label>24.</label><mixed-citation publication-type="journal"><string-name><surname>Gigerenzer</surname>, <given-names>G.</given-names></string-name>, <string-name><surname>Hertwig</surname>, <given-names>R.</given-names></string-name>, <string-name><surname>van den Broek</surname>, <given-names>E.</given-names></string-name>, <string-name><surname>Fasolo</surname>, <given-names>B.</given-names></string-name> &#x0026; <string-name><surname>Katsikopoulos</surname>, <given-names>K. V.</given-names></string-name> <article-title>&#x2018;A 30&#x0025; chance of rain tomorrow&#x2019;: how does the public understand probabilistic weather forecasts&#x00E3;</article-title> <source>Risk Anal</source>. <volume>25</volume>, <fpage>623</fpage>&#x2013;<lpage>629</lpage> (<year>2005</year>).</mixed-citation></ref>
+<ref id="c25"><label>25.</label><mixed-citation publication-type="journal"><string-name><surname>Raftery</surname>, <given-names>A. E.</given-names></string-name> <article-title>Use and Communication of Probabilistic Forecasts</article-title>. <source>Stat. Anal. Data Min</source>. <volume>9</volume>, <fpage>397</fpage>&#x2013;<lpage>410</lpage> (<year>2016</year>).</mixed-citation></ref>
+<ref id="c26"><label>26.</label><mixed-citation publication-type="other"><collab>Risk-Communication-and-Behavior-Best-Practices-and-Research-Findings-July-2016.pdf</collab>.</mixed-citation></ref>
+<ref id="c27"><label>27.</label><mixed-citation publication-type="website"><collab>CDC</collab>. <source>COVID-19 Forecasts: Deaths</source>. <ext-link ext-link-type="uri" xlink:href="https://www.cdc.gov/coronavirus/2019-ncov/covid-data/forecasting-us.html">https://www.cdc.gov/coronavirus/2019-ncov/covid-data/forecasting-us.html</ext-link> (<year>2021</year>).</mixed-citation></ref>
+<ref id="c28"><label>28.</label><mixed-citation publication-type="other"><string-name><surname>Waldrop</surname>, <given-names>T.</given-names></string-name>, <string-name><surname>Andone</surname>, <given-names>D.</given-names></string-name> &#x0026; <string-name><surname>Holcombe</surname>, <given-names>M.</given-names></string-name> <article-title>CDC warns new Covid-19 variants could accelerate spread in US</article-title>. <source>CNN</source> (<year>2021</year>).</mixed-citation></ref>
+</ref-list>
+<sec id="s8">
+<title>Supplemental Information</title>
+<p><bold>Supplement 1:</bold> Optional fields in each metadata file:</p>
+<list list-type="order">
+<list-item><p><bold>institution_affil</bold> - University or company names, if relevant.</p></list-item>
+<list-item><p><bold>team_funding</bold> - Like an acknowledgement in a manuscript, you can acknowledge funding here.</p></list-item>
+<list-item><p><bold>repo_url</bold> - A github repository url or something similar.</p></list-item>
+<list-item><p><bold>twitter_handles</bold> - one or more twitter handles (without the @) separated by commas.</p></list-item>
+<list-item><p><bold>data_inputs</bold> - A description of the data sources used to inform the model and the truth data targeted by model forecasts. Common data sources are NYTimes, JHU CSSE, COVIDTracking, Google mobility, HHS hospitalization etc. An example description could be &#x201C;cases forecasts use NYTimes data and target JHU CSSE truth data, hospitalization forecasts use and target HHS hospitalization data&#x201D;</p></list-item>
+<list-item><p><bold>citation</bold> - a url (doi link preferred) to an extended description of your model, e.g. blog post, website, preprint, or peer-reviewed manuscript.</p></list-item>
+<list-item><p><bold>methods_long</bold> - An extended description of the methods used in the model. If the model is modified, this field can be used to provide the date of the modification and a description of the change.</p></list-item></list>
+<p><bold>Supplement 2:</bold> Validations for pull requests and metadata files submitted to the forecast hub</p>
+<p>Each time an update (pull request) from a forecast team is submitted to the Hub, a set of validation rules that enforce the metadata requirements as outlined in the Data Records section are applied to the contents of the update. Any file in an update that fails to conform to the rules will cause the entire update to fail.</p>
+<sec id="s8a">
+<title>Forecasts</title>
+<p>Each forecast file is subject to the validation rules documented at: <ext-link ext-link-type="uri" xlink:href="https://github.com/reichlab/covid19-forecast-hub/wiki/Forecast-Checks">https://github.com/reichlab/covid19-forecast-hub/wiki/Forecast-Checks</ext-link>.</p>
+</sec>
+<sec id="s8b">
+<title>Miscellaneous</title>
+<p>Additionally, each team must have their files under a folder named consistently with their <italic>model_abbr</italic>, and they must only have one <italic>primary</italic> model.</p>
+</sec>
+</sec>
+</back>
+</article>

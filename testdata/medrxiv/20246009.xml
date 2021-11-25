@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.2d1 20170631//EN" "JATS-archivearticle1.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" article-type="article" dtd-version="1.2d1" specific-use="production" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="publisher-id">MEDRXIV</journal-id>
+<journal-title-group>
+<journal-title>medRxiv</journal-title>
+<abbrev-journal-title abbrev-type="publisher">medRxiv</abbrev-journal-title>
+</journal-title-group>
+<publisher>
+<publisher-name>Cold Spring Harbor Laboratory</publisher-name>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1101/2020.12.08.20246009</article-id>
+<article-version>1.2</article-version>
+<article-categories>
+<subj-group subj-group-type="hwp-journal-coll">
+<subject>Epidemiology</subject>
+</subj-group>
+</article-categories>
+<title-group>
+<article-title>Impact of mass testing during an epidemic rebound of SARS-CoV-2: A modelling study</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author">
+<name><surname>Bosetti</surname><given-names>Paolo</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Tran Kiem</surname><given-names>C&#x00E9;cile</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Yazdanpanah</surname><given-names>Yazdan</given-names></name>
+<xref ref-type="aff" rid="a3">3</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Fontanet</surname><given-names>Arnaud</given-names></name>
+<xref ref-type="aff" rid="a4">4</xref>
+<xref ref-type="aff" rid="a5">5</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Lina</surname><given-names>Bruno</given-names></name>
+<xref ref-type="aff" rid="a6">6</xref>
+<xref ref-type="aff" rid="a7">7</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Colizza</surname><given-names>Vittoria</given-names></name>
+<xref ref-type="aff" rid="a8">8</xref>
+</contrib>
+<contrib contrib-type="author" corresp="yes">
+<name><surname>Cauchemez</surname><given-names>Simon</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="corresp" rid="cor1">&#x002A;</xref>
+</contrib>
+<aff id="a1"><label>1</label><institution>Mathematical Modelling of Infectious Diseases Unit</institution>, Institut Pasteur, UMR2000, CNRS, Paris, <country>France</country></aff>
+<aff id="a2"><label>2</label><institution>Coll&#x00E8;ge Doctoral, Sorbonne Universit&#x00E9;</institution>, Paris, <country>France</country></aff>
+<aff id="a3"><label>3</label><institution>Infections Antimicrobials Modelling Evolution (IAME) UMR 1137, University of Paris</institution>, Paris, <country>France</country></aff>
+<aff id="a4"><label>4</label><institution>Emerging Diseases Epidemiology Unit</institution>, Institut Pasteur, Paris, <country>France</country></aff>
+<aff id="a5"><label>5</label><institution>PACRI Unit, Conservatoire National des Arts et M&#x00E9;tiers</institution>, Paris, <country>France</country></aff>
+<aff id="a6"><label>6</label><institution>National Reference Center for Respiratory Viruses, Department of Virology, Infective Agents Institute, North Hospital Network</institution>, Lyon, <country>France</country></aff>
+<aff id="a7"><label>7</label><institution>Virpath Laboratory, International Center of Research in Infectiology, INSERM U1111, CNRS&#x2014;UMR 5308, &#x00C9;cole Normale Sup&#x00E9;rieure de Lyon, Universit&#x00E9; Claude Bernard Lyon, Lyon University</institution>, Lyon, <country>France</country></aff>
+<aff id="a8"><label>8</label><institution>INSERM, Sorbonne Universit&#x00E9;, Pierre Louis Institute of Epidemiology and Public Health</institution>, Paris 75012, <country>France</country></aff>
+</contrib-group>
+<author-notes>
+<corresp id="cor1"><label>&#x002A;</label><bold>Corresponding author:</bold> Simon Cauchemez, email: <email>simon.cauchemez@pasteur.fr</email></corresp>
+</author-notes>
+<pub-date pub-type="epub">
+<year>2020</year>
+</pub-date>
+<elocation-id>2020.12.08.20246009</elocation-id>
+<history>
+<date date-type="received">
+<day>08</day>
+<month>12</month>
+<year>2020</year>
+</date>
+<date date-type="rev-recd">
+<day>16</day>
+<month>12</month>
+<year>2020</year>
+</date>
+<date date-type="accepted">
+<day>16</day>
+<month>12</month>
+<year>2020</year>
+</date>
+</history>
+<permissions>
+<copyright-statement>&#x00A9; 2020, Posted by Cold Spring Harbor Laboratory</copyright-statement>
+<copyright-year>2020</copyright-year>
+<license license-type="creative-commons" xlink:href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><license-p>This pre-print is available under a Creative Commons License (Attribution-NonCommercial-NoDerivs 4.0 International), CC BY-NC-ND 4.0, as described at <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by-nc-nd/4.0/">http://creativecommons.org/licenses/by-nc-nd/4.0/</ext-link></license-p></license>
+</permissions>
+<self-uri xlink:href="20246009.pdf" content-type="pdf" xlink:role="full-text"/>
+<abstract>
+<title>Abstract</title>
+<p>We used a mathematical model to evaluate the impact of mass testing in the control of SARS-CoV-2. Under optimistic assumptions, we find that one round of mass testing may reduce daily infections by up to 20-30&#x0025;. As a consequence, very frequent testing would be required to control a quickly growing epidemic if other control measures were to be relaxed. Mass testing is most relevant when epidemic growth remains limited, thanks to a combination of interventions.</p>
+</abstract>
+<counts>
+<page-count count="10"/>
+</counts>
+</article-meta>
+<notes>
+<notes notes-type="competing-interest-statement">
+<title>Competing Interest Statement</title><p>The authors have declared no competing interest.</p></notes>
+<notes notes-type="financial-disclosure">
+<title>Funding Statement</title><p>We acknowledge financial support from the Investissement d'Avenir program, the Laboratoire d'Excellence Integrative Biology of Emerging Infectious Diseases program (grant ANR-10-LABX-62-IBEID), Sant&#x00E9; Publique France, the INCEPTION project (PIA/ANR-16-CONV-0005), and the European Union's Horizon 2020 research and innovation program under grants 101003589 (RECOVER) and 874735 (VEO), AXA.
+</p></notes>
+<notes notes-type="disclosures">
+<title>Author Declarations</title><p>I confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.</p><p>Yes</p><p>The details of the IRB/oversight body that provided approval or exemption for the research described are given below:</p><p>Not applicable</p><p>All necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived.</p><p>Yes</p><p>I understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).</p><p>Yes</p><p>I have followed all appropriate research reporting guidelines and uploaded the relevant EQUATOR Network research reporting checklist(s) and other pertinent material as supplementary files, if applicable.</p><p>Yes</p></notes>
+</notes>
+</front>
+<body>
+<sec id="s1">
+<title>Introduction</title>
+<p>Several European countries facing a large increase in COVID-19 cases have moved back into lockdown. While Test-Trace-Isolate remains for now the most efficient way to control an epidemic rebound at the end of these lockdowns, there is debate about optimal ways to use testing (<xref ref-type="bibr" rid="c1">1</xref>, <xref ref-type="bibr" rid="c2">2</xref>). So far, testing has mostly targeted symptomatic individuals and contacts of cases. The increasing availability of diagnostic tests now makes it possible to consider a strategy of mass testing, that consists in testing a large proportion of the population in a single campaign to identify and isolate as many infected individuals as possible. The development of rapid antigenic tests facilitates the implementation of such an approach since these tests can provide results in less than 30 minutes compared to 1-2 days for the standard PCR. Although these antigenic tests have a reduced sensitivity as compared to the PCR test for the diagnostic of SARS-Cov-2, the most sensitive rapid antigenic tests have a sensitivity threshold that is sufficient to identify a large proportion of infectious individuals (with high viral shedding)(<xref ref-type="bibr" rid="c3">3</xref>).</p>
+<p>However, even with antigenic tests, the implementation of mass testing will be challenging with an impact that is still to be determined. Here, using a mathematical model, we assess the possible impact of mass testing campaigns in a scenario of epidemic rebound at the end of the ongoing strong restrictions in Metropolitan France.</p>
+<sec id="s1a">
+<title>Modelling the spread of SARS-CoV-2 and consecutive campaigns of mass testing</title>
+<p>We use a compartmental SEIIR model to describe the spread of SARS-CoV-2 in Metropolitan France (<xref ref-type="bibr" rid="c4">4</xref>, <xref ref-type="bibr" rid="c5">5</xref>). After infection, individuals move between the following compartments: compartment E1 where they have been exposed but are not infectious yet (average duration: 4 days), compartment E2 where they are infectious (i.e. can transmit) but have no symptoms (average duration: 1 day), compartment I where they are infectious and may be symptomatic (average duration 3 days), compartment R where they recovered. This description leads to a generation time of about 7 days consistent with existing data on chains of transmission and viral excretion (<xref ref-type="bibr" rid="c6">6</xref>, <xref ref-type="bibr" rid="c7">7</xref>).</p>
+<p>In our baseline scenario, we deliberately consider optimistic assumptions to derive an upper bound of the impact of mass testing. We assume that an infectious individual (i.e. in compartments E2 or I) has a probability of testing positive with an antigenic test equal to sensitivity Se=90&#x0025; and that a person testing positive will reduce onward transmissions by &#x03C1;=70&#x0025; on average thanks to isolation (<xref ref-type="bibr" rid="c1">1</xref>, <xref ref-type="bibr" rid="c2">2</xref>). In sensitivity analyses, we also consider Se=60&#x0025;, 75&#x0025; and &#x03C1;=50&#x0025;, 90&#x0025;.</p>
+<p>Assuming a basic reproduction number R0=0.9 from 30th November 2020, the start of the ongoing lockdown, to January 4th 2021, we expect about 8000 daily infections (with about half of them being detected) and 13&#x0025; of the population of Metropolitan France being infected by January 4th 2021. From January 4th 2021, we consider rebound scenarios where the number of daily infections doubles every 10 (effective reproduction number Re=1.6), 14 (Re=1.4), 17 (Re=1.3) and 21 (Re=1.2) days. As a reference, Re was estimated at 1.4 from hospitalisation data in mid-October.</p>
+<p>We assume that the first testing campaign starts on January 4th, is repeated every 1-30 days with 0-90&#x0025; of the population being tested during each campaign.</p>
+</sec>
+<sec id="s1b">
+<title>Impact of mass testing on epidemic dynamics</title>
+<p><xref rid="fig1" ref-type="fig">Figure 1</xref> shows epidemic dynamics for monthly and bi-weekly campaigns of mass testing starting on January 4th 2021. For an epidemic rebound with a doubling time of 21 days, we would expect 140,000 daily infections by May 1st in the absence of mass testing. A monthly campaign of mass testing in which 75&#x0025; of the population is being tested would reduce that number to 80,000 daily infections, and a bi-weekly campaign to 35000. For a doubling time of 14 days, a monthly campaign testing 75&#x0025; of the population would reduce daily infections at the peak from 360,000 to 285,000 and bi-weekly campaigns to 200,000 daily infections.</p>
+<fig id="fig1" position="float" fig-type="figure">
+<label>Figure 1.</label>
+<caption><p>Expected numbers of daily infections when monthly (A, C, E, G) and bi-weekly (B, D, F, H) testing campaigns are performed targeting different proportions of the population. We explore epidemiological scenarios where the number of infections double every 21 (A, B), 17 (C, D), 14 (E, F) and 10 (G, H) days. We assume that the probability to detect an infectious individual with an antigenic test is Se=90&#x0025; and the reduction in onward transmission following a positive test is &#x03C1; =70&#x0025;.</p></caption>
+<graphic xlink:href="20246009v2_fig1.tif"/>
+</fig>
+<p>In our baseline scenario, we find that a single campaign targeting 75&#x0025; of the population reduces the number of infections that occur 10 days after the campaign by about 21&#x0025; (<xref rid="fig2" ref-type="fig">Figure 2A</xref>). We obtain 14&#x0025; and 18&#x0025; reductions for a sensitivity Se of 60&#x0025; and 75&#x0025;, respectively, and 15&#x0025; and 27&#x0025; reductions for an effectiveness of isolation &#x03C1; of 50&#x0025; and 90&#x0025;, respectively. Results are insensitive to the value of the effective reproduction number (results not shown). These reductions may have limited impact on overall dynamics in a context of quick epidemic rebound. For example, in our baseline scenario, if the number of infections doubles every 21 days and 75&#x0025; of the population is being tested, we expect that it will take 10 days to get back to the epidemiological situation observed prior to testing (<xref rid="fig2" ref-type="fig">Figure 2B</xref>). For a doubling time of 14 days, we only gain 6 days.</p>
+<fig id="fig2" position="float" fig-type="figure">
+<label>Figure 2.</label>
+<caption><p>Impact of a single campaign of mass testing. A. Reduction in the number of infections occurring 10 days after the campaign, for different scenarios. In our baseline scenario (black line), the probability to detect an infectious individual with an antigenic test is Se=90&#x0025; and the reduction in onward transmission following a positive test is &#x03C1; =70&#x0025;. We consider alternative scenarios with &#x03C1; =50&#x0025; (red line), &#x03C1; =90&#x0025; (green line), Se=60&#x0025; (blue line) and Se=75&#x0025; (light blue line). B. Time it takes for the number of daily infections to go back to levels observed prior to mass testing, as a function of the doubling time in the baseline scenario.</p></caption>
+<graphic xlink:href="20246009v2_fig2.tif"/>
+</fig>
+<p><xref rid="fig3" ref-type="fig">Figure 3</xref> shows the maximum daily number of infections observed by May 1st as a function of the number of days between consecutive campaigns and the proportion of the population being tested in each campaign. In our baseline scenario, for a doubling time of 21 days, to ensure that the number of infections remains below 80,000, 60,000 and 40,000 up to May 1st, a campaign testing 75&#x0025; of the population would need to occur every 30, 22, and 16 days, respectively. For a doubling time of 14 days, testing of 75&#x0025; of the population should occur every 6 days to have &#x003C;40,000 daily infections.</p>
+<fig id="fig3" position="float" fig-type="figure">
+<label>Figure 3.</label>
+<caption><p>Expected maximum number of daily infections observed by May 1st as a function of the number of days between consecutive campaigns and the proportion of the population being tested in each campaign, for doubling times of 21 (A), 17 (B), 14 (C) and 10 (D) days. We assume that the probability to detect an infectious individual with an antigenic test is Se=90&#x0025; and the reduction in onward transmission following a positive test is &#x03C1; =70&#x0025;.</p></caption>
+<graphic xlink:href="20246009v2_fig3.tif"/>
+</fig>
+<p>We explore the sensitivity of our results to model assumptions (<xref rid="fig4" ref-type="fig">Figure 4</xref>). To observe &#x003C;40,000 daily infections by May 1st with a doubling time of 21 days, testing 75&#x0025; of the population needs to be repeated every 21 days and 11 days when the effectiveness of isolation following a positive test is &#x03C1; =90&#x0025; and &#x03C1; =50&#x0025;, respectively. Such campaigns need to be repeated every 12 and 10 days for a sensitivity Se of the test of 75&#x0025; and 60&#x0025;.</p>
+<fig id="fig4" position="float" fig-type="figure">
+<label>Figure 4.</label>
+<caption><p>Frequency of mass testing campaigns necessary to keep the number of daily infections below 40,000 until May 1st as a function of the proportion of the population being tested in each campaign, for different modeling assumptions. In our baseline scenario (black line), we assume that the probability to detect an infectious individual with an antigenic test is Se=90&#x0025; and the reduction in onward transmission following a positive test is &#x03C1; =70&#x0025;. We consider alternative scenarios where the reduction in transmission is &#x03C1; =50&#x0025; (red line) and 90&#x0025; (green line) and where the probability to detect an infectious individual is Se = 60&#x0025; (blue line) and Se = 75&#x0025; (light blue line).</p></caption>
+<graphic xlink:href="20246009v2_fig4.tif"/>
+</fig>
+</sec>
+</sec>
+<sec id="s2">
+<title>Discussion</title>
+<p>We used a simple mathematical model to highlight the potential and limits of mass testing for the control of SARS-CoV-2 epidemics. Under optimistic assumptions, we find that one round of mass testing may reduce daily infections by up to 20-30&#x0025;. As a consequence, very frequent testing would be required to control a quickly growing epidemic if other control measures were to be relaxed. Mass testing is therefore most relevant when epidemic growth remains limited, thanks to a combination of interventions.These results are consistent with another modelling study (<xref ref-type="bibr" rid="c8">8</xref>).</p>
+<p>In combination with interventions able to slow down the epidemic growth, high frequency of screening remains the key element to provide an additional contribution to epidemic control (<xref ref-type="bibr" rid="c7">7</xref>). However, the logistics, efficiency of isolation, and voluntary participation of the population to repeated mass screening need to be carefully assessed. Few pilot studies have been conducted so far in small regions and with one-shot approaches requiring several days of implementation (<xref ref-type="bibr" rid="c9">9</xref>). Limited adhesion to isolation if positive would largely compromise such effort. Here we considered an optimistic scenario with 70&#x0025; reduction of onward transmission in isolation (with 50&#x0025;-90&#x0025; for sensitivity), but survey data from the UK point to smaller adhesion rates, of about 10&#x0025;(<xref ref-type="bibr" rid="c10">10</xref>).</p>
+<p>During a campaign of mass testing in Slovakia that occured in multiple rounds, the prevalence of infection dropped by about 60&#x0025; in the week between two rounds (<xref ref-type="bibr" rid="c11">11</xref>). The campaign happened along with important restrictions, including a 1 week lockdown. This makes it difficult to dissociate the impact of mass testing from that of other interventions. For example, if the effective reproduction number was 0.6-0.7 thanks to other measures, we would expect the prevalence of infection to drop by about 30&#x0025;-40&#x0025; per week in the absence of mass testing. In such a scenario, mass testing could have contributed to the additional 20&#x0025;-30&#x0025; reduction that was observed, which would be roughly consistent with estimates under our most optimistic scenarios. In our assessment, we only considered strategies in which only cases are isolated. In contrast, in Slovakia, the whole household was quarantined when a case was detected, potentially leading to higher impact on spread.</p>
+<p>An important limitation of mass testing is that, when the campaign begins, approximately half of the individuals who are infected are still in the latent phase E1 so that they do not shed sufficient virus to test positive. These individuals will not be detected and will become infectious after the campaign, fueling once again the epidemic. This problem can be partly mitigated by extending isolation to household contacts, as in Slovakia, and performing robust contact tracing of cases(<xref ref-type="bibr" rid="c12">12</xref>). Finally, for a given number of tests, impact might be higher if tests are target towards areas, populations or places of higher incidence.</p>
+<p>Our study has a number of limitations. First it relies on a deterministic model that may imperfectly capture epidemic dynamics when the daily number of infection becomes very low. In such situations, the epidemic may take longer to rebound than anticipated by the model. Second, we do not address the logistical challenges involved in regular mass screening and assume that individuals are tested in a single day.</p>
+</sec>
+</body>
+<back>
+<sec sec-type="data-availability">
+<title>Data Availability</title>
+<p>No data referred in the manuscript.</p>
+</sec>
+<ref-list>
+<title>References</title>
+<ref id="c1"><label>1.</label><mixed-citation publication-type="other"><string-name><given-names>J.</given-names> <surname>van Beek</surname></string-name>, <etal>et al.</etal>, <source>From more testing to smart testing: data-guided SARS-CoV-2 testing choices</source> <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1101/2020.10.13.20211524">https:/doi.org/10.1101/2020.10.13.20211524</ext-link>.</mixed-citation></ref>
+<ref id="c2"><label>2.</label><mixed-citation publication-type="other"><string-name><given-names>A.</given-names> <surname>Alemany</surname></string-name>, <etal>et al.</etal>, <source>Analytical and Clinical Performance of the Panbio COVID-19 Antigen-Detecting Rapid Diagnostic Test</source> <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1101/2020.10.30.20223198">https:/doi.org/10.1101/2020.10.30.20223198</ext-link>.</mixed-citation></ref>
+<ref id="c3"><label>3.</label><mixed-citation publication-type="other"><string-name><given-names>M. J.</given-names> <surname>Mina</surname></string-name>, <string-name><given-names>R.</given-names> <surname>Parker</surname></string-name>, <string-name><given-names>D. B.</given-names> <surname>Larremore</surname></string-name>, <article-title>Rethinking Covid-19 Test Sensitivity - A Strategy for Containment</article-title>. <source>N. Engl. J. Med</source>. (<year>2020</year>) <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1056/NEJMp2025631">https:/doi.org/10.1056/NEJMp2025631</ext-link>.</mixed-citation></ref>
+<ref id="c4"><label>4.</label><mixed-citation publication-type="journal"><string-name><given-names>H.</given-names> <surname>Salje</surname></string-name>, <etal>et al.</etal>, <article-title>Estimating the burden of SARS-CoV-2 in France</article-title>. <source>Science</source> <volume>369</volume>, <fpage>208</fpage>&#x2013;<lpage>211</lpage> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c5"><label>5.</label><mixed-citation publication-type="other"><string-name><given-names>A.</given-names> <surname>Andronico</surname></string-name>, <etal>et al.</etal>, <source>Evaluating the impact of curfews and other measures on SARS-CoV-2 transmission in French Guiana</source> <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1101/2020.10.07.20208314">https:/doi.org/10.1101/2020.10.07.20208314</ext-link>.</mixed-citation></ref>
+<ref id="c6"><label>6.</label><mixed-citation publication-type="other"><string-name><given-names>J.</given-names> <surname>Paireau</surname></string-name>, <etal>et al.</etal>, <source>Early chains of transmission of COVID-19 in France</source> <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1101/2020.11.17.20232264">https:/doi.org/10.1101/2020.11.17.20232264</ext-link>.</mixed-citation></ref>
+<ref id="c7"><label>7.</label><mixed-citation publication-type="other"><string-name><given-names>D. B.</given-names> <surname>Larremore</surname></string-name>, <etal>et al.</etal>, <article-title>Test sensitivity is secondary to frequency and turnaround time for COVID-19 screening</article-title>. <source>Science Advances</source>, <fpage>eabd5393</fpage> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c8"><label>8.</label><mixed-citation publication-type="other"><string-name><given-names>M. C. J.</given-names> <surname>Bootsma</surname></string-name>, <etal>et al.</etal>, <source>Regular universal screening for SARS-CoV-2 infection may not allow reopening of society after controlling a pandemic wave</source> <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1101/2020.11.18.20233122">https:/doi.org/10.1101/2020.11.18.20233122</ext-link>.</mixed-citation></ref>
+<ref id="c9"><label>9.</label><mixed-citation publication-type="journal"><string-name><given-names>E.</given-names> <surname>Holt</surname></string-name>, <article-title>Slovakia to test all adults for SARS-CoV-2</article-title>. <source>Lancet</source> <volume>396</volume>, <fpage>1386</fpage>&#x2013;<lpage>1387</lpage> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c10"><label>10.</label><mixed-citation publication-type="other"><string-name><given-names>L. E.</given-names> <surname>Smith</surname></string-name>, <etal>et al.</etal>, <source>Adherence to the test, trace and isolate system: results from a time series of 21 nationally representative surveys in the UK (the COVID-19 Rapid Survey of Adherence to Interventions and Responses [CORSAIR] study)</source> <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1101/2020.09.15.20191957">https:/doi.org/10.1101/2020.09.15.20191957</ext-link>.</mixed-citation></ref>
+<ref id="c11"><label>11.</label><mixed-citation publication-type="other"><string-name><given-names>M.</given-names> <surname>Pavelka</surname></string-name>, <etal>et al.</etal>, <source>The effectiveness of population-wide, rapid antigen test based screening in reducing SARS-CoV-2 infection prevalence in Slovakia</source> <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1101/2020.12.02.20240648">https:/doi.org/10.1101/2020.12.02.20240648</ext-link>.</mixed-citation></ref>
+<ref id="c12"><label>12.</label><mixed-citation publication-type="other"><string-name><given-names>J.A. M.</given-names> <surname>L&#x00F3;pez</surname></string-name>, <etal>et al.</etal>, <source>Anatomy of digital contact tracing: role of age, transmission setting, adoption and case detection</source> <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1101/2020.07.22.20158352">https:/doi.org/10.1101/2020.07.22.20158352</ext-link>.</mixed-citation></ref>
+</ref-list>
+</back>
+</article>

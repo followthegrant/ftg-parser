@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.2d1 20170631//EN" "JATS-archivearticle1.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" article-type="article" dtd-version="1.2d1" specific-use="production" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="publisher-id">MEDRXIV</journal-id>
+<journal-title-group>
+<journal-title>medRxiv</journal-title>
+<abbrev-journal-title abbrev-type="publisher">medRxiv</abbrev-journal-title>
+</journal-title-group>
+<publisher>
+<publisher-name>Cold Spring Harbor Laboratory</publisher-name>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1101/2020.06.09.20127092</article-id>
+<article-version>1.3</article-version>
+<article-categories>
+<subj-group subj-group-type="hwp-journal-coll">
+<subject>Infectious Diseases (except HIV/AIDS)</subject>
+</subj-group>
+</article-categories>
+<title-group>
+<article-title>Using machine learning to predict COVID-19 infection and severity risk among 4,510 aged adults: a UK Biobank cohort study</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" corresp="yes">
+<name><surname>Willette</surname><given-names>Auriel A.</given-names></name>
+<degrees>Ph.D.</degrees>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a2">2</xref>
+<xref ref-type="aff" rid="a3">3</xref>
+<xref ref-type="corresp" rid="cor1">&#x002A;</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Willette</surname><given-names>Sara A.</given-names></name>
+<degrees>B.A.</degrees>
+<xref ref-type="aff" rid="a3">3</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Wang</surname><given-names>Qian</given-names></name>
+<degrees>Ph.D.</degrees>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Pappas</surname><given-names>Colleen</given-names></name>
+<degrees>Ph.D.</degrees>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Klinedinst</surname><given-names>Brandon S.</given-names></name>
+<degrees>M.S.</degrees>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Le</surname><given-names>Scott</given-names></name>
+<degrees>B.S.</degrees>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Larsen</surname><given-names>Brittany</given-names></name>
+<degrees>M.S.</degrees>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Pollpeter</surname><given-names>Amy</given-names></name>
+<degrees>M.S.</degrees>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Li</surname><given-names>Tianqi</given-names></name>
+<degrees>M.D.</degrees>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Brenner</surname><given-names>Nicole</given-names></name>
+<degrees>Ph.D.</degrees>
+<xref ref-type="aff" rid="a4">4</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Waterboer</surname><given-names>Tim</given-names></name>
+<degrees>Ph.D.</degrees>
+<xref ref-type="aff" rid="a4">4</xref>
+</contrib>
+<aff id="a1"><label>1</label><institution>Department of Food Science and Human Nutrition, Iowa State University</institution>, Ames, IA, <country>USA</country></aff>
+<aff id="a2"><label>2</label><institution>Department of Neurology, University of Iowa</institution>, Iowa City, IA, <country>USA</country></aff>
+<aff id="a3"><label>3</label><institution>Iowa COVID-19 Tracker</institution>, Ames, IA, <country>USA</country></aff>
+<aff id="a4"><label>4</label><institution>Infections and Cancer Epidemiology, German Cancer Research Center (DKFZ)</institution>, Heidelberg, <country>Germany</country></aff>
+</contrib-group>
+<author-notes>
+<corresp id="cor1"><label>&#x002A;</label>Address Correspondence to: Auriel A. Willette, Ph.D., M.S., 2302 Osborn Drive, Ames, IA 50011-1078, Phone: (515) 294-3110, Email: <email>Awillett@iastate.edu</email></corresp>
+</author-notes>
+<pub-date pub-type="epub">
+<year>2021</year>
+</pub-date>
+<elocation-id>2020.06.09.20127092</elocation-id>
+<history>
+<date date-type="received">
+<day>09</day>
+<month>6</month>
+<year>2020</year>
+</date>
+<date date-type="rev-recd">
+<day>05</day>
+<month>1</month>
+<year>2021</year>
+</date>
+<date date-type="accepted">
+<day>05</day>
+<month>1</month>
+<year>2021</year>
+</date>
+</history>
+<permissions>
+<copyright-statement>&#x00A9; 2021, Posted by Cold Spring Harbor Laboratory</copyright-statement>
+<copyright-year>2021</copyright-year>
+<license license-type="creative-commons" xlink:href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><license-p>This pre-print is available under a Creative Commons License (Attribution-NonCommercial-NoDerivs 4.0 International), CC BY-NC-ND 4.0, as described at <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by-nc-nd/4.0/">http://creativecommons.org/licenses/by-nc-nd/4.0/</ext-link></license-p></license>
+</permissions>
+<self-uri xlink:href="20127092.pdf" content-type="pdf" xlink:role="full-text"/>
+<abstract>
+<title>Abstract</title>
+<sec>
+<title>Background</title>
+<p>Many risk factors have emerged for novel 2019 coronavirus disease (COVID-19). It is relatively unknown how these factors collectively predict COVID-19 infection risk, as well as risk for a severe infection (i.e., hospitalization).</p>
+</sec>
+<sec>
+<title>Methods</title>
+<p>Among aged adults (69.3 &#x00B1; 8.6 years) in UK Biobank, COVID-19 data was downloaded for 4,510 participants with 7,539 test cases. We downloaded baseline data from 10-14 years ago, including demographics, biochemistry, body mass, and other factors, as well as antibody titers for 20 common to rare infectious diseases. Permutation-based linear discriminant analysis was used to predict COVID-19 risk and hospitalization risk. Probability and threshold metrics included receiver operating characteristic curves to derive area under the curve (AUC), specificity, sensitivity, and quadratic mean.</p>
+</sec>
+<sec>
+<title>Results</title>
+<p>The &#x201C;best-fit&#x201D; model for predicting COVID-19 risk achieved excellent discrimination (AUC=0.969, 95&#x0025; CI=0.934-1.000). Factors included age, immune markers, lipids, and serology titers to common pathogens like human cytomegalovirus. The hospitalization &#x201C;best-fit&#x201D; model was more modest (AUC=0.803, 95&#x0025; CI=0.663-0.943) and included only serology titers.</p>
+</sec>
+<sec>
+<title>Conclusions</title>
+<p>Accurate risk profiles can be created using standard self-report and biomedical data collected in public health and medical settings. It is also worthwhile to further investigate if prior host immunity predicts current host immunity to COVID-19.</p>
+</sec>
+</abstract>
+<kwd-group kwd-group-type="author">
+<title>Keywords</title>
+<kwd>linear discriminant analysis</kwd>
+<kwd>machine learning</kwd>
+<kwd>non-parametric</kwd>
+<kwd>host response</kwd>
+<kwd>antibodies</kwd>
+<kwd>COVID-19</kwd>
+<kwd>SARS-CoV-2</kwd>
+<kwd>serology</kwd>
+<kwd>cohort study</kwd>
+<kwd>epidemiology</kwd>
+</kwd-group>
+<counts>
+<page-count count="42"/>
+</counts>
+</article-meta>
+<notes>
+<notes notes-type="competing-interest-statement">
+<title>Competing Interest Statement</title><p>The authors have declared no competing interest.</p></notes>
+<notes notes-type="financial-disclosure">
+<title>Funding Statement</title><p>This research was conducted using the UK Biobank Resource under Application Number 25057. The study was funded by NIH AG047282 and AARGD-17-529552. No funding provider had any role in the conception, collection, execution, or publication of this work. Authors nor their institutions received payment or services at any time from a third party for any aspect of the work.</p></notes>
+<notes notes-type="disclosures">
+<title>Author Declarations</title><p>I confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.</p><p>Yes</p><p>The details of the IRB/oversight body that provided approval or exemption for the research described are given below:</p><p>Iowa State University IRB
+Office for Responsible Research
+2420 Lincoln Way, Suite 202
+Ames, IA 50014
+515-294-1516</p><p>All necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived.</p><p>Yes</p><p>I understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).</p><p>Yes</p><p>I have followed all appropriate research reporting guidelines and uploaded the relevant EQUATOR Network research reporting checklist(s) and other pertinent material as supplementary files, if applicable.</p><p>Yes</p></notes>
+<fn-group content-type="summary-of-updates">
+<title>Summary of Updates:</title>
+<fn fn-type="update"><p>Took into account reviewer and editor comments from revise and resubmit. Major changes include:
+&#x002A;Permutation testing to obviate violation of non-independence in LDA.
+&#x002A;Undersampling of the majority class in COVID-19 susceptibility analyses, to correct for design imbalance.
+&#x002A;Replacing Accuracy with the Geometric-Mean as a threshold index of model fit.
+&#x002A;Numerous main text changes to clarify design, new analyses, and other suggestions.
+&#x002A;Further arguments for LDA and against alternatives.</p></fn>
+</fn-group>
+</notes>
+</front>
+<body>
+<sec id="s1">
+<title>Introduction</title>
+<p>Coronavirus disease 2019 (COVID-19), caused by a novel beta-coronavirus called severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2)<sup><xref rid="c1" ref-type="bibr">1</xref></sup>, is a worldwide pandemic that continues to severely disrupt the economic, social, and psychological well-being of countless people. Clinical presentation of COVID-19 widely varies, ranging from asymptomatic profiles to mild symptoms like high fever or cough to acute respiratory disease syndrome and death. Given this heterogeneous symptom presentation, as well as difficulties with serology testing, contact tracing, and more recently vaccine administration, it remains important to isolate or maximize safety for adults most at risk for COVID-19 infection and severe disease.</p>
+<p>By extension, a large body of research has investigated potential factors that increase COVID-19 infection and disease severity risk. It is well known, for example, that adults aged &#x003E;65 years are much more likely to be hospitalized or die due to COVID-19. Obesity itself and adverse health behaviors like smoking also increase infection risk and likelihood of hospitalization<sup><xref rid="c2" ref-type="bibr">2</xref>,<xref rid="c3" ref-type="bibr">3</xref></sup>. Several age and obesity-related conditions such as cardiovascular disease, cardiometabolic diseases (e.g., type 2 diabetes), hypertension, and other disease states and syndromes are also of concern<sup><xref rid="c4" ref-type="bibr">4</xref></sup>. Non-white ethnicity, particularly being black regardless of country of origin, socioeconomic deprivation, and low levels of education even after adjustment for health factors point to less privilege unfortunately conferring risk<sup><xref rid="c5" ref-type="bibr">5</xref></sup>. Among biological markers, COVID-19 infection or severity has been related to higher C-Reactive Protein and more circulating white blood cells and lower counts of lymphocytes or granulocytes (e.g., monocytes)<sup><xref rid="c6" ref-type="bibr">6</xref>-<xref rid="c8" ref-type="bibr">8</xref></sup>. SARS-CoV-1 has a similar profile except for a relatively normal total white blood cell count<sup><xref rid="c9" ref-type="bibr">9</xref></sup>.</p>
+<p>These studies are invaluable for establishing or validating risk factors to guide clinical decisions and policymaker choices. However, we ultimately need to develop risk profiles derived from these factors to accurately predict who will and will not develop COVID-19, and if a COVID-19 disease course will be mild or presumptively severe (i.e., require hospitalization). Data-driven modelling using machine learning can be used to create robust prediction models based on routinely collected biomedical data like demographics, a complete blood count, and standard medical biochemistry data. Critically, by using non COVID-19 serological data, we may gain insight into the host&#x2019;s ability to fight COVID-19 by examining antibody titers that detail the host response to past infectious pathogens. This &#x201C;virome&#x201D; may affect host innate and adaptive immunity<sup><xref rid="c9" ref-type="bibr">9</xref>,<xref rid="c10" ref-type="bibr">10</xref></sup>. For example, human cytomegalovirus vastly changes the composition of T and B cells<sup><xref rid="c11" ref-type="bibr">11</xref></sup>, and may induce immune senescence that could account for worse SARS-CoV-2 infection outcomes.</p>
+<p>Therefore, our objective was to use classification machine learning to determine how baseline measures, collected 10-14 years ago, could best predict which older adults developed COVID-19. Our second objective was to make similar predictions but for determining if someone positive with COVID-19 had a mild or severe infection. In summary, we achieved &#x003E; 90&#x0025; sensitivity and specificity with outstanding diagnostic value (AUC=0.969) for correctly predicting COVID-19 infection based on factors like age, biochemistry and white blood cell markers, and antibody titers to common pathogens like human cytomegalovirus, human herpesvirus 6, and chlamydia trachomatis. For COVID-19 severity, only antibody titers loaded for finals models that more modestly predicted severe disease (AUC: 0.803; specificity=61.1&#x0025;, sensitivity=85.7&#x0025;). Nonetheless, this report shows that trait-like baseline data from 10-14 years ago can better characterize who is most at risk for COVID-19 and if they are likely to be hospitalized with a presumptively severe infection. In addition, our results suggest that past infection history and antibody response may be an invaluable, novel predictor of host immunity to COVID-19 that warrants further study.</p>
+</sec>
+<sec id="s2">
+<title>Methods</title>
+<sec id="s2a">
+<title>Study design and participants</title>
+<p>This retrospective study involved the UK Biobank cohort<sup><xref rid="c12" ref-type="bibr">12</xref></sup>. UK Biobank consists of approximately 500,000 people now aged 50 to 84 years (mean age=69.4 years). Baseline data was collected in 2006-2010 at 22 centers across the United Kingdom<sup><xref rid="c13" ref-type="bibr">13</xref>,<xref rid="c14" ref-type="bibr">14</xref></sup>. Summary data are listed in <bold><xref rid="tbl1" ref-type="table">Table 1</xref></bold>. This research involved deidentified epidemiological data. All UK Biobank participants gave written, informed consent. Ethics approval for the UK Biobank study was obtained from the National Health Service Health Research Authority North West - Haydock Research Ethics Committee (16/NW/0274). All analyses were conducted in line with UK Biobank requirements.</p>
+<table-wrap id="tbl1" orientation="portrait" position="float">
+<label>Table 1.</label>
+<caption><title>Baseline Demographics and Data Characteristics</title>
+<p>Blood pressure (BP); high-density lipoprotein (HDL); low-density lipoprotein (LDL). A summary and comparison of data among either all participant test cases or a sub-group of test cases that also had non COVID-19 serology. Contemporary COVID-19 testing data has no shading. All retrospective baseline data has &#x201C;gray&#x201D; shading. Values are in Mean &#x00B1; SD, percentages, or frequency. P values less than .05 were considered significant and applicable predictors and indices are bolded.</p></caption>
+<graphic xlink:href="20127092v3_tbl1.tif"/>
+<graphic xlink:href="20127092v3_tbl1a.tif"/>
+</table-wrap>
+<p>The following categories of predictors were downloaded: 1) demographics; 2) health behaviors and long-term disability or illness status; 3) anthropometric and bioimpedance measures of fat, muscle, or water content; 4) pulse and blood pressure; 5) a serum panel of thirty biochemistry markers commonly collected in a clinic or hospital setting; and 6) a complete blood count with a manual differential.</p>
+</sec>
+<sec id="s2b">
+<title>Demographics</title>
+<p>These factors included participant age in years at baseline, sex, education qualifications, ethnicity, and Townsend Deprivation Index. Sex was coded as 0 for female and 1 for male. For education, higher scores roughly correspond to progressively more skilled trade/vocational or academic training. Ethnicity was coded as UK citizens who identified as White, Black/Black British, or Asian/Asian British. The Townsend index<sup><xref rid="c15" ref-type="bibr">15</xref></sup> is a standardized score indicating relative degree of deprivation or poverty based on permanent address.</p>
+</sec>
+<sec id="s2c">
+<title>Health Behaviors and Conditions</title>
+<p>This category consisted of self-reported alcohol status, smoking status, a subjective health rating on a 1-4 Likert scale (&#x201C;Excellent&#x201D; to &#x201C;Poor&#x201D;), and whether the participant had a self-described long-term medical condition. As noted in <bold><xref rid="tbl1" ref-type="table">Table 1</xref></bold>, 48.4&#x0025; of participants indicated having such an ailment. We independently confirmed self-reported data with ICD-10 codes while at hospital. These conditions included all-cause dementia and other neurological disorders, various cancers, major depressive disorder, cardiovascular or cerebrovascular diseases and events, cardiometabolic diseases (e.g., type 2 diabetes), renal and pulmonary diseases, and other so-called pre-existing conditions.</p>
+</sec>
+<sec id="s2d">
+<title>Vital Signs</title>
+<p>The first automated reading of pulse, diastolic and systolic blood pressure at the baseline visit were used.</p>
+</sec>
+<sec id="s2e">
+<title>Body Morphometrics and Compartment Mass</title>
+<p>Anthropometric measures of adiposity (Body Mass Index, waist circumference) were derived as described<sup><xref rid="c16" ref-type="bibr">16</xref></sup>. Data also included bioelectrical impedance metrics that estimate central body cavity (i.e., trunk) and whole body fat mass, fat-free muscle mass, or water content<sup><xref rid="c17" ref-type="bibr">17</xref></sup>.</p>
+</sec>
+<sec id="s2f">
+<title>Blood Biochemistry and Immunology</title>
+<p>Serum biomarkers were assayed from baseline samples as described<sup><xref rid="c18" ref-type="bibr">18</xref></sup>. Briefly, using immunoassay or clinical chemistry devices, spectrophotometry was used to initially quantify values for 34 biochemistry analytes. UK Biobank deemed 30 of these markers to be suitably robust. We rejected a further 4 markers due data missingness &#x003E;70&#x0025; (estradiol, rheumatoid factor), or because there was strong overlap with multicollinear variables that had more stable distributions or trait-like qualities (glucose rejected vs. glycated hemoglobin/hba1c; direct bilirubin rejected vs. total bilirubin). A complete blood count with a manual differential was separately processed for red and white blood cell counts, as well as white cell sub-types.</p>
+</sec>
+<sec id="s2g">
+<title>Serology Measures for Non COVID-19 Infectious Diseases</title>
+<p>As described (<ext-link ext-link-type="uri" xlink:href="http://biobank.ctsu.ox.ac.uk/crystal/crystal/docs/infdisease.pdf">http://biobank.ctsu.ox.ac.uk/crystal/crystal/docs/infdisease.pdf</ext-link>), among 9,695 randomized UK Biobank participants selected from the full 500,000 participant cohort, baseline serum was thawed and pathogen-specific assays run in parallel using flow cytometry on a Luminex bead platform<sup><xref rid="c19" ref-type="bibr">19</xref></sup>.</p>
+<p>Here, the goal of the multiplex serology panel was to measure multiple antibodies against several antigens for different pathogens, reducing noise and estimating the prevalence of prior infection and seroconversion in at least UK Biobank. All measures were initially confirmed in serum samples using gold-standard assays with median sensitivity and specificity of 97.0&#x0025; and 93.7&#x0025;, respectively. Antibody load for each pathogen-specific antigen was quantified using median fluorescence intensity (MFI). Because seropositivity is difficult to assess for several pathogens, we did not use pathogen prevalence as a predictor in models.</p>
+<p><bold><xref rid="tbl2" ref-type="table">Table 2</xref></bold> shows the selected pathogens, their respective antigens, estimated prevalence of each pathogen based roughly on antibody titers, and assay values. This array ranges from delta-type retroviruses like human T-cell lymphotropic virus 1 that are rare (&#x003C;1&#x0025;) to human herpesviruses 6 and 7 that have an estimated prevalence of more than 90&#x0025;.</p>
+<table-wrap id="tbl2" orientation="portrait" position="float">
+<label>Table 2.</label>
+<caption><title>Baseline characteristics of infectious disease serology from 2006-2010</title>
+<p>Antibody levels are specific to each antigen and expressed in Median Fluorescence Intensity (MFI) units. Seroprevalence of at least the main UK Biobank cohort was estimated on samples from 9,695 randomized participants, as described in white papers (see Methods). The &#x201C;gray&#x201D; and &#x201C;white&#x201D; shading are used to distinguish between pathogens and their respective antigens. &#x002A;CagA levels are based on roughly half of the original sample due to a technical lab error.</p></caption>
+<graphic xlink:href="20127092v3_tbl2.tif"/>
+<graphic xlink:href="20127092v3_tbl2a.tif"/>
+</table-wrap>
+</sec>
+<sec id="s2h">
+<title>COVID-19 Testing</title>
+<p>Our study was based on COVID PCR test data available from March 16<sup>th</sup> to May 19<sup>th</sup> 2020. Specifically, we used the May 26<sup>th</sup>, 2020 tranche of COVID-19 polymerase chain reaction (PCR) data from Public Health England. There were 4,510 unique participants that had 7,539 individual tests administered, hereafter called test cases. For modeling COVID-19 infection data, each test case was coded as &#x2018;0&#x2019; and &#x2018;1&#x2019;, respectively representing a negative or positive PCR test. For modeling COVID-19 disease severity, each test case was coded as &#x2018;0&#x2019; and &#x2018;1&#x2019;, which represented out-patient testing (i.e., presumptively mild case) or hospital in-patient testing with clinical signs of infection (i.e., presumptively severe case).</p>
+</sec>
+<sec id="s2i">
+<title>Statistical Analyses</title>
+<p>For a more technical description of the specific machine learning algorithm used to classify test cases, see <bold>Supplemental Text 1</bold>. SPSS 27 was used for all analyses and Alpha set at .05. Preliminary findings suggested that baseline serology data performed well in classifier models, despite a limited number of participants with serology. To determine if this serology sub-group was noticeably different from the full sample, Mann-Whitney U and Kruskal-Wallis tests were done (Alpha=.05). Hereafter, separate sets of classification analyses were performed for: 1) the full cohort; and 2) the sub-group of participants that had serology data. In other words, due to the imbalance of sample sizes and by definition the absence or presence of serology data, classifier performance in the serology sub-group was never statistically compared to the full cohort.</p>
+<p>Next, linear discriminant analysis (LDA) was used to create predictive models that discriminated between negative vs. positive COVID-19 diagnosis or mild vs. severe disease status. LDA is a regression-like classification technique that finds the best linear combination of predictors that can maximally distinguish between groups of interest. To determine how useful a given predictor or related group of predictors (e.g., demographics) were for classification, simple forced entry models were first done. Subsequently, to derive &#x201C;best fit,&#x201D; robust models of the data, stepwise entry (Wilks&#x2019; Lambda, F value entry=3.84) was used to exclude predictors that did not significantly account for unique variance in the classification model. This data reduction step is critical because LDA can lead to model overfitting when there are too many predictors relative to observations<sup><xref rid="c20" ref-type="bibr">20</xref>,<xref rid="c21" ref-type="bibr">21</xref></sup>, which are COVID-19 test cases for our purposes. Finally, because there were multiple test cases that could occur for the same participant, this would violate the assumption of independence. To guard against this problem, we used Mundry and Sommer&#x2019;s permutation LDA approach. Specifically, for each LDA model, permutation testing (1,000 iterations, P&#x003C;.05) was done by randomizing participants across groupings of test cases to confirm robustness of the original model<sup><xref rid="c22" ref-type="bibr">22</xref></sup>.</p>
+<p>LDA model overfitting can also occur when there is a sample size imbalance. Because there were many more negative vs. positive COVID-19 test cases in the full sample (5,329 vs. 2210), the negative test group was undersampled. Specifically, a random number generator was used to discard 2,500 negative test cases at random, such that the proportion of negative to positive tests was now 55&#x0025; to 45&#x0025; instead of 70.6&#x0025; to 29.4&#x0025;. Results without undersampling were similar (data not shown). No such imbalance was seen for COVID-19 severity in the full sample or for the serology sub-group. A typical holdout method of 70&#x0025; and 30&#x0025; was used for classifier training and then testing<sup><xref rid="c23" ref-type="bibr">23</xref></sup>. Finally, a two-layer non-parametric approach was used to determine model significance and estimated fit of one or more predictors. First, bootstrapping<sup><xref rid="c24" ref-type="bibr">24</xref></sup> (95&#x0025; Confidence Interval, 1000 iterations) was done to derive estimates robust against any violations of parametric assumptions. Next, &#x2018;leave-one-out&#x2019; cross-validation<sup><xref rid="c20" ref-type="bibr">20</xref></sup> was done with bootstrap-derived estimates to ensure that models themselves were robust. Collectively, the stepwise LDA models ensured that estimation bias of coefficients would be low because most predictors are &#x201C;thrown out&#x201D; before models are generated using the remaining predictors.</p>
+<p>For each LDA classification model, outcome threshold metrics included: specificity (i.e., true negatives correctly identified), sensitivity (i.e., true positives correctly identified), and the geometric mean (i.e., how well the model predicted both true negatives and positives). The area under the curve (AUC) with a 95&#x0025; confidence interval (CI) was reported to show how well a given model could distinguish between a COVID-19 negative or positive test result, and separately for COVID-19&#x002B; test cases if the disease was mild or severe. Receiver operating characteristic (ROC) curves plotted sensitivity against 1-specificity to better visualize results for sets of predictors and a final stepwise model. For stepwise models, the Wilks&#x2019; Lambda statistic and standardized coefficients are reported to see how important a given predictor was for the model. A lower Wilks&#x2019; Lambda corresponds to a stronger influence on the canonical classifier.</p>
+</sec>
+</sec>
+<sec id="s3">
+<title>Results</title>
+<p>As shown in <bold><xref rid="tbl1" ref-type="table">Table 1</xref></bold>, 7,539 total test cases for COVID-19 were conducted among 4,510 UK Biobank participants (69.6 &#x00B1; 8.8 years) between March 16<sup>th</sup> to May 19<sup>th</sup> 2020, either in outpatient or inpatient settings. There were 5,329 negative cases and 2,210 positive cases. Of the positive cases, there were 996 mild and 1,214 presumptively severe disease outcomes. Baseline data from 10-14 years ago (Mean = 11.22 years) was available for demographic, laboratory, biochemistry, and clinical indices. Similar data from 2020 was not available. A central theme of this report is examining prediction models for the so-called full sample, but also an entirely separate set of models for a sub-group of test cases with serology data (<bold><xref rid="tbl2" ref-type="table">Table 2</xref></bold>). <bold><xref rid="tbl1" ref-type="table">Table 1</xref></bold> indicates that the full cohort and serology sub-groups largely did not differ on most measures. A few significant differences were clinically unremarkable for the serology sub-cohort and well within the range of normal values, including lower pulse rate, several markers reflecting better kidney function, and lower total white blood cell count due to fewer lymphocytes.</p>
+<p>Next, each baseline variable was used to predict COVID-19 infection for a given test case. For context, model performance was judged by: 1) the AUC as a measure of probability, where 0.5 is at-chance prediction and 1.0 is perfect prediction; and 2) the geometric mean or g-mean as a threshold metric, with a higher percentage corresponding to greater likelihood of correctly identifying both true positives and true negatives. Among all participants (<bold><xref rid="tblS1" ref-type="table">Supplementary Table 1</xref></bold>), as expected, model fit was poor for individual predictors that loaded significantly (mean AUC=0.532; AUC range=0.517-0.551). For example, known risk factors included larger body composition indices (AUC=0.526-0.548; g-mean=16.2&#x0025;-29.6&#x0025;), older age (AUC=0.522; g-mean=38.8&#x0025;), and markers of dysmetabolism like higher hba1c &#x0025; (AUC=0.537; g-mean=13.3&#x0025;) and high diastolic blood pressure (AUC=0.519; g-mean=17.9&#x0025;).</p>
+<p>For the serology sub-group (<bold><xref rid="tblS2" ref-type="table">Supplementary Table 2</xref></bold>), several established risk factors that loaded had better overall fit (mean AUC=0.656, AUC range=0.601-0.731). Like the full sample, examples included larger body mass like fat-free mass (AUC=0.687; g-mean=65.0&#x0025;), hba1c &#x0025; (AUC=0.638; g-mean=52.8&#x0025;), and diastolic blood pressure (AUC=0.633; g-mean=55.2&#x0025;). Some unexpected factors included total protein (AUC=0.662; 65.8&#x0025;) and testosterone (AUC=0.731; g-mean=55.8&#x0025;). We then tested if antibody titers to antigens of 20 rare to common infectious pathogens could predict host immunity in 2020 to COVID-19. As shown in <bold><xref rid="tblS3" ref-type="table">Supplementary Table 3</xref></bold>, antibody titers to 15 antigens across 12 pathogens each performed as well on average as other non-serology predictors (mean AUC=0.653, AUC range=0.612-0.710). Specificity and sensitivity were notable for antibody levels to the pp150 Nter antigen to human cytomegalovirus (g-mean=61.0&#x0025;) and U14 to Human Herpes Virus-7 (g-mean=66.1&#x0025;), given their prevalence in the sample.</p>
+<p>Next, sets of similar predictors were used to gauge how well they collectively predicted COVID-19 infection, as listed in <bold><xref rid="tbl3" ref-type="table">Table 3</xref></bold> and shown using ROC curves in <bold><xref rid="fig1" ref-type="fig">Figure 1</xref></bold>. A stepwise model was also used to create a classifier that only included predictors where each provided unique predictive utility, and to minimize likelihood of overfitting models. For the full sample (<bold><xref rid="tbl3" ref-type="table">Table 3</xref></bold>, top row), sets of predictors including the stepwise model were able to identify COVID-19 negative and positive test cases up to 96.1&#x0025; and 23.8&#x0025; of the time respectively. <bold><xref rid="tblS4" ref-type="table">Supplementary Table 4</xref></bold> (top row) illustrates that the stepwise model included triglycerides, body mass, age, ethnicity, and other known risk factors for COVID-19. Importantly, for the serology sub-group (<bold><xref rid="tbl3" ref-type="table">Table 3</xref></bold>, bottom row), forced entry models showed worse performance compared to the same models among the full sample, except for the biochemistry set. This suggests that small sample size for the serology sub-group did not lead to model overfitting. While the forced entry serology model itself is likely overfitted, the stepwise model loaded 15 predictors and performed well (g-mean=0.920). As shown in <bold><xref rid="tblS4" ref-type="table">Supplementary Table 4</xref></bold> (bottom row), predictors that loaded in the stepwise model included antibody titers for antigens of several common pathogens (e.g., human cytomegalovirus, C. trachomatis), lipid markers, age, white and red cell counts, and testosterone. Due to potential concerns with model overfitting, the stepwise model was re-run with only predictors that had individually loaded significantly in forced entry models (<bold><xref rid="tblS2" ref-type="table">Supplementary Tables 2</xref> and <xref ref-type="table" rid="tblS3">3</xref></bold>). This stepwise model had 10 variables and achieved a g-mean of 85.4&#x0025;, suggesting that stepwise models were not overfitted.</p>
+<table-wrap id="tbl3" orientation="portrait" position="float">
+<label>Table 3.</label>
+<caption><title>Sets of predictors used to predict classification of COVID-19 test cases as negative or positive</title>
+<p>Area Under the Curve (AUC); Confidence Interval (CI); Geometric Mean (G-Mean). Non-parametric bootstrapping (1000 iterations, 95&#x0025; CI) was used for robust estimation. P values less than .05 were considered significant. &#x201C;Blue&#x201D; and &#x201C;white&#x201D; shading are used to distinguish between predictors that loaded for a given model. &#x002A;Due to several variables representing the same construct (i.e., being multicollinear), body composition consisted of: whole-body water mass; whole-body fat mass; whole-body non-fat mass (i.e., muscle, bone).</p></caption>
+<graphic xlink:href="20127092v3_tbl3.tif"/>
+</table-wrap>
+<fig id="fig1" position="float" fig-type="figure">
+<label>Figure 1.</label>
+<caption><title>ROC curves and model fit for COVID-19 infection risk and infection severity</title>
+<p>Receiver Operating Characteristics (ROC) curves illustrating the relative classifier performance of various sets of predictors. Outcomes of interest were COVID-19 infection risk and whether an infection was mild or severe. Two separate sets of analyses were done for the full tested sample and a sub-group of participants with serology data. Test statistics for predictors are provided in <xref rid="tbl3" ref-type="table">Tables 3</xref> and <xref rid="tbl4" ref-type="table">4</xref>.</p></caption>
+<graphic xlink:href="20127092v3_fig1.tif"/>
+</fig>
+<p>Separately, another set of analyses determined how each baseline predictor could predict which of the 2,210 positive COVID-19 cases had a mild or severe disease course. For context, 45&#x0025; and 55&#x0025; of test cases were mild or severe respectively. Among all positive test cases (<bold><xref rid="tblS5" ref-type="table">Supplementary Table 5</xref></bold>), significant predictors showed a trade-off between better sensitivity or specificity and were only modestly useful (AUC mean and range=0.536, 0.524-0.572). Similarly, for the serology sub-group, <bold><xref rid="tblS6" ref-type="table">Supplementary Table 6</xref></bold> shows that only alanine aminotransferase and neutrophil count significantly predicted disease severity. For serology data itself, <bold><xref rid="tblS7" ref-type="table">Supplementary Table 7</xref></bold> indicates that the only significant predictors were U14 antigen to human herpesvirus 7 (AUC=0.729; g-mean=0.600) and JC VP1 antigen to human JC polyomavirus (AUC=0.671; g-mean=0.591). <bold><xref rid="tbl4" ref-type="table">Table 4</xref></bold> shows the relative predictive value of groups of predictors for whether a COVID-19 infection would be severe. <bold><xref rid="fig1" ref-type="fig">Figure 1</xref></bold> shows the ROC curves for model fit. <bold><xref rid="tblS8" ref-type="table">Supplementary Table 8</xref></bold> illustrates that the stepwise model included only alanine aminotransferase, age in years, and monocyte count. For the serology sub-group, despite strong concerns about model overfitting, the AUC and g-mean were similarly modest compared to the full sample, except for the stepwise model that performed noticeably better (AUC=0.803; g-mean=0.724). As shown in <bold><xref rid="tblS8" ref-type="table">Supplementary Table 8</xref></bold>, this model had only 2 predictors: antibody response to two antigens for two diseases (HTLV-1 gag for HTLV-1 and JC VP1 for Human Polyomavirus JCV).</p>
+<table-wrap id="tbl4" orientation="portrait" position="float">
+<label>Table 4.</label>
+<caption><title>Sets of predictors used to predict classification of COVID-19 positive cases as mild or severe</title>
+<p>Area Under the Curve (AUC); Confidence Interval (CI); Geometric Mean (G-Mean). Non-parametric bootstrapping (1000 iterations, 95&#x0025; CI) was used for robust estimation. P values less than .05 were considered significant. &#x201C;Orange&#x201D; and &#x201C;white&#x201D; shading are used to distinguish between predictors that loaded for a given model. &#x002A;Due to several variables representing the same construct (i.e., being multicollinear), body composition consisted of: whole-body water mass; whole-body fat mass; whole-body non-fat mass (i.e., muscle, bone). &#x005E;= Due to the full serology panel of 44 antibody titers exceeding degrees of freedom, titers for 6 antigens were excluded for pathogens with the lowest estimated prevalence in the cohort (HIV, HCV, HTLV-1).</p></caption>
+<graphic xlink:href="20127092v3_tbl4.tif"/>
+</table-wrap>
+</sec>
+<sec id="s4">
+<title>Discussion</title>
+<p>The objectives of this study were to determine if baseline data from 2006-2010 could predict which older adults would develop COVID-19 in 2020, and if an infection was mild or presumptively severe due to being at hospital. In summary, using a permutation-based LDA approach, we developed separate risk profiles that did well at predicting test cases that were negative or positive (stepwise g-mean=92&#x0025;), and to some degree among positive test cases whether the infection was mild or severe (stepwise g-mean=72.4&#x0025;). Such profiles would require retrospective, routine self-report, blood test panels typically collected during annual medical wellness visits, and serology information for several antigens. As proof-of-principle that these profiles are sensible, we confirmed as others have noted that non-white ethnicity, low socioeconomic status, larger body mass, and alcohol use can increase infectious risk<sup><xref rid="c5" ref-type="bibr">5</xref></sup>.</p>
+<p>Our most novel finding was that antibody titers to past infections were strong predictors of COVID-19 infection and severity, both as a group and especially in concert with established risk factors. This &#x201C;virome&#x201D; may consist of beneficial and detrimental pathogens, or fine-grained efficacy of the immune system to clear certain pathogens, that change how the immune system responds to a persistent viral challenge like COVID-19<sup><xref rid="c10" ref-type="bibr">10</xref></sup>. For example, antibodies to human cytomegalovirus antigens were the strongest predictors of infection risk in our stepwise model. Older adults with prior infection show exhaustion of the na&#x00EF;ve T cell pool and fewer memory versus effector cells<sup><xref rid="c25" ref-type="bibr">25</xref></sup>. This may explain why monocyte count was one of the few variables to predict COVID-19 severity among all test cases in this study, as innate immunity must compensate for deficits in acquired immune function. For COVID-19 severity, antibody titers to the HTLV1 virus and human JC polyomavirus were the only predictors that loaded significantly in our stepwise model. While HTLV1 is rare, 57.5&#x0025; of at least the UK Biobank sample have antibody levels that suggest prior infection with the human JC polyomavirus. This virus can induce hemagglutination in type O blood cells<sup><xref rid="c26" ref-type="bibr">26</xref></sup>, which may in some way influence why this blood type is protective against COVID-19 infection.</p>
+<p>For other immunologic factors, as expected, mobilization of innate immunity was relevant to infection risk and severity. In particular, granulocytes (e.g., neutrophils, monocytes) loaded significantly in stepwise models for COVID-19 infection and severity, but not cytokines such as C-Reactive Protein. C-Reactive Protein has been cited as a strong risk factor for COVID-19<sup><xref rid="c27" ref-type="bibr">27</xref></sup>. However, this marker merely reflects signaling of the acute phase response due to systemic infection, and changes to granulocytes in circulation already reflect this response. Although lymphopenia and suppression of humoral immunity have been noted in COVID-19, lymphocyte cell count did not load in final stepwise models.</p>
+<p>We also confirmed and extended the importance of age, lipids, vascular health, and socioeconomic status, but while body mass was important it was not adiposity per se. Among mostly elderly adults in our UK Biobank sample, age was one of the few factors to impact both infection and severity risk. Perhaps in concert, lipoprotein metabolism changes with aging can induce hyperlipidemia, which is a risk factor for cardiovascular disease and may increase COVID-19 infection risk<sup><xref rid="c28" ref-type="bibr">28</xref></sup>. The lack of association with anthropometric or bioimpedance-derived fat mass was unexpected, whereas fat-free mass such as muscle and bone did load as a factor. We speculate that more bone mineral density and somatic muscle would reflect less cardiometabolic impairment and systemic inflammation, but mechanisms are unclear. Finally, levels of testosterone weakly loaded as a predictive factor for who would later develop COVID-19. Sex differences favoring COVID-19 infection in men are clear, bout andropause induces less testosterone production, which normally downregulates inflammation, and could increase COVID-19 susceptibility<sup><xref rid="c29" ref-type="bibr">29</xref></sup>.</p>
+<p>Several major limitations should be noted. The number of UK Biobank participants with COVID-19 and serology data is low, particularly for positive test cases. This could consequently lead to model overfitting or misestimation. Several steps were taken to guard against this problem, including feature reduction through LDA, bootstrapped parameter estimation to guard against parametric assumption violations, and several cross-validation steps to maximize robustness. We also rigorously tested each predictor or set of predictors in the main sample and serology sub-group, where we found that model fit was not overly biased in general despite sample size differences. Nonetheless, we recognize future work must use much larger sample sizes to verify the usefulness of serology data. Another limitation was that using test case data nested within a participant violates the assumption of independence, which can lead to gross misestimation. While we ameliorated this issue using permutation testing, other latent concerns with the data like type 2 error may be present. We also chose to use LDA over other machine learning algorithms, where LDA tends to provide more conservative estimates. This was intentional, because it is still largely unknown how risk factors alone or additively reflect overall risk for COVID-19 infection and disease severity. Finally, we only looked at the so called main effects of all predictors instead of complex interactions, such as darker skin, vitamin D levels, and COVID-19 infection risk. Such interactions were beyond the scope of this report, but may be promising avenues to explore in future studies.</p>
+</sec>
+<sec id="s5">
+<title>Conclusions</title>
+<p>In summary, this study systematically used retrospective data in a large community cohort to predict who would develop COVID-19 and if the disease course was presumptively severe. Despite baseline data having been collected 10-14 years ago, we achieved excellent to encouraging results by combining several sets of established and novel risk factors together. It is especially interesting that serological data performed as well as or better than other data types. Future work should leverage markers of host immunity to inform what may happen when the host is challenged by COVID-19.</p>
+</sec>
+</body>
+<back>
+<sec sec-type="data-availability">
+<title>Data Availability</title>
+<p>All data was downloaded from the UK Biobank, a data resource open to all bona fide researchers.</p>
+</sec>
+<sec id="s6">
+<title>Additional Information</title>
+<sec id="s6a">
+<title>Funding</title>
+<p>This research was conducted using the UK Biobank Resource under Application Number 25057. The study was funded by NIH AG047282 and AARGD-17-529552. No funding provider had any role in the conception, collection, execution, interpretation, or any other aspect of this work.</p>
+</sec>
+<sec id="s6b">
+<title>Competing Interests Statement</title>
+<p>The authors declare that they have no competing interests.</p>
+</sec>
+<sec id="s6c">
+<title>Author Contribution Statement</title>
+<p>AAW performed literature searches, created all figures and tables, formed the study design, analyzed and interpreted the data, and wrote the manuscript. SAW performed literature searches, helped form the study design, interpreted the data, and edited the manuscript. QW and CP managed most of data collection, interpreted the data, and edited the manuscript. BSK, SL, BL, TL, and AP managed part of data collection and interpreted the data. NB and TW originally acquired part of the data (serology) and interpreted the data.</p>
+</sec>
+<sec id="s6d">
+<title>Data Availability</title>
+<p>The data that support the findings of this study are available from the UK Biobank but restrictions apply to the availability of these data, which were used under license for the current study, and so are not publicly available. Data are however available from the authors upon reasonable request and with permission of UK Biobank. Permission is acquired through an application for data access to UK Biobank, <ext-link ext-link-type="uri" xlink:href="https://www.ukbiobank.ac.uk/register-apply/">https://www.ukbiobank.ac.uk/register-apply/</ext-link>.</p>
+</sec>
+<sec id="s6e">
+<title>Ethics Declarations</title>
+<p>Ethics approval for the UK Biobank study was obtained from the National Health Service Health Research Authority North West - Haydock Research Ethics Committee (16/NW/0274). All analyses were conducted in line with UK Biobank requirements.</p>
+</sec>
+</sec>
+<ref-list>
+<title>References</title>
+<ref id="c1"><label>1</label><mixed-citation publication-type="journal"><collab>Coronaviridae Study Group of the International Committee on Taxonomy of, V</collab>. <article-title>The species Severe acute respiratory syndrome-related coronavirus: classifying 2019-nCoV and naming it SARS-CoV-2</article-title>. <source>Nat Microbiol</source> <volume>5</volume>, <fpage>536</fpage>&#x2013;<lpage>544</lpage>, doi:<pub-id pub-id-type="doi">10.1038/s41564-020-0695-z</pub-id> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c2"><label>2</label><mixed-citation publication-type="other"><string-name><surname>Sattar</surname>, <given-names>N.</given-names></string-name>, <string-name><surname>McInnes</surname>, <given-names>I. B.</given-names></string-name> &#x0026; <string-name><surname>McMurray</surname>, <given-names>J. J. V.</given-names></string-name> <article-title>Obesity a Risk Factor for Severe COVID-19 Infection: Multiple Potential Mechanisms</article-title>. <source>Circulation</source>, doi:<pub-id pub-id-type="doi">10.1161/CIRCULATIONAHA.120.047659</pub-id> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c3"><label>3</label><mixed-citation publication-type="other"><string-name><surname>Simonnet</surname>, <given-names>A.</given-names></string-name> <etal>et al.</etal> <article-title>High prevalence of obesity in severe acute respiratory syndrome coronavirus-2 (SARS-CoV-2) requiring invasive mechanical ventilation</article-title>. <source>Obesity (Silver Spring)</source>, (doi:<pub-id pub-id-type="doi">10.1002/oby.22831</pub-id> <year>2020</year>).</mixed-citation></ref>
+<ref id="c4"><label>4</label><mixed-citation publication-type="journal"><string-name><surname>Zhou</surname>, <given-names>F.</given-names></string-name> <etal>et al.</etal> <article-title>Clinical course and risk factors for mortality of adult inpatients with COVID-19 in Wuhan, China: a retrospective cohort study</article-title>. <source>Lancet</source> <volume>395</volume>, <fpage>1054</fpage>&#x2013;<lpage>1062</lpage>, doi:<pub-id pub-id-type="doi">10.1016/S0140-6736(20)30566-3</pub-id> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c5"><label>5</label><mixed-citation publication-type="other"><string-name><surname>Patel</surname>, <given-names>A. P.</given-names></string-name>, <string-name><surname>Paranjpe</surname>, <given-names>M. D.</given-names></string-name>, <string-name><surname>Kathiresan</surname>, <given-names>N. P.</given-names></string-name>, <string-name><surname>Rivas</surname>, <given-names>M. A.</given-names></string-name> &#x0026; <string-name><surname>Khera</surname>, <given-names>A.V.</given-names></string-name> <article-title>Race, Socioeconomic Deprivation, and Hospitalization for COVID-19 in English participants of a National Biobank</article-title>. <source>medRxiv</source>, 2020.2004.2027.20082107, doi:<pub-id pub-id-type="doi">10.1101/2020.04.27.20082107</pub-id> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c6"><label>6</label><mixed-citation publication-type="other"><string-name><surname>Hamer</surname>, <given-names>M.</given-names></string-name>, <string-name><surname>Kivimaki</surname>, <given-names>M.</given-names></string-name>, <string-name><surname>Gale</surname>, <given-names>C. R.</given-names></string-name> &#x0026; <string-name><surname>David Batty</surname>, <given-names>G.</given-names></string-name> <article-title>Lifestyle risk factors, inflammatory mechanisms, and COVID-19 hospitalization: A community-based cohort study of 387,109 adults in UK</article-title>. <source>Brain Behav Immun</source>, doi:<pub-id pub-id-type="doi">10.1016/j.bbi.2020.05.059</pub-id> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c7"><label>7</label><mixed-citation publication-type="journal"><string-name><surname>Liu</surname>, <given-names>Y.</given-names></string-name> <etal>et al.</etal> <article-title>Viral dynamics in mild and severe cases of COVID-19</article-title>. <source>Lancet Infect Dis</source> <volume>20</volume>, <fpage>656</fpage>&#x2013;<lpage>657</lpage>, doi:<pub-id pub-id-type="doi">10.1016/S1473-3099(20)30232-2</pub-id> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c8"><label>8</label><mixed-citation publication-type="other"><string-name><surname>Qin</surname>, <given-names>C.</given-names></string-name> <etal>et al.</etal> <article-title>Dysregulation of immune response in patients with COVID-19 in Wuhan, China</article-title>. <source>Clin Infect Dis</source>, doi:<pub-id pub-id-type="doi">10.1093/cid/ciaa248</pub-id> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c9"><label>9</label><mixed-citation publication-type="journal"><string-name><surname>Li</surname>, <given-names>T.</given-names></string-name> <etal>et al.</etal> <article-title>Significant changes of peripheral T lymphocyte subsets in patients with severe acute respiratory syndrome</article-title>. <source>J Infect Dis</source> <volume>189</volume>, <fpage>648</fpage>&#x2013;<lpage>651</lpage>, doi:<pub-id pub-id-type="doi">10.1086/381535</pub-id> (<year>2004</year>).</mixed-citation></ref>
+<ref id="c10"><label>10</label><mixed-citation publication-type="journal"><string-name><surname>Moss</surname>, <given-names>P.</given-names></string-name> <article-title>&#x2018;The ancient and the new&#x2019;: is there an interaction between cytomegalovirus and SARS-CoV-2 infection?</article-title> <source>Immun Ageing</source> <volume>17</volume>, <fpage>14</fpage>, doi:<pub-id pub-id-type="doi">10.1186/s12979-020-00185-x</pub-id> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c11"><label>11</label><mixed-citation publication-type="journal"><string-name><surname>Chidrawar</surname>, <given-names>S.</given-names></string-name> <etal>et al.</etal> <article-title>Cytomegalovirus-seropositivity has a profound influence on the magnitude of major lymphoid subsets within healthy individuals</article-title>. <source>Clin Exp Immunol</source> <volume>155</volume>, <fpage>423</fpage>&#x2013;<lpage>432</lpage>, doi:<pub-id pub-id-type="doi">10.1111/j.1365-2249.2008.03785.x</pub-id> (<year>2009</year>).</mixed-citation></ref>
+<ref id="c12"><label>12</label><mixed-citation publication-type="journal"><string-name><surname>Sudlow</surname>, <given-names>C.</given-names></string-name> <etal>et al.</etal> <article-title>UK Biobank: An open access resource for identifying the causes of a wide range of complex diseases of middle and old age</article-title>. <source>PLOS Medicine</source> <volume>12</volume>, <fpage>e1001779</fpage>, doi:<pub-id pub-id-type="doi">10.1371/journal.pmed.1001779</pub-id> (<year>2015</year>).</mixed-citation></ref>
+<ref id="c13"><label>13</label><mixed-citation publication-type="other"><string-name><surname>Armstrong</surname>, <given-names>J.</given-names></string-name> <etal>et al.</etal> <source>Dynamic linkage of COVID-19 test results between Public Health England&#x2019;s Second Generation Surveillance System and UK Biobank.[Google Scholar]</source>. (<year>2020</year>).</mixed-citation></ref>
+<ref id="c14"><label>14</label><mixed-citation publication-type="other"><string-name><surname>Hilton</surname>, <given-names>B.</given-names></string-name> <etal>et al.</etal> <article-title>Incidence of Microbial Infections in English UK Biobank Participants: Comparison with the General Population</article-title>. <source>medRxiv</source>, 2020.2003.2018.20038281, doi:<pub-id pub-id-type="doi">10.1101/2020.03.18.20038281</pub-id> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c15"><label>15</label><mixed-citation publication-type="journal"><string-name><surname>Phillimore</surname>, <given-names>P.</given-names></string-name>, <string-name><surname>Beattie</surname>, <given-names>A.</given-names></string-name> &#x0026; <string-name><surname>Townsend</surname>, <given-names>P.</given-names></string-name> <article-title>Widening inequality of health in northern England, 1981-91</article-title>. <source>Bmj</source> <volume>308</volume>, <fpage>1125</fpage>&#x2013;<lpage>1128</lpage> (<year>1994</year>).</mixed-citation></ref>
+<ref id="c16"><label>16</label><mixed-citation publication-type="journal"><string-name><surname>Klinedinst</surname>, <given-names>B. S.</given-names></string-name> <etal>et al.</etal> <article-title>Aging-related changes in fluid intelligence, muscle and adipose mass, and sex-specific immunologic mediation: A longitudinal UK Biobank study</article-title>. <source>Brain Behav Immun</source> <volume>82</volume>, <fpage>396</fpage>&#x2013;<lpage>405</lpage>, doi:<pub-id pub-id-type="doi">10.1016/j.bbi.2019.09.008</pub-id> (<year>2019</year>).</mixed-citation></ref>
+<ref id="c17"><label>17</label><mixed-citation publication-type="journal"><string-name><surname>Kotler</surname>, <given-names>D. P.</given-names></string-name>, <string-name><surname>Burastero</surname>, <given-names>S.</given-names></string-name>, <string-name><surname>Wang</surname>, <given-names>J.</given-names></string-name> &#x0026; <string-name><surname>Pierson</surname>, <given-names>R. N.</given-names>, <suffix>Jr.</suffix></string-name> <article-title>Prediction of body cell mass, fat-free mass, and total body water with bioelectrical impedance analysis: effects of race, sex, and disease</article-title>. <source>Am J Clin Nutr</source> <volume>64</volume>, <fpage>489S</fpage>&#x2013;<lpage>497S</lpage>, doi:<pub-id pub-id-type="doi">10.1093/ajcn/64.3.489S</pub-id> (<year>1996</year>).</mixed-citation></ref>
+<ref id="c18"><label>18</label><mixed-citation publication-type="journal"><string-name><surname>Elliott</surname>, <given-names>P.</given-names></string-name> &#x0026; <string-name><surname>Peakman</surname>, <given-names>T. C.</given-names></string-name> <article-title>The UK Biobank sample handling and storage protocol for the collection, processing and archiving of human blood and urine</article-title>. <source>Int J Epidemiol</source> <volume>37</volume>, <fpage>234</fpage>&#x2013;<lpage>244</lpage>, doi:<pub-id pub-id-type="doi">10.1093/ije/dym276</pub-id> (<year>2008</year>).</mixed-citation></ref>
+<ref id="c19"><label>19</label><mixed-citation publication-type="journal"><string-name><surname>Waterboer</surname>, <given-names>T.</given-names></string-name>, <string-name><surname>Sehr</surname>, <given-names>P.</given-names></string-name> &#x0026; <string-name><surname>Pawlita</surname>, <given-names>M.</given-names></string-name> <article-title>Suppression of non-specific binding in serological Luminex assays</article-title>. <source>J Immunol Methods</source> <volume>309</volume>, <fpage>200</fpage>&#x2013;<lpage>204</lpage>, doi:<pub-id pub-id-type="doi">10.1016/j.jim.2005.11.008</pub-id> (<year>2006</year>).</mixed-citation></ref>
+<ref id="c20"><label>20</label><mixed-citation publication-type="book"><string-name><surname>Hastie</surname>, <given-names>T.</given-names></string-name>, <string-name><surname>Tibshirani</surname>, <given-names>R.</given-names></string-name> &#x0026; <string-name><surname>Friedman</surname>, <given-names>J.</given-names></string-name> <source>The elements of statistical learning: data mining, inference, and prediction</source>. (<publisher-name>Springer Science &#x0026; Business Media</publisher-name>, <year>2009</year>).</mixed-citation></ref>
+<ref id="c21"><label>21</label><mixed-citation publication-type="journal"><string-name><surname>Marron</surname>, <given-names>J. S.</given-names></string-name>, <string-name><surname>Todd</surname>, <given-names>M. J.</given-names></string-name> &#x0026; <string-name><surname>Ahn</surname>, <given-names>J.</given-names></string-name> <article-title>Distance-weighted discrimination</article-title>. <source>Journal of the American Statistical Association</source> <volume>102</volume>, <fpage>1267</fpage>&#x2013;<lpage>1271</lpage> (<year>2007</year>).</mixed-citation></ref>
+<ref id="c22"><label>22</label><mixed-citation publication-type="journal"><string-name><surname>Mundry</surname>, <given-names>R.</given-names></string-name> &#x0026; <string-name><surname>Sommer</surname>, <given-names>C.</given-names></string-name> <article-title>Discriminant function analysis with nonindependent data: consequences and an alternative</article-title>. <source>Animal Behaviour</source> <volume>74</volume>, <fpage>965</fpage>&#x2013;<lpage>976</lpage> (<year>2007</year>).</mixed-citation></ref>
+<ref id="c23"><label>23</label><mixed-citation publication-type="other"><string-name><surname>Hair Jr</surname>, <given-names>J. F.</given-names></string-name>, <string-name><surname>Anderson</surname>, <given-names>R. E.</given-names></string-name>, <string-name><surname>Tatham</surname>, <given-names>R. L.</given-names></string-name> &#x0026; <string-name><surname>Black</surname>, <given-names>C.</given-names></string-name> <article-title>Multivariate data analysis with readings</article-title>. (<source>Prentice Hall</source>, <year>1995</year>).</mixed-citation></ref>
+<ref id="c24"><label>24</label><mixed-citation publication-type="book"><string-name><surname>Efron</surname>, <given-names>B.</given-names></string-name> in <source>Breakthroughs in statistics</source> <fpage>569</fpage>&#x2013;<lpage>593</lpage> (<publisher-name>Springer</publisher-name>, <year>1992</year>).</mixed-citation></ref>
+<ref id="c25"><label>25</label><mixed-citation publication-type="journal"><string-name><surname>Weinberger</surname>, <given-names>B.</given-names></string-name> <etal>et al.</etal> <article-title>Healthy aging and latent infection with CMV lead to distinct changes in CD8&#x002B; and CD4&#x002B; T-cell subsets in the elderly</article-title>. <source>Hum Immunol</source> <volume>68</volume>, <fpage>86</fpage>&#x2013;<lpage>90</lpage>, doi:<pub-id pub-id-type="doi">10.1016/j.humimm.2006.10.019</pub-id> (<year>2007</year>).</mixed-citation></ref>
+<ref id="c26"><label>26</label><mixed-citation publication-type="journal"><string-name><surname>Osborn</surname>, <given-names>J. E.</given-names></string-name> <etal>et al.</etal> <article-title>Comparison of JC and BK human papovaviruses with simian virus 40: restriction endonuclease digestion and gel electrophoresis of resultant fragments</article-title>. <source>Journal of Virology</source> <volume>13</volume>, <fpage>614</fpage>&#x2013;<lpage>622</lpage> (<year>1974</year>).</mixed-citation></ref>
+<ref id="c27"><label>27</label><mixed-citation publication-type="journal"><string-name><surname>Liu</surname>, <given-names>W.</given-names></string-name> <etal>et al.</etal> <article-title>Analysis of factors associated with disease outcomes in hospitalized patients with 2019 novel coronavirus disease</article-title>. <source>Chin Med J (Engl)</source> <volume>133</volume>, <fpage>1032</fpage>&#x2013;<lpage>1038</lpage>, doi:<pub-id pub-id-type="doi">10.1097/CM9.0000000000000775</pub-id> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c28"><label>28</label><mixed-citation publication-type="journal"><string-name><surname>Wang</surname>, <given-names>D.</given-names></string-name> <etal>et al.</etal> <article-title>Clinical characteristics of 138 hospitalized patients with 2019 novel coronavirus&#x2013;infected pneumonia in Wuhan, China</article-title>. <source>Jama</source> <volume>323</volume>, <fpage>1061</fpage>&#x2013;<lpage>1069</lpage> (<year>2020</year>).</mixed-citation></ref>
+<ref id="c29"><label>29</label><mixed-citation publication-type="journal"><string-name><surname>Maggio</surname>, <given-names>M.</given-names></string-name> <etal>et al.</etal> <article-title>The relationship between testosterone and molecular markers of inflammation in older men</article-title>. <source>J Endocrinol Invest</source> <volume>28</volume>, <fpage>116</fpage>&#x2013;<lpage>119</lpage> (<year>2005</year>).</mixed-citation></ref>
+<ref id="c30"><label>30</label><mixed-citation publication-type="journal"><string-name><surname>Qiao</surname>, <given-names>Z.</given-names></string-name>, <string-name><surname>Zhou</surname>, <given-names>L.</given-names></string-name> &#x0026; <string-name><surname>Huang</surname>, <given-names>J. Z.</given-names></string-name> <article-title>Sparse Linear Discriminant Analysis with Applications to High Dimensional Low Sample Size Data</article-title>. <source>International Journal of Applied Mathematics</source> <volume>39</volume> (<year>2009</year>).</mixed-citation></ref>
+<ref id="c31"><label>31</label><mixed-citation publication-type="journal"><string-name><surname>Rausch</surname>, <given-names>J. R.</given-names></string-name> &#x0026; <string-name><surname>Kelley</surname>, <given-names>K.</given-names></string-name> <article-title>A comparison of linear and mixture models for discriminant analysis under nonnormality</article-title>. <source>Behavior Research Methods</source> <volume>41</volume>, <fpage>85</fpage>&#x2013;<lpage>98</lpage> (<year>2009</year>).</mixed-citation></ref>
+<ref id="c32"><label>32</label><mixed-citation publication-type="journal"><string-name><surname>Pohar</surname>, <given-names>M.</given-names></string-name>, <string-name><surname>Blas</surname>, <given-names>M.</given-names></string-name> &#x0026; <string-name><surname>Turk</surname>, <given-names>S.</given-names></string-name> <article-title>Comparison of logistic regression and linear discriminant analysis: a simulation study</article-title>. <source>Metodoloski zvezki</source> <volume>1</volume>, <fpage>143</fpage> (<year>2004</year>).</mixed-citation></ref>
+<ref id="c33"><label>33</label><mixed-citation publication-type="other"><string-name><surname>Ye</surname>, <given-names>J.</given-names></string-name> <etal>et al.</etal> <source>in Proceedings of the 15th ACM international conference on Information and knowledge management</source>. <fpage>532</fpage>&#x2013;<lpage>539</lpage>.</mixed-citation></ref>
+</ref-list>
+<sec id="s7">
+<title>Supplemental Text 1</title>
+<p>To reiterate, the main objectives of this report are to use Linear Discriminant Analysis (LDA) for probabilistic determination via na&#x00EF;ve Bayesian classification of: 1) a two-class grouping defined as a positive vs. negative COVID-19 test case; and 2) a two-class grouping nested within positive COVID-19 tests, defined as a test case occurring in a hospital vs. non-hospital setting. For positive tests, these settings are considered as proxies for mild vs. severe COVID-19 disease status. Because two or more test cases could be nested within a given participant, this would normally violate independence and potentially invalidate results. While one could use a single random test case per participant, this reduces sample size and does not represent real world data and within-subject variability (e.g., changes in COVID-19 status or infection severity). Thus, for estimation robust to non-independence, we used Mundry and Sommer&#x2019;s permuted LDA approach<sup><xref rid="c22" ref-type="bibr">22</xref></sup>. The unit of randomization across participants was a grouping of all test cases originally nested in a given participant. The null hypothesis was that a given LDA model with randomized data would not perform better than the original non-randomized data in 95&#x0025; of permutations. As recommended, 1,000 permutations were run for each model using macros provided by the authors and Python scripting for automation. To ensure that models were stable and generalizable, we used a typical &#x201C;holdout&#x201D; method of 70&#x0025; and 30&#x0025; respectively for the training and test samples<sup><xref rid="c23" ref-type="bibr">23</xref></sup>.</p>
+<p>As discussed in the main text, forced entry models were first conducted for each predictor, and then among sets of similar predictors (e.g., demographics, vital signs). It was known from the outset that model overfitting would likely occur when a predictor set had dozens of features (e.g., biochemistry). This procedure was done for two reasons: 1) to show clinicians, researchers, and policymakers how a set of common features would discriminate COVID-19 groups in ideal circumstances, where in some cases model overfit is frankly likely; and 2) to contrast such models with the comparable or superior performance of stepwise models that had substantial feature reduction and enough n &#x003E; p that model overfit was guarded against.</p>
+<p>We now explain why LDA was used. Foremost, prediction models derived using LDA are straightforward to interpret by a general audience, which is appropriate for the journal in question. For example, the Wilks&#x2019; Lambda statistic allows a clear interpretation for how well a given predictor distinguishes between classes and its directionality (e.g., higher age in years predicts increased likelihood of positive COVID-19 classification).</p>
+<p>Equally important, LDA creates models that maximally separate classes of interest, where a new observation&#x2019;s data can be used to determine which class that observation would belong in. Since it is of central importance to have equally valid diagnostic assessment for who is and is not at risk for COVID-19 or if a positive would have a mild or severe infection, LDA is most appropriate. As a generative, supervised learning classification technique, LDA is also best used in complex datasets with high dimensionality composed of a few to hundreds of features per data category, where it can remove most redundant or dependent features that do not maximize model fit. Reducing the feature set size reduces the risk of model overfitting<sup><xref rid="c20" ref-type="bibr">20</xref>,<xref rid="c21" ref-type="bibr">21</xref></sup>. This procedure minimizes the High Dimensional, Low Sample Size (i.e., p&#x003E;&#x003E;N, or &#x201C;small <italic>n</italic>, big <italic>p</italic>&#x201D;) problem<sup><xref rid="c20" ref-type="bibr">20</xref></sup> by reducing the likelihood of the within-class covariance matrix approaching singularity<sup><xref rid="c30" ref-type="bibr">30</xref></sup> and leading to instability of parameter estimation.</p>
+<p>LDA has several key assumptions that we wish to address. LDA is relatively robust to overfitting provided there is a relative lack of outliers, multivariate normality and lack of multicollinearity, and independence of data values between participants. To begin, UK Biobank removes extreme values during data quality control before posting datasets to their data showcase<sup><xref rid="c12" ref-type="bibr">12</xref></sup>. We further log-transformed all quantitative variables to normalize distributions and &#x201C;bring in&#x201D; outliers defined as data points &#x003E;3SD from the mean. As described in the main text, we also removed biochemistry variables that were multicollinear (e.g., direct vs. total bilirubin). While some antigens of the same pathogen approached multicollinearity, removing them from feature selection led to identical results and thus they were kept in. Participant-level data was not dependent on data from other participants. To be clear, however, multiple observations were nested within a given participant and would violate independence. Because the permutation LDA testing randomizes which participants have a group of one to several COVID-19 test cases, however, these models are robust to non-independence.</p>
+<p>While other machine learning techniques are also appropriate for classification, we discuss why they were not used. Regarding logistic regression, this technique is attractive because it has no distribution assumptions. However, it assumes observations are independent. This does not occur with COVID-19 testing, in which a participant will often have multiple test cases. Logistic regression also requires a large numbers of observations to provide reliable estimates. Finally, it does not produce robust models for well-separate types of classes. As there are very clear immunologic differences that determine if someone has or does not have COVID-19, and a clear demarcation between mild vs. severe symptom presentation, we believe logistic regression model estimations might be inflated and thus less accurate. Finally, despite their methodological differences, LDA and logistic regression may perform the same with real data<sup><xref rid="c31" ref-type="bibr">31</xref></sup>, where LDA may be more conservative and was one of our goals for this proof-of-principle study.</p>
+<p>More complex algorithms vs. LDA were also not considered due to feature complexity, the need for transparent model estimates, and sample size. First, in the dataset there are many features present for biochemistry markers, antibody load to specific antigens, and to a lesser degree immune factors. Data reduction is therefore important to determine which features are most useful for COVID-19 data and should receive attention. By contrast, clustering methods are not suitable because the dimensionality space is too high and model fit is likely to be poor. For newer machine learning techniques, such as deep learning, it is often unclear what set of features are selected or their relative contribution when a given prediction is made. This is unacceptable for predicting COVID-19 infection or severity risk. For researchers, it is unknown how various risk factors converge to affect risk and this information is necessary to better understand underlying mechanisms. In population health or the clinic, certain features have prohibitive time or cost constraints (e.g., body compartment imaging; ordering one versus multiple antigen tests). More importantly, it is critical for clinicians, policy makers, or other stakeholders to point out which exact features led or would lead to a predicted outcome. Finally, deep learning, support vector machines (SVM), and similar approaches also require much larger sample sizes to train and adapt a classifier to produce robust estimates. By comparison, our dataset only had several thousand testing datapoints in the &#x201C;full&#x201D; sample and just over one-hundred in the sub-group that had serological data.</p>
+<p>We recognize that LDA has several limitations and used non-parametric estimation to minimize these issues. To begin, using simulation data, LDA performs comparably to logistic regression when predictor distributions are normal or near normal, but has worse fit when there are clear normality violations<sup><xref rid="c32" ref-type="bibr">32</xref></sup>. While we log-transformed quantitative measures with appreciable skewness (&#x003E;3SD), normality nonetheless remained a concern, particularly for the serology sub-group that had 124 observations. To reduce potential problems, bootstrapping<sup><xref rid="c24" ref-type="bibr">24</xref></sup> was used (95&#x0025; CI, 1000 iterations) to estimate model coefficients. This allows unbiased estimation of generalized absolute error, taking into account potential model overfit by substantially varying training and test sets from the selected sample. Nevertheless, with the serology sub-group, the small <italic>n</italic>, big <italic>p</italic> problem may still be a concern. Regularized LDA has been a popular choice to overcome this issue of within-class covariance singularity, where cross-validation presents a reasonable solution<sup><xref rid="c33" ref-type="bibr">33</xref></sup>. Due to computation problems in tandem with bootstrapping, we used a simple &#x201C;leave-one-out&#x201D; approach with bootstrap estimates.</p>
+<table-wrap id="tblS1" orientation="portrait" position="float">
+<label>Supplementary Table 1.</label>
+<caption><title>Isolated effect of each non-serology predictor on COVID-19 risk among the full sample</title>
+</caption>
+<graphic xlink:href="20127092v3_tblS1.tif"/>
+<graphic xlink:href="20127092v3_tblS1a.tif"/>
+</table-wrap>
+<table-wrap id="tblS2" orientation="portrait" position="float">
+<label>Supplementary Table 2.</label>
+<caption><title>Isolated effect of each predictor on COVID-19 risk among test cases with serology data</title>
+</caption>
+<graphic xlink:href="20127092v3_tblS2.tif"/>
+<graphic xlink:href="20127092v3_tblS2a.tif"/>
+</table-wrap>
+<table-wrap id="tblS3" orientation="portrait" position="float">
+<label>Supplementary Table 3.</label>
+<caption><title>Isolated effect of each baseline antibody titer on predicting current COVID-19 infection risk</title>
+</caption>
+<graphic xlink:href="20127092v3_tblS3.tif"/>
+<graphic xlink:href="20127092v3_tblS3a.tif"/>
+</table-wrap>
+<table-wrap id="tblS4" orientation="portrait" position="float">
+<label>Supplementary Table 4.</label>
+<caption><title>Predictors that loaded into the stepwise models for COVID-19 infection risk</title>
+</caption>
+<graphic xlink:href="20127092v3_tblS4.tif"/>
+</table-wrap>
+<table-wrap id="tblS5" orientation="portrait" position="float">
+<label>Supplementary Table 5.</label>
+<caption><title>Isolated effect of each predictor on COVID-19 severity among the full sample</title>
+</caption>
+<graphic xlink:href="20127092v3_tblS5.tif"/>
+<graphic xlink:href="20127092v3_tblS5a.tif"/>
+</table-wrap>
+<table-wrap id="tblS6" orientation="portrait" position="float">
+<label>Supplementary Table 6.</label>
+<caption><title>Isolated effect of each predictor on COVID-19 severity for the serology sub-group</title>
+</caption>
+<graphic xlink:href="20127092v3_tblS6.tif"/>
+<graphic xlink:href="20127092v3_tblS6a.tif"/>
+</table-wrap>
+<table-wrap id="tblS7" orientation="portrait" position="float">
+<label>Supplementary Table 7.</label>
+<caption><title>Isolated effect of each baseline antibody titer on predicting current COVID-19 infection severity</title>
+</caption>
+<graphic xlink:href="20127092v3_tblS7.tif"/>
+<graphic xlink:href="20127092v3_tblS7a.tif"/>
+</table-wrap>
+<table-wrap id="tblS8" orientation="portrait" position="float">
+<label>Supplementary Table 8.</label>
+<caption><title>Predictors that loaded into the stepwise models for COVID-19 severity risk</title>
+</caption>
+<graphic xlink:href="20127092v3_tblS8.tif"/>
+</table-wrap>
+</sec>
+</back>
+</article>

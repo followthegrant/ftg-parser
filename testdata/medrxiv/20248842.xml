@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.2d1 20170631//EN" "JATS-archivearticle1.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" article-type="article" dtd-version="1.2d1" specific-use="production" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="publisher-id">MEDRXIV</journal-id>
+<journal-title-group>
+<journal-title>medRxiv</journal-title>
+<abbrev-journal-title abbrev-type="publisher">medRxiv</abbrev-journal-title>
+</journal-title-group>
+<publisher>
+<publisher-name>Cold Spring Harbor Laboratory</publisher-name>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1101/2020.12.24.20248842</article-id>
+<article-version>1.1</article-version>
+<article-categories>
+<subj-group subj-group-type="hwp-journal-coll">
+<subject>Infectious Diseases (except HIV/AIDS)</subject>
+</subj-group>
+</article-categories>
+<title-group>
+<article-title>Simulating Retarded SEIRS model for COVID-19: will the second epidemic happen?</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" corresp="yes">
+<name><surname>Mohammad</surname><given-names>Hamid Pour</given-names></name>
+<xref ref-type="corresp" rid="cor1">&#x002A;</xref>
+</contrib>
+<aff id="a1"><institution>Physics Department, Sharif University of Technology</institution>, <country>Iran</country>, <email>hamid.pourmohammad@physics.sharif.edu</email></aff>
+</contrib-group>
+<author-notes>
+<corresp id="cor1"><label>&#x002A;</label>Corresponding author; email: <email>hamid.pourmohammad@physics.sharif.edu</email></corresp>
+</author-notes>
+<pub-date pub-type="epub">
+<year>2020</year>
+</pub-date>
+<elocation-id>2020.12.24.20248842</elocation-id>
+<history>
+<date date-type="received">
+<day>24</day>
+<month>12</month>
+<year>2020</year>
+</date>
+<date date-type="rev-recd">
+<day>24</day>
+<month>12</month>
+<year>2020</year>
+</date>
+<date date-type="accepted">
+<day>30</day>
+<month>12</month>
+<year>2020</year>
+</date>
+</history>
+<permissions>
+<copyright-statement>&#x00A9; 2020, Posted by Cold Spring Harbor Laboratory</copyright-statement>
+<copyright-year>2020</copyright-year>
+<license license-type="creative-commons" xlink:href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><license-p>This pre-print is available under a Creative Commons License (Attribution-NonCommercial-NoDerivs 4.0 International), CC BY-NC-ND 4.0, as described at <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by-nc-nd/4.0/">http://creativecommons.org/licenses/by-nc-nd/4.0/</ext-link></license-p></license>
+</permissions>
+<self-uri xlink:href="20248842.pdf" content-type="pdf" xlink:role="full-text"/>
+<abstract>
+<title>Abstract</title>
+<p>In this paper, we want to simulate the COVID-19 epidemic according to the Retarded SEIRS model. One of the main questions in the human mind is whether the COVID-19 epidemic will happen again. Therefore, a criterion must be set for the occurrence or non-occurrence of the disease. With the Retarded SEIRS model and this criterion, we can predict whether the Covid-19 will re-emerge. So far, a large number of researches that have been presented in scientific groups or communities have been based on the SIR or SEIR model. But we assume that each recovered individual is immune to the disease for a limited time, and then will be susceptible again. As we know, this assumption was also true for SARS.</p>
+</abstract>
+<kwd-group kwd-group-type="author">
+<title>Keywords</title>
+<kwd>Coronavirus disease 2019</kwd>
+<kwd>Temporary immunity</kwd>
+<kwd>Occurrence of re-epidemic</kwd>
+<kwd>Delay-based modeling</kwd>
+<kwd>Pandemic coronavirus simulation</kwd>
+</kwd-group>
+<counts>
+<page-count count="6"/>
+</counts>
+</article-meta>
+<notes>
+<notes notes-type="competing-interest-statement">
+<title>Competing Interest Statement</title><p>The authors have declared no competing interest.</p></notes>
+<notes notes-type="financial-disclosure">
+<title>Funding Statement</title><p>No funding was received for this work.</p></notes>
+<notes notes-type="disclosures">
+<title>Author Declarations</title><p>I confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.</p><p>Yes</p><p>The details of the IRB/oversight body that provided approval or exemption for the research described are given below:</p><p>The research is based on simulating the epidemic of COVID-19; no IRB/oversight body needed.</p><p>All necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived.</p><p>Yes</p><p>I understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).</p><p>Yes</p><p>I have followed all appropriate research reporting guidelines and uploaded the relevant EQUATOR Network research reporting checklist(s) and other pertinent material as supplementary files, if applicable.</p><p>Yes</p></notes>
+</notes>
+</front>
+<body>
+<sec id="s1">
+<label>1.</label>
+<title>Introduction</title>
+<p>From time immemorial until now, various diseases have threatened the human race, the most influential of which in recent decades is COVID-19. The effects of this disease have been extended to economic and political fields. Since COVID-19 can spread significantly in the world, we focus on studying its recurrence after the first pandemic. Various models have been studied for this disease, the most important of which are <italic>SEIR</italic> and <italic>SIR</italic> But in fact, the question that arises here is whether it is possible for the COVID-19 to become re-epidemic. The answer to this question certainly depends on the model that COVID-19 follows.</p>
+<p>In general, if a person is patient with a disease, three conditions may occur after recovery:</p>
+<list list-type="order">
+<list-item><p>Immediately after recovery, he/she is prone to become patient;</p></list-item>
+<list-item><p>He/she is immune to the disease for a limited time after recovery, and after that time he/she will be prone to be patient again;</p></list-item>
+<list-item><p>Once he/she recovers, he/she will have lifelong immunity to the disease and will never be paatient.</p></list-item>
+</list>
+<p>For example, a child can get the tetanus vaccine and be immune to the disease for a long time, but over the years, that immunity wears off and he/she has to get the vaccine again. Many adult immunization schedules also suggest that the tetanus and diphtheria vaccine, called <italic>Td vaccine</italic>, be given every 10 years. It should be noted that research shows this period of time can be significantly corrected [<xref ref-type="bibr" rid="c1">1</xref>]. The problem is whether such a question can also exist for the immunity of the COVID-19.</p>
+<p>The details of this disease are still unknown and the related questions can hardly be answered. On the other hand, it is not logical for human beings to wait and find the answer to this question in the future, based on experience. Because today, possible events can be obtained through various simulations. We want to obtain the condition for the recurrence of COVID-19 epidemic through computer simulation. The model we want to use is called <italic>Retarded SEIRS</italic>, and we believe that this model is more realistic than conventional <italic>SEIRS</italic> models. Here, after studing the parameters and simulating the model, we calculate the minimum value required for the temporary immunity duration of COVID-19, to prevent the occurrence of the second epidemic.</p>
+</sec>
+<sec id="s2">
+<label>2.</label>
+<title>Retarded SEIRS model description</title>
+<p>When a person becomes ill with COVID-19 disease, he/she will either die or recover. And if he/she recovers, one of the three above conditions will occur. So far, studies on conditions 1 and 3 have been performed. Therefore, we put our focus on the second one. To examine this condition, we assume that the recovered individuals lose their immunity over a period of time <italic>T</italic> and become fully susceptible to disease. One of the most important questions is, if we make such a presumption for the spread of the disease, then how far are we from the re- emergence of COVID-19?</p>
+<p>To model this phenomenon, We first divide people into four categories: susceptible, exposed, infected, and recovered. Because a significant number of researches (such as <italic>Yang et al</italic>. (2020) and <italic>Lopez and Rodo</italic> (2020)) that have been proposed for this disease, have been based on <italic>SEI R</italic> model. However, in this study, it should be considered that the recovered individuals return to the susceptible category (<italic>S</italic>) after the time duration <italic>T</italic> Therefore, according to the sequence of different categories, this model can be called <italic>SEIRS</italic> for short. But since we have not used conventional methods to transfer individuals from recovered (<italic>R</italic>) to susceptible (<italic>S</italic>), we have called it <italic>Retarded SEIRS</italic> model. Because we are exactly using the time latency, not transfer rate-based methods. To examine the changes of categories in the population over time, the dynamic equation for each category must be written. It is clear that the change in the proportion of each category can happen in two ways: either some individuals in a category leave the category and go to the next category, or some individuals of a category die or born. With these interpretations, we have assumed the dynamic equations for categories as <xref ref-type="disp-formula" rid="eqn1">equations 1</xref> to <xref ref-type="disp-formula" rid="eqn4">4</xref>:
+<disp-formula id="eqn1">
+<alternatives><graphic xlink:href="20248842v1_eqn1.gif"/></alternatives>
+</disp-formula>
+<disp-formula id="eqn2">
+<alternatives><graphic xlink:href="20248842v1_eqn2.gif"/></alternatives>
+</disp-formula>
+<disp-formula id="eqn3">
+<alternatives><graphic xlink:href="20248842v1_eqn3.gif"/></alternatives>
+</disp-formula>
+<disp-formula id="eqn4">
+<alternatives><graphic xlink:href="20248842v1_eqn4.gif"/></alternatives>
+</disp-formula>
+In <xref ref-type="disp-formula" rid="eqn1">equation 1</xref>, the term related to the births of <italic>S</italic> the <italic>R</italic> and categories is shown as <italic>&#x03BD;</italic> (<italic>S</italic> &#x002B; <italic>R</italic>) <italic>&#x03BD;</italic> so that is the birth rate; in other words, even if a person is born in <italic>R</italic> category, he/she will be considered susceptible to the disease. The second term in <xref ref-type="disp-formula" rid="eqn1">equation 1</xref> (ie, <italic>&#x03B3;</italic> [1 &#x2212; <italic>&#x03BC;</italic>]<sup><italic>T</italic></sup> <italic>I</italic> (<italic>t</italic> &#x2212; <italic>T</italic>) <italic>H</italic> (<italic>t</italic> &#x2212; <italic>T</italic>)) refers to recovered individuals who have returned to the category of susceptible individuals after the duration <italic>T</italic> has elapsed since their recovery. In other words, this term is subtracted from <xref ref-type="disp-formula" rid="eqn4">equation 4</xref> and added to <xref ref-type="disp-formula" rid="eqn1">equation 1</xref>. The explanation of this term is given in detail in the description of <xref ref-type="disp-formula" rid="eqn4">equation 4</xref>. Parameter <italic>T</italic> will be very important in this model, as it expresses the duration of temporary immunity of each individual after getting recovered. The third sentence is &#x2212;<italic>&#x03B2;</italic><sub>1</sub> <italic>SI</italic>, which indicates the transmission of individuals from to with the rate <italic>&#x03B2;</italic><sub>1</sub>, due to exposure of individuals to <italic>I</italic> Also, in the fourth term, individuals will die at the rate <italic>&#x03BC;</italic>.</p>
+<p>In <xref ref-type="disp-formula" rid="eqn2">equation 2</xref>, it can be seen that the birth of infans in the category <italic>E</italic> will occur at the rate and as the form <italic>vE</italic>. The second term in this equation states <italic>S</italic> individuals that have been exposed to <italic>I</italic>, so they will be added to <italic>E</italic> category as <italic>&#x03B2;</italic><sub>1</sub> <italic>S I</italic>. Then in term &#x2212;<italic>&#x03B2;</italic><sub>2</sub> <italic>E</italic>, these individuals enter the infected category at <italic>&#x03B2;</italic><sub>2</sub> rate from <italic>E</italic> category. To be more precise, this term is related to the departure of <italic>E</italic> individuals from the latent period of the disease and their entry into the infected category. The last term, like other categories, indicates the natural death of individuals.</p>
+<p>Now it will not be difficult to interpret <xref ref-type="disp-formula" rid="eqn3">equation 3</xref>. Term <italic>vI</italic> states that the birth of each infant in the infected category means that the infant is infected too. We have not seen this to be true yet, although it seems very reasonable (similarly, we assumed that the share of births in category <italic>E</italic> would be added to <italic>E</italic>). The description of the second term is also given in the paragraph above; but the third term (&#x2212; <italic>&#x03B3; I</italic>) is about infected recovering at <italic>&#x03B3;</italic> rate and entering <italic>R</italic> category. Although we emphasize that a number of infected individuals will lose their lives; these individuals, whose share is included in the fourth term (ie &#x2212; <italic>ml</italic>), die at rate and simply because of COVID-19.</p>
+<p><xref ref-type="disp-formula" rid="eqn4">Equation 4</xref> is a very basic equation in this model. Till now, almost all transfers between categories have been controlled by rates (except for the second term in the first equation, which we are going to explain here). In the first term (<italic>&#x03B3; I</italic>) we see that infected individuals have entered <italic>R</italic> category at &#x03B3; rate. But the second term is written in a way independent of the rates. Being independent of the transition rate means that the rate <inline-formula><alternatives><inline-graphic xlink:href="20248842v1_inline1.gif"/></alternatives></inline-formula> will not be used to transfer individuals from <italic>R</italic> to <italic>S</italic> As mentioned, the second term in <xref ref-type="disp-formula" rid="eqn4">equation 4</xref>&#x2014;ie, &#x2212; <italic>&#x03B3;</italic> [1 &#x2212; <italic>&#x03BC;</italic>]<sup><italic>T</italic></sup> <italic>I</italic> (<italic>t</italic>&#x2212; <italic>T</italic>) <italic>H</italic> (<italic>t</italic> &#x2212; <italic>T</italic>)&#x2014;refers to recovered individuals who, after passing the duration <italic>T</italic> from the moment of their recovery, have returned to the category of susceptible individuals. These are the infected individuals who were excluded from <italic>I</italic> category at time <italic>t</italic> &#x2212; <italic>T</italic> and entered R category at the rate <italic>&#x03B3;</italic>. Also, the presence of Heaviside function H guarantees the transition after the duration <italic>T</italic>. For this reason, the share of these individuals at the moment <italic>t</italic> is subtracted from <xref ref-type="disp-formula" rid="eqn4">equation 4</xref> and added to <xref ref-type="disp-formula" rid="eqn1">equation 1</xref>. The term [1 &#x2212; <italic>&#x03BC;</italic>]<sup><italic>T</italic></sup> may sound a little unfamiliar, but note that some of these recovered individuals will die during the duration <italic>T</italic>, due to the natural death rate <italic>&#x03BC;</italic> per unit time. Therefore, only [1 &#x2212; <italic>&#x03BC;</italic>]<sup><italic>T</italic></sup> fraction of the initial number of these individuals will be alive. We must note that 1 and <italic>&#x03BC;</italic> have the same dimension. In this model, there is an important difference compared to conventional <italic>SEIRS</italic> models; in conventional models, there is a rate for transferring individuals from <italic>R</italic> to <italic>S</italic>, which is basically the same as <inline-formula><alternatives><inline-graphic xlink:href="20248842v1_inline2.gif"/></alternatives></inline-formula>. Recovered will then enter the category of the susceptible with the term <inline-formula><alternatives><inline-graphic xlink:href="20248842v1_inline3.gif"/></alternatives></inline-formula>. But we believe that this will have unrealistic consequence. Note that <italic>T</italic> is much larger than the other time durations of COVID-19 in these equations&#x2014;such as latent period, recovery period, etc. We also know that after the outbreak or even during it, a significant portion of the population falls into the R category. In fact, it is clear that as R goes, so doeS <inline-formula><alternatives><inline-graphic xlink:href="20248842v1_inline4.gif"/></alternatives></inline-formula> term, and so a flood of recovered individuals will flow to the susceptible category. After R reaches its maximum value, this flood also reaches its maximum and then will decrease. But This event is completely unrealistic. Because we expect that even if a significant number of infected enter R category, they have to wait for their temporary immunity T to expire, and then enter S category. however, in conventional <italic>SEIRS</italic> models, as soon as these individuals enter R, the flow of them to the S will be at its maximum. So we explicitly suggest using &#x2212; <italic>&#x03B3;</italic> [1 &#x2212; <italic>&#x03BC;</italic>]<sup><italic>T</italic></sup> <italic>I</italic> (<italic>t</italic> &#x2212; <italic>T</italic>) <italic>H</italic> (<italic>t</italic> &#x2212; <italic>T</italic>) term instead of the <inline-formula><alternatives><inline-graphic xlink:href="20248842v1_inline5.gif"/></alternatives></inline-formula>. Such corrections can be applied to the other terms&#x2014;although we did not, but it is better to correct them to make the model more realistic. We also note that the nature of &#x201C;temporary immunity&#x201D; is well considered in this method. But this was not the case with conventional <italic>SEIRS</italic> models.</p>
+</sec>
+<sec id="s3">
+<label>3.</label>
+<title>Calculating the parameters</title>
+<p>We now describe the parameters in <xref ref-type="disp-formula" rid="eqn1">equations 1</xref> to 4. To obtain the natural birth and death rates, we used a research conducted by the United Nations [<xref ref-type="bibr" rid="c4">4</xref>]. This study shows that the average number of alive births per woman (during life) is 2.5 children. Since life expectancy at birth of women in 2019, is reported to be 75.0 years [<xref ref-type="bibr" rid="c4">4</xref>], we estimate our required birth rate as:
+<disp-formula id="ueqn1">
+<alternatives><graphic xlink:href="20248842v1_ueqn1.gif"/></alternatives>
+</disp-formula>
+Note that we ultimately intend to investigate the normalized population, and since women make up almost half of the world population, the coefficient <inline-formula><alternatives><inline-graphic xlink:href="20248842v1_inline6.gif"/></alternatives></inline-formula> would be justified. On the other hand, life expectancy at birth&#x2014;for both sexes, in 2019&#x2014;is 72.6 years. This value causes us to estimate natural death rate:
+<disp-formula id="ueqn2">
+<alternatives><graphic xlink:href="20248842v1_ueqn2.gif"/></alternatives>
+</disp-formula>
+for whatever reason except COVID-19.</p>
+<p>According t o <italic>Li et al</italic>. (2020), the latent duration lasts 5.2 <italic>days</italic> (95 &#x0025; <italic>C I</italic>, 4.1 <italic>t o</italic> 7.0) days, which results in <italic>&#x03B2;</italic><sub>2</sub> = 0.19 (<italic>day</italic>)<sup>&#x2212;1</sup> (95 &#x0025; <italic>CI</italic>, 0.14 &#x2212; 0.25) infection rate. The recovery time of each infected individual is 24.7 (<italic>days</italic>) (95 &#x0025; <italic>Cr I</italic> 22.9 &#x2212; 28.1) [<xref ref-type="bibr" rid="c6">6</xref>] and therefore the recovery rate will be <italic>&#x03B3;</italic> = 0.040 (<italic>d a y</italic>)<sup>&#x2212;1</sup> (95 &#x0025; <italic>C r I</italic> 0.035 &#x2212; 0.044). The share of deaths due to COVID-19 is equal to .38 &#x0025; (95 &#x0025; <italic>Cr I</italic> 1.23 &#x2212; 1.53) [<xref ref-type="bibr" rid="c6">6</xref>], which causes the fatality rate to be estimated to be:
+<disp-formula id="ueqn3">
+<alternatives><graphic xlink:href="20248842v1_ueqn3.gif"/></alternatives>
+</disp-formula>
+On the other hand, the basic reproductive number of this disease is estimated to be <italic>R</italic><sub>0</sub> = 2.68 (95 &#x0025; <italic>C r I</italic> 2.47 &#x2212; 2.86) [<xref ref-type="bibr" rid="c7">7</xref>]. Given that <italic>R</italic><sub>0</sub> in this model is obtained from the definition in <xref ref-type="disp-formula" rid="eqn5">equation 5</xref> [<xref ref-type="bibr" rid="c8">8</xref>], the transmission rate <italic>&#x03B2;</italic><sub>1</sub> can be estimated at 0.11 (<italic>day</italic>)<sup>&#x2212;1</sup> using the above results. Note that we exactly used the definition of <italic>R</italic><sub>0</sub> in <italic>SEIR</italic> model, which would be a logical calculation.<disp-formula id="eqn5">
+<alternatives><graphic xlink:href="20248842v1_eqn5.gif"/></alternatives>
+</disp-formula>
+</p>
+</sec>
+<sec id="s4">
+<label>4.</label>
+<title>Simulating the dynamics of disease outbreak</title>
+<p>The <xref ref-type="disp-formula" rid="eqn1">equations 1</xref> to 4 can be solved by different numerical methods, and we chose Fourth Order Runge-Kutta for this purpose. Before solving these equations, we emphasize that we have first normalized the population to 1. It means <inline-formula><alternatives><inline-graphic xlink:href="20248842v1_inline7.gif"/></alternatives></inline-formula> of population is infected and the rest&#x2014;which is <inline-formula><alternatives><inline-graphic xlink:href="20248842v1_inline8.gif"/></alternatives></inline-formula>) &#x2014;are susceptible. <italic>N</italic> is the total number of people in the world. In this text, we consider the initial proportion of infected to be:
+<disp-formula id="ueqn4">
+<alternatives><graphic xlink:href="20248842v1_ueqn4.gif"/></alternatives>
+</disp-formula>
+which is equivalent to the proportion of one person among the total world population. Because the world&#x2019;s population in 2019 was <italic>N</italic> = 7.71 &#x00D7; 10<sup>9</sup> [<xref ref-type="bibr" rid="c9">9</xref>]. Also, at the beginning of the outbreak, we consider the proportions of <italic>E</italic> and <italic>R</italic> to be zero. On the other hand, due to births and deaths, the initially normalized population will not remain 1. So we have to keep in mind that if, for example, after a long time, the individuals in category <italic>S</italic> have a proportion of 0.4, it means that the ratio of their population to the initial population of the world (in 2019) is 0.4. So when we talk about <italic>S, E, I</italic> and <italic>R</italic> proportions, we mean the ratio of the number of individuals in each of these categories to the total initial population. In other words:
+<disp-formula id="eqn6">
+<alternatives><graphic xlink:href="20248842v1_eqn6.gif"/></alternatives>
+</disp-formula></p>
+<p>Our intention is to calculate the number of infected individuals for different amounts of <italic>T</italic> As the point is clear, our method is numerical and deterministic. It should be noted that <italic>S, E, I</italic> and <italic>R</italic> values can not be negative. It should also be noted that the number of individuals in a category cannot be reduced to any desired positive number. For example, after the first outbreak subsides, the proportion of <italic>I</italic> individuals cannot be reduced to 10<sup>&#x2212;12</sup>. Because none of the human societies&#x2014;even the largest of them&#x2014;have a population of 10<sup>12</sup>, and so we can&#x2019;t be in a situation where relatively one individual in 10<sup>12</sup> people is infected. In other words, given the world&#x2019;s population, which is the largest imaginable society, the proportion of each category must be such that the number of its individuals can be considered comparable to the lowest positive population proportion of humans in the world&#x2014;which corresponds to one person in the world. Otherwise, we consider the proportion of that category to be zero. we will provide a more comprehensive explanation in this regard.</p>
+<p>We see the result of one of COVID-19 simulations over fifteen years in <xref rid="fig2" ref-type="fig">figure 2</xref>. As can be seen from figures (2. <italic>A</italic>) and (2.<italic>B</italic>), with the outbreak of the disease, the significant portion of the population becomes infected and then the proportion of infected (<italic>I</italic>) decreases. Note that these two figures are related to one simulation and are drawn in two parts just for better observation. In this simulation, it is assumed that the immunity of each recovered individual disappears after 3.0 years. After a significant portion of the recovered individuals have lost their immunity, to which they are added to category, world will be ready for a re-epidemic&#x2014;ie, the second epidemic. But this re-epidemic will not be so evident until the sixth year. Because after the first epidemic, the number of individuals decreased so much that for several years it could not make a significant fraction of the population infected. Note that this is quite natural given the dynamic equations of the disease and the numerical method used. For example, between the first and second peaks (figure2.<italic>B</italic>), <italic>E</italic> and <italic>I</italic> proportions have the values less than 10<sup>&#x2212;12</sup>. On the other hand, given the world&#x2019;s population, we can never face such a proportion of the world&#x2019;s population, and therefore the disease is practically gone. As a result, the second, third, and subsequent epidemics, which occur at approximately five-year intervals (<xref rid="fig2" ref-type="fig">figure 2</xref>), will not occur in the real world.</p>
+<fig id="fig1" position="float" fig-type="figure">
+<label>Figure 1)</label>
+<caption><p><italic>Retarded SEIRS</italic> model overview. Susceptible individuals will be exposed by infected individuals. Exposed individuals will then enter the infected category after a short time. The infected individuals will recover, and then join the susceptible category again. It should be noted that for better understanding, births and deaths are not included in this figure. But it is clear that the births should be included in some categories; in addition, given that natural death occurs in all categories, another output must be considered for each category. Also, some individuals will die in the infected category due to the fatality of the disease.</p></caption>
+<graphic xlink:href="20248842v1_fig1.tif"/>
+</fig>
+<fig id="fig2" position="float" fig-type="figure">
+<label>Figure 2)</label>
+<caption><p><italic>Retarded SEIRS</italic> Model for COVID-19 epidemics. A) <italic>S</italic> and <italic>R</italic> proportions. B) <italic>E</italic> and <italic>I</italic> proportions. Both figures are for one simulation, and are drawn in two parts because of better representation. Here it is assumed that each recovered individual is immune for <italic>T</italic> = 3.0 <italic>years</italic>. So at <italic>t</italic> = 3.0 <italic>years</italic> and after that, the immunity of individuals who got infected early in the outbreak will be lost. The asterisk shows the first individual who loses the immunity, which corresponds the first infected individual. After the first peak of the epidemic, the proportion of <italic>E</italic> and <italic>I</italic> will decrease sharply and then increase again. Epidemics occur every few years, approximately every five years. It should be noted that each of <italic>E</italic> and <italic>I</italic> proportions sometimes fall below 10<sup>&#x2212;12</sup>&#x2014;for example, between the first and second epidemic peaks&#x2014;and these events cannot be observed in human societies. This simulation shows that the use of numerical methods, regardless of the <italic>S E,I</italic> and <italic>R</italic> values, can lead to unrealistic results. The parameters used in this simulation are are shown in <xref rid="tbl1" ref-type="table">table 1</xref>. To view the code related to this simulation, refer to <italic>SEIRS Figure</italic>.2.<italic>py</italic> code (supplemental files).</p></caption>
+<graphic xlink:href="20248842v1_fig2.tif"/>
+</fig>
+<p>Another point to consider in the simulations of this text is the calculation of <italic>I</italic> (<italic>t</italic> &#x2013; <italic>T</italic>) substeps in Fourth Order Runge-Kutta method. As we know, to perform the calculations of each time step, ie from <italic>t</italic> to &#x002B; &#x0394;<italic>t</italic>, for each of the proportions <italic>S</italic> (<italic>t</italic>), <italic>E</italic> (<italic>t</italic>), <italic>I</italic> (<italic>t</italic>) and <italic>R</italic> (<italic>t</italic>), we must calculate four substeps. But the main problem is that there is no separate equation for <italic>I</italic> (<italic>t</italic> &#x2013; <italic>T</italic>), which is time-dependent. Hence, we use the calculations we did for <italic>I</italic> at time <italic>t</italic>&#x2212;<italic>T</italic> In fact, using the substeps we obtained in the past for <italic>I</italic> we affect the substeps of <italic>I</italic> (<italic>t</italic> &#x2013; <italic>T</italic>). For more details, refer to the code of each simulation for a better understanding. Using this method, delay-dependent calculations of <italic>I</italic> (<italic>t</italic> &#x2013; <italic>T</italic>) can be performed.</p>
+<table-wrap id="tbl1" orientation="portrait" position="float">
+<label>Table 1)</label>
+<caption><p>Parameters and initial values used in <italic>Retarded SEIRS</italic> model simulations. Some intervals are shown for some parameters, but we did not use the intervals in our simulations. We only considered the main value of each parameter.</p></caption>
+<graphic xlink:href="20248842v1_tbl1.tif"/>
+<graphic xlink:href="20248842v1_tbl1a.tif"/>
+</table-wrap>
+<p>We now turn to the question of what happens if we reduce the duration of temporary immunity (<italic>T</italic>). In this case, <italic>R</italic> individuals stay shorter in the temporary immunity duration, and therefore can get to the <italic>S</italic> category sooner. So we can expect a re-epidemic by adopting a small number for <italic>T</italic>. We show this simulation for <italic>T</italic> = 1.0 <italic>years</italic> in <xref rid="fig3" ref-type="fig">figure 3</xref>. The minimum of <italic>I</italic> between the first and second epidemic is 4.27 &#x00D7; 10<sup>&#x2212;5</sup>, which would be quite significant. Because such a proportion of the world&#x2019;s population is equal to:</p>
+<fig id="fig3" position="float" fig-type="figure">
+<label>Figure 3)</label>
+<caption><p>Simulation of <italic>Retarded SEIRS</italic> model, for <italic>T</italic> = 1.0 <italic>years</italic> over fifteen years. A) <italic>S</italic> and <italic>R</italic> proportions. B) <italic>E</italic> and <italic>I</italic> proportions. It is emphasized again that both diagrams are related to one simulation and are calculated for one-year temporary immunity duration. The other parameters are the same as the parameters in <xref rid="tbl1" ref-type="table">table 1</xref>. The first, second, and third epidemics (and even after them) can be clearly seen from the curve of <italic>I</italic> (or other categories). To view the code related to this simulation, refer to <italic>Ret arded</italic>. <italic>SEIRS</italic>. <italic>Figure</italic>.3.<italic>p y</italic> code (supplemental files).</p></caption>
+<graphic xlink:href="20248842v1_fig3.tif"/>
+</fig>
+<p>
+<disp-formula id="ueqn5">
+<alternatives><graphic xlink:href="20248842v1_ueqn5.gif"/></alternatives>
+</disp-formula>
+infected individuals. That is, under such circumstances, in the smallest amount, we still face several hundred thousand infected individuals. Then we approach the peak of the second epidemic and then the next stages.</p>
+</sec>
+<sec id="s5">
+<label>5.</label>
+<title>Finding the threshold of temporary immunity <italic>T</italic> for non-occurrence of re-epidemic</title>
+<p>We performed the first simulation with <italic>T</italic> = 3.0 <italic>years</italic> and said that this simulation would not lead to a second epidemic (figure). Then we performed the second simulation with <italic>T</italic> = 1.0 <italic>year</italic> and found that the second epidemic occurs (figure). According to the argument made earlier, we should expect that in a particular <italic>T</italic> there is a threshold for non-occurrence of the second epidemic. This <italic>T</italic> will definitely be between 1.0 and 3.0 years. But the question is, what is our criterion for diagnosing the occurrence or non-occurrence of the second epidemic? Our criterion is defined as follows: if the minimum of between the first and second epidemics&#x2014;in the simulation&#x2014;is less than <inline-formula><alternatives><inline-graphic xlink:href="20248842v1_inline9.gif"/></alternatives></inline-formula>, then the second epidemic will not actually occur. <italic>N</italic> (<italic>t</italic>) is the population of the world at time <italic>t</italic> We have run our simulations with an initially normalized population. Also, we know that the smallest imaginable proportion of the population in the real world is <inline-formula><alternatives><inline-graphic xlink:href="20248842v1_inline10.gif"/></alternatives></inline-formula> In other words, the largest conceivable society is the entire population of the world, and so if we want to use the smallest conceivable fraction in the real world, we must consider a minimum number for <italic>I</italic> fraction to shrink. The term <inline-formula><alternatives><inline-graphic xlink:href="20248842v1_inline11.gif"/></alternatives></inline-formula> means the share of one person in the total population. If in the simulations the proportion of a category reaches<inline-formula><alternatives><inline-graphic xlink:href="20248842v1_inline12.gif"/></alternatives></inline-formula>, it means that the share of that category&#x2014;from the point of view of the real world&#x2014;is equal to half of a human. That is, in the largest imaginable human population, comprising the entire human population of the planet, we are faced with the share of half of a human. It is clear that if we choose a smaller population, we will face a smaller share of humans. On the other hand, in this example, we will be dealing with proportions similar to <inline-formula><alternatives><inline-graphic xlink:href="20248842v1_inline13.gif"/></alternatives></inline-formula> in earlier steps, according to the method we use&#x2014;Fourth Order Runge-Kutta. If we want to use the probabilistic interpretation for this event, we can say that in these steps we are faced with the product of consecutive probabilities of about <inline-formula><alternatives><inline-graphic xlink:href="20248842v1_inline14.gif"/></alternatives></inline-formula>. It is clear that if we multiply the numbers close to <inline-formula><alternatives><inline-graphic xlink:href="20248842v1_inline15.gif"/></alternatives></inline-formula> in succession, their final answer will be very small and therefore the probability of that event will be insignificant.</p>
+<p>Although our view on this issue is deterministic, it should be noted that when the number of infected individuals is very small, the stochastic effects should also be considered important. These effects may go extinct the disease sooner or later compared to the deterministic perspective. Also, we assumed that the whole world operates symmetrically, and this assumption can be significantly modified.</p>
+<p>Now we can look for a particular <italic>T</italic> in the range of <italic>T</italic> = 1.0 <italic>year</italic> to <italic>T</italic> = 3.0 <italic>years</italic>, so that the minimum of <italic>I</italic> between the first and second pandemics in the figure is less than <inline-formula><alternatives><inline-graphic xlink:href="20248842v1_inline16.gif"/></alternatives></inline-formula> for the first time. By performing simulations for different <italic>T</italic> values in this interval, the threshold of <italic>T</italic> can be easily found. If we do this, we get <italic>T</italic><sub><italic>thr</italic></sub> = 2.4&#x00B1; 0.1 <italic>years</italic> for the threshold of temporary immunity duration for non-occurrence of re-epidemic. To view the code related to this simulation, refer to <italic>Critical T. p y</italic> (supplemental files). Thus, under this model, COVID-19 pandemic can occur for the second time if its duration of temporary immunity is less than <italic>T</italic><sub><italic>thr</italic></sub> = 2.4 &#x00B1; 0.1 <italic>years</italic> In other words, if <italic>T</italic><sub><italic>COVID</italic>&#x2212;19</sub> &#x003C; <italic>T</italic><sub><italic>thr</italic></sub>, then the second epidemic will occur. Otherwise, COVID-19 will become extinct, although we have ignored the influence of other factors such as mutations. It should be noted that the current error reported for <italic>T</italic><sub><italic>thr</italic></sub> is due to the fact that each time we simulated, we changed the value of <italic>T</italic> by 0.1 <italic>year</italic> and then ran the program again. Therefore, the overall error for will be greater than 0.1 <italic>year</italic>, because each parameter in this model also have an error interval in reality, while the intervals are not affected in the simulation.</p>
+<p>Now if we focus on the simulation we did for <italic>T</italic> = 2.4 <italic>years</italic>, we conclude that the minimum <italic>I</italic> of between the first and second pandemics is approximately 4.0993 &#x00D7; 10<sup>&#x2212;11</sup>. We also find that in the previous one and two time steps, we were dealing with approximately 4.0994 &#x00D7; 10<sup>&#x2212;11</sup> and 4.1025 &#x00D7; 10<sup>&#x2212;11</sup>. Such a result was expected. As mentioned earlier, given the numerical method we used, we should expect the numbers obtained for each category in successive time steps to be slightly different. Also, <inline-formula><alternatives><inline-graphic xlink:href="20248842v1_inline17.gif"/></alternatives></inline-formula> is obtained for the minimum moment; it is clear that all three of the above numbers are less than <inline-formula><alternatives><inline-graphic xlink:href="20248842v1_inline18.gif"/></alternatives></inline-formula>.</p>
+</sec>
+<sec id="s6">
+<label>6.</label>
+<title>An effective suggestion for researchers</title>
+<p>We have calculated the threshold of temporary immunity of COVID-19 for non-occurrence of re-epidemic around <italic>T</italic><sub><italic>thr</italic></sub> = 2.4 <italic>years</italic>. Now we have to wait for the testers to obtain the amount of temporary immunity <italic>T</italic><sub><italic>COVID</italic>&#x2212;19</sub> experimentally; if <italic>T</italic><sub><italic>COVID</italic>&#x2212;19</sub> &#x003C; <italic>T</italic><sub><italic>thr</italic></sub>, we are probably facing a catastrophe. For further investigation, we examined a disease that behaved similarly to COVID-19. A study of 176 patients with Acute Respiratory Syndrome (SARS) found that SARS antibodies persisted for an average of two years. Then in the third year, significant changes occurred in their bodies. Therefore, SARS patient individuals may be re-susceptible to SARS after &#x2265; 3 <italic>years</italic> [<xref ref-type="bibr" rid="c10">10</xref>]. On the other hand, it may be necessary to change the model to individual-based or metapopulation models to achieve more accuracy. Under any circumstances, our suggestion to the medical community is to monitor the first registered patients, because they may become infected for the second time. The sooner we know about the temporary immunity of COVID-19, the better we can react to the recurrence of the disease. We hope to overcome this dilemma with the best efforts of all the people in the world.</p>
+</sec>
+<sec sec-type="supplementary-material">
+<title>Supporting information</title>
+<supplementary-material>
+<label>Retarded.SEIRS.Figure.2.py code</label>
+<media xlink:href="supplements/248842_file02.pdf" />
+</supplementary-material>
+<supplementary-material>
+<label>Retarded.SEIRS.Figure.3.py code</label>
+<media xlink:href="supplements/248842_file03.pdf" />
+</supplementary-material>
+<supplementary-material>
+<label>Critical.T.py code</label>
+<media xlink:href="supplements/248842_file04.pdf" />
+</supplementary-material>
+</sec>
+</body>
+<back>
+<sec sec-type="data-availability">
+<title>Data Availability</title>
+<p>All data has been reported according to the mentioned references. Also, the simulation codes are available on GitHub.</p>
+<p>
+<ext-link ext-link-type="uri" xlink:href="https://github.com/chix4030/Simulating-Retarded-SEIRS-model-for-COVID-19-will-the-second-epidemic-happen">https://github.com/chix4030/Simulating-Retarded-SEIRS-model-for-COVID-19-will-the-second-epidemic-happen-</ext-link>
+</p>
+</sec>
+<ref-list>
+<title>References</title>
+<ref id="c1"><label>1.</label><mixed-citation publication-type="journal"><string-name><surname>Hammarlund</surname> <given-names>E</given-names></string-name>, <string-name><surname>Thomas</surname> <given-names>A</given-names></string-name>, <string-name><surname>Poore</surname> <given-names>EA</given-names></string-name>, <etal>et al.</etal> <article-title>Durability of vaccine-induced immunity against tetanus and diphtheria toxins: a cross-sectional analysis</article-title>. <source>Clinical Infectious Diseases</source> <year>2016</year>; <volume>62</volume>(<issue>9</issue>): <fpage>1111</fpage>&#x2013;<lpage>8</lpage>.</mixed-citation></ref>
+<ref id="c2"><label>2.</label><mixed-citation publication-type="journal"><string-name><surname>Yang</surname> <given-names>Z</given-names></string-name>, <string-name><surname>Zeng</surname> <given-names>Z</given-names></string-name>, <string-name><surname>Wang</surname> <given-names>K</given-names></string-name>, <etal>et al.</etal> <article-title>Modified SEIR and AI prediction of the epidemics trend of COVID-19 in China under public health interventions</article-title>. <source>J Thorac Dis</source> <year>2020</year>; <volume>12</volume>(<issue>3</issue>): <fpage>165</fpage>&#x2013;<lpage>174</lpage>.</mixed-citation></ref>
+<ref id="c3"><label>3.</label><mixed-citation publication-type="other"><string-name><surname>L&#x00F3;pez</surname> <given-names>L</given-names></string-name> and <string-name><surname>Rod&#x00F3;</surname> <given-names>X.</given-names></string-name> <article-title>A Modified SEIR model to predict the COVID-19 outbreak in Spain and Italy: simulating control scenarios and multi-scale epidemics</article-title>. <source>medRxiv</source> <year>2020</year>; published online April 16. DOI:<pub-id pub-id-type="doi">10.1101/2020.03.27.20045005</pub-id> (preprint).</mixed-citation></ref>
+<ref id="c4"><label>4.</label><mixed-citation publication-type="other"><article-title>United Nations, Department of Economic and Social Affairs, Population Division (2019)</article-title>. <source>World Population Prospects</source> <year>2019</year>.</mixed-citation></ref>
+<ref id="c5"><label>5.</label><mixed-citation publication-type="journal"><string-name><surname>Li</surname> <given-names>Q</given-names></string-name>, <string-name><surname>Guan</surname> <given-names>X</given-names></string-name>, <string-name><surname>Wu</surname> <given-names>P</given-names></string-name>, <etal>et al.</etal> <article-title>Early transmission dynamics in Wuhan, China, of novel coronavirus&#x2013;infected pneumonia</article-title>. <source>N Engl J Med</source> <year>2020</year>; <volume>382</volume>:<fpage>1199</fpage>&#x2013;<lpage>1207</lpage>.</mixed-citation></ref>
+<ref id="c6"><label>6.</label><mixed-citation publication-type="journal"><string-name><surname>Verity</surname> <given-names>R</given-names></string-name>, <string-name><surname>Okell</surname> <given-names>LC</given-names></string-name>, <string-name><surname>Dorigatti</surname> <given-names>I</given-names></string-name>, <etal>et al.</etal> <article-title>Estimates of the severity of coronavirus disease 2019: a model-based analysis</article-title>. <source>Lancet Infect Dis</source> <year>2020</year>; <volume>20</volume>: <fpage>669</fpage>&#x2013;<lpage>77</lpage>.</mixed-citation></ref>
+<ref id="c7"><label>7.</label><mixed-citation publication-type="journal"><string-name><surname>Wu</surname> <given-names>JT</given-names></string-name>, <string-name><surname>Leung</surname> <given-names>K</given-names></string-name>, <string-name><surname>Leung</surname> <given-names>GM</given-names></string-name>. <article-title>Nowcasting and forecasting the potential domestic and international spread of the 2019-nCoV outbreak originating in Wuhan, China: a modelling study</article-title>. <source>Lancet</source> <year>2020</year>; <volume>395</volume>: <fpage>689</fpage>&#x2013;<lpage>97</lpage>.</mixed-citation></ref>
+<ref id="c8"><label>8.</label><mixed-citation publication-type="book"><string-name><surname>Keeling</surname> <given-names>MJ</given-names></string-name>, <string-name><surname>Rohani</surname> <given-names>P.</given-names></string-name> (<year>2007</year>). <source>Modeling Infectious Diseases in Humans and Animals</source>. <publisher-name>Princeton University Press</publisher-name>.</mixed-citation></ref>
+<ref id="c9"><label>9.</label><mixed-citation publication-type="other"><article-title>United Nations, Department of Economic and Social Affairs, Population Division</article-title> (<year>2019</year>). <source>World Population Prospects 2019, Online Edition. Rev. 1</source>.</mixed-citation></ref>
+<ref id="c10"><label>10.</label><mixed-citation publication-type="journal"><string-name><surname>Wu</surname> <given-names>LP</given-names></string-name>, <string-name><surname>Wang</surname> <given-names>NC</given-names></string-name>, <string-name><surname>Chang</surname> <given-names>YH</given-names></string-name>, <etal>et al.</etal> <article-title>Duration of antibody responses after severe acute respiratory syndrome</article-title>. <source>Emerg Infect Dis</source>. <year>2007</year>; <volume>13</volume>(<issue>10</issue>): <fpage>1562</fpage>&#x2013;<lpage>1564</lpage>.</mixed-citation></ref>
+</ref-list>
+</back>
+</article>

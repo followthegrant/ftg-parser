@@ -1,0 +1,740 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.2d1 20170631//EN" "JATS-archivearticle1.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" article-type="article" dtd-version="1.2d1" specific-use="production" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="publisher-id">MEDRXIV</journal-id>
+<journal-title-group>
+<journal-title>medRxiv</journal-title>
+<abbrev-journal-title abbrev-type="publisher">medRxiv</abbrev-journal-title>
+</journal-title-group>
+<publisher>
+<publisher-name>Cold Spring Harbor Laboratory</publisher-name>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1101/2021.09.23.21264039</article-id>
+<article-version>1.1</article-version>
+<article-categories>
+<subj-group subj-group-type="hwp-journal-coll">
+<subject>Intensive Care and Critical Care Medicine</subject>
+</subj-group>
+</article-categories>
+<title-group>
+<article-title>Sleep in the Intensive Care Unit through the Lens of Breathing and Heart Rate Variability: A Cross-Sectional Study</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-6029-2450</contrib-id>
+<name><surname>Ganglberger</surname><given-names>Wolfgang</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a2">2</xref>
+<xref ref-type="aff" rid="a3">3</xref>
+<xref ref-type="aff" rid="a6">6</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Krishnamurthy</surname><given-names>Parimala Velpula</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Quadri</surname><given-names>Syed A.</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Tesh</surname><given-names>Ryan A.</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Bucklin</surname><given-names>Abigail A.</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Adra</surname><given-names>Noor</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Da Silva Cardoso</surname><given-names>Madalena</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Leone</surname><given-names>Michael J.</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Hemmige</surname><given-names>Aashritha</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Rajan</surname><given-names>Subapriya</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Panneerselvam</surname><given-names>Ezhil</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Paixao</surname><given-names>Luis</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Higgins</surname><given-names>Jasmine</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Ayub</surname><given-names>Muhammad Abubakar</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Shao</surname><given-names>Yu-Ping</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Coughlin</surname><given-names>Brian</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-5041-8312</contrib-id>
+<name><surname>Sun</surname><given-names>Haoqi</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a2">2</xref>
+<xref ref-type="aff" rid="a6">6</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Ye</surname><given-names>Elissa M.</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-4557-6391</contrib-id>
+<name><surname>Cash</surname><given-names>Sydney S.</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Thompson</surname><given-names>B. Taylor</given-names></name>
+<xref ref-type="aff" rid="a4">4</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Akeju</surname><given-names>Oluwaseun</given-names></name>
+<xref ref-type="aff" rid="a5">5</xref>
+<xref ref-type="aff" rid="a6">6</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Kuller</surname><given-names>David</given-names></name>
+<xref ref-type="aff" rid="a7">7</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Thomas</surname><given-names>Robert J.</given-names></name>
+<xref ref-type="aff" rid="a2">2</xref>
+<xref ref-type="aff" rid="a8">8</xref>
+<xref ref-type="author-notes" rid="n1">&#x002A;</xref></contrib>
+<contrib contrib-type="author" corresp="yes">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-4803-312X</contrib-id>
+<name><surname>Westover</surname><given-names>M. Brandon</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+<xref ref-type="aff" rid="a2">2</xref>
+<xref ref-type="aff" rid="a6">6</xref>
+<xref ref-type="corresp" rid="cor1">&#x0023;</xref>
+<xref ref-type="author-notes" rid="n1">&#x002A;</xref></contrib>
+<aff id="a1"><label>1</label><institution>Department of Neurology, Massachusetts General Hospital (MGH)</institution>, Boston MA, <country>USA</country></aff>
+<aff id="a2"><label>2</label><institution>Clinical Data Animation Center (CDAC), MGH</institution>, Boston MA, <country>USA</country></aff>
+<aff id="a3"><label>3</label><institution>Sleep &#x0026; Health Zurich, University of Zurich</institution>, Zurich, <country>Switzerland</country></aff>
+<aff id="a4"><label>4</label><institution>Department of Medicine, MGH</institution>, Boston MA, <country>USA</country></aff>
+<aff id="a5"><label>5</label><institution>Department of Anesthesia, Critical Care and Pain Medicine, MGH</institution>, Boston MA, <country>USA</country></aff>
+<aff id="a6"><label>6</label><institution>Henry and Allison McCance Center for Brain Health, MGH</institution>, Boston MA, <country>USA</country></aff>
+<aff id="a7"><label>7</label><institution>MyAir Inc.</institution>, Boston MA, <country>USA</country></aff>
+<aff id="a8"><label>8</label><institution>Department of Medicine, Division of Pulmonary, Critical Care &#x0026; Sleep, Beth Israel Deaconess Medical Center</institution>, Boston MA, <country>USA</country></aff>
+</contrib-group>
+<author-notes>
+<corresp id="cor1"><label><sup>&#x0023;</sup></label>Corresponding author: M. Brandon Westover, Massachusetts General Hospital Neurology Department, 55 Fruit Street, Boston MA, USA 02114, <email>mwestover@mgh.harvard.edu</email></corresp>
+<fn fn-type="others" id="n1"><label>&#x002A;</label><p>Co-senior authors</p></fn>
+</author-notes>
+<pub-date pub-type="epub"><year>2021</year></pub-date>
+<elocation-id>2021.09.23.21264039</elocation-id>
+<history>
+<date date-type="received">
+<day>23</day>
+<month>9</month>
+<year>2021</year>
+</date>
+<date date-type="rev-recd">
+<day>23</day>
+<month>9</month>
+<year>2021</year>
+</date>
+<date date-type="accepted">
+<day>26</day>
+<month>9</month>
+<year>2021</year>
+</date>
+</history>
+<permissions>
+<copyright-statement>&#x00A9; 2021, Posted by Cold Spring Harbor Laboratory</copyright-statement>
+<copyright-year>2021</copyright-year>
+<license><license-p>The copyright holder for this pre-print is the author. All rights reserved. The material may not be redistributed, re-used or adapted without the author's permission.</license-p></license>
+</permissions>
+<self-uri xlink:href="21264039.pdf" content-type="pdf" xlink:role="full-text"/>
+<abstract>
+<title>Abstract</title>
+<sec>
+<title>Background</title>
+<p>Full polysomnography, the gold standard of sleep measurement, is impractical for widespread use in the intensive care unit (ICU). Wrist-worn actigraphy and subjective sleep assessments do not measure sleep physiology adequately. Here, we explore the feasibility of estimating conventional sleep indices in the ICU with heart rate variability (HRV) and respiration signals using artificial intelligence methods.</p>
+</sec>
+<sec>
+<title>Methods</title>
+<p>We used deep learning models to stage sleep with HRV (through electrocardiogram) and respiratory effort (through a wearable belt) signals in critically ill adult patients admitted to surgical and medical ICUs, and in covariate-matched sleep laboratory patients. We analyzed the agreement of the determined sleep stages between the HRV- and breathing-based models, computed sleep indices, and quantified breathing variables during sleep.</p>
+</sec>
+<sec>
+<title>Results</title>
+<p>We studied 102 adult patients in the ICU across multiple days and nights, and 220 patients in a clinical sleep laboratory. We found that sleep stages predicted by HRV- and breathing-based models showed agreement in 60&#x0025; of the ICU data and in 81&#x0025; of the sleep laboratory data. In the ICU, deep NREM (N2 &#x002B; N3) proportion of total sleep duration was reduced (ICU 39&#x0025;, sleep laboratory 57&#x0025;, p&#x003C;0.01), REM proportion showed heavy-tailed distribution, and the number of wake transitions per hour of sleep (median &#x003D; 3.6) was comparable to sleep laboratory patients with sleep-disordered breathing (median &#x003D; 3.9). Sleep in the ICU was also fragmented, with 38&#x0025; of sleep occurring during daytime hours. Finally, patients in the ICU showed faster and less variable breathing patterns compared to sleep laboratory patients.</p>
+</sec>
+<sec>
+<title>Conclusions</title>
+<p>Cardiovascular and respiratory signals encode sleep state information, which can be utilized to measure sleep state in the ICU. Using these easily measurable variables can provide automated information about sleep in the ICU.</p>
+</sec>
+</abstract>
+<counts>
+<page-count count="59"/>
+</counts>
+</article-meta>
+<notes>
+<notes notes-type="competing-interest-statement">
+<title>Competing Interest Statement</title><p>Financial disclosure: Dr. Westover is a co-founder of Beacon Biosignals and reports grants from NIH, during the conduct of the study; Dr. Cash reports other COI from Neuralink, Paradromics, and Synchron, and Beacon Biosignals, outside the submitted work. Dr. Thomas reports personal fees from GLG Councils, Guidepoint Global, and Jazz Pharmaceutics, outside the submitted work. In addition, Dr. Thomas has a patent ECG-spectrogram with royalties paid by MyCardio, LLC, a patent Auto-CPAP with royalties paid by DeVilbiss-Drive, and an unlicensed patent CO2 device for central / complex sleep apnea issued. Dr. Thompson reports consulting for Bayer, Novartis, and Thetis, outside the submitted work. In addition, Mr. Kuller has a patent: Patent US10123724B2 "Breath volume monitoring system and method" issued.
+Non-financial disclosure: Mr. Kuller reports non-financial support from Myair Inc., during the conduct of the study, and non-financial support from Myair Inc, outside the submitted work.</p></notes>
+<notes notes-type="financial-disclosure">
+<title>Funding Statement</title><p>M.B.W was supported by the Glenn Foundation for Medical Research and American Federation for Aging Research (Breakthroughs in Gerontology Grant); American Academy of Sleep Medicine (AASM Foundation Strategic Research Award); Football Players Health Study (FPHS) at Harvard University; Department of Defense through a subcontract from Moberg ICU Solutions, Inc; and NIH (1R01NS102190, 1R01NS102574, 1R01NS107291, 1RF1AG064312).</p></notes>
+<notes notes-type="disclosures">
+<title>Author Declarations</title><p>I confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.</p><p>Yes</p><p>The details of the IRB/oversight body that provided approval or exemption for the research described are given below:</p><p>The study was approved by the Mass General Brigham Institutional Review Board.</p><p>All necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived.</p><p>Yes</p><p>I understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).</p><p>Yes</p><p>I have followed all appropriate research reporting guidelines and uploaded the relevant EQUATOR Network research reporting checklist(s) and other pertinent material as supplementary files, if applicable.</p><p>Yes</p></notes>
+</notes>
+</front>
+<body>
+<sec id="s1">
+<label>I.</label>
+<title>Introduction</title>
+<p>Healthy sleep is a biological imperative(<xref ref-type="bibr" rid="c1">1</xref>, <xref ref-type="bibr" rid="c2">2</xref>). Abnormal sleep impairs critical brain and body functions, including memory(<xref ref-type="bibr" rid="c3">3</xref>), learning, attention, and affective state(<xref ref-type="bibr" rid="c4">4</xref>&#x2013;<xref ref-type="bibr" rid="c8">8</xref>), and regulation of blood pressure(<xref ref-type="bibr" rid="c9">9</xref>), inflammatory processes(<xref ref-type="bibr" rid="c10">10</xref>, <xref ref-type="bibr" rid="c11">11</xref>), metabolic control(<xref ref-type="bibr" rid="c12">12</xref>&#x2013;<xref ref-type="bibr" rid="c14">14</xref>), and stress responses(<xref ref-type="bibr" rid="c15">15</xref>&#x2013;<xref ref-type="bibr" rid="c17">17</xref>). The intensive care unit (ICU) is associated with disrupted sleep, due to internal (e.g., pain, immunocompromisation, dyspnea and apnea) and external (e.g., noise, circadian mismatch) factors. Sleep can be so distorted in the ICU that conventional sleep stages become hard to recognize(<xref ref-type="bibr" rid="c18">18</xref>). Sleep disruption in the ICU contributes to delirium(<xref ref-type="bibr" rid="c19">19</xref>), difficult weaning from mechanical ventilation(<xref ref-type="bibr" rid="c20">20</xref>), and increased risk of autonomic, inflammatory and metabolic dysfunction(<xref ref-type="bibr" rid="c21">21</xref>).</p>
+<p>Despite the urgency of improving sleep in the ICU, measuring sleep in this environment is challenging since conventional polysomnography is difficult to operationalize in the ICU setting(<xref ref-type="bibr" rid="c22">22</xref>). Subjective sleep estimates and movement analysis using actigraphy can provide crude assessments of sleep(<xref ref-type="bibr" rid="c22">22</xref>, <xref ref-type="bibr" rid="c23">23</xref>), but are heavily confounded by common ICU experiences, including sedation, monitoring, illness, and immobility. No present method of measuring sleep in the ICU is satisfactory(<xref ref-type="bibr" rid="c24">24</xref>), thus alternative approaches are needed.</p>
+<p>To address this need, our first aim for this study was to evaluate the validity of monitoring sleep physiology in ICU patients using easily obtainable biosignals, such as electrocardiogram (ECG) and respiration, using artificial intelligence methods. Although sleep states are commonly discerned through electroencephalogram (EEG) signals, they can also be decoded through analysis of non-EEG signals(<xref ref-type="bibr" rid="c25">25</xref>&#x2013;<xref ref-type="bibr" rid="c27">27</xref>) since sleep modifies a variety of biosignals(<xref ref-type="bibr" rid="c28">28</xref>, <xref ref-type="bibr" rid="c29">29</xref>), including blood pressure, heart rate, and respiration. Additionally, respiration and ECG measurements are easier to acquire, offer a more practical and repeatable diagnostic tool compared to EEG, and better reflect sleep physiology compared to actigraphy and subjective assessments. For this study, we used deep neural network models to determine sleep stages from heart rate variability (HRV), derived from ECG, and breathing signals, obtained with a single respiratory effort belt. We analyzed how well the HRV and breathing models agreed in determining sleep stages both in ICU patients and in age and sex-matched patients referred to a clinical sleep laboratory. We hypothesized that agreement between the two models signifies confidence in the determined sleep stage. To test this hypothesis, we used the sleep laboratory dataset to compare sleep staging performance between our model agreement method and the gold standard, which involves manual scoring of polysomnography EEG signals by experts. We also hypothesized that the HRV and breathing models would agree substantially in the ICU dataset, although we expected more disagreement compared to the sleep laboratory dataset given the extent of respiratory and cardiac physiology in critical illness. To characterize variables that could reduce the reliability of the presented HRV- and breathing-based sleep analysis in the ICU, we evaluated whether specific HRV- and respiratory features, medical conditions, severity of illness, and pharmacological drugs are associated with disagreement of these two sleep staging models.</p>
+<p>The second aim of this study was to identify common patterns of sleep pathology in ICU patients compared to non-critically ill patients undergoing overnight diagnostic polysomnography recordings for suspected sleep disorders in the sleep laboratory. We computed common sleep statistics and respiratory variables such as respiratory rate and sleep breathing variability, for both cohorts, and tested the robustness of our results through sensitivity analysis.</p>
+<p>Finally, sleep has been shown to be fragmented in the ICU(<xref ref-type="bibr" rid="c30">30</xref>), which prevents patients from getting adequate consolidated periods of rest. As such, the last aim of this study was to quantify sleep fragmentation in patients admitted to the ICU.</p>
+</sec>
+<sec id="s2">
+<label>II.</label>
+<title>Methods</title>
+<sec id="s2a">
+<label>A.</label>
+<title>Study Oversight</title>
+<p>Patients were enrolled after written consent in a randomized clinical trial, Investigation of Sleep in the Intensive Care Unit (NCT03355053, (<xref ref-type="bibr" rid="c31">31</xref>)), at the Massachusetts General Hospital (MGH) from June 2018 to November 2019. The clinical trial involved randomizing patients into three groups, where two of the groups received a low dose of dexmedetomidine (0.1 or 0.3 mcg/kg/h) overnight continuously for 11 hours, and the third group received placebo (normal saline). Exclusion criteria for the clinical trial include severe dementia, known pre-existing neurologic diseases or cognitive deficits, serious cardiac disease, severe liver dysfunction, severe renal dysfunction, and low likelihood of survival for 24 hours &#x2013; all criteria can be found in the online supplement. The study was approved by the Mass General Brigham Institutional Review Board.</p>
+</sec>
+<sec id="s2b">
+<label>B.</label>
+<title>Dataset &#x2013; ICU Cohort</title>
+<p>The sample size for this study was determined by starting with enrolled patients and then excluding all patients under 45 years of age and patients who had less than 2 hours of ECG or respiratory data. Patients were non-mechanically ventilated at the time of enrollment, although some were subsequently mechanically ventilated during the course of hospitalization; see <bold><xref rid="tbl1" ref-type="table">Table 1</xref></bold>. At the start of the trial, a respiratory belt (<italic>Airgo</italic>, a CE Class IIa certified wearable medical device (<xref ref-type="bibr" rid="c32">32</xref>), <bold><xref ref-type="fig" rid="figs1">Figure S1</xref></bold>) was placed around a patient&#x2019;s chest, as close to the floating ribs as possible, until they were transferred outside of the ICU. The belt contains a conductive silver band that measures respiratory effort by sensing changes in electrical resistance that correspond to changes in belt length induced by thoracic movements. The amplitude values of the belt were not calibrated. The sampling frequency was 10 Hz. In addition to demographic data, we collected information regarding labs, medications, vital signs, and ICD-10 codes from the hospital&#x2019;s electronic medical records. Vital signs at higher time resolution (0.5 Hz) and electrocardiogram (ECG) (256 Hz) data were collected from the bedside telemetry monitors over the hospital network using BedMaster software (Excel Medical, Jupiter, FL). Signals collected through bedside monitors and the wearable respiratory device both contained real-time timestamps; correct alignment was manually reviewed for all patients. Charlson Comorbidity Index(<xref ref-type="bibr" rid="c33">33</xref>) and Sequential Organ Failure Assessment (SOFA)(<xref ref-type="bibr" rid="c34">34</xref>) scores were computed.</p>
+<table-wrap id="tbl1" orientation="portrait" position="float">
+<label>Table 1.</label>
+<caption><p>Baseline Characteristics</p></caption>
+<graphic xlink:href="21264039v1_tbl1.tif"/>
+<graphic xlink:href="21264039v1_tbl1a.tif"/>
+</table-wrap>
+<p><italic>Sleep Laboratory Cohort</italic>: 404 patients who underwent overnight polysomnography (PSG) in the Massachusetts General Hospital sleep laboratory between January 2019 and January 2020 wore the same respiratory belt that was used in the ICU cohort. Participants were enrolled through verbal consent shortly before onset of the PSG. There were no exclusion criteria and enrollment stopped after reaching a target sample size of 404 patients. This study was also approved by the Mass General Brigham Institutional Review Board. To use sleep laboratory patients as control subjects for comparison with ICU patients, we applied the same exclusion criteria, i.e., excluding all patients under 45 years of age. We also balanced the distribution of age and sex between the ICU and sleep lab cohorts by applying k-nearest-neighbor matching, as previously described(<xref ref-type="bibr" rid="c35">35</xref>). We further stratified sleep lab patients according to their Apnea-Hypopnea-Index (AHI) severity into no-disordered breathing (AHI &#x003C; 5) and disordered breathing (AHI &#x003E; 15) groups and applied the same matching method for each of these subgroups. Seven trained sleep technicians annotated PSG studies as part of routine clinical care according to American Academy of Sleep Medicine guidelines (<xref ref-type="bibr" rid="c36">36</xref>).</p>
+</sec>
+<sec id="s2c">
+<label>C.</label>
+<title>Biosignals Preprocessing</title>
+<p>Non-physiological data and data with low signal quality were removed from both the ECG and respiratory effort belt signal. For the respiratory signal, this was done with an algorithm checking for high and constant amplitude (belt not worn) and for absence of reliable breath detection (low signal quality). For each patient, we normalized the respiratory signal by subtracting the mean and dividing by the standard deviation calculated from the 1-99&#x0025; quantile clipped signal. We used the open-source PhysioNet Cardiovascular Signal Toolbox(<xref ref-type="bibr" rid="c37">37</xref>) to filter the ECG signal, extract R peaks based on the Pan Tompkins algorithm(<xref ref-type="bibr" rid="c38">38</xref>), and obtain a signal quality measure. We provide parameter settings for the preprocessing steps in the online supplement.</p>
+</sec>
+<sec id="s2d">
+<label>D.</label>
+<title>Sleep Staging</title>
+<p>We used deep neural network models that use heart rate variability (a binary sequence with 1 for a detected R-peak in the ECG, 0 else) and respiratory effort signals as inputs to assign a sleep stage (Wake, R, N1, N2 and N3) to every 30-second epoch. We previously validated this approach on datasets from the MGH sleep laboratory and the Sleep Heart Health Study(<xref ref-type="bibr" rid="c27">27</xref>). Here, we used a model trained with signals from the wearable respiratory belt as input. For visual representation of the resulting sleep stages for all patients, swimmer plots were created.</p>
+</sec>
+<sec id="s2e">
+<label>E.</label>
+<title>Breathing Features</title>
+<p>From the respiratory belt&#x2019;s signal, we computed four features using a moving window approach:
+<list list-type="roman-lower">
+<list-item><p>Respiratory rate (RR): number of breaths (inspiratory peaks) detected in 10 seconds (moving window) x 6.</p></list-item>
+<list-item><p>Inter-breath-interval (IBI): time (seconds) between two consecutive breaths.</p></list-item>
+<list-item><p>Ventilation coefficient of variation (ventilation CVar): we first computed a proxy of minute ventilation as the sum of positive amplitude changes (inspiration) over 10 seconds and scaled it to a reference of one minute (multiplied by 6), then computed the coefficient of variation over a 30-second window.</p></list-item>
+<list-item><p>Variability index: we computed the coefficient of variation of the IBIs over a 30-second window, and defined the variability index as: variability index &#x003D; (ventilation CVar &#x002B; IBI CVar)/2, i.e., the mean of the coefficient of variation computed from the breathing timing (IBI) and breathing amplitude (ventilation).</p></list-item>
+</list>
+</p>
+</sec>
+<sec id="s2f">
+<label>F.</label>
+<title>Statistical Analysis &#x2013; Sleep Staging</title>
+<p><italic>Definition - concordant and discordant sleep</italic>. For all analyses in this study, we only used data where both HRV and breathing data was simultaneously available. We applied both the HRV and breathing-based sleep staging models individually on all data. Each 30-second epoch in the data was assigned a sleep stage by the HRV- and breathing-based models, yielding two hypnograms. Because disagreement in sleep staging in human experts is common(<xref ref-type="bibr" rid="c39">39</xref>), and because stages between wake, N1, N2, and N3 form a continuum, we defined <italic>concordance</italic> regarding the stage assigned to a given 30-second epoch of sleep if the models agreed to within one stage, and <italic>discordance</italic> if they did not. Specifically, we defined an ordinal progression of sleep depth for NREM sleep: W &#x003C; N1 &#x003C; N2 &#x003C; N3, such that e.g., if the HRV and breathing-based models assigned W and N1, respectively, this would be considered concordant; whereas assignments of W and N2 would be considered discordant. For REM sleep R, models were considered concordant only if both assigned a stage of R. For completeness, the full set of concordant and discordant stage assignments were:</p>
+<p><italic>Concordance</italic>: (W, W), (N1, N1), (N2, N2), (N3, N3), (R, R), (W, N1), (N1, N2), (N2, N3).</p>
+<p><italic>Discordance</italic>: (W, N2), (W, N3), (W, R), (N1, N3), (R, N1), (R, N2), (R, N3).</p>
+<p>For the sleep lab polysomnography data, sleep staging agreements between the models and the experts were measured with confusion matrices and Cohen&#x2019;s kappa(<xref ref-type="bibr" rid="c40">40</xref>) for both concordant and discordant data.</p>
+<p><italic>Sleep indices</italic>. We split each patient&#x2019;s data into 24-hour segments (<italic>full day</italic>), starting and ending at 08:00, and further defined <italic>day</italic> as 08:00 &#x2013; 20:00 and <italic>night</italic> as 20:00 &#x2013; 08:00. For every 24-hour segment, we obtained the HRV-based and breathing-based hypnograms, and computed the following <italic>sleep indices</italic>:
+<list list-type="order">
+<list-item><p>Total sleep duration (in hours).</p></list-item>
+<list-item><p>Concordant sleep duration (in hours).</p></list-item>
+<list-item><p>Discordant sleep duration (in hours).</p></list-item>
+<list-item><p>Proportion of discordant sleep from total sleep (in &#x0025;).</p></list-item>
+<list-item><p>Sleep fraction (&#x0025;): sleep duration divided by amount of data available.</p></list-item>
+<list-item><p>Stage R (&#x0025;), Stage N1 (&#x0025;), Stage N2 (&#x0025;), Stage N3 (&#x0025;), Stage N2&#x002B;N3(&#x0025;): Time spent in a specified sleep stage divided by sleep duration.</p></list-item>
+<list-item><p>Sleep fragmentation index (SFI): Number of sleep stage transitions from (N2, N3, R) to (N1, W) divided by sleep duration.</p></list-item>
+<list-item><p>Wake transitions / hour: Number of sleep stage transitions from (N1, N2, N3, R) to (W) divided by sleep duration.</p></list-item>
+</list>
+We further computed mean sleep indices across the models:
+<disp-formula>
+<alternatives><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="21264039v1_ueqn1.gif"/></alternatives>
+</disp-formula>
+where x is any of the 8 sleep indices listed above.</p>
+<p>To ensure robust conclusions regarding sleep indices, we performed sensitivity analysis, by computing sleep indices using three complementary approaches. The approaches vary by what segments are included for sleep index computation, and by which part of sleep (total sleep or concordant sleep) is used to compute the sleep indices:
+<list list-type="simple">
+<list-item><p>A1. Inclusion criteria: Any amount of sleep. Sleep indices computed on total sleep.</p></list-item>
+<list-item><p>A2. Inclusion criteria: At least two hours of concordant sleep. Sleep indices computed on total sleep.</p></list-item>
+<list-item><p>A3. Inclusion criteria: At least two hours of concordant sleep. Sleep indices computed on concordant sleep.</p></list-item>
+</list>
+For each approach, we carried out the following test procedure: For every subject we computed the mean sleep indices (mean x<sub>mean</sub> across all 24-hour segments). We then applied a Mann-Whitney U (MWU) test (H0: &#x2018;equal distribution for both groups&#x2019;) and Mood&#x2019;s median test (H0: &#x2018;equal medians for both groups&#x2019;) to assess statistical difference between the ICU and sleep lab (overall and AHI subgroups) subjects. We considered sleep indices to be significantly different for two groups (Mann-Whitney U) with a significantly different effect direction (Mood&#x2019;s median test) if both tests resulted in a p-value of less than 0.05. We chose to apply non-parametric tests instead of t-tests because we found that none of the data were normally distributed in either the ICU or sleep lab group, where we define non-normally distributed to mean that either the Shapiro-Wilk or D&#x2019;Agostino&#x2019;s K-squared test rejects null hypothesis of normality for alpha&#x003D;0.05. We report test results for all applied statistical tests.</p>
+<p><italic>Sleep fragmentation in the ICU.</italic> We characterized sleep fragmentation in the ICU(<xref ref-type="bibr" rid="c30">30</xref>) by the following metrics using HRV model-based sleep stages:
+<list list-type="order">
+<list-item><p>Proportion of day (08:00 &#x2013; 20:00) spent asleep.</p></list-item>
+<list-item><p>Proportion of night (20:00 &#x2013; 08:00) spent asleep.</p></list-item>
+<list-item><p>Proportion of sleep occurring in the day versus in the night.</p></list-item>
+<list-item><p>Proportion of REM sleep occurring in the day versus in the night.</p></list-item>
+<list-item><p>Number of sleep periods, with a duration of at least one minute, per 24 hours.</p></list-item>
+<list-item><p>Number of sleep periods, with a duration of at least five minutes, per 24 hours.</p></list-item>
+</list>
+<italic>Subgroup Analysis.</italic> The ICU patients were manually grouped according to their primary and main conditions, and the median sleep indices (HRV-based model, analysis approach A2) were computed for each group. The Kruskal-Wallis H test was applied to assess differences of individual sleep indices between groups.</p>
+<p><italic>Latent feature representation of sleep.</italic> To assess similarities and differences in the latent feature representation between sleep epochs in the ICU and the sleep lab, we computed unsupervised UMAPs (Uniform Manifold Approximation and Projection)(<xref ref-type="bibr" rid="c41">41</xref>) based on the sleep staging neural networks&#x2019; last hidden layer activations. UMAPs were created separately for the HRV-based model and breathing-based model across pooled sleep lab and ICU data, see supplement for details.</p>
+<p><italic>Disagreement between HRV and breathing models - error analysis.</italic> We hypothesized that the following variables affect discordance in the HRV- and breathing-based models: 1) specific features from cardiac and respiratory signals; 2) daily dosing of opioids, benzodiazepines, and antipsychotics; 3) SOFA score, a measure of a patient&#x2019;s illness severity. HRV and breathing features of interest were: RR interval, RR root mean square of successive differences (RMSSD), HRV very low frequency power (VLF), HRV low frequency power (LF), HRV high frequency power (HF), inter-breath-intervals, respiratory rate, respiratory variability index, ventilation CVar, cardiopulmonary coupling(<xref ref-type="bibr" rid="c42">42</xref>) (CPC) low frequency coupling (LFC), CPC high frequency coupling (HFC). We computed these features for concordant and discordant sleep parts for each 24-hour segment and performed a Mann&#x2013;Whitney U test with a significance level of 0.01 for each feature pair. Next, we computed features for each 24-hour segment and performed multilinear regression analysis with a LASSO penalty, with the features as independent variables and the discordant proportion (log-transformed) as the dependent variable. To test if daily administered doses of opioids (in Fentanyl milligram(<xref ref-type="bibr" rid="c43">43</xref>)), benzodiazepines (in Midazolam milligram(<xref ref-type="bibr" rid="c44">44</xref>, <xref ref-type="bibr" rid="c45">45</xref>)), antipsychotics (DDD method(<xref ref-type="bibr" rid="c46">46</xref>)) and the SOFA score were associated with discordance, we computed Pearson and Spearman correlations between each of these variables and the proportion of discordant sleep for each 24-hour segment.</p>
+</sec>
+<sec id="s2g">
+<label>G.</label>
+<title>Statistical Analysis &#x2013; Breathing</title>
+<p>For every 24-hour segment with at least two hours of concordant sleep, we computed the breathing features as described above from concordant sleep and for each sleep stage. For each patient we averaged the features across all nights. For ICU and sleep lab cohorts, we computed the mean and standard deviation of each feature and assessed statistically significant differences between cohorts with t-tests for Gaussian features or Mann-Whitney U tests and Mood&#x2019;s median test (analogous to sleep stage analysis) for non-Gaussian features.</p>
+<p>Results are reported in accordance with the Strengthening the Reporting of Observational Studies in Epidemiology (STROBE) guidelines(<xref ref-type="bibr" rid="c47">47</xref>). We provide the de-identified data, the analysis code and computational models used in this study on our GitHub page(<xref ref-type="bibr" rid="c48">48</xref>).</p>
+</sec>
+</sec>
+<sec id="s3">
+<label>III.</label>
+<title>Results</title>
+<sec id="s3a">
+<label>B.</label>
+<title>Dataset</title>
+<p>For the ICU cohort, 129 patients were enrolled in the clinical trial; we excluded two patients under 45 years old, and 25 patients for having less than 2 hours of ECG or respiratory data available from our analysis, resulting in a cohort size of 102 patients (41 females, 61 males). In the sleep lab cohort, out of 404 enrolled patients, 97 were excluded due to age under 45 years, resulting in a sample size of 307 before matching. Matching resulted in 220 (98 females, 122 males) sleep lab patients, 77 (40 females, 37 males) with an AHI &#x003C; 5 and 52 (18 females, 34 males) with an AHI &#x003E; 15. Age distributions were similar for ICU and matched groups, both for male and female subjects; see <bold><xref ref-type="table" rid="tbls1">Table S1</xref></bold> for details. <bold><xref rid="tbl1" ref-type="table">Table 1</xref></bold> summarizes the baseline characteristics of the ICU and the matched sleep lab cohort.</p>
+</sec>
+<sec id="s3b">
+<label>C.</label>
+<title>Biosignals Preprocessing</title>
+<p>After signal preprocessing, we obtained 6,728 hours (280 days) of ECG data, 3,886 hours (162 days) of breathing data, and 3,502 hours (146 days) of simultaneous ECG and breathing data for the ICU cohort. For the sleep lab cohort, the numbers were 1,634, 1,609, and 1,562 hours, respectively. Mean (SD) hours of data available per patient in the ICU (N&#x003D;103) were ECG 66.0 (27.8), Breathing 38.1 (28.1), for simultaneous ECG and breathing signals 34.3 (24.6), and for the sleep lab (N&#x003D;220) 7.4 (0.8), 7.3 (1.0), 7.1 (0.9) hours respectively.</p>
+</sec>
+<sec id="s3c">
+<label>F.</label>
+<title>Statistical Analysis, Sleep Staging</title>
+<p>In the sleep laboratory data, 131,157 out of 173,977 30-second epochs (75.4&#x0025;) were assigned concordant sleep stages by the HRV- and breathing-based models. The models showed higher staging agreements with experts for concordant data than for discordant data, both when agreement was evaluated with Cohen&#x2019;s kappa with AASM standard stages (W, R, N1, N2, N3), as well as with combined NREM stages (W, R, NREM), see <bold><xref rid="fig1" ref-type="fig">Figure 1</xref></bold>.</p>
+<fig id="fig1" position="float" orientation="portrait" fig-type="figure">
+<label>Figure 1:</label>
+<caption><p>Model performance evaluation on 220 covariate-matched sleep laboratory patients. Data where the HRV- and breathing-based sleep stages were in concordance (see main text for definition) also showed higher agreement with human expert labels. In total, 75.4&#x0025; of all 30-second epochs were assigned concordant sleep stages by the models. For the discordant sleep epochs, the breathing-based sleep stages had markedly higher agreement with the expert labels than the HRV-based sleep stages.</p></caption>
+<graphic xlink:href="21264039v1_fig1.tif"/>
+</fig>
+<p>The three analysis approaches resulted in the following total sleep times (TST), concordant sleep times (CST), and proportions sleep (S(&#x0025;)) per 24-hour segment (numbers given as mean (SD)):
+<list list-type="simple">
+<list-item><p><bold>A1. Inclusion: <underline>any sleep;</underline> sleep indices computed on <underline>total</underline> sleep:</bold></p>
+<p>ICU: 102 subjects (274 24-hour segments), TST <bold>6.2 (3.1)</bold> hours, S(&#x0025;) <bold>50.4 (19.7)</bold></p>
+<p>Sleep lab: 220 subjects (220 segments), TST <bold>4.9 (1.6)</bold> hours, S(&#x0025;) <bold>73.9 (19.3)</bold></p></list-item>
+<list-item><p><bold>A2. Inclusion: &#x2265;<underline>2 hours of concordant sleep</underline>; sleep indices computed on <underline>total</underline> sleep</bold>:</p>
+<p>ICU: 80 subjects (163 segments), TST <bold>8.6 (3.0)</bold> hours, S(&#x0025;) <bold>56.4 (18.7)</bold></p>
+<p>Sleep lab: 190 subjects (190 segments), TST <bold>5.3 (1.3)</bold> hours, S(&#x0025;) <bold>76.7 (16.4)</bold></p></list-item>
+<list-item><p><bold>A3. Inclusion: <underline>&#x2265;2 hours of concordant sleep</underline>; sleep indices computed on <underline>concordant</underline> sleep:</bold></p>
+<p>ICU: 80 subjects (163 segments), CST <bold>4.2 (1.7)</bold> hours, S(&#x0025;) <bold>58.3 (26.9)</bold></p>
+<p>Sleep lab: 190 subjects (190 segments), CST <bold>4.1 (1.4)</bold> hours, S(&#x0025;) <bold>76.8 (18.2)</bold></p></list-item>
+</list>
+Sleep staging results for each patient over time are shown in <bold><xref rid="fig2" ref-type="fig">Figure 2</xref></bold> and <bold><xref ref-type="fig" rid="figs2">Figure S2</xref></bold>, sample hypnograms for both ICU and sleep lab patients are shown in <bold><xref rid="fig3" ref-type="fig">Figure 3</xref></bold>.</p>
+<fig id="fig2" position="float" orientation="portrait" fig-type="figure">
+<label>Figure 2.</label>
+<caption><p>Swimmer plot visualizing sleep stages over time for 102 ICU patients. One line represents one patient, and patients are sorted by the proportion of sleep stage discordance (see main text for definition). For sleep epochs where HRV and breathing-based models were in concordance (60&#x0025; of the data), the data is colored according to the sleep stages NREM (pooled N1, N2, N3), REM and Wake as assigned by the breathing-based (top half of each line) and HRV-based (bottom half of each line) sleep staging models. Epochs where HRV and breathing-based models were discordant (40&#x0025; of the data) are marked as orange. Both sleep stage distribution and the amount of discordance considerably varied among patients.</p></caption>
+<graphic xlink:href="21264039v1_fig2.tif"/>
+</fig>
+<fig id="fig3" position="float" orientation="portrait" fig-type="figure">
+<label>Figure 3.</label>
+<caption><p>In this study, we used deep neural networks to stage sleep from both HRV- and breathing data, and defined concordance between the two resulting hypnograms (see main text). Hypnogram data for three sample patients from the sleep laboratory and three sample patients from the ICU are shown here and sorted by HRV- and breathing model concordance. The sleep laboratory data (clinical polysomnographies) included expert-scored sleep stages and respiratory events. Abbreviations: AHI D./T. Apnea-Hypopnea Index diagnostic/titration part of split night.</p></caption>
+<graphic xlink:href="21264039v1_fig3.tif"/>
+</fig>
+<p><italic>Sleep indices.</italic> For approach A2, the results of the sleep indices computation on a 24-hour level for the HRV and breathing models, together with the expert labels for the sleep lab data, are shown in <bold><xref rid="fig4" ref-type="fig">Figure 4</xref></bold>. Mean total sleep time per 24 hours in the ICU was determined to be 6.5 hours with the HRV-based model and 11.8 hours with the breathing-based model (&#x002B; 81.5&#x0025;). In the sleep lab, total sleep time was determined to be 4.9 hours with HRV-based model and 5.7 hours with breathing model (&#x002B;16.3&#x0025;) and 5.6 hours by the human sleep expert.</p>
+<fig id="fig4" position="float" orientation="portrait" fig-type="figure">
+<label>Figure 4.</label>
+<caption><p>Sleep staging results for a surgical and medical ICU (N&#x003D;80 subjects, 163 24-hour segments) and for an age- and sex-matched sleep laboratory cohort (N&#x003D;190 subjects, 190 nights), where for each 24-hour segment or night sleep was detected at least once. Inclusion of all available ICU patients (N&#x003D;102), i.e. without minimum sleep requirement, resulted in a mean total sleep time of 6.2 (3.1) hours per 24 hours in the ICU. Sleep stages were determined by breathing (respiratory effort) and heart rate variability (HRV)-based deep neural network models. For the sleep lab, additional human expert labels were available. <bold>A.</bold> Mean (one standard deviation) sleep indices. TS: total sleep time (hours), CS: concordant sleep time (hours), DS: discordant sleep time (hours), S: sleep percentage of total recording (&#x0025;), SFI: sleep fragmentation index, WT: wake transitions per hour of sleep. <bold>B.</bold> Median (inter-quartile range) sleep indices for ICU and sleep lab cohort for both breathing- and HRV-based sleep staging models.</p></caption>
+<graphic xlink:href="21264039v1_fig4.tif"/>
+</fig>
+<p><bold><xref rid="fig5" ref-type="fig">Figure 5</xref></bold> depicts sleep indices (mean of breathing and HRV-based indices) distributions for all patients. In the ICU, there was a greater proportion of N1 compared to the AHI&#x003C;5 sleep lab cohort (p MWU&#x003D;0.05) and significantly less N2 compared to all sleep lab cohorts (p&#x003C;0.001). The proportion of N2&#x002B;N3 was reduced compared to total sleep lab (p&#x003C;0.01) and sleep lab AHI&#x003C;5 (p&#x003C;0.001) cohorts but not compared to the sleep lab subgroup with AHI&#x003E;15. While stage R distributions showed heavier tails in the ICU cohort (p MWU&#x003D;0.05). Median wake transitions per hour of sleep were similar in the ICU and sleep lab AHI&#x003E;15 groups (3.6 and 3.9), but lower in the sleep lab AHI&#x003C;5 group (2.7, p&#x003C;0.05). The ICU cohort showed a larger proportion of discordance between the breathing and HRV-based sleep staging models compared to the sleep lab cohort (41&#x0025; and 19&#x0025; respectively). In the ICU, a median of 25&#x0025; of the day (08:00 &#x2013; 20:00) and 41&#x0025; of the night (20:00 &#x2013; 08:00) were spent asleep. 38&#x0025; of total sleep and 51&#x0025; of R sleep occurred during daytime hours.</p>
+<fig id="fig5" position="float" orientation="portrait" fig-type="figure">
+<label>Figure 5.</label>
+<caption><p>Sleep indices distribution visualized with violin plots and embedded boxplots (inter-quartile ranges: black rectangles) and medians (white dots); numerical values at bottom of distribution plots show median (interquartile range). <bold>A.</bold> Sleep Indices (mean of breathing and HRV-based indices) in the ICU (N&#x003D;80 patients) and age and sex-matched sleep lab cohorts (N all &#x003D; 190 subjects, N AHI&#x003C;5 &#x003D; 69 subjects, N AHI&#x003E;15 &#x003D; 49 subjects), both with requirement of minimum of 2 hours of detected sleep. Mann-Whitney U (MWU) tests and Mood&#x2019;s median (MM) tests were applied to compare the ICU and sleep lab cohorts, and significance was indicated if both tests reached a given significance level. Stage R distributions showed heavier tails in the ICU cohort; statistical comparisons of differences did not reach significance. In the ICU, there was a larger proportion of light sleep (N1) compared to the AHI&#x003C;5 sleep lab cohort (p MWU&#x003D;0.05), and significantly less N2 compared to all sleep lab cohorts. The proportion of N2&#x002B;N3 was also reduced compared to total sleep lab and AHI&#x003C;5 cohorts but not compared to subjects with AHI&#x003E;15. Median wake transitions per hour of sleep were similar in the ICU and AHI&#x003E;15 group (3.6 and 3.9), and significantly lower in the AHI&#x003C;5 group (2.7). The ICU cohort showed a significantly greater proportion of discordance between the breathing and HRV-based sleep staging models. <bold>B.</bold> Sleep fragmentation indices obtained in the ICU. Median 25&#x0025; of the day (08:00 &#x2013; 20:00) and 41&#x0025; of the night (20:00 &#x2013; 08:00) were spent asleep. 38&#x0025; of total sleep and 51&#x0025; of R sleep occurred during the day.</p></caption>
+<graphic xlink:href="21264039v1_fig5.tif"/>
+</fig>
+<p>The following sleep indices results for the ICU were confirmed (same effect direction, all significant) by all analysis approaches A1-A3: Elevated discordant sleep time and proportion, reduced N2 proportion, and reduced N2&#x002B;N3 proportion. The number of wake transitions per hour of sleep in the ICU was increased compared to the total sleep lab cohort (significant in 2 out of 3 analysis approaches), significantly increased compared to the sleep lab AHI&#x003C;5 cohort (significant in all analysis approaches), and similar compared to the sleep lab AHI&#x003E;15 cohort (not significantly different in any analysis approach). Results for the three analysis approaches are presented in <bold>Tables S2-S6;</bold> a summary is presented in <bold><xref ref-type="table" rid="tbls7">Table S7</xref></bold>.</p>
+<p><italic>Subgroup Analysis.</italic> The median and interquartile ranges of sleep indices for patients grouped by diagnosis are shown in <bold><xref rid="fig6" ref-type="fig">Figure 6</xref></bold> (and <bold><xref ref-type="table" rid="tbls8">Table S8</xref></bold> for numerical values including test results<bold>)</bold>. Kruskal Wallis tests were not significant for any of the sleep indices (minimum p-value of 0.08 observed for N3 proportion). Patients with lowest N2&#x002B;N3(&#x0025;) observed had diagnoses of hemorrhage, shock, and encephalopathy, and patients with highest N1(&#x0025;) had diagnoses of hemorrhage, sepsis and encephalopathy. Discordant sleep proportion was highest for patients with cirrhosis and liver transplant, pneumothorax, respiratory failure, and pneumonia, and lowest for patients with shock, hemorrhage, and acute kidney failure.</p>
+<fig id="fig6" position="float" orientation="portrait" fig-type="figure">
+<label>Figure 6.</label>
+<caption><p>Median and interquartile ranges for sleep indices for ICU patients with at least two hours of detected sleep (N&#x003D;80), grouped by their primary or main condition, with number of patients per condition shown in parentheses. Kruskal Wallis tests were not significant (p&#x003E;0.05) for any of the sleep indices.</p></caption>
+<graphic xlink:href="21264039v1_fig6.tif"/>
+</fig>
+<p><italic>Latent feature representation of sleep.</italic> We generated 2-dimensional maps by using the deep neural network last hidden layer&#x2019;s activation for each epoch as inputs for the UMAP (<bold><xref rid="fig7" ref-type="fig">Figure 7</xref></bold>). Coloring the data points with the predicted sleep stage shows clusters that correspond to those sleep stages (<bold><xref rid="fig7" ref-type="fig">Figure 7A</xref></bold>). For some sleep stages more than one cluster is apparent (HRV: R, N1, N3; Breathing: R, N3). For each sleep stage, estimated gaussian kernel densities of the UMAP-derived features show that the ICU features largely overlap with the sleep lab features, but are more widely dispersed (i.e., more variable) than in the sleep lab cohort (<bold><xref rid="fig7" ref-type="fig">Figure 7B</xref></bold>).</p>
+<fig id="fig7" position="float" orientation="portrait" fig-type="figure">
+<label>Figure 7.</label>
+<caption><p>Latent Feature Analysis: Two-dimensional UMAP (Uniform Manifold Approximation and Projection) representations were computed with all epochs&#x2019; last hidden layer activations of the HRV-based and breathing-based deep neural networks. <bold>A.</bold> Data points are colored by predicted sleep stage, revealing clusters that correspond to sleep stages in both sleep lab and ICU data. <bold>B.</bold> For each sleep stage, probability density functions were estimated for the sleep lab and ICU data. While there is overlap between distributions (showing features computed from the ICU data are similar to features computed from the sleep lab data), the distributions of the ICU data are more dispersed (showing features in the ICU that are not present in the sleep lab data).</p></caption>
+<graphic xlink:href="21264039v1_fig7.tif"/>
+</fig>
+<p><italic>Disagreement HRV and breathing model - error analysis.</italic> Out of 44 computed biosignal-based features, 27 showed a significantly different distribution (Mann&#x2013;Whitney U test, significance level 0.01) between concordant and discordant sleep, see <bold>Tables S9-S10</bold> for details on the difference between HRV and breathing models. For N1, significantly reduced mean values in discordant sleep were observed for HRV-VLF, HRV-LF, HRV-HF, HRV-RMSSD, inter-breath-intervals, respiratory variability, ventilation CVar, CPC-LFC, CPC-HFC, and significantly increased for respiratory rate. For N2, NN-interval duration, inter-breath-intervals, respiratory variability, ventilation CVar were reduced, while HRV-VLF, HRV-LF, and respiratory rate were increased. For N3, NN-interval duration was decreased, while HRV-VLF, HRV-LF, HRV-HF, HRV-RMSSD, respiratory variability, ventilation CVar and CPC-LFC were increased. Lastly, for REM sleep, we observed increased HRV-RMSSD and CPC-HFC for discordant sleep compared to concordant equivalents.</p>
+<p>In the multivariate linear regression analysis, the automated feature selection (see supplement for details) led to a model with 53 input variables (F-test statistic of 1.51, a F-test p-value of 0.036) and an r-squared value of 0.424. Hence, on a 24-hour segment level, the computed HRV and breathing features could explain up to 42&#x0025; of the variance of discordant sleep proportion.</p>
+<p>None of SOFA scores, amounts of opioids, benzodiazepines or antipsychotics administered correlated with the discordant sleep proportion (all p-values for Pearson and Spearman correlations &#x003E;0.05, see <bold><xref ref-type="table" rid="tbls11">Table S11</xref></bold>).</p>
+</sec>
+<sec id="s3d">
+<label>G.</label>
+<title>Statistical Analysis &#x2013; Breathing</title>
+<p><bold><xref rid="fig8" ref-type="fig">Figure 8</xref></bold> shows the mean and standard deviation of breathing features during sleep for each patient. The mean and standard deviation of respiratory rate during sleep was significantly larger for the ICU (mean respiratory rates &#x003D; 17.4 cycles per minute, respiratory rate standard deviation &#x003D; 4 cycles per minute, p&#x003C;0.01), compared to the sleep lab patients. The median inter-breath-interval during sleep was significantly lower in the ICU (3.8 seconds) compared to the sleep lab (4.7 seconds). Effect directions were the same (with significance p&#x003C;0.001) for the sleep lab AHI&#x003C;5 and sleep lab AHI&#x003E;15 groups. The mean and standard deviations of the ventilation&#x2019;s coefficient of variation (as a proxy for minute ventilation) was significantly smaller in the ICU (p&#x003C;0.05). The mean respiratory variability index in the ICU was smaller compared to the AHI&#x003E;15 group (p&#x003C;0.001) and larger to the AHI&#x003C;5 group (not significant). See <bold><xref ref-type="table" rid="tbls12">Table S12</xref></bold> for a summary and <bold><xref ref-type="table" rid="tbls13">Table S13</xref></bold> for details.</p>
+<fig id="fig8" position="float" orientation="portrait" fig-type="figure">
+<label>Figure 8.</label>
+<caption><p>Breathing features during sleep for ICU (N&#x003D;80) and sleep lab (N&#x003D;190) patients. From the respiratory effort breathing signal obtained with a wearable band, we computed four features for all patients: respiratory rate, inter-breath-intervals, variability index, and as a proxy for minute ventilation, ventilation coefficient of variation (CVar). We compared the Intensive Care Unit (ICU) cohort with the full sleep lab cohort and the Apnea-Hypopnea-Index (AHI)-stratified cohorts. Significance levels are denoted as &#x002A; for p&#x003C;0.05 and &#x002A;&#x002A;&#x002A; for p&#x003C;0.001. We show the scatter plots stratified by each sleep stage and tables containing the numerical values in the Online Supplement.</p></caption>
+<graphic xlink:href="21264039v1_fig8.tif"/>
+</fig>
+</sec>
+</sec>
+<sec id="s4">
+<label>IV.</label>
+<title>Discussion</title>
+<p>Our main contributions are the following key findings: 1) In the ICU, heart rate variability (through ECG) and respiratory information provide meaningful information about sleep stage, quality, and fragmentation &#x2013; this is significant because HRV and respiratory signals are much more easily obtained in the ICU than conventional polysomnography; 2) Clear differences are evident between sleep indices of ICU patients and those of an age and sex-matched clinical sleep laboratory cohort, such as decreased N2 and N2&#x002B;N3 proportions in the ICU; 3) Sleep indices of ICU patients, particularly awakening frequency, resemble those of sleep-disordered breathing (SDB) sleep laboratory patients more closely than those of non-SDB patients; 4) Sleep stage concordance between HRV- and breathing-based models was associated with higher agreement with experts compared to sleep stage discordance; 5) The proportion of sleep stage concordance was lower in the ICU (60&#x0025;) compared to the sleep laboratory cohort (81&#x0025;); 6) Sleep in the ICU is fragmented; 7) ICU patients showed higher respiratory rate compared to sleep laboratory patients, higher breathing variability compared to non-SDB sleep laboratory patients, and lower breathing variability compared to SDB sleep laboratory patients.</p>
+<p><italic>Sleep in the ICU</italic> &#x2013; In this study we compared sleep of ICU patients with covariate-matched sleep laboratory patients. Sleep indices of ICU patients obtained from the HRV- and breathing-based deep neural network sleep staging models were robust across sensitivity analyses. Compared to the sleep laboratory cohort, we observed a shift of NREM sleep stage proportion from N2 and N3 towards more light and non-restorative N1. This is significant, as there has been growing evidence that deep NREM sleep has a crucial role in neurophysiological phenomena such as immunity, glucose metabolism, hormone release and memory(<xref ref-type="bibr" rid="c49">49</xref>). The median amount of REM sleep in ICU patients was lower compared to non-sleep disordered breathing and similar to sleep disordered breathing patients from the sleep laboratory. Further, sleep of ICU patients was highly fragmented: patients spent a median of 25&#x0025; of the day and 41&#x0025; of the night asleep. Moreover, 38&#x0025; of total sleep and 51&#x0025; of REM sleep occurred during the day.</p>
+<p>The significant differences between the ICU and the sleep laboratory patients provide strong evidence that sleep is frequently deranged during critical care. Our results reinforce prior published findings (typically PSG studies with smaller sample size(<xref ref-type="bibr" rid="c22">22</xref>)), including abnormal hypnograms, high arousal index, abnormal sleep stage shifts, a reduction of deep NREM and varying amount of REM sleep (<xref ref-type="bibr" rid="c22">22</xref>, <xref ref-type="bibr" rid="c30">30</xref>, <xref ref-type="bibr" rid="c50">50</xref>&#x2013;<xref ref-type="bibr" rid="c53">53</xref>). Furthermore, there is growing evidence that sleep in the ICU, especially for ventilated patients, is often abnormal and cannot be scored with traditional EEG-based scoring criteria (<xref ref-type="bibr" rid="c18">18</xref>, <xref ref-type="bibr" rid="c54">54</xref>). Potentially, periods of discordance observed in our study coincide with EEG patterns that have been classified as &#x2018;atypical sleep&#x2019; and &#x2018;pathological wakefulness&#x2019; in previous studies examining sleep in the ICU(<xref ref-type="bibr" rid="c18">18</xref>, <xref ref-type="bibr" rid="c54">54</xref>).</p>
+<p>The presented results are important as there is evidence that sleep impairment in the ICU is associated with delirium(<xref ref-type="bibr" rid="c19">19</xref>). Delirium, a state of brain dysfunction with fluctuating awareness, disorganized thinking, and an altered level of consciousness(<xref ref-type="bibr" rid="c19">19</xref>), is associated with long-lasting cognitive impairment after hospital discharge and accelerated onset of dementia(<xref ref-type="bibr" rid="c55">55</xref>). While the mechanism of delirium is not entirely established, the absence or reduction of deep, restorative NREM sleep and REM sleep, and disturbances of circadian rhythms may be risk factors of developing delirium (<xref ref-type="bibr" rid="c19">19</xref>). Cardiovascular and pulmonary signals, as we have shown here, can help monitoring sleep more routinely in the ICU, which can guide measures to preserve sleep continuity, such as managing noise and light levels better or concentrating times of procedures and exams to allow more consolidated periods of rest.</p>
+<p><italic>Feasibility of staging sleep with heart rate variability and respiratory signals</italic> &#x2013; The deep neural network activation patterns, visualized in 2D-space with embedding maps, of ICU patients were mostly similar to those of sleep lab patients, with additional activation patterns only present in the ICU. This means that most of the ICU input data were processed by the artificial networks in such a way that the learned data representations (i.e., high-dimensional features about sleep before making the final sleep stage decision) resembled representations resulting from input data that are like the training data (the networks were trained using sleep lab data). This result helps mitigate concerns about covariance shift. Because sleep appears to be fundamentally changed in the ICU, ICU activation patterns that are not present in sleep lab patterns are potentially of interest, and more research is needed to understand the significance and implications of these clusters, as they may affect reliability of models or indicate certain pathological states present in the ICU population and not in sleep laboratory populations. 27 out of 44 HRV, CPC, and breathing features significantly differed between concordant and discordant sleep epochs, indicating that these well-established and interpretable features might be used a-priori to assess the reliability in sleep stage assessment by HRV- and breathing-based sleep staging models. This result was confirmed with a multivariate linear regression model, using HRV and breathing features from 24-hour segments as independent variables, where 42&#x0025; of the variance of discordance proportion was explained by these features. Surprisingly, we found no association between the discordance of the models and use of opioids, benzodiazepines and antipsychotics, or health status of the patient (SOFA score). Similarly, patients grouped by primary and secondary diagnosis, did not show statistically significant differences in model discordance. This is remarkable, as we hypothesized more severe medical conditions would lead to a higher discordance, but non-significance may be a result of low sample size per subgroup.</p>
+<p>These results demonstrate that the presented method of measuring sleep in ICU patients, insofar as our cohort is representative, is feasible in most cases, although it does lead to more inconclusive sleep stage assessments (measured by discordance of the HRV- and breathing-based sleep staging models) than in the sleep laboratory.</p>
+<p><italic>Respiratory analysis</italic> &#x2013; Mean respiratory rate during sleep was significantly higher in the ICU compared to all sleep lab cohorts. Variance of respiratory rate was significantly increased compared to total sleep lab cohort and AHI&#x003C;5 subgroup but not compared to AHI&#x003E;15 subgroup. Conversely, mean inter-breath-intervals were significantly lower in the ICU compared to all sleep lab cohorts. Interestingly, the variance of the inter-breath-intervals was also low in the ICU (comparable to sleep lab AHI&#x003C;5, significantly lower than AHI&#x003E;15 group). Breathing variability, which considers variability in timing and amplitude of breaths, was higher in the ICU group than in the AHI&#x003C;5 sleep lab patients and lower than in AHI&#x003E;15 sleep lab patients. This suggests that there is greater baseline instability of respiratory patterns in the ICU, likely reflecting acute illness, even when respiration is mildly abnormal. On the other hand, this level of instability is seen in healthier (non-ICU) patients with severe sleep apnea. Similarities of breathing statistics in ICU patients and in SDB sleep laboratory patients, and overall higher breathing variability in the ICU patients, underscore the high prevalence of sleep-disordered breathing in the ICU patients.</p>
+<p><italic>Limitations</italic> &#x2013; In our observational study, we did not have EEG recordings available in the ICU. Therefore, we could not analyze relationships of sleep EEG and the HRV- and breathing-based sleep stage assessments. Joint analysis of cerebral cortex, cardiac, and respiratory activity would allow a more holistic analysis and understanding of sleep physiology in the ICU but are a practical challenge in this population. While the sample size of our study is relatively high compared with other sleep studies done in the ICU setting, 102 patients is still likely a relatively low number relative to the full spectrum of ICU patients and sleep physiology. As the target enrollment of the clinical trial is 750 patients, we hope to be able to follow up with more granular analysis of sleep in the ICU in the future. Patients in this cohort were admitted to surgical and medical ICUs, thus results in other types of ICU&#x2019;s (e.g., neurological, cardiothoracic) might be different. Further, because we studied sleep in patients mostly not mechanically ventilated, the accuracy of the proposed sleep measurement method and reported sleep results during mechanical ventilation might differ. Finally, all patients were randomized into three groups as part of our clinical trial, where they were infused overnight for 11 hours with 0.1 or 0.3 mcg/kg/h dexmedetomidine (low dose) or placebo (normal saline). When this ongoing quadruple blinded trial is concluded, it will be possible to analyze the effects of low dose dexmedetomidine, if any, on our measures of interest.</p>
+<p><italic>Summary</italic> &#x2013; Studying sleep in the ICU is possible and repeatable with readily accessible biological signals: ECG and respiration, with an accuracy tradeoff compared to full polysomnography. However, the patterns noted may themselves encode information about disease pathologies in the ICU setting. HRV/respiration analysis may provide important physiological information not captured by EEG analysis. We found partial explanations for discordance in sleep stages determined by the HRV- and breathing-based models. Sleep architecture and breathing during sleep in the ICU differed from an age and sex-matched sleep lab cohort, including subgroups with and without disordered breathing. As expected, signatures of deep NREM sleep were reduced in the ICU, and dispersion of sleep into the day was noted. The ability to monitor sleep or sleep-like states in the ICU without complex monitoring can enable better tracking of sleep-wake state boundaries and fragmentation, the impact of such fragmentation on delirium and other ICU outcomes, and even estimate the effects of sleep targeted therapies.</p>
+</sec>
+</body>
+<back>
+<sec sec-type="data-availability">
+<title>Data Availability</title>
+<p>Data and models used in this research are available under: https://github.com/mghcdac/ecg_respiration_sleep_staging_icu/</p>
+<p>
+<ext-link ext-link-type="uri" xlink:href="https://github.com/mghcdac/ecg_respiration_sleep_staging_icu">https://github.com/mghcdac/ecg_respiration_sleep_staging_icu</ext-link>
+</p>
+</sec>
+<sec id="s7">
+<title>Author contribution</title>
+<p>WG: data management, developed code and models, data analysis, drafted and reviewed the manuscript.</p>
+<p>PVK: data acquisition, clinical chart review, classification of patients into diagnoses groups, drafted and reviewed the manuscript.</p>
+<p>SQ: data acquisition, data management, critical review and revision of the manuscript.</p>
+<p>RAT: data management, data acquisition, critical review and revision of the manuscript</p>
+<p>AB: data management, data acquisition, critical review and revision of the manuscript</p>
+<p>MDSC: was part of the data acquisition, critical review and revision of the manuscript.</p>
+<p>NA: was part of data acquisition, critical review and revision of the manuscript.</p>
+<p>MJL: was part of the data management, critical review and revision of the manuscript.</p>
+<p>EMY: was part of the data management, critical review and revision of the manuscript.</p>
+<p>AH: was part of data acquisition, critical review and revision of the manuscript.</p>
+<p>SR: was part of data acquisition, critical review and revision of the manuscript.</p>
+<p>EP: was part of data acquisition, critical review and revision of the manuscript.</p>
+<p>LP: was part of data acquisition, critical review and revision of the manuscript.</p>
+<p>JH: was part of data acquisition, critical review and revision of the manuscript.</p>
+<p>MA: was part of data acquisition, critical review and revision of the manuscript.</p>
+<p>BC: was part of the data acquisition, critical review and revision of the manuscript.</p>
+<p>TH: critical review and revision of the manuscript</p>
+<p>HS: critical review and revision of the manuscript.</p>
+<p>YS: data management, critical review and revision of the manuscript.</p>
+<p>SC: critical review and revision of the manuscript.</p>
+<p>BTT: critical review and revision of the manuscript.</p>
+<p>OA: critical review and revision of the manuscript.</p>
+<p>DK: critical review and revision of the manuscript</p>
+<p>RJT: design of the work, supervision, critical review and revision of the manuscript</p>
+<p>MBW: design of the work, supervision, critical review and revision of the manuscript.</p>
+</sec>
+<sec id="s8">
+<title>Financial disclosure</title>
+<p>Dr. Westover is a co-founder of Beacon Biosignals and reports grants from NIH, during the conduct of the study; Dr. Cash reports other COI from Neuralink, Paradromics, and Synchron, and Beacon Biosignals, outside the submitted work. Dr. Thomas reports personal fees from GLG Councils, Guidepoint Global, and Jazz Pharmaceutics, outside the submitted work. In addition, Dr. Thomas has a patent ECG-spectrogram with royalties paid by MyCardio, LLC, a patent Auto-CPAP with royalties paid by DeVilbiss-Drive, and an unlicensed patent CO2 device for central / complex sleep apnea issued. Dr. Thompson reports consulting for Bayer, Novartis, and Thetis, outside the submitted work. In addition, Mr. Kuller has a patent: Patent US10123724B2 &#x201C;Breath volume monitoring system and method&#x201D; issued.</p>
+</sec>
+<sec id="s9">
+<title>Non-financial disclosure</title>
+<p>Mr. Kuller reports non-financial support from Myair Inc., during the conduct of the study, and non-financial support from Myair Inc, outside the submitted work.</p>
+<p>Sources of Support (Grants/Gifts/Equipment and/or Drugs):</p>
+<p>M.B.X was supported by the Glenn Foundation for Medical Research and American Federation for Aging Research (Breakthroughs in Gerontology Grant); American Academy of Sleep Medicine (AASM Foundation Strategic Research Award); Football Players Health Study (FPHS) at Harvard University; Department of Defense through a subcontract from Moberg ICU Solutions, Inc; and NIH (1R01NS102190, 1R01NS102574, 1R01NS107291, 1RF1AG064312).</p>
+</sec>
+<ref-list>
+<title>References</title>
+<ref id="c1"><label>1.</label><mixed-citation publication-type="book"><string-name><surname>Kryger</surname> <given-names>M</given-names></string-name>, <string-name><surname>Roth</surname> <given-names>T</given-names></string-name>, <string-name><surname>Dement</surname> <given-names>W</given-names></string-name>. <source>Principles and Practice of Sleep Medicine</source>. <publisher-name>Elsevier</publisher-name>; <year>2017</year>. doi:<pub-id pub-id-type="doi">10.1016/C2012-0-03543-0</pub-id>.</mixed-citation></ref>
+<ref id="c2"><label>2.</label><mixed-citation publication-type="journal"><string-name><surname>Mukherjee</surname> <given-names>S</given-names></string-name>, <string-name><surname>Patel</surname> <given-names>SR</given-names></string-name>, <string-name><surname>Kales</surname> <given-names>SN</given-names></string-name>, <string-name><surname>Ayas</surname> <given-names>NT</given-names></string-name>, <string-name><surname>Strohl</surname> <given-names>KP</given-names></string-name>, <string-name><surname>Gozal</surname> <given-names>D</given-names></string-name>, <string-name><surname>Malhotra</surname> <given-names>A</given-names></string-name>. <article-title>An Official American Thoracic Society Statement: The Importance of Healthy Sleep. Recommendations and Future Priorities</article-title>. <source>Am J Respir Crit Care Med</source> <year>2015</year>;<volume>191</volume>:<fpage>1450</fpage>&#x2013;<lpage>1458</lpage>.</mixed-citation></ref>
+<ref id="c3"><label>3.</label><mixed-citation publication-type="journal"><string-name><surname>Rasch</surname> <given-names>B</given-names></string-name>, <string-name><surname>Born</surname> <given-names>J</given-names></string-name>. <article-title>About Sleep&#x2019;s Role in Memory</article-title>. <source>Physiol Rev</source> <year>2013</year>;<volume>93</volume>:<fpage>681</fpage>&#x2013;<lpage>766</lpage>.</mixed-citation></ref>
+<ref id="c4"><label>4.</label><mixed-citation publication-type="journal"><string-name><surname>Naiman</surname> <given-names>R</given-names></string-name>. <article-title>Dreamless: the silent epidemic of REM sleep loss</article-title>. <source>Annals of the New York Academy of Sciences</source> <year>2017</year>;<volume>1406</volume>:<fpage>77</fpage>&#x2013;<lpage>85</lpage>.</mixed-citation></ref>
+<ref id="c5"><label>5.</label><mixed-citation publication-type="book"><string-name><surname>Killgore</surname> <given-names>WDS</given-names></string-name>. <chapter-title>Effects of sleep deprivation on cognition</chapter-title>. In: <string-name><surname>Kerkhof</surname> <given-names>GA</given-names></string-name>, <string-name><surname>Dongen</surname> <given-names>HPA van</given-names></string-name>, editors. <source>Progress in Brain Research</source> <publisher-name>Elsevier</publisher-name>; <year>2010</year>. p. <fpage>105</fpage>&#x2013;<lpage>129</lpage>.</mixed-citation></ref>
+<ref id="c6"><label>6.</label><mixed-citation publication-type="journal"><string-name><surname>Holding</surname> <given-names>BC</given-names></string-name>, <string-name><surname>Sundelin</surname> <given-names>T</given-names></string-name>, <string-name><surname>Lekander</surname> <given-names>M</given-names></string-name>, <string-name><surname>Axelsson</surname> <given-names>J</given-names></string-name>. <article-title>Sleep deprivation and its effects on communication during individual and collaborative tasks</article-title>. <source>Scientific Reports</source> <year>2019</year>;<volume>9</volume>:<fpage>3131</fpage>.</mixed-citation></ref>
+<ref id="c7"><label>7.</label><mixed-citation publication-type="journal"><string-name><surname>Mueller</surname> <given-names>AD</given-names></string-name>, <string-name><surname>Meerlo</surname> <given-names>P</given-names></string-name>, <string-name><surname>McGinty</surname> <given-names>D</given-names></string-name>, <string-name><surname>Mistlberger</surname> <given-names>RE</given-names></string-name>. <article-title>Sleep and Adult Neurogenesis: Implications for Cognition and Mood</article-title>. <source>Sleep, Neuronal Plasticity and Brain Function</source> <year>2013</year>;<fpage>151</fpage>&#x2013;<lpage>181</lpage>.doi:<pub-id pub-id-type="doi">10.1007/7854_2013_251</pub-id>.</mixed-citation></ref>
+<ref id="c8"><label>8.</label><mixed-citation publication-type="journal"><string-name><surname>Banks</surname> <given-names>S</given-names></string-name>, <string-name><surname>Dinges</surname> <given-names>DF</given-names></string-name>. <article-title>Behavioral and physiological consequences of sleep restriction</article-title>. <source>J Clin Sleep Med</source> <year>2007</year>;<volume>3</volume>:<fpage>519</fpage>&#x2013;<lpage>528</lpage>.</mixed-citation></ref>
+<ref id="c9"><label>9.</label><mixed-citation publication-type="journal"><string-name><surname>Khan</surname> <given-names>MS</given-names></string-name>, <string-name><surname>Aouad</surname> <given-names>R</given-names></string-name>. <article-title>The Effects of Insomnia and Sleep Loss on Cardiovascular Disease</article-title>. <source>Sleep Med Clin</source> <year>2017</year>;<volume>12</volume>:<fpage>167</fpage>&#x2013;<lpage>177</lpage>.</mixed-citation></ref>
+<ref id="c10"><label>10.</label><mixed-citation publication-type="journal"><string-name><surname>Irwin</surname> <given-names>MR</given-names></string-name>. <article-title>Sleep and inflammation: partners in sickness and in health</article-title>. <source>Nature Reviews Immunology</source> <year>2019</year>;<volume>19</volume>:<fpage>702</fpage>&#x2013;<lpage>715</lpage>.</mixed-citation></ref>
+<ref id="c11"><label>11.</label><mixed-citation publication-type="journal"><string-name><surname>Besedovsky</surname> <given-names>L</given-names></string-name>, <string-name><surname>Lange</surname> <given-names>T</given-names></string-name>, <string-name><surname>Haack</surname> <given-names>M</given-names></string-name>. <article-title>The Sleep-Immune Crosstalk in Health and Disease</article-title>. <source>Physiol Rev</source> <year>2019</year>;<volume>99</volume>:<fpage>1325</fpage>&#x2013;<lpage>1380</lpage>.</mixed-citation></ref>
+<ref id="c12"><label>12.</label><mixed-citation publication-type="journal"><string-name><surname>Ma</surname> <given-names>N</given-names></string-name>, <string-name><surname>Dinges</surname> <given-names>DF</given-names></string-name>, <string-name><surname>Basner</surname> <given-names>M</given-names></string-name>, <string-name><surname>Rao</surname> <given-names>H</given-names></string-name>. <article-title>How Acute Total Sleep Loss Affects the Attending Brain: A Meta-Analysis of Neuroimaging Studies</article-title>. <source>Sleep</source> <year>2015</year>;<volume>38</volume>:<fpage>233</fpage>&#x2013;<lpage>240</lpage>.</mixed-citation></ref>
+<ref id="c13"><label>13.</label><mixed-citation publication-type="journal"><string-name><surname>Philip</surname> <given-names>P</given-names></string-name>, <string-name><surname>Sagaspe</surname> <given-names>P</given-names></string-name>, <string-name><surname>Prague</surname> <given-names>M</given-names></string-name>, <string-name><surname>Tassi</surname> <given-names>P</given-names></string-name>, <string-name><surname>Capelli</surname> <given-names>A</given-names></string-name>, <string-name><surname>Bioulac</surname> <given-names>B</given-names></string-name>, <string-name><surname>Commenges</surname> <given-names>D</given-names></string-name>, <string-name><surname>Taillard</surname> <given-names>J</given-names></string-name>. <article-title>Acute Versus Chronic Partial Sleep Deprivation in Middle-Aged People: Differential Effect on Performance and Sleepiness</article-title>. <source>Sleep</source> <year>2012</year>;<volume>35</volume>:<fpage>997</fpage>&#x2013;<lpage>1002</lpage>.</mixed-citation></ref>
+<ref id="c14"><label>14.</label><mixed-citation publication-type="journal"><string-name><surname>Leproult</surname> <given-names>R</given-names></string-name>, <string-name><surname>Cauter</surname> <given-names>EV</given-names></string-name>. <article-title>Role of Sleep and Sleep Loss in Hormonal Release and Metabolism</article-title>. <source>Pediatric Neuroendocrinology</source> <year>2010</year>;<volume>17</volume>:<fpage>11</fpage>&#x2013;<lpage>21</lpage>.</mixed-citation></ref>
+<ref id="c15"><label>15.</label><mixed-citation publication-type="journal"><string-name><surname>Dunietz</surname> <given-names>GL</given-names></string-name>, <string-name><surname>Swanson</surname> <given-names>LM</given-names></string-name>, <string-name><surname>Jansen</surname> <given-names>EC</given-names></string-name>, <string-name><surname>Chervin</surname> <given-names>RD</given-names></string-name>, <string-name><surname>O&#x2019;Brien</surname> <given-names>LM</given-names></string-name>, <string-name><surname>Lisabeth</surname> <given-names>LD</given-names></string-name>, <string-name><surname>Braley</surname> <given-names>TJ</given-names></string-name>. <article-title>Key insomnia symptoms and incident pain in older adults: direct and mediated pathways through depression and anxiety</article-title>. <source>Sleep</source> <year>2018</year>;<volume>41</volume>:.</mixed-citation></ref>
+<ref id="c16"><label>16.</label><mixed-citation publication-type="journal"><string-name><surname>Afolalu</surname> <given-names>EF</given-names></string-name>, <string-name><surname>Ramlee</surname> <given-names>F</given-names></string-name>, <string-name><surname>Tang</surname> <given-names>NKY</given-names></string-name>. <article-title>Effects of sleep changes on pain-related health outcomes in the general population: A systematic review of longitudinal studies with exploratory meta-analysis</article-title>. <source>Sleep Medicine Reviews</source> <year>2018</year>;<volume>39</volume>:<fpage>82</fpage>&#x2013;<lpage>97</lpage>.</mixed-citation></ref>
+<ref id="c17"><label>17.</label><mixed-citation publication-type="journal"><string-name><surname>Krause</surname> <given-names>AJ</given-names></string-name>, <string-name><surname>Prather</surname> <given-names>AA</given-names></string-name>, <string-name><surname>Wager</surname> <given-names>TD</given-names></string-name>, <string-name><surname>Lindquist</surname> <given-names>MA</given-names></string-name>, <string-name><surname>Walker</surname> <given-names>MP</given-names></string-name>. <article-title>The Pain of Sleep Loss: A Brain Characterization in Humans</article-title>. <source>J Neurosci</source> <year>2019</year>;<volume>39</volume>:<fpage>2291</fpage>&#x2013;<lpage>2300</lpage>.</mixed-citation></ref>
+<ref id="c18"><label>18.</label><mixed-citation publication-type="journal"><string-name><surname>Watson</surname> <given-names>PL</given-names></string-name>, <string-name><surname>Pandharipande</surname> <given-names>P</given-names></string-name>, <string-name><surname>Gehlbach</surname> <given-names>BK</given-names></string-name>, <string-name><surname>Thompson</surname> <given-names>JL</given-names></string-name>, <string-name><surname>Shintani</surname> <given-names>AK</given-names></string-name>, <string-name><surname>Dittus</surname> <given-names>BS</given-names></string-name>, <string-name><surname>Bernard</surname> <given-names>GR</given-names></string-name>, <string-name><surname>Malow</surname> <given-names>BA</given-names></string-name>, <string-name><surname>Ely</surname> <given-names>EW</given-names></string-name>. <article-title>Atypical sleep in ventilated patients: empirical electroencephalography findings and the path toward revised ICU sleep scoring criteria</article-title>. <source>Crit Care Med</source> <year>2013</year>;<volume>41</volume>:<fpage>1958</fpage>&#x2013;<lpage>1967</lpage>.</mixed-citation></ref>
+<ref id="c19"><label>19.</label><mixed-citation publication-type="journal"><string-name><surname>Watson</surname> <given-names>PL</given-names></string-name>, <string-name><surname>Ceriana</surname> <given-names>P</given-names></string-name>, <string-name><surname>Fanfulla</surname> <given-names>F</given-names></string-name>. <article-title>Delirium: is sleep important?</article-title> <source>Best Pract Res Clin Anaesthesiol</source> <year>2012</year>;<volume>26</volume>:<fpage>355</fpage>&#x2013;<lpage>366</lpage>.</mixed-citation></ref>
+<ref id="c20"><label>20.</label><mixed-citation publication-type="journal"><string-name><surname>Hardin</surname> <given-names>KA</given-names></string-name>. <article-title>Sleep in the ICU: Potential Mechanisms and Clinical Implications</article-title>. <source>Chest</source> <year>2009</year>;<volume>136</volume>:<fpage>284</fpage>&#x2013;<lpage>294</lpage>.</mixed-citation></ref>
+<ref id="c21"><label>21.</label><mixed-citation publication-type="journal"><string-name><surname>Weinhouse</surname> <given-names>GL</given-names></string-name>, <string-name><surname>Schwab</surname> <given-names>RJ</given-names></string-name>. <article-title>Sleep in the critically ill patient</article-title>. <source>Sleep</source> <year>2006</year>;<volume>29</volume>:<fpage>707</fpage>&#x2013;<lpage>716</lpage>.</mixed-citation></ref>
+<ref id="c22"><label>22.</label><mixed-citation publication-type="journal"><string-name><surname>Boyko</surname> <given-names>Y</given-names></string-name>, <string-name><surname>Jennum</surname> <given-names>P</given-names></string-name>, <string-name><surname>Toft</surname> <given-names>P</given-names></string-name>. <article-title>Sleep quality and circadian rhythm disruption in the intensive care unit: a review</article-title>. <source>Nat Sci Sleep</source> <year>2017</year>;<volume>9</volume>:<fpage>277</fpage>&#x2013;<lpage>284</lpage>.</mixed-citation></ref>
+<ref id="c23"><label>23.</label><mixed-citation publication-type="journal"><string-name><surname>Schwab</surname> <given-names>KE</given-names></string-name>, <string-name><surname>Ronish</surname> <given-names>B</given-names></string-name>, <string-name><surname>Needham</surname> <given-names>DM</given-names></string-name>, <string-name><surname>To</surname> <given-names>AQ</given-names></string-name>, <string-name><surname>Martin</surname> <given-names>JL</given-names></string-name>, <string-name><surname>Kamdar</surname> <given-names>BB</given-names></string-name>. <article-title>Actigraphy to Evaluate Sleep in the Intensive Care Unit</article-title>. <source>A Systematic Review. Annals ATS</source> <year>2018</year>;<volume>15</volume>:<fpage>1075</fpage>&#x2013;<lpage>1082</lpage>.</mixed-citation></ref>
+<ref id="c24"><label>24.</label><mixed-citation publication-type="journal"><string-name><surname>Darbyshire</surname> <given-names>JL</given-names></string-name>, <string-name><surname>Borthwick</surname> <given-names>M</given-names></string-name>, <string-name><surname>Edmonds</surname> <given-names>P</given-names></string-name>, <string-name><surname>Vollam</surname> <given-names>S</given-names></string-name>, <string-name><surname>Hinton</surname> <given-names>L</given-names></string-name>, <string-name><surname>Young</surname> <given-names>JD</given-names></string-name>. <article-title>Measuring sleep in the intensive care unit: Electroencephalogram, actigraphy, or questionnaire?</article-title> <source>Journal of the Intensive Care Society</source> <year>2020</year>;<volume>21</volume>:<fpage>22</fpage>&#x2013;<lpage>27</lpage>.</mixed-citation></ref>
+<ref id="c25"><label>25.</label><mixed-citation publication-type="journal"><string-name><surname>Sridhar</surname> <given-names>N</given-names></string-name>, <string-name><surname>Shoeb</surname> <given-names>A</given-names></string-name>, <string-name><surname>Stephens</surname> <given-names>P</given-names></string-name>, <string-name><surname>Kharbouch</surname> <given-names>A</given-names></string-name>, <string-name><surname>Shimol</surname> <given-names>DB</given-names></string-name>, <string-name><surname>Burkart</surname> <given-names>J</given-names></string-name>, <string-name><surname>Ghoreyshi</surname> <given-names>A</given-names></string-name>, <string-name><surname>Myers</surname> <given-names>L</given-names></string-name>. <article-title>Deep learning for automated sleep staging using instantaneous heart rate</article-title>. <source>npj Digital Medicine</source> <year>2020</year>;<volume>3</volume>:<fpage>1</fpage>&#x2013;<lpage>10</lpage>.</mixed-citation></ref>
+<ref id="c26"><label>26.</label><mixed-citation publication-type="journal"><string-name><surname>Radha</surname> <given-names>M</given-names></string-name>, <string-name><surname>Fonseca</surname> <given-names>P</given-names></string-name>, <string-name><surname>Moreau</surname> <given-names>A</given-names></string-name>, <string-name><surname>Ross</surname> <given-names>M</given-names></string-name>, <string-name><surname>Cerny</surname> <given-names>A</given-names></string-name>, <string-name><surname>Anderer</surname> <given-names>P</given-names></string-name>, <string-name><surname>Long</surname> <given-names>X</given-names></string-name>, <string-name><surname>Aarts</surname> <given-names>RM</given-names></string-name>. <article-title>Sleep stage classification from heart-rate variability using long short-term memory neural networks</article-title>. <source>Scientific Reports</source> <year>2019</year>;<volume>9</volume>:<fpage>14149</fpage>.</mixed-citation></ref>
+<ref id="c27"><label>27.</label><mixed-citation publication-type="journal"><string-name><surname>Sun</surname> <given-names>H</given-names></string-name>, <string-name><surname>Ganglberger</surname> <given-names>W</given-names></string-name>, <string-name><surname>Panneerselvam</surname> <given-names>E</given-names></string-name>, <string-name><surname>Leone</surname> <given-names>MJ</given-names></string-name>, <string-name><surname>Quadri</surname> <given-names>SA</given-names></string-name>, <string-name><surname>Goparaju</surname> <given-names>B</given-names></string-name>, <string-name><surname>Tesh</surname> <given-names>RA</given-names></string-name>, <string-name><surname>Akeju</surname> <given-names>O</given-names></string-name>, <string-name><surname>Thomas</surname> <given-names>RJ</given-names></string-name>, <string-name><surname>Westover</surname> <given-names>MB</given-names></string-name>. <article-title>Sleep Staging from Electrocardiography and Respiration with Deep Learning</article-title>. <source>Sleep</source> <year>2019</year>;doi:<pub-id pub-id-type="doi">10.1093/sleep/zsz306</pub-id>.</mixed-citation></ref>
+<ref id="c28"><label>28.</label><mixed-citation publication-type="journal"><string-name><surname>Somers</surname> <given-names>VK</given-names></string-name>, <string-name><surname>Dyken</surname> <given-names>ME</given-names></string-name>, <string-name><surname>Mark</surname> <given-names>AL</given-names></string-name>, <string-name><surname>Abboud</surname> <given-names>FM</given-names></string-name>. <article-title>Sympathetic-Nerve Activity during Sleep in Normal Subjects</article-title>. <source>New England Journal of Medicine</source> <year>1993</year>;<volume>328</volume>:<fpage>303</fpage>&#x2013;<lpage>307</lpage>.</mixed-citation></ref>
+<ref id="c29"><label>29.</label><mixed-citation publication-type="journal"><string-name><surname>Fink</surname> <given-names>AM</given-names></string-name>, <string-name><surname>Bronas</surname> <given-names>UG</given-names></string-name>, <string-name><surname>Calik</surname> <given-names>MW</given-names></string-name>. <article-title>Autonomic regulation during sleep and wakefulness: a review with implications for defining the pathophysiology of neurological disorders</article-title>. <source>Clin Auton Res</source> <year>2018</year>;<volume>28</volume>:<fpage>509</fpage>&#x2013;<lpage>518</lpage>.</mixed-citation></ref>
+<ref id="c30"><label>30.</label><mixed-citation publication-type="journal"><string-name><surname>Freedman</surname> <given-names>NS</given-names></string-name>, <string-name><surname>Gazendam</surname> <given-names>J</given-names></string-name>, <string-name><surname>Levan</surname> <given-names>L</given-names></string-name>, <string-name><surname>Pack</surname> <given-names>AI</given-names></string-name>, <string-name><surname>Schwab</surname> <given-names>RJ</given-names></string-name>. <article-title>Abnormal Sleep/Wake Cycles and the Effect of Environmental Noise on Sleep Disruption in the Intensive Care Unit</article-title>. <source>Am J Respir Crit Care Med</source> <year>2001</year>;<volume>163</volume>:<fpage>451</fpage>&#x2013;<lpage>457</lpage>.</mixed-citation></ref>
+<ref id="c31"><label>31.</label><mixed-citation publication-type="website"><ext-link ext-link-type="uri" xlink:href="https://clinicaltrials.gov/ct2/show/NCT03355053?term=Investigation+of+Sleep+in+the+Intensive+Care+Unit">https://clinicaltrials.gov/ct2/show/NCT03355053?term=Investigation+of+Sleep+in+the+Intensive+Care+Unit</ext-link>.</mixed-citation></ref>
+<ref id="c32"><label>32.</label><mixed-citation publication-type="website"><collab>MyAir LLC</collab>. <source>AirGo<sup>TM</sup></source> at &#x003C;<ext-link ext-link-type="uri" xlink:href="https://www.myairgo.com">https://www.myairgo.com</ext-link>&#x003E;.</mixed-citation></ref>
+<ref id="c33"><label>33.</label><mixed-citation publication-type="journal"><string-name><surname>Charlson</surname> <given-names>M</given-names></string-name>, <string-name><surname>Szatrowski</surname> <given-names>TP</given-names></string-name>, <string-name><surname>Peterson</surname> <given-names>J</given-names></string-name>, <string-name><surname>Gold</surname> <given-names>J</given-names></string-name>. <article-title>Validation of a combined comorbidity index</article-title>. <source>Journal of Clinical Epidemiology</source> <year>1994</year>;<volume>47</volume>:<fpage>1245</fpage>&#x2013;<lpage>1251</lpage>.</mixed-citation></ref>
+<ref id="c34"><label>34.</label><mixed-citation publication-type="journal"><string-name><surname>Vincent</surname> <given-names>J-L</given-names></string-name>, <string-name><surname>Moreno</surname> <given-names>R</given-names></string-name>, <string-name><surname>Takala</surname> <given-names>J</given-names></string-name>, <string-name><surname>Willatts</surname> <given-names>S</given-names></string-name>, <string-name><surname>Mendon&#x00E7;a</surname> <given-names>A</given-names></string-name>, <string-name><surname>Bruining</surname> <given-names>H</given-names></string-name>, <string-name><surname>Reinhart</surname> <given-names>C</given-names></string-name>, <string-name><surname>Suter</surname> <given-names>P</given-names></string-name>, <string-name><surname>Thijs</surname> <given-names>L</given-names></string-name>. <article-title>The SOFA (Sepsis-related Organ Failure Assessment) score to describe organ dysfunction/failure. On behalf of the Working Group on Sepsis-Related Problems of the European Society of Intensive Care Medicine</article-title>. <source>Intensive care medicine</source> <year>1996</year>;<volume>22</volume>:<fpage>707</fpage>&#x2013;<lpage>10</lpage>.</mixed-citation></ref>
+<ref id="c35"><label>35.</label><mixed-citation publication-type="journal"><string-name><surname>Stuart</surname> <given-names>EA</given-names></string-name>. <article-title>Matching methods for causal inference: A review and a look forward</article-title>. <source>Statistical science : a review journal of the Institute of Mathematical Statistics</source> <year>2010</year>;<volume>25</volume>:<fpage>1</fpage>.</mixed-citation></ref>
+<ref id="c36"><label>36.</label><mixed-citation publication-type="journal"><string-name><surname>Berry</surname> <given-names>RB</given-names></string-name>, <string-name><surname>Budhiraja</surname> <given-names>R</given-names></string-name>, <string-name><surname>Gottlieb</surname> <given-names>DJ</given-names></string-name>, <string-name><surname>Gozal</surname> <given-names>D</given-names></string-name>, <string-name><surname>Iber</surname> <given-names>C</given-names></string-name>, <string-name><surname>Kapur</surname> <given-names>VK</given-names></string-name>, <string-name><surname>Marcus</surname> <given-names>CL</given-names></string-name>, <string-name><surname>Mehra</surname> <given-names>R</given-names></string-name>, <string-name><surname>Parthasarathy</surname> <given-names>S</given-names></string-name>, <string-name><surname>Quan</surname> <given-names>SF</given-names></string-name>, <string-name><surname>Redline</surname> <given-names>S</given-names></string-name>, <string-name><surname>Strohl</surname> <given-names>KP</given-names></string-name>, <string-name><surname>Ward</surname> <given-names>SLD</given-names></string-name>, <string-name><surname>Tangredi</surname> <given-names>MM</given-names></string-name>. <article-title>Rules for Scoring Respiratory Events in Sleep: Update of the 2007 AASM Manual for the Scoring of Sleep and Associated Events</article-title>. <source>J Clin Sleep Med</source> <year>2012</year>;<volume>8</volume>:<fpage>597</fpage>&#x2013;<lpage>619</lpage>.</mixed-citation></ref>
+<ref id="c37"><label>37.</label><mixed-citation publication-type="book"><string-name><given-names>Adriana N</given-names> <surname>Vest</surname></string-name>, <string-name><given-names>Giulia</given-names> <surname>Da Poian</surname></string-name>, <string-name><given-names>Qiao</given-names> <surname>Li</surname></string-name>, <string-name><given-names>Changyu</given-names> <surname>Liu</surname></string-name>, <string-name><given-names>Shamim</given-names> <surname>Nemati</surname></string-name>, <string-name><given-names>Amit</given-names> <surname>Shah</surname></string-name>, <string-name><given-names>Gari D</given-names> <surname>Clifford</surname></string-name>. <source>cliffordlab/PhysioNet-Cardiovascular-Signal-Toolbox: PhysioNet-Cardiovascular-Signal-Toolbox 1.0.2</source>. <publisher-name>Zenodo</publisher-name>; <year>2019</year>. doi:<pub-id pub-id-type="doi">10.5281/zenodo.3401708</pub-id>.</mixed-citation></ref>
+<ref id="c38"><label>38.</label><mixed-citation publication-type="journal"><string-name><surname>Pan</surname> <given-names>J</given-names></string-name>, <string-name><surname>Tompkins</surname> <given-names>WJ</given-names></string-name>. <article-title>A Real-Time QRS Detection Algorithm</article-title>. <source>IEEE TRANSACTIONS ON BIOMEDICAL ENGINEERING</source> <year>1985</year>;<volume>7</volume>.</mixed-citation></ref>
+<ref id="c39"><label>39.</label><mixed-citation publication-type="journal"><string-name><surname>Danker-Hopfe</surname> <given-names>H</given-names></string-name>, <string-name><surname>Anderer</surname> <given-names>P</given-names></string-name>, <string-name><surname>Zeitlhofer</surname> <given-names>J</given-names></string-name>, <string-name><surname>Boeck</surname> <given-names>M</given-names></string-name>, <string-name><surname>Dorn</surname> <given-names>H</given-names></string-name>, <string-name><surname>Gruber</surname> <given-names>G</given-names></string-name>, <string-name><surname>Heller</surname> <given-names>E</given-names></string-name>, <string-name><surname>Loretz</surname> <given-names>E</given-names></string-name>, <string-name><surname>Moser</surname> <given-names>D</given-names></string-name>, <string-name><surname>Parapatics</surname> <given-names>S</given-names></string-name>, <string-name><surname>Saletu</surname> <given-names>B</given-names></string-name>, <string-name><surname>Schmidt</surname> <given-names>A</given-names></string-name>, <string-name><surname>Dorffner</surname> <given-names>G</given-names></string-name>. <article-title>Interrater reliability for sleep scoring according to the Rechtschaffen &#x0026; Kales and the new AASM standard</article-title>. <source>Journal of Sleep Research</source> <year>2009</year>;<volume>18</volume>:<fpage>74</fpage>&#x2013;<lpage>84</lpage>.</mixed-citation></ref>
+<ref id="c40"><label>40.</label><mixed-citation publication-type="journal"><string-name><surname>Cohen</surname> <given-names>J</given-names></string-name>. <article-title>A Coefficient of Agreement for Nominal Scales</article-title>. <source>Educational and Psychological Measurement</source> <year>1960</year>;<volume>20</volume>:<fpage>37</fpage>&#x2013;<lpage>46</lpage>.</mixed-citation></ref>
+<ref id="c41"><label>41.</label><mixed-citation publication-type="journal"><string-name><surname>McInnes</surname> <given-names>L</given-names></string-name>, <string-name><surname>Healy</surname> <given-names>J</given-names></string-name>, <string-name><surname>Melville</surname> <given-names>J</given-names></string-name>. <article-title>UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction</article-title>. <source>arXiv</source>:180203426 [cs, stat] <year>2020</year>;at &#x003C;<ext-link ext-link-type="uri" xlink:href="http://arxiv.org/abs/1802.03426">http://arxiv.org/abs/1802.03426</ext-link>&#x003E;.</mixed-citation></ref>
+<ref id="c42"><label>42.</label><mixed-citation publication-type="journal"><string-name><surname>Thomas</surname> <given-names>RJ</given-names></string-name>, <string-name><surname>Mietus</surname> <given-names>JE</given-names></string-name>, <string-name><surname>Peng</surname> <given-names>C-K</given-names></string-name>, <string-name><surname>Goldberger</surname> <given-names>AL</given-names></string-name>. <article-title>An Electrocardiogram-Based Technique to Assess Cardiopulmonary Coupling During Sleep</article-title>. <source>Sleep</source> <year>2005</year>;<volume>28</volume>:<fpage>1151</fpage>&#x2013;<lpage>1161</lpage>.</mixed-citation></ref>
+<ref id="c43"><label>43.</label><mixed-citation publication-type="journal"><string-name><surname>Patanwala</surname> <given-names>AE</given-names></string-name>, <string-name><surname>Duby</surname> <given-names>J</given-names></string-name>, <string-name><surname>Waters</surname> <given-names>D</given-names></string-name>, <string-name><surname>Erstad</surname> <given-names>BL</given-names></string-name>. <article-title>Opioid conversions in acute care</article-title>. <source>Ann Pharmacother</source> <year>2007</year>;<volume>41</volume>:<fpage>255</fpage>&#x2013;<lpage>266</lpage>.</mixed-citation></ref>
+<ref id="c44"><label>44.</label><mixed-citation publication-type="journal"><string-name><surname>MacLaren</surname> <given-names>R</given-names></string-name>, <string-name><surname>Sullivan</surname> <given-names>PW</given-names></string-name>. <article-title>Pharmacoeconomic Modeling of Lorazepam, Midazolam, and Propofol for Continuous Sedation in Critically Ill Patients</article-title><source>. Pharmacotherapy: The Journal of Human Pharmacology and Drug Therapy</source> <year>2005</year>;<volume>25</volume>:<fpage>1319</fpage>&#x2013;<lpage>1328</lpage>.</mixed-citation></ref>
+<ref id="c45"><label>45.</label><mixed-citation publication-type="journal"><string-name><surname>Guina</surname> <given-names>J</given-names></string-name>, <string-name><surname>Merrill</surname> <given-names>B</given-names></string-name>. <article-title>Benzodiazepines II: Waking Up on Sedatives: Providing Optimal Care When Inheriting Benzodiazepine Prescriptions in Transfer Patients</article-title>. <source>J Clin Med</source> <year>2018</year>;<volume>7</volume>:.</mixed-citation></ref>
+<ref id="c46"><label>46.</label><mixed-citation publication-type="journal"><string-name><surname>Leucht</surname> <given-names>S</given-names></string-name>, <string-name><surname>Samara</surname> <given-names>M</given-names></string-name>, <string-name><surname>Heres</surname> <given-names>S</given-names></string-name>, <string-name><surname>Davis</surname> <given-names>JM</given-names></string-name>. <article-title>Dose Equivalents for Antipsychotic Drugs: The DDD Method</article-title>. <source>Schizophr Bull</source> <year>2016</year>;<volume>42</volume>:<fpage>S90</fpage>&#x2013;<lpage>S94</lpage>.</mixed-citation></ref>
+<ref id="c47"><label>47.</label><mixed-citation publication-type="journal"><string-name><surname>Elm</surname> <given-names>E von</given-names></string-name>, <string-name><surname>Altman</surname> <given-names>DG</given-names></string-name>, <string-name><surname>Egger</surname> <given-names>M</given-names></string-name>, <string-name><surname>Pocock</surname> <given-names>SJ</given-names></string-name>, <string-name><surname>G&#x00F8;tzsche</surname> <given-names>PC</given-names></string-name>, <string-name><surname>Vandenbroucke</surname> <given-names>JP</given-names></string-name>. <article-title>Strengthening the reporting of observational studies in epidemiology (STROBE) statement: guidelines for reporting observational studies</article-title>. <source>BMJ</source> <year>2007</year>;<volume>335</volume>:<fpage>806</fpage>&#x2013;<lpage>808</lpage>.</mixed-citation></ref>
+<ref id="c48"><label>48.</label><mixed-citation publication-type="website"><source>Sleep in the Intensive Care Unit through the Lens of Breathing and Heart Rate Variability: Code Repository</source>. <year>2021</year>. at &#x003C;<ext-link ext-link-type="uri" xlink:href="https://github.com/mghcdac/ecg_respiration_sleep_staging_icu">https://github.com/mghcdac/ecg_respiration_sleep_staging_icu</ext-link>&#x003E;.</mixed-citation></ref>
+<ref id="c49"><label>49.</label><mixed-citation publication-type="journal"><string-name><surname>L&#x00E9;ger</surname> <given-names>D</given-names></string-name>, <string-name><surname>Debellemaniere</surname> <given-names>E</given-names></string-name>, <string-name><surname>Rabat</surname> <given-names>A</given-names></string-name>, <string-name><surname>Bayon</surname> <given-names>V</given-names></string-name>, <string-name><surname>Benchenane</surname> <given-names>K</given-names></string-name>, <string-name><surname>Chennaoui</surname> <given-names>M</given-names></string-name>. <article-title>Slow-wave sleep: From the cell to the clinic</article-title>. <source>Sleep Med Rev</source> <year>2018</year>;<volume>41</volume>:<fpage>113</fpage>&#x2013;<lpage>132</lpage>.</mixed-citation></ref>
+<ref id="c50"><label>50.</label><mixed-citation publication-type="journal"><string-name><surname>Elliott</surname> <given-names>R</given-names></string-name>, <string-name><surname>McKinley</surname> <given-names>S</given-names></string-name>, <string-name><surname>Cistulli</surname> <given-names>P</given-names></string-name>, <string-name><surname>Fien</surname> <given-names>M</given-names></string-name>. <article-title>Characterisation of sleep in intensive care using 24-hour polysomnography: an observational study</article-title>. <source>Crit Care</source> <year>2013</year>;<volume>17</volume>:<fpage>R46</fpage>.</mixed-citation></ref>
+<ref id="c51"><label>51.</label><mixed-citation publication-type="journal"><string-name><surname>Aurell</surname> <given-names>J</given-names></string-name>, <string-name><surname>Elmqvist</surname> <given-names>D</given-names></string-name>. <article-title>Sleep in the surgical intensive care unit: continuous polygraphic recording of sleep in nine patients receiving postoperative care</article-title>. <source>Br Med J (Clin Res Ed)</source> <year>1985</year>;<volume>290</volume>:<fpage>1029</fpage>&#x2013;<lpage>1032</lpage>.</mixed-citation></ref>
+<ref id="c52"><label>52.</label><mixed-citation publication-type="journal"><string-name><surname>Hilton</surname> <given-names>BA</given-names></string-name>. <article-title>Quantity and quality of patients&#x2019; sleep and sleep-disturbing factors in a respiratory intensive care unit</article-title>. <source>Journal of Advanced Nursing</source> <year>1976</year>;<volume>1</volume>:<fpage>453</fpage>&#x2013;<lpage>468</lpage>.</mixed-citation></ref>
+<ref id="c53"><label>53.</label><mixed-citation publication-type="journal"><string-name><surname>Parthasarathy</surname> <given-names>S</given-names></string-name>, <string-name><surname>Tobin</surname> <given-names>MJ</given-names></string-name>. <article-title>Sleep in the intensive care unit</article-title>. <source>Intensive Care Med</source> <year>2004</year>;<volume>30</volume>:<fpage>197</fpage>&#x2013; <lpage>206</lpage>.</mixed-citation></ref>
+<ref id="c54"><label>54.</label><mixed-citation publication-type="journal"><string-name><surname>Cooper</surname> <given-names>AB</given-names></string-name>, <string-name><surname>Thornley</surname> <given-names>KS</given-names></string-name>, <string-name><surname>Young</surname> <given-names>GB</given-names></string-name>, <string-name><surname>Slutsky</surname> <given-names>AS</given-names></string-name>, <string-name><surname>Stewart</surname> <given-names>TE</given-names></string-name>, <string-name><surname>Hanly</surname> <given-names>PJ</given-names></string-name>. <article-title>Sleep in critically ill patients requiring mechanical ventilation</article-title>. <source>Chest</source> <year>2000</year>;<volume>117</volume>:<fpage>809</fpage>&#x2013;<lpage>818</lpage>.</mixed-citation></ref>
+<ref id="c55"><label>55.</label><mixed-citation publication-type="journal"><string-name><surname>Fong</surname> <given-names>TG</given-names></string-name>, <string-name><surname>Davis</surname> <given-names>D</given-names></string-name>, <string-name><surname>Growdon</surname> <given-names>ME</given-names></string-name>, <string-name><surname>Albuquerque</surname> <given-names>A</given-names></string-name>, <string-name><surname>Inouye</surname> <given-names>SK</given-names></string-name>. <article-title>The interface between delirium and dementia in elderly adults</article-title>. <source>The Lancet Neurology</source> <year>2015</year>;<volume>14</volume>:<fpage>823</fpage>&#x2013;<lpage>832</lpage>.</mixed-citation></ref>
+</ref-list>
+<glossary>
+<title>List of abbreviations</title>
+<def-list>
+<def-item><term>ECG</term><def><p>electrocardiogram</p></def></def-item>
+<def-item><term>HRV</term><def><p>heart rate variability</p></def></def-item>
+<def-item><term>ICU</term><def><p>intensive care unit</p></def></def-item>
+<def-item><term>SOFA</term><def><p>sequential organ failure assessment</p></def></def-item>
+<def-item><term>CCI</term><def><p>Charlson Comorbidity Index</p></def></def-item>
+<def-item><term>TS</term><def><p>total sleep</p></def></def-item>
+<def-item><term>CS</term><def><p>concordant sleep</p></def></def-item>
+<def-item><term>DS</term><def><p>discordant sleep</p></def></def-item>
+<def-item><term>S</term><def><p>sleep percentage</p></def></def-item>
+<def-item><term>R</term><def><p>stage R</p></def></def-item>
+<def-item><term>N1</term><def><p>stage N1</p></def></def-item>
+<def-item><term>N2</term><def><p>stageN2</p></def></def-item>
+<def-item><term>N3</term><def><p>stage N3</p></def></def-item>
+<def-item><term>SFI</term><def><p>sleep fragmentation index</p></def></def-item>
+<def-item><term>WT</term><def><p>wake transitions per hour of sleep</p></def></def-item>
+<def-item><term>AHI</term><def><p>apnea hypopnea index</p></def></def-item>
+<def-item><term>UMAP</term><def><p>Uniform Manifold Approximation and Projection</p></def></def-item>
+<def-item><term>SDB</term><def><p>sleep disordered breathing</p></def></def-item>
+<def-item><term>Std</term><def><p>standard deviation</p></def></def-item>
+<def-item><term>IQR</term><def><p>inter quartile range</p></def></def-item>
+<def-item><term>CVar</term><def><p>Coefficient of Variation</p></def></def-item>
+<def-item><term>p_dag</term><def><p>p-value D&#x2019;Agostino&#x2019;s K-squared test</p></def></def-item>
+<def-item><term>p_sha</term><def><p>p-value Shapiro Wilk test</p></def></def-item>
+<def-item><term>p_tt</term><def><p>p-value Student&#x2019;s t-test</p></def></def-item>
+<def-item><term>s_tt</term><def><p>t-statistic Student&#x2019;s t-test</p></def></def-item>
+<def-item><term>p_mwu</term><def><p>p-value Mann Whitney U test</p></def></def-item>
+<def-item><term>s_mwu</term><def><p>Mann Whitney U statistic</p></def></def-item>
+<def-item><term>p_medians</term><def><p>p-value Mood&#x2019;s median test</p></def></def-item>
+<def-item><term>s_medians</term><def><p>Mood&#x2019;s Median test statistic</p></def></def-item>
+</def-list>
+</glossary>
+<sec id="s6">
+<title>SUPPLEMENT</title>
+<list list-type="simple">
+<list-item><p><italic>A. Dataset &#x2013;</italic> Patients&#x2019; eligibility for the clinical trial was determined according to the following inclusion/exclusion criteria taken from the Investigation of Sleep in the Intensive Care Unit(<xref ref-type="bibr" rid="sc1">1</xref>) ClinicalTrials.gov page:</p></list-item>
+</list>
+<p>Inclusion Criteria:</p>
+<p>In order to be eligible to participate in this study, an individual must meet all of the following criteria:
+<list list-type="order">
+<list-item><p>Admitted to MGH Blake 7 or 12, or Ellison 4 ICU at Massachusetts General Hospital</p></list-item>
+<list-item><p>Male or female, aged &#x003E; 50 years.</p></list-item>
+<list-item><p>Provision of signed and dated informed consent form (by patient or LAR).</p></list-item>
+<list-item><p>Stated willingness to comply with all study procedures and availability for the duration of the study.</p></list-item>
+<list-item><p>Not on mechanical ventilation at the time of enrollment.</p></list-item>
+<list-item><p>Able to be enrolled before 7PM.</p></list-item>
+<list-item><p>For females of reproductive potential: pregnancy test is negative.</p></list-item>
+</list>
+Exclusion Criteria:</p>
+<p>Any individual who meets any of the following criteria will be excluded from participation in this study:
+<list list-type="order">
+<list-item><p>Unable to be assessed for delirium (e.g. blindness or deafness).</p></list-item>
+<list-item><p>Pregnancy or lactation.</p></list-item>
+<list-item><p>Known allergic reactions to components of dexmedetomidine.</p></list-item>
+<list-item><p>Follow-up would be difficult (e.g. active substance abuse, homelessness).</p></list-item>
+<list-item><p>Severe dementia, as measured by a score of &#x2265;3.3 on the Short Informant Questionnaire on Cognitive Decline in the Elderly (IQCODE).</p></list-item>
+<list-item><p>Known pre-existing neurologic disease or injury with focal neurologic or cognitive deficits.</p></list-item>
+<list-item><p>Serious cardiac disease (e.g. sick sinus syndrome, sinus bradycardia).</p></list-item>
+<list-item><p>Severe liver dysfunction (Child-Pugh Class C).</p></list-item>
+<list-item><p>Severe renal dysfunction (receiving dialysis).</p></list-item>
+<list-item><p>Low likelihood of survival &#x003E;24 hours.</p></list-item>
+<list-item><p>Low likelihood of staying in the ICU overnight</p></list-item>
+<list-item><p>Patient is receiving either of the anticholinergic drugs scopolamine or penehyclidine.</p></list-item>
+<list-item><p>Concomitant enrollment in another study protocol that may interfere with data acquisition or reliability of measurements.</p></list-item>
+<list-item><p>Deemed unsuitable for selection by the research team or ICU providers due to any medical, legal, social, or interpersonal issues that would either compromise the study or the routine care of patients.</p></list-item>
+</list></p>
+<table-wrap id="tbls1" orientation="portrait" position="float">
+<label>Table S1.</label><caption><p>ICU and matched sleep laboratory cohort.</p></caption>
+<graphic xlink:href="21264039v1_tbls1.tif"/>
+</table-wrap>
+<fig id="figs1" position="float" orientation="portrait" fig-type="figure">
+<label>Figure S1.</label>
+<caption><p>The wearable respiration device (&#x2018;Airgo&#x2019;, MyAir LLC, Boston) used in this study.</p></caption>
+<graphic xlink:href="21264039v1_figs1.tif"/>
+</fig>
+<sec id="s6a">
+<label>A.</label>
+<title>Biosignals Preprocessing</title>
+<p>For ECG analysis, we mainly used the open source &#x2018;PhysioNet Cardiovascular Signal Toolbox&#x2019; (<xref ref-type="bibr" rid="sc2">2</xref>). The settings below correspond to the toolbox parameters we used for this study.</p>
+<p>Window Size: 300 seconds windows; increment 30 seconds; minimum of 20&#x0025; of data needs to be good quality for a window to be considered for analysis; maximum 15&#x0025; of data is allowed to be missing in a window in order to be considered for analysis.</p>
+<p>Signal Quality: low quality threshold &#x003D; 0.9, comparison window length &#x003D; 10 seconds; increment &#x003D; 1 second; time threshold &#x003D; 0.1 seconds; Margin time not to include in comparison &#x003D; 2 seconds.</p>
+<p>Preprocessing: Maximum believable gap in RR intervals &#x003D; 2 seconds, Percent limit of change from one interval to the next &#x003D; 100&#x0025;; outlier method &#x003D; &#x2018;remove outlier points&#x2019;, signal quality threshold for good data &#x003D; 0.9; minimum length of good data &#x003D; 30 seconds.</p>
+<p>Frequency Domain Analysis Settings: ULF &#x003D; [0 .0033]; VLF &#x003D; [0.0033 .04]; LF &#x003D; [.04 .15]; HF &#x003D; [0.15 0.4]; Power Spectral Estimation Technique: Lomb Scargle.</p>
+<p>Peak Detection Settings: Refectory period &#x003D; 0.2 seconds; energy threshold &#x003D; 0.15, window size for QRS detection &#x003D; 15 seconds.</p>
+</sec>
+<sec id="s6b">
+<label>B.</label>
+<title>Sleep Staging</title>
+<fig id="figs2" position="float" orientation="portrait" fig-type="figure">
+<label>Figure S2.</label>
+<caption><p>Swimmer plot visualizing sleep stages over time for 102 ICU patients. One line represents one patient and patients are sorted by the proportion of sleep stage discordance. The data is colored according to the sleep stages N1, N2, N3, REM and Wake as assigned by the breathing-based (top half of each line) and HRV-based (bottom half of each line) sleep staging models. Both sleep stage distribution and the amount of discordance considerably varied among patients.</p></caption>
+<graphic xlink:href="21264039v1_figs2.tif"/>
+</fig>
+<fig id="figs3" position="float" orientation="portrait" fig-type="figure">
+<label>Figure S3.</label>
+<caption><p>Analysis Approach A1. Sleep staging results for a surgical and medical ICU (N&#x003D;102 subjects, 274 24-hour segments) and for an age and sex matched sleeplab cohort (N&#x003D;220 subjects, 220 nights). Segments inclusion criteria: any sleep, sleep indices computed on total sleep. Sleep stages were determined by breathing (respiratory effort) and heart rate variability (HRV)-based deep neural network models, for the sleeplab additional human expert labels were available. <bold>A.</bold> Mean (one standard deviation) sleep indices for breathing, HRV and expert-based sleep stages (rows), and ICU, sleeplab and Apnea-Hypopnea Index (AHI) subgroups (columns). TS: total sleep time (hours), CS: concordant sleep time (hours), DS: discordant sleep time (hours), S: Sleep percentage of total recording (&#x0025;), SFI: sleep fragmentation index, WT: wake transitions per hour of sleep. <bold>B.</bold> Median (inter-quartile range) sleep indices for ICU and sleeplab cohort for both breathing and HRV based sleep staging models.</p></caption>
+<graphic xlink:href="21264039v1_figs3.tif"/>
+</fig>
+<fig id="figs4" position="float" orientation="portrait" fig-type="figure">
+<label>Figure S4.</label>
+<caption><p>Analysis Approach A3. Sleep staging results for a surgical and medical ICU (N&#x003D;80 subjects, 163 24-hour segments) and for an age and sex matched sleeplab cohort (N&#x003D;190 subjects, 190 nights). Segments inclusion criteria: at least two hours of concordant sleep, sleep indices computed on concordant sleep. Sleep stages were determined by breathing (respiratory effort) and heart rate variability (HRV)-based deep neural network models, for the sleeplab additional human expert labels were available. <bold>A.</bold> Mean (one standard deviation) sleep indices for breathing, HRV and expert-based sleep stages (rows), and ICU, sleeplab and Apnea-Hypopnea Index (AHI) subgroups (columns). TS: total sleep time (hours), CS: concordant sleep time (hours), DS: discordant sleep time (hours), S: Sleep Percentage of total recording (&#x0025;), SFI: sleep fragmentation index, WT: wake transitions per hour of sleep. <bold>B.</bold> Median (inter-quartile range) sleep indices for ICU and sleeplab cohort for both breathing and HRV based sleep staging models.</p></caption>
+<graphic xlink:href="21264039v1_figs4.tif"/>
+</fig>
+<table-wrap id="tbls2" orientation="portrait" position="float">
+<label>Table S2.</label><caption><p>Analysis approach A1. Summary of sleep stage analysis with average HRV and breathing-based sleep stage assessments. Inclusion all segments with any sleep, sleep statistics computed on total sleep.</p></caption>
+<graphic xlink:href="21264039v1_tbls2.tif"/>
+</table-wrap>
+<table-wrap id="tbls3" orientation="portrait" position="float">
+<label>Table S3.</label><caption><p>Analysis approach A2. Summary of sleep stage analysis with average HRV and breathing-based sleep stage assessments. Inclusion &#x003E; 2 hours of concordant sleep, sleep statistics computed on total sleep.</p></caption>
+<graphic xlink:href="21264039v1_tbls3.tif"/>
+</table-wrap>
+<table-wrap id="tbls4" orientation="portrait" position="float">
+<label>Table S4.</label><caption><p>Analysis approach A3. Summary of sleep stage analysis with average HRV and breathing-based sleep stage assessments. Inclusion &#x003E; 2 hours of concordant sleep, sleep statistics computed on concordant sleep.</p></caption>
+<graphic xlink:href="21264039v1_tbls4.tif"/>
+</table-wrap>
+<table-wrap id="tbls5" orientation="portrait" position="float">
+<label>Table S5.</label><caption><p>Analysis approach A2. Main summary of sleep stage analysis with average HRV and breathing-based sleep stage assessments.</p></caption>
+<graphic xlink:href="21264039v1_tbls5.tif"/>
+</table-wrap>
+<table-wrap id="tbls6" orientation="portrait" position="float">
+<label>Table S6.</label><caption><p>Analysis approach A3. Main summary of sleep stage analysis with average HRV and breathing-based sleep stage assessments.</p></caption>
+<graphic xlink:href="21264039v1_tbls6.tif"/>
+</table-wrap>
+<table-wrap id="tbls7" orientation="portrait" position="float">
+<label>Table S7.</label><caption><p>Summary and remarks interpretation for sleep stage analysis for ICU and sleeplab comparison.</p></caption>
+<graphic xlink:href="21264039v1_tbls7.tif"/>
+<graphic xlink:href="21264039v1_tbls7a.tif"/>
+<graphic xlink:href="21264039v1_tbls7b.tif"/>
+</table-wrap>
+<sec id="s6b1">
+<title>Latent feature representation of sleep</title>
+<p>The last hidden layers&#x2019; dimensions (D_LHL) for the Long Short-Term Memory (LSTM) networks were (<xref ref-type="bibr" rid="c40">40</xref>, <xref ref-type="bibr" rid="sc1">1</xref>) for the HRV-based model and (200, <xref ref-type="bibr" rid="sc1">1</xref>) for the breathing-based model. We performed two UMAPs (Uniform Manifold Approximation and Projection) separately for the data resulting from the HRV-based and breathing-based models. The python package UMAP(<xref ref-type="bibr" rid="sc3">3</xref>) was used to perform the UMAPs, and python packages matplotlib and seaborn were used for visualization.</p>
+<p>Pseudo code:
+<list list-type="order">
+<list-item><p>Select either HRV-based or breathing-based model, and concatenate all last hidden layer activations for both ICU and sleeplab data, resulting in an array (&#x2018;LHL array&#x2019;) with shape: (N_ALL, D_LHL) with N_ALL &#x003D; 693,401, number of epochs from sleeplab data (324, 928) plus number of epochs from ICU data (368, 473), and D_LHL&#x003D;40 for HRV- and D_LHL&#x003D;200 for breathing-based model.</p></list-item>
+<list-item><p>Perform unsupervised UMAP with input LHL array and select the first two dimensions of the resulting UMAP embedding, resulting in an array (N_ALL, 2). Parameters: number of neighbors&#x003D;15, minimum distance&#x003D;0.1, metric &#x003D; &#x201C;euclidean&#x201D;.</p></list-item>
+<list-item><p>For <bold><xref rid="fig3" ref-type="fig">Figure 3A</xref></bold>, plot UMAP embeddings for sleeplab data only, ICU data only, and sleeplab and ICU data combined (three figure panel columns). For each plot, color the data according to the assigned sleep stage.</p></list-item>
+<list-item><p>For <bold><xref rid="fig3" ref-type="fig">Figure 3B</xref></bold>, for each panel column, select a sleep stage (W, R, N1, N2, N3) and estimate kernel densities for the UMAP embeddings of both the sleeplab and ICU data. Plot the 10&#x0025; iso-proportion levels.</p></list-item>
+</list>
+</p>
+</sec>
+<sec id="s6b2">
+<title>Disagreement HRV and breathing model - error analysis</title>
+<p>In order to identify features in the cardiovascular and pulmonary system that are associated with discordant sleep, we compute breathing and heart rate variability related features and compare the values of those features for agreeing and discordant sleep. We use the four breathing features as described above: respiratory rate, inter-breath-intervals, variability index, and ventilation CVar. For HRV, we compute a root mean squared successive difference of NN intervals (RMSSD), very low frequency (VLF, 0.0033-0.04 Hz), low frequency (0.04-0.15 Hz), and high frequency (HF, 0.15-0.4 Hz) with a 5-minute sliding window, using Lomb-Scargle periodogram for spectral analysis. We further compute Cardiopulmonary Coupling (CPC)(<xref ref-type="bibr" rid="sc4">4</xref>), a frequency domain analysis method that combines cross spectral power and coherence of the respiratory and HRV signals. Unlike in the original publication where respiratory signal is estimated from the ECG signal(<xref ref-type="bibr" rid="sc4">4</xref>), we use the wearable respiratory signal. From the CPC spectrogram, we compute the amounts of low frequency coupling (LFC, 0.01-0.1 Hz) and high frequency coupling (HFC, 0.1-0.4 Hz) with an 8.5-minute sliding window.</p>
+<p>Summary features computed:
+<list list-type="alpha-lower">
+<list-item><p>Heart Rate Variability: NN interval, mean very low frequency power (VLF, 0.0033-0.04 Hz), low frequency power (0.04-0.15 Hz), high frequency power (HF, 0.15-0.4 Hz), RMSSD of NN intervals.</p></list-item>
+<list-item><p>Breathing: inter-breath-interval, respiratory rate, variability index, ventilation coefficient of variation.</p></list-item>
+<list-item><p>Cardiopulmonary Coupling: low frequency coupling (LFC, 0.01-0.1 Hz), high frequency coupling (HFC, 0.1-0.4 Hz).</p></list-item>
+</list>
+We computed the mean feature values (e.g. mean NN interval) for concordant and discordant parts for every 24-hour segment (inclusion criteria: at least 2 hours of concordant sleep) and performed a Wilcoxon signed-rank test with an alpha value of 0.01 for each feature pair. Features were computed for each sleep stage. Note: Discordant sleep is partially asymmetric, an epoch that is classified as N2 by model A and as Wake by model B is included for model A analysis here but not for model B analysis. Further, if model A classifies an epoch as N1, and model B as N3, the epoch is treated as &#x2018;N1-discordant&#x2019; for model A and &#x2018;N3-discordant&#x2019; for model B.</p>
+<table-wrap id="tbls8" orientation="portrait" position="float">
+<label>Table S8.</label><caption><p>Median and interquartile ranges for sleep indices for ICU patients grouped by their primary or main condition. Data is graphically displayed in <xref rid="fig6" ref-type="fig">Figure 6</xref>.</p></caption>
+<graphic xlink:href="21264039v1_tbls8.tif"/>
+</table-wrap>
+<table-wrap id="tbls9" orientation="portrait" position="float">
+<label>Table S9.</label><caption><p>Error Analysis &#x2013; Details. HRV and respiratory features (rows in table) were computed for concordant sleep and discordant sleep, for both the HRV-based and breathing-based sleep staging models, and for each sleep stage. Columns contain number of 24-hour segments available after inclusion criteria (minimum 2 hours of concordant sleep), feature values, and the Mann&#x2013;Whitney U test (both test statistic and p-value). The &#x2018;significance&#x2019; column shows &#x2018;True&#x2019; if the p-value is less than 0.01 for any of the HRV- or breathing-based sleep staging models.</p></caption>
+<graphic xlink:href="21264039v1_tbls9.tif"/>
+</table-wrap>
+<table-wrap id="tbls10" orientation="portrait" position="float">
+<label>Table S10.</label><caption><p>Shows the significant effect directions of <xref ref-type="table" rid="tbls9">Table S9</xref> for easier readability. I.e. &#x2018;&#x002B;&#x2019;/&#x2019;-&#x2018; indicate a significant (0.01 level) increase/decrease of a feature in discordant sleep compared to concordant sleep.</p></caption>
+<graphic xlink:href="21264039v1_tbls10.tif"/>
+</table-wrap>
+<p>For each 24-hour segment included (inclusion criteria: at least 2 hours of concordant sleep), we obtained the proportion of discordant sleep, which is a number in the [0, 1] interval. To make the variable unbounded and more gaussian, we used the following transformation:
+<disp-formula>
+<alternatives><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="21264039v1_ueqn2.gif"/></alternatives>
+</disp-formula>
+We computed the mean, standard deviation, 0.25-, 0.50-, and 0.75 quantiles for each feature for every 24-hour segment and for each sleep stage. This lead to 886 features, and as a consequence, we used the LASSO penalty for multilinear regression. We start with a penalty of 0 and with a step size of 0.1, we increase the penalty until 10. For each penalty value, we train a LASSO model, obtain the variables included in the model and with those variables train a vanilla multilinear regression model for which we obtain the F-test statistic, F-test p-value and the r-squared. The result is shown in <bold><xref ref-type="fig" rid="figs4">Figure S4</xref></bold>, indicating overfitted models close to a penalty of 0 and underfitted models close to a penalty of 10. A penalty of 4 results in a regression model that contains 53 variables, an F-statistic of 1.51, a F-test p-value of 0.036, and an r-squared of 0.42. Hence, we obtained evidence that up to 42&#x0025; of the variance in the discordance sleep proportion over a full 24-hour segment can be explained by HRV and breathing based features that are computed over pooled discordant and concordant parts.</p>
+<fig id="figs5" position="float" orientation="portrait" fig-type="figure">
+<label>Figure S5.</label>
+<caption><p>Model development for error analysis. We trained linear regression models with varying LASSO penalty. A penalty of 4 results in a regression model that contains 53 variables, an F-statistic of 1.51, a F-test p-value of 0.036, and an r-squared of 0.42, showing 42&#x0025; of the variance in discordant sleep proportion is explained by this model.</p></caption>
+<graphic xlink:href="21264039v1_figs5.tif"/>
+</fig>
+<table-wrap id="tbls11" orientation="portrait" position="float">
+<label>Table S11.</label><caption><p>Correlations between proportion of discordant sleep and Sequential Organ Failure Assessment (SOFA) score or medications administered. Medications included in the analysis: Opioids (Buprenorphine, Morphine, Oxycodone, Hydrocodone, Hydromorphone, Fentanyl, Meperidine, Codeine, Tramadol), Benzodiazepines (Alprazolam, Chlordiazepoxide, Clonazepam, Diazepam, Lorazepam, Midazolam, Oxazepam, Phenobarbital, Propofol), Antipsychotics (Olanzapine, Clozapine, Thiothixene, Haloperidol, Fluphenazine, Prochlorperazine, Trifluoperazine, Loxapine, Quetiapine, Asenapine). Medications within a category were converted to equivalent doses before summed(<xref ref-type="bibr" rid="sc5">5</xref>&#x2013;<xref ref-type="bibr" rid="sc7">7</xref>).</p></caption>
+<graphic xlink:href="21264039v1_tbls11.tif"/>
+</table-wrap>
+</sec>
+</sec>
+<sec id="s6c">
+<label>F.</label>
+<title>Statistical Analysis &#x2013; Breathing</title>
+<table-wrap id="tbls12" orientation="portrait" position="float">
+<label>Table S12.</label><caption><p>Breathing Main Summary. Mean feature per night distributions.</p></caption>
+<graphic xlink:href="21264039v1_tbls12.tif"/>
+</table-wrap>
+<table-wrap id="tbls13" orientation="portrait" position="float">
+<label>Table S13.</label><caption><p>Breathing feature analysis &#x2013;feature mean (e.g. mean respiratory rate) per night, per patient.</p></caption>
+<graphic xlink:href="21264039v1_tbls13.tif"/>
+<graphic xlink:href="21264039v1_tbls13a.tif"/>
+</table-wrap>
+<fig id="figs6" position="float" orientation="portrait" fig-type="figure">
+<label>Figure S6.</label>
+<caption><p>Breathing features per night (mean and standard deviation) for each sleep stage and for ICU and sleeplab AHI&#x003C;5 and AHI&#x003E;15 cohort. Distributions were fit with a kernel density estimation method, iso mass levels 0.1, 0.2, and 0.5 are shown in the plot.</p></caption>
+<graphic xlink:href="21264039v1_figs6.tif"/>
+</fig>
+</sec>
+</sec>
+<ref-list>
+<title>SUPPLEMENT References</title>
+<ref id="sc1"><label>1.</label><mixed-citation publication-type="website"><ext-link ext-link-type="uri" xlink:href="https://clinicaltrials.gov/ct2/show/NCT03355053?term=Investigation+of+Sleep+in+the+Intensive+Care+Unit">https://clinicaltrials.gov/ct2/show/NCT03355053?term=Investigation+of+Sleep+in+the+Intensive+Care+Unit</ext-link>.</mixed-citation></ref>
+<ref id="sc2"><label>2.</label><mixed-citation publication-type="book"><string-name><given-names>Adriana N</given-names> <surname>Vest</surname></string-name>, <string-name><given-names>Giulia</given-names> <surname>Da Poian</surname></string-name>, <string-name><given-names>Qiao</given-names> <surname>Li</surname></string-name>, <string-name><given-names>Changyu</given-names> <surname>Liu</surname></string-name>, <string-name><given-names>Shamim</given-names> <surname>Nemati</surname></string-name>, <string-name><given-names>Amit</given-names> <surname>Shah</surname></string-name>, <string-name><given-names>Gari D</given-names> <surname>Clifford</surname></string-name>. <source>cliffordlab/PhysioNet-Cardiovascular-Signal-Toolbox: PhysioNet-Cardiovascular-Signal-Toolbox 1.0.2</source>. <publisher-name>Zenodo</publisher-name>; <year>2019</year>. doi:<pub-id pub-id-type="doi">10.5281/zenodo.3401708</pub-id>.</mixed-citation></ref>
+<ref id="sc3"><label>3.</label><mixed-citation publication-type="journal"><string-name><surname>McInnes</surname> <given-names>L</given-names></string-name>, <string-name><surname>Healy</surname> <given-names>J</given-names></string-name>, <string-name><surname>Melville</surname> <given-names>J</given-names></string-name>. <article-title>UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction</article-title>. <source>arXiv</source>:180203426 [cs, stat] <year>2020</year>;at &#x003C;<ext-link ext-link-type="uri" xlink:href="http://arxiv.org/abs/1802.03426">http://arxiv.org/abs/1802.03426</ext-link>&#x003E;.</mixed-citation></ref>
+<ref id="sc4"><label>4.</label><mixed-citation publication-type="journal"><string-name><surname>Thomas</surname> <given-names>RJ</given-names></string-name>, <string-name><surname>Mietus</surname> <given-names>JE</given-names></string-name>, <string-name><surname>Peng</surname> <given-names>C-K</given-names></string-name>, <string-name><surname>Goldberger</surname> <given-names>AL</given-names></string-name>. <article-title>An Electrocardiogram-Based Technique to Assess Cardiopulmonary Coupling During Sleep</article-title>. <source>Sleep</source> <year>2005</year>;<volume>28</volume>:<fpage>1151</fpage>&#x2013;<lpage>1161</lpage>.</mixed-citation></ref>
+<ref id="sc5"><label>5.</label><mixed-citation publication-type="journal"><string-name><surname>Patanwala</surname> <given-names>AE</given-names></string-name>, <string-name><surname>Duby</surname> <given-names>J</given-names></string-name>, <string-name><surname>Waters</surname> <given-names>D</given-names></string-name>, <string-name><surname>Erstad</surname> <given-names>BL</given-names></string-name>. <article-title>Opioid conversions in acute care</article-title>. <source>Ann Pharmacother</source> <year>2007</year>;<volume>41</volume>:<fpage>255</fpage>&#x2013;<lpage>266</lpage>.</mixed-citation></ref>
+<ref id="sc6"><label>6.</label><mixed-citation publication-type="journal"><string-name><surname>MacLaren</surname> <given-names>R</given-names></string-name>, <string-name><surname>Sullivan</surname> <given-names>PW</given-names></string-name>. <article-title>Pharmacoeconomic Modeling of Lorazepam, Midazolam, and Propofol for Continuous Sedation in Critically Ill Patients</article-title><source>. Pharmacotherapy: The Journal of Human Pharmacology and Drug Therapy</source> <year>2005</year>;<volume>25</volume>:<fpage>1319</fpage>&#x2013;<lpage>1328</lpage>.</mixed-citation></ref>
+<ref id="sc7"><label>7.</label><mixed-citation publication-type="journal"><string-name><surname>Guina</surname> <given-names>J</given-names></string-name>, <string-name><surname>Merrill</surname> <given-names>B</given-names></string-name>. <article-title>Benzodiazepines II: Waking Up on Sedatives: Providing Optimal Care When Inheriting Benzodiazepine Prescriptions in Transfer Patients</article-title>. <source>J Clin Med</source> <year>2018</year>;<volume>7</volume>:.</mixed-citation></ref>
+</ref-list>
+</back>
+</article>

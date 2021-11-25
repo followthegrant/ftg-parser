@@ -1,0 +1,795 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.2d1 20170631//EN" "JATS-archivearticle1.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" article-type="article" dtd-version="1.2d1" specific-use="production" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="publisher-id">MEDRXIV</journal-id>
+<journal-title-group>
+<journal-title>medRxiv</journal-title>
+<abbrev-journal-title abbrev-type="publisher">medRxiv</abbrev-journal-title>
+</journal-title-group>
+<publisher>
+<publisher-name>Cold Spring Harbor Laboratory</publisher-name>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1101/2021.04.11.21255289</article-id>
+<article-version>1.4</article-version>
+<article-categories>
+<subj-group subj-group-type="hwp-journal-coll">
+<subject>Epidemiology</subject>
+</subj-group>
+</article-categories>
+<title-group>
+<article-title>An explicit formula for minimizing the infected peak in an SIR epidemic model when using a fixed number of complete lockdowns</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" corresp="yes">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0001-8020-5783</contrib-id>
+<name><surname>Sontag</surname><given-names>Eduardo D.</given-names></name>
+<xref ref-type="aff" rid="a1">&#x002A;</xref>
+<xref ref-type="corresp" rid="cor1">&#x0023;</xref>
+</contrib>
+<aff id="a1"><label>&#x002A;</label><institution>Departments of Electrical and Computer Engineering and Bioengineering, and affiliate of Departments of Mathematics and Chemical Engineering, Northeastern University</institution>, Boston, MA, <country>United States</country>. <institution>Laboratory of Systems Pharmacology, Harvard Medical School</institution>, Boston, MA, <country>United States</country>. Email: <email>sontag@sontaglab.org</email></aff>
+</contrib-group>
+<author-notes>
+<corresp id="cor1"><label>&#x0023;</label>Corresponding author; email: <email>sontag@sontaglab.org</email></corresp>
+</author-notes>
+<pub-date pub-type="epub">
+<year>2021</year>
+</pub-date>
+<elocation-id>2021.04.11.21255289</elocation-id>
+<history>
+<date date-type="received">
+<day>11</day>
+<month>4</month>
+<year>2021</year>
+</date>
+<date date-type="rev-recd">
+<day>06</day>
+<month>7</month>
+<year>2021</year>
+</date>
+<date date-type="accepted">
+<day>07</day>
+<month>7</month>
+<year>2021</year>
+</date>
+</history>
+<permissions>
+<copyright-statement>&#x00A9; 2021, Posted by Cold Spring Harbor Laboratory</copyright-statement>
+<copyright-year>2021</copyright-year>
+<license><license-p>The copyright holder for this pre-print is the author. All rights reserved. The material may not be redistributed, re-used or adapted without the author's permission.</license-p></license>
+</permissions>
+<self-uri xlink:href="21255289.pdf" content-type="pdf" xlink:role="full-text"/>
+<abstract>
+<title>ABSTRACT</title>
+<p>Careful timing of NPIs (non-pharmaceutical interventions) such as social distancing may avoid high &#x201C;second waves&#x201D; of infections of COVID-19. This paper asks what should be the timing of a set of <italic>k</italic> complete-lockdowns of prespecified lengths (such as two weeks) so as to minimize the peak of the infective compartment. Perhaps surprisingly, it is possible to give an explicit and easily computable rule for when each lockdown should commence. Simulations are used to show that the rule remains fairly accurate even if lockdowns are not perfect.</p>
+</abstract>
+<kwd-group kwd-group-type="author">
+<title>Keywords</title>
+<kwd>COVID-19</kwd>
+<kwd>lockdowns</kwd>
+<kwd>mathematical epidemiology</kwd>
+<kwd>epidemics</kwd>
+<kwd>SIR model</kwd>
+</kwd-group>
+<counts>
+<page-count count="31"/>
+</counts>
+</article-meta>
+<notes>
+<notes notes-type="competing-interest-statement">
+<title>Competing Interest Statement</title><p>The authors have declared no competing interest.</p></notes>
+<notes notes-type="financial-disclosure">
+<title>Funding Statement</title><p>Parts of this work were supported by grants NSF 1849588, ONR N00014-21-1-2431, and AFOSR FA9550-21-1-0289.</p></notes>
+<notes notes-type="disclosures">
+<title>Author Declarations</title><p>I confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.</p><p>Yes</p><p>The details of the IRB/oversight body that provided approval or exemption for the research described are given below:</p><p>N/A</p><p>All necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived.</p><p>Yes</p><p>I understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as <ext-link ext-link-type="uri" xlink:href="http://ClinicalTrials.gov">ClinicalTrials.gov</ext-link>. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).</p><p>Yes</p><p>I have followed all appropriate research reporting guidelines and uploaded the relevant EQUATOR Network research reporting checklist(s) and other pertinent material as supplementary files, if applicable.</p><p>Yes</p></notes>
+<fn-group content-type="summary-of-updates">
+<title>Summary of Updates:</title>
+<fn fn-type="update"><p>A section showing that equal times are optimal was added, as well as a sensitivity analysis. A couple of plots were reformatted/merged.</p></fn>
+</fn-group>
+</notes>
+</front>
+<body>
+<sec id="s1">
+<label>1</label>
+<title>Introduction</title>
+<p>The year 2020 will be remembered for the COVID-19 (coronavirus disease 2019) pandemic, which is an individual-to-individual infection by SARS-CoV-2 (severe acute respiratory syndrome coronavirus 2). An immediate way to stop transmissibility is to establish total lockdowns, as China and Northern Italy did early on in the outbreak [<xref ref-type="bibr" rid="c1">1</xref>]. Lockdowns and other NPIs (non-pharmaceutical interventions) such as quarantine and social distancing were soon implemented around the world. On the other hand, frustration with isolation rules and economic costs mean that, in most countries, long lockdowns are not feasible, nor is it easy to enforce even milder forms of NPIs [<xref ref-type="bibr" rid="c2">2</xref>, <xref ref-type="bibr" rid="c3">3</xref>, <xref ref-type="bibr" rid="c4">4</xref>]. However, relaxation of NPIs could lead to &#x201C;second waves&#x201D; of infections when the NPIs are relaxed. This motivates the search for optimally timing the start of multiple short NPIs so as to minimize the maximum peak of infective individuals. This paper deals with that problem.</p>
+<p>To be precise, we consider an SIR model with strict (no-contact) lockdowns, and assume that policymakers want to decide when to start each one of <italic>K</italic> of lockdowns, with respective lengths <italic>T</italic><sub><italic>k</italic></sub>, <italic>k</italic> = 1, &#x2026;, <italic>K</italic>. For example, the <italic>T</italic><sub><italic>k</italic></sub>&#x2019;s may all be equal, say two weeks. We provide an exact and very simple rule, which says that lockdowns should commence whenever the number of infectious individuals reaches a certain level, namely <inline-formula><alternatives><inline-graphic xlink:href="21255289v4_inline1.gif"/></alternatives></inline-formula>, where <italic>V</italic><sub>0</sub> is a number that can be easily computed from the infectivity rate, recovery rate (<italic>&#x03BD;</italic>), and the initial populations of susceptible and infected individuals. The formula for <italic>I</italic><sub>start</sub> simplifies in the case in which all <italic>T</italic><sub><italic>k</italic></sub>&#x2019;s are equal, <italic>T</italic><sub><italic>k</italic></sub> = <italic>T</italic>, to just (1 &#x002B; <italic>K</italic> &#x2212; <italic>Ke</italic><sup>&#x2212;<italic>&#x03BD;T</italic></sup>)<sup>&#x2212;1</sup><italic>V</italic><sub>0</sub>. In addition, we show that there will be exactly <italic>K</italic> peaks of infected populations, all equal to this value. Observe that as the lockdown intervals become larger, <italic>T</italic> &#x2192;&#x221E;, the best possible maximum peak is <italic>V</italic><sub>0</sub><italic>/</italic>(1 &#x002B; <italic>K</italic>). (Using a larger value of <italic>T</italic> will lengthen the duration of the pandemic but, asymptotically, not change the peak value. If there is a hope for a quick cure or vaccines, this is not necesarily a good strategy.) Obviously, a perfect or near-perfect lockdown is not practical, except in jurisdictions where complete obedience can be strongly enforced, but this theoretical problem is nonetheless of interest. Moreover, studying this case also helps understand the problem with non-strict lockdowns, as we will discuss.</p>
+<sec id="s1a">
+<title>Infections and mathematical modeling</title>
+<p>Infectious agents have critically influenced the history of mankind, with disease-causing pathogens constantly emerging or evolving. From the Plague of Athens (430-428 BC), to the fourteenth century Black Death that killed about a third of Europe&#x2019;s population, to the Yellow Fever epidemic in Philadelphia in 1793, in which a tenth of the population of the city perished, to the 1918 &#x201C;Spanish flu&#x201D; pandemic (which did not originate in Spain) that resulted in about 3-5&#x0025; of the world population dying, to the COVID-19 2020-2021 pandemic, infectious diseases have had major impacts on health, psychological and social well-being, medical advances (mRNA vaccines, for example), economics, politics, military history, and religious and racial persecution. Different types of pathogens are involved in infectious diseases. Viruses cause the common cold, influenza, measles, West Nile, and COVID-19, while anthrax, salmonella, chlamydia, and cholera are caused by bacteria, and protozoa give rise to malaria and trypanosomiasis (sleeping sickness). There are many mechanisms for transmission, including respiratory droplets (influenza, colds), body secretions (chlamydia), flies (trypanosomiasis), mosquitoes (malaria), and food or water (cholera). Control strategies include behavioral and sanitation changes (NPIs), vaccines, antibiotics, antiviral drugs. Notwithstanding this variety, there is a common mathematical structure.</p>
+<p>The modeling of infectious diseases and their spread is an important part of mathematical biology, specifically mathematical epidemiology. Modeling is an important tool for gauging the impact of NPIs such as social distancing, masking, lock-downs, or school closings, as well as predicting/attenuating magnitude of peak infections (&#x201C;flattening the curve&#x201D; so as not to overwhelm ICU capacities), predicting/delaying peak infections (until vaccine/treatments available), and devising strategies for vaccination, control, or eradication of diseases. The social and political use of epidemic models must take into account their degree of realism. Good models do not incorporate all possible effects, but rather focus on the basic mechanisms in their simplest possible fashion. Not only it is difficult to model every detail, but the more details the more the likelihood of making the model sensitive to parameters and assumptions, and the more difficult it is to <italic>understand and interpret</italic> the model as well as to play &#x201C;<italic>what-if</italic> &#x201C; scenarios to compare alternative containment policies. It turns out that even simple models help pose important questions about the underlying mechanisms of infection spread and possible means of control of an epidemic.</p>
+<p>Most mathematical epidemiology models incorporate some version of the classical SIR model proposed by Kermack and McKendrick in 1927 [<xref ref-type="bibr" rid="c5">5</xref>]. We will restrict attention to this core model, which is suitable for describing initial stages of an infection in a single city, and also for modeling later stages when community spread becomes dominant. Mathematical models have long played a central role in epidemiology, and this has been especially true with the COVID-19 pandemic [<xref ref-type="bibr" rid="c6">6</xref>, <xref ref-type="bibr" rid="c7">7</xref>, <xref ref-type="bibr" rid="c8">8</xref>, <xref ref-type="bibr" rid="c9">9</xref>, <xref ref-type="bibr" rid="c10">10</xref>, <xref ref-type="bibr" rid="c11">11</xref>, <xref ref-type="bibr" rid="c12">12</xref>, <xref ref-type="bibr" rid="c13">13</xref>, <xref ref-type="bibr" rid="c14">14</xref>]. This includes control-theoretic aspects, especially optimal control [<xref ref-type="bibr" rid="c15">15</xref>, <xref ref-type="bibr" rid="c16">16</xref>, <xref ref-type="bibr" rid="c17">17</xref>, <xref ref-type="bibr" rid="c18">18</xref>].</p>
+<p>Mathematical models had a major impact on the political response to the COVID-19 pandemic. To quote from &#x201C;Behind the virus report that jarred the U.S. and the U.K. to action&#x201D; (<italic>New York Times</italic>, 17 March 2020):</p>
+<disp-quote>
+<p><italic>The report [from Imperial College London], which warned that an uncontrolled spread of the disease could cause as many as 510,000 deaths in Britain, triggered a sudden shift in the government&#x2019;s comparatively relaxed response to the virus. American officials said the report, which projected up to 2</italic>.<italic>2 million deaths in the United States from such a spread, also influenced the White House to strengthen its measures to isolate members of the public</italic>.</p>
+</disp-quote>
+<p>Of course, one should always keep in mind as well the following quote from Dr. Anthony Fauci, Director, National Institute of Allergy and Infectious Diseases, United States (<italic>CNN</italic>, 05 May 2020):</p>
+<disp-quote>
+<p><italic>I have skepticism about models [of COVID-19], and they are only as good as the assumptionsyou put into them, but they are not completely misleading. They are telling you something that is a reality, that when you have mitigation that is containing something, and unless it is down, in the right direction, and you pull back prematurely, you are going to get a rebound of cases</italic>.</p>
+</disp-quote>
+</sec>
+</sec>
+<sec id="s2">
+<label>2</label>
+<title>Formulation of problem</title>
+<p>We consider a standard SIR model for epidemics, which consists of three groups of individuals: those who are <italic>susceptible</italic> and can be passed on the pathogen by the <italic>infectious</italic> individuals, and the <italic>removed</italic> individuals, who are have either developed immunity after infection or who have died. In SIR models, one does not include a flow back from individuals into the susceptible compartment. On longer time-scales, one may also allow for the fact those individuals in the removed group who are immune may eventually return to the susceptible population, which would happen if immunity is only temporary or if a pathogen has evolved substantially. The numbers of individuals in the three classes will be denoted by <italic>S, I</italic>, and <italic>R</italic> respectively, and hence the name &#x201C;SIR&#x201D; model. See <xref rid="fig1" ref-type="fig">Figure 1</xref>, where we use the symbol &#x201C;&#x2297;&#x201D; to indicate that the number of new infected will depend both on the number of susceptibles and infectious (specifically, it will be a product in the classical SIR model to be discussed next, with a proportionality constant <italic>&#x03B2;</italic>), and <italic>&#x03BD;</italic> denotes the flow to the recovered compartment. Observe that the &#x201C;feedback&#x201D; term implicit in the &#x2297; effect means that this is not exactly a compartmental system, because for those, <italic>the flow into</italic> a compartment does not depend on the number of individuals in that compartment.</p>
+<fig id="fig1" position="float" fig-type="figure">
+<label>Figure 1:</label>
+<caption><p>Diagram of standard SIR system</p></caption>
+<graphic xlink:href="21255289v4_fig1.tif"/>
+</fig>
+<fig id="fig2" position="float" fig-type="figure">
+<label>Figure 2:</label>
+<caption><p>Percentage of virtual peak when using <italic>K</italic> lockdowns (horizontal axis) each of them 7 (red), 14 (blue), 21 (green), or 28 (magenta) days long.</p></caption>
+<graphic xlink:href="21255289v4_fig2.tif"/>
+</fig>
+<fig id="fig3" position="float" fig-type="figure">
+<label>Figure 3:</label>
+<caption><p>Plots of <italic>S</italic>(<italic>t</italic>) and <italic>I</italic>(<italic>t</italic>) (horizontal axis is time). Number of lockdowns: 1, peak <italic>I</italic> from formula: 318.682808, maximum of <italic>I</italic> on last (no lockdown) period: 318.601530. Lockdown start time(s): 32.42.</p></caption>
+<graphic xlink:href="21255289v4_fig3.tif"/>
+</fig>
+<fig id="fig4" position="float" fig-type="figure">
+<label>Figure 4:</label>
+<caption><p>Plots of <italic>S</italic>(<italic>t</italic>) and <italic>I</italic>(<italic>t</italic>) (horizontal axis is time). Number of lockdowns: 2, peak <italic>I</italic> from formula: 238.740981, maximum of <italic>I</italic> on last (no lockdown) period: 238.755779. Lockdown start time(s): 29.73, 50.69.</p></caption>
+<graphic xlink:href="21255289v4_fig4.tif"/>
+</fig>
+<fig id="fig5" position="float" fig-type="figure">
+<label>Figure 5:</label>
+<caption><p>Plots of <italic>S</italic>(<italic>t</italic>) and <italic>I</italic>(<italic>t</italic>) (horizontal axis is time). Number of lockdowns: 3, peak <italic>I</italic> from formula: 190.862880, maximum of <italic>I</italic> on last (no lockdown) period: 191.019085. Lockdown start time(s): 28.01, 47.71, 69.80.</p></caption>
+<graphic xlink:href="21255289v4_fig5.tif"/>
+</fig>
+<fig id="fig6" position="float" fig-type="figure">
+<label>Figure 6:</label>
+<caption><p>Plots of <italic>S</italic>(<italic>t</italic>) and <italic>I</italic>(<italic>t</italic>) (horizontal axis is time). Number of lockdowns: 4, peak <italic>I</italic> from formula: 158.980313, maximum of <italic>I</italic> on last (no lockdown) period: 159.342577. Lockdown start time(s): 26.74, 45.87, 66.33, 89.44.</p></caption>
+<graphic xlink:href="21255289v4_fig6.tif"/>
+</fig>
+<fig id="fig7" position="float" fig-type="figure">
+<label>Figure 7:</label>
+<caption><p>Plots of <italic>S</italic>(<italic>t</italic>) and <italic>I</italic>(<italic>t</italic>) (horizontal axis is time). Number of lockdowns: 1, peak <italic>I</italic> from formula: 273.247170, maximum of <italic>I</italic> on last (no lockdown) period: 273.286548. Lockdown start time(s): 30.9.</p></caption>
+<graphic xlink:href="21255289v4_fig7.tif"/>
+</fig>
+<fig id="fig8" position="float" fig-type="figure">
+<label>Figure 8:</label>
+<caption><p>Plots of <italic>S</italic>(<italic>t</italic>) and <italic>I</italic>(<italic>t</italic>) (horizontal axis is time). Number of lockdowns: 2, peak <italic>I</italic> from formula: 191.124644, maximum of <italic>I</italic> on last (no lockdown) period: 191.048654. Lockdown start time(s): 28.02, 68.02.</p></caption>
+<graphic xlink:href="21255289v4_fig8.tif"/>
+</fig>
+<fig id="fig9" position="float" fig-type="figure">
+<label>Figure 9:</label>
+<caption><p>Plots of <italic>S</italic>(<italic>t</italic>) and <italic>I</italic>(<italic>t</italic>) (horizontal axis is time). Number of lockdowns: 3, peak <italic>I</italic> from formula: 146.957573, maximum of <italic>I</italic> on last (no lockdown) period: 146.913773. Lockdown start time(s): 26.22, 64.39, 106.74.</p></caption>
+<graphic xlink:href="21255289v4_fig9.tif"/>
+</fig>
+<fig id="fig10" position="float" fig-type="figure">
+<label>Figure 10:</label>
+<caption><p>Plots of <italic>S</italic>(<italic>t</italic>) and <italic>I</italic>(<italic>t</italic>) (horizontal axis is time). Number of lockdowns: 4, peak <italic>I</italic> from formula: 119.371878, maximum of <italic>I</italic> on last (no lockdown) period: 119.395364. Lockdown start time(s): 24.91, 62.23, 101.98, 146.47.</p></caption>
+<graphic xlink:href="21255289v4_fig10.tif"/>
+</fig>
+<p>Mathematically, assuming that new infections are due to contacts between <italic>S</italic> and <italic>I</italic> individuals, and that the rate at which this happens is proportional to the numbers of such individuals, there results a system of three coupled ordinary differential equations as follows:
+<disp-formula id="eqn1">
+<alternatives><graphic xlink:href="21255289v4_eqn1.gif"/></alternatives>
+</disp-formula>
+<disp-formula id="eqn2">
+<alternatives><graphic xlink:href="21255289v4_eqn2.gif"/></alternatives>
+</disp-formula>
+<disp-formula id="eqn3">
+<alternatives><graphic xlink:href="21255289v4_eqn3.gif"/></alternatives>
+</disp-formula>
+</p>
+<p>From now on we will ignore the last equation since it does not affect the number of infectives. The initial state satisfies <italic>S</italic>(0) = <italic>S</italic><sub>0</sub> &#x003E; 0, <italic>I</italic>(0) = <italic>I</italic><sub>0</sub> &#x003E; 0. The positive parameter <italic>&#x03B2;</italic> (infectivity/contact rate) quantifies the transmission rate between the susceptible <italic>S</italic> and infected <italic>I</italic> individuals in a well-mixed population, and <italic>&#x03BD;</italic> (recovery/death rate) is the rate of flow into the removed <italic>R</italic> compartment. We will assume that &#x211B;<sub>0</sub> := <italic>&#x03B2;S</italic><sub>0</sub><italic>/&#x03BD;</italic> &#x003E; 1; otherwise, the problem to be discussed is not interesting, as <italic>I</italic> decreases monotonically to zero if the condition does not hold. (This and other well known facts about SIR systems are reviewed in <xref ref-type="sec" rid="s5">Section 5</xref>; see also e.g. [<xref ref-type="bibr" rid="c19">19</xref>].)</p>
+<p>In the SIR model, NPIs are viewed as reducing the contact rate <italic>&#x03B2;</italic>. (More sophisticated models of social distancing have been widely studied, see for example [<xref ref-type="bibr" rid="c20">20</xref>, <xref ref-type="bibr" rid="c21">21</xref>, <xref ref-type="bibr" rid="c22">22</xref>, <xref ref-type="bibr" rid="c23">23</xref>, <xref ref-type="bibr" rid="c24">24</xref>, <xref ref-type="bibr" rid="c25">25</xref>, <xref ref-type="bibr" rid="c26">26</xref>].) The reduction of <italic>&#x03B2;</italic> is modeled by a time-varying <italic>&#x03B2;</italic>(<italic>t</italic>) where
+<disp-formula id="eqn4">
+<alternatives><graphic xlink:href="21255289v4_eqn4.gif"/></alternatives>
+</disp-formula>
+where 0 &#x2264; <italic>&#x03B2;</italic><sub>0</sub> &#x003C; <italic>&#x03B2;</italic> are two fixed values, and <italic>J</italic> &#x2286; [0, &#x221E;). In our work, <italic>J</italic> will be the union of a number <italic>K</italic> of intervals
+<disp-formula id="ueqn1">
+<alternatives><graphic xlink:href="21255289v4_ueqn1.gif"/></alternatives>
+</disp-formula>
+and <italic>we will be taking &#x03B2;</italic><sub>0</sub> = 0, representing a strict or full lockdown. The lengths <italic>T</italic><sub><italic>k</italic></sub> of the respective intervals will be allowed to be arbitrary (but fixed) in our theory, though the most elegant formulas are obtained when they are all equal (we might have <italic>T</italic><sub><italic>k</italic></sub> = 14 or 28 days for all <italic>k</italic>, for instance). The objective will be to minimize the maximum of <italic>I</italic>(<italic>t</italic>) for <italic>t</italic> &#x2265;0 (&#x201C;flatten the curve&#x201D;) by appropriately choosing the start times <italic>t</italic><sub><italic>k</italic></sub>.</p>
+<p>As discused in the introduction, even if perfect lockdowns are not completely realistic, studying this case helps understand the case <italic>&#x03B2;</italic><sub>0</sub> &#x003E; 0. Indeed, we show via simulations that the conclusions for <italic>&#x03B2;</italic><sub>0</sub> = 0 are very relevant to the case of a small but nonzero <italic>&#x03B2;</italic><sub>0</sub>, even one that is about 20&#x0025; of the value of <italic>&#x03B2;</italic>.</p>
+<p>Previous work on this and related problems includes [<xref ref-type="bibr" rid="c27">27</xref>], which treats an optimal schedule minimizing a combination of the total number of deaths and the peak of the infected compartment, [<xref ref-type="bibr" rid="c17">17</xref>] which shows that a single interval (<italic>K</italic> = 1) is optimal if the objective is to minimize the total number of susceptible individuals at the end of the epidemic, [<xref ref-type="bibr" rid="c15">15</xref>] with numerical studies of optimally timing fixed-duration &#x201C;one-shot&#x201D; strategies, and the very nice theoretical paper [<xref ref-type="bibr" rid="c16">16</xref>] which showed that the optimal strategy for minimizing peak infection is a combination of a strict lockdown (&#x201C;full suppression&#x201D;) with a feedback strategy which keeps &#x211B;<sub>0</sub>=1. Also closely related to this work is [<xref ref-type="bibr" rid="c28">28</xref>], which studies timing of lockdowns, including periodic strategies, through a combination of theoretical and numerical methods. Periodic strategies are also studied in [<xref ref-type="bibr" rid="c25">25</xref>, <xref ref-type="bibr" rid="c29">29</xref>, <xref ref-type="bibr" rid="c30">30</xref>, <xref ref-type="bibr" rid="c31">31</xref>] as well as other references.</p>
+<sec id="s2a">
+<label>2.1</label>
+<title>Main result</title>
+<p>Let
+<disp-formula id="ueqn2">
+<alternatives><graphic xlink:href="21255289v4_ueqn2.gif"/></alternatives>
+</disp-formula>
+and consider the &#x201C;virtual peak&#x201D; of <italic>I</italic>(<italic>t</italic>) if no lockdown were imposed:
+<disp-formula id="ueqn3">
+<alternatives><graphic xlink:href="21255289v4_ueqn3.gif"/></alternatives>
+</disp-formula>
+</p>
+<p>(cf. <xref ref-type="sec" rid="s5">Section 5</xref>). Define this expression:
+<disp-formula id="ueqn4">
+<alternatives><graphic xlink:href="21255289v4_ueqn4.gif"/></alternatives>
+</disp-formula>
+</p>
+<p>The main result is as follows. It considers the optimization problem in which the number of lockdowns is fixed (<italic>K</italic>) as well as their respective lengths (<italic>T</italic><sub><italic>k</italic></sub>&#x2019;s). The parameters to be optimized over are the times at which the each lockdown should commence.</p>
+<statement id="the1">
+<label>Theorem 1</label>
+<p>Suppose that <italic>I</italic>(0) &#x003C; <italic>I</italic><sub>start</sub>. Then, in order to minimize the maximum of <italic>I</italic>(<italic>t</italic>), <italic>t</italic> &#x2265;0, lockdowns should start whenever
+<disp-formula id="ueqn5">
+<alternatives><graphic xlink:href="21255289v4_ueqn5.gif"/></alternatives>
+</disp-formula>
+</p>
+<p>Moreover, under this policy, the maximum <italic>I</italic><sub>max</sub> of <italic>I</italic>(<italic>t</italic>) will equal <italic>I</italic><sub><italic>start</italic></sub>.</p>
+<p>In other words, any time that the infective population level reaches the value <italic>I</italic><sub>start</sub>, the next time-<italic>T</italic><sub><italic>k</italic></sub> lockdown interval <italic>I</italic><sub><italic>k</italic></sub> should start.</p>
+<p>For example, if <italic>T</italic><sub><italic>k</italic></sub> = <italic>T</italic> for <italic>i</italic> = 1, &#x2026;, <italic>K</italic> then the formula is
+<disp-formula id="ueqn6">
+<alternatives><graphic xlink:href="21255289v4_ueqn6.gif"/></alternatives>
+</disp-formula>
+</p>
+<p>Note that as <italic>T</italic> &#x2192; &#x221E; the best possible maximum peak is
+<disp-formula id="ueqn7">
+<alternatives><graphic xlink:href="21255289v4_ueqn7.gif"/></alternatives>
+</disp-formula>
+</p>
+<p><bold>Proof of <xref ref-type="statement" rid="the1">Theorem 1</xref>:</bold> For mathematical elegance, we will include the theoretical possibility of a lockdown starting at time exactly <italic>t</italic><sub>0</sub> = 0 (and later make <italic>T</italic><sub>0</sub> = 0, so that there is in effect no initial lockdown).</p>
+<p>For any initial population (<italic>&#x03C3;, &#x03B9;</italic>), we introduce the following function:
+<disp-formula id="ueqn8">
+<alternatives><graphic xlink:href="21255289v4_ueqn8.gif"/></alternatives>
+</disp-formula>
+which gives the peak value of <italic>I</italic>(<italic>t</italic>) if we start at the initial population (<italic>&#x03C3;, &#x03B9;</italic>) and there would be no further lockdowns, and let:
+<disp-formula id="ueqn9">
+<alternatives><graphic xlink:href="21255289v4_ueqn9.gif"/></alternatives>
+</disp-formula>
+</p>
+<p>(so <italic>t</italic><sub>0</sub> = 0 and (<italic>S</italic><sub>0</sub>, <italic>I</italic><sub>0</sub>) is the state at the start of the epidemic). Observe that, for all <italic>k</italic>,
+<disp-formula id="ueqn10">
+<alternatives><graphic xlink:href="21255289v4_ueqn10.gif"/></alternatives>
+</disp-formula>
+</p>
+<p>Consider these equalities:
+<disp-formula id="eqn5">
+<alternatives><graphic xlink:href="21255289v4_eqn5.gif"/></alternatives>
+</disp-formula>
+<disp-formula id="eqn6">
+<alternatives><graphic xlink:href="21255289v4_eqn6.gif"/></alternatives>
+</disp-formula>
+<disp-formula id="eqn7">
+<alternatives><graphic xlink:href="21255289v4_eqn7.gif"/></alternatives>
+</disp-formula>
+where the last equality follows from the conservation law <italic>I</italic>(<italic>t</italic>) &#x002B; <italic>S</italic>(<italic>t</italic>) &#x2212;<italic>r</italic> ln <italic>S</italic>(<italic>t</italic>) &#x2261;constant, applied to a solution that starts at <italic>&#x03B9;</italic> = <italic>p</italic><sub><italic>k</italic></sub><italic>I</italic><sub><italic>k</italic></sub> and <italic>&#x03C3;</italic> = <italic>S</italic><sub><italic>k</italic></sub>. Adding (5) to (7) and subtracting (6), we obtain:
+<disp-formula id="ueqn11">
+<alternatives><graphic xlink:href="21255289v4_ueqn11.gif"/></alternatives>
+</disp-formula>
+from which we conclude the following recursion:
+<disp-formula id="ueqn12">
+<alternatives><graphic xlink:href="21255289v4_ueqn12.gif"/></alternatives>
+</disp-formula>
+</p>
+<p>Applying this formula recursively, we conclude:
+<disp-formula id="eqn8">
+<alternatives><graphic xlink:href="21255289v4_eqn8.gif"/></alternatives>
+</disp-formula>
+</p>
+<p>The largest value of <italic>I</italic>(<italic>t</italic>) will occur at the maximum of the peaks occurring at the start of each <italic>k</italic>th lockdown, or the last &#x201C;virtual peak&#x201D; (which is then a real local maximum). In other words, the maximum of <italic>I</italic> is
+<disp-formula id="ueqn13">
+<alternatives><graphic xlink:href="21255289v4_ueqn13.gif"/></alternatives>
+</disp-formula>
+</p>
+<p>Under the epidemic assumption &#x211B;<sub>0</sub> &#x003E; 1, <italic>&#x0130;</italic>(0) &#x003E; 0, so we can drop <italic>I</italic><sub>0</sub> from the list. We replace the value for <italic>V</italic><sub><italic>K</italic></sub> from formula (8). Letting <italic>T</italic><sub>0</sub> = 0 means that <italic>a</italic><sub>0</sub> = 1 &#x2212; <italic>p</italic><sub>0</sub> = 0, so we conclude that
+<disp-formula id="eqn9">
+<alternatives><graphic xlink:href="21255289v4_eqn9.gif"/></alternatives>
+</disp-formula>
+</p>
+<p>To minimize the peak, we need to pick non-negative <italic>I</italic><sub>1</sub>, &#x2026;, <italic>I</italic><sub><italic>K</italic></sub> in such a way that this expression is minimized. This is achieved at a unique global minimum, at which
+<disp-formula id="ueqn14">
+<alternatives><graphic xlink:href="21255289v4_ueqn14.gif"/></alternatives>
+</disp-formula>
+</p>
+<p>(see <xref ref-type="statement" rid="lem1">Lemma 1</xref> below), namely
+<disp-formula id="ueqn15">
+<alternatives><graphic xlink:href="21255289v4_ueqn15.gif"/></alternatives>
+</disp-formula>
+</p>
+<p>This completes the proof of <xref ref-type="statement" rid="the1">Theorem 1</xref>. &#x25AA;</p>
+</statement>
+<statement id="lem1">
+<label>Lemma 1</label>
+<p><italic>For any a</italic><sub>1</sub> &#x2265; 0, &#x2026;, <italic>a</italic><sub><italic>K</italic></sub> &#x2265; 0 <italic>and b</italic> &#x003E; 0, <italic>define</italic>
+<disp-formula id="ueqn16">
+<alternatives><graphic xlink:href="21255289v4_ueqn16.gif"/></alternatives>
+</disp-formula>
+</p>
+<p><italic>Consider the following function, defined on</italic> <inline-formula><alternatives><inline-graphic xlink:href="21255289v4_inline2.gif"/></alternatives></inline-formula>:
+<disp-formula id="ueqn17">
+<alternatives><graphic xlink:href="21255289v4_ueqn17.gif"/></alternatives>
+</disp-formula>
+</p>
+<p><italic>Then, the minimum value of g is &#x03BE;, and it is achieved at the unique point where all x</italic><sub><italic>k</italic></sub> = <italic>&#x03BE;</italic>.</p>
+<p><bold>Proof of <xref ref-type="statement" rid="lem1">Lemma 1</xref>:</bold> Define <inline-formula><alternatives><inline-graphic xlink:href="21255289v4_inline3.gif"/></alternatives></inline-formula>, so that <inline-formula><alternatives><inline-graphic xlink:href="21255289v4_inline4.gif"/></alternatives></inline-formula>, and note these properties:</p>
+<p>
+<list list-type="order">
+<list-item><p><italic>g</italic>(<italic>&#x03BE;</italic>, &#x2026;, <italic>&#x03BE;</italic>) = <italic>&#x03BE;</italic>.</p>
+<p>To prove this, note that, when all <italic>x</italic><sub><italic>k</italic></sub> = <italic>&#x03BE;</italic>,
+<disp-formula id="ueqn18">
+<alternatives><graphic xlink:href="21255289v4_ueqn18.gif"/></alternatives>
+</disp-formula>
+so all terms in the max are the same.</p></list-item>
+<list-item><p>If <italic>g</italic>(<italic>x</italic><sub>1</sub>, &#x2026;, <italic>x</italic><sub><italic>K</italic></sub>) &#x2264; <italic>&#x03BE;</italic> then <italic>x</italic><sub><italic>k</italic></sub> = <italic>&#x03BE;</italic> for all <italic>k</italic>.</p>
+<p>Notice first that <italic>x</italic><sub><italic>k</italic></sub> &#x2264; max {<italic>x</italic><sub>1</sub>, &#x2026;, <italic>x</italic><sub><italic>K</italic></sub>} &#x2264; <italic>g</italic>(<italic>x</italic><sub>1</sub>, &#x2026;, <italic>x</italic><sub><italic>K</italic></sub>) &#x2264; <italic>&#x03BE;</italic> for all <italic>k</italic>.</p>
+<p>If for some <italic>k</italic> this inequality were strict, then &#x2212;<italic>x</italic><sub><italic>k</italic></sub> &#x2265; &#x2212;<italic>&#x03BE;</italic> for all <italic>k</italic>, and &#x2212;<italic>x</italic><sub><italic>k</italic></sub> &#x003E; &#x2212;<italic>&#x03BE;</italic> for some <italic>k</italic>, so
+<disp-formula id="ueqn19">
+<alternatives><graphic xlink:href="21255289v4_ueqn19.gif"/></alternatives>
+</disp-formula>
+but and this would contradict <inline-formula><alternatives><inline-graphic xlink:href="21255289v4_inline5.gif"/></alternatives></inline-formula>.</p></list-item>
+</list></p>
+</statement>
+<p>Property 2 shows that <italic>g</italic>(<italic>x</italic><sub>1</sub>, &#x2026;, <italic>x</italic><sub><italic>K</italic></sub>) &#x003E; <italic>&#x03BE;</italic> unless all <italic>x</italic><sub><italic>k</italic></sub> = <italic>&#x03BE;</italic>, and Property 1 shows that the minimum is achieved when all <italic>x</italic><sub><italic>k</italic></sub> = <italic>&#x03BE;</italic>. &#x25AA;</p>
+<p>We next show some illustrations of the use of the formula for several lengths of lockdowns as well as simulations for various scenarios of 1, 2, 3, or 4 lockdowns. We use reasonable parameters in each case. Finally, we will show computationally that a small positive <italic>&#x03B2;</italic><sub>0</sub> does not change conclusions much, at least for the case of a single lockdown.</p>
+</sec>
+<sec id="s2b">
+<label>2.2</label>
+<title>Equal lengths are optimal</title>
+<p>The formula derived in this paper allows one to prove the following result. Suppose that we are given a total &#x201C;lockdown time budget&#x201D; <italic>T</italic> &#x003E; 0, and wish to find <italic>K</italic> lockdown times <italic>T</italic><sub><italic>k</italic></sub>, such that <inline-formula><alternatives><inline-graphic xlink:href="21255289v4_inline6.gif"/></alternatives></inline-formula> so as to minimize <inline-formula><alternatives><inline-graphic xlink:href="21255289v4_inline7.gif"/></alternatives></inline-formula>. Minimizing <italic>I</italic><sub>max</sub> over the <italic>T</italic><sub><italic>k</italic></sub>&#x2019;s is equivalent to minimizing
+<disp-formula id="ueqn20">
+<alternatives><graphic xlink:href="21255289v4_ueqn20.gif"/></alternatives>
+</disp-formula>
+subject to
+<disp-formula id="ueqn21">
+<alternatives><graphic xlink:href="21255289v4_ueqn21.gif"/></alternatives>
+</disp-formula>
+</p>
+<p>The functions <inline-formula><alternatives><inline-graphic xlink:href="21255289v4_inline8.gif"/></alternatives></inline-formula> are strictly convex, the objective function is separable, and the constraint is affine, so it follows that there is a unique solution to this optimization problem (see Example 5.4 in [<xref ref-type="bibr" rid="c32">32</xref>]). Consider the Lagrangian:
+<disp-formula id="ueqn22">
+<alternatives><graphic xlink:href="21255289v4_ueqn22.gif"/></alternatives>
+</disp-formula>
+and set the <italic>K</italic> partial derivatives with respect to the <italic>T</italic><sub><italic>k</italic></sub>&#x2019;s to zero. This gives:
+<disp-formula id="ueqn23">
+<alternatives><graphic xlink:href="21255289v4_ueqn23.gif"/></alternatives>
+</disp-formula>
+which implies <italic>T</italic><sub>1</sub> = &#x2026; = <italic>T</italic><sub><italic>K</italic></sub>. From <inline-formula><alternatives><inline-graphic xlink:href="21255289v4_inline9.gif"/></alternatives></inline-formula> it follows that
+<disp-formula id="ueqn24">
+<alternatives><graphic xlink:href="21255289v4_ueqn24.gif"/></alternatives>
+</disp-formula>
+i.e. equal lengths are optimal.</p>
+<p>We now prove that <italic>the more intervals, the better</italic>. Indeed, suppose that we compare the optimal solution with <italic>K</italic> intervals to the optimal solution with <italic>K</italic>&#x002B;1 intervals. Let us think of the optimal solution with <italic>K</italic> intervals as a particular solution with <italic>K</italic>&#x002B;1 intervals, in which the last interval is zero (and the first <italic>K</italic> are equal to <italic>T/K</italic>). Clearly, this last solution is not optimal, since the (unique) optimal solution to the problem with <italic>K</italic>&#x002B;1 intervals has all intervals nonzero (and equal to <italic>T/</italic>(<italic>K</italic>&#x002B;1)). In other words, <italic>having one more interval is always better</italic>. Of course, this ignores the social, economic, and psychological problems of imposing multiple lockdowns.</p>
+<p>A variation of the &#x201C;total budget&#x201D; problem is as follows. Suppose that the &#x201C;cost&#x201D; of a second lockdown is different from (and presumably larger than) the cost of the first lockdown. This may represent &#x201C;lockdown fatigue&#x201D; or lack of political will. More generally, each subsequent lockdown could have an associated cost <italic>c</italic><sub><italic>k</italic></sub> &#x003E; 0. In this case, the interesting mathematical problem would be to again minimize <inline-formula><alternatives><inline-graphic xlink:href="21255289v4_inline10.gif"/></alternatives></inline-formula> but this time subject to a general affine constraint
+<disp-formula id="ueqn25">
+<alternatives><graphic xlink:href="21255289v4_ueqn25.gif"/></alternatives>
+</disp-formula>
+</p>
+<p>The Lagrangian is now
+<disp-formula id="ueqn26">
+<alternatives><graphic xlink:href="21255289v4_ueqn26.gif"/></alternatives>
+</disp-formula>
+</p>
+<p>We normalize the problem by asking <inline-formula><alternatives><inline-graphic xlink:href="21255289v4_inline11.gif"/></alternatives></inline-formula>, so that the equal-cost case is that when all <italic>c</italic><sub><italic>k</italic></sub> = 1. Proceeding as before, we arrive at the equations:
+<disp-formula id="ueqn27">
+<alternatives><graphic xlink:href="21255289v4_ueqn27.gif"/></alternatives>
+</disp-formula>
+</p>
+<p>Pick any index <italic>k</italic> &#x2260; 1. Then
+<disp-formula id="ueqn28">
+<alternatives><graphic xlink:href="21255289v4_ueqn28.gif"/></alternatives>
+</disp-formula>
+or <inline-formula><alternatives><inline-graphic xlink:href="21255289v4_inline12.gif"/></alternatives></inline-formula> from which we derive the formulas
+<disp-formula id="ueqn29">
+<alternatives><graphic xlink:href="21255289v4_ueqn29.gif"/></alternatives>
+</disp-formula>
+</p>
+<p>Thus:
+<disp-formula id="ueqn30">
+<alternatives><graphic xlink:href="21255289v4_ueqn30.gif"/></alternatives>
+</disp-formula>
+</p>
+<p>(using that <inline-formula><alternatives><inline-graphic xlink:href="21255289v4_inline13.gif"/></alternatives></inline-formula>). We conclude:
+<disp-formula id="ueqn31">
+<alternatives><graphic xlink:href="21255289v4_ueqn31.gif"/></alternatives>
+</disp-formula>
+</p>
+<p>It follows that, for each <italic>i</italic> &#x2265; 2, we have an analogous formula:
+<disp-formula id="ueqn32">
+<alternatives><graphic xlink:href="21255289v4_ueqn32.gif"/></alternatives>
+</disp-formula>
+</p>
+<p>Note the common entropy-like term as well as the last term that makes intervals shorter when their &#x201C;cost&#x201D; is higher. In the special case that all <italic>c</italic><sub><italic>k</italic></sub> = 1, the logarithms are zero and we recover the previous case <italic>T</italic><sub><italic>i</italic></sub> = <italic>T/K</italic>.</p>
+</sec>
+<sec id="s2c">
+<label>2.3</label>
+<title>Sensitivity to parameters</title>
+<p>The recovery rate <italic>&#x03BD;</italic> is relatively easy to estimate, wince it is largely a function of the physiology of the pathogen. However, the parameter <italic>&#x03B2;</italic> depends on behavioral characteristics, population density, and so forth, so it is much harder to know accurately. A natural question to ask if: how much worse does a policy based on an incorrect value perform, relative to the optimal policy that would have been used if <italic>&#x03B2;</italic> were perfectly known? We study this sensitivity question here, restricting for simplicity to the case of a single (perfect) lockdown, i.e. <italic>K</italic> = 1, <italic>T</italic><sub>1</sub> = <italic>T</italic>.</p>
+<p>Suppose that the population value <italic>I</italic><sub>1</sub> at which the lockdown starts was optimized based on a &#x201C;wrong&#x201D; value <inline-formula><alternatives><inline-graphic xlink:href="21255289v4_inline14.gif"/></alternatives></inline-formula>:
+<disp-formula id="ueqn33">
+<alternatives><graphic xlink:href="21255289v4_ueqn33.gif"/></alternatives>
+</disp-formula>
+where
+<disp-formula id="ueqn34">
+<alternatives><graphic xlink:href="21255289v4_ueqn34.gif"/></alternatives>
+</disp-formula>
+</p>
+<p>The maximum value of <italic>I</italic>(<italic>t</italic>) is:
+<disp-formula id="ueqn35">
+<alternatives><graphic xlink:href="21255289v4_ueqn35.gif"/></alternatives>
+</disp-formula>
+</p>
+<p>(because the maximum with no lockdowns is <italic>V</italic><sub>0</sub>, so the lockdown will never be triggered in the case <italic>&#x0128;</italic><sub>1</sub> &#x2265; <italic>V</italic><sub>0</sub>) and
+<disp-formula id="ueqn36">
+<alternatives><graphic xlink:href="21255289v4_ueqn36.gif"/></alternatives>
+</disp-formula>
+</p>
+<p>(formula 9), where
+<disp-formula id="ueqn37">
+<alternatives><graphic xlink:href="21255289v4_ueqn37.gif"/></alternatives>
+</disp-formula>
+</p>
+<p>In contrast, the optimal solution would have been to pick
+<disp-formula id="ueqn38">
+<alternatives><graphic xlink:href="21255289v4_ueqn38.gif"/></alternatives>
+</disp-formula>
+</p>
+<p>Since this is optimal, of course <italic>I</italic><sub>max</sub> &#x2265;<italic>I</italic><sub>opt</sub>. Let us consider the relative penalty (in terms of maximum infectives) incurred by using the wrong <italic>&#x03B2;</italic>:
+<disp-formula id="ueqn39">
+<alternatives><graphic xlink:href="21255289v4_ueqn39.gif"/></alternatives>
+</disp-formula>
+</p>
+<p>Let is write <italic>p</italic> := <italic>e</italic><sup>&#x2212;<italic>&#x03BD;T</italic></sup> to simplify notations. When <italic>&#x0128;</italic><sub>1</sub> &#x2265; <italic>V</italic><sub>0</sub> (that is, if <inline-formula><alternatives><inline-graphic xlink:href="21255289v4_inline15.gif"/></alternatives></inline-formula>):
+<disp-formula id="ueqn40">
+<alternatives><graphic xlink:href="21255289v4_ueqn40.gif"/></alternatives>
+</disp-formula>
+</p>
+<p>When <italic>&#x0128;</italic><sub>1</sub> &#x003C; <italic>V</italic><sub>0</sub> (that is, if <inline-formula><alternatives><inline-graphic xlink:href="21255289v4_inline16.gif"/></alternatives></inline-formula>):
+<disp-formula id="ueqn41">
+<alternatives><graphic xlink:href="21255289v4_ueqn41.gif"/></alternatives>
+</disp-formula>
+</p>
+<p>In this maximum, the terms have opposite sign, so the max is achieved at the non-negative one.</p>
+<p>A formula for &#x0394; can be most conveniently derived when thinking of &#x0394; as a function of <inline-formula><alternatives><inline-graphic xlink:href="21255289v4_inline17.gif"/></alternatives></inline-formula> (with <italic>&#x03B2;</italic>, and therefore also <italic>V</italic><sub>0</sub>, fixed). We conclude:</p>
+<statement id="the2">
+<label>Theorem 2</label>
+<p>
+<disp-formula id="ueqn42">
+<alternatives><graphic xlink:href="21255289v4_ueqn42.gif"/></alternatives>
+</disp-formula>
+</p>
+<p>From this formula, one can immediately compute sensitivity to <inline-formula><alternatives><inline-graphic xlink:href="21255289v4_inline18.gif"/></alternatives></inline-formula>. Observe that <inline-formula><alternatives><inline-graphic xlink:href="21255289v4_inline19.gif"/></alternatives></inline-formula> is a strictly increasing function of <inline-formula><alternatives><inline-graphic xlink:href="21255289v4_inline20.gif"/></alternatives></inline-formula>, because the derivative of the function <inline-formula><alternatives><inline-graphic xlink:href="21255289v4_inline21.gif"/></alternatives></inline-formula> with respect to <inline-formula><alternatives><inline-graphic xlink:href="21255289v4_inline22.gif"/></alternatives></inline-formula>is:
+<disp-formula id="ueqn43">
+<alternatives><graphic xlink:href="21255289v4_ueqn43.gif"/></alternatives>
+</disp-formula>
+as long as we are in the epidemic parameter range &#x211B;<sub>0</sub> := <italic>&#x03B2;S</italic><sub>0</sub><italic>/&#x03BD;</italic> &#x003E; 1.</p>
+<p>Note that &#x0394; is continuous on <inline-formula><alternatives><inline-graphic xlink:href="21255289v4_inline23.gif"/></alternatives></inline-formula>; it is zero (no penalty) when <inline-formula><alternatives><inline-graphic xlink:href="21255289v4_inline24.gif"/></alternatives></inline-formula>, i.e. <inline-formula><alternatives><inline-graphic xlink:href="21255289v4_inline25.gif"/></alternatives></inline-formula>, and 1 &#x2212; <italic>p</italic> when substituting <inline-formula><alternatives><inline-graphic xlink:href="21255289v4_inline26.gif"/></alternatives></inline-formula> into <inline-formula><alternatives><inline-graphic xlink:href="21255289v4_inline27.gif"/></alternatives></inline-formula>. In the limit that <italic>p</italic> &#x2192; 1 (that is, if the lockdown interval <italic>T</italic> &#x2192; 0, the middle case becomes vacuous and the sensitivity is zero (as expected).</p>
+</statement>
+</sec>
+</sec>
+<sec id="s3">
+<label>3</label>
+<title>Some numerical explorations</title>
+<sec id="s3a">
+<label>3.1</label>
+<title>Optimal reduction of &#x201C;virtual peak&#x201D; with <italic>K</italic> perfect lockdowns</title>
+<p>The use of a even a small number of lockdowns results in a drastic reduction of the peak that would occur (the &#x201C;virtual peak&#x201D;) if there were no lockdowns. The marginal benefit of additional lockdowns is relatively minor, after a certain number of them, as is the benefit of longer lockdowns. We plot here the fraction (1 &#x002B; <italic>K</italic>(1 &#x2212; <italic>e</italic><sup>&#x2212;<italic>&#x03BD;T</italic></sup>))<sup>&#x2212;1</sup> for <italic>&#x03BD;</italic> = 0.05 and <italic>T</italic> = 7, 14, 21, 28 days.</p>
+</sec>
+</sec>
+<sec id="s4">
+<label>4</label>
+<title>Simulations</title>
+<sec id="s4a">
+<label>4.1</label>
+<title>Simulations using optimal formula</title>
+<p>We simulate various lockdown lengths using our optimal formulas. Parameters are, <italic>&#x03B2;</italic> = 0.00025, <italic>&#x03BD;</italic> = 0.05 (so &#x211B;<sub>0</sub> = 5), initial conditions are <italic>S</italic><sub>0</sub> = 1000, <italic>I</italic><sub>0</sub> = 1, and the peak if there are no lockdowns is <italic>I</italic> = 479. The maximum from the formula coincides with the maximum in simulations, up to numerical error.</p>
+<sec id="s4a1">
+<label>4.1.1</label>
+<title>Lockdown length is <italic>T</italic> = 14 days, perfect lockdown</title>
+</sec>
+<sec id="s4a2">
+<label>4.1.2</label>
+<title>Lockdown length is <italic>T</italic> = 28 days, perfect lockdown</title>
+</sec>
+</sec>
+<sec id="s4b">
+<label>4.2</label>
+<title>Comparing multiple vs. single lockdowns</title>
+<p>We proved that more lockdowns are always better, if the total lockdown &#x201C;budget&#x201D; is fixed. Here we show the following comparisons: one 28-day compared to two 14-day lockdowns, and two 28-day compared to four 14-day lockdowns (<xref rid="fig11" ref-type="fig">Figures 11</xref> and <xref rid="fig12" ref-type="fig">12</xref> respectively). Observe that the peaks when using repeated lockdowns are lower, as theory predicts. Interestingly, the timings of the last peak and asymptotic behaviors look identical in the respective left and right plots.</p>
+<fig id="fig11" position="float" fig-type="figure">
+<label>Figure 11:</label>
+<caption><p>Left: one 28-day lockdown. Right: two 14-day lockdowns. Parameters as earlier.</p></caption>
+<graphic xlink:href="21255289v4_fig11.tif"/>
+</fig>
+<fig id="fig12" position="float" fig-type="figure">
+<label>Figure 12:</label>
+<caption><p>Left: two 28-day lockdowns. Right: four 14-day lockdowns. Parameters as earlier.</p></caption>
+<graphic xlink:href="21255289v4_fig12.tif"/>
+</fig>
+<fig id="fig13" position="float" fig-type="figure">
+<label>Figure 13:</label>
+<caption><p>Plots of <italic>S</italic>(<italic>t</italic>) and <italic>I</italic>(<italic>t</italic>) (horizontal axis is time). Number of lockdowns: 1, peak <italic>I</italic> from formula: 273.247170, maximum of <italic>I</italic> on last (no lockdown) period: 248.383407. Lockdown start time(s): 30.90.</p></caption>
+<graphic xlink:href="21255289v4_fig13.tif"/>
+</fig>
+<fig id="fig14" position="float" fig-type="figure">
+<label>Figure 14:</label>
+<caption><p>Plots of <italic>S</italic>(<italic>t</italic>) and <italic>I</italic>(<italic>t</italic>) (horizontal axis is time). Number of lockdowns: 2, peak <italic>I</italic> from formula: 191.124644, maximum of <italic>I</italic> on last (no lockdown) period: 154.387915. Lockdown start time(s): 28.02, 61.2.</p></caption>
+<graphic xlink:href="21255289v4_fig14.tif"/>
+</fig>
+<fig id="fig15" position="float" fig-type="figure">
+<label>Figure 15:</label>
+<caption><p>Plots of <italic>S</italic>(<italic>t</italic>) and <italic>I</italic>(<italic>t</italic>) (horizontal axis is time). Number of lockdowns: 3, peak <italic>I</italic> from formula: 146.957573, maximum of <italic>I</italic> on last (no lockdown) period: 103.506053. Lockdown start time(s): 26.22, 57.43, 94.30.</p></caption>
+<graphic xlink:href="21255289v4_fig15.tif"/>
+</fig>
+<fig id="fig16" position="float" fig-type="figure">
+<label>Figure 16:</label>
+<caption><p>Plots of <italic>S</italic>(<italic>t</italic>) and <italic>I</italic>(<italic>t</italic>) (horizontal axis is time). Number of lockdowns: 4, peak <italic>I</italic> from formula: 119.371878, maximum of <italic>I</italic> on last (no lockdown) period: 71.792718. Lockdown start time(s): 24.91, 55.24, 88.63, 129.63.</p></caption>
+<graphic xlink:href="21255289v4_fig16.tif"/>
+</fig>
+</sec>
+<sec id="s4c">
+<label>4.3</label>
+<title>Testing <italic>&#x03B2;</italic><sub>0</sub> &#x2260; 0 with formula derived for <italic>&#x03B2;</italic><sub>0</sub> = 0</title>
+<p>We simulate the use of the formula derived for <italic>&#x03B2;</italic><sub>0</sub> = 0, under the lockdown value <italic>&#x03B2;</italic><sub>0</sub> = 0.00005, which represents a 20&#x0025; value of the normal contact rate. Again, <italic>&#x03B2;</italic> = 0.00025, <italic>&#x03BD;</italic> = 0.05 (so &#x211B;<sub>0</sub> = 5), initial conditions are <italic>S</italic><sub>0</sub> = 1000, <italic>I</italic><sub>0</sub> = 1, and the peak if there are no lockdowns is <italic>I</italic> = 479.</p>
+<sec id="s4c1">
+<label>4.3.1</label>
+<title>Lockdown length is <italic>T</italic> = 28 days, <italic>&#x03B2;</italic><sub>0</sub> = 0.00005</title>
+</sec>
+<sec id="s4c2">
+<label>4.3.2</label>
+<title>Lockdown length is <italic>T</italic> = 14 days, <italic>&#x03B2;</italic><sub>0</sub> = 0.00005</title>
+</sec>
+</sec>
+<sec id="s4d">
+<label>4.4</label>
+<title>Comparison with optimal strategy for <italic>&#x03B2;</italic><sub>0</sub> &#x2260; 0</title>
+<p>For comparison with the use of the optimal formulas derived for <italic>&#x03B2;</italic><sub>0</sub> = 0, we show here numerically the optimal solution when <italic>&#x03B2;</italic><sub>0</sub>&#x2260;0, specifically <italic>&#x03B2;</italic><sub>0</sub> = 0.00005 as above. As earlier, parameters are <italic>&#x03B2;</italic> = 0.00025, <italic>&#x03BD;</italic> = 0.05 (so &#x211B;<sub>0</sub> = 5), initial conditions are <italic>S</italic><sub>0</sub> = 1000, <italic>I</italic><sub>0</sub> = 1, and the peak if there are no lockdowns is <italic>I</italic> = 479. We take only the case of a single lockdown, for simplicity, and lockdown lengths of 14 or 28 days.</p>
+<p>We find that the formula predicts the optimal timing extremely well for 14-day lockdowns (error less than 1&#x0025; in maximum infectives), and is fairly good for 28-day lockdowns as well (about 5&#x0025; error).</p>
+<sec id="s4d1">
+<label>4.4.1</label>
+<title>Lockdown length is <italic>T</italic> = 14 days, <italic>&#x03B2;</italic><sub>0</sub> = 0.00005</title>
+<p>For 14-day lockdowns, the plot in <xref rid="fig17" ref-type="fig">Figure 17</xref> suggests that the formula derived for <italic>&#x03B2;</italic><sub>0</sub> = 0 triggered the first lockdown too early, so we explored by what fraction &#x003E; 1 to increase the trigger point, from which the optimal strategy is clear.</p>
+<fig id="fig17" position="float" fig-type="figure">
+<label>Figure 17:</label>
+<caption><p>Plots of <italic>S</italic>(<italic>t</italic>) and <italic>I</italic>(<italic>t</italic>) (horizontal axis is time). Number of lockdowns: 1, peak <italic>I</italic> from formula: 318.682808, maximum of <italic>I</italic> on last (no lockdown) period: 326.846639. Lockdown start time(s): 32.4.</p></caption>
+<graphic xlink:href="21255289v4_fig17.tif"/>
+</fig>
+<fig id="fig18" position="float" fig-type="figure">
+<label>Figure 18:</label>
+<caption><p>Plots of <italic>S</italic>(<italic>t</italic>) and <italic>I</italic>(<italic>t</italic>) (horizontal axis is time). Number of lockdowns: 2, peak <italic>I</italic> from formula: 238.740981, maximum of <italic>I</italic> on last (no lockdown) period: 248.153424. Lockdown start time(s): 29.73, 46.6.</p></caption>
+<graphic xlink:href="21255289v4_fig18.tif"/>
+</fig>
+<fig id="fig19" position="float" fig-type="figure">
+<label>Figure 19:</label>
+<caption><p>Plots of <italic>S</italic>(<italic>t</italic>) and <italic>I</italic>(<italic>t</italic>) (horizontal axis is time). Number of lockdowns: 3, peak <italic>I</italic> from formula: 190.862880, maximum of <italic>I</italic> on last (no lockdown) period: 200.218534. Lockdown start time(s): 28.01, 43.86, 61.6.</p></caption>
+<graphic xlink:href="21255289v4_fig19.tif"/>
+</fig>
+<fig id="fig20" position="float" fig-type="figure">
+<label>Figure 20:</label>
+<caption><p>Plots of <italic>S</italic>(<italic>t</italic>) and <italic>I</italic>(<italic>t</italic>) (horizontal axis is time). Number of lockdowns: 4, peak <italic>I</italic> from formula: 158.980313, maximum of <italic>I</italic> on last (no lockdown) period: 167.977200. Lockdown start time(s): 26.74, 42.11, 58.60, 77.22.</p></caption>
+<graphic xlink:href="21255289v4_fig20.tif"/>
+</fig>
+<fig id="fig21" position="float" fig-type="figure">
+<label>Figure 21:</label>
+<caption><p>Left: Magnitude of first and second peak, with the lockdown time parametrized (<italic>x</italic> axis) by the percentage of the ideal (perfect lockdown) formula. ; 14 day lockdown. Note that the second peak decreases as the first peak happens later, so the minimum of the maximum among them will occur when the curves intersect. Right: The maximum between the curves; minimum is around fraction 1.018 of the optimal for perfect lockdowns, so trigger should occur later.</p></caption>
+<graphic xlink:href="21255289v4_fig21.tif"/>
+</fig>
+<fig id="fig22" position="float" fig-type="figure">
+<label>Figure 22:</label>
+<caption><p>Simulation with an imperfect lockdown. Using now the optimal fraction 1.018 of the optimal for perfect lockdowns, obtained by minimizing the plot in <xref rid="fig21" ref-type="fig">Figure 21</xref> (right). The optimal peak value is now approximately 324, which can be compared with the suboptimal plot (using the formula that assumed perfect lockdowns) shown in <xref rid="fig17" ref-type="fig">Figure 17</xref>, which had a peak of approximately 327. Observe how the two peaks are now balanced. The optimal result is not that different from the one obtained from our formulas, and the lockdown start is at time 30.39.</p></caption>
+<graphic xlink:href="21255289v4_fig22.tif"/>
+</fig>
+<fig id="fig23" position="float" fig-type="figure">
+<label>Figure 23:</label>
+<caption><p>Left: Magnitude of first and second peak, with the lockdown time parametrized (<italic>x</italic> axis) by the percentage of the ideal (perfect lockdown) formula; 14 day lockdown. Note that the second peak decreases as the first peak happens later, so the minimum of the maximum among them will occur when the curves intersect. Right: The maximum between the curves; minimum is around fraction 0.944 of the optimal for perfect lockdowns, so trigger should occur earlier.</p></caption>
+<graphic xlink:href="21255289v4_fig23.tif"/>
+</fig>
+<fig id="fig24" position="float" fig-type="figure">
+<label>Figure 24:</label>
+<caption><p>Simulation with an imperfect lockdown. Using now the optimal fraction 0.944 of the optimal for perfect lockdowns, obtained by minimizing the plot in <xref rid="fig23" ref-type="fig">Figure 23</xref> (right). The optimal peak value is now approximately 258, which can be compared with the suboptimal plot (using the formula that assumed perfect lockdowns) shown in <xref rid="fig13" ref-type="fig">Figure 13</xref>, which had a peak of approximately 273. Observe how the two peaks are now balanced. The optimal result is very close to the one obtained from our formulas.</p></caption>
+<graphic xlink:href="21255289v4_fig24.tif"/>
+</fig>
+</sec>
+<sec id="s4d2">
+<label>4.4.2</label>
+<title>Lockdown length is <italic>T</italic> = 14 days, <italic>&#x03B2;</italic><sub>0</sub> = 0.00005</title>
+<p>In contrast, for 28-day lockdowns the plot in <xref rid="fig13" ref-type="fig">Figure 13</xref> suggests that the formula derived for <italic>&#x03B2;</italic><sub>0</sub> = 0 waited too long for the first lockdown, so we first explore by what fraction &#x003C; 1 to decrease the trigger point, from which the optimal strategy is clear.</p>
+</sec>
+</sec>
+</sec>
+<sec id="s5">
+<label>5</label>
+<title>Review of SIR model</title>
+<p>To make this paper self-contained, we review here some facts about SIR models, see e.g. [<xref ref-type="bibr" rid="c19">19</xref>] or mathematical epidemiology texts for more details. We wish to analyze solutions, from initial conditions <italic>S</italic>(0) = <italic>S</italic><sub>0</sub>, <italic>I</italic>(0) = <italic>I</italic><sub>0</sub>.</p>
+<sec id="s5a">
+<title>Infections always die-out in SIR model</title>
+<p>Note that if <italic>I</italic><sub>0</sub> = 0, then <italic>S</italic>(<italic>t</italic>) &#x2261;<italic>S</italic><sub>0</sub> and <italic>I</italic>(<italic>t</italic>) &#x2261; 0; in other words, every point of the form (<italic>S</italic>, 0) is an equilibrium. Similarly, if <italic>S</italic><sub>0</sub> = 0, then <italic>S</italic>(<italic>t</italic>) &#x2261;0 and <italic>I</italic>(<italic>t</italic>) = <italic>e</italic><sup>&#x2212;<italic>&#x03BD;t</italic></sup><italic>I</italic><sub>0</sub> &#x2192;0, so the case <italic>S</italic><sub>0</sub> = 0 is not interesting either. So we study the only interesting cases, <italic>I</italic><sub>0</sub> &#x003E; 0 and <italic>S</italic><sub>0</sub> &#x003E; 0.</p>
+<p>Since <inline-formula><alternatives><inline-graphic xlink:href="21255289v4_inline28.gif"/></alternatives></inline-formula> is a nonincreasing function of time, and thus <italic>S</italic>(<italic>t</italic>) &#x2198; <italic>S</italic><sub>&#x221E;</sub> for some <italic>S</italic><sub>&#x221E;</sub> &#x2265;0. A most important result is this one:
+<disp-formula id="ueqn44">
+<alternatives><graphic xlink:href="21255289v4_ueqn44.gif"/></alternatives>
+</disp-formula>
+</p>
+<p>This says that the infection will end (asymptotically), and there will remain a number of &#x201C;naive&#x201D; individuals at the end.</p>
+<p>We will show that <italic>I</italic>(<italic>t</italic>) &#x2192; 0 and defer the proof that <italic>S</italic><sub>&#x221E;</sub> &#x003E; 0 to later.</p>
+<p>To prove this result, we will use this theorem: <italic>if x</italic>(<italic>t</italic>) <italic>is a solution of a system of ODEs</italic> <inline-formula><alternatives><inline-graphic xlink:href="21255289v4_inline29.gif"/></alternatives></inline-formula>, <italic>and if the solution converges, x</italic>(<italic>t</italic>) &#x2192;<italic>x</italic><sup><italic>&#x2217;</italic></sup>, <italic>then x</italic><sup><italic>&#x2217;</italic></sup> <italic>must be an equilibrium point, i</italic>.<italic>e. f</italic> (<italic>x</italic><sup><italic>&#x2217;</italic></sup>) = 0. This is true because the omega-limit set of a trajectory is an invariant set, the LaSalle Invariance Principle (see e.g. [<xref ref-type="bibr" rid="c33">33</xref>]).</p>
+<p>We apply this theorem as follows. First we define <italic>V</italic> (<italic>t</italic>) := <italic>S</italic>(<italic>t</italic>) &#x002B; <italic>I</italic>(<italic>t</italic>), and notice that <inline-formula><alternatives><inline-graphic xlink:href="21255289v4_inline30.gif"/></alternatives></inline-formula>, which means that <italic>V</italic> (<italic>t</italic>) is nonincreasing, and thus there is a limit <italic>V</italic> (<italic>t</italic>) &#x2198; <italic>V</italic><sub>&#x221E;</sub> as <italic>t</italic> &#x2192; &#x221E;. Therefore <italic>I</italic>(<italic>t</italic>) = <italic>V</italic> (<italic>t</italic>) &#x2212; <italic>S</italic>(<italic>t</italic>) &#x2192; <italic>V</italic><sub>&#x221E;</sub> &#x2212; <italic>S</italic><sub>&#x221E;</sub> =: <italic>I</italic><sub>&#x221E;</sub> also has a limit. So the state <italic>x</italic>(<italic>t</italic>) = (<italic>S</italic>(<italic>t</italic>), <italic>I</italic>(<italic>t</italic>)) converges to <italic>x</italic><sup><italic>&#x2217;</italic></sup> := (<italic>S</italic><sub>&#x221E;</sub>, <italic>I</italic><sub>&#x221E;</sub>). It follows that <italic>f</italic> (<italic>x</italic><sup><italic>&#x2217;</italic></sup>) = 0, which means that
+<disp-formula id="ueqn45">
+<alternatives><graphic xlink:href="21255289v4_ueqn45.gif"/></alternatives>
+</disp-formula>
+and from there we conclude that <italic>I</italic><sub>&#x221E;</sub> = 0 because <italic>&#x03BD;</italic> &#x2260; 0.</p>
+<p>We still have to show that <italic>S</italic><sub>&#x221E;</sub> &#x003E; 0; we will in fact provide a formula for <italic>S</italic><sub>&#x221E;</sub>.</p>
+</sec>
+<sec id="s5b">
+<title>&#x211B;<sub>0</sub> and epidemics</title>
+<p>A central role in epidemiology is played by the &#x201C;intrinsic reproductive rate&#x201D;
+<disp-formula id="ueqn46">
+<alternatives><graphic xlink:href="21255289v4_ueqn46.gif"/></alternatives>
+</disp-formula>
+</p>
+<p>The epidemiological (and non-mathematically rigorous) definition of &#x211B;<sub>0</sub> is &#x201C;the average number of secondary cases produced by one infected individual introduced into a population of susceptible individuals,&#x201D; where by a susceptible individual one means one who can acquire the disease. This can be made precise with a stochastic model, but an intuitive argument can be found in [<xref ref-type="bibr" rid="c19">19</xref>]. We remark &#x211B;<sub>0</sub> has a generalization to more complex epidemics models, and it characterizes the local stability of the set of &#x201C;disease-free&#x201D; steady states (DFSS) (those for there are no infectives). One may compute &#x211B;<sub>0</sub> using the so-called &#x201C;next generation matrix&#x201D; built from the differential equations. which was introduced in [<xref ref-type="bibr" rid="c34">34</xref>] (see e.g [<xref ref-type="bibr" rid="c35">35</xref>] and also the worked examples in [<xref ref-type="bibr" rid="c19">19</xref>]).</p>
+<p>We discuss &#x211B;<sub>0</sub> below in more detail, but for now note the following fact. From the ODE for <italic>I</italic>, we have that
+<disp-formula id="ueqn47">
+<alternatives><graphic xlink:href="21255289v4_ueqn47.gif"/></alternatives>
+</disp-formula>
+</p>
+<p>This means that <italic>an epidemic will happen</italic>, meaning that <italic>I</italic>(<italic>t</italic>) will increase when starting from any <italic>I</italic>(0) &#x003E; 0, <italic>if and only if</italic> &#x211B;<sub>0</sub> &#x003E; 1.</p>
+<p>Moreover, the initial growth of <italic>I</italic>(<italic>t</italic>) will be exponential, with rate <italic>&#x03BB;</italic> = <italic>&#x03BD;</italic> (&#x211B;<sub>0</sub> &#x2212;1). (For small times and a large susceptible population <italic>S</italic><sub>0</sub>, we may assume that <italic>S</italic>(<italic>t</italic>) remains roughly constant.) Logarithmically plotting infections, we can estimate <italic>&#x03BB;</italic>, and from there we may estimate
+<disp-formula id="ueqn48">
+<alternatives><graphic xlink:href="21255289v4_ueqn48.gif"/></alternatives>
+</disp-formula>
+</p>
+<p>(assuming that we know <italic>&#x03BD;</italic>, the recovery/death rate of infecteds), and
+<disp-formula id="ueqn49">
+<alternatives><graphic xlink:href="21255289v4_ueqn49.gif"/></alternatives>
+</disp-formula>
+</p>
+<p>When &#x211B;<sub>0</sub> &#x2264; 1 and <italic>t</italic> &#x003E; 0,
+<disp-formula id="ueqn50">
+<alternatives><graphic xlink:href="21255289v4_ueqn50.gif"/></alternatives>
+</disp-formula>
+</p>
+<p>(because <italic>S</italic>(<italic>t</italic>) &#x003C; <italic>S</italic><sub>0</sub>) and so <italic>I</italic>(<italic>t</italic>) monotonically decreases to zero.</p>
+<p><italic>From now on, when discussing the SIR model, we assume that</italic> &#x211B;<sub>0</sub> &#x003E; 1.</p>
+</sec>
+<sec id="s5c">
+<title>Peak infection time <italic>t</italic><sub><italic>p</italic></sub> and susceptibles at that time</title>
+<p>The derivative <italic>&#x0130;</italic> = (<italic>&#x03B2;S</italic> &#x2212; <italic>&#x03BD;</italic>)<italic>I</italic> is positive for small <italic>t</italic>, because at zero it equals <italic>&#x03BD;</italic> (&#x211B;<sub>0</sub> &#x2212; 1)<italic>I</italic> &#x003E; 0.</p>
+<p>On the other hand, since <italic>I</italic>(<italic>t</italic>) &#x2192; 0 as <italic>t</italic> &#x2192; &#x221E;, the derivative must eventually become negative, which means that there is some time <italic>t</italic><sub><italic>p</italic></sub> (<italic>p</italic> for &#x201C;peak&#x201D; infectivity) at which <italic>&#x0130;</italic>(<italic>t</italic><sub><italic>p</italic></sub>) = 0. Since <italic>S</italic>(<italic>t</italic>) decreases monotonically, the derivative of <italic>I</italic> can only change sign from positive to negative at exactly one such time <italic>t</italic><sub><italic>p</italic></sub>. So <italic>t</italic><sub><italic>p</italic></sub> is the point at which <italic>I</italic>(<italic>t</italic>) attains is maximum.</p>
+<p>From <italic>&#x0130;</italic> = 0 at <italic>t</italic><sub><italic>p</italic></sub>, we have that
+<disp-formula id="ueqn51">
+<alternatives><graphic xlink:href="21255289v4_ueqn51.gif"/></alternatives>
+</disp-formula>
+where we define for convenience
+<disp-formula id="ueqn52">
+<alternatives><graphic xlink:href="21255289v4_ueqn52.gif"/></alternatives>
+</disp-formula>
+</p>
+<p>Thus, at the peak infection time, there is a precise formula for the number of susceptibles.</p>
+</sec>
+<sec id="s5d">
+<title>A formula for the final number <italic>S</italic> <sub>&#x221E;</sub> &#x003E; 0 of susceptibles</title>
+<p>Let us know derive an (implicit) equation for the limit <italic>S</italic><sub>&#x221E;</sub> of the susceptible population. We introduce the following function, along a given solution:
+<disp-formula id="ueqn53">
+<alternatives><graphic xlink:href="21255289v4_ueqn53.gif"/></alternatives>
+</disp-formula>
+</p>
+<p>Taking derivatives,
+<disp-formula id="ueqn54">
+<alternatives><graphic xlink:href="21255289v4_ueqn54.gif"/></alternatives>
+</disp-formula>
+which means that <italic>H</italic> is constant along trajectories (a conserved quantity):
+<disp-formula id="ueqn55">
+<alternatives><graphic xlink:href="21255289v4_ueqn55.gif"/></alternatives>
+</disp-formula>
+for all <italic>t</italic> &#x003E; 0. It follows, in particular, that
+<disp-formula id="ueqn56">
+<alternatives><graphic xlink:href="21255289v4_ueqn56.gif"/></alternatives>
+</disp-formula>
+and therefore <italic>S</italic>(<italic>t</italic>) &#x2265; <italic>e</italic><sup><italic>p&#x03B2;/&#x03BD;</italic></sup> for all <italic>t</italic>, so taking limits <italic>S</italic><sub>&#x221E;</sub> &#x2265; <italic>e</italic><sup><italic>p&#x03B2;/&#x03BD;</italic></sup> &#x003E; 0 as claimed.</p>
+<p>Even better, we can obtain an equation for <italic>S</italic><sub>&#x221E;</sub> by passing to the limit in the conservation law, which gives (taking into account that <italic>I</italic><sub>&#x221E;</sub> = 0):
+<disp-formula id="ueqn57">
+<alternatives><graphic xlink:href="21255289v4_ueqn57.gif"/></alternatives>
+</disp-formula>
+</p>
+<p>Dividing by <italic>S</italic><sub>0</sub> and using that &#x211B;<sub>0</sub> = <italic>&#x03B2;S</italic><sub>0</sub><italic>/&#x03BD;</italic>, and definining for convenience <inline-formula><alternatives><inline-graphic xlink:href="21255289v4_inline31.gif"/></alternatives></inline-formula>, we obtain:
+<disp-formula id="ueqn58">
+<alternatives><graphic xlink:href="21255289v4_ueqn58.gif"/></alternatives>
+</disp-formula>
+or, letting <italic>x</italic> := <italic>S</italic><sub>&#x221E;</sub><italic>/S</italic><sub>0</sub> and <inline-formula><alternatives><inline-graphic xlink:href="21255289v4_inline32.gif"/></alternatives></inline-formula>:
+<disp-formula id="ueqn59">
+<alternatives><graphic xlink:href="21255289v4_ueqn59.gif"/></alternatives>
+</disp-formula>
+</p>
+<p>Observe that, since <italic>S</italic>(<italic>t</italic>) is decreasing, <italic>x</italic> &#x003C; 1. We claim that there is exactly one solution of the equation <italic>f</italic> (<italic>x</italic>) = <italic>c</italic> with <italic>x</italic> &#x2208; (0, 1). By computing this solution, we can retrieve the final value of the susceptibles, <italic>S</italic><sub>&#x221E;</sub> = <italic>xS</italic><sub>0</sub>. To prove that there is a solution <italic>x</italic> and it is unique, note that lim<sub><italic>x&#x2192;</italic>0&#x002B;</sub> <italic>f</italic> (<italic>x</italic>) = &#x002B;&#x221E; and <italic>f</italic> (1) = 1, and <inline-formula><alternatives><inline-graphic xlink:href="21255289v4_inline33.gif"/></alternatives></inline-formula> is an increasing function of <italic>x</italic>, with lim<sub><italic>x&#x2192;</italic>0&#x002B;</sub> <italic>f &#x2032;</italic> (<italic>x</italic>) = &#x2212;&#x221E;and <italic>f &#x2032;</italic>(1) = 1 &#x2212;<italic>q</italic> &#x003E; 0 (because we assumed &#x211B;<sub>0</sub> &#x003E; 1). Therefore, <italic>f</italic> decreases until some <italic>x</italic><sup><italic>&#x2217;</italic></sup> and then increases back to 1. Since <italic>c</italic> &#x003E; 1, it follows that <italic>f</italic> (<italic>x</italic>) = <italic>c</italic> has a unique solution, as we wanted to prove.</p>
+<p>There is in fact a solution of this equation that employs a classical function. For simplicity let us write <italic>s</italic> := <italic>q</italic><sup>&#x2212;1</sup> = &#x211B;<sub>0</sub>. Multiplying by &#x2212;<italic>s</italic>, we write the equation as ln <italic>x</italic> &#x2212;<italic>sx</italic> = &#x2212;<italic>sc</italic>. Taking exponentials and multiplying again by &#x2212;<italic>s</italic> results in <italic>we</italic><sup><italic>w</italic></sup> = <italic>y</italic>, where <italic>w</italic> := &#x2212;<italic>sx</italic> and <italic>y</italic> := &#x2212;<italic>se</italic><sup>&#x2212;<italic>sc</italic></sup>. Note that, since <italic>s</italic> &#x003E; 1 and <italic>c</italic> &#x003E; 1, <italic>y</italic> &#x2208; (&#x2212; 1<italic>/e</italic>, 0). The function <italic>w &#x21A6; we</italic><sup><italic>w</italic></sup> has an inverse, defined on (&#x2212; 1<italic>/e</italic>, 0), called the <italic>Lambert W function</italic> (MATLAB command <monospace>lambertw</monospace>). So, <italic>w</italic> = <italic>W</italic> (<italic>y</italic>), and since <italic>x</italic> = &#x2212;<italic>w/s</italic>, we conclude that
+<disp-formula id="ueqn60">
+<alternatives><graphic xlink:href="21255289v4_ueqn60.gif"/></alternatives>
+</disp-formula>
+or, after multiplying by <italic>S</italic><sub>0</sub>:
+<disp-formula id="ueqn61">
+<alternatives><graphic xlink:href="21255289v4_ueqn61.gif"/></alternatives>
+</disp-formula>
+</p>
+<p>Typically, <italic>I</italic><sub>0</sub> &#x2248; 0 (one individual is enough to cause an epidemic), so <italic>c</italic> &#x2248; 1 and in that case
+<disp-formula id="ueqn62">
+<alternatives><graphic xlink:href="21255289v4_ueqn62.gif"/></alternatives>
+</disp-formula>
+</p>
+<p>If one can measure the proportion of people who did not get sick compared to the total initial population, then one can solve for &#x211B;<sub>0</sub>. This is one way to compute &#x211B;<sub>0</sub> from historical data.</p>
+</sec>
+<sec id="s5e">
+<title>A formula for the peak value <italic>I</italic>(<italic>t</italic><sub><italic>p</italic></sub>) of infectives</title>
+<p>Determining the peak value <italic>I</italic>(<italic>t</italic><sub><italic>p</italic></sub>) is of critical importance in practice. If a proportion <italic>&#x03B8;</italic> of infected individuals will need hospital care, one can then predict, early on in an infection (and assuming that the SIR model is correct), the maximum number <italic>&#x03B8;I</italic>(<italic>t</italic><sub><italic>p</italic></sub>) of people who will require hospital beds (or intensive care treatment) at any given time, and thus enforce a more stringent NPI policy if this number is projected to overwhelm hospital capacity.</p>
+<p>Let us take again the conservation law
+<disp-formula id="ueqn63">
+<alternatives><graphic xlink:href="21255289v4_ueqn63.gif"/></alternatives>
+</disp-formula>
+and now specialize at <italic>t</italic> = <italic>t</italic><sub><italic>p</italic></sub>, using that <italic>S</italic>(<italic>t</italic><sub><italic>p</italic></sub>) = <italic>r</italic>. Then,
+<disp-formula id="ueqn64">
+<alternatives><graphic xlink:href="21255289v4_ueqn64.gif"/></alternatives>
+</disp-formula>
+</p>
+<p>Another way to write this is to use that <italic>r/S</italic><sub>0</sub> = 1<italic>/</italic>&#x211B;<sub>0</sub>, so
+<disp-formula id="ueqn65">
+<alternatives><graphic xlink:href="21255289v4_ueqn65.gif"/></alternatives>
+</disp-formula>
+</p>
+<sec id="s5e1">
+<label>5.0.1</label>
+<title>Alternative definitions of &#x211B;<sub>0</sub></title>
+<p>There are alternative definitions of &#x211B;<sub>0</sub> (for the SIR model) t hat one often encounters in the literature: &#x211B;<sub>0</sub> = <italic>&#x03B2;N/&#x03BD;</italic>, where <italic>N</italic> is the total population size, or even &#x211B;<sub>0</sub> = <italic>&#x03B2;/&#x03BD;</italic>. Let us quickly explain how these relate to what we are doing here. As alluded to earlier, the general definition of &#x211B;<sub>0</sub> is given in terms of what is called a &#x201C;disease-free steady state&#x201D; (DFSS), meaning a steady state in which there are no infected individuals. For the specific case of the SIR model, this would mean any steady state of the form <italic>S</italic> = <italic>S</italic><sub>0</sub>, <italic>I</italic> = 0, and <italic>R</italic> = <italic>N</italic> &#x2212;<italic>S</italic><sub>0</sub>. With this definition, &#x211B;<sub>0</sub> = <italic>&#x03B2;S</italic><sub>0</sub><italic>/&#x03BD;</italic>, but there are many possible &#x211B;<sub>0</sub>&#x2019;s depending on what is the number or removed individuals at the initial time. In particular, for the equilibrium with <italic>R</italic> = 0, &#x211B;<sub>0</sub> = <italic>&#x03B2;N/&#x03BD;</italic>.</p>
+<p>What about the definition &#x211B; <sub>0</sub> = <italic>&#x03B2;/&#x03BD;</italic>? It is often the case that one normalizes the population to fractions: <italic>S</italic><sub><italic>f</italic></sub> := <italic>S/N, I</italic><sub><italic>f</italic></sub> := <italic>I/N</italic>, <inline-formula><alternatives><inline-graphic xlink:href="21255289v4_inline34.gif"/></alternatives></inline-formula>. In this case, <inline-formula><alternatives><inline-graphic xlink:href="21255289v4_inline34a.gif"/></alternatives></inline-formula> and <italic>&#x0130;</italic><sub><italic>f</italic></sub> = (1<italic>/N</italic>)(<italic>&#x03B2;S</italic> &#x2212; <italic>&#x03BD;</italic>)<italic>I</italic> = ((<italic>&#x03B2;N</italic>)<italic>S</italic><sub><italic>f</italic></sub> &#x2212; <italic>&#x03BD;</italic>)<italic>I</italic><sub><italic>f</italic></sub>, so
+<disp-formula id="ueqn66">
+<alternatives><graphic xlink:href="21255289v4_ueqn66.gif"/></alternatives>
+</disp-formula>
+with <inline-formula><alternatives><inline-graphic xlink:href="21255289v4_inline35.gif"/></alternatives></inline-formula>. Now <inline-formula><alternatives><inline-graphic xlink:href="21255289v4_inline36.gif"/></alternatives></inline-formula> in terms of this new <italic>&#x03B2;</italic>. Note that <italic>S</italic><sub><italic>f</italic></sub> and <italic>I</italic><sub><italic>f</italic></sub> are dimensionless and that <inline-formula><alternatives><inline-graphic xlink:href="21255289v4_inline37.gif"/></alternatives></inline-formula> has units of (1/time), while the original <italic>&#x03B2;</italic> had units of 1/(time &#x00D7; individuals), so <inline-formula><alternatives><inline-graphic xlink:href="21255289v4_inline38.gif"/></alternatives></inline-formula> is perhaps more elegant.</p>
+<p>We prefer not to perform this normalization because, when there are &#x201C;vital dynamics&#x201D; such as immigration, emigration, births, and/or deaths, the total population <italic>N</italic> would not be constant.</p>
+</sec>
+</sec>
+</sec>
+<sec id="s6">
+<label>6</label>
+<title>Discussion</title>
+<p>In this paper we discussed an SIR model with strict (no-contact) lockdowns. We studied the problem of deciding when to start each one of <italic>K</italic> of lockdowns, with respective lengths <italic>T</italic><sub><italic>k</italic></sub>, <italic>k</italic> = 1, &#x2026;, <italic>K</italic>, so as to minimize the maximum number of infected individuals at any given time, and provided an exact formula in which lockdowns should start whenever the number of infectious individuals reaches <inline-formula><alternatives><inline-graphic xlink:href="21255289v4_inline39.gif"/></alternatives></inline-formula>, where <italic>V</italic><sub>0</sub> is the &#x201C;virtual peak&#x201D; that would have resulted from no lockdowns.</p>
+<p>As we discussed, a perfect or near-perfect lockdown is not practical, but the ideal case helps understand the problem with non-strict lockdowns, and we presented numerical evidence that the formula is reasonable accurate even in the not totally (but still reasonably) strict case. The fellow-up paper [<xref ref-type="bibr" rid="c36">36</xref>] has recently started the study of the same optimization problem in the non-strict case, showing that in the optimal case the subsequent peak after release from one lockdown coincides with the infective population at the start of the lockdown. Much further work remains, including the extension of the perfect-lockdown problem to models such as the ones presented in [<xref ref-type="bibr" rid="c20">20</xref>, <xref ref-type="bibr" rid="c25">25</xref>, <xref ref-type="bibr" rid="c26">26</xref>].</p>
+<p>We also presented results showing that equal-length lockdowns are optimal, and we quantified the sensitivity to poorly known contagion rates.</p>
+</sec>
+</body>
+<back>
+<sec sec-type="data-availability">
+<title>Data Availability</title>
+<p>No data is used.</p>
+</sec>
+<ack>
+<label>7</label>
+<title>Acknowledgments</title>
+<p>We are grateful to James Greene for many discussions, and to an anonymous referee for the suggestion of the equal-lengths result. Parts of this work were supported by grants NSF 1849588, ONR N00014-21-1-2431, and AFOSR FA9550-21-1-0289.</p>
+</ack>
+<ref-list>
+<title>References</title>
+<ref id="c1"><label>[1]</label><mixed-citation publication-type="journal"><string-name><given-names>T. P. B.</given-names> <surname>Thu</surname></string-name>, <string-name><given-names>P. N.</given-names> <surname>Ngoc</surname></string-name>, <string-name><given-names>N. M.</given-names> <surname>Hai</surname></string-name>, <etal>et al.</etal> <article-title>Effect of the social distancing measures on the spread of COVID-19 in 10 highly infected countries</article-title>. <source>Science of the Total Environment</source>, <volume>742</volume>:<fpage>140430</fpage>, <year>2020</year>.</mixed-citation></ref>
+<ref id="c2"><label>[2]</label><mixed-citation publication-type="other"><string-name><given-names>A. L.</given-names> <surname>Wright</surname></string-name>, <string-name><given-names>K.</given-names> <surname>Sonin</surname></string-name>, <string-name><given-names>J.</given-names> <surname>Driscoll</surname></string-name>, and <string-name><given-names>J.</given-names> <surname>Wilson</surname></string-name>. <article-title>Poverty and economic dislocation reduce compliance with COVID-19 shelter-in-place protocols</article-title>. <source>University of Chicago, Becker Friedman Institute for Economics Working Paper</source>, (2020-40), <year>2020</year>.</mixed-citation></ref>
+<ref id="c3"><label>[3]</label><mixed-citation publication-type="other"><string-name><given-names>O.</given-names> <surname>Coibion</surname></string-name>, <string-name><given-names>Y.</given-names> <surname>Gorodnichenko</surname></string-name>, and <string-name><given-names>M.</given-names> <surname>Weber</surname></string-name>. <article-title>The cost of the COVID-19 crisis: Lockdowns, macroeconomic expectations, and consumer spending</article-title>. <source>Technical report, National Bureau of Economic Research</source>, <year>2020</year>.</mixed-citation></ref>
+<ref id="c4"><label>[4]</label><mixed-citation publication-type="other"><string-name><given-names>T.</given-names> <surname>Andersson</surname></string-name>, <string-name><given-names>A.</given-names> <surname>Erlanson</surname></string-name>, <string-name><given-names>D.</given-names> <surname>Spiro</surname></string-name>, and <string-name><given-names>R.</given-names> <surname>&#x00D6;stling</surname></string-name>. <article-title>Optimal trade-off between economic activity and health during an epidemic</article-title>. <source>arXiv preprint</source> <pub-id pub-id-type="arxiv">2005.07590</pub-id>, <year>2020</year>.</mixed-citation></ref>
+<ref id="c5"><label>[5]</label><mixed-citation publication-type="journal"><string-name><given-names>W.</given-names> <surname>Kermack</surname></string-name> and <string-name><given-names>A.</given-names> <surname>McKendrick</surname></string-name>. <article-title>A contribution to the mathematical theory of epidemics</article-title>. <source>The Royal Society Publishing</source>, <volume>114</volume>(<issue>772</issue>), <year>1927</year>.</mixed-citation></ref>
+<ref id="c6"><label>[6]</label><mixed-citation publication-type="journal"><string-name><given-names>D.</given-names> <surname>Adam</surname></string-name>. <article-title>Special report: The simulations driving the world&#x2019;s response to COVID-19</article-title>. <source>Nature</source>, <volume>580</volume>(<issue>7803</issue>):<fpage>316</fpage>&#x2013;<lpage>318</lpage>, <month>04</month> <year>2020</year>.</mixed-citation></ref>
+<ref id="c7"><label>[7]</label><mixed-citation publication-type="book"><string-name><given-names>N.</given-names> <surname>Ferguson</surname></string-name>, <string-name><given-names>D.</given-names> <surname>Laydon</surname></string-name>, <string-name><given-names>G.</given-names> <surname>Nedjati-Gilani</surname></string-name>, <string-name><given-names>N.</given-names> <surname>Imai</surname></string-name>, <string-name><given-names>K.</given-names> <surname>Ainslie</surname></string-name>, <string-name><given-names>M.</given-names> <surname>Baguelin</surname></string-name>, <string-name><given-names>S.</given-names> <surname>Bhatia</surname></string-name>, <string-name><given-names>A.</given-names> <surname>Boonyasiri</surname></string-name>, <string-name><given-names>Z.</given-names> <surname>Cucunub&#x00E1;</surname></string-name>, <string-name><given-names>G.</given-names> <surname>Cuomo-Dannenburg</surname></string-name>, <etal>et al.</etal> <source>Impact of non-pharmaceutical interventions (NPIs) to reduce COVID-19 mortality and healthcare demand</source>. <publisher-name>Imperial College</publisher-name>, <publisher-loc>London</publisher-loc>. DOI: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.25561/77482">https://doi.org/10.25561/77482</ext-link>, <year>2020</year>.</mixed-citation></ref>
+<ref id="c8"><label>[8]</label><mixed-citation publication-type="other"><string-name><given-names>J.</given-names> <surname>Lourenco</surname></string-name>, <string-name><given-names>R.</given-names> <surname>Paton</surname></string-name>, <string-name><given-names>M.</given-names> <surname>Ghafari</surname></string-name>, <string-name><given-names>M.</given-names> <surname>Kraemer</surname></string-name>, <string-name><given-names>C.</given-names> <surname>Thompson</surname></string-name>, <string-name><given-names>P.</given-names> <surname>Simmonds</surname></string-name>, <string-name><given-names>P.</given-names> <surname>Klenerman</surname></string-name>, and <string-name><given-names>S.</given-names> <surname>Gupta</surname></string-name>. <article-title>Fundamental principles of epidemic spread highlight the immediate need for large-scale serological surveys to assess the stage of the SARS-CoV-2 epidemic</article-title>. <source>medRxiv</source>, <year>2020</year>.</mixed-citation></ref>
+<ref id="c9"><label>[9]</label><mixed-citation publication-type="journal"><string-name><given-names>C.</given-names> <surname>Murray</surname></string-name>. <article-title>Forecasting the impact of the first wave of the COVID-19 pandemic on hospital demand and deaths for the usa and european economic area countries</article-title>. <source>medRxiv</source>, <year>2020</year>.</mixed-citation></ref>
+<ref id="c10"><label>[10]</label><mixed-citation publication-type="journal"><string-name><given-names>X.</given-names> <surname>Liu</surname></string-name>, <string-name><given-names>G.</given-names> <surname>Hewings</surname></string-name>, <string-name><given-names>S.</given-names> <surname>Wang</surname></string-name>, <string-name><given-names>M.</given-names> <surname>Qin</surname></string-name>, <string-name><given-names>X.</given-names> <surname>Xiang</surname></string-name>, <string-name><given-names>S.</given-names> <surname>Zheng</surname></string-name>, and <string-name><given-names>X.</given-names> <surname>Li</surname></string-name>. <article-title>Modeling the situation of COVID-19 and effects of different containment strategies in china with dynamic differential equations and parameters estimation</article-title>. <source>medRxiv</source>, <year>2020</year>.</mixed-citation></ref>
+<ref id="c11"><label>[11]</label><mixed-citation publication-type="journal"><string-name><given-names>M.</given-names> <surname>Chinazzi</surname></string-name>, <string-name><given-names>J.</given-names> <surname>Davis</surname></string-name>, <string-name><given-names>M.</given-names> <surname>Ajelli</surname></string-name>, <string-name><given-names>C.</given-names> <surname>Gioannini</surname></string-name>, <string-name><given-names>M.</given-names> <surname>Litvinova</surname></string-name>, <string-name><given-names>S.</given-names> <surname>Merler</surname></string-name>, <string-name><given-names>A. Pastore y</given-names> <surname>Piontti</surname></string-name>, <string-name><given-names>K.</given-names> <surname>Mu</surname></string-name>, <string-name><given-names>L.</given-names> <surname>Rossi</surname></string-name>, <string-name><given-names>K.</given-names> <surname>Sun</surname></string-name>, <string-name><given-names>C.</given-names> <surname>Viboud</surname></string-name>, <string-name><given-names>X.</given-names> <surname>Xiong</surname></string-name>, <string-name><given-names>H.</given-names> <surname>Yu</surname></string-name>, <string-name><given-names>M.</given-names> <surname>Halloran</surname></string-name>, <string-name><given-names>I.</given-names> <surname>Longini</surname></string-name>, and <string-name><given-names>A.</given-names> <surname>Vespignani</surname></string-name>. <article-title>The effect of travel restrictions on the spread of the 2019 novel coronavirus (COVID-19) outbreak</article-title>. <source>Science</source>, <volume>368</volume>(<issue>6489</issue>):<fpage>395</fpage>&#x2013;<lpage>400</lpage>, <year>2020</year>.</mixed-citation></ref>
+<ref id="c12"><label>[12]</label><mixed-citation publication-type="journal"><string-name><given-names>H.</given-names> <surname>Tian</surname></string-name>, <string-name><given-names>Y.</given-names> <surname>Liu</surname></string-name>, <string-name><given-names>Y.</given-names> <surname>Li</surname></string-name>, <string-name><given-names>C.</given-names> <surname>Wu</surname></string-name>, <string-name><given-names>B.</given-names> <surname>Chen</surname></string-name>, <string-name><given-names>M.</given-names> <surname>Kraemer</surname></string-name>, <string-name><given-names>B.</given-names> <surname>Li</surname></string-name>, <string-name><given-names>J.</given-names> <surname>Cai</surname></string-name>, <string-name><given-names>B.</given-names> <surname>Xu</surname></string-name>, <string-name><given-names>Q.</given-names> <surname>Yang</surname></string-name>, <string-name><given-names>B.</given-names> <surname>Wang</surname></string-name>, <string-name><given-names>P.</given-names> <surname>Yang</surname></string-name>, <string-name><given-names>Y.</given-names> <surname>Cui</surname></string-name>, <string-name><given-names>Y.</given-names> <surname>Song</surname></string-name>, <string-name><given-names>P.</given-names> <surname>Zheng</surname></string-name>, <string-name><given-names>Q.</given-names> <surname>Wang</surname></string-name>, <string-name><given-names>O.</given-names> <surname>Bjornstad</surname></string-name>, <string-name><given-names>R.</given-names> <surname>Yang</surname></string-name>, <string-name><given-names>B.</given-names> <surname>Grenfell</surname></string-name>, <string-name><given-names>O.</given-names> <surname>Pybus</surname></string-name>, and <string-name><given-names>C.</given-names> <surname>Dye</surname></string-name>. <article-title>The impact of transmission control measures during the first 50 days of the COVID-19 epidemic in china</article-title>. <source>medRxiv</source>, <year>2020</year>.</mixed-citation></ref>
+<ref id="c13"><label>[13]</label><mixed-citation publication-type="journal"><string-name><given-names>A.</given-names> <surname>Kucharski</surname></string-name>, <string-name><given-names>T.</given-names> <surname>Russell</surname></string-name>, <string-name><given-names>C.</given-names> <surname>Diamond</surname></string-name>, <string-name><given-names>Y.</given-names> <surname>Liu</surname></string-name>, <string-name><given-names>J.</given-names> <surname>Edmunds</surname></string-name>, <string-name><given-names>S.</given-names> <surname>Funk</surname></string-name>, <string-name><given-names>R.</given-names> <surname>Eggo</surname></string-name>, <string-name><given-names>F.</given-names> <surname>Sun</surname></string-name>, <string-name><given-names>M.</given-names> <surname>Jit</surname></string-name>, <string-name><given-names>J.</given-names> <surname>Munday</surname></string-name>, <string-name><given-names>N.</given-names> <surname>Davies</surname></string-name>, <string-name><given-names>A.</given-names> <surname>Gimma</surname></string-name>, <string-name><given-names>K.</given-names> <surname>Van Zandvoort</surname></string-name>, <string-name><given-names>H.</given-names> <surname>Gibbs</surname></string-name>, <string-name><given-names>J.</given-names> <surname>Hellewell</surname></string-name>, <string-name><given-names>C.</given-names> <surname>Jarvis</surname></string-name>, <string-name><given-names>S.</given-names> <surname>Clifford</surname></string-name>, <string-name><given-names>B.</given-names> <surname>Quilty</surname></string-name>, <string-name><given-names>N.</given-names> <surname>Bosse</surname></string-name>, <string-name><given-names>S.</given-names> <surname>Abbott</surname></string-name>, <string-name><given-names>P.</given-names> <surname>Klepac</surname></string-name>, and <string-name><given-names>S.</given-names> <surname>Flasche</surname></string-name>. <article-title>Early dynamics of transmission and control of COVID-19: a mathematical modelling study</article-title>. <source>Lancet Infect Dis</source>, <volume>20</volume>(<issue>5</issue>):<fpage>553</fpage>&#x2013;<lpage>558</lpage>, <month>05</month> <year>2020</year>.</mixed-citation></ref>
+<ref id="c14"><label>[14]</label><mixed-citation publication-type="journal"><string-name><given-names>S.</given-names> <surname>Park</surname></string-name>, <string-name><given-names>D.</given-names> <surname>Cornforth</surname></string-name>, <string-name><given-names>J.</given-names> <surname>Dushoff</surname></string-name>, and <string-name><given-names>J.</given-names> <surname>Weitz</surname></string-name>. <article-title>The time scale of asymptomatic transmission affects estimates of epidemic potential in the COVID-19 outbreak</article-title>. <source>medRxiv</source>, <year>2020</year>.</mixed-citation></ref>
+<ref id="c15"><label>[15]</label><mixed-citation publication-type="journal"><string-name><given-names>F.</given-names> <surname>Di Lauro</surname></string-name>, <string-name><given-names>I. Z.</given-names> <surname>Kiss</surname></string-name>, and <string-name><given-names>J. C.</given-names> <surname>Miller</surname></string-name>. <article-title>Optimal timing of one-shot interventions for epidemic control</article-title>. <source>PLoS Comput Biol</source>, <volume>17</volume>(<issue>3</issue>):<fpage>e1008763</fpage>, <month>03</month> <year>2021</year>.</mixed-citation></ref>
+<ref id="c16"><label>[16]</label><mixed-citation publication-type="other"><string-name><given-names>D.H.</given-names> <surname>Morris</surname></string-name>, <string-name><given-names>F.W.</given-names> <surname>Rossine</surname></string-name>, <string-name><given-names>J.B.</given-names> <surname>Plotkin</surname></string-name>, and <string-name><given-names>S. A.</given-names> <surname>Levin</surname></string-name>. <source>Optimal, near-optimal, and robust epidemic control</source>. arXiv, <pub-id pub-id-type="arxiv">2004.02209</pub-id>, <year>2021</year>.</mixed-citation></ref>
+<ref id="c17"><label>[17]</label><mixed-citation publication-type="journal"><string-name><given-names>P. A.</given-names> <surname>Bliman</surname></string-name> and <string-name><given-names>M.</given-names> <surname>Duprez</surname></string-name>. <article-title>How best can finite-time social distancing reduce epidemic final size?</article-title> <source>J Theor Biol</source>, <volume>511</volume>:<fpage>110557</fpage>, <month>Feb</month> <year>2021</year>.</mixed-citation></ref>
+<ref id="c18"><label>[18]</label><mixed-citation publication-type="journal"><string-name><given-names>E.A.</given-names> <surname>Hernandez-Vargas</surname></string-name>, <string-name><given-names>G.</given-names> <surname>Giordano</surname></string-name>, <string-name><given-names>E. D.</given-names> <surname>Sontag</surname></string-name>, <string-name><given-names>J. G.</given-names> <surname>Chase</surname></string-name>, <string-name><given-names>H.</given-names> <surname>Chang</surname></string-name>, and <string-name><given-names>A.</given-names> <surname>Astolfi</surname></string-name>. <article-title>First special section on systems and control research efforts against covid-19 and future pandemics</article-title>. <source>Annual Reviews in Control</source>, <volume>50</volume>:<fpage>343</fpage>&#x2013;<lpage>344</lpage>, <year>2020</year>.</mixed-citation></ref>
+<ref id="c19"><label>[19]</label><mixed-citation publication-type="website"><string-name><given-names>E.D.</given-names> <surname>Sontag</surname></string-name>. <source>Notes on mathematical systems biology</source>. <ext-link ext-link-type="uri" xlink:href="https://drive.google.com/drive/folders/1lIRqaCPeXMVZGoY-44bBsvtnsHtlRfIO?usp=sharing">https://drive.google.com/drive/folders/1lIRqaCPeXMVZGoY-44bBsvtnsHtlRfIO?usp=sharing</ext-link>, <year>2021</year>.</mixed-citation></ref>
+<ref id="c20"><label>[20]</label><mixed-citation publication-type="journal"><string-name><given-names>G.</given-names> <surname>Giordano</surname></string-name>, <string-name><given-names>F.</given-names> <surname>Blanchini</surname></string-name>, <string-name><given-names>R.</given-names> <surname>Bruno</surname></string-name>, <string-name><given-names>P.</given-names> <surname>Colaneri</surname></string-name>, <string-name><given-names>A.</given-names> <surname>Di Filippo</surname></string-name>, <string-name><given-names>A.</given-names> <surname>Di Matteo</surname></string-name>, and <string-name><given-names>M.</given-names> <surname>Colaneri</surname></string-name>. <article-title>Modelling the COVID-19 epidemic and implementation of population-wide interventions in Italy</article-title>. <source>Nat. Med</source>., <volume>26</volume>:<fpage>855860</fpage>, <year>2020</year>.</mixed-citation></ref>
+<ref id="c21"><label>[21]</label><mixed-citation publication-type="journal"><string-name><given-names>M.</given-names> <surname>Robinson</surname></string-name> and <string-name><given-names>N. I.</given-names> <surname>Stilianakis</surname></string-name>. <article-title>A model for the emergence of drug resistance in the presence of asymptomatic infections</article-title>. <source>Mathematical Biosciences</source>, <volume>243</volume>(<issue>2</issue>):<fpage>163</fpage>&#x2013;<lpage>177</lpage>, <year>2013</year>.</mixed-citation></ref>
+<ref id="c22"><label>[22]</label><mixed-citation publication-type="journal"><string-name><given-names>M.</given-names> <surname>Grunnill</surname></string-name>. <article-title>An exploration of the role of asymptomatic infections in the epidemiology of dengue viruses through susceptible, asymptomatic, infected and recovered (sair) models</article-title>. <source>Journal of Theoretical Biology</source>, <volume>439</volume>:<fpage>195</fpage>&#x2013;<lpage>204</lpage>, <year>2018</year>.</mixed-citation></ref>
+<ref id="c23"><label>[23]</label><mixed-citation publication-type="other"><string-name><given-names>E.</given-names> <surname>Franco</surname></string-name>. <article-title>A feedback SIR (fSIR) model highlights advantages and limitations of infection-based social distancing</article-title>. <source>arXiv preprint</source> <pub-id pub-id-type="arxiv">2004.13216</pub-id>, <year>2020</year>.</mixed-citation></ref>
+<ref id="c24"><label>[24]</label><mixed-citation publication-type="other"><string-name><given-names>M. G.</given-names> <surname>Pedersen</surname></string-name> and <string-name><given-names>M.</given-names> <surname>Meneghini</surname></string-name>. <article-title>Quantifying undetected COVID-19 cases and effects of containment measures in Italy</article-title>. <source>ResearchGate Preprint (online 21 March 2020)</source> DOI, <month>10</month>, <year>2020</year>.</mixed-citation></ref>
+<ref id="c25"><label>[25]</label><mixed-citation publication-type="journal"><string-name><given-names>J.L.</given-names> <surname>Gevertz</surname></string-name>, <string-name><given-names>J.M.</given-names> <surname>Greene</surname></string-name>, <string-name><given-names>C</given-names> <surname>Hixahuary Sanchez Tapia</surname></string-name>, and <string-name><given-names>E D</given-names> <surname>Sontag</surname></string-name>. <article-title>A novel COVID-19 epidemiological model with explicit susceptible and asymptomatic isolation compartments reveals unexpected consequences of timing social distancing</article-title>. <source>Journal of Theoretical Biology</source>, <volume>510</volume>:<fpage>110539</fpage>, <year>2020</year>.</mixed-citation></ref>
+<ref id="c26"><label>[26]</label><mixed-citation publication-type="journal"><string-name><given-names>M.A.</given-names> <surname>Al-Radhawi</surname></string-name>, <string-name><given-names>M.</given-names> <surname>Sadeghi</surname></string-name>, and <string-name><given-names>E.D.</given-names> <surname>Sontag</surname></string-name>. <article-title>Long-term regulation of prolonged epidemic outbreaks in large populations via adaptive control: a singular perturbation approach</article-title>. <source>IEEE Control Systems Letters</source>, page <pub-id pub-id-type="doi">10.1109/LCSYS.2021.3083983</pub-id>, <year>2021</year>.</mixed-citation></ref>
+<ref id="c27"><label>[27]</label><mixed-citation publication-type="other"><string-name><given-names>S.</given-names> <surname>Federico</surname></string-name> and <string-name><given-names>G.</given-names> <surname>Ferrari</surname></string-name>. <article-title>Taming the spread of an epidemic by lockdown policies. Center for Mathematical Economics Working Papers 639</article-title>, <source>Center for Mathematical Economics, Bielefeld Uni-versity</source>, <month>July</month> <year>2020</year>.</mixed-citation></ref>
+<ref id="c28"><label>[28]</label><mixed-citation publication-type="journal"><string-name><given-names>M.</given-names> <surname>Sadeghi</surname></string-name>, <string-name><given-names>J.M.</given-names> <surname>Greene</surname></string-name>, and <string-name><given-names>E.D.</given-names> <surname>Sontag</surname></string-name>. <article-title>Universal features of epidemic models under social distancing guidelines</article-title>. <source>Annual Reviews in Control</source>, <volume>51</volume>:<fpage>426</fpage>&#x2013;<lpage>440</lpage>, <year>2021</year>.</mixed-citation></ref>
+<ref id="c29"><label>[29]</label><mixed-citation publication-type="journal"><string-name><given-names>M.</given-names> <surname>Bin</surname></string-name>, <string-name><given-names>P. Y. K.</given-names> <surname>Cheung</surname></string-name>, <string-name><given-names>E.</given-names> <surname>Crisostomi</surname></string-name>, <string-name><given-names>P.</given-names> <surname>Ferraro</surname></string-name>, <string-name><given-names>H.</given-names> <surname>Lhachemi</surname></string-name>, <string-name><given-names>R.</given-names> <surname>Murray-Smith</surname></string-name>, <string-name><given-names>C.</given-names> <surname>Myant</surname></string-name>, <string-name><given-names>T.</given-names> <surname>Parisini</surname></string-name>, <string-name><given-names>R.</given-names> <surname>Shorten</surname></string-name>, <string-name><given-names>S.</given-names> <surname>Stein</surname></string-name>, and <string-name><given-names>L.</given-names> <surname>Stone</surname></string-name>. <article-title>PLoS Comput BiolPost-lockdown abatement of COVID-19 by fast periodic switching</article-title>. <source>PLoS Comput Biol</source>, <volume>17</volume>(<issue>1</issue>):<fpage>e1008604</fpage>, <month>01</month> <year>2021</year>.</mixed-citation></ref>
+<ref id="c30"><label>[30]</label><mixed-citation publication-type="journal"><string-name><given-names>S. M.</given-names> <surname>Kissler</surname></string-name>, <string-name><given-names>C.</given-names> <surname>Tedijanto</surname></string-name>, <string-name><given-names>E.</given-names> <surname>Goldstein</surname></string-name>, <string-name><given-names>Y. H.</given-names> <surname>Grad</surname></string-name>, and <string-name><given-names>M.</given-names> <surname>Lipsitch</surname></string-name>. <article-title>ScienceProjecting the transmission dynamics of SARS-CoV-2 through the postpandemic period</article-title>. <source>Science</source>, <volume>368</volume>(<issue>6493</issue>):<fpage>860</fpage>&#x2013;<lpage>868</lpage>, <month>05</month> <year>2020</year>.</mixed-citation></ref>
+<ref id="c31"><label>[31]</label><mixed-citation publication-type="journal"><string-name><given-names>G.</given-names> <surname>Giordano</surname></string-name>, <string-name><given-names>M.</given-names> <surname>Colaneri</surname></string-name>, <string-name><given-names>A.</given-names> <surname>Di Filippo</surname></string-name>, <string-name><given-names>F.</given-names> <surname>Blanchini</surname></string-name>, <string-name><given-names>P.</given-names> <surname>Bolzern</surname></string-name>, <string-name><given-names>G.</given-names> <surname>De Nicolao</surname></string-name>, <string-name><given-names>P.</given-names> <surname>Sacchi</surname></string-name>, <string-name><given-names>P.</given-names> <surname>Colaneri</surname></string-name>, and <string-name><given-names>R.</given-names> <surname>Bruno</surname></string-name>. <article-title>Nat MedModeling vaccination rollouts, SARS-CoV-2 variants and the requirement for non-pharmaceutical interventions in Italy</article-title>. <source>Nat Med</source>, <volume>27</volume>(<issue>6</issue>):<fpage>993</fpage>&#x2013;<lpage>998</lpage>, <month>06</month> <year>2021</year>.</mixed-citation></ref>
+<ref id="c32"><label>[32]</label><mixed-citation publication-type="book"><string-name><given-names>S.</given-names> <surname>Boyd</surname></string-name> and <string-name><given-names>L.</given-names> <surname>Vandenberghe</surname></string-name>. <source>Convex Optimization</source>. <publisher-name>Cambridge University Press</publisher-name>, <year>2004</year>.</mixed-citation></ref>
+<ref id="c33"><label>[33]</label><mixed-citation publication-type="book"><string-name><given-names>E.D.</given-names> <surname>Sontag</surname></string-name>. <source>Mathematical Control Theory. Deterministic Finite-Dimensional Systems, volume 6 of Texts in Applied Mathematics</source>. <publisher-name>Springer-Verlag</publisher-name>, <publisher-loc>New York</publisher-loc>, <edition>second</edition> edition, <year>1998</year>.</mixed-citation></ref>
+<ref id="c34"><label>[34]</label><mixed-citation publication-type="journal"><string-name><given-names>O.</given-names> <surname>Diekmann</surname></string-name>, <string-name><given-names>J.</given-names> <surname>Heesterbeek</surname></string-name>, and <string-name><given-names>J.</given-names> <surname>Metz</surname></string-name>. <article-title>On the definition and the computation of the basic reproduction ratio r<sub>0</sub> in models for infectious diseases in heterogeneous populations</article-title>. <source>J. Math. Biol</source>., <volume>28</volume>, <year>1990</year>.</mixed-citation></ref>
+<ref id="c35"><label>[35]</label><mixed-citation publication-type="journal"><string-name><given-names>O.</given-names> <surname>Diekmann</surname></string-name>, <string-name><given-names>J.</given-names> <surname>Heesterbeek</surname></string-name>, and <string-name><given-names>M.</given-names> <surname>Roberts</surname></string-name>. <article-title>The construction of next-generation matrices for compartmental epidemic models</article-title>. <source>J. R. Soc. Interface</source>. DOI: <pub-id pub-id-type="doi">10.1098/rsif.2009.0386</pub-id>, <volume>7</volume>, <year>2010</year>.</mixed-citation></ref>
+<ref id="c36"><label>[36]</label><mixed-citation publication-type="journal"><string-name><given-names>J</given-names> <surname>Greene</surname></string-name> and <string-name><given-names>E D</given-names> <surname>Sontag</surname></string-name>. <article-title>Minimizing the infected peak utilizing a single lockdown: a technical result regarding equal peaks</article-title>. <source>medRxiv</source>, <year>2021</year>.</mixed-citation></ref>
+</ref-list>
+</back>
+</article>

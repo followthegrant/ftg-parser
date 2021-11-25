@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.2d1 20170631//EN" "JATS-archivearticle1.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" article-type="article" dtd-version="1.2d1" specific-use="production" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="publisher-id">MEDRXIV</journal-id>
+<journal-title-group>
+<journal-title>medRxiv</journal-title>
+<abbrev-journal-title abbrev-type="publisher">medRxiv</abbrev-journal-title>
+</journal-title-group>
+<publisher>
+<publisher-name>Cold Spring Harbor Laboratory</publisher-name>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1101/2021.08.05.21259863</article-id>
+<article-version>1.1</article-version>
+<article-categories>
+<subj-group subj-group-type="hwp-journal-coll">
+<subject>Public and Global Health</subject>
+</subj-group>
+</article-categories>
+<title-group>
+<article-title>Recording of &#x201C;COVID-19 vaccine declined&#x201D; among vaccination priority groups: a cohort study on 57.9 million NHS patients&#x2019; primary care records in situ using OpenSAFELY</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-3429-9576</contrib-id>
+<name><surname>Curtis</surname><given-names>Helen J</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Inglesby</surname><given-names>Peter</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-3786-9063</contrib-id>
+<name><surname>MacKenna</surname><given-names>Brian</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-8114-9186</contrib-id>
+<name><surname>Croker</surname><given-names>Richard</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-9162-4999</contrib-id>
+<name><surname>Hulme</surname><given-names>William</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-1408-7907</contrib-id>
+<name><surname>Rentsch</surname><given-names>Christopher T</given-names></name>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0001-5364-8757</contrib-id>
+<name><surname>Bhaskaran</surname><given-names>Krishnan</given-names></name>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-4932-6135</contrib-id>
+<name><surname>Walker</surname><given-names>Alex J</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-0783-0042</contrib-id>
+<name><surname>Morton</surname><given-names>Caroline E</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Evans</surname><given-names>David</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-2098-1278</contrib-id>
+<name><surname>Mehrkar</surname><given-names>Amir</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-6354-3454</contrib-id>
+<name><surname>Bacon</surname><given-names>Seb</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-0113-2593</contrib-id>
+<name><surname>Bates</surname><given-names>Chris</given-names></name>
+<xref ref-type="aff" rid="a3">3</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Hickman</surname><given-names>George</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Ward</surname><given-names>Tom</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Morley</surname><given-names>Jessica</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-4681-4873</contrib-id>
+<name><surname>Cockburn</surname><given-names>Jonathan</given-names></name>
+<xref ref-type="aff" rid="a3">3</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Davy</surname><given-names>Simon</given-names></name>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-1637-837X</contrib-id>
+<name><surname>Schultze</surname><given-names>Anna</given-names></name>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Williamson</surname><given-names>Elizabeth</given-names></name>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-0576-2015</contrib-id>
+<name><surname>McDonald</surname><given-names>Helen I</given-names></name>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0001-8848-9493</contrib-id>
+<name><surname>Tomlinson</surname><given-names>Laurie</given-names></name>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-3817-8790</contrib-id>
+<name><surname>Mathur</surname><given-names>Rohini</given-names></name>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-0362-6717</contrib-id>
+<name><surname>Eggo</surname><given-names>Rosalind M</given-names></name>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-2335-9641</contrib-id>
+<name><surname>Wing</surname><given-names>Kevin</given-names></name>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-8618-7333</contrib-id>
+<name><surname>Wong</surname><given-names>Angel YS</given-names></name>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0001-6888-2212</contrib-id>
+<name><surname>Forbes</surname><given-names>Harriet</given-names></name>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-7194-2615</contrib-id>
+<name><surname>Tazare</surname><given-names>John</given-names></name>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Parry</surname><given-names>John</given-names></name>
+<xref ref-type="aff" rid="a3">3</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Hester</surname><given-names>Frank</given-names></name>
+<xref ref-type="aff" rid="a3">3</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Harper</surname><given-names>Sam</given-names></name>
+<xref ref-type="aff" rid="a3">3</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>O&#x2019;Hanlon</surname><given-names>Shaun</given-names></name>
+<xref ref-type="aff" rid="a4">4</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Eavis</surname><given-names>Alex</given-names></name>
+<xref ref-type="aff" rid="a4">4</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Jarvis</surname><given-names>Richard</given-names></name>
+<xref ref-type="aff" rid="a4">4</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Avramov</surname><given-names>Dima</given-names></name>
+<xref ref-type="aff" rid="a4">4</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Griffiths</surname><given-names>Paul</given-names></name>
+<xref ref-type="aff" rid="a4">4</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Fowles</surname><given-names>Aaron</given-names></name>
+<xref ref-type="aff" rid="a4">4</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Parkes</surname><given-names>Nasreen</given-names></name>
+<xref ref-type="aff" rid="a4">4</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-1474-2596</contrib-id>
+<name><surname>Evans</surname><given-names>Stephen JW</given-names></name>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-8970-1406</contrib-id>
+<name><surname>Douglas</surname><given-names>Ian J</given-names></name>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-9168-6022</contrib-id>
+<name><surname>Smeeth</surname><given-names>Liam</given-names></name>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author" corresp="yes">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-5127-4728</contrib-id>
+<name><surname>Goldacre</surname><given-names>Ben</given-names></name>
+<xref ref-type="corresp" rid="cor1">&#x002A;</xref>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<aff id="a1"><label>1</label><institution>The DataLab, Nuffield Department of Primary Care Health Sciences, University of Oxford</institution>, OX26GG</aff>
+<aff id="a2"><label>2</label><institution>London School of Hygiene and Tropical Medicine</institution>, Keppel Street, London WC1E 7HT</aff>
+<aff id="a3"><label>3</label><institution>TPP, TPP House, 129 Low Lane, Horsforth</institution>, Leeds, LS18 5PX</aff>
+<aff id="a4"><label>4</label><institution>EMIS Health, Fulford Grange, Micklefield Lane</institution>, Rawdon, Leeds, LS19 6BA</aff>
+</contrib-group>
+<author-notes>
+<corresp id="cor1"><label>&#x002A;</label>Corresponding; email: <email>ben.goldacre@phc.ox.ac.uk</email></corresp>
+</author-notes>
+<pub-date pub-type="epub">
+<year>2021</year>
+</pub-date>
+<elocation-id>2021.08.05.21259863</elocation-id>
+<history>
+<date date-type="received">
+<day>05</day>
+<month>8</month>
+<year>2021</year>
+</date>
+<date date-type="rev-recd">
+<day>05</day>
+<month>8</month>
+<year>2021</year>
+</date>
+<date date-type="accepted">
+<day>07</day>
+<month>8</month>
+<year>2021</year>
+</date>
+</history>
+<permissions>
+<copyright-statement>&#x00A9; 2021, Posted by Cold Spring Harbor Laboratory</copyright-statement>
+<copyright-year>2021</copyright-year>
+<license license-type="creative-commons" xlink:href="http://creativecommons.org/licenses/by/4.0/"><license-p>This pre-print is available under a Creative Commons License (Attribution 4.0 International), CC BY 4.0, as described at <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</ext-link></license-p></license>
+</permissions>
+<self-uri xlink:href="21259863.pdf" content-type="pdf" xlink:role="full-text"/>
+<abstract>
+<title>Abstract</title>
+<sec>
+<title>Background</title>
+<p>All patients in England within vaccine priority groups were offered a COVID-19 vaccine by mid-April 2021. Clinical record systems contain codes to denote when such an offer has been declined by a patient (although these can in some cases be entered for a variety of other reasons including vaccination delay, or other administrative issues). We set out to describe the patterns of usage of codes for COVID-19 vaccines being declined.</p></sec>
+<sec>
+<title>Methods</title>
+<p>With the approval of NHS England and using the full pseudonymised primary care records for 57.9 million NHS patients, we identified all patients in key vaccine priority groups: aged over 50, or over 16 and at increased risk from COVID-19 (Clinically Extremely Vulnerable [CEV] or otherwise &#x201C;at risk&#x201D;). We describe the proportion of patients recorded as declining a COVID-19 vaccination for each priority group, and by other clinical and demographic factors; whether patients recorded as &#x201C;declined&#x201D; subsequently went on to receive a vaccination; and the distribution of code usage across GP practices.</p></sec>
+<sec>
+<title>Results</title>
+<p>Of 24.5 million patients in priority groups as of May 25th 2021, 89.2% had received a vaccine, 8.8% had neither a vaccination nor a decline recorded, and 663,033 (2.7%) had a decline code recorded. Of patients with a recorded decline, 125,587 (18.9%) were subsequently vaccinated. Subsequent vaccination was slightly more common in the South Asian population than other ethnicities (e.g. 32.3% vs 22.8%, over 65s). The proportion of declining-unvaccinated patients varied strongly with ethnicity (Black 15.3%, South Asian 5.6%, White 1.5% in over 80s); and was higher in patients from more deprived areas. COVID-19 vaccine decline codes were present in almost all practices (98.8%), but with wide variation between practices in rates of usage. Among all priority groups, declining-unvaccinated status was most common in CEV (3.3%).</p></sec>
+<sec>
+<title>Conclusions</title>
+<p>Clinical codes indicative of COVID-19 vaccinations being declined are widely used in English general practice. They are substantially more common among Black and South Asian patients, and patients from more deprived areas. There is a need for more detailed survey and/or qualitative research with patients and clinicians to determine the most common reasons for these recorded declines.</p></sec>
+</abstract>
+<kwd-group kwd-group-type="author">
+<title>Keywords</title>
+<kwd>COVID-19</kwd>
+<kwd>SARS-CoV-2</kwd>
+<kwd>vaccination</kwd>
+<kwd>vaccine hesitancy</kwd>
+<kwd>NHS England</kwd>
+</kwd-group>
+<counts>
+<page-count count="22"/>
+</counts>
+</article-meta>
+<notes>
+<notes notes-type="competing-interest-statement">
+<title>Competing Interest Statement</title><p>Authors declare the following: over the past five years BG has received research funding from the Laura and John Arnold Foundation, the NHS National Institute for Health Research (NIHR), the NIHR School of Primary Care Research, the NIHR Oxford Biomedical Research Centre, the Mohn-Westlake Foundation, NIHR Applied Research Collaboration Oxford and Thames Valley, the Wellcome Trust, the Good Thinking Foundation, Health Data Research UK (HDRUK), the Health Foundation, and the World Health Organisation; he also receives personal income from speaking and writing for lay audiences on the misuse of science. KB holds a Sir Henry Dale fellowship jointly funded by Wellcome and the Royal Society (107731/Z/15/Z). HIM is funded by the NIHR Health Protection Research Unit in Immunisation, a partnership between Public Health England and London School of Hygiene &#x0026; Tropical Medicine. AYSW holds a fellowship from the British Heart Foundation. EJW holds grants from MRC. RM holds a Sir Henry Wellcome Fellowship funded by the Wellcome Trust (201375/Z/16/Z). HF holds a UKRI fellowship. IJD has received unrestricted research grants and holds shares in GlaxoSmithKline (GSK).</p></notes>
+<notes notes-type="financial-disclosure">
+<title>Funding Statement</title><p>This work was jointly funded by UKRI, NIHR and Asthma UK-BLF [COV0076; MR/V015737/] and the Longitudinal Health and Wellbeing strand of the National Core Studies programme. The OpenSAFELY data science platform is funded by the Wellcome Trust. EMIS and TPP provided technical expertise and infrastructure within their data environments pro bono in the context of a national emergency. BG's work on clinical informatics is supported by the NIHR Oxford Biomedical Research Centre and the NIHR Applied Research Collaboration Oxford and Thames Valley. Funders had no role in the study design, collection, analysis, and interpretation of data; in the writing of the report; and in the decision to submit the article for publication. The views expressed are those of the authors and not necessarily those of the NIHR, NHS England, Public Health England or the Department of Health and Social Care.</p>
+<p>The views expressed are those of the authors and not necessarily those of the NIHR, NHS England, Public Health England or the Department of Health and Social Care.</p>
+<p>Funders had no role in the study design, collection, analysis, and interpretation of data; in the writing of the report; and in the decision to submit the article for publication.</p>
+</notes>
+<notes notes-type="disclosures">
+<title>Author Declarations</title><p>I confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.</p><p>Yes</p><p>The details of the IRB/oversight body that provided approval or exemption for the research described are given below:</p><p>NHS England is the data controller; EMIS and TPP are the data processors; and the key researchers on OpenSAFELY are acting on behalf of NHS England. This implementation of OpenSAFELY is hosted within the EMIS and TPP environments which are accredited to the ISO 27001 information security standard and are NHS IG Toolkit compliant;(&#x201C;BETA - Data Security Standards - NHS Digital&#x201D;, &#x201C;Data Security and Protection Toolkit - NHS Digital&#x201D;) patient data has been pseudonymised for analysis and linkage using industry standard cryptographic hashing techniques; all pseudonymised datasets transmitted for linkage onto OpenSAFELY are encrypted; access to the platform is via a virtual private network (VPN) connection, restricted to a small group of researchers; the researchers hold contracts with NHS England and only access the platform to initiate database queries and statistical models; all database activity is logged; only aggregate statistical outputs leave the platform environment following best practice for anonymisation of results such as statistical disclosure control for low cell counts.(<xref ref-type="bibr" rid="c7">&#x201C;ISB1523: Anonymisation Standard for Publishing Health and Social Care Data - NHS Digital&#x201D;</xref>) The OpenSAFELY research platform adheres to the obligations of the UK General Data Protection Regulation (GDPR) and the Data Protection Act 2018. In March 2020, the Secretary of State for Health and Social Care used powers under the UK Health Service (Control of Patient Information) Regulations 2002 (COPI) to require organisations to process confidential patient information for the purposes of protecting public health, providing healthcare services to the public and monitoring and managing the COVID-19 outbreak and incidents of exposure; this sets aside the requirement for patient consent.(<xref ref-type="bibr" rid="c19">Secretary of State for Health and Social Care - UK Government 2020</xref>) Taken together, these provide the legal bases to link patient datasets on the OpenSAFELY platform. GP practices, from which the primary care data are obtained, are required to share relevant health information to support the public health response to the pandemic, and have been informed of the OpenSAFELY analytics platform.</p>
+<p>This study was approved by the Health Research Authority (REC reference 20/LO/0651) and by the LSHTM Ethics Board (reference 21863).</p>
+<p>All necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived.</p><p>Yes</p><p>I understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as <ext-link ext-link-type="uri" xlink:href="http://ClinicalTrials.gov">ClinicalTrials.gov</ext-link>. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).</p><p>Yes</p><p>I have followed all appropriate research reporting guidelines and uploaded the relevant EQUATOR Network research reporting checklist(s) and other pertinent material as supplementary files, if applicable.</p><p>Yes</p></notes>
+</notes>
+</front>
+<body>
+<sec id="s1">
+<title>Background</title>
+<p>On December 8th 2020, the NHS in England administered the first COVID-19 vaccination as part of an ambitious vaccine programme to combat the ongoing COVID-19 pandemic. All people in England within the initial Joint Committee on Vaccination and Immunisation (JCVI) vaccine priority groups (<xref ref-type="boxed-text" rid="box1">box 1</xref>), had been invited to get a COVID-19 vaccine by the middle of April (<xref ref-type="bibr" rid="c13">NHS England 2021</xref>), after which invitations were extended to all other adults. We have previously described the detailed trends and clinical characteristics of COVID-19 vaccine recipients using 57.9 million patients&#x2019; records (<xref rid="c20" ref-type="bibr">The OpenSAFELY Collaborative et al. 2021</xref>) and we update a weekly report covering 40% of the population (<underline>link</underline>). The campaign vaccinated 19 out of every 20 people aged over 50, but concerns remain around lower vaccine coverage in some groups, particularly ethnic minorities (<xref ref-type="bibr" rid="c12">NHS-England 2021</xref>; <xref rid="c20" ref-type="bibr">The OpenSAFELY Collaborative et al. 2021</xref>).</p>
+<p>Electronic health record (EHR) software has functionality to record when a vaccination has been declined, and SNOMED-CT, the mandated coding language in NHS primary care, has several codes that may be used for this purpose (Table S2a). These codes may be used where a patient has explicitly and absolutely refused a vaccine; however they may also sometimes be used for other reasons, such as when a patient wishes to delay getting the vaccine (e.g. due to illness), or rejects a vaccine invitation from one organisation after booking an appointment to be vaccinated elsewhere. An additional range of codes are available to indicate other situations including contraindications, vaccination appointments being missed, or the vaccine being &#x201C;not given&#x201D; (Table S2b), but their usage may occasionally cross over. As there is no comprehensive national guidance or specification on how practices should use these codes, individual practices may also use them to facilitate the organisational delivery of this large-scale vaccination campaign. For example, in order to prevent further automated invites, a practice may add a code indicating a patient has declined when no response has been received after a certain number of invitations, or they may be used in uncertain circumstances such as a possible intolerance.</p>
+<p>We therefore set out to describe the patterns in recorded COVID-19 vaccine declines among 57.9 million pseudonymised patient records (&#x223C;95% of registered patients in England) held in the OpenSAFELY platform, a new secure analytics platform for NHS patient data.</p>
+</sec>
+<sec id="s2">
+<title>Methods</title>
+<sec id="s2a">
+<title>Study design</title>
+<p>We conducted a retrospective cohort study using general practice primary care electronic health record (EHR) data from all England general practices supplied by the EHR vendors EMIS and TPP. Follow-up began on 8th December 2020, the start of the national vaccination campaign, and ended on May 25th 2021, the latest available at the time of analysis and more than one month after all those in priority groups had been offered a vaccination (<xref ref-type="bibr" rid="c13">NHS England 2021</xref>).</p>
+</sec>
+<sec id="s2b">
+<title>Study population</title>
+<p>We included all patients registered with a general practice in England using EMIS or TPP software on May 25th 2021 and identified as belonging to a vaccine priority group (<xref ref-type="boxed-text" rid="box1">box 1</xref>). We additionally excluded patients with unknown date of birth (i.e. age &#x003E;120), or with unknown sex.</p>
+</sec>
+<sec id="s2c">
+<title>Data Source</title>
+<p>Primary care records managed by the GP software providers EMIS and TPP were accessed through OpenSAFELY, an open source data analytics platform created by our team on behalf of NHS England to address urgent COVID-19 research questions (<ext-link ext-link-type="uri" xlink:href="http://opensafely.org">https://opensafely.org</ext-link>). OpenSAFELY provides a secure software interface allowing a federated analysis of pseudonymized primary care patient records from England in near real-time within the EMIS and TPP highly secure data environments. Non-disclosive, aggregated results are exported to GitHub where further data processing and analysis takes place. This avoids the need for large volumes of potentially disclosive pseudonymised patient data to be transferred off-site. This, in addition to other technical and organisational controls, minimizes any risk of re-identification. The dataset available to the platform includes pseudonymised data such as coded diagnoses, medications and physiological parameters. No free text data are included. All activity on the platform is publicly logged and all analytic code and supporting clinical coding lists are automatically published. In addition, the framework provides assurance that the analysis is reproducible and reusable. Further details on our information governance and platform can be found below under <underline>information governance and ethics</underline>.</p>
+</sec>
+<sec id="s2d">
+<title>COVID-19 vaccine status</title>
+<p>Vaccine administration details are recorded in the National Immunisation Management Service (NIMS) and electronically transmitted to every individual&#x2019;s GP record on a daily basis. We ascertained which patients had any recorded COVID-19 vaccine administration code in their primary care record. We also captured other clinical codes for a COVID-19 vaccination which may have been entered outside of the usual system (Table S1). Patients were considered to be vaccinated if any COVID-19 vaccination record or code was present, irrespective of the number of doses received.</p>
+</sec>
+<sec id="s2e">
+<title>Vaccines declines and other reasons for not being vaccinated</title>
+<p>In March 2021, NHS Digital published a news article listing COVID-19 vaccination codes (<xref ref-type="bibr" rid="c11">NHS Digital 2021</xref>). From this document we identified all codes indicative of declining a COVID-19 vaccine as those containing the word &#x201C;Declined&#x201D; in the description (Table S2a). Additionally we included three further codes fitting this pattern, either reported in the national COVID-19 Vaccination Uptake Reporting Specification (<xref ref-type="bibr" rid="c4">&#x201C;COVID-19 Vaccination Uptake Reporting Specification&#x201D; n.d.</xref>), or inactive codes. Patients were assigned to the Declined group if they had any code for a COVID-19 vaccination being Declined, irrespective of their vaccination status. We describe subsets of the Declined group as: those who had already had a vaccination (Declined Post-vaccination); those who later received their first dose (Declined Then Received); and those with no recorded vaccination (Remaining Declined). In patients with no recorded vaccination or Declined code we looked for any other records indicating an attempt or intention to be vaccinated, e.g. a contraindication or &#x201C;did not attend&#x201D;, Table S2b) and assigned these patients to the &#x201C;Contraindicated/Unsuccessful&#x201D; group. All other unvaccinated patients were assigned to the &#x201C;No Records&#x201D; group.</p>
+</sec>
+<sec id="s2f">
+<title>Priority groups for vaccination</title>
+<p>We classified patients into priority groups (<xref ref-type="boxed-text" rid="box1">box 1</xref>) using SNOMED-CT codelists and logic defined in the national <italic>COVID-19 Vaccination Uptake Reporting Specification</italic> developed by PRIMIS v1.1 (<xref ref-type="bibr" rid="c4">&#x201C;COVID-19 Vaccination Uptake Reporting Specification&#x201D; n.d.</xref>). However, in order to report age groups and clinical groups separately, here we combine the 70-74 and 75-79 cohorts together as group 3, leaving the CEV cohort separate as group 4; we also limited the care home population to those aged 65&#x002B; (<xref ref-type="boxed-text" rid="box1">box 1</xref>). We did not assess eligibility as defined by occupation, i.e. health and care staff for the relevant priority groups (1 and 2) because this information is largely missing or unreliable in GP records. These patients would be classified into a lower priority group where applicable (e.g. by clinical risk or age) and are otherwise excluded. Each patient was assigned only to their highest priority group and not included again as part of any other priority group. In line with the national reporting specification, age was calculated as at 31 March 2021 while other criteria were ascertained using the latest available data at the time of analysis.</p>
+<boxed-text id="box1">
+<label>Box 1</label>
+<p><bold>Priority groups for vaccination advised by the Joint Committee on Vaccination and Immunisation (JCVI)</bold>(<xref ref-type="bibr" rid="c15">Public Health England 2020</xref>), and the priority groups used in this report. The final column indicates how priority groups are combined into three larger groups where this was necessary for data presentation. Although pregnant women were not included in the CEV or At Risk groups on the basis of their pregnancy, some pregnant women will be included in these groups based on other criteria.</p>
+<table-wrap id="utbl1" orientation="portrait" position="float">
+<graphic xlink:href="21259863v1_utbl1.tif"/>
+<graphic xlink:href="21259863v1_utbl1a.tif"/>
+</table-wrap>
+</boxed-text>
+</sec>
+<sec id="s2g">
+<title>Key demographic and clinical characteristics</title>
+<p>We extracted all patient demographics defined by the national reporting specification (for example, ethnicity). We made a small modification to the pregnancy flag, restricting this to females aged under 50, to avoid including any codes incorrectly recorded against males and post-menopausal women. We also extracted demographics not defined by the specification, including the Index of Multiple Deprivation (IMD; 2019 values), derived from patient postcodes at Lower Super Output Area level, grouped into quintiles.</p>
+</sec>
+<sec id="s2h">
+<title>Codelists and implementation</title>
+<p>Information on all characteristics were obtained from primary care records by searching TPP SystmOne and EMIS records for specific coded data. EMIS and TPP SystmOne are fully compliant with the mandated NHS standard of SNOMED-CT clinical terminology. Medicines are entered or prescribed in a format compliant with the NHS Dictionary of Medicines and Devices (dm&#x002B;d) (<xref ref-type="bibr" rid="c10">MacKenna 2019</xref>). Codelists and logic for most features in the national reporting specification were automatically converted to software (<ext-link ext-link-type="uri" xlink:href="http://codelists.opensafely.org/codelist/primis-covid19-vacc-uptake/">https://codelists.opensafely.org/codelist/primis-covid19-vacc-uptake/</ext-link>).</p>
+</sec>
+<sec id="s2i">
+<title>Missing data</title>
+<p>Patients with missing ethnicity or IMD information are included as &#x201C;Unknown&#x201D;. A very small number of patients&#x2019; vaccinations (0.0012%) or declines (0.051%) were dated before the start of the vaccination campaign or lacked a date altogether; accuracy was prioritised in determining whether a decline was recorded prior to a vaccination, so these patients where the precise sequence could not be determined were counted in the &#x201C;declined post-vaccination&#x201D; group. Codes specifically relating to vaccine allergy or contraindications could not be retrieved from the EMIS system, so a small number of affected patients will be counted in the unvaccinated &#x201C;No records&#x201D; group.</p>
+</sec>
+<sec id="s2j">
+<title>Study Measures</title>
+<p>We calculated the daily cumulative number and rate of COVID-19 vaccinations, coded vaccine declines, those with contraindications/unsuccessful vaccinations and those with no records related to vaccination, for each priority group. We also measured how many people were vaccinated after previously being recorded to have declined, and the time between these records (0-&#x003C;2 weeks, 2-&#x003C;4 weeks, 1-&#x003C;2 months, &#x2265; months). We present time trends, bar charts and brief descriptive statistics. We assess the rate of declines recorded at practice level per thousand patients, excluding practices with 250 or fewer registered patients in priority groups and those with less than 10 vaccinated patients, and present this as a histogram and heatmap. Patient counts were rounded to the nearest seven and values under 7 suppressed prior to release from each EHR system; practice counts of 1-3 were shown as 2.</p>
+</sec>
+<sec id="s2k">
+<title>Software and Reproducibility</title>
+<p>Data management and analysis was performed using the OpenSAFELY software libraries and Python, both implemented using Python 3. This analysis was delivered using federated analysis through the OpenSAFELY platform: codelists and code for data management and data analysis were specified once using the OpenSAFELY tools; then transmitted securely to the OpenSAFELY-TPP platform within TPP&#x2019;s secure environment, and separately to the OpenSAFELY-EMIS platform within EMIS&#x2019;s secure environment, where they were each executed separately against local patient data; summary results were then reviewed for disclosiveness, released, and combined for the final outputs. All code for the OpenSAFELY platform for data management, analysis and secure code execution is shared for review and re-use under open licenses at <ext-link ext-link-type="uri" xlink:href="http://GitHub.com/OpenSAFELY">GitHub.com/OpenSAFELY</ext-link>. All code for data management and analysis for this paper is shared for scientific review and re-use under open licenses on GitHub (<ext-link ext-link-type="uri" xlink:href="http://github.com/opensafely/covid-vaccine-not-received">https://github.com/opensafely/covid-vaccine-not-received</ext-link>).</p>
+</sec>
+<sec id="s2l">
+<title>Patient and Public Involvement</title>
+<p>Patients were not formally involved in developing this specific exploratory study that was produced rapidly in the context of the rapid vaccine rollout during a global health emergency. We have developed a publicly available website <ext-link ext-link-type="uri" xlink:href="http://opensafely.org/">https://opensafely.org/</ext-link> through which we invite any patient or member of the public to contact us regarding this study or the broader OpenSAFELY project.</p>
+</sec>
+</sec>
+<sec id="s3">
+<title>Results</title>
+<p>Of 57.9 million patients in total, 24.5 million were identified as being in priority groups, of whom 21.8 million (89.2%) had received at least one COVID-19 vaccine by 25th May 2021 (<xref rid="tbl1" ref-type="table">Table 1</xref>). Some 663,033 (2.7%) were recorded with a code suggestive of declining a vaccine, 125,587 (18.9%) of whom were later vaccinated, while 8.1% had already had a vaccination (<xref rid="tbl1" ref-type="table">Table 1</xref>). Thus, 483,791 (2.0%) of people in priority groups have been recorded as declining and remain unvaccinated. Only 15,015 patients (0.1%) had no vaccine or decline recorded but had a recorded contraindication or unsuccessful vaccination (e.g. did not attend appointment), while a further 8.8% had no records of vaccination, decline, contraindication or other vaccine-related codes.</p>
+<table-wrap id="tbl1" orientation="portrait" position="float">
+<label>Table 1.</label>
+<caption><title>Summary of COVID-19 vaccination status and declines recorded for patients in OpenSAFELY by priority group as at 25th May 2021.</title></caption>
+<graphic xlink:href="21259863v1_tbl1.tif"/>
+</table-wrap>
+<sec id="s3a">
+<title>Individual priority groups</title>
+<p>The total rate of declines being recorded was highest in the CEV group at 4.4%, followed by 80&#x002B; (3.4%), and At Risk (3.0%) (<xref rid="tbl1" ref-type="table">Table 1</xref>). Removing those who were vaccinated, CEV remained the highest with 3.3% recorded as declining (&#x2212;1.1% absolute reduction), with 80&#x002B; reducing to 2.1% (&#x2212;1.3%), with a smaller reduction for the At Risk group to 2.4% (&#x2212;0.6%) (<xref rid="fig1" ref-type="fig">Figure 1</xref>&#x2013;<xref rid="fig2" ref-type="fig">2</xref>, Table S1). Within the CEV/At Risk groups there was a strong correlation with age group, and comparing each five-year age band with other priority groups, the percentage of people recorded as declining was still higher in the CEV/At Risk group, e.g. 1.88% vs 1.56% for ages 60-64 (Table S3); however, the percentage vaccinated in each age band was also higher. Patients recorded as declining a COVID-19 vaccination accounted for approximately half of those currently unvaccinated amongst the 80&#x002B; group, and more than one third in the other three top eligibility groups (Care Home, 70-79 and CEV; <xref rid="fig1" ref-type="fig">Figure 1</xref>, <xref rid="tbl1" ref-type="table">Table 1</xref>).</p>
+<fig id="fig1" position="float" fig-type="figure">
+<label>Figure 1.</label>
+<caption><title>Recorded vaccination status of patients in OpenSAFELY up to May 25th 2021.</title>
+<p>(a) Cumulative percentage of patients in each priority group recorded as declining a COVID-19 vaccination and remaining unvaccinated. (b) Recorded COVID-19 vaccination status for patients by priority group. &#x201C;Declined&#x201D; excludes patients with a recorded vaccination. &#x201C;Vaccinated&#x201D; includes those previously recorded as declining.</p></caption>
+<graphic xlink:href="21259863v1_fig1.tif"/>
+</fig>
+</sec>
+<sec id="s3b">
+<title>Variation by demographic factors</title>
+<p>The percentage of those in each ethnic group who had a decline recorded and are unvaccinated, split by individual priority group, is shown in <xref rid="fig2" ref-type="fig">figure 2a</xref>, with time trends in figure S1 by combined priority groups (65&#x002B;, CEV/At Risk, 50-64). The percentage of the White population who were recorded as declining (and unvaccinated) was similar across each priority group (1.3%-1.5%), except for CEV and At Risk groups which were slightly higher at 2.7% and 2.3% respectively (<xref rid="fig2" ref-type="fig">figure 2a</xref>); the variation in most other ethnic groups was more marked, especially in the Black population. The highest rate within the Black population was 15.3% (aged 80&#x002B;), more than ten times greater than the White 80&#x002B; population (1.5%), while the lowest rate was 3.2% (aged 50-54), higher than any of the groups in the White population. The percentage in the South Asian population was generally lower than other non-White groups, ranging from 1.4% (aged 50-54) to 5.6% (aged 80&#x002B;) (<xref rid="fig2" ref-type="fig">figure 2a</xref>). Time trends charts show that these differences have been consistent but increasing over time (figure S1a-c). There was also a much larger proportion of people in each ethnic minority group with no records of vaccination with no reason recorded compared to the White population (<xref rid="fig3" ref-type="fig">figure 3</xref>, table S4).</p>
+<fig id="fig2" position="float" fig-type="figure">
+<label>Figure 2.</label>
+<caption><title>Percentage of those in each (a) ethnic group and (b) IMD band who had a decline recorded and are unvaccinated in OpenSAFELY as at 25th May 2021, split by by priority group.</title></caption>
+<graphic xlink:href="21259863v1_fig2.tif"/>
+<graphic xlink:href="21259863v1_fig2a.tif"/>
+</fig>
+<fig id="fig3" position="float" fig-type="figure">
+<label>Figure 3.</label>
+<caption><title>COVID-19 vaccination status recorded for patients in OpenSAFELY as at 25th May 2021 for combined priority groups 65&#x002B;, CEV / At Risk, and 50-64, split by broad ethnic groups.</title>
+<p>&#x201C;Declined&#x201D; excludes patients with a recorded vaccination. &#x201C;Vaccinated&#x201D; includes those previously recorded as declining.</p></caption>
+<graphic xlink:href="21259863v1_fig3.tif"/>
+<graphic xlink:href="21259863v1_fig3a.tif"/>
+</fig>
+<p>There was a clear trend towards increased recording of declines with increasing deprivation (least deprived quintile 0.9-1.5%, most deprived 2.4-4.4% excluding care homes; <xref rid="fig2" ref-type="fig">figure 2b</xref>). This was also consistently increasing over time (figure S1d-f). Presence of a Severe Mental Health condition was associated with lower vaccination rates and more declines being recorded, and a similar but less divergent pattern was seen in those with a Learning Disability (table S3a,b). Among all those with a recent pregnancy (only applicable in the CEV/At Risk group), vaccination rates were much lower compared with others of childbearing age (37.95% CEV/At Risk vs 67.06% and 72.56% for ages 16-29 and 30-39 respectively), more declines were recorded (5.94% vs 4.22% and 3.74%), and more had no vaccine-related records (55.65% vs 28.57% and 23.55% (table S3b).</p>
+</sec>
+<sec id="s3c">
+<title>Patients who were recorded as declining and later had a vaccination</title>
+<p>Of all those in priority groups who have had a decline recorded at any point, 18.9% later received a vaccination (<xref rid="tbl1" ref-type="table">Table 1</xref>). This conversion rate from &#x201C;declined&#x201D; to vaccinated ranged from 13.1% in the At Risk group to 30.7% in the 80&#x002B; group (<xref rid="fig4" ref-type="fig">figure 4a</xref>). This pattern was broadly similar in each ethnic group, but with the South Asian population generally higher, having the highest conversion rate in all but two priority groups (<xref rid="fig4" ref-type="fig">figure 4b</xref>). Among combined cohorts 65&#x002B;, CEV/At risk, and 50-64, the conversion rates in the South Asian group were 32.3%, 25.2%, and 19.3% respectively, vs 22.8%,15.5%,and 16.8% for all other ethnicities combined. The time delay between the recorded decline and the first dose being received was primarily 0-2 weeks in the younger groups (aged 50-64), in contrast to the older groups which had a wider range of time delays.</p>
+<fig id="fig4" position="float" fig-type="figure">
+<label>Figure 4.</label>
+<caption><title>Patients in each priority group who were later vaccinated, after previously being recorded as declining a COVID-19 vaccine.</title>
+<p>(a) Percentage of those in each priority group who were later vaccinated; (b) Percentage of those in each priority group who were later vaccinated by ethnicity and priority group; (c) Number of patients in each priority group who were later vaccinated, by length of time between the recorded decline and the vaccination (labels show percentages). The youngest eligible group (50-54) was eligible for only one month at the time of analysis, though some healthcare workers counted in this group will have been eligible much longer.</p></caption>
+<graphic xlink:href="21259863v1_fig4.tif"/>
+<graphic xlink:href="21259863v1_fig4a.tif"/>
+</fig>
+</sec>
+<sec id="s3d">
+<title>Variation by practice</title>
+<p>Almost all practices (98.8%) had at least one patient recorded as declining the vaccine (6,290/6,364, limited to practices with &#x003E;250 patients in priority groups and &#x003E;10 vaccinated patients). There was a broad spread of rates per practice, with just over half of practices having &#x003C;15 patients recorded as declining per 1000 registered patients, and most (90%) having 50 or fewer (<xref rid="fig5" ref-type="fig">Figure 5a</xref>). The majority of practices (90%) had 60 or fewer declines recorded per 1000 vaccinated patients (<xref rid="fig5" ref-type="fig">Figure 5b</xref>). However, there was a long tail with some practices having 300 or more recorded declines per 1000 vaccinated patients. Plotting against the number of priority group patients per practice indicates no strong correlation with practice size, though smaller practices were slightly more likely to have higher rates of declines recorded (Figure S2).</p>
+<fig id="fig5" position="float" fig-type="figure">
+<label>Figure 5.</label>
+<caption><title>Histograms showing variation in the number of patients in priority groups per practice recorded as declining a COVID-19 vaccination (a) per 1000 patients in priority groups, and (b) per 1000 vaccinated patients in priority groups, as at 25th May 2021.</title>
+<p>Only includes unvaccinated patients. Practices with 250 or fewer registered patients in priority groups and those with 10 or fewer vaccinated patients were excluded.</p></caption>
+<graphic xlink:href="21259863v1_fig5.tif"/>
+</fig>
+</sec>
+</sec>
+<sec id="s4">
+<title>Discussion</title>
+<sec id="s4a">
+<title>Summary</title>
+<p>Overall, of currently registered people in priority groups almost half a million (2.0%) have been recorded as declining and remain unvaccinated, while 8.8% were unvaccinated without a recorded reason. Recorded declines were most common in the Clinically Extremely Vulnerable (CEV) group. Patients from ethnic minority groups and more deprived areas had higher rates of vaccine decline codes. Codes for declining COVID-19 vaccines were present in almost all practices, but there was substantial variation in rates. Of all those in priority groups who had a decline recorded at any point, 18.9% were later vaccinated.</p>
+</sec>
+<sec id="s4b">
+<title>Strengths and weaknesses</title>
+<p>The key strength of this study is its unprecedented scale: our source population includes 57.9 million people, over 95% of the population in England. This was achieved by developing and deploying data management and data analysis software inside the EHR vendors&#x2019; infrastructure, where the patient data already resides. Another key strength is that we identified patients in JCVI priority groups by directly implementing the full official SNOMED-CT codelists and logic for the national PRIMIS COVID-19 Vaccination Uptake Reporting Specification, thus ensuring that our cohorts are perfectly in line with national procedures and GP expectations.</p>
+<p>We recognise some limitations with our analysis. Our population, though extremely large, may not be fully representative of the full eligible population: it does not include individuals not registered with a general practice, or the 4% of patients registered at practices not using TPP or EMIS. We include only currently registered and living patients, and exclude those who have moved away or died during the vaccination campaign. Primary care records, whilst detailed and longitudinal, cannot be used to determine vaccine eligibility through reasons of employment, and as such our priority groups which include working-age people will have a subset who were offered the vaccination earlier than others. As there is no national guidance on the use of decline codes it is likely that there is variation in how these codes are being used in practice. The rate of declines being recorded in each priority group is likely to be influenced by the length of time each has been eligible for the vaccine, and the number of times practices have attempted to contact them, highlighting the need for ongoing monitoring of this issue: for example the 80&#x002B; group were invited from the start of the campaign in December 2020, while the 50-54 group were invited from mid-March 2021 (<xref rid="c11" ref-type="bibr">NHS website 2021</xref>). It is not possible to determine whether those with no vaccine-related records are effectively declining by not responding to the invitations, are intending to be vaccinated later, or have failed to be reached (e.g. outdated/incorrect contact details or have left the country). It is possible that some have not been approached at all, although all patients in priority groups had reportedly been offered the vaccine just over one month prior to our latest data (<xref ref-type="bibr" rid="c13">NHS England 2021</xref>), therefore this should be largely restricted to those without valid contact details. Data flow from mass vaccination centres is thought to be largely complete, but some vaccination records may have been missed, for example vaccines delivered in inpatient settings; this may disproportionately affect the CEV and At Risk groups, for example those with kidney disease (Kidney Care UK 2021). Finally, some patients with another code, e.g. &#x201C;did not attend&#x201D; (DNA), may also be declining but not been recorded as such. DNAs are likely to be vastly underrepresented in our data as data flowing from mass vaccination centres only includes successful vaccinations, therefore DNAs will only be recorded for appointments booked in surgeries.</p>
+</sec>
+<sec id="s4c">
+<title>Findings in Context</title>
+<p>Among priority groups, the proportion of people recorded as declining and being unvaccinated was highest in the CEV and At Risk groups, even when comparing individual 5-year age bands. In a 2020 survey, CEV (shielding) status was associated with lower self-reported COVID-19 vaccine hesitancy (<xref ref-type="bibr" rid="c2">Batty, Deary, and Altschul 2021</xref>). However, we also found the percentage who were vaccinated was higher in the CEV/At Risk groups compared to others of the same age. Therefore, a likely explanation for our finding is that those at increased risk due to their clinical conditions were sent more follow-up invitations, giving a greater opportunity for a vaccine to be administered or a decline to be recorded.</p>
+<p>Our finding of higher rates of declines being recorded in Black and South Asian groups is generally consistent with survey data on intention to accept the COVID-19 vaccine (<xref ref-type="bibr" rid="c14">Parveen, Mohdin, and McIntyre 2021</xref>; <xref ref-type="bibr" rid="c17">Robinson, Jones, and Daly 2020</xref>; <xref ref-type="bibr" rid="c1">Allington et al. 2021</xref>; <xref ref-type="bibr" rid="c18">Royal Society of Public Health 2020</xref>; <xref ref-type="bibr" rid="c16">Robertson et al. 2021</xref>), and with previous research on variation in vaccine coverage in other vaccination campaigns historically (<xref ref-type="bibr" rid="c21">Ward et al. 2017</xref>; <xref ref-type="bibr" rid="c9">Loiacono et al. 2020</xref>; <xref ref-type="bibr" rid="c8">Jain et al. 2018</xref>).</p>
+<p>We found that 18.9% of those initially recorded as declining were later vaccinated. As well as those who genuinely changed their mind, this will include some who always intended to be vaccinated, such as those who temporarily declined (eg. due to illness), rejected a repeated invitation after already booking a vaccine, or had a decline recorded in error or for administrative reasons. It may also reflect changing preferences over time: a recent survey indicated that 52% of those reporting they would definitely not have the vaccine in Nov/Dec 2020 have since accepted it when offered (and 15% of those not yet offered were likely to accept) (<xref ref-type="bibr" rid="c1">Allington et al. 2021</xref>), while another survey noted a reduction in hesitancy from 26&#x00B7;9% in October 2020 to 16&#x00B7;9% in Jan/Feb 2021 (<xref ref-type="bibr" rid="c6">Freeman et al. 2021</xref>), indicating substantial shifts in people&#x2019;s preferences as the campaign has progressed. We found the conversion rate was broadly similar across ethnic groups (but slightly higher in the South Asian population).</p>
+</sec>
+<sec id="s4d">
+<title>Policy Implications and further research</title>
+<p>Almost all practices had at least one patient with a declined code, indicating that these codes are widely used. However, there was substantial variation between practices, which could reflect some differences in administrative processes around the application of these codes as well as variation in patient preference in different localities. Due to the speed and scale of the vaccine roll-out, development of SNOMED-CT codes related to COVID-19 vaccines was, understandably, restricted to cover core clinical information about an individual&#x2019;s immunisation that could be shared to inform any subsequent clinical decisions. Unlike other mass vaccination campaigns in England, many of the codes related to a patient&#x2019;s administrative journey, the &#x201C;call and recall&#x201D; system, were not developed (<xref ref-type="bibr" rid="c11">NHS Digital 2021</xref>). Development of further administrative codes specific to the COVID-19 vaccination should be considered to facilitate future &#x201C;booster&#x201D; campaigns. Until then, the limited number of available decline codes will inevitably be used in a broad range of individual patient situations, as such we recommend detailed survey and/or qualitative research with patients and NHS staff should be conducted to provide more descriptive information on how these codes are being used and shed light on the differences between groups. The South Asian group may be a priority group for such research in order to identify the reasons for the high prevalence of a decline code followed by subsequent vaccination.</p>
+</sec>
+<sec id="s4e">
+<title>Summary</title>
+<p>Clinical codes indicative of COVID-19 vaccinations being declined are widely recorded in English general practice, and more common in patients from deprived areas and Black and South Asian groups. The reasons for this require further exploration, we suggest questionnaire and qualitative work, including among those who go on to subsequently receive a vaccine.</p>
+</sec>
+</sec>
+<sec sec-type="supplementary-material">
+<title>Supporting information</title>
+<supplementary-material>
+<label>Supplementary Information</label>
+<media xlink:href="supplements/259863_file02.pdf" />
+</supplementary-material>
+<supplementary-material>
+<label>STROBE checklist</label>
+<media xlink:href="supplements/259863_file03.pdf" />
+</supplementary-material>
+</sec>
+</body>
+<back>
+<sec sec-type="data-availability">
+<title>Data Availability</title>
+<p>Data was accessed through the OpenSAFELY platform, as per Supplementary Materials. Data management and analysis was performed using the OpenSAFELY software libraries and Python, both implemented using Python3. All code for data management and analysis for this paper is shared for scientific review and re-use under open licenses on GitHub (<ext-link ext-link-type="uri" xlink:href="https://github.com/opensafely/covid-vaccination-not-received">https://github.com/opensafely/covid-vaccination-not-received</ext-link>). All codelists are available for inspection and re-use from <ext-link ext-link-type="uri" xlink:href="https://codelists.opensafely.org">https://codelists.opensafely.org</ext-link>. All code for the OpenSAFELY platform for data management, analysis and secure code execution is shared for review and re-use under open licenses at <ext-link ext-link-type="uri" xlink:href="http://GitHub.com/OpenSAFELY">GitHub.com/OpenSAFELY</ext-link>.</p>
+<p>
+<ext-link ext-link-type="uri" xlink:href="https://github.com/opensafely/covid-vaccine-not-received">https://github.com/opensafely/covid-vaccine-not-received</ext-link>
+</p>
+</sec>
+<sec id="s5">
+<title>Administrative</title>
+</sec>
+<ack>
+<title>Acknowledgements</title>
+<p>We are very grateful for all the support received from the EMIS and TPP Technical Operations team throughout this work, and for generous assistance from the information governance and database teams at NHS England / NHSX.</p>
+</ack>
+<sec id="s6">
+<title>Conflicts of Interest</title>
+<p>Authors declare the following: over the past five years BG has received research funding from the Laura and John Arnold Foundation, the NHS National Institute for Health Research (NIHR), the NIHR School of Primary Care Research, the NIHR Oxford Biomedical Research Centre, the Mohn-Westlake Foundation, NIHR Applied Research Collaboration Oxford and Thames Valley, the Wellcome Trust, the Good Thinking Foundation, Health Data Research UK (HDRUK), the Health Foundation, and the World Health Organisation; he also receives personal income from speaking and writing for lay audiences on the misuse of science. KB holds a Sir Henry Dale fellowship jointly funded by Wellcome and the Royal Society (107731/Z/15/Z). HIM is funded by the NIHR Health Protection Research Unit in Immunisation, a partnership between Public Health England and London School of Hygiene &#x0026; Tropical Medicine. AYSW holds a fellowship from the British Heart Foundation. EJW holds grants from MRC. RM holds a Sir Henry Wellcome Fellowship funded by the Wellcome Trust (201375/Z/16/Z). HF holds a UKRI fellowship. IJD has received unrestricted research grants and holds shares in GlaxoSmithKline (GSK).</p>
+</sec>
+<sec id="s7">
+<title>Funding</title>
+<p>This work was jointly funded by UKRI, NIHR and Asthma UK-BLF [COV0076; MR/V015737/] and the Longitudinal Health and Wellbeing strand of the National Core Studies programme. The OpenSAFELY data science platform is funded by the Wellcome Trust. EMIS and TPP provided technical expertise and infrastructure within their data environments <italic>pro bono</italic> in the context of a national emergency.BG&#x2019;s work on clinical informatics is supported by the NIHR Oxford Biomedical Research Centre and the NIHR Applied Research Collaboration Oxford and Thames Valley. Funders had no role in the study design, collection, analysis, and interpretation of data; in the writing of the report; and in the decision to submit the article for publication. The views expressed are those of the authors and not necessarily those of the NIHR, NHS England, Public Health England or the Department of Health and Social Care.</p>
+<p>The views expressed are those of the authors and not necessarily those of the NIHR, NHS England, Public Health England or the Department of Health and Social Care.</p>
+<p>Funders had no role in the study design, collection, analysis, and interpretation of data; in the writing of the report; and in the decision to submit the article for publication.</p>
+</sec>
+<sec id="s8">
+<title>Information governance and ethical approval</title>
+<p>NHS England is the data controller; EMIS and TPP are the data processors; and the key researchers on OpenSAFELY are acting on behalf of NHS England. This implementation of OpenSAFELY is hosted within the EMIS and TPP environments which are accredited to the ISO 27001 information security standard and are NHS IG Toolkit compliant;(<xref ref-type="bibr" rid="c3">&#x201C;BETA &#x2013; Data Security Standards - NHS Digital&#x201D; n.d.</xref>, <xref ref-type="bibr" rid="c5">&#x201C;Data Security and Protection Toolkit - NHS Digital&#x201D; n.d.</xref>) patient data has been pseudonymised for analysis and linkage using industry standard cryptographic hashing techniques; all pseudonymised datasets transmitted for linkage onto OpenSAFELY are encrypted; access to the platform is via a virtual private network (VPN) connection, restricted to a small group of researchers; the researchers hold contracts with NHS England and only access the platform to initiate database queries and statistical models; all database activity is logged; only aggregate statistical outputs leave the platform environment following best practice for anonymisation of results such as statistical disclosure control for low cell counts.(<xref ref-type="bibr" rid="c7">&#x201C;ISB1523: Anonymisation Standard for Publishing Health and Social Care Data - NHS Digital&#x201D; n.d.</xref>) The OpenSAFELY research platform adheres to the obligations of the UK General Data Protection Regulation (GDPR) and the Data Protection Act 2018. In March 2020, the Secretary of State for Health and Social Care used powers under the UK Health Service (Control of Patient Information) Regulations 2002 (COPI) to require organisations to process confidential patient information for the purposes of protecting public health, providing healthcare services to the public and monitoring and managing the COVID-19 outbreak and incidents of exposure; this sets aside the requirement for patient consent.(<xref ref-type="bibr" rid="c19">Secretary of State for Health and Social Care - UK Government 2020</xref>) Taken together, these provide the legal bases to link patient datasets on the OpenSAFELY platform. GP practices, from which the primary care data are obtained, are required to share relevant health information to support the public health response to the pandemic, and have been informed of the OpenSAFELY analytics platform.</p>
+<p>This study was approved by the Health Research Authority (REC reference 20/LO/0651) and by the LSHTM Ethics Board (reference 21863).</p>
+<sec id="s8a">
+<title>Guarantor</title>
+<p>BG/LS are guarantors of the OpenSAFELY project.</p>
+</sec>
+</sec>
+<ref-list>
+<title>References</title>
+<ref id="c1"><mixed-citation publication-type="website"><string-name><surname>Allington</surname>, <given-names>Daniel</given-names></string-name>, <string-name><given-names>Bobby</given-names> <surname>Duffy</surname></string-name>, <string-name><given-names>Vivienne</given-names> <surname>Moxham-Hall</surname></string-name>, <string-name><given-names>Siobhan</given-names> <surname>McAndrew</surname></string-name>, and <string-name><given-names>George</given-names> <surname>Murkin</surname></string-name>. <year>2021</year>. <source>&#x201C;Covid-19: Vaccine Take-up and Trust.&#x201D;</source> <month>June</month> 12, 2021. <ext-link ext-link-type="uri" xlink:href="https://www.kcl.ac.uk/policy-institute/assets/covid-19-vaccine-take-up-and-trust.pdf">https://www.kcl.ac.uk/policy-institute/assets/covid-19-vaccine-take-up-and-trust.pdf</ext-link>.</mixed-citation></ref>
+<ref id="c2"><mixed-citation publication-type="website"><string-name><surname>Batty</surname>, <given-names>G. David</given-names></string-name>, <string-name><given-names>Ian J.</given-names> <surname>Deary</surname></string-name>, and <string-name><given-names>Drew</given-names> <surname>Altschul</surname></string-name>. <year>2021</year>. &#x201C;<article-title>Pre-Pandemic Mental and Physical Health as Predictors of COVID-19 Vaccine Hesitancy: Evidence from a UK-Wide Cohort Study</article-title>.&#x201D; <source>medRxiv : The Preprint Server for Health Sciences, April</source>. <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1101/2021.04.27.21256185">https://doi.org/10.1101/2021.04.27.21256185</ext-link>.</mixed-citation></ref>
+<ref id="c3"><mixed-citation publication-type="website"><collab>&#x201C;BETA &#x2013; Data Security Standards - NHS Digital</collab>.&#x201D; n.d. <source>NHS Digital</source>. Accessed <date-in-citation content-type="access-date">April 30, 2020</date-in-citation>. <ext-link ext-link-type="uri" xlink:href="https://digital.nhs.uk/about-nhs-digital/our-work/nhs-digital-data-and-technology-standards/framework/beta---data-security-standards">https://digital.nhs.uk/about-nhs-digital/our-work/nhs-digital-data-and-technology-standards/framework/beta---data-security-standards</ext-link>.</mixed-citation></ref>
+<ref id="c4"><mixed-citation publication-type="website"><collab>&#x201C;COVID-19 Vaccination Uptake Reporting Specification</collab>.&#x201D; n.d. <source>PRMIS</source>. Accessed <date-in-citation content-type="access-date">March 18, 2021</date-in-citation>. <ext-link ext-link-type="uri" xlink:href="https://www.nottingham.ac.uk/primis/covid-19/covid-19.aspx">https://www.nottingham.ac.uk/primis/covid-19/covid-19.aspx</ext-link>.</mixed-citation></ref>
+<ref id="c5"><mixed-citation publication-type="website"><collab>&#x201C;Data Security and Protection Toolkit - NHS Digital</collab>.&#x201D; n.d. <source>NHS Digital</source>. Accessed <date-in-citation content-type="access-date">April 30, 2020</date-in-citation>. <ext-link ext-link-type="uri" xlink:href="https://digital.nhs.uk/data-and-information/looking-after-information/data-security-and-information-governance/data-security-and-protection-toolkit">https://digital.nhs.uk/data-and-information/looking-after-information/data-security-and-information-governance/data-security-and-protection-toolkit</ext-link>.</mixed-citation></ref>
+<ref id="c6"><mixed-citation publication-type="journal"><string-name><surname>Freeman</surname>, <given-names>Daniel</given-names></string-name>, <string-name><given-names>Bao Sheng</given-names> <surname>Loe</surname></string-name>, <string-name><given-names>Ly-Mee</given-names> <surname>Yu</surname></string-name>, <string-name><given-names>Jason</given-names> <surname>Freeman</surname></string-name>, <string-name><given-names>Andrew</given-names> <surname>Chadwick</surname></string-name>, <string-name><given-names>Cristian</given-names> <surname>Vaccari</surname></string-name>, <string-name><given-names>Milensu</given-names> <surname>Shanyinde</surname></string-name>, <etal>et al.</etal> <year>2021</year>. &#x201C;<article-title>Effects of Different Types of Written Vaccination Information on COVID-19 Vaccine Hesitancy in the UK (OCEANS-III): A Single-Blind, Parallel-Group, Randomised Controlled Trial</article-title>.&#x201D; <source>The Lancet. Public Health</source> <volume>6</volume> (<issue>6</issue>): <fpage>e416</fpage>&#x2013;<lpage>27</lpage>.</mixed-citation></ref>
+<ref id="c7"><mixed-citation publication-type="website"><collab>&#x201C;ISB1523: Anonymisation Standard for Publishing Health and Social Care Data - NHS Digital</collab>.&#x201D; <source>n.d. NHS Digital</source>. Accessed <date-in-citation content-type="access-date">April 30, 2020</date-in-citation>. <ext-link ext-link-type="uri" xlink:href="https://digital.nhs.uk/data-and-information/information-standards/information-standards-and-data-collections-including-extractions/publications-and-notifications/standards-and-collections/isb1523-anonymisation-standard-for-publishing-health-and-social-care-data">https://digital.nhs.uk/data-and-information/information-standards/information-standards-and-data-collections-including-extractions/publications-and-notifications/standards-and-collections/isb1523-anonymisation-standard-for-publishing-health-and-social-care-data</ext-link>.</mixed-citation></ref>
+<ref id="c8"><mixed-citation publication-type="journal"><string-name><surname>Jain</surname>, <given-names>Anu</given-names></string-name>, <string-name><given-names>Jemma L.</given-names> <surname>Walker</surname></string-name>, <string-name><given-names>Rohini</given-names> <surname>Mathur</surname></string-name>, <string-name><given-names>Harriet J.</given-names> <surname>Forbes</surname></string-name>, <string-name><given-names>Sin&#x00E9;ad M.</given-names> <surname>Langan</surname></string-name>, <string-name><given-names>Liam</given-names> <surname>Smeeth</surname></string-name>, <string-name><given-names>Albert J.</given-names> <surname>van Hoek</surname></string-name>, and <string-name><given-names>Sara L.</given-names> <surname>Thomas</surname></string-name>. <year>2018</year>. &#x201C;<article-title>Zoster Vaccination Inequalities: A Population Based Cohort Study Using Linked Data from the UK Clinical Practice Research Datalink</article-title>.&#x201D; <source>PloS One</source> <volume>13</volume> (<issue>11</issue>): <fpage>e0207183</fpage>.</mixed-citation></ref>
+<ref id="c9"><mixed-citation publication-type="journal"><string-name><surname>Loiacono</surname>, <given-names>Matthew M.</given-names></string-name>, <string-name><given-names>Salaheddin M.</given-names> <surname>Mahmud</surname></string-name>, <string-name><given-names>Ayman</given-names> <surname>Chit</surname></string-name>, <string-name><given-names>Robertus</given-names> <surname>van Aalst</surname></string-name>, <string-name><given-names>Jeffrey C.</given-names> <surname>Kwong</surname></string-name>, <string-name><given-names>Nicholas</given-names> <surname>Mitsakakis</surname></string-name>, <string-name><given-names>Luke</given-names> <surname>Skinner</surname></string-name>, <string-name><given-names>Edward</given-names> <surname>Thommes</surname></string-name>, <string-name><given-names>H&#x00E9;l&#x00E8;ne</given-names> <surname>Bricout</surname></string-name>, and <string-name><given-names>Paul</given-names> <surname>Grootendorst</surname></string-name>. <year>2020</year>. &#x201C;<article-title>Patient and Practice Level Factors Associated with Seasonal Influenza Vaccine Uptake among at-Risk Adults in England, 2011 to 2016: An Age-Stratified Retrospective Cohort Study</article-title>.&#x201D; <source>Vaccine: X</source> <volume>4</volume> (<month>April</month>): <fpage>100054</fpage>.</mixed-citation></ref>
+<ref id="c10"><mixed-citation publication-type="website"><string-name><surname>MacKenna</surname>, <given-names>Brian</given-names></string-name>. <year>2019</year>. &#x201C;<article-title>What Is the Dm&#x002B;d? The NHS Dictionary of Medicines and Devices</article-title>.&#x201D; <source>EBM DataLab</source>. <month>August</month> 27, 2019. <ext-link ext-link-type="uri" xlink:href="https://ebmdatalab.net/what-is-the-dmd-the-nhs-dictionary-of-medicines-and-devices/">https://ebmdatalab.net/what-is-the-dmd-the-nhs-dictionary-of-medicines-and-devices/</ext-link>.</mixed-citation></ref>
+<ref id="c11"><mixed-citation publication-type="website"><collab>NHS Digital</collab>. <year>2021</year>. &#x201C;<article-title>Delen: Home : Terminology &#x0026; Classifications News : COVID-19 Vaccination Codes</article-title>.&#x201D; <source>NHS Digital</source>. <month>March</month> 22, 2021. <ext-link ext-link-type="uri" xlink:href="https://hscic.kahootz.com/t_c_home/viewBlogArticle?articleID=655513">https://hscic.kahootz.com/t_c_home/viewBlogArticle?articleID=655513</ext-link>.</mixed-citation></ref>
+<ref id="c12"><mixed-citation publication-type="website"><collab>NHS-England</collab>. <year>2021</year>. <source>&#x201C;COVID-19 Vaccine Programme: Maximising Vaccine Uptake in Underserved Communities.&#x201D;</source> <month>March</month> 2021. <ext-link ext-link-type="uri" xlink:href="https://www.england.nhs.uk/coronavirus/wp-content/uploads/sites/52/2021/03/C1226-maximising-vaccine-uptake-in-underserved-communities-a-framework-.pdf">https://www.england.nhs.uk/coronavirus/wp-content/uploads/sites/52/2021/03/C1226-maximising-vaccine-uptake-in-underserved-communities-a-framework-.pdf</ext-link>.</mixed-citation></ref>
+<ref id="c13"><mixed-citation publication-type="website"><collab>NHS England</collab>. <year>2021</year>. &#x201C;<article-title>Next Phase of NHS COVID-19 Vaccination Campaign</article-title>.&#x201D; <source>April 13, 2021</source>. <ext-link ext-link-type="uri" xlink:href="https://www.england.nhs.uk/coronavirus/wp-content/uploads/sites/52/2021/04/C1252-next-phase-of-nhs-covid-19-vaccination-campaign.pdf">https://www.england.nhs.uk/coronavirus/wp-content/uploads/sites/52/2021/04/C1252-next-phase-of-nhs-covid-19-vaccination-campaign.pdf</ext-link>.</mixed-citation></ref>
+<ref id="c14"><mixed-citation publication-type="website"><string-name><surname>Parveen</surname>, <given-names>Nazia</given-names></string-name>, <string-name><given-names>Aamna</given-names> <surname>Mohdin</surname></string-name>, and <string-name><given-names>Niamh</given-names> <surname>McIntyre</surname></string-name>. <year>2021</year>. &#x201C;<article-title>Call to Prioritise Minority Ethnic Groups for Covid Vaccines</article-title>.&#x201D; <source>The Guardian, January 18, 2021</source>. <ext-link ext-link-type="uri" xlink:href="http://www.theguardian.com/world/2021/jan/18/call-to-prioritise-minority-ethnic-groups-for-covid-vaccines">http://www.theguardian.com/world/2021/jan/18/call-to-prioritise-minority-ethnic-groups-for-covid-vaccines</ext-link>.</mixed-citation></ref>
+<ref id="c15"><mixed-citation publication-type="website"><collab>Public Health England</collab>. <year>2020</year>. &#x201C;<article-title>The Green Book, Chapter 14a - COVID-19</article-title>.&#x201D; <source>GOV.UK. November 27, 2020</source>. <ext-link ext-link-type="uri" xlink:href="https://www.gov.uk/government/publications/covid-19-the-green-book-chapter-14a">https://www.gov.uk/government/publications/covid-19-the-green-book-chapter-14a</ext-link>.</mixed-citation></ref>
+<ref id="c16"><mixed-citation publication-type="journal"><string-name><surname>Robertson</surname>, <given-names>Elaine</given-names></string-name>, <string-name><given-names>Kelly S.</given-names> <surname>Reeve</surname></string-name>, <string-name><given-names>Claire L.</given-names> <surname>Niedzwiedz</surname></string-name>, <string-name><given-names>Jamie</given-names> <surname>Moore</surname></string-name>, <string-name><given-names>Margaret</given-names> <surname>Blake</surname></string-name>, <string-name><given-names>Michael</given-names> <surname>Green</surname></string-name>, <string-name><given-names>Srinivasa Vittal</given-names> <surname>Katikireddi</surname></string-name>, and <string-name><given-names>Michaela J.</given-names> <surname>Benzeval</surname></string-name>. <year>2021</year>. &#x201C;<article-title>Predictors of COVID-19 Vaccine Hesitancy in the UK Household Longitudinal Study</article-title>.&#x201D; <source>Brain, Behavior, and Immunity</source> <volume>94</volume> (<month>May</month>): <fpage>41</fpage>&#x2013;<lpage>50</lpage>.</mixed-citation></ref>
+<ref id="c17"><mixed-citation publication-type="website"><string-name><surname>Robinson</surname>, <given-names>Eric</given-names></string-name>, <string-name><given-names>Andrew</given-names> <surname>Jones</surname></string-name>, and <string-name><given-names>Michael</given-names> <surname>Daly</surname></string-name>. <year>2020</year>. &#x201C;<article-title>International Estimates of Intended Uptake and Refusal of COVID-19 Vaccines: A Rapid Systematic Review and Meta-Analysis of Large Nationally Representative Samples</article-title>.&#x201D; <source>medRxiv</source>. <ext-link ext-link-type="uri" xlink:href="https://www.medrxiv.org/content/10.1101/2020.12.01.20241729v1.abstract">https://www.medrxiv.org/content/10.1101/2020.12.01.20241729v1.abstract</ext-link>.</mixed-citation></ref>
+<ref id="c18"><mixed-citation publication-type="website"><collab>Royal Society of Public Health</collab>. <year>2020</year>. &#x201C;<article-title>New Poll Finds BAME Groups Less Likely to Want COVID Vaccine</article-title>.&#x201D; <source>December 16, 2020</source>. <ext-link ext-link-type="uri" xlink:href="https://www.rsph.org.uk/about-us/news/new-poll-finds-bame-groups-less-likely-to-want-covid-vaccine.html">https://www.rsph.org.uk/about-us/news/new-poll-finds-bame-groups-less-likely-to-want-covid-vaccine.html</ext-link>.</mixed-citation></ref>
+<ref id="c19"><mixed-citation publication-type="website"><collab>Secretary of State for Health and Social Care - UK Government</collab>. <year>2020</year>. &#x201C;<article-title>Coronavirus (COVID-19): Notification to Organisations to Share Information</article-title>.&#x201D; <source>April 1, 2020</source>. <ext-link ext-link-type="uri" xlink:href="https://web.archive.org/web/20200421171727/">https://web.archive.org/web/20200421171727/</ext-link> <ext-link ext-link-type="uri" xlink:href="https://www.gov.uk/government/publications/coronavirus-covid-19-notification-of-data-controllers-to-share-information">https://www.gov.uk/government/publications/coronavirus-covid-19-notification-of-data-controllers-to-share-information</ext-link>.</mixed-citation></ref>
+<ref id="c20"><mixed-citation publication-type="website"><collab>The OpenSAFELY Collaborative</collab>, <string-name><surname>Helen</surname> <given-names>J.</given-names></string-name> <string-name><surname>Curtis</surname>, <given-names>Peter Inglesby</given-names></string-name>, <string-name><surname>Caroline</surname> <given-names>E. Morton</given-names></string-name>, <string-name><surname>Brian MacKenna</surname>, <given-names>Alex J</given-names></string-name>. <string-name><surname>Walker</surname>, <given-names>Jessica Morley</given-names></string-name>, <etal>et al.</etal> <year>2021</year>. &#x201C;<article-title>Trends and Clinical Characteristics of COVID-19 Vaccine Recipients: A Federated Analysis of 57.9 Million Patients&#x2019; Primary Care Records in Situ Using OpenSAFELY</article-title>.&#x201D; <source>bioRxiv. medRxiv</source>. <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1101/2021.01.25.21250356">https://doi.org/10.1101/2021.01.25.21250356</ext-link>.</mixed-citation></ref>
+<ref id="c21"><mixed-citation publication-type="journal"><string-name><surname>Ward</surname>, <given-names>Charlotte</given-names></string-name>, <string-name><given-names>Lisa</given-names> <surname>Byrne</surname></string-name>, <string-name><given-names>Joanne M.</given-names> <surname>White</surname></string-name>, <string-name><given-names>Gayatri</given-names> <surname>Amirthalingam</surname></string-name>, <string-name><given-names>Karen</given-names> <surname>Tiley</surname></string-name>, and <string-name><given-names>Michael</given-names> <surname>Edelstein</surname></string-name>. <year>2017</year>. &#x201C;<article-title>Sociodemographic Predictors of Variation in Coverage of the National Shingles Vaccination Programme in England, 2014/15</article-title>.&#x201D; <source>Vaccine</source> <volume>35</volume> (<issue>18</issue>): <fpage>2372</fpage>&#x2013;<lpage>78</lpage>.</mixed-citation></ref>
+</ref-list>
+</back>
+</article>

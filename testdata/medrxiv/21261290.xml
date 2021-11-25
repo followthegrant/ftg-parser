@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.2d1 20170631//EN" "JATS-archivearticle1.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" article-type="article" dtd-version="1.2d1" specific-use="production" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="publisher-id">MEDRXIV</journal-id>
+<journal-title-group>
+<journal-title>medRxiv</journal-title>
+<abbrev-journal-title abbrev-type="publisher">medRxiv</abbrev-journal-title>
+</journal-title-group>
+<publisher>
+<publisher-name>Cold Spring Harbor Laboratory</publisher-name>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1101/2021.08.09.21261290</article-id>
+<article-version>1.4</article-version>
+<article-categories>
+<subj-group subj-group-type="hwp-journal-coll">
+<subject>Infectious Diseases (except HIV/AIDS)</subject>
+</subj-group>
+</article-categories>
+<title-group>
+<article-title>Immune Correlates Analysis of the mRNA-1273 COVID-19 Vaccine Efficacy Trial</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" corresp="yes">
+<name><surname>Gilbert</surname><given-names>Peter B.</given-names></name>
+<degrees>Ph.D.</degrees>
+<xref ref-type="author-notes" rid="n1">&#x002A;</xref>
+<xref ref-type="corresp" rid="cor1">&#x0023;</xref>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Montefiori</surname><given-names>David C.</given-names></name>
+<degrees>Ph.D.</degrees>
+<xref ref-type="author-notes" rid="n1">&#x002A;</xref>
+<xref ref-type="aff" rid="a4">4</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>McDermott</surname><given-names>Adrian</given-names></name>
+<degrees>Ph.D.</degrees>
+<xref ref-type="author-notes" rid="n1">&#x002A;</xref>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Fong</surname><given-names>Youyi</given-names></name>
+<degrees>Ph.D.</degrees>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-1019-8343</contrib-id>
+<name><surname>Benkeser</surname><given-names>David</given-names></name>
+<degrees>Ph.D.</degrees>
+<xref ref-type="aff" rid="a5">5</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Deng</surname><given-names>Weiping</given-names></name>
+<degrees>Ph.D.</degrees>
+<xref ref-type="aff" rid="a8">8</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Zhou</surname><given-names>Honghong</given-names></name>
+<degrees>Ph.D.</degrees>
+<xref ref-type="aff" rid="a8">8</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Houchens</surname><given-names>Christopher R.</given-names></name>
+<degrees>Ph.D.</degrees>
+<xref ref-type="aff" rid="a6">6</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Martins</surname><given-names>Karen</given-names></name>
+<degrees>Ph.D.</degrees>
+<xref ref-type="aff" rid="a6">6</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Jayashankar</surname><given-names>Lakshmi</given-names></name>
+<degrees>Ph.D.</degrees>
+<xref ref-type="aff" rid="a6">6</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Castellino</surname><given-names>Flora</given-names></name>
+<degrees>M.D.</degrees>
+<xref ref-type="aff" rid="a6">6</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Flach</surname><given-names>Britta</given-names></name>
+<degrees>Ph.D.</degrees>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Lin</surname><given-names>Bob C.</given-names></name>
+<degrees>B.S.</degrees>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>O&#x2019;Connell</surname><given-names>Sarah</given-names></name>
+<degrees>M.S.</degrees>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>McDanal</surname><given-names>Charlene</given-names></name>
+<degrees>B.S.</degrees>
+<xref ref-type="aff" rid="a4">4</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Eaton</surname><given-names>Amanda</given-names></name>
+<degrees>M.B.A.</degrees>
+<xref ref-type="aff" rid="a4">4</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Sarzotti-Kelsoe</surname><given-names>Marcella</given-names></name>
+<degrees>Ph.D.</degrees>
+<xref ref-type="aff" rid="a4">4</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Lu</surname><given-names>Yiwen</given-names></name>
+<degrees>M.S.</degrees>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Yu</surname><given-names>Chenchen</given-names></name>
+<degrees>M.S.</degrees>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Borate</surname><given-names>Bhavesh</given-names></name>
+<degrees>M.B.B.S.</degrees>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>van der Laan</surname><given-names>Lars W. P.</given-names></name>
+<degrees>M.A.</degrees>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Hejazi</surname><given-names>Nima</given-names></name>
+<degrees>M.S.</degrees>
+<xref ref-type="aff" rid="a7">7</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Huynh</surname><given-names>Chuong</given-names></name>
+<degrees>M.S.</degrees>
+<xref ref-type="aff" rid="a6">6</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Miller</surname><given-names>Jacqueline</given-names></name>
+<degrees>M.D.</degrees>
+<xref ref-type="aff" rid="a8">8</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-0489-0074</contrib-id>
+<name><surname>El Sahly</surname><given-names>Hana M.</given-names></name>
+<degrees>M.D.</degrees>
+<xref ref-type="aff" rid="a9">9</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Baden</surname><given-names>Lindsey R.</given-names></name>
+<degrees>M.D.</degrees>
+<xref ref-type="aff" rid="a10">10</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Baron</surname><given-names>Mira</given-names></name>
+<degrees>M.D.</degrees>
+<xref ref-type="aff" rid="a11">11</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>De La Cruz</surname><given-names>Luis</given-names></name>
+<degrees>M.D.</degrees>
+<xref ref-type="aff" rid="a12">12</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Gay</surname><given-names>Cynthia</given-names></name>
+<degrees>M.D.</degrees>
+<xref ref-type="aff" rid="a13">13</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Kalams</surname><given-names>Spyros</given-names></name>
+<degrees>M.D.</degrees>
+<xref ref-type="aff" rid="a14">14</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Kelley</surname><given-names>Colleen F.</given-names></name>
+<degrees>M.D., M.P.H.</degrees>
+<xref ref-type="aff" rid="a15">15</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Kutner</surname><given-names>Mark</given-names></name>
+<degrees>M.D.</degrees>
+<xref ref-type="aff" rid="a16">16</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Andrasik</surname><given-names>Michele P.</given-names></name>
+<degrees>Ph.D.</degrees>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Kublin</surname><given-names>James G.</given-names></name>
+<degrees>M.D.</degrees>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Corey</surname><given-names>Lawrence</given-names></name>
+<degrees>M.D.</degrees>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Neuzil</surname><given-names>Kathleen M.</given-names></name>
+<degrees>M.D.</degrees>
+<xref ref-type="aff" rid="a17">17</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-0333-5925</contrib-id>
+<name><surname>Carpp</surname><given-names>Lindsay N.</given-names></name>
+<degrees>Ph.D.</degrees>
+<xref ref-type="aff" rid="a1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Pajon</surname><given-names>Rolando</given-names></name>
+<degrees>Ph.D.</degrees>
+<xref ref-type="aff" rid="a8">8</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Follmann</surname><given-names>Dean</given-names></name>
+<degrees>Ph.D.</degrees>
+<xref ref-type="aff" rid="a3">3</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Donis</surname><given-names>Ruben O.</given-names></name>
+<degrees>Ph.D.</degrees>
+<xref ref-type="author-notes" rid="n2">&#x00A3;</xref>
+<xref ref-type="aff" rid="a6">6</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Koup</surname><given-names>Richard A.</given-names></name>
+<degrees>M.D.</degrees>
+<xref ref-type="author-notes" rid="n2">&#x00A3;</xref>
+<xref ref-type="aff" rid="a2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<on-behalf-of>on behalf of the Immune Assays; Moderna, Inc.; Coronavirus Vaccine Prevention Network (CoVPN)/Coronavirus Efficacy (COVE); and United States Government (USG)/CoVPN Biostatistics Teams</on-behalf-of>
+<xref ref-type="author-notes" rid="n3">&#x00B6;</xref>
+</contrib>
+<aff id="a1"><label>1</label><institution>The Vaccine and Infectious Disease Division, Fred Hutchinson Cancer Research Center</institution>, Seattle, WA</aff>
+<aff id="a2"><label>2</label><institution>The Vaccine Research Center</institution></aff>
+<aff id="a3"><label>3</label><institution>The Biostatistics Research Branch</institution></aff>
+<aff id="a4"><label>4</label><institution>National Institute of Allergy and Infectious Diseases, National Institutes of Health</institution>, Bethesda, MD; <institution>the Department of Surgery and Duke Human Vaccine Institute, Duke University Medical Center</institution>, Durham, NC</aff>
+<aff id="a5"><label>5</label><institution>The Department of Biostatistics and Bioinformatics, Rollins School of Public Health, Emory University</institution>, Atlanta, GA</aff>
+<aff id="a6"><label>6</label><institution>The Biomedical Advanced Research and Development Authority</institution>, Washington, DC</aff>
+<aff id="a7"><label>7</label><institution>Graduate Group in Biostatistics, University ofBerkeley</institution>, Berkeley, CA</aff>
+<aff id="a8"><label>8</label><institution>Moderna, Inc.</institution>, Cambridge, MA</aff>
+<aff id="a9"><label>9</label><institution>Baylor College of Medicine</institution>, Houston, TX</aff>
+<aff id="a10"><label>10</label><institution>Brigham and Women&#x2019;s Hospital</institution>, Boston, MA</aff>
+<aff id="a11"><label>11</label><institution>Palm Beach Research Center, West Palm Beach</institution>, FL</aff>
+<aff id="a12"><label>12</label><institution>Keystone Vitalink Research</institution>, Greenville, SC</aff>
+<aff id="a13"><label>13</label><institution>University of North Carolina</institution>, Chapel Hill, NC</aff>
+<aff id="a14"><label>14</label><institution>Vanderbilt University Medical Center</institution>, Nashville, TN</aff>
+<aff id="a15"><label>15</label><institution>Division of Infectious Diseases, Department of Medicine, Emory University School of Medicine and the Grady Health System</institution>, Atlanta, GA</aff>
+<aff id="a16"><label>16</label><institution>Suncoast Research Group</institution>, Miami, FL</aff>
+<aff id="a17"><label>17</label><institution>The Center for Vaccine Development and Global Health, University of Maryland School of Medicine</institution>, Baltimore, MD</aff>
+</contrib-group>
+<author-notes>
+<corresp id="cor1"><label>&#x0023;</label> Corresponding author; email: <email>pgilbert@fredhutch.org</email></corresp>
+<fn id="n1" fn-type="equal"><label>&#x002A;</label><p>Drs. Peter B. Gilbert, David C. Montefiori, and Adrian McDermott contributed equally to this work.</p></fn>
+<fn id="n2" fn-type="equal"><label>&#x00A3;</label><p>Drs. Ruben O. Donis and Richard A. Koup contributed equally to this work.</p></fn>
+<fn fn-type="others"><p>Address reprint requests to Dr. Gilbert at the Vaccine and Infectious Disease Division, Fred Hutchinson Cancer Research Center, 1100 Fairview Ave. N., Seattle, WA 98109-9024, <email>pgilbert@fredhutch.org</email>.</p></fn>
+<fn id="n3" fn-type="others"><label>&#x00B6;</label><p>The members of the Immune Assays; Moderna, Inc.; CoVPN/COVE; and USG/CoVPN Biostatistics Teams are listed in the Supplementary Appendix.</p></fn>
+</author-notes>
+<pub-date pub-type="epub">
+<year>2021</year>
+</pub-date>
+<elocation-id>2021.08.09.21261290</elocation-id>
+<history>
+<date date-type="received">
+<day>09</day>
+<month>8</month>
+<year>2021</year>
+</date>
+<date date-type="rev-recd">
+<day>14</day>
+<month>8</month>
+<year>2021</year>
+</date>
+<date date-type="accepted">
+<day>15</day>
+<month>8</month>
+<year>2021</year>
+</date>
+</history>
+<permissions>
+<copyright-statement>&#x00A9; 2021, Posted by Cold Spring Harbor Laboratory</copyright-statement>
+<copyright-year>2021</copyright-year>
+<license license-type="creative-commons" xlink:href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><license-p>This pre-print is available under a Creative Commons License (Attribution-NonCommercial-NoDerivs 4.0 International), CC BY-NC-ND 4.0, as described at <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by-nc-nd/4.0/">http://creativecommons.org/licenses/by-nc-nd/4.0/</ext-link></license-p></license>
+</permissions>
+<self-uri xlink:href="21261290.pdf" content-type="pdf" xlink:role="full-text"/>
+<abstract>
+<title>Abstract</title>
+<sec>
+<title>Background</title>
+<p>In the Coronavirus Efficacy (COVE) trial, estimated mRNA-1273 vaccine efficacy against coronavirus disease-19 (COVID-19) was 94&#x0025;. SARS-CoV-2 antibody measurements were assessed as correlates of COVID-19 risk and as correlates of protection.</p></sec>
+<sec>
+<title>Methods</title>
+<p>Through case-cohort sampling, participants were selected for measurement of four serum antibody markers at Day 1 (first dose), Day 29 (second dose), and Day 57: IgG binding antibodies (bAbs) to Spike, bAbs to Spike receptor-binding domain (RBD), and 50&#x0025; and 80&#x0025; inhibitory dilution pseudovirus neutralizing antibody titers calibrated to the WHO International Standard (cID50 and cID80). Participants with no evidence of previous SARS-CoV-2 infection were included. Cox regression assessed in vaccine recipients the association of each Day 29 or 57 serologic marker with COVID-19 through 126 or 100 days of follow-up, respectively, adjusting for risk factors.</p></sec>
+<sec>
+<title>Results</title>
+<p>Day 57 Spike IgG, RBD IgG, cID50, and cID80 neutralization levels were each inversely correlated with risk of COVID-19: hazard ratios 0.66 (95&#x0025; CI 0.50, 0.88; p=0.005); 0.57 (0.40, 0.82; p=0.002); 0.42 (0.27, 0.65; p&#x003C;0.001); 0.35 (0.20, 0.61; p&#x003C;0.001) per 10-fold increase in marker level, respectively, multiplicity adjusted P-values 0.003-0.010. Results were similar for Day 29 markers (multiplicity adjusted P-values &#x003C;0.001-0.003). For vaccine recipients with Day 57 reciprocal cID50 neutralization titers that were undetectable (&#x003C;2.42), 100, or 1000, respectively, cumulative incidence of COVID-19 through 100 days post Day 57 was 0.030 (0.010, 0.093), 0.0056 (0.0039, 0.0080), and 0.0023 (0.0013, 0.0036). For vaccine recipients at these titer levels, respectively, vaccine efficacy was 50.8&#x0025; (&#x2212;51.2, 83.0&#x0025;), 90.7&#x0025; (86.7, 93.6&#x0025;), and 96.1&#x0025; (94.0, 97.8&#x0025;). Causal mediation analysis estimated that the proportion of vaccine efficacy mediated through Day 29 cID50 titer was 68.5&#x0025; (58.5, 78.4&#x0025;).</p></sec>
+<sec>
+<title>Conclusions</title>
+<p>Binding and neutralizing antibodies correlated with COVID-19 risk and vaccine efficacy and likely have utility in predicting mRNA-1273 vaccine efficacy against COVID-19.</p></sec>
+<sec>
+<title>Trial registration number</title>
+<p>COVE <ext-link ext-link-type="uri" xlink:href="http://ClinicalTrials.gov">ClinicalTrials.gov</ext-link> number, NCT04470427</p></sec>
+</abstract>
+<counts>
+<page-count count="27"/>
+</counts>
+</article-meta>
+<notes>
+<notes notes-type="competing-interest-statement">
+<title>Competing Interest Statement</title><p>All authors have completed the ICMJE uniform disclosure form at http://www.icmje.org/downloads/coi_disclosure.docx and declare: P.B.G., D.C.M., Y.F., C.M., A.E., M.S.-K., Y.L., C.Y., B.B., L.v.d.L., H.M.E.S., L.R.B., M.B., C.F.K., L.C., and L.N.C. had support (in the form of grant payments to their institution) from the National Institutes of Health for the submitted work; R.A.K. had support (in the form of funds to the VRC to cover assay performance) from the National Institutes of Health for the submitted work; M.B., L.D.L.C., and C.F.K. had support (in the form of payments to their institution) from Moderna for the submitted work; W.D., H.Z., J.M., and R.P. are employed by Moderna Tx, Inc. and have stock and/or stock options in Moderna Tx, Inc.; L.R.B. declares support (in the form of grant payments to his institution) within the previous three years from the National Institutes of Health, the Wellcome Trust, and the Bill and Melinda Gates Foundation and has served on NIAID-NIH SMCs within the previous three years; M.B. declares support (in the form of grant payments to her institution) within the previous three years from the National Institutes of Health and the Centers for Disease Control; C.F.K. declares support (in the form of grant payments to her institution) within the previous three years from the National Institutes of Health, the Centers for Disease Control, Humanigen, Novavax, Viiv, and Gilead, as well as payments from Medscape and from Clinical Care Options within the previous three years for educational events; K.M.N. declares support (in the form of grant payments to her institution) within the previous three years from GSK, Pfizer, Bill &#x0026; Melinda Gates Foundation, and PATH for vaccine research, as well as support (in the form of grant payments to her institution) within the previous three years from the National Institutes of Health for influenza vaccine research. All other authors declare no support from any organization for the submitted work; no financial relationships with any organizations that might have an interest in the submitted work in the previous three years, and no other relationships or activities that could appear to have influenced the submitted work.</p></notes>
+<notes notes-type="clinical-trial-statement">
+<title>Clinical Trial</title><p>COVE ClinicalTrials.gov number, NCT04470427</p></notes>
+<notes notes-type="financial-disclosure">
+<title>Funding Statement</title><p>Supported by Public Health Service Grant UM1 AI068635 to the HVTN Statistical Data and Management Center [SDMC], Fred Hutchinson Cancer Research Center [FHCRC] from the National Institute of Allergy and Infectious Diseases (NIAID) and by the Intramural Research Program of the NIAID. This work was also supported by Scientific Computing Infrastructure at Fred Hutch funded by ORIP grant S10OD028685. This project has been funded in whole or in part with Federal funds from the Office of the Assistant Secretary for Preparedness and Response, Biomedical Advanced Research and Development Authority, under Contract No. 75A50120C00034, and Moderna, Inc.</p></notes>
+<notes notes-type="disclosures">
+<title>Author Declarations</title><p>I confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.</p><p>Yes</p><p>The details of the IRB/oversight body that provided approval or exemption for the research described are given below:</p><p>The mRNA-1273-P301 study is being conducted in accordance with the International Council for Harmonisation of Technical Requirements for Pharmaceuticals for Human Use, Good Clinical Practice guidelines, and applicable government regulations. The Central Institutional Review Board approved the mRNA-1273-P301 protocol and the consent forms. All participants provided written informed consent before enrollment. Central IRB services for the mRNA-1273-P301 study were provided by Advarra, Inc., 6100 Merriweather Dr., Suite 600, Columbia, MD 21044.</p><p>All necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived.</p><p>Yes</p><p>I understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).</p><p>Yes</p><p>I have followed all appropriate research reporting guidelines and uploaded the relevant EQUATOR Network research reporting checklist(s) and other pertinent material as supplementary files, if applicable.</p><p>Yes</p></notes>
+<fn-group content-type="summary-of-updates">
+<title>Summary of Updates:</title>
+<fn fn-type="update"><p>- minor revisions to Supplementary Text 1
+- minor revisions to paragraphs 4-6 of the Discussion
+- addition of two authors to the masthead</p></fn>
+</fn-group>
+</notes>
+</front>
+<body>
+<sec id="s1">
+<title>Introduction</title>
+<p>Multiple vaccines have demonstrated efficacy against coronavirus disease-19 (COVID-19) in phase 3 trials<sup><xref ref-type="bibr" rid="c1">1</xref></sup> and have been authorized for emergency use.<sup><xref ref-type="bibr" rid="c2">2</xref>,<xref ref-type="bibr" rid="c3">3</xref></sup> However, the manufacturing challenges posed by the global demand for doses, the need for affordable and widely accessible options that are safe and effective in diverse populations, the lack of efficacy data in important populations (e.g., pediatrics, pregnancy and immunocompromised patients), and the emergence of more transmissible viral variants, highlight the need for a large armamentarium of effective COVID-19 vaccines.<sup><xref ref-type="bibr" rid="c4">4</xref>,<xref ref-type="bibr" rid="c5">5</xref></sup> The identification and validation of a correlate of protection<sup><xref ref-type="bibr" rid="c6">6</xref>-<xref ref-type="bibr" rid="c8">8</xref></sup> could expedite the clinical evaluation and regulatory approval process for existing vaccines for new populations, for vaccine regimen modifications, and for new vaccines.</p>
+<p>The Coronavirus Efficacy (COVE) phase 3 trial of the mRNA-1273 COVID-19 vaccine showed estimated vaccine efficacy against COVID-19 of 94.1&#x0025;,<sup><xref ref-type="bibr" rid="c9">9</xref></sup> leading to the US Food and Drug Administration&#x2019;s Emergency Use Authorization of mRNA-1273 for prevention of COVID-19 in adults,<sup><xref ref-type="bibr" rid="c10">10</xref></sup> and more than 130 million doses have been administered in the United States.<sup><xref ref-type="bibr" rid="c11">11</xref></sup> The mRNA-1273 vaccine has been shown to be highly effective in the elderly and in essential and frontline workers, including healthcare workers,<sup><xref ref-type="bibr" rid="c12">12</xref></sup> and to have non-inferior immunogenicity in adolescents vs. adults.<sup><xref ref-type="bibr" rid="c13">13</xref></sup></p>
+<p>Neutralizing antibodies (nAbs) or binding antibodies (bAbs) have been established as a correlate of protection/surrogate marker for vaccines against many viral diseases.<sup><xref ref-type="bibr" rid="c7">7</xref></sup> The Spike protein<sup><xref ref-type="bibr" rid="c14">14</xref></sup> and its receptor binding domain (RBD)<sup><xref ref-type="bibr" rid="c15">15</xref></sup> are targets for nAbs produced by SARS-CoV-2 infection and by vaccination.<sup><xref ref-type="bibr" rid="c16">16</xref>-<xref ref-type="bibr" rid="c18">18</xref></sup> The hypothesis that antibodies, whether elicited by natural infection or by Spike protein-based vaccines, are a correlate of protection against COVID-19 is supported by diverse lines of evidence,<sup><xref ref-type="bibr" rid="c19">19</xref>-<xref ref-type="bibr" rid="c30">30</xref></sup> including evidence supporting a mechanistic correlate of protection that can be derived from passive transfer of antibodies in experimental challenge studies and from studies of human monoclonal antibodies.<sup><xref ref-type="bibr" rid="c21">21</xref>,<xref ref-type="bibr" rid="c28">28</xref>-<xref ref-type="bibr" rid="c30">30</xref></sup> For the mRNA-1273 vaccine, multiple SARS-CoV-2 antibody markers (IgG bAbs to Spike, IgG bAbs to Spike RBD, 50&#x0025; (ID50) inhibitory dilution nAb titer, and angiotensin-converting enzyme 2 (ACE2)-binding inhibition) each correlated with protection, defined as reduced SARS-CoV-2 replication after challenge, in vaccinated rhesus macaques.<sup><xref ref-type="bibr" rid="c30">30</xref></sup> Here we assessed three of these same SARS-CoV-2 antibody markers (IgG bAbs to Spike, IgG bAbs to Spike RBD, ID50 nAb titer), as well as 80&#x0025; inhibitory dilution (ID80) nAb titer, as correlates of risk of COVID-19 and as correlates of mRNA-1273 vaccine protection against COVID-19 in the COVE trial.</p>
+</sec>
+<sec id="s2">
+<title>Methods</title>
+<sec id="s2a">
+<title>Trial design and COVID-19 endpoint evaluated for correlates</title>
+<p>From July 27, 2020 to October 23, 2020, 30,415 participants were randomized (1:1 ratio) to receive two injections of mRNA-1273 (100 &#x03BC;g) or placebo at Day 1 and at Day 29.<sup><xref ref-type="bibr" rid="c9">9</xref></sup> Correlates were evaluated against the protocol-specified primary endpoint, referred to as &#x201C;COVID-19&#x201D;: first occurrence of acute symptomatic COVID-19 with virologically-confirmed SARS-CoV-2 infection in participants with no evidence of previous SARS-CoV-2 infection.<sup><xref ref-type="bibr" rid="c9">9</xref></sup> Correlates analyses included COVID-19 endpoints diagnosed during two time periods: &#x201C;intercurrent endpoints&#x201D; starting 7 days post Day 29 visit through 6 days post Day 57 visit and &#x201C;post Day 57 endpoints&#x201D; starting 7 days post Day 57 visit and any time during follow-up while participants were still blinded to randomization assignment (Figure S1). The data cutoff date was March 26, 2021.</p>
+</sec>
+<sec id="s2b">
+<title>Laboratory methods</title>
+<p>A solid-phase electrochemiluminescence S-binding IgG immunoassay was developed for simultaneous quantitative detection of IgG antibodies to three distinct SARS-CoV-2 antigens in human serum. This validated assay uses custom plates manufactured by Meso Scale Discovery (Rockville, Maryland) provided as 4-plex, detecting SARS-CoV-2 prefusion stabilized Spike protein (S-2P), RBD, and Nucleocapsid, with a bovine serum albumin control ligand. The Spike and RBD markers were converted to International Units for assessment as immune correlates. Neutralizing antibodies were measured in a formally validated assay as a function of reductions in luciferase reporter gene expression after a single round of infection with SARS-CoV-2.D614G Spike-pseudotyped virus in 293T/ACE2 cells as described.<sup><xref ref-type="bibr" rid="c31">31</xref></sup> ID50 and ID80 nAb titers were calculated based on a dose-response curve and were calibrated to the WHO anti-SARS-CoV-2 immunoglobulin International Standard<sup><xref ref-type="bibr" rid="c32">32</xref>,<xref ref-type="bibr" rid="c33">33</xref></sup> and the resulting calibrated ID50 titer (cID50) and calibrated ID80 titer (cID80) assessed as immune correlates. Supplementary Text 1 and Table S1 provide additional details on both immunoassays.</p>
+</sec>
+<sec id="s2c">
+<title>Statistical methods</title>
+<p>All data analyses were pre-specified in the Statistical Analysis Plan (Supplementary Material), summarized here. A case-cohort sampling design was used for selecting participants for measurement of antibody markers at Day 1, 29, 57,<sup><xref ref-type="bibr" rid="c34">34</xref></sup> comprising a random sample of all participants, stratified by cross-classified randomization arm, baseline SARS-CoV-2 positivity, protocol randomization strata (Age below 65 years At-Risk, Age below 65 years Not At-Risk, Age above 65 years), and underrepresented minority status, and all other participants who acquired an intercurrent or post Day 57 COVID-19 endpoint until database lock. At-Risk comprised six self-reported health/comorbidities.<sup><xref ref-type="bibr" rid="c9">9</xref></sup> Analyses were based on the case-cohort set defined by the subset of selected participants with no evidence of previous SARS-CoV-2 infection and per-protocol received both doses without major protocol violations (Figure S2). Each participant had two inverse probability sampling (IPS) weights calculated, for Day 29 and Day 57 marker correlates analyses. Day 29 and Day 57 marker correlates analyses excluded participants with any evidence of SARS-CoV-2 infection before 7 days post Day 29 and Day 57 visit, respectively, because natural infection before the serology may have modulated the antibody response.</p>
+<p>For each marker, values below the assay limit of detection (LOD) were set to LOD/2, and values above the upper limit of quantitation (ULOQ) were set to ULOQ. Positive responses for Spike IgG and RBD IgG were defined by IgG &#x003E; 10.8424 IU/ml and 14.0858 IU/ml, respectively. Positive responses for cID50 and cID80 were defined by value &#x003E; LOD (LOD = 2.42 and 15.02, respectively). All analyses were done reproducibly based on R scripts hosted at the Github code repository CoVPN/correlates_reporting, which are publicly available with application to a mock COVE trial data set.</p>
+<p>The positive response rate for each marker and analyzed group was estimated by an IPS-weighted average, with 95&#x0025; confidence interval (CI) calculated with an IPS-weighted Clopper-Pearson method. Differences in response rates with 95&#x0025; CIs were calculated by the Wilson-Score method without continuity correction.<sup><xref ref-type="bibr" rid="c35">35</xref></sup> Geometric mean concentration (GMC) or titer (GMT) and their ratios between cases vs. non-cases were estimated with 95&#x0025; CIs, with hypothesis tests, based on the t-distribution with IPS weighting. Reverse cumulative distribution function curves were estimated by IPS-weighted nonparametric maximum likelihood.</p>
+</sec>
+<sec id="s2d">
+<title>Covariate-adjustment</title>
+<p>All correlates analyses adjusted for baseline variables prognostic for COVID-19: At-Risk status, membership in a community of color, and the logit of predicted COVID-19 risk score built from machine learning of placebo arm participants (Supplementary Text 2, Tables S2-S5, Figures S3-S4).</p>
+</sec>
+<sec id="s2e">
+<title>Correlates of risk in vaccine recipients</title>
+<p>Each antibody marker at Day 57 was assessed as a correlate of risk for COVID-19 starting 7 days post Day 57 visit; similarly each Day 29 marker was assessed as a correlate of risk for COVID-19 starting 7 days post Day 29 visit. For each marker, without replacement IPS-weighted Cox regression was applied to estimate the covariate-adjusted hazard ratio of COVID-19 across tertiles of the marker or per 10-fold increase in the quantitative marker level with 95&#x0025; CIs and Wald-based p-values. The Cox model fits were used to estimate marker-conditional cumulative incidence of COVID-19 marginalizing over baseline variables, with 95&#x0025; CIs computed using the bootstrap. The Cox models were fit using the <italic>survey</italic> R package.<sup><xref ref-type="bibr" rid="c36">36</xref></sup> Additional analyses estimated the same quantity with a generalized additive model with degrees of freedom selected by generalized cross-validation,<sup><xref ref-type="bibr" rid="c37">37</xref></sup> and by nonparametric threshold regression.<sup><xref ref-type="bibr" rid="c38">38</xref></sup></p>
+</sec>
+<sec id="s2f">
+<title>Controlled vaccine efficacy and mediation</title>
+<p>Vaccine efficacy by marker level was estimated by a causal inference approach implemented using the IPS-weighted Cox regression described above for the vaccine arm and unweighted Cox regression for the placebo arm, marginalizing over the baseline variables for each randomization arm.<sup><xref ref-type="bibr" rid="c39">39</xref></sup> A sensitivity analysis was conducted to assess robustness of findings to unmeasured confounding of the effect of the antibody marker on COVID-19 (Supplementary Text 3).<sup><xref ref-type="bibr" rid="c39">39</xref></sup> For each antibody marker with at least 10&#x0025; of vaccinated participants with value the same as for placebo recipients (i.e., negative or undetectable), the proportion of vaccine efficacy mediated by the antibody marker was estimated.<sup><xref ref-type="bibr" rid="c40">40</xref></sup></p>
+</sec>
+<sec id="s2g">
+<title>Hypothesis testing</title>
+<p>All p-values were two-sided. For each set of hypothesis tests for Day 29 and Day 57 marker correlates of risk &#x2212; which included eight Cox model Wald-tests for correlates of risk including both tertiles of markers and quantitative markers &#x2212; Westfall-Young multiplicity adjustment<sup><xref ref-type="bibr" rid="c41">41</xref></sup> was applied to obtain q-values and family-wise error rate p-values.</p>
+</sec>
+<sec id="s2h">
+<title>Software and data quality assurance</title>
+<p>The analysis was implemented in R version 4.0.3; the code used for analysis was verified using mock data.</p>
+</sec>
+</sec>
+<sec id="s3">
+<title>Results</title>
+<sec id="s3a">
+<title>Participant demographics</title>
+<p><xref rid="tbl1" ref-type="table">Tables 1</xref>, S6, and S7 summarize the case-cohort set data and demographics (N = 1010 vaccine, N = 137 placebo in the immunogenicity subcohort). Thirty-four percent of case-cohort participants were age 65 or over, 40&#x0025; were At-Risk, 47&#x0025; were female, 32&#x0025; were Hispanic or Latino, 46&#x0025; White and Non-Hispanic, and 54&#x0025; communities of color, with 18&#x0025; Black or African American.</p>
+<table-wrap id="tbl1" orientation="portrait" position="float">
+<label>Table 1:</label>
+<caption><p>Anti-Spike and anti-RBD IgG response rates and Geometric Mean Concentrations (GMCs) and pseudovirus calibrated neutralization titer cID50 and cID80 response rates and Geometric Mean Titers (GMTs) by COVID-19 outcome status. Analysis based on baseline negative per-protocol vaccine recipients in the case-cohort set.</p></caption>
+<graphic xlink:href="21261290v4_tbl1.tif"/>
+</table-wrap>
+</sec>
+<sec id="s3b">
+<title>COVID-19 endpoints</title>
+<p>For Day 57 marker correlates analyses, 47 vaccine recipients had a COVID-19 endpoint. For Day 29 marker correlates analyses, an additional 8 intercurrent COVID-19 endpoints occurred. Overall cumulative incidence from 7 to 126 days post Day 29 was 0.005 in vaccine recipients compared to 0.065 in placebo recipients. Average follow-up of vaccine recipients was 81 days (starting 7 days post Day 57 visit) for Day 57 marker correlates analyses and 109 days (starting 7 days post Day 29 visit) for Day 29 marker correlates analyses.</p>
+</sec>
+<sec id="s3c">
+<title>Antibody marker distributions</title>
+<p>At Day 57, almost 100&#x0025; of vaccine recipients had positive/detectable antibody response by all four markers (<xref rid="tbl1" ref-type="table">Table 1</xref>). This was also true at Day 29 for Spike IgG and RBD IgG, whereas cID50 and cID80 titers were detectable in 82&#x0025; and 64&#x0025; of vaccine recipients, respectively. Each marker was moderately correlated between the Day 29 and Day 57 time points (Spearman rank r = 0.527 to 0.625, Figure S5). Median (interquartile range) days from dose one to Day 29 was 28 (28 to 30) and from Day 29 to Day 57 was 28 (28 to 30). The Spike IgG and RBD IgG markers were tightly correlated (Spearman rank r = 0.942, 0.969 at Day 29, 57; Figures S6, S7), as were the cID50 and cID80 markers (r = 0.968, 0.961 at Day 29, 57; Figures S6, S7). Accordingly, some results only show Spike IgG and cID50 for brevity; results were similar for RBD IgG and cID80 (Supplementary Appendix). Each binding antibody marker was correlated with each neutralization marker at each time point (r = 0.734 to 0.804).</p>
+<p><xref rid="fig1" ref-type="fig">Figures 1</xref> and S8 show the Day 29 and Day 57 marker distributions by case/non-case status in vaccine recipients (Figure S9 shows analogous plots for placebo recipients), with Figures S10 and S11 showing marker values by participant age. For all eight markers the geometric mean was lower in cases, with 95&#x0025; CIs about geometric mean ratios (cases/non-cases) below one (<xref rid="tbl1" ref-type="table">Table 1</xref>). Figures S12 and S13 show reverse cumulative distribution function curves of the eight markers, in the context of the overall vaccine efficacy estimates.<sup><xref ref-type="bibr" rid="c42">42</xref></sup> Figure S14 shows the marker values of vaccine breakthrough cases by timing of COVID-19 endpoint diagnosis.</p>
+<fig id="fig1" position="float" fig-type="figure">
+<label>Figure 1:</label>
+<caption><p>(A) Anti-Spike IgG concentration and (B) pseudovirus neutralization cID50 titer by COVID-19 outcome status. Data points are from baseline negative per-protocol vaccine recipients selected into the case-cohort set. The violin plots contain interior box plots with upper and lower horizontal edges the 25<sup>th</sup> and 75<sup>th</sup> percentiles of antibody level and middle line the 50<sup>th</sup> percentile. Each side shows a rotated probability density (estimated by a kernel density estimator with a default Gaussian kernel) of the data. Positive response rates were computed with inverse probability of sampling weighting. Pos.Cut, Positivity cut-off. LoD, limit of detection. ULoQ, upper limit of quantitation; ULOQ = 10,919 for cID50 (above all data points). Post Day 57 cases are COVID-19 endpoints starting 7 days post Day 57 visit; Intercurrent cases are COVID-19 endpoints starting 7 days post Day 29 visit through 6 days post Day 57 visit. cID50: ID50 nAb titer calibrated to the WHO International Standard.</p></caption>
+<graphic xlink:href="21261290v4_fig1.tif"/>
+</fig>
+</sec>
+<sec id="s3d">
+<title>Correlates of risk</title>
+<p><xref rid="fig2" ref-type="fig">Figure 2</xref> shows COVID-19 cumulative incidence curves for subgroups of vaccine recipients defined by tertile of Day 57 IgG Spike and cID50 (A, B) (results for IgG RBD and cID80 in Figure S15). A dose response was observed for each marker, with estimated hazard ratios for upper vs. lower tertiles between 0.20 and 0.31 and 95&#x0025; CIs and multiplicity-adjusted p-values indicating significant inverse correlations with risk (<xref rid="fig2" ref-type="fig">Figure 2C</xref>). Results were similar for Day 29 markers, with smaller hazard ratios and smaller p-values indicating strengthened evidence for correlates of risk (Figures S16, S17).</p>
+<fig id="fig2" position="float" fig-type="figure">
+<label>Figure 2.</label>
+<caption><p>Covariate-adjusted cumulative incidence of COVID-19 by Low, Medium, High tertile of Day 57 IgG concentration or pseudovirus neutralization titer. (A) Anti-Spike IgG concentration; (B) cID50 titer; (C) IgG (Spike, RBD) and (cID50, cID80). The overall p-value is from a generalized Wald test of whether the hazard rate of COVID-19 differed across the Low, Medium, and High subgroups. cID50, cID80: ID50 or ID80 nAb titer calibrated to the WHO International Standard.</p></caption>
+<graphic xlink:href="21261290v4_fig2.tif"/>
+</fig>
+<p>For quantitative Day 57 markers, the estimated hazard ratio per 10-fold increase in marker value ranged between 0.35 and 0.66 (<xref rid="fig3" ref-type="fig">Figure 3A</xref>), with 95&#x0025; CIs below one and multiplicity-adjusted p-values indicating significant associations. Generally, similar results were obtained across pre-specified subgroups of vaccine recipients (<xref rid="fig3" ref-type="fig">Figure 3B</xref> and <xref ref-type="fig" rid="fig3">3C</xref>, Figure S18).</p>
+<fig id="fig3" position="float" fig-type="figure">
+<label>Figure 3.</label>
+<caption><p>Covariate-adjusted hazard ratios of COVID-19 per 10-fold increase in each Day 57 antibody marker in baseline negative per-protocol vaccine recipients overall and in subgroups. (A) Inferences for IgG (Spike, RBD) and (cID50, cID80); (B) Forest plots for Spike IgG; (C) Forest plots for cID50. cID50, cID80: ID50 or ID80 neutralizing antibody titer calibrated to the WHO International Standard. Comm. of color = all participants other than White Non-Hispanic.</p></caption>
+<graphic xlink:href="21261290v4_fig3.tif"/>
+</fig>
+<p>The estimated cumulative incidence of COVID-19 by end of follow-up (100 days post Day 57) for the entire vaccine group was 0.0033 (95&#x0025; CI 0.0022, 0.0045). Based on nonparametric threshold regression this rate decreased across vaccinated subgroups with Day 57 cID50 titer above a given threshold, with estimates of 0.00088 (0.00, 0.0020) at cID50 titer above 500 and zero COVID-19 endpoints at cID50 titer above 1000 (<xref rid="fig4" ref-type="fig">Figure 4A</xref>, <xref rid="fig1" ref-type="fig">Figure 1B</xref>). In contrast, 5&#x0025; of non-cases had cID50 titer above 1000 (<xref rid="fig1" ref-type="fig">Figure 1B</xref>). Based on the Cox model, the COVID-19 rate for vaccine recipients with undetectable Day 57 cID50 titer (value &#x003C; LOD) was 0.030 (0.010, 0.093), and decreased to 0.0056 (0.0039, 0.0080) at titer of 100 and to 0.0023 (0.0013, 0.0036) at titer of 1000 (<xref rid="fig4" ref-type="fig">Figure 4B</xref>). Results using an alternative model (generalized additive) also supported inverse correlates of risk for all markers (Figures S19, S20).</p>
+<fig id="fig4" position="float" fig-type="figure">
+<label>Figure 4.</label>
+<caption><p>(A) Covariate-adjusted cumulative incidence of COVID-19 by 100 days post Day 57 by subgroups defined by Day 57 cID50 level above a threshold, with reverse cumulative distribution function of Day 57 cID50 level overlaid in green. The gray shaded area is pointwise 95&#x0025; confidence intervals (CIs). The upper boundary of the green shaded area is the estimate of the reverse cumulative distribution function (CDF) of the marker in baseline SARS-CoV-2 negative per-protocol vaccine recipients. (B) Covariate-adjusted cumulative incidence of COVID-19 by 100 days post Day 57 by Day 57 cID50 level. The dotted lines indicate bootstrap point-wise 95&#x0025; CIs. (C) Vaccine efficacy by Day 57 cID50 level, estimated using the method of Gilbert, Fong, and Carone.<sup><xref ref-type="bibr" rid="c39">39</xref></sup> The dashed lines indicate bootstrap point-wise 95&#x0025; CIs. In (B) and (C), covariate adjustment was based on an inverse probability sampling-weighted Cox model; the green histograms are an estimate of the density of Day 57 cID50 level in baseline negative per-protocol vaccine recipients. LOD, limit of detection. cID50: ID50 nAb titer calibrated to the WHO International Standard.</p></caption>
+<graphic xlink:href="21261290v4_fig4.tif"/>
+</fig>
+</sec>
+<sec id="s3e">
+<title>Correlates of protection</title>
+<p>Vaccine efficacy estimates (obtained using the method of Gilbert, Fong, and Carone<sup><xref ref-type="bibr" rid="c39">39</xref></sup>) increased with Day 57 cID50 neutralization titer: At undetectable (&#x003C;LOD) Day 57 cID50 titer, vaccine efficacy was 50.8&#x0025; (&#x2212;51.2, 83.0&#x0025;). At Day 57 cID50 titer of 100, vaccine efficacy increased to 90.7&#x0025; (86.7, 93.6&#x0025;), and at Day 57 cID50 titer of 1000, vaccine efficacy further increased to 96.1&#x0025; (94.0, 97.8&#x0025;) (<xref rid="fig4" ref-type="fig">Figure 4C</xref>). Figures S21-S27 show these results for the other seven antibody markers. The sensitivity analysis allowing unmeasured confounding (Figure S28C) yielded estimates of vaccine efficacy of 89.8&#x0025; (68.8, 96.5&#x0025;) at undetectable Day 57 cID50 titer, 94.9&#x0025; (92.6, 96.8&#x0025;) at Day 57 cID50 titer of 500, and 95.8&#x0025; (93.4, 97.6&#x0025;) at Day 57 cID50 titer of 1000 (see Figures S28 and S29 for results for the other seven markers). The sensitivity analysis based on E-values<sup><xref ref-type="bibr" rid="c43">43</xref></sup> of the vaccine recipient tertile subgroups supported the finding that vaccine efficacy was generally higher for the upper tertile subgroup, indicating some robustness to potential unmeasured confounding (Table S8).</p>
+<p>Day 29 cID50 and cID80 titers could be assessed as mediators of VE by the Benkeser et al. method,<sup><xref ref-type="bibr" rid="c40">40</xref></sup> given 18&#x0025; and 36&#x0025; of vaccine recipients had undetectable titer, respectively. An estimated 68.5&#x0025; (58.5, 78.4&#x0025;) of VE was mediated by Day 29 cID50 titer and 48.5&#x0025; (34.5, 62.4&#x0025;) by Day 29 cID80 titer (Table S9).</p>
+</sec>
+</sec>
+<sec id="s4">
+<title>Discussion</title>
+<p>For recipients of two doses of mRNA-1273 in the COVE trial, all four antibody markers at Day 29 and at Day 57 were inverse correlates of risk of COVID-19 occurrence through 3-4 months post second dose. Based on any of the antibody markers, COVID-19 risk was about 10 times lower for vaccine recipients with antibodies in the top 10&#x0025; of values compared to those with negative/undetectable values (the same value as in baseline negative placebo recipients).</p>
+<p>The correlates of protection analyses found that estimated vaccine efficacy against COVID-19 increased with Day 29 and with Day 57 antibody levels, where for the latter estimated vaccine efficacy was about 45-60&#x0025; for vaccine recipients with negative/undetectable binding or neutralizing antibody response (<xref rid="fig4" ref-type="fig">Figure 4C</xref>; Figures S21C, S22C, S23C) and increased to above 98&#x0025; at highest antibody levels. Positive vaccine efficacy for the vaccinated subgroup with negative/undetectable antibody level implies lack of full mediation of vaccine efficacy through the antibody marker,<sup><xref ref-type="bibr" rid="c39">39</xref></sup> and formal causal analysis estimated that 68&#x0025; of the overall vaccine efficacy was mediated through Day 29 cID50 titer. To interpret the mediation result: if neutralizing antibodies circulating on Day 29 could be removed but the other consequences of vaccination remained, overall vaccine efficacy would be expected to change from 92.3&#x0025; to 56&#x0025;, a 68&#x0025; reduction (on the log scale) of overall vaccine efficacy. In comparison, hemagglutination inhibition titer against B/Victoria influenza virus mediated an estimated 57&#x0025; of inactivated influenza vaccine efficacy against virologically confirmed B/Victoria influenza illness.<sup><xref ref-type="bibr" rid="c44">44</xref></sup> As hemagglutination inhibition titer has been used to guide vaccine strain selection and approval, this defines a benchmark for a potential level of mediation relevant for supporting vaccine approval decisions.<sup><xref ref-type="bibr" rid="c45">45</xref></sup> The very high overall vaccine efficacy and the small number of vaccine recipients with negative/undetectable antibody levels in COVE limited the ability to identify a high percentage of neutralization-mediated vaccine efficacy. Similar analyses of trials with lower vaccine efficacy and lower neutralization response rates may be able to detect a greater percentage of vaccine efficacy mediated through neutralizing antibody titers.</p>
+<p>An interpretation also consistent with our results is that neutralization as a biological function did fully mediate the vaccine efficacy in COVE, but the cID50 and cID80 markers had inadequate sensitivity to quantify low-level neutralization below the detection limit that was partially protective. This hypothesis is supported by the finding that passive transfer of purified IgG from mRNA-1273-immunized rhesus macaques was sufficient to protect golden Syrian hamsters from disease after SARS-CoV-2 challenge.<sup><xref ref-type="bibr" rid="c30">30</xref></sup> Yet, it is more likely that additional immune responses are needed to fully explain the observed vaccine efficacy, given that the vaccine provided more than 90&#x0025; efficacy by Day 29,<sup><xref ref-type="bibr" rid="c9">9</xref></sup> 18&#x0025; of vaccine recipients had undetectable neutralization response at Day 29 based on cID50 (<xref rid="fig1" ref-type="fig">Figure 1</xref>, Figure S8), and the vaccine elicited other immune responses by Day 29 in a high proportion of vaccine recipients.<sup><xref ref-type="bibr" rid="c46">46</xref></sup> In addition to markers measuring distinct immunological functions, markers not measured fully in serum (e.g., mucosal markers) and/or anamnestic responses not fully represented by a single time point measurement may be needed to fully explain vaccine efficacy.</p>
+<p>The immune correlates results of the AZD12222 trial<sup><xref ref-type="bibr" rid="c25">25</xref></sup> for Spike IgG and RBD IgG can be quantitatively compared to the COVE results by virtue of the same MSD assay platform, conversion of IgG concentration to WHO International Units/ml, and the same antibody measurement time: 4 weeks post second dose. Estimated ChAdOx1 nCoV-19 vaccine efficacy was 70&#x0025; and 90&#x0025; at Spike IgG levels of 113 (95&#x0025; CI &#x003C; LOD = 0.31, 245) and 899 (369, NC) IU/ml, respectively, and at RBD IgG levels of 165 (&#x003C; LOD = 1.59, 452) and 2360 (723, NC) IU/ml, respectively (NC = not calculated).<sup><xref ref-type="bibr" rid="c25">25</xref></sup> In comparison, estimated mRNA-1273 vaccine efficacy was 70&#x0025; and 90&#x0025; at Day 57 Spike IgG levels of 1 (&#x003C; LOD = 0.31, 170) and 298 (1, 1786) IU/ml, respectively, and at Day 57 RBD IgG levels of 8 (&#x003C; LOD = 1.59, 243) and 775 (29, 2819) IU/ml, respectively. These results are suggestive that lower binding antibody levels in COVE are associated with the same level of vaccine efficacy.</p>
+<p>Pseudovirus neutralization results can also be compared between the trials using calibrated ID50 titers, where estimated ChAdOx1 nCoV-19 vaccine efficacy was 70&#x0025; and 90&#x0025; at cID50 titer of 8 (&#x003C; LOD = 2.42, 26) and 140 (43, NC), compared to COVE results at cID50 titer of 4 (&#x003C; LOD = 2.42, 22) and 83 (16, 188). The neutralization assays employed for AZD12222 and COVE used the D614 and D614G pseudovirus, respectively, such that this comparison is affected by any difference in neutralization sensitivity of these two strains. As a sensitivity analysis, we multiplied the AZD12222 cID50 values by a second conversion factor, 2.19, which scales the values as if D614G had been used in the assay (2.19 was calculated from the validation study that used both strains, Supplementary Text 1). The cID50 titers at 70&#x0025; and 90&#x0025; ChAdOx1 nCoV-19 vaccine efficacy are 18 (&#x003C; LOD = 2.42, 57) and 307 (95, NC), respectively.</p>
+<p>With the caveats of different study endpoints/hosts, the COVE results are also consistent with results on Spike IgG and neutralizing antibody titers as correlates of protection against SARS-CoV-2 replication in mRNA-1273-vaccinated rhesus macaques. For instance, all macaques with Spike IgG &#x003E; 336 IU/ml at 4 weeks post second dose were protected from &#x003E;10,000 subgenomic RNA copies/ml in bronchoalveolar lavages,<sup><xref ref-type="bibr" rid="c30">30</xref></sup> and in COVE, Day 57 Spike IgG of 336 IU/ml corresponded to 90&#x0025; vaccine efficacy against COVID-19 (Figure S22).</p>
+<p>Together with evidence from other studies, the current results support that neutralization titer is a potential surrogate marker for mRNA-1273 vaccination against COVID-19 that can be considered as a primary endpoint for basing certain accelerated approval decisions. The total body of evidence may support an immunogenicity non-inferiority approach to bridging vaccine efficacy of refined or novel mRNA vaccines, which has been proposed for adding vaccine spike variants and boosters.<sup><xref ref-type="bibr" rid="c47">47</xref></sup> One open question challenging this approach is whether titers to different strains have different relationships with vaccine efficacy. A more challenging objective is bridging vaccine efficacy of new candidate vaccines in different platforms from mRNA. When correlates results are available from several phase 3 vaccine efficacy trials of different vaccine platforms, it will be possible to conduct validation analyses of how well an antibody marker can be used to predict vaccine efficacy across platforms.</p>
+<p>We also note that the Day 29 markers correlated with COVID-19 at least as strongly as the Day 57 markers. If a Day 29 immune marker in recipients of two mRNA-1273 doses becomes established as a correlate of protection, it could be a more practical surrogate marker than a Day 57 marker by virtue of being measured earlier and because trials would not need participants to come back for a Day 57 study visit.</p>
+<p>Limitations of this correlates study include the lack of data for assessing correlates against other outcomes besides COVID-19 (e.g., severe COVID-19, asymptomatic SARS-CoV-2 infection, infection regardless of symptomology, viral shedding), the lack of assessment of correlates for recipients of only one mRNA-1273 dose, and the fact that almost all COVID-19 cases resulted from infections with viruses bearing genetically and antigenically similar Spike as compared to the ancestral Spike in the vaccine, implying that it was not possible to assess robustness of correlates to SARS-CoV-2 variants of concern. However, the paucity of divergent circulating virus is also a strength in affording a clear interpretation as correlates against COVID-19 caused by variants genetically close to the vaccine. Another strength is the use of validated assays with all results reported in WHO International Units or calibrated to WHO International Standards, facilitating comparison of results from other studies and vaccine platforms. An additional strength is the racial and ethnic diversity of the trial participants and large number of diverse participants sampled for immunogenicity measurements.<sup><xref ref-type="bibr" rid="c48">48</xref></sup></p>
+<p>This study evaluated antibody markers measured at two specific time points (Day 29, Day 57) as immune correlates against subsequent COVID-19 occurrence over 3-4 months follow-up, but did not assess how the current level of antibody correlated with instantaneous risk of COVID-19. COVE follows participants for 2 years, enabling future analyses of when and how vaccine efficacy wanes as antibody levels wane and as new variants of SARS-CoV-2 emerge, informing decisions about the timing of a booster or the need to update vaccine composition, and potentially clarifying the mediation of protection. Future correlates analyses that study antibody markers over time in relation to the timing of breakthrough infections of variants with variable neutralization sensitivity might further clarify functional mediation of protection.</p>
+<p>In conclusion, the result that all evaluated binding and neutralizing antibody markers strongly inversely correlated with COVID-19 risk, and directly correlated with vaccine efficacy, as well as the result that a substantial proportion of the overall vaccine efficacy was mediated through neutralizing antibody levels, adds evidence toward establishing an immune marker surrogate endpoint for COVID-19 vaccines.</p>
+</sec>
+<sec sec-type="supplementary-material">
+<title>Supporting information</title>
+<supplementary-material>
+<label>Supplementary Appendix</label>
+<media xlink:href="supplements/261290_file02.pdf" />
+</supplementary-material>
+<supplementary-material>
+<label>Statistical Analysis Plan</label>
+<media xlink:href="supplements/261290_file03.pdf" />
+</supplementary-material>
+</sec>
+</body>
+<back>
+<sec sec-type="data-availability">
+<title>Data Availability</title>
+<p>As the trial is ongoing, access to patient-level data and supporting clinical documents with qualified external researchers may be available upon request and subject to review once the trial is complete.</p>
+</sec>
+<sec id="s5">
+<title>Funding</title>
+<p>Supported by Public Health Service Grant UM1 AI068635 to the HVTN Statistical Data and Management Center [SDMC], Fred Hutchinson Cancer Research Center [FHCRC] from the National Institute of Allergy and Infectious Diseases (NIAID) and by the Intramural Research Program of the NIAID. This work was also supported by Scientific Computing Infrastructure at Fred Hutch funded by ORIP grant S10OD028685. This project has been funded in whole or in part with Federal funds from the Office of the Assistant Secretary for Preparedness and Response, Biomedical Advanced Research and Development Authority, under Contract No. 75A50120C00034, and Moderna, Inc.</p>
+</sec>
+<ack>
+<title>Acknowledgments</title>
+<p>We thank the volunteers who participated in the COVE trial. We also thank John Mascola, Matt Hepburn, Robert A. Johnson, Mary Marovich, and Merlin Robb.</p>
+</ack>
+<ref-list>
+<title>References</title>
+<ref id="c1"><label>1.</label><mixed-citation publication-type="website"><collab>Centers for Disease Control and Prevention</collab>. <article-title>COVID-19 Vaccines and Vaccination. CDC COVID-19 Science Briefs</article-title>. <source>National Center for Immunization and Respiratory Diseases (NCIRD), Division of Viral Diseases. Atlanta (GA)</source>. [Updated 2021 May 27]. Available from: <ext-link ext-link-type="uri" xlink:href="https://www.ncbi.nlm.nih.gov/books/NBK570435/">https://www.ncbi.nlm.nih.gov/books/NBK570435/</ext-link>. <year>2021</year>.</mixed-citation></ref>
+<ref id="c2"><label>2.</label><mixed-citation publication-type="website"><collab>McGill COVID19 Vaccine Tracker Team</collab>. <article-title>COVID19 Vaccine Tracker</article-title>. <ext-link ext-link-type="uri" xlink:href="https://covid19.trackvaccines.org/">https://covid19.trackvaccines.org/</ext-link> Access date <date-in-citation content-type="access-date">21 Jun, 2021</date-in-citation>. Last updated 19 Jun, 2021. <year>2021</year>.</mixed-citation></ref>
+<ref id="c3"><label>3.</label><mixed-citation publication-type="journal"><string-name><surname>Creech</surname> <given-names>CB</given-names></string-name>, <string-name><surname>Walker</surname> <given-names>SC</given-names></string-name>, <string-name><surname>Samuels</surname> <given-names>RJ</given-names></string-name>. <article-title>SARS-CoV-2 Vaccines</article-title>. <source>JAMA</source> <year>2021</year>;<volume>325</volume>:<fpage>1318</fpage>&#x2013;<lpage>20</lpage>.</mixed-citation></ref>
+<ref id="c4"><label>4.</label><mixed-citation publication-type="website"><string-name><surname>Weller</surname> <given-names>C.</given-names></string-name> <article-title>Four reasons why we need multiple vaccines for Covid-19</article-title>. <source>Wellcome Opinion</source>. 6 <month>Jun</month> 2021. Access date <date-in-citation content-type="access-date">21 Jun 2021</date-in-citation>. <ext-link ext-link-type="uri" xlink:href="https://wellcome.org/news/four-reasons-why-we-need-multiple-vaccines-covid-19">https://wellcome.org/news/four-reasons-why-we-need-multiple-vaccines-covid-19</ext-link>.</mixed-citation></ref>
+<ref id="c5"><label>5.</label><mixed-citation publication-type="journal"><string-name><surname>Wouters</surname> <given-names>OJ</given-names></string-name>, <string-name><surname>Shadlen</surname> <given-names>KC</given-names></string-name>, <string-name><surname>Salcher-Konrad</surname> <given-names>M</given-names></string-name>, <etal>et al.</etal> <article-title>Challenges in ensuring global access to COVID-19 vaccines: production, affordability, allocation, and deployment</article-title>. <source>Lancet</source> <year>2021</year>;<volume>397</volume>:<fpage>1023</fpage>&#x2013;<lpage>34</lpage>.</mixed-citation></ref>
+<ref id="c6"><label>6.</label><mixed-citation publication-type="journal"><string-name><surname>Plotkin</surname> <given-names>SA</given-names></string-name>, <string-name><surname>Gilbert</surname> <given-names>PB</given-names></string-name>. <article-title>Nomenclature for immune correlates of protection after vaccination</article-title>. <source>Clin Infect Dis</source> <year>2012</year>;<volume>54</volume>:<fpage>1615</fpage>&#x2013;<lpage>7</lpage>.</mixed-citation></ref>
+<ref id="c7"><label>7.</label><mixed-citation publication-type="journal"><string-name><surname>Plotkin</surname> <given-names>SA</given-names></string-name>. <article-title>Correlates of protection induced by vaccination</article-title>. <source>Clin Vaccine Immunol</source> <year>2010</year>;<volume>17</volume>:<fpage>1055</fpage>&#x2013;<lpage>65</lpage>.</mixed-citation></ref>
+<ref id="c8"><label>8.</label><mixed-citation publication-type="book"><string-name><surname>Plotkin</surname> <given-names>SA</given-names></string-name>, <string-name><surname>Orenstein</surname> <given-names>WA</given-names></string-name>, <string-name><surname>Offit</surname> <given-names>PA</given-names></string-name>, <string-name><surname>Edwards</surname> <given-names>KM</given-names></string-name>. <chapter-title>Plotkin&#x2019;s Vaccines</chapter-title>. Seventh Edition. <year>2018</year>; <publisher-name>Elsevier, Inc</publisher-name>. Chapter 3: <source>Correlates of Protection. Stanley A. Plotkin and Peter Gilbert</source>. pp <fpage>35</fpage>&#x2013;<lpage>40</lpage>.</mixed-citation></ref>
+<ref id="c9"><label>9.</label><mixed-citation publication-type="journal"><string-name><surname>Baden</surname> <given-names>LR</given-names></string-name>, <string-name><surname>El Sahly</surname> <given-names>HM</given-names></string-name>, <string-name><surname>Essink</surname> <given-names>B</given-names></string-name>, <etal>et al.</etal> <article-title>Efficacy and Safety of the mRNA-1273 SARS-CoV-2 Vaccine</article-title>. <source>N Engl J Med</source> <year>2021</year>;<volume>384</volume>:<fpage>403</fpage>&#x2013;<lpage>16</lpage>.</mixed-citation></ref>
+<ref id="c10"><label>10.</label><mixed-citation publication-type="website"><collab>US Food and Drug Administration</collab>. <source>Moderna COVID-19 Vaccine</source>. Updated Apr 1, 2021. Access date <date-in-citation content-type="access-date">Jun 21, 2021</date-in-citation>. <ext-link ext-link-type="uri" xlink:href="https://www.fda.gov/emergency-preparedness-and-response/coronavirus-disease-2019-covid-19/moderna-covid-19-vaccine">https://www.fda.gov/emergency-preparedness-and-response/coronavirus-disease-2019-covid-19/moderna-covid-19-vaccine</ext-link>.</mixed-citation></ref>
+<ref id="c11"><label>11.</label><mixed-citation publication-type="website"><collab>Centers for Disease Control and Prevention</collab>. <source>COVID Data Tracker. COVID-19 Vaccinations in the United States</source>. Last updated 20 Jun 2021. Access date <date-in-citation content-type="access-date">21 Jun 2021</date-in-citation>. Available at <ext-link ext-link-type="uri" xlink:href="https://covid.cdc.gov/covid-data-tracker/#vaccinations">https://covid.cdc.gov/covid-data-tracker/#vaccinations</ext-link>.</mixed-citation></ref>
+<ref id="c12"><label>12.</label><mixed-citation publication-type="journal"><string-name><surname>Thompson</surname> <given-names>MG</given-names></string-name>, <string-name><surname>Burgess</surname> <given-names>JL</given-names></string-name>, <string-name><surname>Naleway</surname> <given-names>AL</given-names></string-name>, <etal>et al.</etal> <article-title>Interim Estimates of Vaccine Effectiveness of BNT162b2 and mRNA-1273 COVID-19 Vaccines in Preventing SARS-CoV-2 Infection Among Health Care Personnel, First Responders, and Other Essential and Frontline Workers - Eight U.S. Locations, December 2020-March 2021</article-title>. <source>MMWR Morb Mortal Wkly Rep</source> <year>2021</year>;<volume>70</volume>:<fpage>495</fpage>&#x2013;<lpage>500</lpage>.</mixed-citation></ref>
+<ref id="c13"><label>13.</label><mixed-citation publication-type="website"><collab>Moderna. Moderna Announces TeenCOVE Study of its COVID-19 Vaccine in Adolescents Meets Primary Endpoint and Plans to Submit Data to Regulators in Early June</collab>. <source>Press Release</source>. 25 <month>May</month>, <year>2021</year>. Access date <date-in-citation content-type="access-date">21 Jun, 2021</date-in-citation>. Available at <ext-link ext-link-type="uri" xlink:href="https://investors.modernatx.com/news-releases/news-release-details/moderna-announces-teencove-study-its-covid-19-vaccine">https://investors.modernatx.com/news-releases/news-release-details/moderna-announces-teencove-study-its-covid-19-vaccine</ext-link>.</mixed-citation></ref>
+<ref id="c14"><label>14.</label><mixed-citation publication-type="journal"><string-name><surname>Wrapp</surname> <given-names>D</given-names></string-name>, <string-name><surname>Wang</surname> <given-names>N</given-names></string-name>, <string-name><surname>Corbett</surname> <given-names>KS</given-names></string-name>, <etal>et al.</etal> <article-title>Cryo-EM structure of the 2019-nCoV spike in the prefusion conformation</article-title>. <source>Science</source> <year>2020</year>;<volume>367</volume>:<fpage>1260</fpage>&#x2013;<lpage>3</lpage>.</mixed-citation></ref>
+<ref id="c15"><label>15.</label><mixed-citation publication-type="journal"><string-name><surname>Lan</surname> <given-names>J</given-names></string-name>, <string-name><surname>Ge</surname> <given-names>J</given-names></string-name>, <string-name><surname>Yu</surname> <given-names>J</given-names></string-name>, <etal>et al.</etal> <article-title>Structure of the SARS-CoV-2 spike receptor-binding domain bound to the ACE2 receptor</article-title>. <source>Nature</source> <year>2020</year>;<volume>581</volume>:<fpage>215</fpage>&#x2013;<lpage>20</lpage>.</mixed-citation></ref>
+<ref id="c16"><label>16.</label><mixed-citation publication-type="journal"><string-name><surname>Letko</surname> <given-names>M</given-names></string-name>, <string-name><surname>Marzi</surname> <given-names>A</given-names></string-name>, <string-name><surname>Munster</surname> <given-names>V.</given-names></string-name> <article-title>Functional assessment of cell entry and receptor usage for SARS-CoV-2 and other lineage B betacoronaviruses</article-title>. <source>Nat Microbiol</source> <year>2020</year>;<volume>5</volume>:<fpage>562</fpage>&#x2013;<lpage>9</lpage>.</mixed-citation></ref>
+<ref id="c17"><label>17.</label><mixed-citation publication-type="journal"><string-name><surname>Shang</surname> <given-names>J</given-names></string-name>, <string-name><surname>Wan</surname> <given-names>Y</given-names></string-name>, <string-name><surname>Luo</surname> <given-names>C</given-names></string-name>, <etal>et al.</etal> <article-title>Cell entry mechanisms of SARS-CoV-2</article-title>. <source>Proc Natl Acad Sci U S A</source> <year>2020</year>;<volume>117</volume>:<fpage>11727</fpage>&#x2013;<lpage>34</lpage>.</mixed-citation></ref>
+<ref id="c18"><label>18.</label><mixed-citation publication-type="journal"><string-name><surname>Poland</surname> <given-names>GA</given-names></string-name>, <string-name><surname>Ovsyannikova</surname> <given-names>IG</given-names></string-name>, <string-name><surname>Kennedy</surname> <given-names>RB</given-names></string-name>. <article-title>SARS-CoV-2 immunity: review and applications to phase 3 vaccine candidates</article-title>. <source>Lancet</source> <year>2020</year>;<volume>396</volume>:<fpage>1595</fpage>&#x2013;<lpage>606</lpage>.</mixed-citation></ref>
+<ref id="c19"><label>19.</label><mixed-citation publication-type="journal"><string-name><surname>Yu</surname> <given-names>J</given-names></string-name>, <string-name><surname>Tostanoski</surname> <given-names>LH</given-names></string-name>, <string-name><surname>Peter</surname> <given-names>L</given-names></string-name>, <etal>et al.</etal> <article-title>DNA vaccine protection against SARS-CoV-2 in rhesus macaques</article-title>. <source>Science</source> <year>2020</year>;<volume>369</volume>:<fpage>806</fpage>&#x2013;<lpage>11</lpage>.</mixed-citation></ref>
+<ref id="c20"><label>20.</label><mixed-citation publication-type="other"><string-name><surname>He</surname> <given-names>X</given-names></string-name>, <string-name><surname>Chandrashekar</surname> <given-names>A</given-names></string-name>, <string-name><surname>Zahn</surname> <given-names>R</given-names></string-name>, <etal>et al.</etal> <article-title>Low-dose Ad26.COV2.S protection against SARS-CoV-2 challenge in rhesus macaques</article-title>. <source>Cell</source> <year>2021</year>.</mixed-citation></ref>
+<ref id="c21"><label>21.</label><mixed-citation publication-type="journal"><string-name><surname>McMahan</surname> <given-names>K</given-names></string-name>, <string-name><surname>Yu</surname> <given-names>J</given-names></string-name>, <string-name><surname>Mercado</surname> <given-names>NB</given-names></string-name>, <etal>et al.</etal> <article-title>Correlates of protection against SARS-CoV-2 in rhesus macaques</article-title>. <source>Nature</source> <year>2021</year>;<volume>590</volume>:<fpage>630</fpage>&#x2013;<lpage>4</lpage>.</mixed-citation></ref>
+<ref id="c22"><label>22.</label><mixed-citation publication-type="other"><string-name><surname>Khoury</surname> <given-names>DS</given-names></string-name>, <string-name><surname>Cromer</surname> <given-names>D</given-names></string-name>, <string-name><surname>Reynaldi</surname> <given-names>A</given-names></string-name>, <etal>et al.</etal> <article-title>Neutralizing antibody levels are highly predictive of immune protection from symptomatic SARS-CoV-2 infection</article-title>. <source>Nat Med</source> <year>2021</year>.</mixed-citation></ref>
+<ref id="c23"><label>23.</label><mixed-citation publication-type="website"><string-name><surname>Earle</surname> <given-names>KA</given-names></string-name>, <string-name><surname>Ambrosino</surname> <given-names>DM</given-names></string-name>, <string-name><surname>Fiore-Gartland</surname> <given-names>A</given-names></string-name>, <etal>et al.</etal> <article-title>Evidence for antibody as a protective correlate for COVID-19 vaccines. [Preprint]</article-title> Access date <date-in-citation content-type="access-date">22 Jun, 2021</date-in-citation>. <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1101/2021.03.17.20200246">https://doi.org/10.1101/2021.03.17.20200246</ext-link> <source>medRxiv</source> 2021:2021.03.17.20200246.</mixed-citation></ref>
+<ref id="c24"><label>24.</label><mixed-citation publication-type="website"><string-name><surname>Cromer</surname> <given-names>D</given-names></string-name>, <string-name><surname>Reynaldi</surname> <given-names>A</given-names></string-name>, <string-name><surname>Steain</surname> <given-names>M</given-names></string-name>, <string-name><surname>Triccas</surname> <given-names>JA</given-names></string-name>, <string-name><surname>Davenport</surname> <given-names>MP</given-names></string-name>, <string-name><surname>Khoury</surname> <given-names>DS</given-names></string-name>. <article-title>Relating in vitro neutralisation level and protection in the CVnCoV (CUREVAC) trial. doi</article-title>: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1101/2021.06.29.21259504">https://doi.org/10.1101/2021.06.29.21259504</ext-link> Access date <date-in-citation content-type="access-date">2 Jul, 2021</date-in-citation>. <source>medRxiv</source> 2021:2021.06.29.21259504.</mixed-citation></ref>
+<ref id="c25"><label>25.</label><mixed-citation publication-type="website"><string-name><surname>Feng</surname> <given-names>S</given-names></string-name>, <string-name><surname>Phillips</surname> <given-names>DJ</given-names></string-name>, <string-name><surname>White</surname> <given-names>T</given-names></string-name>, <etal>et al.</etal> <article-title>Correlates of protection against symptomatic and asymptomatic SARS-CoV-2 infection. [Preprint]</article-title> Access date <date-in-citation content-type="access-date">25 Jun, 2021</date-in-citation> <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1101/2021.06.21.21258528">https://doi.org/10.1101/2021.06.21.21258528</ext-link> <source>medRxiv</source> 2021:2021.06.21.21258528.</mixed-citation></ref>
+<ref id="c26"><label>26.</label><mixed-citation publication-type="journal"><string-name><surname>Addetia</surname> <given-names>A</given-names></string-name>, <string-name><surname>Crawford</surname> <given-names>KHD</given-names></string-name>, <string-name><surname>Dingens</surname> <given-names>A</given-names></string-name>, <etal>et al.</etal> <article-title>Neutralizing Antibodies Correlate with Protection from SARS-CoV-2 in Humans during a Fishery Vessel Outbreak with a High Attack Rate</article-title>. <source>J Clin Microbiol</source> <year>2020</year>;<volume>58</volume>.</mixed-citation></ref>
+<ref id="c27"><label>27.</label><mixed-citation publication-type="journal"><string-name><surname>Abdool Karim</surname> <given-names>SS</given-names></string-name>, <string-name><surname>de Oliveira</surname> <given-names>T.</given-names></string-name> <article-title>New SARS-CoV-2 Variants - Clinical, Public Health, and Vaccine Implications</article-title>. <source>N Engl J Med</source> <year>2021</year>;<volume>384</volume>:<fpage>1866</fpage>&#x2013;<lpage>8</lpage>.</mixed-citation></ref>
+<ref id="c28"><label>28.</label><mixed-citation publication-type="other"><string-name><surname>Cohen</surname> <given-names>MS</given-names></string-name>, <string-name><surname>Nirula</surname> <given-names>A</given-names></string-name>, <string-name><surname>Mulligan</surname> <given-names>MJ</given-names></string-name>, <etal>et al.</etal> <article-title>Effect of Bamlanivimab vs Placebo on Incidence of COVID-19 Among Residents and Staff of Skilled Nursing and Assisted Living Facilities: A Randomized Clinical Trial</article-title>. <source>JAMA</source> <year>2021</year>.</mixed-citation></ref>
+<ref id="c29"><label>29.</label><mixed-citation publication-type="website"><collab>Regeneron</collab>. <source>Phase 3 Prevention Trial Showed 81&#x0025; Reduced Risk of Symptomatic SARS-CoV-2 Infections with Subcutaneous Administration of REGEN-COV&#x2122; (casirivimab with imdevimab). Press Release</source>. 12 <month>Apr</month>, <year>2021</year>. Access date <date-in-citation content-type="access-date">22 Jun, 2021</date-in-citation>. Available at <ext-link ext-link-type="uri" xlink:href="https://investor.regeneron.com/news-releases/news-release-details/phase-3-prevention-trial-showed-81-reduced-risk-symptomatic-sars">https://investor.regeneron.com/news-releases/news-release-details/phase-3-prevention-trial-showed-81-reduced-risk-symptomatic-sars</ext-link>.</mixed-citation></ref>
+<ref id="c30"><label>30.</label><mixed-citation publication-type="other"><string-name><surname>Corbett</surname> <given-names>KS</given-names></string-name>, <string-name><surname>Nason</surname> <given-names>MC</given-names></string-name>, <string-name><surname>Flach</surname> <given-names>B</given-names></string-name>, <etal>et al.</etal> <article-title>Immune correlates of protection by mRNA-1273 vaccine against SARS-CoV-2 in nonhuman primates</article-title>. <source>Science</source> <year>2021</year>:eabj0299.</mixed-citation></ref>
+<ref id="c31"><label>31.</label><mixed-citation publication-type="journal"><string-name><surname>Shen</surname> <given-names>X</given-names></string-name>, <string-name><surname>Tang</surname> <given-names>H</given-names></string-name>, <string-name><surname>McDanal</surname> <given-names>C</given-names></string-name>, <etal>et al.</etal> <article-title>SARS-CoV-2 variant B.1.1.7 is susceptible to neutralizing antibodies elicited by ancestral spike vaccines</article-title>. <source>Cell Host Microbe</source> <year>2021</year>;<volume>29</volume>:<fpage>529</fpage>&#x2013;<lpage>39 e3</lpage>.</mixed-citation></ref>
+<ref id="c32"><label>32.</label><mixed-citation publication-type="journal"><string-name><surname>Kristiansen</surname> <given-names>PA</given-names></string-name>, <string-name><surname>Page</surname> <given-names>M</given-names></string-name>, <string-name><surname>Bernasconi</surname> <given-names>V</given-names></string-name>, <etal>et al.</etal> <article-title>WHO International Standard for anti-SARS-CoV-2 immunoglobulin</article-title>. <source>Lancet</source> <year>2021</year>;<volume>397</volume>:<fpage>1347</fpage>&#x2013;<lpage>8</lpage>.</mixed-citation></ref>
+<ref id="c33"><label>33.</label><mixed-citation publication-type="website"><collab>National Institute for Biological Standards and Control (NIBSC</collab>). <source>Instructions for use of First WHO International Standard for anti-SARS-CoV-2 Immunoglobulin</source> (Version 3.0, Dated 17/12/2020) NIBSC code: 20/136 <ext-link ext-link-type="uri" xlink:href="https://www.nibsc.org/science_and_research/idd/cfar/covid-19_reagents.aspx">https://www.nibsc.org/science_and_research/idd/cfar/covid-19_reagents.aspx</ext-link> Access date <date-in-citation content-type="access-date">Jul 29, 2021</date-in-citation>.</mixed-citation></ref>
+<ref id="c34"><label>34.</label><mixed-citation publication-type="journal"><string-name><surname>Prentice</surname> <given-names>RL</given-names></string-name>. <article-title>A Case-Cohort Design for Epidemiologic Cohort Studies and Disease Prevention Trials</article-title>. <source>Biometrika</source> <year>1986</year>;<volume>73</volume>:<fpage>1</fpage>&#x2013;<lpage>11</lpage>.</mixed-citation></ref>
+<ref id="c35"><label>35.</label><mixed-citation publication-type="journal"><string-name><surname>Newcombe</surname> <given-names>RG</given-names></string-name>. <article-title>Two-sided confidence intervals for the single proportion: Comparison of seven methods</article-title>. <source>Stat Med</source> <year>1998</year>;<volume>17</volume>:<fpage>857</fpage>&#x2013;<lpage>72</lpage>.</mixed-citation></ref>
+<ref id="c36"><label>36.</label><mixed-citation publication-type="book"><string-name><surname>Lumley</surname> <given-names>T.</given-names></string-name> <source>Complex Surveys: A Guide to Analysis Using R</source>. vol. <volume>565</volume>, <publisher-name>John Wiley and Sons</publisher-name>. <year>2010</year>.</mixed-citation></ref>
+<ref id="c37"><label>37.</label><mixed-citation publication-type="book"><string-name><surname>Wood</surname> <given-names>SN</given-names></string-name>. <source>Generalized Additive Models: An Introduction with R</source>. <publisher-name>Chapman and Hall/CRC Texts in Statistical Science, CRC Press, Boca Raton, FL</publisher-name>. <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1201/9781315370279">https://doi.org/10.1201/9781315370279</ext-link> <year>2017</year>.</mixed-citation></ref>
+<ref id="c38"><label>38.</label><mixed-citation publication-type="other"><string-name><surname>van der Laan</surname> <given-names>L</given-names></string-name>, <string-name><surname>Zhang</surname> <given-names>W</given-names></string-name>, <string-name><surname>Gilbert</surname> <given-names>PB</given-names></string-name>. <source>Efficient nonparametric estimation of the covariate-adjusted threshold-response function, a support-restricted stochastic intervention [Preprint]</source> Access date <date-in-citation content-type="access-date">28 Jul, 2021</date-in-citation>. <pub-id pub-id-type="arxiv">2107.11459</pub-id> [stat.ME]. <year>2021</year>.</mixed-citation></ref>
+<ref id="c39"><label>39.</label><mixed-citation publication-type="other"><string-name><surname>Gilbert</surname> <given-names>PB</given-names></string-name>, <string-name><surname>Fong</surname> <given-names>Y</given-names></string-name>, <string-name><surname>Carone</surname> <given-names>M.</given-names></string-name> <source>Assessment of Immune Correlates of Protection via Controlled Risk and Controlled Vaccine Efficacy [Preprint]</source> Access date <date-in-citation content-type="access-date">13 Jul, 2021</date-in-citation>. <pub-id pub-id-type="arxiv">2107.05734</pub-id> [stat.ME]. <year>2021</year>.</mixed-citation></ref>
+<ref id="c40"><label>40.</label><mixed-citation publication-type="other"><string-name><surname>Benkeser</surname> <given-names>D</given-names></string-name>, <string-name><surname>D&#x00ED;az</surname> <given-names>I</given-names></string-name>, <string-name><surname>Ran</surname> <given-names>J.</given-names></string-name> <source>Inference for natural mediation effects under case-cohort sampling with applications in identifying COVID-19 vaccine correlates of protection [Preprint]</source> Access date <date-in-citation content-type="access-date">13 Jul, 2021</date-in-citation>. <pub-id pub-id-type="arxiv">210302643</pub-id> [statME] <year>2021</year>.</mixed-citation></ref>
+<ref id="c41"><label>41.</label><mixed-citation publication-type="book"><string-name><surname>Westfall</surname> <given-names>PH</given-names></string-name>, <string-name><surname>Young</surname> <given-names>SS</given-names></string-name>. <source>Resampling-based multiple testing: Examples and methods for p-value adjustment</source>: <publisher-name>John Wiley &#x0026; Sons</publisher-name>; <year>1993</year>.</mixed-citation></ref>
+<ref id="c42"><label>42.</label><mixed-citation publication-type="journal"><string-name><surname>Siber</surname> <given-names>GR</given-names></string-name>, <string-name><surname>Chang</surname> <given-names>I</given-names></string-name>, <string-name><surname>Baker</surname> <given-names>S</given-names></string-name>, <etal>et al.</etal> <article-title>Estimating the protective concentration of anti-pneumococcal capsular polysaccharide antibodies</article-title>. <source>Vaccine</source> <year>2007</year>;<volume>25</volume>:<fpage>3816</fpage>&#x2013;<lpage>26</lpage>.</mixed-citation></ref>
+<ref id="c43"><label>43.</label><mixed-citation publication-type="journal"><string-name><surname>VanderWeele</surname> <given-names>TJ</given-names></string-name>, <string-name><surname>Ding</surname> <given-names>P.</given-names></string-name> <article-title>Sensitivity Analysis in Observational Research: Introducing the E-Value</article-title>. <source>Ann Intern Med</source> <year>2017</year>;<volume>167</volume>:<fpage>268</fpage>&#x2013;<lpage>74</lpage>.</mixed-citation></ref>
+<ref id="c44"><label>44.</label><mixed-citation publication-type="journal"><string-name><surname>Cowling</surname> <given-names>BJ</given-names></string-name>, <string-name><surname>Lim</surname> <given-names>WW</given-names></string-name>, <string-name><surname>Perera</surname> <given-names>RAPM</given-names></string-name>, <etal>et al.</etal> <article-title>Influenza Hemagglutination-inhibition Antibody Titer as a Mediator of Vaccine-induced Protection for Influenza B</article-title>. <source>Clinical Infectious Diseases</source> <year>2019</year>;<volume>68</volume>:<fpage>1713</fpage>&#x2013;<lpage>7</lpage>.</mixed-citation></ref>
+<ref id="c45"><label>45.</label><mixed-citation publication-type="journal"><string-name><surname>Fleming</surname> <given-names>TR</given-names></string-name>, <string-name><surname>Powers</surname> <given-names>JH</given-names></string-name>. <article-title>Biomarkers and surrogate endpoints in clinical trials</article-title>. <source>Stat Med</source> <year>2012</year>;<volume>31</volume>:<fpage>2973</fpage>&#x2013;<lpage>84</lpage>.</mixed-citation></ref>
+<ref id="c46"><label>46.</label><mixed-citation publication-type="journal"><string-name><surname>Jackson</surname> <given-names>LA</given-names></string-name>, <string-name><surname>Anderson</surname> <given-names>EJ</given-names></string-name>, <string-name><surname>Rouphael</surname> <given-names>NG</given-names></string-name>, <etal>et al.</etal> <article-title>An mRNA Vaccine against SARS-CoV-2 - Preliminary Report</article-title>. <source>N Engl J Med</source> <year>2020</year>;<volume>383</volume>:<fpage>1920</fpage>&#x2013;<lpage>31</lpage>.</mixed-citation></ref>
+<ref id="c47"><label>47.</label><mixed-citation publication-type="website"><collab>U.S. Department of Health and Human Services</collab>, <source>Food and Drug Administration, and Center for Biologics Evaluation and Research. Emergency Use Authorization for Vaccines to Prevent COVID-19: Guidance for Industry</source>. Appendix 2: pp 18-22. Issued on 25 May, 2021. <ext-link ext-link-type="uri" xlink:href="https://www.fda.gov/regulatory-information/search-fda-guidance-documents/emergency-use-authorization-vaccines-prevent-covid-19">https://www.fda.gov/regulatory-information/search-fda-guidance-documents/emergency-use-authorization-vaccines-prevent-covid-19</ext-link>.</mixed-citation></ref>
+<ref id="c48"><label>48.</label><mixed-citation publication-type="other"><string-name><surname>Andrasik</surname> <given-names>MP</given-names></string-name>, <string-name><surname>Broder</surname> <given-names>GB</given-names></string-name>, <string-name><surname>Wallace</surname> <given-names>SE</given-names></string-name>, <string-name><surname>Chaturvedi</surname> <given-names>R</given-names></string-name>, <string-name><surname>Michael</surname> <given-names>NL</given-names></string-name>, <etal>et al.</etal> <article-title>Increasing Black, Indigenous and People of Color participation in clinical trials through community engagement and recruitment goal establishment</article-title>. <source>PLOS One (in press)</source> <year>2021</year>.</mixed-citation></ref>
+</ref-list>
+</back>
+</article>
