@@ -16,7 +16,7 @@ europepmc.download:
 	wget -P $(DATA_ROOT)/europepmc/src/ -r -l1 -H -nd -N -np -A "*.xml.gz" -e robots=off https://europepmc.org/ftp/oa/
 
 europepmc.parse: src = src
-europepmc.parse: pat = *.xml.gz
+europepmc.parse: pat = *.xml
 europepmc.parse: parser = europepmc
 
 # BIORXIV
@@ -40,7 +40,7 @@ medrxiv.parse: parser = pubmed
 
 %.parse:
 	mkdir -p $(DATA_ROOT)/$*/json
-	find $(DATA_ROOT)/$*/$(src)/ -type f -name "$(pat)" | parallel -N100 --pipe ftg parse $(parser) --store-json $(DATA_ROOT)/$*/json | parallel -N10000 --pipe ftg map-ftm | parallel -N10000 --pipe ftm store write -d ftg_$*
+	find $(DATA_ROOT)/$*/$(src)/ -type f -name "$(pat)" | parallel -N1 --pipe ftg parse $(parser) --store-json $(DATA_ROOT)/$*/json | parallel -N10000 --pipe ftg map-ftm | parallel -N10000 --pipe ftm store write -d ftg_$*
 
 
 # wrangling
