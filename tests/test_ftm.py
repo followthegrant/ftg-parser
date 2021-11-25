@@ -10,7 +10,7 @@ class ModelTestCase(TestCase):
     maxDiff = None
 
     def test_ftm_model(self):
-        path = "./testdata/pubmed/PMC4844427/opth-10-713.nxml"  # an article with all required data
+        path = "./testdata/pubmed/opth-10-713.nxml"  # an article with all required data
         data = next(load.pubmed(path))
         data = parse.parse_article(data)
         data = MappedModel(data)
@@ -283,7 +283,7 @@ class ModelTestCase(TestCase):
         )
 
     def test_ftm_mapping(self):
-        path = "./testdata/pubmed/PMC4844427/opth-10-713.nxml"  # an article with all required data
+        path = "./testdata/pubmed/opth-10-713.nxml"  # an article with all required data
         data = next(load.pubmed(path))
         data = parse.parse_article(data)
         res = {"entities": [], "schemas": Counter()}
