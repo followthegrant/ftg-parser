@@ -1,10 +1,18 @@
+from unittest import TestCase
+
 from ftg import model
 
 
-from unittest import TestCase
+class SimpleDedupTestCase(TestCase):
+    """
+    simple deduplication:
+    we don't know the whole dataset, so we only
+    use some context identifiers during streaming
+    to generate unique ids that are not too unique
+    this of course leads to many uncatched cases
+    for more advanced dedupe, see `test_stateful_dedupe`
+    """
 
-
-class DedupTestCase(TestCase):
     def test_journal_dedup(self):
         # only name: dedupe via fingerprint
         journal1 = model.Journal(**{"name": "Journal 1"})

@@ -8,11 +8,16 @@ import click
 
 from . import load
 from .coi import flag_coi
-from .dedupe.authors import explode_triples, dedupe, dedupe_psql
+from .dedupe.authors import (
+    explode_triples,
+    dedupe_triples,
+    dedupe_db,
+    rewrite_entity,
+)
 from .ftm import make_entities
 from .parse import parse_article
 from .schema import ArticleFullOutput
-from .psql import insert_many
+from .db import insert_many
 
 log = logging.getLogger(__name__)
 
@@ -99,14 +104,14 @@ def author_triplets(source=None):
             sys.stdout.write(out + "\n")
 
 
-@cli.command("dedupe")
-def _dedupe():
+@cli.command("dedupe-triples")
+def _dedupe_triples():
     """
     dedupe data based on triples,
     returns matching id pairs
     """
     triples = csv.reader(sys.stdin)
-    for pair in dedupe(triples):
+    for pair in dedupe_triples(triples):
         sys.stdout.write(",".join(pair) + "\n")
 
 
@@ -135,28 +140,46 @@ def flag_cois():
 
 
 @cli.group()
-def psql():
+def db():
     pass
 
 
-@psql.command("insert")
+@db.command("insert")
 @click.argument("table")
-def psql_insert(table):
+def db_insert(table):
     """
-    bulk upsert of stdin csv format to psql database defined via
+    bulk upsert of stdin csv format to database defined via
     `FTM_STORE_URI`
 
-    currently a very simple approach: input csv withou header, all columns must
+    currently a very simple approach: input csv without header, all columns must
     be present and in order of the existing `table`
     doesn't complain if a row already exists, but will not update it
+
+    # FIXME when using with `echo <many lines> | parallel --pipe ftg db insert ..`
+    this can cause deadlocks on postgresql!!
     """
-    rows = csv.reader(sys.stdin)
-    insert_many(table, rows)
+    rows = []
+    for ix, row in enumerate(csv.reader(sys.stdin)):
+        if ix % 10000 == 0:
+            insert_many(table, rows)
+            rows = []
 
 
-@psql.command("dedupe-authors")
-@click.argument("table")
+@db.command("dedupe-authors")
+@click.option("--table", default="author_triples")
 @click.option("--source", help="Filter for only this source")
-def psql_dedupe_authors(table, source=None):
-    for pair in dedupe_psql(table, source):
+def db_dedupe_authors(table, source=None):
+    for pair in dedupe_db(table, source):
         sys.stdout.write(",".join(pair) + "\n")
+
+
+@db.command("rewrite-author-ids")
+@click.option("--table", default="author_aggregation")
+def db_rewrite_authors(table):
+    """
+    rewrite author ids from db table with stored (agg_id, author_id) pairs
+    """
+    for entity in sys.stdin:
+        entity = json.loads(entity)
+        entity = rewrite_entity(table, entity)
+        sys.stdout.write(json.dumps(entity) + "\n")

@@ -13,4 +13,13 @@ create index on author_triples (author_id);
 create index on author_triples (value_id);
 create index on author_triples (source);
 
+create table if not exists author_aggregation (
+  agg_id char(40) not null,
+  author_id char(40) not null,
+  unique (agg_id, author_id)
+);
+
+create index on author_aggregation (agg_id);
+create index on author_aggregation (author_id);
+
 commit;
