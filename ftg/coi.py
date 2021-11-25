@@ -2,6 +2,7 @@ import re
 from collections import Counter, defaultdict
 
 from html2text import html2text
+from lxml import etree
 from normality import normalize
 from pubmed_parser.utils import read_xml
 from spacy.lang.en import English
@@ -209,8 +210,13 @@ def extract_coi_from_fulltext(fpath):
     if len(coi_statement) > 36:
         return coi_statement
     if coi_statement:
-        with open(fpath) as f:
-            article_text = html2text(f.read())
+        if isinstance(
+            fpath, etree._Element
+        ):  # FIXME make xml loading consistent everywhere
+            article_text = etree.tostring(fpath).decode()
+        else:
+            with open(fpath) as f:
+                article_text = html2text(f.read())
         match = re.search(coi_statement, article_text, flags=re.IGNORECASE)
         if match is not None:
             start_pos = match.start()
