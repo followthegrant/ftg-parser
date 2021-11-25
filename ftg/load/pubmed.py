@@ -1,5 +1,17 @@
+"""
+PUBMED CENTRAL dataset
+
+source data: https://ftp.ncbi.nlm.nih.gov/pub/pmc/
+
+using https://github.com/simonwoerpel/pubmed_parser to parse xml
+
+usage:
+
+    find ./data/ -type f -name "*xml" | ftg parse pubmed
+
+"""
 import logging
-from typing import Optional
+from typing import Iterator, Optional
 
 import pubmed_parser as pp
 from banal import ensure_list
@@ -12,14 +24,12 @@ from ..util import clean_dict
 log = logging.getLogger(__name__)
 
 
-# day first in pubmed parser
-PUBMED_DATE_FORMATS = ("%-d-%-m-%y", "%-d-%-m-%y", "%d-%m-%Y", "%d-%m-%y")
-
-
 def wrangle(data: dict, fpath: Optional[str] = None) -> dict:
+    if "id" in data:
+        del data["id"]
     # keys re-mapping
     data["title"] = data.pop("full_title")
-    published_at = parse(data.pop("publication_date"), date_formats=PUBMED_DATE_FORMATS)
+    published_at = parse(data.pop("publication_date"))
     if published_at is None:
         published_at = data.pop("publication_year")
     data["published_at"] = published_at
@@ -68,11 +78,11 @@ def wrangle(data: dict, fpath: Optional[str] = None) -> dict:
     return clean_dict(data, expensive=True)
 
 
-def pubmed(fpath):
+def load(fpath: str) -> Iterator[dict]:
     try:
         data = pp.parse_pubmed_xml(fpath)
     except Exception as e:
         log.error(f"Cannot load `{fpath}`: `{e}`")
-        return
+        return []
 
-    return wrangle(data, fpath)
+    yield wrangle(data, fpath)

@@ -106,7 +106,12 @@ class ArticleIdentifier(Base):
         ("pmcid", "PubMed Central ID"),
         ("pmc", "Pubmed Central ID"),
         ("doi", "Digital Object Identifier"),
-        ("magid", "Microsoft Academic Graph UID"),
+        ("mag", "Microsoft Academic Graph UID"),
+        ("arxiv", "arXiv ID"),
+        ("openaire", "OpenAIRE graph ID"),
+        ("who", "WHO Covidence ID"),
+        ("s2", "Semantic Scholar ID"),
+        ("cord", "CORD-19 UID"),
     )
     identifiers_dict = dict(identifiers)
 
@@ -296,6 +301,8 @@ class Article(Base):
             ]
 
     def get_id_parts(self) -> Iterable[str]:
+        if self.input.id is not None:
+            return [self.input.id]  # allow literal id values
         identifiers = dict((i.output.key, i.output.value) for i in self.identifiers)
         for key, _ in ArticleIdentifier.identifiers:
             if key in identifiers:

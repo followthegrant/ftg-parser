@@ -1,3 +1,6 @@
+import gzip
+import os
+
 from banal import clean_dict as _clean_dict
 from banal import is_mapping
 
@@ -72,3 +75,14 @@ class cached_property:
             return self
         res = instance.__dict__[self.name] = self.func(instance)
         return res
+
+
+def load_or_extract(fp, mode="r"):
+    _, ext = os.path.splitext(fp)
+    if ext == "gz":
+        with gzip.open(fp, mode) as f:
+            content = f.read()
+    else:
+        with open(fp, mode) as f:
+            content = f.read()
+    return content

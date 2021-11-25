@@ -59,6 +59,7 @@ class AuthorOutput(BaseModel):
 
 
 class ArticleInput(BaseModel):
+    id: Optional[str] = None
     journal: JournalInput
     identifiers: Optional[dict] = {}
     title: str

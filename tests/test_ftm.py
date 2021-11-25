@@ -11,7 +11,7 @@ class ModelTestCase(TestCase):
 
     def test_ftm_model(self):
         path = "./testdata/pubmed/PMC4844427/opth-10-713.nxml"  # an article with all required data
-        data = load.pubmed(path)
+        data = next(load.pubmed(path))
         data = parse.parse_article(data)
         data = MappedModel(data)
 
@@ -284,7 +284,7 @@ class ModelTestCase(TestCase):
 
     def test_ftm_mapping(self):
         path = "./testdata/pubmed/PMC4844427/opth-10-713.nxml"  # an article with all required data
-        data = load.pubmed(path)
+        data = next(load.pubmed(path))
         data = parse.parse_article(data)
         res = {"entities": [], "schemas": Counter()}
         for entity in ftm.make_entities(data):
@@ -671,7 +671,7 @@ class ModelTestCase(TestCase):
 
     def test_ftm_make_entities(self):
         def _test(path):
-            data = load.pubmed(path)
+            data = next(load.pubmed(path))
             if data is not None:
                 data = parse.parse_article(data)
                 author_ids = [a.id for a in data.authors]
