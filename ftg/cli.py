@@ -1,5 +1,6 @@
 import json
 import csv
+import json
 import logging
 import sys
 
@@ -21,33 +22,43 @@ def cli():
 
 @cli.command("parse")
 @click.argument("collection")
-# @click.option(
-#     "--debug/--no-debug",
-#     help="Enable debug mode: Raise on errors.",
-#     show_default=True,
-#     default=False,
-# )
-# @click.option(
-#     "--meta-only/--all",
-#     help="Extract only article metadata (without authors as ftm entities)",
-#     show_default=True,
-#     default=False,
-# )
-# def parse(debug, meta_only):
-def parse(collection):
+@click.option(
+    "--store-json",
+    help="Store parsed json into given directory (1 file per article)",
+    type=click.Path(exists=True),
+)
+def parse(collection, store_json=None):
     """
     parse source xml/html files into json representation with metadata, authors,
     institutions and conflict of interest statements
 
-    collection: one of "pubmed", "biorxiv", "medrxiv", "aerzteblatt"
+    collection: one of
+        pubmed
+        europepmc
+        semanticscholar
+        openaire
+        cord
     """
     loader = getattr(load, collection)
     for fpath in sys.stdin:
         fpath = fpath.strip()
-        data = loader(fpath)
+        try:
+            data = loader(fpath)
+        except Exception as e:
+            log.error(f"Cannot load `{fpath}`: '{e}'")
+            data = None
         if data is not None:
-            data = parse_article(data)
-            sys.stdout.write(json.dumps(data.dict(), default=lambda x: str(x)) + "\n")
+            for d in data:
+                try:
+                    d = parse_article(d)
+                    res = json.dumps(d.dict(), default=lambda x: str(x))
+                    if store_json is not None:
+                        fp = os.path.join(store_json, d.id + ".json")
+                        with open(fp, "w") as f:
+                            f.write(res)
+                    sys.stdout.write(res + "\n")
+                except Exception as e:
+                    log.error(f"Cannot parse `{fpath}`: '{e}'")
 
 
 @cli.command("map-ftm")
