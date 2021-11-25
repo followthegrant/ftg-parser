@@ -28,6 +28,7 @@ setup(
         "Click",
         "alephclient",
         "countrytagger",
+        "dataset",
         "dateparser",
         "fingerprints",
         "followthemoney",

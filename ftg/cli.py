@@ -1,4 +1,4 @@
-import json
+import os
 import csv
 import json
 import logging
@@ -7,10 +7,12 @@ import sys
 import click
 
 from . import load
-from .schema import ArticleFullOutput
-from .parse import parse_article
 from .coi import flag_coi
+from .dedupe.authors import explode_triples, dedupe, dedupe_psql
 from .ftm import make_entities
+from .parse import parse_article
+from .schema import ArticleFullOutput
+from .psql import insert_many
 
 log = logging.getLogger(__name__)
 
@@ -66,14 +68,49 @@ def ftm():
     """
     parse input json into ftm entities
     """
-    for data in sys.stdin:
+    for data in sys.stdin.readlines():
         data = json.loads(data)
         data = ArticleFullOutput(**data)
         for entity in make_entities(data):
             sys.stdout.write(json.dumps(entity.to_dict()) + "\n")
 
 
-@cli.command("flag_cois")
+@cli.command("author-triples")
+@click.option("--source", help="Append source column with this value")
+def author_triplets(source=None):
+    """
+    generate author triples for institutions and co-authors:
+
+    fingerprint,author_id,coauthor_id
+    fingerprint,author_id,institution_id
+
+    optionally append `source` value to each row:
+
+    fingerprint,author_id,institution_id,source_name
+    ...
+    """
+    for data in sys.stdin:
+        data = json.loads(data)
+        data = ArticleFullOutput(**data)
+        for triple in explode_triples(data):
+            out = ",".join(triple)
+            if source is not None:
+                out += f",{source}"
+            sys.stdout.write(out + "\n")
+
+
+@cli.command("dedupe")
+def _dedupe():
+    """
+    dedupe data based on triples,
+    returns matching id pairs
+    """
+    triples = csv.reader(sys.stdin)
+    for pair in dedupe(triples):
+        sys.stdout.write(",".join(pair) + "\n")
+
+
+@cli.command("flag-cois")
 def flag_cois():
     """
     Flag COI statements if there is a conflict (1) or not (0)
@@ -95,3 +132,31 @@ def flag_cois():
         except Exception as e:
             log.error(f"{e.__class__.__name__}: {e}")
             log.error(str(row))
+
+
+@cli.group()
+def psql():
+    pass
+
+
+@psql.command("insert")
+@click.argument("table")
+def psql_insert(table):
+    """
+    bulk upsert of stdin csv format to psql database defined via
+    `FTM_STORE_URI`
+
+    currently a very simple approach: input csv withou header, all columns must
+    be present and in order of the existing `table`
+    doesn't complain if a row already exists, but will not update it
+    """
+    rows = csv.reader(sys.stdin)
+    insert_many(table, rows)
+
+
+@psql.command("dedupe-authors")
+@click.argument("table")
+@click.option("--source", help="Filter for only this source")
+def psql_dedupe_authors(table, source=None):
+    for pair in dedupe_psql(table, source):
+        sys.stdout.write(",".join(pair) + "\n")
