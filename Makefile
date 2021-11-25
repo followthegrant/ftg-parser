@@ -66,6 +66,9 @@ medrxiv.parse: parser = pubmed
 	# the above decreases size only .01 % as pg_dump compression is already very high
 	tar cf - $(DATA_ROOT)/$*/json parallel --pipe --recend '' --keep-order --block-size 1M "xz -9" > $(DATA_ROOT)/$*/export
 
+# psql docker
+psql:
+	docker run -p 5432:5432 -e POSTGRES_USER=ftg -e POSTGRES_PASSWORD=ftg -d postgres:13
 
 # package
 
