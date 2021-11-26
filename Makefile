@@ -7,7 +7,7 @@ pubmed.download:
 	mkdir -p $(DATA_ROOT)/pubmed/src
 	wget -P $(DATA_ROOT)/pubmed/src/ -r -l1 -H -nd -N -np -A "*.xml.tar.gz" -e robots=off ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_bulk/
 pubmed.parse: src = extracted
-pubmed.parse: pat = *.xml
+pubmed.parse: pat = *xml  # xml/nxml
 pubmed.parse: parser = pubmed
 
 # EUROPEPMC
