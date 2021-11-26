@@ -163,6 +163,8 @@ def db_insert(table):
         if ix % 10000 == 0:
             insert_many(table, rows)
             rows = []
+    if rows:
+        insert_many(table, rows)
 
 
 @db.command("dedupe-authors")
