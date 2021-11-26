@@ -19,6 +19,15 @@ europepmc.parse: src = src
 europepmc.parse: pat = *.xml
 europepmc.parse: parser = europepmc
 
+# EUROPEPMC PREPRINTS
+europepmc_ppr: europepmc_ppr.download europepmc_ppr.parse europepmc_ppr.authors europepmc_ppr.aggregate europepmc_ppr.db europepmc_ppr.export europepmc_ppr.upload
+europepmc_ppr.download:
+	mkdir -p $(DATA_ROOT)/europepmc_ppr/src
+	wget -P $(DATA_ROOT)/europepmc_ppr/src/ -r -l1 -H -nd -N -np -A "*.xml.gz" -e robots=off https://europepmc.org/ftp/preprint_fulltext
+europepmc_ppr.parse: src = src
+europepmc_ppr.parse: pat = *.xml
+europepmc_ppr.parse: parser = europepmc
+
 # BIORXIV
 biorxiv: biorxiv.parse biorxiv.authors biorxiv.aggregate biorxiv.db biorxiv.export biorxiv.upload
 biorxiv.parse: src = src
