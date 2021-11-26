@@ -63,10 +63,9 @@ medrxiv.parse: parser = pubmed
 	pg_dump $(FTM_STORE_URI) -t ftm_$*_aggregated -Fd -Z9 -O -j48 -f $(DATA_ROOT)/$*/export/pg_dump/ftm
 	# tar cf - $(FTM_STORE_URI)/$*/export/pg_dump/data | parallel --pipe --recend '' --keep-order --block-size 1M "xz -9" > data.tar.xz
 	# the above decreases size only .01 % as pg_dump compression is already very high
-	tar cf - $(DATA_ROOT)/$*/json parallel --pipe --recend '' --keep-order --block-size 1M "xz -9" > $(DATA_ROOT)/$*/export
+	tar cf - $(DATA_ROOT)/$*/json parallel --pipe --recend '' --keep-order --block-size 1M "xz -9" > $(DATA_ROOT)/$*/export/json.tar.xz
 
 %.upload:
-	rsync -avz -e "ssh -p $(RSYNC_PORT)" --progress $(DATA_ROOT)/$*/json $(RSYNC_DEST)/followthegrant/$*/
 	rsync -avz -e "ssh -p $(RSYNC_PORT)" --progress $(DATA_ROOT)/$*/export $(RSYNC_DEST)/followthegrant/$*/
 
 # psql docker
