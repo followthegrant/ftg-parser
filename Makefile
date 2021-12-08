@@ -55,7 +55,7 @@ medrxiv.parse: parser = medrxiv
 # wrangling
 %.authors:
 	psql $(FTM_STORE_URI) < ./psql/author_triples.sql
-	find $(DATA_ROOT)/$*/json/ -type f -name "*.json" -exec cat {} \; | jq -c | parallel -N 10000 --pipe ftg author-triples --source $* | parallel -j1 --pipe -N10000 ftg db insert author_triples
+	find $(DATA_ROOT)/$*/json/ -type f -name "*.json" -exec cat {} \; | jq -c | parallel -N 10000 --pipe ftg author-triples --source $* | parallel --pipe -N10000 ftg db insert author_triples
 	ftg db dedupe-authors | ftg db insert author_aggregation
 
 %.aggregate:

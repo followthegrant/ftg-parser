@@ -160,6 +160,7 @@ def db_insert(table):
     """
     rows = []
     for ix, row in enumerate(csv.reader(sys.stdin)):
+        rows.append(row)
         if ix % 10000 == 0:
             insert_many(table, rows)
             rows = []
