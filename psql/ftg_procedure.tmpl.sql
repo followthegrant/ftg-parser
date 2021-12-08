@@ -1,4 +1,4 @@
-begin;
+/* begin; */
 
 drop table if exists @dataset_journals;
 drop table if exists @dataset_articles;
@@ -156,4 +156,4 @@ create index on @dataset_cois (author_id);
 create index on @dataset_cois (coi_id);
 create index on @dataset_cois (type);
 
-commit;
+/* commit; */
