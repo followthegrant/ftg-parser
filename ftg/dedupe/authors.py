@@ -31,7 +31,8 @@ def explode_triples(article: ArticleFullOutput) -> Iterable[tuple[str, str, str]
                 yield f, author.id, institution.id
             for coauthor in article.authors:
                 if author.id != coauthor.id:
-                    yield f, author.id, coauthor.id
+                    cf = _get_fingerprint(coauthor.name)
+                    yield f, author.id, cf
 
 
 def dedupe_triples(
