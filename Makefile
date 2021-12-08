@@ -35,6 +35,7 @@ biorxiv.parse: pat = *.xml
 biorxiv.parse: parser = pubmed
 
 # MEDRXIV
+medrxiv: medrxiv.parse medrxiv.authors medrxiv.aggregate medrxiv.db medrxiv.export medrxiv.upload
 medrxiv.download:
 	mkdir -p $(DATA_ROOT)/medrxiv/src
 	# ca. 1.5 yrs back
