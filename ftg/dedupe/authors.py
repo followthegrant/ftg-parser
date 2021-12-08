@@ -123,22 +123,23 @@ def rewrite_entity(table: str, entity: dict, conn=None) -> dict:
     if conn is None:
         conn = get_connection()
 
-    table = conn[table]
+    with conn as tx:
+        table = tx[table]
 
-    if entity["schema"] == "Person":
-        entity["id"] = _get_aggregated_id(table, entity["id"])
-        return entity
-
-    if entity["schema"] == "Membership":
-        author_id = entity["properties"]["member"][0]
-        entity["properties"]["member"] = [_get_aggregated_id(table, author_id)]
-        return entity
-
-    if entity["schema"] == "Documentation":
-        role = entity["properties"]["role"][0]
-        if role == "author" or "conflict of interest statement" in role:
-            author_id = entity["properties"]["entity"][0]
-            entity["properties"]["entity"] = [_get_aggregated_id(table, author_id)]
+        if entity["schema"] == "Person":
+            entity["id"] = _get_aggregated_id(table, entity["id"])
             return entity
 
-    return entity
+        if entity["schema"] == "Membership":
+            author_id = entity["properties"]["member"][0]
+            entity["properties"]["member"] = [_get_aggregated_id(table, author_id)]
+            return entity
+
+        if entity["schema"] == "Documentation":
+            role = entity["properties"]["role"][0]
+            if role == "author" or "conflict of interest statement" in role:
+                author_id = entity["properties"]["entity"][0]
+                entity["properties"]["entity"] = [_get_aggregated_id(table, author_id)]
+                return entity
+
+        return entity
