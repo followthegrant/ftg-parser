@@ -1,5 +1,6 @@
 import gzip
 import os
+from zipfile import ZipFile
 
 from banal import clean_dict as _clean_dict
 from banal import is_mapping
@@ -79,10 +80,16 @@ class cached_property:
 
 def load_or_extract(fp, mode="r"):
     _, ext = os.path.splitext(fp)
-    if ext == "gz":
+    if ext == ".gz":
         with gzip.open(fp, mode) as f:
             content = f.read()
+            return content
+    if ext == ".meca":  # medRxiv
+        with ZipFile(fp, mode) as f:
+            for file in f.infolist():
+                if file.filename.endswith("xml"):
+                    return f.open(file).read()
     else:
         with open(fp, mode) as f:
             content = f.read()
-    return content
+            return content

@@ -37,7 +37,7 @@ class LoaderTestCase(TestCase):
         self._test(load.pubmed, "./testdata/biorxiv/*.xml")
 
     def test_medrxiv(self):
-        self._test(load.pubmed, "./testdata/medrxiv/*.xml")
+        self._test(load.medrxiv, "./testdata/medrxiv/*/*.meca")
 
     def test_cord(self):
         self._test(load.cord, "./testdata/cord/*.json")

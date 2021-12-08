@@ -38,23 +38,23 @@ biorxiv.parse: parser = pubmed
 medrxiv.download:
 	mkdir -p $(DATA_ROOT)/medrxiv/src
 	# ca. 1.5 yrs back
-	aws s3 sync s3://medrxiv-src-monthly/Current_Content/ $(DATA_ROOT)/src/ --request-payer requester
+	aws s3 sync s3://medrxiv-src-monthly/Current_Content/ $(DATA_ROOT)/medrxiv/src/ --request-payer requester
 	# for all data:
-	aws s3 sync s3://medrxiv-src-monthly/Back_Content/ $(DATA_ROOT)/src/ --request-payer requester
+	# aws s3 sync s3://medrxiv-src-monthly/Back_Content/ $(DATA_ROOT)/src/ --request-payer requester
 medrxiv.parse: src = src
-medrxiv.parse: pat = *.xml
-medrxiv.parse: parser = pubmed
+medrxiv.parse: pat = *.meca
+medrxiv.parse: parser = medrxiv
 
 
 %.parse:
 	mkdir -p $(DATA_ROOT)/$*/json
-	find $(DATA_ROOT)/$*/$(src)/ -type f -name "$(pat)" | parallel -N1 --pipe ftg parse $(parser) --store-json $(DATA_ROOT)/$*/json | parallel -N10000 --pipe ftg map-ftm | parallel -N10000 --pipe ftm store write -d $*
+	find $(DATA_ROOT)/$*/$(src)/ -type f -name "$(pat)" | parallel -N1000 --pipe ftg parse $(parser) --store-json $(DATA_ROOT)/$*/json | parallel -N10000 --pipe ftg map-ftm | parallel -N10000 --pipe ftm store write -d $*
 
 
 # wrangling
 %.authors:
 	psql $(FTM_STORE_URI) < ./psql/author_triples.sql
-	find $(DATA_ROOT)/$*/json/ -type f -name "*.json" -exec cat {} \; | jq -c | parallel -N 100 --pipe ftg author-triples --source $* | parallel -j1 --pipe -N10000 ftg db insert author_triples
+	find $(DATA_ROOT)/$*/json/ -type f -name "*.json" -exec cat {} \; | jq -c | parallel -N 10000 --pipe ftg author-triples --source $* | parallel -j1 --pipe -N10000 ftg db insert author_triples
 	ftg db dedupe-authors | ftg db insert author_aggregation
 
 %.aggregate:
