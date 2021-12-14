@@ -83,7 +83,7 @@ def load_or_extract(fp, mode="r"):
     if ext == ".gz":
         with gzip.open(fp, mode) as f:
             content = f.read()
-            return content
+        return content.decode()
     if ext == ".meca":  # medRxiv
         with ZipFile(fp, mode) as f:
             for file in f.infolist():
@@ -92,4 +92,4 @@ def load_or_extract(fp, mode="r"):
     else:
         with open(fp, mode) as f:
             content = f.read()
-            return content
+        return content
