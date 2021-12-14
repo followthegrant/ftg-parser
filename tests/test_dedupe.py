@@ -94,7 +94,9 @@ class SimpleDedupTestCase(TestCase):
         )
         a1, a2, a3, a4, a5 = [model.Author(**a) for a in authors]
 
-        self.assertEqual(a1.id, a2.id)
+        self.assertNotEqual(
+            a1.id, a2.id
+        )  # authors without any hints are considered unique
         self.assertNotEqual(a1.id, a3.id)
         self.assertEqual(a3.id, a4.id)
         self.assertNotEqual(a1.id, a5.id)
