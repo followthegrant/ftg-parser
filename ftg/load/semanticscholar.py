@@ -1,8 +1,24 @@
+"""
+SEMANTICSCHOLAR dataset (full-corpus)
+
+source data: https://api.semanticscholar.org/corpus/download/
+
+expects as input file paths to either gzipped or already extracted json files,
+which have one json record per line
+
+usage:
+
+    find ./data/ -type f -name "s2-corpus-*.gz" | ftg parse semanticscholar
+
+
+"""
+
+
 import json
 from typing import Iterator
 
 from ..model import ArticleIdentifier
-from ..util import clean_dict
+from ..util import clean_dict, load_or_extract
 
 
 def _get_authors(authors):
@@ -32,8 +48,10 @@ def wrangle(data: dict) -> dict:
 
 
 def _read(fpath: str) -> Iterator[dict]:
-    with open(fpath) as f:
-        for line in f.readlines():
+    f = load_or_extract(fpath)
+    for line in f.split("\n"):
+        line = line.strip()
+        if line:
             yield json.loads(line)
 
 
