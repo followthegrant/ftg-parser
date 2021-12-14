@@ -3,6 +3,7 @@ ftg -> ftm model
 """
 
 import re
+import uuid
 from collections.abc import Iterable
 from typing import Optional, Tuple, Type
 
@@ -152,7 +153,7 @@ class Author(Base):
             return [fingerprint, institution.id]
         if len(self.input.identifier_hints):
             return [fingerprint, *self.input.identifier_hints]
-        return [fingerprint]
+        return [fingerprint, uuid.uuid4()]  # dedupe later
 
     @cached_property
     def institutions(self) -> Optional[Iterable[Institution]]:
