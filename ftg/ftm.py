@@ -7,6 +7,7 @@ import os
 from followthemoney import model
 from followthemoney.cli.util import load_mapping_file
 
+from .ner import analyze
 from .mapping import MappedModel
 from .schema import ArticleFullOutput
 
@@ -29,4 +30,5 @@ def make_entities(data: ArticleFullOutput):
         if QUERY.source.check_filters(item):
             res = QUERY.map(item)
             for entity in res.values():
-                yield entity
+                for e in analyze(entity):
+                    yield e

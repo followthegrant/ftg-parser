@@ -9,6 +9,7 @@ drop table if exists @dataset_affiliations;
 drop table if exists @dataset_documentation;
 drop table if exists @dataset_authorship;
 drop table if exists @dataset_cois;
+drop table if exists @dataset_mentions;
 
 -- intermediary table
 create table @dataset_documentation as (
@@ -89,7 +90,8 @@ create table @dataset_authors as (
     origin = 'aggregated'
     and entity @> '{"schema": "Person"}'
 );
-create unique index on @dataset_authors (id);
+/* create unique index on @dataset_authors (id); FIXME */
+create index on @dataset_authors (id);
 create index on @dataset_authors (country, countries);
 
 -- institutions
@@ -156,4 +158,13 @@ create index on @dataset_cois (author_id);
 create index on @dataset_cois (coi_id);
 create index on @dataset_cois (type);
 
+-- mentions
+create table @dataset_mentions as (
+  select distinct
+    split_part(entity -> 'properties' -> 'document' ->> 0, '.', 1) as document_id,
+    entity -> 'properties' -> 'name' ->> 0 as mention
+  from @collection
+);
+create index on @dataset_mentions (document_id);
+create index on @dataset_mentions (mention);
 /* commit; */
