@@ -45,6 +45,17 @@ medrxiv.download:
 medrxiv.parse: src = src
 medrxiv.parse: pat = *.meca
 medrxiv.parse: parser = medrxiv
+medrxiv.parse: chunksize = 1000
+
+# SEMANTICSCHOLAR
+semanticscholar: semanticscholar.download semanticscholar.parse semanticscholar.authors semanticscholar.aggregate semanticscholar.db semanticscholar.export semanticscholar.upload
+semanticscholar.download:
+	mkdir -p $(DATA_ROOT)/semanticscholar/src
+	aws s3 cp --no-sign-request --recursive s3://ai2-s2-research-public/open-corpus/2021-12-01/ $(DATA_ROOT)/semanticscholar/src
+semanticscholar.parse: src = src
+semanticscholar.parse: pat = s2-corpus-*.gz
+semanticscholar.parse: parser = semanticscholar
+semanticscholar.parse: chunksize = 1
 
 
 %.parse:
