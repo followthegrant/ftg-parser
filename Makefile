@@ -1,5 +1,7 @@
 DATA_ROOT ?= data
 FTM_STORE_URI ?= postgresql:///ftg
+PSQL_PORT ?= 5432
+PSQL_SHM ?= 1g
 
 # PUBMED CENTRAL
 pubmed: pubmed.parse pubmed.authors pubmed.aggregate pubmed.db pubmed.export pubmed.upload
@@ -94,8 +96,16 @@ semanticscholar.parse: chunksize = 1
 	rsync -avz -e "ssh -p $(RSYNC_PORT)" --progress $(DATA_ROOT)/$*/export $(RSYNC_DEST)/followthegrant/$*/
 
 # psql docker
+.PHONY: psql
 psql:
-	docker run -p 5432:5432 -e POSTGRES_USER=ftg -e POSTGRES_PASSWORD=ftg -d postgres:13
+	mkdir -p $(DATA_ROOT)/psql/data
+	docker run --shm-size=$(PSQL_SHM) -p $(PSQL_PORT):5432 -v $(DATA_ROOT)/psql/data:/var/lib/postgresql/data -e POSTGRES_USER=ftg -e POSTGRES_PASSWORD=ftg -d postgres > ./psql/docker_id
+	sleep 5
+	psql $(FTM_STORE_URI) < ./psql/alter_system.sql
+	docker restart `cat ./psql/docker_id`
+
+psql.%:
+	docker $* `cat ./psql/docker_id`
 
 # package
 
