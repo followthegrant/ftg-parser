@@ -3,6 +3,8 @@ FTM_STORE_URI ?= postgresql:///ftg
 PSQL_PORT ?= 5432
 PSQL_SHM ?= 1g
 
+export INGESTORS_LID_MODEL_PATH=./models/lid.176.ftz
+
 # PUBMED CENTRAL
 pubmed: pubmed.parse pubmed.authors pubmed.aggregate pubmed.db pubmed.export pubmed.upload
 pubmed.reparse: pubmed.download_json pubmed.parse_json pubmed.authors pubmed.aggregate pubmed.db pubmed.export pubmed.upload
@@ -121,6 +123,26 @@ psql:
 
 psql.%:
 	docker $* `cat ./psql/docker_id`
+
+
+# spacy dependencies
+spacy:
+	python3 -m spacy download en_core_web_sm
+	python3 -m spacy download de_core_news_sm
+	python3 -m spacy download fr_core_news_sm
+	python3 -m spacy download es_core_news_sm
+	python3 -m spacy download ru_core_news_sm
+	python3 -m spacy download pt_core_news_sm
+	python3 -m spacy download ro_core_news_sm
+	python3 -m spacy download mk_core_news_sm
+	python3 -m spacy download el_core_news_sm
+	python3 -m spacy download pl_core_news_sm
+	python3 -m spacy download it_core_news_sm
+	python3 -m spacy download lt_core_news_sm
+	python3 -m spacy download nl_core_news_sm
+	python3 -m spacy download nb_core_news_sm
+	python3 -m spacy download da_core_news_sm
+
 
 # package
 
