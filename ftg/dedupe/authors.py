@@ -109,9 +109,9 @@ def _get_aggregated_id(table: Table, author_id: str) -> str:
     if res:
         return author_id
     res = table.find_one(author_id=author_id)
-    if not res:
-        return author_id
-    return res["agg_id"]
+    if res:
+        return res["agg_id"]
+    return author_id
 
 
 def rewrite_entity(table: str, entity: dict, conn=None) -> dict:
@@ -138,7 +138,7 @@ def rewrite_entity(table: str, entity: dict, conn=None) -> dict:
 
         if entity["schema"] == "Documentation":
             role = entity["properties"]["role"][0]
-            if role == "author" or "conflict of interest statement" in role:
+            if role == "author" or "individual conflict of interest statement" in role:
                 author_id = entity["properties"]["entity"][0]
                 entity["properties"]["entity"] = [_get_aggregated_id(table, author_id)]
                 return entity
