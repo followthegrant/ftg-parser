@@ -9,6 +9,7 @@ pubmed.download:
 pubmed.parse: src = extracted
 pubmed.parse: pat = *xml  # xml/nxml
 pubmed.parse: parser = pubmed
+pubmed.parse: chunksize = 1000
 
 # EUROPEPMC
 europepmc: europepmc.parse europepmc.authors europepmc.aggregate europepmc.db europepmc.export europepmc.upload
@@ -18,6 +19,7 @@ europepmc.download:
 europepmc.parse: src = src
 europepmc.parse: pat = *.xml
 europepmc.parse: parser = europepmc
+europepmc.parse: chunksize = 1
 
 # EUROPEPMC PREPRINTS
 europepmc_ppr: europepmc_ppr.download europepmc_ppr.parse europepmc_ppr.authors europepmc_ppr.aggregate europepmc_ppr.db europepmc_ppr.export europepmc_ppr.upload
@@ -27,12 +29,14 @@ europepmc_ppr.download:
 europepmc_ppr.parse: src = src
 europepmc_ppr.parse: pat = *.xml
 europepmc_ppr.parse: parser = europepmc
+europepmc_ppr.parse: chunksize = 1
 
 # BIORXIV
 biorxiv: biorxiv.parse biorxiv.authors biorxiv.aggregate biorxiv.db biorxiv.export biorxiv.upload
 biorxiv.parse: src = src
 biorxiv.parse: pat = *.xml
 biorxiv.parse: parser = pubmed
+biorxiv.parse: chunksize = 1000
 
 # MEDRXIV
 medrxiv: medrxiv.parse medrxiv.authors medrxiv.aggregate medrxiv.db medrxiv.export medrxiv.upload
@@ -60,7 +64,7 @@ semanticscholar.parse: chunksize = 1
 
 %.parse:
 	mkdir -p $(DATA_ROOT)/$*/json
-	find $(DATA_ROOT)/$*/$(src)/ -type f -name "$(pat)" | parallel -N1000 --pipe ftg parse $(parser) --store-json $(DATA_ROOT)/$*/json | parallel -N10000 --pipe ftg map-ftm | parallel -N10000 --pipe ftm store write -d $*
+	find $(DATA_ROOT)/$*/$(src)/ -type f -name "$(pat)" | parallel -N$(chunksize) --pipe ftg parse $(parser) --store-json $(DATA_ROOT)/$*/json | parallel -N10000 --pipe ftg map-ftm | parallel -N10000 --pipe ftm store write -d $*
 
 
 # wrangling
