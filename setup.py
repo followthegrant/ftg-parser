@@ -41,6 +41,9 @@ setup(
         "spacy",
         "pyyaml<6.0.0",
         "pyparsing<3",
+        "fasttext",
+        "ingest-file @ git+https://github.com/alephdata/ingest-file.git",
+        "servicelayer @ git+https://github.com/alephdata/servicelayer.git",
     ],
     entry_points={
         "console_scripts": ["ftg = ftg.cli:cli"],
