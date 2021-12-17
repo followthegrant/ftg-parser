@@ -19,8 +19,8 @@ class ModelTestCase(TestCase):
         self.assertEqual(journal.id, "45a6bd84130dd5fbbaefba02664a8e5ee014934a")
         self.assertDictEqual(
             {
-                "name": "PLoS ONE",
                 "id": "45a6bd84130dd5fbbaefba02664a8e5ee014934a",
+                "name": "PLoS ONE",
             },
             journal.serialize(),
         )
@@ -83,7 +83,8 @@ class ModelTestCase(TestCase):
         author = model.Author(**data)
         self.assertIsInstance(author.input, model.AuthorInput)
         self.assertIsInstance(author.output, model.AuthorOutput)
-        self.assertEqual(author.id, "8404bc01043c78e7f7c3953e4abbbdedb02a4953")
+        # without any identification context author ids are randomized based on uuid4
+        # self.assertEqual(author.id, "29f97601cce345abc9795620fb48eb83a4c15e8c")
 
         # identification hints (e.g. a journal id)
         data = {"name": "Alice Smith", "identifier_hints": ["journalId123"]}
@@ -145,7 +146,7 @@ class ModelTestCase(TestCase):
                 },
                 "authors": [
                     {
-                        "id": "8d89751342a08677fb467e9aada4441405897401",
+                        "id": "60ecf3f6d39e3c634c00d218aed4cddc8298b237",
                         "name": "Mohanram Sivaraja",
                         "first_name": "Mohanram",
                         "last_name": "Sivaraja",
@@ -154,7 +155,7 @@ class ModelTestCase(TestCase):
                         "countries": [],
                     },
                     {
-                        "id": "7990f6aeb546b79d8b196b7254eaae62b7a25a1f",
+                        "id": "0ccb67aa5446279a76a38d711ccc7241c50cce55",
                         "name": "Nicola Pozzi",
                         "first_name": "Nicola",
                         "last_name": "Pozzi",
@@ -231,34 +232,34 @@ class ModelTestCase(TestCase):
         self.assertIsInstance(cois[0].output, model.CoiStatementOutput)
         self.assertDictEqual(
             {
-                "id": "c372ef001e661c8167ae3f6cbd2dea4f81059129",
+                "id": "1432f3f55a7dc130cd3f04ceaac8014e1da7b9e9",
                 "article_id": "a6bc0d02711e5a486f6954c598193eab9ee3d9cb",
                 "article_title": "Reversible covalent direct thrombin inhibitors",
-                "author_id": "8d89751342a08677fb467e9aada4441405897401",
+                "author_id": "60ecf3f6d39e3c634c00d218aed4cddc8298b237",
                 "author_name": "Mohanram Sivaraja",
                 "journal_name": "PLoS ONE",
                 "role": "individual conflict of interest statement",
                 "title": "individual conflict of interest statement (Mohanram Sivaraja)",
                 "text": "Competing Interests: MS, MR, KL, TPS, DMC, LI, SC, PZ, MAE, KMS, DCW, AD, and DBK are employees of Verseon Corporation. This does not alter our adherence to PLOS ONE policies on sharing data and materials.",
                 "published_at": datetime.date(2018, 2, 8),
-                "flag": True,
+                "flag": 1,
                 "index_text": "flag:1",
             },
             cois[0].serialize(),
         )
         self.assertDictEqual(
             {
-                "id": "913406c3d3c4c5893eebf7e518b825dee662bb4f",
+                "id": "782c01d5c57b76515b642c0eb692b6c57cb87d0d",
                 "article_id": "a6bc0d02711e5a486f6954c598193eab9ee3d9cb",
                 "article_title": "Reversible covalent direct thrombin inhibitors",
-                "author_id": "7990f6aeb546b79d8b196b7254eaae62b7a25a1f",
+                "author_id": "0ccb67aa5446279a76a38d711ccc7241c50cce55",
                 "author_name": "Nicola Pozzi",
                 "journal_name": "PLoS ONE",
                 "role": "individual conflict of interest statement",
                 "title": "individual conflict of interest statement (Nicola Pozzi)",
                 "text": "NP discloses a financial interest in Hemadvance, LLC and funding through AHA grant AHA15SDG25550094. This does not alter our adherence to PLOS ONE policies on sharing data and materials.",
                 "published_at": datetime.date(2018, 2, 8),
-                "flag": True,
+                "flag": 1,
                 "index_text": "flag:1",
             },
             cois[1].serialize(),

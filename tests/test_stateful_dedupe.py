@@ -81,7 +81,10 @@ class StatefulDedupTestCase(TestCase):
                         entities.add(entity)
                     if entity.schema.name == "Documentation":
                         role = entity.get("role")[0]
-                        if role == "author" or "conflict of interest statement" in role:
+                        if (
+                            role == "author"
+                            or "infividual conflict of interest statement" in role
+                        ):
                             entities.add(entity)
 
         # 2) get aggregated id pairs from triples
@@ -106,6 +109,12 @@ class StatefulDedupTestCase(TestCase):
                 merged_entity = dedupe.rewrite_entity(
                     "author_aggregation", entity.to_dict(), conn=conn
                 )
+                if merged_entity["properties"].get("member") == [
+                    "9076b473de6e975319c0de7ea3359f7c33bf3877"
+                ]:
+                    import ipdb
+
+                    ipdb.set_trace()
                 merged_entities.add(model.get_proxy(merged_entity))
 
         author_ids = set([a.id for a in entities if a.schema.name == "Person"])

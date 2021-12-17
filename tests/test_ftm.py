@@ -300,9 +300,10 @@ class ModelTestCase(TestCase):
                 "Note": 3,
                 "PlainText": 3,
                 "LegalEntity": 1,
+                "Mention": 1,
                 "Article": 1,
             },
-            res["schemas"],
+            dict(res["schemas"]),
         )
 
         self.assertSequenceEqual(
@@ -323,10 +324,10 @@ class ModelTestCase(TestCase):
                         "publisher": ["Clinical Ophthalmology (Auckland, N.Z.)"],
                         "publishedAt": ["2016-04-20"],
                         "author": [
-                            "Marcony R Santhiago",
-                            "Samir J Bechara",
-                            "Natalia T Giacomin",
                             "David Smadja",
+                            "Marcony R Santhiago",
+                            "Natalia T Giacomin",
+                            "Samir J Bechara",
                         ],
                         "indexText": [
                             "pmid:27143849\ndoi:10.2147/OPTH.S51313\npmcid:4844427"
@@ -550,10 +551,10 @@ class ModelTestCase(TestCase):
                         "date": ["2016-04-20"],
                         "parent": ["e9143144bc6b75cfa36503f3e749ce434150a3ca"],
                         "author": [
-                            "Marcony R Santhiago",
-                            "Samir J Bechara",
-                            "Natalia T Giacomin",
                             "David Smadja",
+                            "Marcony R Santhiago",
+                            "Natalia T Giacomin",
+                            "Samir J Bechara",
                         ],
                         "notes": ["1"],
                         "indexText": ["flag:1"],
