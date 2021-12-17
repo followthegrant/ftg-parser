@@ -5,6 +5,7 @@ PSQL_SHM ?= 1g
 
 # PUBMED CENTRAL
 pubmed: pubmed.parse pubmed.authors pubmed.aggregate pubmed.db pubmed.export pubmed.upload
+pubmed.reparse: pubmed.download_json pubmed.parse_json pubmed.authors pubmed.aggregate pubmed.db pubmed.export pubmed.upload
 pubmed.download:
 	mkdir -p $(DATA_ROOT)/pubmed/src
 	wget -P $(DATA_ROOT)/pubmed/src/ -r -l1 -H -nd -N -np -A "*.xml.tar.gz" -e robots=off ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_bulk/
@@ -15,6 +16,7 @@ pubmed.parse: chunksize = 1000
 
 # EUROPEPMC
 europepmc: europepmc.parse europepmc.authors europepmc.aggregate europepmc.db europepmc.export europepmc.upload
+europepmc.reparse: europepmc.download_json europepmc.parse_json europepmc.authors europepmc.aggregate europepmc.db europepmc.export europepmc.upload
 europepmc.download:
 	mkdir -p $(DATA_ROOT)/europepmc/src
 	wget -P $(DATA_ROOT)/europepmc/src/ -r -l1 -H -nd -N -np -A "*.xml.gz" -e robots=off https://europepmc.org/ftp/oa/
@@ -25,6 +27,7 @@ europepmc.parse: chunksize = 1
 
 # EUROPEPMC PREPRINTS
 europepmc_ppr: europepmc_ppr.download europepmc_ppr.parse europepmc_ppr.authors europepmc_ppr.aggregate europepmc_ppr.db europepmc_ppr.export europepmc_ppr.upload
+europepmc_ppr.reparse: europepmc_ppr.download_json europepmc_ppr.parse_json europepmc_ppr.authors europepmc_ppr.aggregate europepmc_ppr.db europepmc_ppr.export europepmc_ppr.upload
 europepmc_ppr.download:
 	mkdir -p $(DATA_ROOT)/europepmc_ppr/src
 	wget -P $(DATA_ROOT)/europepmc_ppr/src/ -r -l1 -H -nd -N -np -A "*.xml.gz" -e robots=off https://europepmc.org/ftp/preprint_fulltext
@@ -35,6 +38,7 @@ europepmc_ppr.parse: chunksize = 1
 
 # BIORXIV
 biorxiv: biorxiv.parse biorxiv.authors biorxiv.aggregate biorxiv.db biorxiv.export biorxiv.upload
+biorxiv.reparse: biorxiv.download_json biorxiv.parse_json biorxiv.authors biorxiv.aggregate biorxiv.db biorxiv.export biorxiv.upload
 biorxiv.parse: src = src
 biorxiv.parse: pat = *.xml
 biorxiv.parse: parser = pubmed
@@ -42,6 +46,7 @@ biorxiv.parse: chunksize = 1000
 
 # MEDRXIV
 medrxiv: medrxiv.parse medrxiv.authors medrxiv.aggregate medrxiv.db medrxiv.export medrxiv.upload
+medrxiv.reparse: medrxiv.download_json medrxiv.parse_json medrxiv.authors medrxiv.aggregate medrxiv.db medrxiv.export medrxiv.upload
 medrxiv.download:
 	mkdir -p $(DATA_ROOT)/medrxiv/src
 	# ca. 1.5 yrs back
@@ -64,10 +69,20 @@ semanticscholar.parse: parser = semanticscholar
 semanticscholar.parse: chunksize = 1
 
 
+# parse
 %.parse:
+	ftm store delete -d $*
 	mkdir -p $(DATA_ROOT)/$*/json
 	find $(DATA_ROOT)/$*/$(src)/ -type f -name "$(pat)" | parallel -N$(chunksize) --pipe ftg parse $(parser) --store-json $(DATA_ROOT)/$*/json | parallel -N10000 --pipe ftg map-ftm | parallel -N10000 --pipe ftm store write -d $*
 
+%.download_json:
+	mkdir -p $(DATA_ROOT)/$*/json
+	aws --endpoint-url https://$(S3_ENDPOINT) s3 cp s3://followthegrant/$*/export/json.tar.xz $(DATA_ROOT)/$*/json/
+	tar -xvf $(DATA_ROOT)/$*/json/json.tar.xz -C $(DATA_ROOT)/$*/json/ --strip-components=5
+
+%.parse_json:
+	ftm store delete -d $*
+	find $(DATA_ROOT)/$*/json/ -type f -name "*.json" -exec cat {} \; | jq -c | parallel -N1000 --pipe ftg map-ftm | parallel -N10000 --pipe ftm store write -d $*
 
 # wrangling
 %.authors:
@@ -93,7 +108,7 @@ semanticscholar.parse: chunksize = 1
 	tar cf - $(DATA_ROOT)/$*/json | parallel --pipe --recend '' --keep-order --block-size 1M "xz -9" > $(DATA_ROOT)/$*/export/json.tar.xz
 
 %.upload:
-	rsync -avz -e "ssh -p $(RSYNC_PORT)" --progress $(DATA_ROOT)/$*/export $(RSYNC_DEST)/followthegrant/$*/
+	aws --endpoint-url https://$(S3_ENDPOINT) s3 sync $(DATA_ROOT)/$*/export s3://followthegrant/$*/export
 
 # psql docker
 .PHONY: psql
