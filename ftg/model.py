@@ -235,7 +235,7 @@ class CoiStatement(Base):
         if self.input.author_name is not None:
             authors = None
         elif self.input.article is not None:
-            authors = [a.name for a in self.input.article.authors]
+            authors = sorted([a.name for a in self.input.article.authors])
         else:
             authors = None
         return {
@@ -282,7 +282,20 @@ class Article(Base):
 
     @cached_property
     def authors(self) -> Iterable[Author]:
-        return [Author(**a.dict()) for a in self.input.authors]
+        # use article id for identifier hint if nothing else available
+        _authors = [a.dict() for a in self.input.authors]
+        _authors = [
+            {
+                **a,
+                **{
+                    "identifier_hints": [self.id]
+                    if not a.get("identifier_hints")
+                    else []
+                },
+            }
+            for a in _authors
+        ]
+        return [Author(**a) for a in _authors]
 
     @cached_property
     def coi_statement(self):
