@@ -184,7 +184,7 @@ def db_dedupe_fingerprints(table):
     dedupe authors via triples table `table`
     based on fingerprints coming from stdin
     """
-    for fingerprint in sys.stdin.readlines():
+    for fingerprint in sys.stdin:
         fingerprint = fingerprint.strip()
         for pair in dedupe_db_fingerprint(table, fingerprint):
             sys.stdout.write(",".join(pair) + "\n")
