@@ -178,7 +178,7 @@ def db_dedupe_authors(table, source=None):
 
 
 @db.command("dedupe-fingerprints")
-@click.option("--table", default="author_triplets")
+@click.option("--table", default="author_triples")
 def db_dedupe_fingerprints(table):
     """
     dedupe authors via triples table `table`
