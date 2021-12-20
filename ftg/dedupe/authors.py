@@ -11,7 +11,7 @@ from ..db import get_connection
 from ..schema import ArticleFullOutput
 
 
-@lru_cache(maxsize=1024000)  # 1GB
+@lru_cache(maxsize=1024 * 1000 * 10)  # 10GB
 def _get_fingerprint(name: str) -> str:
     return make_entity_id(fingerprints.generate(name))
 
@@ -87,23 +87,19 @@ def dedupe_db(
     with conn as tx:
         table = tx[table]
         triples = set()
-        current_f = None
         if source is not None:
-            rows = table.find(source=source, order_by="fingerprint")
+            q = table.find(source=source)
         else:
-            rows = table.find(order_by="fingerprint")
-        for row in rows:
-            if row["fingerprint"] != current_f:
-                # first flush triples
-                yield from dedupe_triples(triples)
-                triples = set()
-                current_f = row["fingerprint"]
-            triples.add((row["fingerprint"], row["author_id"], row["value_id"]))
-        if triples:
-            yield from dedupe_triples(triples)
+            q = table.all()
+        for fp in q.distinct("fingerprint"):
+            rows = table.find(fingerprint=fp)
+            for row in rows:
+                triples.add((row["fingerprint"], row["author_id"], row["value_id"]))
+                if triples:
+                    yield from dedupe_triples(triples)
 
 
-@lru_cache(maxsize=1024000)  # 1GB
+@lru_cache(maxsize=1024 * 1000 * 10)  # 10GB
 def _get_aggregated_id(table: Table, author_id: str) -> str:
     res = table.find_one(agg_id=author_id)
     if res:
