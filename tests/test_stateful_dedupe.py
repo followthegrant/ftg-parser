@@ -109,12 +109,12 @@ class StatefulDedupTestCase(TestCase):
                 merged_entity = dedupe.rewrite_entity(
                     "author_aggregation", entity.to_dict(), conn=conn
                 )
-                if merged_entity["properties"].get("member") == [
-                    "9076b473de6e975319c0de7ea3359f7c33bf3877"
-                ]:
-                    import ipdb
+                # if merged_entity["properties"].get("member") == [
+                #     "9076b473de6e975319c0de7ea3359f7c33bf3877"
+                # ]:
+                #     import ipdb
 
-                    ipdb.set_trace()
+                #     ipdb.set_trace()
                 merged_entities.add(model.get_proxy(merged_entity))
 
         author_ids = set([a.id for a in entities if a.schema.name == "Person"])
@@ -151,3 +151,66 @@ class StatefulDedupTestCase(TestCase):
         )
         self.assertGreater(len(docs), len(merged_docs))
         self.assertFalse(merged_docs - docs)
+
+    def test_stateful_dedupe_triples_fingerprint(self):
+        triples = set()
+        entities = set()
+        for path in glob.glob("./testdata/biorxiv/*.xml"):
+            data = load.pubmed(path)
+            for d in data:
+                article = parse.parse_article(d)
+                for triple in dedupe.explode_triples(article):
+                    triples.add(triple)
+                for entity in ftm.make_entities(article):
+                    if entity.schema.name in ("Person", "Membership"):
+                        entities.add(entity)
+                    if entity.schema.name == "Documentation":
+                        role = entity.get("role")[0]
+                        if (
+                            role == "author"
+                            or "infividual conflict of interest statement" in role
+                        ):
+                            entities.add(entity)
+
+        merged_entities = set()
+        with dataset.connect("sqlite:///:memory:") as conn:
+            conn.query(
+                """
+                create table if not exists author_triples (
+                  fingerprint char(40) not null,
+                  author_id char(40) not null,
+                  value_id char(40) not null,
+                  unique (fingerprint, author_id, value_id)
+                )
+                """
+            )
+            conn.query(
+                """
+                create table if not exists author_aggregation (
+                  agg_id char(40) not null,
+                  author_id char(40) not null,
+                  unique (agg_id, author_id)
+                )
+                """
+            )
+            db.insert_many("author_triples", triples, conn=conn)
+
+            for fp in conn.query("select distinct fingerprint from author_triples"):
+                fp = fp["fingerprint"]
+                pairs = dedupe.dedupe_db_fingerprint("author_triples", fp, conn=conn)
+                db.insert_many("author_aggregation", pairs, conn=conn)
+
+            for entity in entities:
+                merged_entity = dedupe.rewrite_entity(
+                    "author_aggregation", entity.to_dict(), conn=conn
+                )
+                merged_entities.add(model.get_proxy(merged_entity))
+
+        author_ids = set([a.id for a in entities if a.schema.name == "Person"])
+        merged_author_ids = set(
+            [a.id for a in merged_entities if a.schema.name == "Person"]
+        )
+
+        # there shozld be less different authors now
+        self.assertGreater(len(author_ids), len(merged_author_ids))
+        self.assertFalse(merged_author_ids - author_ids)

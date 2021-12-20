@@ -99,6 +99,21 @@ def dedupe_db(
                     yield from dedupe_triples(triples)
 
 
+def dedupe_db_fingerprint(
+    table: str, fingerprint: str, conn=None
+) -> Iterator[tuple[str, str, str]]:
+    if conn is None:
+        conn = get_connection()
+    with conn as tx:
+        table = tx[table]
+        triples = set()
+        rows = table.find(fingerprint=fingerprint)
+        for row in rows:
+            triples.add((row["fingerprint"], row["author_id"], row["value_id"]))
+            if triples:
+                yield from dedupe_triples(triples)
+
+
 @lru_cache(maxsize=1024 * 1000 * 10)  # 10GB
 def _get_aggregated_id(table: Table, author_id: str) -> str:
     res = table.find_one(agg_id=author_id)
