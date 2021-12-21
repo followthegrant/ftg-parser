@@ -80,8 +80,8 @@ def dedupe_db(
             rows = table.find(fingerprint=fp)
             for row in rows:
                 triples.add((row["fingerprint"], row["author_id"], row["value_id"]))
-                if triples:
-                    yield from dedupe_triples(triples)
+            if triples:
+                yield from dedupe_triples(triples)
 
 
 def dedupe_db_fingerprint(
@@ -95,8 +95,8 @@ def dedupe_db_fingerprint(
         rows = table.find(fingerprint=fingerprint)
         for row in rows:
             triples.add((row["fingerprint"], row["author_id"], row["value_id"]))
-            if triples:
-                yield from dedupe_triples(triples)
+        if triples:
+            yield from dedupe_triples(triples)
 
 
 @lru_cache(maxsize=1024 * 1000 * 10)  # 10GB
