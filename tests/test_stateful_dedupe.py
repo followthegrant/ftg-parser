@@ -205,7 +205,7 @@ class StatefulDedupTestCase(TestCase):
 
             for fp in conn.query("select distinct fingerprint from author_triples"):
                 fp = fp["fingerprint"]
-                pairs = dedupe.dedupe_db_fingerprint("author_triples", fp, conn=conn)
+                pairs = dedupe.dedupe_db("author_triples", fp, conn=conn)
                 db.insert_many("author_aggregation", pairs, conn=conn)
 
             for entity in entities:

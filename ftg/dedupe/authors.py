@@ -1,7 +1,7 @@
 from collections import defaultdict
 from functools import lru_cache
 from itertools import combinations
-from typing import Iterable, Iterator, Optional
+from typing import Iterable, Iterator
 
 import fingerprints
 import networkx as nx
@@ -65,26 +65,6 @@ def dedupe_triples(
 
 
 def dedupe_db(
-    table: str, source: Optional[str] = None, conn=None
-) -> Iterator[tuple[str, str, str]]:
-    if conn is None:
-        conn = get_connection()
-    with conn as tx:
-        table = tx[table]
-        triples = set()
-        if source is not None:
-            q = table.find(source=source)
-        else:
-            q = table.all()
-        for fp in q.distinct("fingerprint"):
-            rows = table.find(fingerprint=fp)
-            for row in rows:
-                triples.add((row["fingerprint"], row["author_id"], row["value_id"]))
-            if triples:
-                yield from dedupe_triples(triples)
-
-
-def dedupe_db_fingerprint(
     table: str, fingerprint: str, conn=None
 ) -> Iterator[tuple[str, str, str]]:
     if conn is None:

@@ -12,7 +12,6 @@ from .dedupe.authors import (
     explode_triples,
     dedupe_triples,
     dedupe_db,
-    dedupe_db_fingerprint,
     rewrite_entity,
 )
 from .ftm import make_entities
@@ -171,22 +170,14 @@ def db_insert(table):
 
 @db.command("dedupe-authors")
 @click.option("--table", default="author_triples")
-@click.option("--source", help="Filter for only this source")
-def db_dedupe_authors(table, source=None):
-    for pair in dedupe_db(table, source):
-        sys.stdout.write(",".join(pair) + "\n")
-
-
-@db.command("dedupe-fingerprints")
-@click.option("--table", default="author_triples")
-def db_dedupe_fingerprints(table):
+def db_dedupe(table):
     """
     dedupe authors via triples table `table`
     based on fingerprints coming from stdin
     """
     for fingerprint in sys.stdin:
         fingerprint = fingerprint.strip()
-        for pair in dedupe_db_fingerprint(table, fingerprint):
+        for pair in dedupe_db(table, fingerprint):
             sys.stdout.write(",".join(pair) + "\n")
 
 

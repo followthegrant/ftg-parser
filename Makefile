@@ -91,7 +91,7 @@ semanticscholar.parse: chunksize = 1
 	psql $(FTM_STORE_URI) < ./psql/author_triples.sql
 	find $(DATA_ROOT)/$*/json/ -type f -name "*.json" -exec cat {} \; | jq -c | parallel -N 10000 --pipe ftg author-triples --source $* | parallel --pipe -N10000 ftg db insert author_triples
 	# ftg db dedupe-authors | ftg db insert author_aggregation
-	psql $(FTM_STORE_URI) -c "copy (select a.fingerprint from (select fingerprint, count(author_id) from author_triples group by fingerprint) a where a.count > 1) to stdout" | parallel -N1000 --pipe ftg db dedupe-fingerprints | parallel --pipe -N10000 ftg db insert author_aggregation
+	psql $(FTM_STORE_URI) -c "copy (select a.fingerprint from (select fingerprint, count(author_id) from author_triples group by fingerprint) a where a.count > 1) to stdout" | parallel -N1000 --pipe ftg db dedupe-authors | parallel --pipe -N10000 ftg db insert author_aggregation
 
 %.aggregate:
 	ftm store delete -d $*_aggregated
