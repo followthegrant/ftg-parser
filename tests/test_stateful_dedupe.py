@@ -1,3 +1,4 @@
+import csv
 import glob
 from unittest import TestCase
 
@@ -53,7 +54,7 @@ class StatefulDedupTestCase(TestCase):
             ("alice", "id4", "co-author bob"),
             ("alice", "id5", "institute 3"),
             ("alice", "id6", "institute 3"),
-            ("bob", "id5", "institute 1"),
+            ("bob", "id", "institute 1"),
         )
 
         res = [r for r in dedupe.dedupe_triples(triples)]
@@ -61,6 +62,19 @@ class StatefulDedupTestCase(TestCase):
             sorted(res),
             [("id1", "id2"), ("id1", "id3"), ("id1", "id4"), ("id5", "id6")],
         )
+
+        # more real world
+        with open("./testdata/author_triples.txt") as f:
+            reader = csv.reader(f, delimiter="\t")
+            triples = [r[:3] for r in reader]
+
+        self.assertEqual(len(triples), 21127)
+        res = [r for r in dedupe.dedupe_triples(triples)]
+        self.assertEqual(len(res), 1084)
+
+        # deduped 1084 different authors to 30:
+        self.assertEqual(len(set([r[0] for r in res])), 30)
+        self.assertEqual(len(set([r[1] for r in res])), 1084)
 
     def test_stateful_workflow(self):
         """
@@ -109,12 +123,6 @@ class StatefulDedupTestCase(TestCase):
                 merged_entity = dedupe.rewrite_entity(
                     "author_aggregation", entity.to_dict(), conn=conn
                 )
-                # if merged_entity["properties"].get("member") == [
-                #     "9076b473de6e975319c0de7ea3359f7c33bf3877"
-                # ]:
-                #     import ipdb
-
-                #     ipdb.set_trace()
                 merged_entities.add(model.get_proxy(merged_entity))
 
         author_ids = set([a.id for a in entities if a.schema.name == "Person"])

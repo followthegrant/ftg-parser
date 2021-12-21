@@ -4,6 +4,7 @@ from itertools import combinations
 from typing import Iterable, Iterator, Optional
 
 import fingerprints
+import networkx as nx
 from dataset.table import Table
 from followthemoney.util import make_entity_id
 
@@ -54,29 +55,13 @@ def dedupe_triples(
             if a1[1] & a2[1]:  # they share some institutions or co-authors
                 res.add((a1[0], a2[0]))
 
-        # then dedupe via id pairs
-        # (if a = b and b = c then also a = c)
-        merged = defaultdict(set)
-        for a1, a2 in combinations(sorted(res), 2):
-            a1s, a2s = set(a1), set(a2)
-            if a1s & a2s:
-                base, *rest = sorted(a1s | a2s)
-                for basebase, values in merged.items():
-                    if base in values:
-                        base = basebase
-                        break
-                merged[base].update(rest)
-                # remove from result
-                res.discard(a1)
-                res.discard(a2)
-
-        for base, values in merged.items():
-            for v in sorted(values):
-                yield base, v
-
-        # some leftovers
-        for x in res:
-            yield tuple(sorted(x))
+        # generate graph from connected pairs
+        G = nx.Graph()
+        G.add_edges_from(res)
+        for components in nx.connected_components(G):
+            base, *rest = sorted(components)
+            for r in rest:
+                yield base, r
 
 
 def dedupe_db(

@@ -42,6 +42,7 @@ setup(
         "pyyaml<6.0.0",
         "pyparsing<3",
         "fasttext",
+        "networkx",
         "ingest-file @ git+https://github.com/alephdata/ingest-file.git",
         "servicelayer @ git+https://github.com/alephdata/servicelayer.git",
     ],
