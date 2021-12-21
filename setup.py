@@ -43,7 +43,7 @@ setup(
         "pyparsing<3",
         "fasttext",
         "networkx",
-        "ingest-file @ git+https://github.com/alephdata/ingest-file.git",
+        "ingest @ git+https://github.com/alephdata/ingest-file.git",
         "servicelayer @ git+https://github.com/alephdata/servicelayer.git",
     ],
     entry_points={
