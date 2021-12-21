@@ -11,6 +11,9 @@ pubmed.reparse: pubmed.download_json pubmed.parse_json pubmed.authors pubmed.agg
 pubmed.download:
 	mkdir -p $(DATA_ROOT)/pubmed/src
 	wget -P $(DATA_ROOT)/pubmed/src/ -r -l1 -H -nd -N -np -A "*.xml.tar.gz" -e robots=off ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_bulk/
+pubmed.extract:
+	mkdir -p $(DATA_ROOT)/pubmed/extracted
+	parallel tar -C $(DATA_ROOT)/pubmed/extracted -xvf ::: $(DATA_ROOT)/pubmed/src/*.tar.gz
 pubmed.parse: src = extracted
 pubmed.parse: pat = *xml  # xml/nxml
 pubmed.parse: parser = pubmed
@@ -23,7 +26,7 @@ europepmc.download:
 	mkdir -p $(DATA_ROOT)/europepmc/src
 	wget -P $(DATA_ROOT)/europepmc/src/ -r -l1 -H -nd -N -np -A "*.xml.gz" -e robots=off https://europepmc.org/ftp/oa/
 europepmc.parse: src = src
-europepmc.parse: pat = *.xml
+europepmc.parse: pat = *.xml.gz
 europepmc.parse: parser = europepmc
 europepmc.parse: chunksize = 1
 
@@ -34,7 +37,7 @@ europepmc_ppr.download:
 	mkdir -p $(DATA_ROOT)/europepmc_ppr/src
 	wget -P $(DATA_ROOT)/europepmc_ppr/src/ -r -l1 -H -nd -N -np -A "*.xml.gz" -e robots=off https://europepmc.org/ftp/preprint_fulltext
 europepmc_ppr.parse: src = src
-europepmc_ppr.parse: pat = *.xml
+europepmc_ppr.parse: pat = *.xml.gz
 europepmc_ppr.parse: parser = europepmc
 europepmc_ppr.parse: chunksize = 1
 

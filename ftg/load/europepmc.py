@@ -27,18 +27,15 @@ log = logging.getLogger(__name__)
 
 def load(fpath: str) -> Iterator[dict]:
     try:
-        content = load_or_extract(fpath, "rb")
+        content = load_or_extract(fpath)
         articles = etree.iterparse(
-            BytesIO(content), tag="article", recover=True, huge_tree=True
+            BytesIO(content.encode()), tag="article", recover=True, huge_tree=True
         )
         for _, el in articles:
             try:
                 for data in load_pubmed(el):
                     yield data
             except Exception as e:
-                import ipdb
-
-                ipdb.set_trace()
                 log.error(f"Cannot load via pubmed at `{fpath}`: `{e}`")
             # FIXME memory leaks?
             el.clear()

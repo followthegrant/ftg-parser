@@ -78,18 +78,18 @@ class cached_property:
         return res
 
 
-def load_or_extract(fp, mode="r"):
+def load_or_extract(fp):
     _, ext = os.path.splitext(fp)
     if ext == ".gz":
-        with gzip.open(fp, mode) as f:
+        with gzip.open(fp) as f:
             content = f.read()
         return content.decode()
     if ext == ".meca":  # medRxiv
-        with ZipFile(fp, mode) as f:
+        with ZipFile(fp) as f:
             for file in f.infolist():
                 if file.filename.endswith("xml"):
                     return f.open(file).read()
     else:
-        with open(fp, mode) as f:
+        with open(fp) as f:
             content = f.read()
         return content

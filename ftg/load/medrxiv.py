@@ -23,7 +23,7 @@ log = logging.getLogger(__name__)
 
 def load(fpath: str) -> Iterator[dict]:
     try:
-        content = load_or_extract(fpath, "r")
+        content = load_or_extract(fpath)
         try:
             for data in load_pubmed(content):
                 yield data
