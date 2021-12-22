@@ -65,32 +65,48 @@ def dedupe_triples(
 
 
 def dedupe_db(
-    table: str, fingerprint: str, conn=None
+    table: str, fingerprint: str, dataset: str = None, conn=None
 ) -> Iterator[tuple[str, str, str]]:
     if conn is None:
         conn = get_connection()
     with conn as tx:
         table = tx[table]
         triples = set()
-        rows = table.find(fingerprint=fingerprint)
+
+        if dataset is not None:
+            rows = table.find(fingerprint=fingerprint, dataset=dataset)
+        else:
+            rows = table.find(fingerprint=fingerprint)
+
         for row in rows:
             triples.add((row["fingerprint"], row["author_id"], row["value_id"]))
+
         if triples:
             yield from dedupe_triples(triples)
 
 
 @lru_cache(maxsize=1024 * 1000 * 10)  # 10GB
-def _get_aggregated_id(table: Table, author_id: str) -> str:
-    res = table.find_one(agg_id=author_id)
+def _get_aggregated_id(table: Table, author_id: str, dataset: str = None) -> str:
+    if dataset is not None:
+        res = table.find_one(agg_id=author_id, dataset=dataset)
+    else:
+        res = table.find_one(agg_id=author_id)
+
     if res:
         return author_id
-    res = table.find_one(author_id=author_id)
+
+    if dataset is not None:
+        res = table.find_one(author_id=author_id, dataset=dataset)
+    else:
+        res = table.find_one(author_id=author_id)
+
     if res:
         return res["agg_id"]
+
     return author_id
 
 
-def rewrite_entity(table: str, entity: dict, conn=None) -> dict:
+def rewrite_entity(table: str, entity: dict, dataset: str = None, conn=None) -> dict:
     """
     rewrite author ids for `entity` fetched from generated pairs table
     """
@@ -104,19 +120,23 @@ def rewrite_entity(table: str, entity: dict, conn=None) -> dict:
         table = tx[table]
 
         if entity["schema"] == "Person":
-            entity["id"] = _get_aggregated_id(table, entity["id"])
+            entity["id"] = _get_aggregated_id(table, entity["id"], dataset)
             return entity
 
         if entity["schema"] == "Membership":
             author_id = entity["properties"]["member"][0]
-            entity["properties"]["member"] = [_get_aggregated_id(table, author_id)]
+            entity["properties"]["member"] = [
+                _get_aggregated_id(table, author_id, dataset)
+            ]
             return entity
 
         if entity["schema"] == "Documentation":
             role = entity["properties"]["role"][0]
             if role == "author" or "individual conflict of interest statement" in role:
                 author_id = entity["properties"]["entity"][0]
-                entity["properties"]["entity"] = [_get_aggregated_id(table, author_id)]
+                entity["properties"]["entity"] = [
+                    _get_aggregated_id(table, author_id, dataset)
+                ]
                 return entity
 
         return entity

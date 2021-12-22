@@ -1,8 +1,7 @@
-DATA_ROOT ?= data
-FTM_STORE_URI ?= postgresql:///ftg
-PSQL_PORT ?= 5432
-PSQL_SHM ?= 1g
-
+export DATA_ROOT ?= `pwd`/data
+export FTM_STORE_URI ?= postgresql:///ftg
+export PSQL_PORT ?= 5432
+export PSQL_SHM ?= 1g
 export INGESTORS_LID_MODEL_PATH=./models/lid.176.ftz
 
 # PUBMED CENTRAL
@@ -15,7 +14,7 @@ pubmed.extract:
 	mkdir -p $(DATA_ROOT)/pubmed/extracted
 	parallel tar -C $(DATA_ROOT)/pubmed/extracted -xvf ::: $(DATA_ROOT)/pubmed/src/*.tar.gz
 pubmed.parse: src = extracted
-pubmed.parse: pat = *xml  # xml/nxml
+pubmed.parse: pat = *xml
 pubmed.parse: parser = pubmed
 pubmed.parse: chunksize = 1000
 
@@ -91,14 +90,13 @@ semanticscholar.parse: chunksize = 1
 
 # wrangling
 %.authors:
-	psql $(FTM_STORE_URI) < ./psql/author_triples.sql
-	find $(DATA_ROOT)/$*/json/ -type f -name "*.json" -exec cat {} \; | jq -c | parallel -N 10000 --pipe ftg author-triples --source $* | parallel --pipe -N10000 ftg db insert author_triples
-	# ftg db dedupe-authors | ftg db insert author_aggregation
-	psql $(FTM_STORE_URI) -c "copy (select a.fingerprint from (select fingerprint, count(author_id) from author_triples group by fingerprint) a where a.count > 1) to stdout" | parallel -N1000 --pipe ftg db dedupe-authors | parallel --pipe -N10000 ftg db insert author_aggregation
+	psql $(FTM_STORE_URI) < ./psql/author_dedupe.sql
+	find $(DATA_ROOT)/$*/json/ -type f -name "*.json" -exec cat {} \; | jq -c | parallel -N 10000 --pipe ftg author-triples -d $* | parallel --pipe -N10000 ftg db insert -t author_triples
+	psql $(FTM_STORE_URI) -c "copy (select a.fingerprint from (select fingerprint, count(author_id) from author_triples where dataset = '$*' group by fingerprint) a where a.count > 1) to stdout" | parallel -N1000 --pipe ftg db dedupe-authors -d $* | parallel --pipe -N10000 ftg db insert -t author_aggregation
 
 %.aggregate:
 	ftm store delete -d $*_aggregated
-	ftm store iterate -d $* | parallel --pipe -N10000 ftg db rewrite-author-ids | parallel --pipe -N10000 ftm store write -d $*_aggregated -o aggregated
+	ftm store iterate -d $* | parallel --pipe -N10000 ftg db rewrite-author-ids -d $* | parallel --pipe -N10000 ftm store write -d $*_aggregated -o aggregated
 	ftm store delete -d $*
 
 %.db:
@@ -128,6 +126,8 @@ psql:
 psql.%:
 	docker $* `cat ./psql/docker_id`
 
+psql.start_local:
+	docker run --shm-size=$(PSQL_SHM) -p $(PSQL_PORT):5432 -v $(DATA_ROOT)/psql/data:/var/lib/postgresql/data -e POSTGRES_USER=ftg -e POSTGRES_PASSWORD=ftg -d postgres > ./psql/docker_id
 
 # spacy dependencies
 spacy:

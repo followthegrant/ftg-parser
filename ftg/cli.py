@@ -1,25 +1,28 @@
-import os
 import csv
 import json
 import logging
-import sys
+import os
 
 import click
+from followthemoney.cli.util import MAX_LINE, write_object
 
 from . import load
 from .coi import flag_coi
-from .dedupe.authors import (
-    explode_triples,
-    dedupe_triples,
-    dedupe_db,
-    rewrite_entity,
-)
+from .db import insert_many
+from .dedupe import authors as dedupe
 from .ftm import make_entities
 from .parse import parse_article
 from .schema import ArticleFullOutput
-from .db import insert_many
 
 log = logging.getLogger(__name__)
+
+
+def readlines(stream):
+    while True:
+        line = stream.readline(MAX_LINE)
+        if not line:
+            return
+        yield line.strip()
 
 
 @click.group()
@@ -29,12 +32,14 @@ def cli():
 
 @cli.command("parse")
 @click.argument("collection")
+@click.option("-i", "--infile", type=click.File("r"), default="-")
+@click.option("-o", "--outfile", type=click.File("w"), default="-")
 @click.option(
     "--store-json",
     help="Store parsed json into given directory (1 file per article)",
     type=click.Path(exists=True),
 )
-def parse(collection, store_json=None):
+def parse(collection, infile, outfile, store_json=None):
     """
     parse source xml/html files into json representation with metadata, authors,
     institutions and conflict of interest statements
@@ -47,8 +52,7 @@ def parse(collection, store_json=None):
         cord
     """
     loader = getattr(load, collection)
-    for fpath in sys.stdin:
-        fpath = fpath.strip()
+    for fpath in readlines(infile):
         try:
             data = loader(fpath)
         except Exception as e:
@@ -58,65 +62,77 @@ def parse(collection, store_json=None):
             for d in data:
                 try:
                     d = parse_article(d)
-                    res = json.dumps(d.dict(), default=lambda x: str(x))
+                    res = json.dumps(d.dict(), default=lambda x: str(x), sort_keys=True)
                     if store_json is not None:
                         fp = os.path.join(store_json, d.id + ".json")
                         with open(fp, "w") as f:
                             f.write(res)
-                    sys.stdout.write(res + "\n")
+                    outfile.write(res + "\n")
                 except Exception as e:
                     log.error(f"Cannot parse `{fpath}`: '{e}'")
 
 
 @cli.command("map-ftm")
-def ftm():
+@click.option("-i", "--infile", type=click.File("r"), default="-")
+@click.option("-o", "--outfile", type=click.File("w"), default="-")
+def map_ftm(infile, outfile):
     """
     parse input json into ftm entities
     """
-    for data in sys.stdin.readlines():
+    for data in readlines(infile):
         data = json.loads(data)
         data = ArticleFullOutput(**data)
         for entity in make_entities(data):
-            sys.stdout.write(json.dumps(entity.to_dict()) + "\n")
+            write_object(outfile, entity)
 
 
 @cli.command("author-triples")
-@click.option("--source", help="Append source column with this value")
-def author_triplets(source=None):
+@click.option("-i", "--infile", type=click.File("r"), default="-")
+@click.option("-o", "--outfile", type=click.File("w"), default="-")
+@click.option("-d", "--dataset", help="Append source (dataset) column with this value")
+def author_triplets(infile, outfile, dataset=None):
     """
     generate author triples for institutions and co-authors:
 
     fingerprint,author_id,coauthor_id
     fingerprint,author_id,institution_id
 
-    optionally append `source` value to each row:
+    optionally append `dataset` value to each row:
 
-    fingerprint,author_id,institution_id,source_name
+    fingerprint,author_id,institution_id,dataset
     ...
     """
-    for data in sys.stdin:
+    for data in readlines(infile):
         data = json.loads(data)
         data = ArticleFullOutput(**data)
-        for triple in explode_triples(data):
+        for triple in dedupe.explode_triples(data):
             out = ",".join(triple)
-            if source is not None:
-                out += f",{source}"
-            sys.stdout.write(out + "\n")
+            if dataset is not None:
+                out += f",{dataset}"
+            outfile.write(out + "\n")
 
 
 @cli.command("dedupe-triples")
-def _dedupe_triples():
+@click.option("-i", "--infile", type=click.File("r"), default="-")
+@click.option("-o", "--outfile", type=click.File("w"), default="-")
+@click.option("-d", "--dataset", help="Append source (dataset) column with this value")
+def dedupe_triples(infile, outfile, dataset=None):
     """
     dedupe data based on triples,
     returns matching id pairs
     """
-    triples = csv.reader(sys.stdin)
-    for pair in dedupe_triples(triples):
-        sys.stdout.write(",".join(pair) + "\n")
+    triples = csv.reader(infile)
+    for pair in dedupe.dedupe_triples(triples):
+        out = ",".join(pair)
+        if dataset is not None:
+            out += f",{dataset}"
+        outfile.write(out + "\n")
 
 
 @cli.command("flag-cois")
-def flag_cois():
+@click.option("-i", "--infile", type=click.File("r"), default="-")
+@click.option("-o", "--outfile", type=click.File("w"), default="-")
+def flag_cois(infile, outfile):
     """
     Flag COI statements if there is a conflict (1) or not (0)
     Expects CSV from STDIN without header row to be able to process in parallel
@@ -127,8 +143,8 @@ def flag_cois():
 
     cat cois.csv | tail -n +2 | parallel --pipe ftgftm flag_cois > cois.flagged.csv
     """
-    reader = csv.reader(sys.stdin)
-    writer = csv.writer(sys.stdout)
+    reader = csv.reader(infile)
+    writer = csv.writer(outfile)
     for row in reader:
         try:
             coi = row[0]
@@ -145,8 +161,9 @@ def db():
 
 
 @db.command("insert")
-@click.argument("table")
-def db_insert(table):
+@click.option("-i", "--infile", type=click.File("r"), default="-")
+@click.option("-t", "--table", required=True, help="Database table name to write to")
+def db_insert(infile, table):
     """
     bulk upsert of stdin csv format to database defined via
     `FTM_STORE_URI`
@@ -159,7 +176,7 @@ def db_insert(table):
     this can cause deadlocks on postgresql!!
     """
     rows = []
-    for ix, row in enumerate(csv.reader(sys.stdin)):
+    for ix, row in enumerate(csv.reader(infile)):
         rows.append(row)
         if ix % 10000 == 0:
             insert_many(table, rows)
@@ -169,25 +186,45 @@ def db_insert(table):
 
 
 @db.command("dedupe-authors")
-@click.option("--table", default="author_triples")
-def db_dedupe(table):
+@click.option("-i", "--infile", type=click.File("r"), default="-")
+@click.option("-o", "--outfile", type=click.File("w"), default="-")
+@click.option(
+    "-t",
+    "--table",
+    default="author_triples",
+    help="Database table to read triples from",
+    show_default=True,
+)
+@click.option("-d", "--dataset", help="Filter triples for this dataset")
+def dedupe_authors(infile, outfile, table, dataset=None):
     """
     dedupe authors via triples table `table`
-    based on fingerprints coming from stdin
+    based on fingerprints coming from infile
     """
-    for fingerprint in sys.stdin:
-        fingerprint = fingerprint.strip()
-        for pair in dedupe_db(table, fingerprint):
-            sys.stdout.write(",".join(pair) + "\n")
+    for fingerprint in readlines(infile):
+        for pair in dedupe.dedupe_db(table, fingerprint, dataset):
+            out = ",".join(pair)
+            if dataset is not None:
+                out += f",{dataset}"
+            outfile.write(out + "\n")
 
 
 @db.command("rewrite-author-ids")
-@click.option("--table", default="author_aggregation")
-def db_rewrite_authors(table):
+@click.option("-i", "--infile", type=click.File("r"), default="-")
+@click.option("-o", "--outfile", type=click.File("w"), default="-")
+@click.option(
+    "-t",
+    "--table",
+    default="author_aggregation",
+    help="Database table to read aggregated IDs from",
+    show_default=True,
+)
+@click.option("-d", "--dataset", help="Filter IDs for this dataset")
+def db_rewrite_authors(infile, outfile, table, dataset=None):
     """
     rewrite author ids from db table with stored (agg_id, author_id) pairs
     """
-    for entity in sys.stdin:
+    for entity in readlines(infile):
         entity = json.loads(entity)
-        entity = rewrite_entity(table, entity)
-        sys.stdout.write(json.dumps(entity) + "\n")
+        entity = dedupe.rewrite_entity(table, entity, dataset)
+        outfile.write(json.dumps(entity) + "\n")
