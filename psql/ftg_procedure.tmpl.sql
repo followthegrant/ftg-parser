@@ -147,11 +147,12 @@ create table @dataset_cois as (
     c.entity -> 'properties' -> 'bodyText' ->> 0 as statement,
     (c.entity -> 'properties' -> 'notes' ->> 0)::int as flag
   from @dataset_documentation a
-  join @dataset_documentation b
-    on a.entity = b.document
-  left join @collection c
+  join @collection c
     on c.id = a.entity
     and c.origin = 'aggregated'
+  left join @dataset_documentation b
+    on a.entity = b.document
+  where a.role like '%conflict of interest statement%'
 );
 create index on @dataset_cois (article_id);
 create index on @dataset_cois (author_id);
