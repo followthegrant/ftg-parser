@@ -7,11 +7,13 @@ from pydantic import BaseModel
 class JournalInput(BaseModel):
     identifier: Optional[str] = None
     name: str
+    website: Optional[str] = None
 
 
 class JournalOutput(BaseModel):
     id: str
     name: str
+    website: Optional[str] = None
 
 
 class InstitutionInput(BaseModel):

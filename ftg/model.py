@@ -60,7 +60,7 @@ class Journal(Base):
     OutputSchema = JournalOutput
 
     def get_output_data(self) -> Type[JournalOutput]:
-        return {"id": self.id, "name": self.input.name}
+        return {"id": self.id, "name": self.input.name, "website": self.input.website}
 
 
 class Institution(Base):
