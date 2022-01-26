@@ -73,6 +73,18 @@ semanticscholar.parse: parser = semanticscholar
 semanticscholar.parse: chunksize = 1
 
 
+# OPENAIRE COVID SUBSET
+openaire_covid: openaire_covid.download openaire_covid.parse openaire_covid.authors openaire_covid.aggregate openaire_covid.db openaire_covid.export openaire_covid.upload
+openaire_covid.download:
+	mkdir -p $(DATA_ROOT)/openaire_covid/src
+	mkdir -p $(DATA_ROOT)/openaire_covid/extracted
+	wget -P $(DATA_ROOT)/openaire_covid/src https://zenodo.org/record/4736827/files/COVID-19.tar
+	tar -xvf $(DATA_ROOT)/openaire_covid/src/COVID-19.tar -C $(DATA_ROOT)/openaire_covid/extracted
+openaire_covid.parse: src = extracted
+openaire_covid.parse: pat = part-*.json.gz
+openaire_covid.parse: parser = openaire
+openaire_covid.parse: chunksize = 1
+
 # parse
 %.parse:
 	ftm store delete -d $*
