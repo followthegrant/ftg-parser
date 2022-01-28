@@ -56,3 +56,6 @@ class LoaderTestCase(TestCase):
 
     def test_openaire(self):
         self._test(load.openaire, "./testdata/openaire/*")
+
+    def test_crossref(self):
+        self._test(load.crossref, "./testdata/crossref/*")

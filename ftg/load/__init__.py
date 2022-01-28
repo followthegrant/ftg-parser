@@ -1,4 +1,5 @@
 from .cord import load as cord  # noqa
+from .crossref import load as crossref  # noqa
 from .europepmc import load as europepmc  # noqa
 from .medrxiv import load as medrxiv  # noqa
 from .openaire import load as openaire  # noqa
