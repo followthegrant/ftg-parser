@@ -49,7 +49,7 @@ create table @dataset_articles as (
     a.entity -> 'properties' -> 'publisher' ->> 0 as publisher,
     a.entity -> 'properties' -> 'author' as authors,
     (c.id is not null)::int as has_coi,
-    coalesce((c.entity -> 'properties' -> 'notes' ->> 0 is not null)::int, 0) as has_conflict
+    coalesce((c.entity -> 'properties' -> 'notes' ->> 0)::int, 0) as has_conflict
   from @collection a
   left join @dataset_documentation b
     on a.id = b.document
