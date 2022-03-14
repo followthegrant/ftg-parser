@@ -300,3 +300,12 @@ class ModelTestCase(TestCase):
             },
             res,
         )
+
+    def test_flag_coi(self):
+        """FIXME this currently tests only the invocation, not the flagging itself (aka if the results makes sense)"""
+        with open("./testdata/medrxiv_cois.txt") as f:
+            cois = f.readlines()
+        for text in cois:
+            coi.flag_coi(text)
+            coi.flag_coi_rtrans(text)
+            coi.flag_coi_hristio(text)

@@ -201,6 +201,113 @@ def flag_coi(text):
     return True
 
 
+# Stylianos Serghiou implementation
+FLAG_COI_NEGATIVE_PATTERNS = (
+    re.compile(r"[Nn]o (|potential )(conflict(|s)|competing)"),
+    re.compile(r"[Nn]o (|potential )(commercial|financial)"),
+    re.compile(r"(disclose|declare|report) (|that they have )(no\s|nothing|none)"),
+    re.compile(r"None of the"),
+    re.compile(r"(None|Nothing|Nil\s) (declared|disclosed)"),
+    re.compile(r"Nothing to (declare|disclose|report)"),
+)
+
+
+def flag_coi_rtrans(text):
+    """
+    implementation by Stylianos Serghiou
+
+    applicable for unsplitted cois
+
+    https://www.biorxiv.org/content/10.1101/2020.10.30.361618v1
+
+    https://github.com/serghiou/transparency-indicators/blob/master/4_automated-evaluation/code/tidy_code/indicator-eval.Rmd#L783
+    """
+
+    text = text.strip().strip('"')
+
+    if text.lower().startswith("acknowled"):
+        try:
+            text = re.split(r"[Ss]tatement|[Cc]ompeting\s+interests", text)[1]
+        except IndexError:
+            return False
+
+    text = re.split("[Aa]cknowledge?ments", text)[0]
+    if not text:
+        return False
+
+    for pat in FLAG_COI_NEGATIVE_PATTERNS:
+        if re.search(pat, text):
+            return False
+
+    return True
+
+
+def flag_coi_hristio(text):
+    """
+    Hristios implementation:
+    https://docs.google.com/document/d/1_-Tb-1IvTKBgRetOE9Ih4fYupsjsYgzjo1f_I5t_IWY/edit
+    """
+    text = normalize(text) or ""
+    if re.search(
+        r"(the|all)\s+authors?\s+have\s+(declared\s+no|nothing\s+to\s+declare)", text
+    ):
+        return False
+
+    for test in (
+        "consulting",
+        "consultant",
+        "payment",
+        "payments",
+        "contract",
+        "contracts",
+        "fees",
+        "employee",
+        "employed",
+        "advisory board",
+        "advisory boards",
+        "advisor",
+        "royalties",
+        "royalty",
+        "patent",
+        "patents",
+        "honoraria",
+        "committee",
+        "committees",
+        "company",
+        "companies",
+        "collaborator",
+        "founder",
+        "founded",
+        "all others",
+        "all other authors",
+        "remaining authors",
+        "no other",
+        "funders played",
+    ):
+        if f"{test} " in text and f"no {test} " not in text:
+            return True
+
+    for test in (
+        "no conflict",
+        "no potential conflict",
+        "no competing",
+        "no financial",
+        "no known",
+        "nothing to report",
+        "none declared",
+        "no authors have",
+        "none of the authors have",
+    ):
+        if test in text:
+            return False
+
+    for test in ("received", "receives", "recipient"):
+        if f" {test} " in text:
+            return True
+
+    return False
+
+
 def extract_coi_from_fulltext(fpath):
     tree = read_xml(fpath)
     xpath = './/*[contains(translate(text(), "ABCDEFGHIJKLMNOPQRSTUVWXYZ", "abcdefghijklmnopqrstuvwxyz"),"interest") and (contains(translate(text(), "ABCDEFGHIJKLMNOPQRSTUVWXYZ", "abcdefghijklmnopqrstuvwxyz"),"competing") or contains(translate(text(), "ABCDEFGHIJKLMNOPQRSTUVWXYZ", "abcdefghijklmnopqrstuvwxyz"),"declaring") or contains(translate(text(), "ABCDEFGHIJKLMNOPQRSTUVWXYZ", "abcdefghijklmnopqrstuvwxyz"),"conflict"))]'  # noqa
