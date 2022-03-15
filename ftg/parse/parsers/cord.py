@@ -1,11 +1,11 @@
 import json
 from typing import Iterator, Iterable
 
-from dateparser import parse
+from dateparser import parse as dateparse
 from normality import slugify
 
-from ..model import ArticleIdentifier
-from ..util import clean_dict
+from ...model import ArticleIdentifier
+from ...util import clean_dict
 
 
 DEFAULT_JOURNAL = "CORD-19 (missing journal name)"
@@ -73,14 +73,14 @@ def wrangle(data: dict) -> dict:
             data["title"] = DEFAULT_TITLE
     data["published_at"] = data.pop("publish_time", None)
     if data["published_at"] is not None:
-        published_at = parse(data["published_at"])
+        published_at = dateparse(data["published_at"])
         if published_at is not None:
             published_at = published_at.date()
         data["published_at"] = published_at
     return clean_dict(data)
 
 
-def load(fpath: str) -> Iterator[dict]:
+def parse(fpath: str) -> Iterator[dict]:
     with open(fpath) as f:
         data = json.load(f)
-        yield wrangle(data)
+    yield wrangle(data)

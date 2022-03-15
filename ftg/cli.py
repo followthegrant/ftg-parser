@@ -6,12 +6,11 @@ import os
 import click
 from followthemoney.cli.util import MAX_LINE, write_object
 
-from . import load
+from . import parse as parsers
 from .coi import flag_coi
 from .db import insert_many
 from .dedupe import authors as dedupe
 from .ftm import make_entities
-from .parse import parse_article
 from .schema import ArticleFullOutput
 
 log = logging.getLogger(__name__)
@@ -51,17 +50,16 @@ def parse(collection, infile, outfile, store_json=None):
         openaire
         cord
     """
-    loader = getattr(load, collection)
+    parser = getattr(parsers, collection)
     for fpath in readlines(infile):
         try:
-            data = loader(fpath)
+            data = parser(fpath)
         except Exception as e:
             log.error(f"Cannot load `{fpath}`: '{e}'")
             data = None
         if data is not None:
             for d in data:
                 try:
-                    d = parse_article(d)
                     res = json.dumps(d.dict(), default=lambda x: str(x), sort_keys=True)
                     if store_json is not None:
                         fp = os.path.join(store_json, d.id + ".json")

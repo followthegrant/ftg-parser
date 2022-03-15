@@ -2,18 +2,17 @@ import glob
 from unittest import TestCase
 from collections import defaultdict
 
-from ftg import parse, load
+from ftg import parse
 
 
-class LoaderTestCase(TestCase):
+class ParserTestCase(TestCase):
     maxDiff = None
 
-    def _test(self, loader, path):
+    def _test(self, parser, path):
         articles = defaultdict(list)
         for path in glob.glob(path):
-            data = loader(path)
-            for d in data:
-                article = parse.parse_article(d)
+            data = parser(path)
+            for article in data:
                 articles[article.id].append(
                     (
                         article.title,
@@ -34,28 +33,28 @@ class LoaderTestCase(TestCase):
                 self.assertEqual(identifiers, identifiers2)
 
     def test_biorxiv(self):
-        self._test(load.pubmed, "./testdata/biorxiv/*.xml")
+        self._test(parse.jats, "./testdata/biorxiv/*.xml")
 
     def test_medrxiv(self):
-        self._test(load.medrxiv, "./testdata/medrxiv/*/*.meca")
+        self._test(parse.medrxiv, "./testdata/medrxiv/*/*.meca")
 
     def test_cord(self):
-        self._test(load.cord, "./testdata/cord/*.json")
+        self._test(parse.cord, "./testdata/cord/*.json")
 
     def test_pubmed(self):
-        self._test(load.pubmed, "./testdata/pubmed/*xml")
+        self._test(parse.jats, "./testdata/pubmed/*xml")
 
     def test_europepmc_xml(self):
-        self._test(load.europepmc, "./testdata/europepmc/*xml")
+        self._test(parse.europepmc, "./testdata/europepmc/*xml")
 
     def test_europepmc_gz(self):
-        self._test(load.europepmc, "./testdata/europepmc/*xml.gz")
+        self._test(parse.europepmc, "./testdata/europepmc/*xml.gz")
 
     def test_semanticscholar(self):
-        self._test(load.semanticscholar, "./testdata/semanticscholar/*")
+        self._test(parse.semanticscholar, "./testdata/semanticscholar/*")
 
     def test_openaire(self):
-        self._test(load.openaire, "./testdata/openaire/*")
+        self._test(parse.openaire, "./testdata/openaire/*")
 
     def test_crossref(self):
-        self._test(load.crossref, "./testdata/crossref/*")
+        self._test(parse.crossref, "./testdata/crossref/*")

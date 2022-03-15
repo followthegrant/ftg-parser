@@ -18,10 +18,10 @@ import json
 from typing import Iterator
 
 from banal import ensure_list
-from dateparser import parse
+from dateparser import parse as dateparse
 from normality import slugify
 
-from ..util import clean_dict, load_or_extract
+from ...util import clean_dict, load_or_extract
 
 
 TYPES = ("journal-article",)
@@ -51,7 +51,7 @@ def wrangle(original_data: dict) -> dict:
     data = {}
     data["journal"] = {"name": original_data["publisher"]}
     data["title"] = original_data["title"][0] or DEFAULT_TITLE
-    data["published_at"] = parse(original_data["created"]["date-time"]).date()
+    data["published_at"] = dateparse(original_data["created"]["date-time"]).date()
     data["identifiers"] = {"doi": original_data["DOI"]}
     data["authors"] = [
         a for a in _get_authors(ensure_list(original_data.get("author")))
@@ -67,6 +67,6 @@ def _read(fpath: str) -> Iterator[dict]:
             yield item
 
 
-def load(fpath: str) -> Iterator[dict]:
+def parse(fpath: str) -> Iterator[dict]:
     for data in _read(fpath):
         yield wrangle(data)

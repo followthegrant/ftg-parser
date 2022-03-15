@@ -17,8 +17,8 @@ usage:
 import json
 from typing import Iterator
 
-from ..model import ArticleIdentifier
-from ..util import clean_dict, load_or_extract
+from ...model import ArticleIdentifier
+from ...util import clean_dict, load_or_extract
 
 
 def _get_authors(authors):
@@ -55,6 +55,6 @@ def _read(fpath: str) -> Iterator[dict]:
             yield json.loads(line)
 
 
-def load(fpath: str) -> Iterator[dict]:
+def parse(fpath: str) -> Iterator[dict]:
     for data in _read(fpath):
         yield wrangle(data)

@@ -10,13 +10,19 @@ can be piped into an [aleph](https://docs.alephdata.org/) instance.
 ## overview
 
 ### currently supported collections
-- [pubmed open access subset](https://www.ncbi.nlm.nih.gov/pmc/tools/openftlist/)
-- [biorxiv](https://www.biorxiv.org/)
-- in progress: medrxiv
-- in progress: Deutsches Ärzteblatt
+- **jats** format
+  - [pubmed open access subset](https://www.ncbi.nlm.nih.gov/pmc/tools/openftlist/)
+  - [biorxiv](https://www.biorxiv.org/)
+  - [medrxiv](https://www.medrxiv.org/)
+  - europepmc
+  - europepmc preprints
+- semantic scholar
+- openaire
+- crossref
+- *in progress: Deutsches Ärzteblatt*
 
 ### features
-- author deduplication via their associated institutions
+- author deduplication via their associated institutions and co-authorships
 - detect institution countries and assign them to authors
 - extract conflict of interest statements
 - split sentences from conflict of interest statements and assign them to specific authors
@@ -192,16 +198,15 @@ the parse function takes a file path as an input (typically to a `xml` or
 
 via command line:
 
-        find ./data/pubmed/ -type f -name "*xml" | ftg parse pubmed > pubmed.jsonl
+        find ./data/pubmed/ -type f -name "*xml" | ftg parse jats > pubmed.jsonl
 
 or in python:
 
 ```python
-from ftg import load, parse
+from ftg import parse
 
 fpath = "/pubmed/PMC4844427/opth-10-713.nxml"
-data = load.pubmed(fpath)
-data = parse.parse_article(data)  # json dict as described above
+articles = [a for a in parse.jats(fpath)]  # generator
 ```
 
 ### create ftm entities
@@ -210,18 +215,17 @@ just pipe the generated `json` (see above) to `ftg map-ftm`
 
 via command line (see below for better performance in huge datasets):
 
-        find ./data/pubmed/ -type f -name "*xml" | ftg parse pubmed | ftg map-ftm | ftm aggregate > entities.jsonl
+        find ./data/pubmed/ -type f -name "*xml" | ftg parse jats | ftg map-ftm | ftm aggregate > entities.jsonl
 
 or in python:
 
 ```python
-from ftg import load, parse, ftm
+from ftg import parse, ftm
 
 fpath = "/pubmed/PMC4844427/opth-10-713.nxml"
-data = load.pubmed(fpath)
-data = parse.parse_article(data)
-for entity in ftm.make_entities(data):
-    yield entity
+articles = parse.jats(data)
+for article in articles:
+    entities = [e for e in ftm.make_entities(article)]  # generator
 ```
 
 ### bulk datasets processing
@@ -232,7 +236,7 @@ backend but postgres is faster, as it allows concurrent writing via `parallel`
 [`followthemoney-store`](https://github.com/alephdata/followthemoney-store) on
 how to setup env vars for the sql backend):
 
-        find ./path_to_pubmed/ -type f -name "*xml" | parallel -j8 --pipe ftg parse pubmed | parallel -j8 --pipe ftg map-ftm | parallel -j8 --pipe ftm store write -d ftg_pubmed
+        find ./path_to_pubmed/ -type f -name "*xml" | parallel -j8 --pipe ftg parse jats | parallel -j8 --pipe ftg map-ftm | parallel -j8 --pipe ftm store write -d ftg_pubmed
 
 with `-j8` you set the number of parallel jobs, this should be the numbers of
 cores of the machine for best performance.

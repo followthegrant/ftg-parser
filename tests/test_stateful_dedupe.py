@@ -5,7 +5,7 @@ from unittest import TestCase
 import dataset
 from followthemoney import model
 
-from ftg import db, ftm, load, parse
+from ftg import db, ftm, parse
 from ftg.dedupe import authors as dedupe
 
 
@@ -85,9 +85,8 @@ class StatefulDedupTestCase(TestCase):
         triples = set()
         entities = set()
         for path in glob.glob("./testdata/biorxiv/*.xml"):
-            data = load.pubmed(path)
-            for d in data:
-                article = parse.parse_article(d)
+            data = parse.jats(path)
+            for article in data:
                 for triple in dedupe.explode_triples(article):
                     triples.add(triple)
                 for entity in ftm.make_entities(article):
@@ -164,9 +163,8 @@ class StatefulDedupTestCase(TestCase):
         triples = set()
         entities = set()
         for path in glob.glob("./testdata/biorxiv/*.xml"):
-            data = load.pubmed(path)
-            for d in data:
-                article = parse.parse_article(d)
+            data = parse.jats(path)
+            for article in data:
                 for triple in dedupe.explode_triples(article):
                     triples.add(triple)
                 for entity in ftm.make_entities(article):

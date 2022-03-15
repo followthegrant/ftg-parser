@@ -145,7 +145,7 @@ class Author(Base):
     def get_id_parts(self) -> Iterable[str]:
         """
         author deduplication: fingerprinted name and first institution (sorted by id),
-        or if no institution using journal id
+        or if no institution using random id
         """
         fingerprint = fingerprints.generate(self.input.name)
         if len(self.institutions):

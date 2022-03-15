@@ -16,11 +16,11 @@ usage:
 import json
 from typing import Iterator
 
-from dateparser import parse
+from dateparser import parse as dateparse
 from normality import slugify
 
-from ..model import ArticleIdentifier
-from ..util import clean_dict, load_or_extract
+from ...model import ArticleIdentifier
+from ...util import clean_dict, load_or_extract
 
 
 DEFAULT_JOURNAL = "OPENAIRE (missing journal name)"
@@ -50,19 +50,19 @@ def _get_authors(authors):
 def wrangle(data: dict) -> dict:
     data["title"] = data.pop("maintitle", None)
     data["abstract"] = (data.pop("description")[:1] or [None]).pop()
-    if slugify(data["title"] or "") is None:
+    if not slugify(data["title"]):
         if data["abstract"] is not None:
             data["title"] = data["abstract"][:300]
         else:
             data["title"] = DEFAULT_TITLE
     data["published_at"] = data.pop("publicationdate", None)
     if data["published_at"] is not None:
-        published_at = parse(data["published_at"])
+        published_at = dateparse(data["published_at"])
         if published_at is not None:
             published_at = published_at.date()
         data["published_at"] = published_at
     data["journal"] = {"name": data.pop("publisher", None) or DEFAULT_JOURNAL}
-    if slugify(data["journal"]["name"]) is None:
+    if not slugify(data["journal"]["name"]):
         data["journal"]["name"] = DEFAULT_JOURNAL
     data["identifiers"] = clean_dict(
         {
@@ -85,6 +85,6 @@ def _read(fpath: str) -> Iterator[dict]:
             yield json.loads(line)
 
 
-def load(fpath: str) -> Iterator[dict]:
+def parse(fpath: str) -> Iterator[dict]:
     for data in _read(fpath):
         yield wrangle(data)

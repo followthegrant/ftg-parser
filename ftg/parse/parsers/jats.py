@@ -1,13 +1,18 @@
 """
+JATS format
+https://jats.nlm.nih.gov
+
+used by most open access datasets, e.g:
 PUBMED CENTRAL dataset
+EUROPEPMC (+ preprints)
+BIORXIV
+MEDRXIV
 
-source data: https://ftp.ncbi.nlm.nih.gov/pub/pmc/
-
-using https://github.com/simonwoerpel/pubmed_parser to parse xml
+based on forked `pubmed_parser`: https://github.com/simonwoerpel/pubmed_parser
 
 usage:
 
-    find ./data/ -type f -name "*xml" | ftg parse pubmed
+    find ./data/ -type f -name "*xml" | ftg parse jats
 
 """
 import logging
@@ -15,11 +20,11 @@ from typing import Iterator, Optional
 
 import pubmed_parser as pp
 from banal import ensure_list
-from dateparser import parse
+from dateparser import parse as dateparse
 
-from ..coi import extract_coi_from_fulltext
-from ..model import ArticleIdentifier
-from ..util import clean_dict
+from ...coi import extract_coi_from_fulltext
+from ...model import ArticleIdentifier
+from ...util import clean_dict
 
 log = logging.getLogger(__name__)
 
@@ -29,7 +34,7 @@ def wrangle(data: dict, fpath: Optional[str] = None) -> dict:
         del data["id"]
     # keys re-mapping
     data["title"] = data.pop("full_title")
-    published_at = parse(data.pop("publication_date"))
+    published_at = dateparse(data.pop("publication_date"))
     if published_at is None:
         published_at = data.pop("publication_year")
     data["published_at"] = published_at
@@ -78,11 +83,11 @@ def wrangle(data: dict, fpath: Optional[str] = None) -> dict:
     return clean_dict(data, expensive=True)
 
 
-def load(fpath: str) -> Iterator[dict]:
+def parse(fpath: str) -> Iterator[dict]:
     try:
         data = pp.parse_pubmed_xml(fpath)
     except Exception as e:
-        log.error(f"Cannot load `{fpath}`: `{e}`")
-        return []
+        log.error(f"Cannot parse jats at `{fpath}`: `{e}`")
+        return
 
     yield wrangle(data, fpath)

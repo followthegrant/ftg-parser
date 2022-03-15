@@ -3,8 +3,8 @@ EUROPEPMC dataset
 
 source data: https://europepmc.org/ftp/oa/
 
-it is basically in pubmed xml format, but in huge xml (or gzipped) files
-containing many articles. So we extract them and then use the pubmed logic
+it is basically in jats xml format, but in huge xml (or gzipped) files
+containing many articles. So we extract them and then use the jats logic
 
 usage (either use gzip files or extracted ones):
 
@@ -19,13 +19,13 @@ from typing import Iterator
 
 from lxml import etree
 
-from ..util import load_or_extract
-from .pubmed import load as load_pubmed
+from ...util import load_or_extract
+from .jats import parse as parse_jats
 
 log = logging.getLogger(__name__)
 
 
-def load(fpath: str) -> Iterator[dict]:
+def parse(fpath: str) -> Iterator[dict]:
     try:
         content = load_or_extract(fpath)
         articles = etree.iterparse(
@@ -33,8 +33,7 @@ def load(fpath: str) -> Iterator[dict]:
         )
         for _, el in articles:
             try:
-                for data in load_pubmed(el):
-                    yield data
+                yield from parse_jats(el)
             except Exception as e:
                 log.error(f"Cannot load via pubmed at `{fpath}`: `{e}`")
             # FIXME memory leaks?
