@@ -15,7 +15,7 @@ pubmed.extract:
 	parallel tar -C $(DATA_ROOT)/pubmed/extracted -xvf ::: $(DATA_ROOT)/pubmed/src/*.tar.gz
 pubmed.parse: src = extracted
 pubmed.parse: pat = *xml
-pubmed.parse: parser = pubmed
+pubmed.parse: parser = jats
 pubmed.parse: chunksize = 1000
 
 # EUROPEPMC
@@ -45,7 +45,7 @@ biorxiv: biorxiv.parse biorxiv.authors biorxiv.aggregate biorxiv.db biorxiv.expo
 biorxiv.reparse: biorxiv.download_json biorxiv.parse_json biorxiv.authors biorxiv.aggregate biorxiv.db biorxiv.export biorxiv.upload
 biorxiv.parse: src = src
 biorxiv.parse: pat = *.xml
-biorxiv.parse: parser = pubmed
+biorxiv.parse: parser = jats
 biorxiv.parse: chunksize = 1000
 
 # MEDRXIV
@@ -72,6 +72,12 @@ semanticscholar.parse: pat = s2-corpus-*.gz
 semanticscholar.parse: parser = semanticscholar
 semanticscholar.parse: chunksize = 1
 
+# OPENAIRE
+openaire: openaire.parse openaire.authors openaire.aggregate openaire.db openaire.export openaire.upload
+openaire.parse: src = src
+openaire.parse: pat = part-*.json.gz
+openaire.parse: parser = openaire
+openaire.parse: chunksize = 1
 
 # OPENAIRE COVID SUBSET
 openaire_covid: openaire_covid.download openaire_covid.parse openaire_covid.authors openaire_covid.aggregate openaire_covid.db openaire_covid.export openaire_covid.upload
@@ -93,7 +99,7 @@ openaire_covid.parse: chunksize = 1
 
 %.download_json:
 	mkdir -p $(DATA_ROOT)/$*/json
-	aws --endpoint-url https://$(S3_ENDPOINT) s3 cp s3://followthegrant/$*/export/json.tar.xz $(DATA_ROOT)/$*/json/
+	aws --endpoint-url $(S3_ENDPOINT) s3 cp s3://followthegrant/$*/export/json.tar.xz $(DATA_ROOT)/$*/json/
 	tar -xvf $(DATA_ROOT)/$*/json/json.tar.xz -C $(DATA_ROOT)/$*/json/ --strip-components=5
 
 %.parse_json:
@@ -119,12 +125,10 @@ openaire_covid.parse: chunksize = 1
 	mkdir -p $(DATA_ROOT)/$*/export/pg_dump
 	pg_dump $(FTM_STORE_URI) -t $*_* -Fd -Z9 -O -j48 -f $(DATA_ROOT)/$*/export/pg_dump/data
 	pg_dump $(FTM_STORE_URI) -t ftm_$*_aggregated -Fd -Z9 -O -j48 -f $(DATA_ROOT)/$*/export/pg_dump/ftm
-	# tar cf - $(FTM_STORE_URI)/$*/export/pg_dump/data | parallel --pipe --recend '' --keep-order --block-size 1M "xz -9" > data.tar.xz
-	# the above decreases size only .01 % as pg_dump compression is already very high
 	tar cf - $(DATA_ROOT)/$*/json | parallel --pipe --recend '' --keep-order --block-size 1M "xz -9" > $(DATA_ROOT)/$*/export/json.tar.xz
 
 %.upload:
-	aws --endpoint-url https://$(S3_ENDPOINT) s3 sync $(DATA_ROOT)/$*/export s3://followthegrant/$*/export
+	aws --endpoint-url $(S3_ENDPOINT) s3 sync $(DATA_ROOT)/$*/export s3://followthegrant/$*/export
 
 # psql docker
 .PHONY: psql
@@ -140,6 +144,9 @@ psql.%:
 
 psql.start_local:
 	docker run --shm-size=$(PSQL_SHM) -p $(PSQL_PORT):5432 -v $(DATA_ROOT)/psql/data:/var/lib/postgresql/data -e POSTGRES_USER=ftg -e POSTGRES_PASSWORD=ftg -d postgres > ./psql/docker_id
+	sleep 5
+	psql $(FTM_STORE_URI) < ./psql/alter_system_local.sql
+	docker restart `cat ./psql/docker_id`
 
 # spacy dependencies
 spacy:
