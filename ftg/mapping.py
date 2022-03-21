@@ -10,6 +10,7 @@ from .schema import (
     AuthorFtm,
     AuthorshipFtm,
     CoiStatementFtm,
+    AckStatementFtm,
     MembershipFtm,
     OrganizationFtm,
     PublisherFtm,
@@ -43,6 +44,7 @@ class MappedModel:
         yield from self.organizations
         yield from self.memberships
         yield from self.coi_statements
+        yield from self.ack_statements
 
     @cached_property
     def publisher(self) -> PublisherFtm:
@@ -107,3 +109,13 @@ class MappedModel:
             for statement in self.input.individual_coi_statements:
                 data = ftm_dict(statement.dict(), "coi")
                 yield CoiStatementFtm(**data)
+
+    @cached_property
+    def ack_statements(self) -> Iterator[AckStatementFtm]:
+        if self.input.ack_statement is not None:
+            data = ftm_dict(self.input.ack_statement.dict(), "ack")
+            data["ack_authors"] = ",".join([a.name for a in self.input.authors])
+            yield AckStatementFtm(**data)
+            for statement in self.input.individual_ack_statements:
+                data = ftm_dict(statement.dict(), "ack")
+                yield AckStatementFtm(**data)

@@ -9,6 +9,7 @@ drop table if exists @dataset_affiliations;
 drop table if exists @dataset_documentation;
 drop table if exists @dataset_authorship;
 drop table if exists @dataset_cois;
+drop table if exists @dataset_acks;
 drop table if exists @dataset_mentions;
 
 -- intermediary table
@@ -159,6 +160,28 @@ create index on @dataset_cois (article_id);
 create index on @dataset_cois (author_id);
 create index on @dataset_cois (coi_id);
 create index on @dataset_cois (type);
+
+-- acknowledgement statements
+create table @dataset_acks as (
+  select distinct
+    split_part(a.document, '.', 1) as article_id,
+    split_part(a.entity, '.', 1) as ack_id,
+    split_part(b.entity, '.', 1) as author_id,
+    a.role as type,
+    a.date,
+    c.entity -> 'properties' -> 'bodyText' ->> 0 as statement
+  from @dataset_documentation a
+  join @collection c
+    on c.id = a.entity
+    and c.origin = 'aggregated'
+  left join @dataset_documentation b
+    on a.entity = b.document
+  where a.role like '%acknowledgement statement%'
+);
+create index on @dataset_acks (article_id);
+create index on @dataset_acks (author_id);
+create index on @dataset_acks (ack_id);
+create index on @dataset_acks (type);
 
 -- mentions
 create table @dataset_mentions as (

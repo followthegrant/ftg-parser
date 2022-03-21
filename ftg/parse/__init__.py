@@ -18,6 +18,11 @@ def _parse(data: dict) -> ArticleFullOutput:
         data["individual_coi_statements"] = [
             s.serialize() for s in article.individual_coi_statements
         ]
+    if article.ack_statement:
+        data["ack_statement"] = article.ack_statement.serialize()
+        data["individual_ack_statements"] = [
+            s.serialize() for s in article.individual_ack_statements
+        ]
 
     return ArticleFullOutput(**data)
 

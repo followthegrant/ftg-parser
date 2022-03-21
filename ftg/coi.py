@@ -324,6 +324,8 @@ def extract_coi_from_fulltext(fpath):
         else:
             with open(fpath) as f:
                 article_text = html2text(f.read())
+        # FIXME
+        coi_statement = coi_statement.replace("(", "\(").replace(")", "\)")  # noqa
         match = re.search(coi_statement, article_text, flags=re.IGNORECASE)
         if match is not None:
             start_pos = match.start()

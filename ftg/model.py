@@ -22,6 +22,8 @@ from .schema import (
     AuthorOutput,
     CoiStatementInput,
     CoiStatementOutput,
+    AckStatementInput,
+    AckStatementOutput,
     InstitutionInput,
     InstitutionOutput,
     JournalInput,
@@ -260,6 +262,64 @@ class CoiStatement(Base):
         }
 
 
+class AckStatement(Base):
+    InputSchema = AckStatementInput
+    OutputSchema = AckStatementOutput
+
+    def __init__(self, article=None, author=None, **data):
+        if article is not None:
+            data["article_id"] = article.id
+            data["article_title"] = article.title
+            data["published_at"] = article.published_at
+            data["journal_name"] = article.journal.name
+        if author is not None:
+            data["author_id"] = author.id
+            data["author_name"] = author.name
+        super().__init__(**data)
+
+    @cached_property
+    def title(self):
+        if self.input.author_name is not None:
+            return f"individual acknowledgement statement ({self.input.author_name})"
+        return "acknowledgement statement (article)"
+
+    @cached_property
+    def role(self):
+        if self.input.author_name is not None:
+            return "individual acknowledgement statement"
+        return "acknowledgement statement (article)"
+
+    def get_id_parts(self) -> Iterable[str]:
+        if self.input.article_id is not None and self.input.author_id is not None:
+            return [self.input.article_id, self.input.author_id]
+        if self.input.author_id is not None:
+            return [self.input.author_id]
+        if self.input.article_id is not None:
+            return [self.input.article_id]
+        return [self.title, self.input.text]
+
+    def get_output_data(self) -> dict:
+        if self.input.author_name is not None:
+            authors = None
+        elif self.input.article is not None:
+            authors = sorted([a.name for a in self.input.article.authors])
+        else:
+            authors = None
+        return {
+            "id": self.id,
+            "journal_name": self.input.journal_name,
+            "article_id": self.input.article_id,
+            "article_title": self.input.article_title,
+            "author_id": self.input.author_id,
+            "author_name": self.input.author_name,
+            "authors": authors,
+            "published_at": self.input.published_at,
+            "title": self.title,
+            "role": self.role,
+            "text": " ".join(self.input.text.split()),
+        }
+
+
 class Article(Base):
     InputSchema = ArticleInput
     OutputSchema = ArticleOutput
@@ -314,6 +374,23 @@ class Article(Base):
             statements = split_coi(self.input.coi_statement, authors.keys())
             return [
                 CoiStatement(
+                    article=self.output, author=authors[key], text="\n".join(sentences)
+                )
+                for key, sentences in statements.items()
+            ]
+
+    @cached_property
+    def ack_statement(self):
+        if self.input.acknowledgements is not None:
+            return AckStatement(article=self.output, text=self.input.acknowledgements)
+
+    @cached_property
+    def individual_ack_statements(self) -> Iterable[AckStatement]:
+        if self.input.acknowledgements is not None:
+            authors = {a.names_key: a.output for a in self.authors}
+            statements = split_coi(self.input.acknowledgements, authors.keys())
+            return [
+                AckStatement(
                     article=self.output, author=authors[key], text="\n".join(sentences)
                 )
                 for key, sentences in statements.items()

@@ -201,3 +201,70 @@ ftg:
             column: coi_published_at
           publisher:
             column: coi_journal_name
+      ## ACKNOWLEDGEMENT STATEMENT
+      ack_statement:
+        schema: PlainText
+        id_column: ack_id
+        properties:
+          title:
+            column: ack_title
+            required: true
+          bodyText:
+            column: ack_text
+            required: true
+          publisher:
+            column: ack_journal_name
+          date:
+            column: ack_published_at
+          parent:
+            column: ack_article_id
+            required: true
+          author:
+            columns:
+              - ack_authors
+              - ack_author_name
+            split: ","
+      ack_reference:
+        schema: Documentation
+        key_literal: article-ackstatement
+        keys:
+          - ack_article_id
+          - ack_id
+        properties:
+          document:
+            column: ack_article_id
+            required: true
+          entity:
+            column: ack_id
+            required: true
+          role:
+            column: ack_role
+          summary:
+            column: ack_text
+            required: true
+          date:
+            column: ack_published_at
+          publisher:
+            column: ack_journal_name
+      ack_authorship:
+        schema: Documentation
+        key_literal: author-ackstatement
+        keys:
+          - ack_author_id
+          - ack_id
+        properties:
+          document:
+            column: ack_id
+            required: true
+          entity:
+            column: ack_author_id
+            required: true
+          summary:
+            column: ack_text
+            required: true
+          role:
+            column: ack_role
+          date:
+            column: ack_published_at
+          publisher:
+            column: ack_journal_name

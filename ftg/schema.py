@@ -70,6 +70,7 @@ class ArticleInput(BaseModel):
     keywords: Optional[list] = []
     authors: Optional[list[AuthorInput]] = []
     coi_statement: Optional[str] = None
+    acknowledgements: Optional[str] = None
 
 
 class ArticleOutput(BaseModel):
@@ -109,10 +110,37 @@ class CoiStatementOutput(BaseModel):
     role: str
 
 
+class AckStatementInput(BaseModel):
+    text: str
+    article_id: str
+    article_title: Optional[str]
+    article: Optional[ArticleOutput]
+    author_id: Optional[str]
+    author_name: Optional[str]
+    author: Optional[AuthorOutput]
+    published_at: Optional[date]
+    journal_name: Optional[str]
+
+
+class AckStatementOutput(BaseModel):
+    id: str
+    article_id: str
+    article_title: Optional[str]
+    author_id: Optional[str]
+    author_name: Optional[str]
+    journal_name: Optional[str]
+    title: str
+    text: str
+    published_at: Optional[date]
+    role: str
+
+
 class ArticleFullOutput(ArticleOutput):
     identifiers: Optional[List[ArticleIdentifierOutput]] = []
     coi_statement: Optional[CoiStatementOutput] = None
+    ack_statement: Optional[AckStatementOutput] = None
     individual_coi_statements: Optional[List[CoiStatementOutput]] = []
+    individual_ack_statements: Optional[List[AckStatementOutput]] = []
 
 
 # output for ftm mapping
@@ -187,3 +215,16 @@ class CoiStatementFtm(BaseModel):  # PlainText
     coi_flag: str
     coi_index_text: str
     coi_role: str
+
+
+class AckStatementFtm(BaseModel):  # PlainText
+    ack_id: str
+    ack_title: str
+    ack_text: str
+    ack_journal_name: str
+    ack_article_id: str
+    ack_published_at: Optional[str] = None
+    ack_author_id: Optional[str]
+    ack_author_name: Optional[str]
+    ack_authors: Optional[str]
+    ack_role: str
