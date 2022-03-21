@@ -84,6 +84,7 @@ create table @dataset_authors as (
   select distinct
     split_part(id, '.', 1) as id,
     entity -> 'properties' -> 'name' ->> 0 as name,
+    entity -> 'properties' -> 'weakAlias' ->> 0 as fingerprint,
     entity -> 'properties' -> 'name' as names,
     entity -> 'properties' -> 'country' ->> 0 as country,
     entity -> 'properties' -> 'country' as countries

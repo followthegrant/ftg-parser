@@ -1,6 +1,7 @@
 import datetime
 from unittest import TestCase
 
+import fingerprints
 from pydantic.error_wrappers import ValidationError
 
 from ftg import model
@@ -108,6 +109,7 @@ class ModelTestCase(TestCase):
         self.assertIn(author.institutions[0].id, author.get_id_parts())
         self.assertEqual(author.id, "b3505d345dbc447b44a7c83e19e6d3e01162ede9")
         self.assertIn("it", author.countries)
+        self.assertEqual(author.fingerprint, fingerprints.generate("Alice Smith"))
 
     def test_article(self):
         data = {
@@ -151,6 +153,7 @@ class ModelTestCase(TestCase):
                     {
                         "id": "60ecf3f6d39e3c634c00d218aed4cddc8298b237",
                         "name": "Mohanram Sivaraja",
+                        "fingerprint": "mohanram sivaraja",
                         "first_name": "Mohanram",
                         "last_name": "Sivaraja",
                         "middle_names": None,
@@ -160,6 +163,7 @@ class ModelTestCase(TestCase):
                     {
                         "id": "0ccb67aa5446279a76a38d711ccc7241c50cce55",
                         "name": "Nicola Pozzi",
+                        "fingerprint": "nicola pozzi",
                         "first_name": "Nicola",
                         "last_name": "Pozzi",
                         "middle_names": None,

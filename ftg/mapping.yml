@@ -73,6 +73,8 @@ ftg:
           name:
             column: author_name
             required: true
+          weakAlias:
+            column: author_fingerprint
           firstName:
             column: author_first_name
           middleName:

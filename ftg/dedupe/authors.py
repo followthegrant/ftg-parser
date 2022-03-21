@@ -3,7 +3,6 @@ from functools import lru_cache
 from itertools import combinations
 from typing import Iterable, Iterator
 
-import fingerprints
 import networkx as nx
 from dataset.table import Table
 from followthemoney.util import make_entity_id
@@ -13,8 +12,8 @@ from ..schema import ArticleFullOutput
 
 
 @lru_cache(maxsize=1024 * 1000 * 10)  # 10GB
-def _get_fingerprint(name: str) -> str:
-    return make_entity_id(fingerprints.generate(name))
+def _get_fingerprint_id(fingerprint: str) -> str:
+    return make_entity_id(fingerprint)
 
 
 def explode_triples(article: ArticleFullOutput) -> Iterable[tuple[str, str, str]]:
@@ -26,13 +25,13 @@ def explode_triples(article: ArticleFullOutput) -> Iterable[tuple[str, str, str]
     ...
     """
     for author in article.authors:
-        f = _get_fingerprint(author.name)
-        if f:
+        if author.fingerprint:
+            f = _get_fingerprint_id(author.fingerprint)
             for institution in author.institutions:
                 yield f, author.id, institution.id
             for coauthor in article.authors:
                 if author.id != coauthor.id:
-                    cf = _get_fingerprint(coauthor.name)
+                    cf = _get_fingerprint_id(coauthor.fingerprint)
                     yield f, author.id, cf
 
 

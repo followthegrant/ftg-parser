@@ -154,13 +154,16 @@ class Author(Base):
         author deduplication: fingerprinted name and first institution (sorted by id),
         or if no institution using random id
         """
-        fingerprint = fingerprints.generate(self.input.name)
         if len(self.institutions):
             institution = sorted([i for i in self.institutions], key=lambda x: x.id)[0]
-            return [fingerprint, institution.id]
+            return [self.fingerprint, institution.id]
         if len(self.input.identifier_hints):
-            return [fingerprint, *self.input.identifier_hints]
-        return [fingerprint, uuid.uuid4()]  # dedupe later
+            return [self.fingerprint, *self.input.identifier_hints]
+        return [self.fingerprint, uuid.uuid4()]  # dedupe later
+
+    @cached_property
+    def fingerprint(self):
+        return fingerprints.generate(self.input.name)
 
     @cached_property
     def institutions(self) -> Optional[Iterable[Institution]]:
@@ -193,6 +196,7 @@ class Author(Base):
             "middle_names": middle_names or self.input.middle_names,
             "institutions": [i.serialize() for i in self.institutions],
             "countries": self.countries,
+            "fingerprint": self.fingerprint,
         }
 
 
