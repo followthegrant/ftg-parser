@@ -30,7 +30,7 @@ def cli():
 
 
 @cli.command("parse")
-@click.argument("collection")
+@click.argument("parser")
 @click.option("-i", "--infile", type=click.File("r"), default="-")
 @click.option("-o", "--outfile", type=click.File("w"), default="-")
 @click.option(
@@ -38,19 +38,19 @@ def cli():
     help="Store parsed json into given directory (1 file per article)",
     type=click.Path(exists=True),
 )
-def parse(collection, infile, outfile, store_json=None):
+def parse(parser, infile, outfile, store_json=None):
     """
     parse source xml/html files into json representation with metadata, authors,
     institutions and conflict of interest statements
 
-    collection: one of
-        pubmed
+    parser: one of
+        jats (pubmed, *rxiv)
         europepmc
         semanticscholar
         openaire
         cord
     """
-    parser = getattr(parsers, collection)
+    parser = getattr(parsers, parser)
     for fpath in readlines(infile):
         try:
             data = parser(fpath)
