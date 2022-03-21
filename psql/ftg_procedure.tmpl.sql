@@ -166,6 +166,9 @@ create table @dataset_mentions as (
     split_part(entity -> 'properties' -> 'document' ->> 0, '.', 1) as document_id,
     entity -> 'properties' -> 'name' ->> 0 as mention
   from @collection
+  where
+    origin = 'aggregated'
+    and entity @> '{"schema": "Mention"}'
 );
 create index on @dataset_mentions (document_id);
 create index on @dataset_mentions (mention);
