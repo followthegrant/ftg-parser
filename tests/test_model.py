@@ -21,6 +21,7 @@ class ModelTestCase(TestCase):
             {
                 "id": "45a6bd84130dd5fbbaefba02664a8e5ee014934a",
                 "name": "PLoS ONE",
+                "website": None,
             },
             journal.serialize(),
         )
@@ -34,6 +35,7 @@ class ModelTestCase(TestCase):
             {
                 "id": "462ddec499bdd34aed79dbdce5bb6acb0586e3de",
                 "name": "PLoS ONE",
+                "website": None,
             },
             journal.serialize(),
         )
@@ -143,6 +145,7 @@ class ModelTestCase(TestCase):
                 "journal": {
                     "id": "45a6bd84130dd5fbbaefba02664a8e5ee014934a",
                     "name": "PLoS ONE",
+                    "website": None,
                 },
                 "authors": [
                     {
@@ -283,3 +286,15 @@ class ModelTestCase(TestCase):
         identifier2 = model.ArticleIdentifier(**{"key": "pmcid", "value": "PMC123"})
         self.assertEqual(identifier1.id, identifier2.id)
         self.assertEqual(identifier1.get_article_id(), identifier2.get_article_id())
+
+    def test_id_shorthand(self):
+        self.assertEqual(
+            model.Journal.make_id(name="Plos ONE"),
+            "45a6bd84130dd5fbbaefba02664a8e5ee014934a",
+        )
+        self.assertEqual(
+            model.Institution.make_id(
+                name="Verseon Corporation, Fremont, California, United States of America"
+            ),
+            "a9090414a28a7fefc37335edb92d46f07ac99582",
+        )

@@ -54,6 +54,11 @@ class Base:
     def serialize(self) -> dict:
         return self.output.dict()
 
+    @classmethod
+    def make_id(cls, **data):
+        entity = cls(**data)
+        return entity.id
+
 
 class Journal(Base):
     InputSchema = JournalInput

@@ -12,12 +12,13 @@ curl -o "./models/model_type_prediction.ftz" "https://public.data.occrp.org/deve
 
 from followthemoney import model
 from followthemoney.types import registry
-from followthemoney.util import make_entity_id
 from ingestors.analysis import Analyzer
 from ingestors.analysis.aggregate import TagAggregator
 from ingestors.analysis.extract import extract_entities
 from ingestors.analysis.language import detect_languages
 from ingestors.analysis.util import DOCUMENT, text_chunks
+
+from .model import Institution
 
 
 def analyze(entity):
@@ -48,11 +49,11 @@ def analyze(entity):
         if schema == "Organization":
             mention = model.make_entity("Mention")
             mention.make_id("mention", entity.id, prop, key)
-            mention.add("resolved", make_entity_id(key))
             mention.add("document", entity.id)
             mention.add("name", values)
             mention.add("detectedSchema", schema)
             mention.add("contextCountry", countries)
+            mention.add("resolved", Institution.make_id(name=label))
             yield mention
 
         entity.add(prop, label, cleaned=True, quiet=True)
