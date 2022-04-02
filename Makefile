@@ -133,6 +133,9 @@ openaire_covid.parse: chunksize = 1
 %.sync:
 	aws --endpoint-url $(S3_ENDPOINT) s3 sync s3://followthegrant/$*/export $(DATA_ROOT)/$*/export
 
+%.pg_restore:
+	pg_restore -d $(FTM_STORE_URI) $(DATA_ROOT)/$*/export/pg_dump/data
+
 # psql docker
 .PHONY: psql
 psql:
