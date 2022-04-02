@@ -130,6 +130,9 @@ openaire_covid.parse: chunksize = 1
 %.upload:
 	aws --endpoint-url $(S3_ENDPOINT) s3 sync $(DATA_ROOT)/$*/export s3://followthegrant/$*/export
 
+%.sync:
+	aws --endpoint-url $(S3_ENDPOINT) s3 sync s3://followthegrant/$*/export $(DATA_ROOT)/$*/export
+
 # psql docker
 .PHONY: psql
 psql:
