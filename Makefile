@@ -140,7 +140,7 @@ openaire_covid.parse: chunksize = 1
 .PHONY: psql
 psql:
 	mkdir -p $(DATA_ROOT)/psql/data
-	docker run --shm-size=$(PSQL_SHM) -p $(PSQL_PORT):5432 -v $(DATA_ROOT)/psql/data:/var/lib/postgresql/data -e POSTGRES_USER=ftg -e POSTGRES_PASSWORD=ftg -d postgres > ./psql/docker_id
+	docker run --shm-size=$(PSQL_SHM) -p $(PSQL_PORT):5432 -v $(DATA_ROOT)/psql/data:/var/lib/postgresql/data -e POSTGRES_USER=ftg -e POSTGRES_PASSWORD=ftg -d postgres:latest > ./psql/docker_id
 	sleep 5
 	psql $(FTM_STORE_URI) < ./psql/alter_system.sql
 	docker restart `cat ./psql/docker_id`
@@ -149,7 +149,7 @@ psql.%:
 	docker $* `cat ./psql/docker_id`
 
 psql.start_local:
-	docker run --shm-size=$(PSQL_SHM) -p $(PSQL_PORT):5432 -v $(DATA_ROOT)/psql/data:/var/lib/postgresql/data -e POSTGRES_USER=ftg -e POSTGRES_PASSWORD=ftg -d postgres > ./psql/docker_id
+	docker run --shm-size=$(PSQL_SHM) -p $(PSQL_PORT):5432 -v $(DATA_ROOT)/psql/data:/var/lib/postgresql/data -e POSTGRES_USER=ftg -e POSTGRES_PASSWORD=ftg -d postgres:latest > ./psql/docker_id
 	sleep 5
 	psql $(FTM_STORE_URI) < ./psql/alter_system_local.sql
 	docker restart `cat ./psql/docker_id`
