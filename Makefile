@@ -5,11 +5,13 @@ export PSQL_SHM ?= 1g
 export INGESTORS_LID_MODEL_PATH=./models/lid.176.ftz
 
 # PUBMED CENTRAL
-pubmed: pubmed.parse pubmed.authors pubmed.aggregate pubmed.db pubmed.export pubmed.upload
+pubmed: pubmed.parse pubmed.authors pubmed.aggregate pubmed.db pubmed.export # pubmed.upload
 pubmed.reparse: pubmed.download_json pubmed.parse_json pubmed.authors pubmed.aggregate pubmed.db pubmed.export pubmed.upload
 pubmed.download:
 	mkdir -p $(DATA_ROOT)/pubmed/src
+	wget -P $(DATA_ROOT)/pubmed/src/ -r -l1 -H -nd -N -np -A "*.tar.gz" -e robots=off ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_bulk/oa_comm/xml/
 	wget -P $(DATA_ROOT)/pubmed/src/ -r -l1 -H -nd -N -np -A "*.tar.gz" -e robots=off ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_bulk/oa_noncomm/xml/
+	wget -P $(DATA_ROOT)/pubmed/src/ -r -l1 -H -nd -N -np -A "*.tar.gz" -e robots=off ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_bulk/oa_other/xml/
 pubmed.extract:
 	mkdir -p $(DATA_ROOT)/pubmed/extracted
 	parallel tar -C $(DATA_ROOT)/pubmed/extracted -xvf ::: $(DATA_ROOT)/pubmed/src/*.tar.gz
@@ -95,7 +97,8 @@ openaire_covid.parse: chunksize = 1
 %.parse:
 	ftm store delete -d $*
 	mkdir -p $(DATA_ROOT)/$*/json
-	find $(DATA_ROOT)/$*/$(src)/ -type f -name "$(pat)" | parallel -N$(chunksize) --pipe ftg parse $(parser) --store-json $(DATA_ROOT)/$*/json | parallel -N10000 --pipe ftg map-ftm | parallel -N10000 --pipe ftm store write -d $*
+	psql $(FTM_STORE_URI) < ./psql/author_dedupe.sql
+	find $(DATA_ROOT)/$*/$(src)/ -type f -name "$(pat)" | parallel -N$(chunksize) --pipe ftg parse $(parser) --store-json $(DATA_ROOT)/$*/json --author-triples-table author_triples -d $* | parallel -N10000 --pipe ftg map-ftm | parallel -N10000 --pipe ftm store write -d $*
 
 %.download_json:
 	mkdir -p $(DATA_ROOT)/$*/json
@@ -108,23 +111,25 @@ openaire_covid.parse: chunksize = 1
 
 # wrangling
 %.authors:
-	psql $(FTM_STORE_URI) < ./psql/author_dedupe.sql
-	find $(DATA_ROOT)/$*/json/ -type f -name "*.json" -exec cat {} \; | jq -c | parallel -N 10000 --pipe ftg author-triples -d $* | parallel --pipe -N10000 ftg db insert -t author_triples
+	# psql $(FTM_STORE_URI) < ./psql/author_dedupe.sql
+	# find $(DATA_ROOT)/$*/json/ -type f -name "*.json" -exec cat {} \; | jq -c | parallel -N 10000 --pipe ftg author-triples -d $* | parallel --pipe -N10000 ftg db insert -t author_triples
 	psql $(FTM_STORE_URI) -c "copy (select a.fingerprint from (select fingerprint, count(author_id) from author_triples where dataset = '$*' group by fingerprint) a where a.count > 1) to stdout" | parallel -N1000 --pipe ftg db dedupe-authors -d $* | parallel --pipe -N10000 ftg db insert -t author_aggregation
 
 %.aggregate:
 	ftm store delete -d $*_aggregated
-	ftm store iterate -d $* | parallel --pipe -N10000 ftg db rewrite-author-ids -d $* | parallel --pipe -N10000 ftm store write -d $*_aggregated -o aggregated
+	ftm store iterate -d $* | parallel --pipe -N10000 ftg db rewrite-author-ids | parallel --pipe -N10000 ftm store write -d $*_aggregated -o aggregated
 	ftm store delete -d $*
+	# FIXME ? re-aggregate aufter author dedupe
+	ftm store iterate -d $*_aggregated | parallel --pipe -N10000 ftm store write -d $* -o aggregated
 
 %.db:
-	sed 's/@dataset/$*/g; s/@collection/ftm_$*_aggregated/g' ./psql/ftg_procedure.tmpl.sql | psql $(FTM_STORE_URI)
+	sed 's/@dataset/$*/g; s/@collection/ftm_$*/g' ./psql/ftg_procedure.tmpl.sql | psql $(FTM_STORE_URI)
 
 %.export:
 	rm -rf $(DATA_ROOT)/$*/export/pg_dump
 	mkdir -p $(DATA_ROOT)/$*/export/pg_dump
 	pg_dump $(FTM_STORE_URI) -t $*_* -Fd -Z9 -O -j48 -f $(DATA_ROOT)/$*/export/pg_dump/data
-	pg_dump $(FTM_STORE_URI) -t ftm_$*_aggregated -Fd -Z9 -O -j48 -f $(DATA_ROOT)/$*/export/pg_dump/ftm
+	pg_dump $(FTM_STORE_URI) -t ftm_$* -Fd -Z9 -O -j48 -f $(DATA_ROOT)/$*/export/pg_dump/ftm
 	tar cf - $(DATA_ROOT)/$*/json | parallel --pipe --recend '' --keep-order --block-size 1M "xz -9" > $(DATA_ROOT)/$*/export/json.tar.xz
 
 %.upload:

@@ -12,6 +12,7 @@ from .db import insert_many
 from .dedupe import authors as dedupe
 from .ftm import make_entities
 from .schema import ArticleFullOutput
+from .statements import Statement, statements_from_entity
 
 log = logging.getLogger(__name__)
 
@@ -38,7 +39,12 @@ def cli():
     help="Store parsed json into given directory (1 file per article)",
     type=click.Path(exists=True),
 )
-def parse(parser, infile, outfile, store_json=None):
+@click.option(
+    "--author-triples-table",
+    help="Write author triples to this table"
+)
+@click.option("-d", "--dataset", help="Append source (dataset) column with this value")
+def parse(parser, infile, outfile, store_json=None, author_triples_table=None, dataset=None):
     """
     parse source xml/html files into json representation with metadata, authors,
     institutions and conflict of interest statements
@@ -68,6 +74,14 @@ def parse(parser, infile, outfile, store_json=None):
                     outfile.write(res + "\n")
                 except Exception as e:
                     log.error(f"Cannot parse `{fpath}`: '{e}'")
+
+                if author_triples_table is not None:
+                    triples = []
+                    for triple in dedupe.explode_triples(d):
+                        if dataset is not None:
+                            triple += (dataset,)
+                        triples.append(triple)
+                    insert_many(author_triples_table, triples)
 
 
 @cli.command("map-ftm")
@@ -151,6 +165,19 @@ def flag_cois(infile, outfile):
         except Exception as e:
             log.error(f"{e.__class__.__name__}: {e}")
             log.error(str(row))
+
+
+@cli.command("to-statements")
+@click.option("-i", "--infile", type=click.File("r"), default="-")
+@click.option("-o", "--outfile", type=click.File("w"), default="-")
+@click.option("-d", "--dataset", required=True)
+def to_statements(infile, outfile, dataset):
+    writer = csv.DictWriter(outfile, fieldnames=Statement.__annotations__.keys())
+    writer.writeheader()
+    for entity in readlines(infile):
+        entity = json.loads(entity)
+        for statement in statements_from_entity(entity, dataset):
+            writer.writerow(statement)
 
 
 @cli.group()
