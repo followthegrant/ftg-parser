@@ -5,7 +5,6 @@ import os
 
 import click
 from followthemoney.cli.util import MAX_LINE, write_object
-from pathlib import Path
 
 from . import parse as parsers
 from .coi import flag_coi
@@ -81,8 +80,9 @@ def parse(parser, infile, outfile, store_json=None, author_triples=None, dataset
                     for triple in dedupe.explode_triples(d):
                         if dataset is not None:
                             triple += (dataset,)
-                        path = Path(f'{author_triples}/{",".join(triple)}')
-                        path.touch()
+
+                        with open(f"{author_triples}/{triple[0]}", "a") as f:
+                            f.write(",".join(triple) + "\n")
 
 
 @cli.command("map-ftm")
