@@ -96,9 +96,10 @@ openaire_covid.parse: chunksize = 1
 # parse
 %.parse:
 	ftm store delete -d $*
+	mkdir -p $(DATA_ROOT)/author_triples
 	mkdir -p $(DATA_ROOT)/$*/json
 	psql $(FTM_STORE_URI) < ./psql/author_dedupe.sql
-	find $(DATA_ROOT)/$*/$(src)/ -type f -name "$(pat)" | parallel -N$(chunksize) --pipe ftg parse $(parser) --store-json $(DATA_ROOT)/$*/json --author-triples-table author_triples -d $* | parallel -N10000 --pipe ftg map-ftm | parallel -N10000 --pipe ftm store write -d $*
+	find $(DATA_ROOT)/$*/$(src)/ -type f -name "$(pat)" | parallel -N$(chunksize) --pipe ftg parse $(parser) -d $* --store-json $(DATA_ROOT)/$*/json --author-triples $(DATA_ROOT)/author_triples | parallel -N10000 --pipe ftg map-ftm | parallel -N10000 --pipe ftm store write -d $*
 
 %.download_json:
 	mkdir -p $(DATA_ROOT)/$*/json
@@ -113,6 +114,7 @@ openaire_covid.parse: chunksize = 1
 %.authors:
 	# psql $(FTM_STORE_URI) < ./psql/author_dedupe.sql
 	# find $(DATA_ROOT)/$*/json/ -type f -name "*.json" -exec cat {} \; | jq -c | parallel -N 10000 --pipe ftg author-triples -d $* | parallel --pipe -N10000 ftg db insert -t author_triples
+	find $(DATA_ROOT)/author_triples -type f -exec basename {} \; | parallel --pipe -N10000 ftg db insert -t author_triples
 	psql $(FTM_STORE_URI) -c "copy (select a.fingerprint from (select fingerprint, count(author_id) from author_triples where dataset = '$*' group by fingerprint) a where a.count > 1) to stdout" | parallel -N1000 --pipe ftg db dedupe-authors -d $* | parallel --pipe -N10000 ftg db insert -t author_aggregation
 
 %.aggregate:

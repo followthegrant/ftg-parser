@@ -5,6 +5,7 @@ import os
 
 import click
 from followthemoney.cli.util import MAX_LINE, write_object
+from pathlib import Path
 
 from . import parse as parsers
 from .coi import flag_coi
@@ -40,11 +41,12 @@ def cli():
     type=click.Path(exists=True),
 )
 @click.option(
-    "--author-triples-table",
-    help="Write author triples to this table"
+    "--author-triples",
+    help="Write author triples to this directory",
+    type=click.Path(exists=True)
 )
 @click.option("-d", "--dataset", help="Append source (dataset) column with this value")
-def parse(parser, infile, outfile, store_json=None, author_triples_table=None, dataset=None):
+def parse(parser, infile, outfile, store_json=None, author_triples=None, dataset=None):
     """
     parse source xml/html files into json representation with metadata, authors,
     institutions and conflict of interest statements
@@ -75,13 +77,12 @@ def parse(parser, infile, outfile, store_json=None, author_triples_table=None, d
                 except Exception as e:
                     log.error(f"Cannot parse `{fpath}`: '{e}'")
 
-                if author_triples_table is not None:
-                    triples = []
+                if author_triples is not None:
                     for triple in dedupe.explode_triples(d):
                         if dataset is not None:
                             triple += (dataset,)
-                        triples.append(triple)
-                    insert_many(author_triples_table, triples)
+                        path = Path(f'{author_triples}/{",".join(triple)}')
+                        path.touch()
 
 
 @cli.command("map-ftm")

@@ -20,14 +20,19 @@ def insert_many(
     # FIXME
     this is a bit unstable for the query syntax
     """
-    tmpl = "insert into {table} values ({values}) on conflict {on_conflict};"
     if conn is None:
         conn = get_connection()
-    with conn as tx:
-        for row in rows:
-            q = tmpl.format(
+
+    tmpl = "insert into {table} values ({values}) on conflict {on_conflict};"
+    q = "\n".join(
+        [
+            tmpl.format(
                 table=table,
                 values=",".join([f"'{v}'" for v in row]),
                 on_conflict=on_conflict,
             )
-            tx.query(q)
+            for row in rows
+        ]
+    )
+    with conn as tx:
+        tx.query(q)
