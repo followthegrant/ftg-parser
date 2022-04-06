@@ -35,6 +35,7 @@ setup(
         "followthemoney-store",
         "html2text",
         "pandas",
+        "pika",
         "pubmed_parser @ git+https://github.com/simonwoerpel/pubmed_parser.git@master",  # noqa
         "pyicu",
         "pydantic",

@@ -20,7 +20,7 @@ pubmed.extract:
 	mkdir -p $(DATA_ROOT)/pubmed/extracted
 	parallel tar -C $(DATA_ROOT)/pubmed/extracted -xvf ::: $(DATA_ROOT)/pubmed/src/*.tar.gz
 pubmed.crawl: src = extracted
-pubmed.crawl: pat = *xml
+pubmed.crawl: pat = */*xml
 pubmed.crawl: parser = jats
 
 # EUROPEPMC
