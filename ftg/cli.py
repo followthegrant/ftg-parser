@@ -2,6 +2,7 @@ import csv
 import json
 import logging
 import os
+import sys
 
 import click
 from followthemoney.cli.util import MAX_LINE, write_object
@@ -11,8 +12,10 @@ from .coi import flag_coi
 from .db import insert_many
 from .dedupe import authors as dedupe
 from .ftm import make_entities
+from .logging import configure_logging
 from .schema import ArticleFullOutput
 from .statements import Statement, statements_from_entity
+from .worker import Worker, CRAWL
 
 log = logging.getLogger(__name__)
 
@@ -26,8 +29,14 @@ def readlines(stream):
 
 
 @click.group()
-def cli():
-    pass
+@click.option(
+    "--log-level",
+    default=logging.INFO,
+    help="Set logging level",
+    show_default=True,
+)
+def cli(log_level):
+    configure_logging(log_level, sys.stderr)
 
 
 @cli.command("parse")
@@ -254,3 +263,38 @@ def db_rewrite_authors(infile, outfile, table, dataset=None):
         entity = json.loads(entity)
         entity = dedupe.rewrite_entity(table, entity, dataset)
         outfile.write(json.dumps(entity) + "\n")
+
+
+@cli.group(invoke_without_command=True)
+@click.pass_context
+def worker(ctx):
+    if ctx.obj is None:
+        ctx.obj = {
+            "worker": Worker()
+        }
+    if ctx.invoked_subcommand is None:
+        worker = ctx.obj["worker"]
+        worker.consume()
+
+
+@worker.command("crawl")
+@click.argument("parser")
+@click.argument("pattern")
+@click.option("-d", "--dataset", help="name of the dataset", required=True)
+@click.option("--delete-source/--no-delete-source", help="Delete source files after processing", default=False, show_default=True)
+@click.option(
+    "--store-json",
+    help="Store parsed json into given directory (1 file per article)",
+    type=click.Path(exists=True),
+)
+@click.pass_context
+def crawl(ctx, parser, pattern, dataset, delete_source=False, store_json=None):
+    worker = ctx.obj["worker"]
+    payload = {
+        "parser": parser,
+        "fpath": pattern,
+        "dataset": dataset,
+        "delete_source": delete_source,
+        "store_json": store_json
+    }
+    worker.dispatch(CRAWL, payload)

@@ -93,6 +93,13 @@ openaire_covid.parse: pat = part-*.json.gz
 openaire_covid.parse: parser = openaire
 openaire_covid.parse: chunksize = 1
 
+# new worker implementation
+%.crawl:
+	ftm store delete -d $*
+	mkdir -p $(DATA_ROOT)/$*/json
+	psql $(FTM_STORE_URI) < ./psql/author_dedupe.sql
+	ftg worker crawl jats "$(DATA_ROOT)/$*/$(src)/$(pat)" -d $* --store-json $(DATA_ROOT)/$*/json --delete-source
+
 # parse
 %.parse:
 	ftm store delete -d $*
@@ -162,6 +169,9 @@ psql.start_local:
 	sleep 5
 	psql $(FTM_STORE_URI) < ./psql/alter_system_local.sql
 	docker restart `cat ./psql/docker_id`
+
+rabbitmq:
+	docker run -p 5672:5672 --hostname ftg-rabbit rabbitmq -d
 
 # spacy dependencies
 spacy:
