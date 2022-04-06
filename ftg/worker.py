@@ -126,7 +126,6 @@ class Worker:
         )
 
     def handle(self, channel, method, properties, payload):
-        channel.basic_ack(delivery_tag=method.delivery_tag)
         queue = method.routing_key
         payload = json.loads(payload)
         stage = get_stage(queue, payload)
@@ -137,6 +136,7 @@ class Worker:
         func, *next_queues = QUEUES[queue]
         try:
             res = func(payload)
+            channel.basic_ack(delivery_tag=method.delivery_tag)
             stage.mark_done()
             if res is not None:
                 for data in res:
