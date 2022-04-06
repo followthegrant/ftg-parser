@@ -6,7 +6,7 @@ export REDIS_URL ?= redis://localhost:6379/0
 export INGESTORS_LID_MODEL_PATH=./models/lid.176.ftz
 export LOG_LEVEL ?= info
 
-init: spacy services psql install
+init: install spacy services psql
 
 # PUBMED CENTRAL
 pubmed: pubmed.parse pubmed.authors pubmed.aggregate pubmed.db pubmed.export # pubmed.upload
