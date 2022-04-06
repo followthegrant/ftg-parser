@@ -119,11 +119,15 @@ class Worker:
         log.info(f'[{payload["dataset"]}] {payload["fpath"]} -> {queue.upper()}',
                  thread=threading.current_thread().name)
         payload = json.dumps(payload, default=lambda x: str(x))
-        channel.basic_publish(
-            exchange=self.X,
-            routing_key=queue,
-            body=payload
-        )
+        try:
+            channel.basic_publish(
+                exchange=self.X,
+                routing_key=queue,
+                body=payload,
+                mandatory=True
+            )
+        except pika.exceptions.UnroutableError:
+            log.error('Message could not be confirmed', msg=payload)
 
     def handle(self, channel, method, properties, payload):
         queue = method.routing_key
@@ -134,19 +138,26 @@ class Worker:
         log.info(f'[{payload["dataset"]}] {queue.upper()} : {payload["fpath"]}',
                  thread=threading.current_thread().name)
         func, *next_queues = QUEUES[queue]
+        acknowledged = False
         try:
             res = func(payload)
             channel.basic_ack(delivery_tag=method.delivery_tag)
-            stage.mark_done()
+            acknowledged = True
             if res is not None:
                 for data in res:
                     for queue in next_queues:
                         if queue in allowed_queues:
                             self.dispatch(queue, data, channel)
+            stage.mark_done()
         except Exception as e:
             log.error(f'[{payload["dataset"]}] {queue.upper()} < {payload["fpath"]}',
                       thread=threading.current_thread().name, exception=str(e))
             stage.mark_error()
+            try:
+                if not acknowledged:
+                    channel.basic_reject(delivery_tag=method.delivery_tag, requeue=False)
+            except pika.exceptions.ChannelClosedByBroker as e:
+                log.warning("Could not reject failed task", exception=str(e))
 
     def start(self):
         def _start(channel):
@@ -181,7 +192,9 @@ class Worker:
         return self._create_channel()
 
     def _create_connection(self):
-        return pika.BlockingConnection(pika.ConnectionParameters("localhost"))
+        return pika.BlockingConnection(pika.ConnectionParameters(
+            "localhost", heartbeat=600, blocked_connection_timeout=300
+        ))
 
     def _create_channel(self, connection=None):
         if connection is None:
@@ -189,7 +202,8 @@ class Worker:
         channel = connection.channel()
         channel.exchange_declare(exchange=self.X, exchange_type="direct")
         for queue in QUEUES:
-            channel.queue_declare(queue=queue, durable=True)
+            channel.queue_declare(queue=queue, durable=True, exclusive=False, auto_delete=False)
+            # channel.confirm_delivery()
             channel.queue_bind(exchange=self.X, queue=queue, routing_key=queue)
             channel.basic_qos(prefetch_count=1)
             channel.basic_consume(queue=queue, on_message_callback=self.handle)

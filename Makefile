@@ -177,7 +177,7 @@ services:
 	docker ps
 
 status:
-	@ftg worker status | jq -r '["00 dataset", "job", "stage", "pending", "running", "finisched", "errors"], (.datasets | to_entries[] | {dataset: .key, stage: .value.jobs[].stages[]} | [.dataset, .stage.job_id, .stage.stage, .stage.pending, .stage.running, .stage.finished, .stage.errors]) | @csv' | sort | csvlook -I
+	@ftg worker status | jq -r '["00 dataset", "job", "stage", "pending", "running", "finished", "errors"], (.datasets | to_entries[] | {dataset: .key, stage: .value.jobs[].stages[]} | [.dataset, .stage.job_id, .stage.stage, .stage.pending, .stage.running, .stage.finished, .stage.errors]) | @csv' | sort | csvlook -I
 
 # spacy dependencies
 spacy:
