@@ -15,6 +15,7 @@ usage:
 import logging
 from typing import Iterator
 
+from ...exceptions import LoaderException, ParserException
 from ...util import load_or_extract
 from .jats import parse as parse_jats
 
@@ -28,5 +29,7 @@ def parse(fpath: str) -> Iterator[dict]:
             yield from parse_jats(content)
         except Exception as e:
             log.error(f"Cannot parse jats at `{fpath}`: `{e}`")
+            raise ParserException(e)
     except Exception as e:
         log.error(f"Cannot extract XML at `{fpath}`: `{e}`")
+        raise LoaderException(e)

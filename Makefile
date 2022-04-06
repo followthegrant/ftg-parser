@@ -2,7 +2,11 @@ export DATA_ROOT ?= `pwd`/data
 export FTM_STORE_URI ?= postgresql:///ftg
 export PSQL_PORT ?= 5432
 export PSQL_SHM ?= 1g
+export REDIS_URL ?= redis://localhost:6379/0
 export INGESTORS_LID_MODEL_PATH=./models/lid.176.ftz
+export LOG_LEVEL ?= info
+
+init: spacy services psql install
 
 # PUBMED CENTRAL
 pubmed: pubmed.parse pubmed.authors pubmed.aggregate pubmed.db pubmed.export # pubmed.upload
@@ -15,10 +19,9 @@ pubmed.download:
 pubmed.extract:
 	mkdir -p $(DATA_ROOT)/pubmed/extracted
 	parallel tar -C $(DATA_ROOT)/pubmed/extracted -xvf ::: $(DATA_ROOT)/pubmed/src/*.tar.gz
-pubmed.parse: src = extracted
-pubmed.parse: pat = *xml
-pubmed.parse: parser = jats
-pubmed.parse: chunksize = 1000
+pubmed.crawl: src = extracted
+pubmed.crawl: pat = *xml
+pubmed.crawl: parser = jats
 
 # EUROPEPMC
 europepmc: europepmc.parse europepmc.authors europepmc.aggregate europepmc.db europepmc.export europepmc.upload
@@ -98,7 +101,8 @@ openaire_covid.parse: chunksize = 1
 	ftm store delete -d $*
 	mkdir -p $(DATA_ROOT)/$*/json
 	psql $(FTM_STORE_URI) < ./psql/author_dedupe.sql
-	ftg worker crawl jats "$(DATA_ROOT)/$*/$(src)/$(pat)" -d $* --store-json $(DATA_ROOT)/$*/json --delete-source
+	ftg worker crawl $(parser) "$(DATA_ROOT)/$*/extracted/$(pat)" -d $* --store-json $(DATA_ROOT)/$*/json --delete-source
+	ftg worker
 
 # parse
 %.parse:
@@ -119,11 +123,7 @@ openaire_covid.parse: chunksize = 1
 
 # wrangling
 %.authors:
-	# psql $(FTM_STORE_URI) < ./psql/author_dedupe.sql
-	# find $(DATA_ROOT)/$*/json/ -type f -name "*.json" -exec cat {} \; | jq -c | parallel -N 10000 --pipe ftg author-triples -d $* | parallel --pipe -N10000 ftg db insert -t author_triples
-	# find $(DATA_ROOT)/author_triples -type f -exec sort -u {} \; | parallel --pipe -N10000 ftg db insert -t author_triples
-	# psql $(FTM_STORE_URI) -c "copy (select a.fingerprint from (select fingerprint, count(author_id) from author_triples where dataset = '$*' group by fingerprint) a where a.count > 1) to stdout" | parallel -N1000 --pipe ftg db dedupe-authors -d $* | parallel --pipe -N10000 ftg db insert -t author_aggregation
-	find $(DATA_ROOT)/$*/author_triples -type f -exec sort -u {} \; | parallel --pipe -N10000 ftg dedupe-triples -d $* | parallel --pipe -N10000 ftg db insert -t author_aggregation
+	psql $(FTM_STORE_URI) -c "copy (select a.fingerprint from (select fingerprint, count(author_id) from author_triples where dataset = '$*' group by fingerprint) a where a.count > 1) to stdout" | parallel -N1000 --pipe ftg db dedupe-authors -d $* | parallel --pipe -N10000 ftg db insert -t author_aggregation
 
 
 %.aggregate:
@@ -170,8 +170,14 @@ psql.start_local:
 	psql $(FTM_STORE_URI) < ./psql/alter_system_local.sql
 	docker restart `cat ./psql/docker_id`
 
-rabbitmq:
-	docker run -p 5672:5672 --hostname ftg-rabbit rabbitmq -d
+services:
+	docker run -d -p 5672:5672 --hostname ftg-rabbit rabbitmq:alpine
+	docker run -d -p 6379:6379 redis:alpine
+	sleep 5
+	docker ps
+
+status:
+	@ftg worker status | jq -r '["00 dataset", "job", "stage", "pending", "running", "finisched", "errors"], (.datasets | to_entries[] | {dataset: .key, stage: .value.jobs[].stages[]} | [.dataset, .stage.job_id, .stage.stage, .stage.pending, .stage.running, .stage.finished, .stage.errors]) | @csv' | sort | csvlook -I
 
 # spacy dependencies
 spacy:

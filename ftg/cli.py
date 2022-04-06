@@ -6,6 +6,7 @@ import sys
 
 import click
 from followthemoney.cli.util import MAX_LINE, write_object
+from servicelayer import env
 
 from . import parse as parsers
 from .coi import flag_coi
@@ -15,7 +16,7 @@ from .ftm import make_entities
 from .logging import configure_logging
 from .schema import ArticleFullOutput
 from .statements import Statement, statements_from_entity
-from .worker import Worker, CRAWL
+from .worker import Worker, QUEUES, CRAWL, STORE_JSON, DELETE_SOURCE
 
 log = logging.getLogger(__name__)
 
@@ -31,7 +32,7 @@ def readlines(stream):
 @click.group()
 @click.option(
     "--log-level",
-    default=logging.INFO,
+    default=env.get("LOG_LEVEL", "info"),
     help="Set logging level",
     show_default=True,
 )
@@ -267,14 +268,14 @@ def db_rewrite_authors(infile, outfile, table, dataset=None):
 
 @cli.group(invoke_without_command=True)
 @click.pass_context
-def worker(ctx):
-    if ctx.obj is None:
-        ctx.obj = {
-            "worker": Worker()
-        }
+@click.option("--threads", help="Number of threads to use", type=int)
+def worker(ctx, threads=None):
     if ctx.invoked_subcommand is None:
-        worker = ctx.obj["worker"]
-        worker.consume()
+        worker = Worker(threads=threads)
+        try:
+            worker.start()
+        except KeyboardInterrupt:
+            worker.stop()
 
 
 @worker.command("crawl")
@@ -287,9 +288,8 @@ def worker(ctx):
     help="Store parsed json into given directory (1 file per article)",
     type=click.Path(exists=True),
 )
-@click.pass_context
-def crawl(ctx, parser, pattern, dataset, delete_source=False, store_json=None):
-    worker = ctx.obj["worker"]
+def crawl(parser, pattern, dataset, delete_source=False, store_json=None):
+    worker = Worker()
     payload = {
         "parser": parser,
         "fpath": pattern,
@@ -297,4 +297,17 @@ def crawl(ctx, parser, pattern, dataset, delete_source=False, store_json=None):
         "delete_source": delete_source,
         "store_json": store_json
     }
+    queues = set(QUEUES.keys())
+    if not delete_source:
+        queues.discard(DELETE_SOURCE)
+    if store_json is None:
+        queues.discard(STORE_JSON)
+    payload["allowed_queues"] = list(queues)
     worker.dispatch(CRAWL, payload)
+
+
+@worker.command("status")
+@click.option("-o", "--outfile", type=click.File("w"), default="-")
+def get_worker_status(outfile):
+    status = Worker.get_status()
+    json.dump(status, outfile)

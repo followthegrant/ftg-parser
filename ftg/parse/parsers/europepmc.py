@@ -19,6 +19,7 @@ from typing import Iterator
 
 from lxml import etree
 
+from ...exceptions import LoaderException, ParserException
 from ...util import load_or_extract
 from .jats import parse as parse_jats
 
@@ -35,7 +36,8 @@ def parse(fpath: str) -> Iterator[dict]:
             try:
                 yield from parse_jats(el)
             except Exception as e:
-                log.error(f"Cannot load via pubmed at `{fpath}`: `{e}`")
+                log.error(f"Cannot load via jats at `{fpath}`: `{e}`")
+                raise LoaderException(e)
             # FIXME memory leaks?
             el.clear()
             del el
@@ -44,3 +46,4 @@ def parse(fpath: str) -> Iterator[dict]:
         gc.collect()
     except Exception as e:
         log.error(f"Cannot parse XML at `{fpath}`: `{e}`")
+        raise ParserException(e)

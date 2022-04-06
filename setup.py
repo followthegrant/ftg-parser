@@ -44,7 +44,7 @@ setup(
         "fasttext",
         "networkx",
         "ingest @ git+https://github.com/alephdata/ingest-file.git",
-        "servicelayer @ git+https://github.com/alephdata/servicelayer.git",
+        "servicelayer @ git+https://github.com/simonwoerpel/servicelayer.git@mark_errors",
     ],
     entry_points={
         "console_scripts": ["ftg = ftg.cli:cli"],

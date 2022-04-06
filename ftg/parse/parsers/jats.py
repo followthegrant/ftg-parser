@@ -23,6 +23,7 @@ from banal import ensure_list
 from dateparser import parse as dateparse
 
 from ...coi import extract_coi_from_fulltext
+from ...exceptions import ParserException
 from ...model import ArticleIdentifier
 from ...util import clean_dict
 
@@ -88,6 +89,6 @@ def parse(fpath: str) -> Iterator[dict]:
         data = pp.parse_pubmed_xml(fpath)
     except Exception as e:
         log.error(f"Cannot parse jats at `{fpath}`: `{e}`")
-        return
+        raise ParserException(e)
 
     yield wrangle(data, fpath)
