@@ -5,6 +5,8 @@ from zipfile import ZipFile
 from banal import clean_dict as _clean_dict
 from banal import is_mapping
 
+from . import settings
+
 
 def clean_dict(data, expensive=False):
     """make sure empty strings are None"""
@@ -93,3 +95,8 @@ def load_or_extract(fp):
         with open(fp) as f:
             content = f.read()
         return content
+
+
+def get_path(fp):
+    """fix path related to `DATA_ROOT`, used for docker volumes"""
+    return os.path.join(settings.DATA_ROOT, fp)

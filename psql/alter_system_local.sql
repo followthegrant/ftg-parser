@@ -1,9 +1,9 @@
 ALTER SYSTEM SET
  max_connections = '100';
 ALTER SYSTEM SET
- shared_buffers = '4GB';
+ shared_buffers = '2GB';
 ALTER SYSTEM SET
- effective_cache_size = '12GB';
+ effective_cache_size = '6GB';
 ALTER SYSTEM SET
  maintenance_work_mem = '1GB';
 ALTER SYSTEM SET

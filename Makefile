@@ -6,16 +6,16 @@ export REDIS_URL ?= redis://localhost:6379/0
 export INGESTORS_LID_MODEL_PATH=./models/lid.176.ftz
 export LOG_LEVEL ?= info
 
-init: install spacy services psql
+init: install spacy psql
 
 # PUBMED CENTRAL
 pubmed: pubmed.parse pubmed.authors pubmed.aggregate pubmed.db pubmed.export # pubmed.upload
 pubmed.reparse: pubmed.download_json pubmed.parse_json pubmed.authors pubmed.aggregate pubmed.db pubmed.export pubmed.upload
 pubmed.download:
 	mkdir -p $(DATA_ROOT)/pubmed/src
-	wget -P $(DATA_ROOT)/pubmed/src/ -r -l1 -H -nd -N -np -A "*.tar.gz" -e robots=off ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_bulk/oa_comm/xml/
-	wget -P $(DATA_ROOT)/pubmed/src/ -r -l1 -H -nd -N -np -A "*.tar.gz" -e robots=off ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_bulk/oa_noncomm/xml/
-	wget -P $(DATA_ROOT)/pubmed/src/ -r -l1 -H -nd -N -np -A "*.tar.gz" -e robots=off ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_bulk/oa_other/xml/
+	wget --inet4-only -P $(DATA_ROOT)/pubmed/src/ -r -l1 -H -nd -N -np -A "*.tar.gz" -e robots=off ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_bulk/oa_comm/xml/
+	wget --inet4-only -P $(DATA_ROOT)/pubmed/src/ -r -l1 -H -nd -N -np -A "*.tar.gz" -e robots=off ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_bulk/oa_noncomm/xml/
+	wget --inet4-only -P $(DATA_ROOT)/pubmed/src/ -r -l1 -H -nd -N -np -A "*.tar.gz" -e robots=off ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_bulk/oa_other/xml/
 pubmed.extract:
 	mkdir -p $(DATA_ROOT)/pubmed/extracted
 	parallel tar -C $(DATA_ROOT)/pubmed/extracted -xvf ::: $(DATA_ROOT)/pubmed/src/*.tar.gz
@@ -170,11 +170,11 @@ psql.start_local:
 	psql $(FTM_STORE_URI) < ./psql/alter_system_local.sql
 	docker restart `cat ./psql/docker_id`
 
-services:
-	docker run -d -p 5672:5672 --hostname ftg-rabbit rabbitmq:alpine
-	docker run -d -p 6379:6379 redis:alpine
-	sleep 5
-	docker ps
+rabbitmq:
+	docker run -p 5672:5672 --hostname ftg-rabbit rabbitmq:alpine
+
+redis:
+	docker run -p 6379:6379 redis:alpine
 
 status:
 	@ftg worker status | jq -r '["00 dataset", "job", "stage", "pending", "running", "finished", "errors"], (.datasets | to_entries[] | {dataset: .key, stage: .value.jobs[].stages[]} | [.dataset, .stage.job_id, .stage.stage, .stage.pending, .stage.running, .stage.finished, .stage.errors]) | @csv' | sort | csvlook -I

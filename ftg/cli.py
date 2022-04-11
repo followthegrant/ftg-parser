@@ -1,14 +1,16 @@
 import csv
+import glob
 import json
 import logging
 import os
 import sys
+from datetime import datetime
 
 import click
 from followthemoney.cli.util import MAX_LINE, write_object
-from servicelayer import env
 
 from . import parse as parsers
+from . import settings
 from .coi import flag_coi
 from .db import insert_many
 from .dedupe import authors as dedupe
@@ -16,7 +18,8 @@ from .ftm import make_entities
 from .logging import configure_logging
 from .schema import ArticleFullOutput
 from .statements import Statement, statements_from_entity
-from .worker import Worker, QUEUES, CRAWL, STORE_JSON, DELETE_SOURCE
+from .util import get_path
+from .worker import DELETE_SOURCE, PARSE, QUEUES, STORE_JSON, Worker
 
 log = logging.getLogger(__name__)
 
@@ -32,7 +35,7 @@ def readlines(stream):
 @click.group()
 @click.option(
     "--log-level",
-    default=env.get("LOG_LEVEL", "info"),
+    default=settings.LOG_LEVEL,
     help="Set logging level",
     show_default=True,
 )
@@ -52,7 +55,7 @@ def cli(log_level):
 @click.option(
     "--author-triples",
     help="Write author triples to this directory",
-    type=click.Path(exists=True)
+    type=click.Path(exists=True),
 )
 @click.option("-d", "--dataset", help="Append source (dataset) column with this value")
 def parse(parser, infile, outfile, store_json=None, author_triples=None, dataset=None):
@@ -267,43 +270,56 @@ def db_rewrite_authors(infile, outfile, table, dataset=None):
 
 
 @cli.group(invoke_without_command=True)
+@click.option(
+    "--heartbeat",
+    help="Heartbeat interval in seconds",
+    type=int,
+    default=5,
+    show_default=True,
+)
 @click.pass_context
-@click.option("--threads", help="Number of threads to use", type=int)
-def worker(ctx, threads=None):
+def worker(ctx, heartbeat):
     if ctx.invoked_subcommand is None:
-        worker = Worker(threads=threads)
-        try:
-            worker.start()
-        except KeyboardInterrupt:
-            worker.stop()
+        worker = Worker(heartbeat=heartbeat)
+        worker.start()
 
 
 @worker.command("crawl")
 @click.argument("parser")
 @click.argument("pattern")
 @click.option("-d", "--dataset", help="name of the dataset", required=True)
-@click.option("--delete-source/--no-delete-source", help="Delete source files after processing", default=False, show_default=True)
+@click.option(
+    "--delete-source/--no-delete-source",
+    help="Delete source files after processing",
+    default=False,
+    show_default=True,
+)
+@click.option("--job-id", help="Job ID, will be auto generated if empty")
 @click.option(
     "--store-json",
     help="Store parsed json into given directory (1 file per article)",
-    type=click.Path(exists=True),
+    type=click.Path(exists=False),
 )
-def crawl(parser, pattern, dataset, delete_source=False, store_json=None):
+def crawl(parser, pattern, dataset, delete_source=False, store_json=None, job_id=None):
     worker = Worker()
     payload = {
         "parser": parser,
-        "fpath": pattern,
         "dataset": dataset,
         "delete_source": delete_source,
-        "store_json": store_json
+        "store_json": store_json,
+        "job_id": job_id or datetime.now().isoformat(),
     }
     queues = set(QUEUES.keys())
     if not delete_source:
         queues.discard(DELETE_SOURCE)
-    if store_json is None:
+    if store_json is not None:
+        store_json = get_path(store_json)
+    else:
         queues.discard(STORE_JSON)
     payload["allowed_queues"] = list(queues)
-    worker.dispatch(CRAWL, payload)
+    for fp in glob.glob(get_path(pattern)):
+        worker.dispatch(PARSE, {**payload, **{"fpath": fp}})
+    worker.flush()
 
 
 @worker.command("status")

@@ -1,0 +1,43 @@
+version: '3'
+
+services:
+  worker:
+    restart: on-failure
+    image: ftg-worker
+    build: .
+    links:
+      - postgres
+      - rabbitmq
+      - redis
+    environment:
+      FTM_STORE_URI: postgresql://ftg:ftg@postgres/ftg
+      RABBITMQ_URL: amqp://guest:guest@rabbitmq:5672/
+      DEBUG: true
+    volumes:
+      - ${DATA_ROOT}:/data
+
+  postgres:
+    restart: on-failure
+    image: postgres:alpine
+    expose:
+      - 5432
+    environment:
+      - POSTGRES_DB=ftg
+      - POSTGRES_USER=ftg
+      - POSTGRES_PASSWORD=ftg
+    volumes:
+      - ${DATA_ROOT}/psql:/var/lib/postgresql/data
+
+  rabbitmq:
+    restart: on-failure
+    image: rabbitmq:alpine
+    expose:
+      - 5672
+    volumes:
+      - ${DATA_ROOT}/rabbitmq:/var/lib/rabbitmq
+
+  redis:
+    restart: on-failure
+    image: redis:alpine
+    expose:
+      - 6379
