@@ -81,10 +81,10 @@ def op_write_author_triples(dataset, rows):
 
 QUEUES = {
     # stage: (func, batch_size, *next_stages)
-    PARSE: (op_parse, 100, STORE_JSON, MAP_FTM, AUTHOR_TRIPLES),
-    STORE_JSON: (op_store_json, 1000, DELETE_SOURCE),
-    DELETE_SOURCE: (op_delete_source, 1000),
-    MAP_FTM: (op_map_ftm, 100, WRITE_FTM),
+    PARSE: (op_parse, 1, STORE_JSON, MAP_FTM, AUTHOR_TRIPLES),
+    STORE_JSON: (op_store_json, 1, DELETE_SOURCE),
+    DELETE_SOURCE: (op_delete_source, 1),
+    MAP_FTM: (op_map_ftm, 1, WRITE_FTM),
     AUTHOR_TRIPLES: (op_author_triples, 1000, WRITE_AUTHOR_TRIPLES),
     WRITE_FTM: (op_write_ftm, 1000),
     WRITE_AUTHOR_TRIPLES: (op_write_author_triples, 1000),
@@ -156,8 +156,6 @@ class TaskAggregator:
                         log.exception(msg, payload=payload, exception=e)
                     errors += 1
                     self.consumer.nack(delivery_tag, requeue=False)
-
-            # self.consumer.ack(delivery_tag, multiple=True)
 
             if self.is_writer and len(to_write):
                 self.func(self.dataset, to_write)

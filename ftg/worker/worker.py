@@ -21,12 +21,12 @@ EXCHANGE = "ftg.processing"
 
 
 def basic_publish(queue, payload, channel, should_log=False):
+    props = pika.BasicProperties(content_type="application/json", delivery_mode=2)
     stage = get_stage(queue, dataset=payload["dataset"], job_id=payload["job_id"])
     stage.queue()
     if should_log:
         log.info(f'[{payload["dataset"]}] {payload["fpath"]} -> {queue.upper()}')
     payload = json.dumps(payload, default=lambda x: str(x))
-    props = pika.BasicProperties(content_type="application/json", delivery_mode=1)
     try:
         channel.basic_publish(
             exchange=EXCHANGE,
@@ -98,7 +98,7 @@ class BaseWorker:
             settings.RABBITMQ_URL,
             exchange=EXCHANGE,
             queues=list(self.queues.keys()),
-            prefetch_count=10000,
+            prefetch_count=settings.PREFETCH_COUNT,
             heartbeat=self.heartbeat,
         )
         self.consumer.run()
