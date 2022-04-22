@@ -5,7 +5,6 @@
 import functools
 import logging
 import time
-import uuid
 import pika
 from pika.exchange_type import ExchangeType
 
@@ -24,9 +23,7 @@ class PikaConsumer:
     If the channel is closed, it will indicate a problem with one of the
     commands that were issued and that should surface in the output as well.
 
-    It can have multiple queues, passed in as a list of names.
-
-    It can have an optional heartbeat that can trigger periodic tasks.
+    It can listen to multiple queues, passed in as a list of names.
     """
 
     EXCHANGE_TYPE = ExchangeType.direct
@@ -38,8 +35,6 @@ class PikaConsumer:
         queues,
         on_message_cb,
         prefetch_count=1,
-        heartbeat=0,
-        on_heartbeat_cb=None,
     ):
         """Create a new instance of the consumer class, passing in the AMQP
         URL used to connect to RabbitMQ.
@@ -61,31 +56,19 @@ class PikaConsumer:
         self._binded_queues = []
         self.exchange = exchange
         self.on_message_cb = on_message_cb
-        self.on_heartbeat_cb = on_heartbeat_cb
-        self.heartbeat = heartbeat
-        self.heartbeat_queue = None
 
         self.queues = self.preconfigure_queues(queues)
 
     def preconfigure_queues(self, queues):
-        """configure basic kwargs for queues and an exclusive heartbeat
-        queue if required"""
-        configured_queues = {}
-        for queue in queues:
-            configured_queues[queue] = {
+        """configure basic kwargs for queues"""
+        return {
+            queue: {
                 "durable": True,
                 "exclusive": False,
                 "auto_delete": False,
             }
-
-        if self.heartbeat > 0:
-            self.heartbeat_queue = f"heartbeat-{uuid.uuid4()}"
-            configured_queues[self.heartbeat_queue] = {
-                "durable": False,
-                "exclusive": True,
-                "auto_delete": True,
-            }
-        return configured_queues
+            for queue in queues
+        }
 
     def connect(self):
         """This method connects to RabbitMQ, returning the connection handle.
@@ -315,18 +298,10 @@ class PikaConsumer:
         log.info("Issuing consumer related RPC commands")
         self.add_on_cancel_callback()
         for queue in self._binded_queues:
-            if queue == self.heartbeat_queue:
-                consumer_tag = self._channel.basic_consume(
-                    queue, self.on_heartbeat_cb_safe
-                )
-            else:
-                consumer_tag = self._channel.basic_consume(queue, self.on_message_cb)
+            consumer_tag = self._channel.basic_consume(queue, self.on_message_cb)
             self._consumer_tags.append(consumer_tag)
         self.was_consuming = True
         self._consuming = True
-        if self.heartbeat > 0:
-            self.last_heartbeat = time.time()
-            self.schedule_heartbeat()
 
     def add_on_cancel_callback(self):
         """Add a callback that will be invoked if RabbitMQ cancels the consumer
@@ -446,32 +421,13 @@ class PikaConsumer:
                 self._connection.ioloop.stop()
             log.info("Stopped")
 
-    def schedule_heartbeat(self):
-        if self.heartbeat > 0 and self._connection.is_open:
-            self._connection.ioloop.call_later(self.heartbeat, self.send_heartbeat)
-
-    def send_heartbeat(self):
-        if self.heartbeat > 0 and self._consuming:
-            log.info("<3")
-            self._channel.basic_publish(
-                exchange=self.exchange,
-                routing_key=self.heartbeat_queue,
-                body=str(time.time()),
-                properties=pika.BasicProperties(content_type="text/plain"),
-            )
-        self.schedule_heartbeat()
-
-    def on_heartbeat_cb_safe(self, *args, **kwargs):
-        """Ignore missed heartbeats"""
-        if time.time() - self.last_heartbeat >= self.heartbeat:
-            self.on_heartbeat_cb(*args, **kwargs)
-            self.heartbeat = time.time()
-
 
 class ReconnectingPikaConsumer(object):
     """This is an example consumer that will reconnect if the nested
     ExampleConsumer indicates that a reconnect is necessary.
     """
+
+    consumer_class = PikaConsumer
 
     def __init__(self, amqp_url, **kwargs):
         self._reconnect_delay = 0
@@ -479,8 +435,15 @@ class ReconnectingPikaConsumer(object):
         self._consumer_kwargs = kwargs
         self._consumer = self._get_consumer()
 
-        self.ack = self._consumer.ack
-        self.nack = self._consumer.nack
+    def ack(self, *args, **kwargs):
+        self._consumer.ack(*args, **kwargs)
+
+    def nack(self, *args, **kwargs):
+        self._consumer.nack(*args, **kwargs)
+
+    def on_message(self, channel, method, properties, payload):
+        """receive a message"""
+        raise NotImplementedError
 
     def run(self):
         while True:
@@ -509,10 +472,9 @@ class ReconnectingPikaConsumer(object):
         return self._reconnect_delay
 
     def _get_consumer(self):
-        return PikaConsumer(
+        return self.consumer_class(
             self._amqp_url,
             on_message_cb=self.on_message,
-            on_heartbeat_cb=self.on_heartbeat,
             **self._consumer_kwargs,
         )
 
@@ -523,3 +485,11 @@ class ReconnectingPikaConsumer(object):
     @property
     def connection(self):
         return self._consumer._connection
+
+    @property
+    def is_active(self):
+        if self.connection.is_closed:
+            return False
+        if self.channel is None:
+            return False
+        return self._consumer._consuming

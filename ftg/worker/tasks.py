@@ -1,7 +1,6 @@
 import json
 import os
 import time
-from collections import Counter
 from functools import lru_cache
 
 import dataset as ds
@@ -85,9 +84,9 @@ QUEUES = {
     STORE_JSON: (op_store_json, 1, DELETE_SOURCE),
     DELETE_SOURCE: (op_delete_source, 1),
     MAP_FTM: (op_map_ftm, 1, WRITE_FTM),
-    AUTHOR_TRIPLES: (op_author_triples, 1000, WRITE_AUTHOR_TRIPLES),
-    WRITE_FTM: (op_write_ftm, 1000),
-    WRITE_AUTHOR_TRIPLES: (op_write_author_triples, 1000),
+    AUTHOR_TRIPLES: (op_author_triples, 1, WRITE_AUTHOR_TRIPLES),
+    WRITE_FTM: (op_write_ftm, 100),
+    WRITE_AUTHOR_TRIPLES: (op_write_author_triples, 100),
 }
 
 
@@ -122,13 +121,11 @@ class TaskAggregator:
     def flush(self):
         if self.should_flush():
             self.is_flushing = True
-            self.stage._check_out(len(self.tasks))
             log.info(
                 f"[{self.dataset}] {self.queue} : running {len(self.tasks)} tasks..."
             )
             done = 0
             errors = 0
-            queued = Counter()
             to_write = []
             to_dispatch = []
 
@@ -146,7 +143,6 @@ class TaskAggregator:
                             for payload in res:
                                 for queue in next_queues:
                                     to_dispatch.append((queue, payload))
-                                    queued[queue] += 1
                     done += 1
                     self.consumer.ack(delivery_tag)
                 except Exception as e:
@@ -163,11 +159,6 @@ class TaskAggregator:
             if len(to_dispatch):
                 for queue, payload in to_dispatch:
                     self.consumer.dispatch(queue, payload)
-
-            for queue, items in queued.items():
-                stage = get_stage(queue, job_id=self.stage.job.id, dataset=self.dataset)
-                for _ in range(items):
-                    stage.queue()
 
             if done:
                 self.stage.mark_done(done)

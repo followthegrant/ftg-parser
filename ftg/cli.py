@@ -19,7 +19,7 @@ from .logging import configure_logging
 from .schema import ArticleFullOutput
 from .statements import Statement, statements_from_entity
 from .util import get_path
-from .worker import DELETE_SOURCE, PARSE, QUEUES, STORE_JSON, Worker
+from .worker import DELETE_SOURCE, PARSE, QUEUES, STORE_JSON, BatchWorker, Worker
 
 log = logging.getLogger(__name__)
 
@@ -270,6 +270,16 @@ def db_rewrite_authors(infile, outfile, table, dataset=None):
 
 
 @cli.group(invoke_without_command=True)
+@click.option("--queue", "-q", multiple=True, help="Listen to queue(s)")
+@click.pass_context
+def worker(ctx, queue):
+    if ctx.invoked_subcommand is None:
+        worker = Worker(queues=list(queue))
+        worker.run()
+
+
+@worker.command("batch")
+@click.option("--queue", "-q", multiple=True, help="Listen to queue(s)")
 @click.option(
     "--heartbeat",
     help="Heartbeat interval in seconds",
@@ -277,11 +287,9 @@ def db_rewrite_authors(infile, outfile, table, dataset=None):
     default=5,
     show_default=True,
 )
-@click.pass_context
-def worker(ctx, heartbeat):
-    if ctx.invoked_subcommand is None:
-        worker = Worker(heartbeat=heartbeat)
-        worker.start()
+def batch_worker(queue, heartbeat):
+    worker = BatchWorker(queues=list(queue), heartbeat=heartbeat)
+    worker.run()
 
 
 @worker.command("crawl")
@@ -319,7 +327,7 @@ def crawl(parser, pattern, dataset, delete_source=False, store_json=None, job_id
     payload["allowed_queues"] = list(queues)
     for fp in glob.glob(get_path(pattern)):
         worker.dispatch(PARSE, {**payload, **{"fpath": fp}})
-    worker.flush()
+    worker.shutdown()
 
 
 @worker.command("status")

@@ -9,4 +9,4 @@ RABBITMQ_URL = env.get(
     "RABBITMQ_URL",
     "amqp://guest:guest@localhost:5672/%2F?heartbeat=3600&blocked_connection_timeout=3600",
 )
-PREFETCH_COUNT = env.to_int("RABBITMQ_PREFETCH_COUNT", 10000)
+EXCHANGE = "ftg.exchange"

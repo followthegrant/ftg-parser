@@ -10,10 +10,35 @@ services:
       - rabbitmq
       - redis
     environment:
-      FTM_STORE_URI: postgresql://ftg:ftg@postgres/ftg
       RABBITMQ_URL: amqp://guest:guest@rabbitmq:5672/%2F?heartbeat=600&blocked_connection_timeout=300
     volumes:
       - ${DATA_ROOT}:/data
+
+  worker-psql-ftm:
+    command: "ftg worker batch -q write-ftm"
+    restart: on-failure
+    image: ftg-worker
+    build: .
+    links:
+      - postgres
+      - rabbitmq
+      - redis
+    environment:
+      FTM_STORE_URI: postgresql://ftg:ftg@postgres/ftg
+      RABBITMQ_URL: amqp://guest:guest@rabbitmq:5672/%2F?heartbeat=600&blocked_connection_timeout=300
+
+  worker-psql-triples:
+    command: "ftg worker batch -q write-author-triples"
+    restart: on-failure
+    image: ftg-worker
+    build: .
+    links:
+      - postgres
+      - rabbitmq
+      - redis
+    environment:
+      FTM_STORE_URI: postgresql://ftg:ftg@postgres/ftg
+      RABBITMQ_URL: amqp://guest:guest@rabbitmq:5672/%2F?heartbeat=600&blocked_connection_timeout=300
 
   postgres:
     restart: on-failure

@@ -34,6 +34,7 @@ setup(
         "followthemoney",
         "followthemoney-store",
         "html2text",
+        "psycopg2",
         "pandas",
         "pika",
         "pubmed_parser @ git+https://github.com/simonwoerpel/pubmed_parser.git@master",  # noqa
