@@ -16,6 +16,11 @@ services:
           memory: 64G
       restart_policy:
         condition: any
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+      postgres:
+        condition: service_healthy
 
   worker-psql-ftm:
     command: "ftg worker batch -q write-ftm"
@@ -31,6 +36,11 @@ services:
       mode: global
       restart_policy:
         condition: any
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+      postgres:
+        condition: service_healthy
 
   worker-psql-triples:
     command: "ftg worker batch -q write-author-triples"
@@ -46,6 +56,11 @@ services:
       mode: global
       restart_policy:
         condition: any
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+      postgres:
+        condition: service_healthy
 
   postgres:
     image: postgres:alpine
@@ -97,6 +112,11 @@ services:
       mode: global
       restart_policy:
         condition: any
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:15672"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
 
   redis:
     image: redis:alpine
