@@ -96,7 +96,7 @@ services:
       restart_policy:
         condition: any
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready"]
+      test: ["CMD-SHELL", "pg_isready -U ftg"]
       interval: 10s
       timeout: 5s
       retries: 5
@@ -118,7 +118,7 @@ services:
       restart_policy:
         condition: any
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:15672"]
+      test: "rabbitmq-diagnostics -q ping"
       interval: 30s
       timeout: 10s
       retries: 5
