@@ -4,12 +4,8 @@ import time
 import uuid
 
 import structlog
-from structlog.contextvars import (
-    bind_contextvars,
-    clear_contextvars,
-    merge_contextvars,
-)
-
+from structlog import get_logger  # noqa
+from structlog.contextvars import bind_contextvars, clear_contextvars, merge_contextvars
 
 LOG_FORMAT_TEXT = "TEXT"
 LOG_FORMAT_JSON = "JSON"
