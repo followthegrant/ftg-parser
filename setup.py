@@ -41,7 +41,7 @@ setup(
         "pyicu",
         "pydantic",
         "spacy",
-        "pyyaml<6.0.0",
+        "pyyaml",
         "pyparsing<3",
         "fasttext",
         "networkx",
