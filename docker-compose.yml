@@ -3,8 +3,7 @@ version: '3'
 services:
   worker:
     restart: on-failure
-    image: ftg-worker
-    build: .
+    image: registry.gitlab.com/follow-the-grant/ftg-parser:worker-rabbitmq
     links:
       - postgres
       - rabbitmq
@@ -17,8 +16,7 @@ services:
   worker-psql-ftm:
     command: "ftg worker batch -q write-ftm"
     restart: on-failure
-    image: ftg-worker
-    build: .
+    image: registry.gitlab.com/follow-the-grant/ftg-parser:worker-rabbitmq
     links:
       - postgres
       - rabbitmq
@@ -30,8 +28,7 @@ services:
   worker-psql-triples:
     command: "ftg worker batch -q write-author-triples"
     restart: on-failure
-    image: ftg-worker
-    build: .
+    image: registry.gitlab.com/follow-the-grant/ftg-parser:worker-rabbitmq
     links:
       - postgres
       - rabbitmq
@@ -43,8 +40,27 @@ services:
   postgres:
     restart: on-failure
     image: postgres:alpine
+    command: >
+      -c max_connections=100
+      -c shared_buffers=16GB
+      -c effective_cache_size=48GB
+      -c maintenance_work_mem=2GB
+      -c checkpoint_completion_target=0.9
+      -c wal_buffers=16MB
+      -c default_statistics_target=100
+      -c random_page_cost=1.1
+      -c effective_io_concurrency=200
+      -c work_mem=20971kB
+      -c min_wal_size=1GB
+      -c max_wal_size=4GB
+      -c max_worker_processes=32
+      -c max_parallel_workers_per_gather=4
+      -c max_parallel_workers=32
+      -c max_parallel_maintenance_workers=4
     expose:
       - 5432
+    ports:
+      - 5432:5432
     environment:
       - POSTGRES_DB=ftg
       - POSTGRES_USER=ftg
@@ -57,6 +73,8 @@ services:
     image: rabbitmq:alpine
     expose:
       - 5672
+    ports:
+      - 8000:15672
     volumes:
       - ${DATA_ROOT}/rabbitmq:/var/lib/rabbitmq
 
