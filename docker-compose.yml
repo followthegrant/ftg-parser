@@ -1,44 +1,53 @@
-version: '3'
-
 services:
   worker:
-    restart: on-failure
-    image: registry.gitlab.com/follow-the-grant/ftg-parser:worker-rabbitmq
+    image: ftg-worker
     links:
       - postgres
       - rabbitmq
       - redis
     environment:
-      RABBITMQ_URL: amqp://guest:guest@rabbitmq:5672/%2F?heartbeat=600&blocked_connection_timeout=300
+      RABBITMQ_URL: amqp://guest:guest@rabbitmq:5672/%2F?heartbeat=3600&blocked_connection_timeout=3600
     volumes:
       - ${DATA_ROOT}:/data
+    deploy:
+      replicas: 48
+      resources:
+        limits:
+          memory: 64G
+      restart_policy:
+        condition: any
 
   worker-psql-ftm:
     command: "ftg worker batch -q write-ftm"
-    restart: on-failure
-    image: registry.gitlab.com/follow-the-grant/ftg-parser:worker-rabbitmq
+    image: ftg-worker
     links:
       - postgres
       - rabbitmq
       - redis
     environment:
       FTM_STORE_URI: postgresql://ftg:ftg@postgres/ftg
-      RABBITMQ_URL: amqp://guest:guest@rabbitmq:5672/%2F?heartbeat=600&blocked_connection_timeout=300
+      RABBITMQ_URL: amqp://guest:guest@rabbitmq:5672/%2F?heartbeat=1200&blocked_connection_timeout=600
+    deploy:
+      mode: global
+      restart_policy:
+        condition: any
 
   worker-psql-triples:
     command: "ftg worker batch -q write-author-triples"
-    restart: on-failure
-    image: registry.gitlab.com/follow-the-grant/ftg-parser:worker-rabbitmq
+    image: ftg-worker
     links:
       - postgres
       - rabbitmq
       - redis
     environment:
       FTM_STORE_URI: postgresql://ftg:ftg@postgres/ftg
-      RABBITMQ_URL: amqp://guest:guest@rabbitmq:5672/%2F?heartbeat=600&blocked_connection_timeout=300
+      RABBITMQ_URL: amqp://guest:guest@rabbitmq:5672/%2F?heartbeat=1200&blocked_connection_timeout=600
+    deploy:
+      mode: global
+      restart_policy:
+        condition: any
 
   postgres:
-    restart: on-failure
     image: postgres:alpine
     command: >
       -c max_connections=100
@@ -60,26 +69,40 @@ services:
     expose:
       - 5432
     ports:
-      - 5432:5432
+      - 127.0.0.1:5432:5432
     environment:
       - POSTGRES_DB=ftg
       - POSTGRES_USER=ftg
       - POSTGRES_PASSWORD=ftg
     volumes:
       - ${DATA_ROOT}/psql:/var/lib/postgresql/data
+    deploy:
+      mode: global
+      restart_policy:
+        condition: any
 
   rabbitmq:
-    restart: on-failure
-    image: rabbitmq:alpine
+    image: rabbitmq:management-alpine
+    hostname: ftg-rabbit
+    environment:
+      RABBITMQ_NODENAME: rabbot@ftg-rabbit
     expose:
       - 5672
     ports:
-      - 8000:15672
+      - 127.0.0.1:8000:15672
     volumes:
       - ${DATA_ROOT}/rabbitmq:/var/lib/rabbitmq
+      - ${PWD}/rabbitmq.conf.d:/etc/rabbitmq/conf.d
+    deploy:
+      mode: global
+      restart_policy:
+        condition: any
 
   redis:
-    restart: on-failure
     image: redis:alpine
     expose:
       - 6379
+    deploy:
+      mode: global
+      restart_policy:
+        condition: any
