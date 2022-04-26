@@ -80,8 +80,8 @@ def op_write_author_triples(dataset, rows):
 
 QUEUES = {
     # stage: (func, batch_size, *next_stages)
-    PARSE: (op_parse, 1, STORE_JSON, MAP_FTM, AUTHOR_TRIPLES),
-    STORE_JSON: (op_store_json, 1, DELETE_SOURCE),
+    PARSE: (op_parse, 1, STORE_JSON, MAP_FTM, AUTHOR_TRIPLES, DELETE_SOURCE),
+    STORE_JSON: (op_store_json, 1),
     DELETE_SOURCE: (op_delete_source, 1),
     MAP_FTM: (op_map_ftm, 1, WRITE_FTM),
     AUTHOR_TRIPLES: (op_author_triples, 1, WRITE_AUTHOR_TRIPLES),
