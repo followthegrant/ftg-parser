@@ -6,11 +6,10 @@ export REDIS_URL ?= redis://localhost:6379/0
 export INGESTORS_LID_MODEL_PATH=./models/lid.176.ftz
 export LOG_LEVEL ?= info
 
-init: install spacy psql
-
 # PUBMED CENTRAL
-pubmed: pubmed.parse pubmed.authors pubmed.aggregate pubmed.db pubmed.export # pubmed.upload
-pubmed.reparse: pubmed.download_json pubmed.parse_json pubmed.authors pubmed.aggregate pubmed.db pubmed.export pubmed.upload
+pubmed.parse: pubmed.download pubmed.extract pubmed.crawl
+pubmed.wrangle: pubmed.authors pubmed.aggregate pubmed.db pubmed.export
+pubmed.export: pubmed.export_json pubmed.export_db
 pubmed.download:
 	mkdir -p $(DATA_ROOT)/pubmed/src
 	wget --inet4-only -P $(DATA_ROOT)/pubmed/src/ -r -l1 -H -nd -N -np -A "*.tar.gz" -e robots=off ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_bulk/oa_comm/xml/
@@ -19,53 +18,43 @@ pubmed.download:
 pubmed.extract:
 	mkdir -p $(DATA_ROOT)/pubmed/extracted
 	parallel tar -C $(DATA_ROOT)/pubmed/extracted -xvf ::: $(DATA_ROOT)/pubmed/src/*.tar.gz
-pubmed.crawl: src = extracted
-pubmed.crawl: pat = */*xml
+pubmed.crawl: pat = extracted/*/*xml
 pubmed.crawl: parser = jats
 
 # EUROPEPMC
-europepmc: europepmc.parse europepmc.authors europepmc.aggregate europepmc.db europepmc.export europepmc.upload
-europepmc.reparse: europepmc.download_json europepmc.parse_json europepmc.authors europepmc.aggregate europepmc.db europepmc.export europepmc.upload
+europepmc: europepmc.download europepmc.crawl europepmc.authors europepmc.aggregate europepmc.db europepmc.export europepmc.upload
 europepmc.download:
 	mkdir -p $(DATA_ROOT)/europepmc/src
 	wget -P $(DATA_ROOT)/europepmc/src/ -r -l1 -H -nd -N -np -A "*.xml.gz" -e robots=off https://europepmc.org/ftp/oa/
-europepmc.parse: src = src
-europepmc.parse: pat = *.xml.gz
-europepmc.parse: parser = europepmc
-europepmc.parse: chunksize = 1
+europepmc.crawl: pat = src/*.xml.gz
+europepmc.crawl: parser = europepmc
 
 # EUROPEPMC PREPRINTS
-europepmc_ppr: europepmc_ppr.download europepmc_ppr.parse europepmc_ppr.authors europepmc_ppr.aggregate europepmc_ppr.db europepmc_ppr.export europepmc_ppr.upload
-europepmc_ppr.reparse: europepmc_ppr.download_json europepmc_ppr.parse_json europepmc_ppr.authors europepmc_ppr.aggregate europepmc_ppr.db europepmc_ppr.export europepmc_ppr.upload
+europepmc_ppr: europepmc_ppr.download europepmc_ppr.crawl europepmc_ppr.authors europepmc_ppr.aggregate europepmc_ppr.db europepmc_ppr.export europepmc_ppr.upload
 europepmc_ppr.download:
 	mkdir -p $(DATA_ROOT)/europepmc_ppr/src
 	wget -P $(DATA_ROOT)/europepmc_ppr/src/ -r -l1 -H -nd -N -np -A "*.xml.gz" -e robots=off https://europepmc.org/ftp/preprint_fulltext
-europepmc_ppr.parse: src = src
-europepmc_ppr.parse: pat = *.xml.gz
-europepmc_ppr.parse: parser = europepmc
-europepmc_ppr.parse: chunksize = 1
+europepmc_ppr.crawl: pat = src/*.xml.gz
+europepmc_ppr.crawl: parser = europepmc
 
 # BIORXIV
 biorxiv: biorxiv.parse biorxiv.authors biorxiv.aggregate biorxiv.db biorxiv.export biorxiv.upload
-biorxiv.reparse: biorxiv.download_json biorxiv.parse_json biorxiv.authors biorxiv.aggregate biorxiv.db biorxiv.export biorxiv.upload
 biorxiv.parse: src = src
 biorxiv.parse: pat = *.xml
 biorxiv.parse: parser = jats
 biorxiv.parse: chunksize = 1000
 
 # MEDRXIV
-medrxiv: medrxiv.parse medrxiv.authors medrxiv.aggregate medrxiv.db medrxiv.export medrxiv.upload
-medrxiv.reparse: medrxiv.download_json medrxiv.parse_json medrxiv.authors medrxiv.aggregate medrxiv.db medrxiv.export medrxiv.upload
+medrxiv.parse: medrxiv.crawl
+medrxiv.wrangle: medrxiv.authors medrxiv.aggregate medrxiv.db medrxiv.export
 medrxiv.download:
 	mkdir -p $(DATA_ROOT)/medrxiv/src
 	# ca. 1.5 yrs back
-	aws s3 sync s3://medrxiv-src-monthly/Current_Content/ $(DATA_ROOT)/medrxiv/src/ --request-payer requester
+	aws --profile aws s3 sync s3://medrxiv-src-monthly/Current_Content/ $(DATA_ROOT)/medrxiv/src/ --request-payer requester
 	# for all data:
-	# aws s3 sync s3://medrxiv-src-monthly/Back_Content/ $(DATA_ROOT)/src/ --request-payer requester
-medrxiv.parse: src = src
-medrxiv.parse: pat = *.meca
-medrxiv.parse: parser = medrxiv
-medrxiv.parse: chunksize = 1000
+	aws --profile aws s3 sync s3://medrxiv-src-monthly/Back_Content/ $(DATA_ROOT)/medrxiv/src/ --request-payer requester
+medrxiv.crawl: pat = src/*.meca
+medrxiv.crawl: parser = medrxiv
 
 # SEMANTICSCHOLAR
 semanticscholar: semanticscholar.download semanticscholar.parse semanticscholar.authors semanticscholar.aggregate semanticscholar.db semanticscholar.export semanticscholar.upload
@@ -96,85 +85,77 @@ openaire_covid.parse: pat = part-*.json.gz
 openaire_covid.parse: parser = openaire
 openaire_covid.parse: chunksize = 1
 
-# new worker implementation
+# requires docker-compose up -d
 %.crawl:
 	ftm store delete -d $*
 	mkdir -p $(DATA_ROOT)/$*/json
 	psql $(FTM_STORE_URI) < ./psql/author_dedupe.sql
-	ftg worker crawl $(parser) "$(DATA_ROOT)/$*/extracted/$(pat)" -d $* --store-json $(DATA_ROOT)/$*/json --delete-source
-	ftg worker
-
-# parse
-%.parse:
-	ftm store delete -d $*
-	mkdir -p $(DATA_ROOT)/$*/author_triples
-	mkdir -p $(DATA_ROOT)/$*/json
-	psql $(FTM_STORE_URI) < ./psql/author_dedupe.sql
-	find $(DATA_ROOT)/$*/$(src)/ -type f -name "$(pat)" | parallel -N$(chunksize) --pipe ftg parse $(parser) --store-json $(DATA_ROOT)/$*/json --author-triples $(DATA_ROOT)/$*/author_triples | parallel -N10000 --pipe ftg map-ftm | parallel -N10000 --pipe ftm store write -d $*
+	docker-compose run --rm worker ftg worker crawl $(parser) "$*/$(pat)" -d $* --store-json "$*/json" --delete-source
 
 %.download_json:
 	mkdir -p $(DATA_ROOT)/$*/json
-	aws --endpoint-url $(S3_ENDPOINT) s3 cp s3://followthegrant/$*/export/json.tar.xz $(DATA_ROOT)/$*/json/
+	aws --profile ftg --endpoint-url $(S3_ENDPOINT) s3 cp s3://followthegrant/$*/export/json.tar.xz $(DATA_ROOT)/$*/json/
 	tar -xvf $(DATA_ROOT)/$*/json/json.tar.xz -C $(DATA_ROOT)/$*/json/ --strip-components=5
 
 %.parse_json:
 	ftm store delete -d $*
 	find $(DATA_ROOT)/$*/json/ -type f -name "*.json" -exec cat {} \; | jq -c | parallel -N1000 --pipe ftg map-ftm | parallel -N10000 --pipe ftm store write -d $*
 
-# wrangling
+# author dedupe
 %.authors:
 	psql $(FTM_STORE_URI) -c "copy (select a.fingerprint from (select fingerprint, count(author_id) from author_triples where dataset = '$*' group by fingerprint) a where a.count > 1) to stdout" | parallel -N1000 --pipe ftg db dedupe-authors -d $* | parallel --pipe -N10000 ftg db insert -t author_aggregation
 
 
 %.aggregate:
+	psql $(FTM_STORE_URI) < ./psql/author_dedupe.sql  # for re-index
 	ftm store delete -d $*_aggregated
 	ftm store iterate -d $* | parallel --pipe -N10000 ftg db rewrite-author-ids | parallel --pipe -N10000 ftm store write -d $*_aggregated -o aggregated
 	ftm store delete -d $*
-	# FIXME ? re-aggregate aufter author dedupe
+	# FIXME ? re-aggregate aufter author ids rewrite
 	ftm store iterate -d $*_aggregated | parallel --pipe -N10000 ftm store write -d $* -o aggregated
 
 %.db:
 	sed 's/@dataset/$*/g; s/@collection/ftm_$*/g' ./psql/ftg_procedure.tmpl.sql | psql $(FTM_STORE_URI)
 
-%.export:
+%.export_json:
+	mkdir -p $(DATA_ROOT)/$*/export
+	tar cf - $(DATA_ROOT)/$*/json | parallel --pipe --recend '' --keep-order --block-size 1M "xz -9" > $(DATA_ROOT)/$*/export/json.tar.xz
+
+%.export_db:
 	rm -rf $(DATA_ROOT)/$*/export/pg_dump
 	mkdir -p $(DATA_ROOT)/$*/export/pg_dump
 	pg_dump $(FTM_STORE_URI) -t $*_* -Fd -Z9 -O -j48 -f $(DATA_ROOT)/$*/export/pg_dump/data
 	pg_dump $(FTM_STORE_URI) -t ftm_$* -Fd -Z9 -O -j48 -f $(DATA_ROOT)/$*/export/pg_dump/ftm
-	tar cf - $(DATA_ROOT)/$*/json | parallel --pipe --recend '' --keep-order --block-size 1M "xz -9" > $(DATA_ROOT)/$*/export/json.tar.xz
 
 %.upload:
-	aws --endpoint-url $(S3_ENDPOINT) s3 sync $(DATA_ROOT)/$*/export s3://followthegrant/$*/export
+	aws --profile ftg --endpoint-url $(S3_ENDPOINT) s3 sync $(DATA_ROOT)/$*/export s3://followthegrant/$*/export
 
 %.sync:
-	aws --endpoint-url $(S3_ENDPOINT) s3 sync s3://followthegrant/$*/export $(DATA_ROOT)/$*/export
+	aws --profile ftg --endpoint-url $(S3_ENDPOINT) s3 sync s3://followthegrant/$*/export $(DATA_ROOT)/$*/export
 
 %.pg_restore:
 	pg_restore -d $(FTM_STORE_URI) $(DATA_ROOT)/$*/export/pg_dump/data
 
-# psql docker
+
+# STANDALONE SERVICES (redis rabbit psql)
+
 .PHONY: psql
 psql:
 	mkdir -p $(DATA_ROOT)/psql/data
 	docker run --shm-size=$(PSQL_SHM) -p $(PSQL_PORT):5432 -v $(DATA_ROOT)/psql/data:/var/lib/postgresql/data -e POSTGRES_USER=ftg -e POSTGRES_PASSWORD=ftg -d postgres:latest > ./psql/docker_id
 	sleep 5
-	psql $(FTM_STORE_URI) < ./psql/alter_system.sql
+	psql $(FTM_STORE_URI) < ./psql/alter_system_local.sql
 	docker restart `cat ./psql/docker_id`
 
 psql.%:
 	docker $* `cat ./psql/docker_id`
 
-psql.start_local:
-	docker run --shm-size=$(PSQL_SHM) -p $(PSQL_PORT):5432 -v $(DATA_ROOT)/psql/data:/var/lib/postgresql/data -e POSTGRES_USER=ftg -e POSTGRES_PASSWORD=ftg -d postgres:latest > ./psql/docker_id
-	sleep 5
-	psql $(FTM_STORE_URI) < ./psql/alter_system_local.sql
-	docker restart `cat ./psql/docker_id`
-
-rabbitmq:
-	docker run -p 5672:5672 --hostname ftg-rabbit rabbitmq:alpine
-
 redis:
 	docker run -p 6379:6379 redis:alpine
+
+rabbitmq:
+	docker run -p 5672:5672 -p 8080:15672 --hostname ftg-rabbit rabbitmq:management-alpine
+
 
 status:
 	@ftg worker status | jq -r '["00 dataset", "job", "stage", "pending", "running", "finished", "errors"], (.datasets | to_entries[] | {dataset: .key, stage: .value.jobs[].stages[]} | [.dataset, .stage.job_id, .stage.stage, .stage.pending, .stage.running, .stage.finished, .stage.errors]) | @csv' | sort | csvlook -I
@@ -200,7 +181,7 @@ spacy:
 
 # package
 
-install:
+install: spacy
 	pip install -e .
 
 install.dev:
