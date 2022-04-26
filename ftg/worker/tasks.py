@@ -104,13 +104,13 @@ class TaskAggregator:
         self.consumer = consumer
         self.stage = stage
         self.dataset = stage.job.dataset.name
-        self.queue = stage.stage.upper()
+        self.queue = stage.stage
         self.tasks = []
         func, batch_size, *next_queues = QUEUES[stage.stage]
         self.func = func
         self.batch_size = batch_size
         self.next_queues = next_queues
-        self.is_writer = self.queue.startswith("WRITE")
+        self.is_writer = self.queue.startswith("write")
         self.last_activity = time.time()
 
     def add(self, tag, payload):
@@ -122,7 +122,7 @@ class TaskAggregator:
         if self.should_flush():
             self.is_flushing = True
             log.info(
-                f"[{self.dataset}] {self.queue} : running {len(self.tasks)} tasks..."
+                f"[{self.dataset}] {self.queue.upper()} : running {len(self.tasks)} tasks..."
             )
             done = 0
             errors = 0
@@ -154,7 +154,12 @@ class TaskAggregator:
                     self.consumer.nack(delivery_tag, requeue=False)
 
             if self.is_writer and len(to_write):
-                self.func(self.dataset, to_write)
+                try:
+                    self.func(self.dataset, to_write)
+                except Exception as e:
+                    self.handle_error(e)
+                    done = 0
+                    errors = 0
 
             if len(to_dispatch):
                 for queue, payload in to_dispatch:
@@ -162,15 +167,27 @@ class TaskAggregator:
 
             if done:
                 self.stage.mark_done(done)
-                log.info(f"[{self.dataset}] {self.queue} : {done} tasks successful.")
+                log.info(
+                    f"[{self.dataset}] {self.queue.upper()} : {done} tasks successful."
+                )
             if errors:
                 self.stage.mark_error(errors)
-                log.warning(f"[{self.dataset}] {self.queue} : {errors} tasks failed.")
+                log.warning(
+                    f"[{self.dataset}] {self.queue.upper()} : {errors} tasks failed."
+                )
 
             # reset basket
             self.tasks = []
             self.is_flushing = False
             self.last_activity = time.time()
+
+    def handle_error(self, e):
+        """re-queue all the tasks in current batch"""
+        log.warning(
+            f"[{self.dataset}] {self.queue.upper()} : Aggregated tasks failed ({e}). Will retry..."
+        )
+        for _, task in self.tasks:
+            self.consumer.retry_task(self.queue, task)
 
     def should_flush(self):
         """make sure we can and should flush"""

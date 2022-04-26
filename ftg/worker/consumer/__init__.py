@@ -41,9 +41,19 @@ def basic_publish(queue, payload, channel, should_log=False):
 
 class _FTGConsumer:
     QUEUES = QUEUES
+    MAX_RETRIES = 3
 
     def dispatch(self, queue, payload):
         basic_publish(queue, payload, self.channel)
+
+    def retry_task(self, queue, payload):
+        retries = payload.get("retries", 0)
+        if retries <= self.MAX_RETRIES:
+            payload["retries"] = retries + 1
+            self.dispatch(queue, payload)
+        else:
+            e = f"Max retries ({self.MAX_RETRIES}) exceeded."
+            self.handle_error(e, payload, queue)
 
     def get_next_queues(self, payload, next_queues):
         """make sure to dispatch only to active queues"""
