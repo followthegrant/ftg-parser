@@ -209,17 +209,12 @@ def db_insert(infile, table):
 
     currently a very simple approach: input csv without header, all columns must
     be present and in order of the existing `table`
-    doesn't complain if a row already exists, but will not update it
+    doesn't complain if a row already exists (on conflict do nothing)
 
     # FIXME when using with `echo <many lines> | parallel --pipe ftg db insert ..`
     this can cause deadlocks on postgresql!!
     """
-    rows = []
-    for ix, row in enumerate(csv.reader(infile)):
-        rows.append(row)
-        if ix % 10000 == 0:
-            insert_many(table, rows)
-            rows = []
+    rows = [r for r in csv.reader(infile)]
     if rows:
         insert_many(table, rows)
 
