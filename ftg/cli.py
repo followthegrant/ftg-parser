@@ -214,9 +214,7 @@ def db_insert(infile, table):
     # FIXME when using with `echo <many lines> | parallel --pipe ftg db insert ..`
     this can cause deadlocks on postgresql!!
     """
-    rows = [r for r in csv.reader(infile)]
-    if rows:
-        insert_many(table, rows)
+    insert_many(table, csv.reader(infile))
 
 
 @db.command("dedupe-authors")
