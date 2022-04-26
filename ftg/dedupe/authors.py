@@ -105,6 +105,13 @@ def _get_aggregated_id(table: Table, author_id: str, dataset: str = None) -> str
     return author_id
 
 
+AUTHOR_ROLES = (
+    "author",
+    "individual conflict of interest statement",
+    "individual acknowledgement statement",
+)
+
+
 def rewrite_entity(table: str, entity: dict, dataset: str = None, conn=None) -> dict:
     """
     rewrite author ids for `entity` fetched from generated pairs table
@@ -123,18 +130,20 @@ def rewrite_entity(table: str, entity: dict, dataset: str = None, conn=None) -> 
             return entity
 
         if entity["schema"] == "Membership":
-            author_id = entity["properties"]["member"][0]
+            author_ids = entity["properties"]["member"]
             entity["properties"]["member"] = [
                 _get_aggregated_id(table, author_id, dataset)
+                for author_id in author_ids
             ]
             return entity
 
         if entity["schema"] == "Documentation":
             role = entity["properties"]["role"][0]
-            if role == "author" or "individual conflict of interest statement" in role:
-                author_id = entity["properties"]["entity"][0]
+            if role in AUTHOR_ROLES:
+                author_ids = entity["properties"]["entity"]
                 entity["properties"]["entity"] = [
                     _get_aggregated_id(table, author_id, dataset)
+                    for author_id in author_ids
                 ]
                 return entity
 
