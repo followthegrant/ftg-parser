@@ -10,7 +10,6 @@ create table if not exists author_triples (
 
 create index on author_triples (fingerprint);
 create index on author_triples (author_id);
-create index on author_triples (value_id);
 create index on author_triples (dataset);
 
 create table if not exists author_aggregation (

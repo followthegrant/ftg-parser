@@ -1,13 +1,13 @@
 import csv
 import glob
 import json
-import logging
 import os
 import sys
 from datetime import datetime
 
 import click
 from followthemoney.cli.util import MAX_LINE, write_object
+from ftmstore import get_dataset
 
 from . import parse as parsers
 from . import settings
@@ -15,13 +15,13 @@ from .coi import flag_coi
 from .db import insert_many
 from .dedupe import authors as dedupe
 from .ftm import make_entities
-from .logging import configure_logging
+from .logging import configure_logging, get_logger
 from .schema import ArticleFullOutput
 from .statements import Statement, statements_from_entity
 from .util import get_path
 from .worker import DELETE_SOURCE, PARSE, QUEUES, STORE_JSON, BatchWorker, Worker
 
-log = logging.getLogger(__name__)
+log = get_logger(__name__)
 
 
 def readlines(stream):
@@ -260,6 +260,43 @@ def db_rewrite_authors(infile, outfile, table, dataset=None):
         entity = json.loads(entity)
         entity = dedupe.rewrite_entity(table, entity, dataset)
         outfile.write(json.dumps(entity) + "\n")
+
+
+@db.command("yield-dedupe-entities")
+@click.option("-d", "--dataset", help="Ftm store dataset", required=True)
+@click.option("-o", "--outfile", type=click.File("w"), default="-")
+@click.option(
+    "-t",
+    "--table",
+    default="author_aggregation",
+    help="Database table to read aggregated IDs from",
+    show_default=True,
+)
+def db_yield_dedupe_entities(dataset, outfile, table):
+    """yield ids from entities that need to be rewritten based on aggregated ids from `table`"""
+    aggregations = dedupe.get_aggregation_mapping(table=table, dataset=dataset)
+    dataset = get_dataset(dataset)
+    for entity in dedupe.get_entities_to_rewrite(dataset, aggregations):
+        outfile.write(entity["id"] + "\n")
+
+
+@db.command("rewrite-inplace")
+@click.option("-d", "--dataset", help="Ftm store dataset", required=True)
+@click.option("-i", "--infile", type=click.File("r"), default="-")
+@click.option(
+    "-t",
+    "--table",
+    default="author_aggregation",
+    help="Database table to read aggregated IDs from",
+    show_default=True,
+)
+def db_rewrite_inplace(dataset, infile, table):
+    """rewrite entities given by ids input in ftm store"""
+    ftm_dataset = get_dataset(dataset)
+    for i, entity_id in enumerate(readlines(infile)):
+        dedupe.rewrite_entity_inplace(ftm_dataset, entity_id)
+        if i % 1000 == 0:
+            log.info("Rewritten 1000 entities.", dataset=dataset, table=table)
 
 
 @cli.group(invoke_without_command=True)

@@ -49,11 +49,9 @@ medrxiv.parse: medrxiv.crawl
 medrxiv.wrangle: medrxiv.authors medrxiv.aggregate medrxiv.db medrxiv.export
 medrxiv.download:
 	mkdir -p $(DATA_ROOT)/medrxiv/src
-	# ca. 1.5 yrs back
-	aws --profile aws s3 sync s3://medrxiv-src-monthly/Current_Content/ $(DATA_ROOT)/medrxiv/src/ --request-payer requester
-	# for all data:
-	aws --profile aws s3 sync s3://medrxiv-src-monthly/Back_Content/ $(DATA_ROOT)/medrxiv/src/ --request-payer requester
-medrxiv.crawl: pat = src/*.meca
+	# ca. 250 GB ~ 10$
+	aws --profile aws s3 sync s3://medrxiv-src-monthly/ $(DATA_ROOT)/medrxiv/src/ --request-payer requester
+medrxiv.crawl: pat = src/*/*/*.meca
 medrxiv.crawl: parser = medrxiv
 
 # SEMANTICSCHOLAR
@@ -103,16 +101,9 @@ openaire_covid.parse: chunksize = 1
 
 # author dedupe
 %.authors:
-	psql $(FTM_STORE_URI) -c "copy (select a.fingerprint from (select fingerprint, count(author_id) from author_triples where dataset = '$*' group by fingerprint) a where a.count > 1) to stdout" | parallel -N1000 --pipe ftg db dedupe-authors -d $* | parallel --pipe -N10000 ftg db insert -t author_aggregation
-
-
-%.aggregate:
 	psql $(FTM_STORE_URI) < ./psql/author_dedupe.sql  # for re-index
-	ftm store delete -d $*_aggregated
-	ftm store iterate -d $* | parallel --pipe -N10000 ftg db rewrite-author-ids | parallel --pipe -N10000 ftm store write -d $*_aggregated -o aggregated
-	ftm store delete -d $*
-	# FIXME ? re-aggregate aufter author ids rewrite
-	ftm store iterate -d $*_aggregated | parallel --pipe -N10000 ftm store write -d $* -o aggregated
+	psql $(FTM_STORE_URI) -c "copy (select a.fingerprint from (select fingerprint, count(author_id) from author_triples where dataset = '$*' group by fingerprint) a where a.count > 1) to stdout" | parallel -N1000 --pipe ftg db dedupe-authors -d $* | parallel --pipe -N10000 ftg db insert -t author_aggregation
+	ftg db yield-dedupe-entities -d $* | parallel -N1000 --pipe ftg db rewrite-inplace -d $*
 
 %.db:
 	sed 's/@dataset/$*/g; s/@collection/ftm_$*/g' ./psql/ftg_procedure.tmpl.sql | psql $(FTM_STORE_URI)
@@ -131,7 +122,7 @@ openaire_covid.parse: chunksize = 1
 	aws --profile ftg --endpoint-url $(S3_ENDPOINT) s3 sync $(DATA_ROOT)/$*/export s3://followthegrant/$*/export
 
 %.sync:
-	aws --profile ftg --endpoint-url $(S3_ENDPOINT) s3 sync s3://followthegrant/$*/export $(DATA_ROOT)/$*/export
+	aws --profile ftg --endpoint-url $(S3_ENDPOINT) s3 sync --delete s3://followthegrant/$*/export $(DATA_ROOT)/$*/export
 
 %.pg_restore:
 	pg_restore -d $(FTM_STORE_URI) $(DATA_ROOT)/$*/export/pg_dump/data
@@ -141,6 +132,13 @@ openaire_covid.parse: chunksize = 1
 
 .PHONY: psql
 psql:
+	mkdir -p $(DATA_ROOT)/psql/data
+	docker run --shm-size=$(PSQL_SHM) -p $(PSQL_PORT):5432 -v $(DATA_ROOT)/psql/data:/var/lib/postgresql/data -e POSTGRES_USER=ftg -e POSTGRES_PASSWORD=ftg -d postgres:latest > ./psql/docker_id
+	sleep 5
+	psql $(FTM_STORE_URI) < ./psql/alter_system.sql
+	docker restart `cat ./psql/docker_id`
+
+psql.dev:
 	mkdir -p $(DATA_ROOT)/psql/data
 	docker run --shm-size=$(PSQL_SHM) -p $(PSQL_PORT):5432 -v $(DATA_ROOT)/psql/data:/var/lib/postgresql/data -e POSTGRES_USER=ftg -e POSTGRES_PASSWORD=ftg -d postgres:latest > ./psql/docker_id
 	sleep 5
