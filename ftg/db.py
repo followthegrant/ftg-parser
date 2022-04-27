@@ -37,13 +37,14 @@ class BulkWriter:
             self.flush()
 
     def flush(self):
-        values = ",\n".join([self._get_row(row) for row in self.rows])
-        query = self.TMPL.format(
-            table=self.table, values=values, on_conflict=self.on_conflict
-        )
-        with self.conn as tx:
-            tx.query(query)
-        log.info(f"Bulk inserted {len(self.rows)} rows into `{self.table}`")
+        if self.rows:
+            values = ",\n".join([self._get_row(row) for row in self.rows])
+            query = self.TMPL.format(
+                table=self.table, values=values, on_conflict=self.on_conflict
+            )
+            with self.conn as tx:
+                tx.query(query)
+            log.info(f"Bulk inserted {len(self.rows)} rows into `{self.table}`")
         self.rows = []
 
     def _get_row(self, row):
@@ -60,7 +61,7 @@ def insert_many(
 ) -> None:
     """
     # FIXME
-    this is a bit unstable for the query syntax
+    this is probably a bit unstable for the query syntax
     """
 
     bulk = BulkWriter(table, conn, chunk_size, on_conflict)
