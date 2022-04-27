@@ -33,7 +33,7 @@ services:
       FTM_STORE_URI: postgresql://ftg:ftg@postgres/ftg
       RABBITMQ_URL: amqp://guest:guest@rabbitmq:5672/%2F?heartbeat=1200&blocked_connection_timeout=600
     deploy:
-      replicas: 32
+      replicas: 16
       restart_policy:
         condition: any
     depends_on:
@@ -53,7 +53,7 @@ services:
       FTM_STORE_URI: postgresql://ftg:ftg@postgres/ftg
       RABBITMQ_URL: amqp://guest:guest@rabbitmq:5672/%2F?heartbeat=1200&blocked_connection_timeout=600
     deploy:
-      replicas: 32
+      replicas: 16
       restart_policy:
         condition: any
     depends_on:
