@@ -40,7 +40,10 @@ def op_parse(payload):
 
 
 def op_delete_source(payload):
-    os.remove(get_path(payload["fpath"]))
+    try:
+        os.remove(get_path(payload["fpath"]))
+    except OSError:
+        pass
 
 
 def op_store_json(payload):
