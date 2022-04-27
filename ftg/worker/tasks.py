@@ -42,7 +42,7 @@ def op_parse(payload):
 def op_delete_source(payload):
     try:
         os.remove(get_path(payload["fpath"]))
-    except OSError:
+    except (OSError, FileNotFoundError):
         pass
 
 
