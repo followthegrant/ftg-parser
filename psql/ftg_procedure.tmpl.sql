@@ -22,7 +22,7 @@ create table @dataset_documentation as (
   from @collection
   where
     origin = 'aggregated'
-    and entity > '{"schema": "Documentation"}'
+    and entity @> '{"schema": "Documentation"}'
 );
 create index on @dataset_documentation (entity);
 create index on @dataset_documentation (document);
@@ -95,6 +95,7 @@ create table @dataset_authors as (
 );
 /* create unique index on @dataset_authors (id); FIXME */
 create index on @dataset_authors (id);
+create index on @dataset_authors (fingerprint);
 create index on @dataset_authors (country, countries);
 
 -- institutions
@@ -125,6 +126,8 @@ create table @dataset_affiliations as (
     origin = 'aggregated'
     and entity @> '{"schema": "Membership"}'
 );
+create index on @dataset_affiliations (author_id);
+create index on @dataset_affiliations (institution_id);
 
 -- authorship
 create table @dataset_authorship as (
