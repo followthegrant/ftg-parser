@@ -72,11 +72,9 @@ def op_author_triples(payload):
 
 
 def op_write_author_triples(dataset, rows):
-    conn = db.get_connection()
     rows = [r + [dataset] for r in rows]
     if len(rows):
-        db.insert_many("author_triples", rows, conn=conn)
-    conn.close()
+        db.insert_many("author_triples", rows)
 
 
 QUEUES = {

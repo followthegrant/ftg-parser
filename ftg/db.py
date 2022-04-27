@@ -63,7 +63,6 @@ def insert_many(
     # FIXME
     this is probably a bit unstable for the query syntax
     """
-
     bulk = BulkWriter(table, conn, chunk_size, on_conflict)
     for row in rows:
         bulk.add(row)
