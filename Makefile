@@ -7,7 +7,7 @@ export LOG_LEVEL ?= info
 
 # PUBMED CENTRAL
 pubmed.parse: pubmed.download pubmed.extract pubmed.crawl
-pubmed.wrangle: pubmed.authors pubmed.db
+pubmed.wrangle: pubmed.authors pubmed.tables
 pubmed.export: pubmed.export_json pubmed.export_db
 pubmed.download:
 	mkdir -p $(DATA_ROOT)/pubmed/src
@@ -22,7 +22,7 @@ pubmed.crawl: parser = jats
 
 # EUROPEPMC
 europepmc.parse: europepmc.download europepmc.extract europepmc.crawl
-europepmc.wrangle: europepmc.authors europepmc.db
+europepmc.wrangle: europepmc.authors europepmc.tables
 europepmc.export: europepmc.export_json europepmc.export_db
 europepmc.download:
 	mkdir -p $(DATA_ROOT)/europepmc/src
@@ -32,7 +32,7 @@ europepmc.crawl: parser = europepmc
 
 # EUROPEPMC PREPRINTS
 europepmc_ppr.parse: europepmc_ppr.download europepmc_ppr.extract europepmc_ppr.crawl
-europepmc_ppr.wrangle: europepmc_ppr.authors europepmc_ppr.db
+europepmc_ppr.wrangle: europepmc_ppr.authors europepmc_ppr.tables
 europepmc_ppr.export: europepmc_ppr.export_json europepmc_ppr.export_db
 europepmc_ppr.download:
 	mkdir -p $(DATA_ROOT)/europepmc_ppr/src
@@ -41,7 +41,7 @@ europepmc_ppr.crawl: pat = src/*.xml.gz
 europepmc_ppr.crawl: parser = europepmc
 
 # BIORXIV
-biorxiv: biorxiv.parse biorxiv.authors biorxiv.aggregate biorxiv.db biorxiv.export biorxiv.upload
+biorxiv: biorxiv.parse biorxiv.authors biorxiv.aggregate biorxiv.tables biorxiv.export biorxiv.upload
 biorxiv.parse: src = src
 biorxiv.parse: pat = *.xml
 biorxiv.parse: parser = jats
@@ -49,7 +49,7 @@ biorxiv.parse: chunksize = 1000
 
 # MEDRXIV
 medrxiv.parse: medrxiv.crawl
-medrxiv.wrangle: medrxiv.authors medrxiv.aggregate medrxiv.db medrxiv.export
+medrxiv.wrangle: medrxiv.authors medrxiv.aggregate medrxiv.tables medrxiv.export
 medrxiv.download:
 	mkdir -p $(DATA_ROOT)/medrxiv/src
 	# ca. 250 GB ~ 20$ ? FIXME
@@ -58,7 +58,7 @@ medrxiv.crawl: pat = src/*/*/*.meca
 medrxiv.crawl: parser = medrxiv
 
 # SEMANTICSCHOLAR
-semanticscholar: semanticscholar.download semanticscholar.parse semanticscholar.authors semanticscholar.aggregate semanticscholar.db semanticscholar.export semanticscholar.upload
+semanticscholar: semanticscholar.download semanticscholar.parse semanticscholar.authors semanticscholar.aggregate semanticscholar.tables semanticscholar.export semanticscholar.upload
 semanticscholar.download:
 	mkdir -p $(DATA_ROOT)/semanticscholar/src
 	aws s3 cp --no-sign-request --recursive s3://ai2-s2-research-public/open-corpus/2021-12-01/ $(DATA_ROOT)/semanticscholar/src
@@ -68,14 +68,14 @@ semanticscholar.parse: parser = semanticscholar
 semanticscholar.parse: chunksize = 1
 
 # OPENAIRE
-openaire: openaire.parse openaire.authors openaire.aggregate openaire.db openaire.export openaire.upload
+openaire: openaire.parse openaire.authors openaire.aggregate openaire.tables openaire.export openaire.upload
 openaire.parse: src = src
 openaire.parse: pat = part-*.json.gz
 openaire.parse: parser = openaire
 openaire.parse: chunksize = 1
 
 # OPENAIRE COVID SUBSET
-openaire_covid: openaire_covid.download openaire_covid.parse openaire_covid.authors openaire_covid.aggregate openaire_covid.db openaire_covid.export openaire_covid.upload
+openaire_covid: openaire_covid.download openaire_covid.parse openaire_covid.authors openaire_covid.aggregate openaire_covid.tables openaire_covid.export openaire_covid.upload
 openaire_covid.download:
 	mkdir -p $(DATA_ROOT)/openaire_covid/src
 	mkdir -p $(DATA_ROOT)/openaire_covid/extracted
@@ -86,11 +86,14 @@ openaire_covid.parse: pat = part-*.json.gz
 openaire_covid.parse: parser = openaire
 openaire_covid.parse: chunksize = 1
 
-# requires docker-compose up -d
+init:
+	docker-compose up -d
+	psql $(FTM_STORE_URI) < ./psql/author_dedupe.sql
+	touch ./init
+
 %.crawl:
 	ftm store delete -d $*
 	mkdir -p $(DATA_ROOT)/$*/json
-	psql $(FTM_STORE_URI) < ./psql/author_dedupe.sql
 	docker-compose run --rm worker ftg worker crawl $(parser) "$*/$(pat)" -d $* --store-json "$*/json" --delete-source
 
 %.download_json:
@@ -104,12 +107,14 @@ openaire_covid.parse: chunksize = 1
 
 # author dedupe
 %.authors:
-	psql $(FTM_STORE_URI) < ./psql/author_dedupe.sql  # for re-index
 	psql $(FTM_STORE_URI) -c "copy (select a.fingerprint from (select fingerprint, count(author_id) from author_triples where dataset = '$*' group by fingerprint) a where a.count > 1) to stdout" | parallel -N1000 --pipe ftg db dedupe-authors -d $* | parallel --pipe -N10000 ftg db insert -t author_aggregation
 	ftg db yield-dedupe-entities -d $* | parallel -N1000 --pipe ftg db rewrite-inplace -d $*
 
-%.db:
-	sed 's/@dataset/$*/g; s/@collection/ftm_$*/g' ./psql/ftg_procedure.tmpl.sql | psql $(FTM_STORE_URI)
+%.tables:
+	sed 's/@dataset/$*/g; s/@collection/ftm_$*/g' ./psql/ftg_tables.tmpl.sql | psql $(FTM_STORE_URI)
+
+%.index:
+	sed 's/@dataset/$*/g; s/@collection/ftm_$*/g' ./psql/ftg_index.tmpl.sql | psql $(FTM_STORE_URI)
 
 %.export_json:
 	mkdir -p $(DATA_ROOT)/$*/export
@@ -129,6 +134,7 @@ openaire_covid.parse: chunksize = 1
 
 %.pg_restore:
 	pg_restore -d $(FTM_STORE_URI) $(DATA_ROOT)/$*/export/pg_dump/data
+	sed 's/@dataset/$*/g; s/@collection/ftm_$*/g' ./psql/ftg_index.tmpl.sql | psql $(FTM_STORE_URI)
 
 
 # STANDALONE SERVICES (rabbit psql)

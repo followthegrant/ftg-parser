@@ -1,5 +1,3 @@
-/* begin; */
-
 drop table if exists @dataset_journals;
 drop table if exists @dataset_articles;
 drop table if exists @dataset_article_identifiers;
@@ -39,7 +37,7 @@ create table @dataset_journals as (
     origin = 'aggregated'
     and entity @> '{"schema": "LegalEntity"}'
 );
-create unique index on @dataset_journals (id);
+/* create unique index on @dataset_journals (id); */
 
 -- articles
 create table @dataset_articles as (
@@ -62,7 +60,7 @@ create table @dataset_articles as (
     a.origin = 'aggregated'
     and a.entity @> '{"schema": "Article"}'
 );
-create unique index on @dataset_articles (id);
+/* create unique index on @dataset_articles (id); */
 
 -- article ids for crossmatch
 create table @dataset_article_identifiers as (
@@ -75,9 +73,9 @@ create table @dataset_article_identifiers as (
     origin = 'aggregated'
     and entity @> '{"schema": "Note"}'
 );
-create index on @dataset_article_identifiers (article_id);
-create index on @dataset_article_identifiers (key);
-create index on @dataset_article_identifiers (id);
+/* create index on @dataset_article_identifiers (article_id); */
+/* create index on @dataset_article_identifiers (key); */
+/* create index on @dataset_article_identifiers (id); */
 
 -- authors
 create table @dataset_authors as (
@@ -94,9 +92,9 @@ create table @dataset_authors as (
     and entity @> '{"schema": "Person"}'
 );
 /* create unique index on @dataset_authors (id); FIXME */
-create index on @dataset_authors (id);
-create index on @dataset_authors (fingerprint);
-create index on @dataset_authors (country, countries);
+/* create index on @dataset_authors (id); */
+/* create index on @dataset_authors (fingerprint); */
+/* create index on @dataset_authors (country, countries); */
 
 -- institutions
 create table @dataset_institutions as (
@@ -111,8 +109,8 @@ create table @dataset_institutions as (
     origin = 'aggregated'
     and entity @> '{"schema": "Organization"}'
 );
-create unique index on @dataset_institutions (id);
-create index on @dataset_institutions (country, countries);
+/* create unique index on @dataset_institutions (id); */
+/* create index on @dataset_institutions (country, countries); */
 
 -- author affiliations
 create table @dataset_affiliations as (
@@ -126,8 +124,8 @@ create table @dataset_affiliations as (
     origin = 'aggregated'
     and entity @> '{"schema": "Membership"}'
 );
-create index on @dataset_affiliations (author_id);
-create index on @dataset_affiliations (institution_id);
+/* create index on @dataset_affiliations (author_id); */
+/* create index on @dataset_affiliations (institution_id); */
 
 -- authorship
 create table @dataset_authorship as (
@@ -139,8 +137,8 @@ create table @dataset_authorship as (
   where
     role = 'author'
 );
-create index on @dataset_authorship (author_id);
-create index on @dataset_authorship (article_id);
+/* create index on @dataset_authorship (author_id); */
+/* create index on @dataset_authorship (article_id); */
 
 -- coi statements
 create table @dataset_cois as (
@@ -160,10 +158,10 @@ create table @dataset_cois as (
     on a.entity = b.document
   where a.role like '%conflict of interest statement%'
 );
-create index on @dataset_cois (article_id);
-create index on @dataset_cois (author_id);
-create index on @dataset_cois (coi_id);
-create index on @dataset_cois (type);
+/* create index on @dataset_cois (article_id); */
+/* create index on @dataset_cois (author_id); */
+/* create index on @dataset_cois (coi_id); */
+/* create index on @dataset_cois (type); */
 
 -- acknowledgement statements
 create table @dataset_acks as (
@@ -182,10 +180,10 @@ create table @dataset_acks as (
     on a.entity = b.document
   where a.role like '%acknowledgement statement%'
 );
-create index on @dataset_acks (article_id);
-create index on @dataset_acks (author_id);
-create index on @dataset_acks (ack_id);
-create index on @dataset_acks (type);
+/* create index on @dataset_acks (article_id); */
+/* create index on @dataset_acks (author_id); */
+/* create index on @dataset_acks (ack_id); */
+/* create index on @dataset_acks (type); */
 
 -- mentions
 create table @dataset_mentions as (
@@ -197,6 +195,8 @@ create table @dataset_mentions as (
     origin = 'aggregated'
     and entity @> '{"schema": "Mention"}'
 );
-create index on @dataset_mentions (document_id);
-create index on @dataset_mentions (mention);
-/* commit; */
+/* create index on @dataset_mentions (document_id); */
+/* create index on @dataset_mentions (mention); */
+
+-- cleanup
+drop table @dataset_documentation;
