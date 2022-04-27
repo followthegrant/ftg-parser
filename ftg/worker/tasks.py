@@ -183,6 +183,7 @@ class TaskAggregator:
 
     def handle_error(self, e):
         """re-queue all the tasks in current batch"""
+        e = str(e)[:1000]  # don't pollute logs too much
         log.warning(
             f"[{self.dataset}] {self.queue.upper()} : Aggregated tasks failed ({e}). Will retry..."
         )
