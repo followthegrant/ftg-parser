@@ -66,8 +66,8 @@ services:
     image: postgres:alpine
     command: >
       -c max_connections=500
-      -c shared_buffers=16GB
-      -c effective_cache_size=48GB
+      -c shared_buffers=46GB
+      -c effective_cache_size=138GB
       -c maintenance_work_mem=2GB
       -c checkpoint_completion_target=0.9
       -c wal_buffers=16MB
