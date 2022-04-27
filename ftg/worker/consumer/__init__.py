@@ -136,7 +136,7 @@ class BatchConsumer(ReconnectingHeartbeatPikaConsumer, _FTGConsumer):
             for aggregator in aggregators:
                 if aggregator.should_flush():
                     log.info(
-                        f"Flushing {aggregator.queue}: {len(aggregator.tasks)} tasks"
+                        f"Flushing {aggregator.stage}: {len(aggregator.tasks)} tasks"
                     )
                 aggregator.flush()
 
