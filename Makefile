@@ -7,7 +7,7 @@ export LOG_LEVEL ?= info
 
 # PUBMED CENTRAL
 pubmed.parse: pubmed.download pubmed.extract pubmed.crawl
-pubmed.wrangle: pubmed.authors pubmed.aggregate pubmed.db pubmed.export
+pubmed.wrangle: pubmed.authors pubmed.db
 pubmed.export: pubmed.export_json pubmed.export_db
 pubmed.download:
 	mkdir -p $(DATA_ROOT)/pubmed/src
@@ -21,7 +21,9 @@ pubmed.crawl: pat = extracted/*/*xml
 pubmed.crawl: parser = jats
 
 # EUROPEPMC
-europepmc: europepmc.download europepmc.crawl europepmc.authors europepmc.aggregate europepmc.db europepmc.export europepmc.upload
+europepmc.parse: europepmc.download europepmc.extract europepmc.crawl
+europepmc.wrangle: europepmc.authors europepmc.db
+europepmc.export: europepmc.export_json europepmc.export_db
 europepmc.download:
 	mkdir -p $(DATA_ROOT)/europepmc/src
 	wget -P $(DATA_ROOT)/europepmc/src/ -r -l1 -H -nd -N -np -A "*.xml.gz" -e robots=off https://europepmc.org/ftp/oa/
@@ -29,7 +31,9 @@ europepmc.crawl: pat = src/*.xml.gz
 europepmc.crawl: parser = europepmc
 
 # EUROPEPMC PREPRINTS
-europepmc_ppr: europepmc_ppr.download europepmc_ppr.crawl europepmc_ppr.authors europepmc_ppr.aggregate europepmc_ppr.db europepmc_ppr.export europepmc_ppr.upload
+europepmc_ppr.parse: europepmc_ppr.download europepmc_ppr.extract europepmc_ppr.crawl
+europepmc_ppr.wrangle: europepmc_ppr.authors europepmc_ppr.db
+europepmc_ppr.export: europepmc_ppr.export_json europepmc_ppr.export_db
 europepmc_ppr.download:
 	mkdir -p $(DATA_ROOT)/europepmc_ppr/src
 	wget -P $(DATA_ROOT)/europepmc_ppr/src/ -r -l1 -H -nd -N -np -A "*.xml.gz" -e robots=off https://europepmc.org/ftp/preprint_fulltext
@@ -48,7 +52,7 @@ medrxiv.parse: medrxiv.crawl
 medrxiv.wrangle: medrxiv.authors medrxiv.aggregate medrxiv.db medrxiv.export
 medrxiv.download:
 	mkdir -p $(DATA_ROOT)/medrxiv/src
-	# ca. 250 GB ~ 10$
+	# ca. 250 GB ~ 20$ ? FIXME
 	aws --profile aws s3 sync s3://medrxiv-src-monthly/ $(DATA_ROOT)/medrxiv/src/ --request-payer requester
 medrxiv.crawl: pat = src/*/*/*.meca
 medrxiv.crawl: parser = medrxiv
