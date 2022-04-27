@@ -228,15 +228,7 @@ class StatefulDedupTestCase(TestCase):
                 for triple in dedupe.explode_triples(article):
                     triples.add(triple)
                 for entity in ftm.make_entities(article):
-                    if entity.schema.name in ("Person", "Membership"):
-                        entities.add(entity)
-                    if entity.schema.name == "Documentation":
-                        role = entity.get("role")[0]
-                        if (
-                            role == "author"
-                            or "infividual conflict of interest statement" in role
-                        ):
-                            entities.add(entity)
+                    entities.add(entity)
 
         merged_entities = set()
         with dataset.connect(DATABASE_URI) as conn:
@@ -275,9 +267,14 @@ class StatefulDedupTestCase(TestCase):
 
             entities = [e for e in ftm_dataset.iterate()]
 
-            for entity in entities:
+        # commit
+        with dataset.connect(DATABASE_URI) as conn:
+            aggregations = dedupe.get_aggregation_mapping(conn=conn)
+            to_merge = dedupe.get_entities_to_rewrite(ftm_dataset, aggregations)
+
+            for entity in to_merge:
                 merged_entity = dedupe.rewrite_entity_inplace(
-                    ftm_dataset, entity.id, conn=conn
+                    ftm_dataset, entity["id"], conn=conn
                 )
                 merged_entities.add(model.get_proxy(merged_entity))
 

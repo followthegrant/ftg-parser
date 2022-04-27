@@ -6,8 +6,10 @@ from typing import Iterable, Iterator, Optional
 import networkx as nx
 import pandas as pd
 from dataset.database import Database
+from followthemoney.proxy import EntityProxy
 from followthemoney.util import make_entity_id
 from ftmstore.dataset import Dataset
+from sqlalchemy.sql.expression import cast
 
 from ..db import get_connection
 from ..logging import get_logger
@@ -176,3 +178,37 @@ def rewrite_entity_inplace(
             dataset.delete(entity_id=entity_id)
             dataset.put(new_entity)
         return new_entity
+
+
+def get_entities_to_rewrite(
+    dataset: Dataset, aggregations: Optional[dict] = None
+) -> Iterator[EntityProxy]:
+    """yield entities from ftm store that need to be rewritten"""
+
+    json_type = dataset.table.columns.entity.type
+    roles = [cast(r, json_type) for r in AUTHOR_ROLES]
+    entity = dataset.table.c.entity
+    q_authors = dataset.table.select(entity["schema"] == cast("Person", json_type))
+    q_memberships = dataset.table.select(
+        entity["schema"] == cast("Membership", json_type)
+    )
+    q_relations = (
+        dataset.table.select()
+        .filter(entity["schema"] == cast("Documentation", json_type))
+        .filter(entity["role"][0].in_(roles))
+    )
+
+    if aggregations is not None:
+        author_ids = aggregations.keys()
+        q_authors = q_authors.where(dataset.table.c.id.in_(author_ids))
+        author_ids = [cast(i, json_type) for i in author_ids]
+        q_memberships = q_memberships.where(entity["member"][0].in_(author_ids))
+        q_relations = q_relations.where(entity["entity"][0].in_(author_ids))
+
+    def _res():
+        yield from q_authors.execute()
+        yield from q_memberships.execute()
+        yield from q_relations.execute()
+
+    for data in _res():
+        yield dict(data)
