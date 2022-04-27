@@ -3,9 +3,7 @@ import os
 import time
 from functools import lru_cache
 
-import dataset as ds
 from ftmstore import get_dataset
-from ftmstore.settings import DATABASE_URI
 from servicelayer.cache import get_redis
 from servicelayer.jobs import Job, Stage
 from structlog import get_logger
@@ -74,7 +72,7 @@ def op_author_triples(payload):
 
 
 def op_write_author_triples(dataset, rows):
-    conn = ds.connect(DATABASE_URI)
+    conn = db.get_connection()
     rows = [r + [dataset] for r in rows]
     if len(rows):
         db.insert_many("author_triples", rows, conn=conn)
