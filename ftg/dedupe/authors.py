@@ -111,10 +111,11 @@ def get_aggregation_mapping(
 
     df = pd.read_sql(q, conn.engine)
     df = df.set_index("author_id")
+    data = df["agg_id"].T.to_dict()
 
-    log.info("Loading author aggregations done.", table=table, dataset=dataset)
+    log.info(f"Loaded {len(data)} author aggregations.", table=table, dataset=dataset)
 
-    return df["agg_id"].T.to_dict()
+    return data
 
 
 AUTHOR_ROLES = (
