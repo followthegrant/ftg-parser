@@ -1,17 +1,12 @@
 import pika
-from servicelayer.cache import get_redis
-from servicelayer.jobs import Dataset
 from structlog import get_logger
 
 from ftg import settings
 from ftg.util import cached_property
 
-from .consumer import Consumer, BatchConsumer, basic_publish
+from .consumer import BatchConsumer, Consumer, basic_publish
 
 log = get_logger(__name__)
-
-
-KV = get_redis()
 
 
 class BaseWorker:
@@ -56,10 +51,6 @@ class BaseWorker:
             )
         self._connection = connection
         return channel
-
-    @classmethod
-    def get_status(cls):
-        return Dataset.get_active_dataset_status(KV)
 
 
 class BaseBatchWorker(BaseWorker):

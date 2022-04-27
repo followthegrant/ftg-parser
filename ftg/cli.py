@@ -358,10 +358,3 @@ def crawl(parser, pattern, dataset, delete_source=False, store_json=None, job_id
     for fp in glob.glob(get_path(pattern)):
         worker.dispatch(PARSE, {**payload, **{"fpath": fp}})
     worker.shutdown()
-
-
-@worker.command("status")
-@click.option("-o", "--outfile", type=click.File("w"), default="-")
-def get_worker_status(outfile):
-    status = Worker.get_status()
-    json.dump(status, outfile)

@@ -72,7 +72,7 @@ class _FTGConsumer:
             log.exception(msg, payload=payload, exception=e)
 
     def get_stage(self, queue, payload):
-        return get_stage(queue, dataset=payload["dataset"], job_id=payload["job_id"])
+        return get_stage(payload["dataset"], payload["job_id"], queue)
 
 
 class Consumer(ReconnectingPikaConsumer, _FTGConsumer):
@@ -104,10 +104,10 @@ class Consumer(ReconnectingPikaConsumer, _FTGConsumer):
         if self.handled_tasks % 100 == 0:
             log.info(f"Handled {self.handled_tasks} tasks.")
             for stage, tasks in self.done.items():
-                stage.mark_done(tasks)
+                # stage.mark_done(tasks)  # FIXME
                 self.done[stage] = 0
             for stage, tasks in self.errors.items():
-                stage.mark_error(tasks)
+                # stage.mark_error(tasks)  # FIXME
                 self.errors[stage] = 0
 
 
@@ -143,7 +143,6 @@ class BatchConsumer(ReconnectingHeartbeatPikaConsumer, _FTGConsumer):
     @lru_cache(maxsize=1024)
     def _get_aggregator(self, stage):
         """get task aggregator per job and stage"""
-        key = f"{stage.job.id}-{stage.stage}"
-        if key not in self._aggregators:
-            self._aggregators[key] = TaskAggregator(self, stage)
-        return self._aggregators[key]
+        if stage.key not in self._aggregators:
+            self._aggregators[stage.key] = TaskAggregator(self, stage)
+        return self._aggregators[stage.key]

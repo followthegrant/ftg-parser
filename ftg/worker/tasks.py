@@ -3,9 +3,8 @@ import os
 import time
 from functools import lru_cache
 
+from followthemoney.util import make_entity_id
 from ftmstore import get_dataset
-from servicelayer.cache import get_redis
-from servicelayer.jobs import Job, Stage
 from structlog import get_logger
 
 from ftg import db, ftm
@@ -14,9 +13,35 @@ from ftg import schema, settings
 from ftg.dedupe.authors import explode_triples
 from ftg.util import get_path
 
-# from ftg.exceptions import TaskException, InnerTaskException
+from ..util import cached_property
+
 
 log = get_logger(__name__)
+
+
+class Stage:
+    """
+    a stage is a wrapper to organize tasks based on a queue name, dataset name and job id
+    """
+
+    def __init__(self, dataset: str, job_id: str, queue: str):
+        self.dataset = dataset
+        self.job_id = job_id
+        self.queue = queue
+
+    def __str__(self):
+        return f"[{self.dataset}] - {self.queue.upper()}"
+
+    @cached_property
+    def key(self):
+        """unique identifier"""
+        return make_entity_id(self.dataset, self.job_id, self.queue)
+
+
+@lru_cache(maxsize=1024)
+def get_stage(dataset: str, job_id: str, queue: str) -> Stage:
+    return Stage(dataset, job_id, queue)
+
 
 PARSE = "parse"
 DELETE_SOURCE = "delete-source"
@@ -25,8 +50,6 @@ MAP_FTM = "map-ftm"
 WRITE_FTM = "write-ftm"
 AUTHOR_TRIPLES = "author-triples"
 WRITE_AUTHOR_TRIPLES = "write-author-triples"
-
-KV = get_redis()
 
 
 def op_parse(payload):
@@ -89,27 +112,19 @@ QUEUES = {
 }
 
 
-@lru_cache(maxsize=1024)
-def get_stage(queue, dataset, job_id):
-    job = Job(KV, dataset, job_id)
-    return Stage(job, queue)
-
-
 class TaskAggregator:
     """handle a collection of identical tasks"""
 
-    def __init__(self, consumer, stage):
+    def __init__(self, consumer, stage: Stage):
         self.is_flushing = False
         self.consumer = consumer
         self.stage = stage
-        self.dataset = stage.job.dataset.name
-        self.queue = stage.stage
         self.tasks = []
-        func, batch_size, *next_queues = QUEUES[stage.stage]
+        func, batch_size, *next_queues = QUEUES[stage.queue]
         self.func = func
         self.batch_size = batch_size
         self.next_queues = next_queues
-        self.is_writer = self.queue.startswith("write")
+        self.is_writer = self.stage.queue.startswith("write")
         self.last_activity = time.time()
 
     def add(self, tag, payload):
@@ -120,9 +135,7 @@ class TaskAggregator:
     def flush(self):
         if self.should_flush():
             self.is_flushing = True
-            log.info(
-                f"[{self.dataset}] {self.queue.upper()} : running {len(self.tasks)} tasks..."
-            )
+            log.info(f"{self.stage} : running {len(self.tasks)} tasks...")
             done = 0
             errors = 0
             to_write = []
@@ -145,7 +158,7 @@ class TaskAggregator:
                     done += 1
                     self.consumer.ack(delivery_tag)
                 except Exception as e:
-                    msg = f'[{self.dataset}] {self.queue.upper()} : {e} : {payload["fpath"]}'
+                    msg = f'{self.stage} : {e} : {payload["fpath"]}'
                     log.error(msg)
                     if settings.DEBUG:
                         log.exception(msg, payload=payload, exception=e)
@@ -154,7 +167,7 @@ class TaskAggregator:
 
             if self.is_writer and len(to_write):
                 try:
-                    self.func(self.dataset, to_write)
+                    self.func(self.stage.dataset, to_write)
                 except Exception as e:
                     self.handle_error(e)
                     done = 0
@@ -165,15 +178,11 @@ class TaskAggregator:
                     self.consumer.dispatch(queue, payload)
 
             if done:
-                self.stage.mark_done(done)
-                log.info(
-                    f"[{self.dataset}] {self.queue.upper()} : {done} tasks successful."
-                )
+                # self.stage.mark_done(done) FIXME
+                log.info(f"{self.stage} : {done} tasks successful.")
             if errors:
-                self.stage.mark_error(errors)
-                log.warning(
-                    f"[{self.dataset}] {self.queue.upper()} : {errors} tasks failed."
-                )
+                # self.stage.mark_error(errors) FIXME
+                log.warning(f"{self.stage} : {errors} tasks failed.")
 
             # reset basket
             self.tasks = []
@@ -184,14 +193,12 @@ class TaskAggregator:
         """re-queue all the tasks in current batch"""
         is_deadlock = "DeadlockDetected" in str(e)
         e = str(e)[:1000]  # don't pollute logs too much
-        log.warning(
-            f"[{self.dataset}] {self.queue.upper()} : Aggregated tasks failed ({e}). Will retry..."
-        )
+        log.warning(f"{self.stage} : Aggregated tasks failed ({e}). Will retry...")
         for _, task in self.tasks:
             # FIXME retry deadlocks infinitetly
             if is_deadlock:
                 task["retries"] = 0
-            self.consumer.retry_task(self.queue, task)
+            self.consumer.retry_task(self.stage.queue, task)
 
     def should_flush(self):
         """make sure we can and should flush"""

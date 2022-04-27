@@ -4,7 +4,6 @@ services:
     links:
       - postgres
       - rabbitmq
-      - redis
     environment:
       RABBITMQ_URL: amqp://guest:guest@rabbitmq:5672/%2F?heartbeat=3600&blocked_connection_timeout=3600
     volumes:
@@ -28,7 +27,6 @@ services:
     links:
       - postgres
       - rabbitmq
-      - redis
     environment:
       FTM_STORE_URI: postgresql://ftg:ftg@postgres/ftg
       RABBITMQ_URL: amqp://guest:guest@rabbitmq:5672/%2F?heartbeat=1200&blocked_connection_timeout=600
@@ -48,7 +46,6 @@ services:
     links:
       - postgres
       - rabbitmq
-      - redis
     environment:
       FTM_STORE_URI: postgresql://ftg:ftg@postgres/ftg
       RABBITMQ_URL: amqp://guest:guest@rabbitmq:5672/%2F?heartbeat=1200&blocked_connection_timeout=600
@@ -122,12 +119,3 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
-
-  redis:
-    image: redis:alpine
-    expose:
-      - 6379
-    deploy:
-      mode: global
-      restart_policy:
-        condition: any

@@ -2,7 +2,6 @@ export DATA_ROOT ?= `pwd`/data
 export FTM_STORE_URI ?= postgresql:///ftg
 export PSQL_PORT ?= 5432
 export PSQL_SHM ?= 1g
-export REDIS_URL ?= redis://localhost:6379/0
 export INGESTORS_LID_MODEL_PATH=./models/lid.176.ftz
 export LOG_LEVEL ?= info
 
@@ -128,7 +127,7 @@ openaire_covid.parse: chunksize = 1
 	pg_restore -d $(FTM_STORE_URI) $(DATA_ROOT)/$*/export/pg_dump/data
 
 
-# STANDALONE SERVICES (redis rabbit psql)
+# STANDALONE SERVICES (rabbit psql)
 
 .PHONY: psql
 psql:
@@ -148,15 +147,9 @@ psql.dev:
 psql.%:
 	docker $* `cat ./psql/docker_id`
 
-redis:
-	docker run -p 6379:6379 redis:alpine
-
 rabbitmq:
 	docker run -p 5672:5672 -p 8080:15672 --hostname ftg-rabbit rabbitmq:management-alpine
 
-
-status:
-	@ftg worker status | jq -r '["00 dataset", "job", "stage", "pending", "running", "finished", "errors"], (.datasets | to_entries[] | {dataset: .key, stage: .value.jobs[].stages[]} | [.dataset, .stage.job_id, .stage.stage, .stage.pending, .stage.running, .stage.finished, .stage.errors]) | @csv' | sort | csvlook -I
 
 # spacy dependencies
 spacy:
