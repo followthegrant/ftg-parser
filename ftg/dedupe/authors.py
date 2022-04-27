@@ -1,14 +1,19 @@
 from collections import defaultdict
 from functools import lru_cache
 from itertools import combinations
-from typing import Iterable, Iterator
+from typing import Iterable, Iterator, Optional
 
 import networkx as nx
-from dataset.table import Table
+import pandas as pd
+from dataset.database import Database
 from followthemoney.util import make_entity_id
+from ftmstore.dataset import Dataset
 
 from ..db import get_connection
+from ..logging import get_logger
 from ..schema import ArticleFullOutput
+
+log = get_logger(__name__)
 
 
 @lru_cache(maxsize=1024 * 1000 * 10)  # 10GB
@@ -64,7 +69,10 @@ def dedupe_triples(
 
 
 def dedupe_db(
-    table: str, fingerprint: str, dataset: str = None, conn=None
+    table: str,
+    fingerprint: str,
+    dataset: Optional[str] = None,
+    conn: Optional[Database] = None,
 ) -> Iterator[tuple[str, str, str]]:
     if conn is None:
         conn = get_connection()
@@ -84,25 +92,29 @@ def dedupe_db(
             yield from dedupe_triples(triples)
 
 
-@lru_cache(maxsize=1024 * 1000 * 10)  # 10GB
-def _get_aggregated_id(table: Table, author_id: str, dataset: str = None) -> str:
+@lru_cache(1024 * 1000)  # 1GB
+def get_aggregation_mapping(
+    conn: Optional[Database] = None,
+    table: Optional[str] = "author_aggregation",
+    dataset: Optional[str] = None,
+) -> dict:
+    """the dict returned is < 500MB for the full PUBMED CENTRAL (according to `sys.getsizeof()`)"""
+
+    if conn is None:
+        conn = get_connection()
+
+    log.info("Loading author aggregation mapping...", table=table, dataset=dataset)
+
+    q = f"SELECT * FROM {table}"
     if dataset is not None:
-        res = table.find_one(agg_id=author_id, dataset=dataset)
-    else:
-        res = table.find_one(agg_id=author_id)
+        q += f" WHERE dataset = '{dataset}'"
 
-    if res:
-        return author_id
+    df = pd.read_sql(q, conn.engine)
+    df = df.set_index("author_id")
 
-    if dataset is not None:
-        res = table.find_one(author_id=author_id, dataset=dataset)
-    else:
-        res = table.find_one(author_id=author_id)
+    log.info("Loading author aggregations done.", table=table, dataset=dataset)
 
-    if res:
-        return res["agg_id"]
-
-    return author_id
+    return df["agg_id"].T.to_dict()
 
 
 AUTHOR_ROLES = (
@@ -112,39 +124,54 @@ AUTHOR_ROLES = (
 )
 
 
-def rewrite_entity(table: str, entity: dict, dataset: str = None, conn=None) -> dict:
+def rewrite_entity(
+    entity: dict,
+    table: Optional[str] = "author_aggregation",
+    dataset: Optional[str] = None,
+    conn: Optional[Database] = None,
+) -> dict:
     """
     rewrite author ids for `entity` fetched from generated pairs table
     """
-    if entity["schema"] not in ("Person", "Membership", "Documentation"):
-        return entity
-
     if conn is None:
         conn = get_connection()
 
-    with conn as tx:
-        table = tx[table]
+    if entity["schema"] not in ("Person", "Membership", "Documentation"):
+        return entity
 
-        if entity["schema"] == "Person":
-            entity["id"] = _get_aggregated_id(table, entity["id"], dataset)
-            return entity
+    mapping = get_aggregation_mapping(conn, table, dataset)
 
-        if entity["schema"] == "Membership":
-            author_ids = entity["properties"]["member"]
-            entity["properties"]["member"] = [
-                _get_aggregated_id(table, author_id, dataset)
-                for author_id in author_ids
+    if entity["schema"] == "Person":
+        entity["id"] = mapping.get(entity["id"], entity["id"])
+        return entity
+
+    if entity["schema"] == "Membership":
+        author_ids = entity["properties"]["member"]
+        entity["properties"]["member"] = [
+            mapping.get(author_id, author_id) for author_id in author_ids
+        ]
+        return entity
+
+    if entity["schema"] == "Documentation":
+        role = entity["properties"]["role"][0]
+        if role in AUTHOR_ROLES:
+            author_ids = entity["properties"]["entity"]
+            entity["properties"]["entity"] = [
+                mapping.get(author_id, author_id) for author_id in author_ids
             ]
             return entity
 
-        if entity["schema"] == "Documentation":
-            role = entity["properties"]["role"][0]
-            if role in AUTHOR_ROLES:
-                author_ids = entity["properties"]["entity"]
-                entity["properties"]["entity"] = [
-                    _get_aggregated_id(table, author_id, dataset)
-                    for author_id in author_ids
-                ]
-                return entity
+    return entity
 
-        return entity
+
+def rewrite_entity_inplace(
+    dataset: Dataset, entity_id: str, conn: Optional[Database] = None
+) -> dict:
+    """rewrite an entity in the ftm store"""
+    entity = dataset.get(entity_id)
+    if entity is not None:
+        new_entity = rewrite_entity(entity.to_dict(), conn=conn)
+        if new_entity != entity.to_dict():  # FIXME better comparison ?
+            dataset.delete(entity_id=entity_id)
+            dataset.put(new_entity)
+        return new_entity
