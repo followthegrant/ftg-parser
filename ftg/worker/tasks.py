@@ -186,11 +186,15 @@ class TaskAggregator:
 
     def handle_error(self, e):
         """re-queue all the tasks in current batch"""
+        is_deadlock = "DeadlockDetected" in str(e)
         e = str(e)[:1000]  # don't pollute logs too much
         log.warning(
             f"[{self.dataset}] {self.queue.upper()} : Aggregated tasks failed ({e}). Will retry..."
         )
         for _, task in self.tasks:
+            # FIXME retry deadlocks infinitetly
+            if is_deadlock:
+                task["retries"] = 0
             self.consumer.retry_task(self.queue, task)
 
     def should_flush(self):
