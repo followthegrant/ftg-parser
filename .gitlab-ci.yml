@@ -31,8 +31,3 @@ docker-build:
   # don't run in schedules
   except:
     - schedules
-  # only build when this changes
-  only:
-    changes:
-      - Dockerfile
-      - setup.py

@@ -1,7 +1,4 @@
 export DATA_ROOT ?= `pwd`/data
-export FTM_STORE_URI ?= postgresql:///ftg
-export PSQL_PORT ?= 5432
-export PSQL_SHM ?= 1g
 export INGESTORS_LID_MODEL_PATH=./models/lid.176.ftz
 export LOG_LEVEL ?= info
 
@@ -45,7 +42,6 @@ biorxiv: biorxiv.parse biorxiv.authors biorxiv.aggregate biorxiv.tables biorxiv.
 biorxiv.parse: src = src
 biorxiv.parse: pat = *.xml
 biorxiv.parse: parser = jats
-biorxiv.parse: chunksize = 1000
 
 # MEDRXIV
 medrxiv.parse: medrxiv.crawl
@@ -65,14 +61,12 @@ semanticscholar.download:
 semanticscholar.parse: src = src
 semanticscholar.parse: pat = s2-corpus-*.gz
 semanticscholar.parse: parser = semanticscholar
-semanticscholar.parse: chunksize = 1
 
 # OPENAIRE
 openaire: openaire.parse openaire.authors openaire.aggregate openaire.tables openaire.export openaire.upload
 openaire.parse: src = src
 openaire.parse: pat = part-*.json.gz
 openaire.parse: parser = openaire
-openaire.parse: chunksize = 1
 
 # OPENAIRE COVID SUBSET
 openaire_covid: openaire_covid.download openaire_covid.parse openaire_covid.authors openaire_covid.aggregate openaire_covid.tables openaire_covid.export openaire_covid.upload
@@ -84,15 +78,13 @@ openaire_covid.download:
 openaire_covid.parse: src = extracted
 openaire_covid.parse: pat = part-*.json.gz
 openaire_covid.parse: parser = openaire
-openaire_covid.parse: chunksize = 1
 
 init:
 	docker-compose up -d
-	psql $(FTM_STORE_URI) < ./psql/author_dedupe.sql
-	touch ./init
+	sleep 10
+	docker-compose run --rm worker ftg db init
 
 %.crawl:
-	ftm store delete -d $*
 	mkdir -p $(DATA_ROOT)/$*/json
 	docker-compose run --rm worker ftg worker crawl $(parser) "$*/$(pat)" -d $* --store-json "$*/json" --delete-source
 
@@ -101,30 +93,17 @@ init:
 	aws --profile ftg --endpoint-url $(S3_ENDPOINT) s3 cp s3://followthegrant/$*/export/json.tar.xz $(DATA_ROOT)/$*/json/
 	tar -xvf $(DATA_ROOT)/$*/json/json.tar.xz -C $(DATA_ROOT)/$*/json/ --strip-components=5
 
-%.parse_json:
-	ftm store delete -d $*
-	find $(DATA_ROOT)/$*/json/ -type f -name "*.json" -exec cat {} \; | jq -c | parallel -N1000 --pipe ftg map-ftm | parallel -N10000 --pipe ftm store write -d $*
-
-# author dedupe
-%.authors:
-	psql $(FTM_STORE_URI) -c "copy (select a.fingerprint from (select fingerprint, count(author_id) from author_triples where dataset = '$*' group by fingerprint) a where a.count > 1) to stdout" | parallel -N1000 --pipe ftg db dedupe-authors -d $* | parallel --pipe -N10000 ftg db insert -t author_aggregation
-	ftg db yield-dedupe-entities -d $* | parallel -N1000 --pipe ftg db rewrite-inplace -d $*
-
-%.tables:
-	sed 's/@dataset/$*/g; s/@collection/ftm_$*/g' ./psql/ftg_tables.tmpl.sql | psql $(FTM_STORE_URI)
-
-%.index:
-	sed 's/@dataset/$*/g; s/@collection/ftm_$*/g' ./psql/ftg_index.tmpl.sql | psql $(FTM_STORE_URI)
+# generate canonical ids (deduping)
+%.canonical:
+	ftg db update-canonical -d $*
 
 %.export_json:
 	mkdir -p $(DATA_ROOT)/$*/export
 	tar cf - $(DATA_ROOT)/$*/json | parallel --pipe --recend '' --keep-order --block-size 1M "xz -9" > $(DATA_ROOT)/$*/export/json.tar.xz
 
-%.export_db:
-	rm -rf $(DATA_ROOT)/$*/export/pg_dump
-	mkdir -p $(DATA_ROOT)/$*/export/pg_dump
-	pg_dump $(FTM_STORE_URI) -t $*_* -Fd -Z9 -O -j48 -f $(DATA_ROOT)/$*/export/pg_dump/data
-	pg_dump $(FTM_STORE_URI) -t ftm_$* -Fd -Z9 -O -j48 -f $(DATA_ROOT)/$*/export/pg_dump/ftm
+%.export_ftm:
+	mkdir -p $(DATA_ROOT)/$*/export
+	ftm cstore iterate -d $* | xz -9 -c > $(DATA_ROOT)/$*/export/$*.ftm.ijson.xz
 
 %.upload:
 	aws --profile ftg --endpoint-url $(S3_ENDPOINT) s3 sync $(DATA_ROOT)/$*/export s3://followthegrant/$*/export
@@ -132,34 +111,13 @@ init:
 %.sync:
 	aws --profile ftg --endpoint-url $(S3_ENDPOINT) s3 sync --delete s3://followthegrant/$*/export $(DATA_ROOT)/$*/export
 
-%.pg_restore:
-	pg_restore -d $(FTM_STORE_URI) $(DATA_ROOT)/$*/export/pg_dump/data
-	sed 's/@dataset/$*/g; s/@collection/ftm_$*/g' ./psql/ftg_index.tmpl.sql | psql $(FTM_STORE_URI)
 
-
-# STANDALONE SERVICES (rabbit psql)
-
-.PHONY: psql
-psql:
-	mkdir -p $(DATA_ROOT)/psql/data
-	docker run --shm-size=$(PSQL_SHM) -p $(PSQL_PORT):5432 -v $(DATA_ROOT)/psql/data:/var/lib/postgresql/data -e POSTGRES_USER=ftg -e POSTGRES_PASSWORD=ftg -d postgres:latest > ./psql/docker_id
-	sleep 5
-	psql $(FTM_STORE_URI) < ./psql/alter_system.sql
-	docker restart `cat ./psql/docker_id`
-
-psql.dev:
-	mkdir -p $(DATA_ROOT)/psql/data
-	docker run --shm-size=$(PSQL_SHM) -p $(PSQL_PORT):5432 -v $(DATA_ROOT)/psql/data:/var/lib/postgresql/data -e POSTGRES_USER=ftg -e POSTGRES_PASSWORD=ftg -d postgres:latest > ./psql/docker_id
-	sleep 5
-	psql $(FTM_STORE_URI) < ./psql/alter_system_local.sql
-	docker restart `cat ./psql/docker_id`
-
-psql.%:
-	docker $* `cat ./psql/docker_id`
-
+# services for dev purposes (rabbit, clickhouse)
 rabbitmq:
-	docker run -p 5672:5672 -p 8080:15672 --hostname ftg-rabbit rabbitmq:management-alpine
+	docker run -p 5672:5672 -p 15672:15672 --hostname ftg-rabbit rabbitmq:management-alpine
 
+clickhouse:
+	docker run -p 9000:9000 -p 8123:8123 --ulimit nofile=262144:262144 clickhouse/clickhouse-server
 
 # spacy dependencies
 spacy:

@@ -1,8 +1,7 @@
 import os
 from servicelayer import env
 
-
-DEBUG = env.to_bool("DEBUG")
+DEBUG = env.as_bool("DEBUG")
 LOG_LEVEL = env.get("LOG_LEVEL", "warning")
 DATA_ROOT = env.get("DATA_ROOT", os.path.join(os.getcwd(), "data"))
 RABBITMQ_URL = env.get(

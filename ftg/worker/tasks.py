@@ -4,17 +4,15 @@ import time
 from functools import lru_cache
 
 from followthemoney.util import make_entity_id
-from ftmstore import get_dataset
+from ftm_columnstore import get_dataset
 from structlog import get_logger
 
-from ftg import db, ftm
+from ftg import ftm
 from ftg import parse as parsers
 from ftg import schema, settings
 from ftg.dedupe.authors import explode_triples
-from ftg.util import get_path
-
-from ..util import cached_property
-
+from ftg.store import get_store
+from ftg.util import cached_property, get_path
 
 log = get_logger(__name__)
 
@@ -80,7 +78,7 @@ def op_map_ftm(payload):
 
 def op_write_ftm(dataset, entities):
     dataset = get_dataset(dataset)
-    bulk = dataset.bulk()
+    bulk = dataset.bulk(with_fingerprints=True)
     for entity in entities:
         bulk.put(entity)
     bulk.flush()
@@ -95,9 +93,9 @@ def op_author_triples(payload):
 
 
 def op_write_author_triples(dataset, rows):
-    rows = [r + [dataset] for r in rows]
-    if len(rows):
-        db.insert_many("author_triples", rows)
+    rows = (r + [dataset] for r in rows)
+    store = get_store()
+    store.write_author_triples(rows)
 
 
 QUEUES = {
@@ -107,8 +105,8 @@ QUEUES = {
     DELETE_SOURCE: (op_delete_source, 1),
     MAP_FTM: (op_map_ftm, 1, WRITE_FTM),
     AUTHOR_TRIPLES: (op_author_triples, 1, WRITE_AUTHOR_TRIPLES),
-    WRITE_FTM: (op_write_ftm, 100),
-    WRITE_AUTHOR_TRIPLES: (op_write_author_triples, 100),
+    WRITE_FTM: (op_write_ftm, 1_000),
+    WRITE_AUTHOR_TRIPLES: (op_write_author_triples, 1_000),
 }
 
 

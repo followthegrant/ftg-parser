@@ -7,7 +7,6 @@ from datetime import datetime
 
 import click
 from followthemoney.cli.util import MAX_LINE, write_object
-from ftmstore import get_dataset
 
 from . import parse as parsers
 from . import settings
@@ -17,7 +16,7 @@ from .dedupe import authors as dedupe
 from .ftm import make_entities
 from .logging import configure_logging, get_logger
 from .schema import ArticleFullOutput
-from .statements import Statement, statements_from_entity
+from .store import get_store
 from .util import get_path
 from .worker import DELETE_SOURCE, PARSE, QUEUES, STORE_JSON, BatchWorker, Worker
 
@@ -45,6 +44,7 @@ def cli(log_level):
 
 @cli.command("parse")
 @click.argument("parser")
+@click.option("-f", "--file-path", type=click.Path(exists=True), default=None)
 @click.option("-i", "--infile", type=click.File("r"), default="-")
 @click.option("-o", "--outfile", type=click.File("w"), default="-")
 @click.option(
@@ -52,13 +52,8 @@ def cli(log_level):
     help="Store parsed json into given directory (1 file per article)",
     type=click.Path(exists=True),
 )
-@click.option(
-    "--author-triples",
-    help="Write author triples to this directory",
-    type=click.Path(exists=True),
-)
 @click.option("-d", "--dataset", help="Append source (dataset) column with this value")
-def parse(parser, infile, outfile, store_json=None, author_triples=None, dataset=None):
+def parse(parser, file_path, infile, outfile, store_json=None, dataset=None):
     """
     parse source xml/html files into json representation with metadata, authors,
     institutions and conflict of interest statements
@@ -71,7 +66,11 @@ def parse(parser, infile, outfile, store_json=None, author_triples=None, dataset
         cord
     """
     parser = getattr(parsers, parser)
-    for fpath in readlines(infile):
+    if file_path is not None:
+        paths = [file_path]
+    else:
+        paths = readlines(infile)
+    for fpath in paths:
         try:
             data = parser(fpath)
         except Exception as e:
@@ -88,14 +87,6 @@ def parse(parser, infile, outfile, store_json=None, author_triples=None, dataset
                     outfile.write(res + "\n")
                 except Exception as e:
                     log.error(f"Cannot parse `{fpath}`: '{e}'")
-
-                if author_triples is not None:
-                    for triple in dedupe.explode_triples(d):
-                        if dataset is not None:
-                            triple += (dataset,)
-
-                        with open(f"{author_triples}/{triple[0]}", "a") as f:
-                            f.write(",".join(triple) + "\n")
 
 
 @cli.command("map-ftm")
@@ -181,122 +172,123 @@ def flag_cois(infile, outfile):
             log.error(str(row))
 
 
-@cli.command("to-statements")
-@click.option("-i", "--infile", type=click.File("r"), default="-")
-@click.option("-o", "--outfile", type=click.File("w"), default="-")
-@click.option("-d", "--dataset", required=True)
-def to_statements(infile, outfile, dataset):
-    writer = csv.DictWriter(outfile, fieldnames=Statement.__annotations__.keys())
-    writer.writeheader()
-    for entity in readlines(infile):
-        entity = json.loads(entity)
-        for statement in statements_from_entity(entity, dataset):
-            writer.writerow(statement)
-
-
 @cli.group()
 def db():
     pass
 
 
+@db.command("init")
+@click.option(
+    "--recreate/--no-recreate",
+    help="Recreate database if it already exists.",
+    default=False,
+    show_default=True,
+)
+def db_init(recreate):
+    """
+    initialize required tables in Clickhouse
+    """
+    store = get_store()
+    store.init(recreate=recreate)
+
+
 @db.command("insert")
 @click.option("-i", "--infile", type=click.File("r"), default="-")
 @click.option("-t", "--table", required=True, help="Database table name to write to")
-def db_insert(infile, table):
+@click.option("-c", "--columns", required=True, help="Comma separated list of columns")
+def db_insert(infile, table, columns):
     """
-    bulk upsert of stdin csv format to database defined via
-    `FTM_STORE_URI`
+    bulk insert of stdin csv format to clickhouse database defined via
+    `DATABASE_URI`
 
     currently a very simple approach: input csv without header, all columns must
     be present and in order of the existing `table`
-    doesn't complain if a row already exists (on conflict do nothing)
-
-    # FIXME when using with `echo <many lines> | parallel --pipe ftg db insert ..`
-    this can cause deadlocks on postgresql!!
     """
-    insert_many(table, csv.reader(infile))
+    insert_many(table, columns.split(","), csv.reader(infile))
 
 
 @db.command("dedupe-authors")
-@click.option("-i", "--infile", type=click.File("r"), default="-")
 @click.option("-o", "--outfile", type=click.File("w"), default="-")
-@click.option(
-    "-t",
-    "--table",
-    default="author_triples",
-    help="Database table to read triples from",
-    show_default=True,
-)
 @click.option("-d", "--dataset", help="Filter triples for this dataset")
-def dedupe_authors(infile, outfile, table, dataset=None):
+def dedupe_authors(outfile, dataset=None):
     """
-    dedupe authors via triples table `table`
-    based on fingerprints coming from infile
+    dedupe authors via triples and output `canonical_id,author_id` pairs
+    to `outfile`
     """
-    for fingerprint in readlines(infile):
-        for pair in dedupe.dedupe_db(table, fingerprint, dataset):
-            out = ",".join(pair)
-            if dataset is not None:
-                out += f",{dataset}"
-            outfile.write(out + "\n")
+    writer = csv.writer(outfile)
+    for pair in dedupe.dedupe_from_db(dataset):
+        pair += (dataset,)
+        writer.writerow(pair)
 
 
-@db.command("rewrite-author-ids")
-@click.option("-i", "--infile", type=click.File("r"), default="-")
+@db.command("update-canonical")
 @click.option("-o", "--outfile", type=click.File("w"), default="-")
-@click.option(
-    "-t",
-    "--table",
-    default="author_aggregation",
-    help="Database table to read aggregated IDs from",
-    show_default=True,
-)
-@click.option("-d", "--dataset", help="Filter IDs for this dataset")
-def db_rewrite_authors(infile, outfile, table, dataset=None):
+@click.option("-d", "--dataset", help="Restrict to dataset, otherwise for all datasets")
+def update_canonical(outfile, dataset=None):
     """
-    rewrite author ids from db table with stored (agg_id, author_id) pairs
+    update canonical ids based on author triples for `dataset` or for all datasets
+    and write result as csv to `outfile`
     """
-    for entity in readlines(infile):
-        entity = json.loads(entity)
-        entity = dedupe.rewrite_entity(table, entity, dataset)
-        outfile.write(json.dumps(entity) + "\n")
+    df = dedupe.update_canonical(dataset)
+    df.to_csv(outfile, index=False)
 
 
-@db.command("yield-dedupe-entities")
-@click.option("-d", "--dataset", help="Ftm store dataset", required=True)
-@click.option("-o", "--outfile", type=click.File("w"), default="-")
-@click.option(
-    "-t",
-    "--table",
-    default="author_aggregation",
-    help="Database table to read aggregated IDs from",
-    show_default=True,
-)
-def db_yield_dedupe_entities(dataset, outfile, table):
-    """yield ids from entities that need to be rewritten based on aggregated ids from `table`"""
-    aggregations = dedupe.get_aggregation_mapping(table=table, dataset=dataset)
-    dataset = get_dataset(dataset)
-    for entity in dedupe.get_entities_to_rewrite(dataset, aggregations):
-        outfile.write(entity["id"] + "\n")
+# @db.command("rewrite-author-ids")
+# @click.option("-i", "--infile", type=click.File("r"), default="-")
+# @click.option("-o", "--outfile", type=click.File("w"), default="-")
+# @click.option(
+#     "-t",
+#     "--table",
+#     default="author_aggregation",
+#     help="Database table to read aggregated IDs from",
+#     show_default=True,
+# )
+# @click.option("-d", "--dataset", help="Filter IDs for this dataset")
+# def db_rewrite_authors(infile, outfile, table, dataset=None):
+#     """
+#     rewrite author ids from db table with stored (agg_id, author_id) pairs
+#     """
+#     for entity in readlines(infile):
+#         entity = json.loads(entity)
+#         entity = dedupe.rewrite_entity(table, entity, dataset)
+#         outfile.write(json.dumps(entity) + "\n")
 
 
-@db.command("rewrite-inplace")
-@click.option("-d", "--dataset", help="Ftm store dataset", required=True)
-@click.option("-i", "--infile", type=click.File("r"), default="-")
-@click.option(
-    "-t",
-    "--table",
-    default="author_aggregation",
-    help="Database table to read aggregated IDs from",
-    show_default=True,
-)
-def db_rewrite_inplace(dataset, infile, table):
-    """rewrite entities given by ids input in ftm store"""
-    ftm_dataset = get_dataset(dataset)
-    for i, entity_id in enumerate(readlines(infile)):
-        dedupe.rewrite_entity_inplace(ftm_dataset, entity_id)
-        if i % 1000 == 0:
-            log.info("Rewritten 1000 entities.", dataset=dataset, table=table)
+# @db.command("yield-dedupe-entities")
+# @click.option("-d", "--dataset", help="Ftm store dataset", required=True)
+# @click.option("-o", "--outfile", type=click.File("w"), default="-")
+# @click.option(
+#     "-t",
+#     "--table",
+#     default="author_aggregation",
+#     help="Database table to read aggregated IDs from",
+#     show_default=True,
+# )
+# def db_yield_dedupe_entities(dataset, outfile, table):
+#     """yield ids from entities that need to be rewritten based on aggregated ids from `table`"""
+# aggregations = dedupe.get_aggregation_mapping(table=table, dataset=dataset)
+# dataset = get_dataset(dataset)
+# for entity in dedupe.get_entities_to_rewrite(dataset, aggregations):
+#     outfile.write(entity["id"] + "\n")
+
+
+# @db.command("rewrite-inplace")
+# @click.option("-d", "--dataset", help="Ftm store dataset", required=True)
+# @click.option("-i", "--infile", type=click.File("r"), default="-")
+# @click.option(
+#     "-t",
+#     "--table",
+#     default="author_aggregation",
+#     help="Database table to read aggregated IDs from",
+#     show_default=True,
+# )
+# def db_rewrite_inplace(dataset, infile, table):
+#     """rewrite entities given by ids input in ftm store"""
+# ftm_dataset = get_dataset(dataset)
+# for i, entity_id in enumerate(readlines(infile)):
+#     dedupe.rewrite_entity_inplace(ftm_dataset, entity_id)
+#     if i % 1000 == 0:
+#         log.info("Rewritten 1000 entities.", dataset=dataset, table=table)
 
 
 @cli.group(invoke_without_command=True)
@@ -304,6 +296,7 @@ def db_rewrite_inplace(dataset, infile, table):
 @click.pass_context
 def worker(ctx, queue):
     if ctx.invoked_subcommand is None:
+        log.info(f"Using data root: `{settings.DATA_ROOT}`")
         worker = Worker(queues=list(queue))
         worker.run()
 
@@ -317,8 +310,11 @@ def worker(ctx, queue):
     default=5,
     show_default=True,
 )
-def batch_worker(queue, heartbeat):
-    worker = BatchWorker(queues=list(queue), heartbeat=heartbeat)
+@click.option(
+    "--batch_size", type=int, help="Batch size", default=1_000, show_default=True
+)
+def batch_worker(queue, heartbeat, batch_size):
+    worker = BatchWorker(queues=list(queue), heartbeat=heartbeat, batch_size=batch_size)
     worker.run()
 
 

@@ -1,8 +1,21 @@
+import os
 from typing import Iterator
 
-from ftg.parse import parsers
-from ftg.model import Article
-from ftg.schema import ArticleFullOutput
+from ftg import settings
+
+from ..logging import get_logger
+from ..model import Article
+from ..parse import parsers
+from ..schema import ArticleFullOutput
+
+log = get_logger(__name__)
+
+
+def _exists(fpath: str) -> bool:
+    if not os.path.exists(fpath):
+        log.error(f"Path `{fpath}` does not exist.", data_root=settings.DATA_ROOT)
+        return False
+    return True
 
 
 def _parse(data: dict) -> ArticleFullOutput:
@@ -28,35 +41,42 @@ def _parse(data: dict) -> ArticleFullOutput:
 
 
 def jats(fpath: str) -> Iterator[ArticleFullOutput]:
-    for article in parsers.jats(fpath):
-        yield _parse(article)
+    if _exists(fpath):
+        for article in parsers.jats(fpath):
+            yield _parse(article)
 
 
 def europepmc(fpath: str) -> Iterator[ArticleFullOutput]:
-    for article in parsers.europepmc(fpath):
-        yield _parse(article)
+    if _exists(fpath):
+        for article in parsers.europepmc(fpath):
+            yield _parse(article)
 
 
 def medrxiv(fpath: str) -> Iterator[ArticleFullOutput]:
-    for article in parsers.medrxiv(fpath):
-        yield _parse(article)
+    if _exists(fpath):
+        for article in parsers.medrxiv(fpath):
+            yield _parse(article)
 
 
 def cord(fpath: str) -> Iterator[ArticleFullOutput]:
-    for article in parsers.cord(fpath):
-        yield _parse(article)
+    if _exists(fpath):
+        for article in parsers.cord(fpath):
+            yield _parse(article)
 
 
 def crossref(fpath: str) -> Iterator[ArticleFullOutput]:
-    for article in parsers.crossref(fpath):
-        yield _parse(article)
+    if _exists(fpath):
+        for article in parsers.crossref(fpath):
+            yield _parse(article)
 
 
 def openaire(fpath: str) -> Iterator[ArticleFullOutput]:
-    for article in parsers.openaire(fpath):
-        yield _parse(article)
+    if _exists(fpath):
+        for article in parsers.openaire(fpath):
+            yield _parse(article)
 
 
 def semanticscholar(fpath: str) -> Iterator[ArticleFullOutput]:
-    for article in parsers.semanticscholar(fpath):
-        yield _parse(article)
+    if _exists(fpath):
+        for article in parsers.semanticscholar(fpath):
+            yield _parse(article)

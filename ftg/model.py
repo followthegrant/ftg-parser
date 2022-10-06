@@ -196,6 +196,7 @@ class Author(Base):
             "middle_names": middle_names or self.input.middle_names,
             "institutions": [i.serialize() for i in self.institutions],
             "countries": self.countries,
+            "fingerprint": self.fingerprint,
         }
 
 

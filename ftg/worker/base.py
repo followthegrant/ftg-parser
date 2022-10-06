@@ -22,7 +22,7 @@ class BaseWorker:
             settings.RABBITMQ_URL,
             exchange=settings.EXCHANGE,
             queues=self.queues,
-            **self.consumer_kwargs
+            **self.consumer_kwargs,
         )
         self.consumer.run()
 
@@ -56,11 +56,12 @@ class BaseWorker:
 class BaseBatchWorker(BaseWorker):
     consumer_class = BatchConsumer
 
-    def __init__(self, queues=None, heartbeat=5):
+    def __init__(self, queues=None, heartbeat=5, batch_size=1_000):
         super().__init__(queues)
+        self.batch_size = batch_size
         self.consumer_kwargs = {
             "heartbeat": heartbeat,
-            "prefetch_count": len(self.queues) * 100 + len(self.queues),
+            "prefetch_count": len(self.queues) * self.batch_size + len(self.queues),
         }
 
     def flush(self):

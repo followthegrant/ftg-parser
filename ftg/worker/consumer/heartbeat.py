@@ -86,9 +86,10 @@ class HeartbeatPikaConsumer(PikaConsumer):
     def on_heartbeat_cb_safe(self, *args, **kwargs):
         """Ignore missed heartbeats"""
         log.info("<3")
-        if time.time() - self.last_heartbeat >= self.heartbeat:
+        now = time.time()
+        if now - self.last_heartbeat >= self.heartbeat:
             self.on_heartbeat_cb(*args, **kwargs)
-            self.last_heartbeat = time.time()
+            self.last_heartbeat = now
 
 
 class ReconnectingHeartbeatPikaConsumer(ReconnectingPikaConsumer):

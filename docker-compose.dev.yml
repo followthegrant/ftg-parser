@@ -6,51 +6,39 @@ services:
     image: ftg-worker-dev
     build: .
     links:
-      - postgres
+      - clickhouse
       - rabbitmq
     environment:
       RABBITMQ_URL: amqp://guest:guest@rabbitmq:5672/%2F?heartbeat=600&blocked_connection_timeout=300
       LOG_LEVEL: ${LOG_LEVEL:-info}
+      DATABASE_URI: clickhouse:9000
     volumes:
-      - ${DATA_ROOT}:/data
+      - ${DATA_ROOT:-.}:/data
 
-  worker-psql-ftm:
+  worker-write-ftm:
     command: "ftg worker batch -q write-ftm"
     restart: on-failure
     image: ftg-worker-dev
     build: .
     links:
-      - postgres
+      - clickhouse
       - rabbitmq
     environment:
-      FTM_STORE_URI: postgresql://ftg:ftg@postgres/ftg
       RABBITMQ_URL: amqp://guest:guest@rabbitmq:5672/%2F?heartbeat=600&blocked_connection_timeout=300
       LOG_LEVEL: ${LOG_LEVEL:-info}
+      DATABASE_URI: clickhouse:9000
 
-  worker-psql-triples:
+  worker-write-triples:
     command: "ftg worker batch -q write-author-triples"
     restart: on-failure
     image: ftg-worker-dev
     build: .
     links:
-      - postgres
       - rabbitmq
     environment:
-      FTM_STORE_URI: postgresql://ftg:ftg@postgres/ftg
       RABBITMQ_URL: amqp://guest:guest@rabbitmq:5672/%2F?heartbeat=600&blocked_connection_timeout=300
       LOG_LEVEL: ${LOG_LEVEL:-info}
-
-  postgres:
-    restart: on-failure
-    image: postgres:alpine
-    expose:
-      - 5432
-    ports:
-      - 54321:5432
-    environment:
-      - POSTGRES_DB=ftg
-      - POSTGRES_USER=ftg
-      - POSTGRES_PASSWORD=ftg
+      DATABASE_URI: clickhouse:9000
 
   rabbitmq:
     restart: on-failure
@@ -61,3 +49,20 @@ services:
       - 8000:15672
     volumes:
       - ${PWD}/rabbitmq.conf.d:/etc/rabbitmq/conf.d
+
+  clickhouse:
+    image: clickhouse/clickhouse-server
+    restart: unless-stopped
+    volumes:
+      - ${DATA_ROOT:-.}/clickhouse-data:/var/lib/clickhouse
+      - ${DATA_ROOT:-.}/logs/clickhouse:/var/log/clickhouse-server
+    expose:
+      - 9000
+    ports:
+      - 127.0.0.1:9000:9000
+      - 127.0.0.1:8123:8123
+    ulimits:
+      nofile:
+        soft: "65536"
+        hard: "65536"
+

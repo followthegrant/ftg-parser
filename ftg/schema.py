@@ -58,6 +58,7 @@ class AuthorOutput(BaseModel):
     middle_names: Optional[str] = None
     institutions: Optional[List[InstitutionOutput]] = []
     countries: Optional[List[str]] = []
+    fingerprint: str
 
 
 class ArticleInput(BaseModel):
