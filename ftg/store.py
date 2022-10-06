@@ -61,19 +61,21 @@ class Store:
 
     def init(self, recreate: Optional[bool] = False):
         self.driver.init(exists_ok=True, recreate=recreate)
-        tables = (
-            (
-                self.author_triples_table,
-                AUTHOR_TRIPLES.format(table=self.canonical_table),
-            ),
-            (self.canonical_table, CANONICAL.format(table=self.canonical_table)),
-        )
-        for table, stmt in tables:
-            try:
-                self.driver.execute(stmt)
-            except Exception as e:
-                if not table_exists(e, table):
-                    raise e
+        self.create_table(self.author_triples_table, AUTHOR_TRIPLES, recreate)
+        self.create_table(self.canonical_table, CANONICAL, recreate)
+
+    def create_table(self, table: str, query: str, recreate: Optional[bool] = False):
+        query = query.format(table=table)
+        if recreate:
+            self.drop_table(table)
+        try:
+            self.driver.execute(query)
+        except Exception as e:
+            if not table_exists(e, table):
+                raise e
+
+    def drop_table(self, table: str):
+        self.driver.execute(f"DROP TABLE IF EXISTS {table}")
 
     def get_dataset(self, dataset: str):
         return _get_dataset(dataset, driver=self.driver)
