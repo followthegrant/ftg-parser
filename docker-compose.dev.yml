@@ -2,8 +2,8 @@ version: '3'
 
 services:
   worker:
-    restart: on-failure
     image: ftg-worker-dev
+    restart: on-failure
     build: .
     links:
       - clickhouse
@@ -15,10 +15,10 @@ services:
     volumes:
       - ${DATA_ROOT:-.}:/data
 
-  worker-write-ftm:
-    command: "ftg worker batch -q write-ftm"
-    restart: on-failure
+  worker-batch-write:
+    command: "ftg worker batch -q write-ftm -q write-author-triples"
     image: ftg-worker-dev
+    restart: on-failure
     build: .
     links:
       - clickhouse
@@ -28,34 +28,20 @@ services:
       LOG_LEVEL: ${LOG_LEVEL:-info}
       DATABASE_URI: clickhouse:9000
 
-  worker-write-triples:
-    command: "ftg worker batch -q write-author-triples"
-    restart: on-failure
-    image: ftg-worker-dev
-    build: .
-    links:
-      - rabbitmq
-    environment:
-      RABBITMQ_URL: amqp://guest:guest@rabbitmq:5672/%2F?heartbeat=600&blocked_connection_timeout=300
-      LOG_LEVEL: ${LOG_LEVEL:-info}
-      DATABASE_URI: clickhouse:9000
-
   rabbitmq:
-    restart: on-failure
     image: rabbitmq:management-alpine
+    restart: on-failure
     expose:
       - 5672
     ports:
-      - 8000:15672
+      - 127.0.0.1:5672:5672
+      - 127.0.0.1:15672:15672
     volumes:
       - ${PWD}/rabbitmq.conf.d:/etc/rabbitmq/conf.d
 
   clickhouse:
     image: clickhouse/clickhouse-server
     restart: unless-stopped
-    volumes:
-      - ${DATA_ROOT:-.}/clickhouse-data:/var/lib/clickhouse
-      - ${DATA_ROOT:-.}/logs/clickhouse:/var/log/clickhouse-server
     expose:
       - 9000
     ports:
@@ -65,4 +51,3 @@ services:
       nofile:
         soft: "65536"
         hard: "65536"
-
