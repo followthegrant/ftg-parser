@@ -57,7 +57,7 @@ medrxiv.crawl: parser = medrxiv
 semanticscholar: semanticscholar.download semanticscholar.parse semanticscholar.authors semanticscholar.aggregate semanticscholar.tables semanticscholar.export semanticscholar.upload
 semanticscholar.download:
 	mkdir -p $(DATA_ROOT)/semanticscholar/src
-	aws s3 cp --no-sign-request --recursive s3://ai2-s2-research-public/open-corpus/2021-12-01/ $(DATA_ROOT)/semanticscholar/src
+	aws s3 cp --no-sign-request --recursive s3://ai2-s2-research-public/open-corpus/2022-05-01/ $(DATA_ROOT)/semanticscholar/src
 semanticscholar.parse: src = src
 semanticscholar.parse: pat = s2-corpus-*.gz
 semanticscholar.parse: parser = semanticscholar
@@ -110,6 +110,18 @@ init:
 
 %.sync:
 	aws --profile ftg --endpoint-url $(S3_ENDPOINT) s3 sync --delete s3://followthegrant/$*/export $(DATA_ROOT)/$*/export
+
+
+# import testdata
+sampledata:
+	ftg worker crawl jats "biorxiv/*xml" -d biorxiv
+	ftg worker crawl jats "pubmed/*xml"  -d pubmed
+	ftg worker crawl medrxiv "medrxiv/*/*meca" -d medrxiv
+	ftg worker crawl openaire "openaire/*" -d openaire
+	ftg worker crawl cord "cord/*json" -d cord
+	ftg worker crawl semanticscholar "semanticscholar/*" -d semanticscholar
+	ftg worker crawl crossref "crossref/*" -d crossref
+	ftg worker crawl europepmc "europepmc/*" -d europepmc
 
 
 # services for dev purposes (rabbit, clickhouse)
