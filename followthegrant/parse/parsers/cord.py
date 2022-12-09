@@ -1,12 +1,10 @@
 import json
-from typing import Iterator, Iterable
+from typing import Iterable, Iterator
 
 from dateparser import parse as dateparse
 from normality import slugify
 
-from ...model import ArticleIdentifier
 from ...util import clean_dict
-
 
 DEFAULT_JOURNAL = "CORD-19 (missing journal name)"
 DEFAULT_TITLE = "TITLE MISSING"
@@ -53,14 +51,11 @@ def _get_authors(authors: Iterable[list]) -> Iterator[dict]:
 def wrangle(data: dict) -> dict:
     # identifiers
     data["pmid"] = data.pop("pubmed_id")
-    data["mag"] = data.pop("mag_id")
-    data["who"] = data.pop("who_covidence_id")
-    data["s2"] = data.pop("s2_id")
-    data["arxiv"] = data.pop("arxiv_id")
-    data["cord"] = data.pop("cord_uid")
-    data["identifiers"] = clean_dict(
-        {k: data.pop(k, None) for k in ArticleIdentifier.identifiers_dict}
-    )
+    data["magid"] = data.pop("mag_id")
+    data["whoid"] = data.pop("who_covidence_id")
+    data["s2id"] = data.pop("s2_id")
+    data["arxivid"] = data.pop("arxiv_id")
+    data["cordid"] = data.pop("cord_uid")
 
     data["journal"] = {"name": data.pop("journal", None) or DEFAULT_JOURNAL}
     if slugify(data["journal"]["name"]) is None:

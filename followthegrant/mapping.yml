@@ -23,22 +23,20 @@ ftg:
             split: ","
           indexText:
             column: article_index_text
-      ids:
-        schema: Note
-        id_column: articleidentifier_id
-        properties:
-          name:
-            column: articleidentifier_label
-            required: true
-          summary:
-            column: articleidentifier_key
-            required: true
-          description:
-            column: articleidentifier_value
-            required: true
-          entity:
-            column: article_id
-            required: true
+          doi:
+            column: article_doi
+          pmc:
+            column: article_pmc
+          pmid:
+            column: article_pmid
+          magId:
+            column: article_magid
+          arxivId:
+            column: article_arxivid
+          openaireId:
+            column: article_openaireid
+          s2Id:
+            column: article_s2id
       publisher:
         schema: LegalEntity
         id_column: journal_id
@@ -48,6 +46,8 @@ ftg:
             required: true
           website:
             column: journal_website
+          doi:
+            column: journal_doi
       articlepublished:
         schema: Documentation
         key_literal: journal-article
@@ -83,6 +83,12 @@ ftg:
           country:
             column: author_countries
             split: ","
+          orcidId:
+            column: author_orcidid
+          openaireId:
+            column: author_openaireid
+          s2Id:
+            column: author_s2id
       authorship:
         schema: Documentation
         key_literal: article-author
@@ -111,6 +117,10 @@ ftg:
             required: true
           country:
             column: institution_country
+          rorId:
+            column: institution_rorid
+          gridId:
+            column: institution_gridid
       affiliation:
         schema: Membership
         key_literal: institution-author
@@ -149,9 +159,7 @@ ftg:
             column: coi_article_id
             required: true
           author:
-            columns:
-              - coi_authors
-              - coi_author_name
+            column: coi_authors
             split: ","
           notes:
             column: coi_flag
@@ -179,7 +187,9 @@ ftg:
             column: coi_published_at
           publisher:
             column: coi_journal_name
-      coi_authorship:
+          indexText:
+            column: coi_index_text
+      coi_authorship:  # includes individual coi in summary and flag in indexText
         schema: Documentation
         key_literal: author-coistatement
         keys:
@@ -201,6 +211,8 @@ ftg:
             column: coi_published_at
           publisher:
             column: coi_journal_name
+          indexText:
+            column: coi_index_text
       ## ACKNOWLEDGEMENT STATEMENT
       ack_statement:
         schema: PlainText
@@ -220,9 +232,7 @@ ftg:
             column: ack_article_id
             required: true
           author:
-            columns:
-              - ack_authors
-              - ack_author_name
+            column: ack_authors
             split: ","
       ack_reference:
         schema: Documentation
@@ -246,7 +256,7 @@ ftg:
             column: ack_published_at
           publisher:
             column: ack_journal_name
-      ack_authorship:
+      ack_authorship: # includes individual ack in summary
         schema: Documentation
         key_literal: author-ackstatement
         keys:

@@ -19,9 +19,7 @@ from typing import Iterator
 from dateparser import parse as dateparse
 from normality import slugify
 
-from ...model import ArticleIdentifier
 from ...util import clean_dict, load_or_extract
-
 
 DEFAULT_JOURNAL = "OPENAIRE (missing journal name)"
 DEFAULT_TITLE = "TITLE MISSING"
@@ -64,14 +62,7 @@ def wrangle(data: dict) -> dict:
     data["journal"] = {"name": data.pop("publisher", None) or DEFAULT_JOURNAL}
     if not slugify(data["journal"]["name"]):
         data["journal"]["name"] = DEFAULT_JOURNAL
-    data["identifiers"] = clean_dict(
-        {
-            p["scheme"].lower(): p["value"]
-            for p in data.pop("pid", [])
-            if p["scheme"] in ArticleIdentifier.identifiers_dict
-        }
-    )
-    data["identifiers"]["openaire"] = data["id"]
+    data["openaireid"] = data["id"]
     data["keywords"] = [s["subject"]["value"] for s in data.pop("subjects", [])]
     data["authors"] = [a for a in _get_authors(data.pop("author", []))]
     return clean_dict(data)

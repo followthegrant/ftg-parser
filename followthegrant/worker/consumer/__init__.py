@@ -1,13 +1,13 @@
 import json
-from functools import lru_cache
 from collections import Counter
+from functools import lru_cache
 
 import pika
 from structlog import get_logger
 
-from ftg import settings
+from followthegrant import settings
 
-from ..tasks import TaskAggregator, get_stage, QUEUES
+from ..tasks import QUEUES, TaskAggregator, get_stage
 from .base import ReconnectingPikaConsumer
 from .heartbeat import ReconnectingHeartbeatPikaConsumer
 

@@ -18,8 +18,6 @@ from ingestors.analysis.extract import extract_entities
 from ingestors.analysis.language import detect_languages
 from ingestors.analysis.util import DOCUMENT, text_chunks
 
-from .model import Institution
-
 
 def analyze(entity):
     if not entity.schema.is_a(DOCUMENT):
@@ -53,7 +51,6 @@ def analyze(entity):
             mention.add("name", values)
             mention.add("detectedSchema", schema)
             mention.add("contextCountry", countries)
-            mention.add("resolved", Institution.make_id(name=label))
             yield mention
 
         entity.add(prop, label, cleaned=True, quiet=True)

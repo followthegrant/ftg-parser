@@ -17,8 +17,24 @@ usage:
 import json
 from typing import Iterator
 
-from ...model import ArticleIdentifier
 from ...util import clean_dict, load_or_extract
+from ..util import get_mapped_data
+
+MAPPING = {
+    "doi": "article.doi",
+    "magId": "article.magid",
+    "doiUrl": "article.sourceUrl",
+    "s2Url": "article.sourceUrl",
+    "s2PdfUrl": "article.sourceUrl",
+    "pdfUrls": "article.sourceUrl",
+    "year": "article.publishedAt",
+    "paperAbstract": "article.abstract",
+    "fieldsOfStudy": "article.keywords",
+    "journalName": "journal.name",
+    "authors.name": "authors[].name",
+    "authors.structuredName": "authors[].name",
+    "authors.ids": "authors[].s2id",
+}
 
 
 def _get_authors(authors):
@@ -34,16 +50,10 @@ def _get_authors(authors):
 
 
 def wrangle(data: dict) -> dict:
-    data["abstract"] = data.pop("paperAbstract")
-    data["published_at"] = data.pop("year")
-    data["journal"] = {"name": data.pop("journalName") or "SEMANTIC SCHOLAR"}
-    data["mag"] = data.pop("magId")
-    data["identifiers"] = clean_dict(
-        {k: data[k] for k in ArticleIdentifier.identifiers_dict if k in data}
-    )
-    data["keywords"] = data.pop("fieldsOfStudy")
-    data["source_url"] = data.pop("doiUrl") or data.pop("s2Url")
-    data["authors"] = [a for a in _get_authors(data["authors"])]
+    data = get_mapped_data(MAPPING, data)
+    import ipdb
+
+    ipdb.set_trace()
     return clean_dict(data)
 
 

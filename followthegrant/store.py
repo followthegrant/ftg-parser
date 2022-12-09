@@ -14,7 +14,8 @@ CREATE TABLE {table}
     `fingerprint_id` FixedString(40),
     `author_id` FixedString(40),
     `value_id` FixedString(40),
-    `dataset` String,
+    `prop_type` LowCardinality(String),
+    `dataset` LowCardinality(String),
     PROJECTION {table}_px
     (
         SELECT *
@@ -22,31 +23,17 @@ CREATE TABLE {table}
             fingerprint_id,
             author_id,
             dataset
+    ),
+    PROJECTION {table}_tpx
+    (
+        SELECT *
+        ORDER BY
+            prop_type
     )
 )
 ENGINE = ReplacingMergeTree
 PRIMARY KEY (dataset, fingerprint_id, author_id)
-ORDER BY (dataset, fingerprint_id, author_id)
-"""
-
-CANONICAL = """
-CREATE TABLE {table}
-(
-    `dataset` String,
-    `entity_id` FixedString(40),
-    `canonical_id` FixedString(40),
-    PROJECTION {table}_px
-    (
-        SELECT *
-        ORDER BY
-            entity_id,
-            canonical_id,
-            dataset
-    )
-)
-ENGINE = ReplacingMergeTree
-PRIMARY KEY (dataset, canonical_id, entity_id)
-ORDER BY (dataset, canonical_id, entity_id)
+ORDER BY (dataset, fingerprint_id, author_id, value_id)
 """
 
 
@@ -57,12 +44,10 @@ class Store:
         self.driver = driver or get_driver()
         self.prefix = prefix
         self.author_triples_table = f"{prefix}_author_triples"
-        self.canonical_table = f"{prefix}_canonical"
 
     def init(self, recreate: Optional[bool] = False):
         self.driver.init(exists_ok=True, recreate=recreate)
         self.create_table(self.author_triples_table, AUTHOR_TRIPLES, recreate)
-        self.create_table(self.canonical_table, CANONICAL, recreate)
 
     def create_table(self, table: str, query: str, recreate: Optional[bool] = False):
         query = query.format(table=table)
@@ -81,12 +66,8 @@ class Store:
         return _get_dataset(dataset, driver=self.driver)
 
     def write_author_triples(self, rows: Iterator[Iterable[str]]) -> int:
-        columns = ["fingerprint_id", "author_id", "value_id", "dataset"]
+        columns = ["fingerprint_id", "author_id", "value_id", "prop_type", "dataset"]
         insert_many(self.author_triples_table, columns, rows, driver=self.driver)
-
-    def write_canonical(self, rows: Iterator[Iterable[str]]) -> int:
-        columns = ["canonical_id", "entity_id", "dataset"]
-        insert_many(self.canonical_table, columns, rows, driver=self.driver)
 
     def iterate_author_triple_packs(
         self, dataset: Optional[str] = None

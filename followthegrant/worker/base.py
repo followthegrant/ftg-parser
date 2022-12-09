@@ -1,8 +1,8 @@
 import pika
 from structlog import get_logger
 
-from ftg import settings
-from ftg.util import cached_property
+from followthegrant import settings
+from followthegrant.util import cached_property
 
 from .consumer import BatchConsumer, Consumer, basic_publish
 

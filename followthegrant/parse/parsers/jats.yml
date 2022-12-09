@@ -1,0 +1,155 @@
+journal:
+  properties:
+    name:
+      - '//journal-meta//journal-title'
+    issn:
+      - '//journal-meta//issn'
+
+article:
+  properties:
+    doi:
+      - '//article-meta//article-id[@pub-id-type="doi"]'
+    pmid:
+      - '//article-meta//article-id[@pub-id-type="pmid"]'
+    pmc:
+      - '//article-meta//article-id[@pub-id-type="pmc"]'
+    title:
+      - '//article-meta//article-title'
+    summary:
+      - '//abstract'
+    publishedAt:
+      - '//pub-date'
+    keywords:
+      - '//subject'
+      - '//kwd'
+    coi_statement:
+      - "//conflict"
+      - "//CoiStatement"
+      - "//coi-statement"
+      - '//*[@*="conflict"]'
+      - '//*[@*="conflict-interest"]'
+      - '//*[@*="COI-statement"]'
+      - '//*[@*="coi-statement"]'
+      - '//*[@*="competing-interest-statement"]'
+    ack_statement:
+      - "//acknowledgement"
+      - "//acknowledgements"
+      - "//ack"
+    funding_statement:
+      - "funding"
+      - "//funding-statement"
+      - "//funding-information"
+      - '//*[@*="financial-disclosure"]'
+      - '//*[@*="supported-by"]'
+      - '//support-source'
+
+authors:
+  from:
+    - '//contrib-group//contrib[@contrib-type="author"]'
+  properties:
+    xref:
+      - './/xref[@ref-type="other"]/@rid'
+    name:
+      - './/name'
+    firstName:
+      - './/surname'
+    lastName:
+      - './/given-names'
+    email:
+      - './/email'
+    orcid:
+      - './/contrib-id[@contrib-id-type="orcid"]'
+    affiliation:
+      - './/xref[@ref-type="aff"]/@rid'
+    country:
+      - './/country'
+    address:
+      - './/addr-line'
+    phoneNumber:
+      - './/phone'
+    postalCode:
+      - './/postal-code'
+
+institutions:
+  from:
+    - '//aff'
+  properties:
+    xref:
+      - './@id'
+    id:
+      - './/institution-id'
+    gridId:
+      - './/institution-id[@institution-id-type="GRID"]'
+      - './/institution-id[@institution-id-type="grid"]'
+    isniId:
+      - './/institution-id[@institution-id-type="ISNI"]'
+      - './/institution-id[@institution-id-type="isni"]'
+    department:
+      - './/institution[@content-type="dept"]'
+    name:
+      - './/institution'
+    country:
+      - './/country'
+    address:
+      - './/addr-line'
+    phoneNumber:
+      - './/phone'
+    postalCode:
+      - './/postal-code'
+
+
+funders:
+  from:
+    - '//funding-source'
+    - '//support-source'
+    - '//*[@*="supported-by"]'
+  properties:
+    xref:
+      - 'parent::award-group/@id'
+    id:
+      - './/institution-id'
+    department:
+      - './/institution[@content-type="dept"]'
+    name:
+      - './/institution'
+    country:
+      - './/country'
+    address:
+      - './/addr-line'
+    phoneNumber:
+      - './/phone'
+    postalCode:
+      - './/postal-code'
+
+grants:
+  from:
+    - '//award-group'
+  properties:
+    id:
+      - './/award-id'
+    name:
+      - './/award-name'
+    description:
+      - './/award-desc'
+    type:
+      - "@award-type"
+    recipient:
+      from:
+        - './/principal-award-recipient'
+      properties:
+        name:
+          - './/name'
+        firstName:
+          - './/surname'
+        lastName:
+          - './/given-names'
+    investigator:
+      from:
+        - './/principal-investigator'
+      properties:
+        name:
+          - './/name'
+        firstName:
+          - './/surname'
+        lastName:
+          - './/given-names'

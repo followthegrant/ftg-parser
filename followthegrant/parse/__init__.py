@@ -1,7 +1,7 @@
 import os
 from typing import Iterator
 
-from ftg import settings
+from followthegrant import settings
 
 from ..logging import get_logger
 from ..model import Article
@@ -24,8 +24,6 @@ def _parse(data: dict) -> ArticleFullOutput:
     """
     article = Article(**data)
     data = article.serialize()
-    if article.identifiers:
-        data["identifiers"] = [i.serialize() for i in article.identifiers]
     if article.coi_statement:
         data["coi_statement"] = article.coi_statement.serialize()
         data["individual_coi_statements"] = [

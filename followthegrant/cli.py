@@ -109,24 +109,25 @@ def map_ftm(infile, outfile):
 @click.option("-d", "--dataset", help="Append source (dataset) column with this value")
 def author_triplets(infile, outfile, dataset=None):
     """
-    generate author triples for institutions and co-authors:
+    generate author triples (+ property type) for institutions and co-authors:
 
-    fingerprint,author_id,coauthor_id
-    fingerprint,author_id,institution_id
+    fingerprint,author_id,coauthor_id,"coauthor"
+    fingerprint,author_id,institution_id,"affiliation"
 
     optionally append `dataset` value to each row:
 
-    fingerprint,author_id,institution_id,dataset
+    fingerprint,author_id,institution_id,prop_type,dataset
     ...
     """
+    writer = csv.writer(outfile)
     for data in readlines(infile):
         data = json.loads(data)
         data = ArticleFullOutput(**data)
         for triple in dedupe.explode_triples(data):
-            out = ",".join(triple)
+            row = triple
             if dataset is not None:
-                out += f",{dataset}"
-            outfile.write(out + "\n")
+                row += dataset
+            writer.writerow(row)
 
 
 @cli.command("dedupe-triples")
@@ -231,64 +232,6 @@ def update_canonical(outfile, dataset=None):
     """
     df = dedupe.update_canonical(dataset)
     df.to_csv(outfile, index=False)
-
-
-# @db.command("rewrite-author-ids")
-# @click.option("-i", "--infile", type=click.File("r"), default="-")
-# @click.option("-o", "--outfile", type=click.File("w"), default="-")
-# @click.option(
-#     "-t",
-#     "--table",
-#     default="author_aggregation",
-#     help="Database table to read aggregated IDs from",
-#     show_default=True,
-# )
-# @click.option("-d", "--dataset", help="Filter IDs for this dataset")
-# def db_rewrite_authors(infile, outfile, table, dataset=None):
-#     """
-#     rewrite author ids from db table with stored (agg_id, author_id) pairs
-#     """
-#     for entity in readlines(infile):
-#         entity = json.loads(entity)
-#         entity = dedupe.rewrite_entity(table, entity, dataset)
-#         outfile.write(json.dumps(entity) + "\n")
-
-
-# @db.command("yield-dedupe-entities")
-# @click.option("-d", "--dataset", help="Ftm store dataset", required=True)
-# @click.option("-o", "--outfile", type=click.File("w"), default="-")
-# @click.option(
-#     "-t",
-#     "--table",
-#     default="author_aggregation",
-#     help="Database table to read aggregated IDs from",
-#     show_default=True,
-# )
-# def db_yield_dedupe_entities(dataset, outfile, table):
-#     """yield ids from entities that need to be rewritten based on aggregated ids from `table`"""
-# aggregations = dedupe.get_aggregation_mapping(table=table, dataset=dataset)
-# dataset = get_dataset(dataset)
-# for entity in dedupe.get_entities_to_rewrite(dataset, aggregations):
-#     outfile.write(entity["id"] + "\n")
-
-
-# @db.command("rewrite-inplace")
-# @click.option("-d", "--dataset", help="Ftm store dataset", required=True)
-# @click.option("-i", "--infile", type=click.File("r"), default="-")
-# @click.option(
-#     "-t",
-#     "--table",
-#     default="author_aggregation",
-#     help="Database table to read aggregated IDs from",
-#     show_default=True,
-# )
-# def db_rewrite_inplace(dataset, infile, table):
-#     """rewrite entities given by ids input in ftm store"""
-# ftm_dataset = get_dataset(dataset)
-# for i, entity_id in enumerate(readlines(infile)):
-#     dedupe.rewrite_entity_inplace(ftm_dataset, entity_id)
-#     if i % 1000 == 0:
-#         log.info("Rewritten 1000 entities.", dataset=dataset, table=table)
 
 
 @cli.group(invoke_without_command=True)

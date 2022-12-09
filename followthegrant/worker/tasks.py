@@ -7,12 +7,12 @@ from followthemoney.util import make_entity_id
 from ftm_columnstore import get_dataset
 from structlog import get_logger
 
-from ftg import ftm
-from ftg import parse as parsers
-from ftg import schema, settings
-from ftg.dedupe.authors import explode_triples
-from ftg.store import get_store
-from ftg.util import cached_property, get_path
+from followthegrant import ftm
+from followthegrant import parse as parsers
+from followthegrant import schema, settings
+from followthegrant.dedupe.authors import explode_triples
+from followthegrant.store import get_store
+from followthegrant.util import cached_property, get_path
 
 log = get_logger(__name__)
 
