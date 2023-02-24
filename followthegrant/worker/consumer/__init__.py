@@ -1,6 +1,5 @@
 import json
 from collections import Counter
-from functools import lru_cache
 
 import pika
 from structlog import get_logger
@@ -114,7 +113,7 @@ class Consumer(ReconnectingPikaConsumer, _FTGConsumer):
 class BatchConsumer(ReconnectingHeartbeatPikaConsumer, _FTGConsumer):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self._aggregators = {}
+        self._aggregators = dict()
 
     def on_message(self, channel, method, properties, payload):
         """receive a message"""
@@ -140,7 +139,6 @@ class BatchConsumer(ReconnectingHeartbeatPikaConsumer, _FTGConsumer):
                     )
                 aggregator.flush()
 
-    @lru_cache(maxsize=1024)
     def _get_aggregator(self, stage):
         """get task aggregator per job and stage"""
         if stage.key not in self._aggregators:

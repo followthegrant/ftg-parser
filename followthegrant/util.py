@@ -1,102 +1,78 @@
-import gzip
-import os
-from zipfile import ZipFile
+from functools import lru_cache
+from pathlib import Path
+from typing import Any, Hashable, Iterable
 
-from banal import clean_dict as _clean_dict
-from banal import is_mapping
+import dateparser
+from banal import ensure_list
+from fingerprints import generate
+from normality import collapse_spaces
 
 from . import settings
 
 
-def clean_dict(data, expensive=False):
-    """make sure empty strings are None"""
-    data = {k: v or None for k, v in data.items()}
-    if expensive:
-        # more expensive, use with caution
-        for k, v in data.items():
-            if isinstance(v, str):
-                data[k] = v.strip()
-            if is_mapping(v):
-                data[k] = clean_dict(v, expensive)
-    return _clean_dict(data)
+@lru_cache(1_000_000)
+def fp(value: str | None) -> str | None:
+    return generate(value)
 
 
-def clean_list(data):
-    return [i for i in data if i]
+def clean_value(value: str | None) -> str | None:
+    if not value:
+        return None
+    value = collapse_spaces(value)
+    if value:
+        return value.strip(".,")
+    return None
 
 
-def unique_list(data):
-    return list(set(clean_list(data)))
-
-
-def prefixed_dict(data, prefix=""):
-    return {f"{prefix}_{k}": v for k, v in data.items()}
-
-
-class cached_property:
-    # https://gist.github.com/koirikivi/c58d30fce18ac1f0d65f06bfa4f93743
-    # https://docs.djangoproject.com/en/3.2/_modules/django/utils/functional/#cached_property
+def clean_list(*data: Iterable[Any]) -> list:
     """
-    Decorator that converts a method with a single self argument into a
-    property cached on the instance.
-
-    A cached property can be made out of an existing method:
-    (e.g. ``url = cached_property(get_absolute_url)``).
-    The optional ``name`` argument is obsolete as of Python 3.6 and will be
-    deprecated in Django 4.0 (#30127).
+    flatten and filter out falsish values from iterables but keep order
     """
-    name = None
-
-    @staticmethod
-    def func(instance):
-        raise TypeError(
-            "Cannot use cached_property instance without calling "
-            "__set_name__() on it."
-        )
-
-    def __init__(self, func, name=None):
-        self.real_func = func
-        self.__doc__ = getattr(func, "__doc__")
-
-    def __set_name__(self, owner, name):
-        if self.name is None:
-            self.name = name
-            self.func = self.real_func
-        elif name != self.name:
-            raise TypeError(
-                "Cannot assign the same cached_property to two different names "
-                "(%r and %r)." % (self.name, name)
-            )
-
-    def __get__(self, instance, cls=None):
-        """
-        Call the function and put the return value in instance.__dict__ so that
-        subsequent attribute access on the instance returns the cached value
-        instead of calling cached_property.__get__().
-        """
-        if instance is None:
-            return self
-        res = instance.__dict__[self.name] = self.func(instance)
-        return res
+    res = []
+    for items in data:
+        for item in ensure_list(items):
+            if item:
+                res.append(item)
+    return res
 
 
-def load_or_extract(fp):
-    _, ext = os.path.splitext(fp)
-    if ext == ".gz":
-        with gzip.open(fp) as f:
-            content = f.read()
-        return content.decode()
-    if ext == ".meca":  # medRxiv
-        with ZipFile(fp) as f:
-            for file in f.infolist():
-                if file.filename.endswith("xml"):
-                    return f.open(file).read()
-    else:
-        with open(fp) as f:
-            content = f.read()
-        return content
-
-
-def get_path(fp):
+def get_path(fp: Path | str | None = None) -> Path:
     """fix path related to `DATA_ROOT`, used for docker volumes"""
-    return os.path.join(settings.DATA_ROOT, fp)
+    if not fp:
+        return settings.DATA_ROOT
+    fp = Path(fp)
+    return settings.DATA_ROOT / fp
+
+
+@lru_cache(1_000_000)
+def clean_date(value: str | None) -> str | None:
+    if value is None:
+        return None
+    value = value.strip()
+    if not value:
+        return None
+    if len(value) == 4:  # year
+        return value
+    parsed_value = dateparser.parse(value)
+    if parsed_value:
+        return parsed_value.date().isoformat()
+    return value
+
+
+def clean_ids(value: Iterable | str | None = None) -> set[str]:
+    values = set()
+    for value in ensure_list(value):
+        value = value or ""
+        if value.startswith("http"):
+            values.add(value.split("/")[-1])
+    return set(clean_list(values))
+
+
+def ensure_set(values: Iterable[Hashable]) -> set[Hashable]:
+    return set(clean_list(values))
+
+
+def ensure_path(fp: str | Path | None = None) -> None | Path:
+    if fp is None:
+        return None
+    return Path(fp)

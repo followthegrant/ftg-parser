@@ -1,81 +1,139 @@
-import json
-from typing import Iterable, Iterator
+"""
+CORD
 
-from dateparser import parse as dateparse
-from normality import slugify
+https://github.com/allenai/cord19
 
-from ...util import clean_dict
+use the metadata.csv that then references the extracted json:
 
-DEFAULT_JOURNAL = "CORD-19 (missing journal name)"
-DEFAULT_TITLE = "TITLE MISSING"
+ftg parse cord -f ./.../metadata.csv
+
+"""
+
+import csv
+from collections import defaultdict
+from pathlib import Path
+from typing import Any, Generator
+
+import orjson
+from followthemoney.util import join_text
+
+from ...logging import get_logger
+from ...model import ParsedResult, get_firsts
+from ..util import load_or_extract, parse_dict
+
+log = get_logger(__name__)
+
+JOURNAL = {"journal": "name"}
+
+ARTICLE = {
+    "paper_id": "ident",
+    "source_x": "publisher",
+    "doi": "doi",
+    "pmcid": "pmc",
+    "pubmed_id": "pmid",
+    "publish_time": "publishedAt",
+    "mag_id": "magId",
+    "arxiv_id": "arxivId",
+    "url": "sourceUrl",
+    "s2_id": "s2Id",
+    "abstract[].text": "summary",
+    "metadata.title": "title",
+}
+
+AUTHOR = {
+    "first": "firstName",
+    "middle": "middleName",
+    "last": "lastName",
+    "email": "email",
+}
+
+INSTITUTION = {
+    "affiliation.institution": "name",
+    "affiliation.location.country": "country",
+    "affiliation.location.addrLine": "address",
+}
+
+ADDRESS = {
+    "affiliation.location.settlement": "city",
+    "affiliation.location.postBox": "postBox",
+    "affiliation.location.postCode": "postCode",
+    "affiliation.location.region": "region",
+}
+
+
+def make_address(data: dict[str, Any]) -> str:
+    data = parse_dict(data, ADDRESS)
+    return join_text(
+        *get_firsts(data["postBox"], data["postCode"], data["city"], data["region"])
+    )
 
 
 def _load_coi_statement(data: dict) -> str:
     pass
 
 
-def _get_authors(authors: Iterable[list]) -> Iterator[dict]:
-    for author in authors.split(";"):
-        author = author.strip()
-        if slugify(author) is not None:
-            if "," not in author:
-                yield {"name": author}
+def wrangle(data: dict[str, Any]) -> ParsedResult:
+    result = defaultdict(list)
+    result["article"] = parse_dict(data, ARTICLE)
+    result["journal"] = parse_dict(data, JOURNAL)
+    for author in data["metadata"].get("authors", []):
+        affiliation = parse_dict(author, INSTITUTION)
+        affiliation["xref"] = affiliation["name"]
+        affiliation["address"].add(make_address(author))
+        author = parse_dict(author, AUTHOR)
+        author["xref_affiliation"] = affiliation["xref"]
+        result["authors"].append(author)
+        result["institutions"].append(affiliation)
+    for section in data.get("back_matter", []):
+        section_name = section["section"].lower()
+        if "acknowl" in section_name:
+            result["article"]["ack_statement"].add(section["text"])
+        if "competing" in section_name or "conflict" in section_name:
+            result["article"]["coi_statement"].add(section["text"])
+        if "funding" in section_name:
+            result["article"]["funding_statement"].add(section["text"])
+    return ParsedResult(**result)
+
+
+def wrangle_meta(data: dict[str, Any], fpath: Path) -> ParsedResult:
+    journal = parse_dict(data, JOURNAL)
+    article = parse_dict(data, ARTICLE)
+    authors = []
+    institutions = []
+    for fp in data["pdf_json_files"].split(";"):
+        fp = fp.strip()
+        if fp:
+            fp = fpath.parent / fp
+            if fp.exists():
+                for result in parse(fp):
+                    for k, v in result.article.items():
+                        article[k].update(v)
+                    for k, v in result.journal.items():
+                        journal[k].update(v)
+                    authors.extend(result.authors)
+                    institutions.extend(result.institutions)
             else:
-                last, first, *middle = author.strip().split(",")
-                last, first, middle = (
-                    last.strip(),
-                    first.strip() or None,
-                    " ".join(middle) or None,
-                )
-                if middle is None and first is not None:
-                    first, *middle = first.split()
-                    middle = " ".join(middle) or None
-
-                if first is not None:
-                    if middle is not None:
-                        name = f"{first} {middle} {last}"
-                    else:
-                        name = f"{first} {last}"
-                else:
-                    middle = None
-                    name = last
-
-                yield {
-                    "name": name,
-                    "first_name": first,
-                    "last_name": last,
-                    "middle_names": middle,
-                }
+                log.warning("json file does not exist", fpath=str(fp))
+    return ParsedResult(
+        journal=journal, article=article, authors=authors, institutions=institutions
+    )
 
 
-def wrangle(data: dict) -> dict:
-    # identifiers
-    data["pmid"] = data.pop("pubmed_id")
-    data["magid"] = data.pop("mag_id")
-    data["whoid"] = data.pop("who_covidence_id")
-    data["s2id"] = data.pop("s2_id")
-    data["arxivid"] = data.pop("arxiv_id")
-    data["cordid"] = data.pop("cord_uid")
-
-    data["journal"] = {"name": data.pop("journal", None) or DEFAULT_JOURNAL}
-    if slugify(data["journal"]["name"]) is None:
-        data["journal"]["name"] = DEFAULT_JOURNAL
-    data["authors"] = [a for a in _get_authors(data.pop("authors"))]
-    if slugify(data["title"] or "") is None:
-        if data["abstract"]:
-            data["title"] = data["abstract"][:300]
-        else:
-            data["title"] = DEFAULT_TITLE
-    data["published_at"] = data.pop("publish_time", None)
-    if data["published_at"] is not None:
-        published_at = dateparse(data["published_at"])
-        if published_at is not None:
-            published_at = published_at.date()
-        data["published_at"] = published_at
-    return clean_dict(data)
-
-
-def parse(fpath: str) -> Iterator[dict]:
-    with open(fpath) as f:
-        data = json.load(f)
-    yield wrangle(data)
+def parse(fpath: str | Path) -> Generator[ParsedResult, None, None]:
+    fpath = Path(fpath)
+    if fpath.suffix == ".json":
+        # usually don't use json files directly as there is no useful metadata,
+        # prefer metadata.csv which parses the referenced json files
+        data = load_or_extract(fpath)
+        data = orjson.loads(data)
+        yield wrangle(data)
+    elif fpath.suffix == ".csv":
+        # metadata.csv
+        reader = csv.DictReader(fpath.open())
+        ix = 0
+        for ix, row in enumerate(reader):
+            yield wrangle_meta(row, fpath)
+            if ix and ix % 10_000 == 0:
+                log.info("Parsing csv row %d ..." % ix)
+        if ix:
+            log.info("Parsed %d csv rows %d" % (ix + 1), fp=fpath.name)

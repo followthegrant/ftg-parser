@@ -3,12 +3,14 @@
 # https://raw.githubusercontent.com/pika/pika/master/examples/asynchronous_consumer_example.py
 
 import functools
-import logging
 import time
+
 import pika
 from pika.exchange_type import ExchangeType
 
-log = logging.getLogger(__name__)
+from followthegrant.logging import get_logger
+
+log = get_logger(__name__)
 
 
 class PikaConsumer:

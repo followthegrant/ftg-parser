@@ -1,0 +1,71 @@
+services:
+  worker:
+    image: ftg-worker
+    links:
+      - rabbitmq
+    environment:
+      RABBITMQ_URL: amqp://guest:guest@rabbitmq:5672/%2F?heartbeat=3600&blocked_connection_timeout=3600
+    volumes:
+      - ${DATA_ROOT}:/data
+    deploy:
+      replicas: 48
+      resources:
+        limits:
+          memory: 64G
+      restart_policy:
+        condition: any
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+
+  worker-write-ftm:
+    command: "ftg worker batch -q write-ftm"
+    image: ftg-worker
+    links:
+      - rabbitmq
+    environment:
+      RABBITMQ_URL: amqp://guest:guest@rabbitmq:5672/%2F?heartbeat=1200&blocked_connection_timeout=600
+    deploy:
+      replicas: 8
+      restart_policy:
+        condition: any
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+
+  worker-write-triples:
+    command: "ftg worker batch -q write-author-triples"
+    image: ftg-worker
+    links:
+      - rabbitmq
+    environment:
+      RABBITMQ_URL: amqp://guest:guest@rabbitmq:5672/%2F?heartbeat=1200&blocked_connection_timeout=600
+    deploy:
+      replicas: 8
+      restart_policy:
+        condition: any
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+
+  rabbitmq:
+    image: rabbitmq:management
+    hostname: ftg-rabbit
+    environment:
+      RABBITMQ_NODENAME: rabbit@ftg-rabbit
+    expose:
+      - 5672
+    ports:
+      - 127.0.0.1:8000:15672
+    volumes:
+      - ${DATA_ROOT}/rabbitmq:/var/lib/rabbitmq
+      - ${PWD}/rabbitmq.conf.d:/etc/rabbitmq/conf.d
+    deploy:
+      mode: global
+      restart_policy:
+        condition: any
+    healthcheck:
+      test: "rabbitmq-diagnostics -q ping"
+      interval: 10s
+      timeout: 5s
+      retries: 5

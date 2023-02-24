@@ -1,11 +1,13 @@
-import logging
 import time
 import uuid
+
 import pika
+
+from followthegrant.logging import get_logger
 
 from .base import PikaConsumer, ReconnectingPikaConsumer
 
-log = logging.getLogger(__name__)
+log = get_logger(__name__)
 
 
 class HeartbeatPikaConsumer(PikaConsumer):

@@ -3,8 +3,7 @@ from collections import Counter, defaultdict
 
 from html2text import html2text
 from lxml import etree
-from normality import normalize
-from pubmed_parser.utils import read_xml
+from normality import collapse_spaces, normalize
 from spacy.lang.en import English
 
 nlp = English()
@@ -309,6 +308,8 @@ def flag_coi_hristio(text):
 
 
 def extract_coi_from_fulltext(fpath):
+    from .parse.xml import read_xml
+
     tree = read_xml(fpath)
     xpath = './/*[contains(translate(text(), "ABCDEFGHIJKLMNOPQRSTUVWXYZ", "abcdefghijklmnopqrstuvwxyz"),"interest") and (contains(translate(text(), "ABCDEFGHIJKLMNOPQRSTUVWXYZ", "abcdefghijklmnopqrstuvwxyz"),"competing") or contains(translate(text(), "ABCDEFGHIJKLMNOPQRSTUVWXYZ", "abcdefghijklmnopqrstuvwxyz"),"declaring") or contains(translate(text(), "ABCDEFGHIJKLMNOPQRSTUVWXYZ", "abcdefghijklmnopqrstuvwxyz"),"conflict"))]'  # noqa
     coi_statement = " ".join(
@@ -323,8 +324,8 @@ def extract_coi_from_fulltext(fpath):
             article_text = etree.tostring(fpath).decode()
         else:
             with open(fpath) as f:
-                article_text = html2text(f.read())
-        # FIXME
+                article_text = f.read()
+        article_text = html2text(article_text)
         coi_statement = coi_statement.replace("(", "\(").replace(")", "\)")  # noqa
         match = re.search(coi_statement, article_text, flags=re.IGNORECASE)
         if match is not None:
@@ -346,4 +347,4 @@ def extract_coi_from_fulltext(fpath):
                     full_coi_text += article_text[start_pos + i]
                     i += 1
 
-            return full_coi_text.replace("\t", " ").replace("\n", " ")
+            return collapse_spaces(full_coi_text)

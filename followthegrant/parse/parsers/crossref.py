@@ -2,7 +2,7 @@
 CROSSREF dataset
 
 source data:
-https://academictorrents.com/details/e4287cb7619999709f6e9db5c359dda17e93d515
+https://academictorrents.com/details/4dcfdf804775f2d92b7a030305fa0350ebef6f3e
 
 expects as input file paths to either gzipped or already extracted json files,
 which have an array of objects in the key "items"
@@ -14,59 +14,146 @@ usage:
 """
 
 
-import json
-from typing import Iterator
+from collections import defaultdict
+from typing import Any, Generator
 
+import orjson
 from banal import ensure_list
-from dateparser import parse as dateparse
-from normality import slugify
+from html2text import html2text
 
-from ...util import clean_dict, load_or_extract
+from ...transform import ParsedResult
+from ...util import clean_list
+from ..util import load_or_extract, parse_dict
+
+IDS = {"ROR": "rorId", "ORCID": "orcId", "ISSN": "issn", "DOI": "doi"}
+
+JOURNAL = {
+    "issn-type[].value": "issn",
+    "ISSN": "issn",
+    "container-title": "name",
+    "short-container-title": "name",
+    "short-title": "name",
+    "publisher": "publisher",
+    "source": "publisher",
+}
+
+JOURNAL_TYPE = {
+    "DOI": "doi",
+    "URL": "sourceUrl",
+    "link[].URL": "sourceUrl",
+    "resource.primary.URL": "website",
+    "subject[]": "keywords",
+}
+JOURNAL_TYPE.update(JOURNAL)
+
+ARTICLE = {
+    "DOI": "doi",
+    "created.date-parts.date-time": "publishedAt",
+    "published.date-parts.date-time": "publishedAt",
+    "title": "title",
+    "original-title": "title",
+    "URL": "sourceUrl",
+    "resource.primary.URL": "sourceUrl",
+    "subject[]": "keywords",
+    "publisher": "publisher",
+    "source": "publisher",
+    "abstract": "summary",
+}
+
+AUTHOR = {"ORCID": "orcId", "given": "firstName", "family": "lastName"}
+
+INSTITUTION = {"ROR": "rorId", "name": "name", "award[]": "grants"}
+
+# GRANT_INLINE = {"funder[].award[]": "projectId"}
+
+GRANT = {
+    "award": "projectId",
+    "URL": "sourceUrl",
+    "resource.primary.URL": "sourceUrl",
+    "project[].project-title[].title": "title",
+    "project[].project-description[].description": "summary",
+    "project[].award-amount.amount": "amount",
+    "project[].award-amount.currency": "currency",
+}
 
 
-TYPES = ("journal-article",)
-DEFAULT_TITLE = "TITLE MISSING"
+def parse_date(data: dict[str, list[list[int]]]) -> str:
+    dates = set()
+    parts = data.get("date-parts", [])
+    for part in parts:
+        dates.add("%d-%d-%d" % tuple(part))
+    return dates
 
 
-def _get_authors(authors):
-    for author in authors:
-        name = (
-            author.get("name")
-            or " ".join((author.get("given", ""), author.get("family", ""))).strip()
-        )
-        if slugify(name) is not None:
-            data = {
-                "name": name,
-                "first_name": author.get("given"),
-                "last_name": author.get("family"),
-                "institutions": author["affiliation"],
-            }
-
-            if "ORCID" in author:
-                data["identifier_hints"] = ["orcid", author["ORCID"]]
-            yield data
+def parse_ids(data: list[dict[str, str]]) -> Generator[tuple[str, str], None, None]:
+    for item in data:
+        yield IDS.get(item["id-type"], item["id-type"]), item["id"]
 
 
-def wrangle(original_data: dict) -> dict:
-    data = {}
-    data["journal"] = {"name": original_data["publisher"]}
-    data["title"] = original_data["title"][0] or DEFAULT_TITLE
-    data["published_at"] = dateparse(original_data["created"]["date-time"]).date()
-    data["identifiers"] = {"doi": original_data["DOI"]}
-    data["authors"] = [
-        a for a in _get_authors(ensure_list(original_data.get("author")))
-    ]
-    return clean_dict(data)
+def make_institution(data: dict[str, str]) -> dict[str, set]:
+    institution = parse_dict(data, INSTITUTION)
+    for key, value in parse_ids(data.get("id", [])):
+        institution[key].add(value)
+    return institution
 
 
-def _read(fpath: str) -> Iterator[dict]:
+def wrangle(data: dict[str, Any]) -> ParsedResult | None:
+    result = defaultdict(list)
+
+    if data["type"] == "journal":
+        result["journal"] = parse_dict(data, JOURNAL_TYPE)
+        return ParsedResult(**result)
+
+    if data["type"] == "journal-article" or data["type"] == "component":
+        result["journal"] = parse_dict(data, JOURNAL)
+        result["article"] = parse_dict(data, ARTICLE)
+        result["article"]["summary"] = [
+            html2text(i) for i in clean_list(result["article"]["summary"])
+        ]
+        for author_data in data.get("author", []):
+            author = parse_dict(author_data, AUTHOR)
+            for affiliation in author_data.get("affiliation", []):
+                institution = make_institution(affiliation)
+                institution["xref"] = institution["name"]
+                author["xref_affiliation"] = institution["xref"]
+                result["institutions"].append(institution)
+            result["authors"].append(author)
+
+        for funder in data.get("funder", []):
+            funder = parse_dict(funder, INSTITUTION)
+            funder["xref"] = funder["name"]
+            result["article"]["xref_funding"].update(funder["xref"])
+            result["institutions"].append(funder)
+
+        return ParsedResult(**result)
+
+    if data["type"] == "grant":
+        grant = parse_dict(data, GRANT)
+        grant["xref"] = "grant"
+        investigators = []
+        for project in data["project"]:
+            grant["startDate"] = parse_date(project.get("award-start", {}))
+            grant["endData"] = parse_date(project.get("award-end", {}))
+            investigators.extend(project.get("investigator", []))
+            investigators.extend(project.get("lead-investigator", []))
+        for author_data in investigators:
+            author = parse_dict(author_data, AUTHOR)
+            author["xref_grant_investigator"] = grant["xref"]
+            for affiliation in author_data.get("affiliation", []):
+                institution = make_institution(affiliation)
+                institution["xref"] = institution["name"]
+                author["xref_affiliation"] = institution["xref"]
+                result["institutions"].append(institution)
+            result["authors"].append(author)
+        result["grants"].append(grant)
+
+        return ParsedResult(**result)
+
+
+def parse(fpath: str) -> Generator[ParsedResult, None, None]:
     content = load_or_extract(fpath)
-    data = json.loads(content)
+    data = orjson.loads(content)
     for item in ensure_list(data.get("items")):
-        if item.get("type") in TYPES:
-            yield item
-
-
-def parse(fpath: str) -> Iterator[dict]:
-    for data in _read(fpath):
-        yield wrangle(data)
+        result = wrangle(item)
+        if result:
+            yield result

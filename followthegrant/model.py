@@ -1,55 +1,81 @@
 """
 ftg -> ftm model
+
+model classes behave like the ftm model, aka. all props are multi values and a
+`set` type for easy manipulation
+
+the logic here is mostly used for deterministic id generation and automatic
+initialization of props based on adjacent things
 """
 from __future__ import annotations
 
-from functools import lru_cache
-from typing import Iterator
+from collections import defaultdict
+from functools import cached_property
+from typing import Any, Generator
 
-import countrytagger
 import shortuuid
-from banal import ensure_list
-from fingerprints import generate as fp
-from followthemoney import model
-from followthemoney.proxy import E
+from banal import clean_dict
+from followthemoney.helpers import remove_prefix_dates
 from followthemoney.util import make_entity_id
-from normality import collapse_spaces, slugify
-from pydantic import BaseModel
+from normality import slugify
+from pydantic import BaseModel as PydanticBaseModel
+from zavod.util import join_slug
 
-from .coi import flag_coi, split_coi
-from .ner import analyze
-from .util import cached_property
-
-
-def get_first_props(*props: list[str] | None) -> Iterator[str]:
-    for prop in props:
-        if prop:
-            for value in prop:
-                if fp(value):
-                    yield value
-                    break
-
-
-@lru_cache
-def guess_country(value: str) -> str | None:
-    countries = sorted(countrytagger.tag_text_countries(value), key=lambda x: x[1])
-    if countries:
-        # get the last iso code as this is the highest scored match
-        return countries[-1][2]
+from .coi import split_coi
+from .exceptions import ModelException
+from .ftm import (
+    CE,
+    Properties,
+    SKDict,
+    Values,
+    get_first,
+    get_firsts,
+    make_proxy,
+    make_safe_id,
+    pick_name,
+    schema,
+    wrangle_person_names,
+)
+from .identifiers import IDENTIFIERS, clean_ident, pick_best
+from .util import clean_date, clean_list, clean_value, ensure_set, fp
 
 
-class Base:
-    schema = None
-    identifier_keys: tuple[str] = ()
+class BaseModel(PydanticBaseModel):
+    _schema = "Thing"
+    _id_prefix = None
 
-    def __init__(self, **data):
+    xref: Values = set()  # internal references for relations
+    ident: Values = set()  # allow arbitrary identifiers for `make_id`
+    _adjacents: ParsedResult | None = None
+    _extra_data: dict[Any, Any] | None = {}
+
+    class Config:
+        keep_untouched = (cached_property,)
+        underscore_attrs_are_private = True
+
+    def __init__(
+        self,
+        adjacents: ParsedResult | None = None,
+        extra_data: dict[Any, Any] | None = {},
+        **data: SKDict,
+    ):
         for k, v in data.items():
-            data[k] = list(set([collapse_spaces(i) for i in ensure_list(v)]))
+            values = ensure_set([clean_value(i) for i in clean_list(v)])
+            if k in IDENTIFIERS:
+                data[k] = clean_ident(values, k)
+            else:
+                data[k] = values
         super().__init__(**data)
+        self._adjacents = adjacents or ParsedResult()
+        self._extra_data = extra_data
 
     @cached_property
-    def identifiers(self) -> dict[str | None]:
-        return {k: getattr(self, k, None) for k in self.identifier_keys}
+    def proxy(self) -> CE:
+        return self.get_proxy()
+
+    @cached_property
+    def identifiers(self) -> dict[str, set[str]]:
+        return clean_dict({k: getattr(self, k, None) for k in IDENTIFIERS})
 
     @cached_property
     def key_prefix(self):
@@ -57,336 +83,285 @@ class Base:
 
     @cached_property
     def id(self) -> str:
-        for key, values in self.identifiers.items():
-            for value in values:
-                if value is not None and fp(value):
-                    return f'{key}-{value.replace(" ", "-")}'
-        id_parts = self.get_id_parts()
-        if not id_parts:
-            id_parts = [shortuuid.uuid()]
-        return f"{self.key_prefix}-{make_entity_id(*self.get_id_parts(), key_prefix=self.key_prefix)}"
-
-    def get_id_parts(self) -> list[str] | None:
-        if self.ident:
-            return self.ident
-        if self.name:
-            for name in self.name:
-                if fp(name):
-                    return [fp(name)]
-
-    def get_proxy(self) -> E:
-        return model.get_proxy(
-            {"id": self.id, "schema": self.schema, "properties": self.dict()}
-        )
-
-    def get_proxies(self) -> Iterator[E]:
-        yield self.get_proxy()
+        return self.make_id()
 
     @cached_property
-    def proxy(self):
-        return self.get_proxy()
+    def properties(self):
+        return self.get_properties()
 
-    @cached_property
-    def article_meta(self):
-        if hasattr(self, "article"):
-            return {
-                "publishedAt": self.article.proxy.get("publishedAt"),
-                "publisher": self.article.proxy.get("publisher"),
-                "date": self.article.proxy.get("publishedAt"),
-            }
-
-    @classmethod
-    def make_id(cls, **data):
-        entity = cls(**data)
-        return entity.id
-
-
-class Identifiers(BaseModel):
-    ident: list[str] | None = None  # allow aribtrary identifiers
-    doi: list[str] | None = None
-    rorId: list[str] | None = None
-    gridId: list[str] | None = None
-    orcId: list[str] | None = None
-    openaireId: list[str] | None = None
-    s2Id: list[str] | None = None
-    issn: list[str] | None = None
-
-
-class Journal(Base, Identifiers):
-    schema = "LegalEntity"
-    identifier_keys = ("issn",)
-
-    name: list[str]
-    website: list[str] | None = None
-    issn: list[str] | None = None
-    legalForm = ["journal"]
-
-
-class Institution(Base, Identifiers):
-    schema = "Organization"
-    identifier_keys = ("rorId", "gridId")
-
-    name: list[str] | None = None
-    country: list[str] | None = None
-    description: list[str] | None = None  # department
-
-    def __init__(self, **data):
-        if "country" not in data:
-            value = " ".join(
-                sorted(
-                    list(set([fp(n) for n in ensure_list(data.get("name"))]))
-                )  # normalize for lru
-            )
-            data["country"] = guess_country(value)
-        super().__init__(**data)
-
-    def get_id_parts(self) -> list[str] | None:
-        parts = get_first_props(self.country, self.name)
-        if parts:
-            return [fp(p) for p in parts]
-
-
-class Author(Base, Identifiers):
-    schema = "Person"
-    identifier_keys = ("orcid", "openaireid", "s2id")
-
-    article: Article | None
-    name: list[str] | None
-    firstName: list[str] | None
-    lastName: list[str] | None
-    middleNames: list[str] | None
-    affiliations: list[Institution] | None
-    country: list[str] | None
-
-    def __init__(self, **data):
-        name = ensure_list(data.get("name"))
-        if not name:
-            first = (ensure_list(data.get("firstName")),)
-            middle = (ensure_list(data.get("middleNames")),)
-            last = (ensure_list(data.get("lastName")),)
-            name = list(get_first_props(first, middle, last))
-            if name:
-                data["name"] = [" ".join(name)]
-        country = ensure_list(data.get("country"))
-        if not country:
-            data["country"] = []
-            for institution in ensure_list(data.get("institutions")):
-                for country in institution.country:
-                    data["country"].append(country)
-        super().__init__(data)
-
-    def get_id_parts(self) -> list[str]:
-        """
-        author deduplication: if no identifier (orcid), use fingerprinted name
-        and first institution (sorted by id), or if no institution using random
-        id
-        """
-        if self.institutions:
-            institution = sorted([i for i in self.institutions], key=lambda x: x.id)[0]
-            return [self.fingerprint, institution.id]
-        return [self.fingerprint, shortuuid.uuid()]
+    def get_properties(self) -> Properties:
+        # return cleaned properties as sets
+        return {
+            k: ensure_set(v)
+            for k, v in clean_dict(self.dict()).items()
+            if k in self.__fields__ and ensure_set(v)
+        }
 
     @cached_property
     def fingerprint(self):
         if self.name:
-            return " ".join([fp(n) for n in self.name])
+            return fp(pick_name(self.name))
         return shortuuid.uuid()
 
-    @cached_property
-    def names_key(self) -> tuple[str, str]:
-        if self.name:
-            *names, surname = self.name[0]
-            return " ".join(names), surname
+    def make_id(self) -> str:
+        """
+        generate id from identifiers or `get_id_parts` or shortuuid
+        """
+        key, value = pick_best(self.identifiers)
+        if value:
+            return join_slug(self._id_prefix or key, value)
 
-    def get_proxies(self):
-        yield self.proxy
-        for affiliation in self.affiliations:
-            yield affiliation.get_proxy()
-            yield model.get_proxy(
-                {
-                    "id": f"{self.id}-membership-{affiliation.id}",
-                    "schema": "Membership",
-                    "properties": {
-                        **self.article_meta,
-                        **{
-                            "member": self.proxy,
-                            "organization": affiliation.proxy,
-                            "role": "affiliation",
-                        },
-                    },
-                }
-            )
+        id_ = join_slug(
+            self.key_prefix,
+            make_entity_id(*self.get_id_parts(), key_prefix=self.key_prefix),
+        )
+        if id_ is None:
+            return f"{self.key_prefix}-{shortuuid.uuid()}"
+        return id_
 
+    def get_id_parts(self) -> Values:
+        """
+        if nothing else works, try to get first arbitrary ident or picked name as fingerprint
+        """
+        for ident in clean_list(self.ident):
+            return [ident]
+        return [self.fingerprint]
 
-class Statement(Base):
-    schema = "PlainText"
-
-    authors: list[Author] | None = None  # input data
-
-    role: str | None = None
-    article: Article | None = None
-    bodyText: list[str] | None = None
-    author: list[str] | None = None  # ftm prop
-    publishedAt: list[str] | None = None
-
-    def get_proxies(self):
-        yield self.get_proxy()
-        data = self.reference_data
-        yield model.get_proxy(
+    def get_proxy(self) -> CE:
+        proxy = make_proxy(
             {
                 "id": self.id,
-                "schema": "Documentation",
-                "properties": {**data, **{"document": self.article}},
-            }
-        )
-        for author in self.authors:
-            yield model.get_proxy(
-                {
-                    "id": f"{author.id}-{self.key_prefix}-{self.id}",
-                    "schema": "Documentation",
-                    "properties": {
-                        **data,
-                        **{
-                            "entity": author.id,
-                            "document": self.id,
-                            "role": f"individual {self.role}",
-                        },
-                    },
-                }
-            )
-
-    @property
-    def reference_data(self):
-        return {
-            **self.article_meta,
-            **{
-                "document": self.article,
-                "entity": self.id,
-                "role": self.role,
-                "summary": self.bodyText,
-                "indexText": self.indexText,
+                "schema": self._schema,
+                "properties": self.get_properties(),
             },
-        }
+        )
+        proxy = remove_prefix_dates(proxy)
+        return proxy
 
-    def get_id_parts(self) -> list[str]:
-        if self.article:
-            return [self.article.id]
-
-
-class CoiStatement(Statement):
-    role = "conflict of interest statement"
-    indexText: list[str] | None = None
-
-    @cached_property
-    def flag(self):
-        return flag_coi(" ".join(ensure_list(self.bodyText)))
+    def merge(self, other: BaseModel) -> BaseModel:
+        if self.__class__ != other.__class__:
+            raise ModelException(f"Cannot merge {self} with {other}!")
+        for key, update_value in other.properties.items():
+            old_value = ensure_set(getattr(self, key))
+            setattr(self, key, old_value | update_value)
+        return self
 
 
-class AckStatement(Statement):
-    role = "acknowledgement statement"
+class Journal(BaseModel, schema.Thing):
+    def __init__(self, **data):
+        data["description"] = data.get("description", "journal")
+        data["publisher"] = clean_list(data.get("name"), data.get("publisher"))
+        if "name" not in data:
+            data["name"] = data.get("publisher")
+        super().__init__(**data)
 
 
-class FundingStatement(Statement):
-    role = "funding statement statement"
+class Institution(BaseModel, schema.Organization):
+    _schema = "Organization"
+
+    xref_grant_funder: Values = set()
+
+    def get_id_parts(self) -> Values:
+        return clean_list(get_first(self.country), pick_name(self.name))
 
 
-class Article(Base, Identifiers):
-    schema = "Article"
-    identifier_keys = ("doi", "pmc", "pmid", "magId", "arxivId", "openaireId", "s2id")
+class Affiliation(BaseModel, schema.Membership):
+    _schema = "Membership"
 
-    journal: Journal | None = None
-    coi_statement: CoiStatement | None = None
-    ack_statement: AckStatement | None = None
-    funding_statement: FundingStatement | None = None
-    authors: list[Author] | None = None  # input prop for author data
+    def make_id(self) -> str:
+        ident = make_safe_id(self.member, self.organization)
+        return f"affiliation-{ident}"
 
-    title: list[str] | None = None
-    publishedAt: list[str] | None = None
-    publisher: list[str] | None = None
-    summary: list[str] | None = None
-    author: list[str] | None = None  # ftm prop for authors
-    keywords: list[str] | None = None
-    sourceUrl: list[str] | None = None
+
+class Employment(BaseModel, schema.Employment):
+    _schema = "Employment"
+
+    def make_id(self) -> str:
+        ident = make_safe_id(self.employee, self.employer)
+        return f"employment-{ident}"
+
+
+class Author(BaseModel, schema.Person):
+    _schema = "Person"
+
+    xref_affiliation: Values = set()
+    xref_employment: Values = set()
+    xref_grant_recipient: Values = set()
+    xref_grant_investigator: Values = set()
 
     def __init__(self, **data):
-        if "author" not in data and "authors" in data:
-            data["author"] = [e.proxy.caption for e in data["authors"]]
+        data = wrangle_person_names(data)
         super().__init__(**data)
 
     @cached_property
-    def individual_coi_statements(self) -> list[CoiStatement]:
-        if self.coi_statement and self.authors:
-            authors = {a.names_key: a for a in self.authors}
-            statements = split_coi(self.coi_statement, authors.keys())
-            return [
-                CoiStatement(
-                    article=self,
-                    bodyText=" ".join(sentences),
+    def names_key(self) -> tuple[str, str]:
+        """
+        return (first, last)
+        """
+        if self.name:
+            *names, surname = pick_name(self.name).split()
+            return " ".join(names), surname
+
+
+class Documentation(BaseModel, schema.Documentation):
+    _schema = "Documentation"
+
+    def make_id(self) -> str:
+        role, document, entity = get_firsts(self.role, self.document, self.entity)
+        ident = make_safe_id(document, entity)
+        return join_slug(role, ident)
+
+
+class Statement(BaseModel, schema.PlainText):
+    _schema = "PlainText"
+
+    # for splitted statement
+    _author: Author | None = None
+    _is_splitted: bool | None = False
+
+    def __init__(
+        self,
+        adjacents: ParsedResult | None = None,
+        author: Author | None = None,
+        **data,
+    ):
+        article = adjacents.article
+        super().__init__(
+            adjacents,
+            date=article.publishedAt,
+            publisher=article.publisher,
+            publisherUrl=article.publisherUrl,
+            sourceUrl=article.sourceUrl,
+            parent=article.id,
+            author=author.proxy.caption if author is not None else article.author,
+            **data,
+        )
+        self._author = author
+        self._is_splitted = author is not None
+
+    @cached_property
+    def splitted_statements(self) -> list[Statement]:
+        return [s for s in self.get_splitted_statements()]
+
+    @cached_property
+    def label(self) -> str:
+        return get_first(self.title)
+
+    @cached_property
+    def statement(self) -> str:
+        # pick the longest one
+        for stmt in sorted(self.bodyText, key=len):
+            return stmt
+
+    def make_id(self) -> str:
+        return join_slug(self.label, self._adjacents.article.id)
+
+    def get_splitted_statements(self) -> Generator[Statement, None, None]:
+        article = self._adjacents.article
+        if not self._is_splitted and article._adjacents.authors:
+            # import ipdb
+
+            # ipdb.set_trace()
+            authors = {
+                a.names_key: a for a in article._adjacents.authors if a.names_key
+            }
+            statements = split_coi(self.statement, authors.keys())
+            for key, sentences in statements.items():
+                yield self.__class__(
+                    adjacents=self._adjacents,
                     author=authors[key],
+                    bodyText=" ".join(sentences),
+                    title=self.label,
                 )
-                for key, sentences in statements.items()
-            ]
 
-    @cached_property
-    def individual_ack_statements(self) -> list[AckStatement]:
-        if self.ack_statement and self.authors:
-            authors = {a.names_key: a for a in self.authors}
-            statements = split_coi(self.ack_statement, authors.keys())
-            return [
-                AckStatement(
-                    article=self, author=authors[key], bodyText=" ".join(sentences)
-                )
-                for key, sentences in statements.items()
-            ]
-
-    @cached_property
-    def individual_funding_statements(self) -> list[FundingStatement]:
-        if self.funding_statement and self.authors:
-            authors = {a.names_key: a for a in self.authors}
-            statements = split_coi(self.funding_statement, authors.keys())
-            return [
-                FundingStatement(
-                    article=self, author=authors[key], bodyText=" ".join(sentences)
-                )
-                for key, sentences in statements.items()
-            ]
-
-    def get_id_parts(self) -> list[str]:
-        parts = list(get_first_props(self.title))
-        if self.journal:
-            parts.append(self.journal.id)
-        return [parts]
-
-    def get_proxies(self) -> Iterator[E]:
-        yield self.proxy
-        if self.coi_statement:
-            yield from self.coi_statement.get_proxies()
-        if self.ack_statement:
-            yield from self.ack_statement.get_proxies()
-        if self.funding_statement:
-            yield from self.funding_statement.get_proxies()
-        authorship = {
-            "date": self.date,
-            "publishedAt": self.date,
-            "publisher": self.publisher,
-            "role": "author",
-        }
-        for author in self.authors:
-            yield model.make_entity(
-                {
-                    "id": f"{self.id}-authorship-{author.id}",
-                    "schema": "Documentation",
-                    "properties": {
-                        **authorship,
-                        **{"entity": author.id, "document": self.id},
-                    },
-                }
+    def get_documentations(self) -> Generator[Documentation, None, None]:
+        article = self._adjacents.article
+        metadata = article.dict()
+        metadata.pop("summary", None)
+        metadata.pop("description", None)
+        yield Documentation(
+            document=article.id,
+            entity=self.id,
+            role=self.label,
+            summary=self.bodyText,
+            **metadata,
+        )
+        for statement in self.get_splitted_statements():
+            yield Documentation(
+                document=article.id,
+                entity=statement._author.id,
+                role=f"INDIVIDUAL_{self.label}",
+                summary=statement.bodyText,
+                **metadata,
             )
 
 
-def make_entities(
-    data: Journal | Institution | Author | Article | Statement,
-) -> Iterator[E]:
-    for entity in data.get_proxies():
-        for e in analyze(entity):
-            yield e
+class Article(BaseModel, schema.Article):
+    _schema = "Article"
+
+    coi_statement: Values = set()
+    ack_statement: Values = set()
+    funding_statement: Values = set()
+    xref_funding: Values = set()
+
+    def __init__(
+        self,
+        adjacents: ParsedResult,
+        **data,
+    ):
+        data = defaultdict(set, data)
+        authors = clean_list(adjacents.authors)
+        journal = adjacents.journal
+        if journal:
+            data["publisher"].update(journal.name)
+            data["publisherUrl"].update(journal.publisherUrl)
+        if "author" not in data:
+            data["author"] = ensure_set([a.proxy.caption for a in authors])
+        super().__init__(adjacents, **data)
+        # FIXME erf
+        dates = self.date | self.publishedAt
+        dates = set([clean_date(d) for d in dates])
+        self.date = dates
+        self.publishedAt = dates
+
+    def get_id_parts(self) -> list[str]:
+        """
+        invoked when no identifier given, try to generate a unique id that
+        looks good and still can help deduping (unless we have to use uuid)
+        """
+        parts = []
+        if self._adjacents.journal:
+            parts.append(self._adjacents.journal.id)
+        fingerprint = fp(pick_name(self.title))
+        if fingerprint:
+            parts.append(fingerprint)
+        if len(parts) < 2:
+            parts.append(shortuuid.uuid())
+        return parts
+
+
+class ProjectParticipant(BaseModel, schema.ProjectParticipant):
+    _schema = "ProjectParticipant"
+
+    def make_id(self) -> str:
+        ident = make_safe_id(self.project, self.participant)
+        return f"{self.key_prefix}-{ident}"
+
+
+class Grant(BaseModel, schema.Project):
+    _schema = "Project"
+    _id_prefix = "grant"
+
+
+class ParsedResult(PydanticBaseModel):
+    """
+    typed data from parser result
+    """
+
+    journal: SKDict | Journal | None = None
+    article: SKDict | Article | None = None
+    authors: list[SKDict | Author] | None = []
+    institutions: list[SKDict | Institution] | None = []
+    grants: list[SKDict | Grant] | None = []
+    affiliations: list[SKDict | Affiliation] | None = []
+    employments: list[SKDict | Employment] | None = []

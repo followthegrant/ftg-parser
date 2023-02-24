@@ -1,18 +1,10 @@
 from .base import BaseBatchWorker, BaseWorker
 from .tasks import QUEUES  # noqa
-from .tasks import (
-    AUTHOR_TRIPLES,
-    DELETE_SOURCE,
-    MAP_FTM,
-    PARSE,
-    STORE_JSON,
-    WRITE_AUTHOR_TRIPLES,
-    WRITE_FTM,
-)
+from .tasks import AUTHOR_TRIPLES, DELETE_SOURCE, PARSE, WRITE_AUTHOR_TRIPLES, WRITE_FTM
 
 
 class Worker(BaseWorker):
-    queues = [PARSE, MAP_FTM, DELETE_SOURCE, STORE_JSON, AUTHOR_TRIPLES]
+    queues = [PARSE, DELETE_SOURCE, AUTHOR_TRIPLES]
 
 
 class BatchWorker(BaseBatchWorker):

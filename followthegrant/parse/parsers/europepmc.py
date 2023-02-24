@@ -13,20 +13,23 @@ usage (either use gzip files or extracted ones):
 
 
 import gc
-import logging
 from io import BytesIO
-from typing import Iterator
+from pathlib import Path
+from typing import Generator
 
 from lxml import etree
 
 from ...exceptions import LoaderException, ParserException
-from ...util import load_or_extract
+from ...logging import get_logger
+from ...transform import ParsedResult
+from ..util import load_or_extract
 from .jats import parse as parse_jats
 
-log = logging.getLogger(__name__)
+log = get_logger(__name__)
 
 
-def parse(fpath: str) -> Iterator[dict]:
+def parse(fpath: Path) -> Generator[ParsedResult, None, None]:
+    ix = 0
     try:
         content = load_or_extract(fpath)
         articles = etree.iterparse(
@@ -42,8 +45,13 @@ def parse(fpath: str) -> Iterator[dict]:
             el.clear()
             del el
             gc.collect()
+            ix += 1
+            if ix and ix % 100 == 0:
+                log.info("Parsing article %d ..." % ix)
         del articles
         gc.collect()
     except Exception as e:
         log.error(f"Cannot parse XML at `{fpath}`: `{e}`")
         raise ParserException(e)
+    if ix:
+        log.info("Extracted %d articles." % ix, fpath=fpath.name)

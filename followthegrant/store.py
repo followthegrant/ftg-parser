@@ -1,39 +1,23 @@
-from functools import lru_cache
+from functools import cache
 from typing import Iterable, Iterator, Optional
 
 from ftm_columnstore import get_dataset as _get_dataset
 from ftm_columnstore.driver import ClickhouseDriver, get_driver, table_exists
 from ftm_columnstore.query import Query
+from ftm_columnstore.store import Store as FtmCStore
 
 from .db import insert_many
 
-
-AUTHOR_TRIPLES = """
+TRIPLES = """
 CREATE TABLE {table}
 (
-    `fingerprint_id` FixedString(40),
-    `author_id` FixedString(40),
-    `value_id` FixedString(40),
-    `prop_type` LowCardinality(String),
-    `dataset` LowCardinality(String),
-    PROJECTION {table}_px
-    (
-        SELECT *
-        ORDER BY
-            fingerprint_id,
-            author_id,
-            dataset
-    ),
-    PROJECTION {table}_tpx
-    (
-        SELECT *
-        ORDER BY
-            prop_type
-    )
+    `entity_id` String,
+    `prop` LowCardinality(String),
+    `value` String,
+    PROJECTION {table}_tpx (SELECT * ORDER BY prop)
 )
 ENGINE = ReplacingMergeTree
-PRIMARY KEY (dataset, fingerprint_id, author_id)
-ORDER BY (dataset, fingerprint_id, author_id, value_id)
+PRIMARY KEY (entity_id, prop, value)
 """
 
 
@@ -43,11 +27,11 @@ class Store:
     ):
         self.driver = driver or get_driver()
         self.prefix = prefix
-        self.author_triples_table = f"{prefix}_author_triples"
+        self.triples_table = f"{prefix}_triples"
 
     def init(self, recreate: Optional[bool] = False):
         self.driver.init(exists_ok=True, recreate=recreate)
-        self.create_table(self.author_triples_table, AUTHOR_TRIPLES, recreate)
+        self.create_table(self.triples_table, TRIPLES, recreate)
 
     def create_table(self, table: str, query: str, recreate: Optional[bool] = False):
         query = query.format(table=table)
@@ -63,18 +47,17 @@ class Store:
         self.driver.execute(f"DROP TABLE IF EXISTS {table}")
 
     def get_dataset(self, dataset: str):
-        return _get_dataset(dataset, driver=self.driver)
+        ds = _get_dataset(dataset, driver=self.driver)
+        return ds.store
 
-    def write_author_triples(self, rows: Iterator[Iterable[str]]) -> int:
+    def write_triples(self, rows: Iterator[Iterable[str]]) -> int:
         columns = ["fingerprint_id", "author_id", "value_id", "prop_type", "dataset"]
-        insert_many(self.author_triples_table, columns, rows, driver=self.driver)
+        insert_many(self.triples_table, columns, rows, driver=self.driver)
 
-    def iterate_author_triple_packs(
-        self, dataset: Optional[str] = None
-    ) -> Iterator[str]:
-        """yield triples for deduping by fingerprint chunks"""
+    def iterate_triple_packs(self, dataset: Optional[str] = None) -> Iterator[str]:
+        """yield triples for deduping by phonetic chunks"""
         q = (
-            Query("ftg_author_triples")
+            Query(self.triples_table)
             .select(
                 "fingerprint_id, count(*) as count, groupArray(author_id), groupArray(value_id)"
             )
@@ -90,6 +73,12 @@ class Store:
             yield triples
 
 
-@lru_cache(maxsize=128)
+@cache
 def get_store(driver: Optional[ClickhouseDriver] = None) -> Store:
     return Store(driver=driver)
+
+
+@cache
+def get_dataset(name: str, driver: Optional[ClickhouseDriver] = None) -> FtmCStore:
+    store = get_store(driver)
+    return store.get_dataset(name)

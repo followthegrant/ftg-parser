@@ -1,24 +1,20 @@
 import csv
-import glob
 import json
-import os
 import sys
 from datetime import datetime
 
 import click
-from followthemoney.cli.util import MAX_LINE, write_object
+from followthemoney.cli.util import MAX_LINE
 
-from . import parse as parsers
 from . import settings
 from .coi import flag_coi
 from .db import insert_many
-from .dedupe import authors as dedupe
-from .ftm import make_entities
+from .dedupe import dedupe_triples, explode_triples
 from .logging import configure_logging, get_logger
-from .schema import ArticleFullOutput
+from .parse import parse
 from .store import get_store
 from .util import get_path
-from .worker import DELETE_SOURCE, PARSE, QUEUES, STORE_JSON, BatchWorker, Worker
+from .worker import DELETE_SOURCE, PARSE, QUEUES, BatchWorker, Worker
 
 log = get_logger(__name__)
 
@@ -47,13 +43,9 @@ def cli(log_level):
 @click.option("-f", "--file-path", type=click.Path(exists=True), default=None)
 @click.option("-i", "--infile", type=click.File("r"), default="-")
 @click.option("-o", "--outfile", type=click.File("w"), default="-")
-@click.option(
-    "--store-json",
-    help="Store parsed json into given directory (1 file per article)",
-    type=click.Path(exists=True),
-)
 @click.option("-d", "--dataset", help="Append source (dataset) column with this value")
-def parse(parser, file_path, infile, outfile, store_json=None, dataset=None):
+@click.option("--ignore-errors/--raise-errors", default=True, show_default=True)
+def cli_parse(parser, file_path, infile, outfile, dataset, ignore_errors):
     """
     parse source xml/html files into json representation with metadata, authors,
     institutions and conflict of interest statements
@@ -65,85 +57,58 @@ def parse(parser, file_path, infile, outfile, store_json=None, dataset=None):
         openaire
         cord
     """
-    parser = getattr(parsers, parser)
     if file_path is not None:
         paths = [file_path]
     else:
         paths = readlines(infile)
-    for fpath in paths:
+    ix = 0
+    for ix, fpath in enumerate(paths):
         try:
-            data = parser(fpath)
+            for proxy in parse(fpath, parser, dataset):
+                res = json.dumps(
+                    proxy.to_dict(), default=lambda x: str(x), sort_keys=True
+                )
+                outfile.write(res + "\n")
         except Exception as e:
-            log.error(f"Cannot load `{fpath}`: '{e}'")
-            data = None
-        if data is not None:
-            for d in data:
-                try:
-                    res = json.dumps(d.dict(), default=lambda x: str(x), sort_keys=True)
-                    if store_json is not None:
-                        fp = os.path.join(store_json, d.id + ".json")
-                        with open(fp, "w") as f:
-                            f.write(res)
-                    outfile.write(res + "\n")
-                except Exception as e:
-                    log.error(f"Cannot parse `{fpath}`: '{e}'")
+            log.error(e, fpath=fpath)
+            if not ignore_errors:
+                log.error(exception=e, fpath=fpath)
+                raise click.ClickException(str(e))
+        if ix and ix % 1000 == 0:
+            log.info("Parsing file %d ..." % ix, fpath=str(fpath))
+    log.info("Parsed %d files." % (ix + 1))
 
 
-@cli.command("map-ftm")
+@cli.command("explode-triples")
 @click.option("-i", "--infile", type=click.File("r"), default="-")
 @click.option("-o", "--outfile", type=click.File("w"), default="-")
-def map_ftm(infile, outfile):
+def _explode_triples(infile, outfile):
     """
-    parse input json into ftm entities
-    """
-    for data in readlines(infile):
-        data = json.loads(data)
-        data = ArticleFullOutput(**data)
-        for entity in make_entities(data):
-            write_object(outfile, entity)
+    generate triples useful for deduping for institutions and authors, using
+    interval schemata and identifiers:
 
-
-@cli.command("author-triples")
-@click.option("-i", "--infile", type=click.File("r"), default="-")
-@click.option("-o", "--outfile", type=click.File("w"), default="-")
-@click.option("-d", "--dataset", help="Append source (dataset) column with this value")
-def author_triplets(infile, outfile, dataset=None):
-    """
-    generate author triples (+ property type) for institutions and co-authors:
-
-    fingerprint,author_id,coauthor_id,"coauthor"
-    fingerprint,author_id,institution_id,"affiliation"
-
-    optionally append `dataset` value to each row:
-
-    fingerprint,author_id,institution_id,prop_type,dataset
+    entity_id,schema,other_id
+    entity_id,identifier,value
     ...
     """
     writer = csv.writer(outfile)
     for data in readlines(infile):
         data = json.loads(data)
-        data = ArticleFullOutput(**data)
-        for triple in dedupe.explode_triples(data):
-            row = triple
-            if dataset is not None:
-                row += dataset
-            writer.writerow(row)
+        for triple in explode_triples(data):
+            writer.writerow(triple)
 
 
 @cli.command("dedupe-triples")
 @click.option("-i", "--infile", type=click.File("r"), default="-")
 @click.option("-o", "--outfile", type=click.File("w"), default="-")
-@click.option("-d", "--dataset", help="Append source (dataset) column with this value")
-def dedupe_triples(infile, outfile, dataset=None):
+def _dedupe_triples(infile, outfile):
     """
     dedupe data based on triples,
     returns matching id pairs
     """
     triples = csv.reader(infile)
-    for pair in dedupe.dedupe_triples(triples):
+    for pair in dedupe_triples(triples):
         out = ",".join(pair)
-        if dataset is not None:
-            out += f",{dataset}"
         outfile.write(out + "\n")
 
 
@@ -159,7 +124,7 @@ def flag_cois(infile, outfile):
 
     example parallel use (omit csv header via tail):
 
-    cat cois.csv | tail -n +2 | parallel --pipe ftgftm flag_cois > cois.flagged.csv
+    cat cois.csv | tail -n +2 | parallel --pipe ftg flag_cois > cois.flagged.csv
     """
     reader = csv.reader(infile)
     writer = csv.writer(outfile)
@@ -208,30 +173,30 @@ def db_insert(infile, table, columns):
     insert_many(table, columns.split(","), csv.reader(infile))
 
 
-@db.command("dedupe-authors")
-@click.option("-o", "--outfile", type=click.File("w"), default="-")
-@click.option("-d", "--dataset", help="Filter triples for this dataset")
-def dedupe_authors(outfile, dataset=None):
-    """
-    dedupe authors via triples and output `canonical_id,author_id` pairs
-    to `outfile`
-    """
-    writer = csv.writer(outfile)
-    for pair in dedupe.dedupe_from_db(dataset):
-        pair += (dataset,)
-        writer.writerow(pair)
+# @db.command("dedupe-authors")
+# @click.option("-o", "--outfile", type=click.File("w"), default="-")
+# @click.option("-d", "--dataset", help="Filter triples for this dataset")
+# def dedupe_authors(outfile, dataset=None):
+#     """
+#     dedupe authors via triples and output `canonical_id,author_id` pairs
+#     to `outfile`
+#     """
+#     writer = csv.writer(outfile)
+#     for pair in dedupe.dedupe_from_db(dataset):
+#         pair += (dataset,)
+#         writer.writerow(pair)
 
 
-@db.command("update-canonical")
-@click.option("-o", "--outfile", type=click.File("w"), default="-")
-@click.option("-d", "--dataset", help="Restrict to dataset, otherwise for all datasets")
-def update_canonical(outfile, dataset=None):
-    """
-    update canonical ids based on author triples for `dataset` or for all datasets
-    and write result as csv to `outfile`
-    """
-    df = dedupe.update_canonical(dataset)
-    df.to_csv(outfile, index=False)
+# @db.command("update-canonical")
+# @click.option("-o", "--outfile", type=click.File("w"), default="-")
+# @click.option("-d", "--dataset", help="Restrict to dataset, otherwise for all datasets")
+# def update_canonical(outfile, dataset=None):
+#     """
+#     update canonical ids based on author triples for `dataset` or for all datasets
+#     and write result as csv to `outfile`
+#     """
+#     df = dedupe.update_canonical(dataset)
+#     df.to_csv(outfile, index=False)
 
 
 @cli.group(invoke_without_command=True)
@@ -254,7 +219,7 @@ def worker(ctx, queue):
     show_default=True,
 )
 @click.option(
-    "--batch_size", type=int, help="Batch size", default=1_000, show_default=True
+    "--batch_size", type=int, help="Batch size", default=10_000, show_default=True
 )
 def batch_worker(queue, heartbeat, batch_size):
     worker = BatchWorker(queues=list(queue), heartbeat=heartbeat, batch_size=batch_size)
@@ -272,28 +237,18 @@ def batch_worker(queue, heartbeat, batch_size):
     show_default=True,
 )
 @click.option("--job-id", help="Job ID, will be auto generated if empty")
-@click.option(
-    "--store-json",
-    help="Store parsed json into given directory (1 file per article)",
-    type=click.Path(exists=False),
-)
-def crawl(parser, pattern, dataset, delete_source=False, store_json=None, job_id=None):
+def crawl(parser, pattern, dataset, delete_source=False, job_id=None):
     worker = Worker()
     payload = {
         "parser": parser,
         "dataset": dataset,
         "delete_source": delete_source,
-        "store_json": store_json,
         "job_id": job_id or datetime.now().isoformat(),
     }
     queues = set(QUEUES.keys())
     if not delete_source:
         queues.discard(DELETE_SOURCE)
-    if store_json is not None:
-        store_json = get_path(store_json)
-    else:
-        queues.discard(STORE_JSON)
     payload["allowed_queues"] = list(queues)
-    for fp in glob.glob(get_path(pattern)):
+    for fp in get_path().glob(pattern):
         worker.dispatch(PARSE, {**payload, **{"fpath": fp}})
     worker.shutdown()

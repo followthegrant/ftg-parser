@@ -1,18 +1,16 @@
-import json
 import os
 import time
-from functools import lru_cache
+from functools import cached_property, lru_cache
 
 from followthemoney.util import make_entity_id
-from ftm_columnstore import get_dataset
 from structlog import get_logger
 
-from followthegrant import ftm
-from followthegrant import parse as parsers
-from followthegrant import schema, settings
-from followthegrant.dedupe.authors import explode_triples
-from followthegrant.store import get_store
-from followthegrant.util import cached_property, get_path
+from followthegrant import settings
+from followthegrant.dedupe import explode_triples
+from followthegrant.parse import parse
+from followthegrant.store import get_dataset, get_store
+from followthegrant.transform import make_proxies
+from followthegrant.util import get_path
 
 log = get_logger(__name__)
 
@@ -28,7 +26,7 @@ class Stage:
         self.queue = queue
 
     def __str__(self):
-        return f"[{self.dataset}] - {self.queue.upper()}"
+        return f"[{self.dataset}] {self.queue.upper()}"
 
     @cached_property
     def key(self):
@@ -43,8 +41,6 @@ def get_stage(dataset: str, job_id: str, queue: str) -> Stage:
 
 PARSE = "parse"
 DELETE_SOURCE = "delete-source"
-STORE_JSON = "store-json"
-MAP_FTM = "map-ftm"
 WRITE_FTM = "write-ftm"
 AUTHOR_TRIPLES = "author-triples"
 WRITE_AUTHOR_TRIPLES = "write-author-triples"
@@ -52,10 +48,12 @@ WRITE_AUTHOR_TRIPLES = "write-author-triples"
 
 def op_parse(payload):
     parser = payload["parser"]
+    dataset = payload["dataset"]
     fpath = get_path(payload["fpath"])
-    parser = getattr(parsers, parser)
-    for data in parser(fpath):
-        yield {**payload, **{"data": data.dict()}}
+    # some entities are a lot of json data, so we emit them 1 by 1 to avoid
+    # rabbitmq message size limit
+    for proxy in parse(fpath, parser, dataset):
+        yield {**payload, **{"data": [proxy.to_dict()]}}
 
 
 def op_delete_source(payload):
@@ -65,27 +63,17 @@ def op_delete_source(payload):
         pass
 
 
-def op_store_json(payload):
-    fp = get_path(os.path.join(payload["store_json"], payload["data"]["id"] + ".json"))
-    with open(fp, "w") as f:
-        json.dump(payload["data"], f, default=lambda x: str(x), sort_keys=True)
-
-
-def op_map_ftm(payload):
-    data = schema.ArticleFullOutput(**payload["data"])
-    yield {**payload, **{"data": [e.to_dict() for e in ftm.make_entities(data)]}}
-
-
 def op_write_ftm(dataset, entities):
     dataset = get_dataset(dataset)
-    bulk = dataset.bulk(with_fingerprints=True)
+    bulk = dataset.bulk()
     for entity in entities:
         bulk.put(entity)
     bulk.flush()
+    # yield from entities
 
 
 def op_author_triples(payload):
-    data = schema.ArticleFullOutput(**payload["data"])
+    data = make_proxies(payload["data"])
     triples = set()
     for triple in explode_triples(data):
         triples.add(triple)
@@ -100,13 +88,11 @@ def op_write_author_triples(dataset, rows):
 
 QUEUES = {
     # stage: (func, batch_size, *next_stages)
-    PARSE: (op_parse, 1, STORE_JSON, MAP_FTM, AUTHOR_TRIPLES, DELETE_SOURCE),
-    STORE_JSON: (op_store_json, 1),
+    PARSE: (op_parse, 1, WRITE_FTM, DELETE_SOURCE),
     DELETE_SOURCE: (op_delete_source, 1),
-    MAP_FTM: (op_map_ftm, 1, WRITE_FTM),
-    AUTHOR_TRIPLES: (op_author_triples, 1, WRITE_AUTHOR_TRIPLES),
-    WRITE_FTM: (op_write_ftm, 1_000),
-    WRITE_AUTHOR_TRIPLES: (op_write_author_triples, 1_000),
+    WRITE_FTM: (op_write_ftm, 10_000, AUTHOR_TRIPLES),
+    AUTHOR_TRIPLES: (op_author_triples, 10_000, WRITE_AUTHOR_TRIPLES),
+    WRITE_AUTHOR_TRIPLES: (op_write_author_triples, 10_000),
 }
 
 
@@ -137,7 +123,7 @@ class TaskAggregator:
             done = 0
             errors = 0
             to_write = []
-            to_dispatch = []
+            # to_dispatch = []
 
             for delivery_tag, payload in self.tasks:
                 next_queues = set(payload.get("allowed_queues", QUEUES.keys())) & set(
@@ -152,7 +138,8 @@ class TaskAggregator:
                         if res is not None:
                             for payload in res:
                                 for queue in next_queues:
-                                    to_dispatch.append((queue, payload))
+                                    # to_dispatch.append((queue, payload))
+                                    self.consumer.dispatch(queue, payload)
                     done += 1
                     self.consumer.ack(delivery_tag)
                 except Exception as e:
@@ -171,15 +158,13 @@ class TaskAggregator:
                     done = 0
                     errors = 0
 
-            if len(to_dispatch):
-                for queue, payload in to_dispatch:
-                    self.consumer.dispatch(queue, payload)
+            # if len(to_dispatch):
+            #     for queue, payload in to_dispatch:
+            #         self.consumer.dispatch(queue, payload)
 
             if done:
-                # self.stage.mark_done(done) FIXME
                 log.info(f"{self.stage} : {done} tasks successful.")
             if errors:
-                # self.stage.mark_error(errors) FIXME
                 log.warning(f"{self.stage} : {errors} tasks failed.")
 
             # reset basket
@@ -189,13 +174,9 @@ class TaskAggregator:
 
     def handle_error(self, e):
         """re-queue all the tasks in current batch"""
-        is_deadlock = "DeadlockDetected" in str(e)
         e = str(e)[:1000]  # don't pollute logs too much
         log.warning(f"{self.stage} : Aggregated tasks failed ({e}). Will retry...")
         for _, task in self.tasks:
-            # FIXME retry deadlocks infinitetly
-            if is_deadlock:
-                task["retries"] = 0
             self.consumer.retry_task(self.stage.queue, task)
 
     def should_flush(self):

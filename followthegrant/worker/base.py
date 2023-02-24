@@ -1,8 +1,9 @@
+from functools import cached_property
+
 import pika
 from structlog import get_logger
 
 from followthegrant import settings
-from followthegrant.util import cached_property
 
 from .consumer import BatchConsumer, Consumer, basic_publish
 
@@ -56,7 +57,7 @@ class BaseWorker:
 class BaseBatchWorker(BaseWorker):
     consumer_class = BatchConsumer
 
-    def __init__(self, queues=None, heartbeat=5, batch_size=1_000):
+    def __init__(self, queues=None, heartbeat=5, batch_size=10_000):
         super().__init__(queues)
         self.batch_size = batch_size
         self.consumer_kwargs = {

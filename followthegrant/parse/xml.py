@@ -1,15 +1,18 @@
-import logging
 from collections import defaultdict
 from pathlib import Path
+from typing import Any
 
 from banal import ensure_dict, ensure_list, is_mapping
 from lxml import etree
 from normality import collapse_spaces
+from zavod.parse.xml import remove_namespace as z_remove_namespace
 
-log = logging.getLogger(__name__)
+from ..logging import get_logger
+
+log = get_logger(__name__)
 
 
-def remove_namespace(tree: etree._ElementTree):
+def remove_namespace(tree):
     """
     Strip namespace from parsed XML
     """
@@ -22,24 +25,29 @@ def remove_namespace(tree: etree._ElementTree):
             node.tag = node.tag.split("}", 1)[1]
 
 
-def read_xml(path: Path | etree._Element) -> etree._ElementTree | None:
+def read_xml(path: str | bytes | Path | etree._Element) -> etree._ElementTree | None:
     if isinstance(path, etree._Element):
         return path
-    tree = None
-    try:
-        tree = etree.parse(path)
-        if path.suffix == "nxml":
-            remove_namespace(tree)
-    except Exception:
+    if isinstance(path, Path):
         try:
-            tree = etree.fromstring(path)
+            # FIXME zavod namespacing seems to be broken here in some cases
+            tree = etree.parse(path)
+            try:
+                return z_remove_namespace(tree)
+            except Exception:
+                remove_namespace(tree)
+                return tree
         except Exception as e:
-            log.error(f"Error parsing xml at `{path}`: {e}")
-    return tree
+            log.error(f"Error parsing xml: {e}", fpath=path.name)
+    if isinstance(path, (str, bytes)):  # FIXME ?
+        try:
+            return etree.fromstring(path)
+        except Exception as e:
+            log.error(f"Error parsing xml: {e}", fpath=path.name)
 
 
 def parse_props(tree: etree._Element, mapping: dict[str, list]) -> dict[str, list]:
-    data = defaultdict(list)
+    data = defaultdict(set)
     for prop, paths in mapping.items():
         if is_mapping(paths):
             if "from" in paths:
@@ -47,6 +55,8 @@ def parse_props(tree: etree._Element, mapping: dict[str, list]) -> dict[str, lis
                 prop_mapping = ensure_dict(paths.get("properties"))
                 for subpath in subpaths:
                     for subtree in tree.xpath(subpath):
+                        # defaultdict is not hashable so we have to use list here
+                        data[prop] = ensure_list(data[prop])
                         data[prop].append(parse_props(subtree, prop_mapping))
         else:
             for path in paths:
@@ -57,23 +67,25 @@ def parse_props(tree: etree._Element, mapping: dict[str, list]) -> dict[str, lis
                             if value.text is not None:
                                 value = value.text
                             else:
-                                value = collapse_spaces(" ".join(value.itertext()))
+                                value = " ".join(value.itertext())
                         if value:
-                            data[prop].append(value)
+                            data[prop].add(collapse_spaces(value))
                 except Exception as e:
                     log.error(f"{e} at `{path}`")
     return data
 
 
 def parse_xml(
-    tree: etree._Element, mapping: dict[str, dict[str, str | list]]
-) -> dict[str, list[str]]:
+    tree: etree._Element | None, mapping: dict[str, dict[str, str | list]]
+) -> dict[str, list[Any] | set[Any]]:
     data = defaultdict(dict)
+    if tree is None:
+        return data
     for key, config in mapping.items():
         prop_mapping = ensure_dict(config.get("properties"))
         root = config.get("from")
         if root is not None:
-            data[key] = list()
+            data[key] = []
             for path in ensure_list(root):
                 for item in tree.xpath(path):
                     data[key].append(parse_props(item, prop_mapping))

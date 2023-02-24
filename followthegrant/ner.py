@@ -17,9 +17,12 @@ from ingestors.analysis.aggregate import TagAggregator
 from ingestors.analysis.extract import extract_entities
 from ingestors.analysis.language import detect_languages
 from ingestors.analysis.util import DOCUMENT, text_chunks
+from nomenklatura.entity import CE
+
+from .ftm import EGenerator, make_proxy
 
 
-def analyze(entity):
+def analyze(entity: CE) -> EGenerator:
     if not entity.schema.is_a(DOCUMENT):
         yield entity
         return
@@ -44,15 +47,15 @@ def analyze(entity):
             label = registry.name.pick(values)
 
         schema = Analyzer.MENTIONS.get(prop)
-        if schema == "Organization":
+        if schema in ("Organization", "Company"):
             mention = model.make_entity("Mention")
             mention.make_id("mention", entity.id, prop, key)
             mention.add("document", entity.id)
             mention.add("name", values)
             mention.add("detectedSchema", schema)
             mention.add("contextCountry", countries)
-            yield mention
+            yield make_proxy(mention)
 
         entity.add(prop, label, cleaned=True, quiet=True)
 
-    yield entity
+    yield make_proxy(entity)

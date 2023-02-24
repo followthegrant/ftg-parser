@@ -1,71 +1,49 @@
 services:
   worker:
-    image: ftg-worker
+    restart: on-failure
+    build: .
     links:
+      - clickhouse
       - rabbitmq
     environment:
-      RABBITMQ_URL: amqp://guest:guest@rabbitmq:5672/%2F?heartbeat=3600&blocked_connection_timeout=3600
+      RABBITMQ_URL: amqp://guest:guest@rabbitmq:5672/%2F?heartbeat=600&blocked_connection_timeout=300
+      LOG_LEVEL: ${LOG_LEVEL:-info}
+      DATABASE_URI: clickhouse:9000
     volumes:
-      - ${DATA_ROOT}:/data
-    deploy:
-      replicas: 48
-      resources:
-        limits:
-          memory: 64G
-      restart_policy:
-        condition: any
-    depends_on:
-      rabbitmq:
-        condition: service_healthy
+      - ${DATA_ROOT:-.}:/data
 
-  worker-write-ftm:
-    command: "ftg worker batch -q write-ftm"
-    image: ftg-worker
+  worker-batch-write:
+    command: "ftg worker batch -q write-ftm -q write-author-triples"
+    restart: on-failure
+    build: .
     links:
+      - clickhouse
       - rabbitmq
     environment:
-      RABBITMQ_URL: amqp://guest:guest@rabbitmq:5672/%2F?heartbeat=1200&blocked_connection_timeout=600
-    deploy:
-      replicas: 8
-      restart_policy:
-        condition: any
-    depends_on:
-      rabbitmq:
-        condition: service_healthy
-
-  worker-write-triples:
-    command: "ftg worker batch -q write-author-triples"
-    image: ftg-worker
-    links:
-      - rabbitmq
-    environment:
-      RABBITMQ_URL: amqp://guest:guest@rabbitmq:5672/%2F?heartbeat=1200&blocked_connection_timeout=600
-    deploy:
-      replicas: 8
-      restart_policy:
-        condition: any
-    depends_on:
-      rabbitmq:
-        condition: service_healthy
+      RABBITMQ_URL: amqp://guest:guest@rabbitmq:5672/%2F?heartbeat=600&blocked_connection_timeout=300
+      LOG_LEVEL: ${LOG_LEVEL:-info}
+      DATABASE_URI: clickhouse:9000
 
   rabbitmq:
-    image: rabbitmq:management-alpine
-    hostname: ftg-rabbit
-    environment:
-      RABBITMQ_NODENAME: rabbit@ftg-rabbit
+    image: rabbitmq:management
+    restart: on-failure
     expose:
       - 5672
     ports:
-      - 127.0.0.1:8000:15672
+      - 127.0.0.1:5672:5672
+      - 127.0.0.1:15672:15672
     volumes:
-      - ${DATA_ROOT}/rabbitmq:/var/lib/rabbitmq
       - ${PWD}/rabbitmq.conf.d:/etc/rabbitmq/conf.d
-    deploy:
-      mode: global
-      restart_policy:
-        condition: any
-    healthcheck:
-      test: "rabbitmq-diagnostics -q ping"
-      interval: 10s
-      timeout: 5s
-      retries: 5
+
+  clickhouse:
+    image: clickhouse/clickhouse-server
+    restart: unless-stopped
+    expose:
+      - 9000
+    ports:
+      - 127.0.0.1:9000:9000
+      - 127.0.0.1:8123:8123
+    ulimits:
+      nofile:
+        soft: 65536
+        hard: 65536
