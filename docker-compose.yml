@@ -3,7 +3,6 @@ services:
     restart: on-failure
     build: .
     links:
-      - clickhouse
       - rabbitmq
     environment:
       RABBITMQ_URL: amqp://guest:guest@rabbitmq:5672/%2F?heartbeat=600&blocked_connection_timeout=300
