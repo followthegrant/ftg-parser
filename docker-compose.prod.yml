@@ -9,7 +9,6 @@ services:
     volumes:
       - ${DATA_ROOT}:/data
     deploy:
-      replicas: 48
       resources:
         limits:
           memory: 64G
@@ -29,7 +28,6 @@ services:
       LOG_LEVEL: ${LOG_LEVEL:-info}
       DATABASE_URI: clickhouse:9000
     deploy:
-      replicas: 8
       restart_policy:
         condition: any
     depends_on:
