@@ -14,7 +14,9 @@ CREATE TABLE {table}
     `entity_id` String,
     `prop` LowCardinality(String),
     `value` String,
-    PROJECTION {table}_tpx (SELECT * ORDER BY prop)
+    `dataset` LowCardinality(String),
+    PROJECTION {table}_px (SELECT * ORDER BY prop),
+    PROJECTION {table}_dx (SELECT * ORDER BY dataset)
 )
 ENGINE = ReplacingMergeTree
 PRIMARY KEY (entity_id, prop, value)
@@ -28,6 +30,7 @@ class Store:
         self.driver = driver or get_driver()
         self.prefix = prefix
         self.triples_table = f"{prefix}_triples"
+        self.init()
 
     def init(self, recreate: Optional[bool] = False):
         self.driver.init(exists_ok=True, recreate=recreate)
@@ -51,7 +54,7 @@ class Store:
         return ds.store
 
     def write_triples(self, rows: Iterator[Iterable[str]]) -> int:
-        columns = ["fingerprint_id", "author_id", "value_id", "prop_type", "dataset"]
+        columns = ["entity_id", "prop", "value", "dataset"]
         insert_many(self.triples_table, columns, rows, driver=self.driver)
 
     def iterate_triple_packs(self, dataset: Optional[str] = None) -> Iterator[str]:

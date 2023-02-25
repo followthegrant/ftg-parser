@@ -60,8 +60,8 @@ class _FTGConsumer:
 
     def handle_result(self, res, next_queues):
         if res is not None:
-            for payload in res:
-                for queue in next_queues:
+            for queue, payload in res:
+                if queue in next_queues:
                     self.dispatch(queue, payload)
 
     def handle_error(self, e, payload, queue):
