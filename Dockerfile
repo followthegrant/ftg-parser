@@ -1,5 +1,8 @@
 FROM ghcr.io/investigativedata/ftm-docker:main
 
+LABEL org.opencontainers.image.title "FollowTheGrant ETL parser worker"
+LABEL org.opencontainers.image.source https://github.com/followthegrant/ftg-parser
+
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get -qq -y update && apt-get -qq -y install libpq-dev
