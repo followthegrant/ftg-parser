@@ -8,6 +8,7 @@ from followthemoney.model import registry
 from followthemoney.proxy import E, EntityProxy
 from followthemoney.util import make_entity_id
 from nomenklatura.entity import CE, CompositeEntity
+from normality import normalize
 from pydantic import BaseModel, create_model
 from zavod.util import join_slug
 
@@ -71,7 +72,11 @@ def get_firsts(
 
 
 def pick_name(names: Values) -> str:
-    return registry.name.pick(names)
+    if any(
+        [n for n in names if normalize(n)]
+    ):  # FIXME otherwise segfault by levensthein
+        return registry.name.pick(names)
+    return ""
 
 
 def wrangle_person_names(data: SKDict) -> SKDict:

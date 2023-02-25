@@ -1,3 +1,4 @@
+import faulthandler
 from pathlib import Path
 
 from followthegrant import settings
@@ -8,6 +9,8 @@ from ..transform import EGenerator, make_proxies
 from . import parsers
 
 log = get_logger(__name__)
+
+faulthandler.enable()
 
 
 def _exists(fpath: Path) -> bool:
