@@ -90,7 +90,7 @@ class Consumer(ReconnectingPikaConsumer, _FTGConsumer):
             self.done[stage] += 1
         except Exception as e:
             self.handle_error(e, payload, queue)
-            self.nack(method.delivery_tag, requeue=False)
+            # self.nack(method.delivery_tag, requeue=False)
             self.errors[stage] += 1
         self.handled_tasks += 1
 
