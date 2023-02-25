@@ -14,7 +14,7 @@ from .logging import configure_logging, get_logger
 from .parse import parse
 from .store import get_store
 from .util import get_path
-from .worker import DELETE_SOURCE, PARSE, QUEUES, BatchWorker, Worker
+from .worker import PARSE, BatchWorker, Worker
 
 log = get_logger(__name__)
 
@@ -245,10 +245,6 @@ def crawl(parser, pattern, dataset, delete_source=False, job_id=None):
         "delete_source": delete_source,
         "job_id": job_id or datetime.now().isoformat(),
     }
-    queues = set(QUEUES.keys())
-    if not delete_source:
-        queues.discard(DELETE_SOURCE)
-    payload["allowed_queues"] = list(queues)
     for fp in get_path().glob(pattern):
         worker.dispatch(PARSE, {**payload, **{"fpath": fp}})
     worker.shutdown()
