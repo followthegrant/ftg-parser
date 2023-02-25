@@ -1,0 +1,10 @@
+from .cord import parse as cord  # noqa
+from .core import parse as core  # noqa
+from .crossref import parse as crossref  # noqa
+from .doaj import parse as doaj  # noqa
+from .europepmc import parse as europepmc  # noqa
+from .jats import parse as jats  # noqa
+from .openaire import parse as openaire  # noqa
+from .openalex import parse as openalex  # noqa
+from .orcid import parse as orcid  # noqa
+from .s2orc import parse as s2orc  # noqa

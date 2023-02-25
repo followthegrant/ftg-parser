@@ -4,6 +4,8 @@ from unittest import TestCase
 
 import dataset
 from followthemoney import model
+from ftmstore import get_dataset
+from ftmstore.settings import DATABASE_URI
 
 from ftg import db, ftm, parse
 from ftg.dedupe import authors as dedupe
@@ -104,7 +106,7 @@ class StatefulDedupTestCase(TestCase):
         pairs = dedupe.dedupe_triples(triples)
 
         # 3) insert into intermediate database
-        with dataset.connect("sqlite:///:memory:") as conn:
+        with dataset.connect(DATABASE_URI) as conn:
             conn.query(
                 """
                 create table if not exists author_aggregation (
@@ -119,9 +121,7 @@ class StatefulDedupTestCase(TestCase):
             merged_entities = set()
 
             for entity in entities:
-                merged_entity = dedupe.rewrite_entity(
-                    "author_aggregation", entity.to_dict(), conn=conn
-                )
+                merged_entity = dedupe.rewrite_entity(entity.to_dict(), conn=conn)
                 merged_entities.add(model.get_proxy(merged_entity))
 
         author_ids = set([a.id for a in entities if a.schema.name == "Person"])
@@ -179,7 +179,7 @@ class StatefulDedupTestCase(TestCase):
                             entities.add(entity)
 
         merged_entities = set()
-        with dataset.connect("sqlite:///:memory:") as conn:
+        with dataset.connect(DATABASE_URI) as conn:
             conn.query(
                 """
                 create table if not exists author_triples (
@@ -207,8 +207,74 @@ class StatefulDedupTestCase(TestCase):
                 db.insert_many("author_aggregation", pairs, conn=conn)
 
             for entity in entities:
-                merged_entity = dedupe.rewrite_entity(
-                    "author_aggregation", entity.to_dict(), conn=conn
+                merged_entity = dedupe.rewrite_entity(entity.to_dict(), conn=conn)
+                merged_entities.add(model.get_proxy(merged_entity))
+
+        author_ids = set([a.id for a in entities if a.schema.name == "Person"])
+        merged_author_ids = set(
+            [a.id for a in merged_entities if a.schema.name == "Person"]
+        )
+
+        # there shozld be less different authors now
+        self.assertGreater(len(author_ids), len(merged_author_ids))
+        self.assertFalse(merged_author_ids - author_ids)
+
+    def test_stateful_dedupe_rewrite_inplace(self):
+        triples = set()
+        entities = set()
+        for path in glob.glob("./testdata/biorxiv/*.xml"):
+            data = parse.jats(path)
+            for article in data:
+                for triple in dedupe.explode_triples(article):
+                    triples.add(triple)
+                for entity in ftm.make_entities(article):
+                    entities.add(entity)
+
+        merged_entities = set()
+        with dataset.connect(DATABASE_URI) as conn:
+            conn.query(
+                """
+                create table if not exists author_triples (
+                  fingerprint char(40) not null,
+                  author_id char(40) not null,
+                  value_id char(40) not null,
+                  unique (fingerprint, author_id, value_id)
+                )
+                """
+            )
+            conn.query(
+                """
+                create table if not exists author_aggregation (
+                  agg_id char(40) not null,
+                  author_id char(40) not null,
+                  unique (agg_id, author_id)
+                )
+                """
+            )
+            db.insert_many("author_triples", triples, conn=conn)
+
+            for fp in conn.query("select distinct fingerprint from author_triples"):
+                fp = fp["fingerprint"]
+                pairs = dedupe.dedupe_db("author_triples", fp, conn=conn)
+                db.insert_many("author_aggregation", pairs, conn=conn)
+
+            # add entities to ftm store
+            ftm_dataset = get_dataset("ftg_test")
+            bulk = ftm_dataset.bulk()
+            for entity in entities:
+                bulk.put(entity)
+            bulk.flush()
+
+            entities = [e for e in ftm_dataset.iterate()]
+
+        # commit
+        with dataset.connect(DATABASE_URI) as conn:
+            aggregations = dedupe.get_aggregation_mapping(conn=conn)
+            to_merge = dedupe.get_entities_to_rewrite(ftm_dataset, aggregations)
+
+            for entity in to_merge:
+                merged_entity = dedupe.rewrite_entity_inplace(
+                    ftm_dataset, entity["id"], conn=conn
                 )
                 merged_entities.add(model.get_proxy(merged_entity))
 
@@ -220,3 +286,7 @@ class StatefulDedupTestCase(TestCase):
         # there shozld be less different authors now
         self.assertGreater(len(author_ids), len(merged_author_ids))
         self.assertFalse(merged_author_ids - author_ids)
+
+        # there should be less entities in ftm store now:
+        merged_entities = [e for e in ftm_dataset.iterate()]
+        self.assertGreater(len(entities), len(merged_entities))

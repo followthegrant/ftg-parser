@@ -1,0 +1,175 @@
+journal:
+  properties:
+    name:
+      - '//journal-meta//journal-title'
+    issn:
+      - '//journal-meta//issn'
+    address:
+      - '//journal-meta//publisher-loc'
+
+article:
+  properties:
+    doi:
+      - '//article-meta//article-id[@pub-id-type="doi"]'
+    pmid:
+      - '//article-meta//article-id[@pub-id-type="pmid"]'
+    pmc:
+      - '//article-meta//article-id[@pub-id-type="pmc"]'
+    title:
+      - '//article-meta//article-title'
+    summary:
+      - '//abstract'
+    publishedAt:
+      - '//pub-date'
+    keywords:
+      - '//subject'
+      - '//kwd'
+    coi_statement:
+      - "//conflict"
+      - "//CoiStatement"
+      - "//coi-statement"
+      - '//*[@*="conflict"]'
+      - '//*[@*="conflict-interest"]'
+      - '//*[@*="COI-statement"]'
+      - '//*[@*="coi-statement"]'
+      - '//*[@*="competing-interest-statement"]'
+      - "//title[contains(text(), 'onflict')]/following-sibling::*/text()"
+    ack_statement:
+      - "//acknowledgment"
+      - "//acknowledgments"
+      - "//acknowledgement"
+      - "//acknowledgements"
+      - "//ack"
+      - "//title[contains(text(), 'cknowledg')]/following-sibling::*/text()"
+    funding_statement:
+      - "funding"
+      - "//funding-statement"
+      - "//funding-information"
+      - '//*[@*="financial-disclosure"]'
+      - '//*[@*="supported-by"]'
+      - '//support-source'
+      - "//title[contains(text(), 'unding')]/following-sibling::*/text()"
+
+authors:
+  from:
+    - '//contrib-group//contrib[@contrib-type="author"]'
+  properties:
+    xref:
+      - './xref[@ref-type="other"]/@rid'
+      - './xref[@ref-type="other"]/@id'
+    xref_affiliation:
+      - './xref[@ref-type="aff"]/@rid'
+      - './xref[@ref-type="aff"]/@id'
+      - './aff/@id'
+      - './aff/@rid'
+      - './aff'
+    name:
+      - './name'
+    lastName:
+      - './surname'
+    firstName:
+      - './given-names'
+    email:
+      - './email'
+    orcId:
+      - './contrib-id[@contrib-id-type="orcid"]'
+    country:
+      - './country'
+    address:
+      - './addr-line'
+    phoneNumber:
+      - './phone'
+    postalCode:
+      - './postal-code'
+
+institutions:
+  from:
+    - '//aff'
+  properties:
+    xref:
+      - './@id'
+      - './/institution-id'
+      - './/institution'
+      - './/institution-id[@institution-id-type="GRID"]'
+      - './/institution-id[@institution-id-type="grid"]'
+      - './/institution-id[@institution-id-type="ISNI"]'
+      - './/institution-id[@institution-id-type="isni"]'
+    ident:
+      - './/institution-id'
+      - './@id'
+    gridId:
+      - './/institution-id[@institution-id-type="GRID"]'
+      - './/institution-id[@institution-id-type="grid"]'
+    isni:
+      - './/institution-id[@institution-id-type="ISNI"]'
+      - './/institution-id[@institution-id-type="isni"]'
+    name:
+      # - '.'
+      - './/institution[not(@content-type="dept")]'
+    weakAlias:  # department
+      - './/institution[@content-type="dept"]'
+    country:
+      - './/country'
+    address:
+      - './/addr-line'
+    phoneNumber:
+      - './/phone'
+    postalCode:
+      - './/postal-code'
+
+
+funders:
+  from:
+    - '//funding-source'
+    - '//support-source'
+    - '//*[@*="supported-by"]'
+  properties:
+    xref:
+      - 'parent::award-group/@id'
+    ident:
+      - './/institution-id'
+    department:
+      - './/institution[@content-type="dept"]'
+    name:
+      - './/institution'
+    country:
+      - './/country'
+    address:
+      - './/addr-line'
+    phoneNumber:
+      - './/phone'
+    postalCode:
+      - './/postal-code'
+
+grants:
+  from:
+    - '//award-group'
+  properties:
+    projectId:
+      - './/award-id'
+    name:
+      - './/award-name'
+    description:
+      - './/award-desc'
+    type:
+      - "@award-type"
+    recipients:
+      from:
+        - './/principal-award-recipient/name'
+      properties:
+        name:
+          - '.'
+        firstName:
+          - './/surname'
+        lastName:
+          - './/given-names'
+    investigators:
+      from:
+        - './/principal-investigator/name'
+      properties:
+        name:
+          - '.'
+        firstName:
+          - './/surname'
+        lastName:
+          - './/given-names'

@@ -2,44 +2,69 @@ import datetime
 from unittest import TestCase
 
 import fingerprints
+from nomenklatura.entity import CompositeEntity
 from pydantic.error_wrappers import ValidationError
 
-from ftg import model
+from followthegrant import model
 
 
 class ModelTestCase(TestCase):
     maxDiff = None
 
     def test_journal(self):
-        # only name
+        """
+        most of the behaviour tested applies to all models
+        """
+
         data = {"name": "PLoS ONE"}
         journal = model.Journal(**data)
-        self.assertIsInstance(journal.input, model.JournalInput)
-        self.assertIsInstance(journal.output, model.JournalOutput)
         self.assertListEqual(journal.get_id_parts(), ["one plos"])  # fingerprinting
-        self.assertEqual(journal.id, "45a6bd84130dd5fbbaefba02664a8e5ee014934a")
+        self.assertEqual(journal.id, "journal-45a6bd84130dd5fbbaefba02664a8e5ee014934a")
+        self.assertIsInstance(journal.proxy, CompositeEntity)
         self.assertDictEqual(
             {
-                "id": "45a6bd84130dd5fbbaefba02664a8e5ee014934a",
-                "name": "PLoS ONE",
-                "website": None,
+                "id": "journal-45a6bd84130dd5fbbaefba02664a8e5ee014934a",
+                "properties": {"name": ["PLoS ONE"], "summary": ["journal"]},
+                "schema": "Thing",
+                "datasets": [],
+                "referents": [],
             },
-            journal.serialize(),
+            journal.proxy,
         )
 
+        # all props are multi valued and defaults to empty set
+        self.assertIsInstance(journal.name, set)
+        self.assertEqual(journal.name, {"PLoS ONE"})
+        self.assertEqual(journal.website, set())
+        # except id of course
+        self.assertIsInstance(journal.id, str)
+        self.assertEqual(journal.id, journal.proxy.id)
+
+        # invalid ftm prop
+        import ipdb
+
+        ipdb.set_trace()
+
+        # prop cleaning on init, always ensure set
+        name = {"PLoS ONE"}
+        journal = Journal(name="PLoS ONE")
+        self.assertEqual(journal.name, name)
+        journal = Journal(name=["PLoS ONE"])
+        self.assertEqual(journal.name, name)
+        journal = Journal(name={"PLoS ONE"})
+        self.assertEqual(journal.name, name)
+        journal = Journal(name="PLoS  ONE ")  # collapse spaces
+        self.assertEqual(journal.name, name)
+        journal = Journal(
+            name=["PLoS ONE", "", " ", None, "-", "."]
+        )  # filter falsish values
+        self.assertEqual(journal.name, name)
+
         # with identifier
-        data = {"identifier": "journal-1", "name": "PLoS ONE"}
+        data = {"ident": "journal-1", "name": "PLoS ONE"}
         journal = model.Journal(**data)
         self.assertListEqual(journal.get_id_parts(), ["journal-1"])
-        self.assertEqual(journal.id, "462ddec499bdd34aed79dbdce5bb6acb0586e3de")
-        self.assertDictEqual(
-            {
-                "id": "462ddec499bdd34aed79dbdce5bb6acb0586e3de",
-                "name": "PLoS ONE",
-                "website": None,
-            },
-            journal.serialize(),
-        )
+        self.assertEqual(journal.id, "journal-462ddec499bdd34aed79dbdce5bb6acb0586e3de")
 
         # data validation
         with self.assertRaises(ValidationError):
