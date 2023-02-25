@@ -88,11 +88,10 @@ class Consumer(ReconnectingPikaConsumer, _FTGConsumer):
         func, *next_queues = self.QUEUES[queue]
         next_queues = self.get_next_queues(payload, next_queues)
 
-        res = func(payload)
-
         try:
-            self.handle_result(res, next_queues)
+            res = func(payload)
             self.ack(method.delivery_tag)
+            self.handle_result(res, next_queues)
             self.done[stage] += 1
         except Exception as e:
             self.handle_error(e, payload, queue)
@@ -103,10 +102,8 @@ class Consumer(ReconnectingPikaConsumer, _FTGConsumer):
         if self.handled_tasks % 100 == 0:
             log.info(f"Handled {self.handled_tasks} tasks.")
             for stage, tasks in self.done.items():
-                # stage.mark_done(tasks)  # FIXME
                 self.done[stage] = 0
             for stage, tasks in self.errors.items():
-                # stage.mark_error(tasks)  # FIXME
                 self.errors[stage] = 0
 
 
@@ -137,7 +134,7 @@ class BatchConsumer(ReconnectingHeartbeatPikaConsumer, _FTGConsumer):
                     log.info(
                         f"Flushing {aggregator.stage}: {len(aggregator.tasks)} tasks"
                     )
-                aggregator.flush()
+                    aggregator.flush()
 
     def _get_aggregator(self, stage):
         """get task aggregator per job and stage"""
