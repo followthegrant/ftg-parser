@@ -6,7 +6,7 @@ from structlog import get_logger
 
 from followthegrant import settings
 
-from ..tasks import QUEUES, TaskAggregator, get_stage
+from ..tasks import QUEUES, BulkWriter, get_stage
 from .base import ReconnectingPikaConsumer
 from .heartbeat import ReconnectingHeartbeatPikaConsumer
 
@@ -54,14 +54,10 @@ class _FTGConsumer:
             e = f"Max retries ({self.MAX_RETRIES}) exceeded."
             self.handle_error(e, payload, queue)
 
-    def get_next_queues(self, payload, next_queues):
-        """make sure to dispatch only to active queues"""
-        return set(payload.get("allowed_queues", self.QUEUES.keys())) & set(next_queues)
-
     def handle_result(self, res, next_queues):
         if res is not None:
-            for payload in res:
-                for queue in next_queues:
+            for queue, payload in res:
+                if queue in next_queues:
                     self.dispatch(queue, payload)
 
     def handle_error(self, e, payload, queue):
@@ -86,27 +82,23 @@ class Consumer(ReconnectingPikaConsumer, _FTGConsumer):
         payload = json.loads(payload)
         stage = self.get_stage(queue, payload)
         func, *next_queues = self.QUEUES[queue]
-        next_queues = self.get_next_queues(payload, next_queues)
-
-        res = func(payload)
 
         try:
-            self.handle_result(res, next_queues)
+            res = func(payload)
             self.ack(method.delivery_tag)
+            self.handle_result(res, next_queues)
             self.done[stage] += 1
         except Exception as e:
             self.handle_error(e, payload, queue)
-            self.nack(method.delivery_tag, requeue=False)
+            # self.nack(method.delivery_tag, requeue=False)
             self.errors[stage] += 1
         self.handled_tasks += 1
 
         if self.handled_tasks % 100 == 0:
             log.info(f"Handled {self.handled_tasks} tasks.")
             for stage, tasks in self.done.items():
-                # stage.mark_done(tasks)  # FIXME
                 self.done[stage] = 0
             for stage, tasks in self.errors.items():
-                # stage.mark_error(tasks)  # FIXME
                 self.errors[stage] = 0
 
 
@@ -137,10 +129,10 @@ class BatchConsumer(ReconnectingHeartbeatPikaConsumer, _FTGConsumer):
                     log.info(
                         f"Flushing {aggregator.stage}: {len(aggregator.tasks)} tasks"
                     )
-                aggregator.flush()
+                    aggregator.flush()
 
     def _get_aggregator(self, stage):
         """get task aggregator per job and stage"""
         if stage.key not in self._aggregators:
-            self._aggregators[stage.key] = TaskAggregator(self, stage)
+            self._aggregators[stage.key] = BulkWriter(self, stage)
         return self._aggregators[stage.key]

@@ -1,15 +1,13 @@
 import os
 import time
-from functools import cached_property, lru_cache
+from functools import cache
 
 from followthemoney.util import make_entity_id
 from structlog import get_logger
 
-from followthegrant import settings
 from followthegrant.dedupe import explode_triples
 from followthegrant.parse import parse
 from followthegrant.store import get_dataset, get_store
-from followthegrant.transform import make_proxies
 from followthegrant.util import get_path
 
 log = get_logger(__name__)
@@ -24,25 +22,19 @@ class Stage:
         self.dataset = dataset
         self.job_id = job_id
         self.queue = queue
+        self.key = make_entity_id(self.dataset, self.job_id, self.queue)
 
     def __str__(self):
         return f"[{self.dataset}] {self.queue.upper()}"
 
-    @cached_property
-    def key(self):
-        """unique identifier"""
-        return make_entity_id(self.dataset, self.job_id, self.queue)
 
-
-@lru_cache(maxsize=1024)
+@cache
 def get_stage(dataset: str, job_id: str, queue: str) -> Stage:
     return Stage(dataset, job_id, queue)
 
 
 PARSE = "parse"
-DELETE_SOURCE = "delete-source"
 WRITE_FTM = "write-ftm"
-AUTHOR_TRIPLES = "author-triples"
 WRITE_AUTHOR_TRIPLES = "write-author-triples"
 
 
@@ -53,14 +45,18 @@ def op_parse(payload):
     # some entities are a lot of json data, so we emit them 1 by 1 to avoid
     # rabbitmq message size limit
     for proxy in parse(fpath, parser, dataset):
-        yield {**payload, **{"data": [proxy.to_dict()]}}
-
-
-def op_delete_source(payload):
-    try:
-        os.remove(get_path(payload["fpath"]))
-    except (OSError, FileNotFoundError):
-        pass
+        yield WRITE_FTM, {**payload, **{"data": [proxy.to_dict()]}}
+        triples = set()
+        for triple in explode_triples(proxy):
+            triples.add(triple)
+        if triples:
+            yield WRITE_AUTHOR_TRIPLES, {**payload, **{"data": list(triples)}}
+    # if configured, delete source file to free up disk space
+    if payload.get("delete_source"):
+        try:
+            os.remove(get_path(payload["fpath"]))
+        except (OSError, FileNotFoundError):
+            pass
 
 
 def op_write_ftm(dataset, entities):
@@ -69,35 +65,24 @@ def op_write_ftm(dataset, entities):
     for entity in entities:
         bulk.put(entity)
     bulk.flush()
-    # yield from entities
-
-
-def op_author_triples(payload):
-    data = make_proxies(payload["data"])
-    triples = set()
-    for triple in explode_triples(data):
-        triples.add(triple)
-    yield {**payload, **{"data": list(triples)}}
 
 
 def op_write_author_triples(dataset, rows):
     rows = (r + [dataset] for r in rows)
     store = get_store()
-    store.write_author_triples(rows)
+    store.write_triples(rows)
 
 
 QUEUES = {
     # stage: (func, batch_size, *next_stages)
-    PARSE: (op_parse, 1, WRITE_FTM, DELETE_SOURCE),
-    DELETE_SOURCE: (op_delete_source, 1),
-    WRITE_FTM: (op_write_ftm, 10_000, AUTHOR_TRIPLES),
-    AUTHOR_TRIPLES: (op_author_triples, 10_000, WRITE_AUTHOR_TRIPLES),
+    PARSE: (op_parse, 1, WRITE_FTM, WRITE_AUTHOR_TRIPLES),
+    WRITE_FTM: (op_write_ftm, 10_000),
     WRITE_AUTHOR_TRIPLES: (op_write_author_triples, 10_000),
 }
 
 
-class TaskAggregator:
-    """handle a collection of identical tasks"""
+class BulkWriter:
+    """collect tasks to bulk write"""
 
     def __init__(self, consumer, stage: Stage):
         self.is_flushing = False
@@ -107,8 +92,6 @@ class TaskAggregator:
         func, batch_size, *next_queues = QUEUES[stage.queue]
         self.func = func
         self.batch_size = batch_size
-        self.next_queues = next_queues
-        self.is_writer = self.stage.queue.startswith("write")
         self.last_activity = time.time()
 
     def add(self, tag, payload):
@@ -123,44 +106,20 @@ class TaskAggregator:
             done = 0
             errors = 0
             to_write = []
-            # to_dispatch = []
 
             for delivery_tag, payload in self.tasks:
-                next_queues = set(payload.get("allowed_queues", QUEUES.keys())) & set(
-                    self.next_queues
-                )
-                try:
-                    if self.is_writer:
-                        for item in payload["data"]:
-                            to_write.append(item)
-                    else:
-                        res = self.func(payload)
-                        if res is not None:
-                            for payload in res:
-                                for queue in next_queues:
-                                    # to_dispatch.append((queue, payload))
-                                    self.consumer.dispatch(queue, payload)
-                    done += 1
-                    self.consumer.ack(delivery_tag)
-                except Exception as e:
-                    msg = f'{self.stage} : {e} : {payload["fpath"]}'
-                    log.error(msg)
-                    if settings.DEBUG:
-                        log.exception(msg, payload=payload, exception=e)
-                    errors += 1
-                    self.consumer.nack(delivery_tag, requeue=False)
+                for item in payload["data"]:
+                    to_write.append(item)
+                self.consumer.ack(delivery_tag)
+                done += 1
 
-            if self.is_writer and len(to_write):
+            if len(to_write):
                 try:
                     self.func(self.stage.dataset, to_write)
                 except Exception as e:
                     self.handle_error(e)
                     done = 0
-                    errors = 0
-
-            # if len(to_dispatch):
-            #     for queue, payload in to_dispatch:
-            #         self.consumer.dispatch(queue, payload)
+                    errors += 1
 
             if done:
                 log.info(f"{self.stage} : {done} tasks successful.")

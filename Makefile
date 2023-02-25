@@ -79,10 +79,10 @@ sampledata:
 	ftg worker crawl jats "medrxiv/*/*meca" -d medrxiv
 	ftg worker crawl europepmc "europepmc/*" -d europepmc
 	ftg worker crawl openalex "openalex/**/*.gz" -d openalex
-	# ftg worker crawl openaire "openaire/*" -d openaire
-	# ftg worker crawl s2orc "semanticscholar/**/*.gz" -d semanticscholar
-	# ftg worker crawl cord "cord/*json" -d cord
-	# ftg worker crawl crossref "crossref/*" -d crossref
+	ftg worker crawl openaire "openaire/*" -d openaire
+	ftg worker crawl s2orc "semanticscholar/**/*.gz" -d semanticscholar
+	ftg worker crawl cord "cord/*json" -d cord
+	ftg worker crawl crossref "crossref/*" -d crossref
 
 
 # services for dev purposes (rabbit, clickhouse)
