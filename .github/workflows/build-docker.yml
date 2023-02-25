@@ -20,7 +20,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v4
         with:
-          images: ghcr.io/followthegrant/ftg-worker
+          images: ghcr.io/followthegrant/followthegrant
           tags: |
             type=ref,event=branch
             type=semver,pattern={{version}}
