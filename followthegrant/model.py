@@ -306,17 +306,18 @@ class Article(BaseModel, schema.Article):
 
     def __init__(
         self,
-        adjacents: ParsedResult,
+        adjacents: ParsedResult | None = None,
         **data,
     ):
-        data = defaultdict(set, data)
-        authors = clean_list(adjacents.authors)
-        journal = adjacents.journal
-        if journal:
-            data["publisher"].update(journal.name)
-            data["publisherUrl"].update(journal.publisherUrl)
-        if "author" not in data:
-            data["author"] = ensure_set([a.proxy.caption for a in authors])
+        if adjacents:
+            data = defaultdict(set, data)
+            authors = clean_list(adjacents.authors)
+            journal = adjacents.journal
+            if journal:
+                data["publisher"].update(journal.name)
+                data["publisherUrl"].update(journal.publisherUrl)
+            if "author" not in data:
+                data["author"] = ensure_set([a.proxy.caption for a in authors])
         super().__init__(adjacents, **data)
         # FIXME erf
         dates = self.date | self.publishedAt
