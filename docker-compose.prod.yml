@@ -34,26 +34,6 @@ services:
       rabbitmq:
         condition: service_healthy
 
-  worker-cleanup:
-    command: "ftg worker -q delete-source"
-    image: ghcr.io/followthegrant/followthegrant:main
-    links:
-      - rabbitmq
-    environment:
-      RABBITMQ_URL: amqp://guest:guest@rabbitmq:5672/%2F?heartbeat=3600&blocked_connection_timeout=3600
-      LOG_LEVEL: ${LOG_LEVEL:-info}
-    volumes:
-      - ${DATA_ROOT}:/data
-    deploy:
-      resources:
-        limits:
-          memory: 64G
-      restart_policy:
-        condition: any
-    depends_on:
-      rabbitmq:
-        condition: service_healthy
-
   rabbitmq:
     image: rabbitmq:management
     hostname: ftg-rabbit

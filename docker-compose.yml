@@ -23,19 +23,6 @@ services:
       LOG_LEVEL: ${LOG_LEVEL:-info}
       DATABASE_URI: clickhouse:9000
 
-  worker-cleanup:
-    command: "ftg worker -q delete-source"
-    restart: on-failure
-    build: .
-    links:
-      - rabbitmq
-    environment:
-      RABBITMQ_URL: amqp://guest:guest@rabbitmq:5672/%2F?heartbeat=600&blocked_connection_timeout=300
-      LOG_LEVEL: ${LOG_LEVEL:-info}
-      DATABASE_URI: clickhouse:9000
-    volumes:
-      - ${DATA_ROOT:-.}:/data
-
   rabbitmq:
     image: rabbitmq:management
     restart: on-failure
